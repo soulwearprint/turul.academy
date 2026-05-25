@@ -1,3 +1,4 @@
+from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
 from datetime import date
@@ -11,13 +12,13 @@ UNDER_13_BIRTH_YEAR_THRESHOLD = date.today().year - 13
 
 class ProfileSetup(BaseModel):
     display_name: str
-    grade: int | None = None
-    birth_year: int | None = None
-    school: str | None = None
-    preferred_mode: str | None = None
+    grade: Optional[int] = None
+    birth_year: Optional[int] = None
+    school: Optional[str] = None
+    preferred_mode: Optional[str] = None
     gamification_level: str = "light"
     language: str = "hu"
-    parent_email: str | None = None
+    parent_email: Optional[str] = None
 
 
 @router.get("/me")

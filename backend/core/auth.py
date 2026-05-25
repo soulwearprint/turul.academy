@@ -1,3 +1,4 @@
+from typing import Optional
 import httpx
 from fastapi import Depends, HTTPException
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
@@ -7,7 +8,7 @@ from .config import settings
 security = HTTPBearer()
 
 # Shared httpx client — keepalive_expiry <= 15s to avoid Supabase Warp stale socket issues
-_http_client: httpx.AsyncClient | None = None
+_http_client: Optional[httpx.AsyncClient] = None
 
 
 def http() -> httpx.AsyncClient:

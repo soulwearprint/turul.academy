@@ -1,3 +1,4 @@
+from typing import Optional, Union
 import httpx
 from .config import settings
 from .auth import http
@@ -22,7 +23,7 @@ def rpc_url(fn: str) -> str:
     return f"{settings.supabase_url}/rest/v1/rpc/{fn}"
 
 
-async def db_get(table: str, params: dict, *, user_token: str | None = None) -> list:
+async def db_get(table: str, params: dict, *, user_token: Optional[str] = None) -> list:
     """GET rows from a table. Uses user token for RLS-scoped reads."""
     headers = {**SUPABASE_HEADERS_ANON}
     if user_token:
@@ -33,7 +34,7 @@ async def db_get(table: str, params: dict, *, user_token: str | None = None) -> 
     return resp.json()
 
 
-async def db_post(table: str, payload: dict | list, *, service: bool = False) -> dict:
+async def db_post(table: str, payload: Union[dict, list], *, service: bool = False) -> dict:
     """INSERT row(s). Use service=True to bypass RLS (admin operations)."""
     headers = SUPABASE_HEADERS_SERVICE if service else SUPABASE_HEADERS_ANON
     resp = await http().post(
@@ -46,7 +47,7 @@ async def db_post(table: str, payload: dict | list, *, service: bool = False) ->
     return resp.json()
 
 
-async def db_patch(table: str, params: dict, payload: dict, *, user_token: str | None = None) -> dict:
+async def db_patch(table: str, params: dict, payload: dict, *, user_token: Optional[str] = None) -> dict:
     """UPDATE rows matching params."""
     headers = {**SUPABASE_HEADERS_ANON, "Prefer": "return=representation"}
     if user_token:

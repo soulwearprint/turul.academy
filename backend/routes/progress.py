@@ -1,3 +1,4 @@
+from __future__ import annotations
 from fastapi import APIRouter, Depends
 from core.auth import get_current_user, SupabaseUser
 from core.db import db_get

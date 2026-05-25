@@ -1,3 +1,4 @@
+from typing import Optional
 from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
 from core.auth import get_current_user, SupabaseUser
@@ -38,8 +39,8 @@ async def get_quiz_questions(lesson_id: str):
 
 class ProgressUpdate(BaseModel):
     status: str
-    mode_used: str | None = None
-    time_spent_seconds: int | None = None
+    mode_used: Optional[str] = None
+    time_spent_seconds: Optional[int] = None
 
 
 @router.post("/{lesson_id}/progress")
@@ -49,22 +50,20 @@ async def update_progress(
     user: SupabaseUser = Depends(get_current_user),
 ):
     """Upsert lesson progress for the authenticated user."""
-    # Check if record exists
     existing = await db_get(
         "lesson_progress",
         {"user_id": f"eq.{user.id}", "lesson_id": f"eq.{lesson_id}", "select": "id,topic_id"},
     )
 
-    now_iso = "now()"
     payload: dict = {"status": body.status}
     if body.mode_used:
         payload["mode_used"] = body.mode_used
     if body.time_spent_seconds:
         payload["time_spent_seconds"] = body.time_spent_seconds
     if body.status == "in_progress" and not existing:
-        payload["started_at"] = now_iso
+        payload["started_at"] = "now()"
     if body.status == "completed":
-        payload["completed_at"] = now_iso
+        payload["completed_at"] = "now()"
 
     if existing:
         return await db_patch(
@@ -73,7 +72,6 @@ async def update_progress(
             payload,
         )
     else:
-        # Need topic_id for insert — fetch from lesson
         lessons = await db_get("lessons", {"id": f"eq.{lesson_id}", "select": "topic_id"})
         if not lessons:
             raise HTTPException(status_code=404, detail="Lesson not found")

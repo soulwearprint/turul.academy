@@ -1,3 +1,4 @@
+from typing import Optional
 from fastapi import APIRouter, HTTPException
 from core.db import db_get
 
@@ -11,7 +12,7 @@ async def get_subjects():
 
 
 @router.get("/subjects/{subject_id}/topics")
-async def get_topics(subject_id: str, grade: int | None = None):
+async def get_topics(subject_id: str, grade: Optional[int] = None):
     """Get topics for a subject, optionally filtered by grade."""
     params = {
         "subject_id": f"eq.{subject_id}",
