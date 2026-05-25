@@ -2,12 +2,19 @@
 Turul Academy — Lesson Content Generator
 =========================================
 Generates all 4 lesson modes (text, story, visual, quiz) for any NAT topic.
-Uses Claude via the Anthropic API.
+Supports multiple AI providers via a unified OpenAI-compatible interface.
+
+Supported providers (set PROVIDER or pass --provider):
+  openrouter  → OpenRouter (access to Claude, GPT-4o, Gemini, Deepseek, etc.)
+  openai      → OpenAI directly (GPT-4o)
+  deepseek    → Deepseek (deepseek-chat)
+  moonshot    → Kimi / Moonshot AI
+  gemini      → Google Gemini (via openai-compat endpoint)
 
 Usage:
     python generate_lesson.py --nat-id HIST-G7-2.4 --dry-run
-    python generate_lesson.py --nat-id HIST-G7-2.4
-    python generate_lesson.py --subject HU-NAT-HISTORY-2020 --grade 7
+    python generate_lesson.py --nat-id HIST-G7-2.4 --provider openrouter
+    python generate_lesson.py --subject HU-NAT-HISTORY-2020 --grade 7 --provider deepseek
 """
 
 import asyncio
@@ -21,7 +28,6 @@ load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "../../backend/.
 
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_SERVICE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
-ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
 HEADERS = {
     "apikey": SUPABASE_SERVICE_KEY,
@@ -29,6 +35,50 @@ HEADERS = {
     "Content-Type": "application/json",
     "Prefer": "return=representation",
 }
+
+# ─── PROVIDER CONFIG ─────────────────────────────────────────
+
+PROVIDERS = {
+    "openrouter": {
+        "base_url":    "https://openrouter.ai/api/v1/chat/completions",
+        "env_key":     "OPENROUTER_API_KEY",
+        "default_model": "anthropic/claude-3-5-haiku",   # cheap + fast; swap to claude-3-5-sonnet for quality
+        "extra_headers": {
+            "HTTP-Referer": "https://turul.academy",
+            "X-Title": "Turul Academy",
+        },
+    },
+    "openai": {
+        "base_url":    "https://api.openai.com/v1/chat/completions",
+        "env_key":     "OPENAI_API_KEY",
+        "default_model": "gpt-4o-mini",
+    },
+    "deepseek": {
+        "base_url":    "https://api.deepseek.com/v1/chat/completions",
+        "env_key":     "DEEPSEEK_API_KEY",
+        "default_model": "deepseek-chat",
+    },
+    "moonshot": {
+        "base_url":    "https://api.moonshot.cn/v1/chat/completions",
+        "env_key":     "MOONSHOT_API_KEY",
+        "default_model": "moonshot-v1-8k",
+    },
+    "gemini": {
+        # Google exposes an OpenAI-compat endpoint since late 2024
+        "base_url":    "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions",
+        "env_key":     "GEMINI_API_KEY",
+        "default_model": "gemini-2.0-flash",
+    },
+}
+
+def detect_provider() -> str:
+    """Auto-detect which provider key is available in env."""
+    preferred_order = ["openrouter", "openai", "deepseek", "gemini", "moonshot"]
+    for p in preferred_order:
+        if os.getenv(PROVIDERS[p]["env_key"]):
+            return p
+    return "openrouter"   # will fail loudly if key missing
+
 
 # ─── PROMPTS ─────────────────────────────────────────────────
 
@@ -124,39 +174,55 @@ Return JSON:
     raise ValueError(f"Unknown mode: {mode}")
 
 
-# ─── API CALLS ───────────────────────────────────────────────
+# ─── AI CALL ─────────────────────────────────────────────────
 
-async def call_claude(prompt: str, client: httpx.AsyncClient) -> dict:
-    """Call Claude claude-opus-4-5 to generate lesson content."""
+def strip_json_fences(raw: str) -> str:
+    """Some models wrap output in ```json ... ``` despite instructions."""
+    raw = raw.strip()
+    if raw.startswith("```"):
+        lines = raw.splitlines()
+        raw = "\n".join(lines[1:-1] if lines[-1].strip() == "```" else lines[1:])
+    return raw.strip()
+
+
+async def call_ai(prompt: str, provider_cfg: dict, api_key: str, model: str, client: httpx.AsyncClient) -> dict:
+    request_headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+    }
+    if "extra_headers" in provider_cfg:
+        request_headers.update(provider_cfg["extra_headers"])
+
+    payload = {
+        "model": model,
+        "max_tokens": 2000,
+        "temperature": 0.7,
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user",   "content": prompt},
+        ],
+    }
+
     resp = await client.post(
-        "https://api.anthropic.com/v1/messages",
-        headers={
-            "x-api-key": ANTHROPIC_API_KEY,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json",
-        },
-        json={
-            "model": "claude-opus-4-5",
-            "max_tokens": 2000,
-            "system": SYSTEM_PROMPT,
-            "messages": [{"role": "user", "content": prompt}],
-        },
-        timeout=60.0,
+        provider_cfg["base_url"],
+        headers=request_headers,
+        json=payload,
+        timeout=90.0,
     )
     resp.raise_for_status()
-    raw = resp.json()["content"][0]["text"]
-    return json.loads(raw)
+    raw = resp.json()["choices"][0]["message"]["content"]
+    return json.loads(strip_json_fences(raw))
 
+
+# ─── SUPABASE ────────────────────────────────────────────────
 
 async def get_topics(nat_id: str = None, subject_code: str = None, grade: int = None) -> list:
-    """Fetch topics from Supabase."""
     params = {"select": "id,nat_id,title,title_hu,grade"}
     if nat_id:
         params["nat_id"] = f"eq.{nat_id}"
     if grade:
         params["grade"] = f"eq.{grade}"
     if subject_code:
-        # join via subject
         params["select"] = "id,nat_id,title,title_hu,grade,subject:curriculum_subjects!subject_id(code)"
 
     async with httpx.AsyncClient() as client:
@@ -175,7 +241,6 @@ async def get_topics(nat_id: str = None, subject_code: str = None, grade: int = 
 
 
 async def save_lesson(topic_id: str, mode: str, content: dict, dry_run: bool = False) -> None:
-    """Save generated lesson to Supabase (inactive until teacher approves)."""
     payload = {
         "topic_id": topic_id,
         "mode": mode,
@@ -193,7 +258,6 @@ async def save_lesson(topic_id: str, mode: str, content: dict, dry_run: bool = F
         return
 
     async with httpx.AsyncClient() as client:
-        # Upsert — replace if same topic+mode exists
         resp = await client.post(
             f"{SUPABASE_URL}/rest/v1/lessons",
             headers={**HEADERS, "Prefer": "return=representation,resolution=merge-duplicates"},
@@ -207,8 +271,8 @@ async def save_lesson(topic_id: str, mode: str, content: dict, dry_run: bool = F
 
 # ─── MAIN ────────────────────────────────────────────────────
 
-async def generate_for_topic(topic: dict, modes: list, dry_run: bool) -> None:
-    print(f"\n📚 Generating: [{topic['nat_id']}] {topic['title']} (Grade {topic['grade']})")
+async def generate_for_topic(topic: dict, modes: list, dry_run: bool, provider_cfg: dict, api_key: str, model: str) -> None:
+    print(f"\n📚 [{topic['nat_id']}] {topic['title']} (Grade {topic['grade']})")
 
     async with httpx.AsyncClient() as client:
         for mode in modes:
@@ -218,11 +282,13 @@ async def generate_for_topic(topic: dict, modes: list, dry_run: bool) -> None:
                     topic["title"], topic["title_hu"],
                     topic["nat_id"], topic["grade"], mode
                 )
-                content = await call_claude(prompt, client)
+                content = await call_ai(prompt, provider_cfg, api_key, model, client)
                 print(f"✓ ({len(content.get('cards', []))} cards)")
                 await save_lesson(topic["id"], mode, content, dry_run)
             except json.JSONDecodeError as e:
                 print(f"⚠️  JSON parse error: {e}")
+            except httpx.HTTPStatusError as e:
+                print(f"⚠️  API error {e.response.status_code}: {e.response.text[:150]}")
             except Exception as e:
                 print(f"⚠️  Error: {e}")
 
@@ -234,11 +300,28 @@ async def main():
     parser.add_argument("--grade",    type=int, help="Filter by grade")
     parser.add_argument("--modes",    default="text,story,visual,quiz", help="Comma-separated modes")
     parser.add_argument("--dry-run",  action="store_true", help="Print output without saving")
+    parser.add_argument("--provider", choices=list(PROVIDERS.keys()),
+                        help="AI provider (auto-detected from env if omitted)")
+    parser.add_argument("--model",    help="Override model name (e.g. gpt-4o, deepseek-reasoner)")
     args = parser.parse_args()
 
-    if not ANTHROPIC_API_KEY:
-        print("❌ ANTHROPIC_API_KEY not set in backend/.env")
+    # Resolve provider
+    provider_name = args.provider or detect_provider()
+    provider_cfg  = PROVIDERS[provider_name]
+    api_key       = os.getenv(provider_cfg["env_key"])
+    model         = args.model or provider_cfg["default_model"]
+
+    if not api_key:
+        print(f"❌ {provider_cfg['env_key']} not set in backend/.env")
+        print(f"   Available providers: {', '.join(PROVIDERS.keys())}")
+        print(f"   Set one of: {', '.join(p['env_key'] for p in PROVIDERS.values())}")
         return
+
+    if not SUPABASE_URL or not SUPABASE_SERVICE_KEY:
+        print("❌ SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY not set in backend/.env")
+        return
+
+    print(f"🤖 Provider: {provider_name} | Model: {model}")
 
     modes = [m.strip() for m in args.modes.split(",")]
 
@@ -259,7 +342,7 @@ async def main():
         print("(DRY RUN — nothing will be saved)\n")
 
     for topic in topics:
-        await generate_for_topic(topic, modes, args.dry_run)
+        await generate_for_topic(topic, modes, args.dry_run, provider_cfg, api_key, model)
 
     print("\n✅ Done.")
 
