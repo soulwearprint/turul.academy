@@ -1,33 +1,46 @@
 import { supabase } from './supabase'
 
-const BASE = import.meta.env.VITE_BACKEND_URL || ''
+const BASE = import.meta.env.VITE_API_BASE_URL || ''
 
-async function authHeader() {
+async function getToken(token) {
+  if (token) return token
   const { data: { session } } = await supabase.auth.getSession()
-  if (!session) return {}
-  return { Authorization: `Bearer ${session.access_token}` }
+  return session?.access_token ?? null
 }
 
-async function get(path) {
-  const res = await fetch(`${BASE}${path}`, { headers: await authHeader() })
+async function headers(token) {
+  const t = await getToken(token)
+  return t
+    ? { 'Content-Type': 'application/json', Authorization: `Bearer ${t}` }
+    : { 'Content-Type': 'application/json' }
+}
+
+async function get(path, token) {
+  const h = await headers(token)
+  const res = await fetch(`${BASE}${path}`, { headers: h })
   if (!res.ok) throw new Error(`GET ${path} → ${res.status}`)
   return res.json()
 }
 
-async function post(path, body) {
+async function post(path, body, token) {
+  const h = await headers(token)
   const res = await fetch(`${BASE}${path}`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', ...(await authHeader()) },
+    headers: h,
     body: JSON.stringify(body),
   })
-  if (!res.ok) throw new Error(`POST ${path} → ${res.status}`)
+  if (!res.ok) {
+    const msg = await res.text().catch(() => res.status)
+    throw new Error(`POST ${path} → ${res.status}: ${msg}`)
+  }
   return res.json()
 }
 
-async function patch(path, body) {
+async function patch(path, body, token) {
+  const h = await headers(token)
   const res = await fetch(`${BASE}${path}`, {
     method: 'PATCH',
-    headers: { 'Content-Type': 'application/json', ...(await authHeader()) },
+    headers: h,
     body: JSON.stringify(body),
   })
   if (!res.ok) throw new Error(`PATCH ${path} → ${res.status}`)
@@ -36,29 +49,29 @@ async function patch(path, body) {
 
 export const api = {
   curriculum: {
-    subjects:       ()           => get('/api/curriculum/subjects'),
-    topics:         (sid, grade) => get(`/api/curriculum/subjects/${sid}/topics${grade ? `?grade=${grade}` : ''}`),
-    topic:          (tid)        => get(`/api/curriculum/topics/${tid}`),
-    curiosityLinks: (tid)        => get(`/api/curriculum/topics/${tid}/curiosity-links`),
+    subjects:       ()                    => get('/api/curriculum/subjects'),
+    topics:         (sid, grade)          => get(`/api/curriculum/subjects/${sid}/topics${grade ? `?grade=${grade}` : ''}`),
+    topic:          (tid)                 => get(`/api/curriculum/topics/${tid}`),
+    curiosityLinks: (tid)                 => get(`/api/curriculum/topics/${tid}/curiosity-links`),
   },
   lessons: {
-    get:            (lid)        => get(`/api/lessons/${lid}`),
-    forTopic:       (tid)        => get(`/api/lessons/topic/${tid}`),
-    quiz:           (lid)        => get(`/api/lessons/${lid}/quiz`),
-    updateProgress: (lid, body)  => post(`/api/lessons/${lid}/progress`, body),
+    get:            (lid, token)          => get(`/api/lessons/${lid}`, token),
+    forTopic:       (tid, token)          => get(`/api/lessons/topic/${tid}`, token),
+    quiz:           (lid, token)          => get(`/api/lessons/${lid}/quiz`, token),
+    updateProgress: (lid, body, token)    => post(`/api/lessons/${lid}/progress`, body, token),
   },
   quiz: {
-    submit: (body) => post('/api/quiz/submit', body),
+    submit: (body, token) => post('/api/quiz/submit', body, token),
   },
   progress: {
-    me:         ()    => get('/api/progress/me'),
-    subject:    (sid) => get(`/api/progress/me/subject/${sid}`),
+    me:         (token)        => get('/api/progress/me', token),
+    subject:    (sid, token)   => get(`/api/progress/me/subject/${sid}`, token),
   },
   account: {
-    me:            ()       => get('/api/account/me'),
-    create:        (body)   => post('/api/account/me', body),
-    update:        (body)   => patch('/api/account/me', body),
-    subjects:      ()       => get('/api/account/me/subjects'),
-    enrol:         (sid)    => post(`/api/account/me/subjects/${sid}`, {}),
+    me:       (token)          => get('/api/account/me', token),
+    create:   (body, token)    => post('/api/account/me', body, token),
+    update:   (body, token)    => patch('/api/account/me', body, token),
+    subjects: (token)          => get('/api/account/me/subjects', token),
+    enrol:    (sid, token)     => post(`/api/account/me/subjects/${sid}`, {}, token),
   },
 }
