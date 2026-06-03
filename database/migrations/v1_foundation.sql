@@ -1,6 +1,6 @@
 -- ============================================================
 -- Turul Academy — Migration v1: Foundation Schema
--- Supabase project: neshzfcetxradwhbmdbb
+-- Supabase project: tqsrwhvvghryycgsxfsj
 -- Apply via: Supabase SQL Editor
 -- ============================================================
 
