@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
+import { useLang } from '../contexts/LanguageContext'
 
 export default function LoginPage() {
   const { signInWithEmail, signUpWithEmail } = useAuth()
+  const { t, lang, setLang } = useLang()
   const navigate = useNavigate()
-  const [mode, setMode] = useState('login') // 'login' | 'signup'
+  const [mode, setMode] = useState('login')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
@@ -32,12 +34,22 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-5 bg-gradient-to-b from-turul-blue to-brand-700">
+      {/* Language toggle */}
+      <div className="absolute top-4 right-4">
+        <button
+          onClick={() => setLang(lang === 'hu' ? 'en' : 'hu')}
+          className="text-white/70 hover:text-white text-sm font-semibold flex items-center gap-1.5"
+        >
+          {lang === 'hu' ? '🇬🇧 EN' : '🇭🇺 HU'}
+        </button>
+      </div>
+
       <div className="w-full max-w-sm">
         {/* Logo */}
         <div className="text-center mb-8">
           <div className="text-6xl mb-3">🦅</div>
           <h1 className="text-3xl font-bold text-white tracking-tight">Turul Academy</h1>
-          <p className="text-brand-200 mt-1 text-sm">Tanulj okosabban. NAT 2020 alapján.</p>
+          <p className="text-brand-200 mt-1 text-sm">{t('auth.tagline')}</p>
         </div>
 
         {/* Card */}
@@ -51,14 +63,14 @@ export default function LoginPage() {
                   mode === m ? 'bg-white shadow text-slate-900' : 'text-slate-500'
                 }`}
               >
-                {m === 'login' ? 'Bejelentkezés' : 'Regisztráció'}
+                {m === 'login' ? t('auth.login') : t('auth.register')}
               </button>
             ))}
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1">E-mail</label>
+              <label className="block text-sm font-medium text-slate-700 mb-1">{t('auth.email')}</label>
               <input
                 type="email"
                 required
@@ -69,7 +81,7 @@ export default function LoginPage() {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1">Jelszó</label>
+              <label className="block text-sm font-medium text-slate-700 mb-1">{t('auth.password')}</label>
               <input
                 type="password"
                 required
@@ -88,7 +100,7 @@ export default function LoginPage() {
             )}
 
             <button type="submit" disabled={loading} className="btn-primary w-full text-center">
-              {loading ? '...' : mode === 'login' ? 'Bejelentkezés' : 'Fiók létrehozása'}
+              {loading ? t('auth.loading') : mode === 'login' ? t('auth.submit.login') : t('auth.submit.reg')}
             </button>
           </form>
         </div>

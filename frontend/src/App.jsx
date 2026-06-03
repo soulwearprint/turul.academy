@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider, useAuth } from './contexts/AuthContext'
+import { LanguageProvider } from './contexts/LanguageContext'
 
 import LoginPage from './pages/LoginPage'
 import OnboardingPage from './pages/OnboardingPage'
@@ -27,26 +28,28 @@ function RedirectIfAuth({ children }) {
 
 export default function App() {
   return (
-    <AuthProvider>
-      <BrowserRouter>
-        <Routes>
-          {/* Public */}
-          <Route path="/login" element={<RedirectIfAuth><LoginPage /></RedirectIfAuth>} />
+    <LanguageProvider>
+      <AuthProvider>
+        <BrowserRouter>
+          <Routes>
+            {/* Public */}
+            <Route path="/login" element={<RedirectIfAuth><LoginPage /></RedirectIfAuth>} />
 
-          {/* Protected */}
-          <Route path="/" element={<RequireAuth><HomePage /></RequireAuth>} />
-          <Route path="/onboarding" element={<RequireAuth><OnboardingPage /></RequireAuth>} />
-          <Route path="/subjects" element={<RequireAuth><SubjectsPage /></RequireAuth>} />
-          <Route path="/subjects/:subjectId/topics" element={<RequireAuth><TopicsPage /></RequireAuth>} />
-          <Route path="/subjects/:subjectId/topics/:topicId" element={<RequireAuth><TopicDetailPage /></RequireAuth>} />
-          <Route path="/lessons/:lessonId" element={<RequireAuth><LessonPage /></RequireAuth>} />
-          <Route path="/lessons/:lessonId/quiz" element={<RequireAuth><QuizPage /></RequireAuth>} />
-          <Route path="/progress" element={<RequireAuth><ProgressPage /></RequireAuth>} />
+            {/* Protected */}
+            <Route path="/" element={<RequireAuth><HomePage /></RequireAuth>} />
+            <Route path="/onboarding" element={<RequireAuth><OnboardingPage /></RequireAuth>} />
+            <Route path="/subjects" element={<RequireAuth><SubjectsPage /></RequireAuth>} />
+            <Route path="/subjects/:subjectId/topics" element={<RequireAuth><TopicsPage /></RequireAuth>} />
+            <Route path="/subjects/:subjectId/topics/:topicId" element={<RequireAuth><TopicDetailPage /></RequireAuth>} />
+            <Route path="/lessons/:lessonId" element={<RequireAuth><LessonPage /></RequireAuth>} />
+            <Route path="/lessons/:lessonId/quiz" element={<RequireAuth><QuizPage /></RequireAuth>} />
+            <Route path="/progress" element={<RequireAuth><ProgressPage /></RequireAuth>} />
 
-          {/* Fallback */}
-          <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
-      </BrowserRouter>
-    </AuthProvider>
+            {/* Fallback */}
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </BrowserRouter>
+      </AuthProvider>
+    </LanguageProvider>
   )
 }

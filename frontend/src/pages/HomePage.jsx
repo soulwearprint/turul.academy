@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
+import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
 import BottomNav from '../components/BottomNav'
-import ModeBadge from '../components/ModeBadge'
 
 export default function HomePage() {
   const { session, profile, signOut } = useAuth()
+  const { t } = useLang()
   const navigate = useNavigate()
   const [subjects, setSubjects] = useState([])
   const [progress, setProgress] = useState(null)
@@ -24,7 +25,6 @@ export default function HomePage() {
         setSubjects(enrolled)
         setProgress(prog)
       } catch {
-        // If no profile yet, redirect to onboarding
         navigate('/onboarding')
       } finally {
         setLoading(false)
@@ -36,7 +36,7 @@ export default function HomePage() {
   if (loading) {
     return (
       <div className="flex h-screen items-center justify-center">
-        <div className="text-slate-400 animate-pulse">Betöltés...</div>
+        <div className="text-slate-400 animate-pulse">{t('common.loading')}</div>
       </div>
     )
   }
@@ -51,38 +51,36 @@ export default function HomePage() {
       <div className="bg-gradient-to-br from-turul-blue to-brand-700 px-5 pt-12 pb-8">
         <div className="max-w-lg mx-auto">
           <div className="flex items-center justify-between mb-1">
-            <p className="text-brand-200 text-sm">Üdv vissza,</p>
-            <button onClick={signOut} className="text-brand-300 text-xs">Kilépés</button>
+            <p className="text-brand-200 text-sm">{t('home.greeting')}</p>
+            <button onClick={signOut} className="text-brand-300 text-xs">{t('home.signout')}</button>
           </div>
           <h1 className="text-2xl font-bold text-white">{displayName} 👋</h1>
 
-          {/* XP strip */}
           <div className="mt-4 flex gap-4">
             <div className="bg-white/20 rounded-xl px-4 py-2 flex-1 text-center">
               <div className="text-2xl font-bold text-white">{xp}</div>
-              <div className="text-brand-200 text-xs">XP összesen</div>
+              <div className="text-brand-200 text-xs">{t('home.xp.total')}</div>
             </div>
             <div className="bg-white/20 rounded-xl px-4 py-2 flex-1 text-center">
               <div className="text-2xl font-bold text-white">{completed}</div>
-              <div className="text-brand-200 text-xs">Lecke kész</div>
+              <div className="text-brand-200 text-xs">{t('home.lessons.done')}</div>
             </div>
           </div>
         </div>
       </div>
 
       <div className="px-4 mt-6 max-w-lg mx-auto space-y-6">
-        {/* Enrolled subjects */}
         <section>
           <div className="flex items-center justify-between mb-3">
-            <h2 className="font-bold text-slate-800">Tantárgyaim</h2>
-            <Link to="/subjects" className="text-turul-blue text-sm font-medium">+ Hozzáadás</Link>
+            <h2 className="font-bold text-slate-800">{t('home.subjects.title')}</h2>
+            <Link to="/subjects" className="text-turul-blue text-sm font-medium">{t('home.subjects.add')}</Link>
           </div>
 
           {subjects.length === 0 ? (
             <div className="card p-6 text-center">
               <div className="text-4xl mb-2">📚</div>
-              <p className="text-slate-500 text-sm mb-4">Még nem iratkoztál be egy tantárgyra sem.</p>
-              <Link to="/subjects" className="btn-primary inline-block">Tantárgy választás</Link>
+              <p className="text-slate-500 text-sm mb-4">{t('home.no.subjects')}</p>
+              <Link to="/subjects" className="btn-primary inline-block">{t('home.choose.subject')}</Link>
             </div>
           ) : (
             <div className="space-y-3">
@@ -97,7 +95,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="font-semibold text-slate-900">{subject.name_hu}</div>
-                    <div className="text-xs text-slate-500">{subject.grade_min}–{subject.grade_max}. osztály</div>
+                    <div className="text-xs text-slate-500">{subject.grade_min}–{subject.grade_max}{t('subjects.grade.range')}</div>
                   </div>
                   <span className="text-slate-300">›</span>
                 </Link>
@@ -106,12 +104,9 @@ export default function HomePage() {
           )}
         </section>
 
-        {/* Quick tip */}
         <div className="bg-amber-50 border border-amber-100 rounded-2xl p-4">
-          <p className="text-amber-800 text-sm font-medium">💡 Napi tipp</p>
-          <p className="text-amber-700 text-sm mt-1">
-            Próbáld ki a Történet módot — ugyanazt az anyagot élményszerű narratívában tanulhatod meg!
-          </p>
+          <p className="text-amber-800 text-sm font-medium">{t('home.daily.tip.title')}</p>
+          <p className="text-amber-700 text-sm mt-1">{t('home.daily.tip.body')}</p>
         </div>
       </div>
 

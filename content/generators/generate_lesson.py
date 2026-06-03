@@ -82,28 +82,61 @@ def detect_provider() -> str:
 
 # ─── PROMPTS ─────────────────────────────────────────────────
 
-SYSTEM_PROMPT = """You are an expert Hungarian secondary school educator and curriculum writer.
+SYSTEM_PROMPTS = {
+    "hu": """Te egy tapasztalt magyar középiskolai pedagógus és tananyagfejlesztő vagy.
+Vonzó, életkornak megfelelő leckéket készítesz 5-12. osztályos tanulóknak.
+Minden tartalom legyen tényszerűen pontos, igazodjon a Magyar NAT 2020 tantervhez,
+és pedagógiailag megalapozott. Írj érthető, lebilincselő stílusban, a célkorosztálynak megfelelően.
+CSAK érvényes JSON-t válaszolj — semmi markdown jelölés, semmi magyarázat a JSON-on kívül.""",
+
+    "en": """You are an expert Hungarian secondary school educator and curriculum writer.
 You create engaging, age-appropriate lesson content for students grades 5-12.
 All content must be factually accurate, aligned with the Hungarian NAT 2020 curriculum,
 and pedagogically sound. Write in a clear, engaging style appropriate for the target grade.
-Respond ONLY with valid JSON — no markdown fences, no explanation outside the JSON."""
+Respond ONLY with valid JSON — no markdown fences, no explanation outside the JSON.""",
+}
 
 
-def prompt_for_mode(topic_title: str, topic_title_hu: str, nat_id: str, grade: int, mode: str) -> str:
+def prompt_for_mode(topic_title: str, topic_title_hu: str, nat_id: str, grade: int, mode: str, lang: str = "hu") -> str:
     age = grade + 5
-    grade_context = f"Grade {grade} students (age ~{age})"
 
-    base = f"""Topic: "{topic_title}" ("{topic_title_hu}")
-NAT ID: {nat_id}
-Target audience: {grade_context}"""
+    if lang == "hu":
+        grade_context = f"{grade}. osztályos tanulók (kb. {age} évesek)"
+        title_to_use = topic_title_hu
+        lang_instruction = "Minden szöveges tartalmat MAGYAR NYELVEN írj."
+    else:
+        grade_context = f"Grade {grade} students (age ~{age})"
+        title_to_use = topic_title
+        lang_instruction = "Write all text content in ENGLISH."
+
+    base = f"""Témakör: „{title_to_use}" (NAT azonosító: {nat_id})
+Célközönség: {grade_context}
+Nyelv: {lang_instruction}"""
 
     if mode == "text":
-        return f"""{base}
+        if lang == "hu":
+            return f"""{base}
+
+Készíts egy strukturált SZÖVEGES leckét 4-6 kártyával. Minden kártya egy-egy összefüggő fogalmat dolgoz fel.
+Adj vissza JSON-t:
+{{
+  "title": "a lecke címe magyarul",
+  "cards": [
+    {{
+      "type": "text",
+      "heading": "rövid fejléc",
+      "body": "3-5 mondat, amely egyértelműen elmagyarázza ezt a fogalmat {grade_context} számára. Tényszerű, közvetlen, oktatási jellegű.",
+      "key_term": "opcionális: egy kiemelendő kulcsfogalom"
+    }}
+  ]
+}}"""
+        else:
+            return f"""{base}
 
 Create a structured TEXT lesson with 4-6 cards. Each card is one focused concept.
 Return JSON:
 {{
-  "title": "lesson title in English",
+  "title": "lesson title",
   "cards": [
     {{
       "type": "text",
@@ -115,13 +148,31 @@ Return JSON:
 }}"""
 
     elif mode == "story":
-        return f"""{base}
+        if lang == "hu":
+            return f"""{base}
+
+Készíts egy TÖRTÉNET-leckét — ugyanazok a tények, narratív formában elmesélve. 4-5 kártya.
+Helyezd a tanulót „az esemény közepébe". Használj élénk, de történelmileg pontos részleteket.
+Adj vissza JSON-t:
+{{
+  "title": "a lecke címe magyarul",
+  "cards": [
+    {{
+      "type": "story",
+      "heading": "rövid fejléc",
+      "body": "3-5 mondat narratív elbeszélés. Jelen idő. Magával ragadó, de tényszerű.",
+      "mood": "egy szó: feszült / drámai / kíváncsi / reményteljes / komoly"
+    }}
+  ]
+}}"""
+        else:
+            return f"""{base}
 
 Create a STORY lesson — same facts, told as a narrative. 4-5 story cards.
 Put the student 'in the moment'. Use vivid but historically accurate detail.
 Return JSON:
 {{
-  "title": "lesson title in English",
+  "title": "lesson title",
   "cards": [
     {{
       "type": "story",
@@ -133,13 +184,32 @@ Return JSON:
 }}"""
 
     elif mode == "visual":
-        return f"""{base}
+        if lang == "hu":
+            return f"""{base}
+
+Készíts egy VIZUÁLIS leckét — írd le, mit látna a tanuló egy diagramon, térképen vagy illusztráción.
+4-5 kártya, mindegyik egy-egy vizuális elemet ír le elég részletesen ahhoz, hogy a kép nélkül is érthető legyen.
+Adj vissza JSON-t:
+{{
+  "title": "a lecke címe magyarul",
+  "cards": [
+    {{
+      "type": "visual",
+      "heading": "rövid fejléc",
+      "visual_type": "idővonal | térkép | diagram | arckép | grafikon",
+      "description": "2-3 mondat, amely pontosan leírja, mit mutat ez a vizuális elem és mire érdemes figyelni.",
+      "caption": "egy mondatos képaláírás, ahogyan a kép alatt szerepelne"
+    }}
+  ]
+}}"""
+        else:
+            return f"""{base}
 
 Create a VISUAL lesson — describe what a student would SEE in a diagram, map, or illustration.
 4-5 cards, each describing one visual element clearly enough to understand without the image.
 Return JSON:
 {{
-  "title": "lesson title in English",
+  "title": "lesson title",
   "cards": [
     {{
       "type": "visual",
@@ -152,13 +222,33 @@ Return JSON:
 }}"""
 
     elif mode == "quiz":
-        return f"""{base}
+        if lang == "hu":
+            return f"""{base}
+
+Készíts egy KVÍZT 4 kérdéssel, amelyek a témakör megértését tesztelik.
+Változatos kérdéstípusokat használj. Minden helyes válaszhoz adj rövid magyarázatot.
+Adj vissza JSON-t:
+{{
+  "title": "a lecke címe magyarul",
+  "cards": [
+    {{
+      "type": "quiz",
+      "question_type": "multiple_choice | true_false",
+      "question": "egyértelmű kérdés szövege",
+      "options": ["A) lehetőség", "B) lehetőség", "C) lehetőség", "D) lehetőség"],
+      "correct": "A",
+      "explanation": "1-2 mondat, amely elmagyarázza, miért helyes ez, és miért helytelenek a többiek."
+    }}
+  ]
+}}"""
+        else:
+            return f"""{base}
 
 Create a QUIZ with 4 questions testing understanding of this topic.
 Mix question types. Include a short explanation for each correct answer.
 Return JSON:
 {{
-  "title": "lesson title in English",
+  "title": "lesson title",
   "cards": [
     {{
       "type": "quiz",
@@ -185,7 +275,7 @@ def strip_json_fences(raw: str) -> str:
     return raw.strip()
 
 
-async def call_ai(prompt: str, provider_cfg: dict, api_key: str, model: str, client: httpx.AsyncClient) -> dict:
+async def call_ai(prompt: str, provider_cfg: dict, api_key: str, model: str, client: httpx.AsyncClient, lang: str = "hu") -> dict:
     request_headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
@@ -198,7 +288,7 @@ async def call_ai(prompt: str, provider_cfg: dict, api_key: str, model: str, cli
         "max_tokens": 2000,
         "temperature": 0.7,
         "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "system", "content": SYSTEM_PROMPTS[lang]},
             {"role": "user",   "content": prompt},
         ],
     }
@@ -271,8 +361,8 @@ async def save_lesson(topic_id: str, mode: str, content: dict, dry_run: bool = F
 
 # ─── MAIN ────────────────────────────────────────────────────
 
-async def generate_for_topic(topic: dict, modes: list, dry_run: bool, provider_cfg: dict, api_key: str, model: str) -> None:
-    print(f"\n📚 [{topic['nat_id']}] {topic['title']} (Grade {topic['grade']})")
+async def generate_for_topic(topic: dict, modes: list, dry_run: bool, provider_cfg: dict, api_key: str, model: str, lang: str = "hu") -> None:
+    print(f"\n📚 [{topic['nat_id']}] {topic['title_hu']} (Grade {topic['grade']})")
 
     async with httpx.AsyncClient() as client:
         for mode in modes:
@@ -280,9 +370,9 @@ async def generate_for_topic(topic: dict, modes: list, dry_run: bool, provider_c
             try:
                 prompt = prompt_for_mode(
                     topic["title"], topic["title_hu"],
-                    topic["nat_id"], topic["grade"], mode
+                    topic["nat_id"], topic["grade"], mode, lang
                 )
-                content = await call_ai(prompt, provider_cfg, api_key, model, client)
+                content = await call_ai(prompt, provider_cfg, api_key, model, client, lang)
                 print(f"✓ ({len(content.get('cards', []))} cards)")
                 await save_lesson(topic["id"], mode, content, dry_run)
             except json.JSONDecodeError as e:
@@ -303,6 +393,8 @@ async def main():
     parser.add_argument("--provider", choices=list(PROVIDERS.keys()),
                         help="AI provider (auto-detected from env if omitted)")
     parser.add_argument("--model",    help="Override model name (e.g. gpt-4o, deepseek-reasoner)")
+    parser.add_argument("--lang",     default="hu", choices=["hu", "en"],
+                        help="Language for generated content (default: hu)")
     args = parser.parse_args()
 
     # Resolve provider
@@ -321,7 +413,7 @@ async def main():
         print("❌ SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY not set in backend/.env")
         return
 
-    print(f"🤖 Provider: {provider_name} | Model: {model}")
+    print(f"🤖 Provider: {provider_name} | Model: {model} | Lang: {args.lang}")
 
     modes = [m.strip() for m in args.modes.split(",")]
 
@@ -342,7 +434,7 @@ async def main():
         print("(DRY RUN — nothing will be saved)\n")
 
     for topic in topics:
-        await generate_for_topic(topic, modes, args.dry_run, provider_cfg, api_key, model)
+        await generate_for_topic(topic, modes, args.dry_run, provider_cfg, api_key, model, args.lang)
 
     print("\n✅ Done.")
 
