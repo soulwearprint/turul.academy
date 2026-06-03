@@ -9,6 +9,7 @@ class Settings(BaseSettings):
 
     class Config:
         env_file = ".env"
+        extra = "ignore"  # AI provider keys live in .env too; backend doesn't need them
 
 
 settings = Settings()
