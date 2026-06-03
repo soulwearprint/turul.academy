@@ -349,8 +349,8 @@ async def save_lesson(topic_id: str, mode: str, content: dict, dry_run: bool = F
 
     async with httpx.AsyncClient() as client:
         resp = await client.post(
-            f"{SUPABASE_URL}/rest/v1/lessons",
-            headers={**HEADERS, "Prefer": "return=representation,resolution=merge-duplicates"},
+            f"{SUPABASE_URL}/rest/v1/lessons?on_conflict=topic_id,mode",
+            headers={**HEADERS, "Prefer": "resolution=merge-duplicates,return=representation"},
             json=payload,
         )
         if resp.status_code not in (200, 201):
