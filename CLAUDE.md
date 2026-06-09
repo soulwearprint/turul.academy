@@ -7,7 +7,7 @@ Subjects: History + Physics (launch). NAT-aligned content, multi-modal lessons, 
 ## URLs
 - Frontend: https://turul.academy (Vercel)
 - Backend: https://api.turul.academy (Railway)
-- Supabase: https://neshzfcetxradwhbmdbb.supabase.co
+- Supabase: https://tqsrwhvvghryycgsxfsj.supabase.co  (Turul ACADEMY, org support@turul.app)
 
 ## Stack
 - Frontend: React 18 + Vite + Tailwind (mobile-first PWA)

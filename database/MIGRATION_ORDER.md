@@ -1,7 +1,7 @@
 # Turul Academy — Migration Order
 
 Apply migrations in order via Supabase SQL Editor.
-Supabase project: https://neshzfcetxradwhbmdbb.supabase.co
+Supabase project: https://tqsrwhvvghryycgsxfsj.supabase.co
 
 ## Applied
 
