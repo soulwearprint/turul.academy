@@ -1,0 +1,35 @@
+name: Supabase keep-alive
+
+# Free-tier Supabase projects auto-pause after ~7 days of no database activity.
+# This pings the REST API every 3 days so Turul Academy never idles out while
+# we're still in the quiet pre-launch phase. Once real testers hit it daily,
+# this becomes redundant (but harmless).
+#
+# The key below is the PUBLISHABLE (anon) key — it is already public in the
+# deployed frontend bundle, so it is safe to commit. It is not a secret.
+
+on:
+  schedule:
+    - cron: '0 6 */3 * *'   # every 3 days at 06:00 UTC
+  workflow_dispatch: {}      # allow manual run from the Actions tab
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Turul Academy database
+        env:
+          SUPABASE_URL: https://tqsrwhvvghryycgsxfsj.supabase.co
+          SUPABASE_KEY: sb_publishable__RXVTiIc8H-54WUKMbe7dQ_jFXLN_-F
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" \
+            "${SUPABASE_URL}/rest/v1/curriculum_subjects?select=id&limit=1" \
+            -H "apikey: ${SUPABASE_KEY}" \
+            -H "Authorization: Bearer ${SUPABASE_KEY}")
+          echo "Academy REST ping → HTTP ${code}"
+          # Any HTTP response means the DB served the request (activity registered).
+          # Only a connection failure (000) indicates the project is down.
+          if [ "$code" = "000" ]; then
+            echo "::error::Supabase did not respond — project may be paused or down."
+            exit 1
+          fi
