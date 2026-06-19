@@ -4,8 +4,8 @@ import { useAuth } from '../contexts/AuthContext'
 import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
 import BottomNav from '../components/BottomNav'
-import TurulMascot from '../components/TurulMascot'
-import { getTurulConfig, stageForGrade } from '../lib/turul'
+import TurulPortrait from '../components/TurulPortrait'
+import { stageForGrade } from '../lib/turul'
 
 function subjectIcon(code) {
   if (code.includes('HISTORY')) return '🏛️'
@@ -23,7 +23,6 @@ export default function HomePage() {
   const [subjects, setSubjects] = useState([])
   const [progress, setProgress] = useState(null)
   const [loading, setLoading] = useState(true)
-  const config = getTurulConfig()
 
   const token = session?.access_token
 
@@ -48,7 +47,7 @@ export default function HomePage() {
   if (loading) {
     return (
       <div className="flex h-screen items-center justify-center">
-        <TurulMascot mood="idle" size={96} />
+        <TurulPortrait stage="adventurer" size={96} />
       </div>
     )
   }
@@ -61,8 +60,6 @@ export default function HomePage() {
   const grade = profile?.grade ?? 7
   const stage = stageForGrade(grade)
 
-  // Mascot mood reflects the student's momentum
-  const mood = completed === 0 ? 'curious' : streak >= 3 ? 'celebrate' : 'happy'
   const statusKey = completed === 0 ? 'home.turul.new' : streak >= 3 ? 'home.turul.streak' : 'home.turul.back'
 
   const firstSubject = subjects[0]?.subject
@@ -92,7 +89,7 @@ export default function HomePage() {
       <div className="px-4 -mt-9 max-w-lg mx-auto space-y-5">
         {/* Turul companion status card */}
         <Link to="/turul" className="card p-4 flex items-center gap-4 active:scale-[0.99] transition-transform animate-fade-up">
-          <TurulMascot mood={mood} color={config.color} accessory={config.accessory} size={76} shadow={false} />
+          <TurulPortrait grade={grade} size={72} animate={false} />
           <div className="min-w-0 flex-1">
             <p className="text-[11px] font-bold uppercase tracking-wide text-turul-blue">{stage.name[lang] ?? stage.name.hu}</p>
             <p className="text-sm text-slate-700 leading-snug mt-0.5">{t(statusKey)}</p>
@@ -123,7 +120,7 @@ export default function HomePage() {
 
           {subjects.length === 0 ? (
             <div className="card p-6 text-center">
-              <TurulMascot mood="curious" color={config.color} size={84} className="mx-auto" />
+              <TurulPortrait grade={grade} size={96} className="mx-auto" />
               <p className="text-slate-500 text-sm mt-2 mb-4">{t('home.no.subjects')}</p>
               <Link to="/subjects" className="btn-primary inline-flex">{t('home.choose.subject')}</Link>
             </div>

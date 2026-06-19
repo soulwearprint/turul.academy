@@ -123,6 +123,11 @@ export const translations = {
   // ── Turul companion ──────────────────────────────────────
   'companion.stage':     { hu: 'Jelenlegi fejlődési szint', en: 'Current evolution stage' },
   'companion.journey':   { hu: 'A Turulod útja',  en: "Your Turul's journey" },
+  'companion.journey.sub': { hu: 'A Turul veled együtt fejlődik az 5. osztálytól az érettségiig.',
+                             en: 'Your Turul grows with you from Grade 5 to graduation.' },
+  'companion.customize.title': { hu: 'Szabd személyre a Turulod', en: 'Make your Turul yours' },
+  'companion.customize.soon':  { hu: 'Színek, kiegészítők és hátterek hamarosan — tanulással oldhatod fel őket.',
+                                 en: 'Colours, accessories and backgrounds coming soon — unlock them by learning.' },
   'companion.color':     { hu: 'Szín',            en: 'Colour' },
   'companion.accessory': { hu: 'Kiegészítő',      en: 'Accessory' },
   'companion.more.soon': { hu: 'Több kiegészítő és háttér hamarosan — tanulással oldhatod fel őket.',

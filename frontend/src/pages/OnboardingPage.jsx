@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
-import TurulMascot from '../components/TurulMascot'
+import TurulPortrait from '../components/TurulPortrait'
 import { stageForGrade } from '../lib/turul'
 
 const GRADES = Array.from({ length: 8 }, (_, i) => i + 5) // 5..12
@@ -108,7 +108,6 @@ export default function OnboardingPage() {
   ]
 
   const canNext = step === 0 ? form.display_name.trim().length > 0 : true
-  const mascotMood = step === 0 ? 'curious' : step === 1 ? 'thinking' : 'happy'
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50">
@@ -123,7 +122,7 @@ export default function OnboardingPage() {
       <div className="flex-1 flex flex-col px-5 py-6 max-w-sm mx-auto w-full">
         {/* Mascot guide */}
         <div className="flex flex-col items-center text-center mb-2">
-          <TurulMascot mood={mascotMood} size={104} />
+          <TurulPortrait grade={form.grade} size={120} />
           <div className="text-xs text-slate-400 font-medium mt-1">{step + 1} / {steps.length}</div>
         </div>
 

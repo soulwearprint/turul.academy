@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useLang } from '../contexts/LanguageContext'
-import TurulMascot from '../components/TurulMascot'
+import TurulPortrait from '../components/TurulPortrait'
 
 export default function LoginPage() {
   const { signInWithEmail, signUpWithEmail } = useAuth()
@@ -45,7 +45,7 @@ export default function LoginPage() {
         </button>
 
         <div className="mx-auto mt-2 inline-flex items-center justify-center rounded-full bg-white shadow-lift ring-1 ring-black/5" style={{ width: 148, height: 148 }}>
-          <TurulMascot mood="happy" size={118} shadow={false} />
+          <TurulPortrait stage="explorer" size={120} />
         </div>
         <h1 className="mt-4 text-4xl font-extrabold text-white tracking-tight font-display">Turul</h1>
         <p className="mt-2 text-brand-100 text-[15px] max-w-xs mx-auto leading-relaxed">{t('auth.tagline')}</p>
