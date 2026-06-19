@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useLang } from '../contexts/LanguageContext'
+import TurulMascot from '../components/TurulMascot'
 
 export default function LoginPage() {
   const { signInWithEmail, signUpWithEmail } = useAuth()
@@ -33,34 +34,31 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-5 bg-gradient-to-b from-turul-blue to-brand-700">
-      {/* Language toggle */}
-      <div className="absolute top-4 right-4">
+    <div className="min-h-screen flex flex-col bg-slate-50">
+      {/* Hero */}
+      <div className="hero-gradient relative px-5 pt-14 pb-20 text-center overflow-hidden">
         <button
           onClick={() => setLang(lang === 'hu' ? 'en' : 'hu')}
-          className="text-white/70 hover:text-white text-sm font-semibold flex items-center gap-1.5"
+          className="absolute top-5 right-5 chip hover:bg-white/25 transition-colors"
         >
           {lang === 'hu' ? '🇬🇧 EN' : '🇭🇺 HU'}
         </button>
+
+        <TurulMascot mood="happy" size={132} className="mt-2" />
+        <h1 className="mt-3 text-4xl font-extrabold text-white tracking-tight font-display">Turul</h1>
+        <p className="mt-2 text-brand-100 text-[15px] max-w-xs mx-auto leading-relaxed">{t('auth.tagline')}</p>
       </div>
 
-      <div className="w-full max-w-sm">
-        {/* Logo */}
-        <div className="text-center mb-8">
-          <div className="text-6xl mb-3">🦅</div>
-          <h1 className="text-3xl font-bold text-white tracking-tight">Turul Academy</h1>
-          <p className="text-brand-200 mt-1 text-sm">{t('auth.tagline')}</p>
-        </div>
-
-        {/* Card */}
-        <div className="card p-6">
+      {/* Auth card overlapping the hero */}
+      <div className="px-5 -mt-12 pb-10 flex-1">
+        <div className="card p-6 max-w-sm mx-auto animate-fade-up">
           <div className="flex rounded-xl bg-slate-100 p-1 mb-5">
             {['login', 'signup'].map(m => (
               <button
                 key={m}
                 onClick={() => { setMode(m); setError('') }}
-                className={`flex-1 py-2 rounded-lg text-sm font-semibold transition-all ${
-                  mode === m ? 'bg-white shadow text-slate-900' : 'text-slate-500'
+                className={`flex-1 py-2.5 rounded-lg text-sm font-semibold transition-all ${
+                  mode === m ? 'bg-white shadow-soft text-turul-blue' : 'text-slate-500'
                 }`}
               >
                 {m === 'login' ? t('auth.login') : t('auth.register')}
@@ -70,40 +68,44 @@ export default function LoginPage() {
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1">{t('auth.email')}</label>
+              <label className="block text-sm font-medium text-slate-700 mb-1.5">{t('auth.email')}</label>
               <input
                 type="email"
                 required
                 value={email}
                 onChange={e => setEmail(e.target.value)}
-                className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-turul-blue"
+                className="input"
                 placeholder="te@iskola.hu"
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1">{t('auth.password')}</label>
+              <label className="block text-sm font-medium text-slate-700 mb-1.5">{t('auth.password')}</label>
               <input
                 type="password"
                 required
                 minLength={6}
                 value={password}
                 onChange={e => setPassword(e.target.value)}
-                className="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-turul-blue"
+                className="input"
                 placeholder="••••••••"
               />
             </div>
 
             {error && (
-              <div className="bg-red-50 text-red-600 text-sm rounded-xl px-4 py-3">
+              <div className="bg-red-50 text-red-600 text-sm rounded-xl px-4 py-3 border border-red-100">
                 {error}
               </div>
             )}
 
-            <button type="submit" disabled={loading} className="btn-primary w-full text-center">
+            <button type="submit" disabled={loading} className="btn-primary w-full">
               {loading ? t('auth.loading') : mode === 'login' ? t('auth.submit.login') : t('auth.submit.reg')}
             </button>
           </form>
         </div>
+
+        <p className="text-center text-xs text-slate-400 mt-6 max-w-xs mx-auto leading-relaxed">
+          {t('auth.legal')}
+        </p>
       </div>
     </div>
   )

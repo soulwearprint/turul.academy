@@ -11,8 +11,9 @@
 export const translations = {
   // ── Navigation ───────────────────────────────────────────
   'nav.home':          { hu: 'Ma',          en: 'Today' },
-  'nav.subjects':      { hu: 'Tantárgyak',  en: 'Subjects' },
+  'nav.subjects':      { hu: 'Tananyag',    en: 'Study' },
   'nav.progress':      { hu: 'Haladás',     en: 'Progress' },
+  'nav.turul':         { hu: 'Turul',       en: 'Turul' },
 
   // ── Auth ─────────────────────────────────────────────────
   'auth.login':        { hu: 'Bejelentkezés',    en: 'Sign in' },
@@ -22,7 +23,10 @@ export const translations = {
   'auth.submit.login': { hu: 'Bejelentkezés',    en: 'Sign in' },
   'auth.submit.reg':   { hu: 'Fiók létrehozása', en: 'Create account' },
   'auth.loading':      { hu: '...',              en: '...' },
-  'auth.tagline':      { hu: 'Tanulj okosabban. NAT 2020 alapján.', en: 'Learn smarter. Built on NAT 2020.' },
+  'auth.tagline':      { hu: 'A te AI tanulótársad, aki együtt fejlődik veled — az 5. osztálytól az érettségiig.',
+                         en: 'Your AI study companion that grows with you — from Grade 5 to graduation.' },
+  'auth.legal':        { hu: 'A folytatással elfogadod a feltételeket és az adatkezelési tájékoztatót.',
+                         en: 'By continuing you accept the Terms and Privacy Policy.' },
 
   // ── Onboarding ───────────────────────────────────────────
   'onboard.name.q':       { hu: 'Hogy szólítsunk?',           en: 'What should we call you?' },
@@ -49,6 +53,13 @@ export const translations = {
   // ── Home ─────────────────────────────────────────────────
   'home.greeting':      { hu: 'Üdv vissza,',   en: 'Welcome back,' },
   'home.signout':       { hu: 'Kilépés',        en: 'Sign out' },
+  'home.streak':        { hu: '{n} napos sorozat', en: '{n}-day streak' },
+  'home.continue.label':{ hu: 'Folytasd ott, ahol abbahagytad', en: 'Pick up where you left off' },
+  'home.continue.start':{ hu: 'Kezdj el tanulni', en: 'Start learning' },
+  'home.continue.cta':  { hu: 'Tanulás folytatása', en: 'Continue learning' },
+  'home.turul.new':     { hu: 'Szia! Én Turul vagyok. Tanuljunk együtt!', en: "Hi! I'm Turul. Let's learn together!" },
+  'home.turul.back':    { hu: 'Jó újra látni! Készen állsz a mai leckére?', en: 'Good to see you! Ready for today?' },
+  'home.turul.streak':  { hu: 'Szuper sorozat! Így tovább! 🔥', en: 'Amazing streak! Keep it up! 🔥' },
   'home.xp.total':      { hu: 'XP összesen',    en: 'Total XP' },
   'home.lessons.done':  { hu: 'Lecke kész',     en: 'Lessons done' },
   'home.subjects.title':{ hu: 'Tantárgyaim',    en: 'My subjects' },
@@ -108,6 +119,14 @@ export const translations = {
   'progress.badges':    { hu: 'Kitűző',        en: 'Badges' },
   'progress.subjects.title': { hu: 'Tantárgyak szerint', en: 'By subject' },
   'progress.badges.title':   { hu: 'Kitűzők',            en: 'Badges' },
+
+  // ── Turul companion ──────────────────────────────────────
+  'companion.stage':     { hu: 'Jelenlegi fejlődési szint', en: 'Current evolution stage' },
+  'companion.journey':   { hu: 'A Turulod útja',  en: "Your Turul's journey" },
+  'companion.color':     { hu: 'Szín',            en: 'Colour' },
+  'companion.accessory': { hu: 'Kiegészítő',      en: 'Accessory' },
+  'companion.more.soon': { hu: 'Több kiegészítő és háttér hamarosan — tanulással oldhatod fel őket.',
+                           en: 'More accessories and backgrounds coming soon — unlock them by learning.' },
 
   // ── Common ───────────────────────────────────────────────
   'common.loading':     { hu: 'Betöltés...',   en: 'Loading...' },

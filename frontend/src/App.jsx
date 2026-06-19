@@ -11,6 +11,7 @@ import TopicDetailPage from './pages/TopicDetailPage'
 import LessonPage from './pages/LessonPage'
 import QuizPage from './pages/QuizPage'
 import ProgressPage from './pages/ProgressPage'
+import TurulCompanionPage from './pages/TurulCompanionPage'
 
 function RequireAuth({ children }) {
   const { session, loading } = useAuth()
@@ -44,6 +45,7 @@ export default function App() {
             <Route path="/lessons/:lessonId" element={<RequireAuth><LessonPage /></RequireAuth>} />
             <Route path="/lessons/:lessonId/quiz" element={<RequireAuth><QuizPage /></RequireAuth>} />
             <Route path="/progress" element={<RequireAuth><ProgressPage /></RequireAuth>} />
+            <Route path="/turul" element={<RequireAuth><TurulCompanionPage /></RequireAuth>} />
 
             {/* Fallback */}
             <Route path="*" element={<Navigate to="/" replace />} />
