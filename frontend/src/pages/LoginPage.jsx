@@ -44,8 +44,10 @@ export default function LoginPage() {
           {lang === 'hu' ? '🇬🇧 EN' : '🇭🇺 HU'}
         </button>
 
-        <TurulMascot mood="happy" size={132} className="mt-2" />
-        <h1 className="mt-3 text-4xl font-extrabold text-white tracking-tight font-display">Turul</h1>
+        <div className="mx-auto mt-2 inline-flex items-center justify-center rounded-full bg-white shadow-lift ring-1 ring-black/5" style={{ width: 148, height: 148 }}>
+          <TurulMascot mood="happy" size={118} shadow={false} />
+        </div>
+        <h1 className="mt-4 text-4xl font-extrabold text-white tracking-tight font-display">Turul</h1>
         <p className="mt-2 text-brand-100 text-[15px] max-w-xs mx-auto leading-relaxed">{t('auth.tagline')}</p>
       </div>
 

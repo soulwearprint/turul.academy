@@ -45,7 +45,9 @@ export default function TurulCompanionPage() {
       <div className="hero-gradient px-5 pt-12 pb-10 rounded-b-3xl text-center">
         <p className="text-brand-100 text-xs font-semibold uppercase tracking-wide">{t('companion.stage')}</p>
         <h1 className="text-white text-2xl font-extrabold font-display mt-0.5">{stage.name[lang] ?? stage.name.hu}</h1>
-        <TurulMascot mood="happy" color={config.color} accessory={config.accessory} size={170} className="mt-2" />
+        <div className="mx-auto mt-3 inline-flex items-center justify-center rounded-full bg-white shadow-lift ring-1 ring-black/5" style={{ width: 188, height: 188 }}>
+          <TurulMascot mood="happy" color={config.color} accessory={config.accessory} size={158} shadow={false} />
+        </div>
         <div className="flex justify-center gap-2.5 mt-2">
           <div className="chip"><span className="text-amber-300">⭐</span> {xp} XP</div>
           <div className="chip">Lv {level}</div>
