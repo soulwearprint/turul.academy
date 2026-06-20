@@ -1,0 +1,46 @@
+<!--
+  Turul — "Confirm signup" email template.
+  Paste into: Supabase dashboard → Authentication → Email Templates → Confirm signup.
+  Suggested subject:  Erősítsd meg az e-mail-címed – Turul 🦅
+  Supabase variable used: {{ .ConfirmationURL }}
+  Mascot image is served from the deployed site (frontend/public/turul-explorer.png).
+-->
+<table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="background:#f1f5f9;padding:32px 12px;font-family:Inter,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <tr>
+    <td align="center">
+      <table width="480" cellpadding="0" cellspacing="0" role="presentation" style="max-width:480px;width:100%;background:#ffffff;border-radius:20px;overflow:hidden;box-shadow:0 8px 30px rgba(15,23,42,0.08);">
+        <!-- Header -->
+        <tr>
+          <td style="background:#2563EB;padding:28px 24px;text-align:center;">
+            <img src="https://turul.academy/turul-explorer.png" width="96" height="96" alt="Turul" style="display:block;margin:0 auto 10px;border-radius:50%;background:#ffffff;" />
+            <div style="color:#ffffff;font-size:24px;font-weight:800;letter-spacing:-0.5px;">Turul</div>
+            <div style="color:#bfdbfe;font-size:13px;margin-top:2px;">A te AI tanulótársad</div>
+          </td>
+        </tr>
+        <!-- Body -->
+        <tr>
+          <td style="padding:32px 28px;text-align:center;">
+            <h1 style="font-size:20px;font-weight:800;margin:0 0 12px;color:#0f172a;">Erősítsd meg az e-mail-címed</h1>
+            <p style="font-size:15px;line-height:1.6;color:#475569;margin:0 0 24px;">
+              Szia! Köszönjük, hogy regisztráltál a Turulra. Már csak egy lépés, és kezdődhet a tanulás — kattints a gombra a fiókod megerősítéséhez.
+            </p>
+            <a href="{{ .ConfirmationURL }}" style="display:inline-block;background:#2563EB;color:#ffffff;text-decoration:none;font-size:16px;font-weight:700;padding:14px 32px;border-radius:12px;">
+              E-mail megerősítése
+            </a>
+            <p style="font-size:13px;line-height:1.6;color:#94a3b8;margin:28px 0 0;">
+              Ha a gomb nem működik, másold be ezt a linket a böngésződbe:<br />
+              <a href="{{ .ConfirmationURL }}" style="color:#2563EB;word-break:break-all;">{{ .ConfirmationURL }}</a>
+            </p>
+          </td>
+        </tr>
+        <!-- Footer -->
+        <tr>
+          <td style="background:#f8fafc;padding:20px 28px;text-align:center;border-top:1px solid #e2e8f0;">
+            <p style="font-size:12px;color:#94a3b8;margin:0 0 4px;">Ha nem te regisztráltál, nyugodtan hagyd figyelmen kívül ezt az e-mailt.</p>
+            <p style="font-size:12px;color:#cbd5e1;margin:0;">© 2026 Turul · turul.academy</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
