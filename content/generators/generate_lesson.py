@@ -42,7 +42,7 @@ PROVIDERS = {
     "openrouter": {
         "base_url":    "https://openrouter.ai/api/v1/chat/completions",
         "env_key":     "OPENROUTER_API_KEY",
-        "default_model": "anthropic/claude-3-5-haiku",   # cheap + fast; swap to claude-3-5-sonnet for quality
+        "default_model": "openai/gpt-4o-mini",   # mid-tier: good HU, strong instruction-following, cheap; override with --model
         "extra_headers": {
             "HTTP-Referer": "https://turul.academy",
             "X-Title": "Turul Academy",
@@ -83,185 +83,121 @@ def detect_provider() -> str:
 # ─── PROMPTS ─────────────────────────────────────────────────
 
 SYSTEM_PROMPTS = {
-    "hu": """Te egy tapasztalt magyar középiskolai pedagógus és tananyagfejlesztő vagy.
+    "hu": """Te egy tapasztalt magyar pedagógus és tananyagfejlesztő vagy.
 Vonzó, életkornak megfelelő leckéket készítesz 5-12. osztályos tanulóknak.
-Minden tartalom legyen tényszerűen pontos, igazodjon a Magyar NAT 2020 tantervhez,
-és pedagógiailag megalapozott. Írj érthető, lebilincselő stílusban, a célkorosztálynak megfelelően.
-CSAK érvényes JSON-t válaszolj — semmi markdown jelölés, semmi magyarázat a JSON-on kívül.""",
 
-    "en": """You are an expert Hungarian secondary school educator and curriculum writer.
-You create engaging, age-appropriate lesson content for students grades 5-12.
-All content must be factually accurate, aligned with the Hungarian NAT 2020 curriculum,
-and pedagogically sound. Write in a clear, engaging style appropriate for the target grade.
-Respond ONLY with valid JSON — no markdown fences, no explanation outside the JSON.""",
+KÖTELEZŐ SZABÁLYOK:
+- Minden szöveg KIZÁRÓLAG magyar nyelven. TILOS idegen (angol) szavakat vagy kifejezéseket használni.
+- A tartalom legyen tényszerűen pontos, konkrét (nevek, évszámok, helyszínek), és igazodjon a Magyar NAT 2020 elvárásaihoz a megadott évfolyamon.
+- Légy alapos: ne csak egy-két mondat, hanem érdemi, tartalmas magyarázat.
+- CSAK érvényes JSON-t válaszolj — semmi markdown jelölés, semmi magyarázat a JSON-on kívül.""",
+
+    "en": """You are an expert Hungarian curriculum writer creating engaging lessons for grades 5-12.
+
+MANDATORY RULES:
+- Write ALL text in clear English; do not slip in words from other languages.
+- Be factually accurate and concrete (names, dates, places), aligned with the Hungarian NAT 2020 for the given grade.
+- Be substantial: real explanation, not one or two thin sentences.
+- Respond ONLY with valid JSON — no markdown fences, no text outside the JSON.""",
 }
 
 
-def prompt_for_mode(topic_title: str, topic_title_hu: str, nat_id: str, grade: int, mode: str, lang: str = "hu") -> str:
+# ─── CONTENT SPINE ───────────────────────────────────────────
+# One shared outline per topic. Every mode (text/story/visual/quiz) is then
+# generated FROM this same spine, so all four cover the same material — each
+# mode is a complete standalone treatment of the topic, and the quiz only ever
+# tests points that the lessons actually teach.
+
+def spine_prompt(title: str, nat_id: str, grade: int, lang: str) -> str:
     age = grade + 5
-
     if lang == "hu":
-        grade_context = f"{grade}. osztályos tanulók (kb. {age} évesek)"
-        title_to_use = topic_title_hu
-        lang_instruction = "Minden szöveges tartalmat MAGYAR NYELVEN írj."
-    else:
-        grade_context = f"Grade {grade} students (age ~{age})"
-        title_to_use = topic_title
-        lang_instruction = "Write all text content in ENGLISH."
+        return f"""Témakör: „{title}" (NAT azonosító: {nat_id})
+Célközönség: {grade}. osztályos tanulók (kb. {age} évesek)
 
-    base = f"""Témakör: „{title_to_use}" (NAT azonosító: {nat_id})
+Sorolj fel 6-8 KULCSFONTOSSÁGÚ tanulási pontot, amelyet egy {grade}. osztályos tanulónak a Magyar NAT 2020 szerint EBBŐL a témakörből ismernie kell. Logikus, tanórai sorrendben. Mindegyik egy tömör, konkrét mondat (név/évszám/fogalom, ahol releváns). Ez a lista lefedi a témakör teljes elvárt tananyagát.
+
+Adj vissza JSON-t:
+{{ "objectives": ["első pont", "második pont", "..."] }}"""
+    return f"""Topic: "{title}" (NAT id: {nat_id})
+Audience: grade {grade} students (age ~{age})
+
+List 6-8 KEY learning points a grade {grade} student must know about this topic per the Hungarian NAT 2020, in logical teaching order. Each is one concise, concrete sentence. Together they cover the full expected scope.
+
+Return JSON: {{ "objectives": ["first point", "second point", "..."] }}"""
+
+
+def prompt_for_mode(topic_title: str, topic_title_hu: str, nat_id: str, grade: int, mode: str, spine: list, lang: str = "hu") -> str:
+    age = grade + 5
+    hu = lang == "hu"
+    title_to_use = topic_title_hu if hu else topic_title
+    grade_context = f"{grade}. osztályos tanulók (kb. {age} évesek)" if hu else f"grade {grade} students (age ~{age})"
+    points_block = "\n".join(f"{i+1}. {p}" for i, p in enumerate(spine))
+
+    base = (f"""Témakör: „{title_to_use}" (NAT azonosító: {nat_id})
 Célközönség: {grade_context}
-Nyelv: {lang_instruction}"""
+
+A lecke a következő tanulási pontokra épül — ezeket KELL lefednie, ugyanebben a sorrendben:
+{points_block}"""
+    if hu else
+        f"""Topic: "{title_to_use}" (NAT id: {nat_id})
+Audience: {grade_context}
+
+The lesson is built on these learning points — it MUST cover all of them, in this order:
+{points_block}""")
 
     if mode == "text":
-        if lang == "hu":
-            return f"""{base}
+        return base + ("""
 
-Készíts egy strukturált SZÖVEGES leckét 4-6 kártyával. Minden kártya egy-egy összefüggő fogalmat dolgoz fel.
-Adj vissza JSON-t:
-{{
-  "title": "a lecke címe magyarul",
-  "cards": [
-    {{
-      "type": "text",
-      "heading": "rövid fejléc",
-      "body": "3-5 mondat, amely egyértelműen elmagyarázza ezt a fogalmat {grade_context} számára. Tényszerű, közvetlen, oktatási jellegű.",
-      "key_term": "opcionális: egy kiemelendő kulcsfogalom"
-    }}
-  ]
-}}"""
-        else:
-            return f"""{base}
+Készíts egy strukturált SZÖVEGES leckét. MINDEN tanulási ponthoz tartozzon egy kártya (tehát annyi kártya, ahány pont).
+Minden kártya:
+- "heading": rövid, lényegre törő cím
+- "body": 4-6 tartalmas, összefüggő mondat, amely ALAPOSAN kifejti az adott pontot {grade_context} szintjén — konkrét tényekkel, nevekkel, évszámokkal. Ne legyen felületes.
+- "key_term": egy kiemelendő kulcsfogalom
+Adj vissza JSON-t: {{ "title": "a lecke címe", "cards": [ {{ "type": "text", "heading": "", "body": "", "key_term": "" }} ] }}""".replace("{grade_context}", grade_context)
+        if hu else """
 
-Create a structured TEXT lesson with 4-6 cards. Each card is one focused concept.
-Return JSON:
-{{
-  "title": "lesson title",
-  "cards": [
-    {{
-      "type": "text",
-      "heading": "short heading",
-      "body": "3-5 sentences explaining this concept clearly for {grade_context}. Factual, direct, educational.",
-      "key_term": "optional: one key term to highlight"
-    }}
-  ]
-}}"""
+Create a structured TEXT lesson. One card PER learning point.
+Each card: "heading" (short), "body" (4-6 substantial sentences thoroughly explaining that point with concrete facts/names/dates), "key_term".
+Return JSON: { "title": "lesson title", "cards": [ { "type": "text", "heading": "", "body": "", "key_term": "" } ] }""")
 
-    elif mode == "story":
-        if lang == "hu":
-            return f"""{base}
+    if mode == "story":
+        return base + ("""
 
-Készíts egy TÖRTÉNET-leckét — ugyanazok a tények, narratív formában elmesélve. 4-5 kártya.
-Helyezd a tanulót „az esemény közepébe". Használj élénk, de történelmileg pontos részleteket.
-Adj vissza JSON-t:
-{{
-  "title": "a lecke címe magyarul",
-  "cards": [
-    {{
-      "type": "story",
-      "heading": "rövid fejléc",
-      "body": "3-5 mondat narratív elbeszélés. Jelen idő. Magával ragadó, de tényszerű.",
-      "mood": "egy szó: feszült / drámai / kíváncsi / reményteljes / komoly"
-    }}
-  ]
-}}"""
-        else:
-            return f"""{base}
+Készíts egy TÖRTÉNET-leckét: UGYANEZT a tananyagot (mind a fenti pontokat) elbeszélő, magával ragadó formában meséld el — jelen időben, a tanulót „az események közepébe" helyezve. A történet haladjon végig MINDEN ponton, a sorrendet követve, de maradjon történelmileg pontos. 6-8 kártya.
+Minden kártya: "heading", "body" (4-6 mondat élénk, de tényszerű elbeszélés), "mood" (egy szó: feszült / drámai / kíváncsi / reményteljes / komoly).
+Adj vissza JSON-t: {{ "title": "a lecke címe", "cards": [ {{ "type": "story", "heading": "", "body": "", "mood": "" }} ] }}"""
+        if hu else """
 
-Create a STORY lesson — same facts, told as a narrative. 4-5 story cards.
-Put the student 'in the moment'. Use vivid but historically accurate detail.
-Return JSON:
-{{
-  "title": "lesson title",
-  "cards": [
-    {{
-      "type": "story",
-      "heading": "short heading",
-      "body": "3-5 sentences of narrative storytelling. Present tense. Immersive but factual.",
-      "mood": "one word: tense / dramatic / curious / hopeful / solemn"
-    }}
-  ]
-}}"""
+Create a STORY lesson telling the SAME material (all points above) as an immersive present-tense narrative, moving through every point in order, historically accurate. 6-8 cards.
+Each card: "heading", "body" (4-6 vivid but factual sentences), "mood" (tense/dramatic/curious/hopeful/solemn).
+Return JSON: { "title": "lesson title", "cards": [ { "type": "story", "heading": "", "body": "", "mood": "" } ] }""")
 
-    elif mode == "visual":
-        if lang == "hu":
-            return f"""{base}
+    if mode == "visual":
+        return base + ("""
 
-Készíts egy VIZUÁLIS leckét — írd le, mit látna a tanuló egy diagramon, térképen vagy illusztráción.
-4-5 kártya, mindegyik egy-egy vizuális elemet ír le elég részletesen ahhoz, hogy a kép nélkül is érthető legyen.
-Adj vissza JSON-t:
-{{
-  "title": "a lecke címe magyarul",
-  "cards": [
-    {{
-      "type": "visual",
-      "heading": "rövid fejléc",
-      "visual_type": "idővonal | térkép | diagram | arckép | grafikon",
-      "description": "2-3 mondat, amely pontosan leírja, mit mutat ez a vizuális elem és mire érdemes figyelni.",
-      "caption": "egy mondatos képaláírás, ahogyan a kép alatt szerepelne"
-    }}
-  ]
-}}"""
-        else:
-            return f"""{base}
+Készíts egy VIZUÁLIS leckét: MINDEN ponthoz írj le egy-egy szemléltető vizuális elemet (idővonal, térkép, diagram, arckép, grafikon), amely segít megérteni az adott pontot. A leírás legyen elég részletes ahhoz, hogy kép nélkül is tanulható legyen. Annyi kártya, ahány pont.
+Minden kártya: "heading", "visual_type" (idővonal | térkép | diagram | arckép | grafikon), "description" (3-4 mondat, mit mutat és mire figyeljünk), "caption" (egymondatos képaláírás).
+Adj vissza JSON-t: {{ "title": "a lecke címe", "cards": [ {{ "type": "visual", "heading": "", "visual_type": "", "description": "", "caption": "" }} ] }}"""
+        if hu else """
 
-Create a VISUAL lesson — describe what a student would SEE in a diagram, map, or illustration.
-4-5 cards, each describing one visual element clearly enough to understand without the image.
-Return JSON:
-{{
-  "title": "lesson title",
-  "cards": [
-    {{
-      "type": "visual",
-      "heading": "short heading",
-      "visual_type": "timeline | map | diagram | portrait | chart",
-      "description": "2-3 sentences describing exactly what this visual shows and what to notice.",
-      "caption": "one-sentence caption as it would appear under the image"
-    }}
-  ]
-}}"""
+Create a VISUAL lesson: for EACH point, describe one illustrative visual (timeline/map/diagram/portrait/chart) detailed enough to learn from without the image. One card per point.
+Each card: "heading", "visual_type", "description" (3-4 sentences), "caption".
+Return JSON: { "title": "lesson title", "cards": [ { "type": "visual", "heading": "", "visual_type": "", "description": "", "caption": "" } ] }""")
 
-    elif mode == "quiz":
-        if lang == "hu":
-            return f"""{base}
+    if mode == "quiz":
+        return base + ("""
 
-Készíts egy KVÍZT 4 kérdéssel, amelyek a témakör megértését tesztelik.
-Változatos kérdéstípusokat használj. Minden helyes válaszhoz adj rövid magyarázatot.
-Adj vissza JSON-t:
-{{
-  "title": "a lecke címe magyarul",
-  "cards": [
-    {{
-      "type": "quiz",
-      "question_type": "multiple_choice | true_false",
-      "question": "egyértelmű kérdés szövege",
-      "options": ["A) lehetőség", "B) lehetőség", "C) lehetőség", "D) lehetőség"],
-      "correct": "A",
-      "explanation": "1-2 mondat, amely elmagyarázza, miért helyes ez, és miért helytelenek a többiek."
-    }}
-  ]
-}}"""
-        else:
-            return f"""{base}
+Készíts egy KVÍZT 5 kérdéssel. KIZÁRÓLAG a fenti tanulási pontokból kérdezz — SOHA ne kérdezz olyasmit, ami nem szerepel a pontok között. Lehetőleg minden fontos pontot érints. Változatos kérdéstípusok.
+Minden kérdés: "question_type" (multiple_choice | true_false), "question", "options" (["A) ...","B) ...","C) ...","D) ..."]), "correct" (a helyes betű), "explanation" (1-2 mondat: miért helyes, és miért nem a többi).
+Adj vissza JSON-t: {{ "title": "a lecke címe", "cards": [ {{ "type": "quiz", "question_type": "", "question": "", "options": [], "correct": "", "explanation": "" }} ] }}"""
+        if hu else """
 
-Create a QUIZ with 4 questions testing understanding of this topic.
-Mix question types. Include a short explanation for each correct answer.
-Return JSON:
-{{
-  "title": "lesson title",
-  "cards": [
-    {{
-      "type": "quiz",
-      "question_type": "multiple_choice | true_false",
-      "question": "clear question text",
-      "options": ["A) option", "B) option", "C) option", "D) option"],
-      "correct": "A",
-      "explanation": "1-2 sentences explaining why this is correct and what makes the others wrong."
-    }}
-  ]
-}}"""
+Create a QUIZ of 5 questions. Test ONLY the learning points above — never ask about anything not in those points. Cover the important points. Mix question types.
+Each: "question_type" (multiple_choice|true_false), "question", "options" (A-D), "correct" (letter), "explanation" (1-2 sentences).
+Return JSON: { "title": "lesson title", "cards": [ { "type": "quiz", "question_type": "", "question": "", "options": [], "correct": "", "explanation": "" } ] }""")
 
     raise ValueError(f"Unknown mode: {mode}")
+
 
 
 # ─── AI CALL ─────────────────────────────────────────────────
@@ -285,7 +221,7 @@ async def call_ai(prompt: str, provider_cfg: dict, api_key: str, model: str, cli
 
     payload = {
         "model": model,
-        "max_tokens": 2000,
+        "max_tokens": 4000,
         "temperature": 0.7,
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPTS[lang]},
@@ -364,13 +300,30 @@ async def save_lesson(topic_id: str, mode: str, content: dict, dry_run: bool = F
 async def generate_for_topic(topic: dict, modes: list, dry_run: bool, provider_cfg: dict, api_key: str, model: str, lang: str = "hu") -> None:
     print(f"\n📚 [{topic['nat_id']}] {topic['title_hu']} (Grade {topic['grade']})")
 
+    title = topic["title_hu"] if lang == "hu" else topic["title"]
+
     async with httpx.AsyncClient() as client:
+        # Pass 1 — build the shared content spine (the NAT-aligned learning points)
+        print("  → spine...", end=" ", flush=True)
+        try:
+            spine_data = await call_ai(spine_prompt(title, topic["nat_id"], topic["grade"], lang),
+                                       provider_cfg, api_key, model, client, lang)
+            spine = spine_data.get("objectives", [])
+            if not spine:
+                print("⚠️  empty spine — skipping topic")
+                return
+            print(f"✓ ({len(spine)} learning points)")
+        except Exception as e:
+            print(f"⚠️  spine failed: {e} — skipping topic")
+            return
+
+        # Pass 2 — generate each mode FROM the shared spine
         for mode in modes:
             print(f"  → {mode}...", end=" ", flush=True)
             try:
                 prompt = prompt_for_mode(
                     topic["title"], topic["title_hu"],
-                    topic["nat_id"], topic["grade"], mode, lang
+                    topic["nat_id"], topic["grade"], mode, spine, lang
                 )
                 content = await call_ai(prompt, provider_cfg, api_key, model, client, lang)
                 print(f"✓ ({len(content.get('cards', []))} cards)")
