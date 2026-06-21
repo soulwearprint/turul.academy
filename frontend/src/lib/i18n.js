@@ -79,6 +79,7 @@ export const translations = {
 
   // ── Topics ───────────────────────────────────────────────
   'topics.all':         { hu: 'Összes',    en: 'All' },
+  'topics.count':       { hu: 'téma',      en: 'topics' },
   'topics.grade':       { hu: '. osztály', en: '. grade' },
   'topics.empty':       { hu: 'Nincs elérhető téma.', en: 'No topics available.' },
 

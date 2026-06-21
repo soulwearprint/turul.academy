@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
+import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
 import PageHeader from '../components/PageHeader'
 import BottomNav from '../components/BottomNav'
@@ -18,6 +19,7 @@ function groupByGrade(topics) {
 export default function TopicsPage() {
   const { subjectId } = useParams()
   const { session } = useAuth()
+  const { t, lang } = useLang()
   const navigate = useNavigate()
   const [subject, setSubject] = useState(null)
   const [topics, setTopics] = useState([])
@@ -52,14 +54,14 @@ export default function TopicsPage() {
     load()
   }, [subjectId, token])
 
-  const grades = [...new Set(topics.map(t => t.grade))].sort()
+  const grades = [...new Set(topics.map(t => t.grade))].sort((a, b) => a - b)
   const filteredTopics = grade ? topics.filter(t => t.grade === grade) : topics
 
   return (
     <div className="pb-24">
       <PageHeader
-        title={subject?.name_hu ?? 'Témakörök'}
-        subtitle={`${topics.length} téma`}
+        title={(lang === 'en' ? subject?.name : subject?.name_hu) ?? subject?.name_hu ?? 'Témakörök'}
+        subtitle={`${topics.length} ${t('topics.count')}`}
         backTo="/"
       />
 
@@ -73,7 +75,7 @@ export default function TopicsPage() {
                 grade === null ? 'bg-turul-blue text-white' : 'text-slate-500 hover:bg-slate-100'
               }`}
             >
-              Összes
+              {t('topics.all')}
             </button>
             {grades.map(g => (
               <button
@@ -83,7 +85,7 @@ export default function TopicsPage() {
                   grade === g ? 'bg-turul-blue text-white' : 'text-slate-500 hover:bg-slate-100'
                 }`}
               >
-                {g}. osztály
+                {g}{t('topics.grade')}
               </button>
             ))}
           </div>
@@ -92,9 +94,9 @@ export default function TopicsPage() {
 
       <div className="px-4 py-4 max-w-lg mx-auto space-y-2">
         {loading ? (
-          <div className="text-center text-slate-400 py-12">Betöltés...</div>
+          <div className="text-center text-slate-400 py-12">{t('common.loading')}</div>
         ) : filteredTopics.length === 0 ? (
-          <div className="text-center text-slate-400 py-12">Nincs elérhető téma.</div>
+          <div className="text-center text-slate-400 py-12">{t('topics.empty')}</div>
         ) : filteredTopics.map(topic => (
           <button
             key={topic.id}
@@ -108,8 +110,9 @@ export default function TopicsPage() {
                 </span>
               </div>
               <div className="flex-1 min-w-0">
-                <div className="font-semibold text-slate-900 text-sm">{topic.title_hu}</div>
-                <div className="text-xs text-slate-500 mt-0.5">{topic.title}</div>
+                <div className="font-semibold text-slate-900 text-sm">
+                  {(lang === 'en' ? topic.title : topic.title_hu) ?? topic.title_hu}
+                </div>
 
                 {/* Show available lesson modes */}
                 {topic.lessons && topic.lessons.length > 0 && (

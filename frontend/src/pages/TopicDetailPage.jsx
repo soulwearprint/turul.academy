@@ -11,7 +11,7 @@ const MODE_ORDER = ['text', 'story', 'visual', 'quiz']
 export default function TopicDetailPage() {
   const { subjectId, topicId } = useParams()
   const navigate = useNavigate()
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const [topic, setTopic] = useState(null)
   const [lessons, setLessons] = useState([])
   const [loading, setLoading] = useState(true)
@@ -41,7 +41,7 @@ export default function TopicDetailPage() {
   return (
     <div className="pb-24">
       <PageHeader
-        title={topic?.title_hu ?? ''}
+        title={(lang === 'en' ? topic?.title : topic?.title_hu) ?? topic?.title_hu ?? ''}
         subtitle={topic?.nat_id}
         backTo={`/subjects/${subjectId}/topics`}
       />
@@ -49,8 +49,7 @@ export default function TopicDetailPage() {
       <div className="px-4 py-5 max-w-lg mx-auto">
         {/* Topic info */}
         <div className="card p-4 mb-5">
-          <p className="text-slate-500 text-sm italic">{topic?.title}</p>
-          <div className="flex flex-wrap gap-1.5 mt-2">
+          <div className="flex flex-wrap gap-1.5">
             <span className="text-xs bg-slate-100 text-slate-600 rounded-full px-2 py-0.5">
               {topic?.grade}{t('common.grade')}
             </span>
