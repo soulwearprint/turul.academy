@@ -53,13 +53,13 @@ async def create_profile(body: ProfileSetup, user: SupabaseUser = Depends(get_cu
         "gamification_level": body.gamification_level,
         "language": body.language,
         "parent_email": body.parent_email,
-    })
+    }, service=True)
 
 
 @router.patch("/me")
 async def update_profile(body: ProfileSetup, user: SupabaseUser = Depends(get_current_user)):
     payload = body.model_dump(exclude_none=True)
-    return await db_patch("user_profiles", {"id": f"eq.{user.id}"}, payload)
+    return await db_patch("user_profiles", {"id": f"eq.{user.id}"}, payload, service=True)
 
 
 @router.get("/me/subjects")
@@ -81,4 +81,4 @@ async def enrol_subject(subject_id: str, user: SupabaseUser = Depends(get_curren
     )
     if existing:
         raise HTTPException(status_code=409, detail="Already enrolled in this subject")
-    return await db_post("user_subjects", {"user_id": user.id, "subject_id": subject_id})
+    return await db_post("user_subjects", {"user_id": user.id, "subject_id": subject_id}, service=True)

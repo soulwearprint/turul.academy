@@ -47,10 +47,11 @@ async def db_post(table: str, payload: Union[dict, list], *, service: bool = Fal
     return resp.json()
 
 
-async def db_patch(table: str, params: dict, payload: dict, *, user_token: Optional[str] = None) -> dict:
-    """UPDATE rows matching params."""
-    headers = {**SUPABASE_HEADERS_ANON, "Prefer": "return=representation"}
-    if user_token:
+async def db_patch(table: str, params: dict, payload: dict, *, user_token: Optional[str] = None, service: bool = False) -> dict:
+    """UPDATE rows matching params. Use service=True to bypass RLS (admin operations)."""
+    base = SUPABASE_HEADERS_SERVICE if service else SUPABASE_HEADERS_ANON
+    headers = {**base, "Prefer": "return=representation"}
+    if user_token and not service:
         headers["Authorization"] = f"Bearer {user_token}"
 
     resp = await http().patch(

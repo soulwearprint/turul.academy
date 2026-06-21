@@ -70,6 +70,7 @@ async def update_progress(
             "lesson_progress",
             {"user_id": f"eq.{user.id}", "lesson_id": f"eq.{lesson_id}"},
             payload,
+            service=True,
         )
     else:
         lessons = await db_get("lessons", {"id": f"eq.{lesson_id}", "select": "topic_id"})
@@ -80,4 +81,4 @@ async def update_progress(
             "lesson_id": lesson_id,
             "topic_id": lessons[0]["topic_id"],
             **payload,
-        })
+        }, service=True)

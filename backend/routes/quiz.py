@@ -68,16 +68,16 @@ async def submit_quiz(
         "score": score,
         "answers": results,
         "xp_earned": xp_earned,
-    })
+    }, service=True)
 
     # Update XP (upsert pattern)
     existing_xp = await db_get("user_xp", {"user_id": f"eq.{user.id}", "select": "total_xp,level"})
     if existing_xp:
         new_total = (existing_xp[0].get("total_xp") or 0) + xp_earned
         new_level = max(1, new_total // 100)  # simple level formula: 100 XP per level
-        await db_patch("user_xp", {"user_id": f"eq.{user.id}"}, {"total_xp": new_total, "level": new_level})
+        await db_patch("user_xp", {"user_id": f"eq.{user.id}"}, {"total_xp": new_total, "level": new_level}, service=True)
     else:
-        await db_post("user_xp", {"user_id": user.id, "total_xp": xp_earned, "level": 1})
+        await db_post("user_xp", {"user_id": user.id, "total_xp": xp_earned, "level": 1}, service=True)
 
     # Update daily activity
     today_activity = await db_get(
@@ -89,6 +89,7 @@ async def submit_quiz(
             "daily_activity",
             {"user_id": f"eq.{user.id}", "date": "eq.today"},
             {"xp_earned": (today_activity[0].get("xp_earned") or 0) + xp_earned},
+            service=True,
         )
 
     return {
