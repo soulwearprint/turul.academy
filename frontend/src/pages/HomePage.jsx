@@ -17,7 +17,7 @@ function subjectIcon(code) {
 }
 
 export default function HomePage() {
-  const { session, profile, signOut } = useAuth()
+  const { session, profile, setProfile, signOut } = useAuth()
   const { t, lang } = useLang()
   const navigate = useNavigate()
   const [subjects, setSubjects] = useState([])
@@ -29,6 +29,10 @@ export default function HomePage() {
   useEffect(() => {
     async function load() {
       try {
+        // No profile yet (e.g. confirmed via email then logged straight in) → onboard first.
+        // GET /api/account/me throws 404 when the profile doesn't exist.
+        const prof = await api.account.me(token)
+        setProfile(prof)
         const [enrolled, prog] = await Promise.all([
           api.account.subjects(token),
           api.progress.me(token),
