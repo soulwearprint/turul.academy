@@ -89,6 +89,8 @@ export const translations = {
   'topic.coming.soon':  { hu: 'Hamarosan!',        en: 'Coming soon!' },
   'topic.minutes':      { hu: 'kb. {n} perc',      en: 'approx. {n} min' },
   'topic.semester':     { hu: '. félév',            en: '. semester' },
+  'topic.done':         { hu: 'Kész',               en: 'Done' },
+  'topic.progress':     { hu: '{done}/{total} kész', en: '{done}/{total} done' },
 
   // ── Lesson player ────────────────────────────────────────
   'lesson.key.term':    { hu: 'Kulcsfogalom',  en: 'Key term' },
