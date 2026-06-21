@@ -53,6 +53,7 @@ async def update_progress(
     existing = await db_get(
         "lesson_progress",
         {"user_id": f"eq.{user.id}", "lesson_id": f"eq.{lesson_id}", "select": "id,topic_id"},
+        service=True,
     )
 
     payload: dict = {"status": body.status}

@@ -23,7 +23,7 @@ class ProfileSetup(BaseModel):
 
 @router.get("/me")
 async def get_profile(user: SupabaseUser = Depends(get_current_user)):
-    profiles = await db_get("user_profiles", {"id": f"eq.{user.id}", "select": "*"})
+    profiles = await db_get("user_profiles", {"id": f"eq.{user.id}", "select": "*"}, service=True)
     if not profiles:
         raise HTTPException(status_code=404, detail="Profile not found")
     return profiles[0]
@@ -39,7 +39,7 @@ async def create_profile(body: ProfileSetup, user: SupabaseUser = Depends(get_cu
                 detail="Parent email required for users under 13 (GDPR compliance)",
             )
 
-    existing = await db_get("user_profiles", {"id": f"eq.{user.id}", "select": "id"})
+    existing = await db_get("user_profiles", {"id": f"eq.{user.id}", "select": "id"}, service=True)
     if existing:
         raise HTTPException(status_code=409, detail="Profile already exists — use PATCH to update")
 
@@ -70,6 +70,7 @@ async def get_enrolled_subjects(user: SupabaseUser = Depends(get_current_user)):
             "user_id": f"eq.{user.id}",
             "select": "*,subject:curriculum_subjects(id,code,name,name_hu,grade_min,grade_max)",
         },
+        service=True,
     )
 
 
@@ -78,6 +79,7 @@ async def enrol_subject(subject_id: str, user: SupabaseUser = Depends(get_curren
     existing = await db_get(
         "user_subjects",
         {"user_id": f"eq.{user.id}", "subject_id": f"eq.{subject_id}", "select": "id"},
+        service=True,
     )
     if existing:
         raise HTTPException(status_code=409, detail="Already enrolled in this subject")

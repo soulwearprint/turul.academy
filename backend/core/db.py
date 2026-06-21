@@ -23,10 +23,16 @@ def rpc_url(fn: str) -> str:
     return f"{settings.supabase_url}/rest/v1/rpc/{fn}"
 
 
-async def db_get(table: str, params: dict, *, user_token: Optional[str] = None) -> list:
-    """GET rows from a table. Uses user token for RLS-scoped reads."""
-    headers = {**SUPABASE_HEADERS_ANON}
-    if user_token:
+async def db_get(table: str, params: dict, *, user_token: Optional[str] = None, service: bool = False) -> list:
+    """GET rows from a table.
+
+    Public content (curriculum/lessons) is readable with the anon key. User-owned
+    tables have RLS `*_own` policies keyed on auth.uid(); since this trusted backend
+    talks to PostgREST with the anon key (no end-user JWT) and scopes every query by
+    user.id itself, those reads must use service=True to bypass RLS.
+    """
+    headers = {**(SUPABASE_HEADERS_SERVICE if service else SUPABASE_HEADERS_ANON)}
+    if user_token and not service:
         headers["Authorization"] = f"Bearer {user_token}"
 
     resp = await http().get(rest_url(table), headers=headers, params=params, timeout=7.0)

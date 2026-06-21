@@ -16,9 +16,10 @@ async def get_my_progress(user: SupabaseUser = Depends(get_current_user)):
             "status": "eq.completed",
             "select": "lesson_id,topic_id,mode_used,completed_at,time_spent_seconds",
         },
+        service=True,
     )
-    xp = await db_get("user_xp", {"user_id": f"eq.{user.id}", "select": "*"})
-    badges = await db_get("user_badges", {"user_id": f"eq.{user.id}", "select": "*", "order": "earned_at.desc"})
+    xp = await db_get("user_xp", {"user_id": f"eq.{user.id}", "select": "*"}, service=True)
+    badges = await db_get("user_badges", {"user_id": f"eq.{user.id}", "select": "*", "order": "earned_at.desc"}, service=True)
 
     return {
         "completed_lessons": completed,
@@ -49,6 +50,7 @@ async def get_subject_progress(
             "topic_id": f"in.({','.join(topic_ids)})",
             "select": "topic_id,mode_used",
         },
+        service=True,
     )
 
     completed_by_topic: dict[str, list[str]] = {}
