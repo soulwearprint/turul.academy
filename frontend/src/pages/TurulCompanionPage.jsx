@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
@@ -69,6 +70,16 @@ export default function TurulCompanionPage() {
             })}
           </div>
         </section>
+
+        {/* Grade drives maturity → let the student update it */}
+        <Link to="/profile" className="card p-4 flex items-center gap-3 active:scale-[0.99] transition-transform">
+          <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center text-xl">🎓</div>
+          <div className="flex-1 min-w-0">
+            <p className="font-semibold text-slate-800 text-sm">{t('companion.grade.title')}</p>
+            <p className="text-xs text-slate-500 mt-0.5">{t('companion.grade.hint')}</p>
+          </div>
+          <span className="text-slate-300 text-xl">›</span>
+        </Link>
 
         {/* Customization teaser */}
         <section className="card p-5 text-center">

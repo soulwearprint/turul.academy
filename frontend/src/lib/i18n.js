@@ -14,6 +14,7 @@ export const translations = {
   'nav.subjects':      { hu: 'Tananyag',    en: 'Study' },
   'nav.progress':      { hu: 'Haladás',     en: 'Progress' },
   'nav.turul':         { hu: 'Turul',       en: 'Turul' },
+  'nav.profile':       { hu: 'Profil',      en: 'Profile' },
 
   // ── Auth ─────────────────────────────────────────────────
   'auth.login':        { hu: 'Bejelentkezés',    en: 'Sign in' },
@@ -123,7 +124,20 @@ export const translations = {
   'progress.subjects.title': { hu: 'Tantárgyak szerint', en: 'By subject' },
   'progress.badges.title':   { hu: 'Kitűzők',            en: 'Badges' },
 
+  // ── Profile ──────────────────────────────────────────────
+  'profile.title':       { hu: 'Profil',                 en: 'Profile' },
+  'profile.name':        { hu: 'Neved',                  en: 'Your name' },
+  'profile.grade':       { hu: 'Évfolyam',               en: 'Grade' },
+  'profile.mode':        { hu: 'Kedvenc tanulási mód',   en: 'Preferred learning mode' },
+  'profile.save':        { hu: 'Mentés',                 en: 'Save' },
+  'profile.saved':       { hu: 'Mentve',                 en: 'Saved' },
+  'profile.stage.hint':  { hu: 'A Turulod fejlődési szintje az évfolyamodhoz igazodik.',
+                           en: "Your Turul's stage follows your grade." },
+
   // ── Turul companion ──────────────────────────────────────
+  'companion.grade.title': { hu: 'Évfolyam módosítása',  en: 'Change your grade' },
+  'companion.grade.hint':  { hu: 'A Turulod ettől fejlődik a következő szintre.',
+                             en: 'This is what evolves your Turul to the next stage.' },
   'companion.stage':     { hu: 'Jelenlegi fejlődési szint', en: 'Current evolution stage' },
   'companion.journey':   { hu: 'A Turulod útja',  en: "Your Turul's journey" },
   'companion.journey.sub': { hu: 'A Turul veled együtt fejlődik az 5. osztálytól az érettségiig.',

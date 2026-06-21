@@ -76,9 +76,9 @@ export default function HomePage() {
         <div className="max-w-lg mx-auto">
           <div className="flex items-center justify-between mb-1">
             <p className="text-brand-100 text-sm">{t('home.greeting')}</p>
-            <button onClick={signOut} className="text-brand-100/80 text-xs hover:text-white transition-colors">
-              {t('home.signout')}
-            </button>
+            <Link to="/profile" className="text-brand-100/90 text-xs font-semibold hover:text-white transition-colors inline-flex items-center gap-1">
+              ⚙️ {t('nav.profile')}
+            </Link>
           </div>
           <h1 className="text-2xl font-extrabold text-white font-display">{displayName} 👋</h1>
 
