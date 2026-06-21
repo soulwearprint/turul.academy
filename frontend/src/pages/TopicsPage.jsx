@@ -38,8 +38,11 @@ export default function TopicsPage() {
         const s = subjects.find(s => s.id === subjectId)
         setSubject(s)
         setTopics(allTopics)
-        // default to profile grade or min grade
-        if (session?.user) {
+        // Restore the last grade the user picked for this subject; else default to profile grade
+        const saved = sessionStorage.getItem(`ta_grade_${subjectId}`)
+        if (saved !== null) {
+          setGrade(saved === 'all' ? null : Number(saved))
+        } else if (session?.user) {
           try {
             const profile = await api.account.me(token)
             setGrade(profile.grade ?? s?.grade_min ?? allTopics[0]?.grade)
@@ -53,6 +56,11 @@ export default function TopicsPage() {
     }
     load()
   }, [subjectId, token])
+
+  function chooseGrade(g) {
+    setGrade(g)
+    sessionStorage.setItem(`ta_grade_${subjectId}`, g === null ? 'all' : String(g))
+  }
 
   const grades = [...new Set(topics.map(t => t.grade))].sort((a, b) => a - b)
   const filteredTopics = grade ? topics.filter(t => t.grade === grade) : topics
@@ -70,7 +78,7 @@ export default function TopicsPage() {
         <div className="sticky top-[57px] bg-white border-b border-slate-100 z-30 overflow-x-auto">
           <div className="flex px-4 py-2 gap-2 min-w-max">
             <button
-              onClick={() => setGrade(null)}
+              onClick={() => chooseGrade(null)}
               className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
                 grade === null ? 'bg-turul-blue text-white' : 'text-slate-500 hover:bg-slate-100'
               }`}
@@ -80,7 +88,7 @@ export default function TopicsPage() {
             {grades.map(g => (
               <button
                 key={g}
-                onClick={() => setGrade(g)}
+                onClick={() => chooseGrade(g)}
                 className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
                   grade === g ? 'bg-turul-blue text-white' : 'text-slate-500 hover:bg-slate-100'
                 }`}

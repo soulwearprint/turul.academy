@@ -1,7 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useLang } from '../contexts/LanguageContext'
-import { getTurulConfig } from '../lib/turul'
-import TurulMascot from './TurulMascot'
+import TurulPortrait from './TurulPortrait'
 
 function Icon({ name, active }) {
   const stroke = active ? '#2563EB' : '#94A3B8'
@@ -14,7 +13,6 @@ function Icon({ name, active }) {
 
 export default function BottomNav() {
   const { t, lang, setLang } = useLang()
-  const config = getTurulConfig()
 
   const links = [
     { to: '/',         label: t('nav.home'),     icon: 'home' },
@@ -57,7 +55,7 @@ export default function BottomNav() {
         {({ isActive }) => (
           <>
             {isActive && <span className="absolute top-0 h-0.5 w-8 rounded-full bg-turul-blue" />}
-            <TurulMascot mood={isActive ? 'happy' : 'idle'} color={config.color} size={28} animate={false} shadow={false} />
+            <TurulPortrait stage="explorer" size={26} animate={false} className={isActive ? '' : 'opacity-60 grayscale'} />
             {t('nav.turul')}
           </>
         )}
