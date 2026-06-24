@@ -163,26 +163,26 @@ Return JSON: { "title": "lesson title", "cards": [ { "type": "text", "heading": 
     if mode == "story":
         return base + ("""
 
-Készíts egy TÖRTÉNET-leckét: ugyanezt a tananyagot (mind a fenti pontokat) meséld el lebilincselő történelmi elbeszélésként — úgy, ahogy egy kiváló történész-mesélő vagy dokumentumfilm narrátora tenné. Eleveníts meg valós történelmi szereplőket, jeleneteket, döntéseket és fordulópontokat; építs feszültséget, ok-okozati ívet és emberi tétet.
+Készíts egy TÖRTÉNET-leckét: meséld el a témakör anyagát (mind a fenti pontokat) lebilincselő történelmi elbeszélésként, amelynek GERINCE az OK-OKOZAT. Mutasd meg, hogyan vezetett egyik esemény, döntés vagy feszültség a másikhoz, és hogyan vált valami elkerülhetetlenné — minden kártya egy lépés ebben a láncban, a tét egyre nagyobb. A száraz tényeket keltsd életre érzékletes, EMBERI pillanatokkal (egy döntés súlya, a lövészárkok hangulata, egy tömeg reménye vagy félelme), hogy a történet éljen.
 
 FONTOS stílusszabályok:
-- NE szólítsd meg az olvasót, és KERÜLD a „képzeld el, hogy ott vagy", „te is ott állsz" típusú fordulatokat. Ez ne szerepjáték legyen, hanem valódi, önálló történet.
-- Harmadik személyben írj (vagy egy konkrét valós történelmi alak nézőpontjából, ha az erősíti a sztorit).
-- Válts nézőpontot, kezdj jelenettel vagy konkrét pillanattal, használj érzékletes részleteket — de maradj történelmileg PONTOS: valódi nevek, évszámok, helyszínek.
-- A történet haladjon végig minden tanulási ponton, a sorrendet követve. 6-8 kártya, mindegyik egy-egy jelenet/fejezet.
+- NE találj ki kitalált, megnevezett szereplőt vagy fiktív személyes részletet (pl. kitalált katona, kitalált napló, „anyám", „a barátom, János"). KIZÁRÓLAG valós történelmi szereplők, valós nevek, évszámok, helyszínek. Az emberi pillanatok valós, dokumentált helyzeteken alapuljanak (pl. „a frontkatonák", „a szarajevói tömeg") — ne kitaláción.
+- NE szólítsd meg az olvasót, KERÜLD a „képzeld el, hogy ott vagy" fordulatot. Harmadik személyben írj.
+- Az elbeszélés legyen élő és emberi, DE pontos és tárgyilagos — az ok-okozati ív vigye előre.
+- Haladj végig minden tanulási ponton, a sorrendet követve. 6-8 kártya, mindegyik egy fordulópont a láncban.
 
-Minden kártya: "heading" (a jelenet rövid címe), "body" (4-6 mondat élénk, irodalmi igényű, mégis tényszerű elbeszélés), "mood" (egy szó: feszült / drámai / kíváncsi / reményteljes / komoly).
+Minden kártya: "heading" (a fordulópont rövid címe), "body" (4-6 mondat: oksági ívet hordozó, élénk, mégis tényszerű elbeszélés), "mood" (egy szó: feszült / drámai / kíváncsi / reményteljes / komoly).
 Adj vissza JSON-t: {{ "title": "a lecke címe", "cards": [ {{ "type": "story", "heading": "", "body": "", "mood": "" }} ] }}"""
         if hu else """
 
-Create a STORY lesson: tell the same material (all points above) as a gripping historical narrative, the way a great history storyteller or documentary narrator would. Bring real historical figures, scenes, decisions and turning points to life; build tension, causal arc and human stakes.
+Create a STORY lesson: tell the material (all points above) as a gripping historical narrative whose BACKBONE is CAUSE AND EFFECT. Show how one event, decision or tension led to the next and how something became inevitable — each card a step in that chain, the stakes rising. Bring the dry facts to life with vivid, HUMAN moments (the weight of a decision, the mood of the trenches, a crowd's hope or fear) so the story breathes.
 
 IMPORTANT style rules:
-- Do NOT address the reader; AVOID "imagine you are there" / "you stand among them" devices. This is a real story, not a role-play.
-- Write in third person (or from a specific real figure's viewpoint if it strengthens the story).
-- Open with a scene or concrete moment, use sensory detail — but stay historically ACCURATE: real names, dates, places.
-- Move through every learning point in order. 6-8 cards, each a scene/chapter.
-Each card: "heading" (scene title), "body" (4-6 vivid, literary yet factual sentences), "mood" (tense/dramatic/curious/hopeful/solemn).
+- Do NOT invent named characters or fictional personal detail (no made-up soldier, diary, "my mother", "my friend János"). ONLY real historical figures, real names, dates, places. Ground human moments in real, documented situations (e.g. "the front-line soldiers", "the Sarajevo crowd"), never invention.
+- Do NOT address the reader; avoid "imagine you are there". Third person.
+- Alive and human, but accurate and objective — let the causal arc drive it forward.
+- Move through every learning point in order. 6-8 cards, each a turning point in the chain.
+Each card: "heading" (turning-point title), "body" (4-6 vivid yet factual sentences carrying the causal arc), "mood" (tense/dramatic/curious/hopeful/solemn).
 Return JSON: { "title": "lesson title", "cards": [ { "type": "story", "heading": "", "body": "", "mood": "" } ] }""")
 
     if mode == "visual":
