@@ -163,13 +163,26 @@ Return JSON: { "title": "lesson title", "cards": [ { "type": "text", "heading": 
     if mode == "story":
         return base + ("""
 
-Készíts egy TÖRTÉNET-leckét: UGYANEZT a tananyagot (mind a fenti pontokat) elbeszélő, magával ragadó formában meséld el — jelen időben, a tanulót „az események közepébe" helyezve. A történet haladjon végig MINDEN ponton, a sorrendet követve, de maradjon történelmileg pontos. 6-8 kártya.
-Minden kártya: "heading", "body" (4-6 mondat élénk, de tényszerű elbeszélés), "mood" (egy szó: feszült / drámai / kíváncsi / reményteljes / komoly).
+Készíts egy TÖRTÉNET-leckét: ugyanezt a tananyagot (mind a fenti pontokat) meséld el lebilincselő történelmi elbeszélésként — úgy, ahogy egy kiváló történész-mesélő vagy dokumentumfilm narrátora tenné. Eleveníts meg valós történelmi szereplőket, jeleneteket, döntéseket és fordulópontokat; építs feszültséget, ok-okozati ívet és emberi tétet.
+
+FONTOS stílusszabályok:
+- NE szólítsd meg az olvasót, és KERÜLD a „képzeld el, hogy ott vagy", „te is ott állsz" típusú fordulatokat. Ez ne szerepjáték legyen, hanem valódi, önálló történet.
+- Harmadik személyben írj (vagy egy konkrét valós történelmi alak nézőpontjából, ha az erősíti a sztorit).
+- Válts nézőpontot, kezdj jelenettel vagy konkrét pillanattal, használj érzékletes részleteket — de maradj történelmileg PONTOS: valódi nevek, évszámok, helyszínek.
+- A történet haladjon végig minden tanulási ponton, a sorrendet követve. 6-8 kártya, mindegyik egy-egy jelenet/fejezet.
+
+Minden kártya: "heading" (a jelenet rövid címe), "body" (4-6 mondat élénk, irodalmi igényű, mégis tényszerű elbeszélés), "mood" (egy szó: feszült / drámai / kíváncsi / reményteljes / komoly).
 Adj vissza JSON-t: {{ "title": "a lecke címe", "cards": [ {{ "type": "story", "heading": "", "body": "", "mood": "" }} ] }}"""
         if hu else """
 
-Create a STORY lesson telling the SAME material (all points above) as an immersive present-tense narrative, moving through every point in order, historically accurate. 6-8 cards.
-Each card: "heading", "body" (4-6 vivid but factual sentences), "mood" (tense/dramatic/curious/hopeful/solemn).
+Create a STORY lesson: tell the same material (all points above) as a gripping historical narrative, the way a great history storyteller or documentary narrator would. Bring real historical figures, scenes, decisions and turning points to life; build tension, causal arc and human stakes.
+
+IMPORTANT style rules:
+- Do NOT address the reader; AVOID "imagine you are there" / "you stand among them" devices. This is a real story, not a role-play.
+- Write in third person (or from a specific real figure's viewpoint if it strengthens the story).
+- Open with a scene or concrete moment, use sensory detail — but stay historically ACCURATE: real names, dates, places.
+- Move through every learning point in order. 6-8 cards, each a scene/chapter.
+Each card: "heading" (scene title), "body" (4-6 vivid, literary yet factual sentences), "mood" (tense/dramatic/curious/hopeful/solemn).
 Return JSON: { "title": "lesson title", "cards": [ { "type": "story", "heading": "", "body": "", "mood": "" } ] }""")
 
     if mode == "visual":
@@ -235,6 +248,48 @@ async def call_ai(prompt: str, provider_cfg: dict, api_key: str, model: str, cli
         json=payload,
         timeout=90.0,
     )
+    resp.raise_for_status()
+    raw = resp.json()["choices"][0]["message"]["content"]
+    return json.loads(strip_json_fences(raw))
+
+
+PROOFREAD_SYSTEM = {
+    "hu": "Te egy gondos, profi magyar nyelvi lektor (korrektor) vagy. Kizárólag a nyelvi helyességet javítod.",
+    "en": "You are a careful professional proofreader. You fix only language correctness.",
+}
+
+
+async def proofread(content: dict, provider_cfg: dict, api_key: str, model: str, client: httpx.AsyncClient, lang: str = "hu") -> dict:
+    """Grammar / spelling / punctuation pass over a lesson's text fields.
+    Preserves meaning, style, JSON structure and keys — only fixes correctness."""
+    if lang == "hu":
+        instruction = (
+            "Javítsd ki az alábbi JSON szöveges mezőiben a helyesírási, nyelvtani, "
+            "központozási és elgépelési hibákat. NE változtasd meg a tartalmat, a jelentést, "
+            "a stílust, a JSON szerkezetét vagy a kulcsokat — kizárólag a magyar szöveg "
+            "helyességét. Ha nincs hiba, add vissza változatlanul. CSAK a javított JSON-t add vissza.\n\n"
+        )
+    else:
+        instruction = (
+            "Fix spelling, grammar, punctuation and typos in the text fields of the JSON below. "
+            "Do NOT change content, meaning, style, JSON structure or keys — only correctness. "
+            "Return ONLY the corrected JSON.\n\n"
+        )
+
+    request_headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
+    if "extra_headers" in provider_cfg:
+        request_headers.update(provider_cfg["extra_headers"])
+
+    payload = {
+        "model": model,
+        "max_tokens": 4000,
+        "temperature": 0,
+        "messages": [
+            {"role": "system", "content": PROOFREAD_SYSTEM[lang]},
+            {"role": "user", "content": instruction + json.dumps(content, ensure_ascii=False)},
+        ],
+    }
+    resp = await client.post(provider_cfg["base_url"], headers=request_headers, json=payload, timeout=90.0)
     resp.raise_for_status()
     raw = resp.json()["choices"][0]["message"]["content"]
     return json.loads(strip_json_fences(raw))
@@ -326,7 +381,12 @@ async def generate_for_topic(topic: dict, modes: list, dry_run: bool, provider_c
                     topic["nat_id"], topic["grade"], mode, spine, lang
                 )
                 content = await call_ai(prompt, provider_cfg, api_key, model, client, lang)
-                print(f"✓ ({len(content.get('cards', []))} cards)")
+                # Grammar/spelling pass before publishing; keep original if proofread fails
+                try:
+                    content = await proofread(content, provider_cfg, api_key, model, client, lang)
+                    print(f"✓ ({len(content.get('cards', []))} cards, proofread)")
+                except Exception as pe:
+                    print(f"✓ ({len(content.get('cards', []))} cards, ⚠ proofread skipped: {pe})")
                 await save_lesson(topic["id"], mode, content, dry_run, activate)
             except json.JSONDecodeError as e:
                 print(f"⚠️  JSON parse error: {e}")
