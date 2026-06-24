@@ -266,15 +266,15 @@ async def get_topics(nat_id: str = None, subject_code: str = None, grade: int = 
     return topics
 
 
-async def save_lesson(topic_id: str, mode: str, content: dict, dry_run: bool = False) -> None:
+async def save_lesson(topic_id: str, mode: str, content: dict, dry_run: bool = False, activate: bool = False) -> None:
     payload = {
         "topic_id": topic_id,
         "mode": mode,
         "title": content.get("title", f"{mode.title()} Lesson"),
         "content": content.get("cards", []),
         "generated_by": "ai",
-        "review_status": "pending",
-        "is_active": False,
+        "review_status": "approved" if activate else "pending",
+        "is_active": activate,
     }
 
     if dry_run:
@@ -297,7 +297,7 @@ async def save_lesson(topic_id: str, mode: str, content: dict, dry_run: bool = F
 
 # ─── MAIN ────────────────────────────────────────────────────
 
-async def generate_for_topic(topic: dict, modes: list, dry_run: bool, provider_cfg: dict, api_key: str, model: str, lang: str = "hu") -> None:
+async def generate_for_topic(topic: dict, modes: list, dry_run: bool, provider_cfg: dict, api_key: str, model: str, lang: str = "hu", activate: bool = False) -> None:
     print(f"\n📚 [{topic['nat_id']}] {topic['title_hu']} (Grade {topic['grade']})")
 
     title = topic["title_hu"] if lang == "hu" else topic["title"]
@@ -327,7 +327,7 @@ async def generate_for_topic(topic: dict, modes: list, dry_run: bool, provider_c
                 )
                 content = await call_ai(prompt, provider_cfg, api_key, model, client, lang)
                 print(f"✓ ({len(content.get('cards', []))} cards)")
-                await save_lesson(topic["id"], mode, content, dry_run)
+                await save_lesson(topic["id"], mode, content, dry_run, activate)
             except json.JSONDecodeError as e:
                 print(f"⚠️  JSON parse error: {e}")
             except httpx.HTTPStatusError as e:
@@ -343,6 +343,7 @@ async def main():
     parser.add_argument("--grade",    type=int, help="Filter by grade")
     parser.add_argument("--modes",    default="text,story,visual,quiz", help="Comma-separated modes")
     parser.add_argument("--dry-run",  action="store_true", help="Print output without saving")
+    parser.add_argument("--activate", action="store_true", help="Save lessons as active + approved (publish immediately)")
     parser.add_argument("--provider", choices=list(PROVIDERS.keys()),
                         help="AI provider (auto-detected from env if omitted)")
     parser.add_argument("--model",    help="Override model name (e.g. gpt-4o, deepseek-reasoner)")
@@ -387,7 +388,7 @@ async def main():
         print("(DRY RUN — nothing will be saved)\n")
 
     for topic in topics:
-        await generate_for_topic(topic, modes, args.dry_run, provider_cfg, api_key, model, args.lang)
+        await generate_for_topic(topic, modes, args.dry_run, provider_cfg, api_key, model, args.lang, args.activate)
 
     print("\n✅ Done.")
 
