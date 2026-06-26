@@ -65,9 +65,23 @@ def prompt(mode, temakor, tema, altemak, eb):
             'elemek értelmes lefedéséhez kell (kb. 5-8). Minden kötelező elem jelenjen meg legalább egy kártyában. '
             '4-6 tartalmas, tényszerű mondat kártyánként.\nJSON: {"title":"","cards":[{"type":"text","heading":"","body":"","key_term":""}]}')
     if mode == "story":
-        return head + ('\nKészíts TÖRTÉNET-leckét: a fenti tananyagot ok-okozati gerincre fűzve, élő, emberi (de valós, kitalált '
-            'szereplő nélküli) elbeszélésként, magyar nézőpontból. Minden kötelező elem épüljön be természetesen. 5-8 kártya.\n'
-            'JSON: {"title":"","cards":[{"type":"story","heading":"","body":"","mood":""}]}')
+        return head + ('\nKészíts TÖRTÉNET-leckét HÉTKÖZNAPI, ALULNÉZETI perspektívából, HARMADIK SZEMÉLYBEN (ne én-elbeszélés). '
+            'FONTOS: NE a politikát, a diplomáciát vagy a hadi ok-okozati láncot meséld el — az a szöveges réteg dolga, és itt '
+            'KERÜLENDŐ az ismétlése. Ehelyett azt mutasd be, MILYEN VOLT és MIT JELENTETT a kor hétköznapja a korabeli egyszerű '
+            'magyar emberek számára. '
+            'LÉNYEG: minden kártya az élet EGY MÁS TERÜLETÉT mutassa be — NE ugyanazt a jelenetet meséld el több szereplő '
+            'szemszögéből, hanem a mindennapi élet KÜLÖNBÖZŐ ÁGAIT járd körül. Példák a lefedendő, eltérő területekre (válassz '
+            'közülük, ne ismételd): a frontkatonák mindennapjai (lövészárok, sovány fejadag, honvágy, a családtól való elszakadás); '
+            'a hátország asszonyai (sorbanállás az élelemért, a férfiak helyét átvevő gyári munka); a kormányzat és a hivatalok '
+            'nehézségei (jegyrendszer, hadigazdálkodás megszervezése); a gazdaság és a hadiipar terhei (a parasztok és az '
+            'ellátási lánc, rekvirálás, nyersanyaghiány); a gyerekek és az iskola háborús hétköznapjai; a sebesültek, kórházak, '
+            'járványok. '
+            'Névtelen, de VALÓS, dokumentált korabeli körülményeken alapuló, REPREZENTATÍV alanyokat használj '
+            '(pl. „a doberdói lövészárokban szolgáló honvédek”, „a hátországban maradt asszonyok”, „a falusi gazdák”); kitalált, '
+            'NEVESÍTETT történelmi személyt SOHA ne találj ki. Érzékletes, anyagi és érzelmi valóság. '
+            'Ahol természetes, kösd a kötelező fogalmakat az ÁTÉLT valóságukhoz (pl. állóháború → a lövészárok-lét; '
+            'hátország → az otthon maradtak élete). 5-8 kártya, mindegyik MÁS témáról.\n'
+            'JSON: {"title":"","cards":[{"type":"story","heading":"","body":"","mood":"melyik életterületet mutatja be (pl. front, hátország, gazdaság)"}]}')
     if mode == "visual":
         return head + ('\nKészíts VIZUÁLIS leckét: minden fő elemhez egy szemléltető elem (idővonal/térkép/diagram/arckép) leírása, '
             'amely a kötelező adatokat (évszámok, helyszínek, személyek) mutatja. 5-8 kártya.\n'
@@ -77,10 +91,21 @@ def prompt(mode, temakor, tema, altemak, eb):
             'JSON: {"title":"","cards":[{"type":"quiz","question_type":"multiple_choice","question":"","options":["A) ","B) ","C) ","D) "],"correct":"A","explanation":""}]}')
     if mode == "world":
         return (f"Lecke: „{tema}” (Témakör: „{temakor}”).\n\nKészíts egy „VILÁG EKKOR” réteget: mi zajlott EKKOR a "
-            "nagyvilágban, miközben a fenti magyar/európai események történtek? Párhuzamos globális események, szereplők, okok — "
-            "röviden, idővonalszerűen, és MINDIG kösd vissza a magyar szálhoz („ez azért fontos nekünk, mert…”). Ez kiegészítő, "
-            "érdeklődő tanulóknak szóló réteg, nem kötelező tananyag. 4-6 kártya.\n"
-            'JSON: {"title":"Világ ekkor","cards":[{"type":"world","year":"","heading":"","body":"","link_hu":"röviden: hogyan kapcsolódik a magyar anyaghoz"}]}')
+            "nagyvilágban, miközben a fenti magyar/európai események történtek? Párhuzamos globális események, szereplők, okok. "
+            "Kártyánként 3-4 TARTALMAS, tényszerűen pontos mondat a globális eseményről (ne csak egy odavetett mondat). "
+            "A `year` mezőbe MINDIG az ADOTT esemény saját évszáma kerüljön (pl. „1917”), NE a témakör teljes időtartama. "
+            "MINDEN kártyához adj egy KONKRÉT, OK-OKOZATI visszacsatolást a lecke magyar témájához (link_hu mező): nevezz meg egy "
+            "konkrét következményt vagy mechanizmust, amely a globális eseménytől EZEN LECKE magyar tárgyáig vezet — valódi okozati "
+            "vagy összefüggés-láncot. "
+            "Ha hatásról írsz, MINDIG mondd meg, MI volt az a konkrét hatás — ne állj meg ott, hogy „jelentős hatással volt” vagy "
+            "„befolyásolta a helyzetet”. Példa a rossz (homályos) vs. jó (konkrét) megfogalmazásra: rossz: „befolyásolta a magyar "
+            "katonák harci helyzetét”; jó: „a felszabaduló német erőket nyugatra vezényelték, így sok magyar katonát a hazájától "
+            "több száz kilométerre, az olasz vagy nyugati fronton vetettek be”. Felső szintű tények kellenek, nem mély elbeszélés. "
+            "TILOS az általános, sablonos megfogalmazás (pl. „alapvetően formálta Magyarország jövőjét”, „közvetlenül érintett volt”, "
+            "„meghatározta a helyzetét”). "
+            "Ügyelj a pontosságra (pl. Magyarország I. világháborút lezáró békeszerződése a TRIANONI, 1920. június 4. — NEM a versailles-i). "
+            "Ez kiegészítő, érdeklődő tanulóknak szóló réteg, nem kötelező tananyag. 4-6 kártya.\n"
+            'JSON: {"title":"Világ ekkor","cards":[{"type":"world","year":"az adott esemény saját évszáma","heading":"","body":"","link_hu":"konkrét ok-okozati kapcsolat e lecke magyar anyagához"}]}')
 
 async def main():
     async with httpx.AsyncClient() as c:
@@ -125,5 +150,17 @@ async def main():
         except Exception as e:
             print(f"   ⚠ témazáró: {e}")
     print("\n✅ Done.")
+
+    # ---- guard rail: validate the freshly generated topic ----
+    try:
+        import validate_temakor as V
+        rep = await V._run(TOPIC_NAT)
+        rep["topic"]["nat_id"] = TOPIC_NAT
+        rep["verdict"] = V._verdict(rep)
+        print("\n" + "=" * 60 + "\n🛡️  GUARD RAIL\n" + "=" * 60)
+        print(V._report_md(rep))
+        print(f"\n→ GUARD RAIL: {rep['verdict']}")
+    except Exception as e:
+        print(f"⚠ validáció kihagyva: {e}")
 
 asyncio.run(main())
