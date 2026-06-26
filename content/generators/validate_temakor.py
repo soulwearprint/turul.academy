@@ -51,13 +51,25 @@ def _load_nat_elements(title_hu):
     return best if best else (None, None)
 
 
+_QUOTES = {0x201e, 0x201c, 0x201d, 0x2018, 0x2019, 0x201a, 0x201b, 0x60, 0x22, 0x27}
+
+def _norm(s):
+    """Lowercase and strip typographic/ascii quotes so matching is robust."""
+    s = "".join("" if ord(ch) in _QUOTES else ch for ch in s)
+    return " ".join(s.lower().split())
+
+
 def _needles(element, category):
-    """Return the substring(s) that must appear for this element to count as taught."""
-    el = element.strip()
+    """Return the substring(s) that must ALL appear for this element to count as taught.
+    Handles compound elements ('X és Y' -> both parts) and curly quotes."""
+    el = _norm(element)
     if category == "kronologia":
         years = re.findall(r"\d{4}", el)
-        return years if years else [el.lower()]
-    return [el.lower()]
+        return years if years else [el]
+    # compound concept: every conjunct must be taught (e.g. 'keresztség és úrvacsora')
+    if " és " in el:
+        return [p.strip() for p in el.split(" és ") if p.strip()]
+    return [el]
 
 
 # ---------- check 1: completeness (deterministic) ----------
@@ -83,7 +95,7 @@ def _completeness(topic, lessons, blocks_by_lesson, topic_quiz, nat_elem):
             for b in blocks_by_lesson.get(L["id"], []):
                 if b["mode"] != "world":
                     taught.append(json.dumps(b["content"], ensure_ascii=False))
-        text = " ".join(taught).lower()
+        text = _norm(" ".join(taught))
         total = hit = 0
         for cat in ("fogalmak", "szemelyek", "kronologia", "topografia"):
             for el in nat_elem.get(cat, []):
