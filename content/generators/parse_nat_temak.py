@@ -65,7 +65,8 @@ def _parse_docx(path, school):
 SCHOOL_OF = {"altalanos_iskola": "F", "gimnazium": "K"}
 
 def _load_elements():
-    """Keyed by 'school::title' since some titles repeat across F/K with different depth."""
+    """Keyed by 'school::title' since some titles repeat across F/K with different depth.
+    Value carries the grade band too (within a school, titles are unique across bands)."""
     d = json.load(open(NAT_JSON, encoding="utf-8"))
     by_key = {}
     for section in ("altalanos_iskola", "gimnazium"):
@@ -73,7 +74,8 @@ def _load_elements():
         for band, arr in d[section].items():
             for t in arr:
                 by_key[f"{sc}::{t['temakor'].strip().lower()}"] = {
-                    k: t.get(k, []) for k in ("fogalmak", "szemelyek", "kronologia", "topografia")}
+                    "band": band,
+                    "elements": {k: t.get(k, []) for k in ("fogalmak", "szemelyek", "kronologia", "topografia")}}
     return by_key
 
 
@@ -86,11 +88,12 @@ def main():
         for tk, temak in _parse_docx(path, school).items():
             title = tk.strip()
             key = f"{school}::{title}"
-            el = elements.get(f"{school}::{title.lower()}")
-            result[key] = {"school": school, "title": title, "temak": temak,
-                           "elements": el or {"fogalmak": [], "szemelyek": [],
+            ent = elements.get(f"{school}::{title.lower()}")
+            result[key] = {"school": school, "band": ent["band"] if ent else None,
+                           "title": title, "temak": temak,
+                           "elements": ent["elements"] if ent else {"fogalmak": [], "szemelyek": [],
                                               "kronologia": [], "topografia": []},
-                           "_elements_matched": el is not None}
+                           "_elements_matched": ent is not None}
     json.dump(result, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
 
     matched = sum(1 for v in result.values() if v["_elements_matched"])
