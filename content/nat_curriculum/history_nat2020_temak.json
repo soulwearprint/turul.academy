@@ -1,0 +1,3692 @@
+{
+  "F::Személyes történelem": {
+    "school": "F",
+    "title": "Személyes történelem",
+    "temak": [
+      {
+        "title": "Körülöttem a történelem",
+        "altemak": [
+          "Családi fotóalbum és személyes tárgyak.",
+          "Személyes történetek dokumentálása, elbeszélése.",
+          "Egy nap dokumentálása.",
+          "Kódexkészítés (valamely magyar kódex mintájára pl. Képes krónika)."
+        ]
+      },
+      {
+        "title": "Címer, zászló, pecsét, az idő mérése",
+        "altemak": [
+          "Címerek és zászlók alkotóelemei saját település és Magyarország címere és zászlaja példáján.",
+          "A hitelesítés eszköze, a pecsét (pl. az Aranybulla pecsétje).",
+          "Személyes címer-, zászló- és pecsétkészítés.",
+          "Az időszámítás."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "kódex"
+      ],
+      "szemelyek": [],
+      "kronologia": [
+        "Kr. e. és Kr. u",
+        "évszázad",
+        "őskor",
+        "ókor",
+        "középkor",
+        "újkor",
+        "jelenkor/modern kor"
+      ],
+      "topografia": []
+    },
+    "_elements_matched": true
+  },
+  "F::Fejezetek az ókor történetéből": {
+    "school": "F",
+    "title": "Fejezetek az ókor történetéből",
+    "temak": [
+      {
+        "title": "Az ókori Egyiptom világa",
+        "altemak": [
+          "Földművelés a Nílus mentén.",
+          "Hitvilág és halottkultusz a piramisok és a Királyok Völgye példáján: Memphis és Théba.",
+          "A legjelentősebb találmány: az írás."
+        ]
+      },
+      {
+        "title": "Az ókori Hellász öröksége",
+        "altemak": [
+          "Mindennapok egy görög városban:  Athén és lakói.",
+          "Görög istenek, az olümpiai játékok.",
+          "Az athéni és spártai nevelés."
+        ]
+      },
+      {
+        "title": "Az ókori Róma öröksége",
+        "altemak": [
+          "Róma alapítása a mondákban.",
+          "Egy római polgár mindennapjai.",
+          "A gladiátorviadalok és a kocsiversenyek.",
+          "Római emlékek Pannóniában."
+        ]
+      },
+      {
+        "title": "A görög-római hadviselés",
+        "altemak": [
+          "Görög hadviselés a marathóni csata példáján.",
+          "Nagy Sándor hadserege és hódításai.",
+          "Az ókor „tankjai”: Hannibál elefántjai.",
+          "Caesar légiói."
+        ]
+      },
+      {
+        "title": "Képek a népvándorlás korából",
+        "altemak": [
+          "A Római Birodalom szétesése.",
+          "A Hun Birodalom.",
+          "Attila és hadjáratai: az ókor egyik legnagyobb csatája (a catalaunumi csata)."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "öntözéses földművelés",
+        "fáraó",
+        "piramis",
+        "hieroglifa",
+        "városállam",
+        "jósda",
+        "többistenhit",
+        "olümpiai játékok",
+        "monda",
+        "provincia",
+        "rabszolga",
+        "gladiátor",
+        "amfiteátrum",
+        "falanx",
+        "légió",
+        "népvándorlás"
+      ],
+      "szemelyek": [
+        "Kheopsz",
+        "Zeusz",
+        "Pallasz Athéné",
+        "Nagy Sándor",
+        "Romulus",
+        "Hannibál",
+        "Julius Caesar",
+        "Augustus",
+        "Attila"
+      ],
+      "kronologia": [
+        "Kr. e. 776 az első feljegyzett olümpiai játékok",
+        "Kr. e. 753 Róma alapítása a hagyomány szerint",
+        "Kr. e. 490 a marathóni csata",
+        "Kr. u. 476 a Nyugatrómai Birodalom bukása"
+      ],
+      "topografia": [
+        "Egyiptom",
+        "Nílus",
+        "Athén",
+        "Olümpia",
+        "Spárta",
+        "Itália",
+        "Róma",
+        "Pannónia",
+        "Aquincum",
+        "Marathón",
+        "Római Birodalom"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::A kereszténység": {
+    "school": "F",
+    "title": "A kereszténység",
+    "temak": [
+      {
+        "title": "Az Ószövetség népe",
+        "altemak": [
+          "Az Ószövetség/Héber Biblia: Ábrahám és Mózes.",
+          "Az önálló zsidó állam alapítói: Dávid és Salamon története."
+        ]
+      },
+      {
+        "title": "Jézus élete, tanításai és a kereszténység",
+        "altemak": [
+          "Történetek az Újszövetségből.",
+          "A kereszténység főbb tanításai.",
+          "A kereszténység elterjedése.",
+          "A keresztény hitélet színterei és szertartásai.",
+          "A kereszténység jelképei."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "egyistenhit",
+        "Biblia",
+        "Ószövetség/Héber Biblia",
+        "Újszövetség",
+        "zsidó vallás",
+        "keresztény vallás",
+        "keresztség és úrvacsora"
+      ],
+      "szemelyek": [
+        "Mózes",
+        "Dávid",
+        "Salamon",
+        "Jézus",
+        "Mária",
+        "József",
+        "Szent Péter és Szent Pál apostolok"
+      ],
+      "kronologia": [],
+      "topografia": [
+        "Jeruzsálem",
+        "Betlehem"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::A középkor világai": {
+    "school": "F",
+    "title": "A középkor világai",
+    "temak": [
+      {
+        "title": "Élet a várban – egy magyar vár (pl. Visegrád) és uradalom bemutatásával",
+        "altemak": [
+          "Királyok és nemesek",
+          "Várépítészet – híres magyar középkori várak.",
+          "Egy uradalom működése, a falvak világa (a jobbágyok élete)."
+        ]
+      },
+      {
+        "title": "Élet a kolostorban – egy magyar kolostor (pl. Pannonhalma) bemutatásával",
+        "altemak": [
+          "A középkori egyházszervezet.",
+          "A szerzetesség és a kolostor.",
+          "Román és gótikus templomépítészet – híres magyar középkori egyházi emlékek.",
+          "Oktatás a középkorban."
+        ]
+      },
+      {
+        "title": "Élet a középkori városban – egy magyar város (pl. Buda) bemutatásával",
+        "altemak": [
+          "A céhek.",
+          "A városi polgárok.",
+          "Városépítészet – híres magyar középkori városok.",
+          "Könyvnyomtatás és reneszánsz."
+        ]
+      },
+      {
+        "title": "A keresztes lovagok világa",
+        "altemak": [
+          "Az iszlám–arab kihívás.",
+          "A nehézlovas harcmodor.",
+          "Keresztesek a Szentföldön.",
+          "A lovagi életforma és kultúra."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "földesúr",
+        "lovag",
+        "nemes",
+        "uradalom",
+        "jobbágy",
+        "robot",
+        " pápa",
+        "szerzetes",
+        "bencés rend",
+        "pálos rend",
+        "kolostor",
+        "katolikus",
+        "román stílus",
+        "gótikus stílus",
+        "polgár",
+        "céh",
+        "iszlám vallás"
+      ],
+      "szemelyek": [
+        "Szent Benedek",
+        "Gutenberg",
+        "Mohamed"
+      ],
+      "kronologia": [],
+      "topografia": [
+        "Visegrád",
+        "Pannonhalma",
+        "Szentföld",
+        "Anglia",
+        "Franciaország"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::Képek és portrék az Árpád-kor történetéből": {
+    "school": "F",
+    "title": "Képek és portrék az Árpád-kor történetéből",
+    "temak": [
+      {
+        "title": "Történetek a magyarok eredetéről",
+        "altemak": [
+          "A hun-magyar eredettörténet a krónikákban: Hunor, Magor; Csaba királyfi.",
+          "Az Árpád-ház eredettörténete: Emese álma, vérszerződés."
+        ]
+      },
+      {
+        "title": "Honfoglalás és kalandozások",
+        "altemak": [
+          "Álmos és Árpád alakja a krónikákban.",
+          "A honfoglalás: Etelközből a Kárpát-medencébe.",
+          "Történetek a kalandozó magyarokról."
+        ]
+      },
+      {
+        "title": "Szent István és a magyar állam",
+        "altemak": [
+          "Géza és István alakja a krónikákban.",
+          "István harca Koppánnyal és a koronázás.",
+          "Államalapítás: egyházszervezés, vármegyék és törvények."
+        ]
+      },
+      {
+        "title": "Árpád-házi királyportrék",
+        "altemak": [
+          "Szent László, a lovagkirály.",
+          "Könyves Kálmán, a művelt király.",
+          "III. Béla, a nagyhatalmú király.",
+          "II. András és az Aranybulla",
+          "IV. Béla és a tatárjárás."
+        ]
+      },
+      {
+        "title": "Árpád-kori szentek",
+        "altemak": [
+          "Szent Gellért.",
+          "Szent Erzsébet.",
+          "Szent Margit."
+        ]
+      },
+      {
+        "title": "Árpád-kori győztes harcok és csaták",
+        "altemak": [
+          "A pozsonyi csata.",
+          "Német támadások nyugatról: felperzselt föld és a vértesi csata. Nomád támadások keletről: a kerlési csata."
+        ]
+      },
+      {
+        "title": "Magyarország koronázási jelvényei",
+        "altemak": [
+          "Szent Korona.",
+          "Palást, jogar, országalma."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "hunok",
+        "finnugor",
+        "törzs",
+        " vérszerződés",
+        "fejedelem",
+        "honfoglalás",
+        "székelyek",
+        "kalandozások",
+        "vármegye",
+        "tized",
+        "ispán",
+        "Szent Korona",
+        "tatárok/mongolok",
+        "kunok"
+      ],
+      "szemelyek": [
+        "Álmos",
+        "Árpád",
+        "Géza",
+        "I. (Szent) István",
+        "I. (Szent) László",
+        "Könyves Kálmán",
+        "III. Béla",
+        "IV. Béla",
+        "Szent Gellért",
+        "Szent Erzsébet",
+        "Szent Margit"
+      ],
+      "kronologia": [
+        "895 a honfoglalás",
+        "907 a pozsonyi csata",
+        "997/1000–1038 István uralkodása",
+        "1222 az Aranybulla kiadása",
+        "1241–1242 a tatárjárás",
+        "1301 az Árpád-ház kihalása"
+      ],
+      "topografia": [
+        "Etelköz",
+        "Vereckei-hágó",
+        "Kárpát-medence",
+        "Esztergom",
+        "Buda",
+        "Székesfehérvár",
+        "Horvátország",
+        "Muhi",
+        "Német-római Császárság"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::Képek és portrék a magyar állam virágkorából": {
+    "school": "F",
+    "title": "Képek és portrék a magyar állam virágkorából",
+    "temak": [
+      {
+        "title": "Magyar királyportrék a 14–15. századból",
+        "altemak": [
+          "Károly és az aranyforint.",
+          "Nagy Lajos, a hódító.",
+          "Luxemburgi Zsigmond, a császár."
+        ]
+      },
+      {
+        "title": "Hunyadi János, a törökverő",
+        "altemak": [
+          "Hunyadi János, a sokoldalú hadvezér.",
+          "A nándorfehérvári diadal."
+        ]
+      },
+      {
+        "title": "Hunyadi Mátyás, a reneszánsz uralkodó",
+        "altemak": [
+          "Mondák és történetek Mátyás királyról.",
+          "A fekete sereg.",
+          "Mátyás reneszánsz udvara."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "aranyforint",
+        "kormányzó",
+        "végvár",
+        "szekérvár",
+        "zsoldos"
+      ],
+      "szemelyek": [
+        "I. (Anjou) Károly",
+        "I. (Nagy) Lajos",
+        "Luxemburgi Zsigmond",
+        "Hunyadi János",
+        "I. (Hunyadi) Mátyás"
+      ],
+      "kronologia": [
+        "1335 a visegrádi királytalálkozó",
+        "1456 a nándorfehérvári diadal",
+        "1458–1490 Mátyás uralkodása"
+      ],
+      "topografia": [
+        "Lengyelország",
+        "Oszmán Birodalom",
+        "Csehország",
+        "Nándorfehérvár"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::Új látóhatárok": {
+    "school": "F",
+    "title": "Új látóhatárok",
+    "temak": [
+      {
+        "title": "A földrajzi felfedezések",
+        "altemak": [
+          "A felfedezők útjai.",
+          "A világkereskedelem kialakulása.",
+          "Gyarmatosítás Amerikában: az őslakosság sorsa, ültetvények és rabszolgák."
+        ]
+      },
+      {
+        "title": "Korai kapitalizmus",
+        "altemak": [
+          "A tőkés gazdálkodás kibontakozása és a polgárosodó életmód.",
+          "A manufaktúrák, a világkereskedelem kialakulása.",
+          "Az első bankok és tőzsdék."
+        ]
+      },
+      {
+        "title": "A vallási megújulás",
+        "altemak": [
+          "Egyházi reformtörekvések a kora újkorban.",
+          "Reformáció és katolikus megújulás.",
+          "Az anyanyelvi kultúra és oktatás felvirágzása magyar példák alapján.",
+          "Vallási türelem Erdélyben."
+        ]
+      },
+      {
+        "title": "Az új világkép kialakulása",
+        "altemak": [
+          "A természettudományok fejlődése: a kopernikuszi fordulat.",
+          "A középkorit felváltó világkép: a felvilágosodás."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "gyarmat",
+        "manufaktúra",
+        "tőkés",
+        "bérmunkás",
+        "kapitalizmus",
+        "bank",
+        "tőzsde",
+        "részvény",
+        "reformáció",
+        "református",
+        "evangélikus",
+        "ellenreformáció és katolikus megújulás",
+        "jezsuiták",
+        "vallási türelem",
+        "felvilágosodás"
+      ],
+      "szemelyek": [
+        "Kolumbusz Kristóf",
+        "Magellán",
+        "Luther Márton",
+        "Kálvin János",
+        "Károli Gáspár",
+        "Pázmány Péter",
+        "Kopernikusz"
+      ],
+      "kronologia": [
+        "1492 Amerika felfedezése",
+        "1517 a reformáció kezdete"
+      ],
+      "topografia": [
+        "Spanyolország",
+        "India",
+        "Kína",
+        "London",
+        "Sárospatak"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::Portrék és történetek Magyarország kora újkori történetéből": {
+    "school": "F",
+    "title": "Portrék és történetek Magyarország kora újkori történetéből",
+    "temak": [
+      {
+        "title": "A török háborúk hősei",
+        "altemak": [
+          "II. Lajos és a mohácsi csata.",
+          "Buda eleste és az ország három részre szakadása.",
+          "A várháborúk hősei (pl. Dobó; Zrínyi, a szigetvári hős)."
+        ]
+      },
+      {
+        "title": "Bocskai, Bethlen és Zrínyi",
+        "altemak": [
+          "Bocskai István fejedelem, a hajdúk vezére.",
+          "Bethlen Gábor, Erdély fejedelme.",
+          "Zrínyi Miklós, a költő és hadvezér.",
+          "Buda visszavétele: a török kiűzése."
+        ]
+      },
+      {
+        "title": "II. Rákóczi Ferenc és szabadságharca",
+        "altemak": [
+          "Rákóczi fordulatos életpályája Munkácstól Rodostóig.",
+          "Történetek a Rákóczi-szabadságharc idejéből.",
+          "A szatmári béke: függetlenség helyett megbékélés a birodalommal."
+        ]
+      },
+      {
+        "title": "Mária Terézia",
+        "altemak": [
+          "Mária Terézia, a családanya és uralkodó.",
+          "Intézkedései Magyarországon.",
+          "A magyar huszárok és a berlini huszárcsíny.",
+          "Főúri kastélyok a művelődés szolgálatában (pl. Eszterháza, Gödöllő)."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "szultán",
+        "janicsár",
+        "török hódoltság",
+        "kuruc",
+        "labanc",
+        "szabadságharc",
+        "trónfosztás"
+      ],
+      "szemelyek": [
+        "I. Szulejmán",
+        "II. Lajos",
+        "Dobó István",
+        "Bocskai István",
+        "Bethlen Gábor",
+        "Zrínyi Miklós (a költő és hadvezér)",
+        "II. Rákóczi Ferenc",
+        "Mária Terézia"
+      ],
+      "kronologia": [
+        "1526 a mohácsi csata",
+        "1541 Buda eleste",
+        "1552 Eger védelme",
+        "1686 Buda visszafoglalása",
+        "1703–1711 a Rákóczi-szabadságharc"
+      ],
+      "topografia": [
+        "Mohács",
+        "Eger",
+        "Erdélyi Fejedelemség",
+        "Pozsony",
+        "Bécs"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::Élet a kora újkori Magyarországon": {
+    "school": "F",
+    "title": "Élet a kora újkori Magyarországon",
+    "temak": [
+      {
+        "title": "Élet a török hódoltság kori Magyarországon – egy konkrét település (pl. Debrecen vagy Kecskemét) bemutatásával",
+        "altemak": [
+          "A török uralom.",
+          "A mezőváros élete.",
+          "Szarvasmarha-kereskedelem."
+        ]
+      },
+      {
+        "title": "Élet a 18. századi Magyarországon – egy konkrét település (pl. Temesvár) bemutatásával",
+        "altemak": [
+          "Magyarország újranépesülése és újranépesítése.",
+          "Népek és vallások együttélése.",
+          "A barokk városépítészet."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "nemzetiség",
+        "ortodox",
+        "barokk"
+      ],
+      "szemelyek": [],
+      "kronologia": [],
+      "topografia": [
+        "Debrecen",
+        "Temesvár"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::Forradalmak kora": {
+    "school": "F",
+    "title": "Forradalmak kora",
+    "temak": [
+      {
+        "title": "Ipari forradalom",
+        "altemak": [
+          "Gyapotból pamut.",
+          "A textilipar fejlődése.",
+          "A gőzgép. Bányászat, gyáripar, vasútépítés.",
+          "Gyerekek és felnőttek mindennapjai egy iparvárosban."
+        ]
+      },
+      {
+        "title": "Társadalmi-politikai forradalom",
+        "altemak": [
+          "A köztársaság kísérlete Franciaországban.",
+          "A forradalmi terror.",
+          "Napóleon a császár és hadvezér."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "ipari forradalom",
+        "gyár",
+        "szabad verseny",
+        "tömegtermelés",
+        "munkanélküliség",
+        "forradalom",
+        "diktatúra"
+      ],
+      "szemelyek": [
+        "James Watt",
+        "Edison",
+        "Bonaparte Napóleon"
+      ],
+      "kronologia": [
+        "1789 a francia forradalom",
+        "1815 a waterlooi csata"
+      ],
+      "topografia": [
+        "Párizs",
+        "Habsburg Birodalom",
+        "Oroszország",
+        "Nagy-Britannia"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::A magyar nemzeti ébredés és polgárosodás kora": {
+    "school": "F",
+    "title": "A magyar nemzeti ébredés és polgárosodás kora",
+    "temak": [
+      {
+        "title": "A reformkor",
+        "altemak": [
+          "Széchenyi István alkotásai.",
+          "A jobbágyfelszabadítás kérdése.",
+          "A magyar nyelv és a nemzeti kultúra ügye."
+        ]
+      },
+      {
+        "title": "A forradalom",
+        "altemak": [
+          "A március 15-i események és a 12 pont.",
+          "Kossuth Lajos szerepe.",
+          "Az áprilisi törvények.",
+          "A Batthyány-kormány."
+        ]
+      },
+      {
+        "title": "Képek a szabadságharc történetéből",
+        "altemak": [
+          "Történetek a szabadságharc idejéből.",
+          "Görgei Artúr, a hadvezér.",
+          "A tavaszi hadjárat.",
+          "A Függetlenségi nyilatkozat.",
+          "A fegyverletétel és megtorlás – Arad."
+        ]
+      },
+      {
+        "title": "A kiegyezés",
+        "altemak": [
+          "Az ellenállás formái.",
+          "Deák Ferenc szerepe.",
+          "A kiegyezés megkötése.",
+          "Az Osztrák-Magyar Monarchia megszületése."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "országgyűlés",
+        "közteherviselés",
+        "jobbágyfelszabadítás",
+        "sajtószabadság",
+        "cenzúra",
+        "miniszterelnök",
+        "honvédség",
+        "kiegyezés"
+      ],
+      "szemelyek": [
+        "Széchenyi István",
+        "Kossuth Lajos",
+        "Batthyány Lajos",
+        "Bem József",
+        "Görgei Artúr",
+        "Klapka György",
+        "Ferenc József",
+        "Deák Ferenc"
+      ],
+      "kronologia": [
+        "1830–1848 a reformkor",
+        "1848. március 15. a pesti forradalom",
+        "1849. október 6. az aradi kivégzések",
+        "1867 a kiegyezés"
+      ],
+      "topografia": [
+        "Pest",
+        "Pákozd",
+        "Isaszeg",
+        "Világos",
+        "Komárom",
+        "Arad",
+        "Osztrák-Magyar Monarchia"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::A modern kor születése": {
+    "school": "F",
+    "title": "A modern kor születése",
+    "temak": [
+      {
+        "title": "A nemzeti eszme és a birodalmak kora",
+        "altemak": [
+          "A nemzeti eszme és a nemzetállamok Európája.",
+          "A világ nagyhatalmai és ellentéteik a 20. század kezdetén.",
+          "Gyarmatbirodalmak a világ térképén."
+        ]
+      },
+      {
+        "title": "Politikai eszmék: liberalizmus, konzervativizmus, szocializmus",
+        "altemak": [
+          "A liberalizmus.",
+          "A konzervativizmus.",
+          "A szocializmus és kommunizmus eszméje.",
+          "A keresztényszocializmus."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "nacionalizmus",
+        "liberalizmus",
+        "konzervativizmus",
+        "demokrácia",
+        "szocializmus",
+        "kommunizmus",
+        "keresztényszocializmus"
+      ],
+      "szemelyek": [
+        "Bismarck",
+        "Marx"
+      ],
+      "kronologia": [
+        "1871 Németország egyesítése"
+      ],
+      "topografia": [
+        "Németország",
+        "Olaszország",
+        "Brit Birodalom",
+        "Amerikai Egyesült Államok",
+        "Japán"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::A dualizmus kora: felzárkózás Európához": {
+    "school": "F",
+    "title": "A dualizmus kora: felzárkózás Európához",
+    "temak": [
+      {
+        "title": "A modernizálódó Magyarország",
+        "altemak": [
+          "Magyar feltalálók és találmányok, az ipar fejlődése.",
+          "Vasútépítés, folyószabályozás.",
+          "Egy világváros kiépülése – az urbanizáció Budapest példáján."
+        ]
+      },
+      {
+        "title": "A millenniumi Magyarország",
+        "altemak": [
+          "A soknemzetiségű ország.",
+          "A zsidó emancipáció, a hazai zsidóság szerepe a magyarországi modernizációban.",
+          "A cigányság helyzete, hagyományos mesterségek.",
+          "A millenniumi ünnepségek.",
+          "A legjelentősebb kulturális alkotások."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "közös ügyek",
+        "dualizmus",
+        "MÁV",
+        "Millennium",
+        "emancipáció",
+        "urbanizáció"
+      ],
+      "szemelyek": [
+        "Andrássy Gyula"
+      ],
+      "kronologia": [
+        "1896 a Millennium"
+      ],
+      "topografia": [
+        "Budapest"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::Az első világháború és következményei": {
+    "school": "F",
+    "title": "Az első világháború és következményei",
+    "temak": [
+      {
+        "title": "Az első világháború, Magyarország a háborúban",
+        "altemak": [
+          "A halálos lövés: a világháború kirobbanása.",
+          "A hadviselő felek: az antant és a központi hatalmak.",
+          "Az állóháború.",
+          "Magyarok a világháborúban.",
+          "A hátország megpróbáltatásai.",
+          "Lenin és a bolsevik hatalomátvétel."
+        ]
+      },
+      {
+        "title": "Magyarország 1918–1919-ben",
+        "altemak": [
+          "A forradalmi kísérlet – elhibázott kül- és katonapolitika.",
+          "Magyarország megszállásának folyamata.",
+          "A tanácsköztársaság hatalomra kerülése és bukása.",
+          "Az ellenforradalom."
+        ]
+      },
+      {
+        "title": "A trianoni békediktátum",
+        "altemak": [
+          "A Párizs környéki békék alapelvei, a vesztesek büntetése.",
+          "A trianoni békediktátum – a megcsonkított Magyarország.",
+          "Magyarország területi, népességi és gazdasági veszteségei.",
+          "A kisantant."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "antant",
+        "központi hatalmak",
+        "front",
+        "állóháború",
+        "hátország",
+        "bolsevik",
+        "tanácsköztársaság",
+        "vörösterror",
+        "fehér különítményes megtorlások",
+        "kisantant"
+      ],
+      "szemelyek": [
+        "Tisza István",
+        "Lenin",
+        "Károlyi Mihály",
+        "Horthy Miklós"
+      ],
+      "kronologia": [
+        "1914–1918 az első világháború",
+        "1917 a bolsevik hatalomátvétel",
+        "1920. június 4. a trianoni békediktátum"
+      ],
+      "topografia": [
+        "Szarajevó",
+        "Szerbia",
+        "Doberdó",
+        "Kárpátalja",
+        "Felvidék",
+        "Délvidék",
+        "Burgenland",
+        "Erdély",
+        "Csehszlovákia",
+        "Jugoszlávia",
+        "Románia",
+        "Ausztria"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::Totális diktatúrák": {
+    "school": "F",
+    "title": "Totális diktatúrák",
+    "temak": [
+      {
+        "title": "A kommunista Szovjetunió",
+        "altemak": [
+          "Lenin és Sztálin diktatúrája.",
+          "Az államosítás.",
+          "A terror és a munkatáborok."
+        ]
+      },
+      {
+        "title": "A nemzetiszocialista Németország",
+        "altemak": [
+          "A nemzetiszocializmus: fajelmélet és antiszemitizmus.",
+          "A náci hatalomátvétel, a hitleri diktatúra és terror.",
+          "A hitleri Németország terjeszkedése: Ausztria és Csehszlovákia."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "személyi kultusz",
+        "GULAG",
+        "totális állam",
+        "nemzetiszocializmus",
+        "antiszemitizmus",
+        "fasizmus"
+      ],
+      "szemelyek": [
+        "Sztálin",
+        "Hitler"
+      ],
+      "kronologia": [
+        "1933 a náci hatalomátvétel"
+      ],
+      "topografia": [
+        "Szovjetunió",
+        "Szibéria (munkatáborok)"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::A Horthy-korszak": {
+    "school": "F",
+    "title": "A Horthy-korszak",
+    "temak": [
+      {
+        "title": "A politika irányai",
+        "altemak": [
+          "Horthy, a kormányzó.",
+          "Antikommunizmus és revíziós törekvések.",
+          "A politikai antiszemitizmus.",
+          "Bethlen István miniszterelnöksége.",
+          "Külpolitikai kényszerpályák."
+        ]
+      },
+      {
+        "title": "Gazdasági, társadalmi és kulturális fejlődés",
+        "altemak": [
+          "Gazdasági eredmények.",
+          "Az oktatás, a kultúra és a tudomány néhány kiemelkedő képviselője.",
+          "Társadalmi rétegződés és érintkezési formák Magyarországon.",
+          "Életmód, szabadidő, sport."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "revízió",
+        "numerus clausus",
+        "pengő"
+      ],
+      "szemelyek": [
+        "Bethlen István",
+        "Klebelsberg Kuno",
+        "Szent-Györgyi Albert"
+      ],
+      "kronologia": [
+        "1920–1944 a Horthy-korszak"
+      ],
+      "topografia": []
+    },
+    "_elements_matched": true
+  },
+  "F::A második világháború": {
+    "school": "F",
+    "title": "A második világháború",
+    "temak": [
+      {
+        "title": "Háború földön, tengeren és levegőben.",
+        "altemak": [
+          "A hadviselő felek: a tengelyhatalmak és a szövetségesek.",
+          "Sztálin-Hitler paktum, kezdeti német sikerek.",
+          "A háború európai frontjai és a csendes-óceáni hadszíntér.",
+          "Fordulatok a háborúban: Sztálingrád és Normandia, Berlin, az atombomba.",
+          "Európa felosztása."
+        ]
+      },
+      {
+        "title": "Magyarország a világháború idején",
+        "altemak": [
+          "A revíziós eredmények",
+          "A Szovjetunió elleni háború – a 2. magyar hadsereg a Donnál.",
+          "Német megszállás.",
+          "A kiugrási kísérlet és a nyilas hatalomátvétel.",
+          "A hadszíntérré vált Magyarország."
+        ]
+      },
+      {
+        "title": "A háború borzalmai",
+        "altemak": [
+          "A totális háború.",
+          "A világháború fegyverei.",
+          "A hátország szenvedései.",
+          "Az ellenállás formái.",
+          "A bombázások és városi harcok – Budapest példáján."
+        ]
+      },
+      {
+        "title": "A holokauszt",
+        "altemak": [
+          "A náci koncentrációs és megsemmisítő táborok.",
+          "Az európai és magyarországi zsidótörvények.",
+          "Kísérlet az európai és a magyar zsidóság és cigányság elpusztítására.",
+          "Áldozatok és bűnösök, felelősség és embermentés: néhány kiemelkedő példa."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "tengelyhatalmak",
+        "szövetségesek",
+        "bécsi döntések",
+        "nyilasok",
+        "totális háború",
+        "holokauszt",
+        "gettó",
+        "deportálás",
+        "koncentrációs tábor",
+        "zsidótörvények"
+      ],
+      "szemelyek": [
+        "Franklin D. Roosevelt",
+        "Churchill",
+        "Teleki Pál",
+        "Szálasi Ferenc",
+        "Salkaházi Sára"
+      ],
+      "kronologia": [
+        "1939–1945 a második világháború",
+        "1941. június a Szovjetunió megtámadása",
+        "1944. március 19. Magyarország német megszállása",
+        "1945. április a háború vége Magyarországon"
+      ],
+      "topografia": [
+        "Sztálingrád",
+        "Normandia",
+        "Hirosima",
+        "Don-kanyar",
+        "Auschwitz"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::A megosztott világ": {
+    "school": "F",
+    "title": "A megosztott világ",
+    "temak": [
+      {
+        "title": "A hidegháború",
+        "altemak": [
+          "A kétpólusú világ – a vasfüggöny leereszkedése.",
+          "Németország kettéosztása.",
+          "Fegyverkezési verseny a Szovjetunió és az Amerikai Egyesült Államok között.",
+          "Hidegháborús konfliktusok: Korea, Kuba."
+        ]
+      },
+      {
+        "title": "A Nyugat",
+        "altemak": [
+          "A nyugati demokrácia és piacgazdaság.",
+          "A jóléti társadalom.",
+          "Az új tömegkultúra kialakulása."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "Egyesült Nemzetek Szervezete (ENSZ)",
+        "hidegháború",
+        "vasfüggöny",
+        "berlini fal",
+        "szuperhatalom",
+        "Észak-atlanti Szerződés Szervezete (NATO)",
+        "Varsói Szerződés",
+        "piacgazdaság",
+        "jóléti állam"
+      ],
+      "szemelyek": [
+        "Hruscsov",
+        "Kennedy"
+      ],
+      "kronologia": [
+        "1947 a párizsi béke",
+        "a hidegháború kezdete",
+        "1948 Izrael Állam megalapítása"
+      ],
+      "topografia": [
+        "Berlin",
+        "Németországi Szövetségi Köztársaság (NSZK)",
+        "Német Demokratikus Köztársaság (NDK)",
+        "Észak- és Dél-Korea",
+        "Kuba"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::Magyarország szovjetizálása": {
+    "school": "F",
+    "title": "Magyarország szovjetizálása",
+    "temak": [
+      {
+        "title": "A kommunista diktatúra kiépítése Magyarországon",
+        "altemak": [
+          "Háborús pusztítás és szovjet megszállás, deportálások a szovjet munkatáborokba.",
+          "Bűnbakká tett németek és magyarok – kitelepítések, lakosságcsere.",
+          "Az 1945-ös és 1947-es választások.",
+          "Egypártrendszer, államosítás, diktatúra."
+        ]
+      },
+      {
+        "title": "A Rákosi-diktatúra",
+        "altemak": [
+          "Az ÁVH működése.",
+          "A személyi kultusz.",
+          "Az egyházüldözés.",
+          "A tervgazdaság működése."
+        ]
+      },
+      {
+        "title": "Deportálások „békeidőben”",
+        "altemak": [
+          "A deportálások és üldözések okai.",
+          "A határon túli magyarok megpróbáltatásai: deportálások Csehszlovákiában; szovjet, román és jugoszláv munkatáborok.",
+          "Magyarországi kitelepítések és munkatáborok."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "malenkij robot",
+        "államosítás",
+        "tervgazdaság",
+        "Államvédelmi Hatóság (ÁVH)"
+      ],
+      "szemelyek": [
+        "Kovács Béla",
+        "Rákosi Mátyás",
+        "Mindszenty József"
+      ],
+      "kronologia": [
+        "1945 szovjet megszállás",
+        "választás Magyarországon",
+        "1948–1956 a Rákosi-diktatúra"
+      ],
+      "topografia": [
+        "Recsk",
+        "Hortobágy",
+        "Duna-delta"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::A forradalomtól az ezredfordulóig": {
+    "school": "F",
+    "title": "A forradalomtól az ezredfordulóig",
+    "temak": [
+      {
+        "title": "Az 1956-os forradalom és szabadságharc",
+        "altemak": [
+          "Október 23., a forradalom kirobbanása.",
+          "A pesti srácok és szabadsághősök.",
+          "A forradalom lakóhelyünkön és környékén.",
+          "Szovjet tankokkal a népakarat ellen.",
+          "A forradalom jelképei.",
+          "A magyar forradalom a világtörténelem színpadán."
+        ]
+      },
+      {
+        "title": "A kádári diktatúra",
+        "altemak": [
+          "A kádári megtorlás.",
+          "A pártállam működése: az elnyomás változó formái.",
+          "Ellenőrzött társadalom, tömegszervezetek."
+        ]
+      },
+      {
+        "title": "Élet a Kádár-rendszerben",
+        "altemak": [
+          "A paraszti gazdaságok felszámolása, téeszesítés.",
+          "A szocialista modernizáció – „a legvidámabb barakk”.",
+          "A hiánygazdaság.",
+          "A második gazdaság kiépülése.",
+          "Életszínvonal-politika és eladósodás."
+        ]
+      },
+      {
+        "title": "A kétpólusú világ megszűnése és a rendszerváltoztatás Magyarországon",
+        "altemak": [
+          "A Szovjetunió és a szocialista rendszer országainak válsága.",
+          "Az ellenzék megszerveződése Magyarországon.",
+          "A tárgyalásos rendszerváltoztatás.",
+          "A kétpólusú világ megszűnése.",
+          "Az első szabad országgyűlési és önkormányzati választás.",
+          "Antall József kormánya."
+        ]
+      },
+      {
+        "title": "Magyarország a rendszerváltoztatás után",
+        "altemak": [
+          "A demokrácia és a piacgazdaság kiépítése.",
+          "A többpártrendszer működése.",
+          "Gazdasági válság és felzárkózás  – vesztesek és nyertesek.",
+          "A társadalom átalakulása.",
+          "Magyarország NATO-tagsága."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "Molotov-koktél",
+        "sortüzek",
+        "munkásőrség",
+        "Magyar Szocialista Munkáspárt (MSZMP)",
+        "Kommunista Ifjúsági Szövetség (KISZ)",
+        "úttörő",
+        "termelőszövetkezet",
+        "háztáji",
+        "maszek",
+        "gulyáskommunizmus",
+        "rendszerváltoztatás",
+        "privatizáció",
+        "jogállam",
+        "többpártrendszer"
+      ],
+      "szemelyek": [
+        "Nagy Imre",
+        "Kádár János",
+        "Gorbacsov",
+        "Reagan",
+        "II. János Pál",
+        "Antall József",
+        "Göncz Árpád",
+        "Horn Gyula",
+        "Orbán Viktor"
+      ],
+      "kronologia": [
+        "1956. október 23. a forradalom kitörése",
+        "1956. november 4. a szovjet támadás",
+        "1956–1989 a Kádár-rendszer"
+      ],
+      "topografia": [
+        "Corvin köz",
+        "Mosonmagyaróvár"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::Együttélés a Kárpát-medencében": {
+    "school": "F",
+    "title": "Együttélés a Kárpát-medencében",
+    "temak": [
+      {
+        "title": "A határon túli magyarok",
+        "altemak": [
+          "Határon túli magyarlakta területek.",
+          "Fordulópontok a határon túli magyarok történetében: a történelmi Magyarország felosztása, a revízió, magyarellenes megtorlások, rendszerváltoztatás.",
+          "A kisebbségi lét nehézségei egykor és ma: adminisztratív intézkedések és mindennapok.",
+          "Kivándorlás és asszimiláció."
+        ]
+      },
+      {
+        "title": "A magyarországi nemzetiségek a 19. századtól napjainkig",
+        "altemak": [
+          "Magyarország nemzetiségi arányainak változása.",
+          "Az asszimiláció folyamata.",
+          "Fordulópontok a nemzetiségek történetében: 1848–49-es szabadságharc, a történelmi Magyarország felosztása, a magyarországi németek kitelepítése.",
+          "A hazai cigány/roma népesség története.",
+          "A nemzetiségi jogok a mai Magyarországon."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "kitelepítés",
+        "asszimiláció"
+      ],
+      "szemelyek": [
+        "Esterházy János",
+        "Márton Áron"
+      ],
+      "kronologia": [
+        "1944–1945 magyarellenes atrocitások"
+      ],
+      "topografia": [
+        "Szlovákia",
+        "Ukrajna"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::Népesedés és társadalom": {
+    "school": "F",
+    "title": "Népesedés és társadalom",
+    "temak": [
+      {
+        "title": "A hagyományos/ agrártársadalmak",
+        "altemak": [
+          "Letelepedés és élelemtermelés: növénytermesztés és állattenyésztés.",
+          "Önellátás, árutermelés, kereskedelem.",
+          "A népességnövekedés korlátai.",
+          "A hagyományos társadalom (hierarchia és család)."
+        ]
+      },
+      {
+        "title": "A modern/ipari társadalmak",
+        "altemak": [
+          "Az ipari forradalmak hatásai: népességrobbanás és városiasodás.",
+          "Népességnövekedés a fejlődő és népességfogyás a fejlett világban.",
+          "A migráció.",
+          "A modern/ipari társadalom (egyenjogúság és individualizmus).",
+          "A női szerepek változásának áttekintése a történelem során."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "háziasítás",
+        "nagy pestisjárvány",
+        "népességrobbanás",
+        "migráció",
+        "multikulturalizmus",
+        "terrorizmus",
+        "globalizáció"
+      ],
+      "szemelyek": [
+        "Semmelweis Ignác"
+      ],
+      "kronologia": [],
+      "topografia": []
+    },
+    "_elements_matched": true
+  },
+  "F::A demokratikus állam": {
+    "school": "F",
+    "title": "A demokratikus állam",
+    "temak": [
+      {
+        "title": "A modern demokrácia gyökerei",
+        "altemak": [
+          "Az athéni demokrácia működése.",
+          "A parlamentáris rendszer működése Nagy-Britanniában.",
+          "Az elnöki rendszer működése az Amerikai Egyesült Államokban."
+        ]
+      },
+      {
+        "title": "A modern magyar állam",
+        "altemak": [
+          "Az Alaptörvény.",
+          "Az Országgyűlés, a kormány és az igazságszolgáltatás.",
+          "Az országgyűlési és önkormányzati választási rendszer."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "népgyűlés",
+        "hatalmi ágak",
+        "alkotmány",
+        "elnök",
+        "általános választójog"
+      ],
+      "szemelyek": [
+        "Periklész",
+        "George Washington"
+      ],
+      "kronologia": [
+        "Kr. e. 5. sz. az athéni demokrácia fénykora",
+        "1776 az amerikai Függetlenségi nyilatkozat",
+        "2012 Magyarország Alaptörvénye"
+      ],
+      "topografia": []
+    },
+    "_elements_matched": true
+  },
+  "F::Régiók története": {
+    "school": "F",
+    "title": "Régiók története",
+    "temak": [
+      {
+        "title": "Magyarország és az Európa Unió",
+        "altemak": [
+          "Az Európai Unió születése és bővülése.",
+          "Az európai integráció céljai, eredményei és gondjai.",
+          "Magyarország európai uniós tagsága."
+        ]
+      },
+      {
+        "title": "Közép-Európa",
+        "altemak": [
+          "A régió sajátosságai (jellemzően kontinentális helyzet, birodalmi függés és nemzeti sokszínűség).",
+          "A második világháború hadszíntere.",
+          "A szovjet megszállás.",
+          "A visegrádi együttműködés."
+        ]
+      },
+      {
+        "title": "Az Amerikai Egyesült Államok",
+        "altemak": [
+          "Az Amerikai Egyesült Államok létrejötte.",
+          "Az amerikai polgárháború okai és eredményei.",
+          "Az Amerikai Egyesült Államok világhatalommá válása."
+        ]
+      },
+      {
+        "title": "India",
+        "altemak": [
+          "Az indiai civilizáció vallási és kulturális alapjai.",
+          "A brit gyarmati uralom.",
+          "Gandhi és a függetlenségi mozgalom.",
+          "A jelenkori India ellentmondásai."
+        ]
+      },
+      {
+        "title": "Kína",
+        "altemak": [
+          "A kínai civilizáció vallási és kulturális alapjai.",
+          "Kína félgyarmati sorban.",
+          "A japán megszállás.",
+          "Mao Ce-tung és a kommunista diktatúra.",
+          "A gazdasági óriás."
+        ]
+      },
+      {
+        "title": "A Közel-Kelet",
+        "altemak": [
+          "Az Oszmán Birodalom felbomlása.",
+          "Izrael állam létrejötte.",
+          "Az olaj szerepe a régió történetében.",
+          "Az iszlám és az iszlamizmus.",
+          "Etnikai, vallási és gazdasági törésvonalak."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "integráció",
+        "euró",
+        "Európai Unió",
+        "visegrádi együttműködés",
+        "polgárháború",
+        "nagy fal",
+        "hinduizmus",
+        "buddhizmus",
+        "kasztrendszer",
+        "Korán"
+      ],
+      "szemelyek": [
+        " Lincoln",
+        "Gandhi",
+        "Mao Ce-tung"
+      ],
+      "kronologia": [
+        "1957 a római szerződés",
+        "1992 a maastrichti szerződés",
+        "2004 Magyarország belép az Európai Unióba"
+      ],
+      "topografia": [
+        "Brüsszel",
+        "Lengyelország",
+        "Csehország",
+        "Közel-Kelet",
+        "Izrael"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "F::Mérlegen a magyar történelem": {
+    "school": "F",
+    "title": "Mérlegen a magyar történelem",
+    "temak": [
+      {
+        "title": "Lábnyomaink a nagyvilágban",
+        "altemak": [
+          "Világjáró magyarok (utazók, felfedezők).",
+          "Tudósok és feltalálók (pl. informatika, autóipar, űrkutatás).",
+          "Világraszóló sportsikerek – magyarok az olimpiákon.",
+          "Magyar művészek a világban."
+        ]
+      },
+      {
+        "title": "A magyar megmaradás kérdései",
+        "altemak": [
+          "Magyarország mint szuverén európai hatalom a középkorban.",
+          "A török kor: a középkori örökség pusztulása és az etnikai arányok romlása.",
+          "Az Osztrák-Magyar Monarchia, a Közép-Európát sikeresen egyesítő birodalom.",
+          "Trianon máig tartó hatásai: a kisállami lét kényszerpályái a nagyhatalmak árnyékában.",
+          "Új típusú kapcsolatépítés a rendszerváltoztatás után a kisebbségbe került magyarsággal.",
+          "A magyar megmaradás titkai: szabadságharcok, békés építkezés."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [],
+      "szemelyek": [],
+      "kronologia": [],
+      "topografia": []
+    },
+    "_elements_matched": true
+  },
+  "K::Civilizáció és államszervezet az ókorban": {
+    "school": "K",
+    "title": "Civilizáció és államszervezet az ókorban",
+    "temak": [
+      {
+        "title": "A Közel-Kelet civilizációi",
+        "altemak": [
+          "Az állam működése az Óbabiloni Birodalom példáján.",
+          "Tudomány.",
+          "A pénz megjelenése."
+        ]
+      },
+      {
+        "title": "A görög civilizáció",
+        "altemak": [
+          "A görög anyagi kultúra öröksége.",
+          "A filozófia és a történetírás.",
+          "A görög embereszmény.",
+          "A hellenisztikus kultúra elterjedése."
+        ]
+      },
+      {
+        "title": "Az athéni demokrácia",
+        "altemak": [
+          "Arisztokratikus köztársaság és demokrácia.",
+          "Kleiszthenész és Periklész.",
+          "Az athéni államszervezet és működése."
+        ]
+      },
+      {
+        "title": "A római civilizáció",
+        "altemak": [
+          "Római városépítészet, amfiteátrumok, fürdők, vízvezetékek és utak.",
+          "A római jog néhány máig élő alapelve.",
+          "A birodalom kiterjedése és a provinciák (Pannónia).",
+          "A latin nyelv és írás elterjedése."
+        ]
+      },
+      {
+        "title": "A római köztársaság",
+        "altemak": [
+          "A vérségi, a vagyoni és a területi elv.",
+          "A római köztársaság államszervezete és működése.",
+          "Köztársaságból egyeduralom: Caesar és Augustus."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "öntözéses földművelés",
+        "fáraó",
+        "piramis",
+        "hieroglifa",
+        "ékírás",
+        "múmia",
+        "Akropolisz",
+        "filozófia",
+        "jósda",
+        "olümpiai játékok",
+        "városállam/polisz",
+        "arisztokrácia",
+        "démosz",
+        "demokrácia",
+        "népgyűlés",
+        "sztratégosz",
+        "cserépszavazás",
+        "rabszolga",
+        "patrícius",
+        "plebejus",
+        "consul",
+        "senatus",
+        "dictator",
+        "néptribunus",
+        "császár",
+        "amfiteátrum",
+        "gladiátor",
+        "provincia",
+        "légió",
+        "limes",
+        "polgárjog"
+      ],
+      "szemelyek": [
+        "Hammurapi",
+        "Kleiszthenész",
+        "Periklész",
+        "Platón",
+        "Arisztotelész",
+        "Hérodotosz",
+        "Nagy Sándor",
+        "Julius Caesar",
+        "Augustus"
+      ],
+      "kronologia": [
+        "Kr. e. 3000 körül – Kr. u. 476 az ókor",
+        "Kr. e. 776 az első feljegyzett olümpiai játékok",
+        "Kr. e. 753 Róma alapítása a hagyomány szerint",
+        "Kr. e. 510 a köztársaság kezdete Rómában",
+        "Kr. e. 508 Kleiszthenész reformjai",
+        "Kr. e. 5. sz. közepe az athéni demokrácia fénykora",
+        "Kr. e. 44. Caesar halála",
+        "az ókori Izrael – Kr. u. 70 Jeruzsálem lerombolása"
+      ],
+      "topografia": [
+        "Mezopotámia",
+        "Babilon",
+        "Egyiptom",
+        "Nílus",
+        "Olümpia",
+        "Athén",
+        "Alexandria",
+        "Itália",
+        "Róma",
+        "Római Birodalom",
+        "Pannónia",
+        "Aquincum",
+        "Savaria",
+        "Jeruzsálem"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::Vallások az ókorban": {
+    "school": "K",
+    "title": "Vallások az ókorban",
+    "temak": [
+      {
+        "title": "Politeizmus és monoteizmus",
+        "altemak": [
+          "A politeizmus az ókori Keleten.",
+          "Görög és római istenek.",
+          "A zsidó monoteizmus."
+        ]
+      },
+      {
+        "title": "A kereszténység kezdete",
+        "altemak": [
+          "Jézus tanításai.",
+          "A páli fordulat.",
+          "Keresztény-üldözések, a kereszténység elterjedése a Római Birodalomban.",
+          "A Szentháromság-tan."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "politeizmus",
+        "monoteizmus",
+        "zsidó vallás",
+        "Ószövetség/Héber Biblia",
+        "Tízparancsolat próféta",
+        "jeruzsálemi templom",
+        "diaszpóra",
+        "Messiás",
+        "keresztény vallás",
+        "keresztség és úrvacsora",
+        "apostol",
+        "misszió",
+        "Biblia",
+        "Újszövetség",
+        "evangélium",
+        "püspök",
+        "zsinat"
+      ],
+      "szemelyek": [
+        "Kheopsz",
+        "Zeusz",
+        "Pallasz Athéné",
+        "Ábrahám",
+        "Mózes",
+        "Jézus",
+        "Szent Péter és Szent Pál apostolok",
+        "Constantinus"
+      ],
+      "kronologia": [
+        "a keresztény időszámítás kezdete (Kr. e. és Kr. u.)",
+        "313 a milánói rendelet",
+        "325 a niceai zsinat"
+      ],
+      "topografia": [
+        "Jeruzsálem",
+        "Kánaán",
+        "Júdea",
+        "Izrael",
+        "Palesztina",
+        "Betlehem"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::Hódító birodalmak": {
+    "school": "K",
+    "title": "Hódító birodalmak",
+    "temak": [
+      {
+        "title": "Egy eurázsiai birodalom: a hunok",
+        "altemak": [
+          "A nomád életmód, harcmodor és államszervezés.",
+          "A népvándorlás.",
+          "A Hun Birodalom.",
+          "Az ókor vége Nyugaton: a Római Birodalom összeomlása.",
+          "Róma örökösei Európa térképén."
+        ]
+      },
+      {
+        "title": "Az Arab Birodalom és az iszlám",
+        "altemak": [
+          "Mohamed tanításai és a Korán.",
+          "Az iszlám kultúra jellegzetességei.",
+          "Az Arab Birodalom és az arab hódítás.",
+          "Az arab hódítás feltartóztatása Európában: Poitiers, Bizánc."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "népvándorlás",
+        "hunok",
+        "ortodox",
+        "iszlám",
+        "Korán",
+        "kalifa"
+      ],
+      "szemelyek": [
+        "Attila",
+        "Justinianus",
+        "Mohamed",
+        "Nagy Károly",
+        "I. Ottó"
+      ],
+      "kronologia": [
+        "476 a Nyugatrómai Birodalom bukása",
+        "622 Mohamed Medinába költözése",
+        "732 a poitiers-i csata"
+      ],
+      "topografia": [
+        "Hun Birodalom",
+        "Konstantinápoly",
+        "Bizánci Birodalom",
+        "Mekka",
+        "Poitiers",
+        "Frank Birodalom",
+        "Német-római Császárság"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A középkori Európa": {
+    "school": "K",
+    "title": "A középkori Európa",
+    "temak": [
+      {
+        "title": "A parasztság világa",
+        "altemak": [
+          "A hierarchikus világkép.",
+          "Az uradalom.",
+          "A jobbágyok kötelességei és jogai.",
+          "Az önellátástól az árutermelésig.",
+          "Éhínségek, járványok, felkelések."
+        ]
+      },
+      {
+        "title": "Az egyházi rend",
+        "altemak": [
+          "Az egyházi hierarchia, az egyházi intézményrendszer.",
+          "Az egyházszakadás és a 11. századi reform.",
+          "A szerzetesség.",
+          "Az eretnekség.",
+          "Kultúra és oktatás, a középkori egyetemek.",
+          "Román és gótikus építészet – európai és magyar példák."
+        ]
+      },
+      {
+        "title": "A nemesi rend",
+        "altemak": [
+          "Az uralkodói hatalom és korlátai (hűbériség, rendiség).",
+          "Lovagi eszmény és lovagi kultúra.",
+          "A keresztes hadjáratok eszméje."
+        ]
+      },
+      {
+        "title": "A polgárok világa",
+        "altemak": [
+          "A középkori város és lakói.",
+          "A város kiváltságai (magyar példák alapján).",
+          "A céhek.",
+          "A helyi és távolsági kereskedelem.",
+          "A reneszánsz építészet (európai és magyar példák)."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "uradalom",
+        "földesúr",
+        "majorság",
+        "jobbágy",
+        "robot",
+        "kiváltság",
+        "rend",
+        "pápa",
+        "érsek",
+        "cölibátus",
+        "szerzetes",
+        "bencés rend",
+        "ferences rend",
+        "eretnek",
+        "inkvizíció",
+        "kolostor",
+        "katolikus",
+        "szent",
+        "kódex",
+        "román stílus",
+        "gótikus stílus",
+        "reneszánsz",
+        "lovag",
+        "nemes",
+        "feudalizmus",
+        "hűbériség",
+        "király",
+        "rendi monarchia",
+        "keresztes hadjáratok",
+        "polgár",
+        "céh"
+      ],
+      "szemelyek": [
+        "Szent Benedek",
+        "VII. Gergely",
+        "Assisi Szent Ferenc",
+        "Aquinói Szent Tamás",
+        "Leonardo da Vinci",
+        "Gutenberg",
+        "Dózsa György"
+      ],
+      "kronologia": [
+        "476–1492 a középkor",
+        "1054 az egyházszakadás",
+        "1347 a nagy pestisjárvány"
+      ],
+      "topografia": [
+        "Egyházi Állam",
+        "Anglia",
+        "Franciaország",
+        "levantei kereskedelmi hálózat",
+        "Velence",
+        "Firenze",
+        "Hanza kereskedelmi hálózat",
+        "Szentföld"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A magyar nép eredete és az Árpád-kor": {
+    "school": "K",
+    "title": "A magyar nép eredete és az Árpád-kor",
+    "temak": [
+      {
+        "title": "Magyar őstörténet és honfoglalás",
+        "altemak": [
+          "Az eredet kérdései, a nyelvészet, a régészet, a néprajz és a genetika eredményei.",
+          "A magyar törzsszövetség az Etelközben.",
+          "A honfoglalás okai és menete.",
+          "A kalandozások – a lovas-íjász harcmodor."
+        ]
+      },
+      {
+        "title": "Az államalapítás",
+        "altemak": [
+          "Géza és I. (Szent) István államszervező tevékenysége.",
+          "A földbirtokrendszer és a vármegyeszervezet.",
+          "Az egyházszervezés."
+        ]
+      },
+      {
+        "title": "A magyar állam megszilárdulása az Árpád-korban",
+        "altemak": [
+          "Szent László, az országépítő.",
+          "Könyves Kálmán törvénykezési reformjai.",
+          "A kül- és belpolitika új irányai: III. Béla uralkodása.",
+          "II. András kora: az átalakuló társadalom.",
+          "Újjáépítés a tatárjárás után: IV. Béla.",
+          "Az Árpádok európai kapcsolatai."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "finnugor",
+        "törzs",
+        "fejedelem",
+        "kabarok",
+        "vérszerződés",
+        "honfoglalás",
+        "kettős honfoglalás elmélete",
+        "avarok",
+        "rovásírás",
+        "kalandozások",
+        "székelyek",
+        "vármegye",
+        "egyházmegye",
+        "érsekség",
+        "tized",
+        "nádor",
+        "ispán",
+        "kancellária",
+        "kettős kereszt",
+        "szászok",
+        "kunok",
+        "tatárok/mongolok"
+      ],
+      "szemelyek": [
+        "Álmos",
+        "Árpád",
+        "az Árpád-ház",
+        "Géza",
+        "I. (Szent) István",
+        "Koppány",
+        "Szent Gellért",
+        "Szent Imre",
+        "I. (Szent) László",
+        "Könyves Kálmán",
+        "III. Béla",
+        "II. András",
+        "IV. Béla",
+        "Szent Margit"
+      ],
+      "kronologia": [
+        "895 a honfoglalás",
+        "907 a pozsonyi csata",
+        "997/1000–1038 I. (Szent) István uralkodása",
+        "1222 az Aranybulla",
+        "1241–1242 a tatárjárás"
+      ],
+      "topografia": [
+        "Etelköz",
+        "Vereckei-hágó",
+        "Kárpát-medence",
+        "Pannonhalma",
+        "Esztergom",
+        "Székesfehérvár",
+        "Buda",
+        "Muhi",
+        "Erdély",
+        "Horvátország"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A középkori Magyar Királyság fénykora": {
+    "school": "K",
+    "title": "A középkori Magyar Királyság fénykora",
+    "temak": [
+      {
+        "title": "Az Anjouk",
+        "altemak": [
+          "A királyi hatalom újbóli megszilárdítása I. Károly idején.",
+          "A visegrádi királytalálkozó.",
+          "Az 1351-es törvények.",
+          "Nagy Lajos hadjáratai."
+        ]
+      },
+      {
+        "title": "A török fenyegetés árnyékában",
+        "altemak": [
+          "Az Oszmán Birodalom.",
+          "Török hódítás a Balkánon.",
+          "Luxemburgi Zsigmond, a közép-európai uralkodó és a török veszély.",
+          "Hunyadi János, a politikus és hadvezér.",
+          "Hunyadi János törökellenes harcai."
+        ]
+      },
+      {
+        "title": "Hunyadi Mátyás",
+        "altemak": [
+          "Mátyás útja a trónig.",
+          "A központosított királyi hatalom.",
+          "Jövedelmek és kiadások.",
+          "Birodalomépítő tervek.",
+          "Aktív védelem a török ellen."
+        ]
+      },
+      {
+        "title": "A magyar középkor kulturális hagyatéka",
+        "altemak": [
+          "Honfoglalás kori leletek.",
+          "A Szent Korona.",
+          "Várak, királyi udvar, kolostorok, templomok.",
+          "Magyar geszták, krónikák és szentek legendái."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "aranyforint",
+        "regálé",
+        "kapuadó",
+        "kilenced",
+        "bandérium",
+        "perszonálunió",
+        "sarkalatos nemesi jogok",
+        "fő- és köznemes",
+        "szabad királyi város",
+        "bányaváros",
+        "mezőváros",
+        "kormányzó",
+        "szekérvár",
+        "végvár",
+        "szultán",
+        "szpáhi",
+        "janicsár",
+        "rendkívüli hadiadó",
+        "füstpénz",
+        "fekete sereg",
+        "zsoldos",
+        "Corvina",
+        "Szent Korona",
+        "Szent Korona-tan",
+        "Képes krónika"
+      ],
+      "szemelyek": [
+        "I. (Anjou) Károly",
+        "I. (Nagy) Lajos",
+        "Luxemburgi Zsigmond",
+        "Hunyadi János",
+        "I. (Hunyadi) Mátyás"
+      ],
+      "kronologia": [
+        "1301 az Árpád-ház kihalása",
+        "1308. I. Károly uralkodásának kezdete",
+        "1335 a visegrádi királytalálkozó",
+        "1351 I.(Nagy) Lajos törvényei",
+        "1396 a nikápolyi csata",
+        "1443–1444-es hosszú hadjárat",
+        "1444 a várnai csata",
+        "1453 Konstantinápoly eleste",
+        "1456 a nándorfehérvári diadal",
+        "1458–90 Mátyás uralkodása"
+      ],
+      "topografia": [
+        "Visegrád",
+        "Lengyelország",
+        "Csehország",
+        "osztrák tartományok",
+        "Nikápoly",
+        "Várna",
+        "Nándorfehérvár",
+        "Kolozsvár",
+        "Kenyérmező",
+        "Oszmán Birodalom"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A kora újkor": {
+    "school": "K",
+    "title": "A kora újkor",
+    "temak": [
+      {
+        "title": "A földrajzi felfedezések",
+        "altemak": [
+          "A portugál és spanyol felfedezések.",
+          "A korai gyarmatosítás és következményei.",
+          "A világkereskedelem kialakulása.",
+          "Az abszolutizmus."
+        ]
+      },
+      {
+        "title": "A korai kapitalizmus",
+        "altemak": [
+          "Az árforradalom.",
+          "A manufaktúrák.",
+          "Bankok és tőzsdék.",
+          "Az európai munkamegosztás és következményei"
+        ]
+      },
+      {
+        "title": "Reformáció Európában és Magyarországon",
+        "altemak": [
+          "A reformáció előzményei (humanizmus és az egyházi reform igénye).",
+          "Luther és Kálvin fellépése.",
+          "A protestáns egyházak megszerveződése és a protestantizmus elterjedése.",
+          "A reformáció eredményei Magyarországon"
+        ]
+      },
+      {
+        "title": "„Hitviták tüzében”",
+        "altemak": [
+          "Vallási konfliktusok Európában.",
+          "Etnikai sokszínűség és vallásbéke Erdélyben.",
+          "A magyar protestáns és katolikus iskolák.",
+          "A katolikus megújulás és a barokk Európában és Magyarországon."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "gyarmat",
+        "világkereskedelem",
+        "abszolutizmus",
+        "infláció",
+        "manufaktúra",
+        "tőke",
+        "tőkés",
+        "bérmunkás",
+        "kapitalizmus",
+        "bank",
+        "tőzsde",
+        "részvény",
+        "örökös jobbágyság",
+        "reformáció",
+        "protestáns",
+        "evangélikus",
+        "református",
+        "anglikán",
+        "unitárius",
+        "vallási türelem",
+        "ellenreformáció",
+        "katolikus megújulás",
+        "jezsuiták",
+        "barokk"
+      ],
+      "szemelyek": [
+        "Kolumbusz Kristóf",
+        "Vasco da Gama",
+        "Ferdinánd Magellán",
+        "Luther Márton",
+        "Kálvin János",
+        "Károli Gáspár",
+        "Pázmány Péter",
+        "Apáczai Csere János",
+        "Habsburg-dinasztia",
+        "V. Károly",
+        "Loyolai (Szent) Ignác",
+        "XIV. Lajos"
+      ],
+      "kronologia": [
+        "1492-től az újkor",
+        "1492 Amerika felfedezése",
+        "1517 a reformáció kezdete",
+        "1545 a tridenti zsinat megnyitása",
+        "1568 a tordai határozat"
+      ],
+      "topografia": [
+        "Spanyolország",
+        "India",
+        "London",
+        "Párizs/Versailles",
+        "Sárospatak"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A török hódoltság kora Magyarország": {
+    "school": "K",
+    "title": "A török hódoltság kora Magyarország",
+    "temak": [
+      {
+        "title": "Az ország három részre szakadása",
+        "altemak": [
+          "A mohácsi csata és közvetlen előzményei, a kettős királyválasztás.",
+          "Az ország három részre szakadása.",
+          "A várháborúk és az új végvárrendszer."
+        ]
+      },
+      {
+        "title": "A két magyar állam",
+        "altemak": [
+          "A Magyar Királyság a Habsburg Birodalomban: rendi és abszolutista törekvések, konfliktusok.",
+          "Az Erdélyi Fejedelemség viszonylagos önállósága és aranykora."
+        ]
+      },
+      {
+        "title": "A török kiűzése és a török kor mérlege",
+        "altemak": [
+          "Magyarország az európai munkamegosztásban.",
+          "Háborús békeévek: másfél évszázad hódoltság és az ország pusztulása.",
+          "A török kiűzése."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "rendi országgyűlés",
+        "hajdúszabadság"
+      ],
+      "szemelyek": [
+        "I. Szulejmán",
+        "II. Lajos",
+        "(Szapolyai) János",
+        "I. Ferdinánd",
+        "Dobó István",
+        "Zrínyi Miklós (a szigetvári hős)",
+        "Báthory István",
+        "Bocskai István",
+        "Bethlen Gábor",
+        "Zrínyi Miklós (a költő és hadvezér)",
+        "I. Lipót",
+        "Savoyai Jenő"
+      ],
+      "kronologia": [
+        "1526 a mohácsi csata",
+        "1541 Buda eleste",
+        "1552 Eger védelme",
+        "1566 Szigetvár eleste",
+        "1664 a vasvári béke",
+        "1686 Buda visszafoglalása",
+        "1699 karlócai béke"
+      ],
+      "topografia": [
+        "Mohács",
+        "Kőszeg",
+        "Eger",
+        "Szigetvár",
+        "Habsburg Birodalom",
+        "Erdélyi Fejedelemség",
+        "Hódoltság",
+        "Magyar Királyság (királyi Magyarország)",
+        "Pozsony",
+        "Gyulafehérvár",
+        "Bécs"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A felvilágosodás kora": {
+    "school": "K",
+    "title": "A felvilágosodás kora",
+    "temak": [
+      {
+        "title": "A felvilágosodás",
+        "altemak": [
+          "Tapasztalat és értelem − a felvilágosodás új világképe.",
+          "A felvilágosodás államelméletei.",
+          "A szabad verseny elmélete."
+        ]
+      },
+      {
+        "title": "A brit alkotmányos monarchia és az amerikai köztársaság működése",
+        "altemak": [
+          "A parlamentáris rendszer: parlament és kormány.",
+          "Az elnöki rendszer: kongresszus és elnök."
+        ]
+      },
+      {
+        "title": "A francia forradalom és hatása",
+        "altemak": [
+          "A forradalom kitörése és az Emberi és polgári jogok nyilatkozata.",
+          "A jakobinus diktatúra.",
+          "Napóleon birodalma: a polgári berendezkedés exportja."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "felvilágosodás",
+        "jogegyenlőség",
+        "hatalmi ágak megosztása",
+        "népfelség",
+        "társadalmi szerződés",
+        "szabad verseny",
+        "alkotmány",
+        "alkotmányos monarchia",
+        "elnök",
+        "miniszterelnök",
+        "felelős kormány",
+        "cenzus",
+        "általános választójog",
+        "forradalom",
+        "diktatúra",
+        "jakobinus",
+        "Szent Szövetség"
+      ],
+      "szemelyek": [
+        "Nikolausz Kopernikusz",
+        "Isaac Newton",
+        "Charles Louis Montesquieu",
+        "Jean-Jacques Rousseau",
+        "Adam Smith",
+        "George Washington",
+        "Maximilien Robespierre",
+        "Bonaparte Napóleon"
+      ],
+      "kronologia": [
+        "1689 a Jognyilatkozat",
+        "1776 a Függetlenségi nyilatkozat",
+        "1789 a francia forradalom",
+        "1804–1814/1815 Napóleon császársága",
+        "1815 a waterlooi csata"
+      ],
+      "topografia": [
+        "Nagy-Britannia",
+        "Amerikai Egyesült Államok",
+        "Párizs",
+        "Oroszország",
+        "Waterloo"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::Magyarország a 18. században": {
+    "school": "K",
+    "title": "Magyarország a 18. században",
+    "temak": [
+      {
+        "title": "A Rákóczi-szabadságharc",
+        "altemak": [
+          "Magyarország a Habsburg Birodalomban.",
+          "A szabadságharc okai és céljai.",
+          "A szabadságharc politikai és katonai fordulópontjai.",
+          "A szatmári béke kompromisszuma."
+        ]
+      },
+      {
+        "title": "Magyarország újranépesülése és újranépesítése",
+        "altemak": [
+          "A belső vándorlás, a szervezett betelepítés és az öntevékeny betelepülés.",
+          "A többnyelvű és többvallású ország.",
+          "Gazdaság és életmód."
+        ]
+      },
+      {
+        "title": "A felvilágosult abszolutizmus reformjai",
+        "altemak": [
+          "A Pragmatica Sanctio.",
+          "A felvilágosult abszolutizmus céljai.",
+          "Mária Terézia: együttműködés és reform.",
+          "II. József reformpolitikája és kudarca."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "kuruc",
+        "labanc",
+        "szabadságharc",
+        "trónfosztás",
+        "amnesztia",
+        "felvilágosult abszolutizmus",
+        "kettős vámhatár",
+        "úrbéri rendelet",
+        "Ratio Educationis",
+        "türelmi rendelet",
+        "nyelvrendelet"
+      ],
+      "szemelyek": [
+        "II. Rákóczi Ferenc",
+        "Mária Terézia"
+      ],
+      "kronologia": [
+        "1703–1711 a Rákóczi-szabadságharc",
+        "1711 a szatmári béke",
+        "1740–1780 Mária Terézia uralkodása",
+        "1780–1790 II. József uralkodása"
+      ],
+      "topografia": [
+        "Temesvár",
+        "Határőrvidék",
+        "Poroszország"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::Az új eszmék és az iparosodás kora": {
+    "school": "K",
+    "title": "Az új eszmék és az iparosodás kora",
+    "temak": [
+      {
+        "title": "Liberalizmus, nacionalizmus és konzervativizmus",
+        "altemak": [
+          "Liberalizmus: jogegyenlőség és alkotmányosság.",
+          "Nacionalizmus: nemzetépítés és nemzetállam.",
+          "Konzervativizmus: szerves reform és a forradalom elutasítása."
+        ]
+      },
+      {
+        "title": "Az ipari forradalom hullámai",
+        "altemak": [
+          "Az első hullám: textilipar, bányászat, kohászat.",
+          "A közlekedés forradalma.",
+          "A második hullám: elektronika és vegyipar.",
+          "A gyár és a futószalag.",
+          "Az ipari forradalmak társadalmi és környezeti hatásai."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "liberalizmus",
+        "nacionalizmus",
+        "nemzetállam",
+        "konzervativizmus",
+        "reform",
+        "ipari forradalom",
+        "munkanélküliség",
+        "tömegtermelés",
+        "szegregáció"
+      ],
+      "szemelyek": [
+        "James Watt",
+        "Thomas Edison",
+        "Henry Ford"
+      ],
+      "kronologia": [],
+      "topografia": [
+        "Manchester",
+        "New York"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A reformkor": {
+    "school": "K",
+    "title": "A reformkor",
+    "temak": [
+      {
+        "title": "A politikai élet színterei",
+        "altemak": [
+          "A Habsburg Birodalom és Magyarország.",
+          "A rendi országgyűlés és a megyerendszer.",
+          "A reformkori Pest-Buda.",
+          "A nyilvánosság megteremtése, politika és kultúra."
+        ]
+      },
+      {
+        "title": "A reformkor fő kérdései",
+        "altemak": [
+          "A magyar nyelv ügye és a nemzetté válás.",
+          "A jobbágykérdés: örökváltság, kárpótlás.",
+          "A polgári alkotmányosság kérdése.",
+          "Széchenyi és Kossuth programja és vitája."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "alsó- és felsőtábla",
+        "érdekegyesítés",
+        "közteherviselés",
+        "jobbágyfelszabadítás",
+        "örökváltság"
+      ],
+      "szemelyek": [
+        "József nádor",
+        "Klemens Metternich",
+        "Wesselényi Miklós",
+        "Széchenyi István",
+        "Kölcsey Ferenc",
+        "Deák Ferenc",
+        "Kossuth Lajos",
+        "Ganz Ábrahám"
+      ],
+      "kronologia": [
+        "1830–1848 a reformkor",
+        "1830 a Hitel megjelenése",
+        "1844 törvény a magyar államnyelvről"
+      ],
+      "topografia": [
+        "Pest-Buda"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A forradalom és a szabadságharc": {
+    "school": "K",
+    "title": "A forradalom és a szabadságharc",
+    "temak": [
+      {
+        "title": "A forradalom céljai és eredményei",
+        "altemak": [
+          "Az európai forradalmi hullám és március 15.",
+          "Az első magyar polgári alkotmány: az áprilisi törvények.",
+          "A Batthyány-kormány tevékenysége."
+        ]
+      },
+      {
+        "title": "A szabadságharc főbb eseményei és kiemelkedő szereplői",
+        "altemak": [
+          "Harc a dinasztiával és a vele szövetkező nemzetiségekkel.",
+          "A tavaszi hadjárat.",
+          "A Függetlenségi nyilatkozat, kísérlet az önálló állam megteremtésére.",
+          "A szabadságharc leverése és a megtorlás."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "márciusi ifjak",
+        "sajtószabadság",
+        "cenzúra",
+        "áprilisi törvények",
+        "népképviseleti országgyűlés",
+        "politikai nemzet",
+        "nemzetiség",
+        "honvédség",
+        "Függetlenségi nyilatkozat"
+      ],
+      "szemelyek": [
+        "Petőfi Sándor",
+        "Batthyány Lajos",
+        "Görgei Artúr",
+        "Bem József",
+        "Klapka György",
+        "Ferenc József",
+        "Julius Haynau"
+      ],
+      "kronologia": [
+        "1848. március 15. a pesti forradalom",
+        "1848. április 11. az áprilisi törvények",
+        "1848. szeptember 29. a pákozdi csata",
+        "1849. április–május a tavaszi hadjárat",
+        "1849. április 14. a Függetlenségi nyilatkozat",
+        "1849. május 21. Buda visszavétele",
+        "1849. augusztus 13. a világosi fegyverletétel",
+        "1849. október 6. az aradi vértanúk és Batthyány kivégzése"
+      ],
+      "topografia": [
+        "Pákozd",
+        "Debrecen",
+        "Isaszeg",
+        "Világos",
+        "Komárom",
+        "Arad"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A nemzetállamok születése és a szocialista eszmék megjelenése": {
+    "school": "K",
+    "title": "A nemzetállamok születése és a szocialista eszmék megjelenése",
+    "temak": [
+      {
+        "title": "A szocializmus és a munkásmozgalom",
+        "altemak": [
+          "Szocializmus: társadalmi egyenlőség és tulajdonviszonyok.",
+          "A Kommunista kiáltvány.",
+          "Szakszervezetek és munkáspártok.",
+          "Szociáldemokrácia és kommunizmus.",
+          "Keresztényszocializmus."
+        ]
+      },
+      {
+        "title": "A polgári nemzetállam megteremtése (Németország, Amerikai Egyesült Államok, Japán)",
+        "altemak": [
+          "A nemzeti egység megteremtése (politika, gazdaság, kultúra).",
+          "Alkotmányosság és választójog.",
+          "Jogegyenlőség és emancipációs törekvések.",
+          "A polgári állam kiépítése."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "polgárháború",
+        "polgári állam",
+        "szakszervezet",
+        "társadalombiztosítás",
+        "monopólium",
+        "szocializmus",
+        "szociáldemokrácia",
+        "kommunizmus",
+        "keresztényszocializmus"
+      ],
+      "szemelyek": [
+        "Abraham Lincoln",
+        "Otto von Bismarck",
+        "Karl Marx"
+      ],
+      "kronologia": [
+        "1861–1865 az amerikai polgárháború",
+        "1868 a Meidzsi-restauráció",
+        "1871 Németország egyesítése"
+      ],
+      "topografia": [
+        "Németország",
+        "Japán"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A dualizmus kora": {
+    "school": "K",
+    "title": "A dualizmus kora",
+    "temak": [
+      {
+        "title": "A kiegyezés és a dualizmus rendszere",
+        "altemak": [
+          "A kiegyezés és okai.",
+          "A közös ügyek rendszere.",
+          "A magyar államszervezet.",
+          "A pártrendszer, a választójog és a véderőviták."
+        ]
+      },
+      {
+        "title": "A nemzeti és nemzetiségi kérdés, a cigányság helyzete",
+        "altemak": [
+          "A politikai nemzet koncepciója.",
+          "A horvát-magyar kiegyezés és a nemzetiségi törvény.",
+          "Asszimiláció és anyanyelvhasználat.",
+          "Autonómiatörekvések és irredenta mozgalmak.",
+          "Zsidó emancipáció, a zsidóság részvétele a modernizációban, polgárosodás és a középosztály kérdése.",
+          "Cigányok/romák a dualizmus kori Magyarországon."
+        ]
+      },
+      {
+        "title": "Az ipari forradalom Magyarországon",
+        "altemak": [
+          "A gazdasági kiegyezés.",
+          "A vasútépítés.",
+          "Állami gazdaságpolitika.",
+          "Mezőgazdaság és élelmiszeripar.",
+          "Modernizálódó ipar."
+        ]
+      },
+      {
+        "title": "Társadalom és életmód a dualizmus korában",
+        "altemak": [
+          "Demográfiai robbanás és urbanizáció.",
+          "Kivándorlás Európából és Magyarországról.",
+          "A földkérdés és a vidék.",
+          "A nagyvárosi életforma: Budapest a világváros.",
+          "Oktatás és kultúra.",
+          "Életmód és szórakozás."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "emigráció",
+        "passzív ellenállás",
+        "kiegyezés",
+        "közös ügyek",
+        "közjogi kérdés",
+        "húsvéti cikk",
+        "dualizmus",
+        "nyílt és titkos szavazás",
+        "Szabadelvű Párt",
+        "Függetlenségi Párt",
+        "Magyarországi Szociáldemokrata Párt",
+        "népességrobbanás",
+        "urbanizáció",
+        "kivándorlás",
+        "dzsentri",
+        "népoktatás",
+        "Millennium",
+        "asszimiláció",
+        "autonómia"
+      ],
+      "szemelyek": [
+        "Andrássy Gyula",
+        "Eötvös József",
+        "Baross Gábor",
+        "Tisza Kálmán",
+        "Wekerle Sándor",
+        "Tisza István",
+        "Semmelweis Ignác",
+        "Weiss Manfréd"
+      ],
+      "kronologia": [
+        "1848/1867–1916 Ferenc József uralkodása",
+        "1867 a kiegyezés",
+        "1868 a horvát-magyar kiegyezés",
+        "a nemzetiségi törvény",
+        "a népiskolai törvény",
+        "1873 Budapest egyesítése",
+        "1896 a Millennium"
+      ],
+      "topografia": [
+        "Budapest",
+        "Osztrák-Magyar Monarchia",
+        "Fiume"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A nagy háború": {
+    "school": "K",
+    "title": "A nagy háború",
+    "temak": [
+      {
+        "title": "Az első világháború előzményei",
+        "altemak": [
+          "A gyarmatosítás okai és céljai.",
+          "Az imperializmus – a terjeszkedő tőke.",
+          "Nagyhatalmi érdekek és konfliktusok.",
+          "Az Osztrák-Magyar Monarchia helyzete – balkáni konfliktusok."
+        ]
+      },
+      {
+        "title": "Az első világháború",
+        "altemak": [
+          "A világháború kitörése.",
+          "A hadviselő felek és a frontok.",
+          "Oroszország és a központi hatalmak összeomlása."
+        ]
+      },
+      {
+        "title": "Az első világháború jellemzői és hatása",
+        "altemak": [
+          "Az állóháború és az anyagcsata.",
+          "A hadigazdaság és a háborús propaganda.",
+          "A hagyományos világrend felbomlása.",
+          "A nők helyzetének megváltozása."
+        ]
+      },
+      {
+        "title": "Magyarország a világháborúban",
+        "altemak": [
+          "Magyar frontok, nagy csaták.",
+          "Az antant ígéretei a Monarchia nemzetiségeinek.",
+          "Magyar hősök a világháborúban.",
+          "A hátország.",
+          "A magyar hadifoglyok sorsa."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "villámháború",
+        "front",
+        "állóháború",
+        "hátország",
+        "antant",
+        "központi hatalmak",
+        "hadigazdaság",
+        "hadifogság"
+      ],
+      "szemelyek": [
+        "II. Vilmos",
+        "II. Miklós",
+        "IV. Károly"
+      ],
+      "kronologia": [
+        "1914. június 28. a szarajevói merénylet",
+        "1914–1918 az első világháború"
+      ],
+      "topografia": [
+        "Brit Birodalom",
+        "Szarajevó",
+        "Doberdó",
+        "Románia",
+        "Szerbia",
+        "Olaszország"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::Az átalakulás évei": {
+    "school": "K",
+    "title": "Az átalakulás évei",
+    "temak": [
+      {
+        "title": "Szocialista és nemzeti törekvések: a birodalmak bomlása",
+        "altemak": [
+          "A történelmi monarchiák bukása (Oroszország, Németország, Oszmán Birodalom).",
+          "Forradalom és kommunista hatalomátvétel Oroszországban.",
+          "Az újraszülető Lengyelország.",
+          "Az olasz fasizmus."
+        ]
+      },
+      {
+        "title": "Az Osztrák-Magyar Monarchia és a történelmi Magyarország szétesése",
+        "altemak": [
+          "A Monarchia és a történelmi Magyarország bomlása.",
+          "A forradalmi átalakulás kísérlete és kudarca.",
+          "Cseh és román támadás, a fegyveres ellenállás kérdése."
+        ]
+      },
+      {
+        "title": "A tanácsköztársaság és az ellenforradalom",
+        "altemak": [
+          "A kommunista hatalomátvétel.",
+          "A proletárdiktatúra és a vörösterror.",
+          "Az északi hadjárat és a tanácsköztársaság veresége.",
+          "Az ellenforradalom győzelme."
+        ]
+      },
+      {
+        "title": "A Párizs környéki békék",
+        "altemak": [
+          "A nagyhatalmi érdekek érvényesítése: az új világrend kialakítása.",
+          "Az önrendelkezés elve és a hatalmi érdekek gyakorlata.",
+          "Jóvátétel, hadsereg-korlátozás, határváltozások.",
+          "A szétszabdalt közép-európai régió."
+        ]
+      },
+      {
+        "title": "A trianoni békediktátum",
+        "altemak": [
+          "A magyar ügy a békekonferencián.",
+          "A magyar delegáció érvei.",
+          "Az ezeréves Magyarország felosztása, a döntés tartalmi elemei.",
+          "Az önrendelkezési elv megsértése",
+          "A békediktátum etnikai és gazdasági következményei.",
+          "Az ellenállás példái: székely hadosztály, Balassagyarmat, Sopron."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "bolsevik",
+        "szovjet",
+        "örmény népirtás",
+        "egypártrendszer",
+        "Kommunisták Magyarországi Pártja (KMP)",
+        "tanácsköztársaság",
+        "vörösterror",
+        "Lenin-fiúk",
+        "  ellenforradalom",
+        "fehér különítményes megtorlások",
+        "“vörös térkép",
+        "” kisantant",
+        "jóvátétel",
+        "Népszövetség",
+        "kisebbségvédelem",
+        "revízió",
+        "Rongyos Gárda"
+      ],
+      "szemelyek": [
+        "Kemal Atatürk",
+        "Vlagyimir I. Lenin",
+        "Woodrow Wilson",
+        "Georges Clemenceau",
+        " Benito Mussolini",
+        "Károlyi Mihály",
+        "Kun Béla",
+        "Horthy Miklós",
+        "Apponyi Albert"
+      ],
+      "kronologia": [
+        "1917 a bolsevik hatalomátvétel",
+        "1918. október 31. forradalom Magyarországon",
+        "1919. március – augusztus. a tanácsköztársaság",
+        "1920. június 4. a trianoni békediktátum"
+      ],
+      "topografia": [
+        "Kárpátalja",
+        "Felvidék",
+        "Délvidék",
+        "Burgenland",
+        "Csehszlovákia",
+        "Jugoszlávia",
+        "Ausztria",
+        "trianoni Magyarország"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A két világháború között": {
+    "school": "K",
+    "title": "A két világháború között",
+    "temak": [
+      {
+        "title": "A kommunista Szovjetunió",
+        "altemak": [
+          "A totális diktatúra és a pártállam kiépítése.",
+          "A tervgazdaság és a kollektivizálás.",
+          "A terror eszközei és áldozatai."
+        ]
+      },
+      {
+        "title": "A Nyugat és a gazdasági világválság",
+        "altemak": [
+          "A tőzsde, a hitelezés és a világkereskedelem összeomlása.",
+          "A munkanélküliség.",
+          "Állami beavatkozás a gazdaságba."
+        ]
+      },
+      {
+        "title": "A nemzetiszocialista Németország",
+        "altemak": [
+          "A nemzetiszocialista ideológia és mozgalom.",
+          "A totális állam kiépítése.",
+          "A terror eszközei.",
+          "Terjeszkedés a háború előtt."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "totális állam",
+        "többpártrendszer",
+        "egypártrendszer",
+        "személyi kultusz",
+        "koncepciós per",
+        "GULAG",
+        "holodomor",
+        "államosítás",
+        "kollektivizálás",
+        "kulák",
+        "tervgazdaság",
+        "piacgazdaság",
+        "New Deal",
+        "fasizmus",
+        "nemzetiszocializmus",
+        "fajelmélet",
+        "antiszemitizmus",
+        "Führer",
+        "SS",
+        "Anschluss"
+      ],
+      "szemelyek": [
+        "Joszif V. Sztálin",
+        "Adolf Hitler"
+      ],
+      "kronologia": [
+        "1922 a Szovjetunió létrejötte",
+        "1929 a gazdasági világválság kezdete",
+        "1933 a náci hatalomátvétel",
+        "1938 az Anschluss",
+        "a müncheni konferencia"
+      ],
+      "topografia": [
+        "Szovjetunió",
+        "Kolima-vidék",
+        "Leningrád (Szentpétervár)",
+        "Moszkva",
+        "Berlin"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A Horthy-korszak": {
+    "school": "K",
+    "title": "A Horthy-korszak",
+    "temak": [
+      {
+        "title": "Talpra állás Trianon után",
+        "altemak": [
+          "A király nélküli alkotmányos királyság.",
+          "A korlátozott parlamentarizmus rendszere a konszolidáció szolgálatában.",
+          "A gazdaság szerkezetváltása az 1920-as években.",
+          "A klebelsbergi oktatás- és kultúrpolitika eredményei."
+        ]
+      },
+      {
+        "title": "A 1930-as évek Magyarországa",
+        "altemak": [
+          "A válság és hatása.",
+          "A belpolitika irányváltásai.",
+          "Életmód és társadalom.",
+          "A földkérdés.",
+          "Tudomány és művészet a két világháború között.",
+          "A külpolitika irányai és lehetőségei – a revízió első eredményei."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "kormányzó",
+        "Egységes Párt",
+        "numerus clausus",
+        "pengő",
+        "Magyar Nemzeti Bank",
+        "Szent István-i állameszme",
+        "magyar népi mozgalom",
+        "nyilasok"
+      ],
+      "szemelyek": [
+        "Bethlen István",
+        "Teleki Pál",
+        "Klebelsberg Kunó",
+        "Gömbös Gyula",
+        "Weiss Manfréd",
+        "Szent-Györgyi Albert"
+      ],
+      "kronologia": [
+        "1920–1944 a Horthy-rendszer",
+        "1921–31 Bethlen miniszterelnöksége",
+        "1938 az első bécsi döntés",
+        "1939 Kárpátalja visszacsatolása"
+      ],
+      "topografia": []
+    },
+    "_elements_matched": true
+  },
+  "K::A második világháború": {
+    "school": "K",
+    "title": "A második világháború",
+    "temak": [
+      {
+        "title": "A tengelyhatalmak sikerei",
+        "altemak": [
+          "Közép-Európa felosztása (Molotov-Ribbentrop paktum): német és szovjet megszállás.",
+          "Nyugat-Európa lerohanása.",
+          "Német támadás a Szovjetunió ellen.",
+          "Japán támadás az Egyesült Államok ellen."
+        ]
+      },
+      {
+        "title": "A szövetségesek győzelme",
+        "altemak": [
+          "A keleti és a nyugati front.",
+          "A csendes-óceáni hadszíntér."
+        ]
+      },
+      {
+        "title": "Magyarország a második világháborúban: mozgástér és kényszerpálya",
+        "altemak": [
+          "A területi revízió lépései.",
+          "A fegyveres semlegesség.",
+          "A Szovjetunió elleni háború.",
+          "A Don-kanyar.",
+          "A német megszállás és következményei."
+        ]
+      },
+      {
+        "title": "A holokauszt",
+        "altemak": [
+          "Az „Endlösung” programja, a Wannsee-i konferencia.",
+          "Koncentrációs és megsemmisítő táborok.",
+          "Deportálások, kísérlet a zsidóság és a cigányság megsemmisítésére Európában.",
+          "A magyarországi zsidótörvények.",
+          "A magyar holokauszt.",
+          "Felelősség és embermentés."
+        ]
+      },
+      {
+        "title": "A második világháború jellemzői",
+        "altemak": [
+          "A villámháború és következményei.",
+          "Háborús bűnök és a polgári lakosság elleni terror.",
+          "Az ellenállás formái.",
+          "A háború utáni számonkérések és a nürnbergi per."
+        ]
+      },
+      {
+        "title": "Az ország pusztulása, deportálások a GULAG-ra",
+        "altemak": [
+          "A kiugrási kísérlet és a nyilas uralom.",
+          "A magyarországi hadszíntér, Budapest ostroma.",
+          "Megszabadulás és szovjet megszállás.",
+          "Az ország kifosztása, szovjet deportálások és tömeges erőszak.",
+          "A határon túli magyarok jogfosztása, megtorlások (délvidéki vérengzés, kárpátaljai deportálás, felvidéki jogfosztás)."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "Molotov–Ribbentrop-paktum",
+        "tengelyhatalmak",
+        "szövetségesek",
+        "totális háború",
+        "kiugrási kísérlet",
+        "zsidótörvények",
+        "munkaszolgálat",
+        "gettó",
+        "deportálás",
+        "koncentrációs tábor",
+        "haláltábor",
+        "népirtás",
+        "holokauszt",
+        "partizán",
+        "Vörös Hadsereg",
+        "jaltai konferencia",
+        "háborús bűn",
+        "malenkij robot"
+      ],
+      "szemelyek": [
+        "Franklin D. Roosevelt",
+        "Winston Churchill",
+        "Charles de Gaulle",
+        "Bárdossy László",
+        "Kállay Miklós",
+        "Bajcsy-Zsilinszky Endre",
+        "Edmund Veesenmayer",
+        "Szálasi Ferenc",
+        "Raoul Wallenberg",
+        "Salkaházi Sára",
+        "Apor Vilmos",
+        "Sztehlo Gábor",
+        "Richter Gedeon"
+      ],
+      "kronologia": [
+        "1938 az első zsidótörvény",
+        "1939 a második zsidótörvény",
+        "1939–45 a második világháború",
+        "1939. szeptember 1. Lengyelország lerohanása",
+        "1940 a második bécsi döntés",
+        "1941. április Jugoszlávia megtámadása",
+        "1941. június 22. a Szovjetunió megtámadása",
+        "1941. június 27. Magyarország deklarálja a hadiállapot beálltát",
+        "1941. december 7. Pearl Harbor bombázása",
+        "1941 a harmadik zsidótörvény",
+        "1943. január vereség a Donnál",
+        "1943. február a sztálingrádi csata vége",
+        "1944. március 19. Magyarország német megszállása",
+        "1944. június 6. partraszállás Normandiában",
+        "1944. október 15. a kiugrási kísérlet",
+        "1945. április a háború vége Magyarországon",
+        "1945. május 9. az európai háború vége",
+        "1945. augusztus 6. atomtámadás Hirosima ellen"
+      ],
+      "topografia": [
+        "Sztálingrád",
+        "Normandia",
+        "Pearl Harbor",
+        "Hirosima",
+        "Észak-Erdély",
+        "Don-kanyar",
+        "Kamenyec Podolszk Árpád-vonal",
+        "Auschwitz",
+        "Újvidék",
+        "Drezda",
+        "Szolyva"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A két világrendszer szembenállása": {
+    "school": "K",
+    "title": "A két világrendszer szembenállása",
+    "temak": [
+      {
+        "title": "A kétpólusú világ kialakulása",
+        "altemak": [
+          "Az ENSZ megalapítása.",
+          "A párizsi béke.",
+          "Kitelepítések és lakosságcserék a háború után.",
+          "A szovjet-amerikai szembenállás és a két érdekszféra kialakulása.",
+          "A két világrend jellemzői.",
+          "A két Németország."
+        ]
+      },
+      {
+        "title": "A hidegháború",
+        "altemak": [
+          "A szuperhatalmak versengése: fegyverkezés, űrprogram, propaganda.",
+          "A szembenállás és enyhülés hullámai.",
+          "Hidegháborús konfliktusok (Korea, Szuez, Kuba, Vietnam, Afganisztán)."
+        ]
+      },
+      {
+        "title": "A gyarmatok felszabadulása",
+        "altemak": [
+          "India függetlenné válása.",
+          "Kommunista fordulat Kínában.",
+          "A gyarmatbirodalmak felbomlása.",
+          "Izrael megalapítása."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "Egyesült Nemzetek Szervezete (ENSZ)",
+        "kitelepítés",
+        "hidegháború",
+        "vasfüggöny",
+        "szuperhatalom",
+        "Kölcsönös Gazdasági Segítség Tanácsa (KGST)",
+        "Észak-atlanti Szerződés Szervezete (NATO)",
+        "Varsói Szerződés",
+        "kétpólusú világ",
+        "a berlini fal"
+      ],
+      "szemelyek": [
+        "Kliment J. Vorosilov",
+        "Harry S. Truman",
+        "Nyikita Sz. Hruscsov",
+        "John F. Kennedy",
+        "Mahátma Gandhi",
+        "Mao Ce-tung"
+      ],
+      "kronologia": [
+        "1945 az ENSZ létrejötte",
+        "1947 a párizsi béke",
+        "a hidegháború kezdete",
+        "India függetlenné válása",
+        "1948 Izrael Állam megalapítása",
+        "1949 az NSZK és az NDK megalakulása",
+        "kommunista fordulat Kínában",
+        "1955 a Varsói Szerződés létrehozása"
+      ],
+      "topografia": [
+        "Berlin",
+        "Németországi Szövetségi Köztársaság (NSZK)",
+        "Német Demokratikus Köztársaság (NDK)",
+        "Közel-Kelet",
+        "Izrael Észak- és Dél-Korea",
+        "Vietnam",
+        "Kuba",
+        "Afganisztán"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::Háborútól forradalomig": {
+    "school": "K",
+    "title": "Háborútól forradalomig",
+    "temak": [
+      {
+        "title": "Az átmenet évei Magyarországon",
+        "altemak": [
+          "A háború utáni újrakezdés: a kommunisták térnyerése és az újjáépítés.",
+          "A történelmi berendezkedés felszámolása: földosztás, népbíróságok, köztársaság.",
+          "A korlátozott többpártrendszer: választások 1945, 1947."
+        ]
+      },
+      {
+        "title": "A szovjetizálás Magyarországon",
+        "altemak": [
+          "Az egypárti diktatúra kiépítése.",
+          "Államosítás és kollektivizálás.",
+          "Koncepciós perek, egyházüldözés.",
+          "A keleti blokk."
+        ]
+      },
+      {
+        "title": "A Rákosi-diktatúra",
+        "altemak": [
+          "Az erőltetett iparosítás.",
+          "A pártállam.",
+          "A terror.",
+          "A diktatúra hatása a mindennapi életre."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "népbíróság",
+        "háborús bűnös",
+        "földosztás",
+        "államosítás",
+        "forint",
+        "Magyar Kommunista Párt",
+        "Független Kisgazdapárt",
+        "szalámitaktika",
+        "Magyar Dolgozók Pártja",
+        " népköztársaság",
+        "pártállam",
+        "internálás",
+        "Államvédelmi Hatóság (ÁVH)",
+        "tanácsrendszer",
+        "beszolgáltatás",
+        "aranycsapat"
+      ],
+      "szemelyek": [
+        "Tildy Zoltán",
+        "Kovács Béla",
+        "Mindszenty József",
+        "Rákosi Mátyás",
+        "Rajk László",
+        "Sulyok Dezső",
+        "Slachta Margit"
+      ],
+      "kronologia": [
+        "1945 szovjet megszállás",
+        "választás Magyarországon",
+        "földosztás",
+        "1947 kékcédulás választások",
+        "1948 MDP megalakulása",
+        "1948–1956 a Rákosi-diktatúra",
+        "1949 kommunista alkotmány"
+      ],
+      "topografia": [
+        "Sztálinváros (Dunaújváros)",
+        "Recsk Hortobágy"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::Az 1956-os forradalom és szabadságharc": {
+    "school": "K",
+    "title": "Az 1956-os forradalom és szabadságharc",
+    "temak": [
+      {
+        "title": "A forradalom",
+        "altemak": [
+          "A forradalom okai és közvetlen előzményei.",
+          "A forradalom céljai.",
+          "Békés tüntetésből fegyveres felkelés – október 23.",
+          "A nemzet forradalma (Forradalmi Bizottságok, Munkástanácsok, nemzeti összefogás)."
+        ]
+      },
+      {
+        "title": "A nemzet szabadságharca",
+        "altemak": [
+          "Szabadságharc a fővárosban és vidéken.",
+          "A fegyveres ellenállás hősei.",
+          "Út a győzelemig és a kormánypolitika változásai.",
+          "A szabadságharc nemzetközi háttere és visszhangja a nagyvilágban.",
+          "Szovjet intervenció: a szabadságharc utóvédharcai és leverése."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "MEFESZ",
+        "pesti srácok",
+        "Molotov-koktél",
+        "munkástanács",
+        "sortüzek"
+      ],
+      "szemelyek": [
+        "Gerő Ernő",
+        "Maléter Pál",
+        "Nagy Imre",
+        "Iván Kovács László",
+        "Pongrátz Gergely",
+        "Kádár János"
+      ],
+      "kronologia": [
+        "1956. október 23. a forradalom kitörése",
+        "1956. október 25. a Kossuth téri sortűz",
+        "1956. november 4. a szovjet támadás"
+      ],
+      "topografia": [
+        "Kossuth tér és Corvin köz (Budapest)",
+        "Mosonmagyaróvár",
+        "Salgótarján"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A kádári diktatúra": {
+    "school": "K",
+    "title": "A kádári diktatúra",
+    "temak": [
+      {
+        "title": "A pártállami diktatúra és működése",
+        "altemak": [
+          "A megtorlások időszaka, formái és áldozatai.",
+          "A pártállam és szervezetei.",
+          "Az erőszakos téeszesítés – a mezőgazdaság szocialista átszervezése.",
+          "Hamis társadalmi béke – a kádári alku.",
+          "Az elnyomás változó formái."
+        ]
+      },
+      {
+        "title": "Gazdaság, társadalom, életmód",
+        "altemak": [
+          "A tervgazdaság és a KGST.",
+          "A gazdasági reform és a második gazdaság.",
+          "A „gulyáskommunizmus”.",
+          "Népesedési folyamatok.",
+          "Kultúrpolitika, korlátozott nyilvánosság."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "Magyar Szocialista Munkáspárt (MSZMP)",
+        "munkásőrség",
+        "Kommunista Ifjúsági Szövetség (KISZ)",
+        "úttörő",
+        "termelőszövetkezet",
+        "háztáji",
+        "III/III. ügyosztály",
+        "tervgazdaság",
+        "új gazdasági mechanizmus",
+        "hiánygazdaság",
+        "maszek",
+        "gulyáskommunizmus",
+        "„három T”"
+      ],
+      "szemelyek": [],
+      "kronologia": [
+        "1956–1989 a Kádár-rendszer",
+        "1958 Nagy Imre és társainak kivégzése",
+        "1968 az új gazdasági mechanizmus bevezetése"
+      ],
+      "topografia": []
+    },
+    "_elements_matched": true
+  },
+  "K::A kétpólusú világ és felbomlása": {
+    "school": "K",
+    "title": "A kétpólusú világ és felbomlása",
+    "temak": [
+      {
+        "title": "A Nyugat a 20. század második felében",
+        "altemak": [
+          "A Nyugat gazdasági eredményei és a jóléti állam.",
+          "Emancipáció, szekularizáció, individualizáció.",
+          "Az 1968-as mozgalmak és a popkultúra."
+        ]
+      },
+      {
+        "title": "A szocializmus válsága és megrendülése",
+        "altemak": [
+          "Az olajválság és hatásai a tőkés, illetve szocialista országokra.",
+          "A kis hidegháború.",
+          "A katonai egyensúly felborulása: a Szovjetunió gazdasági kimerülése.",
+          "Az ellenzék megszerveződése a szocialista országokban."
+        ]
+      },
+      {
+        "title": "A kétpólusú világ megszűnése",
+        "altemak": [
+          "Németország újraegyesítése – a magyar szerepvállalás.",
+          "A Szovjetunió felbomlása.",
+          "A kommunista diktatúrák bukása Közép-Európában.",
+          "Jugoszlávia felbomlása, a délszláv háború."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "jóléti állam",
+        "prágai tavasz",
+        "Szolidaritás"
+      ],
+      "szemelyek": [
+        "Nicolae Ceauşescu",
+        "Mihail Sz. Gorbacsov",
+        "Lech Wałȩsa",
+        "VI. Pál",
+        "II. János Pál",
+        "Ronald Reagan",
+        "Helmuth Kohl"
+      ],
+      "kronologia": [
+        "1975 a helsinki értekezlet",
+        "1989 a berlini fal lebontása",
+        "rendszerváltoztatás Közép-Európában",
+        "1991 a Szovjetunió felbomlása",
+        "1991–95 a délszláv háború"
+      ],
+      "topografia": [
+        "Szlovákia",
+        "Ukrajna"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A rendszerváltoztatás folyamata": {
+    "school": "K",
+    "title": "A rendszerváltoztatás folyamata",
+    "temak": [
+      {
+        "title": "A Kádár-rendszer végnapjai",
+        "altemak": [
+          "Az adósságválság kialakulása és következményei.",
+          "Az állampárt válsága: reformkommunisták és a keményvonalasok.",
+          "Az ellenzék megszerveződése",
+          "Az 1989-es év főbb politikai eseményei, a tárgyalásos forradalom; alkotmánymódosítás.",
+          "A harmadik Magyar Köztársaság kikiáltása."
+        ]
+      },
+      {
+        "title": "A rendszerváltoztatás",
+        "altemak": [
+          "Az új pártok – különböző ideológiák.",
+          "Az 1990. évi parlamenti és önkormányzati választás.",
+          "Az Antall-kormány megalakulása.",
+          "A rendszerváltoztatás ellentmondásai: alkuk és kompromisszumok (az elmaradt elszámoltatás)."
+        ]
+      },
+      {
+        "title": "A piacgazdaság kiépülése",
+        "altemak": [
+          "A privatizáció – vesztesek és nyertesek.",
+          "A piacgazdaság kiépítése – a külföldi tőke szerepe.",
+          "A külkereskedelem átalakulása.",
+          "Gazdasági szerkezetváltás."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "adósságspirál",
+        "Magyar Demokrata Fórum (MDF)",
+        "Szabad Demokraták Szövetsége (SZDSZ)",
+        "Magyar Szocialista Párt (MSZP)",
+        "Fiatal Demokraták Szövetsége (Fidesz)",
+        "Kereszténydemokrata Néppárt (KDNP)",
+        "Nemzeti Kerekasztal",
+        "rendszerváltoztatás",
+        "visegrádi együttműködés",
+        "privatizáció",
+        "kárpótlás",
+        "jogállam",
+        "Alkotmánybíróság",
+        "sarkalatos törvények",
+        "népszavazás"
+      ],
+      "szemelyek": [
+        "Pozsgay Imre",
+        "Németh Miklós",
+        "Horn Gyula",
+        "Antall József",
+        "Göncz Árpád",
+        "Orbán Viktor"
+      ],
+      "kronologia": [
+        "1987 a lakiteleki találkozó",
+        "1989–1990 a rendszerváltoztatás",
+        "1990 az első szabad választások",
+        "1991 a szovjet csapatok kivonulása Magyarországról"
+      ],
+      "topografia": []
+    },
+    "_elements_matched": true
+  },
+  "K::A világ a 21. században": {
+    "school": "K",
+    "title": "A világ a 21. században",
+    "temak": [
+      {
+        "title": "Az átalakuló világ",
+        "altemak": [
+          "A világgazdaság hagyományos centrumai: az Amerikai Egyesült Államok és szövetségesei.",
+          "A világpolitika és világgazdaság új súlypontjai: Oroszország, Kína.",
+          "Óriásvállalatok a globális térben."
+        ]
+      },
+      {
+        "title": "A globális világ",
+        "altemak": [
+          "Demográfiai változások, népmozgások.",
+          "Az iszlamizmus térhódítása.",
+          "A kereszténység helyzete a globalizálódó világban.",
+          "Válsággócok, helyi konfliktusok és terrorizmus.",
+          "Globalizáció és kultúra.",
+          "A hagyományos és új identitások – értékek és értékválság.",
+          "Demokratikus közbeszéd és politikai korrektség."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "modern kori migráció",
+        "multikulturalizmus",
+        "párhuzamos társadalom",
+        "népességrobbanás",
+        "iszlamizmus",
+        "terrorizmus",
+        "globalizáció"
+      ],
+      "szemelyek": [],
+      "kronologia": [],
+      "topografia": []
+    },
+    "_elements_matched": true
+  },
+  "K::Magyarország a 21. században": {
+    "school": "K",
+    "title": "Magyarország a 21. században",
+    "temak": [
+      {
+        "title": "A demokrácia működése Magyarországon",
+        "altemak": [
+          "Az Alaptörvény.",
+          "A hatalmi ágak és intézményeik, önkormányzati rendszer.",
+          "A választási rendszer."
+        ]
+      },
+      {
+        "title": "A magyar bel- és külpolitika főbb jellemzői",
+        "altemak": [
+          "A rendszerváltoztatás óta eltelt időszak főbb fordulópontjai.",
+          "Magyarország a NATO-ban.",
+          "Közép-európai együttműködés: a visegrádi négyek."
+        ]
+      },
+      {
+        "title": "Magyarország és az Európai Unió",
+        "altemak": [
+          "Az európai integráció főbb állomásai: mélyítés és bővítés.",
+          "Az Európai Unió főbb szervei és működésük.",
+          "Magyarország csatlakozásának folyamata.",
+          "Az együttműködés eredményei és nehézségei.",
+          "Nemzetek Európája vagy föderatív Európa?"
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "közvetett és közvetlen demokrácia",
+        "integráció",
+        "euró",
+        "Európai Unió",
+        "Európai Tanács",
+        "Európai Unió Tanácsa",
+        "Európai Parlament",
+        "Európai Bizottság",
+        "schengeni egyezmény"
+      ],
+      "szemelyek": [
+        "Magyarország miniszterelnökei a rendszerváltoztatás óta (a legalább négy évig hivatalban lévő kormányfők)"
+      ],
+      "kronologia": [
+        "1957 a római szerződés",
+        "1992 a maastrichti szerződés",
+        "1999 Magyarország belép a NATO-ba",
+        "2004 Magyarország belép az Európai Unióba",
+        "2012 az Alaptörvény bevezetése"
+      ],
+      "topografia": [
+        "Brüsszel"
+      ]
+    },
+    "_elements_matched": true
+  },
+  "K::A magyarság és a magyarországi nemzetiségek a 20-21. században": {
+    "school": "K",
+    "title": "A magyarság és a magyarországi nemzetiségek a 20-21. században",
+    "temak": [
+      {
+        "title": "A határon túli magyarok",
+        "altemak": [
+          "A politikai rendszerek változásai és hatásaik a magyar kisebbség helyzetére.",
+          "Demográfiai jellemzők és folyamatok.",
+          "Az asszimilációs politika megnyilvánulásai.",
+          "Autonómia és kisebbségi jogok kérdése.",
+          "Anyanyelvű oktatás és kultúra.",
+          "Magyarok a nagyvilágban – a szórványmagyarság."
+        ]
+      },
+      {
+        "title": "A magyarországi nemzetiségek, a magyarországi cigányság",
+        "altemak": [
+          "A politikai rendszerek változásai és hatásaik a nemzetiségek helyzetére.",
+          "A cigányok/romák 20–21. századi története.",
+          "Demográfiai jellemzők és folyamatok.",
+          "Kulturális autonómia és kisebbségi jogok a mai Magyarországon.",
+          "Anyanyelvű oktatás és kultúra."
+        ]
+      }
+    ],
+    "elements": {
+      "fogalmak": [
+        "kitelepítés",
+        "Beneš-dekrétum",
+        "lakosságcsere",
+        "falurombolás",
+        "kettős állampolgárság",
+        "diszkrimináció"
+      ],
+      "szemelyek": [
+        "Esterházy János",
+        "Márton Áron",
+        "Tőkés László"
+      ],
+      "kronologia": [
+        "1944–1945 magyarellenes atrocitások",
+        "1990 fekete március"
+      ],
+      "topografia": [
+        "Csúrog",
+        "Jarek",
+        "Duna-delta",
+        "Marosvásárhely",
+        "Székelyföld"
+      ]
+    },
+    "_elements_matched": true
+  }
+}

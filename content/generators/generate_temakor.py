@@ -1,47 +1,91 @@
 """
-Témakör generator (NAT 3-tier vertical slice).
-Generates, for one Témakör (Topic), per-Téma (Lesson) content driven by the
-official NAT mandatory elements, in Hungary-centered framing, plus a "Világ ekkor"
-global layer per lesson and an end-of-topic comprehensive quiz. Level = alap.
-Writes to content_blocks. Hardcoded for the WWI slice (HIST-78-VH1).
+Témakör generator (NAT 3-tier model) — generalized for ANY History Témakör.
+
+For one Témakör (Topic) it generates, per Téma (Lesson), the 4 modes + a
+"Világ ekkor" global layer, plus an end-of-topic comprehensive quiz. Content is
+driven by the official NAT mandatory elements, Hungary-centered. Level = alap.
+
+Témák + Altémák come from content/nat_curriculum/history_nat2020_temak.json
+(parsed from the docx by parse_nat_temak.py). The Témakör's mandatory elements
+are distributed across its Témák by an LLM pass (replaces the old hardcoded DIST).
+
+Usage:
+    python generate_temakor.py --nat-id HIST-78-VH1     # one topic
+    python generate_temakor.py --nat-id HIST-78-VH1 --no-validate
 """
-import os, json, asyncio, httpx
+import os, json, asyncio, argparse, httpx
 from dotenv import load_dotenv
 
 load_dotenv(os.path.join(os.path.dirname(__file__), "../../backend/.env"))
 SB = os.getenv("SUPABASE_URL"); SVC = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
 RK = os.getenv("OPENROUTER_API_KEY")
-MODEL = "openai/gpt-4o-mini"
+MODEL = "openai/gpt-4o-mini"            # bulk generation (cheap)
+DIST_MODEL = "openai/gpt-4o"           # element distribution (precision matters)
 OR = "https://openrouter.ai/api/v1/chat/completions"
 H_OR = {"Authorization": f"Bearer {RK}", "Content-Type": "application/json",
         "HTTP-Referer": "https://turul.academy", "X-Title": "Turul"}
 H_SB = {"apikey": SVC, "Authorization": f"Bearer {SVC}", "Content-Type": "application/json"}
+TEMAK_MAP = os.path.join(os.path.dirname(__file__), "../nat_curriculum/history_nat2020_temak.json")
 
-TOPIC_NAT = "HIST-78-VH1"
 SYS = ("Te egy tapasztalt magyar történelemtanár és tananyagfejlesztő vagy. A magyar nemzet és "
        "Magyarország története áll a középpontban; az egyetemes történelmet ehhez kapcsolva, magyar "
        "nézőpontból mutatod be (NAT 2020). Minden szöveg KIZÁRÓLAG magyar nyelven, idegen szavak nélkül, "
        "tényszerűen pontos. CSAK érvényes JSON-t adsz vissza.")
 
-# Mandatory NAT elements distributed across the 3 Témák (historically correct partition)
-DIST = {
- "HIST-78-VH1-T1": {"fogalmak":["antant","központi hatalmak","front","állóháború","hátország"],
-                    "szemelyek":["Tisza István"], "kronologia":["1914–1918 (az első világháború)"],
-                    "topografia":["Szarajevó","Szerbia","Doberdó"]},
- "HIST-78-VH1-T2": {"fogalmak":["bolsevik","tanácsköztársaság","vörösterror","fehér különítményes megtorlások"],
-                    "szemelyek":["Lenin","Károlyi Mihály","Horthy Miklós"], "kronologia":["1917 (a bolsevik hatalomátvétel)"],
-                    "topografia":[]},
- "HIST-78-VH1-T3": {"fogalmak":["kisantant"], "szemelyek":[], "kronologia":["1920. június 4. (a trianoni békediktátum)"],
-                    "topografia":["Kárpátalja","Felvidék","Délvidék","Burgenland","Erdély","Csehszlovákia","Jugoszlávia","Románia","Ausztria"]},
-}
+CATS = ("fogalmak", "szemelyek", "kronologia", "topografia")
+
+
+def school_of_grade(grade):
+    return "F" if (grade or 0) <= 8 else "K"
+
+
+def lookup_temakor(title_hu, grade):
+    """Find the parsed Témakör entry for a DB topic (by school + title)."""
+    m = json.load(open(TEMAK_MAP, encoding="utf-8"))
+    sc = school_of_grade(grade)
+    key = f"{sc}::{title_hu.strip()}"
+    if key in m:
+        return m[key]
+    # fallback: unique title match ignoring school
+    cands = [v for v in m.values() if v["title"].strip().lower() == title_hu.strip().lower()]
+    return cands[0] if cands else None
+
+
+async def distribute_elements(c, temakor, temak, elements):
+    """LLM assigns each mandatory element to the Téma(s) it best fits.
+    Returns {tema_title: {fogalmak,szemelyek,kronologia,topografia}} covering ALL elements."""
+    temak_desc = "\n".join(f'- „{t["title"]}” (altémák: {"; ".join(t["altemak"]) or "—"})' for t in temak)
+    el_desc = elem_block(elements)
+    out = await ai(c,
+        f"Témakör: „{temakor}”.\nA témakör Témái (leckéi):\n{temak_desc}\n\n"
+        f"A témakör kötelező NAT-elemei:\n{el_desc}\n\n"
+        "Oszd szét MINDEN kötelező elemet a Témák között: minden elem ahhoz a Témához kerüljön, "
+        "amelyikbe történelmileg/tematikailag a legjobban illik. MINDEN elemet pontosan egy Témához rendelj, "
+        "és EGYETLEN elem se maradjon ki. CSAK a megadott Téma-címeket használd kulcsként.\n"
+        'JSON: {"<Téma cím>": {"fogalmak":[],"szemelyek":[],"kronologia":[],"topografia":[]}}',
+        temp=0, maxtok=2000, sys="Magyar történelem tananyagfejlesztő vagy. Csak JSON-t adsz vissza.",
+        model=DIST_MODEL)
+    # ensure completeness: any unassigned element -> first Téma
+    assigned = {cat: set() for cat in CATS}
+    for v in out.values():
+        for cat in CATS:
+            assigned[cat].update(v.get(cat, []) or [])
+    first = temak[0]["title"]
+    out.setdefault(first, {cat: [] for cat in CATS})
+    for cat in CATS:
+        for el in elements.get(cat, []):
+            if el not in assigned[cat]:
+                out[first].setdefault(cat, []).append(el)
+    return out
+
 
 def elem_block(d):
     def fmt(k, label): return f"{label}: {', '.join(d[k])}" if d[k] else ""
     return "\n".join(x for x in [fmt('fogalmak','Fogalmak'), fmt('szemelyek','Személyek'),
                                  fmt('kronologia','Kronológia'), fmt('topografia','Topográfia')] if x)
 
-async def ai(c, prompt, temp=0.55, maxtok=3200, sys=SYS):
-    r = await c.post(OR, headers=H_OR, json={"model":MODEL,"max_tokens":maxtok,"temperature":temp,
+async def ai(c, prompt, temp=0.55, maxtok=3200, sys=SYS, model=MODEL):
+    r = await c.post(OR, headers=H_OR, json={"model":model,"max_tokens":maxtok,"temperature":temp,
         "messages":[{"role":"system","content":sys},{"role":"user","content":prompt}]}, timeout=120)
     r.raise_for_status()
     raw = r.json()["choices"][0]["message"]["content"].strip()
@@ -70,17 +114,15 @@ def prompt(mode, temakor, tema, altemak, eb):
             'KERÜLENDŐ az ismétlése. Ehelyett azt mutasd be, MILYEN VOLT és MIT JELENTETT a kor hétköznapja a korabeli egyszerű '
             'magyar emberek számára. '
             'LÉNYEG: minden kártya az élet EGY MÁS TERÜLETÉT mutassa be — NE ugyanazt a jelenetet meséld el több szereplő '
-            'szemszögéből, hanem a mindennapi élet KÜLÖNBÖZŐ ÁGAIT járd körül. Példák a lefedendő, eltérő területekre (válassz '
-            'közülük, ne ismételd): a frontkatonák mindennapjai (lövészárok, sovány fejadag, honvágy, a családtól való elszakadás); '
-            'a hátország asszonyai (sorbanállás az élelemért, a férfiak helyét átvevő gyári munka); a kormányzat és a hivatalok '
-            'nehézségei (jegyrendszer, hadigazdálkodás megszervezése); a gazdaság és a hadiipar terhei (a parasztok és az '
-            'ellátási lánc, rekvirálás, nyersanyaghiány); a gyerekek és az iskola háborús hétköznapjai; a sebesültek, kórházak, '
-            'járványok. '
-            'Névtelen, de VALÓS, dokumentált korabeli körülményeken alapuló, REPREZENTATÍV alanyokat használj '
-            '(pl. „a doberdói lövészárokban szolgáló honvédek”, „a hátországban maradt asszonyok”, „a falusi gazdák”); kitalált, '
-            'NEVESÍTETT történelmi személyt SOHA ne találj ki. Érzékletes, anyagi és érzelmi valóság. '
-            'Ahol természetes, kösd a kötelező fogalmakat az ÁTÉLT valóságukhoz (pl. állóháború → a lövészárok-lét; '
-            'hátország → az otthon maradtak élete). 5-8 kártya, mindegyik MÁS témáról.\n'
+            'szemszögéből, hanem a mindennapi élet KÜLÖNBÖZŐ ÁGAIT járd körül. Példák a lefedhető, EGYMÁSTÓL ELTÉRŐ '
+            'életterületekre (a KORSZAKHOZ igazítva válassz, ne ismételd): a munka és megélhetés mindennapjai (földművelés, '
+            'mesterség, kereskedelem vagy gyári munka — a kor szerint); a család, az otthon és a táplálkozás; a hatalom, a '
+            'hivatalok és a helyi közösség viszonya; a hit, az ünnepek és a szokások; a gyermekek, a nevelés és az iskola; a '
+            'betegség, a járvány és a gyógyítás; válság vagy háború hatása a hétköznapokra, ha a téma ezt indokolja. '
+            'Névtelen, de VALÓS, dokumentált korabeli körülményeken alapuló, REPREZENTATÍV, a korszakhoz illő alanyokat '
+            'használj (pl. egy parasztcsalád, egy város kézművesei, katonák, asszonyok, gyermekek); kitalált, NEVESÍTETT '
+            'történelmi személyt SOHA ne találj ki. Érzékletes, anyagi és érzelmi valóság. '
+            'Ahol természetes, kösd a kötelező fogalmakat az ÁTÉLT valóságukhoz. 5-8 kártya, mindegyik MÁS életterületről.\n'
             'JSON: {"title":"","cards":[{"type":"story","heading":"","body":"","mood":"melyik életterületet mutatja be (pl. front, hátország, gazdaság)"}]}')
     if mode == "visual":
         return head + ('\nKészíts VIZUÁLIS leckét: minden fő elemhez egy szemléltető elem (idővonal/térkép/diagram/arckép) leírása, '
@@ -98,69 +140,106 @@ def prompt(mode, temakor, tema, altemak, eb):
             "konkrét következményt vagy mechanizmust, amely a globális eseménytől EZEN LECKE magyar tárgyáig vezet — valódi okozati "
             "vagy összefüggés-láncot. "
             "Ha hatásról írsz, MINDIG mondd meg, MI volt az a konkrét hatás — ne állj meg ott, hogy „jelentős hatással volt” vagy "
-            "„befolyásolta a helyzetet”. Példa a rossz (homályos) vs. jó (konkrét) megfogalmazásra: rossz: „befolyásolta a magyar "
-            "katonák harci helyzetét”; jó: „a felszabaduló német erőket nyugatra vezényelték, így sok magyar katonát a hazájától "
-            "több száz kilométerre, az olasz vagy nyugati fronton vetettek be”. Felső szintű tények kellenek, nem mély elbeszélés. "
+            "„befolyásolta a helyzetet”, hanem nevezd meg a konkrét következményt vagy mechanizmust (mi, hol, hogyan). "
+            "Felső szintű tények kellenek, nem mély elbeszélés. "
             "TILOS az általános, sablonos megfogalmazás (pl. „alapvetően formálta Magyarország jövőjét”, „közvetlenül érintett volt”, "
             "„meghatározta a helyzetét”). "
-            "Ügyelj a pontosságra (pl. Magyarország I. világháborút lezáró békeszerződése a TRIANONI, 1920. június 4. — NEM a versailles-i). "
+            "Ügyelj a tárgyi pontosságra (helyes évszámok, békeszerződések, személyek — ne keverd össze őket). "
             "Ez kiegészítő, érdeklődő tanulóknak szóló réteg, nem kötelező tananyag. 4-6 kártya.\n"
             'JSON: {"title":"Világ ekkor","cards":[{"type":"world","year":"az adott esemény saját évszáma","heading":"","body":"","link_hu":"konkrét ok-okozati kapcsolat e lecke magyar anyagához"}]}')
 
-async def main():
-    async with httpx.AsyncClient() as c:
-        # fetch topic + lessons
-        t = (await c.get(f"{SB}/rest/v1/curriculum_topics?nat_id=eq.{TOPIC_NAT}&select=id,title_hu", headers=H_SB)).json()[0]
-        topic_id, temakor = t["id"], t["title_hu"]
-        lessons = (await c.get(f"{SB}/rest/v1/curriculum_lessons?topic_id=eq.{topic_id}&select=id,nat_id,title_hu&order=order_index", headers=H_SB)).json()
-        # clean slate for this topic
-        await c.request("DELETE", f"{SB}/rest/v1/content_blocks?topic_id=eq.{topic_id}", headers=H_SB)
-        for L in (await c.get(f"{SB}/rest/v1/curriculum_lessons?topic_id=eq.{topic_id}&select=id", headers=H_SB)).json():
-            await c.request("DELETE", f"{SB}/rest/v1/content_blocks?lesson_id=eq.{L['id']}", headers=H_SB)
+async def ensure_lessons(c, topic_id, topic_nat, temak):
+    """Idempotently create curriculum_lessons (Témák) from the parsed map, matched by title."""
+    existing = (await c.get(f"{SB}/rest/v1/curriculum_lessons?topic_id=eq.{topic_id}&select=id,nat_id,title_hu&order=order_index", headers=H_SB)).json()
+    have = {L["title_hu"].strip() for L in existing}
+    for i, tm in enumerate(temak, start=1):
+        if tm["title"].strip() in have:
+            continue
+        payload = {"topic_id": topic_id, "nat_id": f"{topic_nat}-T{i}", "title": tm["title"],
+                   "title_hu": tm["title"], "order_index": i, "is_active": False}
+        await c.post(f"{SB}/rest/v1/curriculum_lessons", headers={**H_SB, "Prefer": "return=minimal"}, json=payload)
+    return (await c.get(f"{SB}/rest/v1/curriculum_lessons?topic_id=eq.{topic_id}&select=id,nat_id,title_hu&order=order_index", headers=H_SB)).json()
 
-        async def save(lesson_id, mode, scope, obj):
-            cards = obj.get("cards", obj) if isinstance(obj, dict) else obj
-            payload = {"lesson_id":lesson_id, "topic_id":topic_id, "mode":mode, "level":"alap",
-                       "scope":scope, "content":cards, "review_status":"approved", "is_active":True}
-            await c.post(f"{SB}/rest/v1/content_blocks", headers={**H_SB,"Prefer":"return=minimal"}, json=payload)
 
-        for L in lessons:
-            d = DIST[L["nat_id"]]; eb = elem_block(d)
-            print(f"\n📘 {L['title_hu']}")
-            for mode in ["text","story","visual","quiz","world"]:
-                try:
-                    obj = await ai(c, prompt(mode, temakor, L["title_hu"], "—", eb))
-                    obj = await proof(c, obj)
-                    await save(L["id"], mode, "lesson", obj)
-                    print(f"   ✓ {mode} ({len(obj.get('cards',[]))} kártya)")
-                except Exception as e:
-                    print(f"   ⚠ {mode}: {e}")
+async def generate_topic(c, topic_nat, validate=True):
+    t = (await c.get(f"{SB}/rest/v1/curriculum_topics?nat_id=eq.{topic_nat}&select=id,title_hu,grade", headers=H_SB)).json()
+    if not t:
+        print(f"⚠ topic {topic_nat} not found in curriculum_topics"); return
+    t = t[0]; topic_id, temakor = t["id"], t["title_hu"]
+    nat = lookup_temakor(temakor, t.get("grade"))
+    if not nat:
+        print(f"⚠ no NAT map entry for „{temakor}” (grade {t.get('grade')})"); return
+    temak = nat["temak"]; elements = nat["elements"]
 
-        # end-of-topic comprehensive quiz (all elements)
-        all_eb = "\n".join(elem_block(d) for d in DIST.values())
-        print("\n🎯 Témazáró kvíz")
-        try:
-            q = await ai(c, f"Témakör: „{temakor}”.\nKészíts 8 kérdéses ÁTFOGÓ TÉMAZÁRÓ kvízt, amely az egész témakör "
-                f"alábbi kötelező NAT-elemeit kéri számon, vegyesen:\n{all_eb}\nMinden kérdéshez rövid magyarázat.\n"
-                'JSON: {"title":"Témazáró kvíz","cards":[{"type":"quiz","question_type":"multiple_choice","question":"","options":["A) ","B) ","C) ","D) "],"correct":"A","explanation":""}]}',
-                maxtok=3500)
-            q = await proof(c, q)
-            await save(None, "quiz", "topic", q)
-            print(f"   ✓ témazáró kvíz ({len(q.get('cards',[]))} kérdés)")
-        except Exception as e:
-            print(f"   ⚠ témazáró: {e}")
+    lessons = await ensure_lessons(c, topic_id, topic_nat, temak)
+    by_title = {L["title_hu"].strip(): L for L in lessons}
+
+    print(f"\n🗂️  {temakor}  ({len(temak)} Téma)")
+    dist = await distribute_elements(c, temakor, temak, elements)
+    print("   ✓ elemszétosztás kész")
+
+    # clean slate for this topic
+    await c.request("DELETE", f"{SB}/rest/v1/content_blocks?topic_id=eq.{topic_id}", headers=H_SB)
+    for L in lessons:
+        await c.request("DELETE", f"{SB}/rest/v1/content_blocks?lesson_id=eq.{L['id']}", headers=H_SB)
+
+    async def save(lesson_id, mode, scope, obj):
+        cards = obj.get("cards", obj) if isinstance(obj, dict) else obj
+        payload = {"lesson_id": lesson_id, "topic_id": topic_id, "mode": mode, "level": "alap",
+                   "scope": scope, "content": cards, "review_status": "approved", "is_active": True}
+        await c.post(f"{SB}/rest/v1/content_blocks", headers={**H_SB, "Prefer": "return=minimal"}, json=payload)
+
+    for tm in temak:
+        L = by_title.get(tm["title"].strip())
+        if not L:
+            print(f"   ⚠ lecke nem található: {tm['title']}"); continue
+        d = dist.get(tm["title"].strip(), dist.get(tm["title"], {cat: [] for cat in CATS}))
+        eb = elem_block(d)
+        altemak = "; ".join(tm["altemak"]) or "—"
+        print(f"\n📘 {tm['title']}")
+        for mode in ["text", "story", "visual", "quiz", "world"]:
+            try:
+                obj = await ai(c, prompt(mode, temakor, tm["title"], altemak, eb))
+                obj = await proof(c, obj)
+                await save(L["id"], mode, "lesson", obj)
+                print(f"   ✓ {mode} ({len(obj.get('cards',[]))} kártya)")
+            except Exception as e:
+                print(f"   ⚠ {mode}: {e}")
+
+    # end-of-topic comprehensive quiz (all elements)
+    all_eb = elem_block(elements)
+    print("\n🎯 Témazáró kvíz")
+    try:
+        q = await ai(c, f"Témakör: „{temakor}”.\nKészíts 8 kérdéses ÁTFOGÓ TÉMAZÁRÓ kvízt, amely az egész témakör "
+            f"alábbi kötelező NAT-elemeit kéri számon, vegyesen:\n{all_eb}\nMinden kérdéshez rövid magyarázat.\n"
+            'JSON: {"title":"Témazáró kvíz","cards":[{"type":"quiz","question_type":"multiple_choice","question":"","options":["A) ","B) ","C) ","D) "],"correct":"A","explanation":""}]}',
+            maxtok=3500)
+        q = await proof(c, q)
+        await save(None, "quiz", "topic", q)
+        print(f"   ✓ témazáró kvíz ({len(q.get('cards',[]))} kérdés)")
+    except Exception as e:
+        print(f"   ⚠ témazáró: {e}")
     print("\n✅ Done.")
 
-    # ---- guard rail: validate the freshly generated topic ----
-    try:
-        import validate_temakor as V
-        rep = await V._run(TOPIC_NAT)
-        rep["topic"]["nat_id"] = TOPIC_NAT
-        rep["verdict"] = V._verdict(rep)
-        print("\n" + "=" * 60 + "\n🛡️  GUARD RAIL\n" + "=" * 60)
-        print(V._report_md(rep))
-        print(f"\n→ GUARD RAIL: {rep['verdict']}")
-    except Exception as e:
-        print(f"⚠ validáció kihagyva: {e}")
+    if validate:
+        try:
+            import validate_temakor as V
+            rep = await V._run(topic_nat)
+            rep["topic"]["nat_id"] = topic_nat
+            rep["verdict"] = V._verdict(rep)
+            print("\n" + "=" * 60 + "\n🛡️  GUARD RAIL\n" + "=" * 60)
+            print(V._report_md(rep))
+            print(f"\n→ GUARD RAIL: {rep['verdict']}")
+        except Exception as e:
+            print(f"⚠ validáció kihagyva: {e}")
+
+
+async def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--nat-id", required=True, help="curriculum_topics.nat_id, e.g. HIST-78-VH1")
+    ap.add_argument("--no-validate", action="store_true")
+    args = ap.parse_args()
+    async with httpx.AsyncClient() as c:
+        await generate_topic(c, args.nat_id, validate=not args.no_validate)
 
 asyncio.run(main())
