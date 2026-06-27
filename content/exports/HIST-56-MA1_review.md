@@ -33,20 +33,20 @@ Lengyelország és Csehország középkori története szorosan összefonódik M
 
 ### 🎭 Történet
 
-**Földművelés és a megélhetés mindennapjai** _(gazdaság)_
-A falusi élet középpontjában a földművelés állt. A parasztcsaládok minden tavaszban megkezdték a vetést, ami a megélhetésük alapját képezte. Az aranyforint bevezetése révén a kereskedelem fellendült, így a falusiak is új lehetőségekhez jutottak. A termények eladásával nemcsak a napi betevőjüket biztosították, hanem a család jövőjét is. A kora nyári hónapokban a szüret időszakát várták, amikor a felnőttek és a gyerekek együtt dolgoztak a földeken, hogy a bőséges termésből minél többet takarítsanak be.
+**A földművelés mindennapjai** _(gazdaság)_
+A falusi emberek a földeken dolgoztak, a termékeny talaj terményeit aratták. A földművesek a vetés és aratás időszakában közösen dolgoztak, hogy a családjaiknak elegendő élelmet biztosítsanak. A munka kemény volt, de a közös erőfeszítések erős közösségi kötelékeket alakítottak ki. Az aranyforint, amelyet Károly indított el, a kereskedelemben egyre fontosabbá vált, lehetővé téve, hogy a falusiak a városokban is vásárolhassanak.
 
-**Családi élet és táplálkozás** _(otthon)_
-A parasztcsaládok életében a család középponti szerepet játszott. Az étkezések közös élmények voltak, ahol a frissen készített ételek mellett meséltek egymásnak a napi eseményekről. A bőségesebb években, amikor a termés jó volt, az asztalon megjelentek a húsételek is, de a szegényebb időszakokban a kenyér és a zöldségek voltak a fő táplálék. Ünnepekkor, mint például Szent Mihály napján, különleges ételeket készítettek, hogy megünnepeljék a jó termést és a családi összetartozást.
+**A család és az otthon** _(család)_
+A falusi asszonyok a háztartás körüli teendőkkel foglalkoztak, gyermekeiket nevelték, és a családi tűzhelyet fűtötték. Az ünnepek, mint például a betakarítás ünnepe, különleges alkalmak voltak, amikor a közösség együtt ünnepelt. A hagyományos ételek, mint a kenyér és a leves, alapvető részét képezték a mindennapi étrendnek. A családok számára a közös étkezések erősítették a kötelékeket.
 
-**Helyi közösség és hatalom** _(hatalom)_
-A falusi közösségek életét a helyi elöljárók és a földesurak irányították. A községi gyűlések fontos szerepet játszottak a közösség életében, ahol a helyi problémákat vitatták meg. Az emberek gyakran összegyűltek a faluház előtt, hogy megosszák egymással a híreket, és megoldásokat keressenek a mindennapi kihívásokra. A helyi közösség összetartása segített abban, hogy a nehéz időszakokat is együtt átvészeljék.
+**A hit és a szokások** _(hit)_
+A falusi emberek mindennapjaikban szoros kapcsolatban álltak hitélettel. Az egyház fontos szerepet játszott a közösségi életben, a templomi ünnepek pedig alkalmat adtak a közös imádságra és az összejövetelre. A hívők gyakran hoztak áldozatokat, hogy a jó termésért és a családjuk egészségéért könyörögjenek. A helyi közösség összetartó ereje a hitben gyökerezett.
 
-**Hit és ünnepek** _(hit)_
-A vallás fontos szerepet játszott a mindennapi életben. A falusiak rendszeresen látogatták a templomot, ahol közösen imádkoztak és ünnepelték a keresztény ünnepeket. Karácsonykor és húsvétkor különleges szokások alakultak ki, amelyeken a családok együtt vettek részt. A közös ünneplés megerősítette a közösségi kötelékeket, és a hívők számára reményt adott a nehéz időkben.
+**A gyermekek nevelése** _(nevelés)_
+A gyermekek nevelése a falusi életben kiemelt fontosságú volt. Az idősebbek a fiatalokat tanították a földművelésre, a mesterségekre és a hagyományokra. A gyerekek szabadidejüket a szabadban töltötték, játszottak, miközben a felnőttek munkájukat végezték. A tudás átadása nemcsak a családok, hanem a közösség jövőjét is biztosította.
 
-**Gyermekek és nevelés** _(gyermekek)_
-A gyermekek nevelése a családokban zajlott, ahol a szülők a mindennapi munkák mellett tanították meg őket a földművelésre és a mesterségekre. A gyerekek a mezőn segítettek a szüleiknek, de emellett játszani is volt idejük. Az iskola, ha volt a faluban, a legfontosabb tudásokat adta át, de a tanulás sokszor a szülők életmódjához igazodott. A gyerekek megtanulták, hogy a közösségért felelősséggel tartoznak, és a szokások tisztelete a mindennapjaik része volt.
+**A kereskedelem fejlődése** _(kereskedelem)_
+A városokban a kereskedők és mesterek virágzó üzleteket vezettek, a vásárok pedig fontos találkozóhelyekké váltak. Az aranyforint bevezetése lehetővé tette, hogy a kereskedelem fellendüljön, és a falusi emberek is részt vehessenek a városi életben. Az áruk cseréje új lehetőségeket teremtett a mindennapi életben, és a kereskedők közvetítő szerepe fontos volt a közösségek között.
 
 ### 🗺️ Vizuális
 
@@ -160,20 +160,20 @@ A szekérvárak a középkori hadviselés egyik formája volt, amelyet Hunyadi J
 
 ### 🎭 Történet
 
-**A földművesek mindennapjai** _(gazdaság)_
-A nándorfehérvári diadal előtti hónapokban a falusi parasztok, mint Péter és családja, fáradhatatlanul dolgoztak a földeken. A tavaszi napsütésben vetették el a búzát, és a nyári hónapokban gondosan öntözték a termést. Az ősz beköszöntével, amikor a betakarítás ideje elérkezett, a falusiak összefogtak, hogy közösen végezzék el a munkát. Az élelem nemcsak a családjuk, hanem a közösségük megélhetését is biztosította. A hírek, hogy a törökök közelednek, aggodalommal töltötték el őket, de a földjük megművelése és a közösség támogatása mindennapi életük középpontjában állt.
+**A földművelők mindennapjai** _(gazdaság)_
+A falusi emberek a földeken dolgoztak, hogy megtermeljék a családjuk számára szükséges élelmiszert. A tavaszi munkák során a vetés és a szántás volt a középpontban. A felnőttek mellett a gyermekek is segítettek, hiszen a közös munka összekovácsolta a családokat. Az élelem megtermelése nemcsak a megélhetésüket biztosította, hanem a közösségük fenntartását is, amelyre a háborús időkben különösen nagy szükség volt, hiszen a háború közelsége miatt a biztonságérzetük is megrendült.
 
-**A mesterek és a kereskedők élete** _(kereskedelem)_
-A városban, ahol a kereskedők és kézművesek éltek, mint például Anna, a fazekas, a mindennapok pezsgése jellemezte az életet. A mesterek a piacon árulták portékáikat, míg a vásárlók a legjobb árakat keresték. A hírek a háborúról és a törökök támadásáról eljutottak hozzájuk, de Anna azzal foglalkozott, hogy a legszebb fazekakat készítse el. Az emberek a kereskedelem révén élték meg a napi kihívásokat, és a közösség összetartása segítette őket a nehéz időkben.
+**A kézművesek mestersége** _(gazdaság)_
+A falvakban a kézművesek, mint például a kovácsok és fazekasok, nagy tiszteletnek örvendtek. Munkájuk nemcsak a helyi közösség számára volt fontos, hanem a háború idején a hadsereg ellátásában is szerepet játszottak. A kovácsok fegyvereket és páncélokat készítettek, míg a fazekasok edényeket és egyéb használati tárgyakat készítettek. A mesterségük gyakorlása mellett közösségi életük is virágzott, hiszen a munka során sokszor gyűltek össze a falubeliek, hogy megosszák egymással a híreket és tapasztalatokat.
 
-**A család és a táplálkozás** _(otthon)_
-A falusi családok, mint a Nagy család, otthonukban főztek, és az étkezések során a közös étkezés hagyománya erősítette a családi kötelékeket. A levesek és a kenyeret kísérő zöldségek a mindennapi táplálékuk alapját képezték. A szüret időszakában a gyümölcsök és zöldségek bősége örömet hozott, de a háború híre, amely a közelben zajlott, félelmet is keltett. Mégis, a közös étkezések során a gyerekeknek meséltek a hősökről és a vitéz tettekről, ami reményt adott számukra.
+**A családok otthona** _(család)_
+A falusi asszonyok otthonukban a családjuk mindennapi szükségleteit látták el. A háztartás vezetése során a főzés, a varrás és a gyermeknevelés volt a középpontban. Az ételek egyszerűek voltak, de a családi ünnepek, mint a szüret vagy a háború győzelme, különleges alkalmakat teremtettek a közös étkezésekre. Az otthon melegét és biztonságát a családi kötelékek biztosították, amelyek a nehéz időkben is összetartották az embereket.
 
-**A hit és az ünnepek szerepe** _(hit és szokások)_
-A falvakban az emberek szoros kapcsolatban álltak a vallásukkal. Mária, a helyi asszony, minden vasárnap részt vett a misén, ahol közösen imádkoztak a békéért és a védelmező szentekhez fohászkodtak. Az ünnepek, mint a húsvét és a karácsony, különleges alkalmak voltak, amikor a közösség összegyűlt, hogy együtt ünnepeljenek és erősítsék a kötelékeket. A háború hírei miatt sokan aggódtak, de a hit és az ünnepek adtak nekik erőt a mindennapokhoz.
+**A hit és a közösségi élet** _(hit)_
+A falusi közösségekben a hit fontos szerepet játszott. Az emberek rendszeresen részt vettek a templomi szertartásokon, ahol imádkoztak a békéért és a biztonságért. Az ünnepek, mint például a karácsony és a húsvét, különleges alkalmak voltak, amikor a közösség összegyűlt, hogy közösen ünnepeljenek. A vallásos hiedelmek és hagyományok erősítették a közösségi összetartást, különösen a háborús időszakokban, amikor a félelem és a bizonytalanság mindennapos volt.
 
-**A gyermekek nevelése és iskolázás** _(nevelés)_
-A falvakban a gyermekek, mint János és László, a szüleik mellett dolgoztak, de az iskolába is jártak, ahol a helyi pap tanította őket. Az írás és olvasás elsajátítása mellett a történetek, amelyeket a gyerekek hallottak a hősökről és a vitézi tettekről, mély hatással voltak rájuk. A háború közeledte miatt sok család aggódott a jövőjükért, de a tudás megszerzése és a közösség támogatása reményt adott a fiataloknak.
+**A gyermekek nevelése** _(nevelés)_
+A gyermekek nevelése a falvakban a családok felelőssége volt. A fiatalok a szülőktől tanulták meg a mesterségeket és a földművelés fortélyait. Az iskolák, ahol léteztek, sokszor a templomok mellett működtek, és a tanulás mellett a vallási oktatás is fontos szerepet játszott. A gyermekek számára a játékok és szórakozás mellett a munka is része volt a mindennapoknak, hiszen a felnőttekhez hasonlóan ők is hozzájárultak a család megélhetéséhez.
 
 ### 🗺️ Vizuális
 
@@ -283,20 +283,20 @@ I. Mátyás uralkodása alatt Magyarország a középkori Európa egyik legfonto
 
 ### 🎭 Történet
 
-**Egy parasztcsalád mindennapjai** _(gazdaság)_
-Egy kis faluban, ahol a földművelés volt a fő megélhetési forrás, egy parasztcsalád élt. Reggelente korán keltek, hogy megkezdjék a munkát a földeken. A család apja, János, a szántóföldeken dolgozott, míg az anyja, Anna, a ház körüli teendőket végezte. A gyerekek, Péter és Ilona, segítettek a kisebb feladatokban, mint a vetés és a takarítás. Az élelem nagy része a saját földjük terméséből származott, de a közeli városban is vásároltak alapanyagokat, mint sót és lisztet. Mátyás uralkodása alatt a földművesek élete nehezedett a zsoldosok megjelenésével, akik gyakran elvették a termést, így a családnak meg kellett küzdenie a megélhetésért.
+**A földművelők mindennapjai** _(gazdaság)_
+A falusi emberek reggelente korán keltek, hogy megkezdjék a földművelést. A nap első fényei már a búzaföldekre világítottak, ahol a gazdák és családtagjaik együtt dolgoztak. A szántás, vetés és aratás mindennapi feladataik közé tartozott. Az időjárás határozta meg a munkáik sikerét, így a gazdák figyelemmel kísérték az évszakok váltakozását. A termés beérkezésekor a közösség ünnepelt, hiszen a bőséges aratás biztosította a megélhetésüket. A zsoldosok, akik Mátyás király szolgálatában álltak, gyakran megfordultak a falvakban, így a falusi embereknek is volt dolguk velük, hiszen néha meg kellett osztaniuk a megtermelt javakat a katonákkal.
 
-**A városi kézművesek életébe** _(gazdaság)_
-Egy városban, ahol a kereskedelem virágzott, a kézművesek mestersége volt a középpontban. Péter, egy asztalos, a műhelyében dolgozott, ahol fából készült bútorokat készített. A városban sokan kerestek rá, hiszen a gazdagabb polgárok igényelték a minőségi bútorokat. A kézművesek közötti verseny erősödött, mivel az uralkodó, Mátyás, támogatta a kereskedelmet, és új lehetőségeket teremtett számukra. Péter gyakran részt vett a helyi vásárokon is, ahol eladta a termékeit, és új megrendeléseket kapott. A városi élet tele volt színes vásárokkal és ünnepekkel, ahol a közösség összegyűlt.
+**A család és az otthon szerepe** _(család)_
+A falvakban a családok szoros közösséget alkottak. Az otthonokban többgenerációs családok éltek együtt, ahol a nagyszülők, szülők és gyermekek közösen osztoztak a háztartási feladatokon. Az asszonyok főztek, varrtak, míg a férfiak a mezőn dolgoztak. Az étkezések középpontjában a helyben termelt élelmiszerek álltak, mint a kenyér, zöldségek és hús. Az ünnepek különösen fontosak voltak, amikor a családok összegyűltek, hogy együtt ünnepeljenek, és megemlékezzenek a hagyományokról. A közös étkezések során a gyermekek megtanulták a családi történeteket és szokásokat.
 
-**Családi ünnepek és hagyományok** _(hit és szokások)_
-A faluban a családok nagy figyelmet fordítottak a hagyományokra és az ünnepekre. Karácsonykor a családok összegyűltek, hogy együtt ünnepeljenek, énekeljenek és meséljenek. Az ünnepi vacsora bőséges volt, hiszen a parasztok a saját termésükből készítettek ételeket. A gyerekek izgatottan várták a Mikulást, és a felnőttek is szívesen meséltek Mátyás király legendáiról, aki a nép védelmezője volt. Az ünnepek idején a hit és a közösségi összetartozás erősödött, ami segítette a falusiakat a nehézségek átvészelésében.
+**A mesterségek világa** _(kereskedelem)_
+A városokban a mesterek és iparosok mindennapjai a kereskedelem és a mesterségek körül forogtak. A kovácsok, asztalosok és fazekasok műhelyeiben zajlott az élet, ahol a helybéliek megrendeléseket adtak le. A mesterek büszkék voltak a tudásukra, és igyekeztek a legjobb minőségű termékeket előállítani. A vásárok a kereskedelem központjai voltak, ahol a falusiak és városiak találkoztak, cseréltek, és új árukat vásároltak. Itt találkoztak a zsoldosok is, akik néha árucikkekkel kereskedtek, így a mestereknek figyelniük kellett a katonák igényeire is.
 
-**A betegség és gyógyítás mindennapjai** _(betegség és gyógyítás)_
-A faluban gyakran megjelentek a betegségek, különösen a hideg hónapokban. Az emberek igyekeztek természetes gyógymódokkal enyhíteni a bajokat. Mária, a falusi bába, sokat segített a szülések során, és a gyógyfüvekkel is foglalkozott. A közeli erdőben gyűjtötte a gyógynövényeket, és a falusiak bizalommal fordultak hozzá. Mátyás király uralkodása alatt a járványok miatt a falusiaknak meg kellett tanulniuk, hogyan védjék meg magukat, és a közösség összefogása segített a nehéz időszakokban.
+**A hit és az ünnepek jelentősége** _(hit)_
+A vallás fontos szerepet játszott a középkori emberek életében. A falusi közösségek rendszeresen részt vettek a templomi szertartásokon, ahol a papok tanították őket a hitre és az erkölcsre. Az ünnepek, mint például a karácsony és húsvét, különleges alkalmak voltak, amikor az emberek összegyűltek, hogy imádkozzanak és együtt ünnepeljenek. Az ünnepi időszakokban a közösség összefogott, hogy segítsenek egymásnak, és megosszák a megtermelt élelmiszereket. A hit és a közösség összetartó ereje segítette a falusiakat a nehéz időkben is.
 
-**Gyermekek nevelése és iskola** _(gyermekek és nevelés)_
-A faluban a gyermekek nevelése fontos szerepet játszott. Az iskolákban a tanítás főleg a vallási és írásbeli ismeretekre összpontosított. A gyerekek, mint András és Zsuzsa, izgatottan jártak iskolába, ahol a tanító a szentírásra és a történetekre tanította őket. A szülők büszkék voltak, ha gyermekeik tudtak olvasni és írni, hiszen ez a jövőjük biztosítékát jelentette. Mátyás király uralkodása alatt a tudás és a tanulás iránti igény erősödött, ami a közösség fejlődését szolgálta.
+**A gyermekek nevelése** _(nevelés)_
+A gyermekek nevelése a családokban kezdődött, ahol a szülők a mindennapi élet során tanították őket. A fiúk a férfiak mesterségét tanulták, míg a lányok a háztartási feladatokat sajátították el. Az iskolák, ahol a gyerekek írást és olvasást tanultak, még nem voltak elterjedtek, de a falusi közösségekben a helyi papok néha tartottak tanórákat. A gyermekek számára fontos volt a közösségi játék, amely segítette őket a barátságok kialakításában. A gyermekek álmokat szőttek a jövőről, és sokan vágytak arra, hogy egyszer ők is mesterek vagy zsoldosok legyenek.
 
 ### 🗺️ Vizuális
 

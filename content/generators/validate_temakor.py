@@ -181,6 +181,35 @@ async def _appro_check(c, tema, blocks, band):
     return out.get("issues", [])
 
 
+# Deterministic story-mode invented-name check (LLM judges parroted prompt examples → false positives).
+# Common Hungarian given names; flagged only in story mode and only if not part of an allowed NAT figure.
+GIVEN_NAMES = {
+    "Anna", "András", "Antal", "Balázs", "Béla", "Dániel", "Dóra", "Erzsébet", "Eszter", "Éva",
+    "Ferenc", "Gábor", "Gergely", "György", "Ilona", "Imre", "István", "János", "József", "Júlia",
+    "Katalin", "Klára", "Lajos", "László", "Margit", "Mária", "Márton", "Mihály", "Miklós", "Pál",
+    "Péter", "Rozália", "Sándor", "Tamás", "Teréz", "Zoltán", "Zsófia", "Zsuzsanna", "Erzsi", "Kata",
+}
+
+def _story_name_scan(by_lesson, lessons, allowed_names):
+    """Flag invented personal names in story blocks (allowed NAT figures excluded)."""
+    issues = []
+    allowed_low = [a.lower() for a in (allowed_names or [])]
+    for L in lessons:
+        for b in by_lesson.get(L["id"], []):
+            if b["mode"] != "story":
+                continue
+            text = json.dumps(b["content"], ensure_ascii=False)
+            low = text.lower()
+            for full in allowed_low:       # strip allowed full names so their parts don't trip
+                low = low.replace(full, " ")
+            found = sorted({n for n in GIVEN_NAMES if re.search(r"\b" + n.lower() + r"\b", low)})
+            if found:
+                issues.append({"tema": L["title_hu"], "mode": "story", "kind": "nev",
+                               "detail": f"kitalált személynév(ek) a történetben: {', '.join(found)}",
+                               "suggestion": "cseréld névtelen, általános szereplőre (pl. „egy falusi asszony”)"})
+    return issues
+
+
 # ---------- orchestrator ----------
 async def _run(topic_nat):
     async with httpx.AsyncClient() as c:
@@ -200,6 +229,7 @@ async def _run(topic_nat):
 
         nat_elem, nat_band = _load_nat_elements(topic["title_hu"])
         comp_issues, cov = _completeness(topic, lessons, by_lesson, topic_quiz, nat_elem)
+        allowed_names = (nat_elem or {}).get("szemelyek", [])
 
         fact, appro = [], []
         for L in lessons:
@@ -212,6 +242,7 @@ async def _run(topic_nat):
             for x in a: x["tema"] = L["title_hu"]; appro.append(x)
 
         fact = await _confirm_facts(c, fact)  # precision pass: drop false alarms
+        appro += _story_name_scan(by_lesson, lessons, allowed_names)  # deterministic name integrity
 
         return {"topic": topic, "band": band, "coverage": cov,
                 "completeness": comp_issues, "fact": fact, "appropriateness": appro}

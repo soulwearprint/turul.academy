@@ -33,20 +33,20 @@ Az első világháború végén Magyarország területének jelentős része elv
 
 ### 🎭 Történet
 
-**A doberdói lövészárokban szolgáló honvédek mindennapjai** _(front)_
-A doberdói fronton a honvédek mindennapjai a fáradtság és a honvágy jegyében teltek. A lövészárok mélyén fagyos éjszakákon, esőben és sárban kellett átvészelniük a napokat. Az élelmiszeradagok szűkösek voltak; a napi fejadag gyakran csak egy kis kenyérből és egy adag levesből állt, amit az esővízben főztek. A barátokkal való beszélgetések, a közös emlékek felidézése enyhítette a távolságot a családtól, de a haza iránti vágy sosem hagyta el őket. A folyamatos lövések és a robbanások hangja a mindennapjaik része lett, és a félelem mellett a bátorság is jellemezte őket.
+**A földművelők mindennapjai** _(gazdaság)_
+A falusi gazdák a háború kitörése után is folytatták a földművelést, de a munka egyre nehezebbé vált. A fiatal férfiak nagy része a frontra került, így a mezőgazdasági munkát az idősebbek és a nők végezték. A gabonatermés csökkent, és a háború miatti élelmiszerhiány miatt egyre többen küzdöttek a megélhetésért. A helyi közösségek összefogtak, hogy segítsenek egymásnak, és a közös munka során a szolidaritás erősödött.
 
-**A hátországban maradt asszonyok élete** _(hátország)_
-A háború alatt a hátországban maradt asszonyoknak új szerepeket kellett betölteniük. Mivel a férfiak a frontra vonultak, a nőknek kellett gondoskodniuk a családról és a megélhetésről. Sorban álltak az élelmiszerért, amely egyre nehezebben volt beszerezhető a jegyrendszer miatt. A háztartás irányítása mellett sokan gyári munkát vállaltak, ahol férfiak helyett ők dolgoztak a fegyvergyárakban és a textilüzemekben. Az asszonyok ereje és kitartása a közösség összetartásának alapját képezte, és sokan egymásnak segítettek a nehéz időkben.
+**A családok és az otthon** _(család)_
+A háborús évek alatt a családok mindennapjai megváltoztak. A feleségek és anyák, akik a háború miatt egyedül maradtak, igyekeztek fenntartani a háztartást. Az ünnepek, mint a húsvét vagy a karácsony, különös hangsúlyt kaptak, hiszen ezek alkalmat adtak a közösségi összejövetelre és a remény fenntartására. Az otthonokban a háborús hírek aggodalmat keltettek, de a családtagok próbálták megőrizni a mindennapi élet apró örömeit.
 
-**A falusi gazdák terhei** _(gazdaság)_
-A falusi gazdák a háború alatt súlyos terheket cipeltek. A rekvirálás miatt sokszor a terményük jelentős részét elvitték a katonai hatóságok, így a családok megélhetése egyre nehezebbé vált. A nyersanyaghiány miatt a munkaeszközök is hiányoztak, a földek megművelése sokszor elmaradt. A gazdák próbálták megőrizni a terményeket, de a háború okozta zűrzavar és a folyamatosan emelkedő árak a falusi életet is megnehezítették. A közösségi összefogás és a szomszédok támogatása segített átvészelni a nehéz időszakokat.
+**A gyermekek élete** _(gyermekek)_
+A háború alatt a gyermekek is megérezték a felnőttek aggodalmait. Az iskolákban a tanárok próbálták enyhíteni a feszültséget, de a tananyagban a háborús események megjelenése elkerülhetetlen volt. A gyerekek játszottak a háborús játékokkal, és sok esetben a szüleik munkáját is segítették. A közösségi rendezvények, mint a falunapok, fontos szerepet játszottak abban, hogy a gyerekek ne veszítsék el a reményt és a vidámságot.
 
-**A sebesültek és a kórházak valósága** _(sebesültek)_
-A háború következményeként a sebesült katonák száma folyamatosan növekedett. A kórházakban a nővérek és orvosok fáradhatatlanul dolgoztak, hogy segítsenek a sérülteknek. A sebesültek között sokan szenvedtek a háború borzalmaitól, a testi sérülések mellett sokan pszichés problémákkal is küzdöttek. A járványok is megjelentek, a kórházak gyakran túlzsúfoltak voltak, és az orvosi ellátás nem mindig tudta kielégíteni a szükségleteket. A kórházakban a remény és a félelem keveredett, ahogy a családok vártak híreket a fronton harcoló szeretteikről.
+**A helyi közösség összefogása** _(hatalom és közösség)_
+A háború alatt a falvakban és városokban a közösségek összefogtak, hogy támogassák a frontra küldött katonákat és családjaikat. Gyűjtéseket szerveztek, hogy élelmiszert és ruházatot juttassanak el a harcolóknak. A helyi hivatalok is részt vettek a segélyezésben, és a közösségi összejövetelek során a háborús helyzetet elemezték, ami erősítette a közösségi érzést és a szolidaritást.
 
-**A gyerekek és az iskola háborús hétköznapjai** _(iskola)_
-A háború alatt a gyerekek is megérezték a konfliktus hatásait. Az iskolákban a tananyag sokszor a háborús eseményekről szólt, a gyerekek pedig a fronton harcoló apákról és bátyjaikról hallgattak történeteket. Az iskolai ünnepségek elmaradtak, de a gyerekek próbálták fenntartani a közösségi életet. A háború miatt sokan elvesztették a szüleiket, és a nevelésükért nagyszülők vagy rokonok vállalták a felelősséget. A háború árnyékában a gyerekeknek is meg kellett tanulniuk felnőni, és a háborús körülmények között is megőrizni a reményt.
+**A betegség és a gyógyítás** _(betegség és gyógyítás)_
+A háború alatt a háborús sebesültek mellett a járványok is sújtották a hátországot. A falusi gyógyítók és a helyi orvosok fáradhatatlanul dolgoztak, hogy segítsenek a betegeken. A gyógyszerek hiánya miatt sokszor házi praktikákra és természetes gyógymódokra támaszkodtak. A közösségekben erősödött a kölcsönös segítségnyújtás, és a betegeket a családtagok és szomszédok támogatták.
 
 ### 🗺️ Vizuális
 
@@ -172,20 +172,20 @@ Horthy Miklós 1920 márciusában lett Magyarország kormányzója; 1919 végén
 
 ### 🎭 Történet
 
-**A frontkatonák mindennapjai a doberdói lövészárokban** _(front)_
-A doberdói lövészárokban szolgáló honvédek napjai monoton és kimerítő körülmények között teltek. A lövészárok mélyén, a sáros talajban állva, a katonák mindennapjaikat a hideg, az éhség és a honvágy árnyékában élték. A fejadagok szűkösek voltak, és sokszor csak néhány falatnyi kenyér jutott nekik, amit vízben áztatva ettek meg. A családtagok hiánya, a haza iránti vágy és a harcok borzalma egyre inkább elviselhetetlenné tette a helyzetet. A fronton a barátok elvesztése, a sebesülések és a halál közelsége mindennapos valóság volt, amely folyamatosan próbára tette a katonák lelkét.
+**A mezőgazdaság mindennapjai** _(gazdaság)_
+A falusi emberek mindennapjait a mezőgazdasági munka határozta meg. A termények betakarítása és az állatok gondozása mellett a gazdák gyakran szembesültek az élelmiszerhiánnyal. A háború következményeként a termés mennyisége csökkent, sokan éheztek. A falusi asszonyok a konyhában igyekeztek a lehető legtöbbet kihozni a megmaradt élelmiszerekből, míg a férfiak a földeken dolgoztak. A családok összetartása és a közös munkavégzés segített átvészelni a nehéz időszakot.
 
-**A hátország asszonyainak küzdelmei** _(hátország)_
-A háború alatt a hátországban maradt asszonyok élete drámai változásokon ment keresztül. A férfiak távol voltak a frontról, így a nőknek kellett átvenniük a családok megélhetésének irányítását. Sorban álltak az élelemért a boltok előtt, ahol a jegyrendszer miatt csak korlátozott mennyiségű élelmiszert tudtak vásárolni. A gyárakban dolgoztak, sokszor férfiak helyett, és a nehéz fizikai munka mellett a gyerekek neveléséről is gondoskodniuk kellett. A közösségi összefogás erősödött, hiszen egymás segítése nélkül sokan nem boldogultak volna. Az asszonyok számára a mindennapok kihívásai mellett a háború okozta félelem és bizonytalanság is ott lebegett a levegőben.
+**A családok ünnepei** _(hit és ünnepek)_
+A falvakban a hagyományos ünnepek továbbra is fontos szerepet játszottak a közösségi életben. A karácsony, húsvét és más jeles napok alkalmat adtak a családoknak arra, hogy együtt ünnepeljenek, még a háború árnyékában is. Az ünnepi ételek elkészítése, a közös imádkozás és a szokások ápolása segített a falusi embereknek abban, hogy megőrizzék reményüket és hitüket a jobb jövőben.
 
-**A falusi gazdák nehézségei** _(gazdaság)_
-A vidéki gazdák élete a háború alatt drámaian megváltozott. A rekvirálás miatt sok esetben a termények egy részét elvitték, ami súlyosan érintette a gazdaságukat. A nyersanyaghiány miatt a gazdák nem tudtak megfelelően gazdálkodni, és a munkáskezek hiánya miatt a földek művelése is nehézkessé vált. A háború előrehaladtával a gazdák kétségbeesetten próbálták megmenteni a megtermelt javakat, miközben a családjaik éheztek. A közeli városokból érkező hírek a fronton zajló harcokról és a politikai zűrzavarról csak tovább fokozta a feszültséget.
+**A gyermekek iskolai élete** _(nevelés és iskola)_
+A falusi iskolákban a gyermekek továbbra is tanultak, még ha a tanterv gyakran változott is a politikai helyzet miatt. A tanítók igyekeztek a gyerekeknek átadni a tudást, de sok esetben a taneszközök hiánya és a háború következményei megnehezítették a tanítást. A gyermekek számára a játék és a közös szórakozás jelentette a menekülést a mindennapok szürkeségéből, a barátságok pedig erőt adtak a nehéz időkben.
 
-**A sebesültek és a kórházak valósága** _(egészségügy)_
-A kórházakban a sebesült katonák és a háború következtében megbetegedett emberek sorsa egyre kilátástalanabbá vált. A nővérek és orvosok, akik a háború alatt a legnagyobb terhelésnek voltak kitéve, fáradtságtól kimerülten dolgoztak. A járványok, mint a spanyolnátha, tovább nehezítették a helyzetet, hiszen a kórházakban a higiéniai körülmények sokszor katasztrofálisak voltak. A sebesültek fájdalma, a családtagok hiánya és a gyógyulás reménye mindennapi valóságot teremtett, amely a háború borzalmait tükrözte.
+**A betegség és gyógyítás** _(betegség és gyógyítás)_
+A háború következtében terjedő betegségek, mint a spanyolnátha, sok család életét megnehezítették. A falusi orvosok és bábaasszonyok próbálták a legjobb tudásuk szerint ellátni a betegeket, de gyakran küzdöttek az orvosi ellátás hiányával. Az emberek közötti szolidaritás kulcsszerepet játszott: a szomszédok segítették egymást, ha valaki megbetegedett, és a közösség összefogott a gyógyítás érdekében.
 
-**A gyerekek és az iskola háborús hétköznapjai** _(oktatás)_
-A háború alatt a gyerekek is megélték a mindennapi nehézségeket. Az iskolákban az oktatás sokszor megszakadt, mivel a tanárok is a fronton harcoltak vagy a háború miatt elhagyták a falvakat. A gyerekeknek a háborús körülményekhez kellett alkalmazkodniuk; sokan a szüleik helyett dolgoztak, hogy segítsenek a családnak. A játékok helyett a felnőttek gondjai foglalkoztatták őket, és a háborúval kapcsolatos félelmek és bizonytalanság mindennapjaik részévé váltak.
+**A helyi közösség és a hatalom viszonya** _(hatalom és közösség)_
+A falvakban a helyi közösségek élete a politikai változások ellenére is folytatódott. Az emberek sokszor a községi vezetőktől várták a megoldásokat a mindennapi problémákra, de a zűrzavaros időszakokban a bizalom megrendült. A közéletben való részvétel, a helyi közgyűlések és a közös döntések segítettek abban, hogy a falusiak együttesen küzdjenek a nehézségekkel.
 
 ### 🗺️ Vizuális
 
@@ -303,20 +303,20 @@ A trianoni békediktátum nemcsak területi, hanem társadalmi és gazdasági k�
 
 ### 🎭 Történet
 
-**A doberdói lövészárokban szolgáló honvédek mindennapjai** _(front)_
-A doberdói fronton álló honvédek napjai egyhangúak és küzdelmesek voltak. A lövészárok nedves, fagyos talaján a katonák nap mint nap harcoltak a hideg és a hiányos élelem ellen. A fejadag sovány volt, gyakran csak egy kis kenyér és egy kevés konzerv jutott nekik. A honvágy gyötörte őket, sokan éjszaka álmaikban a családjukat és a megszokott életüket látták. A barátság és a közös sorsuk azonban erőt adott, hogy kibírják a nehézségeket.
+**A falusi földművesek mindennapjai** _(gazdaság)_
+A falusi földművesek életét a trianoni békediktátum következtében drámai változások érintették. A megcsonkított Magyarország területén sokan elvesztették földjeiket, mivel a határok átalakulása miatt a korábban megművelt területek más országokhoz kerültek. A gazdák kénytelenek voltak kisebb parcellákon gazdálkodni, ami csökkentette a termelési lehetőségeiket. A megélhetésért folytatott küzdelem során sokan kénytelenek voltak más mesterségek után nézni, hogy eltartsák családjukat.
 
-**A hátországban maradt asszonyok élete** _(hátország)_
-A háború alatt a férfiak távol voltak, és a hátországban maradt asszonyoknak kellett átvállalniuk a megélhetést. Sorban álltak az élelemért, a jegyrendszer miatt pedig sokszor csak kis mennyiségű élelmiszert tudtak beszerezni. A gyári munka mellett a háztartási teendők is az ő vállukat nyomták. A gyerekek nevelése és a háztartás vezetése mellett sok asszony megtanult új dolgokat, például a mezőgazdasági munkákban is részt vettek, hogy támogassák a családjukat.
+**A városi kereskedők nehézségei** _(gazdaság)_
+A városi kereskedők számára a trianoni békediktátum következményei új kihívásokat jelentettek. A határok megváltozása miatt megszűntek a korábbi kereskedelmi kapcsolatok, és a beszállítók is megváltoztak. A kereskedők kénytelenek voltak új partnereket keresni, ami sok esetben növelte a költségeiket. A gazdasági nehézségek miatt a vásárlók száma is csökkent, így sok bolt forgalma drasztikusan visszaesett.
 
-**A falusi gazdák helyzete** _(gazdaság)_
-A háború alatt a falusi gazdák élete teljesen megváltozott. A rekvirálás miatt sok esetben elvesztették a terményeik egy részét, mivel a hadsereg számára kellett beszolgáltatniuk. A nyersanyaghiány miatt a gazdák kénytelenek voltak új módszereket alkalmazni, hogy a megélhetésüket biztosítani tudják. A földeken dolgozva sokszor tapasztalták, hogy a háború következményei miatt csökkent a munkaerejük, hiszen a fiatal férfiak a frontra vonultak.
+**A családok élete és a mindennapi megélhetés** _(család, otthon)_
+A családok életében a trianoni békediktátum következményei a mindennapi megélhetést is érintették. A megcsonkított területek miatt sok családnak kevesebb jövedelme volt, így a táplálkozásuk is megváltozott. Az élelem beszerzése sokszor nehézségekbe ütközött, és a családok kénytelenek voltak spórolni. Az ünnepek és hagyományok megélése is háttérbe szorult, mivel a családok nem tudtak annyi pénzt költeni az ünnepi ételekre.
 
-**A gyerekek és az iskola háborús hétköznapjai** _(iskola)_
-A háború alatt a gyerekek is megérezték a felnőttek gondjait. Az iskolákban a tanulás mellett a háborús eseményekkel is foglalkoztak, hiszen sokan közvetlenül érintettek voltak. Az iskolákban gyakran beszéltek a fronton zajló harcokról, és a gyerekek sokszor szorongtak a jövő miatt. A tanárok próbálták megnyugtatni őket, de a gyerekek számára a háborúval járó bizonytalanság és félelem mindennapos valóság lett.
+**A helyi közösségek és a hivatalok viszonya** _(hatalom, közösség)_
+A helyi közösségek számára a trianoni békediktátum következményei a hivatalokkal való viszonyt is megváltoztatták. Az új határok miatt sok település elvesztette a korábbi önállóságát, és a helyi vezetők kénytelenek voltak alkalmazkodni az új politikai helyzethez. A közösségi élet sok esetben lelassult, mivel az emberek bizalmatlanok lettek a hivatalokkal szemben, és sokan úgy érezték, hogy a központi hatalom nem képviseli az érdekeiket.
 
-**A sebesültek és a kórházak helyzete** _(egészségügy)_
-A háború következtében a kórházak megteltek sebesült katonákkal. A nővérek és orvosok nap mint nap harcoltak az életükért, de az erőforrások hiánya miatt sok esetben nem tudtak megfelelő ellátást nyújtani. A járványok is terjedtek, hiszen a körülmények nem voltak megfelelőek a gyógyuláshoz. A sebesültek között sokan meséltek a frontról, a harcokról, ezáltal a kórházak nemcsak gyógyítás helyszínei voltak, hanem a háború történetei is összegyűltek itt.
+**A gyermekek nevelése és iskolai élet** _(gyermekek, iskola)_
+A gyermekek nevelése a trianoni békediktátum után is fontos volt, de a körülmények megváltoztak. Az iskolákban a tananyagban gyakran megjelentek az új politikai ideológiák, ami sok szülőt aggasztott. A gyermekek számára a tanulás mellett a családi munka is egyre fontosabbá vált, hiszen a családoknak minden kézre szükségük volt a megélhetéshez. A játszótér helyett sokan a mezőn vagy a földeken töltötték az idejüket.
 
 ### 🗺️ Vizuális
 

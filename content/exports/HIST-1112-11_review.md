@@ -37,20 +37,20 @@ A Kádár-rendszer idején az elnyomás formái folyamatosan változtak. Kezdetb
 
 ### 🎭 Történet
 
-**A mezőgazdaság mindennapjai** _(gazdaság)_
-Egy parasztcsalád a faluban a termelőszövetkezet keretein belül dolgozik. Minden reggel korán kelnek, hogy megkezdjék a földművelést. A téeszesítés miatt a családnak közösen kell dolgoznia a közös földeken, ami gyakran feszültségekhez vezet, hiszen sokan nem értettek egyet a kényszerű átszervezéssel. Az állami irányítás alatt a termelés szigorú szabályozás alá esik, a termelők pedig gyakran érzik a nyomást, hogy teljesíteniük kell a kitűzött normákat. Az élelem beszerzése sokszor nehézkes, a boltban sorban állva várakoznak, hogy megvegyenek egy-egy alapanyagot. A család életében a mezőgazdaság nemcsak megélhetést, hanem közösségi élményt is jelent, de a rendszer nyomása alatt sokszor a szorongás és a bizonytalanság is jelen van.
+**A gyári munkások élete** _(gazdaság)_
+A gyári munkások mindennapjai a Kádár-rendszer alatt a monotonitás és a szigorú munkarend jegyében teltek. Reggelente korán indultak, hogy a gyár kapuján belépve teljesítsék a kitűzött normákat. A munkásőrség folyamatosan figyelte őket, a munkahelyi fegyelem fenntartására figyelmeztetve. A fizetések sokszor nem voltak elegendőek a megélhetéshez, így sokan másodállásban is dolgoztak. A munkások között gyakori téma volt a megélhetés nehézsége és a jövő bizonytalansága.
 
-**A városi munkás életének kihívásai** _(munka)_
-Egy fiatal nő, aki egy helyi gyárban dolgozik, nap mint nap a monoton munkafolyamatokkal küzd. A gyárban a munkásőrség folyamatosan figyeli a dolgozókat, hogy betartsák a szabályokat, ami sokszor feszültséget okoz. A nő a fizetéséből próbálja eltartani a családját, de a megélhetés egyre nehezebb. A hiánygazdaság miatt az alapvető élelmiszerek beszerzése is kihívást jelent, és gyakran kénytelenek a feketepiacra is betérni. A gyárban a közösség összetartása segít átvészelni a nehéz időket, hiszen a kollégák gyakran osztják meg egymással a tapasztalataikat és az ötleteiket.
+**Családi élet és táplálkozás** _(otthon)_
+A családok életét a Kádár-rendszer alatt a szűkös körülmények határozták meg. Az élelmiszerellátás gyakran akadozott, a boltban sokszor csak korlátozott mennyiségű árut lehetett kapni. A családok kreatívan próbálták megoldani a táplálkozást, sokan saját kertjükben termesztettek zöldségeket, hogy kiegészítsék az élelmiszeradagjaikat. Az ünnepi étkezések különösen fontosak voltak, ilyenkor a családok összegyűltek, hogy együtt ünnepeljék a hagyományokat, még ha az ételek nem is mindig voltak bőségesek.
 
-**Családi élet és ünnepek** _(család)_
-Egy középkorú házaspár a gyermekeik nevelésével és a családi hagyományok ápolásával tölti mindennapjait. Az ünnepek, mint a karácsony vagy a húsvét, különleges alkalmak, amikor a család együtt lehet. Az állami propaganda ellenére a vallás és a hagyományok még mindig fontos szerepet játszanak az életükben, hiszen ezek adnak erőt a mindennapi küzdelmekhez. Az ünnepi étkezések során a helyi szokásoknak megfelelő ételeket készítenek, ami összeköti őket a közösséggel és a múltjukkal. Az otthon melegsége és a családi kötelékek segítenek elviselni a nehézségeket.
+**Hivatalok és közösségi élet** _(hivatalok)_
+A helyi közösségek életét a pártállam szigorú ellenőrzése határozta meg. A helyi hivatalokban dolgozók gyakran szembesültek azzal, hogy a párt érdekei előbbre valók voltak a közösségi szükségleteknél. Az emberek bizalmatlanul viszonyultak a hatóságokhoz, hiszen sok esetben a III/III. ügyosztály emberei figyelték őket. Az utcákon, közösségi rendezvényeken a párt propagandája dominált, a közéleti események gyakran politikai célokat szolgáltak, nem pedig a közösség valós igényeit.
 
-**Az iskola és a gyermekek nevelése** _(gyermekek)_
-Egy kisfiú, aki az általános iskolába jár, a tanulás mellett a Kommunista Ifjúsági Szövetség (KISZ) tagjává is válik. Az iskolában az úttörő mozgalom keretein belül tanítják a gyerekeket a szocialista értékekre, és fontos szerepet kapnak a különböző ünnepségek, amelyek során a gyerekek aktívan részt vesznek a közösségi életben. A szülők aggódnak a politikai nevelés miatt, de próbálnak biztatni a gyermekeiket, hogy találják meg a helyüket a társadalomban. Az iskola nemcsak a tudás átadásáról szól, hanem a közösségi összetartozás erősítéséről is.
+**Hit és ünnepek** _(hit)_
+A vallásosság a Kádár-rendszer alatt sok családban titokban élt tovább. Az emberek a templomokban, ha tehették, összegyűltek, hogy közösen ünnepeljék a hagyományos vallási szokásokat. A hivatalos propaganda a vallás ellen dolgozott, de sokan megtartották a hitüket, és a családi ünnepeken, mint például karácsonykor, titokban imádkoztak. Az ünnepek különleges alkalmak voltak, amikor a családok együtt lehettek, és a közös hitük erősítette a kötelékeket.
 
-**Az egészségügy és a gyógyítás** _(betegség)_
-Egy idős asszony, aki a faluban él, gyakran tapasztalja, hogy a helyi rendelőben hosszú sorokban várakoznak a betegek. A gyógyszerek beszerzése nehézkes, és sokszor előfordul, hogy a szükséges gyógyszerek hiányoznak. Az asszony a hagyományos gyógyításhoz is folyamodik, hiszen a népi gyógymódokban hisz. A helyi közösség összetartó ereje segít abban, hogy a nehézségeken át tudják vészelni a betegségeket, és a szomszédok gyakran segítenek egymásnak a gyógyulásban.
+**Gyermekek és nevelés** _(nevelés)_
+A gyermekek nevelése a Kádár-rendszer alatt a politikai ideológia jegyében zajlott. Az iskolákban a Kommunista Ifjúsági Szövetség (KISZ) programjai, valamint az úttörőmozgalom keretein belül igyekeztek a fiatalokat a szocialista értékekre nevelni. A szülők sokszor aggódtak, hogy a gyermekeik mennyire tudják megőrizni saját identitásukat a politikai nyomás alatt. Az iskolai ünnepségek, ahol a gyerekek a párt ideológiáját hirdették, a családok számára vegyes érzéseket keltettek.
 
 ### 🗺️ Vizuális
 
@@ -168,20 +168,20 @@ A Kádár-korszak kultúrpolitikája a politikai irányítás alatt állt, és a
 
 ### 🎭 Történet
 
-**A földművelés mindennapjai** _(gazdaság)_
-Egy kis faluban élő parasztcsalád reggelente korán kel, hogy megkezdje a napi munkát a földeken. A családtagok együtt dolgoznak a szántóföldeken, ahol az állami tervgazdaság keretein belül megtermelték a gabonát, zöldséget és gyümölcsöt. A felnőttek keményen dolgoznak, míg a gyerekek a háztáji kertben segítenek. A tervgazdaság előírásai szerint a termelést az állam irányítja, de a család a saját szükségleteit is igyekszik kielégíteni, így a háztáji gazdaság jelentős szerepet játszik az életükben. Az élelem hiánygazdaságban való megteremtése sokszor nehézségekbe ütközik, de a család összetartása és a közösség támogatása segít átvészelni a nehéz időket.
+**A falusi élet mindennapjai** _(gazdaság)_
+Egy falusi asszony a reggeli órákban a kertjében dolgozik. A háztáji gazdaságban termesztett zöldségekből és gyümölcsökből készíti el a család napi élelmét. A termelőszövetkezet tagjaként a közös munkák során sokszor találkozik a szomszédokkal, akikkel együtt osztják meg a munkát és a terményeket. A háztáji gazdaság lehetőséget ad arra, hogy a család kiegészítse a jövedelmét, hiszen a tervgazdaság keretein belül a központilag meghatározott kvóták gyakran nem elegendőek a megélhetéshez.
 
-**A városi kézművesek élete** _(gazdaság)_
-A városban élő kézművesek, mint például a cipőkészítők és a fazekasok, a második gazdaság keretein belül próbálnak megélni. A hivatalos munka mellett sokan maszek tevékenységet folytatnak, hogy kiegészítsék jövedelmüket, mivel az állami bérek nem elegendőek a megélhetéshez. A kézművesek közötti verseny éles, de a minőségi munka és a megbízhatóság segít nekik megtartani a vásárlóikat. Az emberek a helyi közösségben megbecsülik a jó mestereket, és igyekeznek őket támogatni, hiszen a helyi gazdaság fenntartása mindannyiuk érdeke.
+**A gyári munkás élete** _(gazdaság)_
+A gyári munkás reggelente a gyárba siet, ahol a monoton munkafolyamatok mellett sokszor találkozik a hiánygazdaság okozta nehézségekkel. A termelés során gyakran tapasztalja, hogy az alapanyagok nem állnak rendelkezésre, így a munka nem halad a tervek szerint. A második gazdaságban való részvétel lehetősége sokakat vonz, hiszen a maszek munkák révén plusz jövedelemhez juthatnak. A munkás társai között beszélgetve a gulyáskommunizmus fogalmát emlegetik, ami a megélhetésük szempontjából fontos, hiszen a szociális juttatások és a közszolgáltatások segítik őket.
 
 **Családi ünnepek és hagyományok** _(hit, ünnepek)_
-A falusi közösségekben a családi ünnepek, mint a karácsony vagy a húsvét, különösen fontos szerepet játszanak. Ezek az alkalmak lehetőséget adnak arra, hogy a családok együtt ünnepeljenek, és átadják a hagyományokat a fiatalabb generációknak. Az ünnepi ételek, mint a töltött káposzta és a kalács, az otthon melegét idézik. A közösségi ünnepségek során a helyi szokások és hiedelmek is megjelennek, erősítve a közösség összetartását, még a nehéz időszakokban is.
+Egy vidéki család ünnepre készül, ahol a hagyományos ételek és szokások kerülnek előtérbe. Az ünnepek során a hit és a közösség fontossága hangsúlyos, hiszen a helyi közösség összegyűlik, hogy együtt ünnepeljen. A gulyáskommunizmus alatt a kulturális programok és a közösségi események népszerűek, amelyek hozzájárulnak a helyi identitás megőrzéséhez. A családtagok együtt főznek, énekelnek, és mesélnek a régi időkről, miközben a gyerekek a szokásos ünnepi játékokat játszák.
 
-**Az iskola és a gyermekek nevelése** _(gyermekek, iskola)_
-A gyerekek az iskolában tanulnak, ahol a tananyag a szocialista értékeket hangsúlyozza. Az iskolai környezet sokszor szigorú, de a tanárok igyekeznek a gyerekek érdeklődését fenntartani. A szülők elvárják, hogy gyermekeik jól teljesítsenek, hiszen a jövőjük múlik ezen. A gyerekek a szabadidejüket a barátokkal töltik, játszanak az udvaron, és közösen készülnek az ünnepekre. A szülők gyakran mesélnek a régi időkről, amikor a helyi közösség sokkal szorosabb volt, és kevesebb volt a hiány.
+**Iskolai élet és nevelés** _(gyermekek, nevelés)_
+A gyermekek reggelente izgatottan készülnek az iskolába, ahol a tanítás során a történelem és a társadalom ismeretei mellett a szocialista értékekre is nagy hangsúlyt fektetnek. Az iskolai programok során a gyerekek megismerkednek a tervgazdaság működésével és a közösségi értékek fontosságával. A tanárok igyekeznek a diákokat a hazafias érzelmekre nevelni, miközben a szülők a háztáji gazdaságban segítik a család megélhetését, így a gyerekek a munka becsületét is megtanulják.
 
 **Betegségek és gyógyítás** _(betegség, gyógyítás)_
-A falusi közösségben a betegségek gyakran súlyos következményekkel járnak, mivel a helyi orvosi ellátás nem mindig elérhető. Az emberek gyakran házi gyógymódokat alkalmaznak, és a közösség idősebb tagjai osztják meg tapasztalataikat a fiatalabbakkal. A gyógynövények gyűjtése és a természetes gyógymódok használata elterjedt, hiszen sokan nem tudják megfizetni az orvosi kezeléseket. A közösség összefogása ilyenkor különösen fontos, hiszen a szomszédok segítenek egymásnak a nehéz időkben.
+A faluban élők gyakran szembesülnek a betegségekkel, hiszen a közegészségügyi ellátás nem mindig elérhető. A helyi gyógyító praktikák és a közösségi összefogás segítik a betegeket, akik a hagyományos gyógymódok mellett a hivatalos egészségügyi intézmények segítségét is kérik. A helyi orvosok és ápolók a szűkös erőforrásokkal dolgoznak, miközben a betegekkel való törődés és a közösségi támogatás kulcsfontosságú a gyógyulás során.
 
 ### 🗺️ Vizuális
 

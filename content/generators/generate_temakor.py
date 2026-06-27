@@ -119,9 +119,11 @@ def prompt(mode, temakor, tema, altemak, eb):
             'mesterség, kereskedelem vagy gyári munka — a kor szerint); a család, az otthon és a táplálkozás; a hatalom, a '
             'hivatalok és a helyi közösség viszonya; a hit, az ünnepek és a szokások; a gyermekek, a nevelés és az iskola; a '
             'betegség, a járvány és a gyógyítás; válság vagy háború hatása a hétköznapokra, ha a téma ezt indokolja. '
-            'Névtelen, de VALÓS, dokumentált korabeli körülményeken alapuló, REPREZENTATÍV, a korszakhoz illő alanyokat '
-            'használj (pl. egy parasztcsalád, egy város kézművesei, katonák, asszonyok, gyermekek); kitalált, NEVESÍTETT '
-            'történelmi személyt SOHA ne találj ki. Érzékletes, anyagi és érzelmi valóság. '
+            'KRITIKUS SZABÁLY: SOHA ne adj NEVET egyetlen szereplőnek sem — sem kitalált, sem valós keresztnevet vagy '
+            'teljes nevet (TILOS pl. „Mária”, „János és László”, „Kovács úr”). A szereplők MINDIG névtelenek és általánosak, '
+            'foglalkozással/szereppel megnevezve (pl. „egy falusi asszony”, „a kézművesek”, „a gyermekek”, „egy katona”). '
+            'Egyetlen kivétel: a kötelező NAT-elemként megadott valós történelmi személyek (lásd fent) — őket néven nevezheted, '
+            'de őket se tedd kitalált jelenet szereplőjévé. Érzékletes, anyagi és érzelmi valóság. '
             'Ahol természetes, kösd a kötelező fogalmakat az ÁTÉLT valóságukhoz. 5-8 kártya, mindegyik MÁS életterületről.\n'
             'JSON: {"title":"","cards":[{"type":"story","heading":"","body":"","mood":"melyik életterületet mutatja be (pl. front, hátország, gazdaság)"}]}')
     if mode == "visual":
@@ -161,7 +163,11 @@ async def ensure_lessons(c, topic_id, topic_nat, temak):
     return (await c.get(f"{SB}/rest/v1/curriculum_lessons?topic_id=eq.{topic_id}&select=id,nat_id,title_hu&order=order_index", headers=H_SB)).json()
 
 
-async def generate_topic(c, topic_nat, validate=True):
+ALL_MODES = ["text", "story", "visual", "quiz", "world"]
+
+async def generate_topic(c, topic_nat, validate=True, modes=None):
+    modes = modes or ALL_MODES
+    partial = set(modes) != set(ALL_MODES)
     t = (await c.get(f"{SB}/rest/v1/curriculum_topics?nat_id=eq.{topic_nat}&select=id,title_hu,grade", headers=H_SB)).json()
     if not t:
         print(f"⚠ topic {topic_nat} not found in curriculum_topics"); return
@@ -178,10 +184,12 @@ async def generate_topic(c, topic_nat, validate=True):
     dist = await distribute_elements(c, temakor, temak, elements)
     print("   ✓ elemszétosztás kész")
 
-    # clean slate for this topic
-    await c.request("DELETE", f"{SB}/rest/v1/content_blocks?topic_id=eq.{topic_id}", headers=H_SB)
+    # clean slate: only for the modes we're (re)generating, so a partial run keeps the rest
+    mode_filter = "&mode=in.(" + ",".join(modes) + ")"
     for L in lessons:
-        await c.request("DELETE", f"{SB}/rest/v1/content_blocks?lesson_id=eq.{L['id']}", headers=H_SB)
+        await c.request("DELETE", f"{SB}/rest/v1/content_blocks?lesson_id=eq.{L['id']}{mode_filter}", headers=H_SB)
+    if not partial:  # topic-scope quiz only wiped on a full run
+        await c.request("DELETE", f"{SB}/rest/v1/content_blocks?topic_id=eq.{topic_id}&lesson_id=is.null", headers=H_SB)
 
     async def save(lesson_id, mode, scope, obj):
         cards = obj.get("cards", obj) if isinstance(obj, dict) else obj
@@ -197,7 +205,7 @@ async def generate_topic(c, topic_nat, validate=True):
         eb = elem_block(d)
         altemak = "; ".join(tm["altemak"]) or "—"
         print(f"\n📘 {tm['title']}")
-        for mode in ["text", "story", "visual", "quiz", "world"]:
+        for mode in modes:
             try:
                 obj = await ai(c, prompt(mode, temakor, tm["title"], altemak, eb))
                 obj = await proof(c, obj)
@@ -206,19 +214,20 @@ async def generate_topic(c, topic_nat, validate=True):
             except Exception as e:
                 print(f"   ⚠ {mode}: {e}")
 
-    # end-of-topic comprehensive quiz (all elements)
-    all_eb = elem_block(elements)
-    print("\n🎯 Témazáró kvíz")
-    try:
-        q = await ai(c, f"Témakör: „{temakor}”.\nKészíts 8 kérdéses ÁTFOGÓ TÉMAZÁRÓ kvízt, amely az egész témakör "
-            f"alábbi kötelező NAT-elemeit kéri számon, vegyesen:\n{all_eb}\nMinden kérdéshez rövid magyarázat.\n"
-            'JSON: {"title":"Témazáró kvíz","cards":[{"type":"quiz","question_type":"multiple_choice","question":"","options":["A) ","B) ","C) ","D) "],"correct":"A","explanation":""}]}',
-            maxtok=3500)
-        q = await proof(c, q)
-        await save(None, "quiz", "topic", q)
-        print(f"   ✓ témazáró kvíz ({len(q.get('cards',[]))} kérdés)")
-    except Exception as e:
-        print(f"   ⚠ témazáró: {e}")
+    # end-of-topic comprehensive quiz (all elements) — only on a full run
+    if not partial:
+        all_eb = elem_block(elements)
+        print("\n🎯 Témazáró kvíz")
+        try:
+            q = await ai(c, f"Témakör: „{temakor}”.\nKészíts 8 kérdéses ÁTFOGÓ TÉMAZÁRÓ kvízt, amely az egész témakör "
+                f"alábbi kötelező NAT-elemeit kéri számon, vegyesen:\n{all_eb}\nMinden kérdéshez rövid magyarázat.\n"
+                'JSON: {"title":"Témazáró kvíz","cards":[{"type":"quiz","question_type":"multiple_choice","question":"","options":["A) ","B) ","C) ","D) "],"correct":"A","explanation":""}]}',
+                maxtok=3500)
+            q = await proof(c, q)
+            await save(None, "quiz", "topic", q)
+            print(f"   ✓ témazáró kvíz ({len(q.get('cards',[]))} kérdés)")
+        except Exception as e:
+            print(f"   ⚠ témazáró: {e}")
     print("\n✅ Done.")
 
     if validate:
@@ -238,8 +247,10 @@ async def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--nat-id", required=True, help="curriculum_topics.nat_id, e.g. HIST-78-VH1")
     ap.add_argument("--no-validate", action="store_true")
+    ap.add_argument("--modes", help="comma-separated subset to (re)generate, e.g. story (default: all)")
     args = ap.parse_args()
+    modes = [m.strip() for m in args.modes.split(",")] if args.modes else None
     async with httpx.AsyncClient() as c:
-        await generate_topic(c, args.nat_id, validate=not args.no_validate)
+        await generate_topic(c, args.nat_id, validate=not args.no_validate, modes=modes)
 
 asyncio.run(main())
