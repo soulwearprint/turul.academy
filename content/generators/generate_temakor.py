@@ -164,8 +164,90 @@ async def ensure_lessons(c, topic_id, topic_nat, temak):
 
 
 ALL_MODES = ["text", "story", "visual", "quiz", "world"]
+FIX_SYS = "Gondos magyar történelem-szerkesztő vagy. CSAK a javított JSON kártyatömböt adod vissza, azonos szerkezettel."
 
-async def generate_topic(c, topic_nat, validate=True, modes=None):
+
+async def apply_fixes(c, lessons, allowed_names, rep):
+    """Auto-fix the machine-correctable issues the guard rail found:
+    invented names in story (targeted rewrite) + súlyos fact errors (targeted correction).
+    Returns the number of blocks patched."""
+    by_title = {L["title_hu"].strip(): L for L in lessons}
+    allow = ", ".join(allowed_names or []) or "(egy sem)"
+    fixes = 0
+
+    async def get_block(lesson_id, mode):
+        r = (await c.get(f"{SB}/rest/v1/content_blocks?lesson_id=eq.{lesson_id}&mode=eq.{mode}&select=id,content", headers=H_SB)).json()
+        return r[0] if r else None
+
+    async def patch(bid, obj):
+        cards = obj.get("cards", obj) if isinstance(obj, dict) else obj
+        await c.patch(f"{SB}/rest/v1/content_blocks?id=eq.{bid}", headers={**H_SB, "Prefer": "return=minimal"}, json={"content": cards})
+
+    # 1) invented names in story → rewrite to anonymous subjects
+    for iss in rep.get("appropriateness", []):
+        if iss.get("kind") != "nev":
+            continue
+        L = by_title.get((iss.get("tema") or "").strip())
+        blk = await get_block(L["id"], "story") if L else None
+        if not blk:
+            continue
+        try:
+            new = await ai(c, "Írd át az alábbi TÖRTÉNET-kártyákat úgy, hogy MINDEN kitalált személynevet általános, "
+                "névtelen szereplőre cserélsz (pl. „egy falusi asszony”, „a gyermekek”, „egy katona”). A KÖTELEZŐ valós "
+                f"történelmi személyek neve maradhat: {allow}. A tartalmat, a sorrendet és a JSON-szerkezetet tartsd meg, "
+                "csak a neveket cseréld.\n\nKÁRTYÁK:\n" + json.dumps(blk["content"], ensure_ascii=False),
+                temp=0, model=DIST_MODEL, sys=FIX_SYS)
+            await patch(blk["id"], new); fixes += 1
+            print(f"   🔧 nevek cseréje: „{iss['tema']}” / story")
+        except Exception as e:
+            print(f"   ⚠ név-javítás sikertelen ({iss.get('tema')}): {e}")
+
+    # 2) súlyos fact errors → targeted correction
+    for iss in rep.get("fact", []):
+        if iss.get("severity", "sulyos") != "sulyos":
+            continue
+        L = by_title.get((iss.get("tema") or "").strip()); mode = iss.get("mode")
+        blk = await get_block(L["id"], mode) if (L and mode) else None
+        if not blk:
+            continue
+        try:
+            new = await ai(c, "Az alábbi kártyákban javítsd ki KIZÁRÓLAG ezt a tárgyi hibát:\n"
+                f"Hibás állítás: {iss.get('claim')}\nHelyesen: {iss.get('fix')}\n"
+                "Csak az érintett szöveget módosítsd, a többi tartalmat és a JSON-szerkezetet hagyd változatlanul.\n\n"
+                "KÁRTYÁK:\n" + json.dumps(blk["content"], ensure_ascii=False),
+                temp=0, model=DIST_MODEL, sys=FIX_SYS)
+            await patch(blk["id"], new); fixes += 1
+            print(f"   🔧 tényjavítás: „{iss['tema']}” / {mode}")
+        except Exception as e:
+            print(f"   ⚠ tényjavítás sikertelen ({iss.get('tema')}): {e}")
+
+    # 3) missing mandatory NAT elements → inject into the best-fitting Téma's text block
+    titles = [L["title_hu"].strip() for L in lessons]
+    for miss in rep.get("missing", []):
+        el, cat = miss.get("element"), miss.get("cat")
+        try:
+            new = await ai(c, "Egy kötelező NAT-elem hiányzik a tananyagból; pótold. Válaszd ki, melyik Témához "
+                f"illik a legjobban, és írj hozzá EGY szöveges kártyát, amely NÉV SZERINT és kontextusban lefedi.\n"
+                f"Kötelező elem ({cat}): {el}\nVálasztható Témák: {json.dumps(titles, ensure_ascii=False)}\n"
+                '4-6 tartalmas, tényszerű magyar mondat.\n'
+                'JSON: {"tema":"<a választott Téma cím>","card":{"type":"text","heading":"","body":"","key_term":""}}',
+                temp=0.3, model=DIST_MODEL, sys=SYS)
+            tema = (new.get("tema") or titles[0]).strip()
+            L = by_title.get(tema) or by_title.get(titles[0])
+            blk = await get_block(L["id"], "text")
+            if not blk:
+                continue
+            cards = blk["content"] if isinstance(blk["content"], list) else blk["content"].get("cards", [])
+            cards.append(new["card"])
+            await patch(blk["id"], cards); fixes += 1
+            print(f"   🔧 hiányzó elem pótolva: {el} → „{tema}” / text")
+        except Exception as e:
+            print(f"   ⚠ elempótlás sikertelen ({el}): {e}")
+
+    return fixes
+
+
+async def generate_topic(c, topic_nat, validate=True, modes=None, autofix=True, max_rounds=2):
     modes = modes or ALL_MODES
     partial = set(modes) != set(ALL_MODES)
     t = (await c.get(f"{SB}/rest/v1/curriculum_topics?nat_id=eq.{topic_nat}&select=id,title_hu,grade", headers=H_SB)).json()
@@ -206,51 +288,76 @@ async def generate_topic(c, topic_nat, validate=True, modes=None):
         altemak = "; ".join(tm["altemak"]) or "—"
         print(f"\n📘 {tm['title']}")
         for mode in modes:
-            try:
-                obj = await ai(c, prompt(mode, temakor, tm["title"], altemak, eb))
-                obj = await proof(c, obj)
-                await save(L["id"], mode, "lesson", obj)
-                print(f"   ✓ {mode} ({len(obj.get('cards',[]))} kártya)")
-            except Exception as e:
-                print(f"   ⚠ {mode}: {e}")
+            for attempt in (1, 2):  # retry once on transient LLM/JSON failures
+                try:
+                    obj = await ai(c, prompt(mode, temakor, tm["title"], altemak, eb))
+                    obj = await proof(c, obj)
+                    await save(L["id"], mode, "lesson", obj)
+                    print(f"   ✓ {mode} ({len(obj.get('cards',[]))} kártya)")
+                    break
+                except Exception as e:
+                    print(f"   ⚠ {mode} (próba {attempt}): {e}")
 
     # end-of-topic comprehensive quiz (all elements) — only on a full run
     if not partial:
         all_eb = elem_block(elements)
         print("\n🎯 Témazáró kvíz")
-        try:
-            q = await ai(c, f"Témakör: „{temakor}”.\nKészíts 8 kérdéses ÁTFOGÓ TÉMAZÁRÓ kvízt, amely az egész témakör "
-                f"alábbi kötelező NAT-elemeit kéri számon, vegyesen:\n{all_eb}\nMinden kérdéshez rövid magyarázat.\n"
-                'JSON: {"title":"Témazáró kvíz","cards":[{"type":"quiz","question_type":"multiple_choice","question":"","options":["A) ","B) ","C) ","D) "],"correct":"A","explanation":""}]}',
-                maxtok=3500)
-            q = await proof(c, q)
-            await save(None, "quiz", "topic", q)
-            print(f"   ✓ témazáró kvíz ({len(q.get('cards',[]))} kérdés)")
-        except Exception as e:
-            print(f"   ⚠ témazáró: {e}")
+        for attempt in (1, 2):
+            try:
+                q = await ai(c, f"Témakör: „{temakor}”.\nKészíts 8 kérdéses ÁTFOGÓ TÉMAZÁRÓ kvízt, amely az egész témakör "
+                    f"alábbi kötelező NAT-elemeit kéri számon, vegyesen:\n{all_eb}\nMinden kérdéshez rövid magyarázat.\n"
+                    'JSON: {"title":"Témazáró kvíz","cards":[{"type":"quiz","question_type":"multiple_choice","question":"","options":["A) ","B) ","C) ","D) "],"correct":"A","explanation":""}]}',
+                    maxtok=3500)
+                q = await proof(c, q)
+                await save(None, "quiz", "topic", q)
+                print(f"   ✓ témazáró kvíz ({len(q.get('cards',[]))} kérdés)")
+                break
+            except Exception as e:
+                print(f"   ⚠ témazáró (próba {attempt}): {e}")
     print("\n✅ Done.")
 
-    if validate:
-        try:
-            import validate_temakor as V
+    if not validate:
+        return None
+    try:
+        import validate_temakor as V
+        allowed_names = (elements or {}).get("szemelyek", [])
+        rep = await V._run(topic_nat)
+        rep["topic"]["nat_id"] = topic_nat
+        rep["verdict"] = V._verdict(rep)
+
+        # auto-fix-and-recheck loop: fix names + súlyos facts, then re-validate
+        rounds = 0
+        while autofix and rounds < max_rounds and (rep["fact"] or rep.get("missing") or any(
+                i.get("kind") == "nev" for i in rep["appropriateness"])):
+            print(f"\n🔁 auto-fix kör {rounds + 1}…")
+            applied = await apply_fixes(c, lessons, allowed_names, rep)
+            if not applied:
+                break
             rep = await V._run(topic_nat)
             rep["topic"]["nat_id"] = topic_nat
             rep["verdict"] = V._verdict(rep)
-            print("\n" + "=" * 60 + "\n🛡️  GUARD RAIL\n" + "=" * 60)
-            print(V._report_md(rep))
-            print(f"\n→ GUARD RAIL: {rep['verdict']}")
-        except Exception as e:
-            print(f"⚠ validáció kihagyva: {e}")
+            rounds += 1
+
+        print("\n" + "=" * 60 + "\n🛡️  GUARD RAIL\n" + "=" * 60)
+        print(V._report_md(rep))
+        print(f"\n→ GUARD RAIL: {rep['verdict']}  (auto-fix körök: {rounds})")
+        return rep
+    except Exception as e:
+        print(f"⚠ validáció kihagyva: {e}")
+        return None
 
 
 async def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--nat-id", required=True, help="curriculum_topics.nat_id, e.g. HIST-78-VH1")
     ap.add_argument("--no-validate", action="store_true")
+    ap.add_argument("--no-autofix", action="store_true", help="validate but don't auto-fix found issues")
     ap.add_argument("--modes", help="comma-separated subset to (re)generate, e.g. story (default: all)")
     args = ap.parse_args()
     modes = [m.strip() for m in args.modes.split(",")] if args.modes else None
     async with httpx.AsyncClient() as c:
-        await generate_topic(c, args.nat_id, validate=not args.no_validate, modes=modes)
+        await generate_topic(c, args.nat_id, validate=not args.no_validate,
+                             modes=modes, autofix=not args.no_autofix)
 
-asyncio.run(main())
+if __name__ == "__main__":
+    asyncio.run(main())

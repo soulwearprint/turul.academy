@@ -59,22 +59,36 @@ def _norm(s):
     return " ".join(s.lower().split())
 
 
-def _needles(element, category):
-    """Return the substring(s) that must ALL appear for this element to count as taught.
-    Handles compound elements ('X és Y' -> both parts) and curly quotes."""
+def _covered(element, category, text):
+    """True if this mandatory element is taught in `text` (already _norm'd).
+    Handles: '/' = synonyms/alternatives (any suffices), ' és ' = conjunction (all needed),
+    and chronology entries keyed on their date number (1-4 digits, incl. ancient 'Kr. e. 776')."""
     el = _norm(element)
-    if category == "kronologia":
-        years = re.findall(r"\d{4}", el)
-        return years if years else [el]
-    # compound concept: every conjunct must be taught (e.g. 'keresztség és úrvacsora')
-    if " és " in el:
-        return [p.strip() for p in el.split(" és ") if p.strip()]
-    return [el]
+    for alt in el.split("/"):                      # slash = alternatives → any covers it
+        alt = alt.strip()
+        if not alt:
+            continue
+        if category == "kronologia":
+            nums = re.findall(r"\d{1,4}", alt)
+            if any(n in text for n in nums):       # any date in the entry/range appears
+                return True
+            desc = alt
+            for w in ("kr. e.", "kr. u.", "körül", "–", "-"):
+                desc = desc.replace(w, " ")
+            desc = " ".join(re.sub(r"\d+", " ", desc).split())   # strip date noise → concept
+            if desc and desc in text:              # e.g. 'az ókor'
+                return True
+            continue
+        parts = [p.strip() for p in alt.split(" és ") if p.strip()]   # conjunction → all parts
+        if parts and all(p in text for p in parts):
+            return True
+    return False
 
 
 # ---------- check 1: completeness (deterministic) ----------
 def _completeness(topic, lessons, blocks_by_lesson, topic_quiz, nat_elem):
     issues = []
+    missing = []  # structured list of {cat, element} for the auto-fixer
     # structural: modes present per Téma
     for L in lessons:
         present = {b["mode"] for b in blocks_by_lesson.get(L["id"], [])}
@@ -100,15 +114,16 @@ def _completeness(topic, lessons, blocks_by_lesson, topic_quiz, nat_elem):
         for cat in ("fogalmak", "szemelyek", "kronologia", "topografia"):
             for el in nat_elem.get(cat, []):
                 total += 1
-                if all(n in text for n in _needles(el, cat)):
+                if _covered(el, cat, text):
                     hit += 1
                 else:
                     issues.append(("FAIL", f"NAT elem nincs lefedve ({cat}): {el}"))
+                    missing.append({"cat": cat, "element": el})
         cov = f"{hit}/{total} = {round(100*hit/total) if total else 0}%"
     else:
         cov = "n/a (NAT témakör nem található a JSON-ban)"
         issues.append(("WARN", "Nem található a NAT témakör a history_nat2020.json-ban — kötelező lefedettség nem auditálható."))
-    return issues, cov
+    return issues, cov, missing
 
 
 # ---------- LLM checks ----------
@@ -228,7 +243,7 @@ async def _run(topic_nat):
                 by_lesson.setdefault(b["lesson_id"], []).append(b)
 
         nat_elem, nat_band = _load_nat_elements(topic["title_hu"])
-        comp_issues, cov = _completeness(topic, lessons, by_lesson, topic_quiz, nat_elem)
+        comp_issues, cov, missing = _completeness(topic, lessons, by_lesson, topic_quiz, nat_elem)
         allowed_names = (nat_elem or {}).get("szemelyek", [])
 
         fact, appro = [], []
@@ -244,7 +259,7 @@ async def _run(topic_nat):
         fact = await _confirm_facts(c, fact)  # precision pass: drop false alarms
         appro += _story_name_scan(by_lesson, lessons, allowed_names)  # deterministic name integrity
 
-        return {"topic": topic, "band": band, "coverage": cov,
+        return {"topic": topic, "band": band, "coverage": cov, "missing": missing,
                 "completeness": comp_issues, "fact": fact, "appropriateness": appro}
 
 
