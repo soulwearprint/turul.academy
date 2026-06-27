@@ -30,15 +30,30 @@ async def main():
         nat_topic_ids = {l["topic_id"] for l in lessons}
         topics = (await c.get(f"{SB}/rest/v1/curriculum_topics?select=id,nat_id,title_hu,grade,order_index&order=order_index", headers=H_SB)).json()
         topics = [t for t in topics if t["id"] in nat_topic_ids]
-        blocks = (await c.get(f"{SB}/rest/v1/content_blocks?select=topic_id", headers=H_SB)).json()
-        has_content = {b["topic_id"] for b in blocks}
+        lessons_by_topic = {}
+        for l in lessons:
+            lessons_by_topic.setdefault(l["topic_id"], 0)
+            lessons_by_topic[l["topic_id"]] += 1
+        blocks = (await c.get(f"{SB}/rest/v1/content_blocks?select=topic_id,lesson_id,mode,scope", headers=H_SB)).json()
+
+        def is_complete(tid):
+            """Complete = a topic-scope quiz exists AND every lesson has all 5 modes."""
+            tb = [b for b in blocks if b["topic_id"] == tid]
+            if not any(b["scope"] == "topic" for b in tb):
+                return False
+            per_lesson = {}
+            for b in tb:
+                if b["lesson_id"]:
+                    per_lesson.setdefault(b["lesson_id"], set()).add(b["mode"])
+            n_lessons = lessons_by_topic.get(tid, 0)
+            return len(per_lesson) == n_lessons and all(len(m) >= 5 for m in per_lesson.values())
 
         if target:
             todo = [t for t in topics if t["nat_id"] in target]
         elif regen_all:
             todo = topics
         else:
-            todo = [t for t in topics if t["id"] not in has_content]
+            todo = [t for t in topics if not is_complete(t["id"])]
 
         print(f"NAT topics: {len(topics)}  ·  to generate: {len(todo)}"
               f"{' (regen-all)' if regen_all else ''}\n")
