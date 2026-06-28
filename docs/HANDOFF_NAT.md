@@ -63,26 +63,29 @@ curriculum_topics  (Témakör)
 One row-model covers: 4 modes + "Világ ekkor" global layer (mode=world) + per-lesson quiz (scope=lesson) +
 end-of-topic quiz (scope=topic, lesson_id NULL) + reserved emelt depth (level=emelt). RLS: public read on `is_active`.
 
-## GENERATION STATUS (2026-06-27) — 47/54 done, blocked on OpenRouter limit
-Ran the full generation via `run_all_nat.py` (parallelized, guard-rail + 2-round auto-fix per topic,
-in resumable foreground chunks). **47/54 Témakörök fully generated**; most REVIEW, a few PASS.
+## GENERATION STATUS (2026-06-27) — ✅ 54/54 DONE
+Full generation complete via `run_all_nat.py` (parallelized, guard-rail + 2-round auto-fix per topic,
+resumable foreground chunks; OpenRouter limit raised $15→$25 mid-way). **All 54 Témakörök generated:
+884 content_blocks, 100% NAT mandatory coverage on every topic** (deterministic completeness gate).
+Summary: `content/exports/_nat_generation_summary.md`.
 
-- **BLOCKED:** the OpenRouter key hit its **$15 monthly limit** ($15.08/$15) — all calls now 403
-  ("Key limit exceeded"). See [[reference-openrouter-limit]]. **Unblock:** raise the cap / add credits at
-  the OpenRouter workspace, then `python run_all_nat.py` (resumable) finishes the rest.
-- **7 topics NOT yet generated** (0 content_blocks): HIST-1112-09, -10, -12, -13, -14, -15, -16
-  (the final gimnázium 11–12 Témakörök).
-- **7 topics generated but verdict=FAIL** (content exists, but a NAT element coverage gap the auto-fix
-  couldn't close in 2 rounds — need a re-run once unblocked): HIST-56-08, HIST-78-04, HIST-78-08,
-  HIST-910-02, HIST-910-05, HIST-910-07, HIST-910-08.
-- Runner cost ≈ $0.30–0.35/Témakör; budget ~$18–20 for all 54.
+- The verdict=FAIL topics seen during the run were **all matcher false-negatives** (parentheticals,
+  diacritics, concatenated NAT entries), not real gaps. The completeness matcher (`_covered` in
+  validate_temakor.py) was hardened; re-audited deterministically → 0 FAILs. **No content regen needed.**
+- Advisory fact/appropriateness flags remain per topic (REVIEW level, never block) — a teacher pass
+  should sweep these before go-live (e.g. reformkor alsótábla/Metternich, kereszténység Ábrahám dating).
+- Cost: ~$0.30–0.35/Témakör (≈$17 of the $25 cap). See [[reference-openrouter-limit]].
 
 ## PENDING — next steps in order
-1. **Unblock OpenRouter** (raise key limit) → `python run_all_nat.py` to finish the 7 ungenerated + redo
-   the 7 FAILs (resumable — only touches incomplete/failed topics; FAILs need `--regen-all` or per-`--nat-ids`).
-2. **User reviews the generated content** (`python export_temakor_review.py <nat-id>` → `content/exports/*_review.md`).
-   All content `is_active=true` at block level but topics `is_active=false` (hidden from live app).
-   Advisory fact flags to teacher-check before go-live: reformkor (alsótábla/Metternich), kereszténység (Ábrahám dating), etc.
+1. **Teacher/content review** of the 54 topics: `python export_temakor_review.py <nat-id>` →
+   `content/exports/<nat-id>_review.md`. Optionally re-run the LLM guard rail per topic for advisory
+   flags (`python validate_temakor.py <nat-id>`). All content is `is_active=true` at block level but
+   topics are `is_active=false` (hidden from the live app).
+2. **Frontend for the 3-tier model** (the live app still renders the OLD `lessons` table):
+   - Nav: Topic → Lesson(Téma) → Mode; render `content_blocks`.
+   - On-demand **"Világ ekkor"** panel (mode=world); end-of-topic quiz (scope=topic) at topic level.
+   - Backend: routes to read `curriculum_lessons` + `content_blocks` (service-role pattern, see `core/db.py`).
+   - **Cutover:** flip NAT topics `is_active=true` and retire/hide the old mis-mapped 98 topics.
 3. **Frontend for the 3-tier model** (the live app still renders the OLD `lessons` table):
    - Nav: Topic → Lesson(Téma) → Mode; render `content_blocks`.
    - On-demand **"Világ ekkor"** panel (mode=world) in the lesson player.
