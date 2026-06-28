@@ -59,28 +59,61 @@ def _norm(s):
     return " ".join(s.lower().split())
 
 
+import unicodedata
+
+def _fold(s):
+    """Drop combining marks so edge diacritics match (e.g. 'ȩ' vs 'ę' → 'e')."""
+    return "".join(ch for ch in unicodedata.normalize("NFKD", s) if not unicodedata.combining(ch))
+
+
 def _covered(element, category, text):
     """True if this mandatory element is taught in `text` (already _norm'd).
-    Handles: '/' = synonyms/alternatives (any suffices), ' és ' = conjunction (all needed),
-    and chronology entries keyed on their date number (1-4 digits, incl. ancient 'Kr. e. 776')."""
-    el = _norm(element)
-    for alt in el.split("/"):                      # slash = alternatives → any covers it
+    Handles: parentheticals (stripped), '/' = alternatives (any), ' és '/',' = conjunction (all),
+    diacritic edge cases (folded fallback), chronology keyed on its date or concept."""
+    text_f = _fold(text)
+    raw = _norm(element)
+
+    def has(p):
+        return bool(p) and (p in text or _fold(p) in text_f)
+
+    def variants(s):
+        """A parenthetical is an alternate/optional name form ('I. (Szent) István'):
+        try without it, with it inline, and the paren-content + trailing tokens."""
+        m = re.search(r"\(([^)]*)\)", s)
+        if not m:
+            return [" ".join(s.split())]
+        before, paren, after = s[:m.start()], m.group(1), s[m.end():]
+        return [" ".join((before + after).split()),
+                " ".join((before + paren + after).split()),
+                " ".join((paren + after).split())]
+
+    def all_tokens(s):
+        """Fallback: every significant word (len>3) of the element appears somewhere.
+        Handles concatenated/reordered entries ('Recsk Hortobágy', 'választás Magyarországon')."""
+        toks = [t for t in re.split(r"[^0-9a-záéíóöőúüű]+", _fold(s)) if len(t) > 3]
+        return bool(toks) and all(t in text_f for t in toks)
+
+    for alt in re.split(r"\s*/\s*", raw):            # slash = alternatives → any covers it
         alt = alt.strip()
         if not alt:
             continue
         if category == "kronologia":
             nums = re.findall(r"\d{1,4}", alt)
-            if any(n in text for n in nums):       # any date in the entry/range appears
+            if any(n in text for n in nums):         # any date in the entry/range appears
                 return True
-            desc = alt
+            desc = re.sub(r"\([^)]*\)", " ", alt)
             for w in ("kr. e.", "kr. u.", "körül", "–", "-"):
                 desc = desc.replace(w, " ")
             desc = " ".join(re.sub(r"\d+", " ", desc).split())   # strip date noise → concept
-            if desc and desc in text:              # e.g. 'az ókor'
+            if has(desc) or all_tokens(desc):
                 return True
             continue
-        parts = [p.strip() for p in alt.split(" és ") if p.strip()]   # conjunction → all parts
-        if parts and all(p in text for p in parts):
+        if "(" in alt and any(has(v) for v in variants(alt)):    # parenthetical name forms
+            return True
+        parts = [p.strip() for p in re.split(r" és |,", alt) if p.strip()]   # conjunction → all
+        if parts and all(has(p) for p in parts):
+            return True
+        if all_tokens(re.sub(r"\([^)]*\)", " ", alt)):           # token-subset fallback
             return True
     return False
 
