@@ -11,19 +11,30 @@ slices). Use --regen-all to regenerate everything, or --nat-ids a,b,c to target.
 
 Writes a verdict summary to content/exports/_full_run_summary.md.
 """
-import os, sys, json, asyncio, httpx
+import os, sys, json, time, asyncio, httpx
 import generate_temakor as G
 
 SB, H_SB = G.SB, G.H_SB
 SUMMARY = os.path.join(os.path.dirname(__file__), "../exports/_full_run_summary.md")
 
 
+def _argval(name, default=None):
+    for a in sys.argv:
+        if a.startswith(name + "="):
+            return a.split("=", 1)[1]
+        if a == name:
+            i = sys.argv.index(a)
+            return sys.argv[i + 1] if i + 1 < len(sys.argv) else default
+    return default
+
+
 async def main():
     regen_all = "--regen-all" in sys.argv
-    target = None
-    for a in sys.argv:
-        if a.startswith("--nat-ids"):
-            target = set((a.split("=", 1)[1] if "=" in a else sys.argv[sys.argv.index(a) + 1]).split(","))
+    tv = _argval("--nat-ids")
+    target = set(tv.split(",")) if tv else None
+    max_topics = int(_argval("--max", "0") or 0)          # 0 = no limit
+    minutes = float(_argval("--minutes", "0") or 0)        # 0 = no time budget
+    deadline = time.time() + minutes * 60 if minutes else None
 
     async with httpx.AsyncClient() as c:
         lessons = (await c.get(f"{SB}/rest/v1/curriculum_lessons?select=topic_id", headers=H_SB)).json()
@@ -55,11 +66,17 @@ async def main():
         else:
             todo = [t for t in topics if not is_complete(t["id"])]
 
-        print(f"NAT topics: {len(topics)}  ·  to generate: {len(todo)}"
-              f"{' (regen-all)' if regen_all else ''}\n")
+        if max_topics:
+            todo = todo[:max_topics]
+        print(f"NAT topics: {len(topics)}  ·  to generate this run: {len(todo)}"
+              f"{' (regen-all)' if regen_all else ''}"
+              f"{f' · budget {minutes}m' if minutes else ''}\n")
 
         results = []
         for i, t in enumerate(todo, 1):
+            if deadline and time.time() > deadline:
+                print(f"\n⏱️  időkeret elérve — {i-1}/{len(todo)} kész ebben a futásban, a többi marad.")
+                break
             print("\n" + "#" * 70 + f"\n# [{i}/{len(todo)}] {t['nat_id']}  {t['title_hu']}\n" + "#" * 70)
             try:
                 rep = await G.generate_topic(c, t["nat_id"], validate=True, autofix=True)

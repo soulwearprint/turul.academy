@@ -247,14 +247,16 @@ async def _run(topic_nat):
         allowed_names = (nat_elem or {}).get("szemelyek", [])
 
         fact, appro = [], []
-        for L in lessons:
-            lb = [b for b in by_lesson.get(L["id"], [])]
-            if not lb:
-                continue
-            f, a = await asyncio.gather(_fact_check(c, L["title_hu"], lb),
-                                        _appro_check(c, L["title_hu"], lb, band))
-            for x in f: x["tema"] = L["title_hu"]; fact.append(x)
-            for x in a: x["tema"] = L["title_hu"]; appro.append(x)
+        active = [L for L in lessons if by_lesson.get(L["id"])]
+
+        async def check_lesson(L):
+            lb = by_lesson[L["id"]]
+            return L["title_hu"], await asyncio.gather(
+                _fact_check(c, L["title_hu"], lb), _appro_check(c, L["title_hu"], lb, band))
+
+        for title, (f, a) in await asyncio.gather(*(check_lesson(L) for L in active)):
+            for x in f: x["tema"] = title; fact.append(x)
+            for x in a: x["tema"] = title; appro.append(x)
 
         fact = await _confirm_facts(c, fact)  # precision pass: drop false alarms
         appro += _story_name_scan(by_lesson, lessons, allowed_names)  # deterministic name integrity

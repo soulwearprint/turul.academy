@@ -21,6 +21,7 @@ SB = os.getenv("SUPABASE_URL"); SVC = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
 RK = os.getenv("OPENROUTER_API_KEY")
 MODEL = "openai/gpt-4o-mini"            # bulk generation (cheap)
 DIST_MODEL = "openai/gpt-4o"           # element distribution (precision matters)
+GEN_CONCURRENCY = int(os.getenv("GEN_CONCURRENCY", "8"))  # parallel LLM calls per topic
 OR = "https://openrouter.ai/api/v1/chat/completions"
 H_OR = {"Authorization": f"Bearer {RK}", "Content-Type": "application/json",
         "HTTP-Referer": "https://turul.academy", "X-Title": "Turul"}
@@ -279,6 +280,21 @@ async def generate_topic(c, topic_nat, validate=True, modes=None, autofix=True, 
                    "scope": scope, "content": cards, "review_status": "approved", "is_active": True}
         await c.post(f"{SB}/rest/v1/content_blocks", headers={**H_SB, "Prefer": "return=minimal"}, json=payload)
 
+    sem = asyncio.Semaphore(GEN_CONCURRENCY)
+
+    async def gen_one(L, tm, mode, altemak, eb):
+        async with sem:
+            for attempt in (1, 2):  # retry once on transient LLM/JSON failures
+                try:
+                    obj = await ai(c, prompt(mode, temakor, tm["title"], altemak, eb))
+                    obj = await proof(c, obj)
+                    await save(L["id"], mode, "lesson", obj)
+                    print(f"   ✓ {tm['title'][:28]} / {mode} ({len(obj.get('cards',[]))} kártya)")
+                    return
+                except Exception as e:
+                    print(f"   ⚠ {tm['title'][:28]} / {mode} (próba {attempt}): {e}")
+
+    tasks = []
     for tm in temak:
         L = by_title.get(tm["title"].strip())
         if not L:
@@ -286,17 +302,10 @@ async def generate_topic(c, topic_nat, validate=True, modes=None, autofix=True, 
         d = dist.get(tm["title"].strip(), dist.get(tm["title"], {cat: [] for cat in CATS}))
         eb = elem_block(d)
         altemak = "; ".join(tm["altemak"]) or "—"
-        print(f"\n📘 {tm['title']}")
         for mode in modes:
-            for attempt in (1, 2):  # retry once on transient LLM/JSON failures
-                try:
-                    obj = await ai(c, prompt(mode, temakor, tm["title"], altemak, eb))
-                    obj = await proof(c, obj)
-                    await save(L["id"], mode, "lesson", obj)
-                    print(f"   ✓ {mode} ({len(obj.get('cards',[]))} kártya)")
-                    break
-                except Exception as e:
-                    print(f"   ⚠ {mode} (próba {attempt}): {e}")
+            tasks.append(gen_one(L, tm, mode, altemak, eb))
+    print(f"\n📘 {len(tasks)} blokk generálása (párhuzamosság: {GEN_CONCURRENCY})…")
+    await asyncio.gather(*tasks)
 
     # end-of-topic comprehensive quiz (all elements) — only on a full run
     if not partial:
