@@ -63,16 +63,26 @@ curriculum_topics  (Témakör)
 One row-model covers: 4 modes + "Világ ekkor" global layer (mode=world) + per-lesson quiz (scope=lesson) +
 end-of-topic quiz (scope=topic, lesson_id NULL) + reserved emelt depth (level=emelt). RLS: public read on `is_active`.
 
+## GENERATION STATUS (2026-06-27) — 47/54 done, blocked on OpenRouter limit
+Ran the full generation via `run_all_nat.py` (parallelized, guard-rail + 2-round auto-fix per topic,
+in resumable foreground chunks). **47/54 Témakörök fully generated**; most REVIEW, a few PASS.
+
+- **BLOCKED:** the OpenRouter key hit its **$15 monthly limit** ($15.08/$15) — all calls now 403
+  ("Key limit exceeded"). See [[reference-openrouter-limit]]. **Unblock:** raise the cap / add credits at
+  the OpenRouter workspace, then `python run_all_nat.py` (resumable) finishes the rest.
+- **7 topics NOT yet generated** (0 content_blocks): HIST-1112-09, -10, -12, -13, -14, -15, -16
+  (the final gimnázium 11–12 Témakörök).
+- **7 topics generated but verdict=FAIL** (content exists, but a NAT element coverage gap the auto-fix
+  couldn't close in 2 rounds — need a re-run once unblocked): HIST-56-08, HIST-78-04, HIST-78-08,
+  HIST-910-02, HIST-910-05, HIST-910-07, HIST-910-08.
+- Runner cost ≈ $0.30–0.35/Témakör; budget ~$18–20 for all 54.
+
 ## PENDING — next steps in order
-1. **User reviews the 5-topic cross-era batch** (`content/exports/*_review.md`) → approve the quality bar.
-   *(IN PROGRESS — user is reviewing; full run is gated on their go.)*
-2. **Full generation run** across the remaining ~49 Témakörök:
-   `for nat in <remaining HIST-* ids>; do python generate_temakor.py --nat-id $nat; done`
-   (OpenRouter; gpt-4o-mini gen + gpt-4o distribution/guard-rail; detached). Collect verdicts; topics
-   already seeded with Témák so the generator just fills content_blocks. content_blocks publish
-   (is_active=true); **topics stay is_active=false** until the frontend cutover.
-   - Advisory fact flags so far worth a teacher pass: reformkor (alsótábla/Metternich), kereszténység
-     (Ábrahám dating). These don't block (REVIEW), but should be corrected before topics go live.
+1. **Unblock OpenRouter** (raise key limit) → `python run_all_nat.py` to finish the 7 ungenerated + redo
+   the 7 FAILs (resumable — only touches incomplete/failed topics; FAILs need `--regen-all` or per-`--nat-ids`).
+2. **User reviews the generated content** (`python export_temakor_review.py <nat-id>` → `content/exports/*_review.md`).
+   All content `is_active=true` at block level but topics `is_active=false` (hidden from live app).
+   Advisory fact flags to teacher-check before go-live: reformkor (alsótábla/Metternich), kereszténység (Ábrahám dating), etc.
 3. **Frontend for the 3-tier model** (the live app still renders the OLD `lessons` table):
    - Nav: Topic → Lesson(Téma) → Mode; render `content_blocks`.
    - On-demand **"Világ ekkor"** panel (mode=world) in the lesson player.
