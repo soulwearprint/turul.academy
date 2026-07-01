@@ -76,16 +76,28 @@ Summary: `content/exports/_nat_generation_summary.md`.
   should sweep these before go-live (e.g. reformkor alsótábla/Metternich, kereszténység Ábrahám dating).
 - Cost: ~$0.30–0.35/Témakör (≈$17 of the $25 cap). See [[reference-openrouter-limit]].
 
+## 3-TIER APP + ADVISORY SWEEP (2026-06-27) — ✅ DONE
+- **Backend** `backend/routes/nat.py` (registered in main.py): `GET /api/nat/topics[?grade]`,
+  `/topics/{id}` (Témák + has_topic_quiz), `/lessons/{id}` (blocks grouped by mode), `/topics/{id}/quiz`.
+  Service-role reads so the still-hidden NAT topics are served for preview. (Backend is Python 3.9 —
+  use `Optional[...]`, not `X | None`.)
+- **Frontend** (auth-gated `/nat` routes): `frontend/src/components/ContentCards.jsx` (shared renderers
+  text/story/visual/world + interactive quiz) and pages NatTopicsPage → NatTopicPage → NatLessonPage
+  (mode tabs + on-demand "Világ ekkor") + NatTopicQuizPage. `api.nat` in lib/api.js; routes in App.jsx.
+  Verified end-to-end in-browser; frontend build clean. No entry link from Home yet (reach `/nat` directly).
+- **Advisory sweep** `content/generators/sweep_validate.py` → `content/exports/_advisory_sweep.md`:
+  guard rail's advisory layer over all 54 (~60 fact flags + appropriateness notes) for a teacher pass.
+- Preview note: the preview tool reads `/Users/gabor/VSCode/.claude/launch.json` (config
+  `turul-academy-frontend`, port 5173); NAT routes need a logged-in session.
+
 ## PENDING — next steps in order
-1. **Teacher/content review** of the 54 topics: `python export_temakor_review.py <nat-id>` →
-   `content/exports/<nat-id>_review.md`. Optionally re-run the LLM guard rail per topic for advisory
-   flags (`python validate_temakor.py <nat-id>`). All content is `is_active=true` at block level but
-   topics are `is_active=false` (hidden from the live app).
-2. **Frontend for the 3-tier model** (the live app still renders the OLD `lessons` table):
-   - Nav: Topic → Lesson(Téma) → Mode; render `content_blocks`.
-   - On-demand **"Világ ekkor"** panel (mode=world); end-of-topic quiz (scope=topic) at topic level.
-   - Backend: routes to read `curriculum_lessons` + `content_blocks` (service-role pattern, see `core/db.py`).
-   - **Cutover:** flip NAT topics `is_active=true` and retire/hide the old mis-mapped 98 topics.
+1. **Teacher pass** over `content/exports/_advisory_sweep.md` — correct the flagged fact items
+   (targeted fixes via `apply_fixes`, or edit content_blocks directly) and the too-advanced
+   grade 5–6 world-layer notes.
+2. **Go-live cutover:** add a Home entry link to `/nat`; flip NAT topics `is_active=true`; retire/hide
+   the old mis-mapped 98 topics + legacy `lessons`. Wire lesson progress/XP for the 3-tier player
+   (currently the NAT quiz is a local reveal, no scoring persistence — mirror routes/quiz.py when ready).
+3. **LATER (schema-ready):** emelt-szint layer (level=emelt) and "Kérdezd Turult".
 3. **Frontend for the 3-tier model** (the live app still renders the OLD `lessons` table):
    - Nav: Topic → Lesson(Téma) → Mode; render `content_blocks`.
    - On-demand **"Világ ekkor"** panel (mode=world) in the lesson player.
