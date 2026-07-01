@@ -2,7 +2,7 @@ from __future__ import annotations
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from routes import curriculum, lessons, quiz, progress, account
+from routes import curriculum, lessons, quiz, progress, account, nat
 
 app = FastAPI(title="Turul Academy API", version="0.1.0")
 
@@ -20,6 +20,7 @@ app.include_router(lessons.router)
 app.include_router(quiz.router)
 app.include_router(progress.router)
 app.include_router(account.router)
+app.include_router(nat.router)
 
 
 @app.get("/api/health")

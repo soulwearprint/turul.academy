@@ -60,6 +60,12 @@ export const api = {
     quiz:           (lid, token)          => get(`/api/lessons/${lid}/quiz`, token),
     updateProgress: (lid, body, token)    => post(`/api/lessons/${lid}/progress`, body, token),
   },
+  nat: {
+    topics:    (grade)   => get(`/api/nat/topics${grade ? `?grade=${grade}` : ''}`),
+    topic:     (tid)     => get(`/api/nat/topics/${tid}`),
+    lesson:    (lid)     => get(`/api/nat/lessons/${lid}`),
+    topicQuiz: (tid)     => get(`/api/nat/topics/${tid}/quiz`),
+  },
   quiz: {
     submit: (body, token) => post('/api/quiz/submit', body, token),
   },

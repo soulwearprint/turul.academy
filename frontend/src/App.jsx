@@ -13,6 +13,10 @@ import QuizPage from './pages/QuizPage'
 import ProgressPage from './pages/ProgressPage'
 import TurulCompanionPage from './pages/TurulCompanionPage'
 import ProfilePage from './pages/ProfilePage'
+import NatTopicsPage from './pages/NatTopicsPage'
+import NatTopicPage from './pages/NatTopicPage'
+import NatLessonPage from './pages/NatLessonPage'
+import NatTopicQuizPage from './pages/NatTopicQuizPage'
 
 function RequireAuth({ children }) {
   const { session, loading } = useAuth()
@@ -48,6 +52,12 @@ export default function App() {
             <Route path="/progress" element={<RequireAuth><ProgressPage /></RequireAuth>} />
             <Route path="/turul" element={<RequireAuth><TurulCompanionPage /></RequireAuth>} />
             <Route path="/profile" element={<RequireAuth><ProfilePage /></RequireAuth>} />
+
+            {/* NAT 3-tier content (preview — topics still is_active=false) */}
+            <Route path="/nat" element={<RequireAuth><NatTopicsPage /></RequireAuth>} />
+            <Route path="/nat/topics/:topicId" element={<RequireAuth><NatTopicPage /></RequireAuth>} />
+            <Route path="/nat/topics/:topicId/quiz" element={<RequireAuth><NatTopicQuizPage /></RequireAuth>} />
+            <Route path="/nat/lessons/:lessonId" element={<RequireAuth><NatLessonPage /></RequireAuth>} />
 
             {/* Fallback */}
             <Route path="*" element={<Navigate to="/" replace />} />
