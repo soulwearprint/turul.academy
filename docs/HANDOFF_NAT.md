@@ -90,13 +90,26 @@ Summary: `content/exports/_nat_generation_summary.md`.
 - Preview note: the preview tool reads `/Users/gabor/VSCode/.claude/launch.json` (config
   `turul-academy-frontend`, port 5173); NAT routes need a logged-in session.
 
+## GO-LIVE CUTOVER (2026-06-27) — ✅ DONE
+- **DB:** 54 NAT topics flipped `is_active=true`; 61 old mis-mapped History topics `is_active=false`
+  (distinguished by "has curriculum_lessons"). Physics (36) untouched. Legacy `lessons` rows left in
+  place but unreachable (their topics are inactive).
+- **Frontend:** History now routes to `/nat` from Home (subject card + "continue" CTA) and Subjects
+  (`subjectHref` helper: HISTORY → /nat, else legacy `/subjects/:id/topics`); NatTopicsPage has BottomNav.
+- **Icons:** all 4 mascot PNGs cleaned (largest-connected-component → stray cutout fragments/sparkles
+  removed); favicon/app-icon from the clean Explorer (favicon.ico + favicon-32 + icon-512 + apple-touch,
+  wired in index.html). The favicon is a fixed brand face (static file — can't vary per maturity); the
+  in-app portrait still evolves by grade.
+- Verified in-browser end-to-end (throwaway account, since removed): Home → Történelem → /nat with 54
+  live topics; favicon/apple-touch 200; no console errors. (One orphaned test profile `Teszt Diák`
+  remains in the dev DB — harmless.)
+
 ## PENDING — next steps in order
 1. **Teacher pass** over `content/exports/_advisory_sweep.md` — correct the flagged fact items
-   (targeted fixes via `apply_fixes`, or edit content_blocks directly) and the too-advanced
-   grade 5–6 world-layer notes.
-2. **Go-live cutover:** add a Home entry link to `/nat`; flip NAT topics `is_active=true`; retire/hide
-   the old mis-mapped 98 topics + legacy `lessons`. Wire lesson progress/XP for the 3-tier player
-   (currently the NAT quiz is a local reveal, no scoring persistence — mirror routes/quiz.py when ready).
+   (targeted fixes via `apply_fixes`, or edit content_blocks directly) and the too-advanced grade 5–6
+   world-layer notes.
+2. **3-tier progress/XP:** the NAT quiz is currently a local reveal with no scoring persistence — wire
+   it to progress/XP (mirror routes/quiz.py + routes/progress.py) so streaks/XP work on the new content.
 3. **LATER (schema-ready):** emelt-szint layer (level=emelt) and "Kérdezd Turult".
 3. **Frontend for the 3-tier model** (the live app still renders the OLD `lessons` table):
    - Nav: Topic → Lesson(Téma) → Mode; render `content_blocks`.
