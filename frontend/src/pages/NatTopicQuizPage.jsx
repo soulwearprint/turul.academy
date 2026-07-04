@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import { useAuth } from '../contexts/AuthContext'
 import { api } from '../lib/api'
-import { CardList } from '../components/ContentCards'
+import { QuizRunner } from '../components/ContentCards'
 
 export default function NatTopicQuizPage() {
   const { topicId } = useParams()
+  const { session } = useAuth()
+  const token = session?.access_token
   const [cards, setCards] = useState(null)
   const [loading, setLoading] = useState(true)
   const navigate = useNavigate()
@@ -21,7 +24,10 @@ export default function NatTopicQuizPage() {
         <button onClick={() => navigate(-1)} className="text-slate-400 hover:text-slate-600">←</button>
         <h1 className="text-xl font-display font-bold text-slate-900">🎯 Témazáró kvíz</h1>
       </div>
-      <CardList mode="quiz" cards={cards} />
+      <QuizRunner
+        cards={cards}
+        onSubmit={(answers) => api.nat.submitQuiz({ topic_id: topicId, scope: 'topic', answers }, token)}
+      />
     </div>
   )
 }

@@ -104,6 +104,77 @@ export function QuizCard({ card }) {
   )
 }
 
+// Scored quiz: per-question reveal on pick, then submit for XP.
+export function QuizRunner({ cards, onSubmit }) {
+  const [picks, setPicks] = useState({})       // index -> letter
+  const [result, setResult] = useState(null)
+  const [busy, setBusy] = useState(false)
+  const list = cards || []
+  const correctOf = (c) => (c.correct || '').trim().charAt(0).toUpperCase()
+  const answeredCount = Object.keys(picks).length
+  const allAnswered = list.length > 0 && answeredCount >= list.length
+
+  async function submit() {
+    if (busy || result) return
+    setBusy(true)
+    try {
+      const answers = list.map((_, i) => picks[i] || '')
+      setResult(await onSubmit(answers))
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  return (
+    <div className="flex flex-col gap-4">
+      {list.map((card, qi) => {
+        const correct = correctOf(card)
+        const picked = picks[qi]
+        return (
+          <div key={qi} className="bg-white rounded-2xl shadow-sm border border-slate-100 px-6 py-6 flex flex-col gap-3">
+            <h3 className="text-lg font-bold text-slate-900 leading-snug">{card.question}</h3>
+            <div className="flex flex-col gap-2">
+              {(card.options || []).map((opt, i) => {
+                const letter = String.fromCharCode(65 + i)
+                let cls = 'border-slate-200 bg-white hover:bg-slate-50'
+                if (picked) {
+                  if (letter === correct) cls = 'border-emerald-500 bg-emerald-50'
+                  else if (letter === picked) cls = 'border-red-400 bg-red-50'
+                  else cls = 'border-slate-200 bg-white opacity-60'
+                }
+                return (
+                  <button key={i} disabled={!!picked || !!result}
+                    onClick={() => setPicks(p => ({ ...p, [qi]: letter }))}
+                    className={`text-left px-4 py-3 rounded-xl border font-medium text-slate-700 transition ${cls}`}>
+                    {opt}
+                  </button>
+                )
+              })}
+            </div>
+            {picked && card.explanation && (
+              <p className="text-sm text-slate-600 bg-slate-50 rounded-xl px-4 py-3">
+                {picked === correct ? '✅ ' : '❌ '}{card.explanation}
+              </p>
+            )}
+          </div>
+        )
+      })}
+
+      {result ? (
+        <div className="rounded-2xl p-5 bg-turul-blue text-white text-center shadow-glow-blue">
+          <p className="text-3xl font-extrabold font-display">{result.correct}/{result.total}</p>
+          <p className="text-brand-100 text-sm mt-0.5">{result.score}% · +{result.xp_earned} XP</p>
+        </div>
+      ) : (
+        <button onClick={submit} disabled={!allAnswered || busy}
+          className="btn-primary h-12 rounded-xl disabled:opacity-40">
+          {busy ? '…' : allAnswered ? 'Beküldés' : `Válaszolj mind (${answeredCount}/${list.length})`}
+        </button>
+      )}
+    </div>
+  )
+}
+
 export function CardList({ mode, cards }) {
   const Renderer = { text: TextCard, story: StoryCard, visual: VisualCard, world: WorldCard, quiz: QuizCard }[mode]
   if (!Renderer) return null

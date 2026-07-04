@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import { useAuth } from '../contexts/AuthContext'
 import { api } from '../lib/api'
-import { CardList } from '../components/ContentCards'
+import { CardList, QuizRunner } from '../components/ContentCards'
 
 const MODE_LABELS = { text: '📖 Szöveg', story: '🎭 Történet', visual: '🗺️ Vizuális', quiz: '🧠 Kvíz' }
 const MAIN_MODES = ['text', 'story', 'visual', 'quiz']
 
 export default function NatLessonPage() {
   const { lessonId } = useParams()
+  const { session } = useAuth()
+  const token = session?.access_token
   const [lesson, setLesson] = useState(null)
   const [loading, setLoading] = useState(true)
   const [mode, setMode] = useState('text')
@@ -18,8 +21,9 @@ export default function NatLessonPage() {
     api.nat.lesson(lessonId).then(l => {
       setLesson(l)
       setMode(l.modes.find(m => MAIN_MODES.includes(m)) || 'text')
+      api.nat.setProgress(lessonId, { status: 'in_progress' }, token).catch(() => {})
     }).finally(() => setLoading(false))
-  }, [lessonId])
+  }, [lessonId, token])
 
   if (loading) return <div className="flex h-screen items-center justify-center text-slate-400">Betöltés…</div>
   if (!lesson) return <div className="flex h-screen items-center justify-center text-slate-400">Nem található.</div>
@@ -45,7 +49,15 @@ export default function NatLessonPage() {
         ))}
       </div>
 
-      <CardList mode={mode} cards={lesson.blocks[mode]} />
+      {mode === 'quiz' ? (
+        <QuizRunner
+          cards={lesson.blocks.quiz}
+          onSubmit={(answers) => api.nat.submitQuiz(
+            { topic_id: lesson.topic_id, lesson_id: lessonId, scope: 'lesson', answers }, token)}
+        />
+      ) : (
+        <CardList mode={mode} cards={lesson.blocks[mode]} />
+      )}
 
       {/* Világ ekkor — on-demand global layer */}
       {hasWorld && (

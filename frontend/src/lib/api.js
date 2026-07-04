@@ -61,10 +61,13 @@ export const api = {
     updateProgress: (lid, body, token)    => post(`/api/lessons/${lid}/progress`, body, token),
   },
   nat: {
-    topics:    (grade)   => get(`/api/nat/topics${grade ? `?grade=${grade}` : ''}`),
-    topic:     (tid)     => get(`/api/nat/topics/${tid}`),
-    lesson:    (lid)     => get(`/api/nat/lessons/${lid}`),
-    topicQuiz: (tid)     => get(`/api/nat/topics/${tid}/quiz`),
+    topics:      (grade)              => get(`/api/nat/topics${grade ? `?grade=${grade}` : ''}`),
+    topic:       (tid)                => get(`/api/nat/topics/${tid}`),
+    lesson:      (lid)                => get(`/api/nat/lessons/${lid}`),
+    topicQuiz:   (tid)                => get(`/api/nat/topics/${tid}/quiz`),
+    progress:    (token)             => get('/api/nat/progress/me', token),
+    setProgress: (lid, body, token)  => post(`/api/nat/lessons/${lid}/progress`, body, token),
+    submitQuiz:  (body, token)       => post('/api/nat/quiz/submit', body, token),
   },
   quiz: {
     submit: (body, token) => post('/api/quiz/submit', body, token),
