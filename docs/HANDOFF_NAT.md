@@ -104,13 +104,30 @@ Summary: `content/exports/_nat_generation_summary.md`.
   live topics; favicon/apple-touch 200; no console errors. (One orphaned test profile `Teszt Diák`
   remains in the dev DB — harmless.)
 
+## 3-TIER QUIZ + XP/PROGRESS (2026-06-27) — ✅ DONE
+- **Migration v6** (`database/migrations/v6_nat_progress.sql`): `nat_lesson_progress` +
+  `nat_quiz_results` (FK curriculum_lessons/topics — the legacy `lesson_progress`/`quiz_results` FK the
+  old `lessons` table, so couldn't be reused), RLS `*_own`. XP/streaks stay in the shared `user_xp` +
+  `daily_activity` so a student's level/streak span all content.
+- **`backend/core/xp.py` `award_xp()`** — adds XP, rolls the daily streak, bumps daily_activity.
+- **`backend/routes/nat.py`:** `POST /api/nat/quiz/submit` (grades answers vs the content_blocks quiz
+  cards, 10/correct + 20 perfect bonus, records result, marks the Téma completed, awards XP),
+  `POST /api/nat/lessons/{id}/progress`, `GET /api/nat/progress/me`.
+- **`backend/routes/progress.py` `/me`** now returns the FLAT shape the frontend reads
+  (`total_xp`/`level`/`streak_days`/`completed_lessons`) — fixed a long-standing mismatch where
+  Home/Progress always showed 0 XP — unifying legacy + NAT completed counts.
+- **Frontend:** `QuizRunner` (per-question reveal + submit-for-XP + score/+XP banner) in ContentCards.jsx;
+  NatLessonPage marks progress on open + uses QuizRunner for quiz mode; NatTopicQuizPage for the topic quiz.
+- Verified in-browser: WWI Téma-1 quiz → 5/5 · 100% · +70 XP; Home shows 🔥1-day streak · ⭐70 XP · 1 done.
+- Known follow-ups: XP is re-awarded on quiz *retake* (matches legacy; cap/decay later if farming matters);
+  ProgressPage's per-subject breakdown still reads legacy `lesson_progress` (History would show 0 there —
+  wire it to `nat_progress/me` when polishing).
+
 ## PENDING — next steps in order
-1. **Teacher pass** over `content/exports/_advisory_sweep.md` — correct the flagged fact items
-   (targeted fixes via `apply_fixes`, or edit content_blocks directly) and the too-advanced grade 5–6
-   world-layer notes.
-2. **3-tier progress/XP:** the NAT quiz is currently a local reveal with no scoring persistence — wire
-   it to progress/XP (mirror routes/quiz.py + routes/progress.py) so streaks/XP work on the new content.
-3. **LATER (schema-ready):** emelt-szint layer (level=emelt) and "Kérdezd Turult".
+1. **Teacher pass** over `content/exports/_advisory_sweep.md` — correct the flagged fact items and the
+   too-advanced grade 5–6 world-layer notes.
+2. **LATER (schema-ready):** emelt-szint layer (level=emelt) and "Kérdezd Turult".
+3. **Polish:** retake XP cap; ProgressPage per-subject for NAT; badges/achievements economy.
 3. **Frontend for the 3-tier model** (the live app still renders the OLD `lessons` table):
    - Nav: Topic → Lesson(Téma) → Mode; render `content_blocks`.
    - On-demand **"Világ ekkor"** panel (mode=world) in the lesson player.
