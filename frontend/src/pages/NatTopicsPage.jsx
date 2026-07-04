@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { api } from '../lib/api'
+import BottomNav from '../components/BottomNav'
 
 export default function NatTopicsPage() {
   const [topics, setTopics] = useState([])
@@ -38,6 +39,7 @@ export default function NatTopicsPage() {
           </div>
         </section>
       ))}
+      <BottomNav />
     </div>
   )
 }

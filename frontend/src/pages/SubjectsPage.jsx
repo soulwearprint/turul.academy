@@ -77,7 +77,7 @@ export default function SubjectsPage() {
                 </div>
                 {isEnrolled ? (
                   <button
-                    onClick={() => navigate(`/subjects/${subject.id}/topics`)}
+                    onClick={() => navigate(subject.code?.includes('HISTORY') ? '/nat' : `/subjects/${subject.id}/topics`)}
                     className="shrink-0 text-turul-blue text-sm font-semibold"
                   >
                     {t('subjects.open')}

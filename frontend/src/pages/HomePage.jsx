@@ -66,8 +66,10 @@ export default function HomePage() {
 
   const statusKey = completed === 0 ? 'home.turul.new' : streak >= 3 ? 'home.turul.streak' : 'home.turul.back'
 
+  // History now uses the NAT 3-tier content (/nat); other subjects use the legacy topic flow.
+  const subjectHref = (s) => (s?.code?.includes('HISTORY') ? '/nat' : `/subjects/${s.id}/topics`)
   const firstSubject = subjects[0]?.subject
-  const continueTo = firstSubject ? `/subjects/${firstSubject.id}/topics` : '/subjects'
+  const continueTo = firstSubject ? subjectHref(firstSubject) : '/subjects'
 
   return (
     <div className="pb-24">
@@ -133,7 +135,7 @@ export default function HomePage() {
               {subjects.map(({ subject }) => (
                 <Link
                   key={subject.id}
-                  to={`/subjects/${subject.id}/topics`}
+                  to={subjectHref(subject)}
                   className="card p-4 flex items-center gap-3 active:scale-[0.98] transition-transform"
                 >
                   <div className="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-2xl">
