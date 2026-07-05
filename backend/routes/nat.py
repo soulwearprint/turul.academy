@@ -9,7 +9,7 @@ are is_active=true. Mirrors the service-role pattern documented in core/db.py.
 from typing import Optional
 from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
-from core.db import db_get, db_post, db_patch
+from core.db import db_get, db_post, db_patch, db_delete
 from core.auth import get_current_user, SupabaseUser
 from core.xp import award_xp
 
@@ -143,15 +143,20 @@ class QuizSubmit(BaseModel):
 
 @router.post("/quiz/submit")
 async def nat_quiz_submit(body: QuizSubmit, user: SupabaseUser = Depends(get_current_user)):
-    """Grade a NAT quiz against its content_blocks, award XP, record the result."""
+    """Grade a NAT quiz against its content_blocks, award XP, record the result.
+
+    Retakes RESET rather than accumulate: a quiz's contribution to total_xp is always
+    its most recent attempt, not the sum of every attempt (otherwise a student could
+    farm XP by resubmitting the same quiz repeatedly).
+    """
     if body.scope == "topic":
         params = {"topic_id": f"eq.{body.topic_id}", "scope": "eq.topic"}
     else:
         if not body.lesson_id:
             raise HTTPException(status_code=422, detail="lesson_id required for a lesson quiz")
         params = {"lesson_id": f"eq.{body.lesson_id}", "scope": "eq.lesson", "mode": "eq.quiz"}
-    params |= {"is_active": "eq.true", "select": "content", "limit": "1"}
-    blocks = await db_get("content_blocks", params, service=True)
+    block_params = dict(params, **{"is_active": "eq.true", "select": "content", "limit": "1"})
+    blocks = await db_get("content_blocks", block_params, service=True)
     if not blocks:
         raise HTTPException(status_code=404, detail="Quiz not found")
     cards = blocks[0]["content"] or []
@@ -173,14 +178,26 @@ async def nat_quiz_submit(body: QuizSubmit, user: SupabaseUser = Depends(get_cur
                                        status="completed", mode_used="quiz")
         lessons_delta = 1 if newly else 0
 
+    # Reset semantics: find this quiz's previously-counted XP for this user, wipe it,
+    # and only add the DELTA to total_xp — so retaking never inflates the total beyond
+    # what this latest attempt actually earned.
+    result_params = {"user_id": f"eq.{user.id}", "scope": f"eq.{body.scope}",
+                     "lesson_id": f"eq.{body.lesson_id}" if body.scope == "lesson" else "is.null",
+                     "topic_id": f"eq.{body.topic_id}"}
+    prev = await db_get("nat_quiz_results", dict(result_params, select="id,xp_earned"), service=True)
+    prev_xp = sum(p.get("xp_earned") or 0 for p in prev)
+    if prev:
+        await db_delete("nat_quiz_results", result_params, service=True)
+    xp_delta = xp - prev_xp
+
     await db_post("nat_quiz_results", {
         "user_id": user.id, "topic_id": body.topic_id, "lesson_id": body.lesson_id,
         "scope": body.scope, "score": score, "correct": correct, "total": total,
         "answers": body.answers, "xp_earned": xp,
     }, service=True)
-    totals = await award_xp(user.id, xp, lessons_delta=lessons_delta)
+    totals = await award_xp(user.id, xp_delta, lessons_delta=lessons_delta)
     return {"score": score, "correct": correct, "total": total, "results": per,
-            "xp_earned": xp, **totals}
+            "xp_earned": xp_delta, **totals}
 
 
 @router.get("/progress/me")

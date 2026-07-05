@@ -11,8 +11,10 @@ def level_for(total_xp: int) -> int:
     return max(1, total_xp // 100 + 1)
 
 
-async def award_xp(user_id: str, xp: int, lessons_delta: int = 0) -> dict:
-    """Add XP, roll the daily streak, and bump today's daily_activity. Returns the new totals."""
+async def award_xp(user_id: str, xp_delta: int, lessons_delta: int = 0) -> dict:
+    """Apply a signed XP change (may be negative — e.g. a quiz retake resets its
+    contribution), roll the daily streak, and bump today's daily_activity.
+    Returns the new totals. total_xp is floored at 0."""
     today = date.today()
     today_s = today.isoformat()
     yday_s = (today - timedelta(days=1)).isoformat()
@@ -28,13 +30,13 @@ async def award_xp(user_id: str, xp: int, lessons_delta: int = 0) -> dict:
             streak += 1               # consecutive day
         else:
             streak = 1                # streak broken / first ever
-        total = (r.get("total_xp") or 0) + xp
+        total = max(0, (r.get("total_xp") or 0) + xp_delta)
         await db_patch("user_xp", {"user_id": f"eq.{user_id}"},
                        {"total_xp": total, "level": level_for(total),
                         "streak_days": streak, "last_activity_date": today_s}, service=True)
     else:
-        total, streak = xp, 1
-        await db_post("user_xp", {"user_id": user_id, "total_xp": xp, "level": level_for(xp),
+        total, streak = max(0, xp_delta), 1
+        await db_post("user_xp", {"user_id": user_id, "total_xp": total, "level": level_for(total),
                                   "streak_days": 1, "last_activity_date": today_s}, service=True)
 
     da = await db_get("daily_activity",
@@ -42,10 +44,10 @@ async def award_xp(user_id: str, xp: int, lessons_delta: int = 0) -> dict:
                        "select": "id,xp_earned,lessons_completed"}, service=True)
     if da:
         await db_patch("daily_activity", {"user_id": f"eq.{user_id}", "date": f"eq.{today_s}"},
-                       {"xp_earned": (da[0].get("xp_earned") or 0) + xp,
+                       {"xp_earned": max(0, (da[0].get("xp_earned") or 0) + xp_delta),
                         "lessons_completed": (da[0].get("lessons_completed") or 0) + lessons_delta}, service=True)
     else:
         await db_post("daily_activity", {"user_id": user_id, "date": today_s,
-                                         "xp_earned": xp, "lessons_completed": lessons_delta}, service=True)
+                                         "xp_earned": max(0, xp_delta), "lessons_completed": lessons_delta}, service=True)
 
     return {"total_xp": total, "level": level_for(total), "streak_days": streak}

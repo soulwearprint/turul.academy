@@ -41,7 +41,12 @@ async def get_subject_progress(
     subject_id: str,
     user: SupabaseUser = Depends(get_current_user),
 ):
-    """Get progress for a specific subject — lessons completed per topic."""
+    """Get progress for a specific subject — lessons completed per topic.
+
+    Unions the legacy `lesson_progress` (e.g. Physics, still on the old `lessons`
+    table) with `nat_lesson_progress` (History's 3-tier Témák) so this works for
+    any subject regardless of which content model its topics use.
+    """
     topics = await db_get(
         "curriculum_topics",
         {"subject_id": f"eq.{subject_id}", "is_active": "eq.true", "select": "id,nat_id,title,grade"},
@@ -50,19 +55,22 @@ async def get_subject_progress(
     if not topic_ids:
         return {"topics": [], "completion_pct": 0}
 
-    completed = await db_get(
+    ids_csv = ",".join(topic_ids)
+    legacy = await db_get(
         "lesson_progress",
-        {
-            "user_id": f"eq.{user.id}",
-            "status": "eq.completed",
-            "topic_id": f"in.({','.join(topic_ids)})",
-            "select": "topic_id,mode_used",
-        },
+        {"user_id": f"eq.{user.id}", "status": "eq.completed",
+         "topic_id": f"in.({ids_csv})", "select": "topic_id,mode_used"},
+        service=True,
+    )
+    nat = await db_get(
+        "nat_lesson_progress",
+        {"user_id": f"eq.{user.id}", "status": "eq.completed",
+         "topic_id": f"in.({ids_csv})", "select": "topic_id,mode_used"},
         service=True,
     )
 
     completed_by_topic: dict[str, list[str]] = {}
-    for row in completed:
+    for row in legacy + nat:
         completed_by_topic.setdefault(row["topic_id"], []).append(row["mode_used"])
 
     topic_summaries = [

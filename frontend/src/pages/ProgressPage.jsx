@@ -119,7 +119,7 @@ function SubjectProgress({ subject, token }) {
     api.progress.subject(subject.id, token).then(setData).catch(() => {})
   }, [subject.id, token])
 
-  const pct = data?.completion_percent ?? 0
+  const pct = data?.completion_pct ?? 0
 
   return (
     <div className="card p-4">

@@ -65,3 +65,10 @@ async def db_patch(table: str, params: dict, payload: dict, *, user_token: Optio
     )
     resp.raise_for_status()
     return resp.json()
+
+
+async def db_delete(table: str, params: dict, *, service: bool = False) -> None:
+    """DELETE rows matching params. Use service=True to bypass RLS (admin operations)."""
+    headers = SUPABASE_HEADERS_SERVICE if service else SUPABASE_HEADERS_ANON
+    resp = await http().delete(rest_url(table), headers=headers, params=params, timeout=7.0)
+    resp.raise_for_status()
