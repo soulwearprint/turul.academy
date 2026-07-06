@@ -20,6 +20,7 @@ export default function ProfilePage() {
   const [saving, setSaving] = useState(false)
   const [saved, setSaved] = useState(false)
   const [error, setError] = useState('')
+  const [confirmingSignOut, setConfirmingSignOut] = useState(false)
 
   const token = session?.access_token
 
@@ -130,9 +131,36 @@ export default function ProfilePage() {
           {saving ? t('auth.loading') : saved ? `✓ ${t('profile.saved')}` : t('profile.save')}
         </button>
 
-        <button onClick={signOut} className="btn-secondary w-full text-slate-500">
-          {t('home.signout')}
-        </button>
+        {/* Sign out — visually separated + requires confirmation, so it can't be
+            mistaken for a "close settings" action (users have tapped it by accident). */}
+        <div className="pt-3 mt-1 border-t border-slate-100">
+          {confirmingSignOut ? (
+            <div className="flex flex-col gap-2.5 pt-3">
+              <p className="text-sm text-slate-500 text-center">{t('profile.signout.confirm')}</p>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => setConfirmingSignOut(false)}
+                  className="flex-1 px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200"
+                >
+                  {t('common.cancel')}
+                </button>
+                <button
+                  onClick={signOut}
+                  className="flex-1 px-3 py-2.5 rounded-xl text-sm font-semibold text-red-600 bg-red-50 hover:bg-red-100"
+                >
+                  {t('profile.signout.confirm.cta')}
+                </button>
+              </div>
+            </div>
+          ) : (
+            <button
+              onClick={() => setConfirmingSignOut(true)}
+              className="w-full text-center text-sm font-semibold text-red-500 py-2.5 hover:text-red-600"
+            >
+              🚪 {t('home.signout')}
+            </button>
+          )}
+        </div>
       </div>
 
       <BottomNav />

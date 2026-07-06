@@ -53,7 +53,7 @@ export const translations = {
 
   // ── Home ─────────────────────────────────────────────────
   'home.greeting':      { hu: 'Üdv vissza,',   en: 'Welcome back,' },
-  'home.signout':       { hu: 'Kilépés',        en: 'Sign out' },
+  'home.signout':       { hu: 'Kijelentkezés',  en: 'Sign out' },
   'home.streak':        { hu: '{n} napos sorozat', en: '{n}-day streak' },
   'home.continue.label':{ hu: 'Folytasd ott, ahol abbahagytad', en: 'Pick up where you left off' },
   'home.continue.start':{ hu: 'Kezdj el tanulni', en: 'Start learning' },
@@ -155,6 +155,11 @@ export const translations = {
   'common.back':        { hu: '←',             en: '←' },
   'common.close':       { hu: '✕',             en: '✕' },
   'common.grade':       { hu: '. osztály',     en: '. grade' },
+  'common.cancel':      { hu: 'Mégse',         en: 'Cancel' },
+
+  // ── Profile ──────────────────────────────────────────────
+  'profile.signout.confirm': { hu: 'Biztosan kijelentkezel?', en: 'Sign out of your account?' },
+  'profile.signout.confirm.cta': { hu: 'Igen, kijelentkezés', en: 'Yes, sign out' },
 }
 
 /** Resolve a translation key, with optional {n}, {total} interpolation */
