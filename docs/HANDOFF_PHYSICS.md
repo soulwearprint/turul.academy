@@ -34,13 +34,9 @@ content is ready to cut over — the live app keeps serving these 36 topics in t
 1. **⚠️ Subject-mixing bug to fix FIRST.** `GET /api/nat/topics` and the frontend `/nat` route
    have **no subject filter** — they return/render *every* topic that has `curriculum_lessons`,
    regardless of subject. The moment Physics topics exist in this model, `/nat` will interleave
-   History and Physics topics in one list. Fix before generating any Physics content:
-   - Backend: add `?subject_id=` to `GET /api/nat/topics` (or a `/api/nat/topics/{subject_code}`
-     path) and thread it through `topics`, `topic`, `lesson`, `quiz` lookups as needed.
-   - Frontend: `HomePage.jsx`'s `subjectHref()` and the inline check in `SubjectsPage.jsx`
-     currently route *only* `HISTORY` to `/nat`; both subjects need it once Physics is ready,
-     with the subject passed through (route param or query string) so `NatTopicsPage` knows
-     which subject's topics to fetch.
+   History and Physics topics in one list. **Full writeup + recommended fix: see
+   `docs/BACKLOG.md`** ("Known bug to fix — subject-mixing in the 3-tier model"). Fix this
+   before generating/seeding any Physics content.
 2. **The NAT element taxonomy is History-shaped.** `parse_nat_temak.py`,
    `history_nat2020.json`/`history_nat2020_temak.json`, and every generator/guard-rail prompt
    assume four categories: `fogalmak` (concepts) / `szemelyek` (people) / `kronologia`
@@ -76,6 +72,11 @@ content is ready to cut over — the live app keeps serving these 36 topics in t
    anything, so History doesn't regress when Physics topics start appearing in `curriculum_lessons`).
 4. Adapt `generate_temakor.py`'s prompts/categories for Physics; validate the story/world/quiz
    pivots make sense for this subject (ask the user, don't assume history's answers transfer).
+   **Locked content direction (user, 2026-07-07 — full detail in `docs/BACKLOG.md`): Physics
+   content should be less academic, more hands-on/anecdotal.** Keep the required definitions/
+   rules, but augment them — where applicable — with reproducible-at-home experiments,
+   anecdotes about the circumstances of discovery/invention, and modern real-world usage
+   examples. Don't force these where a topic is too abstract for them.
 5. Seed scaffolds (adapt `seed_nat_topics.py`: new `SUBJECT_PHYSICS` id, a fresh grade-band split
    — reuse the hours-balanced-split logic, it's subject-agnostic).
 6. Generate a small cross-topic review batch first (2–3 topics spanning different grades/eras of

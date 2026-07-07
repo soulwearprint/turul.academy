@@ -13,8 +13,11 @@ read its "What's actually reusable" section before assuming any script works unc
 
 **Still open (non-blocking polish):** teacher pass over `content/exports/_advisory_sweep.md`
 (~60 fact/appropriateness flags); OpenRouter key rotation (leaked to a terminal transcript
-earlier in this project, never rotated — Supabase service key was rotated already); badges
-economy, emelt-szint layer, "Kérdezd Turult" (schema-ready, not built).
+earlier in this project, never rotated — Supabase service key was rotated already).
+
+**Cross-cutting product TODOs (lesson search/filter, badges, emelt-szint, "Kérdezd Turult", and
+the subject-mixing route fix) now live in `docs/BACKLOG.md`** — check there, not here, so they
+don't get lost across archived sessions.
 
 ## Where we are
 Pivoting the content model to be faithful to the **official 2024 NAT kerettanterv** (History).
@@ -137,18 +140,11 @@ Summary: `content/exports/_nat_generation_summary.md`.
   ProgressPage's per-subject breakdown still reads legacy `lesson_progress` (History would show 0 there —
   wire it to `nat_progress/me` when polishing).
 
-## PENDING — next steps in order
-1. **Teacher pass** over `content/exports/_advisory_sweep.md` — correct the flagged fact items and the
-   too-advanced grade 5–6 world-layer notes.
-2. **LATER (schema-ready):** emelt-szint layer (level=emelt) and "Kérdezd Turult".
-3. **Polish:** retake XP cap; ProgressPage per-subject for NAT; badges/achievements economy.
-3. **Frontend for the 3-tier model** (the live app still renders the OLD `lessons` table):
-   - Nav: Topic → Lesson(Téma) → Mode; render `content_blocks`.
-   - On-demand **"Világ ekkor"** panel (mode=world) in the lesson player.
-   - End-of-topic quiz (scope=topic) surfaced at the topic level.
-   - Backend: add routes to read `curriculum_lessons` + `content_blocks` (mirror existing service-role pattern — see `core/db.py`, all user-owned reads/writes use `service=True`).
-   - Cutover: flip new NAT topics `is_active=true` and retire/hide the old mis-mapped 98 topics.
-4. **LATER (schema-ready):** emelt-szint layer (level=emelt, deeper prompt) and "Kérdezd Turult" free-form AI button.
+## PENDING — next steps
+Everything that used to be listed here (frontend build, cutover, XP wiring, teacher-pass sweep)
+is done — see the ✅ banner at the top of this file. Remaining work has moved to
+**`docs/BACKLOG.md`** (cross-cutting product TODOs) and **`docs/HANDOFF_PHYSICS.md`** (the next
+subject). This file is kept as the historical build record.
 
 ## Locked decisions
 Topic=Témakör · Lesson=Téma · story = **3rd-person bottom-up everyday lens across distinct life-domains**
