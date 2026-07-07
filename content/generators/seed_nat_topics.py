@@ -9,6 +9,14 @@ No content is generated here — that's generate_temakor.py's job.
 
     python seed_nat_topics.py          # seed
     python seed_nat_topics.py --dry-run
+
+NOTE on grade assignment: the NAT curriculum only specifies topics at the BAND level
+(5-6, 7-8, 9-10, 11-12) — the source docx never assigns a Témakör to one specific
+grade; that's local/teacher planning. A within-band split is computed here, balanced
+by each topic's recommended teaching hours (`javasolt óraszám`) in curriculum order —
+first half of the band's hours -> the lower grade, rest -> the upper grade. (An earlier
+version hardcoded a single representative grade for the whole band, which put every
+topic on the band's lower grade and left the upper grade empty — fixed 2026-07-07.)
 """
 import os, json, sys, httpx
 from dotenv import load_dotenv
@@ -17,18 +25,52 @@ load_dotenv(os.path.join(os.path.dirname(__file__), "../../backend/.env"))
 SB = os.getenv("SUPABASE_URL"); SVC = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
 H = {"apikey": SVC, "Authorization": f"Bearer {SVC}", "Content-Type": "application/json"}
 MAP = os.path.join(os.path.dirname(__file__), "../nat_curriculum/history_nat2020_temak.json")
+NAT_JSON = os.path.join(os.path.dirname(__file__), "../nat_curriculum/history_nat2020.json")
 SUBJECT_HISTORY = "b5122740-fbd9-4c78-b3dd-c36172565e07"
 DRY = "--dry-run" in sys.argv
 
-# band -> (nat_id code, representative grade, order_index base)
-BAND = {"5-6": ("56", 5, 0), "7-8": ("78", 7, 100),
-        "9-10": ("910", 9, 200), "11-12": ("1112", 11, 300)}
+# band -> (nat_id code, (lower_grade, upper_grade), order_index base)
+BAND = {"5-6": ("56", (5, 6), 0), "7-8": ("78", (7, 8), 100),
+        "9-10": ("910", (9, 10), 200), "11-12": ("1112", (11, 12), 300)}
 
 def school_of_grade(g): return "F" if (g or 0) <= 8 else "K"
 
 
+def _compute_grade_map(m):
+    """Hours-balanced within-band split: walk each band's Témakörök in curriculum
+    order, accumulate recommended hours, and switch from the lower to the upper
+    grade once cumulative hours cross the band's 50% mark. Returns
+    {(school, band, title): grade}."""
+    nat = json.load(open(NAT_JSON, encoding="utf-8"))
+    hours = {}
+    for section, sc in (("altalanos_iskola", "F"), ("gimnazium", "K")):
+        for band, arr in nat[section].items():
+            for t in arr:
+                hours[(sc, band, t["temakor"].strip().lower())] = t.get("oraszam", 0)
+
+    by_band = {}
+    for entry in m.values():
+        by_band.setdefault((entry["school"], entry["band"]), []).append(entry["title"].strip())
+
+    grade_map = {}
+    for (sc, band), titles in by_band.items():
+        lo, hi = BAND[band][1]
+        hs = [hours.get((sc, band, t.lower()), 0) for t in titles]
+        total = sum(hs)
+        cum, split_i = 0, len(titles)
+        for i, h in enumerate(hs):
+            cum += h
+            if cum >= total / 2:
+                split_i = i + 1
+                break
+        for i, t in enumerate(titles):
+            grade_map[(sc, band, t)] = lo if i < split_i else hi
+    return grade_map
+
+
 def main():
     m = json.load(open(MAP, encoding="utf-8"))
+    grade_map = _compute_grade_map(m)
     with httpx.Client() as c:
         existing = c.get(f"{SB}/rest/v1/curriculum_topics?select=id,title_hu,grade,nat_id", headers=H).json()
         used_nat = {t["nat_id"] for t in existing if t["nat_id"]}
@@ -43,7 +85,8 @@ def main():
         created_t = created_l = skipped = 0
         for entry in m.values():
             band = entry["band"]; school = entry["school"]; title = entry["title"].strip()
-            code, grade, base = BAND[band]
+            code, _, base = BAND[band]
+            grade = grade_map[(school, band, title)]
             seq[band] += 1
             key = (title, school)
             if key in have:
