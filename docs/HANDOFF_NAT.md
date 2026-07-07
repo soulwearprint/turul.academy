@@ -1,6 +1,20 @@
 # Handoff — NAT Re-foundation (Turul Academy)
 
-_Resumption guide for a fresh chat window. Last updated 2026-06-26._
+_Resumption guide for a fresh chat window. Last updated 2026-07-07._
+
+## ✅ HISTORY: DONE (2026-07-07)
+54/54 NAT Témakörök generated (100% mandatory coverage), the 3-tier app (backend routes,
+frontend nav/lesson-player/quiz) is built and deployed, go-live cutover is applied (History
+routes to `/nat`, old 98 legacy topics retired), XP/progress/quiz-retake are wired and fixed,
+and the topic→grade split bug is fixed live. **turul.academy is serving this content now.**
+This doc is kept as the historical record of that build. For the next subject (Physics), see
+**`docs/HANDOFF_PHYSICS.md`** — it reuses this project's architecture but is NOT a copy-paste:
+read its "What's actually reusable" section before assuming any script works unchanged.
+
+**Still open (non-blocking polish):** teacher pass over `content/exports/_advisory_sweep.md`
+(~60 fact/appropriateness flags); OpenRouter key rotation (leaked to a terminal transcript
+earlier in this project, never rotated — Supabase service key was rotated already); badges
+economy, emelt-szint layer, "Kérdezd Turult" (schema-ready, not built).
 
 ## Where we are
 Pivoting the content model to be faithful to the **official 2024 NAT kerettanterv** (History).
