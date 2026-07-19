@@ -22,14 +22,22 @@ jobs:
           SUPABASE_URL: https://tqsrwhvvghryycgsxfsj.supabase.co
           SUPABASE_KEY: sb_publishable__RXVTiIc8H-54WUKMbe7dQ_jFXLN_-F
         run: |
-          code=$(curl -s -o /dev/null -w "%{http_code}" \
-            "${SUPABASE_URL}/rest/v1/curriculum_subjects?select=id&limit=1" \
-            -H "apikey: ${SUPABASE_KEY}" \
-            -H "Authorization: Bearer ${SUPABASE_KEY}")
-          echo "Academy REST ping → HTTP ${code}"
+          # curl itself can fail before producing an HTTP code (DNS/connect error,
+          # e.g. exit 6) — `|| echo "000"` catches that so `set -e` doesn't abort
+          # the step before the diagnostic echo/if below ever runs.
+          for attempt in 1 2 3; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" \
+              "${SUPABASE_URL}/rest/v1/curriculum_subjects?select=id&limit=1" \
+              -H "apikey: ${SUPABASE_KEY}" \
+              -H "Authorization: Bearer ${SUPABASE_KEY}" || echo "000")
+            echo "Attempt ${attempt}: Academy REST ping → HTTP ${code}"
+            [ "$code" != "000" ] && break
+            [ "$attempt" -lt 3 ] && sleep 5
+          done
           # Any HTTP response means the DB served the request (activity registered).
-          # Only a connection failure (000) indicates the project is down.
+          # Only a connection failure (000) after all retries indicates the project
+          # is down/paused rather than a transient network blip.
           if [ "$code" = "000" ]; then
-            echo "::error::Supabase did not respond — project may be paused or down."
+            echo "::error::Supabase did not respond after 3 attempts — project may be paused or down."
             exit 1
           fi
