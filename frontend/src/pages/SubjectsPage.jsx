@@ -5,6 +5,7 @@ import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
 import PageHeader from '../components/PageHeader'
 import BottomNav from '../components/BottomNav'
+import { usesNatModel, natHref } from '../lib/nat'
 
 const SUBJECT_ICONS = {
   HISTORY: '🏛️',
@@ -77,7 +78,7 @@ export default function SubjectsPage() {
                 </div>
                 {isEnrolled ? (
                   <button
-                    onClick={() => navigate(subject.code?.includes('HISTORY') ? '/nat' : `/subjects/${subject.id}/topics`)}
+                    onClick={() => navigate(usesNatModel(subject.code) ? natHref(subject) : `/subjects/${subject.id}/topics`)}
                     className="shrink-0 text-turul-blue text-sm font-semibold"
                   >
                     {t('subjects.open')}

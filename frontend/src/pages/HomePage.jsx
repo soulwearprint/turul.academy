@@ -6,6 +6,7 @@ import { api } from '../lib/api'
 import BottomNav from '../components/BottomNav'
 import TurulPortrait from '../components/TurulPortrait'
 import { stageForGrade } from '../lib/turul'
+import { usesNatModel, natHref } from '../lib/nat'
 
 function subjectIcon(code) {
   if (code.includes('HISTORY')) return '🏛️'
@@ -66,8 +67,7 @@ export default function HomePage() {
 
   const statusKey = completed === 0 ? 'home.turul.new' : streak >= 3 ? 'home.turul.streak' : 'home.turul.back'
 
-  // History now uses the NAT 3-tier content (/nat); other subjects use the legacy topic flow.
-  const subjectHref = (s) => (s?.code?.includes('HISTORY') ? '/nat' : `/subjects/${s.id}/topics`)
+  const subjectHref = (s) => (usesNatModel(s?.code) ? natHref(s) : `/subjects/${s.id}/topics`)
   const firstSubject = subjects[0]?.subject
   const continueTo = firstSubject ? subjectHref(firstSubject) : '/subjects'
 

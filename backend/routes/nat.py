@@ -15,13 +15,13 @@ from core.xp import award_xp
 
 router = APIRouter(prefix="/api/nat", tags=["nat"])
 
-MODES = ["text", "story", "visual", "quiz", "world"]
+MODES = ["text", "story", "visual", "quiz", "world", "experiment"]
 XP_PER_CORRECT = 10
 XP_PERFECT_BONUS = 20
 
 
 @router.get("/topics")
-async def nat_topics(grade: Optional[int] = None):
+async def nat_topics(grade: Optional[int] = None, subject_id: Optional[str] = None):
     """All NAT Témakörök (topics that have Témák), ordered by grade then order_index."""
     params = {
         "select": "id,nat_id,title,title_hu,grade,order_index,curriculum_lessons!inner(id)",
@@ -29,6 +29,8 @@ async def nat_topics(grade: Optional[int] = None):
     }
     if grade:
         params["grade"] = f"eq.{grade}"
+    if subject_id:
+        params["subject_id"] = f"eq.{subject_id}"
     rows = await db_get("curriculum_topics", params, service=True)
     for r in rows:
         r.pop("curriculum_lessons", None)  # inner-join marker only

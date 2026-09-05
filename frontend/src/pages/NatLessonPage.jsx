@@ -7,6 +7,12 @@ import { CardList, QuizRunner } from '../components/ContentCards'
 const MODE_LABELS = { text: '📖 Szöveg', story: '🎭 Történet', visual: '🗺️ Vizuális', quiz: '🧠 Kvíz' }
 const MAIN_MODES = ['text', 'story', 'visual', 'quiz']
 
+// On-demand collapsible layer beyond the main tabs — a lesson has at most one of these.
+const EXTRA_LAYERS = {
+  world:      { label: '🌍 Világ ekkor' },
+  experiment: { label: '🧪 Kísérlet és felfedezés' },
+}
+
 export default function NatLessonPage() {
   const { lessonId } = useParams()
   const { session } = useAuth()
@@ -14,7 +20,7 @@ export default function NatLessonPage() {
   const [lesson, setLesson] = useState(null)
   const [loading, setLoading] = useState(true)
   const [mode, setMode] = useState('text')
-  const [showWorld, setShowWorld] = useState(false)
+  const [showExtra, setShowExtra] = useState(false)
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -29,7 +35,7 @@ export default function NatLessonPage() {
   if (!lesson) return <div className="flex h-screen items-center justify-center text-slate-400">Nem található.</div>
 
   const tabs = MAIN_MODES.filter(m => lesson.blocks[m])
-  const hasWorld = !!lesson.blocks.world
+  const extraMode = Object.keys(EXTRA_LAYERS).find(m => lesson.blocks[m])
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-6 pb-24">
@@ -59,15 +65,15 @@ export default function NatLessonPage() {
         <CardList mode={mode} cards={lesson.blocks[mode]} />
       )}
 
-      {/* Világ ekkor — on-demand global layer */}
-      {hasWorld && (
+      {/* On-demand extra layer (world for History, experiment for Physics) */}
+      {extraMode && (
         <div className="mt-6">
-          <button onClick={() => setShowWorld(s => !s)}
+          <button onClick={() => setShowExtra(s => !s)}
             className="w-full flex items-center justify-between bg-slate-900 text-white rounded-xl px-4 py-3 font-semibold">
-            <span>🌍 Világ ekkor</span>
-            <span className="text-white/60">{showWorld ? '▲' : '▼'}</span>
+            <span>{EXTRA_LAYERS[extraMode].label}</span>
+            <span className="text-white/60">{showExtra ? '▲' : '▼'}</span>
           </button>
-          {showWorld && <div className="mt-3"><CardList mode="world" cards={lesson.blocks.world} /></div>}
+          {showExtra && <div className="mt-3"><CardList mode={extraMode} cards={lesson.blocks[extraMode]} /></div>}
         </div>
       )}
     </div>

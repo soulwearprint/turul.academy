@@ -1,16 +1,25 @@
 import { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { api } from '../lib/api'
 import BottomNav from '../components/BottomNav'
 
 export default function NatTopicsPage() {
   const [topics, setTopics] = useState([])
+  const [subjectName, setSubjectName] = useState(null)
   const [loading, setLoading] = useState(true)
   const navigate = useNavigate()
+  const [searchParams] = useSearchParams()
+  const subjectId = searchParams.get('subject')
 
   useEffect(() => {
-    api.nat.topics().then(setTopics).finally(() => setLoading(false))
-  }, [])
+    Promise.all([
+      api.nat.topics(undefined, subjectId),
+      api.curriculum.subjects(),
+    ]).then(([tps, subjects]) => {
+      setTopics(tps)
+      setSubjectName(subjects.find(s => s.id === subjectId)?.name_hu ?? null)
+    }).finally(() => setLoading(false))
+  }, [subjectId])
 
   if (loading) return <div className="flex h-screen items-center justify-center text-slate-400">Betöltés…</div>
 
@@ -22,7 +31,7 @@ export default function NatTopicsPage() {
     <div className="max-w-2xl mx-auto px-4 py-6 pb-24">
       <div className="flex items-center gap-3 mb-1">
         <button onClick={() => navigate('/')} className="text-slate-400 hover:text-slate-600">←</button>
-        <h1 className="text-2xl font-display font-bold text-slate-900">Történelem – NAT tananyag</h1>
+        <h1 className="text-2xl font-display font-bold text-slate-900">{subjectName ? `${subjectName} – NAT tananyag` : 'NAT tananyag'}</h1>
       </div>
       <p className="text-slate-500 text-sm mb-6 ml-7">Előnézet · {topics.length} témakör a 2020-as NAT szerint</p>
 

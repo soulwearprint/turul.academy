@@ -135,7 +135,18 @@ def prompt(mode, temakor, tema, altemak, eb):
         return head + ('\nKészíts 5 kérdéses KVÍZT, amely KIZÁRÓLAG a fenti kötelező elemeket kéri számon. Minden kérdéshez rövid magyarázat.\n'
             'JSON: {"title":"","cards":[{"type":"quiz","question_type":"multiple_choice","question":"","options":["A) ","B) ","C) ","D) "],"correct":"A","explanation":""}]}')
     if mode == "world":
-        return (f"Lecke: „{tema}” (Témakör: „{temakor}”).\n\nKészíts egy „VILÁG EKKOR” réteget: mi zajlott EKKOR a "
+        return (f"Lecke: „{tema}” (Témakör: „{temakor}”).\nAltémák: {altemak}\n\n"
+            f"A lecke kötelező NAT-elemei (ez adja meg, MELYIK időszakhoz/eseményhez kell globális párhuzamot keresned — "
+            f"ha ez alább üres vagy nem tartalmaz konkrét évszámot/eseményt, a lecke NEM egy adott történelmi pillanathoz "
+            f"kötött, hanem fogalmi/áttekintő jellegű):\n{eb}\n\n"
+            "ELSŐ LÉPÉS — dönts: a fenti kötelező elemek (különösen a kronológia) alapján van-e a leckének VALÓS, KONKRÉT "
+            "időbeli/eseménybeli horgonya (egy adott évszám, esemény vagy korszak, amihez egy egyidejű nagyvilági esemény "
+            "őszintén köthető)? Ha NINCS ilyen horgony (pl. a lecke fogalmakat, készségeket vagy általános áttekintést tanít, "
+            "nem egy konkrét időponthoz kötött eseményt) — NE találj ki hozzá nagyvilági eseményeket. Ehelyett adj vissza "
+            "PONTOSAN EGY kártyát, amely őszintén jelzi, hogy ehhez a leckéhez nincs egyértelmű globális párhuzam, és ehelyett "
+            "röviden (1-2 mondat) megemlíti, hogy a lecke fogalmai/jelenségei más kultúrákban/korokban is megjelentek — "
+            "konkrétum és kitalált ok-okozat NÉLKÜL.\n"
+            "Csak ha VAN valós horgony: Készíts egy „VILÁG EKKOR” réteget: mi zajlott EKKOR a "
             "nagyvilágban, miközben a fenti magyar/európai események történtek? Párhuzamos globális események, szereplők, okok. "
             "Kártyánként 3-4 TARTALMAS, tényszerűen pontos mondat a globális eseményről (ne csak egy odavetett mondat). "
             "A `year` mezőbe MINDIG az ADOTT esemény saját évszáma kerüljön (pl. „1917”), NE a témakör teljes időtartama. "
@@ -148,8 +159,9 @@ def prompt(mode, temakor, tema, altemak, eb):
             "TILOS az általános, sablonos megfogalmazás (pl. „alapvetően formálta Magyarország jövőjét”, „közvetlenül érintett volt”, "
             "„meghatározta a helyzetét”). "
             "Ügyelj a tárgyi pontosságra (helyes évszámok, békeszerződések, személyek — ne keverd össze őket). "
-            "Ez kiegészítő, érdeklődő tanulóknak szóló réteg, nem kötelező tananyag. 4-6 kártya.\n"
-            'JSON: {"title":"Világ ekkor","cards":[{"type":"world","year":"az adott esemény saját évszáma","heading":"","body":"","link_hu":"konkrét ok-okozati kapcsolat e lecke magyar anyagához"}]}')
+            "Ez kiegészítő, érdeklődő tanulóknak szóló réteg, nem kötelező tananyag. Ha van valós horgony: 4-6 kártya; "
+            "ha nincs: pontosan 1 kártya (lásd fent).\n"
+            'JSON: {"title":"Világ ekkor","cards":[{"type":"world","year":"az adott esemény saját évszáma, vagy üres string ha nincs horgony","heading":"","body":"","link_hu":"konkrét ok-okozati kapcsolat e lecke magyar anyagához, vagy üres string ha nincs horgony"}]}')
 
 async def ensure_lessons(c, topic_id, topic_nat, temak):
     """Idempotently create curriculum_lessons (Témák) from the parsed map, matched by title."""
@@ -168,7 +180,20 @@ ALL_MODES = ["text", "story", "visual", "quiz", "world"]
 FIX_SYS = "Gondos magyar történelem-szerkesztő vagy. CSAK a javított JSON kártyatömböt adod vissza, azonos szerkezettel."
 
 
-async def apply_fixes(c, lessons, allowed_names, rep):
+def cards_from(obj):
+    """Normalize a generator response into a list of cards. Usually {"cards":[...]}, but
+    the model occasionally drops the array wrapper for a single-card response (e.g. the
+    world prompt's 'exactly one card' no-anchor case) and returns the card object bare."""
+    if isinstance(obj, list):
+        return obj
+    if isinstance(obj, dict):
+        if "cards" in obj:
+            return obj["cards"]
+        return [obj]  # bare single card
+    return obj
+
+
+async def apply_fixes(c, lessons, allowed_names, rep, temakor=None):
     """Auto-fix the machine-correctable issues the guard rail found:
     invented names in story (targeted rewrite) + súlyos fact errors (targeted correction).
     Returns the number of blocks patched."""
@@ -181,8 +206,7 @@ async def apply_fixes(c, lessons, allowed_names, rep):
         return r[0] if r else None
 
     async def patch(bid, obj):
-        cards = obj.get("cards", obj) if isinstance(obj, dict) else obj
-        await c.patch(f"{SB}/rest/v1/content_blocks?id=eq.{bid}", headers={**H_SB, "Prefer": "return=minimal"}, json={"content": cards})
+        await c.patch(f"{SB}/rest/v1/content_blocks?id=eq.{bid}", headers={**H_SB, "Prefer": "return=minimal"}, json={"content": cards_from(obj)})
 
     # 1) invented names in story → rewrite to anonymous subjects
     for iss in rep.get("appropriateness", []):
@@ -221,6 +245,23 @@ async def apply_fixes(c, lessons, allowed_names, rep):
             print(f"   🔧 tényjavítás: „{iss['tema']}” / {mode}")
         except Exception as e:
             print(f"   ⚠ tényjavítás sikertelen ({iss.get('tema')}): {e}")
+
+    # 2b) world-layer relevance issues → regenerate that lesson's whole world block.
+    # altemak/eb aren't available here (only the lesson title is), but the fixed world
+    # prompt already asks the model to judge for itself whether a real anchor exists.
+    world_temas = {(iss.get("tema") or "").strip() for iss in rep.get("world", [])}
+    for tema in world_temas:
+        L = by_title.get(tema)
+        blk = await get_block(L["id"], "world") if L else None
+        if not blk:
+            continue
+        try:
+            new = await ai(c, prompt("world", temakor or "", tema, "", ""))
+            new = await proof(c, new)
+            await patch(blk["id"], new); fixes += 1
+            print(f"   🔧 világréteg újragenerálva (relevancia): „{tema}”")
+        except Exception as e:
+            print(f"   ⚠ világréteg javítás sikertelen ({tema}): {e}")
 
     # 3) missing mandatory NAT elements → inject into the best-fitting Téma's text block
     titles = [L["title_hu"].strip() for L in lessons]
@@ -275,9 +316,8 @@ async def generate_topic(c, topic_nat, validate=True, modes=None, autofix=True, 
         await c.request("DELETE", f"{SB}/rest/v1/content_blocks?topic_id=eq.{topic_id}&lesson_id=is.null", headers=H_SB)
 
     async def save(lesson_id, mode, scope, obj):
-        cards = obj.get("cards", obj) if isinstance(obj, dict) else obj
         payload = {"lesson_id": lesson_id, "topic_id": topic_id, "mode": mode, "level": "alap",
-                   "scope": scope, "content": cards, "review_status": "approved", "is_active": True}
+                   "scope": scope, "content": cards_from(obj), "review_status": "approved", "is_active": True}
         await c.post(f"{SB}/rest/v1/content_blocks", headers={**H_SB, "Prefer": "return=minimal"}, json=payload)
 
     sem = asyncio.Semaphore(GEN_CONCURRENCY)
@@ -336,10 +376,10 @@ async def generate_topic(c, topic_nat, validate=True, modes=None, autofix=True, 
 
         # auto-fix-and-recheck loop: fix names + súlyos facts, then re-validate
         rounds = 0
-        while autofix and rounds < max_rounds and (rep["fact"] or rep.get("missing") or any(
+        while autofix and rounds < max_rounds and (rep["fact"] or rep.get("missing") or rep.get("world") or any(
                 i.get("kind") == "nev" for i in rep["appropriateness"])):
             print(f"\n🔁 auto-fix kör {rounds + 1}…")
-            applied = await apply_fixes(c, lessons, allowed_names, rep)
+            applied = await apply_fixes(c, lessons, allowed_names, rep, temakor=temakor)
             if not applied:
                 break
             rep = await V._run(topic_nat)

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import SketchDiagram from './SketchDiagram'
 
 // Shared renderers for NAT 3-tier content_blocks (text | story | visual | quiz | world).
 
@@ -65,6 +66,57 @@ export function WorldCard({ card }) {
         <p className="text-emerald-300/90 text-sm leading-relaxed border-t border-white/10 pt-3">
           <span className="font-semibold">↪ Nekünk azért fontos: </span>{card.link_hu}
         </p>
+      )}
+    </div>
+  )
+}
+
+export function ExperimentCard({ card }) {
+  return (
+    <div className="flex flex-col gap-4 px-6 py-6 bg-slate-900 rounded-2xl">
+      <div className="flex items-center gap-2">
+        <span className="text-2xl">🧪</span>
+        <h3 className="text-lg font-bold text-white leading-snug">{card.heading}</h3>
+      </div>
+      {card.discovery && (
+        <p className="text-white/80 leading-relaxed text-sm">
+          <span className="text-amber-300 font-semibold">📜 Felfedezés: </span>{card.discovery}
+        </p>
+      )}
+      {typeof card.sketch === 'string' && card.sketch && (
+        <div className="bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+          <span className="text-xs font-semibold text-white/50 uppercase tracking-wide">✏️ Vázlat</span>
+          <p className="text-white/80 text-sm mt-1 leading-relaxed">{card.sketch}</p>
+        </div>
+      )}
+      {typeof card.sketch === 'object' && card.sketch?.shapes?.length > 0 && (
+        <div className="bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+          <span className="text-xs font-semibold text-white/50 uppercase tracking-wide">✏️ Vázlat</span>
+          <div className="mt-2">
+            <SketchDiagram sketch={card.sketch} />
+          </div>
+        </div>
+      )}
+      {card.today && (
+        <p className="text-emerald-300/90 text-sm leading-relaxed border-t border-white/10 pt-3">
+          <span className="font-semibold">⚙️ Ma: </span>{card.today}
+        </p>
+      )}
+      {(card.try_basic || card.try_advanced) && (
+        <div className="flex flex-col gap-2 border-t border-white/10 pt-3">
+          {card.try_basic && (
+            <div className="bg-emerald-400/10 border border-emerald-400/20 rounded-xl px-4 py-3">
+              <span className="text-xs font-semibold text-emerald-300 uppercase tracking-wide">🧪 Próbáld ki — egyszerű</span>
+              <p className="text-white/80 text-sm mt-1 leading-relaxed">{card.try_basic}</p>
+            </div>
+          )}
+          {card.try_advanced && (
+            <div className="bg-sky-400/10 border border-sky-400/20 rounded-xl px-4 py-3">
+              <span className="text-xs font-semibold text-sky-300 uppercase tracking-wide">🔬 Próbáld ki — haladó</span>
+              <p className="text-white/80 text-sm mt-1 leading-relaxed">{card.try_advanced}</p>
+            </div>
+          )}
+        </div>
       )}
     </div>
   )
@@ -176,7 +228,8 @@ export function QuizRunner({ cards, onSubmit }) {
 }
 
 export function CardList({ mode, cards }) {
-  const Renderer = { text: TextCard, story: StoryCard, visual: VisualCard, world: WorldCard, quiz: QuizCard }[mode]
+  const Renderer = { text: TextCard, story: StoryCard, visual: VisualCard, world: WorldCard,
+                     experiment: ExperimentCard, quiz: QuizCard }[mode]
   if (!Renderer) return null
   return (
     <div className="flex flex-col gap-4">

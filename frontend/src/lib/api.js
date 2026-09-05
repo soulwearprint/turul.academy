@@ -61,7 +61,10 @@ export const api = {
     updateProgress: (lid, body, token)    => post(`/api/lessons/${lid}/progress`, body, token),
   },
   nat: {
-    topics:      (grade)              => get(`/api/nat/topics${grade ? `?grade=${grade}` : ''}`),
+    topics:      (grade, subjectId)   => {
+      const q = [grade && `grade=${grade}`, subjectId && `subject_id=${subjectId}`].filter(Boolean).join('&')
+      return get(`/api/nat/topics${q ? `?${q}` : ''}`)
+    },
     topic:       (tid)                => get(`/api/nat/topics/${tid}`),
     lesson:      (lid)                => get(`/api/nat/lessons/${lid}`),
     topicQuiz:   (tid)                => get(`/api/nat/topics/${tid}/quiz`),

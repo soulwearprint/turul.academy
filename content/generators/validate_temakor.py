@@ -130,7 +130,9 @@ def _completeness(topic, lessons, blocks_by_lesson, topic_quiz, nat_elem):
                 issues.append(("FAIL", f"„{L['title_hu']}”: hiányzó mód: {m}"))
         for b in blocks_by_lesson.get(L["id"], []):
             n = len(b["content"]) if isinstance(b["content"], list) else 0
-            if n < 4:
+            # world mode: a single honest "no genuine parallel" card is a valid, expected
+            # outcome for lessons with no real temporal anchor — not a completeness gap.
+            if n < 4 and not (b["mode"] == "world" and n == 1):
                 issues.append(("WARN", f"„{L['title_hu']}” / {b['mode']}: csak {n} kártya (<4)"))
     if not topic_quiz:
         issues.append(("FAIL", "Hiányzik a témazáró kvíz (scope=topic)."))
@@ -185,6 +187,46 @@ FACT_SYS = ("Te tapasztalt magyar történelemtanár és tényellenőr vagy. KIZ
 APPRO_SYS = ("Te a Turul Academy tartalmi lektora vagy. A márkahang: intelligens, barátságos, bátorító, "
     "nyugodt. KERÜLENDŐ: nacionalista/uszító hangnem, vállalati közhely, gyerekes/lekezelő stílus, "
     "idegen (nem magyar) szavak, korosztálynak nem megfelelő tartalom. CSAK érvényes JSON-t adsz vissza.")
+
+WORLD_SYS = ("Te tapasztalt magyar történelemtanár vagy, aki egy „Világ ekkor” (globális párhuzam) réteget "
+    "bírál el. Ez a réteg NEM azt ellenőrzi, hogy a globális esemény MAGA igaz-e, hanem hogy VALÓBAN, "
+    "KONKRÉTAN kapcsolódik-e EHHEZ a leckéhez — nem csak egy általános korszakhoz vagy általános "
+    "„nemzeti mozgalom”/„modernizáció” hívószóhoz. Jelöld azokat a kártyákat, ahol: (a) a globális esemény "
+    "időben/tartalmilag nincs érdemi, konkrét kapcsolatban a lecke tárgyával, csak egy laza, sablonos "
+    "asszociáció (pl. „mindkettő a nemzeti öntudatot erősítette”); vagy (b) a lecke egyáltalán nem egy "
+    "konkrét történelmi eseményhez/időponthoz kötött (pl. fogalmakat, készségeket vagy általános "
+    "áttekintést tanít), ÉS a kártya MÉGIS konkrét, kitalált egyidejű világeseményt/ok-okozatot állít párhuzamba, "
+    "ahelyett hogy ezt őszintén jelezné. "
+    "FONTOS KIVÉTEL — NE jelöld hibásnak: ha a lecke nincs konkrét eseményhez kötve, és a kártya EZT ŐSZINTÉN "
+    "elismeri (üres/hiányzó `year` és `link_hu` mező, vagy a szöveg kimondja, hogy nincs egyértelmű globális "
+    "párhuzam, csak általános kulturális összevetést tesz konkrét ok-okozat kitalálása nélkül) — ez a HELYES, "
+    "kívánt viselkedés egy horgony nélküli leckénél, nem hiba. "
+    "CSAK érvényes JSON-t adsz vissza.")
+
+def _is_honest_no_anchor_card(card):
+    """A card with no year/link_hu is the deliberate 'no genuine global parallel' output
+    (see generate_temakor.py's world prompt) — always compliant, never sent to the LLM judge."""
+    return not (card.get("year") or "").strip() and not (card.get("link_hu") or "").strip()
+
+
+async def _world_relevance_check(c, tema, other_blocks, world_blocks):
+    if not world_blocks:
+        return []
+    all_cards = world_blocks[0]["content"] or []
+    judge_cards = [card for card in all_cards if not _is_honest_no_anchor_card(card)]
+    if not judge_cards:
+        return []  # every card is an honest no-anchor disclaimer — nothing to judge
+    context = json.dumps([{"mode": b["mode"], "content": b["content"]} for b in other_blocks], ensure_ascii=False)
+    cards = json.dumps(judge_cards, ensure_ascii=False)
+    out = await _ai_json(c, WORLD_SYS,
+        f"Lecke: „{tema}”.\n\nA LECKE SAJÁT TARTALMA (ez adja meg, miről is szól valójában):\n{context}\n\n"
+        f"A LECKE „VILÁG EKKOR” KÁRTYÁI (ezt kell elbírálnod):\n{cards}\n\n"
+        "Add vissza:\n"
+        '{"issues":[{"heading":"az érintett kártya heading mezője, vagy \\"(egész réteg)\\" ha a lecke '
+        'egyáltalán nem eseményhez kötött","problem":"miért nincs érdemi/konkrét kapcsolat","suggestion":"mit '
+        'kellene tenni (pl. törölni, vagy \\"nincs egyértelmű globális párhuzam\\" jellegű őszinte kártyára cserélni)"}]}\n'
+        "Ha minden kártya érdemi, konkrét kapcsolatban áll a lecke tárgyával, üres issues tömb.")
+    return out.get("issues", [])
 
 async def _fact_check(c, tema, blocks):
     payload = json.dumps([{"mode": b["mode"], "content": b["content"]} for b in blocks], ensure_ascii=False)
@@ -279,23 +321,32 @@ async def _run(topic_nat):
         comp_issues, cov, missing = _completeness(topic, lessons, by_lesson, topic_quiz, nat_elem)
         allowed_names = (nat_elem or {}).get("szemelyek", [])
 
-        fact, appro = [], []
+        fact, appro, world = [], [], []
         active = [L for L in lessons if by_lesson.get(L["id"])]
 
         async def check_lesson(L):
             lb = by_lesson[L["id"]]
+            non_world = [b for b in lb if b["mode"] != "world"]
+            world_b = [b for b in lb if b["mode"] == "world"]
             return L["title_hu"], await asyncio.gather(
-                _fact_check(c, L["title_hu"], lb), _appro_check(c, L["title_hu"], lb, band))
+                _fact_check(c, L["title_hu"], lb), _appro_check(c, L["title_hu"], lb, band),
+                _world_relevance_check(c, L["title_hu"], non_world, world_b))
 
-        for title, (f, a) in await asyncio.gather(*(check_lesson(L) for L in active)):
-            for x in f: x["tema"] = title; fact.append(x)
-            for x in a: x["tema"] = title; appro.append(x)
+        for title, (f, a, w) in await asyncio.gather(*(check_lesson(L) for L in active)):
+            # defensive: an LLM check occasionally returns a malformed "issues" entry
+            # (e.g. a bare string instead of an object) — skip rather than crash the run.
+            for x in f:
+                if isinstance(x, dict): x["tema"] = title; fact.append(x)
+            for x in a:
+                if isinstance(x, dict): x["tema"] = title; appro.append(x)
+            for x in w:
+                if isinstance(x, dict): x["tema"] = title; world.append(x)
 
         fact = await _confirm_facts(c, fact)  # precision pass: drop false alarms
         appro += _story_name_scan(by_lesson, lessons, allowed_names)  # deterministic name integrity
 
         return {"topic": topic, "band": band, "coverage": cov, "missing": missing,
-                "completeness": comp_issues, "fact": fact, "appropriateness": appro}
+                "completeness": comp_issues, "fact": fact, "appropriateness": appro, "world": world}
 
 
 def _verdict(rep):
@@ -303,7 +354,7 @@ def _verdict(rep):
     # ADVISORY: they surface a review list for the human teacher, never auto-block.
     if any(i[0] == "FAIL" for i in rep["completeness"]):
         return "FAIL"
-    if rep["fact"] or rep["appropriateness"] or any(i[0] == "WARN" for i in rep["completeness"]):
+    if rep["fact"] or rep["appropriateness"] or rep["world"] or any(i[0] == "WARN" for i in rep["completeness"]):
         return "REVIEW"
     return "PASS"
 
@@ -333,6 +384,13 @@ def _report_md(rep):
             if i.get("suggestion"): L.append(f"    - javaslat: {i['suggestion']}")
     else:
         L.append("- ✅ Korosztályi megfelelés és márkahang rendben.")
+    L.append("\n## 4. Világ ekkor — relevancia — tanári felülvizsgálatra")
+    if rep["world"]:
+        for i in rep["world"]:
+            L.append(f"- **FELÜLVIZSGÁLAT** — „{i.get('tema','')}” / {i.get('heading','')}: {i.get('problem','')}")
+            if i.get("suggestion"): L.append(f"    - javaslat: {i['suggestion']}")
+    else:
+        L.append("- ✅ A világ ekkor kártyák érdemi, konkrét kapcsolatban állnak a leckékkel.")
     return "\n".join(L)
 
 

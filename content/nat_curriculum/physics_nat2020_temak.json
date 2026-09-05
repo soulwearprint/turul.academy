@@ -1,0 +1,1371 @@
+{
+  "F::Bevezetés a fizikába": {
+    "school": "F",
+    "band": "7-8",
+    "title": "Bevezetés a fizikába",
+    "oraszam": 8,
+    "temak": [
+      {
+        "title": "A fizika tudománya és alapjai",
+        "feladatok": [
+          "A fizika tudománya által vizsgálható jelenségek felismerése, a tudományos megismerés ismérvei",
+          "A testek mérhető tulajdonságai: a hosszúság, térfogat, tömeg jele, mértékegységei és mérőeszközei, a mértékegységek átváltása",
+          "Az alapvető fizikai mennyiségek jellemző értékeinek tapasztalati becslése"
+        ]
+      },
+      {
+        "title": "Idő és hőmérséklet mérése",
+        "feladatok": [
+          "Az eltelt idő és a hőmérséklet jele, mértékegységei. A Celsius-skála",
+          "A távolság, a térfogat, az eltelt idő, a tömeg, a hőmérséklet közvetlen mérése a rendelkezésre állóeszközökkel (beleértve a mobiltelefon óráját vagy a digitális konyhai mérleget, más konyhai mérőeszközt)",
+          "A mérés pontosságának becslése ismételt mérések, illetve az eszköz jellemző adatainak ismeretében. A mérési eredmények összehasonlítása"
+        ]
+      },
+      {
+        "title": "Sűrűség és anyagvizsgálat",
+        "feladatok": [
+          "Azonos anyagból készült különböző tömegű testek tömegének és térfogatának kapcsolata.  Az anyagra jellemző sűrűség megállapítása",
+          "Sűrűségadatok használata a tömeg vagy térfogat kiszámolására"
+        ]
+      },
+      {
+        "title": "A fizika szakterületei és tudományos vizsgálat",
+        "feladatok": [
+          "A fizika szakterületei, néhány újabb eredmény egyszerű bemutatása, egy állítás tudományos megalapozottságának kritikus vizsgálata"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "mérés",
+      "hosszúság",
+      "térfogat",
+      "tömeg",
+      "sűrűség",
+      "idő",
+      "hőmérséklet",
+      "a mérés pontossága",
+      "a mért adatok átlaga",
+      "becslés",
+      "tudományos eredmény"
+    ],
+    "tevekenysegek": [
+      "Adott idejű folyamatok létrehozása (pl. 1 perc alatt leguruló golyó)",
+      "Szilárd, folyékony és légnemű anyagok térfogatának értelmezése, mérése",
+      "Az emberi test méreteihez kötött távolságok vizsgálata",
+      "Időtartam becslése (pl. 1 perc elteltének becslése számolással)",
+      "Távolságok mérése digitális térképeken",
+      "Külső hőmérséklet vizsgálata egy adott időszakban, az eredmények ábrázolása, átlagérték kiszámítása",
+      "A Föld éghajlatának globális változásával kapcsolatos hőmérsékleti adatsorok elemzése",
+      "Szilárd és folyékony anyagok sűrűségének összehasonlítása, illetve becslése csoportos kísérletezés során",
+      "Bemutató készítése a fizika egyik nevezetes felismeréséről. Milyen előzményei voltak, milyen bizonyítékok támasztják alá, milyen viták kísérték a felismerés megfogalmazását?"
+    ]
+  },
+  "F::Az energia": {
+    "school": "F",
+    "band": "7-8",
+    "title": "Az energia",
+    "oraszam": 8,
+    "temak": [
+      {
+        "title": "Energiafogyasztás és teljesítmény a háztartásban",
+        "feladatok": [
+          "A teljesítmény használata az energiafogyasztás meghatározására",
+          "A lakásban található legnagyobb fogyasztók kiválasztása, jellemző adataik (teljesítmény, energiafogyasztás) áttekintése",
+          "A háztartásban használt energiahordozók megismerése: elektromos áram, földgáz, szén, fa"
+        ]
+      },
+      {
+        "title": "Energiahordozók és energiaátalakulások",
+        "feladatok": [
+          "Az energiahordozók jellemzése, csoportosítása: fosszilis energia, zöldenergia",
+          "Az energia árának becslése néhány fűtési-melegítési módszer (például gázkonvektor, elektromos vízmelegítő) esetében a háztartás számláinak segítségével",
+          "A rugalmas energia mozgási energiává alakulásának (rugós eszközzel kilőtt golyó), a helyzeti energia mozgási energiává alakulásának (zuhanó test) megfigyelése. A mozgási energia belső energiává alakulásának (összedörzsölt tenyér) megfigyelése",
+          "Az erőművekben bekövetkező energiaátalakulások vizsgálata, az energia megmaradása"
+        ]
+      },
+      {
+        "title": "Megújuló energiaforrások és energiatakarékosság",
+        "feladatok": [
+          "A szélerőmű, napelemek, napkollektor működésének értelmezése",
+          "Néhány energiatakarékossági lehetőség gyakorlatban való közvetlen megfigyelése, működési elve: termosztátos fűtőeszköz, hőszigetelés"
+        ]
+      },
+      {
+        "title": "Táplálkozás és energiaegyensúly",
+        "feladatok": [
+          "A táplálkozási problémák fizikai hátterének megismerése: az energiafogyasztás és bevitel egyensúlyának vizsgálata az élelmiszerek energiatartalmát megadó adatok segítségével"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "energiafogyasztás",
+      "teljesítmény",
+      "energiahordozók",
+      "zöldenergia",
+      "fosszilis energia",
+      "energiabiztonság",
+      "energiatakarékosság",
+      "energiamegmaradás",
+      "rugalmas energia",
+      "helyzeti energia",
+      "mozgási energia",
+      "belső energia"
+    ],
+    "tevekenysegek": [
+      "Az emberiség energiafogyasztásának és a rendelkezésre álló energiaforrások mennyiségének áttekintése, az energiabiztonság fogalma",
+      "A jövő lehetséges energiaforrásaival kapcsolatos ismeretek gyűjtése, bemutatása",
+      "A háztartásban használatos izzók gazdaságosságának összehasonlítása",
+      "Az emberi szervezet energiafelhasználásának elemzése",
+      "Az energiatakarékosság lehetséges módszereinek vizsgálata a közvetlen környezetben",
+      "A diák egy átlagos napjának végiggondolása energiafogyasztás szempontjából. Milyen energiahordozókat használt, milyen energiaszükségletet elégített ki, a felhasznált energiamennyiség becslése"
+    ]
+  },
+  "F::Mozgás közlekedés és sportolás közben": {
+    "school": "F",
+    "band": "7-8",
+    "title": "Mozgás közlekedés és sportolás közben",
+    "oraszam": 10,
+    "temak": [
+      {
+        "title": "Mozgások megfigyelése és csoportosítása",
+        "feladatok": [
+          "A hely megadása, a környezetben tapasztalható mozgások megfigyelése, csoportosítása a pálya és a helyváltozatás gyorsasága alapján",
+          "A sebesség nagysága, iránya, mértékegysége",
+          "A közel állandó sebességű mozgások (mozgólépcső, autó, korcsolya) megfigyelése, kialakulásuk körülményei, Newton első törvénye"
+        ]
+      },
+      {
+        "title": "Út és idő kiszámítása",
+        "feladatok": [
+          "A megtett út, az utazásból hátralévő idő kiszámolása a sebesség nagyságának segítségével"
+        ]
+      },
+      {
+        "title": "Erők és gyorsulás vizsgálata",
+        "feladatok": [
+          "Az elejtett test mozgásának vizsgálata. A nehézségi erő és a nehézségi gyorsulás. Newton 2. törvénye",
+          "A gyorsuló és kanyarodó autó sebesség változását okozó külső hatás (súrlódás, súrlódási erő) azonosítása",
+          "A sebességváltozást okozó erő nagyságának és a tömeg szerepének megfigyelése fékezés során"
+        ]
+      },
+      {
+        "title": "Közlekedési eszközök biztonsági rendszerei",
+        "feladatok": [
+          "Az önvezérelt autó működési elve",
+          "A légzsák és a biztonsági öv működésének fizikai magyarázata"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "hely",
+      "pálya",
+      "elmozdulás",
+      "út",
+      "átlagsebesség",
+      "kölcsönhatás",
+      "gyorsulás",
+      "nehézségi gyorsulás",
+      "erő",
+      "Newton első  és második törvénye"
+    ],
+    "tevekenysegek": [
+      "Anyaggyűjtés és beszélgetés Newton vagy Galilei életéről, sokoldalú kutatásairól",
+      "Sebességrekordok gyűjtése, vizsgálata",
+      "Közlekedéstervezés pl. valamilyen applikáció segítségével, az átlagsebességek vizsgálata",
+      "Sebesség mérésére szolgáló eljárás kidolgozása",
+      "Mozgás elemzése valamilyen telefonos applikáció segítségével"
+    ]
+  },
+  "F::Lendület és egyensúly": {
+    "school": "F",
+    "band": "7-8",
+    "title": "Lendület és egyensúly",
+    "oraszam": 10,
+    "temak": [
+      {
+        "title": "Lendület és rakétamozgás",
+        "feladatok": [
+          "A lendület kiszámítása, a lendület megmaradásának vizsgálata néhány hétköznapi helyzetben",
+          "A rakéta mozgásának kísérleti vizsgálata (léggömb-rakéta), fizikai magyarázata. Newton harmadik törvénye"
+        ]
+      },
+      {
+        "title": "Körmozgások és lengések vizsgálata",
+        "feladatok": [
+          "Körmozgások és lengések (például a hinta lengései) megfigyelése, a periódusidő mérése. A periódusidőt befolyásoló tényezők azonosítása."
+        ]
+      },
+      {
+        "title": "Egyensúly és alakváltozások",
+        "feladatok": [
+          "A környezetünkben megfigyelhető nyugvó testek egyensúlyának vizsgálata.  Annak magyarázata, hogy miért nem esik le, miért nem fordul el a test",
+          "Rugalmas és rugalmatlan alakváltozások megfigyelése, a kétféle viselkedés összehasonlítása",
+          "Szemléletes kép kialakítása a szilárd anyagok belső szerkezetéről"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "lendület",
+      "a lendület megmaradása",
+      "periódusidő",
+      "fordulatszám",
+      "egyensúly",
+      "amplitúdó rezgésszám",
+      "rugalmas alakváltozás",
+      "Newton harmadik törvénye"
+    ],
+    "tevekenysegek": [
+      "Egyszerű ütközések kísérleti vizsgálata a lendületmegmaradás szemléltetésére",
+      "Egyes háztartási eszközök, mint egyszerű gépek erőátvitelének vizsgálata",
+      "A Föld mozgási periódusainak vizsgálata az időszámítás szempontjából",
+      "Anyaggyűjtés és beszélgetés: Arkhimédész és gépei",
+      "Néhány gép (például: emelők, gőzgép, elektromos motor, benzinmotor) működésének megfigyelése, gazdaságot, társadalmat megváltoztató hatásának bemutatása",
+      "A szilárd anyagok belső szerkezetét ábrázoló rajz vagy demonstrációs eszköz készítése"
+    ]
+  },
+  "F::Víz és levegő a háztartásban és a környezetünkben": {
+    "school": "F",
+    "band": "7-8",
+    "title": "Víz és levegő a háztartásban és a környezetünkben",
+    "oraszam": 14,
+    "temak": [
+      {
+        "title": "Halmazállapot-változások és hőmérséklet",
+        "feladatok": [
+          "A jég olvadásának és a víz fagyásának kísérleti vizsgálata, a hőmérséklet időbeli változásának megfigyelése.  Az olvadáspont",
+          "A környezetben lezajló termikus kölcsönhatások felismerése, összegyűjtése",
+          "A leves, a tea melegítésének megfigyelése. A melegítés gyorsaságát meghatározó fizikai körülmények kísérleti vizsgálata, egyszerű magyarázata",
+          "A víz forrásának kísérleti megfigyelése, a hőmérséklet mérése: forráspont, vízgőz",
+          "A halmazállapotok és halmazállapot-változások értelmezése az anyagot alkotó részecskék (apró golyók) egyszerű modelljének felhasználásával",
+          "A téli fagy romboló erejének fizikai magyarázata, a fagyás megfigyelése jégkocka készítés során"
+        ]
+      },
+      {
+        "title": "Víz tulajdonságai és nyomás",
+        "feladatok": [
+          "A víz tapasztalati tulajdonságainak kísérleti vizsgálata és értelmezése: összenyomhatatlanság, sűrűség, folyékonyság",
+          "A nyomás jele, mértékegysége. Alkalmazása a felületre ható erő kiszámolására",
+          "A hidrosztatikai nyomás kísérleti vizsgálata, a mélységtől való függés és az iránytól való függetlenség felismerése. A hidrosztatikai nyomás kiszámolása",
+          "Az acélból készült hajók úszásának fizikai magyarázata, a sűrűségfeltétellel és Arkhimédész-törvényének segítségével",
+          "Kapilláris jelenségek megfigyelése a háztartásban (felmosás, szivacs)"
+        ]
+      },
+      {
+        "title": "Hőmérséklet és légköri jelenségek",
+        "feladatok": [
+          "Szilárd anyagok melegítésének kísérleti megfigyelése, a tapasztalt hőtágulás, hővezetés kvalitatív fizikai magyarázata",
+          "A levegő fizikai tulajdonságai: nyomás, hőmérséklet, páratartalom",
+          "A szél, az eső, a harmat, a dér, a hó, a jégeső és a felhők kialakulásának egyszerű fizikai magyarázata"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "légnemű",
+      "folyékony",
+      "szilárd",
+      "fagyás",
+      "olvadás",
+      "párolgás",
+      "lecsapódás",
+      "forrás",
+      "kapilláris csövek",
+      "nyomás",
+      "hidrosztatikai nyomás",
+      "felhajtóerő",
+      "úszás",
+      "lebegés",
+      "sűrűségfeltétel",
+      "termikus kölcsönhatás",
+      "melegítés",
+      "felvett és leadott hő",
+      "nyomáskülönbség"
+    ],
+    "tevekenysegek": [
+      "Hőmérő készítése",
+      "A nyomás időjárástól és magasságtól való függésének kísérleti vizsgálata",
+      "A páratartalom változásának kísérleti vizsgálata egyszerű mérőeszközzel, a páratartalom hatása a lakókörnyezetre, az emberi szervezetre",
+      "Úszó sűrűségmérő működésének vizsgálata, értelmezése",
+      "Cartesius-búvár készítése",
+      "A kapilláris jelenségek szerepe a természetben, anyaggyűjtés",
+      "Az álló, ülő, fekvő ember által a talajra kifejtett nyomás becslése",
+      "Beszélgetés az alábbi kérdésekről: Hogyan érzékeljük a levegő nyomását, miért pattog a fülünk, ha gyorsan emelkedünk vagy süllyedünk?"
+    ]
+  },
+  "F::Elektromosság a háztartásban": {
+    "school": "F",
+    "band": "7-8",
+    "title": "Elektromosság a háztartásban",
+    "oraszam": 14,
+    "temak": [
+      {
+        "title": "Elektromos állapot és jelenségek",
+        "feladatok": [
+          "Az elektromos állapot kialakulásának megfigyelése kísérletezés közben, magyarázata a töltött részecskék és atomról alkotott egyszerű elképzelés (elektron, proton, atommag) segítségével",
+          "A villámok kialakulásának fizikai magyarázata"
+        ]
+      },
+      {
+        "title": "Elektromos áram és eszközök",
+        "feladatok": [
+          "Szemléletes kép alkotása az elektromos – egyen és váltakozó – áramról. Egyen és váltakozó-áramú eszközök azonosítása a környezetünkben",
+          "A feszültség és áramerősség jele, mértékegysége, feltüntetése az elektromos eszközökön",
+          "Az áramerősség várható értékének meghatározása az ellenállás ismeretében. A technikai alkalmazásokban gyakori szigetelő és vezető anyagok ellenállásának mérése",
+          "Az egyszerű áramkör részei: áramforrás, kapcsoló, fogyasztók, vezeték",
+          "Elemek és akkumulátorok jellemző adatainak összehasonlítása"
+        ]
+      },
+      {
+        "title": "Biztonság az elektromosság használatában",
+        "feladatok": [
+          "Az emberre veszélyes feszültség és áramerősség értékek. Az áramütés hatása",
+          "A Joule-hő meghatározása. A vasaló, a hajszárító, a vízmelegítő működési elve: a fűtőszál kialakítása és szerepe",
+          "Áramütés-veszélyes helyzetek a lakásban: A rövidzár, a biztosíték és a földelés szerepe az elektromos eszközök biztonságos használata során"
+        ]
+      },
+      {
+        "title": "Elektromágnesesség és alkalmazásai",
+        "feladatok": [
+          "Az iránytű használatának fizikai alapja",
+          "Jedlik Ányos munkássága és az elektromos motor. A transzformátor működésének megfigyelése"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "atom",
+      "elektromos állapot",
+      "elektromos áram",
+      "feszültség",
+      "áramerősség",
+      "ellenállás",
+      "Ohm törvénye",
+      "áramforrás",
+      "fogyasztó",
+      "Joule-hő",
+      "áramütés",
+      "elektromos energia",
+      "teljesítmény",
+      "dipólus",
+      "transzformátor"
+    ],
+    "tevekenysegek": [
+      "A dörzselektromos jelenség kísérleti vizsgálata például léggömbök felhasználásával",
+      "Háztartási eszközök elektromos tulajdonságainak vizsgálata",
+      "Az elektromos biztosíték szerepe és működése a háztartásban",
+      "Elemek és akkumulátorok környezeti hatásának elemzése",
+      "Adatok gyűjtése a Föld mágneses teréről",
+      "LED-et tartalmazó egyszerű áramkör készítése, az áramkörbe illesztett változó ellenállású elem (változó hosszúságú grafitbél, termiszor, fotoellenállás, potencióméter) hatásának megfigyelése, lehetőség szerint a feszültség és áramerősség mérése az áramkörben."
+    ]
+  },
+  "F::Világítás, fény, optikai eszközök": {
+    "school": "F",
+    "band": "7-8",
+    "title": "Világítás, fény, optikai eszközök",
+    "oraszam": 12,
+    "temak": [
+      {
+        "title": "A fény terjedése és visszaverődése",
+        "feladatok": [
+          "A fény egyenes vonalú terjedésének megfigyelése, kísérleti vizsgálata, demonstrálása párhuzamos nyaláb vagy kis teljesítményű (az egészségre veszélytelen) lézer segítségével",
+          "A síktükörben látható tükörkép kialakulásának magyarázata a fény szabályos visszaverődésével, a fénysugár útjának megrajzolásával"
+        ]
+      },
+      {
+        "title": "Fényforrások és tulajdonságaik",
+        "feladatok": [
+          "A háztartásban használt fényforrások és azok tulajdonságainak (a fény színe, a fényerősség, a kibocsátott fény térbeli eloszlása, az energiahatékonyság, ár, élettartam) megismerése, a működésükhöz szükséges áramforrás kiválasztása"
+        ]
+      },
+      {
+        "title": "Fénytörés és lencsék",
+        "feladatok": [
+          "A fénytörés jelenségének megfigyelése",
+          "A gyűjtőlencse optikai tulajdonságainak kísérleti vizsgálata. A nagyító képalkotásának fizikai magyarázata"
+        ]
+      },
+      {
+        "title": "Látás és optikai eszközök",
+        "feladatok": [
+          "A látás folyamatának fizikai magyarázata. Jellegzetes lencsehibák: rövidlátás, távollátás, ezek korrekciója szemüveggel, kontaktlencsével, lézeres beavatkozással. A szem egészségvédelme",
+          "Megfigyelések nagyítóval vagy mikroszkóppal illetve távcsővel vagy látcsővel",
+          "A távcső és mikroszkóp részeinek vizsgálata, működésének fizikai magyarázata"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "fényforrás",
+      "szabályos visszaverődés",
+      "tükör",
+      "fénytörés",
+      "gyűjtő és szórólencse",
+      "fókusztávolság",
+      "fókuszpont"
+    ],
+    "tevekenysegek": [
+      "A környezetben található fényforrások megfigyelése, néhány fényforrás (kerékpáros lámpák) szétszerelése, az alkatrészek szerepének megvizsgálása",
+      "A környezetben létrejövő árnyékok megfigyelése, fényképezése, kialakulásának magyarázata a fény egyenes vonalú terjedésével",
+      "A Hold árnyéka a Földön: a napfogyatkozás, a Föld árnyéka a Holdon: holdfogyatkozás",
+      "Optikai illúziók vizsgálata",
+      "A különböző élőlények látórendszere, látástartománya: anyaggyűjtés, projektmunka",
+      "Camera obscura készítése",
+      "Az iskola világítási rendszerének megismerése közvetlen megfigyelés segítségével. Hány darab és milyen világítótest van használatban, mennyi ideig működnek, milyen rendszerességgel, mennyit fizet az iskola ezért az energiáért?"
+    ]
+  },
+  "F::Hullámok": {
+    "school": "F",
+    "band": "7-8",
+    "title": "Hullámok",
+    "oraszam": 10,
+    "temak": [
+      {
+        "title": "Mechanikai hullámok és állóhullámok",
+        "feladatok": [
+          "Rugalmas kötélen, rugón kialakított állóhullámok megfigyelése, jellemzése",
+          "A vízhullámok kísérleti vizsgálata, a mozgás leírása",
+          "A haladó hullámok kialakulásának elvi magyarázata. Az amplitúdó, a frekvencia, a hullámhossz"
+        ]
+      },
+      {
+        "title": "Hanghullámok és hangszerek",
+        "feladatok": [
+          "A levegőben terjedő lökéshullám megfigyelése egyszerű kísérleti eszközökkel. A terjedési sebesség becslése",
+          "A hang tulajdonságainak (hangmagasság, hangerő) fizikai magyarázata",
+          "Egyes hangszerek hangképzésének elve, a hangszerek megfigyelése működés közben",
+          "A hallás mechanizmusának fizikai lényege, a hallást károsító tényezők ismerete"
+        ]
+      },
+      {
+        "title": "Fényhullámok és színek",
+        "feladatok": [
+          "A fény hullámtermészetének ismerete",
+          "A színek észlelésének magyarázata, a kiegészítő színek",
+          "Kísérleti vizsgálata és magyarázata annak, miért függ a tárgyak színe a megvilágító fény színétől",
+          "A felhők, az ég, a növényzet, a tenger, a folyók színének egyszerű magyarázata"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "állóhullám",
+      "hullámhossz",
+      "frekvencia",
+      "hullám terjedési sebessége",
+      "hangmagasság",
+      "hangerő",
+      "szivárvány színei",
+      "kiegészítő színek"
+    ],
+    "tevekenysegek": [
+      "A cunami jelenségének megismerése, magyarázata",
+      "Hangok keltése, elemzése egyszerű esetekben pl. audacity programmal",
+      "Szivárvány létrehozása, megfigyelése a természetben",
+      "Fényfestés, játékok, kísérletek színekkel",
+      "Színek kikeverése festékekkel"
+    ]
+  },
+  "F::Környezetünk globális problémái": {
+    "school": "F",
+    "band": "7-8",
+    "title": "Környezetünk globális problémái",
+    "oraszam": 6,
+    "temak": [
+      {
+        "title": "Az ózonpajzs és az éghajlatváltozás",
+        "feladatok": [
+          "Az ózonpajzs elvékonyodásának hatása, a Földet ért ultraibolya sugárzás erősödése, az ózonpajzs védelmében hozott intézkedések",
+          "Az éghajlatváltozás okai és következményei. Az éghajlat változására utaló fizikai mennyiségek értékeinek vizsgálata",
+          "A tengerszint emelkedésének fizikai okai"
+        ]
+      },
+      {
+        "title": "Az üvegházhatás és az emberi tevékenység hatásai",
+        "feladatok": [
+          "A tüzelőanyagok elégetésének szerepe az üvegházhatás kialakulásában",
+          "Az emberi tevékenység természetre gyakorolt hatása: az ökológiai lábnyom"
+        ]
+      },
+      {
+        "title": "Környezeti szennyezések és innovatív megoldások",
+        "feladatok": [
+          "A fényszennyezés megfigyelése",
+          "A zajszennyezés fogalma",
+          "Innovatív technológiák a környezet és az ember védelmében: porszűrők működési elve, hangszigetelés, energiatakarékos eszközök használata, a levegőben található szennyezők távolról történő mérése alapján elrendelt forgalomkorlátozás"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "éghajlatváltozás",
+      "üvegházhatás",
+      "ökológiai lábnyom",
+      "környezettudatosság",
+      "fényszennyezés",
+      "zajszennyezés"
+    ],
+    "tevekenysegek": [
+      "Sötét és világos felületek fényelnyelési tulajdonságainak kísérleti vizsgálata (természeti megfigyelése)",
+      "A globális éghajlatváltozás bizonyítékainak gyűjtése, vizsgálata, a lehetséges következmények elemzése, az emberi cselekvés lehetőségeinek megvitatása, a tudomány szerepének mérlegelése",
+      "A zajszint mérése mobiltelefonnal vagy más alkalmas eszközzel",
+      "Saját ökológiai lábnyom csökkentését eredményező tevékenységek tervezése",
+      "Üvegházhatás megfigyelése, értelmezése (pl. üvegház, napon álló autó)"
+    ]
+  },
+  "F::Égi jelenségek megfigyelése és magyarázata": {
+    "school": "F",
+    "band": "7-8",
+    "title": "Égi jelenségek megfigyelése és magyarázata",
+    "oraszam": 10,
+    "temak": [
+      {
+        "title": "A Nap és a Föld-Hold rendszer",
+        "feladatok": [
+          "A Nap fizikai jellemzői. A Nap energiájának forrása",
+          "A Föld Nap körüli mozgásának, a Hold Föld körüli mozgásának fizikai jellemzői",
+          "Anyaggyűjtés arról, hogyan változtatták meg Kopernikusz és Kepler felismerései a korábbi világképet"
+        ]
+      },
+      {
+        "title": "Égi jelenségek megfigyelése",
+        "feladatok": [
+          "A Nap járásának megfigyelése egy bot árnyékának segítségével, az égtájak meghatározása",
+          "A Hold megfigyelése, felszíni formáinak magyarázata: meteorok",
+          "Anyaggyűjtés arról, hogyan figyelte meg Galilei a Holdat és hogyan értelmezték a látottakat",
+          "A Hold fázisainak megfigyelése, fizikai magyarázata a Nap, Föld, Hold helyzete alapján"
+        ]
+      },
+      {
+        "title": "Bolygók és csillagok",
+        "feladatok": [
+          "Föld típusú bolygók és óriásbolygók, a bolygók jellegzetességeinek egyszerű fizikai magyarázata",
+          "A csillagok sajátosságai, megkülönböztetésük a bolygóktól, látszólagos mozgásuk fizikai értelmezése, a legfontosabb csillagképek megfigyelése",
+          "Ismerkedés az égbolt egyéb égi objektumaival: a Tejútrendszer, galaxisok, fekete lyukak. Az objektumok legfontosabb fizikai jellemzőinek feltérképezése."
+        ]
+      },
+      {
+        "title": "Űrkutatás és a Világegyetem",
+        "feladatok": [
+          "Az űrkutatás aktuális céljai, legfontosabb irányai: az űrszondák, a nemzetközi űrállomás, az űrtávcsövek, a műholdak tevékenységének bemutatása",
+          "A világűr kutatásának kérdései: élet a Világegyetemben, a Világegyetem keletkezése és fejlődése"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "napközéppontú világkép",
+      "földtípusú bolygó",
+      "óriásbolygó",
+      "holdfázis",
+      "fogyatkozások",
+      "csillag",
+      "galaxis",
+      "fekete lyuk",
+      "fényév"
+    ],
+    "tevekenysegek": [
+      "A Hold megfigyelése szabad szemmel és távcsővel",
+      "Az aktuális csillagászati hírek elemzése",
+      "Beszélgetés a világűr méreteiről s az értelmes élet lehetőségeiről a világűrben",
+      "Beszélgetés a fény véges sebességéről, s a csillagos ég ebből következő látványáról",
+      "Útikalauz űrturistáknak: a Naprendszer égitestjeinek érdekességei az odalátogató szempontjából",
+      "Olyan jelenségek és megfigyelések összegyűjtése, amik azt támasztják alá, hogy a Föld gömbölyű, nem pedig lapos"
+    ]
+  },
+  "K::Egyszerű mozgások": {
+    "school": "K",
+    "band": "9-10",
+    "title": "Egyszerű mozgások",
+    "oraszam": 12,
+    "temak": [
+      {
+        "title": "Mozgások jellemzése és sebesség fogalma",
+        "feladatok": [
+          "A környezetben megfigyelt mozgások (közlekedés, sportolás) jellemzése az út és az elmozdulás mennyiségek valamint a hely és a pálya fogalmának használatával",
+          "A gépkocsi sebességmérője által mutatott értékek értelmezése: állandó és változó nagyságú sebesség, az átlagsebesség és pillanatnyi sebesség jelentése",
+          "Egyszerű számítások az egyenes pályán, állandó sebességgel haladó gépjármű mozgásával kapcsolatban: Az elmozdulás, megtett út és a megérkezéshez szükséges idő kiszámolása"
+        ]
+      },
+      {
+        "title": "Állandó sebességű mozgások megfigyelése",
+        "feladatok": [
+          "A közel állandó sebességű, egyenes vonalú mozgások (buborék a Mikola-csőben, mozgólépcső, csúszás jégen) megfigyelése, kialakulásának magyarázata",
+          "Az elejtett test mozgásának megfigyelése, kísérleti vizsgálata.  A sebesség változásának jellemzése a gyorsulás fogalmának segítségével, a gyorsulás értelmezése a testre ható nehézségi erő vizsgálatával",
+          "Adatgyűjtés Eötvös Lorándról és az Eötvös-ingáról"
+        ]
+      },
+      {
+        "title": "Esés és csúszás vizsgálata",
+        "feladatok": [
+          "Az elejtett test esési idejének mérése és számolása, a becsapódási sebesség kiszámítása",
+          "A csúszó test mozgásának megfigyelése, kísérleti vizsgálata, értelmezése a rá ható erők segítségével"
+        ]
+      },
+      {
+        "title": "Gyorsulás és mozgás leírása",
+        "feladatok": [
+          "Az állandó gyorsulással elinduló autó mozgásának leírása és magyarázata",
+          "Az elmozdulás, a sebesség és a gyorsulás használata egyenes mentén zajló mozgások leírására"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "Mozgás",
+      "sebesség",
+      "gyorsulás",
+      "erő",
+      "elmozdulás"
+    ],
+    "tevekenysegek": [
+      "Videó készítése néhány, a környezetben megfigyelhető mozgásról. Egy megfelelően kiválasztott pont koordinátáinak meghatározása az egymást követő képkockákon videó-analízis segítségével",
+      "Egy kút mélységének vagy erkély magasságának meghatározása az elejtett test zuhanási idejének mérésével, a mérés pontosságának becslése",
+      "Közel állandó sebességű mozgás megvalósítása önálló kísérletezés során. A súrlódás csökkentése különböző módon, légpárnás eszközök, jégen csúszó eszközök",
+      "Lejtőn leguruló, lecsúszó testek mozgásának megfigyelése, a mozgás jellegének kvantitatív megállapítása",
+      "Galilei munkásságának megismerése a mozgások és a tudományos módszer kialakulásának témakörében",
+      "Kísérlet tervezése annak belátására, hogy a szabadesés egyenes vonalú egyenletesen változó mozgás"
+    ]
+  },
+  "K::Ismétlődő mozgások": {
+    "school": "K",
+    "band": "9-10",
+    "title": "Ismétlődő mozgások",
+    "oraszam": 12,
+    "temak": [
+      {
+        "title": "Egyszerű körmozgás és annak jellemzői",
+        "feladatok": [
+          "Egyszerű körmozgás létrehozása, megfigyelése, kialakulásának értelmezése a centripetális erő és gyorsulás fogalmának segítségével",
+          "A periódusidő mérése, a fordulatszám és a kerületi sebesség meghatározása, a centripetális gyorsulás nagyságának kiszámolása",
+          "A mindennapokban gyakori körmozgások (például: ruha a centrifugában, a kerékpár szelepe, a Föld felszínének pontjai) fizikai hátterének elemzése"
+        ]
+      },
+      {
+        "title": "Lengések és rezgések a környezetben",
+        "feladatok": [
+          "Különböző lengések felismerése a környezetben: hintázó gyerekek, artisták a trapézon",
+          "A környezetben lezajló csillapodó rezgések és lengések megfigyelése, jellemzése az amplitúdó, a frekvencia, illetve a csillapodás mértéke szempontjából",
+          "A rugóhoz kapcsolt test rezgésének megfigyelése, kvalitatív leírása, a kitérés-idő és a sebesség-idő függvény elemzése."
+        ]
+      }
+    ],
+    "fogalmak": [
+      "körmozgás",
+      "centripetális erő",
+      "centripetális gyorsulás",
+      "periódusidő",
+      "frekvencia",
+      "rezgés",
+      "csillapodás",
+      "a rugó által kifejtett erő"
+    ],
+    "tevekenysegek": [
+      "Beszámoló készítése a fordulatszám jelentőségéről ruhák centrifugálása vagy fúrás esetén, a jellemző fordulatszám adatainak megkeresése",
+      "Az ingaóra felépítését, az alkatrészek feladatát, az óra működését bemutató kiselőadás készítése",
+      "Olyan inga készítése, melynek periódusideje 1 másodperc, ennek ellenőrzése"
+    ]
+  },
+  "K::A közlekedés és sportolás fizikája": {
+    "school": "K",
+    "band": "9-10",
+    "title": "A közlekedés és sportolás fizikája",
+    "oraszam": 12,
+    "temak": [
+      {
+        "title": "Ütközések és lendület",
+        "feladatok": [
+          "Rugalmatlan ütközések megfigyelése, a közös sebesség számítása egyszerű esetekben a lendület megmaradásának segítségével.  A gyűrődési zóna szerepe ütközéskor",
+          "Labdák rugalmasságának vizsgálata a visszapattanás magasságának megfigyelésével",
+          "A lendület szerepe fékezés és gyorsítás során. A fékút és a fékezési idő",
+          "Az autó gyorsulásának, illetve a fékezés folyamatának magyarázata az autóra ható erők és Newton törvényei segítségével"
+        ]
+      },
+      {
+        "title": "Kanyarodás és súrlódás",
+        "feladatok": [
+          "A kanyarodás fizikája, a kicsúszás megfigyelése (kanyarodó autó, motor, korcsolya) és okainak (súrlódási erő) vizsgálata"
+        ]
+      },
+      {
+        "title": "Úszás és hajózás fizikája",
+        "feladatok": [
+          "A testek úszásának és elmerülésének kísérleti vizsgálata, a tapasztaltak fizikai magyarázata a hidrosztatikai nyomás és a felhajtó erő segítségével",
+          "A hajók (vitorlás, illetve hajócsavaros) és tengeralattjárók működésének fizikai magyarázata, az áramvonalas test fontossága a vízben való haladás során"
+        ]
+      },
+      {
+        "title": "Repülés fizikája",
+        "feladatok": [
+          "A repülőgépek fizikája, a szárnyra ható felhajtó erő magyarázata, az áramvonalas forma fontossága"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "a lendület megmaradása",
+      "a dinamika alaptörvénye",
+      "súrlódási erő",
+      "közegellenállás",
+      "hidrosztatikai nyomás",
+      "felhajtó erő"
+    ],
+    "tevekenysegek": [
+      "Egy vagy több kiválasztott sporteszköz (pl. síléc, labda) kialakításának és fizikai hátterének feltárása, az eredmények megosztása a tanulótársakkal",
+      "Kísérleti megfigyelése és vizsgálata annak, hogy az érintkező felületek közötti súrlódást hogyan lehet kis mennyiségű szennyező anyaggal (por, olaj) befolyásolni. Alkalmas kísérleti eszköz (pl. változtatható hajlásszögű lejtő) megépítése",
+      "Adott teher szállítására alkalmas hajómodell elkészítése a rendelkezésre álló eszközök felhasználásával. Az eszköz felépítésének magyarázata",
+      "Az áramló levegő nyomáscsökkenésének bemutatása egyszerű  demonstrációs eszközökkel",
+      "Nagysebességű képrögzítésre alkalmas kamerával rögzített lassított felvételek tanulmányozása ütközésekről, labdák deformációjáról",
+      "Különböző zöldségek és gyümölcsök vízben való elmerülésének vizsgálata a vízben feloldott cukor vagy só mennyiségének változtatása mellett"
+    ]
+  },
+  "K::Az energia": {
+    "school": "K",
+    "band": "9-10",
+    "title": "Az energia",
+    "oraszam": 10,
+    "temak": [
+      {
+        "title": "Energiafelhasználás és források",
+        "feladatok": [
+          "Adatgyűjtés az emberiség energiafelhasználásáról",
+          "A Nap mint a Föld energiakészletének elsődleges forrása. Megújuló és nem megújuló energiaforrások megkülönböztetése, megnevezése, az energiatermelés és a környezet állapotának kapcsolata",
+          "Az energiaforrásaink kihasználásának lehetőségei a jövőben."
+        ]
+      },
+      {
+        "title": "Energiaváltozások és megmaradás",
+        "feladatok": [
+          "A testek emelését és gyorsítását kísérő energiaváltozások vizsgálata: a helyzeti és mozgási energia, a munka",
+          "A szabadon eső test becsapódási sebességének meghatározása a munkatétel és az energiamegmaradás segítségével",
+          "Az elhajított kő mozgásának energetikai elemzése",
+          "Az energia megmaradása a súrlódás és közegellenállás hiányában és jelenlétében, a belső energia",
+          "A rugóhoz, gumiszalaghoz kapcsolt test mozgásának energetikai elemzése: a rugalmas energia"
+        ]
+      },
+      {
+        "title": "Energia átalakulások és szállítás",
+        "feladatok": [
+          "Energia átalakulások a háztartásban, a környezetben, az emberi szervezetben és az erőművekben (hőerőmű, szélerőmű, vízi erőmű, atomerőmű, napkollektor), a hatásfok",
+          "Az energia szállításának lehetőségei"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "munka",
+      "energia",
+      "helyzeti",
+      "mozgási",
+      "rugalmas energia",
+      "súrlódás",
+      "belső energia"
+    ],
+    "tevekenysegek": [
+      "Beszámoló készítése az örökmozgókról és arról, miért nem lehetséges ilyen gépet építeni",
+      "Beszámoló készítése a napállandóról",
+      "Egyszerű eszköz készítésével annak kimutatása, hogy a felület napsugárzás hatására történő felmelegedése hogyan függ a felület és a napsugarak irányától",
+      "Az emberiség energiafelhasználását és energiatermelését jellemző adatok gyűjtése, rendszerezése, szemléletes ábrázolása, területi változásainak bemutatása",
+      "Az autó indulását kísérő energiaváltozások összegyűjtése, szemlélete bemutatása",
+      "A teavíz melegítése hatásfokának kísérleti vizsgálata. Hogyan függ a hatásfok a gázláng méretétől, milyen más tényezők befolyásolják?"
+    ]
+  },
+  "K::A melegítés és hűtés következményei": {
+    "school": "K",
+    "band": "9-10",
+    "title": "A melegítés és hűtés következményei",
+    "oraszam": 12,
+    "temak": [
+      {
+        "title": "Hőtágulás és hőmérséklet kiegyenlítődés",
+        "feladatok": [
+          "A hőtágulás jelenségének megfigyelése, értelmezése",
+          "Az anyagok hőmérsékletének mérése, a hőmérséklet kiegyenlítődésének kísérleti vizsgálata és értelmezése"
+        ]
+      },
+      {
+        "title": "Melegítés és hűtés a mindennapokban",
+        "feladatok": [
+          "Anyagok melegítésének és hűtésének megfigyelése például konyhai tevékenység során: a folyamat gyorsaságának vizsgálata, a fajhő és a felület nagyságnak szerepe",
+          "Az égéshő és fűtőérték fogalma, a lassú és gyors égés felismerése a mindennapokban"
+        ]
+      },
+      {
+        "title": "Halmazállapot-változások és energetikai leírásuk",
+        "feladatok": [
+          "Halmazállapotváltozások (olvadás, fagyás, párolgás, lecsapódás, a forrás és szublimáció) megfigyelése például konyhai tevékenység során. A fázisátmenetek vizsgálata a hőmérséklet változásának szempontjából",
+          "A halmazállapot-változások értelmezése és energetikai leírása, egyszerű számítások a mindennapi gyakorlatból, az olvadáshő a párolgáshő és a forráshő fogalma"
+        ]
+      },
+      {
+        "title": "Hőtan alkalmazásai és elméleti alapjai",
+        "feladatok": [
+          "A kuktafazék működésének fizikai magyarázata",
+          "A dugattyú mozgásának értelmezése a hőtan első főtételének segítségével",
+          "A megfordítható és nem megfordítható folyamatok közötti különbség felismerése"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "hőmérséklet",
+      "fajhő",
+      "párolgáshő",
+      "olvadáshő",
+      "forráshő",
+      "időbeli egyirányúság a természetben",
+      "halmazállapotváltozás",
+      "melegítés",
+      "hűtés",
+      "fűtőérték"
+    ],
+    "tevekenysegek": [
+      "A különböző hőmérsékletű folyadékok keveredésekor kialakuló közös hőmérséklet mérése, becslése, illetve számolása a megfelelő adatok ismeretében",
+      "Festékes víz vagy tintacsepp meleg és hideg vízben való elkeveredésének megfigyelése csoportban történő kísérletezés során, a tapasztalatok megfogalmazása, hipotézis alkotása az elkeveredés gyorsaságával kapcsolatban, a hipotézis megvitatása, ellenőrzése újabb kísérletekkel",
+      "Tea készítése hidegvízbe tett filter segítségével",
+      "A főzésre használt edények használat közbeni felmelegedésének vizsgálata. Milyen megoldásokat alkalmaznak annak érdekében, hogy a lábas füle vagy a merőkanál, palacsintasütő nyele kevésbé melegedjen?",
+      "Kísérletezés a túlhűtés jelenségének megvalósítására, például lassan lehűtött palackos ásványvíz segítségével, tanári útmutatás alapján. A sikeres, illetve sikertelen próbálkozások dokumentálása, a tapasztalatok megbeszélése",
+      "Kutatómunka a vasbetonról. Miért alkalmazható egymás mellett éppen a vas és a beton?",
+      "A párolgás sebességét befolyásoló tényezők megfigyelése csoportos tanulókísérlet végzése közben"
+    ]
+  },
+  "K::Víz és levegő a környezetünkben": {
+    "school": "K",
+    "band": "9-10",
+    "title": "Víz és levegő a környezetünkben",
+    "oraszam": 10,
+    "temak": [
+      {
+        "title": "Légnyomás és időjárás",
+        "feladatok": [
+          "A légnyomás kísérleti kimutatása, a légritkított tér néhány gyakorlati alkalmazása",
+          "A légnyomás és az időjárás kapcsolata"
+        ]
+      },
+      {
+        "title": "Páratartalom és páraképződés",
+        "feladatok": [
+          "Az abszolút és relatív páratartalom. A relatív páratartalom és a hőmérséklet kapcsolata, páraképződés a természetben: harmatképződés, dér, zúzmara",
+          "Páraképződés a lakásban, ennek következményei. Fűtési rendszerek a lakásban"
+        ]
+      },
+      {
+        "title": "Hőterjedés és hőszigetelés",
+        "feladatok": [
+          "A hőterjedés gyakorlati példákon keresztül (hővezetés, hőáramlás, hősugárzás)",
+          "A hőszigetelés lehetőségei a lakásban. A hőszigetelő ablak működésének fizikai magyarázata"
+        ]
+      },
+      {
+        "title": "Víz hőtágulása és levegő állapothatározói",
+        "feladatok": [
+          "A víz rendhagyó hőtágulása, ennek következményei a természetben. Jégképződés a tavakon, jéghegyek",
+          "Egyszerű számítások végzése a levegő állapothatározóinak megváltozásával kapcsolatban"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "Időjárás",
+      "éghajlat",
+      "relatív páratartalom",
+      "hővezetés",
+      "hőáramlás",
+      "hősugárzás"
+    ],
+    "tevekenysegek": [
+      "A hőszigetelt edény (termosz) és az egyszerű üvegedény tulajdonságainak összehasonlítása önálló kísérletezés segítségével",
+      "Hőszigetelt edény készítése a környezetben található egyszerű eszközök felhasználásával, a hőszigetelő tulajdonság kimutatása és magyarázata",
+      "Az iskola fűtési rendszerének megtekintése, a rendszer elemeinek elkülönítése, azok szerepének felismerése. A rendszer egyszerűsített változatának lerajzolása, felépítése",
+      "Anyaggyűjtés, beszámoló készítése és beszélgetés a jéghegy tulajdonságairól és szerepéről a Titanic elsüllyedésében",
+      "A szoba hőmérsékletének mérése felfűtés és szellőztetés közben hőmérő ismételt leolvasásával vagy automatikus adatgyűjtő rendszer felhasználásával. Az adatok megjelenítése és megosztása",
+      "A száraz meleg és a nedves meleg megtapasztalása (nyári szárazságban, szaunában), a testérzet összehasonlítása",
+      "A tanteremben található levegő tömegének becslés"
+    ]
+  },
+  "K::Gépek": {
+    "school": "K",
+    "band": "9-10",
+    "title": "Gépek",
+    "oraszam": 9,
+    "temak": [
+      {
+        "title": "Egyszerű gépek és egyensúly",
+        "feladatok": [
+          "A libikóka és a mérleg egyensúlyának kísérleti vizsgálata és értelmezése",
+          "Szerszámkulcsok és fogók működésének magyarázata az erőkar segítségével"
+        ]
+      },
+      {
+        "title": "Gépek teljesítménye és hatásfoka",
+        "feladatok": [
+          "Gépek összehasonlítása a teljesítmény és hatásfok adatok alapján",
+          "A kerékpár felépítésének és működésének fizikai magyarázata"
+        ]
+      },
+      {
+        "title": "Történelmi gépek és technológiák",
+        "feladatok": [
+          "Egy jelentős gép és a kapcsolódó technológia fizikai lényegének ismertetése, történelmet és társadalmat átalakító hatásának bemutatása (Ilyen lehet: hajítógép, szövőgép, mechanikus számológép, belső égésű motor)",
+          "Anyaggyűjtés James Wattról és gőzgépéről"
+        ]
+      },
+      {
+        "title": "A jövő gépei: robotok és mesterséges intelligencia",
+        "feladatok": [
+          "Beszélgetés a robotokról: elterjedésük, jövőbeli szerepük, mesterséges intelligencia, gépi tanulás, önvezérelt működés"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "forgatónyomaték",
+      "forgatónyomatékok egyensúlya",
+      "erőkar",
+      "teljesítmény",
+      "hatásfok"
+    ],
+    "tevekenysegek": [
+      "Egy a diákok számára elérhető gép (ceruzahegyező, konzervnyitó, zárszerkezet, mechanikus óra, zenegép, ...) szétszedése, a főbb alkotórészek azonosítása, szerepük felismerése, a működés fizikai alapjainak leírása. A tevékenység dokumentálása",
+      "A felfújt léggömbben levő levegő súlyának kimutatása egyszerű mérleg segítségével",
+      "Egyszerű kísérletek elvégzése a súlypont egyensúlyozásban betöltött szerepének bemutatására",
+      "Különböző csavarok beszerzése, vizsgálata, jellemzőinek (menetemelkedés, menetsűrűség) megfigyelése és működésének magyarázata",
+      "Az egyes történelmi korokra jellemző gépek összegyűjtése, alkalmazásuk bemutatása",
+      "Kedvelt gépek modelljeinek megfigyelése, illetve elkészítése, működésük megismerése, megértése"
+    ]
+  },
+  "K::Szikrák, villámok": {
+    "school": "K",
+    "band": "9-10",
+    "title": "Szikrák, villámok",
+    "oraszam": 10,
+    "temak": [
+      {
+        "title": "Az elektromos állapot és kölcsönhatások",
+        "feladatok": [
+          "Az elektromos állapot kialakulásának magyarázata az atomról alkotott egyszerű elképzelés (elektron, atommag) segítségével",
+          "A két fajta elektromos állapot, az elektromos vonzás és taszítás, az elektromos árnyékolás, a csúcshatás, az elektromos megosztás és a földelés megfigyelése kísérletezés közben, a tapasztaltak magyarázata",
+          "Coulomb törvénye, az elektromosan töltött testek között fellépő erő meghatározása"
+        ]
+      },
+      {
+        "title": "Az elektromos mező és szemléltetése",
+        "feladatok": [
+          "Az elektromos mező szemléltetése (pl. búzadarás kísérlettel), ez alapján a mező erővonalakkal történő érzékeltetése"
+        ]
+      },
+      {
+        "title": "Elektromos szikrák és villámok",
+        "feladatok": [
+          "Elektromos szikrák keltése, megfigyelése (pl. megosztó géppel vagy szalaggenerátorral), ennek segítségével a villámok kialakulásának alapvető magyarázata",
+          "A tanultak alkalmazása a villámok elleni védekezésben, illetve a villámcsapás-veszélyes helyzetekben való helyes magatartás kialakításában"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "elektromos állapot",
+      "elektromos töltés",
+      "elektromos mező",
+      "atom",
+      "elektron",
+      "Coulomb-törvény",
+      "elektromos árnyékolás",
+      "csúcshatás",
+      "földelés"
+    ],
+    "tevekenysegek": [
+      "Egyszerű elektroszkóp készítése (pl. Öveges-féle töltésszámlálós konzervdoboz-elektroszkóp), ezzel kísérletek elvégzése: a csúcshatás, az megosztás megfigyelése, a Coulomb-törvény érzékeltetése",
+      "Az elektromos árnyékolás (Faraday-kalitka) vizsgálata mobiltelefonnal (pl. hűtőszekrényben, mikrohullámú sütőben, sztaniolpapíros csomagolásban stb., felhívható-e a készülék?)",
+      "Különböző épületek villámvédelmi rendszerének megfigyelése",
+      "A fénymásoló, lézernyomtató működésének tanulmányozása, anyaggyűjtés projektmunkában",
+      "Villámokról készült felvételek gyűjtése és tanulmányozása"
+    ]
+  },
+  "K::Elektromosság a környezetünkben": {
+    "school": "K",
+    "band": "9-10",
+    "title": "Elektromosság a környezetünkben",
+    "oraszam": 14,
+    "temak": [
+      {
+        "title": "Az elektromos áram alapjai és mérése",
+        "feladatok": [
+          "Az elektromos áram fogalmának kialakítása egyszerű kísérletekkel (pl. víz elektromos vezetésének változása, konyhasó vagy sav hatására), az áramerősség mérése",
+          "A legfontosabb egyenáramú áramforrások (galvánelem, gépkocsi- mobiltelefon-akkumulátorok, napelemek), adatainak összegyűjtése és értelmezése",
+          "Ohm törvényének vizsgálata méréssel egyszerű áramkörben ellenálláshuzallal, az ellenállás, mint fizikai mennyiség és mint áramköri elem bevezetése",
+          "Egyszerű számítások elvégzése Ohm törvényének felhasználásával: a feszültség, az áramerősség és az ellenállás meghatározására"
+        ]
+      },
+      {
+        "title": "Áramkörök és ellenállások vizsgálata",
+        "feladatok": [
+          "Egyszerű, fényforrást és termisztort tartalmazó áramkör vizsgálata, az ellenállás hőmérsékletfüggésének felismerése",
+          "A soros és a párhuzamos kapcsolások legfontosabb jellemzőinek megismerése kísérleti vizsgálatok alapján"
+        ]
+      },
+      {
+        "title": "Háztartási eszközök és áramfogyasztás",
+        "feladatok": [
+          "A legfontosabb hőhatáson alapuló háztartási eszközök jellemzőinek összegyűjtése",
+          "A villanyszámla értelmezése, a háztartási áramfogyasztás költségeinek kiszámolása, a kWh és a joule kapcsolata"
+        ]
+      },
+      {
+        "title": "Biztonság és diagnosztikai alkalmazások",
+        "feladatok": [
+          "Az elektromos áramütés élettani hatása, érintésvédelmi, balesetvédelmi ismeretek",
+          "Lakás villamos hálózata és biztonsági berendezései (a biztosíték, az áram-védőkapcsoló és a földvezeték feladata)",
+          "Az EKG, EEG felvételek kapcsán az emberi idegvezetés egyes diagnosztikai alkalmazásainak bemutatása"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "elektromos áram",
+      "áramerősség",
+      "feszültség",
+      "ellenállás",
+      "Ohm-törvénye",
+      "soros és a párhuzamos kapcsolás",
+      "biztosíték",
+      "földvezeték"
+    ],
+    "tevekenysegek": [
+      "Gyümölcsből vagy zöldségből elektromos telepek készítése és feszültségeinek vizsgálata (pl. burgonya, ecetes uborka, citrom, hagyma, vas és réz szegekkel, vagy más fémekkel)",
+      "Fényforrások teljesítményének és fényerejének vizsgálata (teljesítmény számolása a feszültség és áramerősség mérésével, fényerő mérése pl. mobilapplikációval)",
+      "Testünk különböző pontok közti ellenállásának mérése ellenállásmérő-műszerrel, az emberi szervezet ellenállását befolyásoló tényezők vizsgálata",
+      "Szénrúd, grafitbél vagy ellenálláshuzal ellenállásának vizsgálata",
+      "Gyűjtőmunka orvosi diagnosztikai eszközökről",
+      "Egy kiválasztott fogyasztó teljesítményének meghatározása. A mérés megtervezése, kivitelezése, az eredmények értékelése és bemutatása"
+    ]
+  },
+  "K::Generátorok és motorok": {
+    "school": "K",
+    "band": "9-10",
+    "title": "Generátorok és motorok",
+    "oraszam": 10,
+    "temak": [
+      {
+        "title": "Elektromágnesek és alapvető jelenségek",
+        "feladatok": [
+          "Elektromágnes készítése egyszerű eszközökkel (pl. vasszegre tekert szigetelt drót), az előállított mágneses mező vizsgálata pl. iránytűvel)",
+          "Az elektromotor működési elvének megértése egyszerű modell vagy animáció tanulmányozása révén",
+          "Az elektromágneses indukció alapeseteinek megismerése, ez alapján egyszerű generátor modell készítése  vagy tanulmányozása"
+        ]
+      },
+      {
+        "title": "Faraday és az elektromágneses indukció",
+        "feladatok": [
+          "Adatgyűjtés Michael Faraday életéről, a felfedezések jelentőségének megvitatása",
+          "A váltakozó áram keletkezése, és főbb jellemzői"
+        ]
+      },
+      {
+        "title": "Transzformátorok és energiaátvitel",
+        "feladatok": [
+          "A transzformátor működésének megfigyelése és magyarázata, az elektromos energia szállításában betöltött szerepének megismerése",
+          "A környezetünkben illetve technika eszközökben található transzformátorok felismerése"
+        ]
+      },
+      {
+        "title": "Generátorok és motorok működése",
+        "feladatok": [
+          "Generátorok és motorok működésének megfigyelése, fizikai magyarázata"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "mágneses mező",
+      "mágneses indukcióvonalak",
+      "elektromágnes",
+      "elektromágneses indukció",
+      "generátor",
+      "elektromotor",
+      "transzformátor"
+    ],
+    "tevekenysegek": [
+      "Adatgyűjtés projektmunkában Jedlik Ányos villanymotorjáról, villamos motorkocsijáról, és a dinamójáról",
+      "A Föld és más gyenge mágneses terek vizsgálata mobilapplikáció segítségével",
+      "Mágneses mezőben fellépő erőhatások egyszerű kísérleti vizsgálata (pl. Oersted-kísérlete, párhuzamos vezetők közötti erők)",
+      "Transzformátor modell készítése és vizsgálata vaskarikára tekert szigetelt drótok segítségével",
+      "A transzformátor és a villamos energia elterjedésében  szerepet vállaló magyar tudósok (Déri, Bláthy, Zipernowsky, Mechwart) találmányainak jelentősége. Anyaggyűjtés projektmunkában",
+      "Egyszerű egyenáramú motorok készítése rézdrót, elem és mágnes felhasználásával az interneten található videók segítségével",
+      "Az elektromágneses emelő megismerése, erős elektromágnes készítése a rendelkezésre álló eszközök felhasználásával",
+      "Folyamatábra készítése az elektromos energia útjáról az erőműtől a lakásig.  Az ehhez használt eszközök megfigyelése a környezetben"
+    ]
+  },
+  "K::A hullámok szerepe a kommunikációban": {
+    "school": "K",
+    "band": "9-10",
+    "title": "A hullámok szerepe a kommunikációban",
+    "oraszam": 14,
+    "temak": [
+      {
+        "title": "Mechanikai hullámok megfigyelése és jellemzése",
+        "feladatok": [
+          "A környezetben előforduló mechanikai haladó hullámok megfigyelése, a terjedési mechanizmusának megértése",
+          "A megfigyelt mechanikai hullámok jellemzése a megfelelő fizikai mennyiségekkel (terjedési sebesség, hullámhossz, amplitúdó, a csillapodás jellege)",
+          "Az állóhullámok kialakulásának megfigyelése",
+          "Hangszerek és egyszerű hangkeltő eszközök megfigyelése, a keletkező hanghullámok jellemzése",
+          "Környezetünk hangterhelése, javaslatok a zajszennyezés csökkentésére"
+        ]
+      },
+      {
+        "title": "Elektromágneses hullámok és alkalmazásaik",
+        "feladatok": [
+          "Az elektromágneses hullámok kialakulása és terjedése, a hullámokat jellemző fizikai mennyiségek",
+          "A hullámhossz, a terjedési sebesség és a frekvencia kapcsolata",
+          "A különböző frekvenciájú elektromágneses hullámok alkalmazásainak megfigyelése és fizikai magyarázata mindennapi eszközeink használata során: tolatóradar, mikrohullámú sütő, infrakamera, röntgengép, anyagvizsgálat",
+          "A képek és hangok továbbításának alapelvei (rádió, televízió), a mobiltelefon működése: wifi, bluetooth"
+        ]
+      },
+      {
+        "title": "Interferencia és holográfia",
+        "feladatok": [
+          "Interferencia képek létrehozása lézerrel, lefényképezése, egyszerű magyarázata",
+          "Anyaggyűjtés a hologramokról, Gábor Dénesről, a talált információk megosztása, megbeszélése"
+        ]
+      },
+      {
+        "title": "Mobiltelefon használatának hatásai",
+        "feladatok": [
+          "Tudományos vita a mobiltelefon használatának lehetséges ártalmairól"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "hanghullám",
+      "elektromágneses hullám",
+      "a hullám hullámhossza",
+      "terjedési sebessége",
+      "frekvenciája",
+      "lézer",
+      "holográfia"
+    ],
+    "tevekenysegek": [
+      "Környezetünkben előforduló különböző jellegzetes hangok erősségének mérése (suttogás, normál beszéd, kiabálás, utcai zaj stb.) mobilapplikációval vagy más műszerrel, anyaggyűjtés a zajártalomról",
+      "Sípok, húrok hossz és hangmagasság kapcsolatának vizsgálata. (A sípokat helyettesíthetjük “kémcső pánsípokkal”, a hangmagasságot mobilalkalmazással vagy gitárhangolóval mérhetjük)",
+      "Mi a legmagasabb hang, amit még hallasz? Az egyéni hangmagassági küszöb vizsgálata hanggenerátorral, vagy azt helyettesítő mobilapplikációval",
+      "Különböző hangok “képének” vizsgálata oszcilloszkóppal, vagy megfelelő mobilalkalmazással",
+      "Mikrohullámú sütő belsejében kialakuló állóhullámok megfigyelése reszelt sajt vagy csokoládé eltérő melegedése alapján, ez alapján a mikrohullám terjedési sebességének megállapítása",
+      "Egy digitális audió-szerkesztő program megismerése, a megismert hullámtani jellemzők alkalmazásával alapfokú használata (pl. Audacity)"
+    ]
+  },
+  "K::Képek és látás": {
+    "school": "K",
+    "band": "9-10",
+    "title": "Képek és látás",
+    "oraszam": 10,
+    "temak": [
+      {
+        "title": "Tükrök és képalkotás",
+        "feladatok": [
+          "A síktükörben látott kép megfigyelése, jellemzése, kialakulásának magyarázata",
+          "Tükrök használata optikai eszközökben: reflektor, kozmetikai tükör, tükrök a közlekedésben"
+        ]
+      },
+      {
+        "title": "Fény törése és színek",
+        "feladatok": [
+          "A fény törésének megfigyelése és értelmezése a törésmutató segítségével. A fehér fény felbontása, a kialakult színkép magyarázata",
+          "A fény fókuszálásának és a kézi nagyító képalkotásának kísérleti vizsgálata"
+        ]
+      },
+      {
+        "title": "Látás és optikai eszközök",
+        "feladatok": [
+          "A látás magyarázata, a szem felépítésének fizikája. A szemüveg szerepe a látás javításában",
+          "Néhány további optikai eszköz kipróbálása, a működés lényegi, kvalitatív magyarázata (optikai szál, mikroszkóp, távcsövek)"
+        ]
+      },
+      {
+        "title": "Távcsövek és természetes színek",
+        "feladatok": [
+          "Galilei távcsővel végzett megfigyelései",
+          "Néhány kiválasztott esetben (pl. naplemente, kék égbolt, színkeverés) a természetben látott színek kialakulásának magyarázata, a szivárvány színei, a kiegészítő színek"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "fényvisszaverődés",
+      "fénytörés",
+      "teljes visszaverődés",
+      "fókuszpont",
+      "fókusz-",
+      "tárgy-",
+      "és képtávolság",
+      "valódi és látszólagos kép"
+    ],
+    "tevekenysegek": [
+      "A fehér fény felbontása különböző módszerekkel csoportmunkában (prizma, vizes tálba tett síktükör, optikai rács, szappanhártya stb.)",
+      "Különböző állatok színlátása (pl. kutya, tehén, ragadozó madarak stb.). Milyennek látják a világot? Adatgyűjtés, projektmunka",
+      "Adatgyűjtés a nagy csillagászati távcsövekről, azok felépítése, működése",
+      "Kepler- és Galilei-féle távcsövek, a mikroszkóp modelljének bemutatása gyűjtő és szórólencsékkel, az elkészített modell nagyításának vizsgálata",
+      "Lencsék, tükrök fókusztávolságának meghatározása egyszerű kísérletekkel"
+    ]
+  },
+  "K::Az atomok és a fény": {
+    "school": "K",
+    "band": "9-10",
+    "title": "Az atomok és a fény",
+    "oraszam": 9,
+    "temak": [
+      {
+        "title": "A fény természete és jellemzése",
+        "feladatok": [
+          "A fény elektromágneses hullám, jellemzése fizikai mennyiségekkel (amplitúdó, frekvencia, hullámhossz, terjedési sebesség)",
+          "A fotocella és a fénymérő működésének magyarázata a fényelektromos jelenség segítségével, a megvilágító fény és a foton energiája közötti kapcsolat",
+          "Digitális fényképek készítése különböző távolságban elhelyezett tárgyakról, a fényképezőgép beállításainak értelmezése, a képrögzítés elve"
+        ]
+      },
+      {
+        "title": "Mikroszkópok és a fény hullámtermészete",
+        "feladatok": [
+          "Elektronmikroszkóppal és fénymikroszkóppal készült képek összevetése. Az elektronmikroszkóp nagyobb felbontásának és működésének értelmezése az elektron hullámtermészetével",
+          "A vonalas színkép kialakulásának magyarázata az atomok által elnyelt illetve kibocsátott fény frekvenciájának segítségével"
+        ]
+      },
+      {
+        "title": "Atommodellek és a fény kapcsolata",
+        "feladatok": [
+          "A legfontosabb atommodellek (Thomson, Rutherford, Bohr, kvantumfizikai) fizikai lényegének ismerete, az atom körüli elektronok energiájának kvantáltsága",
+          "Rutherford szórási kísérletének szimulációja, anyaggyűjtés Rutherford és Bohr életével kapcsolatban"
+        ]
+      },
+      {
+        "title": "Fényforrások és működésük",
+        "feladatok": [
+          "Jelenleg használt fényforrásaink számbavétele, működésük fizikai lényege (LED, izzó, fénycső, halogén izzó)"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "fényelektromos jelenség",
+      "foton",
+      "atom",
+      "elektron",
+      "atommag"
+    ],
+    "tevekenysegek": [
+      "Anyaggyűjtés projektmunkában: Hol van jelentősége a fényelektromos jelenségnek, milyen eszközökben használják azt? (fényképezőgép, napelem, fénymásoló, optoelektronika stb.)",
+      "Anyaggyűjtés Einstein életéről és legfontosabb eredményeiről. Vita arról, hogy milyen hamis legendák és téves ismeretek lengik körül az életművet",
+      "Anyaggyűjtés és vita a kvantummechanika néhány neves jelenségéről, és azok értelmezéseiről (határozatlansági reláció, alagúteffektus, Schrödingermacskája)",
+      "A Rutherford-féle szórási kísérlet utóélete, a ma működő gyorsítóberendezések alapvető működési elve és vizsgálati módszerei. Anyaggyűjtés",
+      "Felfedezték az elektront! - egy korabeli hír megírása a mai hírek, figyelemfelkeltő internetes portálok stílusában"
+    ]
+  },
+  "K::Környezetünk épségének megőrzése": {
+    "school": "K",
+    "band": "9-10",
+    "title": "Környezetünk épségének megőrzése",
+    "oraszam": 12,
+    "temak": [
+      {
+        "title": "Az ózonpajzs és az üvegházhatás",
+        "feladatok": [
+          "Az ózonpajzs szerepe a Földet ért ultraibolya sugárzással kapcsolatban, az ózonpajzs védelmében tett intézkedések és azok sikere",
+          "Az üvegházhatás fizikai magyarázata",
+          "Az energiatermelés alternatívái, az üvegházhatású gázok kibocsátásának csökkentési lehetősége"
+        ]
+      },
+      {
+        "title": "Nukleáris folyamatok és energiatermelés",
+        "feladatok": [
+          "A periódusos rendszer alapján fontosabb elemek mag összetételének, kötési energiájának és stabilitásának tanulmányozása",
+          "A maghasadás és magfúzió lényegének megértése magyarázó ábrák és animációk segítségével",
+          "Az atomerőművek, a hőerőművek és megújuló energiatermelés előnyeinek és hátrányainak előzetes adatgyűjtést követő összevetése"
+        ]
+      },
+      {
+        "title": "Tudósok és sugárzások",
+        "feladatok": [
+          "Adatgyűjtés Wigner Jenő, Teller Ede és Szilárd Leó munkásságával kapcsolatban",
+          "Az alfa-, béta- és gamma-sugárzások tulajdonságai, élettani hatásaik, az egyes sugárfajták elleni védekezés lehetőségei",
+          "Anyaggyűjtés a rádiumról és a Curie-család életéről"
+        ]
+      },
+      {
+        "title": "Radioaktív izotópok és környezeti hatásaik",
+        "feladatok": [
+          "Tudományos vita a környezetbe került, vagy orvosi kezelés során alkalmazott radioaktív izotópok veszélyességéről"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "atommag",
+      "nukleon",
+      "izotóp",
+      "nukleáris kölcsönhatás",
+      "maghasadás",
+      "magfúzió",
+      "alfa-",
+      "béta-",
+      "és gamma-sugárzás",
+      "felezési idő",
+      "aktivitás",
+      "ózonpajzs",
+      "üvegházhatás"
+    ],
+    "tevekenysegek": [
+      "A szén-dioxid üvegházhatásának kimutatása egyszerű kísérlettel",
+      "Saját ökológiai lábnyom csökkentését eredményező tevékenységek tervezése",
+      "Anyaggyűjtés arról, hogy a különböző modellek szerint 20-30 év múlva milyen klímája lesz hazánknak, az emberi cselekvés lehetőségeinek megvitatása a veszélyek csökkentésére",
+      "Anyaggyűjtés projektmunkában a radioaktivitás néhány különleges alkalmazásával kapcsolatban: gammakés, radioaktív nyomjelzés, kormeghatározás",
+      "Anyaggyűjtés a leghíresebb nukleáris balesetekről és ezek következményeiről. Tudományos vita ezek környezetre gyakorolt hatásáról. (pl. a Csernobil c. film kapcsán)",
+      "Anyaggyűjtés arról, hogy mely országokban milyen típusú atomerőművek működnek, és mekkora az ország villamos-energiatermelésében a nukleáris energia részesedése?  A jelentősebb erőművek helye, fényképe",
+      "Napilapok, különböző folyóiratok, internetes híradások áttekintése. Milyen a modern fizikát érintő cikkek találhatók bennük? Mennyire megbízható információkat közvetítenek a különböző cikkek a nagyközönség felé? Csoportosításuk aszerint, hogy melyek tűnnek megbízhatónak és melyek nem"
+    ]
+  },
+  "K::A Világegyetem megismerése": {
+    "school": "K",
+    "band": "9-10",
+    "title": "A Világegyetem megismerése",
+    "oraszam": 14,
+    "temak": [
+      {
+        "title": "Űrkutatás alapjai és a rakétatechnológia",
+        "feladatok": [
+          "A rakéták működési elve, a kozmikus sebességek jelentése",
+          "A súlytalanság jelensége, kialakulásának körülményei, a súly és a tömeg közötti különbség",
+          "A bolygók és üstökösök mozgásának fizikai magyarázata, az általános tömegvonzás törvénye",
+          "Az általános tömegvonzás értelmezése a gravitációs mező segítségével"
+        ]
+      },
+      {
+        "title": "Naprendszer és égitestek jellemzői",
+        "feladatok": [
+          "A Naprendszer jellemzői, példák a Naprendszer bolygóin és holdjain uralkodó jellemző fizikai környezetre, ezek kialakulásának magyarázata",
+          "A holdfogyatkozás és a napfogyatkozás fizikai magyarázata",
+          "A legfontosabb ismeretek az űrrepülőgépekről, a Holdraszállásról és a tervezett Mars utazásról",
+          "Néhány, a mindennapokban elterjedt és először az űrkutatásban használt technológia, eszköz ismertetése"
+        ]
+      },
+      {
+        "title": "Gravitáció és csillagászat",
+        "feladatok": [
+          "A gravitáció szerepe a Világmindenségben",
+          "A csillagok és a Nap működése és változásai: fekete lyuk, neutroncsillag, szupernóva",
+          "A galaxisok, galaxishalmazok. A Tejútrendszer legfontosabb jellemzői. Távolságok az univerzumban"
+        ]
+      },
+      {
+        "title": "Az univerzum keletkezése és a földönkívüli élet lehetőségei",
+        "feladatok": [
+          "Az ősrobbanás elmélet kvalitatív leírása, a táguló univerzum",
+          "Az ősrobbanás elméletének születése, tudományos megalapozottsága, a tudományosság kritériumai",
+          "Tudományos vita a Földön kívüli élet kutatásáról, annak gyakorlati és filozófiai lehetőségeiről, az emberiség előtt álló kihívásokról"
+        ]
+      }
+    ],
+    "fogalmak": [
+      "általános tömegvonzás",
+      "ellipszis pálya",
+      "súlytalanság",
+      "súly",
+      "Kepler törvényei",
+      "bolygók",
+      "üstökösök",
+      "csillag",
+      "galaxis",
+      "galaxishalmaz",
+      "ősrobbanás",
+      "táguló univerzum",
+      "fekete lyuk",
+      "fényév"
+    ],
+    "tevekenysegek": [
+      "Ismerkedés a csillagos éggel számítógépes planetárium-programok segítségével (pl. stellarium-web.org)",
+      "A Galilei-élmények (a Hold hegyei, a Vénusz fázisai, a Jupiter nagy holdjai, a Tejút csillagokra bontása, Napfoltok) megfigyelése egyszerű távcsövekkel (pl. osztálykirándulás, csillagászati bemutatók, Kutatók éjszakája rendezvény során)",
+      "Egy űrkutatással kapcsolatos játékfilm (részleteinek) megtekintése (pl. Gravitáció, Apollo 13), vita a filmjelenet hitelességéről",
+      "Adatgyűjtés az aktuálisan zajló csillagászati, űrkutatási projektekről például a NASA honlapján",
+      "Exobolygók adatainak áttekintése, összehasonlítása",
+      "Az űrtávcsövek felvételeinek böngészése, a látottak értelmezése"
+    ]
+  }
+}

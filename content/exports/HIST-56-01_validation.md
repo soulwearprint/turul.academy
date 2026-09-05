@@ -12,3 +12,6 @@
 
 ## 3. Megfelelőség (appropriateness / márkahang) — tanári felülvizsgálatra
 - ✅ Korosztályi megfelelés és márkahang rendben.
+
+## 4. Világ ekkor — relevancia — tanári felülvizsgálatra
+- ✅ A világ ekkor kártyák érdemi, konkrét kapcsolatban állnak a leckékkel.
