@@ -169,9 +169,23 @@ export function QuizRunner({ cards, onSubmit }) {
   async function submit() {
     if (busy || result) return
     setBusy(true)
+    const answers = list.map((_, i) => picks[i] || '')
     try {
-      const answers = list.map((_, i) => picks[i] || '')
       setResult(await onSubmit(answers))
+    } catch (e) {
+      // Offline (or any network failure): the service worker has already queued this
+      // exact submission (Background Sync) and will replay it once back online — the
+      // server-side XP will land then. Per-question right/wrong is already shown above
+      // from the cards' own `correct` field, so show a locally-computed score now
+      // rather than leaving the student without any result.
+      const correctCount = list.filter((c, i) => correctOf(c) === (picks[i] || '')).length
+      setResult({
+        correct: correctCount,
+        total: list.length,
+        score: list.length ? Math.round((100 * correctCount) / list.length) : 0,
+        xp_earned: null,
+        offline: true,
+      })
     } finally {
       setBusy(false)
     }
@@ -215,7 +229,11 @@ export function QuizRunner({ cards, onSubmit }) {
       {result ? (
         <div className="rounded-2xl p-5 bg-turul-blue text-white text-center shadow-glow-blue">
           <p className="text-3xl font-extrabold font-display">{result.correct}/{result.total}</p>
-          <p className="text-brand-100 text-sm mt-0.5">{result.score}% · +{result.xp_earned} XP</p>
+          {result.offline ? (
+            <p className="text-brand-100 text-sm mt-0.5">{result.score}% · 📡 Offline mentve — az XP a kapcsolat helyreállása után frissül</p>
+          ) : (
+            <p className="text-brand-100 text-sm mt-0.5">{result.score}% · +{result.xp_earned} XP</p>
+          )}
         </div>
       ) : (
         <button onClick={submit} disabled={!allAnswered || busy}

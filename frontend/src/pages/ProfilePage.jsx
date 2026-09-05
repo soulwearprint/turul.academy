@@ -6,6 +6,7 @@ import { api } from '../lib/api'
 import PageHeader from '../components/PageHeader'
 import BottomNav from '../components/BottomNav'
 import TurulPortrait from '../components/TurulPortrait'
+import InstallAppBanner from '../components/InstallAppBanner'
 import { stageForGrade } from '../lib/turul'
 
 const GRADES = Array.from({ length: 8 }, (_, i) => i + 5) // 5..12
@@ -130,6 +131,12 @@ export default function ProfilePage() {
         <button onClick={save} disabled={saving || !form.display_name.trim()} className="btn-primary w-full">
           {saving ? t('auth.loading') : saved ? `✓ ${t('profile.saved')}` : t('profile.save')}
         </button>
+
+        {/* Always visible here (unlike Home's dismissible card) — a stable place to
+            find the install option even after dismissing it once on Home. */}
+        <div className="pt-4 border-t border-slate-100">
+          <InstallAppBanner variant="inline" />
+        </div>
 
         {/* Sign out — visually separated + requires confirmation, so it can't be
             mistaken for a "close settings" action (users have tapped it by accident). */}

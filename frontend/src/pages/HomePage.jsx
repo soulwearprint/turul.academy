@@ -5,6 +5,7 @@ import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
 import BottomNav from '../components/BottomNav'
 import TurulPortrait from '../components/TurulPortrait'
+import InstallAppBanner from '../components/InstallAppBanner'
 import { stageForGrade } from '../lib/turul'
 import { usesNatModel, natHref } from '../lib/nat'
 
@@ -93,6 +94,8 @@ export default function HomePage() {
       </div>
 
       <div className="px-4 -mt-9 max-w-lg mx-auto space-y-5">
+        <InstallAppBanner />
+
         {/* Turul companion status card */}
         <Link to="/turul" className="card p-4 flex items-center gap-4 active:scale-[0.99] transition-transform animate-fade-up">
           <TurulPortrait grade={grade} size={72} animate={false} />
