@@ -43,7 +43,7 @@ async def nat_topic(topic_id: str):
     topics = await db_get(
         "curriculum_topics",
         {"id": f"eq.{topic_id}",
-         "select": "id,nat_id,title,title_hu,grade,order_index,"
+         "select": "id,nat_id,title,title_hu,grade,order_index,subject_id,"
                    "curriculum_lessons(id,nat_id,title,title_hu,order_index)"},
         service=True,
     )
@@ -97,22 +97,30 @@ async def nat_topic_quiz(topic_id: str):
 # ─── progress + quiz (user-owned; service-role writes scoped by user.id) ───
 
 class ProgressBody(BaseModel):
-    status: Optional[str] = None            # in_progress | completed
+    status: Optional[str] = None            # in_progress | read (all main tabs viewed) | completed
     mode_used: Optional[str] = None
     time_spent_seconds: Optional[int] = None
+
+
+# Ordered so a status update never regresses further-along progress — e.g. reopening
+# a completed lesson to re-read it must not drop it back to "in_progress".
+STATUS_RANK = {"in_progress": 1, "read": 2, "completed": 3}
 
 
 async def _upsert_progress(user_id, lesson_id, topic_id, status=None, mode_used=None, seconds=None):
     existing = await db_get("nat_lesson_progress",
                             {"user_id": f"eq.{user_id}", "lesson_id": f"eq.{lesson_id}", "select": "id,status"},
                             service=True)
+    prev_status = existing[0].get("status") if existing else None
+    apply_status = status and STATUS_RANK.get(status, 0) >= STATUS_RANK.get(prev_status, 0)
+
     patch = {}
-    if status: patch["status"] = status
+    if apply_status: patch["status"] = status
     if mode_used: patch["mode_used"] = mode_used
     if seconds is not None: patch["time_spent_seconds"] = seconds
-    if status == "completed": patch["completed_at"] = "now()"
+    if status == "completed" and apply_status: patch["completed_at"] = "now()"
     if existing:
-        newly = status == "completed" and existing[0].get("status") != "completed"
+        newly = status == "completed" and prev_status != "completed"
         if patch:
             await db_patch("nat_lesson_progress",
                            {"user_id": f"eq.{user_id}", "lesson_id": f"eq.{lesson_id}"}, patch, service=True)
@@ -204,11 +212,16 @@ async def nat_quiz_submit(body: QuizSubmit, user: SupabaseUser = Depends(get_cur
 
 @router.get("/progress/me")
 async def nat_progress_me(user: SupabaseUser = Depends(get_current_user)):
-    """Per-topic completion for the NAT content + shared XP summary."""
-    done = await db_get("nat_lesson_progress",
-                        {"user_id": f"eq.{user.id}", "status": "eq.completed",
-                         "select": "lesson_id,topic_id"}, service=True)
+    """Per-topic completion + per-lesson status (for status colour-coding) + shared XP summary."""
+    rows = await db_get("nat_lesson_progress",
+                        {"user_id": f"eq.{user.id}",
+                         "select": "lesson_id,topic_id,status"}, service=True)
     by_topic: dict[str, int] = {}
-    for r in done:
-        by_topic[r["topic_id"]] = by_topic.get(r["topic_id"], 0) + 1
-    return {"completed_lessons": len(done), "completed_by_topic": by_topic}
+    lesson_status: dict[str, str] = {}
+    for r in rows:
+        lesson_status[r["lesson_id"]] = r["status"]
+        if r["status"] == "completed":
+            by_topic[r["topic_id"]] = by_topic.get(r["topic_id"], 0) + 1
+    completed_lessons = sum(1 for s in lesson_status.values() if s == "completed")
+    return {"completed_lessons": completed_lessons, "completed_by_topic": by_topic,
+            "lesson_status": lesson_status}
