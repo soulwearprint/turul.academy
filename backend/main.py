@@ -25,6 +25,9 @@ app.include_router(nat.router)
 
 @app.get("/api/health")
 async def health():
+    # Railway auto-deploys this service from GitHub pushes to main as of 2026-09-08
+    # (railway.json rootDirectory=/backend, watchPatterns=["backend/**"]) — previously
+    # required a manual `railway up`/`redeploy`, which silently went stale for ~2 months.
     return {"status": "ok"}
 
 
