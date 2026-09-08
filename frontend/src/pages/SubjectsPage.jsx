@@ -24,7 +24,7 @@ function subjectIcon(code) {
 
 export default function SubjectsPage() {
   const { session } = useAuth()
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const navigate = useNavigate()
   const [subjects, setSubjects]     = useState([])
   const [enrolled, setEnrolled]     = useState(new Set())
@@ -66,34 +66,34 @@ export default function SubjectsPage() {
           <div className="text-center text-slate-400 py-12">{t('common.loading')}</div>
         ) : subjects.map(subject => {
           const isEnrolled = enrolled.has(subject.id)
+          const isEnrolling = enrolling === subject.id
+          const name = (lang === 'en' ? subject.name : subject.name_hu) ?? subject.name_hu
           return (
-            <div key={subject.id} className="card p-4">
+            <button
+              key={subject.id}
+              onClick={() => isEnrolled
+                ? navigate(usesNatModel(subject.code) ? natHref(subject) : `/subjects/${subject.id}/topics`)
+                : toggleEnrol(subject)}
+              disabled={isEnrolling}
+              className="card w-full p-4 text-left active:scale-[0.98] transition-transform disabled:opacity-60"
+            >
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-2xl shrink-0">
                   {subjectIcon(subject.code)}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="font-semibold">{subject.name_hu}</div>
+                  <div className="font-semibold">{name}</div>
                   <div className="text-xs text-slate-500">{subject.grade_min}–{subject.grade_max}{t('subjects.grade.range')}</div>
                 </div>
                 {isEnrolled ? (
-                  <button
-                    onClick={() => navigate(usesNatModel(subject.code) ? natHref(subject) : `/subjects/${subject.id}/topics`)}
-                    className="shrink-0 text-turul-blue text-sm font-semibold"
-                  >
-                    {t('subjects.open')}
-                  </button>
+                  <span className="shrink-0 text-turul-blue text-sm font-semibold">{t('subjects.open')}</span>
                 ) : (
-                  <button
-                    onClick={() => toggleEnrol(subject)}
-                    disabled={enrolling === subject.id}
-                    className="shrink-0 btn-primary text-sm py-2 px-3"
-                  >
-                    {enrolling === subject.id ? '...' : t('subjects.enrol')}
-                  </button>
+                  <span className="shrink-0 btn-primary text-sm py-2 px-3 pointer-events-none">
+                    {isEnrolling ? '...' : t('subjects.enrol')}
+                  </span>
                 )}
               </div>
-            </div>
+            </button>
           )
         })}
       </div>

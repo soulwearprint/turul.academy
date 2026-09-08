@@ -33,7 +33,9 @@ async def nat_topics(grade: Optional[int] = None, subject_id: Optional[str] = No
         params["subject_id"] = f"eq.{subject_id}"
     rows = await db_get("curriculum_topics", params, service=True)
     for r in rows:
-        r.pop("curriculum_lessons", None)  # inner-join marker only
+        # Was an inner-join existence marker only — now surfaced as a count so the
+        # frontend can advertise how many Témák sit under each Témakör tile.
+        r["lesson_count"] = len(r.pop("curriculum_lessons", None) or [])
     return rows
 
 

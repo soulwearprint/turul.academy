@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react'
-import { Link, useNavigate, useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
+import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
+import PageHeader from '../components/PageHeader'
 import BottomNav from '../components/BottomNav'
+import { natTitle, lessonCountLabel } from '../lib/nat'
 
 export default function NatTopicsPage() {
   const [topics, setTopics] = useState([])
-  const [subjectName, setSubjectName] = useState(null)
+  const [subject, setSubject] = useState(null)
   const [loading, setLoading] = useState(true)
-  const navigate = useNavigate()
+  const { t, lang } = useLang()
   const [searchParams] = useSearchParams()
   const subjectId = searchParams.get('subject')
 
@@ -17,37 +20,41 @@ export default function NatTopicsPage() {
       api.curriculum.subjects(),
     ]).then(([tps, subjects]) => {
       setTopics(tps)
-      setSubjectName(subjects.find(s => s.id === subjectId)?.name_hu ?? null)
+      setSubject(subjects.find(s => s.id === subjectId) ?? null)
     }).finally(() => setLoading(false))
   }, [subjectId])
 
-  if (loading) return <div className="flex h-screen items-center justify-center text-slate-400">Betöltés…</div>
+  if (loading) return <div className="flex h-screen items-center justify-center text-slate-400">{t('common.loading')}</div>
 
   const byGrade = {}
-  for (const t of topics) (byGrade[t.grade] ??= []).push(t)
+  for (const tp of topics) (byGrade[tp.grade] ??= []).push(tp)
   const grades = Object.keys(byGrade).map(Number).sort((a, b) => a - b)
+  // Subjects use name/name_hu, not title/title_hu (that's topics/lessons) — pick directly.
+  const title = subject ? ((lang === 'en' ? subject.name : subject.name_hu) ?? subject.name_hu) : t('nat.default.title')
 
   return (
-    <div className="max-w-2xl mx-auto px-4 py-6 pb-24">
-      <div className="flex items-center gap-3 mb-1">
-        <button onClick={() => navigate('/')} className="text-slate-400 hover:text-slate-600">←</button>
-        <h1 className="text-2xl font-display font-bold text-slate-900">{subjectName ? `${subjectName} – NAT tananyag` : 'NAT tananyag'}</h1>
-      </div>
-      <p className="text-slate-500 text-sm mb-6 ml-7">Előnézet · {topics.length} témakör a 2020-as NAT szerint</p>
+    <div className="pb-24">
+      <PageHeader title={title} subtitle={t('nat.topics.subtitle', { n: topics.length })} backTo="/" />
 
-      {grades.map(g => (
-        <section key={g} className="mb-6">
-          <h2 className="text-xs font-semibold uppercase tracking-wide text-slate-400 mb-2">{g}. évfolyam</h2>
-          <div className="flex flex-col gap-2">
-            {byGrade[g].map(t => (
-              <Link key={t.id} to={`/nat/topics/${t.id}`}
-                className="block bg-white rounded-xl border border-slate-100 shadow-sm px-4 py-3 hover:border-turul-blue/40 transition">
-                <span className="font-semibold text-slate-800">{t.title_hu}</span>
-              </Link>
-            ))}
-          </div>
-        </section>
-      ))}
+      <div className="max-w-2xl mx-auto px-4 py-6">
+        {grades.map(g => (
+          <section key={g} className="mb-6">
+            <h2 className="font-bold text-slate-800 mb-3">{g}{t('common.grade')}</h2>
+            <div className="flex flex-col gap-2">
+              {byGrade[g].map(tp => (
+                <Link key={tp.id} to={`/nat/topics/${tp.id}`}
+                  className="flex items-center gap-3 bg-white rounded-xl border border-slate-100 shadow-sm px-4 py-3 hover:border-turul-blue/40 transition">
+                  <div className="flex-1 min-w-0">
+                    <div className="font-semibold text-slate-800">{natTitle(tp, lang)}</div>
+                    <div className="text-xs text-slate-500 mt-0.5">{lessonCountLabel(t, tp.lesson_count ?? 0)}</div>
+                  </div>
+                  <span className="text-slate-300 text-xl shrink-0">›</span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
       <BottomNav />
     </div>
   )

@@ -9,3 +9,14 @@ export function usesNatModel(code) {
 export function natHref(subject) {
   return `/nat?subject=${subject.id}`
 }
+
+// Every NAT row (subject/topic/lesson) carries a Hungarian title_hu plus an English
+// title — pick the one matching the active language, falling back to Hungarian since
+// not every row is guaranteed a filled-in English title.
+export function natTitle(row, lang) {
+  return (lang === 'en' ? row?.title : row?.title_hu) ?? row?.title_hu ?? row?.title ?? ''
+}
+
+export function lessonCountLabel(t, n) {
+  return t(n === 1 ? 'nat.lesson.count.one' : 'nat.lesson.count.other', { n })
+}

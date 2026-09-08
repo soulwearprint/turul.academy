@@ -93,6 +93,19 @@ export const translations = {
   'topic.done':         { hu: 'Kész',               en: 'Done' },
   'topic.progress':     { hu: '{done}/{total} kész', en: '{done}/{total} done' },
 
+  // ── NAT 3-tier flow (History/Physics) ─────────────────────
+  'nat.topics.subtitle':   { hu: 'Előnézet · {n} témakör a 2020-as NAT szerint', en: 'Preview · {n} topics from the 2020 curriculum' },
+  'nat.default.title':     { hu: 'NAT tananyag', en: 'NAT curriculum' },
+  'nat.lesson.count.one':  { hu: '{n} téma',  en: '{n} lesson' },
+  'nat.lesson.count.other':{ hu: '{n} téma',  en: '{n} lessons' },
+  'nat.topic.quiz':        { hu: '🎯 Témazáró kvíz', en: '🎯 Topic quiz' },
+  'nat.not.found':         { hu: 'Nem található.', en: 'Not found.' },
+  'nat.status.started':    { hu: 'Elkezdve',  en: 'Started' },
+  'nat.status.read':       { hu: 'Elolvasva', en: 'Read' },
+  'nat.status.completed':  { hu: 'Kész ✓',    en: 'Done ✓' },
+  'nat.layer.world':       { hu: '🌍 Világ ekkor', en: '🌍 The world at the time' },
+  'nat.layer.experiment':  { hu: '🧪 Kísérlet és felfedezés', en: '🧪 Experiment & discovery' },
+
   // ── Lesson player ────────────────────────────────────────
   'lesson.key.term':    { hu: 'Kulcsfogalom',  en: 'Key term' },
   'lesson.next':        { hu: '→',             en: '→' },
