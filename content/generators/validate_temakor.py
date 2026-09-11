@@ -252,7 +252,14 @@ async def _confirm_facts(c, issues):
         "vagy hiány — ezek NEM hibák). Add vissza a MEGTARTANDÓ, valódi hibák indexeit:\n"
         '{"keep":[{"i":0,"severity":"sulyos|csekely"}]}\n\n'
         f"JELÖLTEK:\n{json.dumps(cand, ensure_ascii=False)}", maxtok=600)
-    keep = {k["i"]: k.get("severity", "sulyos") for k in out.get("keep", [])}
+    # The model is asked for [{"i":0,"severity":"..."}] but sometimes just returns the
+    # bare indices ([0,2,3]) when it has nothing else to add — accept both shapes.
+    keep = {}
+    for k in out.get("keep", []):
+        if isinstance(k, dict):
+            keep[k["i"]] = k.get("severity", "sulyos")
+        else:
+            keep[k] = "sulyos"
     res = []
     for n, x in enumerate(issues):
         if n in keep:
