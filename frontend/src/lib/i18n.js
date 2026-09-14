@@ -52,7 +52,7 @@ export const translations = {
   'mode.quiz.desc':   { hu: '4 kérdés az anyag ellenőrzéséhez',                  en: '4 questions to check your understanding' },
 
   // ── Home ─────────────────────────────────────────────────
-  'home.greeting':      { hu: 'Üdv vissza,',   en: 'Welcome back,' },
+  'home.greeting':      { hu: 'Üdvözöllek ismét,',   en: 'Welcome back,' },
   'home.signout':       { hu: 'Kijelentkezés',  en: 'Sign out' },
   'home.streak':        { hu: '{n} napos sorozat', en: '{n}-day streak' },
   'home.continue.label':{ hu: 'Folytasd ott, ahol abbahagytad', en: 'Pick up where you left off' },
