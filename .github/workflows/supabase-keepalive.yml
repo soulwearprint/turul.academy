@@ -22,22 +22,22 @@ jobs:
           SUPABASE_URL: https://tqsrwhvvghryycgsxfsj.supabase.co
           SUPABASE_KEY: sb_publishable__RXVTiIc8H-54WUKMbe7dQ_jFXLN_-F
         run: |
-          # curl itself can fail before producing an HTTP code (DNS/connect error,
-          # e.g. exit 6) — `|| echo "000"` catches that so `set -e` doesn't abort
-          # the step before the diagnostic echo/if below ever runs.
+          # On a DNS/connect failure curl still prints "000" via -w AND exits non-zero.
+          # The old `$(curl … || echo "000")` therefore produced "000000", which
+          # didn't match "000" — so the 2026-09-22 run passed green while the project
+          # was already paused. Assign the fallback outside the substitution instead,
+          # and only count a 2xx as healthy: a paused project answers 5xx (521/540).
           for attempt in 1 2 3; do
             code=$(curl -s -o /dev/null -w "%{http_code}" \
               "${SUPABASE_URL}/rest/v1/curriculum_subjects?select=id&limit=1" \
               -H "apikey: ${SUPABASE_KEY}" \
-              -H "Authorization: Bearer ${SUPABASE_KEY}" || echo "000")
+              -H "Authorization: Bearer ${SUPABASE_KEY}") || code="000"
             echo "Attempt ${attempt}: Academy REST ping → HTTP ${code}"
-            [ "$code" != "000" ] && break
+            case "$code" in 2??) break ;; esac
             [ "$attempt" -lt 3 ] && sleep 5
           done
-          # Any HTTP response means the DB served the request (activity registered).
-          # Only a connection failure (000) after all retries indicates the project
-          # is down/paused rather than a transient network blip.
-          if [ "$code" = "000" ]; then
-            echo "::error::Supabase did not respond after 3 attempts — project may be paused or down."
-            exit 1
-          fi
+          case "$code" in
+            2??) ;;
+            *) echo "::error::Supabase answered HTTP ${code} after 3 attempts — project is likely paused. Restore it in the Supabase dashboard."
+               exit 1 ;;
+          esac
