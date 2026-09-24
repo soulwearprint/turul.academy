@@ -17,6 +17,15 @@ export function natTitle(row, lang) {
   return (lang === 'en' ? row?.title : row?.title_hu) ?? row?.title_hu ?? row?.title ?? ''
 }
 
+export function subjectIcon(code = '') {
+  if (code.includes('HISTORY')) return '🏛️'
+  if (code.includes('PHYSICS')) return '⚛️'
+  if (code.includes('MATH')) return '📐'
+  if (code.includes('BIOLOGY')) return '🧬'
+  if (code.includes('CHEMISTRY')) return '🧪'
+  return '📘'
+}
+
 export function lessonCountLabel(t, n) {
   return t(n === 1 ? 'nat.lesson.count.one' : 'nat.lesson.count.other', { n })
 }

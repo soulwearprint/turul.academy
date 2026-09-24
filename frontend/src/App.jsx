@@ -18,6 +18,7 @@ import NatTopicsPage from './pages/NatTopicsPage'
 import NatTopicPage from './pages/NatTopicPage'
 import NatLessonPage from './pages/NatLessonPage'
 import NatTopicQuizPage from './pages/NatTopicQuizPage'
+import ReviewPage from './pages/ReviewPage'
 
 function RequireAuth({ children }) {
   const { session, loading } = useAuth()
@@ -52,6 +53,7 @@ export default function App() {
             <Route path="/lessons/:lessonId" element={<RequireAuth><LessonPage /></RequireAuth>} />
             <Route path="/lessons/:lessonId/quiz" element={<RequireAuth><QuizPage /></RequireAuth>} />
             <Route path="/progress" element={<RequireAuth><ProgressPage /></RequireAuth>} />
+            <Route path="/review" element={<RequireAuth><ReviewPage /></RequireAuth>} />
             <Route path="/turul" element={<RequireAuth><TurulCompanionPage /></RequireAuth>} />
             <Route path="/profile" element={<RequireAuth><ProfilePage /></RequireAuth>} />
 

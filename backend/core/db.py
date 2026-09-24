@@ -67,6 +67,13 @@ async def db_patch(table: str, params: dict, payload: dict, *, user_token: Optio
     return resp.json()
 
 
+async def db_rpc(fn: str, payload: dict) -> None:
+    """Call a Postgres function via PostgREST RPC with the service role — used for
+    atomic increments that a read-modify-write through db_patch would race on."""
+    resp = await http().post(rpc_url(fn), headers=SUPABASE_HEADERS_SERVICE, json=payload, timeout=7.0)
+    resp.raise_for_status()
+
+
 async def db_delete(table: str, params: dict, *, service: bool = False) -> None:
     """DELETE rows matching params. Use service=True to bypass RLS (admin operations)."""
     headers = SUPABASE_HEADERS_SERVICE if service else SUPABASE_HEADERS_ANON

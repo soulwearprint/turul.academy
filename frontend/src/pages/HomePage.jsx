@@ -7,16 +7,7 @@ import BottomNav from '../components/BottomNav'
 import TurulPortrait from '../components/TurulPortrait'
 import InstallAppBanner from '../components/InstallAppBanner'
 import { stageForGrade } from '../lib/turul'
-import { usesNatModel, natHref } from '../lib/nat'
-
-function subjectIcon(code) {
-  if (code.includes('HISTORY')) return '🏛️'
-  if (code.includes('PHYSICS')) return '⚛️'
-  if (code.includes('MATH')) return '📐'
-  if (code.includes('BIOLOGY')) return '🧬'
-  if (code.includes('CHEMISTRY')) return '🧪'
-  return '📘'
-}
+import { usesNatModel, natHref, subjectIcon } from '../lib/nat'
 
 export default function HomePage() {
   const { session, profile, setProfile, signOut } = useAuth()

@@ -1,11 +1,12 @@
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useEffect, useRef, useState } from 'react'
+import { useParams, useSearchParams } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
 import { CardList, QuizRunner } from '../components/ContentCards'
 import PageHeader from '../components/PageHeader'
 import { natTitle } from '../lib/nat'
+import { useStudyTimer } from '../lib/useStudyTimer'
 
 const MODE_EMOJI = { text: '📖', story: '🎭', visual: '🗺️', quiz: '🧠' }
 const MAIN_MODES = ['text', 'story', 'visual', 'quiz']
@@ -18,6 +19,7 @@ const EXTRA_LAYERS = {
 
 export default function NatLessonPage() {
   const { lessonId } = useParams()
+  const [searchParams] = useSearchParams()
   const { session } = useAuth()
   const token = session?.access_token
   const { t, lang } = useLang()
@@ -26,28 +28,45 @@ export default function NatLessonPage() {
   const [mode, setMode] = useState('text')
   const [showExtra, setShowExtra] = useState(false)
   const [viewedTabs, setViewedTabs] = useState(new Set())
+  const readSent = useRef(false)
+  const activeTabRef = useRef(null)
+
+  // Keep the active tab visible in the scrollable strip (e.g. "Kvíz" opened via ?tab=quiz).
+  useEffect(() => {
+    activeTabRef.current?.scrollIntoView({ block: 'nearest', inline: 'nearest' })
+  }, [mode, lesson])
+
+  // Time on the extra layer counts toward that layer while it's open.
+  const timedMode = showExtra && lesson ? Object.keys(EXTRA_LAYERS).find(m => lesson.blocks[m]) ?? mode : mode
+  const { engaged } = useStudyTimer({
+    mode: timedMode,
+    enabled: !!lesson,
+    onFlush: (delta) => api.nat.trackTime(lessonId, delta, token).catch(() => {}),
+  })
 
   useEffect(() => {
     api.nat.lesson(lessonId).then(l => {
       setLesson(l)
-      const firstMode = l.modes.find(m => MAIN_MODES.includes(m)) || 'text'
+      const wanted = searchParams.get('tab')
+      const firstMode = (wanted && l.blocks[wanted] && MAIN_MODES.includes(wanted))
+        ? wanted : (l.modes.find(m => MAIN_MODES.includes(m)) || 'text')
       setMode(firstMode)
-      const seen = new Set([firstMode])
-      setViewedTabs(seen)
-      api.nat.setProgress(lessonId, { status: 'in_progress' }, token).catch(() => {})
-      markReadIfComplete(l, seen)
+      setViewedTabs(new Set([firstMode]))
     }).finally(() => setLoading(false))
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lessonId, token])
+  }, [lessonId])
 
   // "All cards read" = every non-quiz tab opened at least once (the quiz is a separate,
   // higher status — completing it is what actually moves a Téma to "completed").
-  function markReadIfComplete(l, seen) {
-    const readable = MAIN_MODES.filter(m => m !== 'quiz' && l.blocks[m])
-    if (readable.length > 0 && readable.every(t => seen.has(t))) {
+  // Only once the visit is past the mis-tap threshold, so a stray open marks nothing.
+  useEffect(() => {
+    if (!lesson || !engaged || readSent.current) return
+    const readable = MAIN_MODES.filter(m => m !== 'quiz' && lesson.blocks[m])
+    if (readable.length > 0 && readable.every(m => viewedTabs.has(m))) {
+      readSent.current = true
       api.nat.setProgress(lessonId, { status: 'read' }, token).catch(() => {})
     }
-  }
+  }, [lesson, engaged, viewedTabs, lessonId, token])
 
   if (loading) return <div className="flex h-screen items-center justify-center text-slate-400">{t('common.loading')}</div>
   if (!lesson) return <div className="flex h-screen items-center justify-center text-slate-400">{t('nat.not.found')}</div>
@@ -57,10 +76,7 @@ export default function NatLessonPage() {
 
   function openTab(m) {
     setMode(m)
-    if (viewedTabs.has(m)) return
-    const next = new Set(viewedTabs).add(m)
-    setViewedTabs(next)
-    markReadIfComplete(lesson, next)
+    if (!viewedTabs.has(m)) setViewedTabs(new Set(viewedTabs).add(m))
   }
 
   return (
@@ -71,7 +87,7 @@ export default function NatLessonPage() {
         {/* Mode tabs */}
         <div className="flex gap-2 overflow-x-auto pb-2 mb-4">
           {tabs.map(m => (
-            <button key={m} onClick={() => openTab(m)}
+            <button key={m} onClick={() => openTab(m)} ref={mode === m ? activeTabRef : null}
               className={`whitespace-nowrap px-3.5 py-2 rounded-full text-sm font-semibold transition ${
                 mode === m ? 'bg-turul-blue text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}>
               {MODE_EMOJI[m]} {t(`mode.${m}`)}

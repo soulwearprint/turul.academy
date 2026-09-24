@@ -22,12 +22,15 @@ async function get(path, token) {
   return res.json()
 }
 
-async function post(path, body, token) {
+// keepalive: the request survives the page being closed/hidden — used for the final
+// study-time flush when a student leaves a lesson.
+async function post(path, body, token, { keepalive = false } = {}) {
   const h = await headers(token)
   const res = await fetch(`${BASE}${path}`, {
     method: 'POST',
     headers: h,
     body: JSON.stringify(body),
+    keepalive,
   })
   if (!res.ok) {
     const msg = await res.text().catch(() => res.status)
@@ -44,6 +47,13 @@ async function patch(path, body, token) {
     body: JSON.stringify(body),
   })
   if (!res.ok) throw new Error(`PATCH ${path} → ${res.status}`)
+  return res.json()
+}
+
+async function del(path, token) {
+  const h = await headers(token)
+  const res = await fetch(`${BASE}${path}`, { method: 'DELETE', headers: h })
+  if (!res.ok) throw new Error(`DELETE ${path} → ${res.status}`)
   return res.json()
 }
 
@@ -70,7 +80,11 @@ export const api = {
     topicQuiz:   (tid)                => get(`/api/nat/topics/${tid}/quiz`),
     progress:    (token)             => get('/api/nat/progress/me', token),
     setProgress: (lid, body, token)  => post(`/api/nat/lessons/${lid}/progress`, body, token),
+    trackTime:   (lid, body, token)  => post(`/api/nat/lessons/${lid}/progress`, body, token, { keepalive: true }),
+    resetLesson: (lid, token)        => del(`/api/nat/lessons/${lid}/progress`, token),
     submitQuiz:  (body, token)       => post('/api/nat/quiz/submit', body, token),
+    stats:       (token)             => get('/api/nat/stats/me', token),
+    review:      (token)             => get('/api/nat/review/me', token),
   },
   quiz: {
     submit: (body, token) => post('/api/quiz/submit', body, token),
@@ -78,6 +92,9 @@ export const api = {
   progress: {
     me:         (token)        => get('/api/progress/me', token),
     subject:    (sid, token)   => get(`/api/progress/me/subject/${sid}`, token),
+    badges:     (token)        => get('/api/progress/me/badges', token),
+    activity:   (token)        => get('/api/progress/me/activity', token),
+    resetAll:   (token)        => del('/api/progress/me?confirm=RESET', token),
   },
   account: {
     me:       (token)          => get('/api/account/me', token),

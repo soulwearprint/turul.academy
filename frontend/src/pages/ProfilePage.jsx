@@ -22,6 +22,8 @@ export default function ProfilePage() {
   const [saved, setSaved] = useState(false)
   const [error, setError] = useState('')
   const [confirmingSignOut, setConfirmingSignOut] = useState(false)
+  const [confirmingReset, setConfirmingReset] = useState(false)
+  const [resetState, setResetState] = useState(null)   // null | 'busy' | 'done' | 'error'
 
   const token = session?.access_token
 
@@ -51,6 +53,17 @@ export default function ProfilePage() {
       setError(err.message ?? 'Hiba a mentéskor')
     } finally {
       setSaving(false)
+    }
+  }
+
+  async function resetProgress() {
+    setResetState('busy')
+    try {
+      await api.progress.resetAll(token)
+      setResetState('done')
+      setConfirmingReset(false)
+    } catch {
+      setResetState('error')
     }
   }
 
@@ -136,6 +149,39 @@ export default function ProfilePage() {
             find the install option even after dismissing it once on Home. */}
         <div className="pt-4 border-t border-slate-100">
           <InstallAppBanner variant="inline" />
+        </div>
+
+        {/* Reset all progress — irreversible, so it spells out exactly what goes and
+            needs a second, explicit tap. (Per-lesson resets live on the Progress page.) */}
+        <div className="pt-3 mt-1 border-t border-slate-100">
+          {confirmingReset ? (
+            <div className="flex flex-col gap-2.5 pt-3">
+              <p className="text-sm text-slate-600 bg-red-50 border border-red-100 rounded-xl px-3 py-2.5">{t('profile.reset.confirm')}</p>
+              <div className="flex gap-2">
+                <button
+                  onClick={() => { setConfirmingReset(false); setResetState(null) }}
+                  className="flex-1 px-3 py-2.5 rounded-xl text-sm font-semibold text-slate-600 bg-slate-100 hover:bg-slate-200"
+                >
+                  {t('common.cancel')}
+                </button>
+                <button
+                  onClick={resetProgress}
+                  disabled={resetState === 'busy'}
+                  className="flex-1 px-3 py-2.5 rounded-xl text-sm font-semibold text-white bg-red-500 hover:bg-red-600 disabled:opacity-50"
+                >
+                  {resetState === 'busy' ? '…' : t('profile.reset.confirm.cta')}
+                </button>
+              </div>
+              {resetState === 'error' && <p className="text-xs text-red-500 text-center">{t('profile.reset.error')}</p>}
+            </div>
+          ) : (
+            <button
+              onClick={() => { setConfirmingReset(true); setResetState(null) }}
+              className="w-full text-center text-sm font-semibold text-slate-500 py-2.5 hover:text-red-500"
+            >
+              {resetState === 'done' ? t('profile.reset.done') : t('profile.reset.button')}
+            </button>
+          )}
         </div>
 
         {/* Sign out — visually separated + requires confirmation, so it can't be

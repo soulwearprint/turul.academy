@@ -14,10 +14,9 @@ idea when a session gets archived." Added 2026-07-07._
   scoped by optional `subject_id`) and a UI entry point (a search bar, probably on the Subjects
   page or a new dedicated search page).
 
-- **Badges.** `user_badges` table + schema already exist (see `routes/progress.py` — `/me`
-  already returns `badges`), but nothing ever awards one. Needs: badge definitions (what earns
-  one — streaks? topic completion? perfect quiz scores?), an awarding mechanism (probably
-  alongside `award_xp()` in `core/xp.py`), and badge art/icons.
+- ~~**Badges.**~~ Built 2026-09-24: 12 badges, catalogue in `backend/core/badges.py` +
+  `frontend/src/lib/badges.js`, awarded after quiz submits / study-time flushes and on opening
+  the Progress page. Still open: real badge art (emoji placeholders today).
 
 - **Emelt-szint (advanced depth layer).** Schema-ready: `content_blocks.level` already supports
   `alap` (default, in use) vs `emelt` (reserved, unused). Needs: a decision on which topics get

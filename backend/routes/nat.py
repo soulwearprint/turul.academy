@@ -9,15 +9,22 @@ are is_active=true. Mirrors the service-role pattern documented in core/db.py.
 from typing import Optional
 from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
-from core.db import db_get, db_post, db_patch, db_delete
+from core.db import db_get, db_post, db_patch, db_delete, db_rpc
 from core.auth import get_current_user, SupabaseUser
-from core.xp import award_xp
+from core.xp import award_xp, log_study_time, revoke_xp
+from core.badges import safe_evaluate
 
 router = APIRouter(prefix="/api/nat", tags=["nat"])
 
 MODES = ["text", "story", "visual", "quiz", "world", "experiment"]
+READING_MODES = [m for m in MODES if m != "quiz"]
 XP_PER_CORRECT = 10
 XP_PERFECT_BONUS = 20
+# One flush covers one uninterrupted stretch of a lesson visit; anything longer is a
+# tab left open, not study — cap it so it can't swamp the averages.
+MAX_FLUSH_SECONDS = 30 * 60
+# A tab only counts as "read" (for seconds-per-card) after this much time on it.
+MIN_MODE_SECONDS = 3
 
 
 @router.get("/topics")
@@ -101,7 +108,10 @@ async def nat_topic_quiz(topic_id: str):
 class ProgressBody(BaseModel):
     status: Optional[str] = None            # in_progress | read (all main tabs viewed) | completed
     mode_used: Optional[str] = None
+    # Time is a DELTA — seconds of active study since the client's last flush — and is
+    # added to the lesson's running total (a lesson is usually studied over several visits).
     time_spent_seconds: Optional[int] = None
+    mode_seconds: Optional[dict[str, int]] = None   # the same delta, split by tab
 
 
 # Ordered so a status update never regresses further-along progress — e.g. reopening
@@ -109,7 +119,7 @@ class ProgressBody(BaseModel):
 STATUS_RANK = {"in_progress": 1, "read": 2, "completed": 3}
 
 
-async def _upsert_progress(user_id, lesson_id, topic_id, status=None, mode_used=None, seconds=None):
+async def _upsert_progress(user_id, lesson_id, topic_id, status=None, mode_used=None):
     existing = await db_get("nat_lesson_progress",
                             {"user_id": f"eq.{user_id}", "lesson_id": f"eq.{lesson_id}", "select": "id,status"},
                             service=True)
@@ -119,7 +129,6 @@ async def _upsert_progress(user_id, lesson_id, topic_id, status=None, mode_used=
     patch = {}
     if apply_status: patch["status"] = status
     if mode_used: patch["mode_used"] = mode_used
-    if seconds is not None: patch["time_spent_seconds"] = seconds
     if status == "completed" and apply_status: patch["completed_at"] = "now()"
     if existing:
         newly = status == "completed" and prev_status != "completed"
@@ -129,21 +138,50 @@ async def _upsert_progress(user_id, lesson_id, topic_id, status=None, mode_used=
         return newly
     await db_post("nat_lesson_progress",
                   {"user_id": user_id, "lesson_id": lesson_id, "topic_id": topic_id,
-                   "status": status or "in_progress", "mode_used": mode_used,
-                   "time_spent_seconds": seconds}, service=True)
+                   "status": status or "in_progress", "mode_used": mode_used}, service=True)
     return status == "completed"
+
+
+def _clean_time(body: ProgressBody) -> tuple[int, dict]:
+    modes = {m: min(max(int(s), 0), MAX_FLUSH_SECONDS)
+             for m, s in (body.mode_seconds or {}).items() if m in MODES}
+    modes = {m: s for m, s in modes.items() if s > 0}
+    total = body.time_spent_seconds if body.time_spent_seconds is not None else sum(modes.values())
+    return min(max(int(total or 0), 0), MAX_FLUSH_SECONDS), modes
 
 
 @router.post("/lessons/{lesson_id}/progress")
 async def nat_lesson_progress(lesson_id: str, body: ProgressBody,
                               user: SupabaseUser = Depends(get_current_user)):
-    """Record that the user started/finished a Téma."""
+    """Record study time on a Téma and/or move its status forward."""
     rows = await db_get("curriculum_lessons", {"id": f"eq.{lesson_id}", "select": "topic_id"}, service=True)
     if not rows:
         raise HTTPException(status_code=404, detail="Lesson not found")
-    await _upsert_progress(user.id, lesson_id, rows[0]["topic_id"],
-                           body.status, body.mode_used, body.time_spent_seconds)
-    return {"ok": True}
+    topic_id = rows[0]["topic_id"]
+    seconds, modes = _clean_time(body)
+    if seconds > 0:
+        # Atomic upsert-and-add (creates the row as in_progress on a first visit).
+        await db_rpc("nat_track_time", {"p_user": user.id, "p_lesson": lesson_id, "p_topic": topic_id,
+                                        "p_seconds": seconds, "p_modes": modes})
+        await log_study_time(user.id, seconds)
+    if body.status or body.mode_used:
+        await _upsert_progress(user.id, lesson_id, topic_id, body.status, body.mode_used)
+    new_badges = await safe_evaluate(user.id) if (seconds > 0 or body.status) else []
+    return {"ok": True, "new_badges": new_badges}
+
+
+@router.delete("/lessons/{lesson_id}/progress")
+async def nat_lesson_reset(lesson_id: str, user: SupabaseUser = Depends(get_current_user)):
+    """Undo a Téma: its status, study time, quiz result and attempt history — e.g. a
+    lesson opened by mistake, or a clean retake. The quiz XP it earned is taken back.
+    Earned badges and the study-calendar history stay (those record what happened)."""
+    scope = {"user_id": f"eq.{user.id}", "lesson_id": f"eq.{lesson_id}"}
+    results = await db_get("nat_quiz_results", dict(scope, select="xp_earned"), service=True)
+    xp = sum(r.get("xp_earned") or 0 for r in results)
+    for table in ("nat_quiz_results", "nat_quiz_attempts", "nat_lesson_progress"):
+        await db_delete(table, scope, service=True)
+    await revoke_xp(user.id, xp)
+    return {"ok": True, "xp_removed": xp}
 
 
 class QuizSubmit(BaseModel):
@@ -202,14 +240,17 @@ async def nat_quiz_submit(body: QuizSubmit, user: SupabaseUser = Depends(get_cur
         await db_delete("nat_quiz_results", result_params, service=True)
     xp_delta = xp - prev_xp
 
-    await db_post("nat_quiz_results", {
-        "user_id": user.id, "topic_id": body.topic_id, "lesson_id": body.lesson_id,
-        "scope": body.scope, "score": score, "correct": correct, "total": total,
-        "answers": body.answers, "xp_earned": xp,
-    }, service=True)
+    attempt = {"user_id": user.id, "topic_id": body.topic_id, "lesson_id": body.lesson_id,
+               "scope": body.scope, "score": score, "correct": correct, "total": total,
+               "answers": body.answers}
+    await db_post("nat_quiz_results", dict(attempt, xp_earned=xp), service=True)
+    # Every attempt is also logged (results keeps only the latest) — the history behind
+    # first-try vs latest scores and "questions you keep missing".
+    await db_post("nat_quiz_attempts", dict(attempt, results=per), service=True)
     totals = await award_xp(user.id, xp_delta, lessons_delta=lessons_delta)
+    new_badges = await safe_evaluate(user.id)
     return {"score": score, "correct": correct, "total": total, "results": per,
-            "xp_earned": xp_delta, **totals}
+            "xp_earned": xp_delta, "new_badges": new_badges, **totals}
 
 
 @router.get("/progress/me")
@@ -227,3 +268,169 @@ async def nat_progress_me(user: SupabaseUser = Depends(get_current_user)):
     completed_lessons = sum(1 for s in lesson_status.values() if s == "completed")
     return {"completed_lessons": completed_lessons, "completed_by_topic": by_topic,
             "lesson_status": lesson_status}
+
+
+def _in(ids) -> str:
+    return f"in.({','.join(ids)})"
+
+
+def _avg(values):
+    values = [v for v in values if v is not None]
+    return round(sum(values) / len(values)) if values else None
+
+
+@router.get("/stats/me")
+async def nat_stats_me(user: SupabaseUser = Depends(get_current_user)):
+    """Per-Témakör / per-Téma study stats: time, seconds per card read, and quiz
+    retention (first attempt vs latest). Only topics the user has touched."""
+    uid = f"eq.{user.id}"
+    progress = await db_get("nat_lesson_progress",
+                            {"user_id": uid, "select": "lesson_id,topic_id,status,time_spent_seconds,mode_seconds"},
+                            service=True)
+    results = await db_get("nat_quiz_results",
+                           {"user_id": uid, "select": "lesson_id,topic_id,scope,score"}, service=True)
+    attempts = await db_get("nat_quiz_attempts",
+                            {"user_id": uid, "select": "lesson_id,topic_id,scope,score", "order": "created_at"},
+                            service=True)
+    topic_ids = {r["topic_id"] for r in progress + results}
+    if not topic_ids:
+        return {"topics": [], "totals": {"seconds": 0, "lessons": 0, "quizzes": 0, "quiz_avg": None}}
+
+    topics = await db_get("curriculum_topics",
+                          {"id": _in(topic_ids),
+                           "select": "id,nat_id,title,title_hu,grade,order_index,subject_id,"
+                                     "curriculum_lessons(id,title,title_hu,order_index)"},
+                          service=True)
+    lesson_ids = [r["lesson_id"] for r in progress]
+    counts = await db_get("content_block_card_counts",
+                          {"lesson_id": _in(lesson_ids), "scope": "eq.lesson",
+                           "select": "lesson_id,mode,card_count"}, service=True) if lesson_ids else []
+    cards: dict[str, dict] = {}
+    for c in counts:
+        cards.setdefault(c["lesson_id"], {})[c["mode"]] = c["card_count"] or 0
+
+    prog = {r["lesson_id"]: r for r in progress}
+    latest = {(r["scope"], r.get("lesson_id") or r["topic_id"]): r["score"] for r in results}
+    first: dict = {}
+    tries: dict = {}
+    for a in attempts:
+        key = (a["scope"], a.get("lesson_id") or a["topic_id"])
+        first.setdefault(key, a["score"])
+        tries[key] = tries.get(key, 0) + 1
+
+    out_topics = []
+    for t in sorted(topics, key=lambda t: (t.get("grade") or 0, t.get("order_index") or 0)):
+        lessons_out = []
+        all_lessons = t.pop("curriculum_lessons", []) or []
+        for l in sorted(all_lessons, key=lambda l: l.get("order_index") or 0):
+            p = prog.get(l["id"])
+            key = ("lesson", l["id"])
+            if not p and key not in latest:
+                continue
+            ms = (p or {}).get("mode_seconds") or {}
+            read_s = sum(ms.get(m, 0) for m in READING_MODES)
+            n_cards = sum(cards.get(l["id"], {}).get(m, 0)
+                          for m in READING_MODES if ms.get(m, 0) >= MIN_MODE_SECONDS)
+            lessons_out.append({
+                "lesson_id": l["id"], "title": l.get("title"), "title_hu": l.get("title_hu"),
+                "order_index": l.get("order_index"), "status": (p or {}).get("status"),
+                "seconds": (p or {}).get("time_spent_seconds") or 0,
+                "read_seconds": read_s, "cards_read": n_cards,
+                "sec_per_card": round(read_s / n_cards) if n_cards else None,
+                "quiz_score": latest.get(key), "first_score": first.get(key), "attempts": tries.get(key, 0),
+            })
+        read_s = sum(x["read_seconds"] for x in lessons_out)
+        n_cards = sum(x["cards_read"] for x in lessons_out)
+        out_topics.append({
+            "topic_id": t["id"], "nat_id": t.get("nat_id"), "title": t.get("title"),
+            "title_hu": t.get("title_hu"), "grade": t.get("grade"), "subject_id": t.get("subject_id"),
+            "seconds": sum(x["seconds"] for x in lessons_out),
+            "sec_per_card": round(read_s / n_cards) if n_cards else None,
+            "quiz_avg": _avg(x["quiz_score"] for x in lessons_out),
+            "first_avg": _avg(x["first_score"] for x in lessons_out),
+            "topic_quiz": latest.get(("topic", t["id"])),
+            "lessons_done": sum(1 for x in lessons_out if x["status"] == "completed"),
+            "lessons_total": len(all_lessons),
+            "lessons": lessons_out,
+        })
+    return {
+        "topics": out_topics,
+        "totals": {
+            "seconds": sum(r.get("time_spent_seconds") or 0 for r in progress),
+            "lessons": len(progress),
+            "quizzes": len(results),
+            "quiz_avg": _avg(r["score"] for r in results),
+        },
+    }
+
+
+@router.get("/review/me")
+async def nat_review_me(user: SupabaseUser = Depends(get_current_user)):
+    """Questions the user got wrong on their most recent attempt of each quiz, ranked by
+    how many attempts missed them. Attempts graded against an older version of a quiz
+    (different question count) are ignored — the indexes wouldn't line up."""
+    attempts = await db_get("nat_quiz_attempts",
+                            {"user_id": f"eq.{user.id}", "order": "created_at.desc", "limit": "400",
+                             "select": "lesson_id,topic_id,scope,total,results,answers,created_at"},
+                            service=True)
+    by_quiz: dict = {}
+    for a in attempts:
+        by_quiz.setdefault((a["scope"], a.get("lesson_id") or a["topic_id"]), []).append(a)
+    if not by_quiz:
+        return {"items": [], "count": 0}
+
+    lesson_ids = [k for s, k in by_quiz if s == "lesson"]
+    topic_quiz_ids = [k for s, k in by_quiz if s == "topic"]
+    blocks = []
+    if lesson_ids:
+        blocks += await db_get("content_blocks",
+                               {"lesson_id": _in(lesson_ids), "scope": "eq.lesson", "mode": "eq.quiz",
+                                "is_active": "eq.true", "select": "lesson_id,topic_id,scope,content"}, service=True)
+    if topic_quiz_ids:
+        blocks += await db_get("content_blocks",
+                               {"topic_id": _in(topic_quiz_ids), "scope": "eq.topic",
+                                "is_active": "eq.true", "select": "lesson_id,topic_id,scope,content"}, service=True)
+    content = {(b["scope"], b.get("lesson_id") if b["scope"] == "lesson" else b["topic_id"]): b["content"] or []
+               for b in blocks}
+
+    lessons = await db_get("curriculum_lessons",
+                           {"id": _in(lesson_ids), "select": "id,title,title_hu,topic_id"},
+                           service=True) if lesson_ids else []
+    lesson_by_id = {l["id"]: l for l in lessons}
+    all_topic_ids = set(topic_quiz_ids) | {l["topic_id"] for l in lessons}
+    topics = await db_get("curriculum_topics", {"id": _in(all_topic_ids), "select": "id,title,title_hu"},
+                          service=True) if all_topic_ids else []
+    topic_by_id = {t["id"]: t for t in topics}
+
+    items = []
+    for (scope, qid), quiz_attempts in by_quiz.items():
+        cards = content.get((scope, qid))
+        if not cards:
+            continue
+        valid = [a for a in quiz_attempts
+                 if a.get("total") == len(cards) and len(a.get("results") or []) == len(cards)]
+        if not valid:
+            continue
+        last = valid[0]                                   # newest first
+        lesson = lesson_by_id.get(qid) if scope == "lesson" else None
+        topic = topic_by_id.get(lesson["topic_id"] if lesson else qid) or {}
+        for i, card in enumerate(cards):
+            if last["results"][i]:
+                continue
+            answers = last.get("answers") or []
+            items.append({
+                "scope": scope, "lesson_id": qid if scope == "lesson" else None,
+                "topic_id": lesson["topic_id"] if lesson else qid, "index": i,
+                "question": card.get("question"), "options": card.get("options") or [],
+                "correct": (card.get("correct") or "").strip()[:1].upper(),
+                "explanation": card.get("explanation"),
+                "your_answer": answers[i] if i < len(answers) else "",
+                "misses": sum(1 for a in valid if not a["results"][i]), "attempts": len(valid),
+                "last_at": last["created_at"],
+                "lesson_title": (lesson or {}).get("title"), "lesson_title_hu": (lesson or {}).get("title_hu"),
+                "topic_title": topic.get("title"), "topic_title_hu": topic.get("title_hu"),
+            })
+    # Most-missed first; ties → most recently missed first (stable two-pass sort).
+    items.sort(key=lambda x: x["last_at"], reverse=True)
+    items.sort(key=lambda x: x["misses"], reverse=True)
+    return {"items": items[:60], "count": len(items)}

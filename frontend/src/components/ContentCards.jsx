@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import SketchDiagram from './SketchDiagram'
+import { useLang } from '../contexts/LanguageContext'
+import { badgeIcon } from '../lib/badges'
 
 // Shared renderers for NAT 3-tier content_blocks (text | story | visual | quiz | world).
 
@@ -158,6 +160,7 @@ export function QuizCard({ card }) {
 
 // Scored quiz: per-question reveal on pick, then submit for XP.
 export function QuizRunner({ cards, onSubmit }) {
+  const { t } = useLang()
   const [picks, setPicks] = useState({})       // index -> letter
   const [result, setResult] = useState(null)
   const [busy, setBusy] = useState(false)
@@ -230,15 +233,25 @@ export function QuizRunner({ cards, onSubmit }) {
         <div className="rounded-2xl p-5 bg-turul-blue text-white text-center shadow-glow-blue">
           <p className="text-3xl font-extrabold font-display">{result.correct}/{result.total}</p>
           {result.offline ? (
-            <p className="text-brand-100 text-sm mt-0.5">{result.score}% · 📡 Offline mentve — az XP a kapcsolat helyreállása után frissül</p>
+            <p className="text-brand-100 text-sm mt-0.5">{result.score}% · {t('quiz.offline.saved')}</p>
           ) : (
             <p className="text-brand-100 text-sm mt-0.5">{result.score}% · +{result.xp_earned} XP</p>
+          )}
+          {result.new_badges?.length > 0 && (
+            <div className="mt-3 flex flex-col items-center gap-2">
+              {result.new_badges.map(b => (
+                <p key={b} className="inline-flex items-center gap-2 bg-white/15 rounded-full px-3 py-1 text-sm font-semibold animate-pop">
+                  <span className="text-lg">{badgeIcon(b)}</span>
+                  {t('badge.new', { name: t(`badge.${b}.name`) })}
+                </p>
+              ))}
+            </div>
           )}
         </div>
       ) : (
         <button onClick={submit} disabled={!allAnswered || busy}
           className="btn-primary h-12 rounded-xl disabled:opacity-40">
-          {busy ? '…' : allAnswered ? 'Beküldés' : `Válaszolj mind (${answeredCount}/${list.length})`}
+          {busy ? '…' : allAnswered ? t('quiz.submit.all') : t('quiz.answer.all', { n: answeredCount, total: list.length })}
         </button>
       )}
     </div>
