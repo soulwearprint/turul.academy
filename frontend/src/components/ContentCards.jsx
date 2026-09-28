@@ -258,7 +258,46 @@ export function QuizRunner({ cards, onSubmit }) {
   )
 }
 
-export function CardList({ mode, cards }) {
+// „Mesélj még!” — a pre-generated deep dive anchored to one text card (content_blocks
+// mode 'deep'). Collapsed it's a single row under the card; nothing is fetched on tap.
+export function DeepDive({ card, open, onToggle }) {
+  const { t } = useLang()
+  const [revealed, setRevealed] = useState(false)
+  return (
+    <div className="border-t border-slate-100">
+      <button type="button" onClick={onToggle} aria-expanded={open}
+        className="w-full flex items-center justify-between px-6 py-3 text-sm font-semibold text-turul-blue hover:bg-brand-50 transition">
+        <span>{open ? t('deep.less') : t('deep.more')}</span>
+        <span className={`transition-transform ${open ? 'rotate-180' : ''}`}>▾</span>
+      </button>
+      {open && (
+        <div className="px-6 pb-6 pt-1 bg-brand-50/60 flex flex-col gap-3 animate-fade-up">
+          <h3 className="text-lg font-bold text-slate-900 leading-snug">{card.heading}</h3>
+          <p className="text-slate-700 leading-relaxed">{card.body}</p>
+          {card.did_you_know && (
+            <div className="bg-amber-50 border border-amber-200 rounded-xl px-4 py-3">
+              <span className="text-xs font-semibold text-amber-700 uppercase tracking-wide">{t('deep.fact')}</span>
+              <p className="text-slate-700 text-sm mt-0.5 leading-relaxed">{card.did_you_know}</p>
+            </div>
+          )}
+          {card.think && (
+            <div className="bg-white border border-slate-200 rounded-xl px-4 py-3">
+              <span className="text-xs font-semibold text-turul-purple uppercase tracking-wide">{t('deep.think')}</span>
+              <p className="text-slate-800 text-sm font-medium mt-0.5 leading-relaxed">{card.think}</p>
+              {card.think_answer && (revealed
+                ? <p className="text-slate-600 text-sm mt-2 leading-relaxed border-t border-slate-100 pt-2">{card.think_answer}</p>
+                : <button type="button" onClick={() => setRevealed(true)}
+                    className="mt-2 text-xs font-semibold text-turul-purple hover:underline">{t('deep.reveal')}</button>)}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  )
+}
+
+// renderAfter(i) → optional node rendered inside card i's frame, below the card (e.g. a DeepDive).
+export function CardList({ mode, cards, renderAfter }) {
   const Renderer = { text: TextCard, story: StoryCard, visual: VisualCard, world: WorldCard,
                      experiment: ExperimentCard, quiz: QuizCard }[mode]
   if (!Renderer) return null
@@ -267,6 +306,7 @@ export function CardList({ mode, cards }) {
       {(cards || []).map((c, i) => (
         <div key={i} className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
           <Renderer card={c} />
+          {renderAfter?.(i)}
         </div>
       ))}
     </div>

@@ -18,6 +18,14 @@ idea when a session gets archived." Added 2026-07-07._
   `frontend/src/lib/badges.js`, awarded after quiz submits / study-time flushes and on opening
   the Progress page. Still open: real badge art (emoji placeholders today).
 
+- **„Mesélj még!” deep-dive layer — POC live on PHYS-78-03 (2026-09-28).** One `deep`
+  content block per Téma (level `emelt`), one card per text card via `anchor`; pre-generated,
+  no LLM call on tap. Generator: `content/generators/generate_deep_dive.py` (gpt-4o + strict
+  claim/misconception verifier + subject validator). ~$0.35 per Témakör. Review docs
+  `content/exports/PHYS-78-03_deep_dive_review*.md` (v1 = gpt-4o-mini, too shallow + wrong
+  trivia). Automated checks still missed 2 subtle slips → **human review before rolling out
+  to more topics.** To pull it: `UPDATE content_blocks SET is_active=false WHERE mode='deep'`.
+
 - **Emelt-szint (advanced depth layer).** Schema-ready: `content_blocks.level` already supports
   `alap` (default, in use) vs `emelt` (reserved, unused). Needs: a decision on which topics get
   an emelt version, a deeper-prompt variant of the generator, and a UI toggle/tab to switch

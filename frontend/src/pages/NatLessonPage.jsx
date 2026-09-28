@@ -3,7 +3,7 @@ import { useParams, useSearchParams } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
-import { CardList, QuizRunner } from '../components/ContentCards'
+import { CardList, DeepDive, QuizRunner } from '../components/ContentCards'
 import PageHeader from '../components/PageHeader'
 import { natTitle } from '../lib/nat'
 import { useStudyTimer } from '../lib/useStudyTimer'
@@ -28,6 +28,7 @@ export default function NatLessonPage() {
   const [mode, setMode] = useState('text')
   const [showExtra, setShowExtra] = useState(false)
   const [viewedTabs, setViewedTabs] = useState(new Set())
+  const [openDeep, setOpenDeep] = useState(null)       // anchor of the open „Mesélj még!” panel
   const readSent = useRef(false)
   const activeTabRef = useRef(null)
 
@@ -36,8 +37,10 @@ export default function NatLessonPage() {
     activeTabRef.current?.scrollIntoView({ block: 'nearest', inline: 'nearest' })
   }, [mode, lesson])
 
-  // Time on the extra layer counts toward that layer while it's open.
-  const timedMode = showExtra && lesson ? Object.keys(EXTRA_LAYERS).find(m => lesson.blocks[m]) ?? mode : mode
+  // Time counts toward whatever the student is reading: an open „Mesélj még!” panel, else
+  // the open extra layer, else the tab.
+  const timedMode = openDeep !== null && mode === 'text' ? 'deep'
+    : showExtra && lesson ? Object.keys(EXTRA_LAYERS).find(m => lesson.blocks[m]) ?? mode : mode
   const { engaged } = useStudyTimer({
     mode: timedMode,
     enabled: !!lesson,
@@ -74,8 +77,12 @@ export default function NatLessonPage() {
   const tabs = MAIN_MODES.filter(m => lesson.blocks[m])
   const extraMode = Object.keys(EXTRA_LAYERS).find(m => lesson.blocks[m])
 
+  // Deep dives are anchored to text cards by index (one per card at most).
+  const deepByAnchor = Object.fromEntries((lesson.blocks.deep || []).map(d => [d.anchor, d]))
+
   function openTab(m) {
     setMode(m)
+    setOpenDeep(null)
     if (!viewedTabs.has(m)) setViewedTabs(new Set(viewedTabs).add(m))
   }
 
@@ -102,7 +109,11 @@ export default function NatLessonPage() {
               { topic_id: lesson.topic_id, lesson_id: lessonId, scope: 'lesson', answers }, token)}
           />
         ) : (
-          <CardList mode={mode} cards={lesson.blocks[mode]} />
+          <CardList mode={mode} cards={lesson.blocks[mode]}
+            renderAfter={mode === 'text' ? (i) => deepByAnchor[i] && (
+              <DeepDive card={deepByAnchor[i]} open={openDeep === i}
+                onToggle={() => setOpenDeep(o => (o === i ? null : i))} />
+            ) : undefined} />
         )}
 
         {/* On-demand extra layer (world for History, experiment for Physics) */}

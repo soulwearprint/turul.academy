@@ -105,6 +105,11 @@ export const translations = {
   'nat.status.completed':  { hu: 'Kész ✓',    en: 'Done ✓' },
   'nat.layer.world':       { hu: '🌍 Világ ekkor', en: '🌍 The world at the time' },
   'nat.layer.experiment':  { hu: '🧪 Kísérlet és felfedezés', en: '🧪 Experiment & discovery' },
+  'deep.more':             { hu: '🔎 Mesélj még!', en: '🔎 Tell me more' },
+  'deep.less':             { hu: 'Kevesebbet', en: 'Show less' },
+  'deep.fact':             { hu: '💡 Tudtad?', en: '💡 Did you know?' },
+  'deep.think':            { hu: '🤔 Gondolkodj!', en: '🤔 Think about it' },
+  'deep.reveal':           { hu: 'Mutasd a választ', en: 'Show the answer' },
 
   // ── Lesson player ────────────────────────────────────────
   'lesson.key.term':    { hu: 'Kulcsfogalom',  en: 'Key term' },

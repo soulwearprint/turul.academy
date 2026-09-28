@@ -16,7 +16,7 @@ from core.badges import safe_evaluate
 
 router = APIRouter(prefix="/api/nat", tags=["nat"])
 
-MODES = ["text", "story", "visual", "quiz", "world", "experiment"]
+MODES = ["text", "story", "visual", "quiz", "world", "experiment", "deep"]   # deep = „Mesélj még!” layer
 READING_MODES = [m for m in MODES if m != "quiz"]
 XP_PER_CORRECT = 10
 XP_PERFECT_BONUS = 20
