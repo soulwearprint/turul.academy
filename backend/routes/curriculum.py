@@ -1,14 +1,17 @@
 from typing import Optional
 from fastapi import APIRouter, HTTPException
 from core.db import db_get
+from core.content import grade_ranges, with_content_grades
 
 router = APIRouter(prefix="/api/curriculum", tags=["curriculum"])
 
 
 @router.get("/subjects")
 async def get_subjects():
-    """List all active subjects."""
-    return await db_get("curriculum_subjects", {"is_active": "eq.true", "select": "*"})
+    """List all active subjects, with the grade range that actually has lessons."""
+    subjects = await db_get("curriculum_subjects", {"is_active": "eq.true", "select": "*"})
+    ranges = await grade_ranges()
+    return [with_content_grades(s, ranges) for s in subjects]
 
 
 @router.get("/subjects/{subject_id}/topics")

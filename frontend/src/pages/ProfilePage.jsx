@@ -101,6 +101,16 @@ export default function ProfilePage() {
           />
         </div>
 
+        {/* Sign-in email — read-only (it's the Supabase Auth identity, not a profile field). */}
+        {session?.user?.email && (
+          <div>
+            <p className="block text-sm font-semibold text-slate-700 mb-1.5">{t('profile.email')}</p>
+            <p className="px-4 py-3 rounded-xl bg-slate-50 border border-slate-100 text-slate-600 text-sm break-all select-all">
+              {session.user.email}
+            </p>
+          </div>
+        )}
+
         {/* Grade */}
         <div>
           <label className="block text-sm font-semibold text-slate-700 mb-2">{t('profile.grade')}</label>

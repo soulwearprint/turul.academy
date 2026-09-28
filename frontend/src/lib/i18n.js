@@ -278,6 +278,7 @@ export const translations = {
   // ── Profile ──────────────────────────────────────────────
   'profile.title':       { hu: 'Profil',                 en: 'Profile' },
   'profile.name':        { hu: 'Neved',                  en: 'Your name' },
+  'profile.email':       { hu: 'Bejelentkezési e-mail',  en: 'Sign-in email' },
   'profile.grade':       { hu: 'Évfolyam',               en: 'Grade' },
   'profile.mode':        { hu: 'Kedvenc tanulási mód',   en: 'Preferred learning mode' },
   'profile.save':        { hu: 'Mentés',                 en: 'Save' },

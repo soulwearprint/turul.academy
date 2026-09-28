@@ -4,6 +4,7 @@ from pydantic import BaseModel
 from datetime import date
 from core.auth import get_current_user, SupabaseUser
 from core.db import db_get, db_post, db_patch
+from core.content import grade_ranges, with_content_grades
 
 router = APIRouter(prefix="/api/account", tags=["account"])
 
@@ -64,7 +65,7 @@ async def update_profile(body: ProfileSetup, user: SupabaseUser = Depends(get_cu
 
 @router.get("/me/subjects")
 async def get_enrolled_subjects(user: SupabaseUser = Depends(get_current_user)):
-    return await db_get(
+    rows = await db_get(
         "user_subjects",
         {
             "user_id": f"eq.{user.id}",
@@ -72,6 +73,10 @@ async def get_enrolled_subjects(user: SupabaseUser = Depends(get_current_user)):
         },
         service=True,
     )
+    ranges = await grade_ranges()
+    for r in rows:
+        with_content_grades(r.get("subject"), ranges)
+    return rows
 
 
 @router.post("/me/subjects/{subject_id}")
