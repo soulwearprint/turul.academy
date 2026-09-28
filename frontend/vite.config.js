@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
-// Progress/quiz-submit POSTs get NetworkOnly + backgroundSync: if the request fails
+// Progress/quiz-submit/content-report POSTs get NetworkOnly + backgroundSync: if the request fails
 // (offline), Workbox queues it in IndexedDB and the browser replays it automatically
 // once connectivity returns — no custom sync code needed on our side. GET content
 // endpoints use StaleWhileRevalidate so an already-opened lesson/topic/quiz stays
@@ -12,6 +12,7 @@ const OFFLINE_SYNC_ROUTES = [
   { pattern: /\/api\/lessons\/[^/]+\/progress$/,       name: 'legacy-progress-queue' },
   { pattern: /\/api\/nat\/quiz\/submit$/,               name: 'nat-quiz-queue' },
   { pattern: /\/api\/quiz\/submit$/,                    name: 'legacy-quiz-queue' },
+  { pattern: /\/api\/reports$/,                        name: 'content-report-queue' },
 ]
 
 export default defineConfig({

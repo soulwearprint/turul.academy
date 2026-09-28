@@ -2,6 +2,7 @@ import { useState } from 'react'
 import SketchDiagram from './SketchDiagram'
 import { useLang } from '../contexts/LanguageContext'
 import { badgeIcon } from '../lib/badges'
+import ReportButton from './ReportButton'
 
 // Shared renderers for NAT 3-tier content_blocks (text | story | visual | quiz | world).
 
@@ -159,7 +160,8 @@ export function QuizCard({ card }) {
 }
 
 // Scored quiz: per-question reveal on pick, then submit for XP.
-export function QuizRunner({ cards, onSubmit }) {
+// reportCtx (optional): { topicId, lessonId, scope, mode } — adds „Hibát találtál?” to each question.
+export function QuizRunner({ cards, onSubmit, reportCtx }) {
   const { t } = useLang()
   const [picks, setPicks] = useState({})       // index -> letter
   const [result, setResult] = useState(null)
@@ -225,6 +227,11 @@ export function QuizRunner({ cards, onSubmit }) {
                 {picked === correct ? '✅ ' : '❌ '}{card.explanation}
               </p>
             )}
+            {reportCtx && (
+              <div className="flex justify-end -mb-3 -mr-3">
+                <ReportButton ctx={reportCtx} index={qi} quiz />
+              </div>
+            )}
           </div>
         )
       })}
@@ -260,7 +267,7 @@ export function QuizRunner({ cards, onSubmit }) {
 
 // „Mesélj még!” — a pre-generated deep dive anchored to one text card (content_blocks
 // mode 'deep'). Collapsed it's a single row under the card; nothing is fetched on tap.
-export function DeepDive({ card, open, onToggle }) {
+export function DeepDive({ card, open, onToggle, footer }) {
   const { t } = useLang()
   const [revealed, setRevealed] = useState(false)
   return (
@@ -290,6 +297,7 @@ export function DeepDive({ card, open, onToggle }) {
                     className="mt-2 text-xs font-semibold text-turul-purple hover:underline">{t('deep.reveal')}</button>)}
             </div>
           )}
+          {footer && <div className="flex justify-end -mb-4 -mr-4">{footer}</div>}
         </div>
       )}
     </div>
@@ -297,7 +305,8 @@ export function DeepDive({ card, open, onToggle }) {
 }
 
 // renderAfter(i) → optional node rendered inside card i's frame, below the card (e.g. a DeepDive).
-export function CardList({ mode, cards, renderAfter }) {
+// reportCtx (optional): { topicId, lessonId, scope } — adds „Hibát találtál?” under each card.
+export function CardList({ mode, cards, renderAfter, reportCtx }) {
   const Renderer = { text: TextCard, story: StoryCard, visual: VisualCard, world: WorldCard,
                      experiment: ExperimentCard, quiz: QuizCard }[mode]
   if (!Renderer) return null
@@ -306,6 +315,12 @@ export function CardList({ mode, cards, renderAfter }) {
       {(cards || []).map((c, i) => (
         <div key={i} className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
           <Renderer card={c} />
+          {/* Directly under its card, above any renderAfter row, so it's clearly this card's. */}
+          {reportCtx && (
+            <div className="flex justify-end px-2 pb-1 -mt-2">
+              <ReportButton ctx={{ ...reportCtx, mode }} index={i} quiz={mode === 'quiz'} />
+            </div>
+          )}
           {renderAfter?.(i)}
         </div>
       ))}

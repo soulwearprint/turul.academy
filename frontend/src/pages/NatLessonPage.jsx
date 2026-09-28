@@ -5,6 +5,7 @@ import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
 import { CardList, DeepDive, QuizRunner } from '../components/ContentCards'
 import PageHeader from '../components/PageHeader'
+import ReportButton from '../components/ReportButton'
 import { natTitle } from '../lib/nat'
 import { useStudyTimer } from '../lib/useStudyTimer'
 
@@ -77,8 +78,10 @@ export default function NatLessonPage() {
   const tabs = MAIN_MODES.filter(m => lesson.blocks[m])
   const extraMode = Object.keys(EXTRA_LAYERS).find(m => lesson.blocks[m])
 
-  // Deep dives are anchored to text cards by index (one per card at most).
-  const deepByAnchor = Object.fromEntries((lesson.blocks.deep || []).map(d => [d.anchor, d]))
+  // Deep dives are anchored to text cards by index (one per card at most); keep each one's own
+  // position in the deep block too — that's the index a report refers to.
+  const deepByAnchor = Object.fromEntries((lesson.blocks.deep || []).map((d, i) => [d.anchor, { card: d, index: i }]))
+  const reportCtx = { topicId: lesson.topic_id, lessonId, scope: 'lesson' }
 
   function openTab(m) {
     setMode(m)
@@ -105,14 +108,16 @@ export default function NatLessonPage() {
         {mode === 'quiz' ? (
           <QuizRunner
             cards={lesson.blocks.quiz}
+            reportCtx={{ ...reportCtx, mode: 'quiz' }}
             onSubmit={(answers) => api.nat.submitQuiz(
               { topic_id: lesson.topic_id, lesson_id: lessonId, scope: 'lesson', answers }, token)}
           />
         ) : (
-          <CardList mode={mode} cards={lesson.blocks[mode]}
+          <CardList mode={mode} cards={lesson.blocks[mode]} reportCtx={reportCtx}
             renderAfter={mode === 'text' ? (i) => deepByAnchor[i] && (
-              <DeepDive card={deepByAnchor[i]} open={openDeep === i}
-                onToggle={() => setOpenDeep(o => (o === i ? null : i))} />
+              <DeepDive card={deepByAnchor[i].card} open={openDeep === i}
+                onToggle={() => setOpenDeep(o => (o === i ? null : i))}
+                footer={<ReportButton ctx={{ ...reportCtx, mode: 'deep' }} index={deepByAnchor[i].index} labelKey="report.cta.deep" />} />
             ) : undefined} />
         )}
 
@@ -124,7 +129,7 @@ export default function NatLessonPage() {
               <span>{t(EXTRA_LAYERS[extraMode].key)}</span>
               <span className="text-white/60">{showExtra ? '▲' : '▼'}</span>
             </button>
-            {showExtra && <div className="mt-3"><CardList mode={extraMode} cards={lesson.blocks[extraMode]} /></div>}
+            {showExtra && <div className="mt-3"><CardList mode={extraMode} cards={lesson.blocks[extraMode]} reportCtx={reportCtx} /></div>}
           </div>
         )}
       </div>

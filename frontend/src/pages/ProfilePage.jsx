@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
@@ -24,6 +24,7 @@ export default function ProfilePage() {
   const [confirmingSignOut, setConfirmingSignOut] = useState(false)
   const [confirmingReset, setConfirmingReset] = useState(false)
   const [resetState, setResetState] = useState(null)   // null | 'busy' | 'done' | 'error'
+  const [reports, setReports] = useState(null)          // { reviewer, open } — reviewers see the queue link
 
   const token = session?.access_token
 
@@ -35,6 +36,7 @@ export default function ProfilePage() {
         preferred_mode: p.preferred_mode ?? 'text',
       }))
       .catch(() => navigate('/onboarding'))
+    api.reports.summary(token).then(setReports).catch(() => {})
   }, [token, navigate])
 
   function set(key, val) {
@@ -144,6 +146,15 @@ export default function ProfilePage() {
         <button onClick={save} disabled={saving || !form.display_name.trim()} className="btn-primary w-full">
           {saving ? t('auth.loading') : saved ? `✓ ${t('profile.saved')}` : t('profile.save')}
         </button>
+
+        {reports?.reviewer && (
+          <Link to="/admin/reports" className="card p-4 flex items-center justify-between">
+            <span className="font-semibold text-slate-800">🛠 {t('queue.title')}</span>
+            <span className={`text-xs font-bold rounded-full px-2.5 py-1 ${reports.open ? 'bg-red-50 text-red-600' : 'bg-slate-100 text-slate-500'}`}>
+              {t('queue.open.count', { n: reports.open })}
+            </span>
+          </Link>
+        )}
 
         {/* Always visible here (unlike Home's dismissible card) — a stable place to
             find the install option even after dismissing it once on Home. */}

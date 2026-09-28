@@ -3,7 +3,7 @@
 Generálás: `openai/gpt-4o` · ellenőrzés/javítás: `gpt-4o` · költség: **$0.258**
 
 > **Kézi lektori javítások (2026-09-28)** — amit az automatikus ellenőrzés nem fogott meg:
-> - „Mozgások…” / 5. kártya: törölve a „Tudtad?” („a nap hossza nem pontosan 24 óra, mivel a Föld forgása lassul” — félrevezető).
+> - „Mozgások…” / 5. kártya: a „Tudtad?” („a nap hossza nem pontosan 24 óra, mivel a Föld forgása lassul” — igaz magja volt, de félrevezetően) pontosítva: a nap százévente ~2 ms-mal hosszabbodik (árapály), a szökőnap pedig az év hosszát (kb. 365¼ nap) korrigálja, nem a napét.
 > - „Mozgások…” / 5. kártya: „a motor teljesítménye” → „a motor hajtóereje” (a teljesítmény nem erő).
 
 ## Mozgások megfigyelése és csoportosítása

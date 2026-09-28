@@ -50,6 +50,13 @@ async function patch(path, body, token) {
   return res.json()
 }
 
+async function put(path, body, token) {
+  const h = await headers(token)
+  const res = await fetch(`${BASE}${path}`, { method: 'PUT', headers: h, body: JSON.stringify(body) })
+  if (!res.ok) throw new Error(`PUT ${path} → ${res.status}`)
+  return res.json()
+}
+
 async function del(path, token) {
   const h = await headers(token)
   const res = await fetch(`${BASE}${path}`, { method: 'DELETE', headers: h })
@@ -95,6 +102,13 @@ export const api = {
     badges:     (token)        => get('/api/progress/me/badges', token),
     activity:   (token)        => get('/api/progress/me/activity', token),
     resetAll:   (token)        => del('/api/progress/me?confirm=RESET', token),
+  },
+  reports: {
+    create:   (body, token)    => post('/api/reports', body, token),
+    summary:  (token)          => get('/api/reports/summary', token),
+    list:     (status, token)  => get(`/api/reports?status=${status}`, token),
+    resolve:  (body, token)    => post('/api/reports/resolve', body, token),
+    editCard: (body, token)    => put('/api/reports/card', body, token),
   },
   account: {
     me:       (token)          => get('/api/account/me', token),

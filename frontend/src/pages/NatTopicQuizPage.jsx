@@ -26,6 +26,7 @@ export default function NatTopicQuizPage() {
       <div className="max-w-2xl mx-auto px-4 py-6">
         <QuizRunner
           cards={cards}
+          reportCtx={{ topicId, lessonId: null, scope: 'topic', mode: 'quiz' }}
           onSubmit={(answers) => api.nat.submitQuiz({ topic_id: topicId, scope: 'topic', answers }, token)}
         />
       </div>
