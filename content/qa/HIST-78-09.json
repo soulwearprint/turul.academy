@@ -1,0 +1,574 @@
+{
+ "nat_id": "HIST-78-09",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 31,
+  "cards": 158,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-78-09-001",
+   "lesson_id": "0523a22e-63fb-4fb2-8a04-b6a52a35d28f",
+   "block_id": "0095883f-b7da-4888-87e8-50e468089485",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "year, body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1990. november 9-én a berlini fal leomlása…”; year: 1990.",
+   "explanation": "A berlini fal 1989. november 9-én nyílt meg; 1990. október 3-án történt a német újraegyesítés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall",
+     "title": "Fall of the Berlin Wall",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1990. november 9-én a berlini fal leomlása szimbolizálta a hidegháború végét és a kelet-európai kommunista rezsimek meggyengülését. Ez a történelmi esemény lehetővé tette a német újraegyesítést és hozzájárult a szovjet blokk országainak demokratikus átalakulásához. A berlini fal leomlása után a közép-európai országok, így Magyarország is, elkezdték a demokratikus reformok bevezetését, amely a többpártrendszer és a jogállam kiépítéséhez vezetett.",
+     "type": "world",
+     "year": "1990",
+     "heading": "A berlini fal leomlása",
+     "link_hu": "A berlini fal leomlása hatására Magyarországon is felgyorsult a rendszerváltoztatás folyamata, amely lehetővé tette a többpártrendszer kialakulását és a demokratikus intézmények megerősödését."
+    },
+    "after": {
+     "body": "1989. november 9-én a berlini fal leomlása szimbolizálta a hidegháború végét és a kelet-európai kommunista rezsimek meggyengülését. Ez a történelmi esemény lehetővé tette a német újraegyesítést és hozzájárult a szovjet blokk országainak demokratikus átalakulásához. A berlini fal leomlása után a közép-európai országok, így Magyarország is, elkezdték a demokratikus reformok bevezetését, amely a többpártrendszer és a jogállam kiépítéséhez vezetett.",
+     "type": "world",
+     "year": 1989,
+     "heading": "A berlini fal leomlása",
+     "link_hu": "A berlini fal leomlása hatására Magyarországon is felgyorsult a rendszerváltoztatás folyamata, amely lehetővé tette a többpártrendszer kialakulását és a demokratikus intézmények megerősödését."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-09-002",
+   "lesson_id": "0201f0e7-2f31-4272-90e9-b7dae1f3d7e9",
+   "block_id": "10d1cfd4-d11b-4979-9d20-97d0b15e55bd",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A berlini fal leomlása közvetlenül hozzájárult a magyarországi rendszerváltoztatáshoz”",
+   "explanation": "Fordítva: Magyarország 1989. szeptember 11-én megnyitotta határát a keletnémet menekültek előtt (előtte augusztus 19-én a páneurópai piknik), ami hozzájárult a fal leomlásához; a Magyar Köztársaságot október 23-án, még a fal leomlása előtt kiáltották ki.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pan-European_Picnic",
+     "title": "Pan-European Picnic",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1989. november 9-én leomlott a berlini fal, amely a hidegháború idején a kelet-nyugati megosztottság szimbóluma volt. Ez az esemény a szocialista országokban végbemenő rendszerváltozások katalizátoraként szolgált, és hozzájárult a szovjet blokk széteséséhez. A fal leomlása nemcsak Németország, hanem egész Kelet-Európa demokratikus átalakulását is elősegítette.",
+     "type": "world",
+     "year": "1989",
+     "heading": "A berlini fal leomlása",
+     "link_hu": "A berlini fal leomlása közvetlenül hozzájárult a magyarországi rendszerváltoztatáshoz, mivel a kelet-európai államokban tapasztalt események inspirálták a magyar ellenzéki mozgalmakat és a tárgyalásos rendszerváltoztatás folyamatát."
+    },
+    "after": {
+     "body": "1989. november 9-én leomlott a berlini fal, amely a hidegháború idején a kelet-nyugati megosztottság szimbóluma volt. Ez az esemény a szocialista országokban végbemenő rendszerváltozások katalizátoraként szolgált, és hozzájárult a szovjet blokk széteséséhez. A fal leomlása nemcsak Németország, hanem egész Kelet-Európa demokratikus átalakulását is elősegítette.",
+     "type": "world",
+     "year": "1989",
+     "heading": "A berlini fal leomlása",
+     "link_hu": "Magyarország szerepe kulcsfontosságú volt: 1989 nyarán a páneurópai pikniken, majd szeptember 11-én a határnyitással keletnémetek tízezrei jutottak nyugatra — ez siettette a fal leomlását."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-09-003",
+   "lesson_id": "0201f0e7-2f31-4272-90e9-b7dae1f3d7e9",
+   "block_id": "10d1cfd4-d11b-4979-9d20-97d0b15e55bd",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A csehszlovák bársonyos forradalom „inspirálta a magyar ellenzéket, és elősegítették a magyarországi tárgyalásos rendszerváltoztatás elindulását”.",
+   "explanation": "Időrendi hiba: a bársonyos forradalom 1989 novemberében zajlott, amikor a magyar kerekasztal-tárgyalások (június–szeptember) már lezárultak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Velvet_Revolution",
+     "title": "Velvet Revolution",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1989 folyamán több kelet-európai országban, mint például Lengyelország, Csehszlovákia és Magyarország, békés rendszerváltozások zajlottak. A lengyel Szolidaritás mozgalom és a csehszlovák bársonyos forradalom példát mutattak arra, hogy a nép fel tud lépni a kommunista rezsimek ellen. Ezek az események hozzájárultak a szocialista rendszer összeomlásához és a demokratikus átalakulásokhoz.",
+     "type": "world",
+     "year": "1989",
+     "heading": "A kelet-európai rendszerváltozások",
+     "link_hu": "A kelet-európai rendszerváltozások inspirálták a magyar ellenzéket, és elősegítették a magyarországi tárgyalásos rendszerváltoztatás elindulását."
+    },
+    "after": {
+     "body": "1989 folyamán több kelet-európai országban, mint például Lengyelország, Csehszlovákia és Magyarország, békés rendszerváltozások zajlottak. A lengyel Szolidaritás mozgalom és a csehszlovák bársonyos forradalom példát mutattak arra, hogy a nép fel tud lépni a kommunista rezsimek ellen. Ezek az események hozzájárultak a szocialista rendszer összeomlásához és a demokratikus átalakulásokhoz.",
+     "type": "world",
+     "year": "1989",
+     "heading": "A kelet-európai rendszerváltozások",
+     "link_hu": "A lengyel kerekasztal-tárgyalások (1989 február–április) mintát adtak a magyar Nemzeti Kerekasztalnak; a magyar és a lengyel változások pedig bátorították a csehszlovák és a keletnémet ellenzéket."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-09-004",
+   "lesson_id": "6c0d8951-66cd-42f4-a22d-28d4e8c8eafc",
+   "block_id": "a4caeaec-1cab-4d4a-bb93-f52676230525",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body, link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1956 októberében … Egyiptom államosította a Szuezi-csatornát”; a válság „a nemzetközi figyelmet irányította Magyarországra”.",
+   "explanation": "Egyiptom 1956 júliusában államosította a csatornát; októberben a brit–francia–izraeli támadás zajlott. A szuezi válság épp elvonta a világ figyelmét Magyarországról, és megosztotta a nyugati hatalmakat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Suez_Crisis",
+     "title": "Suez Crisis",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1956 októberében a szuezi válság is zajlott, amikor Egyiptom államosította a Szuezi-csatornát, ami nemcsak a brit és francia érdekeket sértette, hanem a hidegháborús feszültségeket is fokozta. A Szovjetunió, mint a szocialista tábor vezető hatalma, Egyiptom mellé állt, míg a nyugati hatalmak, különösen az Egyesült Államok, elítélték a katonai beavatkozást. Ez a nemzetközi esemény hozzájárult a magyar forradalomra való figyelem felkeltéséhez.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A szuezi válság",
+     "link_hu": "A szuezi válság nemcsak a nemzetközi figyelmet irányította Magyarországra, hanem a Szovjetunió figyelmét is elterelte, így a magyar forradalom idején a világpolitikai fókusz megváltozott."
+    },
+    "after": {
+     "body": "1956 októberében a szuezi válság is zajlott: miután Egyiptom júliusban államosította a Szuezi-csatornát, október végén Nagy-Britannia, Franciaország és Izrael megtámadta Egyiptomot, ami nemcsak a brit és francia érdekeket sértette, hanem a hidegháborús feszültségeket is fokozta. A Szovjetunió, mint a szocialista tábor vezető hatalma, Egyiptom mellé állt, míg a nyugati hatalmak, különösen az Egyesült Államok, elítélték a katonai beavatkozást. Ez a nemzetközi esemény hozzájárult a magyar forradalomra való figyelem felkeltéséhez.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A szuezi válság",
+     "link_hu": "A szuezi válság éppen a magyar forradalom napjaiban tört ki: elvonta a világ figyelmét Budapestről, a Nyugatot pedig megosztotta — ez megkönnyítette a szovjet beavatkozást."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-09-005",
+   "lesson_id": "6c0d8951-66cd-42f4-a22d-28d4e8c8eafc",
+   "block_id": "a4caeaec-1cab-4d4a-bb93-f52676230525",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az ENSZ Közgyűlése később foglalkozott a szovjet beavatkozással, de nem november 4-én.”",
+   "explanation": "November 4-én a Biztonsági Tanács határozatát a Szovjetunió megvétózta, és még aznap a Közgyűlés rendkívüli ülése felszólította a Szovjetuniót csapatai kivonására.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A magyar forradalom alatt az ENSZ is foglalkozott a helyzettel, és a nemzetközi közösség figyelmét felkeltette a magyar nép küzdelme. Az ENSZ Közgyűlése később foglalkozott a szovjet beavatkozással, de nem november 4-én. Ezzel a nemzetközi közösség szolidaritását fejezte ki a magyar forradalom iránt.",
+     "type": "world",
+     "year": "1956",
+     "heading": "Az ENSZ és a magyar forradalom",
+     "link_hu": "Az ENSZ állásfoglalása hozzájárult ahhoz, hogy a világ figyelme a magyar forradalomra irányuljon, és a szovjet beavatkozás elítélése nemzetközi szinten is megtörtént."
+    },
+    "after": {
+     "body": "A magyar forradalom alatt az ENSZ is foglalkozott a helyzettel, és a nemzetközi közösség figyelmét felkeltette a magyar nép küzdelme. November 4-én a Biztonsági Tanács határozatát a Szovjetunió megvétózta; még aznap az ENSZ Közgyűlése rendkívüli ülésen felszólította a Szovjetuniót csapatai kivonására — hiába. Ezzel a nemzetközi közösség szolidaritását fejezte ki a magyar forradalom iránt.",
+     "type": "world",
+     "year": "1956",
+     "heading": "Az ENSZ és a magyar forradalom",
+     "link_hu": "Az ENSZ állásfoglalása hozzájárult ahhoz, hogy a világ figyelme a magyar forradalomra irányuljon, és a szovjet beavatkozás elítélése nemzetközi szinten is megtörtént."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-09-006",
+   "lesson_id": "6c0d8951-66cd-42f4-a22d-28d4e8c8eafc",
+   "block_id": "a4caeaec-1cab-4d4a-bb93-f52676230525",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "1956-ban a feszültség „különösen a berlini válság” miatt éleződött.",
+   "explanation": "A berlini válságok 1948–49-ben, illetve 1958–1961 között voltak; 1956-ban nem.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Berlin_Crisis_of_1961",
+     "title": "Berlin Crisis of 1961",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1956-ban, a hidegháború időszakának csúcspontján, a világpolitikai helyzet rendkívül feszültté vált. Az Egyesült Államok és a Szovjetunió közötti ellentétek, különösen a berlini válság és a közép-európai országokban zajló események miatt, egyre élesebbé váltak. Ekkoriban a szovjet blokk országai, köztük Magyarország is, a szovjet hatalom alatt álltak, ami hozzájárult a forradalom kirobbanásához.",
+     "type": "world",
+     "year": "1956",
+     "heading": "Az Egyesült Államok és a Szovjetunió közötti feszültség fokozódása",
+     "link_hu": "A szovjet blokk országainak elnyomása és a magyar forradalom során, a világpolitikai feszültségek hatására, a magyar nép fellázadt a szovjet befolyás ellen."
+    },
+    "after": {
+     "body": "1956-ban, a hidegháború időszakának csúcspontján, a világpolitikai helyzet rendkívül feszültté vált. Az Egyesült Államok és a Szovjetunió közötti ellentétek, különösen a lengyel és a magyar események, valamint a szuezi válság miatt, egyre élesebbé váltak. Ekkoriban a szovjet blokk országai, köztük Magyarország is, a szovjet hatalom alatt álltak, ami hozzájárult a forradalom kirobbanásához.",
+     "type": "world",
+     "year": "1956",
+     "heading": "Az Egyesült Államok és a Szovjetunió közötti feszültség fokozódása",
+     "link_hu": "A szovjet blokk országainak elnyomása és a magyar forradalom során, a világpolitikai feszültségek hatására, a magyar nép fellázadt a szovjet befolyás ellen."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-09-007",
+   "lesson_id": "57c649bb-cdbd-46b4-9ff3-69f5c0bfdcb5",
+   "block_id": "c055da5b-d9e0-4b6e-95f7-abc0063e5574",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A kádári megtorlásról csak az szerepel, hogy „sok embert börtönbe zártak”.",
+   "explanation": "A megtorlás során mintegy 230 embert végeztek ki (köztük 1958-ban Nagy Imre miniszterelnököt), több tízezret börtönöztek be vagy internáltak, kb. 200 ezer ember menekült el az országból.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Imre_Nagy",
+     "title": "Imre Nagy",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A kádári megtorlás a forradalmat követően zajlott, amikor a hatalom igyekezett visszaszorítani a politikai ellenállást. Az 1956-os eseményeket követően sok embert börtönbe zártak, és a megtorlás során a rendszert kritizáló személyeket elnyomták. A megtorlás célja a félelemkeltés volt, hogy a társadalom ne merjen szembeszállni a hatalommal. Ez a folyamat hozzájárult a kádári diktatúra stabilizálásához.",
+     "type": "text",
+     "heading": "A kádári megtorlás",
+     "key_term": "kádári megtorlás"
+    },
+    "after": {
+     "body": "A kádári megtorlás a forradalmat követően zajlott, amikor a hatalom igyekezett visszaszorítani a politikai ellenállást. Az 1956-os eseményeket követően mintegy 230 embert kivégeztek — 1958-ban Nagy Imre miniszterelnököt is —, több tízezret börtönbe zártak vagy internáltak, és mintegy 200 ezer ember menekült el az országból. A megtorlás célja a félelemkeltés volt, hogy a társadalom ne merjen szembeszállni a hatalommal. Ez a folyamat hozzájárult a kádári diktatúra stabilizálásához.",
+     "type": "text",
+     "heading": "A kádári megtorlás",
+     "key_term": "kádári megtorlás"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-09-008",
+   "lesson_id": "892a893d-e653-4ae8-9b30-d83bc74740ae",
+   "block_id": "0024f39a-4c1d-47dc-9ded-6410fb172fff",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a második gazdaság, vagyis a feketegazdaság”",
+   "explanation": "A második gazdaság nagyrészt legális volt (háztáji, kisiparos „maszek”, 1982-től gazdasági munkaközösségek); csak egy része volt feketegazdaság.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Goulash_communism",
+     "title": "Goulash communism",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Kádár-rendszer alatt a második gazdaság, vagyis a feketegazdaság kiépülése kezdődött meg, amely a hivatalos gazdaság mellett működött. Az emberek sokszor maszek tevékenységeket folytattak, hogy kiegészítsék jövedelmüket, mivel a hivatalos bérből nem tudtak megélni. A második gazdaság részeként megjelentek a különböző illegális kereskedelmi formák, amelyek a hiánygazdaság következményeként alakultak ki. Ez a jelenség hozzájárult a társadalmi mobilitás csökkenéséhez és a gazdasági egyenlőtlenségek fokozódásához.",
+     "type": "text",
+     "heading": "A második gazdaság kiépülése",
+     "key_term": "maszek"
+    },
+    "after": {
+     "body": "A Kádár-rendszer alatt a második gazdaság kiépülése kezdődött meg — ez részben legális volt (háztáji, maszek kisiparos, 1982-től a gazdasági munkaközösségek), részben feketegazdaság —,, amely a hivatalos gazdaság mellett működött. Az emberek sokszor maszek tevékenységeket folytattak, hogy kiegészítsék jövedelmüket, mivel a hivatalos bérből nem tudtak megélni. A második gazdaság részeként megjelentek a különböző illegális kereskedelmi formák, amelyek a hiánygazdaság következményeként alakultak ki. Ez a jelenség hozzájárult a társadalmi mobilitás csökkenéséhez és a gazdasági egyenlőtlenségek fokozódásához.",
+     "type": "text",
+     "heading": "A második gazdaság kiépülése",
+     "key_term": "maszek"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-09-009",
+   "lesson_id": "892a893d-e653-4ae8-9b30-d83bc74740ae",
+   "block_id": "20ca0796-3f02-4033-b4a5-fa359b3660e5",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A második gazdaság, vagyis a feketegazdaság”",
+   "explanation": "Mint fent: a második gazdaság nagyrészt legális volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Goulash_communism",
+     "title": "Goulash communism",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A második gazdaság, vagyis a feketegazdaság kialakulása a hivatalos gazdaság hiányosságait próbálta ellensúlyozni. Az emberek gyakran maszek tevékenységekkel egészítették ki jövedelmüket, ami a gazdasági egyenlőtlenségek növekedéséhez vezetett. A feketegazdaságban dolgozók sokszor jobban kerestek, mint a hivatalos munkahelyeken, ami a társadalmi mobilitás csökkenését eredményezte. Emellett az illegális kereskedelem és szolgáltatások elterjedése a jogi és gazdasági rendszerek stabilitását is veszélyeztette.",
+     "type": "deep",
+     "think": "Miért lehet, hogy a feketegazdaságban dolgozók gyakran jobban kerestek, mint a hivatalos munkahelyeken?",
+     "anchor": 3,
+     "heading": "A második gazdaság hatása a társadalomra",
+     "did_you_know": "",
+     "think_answer": "A feketegazdaságban a kereslet gyakran meghaladta a kínálatot, ami magasabb árakat és így magasabb jövedelmet eredményezett azoknak, akik részt vettek benne."
+    },
+    "after": {
+     "body": "A második gazdaság (a háztáji, a maszek munka és részben a feketegazdaság) kialakulása a hivatalos gazdaság hiányosságait próbálta ellensúlyozni. Az emberek gyakran maszek tevékenységekkel egészítették ki jövedelmüket, ami a gazdasági egyenlőtlenségek növekedéséhez vezetett. A feketegazdaságban dolgozók sokszor jobban kerestek, mint a hivatalos munkahelyeken, ami a társadalmi mobilitás csökkenését eredményezte. Emellett az illegális kereskedelem és szolgáltatások elterjedése a jogi és gazdasági rendszerek stabilitását is veszélyeztette.",
+     "type": "deep",
+     "think": "Miért lehet, hogy a feketegazdaságban dolgozók gyakran jobban kerestek, mint a hivatalos munkahelyeken?",
+     "anchor": 3,
+     "heading": "A második gazdaság hatása a társadalomra",
+     "did_you_know": "",
+     "think_answer": "A feketegazdaságban a kereslet gyakran meghaladta a kínálatot, ami magasabb árakat és így magasabb jövedelmet eredményezett azoknak, akik részt vettek benne."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-09-010",
+   "lesson_id": "892a893d-e653-4ae8-9b30-d83bc74740ae",
+   "block_id": "c1f2ff66-3175-41f4-9835-f1294c999faa",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a második gazdaság, vagyis a feketepiac kialakulásához vezetett”",
+   "explanation": "A második gazdaság nem azonos a feketepiaccal.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Goulash_communism",
+     "title": "Goulash communism",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A gazdasági növekedés folyamatos fenntartása.",
+      "B) A termékek és szolgáltatások hiánya, ami feketepiac kialakulásához vezetett.",
+      "C) A mezőgazdasági termelés teljes stabilizálása.",
+      "D) A külföldi befektetések növekedése."
+     ],
+     "question": "Milyen következményekkel járt a hiánygazdaság a Kádár-rendszerben?",
+     "explanation": "A hiánygazdaság a Kádár-rendszerben a termékek és szolgáltatások folyamatos hiányát eredményezte, ami a második gazdaság, vagyis a feketepiac kialakulásához vezetett.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A gazdasági növekedés folyamatos fenntartása.",
+      "B) A termékek és szolgáltatások hiánya, ami feketepiac kialakulásához vezetett.",
+      "C) A mezőgazdasági termelés teljes stabilizálása.",
+      "D) A külföldi befektetések növekedése."
+     ],
+     "question": "Milyen következményekkel járt a hiánygazdaság a Kádár-rendszerben?",
+     "explanation": "A hiánygazdaságban sok termékre várni kellett vagy kapcsolatok kellettek hozzá; ez a második gazdaság (háztáji, maszek munka) és részben a feketepiac kialakulásához vezetett.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-09-011",
+   "lesson_id": "0201f0e7-2f31-4272-90e9-b7dae1f3d7e9",
+   "block_id": "40122346-d817-4863-84b5-25770ab8cfaa",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Antall József 1990-től 1994-ig vezette a magyar kormányt”",
+   "explanation": "Antall József 1993. december 12-én hivatalában elhunyt; utódja Boross Péter lett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/J%C3%B3zsef_Antall",
+     "title": "József Antall",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Antall József 1990-től 1994-ig vezette a magyar kormányt, és a rendszerváltoztatás egyik kulcsszereplője volt. Kormánya alatt számos reformot indítottak el, amelyek célja a demokratikus intézmények megerősítése és a piacgazdaság kiépítése volt. Antall József hangsúlyozta a nemzeti identitás fontosságát és a történelmi múlt tiszteletét. Kormánya időszaka alatt számos nehézséggel kellett szembenézni, de az alapvető változások irányát meghatározta.",
+     "type": "text",
+     "heading": "Antall József kormánya",
+     "key_term": "Antall József"
+    },
+    "after": {
+     "body": "Antall József 1990-től 1993 decemberében bekövetkezett haláláig vezette a magyar kormányt, és a rendszerváltoztatás egyik kulcsszereplője volt. Kormánya alatt számos reformot indítottak el, amelyek célja a demokratikus intézmények megerősítése és a piacgazdaság kiépítése volt. Antall József hangsúlyozta a nemzeti identitás fontosságát és a történelmi múlt tiszteletét. Kormánya időszaka alatt számos nehézséggel kellett szembenézni, de az alapvető változások irányát meghatározta.",
+     "type": "text",
+     "heading": "Antall József kormánya",
+     "key_term": "Antall József"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-09-012",
+   "lesson_id": "0523a22e-63fb-4fb2-8a04-b6a52a35d28f",
+   "block_id": "1028a8e0-9185-4abe-9c79-2b6d66b40b79",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik politikai vezető kezdeményezte a NATO-tagság irányába való lépéseket?” — megjelölt: Horn Gyula; magyarázat: Orbán Viktor.",
+   "explanation": "A válasz és a magyarázat ellentmond; a nyugati integráció célját már az Antall-kormány kitűzte, a NATO-népszavazást 1997-ben a Horn-kormány tartotta, a belépés 1999-ben az Orbán-kormány idején történt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1997_Hungarian_NATO_membership_referendum",
+     "title": "1997 Hungarian NATO membership referendum",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Göncz Árpád",
+      "B) Horn Gyula",
+      "C) Orbán Viktor",
+      "D) Antall József"
+     ],
+     "question": "Melyik politikai vezető kezdeményezte a NATO-tagság irányába való lépéseket Magyarországon?",
+     "explanation": "Orbán Viktor miniszterelnöksége alatt, 1999-ben Magyarország NATO-tagsága valósult meg, ami fontos lépés volt az ország nyugati integrációjában.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Göncz Árpád",
+      "B) Horn Gyula",
+      "C) Orbán Viktor",
+      "D) Antall József"
+     ],
+     "question": "Melyik miniszterelnök idején tartották 1997-ben a NATO-csatlakozásról szóló népszavazást?",
+     "explanation": "Az 1997-es népszavazást Horn Gyula kormánya írta ki; a szavazók 85%-a igennel szavazott. Magyarország 1999-ben, az Orbán-kormány idején lett a NATO tagja.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-09-013",
+   "lesson_id": "0523a22e-63fb-4fb2-8a04-b6a52a35d28f",
+   "block_id": "1028a8e0-9185-4abe-9c79-2b6d66b40b79",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "question, explanation",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mikor vált Magyarország jogállammá?” — megjelölt: 1990.",
+   "explanation": "Kétértelmű: a jogállamot kimondó alkotmánymódosítás és a köztársaság kikiáltása 1989. október 23-án történt (A válasz), az első szabad választás 1990-ben.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Republic_(1989%E2%80%932012)",
+     "title": "Hungarian Republic (1989–2012)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1989",
+      "B) 1990",
+      "C) 1994",
+      "D) 2000"
+     ],
+     "question": "Mikor vált Magyarország jogállammá?",
+     "explanation": "1990-től kezdődően Magyarország jogállammá vált, ami a demokratikus intézményrendszer és a jogi keretek kiépítését jelentette a rendszerváltoztatás után.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1989",
+      "B) 1990",
+      "C) 1994",
+      "D) 2000"
+     ],
+     "question": "Melyik évben tartották Magyarországon az első szabad országgyűlési választást?",
+     "explanation": "Az első szabad országgyűlési választást 1990 tavaszán tartották; a köztársaságot és a jogállamot kimondó alkotmánymódosítást már 1989. október 23-án kihirdették.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-09-014",
+   "lesson_id": "0523a22e-63fb-4fb2-8a04-b6a52a35d28f",
+   "block_id": "24e05f11-00da-4c72-91c6-37a17f62c853",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Orbán Viktor kormányzása alatt a politikai diskurzus radikalizálódott…”",
+   "explanation": "Mai politikusról szóló értékítélet, nem ellenőrizhető tény; egy iskolai tananyagban semleges, tényszerű megfogalmazás szükséges (a mélyítő kártya ugyanezt ismétli).",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Értékítélet — tankönyvi semlegességi szempont, nem tényellenőrzési kérdés.",
+   "fix": {
+    "before": {
+     "body": "Orbán Viktor 1998-ban lett Magyarország miniszterelnöke, és kormánya alatt a Fidesz a konzervatív politikai irányzatot képviselte. Az ő politikai stílusa és intézkedései jelentős hatással voltak a magyar politikai életre, különös figyelmet fordítva a nemzeti identitásra és a gazdasági fejlődésre. Orbán Viktor kormányzása alatt a politikai diskurzus radikalizálódott, és a Fidesz a közéletben domináló párttá vált. A politikai váltás új kihívások elé állította a demokratikus intézményeket és a társadalmi párbeszédet.",
+     "type": "text",
+     "heading": "Orbán Viktor és a politikai váltás",
+     "key_term": "Orbán Viktor"
+    },
+    "after": {
+     "body": "Orbán Viktor 1998-ban lett Magyarország miniszterelnöke, és kormánya alatt a Fidesz a konzervatív politikai irányzatot képviselte. Az ő politikai stílusa és intézkedései jelentős hatással voltak a magyar politikai életre, különös figyelmet fordítva a nemzeti identitásra és a gazdasági fejlődésre. Első kormánya idején (1998–2002) Magyarország a NATO tagja lett, és folytatódtak az európai uniós csatlakozási tárgyalások; a Fidesz a jobboldal meghatározó pártjává vált.",
+     "type": "text",
+     "heading": "Orbán Viktor és a politikai váltás",
+     "key_term": "Orbán Viktor"
+    }
+   }
+  }
+ ]
+}
