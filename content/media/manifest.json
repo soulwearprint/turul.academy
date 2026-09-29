@@ -1,0 +1,118 @@
+{
+ "bucket": "content-media (public read; writes: service role only)",
+ "note": "Every image a card uses, with its source and licence. CC BY / BY-SA need the credit shown on the card (card.image.credit + source link).",
+ "images": [
+  {
+   "path": "content-media/hist/elso-vilaghaboru/szovetsegek-1914-hu.svg",
+   "used_in": "HIST-78-VH1 · Az első világháború, Magyarország a háborúban · vizuális #2",
+   "source": "https://commons.wikimedia.org/wiki/File:Map_Europe_alliances_1914-hu.svg",
+   "author": "historicair; Fluteflute & Bibi Saint-Pol (en); Zetrs (hu)",
+   "license": "CC BY-SA 2.5",
+   "changes": "viewBox added"
+  },
+  {
+   "path": "content-media/hist/elso-vilaghaboru/frontok-1914-1918-hu.svg",
+   "used_in": "HIST-78-VH1 · Az első világháború, Magyarország a háborúban · vizuális #3",
+   "source": "https://commons.wikimedia.org/wiki/File:Alliances_militaires_en_Europe_1914-1918-fr.svg",
+   "author": "historicair; Augusta 89",
+   "license": "CC BY-SA 3.0 (derivative, same licence)",
+   "changes": "Hungarian labels, schematic front lines, legend (make_wwi_fronts_map.py)"
+  },
+  {
+   "path": "content-media/hist/elso-vilaghaboru/loveszarok-fortepan-52211.webp",
+   "used_in": "HIST-78-VH1 · Az első világháború, Magyarország a háborúban · vizuális #4",
+   "source": "https://commons.wikimedia.org/wiki/File:Lövészárok._Fortepan_52211.jpg",
+   "author": "Fortepan / Komlós Péter (1915)",
+   "license": "Public domain",
+   "changes": "resized 1400 px, WebP"
+  },
+  {
+   "path": "content-media/hist/elso-vilaghaboru/hadikolcson-plakat.webp",
+   "used_in": "HIST-78-VH1 · Az első világháború, Magyarország a háborúban · vizuális #5",
+   "source": "https://commons.wikimedia.org/wiki/File:Bér_Hadikölcsön.jpg",
+   "author": "Bér Dezső (1910s)",
+   "license": "Public domain",
+   "changes": "WebP"
+  },
+  {
+   "path": "content-media/hist/elso-vilaghaboru/tisza-istvan.webp",
+   "used_in": "HIST-78-VH1 · Az első világháború, Magyarország a háborúban · vizuális #6",
+   "source": "https://commons.wikimedia.org/wiki/File:Tisza_István_portréja_(Szenes_Adolf,_1917).jpg",
+   "author": "Szenes Adolf",
+   "license": "Public domain",
+   "changes": "resized 720 px, WebP"
+  },
+  {
+   "path": "content-media/hist/elso-vilaghaboru/szarajevoi-merenylet.webp",
+   "used_in": "HIST-78-VH1 · Az első világháború, Magyarország a háborúban · vizuális #7",
+   "source": "https://commons.wikimedia.org/wiki/File:DC-1914-27-d-Sarajevo-cropped.jpg",
+   "author": "Achille Beltrame, La Domenica del Corriere (1914)",
+   "license": "Public domain",
+   "changes": "resized 860 px, WebP"
+  },
+  {
+   "path": "content-media/hist/elso-vilaghaboru/harc-a-doberdon.webp",
+   "used_in": "HIST-78-VH1 · Az első világháború, Magyarország a háborúban · vizuális #8",
+   "source": "https://commons.wikimedia.org/wiki/File:Kämpfe_auf_dem_Doberdo.JPG",
+   "author": "Rudolf Alfred Höger (1916)",
+   "license": "Public domain",
+   "changes": "WebP"
+  },
+  {
+   "path": "content-media/phys/mozgasok/mozgolepcso-budapest.webp",
+   "used_in": "PHYS-78-03 · Mozgások megfigyelése és csoportosítása · vizuális #5",
+   "source": "https://commons.wikimedia.org/wiki/File:Escalator_métro_Budapest.jpg",
+   "author": "Yelkrokoyade (2011)",
+   "license": "CC BY-SA 3.0",
+   "changes": "resized 1400 px, WebP"
+  },
+  {
+   "path": "content-media/phys/mozgasok/hely-es-elmozdulas-v2.svg",
+   "used_in": "PHYS-78-03 · Mozgások megfigyelése és csoportosítása · vizuális #1",
+   "source": null,
+   "author": "Turul Academy",
+   "license": "own work",
+   "changes": "make_physics_diagrams.py"
+  },
+  {
+   "path": "content-media/phys/mozgasok/palya.svg",
+   "used_in": "PHYS-78-03 · Mozgások megfigyelése és csoportosítása · vizuális #2",
+   "source": null,
+   "author": "Turul Academy",
+   "license": "own work",
+   "changes": "make_physics_diagrams.py"
+  },
+  {
+   "path": "content-media/phys/mozgasok/ut-ido-grafikon.svg",
+   "used_in": "PHYS-78-03 · Mozgások megfigyelése és csoportosítása · vizuális #3",
+   "source": null,
+   "author": "Turul Academy",
+   "license": "own work",
+   "changes": "make_physics_diagrams.py"
+  },
+  {
+   "path": "content-media/phys/mozgasok/atlagsebesseg.svg",
+   "used_in": "PHYS-78-03 · Mozgások megfigyelése és csoportosítása · vizuális #4",
+   "source": null,
+   "author": "Turul Academy",
+   "license": "own work",
+   "changes": "make_physics_diagrams.py"
+  },
+  {
+   "path": "content-media/phys/mozgasok/newton-1-torveny.svg",
+   "used_in": "PHYS-78-03 · Mozgások megfigyelése és csoportosítása · vizuális #6",
+   "source": null,
+   "author": "Turul Academy",
+   "license": "own work",
+   "changes": "make_physics_diagrams.py"
+  },
+  {
+   "path": "content-media/phys/mozgasok/sebessegrekordok.svg",
+   "used_in": "PHYS-78-03 · Mozgások megfigyelése és csoportosítása · vizuális #7",
+   "source": null,
+   "author": "Turul Academy",
+   "license": "own work",
+   "changes": "make_physics_diagrams.py"
+  }
+ ]
+}

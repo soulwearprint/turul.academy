@@ -174,18 +174,29 @@ class CardEdit(BaseModel):
     report_ids: list[UUID] = []            # the reports that prompted the edit, for the log
 
 
+def _is_record(x) -> bool:
+    return isinstance(x, dict) and all(isinstance(v, str) for v in x.values())
+
+
 def _same_shape(old, new) -> bool:
-    """A reviewer edits wording, not structure: same keys, strings stay strings, option lists
-    keep their length, anything else (e.g. an experiment card's sketch) is untouched."""
+    """A reviewer edits wording, not structure: same keys, strings stay strings, lists keep
+    their length — option lists stay strings, timeline items ({when, what}) keep their keys —
+    and anything else (an experiment card's sketch, a card's image) is untouched."""
     if set(old) != set(new):
         return False
     for k, v in old.items():
-        if isinstance(v, str) and not isinstance(new[k], str):
-            return False
-        if isinstance(v, list) and (not isinstance(new[k], list) or len(new[k]) != len(v)
-                                    or not all(isinstance(x, str) for x in new[k])):
-            return False
-        if not isinstance(v, (str, list)) and new[k] != v:
+        n = new[k]
+        if isinstance(v, str):
+            if not isinstance(n, str):
+                return False
+        elif isinstance(v, list) and all(isinstance(x, str) for x in v):
+            if not isinstance(n, list) or len(n) != len(v) or not all(isinstance(x, str) for x in n):
+                return False
+        elif isinstance(v, list) and all(_is_record(x) for x in v):
+            if (not isinstance(n, list) or len(n) != len(v)
+                    or not all(_is_record(b) and set(b) == set(a) for a, b in zip(v, n))):
+                return False
+        elif n != v:
             return False
     return True
 

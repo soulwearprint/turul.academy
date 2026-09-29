@@ -56,6 +56,17 @@ export default defineConfig({
               expiration: { maxEntries: 300, maxAgeSeconds: 60 * 60 * 24 * 30 },
             },
           },
+          // Lesson images (public Storage bucket): immutable per path — a replaced picture
+          // gets a new file name — so cache-first, kept for offline reading.
+          {
+            urlPattern: /\/storage\/v1\/object\/public\/content-media\//,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'content-media',
+              cacheableResponse: { statuses: [0, 200] },
+              expiration: { maxEntries: 400, maxAgeSeconds: 60 * 60 * 24 * 90 },
+            },
+          },
           ...OFFLINE_SYNC_ROUTES.map(({ pattern, name }) => ({
             urlPattern: pattern,
             method: 'POST',

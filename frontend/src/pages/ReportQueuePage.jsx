@@ -4,6 +4,7 @@ import { useAuth } from '../contexts/AuthContext'
 import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
 import PageHeader from '../components/PageHeader'
+import { mediaUrl } from '../lib/media'
 
 // Reviewer queue for „Hibát találtál?” reports (role reviewer/admin — enforced by the API).
 // One entry per reported card: reasons, students' comments, the card as reported / as it is
@@ -19,8 +20,17 @@ function label(t, k) {
   return l === `field.${k}` ? k : l
 }
 
+// Editable wording: strings, lists of strings (options) and lists of flat string records
+// (a timeline's { when, what }). Pictures and sketches are shown, not edited, here.
+const isRecord = x => x && typeof x === 'object' && !Array.isArray(x) && Object.values(x).every(v => typeof v === 'string')
 function textFields(card) {
-  return Object.entries(card || {}).filter(([k, v]) => !SKIP.has(k) && (typeof v === 'string' || Array.isArray(v)))
+  return Object.entries(card || {}).filter(([k, v]) => !SKIP.has(k) && (typeof v === 'string'
+    || (Array.isArray(v) && (v.every(x => typeof x === 'string') || v.every(isRecord)))))
+}
+
+function Thumb({ src, alt }) {
+  const url = mediaUrl(src)
+  return url ? <img src={url} alt={alt || ''} loading="lazy" className="max-h-40 w-auto rounded-lg border border-slate-200 bg-white" /> : null
 }
 
 function cardLink(c) {
@@ -46,11 +56,14 @@ function CardHeader({ c, t }) {
 function CardView({ card, t }) {
   return (
     <dl className="flex flex-col gap-2">
+      {card?.image?.src && <Thumb src={card.image.src} alt={card.image.alt} />}
       {textFields(card).filter(([, v]) => (Array.isArray(v) ? v.length : v)).map(([k, v]) => (
         <div key={k}>
           <dt className="text-[10px] font-bold uppercase tracking-wide text-slate-400">{label(t, k)}</dt>
           <dd className="text-sm text-slate-700 leading-relaxed whitespace-pre-line">
-            {Array.isArray(v) ? v.map((o, i) => <span key={i} className="block">{o}</span>) : v}
+            {Array.isArray(v)
+              ? v.map((o, i) => <span key={i} className="block">{typeof o === 'string' ? o : Object.values(o).join(' — ')}</span>)
+              : v}
           </dd>
         </div>
       ))}
@@ -81,6 +94,15 @@ function CardEditor({ card, onSave, onCancel, t }) {
               className="input py-2 text-sm w-24">
               {['A', 'B', 'C', 'D'].map(l => <option key={l}>{l}</option>)}
             </select>
+          ) : Array.isArray(v) && v.every(isRecord) ? (
+            v.map((item, i) => (
+              <div key={i} className="flex flex-col gap-1 border-l-2 border-slate-200 pl-2">
+                {Object.keys(item).map(f => (
+                  <input key={f} value={draft[k][i][f]} aria-label={`${label(t, f)} ${i + 1}`} className="input py-1.5 text-sm"
+                    onChange={e => set(k, draft[k].map((o, j) => (j === i ? { ...o, [f]: e.target.value } : o)))} />
+                ))}
+              </div>
+            ))
           ) : Array.isArray(v) ? (
             v.map((_, i) => (
               <input key={i} value={draft[k][i]} className="input py-2 text-sm"
@@ -178,14 +200,24 @@ function Group({ g, status, token, t, onChanged }) {
   )
 }
 
-// Only the fields an edit actually touched — option lists compared line by line.
+// Every string leaf an edit touched (options line by line, timeline items, image fields…).
+function leaves(v, path = []) {
+  if (typeof v === 'string') return [[path, v]]
+  if (Array.isArray(v)) return v.flatMap((x, i) => leaves(x, [...path, i]))
+  if (v && typeof v === 'object') return Object.entries(v).flatMap(([k, x]) => leaves(x, [...path, k]))
+  return []
+}
+
 function fieldDiffs(before, after) {
-  return textFields(before).flatMap(([k, v]) => {
-    if (Array.isArray(v)) {
-      return v.flatMap((o, i) => (o !== after?.[k]?.[i] ? [{ id: `${k}.${i}`, k, before: o, after: after?.[k]?.[i] }] : []))
-    }
-    return v !== after?.[k] ? [{ id: k, k, before: v, after: after?.[k] }] : []
-  })
+  const b = new Map(leaves(before).filter(([p]) => !SKIP.has(p[0])).map(([p, v]) => [p.join('.'), [p, v]]))
+  const a = new Map(leaves(after).filter(([p]) => !SKIP.has(p[0])).map(([p, v]) => [p.join('.'), [p, v]]))
+  return [...new Set([...b.keys(), ...a.keys()])]
+    .filter(id => b.get(id)?.[1] !== a.get(id)?.[1])
+    .map(id => ({ id, path: (b.get(id) ?? a.get(id))[0], before: b.get(id)?.[1] ?? '', after: a.get(id)?.[1] ?? '' }))
+}
+
+function pathLabel(t, path) {
+  return path.map(p => (typeof p === 'number' ? `${p + 1}.` : label(t, p))).join(' · ')
 }
 
 function EditEntry({ e, token, t, lang, onChanged }) {
@@ -204,7 +236,7 @@ function EditEntry({ e, token, t, lang, onChanged }) {
     <div className="card p-4 flex flex-col gap-3">
       <CardHeader c={e} t={t} />
       <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
-        <span>{e.editor ?? '—'} · {when}</span>
+        <span>{e.editor ?? t('queue.edits.system')} · {when}</span>
         {e.is_undo && <span className="font-semibold bg-slate-100 text-slate-600 rounded-full px-2 py-0.5">↩ {t('queue.edits.badge.undo')}</span>}
         {e.reverted && <span className="font-semibold bg-amber-50 text-amber-700 rounded-full px-2 py-0.5">{t('queue.edits.badge.reverted')}</span>}
       </div>
@@ -212,9 +244,19 @@ function EditEntry({ e, token, t, lang, onChanged }) {
       <div className="flex flex-col gap-2.5">
         {fieldDiffs(e.before, e.after).map(d => (
           <div key={d.id}>
-            <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">{label(t, d.k)}</p>
-            <p className="text-sm leading-relaxed rounded-lg px-2.5 py-1.5 mt-1 bg-red-50 text-red-700 line-through decoration-red-300 whitespace-pre-line">{d.before}</p>
-            <p className="text-sm leading-relaxed rounded-lg px-2.5 py-1.5 mt-1 bg-emerald-50 text-emerald-800 whitespace-pre-line">{d.after}</p>
+            <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">{pathLabel(t, d.path)}</p>
+            {d.path[0] === 'image' && d.path[1] === 'src' ? (
+              <div className="flex items-center gap-2 mt-1">
+                {d.before ? <Thumb src={d.before} /> : <span className="text-xs text-slate-400">—</span>}
+                <span className="text-slate-400">→</span>
+                {d.after ? <Thumb src={d.after} /> : <span className="text-xs text-slate-400">—</span>}
+              </div>
+            ) : (
+              <>
+                {d.before && <p className="text-sm leading-relaxed rounded-lg px-2.5 py-1.5 mt-1 bg-red-50 text-red-700 line-through decoration-red-300 whitespace-pre-line">{d.before}</p>}
+                {d.after && <p className="text-sm leading-relaxed rounded-lg px-2.5 py-1.5 mt-1 bg-emerald-50 text-emerald-800 whitespace-pre-line">{d.after}</p>}
+              </>
+            )}
           </div>
         ))}
       </div>

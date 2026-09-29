@@ -5,8 +5,8 @@ media_refs (licence/review trail — see database/migrations/v10_media_refs.sql)
 Manifest items (content/media/<NAT-ID>_*.json):
   {"tema": "<curriculum_lessons.title_hu>", "match": ["kulcsszó", ...], "title": "...", "alt": "...",
    "diagram": {viewBox, shapes}}                      -> in-house SVG, stored as card.diagram
-  {..., "media": {"src": "/media/<NAT-ID>/x.jpg", "source_url", "author", "license", "license_url",
-                  "credit", "status": "approved"}}   -> sourced photo, stored as card.media
+  {..., "media": {"src": "content-media/<path in the Storage bucket>", "source_url", "author", "license", "license_url",
+                  "credit", "status": "approved"}}   -> sourced photo, stored as card.image (CardImage shape)
 A card is matched when its heading/description contains any `match` keyword; the first
 not-yet-visualised card wins, so one manifest item never overwrites another's card. Photo items
 are applied ONLY when media.status == "approved" (the curator sets that by hand after checking
@@ -86,7 +86,8 @@ def main():
                     print(f"  ⏸ {it['title']}: media not approved, skipped"); continue
                 print(f"  ✓ {it['title']}  →  card {idx}: {cards[idx].get('heading')}")
                 if it.get("media"):
-                    cards[idx]["media"] = {k: it["media"][k] for k in ("src", "credit", "license", "license_url", "source_url") if it["media"].get(k)} | {"alt": it["alt"]}
+                    m = it["media"]  # card.image shape used by CardImage: {src, alt, w, h, credit, source}
+                    cards[idx]["image"] = {"src": m["src"], "alt": it["alt"], "credit": m["credit"], "source": m.get("source_url")} | {k: m[k] for k in ("w", "h") if m.get(k)}
                 else:
                     cards[idx]["diagram"] = it["diagram"]
                 if a.apply:

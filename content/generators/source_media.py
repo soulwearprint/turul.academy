@@ -11,8 +11,8 @@ Accepted licences: public domain, CC0, CC BY, CC BY-SA. Rejected: NC, ND, "fair 
         --match út idő --query "speedometer car" --out ../media/PHYS-78-03_candidates.json
     python source_media.py --download ../media/PHYS-78-03_candidates.json   # approved entries only
 
-Downloaded files are SELF-HOSTED under frontend/public/media/<NAT-ID>/ (never hotlinked: the
-student's IP must not reach a third-party host — under-13 GDPR). Then feed the file to
+Downloaded files are staged in content/media/staging/<NAT-ID>/ — upload each to the public Storage
+bucket `content-media` at the printed path (self-hosted, never hotlinked). Then feed the file to
 apply_media.py.
 """
 import os, re, sys, json, argparse, html
@@ -20,7 +20,7 @@ import os, re, sys, json, argparse, html
 UA = "TurulAcademyBot/0.1 (https://turul.academy; support@turul.app)"
 API = "https://commons.wikimedia.org/w/api.php"
 OK_MIME = {"image/jpeg", "image/png", "image/svg+xml"}
-PUBLIC = os.path.join(os.path.dirname(__file__), "../../frontend/public/media")
+STAGING = os.path.join(os.path.dirname(__file__), "../media/staging")  # upload to Storage bucket `content-media`
 
 
 def licence_ok(name):
@@ -46,7 +46,7 @@ def to_candidate(page, tema, match):
             "alt": strip_tags((m.get("ImageDescription") or {}).get("value"))[:200],
             "media": {"src": None, "source_url": ii.get("descriptionurl"), "download_url": ii.get("thumburl") or ii.get("url"),
                       "author": author, "license": lic, "license_url": (m.get("LicenseUrl") or {}).get("value"),
-                      "credit": f"{author} — Wikimedia Commons", "status": "pending"}}
+                      "credit": f"{author} · {lic}", "status": "pending"}}
 
 
 def get_with_backoff(url, params=None, tries=5, timeout=20, **kw):
@@ -85,10 +85,11 @@ def download(path):
             continue
         ext = os.path.splitext(m["download_url"].split("?")[0])[1] or ".jpg"
         name = re.sub(r"[^a-z0-9]+", "-", it["title"].rsplit(".", 1)[0].lower()).strip("-")[:60] + ext
-        os.makedirs(os.path.join(PUBLIC, nat), exist_ok=True)
+        os.makedirs(os.path.join(STAGING, nat), exist_ok=True)
         r = get_with_backoff(m["download_url"], timeout=60, follow_redirects=True)
-        open(os.path.join(PUBLIC, nat, name), "wb").write(r.content)
-        m["src"] = f"/media/{nat}/{name}"; m["verified_at"] = m.get("verified_at") or __import__("datetime").datetime.utcnow().isoformat() + "Z"
+        open(os.path.join(STAGING, nat, name), "wb").write(r.content)
+        m["src"] = f"content-media/{nat.lower()}/{name}"  # upload the staged file to exactly this Storage path
+        m["verified_at"] = m.get("verified_at") or __import__("datetime").datetime.utcnow().isoformat() + "Z"
         print("✓", m["src"])
     json.dump(d, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 

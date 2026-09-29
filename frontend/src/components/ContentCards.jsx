@@ -3,12 +3,16 @@ import SketchDiagram from './SketchDiagram'
 import { useLang } from '../contexts/LanguageContext'
 import { badgeIcon } from '../lib/badges'
 import ReportButton from './ReportButton'
+import CardImage, { Timeline } from './CardImage'
 
 // Shared renderers for NAT 3-tier content_blocks (text | story | visual | quiz | world).
+// Any text/story/visual/world card may carry an `image` (see CardImage); visual cards may
+// carry a `timeline` instead.
 
 export function TextCard({ card }) {
   return (
     <div className="flex flex-col gap-4 px-6 py-8">
+      {card.image && <CardImage image={card.image} />}
       <h2 className="text-2xl font-bold text-slate-900 leading-snug">{card.heading}</h2>
       <p className="text-slate-700 leading-relaxed">{card.body}</p>
       {card.key_term && (
@@ -33,6 +37,7 @@ export function StoryCard({ card }) {
   const gradient = MOOD_COLORS[key] ?? 'from-slate-800 to-slate-600'
   return (
     <div className={`flex flex-col justify-end bg-gradient-to-b ${gradient} px-6 py-10 gap-4 min-h-[320px] rounded-2xl`}>
+      {card.image && <CardImage image={card.image} dark />}
       {card.mood && <span className="text-white/60 text-xs font-semibold uppercase tracking-widest">— {card.mood}</span>}
       <h2 className="text-2xl font-bold text-white leading-snug">{card.heading}</h2>
       <p className="text-white/85 leading-relaxed">{card.body}</p>
@@ -42,38 +47,27 @@ export function StoryCard({ card }) {
 
 const VISUAL_ICONS = { idővonal: '📅', térkép: '🗺️', diagram: '📊', arckép: '🖼️', grafikon: '📈' }
 
-// Visual tier order (Content_Sourcing_Policy §3): sourced image (card.media, licence-checked,
-// self-hosted, attribution required) → in-house diagram (card.diagram, SketchDiagram shapes)
-// → the text-only placeholder below (always available).
+// Visual tier order (Content_Sourcing_Policy §3): licence-checked image (card.image, see
+// CardImage) or native timeline (card.timeline) → in-house SketchDiagram (card.diagram)
+// → the text-only placeholder (always available).
 export function VisualCard({ card }) {
-  const media = card.media?.src ? card.media : null
-  const diagram = !media && card.diagram?.shapes?.length ? card.diagram : null
+  const diagram = !card.image && card.diagram?.shapes?.length ? card.diagram : null
   return (
     <div className="flex flex-col gap-4 px-6 py-8">
-      {media ? (
-        <figure className="flex flex-col gap-2">
-          <img src={media.src} alt={media.alt || card.heading} loading="lazy"
-            className="w-full rounded-2xl bg-slate-100 object-contain max-h-80" />
-          <figcaption className="text-[11px] text-slate-400 leading-snug">
-            {media.source_url ? (
-              <a href={media.source_url} target="_blank" rel="noopener noreferrer" className="underline">{media.credit}</a>
-            ) : media.credit}
-            {media.license && <> · {media.license_url
-              ? <a href={media.license_url} target="_blank" rel="noopener noreferrer" className="underline">{media.license}</a>
-              : media.license}</>}
-          </figcaption>
-        </figure>
-      ) : diagram ? (
-        <div className="bg-slate-50 border border-slate-200 rounded-2xl px-3 py-4">
-          <SketchDiagram sketch={diagram} className="text-slate-700" label={card.heading} />
-        </div>
-      ) : (
-        <div className="bg-slate-100 rounded-2xl flex flex-col items-center justify-center gap-2 py-10">
-          <span className="text-5xl">{VISUAL_ICONS[card.visual_type] ?? '🖼️'}</span>
-          <span className="text-slate-500 text-sm font-medium">{card.visual_type}</span>
-        </div>
-      )}
+      {card.image ? <CardImage image={card.image} />
+        : card.timeline?.length ? null
+        : diagram ? (
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl px-3 py-4">
+            <SketchDiagram sketch={diagram} className="text-slate-700" label={card.heading} />
+          </div>
+        ) : (
+          <div className="bg-slate-100 rounded-2xl flex flex-col items-center justify-center gap-2 py-10">
+            <span className="text-5xl">{VISUAL_ICONS[card.visual_type] ?? '🖼️'}</span>
+            <span className="text-slate-500 text-sm font-medium">{card.visual_type}</span>
+          </div>
+        )}
       <h2 className="text-xl font-bold text-slate-900">{card.heading}</h2>
+      {card.timeline?.length > 0 && <Timeline items={card.timeline} />}
       <p className="text-slate-700 leading-relaxed text-sm">{card.description}</p>
       {card.caption && <p className="text-xs text-slate-400 italic border-t border-slate-100 pt-3">{card.caption}</p>}
     </div>
@@ -83,6 +77,7 @@ export function VisualCard({ card }) {
 export function WorldCard({ card }) {
   return (
     <div className="flex flex-col gap-3 px-6 py-6 bg-slate-900 rounded-2xl">
+      {card.image && <CardImage image={card.image} dark />}
       <div className="flex items-center gap-2">
         <span className="text-2xl">🌍</span>
         {card.year && <span className="text-amber-300 font-mono text-sm font-bold">{card.year}</span>}
