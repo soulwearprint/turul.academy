@@ -1,0 +1,241 @@
+{
+ "nat_id": "HIST-56-10",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 13,
+  "cards": 66,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-56-10-001",
+   "lesson_id": "9f04b2ca-640b-4093-95db-9f1eda604348",
+   "block_id": "627989fc-6935-4a80-8072-e5a78e273f88",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A gőzgép feltalálása James Watt nevéhez fűződik, aki 1769-ben szabadalmaztatta találmányát.”",
+   "explanation": "Az első használható gőzgépet Thomas Newcomen építette 1712-ben (bányák vízmentesítésére). Watt 1769-es szabadalma a külön kondenzátor volt, amely sokkal hatékonyabbá tette a gépet.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Watt_steam_engine",
+     "title": "Watt steam engine",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Newcomen_atmospheric_engine",
+     "title": "Newcomen atmospheric engine",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A gőzgép feltalálása James Watt nevéhez fűződik, aki 1769-ben szabadalmaztatta találmányát. A gőzgép alkalmazása forradalmasította a gyártási folyamatokat, hiszen lehetővé tette a gépek működtetését, így növelve a termelési kapacitást. E találmány a bányászat, gyáripar és vasútépítés területén is alapvető jelentőségűvé vált. A magyar ipar fejlődésében is fontos szerepet játszott a gőzgép alkalmazása.",
+     "type": "text",
+     "heading": "A gőzgép és ipari innovációk",
+     "key_term": "gőzgép"
+    },
+    "after": {
+     "body": "Az első gőzgépet Thomas Newcomen építette 1712-ben a bányák vizének kiszivattyúzására. James Watt 1769-ben szabadalmaztatott újítása sokkal kevesebb szénnel működő, hatékony géppé tette. A gőzgép alkalmazása forradalmasította a gyártási folyamatokat, hiszen lehetővé tette a gépek működtetését, így növelve a termelési kapacitást. E találmány a bányászat, gyáripar és vasútépítés területén is alapvető jelentőségűvé vált. A magyar ipar fejlődésében is fontos szerepet játszott a gőzgép alkalmazása.",
+     "type": "text",
+     "heading": "A gőzgép és ipari innovációk",
+     "key_term": "gőzgép"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-10-002",
+   "lesson_id": "9f04b2ca-640b-4093-95db-9f1eda604348",
+   "block_id": "8c242010-9530-47de-a191-e293526a9b92",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options[0]",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "James Watt „Ő találta fel a gőzgépet” (megjelölt helyes válasz).",
+   "explanation": "Watt továbbfejlesztette és hatékonnyá tette a gőzgépet (a válasz magyarázata is ezt mondja); feltalálója nem ő.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Watt_steam_engine",
+     "title": "Watt steam engine",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Ő találta fel a gőzgépet",
+      "B) Ő fejlesztette ki a villanykörtét",
+      "C) Ő volt a legnagyobb iparvállalkozó",
+      "D) Ő a gyáripar alapítója"
+     ],
+     "question": "Milyen szerepet játszott James Watt az ipari forradalomban?",
+     "explanation": "James Watt a gőzgép fejlesztésével jelentős hatással volt az ipari forradalomra, mivel a gép hatékonyságának növelésével lehetővé tette a gyárak működését.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hatékonnyá tette a gőzgépet, így az gyárakat is hajthatott",
+      "B) Ő fejlesztette ki a villanykörtét",
+      "C) Ő volt a legnagyobb iparvállalkozó",
+      "D) Ő a gyáripar alapítója"
+     ],
+     "question": "Milyen szerepet játszott James Watt az ipari forradalomban?",
+     "explanation": "James Watt a gőzgép fejlesztésével jelentős hatással volt az ipari forradalomra, mivel a gép hatékonyságának növelésével lehetővé tette a gyárak működését.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-10-003",
+   "lesson_id": null,
+   "block_id": "61adb5b9-59a7-432f-8669-b4e3677197be",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 1,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„James Watt a gőzgép feltalálója”",
+   "explanation": "Mint fent: Watt továbbfejlesztője, nem feltalálója a gőzgépnek.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Watt_steam_engine",
+     "title": "Watt steam engine",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Politikai vezető",
+      "B) Feltaláló, aki a gőzgépet fejlesztette",
+      "C) Katonai vezető",
+      "D) Író és költő"
+     ],
+     "question": "Ki volt James Watt?",
+     "explanation": "James Watt a gőzgép feltalálója, aki jelentősen hozzájárult az ipari forradalomhoz.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Politikai vezető",
+      "B) Feltaláló, aki a gőzgépet fejlesztette",
+      "C) Katonai vezető",
+      "D) Író és költő"
+     ],
+     "question": "Ki volt James Watt?",
+     "explanation": "James Watt skót feltaláló a gőzgépet olyan hatékonnyá fejlesztette, hogy az gyárakat, később mozdonyokat és hajókat is hajthatott.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-10-004",
+   "lesson_id": "30fdddc0-10d5-4907-bf64-eeb0dfa0cc9f",
+   "block_id": "0264c9a9-3aaf-48f6-bf34-60b670b358f4",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "heading, body, link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "1789-ben Nagy-Britanniában „a francia forradalom hatására fokozatos reformok indultak el”.",
+   "explanation": "A brit kormány a francia forradalomra elnyomással válaszolt (pl. a habeas corpus felfüggesztése 1794-ben); a választójogi reform csak 1832-ben jött. A kártyát egy valódi 1789-es eseményre cseréljük.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Reform_Act_1832",
+     "title": "Reform Act 1832",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1789-ben Nagy-Britanniában a parlamenti reformok iránti igények erősödtek, amelyek célja a politikai képviselet bővítése volt. A francia forradalom eseményei figyelmeztették a brit politikai elitet arra, hogy a nép elégedetlensége komoly következményekkel járhat, és ennek hatására fokozatos reformok indultak el az angol politikai rendszerben. A brit parlamenti reformok célja a demokratikus elvek érvényesítése volt, amely párhuzamba állítható a francia forradalom céljaival.",
+     "type": "world",
+     "year": "1789",
+     "heading": "A brit parlamenti reformok",
+     "link_hu": "A brit reformok a francia forradalom hatására erősödtek meg, mivel a brit politikai vezetők is felismerték a népképviselet fontosságát."
+    },
+    "after": {
+     "body": "1789-ben lépett hatályba az Egyesült Államok alkotmánya, és George Washingtont választották meg az ország első elnökévé. Az alkotmány szétválasztotta a törvényhozó, a végrehajtó és a bírói hatalmat — ez a ma is működő, legrégebbi írott nemzeti alkotmány.",
+     "type": "world",
+     "year": "1789",
+     "heading": "Washington, az első amerikai elnök",
+     "link_hu": "Ugyanabban az évben, amikor Párizsban kitört a forradalom, az óceán túlpartján már működött egy köztársaság, amely a népfelség elvére épült."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-10-005",
+   "lesson_id": "30fdddc0-10d5-4907-bf64-eeb0dfa0cc9f",
+   "block_id": "0264c9a9-3aaf-48f6-bf34-60b670b358f4",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "year, body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "year: 1789; „1789-ben Haiti területén is forradalmi események zajlottak”.",
+   "explanation": "A haiti rabszolgafelkelés 1791 augusztusában tört ki; 1804-ben lett független.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Haitian_Revolution",
+     "title": "Haitian Revolution",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1789-ben Haiti területén is forradalmi események zajlottak, melyek célja a rabszolgaság eltörlése és a függetlenség elnyerése volt. A francia forradalom eszméi, különösen a szabadság és egyenlőség elvei, inspirálták a haiti rabszolgák felkelését, amely végül 1804-ben a világ első független fekete államának létrejöttéhez vezetett. Ez a forradalom szoros kapcsolatban állt a francia forradalom eseményeivel, és rávilágított a gyarmati rendszer ellentmondásaira.",
+     "type": "world",
+     "year": "1789",
+     "heading": "A haiti forradalom",
+     "link_hu": "A haiti forradalom a francia forradalom eszméinek közvetlen következménye volt, hiszen a francia forradalom hirdette az egyenlőséget és a szabadságot, amelyet a haiti rabszolgák is magukénak vallottak."
+    },
+    "after": {
+     "body": "1791-ben Haiti (akkor francia gyarmat, Saint-Domingue) területén rabszolgafelkelés tört ki, melyek célja a rabszolgaság eltörlése és a függetlenség elnyerése volt. A francia forradalom eszméi, különösen a szabadság és egyenlőség elvei, inspirálták a haiti rabszolgák felkelését, amely végül 1804-ben a világ első független fekete államának létrejöttéhez vezetett. Ez a forradalom szoros kapcsolatban állt a francia forradalom eseményeivel, és rávilágított a gyarmati rendszer ellentmondásaira.",
+     "type": "world",
+     "year": "1791",
+     "heading": "A haiti forradalom",
+     "link_hu": "A haiti forradalom a francia forradalom eszméinek közvetlen következménye volt, hiszen a francia forradalom hirdette az egyenlőséget és a szabadságot, amelyet a haiti rabszolgák is magukénak vallottak."
+    }
+   }
+  }
+ ]
+}

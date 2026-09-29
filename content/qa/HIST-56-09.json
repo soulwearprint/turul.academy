@@ -1,0 +1,330 @@
+{
+ "nat_id": "HIST-56-09",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 13,
+  "cards": 61,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-56-09-001",
+   "lesson_id": "ae88d8cc-3470-4085-9500-7cdd8db06794",
+   "block_id": "d997db6a-bc9c-4044-aa2f-525e4ea3ebe8",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "Az ország három része: a török terület, a Habsburg terület „és a szabad királyi városok”.",
+   "explanation": "A harmadik rész az Erdélyi Fejedelemség volt (ugyanezt a lecke előző témaköre helyesen tanítja).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Principality_of_Transylvania_(1570%E2%80%931711)",
+     "title": "Principality of Transylvania (1570–1711)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A török hódoltság 1541-től 1699-ig tartott Magyarország területén, amikor a török Birodalom jelentős részeket elfoglalt. Ekkor a magyar állam területe három részre szakad: a török által megszállt területekre, a Habsburgok uralta nyugati területekre és a szabad királyi városokra. A török uralom alatt a magyar nép sorsa drámaian megváltozott, a vidékek elnéptelenedtek, míg a városokban új kereskedelmi lehetőségek nyíltak. Debrecen, mint mezőváros, fontos szerepet játszott a török hódoltság idején, mivel kereskedelmi központtá vált.",
+     "type": "text",
+     "heading": "A török uralom",
+     "key_term": "török uralom"
+    },
+    "after": {
+     "body": "A török hódoltság 1541-től 1699-ig tartott Magyarország területén, amikor a török Birodalom jelentős részeket elfoglalt. Ekkor a magyar állam területe három részre szakadt: a török által megszállt területekre, a Habsburgok uralta Királyi Magyarországra és az Erdélyi Fejedelemségre. A török uralom alatt a magyar nép sorsa drámaian megváltozott, a vidékek elnéptelenedtek, míg a városokban új kereskedelmi lehetőségek nyíltak. Debrecen, mint mezőváros, fontos szerepet játszott a török hódoltság idején, mivel kereskedelmi központtá vált.",
+     "type": "text",
+     "heading": "A török uralom",
+     "key_term": "török uralom"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-09-002",
+   "lesson_id": "ae88d8cc-3470-4085-9500-7cdd8db06794",
+   "block_id": "d997db6a-bc9c-4044-aa2f-525e4ea3ebe8",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "Debrecen „a Berettyó és a Hármas-Körös folyók közelében” fekszik.",
+   "explanation": "Debrecen közelében nincs nagyobb folyó (a Hármas-Körös mintegy 100 km-re délre folyik); ezért is lett szárazföldi kereskedőváros.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Debrecen",
+     "title": "Debrecen",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Debrecen a Tiszántúlon, a Hajdúság területén található, a Berettyó és a Hármas-Körös folyók közelében. A város földrajzi elhelyezkedése kedvezett a kereskedelemnek, hiszen fontos útvonalak metszéspontjában helyezkedett el. A város környékén termékeny földek voltak, amelyek lehetővé tették a mezőgazdasági termelést. Debrecen az egyik legnagyobb mezőváros lett, amely a török hódoltság idején is megőrizte jelentőségét.",
+     "type": "text",
+     "heading": "Debrecen topográfiája",
+     "key_term": "topográfia"
+    },
+    "after": {
+     "body": "Debrecen a Tiszántúlon, a Hajdúság területén található, a Hajdúság és a Nyírség találkozásánál; nagy folyó nincs a közelében. A város földrajzi elhelyezkedése kedvezett a kereskedelemnek, hiszen fontos útvonalak metszéspontjában helyezkedett el. A város környékén termékeny földek voltak, amelyek lehetővé tették a mezőgazdasági termelést. Debrecen az egyik legnagyobb mezőváros lett, amely a török hódoltság idején is megőrizte jelentőségét.",
+     "type": "text",
+     "heading": "Debrecen topográfiája",
+     "key_term": "topográfia"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-09-003",
+   "lesson_id": "ae88d8cc-3470-4085-9500-7cdd8db06794",
+   "block_id": "10ddcd37-2dd2-42ea-bc07-76bbac4aefe0",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a közeli folyók segítették a szállítást, hiszen a vízi útvonalak gyorsabbak és olcsóbbak voltak”",
+   "explanation": "Debrecennek nincs hajózható folyója; a kereskedelem szárazföldön, szekerekkel és lábon hajtott marhacsordákkal folyt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Debrecen",
+     "title": "Debrecen",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Debrecen földrajzi elhelyezkedése kulcsfontosságú volt a kereskedelmi központtá válásában. A város a kelet-nyugati és észak-déli kereskedelmi útvonalak találkozásánál feküdt, ami lehetővé tette, hogy különböző áruk érkezzenek és induljanak innen. A környező termékeny földek pedig biztosították az élelmiszerellátást és a nyersanyagokat a kereskedelemhez. Ezen kívül a közeli folyók segítették a szállítást, hiszen a vízi útvonalak gyorsabbak és olcsóbbak voltak a szárazföldi utaknál.",
+     "type": "deep",
+     "think": "Miért voltak fontosak a folyók a kereskedelemben?",
+     "anchor": 1,
+     "heading": "Hogyan segítette a földrajz a kereskedelmet?",
+     "did_you_know": "A középkorban a folyók nemcsak szállítási útvonalak voltak, hanem határokat is jelentettek, és gyakran védelmi szerepet is betöltöttek.",
+     "think_answer": "A folyók gyors és olcsó szállítási lehetőséget biztosítottak, valamint összekötötték a különböző kereskedelmi központokat, így elősegítették az áruk áramlását."
+    },
+    "after": {
+     "body": "Debrecen földrajzi elhelyezkedése kulcsfontosságú volt a kereskedelmi központtá válásában. A város a kelet-nyugati és észak-déli kereskedelmi útvonalak találkozásánál feküdt, ami lehetővé tette, hogy különböző áruk érkezzenek és induljanak innen. A környező termékeny földek pedig biztosították az élelmiszerellátást és a nyersanyagokat a kereskedelemhez. Mivel a közelben nincs hajózható folyó, az árut szekereken szállították, a marhákat pedig lábon hajtották el egészen a német és itáliai vásárokig.",
+     "type": "deep",
+     "think": "Miért voltak fontosak a folyók a kereskedelemben?",
+     "anchor": 1,
+     "heading": "Hogyan segítette a földrajz a kereskedelmet?",
+     "did_you_know": "A középkorban a folyók nemcsak szállítási útvonalak voltak, hanem határokat is jelentettek, és gyakran védelmi szerepet is betöltöttek.",
+     "think_answer": "A folyók gyors és olcsó szállítási lehetőséget biztosítottak, valamint összekötötték a különböző kereskedelmi központokat, így elősegítették az áruk áramlását."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-09-004",
+   "lesson_id": "ae88d8cc-3470-4085-9500-7cdd8db06794",
+   "block_id": "d997db6a-bc9c-4044-aa2f-525e4ea3ebe8",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Debrecen lakossága vegyes nemzetiségű volt”",
+   "explanation": "Debrecen a hódoltság korában szinte kizárólag magyar és református város volt ('kálvinista Róma'); más vallásúak sokáig nem is telepedhettek le. A vegyes nemzetiségű lakosság a 18. századi újranépesített vidékekre (pl. Temesvár) jellemző.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Debrecen",
+     "title": "Debrecen",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A török hódoltság idején Debrecen lakossága vegyes nemzetiségű volt, ami hozzájárult a város kulturális sokszínűségéhez. A különböző etnikai csoportok együttélése során a helyi hagyományok és szokások keveredtek, gazdagítva a város kulturális életét. A nemzetiség kérdése a török uralom alatt is fontos szerepet játszott, hiszen a helyi közösségek identitásának megőrzése érdekében a lakosok igyekeztek fenntartani saját nyelvüket és hagyományaikat. Debrecen példája jól mutatja, hogy a nemzetiségek közötti együttműködés hogyan formálta a város fejlődését.",
+     "type": "text",
+     "heading": "A nemzetiség szerepe",
+     "key_term": "nemzetiség"
+    },
+    "after": {
+     "body": "A török hódoltság idején Debrecen szinte teljesen magyar és református város volt — ezért nevezték „kálvinista Rómának”. Az ország más részein, főleg a hódoltság után újranépesített vidékeken, sokféle nemzetiség élt együtt. A nemzetiség kérdése a török uralom alatt is fontos szerepet játszott, hiszen a helyi közösségek identitásának megőrzése érdekében a lakosok igyekeztek fenntartani saját nyelvüket és hagyományaikat.",
+     "type": "text",
+     "heading": "A nemzetiség szerepe",
+     "key_term": "nemzetiség"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-09-005",
+   "lesson_id": "ae88d8cc-3470-4085-9500-7cdd8db06794",
+   "block_id": "10ddcd37-2dd2-42ea-bc07-76bbac4aefe0",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A különböző nemzetiségek együttélése Debrecenben…”",
+   "explanation": "Mint fent: Debrecen lakossága egységesen magyar és református volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Debrecen",
+     "title": "Debrecen",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A különböző nemzetiségek együttélése Debrecenben hozzájárult a város kulturális gazdagságához. Az eltérő hagyományok és szokások keveredése új ötleteket és innovációkat hozott a közösség életébe. A kulturális sokszínűség segített a városnak alkalmazkodni a változó körülményekhez, hiszen a különböző népek együttműködése erősítette a közösség összetartását. Ezen kívül a sokszínűség vonzóvá tette a várost a kereskedők és utazók számára, akik új lehetőségeket kerestek.",
+     "type": "deep",
+     "think": "Hogyan befolyásolja a kulturális sokszínűség egy közösség életét?",
+     "anchor": 4,
+     "heading": "Miért volt fontos a kulturális sokszínűség?",
+     "did_you_know": "A kulturális sokszínűség gyakran vezetett új ételek és szokások kialakulásához, amelyek gazdagították a város mindennapi életét.",
+     "think_answer": "A kulturális sokszínűség új ötleteket és perspektívákat hoz, erősíti a kreativitást és az innovációt, valamint gazdagítja a közösség kulturális életét."
+    },
+    "after": {
+     "body": "Debrecen egységesen magyar és református lakossága erős közösséget alkotott: a város maga szervezte a védelmét, és adót fizetett a töröknek, a királynak és az erdélyi fejedelemnek is, hogy békén hagyják. Ez az ügyes egyensúlyozás tette lehetővé, hogy a hódoltság idején is gyarapodjon.",
+     "type": "deep",
+     "think": "Hogyan befolyásolja a kulturális sokszínűség egy közösség életét?",
+     "anchor": 4,
+     "heading": "Hogyan maradt talpon Debrecen?",
+     "did_you_know": "Debrecen egy időben három uralkodónak fizetett adót egyszerre.",
+     "think_answer": "A kulturális sokszínűség új ötleteket és perspektívákat hoz, erősíti a kreativitást és az innovációt, valamint gazdagítja a közösség kulturális életét."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-09-006",
+   "lesson_id": "18253f49-6df8-47e2-85ca-d21ea35f00bd",
+   "block_id": "7fc5f654-cafb-4509-86bf-5269212114b7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Temesvár „a magyar nemzeti identitás fontos szimbólumává vált” a 18. században.",
+   "explanation": "Temesvárt 1716-ban Savoyai Jenő foglalta vissza; 1778-ig a Bécsből közvetlenül igazgatott Temesi Bánság székhelye volt, lakói főként német, szerb és román telepesek.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Banat_of_Temeswar",
+     "title": "Banat of Temeswar",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Temesvár a 18. században fontos stratégiai és kereskedelmi központtá vált. A város a török hódoltság után újranépesült, ami hozzájárult a magyar kultúra és gazdaság újjáépítéséhez. A város fejlődése a barokk városépítészet jegyében zajlott, amely új épületek és közterek kialakítását tette lehetővé. Temesvár tehát a korszakban a magyar nemzeti identitás fontos szimbólumává vált.",
+     "type": "text",
+     "heading": "Temesvár történelmi jelentősége",
+     "key_term": "Temesvár"
+    },
+    "after": {
+     "body": "Temesvár a 18. században fontos stratégiai és kereskedelmi központtá vált. A várost 1716-ban Savoyai Jenő foglalta vissza a töröktől; ezután a Bécsből közvetlenül igazgatott Temesi Bánság székhelye lett, és német, szerb és román telepesekkel népesült be újra. A város fejlődése a barokk városépítészet jegyében zajlott, amely új épületek és közterek kialakítását tette lehetővé. Temesvár a korszakban a birodalom egyik legmodernebb városa lett.",
+     "type": "text",
+     "heading": "Temesvár történelmi jelentősége",
+     "key_term": "Temesvár"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-09-007",
+   "lesson_id": "18253f49-6df8-47e2-85ca-d21ea35f00bd",
+   "block_id": "7fc5f654-cafb-4509-86bf-5269212114b7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az újranépesítés „a magyar nemzeti identitás megerősödését is szolgálta”.",
+   "explanation": "Épp fordítva: a betelepítések következtében a magyarság aránya jelentősen csökkent az országban, és soknemzetiségű lett a Kárpát-medence.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Tankönyvi alapismeret: a 18. századi betelepítések után a magyarság a lakosság kb. 40%-át tette ki.",
+   "fix": {
+    "before": {
+     "body": "A 18. században Magyarország területei, így Temesvár is, újranépesültek a török hódoltság után. A Habsburg Birodalom politikai intézkedései, mint például a telepesek behívása, elősegítették a lakosság számának növekedését. A bevándorlók között sok német és szerb telepes is megjelent, ami a város etnikai sokszínűségéhez hozzájárult. Ez a folyamat a magyar nemzeti identitás megerősödését is szolgálta.",
+     "type": "text",
+     "heading": "Magyarország újranépesülése a 18. században",
+     "key_term": "újranépesülés"
+    },
+    "after": {
+     "body": "A 18. században Magyarország területei, így Temesvár is, újranépesültek a török hódoltság után. A Habsburg Birodalom politikai intézkedései, mint például a telepesek behívása, elősegítették a lakosság számának növekedését. A bevándorlók között sok német és szerb telepes is megjelent, ami a város etnikai sokszínűségéhez hozzájárult. Ennek következtében a magyarság aránya jelentősen csökkent, és Magyarország soknemzetiségű országgá vált.",
+     "type": "text",
+     "heading": "Magyarország újranépesülése a 18. században",
+     "key_term": "újranépesülés"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-09-008",
+   "lesson_id": null,
+   "block_id": "48884bce-9d9f-43d1-a6a3-df595c102559",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 5,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik vallás volt a legelterjedtebb Magyarországon a kora újkorban?” — Katolikus.",
+   "explanation": "A 16. század végén és a 17. század elején a lakosság többsége protestáns volt; a katolikus többség csak az ellenreformáció után, a 18. századra állt helyre. A kérdés így kétértelmű.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Reformation_in_Hungary",
+     "title": "Reformation in Hungary",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Ortodox",
+      "B) Református",
+      "C) Katolikus",
+      "D) Zsidó"
+     ],
+     "question": "Melyik vallás volt a legelterjedtebb Magyarországon a kora újkorban?",
+     "explanation": "A katolikus vallás volt a legelterjedtebb a kora újkorban Magyarországon, bár a reformátusok is jelentős közösséget alkottak.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Ortodox",
+      "B) Református",
+      "C) Katolikus",
+      "D) Zsidó"
+     ],
+     "question": "Melyik vallás lett újra a legelterjedtebb Magyarországon a 18. századra, az ellenreformáció után?",
+     "explanation": "A katolikus vallás volt a legelterjedtebb a kora újkorban Magyarországon, bár a reformátusok is jelentős közösséget alkottak.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}

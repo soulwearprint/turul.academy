@@ -1,0 +1,735 @@
+{
+ "nat_id": "HIST-56-11",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 25,
+  "cards": 126,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-56-11-001",
+   "lesson_id": "e7c900ae-25b6-42f0-857f-5178e13e91db",
+   "block_id": "ab261626-0d6c-4f88-918f-f83337c25468",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mikor kezdődött a reformkor?” — megjelölt: 1830; a magyarázat szerint viszont „A reformkor kezdete 1825”.",
+   "explanation": "A válasz és a magyarázat ellentmond; a tankönyvek a kezdetet 1825-höz (országgyűlés, Akadémia alapítása) vagy 1830-hoz (Hitel) kötik. A kérdést egyértelművé tesszük.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Reformkor",
+     "title": "Reformkor",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1830",
+      "B) 1848",
+      "C) 1800",
+      "D) 1850"
+     ],
+     "question": "Mikor kezdődött a reformkor Magyarországon?",
+     "explanation": "A reformkor kezdete 1825, de Széchenyi 'Hitel' című munkája 1830-ban jelent meg, amely fontos alapja volt a magyar gazdasági és társadalmi reformoknak.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1830",
+      "B) 1848",
+      "C) 1800",
+      "D) 1850"
+     ],
+     "question": "Melyik évben jelent meg Széchenyi István Hitel című könyve, amelyet sokan a reformkor kezdetének tekintenek?",
+     "explanation": "A Hitel 1830-ban jelent meg. A reformkor kezdetét az 1825-ös országgyűléshez is szokták kötni, amelyen Széchenyi felajánlotta egyévi jövedelmét a Magyar Tudós Társaság (a mai Akadémia) megalapítására.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-002",
+   "lesson_id": "e7c900ae-25b6-42f0-857f-5178e13e91db",
+   "block_id": "ab261626-0d6c-4f88-918f-f83337c25468",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question, options[0]",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik országgyűlés foglalkozott a jobbágyfelszabadítással?” — megjelölt: 1832–36; A) 1848-as országgyűlés.",
+   "explanation": "A jobbágyfelszabadítást ténylegesen az 1847–48-as országgyűlés mondta ki (áprilisi törvények), így az A) válasz is helyes. A kérdés az 1832–36-os diéta örökváltság-vitájára utal.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/%C3%81prilisi_t%C3%B6rv%C3%A9nyek",
+     "title": "Áprilisi törvények",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1848-as országgyűlés",
+      "B) 1832-1836-os országgyűlés",
+      "C) 1825-1827-es országgyűlés",
+      "D) 1850-es országgyűlés"
+     ],
+     "question": "Melyik országgyűlés foglalkozott a jobbágyfelszabadítással?",
+     "explanation": "A 1832-1836-os országgyűlés volt az, ahol a jobbágyfelszabadítás kérdése először komolyan napirendre került, és Széchenyi is aktívan részt vett a vitákban.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1790–1791-es országgyűlés",
+      "B) 1832-1836-os országgyűlés",
+      "C) 1825-1827-es országgyűlés",
+      "D) 1850-es országgyűlés"
+     ],
+     "question": "Melyik országgyűlésen került először komolyan napirendre a jobbágyok önmegváltása (az örökváltság)?",
+     "explanation": "A 1832-1836-os országgyűlés volt az, ahol a jobbágyfelszabadítás kérdése először komolyan napirendre került, és Széchenyi is aktívan részt vett a vitákban.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-003",
+   "lesson_id": "e48e73bf-6504-4596-a0cf-6c76b195c746",
+   "block_id": "871b630b-129c-43a8-869f-3503442a96ee",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Batthyány Lajos miniszterelnököt „a forradalom után választották meg”.",
+   "explanation": "Batthyányt V. Ferdinánd király nevezte ki 1848. március 17-én; nem választás útján lett miniszterelnök.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Batthy%C3%A1ny_Lajos_(minisztereln%C3%B6k)",
+     "title": "Batthyány Lajos (miniszterelnök)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Batthyány Lajos lett az első felelős magyar miniszterelnök, akit a forradalom után választottak meg. Az ő vezetésével alakult meg a Batthyány-kormány, amely a reformok megvalósításáért dolgozott. A kormány célja a társadalmi és politikai változások irányítása volt, beleértve a sajtószabadság megvalósítását és a cenzúra eltörlését. Batthyány Lajos szerepe a kormányzás során meghatározó volt, hiszen ő képviselte a forradalom vívmányait a nemzetközi közösség előtt.",
+     "type": "text",
+     "heading": "Batthyány Lajos és a Batthyány-kormány",
+     "key_term": "Batthyány Lajos"
+    },
+    "after": {
+     "body": "Batthyány Lajos lett az első felelős magyar miniszterelnök, akit V. Ferdinánd király 1848. március 17-én nevezett ki. Az ő vezetésével alakult meg a Batthyány-kormány, amely a reformok megvalósításáért dolgozott. A kormány célja a társadalmi és politikai változások irányítása volt, beleértve a sajtószabadság megvalósítását és a cenzúra eltörlését. Batthyány Lajos szerepe a kormányzás során meghatározó volt, hiszen ő képviselte a forradalom vívmányait a nemzetközi közösség előtt.",
+     "type": "text",
+     "heading": "Batthyány Lajos és a Batthyány-kormány",
+     "key_term": "Batthyány Lajos"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-004",
+   "lesson_id": "e48e73bf-6504-4596-a0cf-6c76b195c746",
+   "block_id": "09a5df46-5aff-41da-83bf-2b622f8ff85d",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„monarhiák”",
+   "explanation": "Elírás.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1848-ban számos országban forradalmak robbantak ki, köztük Franciaországban, ahol februárban a második köztársaságot kiáltották ki. Az események láncolata a liberális és nacionalista mozgalmak felerősödését hozta, amely a monarhiák ellen irányult. A forradalmak célja a politikai reformok, a jogok kiterjesztése és a nemzeti önrendelkezés volt, amely a magyar forradalom hátteréül szolgált.",
+     "type": "world",
+     "year": "1848",
+     "heading": "A forradalmak éve Európában",
+     "link_hu": "A francia forradalom példája inspirálta a magyar forradalmárokat, így a március 15-i események a francia példa nyomán alakultak, a sajtószabadság és a politikai reformok iránti igényekkel."
+    },
+    "after": {
+     "body": "1848-ban számos országban forradalmak robbantak ki, köztük Franciaországban, ahol februárban a második köztársaságot kiáltották ki. Az események láncolata a liberális és nacionalista mozgalmak felerősödését hozta, amely a monarchiák ellen irányult. A forradalmak célja a politikai reformok, a jogok kiterjesztése és a nemzeti önrendelkezés volt, amely a magyar forradalom hátteréül szolgált.",
+     "type": "world",
+     "year": "1848",
+     "heading": "A forradalmak éve Európában",
+     "link_hu": "A francia forradalom példája inspirálta a magyar forradalmárokat, így a március 15-i események a francia példa nyomán alakultak, a sajtószabadság és a politikai reformok iránti igényekkel."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-005",
+   "lesson_id": "b039ecc6-5db5-4d52-ab3a-83cc5571f87f",
+   "block_id": "6bdca653-f16e-48bd-9cfd-bc642a91e849",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "„A magyar honvédség 1848 áprilisában alakult meg”",
+   "explanation": "Az első tíz honvédzászlóalj toborzását 1848. május 16-án rendelték el; áprilisban a nemzetőrség alakult meg.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Magyar_Honv%C3%A9ds%C3%A9g_(1848%E2%80%931849)",
+     "title": "Magyar Honvédség (1848–1849)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A magyar honvédség 1848 áprilisában alakult meg, hogy megvédje a magyar szabadságot és függetlenséget. A honvédség célja az volt, hogy megszervezze a katonai ellenállást a Habsburg Birodalommal szemben. A honvédség tagjai lelkesedéssel harcoltak a nemzeti ügyért, és sok esetben önkéntesként csatlakoztak a hadsereghez. A honvédség hősies küzdelme hozzájárult a magyar nemzeti ébredéshez és a polgárosodáshoz.",
+     "type": "text",
+     "heading": "A magyar honvédség megalakulása",
+     "key_term": "honvédség"
+    },
+    "after": {
+     "body": "A magyar honvédség 1848 májusában alakult meg (az első tíz honvédzászlóaljjal), hogy megvédje a magyar szabadságot és függetlenséget. A honvédség célja az volt, hogy megszervezze a katonai ellenállást a Habsburg Birodalommal szemben. A honvédség tagjai lelkesedéssel harcoltak a nemzeti ügyért, és sok esetben önkéntesként csatlakoztak a hadsereghez. A honvédség hősies küzdelme hozzájárult a magyar nemzeti ébredéshez és a polgárosodáshoz.",
+     "type": "text",
+     "heading": "A magyar honvédség megalakulása",
+     "key_term": "honvédség"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-006",
+   "lesson_id": "b039ecc6-5db5-4d52-ab3a-83cc5571f87f",
+   "block_id": "6bdca653-f16e-48bd-9cfd-bc642a91e849",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az aradi kivégzések … amikor a magyar vezetők, köztük Batthyány Lajos és a 13 aradi vértanú, kivégzésre kerültek.”",
+   "explanation": "Batthyány Lajost ugyanazon a napon, 1849. október 6-án Pesten végezték ki, nem Aradon.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Batthy%C3%A1ny_Lajos_(minisztereln%C3%B6k)",
+     "title": "Batthyány Lajos (miniszterelnök)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1849. augusztus 13-án a magyar honvédség fegyverletételt kényszerült elrendelni Világosnál, ezzel véget ért a szabadságharc. Az aradi kivégzések 1849. október 6-án zajlottak, amikor a magyar vezetők, köztük Batthyány Lajos és a 13 aradi vértanú, kivégzésre kerültek. Ezek az események mélyen beivódtak a magyar kollektív emlékezetbe, és a megtorlás szimbolikus példájaként tartják számon a szabadságharc végkimenetelét. Az aradi események a magyar nemzeti identitás részeivé váltak.",
+     "type": "text",
+     "heading": "A fegyverletétel és a megtorlás – Arad",
+     "key_term": "aradi kivégzések"
+    },
+    "after": {
+     "body": "1849. augusztus 13-án a magyar honvédség fegyverletételt kényszerült elrendelni Világosnál, ezzel véget ért a szabadságharc. 1849. október 6-án Aradon kivégezték a honvédsereg 13 tábornokát, az aradi vértanúkat; ugyanezen a napon Pesten Batthyány Lajos volt miniszterelnököt is kivégezték. Ezek az események mélyen beivódtak a magyar kollektív emlékezetbe, és a megtorlás szimbolikus példájaként tartják számon a szabadságharc végkimenetelét. Az aradi események a magyar nemzeti identitás részeivé váltak.",
+     "type": "text",
+     "heading": "A fegyverletétel és a megtorlás – Arad",
+     "key_term": "aradi kivégzések"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-007",
+   "lesson_id": "b039ecc6-5db5-4d52-ab3a-83cc5571f87f",
+   "block_id": "028459f5-0c49-44b1-8947-dda0f491516f",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "question, explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Bem „a szabadcsapatok élén harcolt”; „különösen a délvidéki harcok során” volt fontos.",
+   "explanation": "Bem az erdélyi hadsereg parancsnoka volt; leghíresebb hadjárata az 1848–49-es téli-tavaszi erdélyi hadjárat (pl. Piski).",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Bem_J%C3%B3zsef",
+     "title": "Bem József",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Bem József",
+      "B) Klapka György",
+      "C) Görgei Artúr",
+      "D) Kossuth Lajos"
+     ],
+     "question": "Ki volt a honvédség egyik kiemelkedő vezére, aki a szabadcsapatok élén harcolt a szabadságharc alatt?",
+     "explanation": "Bem József a szabadságharc idején a honvédség egyik legfontosabb parancsnoka volt, különösen a délvidéki harcok során.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Bem József",
+      "B) Klapka György",
+      "C) Görgei Artúr",
+      "D) Kossuth Lajos"
+     ],
+     "question": "Melyik lengyel származású tábornok vezette sikeresen a magyar hadsereget Erdélyben?",
+     "explanation": "Bem József, a lengyel szabadságharc veteránja 1848 decemberétől az erdélyi hadsereg parancsnoka volt; a katonái „Bem apónak” hívták.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-008",
+   "lesson_id": "b039ecc6-5db5-4d52-ab3a-83cc5571f87f",
+   "block_id": "028459f5-0c49-44b1-8947-dda0f491516f",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options[0]",
+   "verdict": "quiz_key",
+   "severity": "low",
+   "claim": "A) A fegyverletétel / D) A világosi fegyverletétel",
+   "explanation": "Két azonos válasz.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Belső hiba: ismétlődő válaszlehetőség.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A fegyverletétel",
+      "B) A függetlenségi nyilatkozat kihirdetése",
+      "C) Az aradi kivégzések",
+      "D) A világosi fegyverletétel"
+     ],
+     "question": "Mi történt 1849. október 6-án, és miért fontos ez a dátum a magyar történelem szempontjából?",
+     "explanation": "1849. október 6-án az aradi vértanúk kivégzése történt, amely a szabadságharc bukásának szimbólumává vált, és mély hatással volt a magyar nemzeti öntudatra.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A pákozdi csata",
+      "B) A függetlenségi nyilatkozat kihirdetése",
+      "C) Az aradi kivégzések",
+      "D) A világosi fegyverletétel"
+     ],
+     "question": "Mi történt 1849. október 6-án, és miért fontos ez a dátum a magyar történelem szempontjából?",
+     "explanation": "1849. október 6-án az aradi vértanúk kivégzése történt, amely a szabadságharc bukásának szimbólumává vált, és mély hatással volt a magyar nemzeti öntudatra.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-009",
+   "lesson_id": "b039ecc6-5db5-4d52-ab3a-83cc5571f87f",
+   "block_id": "028459f5-0c49-44b1-8947-dda0f491516f",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Világos „a szabadságharc utolsó jelentős csatája, ahol a magyar honvédség véglegesen vereséget szenvedett”.",
+   "explanation": "Világosnál nem volt csata: 1849. augusztus 13-án a honvédsereg itt tette le a fegyvert az orosz csapatok előtt. Az utolsó nagy csata Temesvárnál volt (augusztus 9.), Komárom pedig októberig kitartott.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Vil%C3%A1gosi_fegyverlet%C3%A9tel",
+     "title": "Világosi fegyverletétel",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Komárom",
+      "B) Világos",
+      "C) Isaszeg",
+      "D) Pákozd"
+     ],
+     "question": "Melyik helyszín volt a szabadságharc utolsó jelentős csatája, ahol a magyar honvédség véglegesen vereséget szenvedett el?",
+     "explanation": "Világos volt a szabadságharc utolsó csatájának helyszíne, ahol a honvédség fegyverletételre kényszerült, véget vetve a szabadságharc küzdelmeinek.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Komárom",
+      "B) Világos",
+      "C) Isaszeg",
+      "D) Pákozd"
+     ],
+     "question": "Hol tették le a fegyvert a honvédsereg fő erői 1849. augusztus 13-án?",
+     "explanation": "1849. augusztus 13-án Görgei Artúr Világos mellett (Szőlősnél) letette a fegyvert az orosz csapatok előtt. Komárom vára Klapka vezetésével még október elejéig kitartott.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-010",
+   "lesson_id": "b039ecc6-5db5-4d52-ab3a-83cc5571f87f",
+   "block_id": "028459f5-0c49-44b1-8947-dda0f491516f",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a világosi fegyverletétel után, a honvédség főparancsnoka volt”",
+   "explanation": "A fegyverletétel IDEJÉN volt főparancsnok.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Klapka György",
+      "B) Görgei Artúr",
+      "C) Bem József",
+      "D) Petőfi Sándor"
+     ],
+     "question": "Ki volt az, aki a szabadságharc végén, a világosi fegyverletétel után, a honvédség főparancsnoka volt?",
+     "explanation": "Görgei Artúr a világosi fegyverletétel idején a honvédség főparancsnoka volt, és ő irányította a magyar csapatok visszavonulását.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Klapka György",
+      "B) Görgei Artúr",
+      "C) Bem József",
+      "D) Petőfi Sándor"
+     ],
+     "question": "Ki volt az, aki a szabadságharc végén, a világosi fegyverletétel idején a honvédség főparancsnoka volt?",
+     "explanation": "Görgei Artúr a világosi fegyverletétel idején a honvédség főparancsnoka volt, és ő irányította a magyar csapatok visszavonulását.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-011",
+   "lesson_id": "7989de07-ceda-470d-b9ae-ac0aaef8c108",
+   "block_id": "8de3c50e-d0a2-4288-9e1d-0f0f189fe424",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A kiegyezéssel „a közteherviselés elve is megvalósult”.",
+   "explanation": "A közteherviselést (a nemesség adómentességének megszüntetését) az 1848-as áprilisi törvények mondták ki, nem a kiegyezés. Ugyanez a hiba a lecke négy másik kártyáján is szerepel.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/%C3%81prilisi_t%C3%B6rv%C3%A9nyek",
+     "title": "Áprilisi törvények",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A kiegyezés egy politikai megállapodás, amely 1867-ben jött létre az Osztrák Birodalom és a magyar politikai elit között. Ennek célja a magyar önállóság helyreállítása volt, miközben megőrizték a birodalom kereteit. A kiegyezés nyomán alakult meg az Osztrák-Magyar Monarchia, amely két egyenrangú részre tagolódott: Ausztriára és Magyarországra. A közteherviselés elve is megvalósult, amely biztosította, hogy a magyar állampolgárok arányosan járuljanak hozzá az állam költségvetéséhez.",
+     "type": "text",
+     "heading": "A kiegyezés fogalma",
+     "key_term": "kiegyezés"
+    },
+    "after": {
+     "body": "A kiegyezés egy politikai megállapodás, amely 1867-ben jött létre az Osztrák Birodalom és a magyar politikai elit között. Ennek célja a magyar önállóság helyreállítása volt, miközben megőrizték a birodalom kereteit. A kiegyezés nyomán alakult meg az Osztrák-Magyar Monarchia, amely két egyenrangú részre tagolódott: Ausztriára és Magyarországra. A kiegyezés visszaállította az 1848-as áprilisi törvények nagy részét, köztük a közteherviselést: a nemesek is adót fizettek.",
+     "type": "text",
+     "heading": "A kiegyezés fogalma",
+     "key_term": "kiegyezés"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-012",
+   "lesson_id": "7989de07-ceda-470d-b9ae-ac0aaef8c108",
+   "block_id": "8de3c50e-d0a2-4288-9e1d-0f0f189fe424",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A közteherviselés elvének bevezetésével Deák a modern magyar állam alapjait is lerakta.”",
+   "explanation": "A közteherviselést 1848-ban, az áprilisi törvények vezették be.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/%C3%81prilisi_t%C3%B6rv%C3%A9nyek",
+     "title": "Áprilisi törvények",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Deák Ferenc, a magyar politikai élet kiemelkedő alakja, a kiegyezés egyik fő szószólója volt. Ő hangsúlyozta a kompromisszum szükségességét a magyar autonómia érdekében, és a politikai tárgyalások során ő képviselte a mérsékelt, de határozott álláspontot. Deák munkássága nélkül a kiegyezés valószínűleg nem jöhetett volna létre, mivel ő képes volt összefogni a különböző politikai irányzatokat. A közteherviselés elvének bevezetésével Deák a modern magyar állam alapjait is lerakta.",
+     "type": "text",
+     "heading": "Deák Ferenc szerepe",
+     "key_term": "Deák Ferenc"
+    },
+    "after": {
+     "body": "Deák Ferenc, a magyar politikai élet kiemelkedő alakja, a kiegyezés egyik fő szószólója volt. Ő hangsúlyozta a kompromisszum szükségességét a magyar autonómia érdekében, és a politikai tárgyalások során ő képviselte a mérsékelt, de határozott álláspontot. Deák munkássága nélkül a kiegyezés valószínűleg nem jöhetett volna létre, mivel ő képes volt összefogni a különböző politikai irányzatokat. Deákot ezért „a haza bölcsének” nevezték.",
+     "type": "text",
+     "heading": "Deák Ferenc szerepe",
+     "key_term": "Deák Ferenc"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-013",
+   "lesson_id": "7989de07-ceda-470d-b9ae-ac0aaef8c108",
+   "block_id": "8de3c50e-d0a2-4288-9e1d-0f0f189fe424",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A közteherviselés elve a kiegyezés egyik kulcsfontosságú eleme volt”",
+   "explanation": "A közteherviselés az 1848-as áprilisi törvényekkel lépett életbe.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/%C3%81prilisi_t%C3%B6rv%C3%A9nyek",
+     "title": "Áprilisi törvények",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A közteherviselés elve a kiegyezés egyik kulcsfontosságú eleme volt, amely biztosította, hogy a polgárok arányosan járuljanak hozzá az állam költségeihez. Ez a rendszer a közszolgáltatások, az infrastruktúra fejlesztése és a hadsereg finanszírozása szempontjából is alapvető jelentőségű volt. A közteherviselés bevezetése hozzájárult a társadalmi igazságosság érzésének erősödéséhez, és elősegítette a polgárosodás folyamatát is Magyarországon. A kiegyezés után a közteherviselés elve a modern állam működésének alapját képezte.",
+     "type": "text",
+     "heading": "A közteherviselés jelentősége",
+     "key_term": "közteherviselés"
+    },
+    "after": {
+     "body": "A közteherviselés elvét az 1848-as áprilisi törvények mondták ki; ez biztosította, hogy a polgárok arányosan járuljanak hozzá az állam költségeihez. Ez a rendszer a közszolgáltatások, az infrastruktúra fejlesztése és a hadsereg finanszírozása szempontjából is alapvető jelentőségű volt. A közteherviselés bevezetése hozzájárult a társadalmi igazságosság érzésének erősödéséhez, és elősegítette a polgárosodás folyamatát is Magyarországon. A kiegyezés után is ez az elv maradt a modern állam működésének alapja.",
+     "type": "text",
+     "heading": "A közteherviselés jelentősége",
+     "key_term": "közteherviselés"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-014",
+   "lesson_id": "7989de07-ceda-470d-b9ae-ac0aaef8c108",
+   "block_id": "4512953f-82a1-40ac-b7ef-824dd8d8c396",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A kiegyezés „lehetővé tette … a közteherviselés bevezetését”.",
+   "explanation": "A közteherviselést 1848-ban vezették be.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/%C3%81prilisi_t%C3%B6rv%C3%A9nyek",
+     "title": "Áprilisi törvények",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A magyar önállóság biztosítása",
+      "B) Az osztrák területek bővítése",
+      "C) A hadi költségek csökkentése",
+      "D) A birodalom terjeszkedése"
+     ],
+     "question": "Mi volt a kiegyezés fő célja?",
+     "explanation": "A kiegyezés célja a magyar önállóság biztosítása volt, amely lehetővé tette a magyar parlament működését és a közteherviselés bevezetését.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A magyar önállóság biztosítása",
+      "B) Az osztrák területek bővítése",
+      "C) A hadi költségek csökkentése",
+      "D) A birodalom terjeszkedése"
+     ],
+     "question": "Mi volt a kiegyezés fő célja?",
+     "explanation": "A kiegyezés célja a magyar önállóság biztosítása volt: Magyarország saját kormányt és országgyűlést kapott, csak a hadügy, a külügy és az ezek költségeit fedező pénzügy maradt közös.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-015",
+   "lesson_id": "7989de07-ceda-470d-b9ae-ac0aaef8c108",
+   "block_id": "4512953f-82a1-40ac-b7ef-824dd8d8c396",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A közteherviselés „a kiegyezés után vált általánossá Magyarországon”.",
+   "explanation": "Az 1848-as áprilisi törvények vezették be.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/%C3%81prilisi_t%C3%B6rv%C3%A9nyek",
+     "title": "Áprilisi törvények",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Mindenki egyenlően részesedik a javakból",
+      "B) Az állampolgárok adózása a közszolgáltatások finanszírozására",
+      "C) Az államnak nincs bevétele",
+      "D) A gazdagok nem fizetnek adót"
+     ],
+     "question": "Mi a közteherviselés lényege?",
+     "explanation": "A közteherviselés lényege, hogy az állampolgárok adózása a közszolgáltatások finanszírozására történik, ami a kiegyezés után vált általánossá Magyarországon.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Mindenki egyenlően részesedik a javakból",
+      "B) Az állampolgárok adózása a közszolgáltatások finanszírozására",
+      "C) Az államnak nincs bevétele",
+      "D) A gazdagok nem fizetnek adót"
+     ],
+     "question": "Mi a közteherviselés lényege?",
+     "explanation": "A közteherviselés azt jelenti, hogy mindenki — a nemesek is — adót fizet az állam költségeire. Magyarországon az 1848-as áprilisi törvények vezették be.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-016",
+   "lesson_id": "7989de07-ceda-470d-b9ae-ac0aaef8c108",
+   "block_id": "8de3c50e-d0a2-4288-9e1d-0f0f189fe424",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Az „ellenállás formái” a reformkori mozgalmakat és 1848-at sorolják fel.",
+   "explanation": "A tankönyvi fogalom a szabadságharc leverése utáni passzív ellenállás (adómegtagadás, a hivatalvállalás és a német nyelv bojkottja), amely a kiegyezéshez vezetett; ez a kártyából kimaradt.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Passz%C3%ADv_ellen%C3%A1ll%C3%A1s",
+     "title": "Passzív ellenállás",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A kiegyezés előtti időszakban különböző ellenállási formák alakultak ki a magyar politikai elit és a közvélemény részéről. A reformkor idején számos politikai aktivista és értelmiségi hangoztatta a magyar önállóság iránti vágyát, és különböző mozgalmak formájában próbálták elérni céljaikat. Az 1848-as forradalom is a magyar függetlenségért folytatott küzdelem egyik megnyilvánulása volt, amely végül a kiegyezéshez vezetett. A kiegyezés elfogadása után a magyar politikai elit sokáig vitatta a megállapodás részleteit és annak következményeit.",
+     "type": "text",
+     "heading": "Az ellenállás formái",
+     "key_term": "ellenállás"
+    },
+    "after": {
+     "body": "A szabadságharc leverése után a magyar társadalom passzív ellenállással válaszolt az önkényuralomra: sokan nem vállaltak hivatalt, halogatták az adófizetést, bojkottálták a német nyelvű hivatalokat, és nem vettek részt az udvar ünnepségein. Ez a békés ellenállás éveken át nehezítette az ország kormányzását. Amikor a Habsburg Birodalom 1859-ben és 1866-ban háborút vesztett, Ferenc József belátta, hogy meg kell egyeznie a magyarokkal.",
+     "type": "text",
+     "heading": "Az ellenállás formái",
+     "key_term": "ellenállás"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-11-017",
+   "lesson_id": null,
+   "block_id": "0028c02b-0353-4238-bd31-c238e0671e7e",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 4,
+   "field": "correct, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik csata zajlott le 1848-ban…?” — megjelölt: Isaszeg („1848. április 6.”).",
+   "explanation": "Az isaszegi csata 1849. április 6-án volt. 1848-ban a felsoroltak közül a pákozdi csata zajlott (1848. szeptember 29.) — a C) a helyes válasz.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/P%C3%A1kozdi_csata",
+     "title": "Pákozdi csata",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Isaszegi csata",
+      "B) Világosi csata",
+      "C) Pákozd",
+      "D) Arad"
+     ],
+     "question": "Melyik csata zajlott le 1848-ban, amely fontos szerepet játszott a szabadságharcban?",
+     "explanation": "Az isaszegi csata 1848. április 6-án zajlott, és a magyar honvédség győzelme volt, amely megerősítette a szabadságharc helyzetét.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Isaszegi csata",
+      "B) Világosi csata",
+      "C) Pákozd",
+      "D) Arad"
+     ],
+     "question": "Melyik csata zajlott le 1848-ban, amely fontos szerepet játszott a szabadságharcban?",
+     "explanation": "A pákozdi csatában, 1848. szeptember 29-én a fiatal honvédsereg megállította Jellačić horvát bán támadását — ennek emlékére ünnepeljük ma szeptember 29-én a honvédelem napját.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}
