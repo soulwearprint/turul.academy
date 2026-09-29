@@ -1,0 +1,214 @@
+{
+ "nat_id": "HIST-78-04",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 13,
+  "cards": 68,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-78-04-001",
+   "lesson_id": "8a42f21a-621d-46b1-9892-224d2eeb5a4b",
+   "block_id": "a90af974-c1d4-467a-9989-c3b6475a6e52",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A Szovjetunióban Lenin 1917-ben vezette be a kommunista rendszert”",
+   "explanation": "1917-ben a bolsevikok Oroszországban ragadták magukhoz a hatalmat; a Szovjetunió 1922-ben jött létre.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Soviet_Union",
+     "title": "Soviet Union",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Szovjetunióban Lenin 1917-ben vezette be a kommunista rendszert, amely a bolsevik forradalom eredményeként jött létre. Az 1924-ben bekövetkezett halála után Sztálin vette át a hatalmat, aki a személyi kultusz kiépítésével és a totális állam megteremtésével jellemezte uralkodását. Sztálin alatt a politikai ellenfeleket brutálisan elnyomták, és a félelem légköre uralkodott az országban. A rendszer célja a társadalom totális ellenőrzése volt, amely a kommunista ideológia nevében valósult meg.",
+     "type": "text",
+     "heading": "Lenin és Sztálin diktatúrája",
+     "key_term": "totális állam"
+    },
+    "after": {
+     "body": "Oroszországban Lenin és a bolsevikok 1917-ben ragadták magukhoz a hatalmat; 1922-ben létrehozták a Szovjetuniót. Az 1924-ben bekövetkezett halála után Sztálin vette át a hatalmat, aki a személyi kultusz kiépítésével és a totális állam megteremtésével jellemezte uralkodását. Sztálin alatt a politikai ellenfeleket brutálisan elnyomták, és a félelem légköre uralkodott az országban. A rendszer célja a társadalom totális ellenőrzése volt, amely a kommunista ideológia nevében valósult meg.",
+     "type": "text",
+     "heading": "Lenin és Sztálin diktatúrája",
+     "key_term": "totális állam"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-04-002",
+   "lesson_id": "8a42f21a-621d-46b1-9892-224d2eeb5a4b",
+   "block_id": "e093f9a8-57a6-45ec-ac95-56e06424f8fa",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Mussolini Olaszországa és Hitler Németországa „az államosításra” épült.",
+   "explanation": "A fasiszta Olaszországban és a náci Németországban a magántulajdon megmaradt; az állam irányította, de nem államosította a gazdaságot. Az általános államosítás a szovjet rendszer sajátja volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Economy_of_Nazi_Germany",
+     "title": "Economy of Nazi Germany",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A totális diktatúrák jelensége nemcsak a Szovjetunióban, hanem más országokban is megjelent a 20. század során. Például Mussolini Olaszországában és Hitler Németországában is hasonló rendszerek alakultak ki, amelyek a politikai ellenfelek elnyomására, a személyi kultuszra és az államosításra épültek. Ezek a rendszerek gyakran a társadalom teljes kontrollját célozták meg, hasonlóan a szovjet modellhez.",
+     "type": "world",
+     "year": "",
+     "heading": "A totális diktatúrák megjelenése más kultúrákban",
+     "link_hu": ""
+    },
+    "after": {
+     "body": "A totális diktatúrák jelensége nemcsak a Szovjetunióban, hanem más országokban is megjelent a 20. század során. Például Mussolini Olaszországában és Hitler Németországában is hasonló rendszerek alakultak ki, amelyek a politikai ellenfelek elnyomására és a személyi kultuszra épültek; ezekben azonban a magántulajdon megmaradt, az állam csak irányította a gazdaságot. Ezek a rendszerek gyakran a társadalom teljes kontrollját célozták meg, hasonlóan a szovjet modellhez.",
+     "type": "world",
+     "year": "",
+     "heading": "A totális diktatúrák megjelenése más kultúrákban",
+     "link_hu": ""
+    }
+   }
+  },
+  {
+   "id": "HIST-78-04-003",
+   "lesson_id": "9004046a-1f5f-4a33-bbff-da2a55e692db",
+   "block_id": "3806f930-70fe-404f-8d79-f4790683fbf6",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Hitler 1933 januárjában került a kormány élére, „amikor a náci párt a választások során a legnagyobb párttá vált”.",
+   "explanation": "A náci párt már 1932 júliusában a legnagyobb párt lett; Hitlert 1933. január 30-án Hindenburg elnök nevezte ki kancellárrá — nem választási győzelemmel jutott hatalomra.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Adolf_Hitler%27s_rise_to_power",
+     "title": "Adolf Hitler's rise to power",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Adolf Hitler 1933 januárjában került a német kormány élére, amikor a náci párt a választások során a legnagyobb párttá vált. A hatalomátvétel során Hitler kihasználta a gazdasági válságot és a politikai instabilitást, hogy megszilárdítsa hatalmát. Az új kormány azonnal elkezdte a politikai ellenfelek elnyomását, és bevezette a totális diktatúra intézményeit. Ez a korszak nemcsak Németországra, hanem egész Európára is jelentős hatással volt.",
+     "type": "text",
+     "heading": "Hitler hatalomra jutása",
+     "key_term": "Hitler"
+    },
+    "after": {
+     "body": "Adolf Hitlert 1933. január 30-án Hindenburg elnök nevezte ki kancellárrá; a náci párt 1932 nyara óta a legnagyobb párt volt a parlamentben, de többséget sosem szerzett szabad választáson. A hatalomátvétel során Hitler kihasználta a gazdasági válságot és a politikai instabilitást, hogy megszilárdítsa hatalmát. Az új kormány azonnal elkezdte a politikai ellenfelek elnyomását, és bevezette a totális diktatúra intézményeit. Ez a korszak nemcsak Németországra, hanem egész Európára is jelentős hatással volt.",
+     "type": "text",
+     "heading": "Hitler hatalomra jutása",
+     "key_term": "Hitler"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-04-004",
+   "lesson_id": "9004046a-1f5f-4a33-bbff-da2a55e692db",
+   "block_id": "3806f930-70fe-404f-8d79-f4790683fbf6",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "1938 szeptemberében a Szudéta-vidéket „elfoglalták, ezzel megsértve a versailles-i békeszerződést”.",
+   "explanation": "A Szudéta-vidéket a nagyhatalmak 1938. szeptember 29-i müncheni egyezménye alapján szállták meg (október elején), Nagy-Britannia és Franciaország beleegyezésével; Csehszlovákia határait nem a versailles-i szerződés szabályozta. Az Anschluss valóban sértette a versailles-i tilalmat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Munich_Agreement",
+     "title": "Munich Agreement",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Hitler hatalomra jutása után a német terjeszkedés politikáját kezdte el követni, amelynek célja a 'Németország életterének' bővítése volt. 1938 márciusában Németország bekebelezte Ausztriát, amelyet Anschlusznak neveznek. Ezt követően, 1938 szeptemberében, Csehszlovákia szudétavidéki területeit is elfoglalták, ezzel megsértve a versailles-i békeszerződést. Ezek az események elősegítették a második világháború kirobbanását, amelynek következményei még Magyarországra is kihatottak.",
+     "type": "text",
+     "heading": "A hitleri Németország terjeszkedése",
+     "key_term": "kronológia: 1933"
+    },
+    "after": {
+     "body": "Hitler hatalomra jutása után a német terjeszkedés politikáját kezdte el követni, amelynek célja a 'Németország életterének' bővítése volt. 1938 márciusában Németország bekebelezte Ausztriát, amelyet Anschlusznak neveznek. Ez megsértette a versailles-i békeszerződést, amely megtiltotta a két ország egyesülését. Ezt követően, az 1938. szeptemberi müncheni egyezmény alapján — Nagy-Britannia és Franciaország beleegyezésével — Németország megszállta Csehszlovákia szudétavidéki területeit. Ezek az események elősegítették a második világháború kirobbanását, amelynek következményei még Magyarországra is kihatottak.",
+     "type": "text",
+     "heading": "A hitleri Németország terjeszkedése",
+     "key_term": "kronológia: 1933"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-04-005",
+   "lesson_id": "8a42f21a-621d-46b1-9892-224d2eeb5a4b",
+   "block_id": "6063feaa-8339-4107-8009-1cb467e1e960",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options[2]",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "C) Zeltini",
+   "explanation": "Értelmetlen, nem létező szó a válaszok között.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) GULAG",
+      "B) KGB",
+      "C) Zeltini",
+      "D) Komszomol"
+     ],
+     "question": "Milyen néven ismerték a Szovjetunió munkatáborait, ahol sok politikai foglyot tartottak fogva?",
+     "explanation": "A GULAG a Szovjetunióban működő munkatáborok rendszere, ahol sok embert, köztük politikai ellenfeleket tartottak fogva.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) GULAG",
+      "B) KGB",
+      "C) NEP",
+      "D) Komszomol"
+     ],
+     "question": "Milyen néven ismerték a Szovjetunió munkatáborait, ahol sok politikai foglyot tartottak fogva?",
+     "explanation": "A GULAG a Szovjetunióban működő munkatáborok rendszere, ahol sok embert, köztük politikai ellenfeleket tartottak fogva.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}

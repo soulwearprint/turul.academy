@@ -1,0 +1,326 @@
+{
+ "nat_id": "HIST-78-02",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 13,
+  "cards": 70,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-78-02-001",
+   "lesson_id": "18bc7d2c-2fc6-4152-a93c-88fe5a441b21",
+   "block_id": "01cfa619-43d2-4dc3-9b60-fc573152434b",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options[0]",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "MÁV megalakulása — megjelölt helyes válasz: 1867 (a magyarázat szerint 1868).",
+   "explanation": "A Magyar Királyi Államvasutak 1868-ban alakult; a megjelölt válasz és a magyarázat ellentmond, és 1868 nincs a válaszok között.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Magyar_%C3%81llamvasutak",
+     "title": "Magyar Államvasutak",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1867",
+      "B) 1870",
+      "C) 1850",
+      "D) 1860"
+     ],
+     "question": "Mikor alakult meg a Magyar Államvasutak (MÁV)?",
+     "explanation": "A MÁV 1868-ban alakult meg, és kulcsszerepet játszott a közlekedés fejlesztésében, ami hozzájárult az ipar fejlődéséhez és a gazdasági modernizációhoz.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1868",
+      "B) 1870",
+      "C) 1850",
+      "D) 1860"
+     ],
+     "question": "Mikor alakult meg a Magyar Államvasutak (MÁV)?",
+     "explanation": "A MÁV 1868-ban alakult meg, és kulcsszerepet játszott a közlekedés fejlesztésében, ami hozzájárult az ipar fejlődéséhez és a gazdasági modernizációhoz.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-02-002",
+   "lesson_id": null,
+   "block_id": "3741fcc7-f612-48a6-a3ad-7e4e36f2cf89",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "options[2], explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik évben alakult meg a Magyar Államvasutak?” — megjelölt: 1891.",
+   "explanation": "A MÁV 1868-ban alakult (ugyanezt tanítja a lecke szövege); 1868 nincs a válaszok között.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Magyar_%C3%81llamvasutak",
+     "title": "Magyar Államvasutak",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1867",
+      "B) 1880",
+      "C) 1891",
+      "D) 1896"
+     ],
+     "question": "Melyik évben alakult meg a Magyar Államvasutak?",
+     "explanation": "A Magyar Államvasutak 1891-ben alakult meg, és fontos szerepet játszott a közlekedés fejlesztésében.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1867",
+      "B) 1880",
+      "C) 1868",
+      "D) 1896"
+     ],
+     "question": "Melyik évben alakult meg a Magyar Államvasutak?",
+     "explanation": "A Magyar Királyi Államvasutak 1868-ban alakult meg; a dualizmus korában Magyarország vasúthálózata a többszörösére nőtt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-02-003",
+   "lesson_id": "18bc7d2c-2fc6-4152-a93c-88fe5a441b21",
+   "block_id": "a99588ba-6ad1-4201-97e0-bb32fa5d17f1",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A dualizmus kori feltalálók példája: „Jedlik Ányos és Kármán Tódor”.",
+   "explanation": "Kármán Tódor (sz. 1881) munkássága döntően 1918 után, Németországban és az USA-ban bontakozott ki. A dualizmus kori magyar találmányokra jobb példa a transzformátor (Bláthy, Déri, Zipernowsky, 1885) és Puskás Tivadar telefonhírmondója (1893).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Z.B.D._transformer",
+     "title": "Z.B.D. transformer",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A dualizmus időszakában számos magyar feltaláló és tudós járult hozzá a technikai fejlődéshez. Például Jedlik Ányos és Kármán Tódor munkássága nemcsak Magyarország, hanem a világ tudományos közösségére is hatással volt. Az új találmányok segítették az ipar fejlődését és a gazdasági modernizációt.",
+     "type": "text",
+     "heading": "Magyar feltalálók és találmányok",
+     "key_term": "feltalálók"
+    },
+    "after": {
+     "body": "A dualizmus időszakában számos magyar feltaláló és tudós járult hozzá a technikai fejlődéshez. Például Bláthy Ottó, Déri Miksa és Zipernowsky Károly 1885-ben szabadalmaztatták a transzformátort, Puskás Tivadar pedig 1893-ban elindította a telefonhírmondót, a rádió elődjét. Az új találmányok segítették az ipar fejlődését és a gazdasági modernizációt.",
+     "type": "text",
+     "heading": "Magyar feltalálók és találmányok",
+     "key_term": "feltalálók"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-02-004",
+   "lesson_id": "48b331cf-09b2-4b0b-b9db-3ae04d95d7af",
+   "block_id": "ebdb6ab0-7ccb-4b32-a770-1c5f3d520fd6",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A Millennium legjelentősebb eseményei között szerepelt „a Hősök tere felavatása”.",
+   "explanation": "A Millenniumi emlékmű építése 1896-ban csak elkezdődött, 1929-ben fejeződött be. 1896-ban nyílt meg a millenniumi kiállítás a Városligetben és a kontinens első földalatti vasútja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Heroes%27_Square_(Budapest)",
+     "title": "Heroes' Square (Budapest)",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Line_1_(Budapest_Metro)",
+     "title": "Line 1 (Budapest Metro)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Millennium, amely 1896-ban zajlott, a magyar államiság ezeréves évfordulójának megünneplését jelentette. Az ünnepségek célja a magyar nemzeti öntudat erősítése volt, és számos kulturális és politikai eseményt foglalt magában. A legjelentősebb események közé tartozott a Hősök tere felavatása és a millenniumi kiállítás, amely bemutatta Magyarország fejlődését. A Millennium nemcsak a múlt tiszteletére, hanem a jövő építésére is ösztönzött.",
+     "type": "text",
+     "heading": "A Millennium ünnepségei",
+     "key_term": "Millennium"
+    },
+    "after": {
+     "body": "A Millennium, amely 1896-ban zajlott, a magyar államiság ezeréves évfordulójának megünneplését jelentette. Az ünnepségek célja a magyar nemzeti öntudat erősítése volt, és számos kulturális és politikai eseményt foglalt magában. A legjelentősebb események közé tartozott a városligeti millenniumi kiállítás, amely bemutatta Magyarország fejlődését, és az ünnepre elkészült a kontinens első földalatti vasútja; ekkor kezdték építeni a Hősök terén a Millenniumi emlékművet is. A Millennium nemcsak a múlt tiszteletére, hanem a jövő építésére is ösztönzött.",
+     "type": "text",
+     "heading": "A Millennium ünnepségei",
+     "key_term": "Millennium"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-02-005",
+   "lesson_id": "48b331cf-09b2-4b0b-b9db-3ae04d95d7af",
+   "block_id": "ebdb6ab0-7ccb-4b32-a770-1c5f3d520fd6",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A dualizmus kori kulturális alkotások közé tartozik „például a Nemzeti Színház”.",
+   "explanation": "A (Pesti Magyar, majd) Nemzeti Színház 1837-ben, a reformkorban nyílt meg. Dualizmus kori példák: az Operaház (1884) és az Országház (1885–1904).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_State_Opera_House",
+     "title": "Hungarian State Opera House",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A dualizmus korában számos jelentős kulturális alkotás született Magyarországon, amelyek a nemzeti identitás erősítését szolgálták. Ilyen alkotások közé tartozik például a Nemzeti Színház, amely a magyar dráma és színházművészet központjává vált. A festészet terén is kiemelkedő művészek, mint Munkácsy Mihály és Szinyei Merse Pál alkottak, akik munkái a magyar tájat és kultúrát tükrözik. Ezek az alkotások hozzájárultak a magyar kultúra nemzetközi elismertségéhez.",
+     "type": "text",
+     "heading": "A legjelentősebb kulturális alkotások",
+     "key_term": "kulturális alkotások"
+    },
+    "after": {
+     "body": "A dualizmus korában számos jelentős kulturális alkotás született Magyarországon, amelyek a nemzeti identitás erősítését szolgálták. Ilyen alkotások közé tartozik például az 1884-ben megnyílt Operaház és a Duna-parti Országház (1885–1904). A festészet terén is kiemelkedő művészek, mint Munkácsy Mihály és Szinyei Merse Pál alkottak, akik munkái a magyar tájat és kultúrát tükrözik. Ezek az alkotások hozzájárultak a magyar kultúra nemzetközi elismertségéhez.",
+     "type": "text",
+     "heading": "A legjelentősebb kulturális alkotások",
+     "key_term": "kulturális alkotások"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-02-006",
+   "lesson_id": "48b331cf-09b2-4b0b-b9db-3ae04d95d7af",
+   "block_id": "3ab28f5e-ac27-4bfd-9cef-9e16865906ab",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A cigány zene … gyakran szolgált a magyar népzene alapjául.”",
+   "explanation": "A cigányzenekarok a korszak népszerű magyar nótáit és a verbunkost játszották; Bartók Béla kimutatta, hogy ez nem azonos a falusi magyar népzenével, és nem annak az alapja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Romani_music",
+     "title": "Romani music",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A cigányság hagyományos mesterségei, mint a zenélés és kézművesség, nemcsak kulturálisan, hanem gazdaságilag is fontos szerepet játszottak. Ezek a tevékenységek munka- és megélhetési lehetőséget biztosítottak a cigány közösségek számára, ami hozzájárult a társadalmi integrációjukhoz. A cigány zene különösen népszerűvé vált, és gyakran szolgált a magyar népzene alapjául.",
+     "type": "deep",
+     "think": "Hogyan segíthetnek a hagyományos mesterségek a közösségek integrációjában?",
+     "anchor": 4,
+     "heading": "A cigányság hagyományai és gazdasági szerepe",
+     "did_you_know": "A zene hidat képezhet különböző kultúrák között.",
+     "think_answer": "A hagyományos mesterségek munka- és megélhetési lehetőséget biztosítanak, ami segíti a közösségek társadalmi integrációját és gazdasági stabilitását."
+    },
+    "after": {
+     "body": "A cigányság hagyományos mesterségei, mint a zenélés és kézművesség, nemcsak kulturálisan, hanem gazdaságilag is fontos szerepet játszottak. Ezek a tevékenységek munka- és megélhetési lehetőséget biztosítottak a cigány közösségek számára, ami hozzájárult a társadalmi integrációjukhoz. A cigányzenekarok játszották a korszak kedvelt magyar nótáit és a verbunkost; Bartók Béla később kimutatta, hogy ez a zene nem azonos a falusi magyar népzenével.",
+     "type": "deep",
+     "think": "Hogyan segíthetnek a hagyományos mesterségek a közösségek integrációjában?",
+     "anchor": 4,
+     "heading": "A cigányság hagyományai és gazdasági szerepe",
+     "did_you_know": "A zene hidat képezhet különböző kultúrák között.",
+     "think_answer": "A hagyományos mesterségek munka- és megélhetési lehetőséget biztosítanak, ami segíti a közösségek társadalmi integrációját és gazdasági stabilitását."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-02-007",
+   "lesson_id": "48b331cf-09b2-4b0b-b9db-3ae04d95d7af",
+   "block_id": "0fb58854-3b6b-48c4-981e-d89b08ceefb3",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "options[0], explanation",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Közös ügyek: „A magyar és osztrák kormányzati ügyek”.",
+   "explanation": "Pontatlan: a közös ügyek a külügy, a hadügy és az ezek költségeit fedező pénzügy voltak; minden más kormányzati ügy külön maradt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+     "title": "Austro-Hungarian Compromise of 1867",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A magyar és osztrák kormányzati ügyek",
+      "B) A vallási ügyek",
+      "C) A nemzetiségi ügyek",
+      "D) A gazdasági ügyek"
+     ],
+     "question": "Mik a közös ügyek a dualizmus korában?",
+     "explanation": "A közös ügyek a dualizmus korában az osztrák és magyar kormányzati ügyekre vonatkoztak, amelyek a két ország közötti együttműködést szabályozták.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A külügy, a hadügy és az ezek költségeit fedező pénzügy",
+      "B) A vallási ügyek",
+      "C) A nemzetiségi ügyek",
+      "D) A gazdasági ügyek"
+     ],
+     "question": "Mik a közös ügyek a dualizmus korában?",
+     "explanation": "A kiegyezés szerint csak a külügy, a hadügy és az ezekhez szükséges pénzügy volt közös; minden más ügyben Magyarország és Ausztria önállóan döntött.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}

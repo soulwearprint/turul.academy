@@ -1,0 +1,21 @@
+{"coverage":{"read":["text","deep","world","quiz"],"lint_only":["story","visual"]},"findings": [
+{"block_id":"a90af974-c1d4-467a-9989-c3b6475a6e52","card_index":0,"field":"body","verdict":"misleading","severity":"low",
+ "claim":"„A Szovjetunióban Lenin 1917-ben vezette be a kommunista rendszert”","explanation":"1917-ben a bolsevikok Oroszországban ragadták magukhoz a hatalmat; a Szovjetunió 1922-ben jött létre.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Soviet_Union","title":"Soviet Union","accessed":"2026-09-29"}],
+ "replace":[["A Szovjetunióban Lenin 1917-ben vezette be a kommunista rendszert, amely a bolsevik forradalom eredményeként jött létre.","Oroszországban Lenin és a bolsevikok 1917-ben ragadták magukhoz a hatalmat; 1922-ben létrehozták a Szovjetuniót."]]},
+{"block_id":"e093f9a8-57a6-45ec-ac95-56e06424f8fa","card_index":0,"field":"body","verdict":"wrong","severity":"medium",
+ "claim":"Mussolini Olaszországa és Hitler Németországa „az államosításra” épült.","explanation":"A fasiszta Olaszországban és a náci Németországban a magántulajdon megmaradt; az állam irányította, de nem államosította a gazdaságot. Az általános államosítás a szovjet rendszer sajátja volt.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Economy_of_Nazi_Germany","title":"Economy of Nazi Germany","accessed":"2026-09-29"}],
+ "replace":[["amelyek a politikai ellenfelek elnyomására, a személyi kultuszra és az államosításra épültek","amelyek a politikai ellenfelek elnyomására és a személyi kultuszra épültek; ezekben azonban a magántulajdon megmaradt, az állam csak irányította a gazdaságot"]]},
+{"block_id":"3806f930-70fe-404f-8d79-f4790683fbf6","card_index":2,"field":"body","verdict":"misleading","severity":"medium",
+ "claim":"Hitler 1933 januárjában került a kormány élére, „amikor a náci párt a választások során a legnagyobb párttá vált”.","explanation":"A náci párt már 1932 júliusában a legnagyobb párt lett; Hitlert 1933. január 30-án Hindenburg elnök nevezte ki kancellárrá — nem választási győzelemmel jutott hatalomra.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Adolf_Hitler%27s_rise_to_power","title":"Adolf Hitler's rise to power","accessed":"2026-09-29"}],
+ "replace":[["Adolf Hitler 1933 januárjában került a német kormány élére, amikor a náci párt a választások során a legnagyobb párttá vált.","Adolf Hitlert 1933. január 30-án Hindenburg elnök nevezte ki kancellárrá; a náci párt 1932 nyara óta a legnagyobb párt volt a parlamentben, de többséget sosem szerzett szabad választáson."]]},
+{"block_id":"3806f930-70fe-404f-8d79-f4790683fbf6","card_index":4,"field":"body","verdict":"misleading","severity":"medium",
+ "claim":"1938 szeptemberében a Szudéta-vidéket „elfoglalták, ezzel megsértve a versailles-i békeszerződést”.","explanation":"A Szudéta-vidéket a nagyhatalmak 1938. szeptember 29-i müncheni egyezménye alapján szállták meg (október elején), Nagy-Britannia és Franciaország beleegyezésével; Csehszlovákia határait nem a versailles-i szerződés szabályozta. Az Anschluss valóban sértette a versailles-i tilalmat.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Munich_Agreement","title":"Munich Agreement","accessed":"2026-09-29"}],
+ "replace":[["Ezt követően, 1938 szeptemberében, Csehszlovákia szudétavidéki területeit is elfoglalták, ezzel megsértve a versailles-i békeszerződést.","Ez megsértette a versailles-i békeszerződést, amely megtiltotta a két ország egyesülését. Ezt követően, az 1938. szeptemberi müncheni egyezmény alapján — Nagy-Britannia és Franciaország beleegyezésével — Németország megszállta Csehszlovákia szudétavidéki területeit."]]},
+{"block_id":"6063feaa-8339-4107-8009-1cb467e1e960","card_index":1,"field":"options[2]","verdict":"language","severity":"low",
+ "claim":"C) Zeltini","explanation":"Értelmetlen, nem létező szó a válaszok között.",
+ "set":{"options[2]":"C) NEP"}}
+]}
