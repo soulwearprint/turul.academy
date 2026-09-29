@@ -47,12 +47,20 @@ export function StoryCard({ card }) {
 
 const VISUAL_ICONS = { idővonal: '📅', térkép: '🗺️', diagram: '📊', arckép: '🖼️', grafikon: '📈' }
 
+// Visual tier order (Content_Sourcing_Policy §3): licence-checked image (card.image, see
+// CardImage) or native timeline (card.timeline) → in-house SketchDiagram (card.diagram)
+// → the text-only placeholder (always available).
 export function VisualCard({ card }) {
+  const diagram = !card.image && card.diagram?.shapes?.length ? card.diagram : null
   return (
     <div className="flex flex-col gap-4 px-6 py-8">
       {card.image ? <CardImage image={card.image} />
         : card.timeline?.length ? null
-        : (
+        : diagram ? (
+          <div className="bg-slate-50 border border-slate-200 rounded-2xl px-3 py-4">
+            <SketchDiagram sketch={diagram} className="text-slate-700" label={card.heading} />
+          </div>
+        ) : (
           <div className="bg-slate-100 rounded-2xl flex flex-col items-center justify-center gap-2 py-10">
             <span className="text-5xl">{VISUAL_ICONS[card.visual_type] ?? '🖼️'}</span>
             <span className="text-slate-500 text-sm font-medium">{card.visual_type}</span>

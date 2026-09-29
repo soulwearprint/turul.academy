@@ -1,0 +1,436 @@
+{
+ "nat_id": "PHYS-78-03",
+ "note": "In-house generated diagrams (SketchDiagram shape vocabulary). Physics content checked by author; a human reviewer must confirm before is_active content goes public.",
+ "items": [
+  {
+   "tema": "Mozgások megfigyelése és csoportosítása",
+   "match": [
+    "pálya",
+    "csoportos"
+   ],
+   "title": "Egyenes és ívelt pályájú mozgás",
+   "alt": "Két pálya: felül egyenes vonal nyíllal, alul ívelt (hullámos) vonal nyíllal.",
+   "diagram": {
+    "viewBox": "0 0 400 300",
+    "shapes": [
+     {
+      "type": "label",
+      "x": 20,
+      "y": 40,
+      "text": "egyenes pályájú mozgás"
+     },
+     {
+      "type": "dot",
+      "x": 40,
+      "y": 80
+     },
+     {
+      "type": "line",
+      "x1": 40,
+      "y1": 80,
+      "x2": 340,
+      "y2": 80,
+      "dashed": false
+     },
+     {
+      "type": "arrow",
+      "x1": 300,
+      "y1": 80,
+      "x2": 360,
+      "y2": 80
+     },
+     {
+      "type": "label",
+      "x": 40,
+      "y": 110,
+      "text": "kezdet"
+     },
+     {
+      "type": "label",
+      "x": 20,
+      "y": 170,
+      "text": "ívelt pályájú mozgás"
+     },
+     {
+      "type": "dot",
+      "x": 40,
+      "y": 230
+     },
+     {
+      "type": "wave",
+      "x1": 40,
+      "y1": 230,
+      "x2": 340,
+      "y2": 230,
+      "cycles": 3,
+      "amplitude": 22
+     },
+     {
+      "type": "arrow",
+      "x1": 330,
+      "y1": 230,
+      "x2": 365,
+      "y2": 230
+     },
+     {
+      "type": "label",
+      "x": 40,
+      "y": 275,
+      "text": "kezdet"
+     }
+    ]
+   }
+  },
+  {
+   "tema": "Mozgások megfigyelése és csoportosítása",
+   "match": [
+    "elmozdulás",
+    "út és"
+   ],
+   "title": "Út és elmozdulás",
+   "alt": "A kezdőpontból a végpontba kanyargós, szaggatott út vezet; a két pontot egyenes nyíl köti össze, ez az elmozdulás.",
+   "diagram": {
+    "viewBox": "0 0 400 300",
+    "shapes": [
+     {
+      "type": "dot",
+      "x": 50,
+      "y": 230
+     },
+     {
+      "type": "label",
+      "x": 30,
+      "y": 262,
+      "text": "kezdőpont"
+     },
+     {
+      "type": "dot",
+      "x": 350,
+      "y": 70
+     },
+     {
+      "type": "label",
+      "x": 300,
+      "y": 50,
+      "text": "végpont"
+     },
+     {
+      "type": "line",
+      "x1": 50,
+      "y1": 230,
+      "x2": 120,
+      "y2": 120,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 120,
+      "y1": 120,
+      "x2": 220,
+      "y2": 250,
+      "dashed": true
+     },
+     {
+      "type": "line",
+      "x1": 220,
+      "y1": 250,
+      "x2": 350,
+      "y2": 70,
+      "dashed": true
+     },
+     {
+      "type": "label",
+      "x": 20,
+      "y": 28,
+      "text": "szaggatott vonal = út (a megtett pálya)"
+     },
+     {
+      "type": "arrow",
+      "x1": 50,
+      "y1": 230,
+      "x2": 350,
+      "y2": 70
+     },
+     {
+      "type": "label",
+      "x": 20,
+      "y": 52,
+      "text": "egyenes nyíl = elmozdulás"
+     }
+    ]
+   }
+  },
+  {
+   "tema": "Mozgások megfigyelése és csoportosítása",
+   "match": [
+    "sebesség"
+   ],
+   "title": "Sebesség: nagyság és irány",
+   "alt": "Két autó egyforma sebességnagysággal, de ellentétes irányban: a sebesség vektormennyiség.",
+   "diagram": {
+    "viewBox": "0 0 400 300",
+    "shapes": [
+     {
+      "type": "line",
+      "x1": 20,
+      "y1": 150,
+      "x2": 380,
+      "y2": 150,
+      "dashed": false
+     },
+     {
+      "type": "box",
+      "x": 60,
+      "y": 100,
+      "w": 90,
+      "h": 40
+     },
+     {
+      "type": "arrow",
+      "x1": 160,
+      "y1": 120,
+      "x2": 250,
+      "y2": 120
+     },
+     {
+      "type": "label",
+      "x": 60,
+      "y": 80,
+      "text": "v = 10 m/s →"
+     },
+     {
+      "type": "box",
+      "x": 250,
+      "y": 170,
+      "w": 90,
+      "h": 40
+     },
+     {
+      "type": "arrow",
+      "x1": 240,
+      "y1": 190,
+      "x2": 150,
+      "y2": 190
+     },
+     {
+      "type": "label",
+      "x": 230,
+      "y": 240,
+      "text": "← v = 10 m/s"
+     },
+     {
+      "type": "label",
+      "x": 20,
+      "y": 285,
+      "text": "Ugyanakkora sebességnagyság, más irány = más sebesség."
+     }
+    ]
+   }
+  },
+  {
+   "tema": "Út és idő kiszámítása",
+   "match": [
+    "út",
+    "idő",
+    "átlagsebesség"
+   ],
+   "title": "Út, idő és sebesség",
+   "alt": "Egy autó 100 méteres úton halad 20 másodpercig; az átlagsebesség 5 m/s.",
+   "diagram": {
+    "viewBox": "0 0 400 300",
+    "shapes": [
+     {
+      "type": "line",
+      "x1": 30,
+      "y1": 170,
+      "x2": 370,
+      "y2": 170,
+      "dashed": false
+     },
+     {
+      "type": "box",
+      "x": 50,
+      "y": 125,
+      "w": 70,
+      "h": 35
+     },
+     {
+      "type": "circle",
+      "x": 70,
+      "y": 168,
+      "r": 6
+     },
+     {
+      "type": "circle",
+      "x": 105,
+      "y": 168,
+      "r": 6
+     },
+     {
+      "type": "line",
+      "x1": 50,
+      "y1": 200,
+      "x2": 370,
+      "y2": 200,
+      "dashed": false
+     },
+     {
+      "type": "line",
+      "x1": 50,
+      "y1": 192,
+      "x2": 50,
+      "y2": 208,
+      "dashed": false
+     },
+     {
+      "type": "line",
+      "x1": 370,
+      "y1": 192,
+      "x2": 370,
+      "y2": 208,
+      "dashed": false
+     },
+     {
+      "type": "label",
+      "x": 150,
+      "y": 225,
+      "text": "s = 100 m"
+     },
+     {
+      "type": "label",
+      "x": 150,
+      "y": 60,
+      "text": "t = 20 s"
+     },
+     {
+      "type": "label",
+      "x": 80,
+      "y": 265,
+      "text": "v = s / t = 100 m / 20 s = 5 m/s"
+     }
+    ]
+   }
+  },
+  {
+   "tema": "Erők és gyorsulás vizsgálata",
+   "match": [
+    "gyorsul",
+    "nehézségi",
+    "erő"
+   ],
+   "title": "Szabadon eső test",
+   "alt": "Egy test lefelé mutató nyíllal jelölt nehézségi erővel esik; a gyorsulás kb. 9,8 m/s².",
+   "diagram": {
+    "viewBox": "0 0 400 300",
+    "shapes": [
+     {
+      "type": "circle",
+      "x": 200,
+      "y": 70,
+      "r": 18
+     },
+     {
+      "type": "arrow",
+      "x1": 200,
+      "y1": 90,
+      "x2": 200,
+      "y2": 190
+     },
+     {
+      "type": "label",
+      "x": 215,
+      "y": 150,
+      "text": "F = m·g (nehézségi erő)"
+     },
+     {
+      "type": "line",
+      "x1": 60,
+      "y1": 250,
+      "x2": 340,
+      "y2": 250,
+      "dashed": false
+     },
+     {
+      "type": "label",
+      "x": 120,
+      "y": 285,
+      "text": "g ≈ 9,8 m/s² (Földön, kb.)"
+     },
+     {
+      "type": "label",
+      "x": 20,
+      "y": 40,
+      "text": "minden szabadon eső test egyformán gyorsul (légellenállás nélkül)"
+     }
+    ]
+   }
+  },
+  {
+   "tema": "Erők és gyorsulás vizsgálata",
+   "match": [
+    "súrlód",
+    "fékez"
+   ],
+   "title": "Fékező autó: a súrlódási erő",
+   "alt": "Jobbra haladó autó; a súrlódási erő balra, a mozgással ellentétesen mutat, ezért az autó lassul.",
+   "diagram": {
+    "viewBox": "0 0 400 300",
+    "shapes": [
+     {
+      "type": "line",
+      "x1": 20,
+      "y1": 190,
+      "x2": 380,
+      "y2": 190,
+      "dashed": false
+     },
+     {
+      "type": "box",
+      "x": 130,
+      "y": 140,
+      "w": 120,
+      "h": 40
+     },
+     {
+      "type": "circle",
+      "x": 160,
+      "y": 186,
+      "r": 7
+     },
+     {
+      "type": "circle",
+      "x": 225,
+      "y": 186,
+      "r": 7
+     },
+     {
+      "type": "arrow",
+      "x1": 260,
+      "y1": 160,
+      "x2": 350,
+      "y2": 160
+     },
+     {
+      "type": "label",
+      "x": 270,
+      "y": 140,
+      "text": "mozgás iránya"
+     },
+     {
+      "type": "arrow",
+      "x1": 130,
+      "y1": 215,
+      "x2": 50,
+      "y2": 215
+     },
+     {
+      "type": "label",
+      "x": 40,
+      "y": 240,
+      "text": "súrlódási erő (fékez)"
+     }
+    ]
+   }
+  }
+ ]
+}
