@@ -1,0 +1,602 @@
+{
+ "nat_id": "HIST-910-11",
+ "topic_id": "cdd471a4-8741-4e71-a771-ec49040fc46a",
+ "title_hu": "Az új eszmék és az iparosodás kora",
+ "grade": 10,
+ "lessons": [
+  {
+   "lesson_id": "d1efafb5-f9f7-4cfe-92cf-e6412b85d2ee",
+   "title_hu": "Liberalizmus, nacionalizmus és konzervativizmus",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "1789b762-37c5-435d-97fc-90a7c65094c8",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A liberalizmus a 19. század elején jelent meg Magyarországon, mint a polgári átalakulás eszméje. Alapvető célja a jogegyenlőség és az alkotmányosság megteremtése volt. A reformkorban, különösen Kossuth Lajos és Széchenyi István munkásságán keresztül, a liberalizmus eszméi teret nyertek. A polgári jogok és a szabad választások iránti igény megfogalmazása alapvetően formálta a magyar társadalmat. A liberalizmus elősegítette a modern állam kialakulását Magyarországon, amely fontos lépés volt a demokratikus berendezkedés felé.",
+       "type": "text",
+       "heading": "Liberalizmus: jogegyenlőség és alkotmányosság",
+       "key_term": "liberalizmus"
+      },
+      {
+       "body": "A nacionalizmus a 19. században vált meghatározó ideológiává Magyarországon, különösen a reformkor alatt. Célja a nemzeti identitás megerősítése és a nemzetállam megteremtése volt. A magyar nyelv, kultúra és hagyományok védelme és népszerűsítése középpontba került. A nacionalizmus eszméje hozzájárult a Habsburg Birodalommal szembeni függetlenségi törekvésekhez. A nemzetállam megteremtése egy új politikai és társadalmi rend kialakulását is magával hozta, amely a magyar történelem szempontjából kiemelkedően fontos.",
+       "type": "text",
+       "heading": "Nacionalizmus: nemzetépítés és nemzetállam",
+       "key_term": "nacionalizmus"
+      },
+      {
+       "body": "A konzervativizmus a 19. század közepén jelent meg Magyarországon, mint válasz a liberalizmus és nacionalizmus kihívásaira. A konzervatív politikai gondolkodás a hagyományok megőrzésére és a fokozatos reformokra helyezte a hangsúlyt. A forradalmak elutasítása és a stabilitás fenntartása volt a célja, amelyet a Habsburgokkal való együttműködés is tükrözött. A konzervativizmus képviselői, mint például Apponyi Albert, a társadalmi rend és a monarchia megőrzésére törekedtek. Ez a megközelítés fontos szerepet játszott a politikai diskurzusban és a reformkor eseményeiben.",
+       "type": "text",
+       "heading": "Konzervativizmus: szerves reform és a forradalom elutasítása",
+       "key_term": "konzervativizmus"
+      },
+      {
+       "body": "A reform a 19. századi Magyarországon a társadalmi és politikai változásokra utal, amelyek célja a modernizáció volt. A reformkorban a polgári jogok kiterjesztése, az oktatás fejlesztése és a gazdasági reformok kerültek előtérbe. A reformmozgalmak, mint például a Kossuth-féle reformok, a magyar nemzeti öntudat növelését is szolgálták. A reformfolyamatok hozzájárultak a nemzetállam kialakulásához és a demokratikus intézmények megteremtéséhez. A reformok jelentős hatással voltak a magyar társadalom jövőjére, és alapot adtak a későbbi politikai fejlődésnek.",
+       "type": "text",
+       "heading": "A reform fogalma és jelentősége",
+       "key_term": "reform"
+      }
+     ]
+    },
+    {
+     "block_id": "d69d014b-7c20-4704-85d6-ff1f5f06cae2",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A falusi közösségben a földművelés jelentette a megélhetést. A parasztok reggelente korán keltek, hogy megműveljék a földjeiket. A liberalizmus eszméje a jogegyenlőséget hirdette, így egyre több földműves kezdett követelni a földekhez való jogot. A középkori szokások és a földesurak hatalma mellett a közvetlenül a földeken dolgozók számára a reformok reményt adtak a jobb életkörülményekre. A nemzetállam eszméje pedig arra ösztönözte őket, hogy összefogjanak közös érdekeikért.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A mezőgazdaság mindennapjai"
+      },
+      {
+       "body": "A családok számára a mindennapi élet középpontjában a közös étkezések álltak. Az ünnepek során a hagyományos ételek készítése és a közös ünneplés megerősítette a családi kötelékeket. A nacionalizmus eszméje által inspirálva sokan a nemzeti identitásukat is ünnepelték, ezzel erősítve a közösségi érzést. A családtagok közötti szoros kapcsolatok a nehéz időkben is támaszt nyújtottak, hiszen a konzervativizmus szellemében a hagyományok és a szokások átörökítése fontos volt.",
+       "mood": "család",
+       "type": "story",
+       "heading": "A család és az otthon"
+      },
+      {
+       "body": "A falvakban a helyi közösségek döntései és a hivatalos ügyintézés a mindennapi élet szerves részét képezték. Az emberek gyakran gyűltek össze a falu főterén, hogy megvitassák a közös ügyeiket. A reformok hatására a hivatalok működése átláthatóbbá vált, a közéletben való részvétel pedig egyre fontosabbá vált. A konzervativizmus elutasította a hirtelen változásokat, így a helyi közösségek a fokozatos fejlődésre és a hagyományok megőrzésére törekedtek.",
+       "mood": "hatalom",
+       "type": "story",
+       "heading": "A helyi közösség és a hivatalok"
+      },
+      {
+       "body": "A vallás a falusi emberek életében központi szerepet játszott. Az ünnepek során a közösségek összegyűltek, hogy megünnepeljék a hagyományos vallási szertartásokat. A nacionalizmus eszméje hatással volt a vallási ünnepek tartalmára is, hiszen sokan a nemzeti identitásukat a vallásukon keresztül is kifejezték. A közös hit és a hagyományos szokások erősítették a közösségi összetartást, amely a nehéz időszakokban is támaszként szolgált.",
+       "mood": "hit",
+       "type": "story",
+       "heading": "A hit és az ünnepek"
+      },
+      {
+       "body": "A gyermekek nevelése a családokban és a falusi iskolákban zajlott. A liberalizmus eszméje a jogegyenlőséget hirdette, így a gyerekek közötti egyenlő oktatás iránti igény is növekedett. Az iskolákban a hagyományos tantárgyak mellett a nemzeti kultúra és nyelv tanítása is hangsúlyt kapott, a nacionalizmus eszméje jegyében. A gyerekek számára a tanulás lehetőséget adott arra, hogy a jövőjük biztosabb legyen, és hogy hozzájáruljanak a közösség fejlődéséhez.",
+       "mood": "nevelés",
+       "type": "story",
+       "heading": "A gyermekek és az iskola"
+      }
+     ]
+    },
+    {
+     "block_id": "faf3b4d2-a887-4c6c-bbc6-4b22893a0376",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A liberalizmus alapelvei és hatásai Magyarországon",
+       "heading": "Liberalizmus: jogegyenlőség és alkotmányosság",
+       "description": "A liberalizmus alapelvei: jogegyenlőség, szabadságjogok, parlamentáris kormányzás. A diagram bemutatja a liberalizmus főbb jellemzőit és fontosabb eseményeit, mint például az 1848-as forradalom.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A nemzetállam kialakulása Magyarországon",
+       "heading": "Nacionalizmus: nemzetépítés és nemzetállam",
+       "description": "A térkép bemutatja a 19. századi Magyarország területét, valamint a nemzetállam kialakulásának folyamatát, a nemzeti mozgalmak központjait, például Kossuth Lajos és Széchenyi István szerepét.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A konzervativizmus fejlődése Magyarországon",
+       "heading": "Konzervativizmus: szerves reform és a forradalom elutasítása",
+       "description": "Az idővonal bemutatja a konzervatív eszmék fejlődését Magyarországon, kiemelve a fontosabb politikai eseményeket, mint a kiegyezés 1867-ben, amely a konzervatív politikai irányvonal győzelmét jelzi.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A liberalizmus és a nacionalizmus kölcsönhatása",
+       "heading": "Liberalizmus és nacionalizmus kapcsolata",
+       "description": "Ez a diagram a liberalizmus és a nacionalizmus közötti kölcsönhatásokat mutatja be, különös figyelmet fordítva arra, hogyan hatottak egymásra a 19. században.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A reformok hatása a magyar társadalomra",
+       "heading": "A reformok hatása a magyar társadalomra",
+       "description": "A diagram szemlélteti a reformok hatását a magyar társadalomra, kiemelve a gazdasági, politikai és társadalmi változásokat az 1848-as forradalom után.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Kossuth Lajos és Széchenyi István: a liberális és a nacionalista mozgalmak vezetői",
+       "heading": "Kossuth Lajos és Széchenyi István",
+       "description": "Kossuth Lajos és Széchenyi István arcképei, akik a liberalizmus és a nacionalizmus kiemelkedő alakjai voltak. Az arcképek alatt rövid életrajzuk és politikai szerepük bemutatása.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "A forradalom és a konzervativizmus konfliktusa",
+       "heading": "A forradalom és a konzervativizmus konfliktusa",
+       "description": "A diagram bemutatja a forradalom és a konzervativizmus közötti konfliktust, kiemelve a fontosabb eseményeket és politikai irányvonalakat.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "ebfc010e-33ed-4c78-92a4-c1ee00266612",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": []
+    },
+    {
+     "block_id": "76bd680e-dc85-4460-98d0-0878bbccd201",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Jogegyenlőség és alkotmányosság",
+        "B) A hagyományok megőrzése",
+        "C) A forradalom elősegítése",
+        "D) A nemzetállam létrehozása"
+       ],
+       "question": "Mi a liberalizmus fő célja?",
+       "explanation": "A liberalizmus a jogegyenlőség és az alkotmányos keretek megteremtésére törekszik, amely biztosítja a polgári szabadságjogokat.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) A 18. század végén",
+        "B) A 19. század elején",
+        "C) A 20. század közepén",
+        "D) A 21. század elején"
+       ],
+       "question": "Mikor kezdődött a nacionalizmus jelentősége Magyarországon?",
+       "explanation": "A nacionalizmus a 19. század elején kezdett elterjedni Magyarországon, főként a reformkor idején, amikor a nemzetépítés eszméje népszerűvé vált.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A nemzeti identitás és a politikai hatalom egysége",
+        "B) A többnemzetiségű államok kialakulása",
+        "C) A gazdasági központok decentralizálása",
+        "D) A forradalmi mozgalmak támogatása"
+       ],
+       "question": "Mi jellemzi a nemzetállamot?",
+       "explanation": "A nemzetállam a nemzeti identitás és a politikai hatalom egységét jelenti, amely a 19. században vált meghatározóvá Európában.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Szerves reform és a forradalom elutasítása",
+        "B) Az egyéni szabadságjogok maximális kiterjesztése",
+        "C) A társadalmi egyenlőség előmozdítása",
+        "D) A nemzeti érdekek háttérbe szorítása"
+       ],
+       "question": "Milyen elveket képvisel a konzervativizmus?",
+       "explanation": "A konzervativizmus a szerves reformok mellett áll ki, elutasítva a forradalmi megoldásokat, amelyek destabilizálhatják a társadalmat.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) A társadalmi rend radikális megváltoztatása",
+        "B) A meglévő rendszerek fokozatos átalakítása",
+        "C) A forradalmi intézkedések bevezetése",
+        "D) A hagyományos értékek teljes elvetése"
+       ],
+       "question": "Mi a reform fogalma a politikai kontextusban?",
+       "explanation": "A reform a meglévő politikai és társadalmi rendszerek fokozatos átalakítását jelenti, célja a hatékonyság és a jogegyenlőség növelése.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "bc59d657-da93-405a-8b8f-1c72f7cf8e68",
+   "title_hu": "Az ipari forradalom hullámai",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "0ab93984-bc86-434a-8d2b-8b817a35775f",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az ipari forradalom a 18. század végén kezdődött Angliában, és fokozatosan elérte Európa más részeit, valamint Észak-Amerikát. A forradalom során a kézműves termelés helyét a gépesített tömegtermelés vette át. Ez a változás alapvetően átalakította a gazdaságot és a társadalmat. Magyarországon az ipari forradalom a 19. század közepén indult meg, jelentős hatással volt a mezőgazdaságra és a városiasodásra.",
+       "type": "text",
+       "heading": "Az ipari forradalom kezdete",
+       "key_term": "ipari forradalom"
+      },
+      {
+       "body": "Az ipari forradalom első hullámában a textilipar, a bányászat és a kohászat játszott kulcsszerepet. Az új gépek, mint például a fonógép, lehetővé tették a gyorsabb és olcsóbb termelést. A bányászat fejlődése a szén és az érc kitermelésére összpontosított, ami elengedhetetlen volt az ipari gépek működéséhez. Magyarországon a bányászat különösen a 19. században vált jelentőssé, mivel a nyersanyagok biztosították az ipari fejlődést.",
+       "type": "text",
+       "heading": "Az első hullám: textilipar és bányászat",
+       "key_term": "textilipar, bányászat"
+      },
+      {
+       "body": "A közlekedés forradalma szorosan összefonódott az ipari forradalommal, hiszen a gyorsabb áruszállítás elengedhetetlen volt a növekvő ipar számára. A vasutak és a gőzhajók megjelenése forradalmasította a kereskedelmet és a közlekedést. Manchester, mint ipari központ, fontos szerepet játszott a vasúti hálózat kiépítésében. A közlekedés fejlődése hozzájárult a gazdaság fellendüléséhez és a munkanélküliség csökkentéséhez.",
+       "type": "text",
+       "heading": "A közlekedés forradalma",
+       "key_term": "közlekedés forradalma, munkanélküliség"
+      },
+      {
+       "body": "A második ipari forradalom a 19. század végén és a 20. század elején zajlott, és az elektronika és a vegyipar fejlődésével volt jellemezhető. Thomas Edison feltalálta az elektromos izzót, amely forradalmasította a világítást és az ipari termelést. A vegyipar fejlődése új anyagok és termékek előállítását tette lehetővé, mint például a műanyagok. Magyarországon is megjelentek az elektronikai gyárak, amelyek új munkahelyeket teremtettek.",
+       "type": "text",
+       "heading": "A második hullám: elektronika és vegyipar",
+       "key_term": "második hullám, elektronika, vegyipar"
+      },
+      {
+       "body": "Henry Ford bevezette a futószalagos gyártást a 20. század elején, amely radikálisan megváltoztatta a termelési folyamatokat. A futószalag lehetővé tette a tömegtermelést, ami jelentősen csökkentette a termelési költségeket. Ford módszereit a világ számos ipari vállalata átvette, így a gyártás hatékonysága drámaian megnőtt. Magyarországon is megjelentek a futószalagos rendszerek, amelyek hozzájárultak az ipari termelés fellendüléséhez.",
+       "type": "text",
+       "heading": "A gyár és a futószalag",
+       "key_term": "gyár, futószalag, tömegtermelés"
+      },
+      {
+       "body": "Az ipari forradalom társadalmi hatásai közé tartozik a szegregáció és a munkanélküliség növekedése. A gyors iparosodás következtében sokan elveszítették hagyományos munkahelyeiket, míg mások új lehetőségekhez jutottak a gyárakban. A környezeti hatások, mint a légszennyezés és a vízszennyezés, szintén jelentős problémát jelentettek. Magyarországon a városok gyors fejlődése és a környezeti kihívások egyaránt tapasztalhatóak voltak az ipari forradalom során.",
+       "type": "text",
+       "heading": "Az ipari forradalmak társadalmi és környezeti hatásai",
+       "key_term": "szegregáció, munkanélküliség"
+      }
+     ]
+    },
+    {
+     "block_id": "48b9b0c1-e6a4-4bfd-95b1-af517e86e542",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A gyári munkások napjai hosszúak és fárasztóak voltak. Reggel korán keltek, hogy elérjék a gyárat, ahol a gépek zaja és a fémek csattogása fogadta őket. A textiliparban dolgozók, akik a gépeket üzemeltették, gyakran szenvedtek a zajtól és a poros környezettől. A munkanélküliség folyamatosan fenyegette őket, hiszen a gyárakban a munkások cserélődése gyakori volt. A fizetés alacsony volt, de a megélhetés érdekében elviselték a nehéz körülményeket. Az ipari forradalom következtében a munkaerőpiac átalakult, és sokan váltak gyári munkássá, hogy biztosítsák családjuk számára a mindennapi betevőt.",
+       "mood": "munka",
+       "type": "story",
+       "heading": "A gyári munka mindennapjai"
+      },
+      {
+       "body": "A gyári munkások családjában a nők szerepe is megváltozott. Míg korábban főként a háztartásban dolgoztak, most sok nő is a gyárakban kereste a kenyerét. A gyermekek is csatlakoztak a munkához, hogy hozzájáruljanak a család bevételéhez. Az otthonok zsúfoltak voltak, hiszen sokan kis lakásokban éltek a városokban. A táplálkozás gyakran egyszerű és tápláló ételekből állt, de a szegénység miatt sokszor nem volt elegendő. Az ünnepek azonban örömet hoztak a családok életébe, amikor együtt ünnepeltek, és próbálták feledni a mindennapi nehézségeket.",
+       "mood": "család",
+       "type": "story",
+       "heading": "Családi élet a változások közepette"
+      },
+      {
+       "body": "A közlekedés forradalma új lehetőségeket teremtett a mindennapi életben. A vasút megjelenése lehetővé tette, hogy az emberek gyorsabban és kényelmesebben utazzanak. A falusiak is könnyebben eljuthattak a városokba, ahol munkát kereshettek, vagy éppen a gyárakban dolgozhattak. Az ipari forradalom során Manchester városa a textilipar központjává vált, és a vasútvonalak segítségével a termékek gyorsabban eljutottak a piacokra. A közlekedés fejlődése nemcsak a gazdaságot, hanem a társadalmi kapcsolatokat is átalakította, hiszen az emberek könnyebben látogathatták meg egymást.",
+       "mood": "közlekedés",
+       "type": "story",
+       "heading": "A közlekedés forradalma"
+      },
+      {
+       "body": "A gyermekek élete az ipari forradalom idején sokszor nehéz volt. Sok kisgyermek már fiatalon munkába állt, hogy segítse a családját. Az iskolához való hozzáférés korlátozott volt, és sokan nem tudtak olvasni vagy írni. A nevelés a családokban zajlott, ahol a szülők próbálták átadni a tudást a gyerekeiknek. Az ünnepek és a hagyományok fontos szerepet játszottak az életükben, hiszen ezek adtak nekik erőt a mindennapi küzdelmekhez. A gyárakban tapasztalt körülmények ellenére a gyermekeknek megvolt a maguk játékideje, ahol barátaikkal játszhattak az utcákon.",
+       "mood": "gyermekek",
+       "type": "story",
+       "heading": "A gyermekek élete és nevelése"
+      },
+      {
+       "body": "A városi életben a betegségek gyorsan terjedtek, különösen a zsúfolt lakásokban. A környezeti feltételek és a higiénia hiánya hozzájárult a járványok megjelenéséhez. Az emberek gyakran nem tudtak hozzáférni az orvosi ellátáshoz, így a házi gyógymódokhoz folyamodtak. A közösségek összefogtak, hogy segítsenek egymásnak a betegség idején, és a hagyományos gyógyító módszereket alkalmazták. A hit és a vallás is fontos szerepet játszott a gyógyulásban, hiszen sokan imádkoztak a gyógyulásért, remélve, hogy a nehéz időszakok után újra egészségesek lesznek.",
+       "mood": "betegség",
+       "type": "story",
+       "heading": "Betegségek és gyógyítás"
+      }
+     ]
+    },
+    {
+     "block_id": "3d8c55ca-b7ee-47c4-83fe-8ea5c63879f9",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az ipari forradalom kezdete és főbb találmányai",
+       "heading": "Az ipari forradalom kezdete",
+       "description": "Az ipari forradalom első hulláma 1760 körül indult Angliában, különösen a textiliparban. Az idővonalon feltüntetjük a fontosabb eseményeket és találmányokat, mint például a fonógép (James Hargreaves, 1764) és a gőzgép (James Watt, 1769).",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A bányászat és kohászat fejlődése az ipari forradalom alatt",
+       "heading": "A bányászat és kohászat fejlődése",
+       "description": "A diagram bemutatja a bányászat és kohászat növekedését az ipari forradalom alatt, kiemelve a főbb nyersanyagokat, mint a szén és a vas, valamint a legfontosabb helyszíneket, például Manchester és a környező bányák.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A közlekedés forradalma: vasútvonalak Angliában",
+       "heading": "A közlekedés forradalma",
+       "description": "A térkép ábrázolja a vasútvonalak kiépülését Angliában, különösen Manchester és Liverpool között, amely 1830-ban indult. A közlekedési forradalom lehetővé tette az áruk gyorsabb szállítását.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A második ipari forradalom főbb eseményei",
+       "heading": "A második ipari forradalom",
+       "description": "Az idővonal bemutatja a második ipari forradalom eseményeit 1870 és 1914 között, kiemelve az elektronika és a vegyipar fejlődését, valamint Thomas Edison és Henry Ford szerepét.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A gyár és a futószalag működése",
+       "heading": "A gyár és a futószalag",
+       "description": "A diagram bemutatja a futószalagos gyártás folyamatát, amely Henry Ford nevéhez fűződik. Az 1913-as modell bemutatja, hogyan csökkent a gyártási idő és nőtt a termelési mennyiség.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az ipari forradalom társadalmi hatásai",
+       "heading": "Társadalmi hatások",
+       "description": "A diagram bemutatja az ipari forradalom társadalmi hatásait, beleértve a munkanélküliséget, a szegregációt és a városi migrációt. A diagram különböző társadalmi rétegeket is ábrázol.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A környezetvédelmi hatások az ipari forradalom alatt",
+       "heading": "Környezetvédelmi hatások",
+       "description": "A térkép bemutatja a legnagyobb ipari városokat, mint Manchester és New York, és a kapcsolódó környezeti problémákat, például a levegőszennyezést és a vízszennyezést.",
+       "visual_type": "térkép"
+      }
+     ]
+    },
+    {
+     "block_id": "1bb6bc9f-6a4f-440f-9e8d-7068934dd0b7",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "James Watt 1769-ben szabadalmaztatta a gőzgépét, amely jelentősen növelte a gépek hatékonyságát és elterjedését az iparban. Ez a találmány alapvetően hozzájárult az ipari forradalom kibontakozásához, különösen a textiliparban és a bányászatban, mivel lehetővé tette a gépek nagyobb teljesítményű és folyamatos működését. A gőzgép elterjedése új ipari központok, például Manchester fejlődéséhez vezetett, ahol a textilipar virágzott.",
+       "type": "world",
+       "year": "1769",
+       "heading": "James Watt gőzgépének szabadalma",
+       "link_hu": "A gőzgép elterjedése lehetővé tette a magyar ipar fejlődését, különösen a 19. században, amikor a magyarországi gyárak is elkezdtek gépesített termelést alkalmazni."
+      },
+      {
+       "body": "1825-ben nyílt meg az első vasúti vonal Angliában, amely Stockton és Darlington között közlekedett. A vasútforgalom forradalmasította a közlekedést, lehetővé téve az áruk és emberek gyorsabb szállítását. Ez nemcsak az ipari termelés hatékonyságát növelte, hanem új gazdasági kapcsolatok kialakulásához is vezetett, amelyek globálisan is éreztették hatásukat.",
+       "type": "world",
+       "year": "1825",
+       "heading": "Az első vasúti vonal megnyitása",
+       "link_hu": "A vasút megjelenése Magyarországon is hozzájárult az iparosodás gyorsulásához, mivel a vasúti közlekedés lehetővé tette a termékek gyorsabb eljuttatását a piacokra."
+      },
+      {
+       "body": "Thomas Edison 1879-ben szabadalmaztatta az első gyakorlati elektromos izzót, amely forradalmasította a világítást és az energiaszolgáltatást. Az elektromos áram elterjedése új iparágakat teremtett, és hozzájárult a városok modernizációjához, valamint a gyárak működésének hatékonyságának növeléséhez.",
+       "type": "world",
+       "year": "1879",
+       "heading": "Thomas Edison első elektromos izzója",
+       "link_hu": "Edison találmánya a magyar iparban is megjelent, hiszen a 20. század elején a gyárak egyre inkább az elektromos áramot használták a termelés során."
+      },
+      {
+       "body": "Henry Ford 1913-ban vezette be a futószalagot a gépkocsigyártásban, amely lehetővé tette a tömegtermelés hatékonyabbá tételét. Ez a módszer nemcsak a gépjárműiparban, hanem más iparágakban is elterjedt, jelentősen csökkentve a termelési költségeket és növelve a termelési sebességet.",
+       "type": "world",
+       "year": "1913",
+       "heading": "Henry Ford bevezeti a futószalagot",
+       "link_hu": "A futószalag bevezetése a magyar iparban is megjelent, különösen a 20. század közepén, amikor a tömegtermelés elveit alkalmazták a különböző gyártási folyamatokban."
+      }
+     ]
+    },
+    {
+     "block_id": "1dae9e45-5516-4f02-95a6-2a70b89038c9",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) James Watt",
+        "B) Thomas Edison",
+        "C) Henry Ford",
+        "D) Nikola Tesla"
+       ],
+       "question": "Ki volt az a feltaláló, aki a gőzgép fejlesztésével hozzájárult az ipari forradalom első hullámához?",
+       "explanation": "James Watt a gőzgép tökéletesítésével forradalmasította az ipari termelést, amely az ipari forradalom egyik alappillére volt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) London",
+        "B) Manchester",
+        "C) Liverpool",
+        "D) Birmingham"
+       ],
+       "question": "Melyik város volt az ipari forradalom központja az Egyesült Királyságban, különösen a textilipar terén?",
+       "explanation": "Manchester városa az ipari forradalom idején a textilipar központjaként vált ismertté, ahol a gyárak tömegtermelést folytattak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Gőzgép",
+        "B) Villanykörte",
+        "C) Autó",
+        "D) Telefon"
+       ],
+       "question": "Melyik találmány kapcsolódik Thomas Edisonhoz?",
+       "explanation": "Thomas Edison a villanykörte feltalálója, amely forradalmasította a világítást és hozzájárult az ipari forradalom második hullámához.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Szegregáció",
+        "B) Integráció",
+        "C) Mobilizáció",
+        "D) Kooperáció"
+       ],
+       "question": "Milyen társadalmi jelenség következett be az ipari forradalom idején, amely a munkások és a gazdagok közötti különbségeket hangsúlyozta?",
+       "explanation": "A szegregáció a munkások és a gazdagok közötti ellentétek felerősödését jelenti, amely az ipari forradalom következtében alakult ki.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Chicago",
+        "B) New York",
+        "C) Detroit",
+        "D) Philadelphia"
+       ],
+       "question": "Melyik amerikai város vált híressé az ipari forradalom idején a gyártás és a tömegtermelés területén?",
+       "explanation": "Detroit városa Henry Ford autógyára miatt vált híressé, amely a tömegtermelés úttörője volt, és jelentős hatással volt az ipari fejlődésre.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "cad7314a-90c9-419a-8594-12a196e6acb7",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Liberalizmus",
+      "B) Konzervativizmus",
+      "C) Nacionalizmus",
+      "D) Reform"
+     ],
+     "question": "Melyik fogalom jelenti a szabad versenyt és a magántulajdon védelmét?",
+     "explanation": "A liberalizmus az egyéni szabadságjogok és a piacgazdaság elveit hirdeti.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Thomas Edison",
+      "B) James Watt",
+      "C) Henry Ford",
+      "D) Nikola Tesla"
+     ],
+     "question": "Melyik személy fémjelzi a gőzgép fejlesztését?",
+     "explanation": "James Watt a gőzgép fejlesztésével járult hozzá az ipari forradalomhoz.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Olyan állam, ahol a nép és a terület egybeesik.",
+      "B) Olyan állam, amely több nemzetet foglal magába.",
+      "C) Olyan állam, amelynek nincs területi határa.",
+      "D) Olyan állam, ahol a központi hatalom a legfontosabb."
+     ],
+     "question": "Mi a nemzetállam fogalma?",
+     "explanation": "A nemzetállam olyan politikai egység, ahol a nép és a terület egybeesik.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) London",
+      "B) Manchester",
+      "C) Birmingham",
+      "D) Liverpool"
+     ],
+     "question": "Melyik város volt az ipari forradalom központja Angliában?",
+     "explanation": "Manchester az ipari forradalom központjává vált, különösen a textiliparban.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Thomas Edison",
+      "B) Henry Ford",
+      "C) James Watt",
+      "D) Albert Einstein"
+     ],
+     "question": "Ki volt a tömegtermelés úttörője az autóiparban?",
+     "explanation": "Henry Ford bevezette a tömegtermelést az autók gyártásában, amely forradalmasította az ipart.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Szegregáció",
+      "B) Reform",
+      "C) Liberalizmus",
+      "D) Nacionalizmus"
+     ],
+     "question": "Melyik fogalom utal a társadalmi rétegek elkülönítésére?",
+     "explanation": "A szegregáció a különböző társadalmi csoportok elkülönítését jelenti.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Chicago",
+      "B) New York",
+      "C) Los Angeles",
+      "D) San Francisco"
+     ],
+     "question": "Melyik város volt az Egyesült Államok ipari központja a 19. század végén?",
+     "explanation": "New York a 19. század végén az ipari fejlődés központjává vált az Egyesült Államokban.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Gyors társadalmi változások",
+      "B) Hagyományok és értékek megőrzése",
+      "C) Szabad verseny",
+      "D) Politikai reformok"
+     ],
+     "question": "Mi a konzervativizmus fő alapelve?",
+     "explanation": "A konzervativizmus a hagyományok és értékek megőrzésére helyezi a hangsúlyt.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}
