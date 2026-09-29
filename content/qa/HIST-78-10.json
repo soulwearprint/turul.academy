@@ -1,0 +1,391 @@
+{
+ "nat_id": "HIST-78-10",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 13,
+  "cards": 58,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-78-10-001",
+   "lesson_id": "9684d43b-3240-48fb-9def-c087e3b5130a",
+   "block_id": "1d172e77-da22-49c3-a1d1-22b51725e238",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "correct",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik országban található a legnagyobb magyar kisebbség?” — megjelölt: Szlovákia (a magyarázat szerint Románia).",
+   "explanation": "A legnagyobb határon túli magyar közösség Romániában él (a 2021-es népszámlálás szerint kb. 1 millió fő); a magyarázat is ezt mondja, a megjelölt betű rossz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarians_in_Romania",
+     "title": "Hungarians in Romania",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Szlovákia",
+      "B) Ukrajna",
+      "C) Románia",
+      "D) Szerbia"
+     ],
+     "question": "Melyik országban található a legnagyobb magyar kisebbség a Kárpát-medencében?",
+     "explanation": "Románia területén található a legnagyobb magyar kisebbség, amely a történelmi Magyarország felosztása óta él ott.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Szlovákia",
+      "B) Ukrajna",
+      "C) Románia",
+      "D) Szerbia"
+     ],
+     "question": "Melyik országban található a legnagyobb magyar kisebbség a Kárpát-medencében?",
+     "explanation": "Románia területén található a legnagyobb magyar kisebbség, amely a történelmi Magyarország felosztása óta él ott.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-10-002",
+   "lesson_id": "e4e0321f-6420-4871-b61a-aef11ce99156",
+   "block_id": "b65c1d8f-375c-4d5f-8fef-fdcbb391efb8",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "correct, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A nemzetiségek aránya a 19. század végén: „30-40%”.",
+   "explanation": "Az 1900-as népszámlálás szerint a magyar anyanyelvűek aránya (Horvátország nélkül) kb. 51% volt, vagyis a nemzetiségek aránya kb. 49% — a D) a helyes.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Demographics_of_the_Kingdom_of_Hungary",
+     "title": "Demographics of the Kingdom of Hungary",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 10-20%",
+      "B) 20-30%",
+      "C) 30-40%",
+      "D) 40-50%"
+     ],
+     "question": "Milyen arányban éltek nemzetiségek Magyarország területén a 19. század végén?",
+     "explanation": "A 19. század végén a történelmi Magyarország területén a nemzetiségek aránya körülbelül 30-40% volt, ami jelentős sokszínűséget mutatott.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) 10-20%",
+      "B) 20-30%",
+      "C) 30-40%",
+      "D) 40-50%"
+     ],
+     "question": "Milyen arányban éltek nemzetiségek Magyarország területén a 19. század végén?",
+     "explanation": "Az 1900-as népszámlálás szerint a történelmi Magyarország (Horvátország nélkül) lakosságának kb. fele nem magyar anyanyelvű volt: románok, szlovákok, németek, szerbek, ruszinok és mások.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-10-003",
+   "lesson_id": "9684d43b-3240-48fb-9def-c087e3b5130a",
+   "block_id": "2244f10c-e04c-4468-a46e-db97f30869e2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Esterházy János „a második világháború után a magyar kisebbség jogainak védelmében aktívan részt vett a politikai életben”.",
+   "explanation": "Esterházy a két világháború között és a háború alatt volt a felvidéki magyarok vezetője (1942-ben egyedüliként szavazott a szlovák parlamentben a zsidók deportálása ellen). 1945-ben a szovjetek elhurcolták, Csehszlovákiában halálra ítélték, és 1957-ben börtönben halt meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/J%C3%A1nos_Esterh%C3%A1zy_(politician)",
+     "title": "János Esterházy (politician)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Esterházy János, a felvidéki magyar politikai vezető, a második világháború után a magyar kisebbség jogainak védelmében aktívan részt vett a politikai életben. Márton Áron, a romániai magyar katolikus püspök, szintén jelentős szerepet játszott a magyar közösség megmaradásában, különösen a nehéz időkben. Mindkét személyiség példát mutatott a közösségi összefogásra és a kulturális identitás megőrzésére. Az ő munkájuk inspirálóan hatott a későbbi generációkra, akik továbbra is küzdenek a magyar közösségek jogaiért és identitásáért.",
+     "type": "text",
+     "heading": "Esterházy János és Márton Áron szerepe",
+     "key_term": "Esterházy János, Márton Áron"
+    },
+    "after": {
+     "body": "Esterházy János, a felvidéki magyarok politikai vezetője a két világháború között és a háború alatt védte a kisebbség jogait; 1942-ben egyedüliként szavazott a szlovák parlamentben a zsidók deportálása ellen. 1945-ben a szovjetek elhurcolták, és 1957-ben csehszlovák börtönben halt meg. Márton Áron, a romániai magyar katolikus püspök, szintén jelentős szerepet játszott a magyar közösség megmaradásában, különösen a nehéz időkben. Mindkét személyiség példát mutatott a közösségi összefogásra és a kulturális identitás megőrzésére. Az ő munkájuk inspirálóan hatott a későbbi generációkra, akik továbbra is küzdenek a magyar közösségek jogaiért és identitásáért.",
+     "type": "text",
+     "heading": "Esterházy János és Márton Áron szerepe",
+     "key_term": "Esterházy János, Márton Áron"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-10-004",
+   "lesson_id": "9684d43b-3240-48fb-9def-c087e3b5130a",
+   "block_id": "2244f10c-e04c-4468-a46e-db97f30869e2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Szlovákiában a magyar kisebbség a legnagyobb etnikai csoport”",
+   "explanation": "Szlovákiában a szlovákok a legnagyobb etnikai csoport; a magyarság a legnagyobb nemzeti kisebbség (kb. 8%).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarians_in_Slovakia",
+     "title": "Hungarians in Slovakia",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Szlovákia és Ukrajna a Kárpát-medence két olyan területe, ahol jelentős magyar közösségek élnek. Szlovákiában a magyar kisebbség a legnagyobb etnikai csoport, amely különösen a déli régiókban koncentrálódik. Ukrajnában a Kárpátalján élő magyar közösség történelmileg is jelentős, azonban itt is számos kihívással kell szembenézniük, beleértve a nyelvi jogok csökkenését. A topográfiai elhelyezkedésük miatt ezek a területek fontos szerepet játszanak a magyar nemzeti identitás megőrzésében és a határon túli magyar közösségek támogatásában.",
+     "type": "text",
+     "heading": "Topográfia: Szlovákia és Ukrajna",
+     "key_term": "Szlovákia, Ukrajna"
+    },
+    "after": {
+     "body": "Szlovákia és Ukrajna a Kárpát-medence két olyan területe, ahol jelentős magyar közösségek élnek. Szlovákiában a magyarság a legnagyobb nemzeti kisebbség, amely különösen a déli régiókban koncentrálódik. Ukrajnában a Kárpátalján élő magyar közösség történelmileg is jelentős, azonban itt is számos kihívással kell szembenézniük, beleértve a nyelvi jogok csökkenését. A topográfiai elhelyezkedésük miatt ezek a területek fontos szerepet játszanak a magyar nemzeti identitás megőrzésében és a határon túli magyar közösségek támogatásában.",
+     "type": "text",
+     "heading": "Topográfia: Szlovákia és Ukrajna",
+     "key_term": "Szlovákia, Ukrajna"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-10-005",
+   "lesson_id": "9684d43b-3240-48fb-9def-c087e3b5130a",
+   "block_id": "2244f10c-e04c-4468-a46e-db97f30869e2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A revíziós törekvések a második világháború után egy újabb fordulóponthoz vezettek, amikor 1944–1945 között…”",
+   "explanation": "1944–45 a háború vége, nem „utána”; a délvidéki (1944 ősz) és más magyarellenes atrocitások a front átvonulásakor történtek.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Belső időrendi ellentmondás.",
+   "fix": {
+    "before": {
+     "body": "A történelmi Magyarország felosztása 1920-ban jelentős változást hozott a határon túli magyar közösségek életében. A revíziós törekvések a második világháború után egy újabb fordulóponthoz vezettek, amikor 1944–1945 között magyarellenes atrocitások történtek a megszállt területeken. Ezek az események súlyosan érintették a magyar közösségeket, sokan elhagyták otthonaikat, míg mások diszkriminációval és erőszakkal szembesültek. A rendszerváltoztatás után a határon túli magyarok helyzete ismét változóban volt, új lehetőségek nyíltak meg a kulturális önazonosság megőrzésére.",
+     "type": "text",
+     "heading": "Fordulópontok a határon túli magyarok történetében",
+     "key_term": "fordulópontok"
+    },
+    "after": {
+     "body": "A történelmi Magyarország felosztása 1920-ban jelentős változást hozott a határon túli magyar közösségek életében. A második világháború végén, 1944–1945-ben — például a Délvidéken — tömeges magyarellenes atrocitások történtek a visszafoglalt területeken. Ezek az események súlyosan érintették a magyar közösségeket, sokan elhagyták otthonaikat, míg mások diszkriminációval és erőszakkal szembesültek. A rendszerváltoztatás után a határon túli magyarok helyzete ismét változóban volt, új lehetőségek nyíltak meg a kulturális önazonosság megőrzésére.",
+     "type": "text",
+     "heading": "Fordulópontok a határon túli magyarok történetében",
+     "key_term": "fordulópontok"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-10-006",
+   "lesson_id": "e4e0321f-6420-4871-b61a-aef11ce99156",
+   "block_id": "a906c2af-4f42-4872-b4ab-c7a60cda5729",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "language",
+   "severity": "medium",
+   "claim": "„a roma közösség számos diszkrét és nyílt diszkriminációval szembesült”",
+   "explanation": "A „diszkrét” jelentése tapintatos; a helyes szó itt „rejtett”.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A cigány/roma közösség története Magyarországon évszázadokra nyúlik vissza, és sok nehézséggel tarkított. A cigányok a 15. század óta jelen vannak a Kárpát-medencében, de társadalmi helyzetük gyakran marginalizált volt. A 20. században a roma közösség számos diszkrét és nyílt diszkriminációval szembesült. A cigány kultúra és identitás megőrzése érdekében a közösség tagjai folyamatosan küzdenek a társadalmi elfogadásért.",
+     "type": "text",
+     "heading": "A hazai cigány/roma népesség története",
+     "key_term": "cigány/roma népesség"
+    },
+    "after": {
+     "body": "A cigány/roma közösség története Magyarországon évszázadokra nyúlik vissza, és sok nehézséggel tarkított. A cigányok a 15. század óta jelen vannak a Kárpát-medencében, de társadalmi helyzetük gyakran marginalizált volt. A 20. században a roma közösség számos rejtett és nyílt diszkriminációval szembesült. A cigány kultúra és identitás megőrzése érdekében a közösség tagjai folyamatosan küzdenek a társadalmi elfogadásért.",
+     "type": "text",
+     "heading": "A hazai cigány/roma népesség története",
+     "key_term": "cigány/roma népesség"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-10-007",
+   "lesson_id": "e4e0321f-6420-4871-b61a-aef11ce99156",
+   "block_id": "b65c1d8f-375c-4d5f-8fef-fdcbb391efb8",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A szabadságharc idején a nemzetiségek is részt vettek a függetlenségi harcban”",
+   "explanation": "A szerbek, horvátok, románok és szlovákok nagy része a magyar kormány ellen fordult; csak 1849 júliusában fogadta el az országgyűlés a nemzetiségi törvényt. Sok német, zsidó, szlovák és lengyel viszont a honvédseregben harcolt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1848",
+     "title": "Hungarian Revolution of 1848",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csökkentette a nemzetiségi jogokat",
+      "B) Növelte a nemzetiségi jogok iránti igényt",
+      "C) Megszüntette a nemzetiségek létezését",
+      "D) Növelte a nemzetiségek asszimilációját"
+     ],
+     "question": "Milyen hatással volt a 1848-49-es szabadságharc a magyarországi nemzetiségekre?",
+     "explanation": "A szabadságharc idején a nemzetiségek is részt vettek a függetlenségi harcban, ami növelte a jogok iránti igényt és a nemzetiségi identitás megerősödését eredményezte.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csökkentette a nemzetiségi jogokat",
+      "B) Növelte a nemzetiségi jogok iránti igényt",
+      "C) Megszüntette a nemzetiségek létezését",
+      "D) Növelte a nemzetiségek asszimilációját"
+     ],
+     "question": "Milyen hatással volt a 1848-49-es szabadságharc a magyarországi nemzetiségekre?",
+     "explanation": "1848–49-ben a nemzetiségek egy része (sok német, szlovák, zsidó) a honvédseregben harcolt, más része — főként a szerbek, horvátok és románok — a magyar kormány ellen fordult, mert saját nemzeti jogokat követelt. A szabadságharc így a nemzetiségi jogok iránti igényt is erősítette.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-10-008",
+   "lesson_id": "e4e0321f-6420-4871-b61a-aef11ce99156",
+   "block_id": "b65c1d8f-375c-4d5f-8fef-fdcbb391efb8",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "low",
+   "claim": "„Melyik jogszabály biztosítja a nemzetiségi jogokat?” — A) Alaptörvény; B) Törvény a nemzetiségek jogairól.",
+   "explanation": "Mindkettő helyes: az Alaptörvény elismeri a nemzetiségeket, a részleteket a 2011. évi CLXXIX. törvény a nemzetiségek jogairól szabályozza.",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Magyar Közlöny: 2011. évi CLXXIX. törvény a nemzetiségek jogairól.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Alaptörvény",
+      "B) Törvény a nemzetiségek jogairól",
+      "C) Kisebbségi törvény",
+      "D) Oktatási törvény"
+     ],
+     "question": "Melyik jogszabály biztosítja a nemzetiségi jogokat a mai Magyarországon?",
+     "explanation": "A 2011-es Alaptörvény biztosítja a nemzetiségek számára a kulturális autonómiát és a nyelvhasználat jogát, védve ezzel identitásukat.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Alaptörvény",
+      "B) Törvény a nemzetiségek jogairól",
+      "C) Kisebbségi törvény",
+      "D) Oktatási törvény"
+     ],
+     "question": "Melyik a legmagasabb szintű jogszabály, amely elismeri a magyarországi nemzetiségeket?",
+     "explanation": "A 2011-es Alaptörvény biztosítja a nemzetiségek számára a kulturális autonómiát és a nyelvhasználat jogát, védve ezzel identitásukat.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-10-009",
+   "lesson_id": null,
+   "block_id": "fb2278c7-4fa7-4aef-94c3-17606b90eb3a",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Melyik részét képezi a Kárpát-medencéhez Ukrajna?”",
+   "explanation": "Nyelvtanilag értelmetlen kérdés.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kárpátalját",
+      "B) Galíciát",
+      "C) Volhíniát",
+      "D) Bukovinát"
+     ],
+     "question": "Melyik részét képezi a Kárpát-medencéhez Ukrajna?",
+     "explanation": "Kárpátalja Ukrajna része, ahol jelentős magyar közösség él.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kárpátalját",
+      "B) Galíciát",
+      "C) Volhíniát",
+      "D) Bukovinát"
+     ],
+     "question": "Ukrajna melyik része tartozik a Kárpát-medencéhez?",
+     "explanation": "Kárpátalja Ukrajna része, ahol jelentős magyar közösség él.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}

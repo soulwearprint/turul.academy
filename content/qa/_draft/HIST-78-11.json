@@ -1,0 +1,10 @@
+{"coverage":{"read":["text","deep","world","quiz"],"lint_only":["story","visual"]},"findings": [
+{"block_id":"399a764c-72be-4104-90e4-fd7350efa89d","card_index":0,"field":"options[0], explanation","verdict":"misleading","severity":"medium",
+ "claim":"A népességrobbanás oka „általában a születések számának emelkedése”.","explanation":"A demográfiai átmenet szerint a népességrobbanást a halálozás gyors csökkenése okozza, miközben a születések száma még magas marad (jobb táplálkozás, higiénia, orvoslás). Ugyanezt a lecke mélyítő kártyája is írja.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Demographic_transition","title":"Demographic transition","accessed":"2026-09-29"}],
+ "set":{"options[0]":"A) A népesség gyors növekedése, mert a halálozás csökken, a születések száma viszont még magas.","explanation":"Népességrobbanás akkor történik, amikor a jobb táplálkozás, a tisztább víz és az orvoslás miatt kevesebben halnak meg (főleg csecsemők), de a családokban még sok gyermek születik. Európában ez a 18–19. században, a fejlődő országokban a 20. században zajlott."}},
+{"block_id":"757cbb3d-fcf5-4d31-aaf7-c91f488d32af","card_index":2,"field":"explanation","verdict":"misleading","severity":"low",
+ "claim":"A népességrobbanás „különösen a 20. század közepén volt jellemző” — a lecke kvíze szerint viszont a 19. század közepén.","explanation":"A két kvíz ellentmond egymásnak: Európában a 18–19. században, a világ egészén a 20. század közepén volt a leggyorsabb a növekedés.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Demographic_transition","title":"Demographic transition","accessed":"2026-09-29"}],
+ "set":{"explanation":"A népességrobbanás hirtelen, gyors népességnövekedés. Európában a 18–19. században, az ipari forradalom idején, a világ egészén pedig a 20. század közepén volt a leggyorsabb."}}
+]}

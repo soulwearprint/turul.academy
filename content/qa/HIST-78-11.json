@@ -1,0 +1,127 @@
+{
+ "nat_id": "HIST-78-11",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 13,
+  "cards": 67,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-78-11-001",
+   "lesson_id": "aee0a3b6-0ed9-4bb2-b684-5294998ea6ed",
+   "block_id": "399a764c-72be-4104-90e4-fd7350efa89d",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "options[0], explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A népességrobbanás oka „általában a születések számának emelkedése”.",
+   "explanation": "A demográfiai átmenet szerint a népességrobbanást a halálozás gyors csökkenése okozza, miközben a születések száma még magas marad (jobb táplálkozás, higiénia, orvoslás). Ugyanezt a lecke mélyítő kártyája is írja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Demographic_transition",
+     "title": "Demographic transition",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A népesség hirtelen növekedése, általában a születések számának emelkedése miatt.",
+      "B) A népesség csökkenése egy háború következtében.",
+      "C) A népesség stagnálása egy adott időszakban.",
+      "D) A népesség elvándorlása más országokba."
+     ],
+     "question": "Mi a népességrobbanás?",
+     "explanation": "A népességrobbanás a születések számának hirtelen növekedését jelenti, amely az ipari forradalom idején kezdődött, és jelentős hatással volt a társadalomra és a gazdaságra.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A népesség gyors növekedése, mert a halálozás csökken, a születések száma viszont még magas.",
+      "B) A népesség csökkenése egy háború következtében.",
+      "C) A népesség stagnálása egy adott időszakban.",
+      "D) A népesség elvándorlása más országokba."
+     ],
+     "question": "Mi a népességrobbanás?",
+     "explanation": "Népességrobbanás akkor történik, amikor a jobb táplálkozás, a tisztább víz és az orvoslás miatt kevesebben halnak meg (főleg csecsemők), de a családokban még sok gyermek születik. Európában ez a 18–19. században, a fejlődő országokban a 20. században zajlott.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-11-002",
+   "lesson_id": null,
+   "block_id": "757cbb3d-fcf5-4d31-aaf7-c91f488d32af",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A népességrobbanás „különösen a 20. század közepén volt jellemző” — a lecke kvíze szerint viszont a 19. század közepén.",
+   "explanation": "A két kvíz ellentmond egymásnak: Európában a 18–19. században, a világ egészén a 20. század közepén volt a leggyorsabb a növekedés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Demographic_transition",
+     "title": "Demographic transition",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hirtelen népességnövekedés",
+      "B) A népesség csökkenése",
+      "C) Stabil népességnövekedés",
+      "D) A migráció csökkenése"
+     ],
+     "question": "Mi jellemzi a népességrobbanást?",
+     "explanation": "A népességrobbanás kifejezés a hirtelen és jelentős népességnövekedést jelenti, amely különösen a 20. század közepén volt jellemző.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hirtelen népességnövekedés",
+      "B) A népesség csökkenése",
+      "C) Stabil népességnövekedés",
+      "D) A migráció csökkenése"
+     ],
+     "question": "Mi jellemzi a népességrobbanást?",
+     "explanation": "A népességrobbanás hirtelen, gyors népességnövekedés. Európában a 18–19. században, az ipari forradalom idején, a világ egészén pedig a 20. század közepén volt a leggyorsabb.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}
