@@ -1,0 +1,347 @@
+{
+ "nat_id": "HIST-78-13",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 37,
+  "cards": 171,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-78-13-001",
+   "lesson_id": "abcda6e1-8751-4b4e-9aa4-17c20e3d825c",
+   "block_id": "8ab133bb-ce1b-4c55-8903-47946d8b2659",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A Maastrichti Szerződés 1992-ben … ekkor alakult meg az euró”",
+   "explanation": "A maastrichti szerződés (1992) csak elhatározta a gazdasági és monetáris uniót; az euró 1999. január 1-jén jött létre számlapénzként, készpénzként 2002. január 1-jén jelent meg. A lecke saját idővonal-kártyája is így írja.",
+   "sources": [
+    {
+     "url": "https://www.ecb.europa.eu/euro/intro/html/index.en.html",
+     "title": "ECB – Introduction of the euro",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Maastricht_Treaty",
+     "title": "Maastricht Treaty",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az Európai Unió bővülése több szakaszban zajlott, amely során újabb országok csatlakoztak a közösséghez. A Maastrichti Szerződés 1992-ben jelentős lépést jelentett, mivel ekkor alakult meg az euró, a közös valuta, amely elősegíti a pénzügyi stabilitást és a gazdasági együttműködést. A bővülés során a tagállamok közötti politikai és gazdasági kapcsolatok erősödtek, ami hozzájárult a közös piac kialakulásához. Az integráció eredményeként a tagországok közötti határok szinte eltűntek, lehetővé téve a szabad mozgást és kereskedelmet.",
+     "type": "text",
+     "heading": "A bővülés folyamata",
+     "key_term": "bővülés"
+    },
+    "after": {
+     "body": "Az Európai Unió bővülése több szakaszban zajlott, amely során újabb országok csatlakoztak a közösséghez. A Maastrichti Szerződés 1992-ben jelentős lépést jelentett, mivel ekkor döntöttek a közös valuta, az euró bevezetéséről (1999-ben jött létre, 2002-től készpénzként is), amely elősegíti a pénzügyi stabilitást és a gazdasági együttműködést. A bővülés során a tagállamok közötti politikai és gazdasági kapcsolatok erősödtek, ami hozzájárult a közös piac kialakulásához. Az integráció eredményeként a tagországok közötti határok szinte eltűntek, lehetővé téve a szabad mozgást és kereskedelmet.",
+     "type": "text",
+     "heading": "A bővülés folyamata",
+     "key_term": "bővülés"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-13-002",
+   "lesson_id": "abcda6e1-8751-4b4e-9aa4-17c20e3d825c",
+   "block_id": "177054fb-e141-4402-9dfd-0ba39bbc6492",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„megalapozta az Európai Uniót és bevezette az eurót mint közös valutát”",
+   "explanation": "A szerződés csak elhatározta az euró bevezetését; maga az euró 1999-ben (készpénz 2002-ben) jött létre.",
+   "sources": [
+    {
+     "url": "https://www.ecb.europa.eu/euro/intro/html/index.en.html",
+     "title": "ECB – Introduction of the euro",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1992. február 7-én aláírták a maastrichti szerződést, amely megalapozta az Európai Uniót és bevezette az eurót mint közös valutát. A szerződés célja a politikai és gazdasági integráció elmélyítése volt, valamint a közös külpolitika kialakítása.",
+     "type": "world",
+     "year": "1992",
+     "heading": "A maastrichti szerződés aláírása",
+     "link_hu": "A maastrichti szerződés erősítette az európai integrációt, amely Magyarország számára a későbbi uniós tagság előfeltételeit teremtette meg."
+    },
+    "after": {
+     "body": "1992. február 7-én aláírták a maastrichti szerződést, amely megalapozta az Európai Uniót és elhatározta a közös valuta, az euró bevezetését (1999, készpénzként 2002). A szerződés célja a politikai és gazdasági integráció elmélyítése volt, valamint a közös külpolitika kialakítása.",
+     "type": "world",
+     "year": "1992",
+     "heading": "A maastrichti szerződés aláírása",
+     "link_hu": "A maastrichti szerződés erősítette az európai integrációt, amely Magyarország számára a későbbi uniós tagság előfeltételeit teremtette meg."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-13-003",
+   "lesson_id": "169bbf71-ac1b-4c91-a4b4-5aff1fa5c9dc",
+   "block_id": "9b815ed0-3d37-47fc-a18a-1711379bb006",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "„A visegrádi együttműködés 1991-ben … Magyarország, Lengyelország és Csehország”",
+   "explanation": "1991-ben a visegrádi hármat Magyarország, Lengyelország és Csehszlovákia alapította; Csehország és Szlovákia 1993-tól külön tagok (V4).",
+   "sources": [
+    {
+     "url": "https://www.visegradgroup.eu/about/history",
+     "title": "Visegrad Group – History",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A visegrádi együttműködés 1991-ben alakult meg, célja a közép-európai országok, így Magyarország, Lengyelország és Csehország közötti politikai és gazdasági együttműködés erősítése. A régió országai közösen léptek fel az európai integráció érdekében, és a térség stabilitásának megőrzéséért dolgoznak. A visegrádi csoport azóta is fontos platform a közép-európai országok közötti párbeszéd és együttműködés szempontjából. A csoport célja, hogy megőrizzék a nemzeti identitásokat, miközben együttműködnek a közös kihívások kezelésében.",
+     "type": "text",
+     "heading": "A visegrádi együttműködés",
+     "key_term": "visegrádi együttműködés"
+    },
+    "after": {
+     "body": "A visegrádi együttműködés 1991-ben alakult meg, célja a közép-európai országok, így Magyarország, Lengyelország és Csehszlovákia (1993-tól Csehország és Szlovákia) közötti politikai és gazdasági együttműködés erősítése. A régió országai közösen léptek fel az európai integráció érdekében, és a térség stabilitásának megőrzéséért dolgoznak. A visegrádi csoport azóta is fontos platform a közép-európai országok közötti párbeszéd és együttműködés szempontjából. A csoport célja, hogy megőrizzék a nemzeti identitásokat, miközben együttműködnek a közös kihívások kezelésében.",
+     "type": "text",
+     "heading": "A visegrádi együttműködés",
+     "key_term": "visegrádi együttműködés"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-13-004",
+   "lesson_id": "ca1df611-d548-410a-af59-4a02f06de799",
+   "block_id": "85a096c7-8186-4279-8cde-58d2c9f16f38",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az amerikai polgárháború (1861–65) hatása Magyarországon „különösen a reformkor idején”",
+   "explanation": "Anakronizmus: a reformkor 1825–1848, a polgárháború utána volt. Valós kapcsolat: sok 1848–49-es magyar emigráns harcolt az északi (uniós) hadseregben, pl. Asbóth Sándor és Stahel Gyula tábornok.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Americans_in_the_American_Civil_War",
+     "title": "Hungarian Americans in the American Civil War",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1861 áprilisában kitört az amerikai polgárháború, amely a déli államok elszakadása és a rabszolgaság kérdése körül forgott. A konfliktus során Észak, a Szövetségi Államok, és Dél, a Konföderáció, harcoltak egymással. A háború végül 1865-ben ért véget, és a győzelem után az Egyesült Államok megerősítette egységét és a rabszolgaság eltörlését.",
+     "type": "world",
+     "year": "1861",
+     "heading": "Az amerikai polgárháború kitörése",
+     "link_hu": "Az amerikai polgárháború következményeként a rabszolgaság eltörlése hozzájárult a társadalmi változásokhoz, amelyek Magyarországon is éreztették hatásukat, különösen a reformkor idején, amikor a társadalmi egyenlőség és a jogegyenlőség kérdései kerültek előtérbe."
+    },
+    "after": {
+     "body": "1861 áprilisában kitört az amerikai polgárháború, amely a déli államok elszakadása és a rabszolgaság kérdése körül forgott. A konfliktus során Észak, a Szövetségi Államok, és Dél, a Konföderáció, harcoltak egymással. A háború végül 1865-ben ért véget, és a győzelem után az Egyesült Államok megerősítette egységét és a rabszolgaság eltörlését.",
+     "type": "world",
+     "year": "1861",
+     "heading": "Az amerikai polgárháború kitörése",
+     "link_hu": "Az 1848–49-es szabadságharc után Amerikába menekült magyarok közül sokan harcoltak az északiak oldalán, például Asbóth Sándor és Stahel Gyula tábornok."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-13-005",
+   "lesson_id": "d85181d9-0b76-4a44-bd4b-affa1867d8d0",
+   "block_id": "32072864-1afc-4cc1-9ba8-0cdbdc9260a4",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1858-ban kezdődött, amikor a Brit Kelet-Indiai Társaság fokozatosan átvette a hatalmat”",
+   "explanation": "Fordítva: 1858-ban (az 1857-es felkelés után) a brit Korona vette át Indiát a Kelet-Indiai Társaságtól. A Társaság uralma már 1757-től (plassey-i csata) terjedt. Az 1858-as kulcs a közvetlen koronauralomra helyes, de a kérdést pontosítani kell.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Government_of_India_Act_1858",
+     "title": "Government of India Act 1858",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1858",
+      "B) 1947",
+      "C) 1600",
+      "D) 1900"
+     ],
+     "question": "Mikor kezdődött a brit gyarmati uralom Indiában?",
+     "explanation": "A brit gyarmati uralom Indiában 1858-ban kezdődött, amikor a Brit Kelet-Indiai Társaság fokozatosan átvette a hatalmat az indiai területek felett.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1858",
+      "B) 1947",
+      "C) 1600",
+      "D) 1900"
+     ],
+     "question": "Mikor kezdődött a brit Korona közvetlen uralma Indiában?",
+     "explanation": "1858-ban, az 1857-es felkelés után a brit Korona vette át India kormányzását a Kelet-Indiai Társaságtól, amely már 1757 óta uralta India egyre nagyobb részét.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-13-006",
+   "lesson_id": "de0c402d-76b6-4e14-bfa3-c376869e9df8",
+   "block_id": "e875c69f-2fab-427b-a5c2-dc7f38c64e07",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question, options, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik ország területén található Izrael?” — megjelölt: C) Palesztina",
+   "explanation": "Izrael önálló állam, nem „egy ország területén” fekszik; a kérdés hamis előfeltevésre épül és politikailag vitatott. Javasolt: a földrajzi elhelyezkedésre kérdezni.",
+   "sources": [],
+   "apply": "review",
+   "source_note": "A kérdés előfeltevése hibás; nincs rá tényszerű helyes válasz.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Jordánia.",
+      "B) Szíria.",
+      "C) Palesztina.",
+      "D) Libanon."
+     ],
+     "question": "Melyik ország területén található Izrael?",
+     "explanation": "Izrael területe Palesztina történelmi földjén helyezkedik el, ami fontos tényező a régió etnikai és vallási feszültségeiben.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A Földközi-tenger",
+      "B) A Kaszpi-tenger",
+      "C) A Fekete-tenger",
+      "D) Az Északi-tenger"
+     ],
+     "question": "Melyik tenger partján fekszik Izrael?",
+     "explanation": "Izrael a Földközi-tenger keleti partján, a történelmi Palesztina területén fekszik; 1948-ban jött létre.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-13-007",
+   "lesson_id": "1da9306c-4889-479d-8438-21e0e9b472a5",
+   "block_id": "d338cfb5-ee6f-4903-a060-5e6b36d66bf8",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "heading",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Címsor „Nincs egyértelmű globális párhuzam”, miközben a szöveg párhuzamokat sorol",
+   "explanation": "A címsor a generátor helyőrző szövege, ellentmond a kártya tartalmának.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Belső ellentmondás a kártyán belül.",
+   "fix": {
+    "before": {
+     "body": "A kínai civilizáció vallási és kulturális alapjai, a félgyarmati sor, Mao Ce-tung és a kommunista diktatúra, valamint a japán megszállás jelenségei más kultúrákban és korokban is fellelhetők, például a gyarmatosítás időszakában Afrikában vagy a szovjet típusú kommunizmus megjelenésében Kelet-Európában.",
+     "type": "world",
+     "year": "",
+     "heading": "Nincs egyértelmű globális párhuzam",
+     "link_hu": ""
+    },
+    "after": {
+     "body": "A kínai civilizáció vallási és kulturális alapjai, a félgyarmati sor, Mao Ce-tung és a kommunista diktatúra, valamint a japán megszállás jelenségei más kultúrákban és korokban is fellelhetők, például a gyarmatosítás időszakában Afrikában vagy a szovjet típusú kommunizmus megjelenésében Kelet-Európában.",
+     "type": "world",
+     "year": "",
+     "heading": "Párhuzamok más kultúrákban",
+     "link_hu": ""
+    }
+   }
+  },
+  {
+   "id": "HIST-78-13-008",
+   "lesson_id": "1da9306c-4889-479d-8438-21e0e9b472a5",
+   "block_id": "109f1d98-b399-4d91-aa96-5bc3739a3f20",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Miért fontos Mao Ce-tung szerepe a magyar történelem szempontjából?” — A) A kommunizmus terjedése miatt",
+   "explanation": "Erőltetett magyar vonatkozás: a magyar kommunista rendszer szovjet mintára épült, Mao közvetlen hatása csekély volt. Rendszerszintű minta (lásd a PR leírását).",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Erőltetett relevancia-kérdés, nem tényállítás.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A kommunizmus terjedése miatt",
+      "B) A kereskedelem fellendítése miatt",
+      "C) A vallási reformok miatt",
+      "D) A mezőgazdaság fejlődése miatt"
+     ],
+     "question": "Miért fontos Mao Ce-tung szerepe a magyar történelem szempontjából?",
+     "explanation": "Mao Ce-tung politikája és a kommunista ideológia hatással volt a kommunista mozgalmakra Magyarországon és más kelet-európai országokban.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A kommunizmus terjedése miatt",
+      "B) A kereskedelem fellendítése miatt",
+      "C) A vallási reformok miatt",
+      "D) A mezőgazdaság fejlődése miatt"
+     ],
+     "question": "Miért fontos Mao Ce-tung szerepe a 20. századi világtörténelemben?",
+     "explanation": "Mao vezetésével 1949-ben kommunista állam jött létre a világ legnépesebb országában, ami a kommunizmus terjedésének egyik legfontosabb eseménye volt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}
