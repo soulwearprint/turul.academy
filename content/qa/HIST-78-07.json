@@ -1,0 +1,216 @@
+{
+ "nat_id": "HIST-78-07",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 13,
+  "cards": 72,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-78-07-001",
+   "lesson_id": "88aff454-f6db-45f8-9d2d-f5ef000a3f37",
+   "block_id": "5669e1a8-8f4e-4a29-a02d-59b80358aaef",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A Truman-doktrína és a Marshall-terv következményeként Magyarország is a szovjet érdekszféra alá került”",
+   "explanation": "Magyarország a szovjet megszállás és a nagyhatalmi megállapodások miatt került szovjet érdekszférába, nem a Marshall-terv miatt. A Marshall-segélyt Moszkva nyomására Magyarország el sem fogadhatta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Marshall_Plan",
+     "title": "Marshall Plan",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1947-ben a Szovjetunió és az Amerikai Egyesült Államok közötti feszültségek élesedtek, ami a hidegháború kezdetét jelentette. Ekkor hirdette meg Truman elnök a Truman-doktrínát, amely a kommunizmus terjedésének megakadályozását célozta meg. A Marshall-terv bevezetése is ebben az évben történt, amely gazdasági segítséget nyújtott Európának a háború utáni újjáépítéshez.",
+     "type": "world",
+     "year": "1947",
+     "heading": "A hidegháború kezdete",
+     "link_hu": "A Truman-doktrína és a Marshall-terv következményeként Magyarország is a szovjet érdekszféra alá került, ami hozzájárult a vasfüggöny leereszkedéséhez és a kommunista rendszer kiépítéséhez."
+    },
+    "after": {
+     "body": "1947-ben a Szovjetunió és az Amerikai Egyesült Államok közötti feszültségek élesedtek, ami a hidegháború kezdetét jelentette. Ekkor hirdette meg Truman elnök a Truman-doktrínát, amely a kommunizmus terjedésének megakadályozását célozta meg. A Marshall-terv bevezetése is ebben az évben történt, amely gazdasági segítséget nyújtott Európának a háború utáni újjáépítéshez.",
+     "type": "world",
+     "year": "1947",
+     "heading": "A hidegháború kezdete",
+     "link_hu": "A Marshall-segélyt a kelet-európai országok is megkaphatták volna, de Moszkva nyomására Magyarország is visszautasította — így a Nyugat újjáépítéséből kimaradt."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-07-002",
+   "lesson_id": "88aff454-f6db-45f8-9d2d-f5ef000a3f37",
+   "block_id": "5669e1a8-8f4e-4a29-a02d-59b80358aaef",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A koreai háború idején „Magyarország is a Varsói Szerződés keretein belül támogatta a szovjet érdekeket”.",
+   "explanation": "Időrendi hiba: a Varsói Szerződés csak 1955-ben jött létre, a koreai háború 1953-ban véget ért. Magyarország Észak-Koreát egészségügyi csoportokkal (tábori kórházzal) támogatta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Warsaw_Pact",
+     "title": "Warsaw Pact",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1950. június 25-én Észak-Korea megtámadta Dél-Koreát, ezzel kezdetét vette a koreai háború. A konfliktus során az Egyesült Államok és szövetségesei a Dél-Koreai Köztársaságot támogatták, míg a Szovjetunió és Kína Észak-Koreát segítették. A háború 1953-ban fejeződött be tűzszünettel, de a két Korea közötti feszültség azóta is fennáll.",
+     "type": "world",
+     "year": "1950",
+     "heading": "A koreai háború kitörése",
+     "link_hu": "A koreai háború a hidegháborús feszültségeket tovább fokozta, és Magyarország is a Varsói Szerződés keretein belül támogatta a szovjet érdekeket."
+    },
+    "after": {
+     "body": "1950. június 25-én Észak-Korea megtámadta Dél-Koreát, ezzel kezdetét vette a koreai háború. A konfliktus során az Egyesült Államok és szövetségesei a Dél-Koreai Köztársaságot támogatták, míg a Szovjetunió és Kína Észak-Koreát segítették. A háború 1953-ban fejeződött be tűzszünettel, de a két Korea közötti feszültség azóta is fennáll.",
+     "type": "world",
+     "year": "1950",
+     "heading": "A koreai háború kitörése",
+     "link_hu": "A szovjet tömb országaként Magyarország is segítette Észak-Koreát: magyar orvosok és ápolók tábori kórházban dolgoztak az országban."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-07-003",
+   "lesson_id": "88aff454-f6db-45f8-9d2d-f5ef000a3f37",
+   "block_id": "5669e1a8-8f4e-4a29-a02d-59b80358aaef",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "link_hu",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "A kubai rakétaválság „Magyarországon is fokozta a szovjet érdekek melletti elköteleződést”.",
+   "explanation": "Forrás nélküli általánosítás. Tényszerű következmény: 1963-ban közvetlen „forródrót” épült Washington és Moszkva között.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Moscow%E2%80%93Washington_hotline",
+     "title": "Moscow–Washington hotline",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1962 októberében a kubai rakétaválság során az Egyesült Államok felfedezte, hogy a Szovjetunió nukleáris rakétákat telepített Kubába. Ez a helyzet a világ legnagyobb feszültségét okozta a hidegháború alatt, és közel állt a harmadik világháború kitöréséhez. A válság végül diplomáciai úton oldódott meg, amikor a Szovjetunió visszavonta rakétáit, cserébe az Egyesült Államok ígéretét kapta, hogy nem támadja meg Kubát.",
+     "type": "world",
+     "year": "1962",
+     "heading": "A kubai rakétaválság",
+     "link_hu": "A kubai rakétaválság rávilágított a hidegháborús konfliktusok globális hatásaira, és Magyarországon is fokozta a szovjet érdekek melletti elköteleződést."
+    },
+    "after": {
+     "body": "1962 októberében a kubai rakétaválság során az Egyesült Államok felfedezte, hogy a Szovjetunió nukleáris rakétákat telepített Kubába. Ez a helyzet a világ legnagyobb feszültségét okozta a hidegháború alatt, és közel állt a harmadik világháború kitöréséhez. A válság végül diplomáciai úton oldódott meg, amikor a Szovjetunió visszavonta rakétáit, cserébe az Egyesült Államok ígéretét kapta, hogy nem támadja meg Kubát.",
+     "type": "world",
+     "year": "1962",
+     "heading": "A kubai rakétaválság",
+     "link_hu": "A válság után, 1963-ban közvetlen „forródrótot” építettek Washington és Moszkva között, hogy egy újabb válságban azonnal beszélni tudjanak — ez a mi biztonságunkat is szolgálta."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-07-004",
+   "lesson_id": "88aff454-f6db-45f8-9d2d-f5ef000a3f37",
+   "block_id": "e5bc0c71-825b-4228-bb21-4e3a57ee5144",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A háború során több mint 5 millió ember vesztette életét”",
+   "explanation": "A koreai háború áldozatainak számát a becslések mintegy 3 millió főre teszik (katonák és civilek együtt).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Korean_War",
+     "title": "Korean War",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A koreai háború nemcsak a két Korea közötti konfliktust jelentette, hanem a hidegháború globális szintű kiterjedését is. A háború során több mint 5 millió ember vesztette életét, ami jelentős emberi és gazdasági veszteségeket okozott. A konfliktus végül a két Korea tartós megosztottságához vezetett, amely a mai napig fennáll. A háború rámutatott arra, hogy a hidegháború nemcsak politikai, hanem katonai szempontból is komoly következményekkel járt, mivel a szuperhatalmak közvetetten részt vettek a helyi konfliktusokban.",
+     "type": "deep",
+     "think": "Miért fontos a nemzetközi szervezetek szerepe a konfliktusok kezelésében?",
+     "anchor": 4,
+     "heading": "A koreai háború következményei",
+     "did_you_know": "A koreai háború során az Egyesült Nemzetek Szervezete először avatkozott be katonai erővel egy konfliktusba.",
+     "think_answer": "A nemzetközi szervezetek segíthetnek a konfliktusok békés megoldásában, támogatást nyújtva a tárgyalásokhoz és a fegyveres összecsapások elkerüléséhez."
+    },
+    "after": {
+     "body": "A koreai háború nemcsak a két Korea közötti konfliktust jelentette, hanem a hidegháború globális szintű kiterjedését is. A háborúban a becslések szerint mintegy 3 millió ember vesztette életét, többségük civil, ami jelentős emberi és gazdasági veszteségeket okozott. A konfliktus végül a két Korea tartós megosztottságához vezetett, amely a mai napig fennáll. A háború rámutatott arra, hogy a hidegháború nemcsak politikai, hanem katonai szempontból is komoly következményekkel járt, mivel a szuperhatalmak közvetetten részt vettek a helyi konfliktusokban.",
+     "type": "deep",
+     "think": "Miért fontos a nemzetközi szervezetek szerepe a konfliktusok kezelésében?",
+     "anchor": 4,
+     "heading": "A koreai háború következményei",
+     "did_you_know": "A koreai háború során az Egyesült Nemzetek Szervezete először avatkozott be katonai erővel egy konfliktusba.",
+     "think_answer": "A nemzetközi szervezetek segíthetnek a konfliktusok békés megoldásában, támogatást nyújtva a tárgyalásokhoz és a fegyveres összecsapások elkerüléséhez."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-07-005",
+   "lesson_id": "402861c2-ddaf-4813-9a90-ca997d973a78",
+   "block_id": "e2f8d477-7a6d-4d02-8f55-cd2288e8d03f",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "did_you_know",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Az ENSZ Közgyűlése „az egyetlen olyan nemzetközi fórum, ahol minden tagállamnak egyenlő szavazati joga van”.",
+   "explanation": "Más nemzetközi szervezetekben is minden államnak egy szavazata van; az „egyetlen” túlzás.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az ENSZ egyik legfontosabb feladata a béke fenntartása, amit különböző missziókkal valósít meg. Ezek a missziók gyakran olyan területeken működnek, ahol konfliktusok zajlanak, és céljuk a feszültségek csökkentése. Az ENSZ másik fontos tevékenysége a humanitárius segítségnyújtás, például természeti katasztrófák esetén. Az ENSZ tagállamai közösen döntenek a szervezet céljairól és tevékenységeiről, ami biztosítja, hogy a világ különböző részeinek érdekei is érvényesüljenek.",
+     "type": "deep",
+     "think": "Miért fontos, hogy az ENSZ-nek minden ország tagja legyen?",
+     "anchor": 4,
+     "heading": "Az ENSZ működésének titkai",
+     "did_you_know": "Az ENSZ Közgyűlése az egyetlen olyan nemzetközi fórum, ahol minden tagállamnak egyenlő szavazati joga van, függetlenül a méretüktől vagy gazdasági erejüktől.",
+     "think_answer": "Ha minden ország tagja az ENSZ-nek, akkor a szervezet hatékonyabban tudja képviselni a világ különböző részeinek érdekeit, és jobban tud közvetíteni a nemzetközi konfliktusokban."
+    },
+    "after": {
+     "body": "Az ENSZ egyik legfontosabb feladata a béke fenntartása, amit különböző missziókkal valósít meg. Ezek a missziók gyakran olyan területeken működnek, ahol konfliktusok zajlanak, és céljuk a feszültségek csökkentése. Az ENSZ másik fontos tevékenysége a humanitárius segítségnyújtás, például természeti katasztrófák esetén. Az ENSZ tagállamai közösen döntenek a szervezet céljairól és tevékenységeiről, ami biztosítja, hogy a világ különböző részeinek érdekei is érvényesüljenek.",
+     "type": "deep",
+     "think": "Miért fontos, hogy az ENSZ-nek minden ország tagja legyen?",
+     "anchor": 4,
+     "heading": "Az ENSZ működésének titkai",
+     "did_you_know": "Az ENSZ Közgyűlésében minden tagállamnak egy szavazata van — a kis Máltának ugyanannyi, mint Kínának. A Biztonsági Tanácsban viszont öt állandó tag vétójoggal rendelkezik.",
+     "think_answer": "Ha minden ország tagja az ENSZ-nek, akkor a szervezet hatékonyabban tudja képviselni a világ különböző részeinek érdekeit, és jobban tud közvetíteni a nemzetközi konfliktusokban."
+    }
+   }
+  }
+ ]
+}

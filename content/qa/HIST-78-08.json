@@ -1,0 +1,647 @@
+{
+ "nat_id": "HIST-78-08",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 19,
+  "cards": 93,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-78-08-001",
+   "lesson_id": "89fdbb72-4be2-4e1b-8af8-65f4cc5a16ec",
+   "block_id": "ab11e1da-58d0-4209-a1aa-271d7c6c8e84",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "Kovács Béla „tevékenysége a szovjet érdekeltségek melletti elköteleződését tükrözte, és hozzájárult a kommunista ideológia terjesztéséhez”.",
+   "explanation": "Épp ellenkezőleg: Kovács Béla, a Független Kisgazdapárt főtitkára a kommunisták fő ellenfele volt; 1947 februárjában a szovjet katonai hatóság törvénytelenül letartóztatta és a Szovjetunióba hurcolta, ez nyitotta meg az utat a kommunista hatalomátvétel előtt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/B%C3%A9la_Kov%C3%A1cs_(politician,_born_1908)",
+     "title": "Béla Kovács (politician)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Kovács Béla, a Független Kisgazdapárt főtitkára, akit a kommunista hatalomátvétel során letartóztattak. Őt a párt egyik alapító tagjaként tartották számon, és a politikai életben betöltött szerepe révén jelentős befolyással bírt. Kovács Béla tevékenysége a szovjet érdekeltségek melletti elköteleződését tükrözte, és hozzájárult a kommunista ideológia terjesztéséhez az országban. Politikai pályafutása során számos fontos döntés meghozatalában vett részt, amelyek a magyar társadalom jövőjét is befolyásolták.",
+     "type": "text",
+     "heading": "Kovács Béla szerepe",
+     "key_term": "Kovács Béla"
+    },
+    "after": {
+     "body": "Kovács Béla a Független Kisgazdapárt főtitkára volt; a párt 1945-ben megnyerte a választásokat. A kommunisták legfőbb ellenfelének számított, ezért 1947 februárjában a szovjet katonai hatóság — a parlamenti mentelmi jogát megsértve — letartóztatta és a Szovjetunióba hurcolta, ahonnan csak 1955-ben térhetett haza. Elhurcolása után a Kisgazdapárt meggyengült, és a kommunisták egyre nagyobb hatalomra tettek szert.",
+     "type": "text",
+     "heading": "Kovács Béla szerepe",
+     "key_term": "Kovács Béla"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-002",
+   "lesson_id": "89fdbb72-4be2-4e1b-8af8-65f4cc5a16ec",
+   "block_id": "93c75d5c-e6f3-4717-9ce7-9348b48b62bd",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options[0], explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Kovács Béla: „A) Politikai fogoly és a kommunista párt tagja” (megjelölt helyes válasz).",
+   "explanation": "Kovács Béla a Kisgazdapárt főtitkára volt, nem a kommunista párt tagja; a szovjetek fogták el.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/B%C3%A9la_Kov%C3%A1cs_(politician,_born_1908)",
+     "title": "Béla Kovács (politician)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Politikai fogoly és a kommunista párt tagja",
+      "B) A magyar miniszterelnök",
+      "C) A háborús bűnös",
+      "D) A nyugati szövetségesek képviselője"
+     ],
+     "question": "Ki volt Kovács Béla, és milyen szerepet játszott a kommunista diktatúra kiépítésében?",
+     "explanation": "Kovács Béla a Független Kisgazdapárt főtitkára volt, akit a kommunista hatalomátvétel során letartóztattak.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A Kisgazdapárt főtitkára, akit a szovjetek elhurcoltak",
+      "B) A magyar miniszterelnök",
+      "C) A háborús bűnös",
+      "D) A nyugati szövetségesek képviselője"
+     ],
+     "question": "Ki volt Kovács Béla, és milyen szerepet játszott a kommunista diktatúra kiépítésében?",
+     "explanation": "Kovács Béla a Független Kisgazdapárt főtitkára volt; 1947-ben a szovjet hatóságok letartóztatták és a Szovjetunióba hurcolták — ezzel a kommunisták legfőbb ellenfelét iktatták ki.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-003",
+   "lesson_id": null,
+   "block_id": "b3d5bc67-62f6-469f-93be-07fecaa06b48",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 4,
+   "field": "question, options[1], explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Kovács Béla: „Kommunista politikai vezető és a párt egyik fontos alakja”.",
+   "explanation": "Kovács Béla a Kisgazdapárt főtitkára, a kommunisták ellenfele volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/B%C3%A9la_Kov%C3%A1cs_(politician,_born_1908)",
+     "title": "Béla Kovács (politician)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Ő volt a miniszterelnök",
+      "B) Kommunista politikai vezető és a párt egyik fontos alakja",
+      "C) Katonai vezető",
+      "D) Egyházfő"
+     ],
+     "question": "Milyen szerepet játszott Kovács Béla a kommunista politikában?",
+     "explanation": "Kovács Béla a kommunista politikai vezető volt, aki fontos szerepet játszott a párt irányításában.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Ő volt a miniszterelnök",
+      "B) A Kisgazdapárt főtitkára, akit 1947-ben a szovjetek elhurcoltak",
+      "C) Katonai vezető",
+      "D) Egyházfő"
+     ],
+     "question": "Ki volt Kovács Béla?",
+     "explanation": "Kovács Béla a Független Kisgazdapárt főtitkára volt; elhurcolása 1947-ben a kommunista hatalomátvétel egyik fordulópontja lett.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-004",
+   "lesson_id": "89fdbb72-4be2-4e1b-8af8-65f4cc5a16ec",
+   "block_id": "93c75d5c-e6f3-4717-9ce7-9348b48b62bd",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options[0], explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Az 1945-ös választásokon „a kommunista párt győzelme” (megjelölt helyes válasz).",
+   "explanation": "Az 1945. novemberi, viszonylag szabad választást a Független Kisgazdapárt nyerte 57%-kal; a kommunisták 17%-ot kaptak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1945_Hungarian_parliamentary_election",
+     "title": "1945 Hungarian parliamentary election",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A kommunista párt győzelme és a demokratikus intézmények felszámolása",
+      "B) A szovjet csapatok kivonulása",
+      "C) A választások bojkottálása",
+      "D) A demokratikus reformok bevezetése"
+     ],
+     "question": "Milyen események zajlottak a magyarországi választások során 1945-ben?",
+     "explanation": "A 1945-ös választások során a kommunista párt győzelme következett be, amely a demokratikus intézmények felszámolásához vezetett.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A Kisgazdapárt abszolút többséget szerzett",
+      "B) A szovjet csapatok kivonulása",
+      "C) A választások bojkottálása",
+      "D) A demokratikus reformok bevezetése"
+     ],
+     "question": "Milyen események zajlottak a magyarországi választások során 1945-ben?",
+     "explanation": "Az 1945-ös, viszonylag szabad választáson a Független Kisgazdapárt 57%-ot kapott, a kommunisták csak 17%-ot. A szovjet nyomásra mégis koalíciós kormány alakult, amelyben a kommunisták kapták a belügyminisztériumot.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-005",
+   "lesson_id": "89fdbb72-4be2-4e1b-8af8-65f4cc5a16ec",
+   "block_id": "ab11e1da-58d0-4209-a1aa-271d7c6c8e84",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az 1945-ös választásokon „a szavazás nem volt teljesen szabad, mivel a kommunisták erőszakos módszerekkel próbálták megakadályozni a politikai ellenfelek érvényesülését”.",
+   "explanation": "Az 1945-ös választás a korszak legszabadabb választása volt (a Kisgazdapárt 57%-kal nyert). Az 1947-es „kékcédulás” választáson csaltak a kommunisták.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1945_Hungarian_parliamentary_election",
+     "title": "1945 Hungarian parliamentary election",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1947_Hungarian_parliamentary_election",
+     "title": "1947 Hungarian parliamentary election",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az 1945-ös választások után a kommunista párt fokozatosan megszerezte a hatalmat Magyarországon, amelyet a szovjet támogatás is segített. A választások során a szavazás nem volt teljesen szabad, mivel a kommunisták erőszakos módszerekkel próbálták megakadályozni a politikai ellenfelek érvényesülését. A 1947-es választások során a kommunista párt már nyíltan manipulálta a választási folyamatokat, ami véglegesen megszilárdította a hatalmát. E választások jelentősége abban rejlik, hogy a demokratikus keretek között a kommunista diktatúra kiépítése megkezdődött.",
+     "type": "text",
+     "heading": "Az 1945-ös és 1947-es választások",
+     "key_term": "választások"
+    },
+    "after": {
+     "body": "Az 1945-ös, viszonylag szabad választást a Független Kisgazdapárt nyerte 57%-kal, a kommunisták csak 17%-ot kaptak. A szovjet támogatással a kommunista párt ennek ellenére fokozatosan megszerezte a hatalmat. Az 1947-es választások során a kommunista párt már nyíltan manipulálta a választási folyamatokat, ami véglegesen megszilárdította a hatalmát. E választások jelentősége abban rejlik, hogy a demokratikus keretek között a kommunista diktatúra kiépítése megkezdődött.",
+     "type": "text",
+     "heading": "Az 1945-ös és 1947-es választások",
+     "key_term": "választások"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-006",
+   "lesson_id": null,
+   "block_id": "b3d5bc67-62f6-469f-93be-07fecaa06b48",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "options[1], explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik évben zajlott le a választás…?” — megjelölt: 1948.",
+   "explanation": "1948-ban nem volt választás; az 1947-es „kékcédulás” választáson szerezték meg csalással a kommunisták a legtöbb szavazatot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1947_Hungarian_parliamentary_election",
+     "title": "1947 Hungarian parliamentary election",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1945",
+      "B) 1948",
+      "C) 1956",
+      "D) 1944"
+     ],
+     "question": "Melyik évben zajlott le a választás Magyarországon, amely a kommunista hatalom megerősödéséhez vezetett?",
+     "explanation": "A 1948-as választás során a kommunista párt megszerezte a hatalmat, ami a Rákosi-diktatúra kezdetét jelentette.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1945",
+      "B) 1947",
+      "C) 1956",
+      "D) 1944"
+     ],
+     "question": "Melyik évben zajlott le a választás Magyarországon, amely a kommunista hatalom megerősödéséhez vezetett?",
+     "explanation": "Az 1947-es „kékcédulás” választáson a kommunisták csalással (több helyen is szavazó híveik kék cédulákkal) lettek a legerősebb párt; ezután már semmi sem állta útjukat a diktatúra felé.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-007",
+   "lesson_id": null,
+   "block_id": "b3d5bc67-62f6-469f-93be-07fecaa06b48",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 5,
+   "field": "options[0], explanation",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Rákosi 1948 után „a miniszterelnök és a párt főtitkára” volt.",
+   "explanation": "Rákosi a párt főtitkára volt; miniszterelnök csak 1952–1953 között.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/M%C3%A1ty%C3%A1s_R%C3%A1kosi",
+     "title": "Mátyás Rákosi",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Ő volt a miniszterelnök és a párt főtitkára",
+      "B) Ő volt a köztársasági elnök",
+      "C) Ő volt a főbíró",
+      "D) Ő volt a külügyminiszter"
+     ],
+     "question": "Milyen politikai szerepet játszott Rákosi Mátyás 1948 után?",
+     "explanation": "Rákosi Mátyás 1948 után a miniszterelnök és a párt főtitkára volt, irányítva a Rákosi-diktatúrát.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A kommunista párt főtitkára, az ország teljhatalmú vezetője",
+      "B) Ő volt a köztársasági elnök",
+      "C) Ő volt a főbíró",
+      "D) Ő volt a külügyminiszter"
+     ],
+     "question": "Milyen politikai szerepet játszott Rákosi Mátyás 1948 után?",
+     "explanation": "Rákosi Mátyás a Magyar Dolgozók Pártja főtitkáraként irányította az országot; 1952–1953-ban miniszterelnök is volt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-008",
+   "lesson_id": "89fdbb72-4be2-4e1b-8af8-65f4cc5a16ec",
+   "block_id": "93c75d5c-e6f3-4717-9ce7-9348b48b62bd",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "question, correct, explanation",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mikor zajlott le a szovjet megszállás?” — megjelölt: 1945.",
+   "explanation": "A szovjet csapatok 1944 őszén léptek Magyarország területére (a C) válasz), és 1991-ig maradtak; a kérdés így kétértelmű.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Budapest",
+     "title": "Siege of Budapest",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1945",
+      "B) 1947",
+      "C) 1944",
+      "D) 1946"
+     ],
+     "question": "Mikor zajlott le a szovjet megszállás Magyarországon?",
+     "explanation": "A szovjet megszállás 1945-ben kezdődött, ami alapvetően befolyásolta Magyarország politikai jövőjét.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1945",
+      "B) 1947",
+      "C) 1944",
+      "D) 1946"
+     ],
+     "question": "Melyik évben léptek a szovjet csapatok Magyarország területére?",
+     "explanation": "A szovjet hadsereg 1944 szeptemberében-októberében lépett Magyarország területére; a harcok 1945 áprilisában értek véget, a szovjet csapatok pedig egészen 1991-ig az országban maradtak.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-009",
+   "lesson_id": "89fdbb72-4be2-4e1b-8af8-65f4cc5a16ec",
+   "block_id": "ab11e1da-58d0-4209-a1aa-271d7c6c8e84",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„több százezer német állampolgárt” telepítettek ki; „a magyarok is szenvedtek, mivel sokukat a szovjet hatóságok elítélték és kitelepítették”.",
+   "explanation": "Magyarországról 1946–48-ban kb. 185–200 ezer német nemzetiségű magyar állampolgárt telepítettek ki. A lakosságcsere a csehszlovák–magyar egyezmény alapján zajlott: a felvidéki magyarokat Csehszlovákia telepítette át Magyarországra.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Expulsion_of_Germans_from_Hungary_after_World_War_II",
+     "title": "Expulsion of Germans from Hungary after World War II",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A háború végén a német kisebbséget bűnbakká tették a háborús eseményekért, és tömeges kitelepítésekre került sor. A kitelepítések során több százezer német állampolgárt kényszerítettek elhagyni az országot, ami jelentős demográfiai változásokat idézett elő. Ezen kívül a magyarok is szenvedtek, mivel sokukat a szovjet hatóságok elítélték és kitelepítették. A lakosságcsere politikája hozzájárult a politikai feszültségek fokozódásához és a nemzeti identitás válságához.",
+     "type": "text",
+     "heading": "Bűnbakká tett németek és magyarok – kitelepítések, lakosságcsere",
+     "key_term": "kitelepítések"
+    },
+    "after": {
+     "body": "A háború végén a német kisebbséget bűnbakká tették a háborús eseményekért, és tömeges kitelepítésekre került sor. A kitelepítések során mintegy 200 ezer német nemzetiségű magyar állampolgárt kényszerítettek elhagyni az országot, ami jelentős demográfiai változásokat idézett elő. A csehszlovák–magyar lakosságcsere során pedig a felvidéki magyarok tízezreit telepítették át Magyarországra. A lakosságcsere politikája hozzájárult a politikai feszültségek fokozódásához és a nemzeti identitás válságához.",
+     "type": "text",
+     "heading": "Bűnbakká tett németek és magyarok – kitelepítések, lakosságcsere",
+     "key_term": "kitelepítések"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-010",
+   "lesson_id": "efebd6cb-41af-4ddb-96c6-1138e1e6e05b",
+   "block_id": "3d710127-7cef-49ba-b234-276c4973b981",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1949-ben tartották az első választásokat Magyarországon, ahol a Magyar Dolgozók Pártja (MDP) egyedüli jelöltlistával indult.”",
+   "explanation": "1945-ben és 1947-ben is volt választás. 1949-ben a Magyar Függetlenségi Népfront egyetlen közös listáján lehetett szavazni (ezt a kommunisták irányították).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1949_Hungarian_parliamentary_election",
+     "title": "1949 Hungarian parliamentary election",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Rákosi-diktatúra idején, 1949-ben tartották az első választásokat Magyarországon, ahol a Magyar Dolgozók Pártja (MDP) egyedüli jelöltlistával indult. Ezek a választások nem voltak szabadok és demokratikusak, mivel a választási rendszer a kommunista párt hatalmának megszilárdítását szolgálta. A választási eredményeket manipulálták, és a szavazókra nyomást gyakoroltak, hogy a kommunista párt jelöltjeire szavazzanak. Az 1949-es választások után az MDP teljes politikai kontrollt szerzett az ország felett, és megkezdődött a kommunista diktatúra kiépítése. A választások formálisan a népképviseletet hivatottak biztosítani, de valójában a pártállam eszközei voltak.",
+     "type": "text",
+     "heading": "Választások Magyarországon a Rákosi-diktatúra idején",
+     "key_term": "választások Magyarországon 1949"
+    },
+    "after": {
+     "body": "A Rákosi-diktatúra idején, 1949-ben tartották az első olyan választást Magyarországon, ahol csak egyetlen lista, a kommunisták irányította Magyar Függetlenségi Népfront listája szerepelt. Ezek a választások nem voltak szabadok és demokratikusak, mivel a választási rendszer a kommunista párt hatalmának megszilárdítását szolgálta. A választási eredményeket manipulálták, és a szavazókra nyomást gyakoroltak, hogy a kommunista párt jelöltjeire szavazzanak. Az 1949-es választások után az MDP teljes politikai kontrollt szerzett az ország felett, és megkezdődött a kommunista diktatúra kiépítése. A választások formálisan a népképviseletet hivatottak biztosítani, de valójában a pártállam eszközei voltak.",
+     "type": "text",
+     "heading": "Választások Magyarországon a Rákosi-diktatúra idején",
+     "key_term": "választások Magyarországon 1949"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-011",
+   "lesson_id": "efebd6cb-41af-4ddb-96c6-1138e1e6e05b",
+   "block_id": "3d710127-7cef-49ba-b234-276c4973b981",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "Mindszentyt „1949-ben letartóztatták”.",
+   "explanation": "1948. december 26-án tartóztatták le; 1949 februárjában koncepciós perben életfogytiglanra ítélték.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/J%C3%B3zsef_Mindszenty",
+     "title": "József Mindszenty",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Rákosi-diktatúra idején az egyházüldözés széles körűvé vált. Mindszenty József, a katolikus egyház vezetője, a rendszer legfőbb ellenfele lett, mivel nyíltan bírálta a kommunista politikát. 1949-ben letartóztatták, és hosszú börtönbüntetésre ítélték. Az egyház üldözésének célja a vallásos élet kiirtása és a kommunista ideológia terjesztése volt.",
+     "type": "text",
+     "heading": "Az egyházüldözés",
+     "key_term": "Mindszenty József"
+    },
+    "after": {
+     "body": "A Rákosi-diktatúra idején az egyházüldözés széles körűvé vált. Mindszenty József, a katolikus egyház vezetője, a rendszer legfőbb ellenfele lett, mivel nyíltan bírálta a kommunista politikát. 1948 karácsonyán letartóztatták, és 1949-ben koncepciós perben életfogytiglani börtönre ítélték. Az egyház üldözésének célja a vallásos élet kiirtása és a kommunista ideológia terjesztése volt.",
+     "type": "text",
+     "heading": "Az egyházüldözés",
+     "key_term": "Mindszenty József"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-012",
+   "lesson_id": "23f622dc-f412-49c8-8090-5643ca9b4b9f",
+   "block_id": "8ea7e120-a139-4d04-8681-c1790c1e259a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A malenkij robot „több ezer magyar embert érintett”; „A magyarok gyakran politikai okokból kerültek a malenkij robot rendszerébe”.",
+   "explanation": "A becslések szerint mintegy 600–700 ezer magyar állampolgár (hadifoglyok és elhurcolt civilek) került szovjet fogságba, közülük kb. 200 ezer civil; a civileket többnyire önkényesen, létszámkvóták teljesítésére fogták össze („egy kis munkára”).",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/M%C3%A1lenkij_robot",
+     "title": "Málenkij robot",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A 'malenkij robot' kifejezés a szovjet munkatáborokban végzett kényszermunkára utal, amely a második világháború utáni években több ezer magyar embert érintett. A kényszermunka célja a gazdaság újjáépítése volt, de a munkakörülmények rendkívül embertelenek voltak. A magyarok gyakran politikai okokból kerültek a malenkij robot rendszerébe, amely a szovjet befolyás növelésének eszközévé vált. Ez a jelenség a magyar történelem szempontjából a szovjetizálás egyik legfájdalmasabb aspektusa.",
+     "type": "text",
+     "heading": "Malenkij robot: a kényszermunka rendszere",
+     "key_term": "malenkij robot"
+    },
+    "after": {
+     "body": "A 'malenkij robot' kifejezés a szovjet munkatáborokban végzett kényszermunkára utal, amely a második világháború végén és utána több százezer magyar embert érintett. A kényszermunka célja a gazdaság újjáépítése volt, de a munkakörülmények rendkívül embertelenek voltak. A civileket többnyire önkényesen gyűjtötték össze azzal, hogy „egy kis munkára” (oroszul: malenkaja rabota) viszik őket — sokan évekig nem térhettek haza, sokan soha. Ez a jelenség a magyar történelem szempontjából a szovjetizálás egyik legfájdalmasabb aspektusa.",
+     "type": "text",
+     "heading": "Malenkij robot: a kényszermunka rendszere",
+     "key_term": "malenkij robot"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-013",
+   "lesson_id": "23f622dc-f412-49c8-8090-5643ca9b4b9f",
+   "block_id": "8ea7e120-a139-4d04-8681-c1790c1e259a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "unverifiable",
+   "severity": "medium",
+   "claim": "„A Duna-delta, mint kitelepítési helyszín, számos magyar család számára jelentette az új élet kezdetét…”",
+   "explanation": "A kártya tartalma forrás nélküli. A tankönyvi kulcsfogalom valószínűleg a Duna–Fekete-tenger-csatorna kényszermunkatáboraira (1949–1953) utal, ahol a román kommunista rezsim politikai foglyok tízezreit, köztük erdélyi magyarokat dolgoztatott; a Bărăgan-síkságra 1951-ben kitelepített bánsági családok egy másik eset.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Danube%E2%80%93Black_Sea_Canal",
+     "title": "Danube–Black Sea Canal",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A Duna-delta, mint kitelepítési helyszín, számos magyar család számára jelentette az új élet kezdetét, de sokan szenvedtek az új környezetben. A delta középső területei elhagyatottak voltak, és a kitelepítetteknek meg kellett küzdeniük a megélhetésért. A Duna-delta területén a magyar közösségek megpróbálták megőrizni identitásukat, de a körülmények megnehezítették ezt. E kitelepítések következményei ma is érzékelhetők a magyar közösségek életében.",
+     "type": "text",
+     "heading": "Duna-delta: a kitelepítettek új otthona",
+     "key_term": "Duna-delta"
+    },
+    "after": {
+     "body": "Romániában a kommunista rezsim a Duna–Fekete-tenger-csatorna építésén (1949–1953) és a Duna-delta szigetein működő táborokban politikai foglyok tízezreit dolgoztatta embertelen körülmények között; köztük sok erdélyi magyar is volt. A foglyok kézi erővel ásták a csatornát, sokan belehaltak az éhezésbe és a betegségekbe. Az építkezést 1953-ban leállították, a csatorna csak 1984-ben készült el.",
+     "type": "text",
+     "heading": "Duna-delta: a kitelepítettek új otthona",
+     "key_term": "Duna-delta"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-014",
+   "lesson_id": "89fdbb72-4be2-4e1b-8af8-65f4cc5a16ec",
+   "block_id": "dadef50c-1523-468a-93c1-e39036adb729",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1945 áprilisában a Szovjetunió elfoglalja Berlint, ezzel véget ér a második világháború Európában.”",
+   "explanation": "Berlin 1945. május 2-án kapitulált; a háború Európában május 8-án ért véget Németország feltétel nélküli kapitulációjával.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Berlin",
+     "title": "Battle of Berlin",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1945 áprilisában a Szovjetunió elfoglalja Berlint, ezzel véget ér a második világháború Európában. A háború befejezése után a győztes hatalmak között megkezdődnek a területmegosztások és a politikai újrarendezések. A háborús pusztítás után a szovjet befolyás növekedése a kelet-európai országokban, így Magyarországon is, a kommunista rendszerek kiépítéséhez vezetett.",
+     "type": "world",
+     "year": "1945",
+     "heading": "A második világháború vége",
+     "link_hu": "A háború vége után a Szovjetunió terjeszkedése és befolyása hozzájárult a kommunista diktatúra kiépítéséhez Magyarországon."
+    },
+    "after": {
+     "body": "1945. május 2-án a szovjet csapatok elfoglalják Berlint; május 8-án Németország feltétel nélkül kapitulál, ezzel véget ér a második világháború Európában. A háború befejezése után a győztes hatalmak között megkezdődnek a területmegosztások és a politikai újrarendezések. A háborús pusztítás után a szovjet befolyás növekedése a kelet-európai országokban, így Magyarországon is, a kommunista rendszerek kiépítéséhez vezetett.",
+     "type": "world",
+     "year": "1945",
+     "heading": "A második világháború vége",
+     "link_hu": "A háború vége után a Szovjetunió terjeszkedése és befolyása hozzájárult a kommunista diktatúra kiépítéséhez Magyarországon."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-08-015",
+   "lesson_id": "89fdbb72-4be2-4e1b-8af8-65f4cc5a16ec",
+   "block_id": "dadef50c-1523-468a-93c1-e39036adb729",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az ENSZ megalakulása … hozzájárult a kelet-európai országok, így Magyarország szovjet befolyás alá kerüléséhez.”",
+   "explanation": "Az ENSZ-nek nincs köze Magyarország szovjet befolyás alá kerüléséhez; ennek oka a szovjet katonai megszállás volt. Magyarország 1955-ben lett ENSZ-tag.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/United_Nations",
+     "title": "United Nations",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1945-ben, a második világháború után az Egyesült Nemzetek Szervezete (ENSZ) megalakul, amelynek célja a nemzetközi béke és biztonság fenntartása. Az ENSZ a háború utáni rend kialakításában játszik szerepet, és az új világrend kereteit fekteti le. Az ENSZ határozatai és politikai irányvonala befolyásolják a tagállamok közötti kapcsolatokat, beleértve a kelet-európai országokat is.",
+     "type": "world",
+     "year": "1945",
+     "heading": "Az Egyesült Nemzetek Szervezetének megalakulása",
+     "link_hu": "Az ENSZ megalakulása és a nemzetközi politikai helyzet hozzájárult a kelet-európai országok, így Magyarország szovjet befolyás alá kerüléséhez."
+    },
+    "after": {
+     "body": "1945-ben, a második világháború után az Egyesült Nemzetek Szervezete (ENSZ) megalakul, amelynek célja a nemzetközi béke és biztonság fenntartása. Az ENSZ a háború utáni rend kialakításában játszik szerepet, és az új világrend kereteit fekteti le. Az ENSZ határozatai és politikai irányvonala befolyásolják a tagállamok közötti kapcsolatokat, beleértve a kelet-európai országokat is.",
+     "type": "world",
+     "year": "1945",
+     "heading": "Az Egyesült Nemzetek Szervezetének megalakulása",
+     "link_hu": "Magyarországot a nagyhatalmak csak 1955-ben vették fel az ENSZ-be; addig a volt vesztes államként várnia kellett."
+    }
+   }
+  }
+ ]
+}
