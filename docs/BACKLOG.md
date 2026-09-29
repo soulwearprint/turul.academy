@@ -26,6 +26,18 @@ idea when a session gets archived." Added 2026-07-07._
   trivia). Automated checks still missed 2 subtle slips → **human review before rolling out
   to more topics.** To pull it: `UPDATE content_blocks SET is_active=false WHERE mode='deep'`.
 
+- **Visual-tab images (variant C) — built 2026-09-29; 6 PHYS-78-03 diagrams applied (`card.diagram`).**
+  Tier order: image/timeline (`card.image`, `card.timeline`) → in-house SVG (`card.diagram`, SketchDiagram
+  shapes) → text placeholder. Pieces: `database/migrations/v10_media_refs.sql` (apply first),
+  `content/generators/source_media.py` (Commons search, licence whitelist, writes *pending*
+  candidates only; needs network access to commons.wikimedia.org + upload.wikimedia.org),
+  `content/generators/apply_media.py` (dry-run by default; matches cards by keyword),
+  `content/media/PHYS-78-03_diagrams.json` (6 authored diagrams). To roll out:
+  `python apply_media.py --nat-id PHYS-78-03 --file ../media/PHYS-78-03_diagrams.json` (check the
+  dry-run card matches) then `--apply`. Photos: a human must check each licence and set
+  `status: approved`; images are self-hosted in `the `content-media` Storage bucket (stage in content/media/staging/), never hotlinked.
+  Still open: History timelines/maps generator, quarterly link/licence re-check job, curator UI.
+
 - **Emelt-szint (advanced depth layer).** Schema-ready: `content_blocks.level` already supports
   `alap` (default, in use) vs `emelt` (reserved, unused). Needs: a decision on which topics get
   an emelt version, a deeper-prompt variant of the generator, and a UI toggle/tab to switch
