@@ -49,12 +49,29 @@ def to_candidate(page, tema, match):
                       "credit": f"{author} — Wikimedia Commons", "status": "pending"}}
 
 
+def get_with_backoff(url, params=None, tries=5, timeout=20, **kw):
+    """GET honouring Retry-After on 429 (Wikimedia robot policy); other errors raise immediately."""
+    import time, httpx
+    for attempt in range(tries):
+        r = httpx.get(url, headers={"User-Agent": UA}, params=params, timeout=timeout, **kw)
+        if r.status_code != 429:
+            r.raise_for_status()
+            return r
+        try:
+            wait = int(r.headers.get("retry-after", ""))
+        except ValueError:
+            wait = 15 * (attempt + 1)
+        if attempt == tries - 1:
+            break
+        print(f"429 from {httpx.URL(url).host}; waiting {wait}s (attempt {attempt + 1}/{tries})", file=sys.stderr)
+        time.sleep(min(wait, 120))
+    r.raise_for_status()
+
+
 def search(query, tema, match, limit):
-    import httpx
-    r = httpx.get(API, headers={"User-Agent": UA}, timeout=20, params={
+    r = get_with_backoff(API, {
         "action": "query", "format": "json", "generator": "search", "gsrnamespace": 6, "gsrlimit": limit,
         "gsrsearch": query, "prop": "imageinfo", "iiprop": "url|mime|extmetadata", "iiurlwidth": 900})
-    r.raise_for_status()
     pages = (r.json().get("query") or {}).get("pages", {})
     return [c for p in sorted(pages.values(), key=lambda p: p.get("index", 0)) if (c := to_candidate(p, tema, match))]
 
@@ -69,7 +86,7 @@ def download(path):
         ext = os.path.splitext(m["download_url"].split("?")[0])[1] or ".jpg"
         name = re.sub(r"[^a-z0-9]+", "-", it["title"].rsplit(".", 1)[0].lower()).strip("-")[:60] + ext
         os.makedirs(os.path.join(PUBLIC, nat), exist_ok=True)
-        r = httpx.get(m["download_url"], headers={"User-Agent": UA}, timeout=60, follow_redirects=True); r.raise_for_status()
+        r = get_with_backoff(m["download_url"], timeout=60, follow_redirects=True)
         open(os.path.join(PUBLIC, nat, name), "wb").write(r.content)
         m["src"] = f"/media/{nat}/{name}"; m["verified_at"] = m.get("verified_at") or __import__("datetime").datetime.utcnow().isoformat() + "Z"
         print("✓", m["src"])
