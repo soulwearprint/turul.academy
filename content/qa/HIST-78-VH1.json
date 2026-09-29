@@ -1,0 +1,417 @@
+{
+ "nat_id": "HIST-78-VH1",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 17,
+  "cards": 87,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "world",
+   "quiz"
+  ],
+  "lint_only": [],
+  "note": "text/deep hand-corrected earlier; only world and quiz checked"
+ },
+ "findings": [
+  {
+   "id": "HIST-78-VH1-001",
+   "lesson_id": "5c08f606-ebd6-4fee-a611-b2e1a551c105",
+   "block_id": "aad15944-53fa-4224-820e-033e81062095",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body, link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A versailles-i békeszerződés „súlyos terheket rótt … beleértve Magyarországot is, amely területeit jelentősen elveszíti”; „véglegesen lezárja az első világháborút”",
+   "explanation": "A versailles-i szerződést (1919. június 28.) csak Németországgal kötötték. Magyarország területi veszteségeit a trianoni békeszerződés (1920. június 4.) rögzítette; a háborút a párizsi környéki békék sora zárta le (Saint-Germain, Neuilly, Trianon, Sèvres).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles",
+     "title": "Treaty of Versailles",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Trianon",
+     "title": "Treaty of Trianon",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1919 júniusában aláírják a versailles-i békeszerződést, amely véglegesen lezárja az első világháborút. A szerződés következményeként a győztes hatalmak súlyos terheket róttak a vesztes országokra, beleértve Magyarországot is, amely területeit jelentősen elveszíti. A békeszerződés következményei hozzájárultak a későbbi politikai instabilitáshoz Magyarországon.",
+     "type": "world",
+     "year": "1919",
+     "heading": "A versailles-i békeszerződés aláírása",
+     "link_hu": "A versailles-i békeszerződés következményeként Magyarország területi veszteségei közvetlenül hozzájárultak az ellenforradalom megerősödéséhez."
+    },
+    "after": {
+     "body": "1919. június 28-án aláírták a versailles-i békeszerződést Németországgal. A szerződés súlyos jóvátételt, területi veszteségeket és katonai korlátozásokat rótt Németországra. A többi vesztes állammal külön békéket kötöttek a Párizs környéki kastélyokban: Magyarországgal 1920-ban Trianonban.",
+     "type": "world",
+     "year": "1919",
+     "heading": "A versailles-i békeszerződés aláírása",
+     "link_hu": "A versailles-i béke mintát adott a többi Párizs környéki békének; Magyarország sorsáról az 1920-as trianoni békeszerződés döntött."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-VH1-002",
+   "lesson_id": "5c08f606-ebd6-4fee-a611-b2e1a551c105",
+   "block_id": "aad15944-53fa-4224-820e-033e81062095",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body, year",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1918 végén a győztes hatalmak megkezdik a párizsi békekonferenciát” (year: 1918)",
+   "explanation": "A párizsi békekonferencia 1919. január 18-án nyílt meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Paris_Peace_Conference_(1919%E2%80%931920)",
+     "title": "Paris Peace Conference (1919–1920)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1918 végén a győztes hatalmak megkezdik a párizsi békekonferenciát, amelynek célja a háború utáni új világrend kialakítása. A konferencia során a győztes hatalmak döntései jelentős hatással lesznek a közép-európai térség határaira és politikai berendezkedésére. A békeszerződések következményeként új államok jönnek létre, és a területi átrendeződések megkezdődnek.",
+     "type": "world",
+     "year": "1918",
+     "heading": "A párizsi békekonferencia megkezdése",
+     "link_hu": "A párizsi békekonferencia döntései közvetlenül befolyásolják Magyarország területi integritását, ami a későbbi politikai feszültségekhez vezet."
+    },
+    "after": {
+     "body": "1919. január 18-án a győztes hatalmak megnyitják a párizsi békekonferenciát, amelynek célja a háború utáni új világrend kialakítása. A konferencia során a győztes hatalmak döntései jelentős hatással lesznek a közép-európai térség határaira és politikai berendezkedésére. A békeszerződések következményeként új államok jönnek létre, és a területi átrendeződések megkezdődnek.",
+     "type": "world",
+     "year": "1919",
+     "heading": "A párizsi békekonferencia megkezdése",
+     "link_hu": "A párizsi békekonferencia döntései közvetlenül befolyásolják Magyarország területi integritását, ami a későbbi politikai feszültségekhez vezet."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-VH1-003",
+   "lesson_id": "5c08f606-ebd6-4fee-a611-b2e1a551c105",
+   "block_id": "aad15944-53fa-4224-820e-033e81062095",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A német császárság összeomlása közvetlenül hozzájárult a Károlyi Mihály vezette forradalom kialakulásához”",
+   "explanation": "Időrendi hiba: az őszirózsás forradalom 1918. október 31-én győzött Budapesten, a német novemberi forradalom és a császár lemondása (november 9.) ezután következett. A két összeomlás párhuzamos volt, nem ok-okozati.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Aster_Revolution",
+     "title": "Aster Revolution",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/German_revolution_of_1918%E2%80%931919",
+     "title": "German revolution of 1918–1919",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1918 novemberében a német császárság véget ér, amikor a hadsereg megadja magát, és a forradalmak elérik Németországot. A német politikai rendszer megváltozása és a köztársaság kikiáltása közvetlenül befolyásolja a közép-európai államokat, beleértve Magyarországot is. Az események gyorsulása hozzájárult a magyar forradalom kibontakozásához.",
+     "type": "world",
+     "year": "1918",
+     "heading": "A német császárság összeomlása",
+     "link_hu": "A német császárság összeomlása közvetlenül hozzájárult a Károlyi Mihály vezette forradalom kialakulásához Magyarországon."
+    },
+    "after": {
+     "body": "1918 novemberében a német császárság véget ér, amikor a hadsereg megadja magát, és a forradalmak elérik Németországot. A német politikai rendszer megváltozása és a köztársaság kikiáltása közvetlenül befolyásolja a közép-európai államokat, beleértve Magyarországot is. Az események gyorsulása hozzájárult a magyar forradalom kibontakozásához.",
+     "type": "world",
+     "year": "1918",
+     "heading": "A német császárság összeomlása",
+     "link_hu": "A központi hatalmak összeomlása egyszerre zajlott: Budapesten már október 31-én győzött az őszirózsás forradalom, november 16-án pedig kikiáltották a köztársaságot."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-VH1-004",
+   "lesson_id": "5c08f606-ebd6-4fee-a611-b2e1a551c105",
+   "block_id": "b4c93324-8b74-4cc6-a3c9-fe4f9cd66e64",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question, options, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Milyen reakciót váltott ki a fehér különítményesek tevékenysége?” — megjelölt: A) Változás a hatalom struktúrájában",
+   "explanation": "A kérdésre nincs tényszerű, egyértelmű válasz, a megjelölt opció semmitmondó. Javasolt: a fehérterror jellemzőire kérdezni.",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Nem tényszerű kérdés; a javítás a tankönyvi fehérterror-definíciót követi.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Változás a hatalom struktúrájában",
+      "B) Társadalmi béke",
+      "C) Kommunista támogatás",
+      "D) Különböző politikai pártok egyesülése"
+     ],
+     "question": "Milyen reakciót váltott ki a fehér különítményesek tevékenysége Magyarországon?",
+     "explanation": "A fehér különítményesek a tanácsköztársaság leverésére irányuló erőszakos akciókat hajtottak végre, ami hozzájárult a politikai hatalom visszaállításához Magyarországon.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A tiszti különítmények megtorlásai a tanácsköztársaság valódi vagy vélt hívei és zsidók ellen",
+      "B) Szabad választások és földosztás",
+      "C) A tanácsköztársaság kikiáltása",
+      "D) Az antant csapatainak kivonulása"
+     ],
+     "question": "Mi jellemezte a fehérterrort 1919–1920-ban?",
+     "explanation": "A tanácsköztársaság bukása után a tiszti különítmények (pl. Prónay Pál és Héjjas Iván egységei) törvényen kívüli megtorlásokat hajtottak végre a kommunisták, valódi vagy vélt támogatóik és zsidók ellen.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-VH1-005",
+   "lesson_id": "5c08f606-ebd6-4fee-a611-b2e1a551c105",
+   "block_id": "b4c93324-8b74-4cc6-a3c9-fe4f9cd66e64",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Ki volt Károlyi Mihály szerepe…”",
+   "explanation": "Nyelvtani hiba: „Mi volt … szerepe”.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A tanácsköztársaság vezetője",
+      "B) Az első magyar köztársaság elnöke",
+      "C) A fehér különítményesek vezetője",
+      "D) Lenin tanácsadója"
+     ],
+     "question": "Ki volt Károlyi Mihály szerepe a magyar történelemben 1918-1919-ben?",
+     "explanation": "Károlyi Mihály az 1918-as forradalom után az első magyar köztársaság elnökévé vált, de a tanácsköztársaság idején, a kommunisták hatalomra jutása után politikai szerepe megváltozott.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A tanácsköztársaság vezetője",
+      "B) Az első magyar köztársaság elnöke",
+      "C) A fehér különítményesek vezetője",
+      "D) Lenin tanácsadója"
+     ],
+     "question": "Mi volt Károlyi Mihály szerepe a magyar történelemben 1918-1919-ben?",
+     "explanation": "Károlyi Mihály az 1918-as forradalom után az első magyar köztársaság elnökévé vált, de a tanácsköztársaság idején, a kommunisták hatalomra jutása után politikai szerepe megváltozott.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-VH1-006",
+   "lesson_id": "5b3c752f-1a0a-4289-bb68-db0002cedfe7",
+   "block_id": "901ed830-715d-48a6-9c8a-09befd9dd3ab",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Tisza István a háború alatt Magyarország miniszterelnöke volt”",
+   "explanation": "Tisza 1913 júniusától 1917 májusáig (lemondás; utódja Esterházy Móric, majd Wekerle Sándor) volt miniszterelnök; a háború utolsó másfél évében már nem.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Istv%C3%A1n_Tisza",
+     "title": "István Tisza",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Ő volt a Magyar Királyság miniszterelnöke",
+      "B) Ő volt a hadügyminiszter",
+      "C) Ő volt a külügyminiszter",
+      "D) Ő volt a pénzügyminiszter"
+     ],
+     "question": "Milyen szerepet játszott Tisza István Magyarország politikai életében az első világháború alatt?",
+     "explanation": "Tisza István a háború alatt Magyarország miniszterelnöke volt, és politikai döntései jelentősen befolyásolták az ország háborús helyzetét.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Ő volt a Magyar Királyság miniszterelnöke",
+      "B) Ő volt a hadügyminiszter",
+      "C) Ő volt a külügyminiszter",
+      "D) Ő volt a pénzügyminiszter"
+     ],
+     "question": "Milyen szerepet játszott Tisza István Magyarország politikai életében az első világháború alatt?",
+     "explanation": "Tisza István 1913 és 1917 között, a háború első éveiben volt Magyarország miniszterelnöke; 1917 májusában lemondott, 1918. október 31-én meggyilkolták.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-VH1-007",
+   "lesson_id": null,
+   "block_id": "7d6cc96c-8baf-483a-b5e4-5eb6673f01e4",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Tisza István a magyar miniszterelnök volt az első világháború alatt”",
+   "explanation": "Csak 1917 májusáig volt miniszterelnök.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Istv%C3%A1n_Tisza",
+     "title": "István Tisza",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A magyar miniszterelnök az első világháború alatt",
+      "B) A bolsevik vezető",
+      "C) A trianoni békediktátum aláírója",
+      "D) A központi hatalmak katonai vezetője"
+     ],
+     "question": "Ki volt Tisza István?",
+     "explanation": "Tisza István a magyar miniszterelnök volt az első világháború alatt, aki fontos szerepet játszott a háború politikai irányításában.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A magyar miniszterelnök az első világháború alatt",
+      "B) A bolsevik vezető",
+      "C) A trianoni békediktátum aláírója",
+      "D) A központi hatalmak katonai vezetője"
+     ],
+     "question": "Ki volt Tisza István?",
+     "explanation": "Tisza István 1913 és 1917 között, a világháború első éveiben volt Magyarország miniszterelnöke, és fontos szerepet játszott a háború politikai irányításában.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-VH1-008",
+   "lesson_id": null,
+   "block_id": "7d6cc96c-8baf-483a-b5e4-5eb6673f01e4",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "options[2], explanation",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "Kisantant: „C) A román és csehszlovák állam szövetsége”; „a központi hatalmak ellen jött létre”",
+   "explanation": "A kisantantot 1920–21-ben Csehszlovákia, Románia és a Szerb–Horvát–Szlovén Királyság (Jugoszlávia) hozta létre, a háború után, a magyar revízió és a Habsburg-restauráció ellen — nem a központi hatalmak ellen.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Little_Entente",
+     "title": "Little Entente",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Egy katonai szövetség a központi hatalmak ellen",
+      "B) A magyar nemzeti mozgalom",
+      "C) A román és csehszlovák állam szövetsége",
+      "D) A bolsevik párt neve"
+     ],
+     "question": "Mi a kisantant?",
+     "explanation": "A kisantant a román, csehszlovák és jugoszláv államok szövetsége volt, amely a központi hatalmak ellen jött létre.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Egy katonai szövetség a központi hatalmak ellen",
+      "B) A magyar nemzeti mozgalom",
+      "C) Csehszlovákia, Románia és Jugoszlávia szövetsége",
+      "D) A bolsevik párt neve"
+     ],
+     "question": "Mi a kisantant?",
+     "explanation": "A kisantantot 1920–1921-ben Csehszlovákia, Románia és Jugoszlávia hozta létre, hogy megakadályozza a trianoni határok magyar revízióját és a Habsburgok visszatérését.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-VH1-009",
+   "lesson_id": "1b9ed931-690d-426d-b3b2-1e2092387ca7",
+   "block_id": "eb86f40e-abbf-4886-804c-3c8a4684bec6",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "heading",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "Címsor: „A Társadalmi Szerződés és a Népszövetség megalakulása”",
+   "explanation": "A „Társadalmi Szerződés” Rousseau műve, semmi köze a Népszövetséghez (alapdokumentuma a Népszövetség Egyezségokmánya). A Népszövetség 1920. január 10-én kezdte meg működését.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/League_of_Nations",
+     "title": "League of Nations",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1920-ban a Népszövetség megalakult, amely a világbéke fenntartására és a nemzetközi konfliktusok megelőzésére jött létre. A szervezet célja az volt, hogy a világháború utáni feszültségeket kezelje, és elősegítse a nemzetek közötti együttműködést. A Népszövetség keretein belül a nemzetek közötti viták békés rendezésére törekedtek, azonban a tagállamok közötti különbségek és a hatékony döntéshozatal hiánya miatt sok esetben eredménytelennek bizonyult.",
+     "type": "world",
+     "year": "1920",
+     "heading": "A Társadalmi Szerződés és a Népszövetség megalakulása",
+     "link_hu": "A Népszövetség megalakulása közvetlenül kapcsolódik a Trianoni békediktátumhoz, mivel a békeszerződés a nemzetközi közösség új keretein belül próbálta rendezni a háború utáni helyzetet, amely Magyarország területi veszteségeit is magában foglalta."
+    },
+    "after": {
+     "body": "1920-ban a Népszövetség megalakult, amely a világbéke fenntartására és a nemzetközi konfliktusok megelőzésére jött létre. A szervezet célja az volt, hogy a világháború utáni feszültségeket kezelje, és elősegítse a nemzetek közötti együttműködést. A Népszövetség keretein belül a nemzetek közötti viták békés rendezésére törekedtek, azonban a tagállamok közötti különbségek és a hatékony döntéshozatal hiánya miatt sok esetben eredménytelennek bizonyult.",
+     "type": "world",
+     "year": "1920",
+     "heading": "A Népszövetség megalakulása",
+     "link_hu": "A Népszövetség megalakulása közvetlenül kapcsolódik a Trianoni békediktátumhoz, mivel a békeszerződés a nemzetközi közösség új keretein belül próbálta rendezni a háború utáni helyzetet, amely Magyarország területi veszteségeit is magában foglalta."
+    }
+   }
+  }
+ ]
+}
