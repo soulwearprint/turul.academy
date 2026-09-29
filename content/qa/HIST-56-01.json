@@ -1,0 +1,673 @@
+{
+ "nat_id": "HIST-56-01",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 13,
+  "cards": 65,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-56-01-001",
+   "lesson_id": "19feffaf-e552-4a6c-a933-9cce511ddd7d",
+   "block_id": "41a22423-05c2-4716-ad1e-85e7892739f1",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Az őskor Kr. e. 5000 – Kr. e. 1000 között tartott (megjelölt helyes válasz).",
+   "explanation": "Az őskor az ember megjelenésétől az írás kialakulásáig (kb. Kr. e. 3500–3000) tart; Kr. e. 1000 már bőven ókor. A 'C' válasz (Kr. e. 3000–500) is ókori időszak, így nincs helyes válasz.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/T%C3%B6rt%C3%A9nelmi_korszakol%C3%A1sok",
+     "title": "Történelmi korszakolások",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kr. e. 5000 - Kr. e. 1000",
+      "B) Kr. u. 1000 - Kr. u. 1500",
+      "C) Kr. e. 3000 - Kr. e. 500",
+      "D) Kr. u. 1500 - Kr. u. 1900"
+     ],
+     "question": "Melyik időszak tartozik az őskorhoz?",
+     "explanation": "Az őskor a legkorábbi emberi civilizációk időszaka, amely Kr. e. 5000 és Kr. e. 1000 között terjed.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az ember megjelenésétől az írás kialakulásáig (kb. Kr. e. 3000-ig)",
+      "B) Kr. u. 1000 - Kr. u. 1500",
+      "C) Kr. u. 476 – Kr. u. 1492",
+      "D) Kr. u. 1500 - Kr. u. 1900"
+     ],
+     "question": "Melyik időszak tartozik az őskorhoz?",
+     "explanation": "Az őskor az ember megjelenésétől az írás kialakulásáig tart. Az írás Kr. e. 3500–3000 körül jelent meg, ezzel kezdődött az ókor.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-002",
+   "lesson_id": "19feffaf-e552-4a6c-a933-9cce511ddd7d",
+   "block_id": "41a22423-05c2-4716-ad1e-85e7892739f1",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options[0], explanation",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "Az újkort a feudalizmus megszűnése jellemzi, a 15. századtól.",
+   "explanation": "A feudalizmus (Magyarországon a jobbágyrendszer) csak az újkor végén, a 18–19. században szűnt meg. Az újkort a földrajzi felfedezések, a reformáció és a polgári forradalmak jellemzik (1492–1789).",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/T%C3%B6rt%C3%A9nelmi_korszakol%C3%A1sok",
+     "title": "Történelmi korszakolások",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A feudalizmus megszűnése és a polgári társadalom kialakulása.",
+      "B) A római birodalom megerősödése.",
+      "C) Az őskori vadászó-gyűjtögető életmód.",
+      "D) A középkori vallási háborúk."
+     ],
+     "question": "Mi jellemzi az újkort?",
+     "explanation": "Az újkor a feudalizmus megszűnésével és a polgári társadalom kialakulásával jellemezhető, ami a 15. századtól kezdődően zajlott.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A földrajzi felfedezések, a reformáció és a polgári forradalmak kora.",
+      "B) A római birodalom megerősödése.",
+      "C) Az őskori vadászó-gyűjtögető életmód.",
+      "D) A középkori vallási háborúk."
+     ],
+     "question": "Mi jellemzi az újkort?",
+     "explanation": "Az újkor Amerika felfedezésétől (1492) a francia forradalomig (1789) tart. Ekkor fedezték fel az európaiak az új világrészeket, és ekkor alakult át Európa vallási és gazdasági élete.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-003",
+   "lesson_id": "19feffaf-e552-4a6c-a933-9cce511ddd7d",
+   "block_id": "41a22423-05c2-4716-ad1e-85e7892739f1",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question, options, explanation",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "A modern kort 1900-tól számítjuk (megjelölt helyes válasz).",
+   "explanation": "A magyar történelemtanítás a legújabb kort 1789-től (más felosztás szerint 1914-től) számítja; az 1900 nem használt korszakhatár. A kurzus témazáró kvíze közben azt tanítja, hogy a 'modern kor' a 15. században kezdődött — a két kvíz ellentmond egymásnak.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/T%C3%B6rt%C3%A9nelmi_korszakol%C3%A1sok",
+     "title": "Történelmi korszakolások",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://hu.wikipedia.org/wiki/Leg%C3%BAjabb_kor",
+     "title": "Legújabb kor",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1900-tól",
+      "B) 1500-tól",
+      "C) 1800-tól",
+      "D) 2000-től"
+     ],
+     "question": "Mikortól számítjuk a modern kort?",
+     "explanation": "A modern kort általában 1900-tól számítjuk, amikor a világ jelentős politikai, társadalmi és technológiai változásokon ment keresztül.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1789-től, a francia forradalomtól",
+      "B) 1492-től, Amerika felfedezésétől",
+      "C) 476-tól, Nyugatrómai Birodalom bukásától",
+      "D) 2000-től, az új évezredtől"
+     ],
+     "question": "Mikortól számítjuk a legújabb kort?",
+     "explanation": "A legújabb kort a francia forradalom kitörésétől (1789) számítjuk. Egyes felosztások az első világháború kezdetét (1914) tekintik határnak.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-004",
+   "lesson_id": "19feffaf-e552-4a6c-a933-9cce511ddd7d",
+   "block_id": "18945715-4210-4b2e-9dfb-542015e6a00b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A Kr. e. és Kr. u. időszámítás a történelem két fő időszakát jelöli”; a korszakok: őskor, ókor, középkor, újkor és modern kor.",
+   "explanation": "A Kr. e./Kr. u. csak a számolás kezdőpontja, nem két történelmi korszak. A magyar tanítás ötödik korszaka a legújabb kor.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/T%C3%B6rt%C3%A9nelmi_korszakol%C3%A1sok",
+     "title": "Történelmi korszakolások",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A történelem kronológiai felépítése segít megérteni az események időbeli elhelyezkedését. A Kr. e. és Kr. u. időszámítás a történelem két fő időszakát jelöli, amelyek között jelentős változások zajlottak. Az őskor, ókor, középkor, újkor és modern kor mind fontos szakaszai a magyar és egyetemes történelemnek. A kronológia lehetővé teszi, hogy a diákok összefüggéseket találjanak a különböző történelmi események között, és megértsék azok hatását a jelenre.",
+     "type": "text",
+     "heading": "Kronológia a történelemben",
+     "key_term": "kronológia"
+    },
+    "after": {
+     "body": "A történelem kronológiai felépítése segít megérteni az események időbeli elhelyezkedését. Az éveket Jézus születésétől számoljuk: ami előtte történt, az Krisztus előtti (Kr. e.), ami utána, az Krisztus utáni (Kr. u.). Az őskor, ókor, középkor, újkor és legújabb kor mind fontos szakaszai a magyar és egyetemes történelemnek. A kronológia lehetővé teszi, hogy a diákok összefüggéseket találjanak a különböző történelmi események között, és megértsék azok hatását a jelenre.",
+     "type": "text",
+     "heading": "Kronológia a történelemben",
+     "key_term": "kronológia"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-005",
+   "lesson_id": null,
+   "block_id": "9fd50c81-4f9a-4090-87e0-f5ab028024fd",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 1,
+   "field": "options[0], explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A középkor Kr. e. 500 – Kr. u. 1500 között tartott (megjelölt helyes válasz).",
+   "explanation": "A középkor Kr. u. 476-tól (Nyugatrómai Birodalom bukása) 1492-ig tart. A válasz saját magyarázata is ellentmond neki („a római birodalom bukásától”).",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/T%C3%B6rt%C3%A9nelmi_korszakol%C3%A1sok",
+     "title": "Történelmi korszakolások",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kr. e. 500 - Kr. u. 1500",
+      "B) Kr. e. 3000 - Kr. e. 500",
+      "C) Kr. u. 1500 - Kr. u. 1800",
+      "D) Kr. u. 1800 - napjainkig"
+     ],
+     "question": "Melyik időszakra jellemző a középkor?",
+     "explanation": "A középkor időszaka Kr. e. 500-tól Kr. u. 1500-ig terjed, amely a római birodalom bukásától a reneszánszig tart.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kr. u. 476 – Kr. u. 1492",
+      "B) Kr. e. 3000 - Kr. e. 500",
+      "C) Kr. u. 1500 - Kr. u. 1800",
+      "D) Kr. u. 1800 - napjainkig"
+     ],
+     "question": "Melyik időszakra jellemző a középkor?",
+     "explanation": "A középkor a Nyugatrómai Birodalom bukásától (476) Amerika felfedezéséig (1492) tart.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-006",
+   "lesson_id": null,
+   "block_id": "9fd50c81-4f9a-4090-87e0-f5ab028024fd",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 3,
+   "field": "question, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A modern kor a 15. században kezdődött.",
+   "explanation": "A 15. század végén (1492) az újkor kezdődik, nem a modern/legújabb kor. Ugyanez a lecke kvíze 1900-at mond a modern kor kezdetének.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/T%C3%B6rt%C3%A9nelmi_korszakol%C3%A1sok",
+     "title": "Történelmi korszakolások",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 15. század",
+      "B) 16. század",
+      "C) 17. század",
+      "D) 18. század"
+     ],
+     "question": "Melyik évszázadban kezdődött a modern kor?",
+     "explanation": "A modern kor a 15. században kezdődött, a reneszánsz és a felfedezések korával.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 15. század",
+      "B) 16. század",
+      "C) 17. század",
+      "D) 18. század"
+     ],
+     "question": "Melyik évszázadban kezdődött az újkor?",
+     "explanation": "Az újkor kezdetét Amerika felfedezéséhez (1492), vagyis a 15. század végéhez kötjük.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-007",
+   "lesson_id": null,
+   "block_id": "9fd50c81-4f9a-4090-87e0-f5ab028024fd",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 4,
+   "field": "options[2], explanation",
+   "verdict": "unverifiable",
+   "severity": "medium",
+   "claim": "Szent István 976 és 1038 között élt.",
+   "explanation": "István születési éve bizonytalan: a források 967-et, 969-et és 975-öt adják meg; a lexikonok '969/975 körül' formát használnak. A 976 egyik forrásban sem szerepel.",
+   "sources": [
+    {
+     "url": "https://lexikon.katolikus.hu/I/Istv%C3%A1n,%20I..html",
+     "title": "Magyar Katolikus Lexikon: István, I.",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://real.mtak.hu/176733/1/historica_110_003-010.pdf",
+     "title": "Kristó Gyula: Szent István születési ideje",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1000 - 1038",
+      "B) 1038 - 1077",
+      "C) 976 - 1038",
+      "D) 1200 - 1260"
+     ],
+     "question": "Mikor élt Szent István?",
+     "explanation": "Szent István, Magyarország első királya 976 és 1038 között élt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1000 - 1038",
+      "B) 1038 - 1077",
+      "C) kb. 975 – 1038",
+      "D) 1200 - 1260"
+     ],
+     "question": "Mikor élt Szent István?",
+     "explanation": "Szent István, Magyarország első királya 975 körül született (pontos születési éve bizonytalan) és 1038-ban halt meg. 1000-től volt király.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-008",
+   "lesson_id": "1bdb5007-7e70-4844-bd15-b6f76a543b2b",
+   "block_id": "89a04c69-ae15-4e61-a2be-078fe663f7d4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Magyarország címerében a hármas halom, a korona és a kereszt található.",
+   "explanation": "A címerben kettős kereszt van, és a pajzs másik fele a vörös-ezüst sávos (hétszer vágott) mező; ugyanezt a lecke vizuális kártyája helyesen írja.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1g_c%C3%ADmere",
+     "title": "Magyarország címere",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A címerek és zászlók a magyar identitás fontos szimbólumai. Magyarország címerében a hármas halom, a korona és a kereszt található, amelyek a történelmi államiságot és a keresztény hagyományokat jelképezik. A zászló piros, fehér és zöld színei a magyar nép történelmét és küzdelmeit idézik fel. A települések saját címereikkel és zászlóikkal fejezik ki helyi identitásukat és hagyományaikat.",
+     "type": "text",
+     "heading": "Címerek és zászlók alkotóelemei",
+     "key_term": "címer, zászló"
+    },
+    "after": {
+     "body": "A címerek és zászlók a magyar identitás fontos szimbólumai. Magyarország címerében a vörös-ezüst sávok, a hármas halom, a kettős kereszt és a Szent Korona található, amelyek a történelmi államiságot és a keresztény hagyományokat jelképezik. A zászló piros, fehér és zöld színei a magyar nép történelmét és küzdelmeit idézik fel. A települések saját címereikkel és zászlóikkal fejezik ki helyi identitásukat és hagyományaikat.",
+     "type": "text",
+     "heading": "Címerek és zászlók alkotóelemei",
+     "key_term": "címer, zászló"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-009",
+   "lesson_id": "1bdb5007-7e70-4844-bd15-b6f76a543b2b",
+   "block_id": "89a04c69-ae15-4e61-a2be-078fe663f7d4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Az Aranybulla pecsétje, amelyet 1222-ben adtak ki, a magyar történelem egyik legfontosabb jogi dokumentuma.”",
+   "explanation": "A mondat a pecsétet nevezi dokumentumnak; a dokumentum maga az Aranybulla, amely aranypecsétjéről kapta a nevét.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A pecsét a hivatalos dokumentumok érvényességét biztosítja. Az Aranybulla pecsétje, amelyet 1222-ben adtak ki, a magyar történelem egyik legfontosabb jogi dokumentuma. A pecsét nemcsak a jogi érvényességet, hanem a királyi hatalom szimbólumát is jelenti. A pecsét használata a középkor óta elterjedt, és ma is fontos szerepet játszik a hivatalos ügyintézésben.",
+     "type": "text",
+     "heading": "A hitelesítés eszköze: a pecsét",
+     "key_term": "pecsét, Aranybulla"
+    },
+    "after": {
+     "body": "A pecsét a hivatalos dokumentumok érvényességét biztosítja. Az 1222-ben kiadott Aranybulla a magyar történelem egyik legfontosabb jogi dokumentuma; nevét a király aranypecsétjéről kapta. A pecsét nemcsak a jogi érvényességet, hanem a királyi hatalom szimbólumát is jelenti. A pecsét használata a középkor óta elterjedt, és ma is fontos szerepet játszik a hivatalos ügyintézésben.",
+     "type": "text",
+     "heading": "A hitelesítés eszköze: a pecsét",
+     "key_term": "pecsét, Aranybulla"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-010",
+   "lesson_id": "1bdb5007-7e70-4844-bd15-b6f76a543b2b",
+   "block_id": "89a04c69-ae15-4e61-a2be-078fe663f7d4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A középkorban a Julián- és a Gergely-naptár volt a legelterjedtebb.",
+   "explanation": "A Gergely-naptárt csak 1582-ben vezették be, az újkorban; a középkorban a Julián-naptárt használták.",
+   "sources": [
+    {
+     "url": "https://www.britannica.com/science/solar-calendar",
+     "title": "Solar calendar — Britannica",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az időszámítás a civilizációk fejlődésének alapvető része. A magyar időszámítás a keresztény időszámításon alapul, amely Jézus születésétől számít. A középkorban a napok, hónapok és évek mérése különböző naptárak szerint történt, amelyek közül a Julián- és a Gergely-naptár a legelterjedtebbek. Az időszámítás pontosítása lehetővé tette a történelmi események és folyamatok pontosabb követését.",
+     "type": "text",
+     "heading": "Az időszámítás története",
+     "key_term": "időszámítás"
+    },
+    "after": {
+     "body": "Az időszámítás a civilizációk fejlődésének alapvető része. A magyar időszámítás a keresztény időszámításon alapul, amely Jézus születésétől számít. Európában a középkorban a Julián-naptárt használták, amelyet 1582-től fokozatosan a pontosabb Gergely-naptár váltott fel. Az időszámítás pontosítása lehetővé tette a történelmi események és folyamatok pontosabb követését.",
+     "type": "text",
+     "heading": "Az időszámítás története",
+     "key_term": "időszámítás"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-011",
+   "lesson_id": "1bdb5007-7e70-4844-bd15-b6f76a543b2b",
+   "block_id": "89a04c69-ae15-4e61-a2be-078fe663f7d4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 1801-től”",
+   "explanation": "Névelő: az 1801-től.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az évszázad a történelem időmérésének egyik alapvető egysége, amely száz évet foglal magában. Az évszázadok segítenek a történelmi események időbeli elhelyezésében és a korszakok meghatározásában. Például a 19. század a 1801-től 1900-ig tartó időszakot jelöli, amely Magyarország történetében a reformkor és a dualizmus időszaka. Az évszázadok használata lehetővé teszi, hogy a történelmi folyamatokat nagyobb összefüggésekben lássuk, és megértsük a hosszú távú változásokat. Az évszázadokkal való gondolkodás segít abban is, hogy a történelmi eseményeket könnyebben összehasonlítsuk és rendszerezzük.",
+     "type": "text",
+     "heading": "Az évszázad fogalma és jelentősége",
+     "key_term": "évszázad"
+    },
+    "after": {
+     "body": "Az évszázad a történelem időmérésének egyik alapvető egysége, amely száz évet foglal magában. Az évszázadok segítenek a történelmi események időbeli elhelyezésében és a korszakok meghatározásában. Például a 19. század az 1801-től 1900-ig tartó időszakot jelöli, amely Magyarország történetében a reformkor és a dualizmus időszaka. Az évszázadok használata lehetővé teszi, hogy a történelmi folyamatokat nagyobb összefüggésekben lássuk, és megértsük a hosszú távú változásokat. Az évszázadokkal való gondolkodás segít abban is, hogy a történelmi eseményeket könnyebben összehasonlítsuk és rendszerezzük.",
+     "type": "text",
+     "heading": "Az évszázad fogalma és jelentősége",
+     "key_term": "évszázad"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-012",
+   "lesson_id": "1bdb5007-7e70-4844-bd15-b6f76a543b2b",
+   "block_id": "1cd0fc11-ebc1-4c8d-978a-c1ce7864b38c",
+   "mode": "visual",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "heading",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A Magyarország címerének alkotóelemei”",
+   "explanation": "Országnév elé nem kell névelő.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "visual",
+     "caption": "A magyar címer elemei: hármas halom, kettős kereszt, Szent Korona, vörössel és ezüsttel hétszer vágott mező.",
+     "heading": "A Magyarország címerének alkotóelemei",
+     "description": "A magyar címer bemutatása, amely tartalmazza a kettős keresztet, a hármas halmot és a korona szimbólumot.",
+     "visual_type": "diagram"
+    },
+    "after": {
+     "type": "visual",
+     "caption": "A magyar címer elemei: hármas halom, kettős kereszt, Szent Korona, vörössel és ezüsttel hétszer vágott mező.",
+     "heading": "Magyarország címerének alkotóelemei",
+     "description": "A magyar címer bemutatása, amely tartalmazza a kettős keresztet, a hármas halmot és a korona szimbólumot.",
+     "visual_type": "diagram"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-013",
+   "lesson_id": "1bdb5007-7e70-4844-bd15-b6f76a543b2b",
+   "block_id": "1cd0fc11-ebc1-4c8d-978a-c1ce7864b38c",
+   "mode": "visual",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "description",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A 1222-ben kiadott”",
+   "explanation": "Névelő: az 1222-ben.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "visual",
+     "caption": "Az Aranybulla pecsétje, amely a magyar jogtörténet fontos dokumentuma.",
+     "heading": "Az Aranybulla pecsétje",
+     "description": "A 1222-ben kiadott Aranybulla pecsétjének bemutatása, amely hitelesítette a királyi hatalom korlátozását.",
+     "visual_type": "kép"
+    },
+    "after": {
+     "type": "visual",
+     "caption": "Az Aranybulla pecsétje, amely a magyar jogtörténet fontos dokumentuma.",
+     "heading": "Az Aranybulla pecsétje",
+     "description": "Az 1222-ben kiadott Aranybulla pecsétjének bemutatása, amely hitelesítette a királyi hatalom korlátozását.",
+     "visual_type": "kép"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-014",
+   "lesson_id": "1bdb5007-7e70-4844-bd15-b6f76a543b2b",
+   "block_id": "6c2c4351-782b-4dac-a1d5-0f67a93dddd7",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az ókori Egyiptomban a napéjegyenlőségek alapján mérték az időt, a rómaiak a holdciklusokat követték; „1 582-ben”.",
+   "explanation": "Az egyiptomiak a Szíriusz hajnali feltűnéséhez (Nílus-áradás) igazított 365 napos naptárt használtak; a rómaiak Kr. e. 46-tól a Nap járásához igazodó Julianus-naptárt. Évszámba nem kell ezres szóköz.",
+   "sources": [
+    {
+     "url": "https://www.britannica.com/science/solar-calendar",
+     "title": "Solar calendar — Britannica",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az időszámítás fejlődése a civilizációk egyik legnagyobb teljesítménye. Az ókori Egyiptomban például a napéjegyenlőségek alapján mérték az időt, míg a rómaiak a holdciklusokat követték. A pontos időszámítás lehetővé tette a mezőgazdasági munkák tervezését és a vallási ünnepek időzítését. A Gergely-naptár bevezetése 1 582-ben segített a pontosabb időszámításban, kiküszöbölve a korábbi naptárak hibáit. Ez a változás nemcsak a mindennapi életet, hanem a történelmi események pontosabb követését is megkönnyítette.",
+     "type": "deep",
+     "think": "Miért fontos, hogy a naptárak pontosak legyenek?",
+     "anchor": 3,
+     "heading": "Az időszámítás rejtélyei",
+     "did_you_know": "A Gergely-naptár bevezetésekor 10 napot kihagytak, így október 4-e után rögtön október 15-e következett.",
+     "think_answer": "A pontos naptárak segítenek a mezőgazdasági munkák, vallási ünnepek és társadalmi események időzítésében, valamint a történelmi események követésében."
+    },
+    "after": {
+     "body": "Az időszámítás fejlődése a civilizációk egyik legnagyobb teljesítménye. Az ókori egyiptomiak például a Szíriusz csillag hajnali feltűnéséből tudták, mikor kezdődik a Nílus áradása, és 365 napos naptárt használtak. Ennek mintájára vezette be Julius Caesar Kr. e. 46-ban a Nap járásához igazodó Julianus-naptárt. A pontos időszámítás lehetővé tette a mezőgazdasági munkák tervezését és a vallási ünnepek időzítését. A Gergely-naptár bevezetése 1582-ben segített a pontosabb időszámításban, kiküszöbölve a korábbi naptárak hibáit. Ez a változás nemcsak a mindennapi életet, hanem a történelmi események pontosabb követését is megkönnyítette.",
+     "type": "deep",
+     "think": "Miért fontos, hogy a naptárak pontosak legyenek?",
+     "anchor": 3,
+     "heading": "Az időszámítás rejtélyei",
+     "did_you_know": "A Gergely-naptár bevezetésekor 10 napot kihagytak, így október 4-e után rögtön október 15-e következett.",
+     "think_answer": "A pontos naptárak segítenek a mezőgazdasági munkák, vallási ünnepek és társadalmi események időzítésében, valamint a történelmi események követésében."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-015",
+   "lesson_id": "1bdb5007-7e70-4844-bd15-b6f76a543b2b",
+   "block_id": "6c2c4351-782b-4dac-a1d5-0f67a93dddd7",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A 20. században találták fel az autót.",
+   "explanation": "Az első gyakorlatban használható autót Carl Benz 1885–86-ban építette és szabadalmaztatta (19. század); a 20. században az autó elterjedt.",
+   "sources": [
+    {
+     "url": "https://www.britannica.com/technology/Patent-Motorwagen",
+     "title": "Patent Motorwagen — Britannica",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az évszázadok segítenek átlátni a történelem hosszú távú folyamatait. Egy évszázad alatt sok társadalmi, politikai és technológiai változás történhet, amelyek formálják a világot. Például a 20. században a technológiai fejlődés, mint az autó és a repülőgép feltalálása, alapvetően átalakította az emberek életét. Az évszázadok lehetővé teszik, hogy a változásokat nagyobb összefüggésekben lássuk, és megértsük, hogyan alakult a világ az idők során.",
+     "type": "deep",
+     "think": "Miért lehet hasznos az évszázadok szerint gondolkodni, amikor a történelemről tanulsz?",
+     "anchor": 4,
+     "heading": "Az évszázadok hatása a történelemre",
+     "did_you_know": "",
+     "think_answer": "Az évszázadok segítenek a történelmi események és folyamatok időbeli elhelyezésében, és megmutatják, hogyan kapcsolódnak egymáshoz a hosszú távú változások."
+    },
+    "after": {
+     "body": "Az évszázadok segítenek átlátni a történelem hosszú távú folyamatait. Egy évszázad alatt sok társadalmi, politikai és technológiai változás történhet, amelyek formálják a világot. Például a 20. században a technológiai fejlődés, mint az autó elterjedése és a repülőgép feltalálása, alapvetően átalakította az emberek életét. Az évszázadok lehetővé teszik, hogy a változásokat nagyobb összefüggésekben lássuk, és megértsük, hogyan alakult a világ az idők során.",
+     "type": "deep",
+     "think": "Miért lehet hasznos az évszázadok szerint gondolkodni, amikor a történelemről tanulsz?",
+     "anchor": 4,
+     "heading": "Az évszázadok hatása a történelemre",
+     "did_you_know": "",
+     "think_answer": "Az évszázadok segítenek a történelmi események és folyamatok időbeli elhelyezésében, és megmutatják, hogyan kapcsolódnak egymáshoz a hosszú távú változások."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-01-016",
+   "lesson_id": "1bdb5007-7e70-4844-bd15-b6f76a543b2b",
+   "block_id": "39848d5c-f3cb-40a9-a38b-a3974547419b",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi a magyar címer központi eleme?” — megjelölt válasz: a Szent Korona.",
+   "explanation": "Kétértelmű: a korona a címer tetején van, a pajzs közepén a sávok és a kettős kereszt a hármas halmon; a 'C' (hármas halom) is védhető. A kérdés átfogalmazása egyértelművé teszi a jelenlegi kulcsot.",
+   "sources": [],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A turulmadár, mert a magyar mitológia része.",
+      "B) A Szent Korona, mert a magyar államiság szimbóluma.",
+      "C) A három halom, mert a magyar tájra utal.",
+      "D) A kék szín, mert a magyar zászló színei között szerepel."
+     ],
+     "question": "Mi a magyar címer központi eleme, és miért fontos ez a magyar történelem szempontjából?",
+     "explanation": "A Szent Korona a magyar államiság és a királyság jelképe, fontos szerepet játszik a magyar történelemben, mert a koronázási szertartások során a királyok legitimációját biztosította.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A turulmadár, mert a magyar mitológia része.",
+      "B) A Szent Korona, mert a magyar államiság szimbóluma.",
+      "C) A három halom, mert a magyar tájra utal.",
+      "D) A kék szín, mert a magyar zászló színei között szerepel."
+     ],
+     "question": "Mi látható a magyar címer tetején, és miért fontos ez a magyar történelem szempontjából?",
+     "explanation": "A Szent Korona a magyar államiság és a királyság jelképe, fontos szerepet játszik a magyar történelemben, mert a koronázási szertartások során a királyok legitimációját biztosította.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}

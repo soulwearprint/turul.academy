@@ -55,7 +55,8 @@ told apart from "not checked".
 | `unverifiable` | no reliable source confirms it, so it should be generalised or removed |
 | `language` | grammar, Hungarian number format (tizedesvessző, ezres szóköz), a/az articles |
 
-`wrong`, `outdated` and `misleading` need at least one source; `quiz_key` does too when the
+`wrong`, `outdated` and `misleading` need at least one source, or a `source_note` when no
+source can apply (a fabricated link, a question with no factual answer, a classical text); `quiz_key` does too when the
 error is factual (not when it is internal, e.g. the marked letter is not among the options). Source priority:
 the official body (World Athletics, UCI, World Aquatics, BIPM, NASA/ESA …), then an academic
 or museum source or an encyclopedia (Britannica, MEK, Arcanum), then Wikipedia (only as a
