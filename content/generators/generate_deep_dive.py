@@ -28,9 +28,10 @@ Usage:
     python generate_deep_dive.py --nat-id PHYS-78-03
     python generate_deep_dive.py --nat-id PHYS-78-03 --dry-run   # generate + check, don't save
     python generate_deep_dive.py --nat-id PHYS-78-03 --reverify  # re-check saved cards only
+    python generate_deep_dive.py --nat-id HIST-78-VH1 --lesson <curriculum_lessons.id>  # one Téma only
 Writes a review doc to content/exports/<nat_id>_deep_dive_review.md.
 """
-import os, json, asyncio, argparse, httpx
+import os, re, json, asyncio, argparse, httpx
 from dotenv import load_dotenv
 
 load_dotenv(os.path.join(os.path.dirname(__file__), "../../backend/.env"))
@@ -199,15 +200,34 @@ async def fix(c, cards, facts, appro):
     return out.get("cards", cards), todo
 
 
+_AZ_CONSONANT = re.compile(r"(?<![^\W\d_])[Aa]z (?=[bcdfghjklmnprstvzBCDFGHJKLMNPRSTVZ])")
+_A_CONSONANT = re.compile(r"(?<![^\W\d_])[Aa] (?=[bcdfghjklmnprstvzBCDFGHJKLMNPRSTVZ])")
+
+
+def article_damage(cards) -> bool:
+    """„az háború”, „az nagyhatalmak”… — on 2026-09-29 the proof pass turned nearly every „a” into
+    „az” (60× in one lesson; the old prompt's „az 1990-es” example over-generalised). „az” before
+    a consonant is legit only as a pronoun („hogy az még…”), so many of them and hardly any
+    „a + consonant” means the articles were broken."""
+    text = json.dumps(cards, ensure_ascii=False)
+    az, a = len(_AZ_CONSONANT.findall(text)), len(_A_CONSONANT.findall(text))
+    return az >= 4 and az > a
+
+
 async def proof(c, cards):
     try:
         out = await ai(c, "Javítsd ki az alábbi JSON szöveges mezőiben a helyesírási, nyelvtani és központozási "
-            "hibákat (a névelőt is: „az 1990-es”, nem „a 1990-es”), és írd a számokat magyar formátumban (ezres "
-            "tagolás szóközzel, tizedesvessző). NE változtasd a tartalmat, szerkezetet vagy kulcsokat. "
-            "CSAK a javított JSON-t add vissza.\n\n"
+            "hibákat, és írd a számokat magyar formátumban (ezres tagolás szóközzel, tizedesvessző). "
+            "NÉVELŐ: mássalhangzóval kezdődő szó előtt „a” (a háború, a nagyhatalmak), magánhangzóval "
+            "kezdődő szó előtt „az” (az ember, az antant); számok előtt a kiejtés számít (az 1990-es, a 2000-es). "
+            "NE változtasd a tartalmat, szerkezetet vagy kulcsokat. CSAK a javított JSON-t add vissza.\n\n"
             + json.dumps({"cards": cards}, ensure_ascii=False),
             "Gondos magyar korrektor vagy. Csak JSON-t adsz vissza.", temp=0)
-        return out.get("cards", cards)
+        fixed = out.get("cards", cards)
+        if article_damage(fixed) and not article_damage(cards):
+            print("   ⚠ a korrektúra elrontotta a névelőket — a korrektúra előtti változat marad")
+            return cards
+        return fixed
     except Exception:
         return cards
 
@@ -309,6 +329,8 @@ async def main():
     ap.add_argument("--dry-run", action="store_true", help="generate + check, but don't write to the DB")
     ap.add_argument("--reverify", action="store_true",
                     help="re-run the guard rail on the SAVED deep cards (no regeneration)")
+    ap.add_argument("--lesson", help="only this Téma (curriculum_lessons.id) — e.g. to finish one lesson "
+                                     "without touching the Témakör's other lessons")
     args = ap.parse_args()
     cfg = subject_cfg(args.nat_id)
 
@@ -320,6 +342,10 @@ async def main():
         topic = t[0]
         lessons = (await c.get(f"{SB}/rest/v1/curriculum_lessons?topic_id=eq.{topic['id']}"
                                f"&select=id,title_hu&order=order_index", headers=H_SB)).json()
+        if args.lesson:
+            lessons = [L for L in lessons if L["id"] == args.lesson]
+            if not lessons:
+                print(f"⚠ lesson {args.lesson} is not in {args.nat_id}"); return
         rows = (await c.get(f"{SB}/rest/v1/content_blocks?topic_id=eq.{topic['id']}&scope=eq.lesson"
                             f"&mode=in.(text,story,visual,deep)&select=lesson_id,mode,content,is_active",
                             headers=H_SB)).json()
