@@ -1,0 +1,607 @@
+{
+ "nat_id": "HIST-1112-14",
+ "topic_id": "90f8f567-de5f-4449-b803-0f2718959931",
+ "title_hu": "A világ a 21. században",
+ "grade": 12,
+ "lessons": [
+  {
+   "lesson_id": "09a154d0-d85f-4926-86ba-c48dd389a427",
+   "title_hu": "Az átalakuló világ",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "d23d63da-dfb0-4081-a817-cdb0db5503e6",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A 21. század elején a világgazdaság középpontjában az Amerikai Egyesült Államok és szövetségesei állnak. Az Egyesült Államok gazdasági és politikai befolyása meghatározó a nemzetközi kapcsolatokban. A hagyományos centrumok szerepe azonban fokozatosan átalakul, ahogy új szereplők lépnek színre. Magyarország a globális gazdasági folyamatokban való részvétele révén érzékeli ezeket a változásokat, ami fontos a gazdasági fejlődése szempontjából.",
+       "type": "text",
+       "heading": "A világgazdaság hagyományos centrumai",
+       "key_term": "világgazdaság"
+      },
+      {
+       "body": "A 21. században Oroszország és Kína egyre nagyobb szerepet játszanak a világpolitikában és világgazdaságban. Kína gazdasági növekedése és Oroszország energiapolitikája új kihívások elé állítja a hagyományos hatalmakat. E két ország politikai és gazdasági stratégiái közvetlen hatással vannak Magyarországra is, különösen a kereskedelmi kapcsolatok és a geopolitikai helyzet szempontjából. A magyar gazdaság számára fontos, hogy alkalmazkodjon ezekhez az új trendekhez.",
+       "type": "text",
+       "heading": "Oroszország és Kína új súlypontjai",
+       "key_term": "Oroszország, Kína"
+      },
+      {
+       "body": "A 21. században a globális térben működő óriásvállalatok szerepe jelentősen megnőtt. Ezek a vállalatok nemcsak gazdasági, hanem politikai befolyással is rendelkeznek, amelyek hatással vannak a nemzeti kormányok döntéseire. Magyarország is érintett ebben a folyamatban, hiszen a multinacionális cégek befektetései kulcsszerepet játszanak a hazai gazdaság fejlődésében. A vállalatok globális stratégiái és a helyi piacok közötti interakciók megértése elengedhetetlen a jövőbeli gazdasági tervezéshez.",
+       "type": "text",
+       "heading": "Óriásvállalatok a globális térben",
+       "key_term": "óriásvállalatok"
+      },
+      {
+       "body": "A globalizáció folyamata a 21. században drámai mértékben átalakítja a világot. A nemzetközi kereskedelem, a technológiai fejlődés és az információáramlás új lehetőségeket teremt, de egyben új kihívásokat is jelent. Magyarország számára a globalizáció lehetőséget ad arra, hogy részt vegyen a nemzetközi gazdaságban, ugyanakkor figyelembe kell venni a helyi gazdaság védelmét is. A globalizáció tehát nemcsak gazdasági, hanem társadalmi és kulturális szempontból is fontos hatásokat gyakorol.",
+       "type": "text",
+       "heading": "Globalizáció hatásai",
+       "key_term": "globalizáció"
+      },
+      {
+       "body": "Magyarország gazdasági helyzete a globális térben szorosan összefonódik a világpolitikai és világgazdasági változásokkal. A magyar kormány stratégiájának része, hogy kihasználja a globalizáció adta lehetőségeket, miközben védi a nemzeti érdekeket. A külföldi befektetések, a szabadkereskedelmi megállapodások és a nemzetközi együttműködések mind hozzájárulnak a magyar gazdaság fejlődéséhez. A globális trendek figyelemmel kísérése elengedhetetlen a fenntartható fejlődés érdekében.",
+       "type": "text",
+       "heading": "A magyar gazdaság helyzete a globális térben",
+       "key_term": "magyar gazdaság"
+      }
+     ]
+    },
+    {
+     "block_id": "ec5a874b-3306-4378-8670-4942be1a8a4a",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A falusi közösség tagjai a reggeli pirkadatban már a földeken dolgoznak. A gazdák és a földművesek fáradhatatlanul szántják a földet, hogy biztosítsák a családok számára a megélhetést. A növények termesztése és az állatok gondozása nemcsak munkát, hanem közösségi élményt is jelent, hiszen a szomszédok segítik egymást a betakarítás során. A globalizáció hatására egyre több újfajta vetőmag és mezőgazdasági technika jelenik meg, amelyek az életminőséget javítják. Az emberek reménykednek a bőséges termésben, amely a helyi piacokon való értékesítést is lehetővé teszi.",
+       "mood": "mezőgazdaság",
+       "type": "story",
+       "heading": "A mezőgazdaság mindennapjai"
+      },
+      {
+       "body": "A város piacán a kereskedők és vásárlók zsongása hallatszik. A helyi árusok friss zöldségeket, gyümölcsöket és kézműves termékeket kínálnak, míg a külföldi áruk, mint például fűszerek és textíliák, egyre nagyobb teret nyernek. A kereskedők közötti verseny feszültségeket szül, de ugyanakkor új lehetőségeket is teremt, hiszen a globalizáció révén a helyi termékek iránti kereslet növekszik. A vásárlók élvezik az új ízeket és színes kínálatot, ami színesebbé teszi mindennapi életüket.",
+       "mood": "kereskedelem",
+       "type": "story",
+       "heading": "A kereskedők világa"
+      },
+      {
+       "body": "A családok otthonában a közös étkezések ideje különleges pillanatokat teremt. Az ételek, amelyeket a helyi termelők biztosítanak, nemcsak táplálóak, hanem a közösség összetartozását is erősítik. Az ünnepek alkalmával a hagyományos ételek készítése összeköti a generációkat, hiszen a nagyszülők tanítják a fiatalokat a régi receptekre. A globalizáció hatására a családok egyre inkább érdeklődnek a külföldi konyhák iránt, ami új ízek felfedezését jelenti, de sokan ragaszkodnak a hagyományos magyar ételekhez is.",
+       "mood": "család, otthon",
+       "type": "story",
+       "heading": "A családok otthona"
+      },
+      {
+       "body": "A falusi iskolában a gyermekek izgatottan várják az órákat. Az oktatás során a helyi kultúra és hagyományok mellett a világ más tájairól is tanulnak. A tanárok új módszereket alkalmaznak, amelyek a globalizáció hatására elérhető tudásanyagokat integrálják a tantervbe. A gyerekek barátságokat kötnek, és együtt fedezik fel a világ sokszínűségét, ami hozzájárul a nyitottabb gondolkodásukhoz. A közösség támogatja az iskolát, mert tudják, hogy a jövő generációjának nevelése alapvető fontosságú.",
+       "mood": "oktatás, gyermekek",
+       "type": "story",
+       "heading": "A gyermekek nevelése"
+      },
+      {
+       "body": "A helyi közösség tagjai rendszeresen gyűléseznek, hogy megvitassák a települést érintő kérdéseket. A közös problémák, mint például az infrastruktúra fejlesztése vagy a helyi gazdaság támogatása, egyre inkább előtérbe kerülnek. A globalizáció következtében a helyi közösségeknek alkalmazkodniuk kell a változó körülményekhez, ami új kihívásokat jelent. A hivatalnokok és a közösség közötti együttműködés kulcsfontosságú a helyi érdekek képviseletében.",
+       "mood": "közösség, hivatalok",
+       "type": "story",
+       "heading": "A közösség és a hivatalok kapcsolata"
+      }
+     ]
+    },
+    {
+     "block_id": "3d463ae1-6abc-41ed-ab8a-af2414a73a95",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A világgazdaság hagyományos centrumai az Egyesült Államok és szövetségesei.",
+       "heading": "A világgazdaság hagyományos centrumai",
+       "description": "Egy térkép, amely az Amerikai Egyesült Államokat és szövetségeseit (pl. Kanada, az EU országai) kiemeli, valamint a gazdasági kapcsolatok fő irányait mutatja.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "Oroszország és Kína új súlypontok a világpolitikában.",
+       "heading": "Oroszország és Kína szerepe a világpolitikában",
+       "description": "Egy diagram, amely bemutatja Oroszország és Kína gazdasági növekedését az utóbbi két évtizedben, valamint politikai hatásukat a nemzetközi porondon.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A globalizáció folyamata az 1980-as évektől napjainkig.",
+       "heading": "Globalizáció folyamata",
+       "description": "Egy idővonal, amely a globalizáció főbb eseményeit mutatja be az 1980-as évektől napjainkig, kiemelve a kereskedelmi megállapodásokat, a technológiai fejlődést és a nemzetközi együttműködéseket.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "Óriásvállalatok szerepe a globális gazdaságban.",
+       "heading": "Óriásvállalatok a globális térben",
+       "description": "Egy kördiagram, amely bemutatja a legnagyobb óriásvállalatokat (pl. Apple, Google, Amazon) és piaci részesedésüket a globális gazdaságban.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A globalizáció hatása Magyarország gazdaságára.",
+       "heading": "Globalizáció hatása Magyarországra",
+       "description": "Egy térkép, amely bemutatja a legfontosabb magyar exporttermékeket és a főbb kereskedelmi partnereket, mint például Németország és az Egyesült Államok.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A világpolitika átalakulása a 21. században.",
+       "heading": "A világpolitika átalakulása",
+       "description": "Egy idővonal, amely a 21. század legfontosabb politikai eseményeit mutatja be, mint például a 2008-as pénzügyi válság és a 2010-es évek geopolitikai feszültségei.",
+       "visual_type": "idővonal"
+      }
+     ]
+    },
+    {
+     "block_id": "04d8ec0a-00a2-43ad-8d4b-bc7011627c2f",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A globalizáció jelensége a 21. századra már széleskörűen elterjedt, hatással volt a gazdaságokra, kultúrákra és politikai viszonyokra világszerte. A nemzetközi kereskedelem növekedése és a technológiai fejlődés hozzájárult a globális vállalatok dominálásához, amelyek a nemzeti határokon átívelő gazdasági kapcsolatokat alakítanak. A globalizáció következtében a világ különböző részein élő emberek közötti interakciók is fokozódtak, ami kulturális keveredéshez vezetett.",
+       "type": "world",
+       "year": "",
+       "heading": "A globalizáció hatásai a 21. században",
+       "link_hu": ""
+      }
+     ]
+    },
+    {
+     "block_id": "30f3744d-a95b-4680-88a6-b6a6c232300c",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A nemzetközi kereskedelem növekedése és a technológiai fejlődés.",
+        "B) A nemzetállamok fokozatos megszűnése.",
+        "C) A helyi kultúrák teljes eltűnése.",
+        "D) Az önellátás előtérbe kerülése."
+       ],
+       "question": "Mi jellemzi a globalizáció folyamatát a 21. században?",
+       "explanation": "A globalizáció a nemzetközi kereskedelem és a technológiai fejlődés összekapcsolódását jelenti, amely a világ különböző részein élő emberek közötti gazdasági és kulturális kapcsolatokat erősíti.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Oroszország és Kína.",
+        "B) Az Amerikai Egyesült Államok és szövetségesei.",
+        "C) India és Brazília.",
+        "D) Egyesült Királyság és Németország."
+       ],
+       "question": "Mely országok számítanak a világgazdaság hagyományos centrumainak?",
+       "explanation": "Az Amerikai Egyesült Államok és szövetségesei a világgazdaság hagyományos centrumai, amelyek dominálnak a globális kereskedelem és pénzügyek terén.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Franciaország és Japán.",
+        "B) Oroszország és Kína.",
+        "C) Kanada és Ausztrália.",
+        "D) Dél-Korea és Mexikó."
+       ],
+       "question": "Melyik két ország új súlypontja a világpolitikának és világgazdaságnak?",
+       "explanation": "Oroszország és Kína a 21. században új súlypontokká váltak a világpolitikában és világgazdaságban, jelentős befolyással bírnak a globális ügyekre.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Mert a globalizáció során Magyarország elveszíti függetlenségét.",
+        "B) Mert a globalizáció lehetőségeket teremt a magyar gazdaság számára.",
+        "C) Mert a globalizáció megakadályozza a kulturális fejlődést.",
+        "D) Mert a globalizáció csak negatív hatásokat gyakorol."
+       ],
+       "question": "Miért fontos a globalizáció a magyar történelem szempontjából?",
+       "explanation": "A globalizáció lehetőségeket teremt a magyar gazdaság számára, például új piacok elérésével és a nemzetközi kapcsolatok erősítésével.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Kis helyi üzletek.",
+        "B) Nemzetközi cégek, amelyek jelentős befolyással bírnak a gazdaságra.",
+        "C) Állami vállalatok.",
+        "D) Kisebb családi vállalkozások."
+       ],
+       "question": "Mik azok az óriásvállalatok a globális térben?",
+       "explanation": "Az óriásvállalatok nemzetközi cégek, amelyek jelentős befolyással bírnak a gazdaságra, és hozzájárulnak a globalizációhoz, mivel globális szinten működnek és kereskednek.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "51f80407-9cf7-46bc-96a2-7240d5fc1c47",
+   "title_hu": "A globális világ",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "3ddc8af3-6285-49d9-8444-05bf5b92e59a",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A modern kori migráció a 20. század második felében kezdődött el, és napjainkban is folytatódik. A gazdasági lehetőségek keresése, a háborúk és a politikai üldöztetés miatt emberek milliói hagyják el hazájukat. Magyarország esetében a migrációs hullámok különösen fontosak, hiszen a történelmi tapasztalatok, mint a trianoni békeszerződés következményei, mély hatással vannak a nemzeti identitásra. A migráció nemcsak demográfiai, hanem kulturális változásokat is hoz, ami kihívások elé állítja a társadalmat.",
+       "type": "text",
+       "heading": "Modern kori migráció",
+       "key_term": "modern kori migráció"
+      },
+      {
+       "body": "A multikulturalizmus fogalma a különböző kultúrák együttélését jelenti egy adott társadalomban. A globalizáció következtében Magyarországon is egyre több különböző kultúrával találkozhatunk, ami gazdagítja a társadalmat, ugyanakkor feszültségeket is generálhat. A multikulturalizmus előnyei közé tartozik a kulturális sokszínűség, míg hátrányai között említhetjük a párhuzamos társadalmak kialakulását. A magyar történelemben a különböző népcsoportok együttélése mindig is jelentős szerepet játszott.",
+       "type": "text",
+       "heading": "Multikulturalizmus",
+       "key_term": "multikulturalizmus"
+      },
+      {
+       "body": "A párhuzamos társadalom olyan közösségeket jelent, amelyek elkülönülnek a többségi társadalomtól, és saját kultúrájukat, nyelvüket és életmódjukat őrzik. Magyarországon a migrációs folyamatok következtében a párhuzamos társadalmak megjelenése egyre inkább jellemzővé válik. Ez a jelenség feszültségeket okozhat, mivel a különböző közösségek közötti kommunikáció és együttműködés nehézségekbe ütközhet. A párhuzamos társadalmak megértése elengedhetetlen a társadalmi kohézió fenntartásához.",
+       "type": "text",
+       "heading": "Párhuzamos társadalom",
+       "key_term": "párhuzamos társadalom"
+      },
+      {
+       "body": "A népességrobbanás a 20. század második felében kezdődött, és a 21. század elején érte el csúcspontját, különösen a fejlődő országokban. Ez a jelenség Magyarországot is érinti, hiszen a népesség csökkenése és elöregedése komoly kihívásokat jelent. A népességrobbanás következményeként a globális társadalomra gyakorolt hatások, mint a gazdasági migráció és a természeti erőforrások kimerülése, egyre sürgetőbbé válnak. A népességrobbanás megértése fontos a jövőbeli társadalmi tervezés szempontjából.",
+       "type": "text",
+       "heading": "Népességrobbanás",
+       "key_term": "népességrobbanás"
+      },
+      {
+       "body": "Az iszlamizmus a muszlim közösségek politikai és vallási aktivizmusát jelenti, amely a 21. században egyre inkább teret nyer. A magyar történelmi kontextusban fontos megérteni az iszlamizmus hatását, különösen a migrációs hullámok és a terrorizmus összefüggésében. Az iszlamizmus nemcsak vallási, hanem politikai kérdéseket is felvet, amelyek hatással vannak a nemzetközi kapcsolatokra. Magyarország számára a biztonság és a kulturális identitás megőrzése érdekében elengedhetetlen a jelenség alapos ismerete.",
+       "type": "text",
+       "heading": "Iszlamizmus",
+       "key_term": "iszlamizmus"
+      },
+      {
+       "body": "A terrorizmus a 21. század egyik legnagyobb kihívása, amely globális méreteket öltött. A terrorista cselekmények nemcsak a közvetlen érintettek életére, hanem a társadalmak biztonságára is hatással vannak. Magyarország, mint az Európai Unió tagja, szoros együttműködésre kényszerül a terrorizmus elleni harcban. A terrorizmus elleni védekezés nemcsak politikai, hanem társadalmi szempontból is kulcsfontosságú, hiszen a társadalmi kohézió és a demokratikus értékek megőrzését szolgálja.",
+       "type": "text",
+       "heading": "Terrorizmus",
+       "key_term": "terrorizmus"
+      },
+      {
+       "body": "A globalizáció a világ különböző részeinek összekapcsolódását jelenti, amely a kultúrák kölcsönhatását is magában foglalja. Magyarországon a globalizáció hatása a kulturális életben is megjelenik, hiszen a különböző kultúrák és hagyományok kölcsönhatása új értékeket hoz létre. A globalizáció azonban kihívások elé is állítja a helyi kultúrákat, amelyek védelme és megőrzése fontos feladat. A kultúra globalizációja lehetőséget ad a nemzetközi kapcsolatok erősítésére is.",
+       "type": "text",
+       "heading": "Globalizáció és kultúra",
+       "key_term": "globalizáció és kultúra"
+      },
+      {
+       "body": "A 21. században a hagyományos és új identitások közötti feszültség egyre inkább érezhető. A globalizáció következtében új identitások formálódnak, amelyek kihívást jelentenek a hagyományos értékek számára. Magyarország esetében a nemzeti identitás megőrzése mellett fontos az új identitások integrálása is. A társadalmi értékek és a közbeszéd formálása kulcsszerepet játszik a jövő társadalmi kohéziójának megteremtésében.",
+       "type": "text",
+       "heading": "Hagyományos és új identitások",
+       "key_term": "hagyományos és új identitások"
+      }
+     ]
+    },
+    {
+     "block_id": "8951bac3-9d63-4a1d-bbe6-cfdc3fbc4d3e",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy falusi asszony a reggeli órákban már a kertben dolgozik, hogy megteremtse a család megélhetését. A földművelés mindennapi rutinná vált, hiszen a helyi közösség nagymértékben függ a termés mennyiségétől. A szántóföldeken a népességrobbanás miatt egyre több ember dolgozik, ami feszültséget okoz a helyi közösségben. A fiatalok közül sokan elhagyják a falut, hogy a városokban keressenek munkát, ezzel is hozzájárulva a modern kori migrációhoz.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A falusi élet mindennapjai"
+      },
+      {
+       "body": "A városban a kereskedők nap mint nap találkoznak különböző kultúrákból érkező vásárlókkal. A multikulturalizmus a mindennapok részévé vált, hiszen a helyi piacon a különböző nemzetiségű emberek árulják portékáikat. A kereskedők igyekeznek alkalmazkodni a vásárlók igényeihez, így a helyi ételek mellett nemzetközi termékek is megjelennek, amelyek új ízeket és szokásokat hoznak be a városi életbe.",
+       "mood": "kereskedelem",
+       "type": "story",
+       "heading": "A városi kereskedők élete"
+      },
+      {
+       "body": "A gyermekek az iskolában hittanórán tanulják a kereszténység alapjait. A globális világban, ahol a vallások közötti párbeszéd egyre fontosabbá válik, a tanárok arra törekednek, hogy a diákok megértsék a különböző vallási hagyományokat. A gyerekek között sokféle háttérből érkezők is vannak, ami tükrözi a társadalom sokszínűségét, de a közös ünnepek és hagyományok erősítik a közösséget.",
+       "mood": "nevelés",
+       "type": "story",
+       "heading": "Hittanóra az iskolában"
+      },
+      {
+       "body": "A faluban minden évben megrendezik a helyi ünnepeket, ahol a közösség összegyűlik, hogy együtt ünnepeljenek. Az ünnepek során a hagyományos szokások mellett új elemek is megjelennek, amelyek a globalizáció hatásait mutatják. Az emberek örömmel osztják meg egymással az ételeket és a zenét, de a párhuzamos társadalmak jelenléte is érezhető, hiszen nem mindenki részesülhet egyenlően az ünneplés örömeiből.",
+       "mood": "hagyományok",
+       "type": "story",
+       "heading": "A közösség ünnepei"
+      },
+      {
+       "body": "A falusi orvosnak nehéz dolga van, hiszen a betegeket nemcsak a fizikai betegségek, hanem a szociális problémák is sújtják. A helyi közösség tagjai közül sokan szenvednek a szegénységtől, ami megnehezíti a gyógyulásukat. Az orvosnak nemcsak a tüneteket kell kezelnie, hanem a körülményeket is, amelyek a népességrobbanás és a migráció következményei. A gyógyítás során a hagyományos módszerek mellett a modern orvostudomány is teret nyer, ami új kihívások elé állítja a helyi közösséget.",
+       "mood": "egészségügy",
+       "type": "story",
+       "heading": "A betegség és gyógyítás kérdése"
+      }
+     ]
+    },
+    {
+     "block_id": "62f87fa3-323f-44cc-929b-837d1051eb75",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A modern kori migrációs áramlások 2000-től napjainkig.",
+       "heading": "Modern kori migráció",
+       "description": "A 21. századi migrációs hullámokat bemutató térkép, amely a legnagyobb népmozgásokat ábrázolja, különös figyelmet fordítva Európára és Magyarországra, ahol a migrációs irányok és a legfontosabb célországok láthatók.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A multikulturalizmus előnyei és kihívásai Magyarországon.",
+       "heading": "Multikulturalizmus",
+       "description": "Egy olyan diagram, amely a multikulturalizmus fogalmát és jellemzőit mutatja be, például a különböző kultúrák együttélésének előnyeit és kihívásait, különös figyelmet szentelve a magyar társadalomban megjelenő sokszínűségre.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A párhuzamos társadalmak hatása Magyarországon.",
+       "heading": "Párhuzamos társadalom",
+       "description": "Egy infografika, amely bemutatja a párhuzamos társadalmak kialakulását, jellemzőit és hatásait a magyar társadalomra, beleértve a különböző közösségek közötti interakciókat és konfliktusokat.",
+       "visual_type": "infografika"
+      },
+      {
+       "type": "visual",
+       "caption": "A népességrobbanás idővonal 1950-től napjainkig.",
+       "heading": "Népességrobbanás",
+       "description": "Egy idővonal, amely a globális népességrobbanás főbb állomásait mutatja be 1950-től napjainkig, kiemelve Magyarország népességi trendjeit és azok társadalmi következményeit.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "Az iszlamizmus térhódítása 2000 óta.",
+       "heading": "Iszlamizmus",
+       "description": "Egy térkép, amely az iszlamizmus terjedését mutatja be a világban, különös figyelmet szentelve a Közel-Kelet és Európa kapcsolatainak alakulására, valamint Magyarországra gyakorolt hatásaira.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A terrorizmus formái és hatásai a XXI. században.",
+       "heading": "Terrorizmus",
+       "description": "Egy diagram, amely a terrorizmus főbb formáit és okait mutatja be, valamint azok hatását a globális biztonságra, különösen a magyar helyzetre vonatkozóan.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A globalizáció hatása a kultúrára Magyarországon.",
+       "heading": "Globalizáció és kultúra",
+       "description": "Egy infografika, amely a globalizáció hatását a kultúrára mutatja be, kiemelve a kulturális csere folyamatait és a helyi kultúrák megőrzésének fontosságát Magyarországon.",
+       "visual_type": "infografika"
+      },
+      {
+       "type": "visual",
+       "caption": "A demokratikus közbeszéd és politikai korrektség Magyarországon.",
+       "heading": "Demokratikus közbeszéd és politikai korrektség",
+       "description": "Egy diagram, amely a demokratikus közbeszéd és a politikai korrektség fogalmát és szerepét mutatja be a mai magyar társadalomban, beleértve a közvélemény alakulását és a politikai diskurzus jellemzőit.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "7dde161f-6201-4b80-8273-c748ddce88e7",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A modern kori migráció és a multikulturalizmus jelenségei már a 20. század második felében is megfigyelhetők voltak, amikor a világ különböző részein emberek tömegesen hagyták el hazájukat jobb életkörülmények keresése érdekében. A népességrobbanás következtében sok országban, különösen a fejlődő térségekben, jelentős népmozgások indultak el, amelyek hatással voltak a helyi kultúrákra és társadalmakra. Az iszlamizmus és a terrorizmus megjelenése is olyan globális jelenségek, amelyek a 21. század elején váltak hangsúlyossá, és amelyek a demokratikus közbeszéd és politikai korrektség terjedésével is összefonódtak.",
+       "type": "world",
+       "year": "",
+       "heading": "A globális világ jelenségei",
+       "link_hu": ""
+      }
+     ]
+    },
+    {
+     "block_id": "9467dc37-eeda-4c00-8e12-2b71dce95889",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Állandó lakóhely-változtatás gazdasági okokból.",
+        "B) Csak politikai menekültek vándorlása.",
+        "C) Csak a fejlett országokból a fejlődő országokba irányuló mozgás.",
+        "D) Nincs hatással a globális gazdaságra."
+       ],
+       "question": "Mi jellemzi a modern kori migrációt?",
+       "explanation": "A modern kori migráció gazdasági, politikai és társadalmi okokból történik, és jelentős hatással van a globális gazdaságra.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Különböző kultúrák együttélése és kölcsönhatása.",
+        "B) Csak egy kultúra dominálása egy országban.",
+        "C) A kultúrák teljes eltüntetése.",
+        "D) A nemzetek közötti konfliktusok fokozódása."
+       ],
+       "question": "Mit jelent a multikulturalizmus?",
+       "explanation": "A multikulturalizmus a különböző kultúrák együttélését és kölcsönhatását jelenti, amely a globalizáció következményeként erősödik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Csökkentik a társadalmi feszültségeket.",
+        "B) Növelik a társadalmi feszültségeket.",
+        "C) Nincs hatásuk a társadalomra.",
+        "D) Csak gazdasági előnyökkel járnak."
+       ],
+       "question": "Milyen hatása van a párhuzamos társadalmaknak?",
+       "explanation": "A párhuzamos társadalmak gyakran növelik a társadalmi feszültségeket, mivel a különböző kultúrák közötti kommunikáció és integráció hiányzik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) A gazdasági fejlődés felgyorsulása.",
+        "B) Erőforrások kimerülése és környezeti problémák.",
+        "C) A világ békésebbé válása.",
+        "D) Csökkenő migrációs nyomás."
+       ],
+       "question": "Mi a népességrobbanás következménye?",
+       "explanation": "A népességrobbanás gyakran vezet erőforrások kimerüléséhez és környezeti problémákhoz, ami komoly kihívások elé állítja a globális közösséget.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A vallás politikai ideológiává alakítása.",
+        "B) A muszlim közösségek közötti békés együttélés.",
+        "C) A vallás eltűnése a politikai életből.",
+        "D) A kereszténység terjedése az iszlám világban."
+       ],
+       "question": "Mi az iszlamizmus?",
+       "explanation": "Az iszlamizmus a vallás politikai ideológiává alakítását jelenti, amelynek célja az iszlám értékek és törvények érvényesítése a politikai életben.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "3f1d4b77-1040-4ae0-b0e1-2a2ab7482414",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Gazdasági, politikai és környezeti okokból történik.",
+      "B) Csak politikai menekültek érkeznek.",
+      "C) Csak a gazdasági lehetőségek miatt történik.",
+      "D) Nincs hatása a fogadó országokra."
+     ],
+     "question": "Mi jellemzi a modern kori migrációt?",
+     "explanation": "A modern kori migráció sokféle okból történik, beleértve a gazdasági, politikai és környezeti tényezőket is.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csökkenti a kulturális sokszínűséget.",
+      "B) Elősegíti a kulturális párbeszédet és együttélést.",
+      "C) Csak konfliktusokat okoz.",
+      "D) Megszünteti a hagyományos kultúrákat."
+     ],
+     "question": "Milyen hatása van a multikulturalizmusnak a társadalmakra?",
+     "explanation": "A multikulturalizmus elősegíti a különböző kultúrák közötti párbeszédet és együttélést, gazdagítva ezzel a társadalmat.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Olyan közösségek, amelyek integrálódnak a többségi társadalomba.",
+      "B) Olyan közösségek, amelyek elkülönülnek és nem lépnek kapcsolatba a többségi társadalommal.",
+      "C) Olyan társadalmak, ahol mindenki egyenlő.",
+      "D) Olyan társadalmak, ahol a technológia uralkodik."
+     ],
+     "question": "Mi a párhuzamos társadalom?",
+     "explanation": "A párhuzamos társadalmak olyan közösségeket jelentenek, amelyek elkülönülnek a többségi társadalomtól, gyakran saját normáikkal és értékeikkel.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Csökkenő születési arány.",
+      "B) Magas halálozási arány.",
+      "C) Magas születési arány és csökkenő halálozási arány.",
+      "D) Egyenletes népességnövekedés."
+     ],
+     "question": "Mi okozza a népességrobbanást?",
+     "explanation": "A népességrobbanást a magas születési arány és a csökkenő halálozási arány együttes hatása okozza.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az iszlám vallás békés terjedése.",
+      "B) Politikai ideológia, amely az iszlám törvények politikai alkalmazását hirdeti.",
+      "C) Az iszlám vallás elutasítása.",
+      "D) Az iszlám és a kereszténység közötti párbeszéd."
+     ],
+     "question": "Mi az iszlamizmus?",
+     "explanation": "Az iszlamizmus olyan politikai ideológia, amely az iszlám törvények politikai alkalmazását hirdeti, gyakran radikális formában.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Csak politikai célú.",
+      "B) Csak vallási célú.",
+      "C) Politikai, vallási vagy ideológiai célú.",
+      "D) Nincs formája."
+     ],
+     "question": "Milyen formái vannak a terrorizmusnak?",
+     "explanation": "A terrorizmus formái lehetnek politikai, vallási vagy ideológiai célúak, és céljaik elérésére erőszakos módszereket alkalmaznak.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A nemzetállamok határainak megszűnése.",
+      "B) A világ gazdasági, politikai és kulturális összekapcsolódása.",
+      "C) Csak gazdasági folyamat.",
+      "D) A helyi kultúrák eltűnése."
+     ],
+     "question": "Mi a globalizáció?",
+     "explanation": "A globalizáció a világ gazdasági, politikai és kulturális összekapcsolódását jelenti, amely hatással van a nemzetállamokra és a helyi közösségekre.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Csak pozitív hatásai vannak.",
+      "B) Csak negatív hatásai vannak.",
+      "C) Pozitív és negatív hatásai is lehetnek.",
+      "D) Nincs hatása."
+     ],
+     "question": "Milyen hatással van a globalizáció a munkaerőpiacra?",
+     "explanation": "A globalizáció a munkaerőpiacra pozitív és negatív hatásokat is gyakorol, például a munkahelyek terjedését és a versenyképesség növekedését, de a munkahelyek elvesztését is okozhatja.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}
