@@ -1,0 +1,703 @@
+{
+ "nat_id": "HIST-56-01",
+ "topic_id": "b0189d31-f11c-4a4d-9ab9-06f67526590b",
+ "title_hu": "Személyes történelem",
+ "grade": 5,
+ "lessons": [
+  {
+   "lesson_id": "19feffaf-e552-4a6c-a933-9cce511ddd7d",
+   "title_hu": "Körülöttem a történelem",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "18945715-4210-4b2e-9dfb-542015e6a00b",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A családi fotóalbumok őrzik a család történetét, emlékeket és eseményeket, amelyek fontosak voltak a családtagok életében. Ezek a tárgyak nemcsak a személyes történeteket mutatják be, hanem a társadalmi és kulturális kontextust is, amelyben a család élt. A fotók és tárgyak segítségével a múlt élményei és hagyományai továbbadhatók a következő generációknak. A magyar történelem szempontjából ezek a tárgyak a nemzeti identitás és a közösségi emlékezet fontos részét képezik.",
+       "type": "text",
+       "heading": "Családi fotóalbum és személyes tárgyak",
+       "key_term": "személyes tárgyak"
+      },
+      {
+       "body": "A személyes történetek dokumentálása lehetőséget ad arra, hogy a múlt eseményei, élményei és érzései megmaradjanak. Az egyéni elbeszélések a magyar történelem sokszínűségét tükrözik, hiszen minden család története egyedi és különleges. Ezek a történetek hozzájárulnak a közösségi emlékezethez, és segítenek megérteni a múltat. A történetek megosztása erősíti a családi és közösségi kötelékeket.",
+       "type": "text",
+       "heading": "Személyes történetek dokumentálása, elbeszélése",
+       "key_term": "személyes történetek"
+      },
+      {
+       "body": "Egy nap dokumentálása során rögzíthetjük a mindennapi életünket, amely a történelem szempontjából is jelentőséggel bír. Az egyes napok eseményei, élményei és érzései a társadalom szélesebb kontextusába is beágyazhatók. A személyes tapasztalatok és a nagyobb történelmi események összefonódása segít megérteni a múlt hatását a jelenre. Ez a gyakorlat a történeti tudatosság fejlesztését is szolgálja.",
+       "type": "text",
+       "heading": "Egy nap dokumentálása",
+       "key_term": "dokumentálás"
+      },
+      {
+       "body": "A kódexek a középkor fontos dokumentumai voltak, amelyek írásos formában őrizték meg a tudást és a kultúrát. A magyar kódexek, mint például a Képes krónika, nemcsak történelmi eseményeket rögzítettek, hanem a korabeli életmódot és szokásokat is bemutatták. A kódexkészítés folyamata a tudás átadásának és megőrzésének fontos eszköze volt. A mai kódexek készítése során a hagyományokat és a személyes történeteket is megjeleníthetjük, így folytatva a múlt örökségét.",
+       "type": "text",
+       "heading": "Kódexkészítés",
+       "key_term": "kódex"
+      },
+      {
+       "body": "A történelem kronológiai felépítése segít megérteni az események időbeli elhelyezkedését. A Kr. e. és Kr. u. időszámítás a történelem két fő időszakát jelöli, amelyek között jelentős változások zajlottak. Az őskor, ókor, középkor, újkor és modern kor mind fontos szakaszai a magyar és egyetemes történelemnek. A kronológia lehetővé teszi, hogy a diákok összefüggéseket találjanak a különböző történelmi események között, és megértsék azok hatását a jelenre.",
+       "type": "text",
+       "heading": "Kronológia a történelemben",
+       "key_term": "kronológia"
+      }
+     ]
+    },
+    {
+     "block_id": "5d8e0ae6-588a-4019-aba2-86db4ba423fd",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A reggel korán kezdődött, ahogy a nap első fényei megcsillantak a földeken. A földművesek fáradhatatlanul dolgoztak, hogy megtermeljék a szükséges élelmet családjuk számára. A vetés és aratás időszaka különösen fontos volt, hiszen a megélhetésük múlott rajta. A közeli faluban a közösség összefogott, hogy segítsenek egymásnak, hiszen a földek művelése kemény munka volt. A földművelés nem csupán a megélhetést jelentette, hanem a hagyományok ápolását is, hiszen a szokások és ünnepek szorosan összefonódtak a mezőgazdasági ciklusokkal.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A földműves mindennapjai"
+      },
+      {
+       "body": "A családi otthonban a felnőttek mellett a gyermekek is aktívan részt vettek a háztartásban. A konyhában az asszonyok főztek, miközben a gyermekek segítettek a zöldségek előkészítésében. Az étkezések közben a család együtt töltötte az időt, megosztva egymással a nap eseményeit. A közös étkezések nemcsak táplálékot jelentettek, hanem a családi kötelékek megerősítését is. Az ünnepek különösen fontosak voltak, amikor a családok együtt ünnepeltek, és a hagyományos ételek készítése szorosan összefonódott a kultúrával.",
+       "mood": "család",
+       "type": "story",
+       "heading": "A családi otthon"
+      },
+      {
+       "body": "A faluban a helyi közösség tagjai szoros kapcsolatban álltak egymással. A hivatalos ügyek intézése során a községi vezetők és a falusiak közötti párbeszéd elengedhetetlen volt. A közösségi rendezvények, mint a vásárok vagy a falunapok, lehetőséget adtak a helyieknek, hogy találkozzanak és tapasztalatokat cseréljenek. A közösségi szellem erősítette a falusiak összetartását, és a közös problémák megoldása érdekében gyakran együttműködtek.",
+       "mood": "közösség",
+       "type": "story",
+       "heading": "A helyi közösség élete"
+      },
+      {
+       "body": "A gyermekek nevelése a családokban és a közösségben egyaránt fontos feladat volt. Az idősebbek meséltek a hagyományokról, szokásokról, miközben a fiatalok megtanulták a kézműves mesterségeket. Az iskolákban alapvető írás- és olvasástanulás folyt, de a gyerekek gyakran a szüleik munkáját is figyelemmel kísérték. A tudás átadása generációról generációra történt, és a közösség felelőssége volt, hogy a fiatalokat felkészítse a jövő kihívásaira.",
+       "mood": "nevelés",
+       "type": "story",
+       "heading": "A gyermekek nevelése"
+      },
+      {
+       "body": "A vallás és a hit fontos szerepet játszott a falusi emberek életében. Az ünnepek alkalmával közösen jártak templomba, ahol a közösség együtt imádkozott. A vallási szokások szorosan összefonódtak a mindennapi életükkel, és a hagyományos ünnepek, mint a karácsony vagy húsvét, különleges alkalmak voltak a családok számára. Ezek az események lehetőséget adtak a közösség számára, hogy megerősítse kötelékeit és együtt ünnepeljenek.",
+       "mood": "hit",
+       "type": "story",
+       "heading": "A hit és a szokások"
+      }
+     ]
+    },
+    {
+     "block_id": "fbb88c5e-ac55-4d3e-b253-5549908cff6f",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A kódexek szerepe a magyar kultúrában és történelmi emlékezetben.",
+       "heading": "Kódexek a magyar történelemben",
+       "description": "A legfontosabb magyar kódexek időrendben, a Képes krónikától a Corvina könyvtárig.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A korszakok áttekintése és a fontos események kiemelése.",
+       "heading": "Idővonal a magyar történelem főbb korszakairól",
+       "description": "A magyar történelem főbb korszakai: őskor, ókor, középkor, újkor, jelenkor, Kr. e. és Kr. u. időszakokkal.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A családi emlékek és a magyar történelem kapcsolata.",
+       "heading": "Családi fotóalbum és személyes tárgyak",
+       "description": "A családi történetekhez kapcsolódó helyszínek, ahol fontos események zajlottak.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A személyes elbeszélések jelentősége a történelem megértésében.",
+       "heading": "Személyes történetek dokumentálása",
+       "description": "A személyes történetek felépítése: ki, mi, mikor, hol és miért.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A mindennapi élet és a történelem kapcsolata.",
+       "heading": "Egy nap dokumentálása",
+       "description": "Egy átlagos magyar család napjának eseményei, időrendben.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A Képes krónika mint a magyar középkor fontos forrása.",
+       "heading": "A Képes krónika",
+       "description": "A Képes krónika illusztrációi és azok jelentősége a magyar történelemben.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "A középkor jelentősége a magyar államiság fejlődésében.",
+       "heading": "A középkor főbb eseményei",
+       "description": "A középkor magyar történetének legfontosabb eseményei és személyei.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A modern kor hatása a magyar társadalomra és kultúrára.",
+       "heading": "A modern kor hatásai",
+       "description": "A modern kor eseményei Magyarország területén, kiemelt helyszínekkel.",
+       "visual_type": "térkép"
+      }
+     ]
+    },
+    {
+     "block_id": "939a5aa0-c98e-4ab7-ab46-3faffc84ec6a",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": []
+    },
+    {
+     "block_id": "7533dcf5-e1d7-416d-8421-f8c8862a66f2",
+     "mode": "deep",
+     "scope": "lesson",
+     "level": "emelt",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A családi fotók és tárgyak megőrzése nemcsak az emlékek miatt fontos, hanem azért is, mert segítenek megérteni, hogyan változott a világ körülöttünk. Gondolj bele, a nagyszüleid idejében a technológia még nem volt olyan fejlett, mint ma. A tárgyak, amiket megőriztek, tükrözik az akkori életmódot és szokásokat. Ezek a tárgyak lehetőséget adnak arra, hogy összehasonlítsd a múltat a jelennel, és meglásd, hogyan alakult a társadalom.",
+       "type": "deep",
+       "think": "Miért lehet fontos egy régi családi fotóalbum megőrzése?",
+       "anchor": 0,
+       "heading": "Miért őrizzük meg a tárgyakat?",
+       "did_you_know": "",
+       "think_answer": "Egy régi családi fotóalbum megőrzése segít megérteni a család történetét, és lehetőséget ad arra, hogy a múltbeli eseményekről és szokásokról meséljünk a következő generációknak."
+      },
+      {
+       "body": "Amikor személyes történeteket mesélünk, nemcsak a saját élményeinket osztjuk meg, hanem hozzájárulunk a közösségi emlékezet kialakításához is. A történetek révén a közösség tagjai jobban megértik egymást, és erősödnek a kapcsolatok. Egy közösség akkor erős, ha tagjai ismerik és tisztelik egymás múltját. Az elbeszélések segítenek abban, hogy felfedezzük a közös pontokat és megértsük, hogyan formálódott a közösségünk.",
+       "type": "deep",
+       "think": "Miért lehet fontos a családi történetek megosztása a közösséggel?",
+       "anchor": 1,
+       "heading": "Hogyan formálják a történetek a közösséget?",
+       "did_you_know": "",
+       "think_answer": "A családi történetek megosztása erősíti a közösség összetartozását, és segít megérteni a közös múltat, ami alapja lehet a jövőbeli együttműködésnek."
+      },
+      {
+       "body": "Egy nap dokumentálása során rájöhetsz, hogy a mindennapi események is fontosak lehetnek a történelem szempontjából. Például egy egyszerű séta a parkban lehetőséget ad arra, hogy megfigyeld a környezeted változásait, vagy találkozz másokkal, akik szintén részei a közösségnek. Az ilyen dokumentáció segíthet felismerni, hogy a mindennapi életünk hogyan kapcsolódik a nagyobb társadalmi és történelmi folyamatokhoz.",
+       "type": "deep",
+       "think": "Miért lehet érdekes egy átlagos nap eseményeit leírni?",
+       "anchor": 2,
+       "heading": "Miért érdemes dokumentálni egy napot?",
+       "did_you_know": "",
+       "think_answer": "Egy átlagos nap eseményeinek leírása segíthet észrevenni a mindennapi élet apró részleteit, amelyekből a későbbiekben fontos emlékek vagy tanulságok születhetnek."
+      },
+      {
+       "body": "A középkori kódexek nemcsak történelmi eseményeket, hanem a korabeli életmódot is bemutatták. Ezek a dokumentumok segítettek megőrizni a tudást és a kultúrát, amikor még nem voltak modern könyvtárak vagy digitális archívumok. A kódexek készítése során a szerzetesek és írnokok sok időt és energiát fordítottak arra, hogy a szövegek pontosak és szépen kidolgozottak legyenek, ami ma is lenyűgöző.",
+       "type": "deep",
+       "think": "Miért lehetett fontos a kódexek díszítése?",
+       "anchor": 3,
+       "heading": "Miért voltak fontosak a kódexek?",
+       "did_you_know": "A kódexek készítése során gyakran használtak aranyat és drága festékeket, hogy a lapok díszesek legyenek.",
+       "think_answer": "A kódexek díszítése nemcsak esztétikai célt szolgált, hanem kifejezte a szövegek fontosságát és tiszteletet adott a benne foglalt tudásnak."
+      },
+      {
+       "body": "A kronológia segít megérteni, hogyan kapcsolódnak egymáshoz a történelmi események. Például, ha tudjuk, hogy az ókorban milyen technológiai fejlődések történtek, könnyebben megértjük, hogyan alakult ki a középkor társadalma. A kronológia lehetővé teszi, hogy összefüggéseket találjunk, és meglássuk, hogyan befolyásolták a múlt eseményei a jelenlegi világunkat.",
+       "type": "deep",
+       "think": "Miért lehet fontos a történelmi események időbeli sorrendjének ismerete?",
+       "anchor": 4,
+       "heading": "Miért fontos a kronológia?",
+       "did_you_know": "",
+       "think_answer": "A történelmi események időbeli sorrendjének ismerete segít megérteni az ok-okozati összefüggéseket, és hogyan formálták ezek a jelenlegi társadalmi és kulturális helyzetet."
+      }
+     ]
+    },
+    {
+     "block_id": "41a22423-05c2-4716-ad1e-85e7892739f1",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Kézzel írott könyv, amely fontos történelmi vagy vallási szövegeket tartalmaz.",
+        "B) Olyan modern digitális dokumentum, amelyet bármilyen számítógépen létrehozhatunk.",
+        "C) Egy művészeti alkotás, amely a középkorban készült.",
+        "D) Egy történelmi esemény leírása."
+       ],
+       "question": "Mi a kódex?",
+       "explanation": "A kódexek a középkorban készült kézzel írott könyvek, amelyek fontos vallási, történelmi vagy kulturális szövegeket tartalmaznak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Kr. e. 5000 - Kr. e. 1000",
+        "B) Kr. u. 1000 - Kr. u. 1500",
+        "C) Kr. e. 3000 - Kr. e. 500",
+        "D) Kr. u. 1500 - Kr. u. 1900"
+       ],
+       "question": "Melyik időszak tartozik az őskorhoz?",
+       "explanation": "Az őskor a legkorábbi emberi civilizációk időszaka, amely Kr. e. 5000 és Kr. e. 1000 között terjed.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Kr. u. 476",
+        "B) Kr. e. 1000",
+        "C) Kr. u. 1500",
+        "D) Kr. e. 500"
+       ],
+       "question": "Mikor kezdődött a középkor?",
+       "explanation": "A középkor kezdete általában Kr. u. 476-ra tehető, amikor a Nyugatrómai Birodalom összeomlott.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A feudalizmus megszűnése és a polgári társadalom kialakulása.",
+        "B) A római birodalom megerősödése.",
+        "C) Az őskori vadászó-gyűjtögető életmód.",
+        "D) A középkori vallási háborúk."
+       ],
+       "question": "Mi jellemzi az újkort?",
+       "explanation": "Az újkor a feudalizmus megszűnésével és a polgári társadalom kialakulásával jellemezhető, ami a 15. századtól kezdődően zajlott.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 1900-tól",
+        "B) 1500-tól",
+        "C) 1800-tól",
+        "D) 2000-től"
+       ],
+       "question": "Mikortól számítjuk a modern kort?",
+       "explanation": "A modern kort általában 1900-tól számítjuk, amikor a világ jelentős politikai, társadalmi és technológiai változásokon ment keresztül.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "1bdb5007-7e70-4844-bd15-b6f76a543b2b",
+   "title_hu": "Címer, zászló, pecsét, az idő mérése",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "89a04c69-ae15-4e61-a2be-078fe663f7d4",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A címerek és zászlók a magyar identitás fontos szimbólumai. Magyarország címerében a hármas halom, a korona és a kereszt található, amelyek a történelmi államiságot és a keresztény hagyományokat jelképezik. A zászló piros, fehér és zöld színei a magyar nép történelmét és küzdelmeit idézik fel. A települések saját címereikkel és zászlóikkal fejezik ki helyi identitásukat és hagyományaikat.",
+       "type": "text",
+       "heading": "Címerek és zászlók alkotóelemei",
+       "key_term": "címer, zászló"
+      },
+      {
+       "body": "A pecsét a hivatalos dokumentumok érvényességét biztosítja. Az Aranybulla pecsétje, amelyet 1222-ben adtak ki, a magyar történelem egyik legfontosabb jogi dokumentuma. A pecsét nemcsak a jogi érvényességet, hanem a királyi hatalom szimbólumát is jelenti. A pecsét használata a középkor óta elterjedt, és ma is fontos szerepet játszik a hivatalos ügyintézésben.",
+       "type": "text",
+       "heading": "A hitelesítés eszköze: a pecsét",
+       "key_term": "pecsét, Aranybulla"
+      },
+      {
+       "body": "A személyes címerek és zászlók készítése lehetőséget ad az egyéni identitás kifejezésére. Mindenki saját családi címert alkothat, amely tükrözi a család történelmét és értékeit. A zászlók színei és motívumai szintén személyre szabhatók, így a készítés folyamata kreatív és szórakoztató. A személyes címerek és zászlók a közösségi eseményeken és ünnepeken is megjelenhetnek.",
+       "type": "text",
+       "heading": "Személyes címerek és zászlók készítése",
+       "key_term": "személyes címer, zászló"
+      },
+      {
+       "body": "Az időszámítás a civilizációk fejlődésének alapvető része. A magyar időszámítás a keresztény időszámításon alapul, amely Jézus születésétől számít. A középkorban a napok, hónapok és évek mérése különböző naptárak szerint történt, amelyek közül a Julián- és a Gergely-naptár a legelterjedtebbek. Az időszámítás pontosítása lehetővé tette a történelmi események és folyamatok pontosabb követését.",
+       "type": "text",
+       "heading": "Az időszámítás története",
+       "key_term": "időszámítás"
+      },
+      {
+       "body": "Az évszázad a történelem időmérésének egyik alapvető egysége, amely száz évet foglal magában. Az évszázadok segítenek a történelmi események időbeli elhelyezésében és a korszakok meghatározásában. Például a 19. század a 1801-től 1900-ig tartó időszakot jelöli, amely Magyarország történetében a reformkor és a dualizmus időszaka. Az évszázadok használata lehetővé teszi, hogy a történelmi folyamatokat nagyobb összefüggésekben lássuk, és megértsük a hosszú távú változásokat. Az évszázadokkal való gondolkodás segít abban is, hogy a történelmi eseményeket könnyebben összehasonlítsuk és rendszerezzük.",
+       "type": "text",
+       "heading": "Az évszázad fogalma és jelentősége",
+       "key_term": "évszázad"
+      }
+     ]
+    },
+    {
+     "block_id": "c0c32e7c-dad5-49a6-91fd-c0929ee6c894",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy falusi közösség tagjai izgatottan készülődnek az éves búcsúra. A gyerekek színes zászlókat készítenek, amelyek a település címereit ábrázolják. Az asszonyok süteményeket sütnek, míg a férfiak a falu védelmét jelképező zászlókat állítják fel. A közösség összetartozásának érzése mindenkit elragad, és a címer a falu identitását erősíti.",
+       "mood": "hagyományok, közösség",
+       "type": "story",
+       "heading": "A falusi közösség ünnepe"
+      },
+      {
+       "body": "Egy helyi írnok nap mint nap pecséteket készít a falusi hivatal számára. A pecsét a hatalom és a hitelesítés szimbóluma, amely biztosítja a dokumentumok érvényességét. Az emberek tiszteletteljesen állnak meg előtte, tudva, hogy a pecsét által érvényesített iratok segítik őket a földjeik és javaik védelmében.",
+       "mood": "hivatalos, megbecsülés",
+       "type": "story",
+       "heading": "A pecsét szerepe a mindennapokban"
+      },
+      {
+       "body": "A faluban a kézművesek különböző termékeket készítenek, amelyek a helyi piacra kerülnek. A kovácsok, fazekasok és szövők mindannyian a saját mesterségük szimbólumait használják, hogy megkülönböztessék munkájukat. A helyi kereskedők büszkén árulják a termékeiket, amelyek a falusi élet mindennapjait gazdagítják.",
+       "mood": "gazdaság, mesterség",
+       "type": "story",
+       "heading": "Mesterségek és a helyi kereskedelem"
+      },
+      {
+       "body": "Egy falusi család tagjai együtt ünneplik a születésnapokat és az évfordulókat. A családi címer, amely a közös múltjukat jelképezi, díszíti az ünnepi asztalt. Az ételek, amelyeket készítenek, a hagyományos receptek alapján készülnek, és a közös étkezés során az összetartozás érzése erősödik.",
+       "mood": "család, ünnep",
+       "type": "story",
+       "heading": "Családi ünnepek és hagyományok"
+      },
+      {
+       "body": "A falusi emberek az évszakok változásával és a természet ritmusával mérik az időt. A mezőgazdasági munkák, mint a vetés és aratás, szorosan összefonódnak az időszámítással. Az emberek a naplementét és a napfelkeltét figyelik, hogy meghatározzák a munkájuk idejét, és a közösség életét a természet ciklusai irányítják.",
+       "mood": "természet, idő",
+       "type": "story",
+       "heading": "Az időszámítás hatása a mindennapokra"
+      }
+     ]
+    },
+    {
+     "block_id": "1cd0fc11-ebc1-4c8d-978a-c1ce7864b38c",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A magyar címer elemei: hármas halom, kettős kereszt, Szent Korona, vörössel és ezüsttel hétszer vágott mező.",
+       "heading": "A Magyarország címerének alkotóelemei",
+       "description": "A magyar címer bemutatása, amely tartalmazza a kettős keresztet, a hármas halmot és a korona szimbólumot.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A magyar zászló színei és jelentésük.",
+       "heading": "A magyar zászló színei",
+       "description": "A piros, fehér és zöld színek bemutatása, amelyek a magyar zászlót alkotják, és a színek jelentése.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az Aranybulla pecsétje, amely a magyar jogtörténet fontos dokumentuma.",
+       "heading": "Az Aranybulla pecsétje",
+       "description": "A 1222-ben kiadott Aranybulla pecsétjének bemutatása, amely hitelesítette a királyi hatalom korlátozását.",
+       "visual_type": "kép"
+      },
+      {
+       "type": "visual",
+       "caption": "Személyes címerek, amelyek a családi hagyományokat őrzik.",
+       "heading": "Személyes címerkészítés",
+       "description": "Példa egyéni címerekre, amelyek a családok történelmét és értékeit tükrözik.",
+       "visual_type": "kép"
+      },
+      {
+       "type": "visual",
+       "caption": "Idővonal az időszámítás fejlődéséről.",
+       "heading": "Az időszámítás kezdete",
+       "description": "Az időszámítási rendszerek fejlődése, kezdve a római időszámítástól a magyar időszámítás bevezetéséig.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "Települések címerei Magyarország térképén.",
+       "heading": "A települések címerei",
+       "description": "Magyar települések címereinek bemutatása, amelyek helyi identitásukat és történelmüket tükrözik.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A zászlók jelentősége a magyar történelemben.",
+       "heading": "A zászló használata a történelemben",
+       "description": "A zászlók szerepe a harcokban és a nemzeti identitás kifejezésében a magyar történelem során.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Középkori pecsételési technikák.",
+       "heading": "Pecsételés a középkorban",
+       "description": "Pecsételési technikák és eszközök bemutatása a középkori Magyarországon.",
+       "visual_type": "kép"
+      }
+     ]
+    },
+    {
+     "block_id": "0a119915-b087-4255-844c-9fd93ecfc267",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A címerek, zászlók és pecsétek használata elterjedt jelenség az emberi történelemben. Különböző kultúrákban, például az ókori Egyiptomban és Kínában is hasonló szimbólumok szolgáltak a hatalom és a hovatartozás kifejezésére. A pecsétek mint hitelesítési eszközök megjelentek a római jogban is, ahol jogi dokumentumok érvényesítésére használták őket.",
+       "type": "world",
+       "year": "",
+       "heading": "Címerek, zászlók és pecsétek más kultúrákban",
+       "link_hu": ""
+      }
+     ]
+    },
+    {
+     "block_id": "6c2c4351-782b-4dac-a1d5-0f67a93dddd7",
+     "mode": "deep",
+     "scope": "lesson",
+     "level": "emelt",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A zászlók színei nem csupán dekorációk, hanem mély jelentéssel bírnak. A piros szín gyakran a bátorságot és az erőt szimbolizálja, míg a fehér a tisztaságot és a békét. A zöld szín a természethez és a reményhez kapcsolódik. Ezek a színek segítenek kifejezni egy ország vagy közösség értékeit és történelmét. Gondolj bele, hogy ha egy zászló színei megváltoznának, az hogyan befolyásolná az ország megítélését és identitását.",
+       "type": "deep",
+       "think": "Miért van az, hogy a legtöbb ország zászlójában a piros szín szerepel?",
+       "anchor": 0,
+       "heading": "Miért fontosak a színek a zászlókon?",
+       "did_you_know": "",
+       "think_answer": "A piros szín sok ország történelmében és identitásában az erőt, bátorságot és áldozatot szimbolizálhatja."
+      },
+      {
+       "body": "A pecsét használata a hitelesség biztosításának egyik ősi módja. Ha egy dokumentumot lepecsételnek, az azt jelenti, hogy az eredeti és hiteles. A pecsét anyaga gyakran viasz vagy fém, amelyet egy speciális eszközzel nyomnak rá a papírra. Ez a folyamat megakadályozza, hogy a dokumentumot illetéktelenek módosítsák. A pecsételés tehát nemcsak jogi, hanem fizikai védelmet is nyújt a dokumentumoknak.",
+       "type": "deep",
+       "think": "Miért van szükség pecsétre a mai digitális világban, ahol elektronikus aláírások is léteznek?",
+       "anchor": 1,
+       "heading": "Hogyan működik a pecsét?",
+       "did_you_know": "",
+       "think_answer": "A pecsét fizikai bizonyítékként szolgálhat, és a hagyományos dokumentumok hitelességét továbbra is biztosítja, különösen jogi ügyekben."
+      },
+      {
+       "body": "A címerek szimbólumai és színei különleges jelentéssel bírnak, melyeket heraldikának nevezünk. Például az oroszlán gyakran a bátorságot és nemességet jelképezi, míg a sas az erőt és a hatalmat. A címerekben használt színek és formák nem véletlenszerűek, hanem szigorú szabályok szerint kerülnek kiválasztásra, hogy pontosan kifejezzék az adott család vagy közösség történelmét és értékeit. Ezért egy címert olvasva sokat megtudhatsz az adott családról vagy közösségről.",
+       "type": "deep",
+       "think": "Miért van az, hogy a címerekben gyakran szerepelnek állatok?",
+       "anchor": 2,
+       "heading": "A címerek titkos nyelve",
+       "did_you_know": "A heraldika szabályai szerint a címerekben a fémek (arany és ezüst) nem érinthetik közvetlenül egymást, hogy megőrizzék a vizuális kontrasztot.",
+       "think_answer": "Az állatok szimbolikus jelentéssel bírnak, és gyakran képviselik azokat az erényeket vagy tulajdonságokat, amelyeket a család vagy közösség fontosnak tart."
+      },
+      {
+       "body": "Az időszámítás fejlődése a civilizációk egyik legnagyobb teljesítménye. Az ókori Egyiptomban például a napéjegyenlőségek alapján mérték az időt, míg a rómaiak a holdciklusokat követték. A pontos időszámítás lehetővé tette a mezőgazdasági munkák tervezését és a vallási ünnepek időzítését. A Gergely-naptár bevezetése 1 582-ben segített a pontosabb időszámításban, kiküszöbölve a korábbi naptárak hibáit. Ez a változás nemcsak a mindennapi életet, hanem a történelmi események pontosabb követését is megkönnyítette.",
+       "type": "deep",
+       "think": "Miért fontos, hogy a naptárak pontosak legyenek?",
+       "anchor": 3,
+       "heading": "Az időszámítás rejtélyei",
+       "did_you_know": "A Gergely-naptár bevezetésekor 10 napot kihagytak, így október 4-e után rögtön október 15-e következett.",
+       "think_answer": "A pontos naptárak segítenek a mezőgazdasági munkák, vallási ünnepek és társadalmi események időzítésében, valamint a történelmi események követésében."
+      },
+      {
+       "body": "Az évszázadok segítenek átlátni a történelem hosszú távú folyamatait. Egy évszázad alatt sok társadalmi, politikai és technológiai változás történhet, amelyek formálják a világot. Például a 20. században a technológiai fejlődés, mint az autó és a repülőgép feltalálása, alapvetően átalakította az emberek életét. Az évszázadok lehetővé teszik, hogy a változásokat nagyobb összefüggésekben lássuk, és megértsük, hogyan alakult a világ az idők során.",
+       "type": "deep",
+       "think": "Miért lehet hasznos az évszázadok szerint gondolkodni, amikor a történelemről tanulsz?",
+       "anchor": 4,
+       "heading": "Az évszázadok hatása a történelemre",
+       "did_you_know": "",
+       "think_answer": "Az évszázadok segítenek a történelmi események és folyamatok időbeli elhelyezésében, és megmutatják, hogyan kapcsolódnak egymáshoz a hosszú távú változások."
+      }
+     ]
+    },
+    {
+     "block_id": "39848d5c-f3cb-40a9-a38b-a3974547419b",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) A turulmadár, mert a magyar mitológia része.",
+        "B) A Szent Korona, mert a magyar államiság szimbóluma.",
+        "C) A három halom, mert a magyar tájra utal.",
+        "D) A kék szín, mert a magyar zászló színei között szerepel."
+       ],
+       "question": "Mi a magyar címer központi eleme, és miért fontos ez a magyar történelem szempontjából?",
+       "explanation": "A Szent Korona a magyar államiság és a királyság jelképe, fontos szerepet játszik a magyar történelemben, mert a koronázási szertartások során a királyok legitimációját biztosította.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Piros, fehér, zöld; 1848-ban.",
+        "B) Kék, sárga, zöld; 1867-ben.",
+        "C) Piros, fehér, zöld; 1920-ban.",
+        "D) Piros, kék, zöld; 1956-ban."
+       ],
+       "question": "Melyik zászló színei képviselik Magyarországot, és mikor váltak hivatalossá?",
+       "explanation": "A piros, fehér, zöld színek a magyar zászló hivatalos színei, amelyek 1848-ban, a forradalom idején váltak ismertté, és azóta a magyar nemzeti identitás szimbólumaivá váltak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Az érték megőrzése.",
+        "B) A hitelesítés eszköze.",
+        "C) A díszítés funkciója.",
+        "D) A titkos információk tárolása."
+       ],
+       "question": "Milyen szerepe van a pecsétnek a történelmi dokumentumokban, például az Aranybullában?",
+       "explanation": "A pecsét a hitelesítés eszköze, amely biztosítja a dokumentumok érvényességét, mint például az Aranybulláé, amely fontos jogi és politikai dokumentum volt a középkori Magyarországon.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 1. év, mert Jézus születésének időpontját jelöli.",
+        "B) 1000. év, mert Szent István király megkoronázása.",
+        "C) 500. év, mert a római birodalom bukása.",
+        "D) 2000. év, mert a harmadik évezred kezdete."
+       ],
+       "question": "Mikor kezdődött a keresztény időszámítás, és miért fontos ez a magyar történelem szempontjából?",
+       "explanation": "A keresztény időszámítás kezdete, az 1. év Jézus születését jelöli, amely a keresztény kultúra és vallás elterjedésének alapját képezi, így kiemelkedő jelentőségű a magyar történelem szempontjából is.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Egyedi identitás kifejezése.",
+        "B) Történelmi események megörökítése.",
+        "C) Politikai hatalom megszerzése.",
+        "D) Vallási szertartásokhoz való kötődés."
+       ],
+       "question": "Mi a személyes címer készítésének jelentősége a magyar kultúrában?",
+       "explanation": "A személyes címer készítése lehetőséget ad az egyedi identitás kifejezésére, amely a családi hagyományokat és a személyes értékeket tükrözi, így fontos része a magyar kultúrának.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "9fd50c81-4f9a-4090-87e0-f5ab028024fd",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kézzel írott könyv, amely fontos történelmi és jogi dokumentumokat tartalmaz.",
+      "B) Egyfajta festmény, amely a középkorban népszerű volt.",
+      "C) Olyan zenei műfaj, amely a reneszánsz idején alakult ki.",
+      "D) A középkori várak védelmi rendszere."
+     ],
+     "question": "Mi a kódex?",
+     "explanation": "A kódexek kézzel írott könyvek, amelyek fontos szövegeket, például jogi, vallási vagy tudományos írásokat tartalmaztak.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kr. e. 500 - Kr. u. 1500",
+      "B) Kr. e. 3000 - Kr. e. 500",
+      "C) Kr. u. 1500 - Kr. u. 1800",
+      "D) Kr. u. 1800 - napjainkig"
+     ],
+     "question": "Melyik időszakra jellemző a középkor?",
+     "explanation": "A középkor időszaka Kr. e. 500-tól Kr. u. 1500-ig terjed, amely a római birodalom bukásától a reneszánszig tart.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az írás megjelenése.",
+      "B) Az emberek vadászó-gyűjtögető életmódja.",
+      "C) A városok kialakulása.",
+      "D) A középkori feudalizmus."
+     ],
+     "question": "Mi jellemzi az őskort?",
+     "explanation": "Az őskorban az emberek vadászó-gyűjtögető életmódot folytattak, és még nem alakultak ki tartós települések.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 15. század",
+      "B) 16. század",
+      "C) 17. század",
+      "D) 18. század"
+     ],
+     "question": "Melyik évszázadban kezdődött a modern kor?",
+     "explanation": "A modern kor a 15. században kezdődött, a reneszánsz és a felfedezések korával.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1000 - 1038",
+      "B) 1038 - 1077",
+      "C) 976 - 1038",
+      "D) 1200 - 1260"
+     ],
+     "question": "Mikor élt Szent István?",
+     "explanation": "Szent István, Magyarország első királya 976 és 1038 között élt.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Őskor",
+      "B) Ókor",
+      "C) Középkor",
+      "D) Újkor"
+     ],
+     "question": "Melyik időszakra vonatkozik a Kr. u. 500 - 1500 közötti időszak?",
+     "explanation": "A Kr. u. 500 és 1500 közötti időszak a középkor időszaka.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az ókorban nem volt írás.",
+      "B) Az ókorban a városállamok fejlődtek, míg a középkorban a feudális rendszer alakult ki.",
+      "C) Az ókorban csak vallási írások léteztek.",
+      "D) A középkorban nem voltak háborúk."
+     ],
+     "question": "Mi a különbség az ókor és a középkor között?",
+     "explanation": "Az ókorban a városállamok fejlődtek, míg a középkorban a feudális rendszer vált jellemzővé.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Őskor",
+      "B) Ókor",
+      "C) Középkor",
+      "D) Modern kor"
+     ],
+     "question": "Melyik időszakban alakultak ki a nagyobb városok és a kereskedelem?",
+     "explanation": "Az ókorban alakultak ki a nagyobb városok és a kereskedelem, különösen a római birodalom idején.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

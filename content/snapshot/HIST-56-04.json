@@ -1,0 +1,1329 @@
+{
+ "nat_id": "HIST-56-04",
+ "topic_id": "6f3e80e9-97c3-475c-a1bc-1a9c52ff5e35",
+ "title_hu": "A középkor világai",
+ "grade": 5,
+ "lessons": [
+  {
+   "lesson_id": "c2079ad7-5276-484c-a5d5-85b390eedf2d",
+   "title_hu": "Élet a várban – egy magyar vár (pl. Visegrád) és uradalom bemutatásával",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "ebd6fe7a-6846-4efc-9f9a-f4ebefd6b988",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Visegrád a középkorban Magyarország egyik legfontosabb vára volt, amely a Duna kanyarulatánál helyezkedett el. Itt található a híres Visegrádi vár, amely a 14. században épült, és a magyar királyok székhelyévé vált. A vár nemcsak katonai erődként, hanem politikai központként is funkcionált, ahol a királyok és nemesek találkoztak. Visegrád jelentősége a magyar történelemben abban rejlik, hogy itt tartották a híres Visegrádi találkozót 1335-ben, amely a közép-európai együttműködés jegyében zajlott.",
+       "type": "text",
+       "heading": "Visegrád története",
+       "key_term": "Visegrád"
+      },
+      {
+       "body": "A földesúr a középkori Magyarországon a föld birtokosa volt, aki a jobbágyok munkáját irányította. A földesúr jogai közé tartozott a jobbágyok adóztatása és a robot, amely a jobbágyok kötelező munkáját jelentette a földesúr földjein. A földesúri rendszer alapja a hűbériség volt, amelyben a nemesek a király hűbéreseiként birtokolták földjeiket. A földesúr és a jobbágy közötti viszony meghatározta a középkori társadalmi struktúrát.",
+       "type": "text",
+       "heading": "A földesúr szerepe",
+       "key_term": "földesúr"
+      },
+      {
+       "body": "A nemesek a középkori Magyarország társadalmi hierarchiájának felső rétegét alkották, akik birtokolták a földeket és jogokat élveztek. A nemesség feladata volt a királyi hatalom támogatása és a helyi igazságszolgáltatás lebonyolítása. A nemesek között különbséget tettek a bárók és a kisnemesek között, akik eltérő jogokkal és kötelezettségekkel rendelkeztek. A nemesség szerepe kulcsfontosságú volt a középkori Magyarország politikai és gazdasági életében.",
+       "type": "text",
+       "heading": "A nemesek és a társadalmi hierarchia",
+       "key_term": "nemes"
+      },
+      {
+       "body": "Az uradalom a középkori Magyarország gazdasági egysége volt, amely magába foglalta a földesúr birtokait és az azokon élő jobbágyokat. Az uradalom központja általában a vár volt, ahol a földesúr lakott és irányította a birtok működését. A jobbágyok a falvakban éltek, és a földesúr földjein dolgoztak, cserébe földhasználati jogot és védelmet kaptak. Az uradalom gazdasági alapját a mezőgazdaság képezte, amely biztosította a középkori társadalom élelmiszerellátását.",
+       "type": "text",
+       "heading": "Az uradalom működése",
+       "key_term": "uradalom"
+      },
+      {
+       "body": "A jobbágyok a középkorban a földesúr alattvalói voltak, akik különféle kötelezettségekkel tartoztak. A robot, vagyis a kötelező munka, a jobbágyok mindennapi életének része volt, amelyet a földesúr földjein kellett végezniük. A jobbágyok jogai korlátozottak voltak, de cserébe védelmet és földhasználati jogot kaptak. A jobbágyok élete nehézségekkel teli volt, de közösségeikben erős kötelékek alakultak ki, amelyek segítették őket a mindennapi kihívások leküzdésében.",
+       "type": "text",
+       "heading": "A jobbágyok élete",
+       "key_term": "jobbágy"
+      },
+      {
+       "body": "A pápa a középkorban nemcsak vallási, hanem politikai hatalommal is bírt, amely kihatott a magyar királyságra is. A pápai hatalom gyakran befolyásolta a magyar királyok döntéseit, és a vallási ügyekben is fontos szerepet játszott. A pápa támogatása sok esetben kulcsfontosságú volt a királyok legitimációjához és hatalmuk megszilárdításához. A pápa és a magyar egyház közötti kapcsolatok a középkori politikai élet fontos részét képezték.",
+       "type": "text",
+       "heading": "A pápa és a középkori hatalom",
+       "key_term": "pápa"
+      }
+     ]
+    },
+    {
+     "block_id": "246a1e98-633d-44db-b9c8-afd94751d8d3",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A falusi emberek reggelente korán keltek, hogy megkezdjék a földművelést. A földesúr birtokán dolgoztak, a jobbágyoknak pedig kötelező volt robotot végezniük. A nyári hónapokban a gabonát aratták, míg ősszel a földet szántották. A felnőttek mellett a gyermekek is segítettek, hiszen a család megélhetése a termés mennyiségétől függött. A munka nehéz volt, de a közös erőfeszítés összekovácsolta a közösséget, és a betakarítás idején sokan ünnepeltek a falu népének összegyűlésével.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A földművelés mindennapjai"
+      },
+      {
+       "body": "A vár közelében kézművesek dolgoztak, akik különféle mesterségeket űztek. A kovácsok a fémeket formálták, míg a fazekasok agyagból készítettek edényeket. A falusi asszonyok gyakran látogatták őket, hogy beszerezzék a szükséges eszközöket a háztartásukhoz. A kézművesek termékei nemcsak a helyi piacra kerültek, hanem a várba is, ahol a nemesek és a királyi udvar tagjai vásároltak. Ez a kereskedelem lehetőséget adott a falusiak számára, hogy jövedelemhez jussanak.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A kézművesek mestersége"
+      },
+      {
+       "body": "A falusi emberek otthona egyszerű volt, de a család számára biztonságot nyújtott. A házakban gyakran több generáció élt együtt: a nagyszülők, szülők és gyermekek. Az étkezések középpontjában a helyben termelt élelmiszerek álltak, mint a kenyér, zöldségek és hús. Az ünnepek, mint a keresztelő vagy a házasság, különleges alkalmak voltak, amikor a közösség összegyűlt, és együtt ünnepeltek.",
+       "mood": "család",
+       "type": "story",
+       "heading": "A család és az otthon"
+      },
+      {
+       "body": "A falusi emberek életét a hit és a vallás határozta meg. A helyi templom volt a közösség középpontja, ahol a falusiak rendszeresen részt vettek miséken. Az ünnepek, mint a karácsony vagy a húsvét, különösen fontosak voltak, hiszen ilyenkor a közösség összegyűlt, hogy együtt ünnepeljenek. A szokások és hagyományok átörökítése a családokban szintén alapvető része volt az életüknek.",
+       "mood": "hit és szokások",
+       "type": "story",
+       "heading": "A hit és a szokások szerepe"
+      },
+      {
+       "body": "A gyermekek nevelése a családokban zajlott, ahol a szülők tanították meg őket a mindennapi életre. A fiúk a földművelés és a mesterségek alapjait sajátították el, míg a lányok a háztartási teendőkre készültek fel. Az iskolák ritkák voltak, így a tudás legfőbb forrása a család volt. A gyermekek a közösség részeként nőttek fel, és szoros kötelékeket alakítottak ki egymással.",
+       "mood": "nevelés",
+       "type": "story",
+       "heading": "A gyermekek nevelése"
+      },
+      {
+       "body": "A középkorban a betegségek gyakoriak voltak, és a falusiak gyakran szenvedtek különböző járványoktól. A gyógyítók és füvesasszonyok a természetes gyógymódokat alkalmazták, hogy segítsenek a betegeken. A közösség összefogott, hogy támogassa a rászorulókat, és a nehéz időkben a hit is erőt adott számukra. A betegség sokszor próbára tette a családok szilárdságát és összetartását.",
+       "mood": "betegség és gyógyítás",
+       "type": "story",
+       "heading": "A betegség és gyógyítás"
+      }
+     ]
+    },
+    {
+     "block_id": "f56ec4ee-34ea-4c8c-a158-04eca5a0ec1b",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Visegrád vára - a magyar középkori állam fontos központja",
+       "heading": "Visegrád vára",
+       "description": "A Visegrád vára a Duna partján található, Budapesttől északra. A vár stratégiai helyen épült, hogy védje a környező területeket.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "Károly Róbert - a magyar királyság újjáépítője",
+       "heading": "Királyok és nemesek",
+       "description": "Károly Róbert, a magyar király, aki 1308-tól 1342-ig uralkodott, jelentős szerepet játszott a vár és a környező uradalmak fejlesztésében.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "Az uradalom felépítése - földesúr és jobbágyok kapcsolata",
+       "heading": "A földesúr és uradalma",
+       "description": "A földesúr a vár uralkodója, aki a jobbágyok munkáját irányítja. Az uradalom a földesúr birtokait és a hozzá tartozó falvakat jelenti.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A jobbágyok élete - munka és kötelezettségek",
+       "heading": "A jobbágy élete",
+       "description": "A jobbágyok élete a középkorban a földesúr szolgálatában állt, robotot végeztek, és terményeik egy részét a földesúrnak adták.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A robot rendszere - a jobbágyok kötelezettségei",
+       "heading": "Robot és kötelezettségek",
+       "description": "A robot a jobbágyok által végzett ingyenes munka, amely a földesúrnak juttatott termények mellett fontos része volt a jobbágyok életének.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A pápa hatása a magyar középkorra",
+       "heading": "A pápa szerepe",
+       "description": "A pápa a középkorban fontos politikai és vallási hatalom volt, amely befolyásolta a magyar királyság sorsát és a nemesek viszonyát.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A középkori várépítészet jellemzői",
+       "heading": "Várépítészet",
+       "description": "A középkori várak építészeti stílusa, amely Visegrád esetében is megfigyelhető, a védelmi funkciók mellett a reprezentációt is szolgálta.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "237eeb82-f9a1-413e-a352-d772793e07f5",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A középkor folyamán Európa-szerte elterjedt a földesúri rendszer, amely a földbirtoklásra és a jobbágyok munkájára épült. A földesurak a helyi hatalom képviselőiként irányították a falvakat és a jobbágyokat, akik a robotot teljesítették. Az uradalmak működése a gazdasági és társadalmi struktúrák alapját képezte, ami számos más kultúrában is megfigyelhető, például a feudális Japánban vagy a muszlim világban.",
+       "type": "world",
+       "year": "",
+       "heading": "Középkori társadalmak és uradalmak",
+       "link_hu": ""
+      }
+     ]
+    },
+    {
+     "block_id": "531d65be-1253-4af0-83a7-ca592101bbee",
+     "mode": "deep",
+     "scope": "lesson",
+     "level": "emelt",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Visegrád kiválasztása királyi székhelynek nem volt véletlen. A Duna kanyarulatánál fekvő helyszín stratégiai jelentőséggel bírt, hiszen könnyen védhető volt, és kiváló kilátást biztosított a környező területekre. A Duna közelsége lehetővé tette, hogy a kereskedelem és a szállítás egyszerűbb legyen, ami gazdasági előnyöket biztosított. Így Visegrád nemcsak katonai, hanem gazdasági szempontból is fontos központtá vált.",
+       "type": "deep",
+       "think": "Miért lehetett fontos a középkorban, hogy egy vár közel legyen egy folyóhoz?",
+       "anchor": 0,
+       "heading": "Miért éppen Visegrád?",
+       "did_you_know": "A Duna a középkorban nemcsak határként, hanem fontos kereskedelmi útvonalként is szolgált, amely összekötötte a különböző országokat.",
+       "think_answer": "A folyók közelsége megkönnyítette a szállítást és a kereskedelmet. A folyó mint természetes akadály bizonyos esetekben védelmet nyújthatott, de nem minden esetben akadályozta jelentősen az ellenség mozgását."
+      },
+      {
+       "body": "A földesúr hatalmának alapja a föld birtoklása volt, amelyet a királytól kapott hűbérbirtokként. Ez a rendszer biztosította, hogy a földesúr hűséges legyen a királyhoz, hiszen a föld elvesztése a hatalom elvesztését is jelentette volna számára. A földesúr hatalma nemcsak a földek nagyságától, hanem a rajtuk élő jobbágyok számától is függött, hiszen minél több jobbágy dolgozott a földeken, annál nagyobb volt az uradalom termelési kapacitása.",
+       "type": "deep",
+       "think": "Miért volt fontos a földesúr számára, hogy jó kapcsolatot ápoljon a jobbágyokkal?",
+       "anchor": 1,
+       "heading": "A földesúr hatalmának alapja",
+       "did_you_know": "A középkorban a föld birtoklása volt a gazdagság egyik legfőbb mércéje, mivel a föld biztosította az élelmiszertermelést és a gazdasági stabilitást.",
+       "think_answer": "A jobbágyok munkája biztosította az uradalom gazdasági működését, így a földesúr érdeke volt, hogy a jobbágyok elégedettek legyenek, és hatékonyan dolgozzanak."
+      },
+      {
+       "body": "A nemesség különleges jogai közé tartozott, hogy adómentességet élveztek, ami nagy előnyt jelentett a középkorban. Ez lehetővé tette számukra, hogy vagyonukat gyarapítsák, és befolyásukat növeljék. A nemesek részt vehettek a királyi tanácsokban, ahol a király döntéseit befolyásolhatták. Bárók és kisnemesek között az egyik különbség az volt, hogy a bárók nagyobb földterületeket birtokoltak, így nagyobb befolyással bírtak a politikai életben.",
+       "type": "deep",
+       "think": "Miért lehetett fontos a nemesek számára, hogy részt vegyenek a királyi tanácsokban?",
+       "anchor": 2,
+       "heading": "A nemesség különleges jogai",
+       "did_you_know": "A középkori nemesek gyakran saját hadsereget tartottak fenn, amelyet szükség esetén a király szolgálatába állítottak.",
+       "think_answer": "A királyi tanácsokban való részvétel lehetőséget adott a nemeseknek, hogy befolyásolják a király döntéseit, ami növelte hatalmukat és védte érdekeiket."
+      },
+      {
+       "body": "Az uradalom működése szorosan összefüggött a földesúr és a jobbágyok közötti kapcsolattal. A földesúr feladata volt az uradalom gazdasági tevékenységeinek irányítása, míg a jobbágyok biztosították a munkaerőt. Az uradalom önellátó gazdasági egységként működött, ahol a mezőgazdasági termelés mellett kézműves tevékenységek is folytak. Az uradalom központjában, a várban, gyakran piacokat is tartottak, ahol a környékbeli lakosok kereskedhettek egymással.",
+       "type": "deep",
+       "think": "Miért volt fontos, hogy az uradalom önellátó legyen?",
+       "anchor": 3,
+       "heading": "Hogyan működött az uradalom?",
+       "did_you_know": "Az uradalmak gyakran saját malmokat és kovácsműhelyeket is fenntartottak, hogy a helyi szükségleteket kielégítsék.",
+       "think_answer": "Az önellátás biztosította, hogy az uradalom ne függjön külső forrásoktól, így stabilabb gazdasági helyzetet teremtett a földesúr és a jobbágyok számára."
+      },
+      {
+       "body": "A jobbágyok élete szoros kapcsolatban állt a földműveléssel, hiszen ez biztosította megélhetésüket. A robotmunka mellett saját kis földdarabjukon is gazdálkodhattak, amelyből családjukat eltarthatták. A jobbágyok közösségei gyakran szoros kapcsolatot ápoltak egymással, közösen oldották meg a mindennapi problémákat. A földesúr védelmet nyújtott számukra, cserébe a jobbágyok hűségesen szolgálták őt.",
+       "type": "deep",
+       "think": "Miért lehetett fontos a jobbágyok számára a közösségi élet?",
+       "anchor": 4,
+       "heading": "A jobbágyok mindennapjai",
+       "did_you_know": "A középkori falvakban a közösségi munka, mint például a közös aratás, fontos szerepet játszott a jobbágyok életében.",
+       "think_answer": "A közösségi élet erősítette a jobbágyok közötti kapcsolatokat, ami segítette őket a mindennapi nehézségek leküzdésében és a közös munkák elvégzésében."
+      },
+      {
+       "body": "A pápa hatalma nemcsak vallási, hanem politikai jellegű is volt, amelyet az egyház szervezetén keresztül gyakorolt. A középkorban az egyház hatalmas földbirtokokkal rendelkezett, ami gazdasági befolyást biztosított számára. A pápai hatalom egyik titka a szentségek kiszolgáltatásának joga volt, amely az emberek mindennapi életének részét képezte. A pápa gyakran közvetítőként lépett fel a királyok közötti konfliktusokban, így politikai befolyása is jelentős volt.",
+       "type": "deep",
+       "think": "Miért lehetett fontos a középkorban az egyház gazdasági befolyása?",
+       "anchor": 5,
+       "heading": "A pápa hatalmának titka",
+       "did_you_know": "A középkorban a pápai bulla, egy különleges pecséttel ellátott dokumentum, fontos eszköz volt a pápai határozatok közlésére.",
+       "think_answer": "Az egyház gazdasági befolyása lehetővé tette, hogy független maradjon a világi hatalmaktól, és saját érdekeit érvényesítse a politikai életben."
+      }
+     ]
+    },
+    {
+     "block_id": "9fb1270c-8bab-4ef5-bd5f-dd2bdf45322f",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A nemes, aki a földet birtokolta",
+        "B) A pápa, aki vallási hatalommal bírt",
+        "C) A jobbágy, aki a földet művelte",
+        "D) A király, aki az országot irányította"
+       ],
+       "question": "Ki volt a földesúr a középkorban?",
+       "explanation": "A földesúr a középkorban a nemes volt, aki birtokolta a földet, és a jobbágyok munkájára támaszkodott.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A földesúr birtokába tartozó terület és falvak összessége",
+        "B) Egy középkori vár",
+        "C) A pápa hatósága alá tartozó terület",
+        "D) A jobbágyok közössége"
+       ],
+       "question": "Mi az uradalom?",
+       "explanation": "Az uradalom a földesúr birtokába tartozó terület és falvak összességét jelenti, ahol a jobbágyok dolgoztak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Robotot végezni, azaz ingyenes munkát szolgáltatni",
+        "B) Várat építeni",
+        "C) A pápát szolgálni",
+        "D) A királyt segíteni"
+       ],
+       "question": "Mi a jobbágy feladata a földesúrnál?",
+       "explanation": "A jobbágy feladata a földesúrnál a robot, azaz az ingyenes munka elvégzése volt, amely a föld használatáért cserébe járt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Vallási vezető és politikai hatalom",
+        "B) A királyok közvetlen irányítója",
+        "C) A földesurak szövetségese",
+        "D) A jobbágyok védelmezője"
+       ],
+       "question": "Milyen szerepe volt a pápának a középkorban?",
+       "explanation": "A pápa vallási vezetőként és politikai hatalommal bíró személy volt, aki befolyással volt a középkori társadalomra.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Királyi székhely és fontos vár",
+        "B) Egy kis falu",
+        "C) A pápa lakóhelye",
+        "D) A jobbágyok központja"
+       ],
+       "question": "Milyen város Visegrád a középkorban?",
+       "explanation": "Visegrád a középkorban királyi székhely és fontos vár volt, amely a magyar történelem szempontjából jelentős szerepet játszott.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "419a5ee4-f796-4919-b681-5a6eb0648daf",
+   "title_hu": "Élet a kolostorban – egy magyar kolostor (pl. Pannonhalma) bemutatásával",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "3130fb7e-ae1d-419d-850f-db458810b699",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A középkorban az egyház kiemelkedő szerepet játszott a társadalom életében. A pápa, mint a katolikus egyház feje, jelentős hatalommal bírt, és a keresztény hit terjesztésében kulcsszerepet játszott. A magyar egyházszervezet is a pápai irányítás alatt állt, amely hozzájárult a kereszténység elterjedéséhez Magyarországon. A középkori egyházszervezet alapvetően a püspökségekre és a kolostorokra épült.",
+       "type": "text",
+       "heading": "A középkori egyházszervezet",
+       "key_term": "pápa"
+      },
+      {
+       "body": "A szerzetesség a középkorban fontos vallási mozgalom volt, amelynek célja a hitélet elmélyítése és a közösségi élet gyakorlása. A bencés rend és a pálos rend két jelentős magyar szerzetesrend, amelyek a kolostorokban éltek és dolgoztak. A bencés rendet Szent Benedek alapította, aki a monasztikus élet szabályait fogalmazta meg. A kolostorok nemcsak vallási központok voltak, hanem a tudás és a kultúra megőrzésének helyszínei is.",
+       "type": "text",
+       "heading": "A szerzetesség és a kolostor",
+       "key_term": "szerzetes"
+      },
+      {
+       "body": "Pannonhalma Magyarország egyik legismertebb kolostora, amely a bencés rend szellemiségét képviseli. A kolostort 996-ban alapították, és azóta is folyamatosan működik. Pannonhalma nemcsak vallási, hanem kulturális központ is, ahol a tudomány és a művészetek fejlődése is fontos szerepet játszott. A kolostor épületei a román és gótikus stílus jegyeit hordozzák magukon, tükrözve a középkori építészet gazdagságát.",
+       "type": "text",
+       "heading": "Pannonhalma, a bencés kolostor",
+       "key_term": "kolostor"
+      },
+      {
+       "body": "A középkorban a templomépítészet jelentős fejlődésen ment keresztül, a román stílustól a gótikus stílusig. A román stílus jellemzője a vastag falak és a kis ablakok, míg a gótikus stílus a magas ívek és a nagy ablakok révén a fény beáramlását hangsúlyozta. Pannonhalma temploma a román stílus első képviselői közé tartozik, míg a gótikus elemek későbbi átalakítások során kerültek beépítésre. Ezek az építészeti stílusok nemcsak Magyarország, hanem az egész európai kultúra fejlődését is befolyásolták.",
+       "type": "text",
+       "heading": "Román és gótikus templomépítészet",
+       "key_term": "román stílus"
+      },
+      {
+       "body": "A középkorban a kolostorok fontos szerepet játszottak az oktatásban, hiszen itt képezték a jövő papjait és értelmiségieket. A bencés rend, amely Pannonhalma kolostorát is alapította, kiemelkedett az oktatás terén, különös figyelmet fordítva a tudományos ismeretek megőrzésére és terjesztésére. A kolostorok könyvtárai gazdag tudásbázisként szolgáltak, ahol a kéziratok másolása és tanulmányozása folyt. Az oktatás a középkorban szoros összefonódásban állt a vallással, így a hitélet nélkülözhetetlen része volt.",
+       "type": "text",
+       "heading": "Oktatás a középkorban",
+       "key_term": "oktatás"
+      },
+      {
+       "body": "Szent Benedek a bencés rend alapítója, akinek életműve a kolostori élet szabályainak megfogalmazásában nyilvánult meg. A bencés rend célja a közösségi élet és a szellemi fejlődés elősegítése volt. Szent Benedek szabályai, mint az 'Ora et labora' (Imádkozz és dolgozz), a mai napig irányadóak a szerzetesi közösségek számára. A bencés rend elterjedése Magyarországon is hozzájárult a kereszténység terjedéséhez és a kultúra fejlődéséhez.",
+       "type": "text",
+       "heading": "Szent Benedek és a bencés rend",
+       "key_term": "bencés rend"
+      },
+      {
+       "body": "A pálos rend, amelyet a 14. században alapítottak, a magyar szerzetesség egyedülálló képviselője. A rend célja a vallásos élet mélyítése és a nép evangelizálása volt, különösen Magyarország területén. A pálosok kolostorai, mint például a Zobor-hegyi kolostor, fontos központok voltak a kultúra és a tudomány számára. A pálos rend hozzájárult a magyar identitás megőrzéséhez és a keresztény hagyományok ápolásához.",
+       "type": "text",
+       "heading": "A pálos rend jelentősége",
+       "key_term": "pálos rend"
+      }
+     ]
+    },
+    {
+     "block_id": "6f6d0692-6231-470a-952d-3e68d00d8dad",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A kolostor falai között a szerzetesek napja a hajnali imával kezdődött. A bencés rend tagjai, akik Szent Benedek tanításait követték, a munka és az imádság szent hármasában éltek. A földművelés, a szőlőtermesztés és a borászat kiemelt szerepet játszott a kolostor gazdaságában. Minden reggel az egyik szerzetes a mezőre indult, hogy a gabonát elvetve biztosítsa a közösség megélhetését, míg mások a kolostor kerítésén belül a gyümölcsfák gondozásával foglalkoztak.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A munka és megélhetés mindennapjai a kolostorban"
+      },
+      {
+       "body": "A kolostorban a vallásos élet középpontjában állt a katolikus hit. Az ünnepek, mint például karácsony és húsvét, különleges alkalmak voltak, amikor a szerzetesek közösen ünnepeltek, imádkoztak és dicsérték Istent. A kolostor temploma, amely román stílusban épült, a közösség szellemi központja volt. Az ünnepek idején a templom falai között zene és ének hallatszott, a közös imádságok pedig összekötötték a szerzeteseket és megerősítették hitüket.",
+       "mood": "hit és vallás",
+       "type": "story",
+       "heading": "A hit és az ünnepek a kolostor életében"
+      },
+      {
+       "body": "A kolostor lakói nemcsak társak, hanem egy nagy család tagjai is voltak. A közös étkezések során az asztalnál megosztották egymással az életüket, tapasztalataikat és gondolataikat. Az étkezések szigorú rendje és a közös imádságok biztosították a közösség összetartását. A szerzetesek számára az otthon nem a falak, hanem a közös hit, a munka és az imádság által teremtődött meg.",
+       "mood": "család és közösség",
+       "type": "story",
+       "heading": "A család és az otthon fogalma a kolostorban"
+      },
+      {
+       "body": "A kolostorban a tudás átadása és a nevelés kiemelkedő szerepet játszott. A fiatal szerzetesek és a kolostorba látogató diákok a bencés rend által kidolgozott tananyag szerint tanultak. A latin nyelv és a vallási szövegek mellett a filozófia és a tudományok is helyet kaptak az oktatásban. A könyvek másolása és a tudás megőrzése a kolostor falai között kiemelten fontos feladat volt, hiszen a tudás terjesztése által a középkori társadalom fejlődését is szolgálta.",
+       "mood": "oktatás",
+       "type": "story",
+       "heading": "Oktatás a kolostor falai között"
+      },
+      {
+       "body": "A kolostorban a betegség és a gyógyítás kérdése is fontos szerepet játszott. A szerzetesek nemcsak lelki támaszt nyújtottak a betegeknek, hanem a gyógyításban is aktívan részt vettek. A gyógynövények ismerete és a természetes gyógymódok alkalmazása révén sokan találtak segítséget a fizikai bajaikra. A kolostor konyhájában készített gyógyteák és főzetek a közösség tagjainak egészségét szolgálták.",
+       "mood": "gyógyítás",
+       "type": "story",
+       "heading": "A betegség és a gyógyítás a kolostorban"
+      }
+     ]
+    },
+    {
+     "block_id": "32eaff6a-2a5e-4819-bb01-07380d0010c9",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A középkori egyházszervezet hierarchiája",
+       "heading": "A középkori egyházszervezet",
+       "description": "A középkori egyházszervezet hierarchikus felépítése, amely bemutatja a pápát, érsekeket, püspököket és plébánosokat közötti kapcsolatokat.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Szent Benedek életének főbb állomásai",
+       "heading": "Szent Benedek élete",
+       "description": "Szent Benedek életének fontosabb eseményei, mint például a bencés rend megalapítása és a regulája megírása (480–547).",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A bencés és pálos rend főbb jellemzői",
+       "heading": "A bencés rend és a pálos rend",
+       "description": "A bencés és pálos rend jellemzői, céljaik és tevékenységeik összehasonlítása.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Pannonhalma helye Magyarország térképén",
+       "heading": "Pannonhalma elhelyezkedése",
+       "description": "Pannonhalma elhelyezkedése Magyarország térképén, kiemelve a kolostor jelentőségét és a környező településeket.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "Román és gótikus stílus jellemzői",
+       "heading": "Román és gótikus stílus",
+       "description": "A román és gótikus stílus főbb jellemzői és különbségeik, valamint példák híres magyar középkori egyházi épületekre.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A középkori oktatás szerepe",
+       "heading": "Oktatás a középkorban",
+       "description": "A középkori oktatási rendszer bemutatása, a kolostorok szerepe az oktatásban és a tudományos életben.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "0c246364-0dee-4385-bb24-717af82b2ae1",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A kolostorok és a szerzetesség jelensége más kultúrákban és korokban is megjelent, például a buddhizmusban és a hinduizmusban is találhatók szerzetesrendek, amelyek hasonló vallási és közösségi funkciókat látnak el.",
+       "type": "info",
+       "year": "",
+       "heading": "A középkori kolostorok szerepe",
+       "link_hu": ""
+      }
+     ]
+    },
+    {
+     "block_id": "edda725f-46f2-4ba5-bbb0-bd8b25997e23",
+     "mode": "deep",
+     "scope": "lesson",
+     "level": "emelt",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A középkorban az egyház nemcsak vallási, hanem politikai és gazdasági hatalommal is bírt. Az egyház birtokolt földeket, adókat szedett, és befolyásolta a királyok döntéseit. Az egyházi vezetők, mint a püspökök és az apátok, gyakran a királyi tanács tagjai voltak. Ez a hatalom segítette az egyházat abban, hogy a keresztény hitet terjessze és megőrizze a társadalmi rendet. Az egyház így nemcsak a lelki, hanem a mindennapi élet része is volt.",
+       "type": "deep",
+       "think": "Miért lehetett fontos az egyház számára, hogy földeket birtokoljon?",
+       "anchor": 0,
+       "heading": "Miért volt fontos az egyház hatalma?",
+       "did_you_know": "A középkorban a templomok és kolostorok építése gyakran hosszú időt vett igénybe.",
+       "think_answer": "A földek birtoklása biztosította az egyház számára az anyagi erőforrásokat, amelyek szükségesek voltak a vallási és szociális tevékenységeik finanszírozásához."
+      },
+      {
+       "body": "A szerzetesség nemcsak a vallási életet formálta, hanem a társadalom más területeire is hatással volt. A kolostorok gyakran a helyi közösségek központjai voltak, ahol az emberek oktatást és egészségügyi ellátást kaptak. A szerzetesek mezőgazdasági technikákat fejlesztettek ki, amelyek segítették a helyi gazdálkodást. A kolostorok könyvtárai megőrizték az ókori tudományos ismereteket, amelyek később az európai kultúra alapját képezték.",
+       "type": "deep",
+       "think": "Miért lehetett fontos a kolostoroknak a mezőgazdasági fejlesztésekben való részvétel?",
+       "anchor": 1,
+       "heading": "Hogyan hatott a szerzetesség a társadalomra?",
+       "did_you_know": "A középkorban a szerzetesek által készített kéziratok gyakran díszes iniciálékkal és illusztrációkkal voltak ellátva, ami a könyvek értékét és szépségét növelte.",
+       "think_answer": "A mezőgazdasági fejlesztések javították a terméshozamot, ami biztosította a kolostorok és a helyi közösségek élelmiszer-ellátását."
+      },
+      {
+       "body": "Pannonhalma helyszíne nem véletlenül lett kiválasztva a kolostor alapítására. A dombtetőn fekvő kolostor stratégiai elhelyezkedése védelmet nyújtott a támadások ellen, és jó kilátást biztosított a környező területre. Az elhelyezkedés lehetővé tette a kolostor számára, hogy fontos kereskedelmi és vallási útvonalak mentén helyezkedjen el, így könnyen elérhetővé vált a zarándokok és a kereskedők számára. Ez a helyszínválasztás hozzájárult a kolostor gazdasági és kulturális jelentőségéhez.",
+       "type": "deep",
+       "think": "Miért lehetett fontos, hogy a kolostorok jól megközelíthető helyen legyenek?",
+       "anchor": 2,
+       "heading": "Miért különleges Pannonhalma helyszíne?",
+       "did_you_know": "A középkorban a kolostorok gyakran olyan helyeken épültek, ahol természetes források is rendelkezésre álltak, biztosítva a vízellátást és a mezőgazdasági művelést.",
+       "think_answer": "A jó megközelíthetőség biztosította, hogy a kolostorok könnyen elérhetőek legyenek a hívők, kereskedők és zarándokok számára, ami növelte a kolostorok befolyását és gazdasági erejét."
+      },
+      {
+       "body": "A gótikus építészet kialakulása a technikai fejlődés eredménye volt. Az új építészeti technikák, mint a bordás boltozat és a támpillérek, lehetővé tették, hogy magasabb és világosabb épületek szülessenek. A gótikus stílus célja az volt, hogy az épületek belső terének fénnyel való elárasztása révén a mennyei világot idézze. A templomok így nemcsak építészeti csodák voltak, hanem a hitélet szimbólumai is, amelyek az emberi törekvést a magasabb szellemi célok elérésére irányították.",
+       "type": "deep",
+       "think": "Miért lehetett fontos a középkori emberek számára, hogy a templomok világosak legyenek?",
+       "anchor": 3,
+       "heading": "Miért váltották fel a román stílust a gótikus elemek?",
+       "did_you_know": "A gótikus katedrálisok építéséhez gyakran több generáció munkájára volt szükség, mivel az építkezések akár száz évig is eltarthattak.",
+       "think_answer": "A világosság a templomban szimbolizálta a mennyei világ közelségét és Isten jelenlétét, ami a hívők számára lelki élményt nyújtott."
+      },
+      {
+       "body": "A kolostorok az oktatás központjai voltak, ahol a szerzetesek nemcsak vallási, hanem világi ismereteket is tanítottak. A kolostorok könyvtárai gazdag forrásai voltak az ókori és középkori tudásnak, amelyeket a szerzetesek másoltak és tanulmányoztak. Az oktatás a kolostorokban nemcsak a papok képzésére korlátozódott, hanem a világi ifjak számára is elérhető volt, akik itt tanulhattak írni, olvasni és számolni. Ez a tudás hozzájárult a középkori társadalom fejlődéséhez és a kulturális örökség megőrzéséhez.",
+       "type": "deep",
+       "think": "Miért lehetett fontos a középkorban, hogy az emberek írni és olvasni tudjanak?",
+       "anchor": 4,
+       "heading": "Hogyan segítették a kolostorok az oktatást?",
+       "did_you_know": "A középkorban a könyvek rendkívül értékesek voltak, mivel minden példány kézzel készült, ezért a kolostorok könyvtárai különösen fontosak voltak a tudás megőrzésében.",
+       "think_answer": "Az írás és olvasás képessége lehetővé tette az emberek számára, hogy részt vegyenek a vallási és társadalmi életben, valamint hozzáférjenek a tudáshoz és a kultúrához."
+      },
+      {
+       "body": "Szent Benedek híres szabálya, az 'Ora et labora', az imádság és a munka egyensúlyát hirdette a szerzetesi életben. Az imádság a lelki fejlődést szolgálta, míg a munka a közösség fenntartását biztosította. A bencés szerzetesek napirendje szigorúan szabályozott volt, hogy mindkét tevékenységre elegendő idő jusson. Ez az életmód nemcsak a kolostorok belső rendjét biztosította, hanem példát is mutatott a világi közösségek számára az élet egyensúlyának fontosságáról.",
+       "type": "deep",
+       "think": "Miért lehet fontos, hogy az emberek életében egyensúly legyen a munka és a pihenés között?",
+       "anchor": 5,
+       "heading": "Mit jelentett az 'Ora et labora'?",
+       "did_you_know": "",
+       "think_answer": "Az egyensúly biztosítja, hogy az emberek ne merüljenek ki, és mind fizikailag, mind lelkileg egészségesek maradjanak, ami hosszú távon fenntartható életmódot eredményez."
+      },
+      {
+       "body": "A pálos rend az egyetlen magyar alapítású szerzetesrend, amely a magyar identitás megőrzésében játszott fontos szerepet. A rend tagjai a magyar nyelv és kultúra ápolására törekedtek, és aktívan részt vettek a nép oktatásában és lelki gondozásában. A pálosok kolostorai a magyar történelem fontos eseményeinek tanúi voltak, és a rend tagjai gyakran politikai és szellemi vezetőként is szerepet kaptak. A pálos rend tevékenysége hozzájárult a keresztény hit elmélyítéséhez és a nemzeti öntudat erősítéséhez.",
+       "type": "deep",
+       "think": "Miért lehetett fontos a pálos rend számára a magyar nyelv és kultúra ápolása?",
+       "anchor": 6,
+       "heading": "Miért különleges a pálos rend?",
+       "did_you_know": "A pálos rend tagjai gyakran remeteként éltek a természet közelében, hogy elmélyítsék kapcsolatukat a természettel és Istennel.",
+       "think_answer": "A magyar nyelv és kultúra ápolása segített megőrizni a nemzeti identitást és összetartotta a közösséget a történelmi változások során."
+      }
+     ]
+    },
+    {
+     "block_id": "e4badff5-2b0d-430e-8c8b-3e0fb2afab5a",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A bencés rend alapítója, aki a szerzetesi élet szabályait fogalmazta meg.",
+        "B) A pápa, aki megerősítette a bencés rendet.",
+        "C) A pálos rend alapítója, aki Magyarországon terjesztette a katolicizmust.",
+        "D) Egy román stílusú templom építője."
+       ],
+       "question": "Ki volt Szent Benedek, és mi a jelentősége a szerzetesség történetében?",
+       "explanation": "Szent Benedek a bencés rend alapítója, aki a szerzetesi élet szabályait fogalmazta meg, és ezzel alapjaiban formálta a nyugati szerzetességet.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Politikai hatalom központja.",
+        "B) Vallási és szellemi központ, ahol a szerzetesek élnek és dolgoznak.",
+        "C) Kereskedelmi központ.",
+        "D) Várvédelmi létesítmény."
+       ],
+       "question": "Mi a fő funkciója egy kolostornak a középkorban?",
+       "explanation": "A kolostorok vallási és szellemi központok voltak, ahol a szerzetesek imádkoztak, tanultak és dolgoztak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Gótikus stílusban.",
+        "B) Román stílusban.",
+        "C) Barokk stílusban.",
+        "D) Reneszánsz stílusban."
+       ],
+       "question": "Milyen stílusban épültek a középkori magyar egyházi emlékek, mint például a Pannonhalmi Apátság?",
+       "explanation": "A Pannonhalmi Apátság és más középkori egyházi emlékek többsége román stílusban épült, amely a kereszténység első évszázadaiban volt elterjedt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Bencés rend.",
+        "B) Pálos rend.",
+        "C) Ferences rend.",
+        "D) Domonkos rend."
+       ],
+       "question": "Melyik rend játszott fontos szerepet a magyar katolikus egyházban, amelyet nem Szent István alapított?",
+       "explanation": "A pálos rendet Boldog Özséb alapította a 13. században, amely a magyar katolikus egyház számára kiemelkedő szerepet játszott a középkorban.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Ő volt a legfőbb vallási vezető, aki a katolikus egyházat irányította.",
+        "B) Csak helyi egyházak vezetője volt.",
+        "C) Politikai döntéseket hozott a királyok számára.",
+        "D) Nem volt jelentős szerepe."
+       ],
+       "question": "Milyen szerepet játszott a pápa a középkori egyházszervezetben?",
+       "explanation": "A pápa a katolikus egyház legfőbb vallási vezetője volt, aki irányította az egyházat és a keresztény közösséget a középkorban.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "2a98c3db-9f52-4146-bb8b-2afa2e9893c3",
+   "title_hu": "Élet a középkori városban – egy magyar város (pl. Buda) bemutatásával",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "6bdf7b9e-9d77-41f5-bb68-ec2761b2cb20",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A középkori városok, mint Buda, fontos központjai voltak a kereskedelemnek és a kultúrának. A városok fejlődése a 13. századtól kezdődően indult meg Magyarországon, amikor a királyok városokat alapítottak és megerősítették a kereskedelmi jogokat. Buda, mint a magyar királyság fővárosa, különösen jelentős szerepet játszott a politikai és gazdasági életben. A városi polgárok, akik a városok lakói voltak, egyre nagyobb befolyásra tettek szert a középkor végére.",
+       "type": "text",
+       "heading": "A középkori városok szerepe",
+       "key_term": "város, polgár"
+      },
+      {
+       "body": "A céhek olyan szakmai egyesületek voltak, amelyek a városi mesterek és iparosok érdekeit képviselték. A céhek szabályozták a mesterségek gyakorlását, a minőséget és a kereskedelmet. Buda városában is működtek céhek, amelyek segítették a gazdasági élet fellendülését, valamint a városi középosztály megerősödését. A céhek tagjai polgári jogokat élveztek, és szoros közösségi életet alakítottak ki.",
+       "type": "text",
+       "heading": "Céhstruktúra és szerepük",
+       "key_term": "céh"
+      },
+      {
+       "body": "A középkori városok polgárai a város fejlődésének motorjai voltak. A polgárok közé tartozott a kereskedők, iparosok és kézművesek rétege, akik a város gazdasági életét alakították. A polgárok jogai és kötelezettségei szorosan összefonódtak a céhekkel, és a városi tanácsokban is részt vettek. A polgári élet középpontjában a kereskedelem, a mesterségek és a közösségi események álltak.",
+       "type": "text",
+       "heading": "A városi polgárok élete",
+       "key_term": "polgár"
+      },
+      {
+       "body": "Buda városépítészete a középkor során folyamatosan fejlődött. A város falain belül különböző építkezések zajlottak, mint például templomok, városházák és kereskedelmi épületek. A város központjában álló vár és a palota kiemelkedő szerepet játszott a város védelmében és a királyi hatalom megjelenítésében. A középkori építészet Buda esetében a gótikus és reneszánsz stílusjegyeket is magában foglalta.",
+       "type": "text",
+       "heading": "Városépítészet a középkorban",
+       "key_term": "városépítészet"
+      },
+      {
+       "body": "Johannes Gutenberg a 15. században találta fel a könyvnyomtatás technikáját, amely forradalmasította az információ terjesztését. A nyomtatás megjelenése lehetővé tette, hogy a könyvek széles körben elérhetővé váljanak, így a tudás terjedése felgyorsult. Magyarországon a könyvnyomtatás elterjedése hozzájárult a reneszánsz eszmék terjedéséhez, és Buda is fontos szerepet játszott a kulturális élet fellendülésében. A nyomtatott könyvek révén a polgári réteg is hozzáférhetett az új ismeretekhez.",
+       "type": "text",
+       "heading": "Gutenberg és a könyvnyomtatás hatása",
+       "key_term": "Gutenberg, könyvnyomtatás"
+      }
+     ]
+    },
+    {
+     "block_id": "149a6bea-6690-48e2-ba3d-7305823925d1",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A középkori Buda utcáin a mesterek és a tanoncok sürögtek-forogtak. A céhek, mint a helyi mesterek szakszervezetei, megszabták a mesterségek gyakorlásának szabályait. A fémművesek, a fazekasok és a szövőműhelyek dolgozói mind a céhhez tartoztak, így biztosítva, hogy a termékek minősége egyenletes legyen. A céh tagjai összejöttek, hogy megvitassák a munka menetét, és közösen ünnepelték a mesterek avatását, ami a közösség összetartozását erősítette.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A céhek világa"
+      },
+      {
+       "body": "Buda polgárai, akik a város fejlődésének motorjai voltak, mindennapjaikat kereskedéssel és iparos munkával töltötték. A piacon friss zöldségeket, gyümölcsöket és kézműves termékeket árultak. A polgárok szoros kapcsolatban álltak egymással, hiszen a városi közösség élete a szomszédságon alapult. Az ünnepek során közösen ünnepeltek, ami erősítette a helyi identitásukat és összetartozásukat.",
+       "mood": "szociális",
+       "type": "story",
+       "heading": "A városi polgárok élete"
+      },
+      {
+       "body": "Buda városának építkezései, mint a várfalak és a templomok, a középkori építészet szépségét tükrözték. Az emberek büszkén nézték, ahogy a kőművesek és az ácsok dolgoznak a város arculatának formálásán. A város központjában álló templom nemcsak vallási hely volt, hanem a közösségi élet színtere is. Az ünnepek idején a templom előtti tér megtelt a városlakókkal, akik együtt imádkoztak és ünnepeltek.",
+       "mood": "kultúra",
+       "type": "story",
+       "heading": "Városépítészet és középkori épületek"
+      },
+      {
+       "body": "A középkorban a vallás központi szerepet játszott a budaiak életében. A templomokban a papok prédikációi és az ünnepi szertartások adtak útmutatást az embereknek. Az emberek hite a mindennapjaik részévé vált, így az ünnepeket, mint a karácsonyt és a húsvétot, közösen ünnepelték. Az ünnepek során a közösség összegyűlt, hogy megossza örömeit és nehézségeit, ami erősítette a társadalmi kötelékeket.",
+       "mood": "spirituális",
+       "type": "story",
+       "heading": "A hit és a vallás szerepe"
+      },
+      {
+       "body": "Buda városában a gyermekek nevelése a családok és a mesterek feladata volt. A fiatalok a mesterek mellett tanulták meg a szakmájukat, míg a lányok a háztartási ismereteket sajátították el. Az iskolákban a gyerekek írást és olvasást tanultak, ami a jövőjük szempontjából elengedhetetlen volt. A tudás megszerzése nemcsak a személyes fejlődést szolgálta, hanem a közösség fejlődését is segítette.",
+       "mood": "oktatás",
+       "type": "story",
+       "heading": "A gyermekek nevelése és iskola"
+      },
+      {
+       "body": "A könyvnyomtatás megjelenése Buda városában új lehetőségeket teremtett a tudás terjedésére. Gutenberg találmánya forradalmasította a könyvek előállítását, így a tudás könnyebben hozzáférhetővé vált. Az emberek könyveket vásároltak, olvastak és megosztották egymással a tanultakat. Ez a folyamat hozzájárult a reneszánsz eszméinek terjedéséhez, és új szellemi áramlatokat indított el a városban.",
+       "mood": "kultúra",
+       "type": "story",
+       "heading": "A könyvnyomtatás hatása"
+      }
+     ]
+    },
+    {
+     "block_id": "738aa12e-9708-41ba-aeaa-6445b04cca6b",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Buda városának elhelyezkedése és főbb jellemzői a középkorban.",
+       "heading": "A középkori városok felépítése",
+       "description": "Buda városának térképe a 15. századból, amely bemutatja a városfalakat, főbb utcákat és a fontosabb épületeket.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A céhek, mint a mesterségek szervezetei, a középkori város gazdasági életének alapját képezték.",
+       "heading": "A céhek szerepe",
+       "description": "Céhstruktúra diagram, amely bemutatja a különböző céheket (pl. kovácsok, asztalosok) és azok működését a városban.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A polgárok jogai és kötelezettségei a középkori Buda városában.",
+       "heading": "A városi polgárok élete",
+       "description": "Idővonal, amely bemutatja a városi polgárok jogait és kötelezettségeit a középkor folyamán (pl. városi kiváltságok, adófizetés).",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A középkori városépítészet jellemzői és híres magyar épületek.",
+       "heading": "Városépítészet",
+       "description": "Híres középkori épületek (pl. a Budai Vár) képei, amelyek a kor építészeti stílusát tükrözik.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "Gutenberg és a könyvnyomtatás hatása a középkori városok kulturális életére.",
+       "heading": "Könyvnyomtatás megjelenése",
+       "description": "Gutenberg arcképe, aki a könyvnyomtatás feltalálója, és ezzel forradalmasította az információ terjesztését.",
+       "visual_type": "arckép"
+      }
+     ]
+    },
+    {
+     "block_id": "a5f0416b-e7a5-4b2c-af4b-2e65e3fa3fb6",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A középkori városok és céhek jelensége nemcsak Magyarországon, hanem más európai országokban is megjelent, például Franciaországban és Angliában. A városi polgárság felemelkedése a kereskedelem és ipar fejlődésével párhuzamosan zajlott, amely a középkor végén a reneszánszhoz vezetett. E városi fejlődés során a céhek szabályozzák a mesterségek gyakorlását és védik a tagjaik érdekeit.",
+       "type": "world",
+       "year": "",
+       "heading": "A középkori városok és céhek kialakulása más kultúrákban",
+       "link_hu": ""
+      }
+     ]
+    },
+    {
+     "block_id": "298d6395-d104-4dcf-927c-e03a032fbe16",
+     "mode": "deep",
+     "scope": "lesson",
+     "level": "emelt",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A középkori városok, mint Buda, nemcsak a kereskedelem miatt voltak vonzóak, hanem azért is, mert különleges jogokat biztosítottak a lakóiknak. A városi levegő szabadságot jelentett, hiszen a városok saját törvényeik alapján működhettek, ami sok jobbágy számára vonzó lehetőséget kínált a szabad életre. Emellett a városokban könnyebb volt hozzáférni az oktatáshoz és a különböző mesterségek elsajátításához, ami szintén növelte vonzerejüket.",
+       "type": "deep",
+       "think": "Miért lehetett vonzó egy jobbágynak a városba költözni?",
+       "anchor": 0,
+       "heading": "Miért voltak a városok vonzóak?",
+       "did_you_know": "A középkorban elterjedt mondás volt, hogy \"a városi levegő szabaddá tesz\", ami arra utalt, hogy a városokban élők szabadabb életet élhettek.",
+       "think_answer": "A városba költözés lehetőséget adott a jobbágyoknak, hogy szabadabb életet éljenek, saját mesterséget tanuljanak, és részt vegyenek a városi közösség életében."
+      },
+      {
+       "body": "A céhek nemcsak a mesterségek gyakorlását szabályozták, hanem a tagok közötti szolidaritást is erősítették. Ha egy céhtag megbetegedett vagy anyagi nehézségei voltak, a céh segített neki. A céhek gyakran saját templomot vagy oltárt tartottak fenn, ahol közösen imádkoztak. Emellett a céhek ünnepeket is szerveztek, amelyek erősítették a közösségi összetartást.",
+       "type": "deep",
+       "think": "Miért volt fontos a céhek tagjai számára a közösséghez tartozás?",
+       "anchor": 1,
+       "heading": "Hogyan működtek a céhek?",
+       "did_you_know": "A céhek gyakran saját zászlóval rendelkeztek, amelyet a városi ünnepségeken is büszkén hordtak, így jelezve összetartozásukat és a mesterségük fontosságát.",
+       "think_answer": "A közösséghez tartozás biztonságot és támogatást nyújtott a tagoknak, különösen nehéz időkben, és erősítette a szakmai összetartást."
+      },
+      {
+       "body": "A középkori városok polgárai különleges jogokat élveztek, például részt vehettek a városi tanácsok munkájában. Ezek a jogok azonban kötelezettségekkel is jártak, mint például a város védelmében való részvétel. Ha egy várost megtámadtak, a polgároknak részt kellett venniük a védekezésben. Ezen kívül adókat is fizettek, amelyek a városi infrastruktúra fenntartására szolgáltak.",
+       "type": "deep",
+       "think": "Miért volt fontos, hogy a polgárok részt vegyenek a város védelmében?",
+       "anchor": 2,
+       "heading": "A polgárok jogai és kötelességei",
+       "did_you_know": "A középkori városok polgárai gyakran részt vettek a város védelmében, és szükség esetén fegyvereket is használtak.",
+       "think_answer": "A város védelme biztosította a polgárok biztonságát és a város gazdasági stabilitását, így érdekükben állt aktívan részt venni benne."
+      },
+      {
+       "body": "A középkori városok építészete nemcsak a védelmet szolgálta, hanem a társadalmi hierarchiát is tükrözte. A város központjában gyakran állt a templom, amely a vallási élet központja volt. A városfalak nemcsak védelmet nyújtottak, hanem a város határait is kijelölték. A városokban a szűk utcák és a magas épületek a korlátozott hely miatt alakultak ki, ami a közösségi élet szorosabbá válását is eredményezte.",
+       "type": "deep",
+       "think": "Miért lehettek hasznosak a szűk utcák a középkori városokban?",
+       "anchor": 3,
+       "heading": "A középkori városépítészet titkai",
+       "did_you_know": "A középkori városokban gyakoriak voltak a keskeny, kanyargós utcák, amelyek megnehezítették az ellenség előrejutását, így növelve a város védelmét.",
+       "think_answer": "A szűk utcák lassították az ellenség előrejutását, és megkönnyítették a védekezést a városlakók számára."
+      },
+      {
+       "body": "A könyvnyomtatás megjelenése előtt a könyveket kézzel másolták, ami nagyon időigényes és drága volt. A nyomtatás lehetővé tette, hogy rövid idő alatt sok példány készüljön, így a könyvek ára jelentősen csökkent. Ezáltal több ember férhetett hozzá a tudáshoz, és a műveltség terjedése felgyorsult. A könyvnyomtatás segítette a nyelvi egységesedést is, mivel a nyomtatott szövegek széles körben elérhetővé váltak.",
+       "type": "deep",
+       "think": "Hogyan változtatta meg a könyvnyomtatás a tudáshoz való hozzáférést?",
+       "anchor": 4,
+       "heading": "A könyvnyomtatás forradalma",
+       "did_you_know": "A könyvnyomtatás előtti időkben egyetlen kézzel másolt könyv elkészítése akár hónapokig vagy évekig is eltarthatott.",
+       "think_answer": "A könyvnyomtatás olcsóbbá és gyorsabbá tette a könyvek előállítását, így több ember férhetett hozzá a tudáshoz, ami a műveltség terjedését eredményezte."
+      }
+     ]
+    },
+    {
+     "block_id": "73063ef0-600a-41ef-9916-11376b79133a",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A városban élő, jogokkal rendelkező ember",
+        "B) A faluban élő, földműveléssel foglalkozó személy",
+        "C) A céhvezető",
+        "D) A város határain kívül élő kereskedő"
+       ],
+       "question": "Mi a polgár fogalma a középkori városokban?",
+       "explanation": "A polgár a városban élő, jogokkal rendelkező személyt jelentette, aki részt vehetett a város életében és döntéshozatalában.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Kereskedelmi szervezetek, amelyek védték a tagok érdekeit",
+        "B) Vallási közösségek",
+        "C) Politikai pártok",
+        "D) Földbirtokosok"
+       ],
+       "question": "Milyen szerepe volt a céheknek a középkori városokban?",
+       "explanation": "A céhek a mesterségek és kereskedelmi tevékenységek védelmét szolgáló szervezetek voltak, amelyek szabályozták a termelést és a kereskedelmet.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 15. század, ő találta fel a mozgatható betűt",
+        "B) 14. század, ő volt a középkori írók vezetője",
+        "C) 16. század, ő írta a legelső magyar könyvet",
+        "D) 13. század, ő terjesztette el a latin nyelvet"
+       ],
+       "question": "Mikor élt Gutenberg, és mi a jelentősége a könyvnyomtatás szempontjából?",
+       "explanation": "Gutenberg a 15. században élt, és ő találta fel a mozgatható betűt, ami forradalmasította a könyvnyomtatást és a tudás terjesztését.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A Duna partján, kereskedelmi és politikai központ volt",
+        "B) A Tisza mellett, mezőgazdasági központ volt",
+        "C) Az Alpokban, katonai erődítmény volt",
+        "D) A Balaton mellett, turisztikai központ volt"
+       ],
+       "question": "Hol található Buda, és miért volt fontos a középkorban?",
+       "explanation": "Buda a Duna partján található, és a középkorban fontos kereskedelmi és politikai központ volt, amely hozzájárult Magyarország fejlődéséhez.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A városok fejlődése hozzájárult a polgári társadalom kialakulásához",
+        "B) A városépítészet nem volt jelentős",
+        "C) A falvak fejlődése miatt nem volt szükség városokra",
+        "D) A városok építése csak a 19. században kezdődött"
+       ],
+       "question": "Miért fontos a középkori városépítészet a magyar történelem szempontjából?",
+       "explanation": "A középkori városépítészet fontos szerepet játszott a polgári társadalom kialakulásában, mivel a városok a kereskedelem és a kultúra központjaivá váltak.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "e872533b-4c66-4b32-bc64-91cc961790e0",
+   "title_hu": "A keresztes lovagok világa",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "0fe6fe1b-ca2a-4f3a-bd6c-f14a6744ce5c",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A lovagok a középkorban a katonai és társadalmi hierarchia fontos szereplői voltak. Fő feladatuk a földesurak szolgálata és a hűbéri rendszer fenntartása volt. A lovagi eszme a bátorság, a hűség és a tisztelet köré épült. A lovagok nemcsak harcosok, hanem a kereszténység védelmezői is voltak, különösen a keresztes hadjáratok során.",
+       "type": "text",
+       "heading": "A lovagok szerepe a középkorban",
+       "key_term": "lovag"
+      },
+      {
+       "body": "Mohamed, az iszlám vallás alapítója a 7. században élt. Az iszlám vallás gyorsan terjedt el az arab világban, és számos területet befolyásolt. Mohamed tanításai a monoteizmusra és az iszlám alapelveire összpontosítottak. Az iszlám kihívást jelentett a keresztény világ számára, különösen a keresztes hadjáratok idején.",
+       "type": "text",
+       "heading": "Az iszlám vallás és Mohamed élete",
+       "key_term": "iszlám vallás, Mohamed"
+      },
+      {
+       "body": "A keresztes hadjáratok célja a Szentföld, különösen Jeruzsálem visszafoglalása volt az iszlám uralom alól. Az első keresztes hadjárat 1096-ban indult, és a keresztesek sikeresen elfoglalták Jeruzsálemet 1099-ben. A hadjáratok során számos európai ország, köztük Franciaország és Anglia, részt vett a harcokban. A keresztes hadjáratok jelentős hatással voltak a keresztény és iszlám világ kapcsolataira.",
+       "type": "text",
+       "heading": "A keresztes hadjáratok célja",
+       "key_term": "keresztesek, Szentföld"
+      },
+      {
+       "body": "A nehézlovas harcmodor a középkori hadviselés egyik meghatározó eleme volt. A lovagok nehézfegyverzetben harcoltak, amely lehetővé tette számukra, hogy a csatákban nagyobb hatékonysággal vegyenek részt. A nehézlovasok a csaták során gyakran az első vonalban harcoltak, és a lovagi becsület kódexének megfelelően végezték feladataikat. Ez a harcmodor a keresztes hadjáratok során is kulcsszerepet játszott.",
+       "type": "text",
+       "heading": "A nehézlovas harcmodor",
+       "key_term": "nehézlovas harcmodor"
+      },
+      {
+       "body": "A lovagi életforma magában foglalta a harci képzést, a lovagi etikát és a kultúra iránti elkötelezettséget. A lovagok gyakran részt vettek tornákon, amelyek nemcsak a harci készségeik bemutatására szolgáltak, hanem a társadalmi rangjuk megerősítésére is. A lovagok kultúrája magába foglalta a költészetet, a zenét és a művészeteket, amelyek a keresztény értékek és a lovagi eszmények köré épültek. A lovagi életforma nagy hatással volt a középkori társadalom alakulására.",
+       "type": "text",
+       "heading": "Lovagi életforma és kultúra",
+       "key_term": "lovagi életforma, kultúra"
+      },
+      {
+       "body": "A Szentföld, különösen Jeruzsálem, a keresztes hadjáratok középpontja volt, mivel a keresztények számára szent helynek számított. Anglia és Franciaország a keresztes hadjáratok fő résztvevői közé tartoztak, ahol számos lovag és hadvezér indult útnak. A keresztesek által elfoglalt területek nemcsak katonai, hanem vallási szempontból is jelentőséggel bírtak. A keresztes hadjáratok következtében a különböző kultúrák közötti kapcsolatok is erősödtek.",
+       "type": "text",
+       "heading": "Topográfiai jelentőség: Szentföld, Anglia, Franciaország",
+       "key_term": "Szentföld, Anglia, Franciaország"
+      }
+     ]
+    },
+    {
+     "block_id": "864b4acb-bc71-4f81-bfa4-1d1dcdb2ec3e",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy falusi közösség tagjai a mindennapjaikat a földművelés köré szervezik. A férfiak a földeken dolgoznak, szántanak, vetnek és aratnak, míg a nők a háztartás körüli teendőket látják el. A terményekből készített ételek, mint a kenyér és a főzelék, alapvető fontosságúak az életükben. A falusiak számára a közös munka és a szomszédokkal való kapcsolatok rendkívül fontosak, hiszen a közösség ereje a kölcsönös támogatásban rejlik.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A falusi közösség élete"
+      },
+      {
+       "body": "Egy falusi asszony a család ünnepeit készíti elő. A húsvét és a karácsony különösen fontosak számukra, hiszen ilyenkor a családok összegyűlnek, és együtt ünnepelnek. Az ünnepi étkezések során hagyományos ételeket készítenek, mint a sonka és a kalács. Az ünnepek nemcsak az örömről szólnak, hanem a hitük megerősítéséről is, hiszen az iszlám vallás követői számára a Ramadán és az Eid ünnepek fontosak, és a közösség és a vallás gyakorlása szorosan összefonódik.",
+       "mood": "hit és szokások",
+       "type": "story",
+       "heading": "Családi ünnepek és szokások"
+      },
+      {
+       "body": "Egy falusi gyógyító asszony a közösség betegeit segíti. A járványok idején különösen fontos szerepet játszik, hiszen a hagyományos gyógymódokkal próbálja enyhíteni a fájdalmat és a szenvedést. Gyógyfüveket gyűjt, és a helyi szokások szerint készít főzeteket. A közösség tagjai bíznak benne, és az ő tudása sok esetben az egyetlen remény a gyógyulásra. Az iszlám vallásban a betegség és a gyógyítás is szoros kapcsolatban áll a hit gyakorlásával.",
+       "mood": "betegség és gyógyítás",
+       "type": "story",
+       "heading": "A betegség és a gyógyítás"
+      },
+      {
+       "body": "A falusi szülők a gyermekeket a mindennapi életre tanítják. A fiúk a mezőgazdasági munkák fortélyait sajátítják el, míg a lányok a háztartási teendőket tanulják meg. A gyermekek számára a közösség tagjai is példát mutatnak, hiszen a felnőttek munkája és szokásai formálják a jövő generációját. Az iszlám vallás értékei is beleszőődnek a nevelésbe, hiszen a hit és a közösség fontosságát hangsúlyozzák.",
+       "mood": "nevelés",
+       "type": "story",
+       "heading": "A gyermekek nevelése"
+      },
+      {
+       "body": "A falusi kereskedők a közeli városok piacaira járnak, ahol árusítják a helyi termékeket, mint a gabonát és a zöldségeket. A kereskedelem nemcsak a megélhetésük forrása, hanem a különböző kultúrák találkozási pontja is. A keresztes háborúk idején a kereskedelem különösen fontos szerepet játszik, hiszen a különböző népek közötti kapcsolatok erősödnek. A kereskedők számára a Szentföld közelsége új lehetőségeket kínál, de a veszélyek is egyre nagyobbak.",
+       "mood": "kereskedelem",
+       "type": "story",
+       "heading": "A kereskedelem és a piac"
+      }
+     ]
+    },
+    {
+     "block_id": "ea4a6037-b6a3-4e52-8791-16e887479a13",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A keresztes hadjáratok idővonalának főbb eseményei",
+       "heading": "A keresztes hadjáratok idővonala",
+       "description": "Az idővonal bemutatja a keresztes hadjáratok főbb eseményeit, kezdve az első keresztes hadjárattal 1096-ban és zárva a nyolcadikkal 1270-ben.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A Szentföld és a keresztes államok elhelyezkedése",
+       "heading": "A Szentföld térképe",
+       "description": "A térkép a Szentföld területét mutatja be, kiemelve Jeruzsálemet és a keresztes államokat, amelyek a hadjáratok során alakultak.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "Mohamed, az iszlám vallás alapítója",
+       "heading": "Mohamed arcképe",
+       "description": "Mohamed, az iszlám vallás alapítója, akinek tanításai és a vallás terjedése jelentős hatással volt a keresztes hadjáratokra.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "A lovagi életforma és kultúra főbb elemei",
+       "heading": "A lovagi életforma",
+       "description": "A diagram bemutatja a lovagi életforma főbb elemeit, beleértve a harci szokásokat, a hűséget, a vallási kötelezettségeket és a kultúrát.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az iszlám vallás szimbólumai",
+       "heading": "Iszlám vallás szimbólumai",
+       "description": "A diagram bemutatja az iszlám vallás főbb szimbólumait és tanításait, amelyek a keresztes hadjáratok idején fontos szerepet játszottak.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Franciaország és Anglia a keresztes hadjáratok időszakában",
+       "heading": "Franciaország és Anglia",
+       "description": "A térkép bemutatja Franciaország és Anglia területét, ahol a keresztes lovagok toborzása és a hadjáratok szervezése zajlott.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A nehézlovas harcmodor jellemzői",
+       "heading": "Nehézlovas harcmodor",
+       "description": "A diagram a nehézlovas harcmodor főbb jellemzőit és taktikáit mutatja be, amelyek meghatározták a keresztesek harci stílusát.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A keresztes hadjáratok hatásai",
+       "heading": "A keresztes hadjáratok hatása",
+       "description": "A diagram bemutatja a keresztes hadjáratok hosszú távú hatását a középkori Európára, beleértve a kulturális, politikai és gazdasági következményeket.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "9e5a9876-cd56-4298-950b-c6cbe0374877",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A keresztes háborúk idején, a 11-13. században, az iszlám világban több jelentős esemény zajlott. 1258-ban a mongolok elfoglalták Bagdadot, ezzel véget vetve a kalifátus hatalmának, amely a muszlim világ központjának számított. A mongol invázió következtében a muszlim államok gyengültek, ami befolyásolta a keresztes háborúk kimenetelét is, mivel a keresztény államok számára kedvezőbb helyzet alakult ki. Ezen kívül a 12. század végén a spanyol reconquista folytatódott, amely a muszlim uralom alóli felszabadítást célozta meg, és párhuzamosan zajlott a keresztes háborúkkal.",
+       "type": "world",
+       "year": "",
+       "heading": "A keresztes háborúk és a világ más részein zajló események",
+       "link_hu": ""
+      }
+     ]
+    },
+    {
+     "block_id": "dda5e37e-99b5-455f-a89c-9392c734a461",
+     "mode": "deep",
+     "scope": "lesson",
+     "level": "emelt",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A lovagok létrejötte szorosan kapcsolódott a középkori társadalom szerkezetéhez. A földesuraknak szükségük volt megbízható harcosokra, akik megvédik területeiket és fenntartják a rendet. A lovagi cím megszerzése nemcsak katonai képességeket, hanem hűséget és erkölcsi értékeket is feltételezett. A lovagok szerepe abban is fontos volt, hogy a földesurak hatalmát és befolyását növelték, miközben a középkori Európa politikai stabilitását is támogatták.",
+       "type": "deep",
+       "think": "Miért volt fontos a lovagi becsület a középkorban?",
+       "anchor": 0,
+       "heading": "Miért voltak lovagok a középkorban?",
+       "did_you_know": "",
+       "think_answer": "A lovagi becsület fontos szerepet játszott a lovagok megbízhatóságának és tisztességének fenntartásában."
+      },
+      {
+       "body": "Az iszlám vallás gyors terjedésének egyik oka Mohamed tanításainak vonzereje volt, amelyek egyszerűségük és közvetlenségük miatt sok embert szólítottak meg. Az arab világban a kereskedelmi útvonalak mentén terjedt, ahol az emberek könnyen érintkezhettek egymással. Az iszlám vallás közösségi szelleme, valamint a gazdasági és politikai stabilitás ígérete szintén hozzájárult a gyors terjedéshez. Az iszlám kulturális és társadalmi hatása máig érezhető a világ számos részén.",
+       "type": "deep",
+       "think": "Hogyan befolyásolhatják a vallások a társadalmi rendszereket?",
+       "anchor": 1,
+       "heading": "Az iszlám terjedésének titka",
+       "did_you_know": "Az iszlám vallás öt alapvető pillére közé tartozik az alamizsnálkodás, amely a közösségi szolidaritás egyik formája.",
+       "think_answer": "A vallások gyakran meghatározzák a társadalmi normákat és értékeket, amelyek befolyásolják a közösségek működését és a politikai döntéseket."
+      },
+      {
+       "body": "A keresztes hadjáratok nemcsak katonai, hanem kulturális következményekkel is jártak. Az európai keresztesek találkoztak az iszlám világ fejlett tudományával és technológiájával, amit később Európába is visszavittek. A hadjáratok során létrejött keresztes államok például új kereskedelmi útvonalakat nyitottak meg, amelyek gazdasági fellendülést hoztak. A keresztes hadjáratok ugyanakkor feszültséget is okoztak a keresztény és muszlim világ között, ami évszázadokra meghatározta a két kultúra viszonyát.",
+       "type": "deep",
+       "think": "Miért fontosak a kulturális találkozások a történelemben?",
+       "anchor": 2,
+       "heading": "A keresztes hadjáratok hatása",
+       "did_you_know": "",
+       "think_answer": "A kulturális találkozások hozzájárulhatnak a társadalmak gazdagodásához és fejlődéséhez."
+      },
+      {
+       "body": "A nehézlovas harcmodor hatékonysága a fegyverzet és a kiképzés kombinációjában rejlett. A lovagok páncélzata és fegyverei lehetővé tették számukra, hogy ellenálljanak az ellenséges támadásoknak, miközben saját támadásaik során nagy erőt képviseltek. A lovagok kiképzése során megtanulták, hogyan mozogjanak együtt csapatban, ami növelte a csatákban való hatékonyságukat. A nehézlovasok szerepe a keresztes hadjáratok során különösen fontos volt, mivel a lovagok gyakran döntő ütközetekben vettek részt.",
+       "type": "deep",
+       "think": "Miért fontos a csapatmunka a hadviselésben?",
+       "anchor": 3,
+       "heading": "A nehézlovasok hatékonysága",
+       "did_you_know": "A nehézlovas páncélzat akár 30 kilogrammot is nyomhatott, ami jelentős terhet jelentett a lovagnak és a lónak is.",
+       "think_answer": "A csapatmunka lehetővé teszi a katonák számára, hogy összehangoltan cselekedjenek, növelve ezzel a siker esélyét a csatákban."
+      },
+      {
+       "body": "A lovagi tornák nemcsak a harci készségek bemutatására szolgáltak, hanem társadalmi események is voltak. A tornák során a lovagok nemcsak harcoltak, hanem kapcsolatokat építettek és politikai szövetségeket kötöttek. A tornák gyakran látványos események voltak, ahol a közönség is részt vehetett, így a lovagok hírneve és társadalmi státusza növekedett. A tornák során a lovagok különféle versenyszámokban mérhették össze tudásukat, amelyek közül a legnépszerűbb a lovagi párviadal volt.",
+       "type": "deep",
+       "think": "Miért lehetett fontos a lovagi tornák látványossága?",
+       "anchor": 4,
+       "heading": "Lovagi tornák titkai",
+       "did_you_know": "",
+       "think_answer": "A látványosság vonzotta a közönséget, ami hozzájárult a lovagok hírnevének növekedéséhez."
+      },
+      {
+       "body": "A Szentföld, különösen Jeruzsálem, nemcsak vallási, hanem stratégiai jelentőséggel is bírt. A Szentföld elhelyezkedése miatt fontos kereskedelmi útvonalak találkozási pontja volt, ami gazdasági előnyöket hozott az azt uraló hatalom számára. A keresztesek számára a Szentföld megszerzése nemcsak vallási cél volt, hanem politikai és gazdasági érdekek is vezérelték őket. A keresztes hadjáratok során kialakult keresztes államok hosszú távú hatással voltak a térség politikai viszonyaira.",
+       "type": "deep",
+       "think": "Miért lehet fontos egy város vallási jelentősége mellett a kereskedelmi szerepe?",
+       "anchor": 5,
+       "heading": "A Szentföld jelentősége",
+       "did_you_know": "Jeruzsálem három nagy világvallás számára is szent város: a kereszténység, az iszlám és a judaizmus számára.",
+       "think_answer": "A kereskedelmi szerep gazdasági előnyöket biztosít, ami növeli a város politikai és stratégiai jelentőségét."
+      }
+     ]
+    },
+    {
+     "block_id": "99d4ac45-5a2c-4d94-b4ea-329a6243cdc3",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az iszlám vallás alapítója",
+        "B) Egy híres keresztes lovag",
+        "C) Franciaország királya",
+        "D) Az angol hadvezér"
+       ],
+       "question": "Ki volt Mohamed?",
+       "explanation": "Mohamed az iszlám vallás alapítója, aki a 7. században élt és megalapította a muszlim közösséget.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) A középkori Anglia",
+        "B) A mai Franciaország",
+        "C) A mai Izrael és Palesztina területe",
+        "D) A római birodalom területe"
+       ],
+       "question": "Melyik területet nevezik Szentföldnek?",
+       "explanation": "A Szentföld a mai Izrael és Palesztina területét jelenti, amely a keresztes háborúk célpontja volt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Keresztes háborúkban való részvétel",
+        "B) Kizárólag kereskedőként való működés",
+        "C) Politikai hatalom megszerzése",
+        "D) Vallási vezetők szerepe"
+       ],
+       "question": "Mi a lovagok fő jellemzője a középkorban?",
+       "explanation": "A lovagok a keresztes háborúkban való részvételükről voltak híresek, harcosokként védték a keresztény hitet.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Monoteista vallás",
+        "B) Politeista vallás",
+        "C) Ateista filozófia",
+        "D) Keresztény vallás"
+       ],
+       "question": "Milyen vallás az iszlám?",
+       "explanation": "Az iszlám egy monoteista vallás, amely az egy Isten, Allah imádatára épül.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Franciaország",
+        "B) Egyiptom",
+        "C) Olaszország",
+        "D) Görögország"
+       ],
+       "question": "Melyik országban alakult ki a lovagi kultúra a középkorban?",
+       "explanation": "A lovagi kultúra Franciaországban alakult ki, ahol a lovagok életformája és etikája meghatározó szerepet játszott.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "44b03874-1d52-473e-9091-8954a1bd5f19",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A földbirtokos, aki a jobbágyokat irányította.",
+      "B) A pápa, aki a vallási ügyekért felelt.",
+      "C) A lovag, aki harcolt a királyért.",
+      "D) A polgár, aki a városban élt."
+     ],
+     "question": "Ki volt a földesúr a középkorban?",
+     "explanation": "A földesúr a középkorban a földbirtokos volt, aki a jobbágyokat irányította és a földjeit műveltetette.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A jobbágyok kötelező munkáját a földesúr földjén.",
+      "B) A lovagok harci feladatait.",
+      "C) A kolostorokban végzett imádságot.",
+      "D) A céhek által előírt munkaidőt."
+     ],
+     "question": "Mit jelent a robot a középkorban?",
+     "explanation": "A robot a jobbágyok kötelező munkáját jelentette a földesúr földjén, amely a középkori társadalom fontos része volt.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Bencés rend.",
+      "B) Pálos rend.",
+      "C) Ferences rend.",
+      "D) Domonkos rend."
+     ],
+     "question": "Melyik rendhez tartozott Szent Benedek?",
+     "explanation": "Szent Benedek a bencés rend megalapítója volt, aki a kolostori élet szabályait fogalmazta meg.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Román stílus.",
+      "B) Gótikus stílus.",
+      "C) Barokk stílus.",
+      "D) Reneszánsz stílus."
+     ],
+     "question": "Melyik építészeti stílus jellemző a középkori templomokra Franciaországban?",
+     "explanation": "A gótikus stílus a középkori templomok jellegzetes építészeti stílusa Franciaországban, magas ívek és nagy ablakok jellemzik.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az iszlám vallás megalapítója.",
+      "B) Egy híres lovag.",
+      "C) Egy bencés szerzetes.",
+      "D) Egy francia király."
+     ],
+     "question": "Ki volt Mohamed?",
+     "explanation": "Mohamed az iszlám vallás megalapítója, aki a 7. században élt, és tanításait a Koránban foglalta össze.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A kereskedők és mesterek érdekeinek védelme.",
+      "B) A földesurak irányítása.",
+      "C) A vallási közösségek szervezése.",
+      "D) A katonai egységek létrehozása."
+     ],
+     "question": "Mi a céh szerepe a középkori városokban?",
+     "explanation": "A céh a középkori városokban a kereskedők és mesterek érdekeinek védelmét szolgálta, szabályozta a mesterségeket és a kereskedelmet.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Magyarországon.",
+      "B) Franciaországban.",
+      "C) Angliában.",
+      "D) A Szentföldön."
+     ],
+     "question": "Hol található Pannonhalma?",
+     "explanation": "Pannonhalma Magyarországon található, híres bencés apátságáról ismert, amely a középkor óta fontos vallási központ.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Jeruzsálem.",
+      "B) Visegrád.",
+      "C) Pannonhalma.",
+      "D) Anglia."
+     ],
+     "question": "Melyik terület tartozik a Szentföldhöz?",
+     "explanation": "A Szentföld Jeruzsálemet és a környező területeket foglalja magában, fontos helyszíne az iszlám, a kereszténység és a judaizmus számára.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}
