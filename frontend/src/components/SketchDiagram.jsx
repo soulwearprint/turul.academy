@@ -115,12 +115,13 @@ function Shape({ shape: s }) {
   }
 }
 
-export default function SketchDiagram({ sketch }) {
+export default function SketchDiagram({ sketch, className = 'text-white/80', label }) {
   const filterId = useId()
   const shapes = sketch && Array.isArray(sketch.shapes) ? sketch.shapes : null
   if (!shapes || shapes.length === 0) return null
   return (
-    <svg viewBox={sketch.viewBox || DEFAULT_VIEWBOX} className="w-full h-auto text-white/80"
+    <svg viewBox={sketch.viewBox || DEFAULT_VIEWBOX} className={`w-full h-auto ${className}`}
+      role={label ? 'img' : undefined} aria-label={label}
       style={{ filter: `url(#${filterId})` }}>
       <defs>
         <filter id={filterId} x="-10%" y="-10%" width="120%" height="120%">
