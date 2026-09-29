@@ -1,0 +1,1234 @@
+{
+ "nat_id": "PHYS-910-10",
+ "topic_id": "85887b2a-4102-46d4-b079-48cedd001d6b",
+ "title_hu": "Generátorok és motorok",
+ "grade": 10,
+ "lessons": [
+  {
+   "lesson_id": "accb3020-25cd-4c9b-a243-a1190a420974",
+   "title_hu": "Elektromágnesek és alapvető jelenségek",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "39564dde-a4e2-4d7e-b85b-f87c36be1490",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A mágneses mező az a tér, amelyben egy mágnes vagy áramjárta vezető erőhatást fejt ki más mágnesekre, vasdarabokra vagy mozgó töltésekre. A hűtőmágnes azért tapad a hűtőszekrény ajtajára, mert a mágnese körüli mágneses mező vonzza a fémet. A Föld is rendelkezik saját, gyenge mágneses mezővel, ez téríti el az iránytű tűjét. A mágneses mező láthatatlan, de hatása vasreszelékkel vagy iránytűvel kimutatható.",
+       "type": "text",
+       "heading": "A mágneses mező",
+       "key_term": "mágneses mező"
+      },
+      {
+       "body": "A mágneses mező szemléltetésére indukcióvonalakat rajzolunk: ezek a mágnes északi pólusától indulnak és a déli pólusban záródnak. Ahol az indukcióvonalak sűrűbben futnak, ott a mágneses mező erősebb. A vonalak sosem metszik egymást, és mindig zárt görbéket alkotnak. Vasreszelékkel meghintett papírlapon egy rúdmágnes fölött jól láthatóvá válik ez a vonalrendszer.",
+       "type": "text",
+       "heading": "Mágneses indukcióvonalak",
+       "key_term": "mágneses indukcióvonalak"
+      },
+      {
+       "body": "Elektromágnest egyszerűen készíthetünk, ha szigetelt rézdrótot sűrűn egy vasszegre tekerünk, majd a drót két végét egy elemhez csatlakoztatjuk. Amíg áram folyik a tekercsben, a vasszeg mágnesként viselkedik: apró vasszögeket, gemkapcsokat vonz. Az elektromágnes közelébe helyezett iránytű tűje kitér, ez igazolja a mágneses mező jelenlétét. Az áramkör megszakításakor a mágneses hatás azonnal megszűnik, ellentétben az állandó mágnessel.",
+       "type": "text",
+       "heading": "Hogyan készítsünk elektromágnest",
+       "key_term": "elektromágnes"
+      },
+      {
+       "body": "Az elektromágnes mágneses mezője annál erősebb, minél több menetből áll a tekercs, és minél nagyobb áram folyik át rajta. A vasmag jelenléte (a puszta levegő helyett) jelentősen felerősíti a hatást, mert a vas könnyen mágnesezhető. Ezen az elven működnek a nagy teherbírású darukban használt emelő elektromágnesek, amelyek fém hulladékot vagy autóroncsokat emelnek meg. Az elektromágnes előnye az állandó mágnessel szemben, hogy ki- és bekapcsolható, valamint erőssége szabályozható.",
+       "type": "text",
+       "heading": "Az elektromágnes erősségét befolyásoló tényezők",
+       "key_term": ""
+      },
+      {
+       "body": "Ha egy áramjárta vezetőt mágneses mezőbe helyezünk, arra erő hat, amely elmozdítja a vezetőt – ez az elektromotor működésének alapelve. Egy tekercset mágnes pólusai közé helyezve, és rajta áramot átvezetve a tekercsre forgatónyomaték hat, ez forgatja meg a motor tengelyét. Egyszerű modellen vagy animáción jól megfigyelhető, hogy az áram iránya és a mágneses mező iránya együtt szabja meg az erő irányát. Elektromotor működteti például a ventilátort, a mixert és sok háztartási gépet.",
+       "type": "text",
+       "heading": "Az elektromotor működési elve",
+       "key_term": ""
+      },
+      {
+       "body": "Ha egy mágnest egy tekercshez közelítünk vagy attól távolítunk, a tekercsben rövid ideig feszültség keletkezik – ezt nevezzük elektromágneses indukciónak. Ugyanez a hatás akkor is fellép, ha a tekercset mozgatjuk egy álló mágnes közelében: a lényeg a mágneses mező és a tekercs közötti relatív mozgás. Ez az alapjelenség adja egy egyszerű generátor modell működésének elvét: mechanikai mozgásból elektromos feszültséget nyerünk. Minél gyorsabb a mozgás, annál nagyobb feszültség indukálódik.",
+       "type": "text",
+       "heading": "Az elektromágneses indukció alapesete",
+       "key_term": ""
+      }
+     ]
+    },
+    {
+     "block_id": "c364142f-94de-4620-9090-b76b6d8a2bbd",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A kapcsoló elfordul, és a két érintkező összeér. Ettől a pillanattól kezdve az elem és a vasszegre tekert szigetelt drót zárt áramkört alkot, amelyben megindul az elektronok rendezett áramlása.",
+       "type": "story",
+       "heading": "Az áramkör záródik"
+      },
+      {
+       "body": "Az árammal átjárt drótmenetek körül apró mágneses mező jelenik meg. Mivel a drót sűrű menetekben, tekercs formájában fut a szeg körül, az egyes menetek mágneses hatása összeadódik, és a tekercs két végén két pólus – egy északi és egy déli – alakul ki.",
+       "type": "story",
+       "heading": "A tekercs mágneses mezőt kelt"
+      },
+      {
+       "body": "A tekercs belsejében lévő vasszeg maga is mágnesessé válik, amíg az áram folyik. A vas sokkal könnyebben vezeti a mágneses hatást, mint a levegő, ezért a mágneses mező jóval erősebb lesz, mintha a tekercs üres lenne.",
+       "type": "story",
+       "heading": "A vasmag felerősíti a hatást"
+      },
+      {
+       "body": "Amikor egy iránytűt a szeg közelébe helyeznek, a tű hegye elfordul, és a vasszeg egyik pólusa felé mutat. Az elmozdulás igazolja, hogy a láthatatlan mágneses mező valóban jelen van, és erőt fejt ki a kis mágnestűre.",
+       "type": "story",
+       "heading": "Az iránytű elfordul"
+      },
+      {
+       "body": "Ha ezt a mágneses mezőt egy külön, mozgásra képes tekercs közelébe visszük, és abban is áramot vezetünk át, a két mágneses mező kölcsönhatásba lép: erő ébred, amely elforgatja a mozgó tekercset. Ez az erőhatás az elektromotor forgásának alapja – ugyanaz a jelenség, amely az egyszerű elektromágnesnél az iránytűt is elmozdította, itt már folyamatos forgást hoz létre.",
+       "type": "story",
+       "heading": "A mozgó töltés és a forgó tekercs"
+      }
+     ]
+    },
+    {
+     "block_id": "256c9e83-5d40-4740-9a67-cb276654d8ec",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A mágneses mező erőssége a vonalak sűrűségével arányos.",
+       "heading": "Rúdmágnes mágneses mezője",
+       "description": "Egy rúdmágnes két pólusa (É és D) köré rajzolt görbe indukcióvonalak, amelyek az északi pólusból indulnak, ívben körbefutnak, és a déli pólusban térnek vissza. A vonalak a pólusok közelében sűrűbbek.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A vasreszelék minden ponton a helyi mágneses mező irányát követi.",
+       "heading": "Indukcióvonalak vasreszelékkel",
+       "description": "Egy papírlapra szórt vasreszelék mintázata rúdmágnes fölött: a reszelékszemcsék láncokba rendeződnek, kirajzolva a mágneses mező íves alakját a két pólus között.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Áram hatására a vasszeg ideiglenes mágnessé válik.",
+       "heading": "Elektromágnes felépítése",
+       "description": "Egy vasszeg, amelyre szigetelt drót van sűrűn feltekerve, a drót két vége egy elemhez csatlakozik. A tekercs mellett egy iránytű látható, tűje a szeg vége felé fordulva.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Több menet és nagyobb áram együtt adja a legerősebb elektromágnest.",
+       "heading": "Az elektromágnes erőssége",
+       "description": "Oszlopdiagram, amely három elektromágnest hasonlít össze: kevés menet/kis áram, sok menet/kis áram, sok menet/nagy áram – az emelt gemkapcsok száma oszlopmagassággal ábrázolva, balról jobbra növekvő tendenciával.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az áramjárta vezetőre mágneses mezőben erő hat – ez forgatja meg a motort.",
+       "heading": "Az elektromotor alapelve",
+       "description": "Egy patkómágnes pólusai (É bal oldalon, D jobb oldalon) között elhelyezett áramjárta huzalhurok, mellette nyíllal jelölve az áram iránya és egy másik nyíllal a huzalra ható, felfelé mutató erő.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A tekercs mozgatása mágneses mezőben feszültséget indukál – ez a generátor alapja.",
+       "heading": "Generátor modell vázlata",
+       "description": "Egy tekercs, amely egy patkómágnes pólusai között elforgatható, a tekercs végei egy kis izzóhoz vagy műszerhez csatlakoznak. A tekercs mozgásirányát ívelt nyíl jelzi.",
+       "visual_type": "keresztmetszet"
+      }
+     ]
+    },
+    {
+     "block_id": "cda2c904-56fa-4467-9ab5-a0118515535d",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Oersted felfedezése nélkül nem léteznének a mai hangszórók és fülhallgatók sem: ezekben egy kis elektromágnes mozgatja a membránt a beérkező elektromos jel ütemében, így hozva létre a hangot.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 20,
+          "w": 40,
+          "x": 40,
+          "y": 130,
+          "type": "battery"
+         },
+         {
+          "x1": 80,
+          "x2": 320,
+          "y1": 140,
+          "y2": 140,
+          "type": "line"
+         },
+         {
+          "r": 25,
+          "x": 200,
+          "y": 140,
+          "type": "circle"
+         },
+         {
+          "x1": 200,
+          "x2": 222,
+          "y1": 140,
+          "y2": 112,
+          "type": "arrow"
+         },
+         {
+          "x": 200,
+          "y": 185,
+          "text": "iránytű",
+          "type": "label"
+         },
+         {
+          "x": 150,
+          "y": 115,
+          "text": "áramjárta vezeték",
+          "type": "label"
+         },
+         {
+          "x": 60,
+          "y": 110,
+          "text": "elem",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Oersted véletlen felfedezése",
+       "discovery": "1820-ban Hans Christian Oersted dán fizikus egy előadás közben véletlenül észrevette, hogy egy közeli iránytű tűje kitér, amikor bekapcsolja az asztalon lévő áramkört. Ez volt az első kísérleti bizonyíték arra, hogy az elektromos áram mágneses mezőt kelt maga körül – korábban a két jelenséget egymástól függetlennek gondolták.",
+       "try_basic": "Készíts elektromágnest: tekerj szigetelt drótot sűrűn egy nagy vasszegre, csatlakoztasd egy elemhez, majd egy iránytűvel vizsgáld meg a keletkező mágneses mezőt a szeg két végénél.",
+       "try_advanced": "Vizsgáld meg, hogyan változik az elektromágnes ereje (hány gemkapcsot bír megtartani), ha növeled a menetek számát, vagy ha két elemet sorba kapcsolva növeled az áramerősséget."
+      }
+     ]
+    },
+    {
+     "block_id": "bb0ac7af-6eb2-4dc3-b3c4-66efcd9e3251",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az a tér, amelyben mágneses erőhatás érvényesül mágnesekre, vasdarabokra vagy mozgó töltésekre",
+        "B) Egy vezető anyagfajta, amely csak vasból lehet",
+        "C) Az elektromos áram másik neve",
+        "D) A hőmérséklet térbeli eloszlása egy tárgy körül"
+       ],
+       "question": "Mi a mágneses mező?",
+       "explanation": "A mágneses mező a mágnesek és áramjárta vezetők körüli tér, amelyben mágneses erőhatás mutatható ki, például iránytűvel vagy vasreszelékkel.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Több menettől és nagyobb áramtól",
+        "B) Kevesebb menettől és kisebb áramtól",
+        "C) Csak a szeg hosszától, az áramtól nem",
+        "D) A drót színétől"
+       ],
+       "question": "Mitől lesz erősebb egy vasszegre tekert elektromágnes?",
+       "explanation": "Az elektromágnes mágneses mezője a menetszám növelésével és a rajta átfolyó áram erősségének növelésével erősödik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Erő hat rá, amely elmozdíthatja – ez az elektromotor működésének elve",
+        "B) Semmilyen hatás nem éri",
+        "C) Azonnal lehűl",
+        "D) Elveszíti elektromos töltését"
+       ],
+       "question": "Mi történik egy áramjárta vezetővel, ha mágneses mezőbe helyezzük?",
+       "explanation": "A mágneses mezőben lévő áramjárta vezetőre erő hat, ennek az erőnek a felhasználásán alapul az elektromotor forgása.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Ha egy mágnest egy tekercs közelében mozgatunk, feszültség indukálódik a tekercsben",
+        "B) Ha egy vezetéket melegítünk, mágneses mező keletkezik körülötte",
+        "C) Ha egy szigetelő anyagot dörzsöléssel feltöltünk",
+        "D) Ha két azonos pólusú mágnest összeérintünk"
+       ],
+       "question": "Melyik jelenség az elektromágneses indukció alapesete?",
+       "explanation": "Az elektromágneses indukció alapesetében a mágnes és a tekercs közötti relatív mozgás hoz létre feszültséget a tekercsben.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A mágneses mező irányát és erősségét, a sűrűbb vonalak erősebb mezőt jelentenek",
+        "B) Kizárólag az áram erősségét ampanben",
+        "C) A vezető hőmérsékletét",
+        "D) A tekercs menetszámát"
+       ],
+       "question": "Mit mutatnak a mágneses indukcióvonalak?",
+       "explanation": "Az indukcióvonalak az északi pólustól a déli pólusig futnak, sűrűségük a mágneses mező erősségét szemlélteti.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "5498ef33-951d-44e4-bd2c-e8bb1d06db53",
+   "title_hu": "Faraday és az elektromágneses indukció",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "2b0a7b69-eedd-439d-80be-7933cdc77cc1",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Michael Faraday (1791–1867) angol fizikus és kémikus volt, aki szegény családból származott, és fiatalon könyvkötő inasként dolgozott. Önerejéből képezte magát, majd a londoni Royal Institution kutatója lett. Faraday nevéhez fűződik az elektromágneses indukció felfedezése 1831-ben, amely a mai elektromos energiaipar egyik alappillére. Munkássága jelentőségét mutatja, hogy nélküle nem léteznének a mai generátorok és erőművek.",
+       "type": "text",
+       "heading": "Ki volt Michael Faraday",
+       "key_term": ""
+      },
+      {
+       "body": "Faraday kísérletileg igazolta, hogy ha a mágneses mező egy tekercs közelében megváltozik – például egy mágnest mozgatunk, vagy egy szomszédos tekercsben az áramot ki- és bekapcsoljuk –, akkor a tekercsben feszültség indukálódik. Ezt a jelenséget nevezzük elektromágneses indukciónak. Fontos, hogy csak a változó mágneses mező kelt feszültséget, az álló mágnes mellett nyugvó tekercsben semmilyen feszültség nem keletkezik. Ez a felismerés kötötte véglegesen össze az elektromosságot és a mágnesességet.",
+       "type": "text",
+       "heading": "Az elektromágneses indukció jelensége",
+       "key_term": "elektromágneses indukció"
+      },
+      {
+       "body": "Az elektromágneses indukcióhoz relatív mozgás vagy változás szükséges a mágnes és a tekercs között: vagy a mágnest mozgatjuk a tekercshez képest, vagy a tekercset mozgatjuk a mágneshez képest, vagy egy közeli tekercsben változtatjuk az áramot. Minél gyorsabb a mozgás vagy a változás, annál nagyobb feszültség indukálódik. Ez a törvényszerűség teszi lehetővé, hogy a mechanikai mozgási energiát elektromos energiává alakítsuk át.",
+       "type": "text",
+       "heading": "Az indukció feltétele",
+       "key_term": ""
+      },
+      {
+       "body": "A generátor egy olyan eszköz, amely az elektromágneses indukció elvén mechanikai energiát alakít elektromos energiává. Felépítése: mágnes pólusai között egy tekercset forgatnak, például víz-, szél- vagy gőzturbina segítségével. A forgás közben a tekercset átjáró mágneses mező folyamatosan változik, ezért a tekercs végein feszültség jelenik meg. Az erőművekben szinte minden villamos energia generátorral keletkezik.",
+       "type": "text",
+       "heading": "A generátor felépítése és működése",
+       "key_term": "generátor"
+      },
+      {
+       "body": "Amikor a generátor tekercse egyenletesen forog a mágneses mezőben, a keletkező feszültség és áram iránya periodikusan, másodpercenként sokszor megváltozik – ez a váltakozó áram, nemzetközi rövidítéssel AC (alternating current). Ez különbözik az egyenáramtól, nemzetközi rövidítéssel DC (direct current), amelynek iránya és nagysága állandó, mint egy elemnél. A háztartási elektromos hálózatban váltakozó áram folyik.",
+       "type": "text",
+       "heading": "A váltakozó áram keletkezése",
+       "key_term": ""
+      },
+      {
+       "body": "A magyarországi elektromos hálózaton a feszültség effektív értéke 230 V (volt), a frekvencia pedig 50 Hz (hertz), ami azt jelenti, hogy az áram iránya másodpercenként 50-szer vált irányt oda-vissza. A váltakozó áram grafikonja szinuszgörbét rajzol ki: a feszültség folyamatosan nő, majd csökken, majd előjelet vált. A váltakozó áram nagy előnye, hogy transzformátorral könnyen fel- vagy letranszformálható, ami az energiaátvitelnél elengedhetetlen.",
+       "type": "text",
+       "heading": "A váltakozó áram főbb jellemzői",
+       "key_term": ""
+      }
+     ]
+    },
+    {
+     "block_id": "5d68a373-0a06-47ed-bc96-3cf1d86ab65d",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy rúdmágnest valaki lassan egy sok menetből álló tekercs nyílása felé tolnak. Ahogy a mágnes közeledik, a tekercset átjáró mágneses mező folyamatosan erősödik.",
+       "type": "story",
+       "heading": "A mágnes megközelíti a tekercset"
+      },
+      {
+       "body": "A változó mágneses mező hatására a tekercs két végén feszültség jelenik meg, és a tekercshez csatlakoztatott vezetőhurokban áram indul meg – pontosan addig, amíg a mágneses mező változik.",
+       "type": "story",
+       "heading": "Feszültség indukálódik"
+      },
+      {
+       "body": "Amint a mágnes mozdulatlanná válik a tekercsben, a mágneses mező többé nem változik, és az indukált áram azonnal megszűnik, hiába van a mágnes még mindig a tekercs belsejében.",
+       "type": "story",
+       "heading": "A mozgás megáll, az áram eltűnik"
+      },
+      {
+       "body": "Amikor a mágnest kihúzzák a tekercsből, a mágneses mező ismét változni kezd, csak most éppen ellenkező irányban gyengül – ezért a tekercsben újra áram indul meg, de fordított irányban, mint korábban.",
+       "type": "story",
+       "heading": "A mágnes visszahúzása"
+      },
+      {
+       "body": "Ha a mágnes egyszeri közelítése helyett egy tekercset folyamatosan forgatnak egy álló mágneses mezőben, a mágneses mező a tekercs szempontjából állandóan, ütemesen változik. Az így keletkező áram iránya másodpercenként sokszor megfordul – ez már nem egyetlen kilengés, hanem folyamatos váltakozó áram, amely képes egy izzót tartósan világítani.",
+       "type": "story",
+       "heading": "A forgó tekercs és a folyamatos váltakozás"
+      }
+     ]
+    },
+    {
+     "block_id": "6348cbb7-be14-48c5-8abe-50729b4ef543",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A mágnes mozgatása a tekercsben feszültséget indukál, amit a műszer kitérése jelez.",
+       "heading": "Faraday indukciós kísérlete",
+       "description": "Egy rúdmágnes, amelyet nyíl jelez, hogy egy tekercs felé mozog. A tekercs vezetékei egy műszerhez (galvanométerhez) csatlakoznak, amelynek mutatója kitérve ábrázolt.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A tekercs mechanikai forgatása mágneses mezőben elektromos feszültséget hoz létre.",
+       "heading": "Generátor keresztmetszete",
+       "description": "Egy patkómágnes két pólusa között elhelyezett, tengelyre szerelt tekercs, a tengelyhez egy hajtókerék vagy turbinalapát kapcsolódik, a tekercs végei csúszógyűrűkön keresztül külső áramkörhöz vezetnek.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A váltakozó áram feszültsége az idő függvényében szinuszosan változik.",
+       "heading": "A váltakozó áram grafikonja",
+       "description": "Idő–feszültség koordinátarendszerben rajzolt szinuszgörbe, amely a nulla vonal fölé és alá is kileng, jelezve az irányváltásokat. A vízszintes tengelyen periódusidő van jelölve.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A tekercs helyzete határozza meg az adott pillanatban indukált feszültség nagyságát és irányát.",
+       "heading": "A forgó tekercs négy helyzete",
+       "description": "Négy egymás melletti kis ábra, amelyek a forgó tekercs négy jellegzetes helyzetét mutatják a mágneses mezőhöz képest (párhuzamos, merőleges, párhuzamos fordítva, merőleges fordítva), mindegyik alatt a pillanatnyi indukált feszültség jele (nulla, maximum, nulla, minimum).",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az egyenáram (DC) iránya állandó, a váltakozó áram (AC) iránya és nagysága periodikusan változik.",
+       "heading": "Váltakozó áram és egyenáram összehasonlítása",
+       "description": "Két egymás alatti grafikon: felül egy vízszintes egyenes vonal (DC, állandó érték), alul egy szinuszgörbe (AC, ingadozó érték).",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Ez a két érték jellemzi a magyarországi háztartási elektromos hálózatot.",
+       "heading": "A magyar elektromos hálózat jellemzői",
+       "description": "Egy egyszerű táblázat két sorral: 'Feszültség: 230 V' és 'Frekvencia: 50 Hz', mellette egy konnektor stilizált rajza.",
+       "visual_type": "infografika"
+      }
+     ]
+    },
+    {
+     "block_id": "4efb89d6-7080-4b1a-b358-5e2d44add5db",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Faraday felfedezése teszi lehetővé a mai vezeték nélküli (Qi) telefontöltést: a töltőlapban lévő tekercs változó mágneses mezőt kelt, amely a telefon belsejében lévő másik tekercsben feszültséget indukál, így tölti fel az akkumulátort érintkezők nélkül.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 60,
+          "w": 80,
+          "x": 150,
+          "y": 100,
+          "type": "coil",
+          "turns": 6
+         },
+         {
+          "h": 30,
+          "w": 50,
+          "x": 40,
+          "y": 115,
+          "type": "box"
+         },
+         {
+          "x1": 100,
+          "x2": 150,
+          "y1": 130,
+          "y2": 130,
+          "type": "arrow"
+         },
+         {
+          "x1": 230,
+          "x2": 320,
+          "y1": 110,
+          "y2": 110,
+          "type": "line"
+         },
+         {
+          "x1": 230,
+          "x2": 320,
+          "y1": 150,
+          "y2": 150,
+          "type": "line"
+         },
+         {
+          "r": 20,
+          "x": 320,
+          "y": 130,
+          "type": "circle"
+         },
+         {
+          "x": 65,
+          "y": 160,
+          "text": "mágnes",
+          "type": "label"
+         },
+         {
+          "x": 190,
+          "y": 180,
+          "text": "tekercs",
+          "type": "label"
+         },
+         {
+          "x": 320,
+          "y": 165,
+          "text": "műszer",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Faraday indukciós kísérlete 1831-ből",
+       "discovery": "Michael Faraday 1831-ben egy vasgyűrűre tekert két tekercset használt: amikor az egyik tekercs áramkörét be- vagy kikapcsolta, a másik, elektromosan nem összekötött tekercshez csatlakoztatott galvanométer tűje kitért. Ezzel bizonyította, hogy a változó mágneses mező feszültséget indukál egy másik vezetőben, még fizikai érintkezés nélkül is – ez lett az elektromágneses indukció felfedezése.",
+       "try_basic": "Told be és húzd ki gyorsan egy rúdmágnest egy sok menetből álló tekercsbe, miközben a tekercs végeit egy LED-hez vagy multiméterhez csatlakoztattad – figyeld meg, mikor jelenik meg áram, és mikor nem.",
+       "try_advanced": "Vizsgáld meg, hogyan függ az indukált feszültség nagysága a mágnes mozgatási sebességétől: hasonlítsd össze a lassú és a gyors mozgatás hatását ugyanazon a tekercsen, multiméterrel mérve."
+      }
+     ]
+    },
+    {
+     "block_id": "846a53cf-18bd-4386-8821-86b9913f3c03",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Angol fizikus, aki 1831-ben felfedezte az elektromágneses indukció jelenségét",
+        "B) Magyar feltaláló, aki a transzformátort fejlesztette ki",
+        "C) Amerikai mérnök, aki a villanykörtét tökéletesítette",
+        "D) Ókori görög filozófus volt"
+       ],
+       "question": "Melyik állítás igaz Michael Faradayre?",
+       "explanation": "Faraday angol fizikus volt, aki kísérletileg igazolta, hogy a változó mágneses mező feszültséget indukál egy vezetőben.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Változó mágneses mező vagy relatív mozgás a mágnes és a tekercs között",
+        "B) Állandó mágneses mező és teljesen mozdulatlan tekercs",
+        "C) Kizárólag magas hőmérséklet",
+        "D) Statikus, mozdulatlan elektromos töltés"
+       ],
+       "question": "Mi szükséges ahhoz, hogy elektromágneses indukció jöjjön létre?",
+       "explanation": "Indukció csak akkor jön létre, ha a tekercsen áthaladó mágneses mező valamilyen okból változik, például mozgás miatt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mechanikai energiát alakít elektromos energiává",
+        "B) Elektromos energiát alakít közvetlenül fénnyé",
+        "C) Hőenergiát alakít mágneses energiává",
+        "D) Kémiai energiát alakít hangenergiává"
+       ],
+       "question": "Milyen energiaátalakítást végez a generátor?",
+       "explanation": "A generátorban egy tekercset mágneses mezőben mechanikusan forgatnak, ami elektromágneses indukció révén elektromos feszültséget hoz létre.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 50 Hz (hertz)",
+        "B) 230 Hz",
+        "C) 12 Hz",
+        "D) 100 Hz"
+       ],
+       "question": "Mekkora a magyarországi elektromos hálózat frekvenciája?",
+       "explanation": "A magyar hálózaton a váltakozó áram frekvenciája 50 Hz, míg a feszültség effektív értéke 230 V – a kettőt nem szabad összekeverni.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Iránya és nagysága az idő függvényében periodikusan változik",
+        "B) Iránya soha nem változik meg",
+        "C) Csak egyenletesen növekszik, sosem csökken",
+        "D) Kizárólag elemekben fordul elő"
+       ],
+       "question": "Mi jellemzi a váltakozó áramot (AC)?",
+       "explanation": "A váltakozó áram (AC) jellemzője, hogy iránya és nagysága szabályos időközönként, periodikusan változik, ellentétben az egyenárammal (DC).",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "189aefde-f92b-4223-ab0d-be1a8702b982",
+   "title_hu": "Transzformátorok és energiaátvitel",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "5ab72b0a-f5f5-4812-95c3-90f003b60ee4",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A transzformátor egy zárt vasmagra (gyakran vaskarikára) tekert két, egymástól elektromosan elszigetelt tekercsből áll: az elsődleges (primer) és a másodlagos (szekunder) tekercsből. A két tekercs nincs egymással vezetéken összekötve, csak a közös vasmagon keresztül hatnak egymásra. Ez a felépítés teszi lehetővé, hogy a transzformátor a feszültséget megváltoztassa anélkül, hogy a két áramkör közvetlenül érintkezne.",
+       "type": "text",
+       "heading": "A transzformátor felépítése",
+       "key_term": "transzformátor"
+      },
+      {
+       "body": "A primer tekercsbe vezetett váltakozó áram (AC) a vasmagban folyamatosan változó mágneses mezőt hoz létre. Ez a változó mágneses mező a szekunder tekercsben elektromágneses indukció útján feszültséget indukál. Fontos, hogy a transzformátor csak váltakozó árammal működik, mert egyenáram (DC) esetén a mágneses mező állandó lenne, változás nélkül pedig nincs indukció.",
+       "type": "text",
+       "heading": "A transzformátor működési elve",
+       "key_term": ""
+      },
+      {
+       "body": "A transzformátor kimeneti feszültségét a két tekercs menetszámának aránya határozza meg: ha a szekunder tekercsen több menet van, mint a primeren, a feszültség megnő (feltranszformálás), ha kevesebb, a feszültség csökken (letranszformálás). Feltranszformáláskor a feszültség nő, de ezzel arányosan az áramerősség csökken, így az átvitt teljesítmény lényegében megmarad. Ez az arány teszi lehetővé, hogy egyetlen eszköztípussal bármilyen irányban változtassunk a feszültségen.",
+       "type": "text",
+       "heading": "Feltranszformálás és letranszformálás",
+       "key_term": ""
+      },
+      {
+       "body": "Az erőműben termelt elektromos energiát a felhasználás helyére gyakran több száz kilométeren keresztül kell eljuttatni, ehhez a vezetékekben nagyon nagy feszültséget alkalmaznak. A nagy feszültség mellett kisebb áramerősség szükséges ugyanakkora teljesítmény átviteléhez, kisebb áram esetén pedig kisebb a vezetékek hőveszteségén elvesző energia mennyisége. Ezért az erőműnél feltranszformálják, a felhasználás helyéhez közeledve pedig fokozatosan letranszformálják a feszültséget, egészen a háztartásokban használt 230 V-ig.",
+       "type": "text",
+       "heading": "A transzformátor szerepe az energiaátvitelben",
+       "key_term": ""
+      },
+      {
+       "body": "Transzformátort nem csak az erőművekben és az utcai oszlopokon találunk, hanem szinte minden háztartási töltőben és adapterben is: a telefontöltő és a laptoptöltő belsejében egy kis transzformátor alakítja át a hálózati 230 V-ot a készülék által igényelt, jóval kisebb feszültségre. Az utcákon látható oszloptranszformátorok a nagyfeszültségű vezetékek feszültségét alakítják át a háztartásokban használható szintre. Érdemes ezeket a mindennapi eszközöket felismerni és tudatosan megfigyelni a környezetünkben.",
+       "type": "text",
+       "heading": "Transzformátorok a mindennapokban",
+       "key_term": ""
+      }
+     ]
+    },
+    {
+     "block_id": "297185ac-0268-4fdc-bf72-2820d9bad213",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy nagy generátor forgó tekercse elektromágneses indukció révén váltakozó feszültséget termel. Az így keletkezett elektromos energia egy hatalmas transzformátorhoz kerül.",
+       "type": "story",
+       "heading": "Az energia az erőműben keletkezik"
+      },
+      {
+       "body": "Az erőmű melletti transzformátor a feszültséget több százezer voltra emeli fel, miközben az áramerősséget lecsökkenti. Ez az állapot alkalmas arra, hogy az energia hosszú távvezetékeken, minimális veszteséggel utazzon.",
+       "type": "story",
+       "heading": "Feltranszformálás a szállításhoz"
+      },
+      {
+       "body": "Az energia magas tartóoszlopokon futó vezetékeken halad kilométerek százain át a városok és falvak felé. A nagy feszültség és a viszonylag kis áramerősség miatt a vezetékek csak keveset melegszenek, így kevés energia vész el útközben.",
+       "type": "story",
+       "heading": "Utazás a távvezetéken"
+      },
+      {
+       "body": "A település szélén egy transzformátorállomás a feszültséget középfeszültségűre csökkenti, majd az utcai oszloptranszformátorok tovább alakítják azt a háztartásokban használt 230 V-ra.",
+       "type": "story",
+       "heading": "Letranszformálás a városban"
+      },
+      {
+       "body": "A már biztonságos feszültségű elektromos energia a földalatti vagy légvezetékeken keresztül eljut a lakóépületek elosztószekrényéhez, onnan pedig a falban futó vezetékeken át a konnektorokba, ahol egy bekapcsolt készülék végre felhasználja azt.",
+       "type": "story",
+       "heading": "Megérkezés a konnektorba"
+      }
+     ]
+    },
+    {
+     "block_id": "64a73534-acc2-45dc-a8c3-380a8db08010",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A primer tekercs váltakozó árama a vasmagon keresztül feszültséget indukál a szekunder tekercsben.",
+       "heading": "A transzformátor keresztmetszete",
+       "description": "Egy zárt vaskarika, amelynek bal oldalára egy sűrűbb menetszámú primer tekercs, jobb oldalára egy ritkább menetszámú szekunder tekercs van tekerve. A primer tekercs egy elemhez, a szekunder egy kis izzóhoz csatlakozik.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Az elektromos energia útja az erőműtől a konnektorig több transzformáláson át vezet.",
+       "heading": "Az energiaátviteli lánc",
+       "description": "Balról jobbra haladó folyamatábra öt dobozzal: 'Erőmű (generátor)' → 'Feltranszformáló állomás' → 'Nagyfeszültségű távvezeték' → 'Letranszformáló állomás' → 'Háztartás (230 V)', nyilakkal összekötve.",
+       "visual_type": "folyamatábra"
+      },
+      {
+       "type": "visual",
+       "caption": "A menetszámok aránya közvetlenül meghatározza a feszültségváltozás mértékét és irányát.",
+       "heading": "Menetszám–feszültség arány",
+       "description": "Egy táblázat három sorral: 'Primer menetszám: 100, Szekunder menetszám: 1000 → feltranszformálás', 'Primer: 1000, Szekunder: 100 → letranszformálás', 'Primer: 100, Szekunder: 100 → nincs változás'.",
+       "visual_type": "táblázat"
+      },
+      {
+       "type": "visual",
+       "caption": "Az oszloptranszformátor alakítja át a szállítási feszültséget háztartási szintre.",
+       "heading": "Oszloptranszformátor a környezetünkben",
+       "description": "Egy villanyoszlop tetején elhelyezett hengeres doboz (a transzformátor háza), amelyből egyik oldalon vastagabb (nagyfeszültségű), másik oldalon vékonyabb (kisfeszültségű) vezetékek indulnak a közeli házak felé.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A telefontöltőben lévő kis transzformátor alakítja át a hálózati feszültséget a készülék által igényelt, jóval kisebb értékre.",
+       "heading": "Telefontöltő belseje",
+       "description": "Egy adapter dobozának felnyitott rajza, belsejében egy kis transzformátor látható két tekerccsel, a bemeneti oldalon '230 V' felirat, a kimeneti oldalon '5 V' felirat.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "b88c50a0-566a-48f6-99a1-3b5f84340d10",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A ZBD-transzformátor elve nélkül ma nem tudnánk vezetékes elektromos hálózatot üzemeltetni: minden telefontöltő és laptoptöltő adapter belsejében ugyanez az elv alakítja át a hálózati 230 V-ot a készülék igényeihez.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 80,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "h": 80,
+          "w": 60,
+          "x": 100,
+          "y": 110,
+          "type": "coil",
+          "turns": 8
+         },
+         {
+          "h": 80,
+          "w": 60,
+          "x": 260,
+          "y": 110,
+          "type": "coil",
+          "turns": 4
+         },
+         {
+          "h": 20,
+          "w": 40,
+          "x": 30,
+          "y": 140,
+          "type": "battery"
+         },
+         {
+          "x": 130,
+          "y": 225,
+          "text": "primer tekercs",
+          "type": "label"
+         },
+         {
+          "x": 290,
+          "y": 225,
+          "text": "szekunder tekercs",
+          "type": "label"
+         },
+         {
+          "x": 200,
+          "y": 260,
+          "text": "vaskarika",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A magyar ZBD-transzformátor",
+       "discovery": "1885-ben három magyar mérnök, Déri Miksa, Bláthy Ottó Titusz és Zipernowsky Károly a Ganz gyárban kifejlesztette a zárt vasmagú transzformátort, amelyet kezdőbetűikről ZBD-transzformátornak neveznek. Találmányuk tette lehetővé, hogy az elektromos energiát hatékonyan, nagyfeszültségen lehessen szállítani, majd a fogyasztóknál biztonságos feszültségre alakítani – ez alapozta meg a mai villamosenergia-hálózatok működését.",
+       "try_basic": "Készíts egyszerű transzformátor-modellt: teker két különböző menetszámú szigetelt drótot egy vaskarikára, az egyiket kapcsold elemhez, a másikat egy LED-hez, és figyeld meg, mikor gyullad ki a LED (csak az áram be- vagy kikapcsolásának pillanatában, hiszen egyenárammal folyamatos indukció nincs).",
+       "try_advanced": "Mérd meg multiméterrel, hogyan változik a kimeneti feszültség, ha a szekunder tekercs menetszámát növeled vagy csökkented a primer tekercshez képest, és vesd össze az eredményt a menetszám-aránnyal."
+      }
+     ]
+    },
+    {
+     "block_id": "6e7d90cb-57d9-4df6-925c-aa50eaf5d455",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az elektromágneses indukción: a változó áram az egyik tekercsben feszültséget indukál a másikban",
+        "B) Kémiai reakción a két tekercs között",
+        "C) A tekercsek közötti súrlódáson",
+        "D) Kizárólag egyenárammal (DC) működik"
+       ],
+       "question": "Min alapul a transzformátor működése?",
+       "explanation": "A transzformátor a primer tekercs váltakozó árama által keltett változó mágneses mezőn keresztül, indukció útján hoz létre feszültséget a szekunder tekercsben.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mert nagyobb feszültség mellett kisebb az áramerősség, ami csökkenti a vezetékek hőveszteségét",
+        "B) Mert a nagyfeszültségű vezeték olcsóbb alapanyagból készül",
+        "C) Mert az erőművek kizárólag nagyfeszültséget képesek termelni",
+        "D) Mert így nincs szükség transzformátorokra"
+       ],
+       "question": "Miért szállítják nagyfeszültségen az elektromos energiát a távvezetékeken?",
+       "explanation": "Ugyanakkora teljesítmény nagyobb feszültségen kisebb áramerősséggel szállítható, ami csökkenti a vezetékben hővé alakuló, elveszett energiát.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A kimeneti feszültség megnő – ez a feltranszformálás",
+        "B) A kimeneti feszültség lecsökken",
+        "C) A menetszám nem befolyásolja a feszültséget",
+        "D) A transzformátor leáll"
+       ],
+       "question": "Mi történik, ha a szekunder tekercsen több a menet, mint a primer tekercsen?",
+       "explanation": "A transzformátor kimeneti feszültsége a menetszámok arányával nő vagy csökken; ha a szekunder oldalon több a menet, a feszültség nő.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Például a telefontöltőben és az utcai oszloptranszformátorban is",
+        "B) Kizárólag erőművekben",
+        "C) Csak internetes routerekben",
+        "D) Sehol a háztartásban, csak ipari környezetben"
+       ],
+       "question": "Hol találkozhatunk transzformátorral a mindennapokban?",
+       "explanation": "A transzformátorok a nagy erőművi berendezésektől kezdve egészen a telefontöltő belsejéig sokféle méretben megtalálhatók a mindennapi környezetünkben.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mert egyenáram esetén a mágneses mező állandó, változás híján nincs indukció",
+        "B) Mert az egyenáram túl gyenge ehhez",
+        "C) Valójában egyenárammal is pontosan ugyanúgy működik",
+        "D) Mert az egyenáram megrongálja a vasmagot"
+       ],
+       "question": "Miért nem működik a transzformátor egyenárammal (DC)?",
+       "explanation": "A transzformátor működéséhez folyamatosan változó mágneses mező kell, ezt csak a váltakozó áram (AC) biztosítja, az egyenáram (DC) állandó mágneses mezőt hoz létre.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "00b2402d-f7ee-4598-a74e-9214c0469866",
+   "title_hu": "Generátorok és motorok működése",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "31b558cc-fa62-4190-852d-27bfe923f076",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az elektromotor legegyszerűbb formájában egy forgó tekercsből (armatúrából) áll, amelyet állandó mágnes pólusai vesznek körül. A tekercs végei egy kommutátornak nevezett, forgó érintkezőhöz csatlakoznak, amely az áramot a külső áramkörből a forgó tekercsbe vezeti. Ez a felépítés teszi lehetővé, hogy a motor tengelye folyamatosan, egy irányba forogjon.",
+       "type": "text",
+       "heading": "Az elektromotor felépítése",
+       "key_term": "elektromotor"
+      },
+      {
+       "body": "Amikor a tekercsen áram folyik át, és a tekercs mágneses mezőben helyezkedik el, a vezetőre erő hat, amely forgatónyomatékot hoz létre a tengelyen. A kommutátor feladata, hogy a tekercs minden félfordulatánál megfordítsa az áram irányát, így az erő mindig ugyanabba a forgásirányba hat, és a tengely nem áll meg egy holtponton. Enélkül a tekercs csak egy adott helyzetig fordulna el, majd megállna.",
+       "type": "text",
+       "heading": "Az elektromotor működési elve",
+       "key_term": ""
+      },
+      {
+       "body": "A generátor és az elektromotor felépítése nagyon hasonló, csak az energia átalakításának iránya fordított: a generátorban mechanikai mozgásból elektromágneses indukció útján elektromos energia keletkezik, a motorban pedig elektromos energiából mágneses erőhatás révén mechanikai mozgás jön létre. Emiatt sok berendezés – megfelelő átalakítással – mindkét irányban működtethető: hol motorként, hol generátorként.",
+       "type": "text",
+       "heading": "A generátor és a motor kapcsolata",
+       "key_term": ""
+      },
+      {
+       "body": "Elektromotor működteti a mosógép dobját, a ventilátort, a mixert, az elektromos fogkefét és rengeteg más háztartási eszközt, valamint az elektromos autók és robogók kerekeit is. Generátor termeli az elektromos energiát az erőművekben, de kisebb formában megtalálható a kerékpáros vagy motoros túrázók hordozható áramfejlesztőjében is. A két eszköztípus a modern technika szinte minden területén jelen van.",
+       "type": "text",
+       "heading": "Motorok és generátorok a mindennapokban",
+       "key_term": ""
+      },
+      {
+       "body": "Jedlik Ányos magyar bencés szerzetes és fizikus már az 1820-as évek végén, 1830-as évek elején kísérletezett olyan elektromágneses forgó eszközökkel, amelyek a mai villanymotor és dinamó elvét előlegezték meg, jóval korábban, mint sok külföldi kortársa publikált eredményei. Megépítette az első ismert villamos motorkocsi modelljét is, amely elektromágneses erővel hajtott apró jármű volt. Munkássága fontos állomás a generátorok és motorok fejlődéstörténetében, bár felfedezéseit sokáig nem publikálta széles körben.",
+       "type": "text",
+       "heading": "Jedlik Ányos úttörő munkássága",
+       "key_term": ""
+      }
+     ]
+    },
+    {
+     "block_id": "681b2f36-2f38-41b4-ac1a-6477b186f21e",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A kommutátoron keresztül áram lép be a forgó tekercsbe. A tekercs éppen a mágnes pólusai közötti térben helyezkedik el, ahol erős mágneses mező uralkodik.",
+       "type": "story",
+       "heading": "Az áram belép a tekercsbe"
+      },
+      {
+       "body": "Az áramjárta tekercsvezetőre a mágneses mezőben erő hat: a tekercs egyik oldalára felfelé, a másik oldalára lefelé irányuló erő adódik, ez a két erő együtt forgatónyomatékot hoz létre a tengelyen.",
+       "type": "story",
+       "heading": "Erő ébred a vezetőn"
+      },
+      {
+       "body": "A forgatónyomaték hatására a tekercs elfordul a tengely körül. A fordulat közepén a tekercs pontosan párhuzamos lesz a mágneses mezővel, ahol a forgató hatás átmenetileg lecsökken.",
+       "type": "story",
+       "heading": "A tekercs elfordul"
+      },
+      {
+       "body": "A tekercs továbbfordul, és ebben a pillanatban a kommutátor érintkezői átváltanak, megfordítva az áram irányát a tekercsben. Enélkül a tekercs itt megállna, mert az erő iránya visszafordítaná.",
+       "type": "story",
+       "heading": "A kommutátor megfordítja az áramot"
+      },
+      {
+       "body": "A megfordult áramirány miatt az erő továbbra is ugyanabba a körforgási irányba hat, így a tengely folyamatosan tovább forog. Ez a ciklus – áram be, erő hat, kommutátor vált – ismétlődik minden egyes félfordulatnál, amíg az áramkör zárva van.",
+       "type": "story",
+       "heading": "A forgás folytatódik"
+      }
+     ]
+    },
+    {
+     "block_id": "188e24f3-418d-4518-9443-bd868f250c12",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az áramjárta tekercsre a mágneses mezőben ható erő forgatja meg a motor tengelyét.",
+       "heading": "Az elektromotor keresztmetszete",
+       "description": "Egy patkómágnes két pólusa (É bal, D jobb oldalon) között elhelyezett, forgástengelyre szerelt téglalap alakú tekercs, alul a kommutátor és a hozzá érő két rögzített érintkező (kefe) látható.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A jobbkéz-szabály szerint az áram és a mágneses mező iránya együtt szabja meg az erő irányát.",
+       "heading": "Az áram és az erő iránya",
+       "description": "A tekercs egyik szálán az áram irányát pont, a másikon kereszt jelöli (befelé/kifelé folyó áram), mindkét szál mellett nyíl mutatja a rá ható erő irányát – az egyik felfelé, a másik lefelé.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A kommutátor minden félfordulatnál megfordítja az áram irányát, hogy a forgás egy irányba folytatódjon.",
+       "heading": "A kommutátor működése",
+       "description": "Két félgyűrűből álló forgó korong (kommutátor), rajta két rögzített kefe, nyilakkal jelölve, hogy fél fordulatonként melyik félgyűrű érintkezik melyik kefével, ezáltal fordítva meg az áram irányát a tekercsben.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A motor és a generátor ugyanazt a felépítést használja, de ellentétes irányban alakítja át az energiát.",
+       "heading": "Motor és generátor összehasonlítása",
+       "description": "Két egymás melletti doboz: bal oldalt 'Motor' felirattal, bemenő nyíl 'elektromos energia', kimenő nyíl 'mozgási energia'; jobb oldalt 'Generátor' felirattal, bemenő nyíl 'mozgási energia', kimenő nyíl 'elektromos energia'.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Jedlik Ányos korai kísérletei a villanymotor és a dinamó elvét előlegezték meg.",
+       "heading": "Jedlik Ányos villamos motorkocsijának vázlata",
+       "description": "Egy egyszerű kis kocsi sziluettje, benne egy elektromágneses tekercs-elrendezéssel a kerekek hajtásához, mellette felirat: 'korai villamos motorkocsi-modell, 1820-as évek vége'.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "c259cb81-f78c-447b-a985-686b4edcd277",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A motor és a generátor kettős természete ma is jól látható: egy elektromos autó vagy robogó motorja hajtja a kerekeket, fékezéskor viszont ugyanaz az egység generátorként működik, és a mozgási energiát visszaalakítja elektromos energiává, amit az akkumulátorba tölt (rekuperációs fékezés).",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 100,
+          "w": 30,
+          "x": 60,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "h": 100,
+          "w": 30,
+          "x": 310,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 75,
+          "y": 90,
+          "text": "É",
+          "type": "label"
+         },
+         {
+          "x": 325,
+          "y": 90,
+          "text": "D",
+          "type": "label"
+         },
+         {
+          "h": 60,
+          "w": 100,
+          "x": 150,
+          "y": 120,
+          "type": "coil",
+          "turns": 5
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 180,
+          "y2": 230,
+          "type": "line"
+         },
+         {
+          "r": 10,
+          "x": 200,
+          "y": 240,
+          "type": "circle"
+         },
+         {
+          "x": 200,
+          "y": 268,
+          "text": "kommutátor",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Jedlik Ányos villamos motorkocsija",
+       "discovery": "Jedlik Ányos magyar fizikus az 1820-as évek végén, 1830-as évek elején elektromágneses elven működő forgó szerkezeteket épített, köztük egy villamos motorkocsi-modellt, amely a villanymotor elvét alkalmazta évekkel a nemzetközi szakirodalomban elterjedt hasonló publikációk előtt. Később a dinamó (önerjesztő generátor) elvét is kidolgozta, bár felfedezéseit sokáig nem publikálta széles körben, így az elsőbbség elismerése elmaradt.",
+       "try_basic": "Nézz meg egy hiteles oktatóvideót egyszerű egyenáramú motor építéséről, majd építs egyet rézdrótból tekercselt hurokkal, egy elemmel és egy mágnessel, és figyeld meg, mitől indul el és marad fenn a forgás.",
+       "try_advanced": "Építs erősebb elektromágnest a rendelkezésre álló eszközökből (több menet, vasmag, nagyobb áram), és teszteld, mekkora tömegű fémtárgyat képes megemelni – ez az elv áll az ipari elektromágneses emelők mögött is."
+      }
+     ]
+    },
+    {
+     "block_id": "4b7c76bf-4e09-4170-9510-a82cb8efec30",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az áramjárta tekercsre a mágneses mezőben erő hat, ami forgatónyomatékot hoz létre",
+        "B) A tekercs saját súlya miatt kezd el forogni",
+        "C) A hő okozza a tekercs elfordulását",
+        "D) Statikus elektromosság hajtja a forgást"
+       ],
+       "question": "Miért forog meg az elektromotor tekercse?",
+       "explanation": "A motor működésének alapja, hogy az áramjárta vezetőre mágneses mezőben erő hat, ez az erő hozza létre a forgatónyomatékot.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Minden félfordulatnál megfordítja az áram irányát a tekercsben, hogy a forgás folytatódjon",
+        "B) Növeli a mágnes erősségét",
+        "C) Lehűti a motor tekercsét",
+        "D) Méri a motor fordulatszámát"
+       ],
+       "question": "Mi a kommutátor szerepe az elektromotorban?",
+       "explanation": "A kommutátor nélkül a tekercs csak egy adott helyzetig fordulna el, majd megállna; az áram rendszeres irányváltása tartja fenn a folyamatos forgást.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A motor elektromos energiát mozgási energiává, a generátor mozgási energiát elektromos energiává alakít",
+        "B) Mindkettő kizárólag hőt termel",
+        "C) A generátor mozgási energiát fénnyé alakít",
+        "D) A motor és a generátor energiaátalakítása pontosan azonos irányú"
+       ],
+       "question": "Miben tér el egymástól a motor és a generátor energiaátalakítása?",
+       "explanation": "A motor és a generátor felépítése hasonló, de az energiaátalakítás iránya ellentétes: az egyik elektromosból mozgást, a másik mozgásból elektromosat állít elő.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Áram a tekercsben és mágneses mező egyszerre",
+        "B) Kizárólag mágneses mező, áram nélkül",
+        "C) Kizárólag áram, mágneses mező nélkül",
+        "D) Csak megfelelően magas hőmérséklet"
+       ],
+       "question": "Mi szükséges ahhoz, hogy egy elektromotor tekercsére forgató erő hasson?",
+       "explanation": "A motorban ható erő csak akkor jön létre, ha a tekercsben áram folyik, és ez a tekercs egyidejűleg mágneses mezőben van.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Magyar tudós, aki már az 1820-as évek végén villanymotor- és dinamóelvű szerkezeteket épített",
+        "B) Ő fedezte fel elsőként a transzformátor elvét Angliában",
+        "C) Amerikai feltaláló volt, aki az izzólámpát fejlesztette",
+        "D) Ő építette Magyarország első vasútvonalát"
+       ],
+       "question": "Mi Jedlik Ányos jelentősége a generátorok és motorok történetében?",
+       "explanation": "Jedlik Ányos magyar fizikus korán kísérletezett elektromágneses forgó szerkezetekkel, köztük egy villamos motorkocsi-modellel, amelyek a mai motorok és dinamók elvét előlegezték meg.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "487ba7cc-6ec8-48c1-a460-6ea6d23674a7",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Több tekercsmenettől és nagyobb áramerősségtől, valamint vasmag jelenlététől",
+      "B) Kevesebb menettől és kisebb áramtól",
+      "C) Kizárólag a drót színétől",
+      "D) A vasmag eltávolításától"
+     ],
+     "question": "Mitől lesz erősebb egy elektromágnes?",
+     "explanation": "Az elektromágnes ereje a menetszám és az áramerősség növelésével, valamint vasmag alkalmazásával nő.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az áramjárta vezetőre mágneses mezőben ható erő",
+      "B) A tekercs felmelegedése és tágulása",
+      "C) A mágnes súlyának hatása",
+      "D) A statikus elektromos töltés taszítása"
+     ],
+     "question": "Mi az elektromotor forgásának fizikai alapja?",
+     "explanation": "A motor forgása azon alapul, hogy a mágneses mezőben lévő áramjárta vezetőre erő hat, ez hozza létre a forgatónyomatékot.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az elektromágneses indukció jelenségét",
+      "B) A transzformátor elvét Magyarországon",
+      "C) Az elektron létezését",
+      "D) A váltakozó áram fogalmát elsőként Amerikában"
+     ],
+     "question": "Mit fedezett fel Michael Faraday 1831-ben?",
+     "explanation": "Faraday kísérletileg igazolta, hogy a változó mágneses mező feszültséget indukál egy közeli vezetőben – ez az elektromágneses indukció.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A generátor forgó tekercse a mágneses mezőben periodikusan változó irányú, azaz váltakozó áramot termel",
+      "B) A generátor mindig csak egyenáramot (DC) termel",
+      "C) A generátornak semmi köze az áram irányához",
+      "D) A generátor kizárólag hőt termel, áramot nem"
+     ],
+     "question": "Milyen kapcsolat van a generátor és a váltakozó áram (AC) között?",
+     "explanation": "A generátorban forgó tekercs miatt a keltett feszültség és áram iránya rendszeresen megfordul, ez adja a váltakozó áramot.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Mert egyenáram esetén a mágneses mező nem változik, indukció nélkül nincs feszültségátalakítás",
+      "B) Mert az egyenáram túl gyenge a vasmag mágnesezéséhez",
+      "C) Valójában a transzformátor egyenárammal is ugyanúgy működik",
+      "D) Mert az egyenáram megolvasztja a vasmagot"
+     ],
+     "question": "Miért nem működik a transzformátor egyenárammal (DC)?",
+     "explanation": "A transzformátor működéséhez folyamatosan változó mágneses mező szükséges, ezt csak a váltakozó áram biztosítja.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Mert nagyobb feszültség mellett kisebb áramerősség elég, ami csökkenti a vezetékek hőveszteségét",
+      "B) Mert a nagyfeszültségű vezeték olcsóbb",
+      "C) Mert így nincs szükség generátorra",
+      "D) Mert a nagyfeszültség meggátolja az áramütést"
+     ],
+     "question": "Miért szállítják nagyfeszültségen az elektromos energiát a távvezetékeken?",
+     "explanation": "Ugyanakkora teljesítmény nagyobb feszültségen kisebb áramerősséggel vihető át, ez csökkenti a vezetékben hővé alakuló veszteséget.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Minden félfordulatnál megfordítja a tekercsben folyó áram irányát, hogy a forgás folyamatos maradjon",
+      "B) Megnöveli a mágnes erősségét",
+      "C) Csökkenti a motor fordulatszámát",
+      "D) Kizárólag hűti a motort"
+     ],
+     "question": "Mi a kommutátor feladata az elektromotorban?",
+     "explanation": "A kommutátor rendszeres áramirány-váltása biztosítja, hogy az erő mindig ugyanabba az irányba forgassa a tekercset.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Magyar tudós, aki már az 1820-as évek végén villanymotor- és dinamóelvű szerkezeteket épített",
+      "B) Ő fedezte fel a transzformátor elvét Angliában",
+      "C) Amerikai feltaláló, aki az izzólámpát fejlesztette ki",
+      "D) Ő vezette be a nemzetközi mértékegységrendszert"
+     ],
+     "question": "Mi Jedlik Ányos jelentősége a fizika történetében?",
+     "explanation": "Jedlik Ányos magyar fizikus korán kísérletezett elektromágneses forgó szerkezetekkel, amelyek a mai motorok és generátorok elvét előlegezték meg.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1229 @@
+{
+ "nat_id": "PHYS-910-06",
+ "topic_id": "c076a55e-004f-4760-9342-1a96726ae354",
+ "title_hu": "Víz és levegő a környezetünkben",
+ "grade": 9,
+ "lessons": [
+  {
+   "lesson_id": "411ef50a-a219-4a2f-a214-a4b9526c8ef0",
+   "title_hu": "Légnyomás és időjárás",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "313eb94d-076a-405f-b562-c50266e7d277",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A légnyomás (atmoszféra nyomás) megismeréséhez egy egyszerű kísérletet végezhetünk. Vegyünk egy üvegpoharat, és töltsük meg vízzel. Ezután tegyünk egy papírlapot a pohár tetejére, majd óvatosan fordítsuk meg. Ha a papírlapot nem engedjük el, a víz nem folyik ki, mert a légnyomás a papírlap alatt tartja a vizet. Ez a jelenség jól mutatja, hogy a levegő nyomása képes ellenállni a gravitációnak.",
+       "type": "text",
+       "heading": "A légnyomás kísérleti kimutatása",
+       "key_term": "légnyomás"
+      },
+      {
+       "body": "A légritkított tér (vákuum) számos modern technológiában megtalálható. Például a vákuumcsomagolás során az élelmiszer tartósabbá válik, mivel a levegő eltávolítása csökkenti az oxidációt. Továbbá a vákuumos szigetelés is elterjedt, hiszen a légritkított tér kiváló hőszigetelő, így energiatakarékosabbá teszi az épületeket.",
+       "type": "text",
+       "heading": "A légritkított tér gyakorlati alkalmazásai",
+       "key_term": "légritkított tér"
+      },
+      {
+       "body": "A légnyomás változása szoros kapcsolatban áll az időjárás alakulásával. Magas légnyomás esetén általában derült, napos idő várható, míg alacsony légnyomás esetén felhők és csapadék alakulhat ki. Ezt a jelenséget a meteorológusok folyamatosan figyelik, hogy előre jelezzék az időjárási viszonyokat, például egy közelgő esőfrontot.",
+       "type": "text",
+       "heading": "Időjárás és légnyomás kapcsolata",
+       "key_term": "időjárás"
+      },
+      {
+       "body": "Az iskola fűtési rendszerének működése is összefügg a légnyomással. A fűtési rendszerben a meleg levegő felfelé áramlik, míg a hideg levegő lesüllyed. A fűtési rendszer elemei, mint a radiátorok és a cirkulációs szivattyúk, segítik a levegő keringését, így biztosítva a megfelelő hőmérsékletet az osztálytermekben. Az iskola fűtési rendszerének megtekintése segíthet megérteni, hogyan működik ez a folyamat a gyakorlatban.",
+       "type": "text",
+       "heading": "Fűtési rendszerek és légnyomás",
+       "key_term": "fűtési rendszer"
+      },
+      {
+       "body": "A szoba hőmérsékletének mérése fontos a komfortérzet szempontjából. Használhatunk hőmérőt, amivel figyelemmel kísérhetjük a hőmérséklet változását fűtés és szellőztetés közben. Az adatok rögzítése és megjelenítése segít megérteni, hogy a szellőztetés hogyan befolyásolja a szoba hőmérsékletét, és mikor érdemes fűteni vagy szellőztetni.",
+       "type": "text",
+       "heading": "Hőmérsékletmérés fűtés és szellőztetés közben",
+       "key_term": "hőmérsékletmérés"
+      }
+     ]
+    },
+    {
+     "block_id": "3739ca60-db63-45a4-b75f-d77a23937f9b",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzelj el egy napot, amikor valaki egy hőmérőt tart a kezében, és a szobában lévő levegő hőmérsékletét méri. A hőmérő pontos adatokat ad, de a környezeti tényezők, mint a légnyomás, szintén befolyásolják a hőérzetet. A hőmérő mellett egy üvegpalackot is észrevesz, amelybe egy kis víz van. Ahogy a palackot felforrósítják, a víz gőzzé alakul, és a nyomás megemelkedik, ami azt jelenti, hogy a légnyomás kísérleti kimutatása sikerült.",
+       "type": "story",
+       "heading": "A légnyomás kísérleti kimutatása"
+      },
+      {
+       "body": "Most képzelj el egy szellőztetést, amikor valaki kinyitja az ablakot, és a friss levegő betódul a szobába. A légnyomás különbsége miatt a friss levegő gyorsan kiszorítja a melegebb, belső levegőt. Ezt a jelenséget kihasználják a modern fűtési rendszerekben, ahol a légritkított tér segít a hatékonyabb hőcserében. A fűtési rendszer működése során a légnyomás variációi lehetővé teszik, hogy a meleg levegő gyorsabban terjedjen el a helyiségben.",
+       "type": "story",
+       "heading": "A légritkított tér alkalmazása"
+      },
+      {
+       "body": "Ahogy a fűtési rendszer működik, a levegő hőmérséklete és a légnyomás folyamatosan változik. Ez a változás befolyásolja az időjárást is. Például, amikor a légnyomás csökken, esőre vagy viharokra lehet számítani. Egy meteorológus figyeli a légnyomást, és előrejelzéseket készít az időjárásról, amely segíthet a mindennapi döntésekben, például abban, hogy érdemes-e esernyőt hozni.",
+       "type": "story",
+       "heading": "Időjárás és légnyomás kapcsolata"
+      },
+      {
+       "body": "A következő lépésben valaki automatikus adatgyűjtő rendszert használ, hogy folyamatosan mérje a szoba hőmérsékletét a fűtés és szellőztetés alatt. Az adatokat valós időben rögzítik, és a grafikonokon jól látható, hogyan változik a hőmérséklet a légnyomás hatására. Ezek az adatok segítenek jobban megérteni, hogyan befolyásolja a légnyomás az időjárást és a belső klímát.",
+       "type": "story",
+       "heading": "Hőmérséklet mérése fűtés és szellőztetés közben"
+      },
+      {
+       "body": "Végül a mért adatokat egy digitális felületen megjelenítik, ahol bárki nyomon követheti a hőmérséklet és a légnyomás változásait. Ez a tudás nemcsak a diákok, hanem a szülők számára is hasznos, hiszen segít megérteni, hogy a légnyomás és az időjárás hogyan hat a mindennapi életünkre. Az információk megosztása ösztönzi a közösségi beszélgetéseket az időjárásról és a környezeti hatásokról.",
+       "type": "story",
+       "heading": "Az adatok megjelenítése és megosztása"
+      }
+     ]
+    },
+    {
+     "block_id": "59ac53f9-3bcd-40bd-af84-1121c35e5485",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A légnyomás megakadályozza, hogy a víz kifolyt a papírlap alatt.",
+       "heading": "Légnyomás kísérleti kimutatása",
+       "description": "Egy egyszerű kísérlet bemutatása, ahol egy vízzel teli edényt borítunk be egy papírlappal, majd felfordítjuk. A papírlap a víz felszínén marad, ami a légnyomás hatását szemlélteti.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A légritkított tér alkalmazása az élelmiszerek tartósításában.",
+       "heading": "Légritkított tér alkalmazásai",
+       "description": "A légritkított tér működésének vázlata, például egy vákuumcsomagoló gép, amelyben a levegőt eltávolítják az élelmiszer körül, így megakadályozva a romlást.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A légnyomás változása és az időjárás összefüggése.",
+       "heading": "Légnyomás és időjárás kapcsolata",
+       "description": "Egy grafikon, amely a légnyomás változását mutatja az időjárási frontok közeledtével. A csökkenő légnyomás esőt, míg a növekvő légnyomás napos időt jelez.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A fűtési rendszer elemei és azok működése.",
+       "heading": "Fűtési rendszer elemei",
+       "description": "Egy keresztmetszeti ábra az iskola fűtési rendszeréről, amely bemutatja a kazánt, a radiátorokat és a csöveket, valamint az egyes elemek szerepét a hőszabályozásban.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A hőmérséklet változása fűtés és szellőztetés hatására.",
+       "heading": "Hőmérséklet mérése fűtés és szellőztetés közben",
+       "description": "Egy grafikon, amely a szoba hőmérsékletének változását mutatja a fűtés és a szellőztetés során, bemutatva, hogy mikor emelkedik vagy csökken a hőmérséklet.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az időjárás főbb elemei és azok összefüggése.",
+       "heading": "Időjárás fogalma",
+       "description": "Egy kördiagram, amely az időjárás különböző elemeit mutatja be, mint például hőmérséklet, csapadék, szél és páratartalom.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "a8d6f35d-d304-4d4f-8946-a633032a4775",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A légnyomás mérése ma is fontos az időjárás előrejelzésében, amit a meteorológiai állomások végeznek. A diákok találkozhatnak ezzel a jelenséggel, amikor az időjárás-előrejelzéseket követik.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 200,
+          "w": 50,
+          "x": 50,
+          "y": 50,
+          "type": "box"
+         },
+         {
+          "x": 55,
+          "y": 40,
+          "text": "Higany",
+          "type": "label"
+         },
+         {
+          "x1": 100,
+          "x2": 200,
+          "y1": 150,
+          "y2": 150,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x": 120,
+          "y": 160,
+          "text": "Légnyomás",
+          "type": "label"
+         },
+         {
+          "r": 30,
+          "x": 300,
+          "y": 100,
+          "type": "circle"
+         },
+         {
+          "x": 290,
+          "y": 95,
+          "text": "Napsütés",
+          "type": "label"
+         },
+         {
+          "x1": 300,
+          "x2": 300,
+          "y1": 130,
+          "y2": 200,
+          "type": "arrow"
+         },
+         {
+          "x": 310,
+          "y": 160,
+          "text": "Eső",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Légnyomás és időjárás",
+       "discovery": "A légnyomás felfedezéséhez kapcsolódóan Torricelli 1644-ben készítette el az első higanyos barométert, amely lehetővé tette a légnyomás mérését és az időjárás előrejelzését. Torricelli azt próbálta megérteni, hogy miért változik a levegő nyomása, és hogyan befolyásolja az időjárási jelenségeket.",
+       "try_basic": "Készítsünk egy egyszerű barométert: egy üvegpalackba töltsünk egy kis mennyiségű vizet, majd fedjük le a palack száját egy lufival. Figyeljük meg, hogyan változik a víz szintje, amikor a lufit megnyomjuk vagy kiengedjük a levegőt!",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "850a4047-976e-4d83-aef2-67d1743da9ae",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A levegő súlya által kifejtett nyomás",
+        "B) A víz hőmérséklete",
+        "C) A levegő részecskéinek sebessége",
+        "D) A Föld gravitációs ereje"
+       ],
+       "question": "Mi a légnyomás (p)?",
+       "explanation": "A légnyomás a levegő súlya által kifejtett nyomás, amit a levegő molekulái gyakorolnak a Föld felszínére.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Barométer",
+        "B) Hőmérő",
+        "C) Anemométer",
+        "D) Higrométer"
+       ],
+       "question": "Melyik eszköz mér légnyomást?",
+       "explanation": "A barométer az eszköz, amely a légnyomás mérésére szolgál, és segít az időjárási viszonyok előrejelzésében.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Magas légnyomás száraz, tiszta időt jelez",
+        "B) Alacsony légnyomás mindig esőt hoz",
+        "C) A légnyomás nem hat az időjárásra",
+        "D) Magas légnyomás felhős időt okoz"
+       ],
+       "question": "Hogyan befolyásolja a légnyomás az időjárást?",
+       "explanation": "A magas légnyomás általában száraz, tiszta időt jelez, míg az alacsony légnyomás gyakran esős időjárást eredményez.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Nehezebben lélegeznek",
+        "B) Növeli az oxigén szintjét",
+        "C) Csökkenti a hőmérsékletet",
+        "D) Növeli a légnyomást"
+       ],
+       "question": "Milyen hatással van a légritkított tér az emberi szervezetre?",
+       "explanation": "A légritkított térben az oxigén mennyisége csökken, ami miatt az emberek nehezebben lélegeznek.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Időjárási frontok kialakulása",
+        "B) A víz fagyása",
+        "C) A fénysebesség változása",
+        "D) A légkör hőmérsékletének állandósága"
+       ],
+       "question": "Milyen jelenség figyelhető meg a légnyomás változásakor?",
+       "explanation": "A légnyomás változása időjárási frontok kialakulásához vezet, amelyek hatással vannak az időjárásra.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "a1024961-9786-4ebd-85c0-be11cba79ac6",
+   "title_hu": "Páratartalom és páraképződés",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "a5ea82db-f91d-4d56-ab00-2dbcdb342cd0",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az abszolút páratartalom (g/m³) a levegőben lévő vízgőz mennyiségét mutatja meg, míg a relatív páratartalom (%) a levegőben lévő vízgőz mennyiségét a maximálisan elérhető mennyiséghez viszonyítja. Például, ha a levegő 20 °C-on 10 g vízgőzt tartalmaz, de a maximális kapacitás 20 g, akkor a relatív páratartalom 50%. Ez a mutató segít megérteni, hogy mennyire nedves vagy száraz a levegő, ami befolyásolja a közérzetünket.",
+       "type": "text",
+       "heading": "Mi az abszolút és relatív páratartalom?",
+       "key_term": "relatív páratartalom"
+      },
+      {
+       "body": "A hőmérséklet emelkedésével a levegő maximális vízgőz kapacitása is nő, ami a relatív páratartalom csökkenését eredményezi, ha a vízgőz mennyisége nem változik. Gondoljunk csak a nyári hőségre: amikor 30 °C van, a levegő sokkal szárazabbnak tűnik, mint egy 20 °C-os, párásabb napon. Ezért fontos figyelni a páratartalomra, különösen a hőségben, mert a testünk hűtése nehezebbé válik.",
+       "type": "text",
+       "heading": "A hőmérséklet és a relatív páratartalom kapcsolata",
+       "key_term": "relatív páratartalom"
+      },
+      {
+       "body": "A harmatképződés akkor következik be, amikor a levegő lehűl, és a benne lévő vízgőz kicsapódik. Ez gyakran reggel tapasztalható, amikor a fű vagy a kocsik teteje vizes lesz. A harmatcseppek a levegő hőmérsékletének csökkenésével alakulnak ki, és ez az egyik természetes módja a páraképződésnek. A harmat fontos szerepet játszik a növények vízellátásában is.",
+       "type": "text",
+       "heading": "Páraképződés a természetben: harmatképződés",
+       "key_term": "harmatképződés"
+      },
+      {
+       "body": "A dér (jégkristályok) és a zúzmara (jégkristályok a felületeken) a levegő hőmérsékletének csökkenésekor alakul ki, amikor a levegő relatív páratartalma 100% körüli értéket ér el. Például, ha egy hideg téli éjszakán a levegő hűvös, a fűre és az autók ablakára dér képződhet. Ez a jelenség a téli táj szépségét is fokozza, de figyelni kell a csúszós utakra is.",
+       "type": "text",
+       "heading": "Dér és zúzmara",
+       "key_term": "dér, zúzmara"
+      },
+      {
+       "body": "A lakásban a páraképződés leggyakoribb helyei a fürdőszoba és a konyha, ahol főzés vagy zuhanyzás közben sok vízgőz keletkezik. Ha a szellőzés nem megfelelő, a falak nedvesedhetnek, ami penészedéshez vezethet. Érdemes szellőztetni, vagy párátlanítót használni, hogy elkerüljük ezeket a problémákat, és megőrizzük a lakásunk egészségét.",
+       "type": "text",
+       "heading": "Páraképződés a lakásban",
+       "key_term": "páraképződés"
+      },
+      {
+       "body": "A fűtési rendszerek, mint például a radiátorok, szintén befolyásolják a lakás páratartalmát. A meleg levegő kiszáríthatja a szobát, így a relatív páratartalom csökken. Ezért télen érdemes odafigyelni a megfelelő páratartalom fenntartására, például vízgyűjtő tálcák elhelyezésével a radiátorok közelében vagy párásító használatával. Így elkerülhetjük a száraz levegő okozta kellemetlenségeket.",
+       "type": "text",
+       "heading": "Fűtési rendszerek és páratartalom",
+       "key_term": "fűtési rendszerek"
+      },
+      {
+       "body": "A nyári melegben a száraz levegő sokkal kellemesebb érzést kelt, mint a párás, forró idő. Érdemes kipróbálni a szaunát, ahol a magas hőmérséklet és a páratartalom kombinációja különleges élményt nyújt. A testünk érzései eltérnek a két környezetben: a száraz melegben könnyebben hűlünk, míg a nedves melegben sokkal fárasztóbb lehet a mozgás. Ezért fontos ismerni a páratartalom hatásait.",
+       "type": "text",
+       "heading": "Tapasztalatok a páratartalommal",
+       "key_term": "páratartalom"
+      }
+     ]
+    },
+    {
+     "block_id": "657f4374-cb6f-4a8f-8072-8dff2b4ecc36",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal a nyári melegben a szobájában ül, ahol a napfény átsüt a függönyön. A szobában a hőmérséklet emelkedik, és a levegő képes több vízgőzt tartani. A levegő abszolút páratartalma (a levegőben lévő vízgőz mennyisége) nem változik, de a relatív páratartalom (a levegőben lévő vízgőz mennyisége a maximális mennyiséghez viszonyítva) csökken, mivel a meleg levegő több nedvességet tud elnyelni.",
+       "type": "story",
+       "heading": "A levegő melegedése"
+      },
+      {
+       "body": "Ahogy a nap lemegy, a szoba hőmérséklete csökken. A levegő nem tudja már megtartani a vízgőzt, és a relatív páratartalom eléri a 100%-ot. Ekkor a vízgőz kicsapódik, és harmat képződik a szoba ablakán. Ez a jelenség jól szemlélteti, hogyan hat a hőmérséklet a páraképződésre.",
+       "type": "story",
+       "heading": "Harmatképződés"
+      },
+      {
+       "body": "Ha a hőmérséklet még tovább csökken, a harmat fagyásnak indul, és dér képződik. Esetenként a levegőben lévő vízgőz közvetlenül jégkristályokká alakul, amit zúzmarának hívunk. Ez a természetben gyakran előfordul, különösen télen, amikor a levegő hideg és a páratartalom magas.",
+       "type": "story",
+       "heading": "Dér és zúzmara"
+      },
+      {
+       "body": "A fiatal észreveszi, hogy a fürdőszobában, amikor fürdik, a tükör bepárásodik. A meleg víz gőzölög, és a levegő páratartalma hirtelen megnő. A fürdőszobában a relatív páratartalom emelkedik, és a vízgőz kicsapódik a hideg felületeken, mint a tükör. Ez a jelenség mindennapos a lakásokban, különösen a vizes helyiségekben.",
+       "type": "story",
+       "heading": "Páraképződés a lakásban"
+      },
+      {
+       "body": "A fiatal észleli, hogy télen, amikor a fűtés be van kapcsolva, a levegő szárazabbá válik. A fűtési rendszer felmelegíti a levegőt, de nem ad hozzá nedvességet, így a relatív páratartalom csökken. Ezért fontos, hogy a fűtési időszakban figyeljünk a páratartalomra, és szükség esetén párásítót használjunk a megfelelő komfortérzet érdekében.",
+       "type": "story",
+       "heading": "Fűtési rendszerek hatása"
+      }
+     ]
+    },
+    {
+     "block_id": "13f6161f-d04b-4974-8609-ba69d7edb276",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az abszolút és relatív páratartalom kapcsolata",
+       "heading": "Abszolút és relatív páratartalom",
+       "description": "Egy diagram, amely bemutatja az abszolút páratartalom (g/m³) és a relatív páratartalom (%) közötti kapcsolatot. Az abszolút páratartalom a levegőben lévő vízgőz mennyiségét mutatja, míg a relatív páratartalom a levegőben lévő vízgőz tényleges mennyiségét a maximálisan lehetséges mennyiséghez viszonyítja az adott hőmérsékleten.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A hőmérséklet hatása a relatív páratartalomra",
+       "heading": "Relatív páratartalom és hőmérséklet kapcsolata",
+       "description": "Egy grafikon, amely a hőmérséklet (°C) és a relatív páratartalom (%) közötti összefüggést mutatja. A grafikonon látható, hogy a hőmérséklet emelkedésével a relatív páratartalom csökken, míg a hőmérséklet csökkenésével a relatív páratartalom nő.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A harmatképződés folyamata",
+       "heading": "Harmatképződés",
+       "description": "Egy keresztmetszet, amely bemutatja a harmatképződés folyamatát. Az ábrán látható, ahogy a levegő hűl, és a vízgőz kicsapódik, cseppekké alakulva, amelyek a fűre és a levelekre rakódnak le.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Dér és zúzmara a természetben",
+       "heading": "Dér és zúzmara",
+       "description": "Egy fotó, amely a dér és a zúzmara képződését mutatja be. A képen a dér a fűszálakon és a leveleken látható, míg a zúzmara a fák ágain és a felületeken képződik, amikor a levegő nagyon hideg.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "Páraképződés a lakásban",
+       "heading": "Páraképződés a lakásban",
+       "description": "Egy vázlat, amely bemutatja a lakás különböző helyiségeit (konyha, fürdőszoba, nappali), ahol a páraképződés gyakori. A vázlaton jelölve van, hogy hol keletkezik a legtöbb párásodás, például főzés vagy fürdés közben.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Fűtési rendszerek és páratartalom",
+       "heading": "Fűtési rendszerek hatása a páratartalomra",
+       "description": "Egy diagram, amely bemutatja a különböző fűtési rendszerek (pl. radiátor, padlófűtés) hatását a lakás páratartalmára. A diagramon látható, hogy a fűtés hogyan csökkenti a levegő relatív páratartalmát, ha nem biztosítunk megfelelő szellőzést.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Száraz és nedves meleg tapasztalata",
+       "heading": "Száraz és nedves meleg tapasztalata",
+       "description": "Egy fotó, amely a nyári szárazságban és a szaunában való tartózkodás közötti különbséget mutatja be. A képen a száraz meleg a napfényben, míg a nedves meleg a szaunában, ahol a páratartalom magas.",
+       "visual_type": "fotó"
+      }
+     ]
+    },
+    {
+     "block_id": "11ab9bf7-5042-4991-b619-c858c57633ab",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A páratartalom mérése és szabályozása a modern klímaberendezésekben és párásítókban elengedhetetlen, hogy komfortos környezetet biztosítsunk otthonunkban vagy munkahelyünkön.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 150,
+          "w": 300,
+          "x": 50,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 160,
+          "y": 150,
+          "text": "Levegő",
+          "type": "label"
+         },
+         {
+          "r": 40,
+          "x": 200,
+          "y": 80,
+          "type": "circle"
+         },
+         {
+          "x": 200,
+          "y": 70,
+          "text": "Hőmérséklet",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 120,
+          "y2": 100,
+          "type": "arrow"
+         },
+         {
+          "x": 220,
+          "y": 110,
+          "text": "Páraképződés",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Páraképződés a mindennapokban",
+       "discovery": "A páraképződés jelenségét a 17. században Robert Boyle tanulmányozta, aki a gázok viselkedését kutatta. Boyle törvénye alapján a gázok térfogatának és nyomásának viszonyát vizsgálta, amely segített megérteni a páratartalom és a levegő közötti összefüggéseket. Ekkoriban a tudósok már tudták, hogy a levegő képes vízgőzt tartalmazni, és ennek mennyisége befolyásolja a levegő páratartalmát.",
+       "try_basic": "Egy egyszerű kísérlet: Vegyünk egy pohár hideg vizet, és tegyük a hűtőbe. Figyeljük meg, hogy a pohár külső felületén vízcseppek keletkeznek, ahogy a vízgőz kicsapódik a hideg felületen.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "8849faa3-0fd3-4bc7-bcf6-2efb2b42ce5d",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A levegőben lévő vízgőz tömege egy köbméter levegőre vonatkoztatva.",
+        "B) A levegő hőmérséklete.",
+        "C) A levegő relatív páratartalma.",
+        "D) A vízgőz koncentrációja a levegőben."
+       ],
+       "question": "Mi az abszolút páratartalom?",
+       "explanation": "Az abszolút páratartalom a levegőben lévő vízgőz tömegét jelenti egy köbméter levegőre vonatkoztatva.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A levegő vízgőz tartalmának és a maximálisan lehetséges vízgőz tartalom aránya.",
+        "B) A levegő hőmérséklete.",
+        "C) A vízgőz sűrűsége a levegőben.",
+        "D) A vízgőz térfogata a levegőben."
+       ],
+       "question": "Mi a relatív páratartalom?",
+       "explanation": "A relatív páratartalom a levegő vízgőz tartalmának és a maximálisan lehetséges vízgőz tartalom arányát fejezi ki, százalékban.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A magasabb hőmérséklet csökkenti a relatív páratartalmat.",
+        "B) A magasabb hőmérséklet növeli a relatív páratartalmat.",
+        "C) A hőmérséklet nem befolyásolja a relatív páratartalmat.",
+        "D) A magasabb hőmérséklet állandó relatív páratartalmat eredményez."
+       ],
+       "question": "Hogyan befolyásolja a hőmérséklet a relatív páratartalmat?",
+       "explanation": "A magasabb hőmérséklet lehetővé teszi, hogy a levegő több vízgőzt tartalmazzon, így a relatív páratartalom csökken, ha a vízgőz mennyisége nem változik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A levegőben lévő vízgőz lecsapódása a hűvös felületeken.",
+        "B) A vízgőz fagyása a levegőben.",
+        "C) A vízgőz elpárolgása a levegőből.",
+        "D) A levegő páratartalmának növekedése."
+       ],
+       "question": "Melyik jelenség a harmatképződés?",
+       "explanation": "A harmatképződés során a levegőben lévő vízgőz lecsapódik a hűvös felületeken, cseppeket képezve.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Penészesedés és kellemetlen szagok megjelenése.",
+        "B) A levegő tisztulása.",
+        "C) A hőmérséklet csökkenése.",
+        "D) A levegő szárazsága."
+       ],
+       "question": "Mi lehet a következménye a túl magas páratartalomnak a lakásban?",
+       "explanation": "A túl magas páratartalom penészesedést és kellemetlen szagok megjelenését okozhat a lakásban.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "3388c59c-4df8-405a-a571-35ddd3488850",
+   "title_hu": "Hőterjedés és hőszigetelés",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "75ca69b6-4668-431e-96b4-b5a090f2f845",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A hővezetés során a hőenergia a magasabb hőmérsékletű területekről az alacsonyabb hőmérsékletű területek felé áramlik. Ez a jelenség jól megfigyelhető, amikor fém kanalat teszünk egy forró levesbe; a kanál végén hamarosan érezni fogjuk a hőt. A fémek, mint például az alumínium és a réz, kiváló hővezetők, míg a fa vagy a műanyag sokkal gyengébben vezeti a hőt. Éppen ezért az edények fogantyúját gyakran műanyagból készítik, hogy elkerüljük a leégést.",
+       "type": "text",
+       "heading": "A hővezetés (hővezetés) jelensége",
+       "key_term": "hővezetés"
+      },
+      {
+       "body": "A hőáramlás a levegő mozgásával összefüggő hőátadást jelenti. Amikor a fűtőtest mellett ülünk, érezhetjük, hogy a meleg levegő felfelé száll, míg a hideg levegő lejjebb marad. Ez a jelenség különösen fontos télen, amikor a fűtés hatékonyságát befolyásolja. A jól szigetelt lakásokban a hőáramlás minimalizálható, így a fűtés költsége is csökken.",
+       "type": "text",
+       "heading": "Hőáramlás (hőáramlás) a lakásban",
+       "key_term": "hőáramlás"
+      },
+      {
+       "body": "A hősugárzás az a folyamat, amikor a hőenergia elektromágneses hullámok formájában terjed. A napfény például hősugárzás formájában érkezik a Földre, felmelegítve a levegőt és a felületeket. Ezt a jelenséget használják a napelemek is, amelyek a napfényből elektromos áramot termelnek. A hősugárzás fontos szerepet játszik a lakások fűtésében is, amikor a napfény behatol az ablakokon.",
+       "type": "text",
+       "heading": "Hősugárzás (hősugárzás) és a napfény",
+       "key_term": "hősugárzás"
+      },
+      {
+       "body": "A hőszigetelés azt jelenti, hogy megakadályozzuk a hőenergia távozását a lakásból. A leggyakoribb módszerek közé tartozik a falak, tetők és ablakok szigetelése. Például, ha a falainkat szigeteljük, kevesebb hőt veszíthetünk télen, így csökkenthetjük a fűtés költségeit. A megfelelő szigetelés nemcsak a hőmérsékletet stabilizálja, hanem a komfortérzetünket is javítja.",
+       "type": "text",
+       "heading": "Hőszigetelés lehetőségei a lakásban",
+       "key_term": "hőszigetelés"
+      },
+      {
+       "body": "A hőszigetelt ablakok általában dupla üvegezésűek, ami azt jelenti, hogy két üveg között levegő vagy gáz található. Ez a réteg megakadályozza a hőáramlást, így a meleg levegő nem tud távozni télen, és a nyári hőség sem tud bejutni. Az ilyen ablakok használata jelentősen csökkentheti a fűtési és hűtési költségeket, így környezetbarátabb megoldást nyújtanak.",
+       "type": "text",
+       "heading": "A hőszigetelt ablak működése",
+       "key_term": "hőszigetelt ablak"
+      },
+      {
+       "body": "Egy egyszerű kísérlet során összehasonlíthatjuk a hőszigetelt edényt (termoszt) és egy sima üvegedényt. Töltsünk mindkettőbe forró vizet, és mérjük meg, mennyi idő alatt hűlnek le. A termosz sokkal lassabban veszíti el a hőt, mint az üvegedény, mivel a hőszigetelő anyag megakadályozza a hővezetést és a hőáramlást, így a tartalmát hosszabb ideig melegen tartja.",
+       "type": "text",
+       "heading": "Hőszigetelt edény (termosz) kísérlet",
+       "key_term": "hőszigetelt edény"
+      },
+      {
+       "body": "Készíthetünk saját hőszigetelő edényt is, például egy régi üvegpalackból és néhány réteg újságból. Az újságok levegőt tartanak fenn, ami jó hőszigetelő. Töltsük meg a palackot forró vízzel, majd tekerjük be újságpapírral, és figyeljük meg, mennyi ideig marad meleg. Ez a kísérlet bemutatja, hogy a hőszigetelés mennyire fontos a mindennapi életben.",
+       "type": "text",
+       "heading": "Hőszigetelő edény készítése",
+       "key_term": "hőszigetelő edény"
+      }
+     ]
+    },
+    {
+     "block_id": "6b086133-3500-4371-b018-f89ddc583df6",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal a reggeli kávéját önti egy termoszba, hogy a nap folyamán melegen tartsa. A termosz belsejében található vákuumréteg megakadályozza a hővezetést és a hőáramlást, így a forró ital hőmérséklete sokáig megmarad.",
+       "type": "story",
+       "heading": "A termosz hatása"
+      },
+      {
+       "body": "Miközben a termosz zárva van, a hő nem tud átjutni a külső levegőből a belső térbe. Ha a termosz anyaga fém lenne, a hővezetés miatt a kávé gyorsan kihűlne, de a termosz speciális anyaga miatt ez nem történik meg.",
+       "type": "story",
+       "heading": "Hővezetés a termoszban"
+      },
+      {
+       "body": "A termosz körüli levegő hőmérséklete is befolyásolja a kávé hőmérsékletét. Ha a termosz egy hideg felületre kerül, a hőáramlás miatt a hő a termoszból a hideg felé áramlik, de a termosz kialakítása miatt ez minimálisra csökken.",
+       "type": "story",
+       "heading": "Hőáramlás és a termosz környezete"
+      },
+      {
+       "body": "A termosz felülete is hőmérsékletet sugároz. A hősugárzás (a hőenergia elektromágneses hullámok formájában való terjedése) miatt, ha a termosz a napfényben áll, a hőmérséklete emelkedhet, de a termosz belsejében a kávé hőmérséklete még mindig stabil marad.",
+       "type": "story",
+       "heading": "Hősugárzás és a termosz"
+      },
+      {
+       "body": "A termosz elve alapján a modern hőszigetelő ablakok is több rétegű üvegből készülnek, amelyek között vákuum vagy gáz található. Ez megakadályozza a hővezetést és a hőáramlást, így a lakásban lévő meleg levegő nem tud elmenni, és a hideg levegő sem tud beáramolni.",
+       "type": "story",
+       "heading": "A hőszigetelő ablak működése"
+      },
+      {
+       "body": "A fiatal a termosz és a hőszigetelő ablakok példáján tanulva elhatározza, hogy a lakásában is javít a hőszigetelésen. A falak, a tető és az ablakok megfelelő szigetelése révén csökkentheti a fűtési költségeit, és kényelmesebbé teheti otthonát.",
+       "type": "story",
+       "heading": "Hőszigetelés a lakásban"
+      }
+     ]
+    },
+    {
+     "block_id": "effe229d-2af9-4e48-850a-31317825b417",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A hővezetés során a hő a magasabb hőmérsékletű anyagból az alacsonyabb hőmérsékletű felé áramlik.",
+       "heading": "Hővezetés",
+       "description": "A hővezetés folyamatát szemléltető diagram, amelyen két különböző hőmérsékletű anyag (pl. fém és fa) található. A hőmérsékletkülönbség által generált hőáram iránya nyilakkal van jelölve.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A hőáramlás a meleg levegő felfelé áramlásával és a hideg levegő lefelé áramlásával jár.",
+       "heading": "Hőáramlás",
+       "description": "Egy vázlat, amelyen a levegő áramlása látható egy fűtött szobában. A meleg levegő felfelé száll, míg a hideg levegő lefelé áramlik, a hőmérséklet-eloszlás színkódokkal van jelölve.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A hősugárzás a hőenergia terjedését jelenti, amely a sugárzó forrástól való távolság függvényében csökken.",
+       "heading": "Hősugárzás",
+       "description": "Egy grafikon, amely a hősugárzás intenzitását mutatja különböző távolságokban egy hősugárzó (pl. nap) forrásától. A távolság növekedésével csökken a hőintenzitás.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A hőszigetelés anyagai megakadályozzák a hőáramlást, így csökkentik a hőveszteséget.",
+       "heading": "Hőszigetelés lehetőségei",
+       "description": "Egy keresztmetszeti ábra, amely bemutatja a falak hőszigetelését különböző anyagokkal (pl. kőzetgyapot, polisztirol) és a hőszigetelő rétegek elhelyezkedését.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A hőszigetelt ablakok a levegőréteg segítségével csökkentik a hőátbocsátást, így jobban megtartják a hőt.",
+       "heading": "Hőszigetelt ablak működése",
+       "description": "Egy diagram, amely bemutatja a hőszigetelt ablak felépítését, beleértve a dupla üveget, az üvegek közötti levegőréteget és az ablakkeretet.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A termosz sokkal lassabban veszít hőt, mint az üvegedény, ami a hőszigetelés hatékonyságát mutatja.",
+       "heading": "Hőszigetelt edény (termosz) összehasonlítása",
+       "description": "Egy grafikon, amely összehasonlítja a hőmérséklet csökkenését egy termosz és egy egyszerű üvegedény esetében, idő függvényében.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A hőszigetelt edény készítése során fontos a megfelelő anyagok és rétegek kiválasztása a hőszigetelés érdekében.",
+       "heading": "Hőszigetelt edény készítése",
+       "description": "Egy vázlat, amely bemutatja a hőszigetelt edény elkészítésének lépéseit, például a rétegek elhelyezését (pl. fém edény, szigetelő anyag, külső burkolat).",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "b7efa2c2-7468-4b6a-a7c2-700de3528225",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A termoszok ma is széles körben elterjedtek, használjuk őket például utazások során, hogy a kávénk vagy teánk meleg maradjon, illetve hideg italokhoz is.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 200,
+          "w": 80,
+          "x": 50,
+          "y": 50,
+          "type": "box"
+         },
+         {
+          "x": 60,
+          "y": 260,
+          "text": "Üvegedény",
+          "type": "label"
+         },
+         {
+          "h": 200,
+          "w": 80,
+          "x": 200,
+          "y": 50,
+          "type": "box"
+         },
+         {
+          "x": 210,
+          "y": 260,
+          "text": "Termosz",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Hőszigetelt edények összehasonlítása",
+       "discovery": "A termosz (hőszigetelő edény) feltalálását 1892-ben James Dewar, skót tudós végezte. A termosz célja az volt, hogy hosszú időn keresztül megőrizze az italok hőmérsékletét, legyen szó meleg vagy hideg folyadékokról. Dewar egy vákuumos edényt alkotott meg, amely csökkentette a hőátadást, és így hatékonyan megőrizte a hőt.",
+       "try_basic": "Készíts hőszigetelt edényt egyszerű eszközökből, például egy üvegbe öntött forró víz és köré tekerj törölközőt vagy újságpapírt, majd figyeld meg, mennyire tartja meg a hőt.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "f590ef7e-e302-4b45-8c11-341422e9d742",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hőenergia átvitele anyagon belül, ahol hőmérséklet-különbség van.",
+        "B) A hőenergia átvitele folyadékok és gázok mozgása által.",
+        "C) A hőenergia terjedése elektromágneses hullámok formájában.",
+        "D) A hőenergia tárolása szigetelő anyagokban."
+       ],
+       "question": "Mi a hővezetés?",
+       "explanation": "A hővezetés a hőenergia anyagon belüli átvitelét jelenti, amely akkor következik be, amikor hőmérséklet-különbség van.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hőenergia átvitele folyadékok és gázok mozgása révén.",
+        "B) A hőenergia átvitele szilárd anyagokban.",
+        "C) A hőenergia terjedése elektromágneses hullámok formájában.",
+        "D) A hőmérséklet emelkedése egy anyagban."
+       ],
+       "question": "Mi a hőáramlás?",
+       "explanation": "A hőáramlás a hőenergia átvitelét jelenti, amely folyadékok és gázok mozgásával történik, például amikor meleg levegő felfelé száll.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) Csak szilárd anyagokban.",
+        "B) Csak folyadékokban.",
+        "C) Csak gázokban.",
+        "D) Elektromágneses hullámok formájában."
+       ],
+       "question": "Milyen formában terjed a hősugárzás?",
+       "explanation": "A hősugárzás elektromágneses hullámok formájában terjed, és nem igényel közvetítő anyagot.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Üveg.",
+        "B) Fa.",
+        "C) Levegő.",
+        "D) Fém."
+       ],
+       "question": "Melyik anyag a legjobb hőszigetelő?",
+       "explanation": "A levegő a legjobb hőszigetelő, mivel alacsony hővezető képességgel rendelkezik, így jól megakadályozza a hő átvitelét.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Az üveg vastagsága csökkenti a hőátadást.",
+        "B) Az üveg között lévő levegőréteg csökkenti a hőátadást.",
+        "C) Az üveg színe elnyeli a hőt.",
+        "D) Az ablak kerete fém, ami jó hővezető."
+       ],
+       "question": "Hogyan működik a hőszigetelő ablak?",
+       "explanation": "A hőszigetelő ablakok a két üveg között lévő levegőréteg révén csökkentik a hőátadást, mivel a levegő jó hőszigetelő.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "e4e02a52-8575-4138-881a-189d5ff9fc73",
+   "title_hu": "Víz hőtágulása és levegő állapothatározói",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "cf830778-2de8-4ede-bcb5-7e708658e2cb",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A víz hőtágulása különleges, mert 0 °C alatt, amikor jég képződik, a víz térfogata nő. Ez azt jelenti, hogy a jég könnyebb a folyékony víznél, ezért a vízfelszínen úszik. Gondoljunk bele, hogy tavasszal, amikor a jég elkezd olvadni a tavakon, a jégréteg a víz felszínén marad, így a mélyebb víz hőmérséklete nem csökken drasztikusan, ami segíti a vízi élőlények túlélését.",
+       "type": "text",
+       "heading": "A víz rendhagyó hőtágulása",
+       "key_term": "rendhagyó hőtágulás"
+      },
+      {
+       "body": "Télen, amikor a hőmérséklet 0 °C alá csökken, a tavak vize megfagy, és jég képződik a felszínen. Ez a jégréteg szigetelőként működik, megakadályozza, hogy a hideg levegő a víz mélyebb rétegeibe hatoljon. Így a víz alatti élőlények védve vannak a fagyástól. A jég vastagsága és minősége fontos tényező, különösen a horgászok számára, akik télen a befagyott tavakon horgásznak.",
+       "type": "text",
+       "heading": "Jégképződés a tavakon",
+       "key_term": "jégképződés"
+      },
+      {
+       "body": "A jéghegyek, amelyek az óceánban úsznak, a jég 90%-a a víz alatt található. Ezért nagyon nehéz észrevenni őket, ami komoly veszélyt jelent a hajókra. A Titanic tragédiája is ezt bizonyítja, hiszen a hajó egy jéghegynek ütközött, amelynek nagy része láthatatlan volt. A jéghegyek szerepe a tengeri közlekedés biztonságában tehát kulcsfontosságú, és érdemes figyelni rájuk.",
+       "type": "text",
+       "heading": "Jéghegyek és a Titanic",
+       "key_term": "jéghegy"
+      },
+      {
+       "body": "A levegő állapothatározói, mint a hőmérséklet, nyomás és páratartalom, alapvető fontosságúak az időjárás megértésében. Például, ha a hőmérséklet emelkedik, a levegő képes több nedvességet megtartani, ami esőhöz vezethet. A meteorológusok ezeket az értékeket folyamatosan mérik, hogy előre jelezzék az időjárást, és segítsenek nekünk felkészülni a különböző időjárási körülményekre.",
+       "type": "text",
+       "heading": "A levegő állapothatározói",
+       "key_term": "állapothatározók"
+      },
+      {
+       "body": "A levegő tömegét a térfogat és a sűrűség ismeretében számíthatjuk ki. Például, ha a tanteremben 50 m³ levegő van, és a levegő sűrűsége körülbelül 1,2 kg/m³, akkor a levegő tömege 60 kg. Ez segít megérteni, mennyi levegő vesz körül minket, és hogy a levegő mennyisége befolyásolja a hőmérsékletet és a klímát.",
+       "type": "text",
+       "heading": "Egyszerű számítások a levegő tömegével",
+       "key_term": "levegő tömege"
+      },
+      {
+       "body": "Az éghajlat a hosszú távú időjárási mintázatok összességét jelenti egy adott területen. Például a globális felmelegedés következtében a nyarak egyre melegebbek és szárazabbak, míg a telek enyhébbek lehetnek. Ez hatással van a növények és állatok életére, és fontos, hogy tudatosan figyeljünk a környezetünkre, hogy megértsük, hogyan befolyásolja ez a mindennapi életünket.",
+       "type": "text",
+       "heading": "Éghajlat és változások",
+       "key_term": "éghajlat"
+      }
+     ]
+    },
+    {
+     "block_id": "d378737e-c980-47b6-ad79-d27b50c9bf12",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy tizenéves fiatal, aki a konyhában áll, felkapcsolja a villanyt, hogy vizet forraljon a kedvenc tésztájához. A lábosban lévő víz hőmérséklete kezd emelkedni, és a víz molekulái egyre gyorsabban mozognak, ami hőtágulást okoz.",
+       "type": "story",
+       "heading": "A vízforralás kezdete"
+      },
+      {
+       "body": "Ahogy a víz hőmérséklete 4 °C-ra emelkedik, a molekulák közötti távolság a legkisebb, így a víz sűrűsége a legmagasabb. Ez a rendhagyó hőtágulás azt jelenti, hogy a víz 0 °C alatt elkezd tágulni, ellentétben a legtöbb anyaggal. Ezért a víz a tavak felszínén jégként fagy meg, míg alatta a folyékony víz még mindig létezik.",
+       "type": "story",
+       "heading": "A rendhagyó hőtágulás"
+      },
+      {
+       "body": "A fiatal észreveszi, hogy a víz a lábosban már forr. Képzeletben visszautazik a télhez, amikor a tavak befagytak. A jég a víz felszínén keletkezik, mivel a hideg levegő hatására a víz molekulái egyre távolabb kerülnek egymástól, és jégkristályok formájában rendeződnek. Ezek a jégkristályok a tavat borító jégtakarót alkotják, amely a víz alatti élővilágot védi.",
+       "type": "story",
+       "heading": "A jégképződés és a jéghegyek szerepe"
+      },
+      {
+       "body": "A fiatal most a jéghegyekre gondol, amelyek a tengerekben úsznak. A jéghegyek egy része a víz alatt van, mivel a jég, bár szilárd, a víz sűrűsége miatt nem teljesen emelkedik ki a vízből. Emlékszik a Titanic történetére, amely a jéghegynek ütközött, és arra, hogy a jéghegyek mérete és a víz alatti részükről készült felmérések mennyire fontosak az óceánok biztonságában.",
+       "type": "story",
+       "heading": "A jéghegyek és a Titanic"
+      },
+      {
+       "body": "Visszatérve a konyhába, a fiatal az asztalnál ülve a levegő állapothatározóira gondol. Megpróbálja megbecsülni a tanteremben lévő levegő tömegét. Tudja, hogy a levegő hőmérséklete, nyomása és térfogata folyamatosan változik, és ez a légkör stabilitását, valamint az éghajlatot is befolyásolja. A levegő melegítése vagy hűtése a hőtágulás miatt különböző hatásokat gyakorol a környezetre.",
+       "type": "story",
+       "heading": "Levegő állapothatározói"
+      }
+     ]
+    },
+    {
+     "block_id": "0d1acbf9-29b8-48ec-8235-fb09c62c70fa",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A víz rendhagyó hőtágulása 0 °C alatt és felett.",
+       "heading": "A víz hőtágulása",
+       "description": "A víz hőtágulásának grafikus ábrázolása, amely bemutatja, hogy a víz 0 °C alatt összesűrűsödik, míg 0 °C felett tágulni kezd.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Jégképződés folyamata a tavakon.",
+       "heading": "Jégképződés a tavakon",
+       "description": "Egy tavon lévő jégképződés folyamatát bemutató vázlat, amelyen látható, hogy a jég a víz felszínén képződik, és a víz alatta marad folyékony állapotban.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A jéghegyek és a víz alatti részeik aránya.",
+       "heading": "Jéghegyek",
+       "description": "A jéghegyek méretének és tömegének változása a globális felmelegedés hatására, bemutatva, hogy a jéghegyek mekkora része van a víz alatt.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A levegő állapothatározóinak kapcsolata.",
+       "heading": "Levegő állapothatározói",
+       "description": "A levegő állapothatározóinak (hőmérséklet, nyomás, térfogat) kapcsolatát bemutató keresztmetszet, amely szemlélteti, hogyan változnak ezek a tényezők egymással.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Éghajlat és víz állapota.",
+       "heading": "Éghajlat és víz",
+       "description": "A különböző éghajlati övezetek vízállapotának (folyékony, szilárd, gáz) ábrázolása, bemutatva, hogy az éghajlat hogyan befolyásolja a víz állapotát.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A levegő tömegének becslése a tanteremben.",
+       "heading": "Levegő tömegének becslése",
+       "description": "Egy egyszerű vázlat, amely bemutatja, hogyan lehet megbecsülni a tanteremben lévő levegő tömegét, figyelembe véve a térfogatot és a sűrűséget.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A jéghegyek szerepe a Titanic elsüllyedésében.",
+       "heading": "Jéghegyek szerepe a Titanic elsüllyedésében",
+       "description": "Egy diagram, amely bemutatja, hogyan befolyásolták a jéghegyek a Titanic sorsát, kiemelve a jéghegyek méretét és a hajó sebességét.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "aeda3f5d-4751-4272-b1ab-c54cac132b66",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A víz hőtágulásával találkozunk például a hőmérők működésében, ahol a folyadék térfogatának változása jelzi a hőmérsékletet.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 100,
+          "w": 50,
+          "x": 50,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 55,
+          "y": 210,
+          "text": "Víz",
+          "type": "label"
+         },
+         {
+          "x1": 75,
+          "x2": 75,
+          "y1": 100,
+          "y2": 80,
+          "type": "arrow"
+         },
+         {
+          "x": 80,
+          "y": 60,
+          "text": "Hőmérséklet-emelkedés",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Víz hőtágulása",
+       "discovery": "A víz hőtágulásának felfedezése a 18. századra nyúlik vissza, amikor a tudósok észrevették, hogy a víz térfogata megnő, amikor felmelegítik. A jelenség megértése segített a hőmérséklet és a hőátadás folyamatainak tanulmányozásában.",
+       "try_basic": "Tölts meg egy üveg vízzel, majd helyezd a fagyasztóba. Figyeld meg, hogy a víz térfogata megnő, amikor megfagy!",
+       "try_advanced": "Készíts egy hőtágulás kísérletet különböző folyadékokkal (pl. olaj, alkohol), és hasonlítsd össze, hogy melyik terjeszkedik a legjobban a hőmérsékletváltozás hatására."
+      }
+     ]
+    },
+    {
+     "block_id": "053d8dea-d365-4c73-ba93-e8302f170669",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mert 0 °C alatt a víz térfogata nő.",
+        "B) Mert a víz mindig hőtágul a melegedés során.",
+        "C) Mert a víz sűrűsége folyamatosan csökken.",
+        "D) Mert a víz hőtágulása nem befolyásolja a természetet."
+       ],
+       "question": "Miért rendhagyó a víz hőtágulása?",
+       "explanation": "A víz 0 °C alatt hőtágul, így a jég sűrűsége kisebb, mint a folyékony vízé, ami lehetővé teszi, hogy a jég a víz felszínén ússzon.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A jég a víz felszínén úszik, megvédve a víz alatti élőlényeket.",
+        "B) A jég sűrűsége megegyezik a vízével, ezért elsüllyed.",
+        "C) A jég megfagy a víz alján, így nem alakul ki jég.",
+        "D) A víz teljesen megfagy, és nem marad élőlény."
+       ],
+       "question": "Milyen következményei vannak a víz rendhagyó hőtágulásának a tavakon?",
+       "explanation": "A jég a víz felszínén úszik, így hőszigetelő réteget képez, ami megvédi a víz alatti élőlényeket a fagyástól.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A jéghegyek úsznak a víz felszínén, mivel a jég sűrűsége kisebb a vízénél.",
+        "B) A jéghegyek süllyednek, mert a víz hőtágulása megnöveli a sűrűséget.",
+        "C) A jéghegyek nem befolyásolják a víz szintjét.",
+        "D) A jéghegyek mindig a víz alján helyezkednek el."
+       ],
+       "question": "Milyen hatással van a víz hőtágulása a jéghegyekre?",
+       "explanation": "A jéghegyek a víz felszínén úsznak, mivel a jég sűrűsége kisebb, mint a folyékony vízé.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A levegő térfogata növekszik.",
+        "B) A levegő sűrűsége növekszik.",
+        "C) A levegő nyomása csökken.",
+        "D) A levegő tömege változatlan marad."
+       ],
+       "question": "Melyik állapothatározó változik, ha a levegő hőmérséklete emelkedik?",
+       "explanation": "A levegő hőmérsékletének emelkedésével a térfogata növekszik, mivel a meleg levegő kitágul.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hőmérséklet.",
+        "B) A levegő tömege.",
+        "C) A levegő szennyezettsége.",
+        "D) A levegő színének változása."
+       ],
+       "question": "Melyik állapothatározó befolyásolja leginkább a levegő sűrűségét?",
+       "explanation": "A levegő sűrűsége a hőmérséklet változásával fordítottan arányos: a melegebb levegő kevésbé sűrű.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "e8d13a2f-f2d2-4a2b-83d7-6364896b230c",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A levegő súlyából adódó nyomás, amelyet barométerrel mérünk.",
+      "B) A víz nyomása, amelyet vízmérővel mérünk.",
+      "C) A hőmérséklet hatása a levegőre, amelyet hőmérővel mérünk.",
+      "D) A szél sebessége, amelyet anemométerrel mérünk."
+     ],
+     "question": "Mi a légnyomás? Milyen eszközzel mérhetjük?",
+     "explanation": "A légnyomás a levegő súlyából adódó nyomás, amelyet barométerrel mérünk. Fontos szerepe van az időjárás alakulásában.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Magas légnyomás esetén általában napos időjárás várható.",
+      "B) Alacsony légnyomás esetén mindig esik az eső.",
+      "C) A légnyomás nem befolyásolja az időjárást.",
+      "D) A légnyomás csak a hőmérsékletre van hatással."
+     ],
+     "question": "Milyen hatással van a légnyomás az időjárásra?",
+     "explanation": "Magas légnyomás esetén általában stabil, napos időjárás várható, míg alacsony légnyomás esetén csapadékos időjárás is kialakulhat.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az abszolút páratartalom a levegőben lévő vízgőz mennyisége, míg a relatív páratartalom a levegőhöz viszonyított vízgőz mennyisége.",
+      "B) Az abszolút páratartalom a levegő hőmérsékletét jelzi, míg a relatív páratartalom a légnyomást.",
+      "C) Az abszolút páratartalom csak télen számít, míg a relatív páratartalom nyáron.",
+      "D) Az abszolút páratartalom a levegő szennyezettségét mutatja."
+     ],
+     "question": "Mi a különbség az abszolút és a relatív páratartalom között?",
+     "explanation": "Az abszolút páratartalom a levegőben lévő vízgőz mennyiségét jelenti, míg a relatív páratartalom a levegőhöz viszonyított vízgőz mennyiségét mutatja.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Magasabb hőmérsékleten a relatív páratartalom csökken.",
+      "B) Alacsonyabb hőmérsékleten a relatív páratartalom nő.",
+      "C) A hőmérséklet és a relatív páratartalom nem függ össze.",
+      "D) Magasabb hőmérsékleten a relatív páratartalom nő."
+     ],
+     "question": "Hogyan függ össze a relatív páratartalom és a hőmérséklet?",
+     "explanation": "Magasabb hőmérsékleten a levegő több vízgőzt képes tartani, így a relatív páratartalom csökkenhet.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Harmatképződés, dér, zúzmara.",
+      "B) Felhőképződés, eső, hó.",
+      "C) Szél, vihar, napfény.",
+      "D) Fagy, hőség, szmog."
+     ],
+     "question": "Mik a páraképződés természetes jelenségei?",
+     "explanation": "A páraképződés természetes jelenségei közé tartozik a harmatképződés, a dér és a zúzmara, amelyek a levegő hőmérsékletének csökkenésekor alakulnak ki.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A fém kanál felmelegszik, amikor a forró vízbe teszik.",
+      "B) A meleg levegő felfelé száll.",
+      "C) A napfény melegíti a földet.",
+      "D) A szél hűti a levegőt."
+     ],
+     "question": "Melyik hőterjedési mód példája a hővezetés?",
+     "explanation": "A hővezetés példája, amikor a fém kanál felmelegszik, mert a hő a forró vízből átadódik a kanálnak.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Penészesedés és nedves falak.",
+      "B) Jobb hőszigetelés.",
+      "C) Tiszta levegő.",
+      "D) Növekvő hőmérséklet."
+     ],
+     "question": "Milyen következményei lehetnek a páraképződésnek a lakásban?",
+     "explanation": "A páraképződés következménye lehet a penészesedés és a nedves falak, ami egészségügyi problémákat is okozhat.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Csökkenti a fűtési költségeket.",
+      "B) Növeli a hőmérsékletet.",
+      "C) Fokozza a páraképződést.",
+      "D) Csökkenti a légnyomást."
+     ],
+     "question": "Miért fontos a hőszigetelés a lakásban?",
+     "explanation": "A hőszigetelés fontos, mert csökkenti a fűtési költségeket, mivel kevesebb hő távozik a lakásból.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

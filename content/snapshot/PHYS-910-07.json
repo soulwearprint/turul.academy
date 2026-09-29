@@ -1,0 +1,1155 @@
+{
+ "nat_id": "PHYS-910-07",
+ "topic_id": "eb90a608-be65-4043-82d8-0cc2433dd9a8",
+ "title_hu": "Gépek",
+ "grade": 9,
+ "lessons": [
+  {
+   "lesson_id": "c24b42ea-6038-42ae-a75f-4d226fdf740f",
+   "title_hu": "Egyszerű gépek és egyensúly",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "3c5e75b2-19cd-4081-8701-68d3fde7c48d",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A libikóka és a mérleg működése jól szemlélteti az egyensúly fogalmát. Amikor a libikóka két oldalán egyenlő súlyú emberek ülnek, a szerkezet egyensúlyban van. Ha az egyik oldalon nehezebb valaki ül, a libikóka elbillen. Hasonlóan, a mérleg is akkor mutat egyensúlyt, amikor a két serpenyőn lévő súlyok egyenlőek. Ezt a jelenséget a forgatónyomaték (momentum) segítségével is magyarázhatjuk, amely az erő és az erőkar szorzataként definiálható.",
+       "type": "text",
+       "heading": "A libikóka és a mérleg egyensúlya",
+       "key_term": "egyenlő súly, libikóka, mérleg, forgatónyomaték"
+      },
+      {
+       "body": "A forgatónyomaték (torque) azt mutatja meg, hogy egy erő mennyire képes elforgatni egy testet. Az erőkar (lever arm) az a távolság, amely az erő hatásvonalától a forgáspontig terjed. Például, amikor egy szerszámkulcsot használunk, a hosszú kar lehetővé teszi, hogy kisebb erővel is elérjük a szükséges forgatónyomatékot a csavar meghúzásához. Ezért a szerszámok tervezésénél figyelembe veszik az erőkar hosszát, hogy a felhasználó könnyebben tudja használni őket.",
+       "type": "text",
+       "heading": "Forgatónyomaték és erőkar",
+       "key_term": "forgatónyomaték, erőkar"
+      },
+      {
+       "body": "Egy egyszerű kísérletet végezhetünk a libikóka segítségével, ahol különböző súlyokat helyezünk el a két oldalon. Figyeljük meg, hogy milyen súlyok és milyen távolságok mellett marad egyensúlyban a libikóka. Ez a kísérlet segít megérteni a forgatónyomatékok egyensúlyát, hiszen a két oldal forgatónyomatékának egyenlőnek kell lennie ahhoz, hogy a libikóka ne billenjen el.",
+       "type": "text",
+       "heading": "Kísérlet a libikókával",
+       "key_term": "kísérlet, egyensúly, libikóka"
+      },
+      {
+       "body": "A felfújt léggömbben levő levegő súlyának kimutatására is végezhetünk egy egyszerű kísérletet. Ha a léggömböt egy mérlegre helyezzük, és megmérjük a súlyát, majd a léggömböt kinyitjuk, és a levegőt kiengedjük, a mérleg mutatója csökkenni fog. Ez a kísérlet jól szemlélteti, hogy a léggömbben lévő levegő is súlyt képvisel, ami fontos az aerodinamika és a repülés megértésében.",
+       "type": "text",
+       "heading": "A felfújt léggömb súlya",
+       "key_term": "kísérlet, léggömb, súly"
+      },
+      {
+       "body": "A forgatónyomatékok egyensúlyának megértéséhez érdemes megfigyelni, hogyan működnek a különböző eszközök, például a fogók. Amikor a fogót használjuk, az erőkar hossza és a rá ható erő kombinációja a forgatónyomatékot hozza létre, amely lehetővé teszi a tárgyak könnyű megfogását és mozgatását. A fogó tehát egy egyszerű gép, amely a forgatónyomaték elvén működik.",
+       "type": "text",
+       "heading": "A forgatónyomatékok egyensúlya",
+       "key_term": "forgatónyomatékok egyensúlya, fogó"
+      }
+     ]
+    },
+    {
+     "block_id": "f7f36ebf-39af-4ded-8365-1e96a8dca010",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzelj el egy játszóteret, ahol a gyerekek a libikókán játszanak. Amikor az egyik gyerek felmegy a libikóka egyik oldalára, a másik oldal lejjebb süllyed. Ez a jelenség a forgatónyomaték (torziós erő) elvén működik. A libikóka középpontja a forgáspont, és a gyerekek súlya, valamint a távolságuk a forgásponttól határozza meg, hogy ki emelkedik fel, és ki süllyed le. Ha a két gyerek súlya és a távolságuk egyensúlyban van, akkor a libikóka vízszintesen marad.",
+       "type": "story",
+       "heading": "A libikóka és a mérleg egyensúlya"
+      },
+      {
+       "body": "Most gondoljunk a mérlegre, amelyet a gyerekek használnak, hogy megmérjék a súlyukat. A mérleg szintén a forgatónyomatékok egyensúlyán alapul. Amikor a gyerekek a mérleg két oldalára állnak, a mérleg csak akkor marad egyensúlyban, ha a két oldalon levő súlyok egyenlőek. Ezért a mérleg tűje a középpontban áll meg, amikor a két oldal egyensúlyban van. Így a gyerekek megtudják, hogy melyikük nehezebb vagy könnyebb.",
+       "type": "story",
+       "heading": "A mérleg működése"
+      },
+      {
+       "body": "A libikóka és a mérleg esetében is fontos szerepet játszik az erőkar (a forgásponttól mért távolság). Például, ha az egyik gyerek közelebb áll a forgásponthoz, akkor a másik gyereknek nehezebbnek kell lennie, hogy egyensúlyban maradjanak. Ezt a gyakorlatot a szerszámkulcsoknál is láthatjuk: amikor egy csavart lazítunk, a szerszámkulcs hosszú karja lehetővé teszi, hogy kisebb erővel nagyobb forgatónyomatékot érjünk el, így könnyebben megoldhatjuk a feladatot.",
+       "type": "story",
+       "heading": "Az erőkar szerepe"
+      },
+      {
+       "body": "A gyerekek ezután kísérleteznek a súlypont (a test tömegközéppontja) egyensúlyozásával. Például, ha egy felfújt léggömböt helyeznek egy egyszerű mérlegre, megfigyelhetik, hogy a léggömb levegője milyen súlyt képvisel. A mérleg mutatja, hogy a levegő is gyakorol nyomást, így bemutatva, hogy a levegő nemcsak üres tér, hanem súlya is van.",
+       "type": "story",
+       "heading": "Kísérletezés a súlyponttal"
+      }
+     ]
+    },
+    {
+     "block_id": "2611ff6c-7922-4d51-8b67-e219149c05cd",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A libikóka egyensúlyának feltétele: M1 * d1 = M2 * d2",
+       "heading": "Libikóka egyensúlya",
+       "description": "A libikóka (teherhordó kar) középpontjánál elhelyezett súlyok, amelyek különböző távolságra helyezkednek el a forgásponttól. Az egyensúly akkor áll fenn, ha a két oldalra kifejtett forgatónyomatékok egyenlők.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A mérleg egyensúlyi állapotának feltétele: F1 = F2",
+       "heading": "Mérleg működése",
+       "description": "A mérleg két oldalán elhelyezett súlyok, amelyek a középpontjuk körül forognak. Az egyensúly akkor jön létre, ha a két oldalra kifejtett erők egyenlők.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A forgatónyomaték növelhető az erő növelésével vagy az erőkar hosszának növelésével.",
+       "heading": "Forgatónyomaték",
+       "description": "A forgatónyomaték (M) grafikus ábrázolása, ahol a forgatónyomaték az erő (F) és az erőkar (d) szorzataként jelenik meg: M = F * d.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az erőkar hossza kulcsszerepet játszik a forgatónyomaték meghatározásában.",
+       "heading": "Erőkar fogalma",
+       "description": "Egy egyszerű gép, például egy kar, amelyen az erőhatás és a forgáspont közötti távolság az erőkar. A diagram bemutatja a forgáspont, az alkalmazott erő és az erőkar helyét.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A súlypont helyzete meghatározza a test stabilitását.",
+       "heading": "Súlypont és egyensúly",
+       "description": "A súlypont helye egy test esetében, amely körül a test egyensúlyban van. A diagram bemutatja, hogyan kell elhelyezni a súlyokat a súlypont alá vagy fölé az egyensúly megteremtéséhez.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A léggömb súlya a levegő tömegének köszönhető, amely a mérlegre hat.",
+       "heading": "Felfújt léggömb súlya",
+       "description": "Egy egyszerű mérleg, amely megmutatja a felfújt léggömbben levő levegő súlyát. A léggömb súlya a mérlegre gyakorolt hatása révén mérhető.",
+       "visual_type": "kísérlet"
+      }
+     ]
+    },
+    {
+     "block_id": "b63e955c-36a2-40db-a223-8ccb84cdf38f",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A súlypont fogalma fontos szerepet játszik a tervezésben, például épületek, hidak és járművek stabilitásának biztosításában.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 20,
+          "w": 100,
+          "x": 150,
+          "y": 150,
+          "type": "box"
+         },
+         {
+          "x": 180,
+          "y": 135,
+          "text": "Súlypont",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 145,
+          "y2": 100,
+          "type": "arrow"
+         },
+         {
+          "x": 210,
+          "y": 90,
+          "text": "F",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Súlypont és egyensúly",
+       "discovery": "A súlypont (centroide) fogalmát már az ókori görögök is használták. Arkhimédész (Kr.e. 287-212) felfedezte, hogy a testek egyensúlyának megértéséhez a súlypont helyének ismerete elengedhetetlen. A híres anekdota szerint Arkhimédész a vízben végzett kísérletei során jött rá, hogy a testek súlya és a víz által keltett felhajtóerő közötti egyensúly határozza meg a testek lebegését.",
+       "try_basic": "Készíts egy egyszerű mérleget két pohár víz és egy fakanál segítségével, és figyeld meg, hogyan változik az egyensúly, ha a súlyokat eltérően helyezed el!",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "c457589d-a4cf-4ee9-a12d-0f1359104908",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az erő és az erőkar szorzata.",
+        "B) Az erő és a súlypont távolsága.",
+        "C) Az erő irányának megváltozása.",
+        "D) Az erő alkalmazásának időtartama."
+       ],
+       "question": "Mi a forgatónyomaték?",
+       "explanation": "A forgatónyomaték (M) az erő (F) és az erőkar (d) szorzataként van definiálva, tehát M = F × d.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Ha a forgatónyomatékok összege nulla.",
+        "B) Ha az erőkarok egyenlők.",
+        "C) Ha a súlypont a középpontban van.",
+        "D) Ha az erők összege nulla."
+       ],
+       "question": "Mikor van a forgatónyomatékok egyensúlya?",
+       "explanation": "A forgatónyomatékok egyensúlya akkor áll fenn, ha a rendszerben lévő forgatónyomatékok összege nulla, így a test nem forog.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A súlypont és a forgáspont közötti távolság.",
+        "B) Az erő irányának hossza.",
+        "C) Az alkalmazott erő nagysága.",
+        "D) A forgatónyomaték mértéke."
+       ],
+       "question": "Mi az erőkar?",
+       "explanation": "Az erőkar (d) az a távolság, amely a forgásponttól a súlypontig terjed, és fontos szerepe van a forgatónyomaték számításában.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Egyszerű gép, amely a forgatónyomatékok egyensúlyára épít.",
+        "B) Bonyolult gép, amely több erőt használ.",
+        "C) Egy statikus mérleg.",
+        "D) Egy energiaátalakító."
+       ],
+       "question": "Milyen eszköz a libikóka?",
+       "explanation": "A libikóka egy egyszerű gép, amely a forgatónyomatékok egyensúlyára épít, lehetővé téve, hogy különböző súlyokat egyensúlyba hozzunk.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mert segít az erő hatékonyabb alkalmazásában.",
+        "B) Mert csökkenti a szerszám súlyát.",
+        "C) Mert megakadályozza a csúszást.",
+        "D) Mert növeli a szerszámok élettartamát."
+       ],
+       "question": "Miért fontos a szerszámkulcsok és fogók működésében az erőkar?",
+       "explanation": "Az erőkar jelentősége a szerszámkulcsok és fogók esetében abban rejlik, hogy lehetővé teszi az erő hatékonyabb alkalmazását a csavarok vagy anyák meghúzásakor.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "6bae0a9f-5407-4eb7-979a-51bbd1fd783e",
+   "title_hu": "Gépek teljesítménye és hatásfoka",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "703edfb9-fd12-4b12-a7fc-49f5304cc2de",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A teljesítmény (P) azt mutatja meg, hogy egy gép mennyi munkát végez el egy adott idő alatt. Például, ha egy elektromos autó gyorsan felgyorsul, akkor nagyobb teljesítménnyel működik, mint amikor lassan halad. A teljesítmény mértékegysége a watt (W), amely azt jelenti, hogy egy joule (J) munkát végez el másodpercenként. Tehát, ha egy gép 1000 W teljesítménnyel működik, az 1000 joule munkát végez el másodpercenként.",
+       "type": "text",
+       "heading": "Teljesítmény a gépek világában",
+       "key_term": "teljesítmény"
+      },
+      {
+       "body": "A hatásfok (η) azt mutatja meg, hogy a gép mennyire hatékonyan használja fel az energiát, amelyet kap. Ha egy indukciós főzőlap 90%-os hatásfokkal működik, akkor az energiájának 90%-át hővé alakítja, míg 10% elveszik. A hatásfok százalékban van megadva, és fontos, mert a magasabb hatásfokú gépek kevesebb energiát fogyasztanak. Ezért érdemes olyan eszközöket választani, amelyek magas hatásfokkal rendelkeznek.",
+       "type": "text",
+       "heading": "Hatásfok és hatékonyság",
+       "key_term": "hatásfok"
+      },
+      {
+       "body": "A különböző gépek teljesítményének és hatásfokának összehasonlítása segít megérteni, melyek a legjobban működő eszközök. Például egy régi villanymotor alacsonyabb hatásfokkal működhet, mint egy modern, energiatakarékos motor. Ha a diákok egy új és egy régi eszközt hasonlítanak össze, könnyen láthatják, hogy a technológiai fejlődés hogyan növeli a gépek hatékonyságát és csökkenti az energiafogyasztást.",
+       "type": "text",
+       "heading": "Gépek összehasonlítása teljesítmény és hatásfok alapján",
+       "key_term": "teljesítmény, hatásfok"
+      },
+      {
+       "body": "A kerékpár egy egyszerű, de nagyszerű gép, amely a pedálokkal végzett munkát alakítja át mozgássá. Amikor a kerékpáros pedálra lép, a pedálok energiaátvitelt végeznek, amely a láncon keresztül a hátsó kerékhez jut el. A kerékpár hatásfoka a pedálok és a kerekek közötti energiaátvitel hatékonyságától függ, és a jó beállítások segítik elkerülni az energia veszteséget.",
+       "type": "text",
+       "heading": "A kerékpár működése és fizikai alapjai",
+       "key_term": "kerékpár"
+      },
+      {
+       "body": "Egy egyszerű gép, mint például egy ceruzahegyező szétszedése izgalmas és tanulságos tevékenység lehet. A diákok azonosíthatják a főbb alkotórészeket, mint például a pengét, a motorját és a házát. A szétszedés során megérthetik, hogy ezek az alkatrészek hogyan működnek együtt, és milyen fizikát alkalmaznak a működésük során. A tevékenység dokumentálása segít abban, hogy a diákok jobban megértsék a gépek felépítését.",
+       "type": "text",
+       "heading": "Gépek szétszedése és alkotórészeik azonosítása",
+       "key_term": "gépek"
+      },
+      {
+       "body": "A csavarok különböző típusai és jellemzői, mint a menetemelkedés és menetsűrűség, fontos szerepet játszanak a gépek összeszerelésében. A diákok különböző csavarokat vizsgálva megtanulják, hogyan működnek ezek az alkatrészek, és hogy miért fontos a megfelelő csavar kiválasztása egy géphez. A csavarok menetei segítik a stabil kapcsolat létrehozását, így a gép biztonságosan és hatékonyan működhet.",
+       "type": "text",
+       "heading": "Csavarok és jellemzőik vizsgálata",
+       "key_term": "csavarok"
+      }
+     ]
+    },
+    {
+     "block_id": "79b97081-3331-4e43-85fb-c79b315349be",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A történet egy konyhában kezdődik, ahol valaki felkapcsolja az indukciós főzőlapot. Ezzel a főzőlap elektromos áramot kezd el felvenni a hálózatból, amely a készülék belső alkatrészeit működteti.",
+       "type": "story",
+       "heading": "Egy indukciós főzőlap bekapcsolása"
+      },
+      {
+       "body": "A főzőlapban az elektromos áram egy mágneses mezőt generál. Ez a mező hatással van a főzőedény alján található ferromágneses anyagra, amely elkezd forrósodni, így a hőt közvetlenül a főzőedénybe juttatja.",
+       "type": "story",
+       "heading": "Az elektromágneses mező létrejötte"
+      },
+      {
+       "body": "A forró edény a benne lévő ételt melegíti, így az elkezd főni. Itt a teljesítmény (P) fontos szerepet játszik, hiszen minél nagyobb a főzőlap teljesítménye, annál gyorsabban melegszik fel az edény.",
+       "type": "story",
+       "heading": "A hőmérséklet emelkedése"
+      },
+      {
+       "body": "A főzőlap hatásfoka (η) azt mutatja meg, hogy az energia, amit felhasznál, mennyire hatékonyan alakul át hőenergiává. Egy jól megtervezett indukciós főzőlap akár 90%-os hatásfokot is elérhet, ami azt jelenti, hogy a felvett energia nagy része hasznosul.",
+       "type": "story",
+       "heading": "Hatásfok és energiafelhasználás"
+      },
+      {
+       "body": "Miután az étel elkészült, a főzőlapot kikapcsolják. Az elektromos áram megszűnik, a mágneses mező eltűnik, és a főzőedény hűlni kezd. Ez a folyamat jól példázza a gépek működésének fizikai alapjait és a teljesítmény, valamint a hatásfok fogalmát a mindennapi életben.",
+       "type": "story",
+       "heading": "A főzés befejezése"
+      }
+     ]
+    },
+    {
+     "block_id": "a47f0cad-c292-4b60-a689-5d5191d5c98c",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Teljesítmény = Munka / Idő",
+       "heading": "Teljesítmény fogalma",
+       "description": "A teljesítmény (P) kiszámításának módja, amely a munka (W) és az idő (t) arányát mutatja. A diagramon a munka és az idő tengelye látható, ahol a teljesítmény a meredekség.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Hatásfok = (Hasznos munka / Befektetett munka) * 100%",
+       "heading": "Hatásfok fogalma",
+       "description": "A hatásfok (η) arányát mutatja a hasznos munkának (W_hasznos) és a befektetett munkának (W_befektetett) a grafikonon. A hatásfok százalékban kifejezve látható.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Gépek teljesítményének és hatásfokának összehasonlítása",
+       "heading": "Gépek összehasonlítása",
+       "description": "Egy táblázat, amely különböző gépek teljesítményét és hatásfokát tartalmazza, például kerékpár, elektromos fúró és kézi szerszámok.",
+       "visual_type": "táblázat"
+      },
+      {
+       "type": "visual",
+       "caption": "A kerékpár alkotórészei és működésük",
+       "heading": "Kerékpár felépítése",
+       "description": "A kerékpár főbb alkotórészeinek vázlata, mint például a váz, kerekek, hajtómű és fékek, valamint azok szerepe a működésben.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A kerékpár hajtásának működése",
+       "heading": "Kerékpár működése",
+       "description": "A kerékpár hajtásának működését bemutató diagram, amely a pedálok, lánc és a hátsó kerék közötti kapcsolatot szemlélteti.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Szétszedett ceruzahegyező alkatrészei",
+       "heading": "Gépek szétszedése",
+       "description": "Egy szétszedett gép (pl. ceruzahegyező) alkatrészeinek fotója, amely a főbb részek azonosítását segíti.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "Csavarok menetsűrűsége és menetemelkedése",
+       "heading": "Csavarok jellemzői",
+       "description": "A csavarok menetemelkedésének és menetsűrűségének grafikonja, amely bemutatja a különböző csavarok méreteit és jellemzőit.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "0ab02dbc-48fc-44c2-8061-9d63ddfdab6f",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A gépek teljesítményével és hatásfokával a mindennapi életben találkozhatunk, például a háztartási gépek, mint a mosógépek vagy a porszívók esetében, ahol a hatékonyság fontos szempont a választásnál.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Gépek teljesítménye és hatásfoka",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "0eae49c8-9d38-4abd-8793-fa4b8d3cff83",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) W (watt)",
+        "B) J (joule)",
+        "C) N (newton)",
+        "D) m (méter)"
+       ],
+       "question": "Mi a teljesítmény (P) mértékegysége?",
+       "explanation": "A teljesítmény mértékegysége a watt (W), amely a munka (J) és az idő (s) hányadosaként van definiálva.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A gép által végzett munka és a gépbe befektetett energia aránya",
+        "B) Csak a gép súlya",
+        "C) A gép színe",
+        "D) A gép anyaga"
+       ],
+       "question": "Milyen tényezők befolyásolják egy gép hatásfokát?",
+       "explanation": "A hatásfok a gép által végzett hasznos munka és a befektetett energia arányát fejezi ki, így ez a legfontosabb tényező.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Kerékpár",
+        "B) Hűtőszekrény",
+        "C) Mosógép",
+        "D) Légkondicionáló"
+       ],
+       "question": "Melyik gép példája a kerékpár teljesítményének és hatásfokának vizsgálatára?",
+       "explanation": "A kerékpár a legjobb példa, mivel a pedálokkal végzett munka és az elért sebesség alapján jól mérhető a teljesítménye és hatásfoka.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hatásfok mindig 100% alatt van a valós gépeknél.",
+        "B) A hatásfok mindig 100% felett van a valós gépeknél.",
+        "C) A hatásfok csak mechanikus gépeknél mérhető.",
+        "D) A hatásfokot nem lehet mérni."
+       ],
+       "question": "Melyik állítás igaz a gépek hatásfokára?",
+       "explanation": "A valós gépek hatásfoka sosem éri el a 100%-ot, mivel mindig van energia-veszteség, például súrlódás miatt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A pedálok forgatása mechanikai energiát termel, amely a kerekek mozgását biztosítja.",
+        "B) A kerékpár működése kizárólag elektromos áramra épül.",
+        "C) A kerékpár csak egy helyben használható.",
+        "D) A kerékpár nem igényel fizikai erőt a működéshez."
+       ],
+       "question": "Mi jellemzi a kerékpár működését a fizika szempontjából?",
+       "explanation": "A kerékpár működése a pedálok forgatásával mechanikai energiát termel, amely a kerekek mozgását generálja, így lehetővé téve a közlekedést.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "ec8400b0-1571-416d-b6ff-b2f3ca17efb3",
+   "title_hu": "Történelmi gépek és technológiák",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "74e99c61-eeb8-4690-ad40-d609ad6410ad",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "James Watt gőzgépe a 18. században alapjaiban változtatta meg a gyártást és a közlekedést. Az ipari forradalom hajnalán Watt fejlesztése lehetővé tette a gépek hatékonyabb működését, így a gyárak termelése ugrásszerűen megnőtt. Napjainkban a gőzgép elvei még mindig jelen vannak, például a modern vonatokban, ahol a gőz helyett már elektromos motorok működnek. A gőzgép elterjedése nemcsak a gazdaságot, hanem a társadalmi struktúrákat is átalakította, hiszen a falusi életmódot városi munkalehetőségek váltották fel.",
+       "type": "text",
+       "heading": "A gőzgép forradalma",
+       "key_term": "gőzgép"
+      },
+      {
+       "body": "A hajítógép, mint például a katapult, ősi idők óta használt eszköz a hadviselésben. A hajítógépek lehetővé tették a távoli célpontok támadását, így jelentősen megváltoztatták a csaták menetét. A mai modern haditechnikában a rakéták és drónok hasonló elveken működnek, és lehetővé teszik a precíziós támadásokat. A hajítógépek fejlődése a katonai stratégiák radikális átalakulásához vezetett, hiszen a távolság és az idő már nem volt olyan meghatározó a harcok során.",
+       "type": "text",
+       "heading": "A hajítógép hatása",
+       "key_term": "hajítógép"
+      },
+      {
+       "body": "A mechanikus szövőgép, mint például a Jacquard szövőgép, a textilipar forradalmát hozta el a 19. században. Ez a gép lehetővé tette a bonyolult minták automatikus létrehozását, így a szövetek előállítása gyorsabb és olcsóbb lett. Az okostelefonok érintőképernyője nem a Jacquard gép elvén működik, hiszen mindkettő az információk automatizált feldolgozására épít. A szövőgép elterjedése nemcsak a divatot, hanem a társadalmi életet is átalakította, hiszen a textilipar munkahelyeket teremtett a vidéki közösségekben.",
+       "type": "text",
+       "heading": "A szövőgép forradalma",
+       "key_term": "szövőgép"
+      },
+      {
+       "body": "A mechanikus számológép, mint például a Pascaline, a számítások gyorsítására szolgált a 17. században. E gépekkel bonyolult matematikai műveleteket végezhettek el a tudósok és üzletemberek, megkönnyítve ezzel a kereskedelmet és a tudományos munkát. A mai számítógépek és okostelefonok is a hasonló alapelvekre építenek, hiszen a digitális számítások gyorsasága nélkülözhetetlen a modern világban. A mechanikus számológép fejlődése a tudományos kutatások terjedését is elősegítette, hiszen egyre több ember számára vált elérhetővé a precíz számítás.",
+       "type": "text",
+       "heading": "A mechanikus számológép hatása",
+       "key_term": "mechanikus számológép"
+      },
+      {
+       "body": "A belső égésű motor a 19. század végén robbant be a közlekedés világába, lehetővé téve az autók és motorok elterjedését. E motorok működése során az üzemanyag elégetésével keletkező energia hajtja meg a járműveket, ami forradalmasította a közlekedést. Napjainkban az elektromos autók és hibrid járművek egyre népszerűbbek, de a belső égésű motorok elve továbbra is jelen van a gépjárművek többségében. A belső égésű motor elterjedése nemcsak a közlekedést, hanem a városok arculatát is megváltoztatta, hiszen az autók forgalma új infrastruktúrákat követelt meg.",
+       "type": "text",
+       "heading": "A belső égésű motor megjelenése",
+       "key_term": "belső égésű motor"
+      }
+     ]
+    },
+    {
+     "block_id": "7d0e8cf6-2fd8-4368-94c4-e55ff47e0e7a",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzelj el egy gyárat, ahol a gépek folyamatosan dolgoznak. Az egyik sarokban egy gőzgép (gőzmozdony) áll, amely forró vizet használ, hogy gőzt termeljen. Ez a gőz hajtja a gépeket, amelyek különböző termékeket állítanak elő. A gőzgép működése a víz felmelegítésével kezdődik, amely hőt kap egy tüzelőanyag, például szén elégetésével.",
+       "type": "story",
+       "heading": "A gőzgép működésének kezdete"
+      },
+      {
+       "body": "Ahogy a gőz keletkezik, a gőzvezetékeken keresztül jut el a gépekhez. A gőz nyomása mozgásba hozza a dugattyúkat, amelyek forgó mozgást generálnak. Ez a mechanikai energia aztán a különböző gyártási folyamatokhoz szükséges teljesítményt biztosít. A gyárban így sokkal gyorsabban és hatékonyabban tudják előállítani a termékeket, mint korábban.",
+       "type": "story",
+       "heading": "A gőz hatása a gyártásra"
+      },
+      {
+       "body": "James Watt, aki a gőzgép fejlesztésén dolgozott, felfedezte, hogy a gőzcsapda használata jelentősen növeli a gőzgép hatékonyságát. Ez a fejlesztés lehetővé tette, hogy a gépek kevesebb tüzelőanyagot használjanak, így csökkentve a költségeket. Watt találmánya nemcsak a gyárakban, hanem a közlekedésben is forradalmi változásokat hozott, hiszen a gőzmozdonyok megjelenése a vasúti közlekedést is átalakította.",
+       "type": "story",
+       "heading": "James Watt innovációja"
+      },
+      {
+       "body": "A gőzgép fejlődése nemcsak a termelési folyamatokat, hanem a társadalmat is átalakította. Emberek tömegei költöztek a városokba, hogy munkát találjanak a gyárakban. A gőzmozdonyok megjelenésével a távolsági közlekedés is felgyorsult, lehetővé téve, hogy az emberek gyorsabban és könnyebben jussanak el egymáshoz. Ez a mobilitás hozzájárult a gazdasági fejlődéshez és a kereskedelem fellendüléséhez.",
+       "type": "story",
+       "heading": "A gőzgép társadalmi hatásai"
+      },
+      {
+       "body": "Ma is találkozunk a gőzgép örökségével. A modern technológiák, mint például az elektromos autók rekuperációs fékezése, a gőzgép által inspirált mechanikai elvekre építenek. A gőzgép fejlődése tehát nemcsak a múltban volt fontos, hanem a mai technológiai innovációk alapját is képezi, amely folytatja a fejlődést és a társadalom átalakítását.",
+       "type": "story",
+       "heading": "A gőzgép öröksége"
+      }
+     ]
+    },
+    {
+     "block_id": "3ae876dd-b57e-4865-9cc1-f7eec6941ecb",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A hajítógép alapvető részei és működése.",
+       "heading": "Hajítógép",
+       "description": "A hajítógép működésének ábrázolása, amely bemutatja a különböző részegységeket, mint például a kart, a támasztékot és a rakományt.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A szövőgép működése: szálak és mechanikai mozgások.",
+       "heading": "Szövőgép",
+       "description": "A szövőgép működését bemutató vázlat, amely a szálak elhelyezkedését és a gép mozgását szemlélteti.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A mechanikus számológép belső felépítése és működése.",
+       "heading": "Mechanikus számológép",
+       "description": "A mechanikus számológép működésének grafikus ábrázolása, amely megmutatja a különböző fogaskerekek és mechanikai elemek kapcsolatát.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A belső égésű motor felépítése és működése.",
+       "heading": "Belső égésű motor",
+       "description": "A belső égésű motor keresztmetszeti ábrázolása, amely bemutatja a hengereket, dugattyúkat és a gyújtási folyamatot.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "James Watt gőzgépe: a gőz hatása a mechanikai munkára.",
+       "heading": "James Watt és a gőzgép",
+       "description": "James Watt gőzgépének működését bemutató diagram, amely a gőz és a dugattyú mozgását szemlélteti.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A történelmi gépek fejlődése és alkalmazásuk.",
+       "heading": "Történelmi korok gépei",
+       "description": "A különböző történelmi korokhoz kapcsolódó gépek összegyűjtése, például a középkori hajítógépek és az ipari forradalom szövőgépei.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Kedvelt gépek modelljeinek megfigyelése és elkészítése.",
+       "heading": "Gépek modellezése",
+       "description": "Kedvelt gépek modelljeinek elkészítéséről készült fotó, amely bemutatja a működésüket és a felhasznált anyagokat.",
+       "visual_type": "fotó"
+      }
+     ]
+    },
+    {
+     "block_id": "5c80ac22-332a-4395-a389-7eea214310e4",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A gőzgépek elve ma is jelen van különböző ipari gépekben, például a hőerőművekben, ahol a gőzt használják a turbinák meghajtására.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 150,
+          "w": 100,
+          "x": 50,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 70,
+          "y": 260,
+          "text": "Gőzgép",
+          "type": "label"
+         },
+         {
+          "r": 20,
+          "x": 100,
+          "y": 80,
+          "type": "circle"
+         },
+         {
+          "x": 90,
+          "y": 70,
+          "text": "Gőz",
+          "type": "label"
+         },
+         {
+          "x1": 100,
+          "x2": 100,
+          "y1": 100,
+          "y2": 50,
+          "type": "line",
+          "dashed": false
+         },
+         {
+          "x1": 100,
+          "x2": 150,
+          "y1": 50,
+          "y2": 50,
+          "type": "arrow"
+         },
+         {
+          "x": 130,
+          "y": 45,
+          "text": "Mozgás",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Gépek a történelemben",
+       "discovery": "A gőzgép felfedezését James Watt segítette elő az 1760-as években, amikor rájött, hogy a gőzgépek hatékonysága jelentősen növelhető, ha külön hűtőkamrát alkalmazunk. Ezzel a találmánnyal a gépek ipari alkalmazása forradalmasult, lehetővé téve a gyártás gyorsabb és hatékonyabb folyamatát.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "ba54b259-4370-40fc-a246-a4fc0d843246",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Szövőgép",
+        "B) Gőzgép",
+        "C) Mechanikus számológép",
+        "D) Hajítógép"
+       ],
+       "question": "Melyik gép volt jelentős hatással a textiliparra a 18. században?",
+       "explanation": "A szövőgép (pl. a mechanikus szövőgép) forradalmasította a textilipart, lehetővé téve a gyorsabb és hatékonyabb szövést.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Hajítógép",
+        "B) Gőzgép",
+        "C) Szövőgép",
+        "D) Belső égésű motor"
+       ],
+       "question": "Melyik gép fejlesztése kapcsolódik James Watt nevéhez?",
+       "explanation": "James Watt a gőzgép (steam engine) fejlesztésével vált híressé, amely jelentős előrelépést jelentett az ipari forradalomban.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Csökkentette a munkanélküliséget",
+        "B) Elősegítette az iparosodást",
+        "C) Növelte a kézművesek számát",
+        "D) Megszüntette a mezőgazdasági munkát"
+       ],
+       "question": "Milyen hatással volt a gőzgép a társadalomra?",
+       "explanation": "A gőzgép elősegítette az iparosodást, lehetővé téve a gépesített termelést és a városiasodást.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Belső égésű motor",
+        "B) Mechanikus számológép",
+        "C) Szövőgép",
+        "D) Gőzgép"
+       ],
+       "question": "Melyik gép segítette a matematikai számításokat a 17. században?",
+       "explanation": "A mechanikus számológép (mechanical calculator) lehetővé tette a bonyolult matematikai számítások gyorsabb elvégzését.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Szövőgép",
+        "B) Hajítógép",
+        "C) Gőzgép",
+        "D) Mechanikus számológép"
+       ],
+       "question": "Melyik gép volt jellemző a középkori hadviselésre?",
+       "explanation": "A hajítógép (catapult) jelentős szerepet játszott a középkori hadviselésben, lehetővé téve a távolsági támadásokat.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "52906fb2-9a74-42ff-a34e-cff5b8f3b350",
+   "title_hu": "A jövő gépei: robotok és mesterséges intelligencia",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "0369ce26-a244-4cf6-a120-5dea50aee63e",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A robotok egyre inkább jelen vannak életünkben, kezdve a háztartási segítőktől egészen a gyártósorokon dolgozó automatákig. Gondoljunk csak a robotporszívókra, amelyek önállóan képesek takarítani a lakásunkat. Ezek a gépek érzékelőkkel vannak felszerelve, amelyek segítik őket a tájékozódásban, így elkerülik az akadályokat és hatékonyan végzik el a feladatukat. A jövőben a robotok szerepe még inkább növekedni fog, hiszen egyre bonyolultabb feladatokat is el tudnak látni, mint például az idősek gondozása vagy a nehéz fizikai munkák elvégzése.",
+       "type": "text",
+       "heading": "Robotok a mindennapokban",
+       "key_term": "robotok"
+      },
+      {
+       "body": "A mesterséges intelligencia (MI) olyan számítógépes rendszereket jelent, amelyek képesek tanulni és fejlődni az adatok alapján. Például a zene- és videóstreaming szolgáltatások MI-t használnak a felhasználói szokások elemzésére, hogy személyre szabott ajánlásokat tegyenek. Ez azt jelenti, hogy minél többet használjuk ezeket a szolgáltatásokat, annál jobban megismerik az ízlésünket. A jövőben a MI még inkább integrálódik a mindennapi életünkbe, például az okosotthonokban, ahol a világítás és a hőmérséklet automatikusan alkalmazkodik a szokásainkhoz.",
+       "type": "text",
+       "heading": "A mesterséges intelligencia (MI) szerepe",
+       "key_term": "mesterséges intelligencia"
+      },
+      {
+       "body": "A gépi tanulás egy olyan MI-algoritmus, amely lehetővé teszi a gépek számára, hogy tapasztalataik alapján javuljanak. Például a képfelismerő alkalmazások képesek azonosítani és elemezni a képeken látható tárgyakat. Ha egy felhasználó egy új tárgyat fényképez le, a rendszer folyamatosan tanul, és idővel egyre pontosabbá válik. A gépi tanulás másik izgalmas alkalmazása az önvezető autókban található, ahol a jármű folyamatosan elemzi a környezetét és tanul az útvonalakról és a forgalmi helyzetekről.",
+       "type": "text",
+       "heading": "Gépi tanulás a gyakorlatban",
+       "key_term": "gépi tanulás"
+      },
+      {
+       "body": "Az önvezérelt működés azt jelenti, hogy egy gép képes önállóan döntéseket hozni a környezetének figyelembevételével. Az önvezető autók képesek érzékelni a forgalmat, a gyalogosokat és a közlekedési táblákat, így biztonságosan navigálnak az utakon. Ezen kívül a drónok is önvezérelt módon képesek repülni, például a mezőgazdaságban a földek megfigyelésére vagy a csomagok kiszállítására. Az önvezérelt technológiák fejlődése új lehetőségeket teremt a közlekedésben és a logisztikában.",
+       "type": "text",
+       "heading": "Önvezérelt működés példákban",
+       "key_term": "önvezérelt működés"
+      },
+      {
+       "body": "A robotok és az automatizáció egyre inkább átalakítják a munkaerőpiacot. Sok olyan feladat, amelyet korábban emberek végeztek, most már robotok által is elvégezhető, például az ipari gyártás vagy a raktározás. Ez különösen fontos lehet a monoton, fizikai munkák esetében, ahol a robotok nemcsak gyorsabbak, hanem pontosabbak is. Ugyanakkor ez a változás új kihívásokat is jelent, hiszen a munkahelyek átalakulásával a munkavállalóknak is alkalmazkodniuk kell az új technológiákhoz.",
+       "type": "text",
+       "heading": "A jövő robotjainak szerepe a munkaerőpiacon",
+       "key_term": "munkaerőpiac"
+      }
+     ]
+    },
+    {
+     "block_id": "ae0dda6b-4e22-40f2-8e87-3a17102f23f9",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzelj el egy napot, amikor egy ember felkapcsolja a villanyt a szobában. Azonnal világossá válik a tér, és a lámpa működésbe lép. A lámpa működéséhez szükséges energia a hálózatról érkezik, ahol a villamos energia (V) a generátorok által termelt áram. Ez a folyamat elindítja a gépek és robotok világát, hiszen a megfelelő energiaforrások nélkül a modern technológia nem létezne.",
+       "type": "story",
+       "heading": "A robot kezdete"
+      },
+      {
+       "body": "Ahogy a lámpa világít, a robotok is elkezdik érzékelni a környezetüket. Egy önvezérelt autó például szenzorok segítségével figyeli az utat. Ezek a szenzorok, mint a lézeres távolságmérők és a kamerák, folyamatosan adatokat gyűjtenek a környezetről. A gépi tanulás révén a robot képes feldolgozni ezeket az adatokat, és döntéseket hozni, mint például, hogy mikor kell fékezni vagy kanyarodni.",
+       "type": "story",
+       "heading": "A robot észlelése"
+      },
+      {
+       "body": "A robotok nemcsak érzékelnek, hanem tanulnak is. A mesterséges intelligencia (AI) lehetővé teszi, hogy a robotok tapasztalatokat szerezzenek és javítsák a teljesítményüket. Például, amikor az önvezérelt autó különböző útviszonyokkal találkozik, a gépi tanulás segítségével az autó folyamatosan optimalizálja a vezetési stratégiáját, hogy biztonságosan elérje a célját.",
+       "type": "story",
+       "heading": "Az intelligencia fejlődése"
+      },
+      {
+       "body": "Ahogy a robotok egyre okosabbá válnak, egyre több területen kezdenek el dolgozni. Gondoljunk csak a gyárakra, ahol a robotok együttműködnek az emberekkel. Az automatizált rendszerek képesek a monoton feladatokat elvégezni, míg az emberek kreatívabb és összetettebb problémákra összpontosíthatnak. Ez a szinergia új lehetőségeket teremt a munka világában.",
+       "type": "story",
+       "heading": "Az együttműködés"
+      },
+      {
+       "body": "A robotok elterjedése új kihívásokat is hoz magával. A társadalomnak fel kell készülnie arra, hogy a mesterséges intelligencia és a gépek egyre nagyobb szerepet játszanak az életünkben. Fontos, hogy etikai és biztonsági kérdéseket is figyelembe vegyünk, hogy a technológia fejlődése valóban a javunkat szolgálja. A jövő gépei nemcsak eszközök, hanem társaink is lesznek.",
+       "type": "story",
+       "heading": "A jövő kihívásai"
+      }
+     ]
+    },
+    {
+     "block_id": "8f83b59f-0118-4626-aa38-f866580ab019",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A robotok fejlődése és elterjedése az idővonalon.",
+       "heading": "Robotok elterjedése",
+       "description": "Egy idővonal, amely bemutatja a robotok fejlődését az 1950-es évektől napjainkig, kiemelve a legfontosabb mérföldköveket, mint az első ipari robot megjelenését és a háztartási robotok elterjedését.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A robotok várható elterjedése különböző iparágakban.",
+       "heading": "A robotok jövőbeli szerepe",
+       "description": "Egy oszlopdiagram, amely bemutatja a különböző iparágakban (pl. egészségügy, mezőgazdaság, gyártás) várható robotizáltság mértékét 2030-ra.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A mesterséges intelligencia főbb területei.",
+       "heading": "Mesterséges intelligencia (MI) fogalma",
+       "description": "Egy vázlat, amely a mesterséges intelligencia főbb területeit mutatja be, mint az érzékelés, a döntéshozatal és a tanulás, mindezt egy központi MI szimbólum köré csoportosítva.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A gépi tanulás típusai.",
+       "heading": "Gépi tanulás",
+       "description": "Egy kördiagram, amely bemutatja a gépi tanulás három fő típusát: felügyelt tanulás, felügyelet nélküli tanulás és megerősítő tanulás.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az önvezető autó működési folyamata.",
+       "heading": "Önvezérelt működés",
+       "description": "Egy keresztmetszeti ábra, amely bemutatja, hogyan működik egy önvezető autó: érzékelők, adatfeldolgozás és döntéshozatal folyamata.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A robotok és az emberi munka arányának változása.",
+       "heading": "Robotok és emberi munka",
+       "description": "Egy vonaldiagram, amely a robotizálás és az emberi munkaerő arányának változását mutatja be az idő múlásával, kiemelve a várható hatásokat a munkaerőpiacra.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A robotok társadalmi hatásai.",
+       "heading": "Robotok és társadalom",
+       "description": "Egy vázlat, amely bemutatja a robotok által okozott társadalmi változásokat, mint például az életminőség javulását, de a munkahelyek átalakulását is.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "d5791e7b-38cd-4994-892d-d51122eaa40b",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A robotok ma már számos területen megtalálhatók, például az autógyártásban, ahol a hegesztés és festés automatizálása zajlik.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 150,
+          "w": 100,
+          "x": 150,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 160,
+          "y": 130,
+          "text": "Robot",
+          "type": "label"
+         },
+         {
+          "r": 15,
+          "x": 175,
+          "y": 270,
+          "type": "circle"
+         },
+         {
+          "r": 15,
+          "x": 225,
+          "y": 270,
+          "type": "circle"
+         },
+         {
+          "x": 150,
+          "y": 60,
+          "text": "Ipari robot",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Robotok a mindennapokban",
+       "discovery": "A robotika fejlődése a 20. század közepén kezdődött, amikor George Devol 1954-ben bemutatta az első ipari robotot, az Unimate-ot. Ezzel a találmánnyal a gyártás hatékonyságát akarta növelni, lehetővé téve a monoton feladatok automatizálását.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "b7e68cfd-7beb-4b57-8880-dce3a2a8952b",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A robotok egyre nagyobb szerepet játszanak a mindennapi életben.",
+        "B) A robotok csak ipari környezetben használhatók.",
+        "C) A robotok nem befolyásolják a munkaerőpiacot.",
+        "D) A robotok kizárólag háztartási feladatokra alkalmasak."
+       ],
+       "question": "Melyik állítás igaz a robotok elterjedésére?",
+       "explanation": "A robotok folyamatosan terjednek, és szerepük egyre fontosabbá válik az iparban és a mindennapi életben, például az egészségügyben és a szolgáltatásokban.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az emberi intelligencia utánzása és problémamegoldás.",
+        "B) Csak adatok tárolása.",
+        "C) Fizikai munkák elvégzése.",
+        "D) Az emberek helyettesítése minden területen."
+       ],
+       "question": "Mi a mesterséges intelligencia (AI) fő célja?",
+       "explanation": "A mesterséges intelligencia célja, hogy az emberi intelligenciához hasonló módon képes legyen tanulni és problémákat megoldani.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az adatokból való tanulás és minták felismerése.",
+        "B) A robotok programozása kézi beavatkozás nélkül.",
+        "C) Az adatok véletlenszerű generálása.",
+        "D) A számítógépek fizikai alkatrészeinek fejlesztése."
+       ],
+       "question": "Mi a gépi tanulás (ML) lényege?",
+       "explanation": "A gépi tanulás lényege, hogy a számítógépek képesek legyenek tanulni az adatokból, és felismerni a bennük rejlő mintákat.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Képesek a környezetük érzékelésére és reagálásra.",
+        "B) Csak előre programozott utasításokat követnek.",
+        "C) Csak emberi irányítással működnek.",
+        "D) Nem tudnak információt gyűjteni."
+       ],
+       "question": "Melyik jellemző a robotok önvezérelt működésére?",
+       "explanation": "Az önvezérelt robotok képesek érzékelni a környezetüket, és a kapott információk alapján önállóan hoznak döntéseket.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Növelheti a hatékonyságot és új munkalehetőségeket teremt.",
+        "B) Csak a munkahelyek megszüntetésére szolgál.",
+        "C) Nem befolyásolja a munka világát.",
+        "D) Csak a fizikai munkák automatizálására korlátozódik."
+       ],
+       "question": "Milyen hatással van a mesterséges intelligencia a munka világára?",
+       "explanation": "A mesterséges intelligencia alkalmazása növelheti a munka hatékonyságát, és új munkalehetőségeket is teremthet a technológiai fejlődés révén.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "0d83cc59-a7fa-47ab-b3e4-10db8355c0b2",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A két oldalra ható forgatónyomatékok egyenlők.",
+      "B) Az egyik oldal mindig nehezebb.",
+      "C) Csak az egyik oldalon ható erő számít.",
+      "D) A libikóka nem tud egyensúlyban lenni."
+     ],
+     "question": "Mi jellemzi a libikókát (támasztókar) egyensúlyát?",
+     "explanation": "A libikóka egyensúlyának feltétele, hogy a két oldalra ható forgatónyomatékok egyenlők legyenek.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csak a súlyuk számít.",
+      "B) Az erőkar hossza növeli a hatékonyságot.",
+      "C) Az erőkar nem befolyásolja a működést.",
+      "D) Az erőkar csökkenti a szükséges erőt."
+     ],
+     "question": "Milyen szerepet játszik az erőkar a szerszámkulcsok működésében?",
+     "explanation": "A szerszámkulcsoknál az erőkar hossza befolyásolja a szükséges erőt, így a hosszabb karokkal kisebb erővel is elérhetjük a kívánt nyomatékot.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Egy kézi szerszám.",
+      "B) Egy elektromos fúrógép.",
+      "C) Egy gőzgép.",
+      "D) Egy kerékpár."
+     ],
+     "question": "Melyik gép teljesítménye a legmagasabb a következők közül?",
+     "explanation": "A gőzgép általában nagyobb teljesítménnyel rendelkezik, mint a kézi szerszámok vagy a kerékpár, mivel képes több munkát végezni egy adott idő alatt.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A hatásfok a teljesítmény növekedését jelenti.",
+      "B) A hatásfok a hasznos teljesítmény és a felhasznált teljesítmény arányát mutatja.",
+      "C) A hatásfok nem befolyásolja a teljesítményt.",
+      "D) A hatásfok mindig 100%."
+     ],
+     "question": "Milyen összefüggés van a hatásfok és a teljesítmény között?",
+     "explanation": "A hatásfok a hasznos teljesítmény és a felhasznált teljesítmény arányát mutatja, amely megmutatja, mennyire hatékonyan használjuk fel az energiát.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A hajítógép.",
+      "B) A gőzgép.",
+      "C) A szövőgép.",
+      "D) A belső égésű motor."
+     ],
+     "question": "Melyik gép volt a legfontosabb az ipari forradalom során?",
+     "explanation": "A gőzgép volt az ipari forradalom legfontosabb gépe, amely lehetővé tette a gépesítést és a tömegtermelést.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Egy festő, aki gőzgépeket tervezett.",
+      "B) Egy mérnök, aki fejlesztette a gőzgépet, ezzel forradalmasítva az ipart.",
+      "C) Egy tudós, aki csak elméleti munkát végzett.",
+      "D) Egy politikai vezető, aki a gőzgépek ellen volt."
+     ],
+     "question": "Ki volt James Watt, és mi volt a gőzgépének jelentősége?",
+     "explanation": "James Watt mérnök volt, aki a gőzgép fejlesztésével forradalmasította az ipart, lehetővé téve a gépesített termelést.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Csökkentik a munkahelyek számát.",
+      "B) Csak a gyártásban használják őket.",
+      "C) Növelik a munkahelyek számát.",
+      "D) Nincs hatásuk."
+     ],
+     "question": "Milyen hatással vannak a robotok a jövő munkaerőpiacára?",
+     "explanation": "A robotok elterjedése csökkentheti a munkahelyek számát, mivel sok feladatot automatizálnak, de új munkaköröket is létrehozhatnak.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csak egyszerű feladatokat végez.",
+      "B) Segíti a gépek önvezérelt működését.",
+      "C) Nincs jelentős szerepe.",
+      "D) Csak a számítógépekben használják."
+     ],
+     "question": "Milyen szerepet játszik a mesterséges intelligencia a gépek működésében?",
+     "explanation": "A mesterséges intelligencia segíti a gépek önvezérelt működését, lehetővé téve számukra, hogy komplex feladatokat végezzenek.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

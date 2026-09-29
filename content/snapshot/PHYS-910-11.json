@@ -1,0 +1,1232 @@
+{
+ "nat_id": "PHYS-910-11",
+ "topic_id": "b0722ca4-7475-45d2-811a-428295fd7716",
+ "title_hu": "A hullámok szerepe a kommunikációban",
+ "grade": 10,
+ "lessons": [
+  {
+   "lesson_id": "ae5179e9-59d1-4e2c-bf01-96442e30e64c",
+   "title_hu": "Mechanikai hullámok megfigyelése és jellemzése",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "54d25b3a-74c7-4e03-931f-eabc67cf3061",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Gondoljunk csak bele, amikor a barátunkkal beszélgetünk, a hanghullámok (hanghullám) terjednek a levegőben. Ezek a hullámok a levegő molekuláinak rezgéséből keletkeznek, és eljutnak a fülünkhöz, ahol érzékeljük őket. A hanghullámok terjedési sebessége a levegőben körülbelül 343 m/s. Ezért halljuk meg a barátunk szavát, még ha távolabb is áll tőlünk.",
+       "type": "text",
+       "heading": "A mechanikai hullámok megfigyelése a hétköznapokban",
+       "key_term": "hanghullám"
+      },
+      {
+       "body": "A hanghullámok jellemzésekor fontos a terjedési sebesség (v) és a hullámhossz (λ) ismerete. A hullámhossz az a távolság, amelyet a hullám egy ciklus alatt megtesz. Például, ha egy zenei hangot hallunk, annak hullámhossza befolyásolja a hang magasságát. A gitáron játszott mélyebb hangok hosszabb hullámhosszal rendelkeznek, míg a magasabb hangok rövidebb hullámhosszal bírnak.",
+       "type": "text",
+       "heading": "A hullámok jellemzése: terjedési sebesség és hullámhossz",
+       "key_term": "terjedési sebesség, hullámhossz"
+      },
+      {
+       "body": "Az amplitúdó a hullám maximális kitérése, ami a hang erősségét is meghatározza. Minél nagyobb az amplitúdó, annál hangosabb a hang. A csillapodás pedig azt jelenti, hogy a hullámok energiája csökken, például amikor a zene egyre halkabbá válik, ahogy távolodunk a hangforrástól. Ez a jelenség a mindennapi életben is megfigyelhető, amikor a távolból hallott hangok egyre gyengébben jutnak el hozzánk.",
+       "type": "text",
+       "heading": "Amplitúdó és csillapodás",
+       "key_term": "amplitúdó, csillapodás"
+      },
+      {
+       "body": "Az állóhullámok (állóhullám) kialakulása a zenei hangszereknél is megfigyelhető. Például, amikor egy gitárhúrt megpengetünk, a húron állóhullámok alakulnak ki. Ezek a hullámok az adott húrlengés frekvenciájától függenek, és lehetővé teszik, hogy különböző hangmagasságokat halljunk. Az állóhullámok megfigyelése segíthet a zenészeknek a hangszereik hangolásában.",
+       "type": "text",
+       "heading": "Állóhullámok a zenében",
+       "key_term": "állóhullám"
+      },
+      {
+       "body": "A hangszerek, mint például a zongora vagy a hegedű, hanghullámokat (hanghullám) hoznak létre, amikor az adott eszköz rezeg. A zongora billentyűinek lenyomásakor a húrok rezegni kezdenek, és ezáltal hangot produkálnak. A hanghullámok jellemzése során figyelembe kell venni a hangmagasságot, amely a húrok hosszától és feszültségétől függ.",
+       "type": "text",
+       "heading": "Hangszerek és hangkeltő eszközök",
+       "key_term": "hanghullám"
+      },
+      {
+       "body": "A zajszennyezés (zajszennyezés) egyre nagyobb problémát jelent a mai városokban. A forgalom, az építkezések és a szórakozóhelyek hangja mind hozzájárul a környezetünk hangterheléséhez. Javasolt, hogy csökkentsük a zajt, például zajszigetelő anyagok használatával, vagy a városokban zöld területek kialakításával, amelyek csökkenthetik a zajszennyezést.",
+       "type": "text",
+       "heading": "Környezetünk hangterhelése",
+       "key_term": "zajszennyezés"
+      }
+     ]
+    },
+    {
+     "block_id": "d42ae90e-8fdf-439a-9d7f-f0a41a8cf420",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal elindítja a kedvenc dalát a telefonján. A telefon hangszórójából kiáramló hanghullámok (hanghullám) azonnal megkezdik útjukat a levegőben.",
+       "type": "story",
+       "heading": "A zeneindítás"
+      },
+      {
+       "body": "A hanghullámok levegőben való terjedése során a levegő molekulái rezegni kezdenek. Ezek a rezgő molekulák továbbadják az energiát egymásnak, így a hanghullámok a terjedési sebességük (c) függvényében elérik a környezetet.",
+       "type": "story",
+       "heading": "A hang terjedése"
+      },
+      {
+       "body": "Amikor a hanghullámok elérik a fülünket, a dobhártyánk rezegni kezd. A rezgés amplitúdója (A) és a hullámhossz (λ) befolyásolja, hogy milyen hangosnak és mélynek halljuk a zenét. A fülünk idegi impulzusokat küld az agyunknak, ahol a hangot érzékeljük.",
+       "type": "story",
+       "heading": "A hang érzékelése"
+      },
+      {
+       "body": "A dal hangereje, amelyet a telefon hangszórója kibocsát, különböző hangintenzitásokat (dB) generálhat, mint például a suttogás, a normál beszéd vagy a kiabálás. Ezek a hangok különböző erősségeket mutatnak, amelyeket mobilapplikációval mérhetünk.",
+       "type": "story",
+       "heading": "A hanghullámok jellemzése"
+      },
+      {
+       "body": "Miközben a zene szól, a környezetben más hangok, például autók zaja keveredik. A zajszennyezés (zajártalom) csökkentésére javaslatokat tehetünk, mint például a hangszigetelő anyagok használata, hogy a zene élvezete ne zavarja másokat.",
+       "type": "story",
+       "heading": "A zajszennyezés problémája"
+      }
+     ]
+    },
+    {
+     "block_id": "39ba5a55-b790-4e78-874b-fdf09a736ea6",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A vízfelületen terjedő mechanikai hullámok, amelyek bemutatják a hullámhosszt és az amplitúdót.",
+       "heading": "Hullám terjedése",
+       "description": "Egy vízfelületen terjedő hullámok ábrázolása, ahol a hullámok csúcsai és vályúi jól láthatók.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A hullámhossz és amplitúdó kapcsolatának ábrázolása.",
+       "heading": "Hullámhossz és amplitúdó",
+       "description": "Egy grafikon, amelyen a hullámhossz (λ) és az amplitúdó (A) értékei láthatók a hullám periódusának függvényében.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Állóhullámok, amelyek a húron való rezgés következményeként jönnek létre.",
+       "heading": "Állóhullámok kialakulása",
+       "description": "Egy húron kialakuló állóhullámok ábrázolása, ahol a csomópontok és a hullámcsúcsok láthatók.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A gitár húrjának rezgése és a keletkező hanghullámok.",
+       "heading": "Hangszerek működése",
+       "description": "Egy húr- és levegőrezgés alapján működő hangszer (pl. gitár) keresztmetszeti ábrázolása, amely bemutatja a húr rezgését.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A különböző hangforrások hangerejének összehasonlítása.",
+       "heading": "Zajszennyezés mérése",
+       "description": "Egy oszlopdiagram, amely a különböző zajforrások (suttogás, normál beszéd, kiabálás, utcai zaj) hangerejét (dB) mutatja.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A húr hosszának és a hangmagasságnak a kapcsolata.",
+       "heading": "Hangmagasság mérése",
+       "description": "Egy grafikon, amely a húr hosszának és a keletkező hangmagasságnak a kapcsolatát mutatja.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A hanghullámok vizsgálata oszcilloszkóppal.",
+       "heading": "Oszcilloszkóp használata",
+       "description": "Egy oszcilloszkóp képernyőjén megjelenő hanghullámok ábrázolása, amely bemutatja a hullámformát és a frekvenciát.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Lehetőségek a zajszennyezés csökkentésére a környezetünkben.",
+       "heading": "Hangterhelés csökkentése",
+       "description": "Egy vázlat, amely javaslatokat tartalmaz a zajszennyezés csökkentésére, például zöld növények ültetése, hangszigetelés.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "ee8e4f84-9ad2-4265-8123-e1c603e12e18",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A diákok találkozhatnak a hullámokkal a zenehallgatás, telefonálás vagy akár az utcai zajok révén.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Hangok és hullámok a mindennapokban",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "f28576a4-33e5-444f-bcce-2dc62fd75ea4",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Terjedési sebesség, hullámhossz, amplitúdó",
+        "B) Csak terjedési sebesség",
+        "C) Csak hullámhossz",
+        "D) Csak amplitúdó"
+       ],
+       "question": "Mi jellemzi a mechanikai hullámokat?",
+       "explanation": "A mechanikai hullámok jellemzéséhez három alapvető fizikai mennyiség szükséges: terjedési sebesség, hullámhossz és amplitúdó.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mechanikai hullám",
+        "B) Elektromágneses hullám",
+        "C) Áramlási hullám",
+        "D) Fénysugár"
+       ],
+       "question": "Milyen típusú hullám a hanghullám?",
+       "explanation": "A hanghullám mechanikai hullám, amely anyagban terjed, például levegőben vagy vízben.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az amplitúdó csökken",
+        "B) A frekvencia növekszik",
+        "C) A hullámhossz növekszik",
+        "D) A hullámok gyorsabban terjednek"
+       ],
+       "question": "Mi történik a hanghullámokkal, amikor csillapodnak?",
+       "explanation": "A csillapodás során a hanghullámok amplitúdója csökken, ami azt jelenti, hogy a hangerejük is csökken.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Két azonos frekvenciájú hullám interferenciája",
+        "B) Különböző frekvenciájú hullámok interferenciája",
+        "C) Csak egy hullám terjedése",
+        "D) Hullámok terjedése vákuumban"
+       ],
+       "question": "Milyen feltételek mellett alakulnak ki állóhullámok?",
+       "explanation": "Állóhullámok akkor alakulnak ki, amikor két azonos frekvenciájú hullám kölcsönhatásba lép egymással, ellentétes irányban terjedve.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hangforrás frekvenciája",
+        "B) A hanghullám terjedési sebessége",
+        "C) A hullámhossz",
+        "D) A hangforrás mérete"
+       ],
+       "question": "Melyik tényező befolyásolja a hangmagasságot?",
+       "explanation": "A hangmagasság a hangforrás frekvenciájától függ: a magasabb frekvenciájú hangok magasabb hangmagasságot eredményeznek.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "39a8163a-b85d-4de6-a440-26a68dee2882",
+   "title_hu": "Elektromágneses hullámok és alkalmazásaik",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "689b37fa-9f81-47ad-b6d8-bbb71fdfc6a1",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az elektromágneses hullámok (EM hullámok) olyan hullámok, amelyek elektromágneses tér változásából jönnek létre. Gondoljunk csak a napfényre: a napból érkező fény elektromágneses hullám, amely lehetővé teszi számunkra, hogy lássuk a világot. Ezek a hullámok nem igényelnek közvetítő anyagot, így a vákuumban is terjedhetnek. Az elektromágneses hullámok különböző frekvenciájú és hullámhosszú formákban léteznek, amelyek mindegyike más-más alkalmazásra alkalmas.",
+       "type": "text",
+       "heading": "Mi az elektromágneses hullám?",
+       "key_term": "elektromágneses hullám"
+      },
+      {
+       "body": "A hullámhossz (λ), a terjedési sebesség (v) és a frekvencia (f) szoros kapcsolatban állnak egymással. A képlet, amely ezt a kapcsolatot leírja: v = f × λ. Például, ha a frekvencia 2,4 GHz, ami a Wi-Fi által használt frekvencia, és a terjedési sebesség a levegőben körülbelül 300 000 km/s, akkor a hullámhossz körülbelül 12,5 cm. Ez segít megérteni, hogy az elektromágneses hullámok hogyan működnek a mindennapi életünkben.",
+       "type": "text",
+       "heading": "A hullámhossz, terjedési sebesség és frekvencia kapcsolata",
+       "key_term": "hullámhossz, terjedési sebesség, frekvencia"
+      },
+      {
+       "body": "A mikrohullámú sütőben az elektromágneses hullámok mikrohullámok formájában terjednek, és ezeket használjuk az ételek gyors melegítésére. Ha reszelt sajtot vagy csokoládét helyezünk a sütőbe, észrevehetjük, hogy nem minden rész egyformán melegszik. Ez az állóhullámok kialakulásának köszönhető, ahol a hullámok bizonyos helyeken erősítik, másutt pedig gyengítik egymást. Ezen megfigyelések alapján megállapíthatjuk a mikrohullám terjedési sebességét is.",
+       "type": "text",
+       "heading": "Mikrohullámú sütő és állóhullámok",
+       "key_term": "mikrohullám"
+      },
+      {
+       "body": "Az infrakamerák az infravörös elektromágneses hullámokat használják, hogy hőt érzékeljenek. Ezeket a készülékeket például épületek hőszigetelésének ellenőrzésére használják. Ha egy épület falán hőszivárgás van, az infrakamera képes megmutatni, hol távozik a hő. Ez a technológia nemcsak az építkezések során hasznos, hanem a biztonsági rendszerekben is, például éjszakai megfigyeléskor.",
+       "type": "text",
+       "heading": "Infrakamera és hőérzékelés",
+       "key_term": "infrakamera"
+      },
+      {
+       "body": "A röntgengépek az elektromágneses hullámok egy másik formáját, a röntgensugarakat használják. Ezek a hullámok képesek áthatolni különböző anyagokon, ezért orvosi diagnosztikában és anyagvizsgálatban is alkalmazzák őket. A röntgenfelvételek segítségével az orvosok tudják megállapítani, hogy van-e törés vagy más sérülés a csontokban. Ezen kívül az iparban is használják, hogy ellenőrizzék a hegesztési varratok minőségét.",
+       "type": "text",
+       "heading": "Röntgengép és anyagvizsgálat",
+       "key_term": "röntgengép"
+      },
+      {
+       "body": "A rádió és a televízió elektromágneses hullámokat használnak a képek és hangok továbbítására. A rádióhullámok a levegőben terjednek, így elérhetjük a kedvenc rádióállomásunkat vagy tévécsatornánkat anélkül, hogy vezetékekre lenne szükség. Amikor bekapcsoljuk a tévét, a készülék dekódolja a levegőben terjedő hullámokat, és megjeleníti a kívánt műsort. Ez a technológia lehetővé teszi számunkra, hogy távolról élvezzük a médiát.",
+       "type": "text",
+       "heading": "Rádió és televízió: a képek és hangok továbbítása",
+       "key_term": "rádió, televízió"
+      },
+      {
+       "body": "A mobiltelefonok működése szorosan összefonódik az elektromágneses hullámokkal, hiszen a Wi-Fi (vezeték nélküli internet) és a Bluetooth (vezeték nélküli adatátvitel) is ezen a technológián alapul. Amikor telefonálunk vagy zenét küldünk a telefonunkról, valójában elektromágneses hullámokat használunk, amelyek lehetővé teszik az információk gyors és hatékony átvitelét. A mobilinternet sebessége és megbízhatósága is nagyban függ a használt frekvenciáktól.",
+       "type": "text",
+       "heading": "Mobiltelefonok és vezeték nélküli technológiák",
+       "key_term": "mobiltelefon, Wi-Fi, Bluetooth"
+      }
+     ]
+    },
+    {
+     "block_id": "17974cec-3e85-441c-8125-356fc2a72444",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal felkapcsolja a mobiltelefonját. Ezzel a készülék elektromos áramot kezd el használni, amely aktiválja a telefon belső áramkörét. Az áramkörök működése során elektronok mozognak, és ez elektromágneses hullámokat generál, amelyek a telefon antenna felé haladnak.",
+       "type": "story",
+       "heading": "A mobiltelefon bekapcsolása"
+      },
+      {
+       "body": "A telefon antennája kibocsátja az elektromágneses hullámokat, amelyek a levegőn keresztül terjednek. Ezek a hullámok különböző frekvenciájúak lehetnek, attól függően, hogy milyen típusú adatokat (például hangot vagy képet) továbbítanak. A hullámok terjedési sebessége a levegőben körülbelül 300 000 km/s, ami lehetővé teszi a gyors kommunikációt.",
+       "type": "story",
+       "heading": "A jel terjedése"
+      },
+      {
+       "body": "A mobiltelefon jele eljut a közeli bázisállomás antennájához, ahol az elektromágneses hullámokat érzékelik. A bázisállomás feldolgozza a jelet, és átkonvertálja azt, hogy a telefon képes legyen megérteni. Ekkor fontos szerepet játszik a hullámhossz, amely segít azonosítani a különböző jeleket.",
+       "type": "story",
+       "heading": "A jel fogadása"
+      },
+      {
+       "body": "A bázisállomás továbbítja az adatokat az internetre, ahol a célzott információk elérhetők. A felhasználó a telefonján megnyit egy alkalmazást, és a képek, hangok vagy szövegek így jutnak el hozzá. Az elektromágneses hullámok lehetővé teszik, hogy a különböző eszközök, mint például a Wi-Fi és a Bluetooth, zökkenőmentesen működjenek, összekapcsolva az embereket.",
+       "type": "story",
+       "heading": "A kommunikáció folytatása"
+      },
+      {
+       "body": "A fiatal most már képes hívásokat kezdeményezni, üzeneteket küldeni vagy videókat nézni. Az elektromágneses hullámok, amelyeket a telefon és a bázisállomás között használnak, teszik lehetővé a gyors és hatékony kommunikációt. Így a mindennapi életünk része lett a technológia, amely az elektromágneses hullámok révén működik.",
+       "type": "story",
+       "heading": "A mobiltelefon használata"
+      }
+     ]
+    },
+    {
+     "block_id": "f08733c1-ddd9-4f55-970d-5ac1f500ddf9",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az elektromágneses hullámok szerkezete: elektromos és mágneses tér.",
+       "heading": "Elektromágneses hullámok",
+       "description": "Egy ábra, amely bemutatja az elektromágneses hullámok szerkezetét, beleértve az elektromos és mágneses tér váltakozását.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A hullámhossz és a frekvencia kapcsolata: λ = c / f.",
+       "heading": "Hullámhossz",
+       "description": "Egy grafikon, amely a hullámhossz (λ) és a frekvencia (f) közötti kapcsolatot ábrázolja, bemutatva, hogy a hullámhossz a frekvenciával fordított arányban áll.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az elektromágneses hullámok terjedési sebessége különböző anyagokban.",
+       "heading": "Terjedési sebesség",
+       "description": "Egy vázlat, amely bemutatja, hogy az elektromágneses hullámok terjedési sebessége (c) a vákuumban 299 792 458 m/s, és ez hogyan befolyásolja a hullámok terjedését különböző közegben.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A mikrohullámú sütő működése: állóhullámok és hőtermelés.",
+       "heading": "Mikrohullámú sütő",
+       "description": "A mikrohullámú sütő belsejének keresztmetszete, amely bemutatja, hogyan terjednek a mikrohullámok és hogyan melegítik fel az ételt.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Infrakamera működése: hőmérséklet-érzékelés elektromágneses hullámokkal.",
+       "heading": "Infrakamera",
+       "description": "Egy diagram, amely bemutatja az infrakamerák működését, és azt, hogyan érzékelik a hőmérsékletet elektromágneses hullámok segítségével.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Röntgengép működése: röntgensugárzás és képalkotás.",
+       "heading": "Röntgengép",
+       "description": "Egy grafikon, amely bemutatja a röntgensugárzás energiáját és alkalmazását az orvosi diagnosztikában.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Mobiltelefonok működése: Wi-Fi és Bluetooth technológiák.",
+       "heading": "Mobiltelefon működése",
+       "description": "Egy vázlat, amely bemutatja a mobiltelefonok működését, beleértve a Wi-Fi és Bluetooth kommunikációt.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Rádió és televízió működése: jelek továbbítása elektromágneses hullámokkal.",
+       "heading": "Rádió és televízió",
+       "description": "Egy diagram, amely bemutatja a rádióhullámok és televíziós jelek továbbításának alapelveit.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "442201c8-fa6f-488f-9054-4e2f38e82f82",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A mikrohullámú sütő a modern konyhák elengedhetetlen része, lehetővé téve az ételek gyors és egyenletes melegítését.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 200,
+          "w": 300,
+          "x": 50,
+          "y": 80,
+          "type": "box"
+         },
+         {
+          "x": 180,
+          "y": 40,
+          "text": "Mikrohullámú sütő",
+          "type": "label"
+         },
+         {
+          "r": 20,
+          "x": 100,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 90,
+          "y": 145,
+          "text": "Sajt",
+          "type": "label"
+         },
+         {
+          "r": 20,
+          "x": 300,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 290,
+          "y": 145,
+          "text": "Csokoládé",
+          "type": "label"
+         },
+         {
+          "x1": 50,
+          "x2": 350,
+          "y1": 100,
+          "y2": 100,
+          "type": "wave",
+          "cycles": 5,
+          "amplitude": 20
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Mikrohullámú sütő és állóhullámok",
+       "discovery": "A mikrohullámú sütő működését 1945-ben fedezte fel Percy Spencer, aki véletlenül tapasztalta, hogy a radartechnológiával dolgozó eszközök által kibocsátott mikrohullámok megolvasztják a csokoládét a zsebében. Ez a felfedezés vezette el a mikrohullámú sütők kifejlesztéséhez, amelyek azóta elterjedtek a háztartásokban.",
+       "try_basic": "Egy egyszerű kísérlet lehet, ha a diákok reszelt sajtot és csokoládét helyeznek a mikrohullámú sütőbe, és megfigyelik, hogyan melegednek fel különböző sebességgel. Ezzel felfedezhetik az állóhullámok hatását.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "babe2241-ec7f-4ba6-8602-fbdb63bdf388",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 300 000 km/s",
+        "B) 150 000 km/s",
+        "C) 1 000 km/s",
+        "D) 3 000 km/s"
+       ],
+       "question": "Mi az elektromágneses hullámok terjedési sebessége vákuumban?",
+       "explanation": "Az elektromágneses hullámok terjedési sebessége vákuumban körülbelül 300 000 km/s, ami a fénysebesség.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hullám egy ciklusának hossza",
+        "B) A hullám terjedési sebessége",
+        "C) A hullám frekvenciája",
+        "D) A hullám energiája"
+       ],
+       "question": "Melyik mennyiség jellemzi a hullámhosszt?",
+       "explanation": "A hullámhossz a hullám egy teljes ciklusának hossza, amely a hullám terjedési tulajdonságait jellemzi.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A frekvencia és a hullámhossz szorzata egyenlő a terjedési sebességgel.",
+        "B) A hullámhossz és a terjedési sebesség összege a frekvenciával egyenlő.",
+        "C) A frekvencia és a terjedési sebesség különbsége a hullámhosszal egyenlő.",
+        "D) A terjedési sebesség és a hullámhossz arányos a frekvenciával."
+       ],
+       "question": "Hogyan kapcsolódik egymáshoz a hullámhossz, a terjedési sebesség és a frekvencia?",
+       "explanation": "A hullámhossz és a frekvencia szorzata egyenlő a terjedési sebességgel, ami a hullámok viselkedésének alapvető törvénye.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Röntgengép",
+        "B) Mikrofon",
+        "C) Infrakamera",
+        "D) Televízió"
+       ],
+       "question": "Melyik eszköz használ infravörös elektromágneses hullámokat a működéséhez?",
+       "explanation": "Az infrakamera infravörös elektromágneses hullámokat használ, hogy a hőmérsékletet észlelje és képeket készítsen.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Bluetooth",
+        "B) Lézer",
+        "C) Ultrahang",
+        "D) Röntgensugár"
+       ],
+       "question": "Melyik technológia használja a rádióhullámokat a kommunikációhoz?",
+       "explanation": "A Bluetooth technológia rádióhullámokat használ az eszközök közötti vezeték nélküli kommunikációhoz.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "ffb938a0-094d-42ad-807a-210e8fccd49b",
+   "title_hu": "Interferencia és holográfia",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "094b3072-85af-45c8-a00f-6bfbb7ab0c7f",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az interferencia a hullámok kölcsönhatása, amely során a hullámok összeadódnak vagy kioltják egymást. Képzelj el két kőhullámot, amelyek egy tóba dobva keletkeznek. Ahogy a hullámok terjednek, találkoznak egymással, és különböző alakú hullámformákat hoznak létre. Ez a jelenség a mindennapi életben is megfigyelhető, például amikor a hangok keverednek egy szobában, vagy amikor két különböző fényforrás fénye egy felületen találkozik.",
+       "type": "text",
+       "heading": "Mi az interferencia?",
+       "key_term": "interferencia"
+      },
+      {
+       "body": "A lézerfény különleges, mert párhuzamos és koherens, ami ideálissá teszi az interferencia jelenségeinek tanulmányozására. Ha a lézerfény egy résen halad át, a fény hullámfrontjai interferálnak, és érdekes mintázatok keletkeznek a falon. Ezeket a mintázatokat fényképezőgéppel megörökíthetjük, így láthatjuk az interferencia eredményét. Ez a technika a tudományos kutatások mellett művészi alkotások létrehozására is használható.",
+       "type": "text",
+       "heading": "Hogyan készíthetünk interferencia képeket lézerrel?",
+       "key_term": "lézer"
+      },
+      {
+       "body": "A holográfia a fény interferenciáját használja, hogy háromdimenziós képeket hozzon létre. Amikor egy lézerfénnyel megvilágítunk egy tárgyat, a fény visszaverődik róla, és egy másik fényforrással együtt interferál. Ebből a folyamatból születik meg a hologram, amely nem csupán sík képet ad, hanem mélységet is. Gondolj a holografikus kártyákra, amelyeket sokan ismernek a bankkártyákról vagy az ajándékkártyákról.",
+       "type": "text",
+       "heading": "A holográfia titkai",
+       "key_term": "holográfia"
+      },
+      {
+       "body": "Gábor Dénes magyar fizikus volt, aki a holográfia felfedezésével forradalmasította a fényképezést. 1947-ben dolgozta ki a holográfia alapjait, amiért később Nobel-díjat is kapott. Az ő munkája lehetővé tette, hogy a hologramokat a modern technológiában, például biztonsági elemekben vagy orvosi képalkotásban használják. Gábor Dénes felfedezései ma is hatással vannak a tudományos és technológiai fejlődésre.",
+       "type": "text",
+       "heading": "Gábor Dénes és a holográfia felfedezése",
+       "key_term": "Gábor Dénes"
+      },
+      {
+       "body": "A holográfia nemcsak tudományos területeken hasznos, hanem a mindennapi életben is találkozhatunk vele. Például a bankkártyák holografikus biztonsági elemei megakadályozzák a hamisítást. Emellett a hologramokat használják a szórakoztatóiparban is, például koncertfelvételeken, ahol holografikus előadásokkal szórakoztatják a közönséget. A holográfia tehát a technológia és a művészet határvonalán áll.",
+       "type": "text",
+       "heading": "Hogyan használjuk a holográfiát a mindennapi életben?",
+       "key_term": "holográfia"
+      }
+     ]
+    },
+    {
+     "block_id": "f5ef4a87-d37a-4995-854a-b5c87b9ee4a7",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal diák lézerpointert használ, hogy megvilágítson egy falat. A lézer (lézerfény) egy koherens fényforrás, amely párhuzamos, egy irányba haladó fényhullámokat bocsát ki. Ahogy a fény eléri a falat, a diák észreveszi, hogy a lézerfény nemcsak egy pontot világít meg, hanem egy sor csíkot is létrehoz a falon.",
+       "type": "story",
+       "heading": "A lézer fénye"
+      },
+      {
+       "body": "A diák megfigyeli, hogy a megvilágított csíkok váltakozó világos és sötét sávokból állnak. Ez az interferencia (interferencia) jelensége, ahol a lézerfény hullámai egymással kölcsönhatásba lépnek. A fény hullámai, amikor találkoznak, összeadódnak vagy kioltják egymást, így létrehozva a jellegzetes mintázatot.",
+       "type": "story",
+       "heading": "Interferencia mintázatok"
+      },
+      {
+       "body": "A diák úgy dönt, hogy megpróbál hologramot készíteni. Előkészít egy holografikus lemezt és egy másik lézerforrást. A lézerfény egy tárgyra irányul, majd a visszaverődő fény és a lézerfény egyesül a lemezen. Ezzel a módszerrel a holográfia (holográfia) eljárását alkalmazza, amely lehetővé teszi, hogy a tárgy háromdimenziós képe rögzítve legyen.",
+       "type": "story",
+       "heading": "Hologram készítése"
+      },
+      {
+       "body": "Miután a diák elkészítette a hologramot, megvilágítja azt egy másik lézerrel. A hologram a fény hullámait manipulálja, így a néző számára úgy tűnik, mintha a tárgy a levegőben lebegne. Ez a folyamat bemutatja, hogyan lehet a fény segítségével háromdimenziós képeket létrehozni, ami a holográfia lényege.",
+       "type": "story",
+       "heading": "Hologram megjelenítése"
+      },
+      {
+       "body": "A diák elgondolkodik egy híres tudós munkáján, aki a holográfia felfedezője volt. Rájön, hogy a hologramok nemcsak művészeti alkotások, hanem számos területen, például a biztonsági technológiában és az orvosi képalkotásban is használják. Ez a felismerés inspirálja őt, hogy többet tudjon meg a fény és a hullámok világáról.",
+       "type": "story",
+       "heading": "Egy tudós öröksége"
+      }
+     ]
+    },
+    {
+     "block_id": "39ab3216-4bb1-4e19-9671-1d0787658f34",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A lézer fénykibocsátása: gerjesztett atomok és koherens fény.",
+       "heading": "Lézer működése",
+       "description": "A lézer működését bemutató egyszerű diagram, amely ábrázolja a lézer fénykibocsátását és a gerjesztett állapotot.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Két hullám interferenciája: erősítés és gyengítés.",
+       "heading": "Interferencia jelensége",
+       "description": "Két hullám interferenciáját ábrázoló vázlat, amely mutatja a hullámok találkozását és az erősítést/gyengítést.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Az interferencia mintázata: világos és sötét sávok.",
+       "heading": "Interferencia mintázat",
+       "description": "Interferencia mintázatot ábrázoló grafikon, amely a különböző fényintenzitásokat mutatja a képernyőn.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Hologram készítése: lézerfény és tárgy kölcsönhatása.",
+       "heading": "Hologram elkészítése",
+       "description": "A hologram készítésének folyamatát bemutató keresztmetszet, amely ábrázolja a lézerfény és a tárgy kölcsönhatását.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A hologram rétegei: fényhullámok tárolása.",
+       "heading": "Hologram szerkezete",
+       "description": "A hologram rétegeit bemutató diagram, amely a holografikus kép kialakulásának lépéseit mutatja be.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Gábor Dénes életének mérföldkövei: a holográfia felfedezése.",
+       "heading": "Gábor Dénes élete",
+       "description": "Gábor Dénes életének fontos eseményeit bemutató idővonal, beleértve a holográfia felfedezését.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "Holografikus kép: háromdimenziós megjelenítés.",
+       "heading": "Holografikus kép megjelenítése",
+       "description": "Holografikus kép megjelenítését mutató fotó, amely a hologram háromdimenziós hatását illusztrálja.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "Interferencia a kommunikációban: hatékonyság és jelátvitel.",
+       "heading": "Interferencia alkalmazása a kommunikációban",
+       "description": "Az interferencia szerepét bemutató grafikon, amely a különböző kommunikációs rendszerek hatékonyságát ábrázolja.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "a3ac3276-33e8-41fc-9d9f-0b98be986b93",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A holográfiát ma már a biztonsági címkék, bankkártyák, valamint a szórakoztatóiparban, például koncertfelvételek során is alkalmazzák.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 50,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x1": 150,
+          "x2": 250,
+          "y1": 100,
+          "y2": 100,
+          "type": "wave",
+          "cycles": 3,
+          "amplitude": 10
+         },
+         {
+          "x1": 150,
+          "x2": 250,
+          "y1": 200,
+          "y2": 200,
+          "type": "wave",
+          "cycles": 3,
+          "amplitude": 10
+         },
+         {
+          "x": 170,
+          "y": 145,
+          "text": "Hologram",
+          "type": "label"
+         },
+         {
+          "x": 150,
+          "y": 85,
+          "text": "Fényhullám 1",
+          "type": "label"
+         },
+         {
+          "x": 150,
+          "y": 185,
+          "text": "Fényhullám 2",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Holográfia a mindennapokban",
+       "discovery": "A holográfiát 1947-ben Dennis Gabor fedezte fel, miközben az elektronmikroszkópiás képek javításán dolgozott. A holográfia célja az volt, hogy a háromdimenziós képek rögzítését és megjelenítését lehetővé tegye, ami forradalmasította a fényképezést és a vizuális kommunikációt.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "df63021a-8716-4ecf-8696-eb5ee320440b",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Koherens fényt bocsát ki.",
+        "B) Széles spektrumú fényt bocsát ki.",
+        "C) Csak infravörös fényt bocsát ki.",
+        "D) Csak látható fényt bocsát ki."
+       ],
+       "question": "Mi a lézer (lézersugár) alapvető tulajdonsága?",
+       "explanation": "A lézer koherens fényt bocsát ki, ami azt jelenti, hogy a fényhullámok fázisa összhangban van egymással.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Törés",
+        "B) Interferencia",
+        "C) Reflexió",
+        "D) Diffúzió"
+       ],
+       "question": "Milyen jelenség jön létre, amikor két vagy több lézerfény találkozik?",
+       "explanation": "Az interferencia a fényhullámok kölcsönhatásából származik, amely során a hullámok erősítik vagy gyengítik egymást.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A holográfia feltalálója.",
+        "B) Az első lézert feltaláló tudós.",
+        "C) A fényképezés atyja.",
+        "D) A hullámmechanika megalkotója."
+       ],
+       "question": "Ki volt Gábor Dénes?",
+       "explanation": "Gábor Dénes a holográfia feltalálója, amely a fény interferenciáját használja a háromdimenziós képek létrehozására.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Két lézerfény interferenciájának felvétele.",
+        "B) Csak egy lézerfény használata.",
+        "C) Átlagos fényforrások használata.",
+        "D) Csak tükrök alkalmazása."
+       ],
+       "question": "Milyen eljárás szükséges a hologramok létrehozásához?",
+       "explanation": "A hologramok létrehozásához két lézerfény interferenciáját kell rögzíteni, hogy a holografikus kép megjelenjen.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Váltakozó áramú fényforrást.",
+        "B) Lézert.",
+        "C) LED fényforrást.",
+        "D) Halogén izzót."
+       ],
+       "question": "Milyen típusú fényforrást használnak a holografikus képek készítéséhez?",
+       "explanation": "A holografikus képek készítéséhez lézert használnak, mivel a lézerfény koherens és stabil, ami elengedhetetlen az interferencia létrehozásához.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "89117c4b-47fb-4849-b2e5-304954f7a086",
+   "title_hu": "Mobiltelefon használatának hatásai",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "4be07cc3-ca3a-4631-9d37-eff255a1f751",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A mobiltelefonok napjaink egyik legfontosabb kommunikációs eszközei. Segítségükkel azonnal kapcsolatba léphetünk barátainkkal, családtagjainkkal, legyenek bárhol a világban. A mobiltelefonok lehetővé teszik az üzenetküldést, a hívásokat és az internetes böngészést is. A technológia fejlődésével a mobiltelefonok egyre több funkciót kínálnak, mint például a videohívás vagy a közösségi média használata, amelyek mindennapi életünk szerves részévé váltak.",
+       "type": "text",
+       "heading": "A mobiltelefonok és a kommunikáció",
+       "key_term": "mobiltelefon"
+      },
+      {
+       "body": "A mobiltelefonok használatának lehetséges ártalmairól sokféle vélemény létezik. Egyes kutatások szerint a mobiltelefonok sugárzása hozzájárulhat a különböző egészségügyi problémákhoz, például fejfájáshoz vagy alvászavarokhoz. Mások viszont azt állítják, hogy a mobiltelefonok használata biztonságos, ha betartjuk a megfelelő távolságot és időkorlátokat. Fontos, hogy tudatosan használjuk a telefonunkat, és figyeljünk a testünk jelzéseire.",
+       "type": "text",
+       "heading": "Lehetséges ártalmak: tudományos vita",
+       "key_term": "sugárzás"
+      },
+      {
+       "body": "A mobiltelefonok működéséhez szükséges hullámok az elektromágneses spektrum részei. Ezek a hullámok lehetővé teszik az információk, például hangok és adatok átvitelét. A mobiltelefonok által használt hullámok különböző frekvenciájúak, így a hívások és az üzenetek gyorsan és hatékonyan érkeznek meg. Gondolj csak bele, amikor a barátoddal videóhívást indítasz, a hullámok azonnal átvitték a képet és a hangot, mintha csak ott lennétek egymás mellett.",
+       "type": "text",
+       "heading": "A hullámok szerepe a mobiltelefonokban",
+       "key_term": "elektromágneses hullámok"
+      },
+      {
+       "body": "Az Audacity egy ingyenes digitális audiószerkesztő program, amely lehetővé teszi a hangfájlok egyszerű szerkesztését. E program segítségével könnyen készíthetünk zeneszámokat, podcastokat vagy akár saját hangüzeneteket. A hullámtani jellemzők, mint a frekvencia és az amplitúdó, segítenek megérteni, hogyan formálhatjuk a hangokat. Próbáld ki, hogy felveszel egy rövid beszélgetést, majd szerkeszd meg a hangot, hogy megtapasztald a program lehetőségeit!",
+       "type": "text",
+       "heading": "Digitális audiószerkesztés: Audacity",
+       "key_term": "Audacity"
+      },
+      {
+       "body": "A mobilinternet lehetővé teszi, hogy bármikor és bárhol hozzáférjünk az információkhoz. Ez a technológia forradalmasította a tanulást, hiszen most már az osztályterem határain kívül is tanulhatunk. Például, ha egy iskolai projektet készítesz, az internet segítségével azonnal kereshetsz forrásokat, videókat vagy cikkeket. Emellett a közösségi média platformok is a mobilinternet révén váltak népszerűvé, ahol könnyedén megoszthatod a gondolataidat és élményeidet.",
+       "type": "text",
+       "heading": "A mobilinternet hatása a mindennapokra",
+       "key_term": "mobilinternet"
+      },
+      {
+       "body": "A mobiltelefonok használata megváltoztatta a társadalmi kapcsolatainkat is. A barátainkkal való kapcsolattartás sosem volt ennyire egyszerű, hiszen egy üzenet vagy hívás elegendő ahhoz, hogy kapcsolatban maradjunk. Ugyanakkor fontos, hogy ne felejtsük el a személyes találkozókat sem, hiszen a valódi kapcsolatok építése elengedhetetlen a mentális egészségünk szempontjából. A mobiltelefonok tehát lehetőséget adnak a kapcsolattartásra, de nem helyettesíthetik a személyes interakciókat.",
+       "type": "text",
+       "heading": "A mobiltelefonok és a társadalmi kapcsolatok",
+       "key_term": "társadalmi kapcsolatok"
+      }
+     ]
+    },
+    {
+     "block_id": "c1748316-82cf-47dc-88b5-109555ab9b5f",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal éppen a mobiltelefonját használja, hogy felhívjon egy barátot. Az első lépés az, hogy a telefon kijelzőjén megnyomja a hívás gombot. Ezzel a telefon elektromágneses jelet generál, amely a mobilhálózaton keresztül elindul a legközelebbi bázisállomás felé.",
+       "type": "story",
+       "heading": "A kapcsolat kezdetén"
+      },
+      {
+       "body": "A bázisállomás fogadja a jelet, és digitális formában továbbítja azt a központi hálózatra. Ekkor a jel a levegőben terjed, mint egy hullám, és különböző frekvenciákon halad át, amelyek a mobilkommunikáció alapját képezik. A hullámok terjedése során különböző akadályokba ütközhetnek, például épületekbe vagy fába, ami befolyásolhatja a jel minőségét.",
+       "type": "story",
+       "heading": "A jel útja"
+      },
+      {
+       "body": "A központi hálózat feldolgozza a jelet, és továbbítja azt a hívott fél telefonjára. Ekkor a hívott fél telefonja is generál egy elektromágneses jelet, amely visszajut a bázisállomásra. Ez a folyamat a mobiltelefon használatának egyik alapvető mechanizmusa, amely a hullámok terjedésére épít.",
+       "type": "story",
+       "heading": "A bázisállomás szerepe"
+      },
+      {
+       "body": "A beszélgetés során a fiatalok információkat cserélnek, ami nemcsak a kapcsolatukat erősíti, hanem számos pszichológiai és szociális hatással is bír. A mobiltelefonok használata során azonban felmerülnek a lehetséges ártalmak, mint például a figyelemelterelés, a túlzott használat vagy a közvetlen társas kapcsolatok csökkenése.",
+       "type": "story",
+       "heading": "A kommunikáció hatásai"
+      },
+      {
+       "body": "A fiatalok a mobiltelefonjukon digitális audiószerkesztő programokat is használhatnak, mint például az Audacity. Ezzel megtanulják, hogyan lehet manipulálni a hanghullámokat, és megérthetik a digitális zene készítésének alapjait. Ez a tevékenység összeköti a technológiai tudást a kreatív kifejezéssel, miközben a mobiltelefonok használata új lehetőségeket teremt.",
+       "type": "story",
+       "heading": "Digitális eszközök szerepe"
+      }
+     ]
+    },
+    {
+     "block_id": "b564cc2f-a4ef-494c-aad5-9d841d3fc629",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A mobiltelefonok működéséhez szükséges rádióhullámok terjedése.",
+       "heading": "Mobiltelefon és hullámok",
+       "description": "Egy ábra, amely bemutatja a mobiltelefonok működéséhez használt rádióhullámokat. A diagramon látható, hogyan terjednek a hullámok a mobiltorony és a telefon között.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A hullámhossz és a frekvencia közötti kapcsolat.",
+       "heading": "Hullámhossz és frekvencia",
+       "description": "Egy grafikon, amely a hullámhossz (λ) és a frekvencia (f) közötti kapcsolatot mutatja be. Az ábrán látható, hogy a magasabb frekvenciák rövidebb hullámhosszal rendelkeznek.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A mobiltelefon használatának lehetséges egészségügyi hatásai.",
+       "heading": "Mobiltelefon használatának egészségügyi hatásai",
+       "description": "Egy keresztmetszeti ábra, amely bemutatja a mobiltelefonok használatának lehetséges egészségügyi hatásait, mint például a fejfájás, alvászavarok és a sugárzás hatása.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A digitális audiószerkesztés alapjai.",
+       "heading": "Digitális audiószerkesztés",
+       "description": "Egy vázlat, amely bemutatja a digitális audiószerkesztés alapjait, beleértve a hullámformát, a hangfrekvenciákat és a szerkesztési eszközöket.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A rádióhullámok szerepe a mobilkommunikációban.",
+       "heading": "Rádióhullámok és kommunikáció",
+       "description": "Egy diagram, amely bemutatja, hogyan működik a mobilkommunikáció, a rádióhullámok terjedését a mobiltelefon és a mobiltorony között.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A mobiltelefonok környezeti hatásai.",
+       "heading": "Mobiltelefon használatának környezeti hatásai",
+       "description": "Egy grafikon, amely bemutatja a mobiltelefonok előállításának és hulladékkezelésének környezeti hatásait, például az energiafelhasználást és a károsanyag-kibocsátást.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Információátvitel hullámok segítségével.",
+       "heading": "Hullámok és információátvitel",
+       "description": "Egy vázlat, amely bemutatja, hogyan történik az információ átvitele hullámok segítségével, például a digitális jelek modulálásával.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A mobiltelefonok társadalmi hatásai.",
+       "heading": "Mobiltelefonok és társadalmi hatások",
+       "description": "Egy diagram, amely bemutatja a mobiltelefonok társadalmi hatásait, például a kommunikációs szokások megváltozását és a kapcsolatok alakulását.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "31dd37a1-d1b1-459e-a95f-bbe90c18aae4",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A diákok a mobiltelefonjaik használatakor nap mint nap találkoznak a rádióhullámokkal, amelyek lehetővé teszik a hívások, üzenetek és internetes kapcsolatok létrejöttét.",
+       "sketch": {
+        "shapes": [
+         {
+          "x": 20,
+          "y": 20,
+          "text": "Mobiltelefon",
+          "type": "label"
+         },
+         {
+          "h": 100,
+          "w": 60,
+          "x": 30,
+          "y": 50,
+          "type": "box"
+         },
+         {
+          "x": 30,
+          "y": 160,
+          "text": "Rádióhullámok",
+          "type": "label"
+         },
+         {
+          "x1": 100,
+          "x2": 300,
+          "y1": 100,
+          "y2": 100,
+          "type": "wave",
+          "cycles": 5,
+          "amplitude": 20
+         },
+         {
+          "x": 310,
+          "y": 90,
+          "text": "(rádióhullám)",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A mobiltelefonok és a hullámok",
+       "discovery": "A mobiltelefonok működésének alapját a rádióhullámok képezik, amelyek létezését Heinrich Hertz igazolta kísérletileg 1887-ben, és Guglielmo Marconi volt az első, aki sikeresen alkalmazta őket távolsági kommunikációra 1895-ben. Marconi felfedezése lehetővé tette a vezeték nélküli kommunikációt, amely a modern mobiltelefonok alapját képezi.",
+       "try_basic": "Készíts egy egyszerű rádiót, amely képes érzékelni az FM-adásokat. Használhatsz egy régi fejhallgatót, egy kis darab rézdrótot és egy elemet az áramkörhöz.",
+       "try_advanced": "Készíts egy projektet, amelyben megvizsgálod a mobiltelefonok és a Wi-Fi jelek hatását a környezetre, például a jel erősségét különböző helyszíneken mérve."
+      }
+     ]
+    },
+    {
+     "block_id": "1e430d78-7ea8-44bb-ba6d-189c8159dac2",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Elektromágneses hullámokat",
+        "B) Mechanikai hullámokat",
+        "C) Hanghullámokat",
+        "D) Fényhullámokat"
+       ],
+       "question": "Milyen típusú hullámokat használnak a mobiltelefonok a kommunikáció során?",
+       "explanation": "A mobiltelefonok elektromágneses hullámokat használnak az információk továbbítására, amelyek rádiófrekvenciás tartományban működnek.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Fejfájás és alvászavarok",
+        "B) Jobb hallás",
+        "C) Magasabb energiaszint",
+        "D) Nincs hatása az egészségre"
+       ],
+       "question": "Milyen potenciális ártalmakat okozhat a mobiltelefonok használata?",
+       "explanation": "A mobiltelefonok használata összefüggésbe hozható fejfájással és alvászavarokkal, amelyek a hosszú távú használat következményei lehetnek.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Lehetséges biológiai hatások",
+        "B) Csak pozitív hatások",
+        "C) Nincs hatása",
+        "D) Csak pszichológiai hatások"
+       ],
+       "question": "Milyen hatással van a mobiltelefonok által kibocsátott elektromágneses sugárzás az emberi szervezetre?",
+       "explanation": "A mobiltelefonok által kibocsátott elektromágneses sugárzás lehetséges biológiai hatásokat gyakorolhat az emberi szervezetre, aminek kutatása folyamatban van.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az egészségügyi kockázatok csökkentése miatt",
+        "B) Mert drága",
+        "C) Mert nem praktikus",
+        "D) Mert nem divatos"
+       ],
+       "question": "Miért fontos a mobiltelefonok használatának korlátozása?",
+       "explanation": "A mobiltelefonok használatának korlátozása fontos az egészségügyi kockázatok csökkentése érdekében, különösen a gyermekek és fiatalok esetében.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Frekvencia és hullámhossz",
+        "B) Csak hullámhossz",
+        "C) Csak frekvencia",
+        "D) Nincs jellemzőjük"
+       ],
+       "question": "Milyen hullámtani jellemzője van az elektromágneses hullámoknak, amelyeket a mobiltelefonok használnak?",
+       "explanation": "Az elektromágneses hullámok jellemzői közé tartozik a frekvencia és a hullámhossz, amelyek meghatározzák a hullámok viselkedését és terjedését.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "3ce43223-0e6b-485b-bb8a-e12f15924a71",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Terjedési sebesség, hullámhossz, amplitúdó",
+      "B) Csak terjedési sebesség",
+      "C) Csak hullámhossz",
+      "D) Csak amplitúdó"
+     ],
+     "question": "Mi jellemzi a hanghullámokat?",
+     "explanation": "A hanghullámok jellemzéséhez elengedhetetlen a terjedési sebesség, hullámhossz és amplitúdó ismerete.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Elektromágneses hullám",
+      "B) Mechanikai hullám",
+      "C) Állóhullám",
+      "D) Vízihullám"
+     ],
+     "question": "Melyik hullámtípust figyelhetjük meg, amikor a levegőben terjed a hang?",
+     "explanation": "A hanghullámok mechanikai hullámok, mivel közvetítő közeg (pl. levegő) szükséges a terjedésükhöz.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A hullám terjedési sebessége",
+      "B) Két hullámcsúcs közötti távolság",
+      "C) A hullám amplitúdója",
+      "D) A hullám frekvenciája"
+     ],
+     "question": "Mi a hullámhossz (λ)?",
+     "explanation": "A hullámhossz a két egymást követő hullámcsúcs közötti távolságot jelenti.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Interferencia",
+      "B) Rezgés",
+      "C) Csillapodás",
+      "D) Diffrakció"
+     ],
+     "question": "Milyen jelenség jön létre, amikor két azonos frekvenciájú hullám találkozik?",
+     "explanation": "A két hullám találkozása interferenciát okoz, amely erősítheti vagy gyengítheti a hullámokat.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Röntgen",
+      "B) Infravörös",
+      "C) Mikrohullám",
+      "D) UV"
+     ],
+     "question": "Melyik elektromágneses hullámot használják a mikrohullámú sütőkben?",
+     "explanation": "A mikrohullámú sütők mikrohullámokat használnak az ételek melegítésére.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Zajcsökkentő anyagok használatával",
+      "B) Hangosabb zene hallgatásával",
+      "C) Több gépjármű használatával",
+      "D) Hétvégén is dolgozva"
+     ],
+     "question": "Hogyan csökkenthetjük a zajszennyezést a környezetünkben?",
+     "explanation": "A zajcsökkentő anyagok, mint például szigetelő panelek, segíthetnek a zajszennyezés csökkentésében.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Csak wifi",
+      "B) Csak bluetooth",
+      "C) Rádiós hullámok",
+      "D) Csak infravörös"
+     ],
+     "question": "Milyen elven működik a mobiltelefon?",
+     "explanation": "A mobiltelefonok rádiós hullámokat használnak az adatok és hangok továbbítására.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) A holográfia feltalálója",
+      "B) Fizikai Nobel-díjas",
+      "C) A lézer felfedezője",
+      "D) Minden válasz helyes"
+     ],
+     "question": "Ki volt Gábor Dénes?",
+     "explanation": "Gábor Dénes a holográfia feltalálója, fizikai Nobel-díjat nyert, és a lézerrel kapcsolatos munkái is jelentősek.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1248 @@
+{
+ "nat_id": "PHYS-910-14",
+ "topic_id": "783bd9d8-42e2-4e86-bd66-bb4170642efd",
+ "title_hu": "Környezetünk épségének megőrzése",
+ "grade": 10,
+ "lessons": [
+  {
+   "lesson_id": "c15a4272-967f-40c5-b31f-3ad8d963406f",
+   "title_hu": "Az ózonpajzs és az üvegházhatás",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "32886ed7-c950-4fb2-b7dd-0fdeed839d54",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az ózonpajzs a Föld légkörének egy rétege, amely ózont (O₃) tartalmaz. Ez a réteg véd meg minket az ultraibolya (UV) sugárzás káros hatásaitól, amelyek bőrgyulladást és bőrrákot okozhatnak. Gondolj csak arra, mennyire fontos, hogy napozás előtt napkrémet használj, hogy megvédd a bőrödet az UV-sugárzástól! Az ózonpajzs működése hasonlóan fontos, hiszen nélküle a napfény sokkal károsabb lenne számunkra.",
+       "type": "text",
+       "heading": "Az ózonpajzs szerepe",
+       "key_term": "ózonpajzs"
+      },
+      {
+       "body": "Az ózonpajzs védelme érdekében nemzetközi megállapodások születtek, mint például a Montreali Jegyzőkönyv, amely a klór-fluor-szenet (CFC) tartalmazó anyagok használatát korlátozza. Az évek során ezek az intézkedések sikeresek voltak, és a tudósok megfigyelték, hogy az ózonpajzs fokozatosan regenerálódik. Ez például azt jelenti, hogy a következő évtizedekben csökkenhet a bőrproblémák száma, ha sikerül megóvnunk ezt a védelmet.",
+       "type": "text",
+       "heading": "Intézkedések az ózonpajzs védelmében",
+       "key_term": "ózonpajzs"
+      },
+      {
+       "body": "Az üvegházhatás egy természetes folyamat, amely lehetővé teszi, hogy a Földön élhető hőmérséklet maradjon. A napfény a Föld felszínére érkezik, majd a Föld visszaveri a hőt. Az üvegházhatású gázok, mint a szén-dioxid (CO₂), megakadályozzák, hogy ez a hő gyorsan távozzon a légkörből. Képzeld el, hogy egy üvegházban ültetsz növényeket: az üvegház megtartja a hőt, így a növények jobban fejlődnek, de ha túl sok hőt tart meg, akkor az káros is lehet.",
+       "type": "text",
+       "heading": "Az üvegházhatás magyarázata",
+       "key_term": "üvegházhatás"
+      },
+      {
+       "body": "A szén-dioxid kibocsátásának csökkentése érdekében számos alternatív energiaforrást használhatunk, mint például a napenergia vagy a szélenergia. Gondolj csak a napelemekre, amelyek az otthonok tetején találhatók, és áramot termelnek a napfényből! Az elektromos autók is egy jó példa, hiszen ezek kevesebb üvegházhatású gázt bocsátanak ki, mint a hagyományos autók, és segítenek csökkenteni a légszennyezést.",
+       "type": "text",
+       "heading": "Az üvegházhatású gázok csökkentése",
+       "key_term": "üvegházhatás"
+      },
+      {
+       "body": "Egy egyszerű kísérlet segítségével bemutathatjuk a szén-dioxid üvegházhatását. Vegyél két átlátszó palackot, és töltsd meg az egyiket levegővel, a másikat pedig szén-dioxiddal (például szódavízzel). Helyezd a palackokat napfénybe, és mérd meg a hőmérsékletüket! A szén-dioxiddal teli palack valószínűleg melegebb lesz, ami megmutatja, hogy ez a gáz hogyan járul hozzá a globális felmelegedéshez.",
+       "type": "text",
+       "heading": "Kísérlet a szén-dioxid üvegházhatásának kimutatására",
+       "key_term": "üvegházhatás"
+      },
+      {
+       "body": "Mindenkinek van egy ökológiai lábnyoma, amely megmutatja, hogy mennyire használja a Föld erőforrásait. Gondolj arra, hogy milyen egyszerű lépésekkel csökkentheted ezt a lábnyomot: például kevesebb húst fogyasztva, tömegközlekedéssel járva vagy szelektíven gyűjtve a hulladékot. Ezek a kis változtatások segíthetnek a környezet megóvásában és a klímaváltozás hatásainak mérséklésében.",
+       "type": "text",
+       "heading": "Ökológiai lábnyom csökkentése",
+       "key_term": "ökológiai lábnyom"
+      },
+      {
+       "body": "A különböző modellek szerint a következő 20-30 évben drámai változások várhatók a klímában, például a hőmérséklet emelkedése és a szélsőséges időjárási események gyakoribbá válása. Fontos, hogy beszéljünk arról, hogyan tudunk cselekedni a veszélyek csökkentése érdekében, például a fenntartható energiaforrások használatával vagy a környezettudatos életmóddal. Az emberi cselekvés kulcsfontosságú lehet a jövőnk szempontjából.",
+       "type": "text",
+       "heading": "Jövőbeli klíma és emberi cselekvés",
+       "key_term": "klímaváltozás"
+      }
+     ]
+    },
+    {
+     "block_id": "cb862acc-5065-475c-920f-a16ac761fbdf",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy nap, amikor a napfény melegen süt a földre, a Föld atmoszférájába érkezik az ultraibolya sugárzás. Az ózonpajzs (ózonréteg), amely a Föld felszíne fölött helyezkedik el, megkezdi a munkáját. E réteg ózonmolekulái elnyelik a káros ultraibolya sugárzást, védve ezzel a földi életet. Ha az ózonpajzs nem lenne, a napfény közvetlenül érné el a Földet, ami súlyosan károsítaná az élőlényeket.",
+       "type": "story",
+       "heading": "A napfény érkezése"
+      },
+      {
+       "body": "Az emberek észlelik, hogy az ózonpajzs vékonyodik. Ennek megóvása érdekében nemzetközi megállapodásokat kötnek, mint például a Montreal Protokoll, amely megtiltja a klórtartalmú anyagok, így a freonok használatát. E lépések sikeresen hozzájárulnak az ózonréteg regenerálódásához, és megakadályozzák a további károsodást.",
+       "type": "story",
+       "heading": "A védelmi intézkedések"
+      },
+      {
+       "body": "A napfény nemcsak az ózonpajzson keresztül jut el a Földre, hanem a Föld felszínéről visszaverődve is. Az üvegházhatás (üvegházhatás) során a kibocsátott hő egy része a légkörben található üvegházhatású gázok, mint a szén-dioxid (CO2) és a metán (CH4), által elnyelődik. Ez a folyamat segít fenntartani a Föld hőmérsékletét, de a túlzott mennyiségű üvegházhatású gázok kibocsátása felmelegíti a bolygót.",
+       "type": "story",
+       "heading": "Az üvegházhatás megértése"
+      },
+      {
+       "body": "A klímaváltozás elleni küzdelem érdekében az emberek alternatív energiatermelési módszerek után kutatnak. A napelemek és szélerőművek telepítése egyre elterjedtebbé válik, csökkentve a fosszilis tüzelőanyagok használatát. Ezek az új technológiák segítenek csökkenteni az üvegházhatású gázok kibocsátását, ezzel hozzájárulva a környezet megóvásához.",
+       "type": "story",
+       "heading": "Alternatív energiák keresése"
+      },
+      {
+       "body": "Egy iskolai kísérlet során a diákok egyszerű eszközökkel bemutatják a szén-dioxid üvegházhatásának hatását. Egy átlátszó palackban szén-dioxidot generálnak, majd hőmérőt helyeznek el benne. A hőmérséklet emelkedését megfigyelve tapasztalják, hogy a szén-dioxid mennyisége közvetlen hatással van a hőmérsékletre, így a diákok közvetlenül érzékelik a jelenséget.",
+       "type": "story",
+       "heading": "A szén-dioxid kimutatása"
+      }
+     ]
+    },
+    {
+     "block_id": "d98db63e-b46b-4b15-a865-5eac5e965132",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az ózonpajzs védi a Földet az ultraibolya sugárzástól.",
+       "heading": "Ózonpajzs szerepe",
+       "description": "Egy diagram, amely bemutatja, hogy az ózonpajzs hogyan szűri meg az ultraibolya (UV) sugárzást, megjelenítve a Föld és az ózonréteg közötti távolságot.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Intézkedések az ózonpajzs védelmében.",
+       "heading": "Ózonpajzs védelme",
+       "description": "Egy vázlat, amely bemutatja azokat az intézkedéseket, amelyeket a világ különböző országai tettek az ózonpajzs védelme érdekében, például a CFC (klór-fluor-szenes vegyületek) használatának csökkentését.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Az üvegházhatás folyamata.",
+       "heading": "Üvegházhatás fizikai magyarázata",
+       "description": "Egy grafikon, amely bemutatja, hogyan működik az üvegházhatás: a napfény bejut a Föld légkörébe, majd a Föld által kibocsátott hő egy része visszaverődik a légkörben.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Alternatív energiatermelési módszerek.",
+       "heading": "Alternatív energiatermelés",
+       "description": "Egy diagram, amely bemutatja az alternatív energiatermelési módszereket, mint például a napenergia, szélenergia és vízenergia, valamint azok hatását az üvegházhatású gázok kibocsátására.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Szén-dioxid hatásának kísérleti kimutatása.",
+       "heading": "Szén-dioxid üvegházhatásának kimutatása",
+       "description": "Egy egyszerű kísérlet vázlata, amely bemutatja, hogyan lehet a szén-dioxid gáz hatását a hőmérsékletre mérni, például két üvegpalack és hőmérő segítségével.",
+       "visual_type": "kísérlet vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Tevékenységek az ökológiai lábnyom csökkentésére.",
+       "heading": "Ökológiai lábnyom csökkentése",
+       "description": "Egy vázlat, amely bemutatja, hogyan csökkenthetjük saját ökológiai lábnyomunkat, például a közlekedési szokások, energiafogyasztás és hulladékkezelés terén.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Klímamodellek előrejelzései.",
+       "heading": "Jövőbeli klímamodellek",
+       "description": "Egy grafikon, amely bemutatja különböző klímamodellek előrejelzéseit a következő 20-30 évben, például a hőmérséklet-emelkedést és csapadékváltozásokat.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Atomerőművek elhelyezkedése és jelentősége.",
+       "heading": "Atomerőművek világszerte",
+       "description": "Egy térkép, amely bemutatja a világ különböző országainak atomerőműveit, valamint azok villamosenergia-termelésében betöltött szerepét.",
+       "visual_type": "térkép"
+      }
+     ]
+    },
+    {
+     "block_id": "da3a2e77-a7d9-4f74-a834-8d81cc8d611f",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Az üvegházhatás jelensége mindennapjainkban is megfigyelhető, például amikor egy autóban parkolva a nap felmelegíti a belső teret, vagy amikor üvegházakban növényeket termesztünk.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 200,
+          "w": 200,
+          "x": 100,
+          "y": 50,
+          "type": "box"
+         },
+         {
+          "x": 150,
+          "y": 120,
+          "text": "Üvegház",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Az üvegházhatás kimutatása",
+       "discovery": "Az üvegházhatás felfedezése a 19. század közepére nyúlik vissza, amikor Joseph Fourier, francia tudós, először felhívta a figyelmet arra, hogy a Föld légkörének gázai, mint például a szén-dioxid, képesek megakadni a hőt, és ezzel hozzájárulnak a bolygó hőmérsékletének fenntartásához. Fourier munkája később alapja lett a klímaváltozás tudományának.",
+       "try_basic": "Egy egyszerű kísérlet: Vegyünk két átlátszó üveget, az egyiket töltsük meg vízzel, a másikat hagyjuk üresen. Helyezzük őket a napfénybe, és figyeljük meg, hogy a vízben lévő hőmérséklet hogyan változik a napfény hatására, összehasonlítva az üres üveggel.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "68d5f13f-c659-446c-9495-ff7d1a766051",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Megvédi a Földet az ultraibolya sugárzás nagy részétől.",
+        "B) Fokozza az ultraibolya sugárzás hatását.",
+        "C) Csökkenti az ózonréteg vastagságát.",
+        "D) Nincs hatása az ultraibolya sugárzásra."
+       ],
+       "question": "Mi a szerepe az ózonpajzsnak a Földet ért ultraibolya sugárzással kapcsolatban?",
+       "explanation": "Az ózonpajzs megvédi a Földet az ultraibolya sugárzás nagy részétől, ezzel védve az élőlényeket a káros hatásoktól.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az ózonréteg csökkentésére irányuló anyagok betiltása.",
+        "B) Az ózonréteg erősítése.",
+        "C) Az ózonnal kapcsolatos kutatások leállítása.",
+        "D) Az ózonpajzs megsemmisítése."
+       ],
+       "question": "Milyen intézkedéseket tettek az ózonpajzs védelme érdekében?",
+       "explanation": "Az ózonpajzs védelme érdekében betiltották az ózonréteg csökkentésére irányuló anyagokat, mint például a klór-fluor-szenes vegyületeket.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az üvegházhatású gázok elnyelik a Föld által kibocsátott hőt.",
+        "B) Az üvegházhatású gázok növelik a napfény intenzitását.",
+        "C) Az üvegházhatású gázok csökkentik a Föld hőmérsékletét.",
+        "D) Az üvegházhatású gázok nem befolyásolják a hőmérsékletet."
+       ],
+       "question": "Mi az üvegházhatás fizikai magyarázata?",
+       "explanation": "Az üvegházhatás során az üvegházhatású gázok elnyelik a Föld által kibocsátott hőt, így melegen tartják a légkört.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Szén-dioxid (CO2)",
+        "B) Nitrogén (N2)",
+        "C) Oxigén (O2)",
+        "D) Hidrogén (H2)"
+       ],
+       "question": "Melyik gáz számít üvegházhatású gázok közé?",
+       "explanation": "A szén-dioxid (CO2) egy fontos üvegházhatású gáz, amely hozzájárul a globális felmelegedéshez.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Alternatív energiaforrások használata.",
+        "B) Fosszilis tüzelőanyagok növelése.",
+        "C) Az erdők irtása.",
+        "D) Az ipari termelés fokozása."
+       ],
+       "question": "Milyen lehetőségek vannak az üvegházhatású gázok kibocsátásának csökkentésére?",
+       "explanation": "Az üvegházhatású gázok kibocsátásának csökkentésére alternatív energiaforrások, mint például nap- és szélenergia használata ajánlott.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "641a6a08-649c-4575-86da-81299b155b71",
+   "title_hu": "Nukleáris folyamatok és energiatermelés",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "3f76f9aa-8ee9-4b3b-95e0-d6781ee4daa4",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az atommag (nukleonokból álló középpont) az atom tömegének jelentős részét tartalmazza. Az atommagban található nukleonok lehetnek protonok és neutronok. A protonok pozitív töltésűek, míg a neutronok töltés nélküli részecskék. Az atommag stabilitása a benne lévő nukleonok közötti kölcsönhatás függvénye, ami meghatározza az atomfajtát és annak izotópjait.",
+       "type": "text",
+       "heading": "Mi az atommag?",
+       "key_term": "atommag"
+      },
+      {
+       "body": "Az izotópok (azonos elem, eltérő tömegszám) olyan atomok, amelyek azonos számú protonnal rendelkeznek, de különböző számú neutronnal. Például a szén-12 és a szén-14 izotópok különböző nukleonokkal bírnak. A stabil izotópok hosszú időn keresztül fennmaradnak, míg a radioaktív izotópok idővel lebomlanak, ami például a szén-14 esetében is megfigyelhető, és hasznos az archeológiában.",
+       "type": "text",
+       "heading": "Izotópok és stabilitásuk",
+       "key_term": "izotóp"
+      },
+      {
+       "body": "A maghasadás (nukleáris reakció, amikor egy nehéz atommag két vagy több kisebb atommagra bomlik) során hatalmas mennyiségű energia szabadul fel. Például a nukleáris erőművekben, mint a paksi atomerőmű, az urán-235 izotópok hasadása révén termelnek elektromos áramot. Ez a folyamat hasonló ahhoz, mint amikor egy nagyobb tűzijáték robbanásakor több kisebb tűzijátékot indítunk el.",
+       "type": "text",
+       "heading": "Maghasadás és annak folyamata",
+       "key_term": "maghasadás"
+      },
+      {
+       "body": "A magfúzió (két könnyű atommag egyesülése egy nehezebb atommaggá) a Nap energiájának forrása. Ez a folyamat az űrben zajlik, ahol a hidrogénatomok fúziója héliumot és hatalmas energia mennyiséget termel. A napfény, amit napjainkban napelemekkel hasznosítunk, tulajdonképpen a magfúzió eredménye, így a napenergia megújuló és környezetbarát energiaforrás.",
+       "type": "text",
+       "heading": "A magfúzió és a napenergia",
+       "key_term": "magfúzió"
+      },
+      {
+       "body": "Az atomerőművek, mint a paksi, a nukleáris energiát használják, míg a hőerőművek fosszilis tüzelőanyagokat égetnek el. A megújuló energiák, mint a szélerőművek és napelemek, környezetbarát alternatívák. Az atomerőművek előnye, hogy nagy mennyiségű energiát termelnek, de a radioaktív hulladék kezelése komoly kihívás. A megújuló energiaforrások hátránya, hogy időjárásfüggőek.",
+       "type": "text",
+       "heading": "Atomerőművek, hőerőművek és megújuló energia",
+       "key_term": "atomerőmű"
+      },
+      {
+       "body": "A nukleáris kölcsönhatás (atommagok közötti erőhatások) alapvető szerepet játszik a fúzió és hasadás során. E kölcsönhatások révén szabadul fel az energia, amelyet az atomreaktorokban hasznosítanak. A közvetlen energiaátvitel például a mobiltelefonokban használt indukciós töltéshez hasonlítható, ahol az energia átadásához szükséges kölcsönhatások zajlanak.",
+       "type": "text",
+       "heading": "Nukleáris kölcsönhatás és energiatermelés",
+       "key_term": "nukleáris kölcsönhatás"
+      },
+      {
+       "body": "Érdemes utánajárni, hogy mely országokban működnek atomerőművek és mekkora részesedésük van a villamosenergia-termelésben. Például Franciaországban a villamosenergia 70%-át nukleáris forrásból nyerik. Ezen információk segíthetnek megérteni, hogy a nukleáris energia hogyan formálja a globális energiapolitikát.",
+       "type": "text",
+       "heading": "Adatgyűjtés nukleáris energiáról",
+       "key_term": "energiatermelés"
+      }
+     ]
+    },
+    {
+     "block_id": "aab550bd-c477-4977-9650-5f51aa8d3941",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Amikor valaki felkapcsolja a villanyt, a szobában azonnal fény árad be. Ezen a ponton a villamos energia (energia) már eljutott a lámpához, de ahhoz, hogy ez megtörténjen, egy hosszú folyamat indult el.",
+       "type": "story",
+       "heading": "A világítás felkapcsolása"
+      },
+      {
+       "body": "A villamos energia előállítása egy atomerőműben kezdődik, ahol a maghasadás (nukleáris folyamat) során a nehéz atommagok, mint például az urán, atomjaira hasadnak. Ez a folyamat hatalmas mennyiségű hőt termel, amely vízgőzt hoz létre.",
+       "type": "story",
+       "heading": "Az atomerőmű működése"
+      },
+      {
+       "body": "A keletkezett gőz a turbinákhoz jut, ahol a gőz energiája mechanikai energiává alakul. A turbinák forgása generátorokat hajt meg, amelyek elektromos áramot termelnek. Itt már látható, hogy a nukleáris kölcsönhatás (a maghasadás) közvetlenül hozzájárul az áramtermeléshez.",
+       "type": "story",
+       "heading": "A gőz turbinák mozgatása"
+      },
+      {
+       "body": "A generátorok által előállított elektromos áram a transzformátorokhoz kerül, ahol a feszültség szintje emelkedik. Ez lehetővé teszi, hogy a villamos energia hosszú távolságokra eljusson, például a városokba, ahol a háztartások használják.",
+       "type": "story",
+       "heading": "Az elektromos áram eljuttatása"
+      },
+      {
+       "body": "Végül a villamos energia eljut a lakásokba, ahol a lámpák felkapcsolásakor a fény megjelenik. Ez a folyamat végigköveti a nukleáris energia felhasználását, kezdve a maghasadástól egészen a szobai világításig.",
+       "type": "story",
+       "heading": "A fény megjelenése"
+      }
+     ]
+    },
+    {
+     "block_id": "239c26df-83b5-4d79-b5d2-2b5fa1c81674",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az atommag összetétele: protonok (pozitív töltés) és neutronok (semleges töltés).",
+       "heading": "Atommag felépítése",
+       "description": "Az atommagot alkotó protonok és neutronok elhelyezkedése, valamint a közöttük lévő nukleáris kölcsönhatás bemutatása.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Izotópok: azonos protonszám, eltérő neutronok.",
+       "heading": "Nukleonok és izotópok",
+       "description": "Izotópok atommagjának neutron- és protonszámát ábrázoló grafikon, amely bemutatja, hogy ugyanannak az elemnek különböző izotópjai lehetnek.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Kötési energia: a mag stabilitásának mértéke.",
+       "heading": "Kötési energia",
+       "description": "A kötési energia és a magstabilitás közötti összefüggés bemutatása, ahol a stabilabb magok magasabb kötési energiával rendelkeznek.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Maghasadás: nehéz atommagok szétesése, energia kibocsátással.",
+       "heading": "Maghasadás folyamata",
+       "description": "A maghasadás során egy nehéz atommag két vagy több kisebb atommagra bomlik, miközben energia szabadul fel.",
+       "visual_type": "animáció"
+      },
+      {
+       "type": "visual",
+       "caption": "Magfúzió: könnyű atommagok egyesülése, hatalmas energia felszabadulással.",
+       "heading": "Magfúzió folyamata",
+       "description": "A magfúzió során két könnyű atommag egyesül egy nehéz atommaggá, szintén jelentős energia kibocsátásával.",
+       "visual_type": "animáció"
+      },
+      {
+       "type": "visual",
+       "caption": "Atomerőművek elhelyezkedése és a nukleáris energia aránya az országokban.",
+       "heading": "Atomerőművek világszerte",
+       "description": "A világ országainak térképe, amelyen jelölve vannak a működő atomerőművek helyszínei és a nukleáris energia részesedése a villamosenergiatermelésben.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "Energiatermelési módszerek: előnyök és hátrányok.",
+       "heading": "Hőerőművek és megújuló energiaforrások",
+       "description": "A különböző energiatermelési módszerek (hőerőművek, megújuló energiaforrások) előnyeinek és hátrányainak összehasonlítása grafikonon.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "2ce8ed73-9556-4d09-96c1-c0b0d9926c1d",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A nukleáris energia fontos szerepet játszik a világ energiaellátásában; sok országban, például Franciaországban, jelentős részesedéssel bír a villamosenergia-termelésben.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 100,
+          "w": 300,
+          "x": 50,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 70,
+          "y": 130,
+          "text": "Nukleáris reaktor",
+          "type": "label"
+         },
+         {
+          "r": 30,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 190,
+          "y": 150,
+          "text": "F",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 180,
+          "y2": 250,
+          "type": "arrow"
+         },
+         {
+          "x": 210,
+          "y": 230,
+          "text": "Energia",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Nukleáris energia a gyakorlatban",
+       "discovery": "A nukleáris energia felfedezése a 20. század elejére nyúlik vissza, amikor Marie Curie és más tudósok felfedezték a radioaktivitást. 1942-ben Enrico Fermi irányításával megépült a világ első működő nukleáris reaktora Chicagóban, amely a nukleáris energia hasznosításának alapjait teremtette meg.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "3f3ac56f-2f3c-4c0d-8886-9d1786d5dda4",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az atom középpontjában lévő részecskék összessége",
+        "B) Az atom külső elektronhéja",
+        "C) Az atom által kibocsátott energia",
+        "D) Az atomok közötti távolság"
+       ],
+       "question": "Mi az atommag?",
+       "explanation": "Az atommag az atom középpontjában található protonok és neutronok összessége, amelyek meghatározzák az atom azonosítóját és tömegét.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Két könnyű atommag egyesülése",
+        "B) Egy nehéz atommag két vagy több kisebb atommagra bomlása",
+        "C) Az atomok közötti kötési energia csökkenése",
+        "D) Az atommagok stabilizálódása"
+       ],
+       "question": "Mi a maghasadás?",
+       "explanation": "A maghasadás során egy nehéz atommag, például urán, két vagy több kisebb atommagra bomlik, miközben nagy mennyiségű energia szabadul fel.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Két könnyű atommag egyesülése egy nehéz atommag képzésére",
+        "B) Egy atommag spontán szétesése",
+        "C) Az atommagok közötti vonzó kölcsönhatás erősödése",
+        "D) Az atomok elektronjainak eltávolítása"
+       ],
+       "question": "Mi a magfúzió?",
+       "explanation": "A magfúzió során két könnyű atommag, például hidrogén, egyesülve nehéz atommagot képez, miközben szintén jelentős mennyiségű energia szabadul fel.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Az atom elektronja",
+        "B) Az atommagot alkotó protonok és neutronok",
+        "C) Az atom külső héján lévő részecskék",
+        "D) Az atomok közötti távolság"
+       ],
+       "question": "Mi a nukleon?",
+       "explanation": "A nukleonok az atommagban található protonok és neutronok, amelyek együttesen alkotják az atom tömegének legnagyobb részét.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Maghasadás",
+        "B) Magfúzió",
+        "C) Kémiai reakció",
+        "D) Fizikai változás"
+       ],
+       "question": "Melyik folyamat során szabadul fel a legtöbb energia?",
+       "explanation": "A magfúzió során, mint például a Napban zajló folyamatokban, a legnagyobb mennyiségű energia szabadul fel, összehasonlítva a maghasadással és más folyamatokkal.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "f13611c5-c238-4db5-bc8c-ab053706a7fa",
+   "title_hu": "Tudósok és sugárzások",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "4baf87b0-9a5a-4d29-acaf-6c8db2231116",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Wigner Jenő, Teller Ede és Szilárd Leó a 20. század kiemelkedő fizikusaiként hozzájárultak a nukleáris tudomány fejlődéséhez. Wigner a kvantummechanika és a nukleáris reaktorok elméletében végzett fontos munkát, míg Teller Ede a hidrogénbomba kifejlesztésében játszott szerepet. Szilárd Leó pedig a nukleáris láncreakció felfedezésében volt úttörő. Munkásságuk nemcsak a tudományra, hanem a társadalomra is hatással volt, hiszen a nukleáris energia felhasználása számos etikai kérdést vetett fel.",
+       "type": "text",
+       "heading": "Wigner Jenő, Teller Ede és Szilárd Leó munkássága",
+       "key_term": "Wigner Jenő, Teller Ede, Szilárd Leó"
+      },
+      {
+       "body": "Az alfa-sugárzás (α) nagy tömegű részecskéket (helium atommagokat) tartalmaz, és papíron vagy bőrön könnyen megállítható. A béta-sugárzás (β) elektronokat vagy pozitronokat jelent, amelyek sokkal kisebbek, így fémlemezekkel is védekezhetünk ellenük. A gamma-sugárzás (γ) viszont elektromágneses hullám, amely nagy energiájú, és nehezen állítható meg, csak vastag ólom- vagy betonrétegekkel. E sugárzások különböző élettani hatásai miatt fontos, hogy tudjuk, hogyan védekezhetünk ellenük.",
+       "type": "text",
+       "heading": "Alfa-, béta- és gamma-sugárzás",
+       "key_term": "alfa-sugárzás, béta-sugárzás, gamma-sugárzás"
+      },
+      {
+       "body": "A sugárzások élettani hatásai széles spektrumot ölelnek fel. Az alfa-sugárzás belsőleg, például a tüdőbe jutva komoly károkat okozhat, míg a béta-sugárzás bőrön keresztül is hatással lehet. A gamma-sugárzás a legveszélyesebb, mivel képes áthatolni a test szövetein, és sejtkárosodást okozhat. A sugárzás hatásai között szerepel a sejtek elhalása, a daganatok kialakulása és a genetikai mutációk megjelenése is.",
+       "type": "text",
+       "heading": "A sugárzások élettani hatásai",
+       "key_term": "élettani hatás, sugárzás"
+      },
+      {
+       "body": "A sugárzások elleni védekezés alapvetően három módszeren alapul: távolság, idő és árnyékolás. Például, ha egy röntgenvizsgálaton veszünk részt, a lehető legkevesebb időt töltjük a sugárforrás közelében. Az ólom és a beton használata a gamma-sugárzás ellen különösen hatékony, míg az alfa-sugárzás ellen a bőr vagy a ruházat is elegendő védelmet nyújt. Fontos, hogy tudatosan figyeljünk a környezetünkre és a sugárzások forrásaira.",
+       "type": "text",
+       "heading": "Védekezés a sugárzások ellen",
+       "key_term": "védekezés, sugárzás"
+      },
+      {
+       "body": "A rádium felfedezése Marie Curie és férje, Pierre Curie nevéhez fűződik. Ők voltak az elsők, akik felfedezték, hogy a rádium képes fényt kibocsátani, és ez a felfedezés forradalmasította a tudományt. Marie Curie munkássága során számos díjat kapott, köztük Nobel-díjat is. A Curie-család életében a tudomány iránti elkötelezettség és a sugárzás kutatása hatalmas szerepet játszott, de sajnos a sugárzás egészségügyi hatásai miatt Marie Curie is szenvedett a felfedezései következményeitől.",
+       "type": "text",
+       "heading": "A rádium és a Curie-család élete",
+       "key_term": "rádium, Curie-család"
+      },
+      {
+       "body": "A történelem során számos nukleáris baleset történt, amelyek komoly következményekkel jártak. A Csernobil baleset 1986-ban súlyos környezeti károkat okozott, és a filmek, mint a 'Csernobil', bemutatják a hatásait. A balesetek következtében sokan súlyos egészségügyi problémákkal küzdenek, és a területek hosszú távon lakhatatlanná váltak. Fontos, hogy a társadalom figyeljen ezekre az eseményekre, és tanuljon belőlük a jövő érdekében.",
+       "type": "text",
+       "heading": "Nukleáris balesetek és hatásaik",
+       "key_term": "nukleáris balesetek, Csernobil"
+      },
+      {
+       "body": "A modern fizikát érintő cikkek a napilapokban és online platformokon gyakran foglalkoznak a legújabb felfedezésekkel, mint például a kvantumszámítógépek vagy a megújuló energiaforrások. Fontos, hogy a diákok megtanulják, hogyan különböztessék meg a megbízható forrásokat a kevésbé hiteles információktól. A tudományos cikkek elemzése során figyelni kell a forrásokra, az írók szakmai hátterére és a cikkek tartalmának alátámasztottságára.",
+       "type": "text",
+       "heading": "Modern fizika a médiában",
+       "key_term": "modern fizika, médiában"
+      }
+     ]
+    },
+    {
+     "block_id": "37df7db1-1b7b-490f-bac4-0fab43027cbc",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal éppen a telefonját tölti. A töltő csatlakoztatása után az elektromos áram (I) áthalad a töltőkábelben, amely energiát juttat a telefon akkumulátorába. Ez az energia tárolódik, hogy később felhasználható legyen.",
+       "type": "story",
+       "heading": "A telefon töltése"
+      },
+      {
+       "body": "A töltőben lévő áramforrás (adapter) elektromos energiát alakít át, amely a hálózati feszültségből (AC) származik. Ez a feszültség a telefon töltéséhez szükséges egyenárammá (DC) alakul, így biztosítva a megfelelő működést. Az áramforrás működése során a feszültség és az áram átalakul, de a folyamat nem mentes a veszteségektől sem.",
+       "type": "story",
+       "heading": "Az áramforrás működése"
+      },
+      {
+       "body": "Miközben a telefon töltődik, a háttérben különböző sugárzások is jelen lehetnek. Az alfa-, béta- és gamma-sugárzás a természetes radioaktivitás következményeként léphet fel. Ezek a sugárzások különböző hatással lehetnek az élő szervezetekre: az alfa-sugárzás például a bőrön kívül nem hatol át, míg a gamma-sugárzás képes behatolni a testbe, így komolyabb élettani hatásokat is kiválthat.",
+       "type": "story",
+       "heading": "Sugárzások és hatásaik"
+      },
+      {
+       "body": "A sugárzások ellen való védekezéshez különböző módszerek állnak rendelkezésre. Az alfa-sugárzás ellen elegendő egy vékony réteg, például papír, míg a béta-sugárzás ellen már vastagabb anyagokra van szükség, mint például műanyag. A gamma-sugárzás ellen legjobban a nehézfémek, például ólom vagy vastag beton nyújt védelmet. A tudósok, mint Wigner Jenő, Teller Ede és Szilárd Leó, munkásságukkal hozzájárultak a sugárzások megértéséhez és a védekezési módszerek fejlesztéséhez.",
+       "type": "story",
+       "heading": "Védekezés a sugárzások ellen"
+      },
+      {
+       "body": "A modern fizikáról szóló cikkek és hírek áttekintése során fontos, hogy megbízható forrásokat válasszunk. A különböző napilapok és folyóiratok írásai a sugárzásokkal és azok hatásaival kapcsolatosan különböző színvonalú információkat közvetíthetnek. A tudományos diskurzusban a megbízhatóság kulcsszerepet játszik, hiszen a közvélemény tájékoztatása és a környezetünk védelme érdekében elengedhetetlen, hogy pontos és hiteles információkat kapjunk.",
+       "type": "story",
+       "heading": "A tudományos közlés fontossága"
+      }
+     ]
+    },
+    {
+     "block_id": "3de8a860-bbc4-4193-9f5b-72dc477adee8",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Wigner Jenő, a kvantummechanika egyik úttörője.",
+       "heading": "Wigner Jenő",
+       "description": "Egy idővonal, amely bemutatja Wigner Jenő életének főbb eseményeit, tudományos munkásságát és a Nobel-díját.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Teller Ede, a nukleáris fizika nagy alakja.",
+       "heading": "Teller Ede",
+       "description": "Teller Ede munkásságának vázlata, kiemelve a hidrogénbomba fejlesztésében betöltött szerepét és a nukleáris energia békés felhasználására tett javaslatait.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Szilárd Leó, a nukleáris láncreakció felfedezője.",
+       "heading": "Szilárd Leó",
+       "description": "Grafikon, amely bemutatja Szilárd Leó által javasolt nukleáris láncreakció folyamatát.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A három sugárzás összehasonlítása.",
+       "heading": "Alfa-, béta- és gamma-sugárzás",
+       "description": "Keresztmetszet, amely bemutatja az alfa-, béta- és gamma-sugárzások különböző tulajdonságait (pl. részecskék típusa, behatolási képesség, élettani hatások).",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A rádium és a Curie-család története.",
+       "heading": "Rádium",
+       "description": "Infografika, amely bemutatja a rádium felfedezését, felhasználását és a Curie-család életét, beleértve Marie Curie munkásságát.",
+       "visual_type": "infografika"
+      },
+      {
+       "type": "visual",
+       "caption": "A nukleáris balesetek hatásai a környezetre.",
+       "heading": "Nukleáris balesetek",
+       "description": "Diagram, amely a legismertebb nukleáris baleseteket (pl. Csernobil, Fukusima) és azok következményeit mutatja be.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A modern fizika médiabeli reprezentációja.",
+       "heading": "Modern fizika a médiában",
+       "description": "Grafikon, amely a különböző forrásokból származó modern fizikai cikkek megbízhatóságát és tartalmát hasonlítja össze.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "befc5de1-ae8b-40f5-a176-eb21445c3e88",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A radioaktív sugárzás mérése és monitorozása ma is fontos feladat, különösen atomerőművek környékén és a nukleáris balesetek utáni rehabilitációs területeken.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 200,
+          "w": 300,
+          "x": 50,
+          "y": 50,
+          "type": "box"
+         },
+         {
+          "x": 60,
+          "y": 70,
+          "text": "Csernobili reaktor",
+          "type": "label"
+         },
+         {
+          "r": 30,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 195,
+          "y": 145,
+          "text": "Radioaktív anyag",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 180,
+          "y2": 220,
+          "type": "arrow"
+         },
+         {
+          "x": 205,
+          "y": 225,
+          "text": "Sugárzás",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Sugárzás és környezeti hatások",
+       "discovery": "A csernobili atomreaktor-baleset 1986. április 26-án történt, amikor a reaktor 4-es blokkjában egy robbanás következett be, amely radioaktív anyagokat juttatott a légkörbe. A baleset utáni kutatások során a tudósok felfedezték, hogy a radioaktív sugárzás hosszú távú hatásai jelentős környezeti és egészségügyi problémákat okoztak, beleértve a rákos megbetegedések számának növekedését is.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "ba7d4c4d-d09c-4fed-93d4-a755154024e6",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Nobel-díjas fizikus, aki a kvantummechanikára tett jelentős hatást.",
+        "B) A Curie-család tagja, aki a rádium felfedezésében játszott szerepet.",
+        "C) Olyan tudós, aki a radioaktív bomlás felfedezéséért kapott Nobel-díjat.",
+        "D) A béta-sugárzás felfedezője."
+       ],
+       "question": "Ki volt Wigner Jenő?",
+       "explanation": "Wigner Jenő Nobel-díjas fizikus, akinek munkássága nagy hatással volt a kvantummechanikára és a nukleáris fizikára.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Alfa-sugárzás",
+        "B) Béta-sugárzás",
+        "C) Gamma-sugárzás",
+        "D) Röntgen-sugárzás"
+       ],
+       "question": "Melyik sugárzás típusa a legkevésbé penetráló?",
+       "explanation": "Az alfa-sugárzás a legkevésbé penetráló, mivel nagy tömegű és pozitív töltésű részecskékből áll, amelyek könnyen elakadnak az anyagban.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) Kisebb kárt okoz, mint az alfa-sugárzás.",
+        "B) Nagyobb kárt okoz, mint a gamma-sugárzás.",
+        "C) Kizárólag külsőleg hat az élő szervezetekre.",
+        "D) Kémiai változásokat okoz a sejtekben."
+       ],
+       "question": "Milyen hatással van a béta-sugárzás az élő szervezetekre?",
+       "explanation": "A béta-sugárzás ionizáló hatása miatt kémiai változásokat okozhat a sejtekben, ami sejtkárosodáshoz vezethet.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Nagy penetráló képességgel bír.",
+        "B) Pozitív töltésű részecskékből áll.",
+        "C) Nagyobb tömegű, mint az alfa-sugárzás.",
+        "D) Csak szilárd anyagokban terjed."
+       ],
+       "question": "Mi a gamma-sugárzás jellemzője?",
+       "explanation": "A gamma-sugárzás nagy penetráló képességgel bír, mivel elektromágneses sugárzás, ami nehezen akadályozható meg anyagokkal.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Papír vagy bőr.",
+        "B) Vastag beton.",
+        "C) Ólom.",
+        "D) Víz."
+       ],
+       "question": "Milyen anyaggal védekezhetünk az alfa-sugárzás ellen?",
+       "explanation": "Az alfa-sugárzás nagyon gyenge penetráló képességű, így papír vagy bőr is elegendő a blokkolásához.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "5b113ffa-8d8f-4684-bc55-1b8eac198ece",
+   "title_hu": "Radioaktív izotópok és környezeti hatásaik",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "551f8c7f-cffc-4069-973d-afabe287f5c2",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A radioaktív izotópok olyan atomok, amelyek instabilak, és idővel sugárzást bocsátanak ki. Ezek a sugárzások káros hatással lehetnek az élő szervezetekre, ha azok a környezetünkbe kerülnek. Például, ha egy radioaktív izotóp szennyezi a talajt vagy a vizet, az hosszú távon veszélyeztetheti az egészségünket. Fontos, hogy tudjuk, mely izotópok mire képesek, és hogyan hatnak ránk, hiszen a radioaktív anyagok nemcsak a környezetünkre, hanem az orvosi kezelések során is megjelenhetnek.",
+       "type": "text",
+       "heading": "A radioaktív izotópok és veszélyeik",
+       "key_term": "radioaktív izotópok"
+      },
+      {
+       "body": "A felezési idő (t1/2) az az időtartam, amely alatt egy radioaktív izotóp aktivitásának fele lebomlik. Például, ha egy izotóp felezési ideje 10 év, akkor 10 év múlva az eredeti mennyiség felére csökken. Ez a fogalom segít megérteni, mennyi idő alatt válik egy radioaktív anyag kevésbé veszélyessé. A felezési idő ismerete kulcsfontosságú a radioaktív anyagokkal való biztonságos bánásmódban.",
+       "type": "text",
+       "heading": "Felezési idő: Miért fontos?",
+       "key_term": "felezési idő"
+      },
+      {
+       "body": "Az aktivitás (A) azt mutatja meg, hogy egy radioaktív izotóp hány atommag bomlik le egy időegység alatt. Ezt becslésre használjuk, hogy megértsük, mennyire veszélyes egy anyag. Például, ha egy orvosi kezelés során radioaktív izotópot alkalmaznak, az aktivitás segít meghatározni, hogy mennyi sugárzás éri a betegeket. Az aktivitás mértékegysége a becquerel (Bq), amely a bomlások számát jelzi másodpercenként.",
+       "type": "text",
+       "heading": "Aktivitás: A radioaktivitás mértéke",
+       "key_term": "aktivitás"
+      },
+      {
+       "body": "A radioaktív nyomjelzés egy olyan technika, amely lehetővé teszi számunkra, hogy nyomon követhessük a különböző anyagok mozgását a környezetben. Például a tudósok radioaktív izotópokat használnak, hogy megfigyeljék a víz áramlását egy folyóban, vagy a tápanyagok felszívódását a növényekben. Ez segít megérteni a természetes folyamatokat és a környezeti hatásokat, amelyek befolyásolják az ökoszisztémákat.",
+       "type": "text",
+       "heading": "Radioaktív nyomjelzés a tudományban",
+       "key_term": "radioaktív nyomjelzés"
+      },
+      {
+       "body": "A gammakés egy olyan orvosi eszköz, amely radioaktív izotópokat használ a daganatok kezelésére. A gammakés precízen irányítja a sugárzást a daganatokra, miközben minimalizálja a környező egészséges szövetek károsodását. Ez a technológia forradalmasította a rákkezeléseket, és sok beteg számára adhat reményt a gyógyulásra.",
+       "type": "text",
+       "heading": "Gammakés: Orvosi alkalmazás",
+       "key_term": "gammakés"
+      },
+      {
+       "body": "A kormeghatározás során radioaktív izotópokat használnak, hogy meghatározzák egy ősi tárgy vagy fosszíliák korát. Például a szén-14 (14C) izotóp segítségével a régészek képesek megállapítani, hogy egy több ezer éves lelet mikor készült. Ez a módszer segít nekünk jobban megérteni a múltat és az emberi történelem fejlődését.",
+       "type": "text",
+       "heading": "Kormeghatározás: A múlt feltárása",
+       "key_term": "kormeghatározás"
+      }
+     ]
+    },
+    {
+     "block_id": "7e71f1b3-6ddf-4397-b8ad-7a33a2a869b0",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy orvosi rendelőben a sebész a gamma kés (gammakés) használatára készül. Ez a berendezés radioaktív izotópokat alkalmaz, hogy precízen célozza meg a daganatos sejteket, minimálisra csökkentve a környező egészséges szövetek károsodását.",
+       "type": "story",
+       "heading": "A gamma kés működése"
+      },
+      {
+       "body": "A gamma kés működéséhez szükséges radioaktív izotópok aktivitása, vagyis a radioaktív bomlás mértéke, kulcsszerepet játszik. Az izotópok aktivitása azt mutatja meg, hogy mennyi időn belül mennyi atom bomlik el. A sebész tudja, hogy az izotópok felezési ideje (felezési idő) pontosan meghatározza, mikor a legbiztonságosabb a kezelést elvégezni.",
+       "type": "story",
+       "heading": "Radioaktív izotópok aktivitása"
+      },
+      {
+       "body": "A gamma kés használata során a radioaktív izotópok a daganatos sejtekre irányulnak, és a célzott sugárzás elpusztítja azokat. A sebész és a nővér figyelik az eljárás során a berendezés kijelzőjét, amely mutatja az aktivitás csökkenését, ahogy az izotópok bomlanak és feleződnek.",
+       "type": "story",
+       "heading": "A kezelés hatása"
+      },
+      {
+       "body": "A kezelés után a rendelő környezeti hatásait is figyelemmel kísérik. A radioaktív izotópok kiszabadulása a levegőbe vagy a vízbe környezeti szennyeződést okozhat, ezért fontos, hogy megfelelő intézkedéseket tegyenek a biztonság érdekében. A szakemberek ezért rendszeresen ellenőrzik a környezeti mintákat, hogy biztosítsák, a radioaktív anyagok nem kerültek a környezetbe.",
+       "type": "story",
+       "heading": "Környezeti hatások figyelése"
+      },
+      {
+       "body": "A gamma kés és más orvosi alkalmazások folyamatosan fejlődnek. A kutatók új radioaktív izotópokat keresnek, amelyek még hatékonyabbak és biztonságosabbak lehetnek. A jövő orvosi kezeléseiben a radioaktív nyomjelzés (radioaktív nyomjelzés) technológiája is szerepet kaphat, amely segíthet a testben zajló folyamatok nyomon követésében és a betegségek korai diagnózisában.",
+       "type": "story",
+       "heading": "A jövő lehetőségei"
+      }
+     ]
+    },
+    {
+     "block_id": "a6e5b09d-7394-4223-a61c-ba5132e52626",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A leggyakoribb radioaktív izotópok és alkalmazásaik.",
+       "heading": "Radioaktív izotópok",
+       "description": "Egy diagram, amely bemutatja a leggyakoribb radioaktív izotópokat, mint például a szén-14 (C-14) és a jód-131 (I-131), valamint azok alkalmazási területeit.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A radioaktív izotóp aktivitásának csökkenése a felezési idő függvényében.",
+       "heading": "Felezési idő",
+       "description": "Egy grafikon, amely a felezési időt szemlélteti, bemutatva, hogy egy radioaktív izotóp aktivitása hogyan csökken az idő múlásával. Az x tengely az időt, az y tengely az aktivitást mutatja.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A radioaktív izotópok aktivitása és mértékegysége.",
+       "heading": "Aktivitás",
+       "description": "Egy vázlat, amely bemutatja az aktivitás fogalmát, a különböző radioaktív izotópok aktivitását Bq (Becquerel) mértékegységben, és a különbséget a stabil és instabil izotópok között.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A gammakés működése és a sugárzás eloszlása.",
+       "heading": "Gammakés alkalmazása",
+       "description": "Egy keresztmetszet, amely bemutatja, hogyan működik a gammakés (gammaterápiás eszköz) a daganatos szövetek célzott kezelésében, és a sugárzás eloszlását a testben.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A radioaktív nyomjelzés folyamata.",
+       "heading": "Radioaktív nyomjelzés",
+       "description": "Egy diagram, amely bemutatja, hogyan használják a radioaktív izotópokat nyomjelzésre, például víz vagy levegő szennyezőanyagok nyomon követésére.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A szén-14 kormeghatározás folyamata.",
+       "heading": "Kormeghatározás",
+       "description": "Egy grafikon, amely a szén-14 kormeghatározás elvét mutatja be, bemutatva, hogy a felezési idő hogyan segít meghatározni egy régészeti lelet korát.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A radioaktív izotópok környezeti hatásai.",
+       "heading": "Környezetvédelmi hatások",
+       "description": "Egy vázlat, amely bemutatja a radioaktív izotópok környezetre gyakorolt hatásait, például a szennyezést és a biológiai hatásokat.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "22b84e43-cc27-44bd-a816-52a81d298fbe",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A radioaktív izotópok, mint például a radium, ma is fontos szerepet játszanak az orvosi diagnosztikában és kezelésben, például a gammakés (radioterápia) alkalmazásában.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 40,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 180,
+          "y": 150,
+          "text": "Radium",
+          "type": "label"
+         },
+         {
+          "x1": 240,
+          "x2": 280,
+          "y1": 150,
+          "y2": 150,
+          "type": "arrow"
+         },
+         {
+          "x": 260,
+          "y": 140,
+          "text": "Röntgensugárzás",
+          "type": "label"
+         },
+         {
+          "h": 50,
+          "w": 100,
+          "x": 50,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 60,
+          "y": 120,
+          "text": "Gammakés",
+          "type": "label"
+         },
+         {
+          "h": 50,
+          "w": 80,
+          "x": 300,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 320,
+          "y": 120,
+          "text": "Kormeghatározás",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Radioaktív izotópok alkalmazásai",
+       "discovery": "Marie Curie és férje, Pierre Curie 1898-ban fedezték fel a radiumot, amelynek radioaktív tulajdonságait tanulmányozták. Céljuk az volt, hogy megértsék a radioaktivitás jelenségét, és felfedezésükkel hozzájárultak a radioaktív anyagok orvosi alkalmazásainak elterjedéséhez.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "1648d944-fe72-4c4e-883e-cbde97f31c51",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az az időtartam, ameddig egy radioaktív izotóp aktivitása a felére csökken.",
+        "B) Az az időtartam, ameddig egy radioaktív izotóp teljesen lebomlik.",
+        "C) Az az időtartam, ameddig egy radioaktív izotóp aktivitása növekszik.",
+        "D) Az az időtartam, ameddig egy izotóp stabil marad."
+       ],
+       "question": "Mi a felezési idő jelentése?",
+       "explanation": "A felezési idő az az időtartam, amely alatt egy radioaktív izotóp aktivitása a felére csökken.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Joule",
+        "B) Becquerel",
+        "C) Volt",
+        "D) Amper"
+       ],
+       "question": "Milyen mértékegységben fejezzük ki a radioaktív izotópok aktivitását?",
+       "explanation": "A radioaktív izotópok aktivitását becquerel (Bq) mértékegységben fejezzük ki, ami az 1 másodperc alatt bekövetkező bomlást jelenti.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Csak pozitív hatással vannak a környezetre.",
+        "B) Hosszú távú környezeti szennyezést okozhatnak.",
+        "C) Nincs hatásuk az élőlényekre.",
+        "D) Mindig biztonságosak az orvosi alkalmazás során."
+       ],
+       "question": "Mi a radioaktív izotópok használatának egyik potenciális veszélye?",
+       "explanation": "A radioaktív izotópok hosszú távú környezeti szennyezést okozhatnak, ami káros hatással lehet az élőlényekre.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) C-14",
+        "B) I-131",
+        "C) U-238",
+        "D) Pb-210"
+       ],
+       "question": "Melyik radioaktív izotópot használják gyakran orvosi képalkotásra?",
+       "explanation": "Az I-131 izotóp gyakran alkalmazott radioaktív izotóp orvosi képalkotás során, például a pajzsmirigy vizsgálatában.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Csak a növényekre van hatással.",
+        "B) Károsíthatja az élőlények sejtjeit.",
+        "C) Nincs hatása a környezetre.",
+        "D) Csak rövid távon okoz problémát."
+       ],
+       "question": "Milyen hatással van a radioaktív izotópok környezeti szennyezése az élőlényekre?",
+       "explanation": "A radioaktív izotópok környezeti szennyezése károsíthatja az élőlények sejtjeit, ami hosszú távú egészségügyi problémákhoz vezethet.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "c1a59b31-19b0-40fa-af07-f8967d70c1b0",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Megakadályozza az ultraibolya sugárzás bejutását a légkörbe.",
+      "B) Csökkenti a Föld hőmérsékletét.",
+      "C) Védi a Földet a meteoritok ellen.",
+      "D) Megakadályozza a légszennyezést."
+     ],
+     "question": "Mi az ózonpajzs szerepe a Föld védelmében?",
+     "explanation": "Az ózonpajzs (ózonréteg) megvédi a Földet az ultraibolya sugárzás káros hatásaitól, így csökkenti a bőrrák és más egészségügyi problémák kockázatát.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) CFC (klorofluorokarbon) tartalmú termékek betiltása.",
+      "B) A fosszilis tüzelőanyagok használatának növelése.",
+      "C) A közlekedés fokozása.",
+      "D) A fák ültetésének leállítása."
+     ],
+     "question": "Milyen intézkedéseket hoztak az ózonpajzs védelme érdekében?",
+     "explanation": "A CFC-k betiltása jelentős intézkedés az ózonpajzs védelmében, mivel ezek a vegyületek károsítják az ózont.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az üvegházgázok elnyelik a Föld által kibocsátott hőt.",
+      "B) Az üvegházgázok növelik a Föld hőmérsékletét.",
+      "C) Az üvegházgázok csökkentik a napfény bejutását.",
+      "D) Az üvegházgázok nem befolyásolják a klímát."
+     ],
+     "question": "Mi az üvegházhatás fizikai magyarázata?",
+     "explanation": "Az üvegházhatás során a Föld által kibocsátott hő egy része elnyelődik az üvegházgázok által, ami hozzájárul a globális felmelegedéshez.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Szélenergia",
+      "B) Szénalapú erőművek",
+      "C) Atomenergia",
+      "D) Gázalapú erőművek"
+     ],
+     "question": "Melyik az alábbi alternatív energiatermelési módszerek közül a legkörnyezetbarátabb?",
+     "explanation": "A szélenergia a legkörnyezetbarátabb, mivel nem bocsát ki üvegházhatású gázokat és fenntartható forrás.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Egy atommag két vagy több kisebb atommagra bomlik.",
+      "B) Két könnyű atommag egyesül egy nehezebb atommag képzésére.",
+      "C) Az atommagok stabilizálódnak.",
+      "D) Az atomok elektronjai elmozdulnak."
+     ],
+     "question": "Milyen folyamat a maghasadás?",
+     "explanation": "A maghasadás során egy nehéz atommag, például urán, két vagy több kisebb atommagra bomlik, miközben energia szabadul fel.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az alfa-sugárzás nehezen hatol át anyagon, míg a gamma-sugárzás erősen.",
+      "B) A béta-sugárzás nem ionizáló.",
+      "C) Az alfa-sugárzás gyorsan terjed.",
+      "D) A gamma-sugárzás nehezen mérhető."
+     ],
+     "question": "Mik az alfa-, béta- és gamma-sugárzások főbb tulajdonságai?",
+     "explanation": "Az alfa-sugárzás nagyobb részecskéket (hegyes atommagokat) tartalmaz, így nehezen hatol át anyagon, míg a gamma-sugárzás elektromágneses hullám, ami erősen áthatol.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Fizikus, aki hozzájárult a magfúzióhoz.",
+      "B) Fizikus, aki a kvantummechanika egyik alapítója.",
+      "C) Fizikus, aki az első atomerőművet építette.",
+      "D) Fizikus, aki az alfa-sugárzás felfedezője."
+     ],
+     "question": "Ki volt Wigner Jenő?",
+     "explanation": "Wigner Jenő a kvantummechanika egyik alapítója volt, és jelentős munkát végzett a nukleáris fizikában.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az idő, ameddig egy izotóp fele elbomlik.",
+      "B) Az idő, ameddig egy atommag stabilizálódik.",
+      "C) Az idő, ameddig egy atommagot képesek vagyunk észlelni.",
+      "D) Az idő, ameddig a radioaktív anyagok felhalmozódnak."
+     ],
+     "question": "Mi a felezési idő?",
+     "explanation": "A felezési idő az az időtartam, amely alatt egy radioaktív izotóp mennyisége a felére csökken.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

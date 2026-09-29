@@ -1,0 +1,1196 @@
+{
+ "nat_id": "PHYS-910-09",
+ "topic_id": "f6feaa40-b900-40cb-af40-b78cac7b25c6",
+ "title_hu": "Elektromosság a környezetünkben",
+ "grade": 10,
+ "lessons": [
+  {
+   "lesson_id": "a13e9da1-5288-4743-b8a8-77fe7fbd2da4",
+   "title_hu": "Az elektromos áram alapjai és mérése",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "12c4fe07-1303-436f-bd4f-4b4ed46af52a",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az elektromos áram (áram) a töltések áramlása, amely lehetővé teszi számunkra, hogy különböző eszközöket működtessünk. Gondoljunk csak a mobiltelefonunkra: amikor töltjük, az áram áramlik a töltőn keresztül a telefon akkumulátorába. Kísérletezhetünk is az árammal: ha egy pohár vízbe sót teszünk, az javítja a víz elektromos vezetőképességét, így a víz képes lesz vezetni az áramot, amit például egy LED-lámpával tesztelhetünk.",
+       "type": "text",
+       "heading": "Mi az elektromos áram?",
+       "key_term": "elektromos áram"
+      },
+      {
+       "body": "Az áramerősség (I) megmutatja, hogy mennyi töltés áramlik át egy adott ponton egy másodperc alatt. Az áramerősség mérése fontos, hiszen segít megérteni, hogy az áramkörünk mennyire hatékony. Egy egyszerű kísérlet során használjunk ampermérőt, amelyet beépítünk egy áramkörbe, például egy LED-lámpa és egy galvánelem között. A mért értékekből láthatjuk, mennyi áramot használ a lámpa.",
+       "type": "text",
+       "heading": "Áramerősség mérése",
+       "key_term": "áramerősség"
+      },
+      {
+       "body": "A feszültség (U) az elektromos potenciálkülönbség, amely meghatározza, hogy mennyi energiát kap az áramkör. A legfontosabb egyenáramú áramforrások közé tartozik a galvánelem, a gépkocsi- és mobiltelefon-akkumulátorok, valamint a napelemek. Például a napelemek az energiát a napfényből nyerik, és feszültséget generálnak, amelyet felhasználhatunk különböző eszközök működtetésére.",
+       "type": "text",
+       "heading": "Feszültség és áramforrások",
+       "key_term": "feszültség"
+      },
+      {
+       "body": "Ohm törvénye kimondja, hogy az áramerősség (I) és a feszültség (U) arányosak az ellenállással (R). Ez a törvény lehetővé teszi számunkra, hogy kiszámoljuk az áramkörünk működését. Például, ha ismerjük az áramerősséget és az ellenállást, kiszámíthatjuk a feszültséget. Ezt a törvényt számos gyakorlati alkalmazásban használjuk, például a telefonunk töltésekor.",
+       "type": "text",
+       "heading": "Ohm törvénye",
+       "key_term": "Ohm-törvénye"
+      },
+      {
+       "body": "Az ellenállás (R) az a tulajdonság, ami megakadályozza az áram szabad áramlását. Kísérletezhetünk különböző anyagok ellenállásával, például grafitbéllel vagy ellenálláshuzallal. Ha ezeket az anyagokat beépítjük egy áramkörbe, és méréseket végzünk, láthatjuk, hogy az egyes anyagok eltérően viselkednek az árammal szemben. Ez segít megérteni, hogy miért használunk különböző anyagokat az elektromos eszközökben.",
+       "type": "text",
+       "heading": "Ellenállás vizsgálata",
+       "key_term": "ellenállás"
+      },
+      {
+       "body": "Egy izgalmas kísérlet lehet, ha gyümölcsökből vagy zöldségekből készítünk elektromos telepeket. Például egy citrom és egy réz- és egy vasszeget használva feszültséget generálhatunk. Az így kapott feszültség mérésével megértjük, hogyan működnek az elektromos áramforrások, és hogy a természetes anyagok is képesek elektromosságot termelni.",
+       "type": "text",
+       "heading": "Elektromos telepek készítése",
+       "key_term": "elektromos telepek"
+      }
+     ]
+    },
+    {
+     "block_id": "31ae43cd-037f-4289-bc75-22178f6e2af2",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal előveszi a telefonját, és az akkumulátor szintje alacsonyra csökkent. Először is, megkeresi a töltőt, majd bedugja a konnektorba. Ezzel megkezdődik a folyamat, amely során az elektromos áram elkezd áramlani a töltőből a telefon akkujába.",
+       "type": "story",
+       "heading": "A töltő csatlakoztatása"
+      },
+      {
+       "body": "Miközben a telefon töltődik, a fiatal észreveszi, hogy a töltő hőmérséklete emelkedik. Ez a jelenség a töltő áramerősségének függvénye, amelyet egy egyszerű áramkörben mérni lehetne. Ha lenne egy árammérő, láthatná, hogy mennyi áram folyik a töltőből a telefonba.",
+       "type": "story",
+       "heading": "Az áramerősség mérése"
+      },
+      {
+       "body": "A fiatal emlékszik arra, hogy az áramkör működéséhez feszültség is szükséges. Az Ohm-törvénye szerint a feszültség egyenlő az áramerősség és az ellenállás szorzataként. A töltő feszültsége megmondja, hogy milyen erővel tudja az áramot a telefonba juttatni, míg az ellenállás a telefon áramkörében határozza meg, mennyi áram folyik át rajta.",
+       "type": "story",
+       "heading": "A feszültség és az Ohm-törvény"
+      },
+      {
+       "body": "Később a fiatal barátaival gyümölcsből készít elektromos telepeket. Citromot és réz, valamint vas szegeket használnak. Méréseik során feszültséget mérnek a gyümölcsök között, és tapasztalják, hogy a különböző gyümölcsök eltérő feszültséget produkálnak, ami a gyümölcsök savasságától és a fémek elektródpotenciáljától függ.",
+       "type": "story",
+       "heading": "Gyümölcsből készült elektromos telep"
+      },
+      {
+       "body": "A fiatalok ezután egy egyszerű áramkört építenek ellenálláshuzallal, és megmérik a feszültséget és az áramerősséget. Ohm-törvénye segítségével kiszámítják az ellenállást, és felfedezik, hogy hogyan változik az áramerősség, ha a feszültség emelkedik vagy csökken. Ezzel a gyakorlattal a fizikai mennyiségek közötti összefüggéseket tanulmányozzák.",
+       "type": "story",
+       "heading": "Ohm-törvény alkalmazása"
+      }
+     ]
+    },
+    {
+     "block_id": "ecd4cdc4-44a2-415f-9611-dc3fa87c9bd6",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az elektromos áram áramlása egy egyszerű áramkörben.",
+       "heading": "Az elektromos áram fogalma",
+       "description": "Egy egyszerű áramkör, amelyben egy galvánelem, egy izzó és egy kapcsoló található. A diagram bemutatja, hogyan áramlik az elektromos áram a galvánelemtől az izzóig, amikor a kapcsolót bekapcsolják.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az áramerősség mérése árammérő segítségével.",
+       "heading": "Áramerősség mérése",
+       "description": "Egy árammérő (ampermérő) elhelyezése az áramkörben, amely megmutatja az áramerősség (I) mértékét. A vázlaton látható, hogy az árammérőt sorosan kell bekötni az áramkörbe.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Egyenáramú áramforrások feszültsége és kapacitása.",
+       "heading": "Egyenáramú áramforrások",
+       "description": "Egy grafikon, amely bemutatja a különböző egyenáramú áramforrások feszültségét (V) és kapacitását (Ah). A galvánelem, gépkocsiakkumulátor és napelem adatai láthatók.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Ohm törvénye: a feszültség, áramerősség és ellenállás kapcsolata.",
+       "heading": "Ohm törvénye",
+       "description": "Egy diagram, amely bemutatja Ohm törvényét: V = I * R. A diagramon látható a feszültség (V), áramerősség (I) és ellenállás (R) közötti kapcsolat.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Ellenállás vizsgálata különböző anyagok esetében.",
+       "heading": "Ellenállás vizsgálata",
+       "description": "Egy keresztmetszeti ábra, amely bemutatja a grafitbél, szénrúd és ellenálláshuzal ellenállását. Az ábra tartalmazza a mért értékeket és a különböző anyagok ellenállásának mértékét.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Elektromos telepek készítése gyümölcsökből.",
+       "heading": "Elektromos telepek gyümölcsből",
+       "description": "Egy fotó, amelyen látható, hogyan készülnek elektromos telepek burgonyából, citromból és réz, vas szegekből. Az ábra mutatja a feszültségméréseket is.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "Ohm törvényének alkalmazása: példa számítás.",
+       "heading": "Ohm törvényének alkalmazása",
+       "description": "Egy példa Ohm törvényének alkalmazására: egy áramkörben 12 V feszültség és 4 Ω ellenállás esetén az áramerősség kiszámítása: I = V / R = 12 V / 4 Ω = 3 A.",
+       "visual_type": "példaszámítás"
+      }
+     ]
+    },
+    {
+     "block_id": "bb84ca69-3442-4ea1-b1de-51fe26d9b550",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A gyümölcsök és zöldségek elektromos áramkörökhöz való használata ma is népszerű kísérlet iskolákban, ahol a diákok megtapasztalhatják az elektromosság alapjait, miközben szórakoztató módon kísérleteznek a különböző anyagokkal.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 60,
+          "w": 20,
+          "x": 50,
+          "y": 100,
+          "type": "battery"
+         },
+         {
+          "r": 30,
+          "x": 150,
+          "y": 100,
+          "type": "circle"
+         },
+         {
+          "r": 30,
+          "x": 250,
+          "y": 100,
+          "type": "circle"
+         },
+         {
+          "x": 150,
+          "y": 80,
+          "text": "Gyümölcs",
+          "type": "label"
+         },
+         {
+          "x": 250,
+          "y": 80,
+          "text": "Zöldség",
+          "type": "label"
+         },
+         {
+          "x1": 70,
+          "x2": 150,
+          "y1": 130,
+          "y2": 130,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x1": 150,
+          "x2": 250,
+          "y1": 130,
+          "y2": 130,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x1": 70,
+          "x2": 70,
+          "y1": 130,
+          "y2": 100,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x1": 250,
+          "x2": 250,
+          "y1": 130,
+          "y2": 100,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x": 90,
+          "y": 150,
+          "text": "I",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Gyümölcsök és zöldségek elektromos áramkörökben",
+       "discovery": "Az elektromos áram felfedezése szorosan összefonódik Alessandro Volta nevével, aki 1800-ban készítette el az első elektromos elemet, a Volta-oszlopot, amely fémek és savas oldatok kombinációjával működött. E felfedezés nyomán sokan kísérleteztek különböző anyagokkal, hogy megértsék az elektromosság működését.",
+       "try_basic": "Készíts egy egyszerű áramkört egy citromból, réz- és cinkérméből. Csatlakoztasd az érme két végét egy LED-hez, és figyeld meg, hogy világít-e!",
+       "try_advanced": "Próbáld ki különböző gyümölcsök és zöldségek feszültségét, és hasonlítsd össze az eredményeket. Mérd meg a feszültséget egy multiméter segítségével, és készítsd el a méréseid grafikonját."
+      }
+     ]
+    },
+    {
+     "block_id": "9cf47a23-ede9-4408-b8be-8a7dec243ca5",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az elektromos töltések áramlása egy vezetőben.",
+        "B) Az elektromos feszültség mértéke.",
+        "C) Az elektromos áramforrás teljesítménye.",
+        "D) Az ellenállás mértéke."
+       ],
+       "question": "Mi az elektromos áram (I) definíciója?",
+       "explanation": "Az elektromos áram a töltések mozgását jelenti egy vezetőben, amely lehetővé teszi az elektromos energia átvitelét.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Volt (V)",
+        "B) Amper (A)",
+        "C) Ohm (Ω)",
+        "D) Watt (W)"
+       ],
+       "question": "Melyik mértékegység jelöli az áramerősséget (I)?",
+       "explanation": "Az áramerősség mértékegysége az amper (A), amely a töltések áramlásának sebességét méri.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) I = U/R",
+        "B) U = I/R",
+        "C) R = U/I",
+        "D) U = I * R"
+       ],
+       "question": "Mi Ohm törvénye?",
+       "explanation": "Ohm törvénye kimondja, hogy a feszültség (U) egyenlő az áramerősség (I) és az ellenállás (R) szorzataként.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Galvánelem",
+        "B) Napelem",
+        "C) Váltakozó áramú generátor",
+        "D) Akkumulátor"
+       ],
+       "question": "Melyik eszköz nem számít egyenáramú áramforrásnak?",
+       "explanation": "A váltakozó áramú generátor AC (váltakozó áram) formájában termel áramot, míg a galvánelem, akkumulátor és napelem egyenáramot (DC) állít elő.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Az áramerősség növekszik.",
+        "B) Az áramerősség csökken.",
+        "C) Az áramerősség változatlan marad.",
+        "D) Az áramerősség először növekszik, majd csökken."
+       ],
+       "question": "Milyen hatással van az ellenállás (R) növekedése az áramerősségre (I) egy állandó feszültség (U) mellett?",
+       "explanation": "Ohm törvénye szerint, ha a feszültség állandó, az ellenállás növekedésével az áramerősség csökken.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "d2a6601c-be0d-4ed8-a54f-04e2ce1e0b02",
+   "title_hu": "Áramkörök és ellenállások vizsgálata",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "aea70483-ec68-467c-9e86-4039b46e0ba3",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az ellenállás (R) a vezetők árammal szembeni ellenállását jelzi. Gondolj csak bele, amikor a telefonod töltője melegszik, az az ellenállás miatt van. A hőmérséklet emelkedésével az anyagok ellenállása változik. Például egy termisztor, amely egy hőmérséklet-érzékelő, az áramkörben a hőmérséklet növekedésével csökkenti az ellenállását, így több áramot enged át. Ez a jelenség a modern okoseszközökben is megtalálható, például a hőmérséklet-szabályozásban.",
+       "type": "text",
+       "heading": "Mi az ellenállás?",
+       "key_term": "ellenállás"
+      },
+      {
+       "body": "A soros kapcsolásban az elemek egymás után, egy vonalban helyezkednek el. Ha például egy LED fényforrást és egy ellenállást sorba kötünk, a teljes áramkör csak akkor működik, ha az összes elem hibátlanul működik. Ez olyan, mint egy sorban álló baráti társaság: ha az egyik barát kiszáll, az egész sor megáll. A soros kapcsolás előnye, hogy egyszerű, de hátránya, hogy ha egy elem megsérül, az egész rendszer leáll.",
+       "type": "text",
+       "heading": "Soros kapcsolás: az áramkör szívverése",
+       "key_term": "soros kapcsolás"
+      },
+      {
+       "body": "A párhuzamos kapcsolásban az elemek külön utakon csatlakoznak, így ha az egyik elem meghibásodik, a többiek továbbra is működnek. Gondolj csak egy szobára, ahol több lámpa világít. Ha az egyik lámpa kiég, a többi még mindig világít. A párhuzamos kapcsolás előnye, hogy biztosítja a folyamatos működést, például a modern okostelefonok töltésénél is, ahol több áramforrás párhuzamosan működik a gyorsabb töltés érdekében.",
+       "type": "text",
+       "heading": "Párhuzamos kapcsolás: több út a fényhez",
+       "key_term": "párhuzamos kapcsolás"
+      },
+      {
+       "body": "A fényforrások teljesítménye (P) a feszültség (U) és az áramerősség (I) szorzataként számítható: P = U × I. Ha például egy LED világítót használunk, a fényerejét a teljesítményének változtatásával befolyásolhatjuk. A modern világban a fényforrások, mint a LED-ek és a fénycsövek, energiatakarékosak, ami csökkenti az áramfogyasztást és a villanyszámlát. Az okostelefonokban is találkozhatunk ezzel a technológiával, ahol a képernyő fényereje automatikusan állítódik a környezeti fényviszonyokhoz.",
+       "type": "text",
+       "heading": "Fényforrások teljesítménye",
+       "key_term": "teljesítmény"
+      },
+      {
+       "body": "Az emberi test ellenállása (R) változó, és számos tényezőtől függ, például a bőrfelület nedvességétől és a test hőmérsékletétől. Mérésekor egy ellenállásmérő műszert használhatunk, amely megmutatja, mennyi áram tudna átfolyni rajtunk. Ez fontos lehet például az érintés nélküli bankkártyás fizetés során, ahol a testünk ellenállásának mérése segíti a biztonságos tranzakciót. A testünk ellenállása segít megérteni, hogyan hatnak ránk az elektromos áramok.",
+       "type": "text",
+       "heading": "Az emberi test ellenállása",
+       "key_term": "emberi test ellenállása"
+      }
+     ]
+    },
+    {
+     "block_id": "e73200e7-d253-4b09-aaf8-3423fae9cd9d",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal, amikor sötétedik, felkapcsolja a szobájában a lámpát. Ekkor a kapcsoló zárja az áramkört, lehetővé téve az elektromos áram (I) áthaladását a vezetékeken.",
+       "type": "story",
+       "heading": "A fényforrás felkapcsolása"
+      },
+      {
+       "body": "Ahogy az áram áthalad a lámpán, a feszültség (U) hatására az izzó fénye felgyullad. A lámpában lévő ellenállás (R) az áramot korlátozza, így a fénye a megfelelő teljesítménnyel (P = U × I) világít.",
+       "type": "story",
+       "heading": "Az áramkör működése"
+      },
+      {
+       "body": "A lámpa használatával a hőmérséklet emelkedik, és ezáltal az izzó ellenállása is változik. A termisztor, amely a hőmérséklet változását érzékeli, a hőmérséklet emelkedésével együtt a lámpa fényerejét is befolyásolja.",
+       "type": "story",
+       "heading": "A hőmérséklet hatása az ellenállásra"
+      },
+      {
+       "body": "Egy barátja, aki szintén lámpát használ, megjegyzi, hogy az ő izzója egy másik áramkörben van, ahol a lámpák párhuzamosan vannak kapcsolva. Ez azt jelenti, hogy ha az egyik lámpa kiég, a többiek továbbra is világítanak, mivel mindegyik a teljes feszültséget kapja.",
+       "type": "story",
+       "heading": "Soros és párhuzamos kapcsolás"
+      },
+      {
+       "body": "A fiatalok kísérletet végeznek, hogy megmérjék a különböző fényforrások teljesítményét és fényerejét. Feszültséget és áramerősséget mérnek, hogy kiszámolják a teljesítményt, miközben a barátok összehasonlítják a hőmérséklet és az ellenállás hatását az izzók fényerejére.",
+       "type": "story",
+       "heading": "Kísérleti vizsgálatok"
+      }
+     ]
+    },
+    {
+     "block_id": "5f37a20e-b608-4dee-9cc9-c1c77c8cbe8c",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Egyszerű áramkör fényforrással és termisztorral",
+       "heading": "Egyszerű áramkör",
+       "description": "Az áramkörben egy fényforrás (pl. izzó) és egy termisztor (hőmérséklet-érzékelő) látható, amely a feszültség és áramerősség mérésére szolgál.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Ellenállás hőmérsékletfüggése",
+       "heading": "Ellenállás hőmérsékletfüggése",
+       "description": "A grafikonon az ellenállás (R) változása látható a hőmérséklet (T) függvényében, amely mutatja, hogy egyes termisztorok (NTC típusúak) esetében az ellenállás csökken a hőmérséklet növekedésével.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Soros kapcsolás vázlata",
+       "heading": "Soros kapcsolás",
+       "description": "A soros kapcsolásban a fényforrások egymás után, egy vonalban kapcsolódnak, így az áramerősség azonos, de a feszültség megoszlik közöttük.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Párhuzamos kapcsolás vázlata",
+       "heading": "Párhuzamos kapcsolás",
+       "description": "A párhuzamos kapcsolásban a fényforrások párhuzamosan kapcsolódnak, így a feszültség azonos, de az áramerősség megoszlik közöttük.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Fényforrás teljesítményének mérése",
+       "heading": "Fényforrások teljesítményének mérése",
+       "description": "A diagram bemutatja, hogyan mérjük a feszültséget (U) és az áramerősséget (I) a fényforrás teljesítményének (P) kiszámításához a P = U * I képlettel.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Test ellenállásának mérése ellenállásmérővel",
+       "heading": "Test ellenállásának mérése",
+       "description": "Egy ellenállásmérő műszer használata a test különböző pontjai közötti ellenállás mérésére, bemutatva a műszer kijelzőjét.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "Ellenállást befolyásoló tényezők",
+       "heading": "Ellenállást befolyásoló tényezők",
+       "description": "A grafikon a test különböző tényezőit mutatja be, amelyek befolyásolják az ellenállást, például a bőrfelület állapotát, hidratáltságát és a hőmérsékletet.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "75823fba-3ddf-4d1b-b420-b4a2cd03832d",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A fényforrások, mint például LED-lámpák és izzók, mindennapi életünkben elengedhetetlenek. A mobiltelefonos applikációk segítségével könnyen mérhetjük a fényerőt, ami segíthet a megfelelő világítás kiválasztásában.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 20,
+          "w": 40,
+          "x": 50,
+          "y": 100,
+          "type": "battery"
+         },
+         {
+          "x": 60,
+          "y": 85,
+          "text": "V",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Fényforrások teljesítményének vizsgálata",
+       "discovery": "A 19. században Thomas Edison fejlesztette ki az első praktikus izzólámpát 1879-ben, amely forradalmasította a világítást. Edison célja az volt, hogy olyan fényforrást hozzon létre, amely gazdaságosan és hosszú ideig működik. Az izzólámpa teljesítményének és fényerejének mérése segít megérteni ennek a találmánynak a működését és hatékonyságát.",
+       "try_basic": "Mérjünk meg egy egyszerű áramkört egy elemmel és egy izzóval, majd használjunk multimétert a feszültség és áramerősség mérésére, hogy kiszámoljuk az izzó teljesítményét (P = U × I).",
+       "try_advanced": "Készítsünk egy bonyolultabb áramkört, amelyben több fényforrást is összehasonlítunk, és mérjük a teljesítményüket különböző feszültségeken."
+      }
+     ]
+    },
+    {
+     "block_id": "3300de1c-c4ba-497a-9113-234ea923b820",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az áramkör minden eleme egy sorban van, és az áramerősség mindenhol ugyanakkora.",
+        "B) Az áramkör elemei párhuzamosan kapcsolódnak, és az áramerősség változhat.",
+        "C) Az áramkör elemei függetlenek egymástól, és a feszültség oszlik meg közöttük.",
+        "D) A soros kapcsolásban a feszültség minden elemre ugyanakkora."
+       ],
+       "question": "Mi jellemzi a soros kapcsolást?",
+       "explanation": "A soros kapcsolásban az áramkör minden eleme egy sorban van, így az áramerősség mindenhol ugyanakkora, míg a feszültség oszlik meg az egyes elemek között.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Az ellenállás nő a hőmérséklet emelkedésével.",
+        "B) Az ellenállás csökken a hőmérséklet emelkedésével.",
+        "C) Az ellenállás független a hőmérséklettől.",
+        "D) Az ellenállás állandó értékű."
+       ],
+       "question": "Milyen kapcsolat van az ellenállás (R) és a hőmérséklet (T) között egy termisztor esetében?",
+       "explanation": "A termisztorok esetében az ellenállás csökken a hőmérséklet emelkedésével, ami jellemző a negatív hőmérsékleti együtthatójú anyagokra.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az áramerősség oszlik meg a párhuzamosan kapcsolt elemek között.",
+        "B) Az összes elemnek ugyanakkora az áramerőssége.",
+        "C) Az összes elem feszültsége megegyezik a forrás feszültségével.",
+        "D) A párhuzamos kapcsolás nem használható fényforrások esetén."
+       ],
+       "question": "Melyik állítás igaz a párhuzamos kapcsolásra?",
+       "explanation": "A párhuzamos kapcsolásban az áramerősség oszlik meg a párhuzamosan kapcsolt elemek között, míg a feszültség minden elemre megegyezik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) R = U * I",
+        "B) R = U / I",
+        "C) R = I / U",
+        "D) R = U + I"
+       ],
+       "question": "Hogyan határozható meg az ellenállás (R) a feszültség (U) és az áramerősség (I) mérésével?",
+       "explanation": "Az Ohm-törvény szerint az ellenállás (R) a feszültség (U) és az áramerősség (I) hányadosa, azaz R = U / I.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) A bőr állapota",
+        "B) A test hőmérséklete",
+        "C) A test magassága",
+        "D) A bőr nedvessége"
+       ],
+       "question": "Melyik tényező NEM befolyásolja az emberi test ellenállását?",
+       "explanation": "A test magassága nem befolyásolja az emberi test ellenállását, míg a bőr állapota, hőmérséklete és nedvessége igen.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "b5782dcd-e8b3-4324-aa66-69638c13de92",
+   "title_hu": "Háztartási eszközök és áramfogyasztás",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "0194c810-1992-44d5-9e6b-31bce9d5ff89",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A hőhatáson alapuló háztartási eszközök közé tartozik például a mikrohullámú sütő, a vízforraló és az indukciós főzőlap. Ezek az eszközök az elektromos áramot hővé alakítják, hogy az ételeinket gyorsan és hatékonyan elkészíthessük. Gondoljunk csak bele, mennyire megkönnyíti az életünket egy vízforraló, amely pár perc alatt felforralja a vizet. Az indukciós főzőlap pedig nemcsak gyors, de energiahatékony is, hiszen közvetlenül a fazék alját melegíti.",
+       "type": "text",
+       "heading": "Hőhatáson alapuló háztartási eszközök",
+       "key_term": "hőhatás"
+      },
+      {
+       "body": "A villanyszámlán található információk segítenek megérteni, mennyit fogyasztunk. A számlán szereplő kWh (kilowattóra) az elektromos energia mértékegysége, amely azt mutatja meg, mennyi áramot használtunk el. Ha például egy 1000 W teljesítményű eszközt 1 órán át használunk, az 1 kWh-t fogyaszt. Érdemes figyelni a különböző időszakokra vonatkozó díjakat is, mert a csúcsidőszakokban drágább lehet az áram.",
+       "type": "text",
+       "heading": "A villanyszámla értelmezése",
+       "key_term": "villanyszámla"
+      },
+      {
+       "body": "A háztartási áramfogyasztás költségeit könnyen kiszámolhatjuk. Például, ha egy eszköz 100 W teljesítményű és napi 5 órát használunk, a napi fogyasztás 0,5 kWh. Ha az áram ára 40 Ft/kWh, akkor a napi költség 20 Ft. Ha ezt megszorozzuk a hónap napjaival, máris láthatjuk, mennyit költünk az adott eszközre havonta. Így tudatosan tervezhetjük az energiafogyasztásunkat.",
+       "type": "text",
+       "heading": "A háztartási áramfogyasztás költségei",
+       "key_term": "áramfogyasztás"
+      },
+      {
+       "body": "A kWh (kilowattóra) és a joule (J) közötti kapcsolatot érdemes megérteni. 1 kWh 3,6 millió joule-nak felel meg, hiszen egy óra 3600 másodpercből áll, és 1 kWh = 1000 W * 3600 s. Ez a kapcsolat segít abban, hogy jobban átlássuk az energiafogyasztásunkat, és könnyebben tudjuk összehasonlítani a különböző eszközök fogyasztását.",
+       "type": "text",
+       "heading": "A kWh és a joule kapcsolata",
+       "key_term": "kWh és joule"
+      },
+      {
+       "body": "Egy kiválasztott háztartási eszköz, például egy vezeték nélküli telefontöltő teljesítményének meghatározása izgalmas feladat. Először is, nézd meg az eszközön található címkét, ahol általában feltüntetik a teljesítményt, például 5 W. Ezt követően mérj meg egy töltési ciklust, és figyeld meg, mennyi idő alatt tölti fel a telefont. Így kiszámolhatod, hogy mennyi energiát fogyasztott a töltés során.",
+       "type": "text",
+       "heading": "Fogyasztó teljesítményének meghatározása",
+       "key_term": "fogyasztó teljesítménye"
+      }
+     ]
+    },
+    {
+     "block_id": "341fb54a-7637-4f94-8b63-3a497aea1abd",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A nap végén, amikor a telefon akkumulátora lemerült, az eszköz felkészül a töltésre. A felhasználó bedugja a telefon töltőjét a konnektorba. Ezzel zárja az áramkört, lehetővé téve, hogy az elektromos áram (I) áthaladjon a töltőn, amely a váltakozó áram (AC) feszültséget egyenárammá (DC) alakítja.",
+       "type": "story",
+       "heading": "A telefon töltése"
+      },
+      {
+       "body": "A töltő belső áramkörében a transzformátor és a diódák működésbe lépnek. A transzformátor csökkenti a feszültséget, míg a diódák egyenirányítják az áramot. Ez a folyamat hőhatást is generál, hiszen az áram áthaladása során energia-veszteség lép fel, ami hő formájában távozik. A töltő teljesítménye (P) a feszültség (U) és az áram (I) szorzataként számítható ki.",
+       "type": "story",
+       "heading": "A töltő működése"
+      },
+      {
+       "body": "A töltő csatlakoztatásával a telefon elkezd tölteni, és a háztartás áramfogyasztása növekszik. A villanyszámlán a kWh (kilowattóra) egységben mérjük az energiafogyasztást. Ha a töltő teljesítménye 10 W, és 2 órán keresztül használják, akkor a fogyasztás 0,02 kWh lesz. Ez a számítás segít a felhasználónak megérteni, mennyibe kerül a telefon töltése.",
+       "type": "story",
+       "heading": "Az áramfogyasztás mérése"
+      },
+      {
+       "body": "A villanyszámlán a felhasználó látja a kWh adatokat, amelyek alapján kiszámolhatja az áramfogyasztás költségeit. Ha a kilowattóra ára 40 forint, akkor a telefon töltése 0,02 kWh * 40 Ft = 0,80 Ft költséget jelent. Ez a kis összeg is hozzájárulhat a havi villanyszámlához, ami tudatosabb energiafogyasztásra ösztönöz.",
+       "type": "story",
+       "heading": "A villanyszámla értelmezése"
+      },
+      {
+       "body": "A felhasználó, miután megértette a telefon töltésének költségeit, elkezd figyelni más háztartási eszközök energiafogyasztására is. Az indukciós főzőlap, a mosógép vagy a hűtőszekrény energiatakarékos üzemmódját választva csökkentheti a havi költségeit. Ez a tudatosság a fenntarthatóbb energiahasználat felé tereli, ami nemcsak a pénztárcának, hanem a környezetnek is jót tesz.",
+       "type": "story",
+       "heading": "A jövőbeli energiafogyasztás tudatossága"
+      }
+     ]
+    },
+    {
+     "block_id": "0631eca0-eaa3-4d29-bb9f-35ff24ad4067",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Hőhatáson alapuló háztartási eszközök és teljesítményeik",
+       "heading": "Hőhatáson alapuló eszközök",
+       "description": "Egy diagram, amely bemutatja a legfontosabb hőhatáson alapuló háztartási eszközöket, mint például a vízforraló, a sütő és a vasaló. A diagramon az eszközök mellett a jellemző teljesítményüket (W) is feltüntetjük.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A villanyszámla részei és a költségek alakulása",
+       "heading": "Villanyszámla szerkezete",
+       "description": "Egy grafikon, amely a villanyszámla különböző részeit mutatja be, például a havi fogyasztást (kWh), az egységárat és a végösszeget. A grafikon segít megérteni, hogyan alakul ki a végső összeg.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Áramfogyasztás költségének kiszámítása",
+       "heading": "Áramfogyasztás költségeinek számítása",
+       "description": "Egy vázlat, amely bemutatja a költségek kiszámításának lépéseit: az eszköz teljesítményének (W) és a használati időnek (óra) a szorzataként kapott kWh mennyiség kiszámítása, majd ezt szorozzuk meg az egységárral (Ft/kWh).",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A kWh és joule közötti kapcsolat",
+       "heading": "kWh és joule kapcsolata",
+       "description": "Egy diagram, amely bemutatja a kWh és a joule közötti kapcsolatot, kiemelve, hogy 1 kWh = 3,6 x 10^6 J. A diagramon a két mértékegység közötti átváltás egyszerűsített magyarázata is szerepel.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A háztartási eszköz teljesítményének mérése",
+       "heading": "Fogyasztó teljesítményének mérése",
+       "description": "Egy keresztmetszeti ábra, amely bemutatja, hogyan kell mérni egy háztartási eszköz (pl. porszívó) teljesítményét. Az ábrán látható, hogy a méréshez szükséges eszközök (pl. wattmérő) hogyan kapcsolódnak a fogyasztóhoz.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Háztartási eszközök áramfogyasztása és költsége",
+       "heading": "Fogyasztás és költség grafikonja",
+       "description": "Egy grafikon, amely a különböző háztartási eszközök áramfogyasztását (kWh) és költségét (Ft) ábrázolja. Az eszközök egymás mellett szerepelnek, így könnyen összehasonlítható a fogyasztásuk és a költségük.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "3db65863-15ab-4673-aa63-2c8e8998fa08",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A háztartási eszközök, mint például a hűtőszekrény, a mosógép vagy a mikrohullámú sütő mindennapi életünk részei, és fontos tudni, hogy mennyi áramot fogyasztanak.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Energiafogyasztás a mindennapokban",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "e70642d6-f164-48a7-b0ed-a5d7fc9970c3",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Vasaló",
+        "B) Hűtőszekrény",
+        "C) Televízió",
+        "D) Számítógép"
+       ],
+       "question": "Melyik háztartási eszköz működik hőhatás alapján?",
+       "explanation": "A vasaló hőhatással működik, mivel a benne lévő fűtőelem hőt termel, amely segíti a ruhák kisimítását.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Joule",
+        "B) Watt",
+        "C) Kilowattóra",
+        "D) Volt"
+       ],
+       "question": "Milyen mértékegységben mérjük a háztartási áramfogyasztást?",
+       "explanation": "A háztartási áramfogyasztást kilowattórában (kWh) mérjük, amely az energiafelhasználás időtartamát is figyelembe veszi.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Fogyasztott kWh szorozva az egységárral",
+        "B) Fogyasztott Joule osztva a teljesítménnyel",
+        "C) Fogyasztott Watt szorozva az időtartammal",
+        "D) Fogyasztott Volt osztva a feszültséggel"
+       ],
+       "question": "Hogyan számítható ki a villanyszámla költsége?",
+       "explanation": "A villanyszámla költsége a fogyasztott kWh és az egységár szorzataként számítható ki.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) 1000 J",
+        "B) 3600 J",
+        "C) 10000 J",
+        "D) 3600000 J"
+       ],
+       "question": "Mennyi Joule egy kilowattóra?",
+       "explanation": "Egy kilowattóra (1 kWh) 3600000 Joule-nak (3,6 x 10^6 J) felel meg, mivel 1 kW = 1000 W és 1 óra = 3600 másodperc.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mikrohullámú sütő",
+        "B) LED izzó",
+        "C) Laptop",
+        "D) Kávéfőző"
+       ],
+       "question": "Melyik eszköz fogyasztása a legnagyobb hőhatással jár?",
+       "explanation": "A mikrohullámú sütő a legnagyobb hőhatással jár, mivel gyorsan felmelegíti az ételeket, így jelentős energiafogyasztással bír.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "de2f4359-6dda-473e-b7e9-a54abe93541e",
+   "title_hu": "Biztonság és diagnosztikai alkalmazások",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "94dca059-7b56-4811-9f3b-eaa1f09aead2",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az elektromos áramütés komoly veszélyt jelenthet az emberi szervezetre. Ha az áram a testünkön keresztül halad, az zavarhatja a szívritmust, és akár szívmegállást is okozhat. Például, ha valaki megérint egy szabadon álló vezetéket, az áramütés következtében eszméletét is veszítheti. Fontos, hogy tisztában legyünk a veszélyekkel, és soha ne érintsünk meg sérült elektromos berendezéseket.",
+       "type": "text",
+       "heading": "Az elektromos áramütés élettani hatása",
+       "key_term": "elektromos áramütés"
+      },
+      {
+       "body": "Az érintésvédelem célja, hogy megvédje az embereket az elektromos áram által okozott sérülésektől. A lakásokban elhelyezett érintésvédelmi berendezések, mint például az áramvédő kapcsoló, automatikusan lekapcsolják az áramot, ha szivárgást észlelnek. Ez különösen fontos olyan helyeken, mint a fürdőszoba, ahol a víz és az elektromosság együtt jelen van. A megfelelő érintésvédelmi intézkedések betartása életet menthet.",
+       "type": "text",
+       "heading": "Érintésvédelmi ismeretek",
+       "key_term": "érintésvédelem"
+      },
+      {
+       "body": "A lakás villamos hálózata több biztonsági berendezést is tartalmaz, amelyek megvédik a felhasználókat. A biztosíték megakadályozza, hogy a túlterhelés miatt tűz keletkezzen, míg a földvezeték biztosítja, hogy a szivárgó áram a földbe vezessen, ezzel csökkentve az áramütés kockázatát. Ezek a berendezések elengedhetetlenek a biztonságos használathoz, különösen a modern háztartásokban, ahol sok elektromos eszköz működik egyszerre.",
+       "type": "text",
+       "heading": "Lakás villamos hálózata és biztonsági berendezései",
+       "key_term": "biztosíték, földvezeték"
+      },
+      {
+       "body": "Az EKG (elektrokardiográfia) és az EEG (elektroenkefalográfia) olyan orvosi diagnosztikai eszközök, amelyek az emberi idegvezetést mérik. Az EKG segítségével a szív elektromos aktivitását figyelik, míg az EEG az agyi tevékenységet rögzíti. Ezek az eszközök segítenek az orvosoknak diagnosztizálni a szív- és idegrendszeri problémákat. Például, ha valakinek szívritmuszavara van, az EKG segíthet kideríteni az okát.",
+       "type": "text",
+       "heading": "Az EKG és EEG diagnosztikai alkalmazások",
+       "key_term": "EKG, EEG"
+      },
+      {
+       "body": "A modern technológia, mint például a vezeték nélküli telefontöltés vagy az indukciós főzőlap, sok előnyt kínál, de fontos, hogy ezeket biztonságosan használjuk. Mindig figyelni kell arra, hogy a készülékek ne legyenek vizes helyen, és ne hagyjuk őket felügyelet nélkül. Az érintés nélküli bankkártyás fizetés is kényelmes, de ügyeljünk arra, hogy ne hagyjuk a kártyát védtelenül, mert a visszaélések kockázata fennállhat.",
+       "type": "text",
+       "heading": "A biztonságos használat fontossága",
+       "key_term": "biztonságos használat"
+      },
+      {
+       "body": "A diákok számára izgalmas lehet egy gyűjtőmunka készítése orvosi diagnosztikai eszközökről. Például a különböző képalkotó technikák, mint az MRI (mágneses rezonancia képalkotás) és a CT (komputertomográfia) bemutatása segíthet megérteni, hogyan használják a fizikát az orvostudományban. Ezek az eszközök lehetővé teszik az orvosok számára, hogy pontos képet kapjanak a betegek állapotáról, és így hatékonyabb kezeléseket alkalmazzanak.",
+       "type": "text",
+       "heading": "Gyűjtőmunka orvosi diagnosztikai eszközökről",
+       "key_term": "orvosi diagnosztikai eszközök"
+      }
+     ]
+    },
+    {
+     "block_id": "b177965c-2178-4122-9dc8-a07299632aec",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy tizenéves éppen a telefonját tölti. Bedugja a töltőt a konnektorba, és a telefon azonnal elkezd feltöltődni. Ekkor az áram (I) áthalad a töltőn, amely átalakítja az elektromos energiát, hogy a telefon akkumulátorát feltöltse.",
+       "type": "story",
+       "heading": "A telefon töltése"
+      },
+      {
+       "body": "Miközben a telefon töltődik, a lakás villamos hálózatán áramlik az áram. A biztosíték (feszültségvédő) feladata, hogy megvédje a hálózatot a túlfeszültségtől. Ha túl sok áram folyik, a biztosíték leold, megszakítva az áramkört, hogy megakadályozza a tűz vagy más balesetek kialakulását.",
+       "type": "story",
+       "heading": "A biztosíték szerepe"
+      },
+      {
+       "body": "A telefon töltése közben az áram-védőkapcsoló (RCD) is figyeli az áram folyását. Ha bármilyen szivárgás történik, például ha a töltő sérült, az RCD azonnal lekapcsolja az áramot, megakadályozva az áramütést, amely súlyos élettani hatásokat okozhat.",
+       "type": "story",
+       "heading": "Az áram-védőkapcsoló működése"
+      },
+      {
+       "body": "A földvezeték (földelés) biztosítja, hogy a villamos berendezések biztonságosan működjenek. Ha egy készülék meghibásodik, a földvezeték elvezeti a felesleges áramot a földbe, így megakadályozza az áramütést, és védelmet nyújt az emberek számára.",
+       "type": "story",
+       "heading": "A földvezeték szerepe"
+      },
+      {
+       "body": "A telefon használata után a tizenéves elmegy orvoshoz, ahol EKG (elektrokardiográfia) vizsgálatot végeznek rajta. Az EKG segítségével az orvos az emberi szív elektromos aktivitását méri, amely szintén elektromos jelek formájában terjed. Az EKG adatok elemzése segít az orvosoknak diagnosztizálni a szívproblémákat.",
+       "type": "story",
+       "heading": "Diagnosztikai alkalmazások"
+      },
+      {
+       "body": "A vizsgálatok során EEG (elektroencefalográfia) is készül, amely az agy elektromos aktivitását méri. Ez a módszer segít az orvosoknak megérteni az idegrendszer működését, és diagnosztizálni az esetleges rendellenességeket. Így a telefon használatával és a biztonsági berendezések működésével összefüggésben az elektromosság nemcsak a mindennapi életünk része, hanem a diagnosztikai eszközök működésében is kiemelkedő szerepet játszik.",
+       "type": "story",
+       "heading": "Az EEG szerepe"
+      }
+     ]
+    },
+    {
+     "block_id": "214e7f67-3c31-41cc-83ab-81d34a88fc92",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az elektromos áram hatása az emberi testre",
+       "heading": "Elektromos áramütés élettani hatása",
+       "description": "Egy diagram, amely bemutatja az elektromos áram különböző szintjeinek (mA) hatását az emberi testre, különböző reakciókkal (pl. izomgörcs, szívverés-leállás).",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Lakás villamos hálózatának érintésvédelmi eszközei",
+       "heading": "Érintésvédelmi eszközök",
+       "description": "Egy vázlat, amely bemutatja a lakás villamos hálózatának főbb érintésvédelmi eszközeit: biztosíték, áramvédő kapcsoló és földvezeték.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A biztosíték működése",
+       "heading": "Biztosíték működése",
+       "description": "Keresztmetszeti ábra, amely bemutatja a biztosíték felépítését és működését, beleértve a megolvadó szálat és a védelmi funkciót.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Az áramvédő kapcsoló működése",
+       "heading": "Áramvédő kapcsoló működése",
+       "description": "Egy diagram, amely bemutatja, hogyan működik az áramvédő kapcsoló (RCD), és hogyan érzékeli a szivárgó áramokat.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A földvezeték szerepe a villamos hálózatban",
+       "heading": "Földvezeték szerepe",
+       "description": "Egy vázlat, amely bemutatja a földvezeték feladatait és a földelés fontosságát a biztonságos villamos hálózatban.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "EKG felvétel és a szív elektromos aktivitása",
+       "heading": "EKG felvétel",
+       "description": "Egy grafikon, amely bemutatja az EKG (elektrokardiográfia) felvételét, az emberi szív elektromos aktivitását ábrázolva.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "EEG felvétel és az agy elektromos aktivitása",
+       "heading": "EEG felvétel",
+       "description": "Egy grafikon, amely bemutatja az EEG (elektroencefalográfia) felvételét, az agy elektromos aktivitását ábrázolva.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Orvosi diagnosztikai eszközök bemutatása",
+       "heading": "Orvosi diagnosztikai eszközök",
+       "description": "Egy gyűjtőmunka, amely különböző orvosi diagnosztikai eszközöket mutat be, mint például ultrahang, röntgen és CT, a diagnosztikai képalkotás területén.",
+       "visual_type": "gyűjtőmunka"
+      }
+     ]
+    },
+    {
+     "block_id": "b9013486-7699-4b1f-8cb6-d5952bb966d4",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A röntgenberendezések széles körben elérhetőek a kórházakban, és fontos szerepet játszanak a diagnosztikai folyamatokban, például csonttörések vagy daganatok észlelésében.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 50,
+          "w": 100,
+          "x": 50,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 70,
+          "y": 120,
+          "text": "Röntgen gép",
+          "type": "label"
+         },
+         {
+          "r": 30,
+          "x": 200,
+          "y": 100,
+          "type": "circle"
+         },
+         {
+          "x": 190,
+          "y": 95,
+          "text": "X",
+          "type": "label"
+         },
+         {
+          "x1": 100,
+          "x2": 200,
+          "y1": 125,
+          "y2": 125,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x": 150,
+          "y": 130,
+          "text": "Röntgen sugárzás",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Orvosi diagnosztikai eszközök",
+       "discovery": "Az 1895-ben felfedezett röntgen (X-sugárzás) Wilhelm Conrad Röntgen nevéhez fűződik. A felfedezés akkor történt, amikor Röntgen egy katódsugárcsövet vizsgált, és észrevette, hogy egy közeli fluoreszkáló lemez világítani kezdett, anélkül, hogy közvetlen kapcsolatban lett volna a csővel. Ezzel a felfedezéssel forradalmasította az orvosi diagnosztikát, lehetővé téve a csontok és más belső struktúrák vizsgálatát anélkül, hogy műtéti beavatkozásra lett volna szükség.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "e392e016-9bc1-41ba-95a8-bdf734365386",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az áramütés izomgörcsöt és szívritmuszavart okozhat.",
+        "B) Az áramütés csak fájdalmat okoz.",
+        "C) Az áramütés nem befolyásolja az emberi testet.",
+        "D) Az áramütés csak külső sérüléseket okoz."
+       ],
+       "question": "Mi történik, ha az emberi testet elektromos áram éri?",
+       "explanation": "Az elektromos áramütés komoly élettani hatásokat, például izomgörcsöt és szívritmuszavart okozhat, ami életveszélyes is lehet.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Megakadályozza a túláramot, ezzel védve a berendezéseket.",
+        "B) Szabályozza az áramkör feszültségét.",
+        "C) Csökkenti az áramfogyasztást.",
+        "D) Növeli az áramkör teljesítményét."
+       ],
+       "question": "Mi a biztosíték feladata a lakás villamos hálózatában?",
+       "explanation": "A biztosíték feladata, hogy megakadályozza a túláramot, ezzel védve a villamos berendezéseket és az elektromos hálózatot.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Biztosítja a biztonságos áramelvezetést a föld felé.",
+        "B) Növeli a feszültséget az áramkörben.",
+        "C) Csökkenti az áramfogyasztást.",
+        "D) Rögzíti a villamos berendezéseket."
+       ],
+       "question": "Mi a földvezeték szerepe a villamos hálózatban?",
+       "explanation": "A földvezeték feladata, hogy biztonságosan elvezesse az esetleges hibás áramokat a föld felé, így védve az embereket és az elektromos berendezéseket.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A szív elektromos aktivitásának mérésére.",
+        "B) Az agy aktivitásának mérésére.",
+        "C) A légzőrendszer állapotának ellenőrzésére.",
+        "D) A bélmozgások vizsgálatára."
+       ],
+       "question": "Milyen diagnosztikai alkalmazásokat használ az EKG (elektrokardiográfia)?",
+       "explanation": "Az EKG a szív elektromos aktivitását méri, segítve ezzel a szívbetegségek diagnosztizálását.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az agy elektromos aktivitásának mérésére.",
+        "B) A szívritmus ellenőrzésére.",
+        "C) A légzés sebességének mérésére.",
+        "D) Az izomfeszültség vizsgálatára."
+       ],
+       "question": "Mire használják az EEG (elektroencefalográfia) felvételt?",
+       "explanation": "Az EEG az agy elektromos aktivitását méri, amely fontos információkat nyújt az agyi működés állapotáról.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "0132e595-8301-40fd-adc0-bc2c3df80033",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az elektronok mozgása egy vezetőben.",
+      "B) A feszültség mértéke.",
+      "C) Az ellenállás mértéke.",
+      "D) A háztartási áramfogyasztás összegzése."
+     ],
+     "question": "Mi az elektromos áram (elektromos áram) fogalma?",
+     "explanation": "Az elektromos áram az elektronok mozgása egy vezetőben, amely lehetővé teszi az elektromos energia átvitelét.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Volt (V)",
+      "B) Amper (A)",
+      "C) Ohm (Ω)",
+      "D) Joule (J)"
+     ],
+     "question": "Milyen mértékegységben mérjük az áramerősséget (áramerősség)?",
+     "explanation": "Az áramerősséget amper (A) mértékegységben mérjük, amely a vezetőn áthaladó elektromos töltés áramlását jelzi.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Galvánelem",
+      "B) Napelem",
+      "C) Váltakozó áram (AC) hálózat",
+      "D) Mobiltelefon-akkumulátor"
+     ],
+     "question": "Melyik áramforrás nem egyenáramú?",
+     "explanation": "A váltakozó áram (AC) hálózat nem egyenáramú, míg a többi felsorolt áramforrás mind egyenáramot (DC) szolgáltat.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Kirchhoff törvénye",
+      "B) Ohm törvénye",
+      "C) Coulomb törvénye",
+      "D) Faraday törvénye"
+     ],
+     "question": "Melyik törvény kapcsolja össze a feszültséget, az áramerősséget és az ellenállást?",
+     "explanation": "Ohm törvénye (V = I * R) kapcsolja össze a feszültséget (V), az áramerősséget (I) és az ellenállást (R).",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csökken, ha a hőmérséklet nő.",
+      "B) Növekszik, ha a hőmérséklet nő.",
+      "C) Nem változik.",
+      "D) Csak párhuzamos kapcsolás esetén változik."
+     ],
+     "question": "Milyen hatással van az ellenállás (ellenállás) a hőmérséklet változására?",
+     "explanation": "Az ellenállás általában növekszik, ha a hőmérséklet nő, ami a legtöbb fém esetében megfigyelhető.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az áramerősség azonos minden elemnél.",
+      "B) A feszültség oszlik meg az elemek között.",
+      "C) Az ellenállás csökken.",
+      "D) Az elemek párhuzamosan kapcsolódnak."
+     ],
+     "question": "Melyik a soros kapcsolás (soros kapcsolás) jellemzője?",
+     "explanation": "Soros kapcsolás esetén az áramerősség azonos minden elemnél, míg a feszültség oszlik meg.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Megakadályozza a túlfeszültséget.",
+      "B) Védi az áramkört a túlterheléstől.",
+      "C) Fokozza az áramfogyasztást.",
+      "D) Csökkenti a feszültséget."
+     ],
+     "question": "Milyen szerepet játszik a biztosíték (biztosíték) a lakás villamos hálózatában?",
+     "explanation": "A biztosíték védelmet nyújt az áramkör túlterhelése ellen, így megakadályozza a károsodást.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Földvezeték",
+      "B) Akkumulátor",
+      "C) Villanyóra",
+      "D) Feszültségmérő"
+     ],
+     "question": "Melyik berendezés segít megakadályozni az áramütést (áramütés)?",
+     "explanation": "A földvezeték segít megakadályozni az áramütést azáltal, hogy a felesleges áramot a földbe vezeti.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

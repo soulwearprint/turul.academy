@@ -1,5 +1,5 @@
 {
- "exported_at": "2026-09-29T14:27:56+00:00",
+ "exported_at": "2026-09-29T14:28:04+00:00",
  "topics": [
   {
    "nat_id": "HIST-56-01",
@@ -287,6 +287,96 @@
    "nat_id": "HIST-910-13",
    "band": "HIST-910",
    "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-01",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-02",
+   "band": "PHYS-910",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-03",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-04",
+   "band": "PHYS-910",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-05",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-06",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-07",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-08",
+   "band": "PHYS-910",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-09",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-10",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-11",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-12",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-13",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-14",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-15",
+   "band": "PHYS-910",
+   "lessons": 4,
    "has_deep_all": false
   }
  ]

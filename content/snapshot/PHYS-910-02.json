@@ -1,0 +1,675 @@
+{
+ "nat_id": "PHYS-910-02",
+ "topic_id": "9b6d97c9-2957-4f95-8264-1b220a8ec55e",
+ "title_hu": "Ismétlődő mozgások",
+ "grade": 9,
+ "lessons": [
+  {
+   "lesson_id": "cb98076a-6f0e-4ea4-b39b-4350c37269e5",
+   "title_hu": "Egyszerű körmozgás és annak jellemzői",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "0a99b477-2447-43b0-9abc-f1e560d8e9e3",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egyenletes körmozgásnál a test állandó sugarú körpályán, állandó nagyságú kerületi sebességgel halad. A sebesség iránya viszont folyamatosan változik, hiszen mindig érintőlegesen mutat a pályára. Mivel a sebesség iránya változik, a mozgás gyorsuló mozgás, még akkor is, ha a sebesség nagysága állandó. Ilyen mozgást végez például egy körhinta ülése vagy egy CD lemez széle forgás közben.",
+       "type": "text",
+       "heading": "Mi az egyenletes körmozgás?",
+       "key_term": "körmozgás"
+      },
+      {
+       "body": "Ahhoz, hogy egy test körpályán maradjon, folyamatosan a kör középpontja felé mutató erőre van szükség. Ezt nevezzük centripetális erőnek. Ez az erő nem egy új, önálló erőfajta, hanem mindig valamilyen ismert erő (kötélerő, súrlódási erő, gravitációs erő, kényszererő) tölti be ezt a szerepet. A centripetális erő iránya folyamatosan változik, mindig az adott pillanatban a kör középpontja felé mutat. Ha a centripetális erő megszűnik, a test a pálya érintője mentén, egyenes vonalban halad tovább.",
+       "type": "text",
+       "heading": "A centripetális erő",
+       "key_term": "centripetális erő"
+      },
+      {
+       "body": "A centripetális erő a testnek centripetális gyorsulást ad, amely szintén a kör középpontja felé mutat. Nagysága a kerületi sebességből és a sugárból számítható: a = v²/r, ahol v a kerületi sebesség, r pedig a körpálya sugara. Minél nagyobb a sebesség vagy minél kisebb a sugár, annál nagyobb a centripetális gyorsulás. Newton második törvénye alapján a centripetális erő nagysága F = m·a = m·v²/r, ahol m a test tömege.",
+       "type": "text",
+       "heading": "A centripetális gyorsulás",
+       "key_term": "centripetális gyorsulás"
+      },
+      {
+       "body": "A periódusidő (T) az az idő, amely alatt a test egy teljes fordulatot tesz meg a körpályán. Mértékegysége a másodperc (s). A fordulatszám (frekvencia, f) megmutatja, hogy a test másodpercenként hány teljes fordulatot tesz meg, mértékegysége a Hz (hertz). A két mennyiség egymás reciproka: f = 1/T. Minél rövidebb a periódusidő, annál nagyobb a fordulatszám, vagyis annál gyorsabban pörög a test.",
+       "type": "text",
+       "heading": "Periódusidő és fordulatszám",
+       "key_term": "periódusidő"
+      },
+      {
+       "body": "A kerületi sebesség (v) azt mutatja meg, mekkora utat tesz meg a test a kör kerülete mentén egységnyi idő alatt. Egy teljes fordulat során a megtett út a kör kerülete (2πr), az eltelt idő pedig a periódusidő (T), így v = 2πr/T. Mivel f = 1/T, a képlet átírható v = 2πr·f alakba is. A periódusidő méréséhez elegendő stopperrel több egymást követő fordulat idejét megmérni, majd elosztani a fordulatok számával.",
+       "type": "text",
+       "heading": "A kerületi sebesség kiszámítása",
+       "key_term": "kerületi sebesség"
+      },
+      {
+       "body": "A mosógép centrifugázás közben nagy fordulatszámmal forgatja a dobot. A dob fala biztosítja a benne lévő ruhák számára a centripetális erőt, ezért a ruhák a dob falához szorulva körpályán maradnak. A víz azonban a dob apró lyukain keresztül nem kap centripetális erőt, ezért az eredeti mozgásiránya mentén, egyenes vonalban kirepül, és így válik el a ruhától. Minél nagyobb a fordulatszám, annál hatékonyabb a vízeltávolítás, mert nagyobb a centripetális gyorsulás.",
+       "type": "text",
+       "heading": "Körmozgás a centrifugában",
+       "key_term": "fordulatszám"
+      },
+      {
+       "body": "A kerékpár szelepe a kerék tengelye körül közelítőleg egyenletes körmozgást végez, kerületi sebessége a kerék sugarától és a fordulatszámtól függ. A Föld felszínének pontjai is körmozgást végeznek a Föld tengelye körül, mindegyik pont periódusideje azonos, 24 óra. A forgástengelytől mért távolságuk (a körpálya sugara) viszont eltérő: az egyenlítőnél a legnagyobb, a pólusok felé haladva egyre kisebb. Mivel v = 2πr/T, azonos T mellett nagyobb sugárhoz nagyobb kerületi sebesség tartozik, ezért az egyenlítő közelében lévő pontok gyorsabban mozognak, mint a magasabb szélességi köröknél lévők.",
+       "type": "text",
+       "heading": "A kerékpár szelepe és a Föld felszínének pontjai",
+       "key_term": "kerületi sebesség"
+      }
+     ]
+    },
+    {
+     "block_id": "3d1101db-6c72-4f30-97e9-93cd18fdcb9d",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A mosógép programja elindítja a centrifugázást. A dob lassan forogni kezd, a benne lévő ruhadarabok a dob falához simulnak, és vele együtt mozognak körbe. A forgás kezdetén a kerületi sebesség még kicsi, így a ruhákra ható centripetális erő is csekély.",
+       "type": "story",
+       "heading": "A dob elindul"
+      },
+      {
+       "body": "A dob fordulatszáma folyamatosan nő. Ahogy a kerületi sebesség nagyobb lesz, a centripetális gyorsulás is nő, hiszen a = v²/r szerint a gyorsulás a sebesség négyzetével arányos. A dob falának egyre nagyobb erővel kell a ruhákat a körpályán tartania.",
+       "type": "story",
+       "heading": "A sebesség növekedni kezd"
+      },
+      {
+       "body": "A ruhák szövetében megbújó vízcseppek a dob apró lyukain keresztül nem részesülnek a centripetális erőből. Mivel semmi nem tartja őket körpályán, az adott pillanatbeli mozgásirányuk mentén, egyenes vonalban kirepülnek a lyukakon át, és a dob külső falán csorognak lefelé.",
+       "type": "story",
+       "heading": "A víz kiválik"
+      },
+      {
+       "body": "A ruha rostjai nem férnek át a lyukakon, ezért rájuk a dob fala folyamatosan centripetális erőt fejt ki, ami a kör középpontja felé mutat. Emiatt a ruha a nagy fordulatszám ellenére is a dob falához szorulva, körpályán marad, miközben a víz jelentős része eltávozik.",
+       "type": "story",
+       "heading": "A ruha a pályán marad"
+      },
+      {
+       "body": "A program végén a dob fordulatszáma fokozatosan csökken. A kerületi sebesség és vele a centripetális gyorsulás is kisebb lesz, a ruhák pedig visszaereszkednek a dob aljára, ahogy a forgás teljesen leáll.",
+       "type": "story",
+       "heading": "A forgás lelassul"
+      }
+     ]
+    },
+    {
+     "block_id": "173431c7-fbf2-40d3-b494-7eae19660574",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A kerületi sebesség mindig a körpálya érintője mentén mutat.",
+       "heading": "A körpálya és a kerületi sebesség",
+       "description": "Kör alakú pálya, rajta egy pont a testet jelöli. A pontból induló nyíl a pálya érintője mentén mutatja a kerületi sebesség (v) irányát, jelezve, hogy a sebesség mindig merőleges a sugárra.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A centripetális erő és gyorsulás mindig a kör középpontja felé mutat.",
+       "heading": "A centripetális erő és gyorsulás iránya",
+       "description": "Ugyanaz a körpálya, de a testtől a kör középpontja felé mutató nyíl jelöli a centripetális erőt (F) és a centripetális gyorsulást (a), megkülönböztetve a sebesség érintő irányú nyilától.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A periódusidő (T) egy teljes fordulat megtételéhez szükséges idő.",
+       "heading": "Periódusidő leolvasása",
+       "description": "Idő-tengelyen ábrázolva egy forgó test szögkitérése; a görbe egy teljes ismétlődési szakasza (0-tól a következő azonos állapotig) van kijelölve és T-vel feliratozva, szemléltetve, hogy a periódusidő egy teljes fordulat ideje.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az egyenlítőhöz közelebbi pontok nagyobb sugarú körön mozognak, ezért nagyobb a kerületi sebességük.",
+       "heading": "A Föld szélességi körei",
+       "description": "A Föld gömbjének keresztmetszete a forgástengellyel, rajta az egyenlítőnél és egy magasabb szélességi körnél húzott sugarak, amelyek hossza jól láthatóan eltérő, jelezve az eltérő kerületi sebességet azonos periódusidő mellett.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A víz centripetális erő hiányában egyenes vonalban repül ki a dob lyukain.",
+       "heading": "A centrifugadob működése",
+       "description": "A mosógépdob kör keresztmetszete, a falán apró lyukakkal. A dob belsejében a ruhát jelképező alakzat a falhoz szorulva, a lyukakon át kirepülő vízcseppeket kis pontok és tőlük induló egyenes nyilak jelzik, amelyek a kör érintője mentén távolodnak.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A centripetális erő a tömegtől, a kerületi sebességtől és a sugártól függ.",
+       "heading": "Erő, tömeg és gyorsulás kapcsolata körmozgásnál",
+       "description": "Egyszerű nyilas séma: m (tömeg), v (kerületi sebesség) és r (sugár) dobozokból nyilak vezetnek az F = m·v²/r képlethez, szemléltetve, hogy a centripetális erő ezekből a mennyiségekből számítható.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "77dba12a-7347-464f-bf23-9a34fb0d7ad8",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A GPS-műholdak a Föld körül keringenek, ehhez szükséges centripetális erőt a Föld gravitációs vonzása biztosítja; enélkül a navigációs alkalmazások nem tudnák pontosan meghatározni a telefonunk helyzetét.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 90,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 290,
+          "y": 150,
+          "type": "dot"
+         },
+         {
+          "x1": 290,
+          "x2": 200,
+          "y1": 150,
+          "y2": 150,
+          "type": "arrow"
+         },
+         {
+          "x1": 290,
+          "x2": 290,
+          "y1": 150,
+          "y2": 90,
+          "type": "arrow"
+         },
+         {
+          "x": 245,
+          "y": 140,
+          "text": "F",
+          "type": "label"
+         },
+         {
+          "x": 300,
+          "y": 115,
+          "text": "v",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A centripetális erő felfedezése",
+       "discovery": "A körmozgás erőtani hátterét Christiaan Huygens vizsgálta a 17. század közepén az ingaóra kapcsán, ő vezette be a középpontból kifelé ható \"centrifugális\" hatás fogalmát. Isaac Newton dolgozta ki a modern, a középpont felé mutató centripetális erő fogalmát a Principia című művében (1687), megmutatva, hogy ugyanez az erő tartja pályán a Holdat a Föld körül is.",
+       "try_basic": "Kössünk egy kisebb tárgyat (pl. radírt) egy fonál végére, és forgassuk körbe egyenletes sebességgel vízszintes síkban. Érezhető, hogy a kezünknek folyamatosan húznia kell a fonalat a kör középpontja felé – ez a centripetális erő, amit a kéz fejt ki a fonálon keresztül a tárgyra.",
+       "try_advanced": "Mérjünk meg stopperrel 10 egymást követő fordulat idejét a fonalas kísérletnél, ebből számítsuk ki a periódusidőt (osszuk el 10-zel), majd a fordulatszámot (f = 1/T). Mérjük meg a fonál hosszát (ez lesz a sugár), és számítsuk ki a kerületi sebességet (v = 2πr/T) és a centripetális gyorsulást (a = v²/r)."
+      }
+     ]
+    },
+    {
+     "block_id": "3f7c8a28-da55-45cc-aff9-48ad2d4c14ba",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mindig a kör középpontja felé mutat",
+        "B) Mindig a mozgás irányával egyezik meg",
+        "C) Mindig a kör középpontjától kifelé mutat",
+        "D) Iránya állandó, nem változik a mozgás során"
+       ],
+       "question": "Milyen irányú a centripetális erő a körmozgást végző testre hatva?",
+       "explanation": "A centripetális erő mindig a pillanatnyi körpálya középpontja felé mutat, ez tartja a testet a görbült pályán; iránya a mozgás közben folyamatosan változik, mindig a testtől a középpont felé mutatva.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) 4 m/s²",
+        "B) 8 m/s²",
+        "C) 1 m/s²",
+        "D) 16 m/s²"
+       ],
+       "question": "Egy test 0,5 m sugarú körpályán 2 m/s kerületi sebességgel mozog. Mekkora a centripetális gyorsulása?",
+       "explanation": "A centripetális gyorsulás a = v²/r = (2 m/s)² / 0,5 m = 4 / 0,5 = 8 m/s².",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) 0,5 Hz",
+        "B) 1 Hz",
+        "C) 2 Hz",
+        "D) 4 Hz"
+       ],
+       "question": "Egy körmozgást végző test periódusideje 0,5 s. Mekkora a fordulatszáma (frekvenciája)?",
+       "explanation": "A frekvencia a periódusidő reciproka: f = 1/T = 1 / 0,5 s = 2 Hz (hertz), vagyis a test másodpercenként két teljes fordulatot tesz meg.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) kb. 3,8 m/s",
+        "B) kb. 1,9 m/s",
+        "C) kb. 0,6 m/s",
+        "D) kb. 7,5 m/s"
+       ],
+       "question": "Egy kerékpár kerekének sugara 0,3 m, a kerék fordulatszáma 2 fordulat másodpercenként. Mekkora a szelep kerületi sebessége a kerék tengelyéhez képest?",
+       "explanation": "A kerületi sebesség v = 2πr·f = 2 · 3,14 · 0,3 m · 2 1/s ≈ 3,8 m/s.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mert az egyenlítőhöz közelebbi pontok forgástengelytől mért távolsága (a körpálya sugara) nagyobb",
+        "B) Mert az egyenlítőn nagyobb a centripetális erő, ami gyorsabb mozgásra kényszeríti a pontokat",
+        "C) Mert az egyenlítőn rövidebb a periódusidő",
+        "D) Mert a Föld tömege az egyenlítő közelében nagyobb"
+       ],
+       "question": "Miért nagyobb az egyenlítő közelében lévő pontok kerületi sebessége, mint a magasabb szélességi köröknél, ha mindkettő 24 óra alatt fordul egyet a Föld tengelye körül?",
+       "explanation": "Azonos periódusidő (24 óra) mellett a kerületi sebesség (v = 2πr/T) egyenesen arányos a forgástengelytől mért sugárral; az egyenlítőnél ez a sugár a legnagyobb, a pólusok felé haladva csökken.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "a3024331-572f-44b0-b5eb-2b5f5e1911d3",
+   "title_hu": "Lengések és rezgések a környezetben",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "12294937-2852-46d7-87b4-7c15c28b4d4e",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Rezgésnek (lengésnek) nevezzük azt a mozgást, amely során a test egy egyensúlyi helyzet körül, ismétlődően mozog oda-vissza. Jellemző rá, hogy a testre mindig egy, az egyensúlyi helyzet felé mutató visszatérítő erő hat. Ilyen mozgást végez a hintázó gyerek, a trapézon lengő artista, vagy a rugóra akasztott, kimozdított test is. A rezgés a természetben és a mindennapokban rendkívül gyakori jelenség.",
+       "type": "text",
+       "heading": "Mi a rezgés?",
+       "key_term": "rezgés"
+      },
+      {
+       "body": "A hintázó gyerek mozgása tipikus lengés: a hinta a legalacsonyabb (egyensúlyi) helyzet körül leng ide-oda, a szélső helyzetekben pillanatnyilag megáll, majd visszafordul. A trapézon dolgozó artista mozgása hasonló, csak nagyobb amplitúdóval és gondosan szabályozott lendítésekkel. Mindkét esetben a gravitációs erő játssza a visszatérítő erő szerepét, amely a testet mindig az egyensúlyi helyzet felé húzza vissza.",
+       "type": "text",
+       "heading": "Lengések a mindennapokban",
+       "key_term": "rezgés"
+      },
+      {
+       "body": "A rezgés amplitúdója az egyensúlyi helyzettől mért legnagyobb kitérés. A frekvencia megmutatja, hogy másodpercenként hány teljes rezgést végez a test, mértékegysége a Hz (hertz). Minél nagyobb a frekvencia, annál gyorsabban ismétlődik a mozgás. Egy valódi hintánál vagy ingánál a frekvencia elsősorban a lengő rendszer méretétől (pl. az inga hosszától) függ, nem pedig attól, milyen erősen lendítjük meg.",
+       "type": "text",
+       "heading": "Amplitúdó és frekvencia",
+       "key_term": "frekvencia"
+      },
+      {
+       "body": "A valóságban a lengések és rezgések amplitúdója idővel csökken, mert a súrlódás és a közegellenállás (légellenállás) folyamatosan energiát von el a rendszertől. Ezt a jelenséget csillapodásnak nevezzük. A csillapodás mértékét az jellemzi, hogy az amplitúdó milyen gyorsan csökken lengésről lengésre. Egy magára hagyott hinta emiatt egyre kisebb kilengésekkel mozog, majd végül megáll.",
+       "type": "text",
+       "heading": "Csillapodó rezgések",
+       "key_term": "csillapodás"
+      },
+      {
+       "body": "Ha egy testet rugóra függesztünk, kimozdítjuk az egyensúlyi helyzetéből, majd elengedjük, a test rezegni kezd. A rugó által kifejtett erő mindig a kitéréssel ellentétes irányban, az egyensúlyi helyzet felé mutat, és nagysága arányos a kitéréssel (Hooke-törvény: F = -k·x, ahol k a rugóállandó). Ez a visszatérítő erő okozza a periodikus, oda-vissza irányuló mozgást.",
+       "type": "text",
+       "heading": "A rugóhoz kapcsolt test rezgése",
+       "key_term": "a rugó által kifejtett erő"
+      },
+      {
+       "body": "A rugóhoz kapcsolt test kitérése az idő függvényében szinuszgörbe alakú: a test váltakozva halad az egyik, majd a másik szélső helyzet felé. A sebesség-idő függvény ehhez képest fáziseltolt: a sebesség akkor maximális, amikor a kitérés nulla (a test áthalad az egyensúlyi helyzeten), és akkor nulla, amikor a kitérés maximális (a szélső helyzetekben, ahol a test pillanatnyilag megáll és irányt vált).",
+       "type": "text",
+       "heading": "Kitérés-idő és sebesség-idő függvény",
+       "key_term": "rezgés"
+      }
+     ]
+    },
+    {
+     "block_id": "73e3220e-3a9c-4ec4-9bd7-28ff7de37da3",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy rugóra függesztett testet valaki lefelé húz, kimozdítva azt az egyensúlyi helyzetéből, majd elengedi. Ebben a pillanatban a rugó megnyúlása maximális, ezért a felfelé mutató rugóerő is a legnagyobb: ez kezdi el visszahúzni a testet.",
+       "type": "story",
+       "heading": "A kitérítés"
+      },
+      {
+       "body": "A test felfelé gyorsul, majd áthalad az egyensúlyi helyzeten. Itt a rugó megnyúlása (és így a rugóerő) éppen nulla, a test sebessége viszont ekkor a legnagyobb – a mozgási energia ekkor a legnagyobb a rendszerben.",
+       "type": "story",
+       "heading": "Áthaladás az egyensúlyi helyzeten"
+      },
+      {
+       "body": "A test a lendülete miatt tovább mozog felfelé, az egyensúlyi helyzet fölé, miközben a rugó összenyomódik. A rugóerő most lefelé mutat, egyre inkább lassítva a testet, amíg az a felső szélső helyzetben pillanatnyilag meg nem áll.",
+       "type": "story",
+       "heading": "A másik szélső helyzet"
+      },
+      {
+       "body": "A mozgás során a levegő ellenállása és a rugó belső súrlódása folyamatosan energiát von el a rendszertől. Emiatt a test a következő lengéseknél már nem éri el az eredeti kitérését: a kitérés-idő görbe amplitúdója lengésről lengésre kisebb lesz.",
+       "type": "story",
+       "heading": "A csillapodás megjelenése"
+      },
+      {
+       "body": "A csillapodás sok lengésen keresztül folytatódik, amíg a rendszer energiája el nem fogy. A test egyre kisebb amplitúdóval leng, végül megáll az egyensúlyi helyzetben, ahol a rugóerő és a ránehezedő súly kiegyenlíti egymást.",
+       "type": "story",
+       "heading": "A rezgés megszűnése"
+      }
+     ]
+    },
+    {
+     "block_id": "e3cf6dcf-1718-42e6-bd36-bfac03331313",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A kitérés az idő függvényében szinuszosan változik.",
+       "heading": "Kitérés-idő függvény",
+       "description": "Idő-tengelyen ábrázolt szinuszgörbe, amely a rezgő test kitérését mutatja: a görbe az egyensúlyi (nulla) vonal körül szimmetrikusan hullámzik, a maximumok és minimumok az amplitúdót jelölik.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A sebesség akkor maximális, amikor a kitérés nulla, és fordítva.",
+       "heading": "Sebesség-idő függvény",
+       "description": "Ugyanazon időtengely felett egy második görbe, amely a kitérés-idő görbéhez képest negyed periódusnyival eltolva fut: ott van maximuma, ahol a kitérés-görbe metszi a nulla vonalat.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A kitérés az egyensúlyi helyzettől mért távolság.",
+       "heading": "Rugóhoz kapcsolt test",
+       "description": "Egy felfüggesztésből lelógó rugó, alján egy téglalappal jelölt tömeggel. Szaggatott vízszintes vonal jelöli az egyensúlyi helyzetet, egy lefelé mutató nyíl pedig a pillanatnyi kitérést a tömegtől az egyensúlyi vonalig.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Csillapodó rezgésnél az amplitúdó lengésről lengésre csökken.",
+       "heading": "Csillapodó rezgés",
+       "description": "Szinuszgörbe, amelynek amplitúdója az idő előrehaladtával fokozatosan csökken, a csúcsokat összekötő szaggatott burkológörbével kiemelve a csökkenő tendenciát.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A hinta az egyensúlyi helyzet körül leng a két szélső helyzet között.",
+       "heading": "A hinta lengése",
+       "description": "Egy felfüggesztett hintaülés három egymásra rajzolt helyzetben: bal szélső, középső (egyensúlyi) és jobb szélső helyzetben, ívelt szaggatott vonallal összekötve a mozgás pályáját.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Az amplitúdó az egyensúlyi helyzettől mért legnagyobb kitérés.",
+       "heading": "Az amplitúdó jelölése",
+       "description": "Egy kitérés-idő szinuszgörbén a nulla vonaltól a felső csúcsig húzott függőleges kétvégű nyíl, A betűvel feliratozva, jelezve az amplitúdó helyét a grafikonon.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "e168bfb9-881b-4cc6-9b6c-0f911461239d",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Az okostelefonok gyorsulásmérője (pl. a lépésszámláló és a képernyő automatikus elforgatása mögött) egy parányi, rugóhoz hasonlóan viselkedő, rezgő mikroszerkezetet (MEMS-t) használ, amelynek kitérését elektromosan érzékeli a készülék.",
+       "sketch": {
+        "shapes": [
+         {
+          "x1": 150,
+          "x2": 250,
+          "y1": 40,
+          "y2": 40,
+          "type": "line"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 40,
+          "y2": 150,
+          "type": "spring",
+          "coils": 6
+         },
+         {
+          "h": 40,
+          "w": 50,
+          "x": 175,
+          "y": 150,
+          "type": "box"
+         },
+         {
+          "x1": 100,
+          "x2": 300,
+          "y1": 190,
+          "y2": 190,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x1": 260,
+          "x2": 260,
+          "y1": 190,
+          "y2": 150,
+          "type": "arrow"
+         },
+         {
+          "x": 270,
+          "y": 170,
+          "text": "kitérés",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Az inga izokronizmusától a rugótörvényig",
+       "discovery": "Galileo Galilei figyelte meg 1583 körül, hogy egy lengő lámpa lengésideje (kis kitérésnél) nem függ a kilengés nagyságától, csak az inga hosszától – ezt nevezzük az inga izokronizmusának. Ezt a felismerést használta fel Christiaan Huygens, amikor 1656-ban megépítette az első ingaórát. Néhány évtizeddel később Robert Hooke fedezte fel, hogy a rugó megnyúlása egyenesen arányos a rá ható erővel – ez a ma Hooke-törvényként ismert összefüggés.",
+       "try_basic": "Akasszunk egy súlyt egy rugóra, húzzuk le kissé az egyensúlyi helyzetéből, majd engedjük el. Figyeljük meg a mozgást: hol a leggyorsabb, hol áll meg pillanatra a test, és hogyan csökken lassan a kilengés nagysága.",
+       "try_advanced": "Készítsünk egy 1 másodperc periódusidejű ingát. A képlet (T = 2π·√(L/g)) alapján L = g·T² / (4π²) ≈ 9,81 · 1 / 39,48 ≈ 0,25 m, vagyis kb. 25 cm hosszú fonálra van szükség. Építsük meg, majd stopperrel mérjük meg 10 lengés idejét, és ellenőrizzük, hogy egy lengés valóban közel 1 másodpercig tart-e."
+      }
+     ]
+    },
+    {
+     "block_id": "585a05ba-c441-4a10-bfe0-a8ede3f27b95",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hintázó gyerek mozgása előre-hátra az egyensúlyi helyzet körül",
+        "B) Az autó egyenes úton, állandó sebességgel halad",
+        "C) A felfelé dobott labda egyszeri felemelkedése és leesése",
+        "D) A liftkabin egyenletesen emelkedik felfelé"
+       ],
+       "question": "Melyik jelenség tekinthető a felsoroltak közül lengésnek/rezgésnek?",
+       "explanation": "A lengés/rezgés jellemzője az egyensúlyi helyzet körüli, ismétlődő oda-vissza mozgás; a hinta ezt mutatja, míg a többi példa nem periodikus, egyensúlyi helyzet körüli mozgás.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mert a légellenállás és a felfüggesztés súrlódása folyamatosan energiát von el a rendszertől",
+        "B) Mert a frekvenciája nő, és ez csökkenti a kitérést",
+        "C) Mert a periódusideje csökken, ami kisebb amplitúdót eredményez",
+        "D) Mert a centripetális erő megszűnik hatni"
+       ],
+       "question": "Miért csökken fokozatosan a hinta kilengésének amplitúdója, ha nem lökjük tovább?",
+       "explanation": "A csillapodás oka, hogy a súrlódási és légellenállási erők folyamatosan mechanikai energiát vonnak el a rendszertől, ezért a lengés amplitúdója fokozatosan csökken, míg a lengés meg nem szűnik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A rugó által kifejtett erő arányos a megnyúlással/összenyomódással, és mindig az egyensúlyi helyzet felé mutat",
+        "B) A rugóerő független a megnyúlástól, mindig állandó nagyságú",
+        "C) A rugóerő arányos a rugóra akasztott test sebességével",
+        "D) A rugóerő csak összenyomáskor lép fel, megnyúláskor nem"
+       ],
+       "question": "Mit mond ki a rugóra vonatkozó (Hooke-) törvény?",
+       "explanation": "A Hooke-törvény szerint F = -k·x, azaz a rugóerő nagysága egyenesen arányos a kitéréssel, iránya pedig mindig a kitéréssel ellentétes, az egyensúlyi helyzet felé mutató visszatérítő erő.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) 0,4 Hz",
+        "B) 2,5 Hz",
+        "C) 1,6 Hz",
+        "D) 4 Hz"
+       ],
+       "question": "Egy rugóhoz kapcsolt test rezgésének periódusideje 0,4 s. Mekkora a rezgés frekvenciája?",
+       "explanation": "f = 1/T = 1 / 0,4 s = 2,5 Hz.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Amikor áthalad az egyensúlyi helyzeten, ahol a kitérése nulla",
+        "B) Amikor a szélső helyzetben van, ahol a kitérése maximális",
+        "C) A sebesség állandó, nem függ a kitéréstől",
+        "D) Amikor a rugóerő maximális"
+       ],
+       "question": "Egy rugóhoz kapcsolt, rezgő test mikor éri el a legnagyobb sebességét?",
+       "explanation": "A kitérés-idő és sebesség-idő függvény fáziseltolt: a test sebessége az egyensúlyi helyzetben (kitérés nulla) maximális, a szélső helyzetekben (maximális kitérésnél) pedig pillanatnyilag megáll (sebesség nulla).",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "9ae15140-9889-421a-a6d3-e899ea85574b",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A test állandó nagyságú kerületi sebességgel mozog körpályán, miközben a sebesség iránya folyamatosan változik",
+      "B) A test állandó vektor-sebességgel mozog, amely soha nem változik",
+      "C) A test gyorsuló mozgást végez egyenes pályán",
+      "D) A test periodikusan megáll és újraindul a körpályán"
+     ],
+     "question": "Mi jellemzi az egyenletes körmozgást?",
+     "explanation": "Egyenletes körmozgásnál a kerületi sebesség nagysága állandó, de az iránya folyamatosan változik (mindig érintőleges a pályára), ezért a mozgás gyorsuló mozgás, centripetális gyorsulással.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Mert a víz cseppjeire a dob apró lyukain át nem tud érvényesülni a centripetális erő, ezért egyenes vonalban tovább haladnak, míg a ruha rostjait a dob fala körpályán tartja",
+      "B) Mert a víz nehezebb, mint a ruha, ezért nagyobb centripetális erő hat rá",
+      "C) Mert a víz felmelegszik és elpárolog a forgás során",
+      "D) Mert a ruha mágnesesen vonzza a dob falát"
+     ],
+     "question": "Miért repül ki a víz a ruhából a mosógép centrifugázása közben, míg maga a ruha a dobban marad?",
+     "explanation": "A víz a dob lyukain akadálytalanul áthalad, ezért centripetális erő hiányában egyenes vonalban kirepül, míg a ruha rostjait a dob fala tartja körpályán.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 3 m/s²",
+      "B) 6 m/s²",
+      "C) 9 m/s²",
+      "D) 1 m/s²"
+     ],
+     "question": "Egy test 1 m sugarú körpályán 3 m/s kerületi sebességgel mozog. Mekkora a centripetális gyorsulása?",
+     "explanation": "a = v²/r = 3² / 1 = 9 m/s².",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 0,25 Hz",
+      "B) 2 Hz",
+      "C) 4 Hz",
+      "D) 8 Hz"
+     ],
+     "question": "Egy körmozgást végző test periódusideje 0,25 s. Mekkora a fordulatszáma (frekvenciája)?",
+     "explanation": "f = 1/T = 1 / 0,25 s = 4 Hz.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az egyensúlyi helyzettől mért legnagyobb kitérést",
+      "B) A rezgés egy teljes periódusának idejét",
+      "C) A másodpercenkénti rezgések számát",
+      "D) A csillapodás mértékét"
+     ],
+     "question": "Mit nevezünk egy rezgés amplitúdójának?",
+     "explanation": "Az amplitúdó a rezgő test egyensúlyi helyzettől mért maximális kitérése; ez a rezgés nagyságát jellemzi, nem az idejét vagy gyakoriságát.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az amplitúdója fokozatosan csökken az energiaveszteség (pl. légellenállás, súrlódás) miatt, miközben a lengés folytatódik",
+      "B) A frekvenciája azonnal nullára csökken",
+      "C) Az amplitúdója állandó marad, csak a periódusideje nő",
+      "D) A test hirtelen, egyetlen lengés alatt teljesen megáll"
+     ],
+     "question": "Mi jellemzi a csillapodó rezgést/lengést?",
+     "explanation": "Csillapodó rezgésnél a mechanikai energia fokozatosan disszipálódik súrlódás és közegellenállás miatt, ezért az amplitúdó lengésről lengésre csökken, egészen a megállásig.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Felfelé, az egyensúlyi helyzet felé mutat, mert a rugóerő mindig a kitéréssel ellentétes irányú visszatérítő erő",
+      "B) Lefelé, a kitérés irányába mutat",
+      "C) Vízszintes, merőleges a mozgásra",
+      "D) Nulla, amíg a test el nem éri az egyensúlyi helyzetet"
+     ],
+     "question": "Egy rugóra akasztott testet az egyensúlyi helyzetéből lefelé húzunk, majd elengedjük. Milyen irányú a rugó által kifejtett erő elengedés pillanatában?",
+     "explanation": "A rugóerő (Hooke-törvény, F = -k·x) mindig a kitéréssel ellentétes irányban, az egyensúlyi helyzet felé mutató visszatérítő erő; lefelé húzáskor a rugóerő felfelé hat a testre.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A centrifugáló mosógép dobjában lévő ruhadarab mozgása",
+      "B) Az autópályán lassuló autó mozgása",
+      "C) A lejtőn guruló, gyorsuló labda mozgása",
+      "D) A szabadon eső test mozgása"
+     ],
+     "question": "A következők közül melyik jó példa a mindennapokban előforduló, közelítőleg egyenletes körmozgásra?",
+     "explanation": "A centrifugáló dobban a ruha közel állandó kerületi sebességgel, körpályán mozog, ez közelítőleg egyenletes körmozgás; a többi példában a sebesség nagysága folyamatosan változik, és nem periodikus körmozgásról van szó.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

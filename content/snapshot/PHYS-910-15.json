@@ -1,0 +1,1275 @@
+{
+ "nat_id": "PHYS-910-15",
+ "topic_id": "0d7469a8-8f17-4b24-9254-cd896ce9cc3b",
+ "title_hu": "A Világegyetem megismerése",
+ "grade": 10,
+ "lessons": [
+  {
+   "lesson_id": "e1a5a425-85db-4fc3-8030-f604142b6883",
+   "title_hu": "Űrkutatás alapjai és a rakétatechnológia",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "c68dd99d-a3e1-4217-b0bb-c2a3f75f62e4",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A rakéták működése a Newton harmadik törvényén alapul, amely szerint minden akciónak van egy egyenlő és ellentétes reakciója. Amikor a rakéta üzemanyagot éget el, az égéstermékek hátrafelé távoznak, ezáltal a rakéta előre mozog. Ezt a jelenséget tapasztalhatjuk például egy lufinál is: ha kiengedjük a levegőt, a lufi repülni kezd. Az űrkutatás során használt rakéták képesek elérni a Föld légkörét, majd azt meghaladó sebességeket is, hogy elérjék a világűrt.",
+       "type": "text",
+       "heading": "A rakéták működési elve",
+       "key_term": "rakéták működési elve"
+      },
+      {
+       "body": "A kozmikus sebességek a Föld körüli pályára álláshoz és a bolygók közötti utazásokhoz szükséges sebességek. Az első kozmikus sebesség, ami körülbelül 7,9 km/s, lehetővé teszi, hogy a rakéta elérje a Föld körüli pályát. A második kozmikus sebesség, ami körülbelül 11,2 km/s, a Föld gravitációs mezőjének elhagyásához szükséges. Ha például egy űrhajónk elérné ezt a sebességet, képes lenne elhagyni a Földet és elindulni a Mars felé.",
+       "type": "text",
+       "heading": "Kozmikus sebességek",
+       "key_term": "kozmikus sebességek"
+      },
+      {
+       "body": "A súlytalanság akkor lép fel, amikor egy test szabadon esik, például egy űrhajóban. Ilyenkor a testek nem érzékelik a gravitációt, mert a rakéta és a benne lévő tárgyak együttesen esnek. Ezt a jelenséget sokan tapasztalják meg, amikor ugranak egy magasabb helyről, és a levegőben érzik, hogy 'lebegnek'. Fontos megkülönböztetni a súlyt, ami a gravitációs hatás eredménye, a tömegtől, ami egy test anyagának mennyiségét jelenti.",
+       "type": "text",
+       "heading": "Súlytalanság jelensége",
+       "key_term": "súlytalanság"
+      },
+      {
+       "body": "A tömeg a test anyagának mennyiségét jelenti, és nem változik, bárhol is legyünk a világban. Ezzel szemben a súly a gravitációs erő, amely a tömegre hat. Például, ha egy 60 kg-os személy a Földön áll, a súlya körülbelül 588 N. Ugyanez a személy a Holdon, ahol a gravitáció gyengébb, csak körülbelül 96 N súlyt érezne. Ezért a súly és a tömeg közötti különbség kulcsfontosságú az űrkutatásban.",
+       "type": "text",
+       "heading": "Súly és tömeg",
+       "key_term": "súly, tömeg"
+      },
+      {
+       "body": "Az általános tömegvonzás törvénye szerint minden test vonzza egymást a tömegük arányában. Ez a törvény magyarázza meg a bolygók és üstökösök mozgását az űrben. Például a Föld vonzza a Holdat, ezért az a Föld körül kering. A gravitációs mező segítségével ezt a vonzást könnyen vizualizálhatjuk: képzeljük el, hogy a Föld egy hatalmas labda, amely körül más kisebb labdák keringenek, mint például a Hold vagy a műholdak.",
+       "type": "text",
+       "heading": "Általános tömegvonzás",
+       "key_term": "általános tömegvonzás"
+      },
+      {
+       "body": "A bolygók mozgása ellipszis pályán történik, amit Johannes Kepler fedezett fel. Az ellipszis pálya azt jelenti, hogy a bolygók nem kör alakú, hanem ovális pályán keringenek a Nap körül. Ez a jelenség megfigyelhető a Föld és a Nap közötti távolság változásában is, amely hatással van az évszakok váltakozására. Az űrkutatás során ez a tudás segít az űrhajók pályájának tervezésében is.",
+       "type": "text",
+       "heading": "Ellipszis pálya",
+       "key_term": "ellipszis pálya"
+      },
+      {
+       "body": "Jelenleg számos érdekes űrkutatási projekt zajlik világszerte. Például a NASA a Mars 2020 küldetést irányítja, amely a Perseverance rover segítségével kutatja a Mars felszínét. Emellett a James Webb Űrtávcső is folyamatosan új felfedezéseket tesz a távoli galaxisokkal kapcsolatban. Ezek a projektek nemcsak a tudományos ismeretek bővítését szolgálják, hanem inspirálják a fiatalokat is az űrkutatás iránti érdeklődésük növelésére.",
+       "type": "text",
+       "heading": "Aktuális űrkutatási projektek",
+       "key_term": "aktuális űrkutatási projektek"
+      }
+     ]
+    },
+    {
+     "block_id": "5a2a61f4-938f-43c1-9c5f-c4f539245b99",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzeld el, ahogy egy űrhajó indítására készülnek. A rakéta motorját beindítják, és a hatalmas erő, amit a hajtóművek generálnak, elindítja a rakétát. Ez a folyamat a Newton harmadik törvénye alapján működik, amely kimondja, hogy minden hatásra egyenlő és ellentétes reakció lép fel. A rakéta lefelé fújja a gázokat, miközben felfelé emelkedik.",
+       "type": "story",
+       "heading": "Az indítás pillanata"
+      },
+      {
+       "body": "Ahogy a rakéta felfelé halad, a gravitációs mező (gravitációs tér) továbbra is hat rá. A súly (a gravitáció által kifejtett erő) a rakéta tömegének és a gravitációs gyorsulásnak a szorzataként számítható. Ahogy a rakéta eléri a Föld légkörének határát, a súlytalanság akkor lép fel, amikor a rakéta és a benne lévő tárgyak szabadon esnek, így nem érzékelik a gravitációt, ami lehetővé teszi az űrhajósok számára, hogy lebegjenek az űrben.",
+       "type": "story",
+       "heading": "A gravitációs mező hatása"
+      },
+      {
+       "body": "A súlytalanság állapota a szabad esés következménye, nem függ a kozmikus sebesség elérésétől. Ahhoz, hogy a Föld körüli pályára álljon, el kell érnie a megfelelő kozmikus sebességet. Ez a sebesség a Föld körüli pályán való mozgáshoz szükséges, és a gravitációs vonzás ellenállásaként működik. A megfelelő sebesség elérése után a rakéta ellipszis pályára áll, amely lehetővé teszi számára, hogy stabilan keringjen a Föld körül.",
+       "type": "story",
+       "heading": "A kozmikus sebességek kihívása"
+      },
+      {
+       "body": "Ahogy a rakéta a Föld körüli pályáján halad, az űrhajósok észlelik az üstökösöket, amelyek szintén ellipszis pályán mozognak a Nap körül. Az üstökösök mozgása a gravitációs vonzás törvénye alapján magyarázható, amely szerint minden test vonzza egymást. Az űrhajósok megfigyeléseik során a gravitációs mező hatásait is tanulmányozzák, ami segít nekik megérteni a bolygók és üstökösök mozgását.",
+       "type": "story",
+       "heading": "Az üstökösökkel való találkozás"
+      },
+      {
+       "body": "Miután az űrhajósok befejezték küldetésüket, a rakéta visszaindul a Föld felé. A visszatérés során a rakéta újra belép a Föld légkörébe, ahol a gravitációs mező újra megkezdi a súly hatását. A rakéta lassul, és végül a földfelszínre érkezik, ahol a földi környezet újra megteremti a súly érzését. Ez a folyamat rávilágít arra, hogy a súly és a tömeg különböző fogalmak, hiszen a tömeg állandó, míg a súly a gravitációs erő hatására változik.",
+       "type": "story",
+       "heading": "A visszatérés a Földre"
+      }
+     ]
+    },
+    {
+     "block_id": "26a8a74d-e3a1-4f25-8b03-5bfa311090bc",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A rakéta működése a gázok kiáramlásának és a reakcióerőnek köszönhető.",
+       "heading": "Rakéták működési elve",
+       "description": "A rakéta működési elvét bemutató diagram, amely a Newton harmadik törvényét (minden akciónak van egyenlő és ellentétes reakciója) szemlélteti. A rakéta motorjából kiáramló gázok és a rakéta mozgása közötti kölcsönhatást ábrázolja.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A kozmikus sebességek a Föld körüli pályára álláshoz és az űrbe jutáshoz szükséges sebességeket mutatják.",
+       "heading": "Kozmikus sebességek",
+       "description": "Grafikon, amely a különböző kozmikus sebességeket (pl. első kozmikus sebesség, második kozmikus sebesség) ábrázolja. Az x-tengelyen a magasság, az y-tengelyen a sebesség látható.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A súlytalanság érzése a szabad esés közben tapasztalható.",
+       "heading": "Súlytalanság jelensége",
+       "description": "Vázlat, amely bemutatja a súlytalanság állapotát egy űrhajóban, ahol az űrhajósok lebegnek, miközben a Föld gravitációs hatása érvényesül. A vázlaton látható, hogy a súlytalanság a folyamatos szabad esés következménye.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A súly és a tömeg közötti különbség a gravitáció hatására vonatkozik.",
+       "heading": "Súly és tömeg",
+       "description": "Diagram, amely bemutatja a súly (F) és a tömeg (m) közötti különbséget. A súly a gravitációs erő, míg a tömeg az anyag mennyiségét jelenti. A diagramon látható a F = m * g képlet.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A bolygók és üstökösök mozgása az általános tömegvonzás törvénye szerint történik.",
+       "heading": "Bolygók és üstökösök mozgása",
+       "description": "Keresztmetszet, amely bemutatja a bolygók és üstökösök ellipszis pályáját a Nap körül. A középpontban a Nap található, és az ellipszis pálya ábrázolja a mozgásukat.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Az általános tömegvonzás törvénye a tömegek közötti vonzóerőt írja le.",
+       "heading": "Általános tömegvonzás",
+       "description": "Grafikon, amely az általános tömegvonzás törvényét mutatja be, a gravitációs erő (F) és a tömegek (m1, m2) közötti kapcsolatot ábrázolja.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A gravitációs mező a tömegek közötti vonzóerő hatását szemlélteti.",
+       "heading": "Gravitációs mező",
+       "description": "Diagram, amely a gravitációs mezőt mutatja be a Föld körül. A mezővonalak ábrázolják a gravitációs erő irányát és nagyságát.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "cbb918fb-7433-473c-bddb-856a3be55819",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A rakétatechnológia napjainkban elengedhetetlen a műholdak Föld körüli pályára állításához, valamint az űrkutatási küldetésekhez, mint például a Marsra irányuló expedíciókhoz.",
+       "sketch": {
+        "shapes": [
+         {
+          "x": 180,
+          "y": 50,
+          "size": 60,
+          "type": "triangle"
+         },
+         {
+          "x": 170,
+          "y": 30,
+          "text": "Rakéta",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 100,
+          "y2": 150,
+          "type": "spring",
+          "coils": 5
+         },
+         {
+          "x": 210,
+          "y": 120,
+          "text": "Üzemanyag",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 150,
+          "y2": 250,
+          "type": "arrow"
+         },
+         {
+          "x": 220,
+          "y": 200,
+          "text": "Irány",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A rakéták működése",
+       "discovery": "A rakéták működésének alapját Isaac Newton harmadik törvénye adja, amely szerint minden hatásra egyenlő és ellentétes reakció lép fel. Ezt a törvényt a 17. században fogalmazta meg, és azóta a rakétatechnológia alapjául szolgál.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "0b8e8e23-a758-4aae-ba2d-899e0e90b8ed",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A rakéták a Newton harmadik törvénye alapján működnek, azaz a hajtóanyag elégetésekor keletkező gázok hátrafelé távoznak, ezáltal előre mozdítva a rakétát.",
+        "B) A rakéták a gravitációs erő által mozognak.",
+        "C) A rakéták a légnyomás változásával működnek.",
+        "D) A rakéták mágneses mezőket használnak a mozgáshoz."
+       ],
+       "question": "Mi a rakéták működési elve?",
+       "explanation": "A rakéták működése a Newton harmadik törvényén alapul, amely szerint minden cselekvésre egyenlő és ellentétes reakció lép fel.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az a sebesség, amivel egy űrhajónak el kell érnie a Föld gravitációs vonzásának legyőzéséhez.",
+        "B) Az a sebesség, amivel a bolygók keringenek a Nap körül.",
+        "C) Az a sebesség, amivel egy rakéta a világűrbe jut.",
+        "D) Az a sebesség, amivel az üstökösök haladnak."
+       ],
+       "question": "Mi a kozmikus sebesség (kozmikus sebességek) jelentése?",
+       "explanation": "A kozmikus sebesség az a minimális sebesség, amellyel egy űrhajónak el kell érnie a Föld gravitációs vonzásának legyőzéséhez.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A súly a gravitációs erő hatása alatt áll, míg a tömeg az anyag mennyiségét jelenti.",
+        "B) A súly és a tömeg ugyanazt jelenti.",
+        "C) A súly egy állandó érték, míg a tömeg változó.",
+        "D) A súly csak a Földön érvényes, míg a tömeg mindenhol ugyanaz."
+       ],
+       "question": "Mi a különbség a súly és a tömeg között?",
+       "explanation": "A súly a gravitációs erő hatásának következménye, míg a tömeg az anyag mennyiségét jelenti, és független a gravitációtól.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Két test között a vonzóerő arányos a tömegük szorzataként, és fordítottan arányos a köztük lévő távolság négyzetével.",
+        "B) A tömeg mindig vonzza a tömeget.",
+        "C) A gravitációs erő csak a Földön érvényes.",
+        "D) A vonzóerő független a testek tömegétől."
+       ],
+       "question": "Mi az általános tömegvonzás törvénye?",
+       "explanation": "Az általános tömegvonzás törvénye kimondja, hogy a vonzóerő a testek tömegének szorzataként és a köztük lévő távolság négyzetével fordított arányban van.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A tér, ahol a gravitációs erő hat.",
+        "B) A tér, ahol a légnyomás érvényes.",
+        "C) A tér, ahol az elektromos mező hat.",
+        "D) A tér, ahol a hőmérséklet változik."
+       ],
+       "question": "Mi a gravitációs mező?",
+       "explanation": "A gravitációs mező az a tér, ahol a gravitációs erő hat, és ahol a testek vonzódnak egymáshoz.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "04ce38b7-1ab7-4643-a031-3f2f5c3346d9",
+   "title_hu": "Naprendszer és égitestek jellemzői",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "16dfdec4-95a1-4193-b22c-0fb354369731",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A Naprendszer középpontjában a Nap áll, amely a legnagyobb égitest, és a gravitációs vonzásának köszönhetően tartja egyben a körülötte keringő bolygókat és egyéb égitesteket. A bolygók közé tartozik például a Föld, ahol élünk, de említhetjük a Marsot, amelyet a 'vörös bolygóként' ismerünk. A Nap körül keringő égitestek között találhatók a holdak, üstökösök és aszteroidák is. Mindezek a különböző égitestek különböző fizikai környezetet képviselnek, például a Vénusz forró és sűrű légkörrel rendelkezik, míg a Mars hideg és vékony atmoszférájú.",
+       "type": "text",
+       "heading": "A Naprendszer felépítése",
+       "key_term": "Naprendszer"
+      },
+      {
+       "body": "A bolygók fizikai környezete nagyon változatos. Például a Jupiter hatalmas gázóriás, amelynek légköre hatalmas viharokat, például a híres Nagy Vörös Foltot rejt. A Földön élő emberek számára a legfontosabb a víz és az élet fenntartásához szükséges légkör megléte. A Hold, amely a Föld legnagyobb természetes holdja, gyenge gravitációval és szinte légkör nélküli környezettel bír, ami azt jelenti, hogy az ottani séták során a felfedezők a Földön megszokottakhoz képest teljesen más élményeket tapasztalhatnak.",
+       "type": "text",
+       "heading": "A bolygók és holdjaik jellemzői",
+       "key_term": "bolygók, holdak"
+      },
+      {
+       "body": "A napfogyatkozás (napfogyatkozás) akkor következik be, amikor a Hold a Föld és a Nap közé kerül, így eltakarja a Nap fényét. Ezt a jelenséget sokan izgalmasan figyelik meg, hiszen különleges látványt nyújt. Ezzel szemben a holdfogyatkozás (holdfogyatkozás) akkor történik, amikor a Föld a Hold és a Nap közé áll, és a Föld árnyéka a Holdra vetül. Mindkét jelenség a Naprendszer égitestjeinek mozgásából adódik, és kiváló példa arra, hogy a gravitáció miként befolyásolja a világunkat.",
+       "type": "text",
+       "heading": "Fogyatkozások: napfogyatkozás és holdfogyatkozás",
+       "key_term": "napfogyatkozás, holdfogyatkozás"
+      },
+      {
+       "body": "Az űrrepülőgépek, mint például az Apollo program keretében készült Apollo 11, lehetővé tették az emberi élet első lépéseit a Holdon. 1969-ben Neil Armstrong és Buzz Aldrin a Hold felszínére léptek, ezzel történelmet írtak. Az űrrepülőgépek technológiája ma is folyamatosan fejlődik, és a következő cél a Marsra való utazás, amely új kihívások elé állítja a mérnököket és a tudósokat.",
+       "type": "text",
+       "heading": "Űrrepülőgépek és a Holdraszállás",
+       "key_term": "űrrepülőgépek, Holdraszállás"
+      },
+      {
+       "body": "Sok olyan technológiát használunk a mindennapokban, amelyek először az űrkutatás során jöttek létre. Például a GPS (Globális Helymeghatározó Rendszer) segít nekünk a tájékozódásban, legyen szó autós navigálásról vagy a legjobb útvonal megtalálásáról. Az érintés nélküli bankkártyás fizetés is egy olyan technológia, amely az űrkutatás során kifejlesztett érzékelőkön alapul, így gyorsabbá és kényelmesebbé téve a vásárlásokat.",
+       "type": "text",
+       "heading": "Űrkutatás és a mindennapi élet",
+       "key_term": "űrkutatás, technológia"
+      },
+      {
+       "body": "Kepler törvényei a bolygók mozgására vonatkoznak, és alapvető fontosságúak a csillagászatban. Az első törvény kimondja, hogy a bolygók ellipszis alakú pályán keringenek a Nap körül. A második törvény, amely a terület törvény néven is ismert, azt jelenti, hogy a bolygók sebessége változik, amikor közelebb kerülnek a Naphoz. A harmadik törvény pedig a bolygók keringési idejének és távolságának összefüggését írja le. Ezek a törvények segítenek megérteni a Naprendszer működését.",
+       "type": "text",
+       "heading": "Kepler törvényei",
+       "key_term": "Kepler törvényei"
+      }
+     ]
+    },
+    {
+     "block_id": "6ec74bdd-4865-4782-b7ce-984ed1ec01b4",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzelj el egy sötét szobát, ahol hirtelen felkapcsolják a villanyt. A fényforrás, a lámpa, az elektromos áram segítségével működik, amely a távoli erőműből érkezik. Az erőmű, mint a Nap a Naprendszerben, energiát termel, amely eljut hozzánk. A Nap sugárzása nemcsak világít, hanem hőt is ad, amely a Föld légkörét melegen tartja.",
+       "type": "story",
+       "heading": "A Fény Megérkezése"
+      },
+      {
+       "body": "Ahogy a fény áthalad a szobán, a Hold, amely a Föld körül kering, szintén a Nap fényét veri vissza. Amikor a Föld és a Hold azonos vonalba kerül a Nappal, holdfogyatkozás történik. A Hold árnyéka a Földre vetül, és a sötétség pillanatai különleges élményt nyújtanak. Ez a jelenség az égitestek mozgásának következménye, amelyet Kepler törvényei írnak le.",
+       "type": "story",
+       "heading": "A Föld és a Hold Kölcsönhatása"
+      },
+      {
+       "body": "A napfény, amely a Földre érkezik, nem csupán a természetet világítja meg, hanem inspirálja az emberi felfedezést is. Az űrrepülőgépek, mint például az Apollo-program, lehetővé tették az emberek számára, hogy a Holdra lépjenek. A Holdraszállás során az űrhajósok a Hold felszínén jártak, és megfigyelhették annak különös környezetét, amely a Földhöz képest rendkívül eltérő.",
+       "type": "story",
+       "heading": "Űrutazás és Felfedezés"
+      },
+      {
+       "body": "A Naprendszer felfedezése nem áll meg a Holdnál. A következő célpont a Mars, ahol a jövőbeli emberi utazások tervezése zajlik. A Mars környezete, a hideg hőmérséklet és a vékony légkör komoly kihívásokat jelent, de a technológiai fejlődés, amely az űrkutatásból származik, lehetővé teszi, hogy új eszközöket és módszereket fejlesszünk ki.",
+       "type": "story",
+       "heading": "A Mars Utazásának Terve"
+      },
+      {
+       "body": "Az űrkutatás során kifejlesztett technológiák, mint például a GPS, a mobiltelefonokban és az autók navigációs rendszereiben is megtalálhatóak. Ezek az eszközök segítenek a mindennapi életben, miközben a Naprendszer felfedezését is elősegítik. Az űrkutatás tehát nemcsak a csillagászat szempontjából fontos, hanem a mindennapi életünkben is jelentős hatással van.",
+       "type": "story",
+       "heading": "Technológiai Innovációk"
+      }
+     ]
+    },
+    {
+     "block_id": "42736bbf-b82d-4ac9-a78a-2aa229f65054",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A Naprendszer felépítése és a bolygók elhelyezkedése",
+       "heading": "A Naprendszer felépítése",
+       "description": "A Naprendszer középpontjában a Nap helyezkedik el, körülötte a bolygók, holdjaik és egyéb égitestek (üstökösök, aszteroidák) pályái láthatók. A diagram bemutatja a bolygók sorrendjét a Naptól való távolságuk alapján.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Bolygók jellemző fizikai környezete",
+       "heading": "Bolygók fizikai környezete",
+       "description": "A bolygók jellemző fizikai környezete, mint például a hőmérséklet, a légkör összetétele és a gravitációs erő. Minden bolygónál egy-egy grafikon mutatja be ezeket a jellemzőket.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Holdfogyatkozás és napfogyatkozás folyamata",
+       "heading": "Holdfogyatkozás és napfogyatkozás",
+       "description": "A holdfogyatkozás és a napfogyatkozás folyamatának bemutatása. A keresztmetszet ábrázolja a Föld, a Hold és a Nap helyzetét a jelenség során.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Űrrepülőgép felépítése és működése",
+       "heading": "Űrrepülőgépek működése",
+       "description": "Az űrrepülőgépek felépítése és működése. A diagram bemutatja a rakétahajtóművet, a hőpajzsot és a pilótafülkét.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Apollo 11 Holdraszállás",
+       "heading": "Holdraszállás",
+       "description": "A Holdraszállás pillanata, amely bemutatja az Apollo 11 űrhajósait a Hold felszínén. A fotó jól szemlélteti a Hold különleges környezetét.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "Mars utazásának tervezett idővonala",
+       "heading": "Mars utazás tervei",
+       "description": "A Mars utazásának tervezett idővonalát bemutató grafikon, amely a küldetések főbb állomásait és időpontjait ábrázolja.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Űrkutatásban használt technológiák",
+       "heading": "Űrkutatásban használt technológiák",
+       "description": "Néhány technológia, amely először az űrkutatás során jelent meg, mint például a GPS, a napenergia-panelek és a hőszigetelés. A vázlat bemutatja, hogyan használják ezeket a mindennapi életben.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Kepler törvényei és a bolygók mozgása",
+       "heading": "Kepler törvényei",
+       "description": "Kepler törvényeinek ábrázolása, bemutatva a bolygók pályáit és a Nap körüli mozgásukat. A diagram segít megérteni a bolygók sebességét és távolságát a Naptól.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "fe294510-4cf5-49f0-9b6e-5dd7130b8df9",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A csillagászati alkalmazásokban, például planetáriumi programokban a diákok a csillagok és égitestek elhelyezkedését és mozgását tanulmányozhatják.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 50,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 200,
+          "y": 130,
+          "text": "Hold",
+          "type": "label"
+         },
+         {
+          "r": 20,
+          "x": 300,
+          "y": 100,
+          "type": "circle"
+         },
+         {
+          "x": 300,
+          "y": 80,
+          "text": "Vénusz",
+          "type": "label"
+         },
+         {
+          "r": 30,
+          "x": 100,
+          "y": 100,
+          "type": "circle"
+         },
+         {
+          "x": 100,
+          "y": 80,
+          "text": "Jupiter",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 300,
+          "y1": 150,
+          "y2": 100,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x1": 200,
+          "x2": 100,
+          "y1": 150,
+          "y2": 100,
+          "type": "line",
+          "dashed": true
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A csillagos ég felfedezése",
+       "discovery": "Galileo Galilei 1609-ben készítette el az első távcsövet, amellyel megfigyelte a Hold felszínét, a Vénusz fázisait és a Jupiter nagy holdjait. E felfedezések révén a heliocentrikus világkép (a Nap középpontú) megerősödött, és új utakat nyitott a csillagászat számára.",
+       "try_basic": "Használj egy egyszerű távcsövet, és figyeld meg a Hold felszínét, valamint a Vénusz fázisait!",
+       "try_advanced": "Készíts egy csillagászati méréseket végző projektet, ahol különböző távcsöveket használsz a Jupiter holdjainak megfigyelésére."
+      }
+     ]
+    },
+    {
+     "block_id": "674d900a-4e41-42a1-b29e-53ab69ac490f",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Jupiter",
+        "B) Mars",
+        "C) Föld",
+        "D) Vénusz"
+       ],
+       "question": "Melyik bolygó a Naprendszer legnagyobb bolygója?",
+       "explanation": "A Jupiter a legnagyobb bolygó a Naprendszerben, tömege és átmérője is jelentősen meghaladja a többi bolygóét.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A Föld árnyéka esik a Holdra",
+        "B) A Hold eltűnik a Nap mögött",
+        "C) A Hold elhalad a Föld és a Nap között",
+        "D) A Nap fénye csökken"
+       ],
+       "question": "Mi a fő oka a holdfogyatkozásnak?",
+       "explanation": "A holdfogyatkozás akkor következik be, amikor a Föld árnyéka a Holdra vetül, így a Hold nem látható az égen.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mars",
+        "B) Vénusz",
+        "C) Föld",
+        "D) Jupiter"
+       ],
+       "question": "Melyik bolygón található a legnagyobb vulkán a Naprendszerben?",
+       "explanation": "A Mars bolygón található az Olympus Mons, ami a legnagyobb vulkán a Naprendszerben, körülbelül 22 km magas.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Első törvény",
+        "B) Második törvény",
+        "C) Harmadik törvény",
+        "D) Negyedik törvény"
+       ],
+       "question": "Melyik Kepler-törvény mondja ki, hogy a bolygók pályája ellipszis alakú?",
+       "explanation": "A Kepler első törvénye kimondja, hogy a bolygók pályája ellipszis alakú, a Nap pedig az ellipszis egyik fókuszában helyezkedik el.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Vastag, szén-dioxidban gazdag",
+        "B) Vékony, oxigénben gazdag",
+        "C) Nincs légköre",
+        "D) Vízgőzben gazdag"
+       ],
+       "question": "Mi jellemzi a bolygók légkörét a Vénuszon?",
+       "explanation": "A Vénusz légköre rendkívül vastag, főleg szén-dioxidból áll, ami hatalmas üvegházhatást okoz.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "48711c51-ce6e-4c63-a686-07b53a13d6b8",
+   "title_hu": "Gravitáció és csillagászat",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "8d185b6b-ff81-4771-bdd7-321da7112bc1",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A gravitáció az a vonzóerő, amely a különböző égitesteket, például a csillagokat és a bolygókat összetartja. Gondoljunk csak a Földre: a gravitáció miatt tudunk a talajon járni, és nem lebegünk az űrben. A gravitáció hatása a galaxisokban is érezhető, hiszen ez tartja össze a csillagokat. A gravitációs vonzás révén a galaxisok is kölcsönhatásban állnak egymással, ami a Világegyetem fejlődésében kulcsszerepet játszik.",
+       "type": "text",
+       "heading": "A gravitáció szerepe a Világmindenségben",
+       "key_term": "gravitáció"
+      },
+      {
+       "body": "A csillagok, mint például a Nap, hatalmas gázgömbök, amelyek belsejében fúziós reakciók zajlanak. Ez a folyamat óriási mennyiségű energiát termel, amely fény és hő formájában jut el hozzánk. A csillagok élete során különböző fázisokon mennek keresztül: egyesek végül fekete lyukakká, mások neutroncsillagokká alakulnak, míg a nagyobbak szupernóvák formájában robbannak fel. Ezek a folyamatok nemcsak a csillagok életét, hanem a környezetüket is befolyásolják.",
+       "type": "text",
+       "heading": "A csillagok és a Nap működése",
+       "key_term": "csillag, fekete lyuk, neutroncsillag, szupernóva"
+      },
+      {
+       "body": "A galaxisok hatalmas csillaghalmazok, amelyeket gravitációs erő tart össze. A Tejútrendszer, amelyben élünk, egy spirális galaxis, tele csillagokkal, bolygókkal és gázfelhőkkel. A galaxisok nemcsak egyedülállóan léteznek, hanem galaxishalmazokba is tömörülnek, ahol több galaxis vonzza egymást. Ez a struktúra segít megérteni a Világegyetem nagyobb léptékű felépítését és fejlődését.",
+       "type": "text",
+       "heading": "Galaxisok és galaxishalmazok",
+       "key_term": "galaxis, galaxishalmaz"
+      },
+      {
+       "body": "A Tejútrendszer körülbelül 100-400 milliárd csillagot tartalmaz, és átmérője körülbelül 100 000 fényév. A középpontjában egy szupermasszív fekete lyuk található, amely a galaxisunk gravitációs középpontjaként működik. A Tejútrendszer spirális szerkezete miatt sok csillag és bolygó található a karokban, ahol a csillagkeletkezés aktív folyamata zajlik. A Tejútrendszer felfedezése során sok új információt nyertünk a csillagok és bolygók fejlődéséről.",
+       "type": "text",
+       "heading": "A Tejútrendszer legfontosabb jellemzői",
+       "key_term": "Tejútrendszer"
+      },
+      {
+       "body": "Az univerzumban található távolságok elképzelhetetlenül nagyok. Ezen távolságok mérésére használjuk a fényévet, amely az a távolság, amit a fény egy év alatt megtesz, körülbelül 9,46 billió kilométer. Például a legközelebbi csillag, a Proxima Centauri, körülbelül 4,24 fényév távolságra található tőlünk. Ezért, amikor a csillagok fényét nézzük, valójában a múltjukat látjuk, hiszen a fénynek időbe telik, míg eljut hozzánk.",
+       "type": "text",
+       "heading": "Távolságok az univerzumban",
+       "key_term": "fényév"
+      },
+      {
+       "body": "Az exobolygók olyan bolygók, amelyek más csillagok körül keringenek, mint a Nap. Az utóbbi években sok új exobolygót fedeztek fel, néhányuk hasonlít a Földre, ami izgalmas lehetőségeket nyújt a földön kívüli élet kutatásában. A különböző űrtávcsövek, mint például a Kepler és a TESS, folyamatosan gyűjtik az adatokat ezekről a bolygókról, lehetővé téve számunkra, hogy összehasonlítsuk őket a saját bolygónkkal. Ez a tudományos munka segít megérteni a bolygók kialakulását és a potenciális lakhatóságukat.",
+       "type": "text",
+       "heading": "Exobolygók adatainak áttekintése",
+       "key_term": "exobolygók"
+      },
+      {
+       "body": "Az űrtávcsövek, mint például a Hubble vagy a James Webb, lehetővé teszik számunkra, hogy részletes képeket készítsünk a Világegyetem különböző részeiről. Ezek a felvételek segítenek a csillagok, galaxisok és egyéb égitestek megértésében. A képek elemzése során felfedezhetjük a csillagkeletkezés folyamatát, a galaxisok fejlődését, és még a távoli exobolygók légkörét is. A modern technológia révén a csillagászat egyre izgalmasabb és elérhetőbb számunkra.",
+       "type": "text",
+       "heading": "Űrtávcsövek felvételeinek böngészése",
+       "key_term": "űrtávcsövek"
+      }
+     ]
+    },
+    {
+     "block_id": "2eb9b26f-94d4-4d28-91e7-a27f05107f7b",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzelj el egy éjszakát, amikor a szabadban ülsz, és a csillagokat nézed. A csillagok fénye, amit látsz, több ezer, akár millió fényév távolságból érkezik. Ezek a csillagok hatalmas gázgömbök, amelyek a gravitáció ereje miatt tudják megtartani a hőjüket és fényüket. A gravitáció nemcsak a csillagokat tartja egyben, hanem a galaxisokat is összeköti egymással.",
+       "type": "story",
+       "heading": "A csillagok fénye"
+      },
+      {
+       "body": "Ahogy a csillagok élete előrehalad, a gravitáció hatására a belsejükben zajló nukleáris reakciók változásokon mennek keresztül. Amikor a csillagok kimerítik a hidrogénkészletüket, különböző fázisokon mennek keresztül. Egy nagyobb tömegű csillag esetében ez akár szupernóva-robbanással is végződhet, ami új anyagokat juttat a világűrbe.",
+       "type": "story",
+       "heading": "A csillagok élete"
+      },
+      {
+       "body": "A szupernóva robbanás után a csillag maradványai különböző formákat ölthetnek. Ha a csillag tömege elég nagy, akkor fekete lyukká alakulhat, amelynek gravitációs vonzása olyan erős, hogy még a fény sem tud elmenekülni tőle. Más esetekben neutroncsillag keletkezik, amely rendkívül sűrű és különleges körülmények között létezik.",
+       "type": "story",
+       "heading": "A szupernóva maradványai"
+      },
+      {
+       "body": "A Tejútrendszer a galaxisunk, amely több milliárd csillagot tartalmaz. A galaxisok nemcsak egyedül állnak, hanem galaxishalmazokba is tömörülnek, ahol a gravitáció az, ami ezeket a hatalmas rendszereket összetartja. A Tejútrendszer és a környező galaxisok távolságait fényévben mérjük, amely a fény által megtehető távolság egy év alatt.",
+       "type": "story",
+       "heading": "Galaxisok és galaxishalmazok"
+      },
+      {
+       "body": "A gravitáció folyamatosan formálja a Világmindenséget, összekötve a csillagokat, galaxisokat és galaxishalmazokat. Ahogy a csillagok élete végéhez érnek, új anyagokat hoznak létre, amelyek új csillagok születéséhez vezetnek. Így a gravitáció nemcsak egy erő, hanem a Világmindenség fejlődésének motorja is, amely lehetővé teszi a csillagok és galaxisok születését és pusztulását.",
+       "type": "story",
+       "heading": "A gravitáció hatása"
+      }
+     ]
+    },
+    {
+     "block_id": "501148ce-e3b7-44e8-8cab-3ae265e10b9f",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A gravitációs vonzás hatása a bolygók és csillagok mozgására.",
+       "heading": "A gravitáció szerepe a Világmindenségben",
+       "description": "Egy diagram, amely bemutatja a gravitációs erőhatásokat különböző égitestek között, mint például a Föld és a Hold, valamint a Nap és a bolygók.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A csillagok életciklusa: születés, fejlődés, halál.",
+       "heading": "A csillagok fejlődése",
+       "description": "Egy vázlat, amely ábrázolja a csillagok életciklusát, kezdve a gázfelhőből való születéstől a felnőtt csillagon át a szupernóva robbanásig, majd a fekete lyuk vagy neutroncsillag kialakulásáig.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A fekete lyuk és a körülette lévő téridő.",
+       "heading": "Fekete lyuk",
+       "description": "Egy keresztmetszet, amely bemutatja a fekete lyuk körüli téridő görbületét, kiemelve az eseményhorizontot és a középponti szingularitást.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A szupernóva robbanás fényessége időben.",
+       "heading": "Szupernóva robbanás",
+       "description": "Egy grafikon, amely bemutatja a szupernóva robbanás fényességének időbeli változását, kiemelve a robbanás csúcsát és a lecsengést.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Galaxisok és galaxishalmazok eloszlása az Univerzumban.",
+       "heading": "Galaxisok és galaxishalmazok",
+       "description": "Egy diagram, amely különböző galaxisokat és galaxishalmazokat ábrázol, bemutatva azok elhelyezkedését és méretét a Világmindenségben.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A Tejútrendszer felépítése és jellemzői.",
+       "heading": "A Tejútrendszer jellemzői",
+       "description": "Egy vázlat, amely bemutatja a Tejútrendszer szerkezetét, beleértve a középpontot, a spirálkarokat és a halót.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Égitestek távolsága fényévben.",
+       "heading": "Távolságok az univerzumban",
+       "description": "Egy grafikon, amely a fényév mértékegységben ábrázolja a Földtől különböző égitestek távolságát, mint például a legközelebbi csillagok és galaxisok.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Exobolygók jellemzői és összehasonlítása.",
+       "heading": "Exobolygók",
+       "description": "Egy diagram, amely különböző exobolygók jellemzőit, például méretüket, távolságukat a csillagoktól és a potenciális lakhatóságukat mutatja be.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "0a86afae-26a8-4aa4-8d02-7d27b287c2eb",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A gravitációs törvények ismerete nélkülözhetetlen a műholdak pályájának tervezésében, amelyek például az internetes navigációt segítik.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 50,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 190,
+          "y": 145,
+          "text": "Föld",
+          "type": "label"
+         },
+         {
+          "r": 10,
+          "x": 200,
+          "y": 50,
+          "type": "circle"
+         },
+         {
+          "x": 195,
+          "y": 45,
+          "text": "alma",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 60,
+          "y2": 100,
+          "type": "arrow"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A gravitáció hatása a mindennapokban",
+       "discovery": "Isaac Newton 1687-ben publikálta híres művét, a 'Philosophiæ Naturalis Principia Mathematica'-t, amelyben leírta a gravitáció törvényét. A történet szerint Newton egy alma leesését figyelte meg, ami arra ösztönözte, hogy elgondolkodjon a Föld és az égitestek közötti vonzóerőről.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "d71fa819-040a-4fe4-b4c0-82c969d44e5b",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A gravitáció vonzza a csillagokat és bolygókat, így tartja össze a galaxisokat.",
+        "B) A gravitáció csak a Földön létezik.",
+        "C) A gravitáció megakadályozza a csillagok mozgását.",
+        "D) A gravitáció csak a fekete lyukak esetében fontos."
+       ],
+       "question": "Mi a gravitáció szerepe a Világmindenségben?",
+       "explanation": "A gravitáció alapvető erő, amely vonzza a csillagokat és bolygókat, és ezáltal összetartja a galaxisokat.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Szupernóva-robbanás következik be, majd fekete lyuk vagy neutroncsillag keletkezhet.",
+        "B) A csillag örökre eltűnik.",
+        "C) A csillag sosem változik.",
+        "D) A csillag felrobban, de nem alakul át más égitestté."
+       ],
+       "question": "Mi történik egy csillaggal, amikor kifogy a nukleáris üzemanyaga?",
+       "explanation": "A csillagok életciklusa során, amikor kifogynak az üzemanyagból, szupernóva-robbanás következhet be, amely után fekete lyuk vagy neutroncsillag keletkezhet.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Csillagok, gázok és por hatalmas rendszerei.",
+        "B) Csak a Naprendszer.",
+        "C) Az összes csillag egy helyen.",
+        "D) Csak a fekete lyukak gyűjteménye."
+       ],
+       "question": "Mik azok a galaxisok?",
+       "explanation": "A galaxisok csillagok, gázok és por hatalmas rendszerei, amelyek gravitációs vonzás alatt állnak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Spirális alakú és több milliárd csillagot tartalmaz.",
+        "B) Csak egy csillagból áll.",
+        "C) Nincs gravitációs hatása.",
+        "D) A legnagyobb galaxis az univerzumban."
+       ],
+       "question": "Mi a Tejútrendszer legfontosabb jellemzője?",
+       "explanation": "A Tejútrendszer spirális alakú és több milliárd csillagot tartalmaz, így jelentős helyet foglal el a Világegyetemben.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Fényév",
+        "B) Kilométer",
+        "C) Méter",
+        "D) Centiméter"
+       ],
+       "question": "Milyen mértékegységet használunk a csillagok közötti távolságok mérésére?",
+       "explanation": "A fényév a csillagok közötti távolságok mértékegysége, amely azt a távolságot jelenti, amit a fény egy év alatt megtesz.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "bbdeb6f2-19b0-4836-a0e8-b86b98ffe9c9",
+   "title_hu": "Az univerzum keletkezése és a földönkívüli élet lehetőségei",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "64ae64a9-edb1-4dcf-a51a-080487da8b86",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az ősrobbanás elmélete szerint a Világegyetem körülbelül 13,8 milliárd évvel ezelőtt egy rendkívül forró és sűrű állapotból keletkezett. Képzeld el egy lufit, amit fújsz fel: ahogy nő, egyre nagyobb teret foglal el, és a benne lévő levegő is távolodik egymástól. Ugyanez történik az univerzumban is, ahol a galaxisok folyamatosan távolodnak egymástól. Ez a táguló univerzum (expanding universe) fogalma, amelyet Edwin Hubble fedezett fel az 1920-as években.",
+       "type": "text",
+       "heading": "Az ősrobbanás elmélete",
+       "key_term": "ősrobbanás"
+      },
+      {
+       "body": "A táguló univerzumnak nemcsak tudományos jelentősége van, hanem a mindennapi életünkben is megjelenik. Például, amikor mobilinternetet használunk, és a telefonunk adatforgalma folyamatosan növekszik, az hasonló ahhoz, ahogyan az univerzumban a galaxisok távolodnak egymástól. Az univerzális tágulás jelensége a modern technológiák fejlődését is inspirálja, hiszen a távolságok és az idő fogalma egyre relatívabbá válik.",
+       "type": "text",
+       "heading": "A táguló univerzum és a mindennapok",
+       "key_term": "táguló univerzum"
+      },
+      {
+       "body": "Az ősrobbanás elmélete nem csupán spekuláció, hanem tudományos kutatások és megfigyelések eredménye. A kozmikus háttérsugárzás felfedezése, amely a Világegyetem korai állapotára utal, egyértelmű bizonyíték az elmélet mellett. Képzeld el, hogy egy régi filmfelvételt nézel, ahol a kép minősége egyre romlik; a háttérsugárzás éppen ezt az ősi állapotot tükrözi vissza.",
+       "type": "text",
+       "heading": "Az ősrobbanás elméletének tudományos megalapozottsága",
+       "key_term": "ősrobbanás"
+      },
+      {
+       "body": "A Földön kívüli élet lehetőségei régóta foglalkoztatják a tudósokat és a filozófusokat is. Egyre több olyan exobolygót fedeznek fel, amelyek a Földhöz hasonló körülmények között keringenek. Képzeld el, hogy a legújabb sci-fi filmekben látható idegenek nem is annyira messze vannak tőlünk, és talán egy napon találkozhatunk velük. Ez az elképzelés számos kihívást jelent az emberiség számára, hiszen nemcsak a technológiai fejlődést, hanem a társadalmi és etikai kérdéseket is felveti.",
+       "type": "text",
+       "heading": "Földön kívüli élet kutatása",
+       "key_term": "Földön kívüli élet"
+      },
+      {
+       "body": "A Földön kívüli élet kutatásának gyakorlati kihívásai közé tartozik a távoli bolygók megfigyelése és az ottani körülmények megértése. Például a Marsra indított űrszondák és roverek olyan technológiákat használnak, mint a drónok, amelyek már a mindennapi életünkben is elérhetőek. Ezek a technológiák nemcsak az űrkutatásban, hanem a földi problémák megoldásában is segíthetnek, például a környezetszennyezés csökkentésében.",
+       "type": "text",
+       "heading": "Gyakorlati kihívások a Földön kívüli élet kutatásában",
+       "key_term": "Földön kívüli élet"
+      },
+      {
+       "body": "A Földön kívüli élet kutatása nemcsak tudományos, hanem filozófiai kérdéseket is felvet. Például, ha találkozunk idegen intelligenciával, akkor mi lesz az emberi identitással? Képzeld el, hogy egy barátoddal beszélgetsz erről, és rájöttök, hogy nemcsak a tudományos felfedezések, hanem a társadalmi normák és értékek is megváltozhatnak. Ez a diskurzus segíthet abban, hogy jobban megértsük saját helyünket az univerzumban.",
+       "type": "text",
+       "heading": "Filozófiai kérdések a Földön kívüli életről",
+       "key_term": "Földön kívüli élet"
+      }
+     ]
+    },
+    {
+     "block_id": "e51eb35d-ad5f-44b4-8618-590355e8f774",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzelj el egy sötét szobát, ahol valaki felkapcsolja a villanyt. A fény hirtelen beragyogja a teret, és az árnyékok eltűnnek. Ez a pillanat hasonlít az ősrobbanásra (Big Bang), amikor a Világegyetem született, és az anyag, energia és téridő hirtelen megjelent. Az ősrobbanás elmélete azt mondja, hogy az univerzum egy rendkívül forró és sűrű állapotból indult, majd azóta folyamatosan tágul.",
+       "type": "story",
+       "heading": "A kezdetek"
+      },
+      {
+       "body": "Ahogy a fény terjed a szobában, úgy az univerzumban a galaxisok is távolodnak egymástól. Ez a táguló univerzum (expanding universe) jelensége, amelyet Edwin Hubble fedezett fel a 20. század elején. A galaxisok vöröseltolódása (redshift) azt mutatja, hogy minél távolabb vannak egymástól, annál gyorsabban távolodnak el. Ez a megfigyelés megerősíti az ősrobbanás elméletét, és tudományos megalapozottságot ad ennek a folyamathoz.",
+       "type": "story",
+       "heading": "Táguló univerzum"
+      },
+      {
+       "body": "A táguló univerzumban való elmélyülés során egy csoport fiatal kutató ül össze egy kávézóban, ahol a Földön kívüli élet (extraterrestrial life) lehetőségeiről beszélgetnek. Az egyikük felveti, hogy ha az univerzumban számtalan galaxis és bolygó létezik, vajon hol lehetnek a Földön kívüli életformák? A tudományos vita során megvitatják a gyakorlati kihívásokat, mint például a távoli bolygók felfedezésének nehézségeit, valamint a filozófiai kérdéseket, hogy miért fontos számunkra, hogy ne legyünk egyedül az univerzumban.",
+       "type": "story",
+       "heading": "A tudományos vita"
+      },
+      {
+       "body": "A kutatók közben rájönnek, hogy a Földön kívüli élet kutatása nemcsak tudományos, hanem etikai kérdéseket is felvet. Mit jelentene, ha találkoznánk egy másik intelligens fajjal? Milyen hatással lenne ez az emberi társadalomra? A beszélgetés során megfogalmazódik, hogy az emberiség előtt álló kihívások közé tartozik a saját bolygónk megóvása is, hiszen a Földön kívüli élet keresése közben nem szabad elfelejtenünk a saját otthonunk védelmét.",
+       "type": "story",
+       "heading": "Kihívások és lehetőségek"
+      },
+      {
+       "body": "A kutatók végül megállapítják, hogy az ősrobbanás elmélete és a táguló univerzum nemcsak a Világegyetem keletkezésének kulcsai, hanem egy olyan háttér, amely lehetőséget ad a Földön kívüli élet kutatására is. A tudományos diskurzus folytatódik, hiszen a tudományos megalapozottság és a filozófiai kérdések egyaránt fontosak az emberiség jövője szempontjából.",
+       "type": "story",
+       "heading": "Összegzés"
+      }
+     ]
+    },
+    {
+     "block_id": "d922ea36-8b34-4947-bb3e-10885fabf482",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az ősrobbanás és az univerzum fejlődése.",
+       "heading": "Ősrobbanás",
+       "description": "Egy idővonal, amely bemutatja az ősrobbanás pillanatát és az azt követő eseményeket, mint a hőmérséklet csökkenése, az első atomok képződése és a galaxisok kialakulása.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az univerzum tágulásának vizualizálása.",
+       "heading": "Táguló univerzum",
+       "description": "Egy grafikon, amely az univerzum tágulásának sebességét mutatja az idő függvényében, a vöröseltolódás mértékével.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A tudományos felfedezések története az ősrobbanás elméletében.",
+       "heading": "Az ősrobbanás elméletének születése",
+       "description": "Egy vázlat, amely bemutatja a tudósokat és felfedezéseiket, akik hozzájárultak az ősrobbanás elméletének kialakulásához, mint Edwin Hubble és Georges Lemaître.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A tudományos elméletek alapelvei.",
+       "heading": "Tudományosság kritériumai",
+       "description": "Egy diagram, amely bemutatja a tudományosság alapvető kritériumait, mint a megfigyelhetőség, a reprodukálhatóság és a falszifikálhatóság.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Exobolygók és az élet lehetőségei.",
+       "heading": "Földön kívüli élet kutatása",
+       "description": "Egy grafikon, amely a különböző exobolygók számát mutatja, amelyek potenciálisan alkalmasak az élet számára az utóbbi évtizedekben végzett kutatások alapján.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Kihívások a Földön kívüli élet kutatásában.",
+       "heading": "Gyakorlati kihívások a Földön kívüli élet kutatásában",
+       "description": "Egy vázlat, amely bemutatja a legfontosabb kihívásokat, mint a távoli bolygók elérhetősége, a technológiai korlátok és a környezeti tényezők.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Filozófiai kérdések a Földön kívüli életről.",
+       "heading": "Filozófiai lehetőségek a Földön kívüli élet kapcsán",
+       "description": "Egy diagram, amely a Földön kívüli élet létezésének filozófiai kérdéseit mutatja be, például az emberi helyünket az univerzumban és a kapcsolatainkat más intelligens lényekkel.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Kihívások az emberiség jövője szempontjából.",
+       "heading": "Az emberiség előtt álló kihívások",
+       "description": "Egy vázlat, amely bemutatja az emberiség előtt álló kihívásokat, mint a fenntartható fejlődés, az űrkutatás és a globális együttműködés.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "58ef48f7-74e7-4262-8b38-ab1a6779d9c8",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A Földönkívüli Élet Kutatásának programjai, mint például a Mars 2020 küldetés, aktívan keresik a földönkívüli élet nyomait, és új technológiákat fejlesztenek a távoli bolygók és holdak vizsgálatára.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 100,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 200,
+          "y": 130,
+          "text": "Exobolygók",
+          "type": "label"
+         },
+         {
+          "r": 20,
+          "x": 300,
+          "y": 100,
+          "type": "circle"
+         },
+         {
+          "x": 300,
+          "y": 90,
+          "text": "Mars",
+          "type": "label"
+         },
+         {
+          "x1": 250,
+          "x2": 300,
+          "y1": 150,
+          "y2": 100,
+          "type": "arrow"
+         },
+         {
+          "x": 250,
+          "y": 160,
+          "text": "Kutatás",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Földönkívüli élet keresése",
+       "discovery": "A Hubble-Űrteleszkóp 1990-es indítása óta folyamatosan figyeli a távoli galaxisokat és exobolygókat, felfedezve ezzel számos olyan égitestet, amely potenciálisan alkalmas lehet az élet számára. Az 1996-ban felfedezett marsi meteorittal kapcsolatban felmerült, hogy az ősi Mars felszíne alkalmas volt az élet fenntartására, és a meteorittal felfedezett mikroszkopikus életformák nyomai is arra utalhatnak, hogy valaha létezett élet a Marson.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "94e8fecf-47ca-4803-800a-8de157af4249",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az univerzum kezdeti állapota egy rendkívül forró és sűrű pontból indult.",
+        "B) Az univerzum mindig is létezett, és soha nem változott.",
+        "C) Az univerzum folyamatosan zsugorodik.",
+        "D) Az univerzumban léteznek párhuzamos dimenziók."
+       ],
+       "question": "Mi az ősrobbanás (Big Bang) elmélete?",
+       "explanation": "Az ősrobbanás elmélete szerint az univerzum egy rendkívül forró és sűrű állapotból indult, majd azóta folyamatosan tágul.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A vöröseltolódás (redshift) megfigyelése.",
+        "B) A Föld keringése a Nap körül.",
+        "C) A gravitációs vonzás.",
+        "D) A meteoritok becsapódása a Földbe."
+       ],
+       "question": "Milyen jelenség bizonyítja az univerzum tágulását?",
+       "explanation": "A vöröseltolódás (redshift) megfigyelése azt mutatja, hogy a távoli galaxisok távolodnak tőlünk, ami az univerzum tágulását jelzi.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az 1920-as években.",
+        "B) Az 1800-as évek végén.",
+        "C) Az 1950-es években.",
+        "D) Az 1970-es években."
+       ],
+       "question": "Mikor született meg az ősrobbanás elmélete?",
+       "explanation": "Az ősrobbanás elmélete az 1920-as években kezdett formálódni, amikor Edwin Hubble felfedezte az univerzum tágulását.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Megfigyelhető és reprodukálható eredmények.",
+        "B) A népszerűség a médiában.",
+        "C) A filozófiai megalapozottság.",
+        "D) A hagyományos nézetek fenntartása."
+       ],
+       "question": "Melyik tudományos kritérium szükséges a tudományos elméletek megalapozottságához?",
+       "explanation": "A tudományos elméletek megalapozottságához szükséges, hogy azok megfigyelhető és reprodukálható eredményeket nyújtsanak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Technológiai, etikai és tudományos kérdések.",
+        "B) Csak technológiai problémák.",
+        "C) Csak filozófiai kérdések.",
+        "D) Nincs kihívás, a kutatás egyszerű."
+       ],
+       "question": "Milyen kihívásokkal néz szembe az emberiség a Földön kívüli élet kutatása során?",
+       "explanation": "A Földön kívüli élet kutatása során az emberiség technológiai, etikai és tudományos kérdésekkel néz szembe, amelyek komplex kihívásokat jelentenek.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "f0b7fe41-1928-4047-b946-a586e7dae044",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A tömeg megmaradásának törvénye",
+      "B) A Newton harmadik törvénye",
+      "C) A gravitációs vonzás",
+      "D) A Kepler törvényei"
+     ],
+     "question": "Mi a rakéták működési elvének alapja?",
+     "explanation": "A rakéták működése a Newton harmadik törvényén alapul, amely kimondja, hogy minden akciónak van egyenlő és ellentétes reakciója. A rakéta gázokat fúj ki hátrafelé, ami előre tolja azt.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csak a Földön",
+      "B) Űrbeli állapotban, például a Föld körüli pályán",
+      "C) A víz alatt",
+      "D) Egy gyorsuló liftben"
+     ],
+     "question": "Milyen körülmények között tapasztalható a súlytalanság?",
+     "explanation": "A súlytalanság állapota akkor alakul ki, amikor egy objektum, például egy űrhajó, folyamatosan esik a gravitációs mezőben, mint például a Föld körüli pályán.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A gravitációs törvény",
+      "B) A Kepler törvényei",
+      "C) Az impulzusmegmaradás törvénye",
+      "D) A hőmérséklet törvényei"
+     ],
+     "question": "Melyik törvény magyarázza a bolygók és üstökösök mozgását?",
+     "explanation": "A Kepler törvényei leírják a bolygók és üstökösök mozgását az ellipszis pályák mentén, valamint a Földtől való távolságuk és a keringési idejük közötti összefüggéseket.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A súly a gravitációs erő, a tömeg az anyag mennyisége",
+      "B) A súly és a tömeg ugyanaz",
+      "C) A tömeg a gravitációs erő, a súly az anyag mennyisége",
+      "D) A súly a térfogat, a tömeg az anyag mennyisége"
+     ],
+     "question": "Mi a különbség a súly és a tömeg között?",
+     "explanation": "A súly (gravitációs erő) egy testre ható gravitációs vonzás, míg a tömeg az anyag mennyiségét jelenti, amely független a gravitációtól.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csak gázbolygók találhatók benne",
+      "B) Vannak szilárd és gáz halmazállapotú bolygók is",
+      "C) Csak egy bolygó van",
+      "D) Nincs holdjuk"
+     ],
+     "question": "Mik a legfontosabb jellemzői a Naprendszer bolygóinak?",
+     "explanation": "A Naprendszerben találhatók szilárd (pl. Föld, Mars) és gáz (pl. Jupiter, Szaturnusz) halmazállapotú bolygók is, valamint több hold is.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A napfogyatkozás a Föld árnyékában történik, a holdfogyatkozás a Nap árnyékában",
+      "B) A napfogyatkozás a Hold, a holdfogyatkozás a Föld árnyékában történik",
+      "C) Nincs különbség",
+      "D) Csak napfogyatkozás létezik"
+     ],
+     "question": "Mi a fő különbség a napfogyatkozás és a holdfogyatkozás között?",
+     "explanation": "A napfogyatkozás akkor fordul elő, amikor a Hold a Nap és a Föld közé kerül, míg a holdfogyatkozás a Föld árnyékában történik, amikor a Hold a Föld mögött van a Naphoz képest.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az univerzum véges kiterjedésű",
+      "B) Az univerzum egy nagy robbanásból keletkezett és folyamatosan tágul",
+      "C) Az univerzumban nincs idő",
+      "D) Az univerzumban csak egy galaxis található"
+     ],
+     "question": "Mi az ősrobbanás elmélet lényege?",
+     "explanation": "Az ősrobbanás elmélete szerint az univerzum egy hatalmas robbanásból keletkezett, és azóta folyamatosan tágul, ami a távolságok növekedéséhez vezet.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Mobiltelefon",
+      "B) Mikrohullámú sütő",
+      "C) GPS",
+      "D) Internet"
+     ],
+     "question": "Melyik technológia származik először az űrkutatásból, és ma is használjuk?",
+     "explanation": "A GPS (Globális Helymeghatározó Rendszer) technológiája eredetileg katonai célokra készült az űrkutatás során, és ma széles körben használják mindennapi életünkben.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

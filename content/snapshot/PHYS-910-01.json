@@ -1,0 +1,1115 @@
+{
+ "nat_id": "PHYS-910-01",
+ "topic_id": "d5f5a148-2729-479b-9faa-a66c434730c8",
+ "title_hu": "Egyszerű mozgások",
+ "grade": 9,
+ "lessons": [
+  {
+   "lesson_id": "d282af5a-1d19-4833-b13c-60bf1ec8e7e6",
+   "title_hu": "Mozgások jellemzése és sebesség fogalma",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "138441a5-3033-4abb-986a-7ae9f4fe2305",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A mozgás akkor történik, amikor egy test megváltoztatja a helyét egy adott idő alatt. Gondoljunk csak arra, amikor a barátunkkal a buszmegállóba sietünk. Az út, amit megteszünk, a mozgásunk pályája, míg az elmozdulás a kezdeti és a végpont közötti távolságot jelenti. Ha a buszmegálló a célpont, akkor az elmozdulás a kiindulási ponttól (pl. otthon) a buszmegállóig terjed. Így a mozgás nemcsak az út hosszát, hanem a helyváltoztatást is magában foglalja.",
+       "type": "text",
+       "heading": "A mozgás és a hely fogalma",
+       "key_term": "mozgás"
+      },
+      {
+       "body": "A sebesség a mozgás gyorsaságát jelzi, és a megtett út és az eltelt idő hányadosaként számolható ki. Például, ha egy autó 60 km-t tesz meg 1 óra alatt, akkor az átlagsebessége 60 km/h. Az átlagsebesség fontos, mert segít megérteni, mennyi időre van szükség a célunk eléréséhez. Ha tudjuk, hogy a barátunk 30 km/h sebességgel biciklizik, akkor könnyen kiszámolhatjuk, mennyi idő alatt ér el a célhoz.",
+       "type": "text",
+       "heading": "Sebesség és az átlagsebesség fogalma",
+       "key_term": "sebesség"
+      },
+      {
+       "body": "A gépkocsik sebességmérője a pillanatnyi sebességet mutatja, ami azt jelenti, hogy az autó éppen aktuális sebességét méri. Ha egy autó 90 km/h sebességgel halad, az azt jelenti, hogy egy órán belül 90 km-t tudna megtenni, ha a sebessége nem változik. Ez a funkció nagyon hasznos, mert segít betartani a sebességhatárokat az utakon, így biztonságosabban közlekedhetünk.",
+       "type": "text",
+       "heading": "Pillanatnyi sebesség a gépkocsikban",
+       "key_term": "pillanatnyi sebesség"
+      },
+      {
+       "body": "Ha egy gépjármű egyenes úton halad állandó sebességgel, akkor a megtett út kiszámítása egyszerű. Például, ha 80 km/h sebességgel haladunk, és 2 órán át utazunk, akkor a megtett út 160 km lesz (80 km/h * 2 óra = 160 km). Ez az egyszerű számítás segít tervezni az utazásainkat, például amikor nyaralni megyünk.",
+       "type": "text",
+       "heading": "Állandó sebességgel haladó gépjármű mozgása",
+       "key_term": "állandó sebesség"
+      },
+      {
+       "body": "A mozgás megértéséhez kísérletezhetünk is. Például, ha egy lejtőn legurítunk egy golyót, megfigyelhetjük, hogy a golyó sebessége hogyan változik. A lejtő meredeksége és a golyó anyaga befolyásolja a mozgás sebességét. Ezen kísérletek segítenek megérteni a súrlódás hatását és a mozgás törvényeit, így jobban megismerhetjük a fizika alapjait.",
+       "type": "text",
+       "heading": "Kísérletezés a mozgással",
+       "key_term": "kísérletezés"
+      },
+      {
+       "body": "Galilei munkássága forradalmasította a mozgásról való gondolkodást. Ő volt az, aki a szabadesést tanulmányozta, és felfedezte, hogy a testek egyenletesen gyorsulnak a gravitáció hatására. Ez a megértés segített a tudományos módszer kialakulásában, amely ma is alapja a fizikai kutatásoknak. Galilei kísérletei inspiráló példák a fiatal tudósok számára.",
+       "type": "text",
+       "heading": "Galilei és a mozgás",
+       "key_term": "Galilei"
+      }
+     ]
+    },
+    {
+     "block_id": "b8b19ffe-b852-4410-950b-93caa96170c4",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal elindul otthonról, hogy találkozzon a barátaival. A ház előtt állva megnézi a telefonján a térképet, amely megmutatja, hogy az út hossza 2 kilométer. Az elmozdulás a kiindulási pont és a cél közötti vektor, amely lehet rövidebb, mint az út. Ez a mozgás a hely és a pálya fogalmát használja.",
+       "type": "story",
+       "heading": "Az út kezdetén"
+      },
+      {
+       "body": "A fiatal elindul, és a telefonján bekapcsolja a GPS-t, amely folyamatosan méri a sebességét. Az elején lassan halad, de ahogy eléri a főutat, a sebességmérője 50 km/h-t mutat. Ez az állandó sebesség, amelyet a gépkocsi sebességmérője jelez. Az átlagsebesség kiszámítása érdekében figyeli, mennyi idő alatt teszi meg az utat.",
+       "type": "story",
+       "heading": "A sebesség mérése"
+      },
+      {
+       "body": "Ahogy halad, a fiatal észreveszi, hogy a forgalom sűrűsödik, és a sebessége csökken. Most 30 km/h sebességgel halad. Ez a változó sebesség, amely a forgalmi viszonyok miatt alakul ki. A GPS továbbra is folyamatosan méri a pillanatnyi sebességet, amely segít neki megérteni, mennyi időre van szüksége a célhoz érkezéshez.",
+       "type": "story",
+       "heading": "Változó sebesség"
+      },
+      {
+       "body": "A fiatal kiszámolja, hogy ha 50 km/h sebességgel halad, akkor 2 km-t 2,4 perc alatt tesz meg. Ha viszont 30 km/h sebességgel megy, akkor az út 4 percig tart. Ez a számítás az elmozdulás, a megtett út és a megérkezéshez szükséges idő összefüggését mutatja be.",
+       "type": "story",
+       "heading": "Az idő és az elmozdulás"
+      },
+      {
+       "body": "Végül a fiatal megérkezik a barátaihoz. A GPS megmutatja, hogy az út során összesen 2 km-t tett meg, és a sebességmérő folyamatosan jelezte a sebességét. A mozgás jellemzése során a sebesség, az elmozdulás és a megtett út fogalmai segítettek neki megérteni, hogyan haladt a célja felé.",
+       "type": "story",
+       "heading": "A célhoz érkezés"
+      }
+     ]
+    },
+    {
+     "block_id": "47ea9eee-1268-40f5-ae33-66dca438ad99",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az autó elmozdulása a kiindulási pontból a célpontba.",
+       "heading": "Mozgás és hely",
+       "description": "Egy egyszerű ábra, amely bemutatja a mozgás és a hely kapcsolatát, például egy autó elmozdulását egy úton. Az ábrán az autó helyét és az útvonalát jelöljük.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A megtett út és az elmozdulás viszonya.",
+       "heading": "Elmozdulás és megtett út",
+       "description": "Egy grafikon, amely a megtett út (s) és az elmozdulás (Δx) közötti különbséget mutatja be. Az elmozdulás egy vektor, míg a megtett út egy skalár mennyiség.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az átlagsebesség és a pillanatnyi sebesség.",
+       "heading": "Sebesség",
+       "description": "Egy vázlat, amely bemutatja a sebesség fogalmát: az átlagsebesség (v_avg) és a pillanatnyi sebesség (v) közötti különbséget. Az ábrán egy autó sebességmérője és a sebesség változása látható.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Átlagsebesség számítása: v_avg = s/t.",
+       "heading": "Átlagsebesség számítása",
+       "description": "Egy példa, amely bemutatja az átlagsebesség számítását. Az autó 100 km-t tesz meg 2 óra alatt, így az átlagsebesség 50 km/h.",
+       "visual_type": "példa"
+      },
+      {
+       "type": "visual",
+       "caption": "Pillanatnyi sebesség változása az idő függvényében.",
+       "heading": "Pillanatnyi sebesség",
+       "description": "Egy grafikon, amely az idő függvényében ábrázolja az autó pillanatnyi sebességét. A görbe mutatja, hogyan változik a sebesség a mozgás során.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Szabadesés: egyenletesen változó mozgás.",
+       "heading": "Szabadesés",
+       "description": "Egy diagram, amely bemutatja a szabadeső test mozgását, a magasság és az idő kapcsolatát. Az ábrán látható, hogy a test egyenletesen gyorsul.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Kísérlet a súrlódás csökkentésére.",
+       "heading": "Kísérlet a súrlódás csökkentésére",
+       "description": "Egy fotó, amely bemutat egy kísérletet, ahol különböző módon csökkentik a súrlódást (például légpárnás eszköz használatával).",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "Lejtőn leguruló test mozgása.",
+       "heading": "Lejtőn leguruló test",
+       "description": "Egy vázlat, amely bemutatja a lejtőn leguruló test mozgását. Az ábrán látható a lejtő szöge és a test sebessége.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "4deea59f-1b7f-4d91-8a13-8358ef01a5a7",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A sebesség fogalma a sportban is fontos, például a futóversenyek időmérő rendszereiben, ahol a résztvevők sebességének meghatározása kulcsszerepet játszik.",
+       "sketch": {
+        "shapes": [
+         {
+          "x1": 50,
+          "x2": 350,
+          "y1": 250,
+          "y2": 250,
+          "type": "line"
+         },
+         {
+          "x1": 50,
+          "x2": 150,
+          "y1": 250,
+          "y2": 150,
+          "type": "line"
+         },
+         {
+          "x": 40,
+          "y": 260,
+          "text": "Lejtő",
+          "type": "label"
+         },
+         {
+          "x": 160,
+          "y": 140,
+          "text": "Test",
+          "type": "label"
+         },
+         {
+          "x1": 160,
+          "x2": 160,
+          "y1": 150,
+          "y2": 200,
+          "type": "arrow"
+         },
+         {
+          "x": 170,
+          "y": 180,
+          "text": "v (sebesség)",
+          "type": "label"
+         },
+         {
+          "x": 150,
+          "y": 150,
+          "type": "dot"
+         },
+         {
+          "x": 160,
+          "y": 200,
+          "type": "dot"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Mozgások jellemzése és sebesség fogalma",
+       "discovery": "Galileo Galilei a 1600-as évek elején kísérletezett a mozgásokkal, különösen a lejtőkön leguruló testek mozgásának tanulmányozásával. Az ő munkássága segített megérteni, hogy a testek mozgása, mint például a szabadesés, egyenes vonalú, egyenletesen változó mozgásként írható le, ami forradalmasította a tudományos gondolkodást.",
+       "try_basic": "Mérj meg egy tárgy zuhanási idejét egy adott magasságból, és számold ki a sebességét a zuhanás végén a v = g * t képlettel!",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "2318d8a5-6406-491d-a5ad-c79a6e968a1d",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az út a megtett távolság, az elmozdulás pedig a kezdő- és végpont közötti távolság.",
+        "B) Az út és az elmozdulás ugyanazt jelentik.",
+        "C) Az elmozdulás mindig nagyobb, mint az út.",
+        "D) Az út csak egyenes vonalú mozgásra vonatkozik."
+       ],
+       "question": "Mi a különbség az út és az elmozdulás között?",
+       "explanation": "Az út a mozgás során megtett teljes távolságot jelenti, míg az elmozdulás a kezdő- és végpont közötti távolságot, figyelembe véve az irányt is.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az a sebesség, amit egy jármű egy adott pillanatban mutat.",
+        "B) Az átlagsebesség egy hosszabb időszak alatt.",
+        "C) A mozgás során elért maximális sebesség.",
+        "D) A sebesség, ami egyenletes mozgásnál állandó."
+       ],
+       "question": "Mi a pillanatnyi sebesség?",
+       "explanation": "A pillanatnyi sebesség az a sebesség, amit egy jármű egy adott pillanatban mutat, és ez változhat a mozgás során.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) v = s / t",
+        "B) v = t / s",
+        "C) v = s × t",
+        "D) v = s + t"
+       ],
+       "question": "Milyen képlettel számítható ki az átlagsebesség?",
+       "explanation": "Az átlagsebesség (v) a megtett út (s) és az eltelt idő (t) hányadosaként számítható ki.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A sebesség nagysága és iránya is állandó.",
+        "B) Csak a sebesség nagysága állandó, az irány változik.",
+        "C) Az elmozdulás mindig nulla.",
+        "D) Az út és az elmozdulás mindig egyenlő."
+       ],
+       "question": "Melyik állítás igaz az állandó sebességű mozgásra?",
+       "explanation": "Állandó sebességű mozgás esetén a sebesség nagysága és iránya is állandó, így a mozgás egyenes vonalú és egyenletes.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) s = v × t",
+        "B) s = t / v",
+        "C) s = v + t",
+        "D) s = v - t"
+       ],
+       "question": "Hogyan határozhatjuk meg a megtett utat állandó sebességű mozgás során?",
+       "explanation": "Az állandó sebességű mozgás során a megtett út (s) a sebesség (v) és az eltelt idő (t) szorzataként számítható ki.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "40a75ee2-1c77-4c10-9de7-d93fa99aef11",
+   "title_hu": "Állandó sebességű mozgások megfigyelése",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "d263c865-d485-48b4-8dd4-d6031a70f833",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Gondoljunk csak a mozgólépcsőre, ami a bevásárlóközpontokban gyakran megtalálható. Amikor rálépünk, szinte észrevétlenül haladunk felfelé vagy lefelé. Ez a mozgás közel állandó sebességű, hiszen a lépcső folyamatosan, egyenletesen halad. Az ilyen mozgások megfigyelése segít megérteni, hogyan működnek a különböző közlekedési eszközök, például a lift vagy az elektromos autók.",
+       "type": "text",
+       "heading": "Közel állandó sebességű mozgások a mindennapokban",
+       "key_term": "állandó sebesség"
+      },
+      {
+       "body": "A Mikola-csőben lévő buborék mozgása szintén érdekes példa az egyenes vonalú, közel állandó sebességű mozgásra. Amikor a buborék felemelkedik a folyadékban, a súrlódás és a nehézségi erő hatására egyenletes sebességgel halad. Ezt a jelenséget megfigyelhetjük, ha egy átlátszó csövet vízzel töltünk meg, és beleengedünk egy levegőbuborékot.",
+       "type": "text",
+       "heading": "Buborék a Mikola-csőben",
+       "key_term": "Mikola-cső"
+      },
+      {
+       "body": "Most nézzük meg, mi történik, ha egy testet elejtünk. Például, ha egy labdát ejtünk le egy magasságból, az elején lassan indul, majd egyre gyorsabban mozog, mivel a nehézségi erő hatására gyorsul. Ez a mozgás megmutatja, hogy a testek sebessége nem mindig állandó; a gyorsulás (a sebesség növekedése) a nehézségi erő következménye.",
+       "type": "text",
+       "heading": "Az elejtett test mozgása",
+       "key_term": "gyorsulás"
+      },
+      {
+       "body": "A gyorsulás fogalma azt jelenti, hogy egy test sebessége időben változik. Amikor a labda leesik, a nehézségi erő folyamatosan hat rá, így egyre gyorsabban mozog. Ezt a jelenséget a fizikai kísérletek során is megfigyelhetjük, például ha különböző magasságokból ejtjük le a labdát, és mérjük a sebességét érkezéskor.",
+       "type": "text",
+       "heading": "Gyorsulás és nehézségi erő",
+       "key_term": "nehézségi erő"
+      },
+      {
+       "body": "A súrlódás csökkentése kulcsfontosságú a közel állandó sebességű mozgások megvalósításához. Például, ha jégen csúszó eszközöket, mint a jégkorongkorongot használunk, a súrlódás minimálisra csökkenthető, így a korong hosszú ideig egyenletes sebességgel mozoghat. A légpárnás eszközök is hasonló elven működnek, ahol a levegőpárna csökkenti a súrlódást.",
+       "type": "text",
+       "heading": "Súrlódás csökkentése",
+       "key_term": "súrlódás"
+      },
+      {
+       "body": "Eötvös Loránd nevéhez fűződik az Eötvös inga kifejlesztése, amely a földi nehézségi erő mérésére szolgál. Az inga lengése közben a testek mozgásának megfigyelésével a gyorsulás mértékét is meghatározhatjuk. Eötvös munkássága hozzájárult a gravitációs törvények megértéséhez, és a mai tudományos ismeretek alapjait képezi.",
+       "type": "text",
+       "heading": "Eötvös Loránd és az Eötvös inga",
+       "key_term": "Eötvös inga"
+      }
+     ]
+    },
+    {
+     "block_id": "eeedce32-b72e-4898-a5ca-67c24f943bbe",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzeld el, hogy egy fiatal, aki éppen a reggeli iskolába indulásra készül, felkapcsolja a villanyt a szobájában. A villanykörte fénye azonnal világítani kezd, és a szoba hirtelen megtelik fénnyel. Ez a pillanat a villanyáram mozgásának megindulását jelenti, amely a vezetékeken keresztül halad, és a villanykörte izzószálát melegíti.",
+       "type": "story",
+       "heading": "Egy nap kezdete"
+      },
+      {
+       "body": "A villanyáram (elektronok) a vezetéken keresztül folyamatosan áramlik. Ez a mozgás közel állandó sebességű, mivel az áramkör ellenállása és a feszültség viszonylag stabil. E közben a fiatal már az ajtóban áll, és a mobiltelefonját a Qi (vezeték nélküli) töltőre helyezi, ami szintén a villanyáram segítségével működik.",
+       "type": "story",
+       "heading": "A villanyáram útja"
+      },
+      {
+       "body": "A Qi töltőben a villanyáram elektromágneses mezőt hoz létre, amely áthalad a telefonon, és az akkumulátorban tárolja az energiát. Ez a folyamat is közel állandó sebességű mozgás, mivel a töltés folyamata egyenletesen zajlik, és a telefon energiafelvétele folyamatos.",
+       "type": "story",
+       "heading": "A mobiltelefon töltése"
+      },
+      {
+       "body": "Miután a telefon feltöltődött, a fiatal elindul az iskolába. Az úton, a gyalogosok között haladva, észreveszi, hogy a mozgólépcsőn is felfelé halad. A mozgólépcső folyamatosan, egyenletes sebességgel viszi őt a következő szintre, amit a lépcső mechanikája biztosít.",
+       "type": "story",
+       "heading": "A telefon használata"
+      },
+      {
+       "body": "A mozgólépcső motorja folyamatosan működik, és a lépcsők egyenletes sebességgel haladnak. Ez a mozgás szintén közel állandó sebességű, hiszen a motor teljesítménye és a terhelés állandó, így a fiatal gyorsan és kényelmesen eljut az iskola bejáratához.",
+       "type": "story",
+       "heading": "A mozgólépcső működése"
+      },
+      {
+       "body": "Miközben a fiatal az iskolába érkezik, a mozgás során tapasztalt sebesség és gyorsulás is fontos szerepet játszik. Az Eötvös-ingával végzett kísérletek során megfigyelhetjük, hogyan hat a nehézségi erő a mozgásra, és hogyan befolyásolja a gyorsulás mértékét. A fizikában rejlő összefüggések segítenek megérteni a mindennapi mozgásokat és jelenségeket.",
+       "type": "story",
+       "heading": "A fizika a háttérben"
+      }
+     ]
+    },
+    {
+     "block_id": "0216ecfd-5669-43bc-96b2-7bcd877b2202",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A Mikola-csőben mozgó buborék egyenes vonalú, közel állandó sebességű mozgása.",
+       "heading": "Buborék a Mikola-csőben",
+       "description": "A Mikola-csőben a buborék mozgását ábrázoló diagram, amely bemutatja a buborék egyenes vonalú mozgását és a sebességének állandóságát.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A mozgólépcső állandó sebességű mozgása, amely lehetővé teszi az utasok számára, hogy könnyedén haladjanak.",
+       "heading": "Mozgólépcső működése",
+       "description": "Egy mozgólépcső vázlata, amelyen az emberek folyamatosan fel- és lemozognak, bemutatva a lépcső állandó sebességű mozgását.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A jégen csúszó test sebessége az időben, amely közel állandó.",
+       "heading": "Csúszás jégen",
+       "description": "Egy grafikon, amely a jégen csúszó test sebességét ábrázolja az idő függvényében, bemutatva a közel állandó sebességet.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az elejtett test mozgása, amely a nehézségi erő hatására gyorsul.",
+       "heading": "Elejtett test mozgása",
+       "description": "Egy diagram, amely az elejtett test mozgását ábrázolja, beleértve a gyorsulás és a nehézségi erő hatását.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A gyorsulás és a nehézségi erő kapcsolatának bemutatása.",
+       "heading": "Gyorsulás és nehézségi erő",
+       "description": "Egy keresztmetszeti ábra, amely a gyorsulás fogalmát és a nehézségi erő hatását mutatja be.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Eötvös Loránd és az Eötvös-ingája: a gravitációs erő és a gyorsulás vizsgálata.",
+       "heading": "Eötvös Loránd és az Eötvös-ingája",
+       "description": "Egy információs tábla Eötvös Loránd életéről és az Eötvös-ingáról, kiemelve a tudományos hozzájárulását.",
+       "visual_type": "adatgyűjtés"
+      },
+      {
+       "type": "visual",
+       "caption": "A súrlódás csökkentésének módszerei a mozgás elősegítésére.",
+       "heading": "Súrlódás csökkentése",
+       "description": "Egy vázlat, amely bemutatja a súrlódás csökkentésének különböző módszereit, például légpárnás eszközöket és jégen csúszó eszközöket.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "3d921f7c-6f70-4b4a-ad46-2adb5323638c",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A diákok a hétköznapjaik során találkozhatnak állandó sebességű mozgásokkal, például autóval való közlekedéskor, ahol a jármű egyenletes sebességgel halad az úton.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Állandó sebességű mozgások megfigyelése",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "06eb1a49-72e7-45c6-a1e6-3ded83a6c79e",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Buborék a Mikola-csőben",
+        "B) Autó gyorsítása",
+        "C) Labda felfelé dobása",
+        "D) Folyó víz áramlása"
+       ],
+       "question": "Melyik példa mutatja be a közel állandó sebességű, egyenes vonalú mozgást?",
+       "explanation": "A buborék a Mikola-csőben egyenes vonalú mozgást végez, amely közel állandó sebességgel történik, mivel a víz áramlása stabil.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A nehézségi erő hatására",
+        "B) A levegő ellenállása miatt",
+        "C) A súrlódás miatt",
+        "D) A test tömegének növekedése miatt"
+       ],
+       "question": "Milyen hatásra gyorsul egy elejtett test?",
+       "explanation": "Az elejtett test gyorsulása a nehézségi erő (gravitáció) hatására következik be, amely folyamatosan vonzza a testet lefelé.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A sebesség időbeli változása",
+        "B) A test helyzete",
+        "C) A test tömege",
+        "D) A súrlódás mértéke"
+       ],
+       "question": "Mi a gyorsulás (a)?",
+       "explanation": "A gyorsulás a sebesség időbeli változását jelenti, amely megmutatja, hogy a test mennyire gyorsul vagy lassul.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Légpárnás eszköz",
+        "B) Kerekes szék",
+        "C) Húzóerő",
+        "D) Nehéz súly"
+       ],
+       "question": "Melyik eszköz segíti a súrlódás csökkentését?",
+       "explanation": "A légpárnás eszközök csökkentik a súrlódást azáltal, hogy levegőpárnát képeznek a felület és az eszköz között.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Fizikus és a gravitációs törvények kutatója",
+        "B) Csillagász",
+        "C) Kémikus",
+        "D) Biológus"
+       ],
+       "question": "Ki volt Eötvös Loránd?",
+       "explanation": "Eötvös Loránd fizikus volt, aki jelentős munkát végzett a gravitációs törvények és az Eötvös-ingára vonatkozóan.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "c256e214-c597-416e-8ef8-23004c39c063",
+   "title_hu": "Esés és csúszás vizsgálata",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "dfd4f409-d34a-4b32-a6f4-17eeb4f34338",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzelj el egy kút mélységét, amelyet meg szeretnél mérni. Ha egy követ ejtesz bele, az esési időt megmérheted egy stopperóra segítségével. Az esési időt a következő képlettel számíthatod ki: t = √(2h/g), ahol h a kút mélysége, g pedig a gravitációs gyorsulás, ami körülbelül 9,81 m/s². Így, ha tudod, mennyi idő alatt érkezik a kő a vízbe, kiszámíthatod a kút mélységét. Ez a gyakorlati példa segít megérteni, hogyan hat a gravitáció az eső testekre.",
+       "type": "text",
+       "heading": "Az elejtett test esési ideje",
+       "key_term": "esési idő"
+      },
+      {
+       "body": "Ha tudod, hogy mennyi ideig esett a kő, a becsapódási sebességét is kiszámolhatod. A képlet, amit használhatsz: v = √(2gh), ahol v a sebesség, g a gravitációs gyorsulás, és h a magasság, ahonnan a kő esett. Például, ha a kő 2 másodpercig esett, akkor a becsapódási sebessége 19,62 m/s lesz. Ez a sebesség elég nagy ahhoz, hogy okozzon egy nagyobb fröccsenést a vízben.",
+       "type": "text",
+       "heading": "A becsapódási sebesség kiszámítása",
+       "key_term": "becsapódási sebesség"
+      },
+      {
+       "body": "Most nézzük meg a csúszó testek mozgását! Képzeld el, hogy egy lejtőn egy könyvet engedsz le. Ahogy a könyv legurul, a gravitáció mellett a súrlódás is hatással van a mozgására. A súrlódás csökkenti a sebességet, így a könyv nem fog végtelen sebességgel lecsúszni. Kísérletként próbálj meg különböző felületeken (például sima és durva) csúsztatni a könyvet, és figyeld meg, hogy hol gyorsabb, és hol lassabb a mozgás.",
+       "type": "text",
+       "heading": "Csúszás lejtőn",
+       "key_term": "csúszás"
+      },
+      {
+       "body": "Minden mozgás mögött erők állnak. Amikor a könyv csúszik, a gravitáció húzza lefelé, míg a súrlódás felfelé hat. Ha a súrlódás kisebb, mint a gravitációs erő, a könyv gyorsan lecsúszik. De ha a felület durva, a súrlódás erősebb, és a könyv lassabban mozog. Ezt a jelenséget a mindennapi életben is tapasztalhatod, például amikor a cipőd talpa csúszik az esőben.",
+       "type": "text",
+       "heading": "Erők hatása a mozgásra",
+       "key_term": "erő"
+      },
+      {
+       "body": "Amikor az esési időt méred, fontos, hogy a mérések pontosak legyenek. Használj digitális stopperórát, hogy minimalizáld az emberi hibát. A mérések pontosságát a mérési körülmények is befolyásolják, mint például a szél vagy a zaj. Ha többször ismétled a kísérletet, és átlagolod az eredményeket, akkor pontosabb értékeket kapsz, ami segít a kút mélységének pontos meghatározásában.",
+       "type": "text",
+       "heading": "A mérés pontossága",
+       "key_term": "mérés pontossága"
+      }
+     ]
+    },
+    {
+     "block_id": "0e771073-e620-4b6d-873e-f6b97bd7f3ef",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzeljünk el egy tizenévest, aki otthon a szobájában készül egy kísérletre. Elővesz egy labdát, amelyet az ablakpárkányról szeretne elejteni, hogy megmérje a zuhanási idejét. A labda súlyát és anyagát figyelembe véve a tizenéves arra gondol, hogy a levegő ellenállása is befolyásolhatja a mozgást, de most a gravitáció hatását szeretné megfigyelni. Megállapítja, hogy a kísérlethez szüksége lesz egy stopperórára és egy vonalzóra, hogy pontosan megmérhesse az esési időt és a magasságot.",
+       "type": "story",
+       "heading": "A kísérlet előkészítése"
+      },
+      {
+       "body": "Miután mindent előkészített, a tizenéves felmászik az ablakpárkányra, és egy mély levegőt véve elejti a labdát. A labda szabadon zuhan, és a tizenéves figyeli, ahogy a gravitáció (a Föld vonzóereje) gyorsítja a mozgását. A stopperóra segítségével pontosan megméri, mennyi ideig tart a labda zuhanása, és jegyzi a mért időt. A labda végül a földre érkezik, és a tizenéves izgatottan várja a mért értékeket, hogy kiszámolja a becsapódási sebességet.",
+       "type": "story",
+       "heading": "A labda elejtése"
+      },
+      {
+       "body": "A tizenéves most leül, hogy kiszámolja a labda becsapódási sebességét. Az esési időt, amit mért, beírja a képletbe, amely a gravitációs gyorsulás figyelembevételével segít neki meghatározni a sebességet. A képletet alkalmazva megérti, hogy a labda sebessége a zuhanás végén mennyire megnőtt, és ezáltal a gravitáció erejének hatását is érzékeli. Ekkor rájön, hogy a sebesség és az idő kapcsolatát a mozgás törvényeivel is meg tudja magyarázni.",
+       "type": "story",
+       "heading": "Az esési idő és a sebesség kiszámítása"
+      },
+      {
+       "body": "Ezután a tizenéves úgy dönt, hogy megfigyeli, hogyan csúszik a labda egy lejtőn. Előkészít egy lejtőt, amelyet egy könyv segítségével alakít ki. A labdát a lejtő tetejére helyezi, és figyeli, ahogy az elindul. Közben észreveszi, hogy a labda mozgásában nemcsak a gravitáció, hanem a súrlódás (a lejtő és a labda közötti érintkezés) is szerepet játszik. A mozgás gyorsaságát és irányát a lejtő dőlésszöge is befolyásolja, így a tizenéves több kísérletet végez, hogy megértse a csúszás különböző aspektusait.",
+       "type": "story",
+       "heading": "A csúszás vizsgálata"
+      },
+      {
+       "body": "Végül a tizenéves összegzi a kísérlet tapasztalatait. Megérti, hogy az esés és a csúszás mozgásának megfigyelése során a gravitáció és a súrlódás erői hogyan befolyásolják a testek mozgását. A kísérlet során szerzett tudását felhasználva meg tudja határozni a kút mélységét is, ha a zuhanási időt ismeri. A kísérlet végén elégedett, hogy nemcsak a fizikai törvényeket tanulmányozta, hanem a saját tapasztalatait is felhasználta a megértéshez.",
+       "type": "story",
+       "heading": "A kísérlet összegzése"
+      }
+     ]
+    },
+    {
+     "block_id": "c32206cf-4a9d-4fff-b23a-d63b164b23f9",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A test esése a kút mélysége vagy az erkély magassága függvényében.",
+       "heading": "Esési idő mérése",
+       "description": "Egy kút vagy erkély vázlata, amelyen egy testet ejtenek le. A diagramon látható a test kezdőpontja, az esés útja és az időmérő eszköz (pl. stopper) elhelyezése.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az esési idő négyzetének és a magasságnak a kapcsolata.",
+       "heading": "Esési idő és magasság kapcsolata",
+       "description": "Grafikon, amelyen a függőleges tengelyen az esési idő (t), a vízszintes tengelyen pedig a magasság (h) található. A grafikon bemutatja, hogy az idő négyzetével arányos a magasság.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A becsapódási sebesség kiszámítása az esési idő és a gravitációs gyorsulás segítségével.",
+       "heading": "Becsapódási sebesség kiszámítása",
+       "description": "A vázlaton egy test látható, amely a föld felé esik, alatta pedig a sebesség (v) kiszámításához szükséges képlet: v = √(2gh), ahol g a gravitációs gyorsulás.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A csúszó test mozgása és a rá ható erők.",
+       "heading": "Csúszó test mozgása",
+       "description": "Diagram, amelyen egy lejtőn csúszó test látható. A diagramon feltüntetve vannak a rá ható erők, mint a gravitáció, a súrlódás és a normál erő.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az erők egyensúlya a csúszó test mozgása közben.",
+       "heading": "Erők egyensúlya csúszás közben",
+       "description": "Vázlat, amelyen a csúszó test alatti lejtőn feltüntetett erők, mint a gravitációs erő, a normál erő és a súrlódási erő.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A lejtőn leguruló test sebességének növekedése az idő függvényében.",
+       "heading": "Lejtőn leguruló testek mozgása",
+       "description": "Grafikon, amelyen a lejtőn leguruló test sebessége (v) az idő (t) függvényében ábrázolva van. A grafikonon látható, hogy a sebesség folyamatosan növekszik.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A csúszó testek mozgásának kísérleti vizsgálata.",
+       "heading": "Kísérleti vizsgálat - csúszás",
+       "description": "Diagram, amely bemutatja a kísérlet felállítását: lejtő, csúszó test, időmérő eszköz és a megfigyelés helyszíne.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "25dd4bbd-d37d-4789-bae8-0ecaf170b4d5",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Az esés és csúszás jelenségei fontos szerepet játszanak a sportokban, például a síelésben vagy a kerékpározásban, ahol a mozgás sebessége és iránya meghatározó a teljesítmény szempontjából.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Esés és csúszás vizsgálata",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "04f729cf-9f3b-42d5-8836-a7fc017cba77",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) 1 s",
+        "B) 2 s",
+        "C) 3 s",
+        "D) 4 s"
+       ],
+       "question": "Mennyi ideig esik egy test, ha 5 méter magasból ejtjük le? (g = 9,81 m/s²)",
+       "explanation": "Az esési időt a szabadesés képlete alapján számoljuk: t = √(2h/g), ahol h a magasság és g a gravitációs gyorsulás.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) 14 m/s",
+        "B) 19,8 m/s",
+        "C) 20 m/s",
+        "D) 28 m/s"
+       ],
+       "question": "Mi a becsapódási sebesség egy 20 méter magasból ejtett test esetén? (g = 9,81 m/s²)",
+       "explanation": "A becsapódási sebességet a v = √(2gh) képlet segítségével számítjuk, ahol h a magasság és g a gravitációs gyorsulás.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Csak a gravitáció",
+        "B) Csak a súrlódás",
+        "C) Gravitáció és súrlódás",
+        "D) Nincs erő"
+       ],
+       "question": "Melyik erő hat a csúszó testre a lejtőn?",
+       "explanation": "A csúszó testre a gravitáció és a súrlódás is hat, ezek együtt befolyásolják a mozgást.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Állandó sebességgel csúszik",
+        "B) Fokozatosan növekszik",
+        "C) Fokozatosan csökken",
+        "D) Változó sebességgel csúszik"
+       ],
+       "question": "Hogyan változik a csúszó test sebessége a lejtőn?",
+       "explanation": "A csúszó test sebessége fokozatosan növekszik, amíg a súrlódás nem lassítja le.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) A test tömege",
+        "B) A lejtő dőlésszöge",
+        "C) A test anyaga",
+        "D) A levegő ellenállása"
+       ],
+       "question": "Melyik tényező befolyásolja leginkább a csúszás sebességét a lejtőn?",
+       "explanation": "A lejtő dőlésszöge határozza meg, hogy milyen mértékben hat a gravitációs erő a csúszó testre.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "a64a196e-8702-4500-91a9-508ca6bb22ca",
+   "title_hu": "Gyorsulás és mozgás leírása",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "eaa775ab-7bf5-4483-a123-9d622e8b3c8b",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A gyorsulás (a sebesség változása időegység alatt) azt jelenti, hogy egy test sebessége folyamatosan nő vagy csökken. Például, amikor egy elektromos autó (EV) gázpedálját lenyomjuk, az autó gyorsulni kezd. Az állandó gyorsulás esetén a sebesség minden egyes másodpercben ugyanannyival nő. Ez a jelenség a mindennapi életben is megfigyelhető, például amikor egy busz elindul a megállóból.",
+       "type": "text",
+       "heading": "Az állandó gyorsulás fogalma",
+       "key_term": "gyorsulás"
+      },
+      {
+       "body": "Az elmozdulás (a test helyváltozása) és a sebesség (az elmozdulás időegységre vetített mértéke) szoros kapcsolatban állnak egymással. Ha egy autó egyenletesen gyorsul, akkor az elmozdulás mértéke folyamatosan nő, és a sebessége is egyre nagyobb lesz. Például, ha a kedvenc videójátékodban a karaktered gyorsan fut, akkor az elmozdulása egyre nagyobb sebességgel történik.",
+       "type": "text",
+       "heading": "Sebesség és elmozdulás kapcsolata",
+       "key_term": "elmozdulás, sebesség"
+      },
+      {
+       "body": "Galilei munkássága alapvető fontosságú volt a mozgások megértésében. Ő volt az első, aki kísérletekkel vizsgálta a mozgás törvényeit, és kimutatta, hogy a szabadesés során a gyorsulás állandó. Ez a megközelítés segített a tudományos módszer kialakulásában, amely ma is alapvető a tudományban. Galilei kísérletei közül az egyik legismertebb a leejtett golyók vizsgálata volt, amely megmutatta, hogy a mozgás független a test súlyától.",
+       "type": "text",
+       "heading": "Galilei és a mozgások",
+       "key_term": "Galilei"
+      },
+      {
+       "body": "A szabadesés (amikor egy test csak a gravitáció hatásának van kitéve) egy példája az egyenes vonalú, egyenletesen változó mozgásnak. Tervezhetsz egy egyszerű kísérletet, ahol egy labdát különböző magasságokból ejtesz le, és mérheted az időt, amíg a földet éri. Ezzel bemutathatod, hogy a labda gyorsulása állandó, függetlenül attól, hogy milyen magasról ejted le. Ez a kísérlet jól illusztrálja a gyorsulás fogalmát a gyakorlatban.",
+       "type": "text",
+       "heading": "Szabadesés kísérlet tervezése",
+       "key_term": "szabadesés"
+      },
+      {
+       "body": "A gyorsulás nemcsak a sportban, hanem a technológiai eszközökben is jelen van. Például, amikor használod a telefonodat, és az érintőképernyőt gyorsan húzod, a telefon gyorsulását tapasztalod. Az alkalmazások azonnal reagálnak, és a gyorsulás érzése azt jelenti, hogy a telefon gyorsan feldolgozza a parancsokat. Az ilyen tapasztalatok segítenek megérteni a gyorsulás mindennapi hatásait.",
+       "type": "text",
+       "heading": "A gyorsulás mindennapi példái",
+       "key_term": "gyorsulás"
+      }
+     ]
+    },
+    {
+     "block_id": "8e92f2f9-aa39-426e-9078-61693bf694b8",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal a barátaival autóba ül, hogy elinduljanak a városba. A sofőr megnyomja a gázpedált, és az autó elindul. Az autó mozgása kezdetben lassú, de ahogy a gázpedált tovább nyomja, a gyorsulás (a sebesség növekedése) egyre inkább érezhető.",
+       "type": "story",
+       "heading": "Az autó elindul"
+      },
+      {
+       "body": "A sofőr figyeli a sebességmérőt, amely az autó sebességét mutatja. Ahogy a gyorsulás folytatódik, a sebesség növekszik, és a sofőr érzi, hogy az autó egyre dinamikusabban halad. Ez a mozgás egyenes vonalú, egyenletesen változó mozgás, ahol a sebesség folyamatosan nő a gyorsulás hatására.",
+       "type": "story",
+       "heading": "A gyorsulás mérése"
+      },
+      {
+       "body": "A sofőr tudja, hogy az elmozdulás (a megtett távolság) kiszámítható a sebesség és az idő figyelembevételével. Az autó, amely folyamatosan gyorsul, egyre nagyobb távolságot tesz meg egy adott idő alatt. Például, ha az autó 10 másodpercig gyorsul, a sebessége az idő végére elérheti a 100 km/h-t.",
+       "type": "story",
+       "heading": "Az elmozdulás számítása"
+      },
+      {
+       "body": "A fiatalok emlékeznek Galilei munkásságára, aki a mozgás törvényeit tanulmányozta. Ő volt az, aki felfedezte, hogy a szabadesés során a gyorsulás állandó. Galilei kísérletei segítettek megérteni, hogyan működik a gyorsulás, és hogy a testek mozgása előre jelezhető.",
+       "type": "story",
+       "heading": "Galilei és a mozgás"
+      },
+      {
+       "body": "A fiatalok elhatározzák, hogy egy kísérletet végeznek, hogy megértsék a szabadesést. Egy labdát ejtenek le egy magasból, és megfigyelik, hogy a labda egyenes vonalú, egyenletesen változó mozgást végez, ahol a gyorsulás a gravitáció hatására állandó. A kísérlet során észlelik, hogy a labda egyre gyorsabban mozog, ahogy közelít a földhöz.",
+       "type": "story",
+       "heading": "Szabadesés kísérlet"
+      }
+     ]
+    },
+    {
+     "block_id": "a2e1b582-6abd-48d8-aa02-37d121e67eb7",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az autó gyorsulása az idő függvényében.",
+       "heading": "Állandó gyorsulású mozgás",
+       "description": "A diagramon egy autó mozgását ábrázoljuk, amely egyenletesen gyorsul. Az idő (t) az X tengelyen, míg a sebesség (v) a Y tengelyen helyezkedik el. A vonal egyenesen felfelé emelkedik, ami az állandó gyorsulást jelzi.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az elmozdulás a sebesség függvényében.",
+       "heading": "Sebesség és elmozdulás kapcsolata",
+       "description": "Egy grafikon, amely az elmozdulás (s) és a sebesség (v) közötti kapcsolatot mutatja be. Az elmozdulás a Y tengelyen, a sebesség az X tengelyen van. A grafikon egy parabolát formáz, ami az egyenletes gyorsulásra utal.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A gyorsulás mint a sebesség időbeli változása.",
+       "heading": "Gyorsulás fogalma",
+       "description": "Egy vázlat, amely bemutatja a gyorsulás (a) fogalmát. Az ábrán látható, hogy a gyorsulás a sebesség (v) időbeli változása. Egy autó, amely gyorsul, és a sebessége növekszik, miközben az idő múlik.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Galilei kísérlete a szabadesésről.",
+       "heading": "Galilei kísérlete",
+       "description": "Egy keresztmetszeti ábra, amely Galilei híres lejtős kísérletét mutatja be. Az ábrán látható a lejtő, amelyen egy golyó halad le, és a különböző magasságokból való leereszkedés sebességeit illusztrálja.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Szabadesés elmozdulása az idő függvényében.",
+       "heading": "Szabadesés",
+       "description": "Egy grafikon, amely a szabadesés időbeli elmozdulását mutatja. Az idő (t) az X tengelyen, az elmozdulás (s) a Y tengelyen van. A grafikon parabolikus formát ölt, amely az egyenletesen változó mozgást jelzi.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "e9b19960-ae9c-41f2-919e-4f631ba115f6",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A gyorsulás jelensége például a közlekedésben is megjelenik, amikor egy autó gyorsít vagy fékez. A gyorsulás mértéke befolyásolja a járművek biztonságát és a vezetési élményt.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Mozgás a mindennapokban",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "f3a545f7-0cc5-468b-8da1-99802724c063",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A sebesség változása az időegység alatt.",
+        "B) A mozgás irányának megváltozása.",
+        "C) Az elmozdulás időbeli változása.",
+        "D) A sebesség állandósága."
+       ],
+       "question": "Mi a gyorsulás (a) definíciója?",
+       "explanation": "A gyorsulás a sebesség (v) időbeli változását jelenti, amely megmutatja, hogy mennyire gyorsan változik a sebesség.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Egyenletesen gyorsuló mozgást.",
+        "B) Egyenletes mozgást.",
+        "C) Változó sebességű mozgást.",
+        "D) Megálló mozgást."
+       ],
+       "question": "Milyen mozgást végez egy autó, ha állandó gyorsulással indul?",
+       "explanation": "Az állandó gyorsulással induló autó egyenletesen gyorsuló mozgást végez, ami azt jelenti, hogy a sebessége folyamatosan növekszik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) s = v0 * t + 0.5 * a * t^2",
+        "B) s = v * t",
+        "C) s = a * t^2",
+        "D) s = v0 + a"
+       ],
+       "question": "Milyen összefüggés van az elmozdulás (s), a sebesség (v) és a gyorsulás (a) között egyenletesen gyorsuló mozgás esetén?",
+       "explanation": "Az elmozdulás (s) egyenletesen gyorsuló mozgás esetén a kezdeti sebesség (v0), a gyorsulás (a) és az idő (t) függvényében számítható ki az A opcióban megadott képlettel.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) m/s²",
+        "B) m/s",
+        "C) m",
+        "D) s"
+       ],
+       "question": "Milyen mértékegységben fejezzük ki a gyorsulást (a)?",
+       "explanation": "A gyorsulás mértékegysége a m/s², ami azt jelenti, hogy a sebesség másodpercenkénti változása méter per másodperc négyzet.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A sebesség folyamatosan változik.",
+        "B) Az elmozdulás állandó.",
+        "C) A gyorsulás változó.",
+        "D) A mozgás iránya nem változik."
+       ],
+       "question": "Melyik állítás igaz az egyenletesen gyorsuló mozgásra?",
+       "explanation": "Az egyenletesen gyorsuló mozgás során a sebesség folyamatosan változik, ami a gyorsulás állandóságát jelenti.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "87095470-7a4e-4606-b332-c9baa8c58005",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az út a mozgás során megtett távolság, az elmozdulás pedig a kiindulási és a végpont közötti távolság.",
+      "B) Az út mindig nagyobb, mint az elmozdulás.",
+      "C) Az elmozdulás sosem lehet negatív.",
+      "D) Az út és elmozdulás ugyanazt jelentik."
+     ],
+     "question": "Mi a különbség az út (s) és az elmozdulás (Δx) között?",
+     "explanation": "Az út a mozgás során megtett távolság, míg az elmozdulás a kiindulási és a végpont közötti egyenes távolságot jelenti.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 0 km/h",
+      "B) 50 km/h",
+      "C) 100 km/h",
+      "D) Változó sebesség"
+     ],
+     "question": "Milyen értéket mutat a gépkocsi sebességmérője, ha az autó áll?",
+     "explanation": "Ha az autó áll, akkor a sebessége 0 km/h, ami azt jelenti, hogy nem halad.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az elmozdulás és az idő hányadosaként.",
+      "B) Az út és az elmozdulás különbségeként.",
+      "C) Az idő és az út szorzataként.",
+      "D) Az elmozdulás és az út összegének hányadosaként."
+     ],
+     "question": "Miként számítható ki az átlagsebesség?",
+     "explanation": "Az átlagsebesség az elmozdulás és az ehhez szükséges idő hányadosa.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Buborék a Mikola-csőben.",
+      "B) Autó gyorsulása.",
+      "C) Egy ejtőernyős zuhanása.",
+      "D) Felfelé mozgó lift."
+     ],
+     "question": "Melyik példa mutatja a közel állandó sebességű mozgást?",
+     "explanation": "A buborék a Mikola-csőben közel állandó sebességgel mozog, mivel a közegellenállás és a felhajtóerő egyensúlyban van.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Azonnal megáll.",
+      "B) Folyamatosan gyorsul a nehézségi erő hatására.",
+      "C) Az útja egyenletes.",
+      "D) Nem változik a sebessége."
+     ],
+     "question": "Mi történik, ha egy testet elejtünk?",
+     "explanation": "Az elejtett test folyamatosan gyorsul a nehézségi erő hatására, ami a gyorsulás (g) miatt történik.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Csak a nehézségi erő.",
+      "B) Csak a súrlódási erő.",
+      "C) A nehézségi erő és a súrlódási erő.",
+      "D) Nincs rá ható erő."
+     ],
+     "question": "Milyen erő hat a csúszó testre?",
+     "explanation": "A csúszó testre a nehézségi erő és a súrlódási erő hat, amelyek befolyásolják a mozgását.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A sebessége folyamatosan csökken.",
+      "B) A sebessége állandó.",
+      "C) A sebessége folyamatosan nő.",
+      "D) Az autó megáll."
+     ],
+     "question": "Hogyan jellemezhető az állandó gyorsulással elinduló autó mozgása?",
+     "explanation": "Az állandó gyorsulással elinduló autó sebessége folyamatosan nő, ami a gyorsulás következménye.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) m/s",
+      "B) kg",
+      "C) N",
+      "D) J"
+     ],
+     "question": "Milyen mértékegységben fejezzük ki a sebességet?",
+     "explanation": "A sebesség mértékegysége a méter per szekundum (m/s), amely a megtett út és az idő hányadosa.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}
