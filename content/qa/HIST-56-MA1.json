@@ -1,0 +1,328 @@
+{
+ "nat_id": "HIST-56-MA1",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 19,
+  "cards": 91,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-56-MA1-001",
+   "lesson_id": "e2c2be5f-9467-46dd-a062-152c18e7faa1",
+   "block_id": "8e799f7d-7505-4b99-873c-89824c17930d",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Nagy Lajos „Csehország, Lengyelország és más közép-európai területek felett is kiterjesztette hatalmát”.",
+   "explanation": "Csehország felett Nagy Lajos nem uralkodott. 1370-től Lengyelország királya is volt (perszonálunió), és 1358-ban visszaszerezte Dalmáciát Velencétől.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/I._Lajos_magyar_kir%C3%A1ly",
+     "title": "I. Lajos magyar király",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "I. (Nagy) Lajos, 1342-től 1382-ig uralkodott, és a magyar történelem egyik legnagyobb hódítójának számít. Uralkodása alatt Magyarország területe jelentősen megnőtt, Csehország, Lengyelország és más közép-európai területek felett is kiterjesztette hatalmát. Nagy Lajos a hadsereg modernizálására és a központi hatalom megerősítésére összpontosított, ami hozzájárult a magyar állam virágzásához. Ő volt az, aki a magyar királyságot a legnagyobb európai hatalmak közé emelte, így fontos szerepet játszott a középkori Európa politikai tájának alakításában. A hódításai során elért sikerei nemcsak területi, hanem gazdasági előnyöket is hoztak az országnak.",
+     "type": "text",
+     "heading": "Nagy Lajos, a hódító",
+     "key_term": "I. (Nagy) Lajos"
+    },
+    "after": {
+     "body": "I. (Nagy) Lajos, 1342-től 1382-ig uralkodott, és a magyar történelem egyik legnagyobb hódítójának számít. 1358-ban visszaszerezte Velencétől Dalmáciát, 1370-től pedig Lengyelország királya is lett, így két ország felett uralkodott. Nagy Lajos a hadsereg modernizálására és a központi hatalom megerősítésére összpontosított, ami hozzájárult a magyar állam virágzásához. Ő volt az, aki a magyar királyságot a legnagyobb európai hatalmak közé emelte, így fontos szerepet játszott a középkori Európa politikai tájának alakításában. A hódításai során elért sikerei nemcsak területi, hanem gazdasági előnyöket is hoztak az országnak.",
+     "type": "text",
+     "heading": "Nagy Lajos, a hódító",
+     "key_term": "I. (Nagy) Lajos"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-MA1-002",
+   "lesson_id": "e2c2be5f-9467-46dd-a062-152c18e7faa1",
+   "block_id": "8e799f7d-7505-4b99-873c-89824c17930d",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "„A találkozón a magyar, cseh és lengyel királyok együttműködést alakítottak ki” — Zsigmondról szóló kártyán.",
+   "explanation": "Az 1335-ös visegrádi találkozóra utal, amely 52 évvel Zsigmond trónra lépése előtt volt; Zsigmondnak nincs köze hozzá.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Belső időrendi hiba: a visegrádi királytalálkozó 1335, Zsigmond 1387-től uralkodott (a kártya maga írja).",
+   "fix": {
+    "before": {
+     "body": "Luxemburgi Zsigmond, 1387 és 1437 között uralkodott, és ő volt az első magyar király, aki a német-római császári címet is viselte. Zsigmond uralkodása alatt Magyarország jelentős politikai és diplomáciai befolyásra tett szert. A találkozón a magyar, cseh és lengyel királyok együttműködést alakítottak ki, ami a közép-európai stabilitás érdekében fontos lépés volt. Zsigmond törekvései a keresztény egység megteremtésére és a törökök elleni védelemre is irányultak, így kulcsszerepet játszott a magyar állam védelmében. Uralkodása alatt a kultúra és a művészetek is virágzásnak indultak, ami tovább erősítette Magyarország helyzetét Európában.",
+     "type": "text",
+     "heading": "Luxemburgi Zsigmond, a császár",
+     "key_term": "Luxemburgi Zsigmond"
+    },
+    "after": {
+     "body": "Luxemburgi Zsigmond, 1387 és 1437 között uralkodott, és ő volt az első magyar király, aki a német-római császári címet is viselte. Zsigmond uralkodása alatt Magyarország jelentős politikai és diplomáciai befolyásra tett szert. Zsigmond törekvései a keresztény egység megteremtésére és a törökök elleni védelemre is irányultak, így kulcsszerepet játszott a magyar állam védelmében. Uralkodása alatt a kultúra és a művészetek is virágzásnak indultak, ami tovább erősítette Magyarország helyzetét Európában.",
+     "type": "text",
+     "heading": "Luxemburgi Zsigmond, a császár",
+     "key_term": "Luxemburgi Zsigmond"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-MA1-003",
+   "lesson_id": "e2c2be5f-9467-46dd-a062-152c18e7faa1",
+   "block_id": "745a0079-cd13-42f9-8d2f-03c80e58f5ba",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body, link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A visegrádi találkozón részt vett „I. (Nagy) Lajos”; a találkozó „hozzájárult az aranyforint bevezetéséhez”.",
+   "explanation": "Résztvevők: Károly Róbert magyar, János cseh és III. Kázmér lengyel király (Lajos ekkor 9 éves volt). Az aranyforintot már 1325-ben bevezették, tíz évvel a találkozó előtt.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Visegr%C3%A1di_kir%C3%A1lytal%C3%A1lkoz%C3%B3",
+     "title": "Visegrádi királytalálkozó",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A visegrádi királytalálkozón részt vett I. (Anjou) Károly, I. (Nagy) Lajos és a lengyel király, Kazimierz, ahol a közép-európai politikai helyzet megerősítése és a kereskedelmi kapcsolatok fejlesztése érdekében tárgyaltak. Ezen a találkozón született meg a közép-európai együttműködés alapja, amely segítette a régió stabilitását a következő évtizedekben. A találkozó következtében a magyar és lengyel korona közötti szorosabb kapcsolat lehetővé tette a kereskedelem fellendülését, ami hozzájárult az aranyforint bevezetéséhez és a gazdasági virágzáshoz.",
+     "type": "world",
+     "year": "1335",
+     "heading": "A visegrádi királytalálkozó",
+     "link_hu": "A visegrádi királytalálkozó egy új kereskedelmi együttműködést alakított ki, amely elősegítette az aranyforint bevezetését Magyarországon."
+    },
+    "after": {
+     "body": "1335 novemberében Károly Róbert magyar király Visegrádra hívta János cseh és III. Kázmér lengyel királyt. Rendezték a cseh–lengyel vitát, és megállapodtak, hogy a kereskedők új útvonalon, Bécset elkerülve szállítsák áruikat, mert Bécs magas vámot szedett.",
+     "type": "world",
+     "year": "1335",
+     "heading": "A visegrádi királytalálkozó",
+     "link_hu": "A mai visegrádi együttműködés (Magyarország, Lengyelország, Csehország és Szlovákia, 1991) nevét és helyszínét tudatosan választották az 1335-ös találkozó emlékére."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-MA1-004",
+   "lesson_id": "e2c2be5f-9467-46dd-a062-152c18e7faa1",
+   "block_id": "7173c094-e09f-4fc5-9c8c-45ad15fe5cab",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„ahol I. (Anjou) Károly, I. (Nagy) Lajos és Csehország királya találkozott”",
+   "explanation": "Nagy Lajos nem vett részt; a harmadik résztvevő a lengyel király, III. Kázmér volt.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Visegr%C3%A1di_kir%C3%A1lytal%C3%A1lkoz%C3%B3",
+     "title": "Visegrádi királytalálkozó",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1335",
+      "B) 1396",
+      "C) 1456",
+      "D) 1526"
+     ],
+     "question": "Melyik évben zajlott a visegrádi királytalálkozó?",
+     "explanation": "A visegrádi királytalálkozó 1335-ben zajlott, ahol I. (Anjou) Károly, I. (Nagy) Lajos és Csehország királya találkozott.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1335",
+      "B) 1396",
+      "C) 1456",
+      "D) 1526"
+     ],
+     "question": "Melyik évben zajlott a visegrádi királytalálkozó?",
+     "explanation": "A visegrádi királytalálkozó 1335-ben zajlott, ahol Károly Róbert magyar, János cseh és III. Kázmér lengyel király találkozott.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-MA1-005",
+   "lesson_id": "e2c2be5f-9467-46dd-a062-152c18e7faa1",
+   "block_id": "7173c094-e09f-4fc5-9c8c-45ad15fe5cab",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question, options, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik két ország volt a visegrádi királytalálkozó fő résztvevője?” — megjelölt: Magyarország és Csehország.",
+   "explanation": "Három király vett részt: a magyar, a cseh és a lengyel. A kérdés hamis előfeltevésre épül.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Visegr%C3%A1di_kir%C3%A1lytal%C3%A1lkoz%C3%B3",
+     "title": "Visegrádi királytalálkozó",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Magyarország és Lengyelország",
+      "B) Magyarország és Csehország",
+      "C) Lengyelország és Csehország",
+      "D) Magyarország és Szlovákia"
+     ],
+     "question": "Melyik két ország volt a visegrádi királytalálkozó fő résztvevője?",
+     "explanation": "A visegrádi királytalálkozón Magyarország és Csehország királyai vettek részt, ami fontos politikai és gazdasági szövetséget jelentett.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Magyarország, Ausztria és Velence",
+      "B) Magyarország, Csehország és Lengyelország",
+      "C) Magyarország, Szerbia és Bizánc",
+      "D) Magyarország, Franciaország és Anglia"
+     ],
+     "question": "Melyik három ország királya találkozott Visegrádon 1335-ben?",
+     "explanation": "Károly Róbert magyar, János cseh és III. Kázmér lengyel király találkozott Visegrádon; a mai visegrádi együttműködés is ennek emlékét őrzi.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-MA1-006",
+   "lesson_id": "ed13db62-c199-418b-b1b1-048a846a777e",
+   "block_id": "f84fc38b-d8d6-4fb8-b00f-151fc9275efc",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "Hunyadi kormányzó lett, „miután a király, I. László fiatalon meghalt”.",
+   "explanation": "I. Ulászló király 1444-ben Várnánál elesett; utóda, V. László még gyermek volt, ezért választották Hunyadit kormányzóvá (1446–1452).",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Hunyadi_J%C3%A1nos",
+     "title": "Hunyadi János",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Hunyadi János 1446-tól 1452-ig kormányzóként irányította az országot, miután a király, I. László fiatalon meghalt. Kormányzósága alatt a török fenyegetés elleni védekezés volt a középpontban, és jelentős reformokat vezetett be a hadsereg modernizálása érdekében. Hunyadi János politikai és katonai tevékenységei megalapozták a későbbi magyar védekezést a török hódítók ellen. Kormányzósága alatt a nemzeti összefogás és a keresztény egység erősítése is fontos cél volt.",
+     "type": "text",
+     "heading": "Hunyadi János mint kormányzó",
+     "key_term": "kormányzó"
+    },
+    "after": {
+     "body": "Hunyadi János 1446-tól 1452-ig kormányzóként irányította az országot, mert I. Ulászló király 1444-ben Várnánál elesett, utóda, V. László pedig még gyermek volt. Kormányzósága alatt a török fenyegetés elleni védekezés volt a középpontban, és jelentős reformokat vezetett be a hadsereg modernizálása érdekében. Hunyadi János politikai és katonai tevékenységei megalapozták a későbbi magyar védekezést a török hódítók ellen. Kormányzósága alatt a nemzeti összefogás és a keresztény egység erősítése is fontos cél volt.",
+     "type": "text",
+     "heading": "Hunyadi János mint kormányzó",
+     "key_term": "kormányzó"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-MA1-007",
+   "lesson_id": "ed13db62-c199-418b-b1b1-048a846a777e",
+   "block_id": "f84fc38b-d8d6-4fb8-b00f-151fc9275efc",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "„Hunyadi János 1407-ben született”",
+   "explanation": "Születési éve bizonytalan (1407 körül, más források szerint 1409).",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Hunyadi János 1407-ben született, és a magyar történelem egyik legkiemelkedőbb hadvezére volt. Ő a nándorfehérvári diadal vezetője, amely 1456-ban zajlott le. Hunyadi János a törökverő néven vált ismertté, mivel sikeresen megvédte Magyarországot az Oszmán Birodalom támadásaitól. Politikai és katonai pályafutása során számos fontos döntést hozott, amelyek meghatározták az ország sorsát.",
+     "type": "text",
+     "heading": "Hunyadi János élete és jelentősége",
+     "key_term": "Hunyadi János"
+    },
+    "after": {
+     "body": "Hunyadi János 1407 körül született, és a magyar történelem egyik legkiemelkedőbb hadvezére volt. Ő a nándorfehérvári diadal vezetője, amely 1456-ban zajlott le. Hunyadi János a törökverő néven vált ismertté, mivel sikeresen megvédte Magyarországot az Oszmán Birodalom támadásaitól. Politikai és katonai pályafutása során számos fontos döntést hozott, amelyek meghatározták az ország sorsát.",
+     "type": "text",
+     "heading": "Hunyadi János élete és jelentősége",
+     "key_term": "Hunyadi János"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-MA1-008",
+   "lesson_id": "d554cd90-6f75-4707-abe5-05c3b8a75814",
+   "block_id": "a30dc937-435b-4fc4-8a86-fc6eb9c47775",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "„A leghíresebb történetek közé tartozik a 'Mátyás és a szegény ember' monda”",
+   "explanation": "Ilyen című ismert monda nincs; a legismertebbek pl. „Mátyás király és a kolozsvári bíró” és „Az igazmondó juhász”.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/I._M%C3%A1ty%C3%A1s_magyar_kir%C3%A1ly",
+     "title": "I. Mátyás magyar király",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Mátyás királyról számos monda és történet terjedt el, amelyek a nép körében népszerűvé tették őt. Ezek a történetek gyakran a király igazságosságáról, bátorságáról és népszerűségének okairól szólnak. A leghíresebb történetek közé tartozik a 'Mátyás és a szegény ember' monda, amely bemutatja a király jóságát és emberségét. Ezek a legendák hozzájárultak Mátyás király mítoszának kialakulásához a magyar kultúrában.",
+     "type": "text",
+     "heading": "Mondák és történetek Mátyás királyról",
+     "key_term": "mondák"
+    },
+    "after": {
+     "body": "Mátyás királyról számos monda és történet terjedt el, amelyek a nép körében népszerűvé tették őt. Ezek a történetek gyakran a király igazságosságáról, bátorságáról és népszerűségének okairól szólnak. A leghíresebb történetek közé tartozik a „Mátyás király és a kolozsvári bíró” és „Az igazmondó juhász” című monda, amely bemutatja a király jóságát és emberségét. Ezek a legendák hozzájárultak Mátyás király mítoszának kialakulásához a magyar kultúrában.",
+     "type": "text",
+     "heading": "Mondák és történetek Mátyás királyról",
+     "key_term": "mondák"
+    }
+   }
+  }
+ ]
+}
