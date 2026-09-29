@@ -104,3 +104,11 @@ running it again doesn't apply anything twice.
 - History: anachronisms and the global context layer (whether it fits the lesson's period).
 - NOT checked: textbook simplifications that are correct at the grade level, or style that
   isn't an error.
+
+## Source links: what was actually opened
+The audit session's network blocks hu.wikipedia.org, en.wikipedia.org and britannica.com, so
+it cannot open those pages. A source link is either (a) returned by a web search during the
+check, or (b) a Wikipedia article URL built from the article's standard title. Links of type
+(b) have not been opened. Before applying `review` findings, run a link check from a machine
+with open network access, e.g.
+`python -c "import json,glob,urllib.request as u;[print(s['url']) for f in glob.glob('content/qa/*.json') for x in json.load(open(f))['findings'] for s in x.get('sources',[])]" | sort -u | xargs -n1 curl -s -o /dev/null -w '%{http_code} %{url}\n'`.
