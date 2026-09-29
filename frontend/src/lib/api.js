@@ -109,6 +109,8 @@ export const api = {
     list:     (status, token)  => get(`/api/reports?status=${status}`, token),
     resolve:  (body, token)    => post('/api/reports/resolve', body, token),
     editCard: (body, token)    => put('/api/reports/card', body, token),
+    edits:    (token)          => get('/api/reports/edits', token),
+    revert:   (editId, token)  => post(`/api/reports/edits/${editId}/revert`, {}, token),
   },
   account: {
     me:       (token)          => get('/api/account/me', token),

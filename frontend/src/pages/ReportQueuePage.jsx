@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useLang } from '../contexts/LanguageContext'
@@ -7,8 +7,10 @@ import PageHeader from '../components/PageHeader'
 
 // Reviewer queue for „Hibát találtál?” reports (role reviewer/admin — enforced by the API).
 // One entry per reported card: reasons, students' comments, the card as reported / as it is
-// now, an in-place editor for its wording, and resolve / dismiss.
+// now, an in-place editor for its wording, and resolve / dismiss. The „Szerkesztések” tab
+// lists every card edit (before → after, who, when) with undo.
 const STATUSES = ['open', 'resolved', 'dismissed']
+const TABS = [...STATUSES, 'edits']
 const SKIP = new Set(['type', 'anchor', 'question_type'])
 
 // Field label from i18n (field.<key>), falling back to the raw key for unusual card fields.
@@ -19,6 +21,26 @@ function label(t, k) {
 
 function textFields(card) {
   return Object.entries(card || {}).filter(([k, v]) => !SKIP.has(k) && (typeof v === 'string' || Array.isArray(v)))
+}
+
+function cardLink(c) {
+  return c.scope === 'lesson' ? `/nat/lessons/${c.lesson_id}${c.mode === 'quiz' ? '?tab=quiz' : ''}` : `/nat/topics/${c.topic_id}/quiz`
+}
+
+const isConflict = e => String(e?.message).includes('→ 409')
+
+function CardHeader({ c, t }) {
+  return (
+    <div className="flex items-start justify-between gap-2">
+      <div className="min-w-0">
+        <p className="text-[11px] font-semibold text-slate-400 leading-snug">
+          {c.topic_title} › {c.lesson_title ?? t('review.topic.quiz')}
+        </p>
+        <p className="text-xs font-bold text-slate-600 mt-0.5">{t(`queue.mode.${c.mode}`)} · #{c.card_index + 1}</p>
+      </div>
+      <Link to={cardLink(c)} className="shrink-0 text-xs font-semibold text-turul-blue">{t('queue.open')}</Link>
+    </div>
+  )
 }
 
 function CardView({ card, t }) {
@@ -44,7 +66,9 @@ function CardEditor({ card, onSave, onCancel, t }) {
 
   async function save() {
     setBusy(true); setError('')
-    try { await onSave(draft) } catch { setError(t('queue.edit.error')) } finally { setBusy(false) }
+    try { await onSave(draft) }
+    catch (e) { setError(t(isConflict(e) ? 'queue.edit.conflict' : 'queue.edit.error')) }
+    finally { setBusy(false) }
   }
 
   return (
@@ -84,7 +108,6 @@ function Group({ g, status, token, t, onChanged }) {
   const [note, setNote] = useState('')
   const [busy, setBusy] = useState(false)
   const shown = g.current ?? g.snapshot
-  const openTo = g.scope === 'lesson' ? `/nat/lessons/${g.lesson_id}${g.mode === 'quiz' ? '?tab=quiz' : ''}` : `/nat/topics/${g.topic_id}/quiz`
 
   async function act(next) {
     setBusy(true)
@@ -93,22 +116,16 @@ function Group({ g, status, token, t, onChanged }) {
   }
 
   async function saveEdit(card) {
-    await api.reports.editCard({ block_id: g.block_id, card_index: g.card_index, card }, token)
+    // `before` = the card as loaded: the API refuses (409) if someone changed it meanwhile.
+    await api.reports.editCard({ block_id: g.block_id, card_index: g.card_index, card,
+                                 before: g.current, report_ids: g.report_ids }, token)
     setEditing(false)
     onChanged()
   }
 
   return (
     <div className="card p-4 flex flex-col gap-3">
-      <div className="flex items-start justify-between gap-2">
-        <div className="min-w-0">
-          <p className="text-[11px] font-semibold text-slate-400 leading-snug">
-            {g.topic_title} › {g.lesson_title ?? t('review.topic.quiz')}
-          </p>
-          <p className="text-xs font-bold text-slate-600 mt-0.5">{t(`queue.mode.${g.mode}`)} · #{g.card_index + 1}</p>
-        </div>
-        <Link to={openTo} className="shrink-0 text-xs font-semibold text-turul-blue">{t('queue.open')}</Link>
-      </div>
+      <CardHeader c={g} t={t} />
 
       <div className="flex flex-wrap gap-1.5">
         {Object.entries(g.reasons).map(([r, n]) => (
@@ -161,21 +178,82 @@ function Group({ g, status, token, t, onChanged }) {
   )
 }
 
+// Only the fields an edit actually touched — option lists compared line by line.
+function fieldDiffs(before, after) {
+  return textFields(before).flatMap(([k, v]) => {
+    if (Array.isArray(v)) {
+      return v.flatMap((o, i) => (o !== after?.[k]?.[i] ? [{ id: `${k}.${i}`, k, before: o, after: after?.[k]?.[i] }] : []))
+    }
+    return v !== after?.[k] ? [{ id: k, k, before: v, after: after?.[k] }] : []
+  })
+}
+
+function EditEntry({ e, token, t, lang, onChanged }) {
+  const [busy, setBusy] = useState(false)
+  const [error, setError] = useState('')
+  const when = new Date(e.created_at).toLocaleString(lang === 'hu' ? 'hu-HU' : 'en-GB', { dateStyle: 'medium', timeStyle: 'short' })
+
+  async function undo() {
+    setBusy(true); setError('')
+    try { await api.reports.revert(e.id, token); onChanged() }
+    catch (err) { setError(t(isConflict(err) ? 'queue.edits.conflict' : 'queue.edits.error')) }
+    finally { setBusy(false) }
+  }
+
+  return (
+    <div className="card p-4 flex flex-col gap-3">
+      <CardHeader c={e} t={t} />
+      <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
+        <span>{e.editor ?? '—'} · {when}</span>
+        {e.is_undo && <span className="font-semibold bg-slate-100 text-slate-600 rounded-full px-2 py-0.5">↩ {t('queue.edits.badge.undo')}</span>}
+        {e.reverted && <span className="font-semibold bg-amber-50 text-amber-700 rounded-full px-2 py-0.5">{t('queue.edits.badge.reverted')}</span>}
+      </div>
+
+      <div className="flex flex-col gap-2.5">
+        {fieldDiffs(e.before, e.after).map(d => (
+          <div key={d.id}>
+            <p className="text-[10px] font-bold uppercase tracking-wide text-slate-400">{label(t, d.k)}</p>
+            <p className="text-sm leading-relaxed rounded-lg px-2.5 py-1.5 mt-1 bg-red-50 text-red-700 line-through decoration-red-300 whitespace-pre-line">{d.before}</p>
+            <p className="text-sm leading-relaxed rounded-lg px-2.5 py-1.5 mt-1 bg-emerald-50 text-emerald-800 whitespace-pre-line">{d.after}</p>
+          </div>
+        ))}
+      </div>
+
+      {!e.block_id && <p className="text-[11px] font-semibold text-amber-600">⚠ {t('queue.edits.gone')}</p>}
+      {error && <p className="text-xs text-red-500">{error}</p>}
+      {e.undoable && (
+        <button type="button" onClick={undo} disabled={busy}
+          className="self-start px-3.5 py-2 rounded-xl text-sm font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 disabled:opacity-50">
+          {busy ? '…' : `↩ ${t('queue.edits.undo')}`}
+        </button>
+      )}
+    </div>
+  )
+}
+
 export default function ReportQueuePage() {
   const { session } = useAuth()
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const token = session?.access_token
-  const [status, setStatus] = useState('open')
+  const [tab, setTab] = useState('open')
   const [data, setData] = useState(null)
   const [forbidden, setForbidden] = useState(false)
+  const [version, setVersion] = useState(0)          // bump → reload the current tab
+  const reload = () => setVersion(v => v + 1)
 
-  const load = useCallback(() => {
-    api.reports.list(status, token)
-      .then(d => { setData(d); setForbidden(false) })
-      .catch(e => { if (String(e.message).includes('→ 403')) setForbidden(true); setData({ groups: [] }) })
-  }, [status, token])
+  useEffect(() => {
+    let stale = false                                  // ignore a slow response for a tab we left
+    const req = tab === 'edits' ? api.reports.edits(token) : api.reports.list(tab, token)
+    req.then(d => { if (!stale) { setData(d); setForbidden(false) } })
+      .catch(e => { if (stale) return; if (String(e.message).includes('→ 403')) setForbidden(true); setData({}) })
+    return () => { stale = true }
+  }, [tab, token, version])
 
-  useEffect(() => { setData(null); load() }, [load])
+  function pick(next) {
+    if (next !== tab) { setData(null); setTab(next) }
+  }
+
+  const items = tab === 'edits' ? data?.edits : data?.groups
 
   return (
     <div className="pb-24">
@@ -185,18 +263,20 @@ export default function ReportQueuePage() {
           <p className="card p-5 text-center text-slate-500">{t('queue.forbidden')}</p>
         ) : (
           <>
-            <div className="flex gap-2">
-              {STATUSES.map(s => (
-                <button key={s} type="button" onClick={() => setStatus(s)}
-                  className={`px-3.5 py-2 rounded-full text-sm font-semibold ${status === s ? 'bg-turul-blue text-white' : 'bg-slate-100 text-slate-600'}`}>
+            <div className="flex flex-wrap gap-2">
+              {TABS.map(s => (
+                <button key={s} type="button" onClick={() => pick(s)}
+                  className={`px-3.5 py-2 rounded-full text-sm font-semibold ${tab === s ? 'bg-turul-blue text-white' : 'bg-slate-100 text-slate-600'}`}>
                   {t(`queue.status.${s}`)}
                 </button>
               ))}
             </div>
+            {tab === 'edits' && <p className="text-xs text-slate-500">{t('queue.edits.hint')}</p>}
             {!data ? <p className="text-center text-slate-400">{t('common.loading')}</p>
-              : data.groups.length === 0 ? <p className="card p-5 text-center text-slate-500">{t('queue.empty')}</p>
-              : data.groups.map(g => (
-                <Group key={`${g.block_id ?? g.lesson_id}-${g.mode}-${g.card_index}`} g={g} status={status} token={token} t={t} onChanged={load} />
+              : !items?.length ? <p className="card p-5 text-center text-slate-500">{t(tab === 'edits' ? 'queue.edits.empty' : 'queue.empty')}</p>
+              : tab === 'edits' ? items.map(e => <EditEntry key={e.id} e={e} token={token} t={t} lang={lang} onChanged={reload} />)
+              : items.map(g => (
+                <Group key={`${g.block_id ?? g.lesson_id}-${g.mode}-${g.card_index}`} g={g} status={tab} token={token} t={t} onChanged={reload} />
               ))}
           </>
         )}
