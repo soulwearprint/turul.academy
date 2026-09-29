@@ -1,5 +1,5 @@
 {
- "exported_at": "2026-09-29T14:08:19+00:00",
+ "exported_at": "2026-09-29T14:27:15+00:00",
  "topics": [
   {
    "nat_id": "HIST-56-01",
@@ -66,6 +66,90 @@
    "band": "HIST-56",
    "lessons": 3,
    "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-01",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-02",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-04",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-05",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-06",
+   "band": "HIST-78",
+   "lessons": 4,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-07",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-08",
+   "band": "HIST-78",
+   "lessons": 3,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-09",
+   "band": "HIST-78",
+   "lessons": 5,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-10",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-11",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-12",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-13",
+   "band": "HIST-78",
+   "lessons": 6,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-14",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-78-VH1",
+   "band": "HIST-78",
+   "lessons": 3,
+   "has_deep_all": false
   }
  ]
 }
