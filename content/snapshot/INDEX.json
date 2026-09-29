@@ -1,5 +1,5 @@
 {
- "exported_at": "2026-09-29T14:27:15+00:00",
+ "exported_at": "2026-09-29T14:27:34+00:00",
  "topics": [
   {
    "nat_id": "HIST-56-01",
@@ -149,6 +149,66 @@
    "nat_id": "HIST-78-VH1",
    "band": "HIST-78",
    "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-01",
+   "band": "PHYS-78",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-02",
+   "band": "PHYS-78",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-03",
+   "band": "PHYS-78",
+   "lessons": 4,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "PHYS-78-04",
+   "band": "PHYS-78",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-05",
+   "band": "PHYS-78",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-06",
+   "band": "PHYS-78",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-07",
+   "band": "PHYS-78",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-08",
+   "band": "PHYS-78",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-09",
+   "band": "PHYS-78",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-10",
+   "band": "PHYS-78",
+   "lessons": 4,
    "has_deep_all": false
   }
  ]

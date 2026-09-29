@@ -1,0 +1,1245 @@
+{
+ "nat_id": "PHYS-78-01",
+ "topic_id": "24b1d1e9-4b85-41d6-bb5f-58f3749cbc21",
+ "title_hu": "Bevezetés a fizikába",
+ "grade": 7,
+ "lessons": [
+  {
+   "lesson_id": "d6336130-9fa6-43ad-b78b-04186ab2ed68",
+   "title_hu": "A fizika tudománya és alapjai",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "3e583efa-fcb4-481d-8c15-139c638f2b38",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A fizika a természetben lezajló jelenségeket és azok törvényszerűségeit vizsgáló tudomány. Ide tartozik például egy labda mozgása, a víz forrása, az áram working közben felmelegedő vezeték vagy a fény törése egy pohár vízben. A fizikus megfigyeli a jelenséget, méréseket végez, majd a mérési adatokból törvényszerűségeket próbál levezetni. A hétköznapokban szinte minden mozgás, hőjelenség, fény- vagy hangjelenség fizikai jelenség. Fontos, hogy a fizikai magyarázat mindig ellenőrizhető, mérésekkel alátámasztható legyen.",
+       "type": "text",
+       "heading": "A fizika tudománya",
+       "key_term": "fizika"
+      },
+      {
+       "body": "A tudományos megismerés megfigyeléssel és méréssel indul, majd feltevés (hipotézis) megfogalmazásával folytatódik. A feltevést ellenőrizhető és megismételhető kísérletekkel kell alátámasztani, nem elég egyetlen vélemény vagy benyomás. Ha egy mérést más is elvégez ugyanazokkal a feltételekkel, hasonló eredményt kell kapnia. A tudományos állítás mindig nyitott a cáfolatra: ha új bizonyíték cáfolja, a régi elképzelést felül kell vizsgálni. Ez különbözteti meg a tudományos állítást a puszta hiedelemtől vagy találgatástól.",
+       "type": "text",
+       "heading": "A tudományos megismerés ismérvei",
+       "key_term": "tudományos megismerés"
+      },
+      {
+       "body": "A mérés során egy fizikai mennyiség (például hosszúság, tömeg, idő) értékét egy megegyezés szerinti mértékegységhez hasonlítjuk. Minden mérhető mennyiségnek van jele (pl. hosszúságra l) és mértékegysége (pl. méter, jele m). A mérést mindig egy erre alkalmas mérőeszközzel végezzük, amelynek van egy legkisebb leolvasható egysége. A mérési eredményt a szám és a mértékegység együtt adja meg, önmagában a szám nem elég. A mérés a tudományos megismerés egyik legfontosabb eszköze, mert számszerű, összehasonlítható adatot ad.",
+       "type": "text",
+       "heading": "Mi a mérés?",
+       "key_term": "mérés"
+      },
+      {
+       "body": "A hosszúság jele l, SI-mértékegysége a méter, jele m. Rövidebb távolságokra a centimétert (cm) és a millimétert (mm), hosszabbakra a kilométert (km) használjuk. Hosszúság mérésére mérőszalagot, vonalzót, tolómérőt vagy lézeres távolságmérőt használunk, az igényelt pontosságtól függően. Az átváltás mindig 10 hatványaival történik: 1 m = 100 cm = 1000 mm, illetve 1 km = 1000 m. A hosszúság mérése az egyik legrégebbi és leggyakoribb fizikai mérés, az építkezéstől a térképészetig mindenhol előfordul.",
+       "type": "text",
+       "heading": "Hosszúság",
+       "key_term": "hosszúság"
+      },
+      {
+       "body": "A térfogat jele V, SI-mértékegysége a köbméter (m³), a gyakorlatban azonban gyakran litert (l) és annak váltószámait (dl, cl, ml) használjuk. Szilárd, szabályos testek térfogata kiszámítható méretadatokból, szabálytalan testeké vízkiszorítással mérhető. Folyadékok térfogatát mérőhengerrel vagy mérőpohárral mérjük, a folyadékfelszín aljánál (meniszkusznál) leolvasva az értéket. Fontos átváltás: 1 liter pontosan 1 köbdeciméterrel (dm³) egyenlő, azaz 1 l = 1 dm³ = 1000 cm³. A térfogat mérése nélkülözhetetlen a főzéstől a vegyészeti laborig sok mindennapi és tudományos helyzetben.",
+       "type": "text",
+       "heading": "Térfogat",
+       "key_term": "térfogat"
+      },
+      {
+       "body": "A tömeg jele m, SI-mértékegysége a kilogramm, jele kg. Kisebb tömegekre a grammot (g), nagyobbakra a tonnát (t) használjuk. Tömeget mérleggel mérünk: lehet ez rugós, kétkarú vagy digitális mérleg, a mai háztartásokban leggyakrabban digitális konyhai mérleget találunk. A tömeg a test anyagmennyiségét jellemzi, és – a súllyal ellentétben – nem függ attól, hol mérjük a Földön vagy éppen egy másik égitesten. Az átváltás itt is 10 hatványaival történik: 1 kg = 1000 g.",
+       "type": "text",
+       "heading": "Tömeg",
+       "key_term": "tömeg"
+      },
+      {
+       "body": "A fizikai mennyiségek tapasztalati becsléséhez hasznos ismerni néhány jellemző, könnyen felidézhető viszonyítási értéket. Egy felnőtt ember magassága kb. 170-180 cm, egy tojás tömege kb. 60 g, egy pohár víz térfogata kb. 2-3 dl. Ilyen viszonyítási pontok segítségével egy ismeretlen mennyiséget is meg tudunk közelítőleg becsülni mérés nélkül. A becslés különösen hasznos, ha nincs kéznél mérőeszköz, vagy ha egy mért eredmény hihetőségét gyorsan ellenőrizni szeretnénk. A jó becslés nem találgatás: ismert viszonyítási adatokon és logikus következtetésen alapul.",
+       "type": "text",
+       "heading": "Mennyiségek tapasztalati becslése",
+       "key_term": ""
+      }
+     ]
+    },
+    {
+     "block_id": "04eb8fca-33b5-4da3-958f-6506f7d54f59",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy iskolai fizikaszertárba egy ismeretlen eredetű, fémesen csillogó tárgy kerül, amelyről semmilyen leírás nem áll rendelkezésre. A tanulócsoport feladata, hogy tudományos módszerekkel próbálja megállapítani, miből készülhetett, és milyen tulajdonságai vannak. Elsőként alaposan megszemlélik a tárgyat: színét, formáját, felületét jegyzik fel. A megfigyelés azonban önmagában nem elég ahhoz, hogy megbízható következtetést vonjanak le.",
+       "type": "story",
+       "heading": "Megérkezik a rejtélyes tárgy"
+      },
+      {
+       "body": "Mielőtt bármit is kijelentenének a tárgyról, megbeszélik, hogy minden mérést úgy kell elvégezni, hogy azt bárki más is megismételhesse ugyanazokkal az eredményekkel. Csak olyan állítást fogadnak el, amelyet mérési adat támaszt alá, feltételezésre nem alapoznak véleményt. Ez a lépés biztosítja, hogy a vizsgálat tudományos igényű legyen, ne csupán találgatás.",
+       "type": "story",
+       "heading": "A vizsgálat szabályainak felállítása"
+      },
+      {
+       "body": "A csoport mérőszalaggal megméri a tárgy hosszát, szélességét és magasságát, majd az adatokat centiméterben és milliméterben is feljegyzi. A mérést kétszer is elvégzik, hogy meggyőződjenek arról, ugyanazt az értéket kapják-e. Az apró eltérések miatt a két mérés átlagát tekintik a végleges hosszúságadatnak.",
+       "type": "story",
+       "heading": "A hosszúság lemérése"
+      },
+      {
+       "body": "Mivel a tárgy alakja szabálytalan, térfogatát nem lehet egyszerű méretadatokból kiszámítani. A csoport egy mérőhengerbe ismert mennyiségű vizet önt, majd óvatosan belesüllyeszti a tárgyat, és leolvassa, mennyivel emelkedett meg a vízszint. A vízszint emelkedése pontosan megegyezik a tárgy térfogatával.",
+       "type": "story",
+       "heading": "A térfogat meghatározása"
+      },
+      {
+       "body": "Ezután a tárgyat digitális mérlegre helyezik, amely grammra pontosan kijelzi a tömegét. A mérést itt is megismétlik, hogy kizárják a véletlen leolvasási hibát. A kapott tömeg- és térfogatadatot gondosan feljegyzik a jegyzőkönyvbe.",
+       "type": "story",
+       "heading": "A tömeg mérése"
+      },
+      {
+       "body": "A csoport összeveti a mért hosszúság-, térfogat- és tömegadatokat egymással és a rendelkezésre álló táblázatokkal. Az adatok alapján megalapozott, ellenőrizhető következtetést fogalmaznak meg a tárgy tulajdonságairól, amelyet bárki más is leellenőrizhet, ha megismétli ugyanezt a mérési eljárást. Ezzel a vizsgálat végigjárja a tudományos megismerés teljes útját: megfigyeléstől a mérésen át az ellenőrizhető következtetésig.",
+       "type": "story",
+       "heading": "A tudományos következtetés"
+      }
+     ]
+    },
+    {
+     "block_id": "c248ea3e-a10b-4e04-815a-b7d362ff0940",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A fizika sokféle mindennapi jelenséget vizsgál.",
+       "heading": "A fizika jelenségvilága",
+       "description": "Négy mezőre osztott vázlat, amely egy-egy jellegzetes fizikai jelenséget ábrázol: guruló labda (mozgás), forró teáscsésze gőzzel (hő), fénytörés egy pohár vízben (fény), hangszóróból induló hullámvonalak (hang).",
+       "visual_type": "kollázs-vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A tudományos megismerés lépései körkörösen ismétlődhetnek.",
+       "heading": "A tudományos megismerés folyamata",
+       "description": "Négy dobozból álló, nyilakkal összekötött folyamatábra: Megfigyelés → Feltevés (hipotézis) → Mérés, kísérlet → Ellenőrzés, következtetés, amely visszamutat a feltevéshez, ha az nem igazolódik.",
+       "visual_type": "folyamatábra"
+      },
+      {
+       "type": "visual",
+       "caption": "A mérendő hosszúsághoz igazodó eszközt kell választani.",
+       "heading": "Hosszúságmérő eszközök",
+       "description": "Egymás mellett ábrázolt mérőszalag centiméter-beosztással, egyenes vonalzó és egy tolómérő, amely tized-milliméteres pontosságot jelez.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A térfogatot mindig a meniszkusz aljánál olvassuk le.",
+       "heading": "Térfogatmérés mérőhengerrel",
+       "description": "Egy skálázott mérőhenger keresztmetszete, benne folyadékkal, a folyadékfelszín aljánál (meniszkusznál) bejelölt leolvasási vonallal.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A digitális mérleg a mai háztartások leggyakoribb tömegmérő eszköze.",
+       "heading": "Tömegmérés mérleggel",
+       "description": "Digitális konyhai mérleg kijelzővel, rajta egy tárgy, a kijelzőn kg és g mértékegység feltüntetve.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A hosszúság mértékegységei tízes számrendszerben váltják egymást.",
+       "heading": "Mértékegység-átváltási létra",
+       "description": "Függőleges létra ábra km–m–cm–mm lépcsőfokokkal, minden lépcsőfok között a szorzó/osztó tényezővel (×10, ×100, ×1000) jelölve.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Ismert viszonyítási értékekkel könnyebb az ismeretlen mennyiségeket megbecsülni.",
+       "heading": "Hétköznapi mennyiségek becslése",
+       "description": "Emberalak 175 cm magassággal, mellette tojás 60 g felirattal és egy pohár víz 2,5 dl felirattal, mint viszonyítási pontok.",
+       "visual_type": "összehasonlító ábra"
+      }
+     ]
+    },
+    {
+     "block_id": "81497f66-e907-4320-8eaf-f02fb89c53c7",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Ma a hosszúságot gyakran GPS-alapú térképalkalmazásokkal vagy lézeres távolságmérőkkel határozzuk meg, amelyek végső soron a fény sebességén alapuló méterdefinícióra épülnek.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 20,
+          "w": 300,
+          "x": 50,
+          "y": 130,
+          "type": "box"
+         },
+         {
+          "x": 50,
+          "y": 110,
+          "text": "platina-irídium méterrúd (1889)",
+          "type": "label"
+         },
+         {
+          "x1": 50,
+          "x2": 350,
+          "y1": 180,
+          "y2": 80,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x": 90,
+          "y": 220,
+          "text": "párizsi délkör íve: Egyenlítő – sark",
+          "type": "label"
+         },
+         {
+          "x": 50,
+          "y": 180,
+          "type": "dot"
+         },
+         {
+          "x": 350,
+          "y": 80,
+          "type": "dot"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A méter története",
+       "discovery": "A méter mértékegységet 1791-ben a Francia Tudományos Akadémia javaslatára úgy határozták meg, mint az Egyenlítőtől az Északi-sarkig, a párizsi délkörön mért távolság tízmilliomod részét. Ennek alapján 1889-ben elkészült a platina-irídium ötvözetből készült hivatalos méteretalon-rúd, amelyet Párizsban őriztek, és amelyhez a világ országai saját méteretalonjaikat hasonlították. 1983 óta a métert már nem tárgyi etalonhoz, hanem a fény sebességéhez kötve határozzák meg: az a távolság, amelyet a fény vákuumban 1/299 792 458 másodperc alatt megtesz.",
+       "try_basic": "Mérd meg a szobád hosszát lépésekkel, majd mérőszalaggal is, és hasonlítsd össze a két becslést a pontos mérési eredménnyel.",
+       "try_advanced": "Használj okostelefonos térképalkalmazást két ismert pont (pl. két utcasarok) közötti távolság lemérésére, majd vesd össze az eredményt egy hagyományos mérőszalagos vagy lépésszámolásos becsléssel, és értékeld, mekkora eltérés adódott."
+      }
+     ]
+    },
+    {
+     "block_id": "a50393ab-87fb-4405-8864-e87ed5e9474f",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) csak történelmi eseményeket",
+        "B) a természetben lezajló jelenségeket és azok törvényszerűségeit",
+        "C) kizárólag élőlények viselkedését",
+        "D) nyelvi szabályokat"
+       ],
+       "question": "Mit vizsgál elsősorban a fizika tudománya?",
+       "explanation": "A fizika a természeti jelenségeket (mozgás, hő, fény, elektromosság stb.) és az ezeket leíró törvényszerűségeket vizsgálja.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) V, liter",
+        "B) t, másodperc (s)",
+        "C) m, kilogramm (kg)",
+        "D) l, méter"
+       ],
+       "question": "Mi a tömeg jele és SI-mértékegysége?",
+       "explanation": "A tömeg jele m, SI-mértékegysége a kilogramm (kg).",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) stopper",
+        "B) mérőszalag",
+        "C) analóg konyhai mérleg",
+        "D) mérőhenger"
+       ],
+       "question": "Melyik eszközzel mérünk térfogatot folyadékok esetén a legpontosabban?",
+       "explanation": "A mérőhenger skálázott edény, amellyel folyadékok térfogata pontosan leolvasható.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) ellenőrizhetőség",
+        "B) megfigyelésen és mérésen alapul",
+        "C) ismételhetőség",
+        "D) az állítás igazolása kizárólag egyetlen vélemény alapján történik"
+       ],
+       "question": "Melyik NEM ismérve a tudományos megismerésnek?",
+       "explanation": "A tudományos állítást mérésekkel, ellenőrizhető és megismételhető bizonyítékokkal kell alátámasztani, nem elegendő hozzá egyetlen vélemény.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) 25 m",
+        "B) 0,25 m",
+        "C) 2,5 m",
+        "D) 250 m"
+       ],
+       "question": "250 cm hány méter?",
+       "explanation": "1 m = 100 cm, ezért 250 cm = 250/100 m = 2,5 m.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "ba7ac535-33d2-48f3-98e9-0c68b5239fde",
+   "title_hu": "Idő és hőmérséklet mérése",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "b9d14a00-8b9a-469b-8d52-a57de234e534",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az idő jele t, SI-mértékegysége a másodperc, jele s. A hétköznapokban gyakran használjuk a percet (min) és az órát (h) is, ezek átváltása: 1 óra = 60 perc, 1 perc = 60 másodperc. Rövid időtartamok mérésére stoppert vagy mobiltelefon stopperfunkcióját használjuk, hosszabb időtartamokra a mobiltelefon vagy karóra óráját. Az időmérés pontossága függ az eszköz felbontásától és attól, mennyire pontosan tudjuk elindítani és leállítani a mérést. Az idő mérése minden fizikai folyamat (mozgás, melegedés, lehűlés) leírásához nélkülözhetetlen.",
+       "type": "text",
+       "heading": "Az idő mérése",
+       "key_term": "idő"
+      },
+      {
+       "body": "A hőmérséklet jele T vagy t, a mindennapokban leggyakrabban használt mértékegysége a Celsius-fok, jele °C. A Celsius-skálán a víz fagyáspontja 0 °C, forráspontja pedig normál légköri nyomáson 100 °C. A hőmérsékletet hőmérővel mérjük, amely lehet hagyományos folyadékos vagy digitális, elektronikus szenzoros kivitelű. A hőmérséklet azt jellemzi, mennyire meleg vagy hideg egy test, és fontos szerepet játszik az időjárás, a főzés és az egészségügy területén is. A digitális hőmérők ma már gyorsan és pontosan, tized fokos pontossággal is tudnak mérni.",
+       "type": "text",
+       "heading": "A hőmérséklet és a Celsius-skála",
+       "key_term": "hőmérséklet"
+      },
+      {
+       "body": "A távolságot, térfogatot, időt, tömeget és hőmérsékletet nem csak laboratóriumi eszközökkel mérhetjük, hanem otthon elérhető eszközökkel is. A mobiltelefon órája és stoppere pontos időmérésre alkalmas, a digitális konyhai mérleg grammra pontos tömegmérést tesz lehetővé. Konyhai mérőpohárral térfogatot, konyhai hőmérővel pedig étel vagy folyadék hőmérsékletét mérhetjük. Ezek az eszközök a mindennapi életben is megbízható, tudományos igényű méréseket tesznek lehetővé, ha helyesen használjuk őket. Fontos, hogy a mérés előtt ellenőrizzük, az eszköz nullázva vagy megfelelően kalibrálva van-e.",
+       "type": "text",
+       "heading": "Mérőeszközök a mindennapokban",
+       "key_term": ""
+      },
+      {
+       "body": "A mérés pontossága azt fejezi ki, mennyire közelíti meg a mért érték a mennyiség valódi értékét. A pontosságot befolyásolja a mérőeszköz felbontása (legkisebb leolvasható egysége), valamint az, hogy mennyire gondosan végezzük a mérést. A pontosság becsülhető úgy, hogy a mérést többször megismételjük, és megnézzük, mennyire térnek el egymástól az egyes eredmények. Minél kisebb az eltérés az ismételt mérések között, annál megbízhatóbb, pontosabb a mérés. Az eszköz jellemző adatai (pl. egy hőmérő ±0,5 °C-os hibahatára) szintén megadják, mekkora eltérésre számíthatunk.",
+       "type": "text",
+       "heading": "A mérés pontossága",
+       "key_term": "a mérés pontossága"
+      },
+      {
+       "body": "Ha egy mennyiséget többször megmérünk, az egyes mérési eredmények általában kis mértékben eltérnek egymástól. Ilyenkor a legmegbízhatóbb becslést az adott mérések átlaga adja, amelyet úgy számolunk ki, hogy összeadjuk az értékeket, majd elosztjuk a mérések számával. Az átlag kiegyenlíti a véletlenszerű mérési hibákat, ezért megbízhatóbb, mint egyetlen mérés eredménye. Például, ha három alkalommal 21,2 °C, 21,4 °C és 21,0 °C hőmérsékletet mérünk, az átlag 21,2 °C. Az átlagszámítás alapvető eszköz a mérési eredmények tudományos igényű összehasonlításához.",
+       "type": "text",
+       "heading": "A mért adatok átlaga",
+       "key_term": "a mért adatok átlaga"
+      },
+      {
+       "body": "Mielőtt egy mennyiséget megmérnénk, hasznos előzetesen megbecsülni a várható értéket, mert ez segít ellenőrizni, hogy a mért eredmény ésszerű-e. Ha a becslésünk és a mért érték nagyon eltér egymástól, érdemes megvizsgálni, nem történt-e mérési vagy leolvasási hiba. A becslés fejleszthető gyakorlással és ismert viszonyítási adatok (pl. testhőmérséklet kb. 36-37 °C, egy perc kb. ennyi szívdobbanás) megjegyzésével. A becslés különösen hasznos olyan helyzetekben, amikor nincs azonnal kéznél pontos mérőeszköz. A jó becslés és a pontos mérés együtt adja a megbízható tudományos munka alapját.",
+       "type": "text",
+       "heading": "Becslés a mérésben",
+       "key_term": "becslés"
+      },
+      {
+       "body": "Két vagy több mérési eredményt csak akkor hasonlíthatunk össze megbízhatóan, ha azonos mértékegységben és hasonló körülmények között mértük őket. Az összehasonlításhoz érdemes táblázatba rendezni az adatokat, feltüntetve a mérés idejét, helyét és az alkalmazott eszközt is. Ha az eredmények között nagy eltérés mutatkozik, érdemes megvizsgálni, hogy ez valódi különbségből (pl. eltérő napszak, eltérő hely) vagy mérési hibából adódik-e. A rendszeres, azonos módszerrel végzett mérések (pl. napi hőmérséklet-mérés ugyanabban az időpontban) teszik lehetővé a megbízható összehasonlítást és a trendek felismerését.",
+       "type": "text",
+       "heading": "Mérési eredmények összehasonlítása",
+       "key_term": ""
+      }
+     ]
+    },
+    {
+     "block_id": "a4b28768-7a32-4216-8a32-2848cf06791b",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy iskolai projekt keretében egy tanulócsoport elhatározza, hogy egy héten át minden reggel ugyanabban az időpontban megméri a kültéri hőmérsékletet. A méréshez egy digitális hőmérőt és a mobiltelefon óráját használják, hogy pontosan ugyanabban a percben végezzék el a leolvasást minden nap. Az első napon megbecsülik, milyen hőmérsékletre számítanak, majd elvégzik a mérést, és feljegyzik az eredményt.",
+       "type": "story",
+       "heading": "A reggeli mérés kezdete"
+      },
+      {
+       "body": "Hogy megbizonyosodjanak a hőmérő pontosságáról, ugyanazon a reggelen egymás után háromszor is leolvassák az értéket néhány másodperc különbséggel. Az eredmények szinte teljesen megegyeznek, csak tized fokos eltérés mutatkozik köztük, ami megerősíti, hogy a mérőeszköz megbízhatóan működik. Ez az ellenőrzés adja meg számukra a bizalmat, hogy a további napi mérések eredményét is elfogadják.",
+       "type": "story",
+       "heading": "Ismételt mérés a pontosság ellenőrzésére"
+      },
+      {
+       "body": "A hét minden napján ugyanabban az időpontban megismétlik a mérést, és az eredményeket egy táblázatba rögzítik a mérés napjával és pontos idejével együtt. Az egyik napon szokatlanul alacsony értéket mérnek, ezért azt a mérést is megismétlik, hogy kizárják a leolvasási hibát. A megismételt mérés megerősíti az eredeti adatot, így azt is bekerül a táblázatba.",
+       "type": "story",
+       "heading": "A hét adatai összegyűlnek"
+      },
+      {
+       "body": "A hét végén összeadják a hét napi hőmérsékleti adatot, majd elosztják heten, hogy megkapják a heti átlaghőmérsékletet. Az átlag kiszámítása segít abban, hogy egyetlen jellemző számmal jellemezzék az egész hetet, ahelyett hogy hét külön adatot kellene összehasonlítaniuk. Az átlagot összevetik az előző hét hasonló módon kiszámított átlagával is.",
+       "type": "story",
+       "heading": "Az átlag kiszámítása"
+      },
+      {
+       "body": "A hét elején tett előzetes becslésüket összehasonlítják a ténylegesen mért heti átlaggal, és megállapítják, hogy a becslésük néhány tized fokkal tért csak el a valóságtól. Ez megerősíti számukra, hogy a korábbi tapasztalataik alapján tett becslés jó kiindulópont volt, de a pontos következtetéshez elengedhetetlen volt a rendszeres mérés.",
+       "type": "story",
+       "heading": "A becslés és a mérés összevetése"
+      },
+      {
+       "body": "Az összegyűjtött és átlagolt adatok alapján a csoport megalapozott, számokkal alátámasztott következtetést fogalmaz meg az adott hét időjárási tendenciájáról. Mivel a méréseket azonos módszerrel, azonos időpontban és ismételve végezték, az eredményt más csoportok is megbízhatóan összevethetik saját, hasonlóan végzett méréseikkel.",
+       "type": "story",
+       "heading": "A következtetés levonása"
+      }
+     ]
+    },
+    {
+     "block_id": "84cd2c76-6db5-42ca-a8c8-fa6646533ff0",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A Celsius-skála a víz fagyás- és forráspontjához igazodik.",
+       "heading": "A Celsius-skála",
+       "description": "Függőleges hőmérő vázlata 0 °C és 100 °C jelöléssel, a 0 °C-nál 'víz fagyáspontja', a 100 °C-nál 'víz forráspontja' felirattal, közte finomabb beosztásokkal.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Az idő mérésére ma leggyakrabban a mobiltelefont használjuk.",
+       "heading": "Időmérő eszközök",
+       "description": "Három egymás mellett ábrázolt eszköz: analóg falióra, digitális stopper kijelzővel, és egy mobiltelefon képernyője stopperfunkcióval.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A háztartási digitális eszközök is alkalmasak pontos mérésre.",
+       "heading": "Digitális konyhai mérleg és hőmérő",
+       "description": "Digitális konyhai mérleg kijelzővel (grammban) és egy elektronikus konyhai hőmérő szonda, amelyen Celsius-fokban jelenik meg az érték.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A pontos mérés eredményei közel esnek egymáshoz és a valódi értékhez.",
+       "heading": "A pontosság szemléltetése",
+       "description": "Két céltábla-ábra egymás mellett: az egyiken a találatok szorosan a középpont körül csoportosulnak (pontos, kis szórású mérés), a másikon szétszórtan helyezkednek el (pontatlan mérés).",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az átlagvonal a hét egészét jellemző, kiegyenlített értéket mutatja.",
+       "heading": "Napi hőmérsékletek és az átlag",
+       "description": "Hét oszlop, mindegyik egy nap hőmérsékletét jelöli, az oszlopok fölött vízszintes szaggatott vonal jelzi a heti átlagot.",
+       "visual_type": "oszlopdiagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A becslés és a mért érték összevetése segít ellenőrizni a mérés hihetőségét.",
+       "heading": "Becslés és mérés összevetése",
+       "description": "Két egymás melletti oszlop: az egyik a becsült hőmérsékletet, a másik a ténylegesen mért hőmérsékletet mutatja, közéjük illesztett eltérés-nyíllal.",
+       "visual_type": "összehasonlító ábra"
+      }
+     ]
+    },
+    {
+     "block_id": "e8ae9ec5-4dd5-4562-9ed5-cf2d096304b4",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Ma digitális hőmérőket és időjárás-alkalmazásokat használunk, amelyek a Celsius-skálán, tized fokos pontossággal, azonnal kijelzik a hőmérsékletet.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 180,
+          "w": 30,
+          "x": 180,
+          "y": 40,
+          "type": "box"
+         },
+         {
+          "r": 25,
+          "x": 195,
+          "y": 250,
+          "type": "circle"
+         },
+         {
+          "x1": 180,
+          "x2": 230,
+          "y1": 220,
+          "y2": 220,
+          "type": "line"
+         },
+         {
+          "x": 235,
+          "y": 225,
+          "text": "0 °C – víz fagyáspontja",
+          "type": "label"
+         },
+         {
+          "x1": 180,
+          "x2": 230,
+          "y1": 60,
+          "y2": 60,
+          "type": "line"
+         },
+         {
+          "x": 235,
+          "y": 65,
+          "text": "100 °C – víz forráspontja",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A Celsius-skála története",
+       "discovery": "A ma használt Celsius-hőmérsékleti skálát Anders Celsius svéd csillagász dolgozta ki 1742-ben. Az eredeti skálán Celsius a víz forráspontját jelölte 0 fokkal, a fagyáspontját pedig 100 fokkal – tehát a mai skálával fordítva. Néhány évvel később, Celsius halála után, munkatársai (köztük Carl Linnaeus) fordították meg a skálát a ma is használt formára, ahol 0 °C a fagyáspont és 100 °C a forráspont.",
+       "try_basic": "Mérd meg egy pohár csapvíz hőmérsékletét, majd hagyd állni 10 percig szobahőmérsékleten, és mérd meg újra – figyeld meg és jegyezd fel a változást.",
+       "try_advanced": "Melegíts fel vizet fokozatosan (tanári felügyelet mellett), és percenként mérd meg a hőmérsékletét egy hőmérővel, majd ábrázold grafikonon az idő és a hőmérséklet kapcsolatát, megfigyelve, hogyan lassul a melegedés a forráspont közelében."
+      }
+     ]
+    },
+    {
+     "block_id": "07fd93b9-033c-4f99-97af-76c0661e617e",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) óra",
+        "B) másodperc (s)",
+        "C) perc",
+        "D) Celsius-fok"
+       ],
+       "question": "Mi az idő SI-mértékegysége?",
+       "explanation": "Az idő SI-alapegysége a másodperc (jele s), az óra és a perc ebből származtatott, gyakorlati egység.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) 0 °C",
+        "B) 212 °C",
+        "C) 37 °C",
+        "D) 100 °C"
+       ],
+       "question": "Hány fok Celsius a víz forráspontja normál légköri nyomáson?",
+       "explanation": "A Celsius-skálát úgy állapították meg, hogy a víz forráspontja normál légköri nyomáson 100 °C legyen.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) mert az átlag mindig a legnagyobb mért érték",
+        "B) mert törvény írja elő minden mérésnél",
+        "C) mert kiegyenlíti az egyes mérések véletlen eltéréseit, megbízhatóbb eredményt ad",
+        "D) mert az átlag helyettesíti a mérőeszközt"
+       ],
+       "question": "Miért érdemes a mért adatok átlagát kiszámítani?",
+       "explanation": "Az átlag kiegyenlíti az ismételt mérések közötti véletlen eltéréseket, ezért megbízhatóbb egyetlen mérésnél.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) csak napórával",
+        "B) mobiltelefon stopperfunkciójával",
+        "C) csak vízórával",
+        "D) kizárólag laboratóriumi atomórával"
+       ],
+       "question": "Milyen eszközzel mérhetjük ma egyszerűen, kéznél lévő eszközzel az eltelt időt?",
+       "explanation": "A mobiltelefon beépített stopperfunkciója a mindennapokban könnyen elérhető, pontos időmérésre alkalmas eszköz.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) azt, hogy hányszor ismételtük meg feleslegesen a mérést",
+        "B) azt, hogy milyen színű a mérőeszköz",
+        "C) azt, hogy ki végezte a mérést",
+        "D) azt, hogy a mérési eredmény mennyire közelíti meg a valós értéket, adott eszköz és módszer mellett"
+       ],
+       "question": "Mit jelent a mérés pontossága?",
+       "explanation": "A pontosság azt fejezi ki, mennyire áll közel a mért érték a mennyiség valódi értékéhez.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "7a6f2b6a-8c16-413c-a124-b5be0e2c3d9b",
+   "title_hu": "Sűrűség és anyagvizsgálat",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "0b7ef3db-69c6-4ced-a520-583a11df5d65",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Ha ugyanabból az anyagból (pl. ugyanabból a fémből) különböző méretű darabokat vizsgálunk, azt tapasztaljuk, hogy a nagyobb térfogatú darab tömege is nagyobb. A tömeg és a térfogat aránya azonban minden darabnál ugyanaz marad, függetlenül a darab méretétől. Ez az állandó arány az adott anyagra jellemző, nem a test méretére. Ha két különböző anyagból (pl. fából és vasból) azonos térfogatú darabot veszünk, azok tömege jelentősen eltér egymástól. Ez az állandó tömeg/térfogat arány adja az anyag sűrűségét.",
+       "type": "text",
+       "heading": "Tömeg és térfogat kapcsolata azonos anyagnál",
+       "key_term": ""
+      },
+      {
+       "body": "A sűrűség jele ρ (görög ró betű), és azt mutatja meg, mekkora tömegű az adott anyag egységnyi térfogata. Kiszámítása: ρ = m/V, vagyis a tömeget elosztjuk a térfogattal. Mértékegysége leggyakrabban kg/m³ vagy g/cm³, ezek átváltása: 1 g/cm³ = 1000 kg/m³. A sűrűség az anyagra jellemző állandó, amely segít az anyagfajták megkülönböztetésében, függetlenül a vizsgált darab méretétől. Például a víz sűrűsége kb. 1000 kg/m³, a vasé kb. 7900 kg/m³, az alumíniumé kb. 2700 kg/m³.",
+       "type": "text",
+       "heading": "Mi a sűrűség?",
+       "key_term": "sűrűség"
+      },
+      {
+       "body": "A gyakran előforduló anyagok sűrűségét táblázatokban gyűjtik össze, ezekhez bármikor visszalapozhatunk, ha egy anyag azonosításához vagy számoláshoz szükségünk van rá. Egy táblázatból például kiolvasható, hogy a víz sűrűsége kb. 1000 kg/m³, a fáé anyagfajtától függően 400-900 kg/m³ körül van, az aranyé pedig kb. 19300 kg/m³. Ha egy ismeretlen anyag sűrűségét megmérjük, és összevetjük a táblázati adatokkal, közelítőleg megállapíthatjuk, miből készülhetett a tárgy. A sűrűségtáblázatok ezért fontos segédeszközei az anyagvizsgálatnak.",
+       "type": "text",
+       "heading": "Sűrűségtáblázatok használata",
+       "key_term": ""
+      },
+      {
+       "body": "Ha ismerjük egy anyag sűrűségét és egy adott darab térfogatát, kiszámíthatjuk a darab tömegét a sűrűség képletének átrendezésével: m = ρ · V. Például, ha egy vasdarab térfogata 0,002 m³, és a vas sűrűsége kb. 7900 kg/m³, akkor a tömege 7900 × 0,002 = 15,8 kg. Ez a számítás akkor hasznos, ha a tömeget nehéz vagy lehetetlen közvetlenül lemérni, de a térfogat és az anyagfajta ismert. Sok gyakorlati helyzetben (pl. építőanyagok szállításánál) így becsülik meg előre egy rakomány várható tömegét.",
+       "type": "text",
+       "heading": "Tömeg kiszámítása sűrűségből",
+       "key_term": ""
+      },
+      {
+       "body": "Ha ismerjük egy anyag sűrűségét és egy darab tömegét, a térfogat is kiszámítható a képlet átrendezésével: V = m/ρ. Például, ha egy alumíniumdarab tömege 540 g, és az alumínium sűrűsége kb. 2,7 g/cm³, akkor a térfogata 540/2,7 = 200 cm³. Ez a számítási mód akkor hasznos, ha a térfogatot nehéz közvetlenül megmérni (pl. bonyolult alakú tárgynál), de a tömeg mérlegen könnyen lemérhető. A sűrűségen alapuló számítások az anyagismeret és a gyakorlati tervezés fontos eszközei.",
+       "type": "text",
+       "heading": "Térfogat kiszámítása sűrűségből",
+       "key_term": ""
+      }
+     ]
+    },
+    {
+     "block_id": "d490b5c7-9485-4983-90af-5b3f5c98c791",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy iskolai gyűjteménybe kerül egy fényes, aranyszínű fémtárgy, amelyről nem tudni biztosan, valódi nemesfémből készült-e, vagy csupán aranyozott, olcsóbb ötvözet. A vizsgálatot végző csoport eldönti, hogy a tárgy anyagát sűrűségmérés segítségével próbálja azonosítani, mert a sűrűség az anyagra jellemző, könnyen mérhető tulajdonság.",
+       "type": "story",
+       "heading": "Kétség egy fémtárgy körül"
+      },
+      {
+       "body": "Elsőként a tárgyat digitális mérlegre helyezik, és pontosan leolvassák a tömegét grammban. A mérést kétszer megismétlik, hogy kizárják a leolvasási hibát, majd a két érték közel azonos, így elfogadják az eredményt.",
+       "type": "story",
+       "heading": "A tömeg lemérése"
+      },
+      {
+       "body": "Mivel a tárgy alakja szabálytalan, térfogatát egy mérőhengerbe eresztett vízbe süllyesztve, a vízszint emelkedéséből határozzák meg. A kiszorított víz térfogata pontosan megegyezik a tárgy térfogatával, amit a mérőhenger skálájáról olvasnak le.",
+       "type": "story",
+       "heading": "A térfogat meghatározása vízkiszorítással"
+      },
+      {
+       "body": "A mért tömeget elosztják a mért térfogattal, így megkapják a tárgy anyagára jellemző sűrűséget. Az eredményt összevetik egy sűrűségtáblázattal, amelyben megtalálható a tiszta arany, valamint néhány gyakori ötvözet jellemző sűrűsége.",
+       "type": "story",
+       "heading": "A sűrűség kiszámítása"
+      },
+      {
+       "body": "A kiszámított sűrűség jelentősen alacsonyabbnak bizonyul, mint a tiszta arany táblázati sűrűsége, ezért a csoport arra a megalapozott következtetésre jut, hogy a tárgy nem lehet színaranyból. Ezt a következtetést bárki más is ellenőrizheti, ha megismétli ugyanezt a tömeg- és térfogatmérést, és kiszámítja a sűrűséget.",
+       "type": "story",
+       "heading": "A végkövetkeztetés"
+      }
+     ]
+    },
+    {
+     "block_id": "348d1366-2e08-4f9b-b961-3cf822d9c39f",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Azonos anyagnál a tömeg és a térfogat egyenesen arányos, az arány a sűrűség.",
+       "heading": "Azonos anyag, különböző méret",
+       "description": "Grafikon vízszintes tengelyén a térfogat, függőleges tengelyén a tömeg, rajta több pont, amelyek egy origóból induló egyenesre illeszkednek; az egyenes meredeksége a sűrűség.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A sűrűséget a tömeg és a térfogat hányadosaként számítjuk ki.",
+       "heading": "A sűrűség képlete",
+       "description": "Nagy betűkkel felírt képlet: ρ = m / V, mellette rövid magyarázó nyilak: m = tömeg (kg), V = térfogat (m³), ρ = sűrűség (kg/m³).",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Az anyagok sűrűsége nagyságrendekben is eltérhet egymástól.",
+       "heading": "Anyagok sűrűségtáblázata",
+       "description": "Vízszintes oszlopdiagram, amely összehasonlítja a víz (1000 kg/m³), a fa (kb. 600 kg/m³), az alumínium (2700 kg/m³), a vas (7900 kg/m³) és az arany (19300 kg/m³) sűrűségét.",
+       "visual_type": "oszlopdiagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A kiszorított víz térfogata megegyezik a belesüllyesztett tárgy térfogatával.",
+       "heading": "Térfogatmérés vízkiszorítással",
+       "description": "Mérőhenger keresztmetszete, benne vízszinttel, majd egy második ábrán a vízbe süllyesztett szabálytalan tárgy és a megemelkedett vízszint bejelölve.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Ismert sűrűség és térfogat alapján a tömeg kiszámítható.",
+       "heading": "Tömeg kiszámítása sűrűségből",
+       "description": "Egyszerű számítási vázlat: 'V = 0,002 m³', 'ρ(vas) = 7900 kg/m³', nyíllal 'm = ρ·V = 15,8 kg' eredményhez vezetve.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Ismert sűrűség és tömeg alapján a térfogat kiszámítható.",
+       "heading": "Térfogat kiszámítása sűrűségből",
+       "description": "Egyszerű számítási vázlat: 'm = 540 g', 'ρ(alumínium) = 2,7 g/cm³', nyíllal 'V = m/ρ = 200 cm³' eredményhez vezetve.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "9010edf4-0c48-4795-9cde-343512c89352",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Ma a sűrűségmérés elvét használják például a szelektív hulladékgyűjtésben a különböző műanyagfajták szétválasztására, mivel egyes műanyagok úsznak, mások elsüllyednek vízben eltérő sűrűségük miatt.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 100,
+          "w": 150,
+          "x": 100,
+          "y": 150,
+          "type": "box"
+         },
+         {
+          "x": 100,
+          "y": 140,
+          "text": "vizes edény",
+          "type": "label"
+         },
+         {
+          "r": 20,
+          "x": 175,
+          "y": 100,
+          "type": "circle"
+         },
+         {
+          "x": 130,
+          "y": 75,
+          "text": "vizsgált fémtárgy",
+          "type": "label"
+         },
+         {
+          "x1": 175,
+          "x2": 175,
+          "y1": 120,
+          "y2": 150,
+          "type": "arrow"
+         },
+         {
+          "x1": 100,
+          "x2": 250,
+          "y1": 190,
+          "y2": 190,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x": 260,
+          "y": 195,
+          "text": "kiszorított víz szintje",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Arkhimédész és a korona rejtélye",
+       "discovery": "A hagyomány szerint Arkhimédész szürakuszai tudóst a király azzal bízta meg, állapítsa meg, valóban színaranyból készült-e a koronája, anélkül hogy megrongálná azt. Arkhimédész felismerte, hogy egy fürdőkádba lépve a kiszorított víz mennyiségéből meghatározható egy szabálytalan alakú tárgy térfogata, amit aztán a tárggyal azonos tömegű, ismert anyagú testekkel összehasonlítva vizsgálhatja az anyagminőséget. Ez a felismerés a sűrűségen alapuló anyagvizsgálat egyik legkorábbi, ma is tanított módszere.",
+       "try_basic": "Mérd le egy kisebb tárgy (pl. gyurmadarab) tömegét mérlegen, majd határozd meg térfogatát vízkiszorítással egy mérőhengerben, és számítsd ki a sűrűségét.",
+       "try_advanced": "Hasonlítsd össze egy pohár víz és egy pohár étolaj sűrűségét azonos térfogatú minták tömegének lemérésével, majd magyarázd meg, miért helyezkedik el az olaj a víz felszínén, ha a kettőt összeöntöd."
+      }
+     ]
+    },
+    {
+     "block_id": "97c3149b-5b52-4b47-8dbf-b3034d7158f4",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) m, kg",
+        "B) V, m³",
+        "C) ρ, kg/m³",
+        "D) t, s"
+       ],
+       "question": "Mi a sűrűség jele és jellemző mértékegysége?",
+       "explanation": "A sűrűség jele ρ, jellemző mértékegysége kg/m³ (vagy g/cm³).",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) az arányuk mindig változik",
+        "B) az arányuk állandó, ez az anyag sűrűsége",
+        "C) a nagyobb test sűrűsége mindig nagyobb",
+        "D) nincs összefüggés köztük"
+       ],
+       "question": "Azonos anyagból készült, különböző méretű testeknél mi jellemző a tömeg és a térfogat arányára?",
+       "explanation": "Azonos anyagnál a tömeg/térfogat arány állandó, ez az arány maga a sűrűség, amely nem függ a darab méretétől.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) 100 kg/m³",
+        "B) 7900 kg/m³",
+        "C) 1 kg/m³",
+        "D) 1000 kg/m³"
+       ],
+       "question": "Körülbelül mekkora a víz sűrűsége?",
+       "explanation": "A víz sűrűsége kb. 1000 kg/m³, ami 1 g/cm³-nek felel meg.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) 500 kg",
+        "B) 2500 kg",
+        "C) 1000 kg",
+        "D) 4000 kg"
+       ],
+       "question": "Egy test térfogata 0,5 m³, sűrűsége 2000 kg/m³. Mennyi a tömege?",
+       "explanation": "m = ρ·V = 2000 kg/m³ × 0,5 m³ = 1000 kg.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) 8 dm³",
+        "B) 0,5 dm³",
+        "C) 6 dm³",
+        "D) 2 dm³"
+       ],
+       "question": "Egy test tömege 4 kg, sűrűsége 2 kg/dm³. Mekkora a térfogata?",
+       "explanation": "V = m/ρ = 4 kg / 2 kg/dm³ = 2 dm³.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "33d5786d-f741-4506-96e7-f6438d57d848",
+   "title_hu": "A fizika szakterületei és tudományos vizsgálat",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "311c11dc-4c1a-4a44-ac4c-338e14ab60fc",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A fizika tudománya több nagy szakterületre tagolódik, amelyek a természet más-más jelenségeit vizsgálják. A mechanika a testek mozgásával és a rájuk ható erőkkel foglalkozik, a hőtan a hőjelenségekkel, az elektromosságtan az elektromos és mágneses jelenségekkel, az optika a fény tulajdonságaival. Ezen kívül léteznek olyan modern szakterületek is, mint az atomfizika, a részecskefizika vagy az asztrofizika, amely az égitestek és a világegyetem jelenségeit vizsgálja. A szakterületek gyakran összekapcsolódnak: egy modern eszköz (pl. okostelefon) működésének megértéséhez több terület ismerete is szükséges.",
+       "type": "text",
+       "heading": "A fizika fő szakterületei",
+       "key_term": ""
+      },
+      {
+       "body": "A fizika folyamatosan fejlődő tudomány, amelyben rendszeresen születnek új, jelentős eredmények. 2015-ben sikerült első alkalommal közvetlenül kimutatni a gravitációs hullámokat, amelyeket Albert Einstein már 1916-ban megjósolt, de évtizedekig nem sikerült műszeresen kimutatni őket. Egy tudományos eredmény akkor tekinthető megalapozottnak, ha más kutatócsoportok is meg tudták erősíteni, és a szakmai közösség (más kutatók) ellenőrizte, elfogadta. Ilyen új eredmény például az egyre újabb exobolygók (más csillagok körül keringő bolygók) felfedezése is, amelyek a modern csillagászati műszerek segítségével válnak megismerhetővé.",
+       "type": "text",
+       "heading": "Néhány újabb fizikai eredmény",
+       "key_term": "tudományos eredmény"
+      },
+      {
+       "body": "Amikor egy fizikai jellegű állítással találkozunk (pl. az interneten vagy a médiában), érdemes kritikusan megvizsgálni, mennyire megalapozott. Fontos kérdés, van-e mögötte ellenőrizhető mérési adat, illetve hogy más, független kutatók is megerősítették-e az eredményt. Megbízható forrásnak számítanak a szakfolyóiratokban megjelent, lektorált (más szakértők által ellenőrzött) tanulmányok, kevésbé megbízhatóak az ellenőrizetlen közösségimédia-bejegyzések. Egy tudományosan megalapozott állítás mindig megismételhető kísérlettel vagy méréssel alátámasztható, nem csupán meggyőző megfogalmazáson alapul.",
+       "type": "text",
+       "heading": "Egy állítás tudományos megalapozottságának vizsgálata",
+       "key_term": ""
+      },
+      {
+       "body": "Az áltudományos állításokat gyakran tudományos köntösbe csomagolják, valójában azonban nem támasztja alá őket ellenőrizhető bizonyíték. Jellemző rájuk, hogy nem megismételhetők, elutasítják a cáfoló bizonyítékokat, és gyakran hivatkoznak homályos, nem ellenőrizhető forrásokra. Ezzel szemben egy valódi tudományos eredmény nyitott az ellenőrzésre, és ha új bizonyíték cáfolja, a kutatók hajlandóak felülvizsgálni korábbi állításukat. A kritikus gondolkodás – vagyis hogy megkérdezzük, milyen bizonyíték áll egy állítás mögött – minden tudományos vizsgálat alapja.",
+       "type": "text",
+       "heading": "Az áltudomány felismerése",
+       "key_term": ""
+      },
+      {
+       "body": "A fizika szakterületeinek ismerete segít eligazodni a mindennapi technológiai eszközök működésében is, a mobiltelefon kijelzőjétől az elektromos autók akkumulátoráig. Amikor egy új technológiai hírrel találkozunk, hasznos, ha fel tudjuk ismerni, melyik fizikai szakterülethez kapcsolódik, és meg tudjuk ítélni, mennyire megalapozott az állítás. A tudományos gondolkodásmód – megfigyelés, mérés, ellenőrzés – nem csak a laboratóriumban, hanem a mindennapi döntéseinkben is hasznos eszköz.",
+       "type": "text",
+       "heading": "A fizika a mindennapokban",
+       "key_term": ""
+      }
+     ]
+    },
+    {
+     "block_id": "a37d108d-a169-4b1b-8bce-dcdfa1b41f6f",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az interneten megjelenik egy bejegyzés, amely szerint egy állítólagos új eszköz a semmiből képes folyamatosan energiát termelni, külső energiaforrás nélkül. A bejegyzés gyorsan terjed, sokan osztják meg és kommentálják, anélkül hogy megvizsgálnák, mennyire megalapozott az állítás.",
+       "type": "story",
+       "heading": "Egy meglepő állítás megjelenik"
+      },
+      {
+       "body": "Egy tanulócsoport úgy dönt, kritikusan megvizsgálja az állítást, és összeveti azt az energia-megmaradás jól ismert, sokszorosan igazolt fizikai törvényével, amely szerint energia nem keletkezhet a semmiből. Az állítás ellentmond ennek az alapvető, régóta ellenőrzött törvényszerűségnek.",
+       "type": "story",
+       "heading": "Összevetés ismert fizikai törvényekkel"
+      },
+      {
+       "body": "A csoport megvizsgálja, van-e az állítás mögött bármilyen ellenőrizhető mérési adat, független laboratóriumi teszt vagy megismételhető kísérlet. Azt találják, hogy az eszközt sosem tesztelte független, szakmailag elismert kutatócsoport, és nem található hozzá lektorált szakfolyóiratban megjelent tanulmány sem.",
+       "type": "story",
+       "heading": "Bizonyítékok keresése"
+      },
+      {
+       "body": "A csoport rákeres, mit mondanak a témában jártas kutatók és szakértők az állításról. Több szakértő is egyetért abban, hogy az állítás ellentmond az energia-megmaradás törvényének, és hogy hasonló, korábbi eszközök egyike sem bizonyult működőképesnek független teszteken.",
+       "type": "story",
+       "heading": "A szakmai közösség véleménye"
+      },
+      {
+       "body": "Az összegyűjtött információk alapján a csoport arra a következtetésre jut, hogy az állítás nem tudományosan megalapozott, mivel nincs mögötte ellenőrizhető bizonyíték, és ellentmond egy jól bevált fizikai törvénynek. Ez a vizsgálat jól mutatja, hogyan lehet egy meglepő állítást tudományos igénnyel, kritikusan megvizsgálni ahelyett, hogy elhinnénk vagy azonnal elutasítanánk.",
+       "type": "story",
+       "heading": "A végső, megalapozott következtetés"
+      }
+     ]
+    },
+    {
+     "block_id": "126a4092-36b3-4a7c-ba07-aa524fc4b35e",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A fizika sokféle, egymáshoz kapcsolódó szakterületre tagolódik.",
+       "heading": "A fizika szakterületei",
+       "description": "Középen 'Fizika' felirat, ebből kiinduló ágak: mechanika, hőtan, elektromosságtan, optika, atomfizika, asztrofizika, mindegyik mellett egy-egy apró jellemző szimbólummal (pl. mozgó test, hőmérő, villám, lencse, atom, csillag).",
+       "visual_type": "mindmap"
+      },
+      {
+       "type": "visual",
+       "caption": "A gravitációs hullámokat L-alakú, lézeres detektorokkal mutatták ki 2015-ben.",
+       "heading": "Gravitációshullám-detektor vázlata",
+       "description": "L-alakú, két derékszögben álló kar vázlata, mindkét kar végén egy-egy tükör, a sarokban lézerforrás jelölve.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Egy állítás tudományos megalapozottságát lépésről lépésre érdemes ellenőrizni.",
+       "heading": "Kritikus vizsgálat folyamatábrája",
+       "description": "Négy dobozból álló folyamatábra: Állítás megjelenik → Bizonyíték keresése → Összevetés ismert törvényekkel és szakértői véleménnyel → Megalapozott következtetés.",
+       "visual_type": "folyamatábra"
+      },
+      {
+       "type": "visual",
+       "caption": "Fontos megkülönböztetni az ellenőrizhető bizonyítékot a puszta véleménytől.",
+       "heading": "Bizonyíték vagy vélemény?",
+       "description": "Két oszlopos táblázat-vázlat: bal oldalon 'ellenőrizhető bizonyíték' jellemzői (mérés, lektorált forrás, ismételhetőség), jobb oldalon 'puszta vélemény' jellemzői (nincs forrás, nem ismételhető, csak állítás).",
+       "visual_type": "összehasonlító táblázat-vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Ezek a jelek segítenek felismerni egy áltudományos állítást.",
+       "heading": "Az áltudomány jelei",
+       "description": "Négy figyelmeztető jelzéssel ellátott pont: nem ismételhető kísérlet, homályos forrás, elutasítja a cáfoló bizonyítékot, meggyőző, de bizonyíthatatlan megfogalmazás.",
+       "visual_type": "lista-ábra"
+      },
+      {
+       "type": "visual",
+       "caption": "A fizikai tudás folyamatosan bővül, új eredmények épülnek a régiekre.",
+       "heading": "Fizikai felfedezések idővonala",
+       "description": "Vízszintes idővonal jelölésekkel: 1916 – Einstein megjósolja a gravitációs hullámokat, 2015 – első közvetlen kimutatásuk, napjaink – új exobolygók felfedezése.",
+       "visual_type": "idővonal"
+      }
+     ]
+    },
+    {
+     "block_id": "dd647930-bb1a-4ebe-89e8-798a799d0b62",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A LIGO és a Virgo obszervatóriumok ma is rendszeresen működnek, és folyamatosan új gravitációshullám-eseményeket (pl. fekete lyukak és neutroncsillagok összeolvadását) észlelnek, ezzel bővítve a világegyetemről szerzett tudományos ismereteinket.",
+       "sketch": {
+        "shapes": [
+         {
+          "x1": 50,
+          "x2": 50,
+          "y1": 250,
+          "y2": 80,
+          "type": "line"
+         },
+         {
+          "x1": 50,
+          "x2": 300,
+          "y1": 250,
+          "y2": 250,
+          "type": "line"
+         },
+         {
+          "h": 20,
+          "w": 20,
+          "x": 40,
+          "y": 70,
+          "type": "box"
+         },
+         {
+          "h": 20,
+          "w": 20,
+          "x": 290,
+          "y": 240,
+          "type": "box"
+         },
+         {
+          "x": 15,
+          "y": 60,
+          "text": "tükör",
+          "type": "label"
+         },
+         {
+          "x": 270,
+          "y": 275,
+          "text": "tükör",
+          "type": "label"
+         },
+         {
+          "x": 60,
+          "y": 40,
+          "text": "lézerkar (kb. 4 km)",
+          "type": "label"
+         },
+         {
+          "x": 50,
+          "y": 250,
+          "type": "dot"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A gravitációs hullámok felfedezése",
+       "discovery": "Albert Einstein 1916-ban, az általános relativitáselmélet alapján megjósolta a gravitációs hullámok létezését, amelyek a téridő fodrozódásaként terjednek nagy tömegű égitestek (pl. fekete lyukak) gyorsuló mozgása során. A jelenséget csak 2015. szeptember 14-én sikerült első alkalommal közvetlenül kimutatni a LIGO amerikai obszervatórium két, egyenként 4 kilométer hosszú karú, lézeres detektorával, amikor két fekete lyuk összeolvadásából származó hullám haladt át a Földön. A felfedezést 2016-ban jelentették be hivatalosan, miután a mérést és az elemzést a szakmai közösség alaposan ellenőrizte.",
+       "try_basic": "Keress egy friss híranyagot egy új fizikai felfedezésről, és vizsgáld meg, megnevezi-e a hírforrás, mely kutatóintézet vagy tudományos folyóirat áll az eredmény mögött.",
+       "try_advanced": "Hasonlíts össze egy tudományos hírportálon megjelent beszámolót egy ugyanarról a témáról szóló, ellenőrizetlen közösségimédia-bejegyzéssel, és azonosítsd, milyen bizonyítékbeli és forrásbeli különbségek alapján dönthető el, melyik megbízhatóbb."
+      }
+     ]
+    },
+    {
+     "block_id": "c7ca2ed3-52e7-4ddd-92ab-db984a8384d3",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) mechanika",
+        "B) hőtan",
+        "C) irodalomtudomány",
+        "D) elektromosságtan"
+       ],
+       "question": "Melyik NEM tartozik a fizika hagyományos szakterületei közé?",
+       "explanation": "Az irodalomtudomány nem a fizika, hanem a bölcsészettudományok területéhez tartozik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) egyetlen ember állította csupán",
+        "B) más kutatók is ellenőrizték és megerősítették",
+        "C) csak elméleti, sosem mérték",
+        "D) titokban tartják az adatokat"
+       ],
+       "question": "Mit jelent, ha egy fizikai eredményt tudományosan megalapozottnak nevezünk?",
+       "explanation": "A tudományos megalapozottság feltétele, hogy az eredményt független kutatók is ellenőrizzék és megerősítsék.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) hányan kedvelték a bejegyzést",
+        "B) milyen hangnemben íródott",
+        "C) van-e mögötte ellenőrizhető bizonyíték és megbízható forrás",
+        "D) mennyire népszerű a közösségi médiában"
+       ],
+       "question": "Egy állítás tudományos megalapozottságának kritikus vizsgálatakor mit érdemes elsősorban ellenőrizni?",
+       "explanation": "A megalapozottság kulcskérdése, hogy van-e ellenőrizhető, forrással alátámasztott bizonyíték az állítás mögött.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) a Föld forgását",
+        "B) a hangsebességet",
+        "C) az elektromosságot",
+        "D) gravitációs hullámokat"
+       ],
+       "question": "Milyen jelenséget mutattak ki első ízben közvetlen méréssel 2015-ben?",
+       "explanation": "2015-ben sikerült első alkalommal közvetlenül kimutatni a gravitációs hullámokat, amelyeket Einstein 1916-ban jósolt meg.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) mindig kutatói konszenzuson alapulnak",
+        "B) szakfolyóiratban jelennek meg lektorálva",
+        "C) ismételt mérésekkel alátámasztottak",
+        "D) nem ellenőrizhetők, és hiányoznak mögülük megismételhető bizonyítékok"
+       ],
+       "question": "Mi jellemzi az áltudományos állításokat?",
+       "explanation": "Az áltudományos állítások jellemzően nem ellenőrizhetők, és nincs mögöttük megismételhető, mérésekkel alátámasztott bizonyíték.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "90308ea9-b71d-4dc6-b8aa-381ae786d214",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) liter",
+      "B) kilogramm",
+      "C) méter",
+      "D) másodperc"
+     ],
+     "question": "Mi a hosszúság SI-mértékegysége?",
+     "explanation": "A hosszúság SI-alapegysége a méter (jele m).",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 0,2 dm³",
+      "B) 20 dm³",
+      "C) 2 dm³",
+      "D) 200 dm³"
+     ],
+     "question": "2 liter hány köbdeciméter (dm³)?",
+     "explanation": "1 liter pontosan 1 köbdeciméterrel egyenlő, ezért 2 liter = 2 dm³.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 0 °C",
+      "B) 32 °C",
+      "C) 100 °C",
+      "D) -100 °C"
+     ],
+     "question": "Hány fok Celsius a víz fagyáspontja normál légköri nyomáson?",
+     "explanation": "A Celsius-skálán a víz fagyáspontja 0 °C.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) mert a mérőeszköz elromlik egyszeri használat után",
+      "B) mert törvény írja elő",
+      "C) mert csak így kapunk egész számot",
+      "D) mert így csökkenthető a véletlen hiba hatása és pontosabb átlag számítható"
+     ],
+     "question": "Miért érdemes egy mérést többször megismételni?",
+     "explanation": "Az ismételt mérésekből számított átlag kiegyenlíti a véletlen hibákat, ezért megbízhatóbb egyetlen mérésnél.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) ρ=V/m",
+      "B) ρ=m*V",
+      "C) ρ=m/V",
+      "D) ρ=m+V"
+     ],
+     "question": "Mi a sűrűség képlete?",
+     "explanation": "A sűrűséget a tömeg és a térfogat hányadosaként számítjuk ki: ρ = m/V.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) 1,5 kg",
+      "B) 5 kg",
+      "C) 0,67 kg",
+      "D) 6 kg"
+     ],
+     "question": "Egy test térfogata 2 dm³, sűrűsége 3 kg/dm³. Mekkora a tömege?",
+     "explanation": "m = ρ·V = 3 kg/dm³ × 2 dm³ = 6 kg.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) nyelvtan",
+      "B) mechanika",
+      "C) földrajz",
+      "D) számvitel"
+     ],
+     "question": "Melyik az egyik fő szakterülete a fizikának?",
+     "explanation": "A mechanika a testek mozgásával és a rájuk ható erőkkel foglalkozó fizikai szakterület.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) ellenőrizhető bizonyítékok és ismételhető mérések támasztják alá",
+      "B) sokan osztják meg a közösségi médiában",
+      "C) meggyőzően hangzik",
+      "D) egy híres ember mondta"
+     ],
+     "question": "Mi jellemzi egy állítás tudományos megalapozottságát?",
+     "explanation": "Egy állítás tudományos megalapozottságát ellenőrizhető, megismételhető bizonyítékok adják, nem a népszerűsége vagy a megfogalmazás módja.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

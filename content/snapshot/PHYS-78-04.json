@@ -1,0 +1,872 @@
+{
+ "nat_id": "PHYS-78-04",
+ "topic_id": "2e8edc23-9afe-4378-8c23-fa1e91c5e83e",
+ "title_hu": "Lendület és egyensúly",
+ "grade": 7,
+ "lessons": [
+  {
+   "lesson_id": "75efbfc1-1f1b-4b9e-8f86-e11f47b40d8a",
+   "title_hu": "Lendület és rakétamozgás",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "071a36fa-4998-4798-b41c-d7823b2051b2",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A lendület (p) egy objektum mozgásának mennyiségét jellemzi, és az objektum tömegének (m) és sebességének (v) szorzataként definiálható: p = m × v. Például, ha egy 70 kg-os ember 5 m/s sebességgel fut, akkor a lendülete 350 kg·m/s. A lendület mértékegysége a kg·m/s. A lendület megértése segít a mozgás dinamikájának megértésében, például amikor két autó ütközik.",
+       "type": "text",
+       "heading": "A lendület fogalma",
+       "key_term": "lendület"
+      },
+      {
+       "body": "A lendület megmaradásának törvénye azt állítja, hogy zárt rendszerben a lendület összessége állandó marad, ha nincsenek külső erők. Például, amikor két fiú focizik, és az egyikük megüti a labdát, a labda lendülete a fiú lendületének egy részét veszi át. Ezért fontos a lendület megmaradásának megértése a sportban és a mindennapi életben.",
+       "type": "text",
+       "heading": "A lendület megmaradása",
+       "key_term": "a lendület megmaradása"
+      },
+      {
+       "body": "Newton harmadik törvénye kimondja, hogy minden hatásra van egy egyenlő és ellentétes reakció. Ez a törvény megmagyarázza, miért repül a rakéta. Amikor a rakéta hajtóművei tüzelnek, a gázok lefelé áramlanak, és a rakéta felfelé mozog. Ez a jelenség a mindennapi életben is megtalálható, például amikor egy ember ugrik, a lába a földre hat, és a föld visszahat rá, lehetővé téve az ugrást.",
+       "type": "text",
+       "heading": "Newton harmadik törvénye",
+       "key_term": "Newton harmadik törvénye"
+      },
+      {
+       "body": "Egy egyszerű kísérlet a léggömb-rakéta, amely bemutatja a rakéták működését. Fújj fel egy léggömböt, majd engedd el anélkül, hogy befognád a nyílását. A léggömb a levegő kiáramlása miatt ellentétes irányba repül. Ez a kísérlet jól szemlélteti a lendület megmaradását és Newton harmadik törvényét egyaránt.",
+       "type": "text",
+       "heading": "Rakéta mozgásának kísérleti vizsgálata",
+       "key_term": "rakéta mozgás"
+      },
+      {
+       "body": "Képzelj el egy helyzetet, ahol két kocsi ütközik. Ha az egyik kocsi 2 m/s sebességgel halad, míg a másik áll, az ütközés után a mozgásuk megváltozik. A lendületük összege az ütközés előtt és után is ugyanaz marad. Ez a kísérlet segít megérteni a lendület megmaradását a mindennapi életben, például a közlekedés során.",
+       "type": "text",
+       "heading": "Egyszerű ütközések és lendületmegmaradás",
+       "key_term": "egyszerű ütközések"
+      },
+      {
+       "body": "Gondoljunk a gőzgépre, amely a lendület és a mozgás alapelveit használja. A gőz nyomása mozgásba hozza a gépet, amely így képes energiát átadni, például egy vonat mozgásához. A gépek működése során a lendület megmaradása kulcsszerepet játszik, hiszen a gép részei között folyamatosan áramlik az energia és a lendület.",
+       "type": "text",
+       "heading": "Gépek és lendület",
+       "key_term": "gépek"
+      }
+     ]
+    },
+    {
+     "block_id": "456641f5-11ae-459f-812f-f71c8388c4fb",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal, aki éppen egy rakétát készít elő a kísérlethez, felfújja a léggömböt. Ez a léggömb tele van levegővel, amely a rakéta mozgásának alapját képezi.",
+       "type": "story",
+       "heading": "A rakéta indítása"
+      },
+      {
+       "body": "Amikor a léggömb felfújt állapotban van, a benne lévő levegő nyomása megnő. A fiatal elengedi a léggömböt, és a levegő gyorsan távozik a gömbből. Ez a légnyomás a rakéta lendületét generálja.",
+       "type": "story",
+       "heading": "A léggömb kiengedése"
+      },
+      {
+       "body": "A léggömbből kiáramló levegő egy irányba tolja a rakétát, miközben a levegő a másik irányba távozik. Ez a jelenség a Newton harmadik törvénye (a hatás-ellenhatás törvénye) alapján működik: minden akciónak van egy egyenlő és ellentétes reakciója.",
+       "type": "story",
+       "heading": "A rakéta mozgása"
+      },
+      {
+       "body": "A rakéta mozgás közben a lendülete megmarad. Azaz, ha a rakéta sebessége és tömege állandó, a lendülete (p = m × v) is állandó marad, amíg más erő nem hat rá. Ez a megmaradás elve a rakétamozgás során is érvényesül.",
+       "type": "story",
+       "heading": "A lendület megmaradása"
+      },
+      {
+       "body": "Miután a rakéta visszatér a földre, a fiatal megérti, hogy a lendület megmaradása és a Newton törvényei nemcsak a rakétákra, hanem a mindennapi élet számos területére is vonatkoznak, például a közlekedésre vagy az energiaátalakításra is.",
+       "type": "story",
+       "heading": "A kísérlet tanulsága"
+      }
+     ]
+    },
+    {
+     "block_id": "58d4b5d1-f78d-4655-9031-ac4f12e2f8fa",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A lendület kiszámítása tömeg és sebesség alapján.",
+       "heading": "Lendület fogalma",
+       "description": "A lendület (p) kiszámítása: p = m * v, ahol m a tömeg, v a sebesség. A diagramon a lendület vektoros ábrázolása látható, amely a tömeg és a sebesség szorzataként jelenik meg.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Lendület megmaradása ütközéskor.",
+       "heading": "Lendület megmaradása ütközéskor",
+       "description": "A grafikonon két ütköző test lendületeit ábrázoljuk. Az ütközés előtti és utáni lendületek összege azonos, bemutatva a lendület megmaradását.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Rakéta mozgása a Newton harmadik törvénye alapján.",
+       "heading": "Rakéta mozgása",
+       "description": "A rakéta működését bemutató vázlat, amely a gázok kilövellését és a rakéta előrehaladását szemlélteti. A rakéta felfelé halad, miközben a gázok hátrafelé áramlanak.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Newton harmadik törvénye: minden hatásra egyenlő és ellentétes reakció lép fel.",
+       "heading": "Newton harmadik törvénye",
+       "description": "A diagramon a hatás-ellenhatás elvét szemléltetjük. Például, ha egy testet megnyomunk, akkor az a test ugyanakkora erővel ellenáll. Ezt a rakéta működésénél is megfigyelhetjük.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Kísérleti setup a lendületmegmaradás bemutatására.",
+       "heading": "Lendületmegmaradás kísérlet",
+       "description": "Egyszerű ütközések kísérleti setupja, ahol két különböző tömegű golyó ütközik, és a lendület megmaradását vizsgáljuk. A kísérlet bemutatja, hogyan oszlik meg a lendület az ütközés után.",
+       "visual_type": "kísérleti setup"
+      },
+      {
+       "type": "visual",
+       "caption": "Elektromos motor működése és hatása a gazdaságra.",
+       "heading": "Gép működése",
+       "description": "Keresztmetszeti ábra egy elektromos motor működéséről, amely bemutatja, hogyan alakítja át az elektromos energiát mozgási energiává, és ezzel hogyan járul hozzá a gazdaság fejlődéséhez.",
+       "visual_type": "keresztmetszet"
+      }
+     ]
+    },
+    {
+     "block_id": "392f23cd-bea0-4131-ad92-887684877cda",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A lendület fogalma a rakéták működésében találkozik, például amikor a rakéta hajtóművei működésbe lépnek, és a gázok hátrafelé távoznak, így a rakéta előre halad.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Lendület a mindennapokban",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "ab91df00-ba00-4504-a9dc-1d29839489d2",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) p = m * v",
+        "B) p = F * t",
+        "C) p = E * t",
+        "D) p = m / v"
+       ],
+       "question": "Mi a lendület (p) képlete?",
+       "explanation": "A lendület (p) a tömeg (m) és a sebesség (v) szorzataként van definiálva.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A zárt rendszerben a lendület megmarad.",
+        "B) A lendület mindig nő.",
+        "C) A lendület sosem marad meg.",
+        "D) A lendület csak ütközéseknél marad meg."
+       ],
+       "question": "Melyik állítás igaz a lendület megmaradására?",
+       "explanation": "A lendület megmaradásának törvénye kimondja, hogy zárt rendszerben a lendület megmarad, ha nincs külső erőhatás.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A rakéta a gázok kilövésével halad előre.",
+        "B) A rakéta motorja csak levegőt használ.",
+        "C) A rakéta a gravitációt használja a mozgásához.",
+        "D) A rakéta nem igényel üzemanyagot."
+       ],
+       "question": "Hogyan működik a rakéta mozgása?",
+       "explanation": "A rakéta mozgása a Newton harmadik törvényének alapján működik, amely szerint a gázok kilövésével hátrafelé nyomja a rakétát, így előrehalad.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Minden hatásra egyenlő és ellentétes reakció lép fel.",
+        "B) A testek mozgása egyenletes.",
+        "C) A testek mindig megőrzik a lendületüket.",
+        "D) A sebesség mindig arányos a tömeggel."
+       ],
+       "question": "Mi Newton harmadik törvénye?",
+       "explanation": "Newton harmadik törvénye kimondja, hogy minden hatásra egyenlő és ellentétes reakció lép fel, ami a rakétamozgás alapja is.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Váltakozó mozgás",
+        "B) Egyenletes mozgás",
+        "C) Gyorsuló mozgás",
+        "D) Szabad esés"
+       ],
+       "question": "Milyen típusú mozgás jellemzi a léggömb-rakétát?",
+       "explanation": "A léggömb-rakéta mozgása gyorsuló, mivel a levegő kiáramlása miatt a rakéta gyorsul, ahogy a gázok elhagyják a léggömböt.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "afc0f740-1047-4e4d-9247-d53bc2b71674",
+   "title_hu": "Körmozgások és lengések vizsgálata",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "df1e4447-95d8-4216-bef2-5d271de02e70",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A periódusidő (T) az az időtartam, amely alatt egy mozgás teljes ciklusa lezajlik. Gondoljunk például a hintázásra: amikor a hinta egy teljes lengést végez, az a periódusidő. Ez az időtartam nemcsak a hinta esetében fontos, hanem minden körmozgásnál és rezgésnél is. A hinta periódusidője a hinta hosszától és a gravitációs gyorsulástól függ. Ha a hinta hosszabb, a periódusidő is nő, tehát lassabban mozog.",
+       "type": "text",
+       "heading": "A periódusidő fogalma",
+       "key_term": "periódusidő"
+      },
+      {
+       "body": "A fordulatszám (n) megmutatja, hogy egy test egy másodperc alatt hányszor végez el egy teljes fordulatot. Például, amikor egy elektromos autó motorja forog, a fordulatszám kulcsfontosságú a teljesítmény és hatékonyság szempontjából. A fordulatszám mérése segít megérteni, hogy milyen gyorsan történik a mozgás, ami fontos a járművek és különböző gépek működése során.",
+       "type": "text",
+       "heading": "Fordulatszám a mindennapokban",
+       "key_term": "fordulatszám"
+      },
+      {
+       "body": "Az amplitúdó a rezgés maximális kitérése, ami azt mutatja meg, hogy a mozgás során a test mennyire tér el az egyensúlyi helyzetétől. Például, amikor egy mobiltelefon rezeg, az amplitúdója jelzi, hogy mennyire erősen rezeg. A rezgésszám (f) pedig azt mutatja meg, hogy egy másodperc alatt hány rezgést vagy lengést végez a test. A rezgések száma fontos lehet például a zenehallgatás során, ahol a mélyebb hangok alacsonyabb rezgésszámot jelentenek.",
+       "type": "text",
+       "heading": "Amplitúdó és rezgésszám",
+       "key_term": "amplitúdó, rezgésszám"
+      },
+      {
+       "body": "A periódusidő méréséhez egyszerű kísérletet végezhetünk egy hintával. Ha megmérjük, mennyi idő alatt tesz meg a hinta egy teljes lengést, akkor meghatározhatjuk a periódusidőt. Ez a kísérlet segít megérteni, hogy a hinta hossza és a gravitáció milyen hatással van a mozgásra. Ezen kívül hasonló módszerekkel vizsgálhatjuk például a pendulum órák működését is.",
+       "type": "text",
+       "heading": "Periódusidő mérése a gyakorlatban",
+       "key_term": "periódusidő"
+      },
+      {
+       "body": "A Föld mozgása is példázza a periódusidő fogalmát. A Föld egy teljes fordulatot tesz meg a tengelye körül 24 óra alatt, ez a nap periódusidője. Ezen kívül a Föld keringése a Nap körül egy évbe telik, ami szintén periódusidő. Ezek a mozgások nemcsak a természet ritmusát határozzák meg, hanem az időszámításunk alapját is képezik, hiszen a napok és évek váltakozása határozza meg az életünket.",
+       "type": "text",
+       "heading": "Körmozgások és a Föld",
+       "key_term": "periódusidő"
+      },
+      {
+       "body": "A háztartási eszközök, mint például a mosógép, szintén példák a körmozgásokra. A mosógép dobja körmozgást végez, miközben vízben forgatja a ruhákat. A dob fordulatszáma és a periódusidő befolyásolja, hogy mennyi idő alatt tisztulnak meg a ruhák. Az erőátvitel és a mozgás jellemzői fontos szerepet játszanak a gépek hatékonyságában és a tisztítási folyamatokban.",
+       "type": "text",
+       "heading": "Egyszerű gépek és erőátvitel",
+       "key_term": "fordulatszám"
+      }
+     ]
+    },
+    {
+     "block_id": "7f2cc93d-8260-4e01-b9be-edb517a1b28d",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal elindul a parkba, ahol észrevesz egy hintát. Felül a hintára, és elkezd lengeni. A hinta mozgása körmozgásra emlékeztet, hiszen a fiatal folyamatosan egy ívet követ, miközben a gravitáció hatására a hinta lentről felfelé és vissza mozog.",
+       "type": "story",
+       "heading": "A hinta mozgása"
+      },
+      {
+       "body": "A fiatal kíváncsi a hinta mozgására, így megfigyeli, mennyi idő alatt tesz meg egy teljes lengést. Ezt a folyamatot periódusidőnek (T) nevezzük, amely megmutatja, mennyi idő telik el egy teljes körmozgás során. Mérésekor észreveszi, hogy a hinta periódusideje független a kilendítés erősségétől.",
+       "type": "story",
+       "heading": "A periódusidő mérése"
+      },
+      {
+       "body": "A fiatal észreveszi, hogy a hinta különböző helyzetekben más és más periódusidővel mozog. A hinta periódusideje a hinta hosszától és a gravitációs gyorsulástól függ. Ez a hinta amplitúdója (A) miatt van, amely befolyásolja a mozgás sebességét és időtartamát.",
+       "type": "story",
+       "heading": "A lengés befolyásoló tényezői"
+      },
+      {
+       "body": "A fiatal a hinta lengései során felfedezi, hogy a rezgésszám (f) a lengések számát jelenti egy adott idő alatt. Például, ha 10 másodperc alatt 5 teljes lengést végez, akkor a rezgésszám (f) 0,5 Hz. Ez segít neki megérteni, hogy a hinta mozgása nemcsak szórakoztató, hanem tudományos szempontból is érdekes.",
+       "type": "story",
+       "heading": "A fordulatszám és rezgésszám"
+      },
+      {
+       "body": "A fiatal most már tudja, hogy a hinta mozgása a periódusidő, a fordulatszám és az amplitúdó összefüggésein alapul. Ezt a tudást a mindennapi életben is felhasználhatja, például egy indukciós főzőlap működésének megértésében, ahol a rezonancia és a lengések szintén fontos szerepet játszanak a hatékony működéshez.",
+       "type": "story",
+       "heading": "A hinta hatása a mindennapi életre"
+      }
+     ]
+    },
+    {
+     "block_id": "deb1ccac-195e-4edf-801a-29b5e3f6d71e",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A körmozgás lényege, hogy a test egy rögzített középpont körül forog.",
+       "heading": "Körmozgás",
+       "description": "Egy körmozgást végző test útvonalát és a középpontját ábrázoló diagram. A test mozgása egy kör mentén történik, és a középponttól mért távolság állandó.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A periódusidő és a frekvencia fordítottan arányosak: T = 1/f.",
+       "heading": "Periódusidő",
+       "description": "A periódusidő (T) és a frekvencia (f) közötti kapcsolatot bemutató grafikon, ahol a periódusidő az időtartamot jelöli, amely alatt a test egy teljes körmozgást végez.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A hinta lengése a gravitáció és a visszatérítő erő hatására jön létre.",
+       "heading": "Lengés",
+       "description": "Egy hinta lengésének vázlata, amely bemutatja a hinta legmagasabb és legalacsonyabb pontját, valamint az amplitúdót (A), azaz a legnagyobb kitérést a nyugalmi helyzettől.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A fordulatszám azt mutatja meg, hogy egy test hányszor fordul meg egy időegység alatt.",
+       "heading": "Fordulatszám",
+       "description": "Egy diagram, amely a fordulatszám (n) mértékét mutatja be, például egy kerék forgásának számát időegységenként. A fordulatszám mértékegysége 1/s vagy RPM, és a körmozgás sebességét jellemzi.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az amplitúdó a lengés maximum kitérése, ami befolyásolja a mozgás dinamikáját.",
+       "heading": "Amplitúdó",
+       "description": "Egy keresztmetszeti ábra, amely bemutatja a lengés amplitúdóját a nyugalmi helyzethez viszonyítva, kiemelve a legmagasabb és legalacsonyabb pontokat.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A hosszabb hinta hosszabb periódusidőt eredményez, míg a gravitációs gyorsulás növelése csökkenti azt.",
+       "heading": "Periódusidőt befolyásoló tényezők",
+       "description": "Egy grafikon, amely bemutatja, hogyan befolyásolja a lengés periódusidőjét a hinta hosszúsága és a gravitációs gyorsulás.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A Föld mozgásai alapvető fontosságúak az időszámítás szempontjából.",
+       "heading": "Föld mozgási periódusai",
+       "description": "Egy diagram, amely a Föld különböző mozgásait mutatja be, például a Föld tengely körüli forgását és a Nap körüli keringését, valamint ezek periódusait.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az egyszerű gépek segítenek az erőátvitelben, csökkentve a szükséges erőt a munkavégzéshez.",
+       "heading": "Háztartási eszközök erőátvitele",
+       "description": "Egy vázlat, amely bemutat egy egyszerű gépet, például egy emelőt, és az erőátvitel mechanizmusát, kiemelve az erők viszonyát.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "4968b8ab-cd2a-428a-9b17-7a7428eafbec",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A körmozgások és lengések jelenségei megtalálhatók például a hinták és az autók kanyarodásakor, ahol a mozgás dinamikáját tapasztalhatjuk.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Mozgás a mindennapokban",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "e654ce60-ace9-4369-9ffc-d6573ff5736a",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az az időtartam, amely alatt egy teljes körmozgást végez a test.",
+        "B) Az a távolság, amit a test egy körmozgás során megtesz.",
+        "C) Az a sebesség, amellyel a test mozog körpályán.",
+        "D) Az a súly, ami a testet határozza meg."
+       ],
+       "question": "Mi a periódusidő (T) definíciója?",
+       "explanation": "A periódusidő (T) az az időtartam, amely alatt egy teljes körmozgást végez a test.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 1/s vagy RPM",
+        "B) m/s",
+        "C) N",
+        "D) J"
+       ],
+       "question": "Mi a fordulatszám (n) mértékegysége?",
+       "explanation": "A fordulatszám (n) mértékegysége 1/s vagy RPM, amely a másodpercenkénti fordulatok számát jelenti.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hinta hosszúsága és a gravitációs gyorsulás.",
+        "B) A hinta színe.",
+        "C) A hinta anyaga.",
+        "D) A hinta súlya."
+       ],
+       "question": "Mi befolyásolja a hinta periódusidőjét?",
+       "explanation": "A hinta periódusidőjét a hinta hosszúsága és a gravitációs gyorsulás befolyásolja.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A legnagyobb eltérés a nyugalmi helyzettől.",
+        "B) A lengés sebessége.",
+        "C) A lengés időtartama.",
+        "D) A lengés iránya."
+       ],
+       "question": "Mi az amplitúdó (A) a lengéseknél?",
+       "explanation": "Az amplitúdó (A) a legnagyobb eltérés a nyugalmi helyzettől, amely megmutatja a lengés kiterjedését.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A lengés iránya.",
+        "B) A hinta hossza.",
+        "C) A gravitációs gyorsulás.",
+        "D) A lengés tömege."
+       ],
+       "question": "Melyik tényező NEM befolyásolja a periódusidőt?",
+       "explanation": "A lengés iránya nem befolyásolja a periódusidőt, míg a hinta hossza és a gravitációs gyorsulás igen.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "306e0d67-5157-4fe1-9da0-61d17ca9cf58",
+   "title_hu": "Egyensúly és alakváltozások",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "834bb44f-4fb6-45e2-a085-5a62df9d1bde",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A polcon nyugvó könyv nem esik le, mert egyensúlyban van. Az egyensúly azt jelenti, hogy a könyv súlyát egyenlő mértékben ellensúlyozza a polcra gyakorolt nyomás. Ha a könyv elmozdul, például ha megpróbáljuk megfogni, a súlypontja megváltozik. Ha a súlypont a támaszpont (polc) fölött marad, a könyv nem esik le. Ez a jelenség a mindennapi életünkben is gyakran megfigyelhető, például amikor egy poharat egy asztal szélén egyensúlyozunk.",
+       "type": "text",
+       "heading": "Miért nem esik le a könyv a polcról?",
+       "key_term": "egyensúly"
+      },
+      {
+       "body": "A rugalmas alakváltozás során a test visszatér eredeti formájába, ha a rá ható erő megszűnik. Például, ha egy gumilabdát megnyomunk, az visszaugrik az eredeti formájába, miután elengedjük. Ezzel szemben a rugalmatlan alakváltozás során a test nem tér vissza az eredeti formájába, mint amikor egy fém drótot meghajlítunk, és az megmarad a hajlított állapotában. Ezek a jelenségek a mindennapi életben is megfigyelhetők, például egy mobiltelefon tokjának anyagában.",
+       "type": "text",
+       "heading": "Rugalmas és rugalmatlan alakváltozások",
+       "key_term": "rugalmas alakváltozás"
+      },
+      {
+       "body": "Az egyensúly megértéséhez fontos tudni, hogy a testek stabilitása függ a súlypont és a támaszpont helyzetétől. Ha a súlypont alacsonyan van, mint például egy széles alapú vázában, az stabilabb. Ezzel szemben egy keskenyebb alapon álló vázát könnyebb felborítani. A mai világban, például egy elektromos roller tervezésénél is figyelembe kell venni a súlypont helyzetét, hogy biztonságos és stabil legyen a használata.",
+       "type": "text",
+       "heading": "Az egyensúly feltételei",
+       "key_term": "egyensúly"
+      },
+      {
+       "body": "A szilárd anyagok belső szerkezete atomok, molekulák és kristályrácsok összekapcsolódásából áll. Gondoljunk például a jégre: a vízmolekulák rendezett formában helyezkednek el, ami szilárd állapotot ad. Ezt a struktúrát láthatjuk, amikor jégkockát készítünk a fagyasztóban. A jégkockák belső szerkezete befolyásolja a hővezetést és az olvadási pontot, ami fontos tényező a hűtőberendezések működésében.",
+       "type": "text",
+       "heading": "Szilárd anyagok belső szerkezete",
+       "key_term": ""
+      },
+      {
+       "body": "Arkhimédész híres mondása, miszerint 'Adjatok nekem egy támaszt, és én megmozdítom a Földet', a víz egyensúlyi helyzetével is összefügg. Amikor egy test vízbe merül, az általa kiszorított víz súlya egyenlő azzal a felhajtóerővel, ami megakadályozza, hogy a test elsüllyedjen. Ezt a jelenséget sokan tapasztalják, amikor a fürdőkádban ülnek, és a víz szintje megemelkedik. Ezért fontos, hogy a víz és a testek közötti kölcsönhatást megértsük.",
+       "type": "text",
+       "heading": "Arkhimédész és a víz",
+       "key_term": ""
+      },
+      {
+       "body": "Az alakváltozások mindennapi életünkből ismertek, például amikor egy gumiszalagot megnyújtunk. A gumiszalag rugalmas alakváltozáson megy keresztül, és ha elengedjük, visszatér az eredeti formájába. Ezzel szemben, ha egy műanyag palackot összenyomunk, az rugalmatlan alakváltozást szenved el, és nem tér vissza az eredeti állapotába. Ezek a jelenségek segítenek megérteni a különböző anyagok viselkedését.",
+       "type": "text",
+       "heading": "Alakváltozások a mindennapokban",
+       "key_term": "rugalmas alakváltozás"
+      }
+     ]
+    },
+    {
+     "block_id": "6a3f251d-dee5-4fb2-b4fb-4640e3751367",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy tizenéves a konyhában áll, és elhatározza, hogy elkészít egy gyors ételt az indukciós főzőlapon. Felkapcsolja a főzőlapot, amely azonnal reagál a serpenyőre helyezett edényre. Az edény alatt a főzőlap mágneses mezőt hoz létre, amely a serpenyő fémes anyagát felmelegíti.",
+       "type": "story",
+       "heading": "Az indukciós főzőlap bekapcsolása"
+      },
+      {
+       "body": "Ahogy a serpenyő felmelegszik, az anyag hőtágulásnak indul. A fém atomjai egyre gyorsabban mozognak, és ezáltal az edény egy kicsit kitágul. Ez a rugalmas alakváltozás azt jelenti, hogy az edény vissza tud térni eredeti formájába, ha a hőmérséklet csökken.",
+       "type": "story",
+       "heading": "A hőmérséklet emelkedése és az edény deformációja"
+      },
+      {
+       "body": "Miközben az étel sül, a serpenyő stabilan áll a főzőlapon. Az edény súlyának és a főzőlap által kifejtett egyensúlyi erők miatt nem dől el. Ez az egyensúlyi állapot azt mutatja, hogy a súlypont a megfelelő helyen van, így az edény nem borul fel.",
+       "type": "story",
+       "heading": "Az étel elkészítése és a serpenyő stabilitása"
+      },
+      {
+       "body": "Miután az étel elkészült, a tizenéves kikapcsolja a főzőlapot. Az edény elkezd lehűlni, és a fém atomjai ismét lassabban mozognak. A rugalmas alakváltozás révén az edény visszanyeri eredeti formáját, és a hőmérséklet csökkenésével a hőtágulás hatása megszűnik.",
+       "type": "story",
+       "heading": "Az étel elkészülte és az edény lehűlése"
+      },
+      {
+       "body": "A tizenéves óvatosan leveszi az edényt a főzőlapról. Mivel a főzőlap és az edény közötti egyensúlyi állapotot a hőmérséklet és a súlypontok egyensúlya biztosította, az edény nem csúszott le, és a tizenéves biztonságosan tudta használni a készüléket.",
+       "type": "story",
+       "heading": "Az edény eltávolítása és a biztonságos használat"
+      }
+     ]
+    },
+    {
+     "block_id": "ed28c022-eded-470d-a627-3d53787e137e",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A könyv egyensúlyi helyzete a vízszintes felületen.",
+       "heading": "Egyensúlyi helyzet",
+       "description": "Egy test (például egy könyv) egy vízszintes felületen áll. A test súlyvonala a felületre merőlegesen, a test középpontján keresztül halad, így a test egyensúlyban van.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Stabil és instabil egyensúlyi állapotok.",
+       "heading": "Egyensúlyi állapotok",
+       "description": "Kétféle egyensúlyi állapot létezik: stabil (a test visszatér az egyensúlyi helyzetbe, ha elmozdítják) és instabil (a test elmozdul az egyensúlyi helyzetből, ha elmozdítják).",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Rugalmas alakváltozás: a gumi labda deformációja.",
+       "heading": "Rugalmas alakváltozás",
+       "description": "Egy gumi labda deformálódik, amikor megnyomjuk, de visszatér eredeti alakjához, ha elengedjük. A grafikon a nyomás és a deformáció közötti viszonyt mutatja.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Rugalmatlan alakváltozás: az agyag tartós deformációja.",
+       "heading": "Rugalmatlan alakváltozás",
+       "description": "Egy agyagdarab formálása során az agyag tartósan megváltoztatja alakját, és nem tér vissza eredeti állapotába. A diagram bemutatja a deformációt és a végső alakot.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A szilárd anyagok belső szerkezete: kristályos és amorf anyagok.",
+       "heading": "A szilárd anyagok belső szerkezete",
+       "description": "A keresztmetszet ábrázolja a szilárd anyagok belső szerkezetét, például a kristályos és amorf anyagok különbségét, valamint a részecskék elrendeződését.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Arkhimédész gépei: a mechanika alapelvei.",
+       "heading": "Arkhimédész és gépei",
+       "description": "Egy rajz Arkhimédész híres gépeiről, például a csiga és a karos emelő, amelyek segítettek megérteni az egyensúly és a mechanika alapelveit.",
+       "visual_type": "rajz"
+      }
+     ]
+    },
+    {
+     "block_id": "f0263d78-8281-4203-9639-d3d4c9bc4142",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A felhajtóerő jelensége a hajók és vízi járművek tervezésénél és működésénél is alapvető fontosságú, hiszen ezeknek a járműveknek a vízben való egyensúlyát és stabilitását biztosítja.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 20,
+          "w": 100,
+          "x": 50,
+          "y": 200,
+          "type": "box"
+         },
+         {
+          "x": 70,
+          "y": 220,
+          "text": "Test",
+          "type": "label"
+         },
+         {
+          "r": 20,
+          "x": 150,
+          "y": 200,
+          "type": "circle"
+         },
+         {
+          "x": 145,
+          "y": 185,
+          "text": "Folyadék",
+          "type": "label"
+         },
+         {
+          "x1": 150,
+          "x2": 150,
+          "y1": 220,
+          "y2": 250,
+          "type": "arrow"
+         },
+         {
+          "x": 155,
+          "y": 240,
+          "text": "Felhajtóerő",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Egyensúly és alakváltozások a mindennapokban",
+       "discovery": "Arkhimédész (Kr. e. 287-212) a híres „Eureka!” kiáltásáról ismert, amikor felfedezte a folyadékba merített testekre ható felhajtóerőt. Ezt a felfedezést egy fürdőkádban tett kísérlet során tapasztalta, amikor észrevette, hogy a víz szintje megemelkedik, ahogy a testét belemerítette. Ez a jelenség a test térfogatának és a folyadék sűrűségének arányával kapcsolatos, és a testek egyensúlyának megértésében is kulcsszerepet játszik.",
+       "try_basic": "Készíts egy egyszerű kísérletet: tölts meg egy tálat vízzel, és meríts bele egy kisméretű, könnyű tárgyat (pl. labdát). Figyeld meg, hogy a víz szintje megemelkedik, és tapasztald meg a felhajtóerőt!",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "2956d0ac-7703-4af1-a9c3-ead5e963971f",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A test nem mozog, és az összes rá ható erő egyensúlyban van.",
+        "B) A test folyamatosan mozog.",
+        "C) A test csak akkor van egyensúlyban, ha nincs rá ható erő.",
+        "D) Az egyensúly mindig instabil."
+       ],
+       "question": "Mi az egyensúly (equilibrium) állapota egy test számára?",
+       "explanation": "Egy test egyensúlyban van, ha a rá ható erők összege nulla, így nem mozog.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mert a gravitáció és az asztal felhajtóereje egyensúlyban van.",
+        "B) Mert a könyv nagyon nehéz.",
+        "C) Mert az asztal stabil.",
+        "D) Mert a könyv lapos."
+       ],
+       "question": "Miért nem esik le egy jól kiegyensúlyozott könyv az asztalról?",
+       "explanation": "A könyv nem esik le, mert a gravitációs erő és az asztal által kifejtett normál erő egyensúlyban tartja.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Egy gumi labda összenyomása.",
+        "B) Egy üveg törése.",
+        "C) Egy fém rúd hajlítása, ami eltörik.",
+        "D) Egy kődarab feldarabolása."
+       ],
+       "question": "Melyik példa mutat rugalmas alakváltozást?",
+       "explanation": "A gumi labda összenyomása rugalmas alakváltozást jelent, mert a labda visszaáll eredeti formájába.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A test véglegesen megváltoztatja alakját.",
+        "B) A test visszatér eredeti alakjába.",
+        "C) A test nem változtatja meg alakját.",
+        "D) A test csak ideiglenesen változik."
+       ],
+       "question": "Milyen alakváltozást jelent a rugalmatlan alakváltozás?",
+       "explanation": "A rugalmatlan alakváltozás során a test véglegesen megváltoztatja az alakját, például egy törés következtében.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Szoros és rendezett elhelyezkedésű részecskék.",
+        "B) Szabadon mozgó részecskék.",
+        "C) Gáz halmazállapotú részecskék.",
+        "D) Folyékony halmazállapotú részecskék."
+       ],
+       "question": "Milyen a szilárd anyagok belső szerkezete?",
+       "explanation": "A szilárd anyagok részecskéi szoros és rendezett elhelyezkedésűek, ami stabilitást és alakot ad számukra.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "47938c74-8f89-4310-ab51-bd8da0e39f0a",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) p = m * v",
+      "B) p = F * t",
+      "C) p = E * t",
+      "D) p = m / v"
+     ],
+     "question": "Mi a lendület (p) képlete?",
+     "explanation": "A lendület a tömeg (m) és a sebesség (v) szorzataként határozható meg.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Két autó ütközése",
+      "B) Egy labda elhajítása",
+      "C) Egy rakéta kilövése",
+      "D) Egy hinta lengése"
+     ],
+     "question": "Melyik helyzetben figyelhető meg a lendület megmaradása?",
+     "explanation": "Az ütközés során a rendszer lendülete megmarad, ha nem hat rá külső erő.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A levegő kiáramlása előre mozdítja a rakétát.",
+      "B) A rakéta csak lefelé mozog.",
+      "C) A rakéta nem igényel üzemanyagot.",
+      "D) A rakéta nem tud elindulni."
+     ],
+     "question": "Mi jellemzi a léggömb-rakétát a Newton harmadik törvénye alapján?",
+     "explanation": "A rakéta mozgása a kiáramló levegő visszahatásának következménye, ami előre tolja.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A test tömege és a hossza",
+      "B) A test sebessége és a súlya",
+      "C) A test hossza és a gravitációs gyorsulás",
+      "D) A test alakja és a szélsebesség"
+     ],
+     "question": "Milyen tényezők befolyásolják a körmozgás periódusidőjét?",
+     "explanation": "A periódusidő a hossztól és a gravitációs gyorsulástól függ, például egy hintánál.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Mert a gravitáció nem hat rá.",
+      "B) Mert az asztal felhajtóereje egyensúlyban van a gravitációs erővel.",
+      "C) Mert a könyv nagyon könnyű.",
+      "D) Mert az asztal nagyon magas."
+     ],
+     "question": "Miért nem esik le a nyugvó test, például egy könyv az asztalon?",
+     "explanation": "A könyv nem esik le, mert az asztal felhajtóereje pontosan kompenzálja a gravitációs erőt.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Egy gumi labda összenyomása",
+      "B) Egy üveg törése",
+      "C) Egy fém hajlítása",
+      "D) Egy papír szakadása"
+     ],
+     "question": "Melyik példa mutat rugalmas alakváltozást?",
+     "explanation": "A gumi labda visszanyeri eredeti formáját, amikor a nyomást megszüntetjük; ez rugalmas alakváltozás.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A test visszanyeri eredeti alakját.",
+      "B) A test véglegesen deformálódik.",
+      "C) A test nem változik meg.",
+      "D) A test csak egy irányban deformálódik."
+     ],
+     "question": "Mi jellemzi a rugalmatlan alakváltozást?",
+     "explanation": "A rugalmatlan alakváltozás során a test véglegesen elveszíti eredeti alakját.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) A részecskék szabadon mozognak.",
+      "B) A részecskék szorosan, de rendezetlenül helyezkednek el.",
+      "C) A részecskék rendezetten, de távol helyezkednek el egymástól.",
+      "D) A részecskék szorosan és rendezetten helyezkednek el."
+     ],
+     "question": "Melyik állítás igaz a szilárd anyagok belső szerkezetére?",
+     "explanation": "A szilárd anyagok részecskéi szorosan és rendezetten helyezkednek el, ami stabilitást ad nekik.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

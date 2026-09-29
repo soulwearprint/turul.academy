@@ -1,0 +1,1301 @@
+{
+ "nat_id": "PHYS-78-10",
+ "topic_id": "53abdc51-3518-4167-bff7-bd41c94795e3",
+ "title_hu": "Égi jelenségek megfigyelése és magyarázata",
+ "grade": 8,
+ "lessons": [
+  {
+   "lesson_id": "eb2703bc-ff30-41c7-bf4d-6363e011abab",
+   "title_hu": "A Nap és a Föld-Hold rendszer",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "86a4e61b-7392-4209-86ca-b7e8150e5e5b",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A Nap a Föld legfontosabb energiaforrása, és hatalmas mérete miatt a Naprendszer középpontjában helyezkedik el. Átmérője körülbelül 1,4 millió kilométer, ami a Föld átmérőjének körülbelül 109-szerese. A Nap hőmérséklete a felszínén körülbelül 5500 °C, míg a magjában elérheti a 15 millió °C-ot. Ez a hatalmas hőmérséklet a nukleáris fúzió folyamatából származik, ahol a hidrogénatomok héliumatomokká alakulnak, és közben óriási mennyiségű energia szabadul fel.",
+       "type": "text",
+       "heading": "A Nap fizikai jellemzői",
+       "key_term": "Nap"
+      },
+      {
+       "body": "A Nap energiájának forrása a nukleáris fúzió, amely során a hidrogénatomok egyesülnek, és héliumot képeznek. E folyamat során hatalmas mennyiségű energia szabadul fel, ami a Nap fényét és hőjét biztosítja. Ez az energia eljut a Földre, és életet ad a bolygónkon. Gondoljunk csak arra, hogy a napfény nélkül nem lenne fotoszintézis, ami az élelmiszerlánc alapját képezi.",
+       "type": "text",
+       "heading": "A Nap energiájának forrása",
+       "key_term": "nukleáris fúzió"
+      },
+      {
+       "body": "A Föld a Nap körül elliptikus pályán mozog, amelynek keringési ideje körülbelül 365,25 nap. Ez a mozgás határozza meg az évszakok váltakozását. Például, amikor a Föld északi féltekéje a Nap felé dől, ott nyár van, míg a déli féltekén tél. Ez a jelenség könnyen megfigyelhető, amikor a nyári napfordulón hosszabbak a nappalok, míg télen rövidebbek.",
+       "type": "text",
+       "heading": "A Föld Nap körüli mozgása",
+       "key_term": "Föld Nap körüli mozgása"
+      },
+      {
+       "body": "A Hold a Föld körül kering, és egy teljes keringése körülbelül 27,3 napig tart. Ez a mozgás okozza a különböző holdfázisokat, amelyeket mindenki megfigyelhet. Amikor a Hold a Föld és a Nap között helyezkedik el, napfogyatkozás történik. Ezt a jelenséget a távcsövek segítségével is csodálhatjuk, hiszen a Hold és a Nap elhelyezkedése lenyűgöző látványt nyújt.",
+       "type": "text",
+       "heading": "A Hold Föld körüli mozgása",
+       "key_term": "Hold Föld körüli mozgása"
+      },
+      {
+       "body": "Kopernikusz felismerései forradalmasították a világképet, amikor megállapította, hogy a Föld a Nap körül kering, nem pedig fordítva. Kepler továbbfejlesztette ezt az elméletet, és megfogalmazta a bolygók mozgásának törvényeit. Ezek a felfedezések segítettek megérteni a Naprendszer működését, és alapjaivá váltak a modern asztronómiának. Az ő munkájuk nélkül ma valószínűleg nem értenénk a csillagászat alapjait.",
+       "type": "text",
+       "heading": "Kopernikusz és Kepler felismerései",
+       "key_term": "Kopernikusz, Kepler"
+      },
+      {
+       "body": "A Hold fázisai a Földről nézve a Hold világításának változását jelentik. A telihold, újhold és a félhold mind-mind különböző helyzetekben jönnek létre, attól függően, hogy a Nap, a Föld és a Hold hogyan helyezkedik el egymáshoz képest. Ezeket a fázisokat könnyedén megfigyelhetjük esténként, amikor a Hold az égen látható. A Hold fázisai nemcsak gyönyörű látványt nyújtanak, hanem a tengeráramlatokra is hatással vannak.",
+       "type": "text",
+       "heading": "Holdfázisok",
+       "key_term": "holdfázis"
+      },
+      {
+       "body": "A napfogyatkozás és a holdfogyatkozás olyan különleges égi jelenségek, amelyek akkor következnek be, amikor a Föld, a Hold és a Nap egy vonalba kerülnek. Napfogyatkozás esetén a Hold eltakarja a Napot, míg holdfogyatkozáskor a Föld árnyéka borítja be a Holdat. Ezek a jelenségek különösen látványosak, és sokan gyűjtik az élményeket, amikor ilyen események történnek.",
+       "type": "text",
+       "heading": "Fogyatkozások",
+       "key_term": "fogyatkozás"
+      }
+     ]
+    },
+    {
+     "block_id": "0a0ec150-c3b8-440c-a7f6-9f723ebb44d0",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Mikor a reggel első fényei megjelennek, a Nap (csillag) fénye eléri a Földet. A Nap energiája a magfúzió (fizikai jellemzői) folyamata során keletkezik, ahol a hidrogénatomok héliummá alakulnak, hatalmas mennyiségű hőt és fényt kibocsátva. Ekkor a Föld egy gömb alakú test, amely a Nap körül kering, és a Nap fénye megvilágítja a felszínét.",
+       "type": "story",
+       "heading": "A napfelkeltével kezdődik a csoda"
+      },
+      {
+       "body": "Ahogy a Nap fénye eléri a Földet, a Föld elkezd mozogni a Nap körüli pályáján. Ez a mozgás nem csupán egyszerű körforgás, hanem ellipszis pályán történik, ahogy Kepler törvényei megmutatták. A Föld ezen mozgása határozza meg az évszakokat és a nappalokat, éjszakákat. A Föld forgása a saját tengelye körül is folytatódik, ami a nappali és éjszakai ciklusokat eredményezi.",
+       "type": "story",
+       "heading": "A Föld mozgása a Nap körül"
+      },
+      {
+       "body": "Miközben a Föld a Nap körül kering, a Hold (természetes műhold) a Föld körül kering. A Hold fázisai, mint a telihold és újhold, a Föld és a Nap helyzetének változása miatt alakulnak ki. Ezek a fázisok a Hold világításának változását jelentik, ahogy a Föld és a Hold helyzete eltérő szögeket hoz létre a Nap fénye felé.",
+       "type": "story",
+       "heading": "A Hold szerepe a Föld körüli mozgásban"
+      },
+      {
+       "body": "A Föld és a Hold közötti mozgások különleges jelenségeket is eredményeznek, mint például a napfogyatkozás (amikor a Hold a Nap és a Föld közé kerül) és a holdfogyatkozás (amikor a Föld a Hold és a Nap közé áll). Kopernikusz és Kepler felfedezései forradalmasították a napközéppontú világképet, amely szerint a Föld nem a világ közepe, hanem a Nap körül kering, így megváltozott az emberek világlátása.",
+       "type": "story",
+       "heading": "Fogyatkozások és a világkép változása"
+      },
+      {
+       "body": "A Hold megfigyelése szabad szemmel vagy távcsővel lehetővé teszi, hogy az emberek jobban megértsék a Föld gömbölyű alakját. A Föld árnyéka a Holdra vetülő fogyatkozások során is bizonyítja ezt a tényt. A modern technológiák, mint a GPS és a műholdas kommunikáció, mind a Föld és a Hold közötti összetett mozgások megértésén alapulnak, amely a Nap és a Föld-Hold rendszer mélyebb megismerését segíti elő.",
+       "type": "story",
+       "heading": "A megfigyelések és a tudományos értelem"
+      }
+     ]
+    },
+    {
+     "block_id": "d1dfbdeb-2db6-4639-9014-18feecfb81fb",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A Nap rétegeinek ábrázolása",
+       "heading": "A Nap fizikai jellemzői",
+       "description": "A Nap rétegeit és azok jellemzőit bemutató diagram, amely tartalmazza a nappályát, a fotoszférát, a kromoszférát és a koronát.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Napelemes fúziós reakciók",
+       "heading": "A Nap energiájának forrása",
+       "description": "Grafikon a Nap belsejében zajló fúziós reakciók energiaforrásairól, bemutatva a hidrogénből hélium képződését és a keletkező energia mennyiségét.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A Föld mozgása a Nap körül",
+       "heading": "A Föld Nap körüli mozgása",
+       "description": "Vázlat, amely bemutatja a Föld elliptikus pályáját a Nap körül, a Föld forgását és a Napra néző szöget.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A Hold mozgása a Föld körül",
+       "heading": "A Hold Föld körüli mozgása",
+       "description": "Diagram, amely ábrázolja a Hold elliptikus pályáját a Föld körül, a Hold fázisait és a Föld-Hold távolság változásait.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A világkép változása Kopernikusz és Kepler felfedezései által",
+       "heading": "Kopernikusz és Kepler világképe",
+       "description": "Idővonal, amely bemutatja Kopernikusz heliocentrikus (napközéppontú) világképének és Kepler ellipszis pályájának felfedezését, valamint ezek hatását a korábbi geocentrikus (Földközéppontú) világképre.",
+       "visual_type": "történeti idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A Hold fázisainak ábrázolása",
+       "heading": "Holdfázisok",
+       "description": "Grafikon a Hold fázisainak változásait bemutató ábrázolás, amely a Hold ciklusait és a Föld-Hold-Nap helyzetét mutatja.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Fogyatkozások bemutatása",
+       "heading": "Fogyatkozások",
+       "description": "Diagram, amely bemutatja a napfogyatkozás és a holdfogyatkozás folyamatát, valamint a Föld, a Hold és a Nap helyzetét a fogyatkozások során.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A Föld gömbölyűségének bizonyítékai",
+       "heading": "A Föld gömbölyűsége",
+       "description": "Vázlat, amely bemutatja a Föld gömbölyűségének bizonyítékait, például a hajók eltűnését a horizont mögött és a Föld árnyékát a holdfogyatkozás során.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "6ab3c1c8-622c-40ce-ad27-f8c309abed2b",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A Hold fázisait a csillagászati alkalmazásokban, mint például a Holdnaptárakban és a csillagászati megfigyelések során használják.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 50,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 180,
+          "y": 140,
+          "text": "Hold",
+          "type": "label"
+         },
+         {
+          "r": 75,
+          "x": 100,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 80,
+          "y": 140,
+          "text": "Föld",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A Hold megfigyelése",
+       "discovery": "Galilei 1609-ben távcsövével részletesen megfigyelte a Hold felszínét, és rávilágított arra, hogy az nem sima, hanem hegyekkel és kráterekkel tarkított, ezzel megkérdőjelezve a korábbi, tökéletes gömbalakú égitestekről alkotott elképzeléseket.",
+       "try_basic": "A diákok szabad szemmel megfigyelhetik a Hold fázisait, és naplózhatják azokat egy hónapon át, hogy lássák a változásokat.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "f75b75f0-006f-4af5-942f-ebe55c813dc4",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A Nap egy gázgömb, amely főként hidrogénből és héliumból áll.",
+        "B) A Nap egy szilárd test, amely főként vasból és nikkelből áll.",
+        "C) A Nap egy folyékony gömb, amely vízből és szénből áll.",
+        "D) A Nap egy üres tér, amelyben nincs anyag."
+       ],
+       "question": "Milyen fő fizikai jellemzője van a Napnak?",
+       "explanation": "A Nap egy gázgömb, amely főként hidrogénből és héliumból áll, és az energiáját a magfúzió révén nyeri.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Kémiai reakciók.",
+        "B) Magfúzió.",
+        "C) Elektromos áram.",
+        "D) Fúziós reakciók."
+       ],
+       "question": "Mi a Nap energiájának fő forrása?",
+       "explanation": "A Nap energiájának fő forrása a magfúzió, amely során a hidrogénatomok egyesülnek héliummá, hatalmas mennyiségű energiát szabadítva fel.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Ellipszis pályán kering.",
+        "B) Körpályán kering.",
+        "C) Visszafelé kering.",
+        "D) Álló helyzetben van."
+       ],
+       "question": "Milyen mozgást végez a Föld a Nap körül?",
+       "explanation": "A Föld ellipszis pályán kering a Nap körül, amelyet Kepler törvényei is leírnak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Csillagfázisok.",
+        "B) Holdfázisok.",
+        "C) Napfázisok.",
+        "D) Évszakok."
+       ],
+       "question": "Milyen fázisai vannak a Holdnak?",
+       "explanation": "A Holdfázisok a Hold megvilágításának változásait jelzik, amelyeket a Föld és a Hold helyzete határoz meg.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) A Föld teljesen eltakarja a Napot.",
+        "B) A Hold eltakarja a Napot a Földről nézve.",
+        "C) A Nap eltakarja a Holdat.",
+        "D) A Föld eltakarja a Holdat."
+       ],
+       "question": "Mi történik napfogyatkozás esetén?",
+       "explanation": "Napfogyatkozáskor a Hold eltakarja a Napot a Földről nézve, így a Nap fénye részben vagy teljesen nem látható.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "0c539871-eb11-4393-b50e-f39c777ca5bd",
+   "title_hu": "Égi jelenségek megfigyelése",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "c40c3991-6402-4218-b2c0-c792772aaa9c",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A Nap járását megfigyelhetjük, ha egy botot állítunk a földre, amelynek árnyéka a Föld forgásával változik. Reggel a bot árnyéka kelet felé mutat, délben a legkisebb, majd este nyugatra fordul. Ez a jelenség segít az égtájak meghatározásában is. Ha tudod, hogy a Nap hol kel és hol nyugszik, könnyen tájékozódhatsz a környezetedben, akár egy kirándulás során is.",
+       "type": "text",
+       "heading": "A Nap járása és az égtájak",
+       "key_term": "Nap járása"
+      },
+      {
+       "body": "A Hold megfigyelése izgalmas és tanulságos élmény. Különböző fázisai – újhold, első negyed, telihold és utolsó negyed – mind más-más képet mutatnak a Holdról. A Hold felszíne kráterekkel és domborzati formákkal teli, amelyeket meteorok ütközései hoztak létre. Ezek a megfigyelések segítenek megérteni, hogy a Hold milyen hatással van a Földre, például a dagály jelenségén keresztül.",
+       "type": "text",
+       "heading": "A Hold megfigyelése",
+       "key_term": "Hold"
+      },
+      {
+       "body": "Galilei a távcsövével figyelte meg a Holdat, és felfedezte annak felszínének részleteit. Megállapította, hogy a Hold nem sima gömb, hanem hegyekkel és völgyekkel teli. E felfedezései forradalmasították a csillagászatot, hiszen bebizonyította, hogy a Hold is éppúgy égitest, mint a Föld. Galilei megfigyelései arra ösztönözték a tudósokat, hogy más égitesteket is alaposabban tanulmányozzanak.",
+       "type": "text",
+       "heading": "Galilei és a Hold megfigyelése",
+       "key_term": "Galilei"
+      },
+      {
+       "body": "A Hold fázisainak megértéséhez fontos tudni, hogy a Nap, a Föld és a Hold helyzete hogyan befolyásolja a látható fényt. Amikor a Hold a Föld és a Nap között helyezkedik el, újholdat látunk. Telihold esetén a Föld a Nap és a Hold között van. Ezek a fázisok nemcsak gyönyörű látványt nyújtanak, hanem a természetes ritmusainkat is befolyásolják, például a tenger árapályát.",
+       "type": "text",
+       "heading": "A Hold fázisai",
+       "key_term": "Hold fázisai"
+      },
+      {
+       "body": "A csillagok megfigyelése nemcsak szórakoztató, hanem tanulságos is. A csillagászat segít megérteni a világegyetem működését és a Föld helyét benne. Az aktuális csillagászati hírek, például új felfedezések vagy űrmissziók, izgalmas beszélgetések alapját képezhetik. E hírek elemzése során a fiatalok ismereteiket bővíthetik és érdeklődésüket növelhetik a tudomány iránt.",
+       "type": "text",
+       "heading": "Csillagok és a csillagászat",
+       "key_term": "csillag"
+      },
+      {
+       "body": "A fény sebessége körülbelül 300 000 km/s, ami azt jelenti, hogy a csillagok fényének eljutása hozzánk időbe telik. Amikor az éjszakai égbolton nézünk csillagokat, valójában a múltjukat látjuk, hiszen a fényük évekig, akár évtizedekig is elérhet hozzánk. Ez a jelenség különösen érdekes, mert megmutatja, hogy a világűr milyen hatalmas, és hogy mennyire kis időegységekben gondolkodunk a mindennapjaink során.",
+       "type": "text",
+       "heading": "A fény véges sebessége",
+       "key_term": "fény sebessége"
+      }
+     ]
+    },
+    {
+     "block_id": "e571032a-47d4-446d-9415-d66133a8045c",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy reggel, amikor a nap első sugarai átszűrődnek az ablakon, az ember felkelt, és az udvarra lép. A nap fényei megnövelik a hőmérsékletet, és a levegőben érezhető a frissesség. Az árnyékok hossza és iránya is megváltozik, ahogy a nap felemelkedik az égen.",
+       "type": "story",
+       "heading": "A nap első fényei"
+      },
+      {
+       "body": "A megfigyelő egy botot helyez a földre, és figyeli, ahogy az árnyék hossza és iránya folyamatosan változik. Ebből következtet arra, hogy a nap a keleti horizonton felkelt, majd a zenithez közel halad. Az árnyék iránya segít neki meghatározni az égtájakat: észak, dél, kelet, nyugat.",
+       "type": "story",
+       "heading": "Az árnyékok titka"
+      },
+      {
+       "body": "Ahogy a nap lenyugszik, a megfigyelő észreveszi a Holdat az égen. Felszíni formáit, krátereit és síkságait figyelve felidézi Galilei felfedezéseit. Galilei távcsövével megfigyelte a Holdat, és rájött, hogy annak felszíne nem sima, hanem hegyek és völgyek tarkítják. Ez a felfedezés megváltoztatta az emberek világképét.",
+       "type": "story",
+       "heading": "A Hold felfedezése"
+      },
+      {
+       "body": "A megfigyelő egy hónapon át figyeli a Holdat, és észreveszi, hogy az folyamatosan változik. A Nap, a Föld és a Hold helyzete határozza meg a Hold fázisait: újhold, növekvő félhold, telihold és fogyó félhold. Ezek a fázisok a Földről nézve eltérő fényviszonyokat eredményeznek, ami lenyűgözi őt.",
+       "type": "story",
+       "heading": "A Hold fázisai"
+      },
+      {
+       "body": "A megfigyelő a csillagok világát is felfedezi. Minden este a csillagokat nézve a fény véges sebességéről beszélget a barátaival. Rájön, hogy a csillagok fénye, amit lát, sok éves utazás után érkezett el hozzá. Ez a tudományos megértés új értelmet ad az éjszakai égbolt szépségének.",
+       "type": "story",
+       "heading": "Csillagászat és tudomány"
+      }
+     ]
+    },
+    {
+     "block_id": "25c34dce-3fdb-4738-b7fc-5b44a7fe7af3",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A Nap járása a Föld tengelye körüli forgásának függvényében.",
+       "heading": "A Nap járása",
+       "description": "Egy egyszerű diagram, amely bemutatja a Föld és a Nap helyzetét a nap folyamán. A diagramon látható a Föld tengely körüli forgása és a Nap járása az égen.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Égtájak meghatározása egy iránytű segítségével.",
+       "heading": "Égtájak meghatározása",
+       "description": "Egy vázlat, amelyen a négy fő égtáj (Észak, Dél, Kelet, Nyugat) és azok irányai láthatók, egy iránytű segítségével.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A Hold felszíni formái és jellemzői.",
+       "heading": "A Hold felszíne",
+       "description": "A Hold felszíni formáit ábrázoló grafikon, amely bemutatja a krátereket, hegyeket és síkságokat. A különböző képződmények nevei is feltüntetve vannak.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Galilei teleszkópja és a Hold megfigyelése.",
+       "heading": "Galilei Hold megfigyelése",
+       "description": "Egy keresztmetszet, amely Galilei teleszkópjának felépítését és a Hold megfigyelésének folyamatát mutatja be, a teleszkóp lencséjével és a megfigyelt Hold képeivel.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A Hold fázisainak magyarázata a Nap és a Föld helyzete alapján.",
+       "heading": "A Hold fázisai",
+       "description": "Egy diagram, amely bemutatja a Hold fázisait (újhold, növekvő hold, telihold, fogyó hold) a Nap, Föld, Hold helyzete alapján.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Csillagok eloszlása és csillagképek az éjszakai égbolton.",
+       "heading": "Csillagok az égen",
+       "description": "Egy egyszerű vázlat, amely a csillagok eloszlását és a csillagképeket mutatja be az éjszakai égbolton.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A fény véges sebessége és a csillagos ég látványa.",
+       "heading": "A fény sebessége",
+       "description": "Egy grafikon, amely a fény sebességét és annak hatását a csillagok távolságára és megfigyelésére mutatja be, a távolság és idő összefüggésével.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "7e964583-b08d-4228-86ec-e3db4a8d865f",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A fénysebesség megértése fontos a modern technológiákban, például a GPS-rendszerekben, ahol a pontos időmérés elengedhetetlen a helymeghatározáshoz.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 50,
+          "x": 100,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 90,
+          "y": 140,
+          "text": "Io",
+          "type": "label"
+         },
+         {
+          "r": 50,
+          "x": 300,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 290,
+          "y": 140,
+          "text": "Jupiter",
+          "type": "label"
+         },
+         {
+          "x1": 150,
+          "x2": 250,
+          "y1": 150,
+          "y2": 150,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x": 200,
+          "y": 130,
+          "text": "Fény útja",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Fénysebesség és csillagászat",
+       "discovery": "A fénysebesség véges voltának felfedezése 1676-ban történt, amikor Ole Rømer dán csillagász megfigyelte a Jupiter egyik holdjának, Io-nak az eltűnését és megjelenését. Rømer észrevette, hogy az Io megfigyelésének időpontja változik a Föld-Jupiter távolság függvényében, ami arra utalt, hogy a fény nem azonnal érkezik el hozzánk, hanem egy bizonyos időt vesz igénybe az út megtételére. Ezzel a felfedezéssel megoldotta a csillagászati mérések pontossági problémáját, és megalapozta a fénysebesség méréseinek tudományát.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "33c7758d-29e7-4822-993e-000770a04b65",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A Nap reggel keleten kel és este nyugaton nyugszik.",
+        "B) A Nap minden évben ugyanazon az égtájon kel fel.",
+        "C) A Nap csak télen látható az égen.",
+        "D) A Nap fénye mindig egyenletesen oszlik el az égen."
+       ],
+       "question": "Hogyan határozhatjuk meg az égtájakat a Nap járásának megfigyelésével?",
+       "explanation": "A Nap reggel keleten kel és este nyugaton nyugszik, ami segít meghatározni az égtájakat.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Kráterek és tengerek.",
+        "B) Fák és hegyek.",
+        "C) Óceánok és folyók.",
+        "D) Felhők és csillagok."
+       ],
+       "question": "Milyen felszíni formák láthatók a Holdon?",
+       "explanation": "A Hold felszíne kráterekből és tengerekből áll, amelyek a meteorok becsapódása miatt keletkeztek.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Távcső segítségével.",
+        "B) Csillagászati térkép használatával.",
+        "C) Személyes megfigyelés révén.",
+        "D) Kísérletek elvégzésével."
+       ],
+       "question": "Milyen módszerrel figyelte meg Galilei a Holdat?",
+       "explanation": "Galilei távcsövet használt a Hold megfigyelésére, amely lehetővé tette a felszíni formák részletesebb tanulmányozását.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Újhold, első negyed, telihold, utolsó negyed.",
+        "B) Fényes, sötét, felhős, csillagos.",
+        "C) Napfényes, esős, szeles, havas.",
+        "D) Kék, zöld, piros, sárga."
+       ],
+       "question": "Mik a Hold fázisai?",
+       "explanation": "A Hold fázisai az újhold, első negyed, telihold és utolsó negyed, amelyek a Föld, a Nap és a Hold helyzete alapján alakulnak ki.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Égő gázgömb, amely saját fényt bocsát ki.",
+        "B) Földi anyag, amely visszaveri a napfényt.",
+        "C) Mesterséges égitest, amely az űrben kering.",
+        "D) A Hold egy fázisa."
+       ],
+       "question": "Mi a csillag?",
+       "explanation": "A csillag egy égő gázgömb, amely saját fényt bocsát ki, és a világűrben található.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "389f1248-c419-4520-9440-f8e5b03dd57e",
+   "title_hu": "Bolygók és csillagok",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "b816cc72-cd2e-4b4f-8fed-fabafc690a32",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A Föld típusú bolygók, mint a Föld, a Mars és a Vénusz, szilárd felszínnel rendelkeznek, és viszonylag kisebbek, mint az óriásbolygók. Ezek a bolygók a Nap körül keringenek, és légkörük is van, ami lehetővé teszi az életet, mint ahogy azt a Földön is tapasztaljuk. Az óriásbolygók, például a Jupiter és a Szaturnusz, hatalmas méretekkel bírnak, és főként gázokból állnak, ami megkülönbözteti őket a Föld típusú bolygóktól. A Jupiter a legnagyobb bolygó a Naprendszerben, és hatalmas viharairól, például a Nagy Vörös Foltról ismert.",
+       "type": "text",
+       "heading": "Föld típusú bolygók és óriásbolygók",
+       "key_term": "földtípusú bolygó, óriásbolygó"
+      },
+      {
+       "body": "A csillagok, mint például a Nap, hatalmas gázgömbök, amelyek fúziós reakciók révén termelnek energiát. A csillagok fénye és hője a magjukban zajló nukleáris fúzióból származik, amely során hidrogénből hélium keletkezik. A csillagok látszólagos mozgása az égen a Föld forgásának és keringésének következménye. A legismertebb csillagképek, mint az Orion vagy a Nagy Medve, segítenek az éjszakai égbolt tájékozódásában.",
+       "type": "text",
+       "heading": "A csillagok sajátosságai",
+       "key_term": "csillag"
+      },
+      {
+       "body": "A bolygók és csillagok közötti fő különbség abban rejlik, hogy a csillagok saját fényt bocsátanak ki, míg a bolygók csak a csillagok fényét verik vissza. Amikor az éjszakai égbolton nézünk fel, a bolygók, mint a Vénusz vagy a Mars, gyakran fényesebbek, mint a legtöbb csillag. Egy egyszerű példa: ha egy csillagot észlelünk, az lehet, hogy egy távoli nap, míg a Vénusz, mint bolygó, az égen ragyogóbb pontként tűnik fel, mivel a Nap fényét visszaveri.",
+       "type": "text",
+       "heading": "Bolygók és csillagok megkülönböztetése",
+       "key_term": "bolygó, csillag"
+      },
+      {
+       "body": "A Tejútrendszer, amely a mi galaxisunk, egy hatalmas spirálgalaxis, amely milliárdnyi csillagot, bolygót és egyéb égi objektumot tartalmaz. A galaxisok, mint a Tejútrendszer, különböző formákban léteznek, például elliptikus vagy spirális alakban. Az éjszakai égbolton a Tejútrendszer látható sávja a csillagok tömegének köszönhetően egy különleges látványt nyújt. A galaxisok közötti távolságok óriásiak, és az univerzumban számos más galaxis is található, mint például az Androméda, amely a legközelebbi spirális galaxis a Földhöz.",
+       "type": "text",
+       "heading": "A Tejútrendszer és galaxisok",
+       "key_term": "galaxis"
+      },
+      {
+       "body": "A fekete lyukak olyan égi objektumok, amelyek annyira sűrűek, hogy gravitációs mezőjükből még a fény sem tud elmenekülni. Ezek általában csillagok életciklusának végén alakulnak ki, amikor a csillag összeomlik. A fekete lyukak körüli téridő torzulása érdekes jelenségeket okoz, mint például az idő lassulását. A fekete lyukak felfedezése segít megérteni az univerzum működését, és a modern fizika határainak feszegetésére ösztönöz.",
+       "type": "text",
+       "heading": "Fekete lyukak és az univerzum titkai",
+       "key_term": "fekete lyuk"
+      },
+      {
+       "body": "Képzeld el, hogy űrturistaként a Naprendszerbe utazol! Az űrhajók most már elérhetik a Marsot, ahol felfedezheted a vörös bolygó felszínét, vagy akár a Jupiter holdjait, mint a Europa, amelyen vízjég borítja a felszínt. Az űrturizmus lehetőségei izgalmasak, és lehetőséget adnak arra, hogy személyesen tapasztalhassuk meg a bolygók és csillagok csodáit. Az ilyen utazások során a legmodernebb technológiák, például a 3D-s térképek segítenek a tájékozódásban.",
+       "type": "text",
+       "heading": "Űrturizmus: a Naprendszer felfedezése",
+       "key_term": "Naprendszer"
+      },
+      {
+       "body": "A csillagok és bolygók megkülönböztetése fontos része a csillagászatnak. A csillagok saját fényükkel világítanak, mivel hatalmas hőmérsékletű magjukban zajló nukleáris reakciók energiát termelnek. Ezzel szemben a bolygók nem termelnek saját fényt, hanem a csillagok fényét verik vissza. A csillagok látszólagos mozgása az égen a Föld forgásából adódik, míg a bolygók mozgása bonyolultabb, mivel saját pályájukon keringenek a Nap körül. A legfontosabb csillagképek, mint például a Nagy Medve vagy az Orion, segítenek az éjszakai égbolt tájékozódásában.",
+       "type": "text",
+       "heading": "A csillagok és bolygók megkülönböztetése",
+       "key_term": "csillagok és bolygók megkülönböztetése"
+      }
+     ]
+    },
+    {
+     "block_id": "7c3942d6-0db3-43f8-8b62-9f3bc6e45e56",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal néző a város egy csendes pontján áll, és felnéz az éjszakai égboltra. A csillagok fénye ragyog, és az izgalom átjárja, ahogy megpillantja a híres Orion csillagképet. A csillagok nemcsak szépek, hanem különböző fizikai jellemzőik is vannak, amelyek megkülönböztetik őket a bolygóktól.",
+       "type": "story",
+       "heading": "Az éjszakai égbolt felfedezése"
+      },
+      {
+       "body": "Ahogy a néző a csillagok között keresi a bolygókat, észreveszi, hogy néhány fényes pont nem úgy ragyog, mint a csillagok. Ezek a Föld típusú bolygók, mint a Vénusz és a Mars, a Nap körüli pályájukon mozognak, és a Földről nézve látszólagos mozgást végeznek. Ez a mozgás a Föld és a bolygók eltérő sebességéből adódik.",
+       "type": "story",
+       "heading": "A bolygók felfedezése"
+      },
+      {
+       "body": "A néző egy távcsövet használ, hogy jobban megfigyelje a bolygókat. A távcső segítségével felfedezi a Jupiter óriásbolygó sávos felhőit és a gyűrűs Szaturnuszt. Az óriásbolygók hatalmas méretükkel és gázos légkörükkel lenyűgözik, és a néző rájön, hogy ezek az égitestek más fizikai törvények szerint működnek, mint a kisebb Föld típusú bolygók.",
+       "type": "story",
+       "heading": "A Naprendszer csodái"
+      },
+      {
+       "body": "Miközben a néző a csillagképeket figyeli, észreveszi a Tejútrendszert, amely csillagok milliárdjait tartalmazza. A galaxisok, mint a Tejútrendszer, hatalmas égitestek, amelyek gravitációs vonzásukkal egyesítik a csillagokat és más égi objektumokat. A néző csodálkozik, hogy a Tejútrendszerben található fekete lyukak milyen titokzatosak és erőteljesek lehetnek.",
+       "type": "story",
+       "heading": "A Tejútrendszer és a galaxisok"
+      },
+      {
+       "body": "A néző elhatározza, hogy tovább tanulmányozza az égi jelenségeket, és megosztja tapasztalatait barátaival. Az éjszakai égbolt megfigyelése és a bolygók, csillagok, valamint a galaxisok felfedezése nemcsak tudományos izgalmat ad, hanem egy új világot is nyit meg a kíváncsi elme előtt.",
+       "type": "story",
+       "heading": "A felfedezés folytatása"
+      }
+     ]
+    },
+    {
+     "block_id": "bdb0a437-aa50-4389-87a3-87e3d564f1b9",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A Föld típusú bolygók belső szerkezete",
+       "heading": "Föld típusú bolygók",
+       "description": "A Föld típusú bolygók (Merkúr, Vénusz, Föld, Mars) belső felépítésének ábrázolása, amely bemutatja a magot, a köpenyt és a kérget.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Óriásbolygók külső szerkezete és gyűrűi",
+       "heading": "Óriásbolygók",
+       "description": "Az óriásbolygók (Jupiter, Szaturnusz, Uránusz, Neptunusz) külső rétegeinek és gyűrűiknek ábrázolása, kiemelve a gázos összetételt és a méretüket.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Csillagok és bolygók fényessége és mozgása",
+       "heading": "Csillagok és bolygók megkülönböztetése",
+       "description": "Egy grafikon, amely a csillagok és bolygók fényességét és mozgását hasonlítja össze, kiemelve a csillagok állandó fényét és a bolygók változó pozícióját.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A bolygók látszólagos mozgása a Nap körül",
+       "heading": "Látszólagos mozgás",
+       "description": "A Föld és más bolygók mozgásának ábrázolása a Nap körül, bemutatva a látszólagos mozgást az égbolton.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Fontos csillagképek az égbolton",
+       "heading": "Csillagképek",
+       "description": "Néhány fontos csillagkép (pl. Orion, Nagy Medve) elhelyezése az égbolton, kiemelve a csillagok pozícióját és összekötő vonalakat.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A Tejútrendszer szerkezete",
+       "heading": "Tejútrendszer",
+       "description": "A Tejútrendszer szerkezete, bemutatva a galaxis spirálkarjait és a középpontjában található fekete lyukat.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Galaxisok típusai és jellemzőik",
+       "heading": "Galaxisok",
+       "description": "Különböző típusú galaxisok (spirális, elliptikus, szabálytalan) bemutatása és azok jellemzői.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Fekete lyukak és a téridő görbülete",
+       "heading": "Fekete lyukak",
+       "description": "A fekete lyukak körüli téridő görbületének ábrázolása, bemutatva a horizonthoz közeli objektumok mozgását.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "4f181bec-05f3-4a8d-a699-f3c33f6d30c7",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A bolygók és csillagok megfigyelése alapvető az asztronómiában, és ma már sok modern távcső és űrszonda segíti a kutatásokat az égi jelenségek megértésében.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 80,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "r": 10,
+          "x": 120,
+          "y": 80,
+          "type": "circle"
+         },
+         {
+          "r": 10,
+          "x": 240,
+          "y": 80,
+          "type": "circle"
+         },
+         {
+          "r": 10,
+          "x": 160,
+          "y": 220,
+          "type": "circle"
+         },
+         {
+          "r": 10,
+          "x": 240,
+          "y": 220,
+          "type": "circle"
+         },
+         {
+          "x": 190,
+          "y": 150,
+          "text": "Föld",
+          "type": "label"
+         },
+         {
+          "x": 110,
+          "y": 75,
+          "text": "Hold 1",
+          "type": "label"
+         },
+         {
+          "x": 230,
+          "y": 75,
+          "text": "Hold 2",
+          "type": "label"
+         },
+         {
+          "x": 150,
+          "y": 230,
+          "text": "Hold 3",
+          "type": "label"
+         },
+         {
+          "x": 230,
+          "y": 230,
+          "text": "Hold 4",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Bolygók és csillagok megfigyelése",
+       "discovery": "A 16. században Galilei Galilei, a híres olasz csillagász, távcsövet használt először az égi objektumok megfigyelésére. Felfedezte, hogy a Jupiter körül négy hold kering, ezzel megkérdőjelezve a Föld középpontú világképet, és hozzájárult a heliocentrikus elmélet elfogadásához.",
+       "try_basic": "Használj egy egyszerű távcsövet vagy binokulárt, hogy megfigyeld a Holdat, és jegyezd fel a látott részleteket, például a krátereket vagy a sötét foltokat.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "1c15c75f-ed4e-4e34-8dd1-8679380b0273",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mars",
+        "B) Jupiter",
+        "C) Neptunusz",
+        "D) Szaturnusz"
+       ],
+       "question": "Melyik a Föld típusú bolygók közé tartozik?",
+       "explanation": "A Mars egy Föld típusú bolygó, amely szilárd felszínnel és vékony légkörrel rendelkezik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Föld",
+        "B) Mars",
+        "C) Jupiter",
+        "D) Vénusz"
+       ],
+       "question": "Melyik bolygó a legnagyobb a Naprendszerben?",
+       "explanation": "A Jupiter a legnagyobb bolygó a Naprendszerben, óriásbolygó, amely főként gázból áll.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Gázból álló, saját fényt kibocsátó égitestek",
+        "B) Szilárd felszínű égitestek",
+        "C) Holdak",
+        "D) Bolygók"
+       ],
+       "question": "Milyen típusú égitestek a csillagok?",
+       "explanation": "A csillagok gázból állnak és saját fényt bocsátanak ki, míg a bolygók nem rendelkeznek saját fényforrással.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Csillag",
+        "B) Fekete lyuk",
+        "C) Bolygó",
+        "D) Aszteroida"
+       ],
+       "question": "Melyik égitest az, ami a Tejútrendszer középpontjában található?",
+       "explanation": "A Tejútrendszer középpontjában egy szupermasszív fekete lyuk található, amely hatalmas gravitációval bír.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) Tejútrendszer",
+        "B) Univerzális halmaz",
+        "C) Csillaghalmaz",
+        "D) Galaktikus klaszter"
+       ],
+       "question": "Melyik kifejezés jelenti a galaxisok csoportosulását?",
+       "explanation": "A galaktikus klaszterek a galaxisok csoportosulásait jelentik, amelyek gravitációs vonzás alatt állnak egymással.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "87e85e56-dd2b-4f22-a7d1-2ccccb10b282",
+   "title_hu": "Űrkutatás és a Világegyetem",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "c7f6000f-4c07-425e-903c-a1fabb7746af",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az űrkutatás célja, hogy jobban megértsük a világűrt és annak működését. Manapság az űrszondák, mint például a Mars-roverek, segítenek felfedezni más bolygókat és azok környezetét. A nemzetközi űrállomás (ISS) lehetőséget ad a tudósoknak, hogy kísérleteket végezzenek a súlytalanság állapotában. Az űrtávcsövek, mint a Hubble, lehetővé teszik számunkra, hogy távoli galaxisokat és csillagokat tanulmányozzunk, míg a műholdak mindennapi életünket segítik, például az időjárás-előrejelzésében vagy a GPS működésében.",
+       "type": "text",
+       "heading": "Az űrkutatás céljai",
+       "key_term": "űrszondák, nemzetközi űrállomás (ISS), űrtávcsövek, műholdak"
+      },
+      {
+       "body": "Az űrkutatás egyik izgalmas kérdése, hogy létezik-e élet a Világegyetemben. A tudósok különböző exobolygók, azaz más csillagok körüli bolygók kutatásával próbálják ezt kideríteni. Az olyan bolygók, mint a Kepler-186f, hasonló körülmények között keringhetnek, mint a Föld, és így lehetőség van ott élet jelenlétére. A Mars kutatása is fontos, hiszen a múltban valószínűleg víz volt a felszínén, ami az élet egyik alapfeltétele.",
+       "type": "text",
+       "heading": "Élet a Világegyetemben",
+       "key_term": "élet a Világegyetemben, exobolygók, Mars"
+      },
+      {
+       "body": "A Világegyetem keletkezésének magyarázata a Nagy Bumm elméletén alapul, amely szerint a Világegyetem körülbelül 13,8 milliárd évvel ezelőtt egy hatalmas robbanás következtében jött létre. Azóta a Világegyetem folyamatosan tágul, és a csillagok, galaxisok fejlődése is ennek eredményeként zajlik. A csillagok életciklusa során új elemek keletkeznek, amelyek később más égitestekben, például bolygókban megjelenhetnek.",
+       "type": "text",
+       "heading": "A Világegyetem keletkezése és fejlődése",
+       "key_term": "Világegyetem keletkezése, Nagy Bumm"
+      },
+      {
+       "body": "A fekete lyukak a Világegyetem egyik legérdekesebb és legrejtélyesebb jelenségei. Ezek olyan égitestek, amelyek annyira sűrűek, hogy még a fény sem tud elhagyni őket. A fekete lyukak keletkezése csillagok összeomlásával történik, és hatalmas gravitációs vonzást gyakorolnak a környezetükre. A világűr méreteit nehéz elképzelni, hiszen a legközelebbi csillag, a Proxima Centauri, körülbelül 4,24 fényév távolságra van tőlünk, ami azt jelenti, hogy a fény 4,24 évet utazik, mire elér minket.",
+       "type": "text",
+       "heading": "Fekete lyukak és a világűr méretei",
+       "key_term": "fekete lyuk, fényév"
+      },
+      {
+       "body": "A műholdak nélkülözhetetlenek a modern életben. Például a mobiltelefonok működésében a műholdak segítenek a GPS helymeghatározásában, amely nélkül nehezen tudnánk tájékozódni az ismeretlen helyeken. Emellett az időjárás-előrejelzés is a műholdak adataira támaszkodik, amelyek folyamatosan figyelik a Föld légkörét. A műholdas internet pedig lehetővé teszi, hogy a legeldugottabb helyeken is kapcsolatban maradjunk a világgal.",
+       "type": "text",
+       "heading": "Műholdak és a mindennapi élet",
+       "key_term": "műholdak, GPS, időjárás-előrejelzés"
+      },
+      {
+       "body": "A világűr méretei elképesztőek, és sokszor nehezen felfoghatók. Ha a Föld méretét egy borsóhoz hasonlítjuk, akkor a Nap körülbelül 30 méter átmérőjű lenne. A Tejútrendszer, amelyben élünk, több száz milliárd csillagot tartalmaz, és a legközelebbi galaxis, az Androméda, több mint 2,5 millió fényév távolságra van. Érdemes elgondolkodni azon, hogy a Világegyetemben vajon hány másik bolygón élhet intelligens élet.",
+       "type": "text",
+       "heading": "Beszélgetés a világűr méreteiről",
+       "key_term": "világűr méretei, Tejútrendszer, Androméda"
+      },
+      {
+       "body": "A Tejútrendszer a galaxisunk, amely több száz milliárd csillagot tartalmaz, köztük a Napot is. A galaxisok hatalmas csillagvárosok, amelyek különböző formákban léteznek, például spirál vagy elliptikus alakban. A fekete lyukak olyan égi objektumok, amelyek gravitációs vonzása olyan erős, hogy még a fény sem képes elhagyni őket. Ezek az objektumok kulcsfontosságúak az univerzum szerkezetének megértésében. A galaxisok és fekete lyukak tanulmányozása révén jobban megérthetjük az univerzum keletkezését és fejlődését.",
+       "type": "text",
+       "heading": "Ismerkedés az égbolt egyéb égi objektumaival",
+       "key_term": "Tejútrendszer, galaxisok, fekete lyukak"
+      },
+      {
+       "body": "A Világegyetem keletkezése és fejlődése az egyik legizgalmasabb kérdés az űrkutatásban. A jelenlegi tudományos álláspont szerint a Világegyetem körülbelül 13,8 milliárd évvel ezelőtt keletkezett az ősrobbanás során. Az ősrobbanás nem egy hagyományos robbanás volt, hanem a tér és idő hirtelen tágulása. Azóta a Világegyetem folyamatosan tágul, amit a távoli galaxisok vöröseltolódása is bizonyít. Az űrkutatás célja, hogy jobban megértsük ezt a folyamatot, és választ találjunk arra, hogy mi lehet a Világegyetem jövője.",
+       "type": "text",
+       "heading": "A Világegyetem keletkezése és fejlődése",
+       "key_term": "ősrobbanás"
+      }
+     ]
+    },
+    {
+     "block_id": "2941749b-87ff-4833-858b-92630125133b",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzelj el egy csillagászati távcsövet, amely éppen a Tejútrendszer egy távoli csillagát figyeli. A távcső a világűr méreteit kihasználva több ezer fényév távolságból érkező fényt gyűjt össze. Ez a fény, amely a csillagtól indult, évtizedek vagy akár évszázadok alatt érkezik el hozzánk. A távcső egy érzékelővel rögzíti a beérkező fényt, és az adatokat digitálisan továbbítja a kutatók számára.",
+       "type": "story",
+       "heading": "Fényév távolságból érkező üzenet"
+      },
+      {
+       "body": "A kutatók a távcső által gyűjtött adatokat egy számítógépen elemzik. A fényév (a világűr távolságának mértékegysége) segítségével pontosan tudják, hogy a megfigyelt csillag milyen messze van. Az adatok elemzése során különböző spektrumokat vizsgálnak, hogy megértsék a csillagok összetételét és fejlődését, és hogy választ találjanak arra a kérdésre, hogy létezhet-e élet a Világegyetemben.",
+       "type": "story",
+       "heading": "Adatok elemzése a Földön"
+      },
+      {
+       "body": "A kutatók, inspirálódva a távcső adataiból, úgy döntenek, hogy egy űrszondát indítanak el a Marsra. Az űrszonda feladata, hogy közvetlenül vizsgálja a bolygót, és mintákat gyűjtsön. A szonda a Földről indult, és a világűrben haladva a fénysebesség egy részével utazik. Az űrszonda folyamatosan küldi vissza az adatokat, amelyek újabb információkat nyújtanak a Mars légköréről és felszínéről.",
+       "type": "story",
+       "heading": "Űrszondák küldetése"
+      },
+      {
+       "body": "Az űrszondáról érkező adatok elemzése közben a kutatók a Nemzetközi Űrállomás (ISS) tudósait is bevonják a munkába. Az ISS-en végzett kísérletek során különböző anyagok viselkedését tanulmányozzák súlytalanságban, amely segít megérteni, hogyan alakulhatott ki az élet a Földön és más bolygókon. Az űrállomásról érkező tapasztalatok segítik a jövőbeli űrutazások tervezését.",
+       "type": "story",
+       "heading": "Nemzetközi űrállomás együttműködése"
+      },
+      {
+       "body": "A kutatások során a tudósok a világűr titokzatos jelenségeivel is foglalkoznak, mint például a fekete lyukakkal. A fekete lyukak olyan területek a téridőben, ahol a gravitáció olyan erős, hogy még a fény sem tud elhagyni őket. A fekete lyukak megértése kulcsfontosságú a Világegyetem fejlődésének és keletkezésének megismerésében, és a kutatók folyamatosan új módszereket keresnek, hogy ezeket a rejtélyes objektumokat tanulmányozhassák.",
+       "type": "story",
+       "heading": "Fekete lyukak titkai"
+      }
+     ]
+    },
+    {
+     "block_id": "426b115c-e698-4108-b024-7b118ac9d375",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az űrszonda felépítése és működése",
+       "heading": "Űrszondák működése",
+       "description": "A diagram bemutatja, hogyan működik egy űrszonda, beleértve a kommunikációt a Földdel, az energiaforrásokat (napenergia) és a tudományos mérésekhez szükséges érzékelőket.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A Nemzetközi Űrállomás felépítése",
+       "heading": "Nemzetközi űrállomás (ISS)",
+       "description": "A vázlat bemutatja a Nemzetközi Űrállomás főbb elemeit, mint például az energiaellátó paneleket, a kutatóhelyiségeket és a legénységi modulokat.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Űrtávcsövek és a megfigyelt fény spektruma",
+       "heading": "Űrtávcsövek működése",
+       "description": "A grafikon szemlélteti az űrtávcsövek által gyűjtött fény különböző hullámhosszait, és azt, hogy ezek hogyan segítik a csillagászati megfigyeléseket.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Műholdak típusai és funkcióik",
+       "heading": "Műholdak tevékenysége",
+       "description": "A diagram bemutatja a műholdak különböző típusait (kommunikációs, meteorológiai, navigációs) és azok funkcióit.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Fekete lyuk és a környező téridő",
+       "heading": "Fekete lyukak",
+       "description": "A keresztmetszet szemlélteti a fekete lyuk körüli téridő görbülését, amely megmutatja, hogyan vonzza magához a környező anyagot.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Csillagok távolságai fényévben",
+       "heading": "Fényév távolság",
+       "description": "A grafikon bemutatja a fényév (a fény egy év alatt megtett távolsága) fogalmát, és összehasonlítja a különböző csillagok távolságait fényévben.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az élet feltételei a Világegyetemben",
+       "heading": "Élet a Világegyetemben",
+       "description": "A diagram bemutatja azokat a tényezőket, amelyek szükségesek az élet kialakulásához, mint például víz, energiaforrás és megfelelő hőmérséklet.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A Világegyetem keletkezésének folyamata",
+       "heading": "A Világegyetem keletkezése",
+       "description": "A vázlat bemutatja a Big Bang elméletét és a Világegyetem fejlődésének főbb szakaszait, mint például a kozmikus inflációt és a galaxisok kialakulását.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "18467ef0-a381-48df-be17-9d49973ff5d2",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A Hubble-űrteleszkóp által készített képek és adatok ma is segítenek a csillagászoknak a Világegyetem megértésében, és az eredmények folyamatosan megjelennek a tudományos folyóiratokban és a médiában.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 50,
+          "w": 100,
+          "x": 150,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 160,
+          "y": 120,
+          "text": "Hubble-űrteleszkóp",
+          "type": "label"
+         },
+         {
+          "r": 30,
+          "x": 50,
+          "y": 50,
+          "type": "circle"
+         },
+         {
+          "x": 40,
+          "y": 45,
+          "text": "Föld",
+          "type": "label"
+         },
+         {
+          "r": 30,
+          "x": 350,
+          "y": 50,
+          "type": "circle"
+         },
+         {
+          "x": 340,
+          "y": 45,
+          "text": "Nap",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 350,
+          "y1": 125,
+          "y2": 50,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x": 250,
+          "y": 80,
+          "text": "Fény",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Égi jelenségek megfigyelése",
+       "discovery": "A Hubble-űrteleszkóp 1990-es indítása óta számos felfedezést tett a Világegyetem távoli részeiről. A teleszkóp lehetővé tette a csillagok, galaxisok és egyéb égitestek részletes megfigyelését, segítve a tudósokat abban, hogy jobban megértsék az univerzum keletkezését és fejlődését.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "09b00c69-d41a-4915-b54c-17ed82484024",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Űrtávcső",
+        "B) Műhold",
+        "C) Űrszonda",
+        "D) Nemzetközi űrállomás"
+       ],
+       "question": "Melyik eszköz segítségével tanulmányozzuk a Földön kívüli égitestek fényét és összetételét?",
+       "explanation": "Az űrtávcsövek képesek a világűrben lévő égitestek fényét gyűjteni és elemezni, lehetővé téve a távoli objektumok vizsgálatát.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Fényév",
+        "B) Csillagév",
+        "C) Holdév",
+        "D) Napév"
+       ],
+       "question": "Melyik fogalom jelöli a világűrben mért távolságot, amely a fény egy év alatt megtett távolságát jelenti?",
+       "explanation": "A fényév a fény sebessége által egy év alatt megtett távolság, amelyet a világűr távolságainak mérésére használnak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Műhold",
+        "B) Űrszonda",
+        "C) Űrtávcső",
+        "D) Nemzetközi űrállomás"
+       ],
+       "question": "Melyik űreszköz célja az, hogy a Föld körüli pályán folyamatosan megfigyelje a Földet és az atmoszférát?",
+       "explanation": "A műholdak a Föld körüli pályán helyezkednek el, és folyamatosan megfigyelhetik a Földet, például meteorológiai vagy kommunikációs célokra.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Űrkutatási kísérletek végzése",
+        "B) Csillagászati távcsövek elhelyezése",
+        "C) Csak űrséták lebonyolítása",
+        "D) Föld megfigyelése"
+       ],
+       "question": "Mi a célja a nemzetközi űrállomásnak (ISS)?",
+       "explanation": "A nemzetközi űrállomás célja, hogy különböző űrkutatási kísérleteket végezzen, amelyek hozzájárulnak a tudományos ismeretek bővítéséhez.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Rendkívül erős gravitációval rendelkezik, amely semmit nem enged el, még a fényt sem.",
+        "B) Csillagok születésének helye.",
+        "C) Egy kicsi, de fényes csillag.",
+        "D) Olyan égitest, amely folyamatosan bocsát ki fényt."
+       ],
+       "question": "Mi jellemzi a fekete lyukat?",
+       "explanation": "A fekete lyuk rendkívül erős gravitációval bír, így semmi, még a fény sem tud elhagyni azt, ezért láthatatlan marad.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "82f21703-22bc-4b5f-9c30-b180fbcad6aa",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Magfúzió",
+      "B) Kémiai reakciók",
+      "C) Elektromágneses sugárzás",
+      "D) Földi energiaforrások"
+     ],
+     "question": "Mi a Nap energiájának forrása?",
+     "explanation": "A Nap energiáját a magfúzió (nukleáris fúzió) folyamata adja, amely során hidrogénatomok egyesülnek héliummá, és hatalmas mennyiségű energia szabadul fel.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Óriásbolygók",
+      "B) Földtípusú bolygók",
+      "C) Jégbolygók",
+      "D) Kőzetbolygók"
+     ],
+     "question": "Milyen típusú bolygók a Föld és a Vénusz?",
+     "explanation": "A Föld és a Vénusz földtípusú bolygók, amelyek szilárd felszínnel rendelkeznek, és hasonló fizikai jellemzőkkel bírnak.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Telihold",
+      "B) Újhold",
+      "C) Félhold",
+      "D) Csökkenő hold"
+     ],
+     "question": "Melyik fázisban van a Hold, ha a Föld és a Nap között helyezkedik el?",
+     "explanation": "Újhold fázisban a Hold a Föld és a Nap között van, így a Hold sötét oldala néz a Föld felé.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Megerősítette a geocentrikus világképet",
+      "B) Bevezette a heliocentrikus világképet",
+      "C) Elvetette a bolygók mozgását",
+      "D) Felfedezte a fekete lyukakat"
+     ],
+     "question": "Milyen hatással volt Kopernikusz felfedezése a korábbi világképre?",
+     "explanation": "Kopernikusz heliocentrikus világképe, amely szerint a Föld és a többi bolygó a Nap körül kering, alapjaiban változtatta meg az emberek világképét.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Fogyatkozások",
+      "B) Meteorok",
+      "C) Csillagok",
+      "D) Galaxisok"
+     ],
+     "question": "Melyik égi jelenség kapcsolódik a Hold fázisaihoz?",
+     "explanation": "A fogyatkozások, például napfogyatkozás vagy holdfogyatkozás, a Hold és a Nap, illetve a Föld helyzetének viszonyából adódnak.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Orion",
+      "B) Androméda",
+      "C) Tejút",
+      "D) Szíriusz"
+     ],
+     "question": "Melyik csillagkép a legismertebb az égen?",
+     "explanation": "Az Orion csillagkép az egyik legismertebb és legkönnyebben azonosítható csillagkép az égen, különösen télen.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Egy bolygó",
+      "B) Egy csillaghalmaz",
+      "C) Egy galaxis",
+      "D) Egy fekete lyuk"
+     ],
+     "question": "Mi a Tejútrendszer?",
+     "explanation": "A Tejútrendszer a galaxisunk, amelyben a Föld és a Nap is található, és több milliárd csillagot tartalmaz.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Műhold",
+      "B) Távcső",
+      "C) Űrszonda",
+      "D) Mindhárom"
+     ],
+     "question": "Melyik eszköz segít az űrkutatásban a távoli égi objektumok megfigyelésében?",
+     "explanation": "A műholdak, űrszondák és űrtávcsövek mind fontos szerepet játszanak az űrkutatásban, lehetővé téve a távoli égi objektumok megfigyelését és tanulmányozását.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

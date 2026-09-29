@@ -1,0 +1,1781 @@
+{
+ "nat_id": "PHYS-78-03",
+ "topic_id": "8fc4fc43-8a99-45f4-8d7c-709b38261de2",
+ "title_hu": "Mozgás közlekedés és sportolás közben",
+ "grade": 7,
+ "lessons": [
+  {
+   "lesson_id": "5b4539f6-1656-4b12-bc21-b21b7ee7acfa",
+   "title_hu": "Mozgások megfigyelése és csoportosítása",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "1c5dea85-eec0-471e-8346-26fcaf66e56b",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A hely megadása azt jelenti, hogy pontosan tudjuk, hol vagyunk a világban. Például, ha a barátaiddal a városban sétálsz, akkor elmondhatod, hogy a főtéren vagy, vagy éppen a kedvenc kávézódban ülsz. A környezetedben tapasztalható mozgások megfigyelése során észlelheted, hogy az autók hogyan haladnak a forgalomban, vagy hogy a gyalogosok hogyan lépkednek. Az ilyen megfigyelések segítenek megérteni a mozgás különböző formáit és azok jellemzőit.",
+       "type": "text",
+       "heading": "A hely megadása és mozgások megfigyelése",
+       "key_term": "hely"
+      },
+      {
+       "body": "A mozgásokat csoportosíthatjuk a pálya és a helyváltoztatás gyorsasága alapján. Például, ha egy autó egyenesen halad, akkor az egyenes pályájú mozgás. Ha viszont egy futó kanyarban fut, akkor a mozgása ívelt pályán történik. A sebesség nagysága azt mutatja meg, hogy mennyire gyorsan változik a helyünk, míg az irány azt jelzi, hogy merre haladunk. A sebesség mértékegysége a méter per másodperc (m/s).",
+       "type": "text",
+       "heading": "A mozgás csoportosítása",
+       "key_term": "pálya"
+      },
+      {
+       "body": "Az elmozdulás a kiinduló és a végpont közötti távolságot jelenti, függetlenül attól, hogy milyen utat tettünk meg. Például, ha a barátod 100 métert futott, de jobbra-balra is kanyarodott, akkor az elmozdulása lehet, hogy csak 50 méter egyenes vonalban. Az átlagsebesség kiszámításához a megtett távolságot elosztjuk az idővel, amely alatt ezt a távolságot megtettük. Ez segít megérteni, hogy mennyire hatékonyan mozgunk.",
+       "type": "text",
+       "heading": "Sebesség és elmozdulás",
+       "key_term": "elmozdulás"
+      },
+      {
+       "body": "Newton első törvénye, más néven az inercia törvénye, azt mondja ki, hogy egy test nyugalomban marad, vagy egyenletesen egyenes vonalban mozog, amíg egy külső erő nem hat rá. Például, amikor egy autó hirtelen fékez, az utasok előre lendülnek, mert a testük szeretne folytatni a mozgást. Ez a törvény segít megérteni, hogy miért fontos a biztonsági öv használata az autóban.",
+       "type": "text",
+       "heading": "Newton első törvénye",
+       "key_term": "Newton első törvénye"
+      },
+      {
+       "body": "A közel állandó sebességű mozgások például a mozgólépcsőn való utazás. Amikor felülünk egy mozgólépcsőre, az érzékelhető sebességünk viszonylag állandó, mivel a lépcső folyamatosan mozog. Az autók is közel állandó sebességgel haladnak az autópályán, amennyiben a forgalom engedi. Ezek a mozgások jól példázzák, hogyan lehet a sebességet folyamatosan tartani, és milyen körülmények befolyásolják ezt.",
+       "type": "text",
+       "heading": "Közel állandó sebességű mozgások",
+       "key_term": "átlagsebesség"
+      },
+      {
+       "body": "A sebességrekordok gyűjtése izgalmas tevékenység lehet, hiszen megtudhatod, hogy milyen gyorsan tudnak közlekedni a különböző járművek. Például az elektromos autók rekuperációs fékezése lehetővé teszi, hogy a jármű visszanyerje a mozgásából származó energiát. A modern technológiák és kutatások folyamatosan új rekordokat állítanak fel, és érdemes ezeket figyelemmel kísérni, hogy láthassuk, merre tart a jövő közlekedése.",
+       "type": "text",
+       "heading": "Sebességrekordok és kutatás",
+       "key_term": "Newton második törvénye"
+      }
+     ]
+    },
+    {
+     "block_id": "dfac74cb-fb2f-4722-95d1-9c01dec1d852",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzelj el egy csendes utcát, ahol egy autó áll a piros lámpánál. Amikor a lámpa zöldre vált, az autó motorja beindul, és a jármű elkezd mozogni. Ekkor a helyváltoztatás kezdődik, ami a mozgás egyik alapvető eleme. Az autó sebessége fokozatosan növekszik, így az elmozdulás (a kiindulási ponttól való távolság) is nő.",
+       "type": "story",
+       "heading": "Az autó elindulása"
+      },
+      {
+       "body": "Ahogy az autó gyorsul, az utasok észlelik, hogy a távolság, amit megtettek, egyre nagyobb. A sebesség (vagyis az elmozdulás időegységre vetített nagysága) az autó sebességmérőjén látható, ami például 60 km/h értéket mutat. Ez a sebesség mértékegysége, amely segít meghatározni, milyen gyorsan halad az autó.",
+       "type": "story",
+       "heading": "A sebesség mérése"
+      },
+      {
+       "body": "Az autó haladása közben különböző környezeti tényezők is hatással vannak a mozgásra. Például, ha az úton kanyarok vannak, az autó pályája megváltozik. A kanyarodás során a sebesség csökkenhet, ami a Newton első törvénye az inercia törvénye: ha nincs külső erő, a test megőrzi mozgásállapotát, azaz mozdulatlan marad, vagy egyenes vonalú egyenletes mozgást végez.",
+       "type": "story",
+       "heading": "Környezet és pálya"
+      },
+      {
+       "body": "Amint az autó elér egy egyenes szakaszt, a vezető megpróbálja fenntartani a sebességet. Ha az autó egyenletes sebességgel halad, a Newton első törvénye szerint a mozgás állandó marad, amíg valamilyen külső erő, például a fék vagy a szél, be nem avatkozik. Ez a közel állandó sebességű mozgás példája, amit a mai közlekedés során gyakran tapasztalunk.",
+       "type": "story",
+       "heading": "A mozgás stabilizálása"
+      },
+      {
+       "body": "Végül az autó megérkezik a célállomásra, ahol a mozgás befejeződik. A helyváltoztatás során a sebesség és az elmozdulás folyamatosan változott, amit az utasok is éreztek. Ez a folyamat jól példázza, hogyan működik a mozgás a mindennapi életben, és hogyan figyelhetjük meg a különböző mozgásformákat a környezetünkben.",
+       "type": "story",
+       "heading": "A célba érkezés"
+      }
+     ]
+    },
+    {
+     "block_id": "56e6d006-0a25-484a-812f-eefba274340e",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "image": {
+        "h": 280,
+        "w": 360,
+        "alt": "Koordináta-rendszer: kék elmozdulásnyíl az A(1; 1) pontból a B(5; 4) pontba",
+        "src": "content-media/phys/mozgasok/hely-es-elmozdulas-v2.svg",
+        "credit": "Ábra: Turul"
+       },
+       "caption": "A test közben 4 m-t haladt jobbra és 3 m-t felfelé.",
+       "diagram": {
+        "shapes": [
+         {
+          "x": 50,
+          "y": 230,
+          "type": "dot"
+         },
+         {
+          "x": 30,
+          "y": 262,
+          "text": "kezdőpont",
+          "type": "label"
+         },
+         {
+          "x": 350,
+          "y": 70,
+          "type": "dot"
+         },
+         {
+          "x": 300,
+          "y": 50,
+          "text": "végpont",
+          "type": "label"
+         },
+         {
+          "x1": 50,
+          "x2": 120,
+          "y1": 230,
+          "y2": 120,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x1": 120,
+          "x2": 220,
+          "y1": 120,
+          "y2": 250,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x1": 220,
+          "x2": 350,
+          "y1": 250,
+          "y2": 70,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x": 20,
+          "y": 28,
+          "text": "szaggatott vonal = út (a megtett pálya)",
+          "type": "label"
+         },
+         {
+          "x1": 50,
+          "x2": 350,
+          "y1": 230,
+          "y2": 70,
+          "type": "arrow"
+         },
+         {
+          "x": 20,
+          "y": 52,
+          "text": "egyenes nyíl = elmozdulás",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Hely és elmozdulás",
+       "description": "A test helyét a koordináta-rendszerben két számmal adjuk meg. Itt a test az A pontból (1 m; 1 m) a B pontba (5 m; 4 m) jutott. Az elmozdulás a kék nyíl: az indulási helyről egyenesen az érkezési helyre mutat. Megmutatja, merre és mennyivel került arrébb a test — attól függetlenül, milyen úton jutott oda.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "image": {
+        "h": 290,
+        "w": 360,
+        "alt": "Kanyarodó sárga útvonal az indulástól az érkezésig, és egy egyenes kék szaggatott nyíl",
+        "src": "content-media/phys/mozgasok/palya.svg",
+        "credit": "Ábra: Turul"
+       },
+       "caption": "A megtett út és az elmozdulás nagysága nem mindig egyenlő.",
+       "diagram": {
+        "shapes": [
+         {
+          "x": 20,
+          "y": 40,
+          "text": "egyenes pályájú mozgás",
+          "type": "label"
+         },
+         {
+          "x": 40,
+          "y": 80,
+          "type": "dot"
+         },
+         {
+          "x1": 40,
+          "x2": 340,
+          "y1": 80,
+          "y2": 80,
+          "type": "line",
+          "dashed": false
+         },
+         {
+          "x1": 300,
+          "x2": 360,
+          "y1": 80,
+          "y2": 80,
+          "type": "arrow"
+         },
+         {
+          "x": 40,
+          "y": 110,
+          "text": "kezdet",
+          "type": "label"
+         },
+         {
+          "x": 20,
+          "y": 170,
+          "text": "ívelt pályájú mozgás",
+          "type": "label"
+         },
+         {
+          "x": 40,
+          "y": 230,
+          "type": "dot"
+         },
+         {
+          "x1": 40,
+          "x2": 340,
+          "y1": 230,
+          "y2": 230,
+          "type": "wave",
+          "cycles": 3,
+          "amplitude": 22
+         },
+         {
+          "x1": 330,
+          "x2": 365,
+          "y1": 230,
+          "y2": 230,
+          "type": "arrow"
+         },
+         {
+          "x": 40,
+          "y": 275,
+          "text": "kezdet",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Pálya",
+       "description": "A kerékpáros útvonala a pálya: 500 m egyenes, egy kb. 314 m-es kanyar, majd 400 m egyenes. A pálya hossza a megtett út: kb. 1,2 km. Az elmozdulás (kék szaggatott nyíl) viszont csak kb. 0,9 km, mert egyenesen, „légvonalban” köti össze az indulást és az érkezést.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "image": {
+        "h": 290,
+        "w": 360,
+        "alt": "Út–idő grafikon három egyenessel: kerékpáros, gyalogos, álló test",
+        "src": "content-media/phys/mozgasok/ut-ido-grafikon.svg",
+        "credit": "Ábra: Turul"
+       },
+       "caption": "Minél meredekebb a vonal, annál nagyobb a sebesség.",
+       "diagram": {
+        "shapes": [
+         {
+          "x1": 20,
+          "x2": 380,
+          "y1": 150,
+          "y2": 150,
+          "type": "line",
+          "dashed": false
+         },
+         {
+          "h": 40,
+          "w": 90,
+          "x": 60,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x1": 160,
+          "x2": 250,
+          "y1": 120,
+          "y2": 120,
+          "type": "arrow"
+         },
+         {
+          "x": 60,
+          "y": 80,
+          "text": "v = 10 m/s →",
+          "type": "label"
+         },
+         {
+          "h": 40,
+          "w": 90,
+          "x": 250,
+          "y": 170,
+          "type": "box"
+         },
+         {
+          "x1": 240,
+          "x2": 150,
+          "y1": 190,
+          "y2": 190,
+          "type": "arrow"
+         },
+         {
+          "x": 230,
+          "y": 240,
+          "text": "← v = 10 m/s",
+          "type": "label"
+         },
+         {
+          "x": 20,
+          "y": 285,
+          "text": "Ugyanakkora sebességnagyság, más irány = más sebesség.",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Sebesség nagysága",
+       "description": "Az út–idő grafikon vízszintes tengelyén az idő, függőleges tengelyén a megtett út látható. 10 s alatt a kerékpáros 50 m-t tesz meg (5 m/s), a gyalogos 15 m-t (1,5 m/s), az álló test pedig semennyit (0 m/s).",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "image": {
+        "h": 250,
+        "w": 360,
+        "alt": "100 méteres futópálya, stopper 10 másodperccel, és a számítás: 100 m osztva 10 s egyenlő 10 m/s",
+        "src": "content-media/phys/mozgasok/atlagsebesseg.svg",
+        "credit": "Ábra: Turul"
+       },
+       "caption": "átlagsebesség = megtett út : eltelt idő · 1 m/s = 3,6 km/h",
+       "heading": "Átlagsebesség",
+       "description": "Ha egy futó a 100 m-es távot 10 s alatt teszi meg, az átlagsebessége 100 m : 10 s = 10 m/s, ami 36 km/h. Az átlagsebesség nem árulja el, hogy a futó közben gyorsult vagy lassult — csak azt, hogy összesen mennyi utat mennyi idő alatt tett meg.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "image": {
+        "h": 928,
+        "w": 1400,
+        "alt": "Hosszú mozgólépcső egy budapesti metróállomás alagútjában",
+        "src": "content-media/phys/mozgasok/mozgolepcso-budapest.webp",
+        "credit": "Yelkrokoyade · CC BY-SA 3.0",
+        "source": "https://commons.wikimedia.org/wiki/File:Escalator_métro_Budapest.jpg"
+       },
+       "caption": "Mozgólépcső egy budapesti metróállomáson",
+       "heading": "Közel állandó sebességű mozgások",
+       "description": "A mozgólépcső lépcsőfokai egyenletesen haladnak. Aki nyugodtan áll rajta, egyenlő idők alatt egyenlő utakat tesz meg: közel állandó sebességgel mozog. Egy szokásos mozgólépcső sebessége kb. 0,5 m/s.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "image": {
+        "h": 272,
+        "w": 360,
+        "alt": "Fent egy asztalon nyugvó labda két egyforma, ellentétes erőnyíllal; lent egy jégkorong három helyzete egyforma sebességnyilakkal",
+        "src": "content-media/phys/mozgasok/newton-1-torveny.svg",
+        "credit": "Ábra: Turul"
+       },
+       "caption": "Newton első törvényének szemléltetése.",
+       "heading": "Newton első törvénye",
+       "description": "Newton első törvénye: minden test megtartja nyugalmi állapotát vagy egyenes vonalú egyenletes mozgását, amíg egy másik test (erő) ezt meg nem változtatja. Fent: az asztalon fekvő labdára ható erők kiegyenlítik egymást, ezért nyugalomban marad. Lent: a jégkorongot a jégen alig fékezi valami, ezért egyenlő idők alatt egyenlő utakat tesz meg.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "image": {
+        "h": 310,
+        "w": 360,
+        "alt": "Vízszintes oszlopdiagram négy sportrekord átlagsebességéről",
+        "src": "content-media/phys/mozgasok/sebessegrekordok.svg",
+        "credit": "Ábra: Turul"
+       },
+       "caption": "Híres rekordok átlagsebessége km/h-ban",
+       "heading": "Sebességrekordok",
+       "description": "Ha a rekordidőből kiszámoljuk az átlagsebességet (megtett út : idő), a különböző sportágak is összehasonlíthatók. A leggyorsabb úszó átlagosan kb. 8,6 km/h-val, a leggyorsabb síkfutó kb. 37,6 km/h-val halad, a kerékpáros egyórás rekord 56,8 km/h. A sugárhajtású ThrustSSC autó 1997-ben 1228 km/h-val a hangnál is gyorsabban száguldott.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "3802a3cb-3781-4a6c-8019-015ff86af57b",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A mozgások megfigyelése és csoportosítása segít a sportolók teljesítményének javításában, például a futás vagy kerékpározás során mért sebesség és gyorsulás elemzésével.",
+       "sketch": {
+        "shapes": [
+         {
+          "x": 50,
+          "y": 250,
+          "type": "dot"
+         },
+         {
+          "x": 100,
+          "y": 200,
+          "type": "dot"
+         },
+         {
+          "x": 150,
+          "y": 150,
+          "type": "dot"
+         },
+         {
+          "x": 200,
+          "y": 100,
+          "type": "dot"
+         },
+         {
+          "x": 50,
+          "y": 260,
+          "text": "t1",
+          "type": "label"
+         },
+         {
+          "x": 100,
+          "y": 210,
+          "text": "t2",
+          "type": "label"
+         },
+         {
+          "x": 150,
+          "y": 160,
+          "text": "t3",
+          "type": "label"
+         },
+         {
+          "x": 200,
+          "y": 110,
+          "text": "t4",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Mozgások megfigyelése és csoportosítása",
+       "discovery": "Galileo Galilei a 16. század végén és a 17. század elején végzett kísérleteket a mozgásról, különösen a leejtett testek mozgásának vizsgálatára. Az általa végzett kísérletek során felfedezte, hogy a testek mozgása a gravitációs gyorsulás hatására egyenletesen gyorsuló mozgást végez, amit később Newton törvényei is megerősítettek.",
+       "try_basic": "Készíts egy egyszerű kísérletet, ahol két különböző súlyú golyót ejtesz le ugyanabból a magasságból, és megfigyeled, hogy egy időben érkeznek-e a földre.",
+       "try_advanced": "Vizsgálj meg különböző sportágakat, és elemezd a mozgásformákat, például a futás különböző stílusait, és hasonlítsd össze a sebességüket!"
+      }
+     ]
+    },
+    {
+     "block_id": "dfe6f0da-7357-4292-a4b1-d1e1437bb5e6",
+     "mode": "deep",
+     "scope": "lesson",
+     "level": "emelt",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A hely meghatározása segít abban, hogy pontosan tudjuk, hol vagyunk, és hogy milyen távolságra vagyunk más helyszínektől. Gondolj egy GPS-re: a műholdak folyamatosan figyelik a helyzetünket, így tudják pontosan megmondani, merre kell mennünk. Ez a technológia a háromszögelés elvén alapul, ahol több pontból mérik a távolságot, és így határozzák meg a helyzetet. Ha például egy túraútvonalon vagy, a pontos helymeghatározás segít abban, hogy ne tévedj el, és biztonságban maradj.",
+       "type": "deep",
+       "think": "Hogyan határoznád meg a helyzetedet, ha elveszítenéd a telefonodat?",
+       "anchor": 0,
+       "heading": "Miért fontos a hely meghatározása?",
+       "did_you_know": "A GPS műholdak körülbelül 20 200 km magasan keringenek a Föld körül.",
+       "think_answer": "A környezeted jellemzői alapján tájékozódhatsz, például ismert épületek, utcanevek vagy táblák segítségével."
+      },
+      {
+       "body": "A mozgások különbözősége sok tényezőtől függ, mint például a pálya alakja és a sebesség változása. Egyenes pályán a mozgás egyszerűbb, mert csak egy irányba kell figyelni. Az ívelt pálya viszont bonyolultabb, mert a test folyamatosan változtatja az irányát. Például egy hullámvasút kanyarjaiban a sebesség és az irány is állandóan változik, így az utasok különböző erőhatásokat éreznek. Ezért van, hogy az ívelt pályák izgalmasabbak és gyakran kihívást jelentenek.",
+       "type": "deep",
+       "think": "Miért érzed másképp a mozgást egy kanyarban, mint egy egyenes úton?",
+       "anchor": 1,
+       "heading": "Miért különböznek a mozgások?",
+       "did_you_know": "A Föld is ívelt pályán, azaz ellipszis alakú pályán kering a Nap körül.",
+       "think_answer": "Kanyarban a tested irányt vált, ami miatt különböző erőhatások érik, míg egyenes úton ez nem történik meg."
+      },
+      {
+       "body": "Az átlagsebesség kiszámításához a teljes megtett távolságot osztjuk el az összes idővel, amit a mozgás során eltöltöttünk. Például, ha egy biciklis 10 kilométert tesz meg 2 óra alatt, akkor az átlagsebessége 5 km/h. Az elmozdulás viszont csak a kiindulási és végpont közötti távolságot veszi figyelembe, így lehet, hogy a megtett út hosszabb, mint az elmozdulás. Ez a különbség segít megérteni, hogy a valós mozgás mennyire hatékony.",
+       "type": "deep",
+       "think": "Miért lehet az átlagsebesség alacsonyabb, mint a maximális sebesség?",
+       "anchor": 2,
+       "heading": "Hogyan számoljuk az átlagsebességet?",
+       "did_you_know": "A fény sebessége a vákuumban körülbelül 299 792 458 m/s, ami a leggyorsabb ismert sebesség az univerzumban.",
+       "think_answer": "Mert az átlagsebesség figyelembe veszi az összes megállást és lassulást is, nem csak a leggyorsabb szakaszokat."
+      },
+      {
+       "body": "Az inercia azt jelenti, hogy egy test ellenáll a mozgásállapotának megváltoztatásának. Ezért van, hogy egy mozgó test tovább akar haladni ugyanabban az irányban, és ugyanazzal a sebességgel, ha nincs rá ható külső erő. Például, ha egy labdát eldobunk, addig mozog, amíg a gravitáció és a légellenállás le nem lassítja. Az inercia az oka annak is, hogy az autók biztonsági övei szükségesek, mert megakadályozzák, hogy a testünk a mozgás irányában folytassa az útját ütközéskor.",
+       "type": "deep",
+       "think": "Miért esik le egy tárgy, ha nincs alátámasztva?",
+       "anchor": 3,
+       "heading": "Hogyan működik az inercia?",
+       "did_you_know": "Az űrhajósok az űrben lebegnek, mert szabadon esnek a Föld körül, így súlytalanságot tapasztalnak.",
+       "think_answer": "Mert a gravitáció hat rá, ami egy külső erő, és az inercia miatt a test mozgásba lendül."
+      },
+      {
+       "body": "A közel állandó sebesség azt jelenti, hogy a test sebessége csak minimálisan változik. Ez akkor valósul meg, ha a testre ható erők kiegyensúlyozottak. Például egy hajó, amely egyenletesen halad a vízen, közel állandó sebességgel mozog, ha a motor hajtóereje és a víz ellenállása kiegyenlítik egymást. Az ilyen mozgások megkönnyítik a sebesség fenntartását, és energiahatékonyabbak, mert kevesebb erőt igényelnek a sebesség fenntartásához.",
+       "type": "deep",
+       "think": "Miért fontos a közel állandó sebesség az autópályán?",
+       "anchor": 4,
+       "heading": "Miért van közel állandó sebesség?",
+       "did_you_know": "A Föld forgása nagyon lassan fékeződik, főleg a Hold árapály-hatása miatt: egy nap százévente nagyjából 2 ezredmásodperccel lesz hosszabb. A szökőnap (február 29.) viszont nem ezt javítja, hanem azt, hogy egy év kb. 365 és negyed napig tart.",
+       "think_answer": "Mert csökkenti az üzemanyag-fogyasztást és növeli a közlekedés biztonságát, mivel kiszámíthatóbbá teszi a járművek mozgását."
+      },
+      {
+       "body": "A rekuperációs fékezés során az autó mozgási energiáját visszanyerjük, és elektromos energiává alakítjuk. Ez úgy működik, hogy amikor a féket nyomjuk, a motor generátorként kezd működni, és az így termelt energia tölti az akkumulátort. Ez különösen hasznos az elektromos autókban, mert növeli a hatótávolságot és csökkenti az energiafogyasztást. A rekuperációs fékezés segít a környezet megóvásában is, mert csökkenti a károsanyag-kibocsátást.",
+       "type": "deep",
+       "think": "Miért lehet előnyös a rekuperációs fékezés a városi közlekedésben?",
+       "anchor": 5,
+       "heading": "Hogyan működik a rekuperációs fékezés?",
+       "did_you_know": "Az elektromos autók rekuperációs fékezése jelentősen növelheti a hatótávolságot, de a pontos mérték függ az autó típusától és a vezetési körülményektől.",
+       "think_answer": "Mert a gyakori megállások és elindulások során több energiát tud visszanyerni, így hatékonyabbá válik az autó üzemeltetése."
+      }
+     ]
+    },
+    {
+     "block_id": "23129fb1-a0fa-44ea-9a78-78f631ab55a8",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Hely",
+        "B) Pálya",
+        "C) Elmozdulás",
+        "D) Sebesség"
+       ],
+       "question": "Melyik kifejezés jelenti a test helyének megadását a térben?",
+       "explanation": "A 'hely' a test pozícióját jelenti a térben, amely a mozgás megértéséhez szükséges.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) m/s",
+        "B) km/h",
+        "C) m²/s",
+        "D) N"
+       ],
+       "question": "Mi a sebesség mértékegysége az SI rendszerben?",
+       "explanation": "A sebesség mértékegysége a méter per másodperc (m/s), amely a mozgás gyorsaságát fejezi ki.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Közel állandó sebességű mozgás",
+        "B) Egyenletes gyorsulás",
+        "C) Változó sebességű mozgás",
+        "D) Megállás"
+       ],
+       "question": "Milyen mozgás példája a mozgólépcső?",
+       "explanation": "A mozgólépcső közel állandó sebességű mozgást végez, mert a sebessége szinte folyamatosan változatlan.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A testek mozgásállapota változatlan marad, ha nem hat rájuk erő.",
+        "B) A testek gyorsulása arányos az általuk kifejtett erővel.",
+        "C) A testek mindig egyenes vonalú mozgást végeznek.",
+        "D) A mozgás sebessége mindig állandó."
+       ],
+       "question": "Mi Newton első törvényének lényege?",
+       "explanation": "Newton első törvénye azt állítja, hogy egy test mozgásállapota változatlan marad, ha nem hat rá külső erő.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A test kezdő és végpontja közötti egyenes távolság.",
+        "B) A test által megtett teljes út.",
+        "C) A test sebessége.",
+        "D) A test iránya."
+       ],
+       "question": "Mi az elmozdulás (displacement) fogalma?",
+       "explanation": "Az elmozdulás a test kezdő és végpontja közötti egyenes távolságot jelenti, függetlenül a megtett úttól.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "63c3e515-a268-45e5-928e-db18581bba6c",
+   "title_hu": "Út és idő kiszámítása",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "0977688d-f271-4f92-b94b-b5377214254c",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az út (s) a mozgás során megtett távolságot jelenti. Gondoljunk bele, amikor a barátainkkal elmegyünk a közeli kávézóba: az az út, amit megteszünk, a kávézó és az otthonunk közötti távolság. Az út mértékegysége méter (m), de a mindennapi életben gyakran találkozunk kilométerrel (km) is, például amikor autóval utazunk egy másik városba.",
+       "type": "text",
+       "heading": "Mi az út?",
+       "key_term": "út"
+      },
+      {
+       "body": "A sebesség (v) megmutatja, hogy egy adott idő alatt mennyi utat teszünk meg. Például, ha 60 km/h sebességgel autózunk, akkor egy óra alatt 60 kilométert teszünk meg. Ha tudjuk a sebességünket és az időt, akkor könnyen kiszámíthatjuk a megtett utat: s = v × t. Így, ha 2 órát utazunk 60 km/h sebességgel, akkor összesen 120 km-t teszünk meg.",
+       "type": "text",
+       "heading": "Sebesség és megtett út",
+       "key_term": "sebesség"
+      },
+      {
+       "body": "Ha tudjuk, mennyi utat kell még megtennünk és a sebességünket, akkor kiszámíthatjuk a hátralévő időt (t). A képlet t = s/v segít nekünk ebben. Például, ha 30 km van hátra az úton és 60 km/h sebességgel haladunk, akkor a hátralévő idő 0,5 óra, azaz 30 perc lesz. Ez hasznos lehet, ha időben szeretnénk érkezni valahová.",
+       "type": "text",
+       "heading": "Utazásból hátralévő idő",
+       "key_term": "hátralévő idő"
+      },
+      {
+       "body": "Manapság sokan használunk különböző közlekedési applikációkat, mint például a Google Maps. Ezek az applikációk segítenek megtervezni az utazásunkat, figyelembe véve a forgalmat és a sebességet. Ha beírjuk, honnan hová szeretnénk eljutni, az applikáció megmutatja a legrövidebb utat és a várható érkezési időt. Így könnyen tervezhetjük meg a napunkat.",
+       "type": "text",
+       "heading": "Közlekedéstervezés applikációval",
+       "key_term": "közlekedéstervezés"
+      },
+      {
+       "body": "Az átlagsebesség (v_átlag) kiszámítása is hasznos lehet. Ha több különböző útszakaszon utaztunk, akkor a teljes megtett utat elosztjuk a teljes idővel. Például, ha 10 km-t mentünk 20 perc alatt, majd 15 km-t 30 perc alatt, akkor a teljes út 25 km, a teljes idő pedig 50 perc. Az átlagsebességünk 30 km/h lesz. Ez segít megérteni, hogy milyen gyorsan haladunk az utunk során.",
+       "type": "text",
+       "heading": "Átlagsebességek vizsgálata",
+       "key_term": "átlagsebesség"
+      }
+     ]
+    },
+    {
+     "block_id": "59789d98-2401-4edf-80be-c295c03a41f9",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal utazásra készül, és először megnyit egy közlekedési applikációt a telefonján. Megadja a kiindulási pontot és a célt, majd az applikáció kiszámolja, hogy mennyi időt fog igénybe venni az út. A közlekedési eszköz sebessége alapján (például autóval 60 km/h) az applikáció megjeleníti a megtett út hosszát és az utazásra hátralévő időt.",
+       "type": "story",
+       "heading": "Az utazás előkészítése"
+      },
+      {
+       "body": "Az applikáció figyelembe veszi a forgalmat és a különböző útvonalakat, és javaslatot tesz a leggyorsabb útra. Az utazás tervezése során az átlagsebesség (60 km/h) és a megtett út (120 km) alapján a fiatal kiszámolja, hogy körülbelül 2 óra múlva érkezik meg a célhoz.",
+       "type": "story",
+       "heading": "Az útvonal megtervezése"
+      },
+      {
+       "body": "Miután az utazás előkészítése befejeződött, a fiatal elindul. Az autó motorja beindul, és az autó elhagyja a parkolót. Ahogy halad az úton, a sebességmérő mutatója folyamatosan 60 km/h-t jelez. A megtett út folyamatosan nő, és az applikáció valós időben frissíti az utazás hátralévő idejét.",
+       "type": "story",
+       "heading": "Az utazás megkezdése"
+      },
+      {
+       "body": "Az utazás közben a fiatal észreveszi, hogy a forgalom lassul, és az autó sebessége csökken 40 km/h-ra. Az applikáció az új sebesség alapján újraszámolja az utazás hátralévő idejét, és most már 3 óra múlva érkezik meg a célhoz. Ez a példa jól mutatja, hogy a sebesség és az út hossza hogyan befolyásolja az időt.",
+       "type": "story",
+       "heading": "Az utazás során"
+      },
+      {
+       "body": "Végül a fiatal megérkezik a célhoz, és az applikáció értesíti, hogy az út 120 km-t tett meg, és az utazás 3 órát vett igénybe a forgalmi viszonyok miatt. Az út és idő kiszámítása során a fiatal megtanulta, hogy a sebesség és a megtett távolság hogyan határozza meg az utazás idejét.",
+       "type": "story",
+       "heading": "Megérkezés a célhoz"
+      }
+     ]
+    },
+    {
+     "block_id": "f3e4a797-c1af-4d18-acb7-a0715f0b40fc",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az autó által megtett út a megfelelő időintervallumban.",
+       "diagram": {
+        "shapes": [
+         {
+          "x1": 30,
+          "x2": 370,
+          "y1": 170,
+          "y2": 170,
+          "type": "line",
+          "dashed": false
+         },
+         {
+          "h": 35,
+          "w": 70,
+          "x": 50,
+          "y": 125,
+          "type": "box"
+         },
+         {
+          "r": 6,
+          "x": 70,
+          "y": 168,
+          "type": "circle"
+         },
+         {
+          "r": 6,
+          "x": 105,
+          "y": 168,
+          "type": "circle"
+         },
+         {
+          "x1": 50,
+          "x2": 370,
+          "y1": 200,
+          "y2": 200,
+          "type": "line",
+          "dashed": false
+         },
+         {
+          "x1": 50,
+          "x2": 50,
+          "y1": 192,
+          "y2": 208,
+          "type": "line",
+          "dashed": false
+         },
+         {
+          "x1": 370,
+          "x2": 370,
+          "y1": 192,
+          "y2": 208,
+          "type": "line",
+          "dashed": false
+         },
+         {
+          "x": 150,
+          "y": 225,
+          "text": "s = 100 m",
+          "type": "label"
+         },
+         {
+          "x": 150,
+          "y": 60,
+          "text": "t = 20 s",
+          "type": "label"
+         },
+         {
+          "x": 80,
+          "y": 265,
+          "text": "v = s / t = 100 m / 20 s = 5 m/s",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Megtett út",
+       "description": "Egy autó mozgását szemléltető diagram, amely mutatja az autó által megtett utat az idő függvényében.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Sebességváltozás az idő előrehaladtával.",
+       "heading": "Sebesség",
+       "description": "Grafikon, amely az időt (x-tengely) és a sebességet (y-tengely) ábrázolja, bemutatva, hogyan változik a sebesség az idő függvényében.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Átlagsebesség: v = s / t, ahol 's' a megtett út, 't' az eltelt idő.",
+       "heading": "Átlagsebesség",
+       "description": "Egy vázlat, amely bemutatja az átlagsebesség kiszámítását: az összes megtett út osztva az összes eltelt idővel.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Hátralévő idő: t_h = s_h / v, ahol 's_h' a hátralévő út, 'v' a sebesség.",
+       "heading": "Utazásból hátralévő idő",
+       "description": "Egy diagram, amely bemutatja, hogyan lehet kiszámítani az utazásból hátralévő időt a sebesség és a hátralévő út ismeretében.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Közlekedési alkalmazás használata az útvonal megtervezésére.",
+       "heading": "Közlekedéstervezés",
+       "description": "Képernyőfotó egy közlekedési alkalmazásról, amely megmutatja az útvonaltervezést és a várható érkezési időt.",
+       "visual_type": "képernyőfotó"
+      },
+      {
+       "type": "visual",
+       "caption": "Sebességmérő eszközök az úton.",
+       "heading": "Sebesség mérése",
+       "description": "Keresztmetszet egy útról, ahol sebességmérő berendezés mutatja a járművek sebességét.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A sebesség és a megtett út közötti kapcsolat.",
+       "heading": "Sebesség és út kapcsolata",
+       "description": "Grafikon, amely az út (x-tengely) és a sebesség (y-tengely) kapcsolatát mutatja, különböző sebességek mellett.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Idő és távolság összefüggése különböző sebességek esetén.",
+       "heading": "Idő és távolság",
+       "description": "Diagram, amely az idő és a távolság közötti összefüggést szemlélteti különböző sebességeknél.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "df37bf16-4905-4827-82f3-bd671df406d1",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A diákok nap mint nap találkoznak az út és idő számításával, például amikor a busz menetrendjét nézik, vagy sportolás közben mérik az időt, hogy lássák, mennyit futottak egy adott idő alatt.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Mozgás a mindennapokban",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "2a60f60a-c1da-44b1-a530-bd47146aacb3",
+     "mode": "deep",
+     "scope": "lesson",
+     "level": "emelt",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az út mérése nemcsak a távolság megállapítására szolgál, hanem segít megérteni, hogyan mozognak a dolgok körülöttünk. Gondolj bele, amikor egy futóversenyen indulsz, az út hossza határozza meg, mennyi idő alatt érhetsz célba. Az út mérése lehetőséget ad arra, hogy pontosan tervezhessük meg a napi tevékenységeinket, például mennyi időbe telik eljutni az iskolába vagy a munkahelyre.",
+       "type": "deep",
+       "think": "Miért van szükség különböző mértékegységekre az út mérésére?",
+       "anchor": 0,
+       "heading": "Miért fontos az út mérése?",
+       "did_you_know": "",
+       "think_answer": "Különböző mértékegységekre van szükség, mert a távolságok nagyon eltérőek lehetnek. Például egy szobában centiméterekkel, míg két város között kilométerekkel mérjük a távolságot."
+      },
+      {
+       "body": "A sebesség közvetlenül befolyásolja, hogy mennyi idő alatt teszünk meg egy adott utat. Ha gyorsabban haladunk, kevesebb időre van szükségünk ugyanannak a távolságnak a megtételéhez. Ezért van az, hogy a gyorsabb közlekedési eszközök, mint például a vonatok vagy repülőgépek, sokkal rövidebb idő alatt érnek célba, mint a gyalogos közlekedés. A sebesség növelésével azonban nőhet a balesetek kockázata is, ezért fontos a biztonságos sebesség megválasztása.",
+       "type": "deep",
+       "think": "Mi történik az utazási idővel, ha a sebességet megduplázzuk?",
+       "anchor": 1,
+       "heading": "Hogyan befolyásolja a sebesség az utazási időt?",
+       "did_you_know": "",
+       "think_answer": "Ha a sebességet megduplázzuk, a megtett út időtartama a felére csökken, feltéve, hogy a távolság változatlan marad."
+      },
+      {
+       "body": "A hátralévő idő kiszámítása különösen hasznos, ha pontos időpontban kell megérkeznünk valahová. Például egy találkozóra vagy egy vonat indulásához. Ha tudjuk, mennyi idő van még hátra az utazásból, könnyebben tervezhetjük meg, mikor kell elindulnunk. Az idő kiszámítása segíthet abban is, hogy elkerüljük a késést, ami különösen fontos lehet, ha valamilyen fontos eseményre készülünk.",
+       "type": "deep",
+       "think": "Miért fontos tudni, mennyi idő van hátra az utazásból?",
+       "anchor": 2,
+       "heading": "Mikor hasznos a hátralévő idő kiszámítása?",
+       "did_you_know": "A repülőgépek pilótái figyelembe veszik az időjárási körülményeket és a légiforgalmat, hogy pontosan érkezzenek a célállomásra.",
+       "think_answer": "A hátralévő idő ismerete segít abban, hogy időben érkezzünk meg, és elkerüljük a késéseket, különösen fontos találkozók vagy események esetén."
+      },
+      {
+       "body": "A közlekedési applikációk nemcsak az útvonal megtervezésében segítenek, hanem valós idejű forgalmi információkat is nyújtanak. Így elkerülhetjük a dugókat és a forgalmi akadályokat, ami időt és üzemanyagot takarít meg. Az applikációk figyelembe veszik a közlekedési szabályokat, például a sebességkorlátozásokat, és javaslatokat tesznek alternatív útvonalakra, ha szükséges. Ez különösen hasznos lehet, ha egy ismeretlen városban navigálunk.",
+       "type": "deep",
+       "think": "Miért érdemes közlekedési applikációt használni utazás közben?",
+       "anchor": 3,
+       "heading": "Hogyan segítenek a közlekedési applikációk?",
+       "did_you_know": "A modern közlekedési applikációk valós idejű forgalmi információkat nyújtanak, így segítenek elkerülni a váratlan késéseket.",
+       "think_answer": "A közlekedési applikációk segítenek optimalizálni az útvonalat, elkerülni a forgalmi dugókat, és pontosabb érkezési időt biztosítanak."
+      },
+      {
+       "body": "Az átlagsebesség segít megérteni, hogyan változik a sebességünk az utazás során. Ha például többféle közlekedési eszközt használunk, az átlagsebesség megmutatja, hogy összességében milyen gyorsan haladtunk. Az átlagsebesség kiszámítása segíthet abban is, hogy reálisabban tervezzük meg az utazásunkat, hiszen figyelembe veszi a megállásokat és a lassabb szakaszokat is. Ez különösen hasznos lehet hosszabb utazások során, ahol több változó is befolyásolhatja a sebességet.",
+       "type": "deep",
+       "think": "Hogyan befolyásolja az átlagsebesség az utazás tervezését?",
+       "anchor": 4,
+       "heading": "Miért számít az átlagsebesség?",
+       "did_you_know": "Az átlagsebesség nem mindig azonos a maximális sebességgel. Egy autó például elérheti a 100 km/h sebességet, de a városi forgalomban az átlagsebessége csak 30 km/h lehet.",
+       "think_answer": "Az átlagsebesség figyelembevétele segít reálisabban megtervezni az utazási időt, mivel figyelembe veszi a lassabb szakaszokat és megállásokat is."
+      }
+     ]
+    },
+    {
+     "block_id": "b0c7a0cb-066b-4337-b96d-7cd30544b31d",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) s = v × t",
+        "B) s = t / v",
+        "C) s = v + t",
+        "D) s = v - t"
+       ],
+       "question": "Milyen képlettel számítható ki a megtett út (s)?",
+       "explanation": "A megtett út (s) a sebesség (v) és az idő (t) szorzataként számítható ki.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) 1 óra",
+        "B) 2 óra",
+        "C) 3 óra",
+        "D) 4 óra"
+       ],
+       "question": "Ha egy autó 60 km/h sebességgel halad, mennyi idő alatt tesz meg 120 km-t?",
+       "explanation": "Az idő (t) kiszámítása: t = s / v, azaz t = 120 km / 60 km/h = 2 óra.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) km",
+        "B) óra",
+        "C) m/s",
+        "D) liter"
+       ],
+       "question": "Milyen mértékegységben fejezzük ki az utazás időtartamát (t)?",
+       "explanation": "Az utazás időtartama (t) általában órában (h) vagy percben (min) van kifejezve.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) v = s / t",
+        "B) v = t / s",
+        "C) v = s + t",
+        "D) v = s - t"
+       ],
+       "question": "Hogyan számítható ki az átlagsebesség (v) egy utazás során?",
+       "explanation": "Az átlagsebesség (v) a megtett út (s) és az idő (t) hányadosaként számítható ki.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 50 km/h",
+        "B) 100 km/h",
+        "C) 75 km/h",
+        "D) 150 km/h"
+       ],
+       "question": "Ha egy utazás során 150 km-t teszünk meg 3 órás időtartamban, mi az átlagsebességünk?",
+       "explanation": "Az átlagsebesség (v) kiszámítása: v = s / t = 150 km / 3 h = 50 km/h.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "7b00430f-05e6-40fa-a93a-af1d004cb68a",
+   "title_hu": "Erők és gyorsulás vizsgálata",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "52b59f2b-5759-4d87-9412-3b62889e0907",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzelj el egy almát, amit egy fáról ejtesz le. Amikor elengeded, az alma gyorsulni kezd a Föld nehézségi ereje miatt. Ez a mozgás a nehézségi gyorsulás (g), ami körülbelül 9,81 m/s². Az alma egyre gyorsabban mozog lefelé, és a földet érve már nagyobb sebességgel ütközik. Ez a jelenség jól szemlélteti, hogy a nehézségi erő folyamatosan hat a testre, amíg el nem éri a talajt.",
+       "type": "text",
+       "heading": "Az elejtett test mozgása",
+       "key_term": "nehézségi gyorsulás"
+      },
+      {
+       "body": "Newton 2. törvénye azt mondja ki, hogy egy test gyorsulása arányos a rá ható erő nagyságával, és fordítottan arányos a test tömegével. Ha egy autót nézünk, amelyet egy 1000 kg-os testnek tekintünk, és 2000 N erő hat rá, akkor a gyorsulása 2 m/s² lesz. Ez a törvény segít megérteni, hogyan változik az autó sebessége a motor teljesítményének növelésével vagy csökkentésével.",
+       "type": "text",
+       "heading": "Newton második törvénye",
+       "key_term": "Newton második törvénye"
+      },
+      {
+       "body": "Amikor egy autó kanyarodik, a sebessége nemcsak a nagyságát, hanem az irányát is változtatja. A kanyarodás során a súrlódási erő segít az autó stabilan tartásában. Ha az út csúszós, például eső után, a kanyarodás nehezebbé válik, és könnyen megcsúszhat az autó. Az autó kanyarodásakor tehát a külső hatások, mint a súrlódás, kulcsszerepet játszanak a biztonságos közlekedésben.",
+       "type": "text",
+       "heading": "Gyorsulás és kanyarodás",
+       "key_term": "súrlódási erő"
+      },
+      {
+       "body": "Amikor fékezel az autóval, a fékek által kifejtett erő csökkenti az autó sebességét. Ez a sebességváltozás a fékező erő és az autó tömegének kölcsönhatásából ered. Például egy 1200 kg-os autó, amely 30 m/s sebességgel halad, és 6000 N fékező erő hat rá, gyorsan megáll. A fékezés során tehát a tömeg és a rá ható erő kulcsszerepet játszik a jármű megállásában.",
+       "type": "text",
+       "heading": "Fékezés és sebességváltozás",
+       "key_term": "sebességváltozás"
+      },
+      {
+       "body": "A sebesség mérésére különböző módszereket alkalmazhatunk, például GPS-eszközöket vagy sebességmérő műszereket az autóban. A GPS segítségével pontosan nyomon követhetjük, hogy az autó milyen sebességgel halad. Képzeld el, hogy egy barátoddal versenyeztek az autókkal, és a GPS megmutatja, ki megy gyorsabban. Ez a modern technológia lehetővé teszi, hogy valós időben figyeld a sebességedet.",
+       "type": "text",
+       "heading": "Sebességmérés eljárása",
+       "key_term": "sebességmérési eljárás"
+      }
+     ]
+    },
+    {
+     "block_id": "32f7abd6-ac29-47cf-a1df-79c83f5dbf9f",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal elindítja a vezeték nélküli telefontöltőt, és a telefonja elkezd tölteni. A töltő elektromágneses mezőt hoz létre, amely a telefon belsejében lévő tekercshez érkezik.",
+       "type": "story",
+       "heading": "A telefon töltése"
+      },
+      {
+       "body": "A telefon töltése közben a fiatal észreveszi, hogy a telefonja a töltőn marad, de ha megemeli, a gravitáció (nehézségi erő) hatására a telefon visszahullik a töltőre. Ez a hatás a nehézségi gyorsulás, amely a Földön körülbelül 9,81 m/s².",
+       "type": "story",
+       "heading": "A nehézségi erő hatása"
+      },
+      {
+       "body": "A fiatal a telefonja töltése közben elindul az autójával. Az autó gyorsul, és a vezető érzi, hogy a hátsó üléshez préselődik. Ez a gyorsulás a jármű motorjának erejéből származik, amely az autó tömegét (m) gyorsítja (a Newton második törvénye szerint: F = m * a).",
+       "type": "story",
+       "heading": "A gyorsulás és a fékezés"
+      },
+      {
+       "body": "Amikor a fiatal befordul egy sarkon, az autó sebessége változik, ami a kanyarodás miatt következik be. A súrlódási erő segít az autót stabilan tartani a kanyarban, és megakadályozza, hogy az autó megcsússzon. Ez a külső hatás elengedhetetlen a biztonságos közlekedéshez.",
+       "type": "story",
+       "heading": "Kanyarodás és súrlódás"
+      },
+      {
+       "body": "A fiatal megérkezik egy piros lámpához, és elkezdi fékezni az autót. A fékezés során a lassulás (negatív gyorsulás) következik be, amely a fékek által kifejtett erő következménye. A jármű tömege és a fékerő határozza meg, hogy milyen gyorsan áll meg az autó.",
+       "type": "story",
+       "heading": "A fékezés hatása"
+      }
+     ]
+    },
+    {
+     "block_id": "9fd5a9a0-12e1-45dc-b8ec-a5cdd3078a86",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az elejtett test mozgása a nehézségi erő hatására.",
+       "diagram": {
+        "shapes": [
+         {
+          "r": 18,
+          "x": 200,
+          "y": 70,
+          "type": "circle"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 90,
+          "y2": 190,
+          "type": "arrow"
+         },
+         {
+          "x": 215,
+          "y": 150,
+          "text": "F = m·g (nehézségi erő)",
+          "type": "label"
+         },
+         {
+          "x1": 60,
+          "x2": 340,
+          "y1": 250,
+          "y2": 250,
+          "type": "line",
+          "dashed": false
+         },
+         {
+          "x": 120,
+          "y": 285,
+          "text": "g ≈ 9,8 m/s² (Földön, kb.)",
+          "type": "label"
+         },
+         {
+          "x": 20,
+          "y": 40,
+          "text": "minden szabadon eső test egyformán gyorsul (légellenállás nélkül)",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Az elejtett test mozgása",
+       "description": "Egy egyszerű diagram, amely egy testet ábrázol, amelyet egy magasságból ejtenek le. Az ábra mutatja a test mozgását az elejtéstől kezdve a földet érésig, valamint a nehézségi erő irányát.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A nehézségi erő és gyorsulás kapcsolatának ábrázolása.",
+       "heading": "Nehézségi erő és nehézségi gyorsulás",
+       "description": "Egy grafikon, amely a nehézségi gyorsulás (g = 9,81 m/s²) és a nehézségi erő (F = m * g) kapcsolatát ábrázolja. A grafikonon a tömeg (m) és a nehézségi erő (F) közötti arányosság látható.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Newton 2. törvénye: az erő, a tömeg és a gyorsulás kapcsolata.",
+       "heading": "Newton 2. törvénye",
+       "description": "Egy vázlat, amely bemutatja Newton második törvényét: F = m * a. Az ábra tartalmaz egy testet, amelyre erő (F) hat, és a test gyorsulását (a) is jelzi.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A kanyarodó autó mozgásának külső hatásai.",
+       "diagram": {
+        "shapes": [
+         {
+          "x1": 20,
+          "x2": 380,
+          "y1": 190,
+          "y2": 190,
+          "type": "line",
+          "dashed": false
+         },
+         {
+          "h": 40,
+          "w": 120,
+          "x": 130,
+          "y": 140,
+          "type": "box"
+         },
+         {
+          "r": 7,
+          "x": 160,
+          "y": 186,
+          "type": "circle"
+         },
+         {
+          "r": 7,
+          "x": 225,
+          "y": 186,
+          "type": "circle"
+         },
+         {
+          "x1": 260,
+          "x2": 350,
+          "y1": 160,
+          "y2": 160,
+          "type": "arrow"
+         },
+         {
+          "x": 270,
+          "y": 140,
+          "text": "mozgás iránya",
+          "type": "label"
+         },
+         {
+          "x1": 130,
+          "x2": 50,
+          "y1": 215,
+          "y2": 215,
+          "type": "arrow"
+         },
+         {
+          "x": 40,
+          "y": 240,
+          "text": "súrlódási erő (fékez)",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Külső hatások az autó mozgásában",
+       "description": "Egy diagram, amely egy kanyarodó autót ábrázol, és mutatja a súrlódási erő irányát, valamint a gyorsulás irányát. A diagramon az autó sebességváltozása is látható.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A sebesség csökkenése fékezés közben.",
+       "heading": "Sebességváltozás fékezés során",
+       "description": "Egy grafikon, amely a fékezés során a sebesség időbeli változását ábrázolja. Az ábra bemutatja, hogyan csökken a sebesség, amikor a fék hatására külső erő (F) lép fel.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Sebesség mérésének lépései.",
+       "heading": "Sebesség mérésének eljárása",
+       "description": "Egy vázlat, amely bemutatja a sebesség mérésére szolgáló eljárást, például egy stoppert és egy mérőszalagot használva. A vázlat tartalmazza a mérési lépéseket.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "d7b067b8-a8ab-4390-8aca-0b0dce87f7d2",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A sebességmérők a modern járművek alapfelszereltségéhez tartoznak, és elengedhetetlenek a közlekedés biztonságához.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 50,
+          "w": 200,
+          "x": 100,
+          "y": 150,
+          "type": "box"
+         },
+         {
+          "x": 150,
+          "y": 165,
+          "text": "Sebességmérő",
+          "type": "label"
+         },
+         {
+          "r": 15,
+          "x": 50,
+          "y": 175,
+          "type": "circle"
+         },
+         {
+          "x": 40,
+          "y": 180,
+          "text": "Jármű",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 300,
+          "y1": 175,
+          "y2": 175,
+          "type": "arrow"
+         },
+         {
+          "x": 250,
+          "y": 165,
+          "text": "Sebesség",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Sebességmérés a gyakorlatban",
+       "discovery": "A sebesség mérése már az ókorban is fontos volt, például a rómaiak a futók sebességét mérték, hogy megállapítsák, ki a leggyorsabb. A modern időszakban a sebességmérő (speedometer) feltalálása, amelyet az 1800-as évek elején kezdtek el használni az autókban, forradalmasította a közlekedést. A sebességmérők pontosan mérik a járművek sebességét, ami segít a közlekedés biztonságában és a sebességhatárok betartásában.",
+       "try_basic": "Mérj meg egy távolságot (például egy utcát vagy udvart) egy időintervallum alatt, és számold ki a sebességedet, ha futottál vagy kerékpároztál.",
+       "try_advanced": "Készíts egy egyszerű sebességmérőt egy stoppert és egy mérőszalag segítségével, és mérj különböző járművek sebességét (például autók, kerékpárok) egy forgalmas úton, figyelve a sebességhatárokat."
+      }
+     ]
+    },
+    {
+     "block_id": "80ff9707-85b3-4cc0-b987-cd6d7afa06ca",
+     "mode": "deep",
+     "scope": "lesson",
+     "level": "emelt",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A Föld nehézségi ereje folyamatosan húzza az almát a talaj felé, ami miatt az alma gyorsul. Ez az erő a Föld tömegéből származik, amely vonzza a körülötte lévő tárgyakat. Az alma gyorsulása az úgynevezett nehézségi gyorsulás (g), ami minden tárgyra ugyanúgy hat, függetlenül a tömegüktől. Ezért egy toll és egy alma ugyanúgy esne, ha nem lenne légellenállás.",
+       "type": "deep",
+       "think": "Mi történne, ha egy tollat és egy almát ejtenél le a Holdon?",
+       "anchor": 0,
+       "heading": "Miért gyorsul az alma?",
+       "did_you_know": "A Holdon a nehézségi gyorsulás csak körülbelül 1,62 m/s², ezért ott minden tárgy lassabban esik le, mint a Földön.",
+       "think_answer": "A Holdon, ahol nincs légellenállás, a toll és az alma egyszerre érne földet, mert a nehézségi gyorsulás mindkettőre ugyanúgy hat."
+      },
+      {
+       "body": "Newton második törvénye szerint a gyorsulás nemcsak az erőtől, hanem a test tömegétől is függ. Minél nagyobb a test tömege, annál kisebb lesz a gyorsulása ugyanakkora erő hatására. Ezért nehezebb egy nehéz tárgyat gyorsan mozgatni, mint egy könnyűt. Képzeld el, hogy egy gördeszkát és egy nagy sziklát próbálsz meg ugyanazzal az erővel meglökni. A gördeszka sokkal gyorsabban fog gyorsulni.",
+       "type": "deep",
+       "think": "Miért nehezebb egy nehéz bőröndöt gyorsan megemelni, mint egy könnyű hátizsákot?",
+       "anchor": 1,
+       "heading": "Miért számít a tömeg?",
+       "did_you_know": "Az űrhajók kilövésénél az üzemanyag tömege is fontos tényező, mert a rakéta tömegének jelentős részét teszi ki.",
+       "think_answer": "A nehéz bőrönd nagyobb tömege miatt több erőre van szükség ahhoz, hogy ugyanakkora gyorsulást érj el vele, mint a könnyű hátizsákkal."
+      },
+      {
+       "body": "Amikor egy autó kanyarodik, a súrlódási erő tartja az autót az úton. Ha az útfelület csúszós, például eső után, a súrlódási erő csökken, és az autó könnyebben megcsúszhat. Ez azért van, mert a gumik nem tudnak elég erősen kapaszkodni az útfelületbe. A kanyarodás során a sebesség és a kanyar íve is befolyásolja, hogy mennyire stabil az autó.",
+       "type": "deep",
+       "think": "Miért fontos, hogy az autók gumiabroncsai jó állapotban legyenek esős időben?",
+       "anchor": 2,
+       "heading": "Miért csúszik meg az autó?",
+       "did_you_know": "A versenyautók speciális gumikkal közlekednek, amelyek jobban tapadnak a pályán, hogy nagyobb sebességgel tudjanak kanyarodni.",
+       "think_answer": "A jó állapotú gumiabroncsok jobb tapadást biztosítanak, ami növeli a súrlódási erőt, és így csökkenti a megcsúszás esélyét."
+      },
+      {
+       "body": "Amikor fékezel, az autó mozgási energiáját a fékek hőenergiává alakítják, ami lelassítja a járművet. A fékek által kifejtett erő és az autó tömege határozza meg, mennyi idő alatt áll meg az autó. Nagyobb tömegű autó hosszabb fékutat igényel ugyanakkora fékező erő mellett. Ezért fontos, hogy a fékek mindig jó állapotban legyenek, különösen nagyobb sebességnél.",
+       "type": "deep",
+       "think": "Miért kell nagyobb távolságot tartani a járművek között esős időben?",
+       "anchor": 3,
+       "heading": "Hogyan áll meg az autó?",
+       "did_you_know": "Az elektromos autók fékezéskor visszanyerik az energiát, és ezzel tölthetik az akkumulátort.",
+       "think_answer": "Esős időben az úttest csúszósabb, ami csökkenti a súrlódási erőt, így az autó hosszabb fékutat igényel a megálláshoz."
+      },
+      {
+       "body": "A GPS műholdak jeleket küldenek a Földre, amelyeket a GPS-eszközök fogadnak. Az eszköz kiszámítja a helyzetedet és a sebességedet, az alapján, hogy mennyi idő alatt érkeznek meg a jelek. A GPS pontosan tudja követni, hogy milyen gyorsan mozogsz, mert a műholdak állandóan sugároznak. Ezért hasznos a GPS nemcsak navigációra, hanem sebességmérésre is.",
+       "type": "deep",
+       "think": "Miért nem működik a GPS pontosan épületek között vagy alagutakban?",
+       "anchor": 4,
+       "heading": "Hogyan működik a GPS?",
+       "did_you_know": "A GPS műholdak 20 200 km magasan keringenek a Föld körül.",
+       "think_answer": "Az épületek és alagutak akadályozhatják a műholdak jeleit, így a GPS-eszköz nem tudja pontosan meghatározni a helyzetet."
+      }
+     ]
+    },
+    {
+     "block_id": "9dd860e7-ac36-4293-bae7-be55a5f0b040",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Nehézségi erő",
+        "B) Légellenállás",
+        "C) Súrlódási erő",
+        "D) Centripetális erő"
+       ],
+       "question": "Melyik erő hat egy elejtett testre a Föld felszínén?",
+       "explanation": "Az elejtett testre a Föld vonzásából adódóan a nehézségi erő (gravitációs erő) hat.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 9,81 m/s²",
+        "B) 1 m/s²",
+        "C) 10 m/s²",
+        "D) 0 m/s²"
+       ],
+       "question": "Mi a nehézségi gyorsulás (g) értéke a Föld felszínén?",
+       "explanation": "A nehézségi gyorsulás (g) a Föld felszínén körülbelül 9,81 m/s², amely a testek gyorsulását jelenti a Föld felé.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az alkalmazott erő és a test tömege",
+        "B) Csak a test tömege",
+        "C) Csak az alkalmazott erő",
+        "D) A test sebessége"
+       ],
+       "question": "Newton második törvénye szerint mi határozza meg a test gyorsulását?",
+       "explanation": "Newton második törvénye kimondja, hogy a test gyorsulása arányos az alkalmazott erővel és fordított arányban áll a test tömegével.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Súrlódási erő",
+        "B) Nehézségi erő",
+        "C) Légellenállás",
+        "D) Centripetális erő"
+       ],
+       "question": "Melyik erő okozza a járművek kanyarodását?",
+       "explanation": "A járművek kanyarodása során a súrlódási erő segíti a járművet a kanyarban, megakadályozva a csúszást.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Csökkenti a sebességet",
+        "B) Növeli a sebességet",
+        "C) Megszünteti a sebességet",
+        "D) Nincs hatása a sebességre"
+       ],
+       "question": "Milyen hatást gyakorol a fékezés a jármű sebességére?",
+       "explanation": "A fékezés során a járműre ható erő csökkenti a sebességet, így a jármű lassul.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "7fc16a04-15db-407a-a6d3-0363da979eab",
+   "title_hu": "Közlekedési eszközök biztonsági rendszerei",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "5906cd6d-7be3-4132-a702-de522068f467",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az önvezérelt autók (autonóm járművek) képesek önállóan közlekedni, anélkül, hogy emberi sofőrre lenne szükségük. Ezek az autók érzékelőkkel és kamerákkal figyelik a környezetüket, és a begyűjtött adatokat feldolgozva hoznak döntéseket. Például, ha az autó észlel egy gyalogost az úton, automatikusan megáll vagy kikerüli őt. A technológia folyamatosan fejlődik, és a cél az, hogy a közlekedés biztonságosabbá váljon, csökkentve a balesetek számát.",
+       "type": "text",
+       "heading": "Önvezérelt autók működése",
+       "key_term": "önvezérelt autó"
+      },
+      {
+       "body": "A légzsák (airbag) egy biztonsági rendszer, amely az ütközés során védi az utasokat. Amikor az autó hirtelen megáll, a légzsák gyorsan felfújódik, így csökkenti az ütközés erejét, amely az utasokra nehezedik. A légzsák működése a kölcsönhatás (interakció) elvén alapul: a légzsák a mozgásban lévő utasokat megállítja, így csökkenti a sérülések kockázatát. Ez a technológia különösen fontos a frontális ütközések esetén.",
+       "type": "text",
+       "heading": "A légzsák működése",
+       "key_term": "légzsák"
+      },
+      {
+       "body": "A biztonsági öv (biztonsági öv) a járművek egyik legfontosabb biztonsági eleme. Az öv megakadályozza, hogy az utasok az ütközés során előre repüljenek, ezzel csökkentve a sérülések kockázatát. A biztonsági öv működése szintén a kölcsönhatás elvén alapul: az öv az utas testére ható erőt csökkenti, így védve őt a balesetek során. A használata tehát alapvető fontosságú a közlekedés biztonságában.",
+       "type": "text",
+       "heading": "A biztonsági öv szerepe",
+       "key_term": "biztonsági öv"
+      },
+      {
+       "body": "A kölcsönhatás (interakció) fogalma a fizika egyik alapvető eleme, amely a közlekedés során is megfigyelhető. Például, amikor egy autó ütközik egy másik járművel, az erők kölcsönhatásba lépnek egymással, és ez hatással van mindkét jármű mozgására. A biztonsági rendszerek, mint a légzsák és a biztonsági öv, arra szolgálnak, hogy minimalizálják a kölcsönhatás következményeit a balesetek során. Az ilyen rendszerek tudatos használata segíthet megóvni az utasokat a sérülésektől.",
+       "type": "text",
+       "heading": "Kölcsönhatás a közlekedésben",
+       "key_term": "kölcsönhatás"
+      },
+      {
+       "body": "A modern telefonos applikációk, mint például a Fitnesz vagy a Google Fit, lehetővé teszik a mozgásunk részletes elemzését. Ezek az applikációk nyomon követik a lépéseink számát, a megtett távolságot, sőt, még a sebességünket is. Például, ha futsz a parkban, az applikáció rögzíti az időt, a távolságot és az elégetett kalóriákat. Ez a technológia nemcsak szórakoztató, hanem segít a sportolás során a teljesítményünk javításában is.",
+       "type": "text",
+       "heading": "Mozgás elemzése applikációval",
+       "key_term": "telefonos applikáció"
+      }
+     ]
+    },
+    {
+     "block_id": "acda325d-c6bf-4e7e-92be-07aa90766445",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy önvezérelt autó érzékelői folyamatosan figyelik a környezetüket. A lézeres távolságmérők és kamerák adatokat gyűjtenek a forgalomról, gyalogosokról és a közlekedési táblákról. Ezek az adatok a jármű központi számítógépéhez jutnak, amely azonnal kiértékeli a helyzetet, és meghozza a szükséges döntéseket a biztonságos közlekedés érdekében.",
+       "type": "story",
+       "heading": "Az önvezérelt autó elindul"
+      },
+      {
+       "body": "Az autó a begyűjtött információk alapján elkezdi módosítani a sebességét és irányát. A kölcsönhatás során a jármű a környezetével való folyamatos kapcsolattartás révén képes elkerülni az ütközéseket. Például, ha egy gyalogos lép az útra, az autó automatikusan fékezni kezd, hogy megakadályozza a balesetet.",
+       "type": "story",
+       "heading": "Kölcsönhatás a környezettel"
+      },
+      {
+       "body": "Ha a kocsi balesetet szenved, a beépített gyorsulásmérők azonnal érzékelik a hirtelen lassulást. A légzsák rendszer azonnal aktiválódik, és a légzsák kinyílik, hogy megvédje az utasokat a becsapódástól. Ez a folyamat a fizikai kölcsönhatás elvén alapul: a légzsák felfújódása csökkenti a mozgás energiáját, amely a becsapódás következtében keletkezik.",
+       "type": "story",
+       "heading": "A légzsák aktiválása"
+      },
+      {
+       "body": "A légzsák mellett a biztonsági öv is fontos szerepet játszik a balesetek során. Ha az autó hirtelen megáll, a biztonsági öv megakadályozza, hogy az utasok előre repüljenek. A biztonsági öv és a légzsák együttes működése biztosítja, hogy az utasok a lehető legnagyobb védelmet kapják. A kölcsönhatás itt is megfigyelhető: a biztonsági öv feszülése és a légzsák felfújódása együttesen csökkenti a sérülés kockázatát.",
+       "type": "story",
+       "heading": "A biztonsági öv szerepe"
+      },
+      {
+       "body": "A közlekedési eszközök biztonsági rendszereinek működését a modern technológia segítségével is követhetjük. Például egy telefonos alkalmazás képes rögzíteni az autó mozgását, és elemezni a gyorsulásokat, fékezéseket, valamint az ütközéseket. Ez lehetővé teszi a járművezetők számára, hogy jobban megértsék a közlekedési helyzeteket és javítsák a vezetési szokásaikat.",
+       "type": "story",
+       "heading": "A mozgás elemzése"
+      }
+     ]
+    },
+    {
+     "block_id": "988c7f19-cdc8-4113-9e91-223ce3afbd86",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Önvezérelt autó működési elve: érzékelők és adatfeldolgozás",
+       "heading": "Önvezérelt autó működési elve",
+       "description": "A diagram bemutatja az önvezérelt autók érzékelőit, mint például a radar, lidar és kamerák, valamint az adatfeldolgozó egységeket, amelyek a jármű környezetét elemzik és a döntéseket meghozzák.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A légzsák működése ütközéskor",
+       "heading": "Légzsák működése",
+       "description": "A vázlat szemlélteti a légzsák működését ütközéskor. Az ütközés során a jármű érzékelői aktiválják a légzsákot, amely gyorsan felfújódik, hogy megvédje az utasokat.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A biztonsági öv szerkezete és működése",
+       "heading": "Biztonsági öv működése",
+       "description": "A keresztmetszet bemutatja a biztonsági öv szerkezetét és működését, valamint azt, hogyan tartja az utasokat a helyükön ütközés esetén.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Kölcsönhatások járművek ütközésekor",
+       "heading": "Kölcsönhatás a járművek között",
+       "description": "A grafikon ábrázolja a kölcsönhatásokat, amelyek a járművek ütközésekor keletkeznek, beleértve a mozgási energiát és a hatásokat.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Mozgás elemzése telefonos applikáció segítségével",
+       "heading": "Mozgás elemzése applikációval",
+       "description": "Egy telefonos applikáció képernyőképe, amely a mozgásadatokat (sebesség, távolság, idő) elemzi és grafikonon ábrázolja.",
+       "visual_type": "screenshot"
+      }
+     ]
+    },
+    {
+     "block_id": "76a0b58b-3fee-4bf9-9e9f-0777189f7fc4",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A közlekedési eszközök, mint például az autók és kerékpárok, biztonsági rendszerei segítenek megvédeni az utasokat a balesetek során, például légzsákok, fékrendszerek és ABS (blokkolásgátló rendszer) révén.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Mozgás a mindennapokban",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "b898e971-fb4b-4bcd-ac44-2637c7b108ec",
+     "mode": "deep",
+     "scope": "lesson",
+     "level": "emelt",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az önvezérelt autók nemcsak kamerákat használnak, hanem más érzékelőket is, például lézeralapú távolságmérőket (LiDAR) és radart. A lézeralapú távolságmérő (LiDAR) segítségével az autó pontosan meg tudja határozni a tárgyak távolságát és helyzetét a környezetében. A radar pedig különösen hasznos rossz időben, például ködben vagy esőben, amikor a kamerák látása korlátozott. Ezek az érzékelők együttműködve segítenek abban, hogy az autó pontos képet kapjon a környezetről.",
+       "type": "deep",
+       "think": "Mi történne, ha az önvezérelt autó érzékelői meghibásodnának?",
+       "anchor": 0,
+       "heading": "Hogyan lát az önvezérelt autó?",
+       "did_you_know": "",
+       "think_answer": "Ha az érzékelők meghibásodnának, az autó nem tudná pontosan észlelni a környezetét, ami balesetveszélyes helyzetet teremthetne. Ezért fontos, hogy az autókban többféle érzékelő legyen, amelyek egymást kiegészítik."
+      },
+      {
+       "body": "A légzsák működésének kulcsa a benne lévő pirotechnikai töltet, amely az ütközéskor robbanásszerűen ég el. Ez a robbanás gyorsan felfújja a légzsákot, hogy az még azelőtt érintkezzen az utassal, mielőtt az előrelendülne. Az egész folyamat kevesebb mint 0,1 másodperc alatt zajlik le. Az időzítés kritikus, mert ha a légzsák túl későn fúvódna fel, nem védene meg megfelelően.",
+       "type": "deep",
+       "think": "Mi történne, ha a légzsák túl korán fúvódna fel?",
+       "anchor": 1,
+       "heading": "Miért fúvódik fel olyan gyorsan a légzsák?",
+       "did_you_know": "",
+       "think_answer": "Ha a légzsák túl korán fúvódna fel, az utas még nem lenne elég közel hozzá, így nem nyújtana megfelelő védelmet az ütközés pillanatában."
+      },
+      {
+       "body": "A biztonsági övekben található előfeszítő rendszer az ütközés pillanatában aktiválódik. Ez a rendszer egy kis robbanószerkezetet használ, amely az ütközés hatására meghúzza az övet, így szorosan tartja az utast. Az előfeszítő segít csökkenteni az utas előrelendülését, növelve a biztonságot. Az öv előfeszítése után a rendszer lazít egy kicsit, hogy az utas kényelmesen lélegezhessen.",
+       "type": "deep",
+       "think": "Miért fontos, hogy a biztonsági öv szorosan tartson egy ütközés során?",
+       "anchor": 2,
+       "heading": "Hogyan működik a biztonsági öv előfeszítője?",
+       "did_you_know": "A biztonsági öv előfeszítője nagyon gyorsan húzza meg az övet, hogy az utast biztonságosan a helyén tartsa ütközéskor.",
+       "think_answer": "Ha a biztonsági öv nem tart szorosan, az utas előrelendülhet, ami növeli a sérülés kockázatát. A szoros öv segít az utas testét a helyén tartani, minimalizálva az ütközés hatását."
+      },
+      {
+       "body": "Amikor egy jármű lassít, a fékek működése révén csökken a jármű sebessége. Ez a folyamat a kölcsönhatás egy formája, hiszen a fékek az autó kerekére hatnak, amelyek viszont az úttal érintkeznek. A súrlódási erő a fékezés során hővé alakul, ami lassítja az autót. A lassulás mértéke attól függ, milyen erősen nyomjuk a féket, és milyenek az útviszonyok.",
+       "type": "deep",
+       "think": "Mi történik, ha hirtelen fékezel egy csúszós úton?",
+       "anchor": 3,
+       "heading": "Kölcsönhatás a sebességnél: mi történik, ha lassítasz?",
+       "did_you_know": "A fékek hőmérséklete fékezéskor akár több száz Celsius-fokra is emelkedhet.",
+       "think_answer": "Hirtelen fékezéskor a kerekek megcsúszhatnak, és elveszítheted az irányítást a jármű felett. Ilyenkor az ABS (blokkolásgátló rendszer) segíthet megakadályozni a kerekek blokkolását."
+      },
+      {
+       "body": "A sportolás közben végzett mérések, például a pulzusszám vagy a sebesség, segítenek abban, hogy hatékonyabban eddzünk. Ha például futás közben tudod, hogy milyen tempóban haladsz, optimalizálhatod az energiakifejtésed. Az applikációk nemcsak a sebességet, hanem a megtett távolságot és az elégetett kalóriákat is mérik, ami segít a célok elérésében. A pontos adatok alapján könnyebb megtervezni a következő edzést.",
+       "type": "deep",
+       "think": "Miért lehet hasznos, ha tudod, mennyi kalóriát égetsz el egy edzés során?",
+       "anchor": 4,
+       "heading": "Miért fontos a pontos mérés sportolás közben?",
+       "did_you_know": "Egyes applikációk képesek a futás közbeni lépésszámot is mérni, ami segíthet a futótechnika javításában.",
+       "think_answer": "Az elégetett kalóriák ismerete segíthet a táplálkozás és az edzés egyensúlyának megtartásában, különösen, ha fogyás vagy izomépítés a célod."
+      }
+     ]
+    },
+    {
+     "block_id": "21663df6-078f-4eec-9d18-5e6813447825",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Szenzorok és algoritmusok segítségével érzékeli a környezetét és döntéseket hoz.",
+        "B) Csak GPS segítségével navigál.",
+        "C) Az emberi irányításra támaszkodik.",
+        "D) Csak a sebességfigyelő rendszert használja."
+       ],
+       "question": "Mi a fő működési elve az önvezérelt autóknak?",
+       "explanation": "Az önvezérelt autók szenzorok és algoritmusok segítségével érzékelik a környezetüket, és ezek alapján automatikusan hozzák meg a vezetési döntéseket.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Azonnal felfúvódik, ha a jármű érzékeli a hirtelen lassulást.",
+        "B) Csak akkor működik, ha az autó sebessége meghalad egy bizonyos értéket.",
+        "C) A légzsák csak akkor működik, ha az utasok nem használnak biztonsági övet.",
+        "D) A légzsák folyamatosan felfújt állapotban van."
+       ],
+       "question": "Hogyan működik a légzsák (airbag) védelmi rendszere baleset esetén?",
+       "explanation": "A légzsák azonnal felfúvódik, amikor a jármű érzékeli a hirtelen lassulást, ezzel csökkentve a baleset során az utasok sérülésének kockázatát.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Megakadályozza, hogy az utasok elhagyják az autót.",
+        "B) Csökkenti az utasok mozgását balesetkor.",
+        "C) Csak a vezető biztonságát szolgálja.",
+        "D) Növeli az autó sebességét."
+       ],
+       "question": "Mi a biztonsági öv (seatbelt) fő funkciója?",
+       "explanation": "A biztonsági öv fő funkciója, hogy csökkentse az utasok mozgását balesetkor, így minimalizálva a sérülések kockázatát.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A légzsák felfúvódik, és felfogja az utas mozgását.",
+        "B) Az utas elhagyja az autót.",
+        "C) A légzsák nem befolyásolja az utast.",
+        "D) Az utas megemeli a légzsákot."
+       ],
+       "question": "Milyen kölcsönhatás történik a légzsák és az utas között balesetkor?",
+       "explanation": "A légzsák felfúvódik és felfogja az utas mozgását, ezzel csökkentve a sérülések kockázatát a baleset során.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A tehetetlenség elve.",
+        "B) A gravitáció elve.",
+        "C) A hőmérséklet elve.",
+        "D) A nyomás elve."
+       ],
+       "question": "Milyen fizikai elv alapján működik a biztonsági öv?",
+       "explanation": "A biztonsági öv a tehetetlenség elvén működik, amely szerint a mozgásban lévő testek megőrizzék mozgásállapotukat, így megakadályozza, hogy az utasok előre zuhanjanak balesetkor.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "33da00e9-9d61-46e0-a9b8-81f71a450a6f",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) m/s",
+      "B) kg",
+      "C) N",
+      "D) J"
+     ],
+     "question": "Mi a sebesség mértékegysége?",
+     "explanation": "A sebesség mértékegysége a méter per másodperc (m/s), ami azt jelzi, hogy egy test mennyi utat tesz meg egy másodperc alatt.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Autó egyenletesen halad az úton",
+      "B) Egy labda leesik a földre",
+      "C) Fúj a szél",
+      "D) Az autó gyorsul a lámpánál"
+     ],
+     "question": "Melyik mozgás példa a közel állandó sebességű mozgásra?",
+     "explanation": "Az autó egyenletes haladása azt jelenti, hogy a sebessége nem változik, így közel állandó sebességű mozgásról van szó.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Különböző mértékegysége van",
+      "B) Folyamatosan változik",
+      "C) Földön kb. 9,81 m/s²",
+      "D) Csak vízszintes mozgáskor érvényes"
+     ],
+     "question": "Mi jellemzi a nehézségi gyorsulást?",
+     "explanation": "A nehézségi gyorsulás a Földön körülbelül 9,81 m/s², ami azt jelzi, hogy a testek ennyivel gyorsulnak lefelé a Föld vonzereje miatt.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Csak a súrlódás",
+      "B) Kizárólag a gravitáció",
+      "C) Különböző külső erők, mint a súrlódás és a motor ereje",
+      "D) Nincs rá hatás"
+     ],
+     "question": "Milyen erő hat a gyorsuló autóra?",
+     "explanation": "A gyorsuló autóra több erő hat, például a motor ereje és a súrlódás, amelyek befolyásolják a sebességét.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Minden test megőrzi állapotát, amíg egy külső erő nem hat rá.",
+      "B) Az erő egyenlő a tömeg és a gyorsulás szorzataként.",
+      "C) A mozgás és az erő arányos.",
+      "D) A testek egymásra hatnak."
+     ],
+     "question": "Mi a Newton első törvénye?",
+     "explanation": "Newton első törvénye kimondja, hogy egy test nyugalomban marad, vagy egyenletes mozgást végez, amíg egy külső erő nem kényszeríti megváltoztatni ezt az állapotot.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az út és a sebesség hányadosaként",
+      "B) A sebesség és az idő szorzataként",
+      "C) Az út és az elmozdulás különbségeként",
+      "D) A sebesség és a tömeg hányadosaként"
+     ],
+     "question": "Hogyan számolhatjuk ki az utazásból hátralévő időt?",
+     "explanation": "Az utazásból hátralévő időt az út (m) és a sebesség (m/s) hányadosaként számolhatjuk ki, azaz idő = út / sebesség.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csak a kényelem miatt",
+      "B) A balesetek során csökkentik a sérülések kockázatát",
+      "C) Nincs hatásuk a balesetekre",
+      "D) Csak a sebesség növelésére szolgálnak"
+     ],
+     "question": "Miért fontos a légzsák és a biztonsági öv?",
+     "explanation": "A légzsák és a biztonsági öv a balesetek során csökkentik a sérülések kockázatát azáltal, hogy megakadályozzák a test hirtelen mozgását.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az a távolság, amit egy test megtett",
+      "B) A test helyének megváltozása egy kezdőponthoz képest",
+      "C) A test sebessége",
+      "D) A test gyorsulása"
+     ],
+     "question": "Mi az elmozdulás?",
+     "explanation": "Az elmozdulás a test helyének megváltozása egy adott kezdőponthoz képest, amely figyelembe veszi az irányt is.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

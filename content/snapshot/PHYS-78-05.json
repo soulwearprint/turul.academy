@@ -1,0 +1,964 @@
+{
+ "nat_id": "PHYS-78-05",
+ "topic_id": "92a8446b-a333-4a50-a4e3-7845c6aeb0cc",
+ "title_hu": "Víz és levegő a háztartásban és a környezetünkben",
+ "grade": 7,
+ "lessons": [
+  {
+   "lesson_id": "52d43954-73b2-46f1-8158-21c9ddc5612b",
+   "title_hu": "Halmazállapot-változások és hőmérséklet",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "6cbadbbe-211c-4ce5-9b0c-683e8e144451",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A jég olvadása egy klasszikus példa a halmazállapot-változásra. Amikor a jég hőmérséklete eléri az olvadáspontját, azaz 0 °C-ot, elkezd folyékonnyá válni. Ezt a folyamatot kísérleti úton is megfigyelhetjük, például ha jégkockákat teszünk egy tál vízbe, és figyeljük, hogyan olvadnak el. A víz fagyása hasonló, csak itt a hőmérséklet csökkenése szükséges ahhoz, hogy a víz ismét szilárd állapotba kerüljön.",
+       "type": "text",
+       "heading": "Jég olvadása és víz fagyása",
+       "key_term": "olvadás, fagyás"
+      },
+      {
+       "body": "A hőmérséklet folyamatosan változik a környezetünkben. Például, amikor teát főzünk, a víz hőmérséklete gyorsan emelkedik, amíg el nem érjük a forráspontot, ami 100 °C. Ezt a folyamatot hőmérővel pontosan nyomon követhetjük. A hőmérséklet mérése segít megérteni, mikor kezd el a víz gőzölni, és ezáltal párolgás is bekövetkezik.",
+       "type": "text",
+       "heading": "Hőmérséklet és időbeli változások",
+       "key_term": "hőmérséklet, forráspont, párolgás"
+      },
+      {
+       "body": "A termikus kölcsönhatások a mindennapi életünk részei. Amikor egy forró edényt helyezünk egy hideg felületre, a hő átadódik, és a felület felmelegszik. Ezt tapasztalhatjuk, amikor például egy indukciós főzőlapot használunk, ahol a hő közvetlenül a fazékhoz jut el. Ez a hatás fontos a főzés során, hiszen a hőmérséklet gyors változása befolyásolja az étel elkészítését.",
+       "type": "text",
+       "heading": "Termikus kölcsönhatások a háztartásban",
+       "key_term": "termikus kölcsönhatás, melegítés"
+      },
+      {
+       "body": "A víz forrása közben a folyékony víz gőzzé alakul. Amikor a víz eléri a 100 °C-ot, elkezd forrni, és vízgőz keletkezik. Ezt a jelenséget megfigyelhetjük, amikor például a konyhában vizet forralunk. A keletkező gőz látható, és ha a gőz érintkezik egy hideg felülettel, lecsapódik, ami a víz újabb halmazállapot-változását jelenti.",
+       "type": "text",
+       "heading": "A víz forrása és vízgőz",
+       "key_term": "forrás, vízgőz, lecsapódás"
+      },
+      {
+       "body": "A hőmérő készítése egy izgalmas projekt, amely segít jobban megérteni a hőmérséklet fogalmát. Használhatunk például egy üveget, amelybe színes vizet töltünk, és egy szívószálat helyezünk bele. Amikor a víz hőmérséklete változik, a színes víz szintje is változik, így könnyen nyomon követhetjük a hőmérsékletet. Ez a módszer segít megérteni a hőmérséklet változásait a környezetünkben.",
+       "type": "text",
+       "heading": "Hőmérséklet mérés és hőmérő készítése",
+       "key_term": "hőmérséklet, hőmérő"
+      },
+      {
+       "body": "A téli fagy nemcsak csodás tájat varázsol, hanem romboló hatása is lehet. Amikor a víz megfagy, térfogata megnő, és ez károsíthatja az épületek falait, például ha a víz bejut a repedésekbe, és a fagyás következtében tágul. Ezt a jelenséget megfigyelhetjük, amikor jégkockákat készítünk otthon, és észrevesszük, hogy a jégkocka formája megváltozik, ha a fagyasztóban hagyjuk túl sokáig.",
+       "type": "text",
+       "heading": "A téli fagy romboló ereje",
+       "key_term": "fagyás, romboló erő"
+      },
+      {
+       "body": "A páratartalom a levegő nedvességtartalmát jelzi, és nagy hatással van a lakókörnyezetünkre. Például, ha a páratartalom magas, a levegő nehezebben melegszik fel, ami kényelmetlen érzést okozhat. A páratartalom mérése egyszerű eszközzel segít megérteni, miért érezzük magunkat fáradtnak vagy levertnek egy meleg, párás napon. Ezért fontos figyelni a páratartalom változásait.",
+       "type": "text",
+       "heading": "Páratartalom és hatása",
+       "key_term": "páratartalom"
+      }
+     ]
+    },
+    {
+     "block_id": "77bbcd72-94be-4d5e-abfb-38032fc08ff7",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy névtelen szereplő a konyhában egy edény vizet helyez a tűzhelyre. A tűzhely bekapcsolásával a hőmérséklet emelkedni kezd. A víz molekulái, amelyek korábban szorosabban helyezkedtek el egymás mellett, egyre gyorsabban mozognak, és a víz folyékony halmazállapotban marad.",
+       "type": "story",
+       "heading": "A víz melegítése"
+      },
+      {
+       "body": "Ahogy a hőmérséklet tovább emelkedik, a víz eléri a forráspontot (100 °C), és elkezd gőz képződni. A vízmolekulák annyira energikusak lesznek, hogy képesek elhagyni a folyékony halmazállapotot, és légneművé alakulnak. Ekkor a víz felszínén buborékok jelennek meg, amelyek a gőzt szabadítják fel.",
+       "type": "story",
+       "heading": "A forrás megfigyelése"
+      },
+      {
+       "body": "A forrás során a hőmérséklet stabilan 100 °C-on marad, amíg a víz teljesen el nem párolog. Ez a jelenség a felvett hő (a víz hőmérsékletének emelkedése) és a leadott hő (a gőz képződése) közötti egyensúly miatt történik. A hőmérséklet nem emelkedik tovább, mert a hőenergia most a halmazállapot-változásra fordítódik.",
+       "type": "story",
+       "heading": "A hőmérséklet változása"
+      },
+      {
+       "body": "Most nézzük meg, mi történik, amikor a víz lehűl. A hőmérséklet csökkenésével a víz molekulái egyre lassabban mozognak, és végül elérik a fagyáspontot (0 °C). Ekkor a víz folyékony halmazállapota szilárd halmazállapotú jéggé alakul. A jégkockák elkészítése során a vízben lévő molekulák elrendeződnek, és szorosabb kapcsolatba kerülnek egymással.",
+       "type": "story",
+       "heading": "A víz fagyása"
+      },
+      {
+       "body": "A téli hidegben a fagyás nemcsak a vízre van hatással, hanem a környezetünkre is. Például a fagyás miatt a víz a fákban is megfagyhat, ami repedéseket okozhat a kéregben. Ez a jelenség a fagy romboló erejének példája, amely a hőmérséklet csökkenésével és a víz fagyásával kapcsolatos.",
+       "type": "story",
+       "heading": "A téli fagy hatása"
+      }
+     ]
+    },
+    {
+     "block_id": "8e5667f8-2381-4c30-9421-03e881637dad",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A jég olvadásának hőmérsékleti viselkedése.",
+       "heading": "Jég olvadása",
+       "description": "A jég olvadásának folyamatát bemutató diagram, amelyen látható a hőmérséklet emelkedése és az olvadás során bekövetkező állapotváltozás.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A víz fagyásának hőmérsékleti folyamata.",
+       "heading": "Víz fagyása",
+       "description": "Grafikon, amely a víz hőmérsékletének csökkenését mutatja, míg a víz szilárd állapotba (jég) változik.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Hőmérséklet változása időben a melegítés során.",
+       "heading": "Hőmérséklet időbeli változása",
+       "description": "Vázlat, amely a hőmérséklet változását mutatja különböző időpontokban, például a leves vagy tea melegítése során.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A víz forrásának és a vízgőz kialakulásának bemutatása.",
+       "heading": "Forrásjelenség",
+       "description": "Keresztmetszet, amely a víz forrásának folyamatát mutatja, beleértve a vízgőz keletkezését.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A halmazállapotok és az anyagot alkotó részecskék elrendezése.",
+       "heading": "Halmazállapotok és részecskék",
+       "description": "Egyszerű modell, amely bemutatja a szilárd, folyékony és légnemű halmazállapotokat az anyagot alkotó részecskék (apró golyók) elrendezésével.",
+       "visual_type": "modell"
+      },
+      {
+       "type": "visual",
+       "caption": "Termikus kölcsönhatások a hőleadás és hőfelvétel szempontjából.",
+       "heading": "Termikus kölcsönhatások",
+       "description": "Diagram, amely a termikus kölcsönhatások során a hőleadást és hőfelvételt mutatja be, például a meleg víz és a hideg levegő között.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A fagyás romboló hatásainak bemutatása.",
+       "heading": "Fagyás romboló ereje",
+       "description": "Grafikon, amely a fagyás során bekövetkező fizikai változásokat szemlélteti, például a víz térfogatának növekedését, ami romboló hatással lehet.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A páratartalom hatása a lakókörnyezetre és az emberi szervezetre.",
+       "heading": "Páratartalom változása",
+       "description": "Vázlat, amely a páratartalom változását mutatja különböző környezeti körülmények között és annak hatását az emberi szervezetre.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "36057be2-e4e6-40d8-91de-2bbcfc10eb75",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A hőmérséklet mérése és a halmazállapot-változások megértése a mindennapi életben is fontos, például az időjárás előrejelzésében, főzés során vagy akár a klímaberendezések működésében.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 80,
+          "w": 300,
+          "x": 50,
+          "y": 200,
+          "type": "box"
+         },
+         {
+          "x": 90,
+          "y": 220,
+          "text": "Víz (H₂O)",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Hőmérséklet és halmazállapot-változások",
+       "discovery": "A hőmérséklet és a halmazállapot-változások összefüggését már az ókorban is felfedezték. Arisztotelész például megfigyelte, hogy a víz fagyáspontja és forráspontja a hőmérséklet változásával összefügg. A 18. században Daniel Gabriel Fahrenheit és Anders Celsius nevéhez fűződik a hőmérséklet-skálák kidolgozása, amelyek segítették a hőmérséklet pontos mérését és a halmazállapot-változások megértését.",
+       "try_basic": "Készíts hőmérőt vízből és szívószálból! Tölts meg egy átlátszó poharat vízzel, majd helyezz bele egy szívószálat úgy, hogy a víz szintje látható legyen a szívószálban. Figyeld meg, hogyan változik a víz szintje, ha a hőmérséklet változik!",
+       "try_advanced": "Vizsgáld meg a páratartalom hatását a víz halmazállapot-változásaira! Használj egy páratartalom-mérőt, és figyeld meg, hogyan változik a víz forráspontja különböző páratartalom mellett."
+      }
+     ]
+    },
+    {
+     "block_id": "ebe1c9e0-beeb-40b5-8f58-4802a0cf085a",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A jég megolvad és vízzé válik.",
+        "B) A jég tovább fagy.",
+        "C) A jég párologni kezd.",
+        "D) A jég hőmérséklete csökken."
+       ],
+       "question": "Mi történik a jéggel, amikor a hőmérséklet eléri az olvadáspontját?",
+       "explanation": "Az olvadáspont elérésekor a jég halmazállapota megváltozik, és folyékony vízzé alakul.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) 0 °C",
+        "B) 100 °C",
+        "C) 50 °C",
+        "D) 25 °C"
+       ],
+       "question": "Milyen hőmérsékleten forr a víz normál légköri nyomáson?",
+       "explanation": "A víz forráspontja normál légköri nyomáson 100 °C; ez a hőmérséklet elérésekor a víz gázzá alakul.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A víz hőmérséklete csökken, és szilárd halmazállapotú jéggé alakul.",
+        "B) A víz forrni kezd.",
+        "C) A víz párologni kezd.",
+        "D) A víz hőmérséklete emelkedik."
+       ],
+       "question": "Mi a fagyás folyamata?",
+       "explanation": "A fagyás során a víz hőmérséklete csökken, és szilárd halmazállapotú jéggé alakul.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) A víz hőmérséklete csökken.",
+        "B) A víz folyékony halmazállapotból légnemű halmazállapotba alakul.",
+        "C) A víz szilárd halmazállapotba alakul.",
+        "D) A víz felforr."
+       ],
+       "question": "Milyen folyamat zajlik le, amikor a víz párolog?",
+       "explanation": "A párolgás során a víz folyékony halmazállapotból légnemű halmazállapotba alakul, miközben hőt vesz fel.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A jég olvadása a szobahőmérsékletű levegőben.",
+        "B) A víz fagyása a fagyasztóban.",
+        "C) A víz forrása a tűzhelyen.",
+        "D) A vízpárának lecsapódása a hideg felületen."
+       ],
+       "question": "Melyik jelenség a termikus kölcsönhatás példája?",
+       "explanation": "A jég olvadása a szobahőmérsékletű levegőben a termikus kölcsönhatás példája, ahol a jég hőt vesz fel a környezetből.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "83b8e6f9-7097-4933-a9b7-f6ac4dcf9817",
+   "title_hu": "Víz tulajdonságai és nyomás",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "1eca948d-3e0e-41f2-ace1-70ac0c982b8b",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A víz összenyomhatatlansága azt jelenti, hogy a víz térfogatát nem lehet jelentősen csökkenteni nyomás hatására. Ezt a tulajdonságot a mindennapi életben is tapasztalhatjuk, például amikor vízzel teli üveget próbálunk összenyomni. Ezért a víz nagyon fontos szerepet játszik a hidraulikus rendszerekben, mint például a fékrendszerekben is, ahol a nyomás átvitele elengedhetetlen.",
+       "type": "text",
+       "heading": "A víz összenyomhatatlansága",
+       "key_term": "összenyomhatatlanság"
+      },
+      {
+       "body": "A víz sűrűsége körülbelül 1 g/cm³, ami azt jelenti, hogy egy köbcentiméter víz tömege egy gramm. Ez a tulajdonság segít megérteni, miért úsznak a hajók a vízen, hiszen a hajó sűrűsége a víz sűrűsége alatt van. A víz folyékonysága pedig lehetővé teszi, hogy könnyen áramoljon, például amikor a csapból folyik, vagy amikor a felmosóvödörben keverjük a vizet.",
+       "type": "text",
+       "heading": "A víz sűrűsége és folyékonysága",
+       "key_term": "sűrűség, folyékonyság"
+      },
+      {
+       "body": "A nyomás (P) azt fejezi ki, hogy egy erő (F) mekkora felületen (A) hat. A nyomás mértékegysége a Pascal (Pa), ami egy newton per négyzetméter. Például, ha egy ember áll egy lábán, akkor a talajra kifejtett nyomás a testsúlyának és a lába felületének arányából adódik. Ezt a jelenséget könnyen megérthetjük, ha összehasonlítjuk a magassarkú cipőt viselő és a lapos talpú cipőt viselő emberek nyomását.",
+       "type": "text",
+       "heading": "A nyomás és mértékegysége",
+       "key_term": "nyomás"
+      },
+      {
+       "body": "A hidrosztatikai nyomás (P) a víz mélységétől függ, és a következő képlettel számolható: P = ρgh, ahol ρ a víz sűrűsége, g a gravitációs gyorsulás, h pedig a mélység. Ha például egy mély vízben lebegünk, akkor a víz nyomása egyre nő, ahogy lefelé haladunk. Ezt könnyen tesztelhetjük, ha egy vízzel teli palackba nyomunk egy szívószálat, és figyeljük meg, hogy a szívószál mélyebb részén erősebb a víz nyomása.",
+       "type": "text",
+       "heading": "Hidrosztatikai nyomás kísérlete",
+       "key_term": "hidrosztatikai nyomás"
+      },
+      {
+       "body": "A hajók úszásának titka a felhajtóerő (F) és a sűrűségfeltétel. Arkhimédész törvénye szerint a víz által kifejtett felhajtóerő megegyezik a hajó által kiszorított víz súlyával. Ezért egy acélból készült hajó is úszik, mert a hajó formája lehetővé teszi, hogy a kiszorított víz súlya nagyobb legyen, mint a hajó súlya. Ezért a hajók nem süllyednek el, hanem lebegnek a vízen.",
+       "type": "text",
+       "heading": "A hajók úszásának magyarázata",
+       "key_term": "úszás, felhajtóerő"
+      },
+      {
+       "body": "A kapilláris jelenségek a víz és más folyadékok mozgását jelentik keskeny csövekben vagy részecskék között. Például, amikor felmosunk, a szivacs a víz felületfeszültsége miatt szívja magába a folyadékot. Ez a jelenség megfigyelhető a növényekben is, ahol a víz a gyökerektől a levelekig emelkedik fel a növény szövetein keresztül. A kapilláris csövek tehát nemcsak a háztartásban, hanem a természetben is fontos szerepet játszanak.",
+       "type": "text",
+       "heading": "Kapilláris jelenségek a háztartásban",
+       "key_term": "kapilláris csövek"
+      }
+     ]
+    },
+    {
+     "block_id": "58ff93c8-9c0e-405a-a051-af6ef30db58c",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy névtelen szereplő megnyitja a konyhai vízcsapot. A víz szabadon áramlik, és a csapból kiömlő víz nyomása érzékelhető. Itt kezdődik a víz tapasztalati tulajdonságainak vizsgálata: a víz nem összenyomható, tehát a csőben lévő víz szabadon folytatódik, és a nyomás a cső belsejében egyenletesen oszlik el.",
+       "type": "story",
+       "heading": "A vízcsap megnyitása"
+      },
+      {
+       "body": "A vízcsap alatt egy edénybe gyűlik a víz. Ahogy az edény egyre mélyebb, a víz szintje is emelkedik. A mélység növekedésével a hidrosztatikai nyomás (p) is nő, amelyet a víz sűrűsége (ρ) és a gravitációs gyorsulás (g) határoz meg: p = ρgh. Ez a nyomás független az edény formájától, csak a mélységtől függ.",
+       "type": "story",
+       "heading": "A víz mélységéből adódó nyomás"
+      },
+      {
+       "body": "A vízben egy kis műanyag labda lebeg. A labda sűrűsége kisebb, mint a vízé, ezért a felhajtóerő, amelyet a víz gyakorol a labdára, megakadályozza, hogy elsüllyedjen. Ez a jelenség Arkhimédész törvénye alapján működik, amely kimondja, hogy a felhajtóerő megegyezik a kiemelt víz súlyával.",
+       "type": "story",
+       "heading": "A víz és a felhajtóerő"
+      },
+      {
+       "body": "A szereplő észreveszi, hogy a szivacs, amikor vízbe merül, gyorsan felszívja azt. Ez a kapilláris jelenség, amely a víz molekuláinak vonzódásával és a szivacs anyagának szerkezetével magyarázható. A víz a szivacs apró pórusaiban felkúszik, ezáltal lehetővé téve a felmosást.",
+       "type": "story",
+       "heading": "Kapilláris jelenségek a háztartásban"
+      },
+      {
+       "body": "A szereplő a telefonján az időjárás-előrejelzést nézi, és észreveszi, hogy a légnyomás változása befolyásolja a hőmérsékletet és a csapadékot. A magasabb helyeken a levegő sűrűsége csökken, így a nyomás is alacsonyabb. Ez a jelenség a víz és levegő kölcsönhatásának megértéséhez segít, és a felhők képződését is magyarázza.",
+       "type": "story",
+       "heading": "A víz és a levegő nyomása"
+      }
+     ]
+    },
+    {
+     "block_id": "d29d6a53-f1d8-40d6-8b23-bc85593689ee",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A víz összenyomhatatlansága: a nyomás növelése nem változtatja meg a víz térfogatát.",
+       "heading": "Összenyomhatatlanság",
+       "description": "Egy vízszintes tartály, amelyben víz található, és egy nyomásmérő, amely a vízfelszínen mért nyomást mutatja. A diagramon látható, hogy a víz szintje nem változik, amikor a tartályba nyomás nehezedik.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A víz sűrűségének változása hőmérséklet függvényében.",
+       "heading": "Sűrűség",
+       "description": "Egy grafikon, amely a víz sűrűségének (kg/m³) és a hőmérséklet (°C) közötti kapcsolatot mutatja. A víz sűrűsége csökken a hőmérséklet emelkedésével.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A víz folyékonysága: a víz könnyen áramlik.",
+       "heading": "Folyékonyság",
+       "description": "Egy vázlat, amely bemutatja a víz áramlását egy csőben, különböző sebességekkel. Az áramlás sima és folyamatos, a víz részecskéi egymás után haladnak.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A hidrosztatikai nyomás mélységtől való függése.",
+       "heading": "Hidrosztatikai nyomás",
+       "description": "Egy víz alatti diagram, amely bemutatja a mélység (m) és a hidrosztatikai nyomás (Pa) közötti kapcsolatot. A mélység növekedésével a nyomás is nő.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A felhajtóerő működése: az acélhajó úszik a vízen.",
+       "heading": "Felhajtóerő",
+       "description": "Egy acélhajó keresztmetszete, amely alatt a víz szintje és a felhajtóerő iránya látható. A felhajtóerő a víz által kifejtett nyomáskülönbségből adódik.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Kapilláris jelenségek a háztartásban: víz felszívódása a szivacsban.",
+       "heading": "Kapilláris jelenségek",
+       "description": "Egy szivacs és egy felmosó, amelyekben a víz beszívódik. A fotón látható, hogy a víz felfelé mozog a szivacsban a kapilláris hatás miatt.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "A nyomás kiszámítása: erő és felület aránya.",
+       "heading": "Nyomás kiszámítása",
+       "description": "Egy példa a nyomás (P) kiszámítására: P = F/A, ahol F az erő (N) és A a felület (m²). A diagram egy vízszintes felületen lévő súlyt mutat, amely nyomást gyakorol rá.",
+       "visual_type": "példa"
+      }
+     ]
+    },
+    {
+     "block_id": "429d7044-1651-453e-90fd-647e76a6b0a9",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A víz nyomásának vizsgálata fontos a vízgazdálkodásban, például a víztározók és gátak tervezésénél.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 200,
+          "w": 100,
+          "x": 50,
+          "y": 50,
+          "type": "box"
+         },
+         {
+          "x": 70,
+          "y": 30,
+          "text": "Víz",
+          "type": "label"
+         },
+         {
+          "x": 230,
+          "y": 90,
+          "text": "Nyomás",
+          "type": "label"
+         },
+         {
+          "x1": 150,
+          "x2": 200,
+          "y1": 150,
+          "y2": 150,
+          "type": "arrow"
+         },
+         {
+          "x": 210,
+          "y": 140,
+          "text": "Mélység",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A víz nyomása és a magasság kapcsolata",
+       "discovery": "Pascal (1623-1662) francia matematikus és fizikus tanulmányozta és írta le, hogy a folyadékokban a nyomás a mélységgel arányosan növekszik. Ezt a jelenséget manapság is sokféle területen alkalmazzák, például a hidraulikus rendszerekben.",
+       "try_basic": "Tölts meg egy átlátszó üveget vízzel, és figyeld meg, hogyan változik a víz szintje, ha különböző súlyokat helyezel a vízbe. Ez segít megérteni a víz nyomásának növekedését a mélységgel.",
+       "try_advanced": "Készíts egy vízszintes csövet, amelyben különböző magasságú vízoszlopokat hozol létre, és mérd meg a nyomást egy nyomásmérő segítségével. Ez lehetőséget ad a nyomás és a magasság közötti összefüggés pontosabb megértésére."
+      }
+     ]
+    },
+    {
+     "block_id": "199be49b-72af-4822-98fd-d0a5588b1873",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A víz térfogatának változása nyomás hatására elhanyagolható.",
+        "B) A víz könnyen összenyomható.",
+        "C) A víz térfogata jelentősen csökkenthető nyomás alatt.",
+        "D) A víz sűrűsége nyomás hatására folyamatosan nő."
+       ],
+       "question": "Melyik állítás jellemzi a víz összenyomhatatlanságát?",
+       "explanation": "A víz összenyomhatatlansága azt jelenti, hogy nyomás hatására a térfogatának változása elhanyagolható.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A folyadék mélysége és sűrűsége által meghatározott nyomás.",
+        "B) A levegő nyomása a felszínen.",
+        "C) A folyadék hőmérsékletének hatása a nyomásra.",
+        "D) A folyadék áramlásának sebessége."
+       ],
+       "question": "Mi a hidrosztatikai nyomás?",
+       "explanation": "A hidrosztatikai nyomás a folyadék mélysége és sűrűsége által meghatározott nyomás, amely felfelé hat.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hidrosztatikai nyomás növekszik a mélységgel.",
+        "B) A hidrosztatikai nyomás csökken a mélységgel.",
+        "C) A hidrosztatikai nyomás független a mélységtől.",
+        "D) A hidrosztatikai nyomás állandó minden mélységben."
+       ],
+       "question": "Milyen kapcsolat van a hidrosztatikai nyomás és a mélység között?",
+       "explanation": "A hidrosztatikai nyomás növekszik a mélységgel, mivel a folyadék súlya növeli a nyomást.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A felhajtóerő a folyadék sűrűsége és a test térfogata által határozódik meg.",
+        "B) A felhajtóerő csak gázokban létezik.",
+        "C) A felhajtóerő a test súlyának felel meg.",
+        "D) A felhajtóerő nem befolyásolja a test úszását."
+       ],
+       "question": "Melyik állítás igaz a felhajtóerőre?",
+       "explanation": "A felhajtóerő a folyadék sűrűsége és a test térfogata által meghatározott erő, amely segíti a test úszását.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A folyadék szintje emelkedik vagy süllyed a csőben.",
+        "B) A folyadék nem mozog a csőben.",
+        "C) A folyadék hőmérséklete csökken.",
+        "D) A folyadék sűrűsége növekszik."
+       ],
+       "question": "Milyen jelenség figyelhető meg a kapilláris csövek esetén?",
+       "explanation": "A kapilláris jelenség során a folyadék szintje emelkedik vagy süllyed a csőben a felületi feszültség és a folyadék tapadása miatt.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "58f0d256-8b3d-42fb-a919-24715bdbf267",
+   "title_hu": "Hőmérséklet és légköri jelenségek",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "b0478a5d-e635-4175-80bb-9c7f3f5b0547",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Amikor egy fém tárgyat, például egy indukciós főzőlapot használunk, a hő hatására a fém atomjai elkezdenek mozogni. Ez a mozgás növeli a térfogatukat, ami hőtágulásként ismert jelenség. Ha megfigyeled, hogy a főzőlap melegedésekor a fémes felület kissé megváltozik, akkor a hőtágulást tapasztalod. Az ilyen hőtágulás gyakori jelenség a mindennapi életben, például az autók motorjában is, ahol a hőmérséklet változása befolyásolja a motor alkatrészeinek méretét.",
+       "type": "text",
+       "heading": "Szilárd anyagok hőtágulása",
+       "key_term": "hőtágulás"
+      },
+      {
+       "body": "A hővezetés az a folyamat, amikor a hőenergia egyik anyagról a másikra áramlik. Például, amikor egy fém kanalat forró levesbe helyezel, a kanál gyorsan felmelegszik. Ez azért van, mert a fém jó hővezető, így a hő gyorsan átadódik. Ezzel szemben, ha egy műanyag kanalat használsz, az sokkal lassabban melegszik fel, mivel a műanyag rossz hővezető. Ezért fontos, hogy a főzéshez megfelelő anyagokat válasszunk.",
+       "type": "text",
+       "heading": "Hővezetés a háztartásban",
+       "key_term": "hővezetés"
+      },
+      {
+       "body": "A levegő nyomásának érzékelése mindennapi tapasztalatunk része. Például, amikor egy gyors liftben utazunk, a fülünkben nyomásváltozást érzékelünk, ami a levegő nyomásának hirtelen változásából ered. A levegő nyomása a magasság függvényében változik: minél magasabbra mész, annál alacsonyabb a levegő nyomása. Ezért a hegyekben gyakran tapasztalhatunk fáradtságot, mert a levegő ritkább és kevesebb oxigént tartalmaz.",
+       "type": "text",
+       "heading": "A levegő fizikai tulajdonságai: nyomás",
+       "key_term": "nyomás"
+      },
+      {
+       "body": "A hőmérséklet és a páratartalom szoros kapcsolatban állnak egymással. Amikor a levegő melegszik, a benne lévő vízgőz mennyisége is nő, ami magasabb páratartalmat eredményez. Például nyáron, amikor a hőmérséklet emelkedik, gyakran tapasztaljuk, hogy a levegő párásabbá válik, ami miatt nehezebbnek érezzük a légzést. A páratartalom mérése fontos, mert befolyásolja az időjárást és a közérzetünket is.",
+       "type": "text",
+       "heading": "Hőmérséklet és páratartalom",
+       "key_term": "páratartalom"
+      },
+      {
+       "body": "A szél a levegő mozgása, amely a légnyomás különbségekből ered. Amikor a nap felmelegíti a földet, a melegebb levegő felfelé száll, helyét pedig a hidegebb levegő tölti ki, ami szélképződést eredményez. A szél sebessége és iránya változhat, ami hatással van az időjárásra, például eső vagy hó kialakulására. Ezt a jelenséget tapasztalhatod, amikor a szél fúj, és a levegő hőmérséklete hirtelen megváltozik.",
+       "type": "text",
+       "heading": "A szél és a légköri jelenségek",
+       "key_term": "szél"
+      },
+      {
+       "body": "Az eső és a harmat képződése a levegő hőmérsékletének és páratartalmának változásával függ össze. Amikor a levegő lehűl, a benne lévő vízgőz kicsapódik, és vízcseppek formájában megjelenik. Ez a jelenség a harmat, amit reggel a fűn láthatunk. Az eső viszont akkor keletkezik, amikor a levegőben lévő vízcseppek összegyűlnek és elérik azt a méretet, hogy lehulljanak a földre. Ez a folyamat fontos a növények számára, mivel vízhez juttatja őket.",
+       "type": "text",
+       "heading": "Eső és harmat",
+       "key_term": "eső"
+      },
+      {
+       "body": "A lebegés egy érdekes jelenség, amely akkor fordul elő, amikor két, közel azonos frekvenciájú hanghullám találkozik. Ekkor a hullámok interferálnak, és a hang erőssége periodikusan változik, amit a fülünk úgy érzékel, mintha a hang 'pulzálna'. A lebegés gyakran megfigyelhető hangszerek hangolásakor, amikor a zenészek finomhangolják a hangszereiket. A jelenség nemcsak a zenében, hanem más területeken is megfigyelhető, például rádióhullámok esetén. A lebegés frekvenciája a két hullám frekvenciájának különbségével egyenlő.",
+       "type": "text",
+       "heading": "Lebegés jelensége",
+       "key_term": "lebegés"
+      }
+     ]
+    },
+    {
+     "block_id": "30a94088-fa0a-4cc0-8c3b-dbb8fb587121",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A nap első sugarai megérintik a földet, és a levegő hőmérséklete elkezd emelkedni. A napfény a földfelszínen lévő szilárd anyagokat, például a földet és a füvet melegíti, ami hőtáguláshoz vezet. Ezt a jelenséget a tizenévesek is tapasztalhatják, amikor a napfényben ülve érzik, hogy a talaj vagy a fű melegebbé válik.",
+       "type": "story",
+       "heading": "A nap felkelt"
+      },
+      {
+       "body": "Ahogy a föld és a víz felmelegszik, a levegő is elkezd melegedni. A meleg levegő felhalmozódik, és a hőmérséklet emelkedése miatt a levegő sűrűsége csökken. Ez a folyamat a levegő nyomásának változását okozza, amelyet a tizenévesek tapasztalhatnak, amikor gyorsan emelkednek, például egy liftben vagy egy hegyre mászva, és a fülük pattogni kezd.",
+       "type": "story",
+       "heading": "A levegő felmelegedése"
+      },
+      {
+       "body": "A meleg levegő felfelé száll, és helyét a hidegebb levegő foglalja el. Ez a légnyomáskülönbség szél kialakulásához vezet. A tizenévesek számára ismerős lehet, amikor a szél fújni kezd, és a levegő hűvösebbé válik, különösen nyári napokon, amikor a nap erősen süt.",
+       "type": "story",
+       "heading": "A szél kialakulása"
+      },
+      {
+       "body": "A meleg levegőben lévő nedvesség a hűvösebb levegőben kicsapódik, és felhőket képez. Amikor a felhők telítődnek vízgőzzel, eső formájában csapnak le. A tizenévesek tapasztalhatják, amikor hirtelen megindul az eső, és a levegő páratartalma drámaian megnő.",
+       "type": "story",
+       "heading": "Eső és felhők"
+      },
+      {
+       "body": "Amikor a levegő hőmérséklete csökken, a vízgőz kicsapódik, és dér formájában jelenik meg, vagy ha a hőmérséklet elég alacsony, hóvá alakul. A tizenévesek számára ez izgalmas lehet, amikor télen hóesésben játszanak, és a levegő hideg, de friss és tiszta érzést ad.",
+       "type": "story",
+       "heading": "A dér és a hó"
+      },
+      {
+       "body": "A felhőkben a felmelegedett levegő áramlása és a vízcseppek felfelé mozognak, ahol a hőmérséklet alacsonyabb. Ez a jelenség jégeső kialakulásához vezethet, ha a vízcseppek jéggé fagynak. A tizenévesek észlelhetik ezt, amikor viharos időben jégesővel találkoznak, és megfigyelhetik a különböző légköri jelenségeket.",
+       "type": "story",
+       "heading": "Jégeső és viharok"
+      }
+     ]
+    },
+    {
+     "block_id": "e3f1596b-c467-46f0-92ae-692905fa77ea",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A hőtágulás hatása különböző anyagoknál.",
+       "heading": "Hőmérséklet és hőtágulás",
+       "description": "Egy diagram, amelyen a különböző anyagok (pl. fém, víz, fa) hőtágulását mutatja be, amikor melegítjük őket. A hőmérséklet növekedésével a szilárd anyagok mérete hogyan változik.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Hővezetés egy fémrúd példáján.",
+       "heading": "Hővezetés",
+       "description": "Egy vázlat, amely bemutatja, hogyan terjed a hő egy fémrúd egyik végéből a másikba. Az egyik végén tűz, a másikon jég található, szemléltetve a hővezetés folyamatát.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Levegő nyomásának változása a magassággal.",
+       "heading": "Levegő nyomása",
+       "description": "Egy grafikon, amely a levegő nyomásának változását mutatja a tengerszint feletti magasság függvényében. A grafikonon látható, hogy a magasság növekedésével a nyomás csökken.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A levegő páratartalma és sűrűsége.",
+       "heading": "Páratartalom",
+       "description": "Egy keresztmetszet, amely bemutatja, hogyan tartalmaz a levegő különböző mennyiségű vízgőzt. Az ábrán látható, hogy a páratartalom növekedésével a levegő sűrűsége is változik.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A szél kialakulása légnyomáskülönbségek alapján.",
+       "heading": "Szél és légmozgás",
+       "description": "Egy diagram, amely a légnyomás különbségeit mutatja be, amelyek szél kialakulásához vezetnek. Az ábra ábrázolja a magas és alacsony nyomású területek közötti légmozgást.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Felhők és esőcseppek képződése.",
+       "heading": "Eső és felhők",
+       "description": "Egy vázlat, amely bemutatja a felhők képződését és az esőcseppek kialakulását. Az ábrán látható, ahogy a vízgőz kondenzálódik, és esőcseppekké alakul.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Harmat és dér képződése.",
+       "heading": "Harmat és dér",
+       "description": "Egy diagram, amely a harmat és a dér képződését mutatja be, amikor a levegő hőmérséklete a harmatpont alá csökken. Az ábra magyarázza a jelenséget.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Hó és jégeső kialakulása.",
+       "heading": "Hó és jégeső",
+       "description": "Egy vázlat, amely bemutatja, hogyan alakulnak ki a hópelyhek és a jégeső. Az ábra a különböző hőmérsékleti viszonyokat ábrázolja, amelyek a hó és a jégeső kialakulásához vezetnek.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "6d04db85-2b53-4c8e-8a67-8da5423ec69d",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A hőmérséklet és a levegő mozgása a meteorológiai előrejelzések alapja. Napjainkban a hőmérsékletmérők és a légnyomásmérők segítségével a meteorológusok pontosan figyelik a légköri jelenségeket.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 200,
+          "w": 50,
+          "x": 50,
+          "y": 50,
+          "type": "box"
+         },
+         {
+          "x": 55,
+          "y": 25,
+          "text": "Hőmérséklet",
+          "type": "label"
+         },
+         {
+          "x1": 100,
+          "x2": 150,
+          "y1": 150,
+          "y2": 150,
+          "type": "arrow"
+         },
+         {
+          "r": 50,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 195,
+          "y": 150,
+          "text": "Levegő",
+          "type": "label"
+         },
+         {
+          "x1": 250,
+          "x2": 300,
+          "y1": 150,
+          "y2": 150,
+          "type": "arrow"
+         },
+         {
+          "x": 310,
+          "y": 145,
+          "text": "Légmozgás",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Hőmérséklet és levegő mozgása",
+       "discovery": "A hőmérséklet és a levegő mozgásának összefüggéseit a 18. században többen is tanulmányozták, köztük Benjamin Franklin, aki kísérleteivel a levegő hőmérsékletének változásait és azok hatását a légnyomásra is vizsgálta. Eredményei segítették megérteni a légkör dinamikáját és az időjárás előrejelzésének alapjait.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "7685249e-6ad1-4d56-be1b-6463ce94593a",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Hőtágulás",
+        "B) Hőelvezetés",
+        "C) Hőszigetelés",
+        "D) Hőmérséklet-csökkenés"
+       ],
+       "question": "Milyen jelenség tapasztalható, amikor egy szilárd anyagot melegítünk?",
+       "explanation": "A hőtágulás azt jelenti, hogy a szilárd anyagok mérete növekszik, amikor hőt kapnak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Pascal (Pa)",
+        "B) Celsius (°C)",
+        "C) Joule (J)",
+        "D) Volt (V)"
+       ],
+       "question": "Mi a levegő nyomásának mértékegysége?",
+       "explanation": "A levegő nyomását Pascal (Pa) mértékegységben mérjük.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A levegő hőmérséklete",
+        "B) A levegő sűrűsége",
+        "C) A levegő nyomása",
+        "D) A levegő sebessége"
+       ],
+       "question": "Melyik tényező határozza meg a levegő páratartalmát?",
+       "explanation": "A levegő hőmérséklete meghatározza, hogy mennyi vízgőz tud benne elhelyezkedni, így befolyásolja a páratartalmat.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A levegő nyomásának változása miatt",
+        "B) A hőmérséklet változása miatt",
+        "C) A páratartalom változása miatt",
+        "D) A szél sebességének változása miatt"
+       ],
+       "question": "Miért tapasztaljuk, hogy a fülünk pattog, amikor gyorsan emelkedünk vagy süllyedünk?",
+       "explanation": "A levegő nyomása gyors emelkedés vagy süllyedés során megváltozik, ami a fülünkben pattogást okoz.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Harmat",
+        "B) Eső",
+        "C) Hó",
+        "D) Jégeső"
+       ],
+       "question": "Milyen időjárási jelenség alakul ki, ha a levegő hőmérséklete a harmatpont alá csökken?",
+       "explanation": "A harmat akkor képződik, amikor a levegő hőmérséklete a harmatpont alá csökken, és a vízgőz kicsapódik.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "a157819d-5d1b-4325-b475-88ca48909f71",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Olvadni kezd",
+      "B) Megfagy",
+      "C) Elpárolog",
+      "D) Hűlni kezd"
+     ],
+     "question": "Mi történik a jéggel, amikor felmelegítjük?",
+     "explanation": "A jég olvadásának folyamata során a hőmérséklet emelkedésével a jég vízzé alakul, ami az olvadás.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 0 °C",
+      "B) 100 °C",
+      "C) 50 °C",
+      "D) 25 °C"
+     ],
+     "question": "Melyik hőmérséklet a víz forráspontja?",
+     "explanation": "A víz forráspontja 100 °C; ezen a hőmérsékleten a víz gőzzé alakul.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A levegő nyomása a víz felszínén",
+      "B) A víz mélységétől függő nyomás",
+      "C) A vízgőz nyomása",
+      "D) A víz hőmérsékletének nyomása"
+     ],
+     "question": "Mi a hidrosztatikai nyomás?",
+     "explanation": "A hidrosztatikai nyomás a víz mélységétől függ; a mélyebb vízrétegek nagyobb nyomást gyakorolnak.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Olvadás",
+      "B) Hőleadás",
+      "C) Párolgás",
+      "D) Lecsapódás"
+     ],
+     "question": "Melyik jelenség figyelhető meg a víz fagyásakor?",
+     "explanation": "A víz fagyásakor hőleadás történik, mivel a víz molekulái rendezettebb állapotba kerülnek.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Csökkenti a forráspontot",
+      "B) Növeli a forráspontot",
+      "C) Nincs hatással rá",
+      "D) Csak a levegő nyomása befolyásolja"
+     ],
+     "question": "Milyen hatással van a hőmérséklet a víz forrására?",
+     "explanation": "A hőmérséklet emelkedésével a víz forráspontja csökken, például nagy magasságban.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A folyadék térfogatának csökkenése",
+      "B) Az anyag tömegének és térfogatának aránya",
+      "C) A levegő nyomásának mértéke",
+      "D) A víz hőmérsékletének változása"
+     ],
+     "question": "Mi a sűrűségfeltétel?",
+     "explanation": "A sűrűségfeltétel az anyag tömegének és térfogatának arányát jelenti, ami meghatározza az úszás és lebegés képességét.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A víz párolgása",
+      "B) A víz elfolyása",
+      "C) A víz szivárgása a szivacsban",
+      "D) A víz fagyása"
+     ],
+     "question": "Milyen jelenség a kapilláris hatás?",
+     "explanation": "A kapilláris hatás a víz szivárgását jelenti a szivacsban, ahol a víz molekulái a szivacs pórusaiban mozognak.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A víz térfogatának csökkenése",
+      "B) A víz térfogatának növekedése",
+      "C) A jég olvadása",
+      "D) A hőmérséklet emelkedése"
+     ],
+     "question": "Mi a téli fagy romboló erejének oka?",
+     "explanation": "A téli fagy romboló ereje a víz térfogatának növekedéséből adódik, amikor az vízzé válik és megfagy.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}
