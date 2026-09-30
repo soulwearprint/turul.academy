@@ -1,0 +1,87 @@
+{
+ "nat_id": "PHYS-78-01",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 103,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-78-01-001",
+   "lesson_id": "d6336130-9fa6-43ad-b78b-04186ab2ed68",
+   "block_id": "3e583efa-fcb4-481d-8c15-139c638f2b38",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "medium",
+   "claim": "„az áram working közben felmelegedő vezeték”",
+   "explanation": "Angol szó maradt a szövegben.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A fizika a természetben lezajló jelenségeket és azok törvényszerűségeit vizsgáló tudomány. Ide tartozik például egy labda mozgása, a víz forrása, az áram working közben felmelegedő vezeték vagy a fény törése egy pohár vízben. A fizikus megfigyeli a jelenséget, méréseket végez, majd a mérési adatokból törvényszerűségeket próbál levezetni. A hétköznapokban szinte minden mozgás, hőjelenség, fény- vagy hangjelenség fizikai jelenség. Fontos, hogy a fizikai magyarázat mindig ellenőrizhető, mérésekkel alátámasztható legyen.",
+     "type": "text",
+     "heading": "A fizika tudománya",
+     "key_term": "fizika"
+    },
+    "after": {
+     "body": "A fizika a természetben lezajló jelenségeket és azok törvényszerűségeit vizsgáló tudomány. Ide tartozik például egy labda mozgása, a víz forrása, az áram hatására felmelegedő vezeték vagy a fény törése egy pohár vízben. A fizikus megfigyeli a jelenséget, méréseket végez, majd a mérési adatokból törvényszerűségeket próbál levezetni. A hétköznapokban szinte minden mozgás, hőjelenség, fény- vagy hangjelenség fizikai jelenség. Fontos, hogy a fizikai magyarázat mindig ellenőrizhető, mérésekkel alátámasztható legyen.",
+     "type": "text",
+     "heading": "A fizika tudománya",
+     "key_term": "fizika"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-01-002",
+   "lesson_id": "ba7ac535-33d2-48f3-98e9-0c68b5239fde",
+   "block_id": "b9d14a00-8b9a-469b-8d52-a57de234e534",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "language",
+   "severity": "medium",
+   "claim": "„egy perc kb. ennyi szívdobbanás”",
+   "explanation": "Hiányzik a szám; a mondat értelmetlen. Nyugalmi pulzus: kb. 60–100/perc.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Mielőtt egy mennyiséget megmérnénk, hasznos előzetesen megbecsülni a várható értéket, mert ez segít ellenőrizni, hogy a mért eredmény ésszerű-e. Ha a becslésünk és a mért érték nagyon eltér egymástól, érdemes megvizsgálni, nem történt-e mérési vagy leolvasási hiba. A becslés fejleszthető gyakorlással és ismert viszonyítási adatok (pl. testhőmérséklet kb. 36-37 °C, egy perc kb. ennyi szívdobbanás) megjegyzésével. A becslés különösen hasznos olyan helyzetekben, amikor nincs azonnal kéznél pontos mérőeszköz. A jó becslés és a pontos mérés együtt adja a megbízható tudományos munka alapját.",
+     "type": "text",
+     "heading": "Becslés a mérésben",
+     "key_term": "becslés"
+    },
+    "after": {
+     "body": "Mielőtt egy mennyiséget megmérnénk, hasznos előzetesen megbecsülni a várható értéket, mert ez segít ellenőrizni, hogy a mért eredmény ésszerű-e. Ha a becslésünk és a mért érték nagyon eltér egymástól, érdemes megvizsgálni, nem történt-e mérési vagy leolvasási hiba. A becslés fejleszthető gyakorlással és ismert viszonyítási adatok (pl. testhőmérséklet kb. 36-37 °C, nyugalomban percenként kb. 60–100 szívdobbanás) megjegyzésével. A becslés különösen hasznos olyan helyzetekben, amikor nincs azonnal kéznél pontos mérőeszköz. A jó becslés és a pontos mérés együtt adja a megbízható tudományos munka alapját.",
+     "type": "text",
+     "heading": "Becslés a mérésben",
+     "key_term": "becslés"
+    }
+   }
+  }
+ ]
+}

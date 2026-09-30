@@ -1,0 +1,732 @@
+{
+ "nat_id": "PHYS-78-06",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 107,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-78-06-001",
+   "lesson_id": null,
+   "block_id": "50d45658-bfbf-42dc-b5be-92d34d612538",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "question, explanation",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Melyik eszköz mérése segíthet az áramütés elkerülésében?” — B) Biztosíték („segít elkerülni az áramütést”)",
+   "explanation": "A biztosíték a vezetékeket védi a túláramtól és a tűztől; az embert az áramütéstől az áram-védőkapcsoló (FI-relé) védi, amely kb. 30 mA hibaáramnál lekapcsol.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Residual-current_device",
+     "title": "Residual-current device",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Fuse_(electrical)",
+     "title": "Fuse (electrical)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Vezeték",
+      "B) Biztosíték",
+      "C) Kapcsoló",
+      "D) Fogyasztó"
+     ],
+     "question": "Melyik eszköz mérése segíthet az áramütés elkerülésében?",
+     "explanation": "A biztosíték védi az elektromos rendszert túláram esetén, és segít elkerülni az áramütést.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Vezeték",
+      "B) Biztosíték",
+      "C) Kapcsoló",
+      "D) Fogyasztó"
+     ],
+     "question": "Melyik eszköz szakítja meg az áramkört, ha rövidzár miatt túl nagy áram folyik, és így védi a vezetékeket a túlmelegedéstől?",
+     "explanation": "A biztosíték túl nagy áramnál megszakítja az áramkört, így védi a vezetékeket a túlmelegedéstől és a tűztől. Az áramütés ellen az áram-védőkapcsoló (FI-relé) véd.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-06-002",
+   "lesson_id": null,
+   "block_id": "50d45658-bfbf-42dc-b5be-92d34d612538",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 2,
+   "field": "options[0]",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik eszköz működik váltakozó árammal?” — C) Hajszárító; A) Vasaló is",
+   "explanation": "A vasaló is a konnektorból, váltakozó árammal működik, így két helyes válasz van.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Két helyes válasz.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Vasaló",
+      "B) Akkumulátor",
+      "C) Hajszárító",
+      "D) Elemes zseblámpa"
+     ],
+     "question": "Melyik eszköz működik váltakozó árammal (AC)?",
+     "explanation": "A hajszárítók általában váltakozó árammal működnek, míg az akkumulátorok és elemes zseblámpák egyenáramot (DC) használnak.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Zsebszámológép elemmel",
+      "B) Akkumulátor",
+      "C) Hajszárító",
+      "D) Elemes zseblámpa"
+     ],
+     "question": "Melyik eszköz működik váltakozó árammal (AC)?",
+     "explanation": "A hajszárítók általában váltakozó árammal működnek, míg az akkumulátorok és elemes zseblámpák egyenáramot (DC) használnak.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-06-003",
+   "lesson_id": "1946621e-51c5-4137-a997-aeb540da4d6a",
+   "block_id": "6128e574-0f99-4a40-9b32-5733ed8c7665",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options[3]",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik eszköz működik váltakozó áram segítségével?” — A) Hűtőszekrény; D) LED-lámpa",
+   "explanation": "A foglalatba csavart LED-lámpa is a hálózati váltakozó feszültségről működik (belső átalakítóval), így vitatható.",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Kétértelmű válaszlehetőség.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hűtőszekrény",
+      "B) Elem",
+      "C) Akkumulátor",
+      "D) LED-lámpa"
+     ],
+     "question": "Melyik eszköz működik váltakozó áram (AC) segítségével?",
+     "explanation": "A hűtőszekrény váltakozó áram (AC) segítségével működik, míg az elem és az akkumulátor egyenáramot (DC) szolgáltat.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hűtőszekrény",
+      "B) Elem",
+      "C) Akkumulátor",
+      "D) Elemes zseblámpa"
+     ],
+     "question": "Melyik eszköz működik váltakozó áram (AC) segítségével?",
+     "explanation": "A hűtőszekrény váltakozó áram (AC) segítségével működik, míg az elem és az akkumulátor egyenáramot (DC) szolgáltat.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-06-004",
+   "lesson_id": "1946621e-51c5-4137-a997-aeb540da4d6a",
+   "block_id": "a2a66b1a-60ef-46ee-9db4-e0d5290db370",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A feszültség ... a töltések mozgásához szükséges erő”; „5 voltnyi energia”",
+   "explanation": "A feszültség nem erő, és a volt nem energia-mértékegység: a feszültség azt mutatja meg, mennyi energiát kap egységnyi töltés (1 V = 1 J/C).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Voltage",
+     "title": "Voltage",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A feszültség (U) a töltések mozgásához szükséges erő, amit voltban (V) mérünk. Az áramerősség (I) pedig azt mutatja meg, hogy mennyi töltés halad át egy adott ponton egy másodperc alatt. Például, ha egy LED-izzó 5 V feszültséggel működik, az azt jelenti, hogy 5 voltnyi energia szükséges az izzó világításához.",
+     "type": "text",
+     "heading": "Feszültség és áramerősség",
+     "key_term": "feszültség, áramerősség"
+    },
+    "after": {
+     "body": "A feszültség (U) azt mutatja meg, mennyi energiát kap egységnyi töltés az áramforrástól; mértékegysége a volt (V). Az áramerősség (I) pedig azt mutatja meg, hogy mennyi töltés halad át egy adott ponton egy másodperc alatt. Például, ha egy LED-izzó 5 V feszültséggel működik, az azt jelenti, hogy 5 V feszültségre kell kapcsolni ahhoz, hogy megfelelően világítson.",
+     "type": "text",
+     "heading": "Feszültség és áramerősség",
+     "key_term": "feszültség, áramerősség"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-06-005",
+   "lesson_id": "5fafe4d3-3c7d-4cf9-a04c-e3244094d734",
+   "block_id": "920e0d9c-ff7c-4ac6-98b7-e953c46bc7bb",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Vezeték nélküli töltés mint dipólus-példa; az oxigén „negatív”, a hidrogének „pozitív töltésűek”",
+   "explanation": "A vezeték nélküli töltés mágneses indukcióval működik, nem dipólusokkal. A vízmolekulában csak részleges töltések vannak, a molekula egésze semleges.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Inductive_charging",
+     "title": "Inductive charging",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A dipólus olyan rendszer, amelyben két ellentétes töltés található közel egymáshoz. Egy egyszerű példa a vízmolekula, amelyben az oxigénatom negatív, míg a hidrogénatomok pozitív töltésűek. Ez a dipólus jelenség fontos szerepet játszik a víz oldószerként való működésében, ami nélkülözhetetlen a biológiai folyamatokhoz. A dipólusok nemcsak a természetben, hanem a modern technológiában is megtalálhatóak, például a vezeték nélküli töltésnél, ahol az elektromos mezők kölcsönhatásba lépnek a töltött részecskékkel.",
+     "type": "text",
+     "heading": "Dipólusok a mindennapokban",
+     "key_term": "dipólus"
+    },
+    "after": {
+     "body": "A dipólus olyan rendszer, amelyben két ellentétes töltés található közel egymáshoz. Egy egyszerű példa a vízmolekula, amelyben az oxigén felőli oldal kissé negatív, a hidrogének felőli oldal kissé pozitív, bár a molekula egésze semleges. Ez a dipólus jelenség fontos szerepet játszik a víz oldószerként való működésében, ami nélkülözhetetlen a biológiai folyamatokhoz. A dipólusok a technikában is fontosak: a mikrohullámú sütő gyorsan változó elektromos tere a vízmolekulákat forgatja, és így melegíti az ételt.",
+     "type": "text",
+     "heading": "Dipólusok a mindennapokban",
+     "key_term": "dipólus"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-06-006",
+   "lesson_id": "e97e5cfd-5374-4d0e-9139-9e1bc7c75c7c",
+   "block_id": "6fb062ba-ec84-4645-8d99-7b5c968a0c4b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a számítógépek és a televíziók, mind földeléssel rendelkeznek”",
+   "explanation": "Sok mai készülék (számos tévé, töltő) nem földelt, hanem kettős szigetelésű (II. érintésvédelmi osztály).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Appliance_classes",
+     "title": "Appliance classes",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A földelés (földelés) a biztonságos elektromos használat egyik alapvető eleme. Ez a rendszer lehetővé teszi, hogy az esetleges hibák, például szigetelési problémák esetén az áram a földön keresztül vezesse el a feszültséget, ezzel megakadályozva az áramütést. A modern elektromos eszközök, mint például a számítógépek és a televíziók, mind földeléssel rendelkeznek, hogy védjék a felhasználókat. A földelés tehát elengedhetetlen a biztonságos otthoni környezethez.",
+     "type": "text",
+     "heading": "A földelés fontossága",
+     "key_term": "földelés"
+    },
+    "after": {
+     "body": "A földelés (földelés) a biztonságos elektromos használat egyik alapvető eleme. Ez a rendszer lehetővé teszi, hogy az esetleges hibák, például szigetelési problémák esetén az áram a földön keresztül vezesse el a feszültséget, ezzel megakadályozva az áramütést. A fémházas eszközök, például a mosógép vagy a hűtő, földeléssel védik a felhasználót; sok más készülék, például számos tévé vagy telefontöltő, kettős szigeteléssel éri el ugyanezt. A földelés tehát elengedhetetlen a biztonságos otthoni környezethez.",
+     "type": "text",
+     "heading": "A földelés fontossága",
+     "key_term": "földelés"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-06-007",
+   "lesson_id": "e97e5cfd-5374-4d0e-9139-9e1bc7c75c7c",
+   "block_id": "6fb062ba-ec84-4645-8d99-7b5c968a0c4b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Az érintés nélküli bankkártyás fizetés mint elektromos biztonsági példa",
+   "explanation": "Az érintés nélküli fizetésnek semmi köze az áramütés elleni védelemhez.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Oda nem illő, félrevezető példa.",
+   "fix": {
+    "before": {
+     "body": "A lakásban számos olyan helyzet létezhet, ahol az áramütés veszélye fennáll. Például, ha egy elektromos eszközt nedves kézzel használunk, vagy ha a kábelek megsérülnek. Az ilyen helyzetek elkerülése érdekében fontos, hogy mindig száraz kézzel nyúljunk az elektromos berendezésekhez, és rendszeresen ellenőrizzük a kábeleket. Az érintés nélküli bankkártyás fizetés is egy példa arra, hogyan lehet biztonságosan kezelni az elektromos eszközöket, mivel csökkenti a fizikai érintkezést.",
+     "type": "text",
+     "heading": "Áramütés-veszélyes helyzetek a lakásban",
+     "key_term": "áramütés"
+    },
+    "after": {
+     "body": "A lakásban számos olyan helyzet létezhet, ahol az áramütés veszélye fennáll. Például, ha egy elektromos eszközt nedves kézzel használunk, vagy ha a kábelek megsérülnek. Az ilyen helyzetek elkerülése érdekében fontos, hogy mindig száraz kézzel nyúljunk az elektromos berendezésekhez, és rendszeresen ellenőrizzük a kábeleket. Fürdőszobában különösen óvatosnak kell lenni: vizes kézzel vagy a kádban ülve soha ne használj elektromos készüléket.",
+     "type": "text",
+     "heading": "Áramütés-veszélyes helyzetek a lakásban",
+     "key_term": "áramütés"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-06-008",
+   "lesson_id": "07f1a08c-8b88-46fd-b58c-a94b33a25f46",
+   "block_id": "38e54ac5-dae2-40fd-aa00-7d9ec6370ebe",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„az iránytű segít a pontos helymeghatározásban” (GPS)",
+   "explanation": "A GPS a helyzetet műholdjelekből határozza meg; a telefon mágneses érzékelője csak azt mutatja, merre néz a készülék.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+     "title": "Global Positioning System",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az iránytű (mágneses iránytű) működésének alapja a Föld mágneses tere. A Föld belsejében lévő olvadt fémek mozgása miatt a Föld egy hatalmas mágnesként viselkedik. Az iránytű tűje, amely egy kis mágnes, mindig a Föld mágneses pólusai felé áll. Ezt a jelenséget a tizenévesek is tapasztalhatják, amikor okostelefonjuk GPS-ét használják, hiszen az iránytű segít a pontos helymeghatározásban.",
+     "type": "text",
+     "heading": "Az iránytű működése",
+     "key_term": "iránytű"
+    },
+    "after": {
+     "body": "Az iránytű (mágneses iránytű) működésének alapja a Föld mágneses tere. A Föld belsejében lévő olvadt fémek mozgása miatt a Föld egy hatalmas mágnesként viselkedik. Az iránytű tűje, amely egy kis mágnes, mindig a Föld mágneses pólusai felé áll. Az okostelefonokban is van digitális iránytű: ez nem a helyzetet határozza meg (azt a GPS a műholdjelekből számolja), hanem azt, merre fordítjuk a készüléket.",
+     "type": "text",
+     "heading": "Az iránytű működése",
+     "key_term": "iránytű"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-06-009",
+   "lesson_id": "07f1a08c-8b88-46fd-b58c-a94b33a25f46",
+   "block_id": "38e54ac5-dae2-40fd-aa00-7d9ec6370ebe",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Jedlik „fedezte fel, hogy az elektromágneses mező segítségével mozgást lehet létrehozni”",
+   "explanation": "Az elektromágneses forgást Faraday mutatta be 1821-ben; Jedlik 1828 körül építette meg az egyik legkorábbi elektromágneses forgó készüléket, és később leírta a dinamó elvét.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/%C3%81nyos_Jedlik",
+     "title": "Ányos Jedlik",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Jedlik Ányos, a magyar tudós, az elektromos motor (elektromos gép) egyik úttörője volt. Ő fedezte fel, hogy az elektromágneses mező segítségével mozgást lehet létrehozni. Napjainkban az elektromos motorok megtalálhatók a legkülönfélébb eszközökben, mint például az elektromos autókban, amelyek környezetbarát alternatívát jelentenek a hagyományos járművekkel szemben. Az elektromos motorok működése a mindennapi életünkben is jelen van, hiszen a háztartási gépeink, mint a mosógép vagy a porszívó, mind elektromos motorral működnek.",
+     "type": "text",
+     "heading": "Jedlik Ányos és az elektromos motor",
+     "key_term": "elektromos motor"
+    },
+    "after": {
+     "body": "Jedlik Ányos, a magyar tudós, az elektromos motor (elektromos gép) egyik úttörője volt. 1828 körül megépítette az egyik legkorábbi elektromágnesekkel működő forgó készüléket, a „villanydelejes forgonyt”, később pedig leírta a dinamó elvét is. Napjainkban az elektromos motorok megtalálhatók a legkülönfélébb eszközökben, mint például az elektromos autókban, amelyek környezetbarát alternatívát jelentenek a hagyományos járművekkel szemben. Az elektromos motorok működése a mindennapi életünkben is jelen van, hiszen a háztartási gépeink, mint a mosógép vagy a porszívó, mind elektromos motorral működnek.",
+     "type": "text",
+     "heading": "Jedlik Ányos és az elektromos motor",
+     "key_term": "elektromos motor"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-06-010",
+   "lesson_id": "07f1a08c-8b88-46fd-b58c-a94b33a25f46",
+   "block_id": "38e54ac5-dae2-40fd-aa00-7d9ec6370ebe",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a háztartásokban használt alacsony feszültségű áramot a transzformátorok emelik meg a szállításhoz”; közlekedési lámpák",
+   "explanation": "Fordítva: az erőmű generátorainak feszültségét emelik fel a szállításhoz, a lakóhelyek közelében pedig 230 V-ra csökkentik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electric_power_transmission",
+     "title": "Electric power transmission",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A transzformátor (feszültségátalakító) egy olyan eszköz, amely az elektromos energia (elektromos teljesítmény) feszültségét képes megváltoztatni. Például a háztartásokban használt alacsony feszültségű áramot a transzformátorok emelik meg a szállításhoz szükséges magas feszültségű árammá. Ez a folyamat lehetővé teszi, hogy a villamos energia hatékonyan eljusson a távoli helyekre, például a lakóhelyünkre. A transzformátorok működését könnyen megfigyelhetjük a közlekedési lámpákban is, ahol a különböző feszültségszintek segítik a világítást.",
+     "type": "text",
+     "heading": "A transzformátor működése",
+     "key_term": "transzformátor"
+    },
+    "after": {
+     "body": "A transzformátor (feszültségátalakító) egy olyan eszköz, amely az elektromos energia (elektromos teljesítmény) feszültségét képes megváltoztatni. Az erőművek generátorainak feszültségét transzformátorok emelik fel a szállításhoz, a lakóhelyek közelében pedig 230 V-ra csökkentik. Ez a folyamat lehetővé teszi, hogy a villamos energia hatékonyan eljusson a távoli helyekre, például a lakóhelyünkre. Kisebb transzformátor van sok hálózati töltőben és adapterben is.",
+     "type": "text",
+     "heading": "A transzformátor működése",
+     "key_term": "transzformátor"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-06-011",
+   "lesson_id": "07f1a08c-8b88-46fd-b58c-a94b33a25f46",
+   "block_id": "bdf27426-a11a-4296-b7fd-6c342d06c82a",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options[2]",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Jedlik: A) Elektromos motor; C) Generátor is védhető",
+   "explanation": "Jedlik a dinamó (öngerjesztő generátor) elvét is leírta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/%C3%81nyos_Jedlik",
+     "title": "Ányos Jedlik",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Elektromos motor",
+      "B) Transzformátor",
+      "C) Generátor",
+      "D) Akkumulátor"
+     ],
+     "question": "Milyen jelentős találmány fűződik Jedlik Ányos nevéhez?",
+     "explanation": "Jedlik Ányos az elektromos motor (elektromos gép) fejlesztésével járult hozzá az elektromosság gyakorlati alkalmazásához.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Elektromos motor",
+      "B) Transzformátor",
+      "C) Telefon",
+      "D) Akkumulátor"
+     ],
+     "question": "Milyen jelentős találmány fűződik Jedlik Ányos nevéhez?",
+     "explanation": "Jedlik Ányos az elektromos motor (elektromos gép) fejlesztésével járult hozzá az elektromosság gyakorlati alkalmazásához.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-06-012",
+   "lesson_id": "07f1a08c-8b88-46fd-b58c-a94b33a25f46",
+   "block_id": "46b58070-26ec-4992-aa09-bf487f57143f",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Kartonra tekert rézdrót 1,5 V-os elemre kötve vonzza a fémtárgyakat",
+   "explanation": "Vasmag nélkül a tekercs alig vonz; a csupasz tekercs rövidre zárja és felforrósítja az elemet.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Kísérleti és biztonsági pontatlanság.",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "Az elektromágneses elvek alapján működnek a háztartási készülékek, például a hűtőszekrények, mosógépek és porszívók, amelyek elektromotorokat használnak a működésükhöz.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 80,
+        "w": 120,
+        "x": 150,
+        "y": 100,
+        "type": "coil",
+        "turns": 6
+       },
+       {
+        "h": 60,
+        "w": 30,
+        "x": 50,
+        "y": 120,
+        "type": "battery"
+       },
+       {
+        "x": 55,
+        "y": 145,
+        "text": "+",
+        "type": "label"
+       },
+       {
+        "x": 55,
+        "y": 185,
+        "text": "-",
+        "type": "label"
+       },
+       {
+        "x1": 80,
+        "x2": 150,
+        "y1": 140,
+        "y2": 140,
+        "type": "arrow"
+       },
+       {
+        "x": 200,
+        "y": 140,
+        "text": "I",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Elektromágneses alkalmazások a mindennapokban",
+     "discovery": "A 19. század elején Hans Christian Ørsted felfedezte, hogy az elektromosság és a mágnesesség összefügg. 1820-ban Ørsted megmutatta, hogy egy áramot vezető drót körül mágneses mező keletkezik, amely később hozzájárult az elektromágneses indukció felfedezéséhez, amelyet Michael Faraday dolgozott ki. E felfedezések révén vált lehetővé az elektromágneses eszközök, például az elektromotorok és generátorok kifejlesztése.",
+     "try_basic": "Készíts egy egyszerű elektromágneses tekercset: tekerj egy rézdrótot egy szögletes kartonra, majd csatlakoztasd egy 1,5 V-os elemmel. Figyeld meg, hogy a tekercs mágneses mezőt hoz létre, és vonzza a kis fémtárgyakat.",
+     "try_advanced": ""
+    },
+    "after": {
+     "type": "experiment",
+     "today": "Az elektromágneses elvek alapján működnek a háztartási készülékek, például a hűtőszekrények, mosógépek és porszívók, amelyek elektromotorokat használnak a működésükhöz.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 80,
+        "w": 120,
+        "x": 150,
+        "y": 100,
+        "type": "coil",
+        "turns": 6
+       },
+       {
+        "h": 60,
+        "w": 30,
+        "x": 50,
+        "y": 120,
+        "type": "battery"
+       },
+       {
+        "x": 55,
+        "y": 145,
+        "text": "+",
+        "type": "label"
+       },
+       {
+        "x": 55,
+        "y": 185,
+        "text": "-",
+        "type": "label"
+       },
+       {
+        "x1": 80,
+        "x2": 150,
+        "y1": 140,
+        "y2": 140,
+        "type": "arrow"
+       },
+       {
+        "x": 200,
+        "y": 140,
+        "text": "I",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Elektromágneses alkalmazások a mindennapokban",
+     "discovery": "A 19. század elején Hans Christian Ørsted felfedezte, hogy az elektromosság és a mágnesesség összefügg. 1820-ban Ørsted megmutatta, hogy egy áramot vezető drót körül mágneses mező keletkezik, amely később hozzájárult az elektromágneses indukció felfedezéséhez, amelyet Michael Faraday dolgozott ki. E felfedezések révén vált lehetővé az elektromágneses eszközök, például az elektromotorok és generátorok kifejlesztése.",
+     "try_basic": "Tekerj egy vasszögre 20-30 menet szigetelt (lakkozott) rézdrótot, a végeit érintsd rövid időre egy 1,5 V-os elem két sarkához, és figyeld meg, hogy a szög magához vonzza a gemkapcsokat! Ne tartsd sokáig összekötve, mert az elem és a drót felmelegszik.",
+     "try_advanced": ""
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-06-013",
+   "lesson_id": "5fafe4d3-3c7d-4cf9-a04c-e3244094d734",
+   "block_id": "8ef4ca2b-0ba2-4d65-9105-e4f2ab83dc24",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„az amber (borostyán)”",
+   "explanation": "Angol szó a magyar szövegben.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A dörzselektromos jelenség a mindennapi életben is jelen van, például amikor a hajunk statikusan feltöltődik, és a fésűhöz vonzódik, vagy amikor a léggömböt a hajunkhoz dörzsöljük, és az a falhoz tapad.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 20,
+        "x": 100,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "r": 20,
+        "x": 150,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x1": 120,
+        "x2": 140,
+        "y1": 150,
+        "y2": 150,
+        "type": "arrow"
+       },
+       {
+        "x": 95,
+        "y": 140,
+        "text": "Dörzsölt borostyán",
+        "type": "label"
+       },
+       {
+        "x": 145,
+        "y": 140,
+        "text": "Könnyű tárgy",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Elektromos állapotok a hétköznapokban",
+     "discovery": "A dörzselektromos jelenséget először az ókori görögök fedezték fel, amikor megfigyelték, hogy az amber (borostyán) dörzsölése vonzza a könnyű tárgyakat. Ez a jelenség a statikus elektromossággal kapcsolatos, amelyet később William Gilbert és más tudósok is tanulmányoztak a 16. században, megpróbálva megérteni az elektromosság természetét és működését.",
+     "try_basic": "Végy egy léggömböt, és dörzsöld meg a hajadon. Figyeld meg, hogy a léggömb elkezd vonzani könnyű tárgyakat, például papírdarabokat.",
+     "try_advanced": ""
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A dörzselektromos jelenség a mindennapi életben is jelen van, például amikor a hajunk statikusan feltöltődik, és a fésűhöz vonzódik, vagy amikor a léggömböt a hajunkhoz dörzsöljük, és az a falhoz tapad.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 20,
+        "x": 100,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "r": 20,
+        "x": 150,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x1": 120,
+        "x2": 140,
+        "y1": 150,
+        "y2": 150,
+        "type": "arrow"
+       },
+       {
+        "x": 95,
+        "y": 140,
+        "text": "Dörzsölt borostyán",
+        "type": "label"
+       },
+       {
+        "x": 145,
+        "y": 140,
+        "text": "Könnyű tárgy",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Elektromos állapotok a hétköznapokban",
+     "discovery": "A dörzselektromos jelenséget először az ókori görögök fedezték fel, amikor megfigyelték, hogy a borostyán dörzsölése vonzza a könnyű tárgyakat. Ez a jelenség a statikus elektromossággal kapcsolatos, amelyet később William Gilbert és más tudósok is tanulmányoztak a 16. században, megpróbálva megérteni az elektromosság természetét és működését.",
+     "try_basic": "Végy egy léggömböt, és dörzsöld meg a hajadon. Figyeld meg, hogy a léggömb elkezd vonzani könnyű tárgyakat, például papírdarabokat.",
+     "try_advanced": ""
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-06-014",
+   "lesson_id": null,
+   "block_id": "50d45658-bfbf-42dc-b5be-92d34d612538",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 3,
+   "field": "options[1]",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Mi a feszültség jele és mértékegysége?” — B) V (volt)",
+   "explanation": "A leckék a feszültség jelére U-t használnak; a V a mértékegység jele.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Jelölési következetlenség a leckével.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) I (amper)",
+      "B) V (volt)",
+      "C) R (ohm)",
+      "D) P (watt)"
+     ],
+     "question": "Mi a feszültség jele és mértékegysége?",
+     "explanation": "A feszültség jele V (volt), amely az elektromos potenciálkülönbséget méri.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) I (amper)",
+      "B) U (volt)",
+      "C) R (ohm)",
+      "D) P (watt)"
+     ],
+     "question": "Mi a feszültség jele és mértékegysége?",
+     "explanation": "A feszültség jele V (volt), amely az elektromos potenciálkülönbséget méri.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}

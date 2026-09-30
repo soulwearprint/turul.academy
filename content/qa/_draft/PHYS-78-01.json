@@ -1,0 +1,8 @@
+{"coverage":{"read":["text","deep","quiz","world","experiment"],"lint_only":["story","visual"]},"findings":[
+{"block_id":"3e583efa-fcb4-481d-8c15-139c638f2b38","card_index":0,"field":"body","verdict":"language","severity":"medium",
+ "claim":"„az áram working közben felmelegedő vezeték”","explanation":"Angol szó maradt a szövegben.",
+ "replace":[["az áram working közben felmelegedő vezeték","az áram hatására felmelegedő vezeték"]]},
+{"block_id":"b9d14a00-8b9a-469b-8d52-a57de234e534","card_index":5,"field":"body","verdict":"language","severity":"medium",
+ "claim":"„egy perc kb. ennyi szívdobbanás”","explanation":"Hiányzik a szám; a mondat értelmetlen. Nyugalmi pulzus: kb. 60–100/perc.",
+ "replace":[["egy perc kb. ennyi szívdobbanás","nyugalomban percenként kb. 60–100 szívdobbanás"]]}
+]}

@@ -1,0 +1,319 @@
+{
+ "nat_id": "PHYS-78-03",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 25,
+  "cards": 120,
+  "modes": [
+   "deep",
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-78-03-001",
+   "lesson_id": "7b00430f-05e6-40fa-a93a-af1d004cb68a",
+   "block_id": "80ff9707-85b3-4cc0-b987-cd6d7afa06ca",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "think_answer",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Mert a gravitáció hat rá, ami egy külső erő, és az inercia miatt a test mozgásba lendül.”",
+   "explanation": "A tehetetlenség éppen a mozgásállapot megváltozásának ellenáll; a testet a nehézségi erő gyorsítja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Inertia",
+     "title": "Inertia",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Amikor fékezel, az autó mozgási energiáját a fékek hőenergiává alakítják, ami lelassítja a járművet. A fékek által kifejtett erő és az autó tömege határozza meg, mennyi idő alatt áll meg az autó. Nagyobb tömegű autó hosszabb fékutat igényel ugyanakkora fékező erő mellett. Ezért fontos, hogy a fékek mindig jó állapotban legyenek, különösen nagyobb sebességnél.",
+     "type": "deep",
+     "think": "Miért kell nagyobb távolságot tartani a járművek között esős időben?",
+     "anchor": 3,
+     "heading": "Hogyan áll meg az autó?",
+     "did_you_know": "Az elektromos autók fékezéskor visszanyerik az energiát, és ezzel tölthetik az akkumulátort.",
+     "think_answer": "Esős időben az úttest csúszósabb, ami csökkenti a súrlódási erőt, így az autó hosszabb fékutat igényel a megálláshoz."
+    },
+    "after": {
+     "body": "Amikor fékezel, az autó mozgási energiáját a fékek hőenergiává alakítják, ami lelassítja a járművet. A fékek által kifejtett erő és az autó tömege határozza meg, mennyi idő alatt áll meg az autó. Nagyobb tömegű autó hosszabb fékutat igényel ugyanakkora fékező erő mellett. Ezért fontos, hogy a fékek mindig jó állapotban legyenek, különösen nagyobb sebességnél.",
+     "type": "deep",
+     "think": "Miért kell nagyobb távolságot tartani a járművek között esős időben?",
+     "anchor": 3,
+     "heading": "Hogyan áll meg az autó?",
+     "did_you_know": "Az elektromos autók fékezéskor visszanyerik az energiát, és ezzel tölthetik az akkumulátort.",
+     "think_answer": "Mert a nehézségi erő lefelé húzza, és ha semmi sem tartja meg, ez az erő gyorsítja a talaj felé."
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-03-002",
+   "lesson_id": "7b00430f-05e6-40fa-a93a-af1d004cb68a",
+   "block_id": "d7b067b8-a8ab-4390-8aca-0b0dce87f7d2",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a sebességmérő (speedometer) feltalálása, amelyet az 1800-as évek elején kezdtek el használni az autókban”",
+   "explanation": "Az 1800-as évek elején még nem voltak autók; az első autók az 1880-as években jelentek meg, a sebességmérő az 1900-as évek elején terjedt el bennük. A rómaiak futósebesség-méréséről sincs megbízható adat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Speedometer",
+     "title": "Speedometer",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A sebességmérők a modern járművek alapfelszereltségéhez tartoznak, és elengedhetetlenek a közlekedés biztonságához.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 50,
+        "w": 200,
+        "x": 100,
+        "y": 150,
+        "type": "box"
+       },
+       {
+        "x": 150,
+        "y": 165,
+        "text": "Sebességmérő",
+        "type": "label"
+       },
+       {
+        "r": 15,
+        "x": 50,
+        "y": 175,
+        "type": "circle"
+       },
+       {
+        "x": 40,
+        "y": 180,
+        "text": "Jármű",
+        "type": "label"
+       },
+       {
+        "x1": 200,
+        "x2": 300,
+        "y1": 175,
+        "y2": 175,
+        "type": "arrow"
+       },
+       {
+        "x": 250,
+        "y": 165,
+        "text": "Sebesség",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Sebességmérés a gyakorlatban",
+     "discovery": "A sebesség mérése már az ókorban is fontos volt, például a rómaiak a futók sebességét mérték, hogy megállapítsák, ki a leggyorsabb. A modern időszakban a sebességmérő (speedometer) feltalálása, amelyet az 1800-as évek elején kezdtek el használni az autókban, forradalmasította a közlekedést. A sebességmérők pontosan mérik a járművek sebességét, ami segít a közlekedés biztonságában és a sebességhatárok betartásában.",
+     "try_basic": "Mérj meg egy távolságot (például egy utcát vagy udvart) egy időintervallum alatt, és számold ki a sebességedet, ha futottál vagy kerékpároztál.",
+     "try_advanced": "Készíts egy egyszerű sebességmérőt egy stoppert és egy mérőszalag segítségével, és mérj különböző járművek sebességét (például autók, kerékpárok) egy forgalmas úton, figyelve a sebességhatárokat."
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A sebességmérők a modern járművek alapfelszereltségéhez tartoznak, és elengedhetetlenek a közlekedés biztonságához.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 50,
+        "w": 200,
+        "x": 100,
+        "y": 150,
+        "type": "box"
+       },
+       {
+        "x": 150,
+        "y": 165,
+        "text": "Sebességmérő",
+        "type": "label"
+       },
+       {
+        "r": 15,
+        "x": 50,
+        "y": 175,
+        "type": "circle"
+       },
+       {
+        "x": 40,
+        "y": 180,
+        "text": "Jármű",
+        "type": "label"
+       },
+       {
+        "x1": 200,
+        "x2": 300,
+        "y1": 175,
+        "y2": 175,
+        "type": "arrow"
+       },
+       {
+        "x": 250,
+        "y": 165,
+        "text": "Sebesség",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Sebességmérés a gyakorlatban",
+     "discovery": "A járművek sebességmérője a 20. század elején terjedt el az autókban, nem sokkal azután, hogy az 1880-as években megjelentek az első autók. A sebességmérők pontosan mérik a járművek sebességét, ami segít a közlekedés biztonságában és a sebességhatárok betartásában.",
+     "try_basic": "Mérj meg egy távolságot (például egy utcát vagy udvart) egy időintervallum alatt, és számold ki a sebességedet, ha futottál vagy kerékpároztál.",
+     "try_advanced": "Készíts egy egyszerű sebességmérőt egy stoppert és egy mérőszalag segítségével, és mérj különböző járművek sebességét (például autók, kerékpárok) egy forgalmas úton, figyelve a sebességhatárokat."
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-03-003",
+   "lesson_id": "7b00430f-05e6-40fa-a93a-af1d004cb68a",
+   "block_id": "9dd860e7-ac36-4293-bae7-be55a5f0b040",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options[3]",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik erő okozza a járművek kanyarodását?” — A) Súrlódási erő; D) Centripetális erő is helyesnek tűnik",
+   "explanation": "Kanyarban a súrlódási erő tölti be a centripetális (befelé mutató) erő szerepét, így mindkét válasz védhető.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Centripetal_force",
+     "title": "Centripetal force",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Súrlódási erő",
+      "B) Nehézségi erő",
+      "C) Légellenállás",
+      "D) Centripetális erő"
+     ],
+     "question": "Melyik erő okozza a járművek kanyarodását?",
+     "explanation": "A járművek kanyarodása során a súrlódási erő segíti a járművet a kanyarban, megakadályozva a csúszást.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Súrlódási erő",
+      "B) Nehézségi erő",
+      "C) Légellenállás",
+      "D) Felhajtóerő"
+     ],
+     "question": "Melyik erő okozza a járművek kanyarodását?",
+     "explanation": "A járművek kanyarodása során a súrlódási erő segíti a járművet a kanyarban, megakadályozva a csúszást.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-03-004",
+   "lesson_id": "7b00430f-05e6-40fa-a93a-af1d004cb68a",
+   "block_id": "9dd860e7-ac36-4293-bae7-be55a5f0b040",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik erő hat egy elejtett testre a Föld felszínén?” — A) Nehézségi erő; B) Légellenállás is hat",
+   "explanation": "Levegőben a légellenállás is hat a zuhanó testre, így két helyes válasz van; a kérdést a gyorsító erőre kell szűkíteni.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Két helyes válasz.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Nehézségi erő",
+      "B) Légellenállás",
+      "C) Súrlódási erő",
+      "D) Centripetális erő"
+     ],
+     "question": "Melyik erő hat egy elejtett testre a Föld felszínén?",
+     "explanation": "Az elejtett testre a Föld vonzásából adódóan a nehézségi erő (gravitációs erő) hat.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Nehézségi erő",
+      "B) Légellenállás",
+      "C) Súrlódási erő",
+      "D) Centripetális erő"
+     ],
+     "question": "Melyik erő gyorsítja lefelé az elejtett testet a Föld felszínén?",
+     "explanation": "Az elejtett testre a Föld vonzásából adódóan a nehézségi erő (gravitációs erő) hat.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-03-005",
+   "lesson_id": "5b4539f6-1656-4b12-bc21-b21b7ee7acfa",
+   "block_id": "1c5dea85-eec0-471e-8346-26fcaf66e56b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "heading, key_term",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Címsor „Sebességrekordok és kutatás”, kulcsszó „Newton második törvénye”, a szöveg a rekuperációs fékezésről szól",
+   "explanation": "A címsor és a kulcsszó nem illik a kártya tartalmához.",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Belső ellentmondás a kártyán.",
+   "fix": {
+    "before": {
+     "body": "A sebességrekordok gyűjtése izgalmas tevékenység lehet, hiszen megtudhatod, hogy milyen gyorsan tudnak közlekedni a különböző járművek. Például az elektromos autók rekuperációs fékezése lehetővé teszi, hogy a jármű visszanyerje a mozgásából származó energiát. A modern technológiák és kutatások folyamatosan új rekordokat állítanak fel, és érdemes ezeket figyelemmel kísérni, hogy láthassuk, merre tart a jövő közlekedése.",
+     "type": "text",
+     "heading": "Sebességrekordok és kutatás",
+     "key_term": "Newton második törvénye"
+    },
+    "after": {
+     "body": "A sebességrekordok gyűjtése izgalmas tevékenység lehet, hiszen megtudhatod, hogy milyen gyorsan tudnak közlekedni a különböző járművek. Például az elektromos autók rekuperációs fékezése lehetővé teszi, hogy a jármű visszanyerje a mozgásából származó energiát. A modern technológiák és kutatások folyamatosan új rekordokat állítanak fel, és érdemes ezeket figyelemmel kísérni, hogy láthassuk, merre tart a jövő közlekedése.",
+     "type": "text",
+     "heading": "Új technológiák a közlekedésben",
+     "key_term": "rekuperációs fékezés"
+    }
+   }
+  }
+ ]
+}
