@@ -1,0 +1,765 @@
+{
+ "nat_id": "HIST-910-05",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 16,
+  "cards": 88,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világ blokkok: 737880b1 (HIST-910-05), 34a430a8, 7bdddd86 (HIST-910-05/06). Strukturális, a generálás hibája; érdemes újragenerálni."
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-910-05-001",
+   "lesson_id": "2bc21c70-4bc0-4c38-8942-83cc38fca2d8",
+   "block_id": "5a8a1e2e-9f77-4c9e-8d8e-78536bd4d8eb",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A kettős keresztet I. István használta",
+   "explanation": "A kettős kereszt (patriarchális kereszt) mint uralkodói jelkép a magyar királyi jelvényeken III. Béla korától (12. század vége) igazolható. Szent István korából nem ismert.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Coat_of_arms_of_Hungary",
+     "title": "Coat of arms of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A kettős kereszt a kereszténység egyik fontos szimbóluma, amely a magyar államalapítás idején vált jelentőssé. I. István király, aki 1000-ben koronázásával megalapította a keresztény magyar államot, a kettős keresztet használta a hatalom és a keresztény hit jelképeként. A kettős kereszt a kereszténység terjedésével összefüggésben jelent meg Magyarországon, és a királyi hatalom isteni eredetét szimbolizálta. Ez a jelkép a magyar címerben is megjelent, és a keresztény királyság legitimitását erősítette. A kettős kereszt a magyar történelemben a keresztény államiság és a nyugati keresztény kultúrához való tartozás szimbólumává vált.",
+     "type": "text",
+     "heading": "A kettős kereszt szerepe az államalapítás idején",
+     "key_term": "kettős kereszt"
+    },
+    "after": {
+     "body": "A kettős kereszt a kereszténység egyik fontos szimbóluma, amely a magyar államalapítás idején vált jelentőssé. I. István király 1000-ben koronázásával megalapította a keresztény magyar államot; a kettős kereszt a hatalom és a keresztény hit jelképeként azonban a királyi jelvényeken csak III. Béla idejétől (12. század vége) igazolható. A kettős kereszt a kereszténység terjedésével összefüggésben jelent meg Magyarországon, és a királyi hatalom isteni eredetét szimbolizálta. Ez a jelkép a magyar címerben is megjelent, és a keresztény királyság legitimitását erősítette. A kettős kereszt a magyar történelemben a keresztény államiság és a nyugati keresztény kultúrához való tartozás szimbólumává vált.",
+     "type": "text",
+     "heading": "A kettős kereszt szerepe az államalapítás idején",
+     "key_term": "kettős kereszt"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-002",
+   "lesson_id": "2bc21c70-4bc0-4c38-8942-83cc38fca2d8",
+   "block_id": "5a8a1e2e-9f77-4c9e-8d8e-78536bd4d8eb",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 9,
+   "field": "heading",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Horvátország és az államalapítás” – 1102 nem az államalapítás kora",
+   "explanation": "1102-ben Könyves Kálmán a Pacta conventa szerint (hitele vitatott) horvát király lett; ez nem az államalapítás, hanem a Magyar Királyság bővülése.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Personal_union_of_Croatia_and_Hungary",
+     "title": "Personal union of Croatia and Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Horvátország története szorosan összefonódik a magyar államalapítással. 1102-ben Könyves Kálmán magyar király a horvát nemességgel kötött megállapodás révén megszerezte a horvát trónt, és ettől kezdve a Magyar Királyság részeként működött. Ez a perszonálunió lehetővé tette a két ország közötti szoros politikai és gazdasági kapcsolatokat. A horvát területek fontos szerepet játszottak a Magyar Királyság déli védelmében, különösen a török hódítások idején. A horvát-magyar kapcsolatok a középkor folyamán többször is változtak, de a közös uralkodó alatt álló államszerkezet hosszú távú stabilitást biztosított mindkét fél számára.",
+     "type": "text",
+     "heading": "Horvátország és az államalapítás",
+     "key_term": "Horvátország"
+    },
+    "after": {
+     "body": "Horvátország története szorosan összefonódik a magyar államalapítással. 1102-ben Könyves Kálmán magyar király a horvát nemességgel kötött megállapodás révén megszerezte a horvát trónt, és ettől kezdve a Magyar Királyság részeként működött. Ez a perszonálunió lehetővé tette a két ország közötti szoros politikai és gazdasági kapcsolatokat. A horvát területek fontos szerepet játszottak a Magyar Királyság déli védelmében, különösen a török hódítások idején. A horvát-magyar kapcsolatok a középkor folyamán többször is változtak, de a közös uralkodó alatt álló államszerkezet hosszú távú stabilitást biztosított mindkét fél számára.",
+     "type": "text",
+     "heading": "Horvátország és a Magyar Királyság (1102)",
+     "key_term": "Horvátország"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-003",
+   "lesson_id": "f988a2ce-da63-4f1b-88e2-6cd2e37cb315",
+   "block_id": "e4c69967-b2eb-4a8e-8157-cc232a493a71",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Szent László alatt „a szászok és kunok is fontos szereplőkké váltak”",
+   "explanation": "A szászok betelepítése a 12. század közepén, II. Géza idején kezdődött. A kunok tömegesen IV. Béla korában települtek le; László a kun és besenyő betörések ellen harcolt (cserhalmi csata, 1068, még Salamon alatt).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Transylvanian_Saxons",
+     "title": "Transylvanian Saxons",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Cumans",
+     "title": "Cumans",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ladislaus_I_of_Hungary",
+     "title": "Ladislaus I of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "I. László, 1077 és 1095 között uralkodott, jelentős szerepet játszott a magyar állam megszilárdulásában. Ő volt az, aki a kereszténységet megszilárdította Magyarországon, és a törvénykezést megerősítette. László alatt a nádor, mint a legfontosabb világi méltóság, kiemelt szerepet kapott a kormányzásban. Az ő uralkodása alatt a szászok és kunok is fontos szereplőkké váltak az országban, hozzájárulva a társadalmi stabilitáshoz.",
+     "type": "text",
+     "heading": "I. (Szent) László és az országépítés",
+     "key_term": "I. (Szent) László"
+    },
+    "after": {
+     "body": "I. László, 1077 és 1095 között uralkodott, jelentős szerepet játszott a magyar állam megszilárdulásában. Ő volt az, aki a kereszténységet megszilárdította Magyarországon, és a törvénykezést megerősítette. László alatt a nádor, mint a legfontosabb világi méltóság, kiemelt szerepet kapott a kormányzásban. Uralkodása alatt a keleti nomád betörések ellen kellett védekeznie; a szászok betelepítése II. Géza idején (12. század közepe), a kunoké IV. Béla korában történt.",
+     "type": "text",
+     "heading": "I. (Szent) László és az országépítés",
+     "key_term": "I. (Szent) László"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-004",
+   "lesson_id": "f988a2ce-da63-4f1b-88e2-6cd2e37cb315",
+   "block_id": "e4c69967-b2eb-4a8e-8157-cc232a493a71",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Könyves Kálmán „vezette be a kancellária intézményét”",
+   "explanation": "A királyi kancellária szervezett intézménye III. Béla idején (1181 körül) alakult ki; Kálmán korából oklevélkiadás egyházi hiteleshelyekhez kötött.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Béla_III_of_Hungary",
+     "title": "Béla III of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Könyves Kálmán, 1095-től 1116-ig uralkodó király, a törvénykezés reformjairól ismert. Ő vezette be a kancellária intézményét, amely a királyi iratok és oklevelek kezeléséért felelt. Reformjai hozzájárultak a jogbiztonság növeléséhez és a feudális rendszer megszilárdulásához. Kálmán alatt a nádor szerepe tovább erősödött, mint a királyi hatalom képviselője.",
+     "type": "text",
+     "heading": "Könyves Kálmán törvénykezési reformjai",
+     "key_term": "Könyves Kálmán"
+    },
+    "after": {
+     "body": "Könyves Kálmán, 1095-től 1116-ig uralkodó király, a törvénykezés reformjairól ismert. A királyi kancellária, amely az iratok és oklevelek kezeléséért felelt, csak III. Béla idején (1181 körül) alakult ki szervezett intézménnyé. Reformjai hozzájárultak a jogbiztonság növeléséhez és a feudális rendszer megszilárdulásához. Kálmán alatt a nádor szerepe tovább erősödött, mint a királyi hatalom képviselője.",
+     "type": "text",
+     "heading": "Könyves Kálmán törvénykezési reformjai",
+     "key_term": "Könyves Kálmán"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-005",
+   "lesson_id": "f988a2ce-da63-4f1b-88e2-6cd2e37cb315",
+   "block_id": "e4c69967-b2eb-4a8e-8157-cc232a493a71",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "II. András idején „a szászok és kunok is fontos szereplők lettek”",
+   "explanation": "A szászok kiváltságait az 1224-es Andreanum rögzítette. A kunok letelepítése IV. Béla idején (1239–1246) zajlott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Andreanum",
+     "title": "Andreanum",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Cumans",
+     "title": "Cumans",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "II. András, 1205-től 1235-ig uralkodott, és uralkodása alatt jelentős társadalmi átalakulások zajlottak. Ő volt az, aki 1222-ben kiadta az Aranybullát, amely a nemesség jogait biztosította. Az Aranybulla megjelenése fontos lépés volt a jogállamiság felé, és a nádor szerepét is megerősítette. András idején a szászok és kunok is fontos szereplők lettek a magyar társadalomban.",
+     "type": "text",
+     "heading": "II. András és az átalakuló társadalom",
+     "key_term": "II. András"
+    },
+    "after": {
+     "body": "II. András, 1205-től 1235-ig uralkodott, és uralkodása alatt jelentős társadalmi átalakulások zajlottak. Ő volt az, aki 1222-ben kiadta az Aranybullát, amely a nemesség jogait biztosította. Az Aranybulla megjelenése fontos lépés volt a jogállamiság felé, és a nádor szerepét is megerősítette. András idején az 1224-es Andreanum rögzítette az erdélyi szászok kiváltságait.",
+     "type": "text",
+     "heading": "II. András és az átalakuló társadalom",
+     "key_term": "II. András"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-006",
+   "lesson_id": "f988a2ce-da63-4f1b-88e2-6cd2e37cb315",
+   "block_id": "e4c69967-b2eb-4a8e-8157-cc232a493a71",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "Szent Margit „a Habsburgokkal … való kapcsolatokban játszott szerepet”",
+   "explanation": "Szent Margit (1242–1270) domonkos apáca volt a Nyulak szigetén, a hagyomány szerint visszautasította a házassági ajánlatokat; dinasztikus szerepe nem volt. Habsburg-kapcsolat nem volt (a Habsburgok akkor még jelentéktelen grófok). Az Árpád-ház európai kapcsolatait a hercegnők házasságai erősítették (például Szent Erzsébet, II. András lánya).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Margaret_of_Hungary_(saint)",
+     "title": "Margaret of Hungary (saint)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Elizabeth_of_Hungary",
+     "title": "Elizabeth of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az Árpádok uralkodása alatt Magyarország számos fontos európai kapcsolatra tett szert. A királyok házasságkötésekkel és szövetségekkel próbálták erősíteni az ország pozícióját. Szent Margit, IV. Béla lánya, a Habsburgokkal és más európai dinasztiákkal való kapcsolatokban játszott szerepet. Az Árpádok politikai kapcsolatai hozzájárultak Magyarország stabilitásához és fejlődéséhez.",
+     "type": "text",
+     "heading": "Az Árpádok európai kapcsolatai",
+     "key_term": "Árpádok európai kapcsolatai"
+    },
+    "after": {
+     "body": "Az Árpádok uralkodása alatt Magyarország számos fontos európai kapcsolatra tett szert. A királyok házasságkötésekkel és szövetségekkel próbálták erősíteni az ország pozícióját. Szent Margit, IV. Béla lánya, domonkos apáca lett, és a hagyomány szerint visszautasította a házassági ajánlatokat; az európai kapcsolatokat inkább a hercegnők házasságai erősítették (például Szent Erzsébeté, II. András lányáé). Az Árpádok politikai kapcsolatai hozzájárultak Magyarország stabilitásához és fejlődéséhez.",
+     "type": "text",
+     "heading": "Az Árpádok európai kapcsolatai",
+     "key_term": "Árpádok európai kapcsolatai"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-007",
+   "lesson_id": "5ad8e1ce-11a3-4cf2-8ca2-47651aba6aee",
+   "block_id": "4c9cc97d-be25-4d27-8f4a-d87e3b734e84",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "907: a magyarok „a Frank Birodalom területére” érve arattak győzelmet a pozsonyi csatában",
+   "explanation": "A pozsonyi csata (907) a bajor sereg (Keleti Frank Királyság) ellen zajlott, Pozsony közelében, nem a Frank Birodalom szívében.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Pressburg",
+     "title": "Battle of Pressburg",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A kalandozások a magyarok más területek ellen irányuló hadjáratai voltak a honfoglalás után. A lovasíjász harcmodor lehetővé tette a gyors és meglepetésszerű támadásokat. A kalandozások során a magyarok eljutottak a Frank Birodalom területére is, ahol 907-ben a pozsonyi csatában döntő győzelmet arattak. Ezek a hadjáratok hozzájárultak a magyar nép hírnevének növeléséhez és a terület stabilizálásához.",
+     "type": "text",
+     "heading": "A kalandozások",
+     "key_term": "kalandozások"
+    },
+    "after": {
+     "body": "A kalandozások a magyarok más területek ellen irányuló hadjáratai voltak a honfoglalás után. A lovasíjász harcmodor lehetővé tette a gyors és meglepetésszerű támadásokat. A kalandozások során a magyarok eljutottak Nyugat-Európáig is; 907-ben a pozsonyi csatában döntő győzelmet arattak a bajor sereg felett. Ezek a hadjáratok hozzájárultak a magyar nép hírnevének növeléséhez és a terület stabilizálásához.",
+     "type": "text",
+     "heading": "A kalandozások",
+     "key_term": "kalandozások"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-008",
+   "lesson_id": "5ad8e1ce-11a3-4cf2-8ca2-47651aba6aee",
+   "block_id": "4c9cc97d-be25-4d27-8f4a-d87e3b734e84",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A vérszerződés az őstörténet „fontos része”, tényként",
+   "explanation": "A vérszerződés Anonymus Gesta Hungarorum című művéből ismert, történeti hitele bizonytalan; a szakirodalom többnyire legendának tekinti.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Gesta_Hungarorum",
+     "title": "Gesta Hungarorum",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A magyar nép eredete a finnugor nyelvcsaládhoz köthető, amelyet a nyelvészet és a régészet is alátámasztott. A magyarok ősei a Volga és a Káma folyó vidékéről indultak el, majd a IX. században az Etelközbe érkeztek. Itt kialakították a törzsszövetségüket, amelynek vezetője Álmos volt. Az őstörténetünk fontos része a vérszerződés, amely a törzsek közötti szövetséget és hűséget szimbolizálta.",
+     "type": "text",
+     "heading": "A magyar nép eredete",
+     "key_term": "finnugor"
+    },
+    "after": {
+     "body": "A magyar nép eredete a finnugor nyelvcsaládhoz köthető, amelyet a nyelvészet és a régészet is alátámasztott. A magyarok ősei a Volga és a Káma folyó vidékéről indultak el, majd a IX. században az Etelközbe érkeztek. Itt kialakították a törzsszövetségüket, amelynek vezetője Álmos volt. A hagyomány (Anonymus Gesta Hungarorumja) szerint a vérszerződés kötötte össze a törzseket; történeti hitele bizonytalan, inkább legenda.",
+     "type": "text",
+     "heading": "A magyar nép eredete",
+     "key_term": "finnugor"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-009",
+   "lesson_id": "5ad8e1ce-11a3-4cf2-8ca2-47651aba6aee",
+   "block_id": "25427d9b-b108-44fb-8dc9-494098d51042",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "907: „a német-római birodalomban belső hatalmi harcok”",
+   "explanation": "907-ben német-római birodalom még nem létezett; a Keleti Frank Királyság állt fenn (a Német-római Birodalom 962-ben jött létre). A vereséget a bajor sereg szenvedte el, a királyt (Gyermek Lajos) gyerekként a nagyurak irányították.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/East_Francia",
+     "title": "East Francia",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "907-ben a német-római birodalomban belső hatalmi harcok zajlottak, amelyek gyengítették a birodalom egységét. A pozsonyi csata idején ezek a belső feszültségek lehetővé tették a magyarok számára, hogy sikeres támadást indítsanak.",
+     "type": "world",
+     "year": "907",
+     "heading": "A német-római birodalom belső konfliktusai",
+     "link_hu": "A német-római birodalom gyengülése hozzájárult a pozsonyi csata sikeréhez, amely megerősítette a magyar törzsszövetség pozícióját a Kárpát-medencében."
+    },
+    "after": {
+     "body": "907-ben a Keleti Frank Királyságban (a későbbi német-római birodalom elődjében) a gyermek Lajos uralkodott, és a nagyurak vetélkedtek egymással. A pozsonyi csatában a magyarok a bajor sereget győzték le.",
+     "type": "world",
+     "year": "907",
+     "heading": "A Keleti Frank Királyság gyengesége",
+     "link_hu": "A pozsonyi győzelem (907) megerősítette a magyar törzsszövetség pozícióját a Kárpát-medencében."
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-010",
+   "lesson_id": "5ad8e1ce-11a3-4cf2-8ca2-47651aba6aee",
+   "block_id": "0eb2c901-eb9a-430f-bc54-6d4c1d18264f",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A kettős honfoglalás elmélete: a kulcs (C) ellentmond a magyarázatnak",
+   "explanation": "László Gyula elmélete szerint 670 körül már magyar nyelvű (késő avar) csoport érkezett a Kárpát-medencébe, majd 895 körül Árpád népe. A kulcs (C, a Kárpát-medence két része) nem ezt írja le; az elmélet a kutatók kisebbségi álláspontja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Double_conquest_theory",
+     "title": "Double conquest theory",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A magyarok kétszer foglalták el a Kárpát-medencét.",
+      "B) A honfoglalás során két különböző nép érkezett.",
+      "C) A magyarok először a Kárpát-medence keleti, majd nyugati részét foglalták el.",
+      "D) A honfoglalás után a magyarok két részre szakadtak."
+     ],
+     "question": "Mi a kettős honfoglalás elmélete?",
+     "explanation": "A kettős honfoglalás elmélete szerint a magyarok előtt egy másik, magyar nyelvű nép is érkezett a Kárpát-medencébe.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A magyarok kétszer költöztek el a Kárpát-medencéből.",
+      "B) A honfoglalás előtt, 670 körül már egy magyar nyelvű csoport érkezett, majd 895 körül Árpád népe.",
+      "C) A magyarok először a keleti, majd a nyugati részt foglalták el.",
+      "D) A honfoglalás után a magyarok két részre szakadtak."
+     ],
+     "question": "Mi a kettős honfoglalás elmélete?",
+     "explanation": "A kettős honfoglalás elmélete (László Gyula) szerint 670 körül már egy magyar nyelvű csoport (a késő avarok) érkezett a Kárpát-medencébe, majd 895 körül Árpád népe. Ez a kutatók kisebbségi, vitatott álláspontja.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-011",
+   "lesson_id": "2bc21c70-4bc0-4c38-8942-83cc38fca2d8",
+   "block_id": "5d62f551-5795-4dcd-9388-50e461413b0d",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A tized: a kulcs „A) Állami adó”, a magyarázat szerint egyházi adó",
+   "explanation": "A tized (decima) a termés tizedrésze volt, amelyet az egyház fenntartására fizettek, nem állami adó.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Tithe",
+     "title": "Tithe",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Állami adó",
+      "B) Egyházi adomány",
+      "C) Kereskedelmi vám",
+      "D) Katonai szolgálat"
+     ],
+     "question": "Mi a tized jelentősége az államalapítás időszakában?",
+     "explanation": "A tized az államalapítás utáni időszakban a termelők által fizetett adó volt, amely az egyház fenntartásához járult hozzá.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Állami adó",
+      "B) Az egyház fenntartására fizetett adó",
+      "C) Kereskedelmi vám",
+      "D) Katonai szolgálat"
+     ],
+     "question": "Mi a tized jelentősége az államalapítás időszakában?",
+     "explanation": "A tized a termés tizedrészét jelentő egyházi adó volt, amelyet az egyház fenntartására fizettek.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-012",
+   "lesson_id": "2bc21c70-4bc0-4c38-8942-83cc38fca2d8",
+   "block_id": "5d62f551-5795-4dcd-9388-50e461413b0d",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Körkörös kérdés: „a vármegye … szervezeti formája”",
+   "explanation": "A kérdés a választ (vármegye) megismétli; a vármegye a magyar állam alapvető közigazgatási-területi egysége volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Counties_of_the_Kingdom_of_Hungary",
+     "title": "Counties of the Kingdom of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Egyházmegye",
+      "B) Vármegye",
+      "C) Keresztény közösség",
+      "D) Családi klán"
+     ],
+     "question": "Melyik területi egység volt a vármegye elsődleges szervezeti formája a magyar állam életében?",
+     "explanation": "A vármegye a középkori Magyarország közigazgatási egysége volt, amely a helyi igazgatás és a törvénykezés alapját képezte.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Egyházmegye",
+      "B) Vármegye",
+      "C) Keresztény közösség",
+      "D) Családi klán"
+     ],
+     "question": "Melyik volt a magyar állam alapvető közigazgatási egysége az államalapítás után?",
+     "explanation": "A vármegye a középkori Magyarország közigazgatási egysége volt, amely a helyi igazgatás és a törvénykezés alapját képezte.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-013",
+   "lesson_id": "f988a2ce-da63-4f1b-88e2-6cd2e37cb315",
+   "block_id": "d4c8fabb-ba99-4fa9-8d2e-3e220534a842",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Könyves Kálmán törvénykezési reformjai – kulcs: az ispáni rendszer megszilárdítása",
+   "explanation": "Az ispáni (vár-, majd) vármegyerendszert Szent István szervezte; Kálmán törvényeinek híres eleme, hogy a boszorkányok nem léteznek, ezért nem kell pereskedni ellenük.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Coloman,_King_of_Hungary",
+     "title": "Coloman, King of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az Aranybulla kiadását.",
+      "B) Az ispáni rendszer megszilárdítását.",
+      "C) A kancellária megalapítását.",
+      "D) A kunok betelepítését."
+     ],
+     "question": "Milyen reformokat vezetett be Könyves Kálmán a törvénykezés terén?",
+     "explanation": "Könyves Kálmán reformjai a törvénykezés terén az ispáni rendszer megerősítésére irányultak, amely hozzájárult az állam működésének stabilizálásához.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az Aranybulla kiadását.",
+      "B) A boszorkányperek tilalmát: a törvény szerint boszorkányok nincsenek.",
+      "C) A kancellária megalapítását.",
+      "D) A kunok betelepítését."
+     ],
+     "question": "Milyen reformokat vezetett be Könyves Kálmán a törvénykezés terén?",
+     "explanation": "Könyves Kálmán törvényei kimondták, hogy a boszorkányokról, mivel nincsenek, nem kell pert indítani.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-014",
+   "lesson_id": "f988a2ce-da63-4f1b-88e2-6cd2e37cb315",
+   "block_id": "d4c8fabb-ba99-4fa9-8d2e-3e220534a842",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A tatárjárás következménye: „területvesztés”",
+   "explanation": "A tatárjárás (1241–42) nagy pusztítással és népességcsökkenéssel járt, de az ország nem vesztett területet.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Europe",
+     "title": "Mongol invasion of Europe",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1241–1242, jelentős népességcsökkenés és területvesztés.",
+      "B) 1222, az Aranybulla kiadása.",
+      "C) 1234, a szászok betelepítése.",
+      "D) 1250, a kereszténység terjedése."
+     ],
+     "question": "Mikor zajlott a tatárjárás, és mi volt a következménye Magyarországra?",
+     "explanation": "A tatárjárás 1241–1242 között zajlott, amely súlyos következményekkel járt, beleértve a népességcsökkenést és a területvesztést.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1241–1242, jelentős népességcsökkenés és pusztítás.",
+      "B) 1222, az Aranybulla kiadása.",
+      "C) 1234, a szászok betelepítése.",
+      "D) 1250, a kereszténység terjedése."
+     ],
+     "question": "Mikor zajlott a tatárjárás, és mi volt a következménye Magyarországra?",
+     "explanation": "A tatárjárás 1241–1242 között zajlott, és jelentős népességcsökkenéssel és pusztítással járt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-015",
+   "lesson_id": "f988a2ce-da63-4f1b-88e2-6cd2e37cb315",
+   "block_id": "d4c8fabb-ba99-4fa9-8d2e-3e220534a842",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "III. Béla „a horvát királyságot Magyarországhoz csatolta”",
+   "explanation": "A horvát trón 1102-ben Könyves Kálmánra szállt. III. Béla Dalmácia egy részét visszaszerezte Velencétől, és kancelláriát szervezett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Béla_III_of_Hungary",
+     "title": "Béla III of Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Coloman,_King_of_Hungary",
+     "title": "Coloman, King of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az Aranybulla kiadását irányította.",
+      "B) A horvát királyságot Magyarországhoz csatolta.",
+      "C) A tatárok ellen harcolt.",
+      "D) Az ispánok számát csökkentette."
+     ],
+     "question": "Milyen szerepet játszott III. Béla a magyar kül- és belpolitikában?",
+     "explanation": "III. Béla uralkodása alatt Magyarország külpolitikája erősödött, és a horvát királyságot is Magyarországhoz csatolta.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az Aranybulla kiadását irányította.",
+      "B) Visszaszerezte a dalmáciai városokat Velencétől, és megszervezte a királyi kancelláriát.",
+      "C) A tatárok ellen harcolt.",
+      "D) Az ispánok számát csökkentette."
+     ],
+     "question": "Milyen szerepet játszott III. Béla a magyar kül- és belpolitikában?",
+     "explanation": "III. Béla uralkodása alatt Magyarország külpolitikája erősödött: visszaszerezte a dalmáciai városokat, és megszervezte a királyi kancelláriát.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-016",
+   "lesson_id": null,
+   "block_id": "5c87e516-4fc2-498e-bbb2-d38fb6676981",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A finnugor népesség … a magyar nép őse”",
+   "explanation": "A finnugor nyelvcsalád a magyar nyelv rokonságát jelöli; a magyar nép származása ennél összetettebb, a nép nem „a finnugorok utódja”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Finno-Ugric_languages",
+     "title": "Finno-Ugric languages",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A magyar nép őse",
+      "B) A szláv népek csoportja",
+      "C) A germán népek közé tartozik",
+      "D) A római birodalom népei"
+     ],
+     "question": "Mi a finnugor népesség eredete?",
+     "explanation": "A finnugor népesség a magyar nép őse, amely a finnugor nyelvcsaládhoz tartozik.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A magyarral is rokon nyelvcsalád, amelybe a finn és az észt is tartozik",
+      "B) A szláv népek csoportja",
+      "C) A germán népek közé tartozik",
+      "D) A római birodalom népei"
+     ],
+     "question": "Mit jelent a finnugor kifejezés?",
+     "explanation": "A finnugor nyelvcsaládba tartozik a magyar, a finn és az észt nyelv is; ez a nyelvrokonságot mutatja, a magyar nép eredete ennél összetettebb.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-05-017",
+   "lesson_id": null,
+   "block_id": "5c87e516-4fc2-498e-bbb2-d38fb6676981",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A vérszerződés tényként",
+   "explanation": "A vérszerződés Anonymus szerinti hagyomány, történeti hitele bizonytalan.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Gesta_Hungarorum",
+     "title": "Gesta Hungarorum",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A magyar törzsek szövetsége",
+      "B) A kereszténység felvétele",
+      "C) A magyar állam megszületése",
+      "D) A tatárok elleni védekezés"
+     ],
+     "question": "Mi a vérszerződés jelentősége?",
+     "explanation": "A vérszerződés a magyar törzsek szövetségét jelenti, amely megerősítette a közös célokat.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A magyar törzsek szövetsége",
+      "B) A kereszténység felvétele",
+      "C) A magyar állam megszületése",
+      "D) A tatárok elleni védekezés"
+     ],
+     "question": "Mi a vérszerződés jelentősége?",
+     "explanation": "A hagyomány szerint (Anonymus) a vérszerződés a magyar törzsek szövetségét pecsételte meg; történeti hitele bizonytalan.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}

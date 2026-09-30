@@ -1,0 +1,256 @@
+{
+ "nat_id": "HIST-910-02",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 11,
+  "cards": 59,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világblokk: ed6a3ba4.",
+   "Duplikált szövegkártya: 99a79db6 [6]/[7]."
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-910-02-001",
+   "lesson_id": "a495e221-d762-4bd2-ae3c-7dad465ebfb5",
+   "block_id": "f590c3e4-c4f6-46fa-ac05-e82dcea8839f",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Hol található a jeruzsálemi templom?” – mind a négy válasz igaz, és a templom ma nem létezik",
+   "explanation": "Jeruzsálem Júdeában, Kánaán/Palesztina területén fekszik, így A–D mind helyes. A második templomot Kr. u. 70-ben lerombolták, jelen időben a kérdés hamis.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_Temple",
+     "title": "Second Temple",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Jeruzsálemben",
+      "B) Kánaánban",
+      "C) Palesztinában",
+      "D) Júdeában"
+     ],
+     "question": "Hol található a jeruzsálemi templom?",
+     "explanation": "A jeruzsálemi templom Jeruzsálemben állt, és a zsidó vallás központi helyszíne volt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kr. u. 70-ben",
+      "B) Kr. e. 586-ban",
+      "C) Kr. u. 313-ban",
+      "D) Kr. u. 476-ban"
+     ],
+     "question": "Mikor rombolták le a rómaiak a jeruzsálemi (második) templomot?",
+     "explanation": "A jeruzsálemi második templomot a rómaiak Kr. u. 70-ben, a zsidó háború végén rombolták le. (Az első templomot Kr. e. 586-ban a babiloniak pusztították el.)",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-02-002",
+   "lesson_id": "7366f424-67ca-4f5c-b67c-452756dfb915",
+   "block_id": "99a79db6-39f0-4ad6-8385-4c415abba687",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Jézus születése „hagyományosan Kr. e. 4 és Kr. e. 6 közé” – a [7]. kártya szerint „Kr. e. 1-ben vagy Kr. u. 1-ben”",
+   "explanation": "A két kártya ellentmond egymásnak és összekeveri a hagyományt a kutatással. Dionysius Exiguus számítása szerint Jézus az időszámítás kezdetén született (0. év nincs: Kr. e. 1 után Kr. u. 1 következik); a mai történészek becslése Kr. e. 6–4 közé teszi, mert Nagy Heródes Kr. e. 4-ben meghalt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Date_of_the_birth_of_Jesus",
+     "title": "Date of the birth of Jesus",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A keresztény időszámítás kezdete Jézus Krisztus születéséhez kötődik, amelyet hagyományosan Kr. e. 4 és Kr. e. 6 közé helyeznek. A keresztény időszámítás a Krisztus születésétől számított éveket jelöli, és a világ egyik legelterjedtebb időszámítási rendszere. A Kr. e. (Krisztus előtt) és Kr. u. (Krisztus után) jelölések segítenek az események időbeli elhelyezésében. A keresztény időszámítás bevezetése Dionysius Exiguus nevéhez fűződik, aki a 6. században dolgozta ki ezt a rendszert. Az időszámítás kezdete fontos mérföldkő a történelmi események kronológiai rendezésében.",
+     "type": "text",
+     "heading": "A keresztény időszámítás kezdete",
+     "key_term": "keresztény időszámítás"
+    },
+    "after": {
+     "body": "A keresztény időszámítás kezdete Jézus Krisztus születéséhez kötődik, amelyet a történészek ma Kr. e. 6 és 4 közé tesznek (Dionysius számítása ennél néhány évvel későbbre tette). A keresztény időszámítás a Krisztus születésétől számított éveket jelöli, és a világ egyik legelterjedtebb időszámítási rendszere. A Kr. e. (Krisztus előtt) és Kr. u. (Krisztus után) jelölések segítenek az események időbeli elhelyezésében. A keresztény időszámítás bevezetése Dionysius Exiguus nevéhez fűződik, aki a 6. században dolgozta ki ezt a rendszert. Az időszámítás kezdete fontos mérföldkő a történelmi események kronológiai rendezésében.",
+     "type": "text",
+     "heading": "A keresztény időszámítás kezdete",
+     "key_term": "keresztény időszámítás"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-02-003",
+   "lesson_id": "7366f424-67ca-4f5c-b67c-452756dfb915",
+   "block_id": "99a79db6-39f0-4ad6-8385-4c415abba687",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a hagyomány szerint Kr. e. 1-ben vagy Kr. u. 1-ben”; duplikálja a [6]. kártyát",
+   "explanation": "Lásd az előző tételt. A kártya a [6]. ismétlése; a generálásnál másik szempontot kellene adni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Anno_Domini",
+     "title": "Anno Domini",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A keresztény időszámítás kezdete Jézus Krisztus születéséhez kapcsolódik, amelyet a hagyomány szerint Kr. e. 1-ben vagy Kr. u. 1-ben helyeznek el. Az időszámításunk előtti (Kr. e.) és az időszámításunk utáni (Kr. u.) korszakok elválasztása a keresztény kultúra egyik alapvető időmérési rendszere lett. A keresztény időszámítás bevezetése Dionysius Exiguus nevéhez fűződik, aki a 6. században alkotta meg ezt a rendszert. A keresztény időszámítás elterjedése a középkor folyamán fokozatosan történt meg, és mára világszerte elfogadottá vált. Az időszámítás kezdete nemcsak vallási, hanem kulturális és történelmi szempontból is jelentős, mivel a kereszténység hatása a nyugati civilizáció fejlődésére meghatározó volt.",
+     "type": "text",
+     "heading": "A keresztény időszámítás kezdete",
+     "key_term": "keresztény időszámítás"
+    },
+    "after": {
+     "body": "A keresztény időszámítás kezdete Jézus Krisztus születéséhez kapcsolódik, amelyet Dionysius Exiguus az időszámítás kezdetére tett (0. év nincs: Kr. e. 1 után közvetlenül Kr. u. 1 következik). Az időszámításunk előtti (Kr. e.) és az időszámításunk utáni (Kr. u.) korszakok elválasztása a keresztény kultúra egyik alapvető időmérési rendszere lett. A keresztény időszámítás bevezetése Dionysius Exiguus nevéhez fűződik, aki a 6. században alkotta meg ezt a rendszert. A keresztény időszámítás elterjedése a középkor folyamán fokozatosan történt meg, és mára világszerte elfogadottá vált. Az időszámítás kezdete nemcsak vallási, hanem kulturális és történelmi szempontból is jelentős, mivel a kereszténység hatása a nyugati civilizáció fejlődésére meghatározó volt.",
+     "type": "text",
+     "heading": "A keresztény időszámítás kezdete",
+     "key_term": "keresztény időszámítás"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-02-004",
+   "lesson_id": "7366f424-67ca-4f5c-b67c-452756dfb915",
+   "block_id": "99a79db6-39f0-4ad6-8385-4c415abba687",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Az első keresztény-üldözések a 1. és 2. században zajlottak”",
+   "explanation": "Nyelvi hiba („a 1.” → „az 1.”). Tartalmilag: az első üldözés Néró alatt (64) volt, de a legnagyobb, birodalmi szintű üldözések a 3–4. században történtek (Decius, Diocletianus).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_the_Roman_Empire",
+     "title": "Persecution of Christians in the Roman Empire",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A kereszténység elterjedése során a hívők gyakran üldözésnek voltak kitéve a Római Birodalomban. Az első keresztény-üldözések a 1. és 2. században zajlottak, amikor a római hatóságok a keresztényeket vallásuk miatt üldözték. A milánói rendelet, amelyet Constantinus adott ki 313-ban, jelentős változást hozott, mivel legalizálta a kereszténységet. Ez hozzájárult a vallás gyors elterjedéséhez a birodalomban.",
+     "type": "text",
+     "heading": "Keresztény-üldözések és elterjedés a Római Birodalomban",
+     "key_term": "milánói rendelet"
+    },
+    "after": {
+     "body": "A kereszténység elterjedése során a hívők gyakran üldözésnek voltak kitéve a Római Birodalomban. Az első keresztény-üldözés Néró alatt, 64-ben volt, a legnagyobbak pedig a 3–4. században (Decius, Diocletianus) zajlottak, amikor a római hatóságok a keresztényeket vallásuk miatt üldözték. A milánói rendelet, amelyet Constantinus adott ki 313-ban, jelentős változást hozott, mivel legalizálta a kereszténységet. Ez hozzájárult a vallás gyors elterjedéséhez a birodalomban.",
+     "type": "text",
+     "heading": "Keresztény-üldözések és elterjedés a Római Birodalomban",
+     "key_term": "milánói rendelet"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-02-005",
+   "lesson_id": "7366f424-67ca-4f5c-b67c-452756dfb915",
+   "block_id": "99a79db6-39f0-4ad6-8385-4c415abba687",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A keresztség és az úrvacsora a keresztény vallás két alapvető szentsége”",
+   "explanation": "Ez a protestáns felfogás; a katolikus és az ortodox egyház hét szentséget tart számon, amelyek közül a keresztség és az Eucharisztia a legfontosabbak közé tartozik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sacrament",
+     "title": "Sacrament",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A keresztség és az úrvacsora a keresztény vallás két alapvető szentsége. A keresztség a hívők belépését jelenti a keresztény közösségbe, míg az úrvacsora Jézus utolsó vacsorájának megemlékezése. Ezek a szertartások fontos szerepet játszanak a keresztény identitás megélésében és a közösség összetartásában. Az apostolok, mint Szent Péter, nagy szerepet játszottak e szentségek elterjesztésében.",
+     "type": "text",
+     "heading": "A keresztség és úrvacsora",
+     "key_term": "keresztség és úrvacsora"
+    },
+    "after": {
+     "body": "A keresztség és az úrvacsora a keresztény vallás két legfontosabb szentsége (a katolikus és az ortodox egyház összesen hét szentséget ismer, a protestánsok ezt a kettőt). A keresztség a hívők belépését jelenti a keresztény közösségbe, míg az úrvacsora Jézus utolsó vacsorájának megemlékezése. Ezek a szertartások fontos szerepet játszanak a keresztény identitás megélésében és a közösség összetartásában. Az apostolok, mint Szent Péter, nagy szerepet játszottak e szentségek elterjesztésében.",
+     "type": "text",
+     "heading": "A keresztség és úrvacsora",
+     "key_term": "keresztség és úrvacsora"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-02-006",
+   "lesson_id": "7366f424-67ca-4f5c-b67c-452756dfb915",
+   "block_id": "99a79db6-39f0-4ad6-8385-4c415abba687",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„E tan megfogalmazása a niceai zsinaton, 325-ben történt”",
+   "explanation": "A niceai zsinat (325) a Fiú istenségét mondta ki; a Szentlélekre is kiterjedő szentháromságtani hitvallást a konstantinápolyi zsinat (381) fogalmazta meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/First_Council_of_Constantinople",
+     "title": "First Council of Constantinople",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Szentháromság-tan a kereszténység egyik alapvető hittétele, amely szerint Isten három személyben létezik: az Atyában, a Fiúban (Jézus Krisztus) és a Szentlélekben. E tan megfogalmazása a niceai zsinaton, 325-ben történt, amely fontos mérföldkő volt a keresztény egyház történetében. A Szentháromság tanítása egységet teremtett a hívők között, és segítette a keresztény hit megerősödését.",
+     "type": "text",
+     "heading": "A Szentháromság-tan",
+     "key_term": "niceai zsinat"
+    },
+    "after": {
+     "body": "A Szentháromság-tan a kereszténység egyik alapvető hittétele, amely szerint Isten három személyben létezik: az Atyában, a Fiúban (Jézus Krisztus) és a Szentlélekben. E tan alapjait a niceai zsinat (325) rakta le, és a konstantinápolyi zsinat (381) fejezte be; ez fontos mérföldkő volt a keresztény egyház történetében. A Szentháromság tanítása egységet teremtett a hívők között, és segítette a keresztény hit megerősödését.",
+     "type": "text",
+     "heading": "A Szentháromság-tan",
+     "key_term": "niceai zsinat"
+    }
+   }
+  }
+ ]
+}

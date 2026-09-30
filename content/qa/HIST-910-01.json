@@ -1,0 +1,325 @@
+{
+ "nat_id": "HIST-910-01",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 26,
+  "cards": 143,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Duplikált szövegkártyák (strukturális, a tartalomgenerálás hibája): 9d15c564 [3]/[7]/[8] olimpia; 41601efc [1]/[5]/[7] Kleiszthenész és [2]/[6]/[8] Periklész; 0e3902f2 [5]/[9], [6]/[10], [7]/[11], [8]/[12]; e33d56dc [0]/[6]/[7]."
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-910-01-001",
+   "lesson_id": "6c5827d2-40a8-4217-b9d2-f9574cdbc2d8",
+   "block_id": "52749d14-98e7-491f-abd1-fda7e1be733f",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mikor és miért történt Jeruzsálem lerombolása?” – A) Kr. e. 586 (babiloniak) is helyes, a kulcs csak B",
+   "explanation": "Jeruzsálemet kétszer rombolták le: Kr. e. 586-ban II. Nabú-kudurri-uszur babiloni serege (az első templommal együtt), és Kr. u. 70-ben a rómaiak. Az A) válasz is igaz, így két helyes válasz van. A kérdést a rómaiakra kell szűkíteni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)",
+     "title": "Siege of Jerusalem (587 BC)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)",
+     "title": "Siege of Jerusalem (70 CE)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Kr. e. 586, mert a babiloniak elfoglalták",
+      "B) Kr. u. 70, a rómaiak által a zsidó háború végén",
+      "C) Kr. e. 300, a görögök által",
+      "D) Kr. u. 500, a bizánciak által"
+     ],
+     "question": "Mikor és miért történt Jeruzsálem lerombolása?",
+     "explanation": "Jeruzsálem lerombolása Kr. u. 70-ben történt, amikor a rómaiak elfojtották a zsidó lázadást, ami jelentős hatással volt a zsidó népre és vallásra.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Kr. e. 586, mert a babiloniak elfoglalták",
+      "B) Kr. u. 70, a rómaiak által a zsidó háború végén",
+      "C) Kr. e. 300, a görögök által",
+      "D) Kr. u. 500, a bizánciak által"
+     ],
+     "question": "Mikor és kik rombolták le Jeruzsálemet és a második templomot?",
+     "explanation": "Jeruzsálem lerombolása Kr. u. 70-ben történt, amikor a rómaiak elfojtották a zsidó lázadást, ami jelentős hatással volt a zsidó népre és vallásra.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-01-002",
+   "lesson_id": "536a3d63-29f2-474a-802a-a5862439066a",
+   "block_id": "f8d6ae18-f3dd-4e1e-8473-9e2039e68ad0",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Melyik város volt … Pannónia fővárosa?” – kulcs: Aquincum",
+   "explanation": "Pannóniát Kr. u. 103 körül kettéosztották: Alsó-Pannónia székhelye Aquincum, Felső-Pannóniáé Carnuntum lett; később Savaria is tartományi székhely volt. Egyetlen „főváros” nincs, Savaria (B) is védhető. A kérdést Alsó-Pannóniára kell pontosítani.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pannonia_Inferior",
+     "title": "Pannonia Inferior",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Aquincum.",
+      "B) Savaria.",
+      "C) Roma.",
+      "D) Carthago."
+     ],
+     "question": "Melyik város volt a római provincia, Pannónia fővárosa?",
+     "explanation": "Aquincum volt Pannónia római fővárosa, amely fontos kereskedelmi és katonai központ volt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Aquincum.",
+      "B) Savaria.",
+      "C) Roma.",
+      "D) Carthago."
+     ],
+     "question": "Melyik város volt Alsó-Pannónia (Pannonia Inferior) székhelye?",
+     "explanation": "Aquincum volt Alsó-Pannónia székhelye, fontos katonai és kereskedelmi központ. (Felső-Pannónia székhelye Carnuntum volt.)",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-01-003",
+   "lesson_id": "536a3d63-29f2-474a-802a-a5862439066a",
+   "block_id": "0e3902f2-6863-4cca-83a6-df767df1d34e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Pannónia területe ma Magyarország nagy részét lefedi”",
+   "explanation": "Pannónia a Duna jobb partján feküdt: a mai Dunántúlt, valamint Ausztria, Szlovénia, Horvátország és Szerbia egyes részeit foglalta magában. A mai Magyarország Dunától keletre eső része (Alföld) nem tartozott hozzá.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pannonia",
+     "title": "Pannonia",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A római birodalom területe Kr. u. 117 körül érte el legnagyobb kiterjedését, magában foglalva Európa, Észak-Afrika és Ázsia egyes részeit. A provinciák, mint például Pannónia, fontos szerepet játszottak a birodalom gazdasági és katonai működésében. Pannónia területe ma Magyarország nagy részét lefedi, és Aquincum, Savaria városai a római civilizáció emlékét őrzik. A provinciák közötti kereskedelem és kulturális kapcsolatok gazdagították a helyi közösségeket.",
+     "type": "text",
+     "heading": "A római birodalom kiterjedése",
+     "key_term": "provincia"
+    },
+    "after": {
+     "body": "A római birodalom területe Kr. u. 117 körül érte el legnagyobb kiterjedését, magában foglalva Európa, Észak-Afrika és Ázsia egyes részeit. A provinciák, mint például Pannónia, fontos szerepet játszottak a birodalom gazdasági és katonai működésében. Pannónia a mai Dunántúlt és a szomszédos országok egyes részeit foglalta magában, és Aquincum, Savaria városai a római civilizáció emlékét őrzik. A provinciák közötti kereskedelem és kulturális kapcsolatok gazdagították a helyi közösségeket.",
+     "type": "text",
+     "heading": "A római birodalom kiterjedése",
+     "key_term": "provincia"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-01-004",
+   "lesson_id": "24d8379a-01c3-430d-bb41-dc3bc22e54b8",
+   "block_id": "e33d56dc-17ca-4074-9f0a-3d7fd5ce5835",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Augustus „Julius Caesar unokaöccse volt”",
+   "explanation": "Octavianus Caesar húgának, Iulia Caesarisnak az unokája volt (Caesar nővérének lánya, Atia fia), vagyis Caesar dédunokaöccse; Caesar végrendeletében fiává fogadta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Augustus",
+     "title": "Augustus",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Augustus, eredeti nevén Octavianus, Julius Caesar unokaöccse volt, aki a köztársaság bukása után Róma első császárává vált. Ő volt az, aki a köztársaság intézményeit átalakította, és a birodalom stabilitását biztosította. Augustus uralkodása alatt Róma terjeszkedett, és a Pax Romana, a béke kora, indult el. Az ő politikai reformjai alapvetően megváltoztatták Róma társadalmi és politikai struktúráját, és hosszú távú hatásokat gyakoroltak a történelemre.",
+     "type": "text",
+     "heading": "Augustus és az új rend",
+     "key_term": "Augustus"
+    },
+    "after": {
+     "body": "Augustus, eredeti nevén Octavianus, Julius Caesar rokona és fogadott fia volt, aki a köztársaság bukása után Róma első császárává vált. Ő volt az, aki a köztársaság intézményeit átalakította, és a birodalom stabilitását biztosította. Augustus uralkodása alatt Róma terjeszkedett, és a Pax Romana, a béke kora, indult el. Az ő politikai reformjai alapvetően megváltoztatták Róma társadalmi és politikai struktúráját, és hosszú távú hatásokat gyakoroltak a történelemre.",
+     "type": "text",
+     "heading": "Augustus és az új rend",
+     "key_term": "Augustus"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-01-005",
+   "lesson_id": "6c5827d2-40a8-4217-b9d2-f9574cdbc2d8",
+   "block_id": "3df22eac-d72a-46bf-9138-e941790a1db3",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Az első pénznemek, mint az ezüst és arany” Babilonban és Egyiptomban",
+   "explanation": "Mezopotámiában és Egyiptomban az ezüstöt mérlegen, súly szerint használták fizetőeszközként; pénzérme (vert pénz) először Lídiában, Kr. e. 7. században jelent meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lydian_coinage",
+     "title": "Lydian coinage",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A pénz megjelenése a közel-keleti civilizációkban, különösen Babilonban és Egyiptomban, forradalmasította a kereskedelmet. Az első pénznemek, mint az ezüst és arany, lehetővé tették a kereskedelmi tranzakciók egyszerűsítését. A pénz használata hozzájárult a gazdasági kapcsolatok fejlődéséhez és a társadalmi rétegződés kialakulásához. A pénz szerepe a kereskedelemben és a gazdaságban alapvető fontosságú volt, és hatása a későbbi magyar gazdasági fejlődésre is kihatott.",
+     "type": "text",
+     "heading": "A pénz megjelenése és hatása",
+     "key_term": "pénz"
+    },
+    "after": {
+     "body": "A pénz megjelenése a közel-keleti civilizációkban, különösen Babilonban és Egyiptomban, forradalmasította a kereskedelmet. Kezdetben a lemért ezüst szolgált fizetőeszközként; az első pénzérméket később, a Kr. e. 7. században Lídiában verték. A pénz lehetővé tette a kereskedelmi tranzakciók egyszerűsítését. A pénz használata hozzájárult a gazdasági kapcsolatok fejlődéséhez és a társadalmi rétegződés kialakulásához. A pénz szerepe a kereskedelemben és a gazdaságban alapvető fontosságú volt, és hatása a későbbi magyar gazdasági fejlődésre is kihatott.",
+     "type": "text",
+     "heading": "A pénz megjelenése és hatása",
+     "key_term": "pénz"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-01-006",
+   "lesson_id": "24d8379a-01c3-430d-bb41-dc3bc22e54b8",
+   "block_id": "0c9d6d6e-3b29-4d09-8049-d4864476f5dc",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Caesar halála után „a patríciusok és plebejusok közötti harcok éleződtek”",
+   "explanation": "A rendi harcok a Kr. e. 3. század elejére lezárultak (Lex Hortensia, Kr. e. 287). Caesar halála után a második triumvirátus és a polgárháborúk (Antonius, Octavianus) következtek.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Conflict_of_the_Orders",
+     "title": "Conflict of the Orders",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Kr. e. 44-ben Julius Caesar meggyilkolása jelentős esemény volt Róma történetében, amely a köztársasági kormányzás válságához vezetett. A politikai feszültségek és a hatalomért folytatott harcok következtében a köztársaság végül átalakult egyeduralommá, amely Augustus hatalomra jutásával teljesedett ki. Caesar halála után a római politikai életben a patríciusok és plebejusok közötti harcok éleződtek, amelyek a római államszervezet átalakulásához vezettek.",
+     "type": "world",
+     "year": "44",
+     "heading": "Julius Caesar halála",
+     "link_hu": "Caesar halála közvetlenül hozzájárult a római köztársaság megszűnéséhez és az egyeduralom kialakulásához, amely a későbbi magyar államszervezetek fejlődésére is hatással volt."
+    },
+    "after": {
+     "body": "Kr. e. 44-ben Julius Caesar meggyilkolása jelentős esemény volt Róma történetében, amely a köztársasági kormányzás válságához vezetett. A politikai feszültségek és a hatalomért folytatott harcok következtében a köztársaság végül átalakult egyeduralommá, amely Augustus hatalomra jutásával teljesedett ki. Caesar halála után a római politikai életben újabb polgárháborúk törtek ki Caesar örökségéért, amelyek a római államszervezet átalakulásához vezettek.",
+     "type": "world",
+     "year": "44",
+     "heading": "Julius Caesar halála",
+     "link_hu": "Caesar halála közvetlenül hozzájárult a római köztársaság megszűnéséhez és az egyeduralom kialakulásához, amely a későbbi magyar államszervezetek fejlődésére is hatással volt."
+    }
+   }
+  },
+  {
+   "id": "HIST-910-01-007",
+   "lesson_id": null,
+   "block_id": "17b685b1-a205-4b53-9df7-0176e552e292",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Milyen esemény volt az első olümpiai játékok?” – kulcs C) Sportverseny; B) Vallási ünnepség is helyes",
+   "explanation": "Az ókori olümpiai játékok Zeusz tiszteletére rendezett vallási ünnepek voltak, amelyeken sportversenyeket tartottak. A B) így szintén helyes.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
+     "title": "Ancient Olympic Games",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Politikai találkozó.",
+      "B) Vallási ünnepség.",
+      "C) Sportverseny.",
+      "D) Hadjárat."
+     ],
+     "question": "Milyen esemény volt az első olümpiai játékok?",
+     "explanation": "Az első olümpiai játékok Kr. e. 776-ban zajlottak, és sportversenyként indultak.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Politikai találkozó.",
+      "B) Piaci vásár.",
+      "C) Sportverseny.",
+      "D) Hadjárat."
+     ],
+     "question": "Milyen esemény volt az első olümpiai játékok?",
+     "explanation": "Az első olümpiai játékok Kr. e. 776-ban zajlottak, és sportversenyként indultak.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}

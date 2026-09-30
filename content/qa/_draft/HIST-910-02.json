@@ -1,0 +1,157 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világblokk: ed6a3ba4.",
+   "Duplikált szövegkártya: 99a79db6 [6]/[7]."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "f590c3e4-c4f6-46fa-ac05-e82dcea8839f",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Hol található a jeruzsálemi templom?” – mind a négy válasz igaz, és a templom ma nem létezik",
+   "explanation": "Jeruzsálem Júdeában, Kánaán/Palesztina területén fekszik, így A–D mind helyes. A második templomot Kr. u. 70-ben lerombolták, jelen időben a kérdés hamis.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_Temple",
+     "title": "Second Temple",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Mikor rombolták le a rómaiak a jeruzsálemi (második) templomot?",
+    "options": [
+     "A) Kr. u. 70-ben",
+     "B) Kr. e. 586-ban",
+     "C) Kr. u. 313-ban",
+     "D) Kr. u. 476-ban"
+    ],
+    "explanation": "A jeruzsálemi második templomot a rómaiak Kr. u. 70-ben, a zsidó háború végén rombolták le. (Az első templomot Kr. e. 586-ban a babiloniak pusztították el.)"
+   }
+  },
+  {
+   "block_id": "99a79db6-39f0-4ad6-8385-4c415abba687",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Jézus születése „hagyományosan Kr. e. 4 és Kr. e. 6 közé” – a [7]. kártya szerint „Kr. e. 1-ben vagy Kr. u. 1-ben”",
+   "explanation": "A két kártya ellentmond egymásnak és összekeveri a hagyományt a kutatással. Dionysius Exiguus számítása szerint Jézus az időszámítás kezdetén született (0. év nincs: Kr. e. 1 után Kr. u. 1 következik); a mai történészek becslése Kr. e. 6–4 közé teszi, mert Nagy Heródes Kr. e. 4-ben meghalt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Date_of_the_birth_of_Jesus",
+     "title": "Date of the birth of Jesus",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "amelyet hagyományosan Kr. e. 4 és Kr. e. 6 közé helyeznek",
+     "amelyet a történészek ma Kr. e. 6 és 4 közé tesznek (Dionysius számítása ennél néhány évvel későbbre tette)"
+    ]
+   ]
+  },
+  {
+   "block_id": "99a79db6-39f0-4ad6-8385-4c415abba687",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a hagyomány szerint Kr. e. 1-ben vagy Kr. u. 1-ben”; duplikálja a [6]. kártyát",
+   "explanation": "Lásd az előző tételt. A kártya a [6]. ismétlése; a generálásnál másik szempontot kellene adni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Anno_Domini",
+     "title": "Anno Domini",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "amelyet a hagyomány szerint Kr. e. 1-ben vagy Kr. u. 1-ben helyeznek el",
+     "amelyet Dionysius Exiguus az időszámítás kezdetére tett (0. év nincs: Kr. e. 1 után közvetlenül Kr. u. 1 következik)"
+    ]
+   ]
+  },
+  {
+   "block_id": "99a79db6-39f0-4ad6-8385-4c415abba687",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Az első keresztény-üldözések a 1. és 2. században zajlottak”",
+   "explanation": "Nyelvi hiba („a 1.” → „az 1.”). Tartalmilag: az első üldözés Néró alatt (64) volt, de a legnagyobb, birodalmi szintű üldözések a 3–4. században történtek (Decius, Diocletianus).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_the_Roman_Empire",
+     "title": "Persecution of Christians in the Roman Empire",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az első keresztény-üldözések a 1. és 2. században zajlottak",
+     "Az első keresztény-üldözés Néró alatt, 64-ben volt, a legnagyobbak pedig a 3–4. században (Decius, Diocletianus) zajlottak"
+    ]
+   ]
+  },
+  {
+   "block_id": "99a79db6-39f0-4ad6-8385-4c415abba687",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A keresztség és az úrvacsora a keresztény vallás két alapvető szentsége”",
+   "explanation": "Ez a protestáns felfogás; a katolikus és az ortodox egyház hét szentséget tart számon, amelyek közül a keresztség és az Eucharisztia a legfontosabbak közé tartozik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sacrament",
+     "title": "Sacrament",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "replace": [
+    [
+     "a keresztény vallás két alapvető szentsége",
+     "a keresztény vallás két legfontosabb szentsége (a katolikus és az ortodox egyház összesen hét szentséget ismer, a protestánsok ezt a kettőt)"
+    ]
+   ]
+  },
+  {
+   "block_id": "99a79db6-39f0-4ad6-8385-4c415abba687",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„E tan megfogalmazása a niceai zsinaton, 325-ben történt”",
+   "explanation": "A niceai zsinat (325) a Fiú istenségét mondta ki; a Szentlélekre is kiterjedő szentháromságtani hitvallást a konstantinápolyi zsinat (381) fogalmazta meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/First_Council_of_Constantinople",
+     "title": "First Council of Constantinople",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "E tan megfogalmazása a niceai zsinaton, 325-ben történt, amely",
+     "E tan alapjait a niceai zsinat (325) rakta le, és a konstantinápolyi zsinat (381) fejezte be; ez"
+    ]
+   ]
+  }
+ ]
+}
