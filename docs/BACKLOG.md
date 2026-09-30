@@ -26,17 +26,46 @@ idea when a session gets archived." Added 2026-07-07._
   trivia). Automated checks still missed 2 subtle slips → **human review before rolling out
   to more topics.** To pull it: `UPDATE content_blocks SET is_active=false WHERE mode='deep'`.
 
-- **Visual-tab images (variant C) — built 2026-09-29; 6 PHYS-78-03 diagrams applied (`card.diagram`).**
+- **Visual-tab images (variant C) — PHYS-78-03 diagram pilot APPLIED 2026-09-29 (PR #2); photo sourcing NOT done.**
   Tier order: image/timeline (`card.image`, `card.timeline`) → in-house SVG (`card.diagram`, SketchDiagram
-  shapes) → text placeholder. Pieces: `database/migrations/v10_media_refs.sql` (apply first),
-  `content/generators/source_media.py` (Commons search, licence whitelist, writes *pending*
-  candidates only; needs network access to commons.wikimedia.org + upload.wikimedia.org),
-  `content/generators/apply_media.py` (dry-run by default; matches cards by keyword),
-  `content/media/PHYS-78-03_diagrams.json` (6 authored diagrams). To roll out:
-  `python apply_media.py --nat-id PHYS-78-03 --file ../media/PHYS-78-03_diagrams.json` (check the
-  dry-run card matches) then `--apply`. Photos: a human must check each licence and set
-  `status: approved`; images are self-hosted in `the `content-media` Storage bucket (stage in content/media/staging/), never hotlinked.
-  Still open: History timelines/maps generator, quarterly link/licence re-check job, curator UI.
+  shapes) → text placeholder. Images are self-hosted (never hotlinked), see the `content-media`
+  Storage bucket / `content/media/staging/`.
+
+  *Done (and how):*
+  - `database/migrations/v10_media_refs.sql` applied by hand in the Supabase SQL editor (see MIGRATION_ORDER).
+  - `content/generators/apply_media.py --nat-id PHYS-78-03 --file ../media/PHYS-78-03_diagrams.json`:
+    dry-run checked by the owner (all 6 keyword→card matches accepted), then `--apply`. Result: 6 `card.diagram`
+    entries written and 6 `media_refs` rows (`kind=diagram`, `status=approved`) across 3 PHYS-78-03 lessons
+    (verified by reading `media_refs` back: 6 rows). Diagrams: free fall, braking car / friction, straight vs curved
+    path, distance vs displacement, speed magnitude+direction, distance–time–speed.
+  - `content/generators/source_media.py` (Commons search, licence whitelist PD/CC0/CC BY/CC BY-SA, writes *pending*
+    candidates only, `--download` for human-approved ones) now honours `Retry-After` on HTTP 429 (5 tries, max 120 s wait);
+    offline-tested only.
+
+  *Not done, and why:*
+  - **No photo candidates were sourced.** Commons refused the cloud sandbox's IP: first 429, then a 403 from
+    Wikimedia's edge ("Please respect our robot policy…", even for a plain `siteinfo` call). That is an IP-level block,
+    so backoff does not help. Deliberately not worked around. Nothing was written to `PHYS-78-03_candidates.json`.
+  - To do it: run from a non-throttled machine (e.g. the owner's Mac), one call per Téma:
+    `python source_media.py --nat-id PHYS-78-03 --tema "Mozgások megfigyelése és csoportosítása" --match pálya sebesség --query "motion trajectory car road" --out ../media/PHYS-78-03_candidates.json`,
+    `--tema "Út és idő kiszámítása" --match út idő átlagsebesség --query "speedometer car dashboard"`,
+    `--tema "Erők és gyorsulás vizsgálata" --match fékez súrlód gyorsul --query "car braking skid marks"`.
+    Then a human opens each Commons file page, checks the licence, sets `"status": "approved"`, runs `--download`, then
+    `apply_media.py` on the file. Or email bot-traffic@wikimedia.org if cloud-side sourcing is wanted.
+  - Open question: whether a Wikimedia personal API token / OAuth lifts the limit for the Commons *Action API* is
+    unknown (the docs at www.mediawiki.org were not readable from the sandbox; not needed for an IP block). A
+    "bot account" is for editing and is NOT needed for read-only sourcing.
+
+  *Still open / unverified:*
+  - **Human review of the 6 diagrams' physics** before the lessons go public (the deep-dive layer had 2 subtle errors
+    that automated checks missed). The 6 `media_refs` rows are `approved` by default for authored diagrams — this is
+    not the same as reviewed. Whether those lessons are `is_active` (i.e. publicly visible) was not checked.
+  - Rendering after PR #2's merge (which unified on `card.image`/`card.timeline`/`card.diagram`) was not re-checked in the
+    running app; the apply happened before the merge.
+  - CC BY / CC BY-SA photos need a visible credit (author, licence, source) in the UI and stored in `media_refs`;
+    confirm `VisualCard` shows it before any photo goes live. Share-alike may bind cropped/edited derivatives.
+  - The owner's first-task image (on their Mac) needs the file, author, licence and source URL supplied.
+  - Not built: History timelines/maps generator, quarterly link/licence re-check job, curator UI.
 
 - **Emelt-szint (advanced depth layer).** Schema-ready: `content_blocks.level` already supports
   `alap` (default, in use) vs `emelt` (reserved, unused). Needs: a decision on which topics get
