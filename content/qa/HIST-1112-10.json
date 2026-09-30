@@ -1,0 +1,964 @@
+{
+ "nat_id": "HIST-1112-10",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 11,
+  "cards": 65,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-1112-10-001",
+   "lesson_id": "5a58af0c-5d71-4701-bd1e-6e37af041070",
+   "block_id": "96d2a9b9-2be1-4537-b41c-79f4b18492df",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Nagy Imre … a reformok élére állva a nép megbecsülését és támogatását kereste”",
+   "explanation": "Nagy Imrét október 24-én hajnalban nevezték ki miniszterelnökké, a forradalom kirobbantásában nem játszott szerepet. Fontos tényei: 1956. november 1-jén bejelentette a Varsói Szerződésből való kilépést és a semlegességet; 1958. június 16-án kivégezték.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Imre_Nagy",
+     "title": "Imre Nagy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A forradalom célja a politikai rendszer megváltoztatása, a szabadság és a függetlenség elnyerése volt. A magyar nép követelései között szerepelt a szovjet csapatok kivonása, a többpártrendszer bevezetése és a demokratikus jogok biztosítása. Nagy Imre, a forradalom egyik kulcsszereplője, a reformok élére állva a nép megbecsülését és támogatását kereste. A célok között a nemzeti összefogás és a társadalmi igazságosság megteremtése is fontos szerepet játszott.",
+     "type": "text",
+     "heading": "A forradalom céljai",
+     "key_term": "Nagy Imre"
+    },
+    "after": {
+     "body": "A forradalom célja a politikai rendszer megváltoztatása, a szabadság és a függetlenség elnyerése volt. A magyar nép követelései között szerepelt a szovjet csapatok kivonása, a többpártrendszer bevezetése és a demokratikus jogok biztosítása. Nagy Imrét, a reformkommunista politikust október 24-én hajnalban nevezték ki miniszterelnöknek; november 1-jén bejelentette Magyarország kilépését a Varsói Szerződésből és semlegességét. A célok között a nemzeti összefogás és a társadalmi igazságosság megteremtése is fontos szerepet játszott.",
+     "type": "text",
+     "heading": "A forradalom céljai",
+     "key_term": "Nagy Imre"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-002",
+   "lesson_id": "5a58af0c-5d71-4701-bd1e-6e37af041070",
+   "block_id": "96d2a9b9-2be1-4537-b41c-79f4b18492df",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A tüntetés során a helyzet fokozatosan eszkalálódott, és a résztvevők fegyveres felkelésre szánták el magukat”",
+   "explanation": "A fordulópont október 23-án este volt: a tömeg ledöntötte a Sztálin-szobrot, majd a Magyar Rádió épületénél az ÁVH tüzet nyitott a tüntetőkre; erre fogtak fegyvert a felkelők. A „fegyveres felkelésre szánták el magukat” a fordulatot és az ÁVH felelősségét elhallgatja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1956. október 23-án Budapest belvárosában békés tüntetés kezdődött, amely a szovjet elnyomás ellen irányult. A demonstrálók között voltak a pesti srácok, akik a forradalom szimbólumává váltak. A tüntetés során a helyzet fokozatosan eszkalálódott, és a résztvevők fegyveres felkelésre szánták el magukat. A Molotov-koktél, mint improvizált fegyver, elterjedt a felkelők körében, akik ezzel próbálták megállítani a szovjet tankokat.",
+     "type": "text",
+     "heading": "Békés tüntetésből fegyveres felkelés – október 23.",
+     "key_term": "pesti srácok, Molotov-koktél"
+    },
+    "after": {
+     "body": "1956. október 23-án Budapest belvárosában békés tüntetés kezdődött, amely a szovjet elnyomás ellen irányult. A demonstrálók között voltak a pesti srácok, akik a forradalom szimbólumává váltak. Este a tömeg ledöntötte a Sztálin-szobrot, a Magyar Rádió épületénél pedig az ÁVH tüzet nyitott a tüntetőkre; erre a felkelők fegyvert fogtak. A Molotov-koktél, mint improvizált fegyver, elterjedt a felkelők körében, akik ezzel próbálták megállítani a szovjet tankokat.",
+     "type": "text",
+     "heading": "Békés tüntetésből fegyveres felkelés – október 23.",
+     "key_term": "pesti srácok, Molotov-koktél"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-003",
+   "lesson_id": "5a58af0c-5d71-4701-bd1e-6e37af041070",
+   "block_id": "96d2a9b9-2be1-4537-b41c-79f4b18492df",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A Kossuth tér és a Corvin köz a forradalom központi helyszíneivé váltak, ahol a felkelők szervezkedtek és harcoltak”",
+   "explanation": "A Kossuth tér nem a felkelők harci támaszpontja, hanem az október 25-i sortűz helyszíne volt; a fegyveres ellenállás egyik fő központja a Corvin köz volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Corvin_Passage",
+     "title": "Corvin Passage",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A forradalom során megalakultak a Forradalmi Bizottságok és Munkástanácsok, amelyek a munkásosztály és az értelmiség összefogását képviselték. Ezek a testületek a forradalom irányításában és a politikai reformok előmozdításában játszottak kulcsszerepet. A Kossuth tér és a Corvin köz a forradalom központi helyszíneivé váltak, ahol a felkelők szervezkedtek és harcoltak a szabadságért. A nemzeti összefogás jegyében sokan csatlakoztak a harcokhoz, megmutatva a magyar nép elszántságát.",
+     "type": "text",
+     "heading": "A nemzet forradalma",
+     "key_term": "Kossuth tér, Corvin köz"
+    },
+    "after": {
+     "body": "A forradalom során megalakultak a Forradalmi Bizottságok és Munkástanácsok, amelyek a munkásosztály és az értelmiség összefogását képviselték. Ezek a testületek a forradalom irányításában és a politikai reformok előmozdításában játszottak kulcsszerepet. A Kossuth téren október 25-én sortűz történt, a Corvin köz pedig a felkelők egyik legfontosabb fegyveres támaszpontja lett. A nemzeti összefogás jegyében sokan csatlakoztak a harcokhoz, megmutatva a magyar nép elszántságát.",
+     "type": "text",
+     "heading": "A nemzet forradalma",
+     "key_term": "Kossuth tér, Corvin köz"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-004",
+   "lesson_id": "5a58af0c-5d71-4701-bd1e-6e37af041070",
+   "block_id": "96d2a9b9-2be1-4537-b41c-79f4b18492df",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Nagy Imre és más vezetők sorsa tragikus lett”",
+   "explanation": "Homályos. Nagy Imrét, Maléter Pált és Gimes Miklóst 1958. június 16-án kivégezték; Nagy Imrét 1989. június 16-án újratemették.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Imre_Nagy",
+     "title": "Imre Nagy",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Pál_Maléter",
+     "title": "Pál Maléter",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az 1956-os forradalom nem csupán a magyar nép szabadságvágyát tükrözte, hanem a szovjet blokk országaira is hatással volt. A forradalom során a magyarok megpróbálták megvalósítani a demokratikus értékeket, és a világ figyelmét is felkeltették. A forradalom elbukása után Nagy Imre és más vezetők sorsa tragikus lett, de a forradalom szelleme sokáig megmaradt a magyar társadalomban. Az események emlékezete ma is fontos része a magyar identitásnak és történelemnek.",
+     "type": "text",
+     "heading": "A forradalom jelentősége a magyar történelemben",
+     "key_term": "Nagy Imre"
+    },
+    "after": {
+     "body": "Az 1956-os forradalom nem csupán a magyar nép szabadságvágyát tükrözte, hanem a szovjet blokk országaira is hatással volt. A forradalom során a magyarok megpróbálták megvalósítani a demokratikus értékeket, és a világ figyelmét is felkeltették. A forradalom elbukása után Nagy Imrét, Maléter Pált és Gimes Miklóst 1958. június 16-án kivégezték; Nagy Imrét 1989. június 16-án újratemették, de a forradalom szelleme sokáig megmaradt a magyar társadalomban. Az események emlékezete ma is fontos része a magyar identitásnak és történelemnek.",
+     "type": "text",
+     "heading": "A forradalom jelentősége a magyar történelemben",
+     "key_term": "Nagy Imre"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-005",
+   "lesson_id": "50786b24-270d-4087-8be7-f1bb044c90c2",
+   "block_id": "2b725870-f6b5-456b-bb27-72427d5d4cf2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a rendőrség és a szovjet csapatok sortüzet adtak le”; „számos ember életét vesztette”",
+   "explanation": "A Kossuth téri sortűz (október 25.) elkövetői vitatottak: az épületek tetejéről ismeretlen lövészek (feltehetően államvédelmisek) és szovjet harckocsik lőttek a tömegre. Az áldozatok száma becslések szerint legalább hatvan, egyes adatok szerint száznál több.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kossuth_Square_massacre",
+     "title": "Kossuth Square massacre",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1956. október 25-én a Kossuth téren rendezett tömegmegmozdulás során a rendőrség és a szovjet csapatok sortüzet adtak le a békés tüntetőkre. A sortűz következtében számos ember életét vesztette, ami tovább fokozta a feszültséget és a harci kedvet a forradalmárok körében. Ez a tragikus esemény a forradalom fordulópontjának tekinthető, amely után már nem volt visszaút a békés megoldás felé.",
+     "type": "text",
+     "heading": "A Kossuth téri sortűz",
+     "key_term": "sortüzek"
+    },
+    "after": {
+     "body": "1956. október 25-én a Kossuth téren rendezett tömegmegmozdulás során az épületek tetejéről ismeretlen lövészek (feltehetően államvédelmisek) és szovjet harckocsik lőttek a békés tüntetőkre. A sortűznek legalább hatvan halálos áldozata volt, ami tovább fokozta a feszültséget és a harci kedvet a forradalmárok körében. Ez a tragikus esemény a forradalom fordulópontjának tekinthető, amely után már nem volt visszaút a békés megoldás felé.",
+     "type": "text",
+     "heading": "A Kossuth téri sortűz",
+     "key_term": "sortüzek"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-006",
+   "lesson_id": "50786b24-270d-4087-8be7-f1bb044c90c2",
+   "block_id": "2b725870-f6b5-456b-bb27-72427d5d4cf2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Maléter Pál, aki a forradalom alatt a Honvédelmi Minisztérium vezetője volt”",
+   "explanation": "Maléter ezredes a Kilián laktanya parancsnokaként csatlakozott a felkelőkhöz; Nagy Imre november 3-án nevezte ki honvédelmi miniszternek, még aznap éjjel letartóztatták a szovjetek. Pongrátz Gergely a Corvin köz egyik parancsnoka volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pál_Maléter",
+     "title": "Pál Maléter",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Gergely_Pongrátz",
+     "title": "Gergely Pongrátz",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A fegyveres ellenállás vezetői között kiemelkedő szerepet játszott Maléter Pál, aki a forradalom alatt a Honvédelmi Minisztérium vezetője volt. Ő irányította a harcot a szovjet csapatok ellen, és harcolt a nemzeti függetlenségért. Pongrátz Gergely, a forradalom egyik hősének számító fiatal vezető, szintén jelentős szerepet játszott a fegyveres ellenállásban, különösen a budapesti harcok során.",
+     "type": "text",
+     "heading": "A fegyveres ellenállás hősei: Maléter Pál és Pongrátz Gergely",
+     "key_term": "Maléter Pál, Pongrátz Gergely"
+    },
+    "after": {
+     "body": "A fegyveres ellenállás vezetői között kiemelkedő szerepet játszott Maléter Pál ezredes, aki a Kilián laktanya parancsnokaként csatlakozott a felkelőkhöz. Nagy Imre november 3-án honvédelmi miniszterré nevezte ki, még aznap éjjel letartóztatták a szovjetek. Pongrátz Gergely, a Corvin köz egyik parancsnoka, szintén jelentős szerepet játszott a fegyveres ellenállásban, különösen a budapesti harcok során.",
+     "type": "text",
+     "heading": "A fegyveres ellenállás hősei: Maléter Pál és Pongrátz Gergely",
+     "key_term": "Maléter Pál, Pongrátz Gergely"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-007",
+   "lesson_id": "50786b24-270d-4087-8be7-f1bb044c90c2",
+   "block_id": "2b725870-f6b5-456b-bb27-72427d5d4cf2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Az ő nevéhez fűződik a 'kádári konszolidáció' … politikai és gazdasági stabilitását biztosította”",
+   "explanation": "Kihagyja a megtorlást: mintegy 230 embert végeztek ki, tízezreket börtönöztek vagy internáltak, kb. 200 ezren hagyták el az országot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/János_Kádár",
+     "title": "János Kádár",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Retribution_after_the_Hungarian_Revolution_of_1956",
+     "title": "Retribution after the Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A forradalom leverése után Kádár János került a hatalomra, aki a szovjet támogatással alakította meg új kormányát. Kádár politikája a forradalom elfojtására és a kommunista rendszer megszilárdítására irányult. Az ő nevéhez fűződik a 'kádári konszolidáció' időszaka, amely a következő évtizedek politikai és gazdasági stabilitását biztosította, de a forradalom emlékét is elnyomta.",
+     "type": "text",
+     "heading": "Kádár János és a forradalom utáni kormánypolitika",
+     "key_term": "Kádár János"
+    },
+    "after": {
+     "body": "A forradalom leverése után Kádár János került a hatalomra, aki a szovjet támogatással alakította meg új kormányát. A megtorlás során mintegy 230 embert végeztek ki, tízezreket börtönbe zártak vagy internáltak, kb. 200 ezren elhagyták az országot. Az ő nevéhez fűződik a 'kádári konszolidáció' időszaka, amely a következő évtizedek politikai és gazdasági stabilitását biztosította, de a forradalom emlékét is elnyomta.",
+     "type": "text",
+     "heading": "Kádár János és a forradalom utáni kormánypolitika",
+     "key_term": "Kádár János"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-008",
+   "lesson_id": "50786b24-270d-4087-8be7-f1bb044c90c2",
+   "block_id": "2b725870-f6b5-456b-bb27-72427d5d4cf2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "Mosonmagyaróvár: „a munkások és a helyi lakosság … aktívan részt vettek a tüntetésekben”; Salgótarján: „jelentős ellenállás alakult ki”",
+   "explanation": "A két város a sortüzek miatt ismert: Mosonmagyaróváron 1956. október 26-án határőrök lőttek a tüntetőkre (legalább ötven halott), Salgótarjánban 1956. december 8-án a karhatalom lőtt a békés tüntetőkre (több mint negyven halott).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mosonmagyaróvár_massacre",
+     "title": "Mosonmagyaróvár massacre",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Salgótarján_massacre",
+     "title": "Salgótarján massacre",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A vidéki városok, mint Mosonmagyaróvár és Salgótarján, kulcsszerepet játszottak a forradalom eseményeiben. Mosonmagyaróváron a munkások és a helyi lakosság is aktívan részt vettek a tüntetésekben és a munkástanácsok megalakításában. Salgótarjánban szintén jelentős ellenállás alakult ki, ahol a helyi közösség összefogott a szovjet hatalom ellen, demonstrálva a magyar nép elszántságát a szabadságért.",
+     "type": "text",
+     "heading": "A vidéki városok szerepe a forradalomban: Mosonmagyaróvár és Salgótarján",
+     "key_term": "Mosonmagyaróvár, Salgótarján"
+    },
+    "after": {
+     "body": "A vidéki városok, mint Mosonmagyaróvár és Salgótarján, kulcsszerepet játszottak a forradalom eseményeiben. Mosonmagyaróváron 1956. október 26-án határőrök sortüzet adtak a tüntetőkre; legalább ötvenen haltak meg. Salgótarjánban 1956. december 8-án a karhatalom lőtt a békés tüntetőkre; több mint negyven ember halt meg.",
+     "type": "text",
+     "heading": "A vidéki városok szerepe a forradalomban: Mosonmagyaróvár és Salgótarján",
+     "key_term": "Mosonmagyaróvár, Salgótarján"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-009",
+   "lesson_id": "50786b24-270d-4087-8be7-f1bb044c90c2",
+   "block_id": "2b725870-f6b5-456b-bb27-72427d5d4cf2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A [7]. kártya a Kossuth tér–Corvin köz témát ismétli",
+   "explanation": "Az L1 [5]. kártyájának lényegi ismétlése; kisebb új információ (a tér névadója).",
+   "sources": [],
+   "apply": "none",
+   "source_note": "Szerkesztői észrevétel: a [7] összevonandó az A forradalom [5] kártyájával."
+  },
+  {
+   "id": "HIST-1112-10-010",
+   "lesson_id": "5a58af0c-5d71-4701-bd1e-6e37af041070",
+   "block_id": "44279b72-59a0-48ae-bba8-4a0e0e9a206b",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1956 októberében … Egyiptom államosította a csatornát”; „a nyugati hatalmak katonai beavatkozásra készültek, amely végül nem valósult meg”",
+   "explanation": "A csatornát 1956. július 26-án államosították. A katonai támadás megtörtént: október 29-én Izrael, október 31-től Nagy-Britannia és Franciaország támadta Egyiptomot; az USA és a Szovjetunió nyomására november 6–7-én tűzszünet lett. A link_hu (a szuezi válság a magyar forradalom kirobbanásához vezetett) kitalált.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Suez_Crisis",
+     "title": "Suez Crisis",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1956 októberében a Szuezi-csatorna körüli válság feszültségeket keltett a nemzetközi politikában, amikor Egyiptom államosította a csatornát, amelyet korábban brit és francia irányítás alatt tartottak. Az Egyesült Államok és a Szovjetunió közötti rivalizálás a hidegháború idején felerősödött, és a nyugati hatalmak katonai beavatkozásra készültek, amely végül nem valósult meg. A válság a nemzeti függetlenségért folytatott harcok szimbólumává vált, és hozzájárult a hidegháborús feszültségek fokozódásához.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A Szuezi válság",
+     "link_hu": "A Szuezi válság hatására a Szovjetunió fokozta a nyomást a kelet-európai országokra, így Magyarországon is a forradalom kirobbanásához vezetett."
+    },
+    "after": {
+     "body": "1956. július 26-án Nasszer egyiptomi elnök államosította a Szuezi-csatornát. Október 29-én Izrael, majd Nagy-Britannia és Franciaország megtámadta Egyiptomot. Az Egyesült Államok és a Szovjetunió is a kivonulást követelte, az ENSZ közbelépésére november 6–7-én tűzszünet lett.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A Szuezi válság",
+     "link_hu": "A szuezi válság egybeesett a magyar forradalommal, ezért a nyugati hatalmak figyelme megoszlott; a magyar forradalom nem a válság következménye volt."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-011",
+   "lesson_id": "5a58af0c-5d71-4701-bd1e-6e37af041070",
+   "block_id": "44279b72-59a0-48ae-bba8-4a0e0e9a206b",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1956 júniusában Lengyelországban … A lengyel vezetés engedett a nyomásnak”",
+   "explanation": "Júniusban a poznańi munkásfelkelés volt (június 28.), amelyet leverték; a reformok októberben Gomułka hatalomra kerülésével (október 21.) jöttek. A link_hu általános.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Poznań_1956_protests",
+     "title": "Poznań 1956 protests",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Władysław_Gomułka",
+     "title": "Władysław Gomułka",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1956 júniusában Lengyelországban a munkásmozgalmak és a reformigények erősödtek, amelyek a kommunista rendszerrel szembeni elégedetlenséget tükrözték. A lengyel vezetés engedett a nyomásnak, és reformokat ígért, ami inspiráló hatással volt a magyar forradalomra. Az események következtében a szovjet vezetés kénytelen volt mérlegelni a kelet-európai politikáját.",
+     "type": "world",
+     "year": "1956",
+     "heading": "Az 1956-os lengyel események",
+     "link_hu": "A lengyel események demonstrálták, hogy a szovjet befolyás alatt álló országokban is van lehetőség a reformokra, ami bátorította a magyarokat a forradalom kirobbantására."
+    },
+    "after": {
+     "body": "1956. június 28-án Poznańban munkásfelkelés tört ki a bérek és az életszínvonal miatt; a hatóságok leverték. Októberben Gomułkát, a korábban félreállított reformer kommunistát választották első titkárrá (október 21.), és a szovjet vezetés végül beletörődött.",
+     "type": "world",
+     "year": "1956",
+     "heading": "Az 1956-os lengyel események",
+     "link_hu": "1956. október 23-án a budapesti egyetemisták a lengyelekkel való szolidaritás jegyében tüntettek Bem József szobránál."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-012",
+   "lesson_id": "5a58af0c-5d71-4701-bd1e-6e37af041070",
+   "block_id": "44279b72-59a0-48ae-bba8-4a0e0e9a206b",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: „A nyugati reakciók … ösztönözték a magyar forradalmárokat”",
+   "explanation": "Nem ösztönözték; a Szabad Európa Rádió adásai reményt keltettek a nyugati segítségre, amely elmaradt. A nyugati hatalmakat a szuezi válság is megosztotta; az ENSZ Biztonsági Tanácsában a szovjet vétó megakadályozta a határozatot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Radio_Free_Europe",
+     "title": "Radio Free Europe",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A magyar forradalom kitörése után a nyugati országok, különösen az Egyesült Államok, figyelemmel kísérték a helyzetet, de aktív beavatkozásra nem került sor. A nyugati média jelentős figyelmet szentelt a forradalomnak, és sok országban szimpátiát fejeztek ki a magyar nép iránt. Ez a nemzetközi figyelem hozzájárult a magyar forradalom ügyének globalizálódásához.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A magyar forradalom és a nyugati reakciók",
+     "link_hu": "A nyugati reakciók és a médiafigyelem ösztönözték a magyar forradalmárokat, hogy küzdjenek a függetlenségért, és ezzel a nemzetközi közvélemény támogatására is számíthattak."
+    },
+    "after": {
+     "body": "A nyugati hatalmak rokonszenvvel figyelték a magyar forradalmat, de katonai beavatkozásra nem került sor: a szuezi válság megosztotta őket, és nem akartak világháborút kockáztatni. Az ENSZ Biztonsági Tanácsában a Szovjetunió vétója megakadályozta a határozatot, a Közgyűlés viszont elítélte a szovjet beavatkozást.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A magyar forradalom és a nyugati reakciók",
+     "link_hu": "A Szabad Európa Rádió adásai reményt keltettek a nyugati segítségre, amely végül elmaradt."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-013",
+   "lesson_id": "5a58af0c-5d71-4701-bd1e-6e37af041070",
+   "block_id": "44279b72-59a0-48ae-bba8-4a0e0e9a206b",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A Szovjetunió végül katonai beavatkozásra szánta el magát, amely november 4-én kezdődött”; link_hu: „a politikai és gazdasági helyzet romlásához vezetett”",
+   "explanation": "A szovjet csapatok már október 23–24-én beavatkoztak, majd október 28–30-án megkezdték a kivonulást; a november 4-i támadás a „Forgószél” hadművelet volt. A link_hu tartalma vitatható és nem konkrét.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Operation_Whirlwind",
+     "title": "Operation Whirlwind",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A forradalom során a Szovjetunió végül katonai beavatkozásra szánta el magát, amely november 4-én kezdődött. A szovjet tankok és katonák Budapest utcáira vonultak, hogy leverjék a forradalmat. Ez a beavatkozás világosan mutatta a szovjet hatalom szilárdságát és a kelet-európai országok feletti dominanciáját.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A szovjet katonai beavatkozás",
+     "link_hu": "A szovjet beavatkozás következményeként a forradalom elbukott, és a magyar társadalom elnyomása továbbra is folytatódott, ami hosszú távon a politikai és gazdasági helyzet romlásához vezetett."
+    },
+    "after": {
+     "body": "A szovjet csapatok már október 23–24-én beavatkoztak, majd október végén megkezdték a kivonulást. November 4-én hajnalban a szovjet hadsereg a „Forgószél” hadművelet keretében nagy erőkkel támadást indított Budapest ellen, és leverte a forradalmat.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A szovjet katonai beavatkozás",
+     "link_hu": "Nagy Imre november 4-én a jugoszláv követségre menekült. A harcokban mintegy 2500 magyar és 700 szovjet katona esett el."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-014",
+   "lesson_id": "50786b24-270d-4087-8be7-f1bb044c90c2",
+   "block_id": "e8bfb5f6-9222-4bb8-9a65-aec74618c5b1",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1956 októberében … államosította … a Szovjetunió is beavatkozott, hogy megakadályozza a nyugati hatalmak előretörését”",
+   "explanation": "Az államosítás 1956. július 26-án volt; Izrael, Nagy-Britannia és Franciaország támadása megtörtént. A Szovjetunió nem avatkozott be katonailag, a kivonulást követelte (mint az USA). A link_hu szerinti „közvetlen hozzájárulás” kitalált.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Suez_Crisis",
+     "title": "Suez Crisis",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1956 októberében, miközben Magyarországon a forradalom zajlott, a szuezi válság is kibontakozott. Egyiptom vezetője, Gamal Abdel Nasser, nemzeti színekben államosította a Szuezi-csatornát, ami miatt Izrael, Nagy-Britannia és Franciaország katonai akciót tervezett. A válság világszerte feszültséget keltett, és a Szovjetunió is beavatkozott, hogy megakadályozza a nyugati hatalmak előretörését.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A szuezi válság",
+     "link_hu": "A szuezi válság közvetlenül hozzájárult a szovjet beavatkozás megértéséhez Magyarországon, mivel a szovjet vezetés a nyugati hatalmak ellenállásának megfékezésére összpontosított, így a magyar forradalom leveréséhez is hozzájárult."
+    },
+    "after": {
+     "body": "1956. július 26-án Nasszer egyiptomi elnök államosította a Szuezi-csatornát. Október 29-én Izrael, majd Nagy-Britannia és Franciaország megtámadta Egyiptomot. Az Egyesült Államok és a Szovjetunió egyaránt a kivonulást követelte, ezért november 6–7-én tűzszünet lett.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A szuezi válság",
+     "link_hu": "A történészek szerint a szuezi válság elterelte a nyugati figyelmet, ami megkönnyítette a szovjet beavatkozást Magyarországon."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-015",
+   "lesson_id": "50786b24-270d-4087-8be7-f1bb044c90c2",
+   "block_id": "e8bfb5f6-9222-4bb8-9a65-aec74618c5b1",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "link_hu: „növelve a szovjet vezetés nyomását a magyar helyzet kezelésére”",
+   "explanation": "Homályos, kitalált hatás. Valós: kb. 200 ezren hagyták el az országot 1956 végén, többségük Ausztrián át; ez nemzetközi menekültügy lett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A magyar forradalom és szabadságharc híre gyorsan eljutott a világ más részeire, különösen a nyugati országokba. A forradalom során a nyugati sajtó folyamatosan tudósított a magyar eseményekről, sőt, az Egyesült Államok és más nyugati országok is szimpátiát fejeztek ki a magyar nép iránt. Ezt követően a nyugati országokban több tüntetést is szerveztek a magyar szabadságharc támogatására.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A magyar forradalom nemzetközi visszhangja",
+     "link_hu": "A nyugati országok szimpátiája és a tüntetések hozzájárultak ahhoz, hogy a magyar forradalom ügye nemzetközi szinten is napirendre kerüljön, ezáltal növelve a szovjet vezetés nyomását a magyar helyzet kezelésére."
+    },
+    "after": {
+     "body": "A magyar forradalom és szabadságharc híre gyorsan eljutott a világ más részeire, különösen a nyugati országokba. A forradalom során a nyugati sajtó folyamatosan tudósított a magyar eseményekről, sőt, az Egyesült Államok és más nyugati országok is szimpátiát fejeztek ki a magyar nép iránt. Ezt követően a nyugati országokban több tüntetést is szerveztek a magyar szabadságharc támogatására.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A magyar forradalom nemzetközi visszhangja",
+     "link_hu": "Nyugaton tüntetések zajlottak a magyar ügy mellett; mintegy 200 ezer magyar hagyta el az országot 1956 végén, többségük Ausztrián keresztül."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-016",
+   "lesson_id": "50786b24-270d-4087-8be7-f1bb044c90c2",
+   "block_id": "e8bfb5f6-9222-4bb8-9a65-aec74618c5b1",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1956 októberében Lengyelországban … a poznańi tüntetések”",
+   "explanation": "A poznańi felkelés 1956. június 28-án volt, nem októberben. Októberben Gomułka lett első titkár.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Poznań_1956_protests",
+     "title": "Poznań 1956 protests",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Władysław_Gomułka",
+     "title": "Władysław Gomułka",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1956 októberében Lengyelországban is feszültségek voltak, ahol a társadalmi és politikai reformok iránti igények egyre nagyobb teret nyertek. A lengyel események, különösen a Poznańban történt tüntetések, inspiráló hatással voltak a magyar forradalomra, mivel a magyarok is hasonló reformokat követeltek.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A lengyel események hatása",
+     "link_hu": "A lengyel események hatására a magyar forradalom résztvevői bátorságot merítettek, hogy kiálljanak a szovjet elnyomás ellen, ezáltal erősítve a szabadságharcot."
+    },
+    "after": {
+     "body": "1956 júniusában Poznańban munkásfelkelés tört ki, októberben pedig Gomułka lett a lengyel párt első titkára, és a szovjet vezetés beletörődött a lengyel reformokba. A lengyel események példája ösztönözte a magyar egyetemistákat.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A lengyel események hatása",
+     "link_hu": "Október 23-án a budapesti egyetemisták a lengyelekkel való szolidaritás jegyében tüntettek Bem József szobránál."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-017",
+   "lesson_id": "50786b24-270d-4087-8be7-f1bb044c90c2",
+   "block_id": "e8bfb5f6-9222-4bb8-9a65-aec74618c5b1",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: a forradalom „lehetőséget teremtett a szovjet beavatkozásra”",
+   "explanation": "Nem a forradalom teremtett lehetőséget: a beavatkozás oka az volt, hogy Nagy Imre november 1-jén bejelentette a Varsói Szerződésből való kilépést és a semlegességet.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Warsaw_Pact",
+     "title": "Warsaw Pact",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A hidegháború idején a világ két pólusra szakadt, és 1956-ra a feszültségek a Szovjetunió és a nyugati országok között tovább nőttek. A magyar forradalom során a nyugati országok figyelme a kelet-európai eseményekre irányult, ami tovább növelte a szovjet vezetés aggodalmát a térség stabilitása miatt.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A hidegháborús feszültségek fokozódása",
+     "link_hu": "A hidegháborús feszültségek közepette a magyar forradalom lehetőséget teremtett a szovjet beavatkozásra, mivel a Szovjetunió nem engedhette meg, hogy egy újabb kelet-európai ország elhagyja befolyásának körét."
+    },
+    "after": {
+     "body": "A magyar forradalom a hidegháború idején zajlott. Nagy Imre november 1-jén bejelentette Magyarország kilépését a Varsói Szerződésből és semlegességét; a Szovjetunió ezt nem tűrhette, mert egy tagállam kilépése az egész blokk felbomlását indíthatta volna el.",
+     "type": "world",
+     "year": "1956",
+     "heading": "A hidegháborús feszültségek fokozódása",
+     "link_hu": "A Szabad Európa Rádió adásai reményt keltettek a nyugati segítségre, amely nem valósult meg."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-018",
+   "lesson_id": "50786b24-270d-4087-8be7-f1bb044c90c2",
+   "block_id": "a4f3fbee-5282-4771-9334-934a59b3a792",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a rendőrség tüzet nyitott a tüntetőkre”",
+   "explanation": "A Kossuth téri sortűz elkövetői vitatottak (államvédelmisek a tetőkről, szovjet harckocsik); a „rendőrség” pontatlan.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kossuth_Square_massacre",
+     "title": "Kossuth Square massacre",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Sortűz történt, amely sok áldozatot követelt.",
+      "B) A forradalom győzelmét ünnepelték.",
+      "C) A szovjet csapatok bevonultak Budapest belvárosába.",
+      "D) Munkástanácsokat alakítottak."
+     ],
+     "question": "Mi történt 1956. október 25-én a Kossuth téren?",
+     "explanation": "A Kossuth téri sortűz 1956. október 25-én zajlott, amikor a rendőrség tüzet nyitott a tüntetőkre, ezzel sok áldozatot követelve.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Sortűz történt, amely sok áldozatot követelt.",
+      "B) A forradalom győzelmét ünnepelték.",
+      "C) A szovjet csapatok bevonultak Budapest belvárosába.",
+      "D) Munkástanácsokat alakítottak."
+     ],
+     "question": "Mi történt 1956. október 25-én a Kossuth téren?",
+     "explanation": "A Kossuth téri sortűz 1956. október 25-én történt: az épületek tetejéről ismeretlen lövészek (feltehetően államvédelmisek) és szovjet harckocsik lőttek a tömegre; legalább hatvanan haltak meg.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-019",
+   "lesson_id": "50786b24-270d-4087-8be7-f1bb044c90c2",
+   "block_id": "a4f3fbee-5282-4771-9334-934a59b3a792",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Maléter Pál … A forradalom hőse és a Magyar Honvédség parancsnoka.”",
+   "explanation": "Maléter ezredes a Kilián laktanya parancsnoka volt, november 3-án lett honvédelmi miniszter; nem volt a honvédség parancsnoka.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pál_Maléter",
+     "title": "Pál Maléter",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A forradalom hőse és a Magyar Honvédség parancsnoka.",
+      "B) A szovjet csapatok vezetője.",
+      "C) A kommunista párt főtitkára.",
+      "D) A munkástanácsok vezetője."
+     ],
+     "question": "Ki volt Maléter Pál a forradalom idején?",
+     "explanation": "Maléter Pál a forradalom idején a Magyar Honvédség parancsnoka volt, aki a fegyveres ellenállás egyik vezető alakja lett.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A Kilián laktanya parancsnoka, majd Nagy Imre honvédelmi minisztere.",
+      "B) A szovjet csapatok vezetője.",
+      "C) A kommunista párt főtitkára.",
+      "D) A munkástanácsok vezetője."
+     ],
+     "question": "Ki volt Maléter Pál a forradalom idején?",
+     "explanation": "Maléter Pál ezredes a Kilián laktanya parancsnokaként csatlakozott a felkelőkhöz, november 3-án honvédelmi miniszter lett; még aznap letartóztatták, 1958-ban kivégezték.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-020",
+   "lesson_id": "50786b24-270d-4087-8be7-f1bb044c90c2",
+   "block_id": "a4f3fbee-5282-4771-9334-934a59b3a792",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik városban alakult meg az egyik első munkástanács 1956-ban?” (kulcs: C Budapest; a magyarázat Győrt említi)",
+   "explanation": "A kulcs, az opciók és a magyarázat ellentmond egymásnak (Győr nincs az opciók között), és a kérdés vitatható. Helyette a leckében szereplő sortűz kérdezhető.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Salgótarján_massacre",
+     "title": "Salgótarján massacre",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Mosonmagyaróvár",
+      "B) Salgótarján",
+      "C) Budapest",
+      "D) Debrecen"
+     ],
+     "question": "Melyik városban alakult meg az egyik első munkástanács 1956-ban?",
+     "explanation": "Győrben alakult meg az egyik első munkástanács, amely fontos szerepet játszott a forradalom szervezésében.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "Mosonmagyaróvár",
+      "Salgótarján",
+      "Győr",
+      "Debrecen"
+     ],
+     "question": "Melyik városban lőttek a karhatalmisták 1956. december 8-án a békés tüntetőkre?",
+     "explanation": "Salgótarjánban 1956. december 8-án a karhatalom lőtt a békés tüntetőkre; több mint negyvenen haltak meg.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-021",
+   "lesson_id": null,
+   "block_id": "39131d80-cbb5-4a20-922a-024c52543aed",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A Molotov-koktél egy házilag készített robbanószer”",
+   "explanation": "A Molotov-koktél gyújtópalack, nem robbanószer.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Molotov_cocktail",
+     "title": "Molotov cocktail",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Egy típusú fegyver, amit a forradalmárok használtak.",
+      "B) Politikai rendezvény neve.",
+      "C) Egy élelmiszer.",
+      "D) Egy szovjet tank típusa."
+     ],
+     "question": "Mi a Molotov-koktél?",
+     "explanation": "A Molotov-koktél egy házilag készített robbanószer, amelyet a forradalmárok a szovjet tankok ellen használtak.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Egy típusú fegyver, amit a forradalmárok használtak.",
+      "B) Politikai rendezvény neve.",
+      "C) Egy élelmiszer.",
+      "D) Egy szovjet tank típusa."
+     ],
+     "question": "Mi a Molotov-koktél?",
+     "explanation": "A Molotov-koktél házilag készített gyújtópalack, amelyet a felkelők a szovjet harckocsik ellen használtak.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-022",
+   "lesson_id": null,
+   "block_id": "39131d80-cbb5-4a20-922a-024c52543aed",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik városban alakult meg az egyik első munkástanács?” (kulcs: C Salgótarján)",
+   "explanation": "Nincs forrás arra, hogy Salgótarján lett volna az első; a városról a sortűz ismert. A kérdés ellenőrizhetetlen.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mosonmagyaróvár_massacre",
+     "title": "Mosonmagyaróvár massacre",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Mosonmagyaróvár.",
+      "B) Budapest.",
+      "C) Salgótarján.",
+      "D) Szeged."
+     ],
+     "question": "Melyik városban alakult meg az egyik első munkástanács?",
+     "explanation": "Salgótarjánban alakult meg az egyik első munkástanács, amely a munkások érdekeit képviselte.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Mosonmagyaróvár.",
+      "Szeged.",
+      "Salgótarján.",
+      "Debrecen."
+     ],
+     "question": "Melyik városban lőttek a határőrök 1956. október 26-án a tüntetők közé?",
+     "explanation": "Mosonmagyaróváron 1956. október 26-án határőrök sortüzet adtak a tüntetőkre; legalább ötvenen haltak meg.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-10-023",
+   "lesson_id": null,
+   "block_id": "39131d80-cbb5-4a20-922a-024c52543aed",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a megszorító intézkedéseket vezette be”",
+   "explanation": "Homályos, torz. Kádár 1956. november 4-től a szovjetek támogatta kormány élén állt, 1988 májusáig maradt a párt vezetője.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/János_Kádár",
+     "title": "János Kádár",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A forradalom idején a szovjet csapatok vezetője.",
+      "B) A forradalom után a kommunista rendszer vezetője.",
+      "C) A pesti srácok vezetője.",
+      "D) A munkástanács elnöke."
+     ],
+     "question": "Ki volt Kádár János?",
+     "explanation": "Kádár János a forradalom után a kommunista rendszer vezetője lett, aki a megszorító intézkedéseket vezette be.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A forradalom idején a szovjet csapatok vezetője.",
+      "B) A forradalom után a kommunista rendszer vezetője.",
+      "C) A pesti srácok vezetője.",
+      "D) A munkástanács elnöke."
+     ],
+     "question": "Ki volt Kádár János?",
+     "explanation": "Kádár János 1956. november 4-től a szovjetek által támogatott kormány élén állt, és 1988-ig a párt vezetője maradt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}
