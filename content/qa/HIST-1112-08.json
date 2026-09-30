@@ -1,0 +1,1145 @@
+{
+ "nat_id": "HIST-1112-08",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 16,
+  "cards": 87,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-1112-08-001",
+   "lesson_id": "c3f54ceb-c806-4513-ae3c-7dab1ce49596",
+   "block_id": "d8cbe612-1b4d-47b2-badf-91256b39b313",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1945. október 24-én alakult meg San Franciscóban”; „Magyarország … az ENSZ tagjaként részt vehetett a világbéke alakításában”",
+   "explanation": "Az alapokmányt San Franciscóban 1945. június 26-án írták alá, október 24-én lépett hatályba. Magyarország csak 1955-ben lett az ENSZ tagja, tehát 1945-ben nem vehetett részt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/United_Nations",
+     "title": "United Nations",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungary_and_the_United_Nations",
+     "title": "Hungary and the United Nations",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az Egyesült Nemzetek Szervezete (ENSZ) 1945. október 24-én alakult meg San Franciscóban, a második világháború után. Célja a nemzetközi béke és biztonság fenntartása, valamint a nemzetek közötti együttműködés elősegítése volt. Az ENSZ megalapítása fontos lépés volt a kétpólusú világ kialakulásában, mivel az Egyesült Államok és a Szovjetunió dominálta a nemzetközi politikai színteret. Magyarország számára is jelentős volt, hiszen az ENSZ tagjaként részt vehetett a világbéke alakításában.",
+     "type": "text",
+     "heading": "Az ENSZ megalapítása",
+     "key_term": "Egyesült Nemzetek Szervezete (ENSZ)"
+    },
+    "after": {
+     "body": "Az Egyesült Nemzetek Szervezete (ENSZ) alapokmányát San Franciscóban 1945. június 26-án írták alá, és október 24-én lépett hatályba. Célja a nemzetközi béke és biztonság fenntartása, valamint a nemzetek közötti együttműködés elősegítése volt. Az ENSZ megalapítása fontos lépés volt a kétpólusú világ kialakulásában, mivel az Egyesült Államok és a Szovjetunió dominálta a nemzetközi politikai színteret. Magyarország csak 1955-ben, a Szovjetunió és az USA közötti alkuval együtt vált az ENSZ tagjává.",
+     "type": "text",
+     "heading": "Az ENSZ megalapítása",
+     "key_term": "Egyesült Nemzetek Szervezete (ENSZ)"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-002",
+   "lesson_id": "c3f54ceb-c806-4513-ae3c-7dab1ce49596",
+   "block_id": "d8cbe612-1b4d-47b2-badf-91256b39b313",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A békeszerződés „a kitelepítések és lakosságcserék ügyét is érintette”; „az Egyesült Államok és a Szovjetunió … osztották fel a világot”",
+   "explanation": "A párizsi békeszerződések (1947. február 10.) nem a lakosságcserét rendezték: a magyar–csehszlovák lakosságcsere külön kétoldalú egyezmény volt (1946). A magyar szerződés a trianoni határokat állította vissza (három pozsonyi falu Csehszlovákiához került), 300 millió dollár jóvátételt írt elő, és 65 ezer főben maximálta a hadsereget. A szerződéseket a négy nagyhatalom készítette elő, nem csak az USA és a Szovjetunió.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Paris_Peace_Treaties,_1947",
+     "title": "Paris Peace Treaties, 1947",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Peace_with_Hungary",
+     "title": "Treaty of Peace with Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A párizsi béke 1947-ben született meg, amely a második világháború után számos ország, köztük Magyarország sorsát is rendezte. A békeszerződés a területi változások mellett a kitelepítések és lakosságcserék ügyét is érintette, amelyek jelentős hatással voltak a magyar társadalomra. A béke megkötése a kétpólusú világ kialakulásának szerves része volt, mivel a győztes hatalmak, az Egyesült Államok és a Szovjetunió, érdekeik mentén osztották fel a világot.",
+     "type": "text",
+     "heading": "A párizsi béke",
+     "key_term": "párizsi béke"
+    },
+    "after": {
+     "body": "A párizsi békeszerződéseket 1947. február 10-én írták alá Olaszországgal, Romániával, Bulgáriával, Finnországgal és Magyarországgal; szeptember 15-én léptek hatályba. Magyarország esetében visszaállították a trianoni határokat (három pozsonyi falut Csehszlovákiához csatoltak), az ország 300 millió dollár jóvátételt fizetett a Szovjetuniónak, Csehszlovákiának és Jugoszláviának, hadserege pedig legfeljebb 65 ezer fős lehetett. A szerződéseket a négy nagyhatalom (az USA, a Szovjetunió, Nagy-Britannia és Franciaország) készítette elő, és a tárgyalásokon már megmutatkozott a két tömb szembenállása.",
+     "type": "text",
+     "heading": "A párizsi béke",
+     "key_term": "párizsi béke"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-003",
+   "lesson_id": "c3f54ceb-c806-4513-ae3c-7dab1ce49596",
+   "block_id": "d8cbe612-1b4d-47b2-badf-91256b39b313",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a területi rendezések következményei voltak”",
+   "explanation": "A németek kitelepítését a potsdami konferencia engedélyezte (Magyarországról 1946–48-ban közel 200 ezer főt), a szlovák–magyar lakosságcsere külön egyezmény alapján zajlott (kb. 70 ezer fő mindkét irányban); nem a területi rendezések következménye. A kártya konkrétumot nem ad.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Danube_Swabians",
+     "title": "Danube Swabians",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Population_exchange_between_Czechoslovakia_and_Hungary",
+     "title": "Population exchange between Czechoslovakia and Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Potsdam_Agreement",
+     "title": "Potsdam Agreement",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A második világháború után számos kitelepítés és lakosságcsere zajlott Magyarországon és a környező országokban. Ezek a folyamatok a területi rendezések következményei voltak, és alapvetően átalakították a magyar társadalom etnikai összetételét. A kitelepítések során több százezer magyar állampolgárt érintettek, ami hosszú távú társadalmi feszültségeket eredményezett. E folyamatok a kétpólusú világ politikai feszültségeivel párhuzamosan zajlottak.",
+     "type": "text",
+     "heading": "Kitelepítések és lakosságcserék",
+     "key_term": "kitelepítés"
+    },
+    "after": {
+     "body": "A második világháború után számos kitelepítés és lakosságcsere zajlott Magyarországon és a környező országokban. Magyarországról 1946–48 között közel 200 ezer német nemzetiségű lakost telepítettek ki a potsdami döntés alapján, a Csehszlovákiával kötött lakosságcsere-egyezmény nyomán pedig mintegy 70 ezer szlovák hagyta el az országot, és hasonló számú magyar érkezett a Felvidékről. Ez alapvetően átalakította a magyar társadalom etnikai összetételét. A kitelepítések során több százezer magyar állampolgárt érintettek, ami hosszú távú társadalmi feszültségeket eredményezett. E folyamatok a kétpólusú világ politikai feszültségeivel párhuzamosan zajlottak.",
+     "type": "text",
+     "heading": "Kitelepítések és lakosságcserék",
+     "key_term": "kitelepítés"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-004",
+   "lesson_id": "c3f54ceb-c806-4513-ae3c-7dab1ce49596",
+   "block_id": "d8cbe612-1b4d-47b2-badf-91256b39b313",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Magyarország számára a német kérdés különösen fontos volt … közvetlen hatással voltak a magyar politikai viszonyokra”",
+   "explanation": "Homályos, kényszerített hazai vonatkozás. Konkrét: Magyarország az NDK-t 1949 októberében ismerte el, az NSZK-val 1973-ig nem volt diplomáciai kapcsolata.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungary–Germany_relations",
+     "title": "Hungary–Germany relations",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1949-ben Németország két különálló államra, az NSZK-ra (Németországi Szövetségi Köztársaság) és az NDK-ra (Német Demokratikus Köztársaság) oszlott. Az NSZK a nyugati blokkhoz, míg az NDK a keleti blokkhoz tartozott, ami a hidegháború idején a kétpólusú világ szembenállásának szimbolikus megjelenése volt. A két Németország létrejötte nemcsak Németország, hanem egész Európa politikai táját is meghatározta. Magyarország számára a német kérdés különösen fontos volt, hiszen a két ország közötti feszültségek közvetlen hatással voltak a magyar politikai viszonyokra.",
+     "type": "text",
+     "heading": "A két Németország",
+     "key_term": "NSZK és NDK"
+    },
+    "after": {
+     "body": "1949-ben Németország két különálló államra, az NSZK-ra (Németországi Szövetségi Köztársaság) és az NDK-ra (Német Demokratikus Köztársaság) oszlott. Az NSZK a nyugati blokkhoz, míg az NDK a keleti blokkhoz tartozott, ami a hidegháború idején a kétpólusú világ szembenállásának szimbolikus megjelenése volt. A két Németország létrejötte nemcsak Németország, hanem egész Európa politikai táját is meghatározta. Magyarország az NDK-t 1949 októberében ismerte el, az NSZK-val viszont csak 1973-ban vett fel diplomáciai kapcsolatot.",
+     "type": "text",
+     "heading": "A két Németország",
+     "key_term": "NSZK és NDK"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-005",
+   "lesson_id": "72358eda-2cac-47f7-a2c8-d3e28b0612ac",
+   "block_id": "551794ae-654c-436f-8440-cb29911d172e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A magyar történelem szempontjából … összefonódik”",
+   "explanation": "Kényszerített, üres magyar vonatkozás.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Szerkesztői észrevétel: a mondat nem mond konkrétumot.",
+   "fix": {
+    "before": {
+     "body": "A hidegháború a második világháború utáni időszakban, 1947-től kezdődően a két szuperhatalom, az Egyesült Államok és a Szovjetunió közötti politikai, gazdasági és katonai feszültségek időszaka. E konfliktus során nem zajlottak közvetlen háborúk, de a felek közötti rivalizálás számos regionális konfliktust generált. A hidegháború idején a világ két táborra szakadt: a nyugati és a keleti blokkra. A magyar történelem szempontjából a hidegháború a szocialista rendszer kialakulásával és a vasfüggöny megjelenésével is összefonódik.",
+     "type": "text",
+     "heading": "A hidegháború fogalma",
+     "key_term": "hidegháború"
+    },
+    "after": {
+     "body": "A hidegháború a második világháború utáni időszakban, 1947-től kezdődően a két szuperhatalom, az Egyesült Államok és a Szovjetunió közötti politikai, gazdasági és katonai feszültségek időszaka. E konfliktus során nem zajlottak közvetlen háborúk, de a felek közötti rivalizálás számos regionális konfliktust generált. A hidegháború idején a világ két táborra szakadt: a nyugati és a keleti blokkra. Magyarországon a hidegháború a kommunista hatalomátvétellel (1947–49) és a vasfüggöny kiépítésével járt együtt.",
+     "type": "text",
+     "heading": "A hidegháború fogalma",
+     "key_term": "hidegháború"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-006",
+   "lesson_id": "72358eda-2cac-47f7-a2c8-d3e28b0612ac",
+   "block_id": "551794ae-654c-436f-8440-cb29911d172e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A „vasfüggöny” eredete hiányzik; „Magyarországon is érezhető volt”",
+   "explanation": "A kifejezést Churchill tette közismertté 1946. márciusi fultoni beszédében. A magyar vonatkozás homályos.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Iron_Curtain",
+     "title": "Iron Curtain",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A vasfüggöny kifejezés a keleti és nyugati blokk közötti határvonalat jelöli, amely elválasztotta a kommunista és a kapitalista országokat. A Szovjetunió és az Egyesült Államok szuperhatalommá válása a második világháború után alapvetően átalakította a világ politikai térképét. A szuperhatalmak versengése többek között a fegyverkezésben és az űrprogramban is megnyilvánult. E két hatalom rivalizálása Magyarországon is érezhető volt, hiszen az ország a szovjet befolyás alatt állt.",
+     "type": "text",
+     "heading": "A vasfüggöny és a szuperhatalmak",
+     "key_term": "vasfüggöny, szuperhatalom"
+    },
+    "after": {
+     "body": "A vasfüggöny kifejezést Churchill tette közismertté 1946-os fultoni beszédében; a keleti és nyugati blokk közötti határvonalat jelöli, amely elválasztotta a kommunista és a kapitalista országokat. A Szovjetunió és az Egyesült Államok szuperhatalommá válása a második világháború után alapvetően átalakította a világ politikai térképét. A szuperhatalmak versengése többek között a fegyverkezésben és az űrprogramban is megnyilvánult. Magyarország a keleti oldalon állt; az 1949-től kiépített műszaki határzár a magyar–osztrák határon is a vasfüggöny része lett.",
+     "type": "text",
+     "heading": "A vasfüggöny és a szuperhatalmak",
+     "key_term": "vasfüggöny, szuperhatalom"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-007",
+   "lesson_id": "72358eda-2cac-47f7-a2c8-d3e28b0612ac",
+   "block_id": "551794ae-654c-436f-8440-cb29911d172e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„amely Magyarországot is érintette … a magyar vezetés is reagált”",
+   "explanation": "Üres magyar vonatkozás. Valós kapcsolódás: Hruscsov 1956-os titkos beszéde (XX. kongresszus) hozzájárult az 1956-os forradalomhoz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nikita_Khrushchev",
+     "title": "Nikita Khrushchev",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Secret_Speech",
+     "title": "Secret Speech",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Nyikita Sz. Hruscsov, a Szovjetunió vezetője 1953-tól 1964-ig irányította az országot, és a hidegháború egyik meghatározó alakja volt. John F. Kennedy, az Egyesült Államok elnöke 1961-től 1963-ig vezette az országot, és a kubai rakétaválság idején kulcsszerepet játszott a feszültségek kezelésében. A két vezető közötti interakciók tükrözték a hidegháborús politikai légkört, amely Magyarországot is érintette, hiszen a szovjet befolyás alatt álló országként a magyar vezetés is reagált a nemzetközi eseményekre.",
+     "type": "text",
+     "heading": "Hruscsov és Kennedy",
+     "key_term": "Nyikita Sz. Hruscsov, John F. Kennedy"
+    },
+    "after": {
+     "body": "Nyikita Sz. Hruscsov, a Szovjetunió vezetője 1953-tól 1964-ig irányította az országot, és a hidegháború egyik meghatározó alakja volt. John F. Kennedy, az Egyesült Államok elnöke 1961-től 1963-ig vezette az országot, és a kubai rakétaválság idején kulcsszerepet játszott a feszültségek kezelésében. Hruscsov 1956 februárjában a XX. pártkongresszuson leleplezte Sztálin bűneit, ami Magyarországon is hozzájárult az 1956-os forradalom kitöréséhez; Kennedyvel 1961-ben Bécsben találkozott.",
+     "type": "text",
+     "heading": "Hruscsov és Kennedy",
+     "key_term": "Nyikita Sz. Hruscsov, John F. Kennedy"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-008",
+   "lesson_id": "72358eda-2cac-47f7-a2c8-d3e28b0612ac",
+   "block_id": "551794ae-654c-436f-8440-cb29911d172e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„komoly politikai és gazdasági kihívásokat jelentettek”; „a magyar kormány gyakran … szovjet érdekek mentén”",
+   "explanation": "Homályos. Konkrét: a szuezi válság 1956 októberében-novemberében egybeesett a magyar forradalommal.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Suez_Crisis",
+     "title": "Suez Crisis",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A hidegháború alatt zajló konfliktusok, mint a koreai háború, a szuezi válság, a kubai válság, a vietnami háború és az afganisztáni háború, nemcsak a szuperhatalmak közötti feszültségeket tükrözték, hanem a közép- és kelet-európai országok, így Magyarország sorsát is befolyásolták. Ezek a háborúk a szovjet blokk tagjaként Magyarország számára is komoly politikai és gazdasági kihívásokat jelentettek. A magyar kormány gyakran a szovjet érdekek mentén alakította külpolitikai döntéseit.",
+     "type": "text",
+     "heading": "Hidegháborús konfliktusok és Magyarország",
+     "key_term": "Hidegháborús konfliktusok, Magyarország"
+    },
+    "after": {
+     "body": "A hidegháború alatt zajló konfliktusok, mint a koreai háború, a szuezi válság, a kubai válság, a vietnami háború és az afganisztáni háború, nemcsak a szuperhatalmak közötti feszültségeket tükrözték, hanem a közép- és kelet-európai országok, így Magyarország sorsát is befolyásolták. A szuezi válság (1956. október–november) egybeesett a magyar forradalommal, így a nagyhatalmak figyelme megoszlott. Magyarország külpolitikáját 1948 után Moszkva határozta meg.",
+     "type": "text",
+     "heading": "Hidegháborús konfliktusok és Magyarország",
+     "key_term": "Hidegháborús konfliktusok, Magyarország"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-009",
+   "lesson_id": "72358eda-2cac-47f7-a2c8-d3e28b0612ac",
+   "block_id": "551794ae-654c-436f-8440-cb29911d172e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Az [7]. kártya az [6]. majdnem szó szerinti másodpéldánya (Izrael és a koreai háború)",
+   "explanation": "Duplikált kártya; mindkettő a leckéhez lazán kapcsolódó Izrael-részt tartalmaz, a cím összemossa a két témát. A koreai háború 1953-as fegyverszünet, béke nélkül; ez csak a [7]-ben szerepel.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "Szerkesztői észrevétel: a [7] törlendő, a fegyverszüneti mondat átvihető a [6]-ba."
+  },
+  {
+   "id": "HIST-1112-08-010",
+   "lesson_id": "1a80f246-2b90-41e0-9fb6-9613b563a06d",
+   "block_id": "1b137392-4b35-4868-a20b-9ce19033f102",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a gyarmati sorsból való kilábalás … a magyar történelemben is központi szerepet játszott”",
+   "explanation": "Magyarország nem volt gyarmat. Az 1947-es függetlenséggel India kettéosztása (India és Pakisztán) járt együtt, milliós menekülthullámmal.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Partition_of_India",
+     "title": "Partition of India",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "India 1947. augusztus 15-én nyerte el függetlenségét Nagy-Britanniától. Mahátma Gandhi, a függetlenségi mozgalom vezetője, a békés ellenállás híve volt, amelynek célja a gyarmati uralom megszüntetése volt. Az indiai függetlenség elérése fontos esemény volt a gyarmatok felszabadulásának folyamatában, mivel példát mutatott más országok számára is. Az esemény hatásai nemcsak Indiára, hanem a magyarok számára is tanulságosak, hiszen a gyarmati sorsból való kilábalás és a nemzeti önrendelkezés eszméje a magyar történelemben is központi szerepet játszott.",
+     "type": "text",
+     "heading": "India függetlenné válása",
+     "key_term": "India függetlensége, Mahátma Gandhi"
+    },
+    "after": {
+     "body": "India 1947. augusztus 15-én nyerte el függetlenségét Nagy-Britanniától. Mahátma Gandhi, a függetlenségi mozgalom vezetője, a békés ellenállás híve volt, amelynek célja a gyarmati uralom megszüntetése volt. Az indiai függetlenség elérése fontos esemény volt a gyarmatok felszabadulásának folyamatában, mivel példát mutatott más országok számára is. A függetlenség az ország kettéosztásával járt: létrejött India és Pakisztán, és a felosztás során milliók kényszerültek menekülni.",
+     "type": "text",
+     "heading": "India függetlenné válása",
+     "key_term": "India függetlensége, Mahátma Gandhi"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-011",
+   "lesson_id": "1a80f246-2b90-41e0-9fb6-9613b563a06d",
+   "block_id": "1b137392-4b35-4868-a20b-9ce19033f102",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A kommunizmus terjedése a szovjet befolyás növekedését jelentette”",
+   "explanation": "A magyar kommunista hatalomátvétel nem Kína következménye. Konkrét: Magyarország 1949 októberében vette fel a kapcsolatot az új kínai állammal; a kuomintang-kormány Tajvanra menekült.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/People's_Republic_of_China",
+     "title": "People's Republic of China",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War",
+     "title": "Chinese Civil War",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1949-ben Kínában Mao Ce-tung vezetésével megvalósult a kommunista fordulat, amely a Kínai Népköztársaság megalakulásához vezetett. A kommunista ideológia elterjedése Kínában új politikai és gazdasági rendszert hozott létre, amely jelentős hatással volt a világpolitikai helyzetre. Az esemény a hidegháború időszakában különösen fontos volt, mivel a kommunista és kapitalista rendszerek közötti feszültséget tovább fokozta. Magyarország számára a kommunizmus terjedése a szovjet befolyás növekedését jelentette, amely a magyar politikai életre is kihatott.",
+     "type": "text",
+     "heading": "Kommunista fordulat Kínában",
+     "key_term": "Mao Ce-tung, kommunista fordulat"
+    },
+    "after": {
+     "body": "1949-ben Kínában Mao Ce-tung vezetésével megvalósult a kommunista fordulat, amely a Kínai Népköztársaság megalakulásához vezetett. A kommunista ideológia elterjedése Kínában új politikai és gazdasági rendszert hozott létre, amely jelentős hatással volt a világpolitikai helyzetre. Az esemény a hidegháború időszakában különösen fontos volt, mivel a kommunista és kapitalista rendszerek közötti feszültséget tovább fokozta. A kuomintang-kormány Tajvan szigetére menekült; Magyarország 1949 októberében ismerte el az új kínai államot.",
+     "type": "text",
+     "heading": "Kommunista fordulat Kínában",
+     "key_term": "Mao Ce-tung, kommunista fordulat"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-012",
+   "lesson_id": "1a80f246-2b90-41e0-9fb6-9613b563a06d",
+   "block_id": "1b137392-4b35-4868-a20b-9ce19033f102",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A magyar történelem szempontjából a gyarmati sorsból való kilábalás mintájául szolgálhatott”",
+   "explanation": "Kényszerített, téves párhuzam (Magyarország nem volt gyarmat). Valós lényeg: a folyamat csúcsa 1960, az „afrikai év”, amikor 17 afrikai ország lett független.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Decolonization_of_Africa",
+     "title": "Decolonization of Africa",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Year_of_Africa",
+     "title": "Year of Africa",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A második világháború után a gyarmatbirodalmak jelentős válságba kerültek, ami a gyarmatok felszabadulásához vezetett. Az Egyesült Államok és a Szovjetunió politikai nyomása, valamint a gyarmati népek függetlenségi törekvései hozzájárultak a gyarmati rendszerek összeomlásához. A gyarmatok függetlensége nemcsak politikai változásokat hozott, hanem kulturális és gazdasági átalakulásokat is előidézett. A magyar történelem szempontjából a gyarmati sorsból való kilábalás mintájául szolgálhatott az önálló nemzeti identitás kialakításához.",
+     "type": "text",
+     "heading": "A gyarmatbirodalmak felbomlása",
+     "key_term": "gyarmatbirodalmak felbomlása"
+    },
+    "after": {
+     "body": "A második világháború után a gyarmatbirodalmak jelentős válságba kerültek, ami a gyarmatok felszabadulásához vezetett. Az Egyesült Államok és a Szovjetunió politikai nyomása, valamint a gyarmati népek függetlenségi törekvései hozzájárultak a gyarmati rendszerek összeomlásához. A gyarmatok függetlensége nemcsak politikai változásokat hozott, hanem kulturális és gazdasági átalakulásokat is előidézett. A folyamat 1960-ban, az „afrikai évben” csúcsosodott ki: 17 afrikai ország lett független.",
+     "type": "text",
+     "heading": "A gyarmatbirodalmak felbomlása",
+     "key_term": "gyarmatbirodalmak felbomlása"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-013",
+   "lesson_id": "1a80f246-2b90-41e0-9fb6-9613b563a06d",
+   "block_id": "1b137392-4b35-4868-a20b-9ce19033f102",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Magyarország számára ez az esemény … fontos szerepet játszott”",
+   "explanation": "Üres, kényszerített magyar vonatkozás; hiányzik a lényeg: az ENSZ 1947-es felosztási terve, és hogy az arab államok 1948. május 15-én megtámadták Izraelt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1947_UN_Partition_Plan",
+     "title": "1947 UN Partition Plan",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1948_Arab–Israeli_War",
+     "title": "1948 Arab–Israeli War",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Izrael Állam 1948. május 14-én alakult meg, a zsidó nép függetlenségi nyilatkozatának eredményeként. A Közel-Keleten történtek a második világháború után jelentős hatással voltak a zsidóság helyzetére, amelyet a holokauszt tragédiája is beárnyékolt. Izrael megalapítása új politikai és társadalmi feszültségeket generált a térségben, és a zsidó-arab konfliktusok kirobbanásához vezetett. Magyarország számára ez az esemény a nemzetközi politikai viszonyok alakulásában is fontos szerepet játszott.",
+     "type": "text",
+     "heading": "Izrael megalapítása",
+     "key_term": "Izrael, Közel-Kelet"
+    },
+    "after": {
+     "body": "Izrael Állam 1948. május 14-én alakult meg, a zsidó nép függetlenségi nyilatkozatának eredményeként. A Közel-Keleten történtek a második világháború után jelentős hatással voltak a zsidóság helyzetére, amelyet a holokauszt tragédiája is beárnyékolt. Izrael megalapítása új politikai és társadalmi feszültségeket generált a térségben, és a zsidó-arab konfliktusok kirobbanásához vezetett. Az ENSZ közgyűlése 1947 novemberében a terület felosztásáról szavazott; az arab országok ezt elutasították, és 1948. május 15-én megtámadták az új államot.",
+     "type": "text",
+     "heading": "Izrael megalapítása",
+     "key_term": "Izrael, Közel-Kelet"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-014",
+   "lesson_id": "c3f54ceb-c806-4513-ae3c-7dab1ce49596",
+   "block_id": "651544ef-9002-427f-b8f7-bfcd4b2938bb",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "year",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "A world-blokk egyetlen kártyájában a year és link_hu üres; a szöveg általános („római és perzsa birodalom”)",
+   "explanation": "Üres mezők, nincs konkrét esemény és dátum. Nem javítható automatikusan.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "Szerkesztői észrevétel: konkrét eseménnyel (pl. Truman-doktrína, 1947) kellene újraírni."
+  },
+  {
+   "id": "HIST-1112-08-015",
+   "lesson_id": "72358eda-2cac-47f7-a2c8-d3e28b0612ac",
+   "block_id": "98a7f735-4164-4f58-b39c-4533f685eaf5",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A vasfüggöny … megosztotta Magyarországot és a környező országokat”",
+   "explanation": "Magyarországot nem osztotta meg; keleti oldalra került. Valós hazai esemény: Nagy Ferenc miniszterelnök 1947 júniusi lemondatása, a „kékcédulás” választás (1947. augusztus 31.).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_parliamentary_election,_1947",
+     "title": "Hungarian parliamentary election, 1947",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ferenc_Nagy",
+     "title": "Ferenc Nagy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1947-ben az Egyesült Államok bejelentette a Truman-doktrínát, amely a kommunizmus terjedésének megakadályozására irányult. Ezzel párhuzamosan a Szovjetunió is megerősítette befolyását Kelet-Európában, így a két szuperhatalom közötti feszültség fokozódott. Az események hozzájárultak a hidegháború kialakulásához, amely tartósan meghatározta a globális politikai viszonyokat.",
+     "type": "world",
+     "year": "1947",
+     "heading": "A hidegháború kezdete",
+     "link_hu": "A Truman-doktrína és a Szovjetunió politikája hozzájárult a vasfüggöny kialakulásához, amely megosztotta Magyarországot és a környező országokat."
+    },
+    "after": {
+     "body": "1947-ben az Egyesült Államok bejelentette a Truman-doktrínát, amely a kommunizmus terjedésének megakadályozására irányult. Ezzel párhuzamosan a Szovjetunió is megerősítette befolyását Kelet-Európában, így a két szuperhatalom közötti feszültség fokozódott. Az események hozzájárultak a hidegháború kialakulásához, amely tartósan meghatározta a globális politikai viszonyokat.",
+     "type": "world",
+     "year": "1947",
+     "heading": "A hidegháború kezdete",
+     "link_hu": "1947-ben Magyarországon a kommunisták fokozatosan átvették a hatalmat: júniusban lemondatták Nagy Ferenc miniszterelnököt, augusztusban pedig a „kékcédulás” választáson a Magyar Kommunista Párt lett a legnagyobb párt."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-016",
+   "lesson_id": "72358eda-2cac-47f7-a2c8-d3e28b0612ac",
+   "block_id": "98a7f735-4164-4f58-b39c-4533f685eaf5",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "link_hu: a Varsói Szerződés „hozzájárult a magyar forradalom kirobbanásához 1956-ban”",
+   "explanation": "Kitalált ok-okozat: a forradalmat a belső helyzet váltotta ki; a szerződés a kilépési szándék (Nagy Imre, 1956. november 1.) és a szovjet beavatkozás (november 4.) kapcsán fontos. A body szerint a szerződés a NATO megalakulására válaszolt; közvetlen kiváltó ok az NSZK 1955-ös NATO-csatlakozása volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Warsaw_Pact",
+     "title": "Warsaw Pact",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1955-ben a Szovjetunió létrehozta a Varsói Szerződést, amely a keleti blokk országait tömörítette. Ez a lépés válaszként szolgált a NATO megalakulására, és tovább növelte a feszültséget a két világrendszer között. A Varsói Szerződés megerősítette a kommunista országok közötti katonai együttműködést, és hozzájárult a hidegháborús konfliktusok eszkalációjához.",
+     "type": "world",
+     "year": "1955",
+     "heading": "A Varsói Szerződés létrehozása",
+     "link_hu": "A Varsói Szerződés megerősítette a szovjet befolyást Magyarországon, és hozzájárult a magyar forradalom kirobbanásához 1956-ban."
+    },
+    "after": {
+     "body": "1955. május 14-én a Szovjetunió és hét szövetségese Varsóban aláírta a Varsói Szerződést, amely a keleti blokk katonai szövetsége lett. A lépés válasz volt az NSZK NATO-csatlakozására.",
+     "type": "world",
+     "year": "1955",
+     "heading": "A Varsói Szerződés létrehozása",
+     "link_hu": "Magyarország alapító tagja volt a szerződésnek; 1956. november 1-jén Nagy Imre kormánya bejelentette a kilépést, november 4-én a szovjet csapatok megtámadták Budapestet."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-017",
+   "lesson_id": "72358eda-2cac-47f7-a2c8-d3e28b0612ac",
+   "block_id": "98a7f735-4164-4f58-b39c-4533f685eaf5",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„a világpolitikai feszültség tovább nőtt, és a hidegháború fokozódó militarizálódásához vezetett”",
+   "explanation": "A válság után enyhülés kezdődött: 1963-ban forródrótot létesítettek, és aláírták a részleges atomcsend-egyezményt. A kártya kihagyja a megoldást (rakéták kivonása Kubából és titokban Törökországból, az USA kubai támadási garanciája). A link_hu kitalált.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+     "title": "Cuban Missile Crisis",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Partial_Nuclear_Test_Ban_Treaty",
+     "title": "Partial Nuclear Test Ban Treaty",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1962 októberében a kubai rakétaválság során az Egyesült Államok és a Szovjetunió a közvetlen háború szélére került. A Szovjetunió Kubában rakétákat telepített, amit az Egyesült Államok éles tiltakozása követett. A válság végül diplomáciai úton rendeződött, de a világpolitikai feszültség tovább nőtt, és a hidegháború fokozódó militarizálódásához vezetett.",
+     "type": "world",
+     "year": "1962",
+     "heading": "A kubai rakétaválság",
+     "link_hu": "A kubai rakétaválság következményeként a magyar politikai vezetés is feszültebb helyzetben próbálta megőrizni a szovjet befolyást, amely hozzájárult a későbbi eseményekhez."
+    },
+    "after": {
+     "body": "1962 októberében az amerikai felderítés szovjet nukleáris rakétákat fedezett fel Kubában. Kennedy tengeri zárlatot rendelt el; a válság október 28-án úgy oldódott meg, hogy Hruscsov kivonta a rakétákat, az USA pedig vállalta, hogy nem támadja meg Kubát, és titokban kivonta rakétáit Törökországból. A válság után enyhülés kezdődött: 1963-ban forródrótot létesítettek Washington és Moszkva között, és aláírták a részleges atomcsend-egyezményt.",
+     "type": "world",
+     "year": "1962",
+     "heading": "A kubai rakétaválság",
+     "link_hu": "Magyarország a Varsói Szerződés tagjaként a szovjet álláspontot támogatta, de a válságban közvetlenül nem volt érintett."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-018",
+   "lesson_id": "72358eda-2cac-47f7-a2c8-d3e28b0612ac",
+   "block_id": "98a7f735-4164-4f58-b39c-4533f685eaf5",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: „Magyarország is figyelemmel kísérte … befolyásolta a szovjet politikai irányvonalat”",
+   "explanation": "Üres, kitalált vonatkozás. Valós: Magyarország a hatnapos háború után, 1967 júniusában megszakította a diplomáciai kapcsolatot Izraellel (1989-ig).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungary–Israel_relations",
+     "title": "Hungary–Israel relations",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1973-ban a jom kippuri háború során Egyiptom és Szíria megtámadta Izraelt, ami a Közel-Kelet feszültségeit tovább növelte. A konfliktusban a Szovjetunió és az Egyesült Államok is érdekelt volt, mivel mindkét nagyhatalom támogatta a saját szövetségeseit. A háború következményeként a hidegháborús feszültségek globális szinten is növekedtek.",
+     "type": "world",
+     "year": "1973",
+     "heading": "A jom kippuri háború",
+     "link_hu": "A jom kippuri háború hatására Magyarország is figyelemmel kísérte a nemzetközi helyzetet, amely befolyásolta a szovjet politikai irányvonalat."
+    },
+    "after": {
+     "body": "1973-ban a jom kippuri háború során Egyiptom és Szíria megtámadta Izraelt, ami a Közel-Kelet feszültségeit tovább növelte. A konfliktusban a Szovjetunió és az Egyesült Államok is érdekelt volt, mivel mindkét nagyhatalom támogatta a saját szövetségeseit. A háború következményeként a hidegháborús feszültségek globális szinten is növekedtek.",
+     "type": "world",
+     "year": "1973",
+     "heading": "A jom kippuri háború",
+     "link_hu": "Magyarország 1967 júniusában, a hatnapos háború után megszakította a diplomáciai kapcsolatot Izraellel, és csak 1989-ben állította helyre."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-019",
+   "lesson_id": "72358eda-2cac-47f7-a2c8-d3e28b0612ac",
+   "block_id": "98a7f735-4164-4f58-b39c-4533f685eaf5",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "link_hu: „Magyarországon is érezhető volt a szovjet katonai befolyás növekedése, ami hozzájárult a társadalmi feszültségek fokozódásához”",
+   "explanation": "Kitalált. A szovjet bevonulás 1979 decemberében történt; a háború 1989 februárjáig tartott. Valós következmény: az 1980-as moszkvai olimpia amerikai és nyugati bojkottja (a magyar sportolók részt vettek).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Soviet–Afghan_War",
+     "title": "Soviet–Afghan War",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1980_Summer_Olympics_boycott",
+     "title": "1980 Summer Olympics boycott",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1979-ben a Szovjetunió bevonult Afganisztánba, hogy támogassa a kommunista kormányt a lázadókkal szemben. Ez a lépés nemcsak a hidegháborús feszültségeket fokozta, hanem a nyugati országok, köztük az Egyesült Államok válaszlépéseit is kiváltotta. A konfliktus hosszú és véres háborúvá vált, amely a szuperhatalmak közötti rivalizálás újabb színterévé vált.",
+     "type": "world",
+     "year": "1979",
+     "heading": "Az afgán háború kezdete",
+     "link_hu": "Az afgán háború következményeként Magyarországon is érezhető volt a szovjet katonai befolyás növekedése, ami hozzájárult a társadalmi feszültségek fokozódásához."
+    },
+    "after": {
+     "body": "1979 decemberében a Szovjetunió csapatai bevonultak Afganisztánba, hogy támogassák a kommunista kormányt a felkelőkkel szemben. Az Egyesült Államok szankciókkal válaszolt, és az 1980-as moszkvai olimpiát bojkottálta. A háború 1989 februárjáig tartott, a szovjet erők kivonulásával ért véget.",
+     "type": "world",
+     "year": "1979",
+     "heading": "Az afgán háború kezdete",
+     "link_hu": "A magyar sportolók részt vettek az 1980-as moszkvai olimpián, amelyet az Egyesült Államok és több nyugati ország bojkottált."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-020",
+   "lesson_id": "1a80f246-2b90-41e0-9fb6-9613b563a06d",
+   "block_id": "810211bc-dbb0-480e-86f9-2fb457260dd7",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "heading: „Indiában függetlenségi mozgalom zajlik”; link_hu: „a magyar gyarmatosítási tapasztalatok újraértékeléséhez”",
+   "explanation": "Magyarországnak nem volt gyarmata; a link_hu kitalált. A heading téves (nem mozgalom, a függetlenség kikiáltása). Hiányzik India kettéosztása.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Partition_of_India",
+     "title": "Partition of India",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Independence_Day_(India)",
+     "title": "Independence Day (India)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "1947-ben India független állammá válik, amely a brit gyarmati uralom végét jelenti. Mahátma Gandhi vezetésével a mozgalom békés ellenállásra épült, és a függetlenség elnyerése nemcsak Indiát, hanem más gyarmati területeket is inspirált a függetlenségükért folytatott harcban. Ez a folyamat hozzájárult a gyarmati rendszer általános válságához, amely a világ számos részén, köztük Afrikában és Ázsiában is felerősödött.",
+     "type": "world",
+     "year": "1947",
+     "heading": "Indiában függetlenségi mozgalom zajlik",
+     "link_hu": "A brit gyarmati uralom vége közvetlenül hozzájárult a magyar gyarmatosítási tapasztalatok újraértékeléséhez, hiszen a gyarmati rendszer megbomlása globális szinten is hatással volt a magyar politikai gondolkodásra."
+    },
+    "after": {
+     "body": "1947. augusztus 15-én India Nagy-Britanniától függetlenné vált, de az ország kettéosztásával: létrejött India és Pakisztán, és a felosztás során milliók menekültek. A függetlenségi mozgalom vezetője Mahátma Gandhi volt, aki a békés ellenállást hirdette.",
+     "type": "world",
+     "year": "1947",
+     "heading": "India függetlenné válik",
+     "link_hu": "Magyarország a szovjet blokk tagjaként az 1950-es évektől támogatta a gyarmati függetlenségi mozgalmakat, és kapcsolatokat épített ki a felszabadult országokkal, köztük Indiával."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-021",
+   "lesson_id": "1a80f246-2b90-41e0-9fb6-9613b563a06d",
+   "block_id": "810211bc-dbb0-480e-86f9-2fb457260dd7",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "link_hu: az izraeli megalapítás „a magyar nemzet számára is fontos tanulságokat hordozott”; body: „más államok függetlenségi törekvéseire is hatással volt”",
+   "explanation": "Kitalált magyar vonatkozás. Hiányzik az első arab–izraeli háború (1948–49) és a palesztin menekültkérdés. Valós hazai vonatkozás: a holokauszt magyarországi túlélői közül sokan kivándoroltak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1948_Arab–Israeli_War",
+     "title": "1948 Arab–Israeli War",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Israeli_Declaration_of_Independence",
+     "title": "Israeli Declaration of Independence",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "1948. május 14-én Izrael Állam kikiáltása történik, amely a zsidó nép számára új hazát teremt a második világháború után. Az esemény következményeként a Közel-Keleten jelentős politikai feszültségek alakulnak ki, és a palesztinokkal való konfliktusok kiéleződnek. Izrael megalapítása nemcsak a zsidó közösség számára volt jelentős, hanem a nemzetközi politikai tájat is átalakította, ami más államok függetlenségi törekvéseire is hatással volt.",
+     "type": "world",
+     "year": "1948",
+     "heading": "Izrael Állam megalapítása",
+     "link_hu": "Izrael megalapítása és a Közel-Keleten kialakuló konfliktusok újabb példát szolgáltattak a nemzeti önrendelkezésre, amely a magyar nemzet számára is fontos tanulságokat hordozott a nemzeti identitás és a függetlenség kérdésében."
+    },
+    "after": {
+     "body": "1948. május 14-én Ben-Gurion kikiáltotta Izrael Állam függetlenségét a brit mandátum megszűnésekor. Másnap a szomszédos arab államok megtámadták az új államot (első arab–izraeli háború, 1948–49); a harcok során mintegy 700 ezer palesztin menekült el vagy vált otthontalanná.",
+     "type": "world",
+     "year": "1948",
+     "heading": "Izrael Állam megalapítása",
+     "link_hu": "A magyarországi holokauszt-túlélők közül sokan kivándoroltak az új államba."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-022",
+   "lesson_id": "1a80f246-2b90-41e0-9fb6-9613b563a06d",
+   "block_id": "810211bc-dbb0-480e-86f9-2fb457260dd7",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "link_hu: a kínai fordulat „erősítette a nemzeti függetlenségi mozgalmakat világszerte, beleértve Magyarországot is”",
+   "explanation": "Értelmetlen; Magyarország nem függetlenségi mozgalom volt. Hiányzik a dátum (1949. október 1.) és a kuomintang Tajvanra menekülése.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/People's_Republic_of_China",
+     "title": "People's Republic of China",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War",
+     "title": "Chinese Civil War",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1949-ben Mao Ce-tung vezetésével a Kínai Kommunista Párt győzelmet arat a polgárháborúban, és megalapítja a Kínai Népköztársaságot. Ez a fordulat jelentős hatással volt a világ politikai tájára, mivel a kommunizmus terjedését és a hidegháborús feszültségeket gerjesztette. A kommunista ideológia terjedése különösen Ázsiában és a fejlődő országokban inspirálta a baloldali mozgalmakat.",
+     "type": "world",
+     "year": "1949",
+     "heading": "Kínában kommunista fordulat",
+     "link_hu": "A kommunista fordulat Kínában erősítette a nemzeti függetlenségi mozgalmakat világszerte, beleértve Magyarországot is, ahol a kommunista ideológia később meghatározó szerepet játszott a politikai életben."
+    },
+    "after": {
+     "body": "1949. október 1-jén Mao Ce-tung Pekingben kikiáltotta a Kínai Népköztársaságot, miután a kommunisták a polgárháborúban legyőzték Csang Kaj-sek kuomintang-kormányát, amely Tajvan szigetére menekült. 1950-ben a Szovjetunió és Kína szövetségi szerződést kötött.",
+     "type": "world",
+     "year": "1949",
+     "heading": "Kínában kommunista fordulat",
+     "link_hu": "Magyarország 1949 októberében ismerte el a Kínai Népköztársaságot."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-023",
+   "lesson_id": "c3f54ceb-c806-4513-ae3c-7dab1ce49596",
+   "block_id": "e9954b68-e291-4e2c-9bf7-316cee6a1e34",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Melyik évben zajlott le a párizsi béke?”",
+   "explanation": "Több „párizsi béke” van (1783, 1856, 1919–20…). A kérdés nem pontos.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Paris_Peace_Treaties,_1947",
+     "title": "Paris Peace Treaties, 1947",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1945",
+      "B) 1947",
+      "C) 1948",
+      "D) 1949"
+     ],
+     "question": "Melyik évben zajlott le a párizsi béke?",
+     "explanation": "A párizsi béke 1947-ben jött létre, amely a második világháború utáni békeszerződések egyike volt, és fontos szerepet játszott a háború utáni rendezésben.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1945",
+      "B) 1947",
+      "C) 1948",
+      "D) 1949"
+     ],
+     "question": "Melyik évben kötötték meg a második világháború utáni párizsi békeszerződéseket (Magyarországgal is)?",
+     "explanation": "A párizsi béke 1947-ben jött létre, amely a második világháború utáni békeszerződések egyike volt, és fontos szerepet játszott a háború utáni rendezésben.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-024",
+   "lesson_id": "c3f54ceb-c806-4513-ae3c-7dab1ce49596",
+   "block_id": "e9954b68-e291-4e2c-9bf7-316cee6a1e34",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Ki volt Kliment J. Vorosilov?”",
+   "explanation": "A leckeszöveg nem említi Vorosilovot, a magyarázat üres. Valós lényeg: 1945–47-ben a magyarországi Szövetséges Ellenőrző Bizottság szovjet elnöke volt, 1953–60 között a Szovjetunió névleges államfője.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kliment_Voroshilov",
+     "title": "Kliment Voroshilov",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Allied_Control_Commission",
+     "title": "Allied Control Commission",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az Egyesült Államok elnöke",
+      "B) Szovjet politikus és katonai vezető",
+      "C) Az ENSZ főtitkára",
+      "D) Német politikai vezető"
+     ],
+     "question": "Ki volt Kliment J. Vorosilov?",
+     "explanation": "Kliment J. Vorosilov szovjet politikus és katonai vezető volt, aki a második világháború után fontos szerepet játszott a Szovjetunió politikai életében.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az Egyesült Államok elnöke",
+      "B) Szovjet politikus és katonai vezető",
+      "C) Az ENSZ főtitkára",
+      "D) Német politikai vezető"
+     ],
+     "question": "Ki volt Kliment J. Vorosilov?",
+     "explanation": "Kliment Vorosilov szovjet marsall és politikus volt: 1945–47-ben a magyarországi Szövetséges Ellenőrző Bizottság elnökeként a szovjet befolyás fő képviselője, 1953–60 között a Szovjetunió névleges államfője. (Nem szerepel a leckében.)",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-025",
+   "lesson_id": "72358eda-2cac-47f7-a2c8-d3e28b0612ac",
+   "block_id": "03e65c5e-1744-43c7-adf2-1ac5d0d0fb51",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A hidegháború 1947-ben kezdődött”",
+   "explanation": "A kezdet datálása vitatott: 1945–46 (fultoni beszéd) vagy 1947 (Truman-doktrína). A magyarázat ezt egyértelműnek mutatja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cold_War",
+     "title": "Cold War",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1947",
+      "B) 1955",
+      "C) 1961",
+      "D) 1989"
+     ],
+     "question": "Mikor kezdődött a hidegháború?",
+     "explanation": "A hidegháború 1947-ben kezdődött, amikor a világ két szuperhatalma, az Egyesült Államok és a Szovjetunió közötti feszültség egyre nőtt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1947",
+      "B) 1955",
+      "C) 1961",
+      "D) 1989"
+     ],
+     "question": "Mikor kezdődött a hidegháború?",
+     "explanation": "A hidegháború kezdetét általában 1947-re (Truman-doktrína, Marshall-terv) teszik, de egyes megközelítések már 1945–46-ra datálják.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-026",
+   "lesson_id": "1a80f246-2b90-41e0-9fb6-9613b563a06d",
+   "block_id": "ec732bf6-8f25-4f3a-9dd9-884717dc6de3",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik terület tartozik a Közel-Kelethez?” (kulcs: Izrael)",
+   "explanation": "Egyiptom is a Közel-Kelethez tartozik: két helyes válasz.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Szerkesztői észrevétel: a D opció cserélendő.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) India",
+      "B) Kína",
+      "C) Izrael",
+      "D) Egyiptom"
+     ],
+     "question": "Melyik terület tartozik a Közel-Kelethez?",
+     "explanation": "Izrael a Közel-Kelet része, ahol számos történelmi és politikai esemény zajlott az 1940-es években.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "India",
+      "Kína",
+      "Izrael",
+      "Japán"
+     ],
+     "question": "Melyik terület tartozik a Közel-Kelethez?",
+     "explanation": "Izrael a Közel-Kelet része, ahol számos történelmi és politikai esemény zajlott az 1940-es években.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-027",
+   "lesson_id": null,
+   "block_id": "26bc610d-461e-4fd2-9f73-b1075e4e57da",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik esemény jelzi a hidegháború kezdetét?” (kulcs: a párizsi béke 1947-ben)",
+   "explanation": "Nem a párizsi béke a szokásos jelzőesemény, hanem a Truman-doktrína (1947. március 12.). A magyarázat („a feszültségek növekedését jelezte”) üres.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Truman_Doctrine",
+     "title": "Truman Doctrine",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Cold_War",
+     "title": "Cold War",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A párizsi béke 1947-ben",
+      "B) Az ENSZ megalakulása 1945-ben",
+      "C) Az NSZK és az NDK létrejötte 1949-ben",
+      "D) A berlini fal felépítése 1961-ben"
+     ],
+     "question": "Melyik esemény jelzi a hidegháború kezdetét?",
+     "explanation": "A párizsi béke 1947-ben a két világrendszer közötti feszültségek növekedését jelezte.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A Truman-doktrína meghirdetése 1947-ben",
+      "A Varsói Szerződés létrejötte 1955-ben",
+      "Az NSZK és az NDK létrejötte 1949-ben",
+      "A berlini fal felépítése 1961-ben"
+     ],
+     "question": "Melyik esemény tekinthető a hidegháború kezdetének?",
+     "explanation": "A Truman-doktrína (1947. március 12.) az Egyesült Államok nyílt bejelentése volt, hogy támogatja a kommunizmus terjedése ellen fenyegetett országokat (Görögország, Törökország). Ezt tekintik a hidegháború kezdetének.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-08-028",
+   "lesson_id": null,
+   "block_id": "26bc610d-461e-4fd2-9f73-b1075e4e57da",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik ország vált függetlenné 1947-ben, Mahátma Gandhi vezetésével?” (B India / C Pakisztán)",
+   "explanation": "Pakisztán is 1947-ben (augusztus 14.) vált függetlenné: két helyes válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Partition_of_India",
+     "title": "Partition of India",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Kína",
+      "B) India",
+      "C) Pakisztán",
+      "D) Izrael"
+     ],
+     "question": "Melyik ország vált függetlenné 1947-ben, Mahátma Gandhi vezetésével?",
+     "explanation": "India 1947-ben vált függetlenné, Mahátma Gandhi vezetésével, aki a békés ellenállás híve volt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "Kína",
+      "India",
+      "Indonézia",
+      "Izrael"
+     ],
+     "question": "Melyik ország vált függetlenné 1947-ben, Mahátma Gandhi vezetésével?",
+     "explanation": "India 1947-ben vált függetlenné, Mahátma Gandhi vezetésével, aki a békés ellenállás híve volt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}
