@@ -35,7 +35,7 @@ SNAP = os.path.join(HERE, "../snapshot")
 KEYS = ("heading", "body", "think", "think_answer")          # did_you_know may be empty
 _AZ_CONS = re.compile(r"(?<![^\W\d_])[Aa]z (?=[bcdfghjklmnprstvzBCDFGHJKLMNPRSTVZ])")
 _A_CONS = re.compile(r"(?<![^\W\d_])[Aa] (?=[bcdfghjklmnprstvzBCDFGHJKLMNPRSTVZ])")
-_A_VOWEL = re.compile(r"(?<![^\W\d_])[Aa] (?=[aáeéiíoóöőuúüűAÁEÉIÍOÓÖŐUÚÜŰ])")
+_A_VOWEL = re.compile(r"(?<![^\W\d_])(?<![-–])[Aa] (?=[aáeéiíoóöőuúüűAÁEÉIÍOÓÖŐUÚÜŰ])")
 _DOT_DECIMAL = re.compile(r"\d\.\d+ ?(?:m|km|kg|s|N|J|W|V|A|Ω|°C|%|m/s)")
 
 

@@ -1,0 +1,265 @@
+{
+ "nat_id": "PHYS-78-02",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "31fc303f-fff7-45fc-babd-a20d57b92b4b",
+   "title_hu": "Energiafogyasztás és teljesítmény a háztartásban",
+   "text_block_id": "59640b68-8d5d-4a6d-9f71-ba647d6b5392",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Watt: energia másodpercenként",
+     "body": "A teljesítmény azt mutatja meg, milyen gyorsan használ fel energiát egy eszköz: 1 W azt jelenti, hogy másodpercenként 1 joule energia alakul át. Egy 2 000 W-os vízforraló tehát másodpercenként 2 000 J-t ad a víznek. 1 liter víz 20 °C-ról 100 °C-ra melegítéséhez kb. 336 000 J kell, így ez a forraló kb. 168 másodperc, vagyis nem egészen 3 perc alatt forralja fel. A számla viszont nem a wattot, hanem az elhasznált energiát, a kilowattórát méri.",
+     "did_you_know": "Egy nyugalomban lévő ember kb. 100 W teljesítménnyel alakítja hővé a táplálék energiáját, nagyjából annyival, mint egy régi izzó.",
+     "think": "Mi a különbség egy 2 000 W-os és egy 1 000 W-os vízforraló között, ha ugyanannyi vizet forralnak fel?",
+     "think_answer": "Az erősebb nagyjából feleannyi idő alatt végez. Az elhasznált energia viszont mindkettőnél közel ugyanannyi, hiszen ugyanannyi vizet kell felmelegíteni."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Mennyi az az 1 kWh?",
+     "body": "Egy kilowattóra az az energia, amelyet egy 1 000 W-os készülék egy óra alatt használ fel: 1 000 W · 3 600 s = 3 600 000 J. Ez sokkal több, mint gondolnánk: ennyivel egy 10 W-os LED-lámpa 100 órán át világít. A készenléti állapotban maradó eszközök is folyamatosan fogyasztanak. Egy 5 W-ot fogyasztó, készenlétben hagyott tévé egy év alatt 5 W · 8 760 h ≈ 44 kWh energiát használ el, anélkül, hogy bárki nézné.",
+     "did_you_know": "A hűtőszekrény kompresszora nem jár folyamatosan: bekapcsol, lehűt, majd leáll, ezért naponta jóval kevesebbet fogyaszt, mint amennyit a teljesítménye alapján gondolnánk.",
+     "think": "Hány órán át világíthat egy 10 W-os LED-lámpa 1 kWh energiával?",
+     "think_answer": "1 kWh = 1 000 Wh, és 1 000 Wh : 10 W = 100 óra. Vagyis egy kilowattórával kb. négy napon át éjjel-nappal világíthatna."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A mosógép igazi fogyasztója",
+     "body": "A mosógép energiájának nagy részét nem a dob forgatása, hanem a víz felmelegítése viszi el. 10 liter víz 15 °C-ról 60 °C-ra melegítése kb. 1 900 000 J, vagyis kb. 0,5 kWh energiát igényel. Ha ugyanezt a vizet csak 30 °C-ra melegítjük, kb. 630 000 J, azaz kb. 0,18 kWh is elég. Ezért a mai mosószerekkel, alacsony hőmérsékleten mosva sok energiát lehet megtakarítani.",
+     "did_you_know": "Egy háztartásban az energia nagy részét általában a fűtés és a melegvíz-készítés viszi el, nem az elektromos kisgépek.",
+     "think": "Miért fogyaszt sokkal több energiát a mosógép 60 °C-on, mint 30 °C-on?",
+     "think_answer": "Mert a vizet sokkal jobban kell felmelegíteni: 15 °C-ról 60 °C-ra háromszor akkora a hőmérséklet-emelkedés, mint 15 °C-ról 30 °C-ra, így kb. háromszor annyi energia kell hozzá."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyi energia van egy köbméter gázban?",
+     "body": "Az energiahordozók abban különböznek, mennyi energiát tárolnak egységnyi tömegben vagy térfogatban. 1 m³ földgáz elégetésekor kb. 34 millió J, vagyis kb. 9,5 kWh hő szabadul fel. 1 kg száraz tűzifa kb. 4 kWh, 1 kg szén ennél többet ad. Ezért a szénnel és a gázzal ugyanannyi hőhöz sokkal kevesebb anyagot kell szállítani és tárolni, mint fával.",
+     "did_you_know": "A fa, a szén és a kőolaj energiája végső soron a Napból származik: a növények a napfény energiáját kötötték meg fotoszintézissel.",
+     "think": "Miért mondhatjuk, hogy a szénben „ősi napfény” rejlik?",
+     "think_answer": "A szén évmilliókkal ezelőtt élt növények maradványaiból keletkezett. Ezek a növények a napfény energiáját kötötték meg, és elégetéskor ez az energia szabadul fel."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Izzó, ami főleg fűt",
+     "body": "A hagyományos izzóban egy vékony fémszál kb. 2 500 °C-ra izzik fel, és a felvett energiának csak kis része, kb. 5%-a lesz látható fény, a többi hő. A LED-izzó ugyanannyi fényhez sokkal kevesebb energiát használ. Ha egy 60 W-os izzót 9 W-os LED-re cserélünk, és napi 3 órát világítunk, egy év alatt (60 − 9) W · 1 095 h ≈ 56 kWh energiát takarítunk meg. Egy lakásban, ahol tíz lámpa ég, ez már jelentős összeg.",
+     "did_you_know": "A hagyományos izzón meg lehet égetni az ujjunkat, egy LED-izzó felülete viszont legfeljebb langyos.",
+     "think": "Miért melegíti a hagyományos izzó a szobát, a LED pedig alig?",
+     "think_answer": "A hagyományos izzó a felvett energia nagy részét hővé alakítja, a LED viszont nagyobb részét fénnyé, ezért sokkal kevesebb hőt ad le."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Egy zuhany = 80 telefontöltés",
+     "body": "Egy okostelefon akkumulátorába egy teljes töltéskor kb. 15 Wh, vagyis 0,015 kWh energia kerül. Egy ötperces forró zuhanyhoz kb. 40 liter vizet kell 15 °C-ról 40 °C-ra melegíteni, ez kb. 4 200 000 J, vagyis kb. 1,2 kWh. Egyetlen zuhany energiájával tehát kb. 80-szor tölthetnéd fel a telefonodat. A napi energiafogyasztásban a meleg víz és a fűtés a nagy tételek, a kis kütyük csak kicsik.",
+     "did_you_know": "A telefon egész évi napi töltése nagyjából annyi energiát igényel, mint 4-5 forró zuhany.",
+     "think": "Mi fogyaszt több energiát: egy év telefontöltés, vagy egy hét forró zuhanyzás?",
+     "think_answer": "Egy év napi töltése kb. 365 · 0,015 ≈ 5,5 kWh, egy hét zuhanyzás kb. 7 · 1,2 ≈ 8,4 kWh. A zuhanyzás tehát egyetlen hét alatt többet fogyaszt."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Egy kosárba minden tojást?",
+     "body": "Magyarország a felhasznált földgáz nagy részét külföldről vásárolja, ezért fontos, hogy több irányból, több vezetéken keresztül is kaphasson gázt. A gázt nyáron földalatti tárolókba töltik, hogy télen, amikor sokat fűtünk, legyen tartalék. Az áramtermelésben a paksi atomerőmű adja a hazai termelés jelentős részét, kb. a felét. Az energiabiztonság tehát nemcsak azt jelenti, hogy legyen energia, hanem azt is, hogy egyetlen forrás kiesése se okozzon bajt.",
+     "did_you_know": "A földgázt a föld alatt, kimerült gázmezők üregeiben tárolják, ahonnan télen újra ki lehet szivattyúzni.",
+     "think": "Miért kockázatos, ha egy ország minden energiáját egyetlen forrásból szerzi?",
+     "think_answer": "Ha az az egy forrás kiesik, például egy vezeték meghibásodik vagy az eladó nem szállít, az ország energia nélkül maradhat. Több forrás esetén a többi pótolhatja a kiesőt."
+    }
+   ]
+  },
+  {
+   "lesson_id": "04450472-14ac-4bb3-a848-cf772fea42b9",
+   "title_hu": "Energiahordozók és energiaátalakulások",
+   "text_block_id": "4bd4b273-52ad-445a-8702-98019e68b94e",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Évmilliók vs. évtizedek",
+     "body": "A kőolaj nagyrészt tengeri apró élőlények, a szén pedig mocsári erdők maradványaiból keletkezett, évmilliók alatt, nagy nyomáson és hőmérsékleten. Ma is keletkezik, de olyan lassan, hogy emberi időléptékben gyakorlatilag nem pótlódik. Mi viszont néhány évtized alatt használjuk el azt, ami évmilliók alatt gyűlt össze. Elégetésükkor a bennük évmilliók óta tárolt szén szén-dioxidként kerül a levegőbe, ezért nő a légkör szén-dioxid-tartalma.",
+     "did_you_know": "A kőolaj nagy része apró tengeri élőlények, planktonok maradványaiból keletkezett.",
+     "think": "Miért nem tekintjük megújulónak a kőolajat, ha ma is keletkezik?",
+     "think_answer": "Mert évmilliók kellenek a keletkezéséhez, mi pedig évtizedek alatt használjuk el. Emberi időléptékben tehát nem pótlódik."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Hőszivattyú: több hő, mint áram?",
+     "body": "A fűtési költség nemcsak az energia árától függ, hanem attól is, mennyire hatékonyan lesz belőle hő. A hőszivattyú 1 kWh árammal akár 3-4 kWh hőt is juttathat a lakásba. Ez nem mond ellent az energia-megmaradásnak: a hőszivattyú nem termeli a hőt, hanem a hideg külső levegőből vagy a talajból „szivattyúzza” be. Ugyanígy működik a hűtőszekrény is, csak fordítva: a belsejéből hordja ki a hőt a konyhába.",
+     "did_you_know": "A hűtőszekrény hátoldala azért meleg, mert oda adja le azt a hőt, amelyet a belsejéből elvont.",
+     "think": "Hogyan adhat a hőszivattyú több hőt, mint amennyi áramot felvesz?",
+     "think_answer": "Az árammal nem hőt termel, hanem a külső hideg környezetből szállít be hőt a lakásba. A lakásba jutó hő így az áram energiájánál több lehet."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Kétszer jobban nyomva, négyszer több energia",
+     "body": "A rugó nem egyenletesen tárolja az energiát: minél jobban összenyomod, annál nehezebb tovább nyomni. Ezért a kétszer jobban összenyomott rugó nem kétszer, hanem kb. négyszer annyi energiát tárol. A trambulinon is ez történik: a lefelé érkező test mozgási energiája a rugókban és a vásznon tárolódik, majd visszaalakul mozgási energiává, és feldob. Az íj ugyanígy működik: a megfeszített íjban tárolt energia repíti a nyilat.",
+     "did_you_know": "A kétszer jobban összenyomott rugó kb. négyszer annyi energiát tárol, mint az eredeti.",
+     "think": "Miért ugrik egyre magasabbra az, aki ügyesen „rásegít” a trambulinon?",
+     "think_answer": "Minden érkezéskor a lábizmaival még jobban lenyomja a vásznat, így munkát végez és energiát ad hozzá. Ez a többletenergia magasabb ugrásként jelenik meg."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Miért nem pattan vissza a labda ugyanoda?",
+     "body": "Egy 1 kg-os test 1 m-rel feljebb emelve kb. 10 J helyzeti energiát kap. Leejtve ez mozgási energiává alakul, és ha a labda tökéletesen rugalmas lenne, pontosan ugyanolyan magasra pattanna vissza. Valójában minden pattanáskor az energia egy része a labda és a talaj felmelegedésére, valamint a koppanás hangjára fordítódik. Ezért pattan a labda egyre alacsonyabbra, míg végül megáll.",
+     "did_you_know": "Egy 1 kg-os könyv 1 m-rel feljebb emeléséhez kb. 10 J kell; ennyi energiát egy 10 W-os LED-izzó 1 másodperc alatt használ fel.",
+     "think": "Hová tűnik el a pattogó labda energiája, amikor végül megáll?",
+     "think_answer": "Nem tűnik el: hővé alakul a labdában, a talajban és a levegőben, egy része pedig hangként távozik."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Melegebb víz a vízesés alján",
+     "body": "James Prescott Joule a 19. században kísérlettel mutatta meg, hogy a mozgási energia hővé alakul: süllyedő súlyok lapátokat forgattak egy vízzel teli edényben, és a víz kissé felmelegedett. Ugyanez történik egy vízesésnél is: az aljára érve a víz mozgási energiája végül hővé alakul. Egy 50 m magas vízesés alján a víz elméletileg kb. 0,1 °C-kal melegebb lehet, mint a tetején. A dörzsölés, a fékezés és a vízesés mind ugyanazt mutatja: a mozgás energiája belső energiává válik.",
+     "did_you_know": "Az energia mértékegysége, a joule James Prescott Joule nevét viseli.",
+     "think": "Miért forrósodik fel a kerékpár fékje egy hosszú lejtőn?",
+     "think_answer": "A fékpofák súrlódása a kerékpár mozgási energiáját belső energiává alakítja, ezért a fék és a kerékperem felmelegszik."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Hová lesz az energia kétharmada?",
+     "body": "A szenet vagy gázt égető hőerőművek a tüzelőanyag energiájának csak kb. harmadát-kétötödét alakítják árammá, a többi hőként távozik, például a hűtőtornyokon keresztül. Ezért érdemes ezt a hőt távfűtésre használni, ahogy több magyar városban is teszik. A vízerőmű sokkal hatékonyabb: a víz energiájának akár 90%-a árammá alakulhat. Az energia tehát nem vész el, de nem mindegy, mennyi lesz belőle hasznos.",
+     "did_you_know": "A hűtőtornyokból felszálló „füst” valójában vízpára, amely a hűtővíz párolgásából származik.",
+     "think": "Ha az energia megmarad, miért mondjuk mégis, hogy „pazarolunk”?",
+     "think_answer": "Mert az energia olyan formába, főleg alacsony hőmérsékletű hővé alakul, amelyet már nem tudunk hasznosítani. Az energia megmarad, de a hasznos része csökken."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "A hálózat kényes egyensúlya",
+     "body": "Az elektromos hálózatban a termelésnek és a fogyasztásnak minden pillanatban egyensúlyban kell lennie, mert az áramot nagy mennyiségben nehéz tárolni. A nap- és szélerőművek termelése az időjárástól függ: éjjel a napelemek nem termelnek, szélcsendben a szélturbinák állnak. Ezért van szükség tárolókra, például nagy akkumulátorokra, és olyan erőművekre, amelyek gyorsan be- és kikapcsolhatók. Az energiabiztonság ma egyre inkább azt jelenti, hogy ezt az egyensúlyt mindig fenn tudjuk tartani.",
+     "did_you_know": "Ha a termelés és a fogyasztás egyensúlya felborul, megváltozik a hálózat 50 Hz-es frekvenciája; nagy eltérésnél a rendszer védelmi okból lekapcsol.",
+     "think": "Honnan kapunk áramot este, amikor a napelemek már nem termelnek?",
+     "think_answer": "Más erőművekből, például atom-, gáz- vagy vízerőművekből, illetve tárolókból, akkumulátorokból, amelyeket napközben töltöttek fel."
+    }
+   ]
+  },
+  {
+   "lesson_id": "1f967d39-f6e8-435e-817b-16fc3b07f2c2",
+   "title_hu": "Megújuló energiaforrások és energiatakarékosság",
+   "text_block_id": "cb7d6fa3-ff41-4f95-81f3-1b89c6bc2c7b",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Kétszer erősebb szél, nyolcszor több áram",
+     "body": "A szélturbina teljesítménye nagyon erősen függ a szél sebességétől: kétszer gyorsabb szélben nagyjából nyolcszor annyi energiát termel. Ez azért van, mert gyorsabb szélben nemcsak minden levegőrész visz több energiát, hanem több levegő is áramlik át a lapátokon ugyanannyi idő alatt. Ezért építik a turbinákat magas tornyokra, ahol a szél erősebb és egyenletesebb. Viharban viszont a turbinákat leállítják, hogy ne sérüljenek meg.",
+     "did_you_know": "A modern szélturbinák lapátjai több tíz méter hosszúak, a csúcsuk sebessége több száz km/h is lehet.",
+     "think": "Miért építik a szélturbinákat olyan magas tornyokra?",
+     "think_answer": "Magasabban a szél erősebb és egyenletesebb, mert a talaj közelében a fák, épületek és domborzat lefékezik. Erősebb szélben pedig sokkal több áramot termel a turbina."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Napelem télen",
+     "body": "Déli órákban, derült időben a napfény kb. 1 000 W teljesítményt juttat egy négyzetméterre. Egy mai napelem ennek kb. 20%-át alakítja árammá, tehát 1 m² kb. 200 W-ot termel. Télen mégis kevesebbet termel, de nem a hideg miatt: a nappalok rövidebbek, a Nap alacsonyabban jár, ezért a fénye ferdébben, gyengébben éri a paneleket. A napkollektor viszont nem áramot, hanem meleg vizet állít elő, és a napfény energiájának nagyobb részét tudja hőként hasznosítani.",
+     "did_you_know": "A napelemek hidegben valójában jobb hatásfokkal dolgoznak, mint nagy melegben.",
+     "think": "Miért termel kevesebb áramot egy napelem télen?",
+     "think_answer": "Mert rövidebbek a nappalok, és a Nap alacsonyabban jár, így kevesebb és ferdébben érkező fény jut a panelre. A hideg ebben nem hibás."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Egy fokkal kevesebb",
+     "body": "A lakás annál több hőt veszít, minél nagyobb a különbség a belső és a külső hőmérséklet között. Ha kint 0 °C van, a 21 °C-os lakás 21 fokos különbséget „véd”, a 20 °C-os csak 20 fokosat. Ezért már egyetlen fokkal alacsonyabb belső hőmérséklet is kb. 6%-kal csökkentheti a fűtési energiát. A termosztát éppen ezt teszi lehetővé: éjjel vagy amikor senki sincs otthon, alacsonyabb hőmérsékletet tart.",
+     "did_you_know": "Ha egy fokkal lejjebb vesszük a fűtést, a fűtési energia nagyjából 6%-a megtakarítható.",
+     "think": "Miért nem érdemes résnyire nyitott ablak mellett fűteni?",
+     "think_answer": "A meleg levegő folyamatosan kiáramlik, így a fűtés egy része egyenesen az utcát melegíti. Jobb rövid ideig, nagyra nyitva szellőztetni."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A levegő, mint szigetelő",
+     "body": "A legjobb hőszigetelők nagy része valójában levegőt zár be: a hungarocell (polisztirolhab) kb. 98%-a levegő. Az álló levegő rosszul vezeti a hőt, csak az a baj vele, hogy könnyen áramlik. Ha apró buborékokba zárjuk, nem tud áramlani, így kiváló szigetelő lesz. A dupla üvegezésű ablak is így működik: a két üveg közé zárt gázréteg lassítja a hő szökését.",
+     "did_you_know": "A termoszban a két fal között légritkított tér van, ezért ott a hő szinte egyáltalán nem tud átjutni vezetéssel.",
+     "think": "Miért tart melegebben két vékony pulóver, mint egy ugyanolyan vastag?",
+     "think_answer": "A két pulóver közé egy extra levegőréteg is bezáródik, amely jól szigetel, így kevesebb hőt veszítünk."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mennyire zöld az elektromos autó?",
+     "body": "Az elektromos motor a felvett energia kb. 90%-át alakítja mozgássá, a benzinmotor viszont csak kb. negyedét-harmadát, a többi hőként távozik. Az elektromos autó ezért ugyanakkora útra sokkal kevesebb energiát használ. Hogy mennyire környezetbarát, az mégis attól függ, honnan jön az áram: napelemről töltve tiszta, szénerőműből származó árammal kevésbé. A zöldenergia és az elektromos közlekedés együtt adja a legnagyobb előnyt.",
+     "did_you_know": "A benzinmotor a tüzelőanyag energiájának nagyobb részét hővé alakítja, ezért van szüksége hűtőre.",
+     "think": "Mitől függ, mennyire környezetbarát egy elektromos autó?",
+     "think_answer": "Leginkább attól, hogyan termelték azt az áramot, amellyel töltik. Megújuló forrásból töltve sokkal kevesebb szén-dioxid-kibocsátással jár."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "A víztakarékos zuhanyfej titka",
+     "body": "A víztakarékos zuhanyfej nemcsak vizet, hanem energiát is spórol, mert a zuhanyvizet fel kell melegíteni. Ha percenként 12 liter helyett csak 6 liter víz folyik, a melegítéshez is feleannyi energia kell. Egy ötperces zuhanynál ez kb. 30 liter víz és kb. 0,9 kWh energia megtakarítása. A legtöbb embernek fel sem tűnik a különbség, mert a zuhanyfej apró lyukai gyorsabb, erősebb sugarat adnak.",
+     "did_you_know": "A melegvíz-csap csöpögése nemcsak vizet, hanem a víz felmelegítésére fordított energiát is pazarolja.",
+     "think": "Miért takarít meg energiát, ha kevesebb meleg vizet használunk?",
+     "think_answer": "Minden liter meleg vizet fel kellett melegíteni, és ez sok energiát igényel. Kevesebb meleg víz kevesebb melegítést jelent."
+    }
+   ]
+  },
+  {
+   "lesson_id": "41bf09a9-8c8f-47f3-905a-23bcc1379bae",
+   "title_hu": "Táplálkozás és energiaegyensúly",
+   "text_block_id": "7fdc02be-a616-4825-bec5-ead2837d3d8a",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Egy pizzányi hegymászás",
+     "body": "1 kcal kb. 4,2 kJ, tehát egy 800 kcal-s pizza kb. 3 300 000 J energiát tartalmaz. Az izmaink a tápanyag energiájának csak kb. negyedét tudják mozgássá alakítani. Ha egy 50 kg-os diák ezt a negyedet mind hegymászásra fordítaná, kb. 1 700 méter magasra juthatna fel. Ez jól mutatja, mennyi energia van egy ételben, és azt is, hogy a legtöbbje hővé válik.",
+     "did_you_know": "Az izmaink a tápanyag energiájának nagy részét hővé alakítják, ezért melegszünk fel sportolás közben.",
+     "think": "Miért melegszünk fel sportolás közben?",
+     "think_answer": "Az izmaink a felhasznált energiának csak kis részét alakítják mozgássá, a többi hő lesz. Minél jobban dolgoznak, annál több hő keletkezik."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Élelmiszer-címkék energiája",
+     "body": "Az élelmiszerek csomagolásán az energiatartalmat 100 grammra adják meg kJ-ban és kcal-ban. Egy 100 g-os adag burgonyachips kb. 530 kcal-t tartalmaz, így egy 150 g-os zacskó kb. 800 kcal, egy fél napi energiaszükségletnek megfelelő mennyiség. Az élelmezés biztonsága nemcsak az energiáról szól: azt is jelenti, hogy mindenki elég és megfelelő minőségű ételhez juthasson. Érdemes tehát a címkét a kalórián túl is elolvasni.",
+     "did_you_know": "Az élelmiszerek energiatartalmát úgy mérik, hogy egy mintát zárt edényben, víz alatt elégetnek, és megmérik, mennyivel melegszik fel a víz.",
+     "think": "Miért érdemes a címkén azt is megnézni, hány grammos egy adag?",
+     "think_answer": "Az energiatartalmat 100 grammra adják meg, a csomag viszont lehet kisebb vagy nagyobb. A valódi bevitelhez át kell számolni a teljes mennyiségre."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Égetünk alvás közben is",
+     "body": "A szervezetünk akkor is energiát használ, amikor pihenünk: dobog a szív, lélegzünk, és a testhőmérséklet fenntartása is energiát igényel. Ez az alapanyagcsere a napi energiafelhasználás legnagyobb része. Az agyunk egymagában a nyugalmi energiafelhasználás kb. ötödét viszi el, pedig a testtömegünknek csak kis része. A mozgás ehhez adódik hozzá, ezért a rendszeres sport segít az egyensúly megtartásában.",
+     "did_you_know": "Az agy a test tömegének csak kb. 2%-a, mégis a nyugalmi energiafelhasználás kb. ötödét használja.",
+     "think": "Miért égetünk el energiát alvás közben is?",
+     "think_answer": "Mert a szervezetnek alvás közben is működnie kell: a szív, a légzés, az agy és a testhőmérséklet fenntartása folyamatosan energiát igényel."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Földgáz a kenyérben",
+     "body": "A növényeknek nitrogénre van szükségük, ezért a mezőgazdaság műtrágyát használ. A nitrogénműtrágya előállításához sok energia kell, amelyet főleg földgázból nyernek. Ezért egy szelet kenyérben közvetve fosszilis energia is van: a traktor üzemanyagában, a műtrágyában és a szállításban. A helyben termett, idényben vásárolt élelmiszer ezért általában kevesebb energiát igényel.",
+     "did_you_know": "A műtrágya nélkül a Föld mai népességét nem lehetne élelmezni.",
+     "think": "Miért kerül több energiába egy repülővel hozott gyümölcs, mint egy helyben termett?",
+     "think_answer": "A repülőgép egységnyi tömegű áru szállításához sokkal több üzemanyagot használ, mint a hajó vagy a teherautó, a helyi termék pedig alig utazik."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Egy csoki = fél óra biciklizés",
+     "body": "Egy 50 g-os csokoládé kb. 250-270 kcal energiát tartalmaz. Ez nagyjából annyi, amennyit 30-40 perc kerékpározás éget el. Ez nem azt jelenti, hogy tilos csokoládét enni, csak azt, hogy a bevitel és a felhasználás összevetése segít tudatosan dönteni. Egy 13 éves gyerek napi energiaszükséglete általában kb. 2 000–2 500 kcal, a mozgás mennyiségétől függően.",
+     "did_you_know": "A napi energiaszükséglet függ az életkortól, a testmérettől és attól, mennyit mozgunk.",
+     "think": "Ha megeszel egy 250 kcal-s csokit, és 30 percet biciklizel, ami kb. 200 kcal-t éget el, hogyan alakul az egyensúly?",
+     "think_answer": "Kb. 50 kcal marad „felesleg”, ami nagyon kevés. Egyetlen nap nem számít, a hosszú távú szokások határozzák meg az egyensúlyt."
+    }
+   ]
+  }
+ ]
+}
