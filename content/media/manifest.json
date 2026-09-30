@@ -113,6 +113,142 @@
    "author": "Turul Academy",
    "license": "own work",
    "changes": "make_physics_diagrams.py"
+  },
+  {
+   "path": "content-media/phys/utido/sebessegkijelzo-nagykovacsi.webp",
+   "used_in": "PHYS-78-03 · Út és idő kiszámítása · vizuális #6 (Sebesség mérése)",
+   "source": "https://commons.wikimedia.org/wiki/File:Speed_radar_with_solar_panel,_Nagykovácsi_Road,_2020_Nagykovácsi.jpg",
+   "author": "Globetrotter19",
+   "license": "CC BY-SA 3.0",
+   "changes": "resized 1000 px, WebP"
+  },
+  {
+   "path": "content-media/phys/erok/toll-es-kalapacs-hold.webp",
+   "used_in": "PHYS-78-03 · Erők és gyorsulás vizsgálata · vizuális #2 (Nehézségi erő)",
+   "source": "https://commons.wikimedia.org/wiki/File:Apollo_15_F%26H.jpg",
+   "author": "NASA",
+   "license": "Public domain",
+   "changes": "resized 1000 px, WebP"
+  },
+  {
+   "path": "content-media/phys/biztonsag/lidar.webp",
+   "used_in": "PHYS-78-03 · Közlekedési eszközök biztonsági rendszerei · vizuális #1 (Önvezérelt autó)",
+   "source": "https://commons.wikimedia.org/wiki/File:Velodyne_High-Def_LIDAR.jpg",
+   "author": "Steve Jurvetson",
+   "license": "CC BY 2.0",
+   "changes": "resized 1000 px, WebP"
+  },
+  {
+   "path": "content-media/phys/biztonsag/legzsak-toresteszt.webp",
+   "used_in": "PHYS-78-03 · Közlekedési eszközök biztonsági rendszerei · vizuális #2 (Légzsák)",
+   "source": "https://commons.wikimedia.org/wiki/File:Crash-test-with-airbag-and-safty-belt.jpg",
+   "author": "Transport for NSW",
+   "license": "CC BY-SA 4.0",
+   "changes": "resized 1000 px, WebP"
+  },
+  {
+   "path": "content-media/phys/biztonsag/biztonsagi-ov.webp",
+   "used_in": "PHYS-78-03 · Közlekedési eszközök biztonsági rendszerei · vizuális #3 (Biztonsági öv)",
+   "source": "https://commons.wikimedia.org/wiki/File:Crash_test_dummy_with_three-point_seat_belt_(cropped).jpg",
+   "author": "ITU Pictures",
+   "license": "CC BY 2.0",
+   "changes": "cropped file version, resized 1000 px, WebP"
+  },
+  {
+   "path": "content-media/phys/utido/sebessegmero-bmw-r26.webp",
+   "used_in": "PHYS-78-03 · Út és idő kiszámítása · vizuális #2 (Sebesség)",
+   "source": "https://commons.wikimedia.org/wiki/File:BMW_R26_1960_Tacho.jpg",
+   "author": "Palauenc05",
+   "license": "CC BY-SA 4.0",
+   "changes": "resized 960 px, WebP"
+  },
+  {
+   "path": "content-media/phys/utido/utjelzo-tabla.webp",
+   "used_in": "PHYS-78-03 · Út és idő kiszámítása · vizuális #4 (Utazásból hátralévő idő)",
+   "source": "https://commons.wikimedia.org/wiki/File:Distance_road_sign,_Lyell_Highway,_Granton,_Tasmania.jpg",
+   "author": "Chuq",
+   "license": "CC BY-SA 4.0",
+   "changes": "resized 960 px, WebP"
+  },
+  {
+   "path": "content-media/phys/erok/fekezesi-nyomok.webp",
+   "used_in": "PHYS-78-03 · Erők és gyorsulás vizsgálata · vizuális #5 (Sebességváltozás fékezés során)",
+   "source": "https://commons.wikimedia.org/wiki/File:Bremsspur.jpg",
+   "author": "Robert",
+   "license": "CC BY-SA 3.0",
+   "changes": "resized 960 px, WebP"
+  },
+  {
+   "path": "content-media/phys/erok/stopper.webp",
+   "used_in": "PHYS-78-03 · Erők és gyorsulás vizsgálata · vizuális #6 (Sebesség mérésének eljárása)",
+   "source": "https://commons.wikimedia.org/wiki/File:Ca_1970_mechanical_stopwatch_by_Herwins_Switzerland.jpg",
+   "author": "R. Henrik Nilsson",
+   "license": "CC BY 4.0",
+   "changes": "resized 1000 px, WebP"
+  },
+  {
+   "path": "content-media/phys/biztonsag/utkozes-fanak.webp",
+   "used_in": "PHYS-78-03 · Közlekedési eszközök biztonsági rendszerei · vizuális #4 — 2026-09-30-tól NEM használt (törésteszt-fotóra cserélve); a fájl a Storage-ban maradt, hogy a szerkesztés visszavonható legyen",
+   "source": "https://commons.wikimedia.org/wiki/File:Car_accident_memorial_-_Unfall_Denk_mal_-_Frankfurt_-_Germany_-_01.jpg",
+   "author": "Norbert Nagel",
+   "license": "CC BY-SA 3.0",
+   "changes": "resized 1000 px, WebP"
+  },
+  {
+   "path": "content-media/phys/biztonsag/utkozes-toresteszt.webp",
+   "used_in": "PHYS-78-03 · Közlekedési eszközök biztonsági rendszerei · vizuális #4 (Kölcsönhatás a járművek között)",
+   "source": "https://commons.wikimedia.org/wiki/File:Corvette_Crash_Tester_(3695903512).jpg",
+   "author": "JaseMan",
+   "license": "CC BY 2.0",
+   "changes": "resized 960 px, WebP"
+  },
+  {
+   "path": "content-media/phys/utido/atlagsebesseg-ket-szakasz.svg",
+   "used_in": "PHYS-78-03 · Út és idő kiszámítása · vizuális #3 (Átlagsebesség)",
+   "source": null,
+   "author": "Turul Academy",
+   "license": "own work",
+   "changes": "make_physics_diagrams_2.py"
+  },
+  {
+   "path": "content-media/phys/utido/utvonaltervezo-kepernyo.svg",
+   "used_in": "PHYS-78-03 · Út és idő kiszámítása · vizuális #5 (Közlekedéstervezés) — szemléltető rajz, nem valódi alkalmazás",
+   "source": null,
+   "author": "Turul Academy",
+   "license": "own work",
+   "changes": "make_physics_diagrams_2.py"
+  },
+  {
+   "path": "content-media/phys/utido/sebesseg-ido-terulet.svg",
+   "used_in": "PHYS-78-03 · Út és idő kiszámítása · vizuális #7 (Sebesség és út kapcsolata)",
+   "source": null,
+   "author": "Turul Academy",
+   "license": "own work",
+   "changes": "make_physics_diagrams_2.py"
+  },
+  {
+   "path": "content-media/phys/utido/ido-es-tavolsag.svg",
+   "used_in": "PHYS-78-03 · Út és idő kiszámítása · vizuális #8 (Idő és távolság)",
+   "source": null,
+   "author": "Turul Academy",
+   "license": "own work",
+   "changes": "make_physics_diagrams_2.py"
+  },
+  {
+   "path": "content-media/phys/erok/newton-2-torveny.svg",
+   "used_in": "PHYS-78-03 · Erők és gyorsulás vizsgálata · vizuális #3 (Newton 2. törvénye)",
+   "source": null,
+   "author": "Turul Academy",
+   "license": "own work",
+   "changes": "make_physics_diagrams_2.py"
+  },
+  {
+   "path": "content-media/phys/biztonsag/mozgaselemzo-kepernyo.svg",
+   "used_in": "PHYS-78-03 · Közlekedési eszközök biztonsági rendszerei · vizuális #5 (Mozgás elemzése applikációval) — szemléltető rajz, nem valódi alkalmazás",
+   "source": null,
+   "author": "Turul Academy",
+   "license": "own work",
+   "changes": "make_physics_diagrams_2.py"
   }
  ]
 }
