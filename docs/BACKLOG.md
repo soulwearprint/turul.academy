@@ -26,7 +26,7 @@ idea when a session gets archived." Added 2026-07-07._
   trivia). Automated checks still missed 2 subtle slips → **human review before rolling out
   to more topics.** To pull it: `UPDATE content_blocks SET is_active=false WHERE mode='deep'`.
 
-- **Visual-tab images (variant C) — PHYS-78-03 diagrams APPLIED 2026-09-29 (PR #2); 10 photos APPLIED 2026-09-30; remaining lesson 2–4 cards still text-only.**
+- **Visual-tab images (variant C) — PHYS-78-03 diagrams APPLIED 2026-09-29 (PR #2); 10 photos + 6 more own drawings APPLIED 2026-09-30; three lesson 2–3 cards keep their simple native sketches.**
   Tier order: image/timeline (`card.image`, `card.timeline`) → in-house SVG (`card.diagram`, SketchDiagram
   shapes) → text placeholder. Images are self-hosted (never hotlinked), see the `content-media`
   Storage bucket / `content/media/staging/`.
@@ -42,16 +42,18 @@ idea when a session gets archived." Added 2026-07-07._
     candidates only, `--download` for human-approved ones) now honours `Retry-After` on HTTP 429 (5 tries, max 120 s wait);
     offline-tested only.
 
-  *Photos applied 2026-09-30, two batches* (`content/media/lesson_images_2026_09b.py --batch 1|2`, cards written through `edit_content_card`,
+  *Photos applied 2026-09-30, three batches* (`content/media/lesson_images_2026_09b.py --batch 1|2|3`, cards written through `edit_content_card`,
   so undoable from the review queue; files uploaded to `content-media`, sources/licences in `manifest.json`):
   Sebesség mérése (lesson 2; Hungarian radar speed display, CC BY-SA 3.0), Nehézségi erő (lesson 3; NASA feather+hammer
   on the Moon, PD), Önvezérelt autó / Légzsák / Biztonsági öv (lesson 4; lidar CC BY 2.0, crash test CC BY-SA 4.0,
-  belted dummy CC BY 2.0). Batch 2 added: motorcycle speedometer (Sebesség, CC BY-SA 4.0), Tasmanian distance sign (Utazásból hátralévő idő, CC BY-SA 4.0), skid marks (Fékezés, CC BY-SA 3.0), stopwatch (Sebesség mérésének eljárása, CC BY 4.0) and a Frankfurt road-safety installation of a car that hit a tree at 120 km/h (Kölcsönhatás; a wrecked car, no people, but check it is suitable for grades 5–8). The card texts next to them are new Hungarian text written by the assistant — **not yet read by a teacher**.
+  belted dummy CC BY 2.0). Batch 2 added: motorcycle speedometer (Sebesség, CC BY-SA 4.0), Tasmanian distance sign (Utazásból hátralévő idő, CC BY-SA 4.0), skid marks (Fékezés, CC BY-SA 3.0), stopwatch (Sebesség mérésének eljárása, CC BY 4.0) and a Frankfurt road-safety installation of a car that hit a tree at 120 km/h (Kölcsönhatás).
+  Batch 3 (same day, on the owner's request): the tree-crash photo was **replaced by a crash-test photo** (a Corvette that went through a 35 mph ≈ 56 km/h head-on test, shown at an exhibition; JaseMan, CC BY 2.0; the old file `utkozes-fanak.webp` stays in Storage so the edit can be undone from the review queue) and the six remaining graph/screen cards got **own drawings** from `content/media/make_physics_diagrams_2.py`: Átlagsebesség (two-leg trip, 100 km : 2 h = 50 km/h), Sebesség és út kapcsolata (v–t graph, area = 200 m), Idő és távolság (120 km at four speeds), Newton 2. törvénye (same 2 N on 1 kg and 2 kg), and two phone-screen mock-ups, Közlekedéstervezés (route planner) and Mozgás elemzése applikációval (motion-analysis app). **The two phone screens are illustrative drawings, not screenshots of a real app**; they say so on the drawing and in the card text/caption, and their `visual_type` was changed from képernyőfotó/screenshot to „szemléltető rajz”. The card texts next to all of them are new Hungarian text written by the assistant — **not yet read by a teacher** (the owner said the teachers will review them later).
 
   *Not done:*
-  - Lesson 2–4 cards still without a photo: Megtett út, Átlagsebesség, Közlekedéstervezés, Sebesség és út kapcsolata, Idő és
-    távolság (lesson 2, mostly graphs/screenshots), Az elejtett test mozgása, Newton 2. törvénye, Külső hatások (lesson 3), Mozgás
-    elemzése applikációval (lesson 4). Lesson 1 already has its images.
+  - Three lesson 2–3 cards still show only the simple native sketch (`card.diagram`, drawn by SketchDiagram), no photo or
+    finished drawing: Megtett út (lesson 2), Az elejtett test mozgása and Külső hatások az autó mozgásában (lesson 3). Their
+    stored description text describes a richer picture than the sketch shows, so a teacher should either accept the sketch or
+    ask for a redraw. Every other visual card of the four lessons now has an image; lesson 1 already had its images.
   - Sourcing from the cloud sandbox works only with **curl** at about one request per 40 s: Wikimedia returns 429 (Retry-After)
     when the shared cloud IP is busy, and 403 to Python `httpx` requests even when curl succeeds from the same IP. So
     `source_media.py` (httpx) fails in the cloud; from a normal machine it should work. Do not try to get around the rate limit.
@@ -66,7 +68,7 @@ idea when a session gets archived." Added 2026-07-07._
     running app; the apply happened before the merge.
   - CC BY / CC BY-SA photos need a visible credit (author, licence, source) in the UI and stored in `media_refs`;
     `CardImage` prints `credit` + a source link under every image (read in code, not seen in the running app). Share-alike may bind cropped/edited derivatives.
-  - The owner's own first-task image (on their Mac) is still unidentified; nothing in the repo says which image that is. Send the file, author, licence and source URL, or say which card it belongs to.
+  - The owner's own first-task image (on their Mac) was dropped on request (2026-09-30): "forget the first image".
   - Not built: History timelines/maps generator, quarterly link/licence re-check job, curator UI.
 
 - **Emelt-szint (advanced depth layer).** Schema-ready: `content_blocks.level` already supports

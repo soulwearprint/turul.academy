@@ -2,15 +2,16 @@
 checked on each file page; see manifest.json). Follows lesson_images_2026_09.py: each card is written
 through the edit_content_card RPC, so every change is in content_edits and can be undone from the review queue.
 
-  python3 ../media/lesson_images_2026_09b.py --batch 2 --dry-run   # from backend/ (reads .env or the environment)
-  python3 ../media/lesson_images_2026_09b.py --batch 2             # uploads staged files, then edits the cards
-Batch 1 (5 photos) and batch 2 (5 photos) are both applied; do not re-run them.
+  python3 ../media/lesson_images_2026_09b.py --batch 3 --dry-run   # from backend/ (reads .env or the environment)
+  python3 ../media/lesson_images_2026_09b.py --batch 3             # uploads staged files, then edits the cards
+Batches 1 (5 photos), 2 (5 photos) and 3 (crash-test photo swap + 6 own drawings) are all applied; do not re-run them.
 
-Staged files: content/media/staging/PHYS-78-03/<name>.webp (resized copies, git-ignored). Upload target is
-the public Storage bucket `content-media`; cards store the path, never a hotlink.
+Staged files: content/media/staging/PHYS-78-03/<name>.webp|.svg (git-ignored; the photos are resized copies
+of Commons thumbnails, the SVGs come from make_physics_diagrams_2.py). Upload target is the public Storage
+bucket `content-media`; cards store the path, never a hotlink.
 The Hungarian card texts are new — a teacher should read them (Content_Sourcing_Policy §6).
 """
-import json, os, sys, urllib.request
+import json, os, re, sys, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 STAGING = os.path.join(HERE, 'staging', 'PHYS-78-03')
@@ -89,7 +90,49 @@ BATCH2 = {  # applied 2026-09-30 (second round)
                'credit': 'Norbert Nagel · CC BY-SA 3.0', 'source': C + 'Car_accident_memorial_-_Unfall_Denk_mal_-_Frankfurt_-_Germany_-_01.jpg'})),
   },
 }
-BATCHES = {'1': BATCH1, '2': BATCH2}
+
+OWN = 'Ábra: Turul'
+BATCH3 = {  # applied 2026-09-30 (third round): crash-test photo replaces the tree-crash photo; 6 own drawings fill the text-only cards
+  'f3e4a797-c1af-4d18-acb7-a0715f0b40fc': {  # Út és idő kiszámítása
+    2: ('Átlagsebesség', 'atlagsebesseg-ket-szakasz.svg', U + 'atlagsebesseg-ket-szakasz.svg', dict(
+        description='Az átlagsebesség az összes megtett út és az összes eltelt idő hányadosa. Példa: egy autó az első szakaszon 40 km-t tesz meg fél óra alatt (80 km/h), a másodikon 60 km-t másfél óra alatt (40 km/h). Az egész úton 100 km-t haladt 2 óra alatt, ezért az átlagsebessége 100 km : 2 h = 50 km/h. Ez nem a két sebesség számtani közepe (az 60 km/h lenne), mert az autó a lassabb szakaszon több időt töltött.',
+        caption='Átlagsebesség: v = s : t, ahol s az összes megtett út, t az összes eltelt idő.',
+        image={'src': U + 'atlagsebesseg-ket-szakasz.svg', 'alt': 'Kétszakaszos út: 40 km 0,5 óra alatt (80 km/h) és 60 km 1,5 óra alatt (40 km/h); összesen 100 km 2 óra alatt, az átlagsebesség 50 km/h', 'credit': OWN})),
+    4: ('Közlekedéstervezés', 'utvonaltervezo-kepernyo.svg', U + 'utvonaltervezo-kepernyo.svg', dict(
+        description='Az útvonaltervező alkalmazások a távolságból és a várható átlagsebességből számolják ki az utazási időt: t = s : v. A rajzon az A és a B pont között 96 km az út, a várható átlagsebesség 80 km/h, így t = 96 km : 80 km/h = 1,2 óra, vagyis 1 óra 12 perc (0,2 óra = 0,2 · 60 perc = 12 perc). Forgalmas úton az átlagsebesség kisebb, ezért az érkezési idő is változhat. A kép szemléltető rajz, nem egy valódi alkalmazás képernyőképe.',
+        caption='Szemléltető rajz egy útvonaltervezőről (nem valódi alkalmazás)',
+        visual_type='szemléltető rajz',
+        image={'src': U + 'utvonaltervezo-kepernyo.svg', 'alt': 'Telefonképernyő térképpel: az A pontból a B pontba vezető kék útvonal, alatta 1 óra 12 perc, 96 km, átlagsebesség 80 km/h', 'credit': OWN})),
+    6: ('Sebesség és út kapcsolata', 'sebesseg-ido-terulet.svg', U + 'sebesseg-ido-terulet.svg', dict(
+        description='A sebesség–idő grafikon vízszintes tengelyén az idő, függőleges tengelyén a sebesség látható. Állandó sebességnél — itt 20 m/s — a grafikon vízszintes egyenes. A vonal alatti téglalap területe a megtett út: s = v · t = 20 m/s · 10 s = 200 m. Ha a sebesség változik, akkor is a grafikon alatti terület adja a megtett utat.',
+        caption='A sebesség–idő grafikon alatti terület a megtett út.',
+        image={'src': U + 'sebesseg-ido-terulet.svg', 'alt': 'Sebesség–idő grafikon: vízszintes vonal 20 m/s-nál 0-tól 10 s-ig, alatta kék téglalap; a területe 200 m', 'credit': OWN})),
+    7: ('Idő és távolság', 'ido-es-tavolsag.svg', U + 'ido-es-tavolsag.svg', dict(
+        description='Ugyanazt a távolságot nagyobb sebességgel kevesebb idő alatt tesszük meg: t = s : v. A 120 km-es út 30 km/h-val 4 órát, 60 km/h-val 2 órát, 90 km/h-val 1 óra 20 percet, 120 km/h-val pedig 1 órát vesz igénybe. Kétszer akkora sebességnél feleannyi idő kell hozzá.',
+        caption='Ugyanaz a 120 km: minél nagyobb a sebesség, annál kevesebb idő kell hozzá.',
+        image={'src': U + 'ido-es-tavolsag.svg', 'alt': 'Vízszintes oszlopdiagram: 120 km megtételéhez 30 km/h-val 4 óra, 60 km/h-val 2 óra, 90 km/h-val 1 óra 20 perc, 120 km/h-val 1 óra kell', 'credit': OWN})),
+  },
+  '9fd5a9a0-12e1-45dc-b8ec-a5cdd3078a86': {  # Erők és gyorsulás vizsgálata
+    2: ('Newton 2. törvénye', 'newton-2-torveny.svg', E + 'newton-2-torveny.svg', dict(
+        description='Newton második törvénye: egy test gyorsulása egyenesen arányos a rá ható eredő erővel, és fordítottan arányos a tömegével: a = F : m, vagyis F = m · a. Az ábrán — a súrlódást elhanyagolva — mindkét kocsira ugyanakkora, 2 N erő hat. Az 1 kg-os kocsi gyorsulása 2 N : 1 kg = 2 m/s², a 2 kg-osé csak 2 N : 2 kg = 1 m/s². Kétszer akkora tömegű testet ugyanakkora erő feleakkora gyorsulással mozgat. (1 N = 1 kg · m/s².)',
+        caption='Newton 2. törvénye: az erő, a tömeg és a gyorsulás kapcsolata.',
+        image={'src': E + 'newton-2-torveny.svg', 'alt': 'Két kocsi: az 1 kg-os 2 N erő hatására 2 m/s²-tel, a 2 kg-os ugyanakkora erő hatására 1 m/s²-tel gyorsul', 'credit': OWN})),
+  },
+  '988c7f19-cdc8-4113-9e91-223ce3afbd86': {  # Közlekedési eszközök biztonsági rendszerei
+    3: ('Kölcsönhatás a járművek között', 'utkozes-toresteszt.webp', B + 'utkozes-toresteszt.webp', dict(
+        description='Két test kölcsönhatásakor mindkettőre erő hat: az egyik test ugyanakkora erővel hat a másikra, mint az az elsőre, csak ellenkező irányban (Newton III. törvénye). Ütközéskor az autó az akadályra hat, az akadály ugyanakkora erővel az autóra, ezért deformálódik az autó eleje. A képen egy törésteszten átesett autó látható: a fájl leírása szerint szemből ütköztették 35 mph-val, ami kb. 56 km/h. A törésteszteken azt vizsgálják, hogyan védi az utasokat a karosszéria, az öv és a légzsák. Minél nagyobb az ütközés előtti sebesség, annál nagyobb az autó mozgási energiája, és annál nagyobb a károsodás.',
+        caption='Törésteszten átesett Corvette egy kiállításon (szemből, 35 mph ≈ 56 km/h)',
+        image={'src': B + 'utkozes-toresteszt.webp', 'alt': 'Elöl összegyűrődött fehér sportautó egy kiállítási térben, a háttérben monitorokon a törésteszt felvételei',
+               'credit': 'JaseMan · CC BY 2.0', 'source': C + 'Corvette_Crash_Tester_(3695903512).jpg'})),
+    4: ('Mozgás elemzése applikációval', 'mozgaselemzo-kepernyo.svg', B + 'mozgaselemzo-kepernyo.svg', dict(
+        description='A mozgáselemző alkalmazások (például a futóappok és a sportórák) mérik az időt és a megtett utat, ebből kiszámolják az átlagsebességet, és gyakran sebesség–idő grafikont is rajzolnak. A rajzon egy kocogás adatai láthatók: 8 perc 20 s (= 500 s) alatt 1,25 km (= 1250 m) út, így az átlagsebesség 1250 m : 500 s = 2,5 m/s, ami 2,5 · 3,6 = 9 km/h. A grafikon a pillanatnyi sebesség ingadozását mutatja, a szaggatott vonal az átlagsebességet. A kép szemléltető rajz, nem egy valódi alkalmazás képernyőképe.',
+        caption='Szemléltető rajz egy mozgáselemző alkalmazásról (nem valódi alkalmazás)',
+        visual_type='szemléltető rajz',
+        image={'src': B + 'mozgaselemzo-kepernyo.svg', 'alt': 'Telefonképernyő: idő 8 perc 20 s, megtett út 1,25 km, átlagsebesség 9,0 km/h, alatta sebesség–idő grafikon szaggatott átlagvonallal', 'credit': OWN})),
+  },
+}
+
+BATCHES = {'1': BATCH1, '2': BATCH2, '3': BATCH3}
 
 
 def main(dry, batch):
@@ -112,17 +155,22 @@ def main(dry, batch):
             before = cards[i]
             assert before['heading'] == heading, f'{block[:8]} card {i}: expected {heading!r}, found {before["heading"]!r}'
             f = os.path.join(STAGING, fname)
-            w, hh = Image.open(f).size
+            if fname.endswith('.svg'):  # size from the viewBox; PIL cannot open SVG
+                w, hh = (int(float(v)) for v in re.search(r'viewBox="0 0 ([\d.]+) ([\d.]+)"', open(f, encoding='utf-8').read()).groups())
+                ctype = 'image/svg+xml'
+            else:
+                w, hh = Image.open(f).size
+                ctype = 'image/webp'
             ch = dict(ch, image=dict(ch['image'], w=w, h=hh))
             after = dict(before, **ch)
             if dry:
                 print(block[:8], i, heading, '→ image', path, f'{w}x{hh}'); continue
             call('POST', '/storage/v1/object/' + path, raw=open(f, 'rb').read(),
-                 headers={'apikey': key, 'Authorization': f'Bearer {key}', 'Content-Type': 'image/webp', 'x-upsert': 'true'})
+                 headers={'apikey': key, 'Authorization': f'Bearer {key}', 'Content-Type': ctype, 'x-upsert': 'true'})
             eid = call('POST', '/rest/v1/rpc/edit_content_card', {'p_block_id': block, 'p_card_index': i,
                        'p_before': before, 'p_after': after, 'p_editor': None})
             print(block[:8], i, heading, 'uploaded + edit', eid)
 
 if __name__ == '__main__':
-    batch = sys.argv[sys.argv.index('--batch') + 1] if '--batch' in sys.argv else '2'
+    batch = sys.argv[sys.argv.index('--batch') + 1] if '--batch' in sys.argv else '3'
     main('--dry-run' in sys.argv, batch)
