@@ -26,7 +26,7 @@ idea when a session gets archived." Added 2026-07-07._
   trivia). Automated checks still missed 2 subtle slips → **human review before rolling out
   to more topics.** To pull it: `UPDATE content_blocks SET is_active=false WHERE mode='deep'`.
 
-- **Visual-tab images (variant C) — PHYS-78-03 diagrams APPLIED 2026-09-29 (PR #2); 5 photos APPLIED 2026-09-30; most other lesson 2–4 cards still text-only.**
+- **Visual-tab images (variant C) — PHYS-78-03 diagrams APPLIED 2026-09-29 (PR #2); 10 photos APPLIED 2026-09-30; remaining lesson 2–4 cards still text-only.**
   Tier order: image/timeline (`card.image`, `card.timeline`) → in-house SVG (`card.diagram`, SketchDiagram
   shapes) → text placeholder. Images are self-hosted (never hotlinked), see the `content-media`
   Storage bucket / `content/media/staging/`.
@@ -42,16 +42,16 @@ idea when a session gets archived." Added 2026-07-07._
     candidates only, `--download` for human-approved ones) now honours `Retry-After` on HTTP 429 (5 tries, max 120 s wait);
     offline-tested only.
 
-  *Photos applied 2026-09-30* (`content/media/lesson_images_2026_09b.py`, cards written through `edit_content_card`,
+  *Photos applied 2026-09-30, two batches* (`content/media/lesson_images_2026_09b.py --batch 1|2`, cards written through `edit_content_card`,
   so undoable from the review queue; files uploaded to `content-media`, sources/licences in `manifest.json`):
   Sebesség mérése (lesson 2; Hungarian radar speed display, CC BY-SA 3.0), Nehézségi erő (lesson 3; NASA feather+hammer
   on the Moon, PD), Önvezérelt autó / Légzsák / Biztonsági öv (lesson 4; lidar CC BY 2.0, crash test CC BY-SA 4.0,
-  belted dummy CC BY 2.0). The card texts next to them are new Hungarian text written by the assistant — **not yet read by a teacher**.
+  belted dummy CC BY 2.0). Batch 2 added: motorcycle speedometer (Sebesség, CC BY-SA 4.0), Tasmanian distance sign (Utazásból hátralévő idő, CC BY-SA 4.0), skid marks (Fékezés, CC BY-SA 3.0), stopwatch (Sebesség mérésének eljárása, CC BY 4.0) and a Frankfurt road-safety installation of a car that hit a tree at 120 km/h (Kölcsönhatás; a wrecked car, no people, but check it is suitable for grades 5–8). The card texts next to them are new Hungarian text written by the assistant — **not yet read by a teacher**.
 
   *Not done:*
-  - No photo yet for „Sebességváltozás fékezés során” (lesson 3, card 4; a braking/skid-marks photo was found on Commons
-    but the file could not be fetched before the session ended) and for the remaining lesson 2–4 cards that still show
-    the text placeholder. Lesson 1 already has its images.
+  - Lesson 2–4 cards still without a photo: Megtett út, Átlagsebesség, Közlekedéstervezés, Sebesség és út kapcsolata, Idő és
+    távolság (lesson 2, mostly graphs/screenshots), Az elejtett test mozgása, Newton 2. törvénye, Külső hatások (lesson 3), Mozgás
+    elemzése applikációval (lesson 4). Lesson 1 already has its images.
   - Sourcing from the cloud sandbox works only with **curl** at about one request per 40 s: Wikimedia returns 429 (Retry-After)
     when the shared cloud IP is busy, and 403 to Python `httpx` requests even when curl succeeds from the same IP. So
     `source_media.py` (httpx) fails in the cloud; from a normal machine it should work. Do not try to get around the rate limit.

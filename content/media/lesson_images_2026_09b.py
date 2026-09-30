@@ -2,8 +2,9 @@
 checked on each file page; see manifest.json). Follows lesson_images_2026_09.py: each card is written
 through the edit_content_card RPC, so every change is in content_edits and can be undone from the review queue.
 
-  python3 ../media/lesson_images_2026_09b.py --dry-run      # from backend/ (reads .env)
-  python3 ../media/lesson_images_2026_09b.py                # uploads staged files, then edits the cards
+  python3 ../media/lesson_images_2026_09b.py --batch 2 --dry-run   # from backend/ (reads .env or the environment)
+  python3 ../media/lesson_images_2026_09b.py --batch 2             # uploads staged files, then edits the cards
+Batch 1 (5 photos) and batch 2 (5 photos) are both applied; do not re-run them.
 
 Staged files: content/media/staging/PHYS-78-03/<name>.webp (resized copies, git-ignored). Upload target is
 the public Storage bucket `content-media`; cards store the path, never a hotlink.
@@ -19,7 +20,7 @@ B = 'content-media/phys/biztonsag/'
 E = 'content-media/phys/erok/'
 
 # block id -> {card index: (expected heading, staged file name, storage path, card fields)}
-BLOCKS = {
+BATCH1 = {  # applied 2026-09-30 morning (first 5 photos)
   'f3e4a797-c1af-4d18-acb7-a0715f0b40fc': {  # Út és idő kiszámítása
     5: ('Sebesség mérése', 'sebessegkijelzo-nagykovacsi.webp', U + 'sebessegkijelzo-nagykovacsi.webp', dict(
         description='Sok úton kijelző mutatja az arra haladók pillanatnyi sebességét. Egy radar méri a jármű sebességét, a kijelző pedig km/h-ban kiírja — itt 52 km/h-t, és a „LASSÍTS!” felirat figyelmeztet. A radar a járműről visszavert rádióhullámok megváltozásából (Doppler-hatás) számítja ki a sebességet.',
@@ -55,7 +56,43 @@ BLOCKS = {
 }
 
 
-def main(dry):
+BATCH2 = {  # applied 2026-09-30 (second round)
+  'f3e4a797-c1af-4d18-acb7-a0715f0b40fc': {  # Út és idő kiszámítása
+    1: ('Sebesség', 'sebessegmero-bmw-r26.webp', U + 'sebessegmero-bmw-r26.webp', dict(
+        description='A sebesség megmutatja, hogy a test mennyi utat tesz meg egységnyi idő alatt: v = s : t. A járművek sebességmérője a pillanatnyi sebességet mutatja km/h-ban, a kilométer-számláló pedig a megtett utat adja össze. A képen egy 1960-as BMW motorkerékpár sebességmérője látható, amelynek skálája 0-tól 140 km/h-ig tart.',
+        caption='Sebességmérő és kilométer-számláló egy 1960-as motorkerékpáron',
+        image={'src': U + 'sebessegmero-bmw-r26.webp', 'alt': 'Kör alakú sebességmérő fekete számlappal, 0–140 km/h skálával, közepén a kilométer-számlálóval',
+               'credit': 'Palauenc05 · CC BY-SA 4.0', 'source': C + 'BMW_R26_1960_Tacho.jpg'})),
+    3: ('Utazásból hátralévő idő', 'utjelzo-tabla.webp', U + 'utjelzo-tabla.webp', dict(
+        description='Az útjelző táblák a városok hátralévő távolságát mutatják. Ha ismerjük a távolságot és a várható átlagsebességet, kiszámolhatjuk a hátralévő időt: t = s : v. Például ha a tábla szerint Hamiltonig még 54 km van hátra, és átlagosan 90 km/h-val haladunk, akkor t = 54 km : 90 km/h = 0,6 óra, vagyis 36 perc. A képen egy tasmaniai (Ausztrália) autópálya-tábla látható.',
+        caption='Útjelző tábla: a városok távolsága kilométerben (Tasmania, Ausztrália)',
+        image={'src': U + 'utjelzo-tabla.webp', 'alt': 'Zöld útjelző tábla városnevekkel és a hozzájuk tartozó távolságokkal kilométerben',
+               'credit': 'Chuq · CC BY-SA 4.0', 'source': C + 'Distance_road_sign,_Lyell_Highway,_Granton,_Tasmania.jpg'})),
+  },
+  '9fd5a9a0-12e1-45dc-b8ec-a5cdd3078a86': {  # Erők és gyorsulás vizsgálata
+    4: ('Sebességváltozás fékezés során', 'fekezesi-nyomok.webp', E + 'fekezesi-nyomok.webp', dict(
+        description='Fékezéskor a fékek és az út közötti súrlódási erő csökkenti az autó sebességét: az autó lassul, vagyis a gyorsulása a haladási iránnyal ellentétes. Ha a kerekek blokkolnak, a gumi csúszik az úton, és fekete fékezési nyomot hagy, mint a képen. Állandó lassulás esetén a fékút a kezdősebesség négyzetével nő: kétszer akkora sebességnél négyszer hosszabb út kell a megálláshoz.',
+        caption='Fékezési nyomok az aszfalton',
+        image={'src': E + 'fekezesi-nyomok.webp', 'alt': 'Fekete-fehér fénykép: íves, fekete fékezési nyomok egy kanyargós úton',
+               'credit': 'Robert · CC BY-SA 3.0', 'source': C + 'Bremsspur.jpg'})),
+    5: ('Sebesség mérésének eljárása', 'stopper.webp', E + 'stopper.webp', dict(
+        description='A sebesség méréséhez két dolgot kell megmérni: az utat mérőszalaggal, az időt stopperrel. Ezután v = s : t. Például ha egy kerékpáros 20 m-t 4 s alatt tesz meg, a sebessége 20 m : 4 s = 5 m/s. A mérés akkor pontos, ha a stoppert pontosan indítjuk és állítjuk meg, és a mérést többször megismételjük.',
+        caption='Mechanikus stopper',
+        image={'src': E + 'stopper.webp', 'alt': 'Analóg stopper számlappal, másodperc- és percmutatóval, három gombbal',
+               'credit': 'R. Henrik Nilsson · CC BY 4.0', 'source': C + 'Ca_1970_mechanical_stopwatch_by_Herwins_Switzerland.jpg'})),
+  },
+  '988c7f19-cdc8-4113-9e91-223ce3afbd86': {  # Közlekedési eszközök biztonsági rendszerei
+    3: ('Kölcsönhatás a járművek között', 'utkozes-fanak.webp', B + 'utkozes-fanak.webp', dict(
+        description='Két test kölcsönhatásakor mindkettőre erő hat: az egyik test ugyanakkora erővel hat a másikra, mint az az elsőre, csak ellenkező irányban (Newton III. törvénye). Ütközéskor az autó a fára hat, a fa ugyanakkora erővel az autóra, ezért deformálódik az autó eleje. A képen egy közlekedésbiztonsági figyelemfelhívó installáció látható: egy fának 120 km/h-val ütköző autó roncsa. Minél nagyobb az ütközés előtti sebesség, annál nagyobb az autó mozgási energiája, és annál nagyobb a károsodás.',
+        caption='Közlekedésbiztonsági installáció Frankfurtban: autó, amely 120 km/h-val fának ütközött',
+        image={'src': B + 'utkozes-fanak.webp', 'alt': 'Összeroncsolódott autó egy fatörzs körül, éjszakai fényekkel',
+               'credit': 'Norbert Nagel · CC BY-SA 3.0', 'source': C + 'Car_accident_memorial_-_Unfall_Denk_mal_-_Frankfurt_-_Germany_-_01.jpg'})),
+  },
+}
+BATCHES = {'1': BATCH1, '2': BATCH2}
+
+
+def main(dry, batch):
     from PIL import Image
     env = dict(os.environ)  # or backend/.env
     if os.path.exists('.env'):
@@ -69,7 +106,7 @@ def main(dry):
                                    data=raw if raw is not None else (json.dumps(body).encode() if body is not None else None))
         with urllib.request.urlopen(r) as resp:
             b = resp.read(); return json.loads(b) if b else None
-    for block, cards_ch in BLOCKS.items():
+    for block, cards_ch in BATCHES[batch].items():
         cards = call('GET', f'/rest/v1/content_blocks?id=eq.{block}&select=content')[0]['content']
         for i, (heading, fname, path, ch) in cards_ch.items():
             before = cards[i]
@@ -87,4 +124,5 @@ def main(dry):
             print(block[:8], i, heading, 'uploaded + edit', eid)
 
 if __name__ == '__main__':
-    main('--dry-run' in sys.argv)
+    batch = sys.argv[sys.argv.index('--batch') + 1] if '--batch' in sys.argv else '2'
+    main('--dry-run' in sys.argv, batch)
