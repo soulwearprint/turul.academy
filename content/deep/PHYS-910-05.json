@@ -1,0 +1,274 @@
+{
+ "nat_id": "PHYS-910-05",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "f13df92f-68d4-4f9e-8796-6ce11fe30510",
+   "title_hu": "Hőtágulás és hőmérséklet kiegyenlítődés",
+   "text_block_id": "57e81a1e-9f4b-455c-887c-d5038a0c9918",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Miért hagynak hézagot a sínek között?",
+     "body": "Melegítés hatására a legtöbb anyag kitágul. A tágulás mértéke ΔL = α · L · ΔT, ahol az acél lineáris hőtágulási együtthatója kb. α ≈ 12 · 10⁻⁶ 1/K. Egy 25 méter hosszú acélsín 40 K-nel melegebben (például télről nyárra) 12 · 10⁻⁶ · 25 · 40 = 0,012 m, vagyis 12 mm-rel lesz hosszabb. Ha hézag nélkül raknák le, a sín kihajlana. Ugyanezért van a hidakon dilatációs (tágulási) hézag, és ezért készül a bimetál szalag két, különbözően táguló fémből: melegítéskor elhajlik, így egyszerű hőmérséklet-kapcsoló lehet belőle.",
+     "did_you_know": "A víz különleges: 0 °C és 4 °C között melegítéskor összehúzódik, ezért a sűrűsége 4 °C-on a legnagyobb. Emiatt fagyik be a tó felszíne, miközben az alja kb. 4 °C-os marad.",
+     "think": "Miért hagynak hézagot a vasúti sínek között?",
+     "think_answer": "Mert nyáron a sín megnyúlik, és hézag nélkül elgörbülne, hiszen a tágulásának nincs helye."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Hőmérséklet és hő: két különböző dolog",
+     "body": "A hőmérséklet a részecskék átlagos mozgási energiájával kapcsolatos állapotjellemző, a hő viszont az az energia, amely a hőmérséklet-különbség miatt egyik testből a másikba megy át. Egy kád langyos víz több hőt tartalmaz, mint egy forró tea, mégis a tea hőmérséklete magasabb. A hőmérő ezért nem hőt mér, hanem azt használja ki, hogy a folyadék (például az alkohol vagy a higany) hőmérsékletfüggő módon tágul. A víz 100 °C-os forráspontja csak normál légnyomáson igaz: a nyomás csökkenésével a forráspont is csökken.",
+     "did_you_know": "Az Everest csúcsán, ahol kicsi a légnyomás, a víz kb. 70 °C körül forr fel, ezért ott nehéz tésztát főzni.",
+     "think": "Mi a különbség a hő és a hőmérséklet között?",
+     "think_answer": "A hőmérséklet állapotjellemző (a részecskék átlagos mozgási energiájával függ össze), a hő pedig a hőmérséklet-különbség miatt átadódó energia."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mennyi lesz a keverék hőmérséklete?",
+     "body": "Ha két különböző hőmérsékletű vizet összeöntünk, a melegebb annyi hőt ad le, amennyit a hidegebb felvesz (Qleadott = Qfelvett), amíg a hőmérsékletük ki nem egyenlítődik. Egyenlő tömegnél a közös hőmérséklet a két hőmérséklet átlaga: 200 g 80 °C-os és 200 g 20 °C-os víz keveréke 50 °C-os. Nem egyenlő tömegnél súlyozni kell: 100 g 90 °C-os és 200 g 30 °C-os víz keverékére T = (100 · 90 + 200 · 30) : 300 = 50 °C adódik. A kísérletet érdemes hőszigetelt pohárban végezni, mert különben a környezet is hőt vesz fel vagy ad le.",
+     "did_you_know": "",
+     "think": "Mennyi a közös hőmérséklet, ha 100 g 90 °C-os és 200 g 30 °C-os vizet összeöntünk?",
+     "think_answer": "T = (100 · 90 + 200 · 30) : (100 + 200) = 50 °C, mert a nagyobb tömegű, hidegebb víz jobban közelebb húzza a végeredményt a saját hőmérsékletéhez."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A pohár is részt vesz a kiegyenlítődésben",
+     "body": "Amikor hideg üdítőt öntünk egy meleg pohárba, nemcsak a folyadékok keverednek: a pohár anyaga is hőt cserél az itallal. Az üveg kis hőkapacitású, ezért az üdítő hőmérséklete csak kevéssé változik, de érezhetően hűl a pohár. A kiegyenlítődés kezdetben gyors, mert nagy a hőmérséklet-különbség, később egyre lassabb, mert a különbség csökken. Ezért a forró tea az első percekben hűl a legtöbbet, aztán már egyre lassabban éri el a szobahőmérsékletet.",
+     "did_you_know": "",
+     "think": "Miért lassul le a kiegyenlítődés a végén?",
+     "think_answer": "Mert a hőáram a hőmérséklet-különbséggel arányos, és a különbség egyre kisebb."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Miért oszlik szét gyorsabban a festék a meleg vízben?",
+     "body": "A festék vagy tinta szétoszlása nem hőkiegyenlítődés, hanem részecskék keveredése (diffúzió), de a hőmérséklet ezt is befolyásolja. Melegebb vízben a részecskék átlagos mozgási energiája nagyobb, ezért gyorsabban mozognak és gyorsabban keverednek. Ráadásul a meleg víz egyenetlenül melegedő részei sűrűségkülönbség miatt áramlanak, ez is segíti a keveredést. A hideg vízben ugyanez lassabb, de ott is végbemegy, ha elég sokáig várunk.",
+     "did_you_know": "A részecskék kaotikus mozgását először Robert Brown vette észre 1827-ben, vízben lebegő virágporszemcséken, a magyarázatot Albert Einstein adta meg 1905-ben.",
+     "think": "Miért oszlik el gyorsabban a festék a meleg vízben?",
+     "think_answer": "Mert a melegebb vízben gyorsabban mozognak a részecskék, ezért gyorsabb a diffúzió."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Jó hipotézis, tisztességes kísérlet",
+     "body": "A jó hipotézis mérhető és ellenőrizhető, például: ha a víz 20 °C-ról 40 °C-ra melegszik, akkor a festék kétszer olyan gyorsan oszlik szét. A kísérlet csak akkor éri meg, ha egyszerre csak egy dolgot változtatunk meg (a hőmérsékletet), a többit pedig állandóan tartjuk. Ha egyszerre változik a víz mennyisége és a hőmérséklete, nem tudhatjuk, melyik okozta a különbséget. A hipotézis nem baj, ha megdől: ebből is tanulunk.",
+     "did_you_know": "",
+     "think": "Mit kell állandónak tartani, ha azt vizsgálod, hogy a melegebb vízben gyorsabban oszlik-e szét a festék?",
+     "think_answer": "A víz mennyiségét, az edény alakját, a festék mennyiségét és azt, hogy mozgatjuk-e a vizet."
+    }
+   ]
+  },
+  {
+   "lesson_id": "6b7e70e8-6afe-47da-88f4-86b95b612869",
+   "title_hu": "Melegítés és hűtés a mindennapokban",
+   "text_block_id": "23920eec-d9c0-4865-95d8-7121430ad04c",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mennyi energia kell a teavízhez?",
+     "body": "A fajhő megmutatja, hogy 1 kg anyag hőmérsékletének 1 K-nel való emeléséhez mennyi hő kell: c = Q : (m · ΔT). A víz fajhője kb. 4200 J/(kg · K), ami a hétköznapi anyagok között kiugróan nagy. Egy liter (1 kg) víz 20 °C-ról 100 °C-ra melegítéséhez ezért Q = 4200 · 1 · 80 = 336 000 J, vagyis 336 kJ szükséges. Egy 2000 W-os vízforraló ideális esetben ezt 336 000 : 2000 = 168 s, kb. 2,8 perc alatt adja le. Mivel a víz fajhője nagy, lassabban melegszik és lassabban hűl, mint például a homok vagy a fém.",
+     "did_you_know": "Emiatt van enyhébb éghajlat a tengerek mellett: a víz nyáron sok hőt tárol, télen pedig lassan adja le.",
+     "think": "Melyik melegszik fel gyorsabban ugyanannyi hőtől, 1 kg víz vagy 1 kg olaj (c ≈ 2000 J/(kg · K))?",
+     "think_answer": "Az olaj, mert kisebb a fajhője, tehát ugyanannyi hőtől nagyobbat nő a hőmérséklete."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Hűtés: hőt viszünk el, nem hideget adunk hozzá",
+     "body": "Hűtéskor nem hideget pumpálunk be, hanem hőt vonunk el. A hűtőszekrény a belsejéből szállítja a hőt a hátsó rácsra, ezért az a hátulján meleg. Az 1 kg, 20 °C-os zöldség 4 °C-ra hűtéséhez (ha a fajhője megközelíti a vízét) 4200 · 16 ≈ 67 000 J hőt kell elvonni. A hideg lassítja a romlásért felelős baktériumok szaporodását, de nem állítja meg teljesen, ezért romlik meg a hűtőben is az étel, csak lassabban. A fagyasztás még jobban lelassítja a folyamatot.",
+     "did_you_know": "",
+     "think": "Miért meleg a hűtőszekrény hátulja?",
+     "think_answer": "Mert a hűtő a belsejéből elvont hőt és a működtetéséhez felhasznált energiát a hátsó rácson adja le a szobának."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Égéshő és fűtőérték",
+     "body": "Az égéshő az a hőmennyiség, amely egy anyag teljes elégetésekor felszabadul, nem az, amely az elégetéséhez kell. Mértékegysége a tüzelőanyagoknál általában J/kg. A fűtőérték hasonló, de nem számolja bele azt a hőt, amely az égéstermék vízgőzének lecsapódásakor szabadulna fel, ezért valamivel kisebb az égéshőnél. A faszén fűtőértéke kb. 30 MJ/kg, a száraz fáé kb. 15–18 MJ/kg. Veszteségek nélkül 11 g faszén hője elegendő 1 liter víz 20 °C-ról 100 °C-ra melegítéséhez (336 kJ : 30 MJ/kg ≈ 0,011 kg), a valóságban a láng hőjének nagy része a levegőt melegíti.",
+     "did_you_know": "",
+     "think": "Ha 1 kg faszén 30 MJ hőt ad, elvileg hány kg vizet lehet vele 20 °C-ról 100 °C-ra melegíteni?",
+     "think_answer": "30 000 000 J : 336 000 J/kg ≈ 89 kg, veszteségek nélkül; a valóságban ennél jóval kevesebbet."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Gyors égés, lassú égés",
+     "body": "A gyors égésnél lángot látunk, a lassú égésnél (lassú oxidációnál) nem: ilyen például a vas rozsdásodása vagy a szerves anyagok korhadása. A víz forrása nem égés, hanem halmazállapot-változás, mert nem lépnek fel új anyagok. Ha ugyanaz az anyag teljesen elég, ugyanannyi hő szabadul fel, akár gyorsan, akár lassan történik. A különbség a teljesítményben van: a gyors égés rövid idő alatt sok hőt ad (nagy teljesítmény), a lassú kis teljesítménnyel, hosszabb idő alatt. Ha az égés nem teljes (például kevés az oxigén), kevesebb hő szabadul fel, és korom vagy szén-monoxid keletkezik.",
+     "did_you_know": "",
+     "think": "Melyik ad több hőt összesen: 1 kg fa gyors elégése, vagy ugyanennyi lassú elégése?",
+     "think_answer": "Ugyanannyit, ha mindkettő teljesen elég; a gyors égésnél csak a teljesítmény nagyobb."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Hogyan vezet a fazék?",
+     "body": "A fémek jó hővezetők, az alumínium és a réz különösen, a rozsdamentes acél gyengébb, ezért a jobb fazekak alja gyakran többrétegű, alumínium vagy réz maggal. Indukciós főzőlapnál a váltakozó mágneses tér az edény aljában örvényáramot kelt, és az áram hőt fejleszt, így az edény alja melegszik, nem a főzőlap. Ezért csak mágnesezhető anyagú edény (például vas vagy sok rozsdamentes acél) használható. A fogantyú azért készül fából, műanyagból, mert ezek rossz hővezetők, és nem viszik át gyorsan a hőt a kezünkhöz.",
+     "did_you_know": "",
+     "think": "Miért készül a fazék nyele fából vagy műanyagból?",
+     "think_answer": "Mert ezek rossz hővezetők, ezért a nyél nem melegszik fel gyorsan."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Milyen hőmérsékleten főzzük a teát?",
+     "body": "A tea ízét az oldódó anyagok határozzák meg, és ezek oldódása a hőmérséklettől függ. Ezért a fekete teához általában 90–100 °C-os, a zöld teához inkább 70–80 °C-os vizet ajánlanak, mert a túl forró víz keserű anyagokat is kioldhat. Forró vízben gyorsabb az oldódás, mert a részecskék gyorsabban mozognak, ezért hideg vízben órákig tart a hideg főzésű tea elkészítése. A szűrő nem azért készíti el a teát, mert hőt vesz át, hanem mert a benne lévő anyagok kioldódnak a vízbe.",
+     "did_you_know": "",
+     "think": "Miért készül el gyorsabban a tea forró vízben, mint hidegben?",
+     "think_answer": "Mert a forró vízben a részecskék gyorsabban mozognak, ezért az anyagok gyorsabban oldódnak ki."
+    }
+   ]
+  },
+  {
+   "lesson_id": "373634c9-f84a-4918-bf4c-bdcee1935ae1",
+   "title_hu": "Halmazállapot-változások és energetikai leírásuk",
+   "text_block_id": "97998d35-1c5e-4968-9bbc-482aa6df7861",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Nem csak olvadás és párolgás",
+     "body": "A halmazállapot-változások nevei: olvadás (szilárd → folyékony), fagyás (folyékony → szilárd), párolgás és forrás (folyékony → gáz), lecsapódás (gáz → folyékony). Van két kevésbé ismert is: a szublimáció, amikor az anyag szilárdból közvetlenül gázzá válik, és a deszublimáció, amikor gázból közvetlenül szilárd lesz. A dér például úgy keletkezik, hogy a levegő vízgőze a hideg felületen közvetlenül jéggé válik. A halmazállapot-változás közben a részecskék elrendeződése és kötése változik, maguk a részecskék nem.",
+     "did_you_know": "A száraz jég (szilárd szén-dioxid) normál nyomáson −78,5 °C-on szublimál, ezért nem lesz belőle folyadék, csak köd.",
+     "think": "Mi a szublimáció?",
+     "think_answer": "A szilárd anyag közvetlenül gázzá alakul, folyékony állapot nélkül."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Mennyi energiát nyel el az olvadás?",
+     "body": "A víz olvadáshője kb. 334 kJ/kg: ennyi hő kell 1 kg 0 °C-os jég 0 °C-os vízzé alakításához. Az olvadás közben a hőmérséklet állandó marad, 0 °C, mert a felvett hő a kötések felbontására fordítódik, nem a hőmérséklet növelésére. Ugyanez a hőmennyiség 1 kg víz 80 °C-ra melegítéséhez is elég (4200 · 80 = 336 kJ). Ezért hűti az italt a beledobott jégkocka: elvonja az ital hőjét, hogy megolvadjon. Fagyáskor ugyanennyi hő szabadul fel.",
+     "did_you_know": "",
+     "think": "Mennyi hő kell 2 kg 0 °C-os jég megolvasztásához?",
+     "think_answer": "2 · 334 kJ = 668 kJ."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Párolgás és forrás: két különböző dolog",
+     "body": "A párolgás a folyadék felszínén minden hőmérsékleten megtörténik, de lassan. A forrás csak a forráspontnál indul meg, és a folyadék belsejében is buborékok képződnek. A víz párolgáshője kb. 2256 kJ/kg, ez több, mint hatszor akkora, mint az 1 kg víz 20 °C-ról 100 °C-ra melegítéséhez kellő 336 kJ (2256 : 336 ≈ 6,7). Ezért tart sokkal tovább elforralni a vizet, mint felforralni. Az izzadás azért hűt, mert a bőrről párolgó verejték a párolgáshez szükséges hőt a testből vonja el.",
+     "did_you_know": "",
+     "think": "Miért hűt az izzadás?",
+     "think_answer": "Mert a párolgáshoz hő kell, amit a verejték a bőrből von el."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Forráshő: nincs külön, de van értelme",
+     "body": "A forráshő nem külön fogalom, hanem a párolgáshő másik neve: az a hő, amely a folyadék forráspontján a folyadék elgőzölögtetéséhez kell. Nem tartalmazza azt a hőt, amely a forráspontig való felmelegítéshez szükséges. Számoljunk egy 2000 W-os vízforralóval: 1 liter víz 20 °C-ról 100 °C-ra melegítése 336 kJ, teljes elforralása további 2256 kJ, összesen 2592 kJ. Ez 2 592 000 : 2000 = 1296 s, vagyis kb. 21,6 perc, ha nincs veszteség. A forráspont függ a nyomástól: a kuktában magasabb, a hegyen alacsonyabb.",
+     "did_you_know": "",
+     "think": "Miért tart sokkal tovább egy liter víz elforralása, mint felforralása?",
+     "think_answer": "Mert a párolgáshő kb. 6,7-szer akkora, mint a 20 °C-ról 100 °C-ra melegítéshez szükséges hő."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Hűl a víz, de nem fagy meg",
+     "body": "Tiszta víz akár −40 °C körülig is folyékony maradhat, ha nincs benne kristályosodási mag, és nem rázzuk meg. A palackos ásványvíz kinyitásakor vagy megütésekor a rezgés kristályosodási magokat hoz létre, és a víz egy része hirtelen jéggé fagy. A fagyáskor felszabaduló olvadáshő 0 °C-ra melegíti az elegyet, ezért nem az egész víz fagy meg, hanem jégiszap jön létre. Ha a víz −5 °C-os volt, a megfagyó rész aránya kb. c · ΔT : L = 4200 · 5 : 334 000 ≈ 6%.",
+     "did_you_know": "",
+     "think": "Miért lesz jégiszap a hirtelen megfagyó, túlhűtött vízből?",
+     "think_answer": "Mert a fagyás közben felszabaduló hő 0 °C-ra melegíti az elegyet, ezért csak a víz kis része fagy meg."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Miért szárad gyorsabban a ruha a szélben?",
+     "body": "A párolgás sebességét az határozza meg, hogy hány részecske hagyja el a folyadék felszínét, és mennyi tér vissza. Nagyobb felületen több részecske hagyhatja el a folyadékot, ezért gyorsabb a szárítás, ha a ruhát kiterítjük. Melegebben gyorsabbak a részecskék, ezért több szökik meg. Szélben az elpárolgott vízgőzt elvisszük a ruha közeléből, így kevesebb kerül vissza. A páratartalom is számít: nedves levegőben lassabb a párolgás.",
+     "did_you_know": "",
+     "think": "Miért szárad gyorsabban a ruha szélben?",
+     "think_answer": "Mert a szél elviszi a ruha közeléből a nedves levegőt, így kevesebb vízgőz csapódik vissza."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Melyik hőt ad le, melyik veszi fel?",
+     "body": "Az olvadás, a párolgás (forrás) és a szublimáció közben az anyag hőt vesz fel a környezetéből. A fagyás, a lecsapódás és a deszublimáció közben hőt ad le. A dér tehát nem megfagyott víz, hanem a gőz közvetlen jéggé válása. A természetben ez tehető hasznossá: a gyümölcsösöket néha fagy idején vízzel locsolják, mert a jéggé fagyó víz hőt ad le, és a bimbók hőmérséklete nem süllyed 0 °C alá. A hűtőszekrény is ezt használja: a folyadék a hűtőben párolog, hőt von el, majd a hátsó rácson lecsapódik és hőt ad le.",
+     "did_you_know": "",
+     "think": "Melyik két változás közben ad le hőt az anyag?",
+     "think_answer": "A fagyás és a lecsapódás."
+    }
+   ]
+  },
+  {
+   "lesson_id": "43d92e14-3132-4805-bd46-f1f33c6dd82b",
+   "title_hu": "Hőtan alkalmazásai és elméleti alapjai",
+   "text_block_id": "800b97f5-7aaa-4649-ae48-34adf23a6eaa",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Miért főz gyorsabban a kukta?",
+     "body": "A víz forráspontja a nyomástól függ. A kukta lezárt edény, amelyben a gőz nem tud kiszökni, ezért a nyomás megnő: kb. 1 bar túlnyomásnál, vagyis 2 bar abszolút nyomásnál a víz kb. 120 °C-on forr. Gyakorlati tapasztalat szerint 10 °C-os hőmérséklet-emelés kb. kétszeresére gyorsítja a kémiai folyamatokat, így a főzés is jóval gyorsabb. A kuktában nem az első főtétel miatt főz gyorsabban az étel, hanem mert a víz magasabb hőmérsékletre melegedhet.",
+     "did_you_know": "A hegyekben alacsonyabb a légnyomás, a víz alacsonyabb hőmérsékleten forr, ezért ott a kukta különösen hasznos.",
+     "think": "Miért nem lesz 100 °C-nál melegebb a víz egy nyitott edényben, akármeddig melegítjük?",
+     "think_answer": "Mert a forráspontnál a hő a párolgásra fordítódik, és a hőmérséklet nem nő tovább."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Miért melegszik a sűrített gáz?",
+     "body": "Ha a dugattyú a gázt összenyomja, a gázon munkát végzünk, a gáz belső energiája nő, és így a hőmérséklete is. Az ok tehát a munkavégzés, a nyomás növekedése pedig ennek a következménye (a kártya sorrendje fordított). Ha a folyamat gyors, a hőnek nincs ideje távozni, és ΔU = W. Ezért melegszik a biciklipumpa vége. A dízelmotor ezt használja: a sűrített levegő annyira felmelegszik, hogy a befecskendezett gázolaj magától meggyullad, gyújtógyertya nélkül. A tűzdugattyú is így működik.",
+     "did_you_know": "",
+     "think": "Miért melegszik fel a biciklipumpa?",
+     "think_answer": "Mert a dugattyú munkát végez a levegőn, és ez a munka a levegő belső energiáját növeli."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mi számít megfordíthatónak?",
+     "body": "A megfordítható folyamatok a valóságban csak közelítés: a jég olvadása és fagyása megfordítható modell, ha nagyon lassan, 0 °C körül végezzük. A tojás megfőzése biztosan nem megfordítható. A hő magától mindig a melegebb testről a hidegebb felé áramlik, és fordítva csak akkor, ha közben munkát végzünk (a hűtőszekrény ezt teszi). Ez a második főtétel egyik megfogalmazása.",
+     "did_you_know": "",
+     "think": "Miért nem áramlik magától a hő a hidegebb testről a melegebbre?",
+     "think_answer": "Mert ezt a második főtétel tiltja: ehhez külső munka kell, mint a hűtőszekrényben."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A második főtétel és az idő iránya",
+     "body": "A második főtétel nem az energia megmaradásáról szól, azt az első főtétel mondja ki. A második főtétel szerint a hő magától nem áramlik hidegebbről melegebbre, vagyis a folyamatok természetes irányát adja meg. Ezt fejezi ki az entrópia is: zárt rendszerben az entrópia nem csökkenhet. Ezért nem lesz a tejjel elkevert kávéból magától újra kávé és tej, és ezért olvad meg a jégkrém a napon, de nem fagy vissza magától. Az energia közben végig megmarad: az olvadó jégkrém a kapott hőt veszi fel.",
+     "did_you_know": "",
+     "think": "Miért tűnik furcsának, ha egy visszafelé lejátszott filmen a kávé magától felforr?",
+     "think_answer": "Mert ez ellentmondana a második főtételnek: a hő nem áramlik magától hidegebbről melegebbre."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Miért működik együtt a vas és a beton?",
+     "body": "A beton nyomásnak jól ellenáll, húzásnak kevésbé, az acél húzásnak is. A vasbeton ezért erős. Van egy hőtani feltétel is: a beton és az acél hőtágulási együtthatója közel azonos (kb. 10–12 · 10⁻⁶ 1/K), ezért melegítéskor és hűtéskor együtt tágulnak, és a beton nem reped meg, nem válik le az acélról. Ha az egyik sokkal jobban tágulna, a hőmérsékletváltozás felszakítaná a kapcsolatot közöttük.",
+     "did_you_know": "",
+     "think": "Miért fontos, hogy az acél és a beton hőtágulása közel azonos?",
+     "think_answer": "Mert így hőmérsékletváltozáskor együtt tágulnak, és a beton nem reped meg, nem válik le az acélról."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Mi tartja nyomás alatt a kuktát?",
+     "body": "A kuktán a szelep súlya szabja meg a nyomást. Ha a szelep 100 g, és a cső keresztmetszete 0,1 cm² (10⁻⁵ m²), akkor a szelep súlya által keltett többletnyomás p = m · g : A = 0,1 · 9,81 : 10⁻⁵ ≈ 98 000 Pa, azaz kb. 1 bar. A szelep addig marad zárva, amíg a gőz nyomása ennél kisebb; utána felemelkedik, és kiengedi a gőzt. A kukta gyorsabb főzését a magasabb hőmérséklet adja, nem az, hogy a hőátadás lenne intenzívebb: a nyomás emeli a forráspontot.",
+     "did_you_know": "",
+     "think": "Mi történne, ha a kukta szelepe eltömődne?",
+     "think_answer": "A nyomás tovább nőne, ezért van biztonsági szelep vagy olvadó dugó, amely kiengedi a gőzt."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Az első főtétel: kinek jut a hő?",
+     "body": "Az első főtétel szerint ΔU = Q + W, ahol Q a rendszerrel közölt hő, W pedig a rendszeren végzett munka. Ha a gáz kitágul, és a dugattyút felfelé tolja, akkor a gáz végez munkát, és ez a munka negatív W-t jelent a rendszerre nézve. A gázzal közölt hő tehát két helyre megy: a belső energia növelésére, és a munkavégzésre. Ha a gáz 500 J hőt vesz fel és 200 J munkát végez, akkor a belső energiája 500 − 200 = 300 J-lal nő. A hőerőgépek, például az autómotorok, ezt hasznosítják, de a hőnek mindig csak egy része válik munkává.",
+     "did_you_know": "",
+     "think": "Egy gáz 300 J hőt vesz fel és 120 J munkát végez. Mennyivel változik a belső energiája?",
+     "think_answer": "ΔU = 300 − 120 = 180 J, vagyis 180 J-lal nő."
+    }
+   ]
+  }
+ ]
+}

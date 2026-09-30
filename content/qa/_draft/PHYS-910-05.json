@@ -1,0 +1,668 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres/hiányos kísérletblokk: az e9295cc3 blokkban a try_advanced mező üres."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "57e81a1e-9f4b-455c-887c-d5038a0c9918",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a motorháztető nehezen nyitható, mert a fém tágul”",
+   "explanation": "A motorháztető nehéz nyithatóságának nem a hőtágulás a jellemző oka (zár, zsanér, szennyeződés); a hőtágulás tipikus, jól ismert példája a vasúti sín vagy a híd tágulási hézaga.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Thermal_expansion",
+     "title": "Thermal expansion",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Gondoljunk csak arra, hogy nyáron, a melegben, amikor az autó fém alkatrészei felmelegszenek, a motorháztető nehezen nyitható, mert a fém tágul.",
+     "Gondoljunk csak arra, hogy a vasúti sínek között hézagot hagynak, mert nyáron, a melegben a fém kitágul."
+    ]
+   ]
+  },
+  {
+   "block_id": "57e81a1e-9f4b-455c-887c-d5038a0c9918",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„hőmérséklet (a hőenergia mértéke)”",
+   "explanation": "A hőmérséklet nem a hőenergia mértéke: a részecskék átlagos mozgási energiájával összefüggő állapotjellemző. A hő a hőmérséklet-különbség miatt átadódó energia.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Temperature",
+     "title": "Temperature",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "hőmérséklet (a hőenergia mértéke)",
+     "hőmérséklet (a részecskék átlagos mozgási energiájával összefüggő állapotjellemző)"
+    ]
+   ]
+  },
+  {
+   "block_id": "57e81a1e-9f4b-455c-887c-d5038a0c9918",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A hipotézis példája: „a meleg víz gyorsabban eloszlik, mint a hideg”",
+   "explanation": "A mondat nem a hőmérséklet-kiegyenlítődésről szól, és nem ellenőrizhető hipotézis; jobb egy mérhető állítás a hőmérséklet-különbség és a kiegyenlítődés sebessége között.",
+   "source_note": "tudományos módszer: mérhető, ellenőrizhető hipotézis",
+   "replace": [
+    [
+     "Például, ha meleg és hideg vizet keverünk, a meleg víz gyorsabban eloszlik, mint a hideg.",
+     "Például feltételezhetjük, hogy minél nagyobb a két víz hőmérséklet-különbsége, annál gyorsabban áramlik közöttük a hő."
+    ]
+   ]
+  },
+  {
+   "block_id": "23920eec-d9c0-4865-95d8-7121430ad04c",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„a víz fajhője nagyobb … ezért a víz gyorsabban felmelegszik”; a fajhő definíciója; a teafilteres mondat",
+   "explanation": "Nagyobb fajhő esetén ugyanannyi hőtől kisebb a hőmérséklet-változás, tehát a víz lassabban melegszik. A fajhő 1 kg anyag 1 K-nel való melegítéséhez kellő hő, nem „az anyag hőmérsékletének megemeléséhez szükséges hőmennyiség”. A filter „azonos hőmérsékleten átadja a hőt” mondat fizikailag értelmetlen (azonos hőmérsékleten nincs hőátadás).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Specific_heat_capacity",
+     "title": "Specific heat capacity",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A fajhő (c) egy anyag hőmérsékletének megemeléséhez szükséges hőmennyiség.",
+     "A fajhő (c) megmutatja, mennyi hő kell 1 kg anyag hőmérsékletének 1 K-nel való megemeléséhez."
+    ],
+    [
+     "a víz fajhője nagyobb, mint a legtöbb ételé, ezért a víz gyorsabban felmelegszik",
+     "a víz fajhője nagy (kb. 4200 J/(kg · K)), ezért sok hőt kell közölni vele, hogy felmelegedjen"
+    ],
+    [
+     "Ha a víz és a tea filtere azonos hőmérsékleten van, a víz gyorsan átadja a hőt a filternek, így készül el a tea.",
+     "A tea azért készül el, mert a forró vízbe a teafűből ízanyagok oldódnak ki."
+    ],
+    [
+     "Érdemes megfigyelni, hogy a fajhő (c) is befolyásolja a folyamatot, hiszen az energiatartalom meghatározza, mennyi idő alatt forr fel a víz.",
+     "A víz felforrásához szükséges hő a tömegétől és a fajhőjétől függ: Q = c · m · ΔT."
+    ]
+   ]
+  },
+  {
+   "block_id": "23920eec-d9c0-4865-95d8-7121430ad04c",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A hűtés „megakadályozza a romlást”",
+   "explanation": "A hűtés csak lelassítja a romlást (a baktériumok szaporodását), nem állítja meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Refrigeration",
+     "title": "Refrigeration",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "ami megakadályozza a romlást",
+     "ami lelassítja a romlást"
+    ]
+   ]
+  },
+  {
+   "block_id": "23920eec-d9c0-4865-95d8-7121430ad04c",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az égéshő „az a hőmennyiség, amely egy anyag teljes elégetéséhez szükséges”",
+   "explanation": "Az égéshő a teljes elégetéskor felszabaduló hő, nem az elégetéshez szükséges.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Heat_of_combustion",
+     "title": "Heat of combustion",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "az a hőmennyiség, amely egy anyag teljes elégetéséhez szükséges",
+     "az a hőmennyiség, amely egy anyag teljes elégetésekor felszabadul"
+    ]
+   ]
+  },
+  {
+   "block_id": "23920eec-d9c0-4865-95d8-7121430ad04c",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A lassú égés például akkor következik be, amikor … a lábasban lévő víz fokozatosan forr fel”; a lassú égés „kevesebb hőt termel”",
+   "explanation": "A víz forrása halmazállapot-változás, nem égés. Ugyanannyi anyag teljes elégésekor ugyanannyi hő szabadul fel, függetlenül a sebességtől; a különbség a teljesítményben van.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Combustion",
+     "title": "Combustion",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A lassú égés például akkor következik be, amikor a tűzhelyen a lábasban lévő víz fokozatosan forr fel, míg a gyors égés a gyújtófolyadék használatakor tapasztalható, amikor a láng azonnal fellobban. A gyors égés nagyobb hőmennyiséget szabadít fel rövid idő alatt, míg a lassú égés hosszabb ideig tart, de kevesebb hőt termel.",
+     "A lassú égés (lassú oxidáció) például a vas rozsdásodása, míg a gyors égés a gyújtófolyadék használatakor tapasztalható, amikor a láng azonnal fellobban. Ugyanannyi anyag teljes elégésekor ugyanannyi hő szabadul fel, de a gyors égés rövid idő alatt, nagy teljesítménnyel adja le, a lassú égés hosszabb idő alatt."
+    ]
+   ]
+  },
+  {
+   "block_id": "23920eec-d9c0-4865-95d8-7121430ad04c",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a hideg vízbe tett filter nagyon gyorsan átveszi a hőt”",
+   "explanation": "A tea a forró vízben készül el; a hideg vízbe tett filter nem „veszi át a hőt”, az ízanyagok oldódása a lényeg.",
+   "source_note": "hőmérséklet és oldódás sebessége",
+   "replace": [
+    [
+     "Amikor teát készítünk, a hideg vízbe tett filter nagyon gyorsan átveszi a hőt.",
+     "Amikor teát készítünk, a teafű ízanyagai forró vízben oldódnak ki a leggyorsabban."
+    ]
+   ]
+  },
+  {
+   "block_id": "97998d35-1c5e-4968-9bbc-482aa6df7861",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a fagyasztóban tárolt jégkockák lassan olvadnak”",
+   "explanation": "A fagyasztóban a jégkocka nem olvad (0 °C alatti a hőmérséklet); jobb példa az italba tett jégkocka.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Latent_heat",
+     "title": "Latent heat",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "például amikor a fagyasztóban tárolt jégkockák lassan olvadnak, miközben a hűtőszekrény környezete melegebb",
+     "például amikor az üdítőbe tett jégkocka lassan elolvad, és közben hőt von el az italtól"
+    ]
+   ]
+  },
+  {
+   "block_id": "97998d35-1c5e-4968-9bbc-482aa6df7861",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A párolgás példája a lábasban forralt víz",
+   "explanation": "A lábasban forralt víz forrása, nem párolgás. A párolgás a felszínen, minden hőmérsékleten végbemegy.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Evaporation",
+     "title": "Evaporation",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Például, ha egy lábasban vizet forralunk, a víz gőzzé válik és eltűnik a levegőben.",
+     "Például a kiteregetett vizes ruha megszárad, mert a víz a felszínén fokozatosan gőzzé válik és a levegőbe jut."
+    ]
+   ]
+  },
+  {
+   "block_id": "97998d35-1c5e-4968-9bbc-482aa6df7861",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A forráshő az a hőenergia, amely szükséges ahhoz, hogy a víz elérje a forráspontját és gőzzé alakuljon”",
+   "explanation": "A forráshő (párolgáshő) a forráspontján lévő folyadék elgőzölögtetéséhez szükséges hő; nem tartalmazza a forráspontig való melegítést. „A víz teljes mennyisége forr” sem pontos.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Enthalpy_of_vaporization",
+     "title": "Enthalpy of vaporization",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A forráshő az a hőenergia, amely szükséges ahhoz, hogy a víz elérje a forráspontját és gőzzé alakuljon. Ez a folyamat nagyon hasonló a párolgáshoz, de itt a víz teljes mennyisége forr.",
+     "A forráshő az a hőenergia, amely szükséges ahhoz, hogy a forráspontjára melegített víz gőzzé alakuljon; értéke megegyezik a párolgáshővel. Forrásnál a gőz a folyadék belsejében is képződik, nem csak a felszínen."
+    ]
+   ]
+  },
+  {
+   "block_id": "97998d35-1c5e-4968-9bbc-482aa6df7861",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a dér megfagy az autó szélvédőjén”",
+   "explanation": "A dér nem megfagyott víz, hanem a levegő vízgőzéből közvetlenül képződő jég (deszublimáció).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Frost",
+     "title": "Frost",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "amikor a dér megfagy az autó szélvédőjén",
+     "amikor a levegő vízgőzéből dér képződik az autó szélvédőjén"
+    ]
+   ]
+  },
+  {
+   "block_id": "800b97f5-7aaa-4649-ae48-34adf23a6eaa",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A kuktában az első főtétel szerint „a hőmérséklet emelkedése a hőenergia növekedésével jár”; energiamegtakarítás",
+   "explanation": "A kukta gyorsabb főzésének oka a magasabb forráspont, nem az első főtétel. Az energiamegtakarítás a rövidebb főzési időből következik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pressure_cooking",
+     "title": "Pressure cooking",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ez a magasabb hőmérséklet gyorsabb főzést eredményez, hiszen a hőtan első főtétele szerint a hőmérséklet emelkedése a hőenergia növekedésével jár. Így a kuktafazék nemcsak gyorsítja a főzést, hanem energiát is megtakarít.",
+     "Ez a magasabb hőmérséklet gyorsabb főzést eredményez. Mivel a főzés rövidebb ideig tart, kevesebb energiát is fogyaszt."
+    ]
+   ]
+  },
+  {
+   "block_id": "800b97f5-7aaa-4649-ae48-34adf23a6eaa",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a nyomás növekedésével a gáz részecskéi gyorsabban mozognak”; „energiát tárolunk”",
+   "explanation": "Az ok-okozati sorrend fordított: a gázon végzett munka növeli a belső energiát és a hőmérsékletet, és emiatt nő a nyomás is.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/First_law_of_thermodynamics",
+     "title": "First law of thermodynamics",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Amikor a dugattyú lefelé mozog, a benne lévő gáz összenyomódik, és a hőmérséklete emelkedik, hiszen a nyomás növekedésével a gáz részecskéi gyorsabban mozognak. Ezzel a folyamattal energiát tárolunk, amely később hasznosítható például egy motorban.",
+     "Amikor a dugattyú lefelé mozog, a benne lévő gáz összenyomódik: a dugattyú munkát végez a gázon, ettől nő a gáz belső energiája és hőmérséklete, a részecskék gyorsabban mozognak."
+    ]
+   ]
+  },
+  {
+   "block_id": "800b97f5-7aaa-4649-ae48-34adf23a6eaa",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A második főtétel: „a hőmérsékletek közötti különbség kiegyenlítése során energia nem keletkezik, csak átalakul”",
+   "explanation": "Ez az energia megmaradása, vagyis az első főtétel. A második főtétel: a hő magától nem áramlik hidegebb testről melegebbre; zárt rendszerben az entrópia nem csökken.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_law_of_thermodynamics",
+     "title": "Second law of thermodynamics",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "amely kimondja, hogy a hőmérsékletek közötti különbség kiegyenlítése során energia nem keletkezik, csak átalakul",
+     "amely kimondja, hogy a hő magától nem áramlik hidegebb testről melegebbre, és zárt rendszerben az entrópia nem csökkenhet"
+    ]
+   ]
+  },
+  {
+   "block_id": "800b97f5-7aaa-4649-ae48-34adf23a6eaa",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a magasabb hőmérséklet gyorsabb főzést eredményez, mivel a hőátadás intenzívebb”",
+   "explanation": "A főzés gyorsabb, mert a magasabb hőmérsékleten gyorsabban mennek végbe a lágyulás kémiai és fizikai folyamatai, nem mert a hőátadás intenzívebb.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pressure_cooking",
+     "title": "Pressure cooking",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "mivel a hőátadás intenzívebb",
+     "mert magasabb hőmérsékleten gyorsabban zajlanak a főzés folyamatai"
+    ]
+   ]
+  },
+  {
+   "block_id": "800b97f5-7aaa-4649-ae48-34adf23a6eaa",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A gáz által végzett munka „a gáz belső energiájának növekedéséből és a bevitt hőből származik”",
+   "explanation": "A gáz kitágulásakor a végzett munka a bevitt hőből fedeződik, a belső energia a különbséggel nő (ΔU = Q − Wgáz), nem adódik hozzá a munkához.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/First_law_of_thermodynamics",
+     "title": "First law of thermodynamics",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ez a munkavégzés a hőtan első főtétele szerint a gáz belső energiájának növekedéséből és a bevitt hőből származik.",
+     "A gáz által végzett munka a bevitt hőből származik, a belső energia pedig csak a hő és a gáz munkája különbségével nő (ΔU = Q − Wgáz)."
+    ]
+   ]
+  },
+  {
+   "block_id": "331d002e-9d52-4af3-9e1e-9adc7fc20cea",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A hőmérséklet az anyag részecskéinek mozgási energiája”",
+   "explanation": "A hőmérséklet a részecskék átlagos mozgási energiájával arányos, nem az összegükkel (az volna a belső energia egy része).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Temperature",
+     "title": "Temperature",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[1]": "B) Az anyag részecskéi átlagos mozgási energiájának mértéke.",
+    "explanation": "A hőmérséklet a részecskék átlagos mozgási energiájával összefüggő állapotjellemző."
+   }
+  },
+  {
+   "block_id": "331d002e-9d52-4af3-9e1e-9adc7fc20cea",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A közös hőmérséklet „a két folyadék hőmérsékletének átlaga”",
+   "explanation": "Az átlag csak egyenlő tömegű és azonos fajhőjű folyadékoknál igaz; általában a tömegekkel és fajhőkkel súlyozott átlag.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Calorimetry",
+     "title": "Calorimetry",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "A meleg és a hideg folyadék keveredésekor közös hőmérséklet alakul ki; egyenlő tömegnél ez a két hőmérséklet átlaga."
+   }
+  },
+  {
+   "block_id": "2bd1dbca-9775-405a-85c4-6bc5f673859b",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Fajhő: „az anyag hőmérsékletének megváltozásához szükséges hőmennyiség egységnyi tömegre vonatkoztatva”",
+   "explanation": "A fajhő a hőmérséklet 1 K-nyi megváltozásához szükséges hő 1 kg-ra vonatkoztatva; a megadott megfogalmazás a hőmérséklet-változást nem rögzíti.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Specific_heat_capacity",
+     "title": "Specific heat capacity",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) Az a hőmennyiség, amely 1 kg anyag hőmérsékletét 1 K-nel megváltoztatja.",
+    "explanation": "A fajhő megmutatja, hogy 1 kg anyag hőmérsékletének 1 K-nel való megváltoztatásához mennyi hő szükséges."
+   }
+  },
+  {
+   "block_id": "2bd1dbca-9775-405a-85c4-6bc5f673859b",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Milyen típusú égés jellemzi a gyertya lángját?” – A) lassú égés (kulcs), B) gyors égés, D) kémiai reakció",
+   "explanation": "A gyertya lángja lángolva égő (gyors) égés, a „lassú” besorolás vitatható; a D) sem téves, mert minden égés kémiai reakció. A kérdés több helyes választ enged.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Combustion",
+     "title": "Combustion",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "none"
+  },
+  {
+   "block_id": "07991ec1-8e4c-42bc-afe0-9007f4c0493b",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik halmazállapot-változás során szabadul fel energia?” – kulcs D) Lecsapódás, de B) Fagyás is",
+   "explanation": "A fagyás is hőleadással jár, így két válasz helyes. A B) helyett olyan változás kell, amely hőt vesz fel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Latent_heat",
+     "title": "Latent heat",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[1]": "B) Forrás"
+   }
+  },
+  {
+   "block_id": "07991ec1-8e4c-42bc-afe0-9007f4c0493b",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik halmazállapot-változás során hőmérséklet-növekedés tapasztalható?” – kulcs B) Olvadás",
+   "explanation": "Az olvadás közben az anyag hőmérséklete állandó (a víznél 0 °C), a felvett hő a kötések felbontására fordítódik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Latent_heat",
+     "title": "Latent heat",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik halmazállapot-változás közben vesz fel hőt az anyag?",
+    "options": [
+     "A) Fagyás",
+     "B) Olvadás",
+     "C) Lecsapódás",
+     "D) Deszublimáció"
+    ],
+    "explanation": "Az olvadás közben az anyag hőt vesz fel, miközben a hőmérséklete állandó marad (a víznél 0 °C)."
+   }
+  },
+  {
+   "block_id": "07991ec1-8e4c-42bc-afe0-9007f4c0493b",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Mi történik a víz 0 °C-ra való lehűtésekor?” – fagyás",
+   "explanation": "A 0 °C-ra hűlt víz csak akkor kezd fagyni, ha további hőt vonunk el tőle (a túlhűtött víz pedig 0 °C alatt is folyékony maradhat).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Freezing",
+     "title": "Freezing",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Mi történik a 0 °C-os vízzel, ha tovább hőt vonunk el tőle?",
+    "explanation": "A 0 °C-os víztől tovább hőt elvonva fagyás következik be, és a víz jéggé válik."
+   }
+  },
+  {
+   "block_id": "07991ec1-8e4c-42bc-afe0-9007f4c0493b",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mi a forráshő?” – kulcs B) „a víz forráspont eléréséhez szükséges hő”",
+   "explanation": "A forráshő a forráspontján lévő folyadék gőzzé alakításához szükséges hő (azonos a párolgáshővel); a forráspontig való melegítéshez szükséges hő nem forráshő.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Enthalpy_of_vaporization",
+     "title": "Enthalpy of vaporization",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "correct": "D",
+    "explanation": "A forráshő az a hőmennyiség, amely a forráspontján lévő víz gőzzé alakításához szükséges."
+   }
+  },
+  {
+   "block_id": "49f41218-a78e-4652-b7ac-880c718ae976",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi a hőmérséklet kiegyenlítődésének kísérleti vizsgálata?” – A) összekeverés és C) érintkezés is helyes",
+   "explanation": "Mindkét eljárás alkalmas a kiegyenlítődés vizsgálatára, így két válasz helyes.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Thermal_equilibrium",
+     "title": "Thermal equilibrium",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) Két azonos hőmérsékletű anyag összekeverése."
+   }
+  },
+  {
+   "block_id": "49f41218-a78e-4652-b7ac-880c718ae976",
+   "card_index": 5,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi a kuktafazék működésének alapja?” – A) a forráspont emelkedése, B) a nyomás növekedése (kulcs)",
+   "explanation": "Mindkettő igaz: a nyomás növekedése emeli a forráspontot, így a két válasz együtt jár.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pressure_cooking",
+     "title": "Pressure cooking",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) A víz fagyáspontjának emelkedése."
+   }
+  },
+  {
+   "block_id": "7ef2a976-366f-446d-ba0b-72b584df2346",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "unverifiable",
+   "severity": "medium",
+   "claim": "A hőtágulás jelenségét „a 18. században James Watt észlelte, amikor a gőzgépének hatékonyságát próbálta növelni”",
+   "explanation": "A hőtágulás felfedezőjeként Watt nem ismert; a hőtágulást már jóval korábban ismerték (a hőmérők is ezen alapulnak). Az állítás forrás nélküli.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Thermal_expansion",
+     "title": "Thermal expansion",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A hőtágulás jelenségét a 18. században James Watt észlelte, amikor a gőzgépének hatékonyságát próbálta növelni. Rájött, hogy a különböző anyagok hőmérsékletváltozásra másképp reagálnak, ami alapvető fontosságú volt a gőzgépek működésének megértésében.",
+     "A hőtágulás a folyadékos hőmérők működésének alapja: melegítéskor a folyadék kitágul, ezért emelkedik a hőmérőben. A különböző anyagok eltérően tágulnak, ezért készíthető belőlük bimetál szalag is."
+    ]
+   ]
+  },
+  {
+   "block_id": "e9295cc3-bf94-406a-b3b8-8de6c3ad26e6",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "„A hőtágulás jelenségét már az ókorban megfigyelték … a 18. századra tehető”",
+   "explanation": "Forrás nélküli, homályos történeti állítás. Helyette a jelenség lényegét érdemes leírni.",
+   "source_note": "a hőtan alapjai; forrás nélküli történeti állítás",
+   "replace": [
+    [
+     "A hőtágulás jelenségét már az ókorban megfigyelték, de a modern tudományos megértése a 18. századra tehető, amikor a hőmérséklet és a hőmérséklet-változás mérése egyre pontosabbá vált. A hőmérséklet kiegyenlítődésének felfedezése segítette a hőtan fejlődését, amely alapvető fontosságú a mérnöki tudományokban és a mindennapi életben is.",
+     "Ha két különböző hőmérsékletű test érintkezik, a hő magától mindig a melegebb felől a hidegebb felé áramlik, amíg a hőmérsékletük ki nem egyenlítődik. Ez a megfigyelés a hőtan egyik alapja."
+    ]
+   ]
+  },
+  {
+   "block_id": "f3c8b048-209d-47c1-8846-378a2c194e39",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "„A párolgás jelenségét már az ókorban megfigyelték … a 19. században …”",
+   "explanation": "Forrás nélküli, homályos történeti állítás; jobb a jelenség hatásait leírni.",
+   "source_note": "forrás nélküli történeti állítás",
+   "replace": [
+    [
+     "A párolgás jelenségét már az ókorban megfigyelték, de a modern tudományos megértéshez eljutottunk, amikor a 19. században a hőelmélet fejlődése lehetővé tette a hőmérséklet és a halmazállapot-változások közötti kapcsolat vizsgálatát. A párolgás sebességét befolyásoló tényezők, mint a hőmérséklet és a szél sebessége, alapvető fontosságúak a meteorológiai előrejelzésekhez.",
+     "A párolgás hőt von el a környezetből, ezért hűt az izzadás, és ezért fázunk meg a szélben, nedves ruhában. A párolgás sebessége a hőmérséklettől, a szélsebességtől, a páratartalomtól és a felület nagyságától függ."
+    ]
+   ]
+  },
+  {
+   "block_id": "7b59cc10-df97-4a30-a7c4-4114551028bd",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Joule „megteremtette a hőtan alapjait”",
+   "explanation": "Joule a hő mechanikai egyenértékét mérte meg, ez fontos hozzájárulás volt, de a hőtant nem ő teremtette meg egyedül.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/James_Prescott_Joule",
+     "title": "James Prescott Joule",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "felfedezte, hogy a mechanikai munka hővé alakítható, így megteremtette a hőtan alapjait.",
+     "kísérletekkel megmérte, hogy a mechanikai munka hővé alakítható, és meghatározta a hő mechanikai egyenértékét."
+    ]
+   ]
+  }
+ ]
+}
