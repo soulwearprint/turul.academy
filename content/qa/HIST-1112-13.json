@@ -1,0 +1,1077 @@
+{
+ "nat_id": "HIST-1112-13",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 16,
+  "cards": 83,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-1112-13-001",
+   "lesson_id": "7964a7e0-e720-4773-b3e4-9ebf232b8603",
+   "block_id": "9439a858-b7d9-4416-9530-14e1d6140183",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a Fidesz, az SZDSZ és a MDF”",
+   "explanation": "Az MDF kiejtése „em-dé-ef”, ezért „az MDF”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Democratic_Forum",
+     "title": "Hungarian Democratic Forum",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Kádár-rendszer végén egyre inkább megszerveződött az ellenzék, amely különböző politikai csoportosulásokból állt. A legjelentősebb ellenzéki szervezetek közé tartozott a Fidesz, az SZDSZ és a MDF. Ezek a csoportok különböző politikai programokat hirdettek, de közös céljuk a demokratikus változások elérése volt. Az ellenzék tevékenysége hozzájárult a társadalom mobilizálásához és a rendszerváltoztatás folyamatának felgyorsításához.",
+     "type": "text",
+     "heading": "Az ellenzék megszerveződése",
+     "key_term": ""
+    },
+    "after": {
+     "body": "A Kádár-rendszer végén egyre inkább megszerveződött az ellenzék, amely különböző politikai csoportosulásokból állt. A legjelentősebb ellenzéki szervezetek közé tartozott a Fidesz, az SZDSZ és az MDF. Ezek a csoportok különböző politikai programokat hirdettek, de közös céljuk a demokratikus változások elérése volt. Az ellenzék tevékenysége hozzájárult a társadalom mobilizálásához és a rendszerváltoztatás folyamatának felgyorsításához.",
+     "type": "text",
+     "heading": "Az ellenzék megszerveződése",
+     "key_term": ""
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-002",
+   "lesson_id": "7964a7e0-e720-4773-b3e4-9ebf232b8603",
+   "block_id": "9439a858-b7d9-4416-9530-14e1d6140183",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Ez a folyamat végül a Kádár-rendszer hivatalos végét jelentette”",
+   "explanation": "Hiányzik a lényeg: a Nemzeti Kerekasztal-tárgyalások 1989. június 13. és szeptember 18. között zajlottak; az SZDSZ és a Fidesz nem írta alá a megállapodást, ezért november 26-án négyigenes népszavazást tartottak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Round_Table_Talks",
+     "title": "Hungarian Round Table Talks",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1989_Hungarian_referendum",
+     "title": "1989 Hungarian referendum",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az 1989-es év Magyarország történetében kulcsfontosságú volt, hiszen a rendszerváltozás folyamata ekkor indult el. A tárgyalásos forradalom keretében az ellenzék és a kormány képviselői között párbeszéd kezdődött, amely végül a politikai rendszer átalakulásához vezetett. A Nemzeti Kerekasztal megalakulása lehetővé tette a demokratikus átmenetet, ahol a különböző politikai erők egyeztettek a jövőről. Ez a folyamat végül a Kádár-rendszer hivatalos végét jelentette.",
+     "type": "text",
+     "heading": "Az 1989-es év főbb politikai eseményei, a tárgyalásos forradalom",
+     "key_term": "Nemzeti Kerekasztal"
+    },
+    "after": {
+     "body": "Az 1989-es év Magyarország történetében kulcsfontosságú volt, hiszen a rendszerváltozás folyamata ekkor indult el. A tárgyalásos forradalom keretében az ellenzék és a kormány képviselői között párbeszéd kezdődött, amely végül a politikai rendszer átalakulásához vezetett. A Nemzeti Kerekasztal megalakulása lehetővé tette a demokratikus átmenetet, ahol a különböző politikai erők egyeztettek a jövőről. A tárgyalások (1989. június 13. – szeptember 18.) eredményeként megszületett a megállapodás az alkotmánymódosításról és a szabad választásokról; az SZDSZ és a Fidesz azonban nem írta alá, ezért november 26-án négyigenes népszavazást tartottak.",
+     "type": "text",
+     "heading": "Az 1989-es év főbb politikai eseményei, a tárgyalásos forradalom",
+     "key_term": "Nemzeti Kerekasztal"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-003",
+   "lesson_id": "e0ccb151-7d4d-436f-a3d9-16884926afd2",
+   "block_id": "0ca456dd-8156-434a-b62e-ece5f623b1fc",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1990. március 25-én Magyarországon tartották az első szabad parlamenti és önkormányzati választásokat”",
+   "explanation": "A parlamenti választás első fordulója 1990. március 25-én, a második április 8-án volt; az önkormányzati választás 1990. szeptember 30-án és október 14-én.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1990_Hungarian_parliamentary_election",
+     "title": "1990 Hungarian parliamentary election",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1990. március 25-én Magyarországon tartották az első szabad parlamenti és önkormányzati választásokat a kommunizmus bukása után. Ez a választás a demokratikus berendezkedés alapjait teremtette meg, és lehetőséget biztosított a különböző politikai pártok számára, hogy részt vegyenek a közéletben. Az MDF nyerte a választásokat, amely Antall József vezetésével alakította meg a kormányt. A választások jelentős lépést jelentettek a demokratikus intézmények kiépítésében és a politikai pluralizmus megteremtésében.",
+     "type": "text",
+     "heading": "Az 1990. évi parlamenti és önkormányzati választás",
+     "key_term": "1990, parlamenti választás"
+    },
+    "after": {
+     "body": "1990. március 25-én (második forduló: április 8.) tartották Magyarországon az első szabad parlamenti választást a kommunizmus bukása után; az önkormányzati választásra 1990 szeptemberében és októberében került sor. Ez a választás a demokratikus berendezkedés alapjait teremtette meg, és lehetőséget biztosított a különböző politikai pártok számára, hogy részt vegyenek a közéletben. Az MDF nyerte a választásokat, amely Antall József vezetésével alakította meg a kormányt. A választások jelentős lépést jelentettek a demokratikus intézmények kiépítésében és a politikai pluralizmus megteremtésében.",
+     "type": "text",
+     "heading": "Az 1990. évi parlamenti és önkormányzati választás",
+     "key_term": "1990, parlamenti választás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-004",
+   "lesson_id": "e0ccb151-7d4d-436f-a3d9-16884926afd2",
+   "block_id": "0ca456dd-8156-434a-b62e-ece5f623b1fc",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Horn Gyula … és Göncz Árpád, a köztársasági elnök, a kompromisszumok mellett érvelt”",
+   "explanation": "Homályos, forrás nélküli. Konkrét: az 1991-es Zétényi–Takács-törvény (a politikai bűncselekmények elévülésének felfüggesztéséről) ellen Göncz Árpád alkotmányossági aggályokat emelt, az Alkotmánybíróság pedig 1992-ben megsemmisítette.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_transition_to_democracy",
+     "title": "Hungarian transition to democracy",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Zétényi–Takács_law",
+     "title": "Zétényi–Takács law",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A rendszerváltoztatás folyamata nem volt mentes ellentmondásoktól, amelyek közül az egyik legnagyobb az elmaradt elszámoltatás kérdése volt. Sok politikai szereplő, köztük Horn Gyula, a szocialista párt vezetője, és Göncz Árpád, a köztársasági elnök, a kompromisszumok mellett érvelt, amelyek a politikai stabilitás érdekében születtek. Az alkuk és a politikai megállapodások nem mindig szolgálták a társadalom érdekeit, és sokan úgy érezték, hogy a múlt bűneinek elszámoltatása elmaradt.",
+     "type": "text",
+     "heading": "A rendszerváltoztatás ellentmondásai",
+     "key_term": "Horn Gyula, Göncz Árpád, elszámoltatás"
+    },
+    "after": {
+     "body": "A rendszerváltoztatás folyamata nem volt mentes ellentmondásoktól, amelyek közül az egyik legnagyobb az elmaradt elszámoltatás kérdése volt. Az 1991-es Zétényi–Takács-törvény, amely lehetővé tette volna az 1944–90 közötti, elévült politikai bűncselekmények üldözését, alkotmányossági vitát váltott ki: Göncz Árpád köztársasági elnök aggályokat fogalmazott meg, az Alkotmánybíróság 1992-ben megsemmisítette, a jogbiztonságra hivatkozva. Az alkuk és a politikai megállapodások nem mindig szolgálták a társadalom érdekeit, és sokan úgy érezték, hogy a múlt bűneinek elszámoltatása elmaradt.",
+     "type": "text",
+     "heading": "A rendszerváltoztatás ellentmondásai",
+     "key_term": "Horn Gyula, Göncz Árpád, elszámoltatás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-005",
+   "lesson_id": "e0ccb151-7d4d-436f-a3d9-16884926afd2",
+   "block_id": "0ca456dd-8156-434a-b62e-ece5f623b1fc",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a rendszerváltoztatás során a népszavazások, mint például az 1997-es népszavazás”",
+   "explanation": "Az 1997-es népszavazás (november 16., NATO-csatlakozás, kb. 85 százalék igen) már a rendszerváltás után volt. A rendszerváltás jellegzetes népszavazása az 1989. november 26-i négyigenes.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1989_Hungarian_referendum",
+     "title": "1989 Hungarian referendum",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1997_Hungarian_NATO_referendum",
+     "title": "1997 Hungarian NATO referendum",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A rendszerváltoztatás során a népszavazások, mint például az 1997-es népszavazás, fontos szerepet játszottak a demokratikus döntéshozatalban. A népszavazás lehetőséget adott a polgároknak arra, hogy kifejezzék véleményüket a fontos politikai kérdésekről. A népszavazások eredményei gyakran befolyásolták a politikai döntéseket és a pártok stratégiáit. A demokratikus folyamatok során a népszavazás mint eszköz a közvélemény formálásában is jelentős szerepet játszott.",
+     "type": "text",
+     "heading": "A népszavazás szerepe",
+     "key_term": "népszavazás"
+    },
+    "after": {
+     "body": "A rendszerváltoztatás során a népszavazások, mint az 1989. november 26-i négyigenes népszavazás vagy az 1997. november 16-i NATO-népszavazás (a szavazók mintegy 85 százaléka igent mondott a csatlakozásra), fontos szerepet játszottak a demokratikus döntéshozatalban. A népszavazás lehetőséget adott a polgároknak arra, hogy kifejezzék véleményüket a fontos politikai kérdésekről. A népszavazások eredményei gyakran befolyásolták a politikai döntéseket és a pártok stratégiáit. A demokratikus folyamatok során a népszavazás mint eszköz a közvélemény formálásában is jelentős szerepet játszott.",
+     "type": "text",
+     "heading": "A népszavazás szerepe",
+     "key_term": "népszavazás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-006",
+   "lesson_id": "e0ccb151-7d4d-436f-a3d9-16884926afd2",
+   "block_id": "0ca456dd-8156-434a-b62e-ece5f623b1fc",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A Fidesz 1998-ban, a második parlamenti választásokon már kormányra került”; „a 1990-es évek elején”",
+   "explanation": "1998 a harmadik szabad parlamenti választás volt (1990, 1994, 1998). Nyelvtan: „a 1990-es”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1998_Hungarian_parliamentary_election",
+     "title": "1998 Hungarian parliamentary election",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Viktor_Orbán",
+     "title": "Viktor Orbán",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Orbán Viktor a Fidesz vezetőjeként a 1990-es évek elején kezdett politikai pályafutásának emelkedésébe. A Fidesz kezdetben liberális pártként indult, de idővel a konzervatív értékek felé mozdult el. Orbán Viktor politikai stratégiája a fiatalok és a középosztály megszólítására épült, ami hozzájárult a párt népszerűségének növekedéséhez. A Fidesz 1998-ban, a második parlamenti választásokon már kormányra került, Orbán Viktor pedig miniszterelnök lett.",
+     "type": "text",
+     "heading": "Orbán Viktor és a Fidesz felemelkedése",
+     "key_term": "Orbán Viktor, Fidesz"
+    },
+    "after": {
+     "body": "Orbán Viktor a Fidesz vezetőjeként az 1990-es évek elején kezdett politikai pályafutásának emelkedésébe. A Fidesz kezdetben liberális pártként indult, de idővel a konzervatív értékek felé mozdult el. Orbán Viktor politikai stratégiája a fiatalok és a középosztály megszólítására épült, ami hozzájárult a párt népszerűségének növekedéséhez. A Fidesz 1998-ban, a harmadik szabad parlamenti választáson már kormányra került (koalícióban a kisgazdákkal és az MDF-fel), Orbán Viktor pedig miniszterelnök lett.",
+     "type": "text",
+     "heading": "Orbán Viktor és a Fidesz felemelkedése",
+     "key_term": "Orbán Viktor, Fidesz"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-007",
+   "lesson_id": "522c3efc-3bd1-4e63-924a-f3c0ca83c824",
+   "block_id": "079d89d0-410c-49ce-9b68-189343fb7d8b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a dolgozók és a helyi közösségek nem kapták vissza a korábbi tulajdonukat”; „a 1990-es évek elején”",
+   "explanation": "A kárpótlás (1991–92-es törvények) nem természetbeni visszaadás volt, hanem kárpótlási jegy, amellyel földet, ingatlant vagy részvényt lehetett vásárolni. A „dolgozók … nem kapták vissza” zavaros. Nyelvtan: „a 1990-es”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Privatization_in_Hungary",
+     "title": "Privatization in Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Compensation_vouchers_(Hungary)",
+     "title": "Compensation vouchers (Hungary)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A privatizáció folyamata a rendszerváltoztatás egyik kulcsfontosságú eleme volt, amely a 1990-es évek elején kezdődött Magyarországon. Az állami tulajdonú vállalatok magánkézbe adása a gazdasági reformok részeként zajlott, célja a hatékonyság növelése és a versenyképesség javítása volt. A kárpótlás intézménye a privatizációval párhuzamosan lépett életbe, amely a korábbi államosításokért járó kártalanítást célozta meg. Az új tulajdonosi struktúrák kialakulása során sok esetben a dolgozók és a helyi közösségek nem kapták vissza a korábbi tulajdonukat, ami feszültségeket okozott a társadalomban.",
+     "type": "text",
+     "heading": "Privatizáció és kárpótlás",
+     "key_term": "privatizáció, kárpótlás"
+    },
+    "after": {
+     "body": "A privatizáció folyamata a rendszerváltoztatás egyik kulcsfontosságú eleme volt, amely az 1990-es évek elején kezdődött Magyarországon. Az állami tulajdonú vállalatok magánkézbe adása a gazdasági reformok részeként zajlott, célja a hatékonyság növelése és a versenyképesség javítása volt. A kárpótlás intézménye a privatizációval párhuzamosan lépett életbe, amely a korábbi államosításokért járó kártalanítást célozta meg. A kárpótlás nem természetbeni visszaadást jelentett: a károsultak kárpótlási jegyet kaptak, amellyel földet, ingatlant vagy részvényt vásárolhattak (1991–92-es törvények). Az új tulajdonosi struktúra kialakulása sok feszültséget okozott.",
+     "type": "text",
+     "heading": "Privatizáció és kárpótlás",
+     "key_term": "privatizáció, kárpótlás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-008",
+   "lesson_id": "522c3efc-3bd1-4e63-924a-f3c0ca83c824",
+   "block_id": "079d89d0-410c-49ce-9b68-189343fb7d8b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A 1990-es évek elején”",
+   "explanation": "Nyelvtan: „Az 1990-es”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Foreign_direct_investment_in_Hungary",
+     "title": "Foreign direct investment in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A piacgazdaság kiépítése során a külföldi tőke beáramlása jelentős szerepet játszott Magyarország gazdasági átalakulásában. A 1990-es évek elején a külföldi befektetők a privatizációs folyamat részeként vásároltak meg állami vállalatokat, ezzel új technológiákat és menedzsmentgyakorlatokat hozva az országba. A külföldi tőke bevonása hozzájárult a gazdasági stabilitás megteremtéséhez és a munkahelyek megőrzéséhez. Azonban a külföldi tulajdonú cégek dominanciája sok esetben a hazai vállalkozások háttérbe szorulását is eredményezte.",
+     "type": "text",
+     "heading": "A külföldi tőke szerepe",
+     "key_term": "külföldi tőke"
+    },
+    "after": {
+     "body": "A piacgazdaság kiépítése során a külföldi tőke beáramlása jelentős szerepet játszott Magyarország gazdasági átalakulásában. Az 1990-es évek elején a külföldi befektetők a privatizációs folyamat részeként vásároltak meg állami vállalatokat, ezzel új technológiákat és menedzsmentgyakorlatokat hozva az országba. A külföldi tőke bevonása hozzájárult a gazdasági stabilitás megteremtéséhez és a munkahelyek megőrzéséhez. Azonban a külföldi tulajdonú cégek dominanciája sok esetben a hazai vállalkozások háttérbe szorulását is eredményezte.",
+     "type": "text",
+     "heading": "A külföldi tőke szerepe",
+     "key_term": "külföldi tőke"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-009",
+   "lesson_id": "522c3efc-3bd1-4e63-924a-f3c0ca83c824",
+   "block_id": "079d89d0-410c-49ce-9b68-189343fb7d8b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a nehézipar helyett a szolgáltatások és a könnyűipar irányába terelte a magyar gazdaságot”",
+   "explanation": "A bányászat és a nehézipar visszaszorult, de az új fő iparágak a külföldi tőkére épülő járműipar és elektronika lettek, nem a könnyűipar. Az ipar részesedése csak mérsékelten csökkent.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Economy_of_Hungary",
+     "title": "Economy of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A gazdasági szerkezetváltás a rendszerváltoztatás következményeként zajlott, amely a nehézipar helyett a szolgáltatások és a könnyűipar irányába terelte a magyar gazdaságot. Az új gazdasági környezetben a versenyképesség javítása érdekében szükség volt a munkaerő átképzésére és a technológiai fejlesztésekre. A szerkezetváltás eredményeként a GDP szerkezetében a szolgáltatások aránya drámaian megnőtt, míg a mezőgazdaság és az ipar részesedése csökkent. Ez a folyamat hozzájárult a modern gazdaság kialakulásához Magyarországon.",
+     "type": "text",
+     "heading": "Gazdasági szerkezetváltás",
+     "key_term": "gazdasági szerkezetváltás"
+    },
+    "after": {
+     "body": "A gazdasági szerkezetváltás a rendszerváltoztatás következményeként zajlott, amely a bányászat és a nehézipar visszaszorulásához, a szolgáltatások megerősödéséhez és a külföldi tőkére épülő járműipar és elektronikai ipar kialakulásához vezetett. Az új gazdasági környezetben a versenyképesség javítása érdekében szükség volt a munkaerő átképzésére és a technológiai fejlesztésekre. A szerkezetváltás eredményeként a GDP szerkezetében a szolgáltatások aránya drámaian megnőtt, míg a mezőgazdaság részesedése erősen, az iparé mérsékelten csökkent. Ez a folyamat hozzájárult a modern gazdaság kialakulásához Magyarországon.",
+     "type": "text",
+     "heading": "Gazdasági szerkezetváltás",
+     "key_term": "gazdasági szerkezetváltás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-010",
+   "lesson_id": "522c3efc-3bd1-4e63-924a-f3c0ca83c824",
+   "block_id": "079d89d0-410c-49ce-9b68-189343fb7d8b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Magyarország, Szlovákia, Csehország és Lengyelország” (1991)",
+   "explanation": "1991-ben még Csehszlovákia létezett (a szétválás 1993. január 1-jén történt); az alapítók Antall József, Václav Havel és Lech Wałęsa voltak (Visegrád, 1991. február 15.).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Visegrád_Group",
+     "title": "Visegrád Group",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A visegrádi együttműködés 1991-ben alakult meg, célja a közép-európai országok, köztük Magyarország, Szlovákia, Csehország és Lengyelország együttműködésének erősítése volt. A politikai és gazdasági reformok koordinálása, valamint a közös érdekek képviselete a nemzetközi porondon volt a fő célkitűzés. A visegrádi együttműködés hozzájárult a térség stabilitásához és a demokratikus értékek terjesztéséhez, valamint a csatlakozási folyamatok elősegítéséhez az Európai Unióhoz.",
+     "type": "text",
+     "heading": "A visegrádi együttműködés",
+     "key_term": "visegrádi együttműködés"
+    },
+    "after": {
+     "body": "A visegrádi együttműködés 1991-ben alakult meg, célja a közép-európai országok, köztük Magyarország, Csehszlovákia és Lengyelország (1993 óta Csehország és Szlovákia külön) együttműködésének erősítése volt. A politikai és gazdasági reformok koordinálása, valamint a közös érdekek képviselete a nemzetközi porondon volt a fő célkitűzés. A visegrádi együttműködés hozzájárult a térség stabilitásához és a demokratikus értékek terjesztéséhez, valamint a csatlakozási folyamatok elősegítéséhez az Európai Unióhoz.",
+     "type": "text",
+     "heading": "A visegrádi együttműködés",
+     "key_term": "visegrádi együttműködés"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-011",
+   "lesson_id": "522c3efc-3bd1-4e63-924a-f3c0ca83c824",
+   "block_id": "079d89d0-410c-49ce-9b68-189343fb7d8b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„több mint négy évtizedes megszállást”; „a politikai függetlenség és a szuverenitás helyreállítását”",
+   "explanation": "1957 óta a szovjet csapatok jelenlétét hivatalosan szerződés szabályozta; a kivonulásról az 1990. március 10-i moszkvai megállapodás döntött.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Soviet_Army_in_Hungary",
+     "title": "Soviet Army in Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Central_Group_of_Forces",
+     "title": "Central Group of Forces",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1991. június 19-én a szovjet csapatok véglegesen kivonultak Magyarországról, ezzel lezárva egy több mint négy évtizedes megszállást. A kivonulás nemcsak a katonai jelenlét végét jelentette, hanem a politikai függetlenség és a szuverenitás helyreállítását is. Ez a történelmi esemény alapvetően befolyásolta a magyar társadalom és politika alakulását, és hozzájárult a demokratikus átalakulás gyorsításához. A szovjet csapatok távozása lehetőséget adott a nyugati integrációs folyamatok felgyorsítására is.",
+     "type": "text",
+     "heading": "A szovjet csapatok kivonulása",
+     "key_term": "1991, szovjet csapatok kivonulása"
+    },
+    "after": {
+     "body": "1991. június 19-én a szovjet csapatok véglegesen kivonultak Magyarországról, ezzel lezárva a szovjet csapatok több mint négy évtizedes jelenlétét (a kivonulásról az 1990. március 10-i moszkvai megállapodás döntött). A kivonulás nemcsak a katonai jelenlét végét jelentette, hanem a politikai függetlenség és a szuverenitás helyreállítását is. Ez a történelmi esemény alapvetően befolyásolta a magyar társadalom és politika alakulását, és hozzájárult a demokratikus átalakulás gyorsításához. A szovjet csapatok távozása lehetőséget adott a nyugati integrációs folyamatok felgyorsítására is.",
+     "type": "text",
+     "heading": "A szovjet csapatok kivonulása",
+     "key_term": "1991, szovjet csapatok kivonulása"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-012",
+   "lesson_id": "7964a7e0-e720-4773-b3e4-9ebf232b8603",
+   "block_id": "a5daf113-6188-46ea-bf93-c91f8957fed2",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A német példát követve a magyar társadalom is … demokratikus reformok irányába mozdult”; link_hu: a fal leomlása „közvetlenül inspirálta a magyar ellenzéki mozgalmakat”",
+   "explanation": "Fordított sorrend: a magyar Nemzeti Kerekasztal 1989 szeptemberében megállapodott, a határnyitás (szeptember 11.) az NDK bukását gyorsította. A fal 1989. november 9-én megnyílt, nem „leomlott”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Berlin_Wall",
+     "title": "Berlin Wall",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Round_Table_Talks",
+     "title": "Hungarian Round Table Talks",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1989. november 9-én a berlini fal leomlása jelzi a hidegháború végének kezdetét, amely a kelet-európai kommunista rendszerek gyors összeomlásához vezetett. A fal lebontása a német újraegyesítés első lépése volt, és jelentős hatással volt a szovjet blokk országaira, beleértve Magyarországot is. A német példát követve a magyar társadalom is egyre inkább a demokratikus reformok irányába mozdult el, ami hozzájárult a Kádár-rendszer válságának mélyüléséhez.",
+     "type": "world",
+     "year": "1989",
+     "heading": "A berlini fal leomlása",
+     "link_hu": "A berlini fal leomlása közvetlenül inspirálta a magyar ellenzéki mozgalmakat, amelyek a rendszerváltoztatásra irányuló tárgyalásokhoz vezettek."
+    },
+    "after": {
+     "body": "1989. november 9-én megnyílt a berlini fal. Az esemény a hidegháború végének szimbóluma lett; a kelet-német menekültek tömeges távozása és a magyar határnyitás (szeptember 11.) is hozzájárult az NDK összeomlásához.",
+     "type": "world",
+     "year": "1989",
+     "heading": "A berlini fal leomlása",
+     "link_hu": "A magyar átmenet a fal megnyitása előtt már zajlott: a Nemzeti Kerekasztal 1989 szeptemberében megállapodásra jutott, a magyar határnyitás pedig gyorsította az NDK bukását."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-013",
+   "lesson_id": "7964a7e0-e720-4773-b3e4-9ebf232b8603",
+   "block_id": "a5daf113-6188-46ea-bf93-c91f8957fed2",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: „A nyugati támogatás segítette a magyar ellenzéki mozgalmak megerősödését, amely a Kerekasztal-tárgyalásokhoz vezetett”",
+   "explanation": "Homályos, ellenőrizhetetlen okság. Konkrét: George H. W. Bush 1989. július 11–12-én Budapestre látogatott; az EK 1989-ben létrehozta a PHARE-programot Lengyelország és Magyarország támogatására.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/George_H._W._Bush",
+     "title": "George H. W. Bush",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Phare",
+     "title": "Phare",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1989-ben a nyugati országok, különösen az Egyesült Államok és az Európai Közösség, aktívan támogatták a kelet-európai demokratikus mozgalmakat. A nyugati világ figyelme a térségre összpontosult, ami hozzájárult a kommunista rezsimek megbuktatásához. A támogatás formája lehetett anyagi segítség, politikai nyomás vagy diplomáciai támogatás.",
+     "type": "world",
+     "year": "1989",
+     "heading": "A nyugati országok támogatása",
+     "link_hu": "A nyugati támogatás segítette a magyar ellenzéki mozgalmak megerősödését, amely a Kerekasztal-tárgyalásokhoz vezetett."
+    },
+    "after": {
+     "body": "1989-ben a nyugati országok, különösen az Egyesült Államok és az Európai Közösség, aktívan támogatták a kelet-európai demokratikus mozgalmakat. A nyugati világ figyelme a térségre összpontosult, ami hozzájárult a kommunista rezsimek megbuktatásához. A támogatás formája lehetett anyagi segítség, politikai nyomás vagy diplomáciai támogatás.",
+     "type": "world",
+     "year": "1989",
+     "heading": "A nyugati országok támogatása",
+     "link_hu": "George H. W. Bush amerikai elnök 1989. július 11–12-én Budapestre látogatott, az Európai Közösség pedig 1989-ben létrehozta a PHARE-programot, amelyet először Lengyelországnak és Magyarországnak nyújtott."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-014",
+   "lesson_id": "e0ccb151-7d4d-436f-a3d9-16884926afd2",
+   "block_id": "cfaa132b-cb18-4ed2-a535-d388f11d2f0e",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„közvetlen hatással voltak a kelet-európai országok rendszerváltoztatásaira” (az 1990-es egyesítés)",
+   "explanation": "Fordított időrend: az egyesítés (1990. október 3.) a magyar rendszerváltás (1989–90) után történt. A link_hu (az egyesítés erősítette az MDF-et és az SZDSZ-t) kitalált.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/German_reunification",
+     "title": "German reunification",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Two_Plus_Four_Treaty",
+     "title": "Two Plus Four Treaty",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1990. október 3-án hivatalosan is egyesült Németország, miután a keleti és nyugati részek közötti határokat lebontották. Az esemény jelentős politikai és gazdasági változásokat hozott Európában, amelyek közvetlen hatással voltak a kelet-európai országok rendszerváltoztatásaira. A kelet-német állampolgárok tömeges kivándorlása és a Szovjetunió gyengülése hozzájárult a közép- és kelet-európai országok demokratikus átalakulásához.",
+     "type": "world",
+     "year": "1990",
+     "heading": "A német újraegyesítés folyamata",
+     "link_hu": "A német újraegyesítés elősegítette a magyarországi pártok, mint a Magyar Demokrata Fórum és a Szabad Demokraták Szövetsége megerősödését, valamint a rendszerváltoztatás irányvonalának kialakulását."
+    },
+    "after": {
+     "body": "1990. október 3-án az NDK csatlakozott az NSZK-hoz, így Németország újra egyesült. Az egyesítést a „kettő plusz négy” szerződés (1990. szeptember 12.) szabályozta, és az egyesült Németország NATO-tag maradt.",
+     "type": "world",
+     "year": "1990",
+     "heading": "A német újraegyesítés folyamata",
+     "link_hu": "Magyarország 1989 szeptemberében megnyitott határával hozzájárult az NDK összeomlásához; az egyesítés után Németország lett Magyarország legfontosabb kereskedelmi partnere és egyik legnagyobb külföldi befektetője."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-015",
+   "lesson_id": "522c3efc-3bd1-4e63-924a-f3c0ca83c824",
+   "block_id": "be8f101d-a87d-456f-abd9-e016d3fc9ebb",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "link_hu: a Szovjetunió felbomlása „hozzájárult a magyar privatizációs folyamatok felgyorsulásához”",
+   "explanation": "Kitalált okság. Valós hatás: a KGST 1991 júniusában megszűnt, és a magyar exportban jelentős szovjet piac összeomlott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Comecon",
+     "title": "Comecon",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
+     "title": "Dissolution of the Soviet Union",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1991 augusztusában a Szovjetunióban puccsot kíséreltek meg a kommunista párt konzervatív szárnyának tagjai, amely végül kudarcot vallott. Ezt követően a szovjet tagállamok, köztük Oroszország, független államokká váltak, és december 26-án a Szovjetunió hivatalosan felbomlott. A függetlenség kivívása számos országban politikai és gazdasági reformokat indított el, amelyek a piacgazdaság kialakulásához vezettek.",
+     "type": "world",
+     "year": "1991",
+     "heading": "A Szovjetunió felbomlása",
+     "link_hu": "A Szovjetunió felbomlása hozzájárult a magyar privatizációs folyamatok felgyorsulásához, mivel a kelet-európai országok, köztük Magyarország is, a piacgazdaság irányába mozdultak el, és a külföldi tőke bevonására törekedtek."
+    },
+    "after": {
+     "body": "1991 augusztusában a Szovjetunióban puccsot kíséreltek meg a kommunista párt konzervatív szárnyának tagjai, amely végül kudarcot vallott. Ezt követően a szovjet tagállamok, köztük Oroszország, független államokká váltak, és december 26-án a Szovjetunió hivatalosan felbomlott. A függetlenség kivívása számos országban politikai és gazdasági reformokat indított el, amelyek a piacgazdaság kialakulásához vezettek.",
+     "type": "world",
+     "year": "1991",
+     "heading": "A Szovjetunió felbomlása",
+     "link_hu": "A KGST 1991. június 28-i megszűnésével és a Szovjetunió felbomlásával a magyar kivitel egyik fő piaca összeomlott, ami mélyítette az átalakulási válságot."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-016",
+   "lesson_id": "7964a7e0-e720-4773-b3e4-9ebf232b8603",
+   "block_id": "5bb4c405-c05c-440a-8eb4-abe6e3592475",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„1987, az ellenzék egységének megteremtése” (lakiteleki találkozó)",
+   "explanation": "A lakiteleki találkozó (1987. szeptember 27.) a népi-nemzeti értelmiség összejövetele volt, az MDF megalakulásának előzménye; nem az „ellenzék egységét” hozta létre.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Democratic_Forum",
+     "title": "Hungarian Democratic Forum",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1989, a politikai rendszerváltozás előkészítése",
+      "B) 1987, az ellenzék egységének megteremtése",
+      "C) 1990, a harmadik köztársaság kikiáltása",
+      "D) 1988, a gazdasági reformok bevezetése"
+     ],
+     "question": "Mikor zajlott a lakiteleki találkozó, és mi volt a célja?",
+     "explanation": "A lakiteleki találkozó 1987-ben zajlott, és célja az ellenzék egységének megteremtése volt, amely megelőzte a rendszerváltoztatás folyamatát.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1989, a politikai rendszerváltozás előkészítése",
+      "1987, a népi-nemzeti értelmiség találkozója, az MDF megalakulásának előzménye",
+      "C) 1990, a harmadik köztársaság kikiáltása",
+      "D) 1988, a gazdasági reformok bevezetése"
+     ],
+     "question": "Mikor zajlott a lakiteleki találkozó, és mi volt a célja?",
+     "explanation": "A lakiteleki találkozó 1987. szeptember 27-én volt, a népi-nemzeti értelmiség összejövetele, amely az MDF megalakulásához vezetett.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-017",
+   "lesson_id": "e0ccb151-7d4d-436f-a3d9-16884926afd2",
+   "block_id": "33811052-9c26-4d5d-9668-d655700a7027",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "„Az 1990-es év volt az első szabad választások éve Magyarország történetében”",
+   "explanation": "Az 1945-ös választás is szabad volt. Az 1990-es az első szabad többpárti választás a kommunista rendszer bukása után.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1990_Hungarian_parliamentary_election",
+     "title": "1990 Hungarian parliamentary election",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1945_Hungarian_parliamentary_election",
+     "title": "1945 Hungarian parliamentary election",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1989",
+      "B) 1990",
+      "C) 1991",
+      "D) 1992"
+     ],
+     "question": "Melyik évben zajlottak az első szabad parlamenti és önkormányzati választások Magyarországon?",
+     "explanation": "Az 1990-es év volt az első szabad választások éve Magyarország történetében, ami a rendszerváltoztatás fontos eseménye volt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1989",
+      "B) 1990",
+      "C) 1991",
+      "D) 1992"
+     ],
+     "question": "Melyik évben zajlottak az első szabad parlamenti és önkormányzati választások Magyarországon?",
+     "explanation": "1990-ben tartották az első szabad többpárti parlamenti választást a kommunista rendszer bukása után (1945-ben is volt szabad választás, de az 1947-es már nem).",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-018",
+   "lesson_id": "e0ccb151-7d4d-436f-a3d9-16884926afd2",
+   "block_id": "33811052-9c26-4d5d-9668-d655700a7027",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik párt alakult meg 1988-ban, és a liberális értékeket képviselte?” (kulcs: C, SZDSZ)",
+   "explanation": "A Fidesz is 1988-ban alakult (március 30.), és eleinte liberális volt: két helyes válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Alliance_of_Free_Democrats",
+     "title": "Alliance of Free Democrats",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Fidesz",
+     "title": "Fidesz",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Kereszténydemokrata Néppárt (KDNP)",
+      "B) Fiatal Demokraták Szövetsége (Fidesz)",
+      "C) Szabad Demokraták Szövetsége (SZDSZ)",
+      "D) Magyar Szocialista Párt (MSZP)"
+     ],
+     "question": "Melyik párt alakult meg 1988-ban, és a liberális értékeket képviselte a rendszerváltoztatás során?",
+     "explanation": "A Szabad Demokraták Szövetsége (SZDSZ) 1988-ban alakult, és a liberális eszmék képviseletére jött létre.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Kereszténydemokrata Néppárt (KDNP)",
+      "B) Fiatal Demokraták Szövetsége (Fidesz)",
+      "C) Szabad Demokraták Szövetsége (SZDSZ)",
+      "D) Magyar Szocialista Párt (MSZP)"
+     ],
+     "question": "Melyik 1988-ban alakult liberális párt lett az 1990-es választás után a legnagyobb ellenzéki párt?",
+     "explanation": "A Szabad Demokraták Szövetsége (SZDSZ) 1988-ban alakult, és a liberális eszmék képviseletére jött létre.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-019",
+   "lesson_id": "e0ccb151-7d4d-436f-a3d9-16884926afd2",
+   "block_id": "33811052-9c26-4d5d-9668-d655700a7027",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Melyik fogalom kapcsolódik … új jogi keretekhez, amelyek alapvető szabályokat állapítanak meg?”",
+   "explanation": "Az „alkotmány” is illik a leírásra: kétértelmű. A sarkalatos törvény pontos definíciója a kétharmados többséggel elfogadott törvény.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cardinal_laws_(Hungary)",
+     "title": "Cardinal laws (Hungary)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) népszavazás",
+      "B) sarkalatos törvények",
+      "C) alkotmány",
+      "D) politikai pártok"
+     ],
+     "question": "Melyik fogalom kapcsolódik a rendszerváltoztatás során bevezetett új jogi keretekhez, amelyek alapvető szabályokat állapítanak meg?",
+     "explanation": "A sarkalatos törvények a rendszerváltoztatás során fontos jogszabályokat jelentenek, amelyek meghatározzák az állam működését.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) népszavazás",
+      "B) sarkalatos törvények",
+      "C) alkotmány",
+      "D) politikai pártok"
+     ],
+     "question": "Melyik fogalom jelöli azokat a törvényeket, amelyek elfogadásához a jelenlévő képviselők kétharmadának szavazata kell?",
+     "explanation": "A sarkalatos törvények a rendszerváltoztatás során fontos jogszabályokat jelentenek, amelyek meghatározzák az állam működését.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-020",
+   "lesson_id": "522c3efc-3bd1-4e63-924a-f3c0ca83c824",
+   "block_id": "25377eca-541c-4d81-9bc7-fad7d7ce22ac",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mi a kárpótlás célja?” (kulcs: B, a rendszerváltozás során elszenvedett veszteségek kompenzálása)",
+   "explanation": "A kárpótlás az 1939–1990 között elszenvedett jogtalanságokat (elkobzott vagyon, politikai üldöztetés) kompenzálta, nem a rendszerváltozás veszteségeit.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Compensation_vouchers_(Hungary)",
+     "title": "Compensation vouchers (Hungary)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az állami tulajdon privatizálása",
+      "B) A rendszerváltozás során elszenvedett veszteségek kompenzálása",
+      "C) A jogállam kialakítása",
+      "D) A külkereskedelem fejlesztése"
+     ],
+     "question": "Mi a kárpótlás célja?",
+     "explanation": "A kárpótlás a rendszerváltozás alatt a magánszemélyek és szervezetek által elszenvedett veszteségek kompenzálását szolgálta, különösen a föld- és ingatlanvisszaadás keretében.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az állami tulajdon privatizálása",
+      "Az 1939 és 1990 közötti jogtalanságok (elkobzott vagyon, politikai üldöztetés) kompenzálása",
+      "C) A jogállam kialakítása",
+      "D) A külkereskedelem fejlesztése"
+     ],
+     "question": "Mi a kárpótlás célja?",
+     "explanation": "A kárpótlás az 1939 és 1990 között elszenvedett jogtalanságokat (vagyonelkobzás, politikai üldöztetés) kompenzálta, kárpótlási jegyekkel.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-021",
+   "lesson_id": "522c3efc-3bd1-4e63-924a-f3c0ca83c824",
+   "block_id": "25377eca-541c-4d81-9bc7-fad7d7ce22ac",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi a visegrádi együttműködés célja?” (kulcs: A, gazdasági integráció elősegítése)",
+   "explanation": "A visegrádi együttműködés (1991) fő célja az euroatlanti (NATO- és EU-) integráció összehangolása volt; a gazdasági szabadkereskedelmet a CEFTA (1992) szolgálta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Visegrád_Group",
+     "title": "Visegrád Group",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/CEFTA",
+     "title": "CEFTA",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A gazdasági integráció elősegítése",
+      "B) A katonai szövetség megteremtése",
+      "C) A kulturális csereprogramok bevezetése",
+      "D) A politikai ellenállás megszervezése"
+     ],
+     "question": "Mi a visegrádi együttműködés célja?",
+     "explanation": "A visegrádi együttműködés célja a közép-európai országok gazdasági integrációjának elősegítése, amely a piacgazdaság kiépülését támogatta a térségben.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A közép-európai országok együttműködése az euroatlanti (NATO- és EU-) integráció érdekében",
+      "B) A katonai szövetség megteremtése",
+      "C) A kulturális csereprogramok bevezetése",
+      "D) A politikai ellenállás megszervezése"
+     ],
+     "question": "Mi a visegrádi együttműködés célja?",
+     "explanation": "A visegrádi együttműködés (1991) a térség országainak összehangolt fellépését szolgálta az euroatlanti integráció érdekében.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-022",
+   "lesson_id": null,
+   "block_id": "370c7735-9787-4620-aba3-451b3f8e5c7b",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik párt volt a rendszerváltoztatás egyik fő szereplője, amely 1988-ban alakult?” (kulcs: MDF)",
+   "explanation": "Az SZDSZ is 1988-ban alakult (november): két helyes válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Democratic_Forum",
+     "title": "Hungarian Democratic Forum",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Alliance_of_Free_Democrats",
+     "title": "Alliance of Free Democrats",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Szabad Demokraták Szövetsége (SZDSZ)",
+      "B) Magyar Szocialista Párt (MSZP)",
+      "C) Magyar Demokrata Fórum (MDF)",
+      "D) Kereszténydemokrata Néppárt (KDNP)"
+     ],
+     "question": "Melyik párt volt a rendszerváltoztatás egyik fő szereplője, amely 1988-ban alakult?",
+     "explanation": "A Magyar Demokrata Fórum (MDF) 1988-ban alakult, és fontos szerepet játszott a rendszerváltoztatás folyamatában.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Szabad Demokraták Szövetsége (SZDSZ)",
+      "B) Magyar Szocialista Párt (MSZP)",
+      "C) Magyar Demokrata Fórum (MDF)",
+      "D) Kereszténydemokrata Néppárt (KDNP)"
+     ],
+     "question": "Melyik párt nyerte a legtöbb szavazatot az 1990-es országgyűlési választáson?",
+     "explanation": "A Magyar Demokrata Fórum (MDF) 1988-ban alakult, és fontos szerepet játszott a rendszerváltoztatás folyamatában.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-023",
+   "lesson_id": null,
+   "block_id": "370c7735-9787-4620-aba3-451b3f8e5c7b",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„a Fidesz és az MDF koalíciója kormányra került” (1990)",
+   "explanation": "Az Antall-kormányt az MDF, a Független Kisgazdapárt (FKGP) és a KDNP alkotta; a Fidesz ellenzékben volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/József_Antall",
+     "title": "József Antall",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1990_Hungarian_parliamentary_election",
+     "title": "1990 Hungarian parliamentary election",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Pozsgay Imre",
+      "B) Horn Gyula",
+      "C) Antall József",
+      "D) Németh Miklós"
+     ],
+     "question": "Ki volt a rendszerváltoztatás idején Magyarország miniszterelnöke 1990-től?",
+     "explanation": "Antall József volt az első szabadon választott miniszterelnök 1990-től, miután a Fidesz és az MDF koalíciója kormányra került.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Pozsgay Imre",
+      "B) Horn Gyula",
+      "C) Antall József",
+      "D) Németh Miklós"
+     ],
+     "question": "Ki volt a rendszerváltoztatás idején Magyarország miniszterelnöke 1990-től?",
+     "explanation": "Antall József volt az első szabadon választott miniszterelnök 1990-től; az MDF a Kisgazdapárttal és a KDNP-vel alakított koalíciót.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-13-024",
+   "lesson_id": null,
+   "block_id": "370c7735-9787-4620-aba3-451b3f8e5c7b",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 5,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„ő volt az első szabadon választott elnök”",
+   "explanation": "Göncz Árpádot 1990 augusztusában az Országgyűlés választotta köztársasági elnökké (nem közvetlenül a nép).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Árpád_Göncz",
+     "title": "Árpád Göncz",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Göncz Árpád",
+      "B) Orbán Viktor",
+      "C) Horn Gyula",
+      "D) Németh Miklós"
+     ],
+     "question": "Melyik személy volt a köztársasági elnök 1990-től 2000-ig?",
+     "explanation": "Göncz Árpád volt Magyarország köztársasági elnöke 1990-től 2000-ig, és ő volt az első szabadon választott elnök.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Göncz Árpád",
+      "B) Orbán Viktor",
+      "C) Horn Gyula",
+      "D) Németh Miklós"
+     ],
+     "question": "Melyik személy volt a köztársasági elnök 1990-től 2000-ig?",
+     "explanation": "Göncz Árpádot 1990 augusztusában az Országgyűlés választotta köztársasági elnökké, és 2000-ig töltötte be a tisztséget.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}
