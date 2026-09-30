@@ -1,0 +1,265 @@
+{
+ "nat_id": "PHYS-910-06",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "411ef50a-a219-4a2f-a214-a4b9526c8ef0",
+   "title_hu": "Légnyomás és időjárás",
+   "text_block_id": "313eb94d-076a-405f-b562-c50266e7d277",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Miért nem folyik ki a víz a pohárból?",
+     "body": "A tengerszinti légnyomás kb. 100 000 Pa, vagyis 10 N/cm². Egy 10 cm magas vízoszlop nyomása csak kb. 1000 Pa, ennek századrésze, ezért a papírt alulról felfelé nyomó levegő könnyedén megtartja. Ha a pohár szája 30 cm² (0,003 m²), akkor a papírt alulról F = p · A = 100 000 Pa · 0,003 m² = 300 N erő nyomja. Elvileg akár 10 méter magas vízoszlopot is megtartana a légnyomás, ez Torricelli kísérletének a vizes változata.",
+     "did_you_know": "Otto von Guericke a 17. században két, összeillesztett és kiszivattyúzott félgömböt mutatott be, amelyet lovak sem tudtak széthúzni. Így a légnyomás erejét is látványosan igazolta.",
+     "think": "Mekkora erő nyomja felfelé a papírlapot, ha a pohár szája 30 cm²?",
+     "think_answer": "F = 100 000 Pa · 0,003 m² = 300 N, több mint a víz súlya, ezért marad a helyén a papír."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Amit a vákuum tud, és amit nem",
+     "body": "A hő vezetéséhez és áramlásához részecskék kellenek, ezért légritkított térben ezek a hőátadási módok szinte megszűnnek. Így működik a termosz is: két fala között légritkított tér van. A vákuumcsomagolásnál a levegő eltávolítása lassítja az oxidációt és az aerob baktériumok szaporodását, de a tartósítás nem tökéletes, a hűtés továbbra is szükséges. Épületeknél a vákuumszigetelés nem elterjedt, legfeljebb speciális, vékony vákuumpaneleknél használják.",
+     "did_you_know": "",
+     "think": "Miért nem szigetel tökéletesen a vákuum?",
+     "think_answer": "Mert a hősugárzás vákuumban is továbbterjed; a termoszban ezt a falak tükröző bevonata csökkenti."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Miért jelez a légnyomás időjárást?",
+     "body": "A tengerszinti átlagos légnyomás kb. 1013 hPa. Magas nyomású területen (anticiklon) a levegő lassan süllyed és melegszik, a felhők feloszlanak, ezért gyakori a derült idő. Alacsony nyomású területen (ciklon) a levegő felfelé áramlik, közben lehűl, vízgőze lecsapódik, ezért felhők és csapadék alakulhatnak ki. Mindez csak általános szabály: a légnyomás mellett a páratartalom és a szél is számít, ezért a mérésből nem lehet biztosan előre jelezni az időjárást.",
+     "did_you_know": "A légnyomás a magassággal csökken: kb. 5,5 km magasan már csak a fele a tengerszintinek.",
+     "think": "Miért csökken a légnyomás a magassággal?",
+     "think_answer": "Mert egyre kevesebb levegő van fölöttünk, így kisebb súly nyomja a felszínt."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Hogyan jut el a hő a radiátortól a terembe?",
+     "body": "A fűtés az iskolában nem a légnyomáson, hanem a hőáramláson alapul. A radiátor melegíti a mellette lévő levegőt, amelynek a sűrűsége kisebb lesz, ezért felfelé áramlik, a hidegebb levegő pedig lesüllyed, és így áramlás alakul ki. A cirkulációs szivattyú a fűtővizet keringeti a csövekben. Ha egy 1000 W-os radiátorban a víz 10 K-t hűl, akkor a víz tömegárama 1000 : (4200 · 10) ≈ 0,024 kg/s, vagyis kb. 1,4 liter percenként.",
+     "did_you_know": "",
+     "think": "Miért érdemes a radiátort az ablak alá tenni?",
+     "think_answer": "Mert így a hideg ablaknál lehűlő levegőt azonnal felmelegíti, és a szobában egyenletesebb áramlás alakul ki."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mérjünk, ne érezzünk!",
+     "body": "A hőmérséklet mérése pontosabb, mint az érzésünk, mert az érzetünk függ a páratartalomtól és a szélmozgástól is. Érdemes két hőmérőt használni, az egyiket a fal mellett, a másikat a szoba közepén, és percenként feljegyezni az értéket. Rövid, teljesen nyitott ablakos (keresztszellőztetés) szellőztetéskor a levegő hőmérséklete gyorsan csökken, de a falak és a bútorok hőtartalma nagy marad, így a szoba hamar visszamelegszik. Ezért kevesebb hőt veszítünk, mint ha sokáig hagynánk résnyire nyitva az ablakot.",
+     "did_you_know": "",
+     "think": "Miért jobb rövid ideig, teljesen kinyitott ablakkal szellőztetni?",
+     "think_answer": "Mert a levegő gyorsan kicserélődik, de a falak nem hűlnek ki, így kevesebb hő vész el."
+    }
+   ]
+  },
+  {
+   "lesson_id": "a1024961-9786-4ebd-85c0-be11cba79ac6",
+   "title_hu": "Páratartalom és páraképződés",
+   "text_block_id": "a5ea82db-f91d-4d56-ab00-2dbcdb342cd0",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Számoljuk ki a relatív páratartalmat!",
+     "body": "A levegő adott hőmérsékleten csak korlátozott mennyiségű vízgőzt tartalmazhat. 1 m³ levegőben ez a maximum kb. 4,8 g 0 °C-on, 9,4 g 10 °C-on, 17,3 g 20 °C-on és 30,4 g 30 °C-on. A relatív páratartalom az éppen jelen lévő és a maximális mennyiség hányadosa: ha a 20 °C-os levegő 1 m³-ében 8,65 g vízgőz van, akkor 8,65 : 17,3 = 50%. Ha ezt a levegőt lehűtjük, kb. 9 °C-on eléri a 100%-ot, és a vízgőz lecsapódik. Ezt a hőmérsékletet harmatpontnak nevezzük.",
+     "did_you_know": "",
+     "think": "Egy 30 °C-os levegő 1 m³-ében 15,2 g vízgőz van. Mekkora a relatív páratartalom?",
+     "think_answer": "15,2 : 30,4 = 0,5, vagyis 50%."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Miért alacsonyabb a relatív páratartalom délután?",
+     "body": "Ha a levegő vízgőztartalma nem változik, a melegedés miatt a relatív páratartalom csökken, mert nő a maximális mennyiség. Ha például hajnalban 15 °C-on 9 g/m³ vízgőz van a levegőben (kb. 70%), akkor délután 30 °C-on ugyanez már csak 9 : 30,4 ≈ 30%. A nagy relatív páratartalom melegben azért kellemetlen, mert az izzadság nehezebben párolog el, ezért nehezebben hűtjük a testünket. Száraz melegben viszont a verejték gyorsan elpárolog, és ez hűt.",
+     "did_you_know": "",
+     "think": "Miért csökken a relatív páratartalom napközben, ha a levegő vízgőztartalma nem változik?",
+     "think_answer": "Mert a melegebb levegő több vízgőzt tud tartalmazni, a mért vízgőzmennyiség pedig ehhez képest kisebb."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A harmatpont",
+     "body": "A harmat akkor keletkezik, ha egy felület a harmatpont alá hűl, és a levegő vízgőze lecsapódik rajta. Nem a levegő hűl le általában, hanem a fű, a kocsi teteje vagy egy hideg pohár, amelyek éjjel hőt sugároznak ki. Ha a levegő 20 °C-os és a relatív páratartalma 50%, a harmatpont kb. 9 °C, ezért a 9 °C alá hűlő felületen harmat képződik. Felhős éjszakán a felhők visszasugározzák a hőt, a felszín kevésbé hűl ki, ezért harmat is kevésbé keletkezik.",
+     "did_you_know": "",
+     "think": "Miért képződik kevesebb harmat felhős éjszakán?",
+     "think_answer": "Mert a felhők visszasugározzák a hőt, a felszín kevésbé hűl le a harmatpont alá."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Dér és zúzmara",
+     "body": "A dér a fagypont alatti felületeken a levegő vízgőzéből közvetlenül kiváló jégkristály, ez a deszublimáció, nem megfagyott harmat. A zúzmara viszont a túlhűtött ködcseppek megfagyása a tárgyakon, ezért különösen a ködös, fagyos időben, fákon, vezetékeken nő. A jégkristályok a szél felőli oldalon gyorsabban vastagszanak, mert onnan érkeznek a ködcseppek. A dér a szélvédőn is keletkezik: ha az üveg 0 °C alá hűl, és a levegő elég nedves.",
+     "did_you_know": "",
+     "think": "Miben különbözik a dér a zúzmarától?",
+     "think_answer": "A dér a vízgőzből közvetlenül keletkező jég, a zúzmara pedig a túlhűtött ködcseppek megfagyásával jön létre."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Miért nedvesedik a fürdőszobafal?",
+     "body": "A zuhanyzáskor sok vízgőz kerül a levegőbe, és ez a hideg felületeken csapódik le, mert ott a hőmérséklet a harmatpont alá esik. Ezért nedvesedik először az ablak, a külső fal sarka és a tükör. A tartósan 60–70% fölötti relatív páratartalom kedvez a penésznek; lakásban általában 40–60% az ajánlott. A jó megoldás rövid, alapos szellőztetés, mert az kicseréli a nedves levegőt, de nem hűti ki a falakat.",
+     "did_you_know": "",
+     "think": "Miért csapódik le először az ablakon a pára?",
+     "think_answer": "Mert az ablak a leghidegebb felület, ott hűl a harmatpont alá legkönnyebben a levegő."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Miért száraz télen a fűtött szoba levegője?",
+     "body": "A fűtés nem szárítja ki a levegőt, hanem a relatív páratartalmat csökkenti. Ha kint −5 °C van, 80%-os páratartalommal, akkor a levegő vízgőztartalma kb. 0,8 · 3,3 = 2,6 g/m³. Ha ezt a levegőt bent 21 °C-ra melegítjük (ahol a maximum kb. 18,3 g/m³), a relatív páratartalom 2,6 : 18,3 ≈ 14%. Ezért érezzük szárazabbnak a fűtött szobát, még ha vízgőz nem is tűnt el. A radiátorra tett víztálca kismértékben növeli a páratartalmat.",
+     "did_you_know": "",
+     "think": "Miért lesz száraz a levegő télen a fűtött szobában?",
+     "think_answer": "Mert a felmelegített levegő maximális vízgőztartalma nagy, a benne lévő vízgőz mennyisége pedig változatlan, így a relatív páratartalom kicsi."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Száraz és nedves meleg",
+     "body": "A testünket a verejték párolgása hűti, a párolgás pedig annál lassabb, minél nagyobb a levegő páratartalma. Ezért a 35 °C-os száraz levegőt könnyebben viseljük, mint a 30 °C-os párás levegőt. A finn szaunában a hőmérséklet 80–100 °C is lehet, de a relatív páratartalom általában csak 10–20%, és rövid időt töltünk benne. Ha a hőmérséklet és a pára együtt nagy, az emberi test hűtése lehetetlenné válhat.",
+     "did_you_know": "A kutatók szerint kb. 35 °C-nál magasabb ún. nedves hőmérsékletet az ember hosszabb ideig nem képes elviselni.",
+     "think": "Miért viselünk el egy 90 °C-os szaunát, de nehezebben egy 35 °C-os párás trópusi hőséget?",
+     "think_answer": "A szaunában száraz a levegő, és a verejték gyorsan elpárolog, így a test hűl; a párás levegőben a verejték nem tud elpárologni."
+    }
+   ]
+  },
+  {
+   "lesson_id": "3388c59c-4df8-405a-a571-35ddd3488850",
+   "title_hu": "Hőterjedés és hőszigetelés",
+   "text_block_id": "75ca69b6-4668-431e-96b4-b5a090f2f845",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Miért hidegebb a fém, mint a fa?",
+     "body": "A hővezető képességet a λ számmal jellemezzük, mértékegysége W/(m · K). Kb. értékek: réz 400, alumínium 235, acél 50, üveg 1, tégla 0,8, fa 0,15, levegő 0,026. A fém azért érződik hidegebbnek a fánál, mert gyorsan elvezeti a hőt a kezünkből, így a bőrünk gyorsan lehűl, pedig mindkettő szobahőmérsékletű. A fazekak fogantyúja ezért készül műanyagból vagy fából. Vezetéskor a hő a részecskék ütközésein keresztül adódik tovább, az anyag nem mozdul el.",
+     "did_you_know": "",
+     "think": "Miért érződik hidegebbnek a fém korlát, mint a fa, ha mindkettő ugyanolyan hőmérsékletű?",
+     "think_answer": "Mert a fém gyorsan elvezeti a hőt a kezünkből, a fa pedig lassan."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Miért fúj a szél a tengerparton?",
+     "body": "Az áramlás azért jön létre, mert a meleg levegő sűrűsége kisebb: 20 °C-on 1,2 kg/m³, 40 °C-on kb. 1,12 kg/m³. A kisebb sűrűségű levegőre nagyobb felhajtóerő hat, ezért felszáll, helyére hidegebb levegő áramlik. A tengerparton nappal a szárazföld gyorsabban melegszik, mert kisebb a fajhője, mint a vízé, ezért a felette lévő levegő felszáll, és a tenger felől hidegebb levegő áramlik be. Ez a tengeri szél. Éjszaka fordítva történik.",
+     "did_you_know": "",
+     "think": "Miért fúj nappal a tenger felől a szél a tengerparton?",
+     "think_answer": "Mert a szárazföld gyorsabban melegszik, a melegebb levegő felszáll, és a hűvösebb tengeri levegő áramlik a helyére."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A sugárzás közeg nélkül is terjed",
+     "body": "A hősugárzás elektromágneses hullámként terjed, ezért nem kell hozzá közeg: így jut el hozzánk a Nap hője a vákuumon át. A Föld légkörének tetején a napsugárzás intenzitása kb. 1361 W/m². Minden test sugároz, minél melegebb, annál többet, a teljesítménye a hőmérséklet negyedik hatványával arányos. A világos felületek visszaverik, a sötétek elnyelik a sugárzást. A napkollektor a sugárzás hőjét használja fel a víz melegítésére, a napelem viszont a fényt alakítja közvetlenül elektromos árammá.",
+     "did_you_know": "",
+     "think": "Miért viselnek világos ruhát a forró éghajlaton?",
+     "think_answer": "Mert a világos színű anyag több fényt ver vissza, kevesebbet nyel el, így kevésbé melegszik."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyivel jobb egy szigetelt fal?",
+     "body": "A hőveszteség a falon P = λ · A · ΔT : d, ahol d a fal vastagsága. Egy 30 cm vastag téglafalon (λ = 0,8) 20 K hőmérséklet-különbség mellett négyzetméterenként 0,8 · 20 : 0,3 ≈ 53 W hő távozik. Ha erre 10 cm polisztirolt (λ = 0,04) teszünk, akkor az ellenállások összeadódnak: d : λ = 0,3 : 0,8 + 0,1 : 0,04 = 0,375 + 2,5 = 2,875 m² · K/W, tehát 20 : 2,875 ≈ 7 W/m². A hőveszteség így körülbelül nyolcadára csökken, a fűtésszámla is ezzel arányosan.",
+     "did_you_know": "",
+     "think": "Miért csökkenti a szigetelés a fűtésszámlát?",
+     "think_answer": "Mert kevesebb hő távozik a falon, ezért kevesebb fűtési energia kell ugyanahhoz a hőmérséklethez."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mit tud a hőszigetelő ablak?",
+     "body": "A dupla üvegezésben a két üveg közötti levegő vagy nemesgáz (gyakran argon) rossz hővezető, és ha a réteg nem túl vastag (kb. 1–2 cm), nem indul be benne áramlás sem. Az egyszeres üvegezés hőátbocsátása kb. 5 W/(m² · K), a jó, többrétegű üvegezéseké 1 W/(m² · K) körüli vagy alatti. A korszerű ablakok üvegére vékony fémbevonatot is visznek, amely a hősugárzást csökkenti. A hőáramlás nem szűnik meg teljesen, csak jelentősen csökken.",
+     "did_you_know": "",
+     "think": "Miért nem érdemes 5 cm-es légrést hagyni az üvegek között?",
+     "think_answer": "Mert túl vastag rétegben a levegő áramlásba kezd, és a konvekció elviszi a hőt."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Hogyan mérjük a termosz előnyét?",
+     "body": "A termosz falai között légritkított tér van, ez szinte megszünteti a hővezetést és a hőáramlást, a falak tükröző bevonata pedig a sugárzást csökkenti. Az összehasonlításhoz mindkét edénybe ugyanannyi, ugyanolyan hőmérsékletű vizet kell tölteni, és percenként hőmérsékletet mérni. A hűlési görbe kezdetben meredek, mert nagy a hőmérséklet-különbség a környezethez képest, később egyre laposabb. A termoszban a görbe sokkal laposabb.",
+     "did_you_know": "",
+     "think": "Mit kell azonosnak tartani, ha a termoszt és az üvegedényt összehasonlítjuk?",
+     "think_answer": "A víz mennyiségét és kezdő hőmérsékletét, a környezet hőmérsékletét, és a mérések idejét."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Mitől szigetel az újságpapír?",
+     "body": "Az újságpapír rétegei között sok kis, mozdulatlan levegőzárvány van, és a hőszigetelést a levegő adja, nem a papír. A levegő csak akkor jó szigetelő, ha nem tud áramlani: a nagy résekben körbejár, a kicsi zárványokban nem. Ugyanezért szigetel a gyapjú, a hungarocell és a tollpaplan. A kísérletnél érdemes egy szigetelés nélküli kontrollpalackot is használni, és vékony falú üvegnél nem forró, hanem 60–70 °C-os vizet tölteni, hogy az üveg ne pattanjon el.",
+     "did_you_know": "",
+     "think": "Miért szigetel jól a tollpaplan?",
+     "think_answer": "Mert a tollak között sok kis, mozdulatlan levegő van, a levegő pedig rossz hővezető."
+    }
+   ]
+  },
+  {
+   "lesson_id": "e4e02a52-8575-4138-881a-189d5ff9fc73",
+   "title_hu": "Víz hőtágulása és levegő állapothatározói",
+   "text_block_id": "cf830778-2de8-4ede-bcb5-7e708658e2cb",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "A víz kétszeres rendhagyósága",
+     "body": "A víz nem úgy viselkedik, mint a legtöbb anyag. 0 °C és 4 °C között melegítéskor összehúzódik, ezért sűrűsége 4 °C-on a legnagyobb. Fagyáskor pedig kitágul: 1 kg víz jéggé fagyva kb. 1,09 liter (917 kg/m³ sűrűség). Ezért repednek szét a fagyasztóban a teli üvegek, és a fagyott vízcső is. A jég emiatt könnyebb a víznél, és úszik a felszínén. Télen a tó felszíne fagy be, de a mélye kb. 4 °C-os marad, így a halak túlélik.",
+     "did_you_know": "",
+     "think": "Mit tapasztalsz, ha teli, lezárt üveget teszel a fagyasztóba?",
+     "think_answer": "A víz megfagyva kitágul, ezért az üveg elrepedhet."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A jégréteg és a tó élővilága",
+     "body": "A jég hővezetése (kb. 2,2 W/(m · K)) valójában nagyobb, mint a folyékony vízé (kb. 0,6), nem jó szigetelő. A jégréteg mégis lassítja a tó további fagyását, mert a hőnek egyre vastagabb jégen kell átjutnia, és mert megszünteti a szél és a párolgás hűtő hatását. Hóréteggel a szigetelés még jobb. A fagyott tó alján a 4 °C-os, legsűrűbb víz gyűlik össze, így a mély víz ritkán fagy meg. A horgászok szabálya szerint egy embert általában legalább kb. 10 cm vastag, tiszta jég bír el, de a jég vastagságát mindig mérni kell.",
+     "did_you_know": "",
+     "think": "Miért nem fagy meg a mély tó alja?",
+     "think_answer": "Mert a 4 °C-os víz a legsűrűbb, ez az alján gyűlik össze, a hidegebb víz pedig a felszínen fagy meg."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Miért látszik a jéghegynek csak a csúcsa?",
+     "body": "Az úszó test a térfogatának azt a részét meríti a folyadékba, amely a sűrűségeik arányát adja. A jég sűrűsége 917 kg/m³, a tengervízé kb. 1025 kg/m³, így a jéghegy 917 : 1025 ≈ 0,895, vagyis kb. 90%-a a víz alatt van. A Titanic 1912. április 14-én éjjel ütközött jéghegynek, amelynek nagy része a víz alatt volt. Ha az úszó jég megolvad, a tenger szintje szinte nem változik, mert az elolvadt víz térfogata kb. annyi, mint amit a jég a vízbe merülve kiszorított. A szárazföldi jég olvadása viszont emeli a tenger szintjét.",
+     "did_you_know": "",
+     "think": "Változik-e a tenger szintje, ha egy úszó jéghegy elolvad?",
+     "think_answer": "Alig, mert az úszó jég annyi vizet szorít ki, amennyi a súlya; a szárazföldi jég olvadása viszont emeli a szintet."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Miért hűl a felszálló levegő?",
+     "body": "A levegő állapotát a nyomás, a térfogat és a hőmérséklet adja meg. Ha a levegő felszáll, kisebb nyomású helyre kerül, kitágul, közben munkát végez, és a belső energiája csökken: lehűl. A telítetlen levegő kb. 1 °C-ot hűl 100 méterenként (kb. 10 K/km). Ha 1000 méter magasra emelkedik, kb. 10 K-nel hűl, elérheti a harmatpontot, és felhő keletkezik. Az eső tehát a lehűlés és a lecsapódás eredménye, nem a melegedésé.",
+     "did_you_know": "",
+     "think": "Miért hűl le a felszálló levegő?",
+     "think_answer": "Mert kisebb nyomású helyre jut, kitágul, munkát végez, és ezért csökken a belső energiája."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Hány kilogramm a szobád levegője?",
+     "body": "A levegő tömege m = ρ · V. Egy 4 m × 5 m × 3 m-es szoba térfogata 60 m³, így a levegő tömege 60 · 1,2 = 72 kg, ami egy felnőtt tömegével egyezik meg. A sűrűség a hőmérséklettől függ: 20 °C-on 1,2 kg/m³, 0 °C-on 1,29 kg/m³. Ha az 50 m³-es tantermet 20 °C-ról 30 °C-ra fűtjük nyitott ablak mellett, a levegő sűrűsége kb. 1,16 kg/m³-re csökken, a szobában maradó levegő tömege kb. 58 kg, tehát 2 kg levegő távozik. A Föld felszínén 1 m²-re kb. 10 000 kg levegő súlya nehezedik, ez adja a 100 kPa nyomást.",
+     "did_you_know": "",
+     "think": "Hány kg levegő van egy 4 m × 5 m × 3 m-es szobában (ρ = 1,2 kg/m³)?",
+     "think_answer": "60 m³ · 1,2 kg/m³ = 72 kg."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Időjárás és éghajlat",
+     "body": "Az időjárás a légkör pillanatnyi állapota egy adott helyen, az éghajlat pedig a hosszú távú, jellemzően 30 éves átlag. Ezért nem cáfol egyetlen hideg tél a globális felmelegedést. A globális átlaghőmérséklet az 1850–1900 közötti időszakhoz képest kb. 1,1 °C-kal emelkedett. Ennek helyi következményei eltérőek: sok helyen, így Magyarországon is melegebbek a nyarak és gyakoribbak a hőhullámok, a telek átlagosan enyhébbek, de a csapadék eloszlása régiónként változó.",
+     "did_you_know": "",
+     "think": "Miért nem cáfol egy hideg tél a globális felmelegedést?",
+     "think_answer": "Mert az időjárás rövid távú, az éghajlat pedig hosszú távú átlag, és egy tél nem mutat hosszú távú változást."
+    }
+   ]
+  }
+ ]
+}
