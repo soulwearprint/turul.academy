@@ -1,0 +1,445 @@
+{
+ "nat_id": "PHYS-78-07",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 114,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-78-07-001",
+   "lesson_id": "bfb509b6-e764-4a44-b5dc-9bff3db181bd",
+   "block_id": "86b03ed0-ced6-42f6-8111-756a2cd2dae9",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options[3]",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Hogyan lehet korrigálni a rövidlátást?” — C) Konkáv lencsével; D) Lézeres beavatkozással is helyes",
+   "explanation": "A lézeres szemműtét is korrigálja a rövidlátást (a lecke maga is említi), így két helyes válasz van.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Near-sightedness",
+     "title": "Near-sightedness",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Konvex lencsével.",
+      "B) Különböző színű szemüvegekkel.",
+      "C) Konkáv lencsével.",
+      "D) Lézeres beavatkozással."
+     ],
+     "question": "Hogyan lehet korrigálni a rövidlátást?",
+     "explanation": "A rövidlátás korrigálására konkáv lencséket használnak, amelyek segítenek a fény megfelelő fókuszálásában a retinán.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Konvex lencsével.",
+      "B) Különböző színű szemüvegekkel.",
+      "C) Konkáv lencsével.",
+      "D) Nagyítóval."
+     ],
+     "question": "Hogyan lehet korrigálni a rövidlátást?",
+     "explanation": "A rövidlátás korrigálására konkáv lencséket használnak, amelyek segítenek a fény megfelelő fókuszálásában a retinán.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-07-002",
+   "lesson_id": "7de2eea2-0464-4299-95a7-b72c892deef2",
+   "block_id": "ee5cd48f-bb85-4dec-b693-0ab3549188d9",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi a fényerősség mértékegysége?” — B) Lumen",
+   "explanation": "A fényerősség mértékegysége a kandela; a lumen a fényáram (a lámpa által kibocsátott összes fény) mértékegysége.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lumen_(unit)",
+     "title": "Lumen (unit)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Lux",
+      "B) Lumen",
+      "C) Watt",
+      "D) Kelvin"
+     ],
+     "question": "Mi a fényerősség mértékegysége?",
+     "explanation": "A fényerősség mértékegysége a lumen, amely a fényforrás által kibocsátott fény mennyiségét méri.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Lux",
+      "B) Lumen",
+      "C) Watt",
+      "D) Kelvin"
+     ],
+     "question": "Milyen mértékegységben adják meg a lámpák dobozán, mennyi fényt bocsát ki a lámpa?",
+     "explanation": "A lámpa által kibocsátott fény mennyiségét (fényáramát) lumenben adják meg; a watt csak az elektromos teljesítményt mutatja.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-07-003",
+   "lesson_id": "7de2eea2-0464-4299-95a7-b72c892deef2",
+   "block_id": "ee5cd48f-bb85-4dec-b693-0ab3549188d9",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "unverifiable",
+   "severity": "medium",
+   "claim": "„Melyik fényforrás kibocsátott fényének térbeli eloszlása a legszélesebb?” — A) Izzólámpa",
+   "explanation": "A fény térbeli eloszlása a lámpatest és a búra kialakításától függ, nem a fényforrás típusától; nincs egyértelmű helyes válasz. A kérdést javasolt cserélni.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "Nincs egyértelmű tényszerű válasz."
+  },
+  {
+   "id": "PHYS-78-07-004",
+   "lesson_id": "1f0e7c54-c3a0-4120-af07-3012b80e1b35",
+   "block_id": "1a159b2e-ce6f-4553-819c-bed6fbde7be2",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a szórólencse ... a fénysugarak a fókuszpont mögött találkoznak”",
+   "explanation": "A szórólencse után a sugarak széttartanak, nem találkoznak; csak a meghosszabbításuk metszi egymást a lencse előtti (látszólagos) fókuszban.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lens",
+     "title": "Lens",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Olyan lencse, amely a párhuzamos fénysugarakat szétszórja.",
+      "B) Olyan lencse, amely a fénysugarakat a fókuszpontba gyűjti.",
+      "C) Olyan lencse, amely nem befolyásolja a fényt.",
+      "D) Olyan lencse, amely csak színes fényt képes áteresztani."
+     ],
+     "question": "Milyen típusú lencse a szórólencse?",
+     "explanation": "A szórólencse a párhuzamosan érkező fénysugarakat szétszórja, így a fénysugarak a fókuszpont mögött találkoznak.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Olyan lencse, amely a párhuzamos fénysugarakat szétszórja.",
+      "B) Olyan lencse, amely a fénysugarakat a fókuszpontba gyűjti.",
+      "C) Olyan lencse, amely nem befolyásolja a fényt.",
+      "D) Olyan lencse, amely csak színes fényt képes áteresztani."
+     ],
+     "question": "Milyen típusú lencse a szórólencse?",
+     "explanation": "A szórólencse a párhuzamosan érkező fénysugarakat széttartóvá teszi; a sugarak meghosszabbításai a lencse előtti látszólagos fókuszpontban metszik egymást.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-07-005",
+   "lesson_id": "1f0e7c54-c3a0-4120-af07-3012b80e1b35",
+   "block_id": "12eb0946-1bca-462a-a9df-10129685d79f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Nagyító: „a lencse fókuszpontjánál a fény egyesül, így a nézett tárgy nagyobb és élesebb lesz”",
+   "explanation": "Nagyításkor a tárgy a fókusztávolságon belül van, és a lencse látszólagos, egyenes állású, nagyított képet ad; a fókuszpontban a párhuzamos (pl. nap-) sugarak gyűlnek össze.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Magnifying_glass",
+     "title": "Magnifying glass",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A gyűjtőlencse (konvex lencse) a fényt összegyűjti, és a fókuszpontjában egy éles képet alkot. Ha például egy gyűjtőlencsét használunk egy nagyítóban, a lencse fókuszpontjánál a fény egyesül, így a nézett tárgy nagyobb és élesebb lesz. A gyűjtőlencse használata során fontos a fókusztávolság, ami megmutatja, hogy a lencse milyen távolságra képes éles képet alkotni. Ezt a jelenséget a mindennapi életben is tapasztalhatjuk, például amikor a napfény egy gyűjtőlencsével egy papírlapra fókuszálva tüzet okoz.",
+     "type": "text",
+     "heading": "Gyűjtőlencse működése",
+     "key_term": "gyűjtőlencse"
+    },
+    "after": {
+     "body": "A gyűjtőlencse (konvex lencse) a fényt összegyűjti, és a fókuszpontjában egy éles képet alkot. Ha a tárgyat a fókusztávolságon belülre tesszük, a gyűjtőlencse nagyítóként működik: nagyobbnak, egyenes állásúnak látjuk a tárgyat. A gyűjtőlencse használata során fontos a fókusztávolság, ami megmutatja, hogy a lencse milyen távolságra képes éles képet alkotni. Ezt a jelenséget a mindennapi életben is tapasztalhatjuk, például amikor a napfény egy gyűjtőlencsével egy papírlapra fókuszálva tüzet okoz.",
+     "type": "text",
+     "heading": "Gyűjtőlencse működése",
+     "key_term": "gyűjtőlencse"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-07-006",
+   "lesson_id": "1f0e7c54-c3a0-4120-af07-3012b80e1b35",
+   "block_id": "12eb0946-1bca-462a-a9df-10129685d79f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Szórólencse: „a képet a lencse mögött hozza létre”, „amit a tükörben is megfigyelhetünk”, „gyakran használatosak a projektorokban”",
+   "explanation": "A szórólencse látszólagos képe a tárggyal azonos oldalon keletkezik; a tükörkép más jelenség; a projektorok gyűjtőlencsével vetítenek. A szemüveges példa helyes (rövidlátás).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lens",
+     "title": "Lens",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A szórólencse (konkáv lencse) a fényt szétszórja, ami azt jelenti, hogy a fókuszpontja virtuális, és a képet a lencse mögött hozza létre. Ezt a lencsetípust használják például a szemüvegekben, amelyek a távolra látás nehézségeit segítik. A szórólencse által alkotott kép kisebb és egyenes, amit a tükörben is megfigyelhetünk, amikor a tükörképünk nem egyezik meg a valósággal. A szórólencsék gyakran használatosak a projektorokban is, hogy a képet nagyobb méretben vetítsék ki.",
+     "type": "text",
+     "heading": "Szórólencse működése",
+     "key_term": "szórólencse"
+    },
+    "after": {
+     "body": "A szórólencse (konkáv lencse) a párhuzamos fénysugarakat széttartóvá teszi, ezért ernyőn nem tud képet alkotni. Rajta keresztül nézve a tárgyak kisebbnek és egyenes állásúnak látszanak; ez a látszólagos kép a tárggyal azonos oldalon keletkezik. Szórólencsét használnak a rövidlátók szemüvegében, amely a távoli tárgyak éles látását segíti, és az ajtók kukucskálójában is. A projektorok viszont gyűjtőlencsével vetítik ki a képet a vászonra.",
+     "type": "text",
+     "heading": "Szórólencse működése",
+     "key_term": "szórólencse"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-07-007",
+   "lesson_id": "1f0e7c54-c3a0-4120-af07-3012b80e1b35",
+   "block_id": "12eb0946-1bca-462a-a9df-10129685d79f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a lencse mögött létrejön egy nagyított, éles kép”",
+   "explanation": "A nagyító látszólagos, egyenes állású képet ad, amely a tárggyal azonos oldalon keletkezik, nem a lencse mögött.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Magnifying_glass",
+     "title": "Magnifying glass",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A nagyító működése a gyűjtőlencse tulajdonságain alapul. Amikor egy tárgyat a gyűjtőlencse közelében helyezünk el, a lencse mögött létrejön egy nagyított, éles kép. Ezt a hatást a diákok a tanórákon kísérletezhetik, például egy könyv lapjait megnézve a nagyítóval. A nagyító használata során fontos, hogy a lencse és a tárgy között a megfelelő távolságot tartsuk, hogy a kép éles legyen. A nagyítók mindennapi használata segít megérteni a fénytörés és a lencsék működését.",
+     "type": "text",
+     "heading": "Nagyító képalkotása",
+     "key_term": "nagyító"
+    },
+    "after": {
+     "body": "A nagyító működése a gyűjtőlencse tulajdonságain alapul. Amikor egy tárgyat a gyűjtőlencse fókusztávolságán belül helyezünk el, a lencsén át nézve nagyított, egyenes állású, látszólagos képet látunk. Ezt a hatást a diákok a tanórákon kísérletezhetik, például egy könyv lapjait megnézve a nagyítóval. A nagyító használata során fontos, hogy a lencse és a tárgy között a megfelelő távolságot tartsuk, hogy a kép éles legyen. A nagyítók mindennapi használata segít megérteni a fénytörés és a lencsék működését.",
+     "type": "text",
+     "heading": "Nagyító képalkotása",
+     "key_term": "nagyító"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-07-008",
+   "lesson_id": "1f0e7c54-c3a0-4120-af07-3012b80e1b35",
+   "block_id": "12eb0946-1bca-462a-a9df-10129685d79f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A camera obscura a „fénytörés ... alapelveit” mutatja",
+   "explanation": "A lyukkamerában nincs lencse, a képet a fény egyenes vonalú terjedése hozza létre, nem a fénytörés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Camera_obscura",
+     "title": "Camera obscura",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A camera obscura (sötét kamra) egy egyszerű optikai eszköz, amely lehetővé teszi, hogy a külvilág képe a belsejébe vetüljön. Ezt könnyen elkészíthetjük egy dobozból, amelynek egyik oldalán egy kis lyukat fúrunk. A fény a lyukon keresztül behatol a dobozba, és a belső falon fordított képet alkot. Ez a kísérlet remek lehetőséget ad arra, hogy a diákok megértsék a fénytörés és a képalkotás alapelveit. A camera obscura működése a modern fényképezőgépek alapjait is megágyazta.",
+     "type": "text",
+     "heading": "Camera obscura készítése",
+     "key_term": "camera obscura"
+    },
+    "after": {
+     "body": "A camera obscura (sötét kamra) egy egyszerű optikai eszköz, amely lehetővé teszi, hogy a külvilág képe a belsejébe vetüljön. Ezt könnyen elkészíthetjük egy dobozból, amelynek egyik oldalán egy kis lyukat fúrunk. A fény a lyukon keresztül behatol a dobozba, és a belső falon fordított képet alkot. Ez a kísérlet remek lehetőséget ad arra, hogy a diákok megértsék, hogyan hoz létre képet a fény egyenes vonalú terjedése. A camera obscura működése a modern fényképezőgépek alapjait is megágyazta.",
+     "type": "text",
+     "heading": "Camera obscura készítése",
+     "key_term": "camera obscura"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-07-009",
+   "lesson_id": "bfb509b6-e764-4a44-b5dc-9bff3db181bd",
+   "block_id": "81860269-75fd-4874-b970-d3f1d6c7260b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A kék fény, amit a számítógép vagy mobiltelefon képernyője bocsát ki, károsíthatja a szemet”",
+   "explanation": "Nincs bizonyíték arra, hogy a képernyők kék fénye károsítaná a szemet; a fáradást a hosszú közelre nézés és a ritkább pislogás okozza. Az esti erős fény az alvást zavarhatja.",
+   "sources": [
+    {
+     "url": "https://www.aao.org/eye-health/tips-prevention/should-you-be-worried-about-blue-light",
+     "title": "American Academy of Ophthalmology – Blue light",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A szem egészségének megőrzéséhez fontos a megfelelő világítás, például amikor olvasunk vagy tanulunk. A kék fény, amit a számítógép vagy mobiltelefon képernyője bocsát ki, károsíthatja a szemet, ezért érdemes szüneteket tartani. Emellett a rendszeres szemvizsgálatok segíthetnek a problémák korai felismerésében, így például a szüleink is figyelnek arra, hogy ne terheljük túl a szemünket játék közben.",
+     "type": "text",
+     "heading": "Szem egészségvédelme",
+     "key_term": "szem egészség"
+    },
+    "after": {
+     "body": "A szem egészségének megőrzéséhez fontos a megfelelő világítás, például amikor olvasunk vagy tanulunk. A képernyő hosszú nézése fárasztja a szemet, mert sokáig közelre fókuszálunk és ritkábban pislogunk, ezért érdemes szüneteket tartani és néha a távolba nézni. Emellett a rendszeres szemvizsgálatok segíthetnek a problémák korai felismerésében, így például a szüleink is figyelnek arra, hogy ne terheljük túl a szemünket játék közben.",
+     "type": "text",
+     "heading": "Szem egészségvédelme",
+     "key_term": "szem egészség"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-07-010",
+   "lesson_id": "bfb509b6-e764-4a44-b5dc-9bff3db181bd",
+   "block_id": "81860269-75fd-4874-b970-d3f1d6c7260b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a látcső ... a távolságok megértésére szolgál”; „állatokat megfigyelésére”",
+   "explanation": "A látcső két egymás melletti kis távcső, két szemmel való megfigyelésre; a második rész nyelvtanilag hibás.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Pontatlan meghatározás és nyelvtani hiba.",
+   "fix": {
+    "before": {
+     "body": "A távcső és a látcső olyan optikai eszközök, amelyek lehetővé teszik a távoli tárgyak megfigyelését, például amikor csillagokat nézünk az éjszakai égbolton. A távcső lencse- és tükörrendszere segít a fény összegyűjtésében, míg a látcső, amely általában egyszerűbb, a távolságok megértésére szolgál. Ezek az eszközök nagyszerűek a természetjárás során, amikor fákat vagy állatokat megfigyelésére használjuk őket.",
+     "type": "text",
+     "heading": "Távcső és látcső",
+     "key_term": "távcső, látcső"
+    },
+    "after": {
+     "body": "A távcső és a látcső olyan optikai eszközök, amelyek lehetővé teszik a távoli tárgyak megfigyelését, például amikor csillagokat nézünk az éjszakai égbolton. A távcső lencse- és tükörrendszere segít a fény összegyűjtésében, míg a látcső két egymás melletti kis távcső, amellyel két szemmel figyelhetjük meg a távoli tárgyakat. Ezek az eszközök nagyszerűek a természetjárás során, amikor fák vagy állatok megfigyelésére használjuk őket.",
+     "type": "text",
+     "heading": "Távcső és látcső",
+     "key_term": "távcső, látcső"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-07-011",
+   "lesson_id": null,
+   "block_id": "e695e297-9ef3-40de-8409-347a830162cf",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 5,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a távoli tárgyak képe a retinán kívül keletkezik”",
+   "explanation": "Rövidlátásnál a kép a retina előtt keletkezik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Near-sightedness",
+     "title": "Near-sightedness",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A szemgolyó túl rövid.",
+      "B) A szemgolyó túl hosszú.",
+      "C) A lencsék nem megfelelően görbülnek.",
+      "D) A szaruhártya nem átlátszó."
+     ],
+     "question": "Mi okozza a rövidlátást?",
+     "explanation": "A rövidlátás a szemgolyó túl hosszú volta miatt alakul ki, ami miatt a távoli tárgyak képe a retinán kívül keletkezik.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A szemgolyó túl rövid.",
+      "B) A szemgolyó túl hosszú.",
+      "C) A lencsék nem megfelelően görbülnek.",
+      "D) A szaruhártya nem átlátszó."
+     ],
+     "question": "Mi okozza a rövidlátást?",
+     "explanation": "A rövidlátás a túl hosszú szemgolyó miatt alakul ki: a távoli tárgyak éles képe a retina előtt keletkezik, ezért a retinán homályos a kép.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}

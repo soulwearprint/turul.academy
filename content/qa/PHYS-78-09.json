@@ -1,0 +1,238 @@
+{
+ "nat_id": "PHYS-78-09",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 16,
+  "cards": 82,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-78-09-001",
+   "lesson_id": "1721238b-1402-409f-b5dc-83e651971258",
+   "block_id": "37143c9d-3ca5-4320-99f7-76afe8261128",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Az ózonpajzs elvékonyodása közvetlen hatással van a Föld éghajlatára”",
+   "explanation": "Gyakori tévképzet: az ózonlyuk és az éghajlatváltozás két külön probléma. Az ózonlyuk több UV-sugárzást enged a felszínre; a felmelegedést az üvegházhatású gázok okozzák.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ozone_depletion",
+     "title": "Ozone depletion",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az ózonpajzs elvékonyodása közvetlen hatással van a Föld éghajlatára és az élővilágra. A megnövekedett UV-sugárzás nemcsak az emberi egészséget veszélyezteti, hanem a növények növekedését és a planktonok életciklusát is befolyásolja, ami a tengeri ökoszisztémákra is hatással van. A tengerfenék élővilágának változása a halászati ipart is érintheti, hiszen a halak és egyéb tengeri élőlények száma csökkenhet. A fiatalok számára ez azt jelenti, hogy a kedvenc tengerparti nyaralásaink is megváltozhatnak, ha nem figyelünk a környezetvédelmi intézkedésekre.",
+     "type": "text",
+     "heading": "Az ózonpajzs elvékonyodásának hatása",
+     "key_term": "ózonpajzs elvékonyodás"
+    },
+    "after": {
+     "body": "Az ózonpajzs elvékonyodása elsősorban az élővilágra hat; a globális felmelegedést nem ez, hanem az üvegházhatású gázok okozzák. A megnövekedett UV-sugárzás nemcsak az emberi egészséget veszélyezteti, hanem a növények növekedését és a planktonok életciklusát is befolyásolja, ami a tengeri ökoszisztémákra is hatással van. A tengerfenék élővilágának változása a halászati ipart is érintheti, hiszen a halak és egyéb tengeri élőlények száma csökkenhet. A fiatalok számára ez azt jelenti, hogy a kedvenc tengerparti nyaralásaink is megváltozhatnak, ha nem figyelünk a környezetvédelmi intézkedésekre.",
+     "type": "text",
+     "heading": "Az ózonpajzs elvékonyodásának hatása",
+     "key_term": "ózonpajzs elvékonyodás"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-09-002",
+   "lesson_id": "1721238b-1402-409f-b5dc-83e651971258",
+   "block_id": "37143c9d-3ca5-4320-99f7-76afe8261128",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az otthoni hűtők és légkondicionálók energiatakarékos használata is segíthet az ózonpajzs megóvásában”; a CFC-k jelen időben „találhatók”",
+   "explanation": "Az energiatakarékosság a klímavédelmet szolgálja, az ózonréteget nem védi. A CFC-ket a montreali jegyzőkönyv alapján betiltották; ma legfeljebb régi berendezésekben vannak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Montreal_Protocol",
+     "title": "Montreal Protocol",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az ózonpajzs védelme érdekében számos intézkedést hoztak világszerte, mint például a Montreal-i Jegyzőkönyv, amely a klórfluor-szenet (CFC) tartalmazó anyagok használatának csökkentését célozta. Ezek az anyagok a hűtőberendezésekben és aeroszolokban találhatók, és jelentős mértékben hozzájárultak az ózonréteg elvékonyodásához. A fiatalok is hozzájárulhatnak a védelemhez, ha tudatosan választanak termékeket, és elkerülik azokat, amelyek káros anyagokat tartalmaznak. Az otthoni hűtők és légkondicionálók energiatakarékos használata is segíthet az ózonpajzs megóvásában.",
+     "type": "text",
+     "heading": "Intézkedések az ózonpajzs védelmében",
+     "key_term": "ózonpajzs védelme"
+    },
+    "after": {
+     "body": "Az ózonpajzs védelme érdekében számos intézkedést hoztak világszerte, mint például a Montreal-i Jegyzőkönyv, amely a klórfluor-szenet (CFC) tartalmazó anyagok használatának csökkentését célozta. Ezek az anyagok korábban a hűtőberendezésekben és aeroszolokban voltak, és jelentős mértékben hozzájárultak az ózonréteg elvékonyodásához. A fiatalok is hozzájárulhatnak a védelemhez, ha tudatosan választanak termékeket, és elkerülik azokat, amelyek káros anyagokat tartalmaznak. A régi hűtők és légkondicionálók szakszerű, gyűjtőhelyen történő leadása is segít az ózonpajzs megóvásában, mert bennük még lehetnek ózonbontó anyagok.",
+     "type": "text",
+     "heading": "Intézkedések az ózonpajzs védelmében",
+     "key_term": "ózonpajzs védelme"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-09-003",
+   "lesson_id": "1721238b-1402-409f-b5dc-83e651971258",
+   "block_id": "37143c9d-3ca5-4320-99f7-76afe8261128",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a jégsapkák olvadásához”; „megfigyelik, hogy a tengerparti kirándulások során a vízszint mennyire változik”",
+   "explanation": "Az úszó tengeri jég olvadása alig emeli a tengerszintet, a szárazföldi jégtakarók és gleccserek viszont igen. A parton látható vízszintváltozást az árapály okozza; a tengerszint emelkedése évtizedek alatt csak néhány centiméter.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sea_level_rise",
+     "title": "Sea level rise",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A tengerszint emelkedésének fő fizikai oka a globális felmelegedés, amely a jégsapkák olvadásához és a tengervíz hőmérsékletének növekedéséhez vezet. A meleg víz térfogata megnő, így a tengerszint is emelkedik. A fiatalok számára hasznos lehet, ha megfigyelik, hogy a tengerparti kirándulások során a vízszint mennyire változik. A tengerszint emelkedése nemcsak a természetes élőhelyeket veszélyezteti, hanem a városi infrastruktúrákra is hatással van, például a kikötők és a part menti épületek biztonságára.",
+     "type": "text",
+     "heading": "A tengerszint emelkedésének fizikai okai",
+     "key_term": "tengerszint emelkedés okai"
+    },
+    "after": {
+     "body": "A tengerszint emelkedésének fő fizikai oka a globális felmelegedés, amely a szárazföldi jégtakarók és gleccserek olvadásához és a tengervíz hőmérsékletének növekedéséhez vezet. A meleg víz térfogata megnő, így a tengerszint is emelkedik. A tengerparton naponta látható vízszintváltozást viszont az árapály okozza; a tengerszint emelkedése évtizedek alatt is csak néhány centiméter. A tengerszint emelkedése nemcsak a természetes élőhelyeket veszélyezteti, hanem a városi infrastruktúrákra is hatással van, például a kikötők és a part menti épületek biztonságára.",
+     "type": "text",
+     "heading": "A tengerszint emelkedésének fizikai okai",
+     "key_term": "tengerszint emelkedés okai"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-09-004",
+   "lesson_id": "fc9bc26d-9e63-438b-b26c-3b16966dc508",
+   "block_id": "9d7cb434-22a0-4e65-84eb-f846f0c8f867",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "outdated",
+   "severity": "low",
+   "claim": "„az A+ vagy A++ energiaosztályú háztartási készülékek”",
+   "explanation": "Az EU 2021-től A-tól G-ig terjedő, újraskálázott energiacímkét vezetett be; az A+, A++ osztályok megszűntek.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/European_Union_energy_label",
+     "title": "European Union energy label",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az energiatakarékos eszközök, mint például az A+ vagy A++ energiaosztályú háztartási készülékek, jelentősen csökkenthetik az energiafogyasztást. Gondoljunk csak a modern LED-izzókra, amelyek sokkal kevesebb energiát használnak, mint a hagyományos izzók. Ezek az eszközök nemcsak a villanyszámlánkat csökkentik, hanem a környezetünket is védik, hiszen kevesebb energiafelhasználással járnak. Az energiatakarékos megoldások alkalmazása mindannyiunk felelőssége, hogy fenntarthatóbb jövőt építsünk.",
+     "type": "text",
+     "heading": "Energiatakarékos eszközök használata",
+     "key_term": "energiatakarékos eszközök"
+    },
+    "after": {
+     "body": "Az energiatakarékos eszközök, mint például a jó energiaosztályú háztartási készülékek (az EU 2021 óta A-tól G-ig terjedő energiacímkét használ), jelentősen csökkenthetik az energiafogyasztást. Gondoljunk csak a modern LED-izzókra, amelyek sokkal kevesebb energiát használnak, mint a hagyományos izzók. Ezek az eszközök nemcsak a villanyszámlánkat csökkentik, hanem a környezetünket is védik, hiszen kevesebb energiafelhasználással járnak. Az energiatakarékos megoldások alkalmazása mindannyiunk felelőssége, hogy fenntarthatóbb jövőt építsünk.",
+     "type": "text",
+     "heading": "Energiatakarékos eszközök használata",
+     "key_term": "energiatakarékos eszközök"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-09-005",
+   "lesson_id": "a6fa16e6-c44b-42e3-b49e-34dbfa03ebe4",
+   "block_id": "5cea52b5-45d3-42f2-892d-003ad6da9251",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„az üvegházhatású gázok megakadályozzák a hő elnyelődését”",
+   "explanation": "Épp fordítva: az üvegházhatású gázok elnyelik a felszín infravörös sugárzását, és így akadályozzák, hogy a hő kijusson a világűrbe.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Greenhouse_effect",
+     "title": "Greenhouse effect",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csökkenti a globális hőmérsékletet",
+      "B) Növeli a globális hőmérsékletet",
+      "C) Stabilizálja a klímát",
+      "D) Nincs hatása a klímára"
+     ],
+     "question": "Milyen hatással van az üvegházhatás a Föld klímájára?",
+     "explanation": "Az üvegházhatás növeli a globális hőmérsékletet, mivel a légkörben lévő üvegházhatású gázok megakadályozzák a hő elnyelődését.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csökkenti a globális hőmérsékletet",
+      "B) Növeli a globális hőmérsékletet",
+      "C) Stabilizálja a klímát",
+      "D) Nincs hatása a klímára"
+     ],
+     "question": "Milyen hatással van az üvegházhatás a Föld klímájára?",
+     "explanation": "Az üvegházhatás növeli a globális hőmérsékletet, mert az üvegházhatású gázok elnyelik a felszín infravörös sugárzását, és így akadályozzák, hogy a hő kijusson a világűrbe.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-09-006",
+   "lesson_id": "a6fa16e6-c44b-42e3-b49e-34dbfa03ebe4",
+   "block_id": "2ee46848-40a5-4907-9cdb-e9264c8cf6bc",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az üvegház és a napon álló autó mint a légköri üvegházhatás szemléltetése",
+   "explanation": "Tankönyvi hasonlat, de pontatlan: a valódi üvegház főleg azért meleg, mert az üveg nem engedi elkeveredni a felmelegedett levegőt; a légkörben az infravörös sugárzás elnyelése a lényeg. Tanári döntés, hogy a hasonlat mellé kell-e magyarázat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Greenhouse_effect",
+     "title": "Greenhouse effect",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "none"
+  }
+ ]
+}

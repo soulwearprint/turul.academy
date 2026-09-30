@@ -1,0 +1,805 @@
+{
+ "nat_id": "PHYS-78-08",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 16,
+  "cards": 82,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-78-08-001",
+   "lesson_id": "bcefb295-dbe0-433a-9277-49d2a02e2a80",
+   "block_id": "7f38ee76-af31-4272-99e0-2e6ea2584fa7",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "correct, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mi a jellemzője az állóhullámoknak?” — megjelölt D) „Az amplitúdó és a hullámhossz is állandó”",
+   "explanation": "Állóhullámban a rezgés amplitúdója helyről helyre változik: a csomópontokban nulla, a duzzadóhelyeken a legnagyobb; a hullámhossz állandó. Az A) a helyes válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Standing_wave",
+     "title": "Standing wave",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Az amplitúdó változó, de a hullámhossz állandó.",
+      "B) Az amplitúdó és a hullámhossz is változó.",
+      "C) Az amplitúdó állandó, de a hullámhossz változó.",
+      "D) Az amplitúdó és a hullámhossz is állandó."
+     ],
+     "question": "Mi a jellemzője az állóhullámoknak?",
+     "explanation": "Az állóhullámoknak jellemzője, hogy az amplitúdó és a hullámhossz állandó, mivel a hullámok interferenciájából jönnek létre, és a csomópontok és antinódok helyzete nem változik.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az amplitúdó változó, de a hullámhossz állandó.",
+      "B) Az amplitúdó és a hullámhossz is változó.",
+      "C) Az amplitúdó állandó, de a hullámhossz változó.",
+      "D) Az amplitúdó és a hullámhossz is állandó."
+     ],
+     "question": "Mi a jellemzője az állóhullámoknak?",
+     "explanation": "Állóhullámban a rezgés amplitúdója helyről helyre változik: a csomópontokban nulla, a duzzadóhelyeken a legnagyobb, a hullámhossz viszont állandó.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-002",
+   "lesson_id": null,
+   "block_id": "c3b7baa0-57dc-4596-bce6-ffae6938005f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "options, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik tényező károsíthatja a hallást?” — A) Magas frekvenciájú hangok; D) fülhallgatós zenehallgatás is",
+   "explanation": "A halláskárosodást a nagy hangerő (és hosszú idő) okozza, nem a frekvencia; a hangos fülhallgatós zenehallgatás is károsíthat, így a kulcs rossz, és két válasz védhető.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Noise-induced_hearing_loss",
+     "title": "Noise-induced hearing loss",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Magas frekvenciájú hangok.",
+      "B) Alacsony hangerő.",
+      "C) Csendes környezet.",
+      "D) Zenehallgatás fülhallgatóval."
+     ],
+     "question": "Melyik tényező károsíthatja a hallást?",
+     "explanation": "A magas frekvenciájú hangok hosszú távon károsíthatják a hallást, különösen nagy hangerő mellett.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hosszan tartó, nagy hangerejű zaj.",
+      "B) Alacsony hangerő.",
+      "C) Csendes környezet.",
+      "D) Halk madárcsicsergés."
+     ],
+     "question": "Melyik tényező károsíthatja a hallást?",
+     "explanation": "A hallást a hosszan tartó, nagy hangerejű zaj károsítja, például a túl hangosan hallgatott fülhallgató vagy egy koncert.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-003",
+   "lesson_id": "f9bed1a8-cfe6-4a06-99c9-c13615a1af18",
+   "block_id": "d511ae59-0579-4545-9a29-87a6da7b1628",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "question, explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Mi a levegőben terjedő lökéshullám?” — A) hanghullám",
+   "explanation": "A lökéshullám a hangsebességnél gyorsabban mozgó test (pl. hangrobbanás) keltette hirtelen nyomásugrás; a közönséges hang nem lökéshullám.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Shock_wave",
+     "title": "Shock wave",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A hanghullám, amely az anyag részecskéinek rezgése által terjed.",
+      "B) A fényhullám, amely vákuumban terjed.",
+      "C) A vízhullám, amely folyadékban terjed.",
+      "D) A mágneses hullám, amely elektromágneses térben terjed."
+     ],
+     "question": "Mi a levegőben terjedő lökéshullám?",
+     "explanation": "A levegőben terjedő lökéshullám a hanghullám, amely az anyag részecskéinek rezgése által terjed.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A hanghullám, amely az anyag részecskéinek rezgése által terjed.",
+      "B) A fényhullám, amely vákuumban terjed.",
+      "C) A vízhullám, amely folyadékban terjed.",
+      "D) A mágneses hullám, amely elektromágneses térben terjed."
+     ],
+     "question": "Hogyan terjed a hang a levegőben?",
+     "explanation": "A hang a levegő részecskéinek rezgéseként, nyomásingadozásként terjed; a lökéshullám ennél különlegesebb: a hangnál gyorsabban mozgó test kelti.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-004",
+   "lesson_id": "f9bed1a8-cfe6-4a06-99c9-c13615a1af18",
+   "block_id": "763fe72d-dbec-4f91-9a28-de34daa5a252",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "heading, body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Egy megütött palack hangja „a levegőben terjedő lökéshullám”",
+   "explanation": "Ez közönséges hanghullám; lökéshullám csak hangsebességnél gyorsabb mozgásnál (pl. hangrobbanás, ostorcsattanás) keletkezik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Shock_wave",
+     "title": "Shock wave",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A levegőben terjedő lökéshullámot egyszerű eszközökkel is megfigyelhetjük. Például, ha egy nagyobb tárgyat, mint egy üres műanyag palackot megütünk, a hang, amit hallunk, a levegőben terjedő lökéshullám következménye. A hang terjedési sebessége a levegőben körülbelül 343 m/s. Ezt a sebességet egyszerű kísérletekkel, például a hangforrás és a hallgató közötti távolság mérésével becsülhetjük meg.",
+     "type": "text",
+     "heading": "Lökéshullám megfigyelése",
+     "key_term": "lökéshullám"
+    },
+    "after": {
+     "body": "A levegőben terjedő hanghullámot egyszerű eszközökkel is megfigyelhetjük. Például, ha egy nagyobb tárgyat, mint egy üres műanyag palackot megütünk, a hang, amit hallunk, a levegőben terjedő hanghullám következménye. A hang terjedési sebessége a levegőben körülbelül 343 m/s. Ezt a sebességet egyszerű kísérletekkel, például a hangforrás és a hallgató közötti távolság mérésével becsülhetjük meg.",
+     "type": "text",
+     "heading": "A hang terjedése a levegőben",
+     "key_term": "lökéshullám"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-005",
+   "lesson_id": "23864568-4648-4155-bada-4167e1e16247",
+   "block_id": "0fcb3024-d423-4e2c-abe6-9eefd286ebad",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„amikor a napfény a vízfelületen tükröződik, és apró hullámokat hoz létre. Ezt a jelenséget hívjuk fényhullámnak”",
+   "explanation": "A vízfelszín fodrozódása vízhullám, nem fényhullám, és nem a napfény kelti. A fény hullámtermészetét pl. a szappanbuborék színei mutatják.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Light",
+     "title": "Light",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A fény hullámtermészete azt jelenti, hogy a fény nem csupán részecskékből áll, hanem hullámként is viselkedik. Gondoljunk csak arra, amikor a napfény a vízfelületen tükröződik, és apró hullámokat hoz létre. Ezt a jelenséget hívjuk fényhullámnak. A fényhullámok különböző frekvenciájúak, és ez határozza meg, hogy milyen színt érzékelünk. Például a piros fény hullámhossza hosszabb, míg a kék fényé rövidebb.",
+     "type": "text",
+     "heading": "A fény hullámtermészete",
+     "key_term": "fény hullámtermészete"
+    },
+    "after": {
+     "body": "A fény hullámtermészete azt jelenti, hogy a fény nem csupán részecskékből áll, hanem hullámként is viselkedik. Ezt mutatják például a szappanbuborék színei: a hártya két felületéről visszaverődő fényhullámok egymásra hatnak, és bizonyos színeket felerősítenek. A fényhullámok különböző frekvenciájúak, és ez határozza meg, hogy milyen színt érzékelünk. Például a piros fény hullámhossza hosszabb, míg a kék fényé rövidebb.",
+     "type": "text",
+     "heading": "A fény hullámtermészete",
+     "key_term": "fény hullámtermészete"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-006",
+   "lesson_id": "23864568-4648-4155-bada-4167e1e16247",
+   "block_id": "0fcb3024-d423-4e2c-abe6-9eefd286ebad",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A kiegészítő színek azok a színek, amelyek akkor keletkeznek, ha két szín keveredik ... piros és a zöld keveréke sárgát ad.”",
+   "explanation": "Kiegészítő színeknek azokat a színpárokat nevezzük, amelyek fényként keverve fehéret adnak (pl. kék és sárga). A vörös és zöld fény keveréke valóban sárga, de ez színkeverés, nem kiegészítés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Complementary_colors",
+     "title": "Complementary colors",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A színek észlelése a szemünkben található érzékelő sejtek munkájának köszönhető. Amikor a fény a különböző tárgyakra esik, a tárgyak a fény bizonyos részeit elnyelik, míg más részeit visszaverik. Például egy zöld levél a zöld fényt visszaveri, míg a többit elnyeli. A kiegészítő színek azok a színek, amelyek akkor keletkeznek, ha két szín keveredik, és az eredmény egy új szín, mint például a piros és a zöld keveréke sárgát ad.",
+     "type": "text",
+     "heading": "A színek észlelése",
+     "key_term": "színek észlelése, kiegészítő színek"
+    },
+    "after": {
+     "body": "A színek észlelése a szemünkben található érzékelő sejtek munkájának köszönhető. Amikor a fény a különböző tárgyakra esik, a tárgyak a fény bizonyos részeit elnyelik, míg más részeit visszaverik. Például egy zöld levél a zöld fényt visszaveri, míg a többit elnyeli. Két színes fény keverésével új színt kapunk: a vörös és a zöld fény keveréke például sárga. Kiegészítő színeknek azokat a színpárokat nevezzük, amelyek fényként keverve fehéret adnak, ilyen a kék és a sárga.",
+     "type": "text",
+     "heading": "A színek észlelése",
+     "key_term": "színek észlelése, kiegészítő színek"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-007",
+   "lesson_id": "23864568-4648-4155-bada-4167e1e16247",
+   "block_id": "0fcb3024-d423-4e2c-abe6-9eefd286ebad",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a festékek aditív keverése különbözik a fény aditív keverésétől”",
+   "explanation": "A festékek keverése kivonó (szubtraktív) színkeverés; csak a fény keverése összeadó (additív).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Subtractive_color",
+     "title": "Subtractive color",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A színek kikeverése a festés egyik izgalmas része. Ha például keverjük a piros és a kék festéket, lila színt kapunk. Ezt a gyakorlatot elvégezhetjük festékekkel otthon, és megfigyelhetjük, hogyan alakulnak át a színek. A színkeverés során fontos megérteni, hogy a festékek aditív keverése különbözik a fény aditív keverésétől, ahol a színek összeadódnak, míg a festékek esetében a színek elnyelik egymást.",
+     "type": "text",
+     "heading": "Színek kikeverése festékekkel",
+     "key_term": "színek kikeverése"
+    },
+    "after": {
+     "body": "A színek kikeverése a festés egyik izgalmas része. Ha például keverjük a piros és a kék festéket, lila színt kapunk. Ezt a gyakorlatot elvégezhetjük festékekkel otthon, és megfigyelhetjük, hogyan alakulnak át a színek. A színkeverés során fontos megérteni, hogy a festékek keverése kivonó (szubtraktív) színkeverés: minden festék elnyeli a fény egy részét, ezért a keverék sötétebb lesz. A fény keverése ezzel szemben összeadó (additív), ott a színek összeadódnak.",
+     "type": "text",
+     "heading": "Színek kikeverése festékekkel",
+     "key_term": "színek kikeverése"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-008",
+   "lesson_id": "23864568-4648-4155-bada-4167e1e16247",
+   "block_id": "0832a338-9681-403f-b069-49475a26fbf8",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "options[0], explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A felhők színe a vízcseppek fénytöréséből adódik”",
+   "explanation": "A felhők fehérsége abból adódik, hogy a cseppek a napfény minden színét közel egyformán szórják; a vastag felhő azért szürke, mert kevés fény jut át rajta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mie_scattering",
+     "title": "Mie scattering",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A felhők színe a vízcseppek fénytöréséből adódik.",
+      "B) A felhők mindig fehérek.",
+      "C) A felhők színét a napsugárzás befolyásolja.",
+      "D) A felhők színe a hőmérséklet változásától függ."
+     ],
+     "question": "Hogyan magyarázható a felhők színe?",
+     "explanation": "A felhők színe a vízcseppek fénytöréséből és a fény szóródásából adódik, ami különböző színeket eredményez.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A vízcseppek a napfény minden színét közel egyformán szórják.",
+      "B) A felhők mindig fehérek.",
+      "C) A felhők színét a napsugárzás befolyásolja.",
+      "D) A felhők színe a hőmérséklet változásától függ."
+     ],
+     "question": "Hogyan magyarázható a felhők színe?",
+     "explanation": "A felhők cseppjei a napfény minden színét közel egyformán szórják, ezért fehérek; a vastag felhő azért szürke, mert kevés fény jut át rajta.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-009",
+   "lesson_id": "23864568-4648-4155-bada-4167e1e16247",
+   "block_id": "3251d538-fd92-4c41-acd3-6e02310ce7ac",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Newton a színeket „a fény hullámtermészetével magyarázta”",
+   "explanation": "Newton a fényt részecskék áramának tekintette; a színek hullámhosszal való magyarázata a 19. századi hullámelmélethez (Young, Fresnel) kötődik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Corpuscular_theory_of_light",
+     "title": "Corpuscular theory of light",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A színek és fényhullámok megértése nélkülözhetetlen a modern technológiákban, például a LED világításban, a televíziókban és a számítógépes kijelzőkben.",
+     "sketch": {
+      "shapes": [
+       {
+        "x": 50,
+        "y": 100,
+        "size": 80,
+        "type": "triangle"
+       },
+       {
+        "x1": 150,
+        "x2": 350,
+        "y1": 150,
+        "y2": 150,
+        "type": "wave",
+        "cycles": 5,
+        "amplitude": 20
+       },
+       {
+        "x": 30,
+        "y": 80,
+        "text": "Prizma",
+        "type": "label"
+       },
+       {
+        "x": 200,
+        "y": 130,
+        "text": "Fényhullámok",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Fényhullámok és színek",
+     "discovery": "Isaac Newton 1666-ban kísérletezett a fény és a színek kapcsolatával. Egy prizmán keresztül megfigyelte, hogy a fehér fény színkomponensekre bontva szivárványt alkot. Ezt a jelenséget a fény hullámtermészetével magyarázta, és rájött, hogy a különböző színek különböző hullámhosszúságú fényhullámok.",
+     "try_basic": "Készíts egy egyszerű prizmát, például egy üvegdarabot, és irányíts rá egy erős fényforrást. Figyeld meg, hogyan bontja a fényt különböző színekre.",
+     "try_advanced": "Készíts egy színszűrő kísérletet különböző színszűrőkkel, és mérd meg, milyen színű fényt engednek át, és hogyan keverednek a színek."
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A színek és fényhullámok megértése nélkülözhetetlen a modern technológiákban, például a LED világításban, a televíziókban és a számítógépes kijelzőkben.",
+     "sketch": {
+      "shapes": [
+       {
+        "x": 50,
+        "y": 100,
+        "size": 80,
+        "type": "triangle"
+       },
+       {
+        "x1": 150,
+        "x2": 350,
+        "y1": 150,
+        "y2": 150,
+        "type": "wave",
+        "cycles": 5,
+        "amplitude": 20
+       },
+       {
+        "x": 30,
+        "y": 80,
+        "text": "Prizma",
+        "type": "label"
+       },
+       {
+        "x": 200,
+        "y": 130,
+        "text": "Fényhullámok",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Fényhullámok és színek",
+     "discovery": "Isaac Newton 1666-ban kísérletezett a fény és a színek kapcsolatával. Egy prizmán keresztül megfigyelte, hogy a fehér fény színkomponensekre bontva szivárványt alkot. Kimutatta, hogy a fehér fény színek keveréke. Newton a fényt apró részecskék áramának gondolta; azt, hogy a színek különböző hullámhosszú fényhullámok, csak a 19. században ismerték fel.",
+     "try_basic": "Készíts egy egyszerű prizmát, például egy üvegdarabot, és irányíts rá egy erős fényforrást. Figyeld meg, hogyan bontja a fényt különböző színekre.",
+     "try_advanced": "Készíts egy színszűrő kísérletet különböző színszűrőkkel, és mérd meg, milyen színű fényt engednek át, és hogyan keverednek a színek."
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-010",
+   "lesson_id": "f9bed1a8-cfe6-4a06-99c9-c13615a1af18",
+   "block_id": "dbc82457-b22e-4d13-b01e-fd3666be57ce",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "„A hanghullámok felfedezése a 17. században kezdődött, amikor Robert Hooke ... megfigyelte, hogy a levegő rezgései hangot keltenek.”",
+   "explanation": "A hang levegőrezgésként való értelmezése ókori eredetű; a 17. századból Boyle légszivattyús (vákuumos csengő) kísérlete a legismertebb. A Hooke-nak tulajdonított felfedezés nem igazolható.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "Nem igazolható tulajdonítás; tanári átírás javasolt."
+  },
+  {
+   "id": "PHYS-78-08-011",
+   "lesson_id": "bcefb295-dbe0-433a-9277-49d2a02e2a80",
+   "block_id": "61a1b4bd-ff37-4f91-8862-221d3292d5cb",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a hullámok sebessége és frekvenciája hogyan változik a víz mélységétől függően”",
+   "explanation": "A mélység a sebességet és a hullámhosszt változtatja, a frekvencia állandó marad.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Tsunami",
+     "title": "Tsunami",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A cunami egy hatalmas vízhullám, amelyet általában földrengések vagy vulkánkitörések okoznak. A cunami hullámok rendkívül nagy távolságokat képesek megtenni, és amikor part közelébe érnek, hatalmas erővel csapódnak a partra. A cunami megértése érdekében fontos tudni, hogy a hullámok sebessége és frekvenciája hogyan változik a víz mélységétől függően. A tudósok folyamatosan figyelik a cunami előjeleit, hogy időben figyelmeztethessék az embereket.",
+     "type": "text",
+     "heading": "A cunami jelensége",
+     "key_term": "cunami"
+    },
+    "after": {
+     "body": "A cunami egy hatalmas vízhullám, amelyet általában földrengések vagy vulkánkitörések okoznak. A cunami hullámok rendkívül nagy távolságokat képesek megtenni, és amikor part közelébe érnek, hatalmas erővel csapódnak a partra. A cunami megértése érdekében fontos tudni, hogy a hullámok sebessége és hullámhossza hogyan változik a víz mélységétől függően (a frekvenciájuk közben nem változik). A tudósok folyamatosan figyelik a cunami előjeleit, hogy időben figyelmeztethessék az embereket.",
+     "type": "text",
+     "heading": "A cunami jelensége",
+     "key_term": "cunami"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-012",
+   "lesson_id": "bcefb295-dbe0-433a-9277-49d2a02e2a80",
+   "block_id": "61a1b4bd-ff37-4f91-8862-221d3292d5cb",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„egy ugrálóköteleken”",
+   "explanation": "Elírás.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az állóhullám egy olyan hullámforma, amelyben a hullámok interferenciája következtében a hullámok látszólag megállnak. Képzeld el, hogy egy rugalmas kötélen, például egy ugrálóköteleken, a két végén rögzíted a kötelet. Ha a közepén megütöd, hullámok keletkeznek, amelyek visszaverődnek a végpontokról, és állóhullámot alkotnak. Ez a jelenség a zene világában is megjelenik, például amikor egy gitárhúron játszol, és a húrok rezgései állóhullámokat hoznak létre.",
+     "type": "text",
+     "heading": "Mi az állóhullám?",
+     "key_term": "állóhullám"
+    },
+    "after": {
+     "body": "Az állóhullám egy olyan hullámforma, amelyben a hullámok interferenciája következtében a hullámok látszólag megállnak. Képzeld el, hogy egy rugalmas kötélen, például egy ugrókötélen, a két végén rögzíted a kötelet. Ha a közepén megütöd, hullámok keletkeznek, amelyek visszaverődnek a végpontokról, és állóhullámot alkotnak. Ez a jelenség a zene világában is megjelenik, például amikor egy gitárhúron játszol, és a húrok rezgései állóhullámokat hoznak létre.",
+     "type": "text",
+     "heading": "Mi az állóhullám?",
+     "key_term": "állóhullám"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-013",
+   "lesson_id": null,
+   "block_id": "c3b7baa0-57dc-4596-bce6-ffae6938005f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„(standing wave)”",
+   "explanation": "Angol glossza a magyar kérdésben.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A hullámok visszaverődnek és interferálnak egymással.",
+      "B) A hullámok csak egy irányban terjednek.",
+      "C) Az amplitúdó folyamatosan változik.",
+      "D) A hullámhossz mindig állandó."
+     ],
+     "question": "Mi az állóhullám (standing wave) jellemzője?",
+     "explanation": "Az állóhullámok a hullámok interferenciájával jönnek létre, ahol a hullámok visszaverődnek és egymással találkoznak.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A hullámok visszaverődnek és interferálnak egymással.",
+      "B) A hullámok csak egy irányban terjednek.",
+      "C) Az amplitúdó folyamatosan változik.",
+      "D) A hullámhossz mindig állandó."
+     ],
+     "question": "Mi az állóhullám jellemzője?",
+     "explanation": "Az állóhullámok a hullámok interferenciájával jönnek létre, ahol a hullámok visszaverődnek és egymással találkoznak.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-014",
+   "lesson_id": null,
+   "block_id": "c3b7baa0-57dc-4596-bce6-ffae6938005f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„(frequency)”",
+   "explanation": "Angol glossza a magyar kérdésben.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hertz (Hz)",
+      "B) Méter (m)",
+      "C) Másodperc (s)",
+      "D) Decibel (dB)"
+     ],
+     "question": "Milyen mértékegységben mérjük a frekvenciát (frequency)?",
+     "explanation": "A frekvencia a hullámok másodpercenkénti számát jelenti, és mértékegysége a Hertz (Hz).",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hertz (Hz)",
+      "B) Méter (m)",
+      "C) Másodperc (s)",
+      "D) Decibel (dB)"
+     ],
+     "question": "Milyen mértékegységben mérjük a frekvenciát?",
+     "explanation": "A frekvencia a hullámok másodpercenkénti számát jelenti, és mértékegysége a Hertz (Hz).",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-015",
+   "lesson_id": null,
+   "block_id": "c3b7baa0-57dc-4596-bce6-ffae6938005f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„(pitch)”",
+   "explanation": "Angol glossza a magyar kérdésben.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) A hullámhossz",
+      "B) A hangerő",
+      "C) A terjedési sebesség",
+      "D) A frekvencia"
+     ],
+     "question": "Melyik tényező befolyásolja a hangmagasságot (pitch)?",
+     "explanation": "A hangmagasság a frekvenciától függ: a magasabb frekvenciájú hangok magasabb hangmagasságot eredményeznek.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) A hullámhossz",
+      "B) A hangerő",
+      "C) A terjedési sebesség",
+      "D) A frekvencia"
+     ],
+     "question": "Melyik tényező befolyásolja a hangmagasságot?",
+     "explanation": "A hangmagasság a frekvenciától függ: a magasabb frekvenciájú hangok magasabb hangmagasságot eredményeznek.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-016",
+   "lesson_id": null,
+   "block_id": "c3b7baa0-57dc-4596-bce6-ffae6938005f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„(wave speed)”",
+   "explanation": "Angol glossza a magyar kérdésben.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) v = f × λ",
+      "B) v = m × a",
+      "C) v = p × t",
+      "D) v = E × t"
+     ],
+     "question": "Mi a hullám terjedési sebességének (wave speed) képlete?",
+     "explanation": "A hullám terjedési sebessége a frekvencia (f) és a hullámhossz (λ) szorzataként határozható meg.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) v = f × λ",
+      "B) v = m × a",
+      "C) v = p × t",
+      "D) v = E × t"
+     ],
+     "question": "Mi a hullám terjedési sebességének képlete?",
+     "explanation": "A hullám terjedési sebessége a frekvencia (f) és a hullámhossz (λ) szorzataként határozható meg.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-017",
+   "lesson_id": null,
+   "block_id": "c3b7baa0-57dc-4596-bce6-ffae6938005f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„(water waves)”",
+   "explanation": "Angol glossza a magyar kérdésben.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Egy kő vízbe dobása.",
+      "B) Egy rugó meghúzása.",
+      "C) Egy zenehallgatás.",
+      "D) Egy lökéshullám megfigyelése."
+     ],
+     "question": "Melyik kísérlet mutatja be a vízhullámok (water waves) viselkedését?",
+     "explanation": "A vízhullámok megfigyelésére legjobban egy kő vízbe dobása alkalmas, ami hullámokat kelt a víz felszínén.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Egy kő vízbe dobása.",
+      "B) Egy rugó meghúzása.",
+      "C) Egy zenehallgatás.",
+      "D) Egy lökéshullám megfigyelése."
+     ],
+     "question": "Melyik kísérlet mutatja be a vízhullámok viselkedését?",
+     "explanation": "A vízhullámok megfigyelésére legjobban egy kő vízbe dobása alkalmas, ami hullámokat kelt a víz felszínén.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-08-018",
+   "lesson_id": null,
+   "block_id": "c3b7baa0-57dc-4596-bce6-ffae6938005f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 5,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„(rainbow)”",
+   "explanation": "Angol glossza a magyar kérdésben.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Piros",
+      "B) Zöld",
+      "C) Kék",
+      "D) Lila"
+     ],
+     "question": "Melyik szín a szivárvány (rainbow) legfelső része?",
+     "explanation": "A szivárvány legfelső színe a piros, amely a fény spektrumának legnagyobb hullámhosszú színe.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Piros",
+      "B) Zöld",
+      "C) Kék",
+      "D) Lila"
+     ],
+     "question": "Melyik szín a szivárvány legfelső része?",
+     "explanation": "A szivárvány legfelső színe a piros, amely a fény spektrumának legnagyobb hullámhosszú színe.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}
