@@ -1,0 +1,274 @@
+{
+ "nat_id": "PHYS-910-15",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "e1a5a425-85db-4fc3-8030-f604142b6883",
+   "title_hu": "Űrkutatás alapjai és a rakétatechnológia",
+   "text_block_id": "c68dd99d-a3e1-4217-b0bb-c2a3f75f62e4",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Miből tolja magát a rakéta?",
+     "body": "A rakéta a kilövellt gázok lendületét használja: a lendületmegmaradás miatt a gáz hátrafelé, a rakéta előre kap lendületet. Levegőre nincs szüksége, ezért légüres térben is működik (az az elterjedt tévhit, hogy a levegőbe „kapaszkodik”, hamis). A sebességváltozást a Ciolkovszkij-egyenlet adja: Δv = v_k · ln(m₀ : m_v), ahol v_k a kifúvási sebesség, m₀ az induló, m_v a végső tömeg. Ha v_k = 3 km/s és a rakéta induló tömege ötszöröse a végsőnek, Δv = 3 · ln 5 ≈ 4,8 km/s. Ezért kell a rakéta tömegének nagy részét az üzemanyag tegye ki, és ezért használnak többlépcsős rakétát.",
+     "did_you_know": "A lufi-példa jól működik: a kiáramló levegő lendülete löki a lufit, a levegő nem a szoba levegőjéhez kapaszkodik.",
+     "think": "Mekkora a rakéta sebességváltozása, ha v_k = 3 km/s és m₀ : m_v = 5 (ln 5 ≈ 1,61)?",
+     "think_answer": "Δv = 3 · 1,61 ≈ 4,8 km/s."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Hogyan jön ki a 7,9 és a 11,2 km/s?",
+     "body": "Az első kozmikus sebesség az a vízszintes sebesség, amellyel a test a Föld felszíne közelében körpályán keringene: a gravitáció adja a centripetális erőt, g = v² : R, ezért v₁ = √(g · R) = √(9,81 · 6,37 · 10⁶) ≈ 7,9 km/s. A szökési sebesség (második kozmikus sebesség) v₂ = √2 · v₁ ≈ 11,2 km/s. Aki ezt eléri, elhagyja a Föld vonzását, de a Nap körüli pályán marad: a Marsra ehhez pontosan kiszámolt átmeneti pálya (Hohmann-pálya) kell. A Naprendszer elhagyásához kb. 16,7 km/s (harmadik kozmikus sebesség) szükséges a Föld közeléből indulva.",
+     "did_you_know": "",
+     "think": "Mekkora a szökési sebesség, ha az első kozmikus sebesség 7,9 km/s (v₂ = √2 · v₁)?",
+     "think_answer": "v₂ = 1,414 · 7,9 ≈ 11,2 km/s."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Miért lebegnek az űrhajósok?",
+     "body": "A Nemzetközi Űrállomás kb. 400 km magasan kering, ott a gravitáció nem tűnt el: g = 9,81 · (6371 : 6771)² ≈ 8,7 m/s², vagyis a földfelszíni érték kb. 89%-a. Az űrhajósok azért lebegnek, mert az állomással együtt szabadon esnek a Föld körül, nincs, ami megtámassza őket, ezért nem nyomnak semmit. Súlynak azt az erőt nevezzük, amellyel a test a felfüggesztést vagy alátámasztást terheli; szabadesésben ez nulla. A gravitáció tehát nem szűnik meg, csak a súly tűnik el (látszólagos súlytalanság).",
+     "did_you_know": "Az űrhajósok tömegét oszcilláló ülésen mérik: a lengésidő a tömegtől függ, a súlytalanságtól nem.",
+     "think": "Hány százaléka a földfelszíni nehézségi gyorsulásnak a 400 km magasságban lévő érték?",
+     "think_answer": "Kb. 89%."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyit nyom a Holdon egy ember?",
+     "body": "A tömeg (kg) állandó, a súly (N) a helyi nehézségi gyorsulástól függ: G = m · g. Egy 60 kg-os ember súlya a Földön 60 · 9,81 ≈ 589 N, a Holdon (g = 1,62 m/s²) 60 · 1,62 ≈ 97 N, a Marson (g = 3,7 m/s²) kb. 222 N. A Holdon a súly kb. hatoda, ezért a Földön 0,5 m-t ugró ember ott kb. 3 m-t ugrana. A tömege azonban ugyanannyi, ezért ugyanúgy nehéz megmozdítani és megállítani egy nagy tömegű testet (a tehetetlenség tömegfüggő).",
+     "did_you_know": "",
+     "think": "Mekkora egy 75 kg-os ember súlya a Marson (g = 3,7 m/s²)?",
+     "think_answer": "G = 75 · 3,7 ≈ 278 N."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mekkora a Föld és a Hold közti vonzóerő?",
+     "body": "Newton gravitációs törvénye szerint két test között F = G · m₁ · m₂ : r², ahol G = 6,67 · 10⁻¹¹ N·m²/kg². A vonzás nem a tömegekkel, hanem a tömegek szorzatával arányos, és a távolság négyzetével fordítottan arányos. A Föld (5,97 · 10²⁴ kg) és a Hold (7,35 · 10²² kg) között, 3,84 · 10⁸ m távolságban F ≈ 2 · 10²⁰ N. A Hold nem azért kering, mert csak vonzza a Föld: folyamatosan „esik” a Föld felé, közben oldalirányban kb. 1 km/s sebességgel halad, ezért mindig elkerüli.",
+     "did_you_know": "",
+     "think": "Hányad részére csökken a vonzóerő, ha a két test távolsága megkétszereződik?",
+     "think_answer": "A negyedére."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Miért van nyár, ha a Föld távolabb van a Naptól?",
+     "body": "A Föld pályája enyhén elnyúlt ellipszis (excentricitása 0,017): januárban napközelben 147,1 millió km-re, júliusban naptávolban 152,1 millió km-re van a Naptól. Az évszakokat nem ez okozza, hiszen az északi féltekén júliusban van nyár, amikor a Föld messzebb van. Az évszakok oka a Föld forgástengelyének 23,4°-os dőlése: nyáron a féltekén a napsugarak meredekebben érkeznek, és a nappalok is hosszabbak. Kepler az ellipszispályákat 1609-ben, a Mars mozgásának elemzésével fedezte fel (Astronomia Nova).",
+     "did_you_know": "",
+     "think": "Miért van az északi féltekén nyár júliusban, amikor a Föld a legtávolabb van a Naptól?",
+     "think_answer": "A tengely dőlése miatt: a napsugarak meredekebben érkeznek, és hosszabbak a nappalok."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Mi történik most az űrben?",
+     "body": "A Perseverance rover 2021 februárjában szállt le a Mars Jezero-kráterében, és mintákat gyűjt egy jövőbeli Földre hozatalhoz; vele együtt érkezett az Ingenuity helikopter, amely 2021 áprilisában repült először egy másik bolygó légkörében. A James Webb űrtávcső 2021. december 25-én indult, a Földtől kb. 1,5 millió km-re, a Nap–Föld L2 pontnál kering, és infravörös tartományban figyel. Az első magyar űrhajós Farkas Bertalan volt 1980-ban (Szojuz–36), 2025-ben Kapu Tibor az Axiom-4 küldetéssel eljutott a Nemzetközi Űrállomásra. A projektek gyorsan változnak, ezért ellenőrizd az aktuális állásukat a NASA és az ESA oldalán.",
+     "did_you_know": "",
+     "think": "Hol kering a James Webb űrtávcső?",
+     "think_answer": "A Nap–Föld rendszer L2 pontja körül, kb. 1,5 millió km-re a Földtől."
+    }
+   ]
+  },
+  {
+   "lesson_id": "04ce38b7-1ab7-4643-a031-3f2f5c3346d9",
+   "title_hu": "Naprendszer és égitestek jellemzői",
+   "text_block_id": "16dfdec4-95a1-4193-b22c-0fb354369731",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mekkora a Nap a Naprendszerben?",
+     "body": "A Nap a Naprendszer tömegének 99,86%-át adja, ezért a bolygók a Nap körül keringenek. Nyolc bolygó van (Merkúr, Vénusz, Föld, Mars, Jupiter, Szaturnusz, Uránusz, Neptunusz); a Plútót az IAU 2006-ban törpebolygóvá minősítette. A Vénusz felszíne kb. 465 °C, nyomása kb. 92 bar, ez melegebb, mint a Napközelibb Merkúr, mert a vastag CO₂-légkör erős üvegházhatást okoz. A Mars légnyomása a földinek kb. 0,6%-a, átlagos hőmérséklete kb. −60 °C. A Naprendszerben a bolygók, holdak, üstökösök és aszteroidák is a Nap gravitációs mezejében mozognak.",
+     "did_you_know": "",
+     "think": "Melyik bolygó felszíne a legforróbb a Naprendszerben?",
+     "think_answer": "A Vénusz, kb. 465 °C, a vastag szén-dioxid-légkör üvegházhatása miatt."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Mekkora a Hold, és milyen ott a gravitáció?",
+     "body": "A Hold nem „a Föld legnagyobb holdja”, hanem az egyetlen természetes holdja. Átmérője kb. 3474 km, a Föld átmérőjének mintegy 27%-a, átlagos távolsága 384 400 km, és évente kb. 3,8 cm-rel távolodik. A gravitációs gyorsulás a felszínén 1,62 m/s², a földinek kb. hatoda, légkör nincs, ezért a hőmérséklet a nappali +120 °C és az éjszakai −170 °C között ingadozik. A Jupiter tömege a többi bolygó együttes tömegének kb. 2,5-szerese, a Nagy Vörös Folt egy Földnél nagyobb vihar, amely az utóbbi évszázadban zsugorodott.",
+     "did_you_know": "",
+     "think": "Hányszor ugrik magasabbra egy ember a Holdon, mint a Földön (g_Hold = 1,62 m/s²)?",
+     "think_answer": "Kb. hatszor magasabbra, mert a gravitációs gyorsulás hatoda a földinek."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Miért nem minden újholdkor van napfogyatkozás?",
+     "body": "A Hold pályája 5,1°-kal hajlik a Föld pályasíkjához, ezért az újhold többnyire elmegy a Nap felett vagy alatt. Napfogyatkozás akkor van, ha a Hold a Föld és a Nap közé, a három égitest egy vonalába kerül. A teljes napfogyatkozás sávja csak kb. 100–200 km széles, mert a Hold látszó mérete (0,52°) majdnem pontosan akkora, mint a Napé. Holdfogyatkozás akkor van, ha a Hold a Föld árnyékába kerül, ezt az egész éjszakai félgömbön látják. Magyarországon 1999. augusztus 11-én volt utoljára teljes napfogyatkozás (az ország nyugati részén).",
+     "did_you_know": "",
+     "think": "Miért nincs minden újholdkor napfogyatkozás?",
+     "think_answer": "Mert a Hold pályája kb. 5°-kal hajlik a Föld pályasíkjához, és a Hold többnyire elmegy a Nap alatt vagy fölött."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Kik szálltak le 1969-ben?",
+     "body": "Az Apollo–11 nem űrrepülőgép, hanem Saturn V hordozórakétával indított űrhajó volt. Az űrrepülőgépek (Space Shuttle) 1981 és 2011 között közlekedtek. 1969. július 20-án Neil Armstrong és Buzz Aldrin szállt le a Holdon, Michael Collins pedig a parancsnoki egységben a Hold körüli pályán maradt. Összesen 12 ember járt a Holdon, az utolsó 1972 decemberében. A Saturn V 110 m magas volt, és kb. 34 MN tolóerőt fejtett ki. A következő emberes Hold-program az Artemis, a Mars-utazás ennél jóval nehezebb.",
+     "did_you_know": "",
+     "think": "Ki maradt a Hold körüli pályán, amíg Armstrong és Aldrin a felszínen járt?",
+     "think_answer": "Michael Collins."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mi köze a GPS-nek a relativitáselmélethez?",
+     "body": "A GPS-t az Egyesült Államok katonai navigációs rendszereként fejlesztették ki (üzembe helyezése az 1990-es években történt), nem az űrkutatás mellékterméke. A műholdak órái a nagy sebesség miatt (különleges relativitáselmélet) napi 7 μs-ot késnek, a gyengébb gravitáció miatt (általános relativitáselmélet) viszont napi 45 μs-ot sietnek, összesen napi kb. 38 μs-ot. Ha ezt nem korrigálnák, a helymeghatározás hibája naponta kb. 38 · 10⁻⁶ · 3 · 10⁸ ≈ 11 km-rel nőne. Az érintés nélküli bankkártya viszont rádiófrekvenciás azonosításon (NFC) alapul, nem az űrkutatásból származik.",
+     "did_you_know": "",
+     "think": "Kb. mekkora hibát okozna naponta a nem korrigált óraeltérés a GPS-nél?",
+     "think_answer": "Kb. 11 km-t."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Miért kering gyorsabban a közelebbi bolygó?",
+     "body": "Kepler II. törvénye szerint a Naphoz a bolygót összekötő szakasz egyenlő idő alatt egyenlő területet súrol, ezért a bolygó napközelben gyorsabb. Kepler III. törvénye szerint a keringési idő négyzete arányos a pálya fél nagytengelyének köbével: T² = a³, ha T-t években, a-t csillagászati egységben (CSE) mérjük. A Marsra a = 1,52 CSE, T = 1,52^1,5 ≈ 1,87 év. A Halley-üstökös fél nagytengelye kb. 17,8 CSE, ezért T ≈ 75 év. Ugyanez a törvény mesterséges műholdakra is érvényes.",
+     "did_you_know": "",
+     "think": "Mennyi a keringési ideje egy 4 CSE fél nagytengelyű pályán keringő égitestnek (T² = a³)?",
+     "think_answer": "T = 4^1,5 = 8 év."
+    }
+   ]
+  },
+  {
+   "lesson_id": "48711c51-ce6e-4c63-a686-07b53a13d6b8",
+   "title_hu": "Gravitáció és csillagászat",
+   "text_block_id": "8d185b6b-ff81-4771-bdd7-321da7112bc1",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Miért a gravitáció uralja a kozmoszt?",
+     "body": "A gravitáció az alapvető kölcsönhatások közül a leggyengébb: két proton között a gravitációs vonzás kb. 10³⁶-szor kisebb, mint az elektromos taszítás. Mégis ez határozza meg a nagy méretű szerkezeteket, mert az anyag összességében elektromosan semleges, a gravitáció viszont mindig vonz és messzire hat. Einstein általános relativitáselmélete szerint a tömeg a téridő görbületét okozza. Ennek egyik következménye a gravitációs hullám, amelyet a LIGO-detektorok 2015-ben elsőként észleltek két összeolvadó fekete lyukból.",
+     "did_you_know": "",
+     "think": "Miért nem érezzük a gravitációt gyengének a mindennapokban?",
+     "think_answer": "Mert a Föld hatalmas tömege miatt a vonzás nagy, és mert az elektromos erők kiegyenlítik egymást."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Mi lesz a Nappal, és mi a nagyobb csillagokkal?",
+     "body": "A csillag sorsát a tömege szabja meg. A kb. 8 naptömegnél könnyebb csillagok (így a Nap is) vörös óriássá, majd fehér törpévé válnak. A kb. 8–20 naptömegű csillag szupernóva-robbanás után neutroncsillag lesz, a még nagyobb tömegű fekete lyukat hagyhat maga után. A nagyobb csillag rövidebb ideig él, mert gyorsabban fogyasztja az üzemanyagát: a főszekvenciás élettartam kb. a tömeg −2,5-ödik hatványával arányos, egy tízszeres tömegű csillag kb. 30 millió évig él a Nap 10 milliárd éve helyett. A Nap most kb. 4,6 milliárd éves, kb. 5 milliárd év múlva válik vörös óriássá.",
+     "did_you_know": "",
+     "think": "Mi lesz a Napból a fejlődése végén?",
+     "think_answer": "Fehér törpe, mert tömege kicsi a szupernóvához."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Csillaghalmaz vagy galaxis?",
+     "body": "A galaxis nem csillaghalmaz: a csillaghalmazok néhány száz vagy néhány százezer csillagból állnak, a galaxisok viszont százmilliárdos nagyságrendben tartalmaznak csillagokat. A Tejútrendszer küllős spirálgalaxis, a legközelebbi nagy galaxis az Androméda (kb. 2,5 millió fényév), amely kb. 4–5 milliárd év múlva ütközik a miénkkel. A galaxisok forgásából (Vera Rubin, 1970-es évek) kiderült, hogy a látható anyagnál sokkal több tömeg van bennük, ezt sötét anyagnak nevezzük. A sötét anyag az anyag kb. 85%-át adja, természetét még nem ismerjük.",
+     "did_you_know": "",
+     "think": "Kb. mennyi az anyag hányad része a sötét anyag?",
+     "think_answer": "Kb. 85%."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyi ideig kering a Nap a Tejútrendszerben?",
+     "body": "A Nap a galaxis középpontjától kb. 26 000 fényévre, kb. 230 km/s sebességgel kering. Egy teljes kör hossza kb. 2π · 26 000 · 9,46 · 10¹² km ≈ 1,5 · 10¹⁸ km, így az idő t = 1,5 · 10¹⁸ : 230 ≈ 6,7 · 10¹⁵ s, azaz kb. 210–230 millió év. A galaxis középpontjában levő Sagittarius A* fekete lyuk tömege kb. 4 millió naptömeg, képét az Event Horizon Telescope 2022-ben tette közzé. A Tejútrendszer korongjának átmérője kb. 100 000 fényév.",
+     "did_you_know": "",
+     "think": "Kb. mennyi idő alatt kerüli meg a Nap a galaxis középpontját?",
+     "think_answer": "Kb. 230 millió év."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mennyi ideig tartana eljutni a Proxima Centaurihoz?",
+     "body": "A fényév a távolság egysége (9,46 · 10¹² km), nem az időé. A Proxima Centauri 4,24 fényévre van, ez kb. 4,0 · 10¹³ km. A Voyager–1 szonda kb. 17 km/s sebességgel haladva ezt t = 4,0 · 10¹³ : 17 ≈ 2,4 · 10¹² s, vagyis kb. 75 000 év alatt tenné meg. Amit egy csillagra nézve látunk, a múlt fénye: a Napét 8 perc 20 másodperccel ezelőtt, az Androméda-galaxisét 2,5 millió évvel ezelőtt indult el.",
+     "did_you_know": "",
+     "think": "Kb. mennyi idő alatt érne el a Voyager–1 (17 km/s) a Proxima Centaurihoz (4,0 · 10¹³ km)?",
+     "think_answer": "Kb. 75 000 év."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Hogyan találnak exobolygókat?",
+     "body": "Az első, Nap típusú csillag körül keringő exobolygót (51 Pegasi b) 1995-ben fedezte fel Michel Mayor és Didier Queloz, 2019-ben Nobel-díjat kaptak érte. Ma már több mint 5000 megerősített exobolygót ismerünk. Két fő módszer van: a tranzit (a bolygó elhalad a csillag előtt, és kicsit csökkenti a fényét) és a radiális sebesség (a bolygó gravitációja meglóbálja a csillagot). A tranzit által okozott fénycsökkenés a felületek arányával egyenlő: egy Jupiter méretű bolygó (R_J : R_Nap ≈ 0,1) 1%-os, egy Föld méretű (0,0092) csak kb. 0,0084%-os fénycsökkenést okoz. A Kepler-űrtávcső 2009 és 2018 között, a TESS 2018 óta keres.",
+     "did_you_know": "",
+     "think": "Mennyivel csökkenti a csillag fényét egy Föld méretű bolygó tranzitja (R_Föld : R_Nap = 0,0092)?",
+     "think_answer": "0,0092² ≈ 8,4 · 10⁻⁵, vagyis kb. 0,0084%."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Miért infravörösben néz a Webb?",
+     "body": "A James Webb űrtávcső 6,5 m átmérőjű, 18 hatszögletű berilliumtükörből álló, aranyozott főtükre infravörös fényt gyűjt. Infravörösben néz, mert az univerzum tágulása miatt a nagyon távoli galaxisok fénye vöröseltolódást szenved, és a por is átengedi az infravörös sugárzást. A műszereket kb. 50 K alá hűtik a napellenző mögött, hogy saját hősugárzásuk ne zavarja a mérést. Emiatt a képek színei jórészt hamis színek, mert az infravörös hullámhosszakat látható színekhez rendelik. A Hubble 2,4 m-es tükrével látható, közeli infravörös és ultraibolya tartományban dolgozik.",
+     "did_you_know": "",
+     "think": "Miért kell a Webb távcsövét nagyon hidegre hűteni?",
+     "think_answer": "Hogy saját hősugárzása ne zavarja az infravörös mérést."
+    }
+   ]
+  },
+  {
+   "lesson_id": "bbdeb6f2-19b0-4836-a0e8-b86b98ffe9c9",
+   "title_hu": "Az univerzum keletkezése és a földönkívüli élet lehetőségei",
+   "text_block_id": "64ae64a9-edb1-4dcf-a51a-080487da8b86",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mi tágul valójában?",
+     "body": "Az ősrobbanás nem robbanás a térben, hanem maga a tér tágulása. A lufi-hasonlatnál a galaxisok a lufi felületén lévő pöttyök, a lufi felülete a tér: a pöttyök nem mozognak a felületen, mégis távolodnak. A galaxisok távolodását Georges Lemaître 1927-ben megjósolta, Edwin Hubble 1929-ben igazolta. A Hubble-törvény: v = H · d, ahol H ≈ 70 km/s/Mpc. Egy 100 Mpc-re lévő galaxis így kb. 7000 km/s sebességgel távolodik. A Világegyetem kora kb. 13,8 milliárd év.",
+     "did_you_know": "",
+     "think": "Milyen sebességgel távolodik egy 200 Mpc-re lévő galaxis (H = 70 km/s/Mpc)?",
+     "think_answer": "v = 70 · 200 = 14 000 km/s."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Tágul-e a szobád is?",
+     "body": "A tágulás csak a nagyon nagy, gravitációsan nem kötött távolságokon érvényesül: a Naprendszer, a Tejútrendszer és a saját testünk nem tágul, mert a gravitáció és az elektromágneses erők összetartják. A mobilinternet adatforgalmának növekedése semmiben nem hasonlít a kozmikus tágulásra. A vöröseltolódás a hullámhossz növekedése, a Doppler-hatáshoz hasonlóan: ezt használja a rendőrségi sebességmérő radar is, amely a visszavert hullám frekvenciájából számítja ki az autó sebességét. A tágulás sebessége (H · 1 CSE) elvileg évi kb. 10 m lenne a Föld–Nap távolságon, de ezt a gravitáció megakadályozza.",
+     "did_you_know": "",
+     "think": "Tágul-e a Naprendszer a Világegyetem tágulásával?",
+     "think_answer": "Nem, mert a gravitáció összetartja."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Melyek az ősrobbanás bizonyítékai?",
+     "body": "Az ősrobbanás-elméletnek több független bizonyítéka van. A galaxisok vöröseltolódása a tágulást mutatja. A kozmikus mikrohullámú háttérsugárzást 1965-ben Penzias és Wilson fedezte fel (1978-ban Nobel-díjat kaptak), hőmérséklete 2,725 K, és a Világegyetem 380 000 éves korából származik, amikor átlátszóvá vált. A könnyű elemek aránya (kb. 75% hidrogén, 25% hélium tömegre) is megegyezik az elmélet jóslatával. Az elmélet nem lezárt: a legkorábbi pillanatokról (az első másodperc törtrészéről) még kevés a biztos tudás.",
+     "did_you_know": "A régi analóg tévé „havas” képének kis része a kozmikus háttérsugárzástól származik.",
+     "think": "Kb. mekkora a kozmikus háttérsugárzás hőmérséklete?",
+     "think_answer": "2,7 K (−270,4 °C)."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Van-e bizonyíték a földönkívüli életre?",
+     "body": "Ma nincs bizonyított jel földönkívüli életre. Az exobolygók közül néhány Föld méretű bolygó a lakhatósági övezetben kering (ahol folyékony víz lehet), de az élet jelenléte másról szól. Frank Drake 1961-es egyenlete becslést ad a kommunikáló civilizációk számára (N = R* · f_p · n_e · f_l · f_i · f_c · L), de a tagok többsége ismeretlen. Az 1977-es „Wow!” jelet egyszer észlelték, és többé nem ismétlődött. A Fermi-paradoxon azt kérdezi: ha sok civilizáció van, miért nem találkoztunk velük? Ezekből nem az következik, hogy nincs élet, csak az, hogy nincs bizonyíték.",
+     "did_you_know": "",
+     "think": "Mit mond ki a Drake-egyenlet?",
+     "think_answer": "Becslést ad a Tejútrendszerben lévő, kommunikációra képes civilizációk számára, ismeretlen tagokkal."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Miért nehéz a Mars kutatása?",
+     "body": "A Mars a Földtől 55 és 400 millió km között van, a rádiójel ezért 3–22 percig utazik egy irányba. Egy 225 millió km-re lévő Marsra az üzenet 225 · 10⁶ : 3 · 10⁵ = 750 s, azaz 12,5 perc alatt ér oda, tehát a rover nem irányítható valós időben, és az útról maga kell döntenie. Az Ingenuity nevű kis helikopter 2021-ben demonstrálta, hogy a ritka marsi légkörben is lehet repülni. Az élet nyomait ma a Marson és a Jupiter, illetve a Szaturnusz jeges holdjain (Európé, Enceladus) keresik, ahol a jég alatt folyékony víz lehet.",
+     "did_you_know": "",
+     "think": "Mennyi ideig utazik a rádiójel egy irányban, ha a Mars 225 millió km-re van?",
+     "think_answer": "225 · 10⁶ km : 300 000 km/s = 750 s = 12,5 perc."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Hogyan ítéljük meg a bizonyítékot?",
+     "body": "Carl Sagan mondása szerint rendkívüli állításhoz rendkívüli bizonyíték kell. 1996-ban egy marsi meteoritban (ALH84001) apró szerkezeteket az élet nyomaiként értelmeztek, de később a legtöbb kutató elvetette ezt, mert szervetlen folyamatok is létrehozhatták. A K2-18 b exobolygó légkörében a dimetil-szulfid nyomairól szóló közlések ma is vitatottak. A tudományos elmélet ellenőrizhető, megfigyelésekkel és mérésekkel cáfolható állításokat tesz. Az idegen intelligenciával való találkozás társadalmi és etikai kérdései – ki válaszol a Föld nevében? – ma is nyitott viták.",
+     "did_you_know": "",
+     "think": "Mit jelent Sagan mondása a rendkívüli állításról?",
+     "think_answer": "Hogy a szokatlan állításhoz különösen erős bizonyíték kell."
+    }
+   ]
+  }
+ ]
+}

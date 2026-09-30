@@ -1,0 +1,1271 @@
+{
+ "nat_id": "PHYS-910-15",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 109,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-910-15-001",
+   "lesson_id": "e1a5a425-85db-4fc3-8030-f604142b6883",
+   "block_id": "c68dd99d-a3e1-4217-b0bb-c2a3f75f62e4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Ha például egy űrhajónk elérné ezt a sebességet, képes lenne elhagyni a Földet és elindulni a Mars felé.”",
+   "explanation": "A 11,2 km/s a Föld vonzásának elhagyásához elég, de a test a Nap körüli pályán marad; a Marsra külön, pontosan kiszámított átmeneti pályán (Hohmann-pálya) lehet eljutni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Escape_velocity",
+     "title": "Escape velocity",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hohmann_transfer_orbit",
+     "title": "Hohmann transfer orbit",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A kozmikus sebességek a Föld körüli pályára álláshoz és a bolygók közötti utazásokhoz szükséges sebességek. Az első kozmikus sebesség, ami körülbelül 7,9 km/s, lehetővé teszi, hogy a rakéta elérje a Föld körüli pályát. A második kozmikus sebesség, ami körülbelül 11,2 km/s, a Föld gravitációs mezőjének elhagyásához szükséges. Ha például egy űrhajónk elérné ezt a sebességet, képes lenne elhagyni a Földet és elindulni a Mars felé.",
+     "type": "text",
+     "heading": "Kozmikus sebességek",
+     "key_term": "kozmikus sebességek"
+    },
+    "after": {
+     "body": "A kozmikus sebességek a Föld körüli pályára álláshoz és a bolygók közötti utazásokhoz szükséges sebességek. Az első kozmikus sebesség, ami körülbelül 7,9 km/s, lehetővé teszi, hogy a rakéta elérje a Föld körüli pályát. A második kozmikus sebesség, ami körülbelül 11,2 km/s, a Föld gravitációs mezőjének elhagyásához szükséges. Aki eléri ezt a sebességet, elhagyja a Föld vonzását, de a Nap körüli pályán marad; a Marsra külön, pontosan kiszámolt átmeneti pályán lehet eljutni.",
+     "type": "text",
+     "heading": "Kozmikus sebességek",
+     "key_term": "kozmikus sebességek"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-002",
+   "lesson_id": "e1a5a425-85db-4fc3-8030-f604142b6883",
+   "block_id": "c68dd99d-a3e1-4217-b0bb-c2a3f75f62e4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Ilyenkor a testek nem érzékelik a gravitációt”",
+   "explanation": "A gravitáció ilyenkor is hat (az ISS magasságában a földfelszíni érték kb. 89%-a); a súlytalanságot a szabadesés okozza, nem a gravitáció hiánya.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Weightlessness",
+     "title": "Weightlessness",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/International_Space_Station",
+     "title": "International Space Station",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A súlytalanság akkor lép fel, amikor egy test szabadon esik, például egy űrhajóban. Ilyenkor a testek nem érzékelik a gravitációt, mert a rakéta és a benne lévő tárgyak együttesen esnek. Ezt a jelenséget sokan tapasztalják meg, amikor ugranak egy magasabb helyről, és a levegőben érzik, hogy 'lebegnek'. Fontos megkülönböztetni a súlyt, ami a gravitációs hatás eredménye, a tömegtől, ami egy test anyagának mennyiségét jelenti.",
+     "type": "text",
+     "heading": "Súlytalanság jelensége",
+     "key_term": "súlytalanság"
+    },
+    "after": {
+     "body": "A súlytalanság akkor lép fel, amikor egy test szabadon esik, például egy űrhajóban. A gravitáció ilyenkor is hat (a Nemzetközi Űrállomás magasságában a földfelszíni érték kb. 89%-a), de mivel az űrhajó és a benne lévő tárgyak együtt esnek, semmi nem nyomja az alátámasztását. Ezt a jelenséget sokan tapasztalják meg, amikor ugranak egy magasabb helyről, és a levegőben érzik, hogy 'lebegnek'. Fontos megkülönböztetni a súlyt, ami a gravitációs hatás eredménye, a tömegtől, ami egy test anyagának mennyiségét jelenti.",
+     "type": "text",
+     "heading": "Súlytalanság jelensége",
+     "key_term": "súlytalanság"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-003",
+   "lesson_id": "e1a5a425-85db-4fc3-8030-f604142b6883",
+   "block_id": "c68dd99d-a3e1-4217-b0bb-c2a3f75f62e4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "„a Holdon … csak körülbelül 96 N súlyt érezne”",
+   "explanation": "60 kg · 1,62 m/s² ≈ 97 N.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Moon",
+     "title": "Moon",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A tömeg a test anyagának mennyiségét jelenti, és nem változik, bárhol is legyünk a világban. Ezzel szemben a súly a gravitációs erő, amely a tömegre hat. Például, ha egy 60 kg-os személy a Földön áll, a súlya körülbelül 588 N. Ugyanez a személy a Holdon, ahol a gravitáció gyengébb, csak körülbelül 96 N súlyt érezne. Ezért a súly és a tömeg közötti különbség kulcsfontosságú az űrkutatásban.",
+     "type": "text",
+     "heading": "Súly és tömeg",
+     "key_term": "súly, tömeg"
+    },
+    "after": {
+     "body": "A tömeg a test anyagának mennyiségét jelenti, és nem változik, bárhol is legyünk a világban. Ezzel szemben a súly a gravitációs erő, amely a tömegre hat. Például, ha egy 60 kg-os személy a Földön áll, a súlya körülbelül 588 N. Ugyanez a személy a Holdon, ahol a gravitáció gyengébb, csak körülbelül 97 N súlyt érezne. Ezért a súly és a tömeg közötti különbség kulcsfontosságú az űrkutatásban.",
+     "type": "text",
+     "heading": "Súly és tömeg",
+     "key_term": "súly, tömeg"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-004",
+   "lesson_id": "e1a5a425-85db-4fc3-8030-f604142b6883",
+   "block_id": "c68dd99d-a3e1-4217-b0bb-c2a3f75f62e4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„minden test vonzza egymást a tömegük arányában”",
+   "explanation": "A gravitációs erő a tömegek szorzatával egyenesen, a távolság négyzetével fordítottan arányos.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Newton's_law_of_universal_gravitation",
+     "title": "Newton's law of universal gravitation",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az általános tömegvonzás törvénye szerint minden test vonzza egymást a tömegük arányában. Ez a törvény magyarázza meg a bolygók és üstökösök mozgását az űrben. Például a Föld vonzza a Holdat, ezért az a Föld körül kering. A gravitációs mező segítségével ezt a vonzást könnyen vizualizálhatjuk: képzeljük el, hogy a Föld egy hatalmas labda, amely körül más kisebb labdák keringenek, mint például a Hold vagy a műholdak.",
+     "type": "text",
+     "heading": "Általános tömegvonzás",
+     "key_term": "általános tömegvonzás"
+    },
+    "after": {
+     "body": "Az általános tömegvonzás törvénye szerint két test egymást a tömegük szorzatával egyenesen, a távolságuk négyzetével fordítottan arányos erővel vonzza. Ez a törvény magyarázza meg a bolygók és üstökösök mozgását az űrben. Például a Föld vonzza a Holdat, ezért az a Föld körül kering. A gravitációs mező segítségével ezt a vonzást könnyen vizualizálhatjuk: képzeljük el, hogy a Föld egy hatalmas labda, amely körül más kisebb labdák keringenek, mint például a Hold vagy a műholdak.",
+     "type": "text",
+     "heading": "Általános tömegvonzás",
+     "key_term": "általános tömegvonzás"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-005",
+   "lesson_id": "e1a5a425-85db-4fc3-8030-f604142b6883",
+   "block_id": "c68dd99d-a3e1-4217-b0bb-c2a3f75f62e4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„a Föld és a Nap közötti távolság változásában … hatással van az évszakok váltakozására”",
+   "explanation": "Az évszakokat a forgástengely 23,4°-os dőlése okozza; a Föld januárban van napközelben (kb. 147 millió km), júliusban naptávolban (kb. 152 millió km), tehát az északi féltekén a nyár a Nappal nagyobb távolságban van.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Season",
+     "title": "Season",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Earth's_orbit",
+     "title": "Earth's orbit",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A bolygók mozgása ellipszis pályán történik, amit Johannes Kepler fedezett fel. Az ellipszis pálya azt jelenti, hogy a bolygók nem kör alakú, hanem ovális pályán keringenek a Nap körül. Ez a jelenség megfigyelhető a Föld és a Nap közötti távolság változásában is, amely hatással van az évszakok váltakozására. Az űrkutatás során ez a tudás segít az űrhajók pályájának tervezésében is.",
+     "type": "text",
+     "heading": "Ellipszis pálya",
+     "key_term": "ellipszis pálya"
+    },
+    "after": {
+     "body": "A bolygók mozgása ellipszis pályán történik, amit Johannes Kepler fedezett fel. Az ellipszis pálya azt jelenti, hogy a bolygók nem kör alakú, hanem ovális pályán keringenek a Nap körül. Ezért változik a Föld és a Nap távolsága (januárban kb. 147, júliusban kb. 152 millió km), de az évszakokat nem ez, hanem a Föld forgástengelyének 23,4°-os dőlése okozza. Az űrkutatás során ez a tudás segít az űrhajók pályájának tervezésében is.",
+     "type": "text",
+     "heading": "Ellipszis pálya",
+     "key_term": "ellipszis pálya"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-006",
+   "lesson_id": "04ce38b7-1ab7-4643-a031-3f2f5c3346d9",
+   "block_id": "16dfdec4-95a1-4193-b22c-0fb354369731",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "„A Hold, amely a Föld legnagyobb természetes holdja”",
+   "explanation": "A Földnek egyetlen természetes holdja van.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Moon",
+     "title": "Moon",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A bolygók fizikai környezete nagyon változatos. Például a Jupiter hatalmas gázóriás, amelynek légköre hatalmas viharokat, például a híres Nagy Vörös Foltot rejt. A Földön élő emberek számára a legfontosabb a víz és az élet fenntartásához szükséges légkör megléte. A Hold, amely a Föld legnagyobb természetes holdja, gyenge gravitációval és szinte légkör nélküli környezettel bír, ami azt jelenti, hogy az ottani séták során a felfedezők a Földön megszokottakhoz képest teljesen más élményeket tapasztalhatnak.",
+     "type": "text",
+     "heading": "A bolygók és holdjaik jellemzői",
+     "key_term": "bolygók, holdak"
+    },
+    "after": {
+     "body": "A bolygók fizikai környezete nagyon változatos. Például a Jupiter hatalmas gázóriás, amelynek légköre hatalmas viharokat, például a híres Nagy Vörös Foltot rejt. A Földön élő emberek számára a legfontosabb a víz és az élet fenntartásához szükséges légkör megléte. A Hold, amely a Föld egyetlen természetes holdja, gyenge gravitációval és szinte légkör nélküli környezettel bír, ami azt jelenti, hogy az ottani séták során a felfedezők a Földön megszokottakhoz képest teljesen más élményeket tapasztalhatnak.",
+     "type": "text",
+     "heading": "A bolygók és holdjaik jellemzői",
+     "key_term": "bolygók, holdak"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-007",
+   "lesson_id": "04ce38b7-1ab7-4643-a031-3f2f5c3346d9",
+   "block_id": "16dfdec4-95a1-4193-b22c-0fb354369731",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A napfogyatkozás (napfogyatkozás) … a holdfogyatkozás (holdfogyatkozás)”",
+   "explanation": "Ismétlődő zárójeles szómagyarázat.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "szerkesztési hiba",
+   "fix": {
+    "before": {
+     "body": "A napfogyatkozás (napfogyatkozás) akkor következik be, amikor a Hold a Föld és a Nap közé kerül, így eltakarja a Nap fényét. Ezt a jelenséget sokan izgalmasan figyelik meg, hiszen különleges látványt nyújt. Ezzel szemben a holdfogyatkozás (holdfogyatkozás) akkor történik, amikor a Föld a Hold és a Nap közé áll, és a Föld árnyéka a Holdra vetül. Mindkét jelenség a Naprendszer égitestjeinek mozgásából adódik, és kiváló példa arra, hogy a gravitáció miként befolyásolja a világunkat.",
+     "type": "text",
+     "heading": "Fogyatkozások: napfogyatkozás és holdfogyatkozás",
+     "key_term": "napfogyatkozás, holdfogyatkozás"
+    },
+    "after": {
+     "body": "A napfogyatkozás akkor következik be, amikor a Hold a Föld és a Nap közé kerül, így eltakarja a Nap fényét. Ezt a jelenséget sokan izgalmasan figyelik meg, hiszen különleges látványt nyújt. Ezzel szemben a holdfogyatkozás akkor történik, amikor a Föld a Hold és a Nap közé áll, és a Föld árnyéka a Holdra vetül. Mindkét jelenség a Naprendszer égitestjeinek mozgásából adódik, és kiváló példa arra, hogy a gravitáció miként befolyásolja a világunkat.",
+     "type": "text",
+     "heading": "Fogyatkozások: napfogyatkozás és holdfogyatkozás",
+     "key_term": "napfogyatkozás, holdfogyatkozás"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-008",
+   "lesson_id": "04ce38b7-1ab7-4643-a031-3f2f5c3346d9",
+   "block_id": "16dfdec4-95a1-4193-b22c-0fb354369731",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az űrrepülőgépek, mint például … Apollo 11” és „a következő cél a Marsra való utazás”",
+   "explanation": "Az Apollo–11 űrhajó volt Saturn V hordozórakétával; az űrrepülőgépek (Space Shuttle) 1981–2011 között repültek. A következő emberes cél az Artemis-program Holdra való visszatérése.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Apollo_11",
+     "title": "Apollo 11",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Space_Shuttle",
+     "title": "Space Shuttle",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Artemis_program",
+     "title": "Artemis program",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az űrrepülőgépek, mint például az Apollo program keretében készült Apollo 11, lehetővé tették az emberi élet első lépéseit a Holdon. 1969-ben Neil Armstrong és Buzz Aldrin a Hold felszínére léptek, ezzel történelmet írtak. Az űrrepülőgépek technológiája ma is folyamatosan fejlődik, és a következő cél a Marsra való utazás, amely új kihívások elé állítja a mérnököket és a tudósokat.",
+     "type": "text",
+     "heading": "Űrrepülőgépek és a Holdraszállás",
+     "key_term": "űrrepülőgépek, Holdraszállás"
+    },
+    "after": {
+     "body": "Az Apollo–11 űrhajó (nem űrrepülőgép: azokat 1981 és 2011 között használták) tette lehetővé az ember első lépéseit a Holdon. 1969-ben Neil Armstrong és Buzz Aldrin a Hold felszínére léptek, ezzel történelmet írtak. Az űrhajózás technológiája ma is fejlődik: az Artemis-program az embert újra a Holdra viszi, a Marsra való utazás ennél jóval nehezebb.",
+     "type": "text",
+     "heading": "Űrrepülőgépek és a Holdraszállás",
+     "key_term": "űrrepülőgépek, Holdraszállás"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-009",
+   "lesson_id": "04ce38b7-1ab7-4643-a031-3f2f5c3346d9",
+   "block_id": "16dfdec4-95a1-4193-b22c-0fb354369731",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Az érintés nélküli bankkártyás fizetés is egy olyan technológia, amely az űrkutatás során kifejlesztett érzékelőkön alapul”",
+   "explanation": "Az érintés nélküli fizetés rádiófrekvenciás azonosításra (NFC) épül, nem űrkutatási melléktermék; a GPS pedig eredetileg katonai navigációs rendszer.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Near-field_communication",
+     "title": "Near-field communication",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+     "title": "Global Positioning System",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Sok olyan technológiát használunk a mindennapokban, amelyek először az űrkutatás során jöttek létre. Például a GPS (Globális Helymeghatározó Rendszer) segít nekünk a tájékozódásban, legyen szó autós navigálásról vagy a legjobb útvonal megtalálásáról. Az érintés nélküli bankkártyás fizetés is egy olyan technológia, amely az űrkutatás során kifejlesztett érzékelőkön alapul, így gyorsabbá és kényelmesebbé téve a vásárlásokat.",
+     "type": "text",
+     "heading": "Űrkutatás és a mindennapi élet",
+     "key_term": "űrkutatás, technológia"
+    },
+    "after": {
+     "body": "Az űrtechnológia a mindennapokban is jelen van. Például a GPS (Globális Helymeghatározó Rendszer, eredetileg katonai műholdas navigáció) segít nekünk a tájékozódásban, legyen szó autós navigálásról vagy a legjobb útvonal megtalálásáról. Az érintés nélküli bankkártyás fizetés viszont nem az űrkutatásból ered: rádiófrekvenciás azonosításon (NFC) alapul.",
+     "type": "text",
+     "heading": "Űrkutatás és a mindennapi élet",
+     "key_term": "űrkutatás, technológia"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-010",
+   "lesson_id": "48711c51-ce6e-4c63-a686-07b53a13d6b8",
+   "block_id": "8d185b6b-ff81-4771-bdd7-321da7112bc1",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„egyesek végül fekete lyukakká, mások neutroncsillagokká alakulnak, míg a nagyobbak szupernóvák formájában robbannak fel”",
+   "explanation": "A csillag sorsát a tömege szabja meg: a Nap fehér törpévé válik; a nagyobb tömegű csillagok szupernóvaként robbannak, és neutroncsillag vagy fekete lyuk marad utánuk. A szupernóva nem a „nagyobbak” külön végzete.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Stellar_evolution",
+     "title": "Stellar evolution",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Supernova",
+     "title": "Supernova",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A csillagok, mint például a Nap, hatalmas gázgömbök, amelyek belsejében fúziós reakciók zajlanak. Ez a folyamat óriási mennyiségű energiát termel, amely fény és hő formájában jut el hozzánk. A csillagok élete során különböző fázisokon mennek keresztül: egyesek végül fekete lyukakká, mások neutroncsillagokká alakulnak, míg a nagyobbak szupernóvák formájában robbannak fel. Ezek a folyamatok nemcsak a csillagok életét, hanem a környezetüket is befolyásolják.",
+     "type": "text",
+     "heading": "A csillagok és a Nap működése",
+     "key_term": "csillag, fekete lyuk, neutroncsillag, szupernóva"
+    },
+    "after": {
+     "body": "A csillagok, mint például a Nap, hatalmas gázgömbök, amelyek belsejében fúziós reakciók zajlanak. Ez a folyamat óriási mennyiségű energiát termel, amely fény és hő formájában jut el hozzánk. A csillagok sorsát a tömegük szabja meg: a Naphoz hasonló csillagok vörös óriássá, majd fehér törpévé válnak, a nagyobb tömegűek szupernóvaként robbannak fel, és neutroncsillagot vagy fekete lyukat hagynak maguk után. Ezek a folyamatok nemcsak a csillagok életét, hanem a környezetüket is befolyásolják.",
+     "type": "text",
+     "heading": "A csillagok és a Nap működése",
+     "key_term": "csillag, fekete lyuk, neutroncsillag, szupernóva"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-011",
+   "lesson_id": "48711c51-ce6e-4c63-a686-07b53a13d6b8",
+   "block_id": "8d185b6b-ff81-4771-bdd7-321da7112bc1",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A galaxisok hatalmas csillaghalmazok”",
+   "explanation": "A csillaghalmaz (nyílt vagy gömbhalmaz) más objektum; a galaxis csillagok, gáz és por rendszere.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Galaxy",
+     "title": "Galaxy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A galaxisok hatalmas csillaghalmazok, amelyeket gravitációs erő tart össze. A Tejútrendszer, amelyben élünk, egy spirális galaxis, tele csillagokkal, bolygókkal és gázfelhőkkel. A galaxisok nemcsak egyedülállóan léteznek, hanem galaxishalmazokba is tömörülnek, ahol több galaxis vonzza egymást. Ez a struktúra segít megérteni a Világegyetem nagyobb léptékű felépítését és fejlődését.",
+     "type": "text",
+     "heading": "Galaxisok és galaxishalmazok",
+     "key_term": "galaxis, galaxishalmaz"
+    },
+    "after": {
+     "body": "A galaxisok csillagok, gáz és por hatalmas rendszerei, amelyeket a gravitáció (és a sötét anyag) tart össze. A Tejútrendszer, amelyben élünk, egy spirális galaxis, tele csillagokkal, bolygókkal és gázfelhőkkel. A galaxisok nemcsak egyedülállóan léteznek, hanem galaxishalmazokba is tömörülnek, ahol több galaxis vonzza egymást. Ez a struktúra segít megérteni a Világegyetem nagyobb léptékű felépítését és fejlődését.",
+     "type": "text",
+     "heading": "Galaxisok és galaxishalmazok",
+     "key_term": "galaxis, galaxishalmaz"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-012",
+   "lesson_id": "bbdeb6f2-19b0-4836-a0e8-b86b98ffe9c9",
+   "block_id": "64ae64a9-edb1-4dcf-a51a-080487da8b86",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a lufiban a levegő is távolodik egymástól” és „(expanding universe)”; Hubble az 1920-as években",
+   "explanation": "A tágulás modelljében a galaxisok a lufi felületén lévő pöttyök, maga a tér tágul; angol glossza magyar szövegben. A tágulást Lemaître 1927-ben megjósolta, Hubble 1929-ben igazolta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Expansion_of_the_universe",
+     "title": "Expansion of the universe",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Georges_Lemaître",
+     "title": "Georges Lemaître",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az ősrobbanás elmélete szerint a Világegyetem körülbelül 13,8 milliárd évvel ezelőtt egy rendkívül forró és sűrű állapotból keletkezett. Képzeld el egy lufit, amit fújsz fel: ahogy nő, egyre nagyobb teret foglal el, és a benne lévő levegő is távolodik egymástól. Ugyanez történik az univerzumban is, ahol a galaxisok folyamatosan távolodnak egymástól. Ez a táguló univerzum (expanding universe) fogalma, amelyet Edwin Hubble fedezett fel az 1920-as években.",
+     "type": "text",
+     "heading": "Az ősrobbanás elmélete",
+     "key_term": "ősrobbanás"
+    },
+    "after": {
+     "body": "Az ősrobbanás elmélete szerint a Világegyetem körülbelül 13,8 milliárd évvel ezelőtt egy rendkívül forró és sűrű állapotból keletkezett. Képzelj el egy lufit, amelynek felületére pöttyöket rajzoltál: ahogy fújod, a pöttyök távolodnak egymástól, pedig a felületen nem mozdulnak. Ugyanez történik az univerzumban is: maga a tér tágul, és a galaxisok távolodnak egymástól. A tágulást Georges Lemaître 1927-ben megjósolta, Edwin Hubble pedig 1929-ben megfigyelésekkel igazolta.",
+     "type": "text",
+     "heading": "Az ősrobbanás elmélete",
+     "key_term": "ősrobbanás"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-013",
+   "lesson_id": "bbdeb6f2-19b0-4836-a0e8-b86b98ffe9c9",
+   "block_id": "64ae64a9-edb1-4dcf-a51a-080487da8b86",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„a mobilinternet adatforgalmának növekedése hasonló ahhoz, ahogyan az univerzumban a galaxisok távolodnak … a távolságok és az idő fogalma egyre relatívabbá válik”",
+   "explanation": "Ez értelmetlen hasonlat; a kozmikus tágulás csak gravitációsan nem kötött, nagy távolságokon érvényesül, a Naprendszer és a Tejútrendszer nem tágul. A vöröseltolódás a Doppler-hatás rokona.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Expansion_of_the_universe",
+     "title": "Expansion of the universe",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Redshift",
+     "title": "Redshift",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A táguló univerzumnak nemcsak tudományos jelentősége van, hanem a mindennapi életünkben is megjelenik. Például, amikor mobilinternetet használunk, és a telefonunk adatforgalma folyamatosan növekszik, az hasonló ahhoz, ahogyan az univerzumban a galaxisok távolodnak egymástól. Az univerzális tágulás jelensége a modern technológiák fejlődését is inspirálja, hiszen a távolságok és az idő fogalma egyre relatívabbá válik.",
+     "type": "text",
+     "heading": "A táguló univerzum és a mindennapok",
+     "key_term": "táguló univerzum"
+    },
+    "after": {
+     "body": "A táguló univerzum a mindennapokban nem érezhető. A tágulás csak a gravitációsan nem kötött, nagyon nagy távolságokon érvényesül: a Naprendszer és a Tejútrendszer nem tágul. A vöröseltolódás a Doppler-hatás rokona, ezt használják a rendőrségi sebességmérő radarok is.",
+     "type": "text",
+     "heading": "A táguló univerzum és a mindennapok",
+     "key_term": "táguló univerzum"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-014",
+   "lesson_id": "bbdeb6f2-19b0-4836-a0e8-b86b98ffe9c9",
+   "block_id": "64ae64a9-edb1-4dcf-a51a-080487da8b86",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„egyértelmű bizonyíték az elmélet mellett” és a „régi filmfelvétel” hasonlat",
+   "explanation": "A kozmikus háttérsugárzás az egyik legerősebb bizonyíték; az „egyértelmű” túlzás. A hasonlat nem a jelenséget írja le: a háttérsugárzás a kb. 380 000 éves Világegyetem fénye, amely a tágulás miatt mikrohullámmá hűlt (2,7 K).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cosmic_microwave_background",
+     "title": "Cosmic microwave background",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az ősrobbanás elmélete nem csupán spekuláció, hanem tudományos kutatások és megfigyelések eredménye. A kozmikus háttérsugárzás felfedezése, amely a Világegyetem korai állapotára utal, egyértelmű bizonyíték az elmélet mellett. Képzeld el, hogy egy régi filmfelvételt nézel, ahol a kép minősége egyre romlik; a háttérsugárzás éppen ezt az ősi állapotot tükrözi vissza.",
+     "type": "text",
+     "heading": "Az ősrobbanás elméletének tudományos megalapozottsága",
+     "key_term": "ősrobbanás"
+    },
+    "after": {
+     "body": "Az ősrobbanás elmélete nem csupán spekuláció, hanem tudományos kutatások és megfigyelések eredménye. A kozmikus háttérsugárzás felfedezése, amely a Világegyetem korai állapotára utal, az egyik legerősebb bizonyíték az elmélet mellett. A háttérsugárzás a Világegyetem kb. 380 000 éves korából származó fény, amely a tágulás miatt mikrohullámmá hűlt (2,7 K).",
+     "type": "text",
+     "heading": "Az ősrobbanás elméletének tudományos megalapozottsága",
+     "key_term": "ősrobbanás"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-015",
+   "lesson_id": "bbdeb6f2-19b0-4836-a0e8-b86b98ffe9c9",
+   "block_id": "64ae64a9-edb1-4dcf-a51a-080487da8b86",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Egyre több olyan exobolygót fedeznek fel, amelyek a Földhöz hasonló körülmények között keringenek”; a sci-fi idegenek „nem is annyira messze”",
+   "explanation": "Bár ismerünk néhány Föld méretű, lakhatósági övezetben keringő bolygót, földönkívüli életre nincs bizonyíték; a szöveg alaptalan reményt kelt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Exoplanet",
+     "title": "Exoplanet",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Földön kívüli élet lehetőségei régóta foglalkoztatják a tudósokat és a filozófusokat is. Egyre több olyan exobolygót fedeznek fel, amelyek a Földhöz hasonló körülmények között keringenek. Képzeld el, hogy a legújabb sci-fi filmekben látható idegenek nem is annyira messze vannak tőlünk, és talán egy napon találkozhatunk velük. Ez az elképzelés számos kihívást jelent az emberiség számára, hiszen nemcsak a technológiai fejlődést, hanem a társadalmi és etikai kérdéseket is felveti.",
+     "type": "text",
+     "heading": "Földön kívüli élet kutatása",
+     "key_term": "Földön kívüli élet"
+    },
+    "after": {
+     "body": "A Földön kívüli élet lehetőségei régóta foglalkoztatják a tudósokat és a filozófusokat is. Egyre több exobolygót ismerünk, köztük néhány Föld méretű, a lakhatósági övezetben keringőt is. Földön kívüli életre eddig nincs bizonyíték. Ez az elképzelés számos kihívást jelent az emberiség számára, hiszen nemcsak a technológiai fejlődést, hanem a társadalmi és etikai kérdéseket is felveti.",
+     "type": "text",
+     "heading": "Földön kívüli élet kutatása",
+     "key_term": "Földön kívüli élet"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-016",
+   "lesson_id": "bbdeb6f2-19b0-4836-a0e8-b86b98ffe9c9",
+   "block_id": "64ae64a9-edb1-4dcf-a51a-080487da8b86",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a Marsra indított űrszondák és roverek olyan technológiákat használnak, mint a drónok”",
+   "explanation": "Zavaros és pontatlan; a gyakorlati kihívás a jel több perces késése és a rover önállósága.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mars_2020",
+     "title": "Mars 2020",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Földön kívüli élet kutatásának gyakorlati kihívásai közé tartozik a távoli bolygók megfigyelése és az ottani körülmények megértése. Például a Marsra indított űrszondák és roverek olyan technológiákat használnak, mint a drónok, amelyek már a mindennapi életünkben is elérhetőek. Ezek a technológiák nemcsak az űrkutatásban, hanem a földi problémák megoldásában is segíthetnek, például a környezetszennyezés csökkentésében.",
+     "type": "text",
+     "heading": "Gyakorlati kihívások a Földön kívüli élet kutatásában",
+     "key_term": "Földön kívüli élet"
+    },
+    "after": {
+     "body": "A Földön kívüli élet kutatásának gyakorlati kihívásai közé tartozik a távoli bolygók megfigyelése és az ottani körülmények megértése. Például a Marsra indított roverek jele 3–22 percig utazik, ezért a járműveknek önállóan kell dönteniük; az Ingenuity helikopter 2021-ben repült először egy másik bolygó légkörében. Ezek a technológiák nemcsak az űrkutatásban, hanem a földi problémák megoldásában is segíthetnek, például a környezetszennyezés csökkentésében.",
+     "type": "text",
+     "heading": "Gyakorlati kihívások a Földön kívüli élet kutatásában",
+     "key_term": "Földön kívüli élet"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-017",
+   "lesson_id": "e1a5a425-85db-4fc3-8030-f604142b6883",
+   "block_id": "0b8e8e23-a758-4aae-ba2d-899e0e90b8ed",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi a kozmikus sebesség jelentése? A) … a Föld gravitációs vonzásának legyőzéséhez”",
+   "explanation": "Kozmikus sebesség három van; a leírt állítás csak a második kozmikus sebesség (szökési sebesség), így a kérdés rosszul feltett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Escape_velocity",
+     "title": "Escape velocity",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az a sebesség, amivel egy űrhajónak el kell érnie a Föld gravitációs vonzásának legyőzéséhez.",
+      "B) Az a sebesség, amivel a bolygók keringenek a Nap körül.",
+      "C) Az a sebesség, amivel egy rakéta a világűrbe jut.",
+      "D) Az a sebesség, amivel az üstökösök haladnak."
+     ],
+     "question": "Mi a kozmikus sebesség (kozmikus sebességek) jelentése?",
+     "explanation": "A kozmikus sebesség az a minimális sebesség, amellyel egy űrhajónak el kell érnie a Föld gravitációs vonzásának legyőzéséhez.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Kb. 11,2 km/s",
+      "Kb. 7,9 km/s",
+      "Kb. 343 m/s",
+      "Kb. 300 000 km/s"
+     ],
+     "question": "Mekkora a Földtől való elszabaduláshoz szükséges (második kozmikus) sebesség?",
+     "explanation": "A második kozmikus sebesség (szökési sebesség) a Föld felszínén kb. 11,2 km/s; az első kozmikus sebesség kb. 7,9 km/s.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-018",
+   "lesson_id": "04ce38b7-1ab7-4643-a031-3f2f5c3346d9",
+   "block_id": "674d900a-4e41-42a1-b29e-53ab69ac490f",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "„így a Hold nem látható az égen”",
+   "explanation": "Teljes holdfogyatkozáskor a Hold vörösesen látszik, mert a Föld légkörén megtört vörös fény éri.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lunar_eclipse",
+     "title": "Lunar eclipse",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A Föld árnyéka esik a Holdra",
+      "B) A Hold eltűnik a Nap mögött",
+      "C) A Hold elhalad a Föld és a Nap között",
+      "D) A Nap fénye csökken"
+     ],
+     "question": "Mi a fő oka a holdfogyatkozásnak?",
+     "explanation": "A holdfogyatkozás akkor következik be, amikor a Föld árnyéka a Holdra vetül, így a Hold nem látható az égen.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A Föld árnyéka esik a Holdra",
+      "B) A Hold eltűnik a Nap mögött",
+      "C) A Hold elhalad a Föld és a Nap között",
+      "D) A Nap fénye csökken"
+     ],
+     "question": "Mi a fő oka a holdfogyatkozásnak?",
+     "explanation": "A holdfogyatkozás akkor következik be, amikor a Föld árnyéka a Holdra vetül; teljes fogyatkozáskor a Hold vörösesen látszik.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-019",
+   "lesson_id": "48711c51-ce6e-4c63-a686-07b53a13d6b8",
+   "block_id": "d71fa819-040a-4fe4-b4c0-82c969d44e5b",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi történik egy csillaggal, amikor kifogy a nukleáris üzemanyaga? A) Szupernóva-robbanás …”",
+   "explanation": "Csak a nagy tömegű csillagok robbannak szupernóvaként; a Nap fehér törpévé válik. Az általánosítás félrevezető.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Stellar_evolution",
+     "title": "Stellar evolution",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/White_dwarf",
+     "title": "White dwarf",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Szupernóva-robbanás következik be, majd fekete lyuk vagy neutroncsillag keletkezhet.",
+      "B) A csillag örökre eltűnik.",
+      "C) A csillag sosem változik.",
+      "D) A csillag felrobban, de nem alakul át más égitestté."
+     ],
+     "question": "Mi történik egy csillaggal, amikor kifogy a nukleáris üzemanyaga?",
+     "explanation": "A csillagok életciklusa során, amikor kifogynak az üzemanyagból, szupernóva-robbanás következhet be, amely után fekete lyuk vagy neutroncsillag keletkezhet.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Fehér törpe",
+      "Fekete lyuk",
+      "Neutroncsillag",
+      "Örökre eltűnik"
+     ],
+     "question": "Mi lesz egy Nap tömegű csillagból a fejlődése végén?",
+     "explanation": "A Napnál nem sokkal nagyobb tömegű csillagok vörös óriássá, majd fehér törpévé fejlődnek.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-020",
+   "lesson_id": null,
+   "block_id": "f0b7fe41-1928-4047-b946-a586e7dae044",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Milyen körülmények között tapasztalható a súlytalanság? B) Űrbeli állapotban … D) Egy gyorsuló liftben”",
+   "explanation": "A súlytalanságot a szabadesés okozza, nem az „űrbeli állapot”; zuhanó liftben is fellép, felfelé gyorsuló liftben nő a súly.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Weightlessness",
+     "title": "Weightlessness",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csak a Földön",
+      "B) Űrbeli állapotban, például a Föld körüli pályán",
+      "C) A víz alatt",
+      "D) Egy gyorsuló liftben"
+     ],
+     "question": "Milyen körülmények között tapasztalható a súlytalanság?",
+     "explanation": "A súlytalanság állapota akkor alakul ki, amikor egy objektum, például egy űrhajó, folyamatosan esik a gravitációs mezőben, mint például a Föld körüli pályán.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csak a Földön",
+      "Szabadesésben, például a Föld körüli pályán vagy egy zuhanó liftben",
+      "C) A víz alatt",
+      "Egy felfelé gyorsuló liftben"
+     ],
+     "question": "Milyen körülmények között tapasztalható a súlytalanság?",
+     "explanation": "A súlytalanság szabadesésben lép fel: a test és az alátámasztása együtt esik, ezért nincs nyomóerő.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-021",
+   "lesson_id": null,
+   "block_id": "f0b7fe41-1928-4047-b946-a586e7dae044",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik törvény magyarázza a bolygók és üstökösök mozgását? A) A gravitációs törvény / B) A Kepler törvényei”",
+   "explanation": "A gravitációs törvény ugyanolyan jó válasz, mint Kepler törvényei, tehát két helyes válasz van.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kepler's_laws_of_planetary_motion",
+     "title": "Kepler's laws of planetary motion",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Newton's_law_of_universal_gravitation",
+     "title": "Newton's law of universal gravitation",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A gravitációs törvény",
+      "B) A Kepler törvényei",
+      "C) Az impulzusmegmaradás törvénye",
+      "D) A hőmérséklet törvényei"
+     ],
+     "question": "Melyik törvény magyarázza a bolygók és üstökösök mozgását?",
+     "explanation": "A Kepler törvényei leírják a bolygók és üstökösök mozgását az ellipszis pályák mentén, valamint a Földtől való távolságuk és a keringési idejük közötti összefüggéseket.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "Az Ohm-törvény",
+      "B) A Kepler törvényei",
+      "C) Az impulzusmegmaradás törvénye",
+      "D) A hőmérséklet törvényei"
+     ],
+     "question": "Melyik törvény magyarázza a bolygók és üstökösök mozgását?",
+     "explanation": "A Kepler törvényei leírják a bolygók és üstökösök mozgását az ellipszis pályák mentén, valamint a Földtől való távolságuk és a keringési idejük közötti összefüggéseket.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-022",
+   "lesson_id": null,
+   "block_id": "f0b7fe41-1928-4047-b946-a586e7dae044",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik technológia származik először az űrkutatásból, és ma is használjuk? C) GPS”",
+   "explanation": "A GPS katonai navigációs rendszerként született, nem az űrkutatás mellékterméke; az Internet (D) részben műholdas is; a kérdés rosszul feltett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+     "title": "Global Positioning System",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Mobiltelefon",
+      "B) Mikrohullámú sütő",
+      "C) GPS",
+      "D) Internet"
+     ],
+     "question": "Melyik technológia származik először az űrkutatásból, és ma is használjuk?",
+     "explanation": "A GPS (Globális Helymeghatározó Rendszer) technológiája eredetileg katonai célokra készült az űrkutatás során, és ma széles körben használják mindennapi életünkben.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Mobiltelefon",
+      "B) Mikrohullámú sütő",
+      "C) GPS",
+      "Vezetékes telefon"
+     ],
+     "question": "Melyik rendszer működik közvetlenül műholdak jeleire támaszkodva?",
+     "explanation": "A GPS műholdak jeleiből számítja ki a vevő helyzetét.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-023",
+   "lesson_id": "e1a5a425-85db-4fc3-8030-f604142b6883",
+   "block_id": "cbb918fb-7433-473c-bddb-856a3be55819",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Üres try_basic és try_advanced",
+   "explanation": "Nincs kipróbálható feladat.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "üres mező"
+  },
+  {
+   "id": "PHYS-910-15-024",
+   "lesson_id": "04ce38b7-1ab7-4643-a031-3f2f5c3346d9",
+   "block_id": "fe294510-4cf5-49f0-9b6e-5dd7130b8df9",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Galileo Galilei 1609-ben készítette el az első távcsövet … a heliocentrikus világkép megerősödött”",
+   "explanation": "Galilei nem az első távcsövet építette (Lipperhey 1608-ban kért szabadalmat); a Jupiter holdjai és a Vénusz fázisai a Ptolemaiosz-féle világképet gyengítették, de a Tycho Brahe-féle rendszerrel is összefértek.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+     "title": "Galileo Galilei",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hans_Lippershey",
+     "title": "Hans Lippershey",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Phases_of_Venus",
+     "title": "Phases of Venus",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A csillagászati alkalmazásokban, például planetáriumi programokban a diákok a csillagok és égitestek elhelyezkedését és mozgását tanulmányozhatják.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 50,
+        "x": 200,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x": 200,
+        "y": 130,
+        "text": "Hold",
+        "type": "label"
+       },
+       {
+        "r": 20,
+        "x": 300,
+        "y": 100,
+        "type": "circle"
+       },
+       {
+        "x": 300,
+        "y": 80,
+        "text": "Vénusz",
+        "type": "label"
+       },
+       {
+        "r": 30,
+        "x": 100,
+        "y": 100,
+        "type": "circle"
+       },
+       {
+        "x": 100,
+        "y": 80,
+        "text": "Jupiter",
+        "type": "label"
+       },
+       {
+        "x1": 200,
+        "x2": 300,
+        "y1": 150,
+        "y2": 100,
+        "type": "line",
+        "dashed": true
+       },
+       {
+        "x1": 200,
+        "x2": 100,
+        "y1": 150,
+        "y2": 100,
+        "type": "line",
+        "dashed": true
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "A csillagos ég felfedezése",
+     "discovery": "Galileo Galilei 1609-ben készítette el az első távcsövet, amellyel megfigyelte a Hold felszínét, a Vénusz fázisait és a Jupiter nagy holdjait. E felfedezések révén a heliocentrikus világkép (a Nap középpontú) megerősödött, és új utakat nyitott a csillagászat számára.",
+     "try_basic": "Használj egy egyszerű távcsövet, és figyeld meg a Hold felszínét, valamint a Vénusz fázisait!",
+     "try_advanced": "Készíts egy csillagászati méréseket végző projektet, ahol különböző távcsöveket használsz a Jupiter holdjainak megfigyelésére."
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A csillagászati alkalmazásokban, például planetáriumi programokban a diákok a csillagok és égitestek elhelyezkedését és mozgását tanulmányozhatják.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 50,
+        "x": 200,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x": 200,
+        "y": 130,
+        "text": "Hold",
+        "type": "label"
+       },
+       {
+        "r": 20,
+        "x": 300,
+        "y": 100,
+        "type": "circle"
+       },
+       {
+        "x": 300,
+        "y": 80,
+        "text": "Vénusz",
+        "type": "label"
+       },
+       {
+        "r": 30,
+        "x": 100,
+        "y": 100,
+        "type": "circle"
+       },
+       {
+        "x": 100,
+        "y": 80,
+        "text": "Jupiter",
+        "type": "label"
+       },
+       {
+        "x1": 200,
+        "x2": 300,
+        "y1": 150,
+        "y2": 100,
+        "type": "line",
+        "dashed": true
+       },
+       {
+        "x1": 200,
+        "x2": 100,
+        "y1": 150,
+        "y2": 100,
+        "type": "line",
+        "dashed": true
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "A csillagos ég felfedezése",
+     "discovery": "Galileo Galilei 1609-ben, a holland szabadalmak hírére saját távcsövet épített, amellyel megfigyelte a Hold felszínét, a Vénusz fázisait és a Jupiter nagy holdjait. E felfedezések (különösen a Jupiter holdjai és a Vénusz fázisai) a Ptolemaiosz-féle földközéppontú világképet gyengítették, és új utakat nyitottak a csillagászatban.",
+     "try_basic": "Használj egy egyszerű távcsövet, és figyeld meg a Hold felszínét, valamint a Vénusz fázisait!",
+     "try_advanced": "Készíts egy csillagászati méréseket végző projektet, ahol különböző távcsöveket használsz a Jupiter holdjainak megfigyelésére."
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-025",
+   "lesson_id": "48711c51-ce6e-4c63-a686-07b53a13d6b8",
+   "block_id": "0a86afae-26a8-4aa4-8d02-7d27b287c2eb",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Üres try_basic és try_advanced",
+   "explanation": "Nincs kipróbálható feladat.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "üres mező"
+  },
+  {
+   "id": "PHYS-910-15-026",
+   "lesson_id": "bbdeb6f2-19b0-4836-a0e8-b86b98ffe9c9",
+   "block_id": "58ef48f7-74e7-4262-8b38-ab1a6779d9c8",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az 1996-ban felfedezett marsi meteorittal … mikroszkopikus életformák nyomai”",
+   "explanation": "Az ALH84001 meteoritot 1984-ben találták az Antarktiszon; 1996-ban bejelentették, hogy élet nyomait tartalmazhatja, de a legtöbb kutató elvetette, mert szervetlen folyamatok is létrehozhatták a szerkezeteket. A Hubble nem az élet nyomait keresi.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/ALH84001",
+     "title": "ALH84001",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+     "title": "Hubble Space Telescope",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A Földönkívüli Élet Kutatásának programjai, mint például a Mars 2020 küldetés, aktívan keresik a földönkívüli élet nyomait, és új technológiákat fejlesztenek a távoli bolygók és holdak vizsgálatára.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 100,
+        "x": 200,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x": 200,
+        "y": 130,
+        "text": "Exobolygók",
+        "type": "label"
+       },
+       {
+        "r": 20,
+        "x": 300,
+        "y": 100,
+        "type": "circle"
+       },
+       {
+        "x": 300,
+        "y": 90,
+        "text": "Mars",
+        "type": "label"
+       },
+       {
+        "x1": 250,
+        "x2": 300,
+        "y1": 150,
+        "y2": 100,
+        "type": "arrow"
+       },
+       {
+        "x": 250,
+        "y": 160,
+        "text": "Kutatás",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Földönkívüli élet keresése",
+     "discovery": "A Hubble-Űrteleszkóp 1990-es indítása óta folyamatosan figyeli a távoli galaxisokat és exobolygókat, felfedezve ezzel számos olyan égitestet, amely potenciálisan alkalmas lehet az élet számára. Az 1996-ban felfedezett marsi meteorittal kapcsolatban felmerült, hogy az ősi Mars felszíne alkalmas volt az élet fenntartására, és a meteorittal felfedezett mikroszkopikus életformák nyomai is arra utalhatnak, hogy valaha létezett élet a Marson.",
+     "try_basic": "",
+     "try_advanced": ""
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A Földönkívüli Élet Kutatásának programjai, mint például a Mars 2020 küldetés, aktívan keresik a földönkívüli élet nyomait, és új technológiákat fejlesztenek a távoli bolygók és holdak vizsgálatára.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 100,
+        "x": 200,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x": 200,
+        "y": 130,
+        "text": "Exobolygók",
+        "type": "label"
+       },
+       {
+        "r": 20,
+        "x": 300,
+        "y": 100,
+        "type": "circle"
+       },
+       {
+        "x": 300,
+        "y": 90,
+        "text": "Mars",
+        "type": "label"
+       },
+       {
+        "x1": 250,
+        "x2": 300,
+        "y1": 150,
+        "y2": 100,
+        "type": "arrow"
+       },
+       {
+        "x": 250,
+        "y": 160,
+        "text": "Kutatás",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Földönkívüli élet keresése",
+     "discovery": "A Hubble-Űrteleszkóp 1990-es indítása óta folyamatosan figyeli a távoli galaxisokat és exobolygókat, és megfigyelve néhány exobolygó légkörét. Az ALH84001 marsi meteoritról (1984-ben találták az Antarktiszon) 1996-ban bejelentették, hogy élet nyomait tartalmazhatja, de a legtöbb kutató szerint szervetlen folyamatok is létrehozhatták azokat a szerkezeteket.",
+     "try_basic": "",
+     "try_advanced": ""
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-15-027",
+   "lesson_id": "bbdeb6f2-19b0-4836-a0e8-b86b98ffe9c9",
+   "block_id": "58ef48f7-74e7-4262-8b38-ab1a6779d9c8",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Üres try_basic és try_advanced",
+   "explanation": "Nincs kipróbálható feladat.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "üres mező"
+  }
+ ]
+}
