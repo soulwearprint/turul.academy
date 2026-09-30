@@ -1,0 +1,197 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "A PHYS-910-10 tananyag színvonala jóval jobb, mint a többi PHYS-910 témáé: egyetlen ténybeli hiba van (a 50 Hz-es irányváltás). A kvíz kulcsa itt is végig A (nincs keverés).",
+   "Az 4efb89d6 kísérleti blokk try_basic: a LED egy mozgatott rúdmágnestől csak nagyon sok menetnél és erős mágnesnél világít fel; multiméter vagy galvanométer megbízhatóbb."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "39564dde-a4e2-4d7e-b85b-f87c36be1490",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a mágnese körüli mágneses mező”",
+   "explanation": "Elírás: mágnes körüli.",
+   "source_note": "magyar helyesírás",
+   "replace": [
+    [
+     "mert a mágnese körüli mágneses mező vonzza a fémet",
+     "mert a mágnes körüli mágneses mező vonzza a fémet"
+    ]
+   ]
+  },
+  {
+   "block_id": "39564dde-a4e2-4d7e-b85b-f87c36be1490",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az indukcióvonalak „a mágnes északi pólusától indulnak és a déli pólusban záródnak”",
+   "explanation": "Ez csak a mágnesen kívülre igaz; a mágnesen belül a vonalak a déli pólustól az északi felé haladnak, így zárt görbék. A szöveg maga is zárt görbéket említ, tehát az első mondat pontosításra szorul.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Magnetic_field",
+     "title": "Magnetic field",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "ezek a mágnes északi pólusától indulnak és a déli pólusban záródnak",
+     "ezek a mágnesen kívül az északi pólustól a déli pólus felé haladnak, a mágnesen belül pedig a déli pólustól az északi felé"
+    ]
+   ]
+  },
+  {
+   "block_id": "2b0a7b69-eedd-439d-80be-7933cdc77cc1",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„nélküle nem léteznének a mai generátorok és erőművek”",
+   "explanation": "Túlzó kontrafaktuális állítás; az elektromágneses indukciót nagyjából ugyanebben az időben az amerikai Joseph Henry is megfigyelte, Faraday csak előbb publikálta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Michael_Faraday",
+     "title": "Michael Faraday",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Joseph_Henry",
+     "title": "Joseph Henry",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Munkássága jelentőségét mutatja, hogy nélküle nem léteznének a mai generátorok és erőművek.",
+     "Az indukciót nagyjából ugyanebben az időben az amerikai Joseph Henry is megfigyelte, de Faraday publikálta előbb, és felfedezése nyomán épültek meg az első generátorok."
+    ]
+   ]
+  },
+  {
+   "block_id": "2b0a7b69-eedd-439d-80be-7933cdc77cc1",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Az erőművekben szinte minden villamos energia generátorral keletkezik.”",
+   "explanation": "A napelemek generátor és indukció nélkül, a fény hatására termelnek áramot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electric_generator",
+     "title": "Electric generator",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az erőművekben szinte minden villamos energia generátorral keletkezik.",
+     "A hagyományos erőművekben (atom-, hő-, víz-, szélerőművekben) a villamos energia generátorral keletkezik, a napelemek viszont indukció nélkül, a fény hatására termelnek áramot."
+    ]
+   ]
+  },
+  {
+   "block_id": "2b0a7b69-eedd-439d-80be-7933cdc77cc1",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„50 Hz … az áram iránya másodpercenként 50-szer vált irányt oda-vissza”",
+   "explanation": "50 Hz azt jelenti, hogy másodpercenként 50 teljes periódus zajlik le, és periódusonként kétszer fordul meg az áram iránya, tehát 100-szor.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Utility_frequency",
+     "title": "Utility frequency",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "ami azt jelenti, hogy az áram iránya másodpercenként 50-szer vált irányt oda-vissza",
+     "ami azt jelenti, hogy másodpercenként 50 teljes periódus zajlik le, vagyis az áram iránya másodpercenként 100-szor fordul meg"
+    ]
+   ]
+  },
+  {
+   "block_id": "5ab72b0a-f5f5-4812-95c3-90f003b60ee4",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A telefon- és laptoptöltőkben „egy kis transzformátor alakítja át a hálózati 230 V-ot”",
+   "explanation": "A mai töltők kapcsolóüzemű tápegységek: egyenirányítás és nagyfrekvenciás átalakítás után egy kis transzformátor csökkenti a feszültséget; a kimenet egyenfeszültség.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Switched-mode_power_supply",
+     "title": "Switched-mode power supply",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "belsejében egy kis transzformátor alakítja át a hálózati 230 V-ot a készülék által igényelt, jóval kisebb feszültségre",
+     "belsejében egy kis (a mai töltőkben nagyfrekvenciás kapcsolóüzemű) transzformátor és egy egyenirányító alakítja át a hálózati 230 V váltakozó feszültséget a készülék által igényelt, jóval kisebb egyenfeszültségre"
+    ]
+   ]
+  },
+  {
+   "block_id": "31b558cc-fa62-4190-852d-27bfe923f076",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Jedlik „megépítette az első ismert villamos motorkocsi modelljét is”",
+   "explanation": "Az „első ismert” elsőbbségi állítás vitatott (más korai villanymotoros járműmodellek is ismertek, pl. Stratingh 1835 körül); Jedlik motorkocsi-modelljének datálása bizonytalan.",
+   "source_note": "Jedlik Ányos; korai villamos járműmodellek (elsőbbség vitatott)",
+   "apply": "review",
+   "replace": [
+    [
+     "Megépítette az első ismert villamos motorkocsi modelljét is, amely elektromágneses erővel hajtott apró jármű volt.",
+     "Épített egy elektromágneses erővel hajtott apró járműmodellt is."
+    ]
+   ]
+  },
+  {
+   "block_id": "bb0ac7af-6eb2-4dc3-b3c4-66efcd9e3251",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Kizárólag az áram erősségét ampanben”",
+   "explanation": "Elírás: amperben.",
+   "source_note": "magyar helyesírás",
+   "set": {
+    "options[1]": "B) Kizárólag az áram erősségét amperben"
+   }
+  },
+  {
+   "block_id": "b88c50a0-566a-48f6-99a1-3b5f84340d10",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "try_basic: „teker két különböző menetszámú szigetelt drótot”",
+   "explanation": "Felszólító mód kell: tekerj.",
+   "source_note": "magyar helyesírás, a szöveg egységes felszólító módja",
+   "replace": [
+    [
+     "teker két különböző menetszámú",
+     "tekerj két különböző menetszámú"
+    ]
+   ]
+  }
+ ]
+}

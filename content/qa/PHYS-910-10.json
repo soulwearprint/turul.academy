@@ -1,0 +1,454 @@
+{
+ "nat_id": "PHYS-910-10",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 96,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "A PHYS-910-10 tananyag színvonala jóval jobb, mint a többi PHYS-910 témáé: egyetlen ténybeli hiba van (a 50 Hz-es irányváltás). A kvíz kulcsa itt is végig A (nincs keverés).",
+   "Az 4efb89d6 kísérleti blokk try_basic: a LED egy mozgatott rúdmágnestől csak nagyon sok menetnél és erős mágnesnél világít fel; multiméter vagy galvanométer megbízhatóbb."
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-910-10-001",
+   "lesson_id": "accb3020-25cd-4c9b-a243-a1190a420974",
+   "block_id": "39564dde-a4e2-4d7e-b85b-f87c36be1490",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a mágnese körüli mágneses mező”",
+   "explanation": "Elírás: mágnes körüli.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "magyar helyesírás",
+   "fix": {
+    "before": {
+     "body": "A mágneses mező az a tér, amelyben egy mágnes vagy áramjárta vezető erőhatást fejt ki más mágnesekre, vasdarabokra vagy mozgó töltésekre. A hűtőmágnes azért tapad a hűtőszekrény ajtajára, mert a mágnese körüli mágneses mező vonzza a fémet. A Föld is rendelkezik saját, gyenge mágneses mezővel, ez téríti el az iránytű tűjét. A mágneses mező láthatatlan, de hatása vasreszelékkel vagy iránytűvel kimutatható.",
+     "type": "text",
+     "heading": "A mágneses mező",
+     "key_term": "mágneses mező"
+    },
+    "after": {
+     "body": "A mágneses mező az a tér, amelyben egy mágnes vagy áramjárta vezető erőhatást fejt ki más mágnesekre, vasdarabokra vagy mozgó töltésekre. A hűtőmágnes azért tapad a hűtőszekrény ajtajára, mert a mágnes körüli mágneses mező vonzza a fémet. A Föld is rendelkezik saját, gyenge mágneses mezővel, ez téríti el az iránytű tűjét. A mágneses mező láthatatlan, de hatása vasreszelékkel vagy iránytűvel kimutatható.",
+     "type": "text",
+     "heading": "A mágneses mező",
+     "key_term": "mágneses mező"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-10-002",
+   "lesson_id": "accb3020-25cd-4c9b-a243-a1190a420974",
+   "block_id": "39564dde-a4e2-4d7e-b85b-f87c36be1490",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az indukcióvonalak „a mágnes északi pólusától indulnak és a déli pólusban záródnak”",
+   "explanation": "Ez csak a mágnesen kívülre igaz; a mágnesen belül a vonalak a déli pólustól az északi felé haladnak, így zárt görbék. A szöveg maga is zárt görbéket említ, tehát az első mondat pontosításra szorul.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Magnetic_field",
+     "title": "Magnetic field",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A mágneses mező szemléltetésére indukcióvonalakat rajzolunk: ezek a mágnes északi pólusától indulnak és a déli pólusban záródnak. Ahol az indukcióvonalak sűrűbben futnak, ott a mágneses mező erősebb. A vonalak sosem metszik egymást, és mindig zárt görbéket alkotnak. Vasreszelékkel meghintett papírlapon egy rúdmágnes fölött jól láthatóvá válik ez a vonalrendszer.",
+     "type": "text",
+     "heading": "Mágneses indukcióvonalak",
+     "key_term": "mágneses indukcióvonalak"
+    },
+    "after": {
+     "body": "A mágneses mező szemléltetésére indukcióvonalakat rajzolunk: ezek a mágnesen kívül az északi pólustól a déli pólus felé haladnak, a mágnesen belül pedig a déli pólustól az északi felé. Ahol az indukcióvonalak sűrűbben futnak, ott a mágneses mező erősebb. A vonalak sosem metszik egymást, és mindig zárt görbéket alkotnak. Vasreszelékkel meghintett papírlapon egy rúdmágnes fölött jól láthatóvá válik ez a vonalrendszer.",
+     "type": "text",
+     "heading": "Mágneses indukcióvonalak",
+     "key_term": "mágneses indukcióvonalak"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-10-003",
+   "lesson_id": "5498ef33-951d-44e4-bd2c-e8bb1d06db53",
+   "block_id": "2b0a7b69-eedd-439d-80be-7933cdc77cc1",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„nélküle nem léteznének a mai generátorok és erőművek”",
+   "explanation": "Túlzó kontrafaktuális állítás; az elektromágneses indukciót nagyjából ugyanebben az időben az amerikai Joseph Henry is megfigyelte, Faraday csak előbb publikálta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Michael_Faraday",
+     "title": "Michael Faraday",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Joseph_Henry",
+     "title": "Joseph Henry",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Michael Faraday (1791–1867) angol fizikus és kémikus volt, aki szegény családból származott, és fiatalon könyvkötő inasként dolgozott. Önerejéből képezte magát, majd a londoni Royal Institution kutatója lett. Faraday nevéhez fűződik az elektromágneses indukció felfedezése 1831-ben, amely a mai elektromos energiaipar egyik alappillére. Munkássága jelentőségét mutatja, hogy nélküle nem léteznének a mai generátorok és erőművek.",
+     "type": "text",
+     "heading": "Ki volt Michael Faraday",
+     "key_term": ""
+    },
+    "after": {
+     "body": "Michael Faraday (1791–1867) angol fizikus és kémikus volt, aki szegény családból származott, és fiatalon könyvkötő inasként dolgozott. Önerejéből képezte magát, majd a londoni Royal Institution kutatója lett. Faraday nevéhez fűződik az elektromágneses indukció felfedezése 1831-ben, amely a mai elektromos energiaipar egyik alappillére. Az indukciót nagyjából ugyanebben az időben az amerikai Joseph Henry is megfigyelte, de Faraday publikálta előbb, és felfedezése nyomán épültek meg az első generátorok.",
+     "type": "text",
+     "heading": "Ki volt Michael Faraday",
+     "key_term": ""
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-10-004",
+   "lesson_id": "5498ef33-951d-44e4-bd2c-e8bb1d06db53",
+   "block_id": "2b0a7b69-eedd-439d-80be-7933cdc77cc1",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Az erőművekben szinte minden villamos energia generátorral keletkezik.”",
+   "explanation": "A napelemek generátor és indukció nélkül, a fény hatására termelnek áramot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electric_generator",
+     "title": "Electric generator",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A generátor egy olyan eszköz, amely az elektromágneses indukció elvén mechanikai energiát alakít elektromos energiává. Felépítése: mágnes pólusai között egy tekercset forgatnak, például víz-, szél- vagy gőzturbina segítségével. A forgás közben a tekercset átjáró mágneses mező folyamatosan változik, ezért a tekercs végein feszültség jelenik meg. Az erőművekben szinte minden villamos energia generátorral keletkezik.",
+     "type": "text",
+     "heading": "A generátor felépítése és működése",
+     "key_term": "generátor"
+    },
+    "after": {
+     "body": "A generátor egy olyan eszköz, amely az elektromágneses indukció elvén mechanikai energiát alakít elektromos energiává. Felépítése: mágnes pólusai között egy tekercset forgatnak, például víz-, szél- vagy gőzturbina segítségével. A forgás közben a tekercset átjáró mágneses mező folyamatosan változik, ezért a tekercs végein feszültség jelenik meg. A hagyományos erőművekben (atom-, hő-, víz-, szélerőművekben) a villamos energia generátorral keletkezik, a napelemek viszont indukció nélkül, a fény hatására termelnek áramot.",
+     "type": "text",
+     "heading": "A generátor felépítése és működése",
+     "key_term": "generátor"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-10-005",
+   "lesson_id": "5498ef33-951d-44e4-bd2c-e8bb1d06db53",
+   "block_id": "2b0a7b69-eedd-439d-80be-7933cdc77cc1",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„50 Hz … az áram iránya másodpercenként 50-szer vált irányt oda-vissza”",
+   "explanation": "50 Hz azt jelenti, hogy másodpercenként 50 teljes periódus zajlik le, és periódusonként kétszer fordul meg az áram iránya, tehát 100-szor.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Utility_frequency",
+     "title": "Utility frequency",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A magyarországi elektromos hálózaton a feszültség effektív értéke 230 V (volt), a frekvencia pedig 50 Hz (hertz), ami azt jelenti, hogy az áram iránya másodpercenként 50-szer vált irányt oda-vissza. A váltakozó áram grafikonja szinuszgörbét rajzol ki: a feszültség folyamatosan nő, majd csökken, majd előjelet vált. A váltakozó áram nagy előnye, hogy transzformátorral könnyen fel- vagy letranszformálható, ami az energiaátvitelnél elengedhetetlen.",
+     "type": "text",
+     "heading": "A váltakozó áram főbb jellemzői",
+     "key_term": ""
+    },
+    "after": {
+     "body": "A magyarországi elektromos hálózaton a feszültség effektív értéke 230 V (volt), a frekvencia pedig 50 Hz (hertz), ami azt jelenti, hogy másodpercenként 50 teljes periódus zajlik le, vagyis az áram iránya másodpercenként 100-szor fordul meg. A váltakozó áram grafikonja szinuszgörbét rajzol ki: a feszültség folyamatosan nő, majd csökken, majd előjelet vált. A váltakozó áram nagy előnye, hogy transzformátorral könnyen fel- vagy letranszformálható, ami az energiaátvitelnél elengedhetetlen.",
+     "type": "text",
+     "heading": "A váltakozó áram főbb jellemzői",
+     "key_term": ""
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-10-006",
+   "lesson_id": "189aefde-f92b-4223-ab0d-be1a8702b982",
+   "block_id": "5ab72b0a-f5f5-4812-95c3-90f003b60ee4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A telefon- és laptoptöltőkben „egy kis transzformátor alakítja át a hálózati 230 V-ot”",
+   "explanation": "A mai töltők kapcsolóüzemű tápegységek: egyenirányítás és nagyfrekvenciás átalakítás után egy kis transzformátor csökkenti a feszültséget; a kimenet egyenfeszültség.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Switched-mode_power_supply",
+     "title": "Switched-mode power supply",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Transzformátort nem csak az erőművekben és az utcai oszlopokon találunk, hanem szinte minden háztartási töltőben és adapterben is: a telefontöltő és a laptoptöltő belsejében egy kis transzformátor alakítja át a hálózati 230 V-ot a készülék által igényelt, jóval kisebb feszültségre. Az utcákon látható oszloptranszformátorok a nagyfeszültségű vezetékek feszültségét alakítják át a háztartásokban használható szintre. Érdemes ezeket a mindennapi eszközöket felismerni és tudatosan megfigyelni a környezetünkben.",
+     "type": "text",
+     "heading": "Transzformátorok a mindennapokban",
+     "key_term": ""
+    },
+    "after": {
+     "body": "Transzformátort nem csak az erőművekben és az utcai oszlopokon találunk, hanem szinte minden háztartási töltőben és adapterben is: a telefontöltő és a laptoptöltő belsejében egy kis (a mai töltőkben nagyfrekvenciás kapcsolóüzemű) transzformátor és egy egyenirányító alakítja át a hálózati 230 V váltakozó feszültséget a készülék által igényelt, jóval kisebb egyenfeszültségre. Az utcákon látható oszloptranszformátorok a nagyfeszültségű vezetékek feszültségét alakítják át a háztartásokban használható szintre. Érdemes ezeket a mindennapi eszközöket felismerni és tudatosan megfigyelni a környezetünkben.",
+     "type": "text",
+     "heading": "Transzformátorok a mindennapokban",
+     "key_term": ""
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-10-007",
+   "lesson_id": "00b2402d-f7ee-4598-a74e-9214c0469866",
+   "block_id": "31b558cc-fa62-4190-852d-27bfe923f076",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Jedlik „megépítette az első ismert villamos motorkocsi modelljét is”",
+   "explanation": "Az „első ismert” elsőbbségi állítás vitatott (más korai villanymotoros járműmodellek is ismertek, pl. Stratingh 1835 körül); Jedlik motorkocsi-modelljének datálása bizonytalan.",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Jedlik Ányos; korai villamos járműmodellek (elsőbbség vitatott)",
+   "fix": {
+    "before": {
+     "body": "Jedlik Ányos magyar bencés szerzetes és fizikus már az 1820-as évek végén, 1830-as évek elején kísérletezett olyan elektromágneses forgó eszközökkel, amelyek a mai villanymotor és dinamó elvét előlegezték meg, jóval korábban, mint sok külföldi kortársa publikált eredményei. Megépítette az első ismert villamos motorkocsi modelljét is, amely elektromágneses erővel hajtott apró jármű volt. Munkássága fontos állomás a generátorok és motorok fejlődéstörténetében, bár felfedezéseit sokáig nem publikálta széles körben.",
+     "type": "text",
+     "heading": "Jedlik Ányos úttörő munkássága",
+     "key_term": ""
+    },
+    "after": {
+     "body": "Jedlik Ányos magyar bencés szerzetes és fizikus már az 1820-as évek végén, 1830-as évek elején kísérletezett olyan elektromágneses forgó eszközökkel, amelyek a mai villanymotor és dinamó elvét előlegezték meg, jóval korábban, mint sok külföldi kortársa publikált eredményei. Épített egy elektromágneses erővel hajtott apró járműmodellt is. Munkássága fontos állomás a generátorok és motorok fejlődéstörténetében, bár felfedezéseit sokáig nem publikálta széles körben.",
+     "type": "text",
+     "heading": "Jedlik Ányos úttörő munkássága",
+     "key_term": ""
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-10-008",
+   "lesson_id": "accb3020-25cd-4c9b-a243-a1190a420974",
+   "block_id": "bb0ac7af-6eb2-4dc3-b3c4-66efcd9e3251",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Kizárólag az áram erősségét ampanben”",
+   "explanation": "Elírás: amperben.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "magyar helyesírás",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A mágneses mező irányát és erősségét, a sűrűbb vonalak erősebb mezőt jelentenek",
+      "B) Kizárólag az áram erősségét ampanben",
+      "C) A vezető hőmérsékletét",
+      "D) A tekercs menetszámát"
+     ],
+     "question": "Mit mutatnak a mágneses indukcióvonalak?",
+     "explanation": "Az indukcióvonalak az északi pólustól a déli pólusig futnak, sűrűségük a mágneses mező erősségét szemlélteti.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A mágneses mező irányát és erősségét, a sűrűbb vonalak erősebb mezőt jelentenek",
+      "B) Kizárólag az áram erősségét amperben",
+      "C) A vezető hőmérsékletét",
+      "D) A tekercs menetszámát"
+     ],
+     "question": "Mit mutatnak a mágneses indukcióvonalak?",
+     "explanation": "Az indukcióvonalak az északi pólustól a déli pólusig futnak, sűrűségük a mágneses mező erősségét szemlélteti.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-10-009",
+   "lesson_id": "189aefde-f92b-4223-ab0d-be1a8702b982",
+   "block_id": "b88c50a0-566a-48f6-99a1-3b5f84340d10",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "try_basic: „teker két különböző menetszámú szigetelt drótot”",
+   "explanation": "Felszólító mód kell: tekerj.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "magyar helyesírás, a szöveg egységes felszólító módja",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A ZBD-transzformátor elve nélkül ma nem tudnánk vezetékes elektromos hálózatot üzemeltetni: minden telefontöltő és laptoptöltő adapter belsejében ugyanez az elv alakítja át a hálózati 230 V-ot a készülék igényeihez.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 80,
+        "x": 200,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "h": 80,
+        "w": 60,
+        "x": 100,
+        "y": 110,
+        "type": "coil",
+        "turns": 8
+       },
+       {
+        "h": 80,
+        "w": 60,
+        "x": 260,
+        "y": 110,
+        "type": "coil",
+        "turns": 4
+       },
+       {
+        "h": 20,
+        "w": 40,
+        "x": 30,
+        "y": 140,
+        "type": "battery"
+       },
+       {
+        "x": 130,
+        "y": 225,
+        "text": "primer tekercs",
+        "type": "label"
+       },
+       {
+        "x": 290,
+        "y": 225,
+        "text": "szekunder tekercs",
+        "type": "label"
+       },
+       {
+        "x": 200,
+        "y": 260,
+        "text": "vaskarika",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "A magyar ZBD-transzformátor",
+     "discovery": "1885-ben három magyar mérnök, Déri Miksa, Bláthy Ottó Titusz és Zipernowsky Károly a Ganz gyárban kifejlesztette a zárt vasmagú transzformátort, amelyet kezdőbetűikről ZBD-transzformátornak neveznek. Találmányuk tette lehetővé, hogy az elektromos energiát hatékonyan, nagyfeszültségen lehessen szállítani, majd a fogyasztóknál biztonságos feszültségre alakítani – ez alapozta meg a mai villamosenergia-hálózatok működését.",
+     "try_basic": "Készíts egyszerű transzformátor-modellt: teker két különböző menetszámú szigetelt drótot egy vaskarikára, az egyiket kapcsold elemhez, a másikat egy LED-hez, és figyeld meg, mikor gyullad ki a LED (csak az áram be- vagy kikapcsolásának pillanatában, hiszen egyenárammal folyamatos indukció nincs).",
+     "try_advanced": "Mérd meg multiméterrel, hogyan változik a kimeneti feszültség, ha a szekunder tekercs menetszámát növeled vagy csökkented a primer tekercshez képest, és vesd össze az eredményt a menetszám-aránnyal."
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A ZBD-transzformátor elve nélkül ma nem tudnánk vezetékes elektromos hálózatot üzemeltetni: minden telefontöltő és laptoptöltő adapter belsejében ugyanez az elv alakítja át a hálózati 230 V-ot a készülék igényeihez.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 80,
+        "x": 200,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "h": 80,
+        "w": 60,
+        "x": 100,
+        "y": 110,
+        "type": "coil",
+        "turns": 8
+       },
+       {
+        "h": 80,
+        "w": 60,
+        "x": 260,
+        "y": 110,
+        "type": "coil",
+        "turns": 4
+       },
+       {
+        "h": 20,
+        "w": 40,
+        "x": 30,
+        "y": 140,
+        "type": "battery"
+       },
+       {
+        "x": 130,
+        "y": 225,
+        "text": "primer tekercs",
+        "type": "label"
+       },
+       {
+        "x": 290,
+        "y": 225,
+        "text": "szekunder tekercs",
+        "type": "label"
+       },
+       {
+        "x": 200,
+        "y": 260,
+        "text": "vaskarika",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "A magyar ZBD-transzformátor",
+     "discovery": "1885-ben három magyar mérnök, Déri Miksa, Bláthy Ottó Titusz és Zipernowsky Károly a Ganz gyárban kifejlesztette a zárt vasmagú transzformátort, amelyet kezdőbetűikről ZBD-transzformátornak neveznek. Találmányuk tette lehetővé, hogy az elektromos energiát hatékonyan, nagyfeszültségen lehessen szállítani, majd a fogyasztóknál biztonságos feszültségre alakítani – ez alapozta meg a mai villamosenergia-hálózatok működését.",
+     "try_basic": "Készíts egyszerű transzformátor-modellt: tekerj két különböző menetszámú szigetelt drótot egy vaskarikára, az egyiket kapcsold elemhez, a másikat egy LED-hez, és figyeld meg, mikor gyullad ki a LED (csak az áram be- vagy kikapcsolásának pillanatában, hiszen egyenárammal folyamatos indukció nincs).",
+     "try_advanced": "Mérd meg multiméterrel, hogyan változik a kimeneti feszültség, ha a szekunder tekercs menetszámát növeled vagy csökkented a primer tekercshez képest, és vesd össze az eredményt a menetszám-aránnyal."
+    }
+   }
+  }
+ ]
+}

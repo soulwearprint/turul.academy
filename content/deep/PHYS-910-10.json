@@ -1,0 +1,238 @@
+{
+ "nat_id": "PHYS-910-10",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "accb3020-25cd-4c9b-a243-a1190a420974",
+   "title_hu": "Elektromágnesek és alapvető jelenségek",
+   "text_block_id": "39564dde-a4e2-4d7e-b85b-f87c36be1490",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Miért mutat az iránytű északra?",
+     "body": "A mágneses mező erősségét a mágneses indukcióval (B) adjuk meg, egysége a tesla (T). A Föld mágneses tere a felszínen kb. 25–65 μT. A Föld északi földrajzi pólusa közelében a Föld mágneses déli pólusa van, ezért az iránytű északi pólusa észak felé fordul, mert a különböző nevű mágneses pólusok vonzzák egymást. Egy orvosi MRI-készülék mágnese 1,5–3 T, vagyis kb. 30 000-szer erősebb, mint a Föld mezője. A mágneses mezőt nem látjuk, csak a hatásából ismerjük fel.",
+     "did_you_know": "Mágneses monopólust, vagyis önálló északi vagy déli pólust eddig senki nem talált meg.",
+     "think": "Miért mutat az iránytű északi vége földrajzi észak felé?",
+     "think_answer": "Mert a Föld északi földrajzi pólusa közelében a Föld mágneses déli pólusa van, és azt vonzza az iránytű északi pólusa."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Miért nem lehet a pólusokat szétválasztani?",
+     "body": "Az indukcióvonalak mindig zártak: a mágnesen kívül az északi pólustól a déli felé haladnak, a mágnesen belül pedig a déli pólustól az északi felé. Ha egy rúdmágnest kettétörünk, mindkét darabnak újra lesz északi és déli pólusa, mert a zárt vonalaknak nincs kezdete és vége. Ahol a vonalak sűrűbbek, ott erősebb a mező. A vonalak nem metszik egymást, mert egy pontban a mezőnek csak egy iránya lehet. Egy hosszú tekercs belsejében a vonalak párhuzamosak és egyenletesen sűrűek, ott a mező homogén.",
+     "did_you_know": "",
+     "think": "Miért nem kapunk különálló északi pólust, ha egy mágnest kettétörünk?",
+     "think_answer": "Mert minden darabnak újra lesz északi és déli pólusa, hiszen az indukcióvonalak zárt görbék."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Az elektromágnes építése és a jobbkéz-szabály",
+     "body": "Az elektromágnes pólusait a jobbkéz-szabály adja meg: ha a jobb kezünk ujjai az áram irányába hajlanak a tekercs mentén, a kinyújtott hüvelykujj az északi pólus felé mutat. Az áram irányának megfordításával (az elem megfordításával) a pólusok is felcserélődnek. Egy rövid, szigetelt drót ellenállása kicsi, ezért az elemből nagy áram folyik: az elem és a drót gyorsan melegszik. Ezért az áramkört csak rövid időre zárd, és ne hagyd az elemre kötve. Az iránytű már néhány cm-ről is jól jelzi a mágneses hatást.",
+     "did_you_know": "",
+     "think": "Hogyan cserélheted fel az elektromágnes pólusait?",
+     "think_answer": "Az áram irányának megfordításával, például az elem megfordításával."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyire erős az elektromágnes?",
+     "body": "Egy hosszú tekercs belsejében a mágneses indukció B = μ₀ · N · I : l, ahol N a menetszám, l a tekercs hossza, I az áram, μ₀ = 4π · 10⁻⁷ T · m/A. Ha egy 5 cm hosszú tekercsen 100 menet van, és 1 A folyik át, levegőben B = 4π · 10⁻⁷ · 100 · 1 : 0,05 ≈ 2,5 mT. Vasmaggal a mező százszorosára, ezerszeresére is nőhet, mert a vas mágnesezhető, azonban egy határon túl telítődik. Ezért erős az emelőmágnes: sok menet, nagy áram és vasmag együtt dolgozik. Ha a menetszámot és az áramot is megduplázzuk, B négyszeres lesz.",
+     "did_you_know": "",
+     "think": "Hányszorosára nő az elektromágnes B értéke, ha a menetszámot és az áramot is megduplázzuk (a hossz változatlan)?",
+     "think_answer": "Négyszeresére, mert B arányos az N · I szorzattal."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mekkora erő hat a vezetőre?",
+     "body": "Merőleges mezőben egy L hosszú, I áramú vezetőre F = B · I · L erő hat. Ha B = 0,1 T, I = 2 A, L = 0,05 m, akkor F = 0,1 · 2 · 0,05 = 0,01 N. Az erő irányát a balkéz-szabály adja: ha a bal kéz ujjai az áram irányába mutatnak, a mágneses indukcióvonalak a tenyérbe szúrnak, a kinyújtott hüvelykujj az erő irányát mutatja. A motorban a tekercs sok menetének erői összeadódnak, és forgatónyomatékot hoznak létre. Ha a vezeték párhuzamos a mezővel, nem hat rá erő.",
+     "did_you_know": "",
+     "think": "Mekkora erő hat egy 0,05 m hosszú, 2 A-es vezetőre 0,1 T-s merőleges mezőben?",
+     "think_answer": "F = B · I · L = 0,1 · 2 · 0,05 = 0,01 N."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Mennyi feszültséget indukál a tekercs?",
+     "body": "A Faraday-törvény szerint az indukált feszültség U = N · ΔΦ : Δt, ahol az indukciófluxus Φ = B · A. Ha egy 200 menetes tekercsben a fluxus 0,1 s alatt 5 · 10⁻⁴ Wb-rel változik, akkor U = 200 · 5 · 10⁻⁴ : 0,1 = 1 V. A feszültség irányát a Lenz-törvény adja meg: az indukált áram mindig úgy hat, hogy akadályozza a változást, amely létrehozta. Ha a mozgás kétszer olyan gyors, a feszültség is kétszeres.",
+     "did_you_know": "",
+     "think": "Egy 200 menetes tekercsben a fluxus 0,1 s alatt 5 · 10⁻⁴ Wb-rel változik. Mekkora feszültség indukálódik?",
+     "think_answer": "U = 200 · 5 · 10⁻⁴ : 0,1 = 1 V."
+    }
+   ]
+  },
+  {
+   "lesson_id": "5498ef33-951d-44e4-bd2c-e8bb1d06db53",
+   "title_hu": "Faraday és az elektromágneses indukció",
+   "text_block_id": "2b0a7b69-eedd-439d-80be-7933cdc77cc1",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Az inasból lett kutató",
+     "body": "Michael Faraday 14 évesen egy londoni könyvkötő inasa lett, és a kötésre váró tudományos könyveket olvasva képezte magát. 1812-ben Humphry Davy előadásait hallgatta, majd 1813-tól a Royal Institution asszisztense lett. 1821-ben megmutatta, hogy az áramjárta vezető mágnes körül forgásba jön, ez volt a villanymotor első ősmodellje. 1831-ben fedezte fel az elektromágneses indukciót. Nagyjából ugyanezt megfigyelte az amerikai Joseph Henry is, de Faraday publikálta előbb. A kapacitás mértékegysége, a farad az ő nevét viseli.",
+     "did_you_know": "Faraday a Royal Institution karácsonyi előadásain a fiatalokat is tanította, például a gyertya fizikájáról.",
+     "think": "Melyik két nagy felfedezés fűződik Faraday nevéhez?",
+     "think_answer": "Az elektromos forgás (1821, a villanymotor őse) és az elektromágneses indukció (1831)."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Mit jelent a mágneses fluxus?",
+     "body": "A tekercsen áthatoló mágneses fluxus Φ = B · A · cos α, ahol a tekercs felülete A, α pedig a felületre merőleges és a mezőirány közti szög. Indukció akkor jön létre, ha a fluxus változik: változhat B (mozgó mágnes vagy változó áram), A (a tekercs mérete), vagy α (forgó tekercs). Ha B = 0,05 T és A = 0,01 m², Φ = 5 · 10⁻⁴ Wb. Ha a mágnes nyugszik a tekercs mellett, a fluxus állandó, ezért nincs feszültség, bármilyen erős is a mágnes.",
+     "did_you_know": "",
+     "think": "Miért nem indukálódik feszültség, ha a mágnes nyugszik a tekercs mellett?",
+     "think_answer": "Mert nem változik a tekercsen áthatoló fluxus."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mitől lesz nagyobb az indukált feszültség?",
+     "body": "Az indukált feszültség U = N · ΔΦ : Δt, ezért nagyobb lesz, ha több a menet, erősebb a mágnes, gyorsabb a mozgás, vagy vasmagot teszünk a tekercsbe. Ha ugyanazt a fluxusváltozást fele idő alatt hozzuk létre, a feszültség kétszeres. A gyakorlatban ezért kell a generátorban gyorsan forgatni a tekercset. Az energia nem keletkezik a semmiből: az indukált áram mágneses tere fékezi a mozgást, tehát a feszültségért munkát kell végezni.",
+     "did_you_know": "",
+     "think": "Sorolj fel három módot az indukált feszültség növelésére!",
+     "think_answer": "Több menet, erősebb mágnes, gyorsabb mozgatás (vagy vasmag használata)."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Hogyan lesz a mozgásból áram?",
+     "body": "A generátorban egy tekercs forog mágneses mezőben, és a fluxus a forgás miatt szinuszosan változik. Ha a generátornak két mágnespólusa van, a fordulatszámmal megegyező frekvenciájú feszültséget ad, ezért 50 Hz-hez 3000 fordulat/perc kell (3000 : 60 = 50). A turbinát gőz, víz vagy szél hajtja meg. A nagy erőművi generátorok hatásfoka 98–99% körüli. A napelem viszont nem generátor: fény hatására termel áramot, indukció nélkül.",
+     "did_you_know": "",
+     "think": "Hány fordulat/percet kell forognia egy kétpólusú generátornak, hogy 50 Hz-es feszültséget adjon?",
+     "think_answer": "50 · 60 = 3000 fordulat/perc."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Az áramok háborúja",
+     "body": "A váltakozó feszültség pillanatnyi értéke U = U₀ · sin(ω · t). A hálózati 230 V az effektív érték, a csúcsérték ennek √2-szerese: 230 · 1,414 ≈ 325 V. A periódusidő 50 Hz-nél 20 ms. Az egyenáram iránya és nagysága állandó. Az 1880-as évek végén az „áramok háborújában” Edison az egyenáramot, Westinghouse és Tesla a váltakozó áramot támogatta. A váltakozó áram azért győzött a nagy távolságú átvitelben, mert transzformátorral könnyen feszültséget lehet átalakítani.",
+     "did_you_know": "",
+     "think": "Mekkora a 230 V-os hálózati feszültség csúcsértéke?",
+     "think_answer": "230 · √2 ≈ 325 V."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Mit jelent az effektív érték?",
+     "body": "Az effektív érték az az egyenfeszültség, amely ugyanakkora hőteljesítményt adna egy ellenálláson, mint a váltakozó feszültség. Ezért 230 V effektív érték esetén egy 230 Ω-os ellenálláson P = 230² : 230 = 230 W hő keletkezik. Magyarországon a frekvencia 50 Hz, Észak-Amerikában 60 Hz (és 120 V). 50 Hz esetén egy teljes periódus alatt az áram kétszer vált irányt, vagyis másodpercenként 100-szor, ezért villog a régi fénycső 100 Hz-cel. A transzformátor csak váltakozó árammal működik.",
+     "did_you_know": "",
+     "think": "Hányszor vált irányt az áram egy másodperc alatt 50 Hz esetén?",
+     "think_answer": "100-szor, mert periódusonként kétszer fordul meg."
+    }
+   ]
+  },
+  {
+   "lesson_id": "189aefde-f92b-4223-ab0d-be1a8702b982",
+   "title_hu": "Transzformátorok és energiaátvitel",
+   "text_block_id": "5ab72b0a-f5f5-4812-95c3-90f003b60ee4",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Miért lemezelt a vasmag?",
+     "body": "A transzformátor vasmagja nem tömör, hanem egymástól szigetelt vaslemezekből áll. A változó mágneses mező a tömör vasban is feszültséget indukálna, és örvényáramok folynának, amelyek melegítenék a magot. A lemezeléssel az örvényáramok kicsik maradnak, így a veszteség kisebb. A tekercsek zománcozott rézvezetékből készülnek, hogy a szomszédos menetek ne zárják rövidre egymást. A két tekercs között nincs elektromos összeköttetés, csak a vasmag közvetíti a mágneses mezőt.",
+     "did_you_know": "",
+     "think": "Miért lemezelt a transzformátor vasmagja?",
+     "think_answer": "Hogy az örvényáramok kicsik legyenek, így kevesebb hő keletkezzen a magban."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A menetszámok aránya",
+     "body": "Az ideális transzformátorban U₂ : U₁ = N₂ : N₁. Ha a primer tekercs 1000 menetes és 230 V-ra van kapcsolva, a 100 menetes szekunder tekercs feszültsége 230 · 100 : 1000 = 23 V. A transzformátor csak váltakozó áramnál működik: az egyenáram állandó mágneses mezőt kelt, ott nincs indukció. Egyenáramra kapcsolt primer tekercs ellenállása kicsi, ezért nagy áram folyna át rajta, és a tekercs tönkremenne.",
+     "did_you_know": "",
+     "think": "Egy transzformátor primer tekercse 2000 menetes, a szekunder 100 menetes, 230 V-ra kapcsoljuk. Mekkora a szekunder feszültség?",
+     "think_answer": "U₂ = 230 · 100 : 2000 = 11,5 V."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A teljesítmény megmarad",
+     "body": "Veszteségmentes transzformátorban U₁ · I₁ = U₂ · I₂. Ha a feszültség lecsökken, az áram megnő. Ha egy 230 V-ról 12 V-ra letranszformáló adapter 24 W-os készüléket táplál, a szekunder áram 24 : 12 = 2 A, a primer áram pedig 24 : 230 ≈ 0,1 A. A transzformátor tehát nem ad több energiát: feszültségben nyerünk, áramban vesztünk, vagy fordítva. A valódi transzformátorok hatásfoka a legjobb esetben 98–99%.",
+     "did_you_know": "",
+     "think": "230 V-ról 23 V-ra letranszformálunk. Ha a szekunder áram 2 A, mekkora a primer áram (veszteségmentes esetben)?",
+     "think_answer": "A teljesítmény 23 · 2 = 46 W, így I₁ = 46 : 230 = 0,2 A."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Miért nagyfeszültségen szállítjuk az energiát?",
+     "body": "A vezetékben elvesző teljesítmény P = I² · R. Ha 100 MW teljesítményt 400 kV-on viszünk át, az áram I = 100 · 10⁶ : 400 000 = 250 A. Ugyanez 20 kV-on 5000 A lenne, tehát az áram 20-szor nagyobb, a veszteség 400-szor. Ezért emelik fel a feszültséget a távvezetékeken több száz kilovoltra, és csak a felhasználók közelében csökkentik le fokozatosan. Nagy feszültségnél a szigetelést és a védőtávolságot is biztosítani kell.",
+     "did_you_know": "",
+     "think": "Miért nő a veszteség négyzetesen az áramerősséggel?",
+     "think_answer": "Mert a hő teljesítménye P = I² · R, tehát az áram négyzetével arányos."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A töltő kicsi transzformátora",
+     "body": "A mai töltők kapcsolóüzemű tápegységek: a hálózati váltakozó feszültséget először egyenirányítják, majd nagyfrekvenciás (több tíz kHz) váltakozóvá alakítják, és ezt egy kis transzformátor csökkenti le, végül egyenfeszültséget adnak ki. A nagy frekvencia miatt a vasmag jóval kisebb lehet, ezért könnyű a mai töltő. Az utcai oszloptranszformátor a 10 vagy 20 kV-os középfeszültséget alakítja át 0,4 kV-ra (fázisonként 230 V-ra). Érdemes megfigyelni az eszközök címkéjét: a bemenet (Input) és a kimenet (Output) feszültsége és árama is rajta van.",
+     "did_you_know": "",
+     "think": "Miért lehet a mai töltő kisebb és könnyebb, mint a régi hálózati adapter?",
+     "think_answer": "Mert nagy frekvencián dolgozik, ahol jóval kisebb vasmag is elég."
+    }
+   ]
+  },
+  {
+   "lesson_id": "00b2402d-f7ee-4598-a74e-9214c0469866",
+   "title_hu": "Generátorok és motorok működése",
+   "text_block_id": "31b558cc-fa62-4190-852d-27bfe923f076",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mit csinál a kommutátor és a kefe?",
+     "body": "Az egyszerű egyenáramú motorban az állórész (állandó mágnes) körül forog a forgórész, vagyis a tekercs. A kefék csúszó érintkezők, amelyek az áramot a forgó kommutátorra vezetik, ez pedig a tekercs végeihez csatlakozik. Félfordulatonként a kommutátor megfordítja a tekercsben az áram irányát. A kefe és a kommutátor kopik, ezért az újabb kefe nélküli (brushless) motorokban az irányváltást elektronika végzi.",
+     "did_you_know": "",
+     "think": "Mi a kefe és a kommutátor szerepe?",
+     "think_answer": "Az áramot a forgó tekercsbe vezetik, és félfordulatonként megfordítják az irányát."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Mekkora forgatónyomatékot ad a motor?",
+     "body": "A tekercsre ható forgatónyomaték M = N · B · I · A · sin θ, ahol N a menetszám, a tekercs felülete A, θ a tekercs síkja és a mezőirány közti szög. Ha N = 100, B = 0,2 T, I = 1 A, A = 10 cm² (10⁻³ m²), akkor a legnagyobb nyomaték M = 100 · 0,2 · 1 · 10⁻³ = 0,02 N · m. A nyomaték a forgás közben ingadozik, ezért használnak sok tekercset. A kommutátor nélkül a tekercs az egyensúlyi helyzet körül lengene, és megállna.",
+     "did_you_know": "",
+     "think": "Mit tapasztalnánk, ha kommutátor nélkül kapcsolnánk áramot a motorra?",
+     "think_answer": "A tekercs elfordulna az egyensúlyi helyzetéig, ott lengene néhányat, majd megállna."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A gép, ami mindkét irányba megy",
+     "body": "A motor és a generátor felépítése hasonló, a különbség az energia iránya. Ha egy motor tengelyét kívülről forgatjuk, feszültséget ad, tehát generátorként működik. Ezt használják az elektromos vonatok és autók rekuperációs fékezésénél: fékezéskor a motor generátorként töltheti az akkumulátort. A hatásfok mindkét irányban jellemzően 90% körüli, a többi hővé alakul. Az energia nem tűnik el, csak átalakul.",
+     "did_you_know": "",
+     "think": "Mikor működik az elektromos autó motorja generátorként?",
+     "think_answer": "Fékezéskor, amikor a mozgási energiát elektromos energiává alakítja vissza."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Miért hatékony a villanymotor?",
+     "body": "A villanymotor hatásfoka gyakran 85–95%, a benzinmotoré csak kb. 25–35%. Ez azért lehet, mert a villanymotor közvetlenül alakítja az elektromos energiát mozgássá, míg a benzinmotorban a hő nagy része a kipufogóval és a hűtőn keresztül távozik. Egy elektromos autó motorjának teljesítménye jellemzően 100 kW körüli. A mosógépben, ventilátorban, fogkefében, mixerben is villanymotor van, de különböző típusú.",
+     "did_you_know": "",
+     "think": "Miért hatékonyabb az elektromos autó motorja a benzinmotornál?",
+     "think_answer": "Mert nem hő útján állít elő mozgást, ezért kevesebb energia alakul kárba hővé."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Jedlik Ányos",
+     "body": "Jedlik Ányos (1800–1895) bencés szerzetes, egyetemi tanár volt Pesten. 1827–1828 körül elektromágneses forgó szerkezetet, úgynevezett villamágneses forgonyt épített, amelyben már megvolt az állórész, a forgórész és a kommutátor, vagyis a mai egyenáramú motor lényege. Feljegyzései szerint az 1860-as évek elején kidolgozta a dinamó elvét is, de ezeket nem publikálta széles körben. Az elsőbbség kérdése ezért a szakirodalomban vitatott. Fontos szerepe volt a szénsavas víz előállításában is.",
+     "did_you_know": "Jedlik Ányos nevéhez fűződik a szódavízgyártás elindítása is, 1826 körül.",
+     "think": "Miért említjük Jedlik Ányost a villanymotor történetében?",
+     "think_answer": "Mert már az 1820-as évek végén elektromágneses forgó szerkezetet épített, amelyben megvolt a mai motor fő három része."
+    }
+   ]
+  }
+ ]
+}
