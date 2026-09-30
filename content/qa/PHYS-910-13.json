@@ -1,0 +1,1244 @@
+{
+ "nat_id": "PHYS-910-13",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 106,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-910-13-001",
+   "lesson_id": "23274652-fb08-4a6b-93c8-f6847c870204",
+   "block_id": "c0557182-0e11-43a7-9cf0-73ebdc55d105",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„ha egy zene hangszórója 440 Hz-en szól … másodpercenként 440 hullámot bocsát ki”",
+   "explanation": "A hang mechanikai hullám; a fény frekvenciáját fényes példával érdemes szemléltetni (a látható fény frekvenciája kb. 4–7,5 · 10¹⁴ Hz).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Frequency",
+     "title": "Frequency",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A frekvencia (Hz) a hullámok számát jelzi, ami egy adott időegység alatt áthalad egy adott ponton. Például, ha egy zene hangszórója 440 Hz-en szól, az azt jelenti, hogy másodpercenként 440 hullámot bocsát ki. A hullámhossz a hullám egy teljes ciklusának hosszát jelenti, amit a fény esetében nanométerben (nm) mérünk. A látható fény hullámhossza 400 nm-től 700 nm-ig terjed, ami a szivárvány színeit is meghatározza.",
+     "type": "text",
+     "heading": "Fizikai mennyiségek: frekvencia és hullámhossz",
+     "key_term": "frekvencia, hullámhossz"
+    },
+    "after": {
+     "body": "A frekvencia (Hz) a hullámok számát jelzi, ami egy adott időegység alatt áthalad egy adott ponton. Például a zöld fény frekvenciája kb. 5,5 · 10¹⁴ Hz, vagyis másodpercenként ennyi hullám halad át egy ponton. A hullámhossz a hullám egy teljes ciklusának hosszát jelenti, amit a fény esetében nanométerben (nm) mérünk. A látható fény hullámhossza 400 nm-től 700 nm-ig terjed, ami a szivárvány színeit is meghatározza.",
+     "type": "text",
+     "heading": "Fizikai mennyiségek: frekvencia és hullámhossz",
+     "key_term": "frekvencia, hullámhossz"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-002",
+   "lesson_id": "23274652-fb08-4a6b-93c8-f6847c870204",
+   "block_id": "c0557182-0e11-43a7-9cf0-73ebdc55d105",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Képzeld el, hogy egy napelem napfény hatására képes áramot termelni.” a fényelektromos jelenség példájaként",
+   "explanation": "A napelem a belső fényelektromos jelenségen (fotovoltaikus hatás) alapul: az elektron nem hagyja el az anyagot, csak vezetővé válik; a klasszikus (külső) fényelektromos jelenségnél kilép a fémből.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Photoelectric_effect",
+     "title": "Photoelectric effect",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Photovoltaic_effect",
+     "title": "Photovoltaic effect",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A fényelektromos jelenség azt jelenti, hogy a fény hatására elektronok szabadulnak fel egy anyagból, például fémből. Képzeld el, hogy egy napelem napfény hatására képes áramot termelni. A fotonok (a fény részecskéi) energiát adnak át az elektronoknak, amelyek így mozgásba lendülnek. Ez a jelenség nemcsak a napelemekben, hanem fénymérőkben is fontos szerepet játszik, ahol a fény mennyiségét mérjük.",
+     "type": "text",
+     "heading": "A fényelektromos jelenség",
+     "key_term": "fényelektromos jelenség, foton"
+    },
+    "after": {
+     "body": "A fényelektromos jelenség azt jelenti, hogy a fény hatására elektronok szabadulnak fel egy anyagból, például fémből. A napelem ennek a rokona (belső fényelektromos jelenség): a fény hatására a félvezetőben az elektronok vezetővé válnak. A fotonok (a fény részecskéi) energiát adnak át az elektronoknak, amelyek így mozgásba lendülnek. Ez a jelenség nemcsak a napelemekben, hanem fénymérőkben is fontos szerepet játszik, ahol a fény mennyiségét mérjük.",
+     "type": "text",
+     "heading": "A fényelektromos jelenség",
+     "key_term": "fényelektromos jelenség, foton"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-003",
+   "lesson_id": "dbb5de73-9f08-4402-9ae9-6f49256a39e0",
+   "block_id": "f14900ab-da68-449a-92aa-c4eab2bbc7d1",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a fénymikroszkóp csak 2000-szeres nagyítást tud adni”",
+   "explanation": "A fénymikroszkóp hasznos nagyítása kb. 1000–1500-szoros, efölött üres nagyítás van; a „csak 2000-szeres” pontatlan.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Optical_microscope",
+     "title": "Optical microscope",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A fénymikroszkóp (optikai mikroszkóp) a fényt használja a minták megfigyelésére. Képzelj el egy fénymikroszkópot, amely a sejteket vizsgálja; a fénysugarak áthaladnak a mintán, és felnagyítják a képet. Ezzel szemben az elektronmikroszkóp elektronokat használ, amelyek hullámtermészetük miatt sokkal kisebb részleteket képesek megjeleníteni. Például, míg a fénymikroszkóp csak 2000-szeres nagyítást tud adni, az elektronmikroszkóp akár 1 milliószoros nagyítást is elérhet, felfedve a sejtek belső struktúráját.",
+     "type": "text",
+     "heading": "Fénymikroszkóp és elektronmikroszkóp",
+     "key_term": "fénymikroszkóp, elektronmikroszkóp"
+    },
+    "after": {
+     "body": "A fénymikroszkóp (optikai mikroszkóp) a fényt használja a minták megfigyelésére. Képzelj el egy fénymikroszkópot, amely a sejteket vizsgálja; a fénysugarak áthaladnak a mintán, és felnagyítják a képet. Ezzel szemben az elektronmikroszkóp elektronokat használ, amelyek hullámtermészetük miatt sokkal kisebb részleteket képesek megjeleníteni. Például, míg a fénymikroszkóp hasznos nagyítása legfeljebb kb. 1000–2000-szeres, az elektronmikroszkóp akár 1 milliószoros nagyítást is elérhet, felfedve a sejtek belső struktúráját.",
+     "type": "text",
+     "heading": "Fénymikroszkóp és elektronmikroszkóp",
+     "key_term": "fénymikroszkóp, elektronmikroszkóp"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-004",
+   "lesson_id": "dbb5de73-9f08-4402-9ae9-6f49256a39e0",
+   "block_id": "f14900ab-da68-449a-92aa-c4eab2bbc7d1",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A hullámok, mint a vízfelületen keletkező hullámok, képesek a legapróbb részletek megfigyelésére.”",
+   "explanation": "Nem a hullámok általában, hanem a rövid hullámhossz teszi lehetővé a kis részletek megkülönböztetését.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electron_microscope",
+     "title": "Electron microscope",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az elektronok nem csupán részecskék, hanem hullámok is. Ez a hullámtermészet magyarázza meg, hogy az elektronmikroszkópok miért képesek sokkal nagyobb felbontásra, mint a fénymikroszkópok. A hullámok, mint a vízfelületen keletkező hullámok, képesek a legapróbb részletek megfigyelésére. Ez a jelenség lehetővé teszi számunkra, hogy olyan mikroszkopikus világot lássunk, amely a fénnyel nem lenne elérhető.",
+     "type": "text",
+     "heading": "Az elektron hullámtermészete",
+     "key_term": "elektron, hullámtermészet"
+    },
+    "after": {
+     "body": "Az elektronok nem csupán részecskék, hanem hullámok is. Ez a hullámtermészet magyarázza meg, hogy az elektronmikroszkópok miért képesek sokkal nagyobb felbontásra, mint a fénymikroszkópok. A felbontást a hullámhossz szabja meg: minél rövidebb, annál kisebb részlet különböztethető meg, az elektronok hullámhossza pedig sokkal rövidebb, mint a fényé. Ez a jelenség lehetővé teszi számunkra, hogy olyan mikroszkopikus világot lássunk, amely a fénnyel nem lenne elérhető.",
+     "type": "text",
+     "heading": "Az elektron hullámtermészete",
+     "key_term": "elektron, hullámtermészet"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-005",
+   "lesson_id": "dbb5de73-9f08-4402-9ae9-6f49256a39e0",
+   "block_id": "f14900ab-da68-449a-92aa-c4eab2bbc7d1",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Képzelj el egy szivárványt, amelyben az egyes színek az atomok által kibocsátott fény frekvenciáját jelzik.”",
+   "explanation": "A vonalas színkép nem folytonos szivárvány, hanem néhány éles vonal.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Emission_spectrum",
+     "title": "Emission spectrum",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A vonalas színkép a fény spektrumának egyedi vonásait mutatja, amelyeket az atomok kibocsátanak vagy elnyelnek. Képzelj el egy szivárványt, amelyben az egyes színek az atomok által kibocsátott fény frekvenciáját jelzik. Amikor egy atom energiaszintje megváltozik, képes egy bizonyos frekvenciájú fényt kibocsátani vagy elnyelni, így létrehozva a jellegzetes vonalas színképet. Ez a jelenség kulcsszerepet játszik a csillagászatban is, hiszen a csillagok színképének elemzésével megismerhetjük összetételüket.",
+     "type": "text",
+     "heading": "Vonalas színkép és atomok",
+     "key_term": "vonalas színkép, atomok"
+    },
+    "after": {
+     "body": "A vonalas színkép a fény spektrumának egyedi vonásait mutatja, amelyeket az atomok kibocsátanak vagy elnyelnek. Folytonos szivárvány helyett néhány éles színes vonalat látunk, mindegyik egy-egy atomi energiaugrásnak felel meg. Amikor egy atom energiaszintje megváltozik, képes egy bizonyos frekvenciájú fényt kibocsátani vagy elnyelni, így létrehozva a jellegzetes vonalas színképet. Ez a jelenség kulcsszerepet játszik a csillagászatban is, hiszen a csillagok színképének elemzésével megismerhetjük összetételüket.",
+     "type": "text",
+     "heading": "Vonalas színkép és atomok",
+     "key_term": "vonalas színkép, atomok"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-006",
+   "lesson_id": "dbb5de73-9f08-4402-9ae9-6f49256a39e0",
+   "block_id": "f14900ab-da68-449a-92aa-c4eab2bbc7d1",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„nem lehet egyszerre pontosan meghatározni egy részecske helyét és sebességét”; a focipályás hasonlat",
+   "explanation": "A határozatlansági reláció a hely és a lendület (impulzus) párra vonatkozik; a hasonlat klasszikus mérési nehézségről szól, nem a természet tulajdonságáról. Az alagúteffektus a klasszikus fizika szerint tiltott átjutás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Uncertainty_principle",
+     "title": "Uncertainty principle",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A kvantummechanika különös jelenségeket tár fel, mint például a határozatlansági reláció, amely azt mondja ki, hogy nem lehet egyszerre pontosan meghatározni egy részecske helyét és sebességét. Képzeld el, hogy próbálod elkapni a barátodat egy focipályán; minél pontosabban próbálod megmondani, hol van, annál bizonytalanabb, hogy milyen gyorsan mozog. Az alagúteffektus pedig azt mutatja, hogy egy részecske képes áthatolni egy potenciálgáton, amelyet fizikailag nem tudna átlépni; ez a jelenség például a modern elektronikai eszközök működésében is szerepet játszik.",
+     "type": "text",
+     "heading": "Kvantummechanika és hétköznapi példák",
+     "key_term": "kvantummechanika, határozatlansági reláció, alagúteffektus"
+    },
+    "after": {
+     "body": "A kvantummechanika különös jelenségeket tár fel, mint például a határozatlansági reláció, amely azt mondja ki, hogy nem lehet egyszerre tetszőleges pontossággal meghatározni egy részecske helyét és lendületét. Ez nem a mérőeszköz hibája: az atomi méretű részecskék természetéhez tartozik. Az alagúteffektus pedig azt mutatja, hogy egy részecske képes áthatolni egy potenciálgáton, amelyet a klasszikus fizika szerint nem tudna átlépni; ez a jelenség például a modern elektronikai eszközök működésében is szerepet játszik.",
+     "type": "text",
+     "heading": "Kvantummechanika és hétköznapi példák",
+     "key_term": "kvantummechanika, határozatlansági reláció, alagúteffektus"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-007",
+   "lesson_id": "dbb5de73-9f08-4402-9ae9-6f49256a39e0",
+   "block_id": "f14900ab-da68-449a-92aa-c4eab2bbc7d1",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„egy macska, ami egyszerre élő és halott … a kvantumszámítógépek alapját képezi … forradalmasíthatja a számítástechnikát”",
+   "explanation": "Schrödinger 1935-ben kritikaként (reductio ad absurdum) találta ki a példát, nem a hétköznapi szuperpozíció bizonyítékaként. A dekoherencia miatt makroszkopikus tárgyak nem lehetnek szuperpozícióban; a kvantumszámítógépek csak bizonyos feladatokra ígérnek előnyt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Schrödinger's_cat",
+     "title": "Schrödinger's cat",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Quantum_decoherence",
+     "title": "Quantum decoherence",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Quantum_computing",
+     "title": "Quantum computing",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Schrödinger macskája egy híres gondolatkísérlet, amely bemutatja a kvantummechanika furcsa világát. Képzelj el, hogy egy dobozban van egy macska, ami egyszerre élő és halott, amíg ki nem nyitod a dobozt. A mindennapokban ez a jelenség a kvantumállapotok szuperpozíciójának példájaként értelmezhető, amely a modern technológia, például a kvantumszámítógépek alapját képezi. A kvantumszámítógépek képesek párhuzamosan végezni számításokat, ami forradalmasíthatja a számítástechnikát.",
+     "type": "text",
+     "heading": "Schrödinger macskája a mindennapokban",
+     "key_term": "Schrödinger macskája"
+    },
+    "after": {
+     "body": "A Schrödinger macskája egy híres gondolatkísérlet, amely bemutatja a kvantummechanika furcsa világát. Schrödinger 1935-ben egy dobozba zárt macskával mutatta be, milyen képtelen következménnyel járna, ha a kvantumszuperpozíció a hétköznapi tárgyakra is érvényes lenne. A valóságban a környezettel való kölcsönhatás gyorsan lerombolja a szuperpozíciót. Apró rendszerekben a szuperpozíció valós, és a kvantumszámítógépek alapját képezi, de ezek csak bizonyos feladatoknál ígérnek előnyt.",
+     "type": "text",
+     "heading": "Schrödinger macskája a mindennapokban",
+     "key_term": "Schrödinger macskája"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-008",
+   "lesson_id": "e5719bbd-9cc9-4e9f-b5de-f834242079ba",
+   "block_id": "d57269d7-9dde-4647-ab1a-ada476ce9a64",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az atomok a természet legkisebb építőkövei” és „Az atommag (atom nucleus)”",
+   "explanation": "Az atom nem a legkisebb építőkő: a proton és a neutron kvarkokból áll. Angol glossza magyar szövegben.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Atom",
+     "title": "Atom",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az atomok a természet legkisebb építőkövei, amelyek minden anyagot alkotnak körülöttünk. Az atommag (atom nucleus) középpontjában található, amely pozitív töltésű protonokból és semleges neutronokból áll. Az atom körül elektronok keringenek, amelyek negatív töltésűek. Az atomok mérete és szerkezete határozza meg, hogy az anyag hogyan viselkedik különböző körülmények között, például amikor fényt bocsátanak ki vagy nyelnek el.",
+     "type": "text",
+     "heading": "Az atomok világa",
+     "key_term": "atom, atommag"
+    },
+    "after": {
+     "body": "Az atomok az anyag alapvető építőkövei, de nem oszthatatlanok: a proton és a neutron is kisebb részecskékből áll. Az atom középpontjában az atommag található, amely pozitív töltésű protonokból és semleges neutronokból áll. Az atom körül elektronok keringenek, amelyek negatív töltésűek. Az atomok mérete és szerkezete határozza meg, hogy az anyag hogyan viselkedik különböző körülmények között, például amikor fényt bocsátanak ki vagy nyelnek el.",
+     "type": "text",
+     "heading": "Az atomok világa",
+     "key_term": "atom, atommag"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-009",
+   "lesson_id": "e5719bbd-9cc9-4e9f-b5de-f834242079ba",
+   "block_id": "d57269d7-9dde-4647-ab1a-ada476ce9a64",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„(electron)” angol glossza",
+   "explanation": "Angol zárójeles glossza magyar szövegben.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "szerkesztési hiba",
+   "fix": {
+    "before": {
+     "body": "J.J. Thomson 1897-ben felfedezte az elektront (electron), ami forradalmasította az atomokról alkotott képünket. Thomson modellje szerint az atom egy pozitív töltésű 'zselébe' van ágyazva, amelyben a negatív töltésű elektronok szórtan helyezkednek el, mint a gyümölcsök egy pudingban. Ez a modell azonban nem tudta megmagyarázni, miért bocsátanak ki különböző színű fényt az atomok, amikor felforrósítjuk őket.",
+     "type": "text",
+     "heading": "Thomson atommodellje",
+     "key_term": "elektron"
+    },
+    "after": {
+     "body": "J.J. Thomson 1897-ben felfedezte az elektront, ami forradalmasította az atomokról alkotott képünket. Thomson modellje szerint az atom egy pozitív töltésű 'zselébe' van ágyazva, amelyben a negatív töltésű elektronok szórtan helyezkednek el, mint a gyümölcsök egy pudingban. Ez a modell azonban nem tudta megmagyarázni, miért bocsátanak ki különböző színű fényt az atomok, amikor felforrósítjuk őket.",
+     "type": "text",
+     "heading": "Thomson atommodellje",
+     "key_term": "elektron"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-010",
+   "lesson_id": "e5719bbd-9cc9-4e9f-b5de-f834242079ba",
+   "block_id": "d57269d7-9dde-4647-ab1a-ada476ce9a64",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Ernest Rutherford híres kísérlete … Ez azt bizonyította”; „(alpha particles)”",
+   "explanation": "A kísérletet Geiger és Marsden végezte Rutherford irányításával (1909), a magmodellt Rutherford 1911-ben ebből következtette; angol glossza magyar szövegben.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Geiger–Marsden_experiment",
+     "title": "Geiger–Marsden experiment",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Ernest Rutherford híres kísérlete során alfa-részecskéket (alpha particles) irányított egy aranyfóliára. A várakozásaik szerint a részecskék többségének át kellett volna haladnia a fólián, de néhányuk visszapattant. Ez azt bizonyította, hogy az atomokban van egy sűrű, pozitív töltésű középpont, az atommag. Ez a felfedezés megváltoztatta az atommodellek megértését, és megalapozta a modern atomfizikát.",
+     "type": "text",
+     "heading": "Rutherford szórási kísérlete",
+     "key_term": "Rutherford"
+    },
+    "after": {
+     "body": "Rutherford irányításával Geiger és Marsden alfa-részecskéket irányított egy aranyfóliára. A várakozásaik szerint a részecskék többségének át kellett volna haladnia a fólián, de néhányuk visszapattant. Ebből következett, hogy az atomokban van egy sűrű, pozitív töltésű középpont, az atommag. Ez a felfedezés megváltoztatta az atommodellek megértését, és megalapozta a modern atomfizikát.",
+     "type": "text",
+     "heading": "Rutherford szórási kísérlete",
+     "key_term": "Rutherford"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-011",
+   "lesson_id": "e5719bbd-9cc9-4e9f-b5de-f834242079ba",
+   "block_id": "d57269d7-9dde-4647-ab1a-ada476ce9a64",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„orbitálisokban”",
+   "explanation": "A magyar szakirodalomban az „orbitál” a szokásos alak.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "magyar szaknyelv",
+   "fix": {
+    "before": {
+     "body": "A kvantumfizikai modell szerint az elektronok nem pontos pályákon keringenek, hanem valószínűségi eloszlásokban, úgynevezett orbitálisokban helyezkednek el. Ez a megközelítés lehetővé teszi, hogy megértsük az atomok viselkedését, például azt, hogy miért reagálnak különböző módon a fényre. A kvantummechanika új utakat nyitott a technológiai fejlődésben, például a lézerek és a félvezetők terén.",
+     "type": "text",
+     "heading": "Kvantumfizikai modell",
+     "key_term": "kvantumfizika"
+    },
+    "after": {
+     "body": "A kvantumfizikai modell szerint az elektronok nem pontos pályákon keringenek, hanem valószínűségi eloszlásokban, úgynevezett orbitálokban helyezkednek el. Ez a megközelítés lehetővé teszi, hogy megértsük az atomok viselkedését, például azt, hogy miért reagálnak különböző módon a fényre. A kvantummechanika új utakat nyitott a technológiai fejlődésben, például a lézerek és a félvezetők terén.",
+     "type": "text",
+     "heading": "Kvantumfizikai modell",
+     "key_term": "kvantumfizika"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-012",
+   "lesson_id": "e5719bbd-9cc9-4e9f-b5de-f834242079ba",
+   "block_id": "d57269d7-9dde-4647-ab1a-ada476ce9a64",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Ezt a jelenséget használják például a LED lámpákban”",
+   "explanation": "A LED nem hőgerjesztéssel, hanem elektrolumineszcenciával működik: a félvezetőben az elektron és a lyuk rekombinációjakor keletkezik a foton, színét a tiltott sáv szabja meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Light-emitting_diode",
+     "title": "Light-emitting diode",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Electroluminescence",
+     "title": "Electroluminescence",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Amikor az atomok felforrósodnak, az elektronok energiát nyernek, és magasabb energiaszintre ugranak. Amikor visszatérnek az alapállapotba, fényt bocsátanak ki. Ezt a jelenséget használják például a LED lámpákban, ahol az elektronok által kibocsátott fény színe a használt anyagtól függ. Így a fény és az atomok közötti kapcsolat nemcsak tudományos érdekesség, hanem a mindennapi életünk része is.",
+     "type": "text",
+     "heading": "A fény és az atomok kapcsolata",
+     "key_term": "fény"
+    },
+    "after": {
+     "body": "Amikor az atomok felforrósodnak, az elektronok energiát nyernek, és magasabb energiaszintre ugranak. Amikor visszatérnek az alapállapotba, fényt bocsátanak ki. A neonlámpa és a lángpróba ezen alapul. A LED viszont másképp működik: a félvezetőben az elektron és a lyuk találkozásakor kibocsátott fény színét az anyag tiltott sávja szabja meg. Így a fény és az atomok közötti kapcsolat nemcsak tudományos érdekesség, hanem a mindennapi életünk része is.",
+     "type": "text",
+     "heading": "A fény és az atomok kapcsolata",
+     "key_term": "fény"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-013",
+   "lesson_id": "548566e4-ac0e-4309-ad81-59635482629f",
+   "block_id": "b39123fa-97e7-48b2-954f-c88368bd08dc",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Ezt a folyamatot hőemissziónak nevezzük.” és „A legtöbb otthonban még mindig találkozhatunk velük”",
+   "explanation": "A hőemisszió (termikus elektronemisszió) más jelenség; az izzószál hősugárzással világít. Az EU 2009–2012 között fokozatosan kivonta az izzólámpákat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb",
+     "title": "Incandescent light bulb",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Phase-out_of_incandescent_light_bulbs",
+     "title": "Phase-out of incandescent light bulbs",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az izzók a legklasszikusabb fényforrások közé tartoznak. A működésük lényege, hogy az áram átfolyik egy vékony fémszálon, amely felmelegszik és fényt bocsát ki. Ezt a folyamatot hőemissziónak nevezzük. A hagyományos izzók viszont sok energiát veszítenek hő formájában, ezért ma már egyre inkább háttérbe szorulnak. A legtöbb otthonban még mindig találkozhatunk velük, például a régi lámpákban.",
+     "type": "text",
+     "heading": "Izzók működése",
+     "key_term": "izzó"
+    },
+    "after": {
+     "body": "Az izzók a legklasszikusabb fényforrások közé tartoznak. A működésük lényege, hogy az áram átfolyik egy vékony fémszálon, amely felmelegszik és fényt bocsát ki. Ezt hősugárzásnak nevezzük. A hagyományos izzók viszont sok energiát veszítenek hő formájában, ezért ma már egyre inkább háttérbe szorulnak. Az EU 2009 és 2012 között fokozatosan kivonta őket a forgalomból, de a régi lámpákban még találkozhatunk velük.",
+     "type": "text",
+     "heading": "Izzók működése",
+     "key_term": "izzó"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-014",
+   "lesson_id": "548566e4-ac0e-4309-ad81-59635482629f",
+   "block_id": "b39123fa-97e7-48b2-954f-c88368bd08dc",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "outdated",
+   "severity": "low",
+   "claim": "A halogénizzók „gyakran használatosak”",
+   "explanation": "Az EU 2018-tól a legtöbb háztartási halogénizzó forgalmazását megszüntette.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Phase-out_of_incandescent_light_bulbs",
+     "title": "Phase-out of incandescent light bulbs",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A halogén izzók egy továbbfejlesztett verziói a hagyományos izzóknak. Ezek a fényforrások egy halogén gázzal vannak feltöltve, ami segít a fémszál élettartamának növelésében. A halogén izzók fényerősebbek és hosszabb ideig működnek, mint a sima izzók. Ezt a típusú izzót gyakran használják autók fényszóróiban, mert erős és tiszta fényt biztosítanak.",
+     "type": "text",
+     "heading": "Halogén izzók előnyei",
+     "key_term": "halogén izzó"
+    },
+    "after": {
+     "body": "A halogén izzók egy továbbfejlesztett verziói a hagyományos izzóknak. Ezek a fényforrások egy halogén gázzal vannak feltöltve, ami segít a fémszál élettartamának növelésében. A halogén izzók fényerősebbek és hosszabb ideig működnek, mint a sima izzók. Ezt a típusú izzót gyakran használják autók fényszóróiban, mert erős és tiszta fényt biztosítanak. A háztartási halogénizzók többségét az EU 2018-tól kivonta a forgalomból.",
+     "type": "text",
+     "heading": "Halogén izzók előnyei",
+     "key_term": "halogén izzó"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-015",
+   "lesson_id": "548566e4-ac0e-4309-ad81-59635482629f",
+   "block_id": "b39123fa-97e7-48b2-954f-c88368bd08dc",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a foszfor bevonatot izzítja fel”; „a fénycsövek, vagyis a kompakt fénycsövek”",
+   "explanation": "A fénycsőben higanygőz sugároz UV fényt, amelyet a fénypor (nem foszfor) fluoreszcenciával alakít látható fénnyé, nem izzik. A fénycső és a kompakt fénycső nem ugyanaz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fluorescent_lamp",
+     "title": "Fluorescent lamp",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A fénycsövek, vagyis a kompakt fénycsövek, egyre népszerűbbek a modern világban. Ezek a fényforrások gázkisülésen alapulnak, ahol az elektromos áram ionizálja a benne lévő gázt, ezáltal UV fényt termel, ami a cső belsejében lévő foszfor bevonatot izzítja fel. Az iskolákban és irodákban gyakran találkozhatunk velük, mivel energiatakarékosak és hosszú élettartamúak.",
+     "type": "text",
+     "heading": "Fénycsövek működése",
+     "key_term": "fénycső"
+    },
+    "after": {
+     "body": "A fénycsövek és a belőlük származó kompakt fénycsövek évtizedekig a legelterjedtebb energiatakarékos fényforrások voltak. Ezek a fényforrások gázkisülésen alapulnak, ahol az elektromos áram gerjeszti a benne lévő higanygőzt, amely UV fényt bocsát ki, ez pedig a cső belsejében lévő fénypor bevonatot fluoreszkálásra készteti. Az iskolákban és irodákban gyakran találkozhatunk velük, mivel energiatakarékosak és hosszú élettartamúak.",
+     "type": "text",
+     "heading": "Fénycsövek működése",
+     "key_term": "fénycső"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-016",
+   "lesson_id": "548566e4-ac0e-4309-ad81-59635482629f",
+   "block_id": "b39123fa-97e7-48b2-954f-c88368bd08dc",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a felhasznált energia nagy részét fény formájában bocsátják ki”",
+   "explanation": "A világítási LED a bevitt energia kb. 30–50%-át alakítja fénnyé, a többi hő; az izzóhoz (kb. 5%) képest jó, de „nagy rész” túlzás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Luminous_efficacy",
+     "title": "Luminous efficacy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A LED (fénykibocsátó dióda) fényforrások a legújabb technológiát képviselik a világításban. Ezek a kis diódák rendkívül hatékonyak, mivel a felhasznált energia nagy részét fény formájában bocsátják ki, így sokkal kevesebb hőt termelnek. A LED lámpák széles körben használatosak, például a mobiltelefonok kijelzőin, illetve a modern otthonok világításában, köszönhetően az alacsony energiafogyasztásuknak és hosszú élettartamuknak.",
+     "type": "text",
+     "heading": "LED fényforrások előnyei",
+     "key_term": "LED"
+    },
+    "after": {
+     "body": "A LED (fénykibocsátó dióda) fényforrások a legújabb technológiát képviselik a világításban. Ezek a kis diódák rendkívül hatékonyak, mivel a felhasznált energiának az izzónál jóval nagyobb részét (kb. 30–50%-át) alakítják fénnyé, így kevesebb hőt termelnek. A LED lámpák széles körben használatosak, például a mobiltelefonok kijelzőin, illetve a modern otthonok világításában, köszönhetően az alacsony energiafogyasztásuknak és hosszú élettartamuknak.",
+     "type": "text",
+     "heading": "LED fényforrások előnyei",
+     "key_term": "LED"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-017",
+   "lesson_id": "23274652-fb08-4a6b-93c8-f6847c870204",
+   "block_id": "d1a86313-fa40-473a-a8c6-24fc0db09d9e",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A) Frekvencia / C) Hullámhossz",
+   "explanation": "A fény színét a frekvencia határozza meg (a hullámhossz közegfüggő), tehát az A is helyes lenne; az A-t egyértelműen hamissá kell tenni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Color",
+     "title": "Color",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Frekvencia",
+      "B) Amplitúdó",
+      "C) Hullámhossz",
+      "D) Terjedési sebesség"
+     ],
+     "question": "Melyik mennyiség határozza meg a fény színét?",
+     "explanation": "A fény színe a hullámhossz (λ) függvénye, amely meghatározza, hogy az emberi szem hogyan érzékeli azt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A fény intenzitása",
+      "B) Amplitúdó",
+      "C) Hullámhossz",
+      "D) Terjedési sebesség"
+     ],
+     "question": "Melyik mennyiség határozza meg a fény színét?",
+     "explanation": "A fény színe a hullámhossz (λ) függvénye, amely meghatározza, hogy az emberi szem hogyan érzékeli azt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-018",
+   "lesson_id": "e5719bbd-9cc9-4e9f-b5de-f834242079ba",
+   "block_id": "fe755cec-6ea0-42f4-9513-ca28185ec5fc",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Melyik modell írja le a kis, pozitív magot, amely körül elektronok keringenek? A) Rutherford, C) Bohr",
+   "explanation": "A Bohr-modell is kis mag körül keringő elektronokat ír le, tehát két válasz helyes.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bohr_model",
+     "title": "Bohr model",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Rutherford-modell",
+      "B) Thomson-modell",
+      "C) Bohr-modell",
+      "D) Kvantumfizikai modell"
+     ],
+     "question": "Melyik atommodell írja le az atomot, mint kis méretű, pozitív töltésű magot, amely körül elektronok keringenek?",
+     "explanation": "A Rutherford-modell szerint az atom egy pozitív töltésű magból áll, amely körül az elektronok keringenek.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Rutherford-modell",
+      "B) Thomson-modell",
+      "C) Bohr-modell",
+      "D) Kvantumfizikai modell"
+     ],
+     "question": "Melyik atommodell vezette be elsőként a kis, sűrű, pozitív töltésű atommagot?",
+     "explanation": "A Rutherford-modell szerint az atom tömege és pozitív töltése egy kis magban összpontosul; Thomson modelljében a töltés az egész atomban szétoszlott.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-019",
+   "lesson_id": "e5719bbd-9cc9-4e9f-b5de-f834242079ba",
+   "block_id": "fe755cec-6ea0-42f4-9513-ca28185ec5fc",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Melyik atommodell alapozta meg a modern kvantummechanikát? D) Kvantumfizikai modell”",
+   "explanation": "Körkörös kérdés: a kvantumfizikai modell maga a modern kvantummechanika része; a Bohr-modell volt az előzménye.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bohr_model",
+     "title": "Bohr model",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Thomson-modell",
+      "B) Rutherford-modell",
+      "C) Bohr-modell",
+      "D) Kvantumfizikai modell"
+     ],
+     "question": "Melyik atommodell alapozta meg a modern kvantummechanikát?",
+     "explanation": "A kvantumfizikai modell a modern kvantummechanika alapjait képezi, figyelembe véve az elektronok hullámtermészetét.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Thomson-modell",
+      "B) Rutherford-modell",
+      "C) Bohr-modell",
+      "D) Kvantumfizikai modell"
+     ],
+     "question": "Melyik atommodell írja le az elektronokat valószínűségi eloszlású orbitálokkal?",
+     "explanation": "A kvantumfizikai modell az elektronokat valószínűségi eloszlással jellemzett orbitálokban írja le, nem pontos pályákon.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-020",
+   "lesson_id": "548566e4-ac0e-4309-ad81-59635482629f",
+   "block_id": "aa08c273-7cd6-447c-9817-8fa1c7146afe",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Milyen gáz található a fénycső belsejében, ami segít a fénykibocsátásban? B) Argon”",
+   "explanation": "A fénycső UV fényét higanygőz sugározza, az argon csak segédgáz; a kulcs hibás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fluorescent_lamp",
+     "title": "Fluorescent lamp",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Neon",
+      "B) Argon",
+      "C) Xenon",
+      "D) Oxigén"
+     ],
+     "question": "Milyen gáz található a fénycső belsejében, ami segít a fénykibocsátásban?",
+     "explanation": "A fénycső belsejében általában argont használnak, amely kisüléskor fényt bocsát ki, amikor elektromos áram halad át rajta.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Neon",
+      "B) Argon",
+      "Higany",
+      "D) Oxigén"
+     ],
+     "question": "Melyik anyag gőze bocsátja ki a fénycsőben az ibolyántúli fényt?",
+     "explanation": "A fénycsőben higanygőz sugároz UV fényt, amelyet a fénypor látható fénnyé alakít; az argon csak segédgáz.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-021",
+   "lesson_id": "548566e4-ac0e-4309-ad81-59635482629f",
+   "block_id": "aa08c273-7cd6-447c-9817-8fa1c7146afe",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi a legnagyobb hátránya a halogén izzóknak a LED-hez képest? A) Magasabb energiafogyasztás”",
+   "explanation": "A C (rövidebb élettartam) és a D (magasabb hőmérséklet) is igaz, és a „legnagyobb” nem eldönthető.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Halogen_lamp",
+     "title": "Halogen lamp",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Magasabb energiafogyasztás",
+      "B) Alacsonyabb fényerő",
+      "C) Rövidebb élettartam",
+      "D) Magasabb hőmérséklet"
+     ],
+     "question": "Mi a legnagyobb hátránya a halogén izzóknak a LED-hez képest?",
+     "explanation": "A halogén izzók energiafogyasztása magasabb, mint a LED-eké, ami miatt kevésbé hatékonyak.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Ugyanannyi fényhez többszörös az energiafogyasztása",
+      "Hosszabb az élettartama",
+      "Kevesebb hőt termel",
+      "Nem melegszik fel"
+     ],
+     "question": "Melyik igaz a halogénizzóra a LED-hez képest?",
+     "explanation": "A halogénizzó fényhasznosítása kb. 20 lm/W, a LED-é 100 lm/W fölötti, ezért ugyanannyi fényhez többszörös energia kell.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-022",
+   "lesson_id": null,
+   "block_id": "fab406ba-e3b1-44ab-a3f0-d73d55b312e0",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Hogyan készülnek digitális fényképek különböző távolságban elhelyezett tárgyakról? A) A fényképezőgép beállításainak változtatásával”",
+   "explanation": "A kérdés homályos, a válaszok nem különböző kategóriák; a mérhető ismeret a záridő szerepe.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Shutter_speed",
+     "title": "Shutter speed",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A fényképezőgép beállításainak változtatásával",
+      "B) Csak a távolság megváltoztatásával",
+      "C) Csak a fény erősségének növelésével",
+      "D) A tárgyak mozgatásával"
+     ],
+     "question": "Hogyan készülnek digitális fényképek különböző távolságban elhelyezett tárgyakról?",
+     "explanation": "A digitális fényképek elkészítése a fényképezőgép beállításainak, például a záridő és rekeszérték változtatásával történik.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A záridő",
+      "A képernyő fényereje",
+      "A memóriakártya mérete",
+      "A tárgy színe"
+     ],
+     "question": "Melyik beállítás szabályozza, mennyi ideig éri fény a képérzékelőt?",
+     "explanation": "A záridő azt adja meg, hogy a képérzékelőt mennyi ideig éri fény.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-023",
+   "lesson_id": null,
+   "block_id": "fab406ba-e3b1-44ab-a3f0-d73d55b312e0",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi a Rutherford szórási kísérletének célja? A) Az atommag méretének meghatározása”",
+   "explanation": "A kísérlet a Thomson-modell tesztelése volt, az atommag létezését mutatta ki; a méretet ebből becsülték. A „cél” rosszul megfogalmazott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Geiger–Marsden_experiment",
+     "title": "Geiger–Marsden experiment",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az atommag méretének meghatározása.",
+      "B) Az elektronok mozgásának vizsgálata.",
+      "C) A fotonok energiájának mérése.",
+      "D) Az atomok közötti kölcsönhatások tanulmányozása."
+     ],
+     "question": "Mi a Rutherford szórási kísérletének célja?",
+     "explanation": "A Rutherford szórási kísérlet célja az atommag méretének meghatározása volt, amely során a részecskék szóródását vizsgálták.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Az atom tömege és pozitív töltése egy kis magban összpontosul.",
+      "B) Az elektronok mozgásának vizsgálata.",
+      "C) A fotonok energiájának mérése.",
+      "D) Az atomok közötti kölcsönhatások tanulmányozása."
+     ],
+     "question": "Mit mutatott ki Rutherford szórási kísérlete?",
+     "explanation": "Az alfa-részecskék néhány százezrelékének nagy szögű szóródása azt mutatta, hogy az atom pozitív töltése és tömege egy kis atommagban összpontosul.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-024",
+   "lesson_id": "dbb5de73-9f08-4402-9ae9-6f49256a39e0",
+   "block_id": "8c9ba544-e3fa-44a2-b72d-98b4ebcb474c",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Leeuwenhoek 1676-ban először használta a lencséket a mikroszkopikus világ megfigyelésére”",
+   "explanation": "Az összetett mikroszkópot már a 17. század elejére készítették; Hooke 1665-ben a Micrographiában sejteket írt le, Leeuwenhoek 1676-ban baktériumokat és egysejtűeket látott egylencsés nagyítóival.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Antonie_van_Leeuwenhoek",
+     "title": "Antonie van Leeuwenhoek",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Robert_Hooke",
+     "title": "Robert Hooke",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A mikroszkópok ma is elengedhetetlenek a tudományos kutatásokban, például a biológiai, orvosi vagy anyagtudományi területeken, ahol a sejtek és anyagok részletes vizsgálata szükséges.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 150,
+        "w": 60,
+        "x": 50,
+        "y": 100,
+        "type": "box"
+       },
+       {
+        "r": 10,
+        "x": 80,
+        "y": 80,
+        "type": "circle"
+       },
+       {
+        "x": 60,
+        "y": 250,
+        "text": "Mikroszkóp",
+        "type": "label"
+       },
+       {
+        "x": 70,
+        "y": 70,
+        "text": "Lencse",
+        "type": "label"
+       },
+       {
+        "x1": 150,
+        "x2": 300,
+        "y1": 150,
+        "y2": 150,
+        "type": "wave",
+        "cycles": 3,
+        "amplitude": 20
+       },
+       {
+        "x": 320,
+        "y": 150,
+        "text": "Fényhullámok",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "A fény hullámtermészete és a mikroszkópok",
+     "discovery": "A mikroszkópok felfedezése a 17. századra nyúlik vissza, amikor Antonie van Leeuwenhoek 1676-ban először használta a lencséket a mikroszkopikus világ megfigyelésére. Az ő munkája indította el a biológiai mikroszkópiát, amely lehetővé tette az élő sejtek és mikroorganizmusok tanulmányozását, ezzel megoldva a tudományos megfigyelések korlátait.",
+     "try_basic": "Készíts egy egyszerű lencsét egy vízcseppből, és nézd meg, hogyan nagyítja fel a mögötte lévő tárgyakat, mint például egy apró írást vagy mintát.",
+     "try_advanced": "Készíts egy egyszerű mikroszkópot egy lencséből és egy állványból, és hasonlítsd össze a különböző lencsék képességeit."
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A mikroszkópok ma is elengedhetetlenek a tudományos kutatásokban, például a biológiai, orvosi vagy anyagtudományi területeken, ahol a sejtek és anyagok részletes vizsgálata szükséges.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 150,
+        "w": 60,
+        "x": 50,
+        "y": 100,
+        "type": "box"
+       },
+       {
+        "r": 10,
+        "x": 80,
+        "y": 80,
+        "type": "circle"
+       },
+       {
+        "x": 60,
+        "y": 250,
+        "text": "Mikroszkóp",
+        "type": "label"
+       },
+       {
+        "x": 70,
+        "y": 70,
+        "text": "Lencse",
+        "type": "label"
+       },
+       {
+        "x1": 150,
+        "x2": 300,
+        "y1": 150,
+        "y2": 150,
+        "type": "wave",
+        "cycles": 3,
+        "amplitude": 20
+       },
+       {
+        "x": 320,
+        "y": 150,
+        "text": "Fényhullámok",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "A fény hullámtermészete és a mikroszkópok",
+     "discovery": "A mikroszkópok felfedezése a 17. századra nyúlik vissza, amikor Robert Hooke 1665-ben a Micrographia című könyvében leírta a sejteket, Antonie van Leeuwenhoek pedig 1676-ban egyszerű, egylencsés nagyítóival először látott baktériumokat és egysejtűeket.",
+     "try_basic": "Készíts egy egyszerű lencsét egy vízcseppből, és nézd meg, hogyan nagyítja fel a mögötte lévő tárgyakat, mint például egy apró írást vagy mintát.",
+     "try_advanced": "Készíts egy egyszerű mikroszkópot egy lencséből és egy állványból, és hasonlítsd össze a különböző lencsék képességeit."
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-025",
+   "lesson_id": "23274652-fb08-4a6b-93c8-f6847c870204",
+   "block_id": "8906c6cb-c3d4-478e-86bf-421d7dc89d12",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Üres try_basic és try_advanced",
+   "explanation": "Az kísérletkártyán nincs kipróbálható feladat.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "üres mező"
+  },
+  {
+   "id": "PHYS-910-13-026",
+   "lesson_id": "e5719bbd-9cc9-4e9f-b5de-f834242079ba",
+   "block_id": "80e69395-255e-4628-8e29-0ac1849ac731",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Üres try_basic és try_advanced",
+   "explanation": "A kísérletkártyán nincs kipróbálható feladat.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "üres mező"
+  },
+  {
+   "id": "PHYS-910-13-027",
+   "lesson_id": "548566e4-ac0e-4309-ad81-59635482629f",
+   "block_id": "98b6bd76-e089-4b00-99f5-a584822a6c43",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Készíts egy egyszerű áramkört egy elemből, egy kapcsolóból és egy LED-ből”",
+   "explanation": "Előtét-ellenállás nélkül a LED túlterhelődik és kiég; a LED polaritása is számít.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Light-emitting_diode",
+     "title": "Light-emitting diode",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A fényforrásokat, mint például az energiatakarékos izzókat és LED-lámpákat, a mindennapi életünkben használjuk, például otthonainkban, iskolákban és közlekedési lámpákban.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 40,
+        "x": 200,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x1": 200,
+        "x2": 200,
+        "y1": 190,
+        "y2": 250,
+        "type": "line"
+       },
+       {
+        "h": 20,
+        "w": 60,
+        "x": 170,
+        "y": 250,
+        "type": "battery"
+       },
+       {
+        "x": 180,
+        "y": 265,
+        "text": "AC",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Fényforrások működése",
+     "discovery": "A fényforrások működésének megértése szorosan összefonódik Thomas Edison nevével, aki 1879-ben szabadalmaztatta az első gyakorlati izzólámpát. Edison célja az volt, hogy hosszú élettartamú és biztonságos fényforrást alkosson, amely helyettesítheti a gázlámpákat.",
+     "try_basic": "Készíts egy egyszerű áramkört egy elemből, egy kapcsolóból és egy LED-ből, hogy megfigyeld, hogyan világít a LED, amikor az áramkör zárva van.",
+     "try_advanced": "Kísérletezz különböző fényforrásokkal (izzó, LED, fénycső), és mérd meg a fényerősségüket egy fényerősségmérő segítségével."
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A fényforrásokat, mint például az energiatakarékos izzókat és LED-lámpákat, a mindennapi életünkben használjuk, például otthonainkban, iskolákban és közlekedési lámpákban.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 40,
+        "x": 200,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x1": 200,
+        "x2": 200,
+        "y1": 190,
+        "y2": 250,
+        "type": "line"
+       },
+       {
+        "h": 20,
+        "w": 60,
+        "x": 170,
+        "y": 250,
+        "type": "battery"
+       },
+       {
+        "x": 180,
+        "y": 265,
+        "text": "AC",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Fényforrások működése",
+     "discovery": "A fényforrások működésének megértése szorosan összefonódik Thomas Edison nevével, aki 1879-ben szabadalmaztatta az első gyakorlati izzólámpát. Edison célja az volt, hogy hosszú élettartamú és biztonságos fényforrást alkosson, amely helyettesítheti a gázlámpákat.",
+     "try_basic": "Készíts áramkört egy 4,5 V-os elemből, egy kapcsolóból, egy kb. 220 Ω-os előtét-ellenállásból és egy LED-ből. A LED-nek polaritása van (a hosszabb láb az anód, a + felé), ellenállás nélkül túlterhelődik és kiég.",
+     "try_advanced": "Kísérletezz különböző fényforrásokkal (izzó, LED, fénycső), és mérd meg a fényerősségüket egy fényerősségmérő segítségével."
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-13-028",
+   "lesson_id": "548566e4-ac0e-4309-ad81-59635482629f",
+   "block_id": "98b6bd76-e089-4b00-99f5-a584822a6c43",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Edison „1879-ben szabadalmaztatta az első gyakorlati izzólámpát”",
+   "explanation": "Edison szénszálas izzóját 1879-ben fejlesztette ki, a szabadalmat 1880-ban kapta; vele párhuzamosan Joseph Swan is fejlesztett izzólámpát, az elsőség nem egyértelmű.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Thomas_Edison",
+     "title": "Thomas Edison",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Joseph_Swan",
+     "title": "Joseph Swan",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb",
+     "title": "Incandescent light bulb",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "none"
+  }
+ ]
+}
