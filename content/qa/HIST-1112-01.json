@@ -1,0 +1,540 @@
+{
+ "nat_id": "HIST-1112-01",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 11,
+  "cards": 55,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-1112-01-001",
+   "lesson_id": "2419cc63-8a39-4438-8c88-9d6b46656f4b",
+   "block_id": "d871b7db-70e2-4565-b7f6-5a580b0bc5d2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A 19. század közepén alakult ki”",
+   "explanation": "A szocialista gondolat a 19. század elején jelent meg (Saint-Simon, Fourier, Owen); Marx és Engels a század közepén dolgozta ki tudományos igényű változatát.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Utopian_socialism",
+     "title": "Utopian socialism",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Socialism",
+     "title": "Socialism",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A szocializmus egy politikai és gazdasági eszmerendszer, amely a társadalmi egyenlőség és a közös tulajdon elveire épít. A 19. század közepén alakult ki, válaszul a kapitalizmus társadalmi feszültségeire. A szocializmus célja a vagyoni különbségek csökkentése és a munkások jogainak védelme. Magyarországon a szocialista eszmék a 19. század végén és a 20. század elején kezdtek elterjedni, különösen a munkásmozgalmak keretein belül.",
+     "type": "text",
+     "heading": "A szocializmus fogalma",
+     "key_term": "szocializmus"
+    },
+    "after": {
+     "body": "A szocializmus egy politikai és gazdasági eszmerendszer, amely a társadalmi egyenlőség és a közös tulajdon elveire épít. A 19. század elején kezdődő utópista szocialista gondolatokból (Saint-Simon, Fourier, Owen) fejlődött ki, a század közepén Marx és Engels tudományos igényű elméletében öltött alakot, válaszul a kapitalizmus társadalmi feszültségeire. A szocializmus célja a vagyoni különbségek csökkentése és a munkások jogainak védelme. Magyarországon a szocialista eszmék a 19. század végén és a 20. század elején kezdtek elterjedni, különösen a munkásmozgalmak keretein belül.",
+     "type": "text",
+     "heading": "A szocializmus fogalma",
+     "key_term": "szocializmus"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-01-002",
+   "lesson_id": "2419cc63-8a39-4438-8c88-9d6b46656f4b",
+   "block_id": "d871b7db-70e2-4565-b7f6-5a580b0bc5d2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Karl Marx … 1848-ban publikálta a Kommunista kiáltványt”",
+   "explanation": "A Kommunista kiáltványt Marx és Friedrich Engels együtt írta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/The_Communist_Manifesto",
+     "title": "The Communist Manifesto",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Karl Marx német filozófus és közgazdász, a modern szocializmus egyik alapító atyja. 1848-ban publikálta a Kommunista kiáltványt, amely a munkásosztály felszabadítását és a kapitalizmus kritikáját hirdette. A kiáltvány hangsúlyozza a proletáriátus szerepét a társadalmi változásokban és a közös tulajdon szükségességét. Marx munkássága jelentős hatással volt a magyar munkásmozgalomra, különösen a 20. században.",
+     "type": "text",
+     "heading": "Karl Marx és a Kommunista kiáltvány",
+     "key_term": "Karl Marx"
+    },
+    "after": {
+     "body": "Karl Marx német filozófus és közgazdász, a modern szocializmus egyik alapító atyja. 1848-ban Friedrich Engelsszel közösen publikálta a Kommunista kiáltványt, amely a munkásosztály felszabadítását és a kapitalizmus kritikáját hirdette. A kiáltvány hangsúlyozza a proletáriátus szerepét a társadalmi változásokban és a közös tulajdon szükségességét. Marx munkássága jelentős hatással volt a magyar munkásmozgalomra, különösen a 20. században.",
+     "type": "text",
+     "heading": "Karl Marx és a Kommunista kiáltvány",
+     "key_term": "Karl Marx"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-01-003",
+   "lesson_id": "2419cc63-8a39-4438-8c88-9d6b46656f4b",
+   "block_id": "d871b7db-70e2-4565-b7f6-5a580b0bc5d2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A 19. század végén Magyarországon is megalakultak az első szakszervezetek”",
+   "explanation": "Az első magyarországi munkásszervezetek az 1860-as években alakultak (Nyomdászok Segélyegylete 1862, Általános Munkásegylet 1868), nem a század végén.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Magyarországi munkásmozgalom története (Nyomdászok Segélyegylete 1862, Általános Munkásegylet 1868)",
+   "fix": {
+    "before": {
+     "body": "A szakszervezetek a munkavállalók érdekképviseleti szervei, amelyek célja a munkakörülmények javítása és a munkások jogainak védelme. A 19. század végén Magyarországon is megalakultak az első szakszervezetek, amelyek a szocialista eszmék hatására jöttek létre. A szakszervezetek fontos szerepet játszottak a munkásmozgalmakban, segítve a munkások összefogását és a politikai képviseletüket. A szakszervezetek ma is kulcsszereplői a munkavállalói jogok védelmének.",
+     "type": "text",
+     "heading": "Szakszervezetek szerepe",
+     "key_term": "szakszervezet"
+    },
+    "after": {
+     "body": "A szakszervezetek a munkavállalók érdekképviseleti szervei, amelyek célja a munkakörülmények javítása és a munkások jogainak védelme. Magyarországon már az 1860-as években megalakultak az első munkásszervezetek (például 1862-ben a nyomdászok egylete, 1868-ban az Általános Munkásegylet), amelyek a szocialista eszmék hatására jöttek létre. A szakszervezetek fontos szerepet játszottak a munkásmozgalmakban, segítve a munkások összefogását és a politikai képviseletüket. A szakszervezetek ma is kulcsszereplői a munkavállalói jogok védelmének.",
+     "type": "text",
+     "heading": "Szakszervezetek szerepe",
+     "key_term": "szakszervezet"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-01-004",
+   "lesson_id": "2419cc63-8a39-4438-8c88-9d6b46656f4b",
+   "block_id": "d871b7db-70e2-4565-b7f6-5a580b0bc5d2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Magyarországon a szociáldemokrata pártok a 20. század elején alakultak meg”",
+   "explanation": "A Magyarországi Szociáldemokrata Párt 1890 decemberében alakult meg Budapesten; a Kommunisták Magyarországi Pártja 1918. november 24-én.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Magyarországi Szociáldemokrata Párt (1890), KMP (1918)",
+   "fix": {
+    "before": {
+     "body": "A szociáldemokrácia a szocializmus egyik ága, amely a demokratikus politikai rendszeren belül kívánja megvalósítani a társadalmi igazságosságot. A kommunizmus viszont a forradalmi átalakulást és a teljes közös tulajdont hirdeti. Magyarországon a szociáldemokrata pártok a 20. század elején alakultak meg, és a munkásosztály politikai képviseletét célozták. A két irányzat közötti feszültség jelentős hatással volt a magyar politikai életre.",
+     "type": "text",
+     "heading": "Szociáldemokrácia és kommunizmus",
+     "key_term": "szociáldemokrácia"
+    },
+    "after": {
+     "body": "A szociáldemokrácia a szocializmus egyik ága, amely a demokratikus politikai rendszeren belül kívánja megvalósítani a társadalmi igazságosságot. A kommunizmus viszont a forradalmi átalakulást és a teljes közös tulajdont hirdeti. Magyarországon a Magyarországi Szociáldemokrata Párt 1890-ben alakult meg, és a munkásosztály politikai képviseletét célozták. A két irányzat közötti feszültség jelentős hatással volt a magyar politikai életre.",
+     "type": "text",
+     "heading": "Szociáldemokrácia és kommunizmus",
+     "key_term": "szociáldemokrácia"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-01-005",
+   "lesson_id": "23c4335e-f374-44b7-b3ed-cd13003bd49c",
+   "block_id": "1cb031e9-59ca-4ab9-8d34-1e81d8c4d1c3",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„amikor a politikai hatalom demokratikus alapokra helyeződött”",
+   "explanation": "A 19. századi polgári államok alkotmányosak voltak, de nem demokratikusak: a választójogot vagyonhoz, adóhoz és nemhez kötötték.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bourgeois",
+     "title": "Bourgeois",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Census_suffrage",
+     "title": "Census suffrage",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A polgári állam fogalma a 19. századra terjedt el, amikor a politikai hatalom demokratikus alapokra helyeződött. A polgári állam jellemzője a jogegyenlőség és a társadalmi mobilitás elősegítése. A polgári állam kiépítése során a választójog kiterjesztése és az alkotmányosság megteremtése vált középpontba. A polgári állam megteremtése különösen fontos volt Magyarország számára, mivel a nemzeti függetlenség és a modernizáció alapjait képezte.",
+     "type": "text",
+     "heading": "A polgári állam kialakulása",
+     "key_term": "polgári állam"
+    },
+    "after": {
+     "body": "A polgári állam fogalma a 19. századra terjedt el, amikor a politikai hatalom alkotmányos alapokra helyeződött (a választójog még vagyonhoz és nemhez kötött volt). A polgári állam jellemzője a jogegyenlőség és a társadalmi mobilitás elősegítése. A polgári állam kiépítése során a választójog kiterjesztése és az alkotmányosság megteremtése vált középpontba. A polgári állam megteremtése különösen fontos volt Magyarország számára, mivel a nemzeti függetlenség és a modernizáció alapjait képezte.",
+     "type": "text",
+     "heading": "A polgári állam kialakulása",
+     "key_term": "polgári állam"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-01-006",
+   "lesson_id": "23c4335e-f374-44b7-b3ed-cd13003bd49c",
+   "block_id": "1cb031e9-59ca-4ab9-8d34-1e81d8c4d1c3",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a szövetségi államok győzelmével”",
+   "explanation": "Az északi Unió győzött; a „szövetségi” kifejezés a déli Konföderációval összetéveszthető. A rabszolgaság eltörlése csak 1863-tól lett hivatalos cél, és 1865-ben a 13. alkotmánymódosítás mondta ki.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/American_Civil_War",
+     "title": "American Civil War",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az amerikai polgárháború 1861 és 1865 között zajlott, és a déli államok elszakadási törekvéseivel indult. Abraham Lincoln, az Egyesült Államok elnöke, a háború során a szövetségi egység megőrzésére törekedett, valamint a rabszolgaság eltörlésére. A polgárháború végül a szövetségi államok győzelmével zárult, amely megerősítette a polgári állam alapjait. A háború következményei a jogegyenlőség és az emancipációs törekvések szempontjából is jelentősek voltak.",
+     "type": "text",
+     "heading": "Az amerikai polgárháború",
+     "key_term": "polgárháború"
+    },
+    "after": {
+     "body": "Az amerikai polgárháború 1861 és 1865 között zajlott, és a déli államok elszakadási törekvéseivel indult. Abraham Lincoln, az Egyesült Államok elnöke, a háború során a szövetségi egység megőrzésére törekedett, valamint a rabszolgaság eltörlésére. A polgárháború végül az északi Unió győzelmével zárult, 1865 decemberében pedig a 13. alkotmánymódosítás eltörölte a rabszolgaságot, amely megerősítette a polgári állam alapjait. A háború következményei a jogegyenlőség és az emancipációs törekvések szempontjából is jelentősek voltak.",
+     "type": "text",
+     "heading": "Az amerikai polgárháború",
+     "key_term": "polgárháború"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-01-007",
+   "lesson_id": "23c4335e-f374-44b7-b3ed-cd13003bd49c",
+   "block_id": "1cb031e9-59ca-4ab9-8d34-1e81d8c4d1c3",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„elősegítette a német ipar fejlődését és a monopóliumok kialakulását”; „Magyarország számára is példát jelentett”",
+   "explanation": "A monopóliumok (kartellek) inkább a 19. század végén jelentek meg; a német egység és Magyarország valódi kapcsolata az 1866-os königgrätzi porosz győzelem, amely a kiegyezéshez vezetett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/German_Empire",
+     "title": "German Empire",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Königgrätz",
+     "title": "Battle of Königgrätz",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+     "title": "Austro-Hungarian Compromise of 1867",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Németország egyesítése 1871-ben valósult meg, Otto von Bismarck vezetésével. Bismarck politikai stratégiája a háborúk és diplomácia kombinálására épült, amely lehetővé tette a német államok egyesülését egy erős központi hatalom alatt. Az egyesítés nemcsak politikai, hanem gazdasági szempontból is fontos volt, mivel elősegítette a német ipar fejlődését és a monopóliumok kialakulását. A német egység és Bismarck politikája Magyarország számára is példát jelentett a nemzeti egység megteremtésében.",
+     "type": "text",
+     "heading": "Németország egyesítése",
+     "key_term": "Otto von Bismarck"
+    },
+    "after": {
+     "body": "Németország egyesítése 1871-ben valósult meg, Otto von Bismarck vezetésével. Bismarck politikai stratégiája a háborúk és diplomácia kombinálására épült, amely lehetővé tette a német államok egyesülését egy erős központi hatalom alatt. Az egyesítés nemcsak politikai, hanem gazdasági szempontból is fontos volt, mivel elősegítette a német ipar fejlődését és a nagyipar erősödését. Poroszország 1866-os königgrätzi győzelme Ausztria felett közvetlenül a kiegyezéshez (1867) vezetett Magyarországon.",
+     "type": "text",
+     "heading": "Németország egyesítése",
+     "key_term": "Otto von Bismarck"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-01-008",
+   "lesson_id": "23c4335e-f374-44b7-b3ed-cd13003bd49c",
+   "block_id": "1cb031e9-59ca-4ab9-8d34-1e81d8c4d1c3",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A Meidzsi-restauráció fontos tanulságokat hordoz a magyar nemzet számára”",
+   "explanation": "Erőltetett magyar vonatkozás; a tényleges tartalom (1889-es alkotmány, 1905-ös orosz–japán háború) hiányzik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Meiji_Restoration",
+     "title": "Meiji Restoration",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Meidzsi-restauráció 1868-ban indult Japánban, amely a feudális rendszer végét és a modern állam kialakulását hozta el. A restauráció célja a nyugati hatalmakhoz való felzárkózás volt, amelynek keretében a politikai, gazdasági és kulturális reformok valósultak meg. Japán példája arra is rámutat, hogy a nemzeti egység és a modernizáció hogyan valósulhat meg egy tradicionális társadalomban. A Meidzsi-restauráció fontos tanulságokat hordoz a magyar nemzet számára a modern államépítés szempontjából.",
+     "type": "text",
+     "heading": "A Meidzsi-restauráció Japánban",
+     "key_term": "Meidzsi-restauráció"
+    },
+    "after": {
+     "body": "A Meidzsi-restauráció 1868-ban indult Japánban, amely a feudális rendszer végét és a modern állam kialakulását hozta el. A restauráció célja a nyugati hatalmakhoz való felzárkózás volt, amelynek keretében a politikai, gazdasági és kulturális reformok valósultak meg. Japán példája arra is rámutat, hogy a nemzeti egység és a modernizáció hogyan valósulhat meg egy tradicionális társadalomban. Japán 1889-ben alkotmányt fogadott el, 1905-re pedig legyőzte Oroszországot.",
+     "type": "text",
+     "heading": "A Meidzsi-restauráció Japánban",
+     "key_term": "Meidzsi-restauráció"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-01-009",
+   "lesson_id": "23c4335e-f374-44b7-b3ed-cd13003bd49c",
+   "block_id": "1cb031e9-59ca-4ab9-8d34-1e81d8c4d1c3",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Magyarországon is megjelentek hasonló mozgalmak”",
+   "explanation": "Homályos állítás; konkrét tény: 1891-ben Magyarországon bevezették a kötelező betegbiztosítást (1891. évi XIV. tc.).",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "1891. évi XIV. törvénycikk (kötelező betegbiztosítás)",
+   "fix": {
+    "before": {
+     "body": "A 19. század végén és a 20. század elején a polgári államokban megjelentek a társadalombiztosítási rendszerek, amelyek célja a társadalmi egyenlőtlenségek csökkentése volt. Az emancipációs törekvések, különösen a nők jogainak érvényesítése, szintén fontos szerepet játszottak a modern államok fejlődésében. Magyarországon is megjelentek hasonló mozgalmak, amelyek célja a jogegyenlőség és a társadalmi igazságosság megteremtése volt. A társadalombiztosítási rendszerek bevezetése a polgári államok stabilitását is növelte.",
+     "type": "text",
+     "heading": "Társadalombiztosítás és emancipációs törekvések",
+     "key_term": "társadalombiztosítás"
+    },
+    "after": {
+     "body": "A 19. század végén és a 20. század elején a polgári államokban megjelentek a társadalombiztosítási rendszerek, amelyek célja a társadalmi egyenlőtlenségek csökkentése volt. Az emancipációs törekvések, különösen a nők jogainak érvényesítése, szintén fontos szerepet játszottak a modern államok fejlődésében. Magyarországon 1891-ben vezették be az ipari munkások kötelező betegbiztosítását. A társadalombiztosítási rendszerek bevezetése a polgári államok stabilitását is növelte.",
+     "type": "text",
+     "heading": "Társadalombiztosítás és emancipációs törekvések",
+     "key_term": "társadalombiztosítás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-01-010",
+   "lesson_id": "2419cc63-8a39-4438-8c88-9d6b46656f4b",
+   "block_id": "1b347c6c-7870-414e-aed7-c4b0e735c0db",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„…például a francia forradalom idején”",
+   "explanation": "A szocializmus és kommunizmus a 19. századi ipari kapitalizmus terméke; a francia forradalomban legfeljebb előzményei (Babeuf, 1796) voltak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Conspiracy_of_the_Equals",
+     "title": "Conspiracy of the Equals",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A szocializmus és a munkásmozgalom eszméi a 19. század közepén kezdtek el terjedni Európában, különösen a gyári munkások körében, akik a munkahelyi körülmények javításáért küzdöttek. Ekkoriban több országban is megjelentek a szakszervezetek, amelyek a munkavállalók jogait és érdekeit képviselték. A szocialista eszmék, beleértve a kommunizmust és a szociáldemokráciát, különböző formákban más kultúrákban és időszakokban is megjelentek, például a francia forradalom idején vagy a 20. századi szocialista államok létrejöttekor.",
+     "type": "world",
+     "year": "",
+     "heading": "A szocializmus és a munkásmozgalom megjelenése a világban",
+     "link_hu": ""
+    },
+    "after": {
+     "body": "A szocializmus és a munkásmozgalom eszméi a 19. század közepén kezdtek el terjedni Európában, különösen a gyári munkások körében, akik a munkahelyi körülmények javításáért küzdöttek. Ekkoriban több országban is megjelentek a szakszervezetek, amelyek a munkavállalók jogait és érdekeit képviselték. A szocialista eszmék, beleértve a kommunizmust és a szociáldemokráciát, különböző formákban más kultúrákban és időszakokban is megjelentek, előzményei már a francia forradalom radikális áramlataiban (Babeuf) megjelentek, és a 20. századi szocialista államok létrejöttekor váltak kormányzati rendszerré.",
+     "type": "world",
+     "year": "",
+     "heading": "A szocializmus és a munkásmozgalom megjelenése a világban",
+     "link_hu": ""
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-01-011",
+   "lesson_id": "23c4335e-f374-44b7-b3ed-cd13003bd49c",
+   "block_id": "c0b74cd8-83ef-4f89-a1de-0fb57759c912",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: az amerikai polgárháború „hozzájárult a polgári állam kiépítéséhez Magyarországon is”",
+   "explanation": "Kitalált, erőltetett magyar kapcsolat. Valós kapcsolat: az 1848–49-es emigránsok közül többen (Asbóth Sándor, Stahel Gyula) az Unió oldalán harcoltak.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Magyar emigránsok az amerikai polgárháborúban (Asbóth Sándor, Stahel Gyula)",
+   "fix": {
+    "before": {
+     "body": "Az Egyesült Államokban 1861 és 1865 között zajlott polgárháború a déli államok és az északi államok között. A konfliktus fő oka a rabszolgaság kérdése volt, amely megosztotta a nemzetet. Abraham Lincoln elnök vezette az északiakat, akik a rabszolgaság eltörlését tűzték ki célul, míg a déli államok a rabszolgaság fenntartását védték.",
+     "type": "world",
+     "year": "1861",
+     "heading": "Az amerikai polgárháború",
+     "link_hu": "A polgárháború során a rabszolgaság eltörlése és a jogegyenlőség előmozdítása hozzájárult a polgári állam kiépítéséhez Magyarországon is, ahol hasonló emancipációs törekvések indultak."
+    },
+    "after": {
+     "body": "Az Egyesült Államokban 1861 és 1865 között zajlott polgárháború a déli államok és az északi államok között. A konfliktus fő oka a rabszolgaság kérdése volt, amely megosztotta a nemzetet. Abraham Lincoln elnök vezette az északiakat, akik a rabszolgaság eltörlését tűzték ki célul, míg a déli államok a rabszolgaság fenntartását védték.",
+     "type": "world",
+     "year": "1861",
+     "heading": "Az amerikai polgárháború",
+     "link_hu": "Az 1848–49-es szabadságharc emigránsai közül többen (például Asbóth Sándor és Stahel Gyula) az Unió oldalán harcoltak a polgárháborúban."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-01-012",
+   "lesson_id": "23c4335e-f374-44b7-b3ed-cd13003bd49c",
+   "block_id": "c0b74cd8-83ef-4f89-a1de-0fb57759c912",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: a Meidzsi-reformok „hasonlóságot mutatnak a Magyarországon … végbemenő modernizációs törekvésekkel”",
+   "explanation": "Kitalált, homályos analógia; ellenőrizhető tény: a dualizmus kori magyar modernizáció ugyanebben az időszakban (1867 után) zajlott.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "dualizmus kori modernizáció (1867 után)",
+   "fix": {
+    "before": {
+     "body": "1868-ban Japánban a Meidzsi-restauráció kezdődött, amely a császári hatalom helyreállítását célozta meg. Ez a folyamat a nyugati modernizációs törekvések jegyében zajlott, és jelentős társadalmi, politikai és gazdasági reformokat hozott magával. Japán gyorsan iparosodott, és a nemzeti egység megteremtésére törekedett.",
+     "type": "world",
+     "year": "1868",
+     "heading": "Meidzsi-restauráció Japánban",
+     "link_hu": "A Meidzsi-restauráció során végrehajtott reformok és a polgári állam kiépítése hasonlóságot mutat a Magyarországon a 19. század második felében végbemenő modernizációs törekvésekkel."
+    },
+    "after": {
+     "body": "1868-ban Japánban a Meidzsi-restauráció kezdődött, amely a császári hatalom helyreállítását célozta meg. Ez a folyamat a nyugati modernizációs törekvések jegyében zajlott, és jelentős társadalmi, politikai és gazdasági reformokat hozott magával. Japán gyorsan iparosodott, és a nemzeti egység megteremtésére törekedett.",
+     "type": "world",
+     "year": "1868",
+     "heading": "Meidzsi-restauráció Japánban",
+     "link_hu": "Ugyanebben az időszakban, 1867 után zajlott Magyarországon a dualizmus kori modernizáció, amely szintén nyugati mintákat követett."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-01-013",
+   "lesson_id": "23c4335e-f374-44b7-b3ed-cd13003bd49c",
+   "block_id": "c0b74cd8-83ef-4f89-a1de-0fb57759c912",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: a német egység „hatással volt Magyarország nemzeti egység megteremtésére”",
+   "explanation": "Kitalált hatás; a valós kapcsolat az 1866-os königgrätzi vereség és a kiegyezés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Königgrätz",
+     "title": "Battle of Königgrätz",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+     "title": "Austro-Hungarian Compromise of 1867",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1871-ben Otto von Bismarck vezetésével Németország egyesült, ezzel létrejött a Német Császárság. Az egyesítés mögött álló politikai és katonai stratégiák, valamint a nemzeti egység megteremtésére irányuló törekvések alapvetően átalakították a német állam szerkezetét. Bismarck politikája a nacionalizmus és a militarizmus kombinációjára épült.",
+     "type": "world",
+     "year": "1871",
+     "heading": "Németország egyesítése",
+     "link_hu": "Németország egyesítése példát mutatott arra, hogyan lehet politikai egységet teremteni, ami hatással volt Magyarország nemzeti egység megteremtésére is, különösen a dualizmus korában."
+    },
+    "after": {
+     "body": "1871-ben Otto von Bismarck vezetésével Németország egyesült, ezzel létrejött a Német Császárság. Az egyesítés mögött álló politikai és katonai stratégiák, valamint a nemzeti egység megteremtésére irányuló törekvések alapvetően átalakították a német állam szerkezetét. Bismarck politikája a nacionalizmus és a militarizmus kombinációjára épült.",
+     "type": "world",
+     "year": "1871",
+     "heading": "Németország egyesítése",
+     "link_hu": "Poroszország 1866-os königgrätzi győzelme Ausztria felett a kiegyezéshez (1867) és az Osztrák–Magyar Monarchia létrejöttéhez vezetett."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-01-014",
+   "lesson_id": null,
+   "block_id": "2ffd1628-6f12-42c6-8ce7-a13419b53571",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik fogalom kapcsolódik a társadalombiztosításhoz? B) Szocializmus”",
+   "explanation": "A világ első társadalombiztosítását Bismarck, konzervatív kancellár vezette be, éppen a szocialisták ellensúlyozására; a szakszervezet is kapcsolódik hozzá. A kérdés rosszul feltett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Social_insurance",
+     "title": "Social insurance",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Szakszervezet",
+      "B) Szocializmus",
+      "C) Kommunizmus",
+      "D) Polgárháború"
+     ],
+     "question": "Melyik fogalom kapcsolódik a társadalombiztosításhoz?",
+     "explanation": "A társadalombiztosítás a szocialista eszmék egyik megvalósulása, amely a munkavállalók védelmét és jólétét célozza.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Otto von Bismarck",
+      "Abraham Lincoln",
+      "Karl Marx",
+      "Meidzsi császár"
+     ],
+     "question": "Ki vezette be a világ első társadalombiztosítási rendszerét a német birodalomban?",
+     "explanation": "Bismarck 1883–1889 között vezette be a beteg-, baleseti és öregségi biztosítást, hogy a munkásokat leválassza a szocialistákról.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}
