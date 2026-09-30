@@ -1,0 +1,265 @@
+{
+ "nat_id": "PHYS-910-12",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "167feff5-aa95-4bf6-8436-183d60e4acf9",
+   "title_hu": "Tükrök és képalkotás",
+   "text_block_id": "e7ca211c-ce29-4411-9b92-cf15cb205ecb",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mit cserél fel a síktükör?",
+     "body": "A síktükör nem a bal és a jobb oldalt cseréli fel, hanem az elöl-hátul irányt: a fent-lent irány megmarad, a bal-jobb is, csak a tükörre merőleges irány fordul meg. Ezért tűnik úgy, mintha a képed megfordult volna, és a jobb kezed a képen bal kéznek látszik. A kép látszólagos, mérete a tárgyéval megegyezik, és ugyanolyan messze van a tükör mögött, mint a tárgy előtte. Ha 2 m-re állsz a tükörtől, a képed tőled 4 m-re látszik. Ahhoz, hogy magad teljes alakjában lásd, a tükör magassága elég, ha a testmagasságod fele: 1,7 m-es embernek 0,85 m.",
+     "did_you_know": "A mentőautók elején a MENTŐ felirat tükörírással áll, hogy az előttük haladó a visszapillantó tükörben helyesen olvassa.",
+     "think": "Milyen magas tükör kell, hogy egy 1,8 m magas ember teljes alakjában lássa magát?",
+     "think_answer": "A testmagasság felére van szükség: 1,8 : 2 = 0,9 m."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Homorú és domború tükrök",
+     "body": "A tükör alakja határozza meg, mit mutat. A homorú tükör összegyűjti a fényt: az autó fényszórójában az izzó a tükör fókuszában van, ezért a visszavert fény párhuzamos nyalábbá válik. A kozmetikai tükör is homorú, ha közel tartod az arcodhoz, nagyított, egyenes állású, látszólagos képet ad. A domború tükör szétszórja a fényt, ezért kisebb, de nagyobb látómezőjű képet ad. Ezért használják a kocsik külső visszapillantójában és a parkolók sarkain, ahol a holttér csökkentése a cél. A kép kicsinyített, ezért a tárgyak távolabbinak látszanak, mint amilyen messze valójában vannak.",
+     "did_you_know": "A kocsik jobb oldali tükrén szokás felirat: a tárgyak közelebb vannak, mint amilyennek látszanak.",
+     "think": "Melyik tükör ad nagyobb látómezőt, a sík vagy a domború?",
+     "think_answer": "A domború tükör, mert a sugarakat szétszórja, így a tér nagyobb része látszik benne, csak kicsinyítve."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mikor valódi egy kép?",
+     "body": "Valódi képről akkor beszélünk, ha a fénysugarak ténylegesen találkoznak a kép helyén, ezért ernyőre vetíthető. Látszólagos képnél a sugarak csak úgy tűnnek, mintha onnan indulnának, valójában szétnyílnak, ezért ernyőn nem fogható fel. A szemed lencséje a retinán valódi, fordított képet hoz létre, az agyad fordítja vissza. A nagyító a fókusztávolságán belül tartva látszólagos, nagyított, egyenes állású képet ad, a fókusztávolságon kívül viszont valódi, fordított képet: ha egy ablak képét egy nagyítóval a falra vetíted, az fejjel lefelé látszik.",
+     "did_you_know": "A vetítőgép ernyőjén valódi kép jelenik meg, a tükörben viszont mindig látszólagos.",
+     "think": "Vetíthető-e ernyőre a síktükörben látott kép?",
+     "think_answer": "Nem, mert látszólagos: a tükör mögött nincs ott a fény, csak úgy tűnik."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A tükörképletről",
+     "body": "Gömbtükörnél a tárgytávolság (t), a képtávolság (k) és a fókusztávolság (f) között az 1/f = 1/t + 1/k összefüggés áll fenn. A homorú gömbtükör fókusztávolsága a görbületi sugár fele: f = R : 2. Ha f = 10 cm, és a tárgy t = 30 cm-re van, akkor 1/k = 1/10 − 1/30 = 2/30, vagyis k = 15 cm. A nagyítás N = k : t = 15 : 30 = 0,5, tehát a kép fele akkora, mint a tárgy, valódi és fordított. Síktükörnél a fókusztávolság végtelen nagy, ezért a kép a tükör mögött, ugyanolyan távolságra van.",
+     "did_you_know": "",
+     "think": "Mekkora a képtávolság, ha f = 20 cm és t = 60 cm?",
+     "think_answer": "1/k = 1/20 − 1/60 = 2/60, ezért k = 30 cm."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Fókusztávolság mérése a Nappal",
+     "body": "Homorú tükör fókusztávolságát legegyszerűbben távoli fényforrással mérjük: a Nap sugarai gyakorlatilag párhuzamosan érkeznek, ezért a kép a fókuszban keletkezik. Fogd meg a tükröt, és egy papírlappal keresd meg azt a távolságot, ahol a napkorong éles képe látszik, majd mérd meg vonalzóval. Ha ez például 12 cm, akkor f = 12 cm. A Nap szögátmérője kb. 0,0093 rad, ezért a képe csak 12 · 0,0093 ≈ 1,1 mm átmérőjű: minden hő kis foltba gyűlik. Ezért a fókuszpontba tett papír megpörkölődhet, ne nézz a tükörbe vagy a fókuszpontba, és ne hagyd gyúlékony anyag közelében. Lencsénél is ugyanígy mérhető a fókusztávolság.",
+     "did_you_know": "",
+     "think": "Mekkora a Nap képének átmérője egy 20 cm fókusztávolságú tükörnél, ha a szögátmérő 0,0093 rad?",
+     "think_answer": "20 · 0,0093 ≈ 0,19 cm, vagyis kb. 1,9 mm."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Ki mit lát?",
+     "body": "Az emberi szemben háromféle csap van (hosszú, közepes és rövid hullámhosszra érzékeny), ezért hármas színlátású vagyunk. A kutyáknak két típusuk van, ezért a vörös és a zöld színeket rosszul különböztetik meg, a kéket és a sárgát viszont jól. A legtöbb madárnak négy csaptípusa van, ezek egyike az ibolyántúli (UV) fényre érzékeny, ezért számukra a tollazat mintázata gazdagabb, mint nekünk. A méhek szintén látják az UV-t, a virágokon az UV-ben látható vezetőminták az útmutatóik. A vörös-zöld színtévesztés a férfiak kb. 8%-át érinti, mert a színlátás egyik génje az X-kromoszómán van.",
+     "did_you_know": "A sáskarák-félék szemében akár 12–16 fajta fényérzékelő is lehet.",
+     "think": "Hány csaptípusa van a kutyának, és mit követel ez a színlátásától?",
+     "think_answer": "Kettő, ezért kétszínű látású: főleg a kéket és a sárgát különbözteti meg, a vörös és zöld nehezen."
+    }
+   ]
+  },
+  {
+   "lesson_id": "e96a5d83-6133-4131-b692-d7f00868a250",
+   "title_hu": "Fény törése és színek",
+   "text_block_id": "5b82c471-0a61-4913-83d4-d11a50d0af33",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "A Snellius–Descartes-törvény",
+     "body": "Fénytörés akkor lép fel, ha a fény sebessége megváltozik, ezért nem a tömegsűrűség, hanem az optikai sűrűség a lényeg. A törésmutató n = c : v, a vízé 1,33, ezért a vízben a fény sebessége 3 · 10⁸ : 1,33 ≈ 2,26 · 10⁸ m/s. A törés szögeit az n₁ · sin α = n₂ · sin β összefüggés adja meg. Ha a fény 45°-os szögben lép levegőből vízbe: sin β = sin 45° : 1,33 = 0,707 : 1,33 = 0,532, ezért β ≈ 32°. A vízben tehát a sugár a merőleges felé törik. Ezért látszik a pohárba állított ceruza megtörtnek.",
+     "did_you_know": "A medence vize mindig sekélyebbnek látszik, mint amilyen mély valójában.",
+     "think": "Mekkora a fény sebessége üvegben, ha n = 1,5?",
+     "think_answer": "v = c : n = 3 · 10⁸ : 1,5 = 2 · 10⁸ m/s."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Miért bomlik színekre a fehér fény?",
+     "body": "A törésmutató a hullámhossztól kissé függ, ezért az egyes színek különböző mértékben törnek. Üvegben a vörös fény törésmutatója kb. 1,51, az ibolyáé kb. 1,53, ezért a prizmán az ibolya törik meg a legjobban, a vörös a legkevésbé. Ezt a jelenséget színszórásnak (diszperziónak) hívjuk. Newton 1666-ban prizmákkal bizonyította, hogy a színek már a fehér fényben benne vannak, és a prizma nem „színezi” a fényt: ha egy kiválasztott színt egy második prizmán is átengedett, az már nem bomlott tovább. A hét szín számát ő választotta, a zenei skála hét hangjához hasonlítva, a színek valójában folytonosan mennek át egymásba.",
+     "did_you_know": "",
+     "think": "Melyik szín törik a legerősebben prizmán át?",
+     "think_answer": "Az ibolya, mert annak a legnagyobb a törésmutatója."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A lencse és a leképezés",
+     "body": "A gyűjtőlencse a párhuzamos sugarakat a fókuszpontban gyűjti össze, ezért a nagyítóval a Nap képét kis folttá lehet sűríteni. A lencsetörvény: 1/f = 1/t + 1/k. Ha f = 10 cm és t = 15 cm, akkor 1/k = 1/10 − 1/15 = 1/30, tehát k = 30 cm, a kép valódi, fordított, és N = k : t = 2-szeres nagyítású. A nagyító azonban akkor működik „nagyítóként”, ha a tárgy a fókusztávolságon belül van (t < f): ekkor a kép látszólagos és egyenes állású, és nem lehet ernyőre vetíteni. A fókusz tehát nem a kép helye, hanem az a pont, ahová a párhuzamos sugarak összegyűlnek.",
+     "did_you_know": "",
+     "think": "Hová kerül a kép, ha f = 10 cm és t = 20 cm?",
+     "think_answer": "1/k = 1/10 − 1/20 = 1/20, ezért k = 20 cm, a kép ugyanakkora, mint a tárgy."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Három különböző módja a színképnek",
+     "body": "A színképet nem csak fénytöréssel lehet előállítani. A prizma a törésmutató hullámhosszfüggése miatt bont (diszperzió). Az optikai rács (például egy CD felülete) elhajlással bont: d · sin θ = k · λ. Ha a rácsállandó d = 1,6 μm és λ = 600 nm, akkor sin θ = 0,6 : 1,6 = 0,375, tehát θ ≈ 22° az első rendben. A szappanhártya színei interferenciából erednek: a hártya két felületéről visszavert hullámok erősítik vagy gyengítik egymást, a színt a hártya vastagsága határozza meg. A vizes tálba tett tükör klasszikus módszer: a víz felszínén keresztül törő fény prizmaként viselkedik.",
+     "did_you_know": "",
+     "think": "Melyik jelenség okozza a szappanbuborék színeit: törés, elhajlás vagy interferencia?",
+     "think_answer": "Interferencia, a hártya két oldaláról visszavert fény hullámai találkoznak."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mi köze a fénynek a bankkártyához?",
+     "body": "A bankkártya érintés nélküli fizetése nem fényt használ, hanem rádióhullámot: az NFC technológia 13,56 MHz frekvencián, a kártya és a terminál kb. 4 cm-es távolságán belül, mágneses csatolással működik. Ha a hullámhosszt kiszámítjuk: λ = c : f = 3 · 10⁸ : 13,56 · 10⁶ ≈ 22 m, ami sokkal nagyobb a néhány centis távolságnál, ezért itt a közeli mező hatása számít, nem a terjedő hullám. A fényt viszont valóban a törésre épülő eszközök használják: a telefonkamera 5–7 műanyag lencséből áll, az optikai szál pedig teljes visszaverődéssel vezeti a jelet.",
+     "did_you_know": "",
+     "think": "Milyen típusú elektromágneses hullámot használ az érintés nélküli fizetés?",
+     "think_answer": "Rádióhullámot (kb. 13,56 MHz), nem látható fényt."
+    }
+   ]
+  },
+  {
+   "lesson_id": "642db0e7-1ab8-47bb-800d-7c71a9d4f02c",
+   "title_hu": "Látás és optikai eszközök",
+   "text_block_id": "764d3e48-2fe3-4152-a22e-634b902cdde0",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Melyik része töri a legtöbbet?",
+     "body": "A szem törőképességének nagy részét, kb. kétharmadát nem a lencse, hanem a szaruhártya adja: a teljes kb. 60 dioptriából a szaruhártyáé kb. 40. A lencse a finomhangolást végzi, mert alakját a sugárizom változtatja (alkalmazkodás, akkomodáció), így közelre és távolra is éles a kép. A képalkotás valódi és fordított a retinán, az agy fordítja vissza. Ha a szem 60 dioptriás, a fókusztávolsága f = 1 : 60 ≈ 17 mm, ez a szemgolyó méretével azonos nagyságrend. A retinában kb. 120 millió pálcika (gyenge fényben) és kb. 6 millió csap (színlátás) van.",
+     "did_you_know": "",
+     "think": "Mekkora a szem fókusztávolsága, ha az összes törőképessége 60 dioptria?",
+     "think_answer": "f = 1 : 60 m ≈ 0,017 m, vagyis kb. 17 mm."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A szem, mint gépezet",
+     "body": "A pupilla a szivárványhártya (írisz) közepén lévő nyílás, amelynek átmérőjét az írisz izmai szabályozzák, kb. 2 mm és 8 mm között. Mivel a beeső fény a területtel arányos, a 8 mm-es pupilla (8 : 2)² = 16-szor több fényt enged be, mint a 2 mm-es. Ezért kell időbe telnie, míg a szemünk alkalmazkodik a sötéthez. A retinán a legélesebb látás helye a sárgafolt közepe, a foveá. A vakfolt ott van, ahol a látóideg kilép a szemből, itt nincsenek fényérzékelő sejtek, mégsem látunk lyukat, mert az agy kitölti.",
+     "did_you_know": "A két szem képe egyenként hiányos, de az agy egyesíti.",
+     "think": "Hányszor nagyobb a pupilla területe 6 mm átmérőnél, mint 3 mm-nél?",
+     "think_answer": "(6 : 3)² = 4-szer nagyobb."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Rövidlátás és távollátás",
+     "body": "Rövidlátásnál a szem túl erősen töri a fényt (vagy túl hosszú), ezért a távoli tárgy képe a retina előtt keletkezik. Ezt homorú (szóró) lencse, negatív dioptriájú szemüveg javítja. A lencse dioptriája a fókusztávolság reciproka. Ha valaki az 50 cm-nél távolabbi dolgokat nem látja élesen, olyan szemüveg kell neki, amely a végtelenben lévő tárgyat 50 cm-re képezi le: f = −0,5 m, ezért D = 1 : (−0,5) = −2 dioptria. Távollátásnál a kép a retina mögött van, ezt domború (gyűjtő), pozitív dioptriájú lencse javítja. Idős korban a lencse rugalmatlansága miatt közelre nehezebb élesíteni (öregkori távollátás).",
+     "did_you_know": "",
+     "think": "Mekkora a −4 dioptriás szemüveglencse fókusztávolsága?",
+     "think_answer": "f = 1 : (−4) = −0,25 m, vagyis −25 cm, a lencse szóró."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mikor nincs kilépés a fény számára?",
+     "body": "Teljes visszaverődés akkor lép fel, ha a fény optikailag sűrűbb közegből ritkább felé halad, és a beesési szög nagyobb a határszögnél: sin θ_h = n₂ : n₁. Üvegből levegőbe (n = 1,5) sin θ_h = 1 : 1,5 = 0,667, tehát θ_h ≈ 42°. Vízből levegőbe ez kb. 49°. A gyémánt törésmutatója 2,42, határszöge csak kb. 24°, ezért a benne haladó fény többször visszaverődik, és ettől csillog. Az optikai szálban a fény a magban fut, a köpeny kisebb törésmutatójú, ezért a fény visszaverődik. A távközlési szálak infravörös fényt (kb. 1550 nm) használnak, mert az üveg abban a tartományban nyeli el a legkevésbé.",
+     "did_you_know": "",
+     "think": "Mekkora a határszög vízből levegőbe, ha n = 1,33?",
+     "think_answer": "sin θ_h = 1 : 1,33 = 0,752, tehát θ_h ≈ 49°."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mennyit nagyít a mikroszkóp?",
+     "body": "Az összetett mikroszkóp két gyűjtőlencse-rendszerből áll: a tárgylencse (objektív) kis fókusztávolságú, a szemlencse (okulár) pedig a keletkezett képet nagyítja tovább. A teljes nagyítás a kettő szorzata: ha az objektív 40×, a szemlencse 10×, az eredő nagyítás 400×. A nagyítás azonban nem növelhető akárhogy, mert a felbontást a fény hullámhossza korlátozza: a legkisebb megkülönböztethető távolság kb. λ : 2, azaz látható fénynél kb. 200–300 nm. A baktériumok (1–5 μm) látszanak, a legtöbb vírus (kb. 100 nm) nem, ahhoz elektronmikroszkóp kell.",
+     "did_you_know": "",
+     "think": "Mekkora az össznagyítás 100×-os objektívnél és 10×-es okulárnál?",
+     "think_answer": "100 · 10 = 1000×."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Miért tükör a nagy távcső?",
+     "body": "A nagy csillagászati távcsövek főtükrös (reflektor) távcsövek, mert egy nagy tükör hátulról alátámasztható, egy nagy lencse viszont csak a szélén, és a saját súlya alatt eldeformálódna. Az első tükrös távcsövet Newton építette 1668 körül. A fénygyűjtő képesség az átmérő négyzetével arányos: egy 7 mm átmérőjű pupillához képest egy 70 mm-es távcső (70 : 7)² = 100-szor több fényt gyűjt, ezért látszanak halvány csillagok. Nagy tükrökből készülnek a legnagyobb távcsövek: a Hubble tükre 2,4 m, a legnagyobb földi távcsöveké 8–10 m.",
+     "did_you_know": "",
+     "think": "Hányszor több fényt gyűjt egy 140 mm átmérőjű távcső, mint egy 7 mm-es pupilla?",
+     "think_answer": "(140 : 7)² = 400-szor több."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "A színlátás fajtái",
+     "body": "Az emberi szemben három csaptípus (L, M, S) dolgozik, ezekből az agy egy színtér színeit állítja össze. A kutyáknak két csaptípusa van (kétszínű látású), ezért a vörös és a zöld tartományt nem különböztetik meg jól, a kéket és sárgát igen. A méhek három típusa az ultraibolyára, a kékre és a zöldre érzékeny, a vöröset nem látják, viszont az UV-ben látszó virágmintákat igen. A színtévesztés (daltonizmus) a férfiak kb. 8%-át, a nők kb. 0,5%-át érinti, mert a vörös-zöld érzékelés génjei az X-kromoszómán vannak. Az állati látás vizsgálata az etológia (viselkedéstan) és a biológia terepe: a fizika csak a fény oldalát adja.",
+     "did_you_know": "",
+     "think": "Miért gyakoribb a vörös-zöld színtévesztés férfiaknál?",
+     "think_answer": "Mert az érintett gének az X-kromoszómán vannak, a férfiaknak pedig csak egy van belőle."
+    }
+   ]
+  },
+  {
+   "lesson_id": "7f361612-e0ab-4587-afde-4364b8b84391",
+   "title_hu": "Távcsövek és természetes színek",
+   "text_block_id": "8991dd31-b971-43aa-a1db-237cf7d6a8ff",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mit tett Galilei valójában?",
+     "body": "Galilei nem találta fel a távcsövet: az első szabadalmi kérelmet 1608-ban egy holland szemüvegkészítő, Hans Lipperhey nyújtotta be. Galilei 1609-ben hallott róla, megépítette a saját változatát, és az égre irányította. Távcsöve egy gyűjtő objektívből és egy szóró szemlencséből állt, a nagyítás M = f_ob : f_ok. Ha az objektív fókusztávolsága 90 cm, a szemlencséé −3 cm, akkor M = 30. 1610-ben felfedezte a Jupiter négy nagy holdját, ezek nyilvánvalóvá tették, hogy nem minden kering a Föld körül. A Vénusz fázisai a Ptolemaiosz-féle világképet cáfolták, de a Tycho Brahe-féle rendszerrel is összefértek, így önmagukban nem bizonyították a heliocentrikus világképet.",
+     "did_you_know": "",
+     "think": "Mekkora a nagyítás, ha az objektív fókusztávolsága 60 cm, a szemlencséé 2 cm?",
+     "think_answer": "M = 60 : 2 = 30-szoros."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Miért kék az ég, és miért vörös a naplemente?",
+     "body": "A kék ég oka a Rayleigh-szórás: a fény szórása a hullámhossz negyedik hatványával fordítottan arányos. A kék fény (450 nm) és a vörös (700 nm) aránya (700 : 450)⁴ ≈ 5,9, azaz a kék hatszor erősebben szóródik. Az ibolya még jobban szóródna, de a Nap kevesebb ibolyát sugároz, a felső légkör egy részét elnyeli, és a szemünk is kevésbé érzékeny rá. A naplementénél nem az „utazási idő”, hanem az út hossza számít: a lemenő Nap fénye a légkörben jóval hosszabb utat tesz meg, ezért a kék nagy része kiszóródik a nyalábból, és a vörös, narancs marad.",
+     "did_you_know": "",
+     "think": "Hányszor erősebben szóródik a 400 nm-es ibolya fény a 800 nm-es vörösnél?",
+     "think_answer": "(800 : 400)⁴ = 2⁴ = 16-szor."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Hogyan jön létre a szivárvány?",
+     "body": "A szivárvány a napfény fénytöréséből és a vízcseppen belüli visszaverődéséből jön létre: a fény belép a cseppbe, ott törik, hátulról visszaverődik, és kilépéskor újra törik. Mivel a törésmutató a színtől függ, a vörös kb. 42°-nál, az ibolya kb. 40°-nál látszik a Nappal szembeni iránytól mérve. A szivárvány így mindig a Nappal ellentétes irányban látszik. A színek szögét a törésmutató szabja meg, a cseppméret a sáv szélességét és élességét befolyásolja. Ha a Nap 20°-os magasságban áll, a szivárvány csúcsa a horizont fölött 42° − 20° = 22°-nál van. A másodlagos szivárvány kb. 51°-nál látszik, fordított színsorrenddel.",
+     "did_you_know": "",
+     "think": "Milyen magasan van a szivárvány csúcsa, ha a Nap 30°-ra áll a horizont felett?",
+     "think_answer": "42° − 30° = 12°."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Milyen színek egészítik ki egymást?",
+     "body": "A fizikában két szín kiegészítő, ha fényként összeadva fehéret ad: ilyen a vörös és a cián, a zöld és a bíbor (magenta), a kék és a sárga. A vörös és a zöld fény összegéből viszont sárga lesz, tehát ez a pár nem kiegészítő. A festők színkörében gyakran a piros–zöld és a kék–narancs párt tanítják kiegészítőnek, ez a festékek keverésére vonatkozik. Festéket keverve (kivonó színkeverés) a kiegészítő színek sötétszürkét adnak, mert mindkét festék elnyeli a fény egy részét. Ezért kétféle színkeverés létezik: a fényeké (összeadó) és a festékeké (kivonó).",
+     "did_you_know": "",
+     "think": "Mi lesz a vörös és zöld fény keveréke?",
+     "think_answer": "Sárga, mert a vörös és a zöld fény összeadódik."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Galilei-féle és Kepler-féle távcső",
+     "body": "A Galilei-távcső gyűjtő objektívből és szóró szemlencséből áll, a kép egyenes állású, de a látómező szűk. A Kepler-féle távcsőben mindkét lencse gyűjtő, a kép fordított, a látómező nagyobb, ezért a csillagászok ezt használják. Mindkét típusnál a nagyítás az objektív és a szemlencse fókusztávolságának hányadosa, M = f_ob : f_ok, nem a szerkezet bonyolultsága határozza meg. Ha egy refraktor objektívjének fókusztávolsága 900 mm, a szemlencséé 30 mm, akkor M = 30. Egy távcső felbontását és fényerejét az objektív átmérője szabja meg, a nagyítást a szemlencse cseréjével lehet változtatni.",
+     "did_you_know": "",
+     "think": "Mekkora a nagyítás, ha f_ob = 1200 mm és f_ok = 24 mm?",
+     "think_answer": "M = 1200 : 24 = 50."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Milyen lencsék vannak a mikroszkópban?",
+     "body": "A mikroszkópban két gyűjtőlencse-rendszer dolgozik, szórólencse nincs. Az objektív nagyon kis fókusztávolságú (néhány mm), ezért a tárgyról valódi, nagyított, fordított képet ad, a szemlencse pedig ezt a képet nagyítóként nézi. A távcsőnél ellentétes a helyzet: az objektív nagy fókusztávolságú, mert a távoli tárgy szögméretét kell növelnie. A két eszköz tehát hasonlít, de a távcső távoli, a mikroszkóp közeli tárgyakhoz készül. A szórólencsének a mikroszkópban nincs szerepe, a nagyítás a két lencse nagyításának szorzata.",
+     "did_you_know": "",
+     "think": "Van-e szórólencse egy mikroszkópban?",
+     "think_answer": "Nincs: mind az objektív, mind a szemlencse gyűjtő."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Mit lát a Hubble?",
+     "body": "A Hubble Űrtávcső 1990-ben indult, kb. 540 km magasan kering, tükrének átmérője 2,4 m. Kezdetben elrontott alakú főtükre miatt homályos képeket adott, ezt 1993-ban korrekciós optikával javították ki. A Hubble főleg látható, közeli infravörös és ultraibolya fényt észlel; a mélyebb infravörös tartományban a 2021-ben indított James Webb-távcső dolgozik. Felbontása az elhajlás miatt θ ≈ 1,22 · λ : D: 550 nm-nél és 2,4 m-es tükörnél θ ≈ 2,8 · 10⁻⁷ rad, azaz kb. 0,06 ívmásodperc. A színes képek jó része több szűrővel készült felvétel összeállítása, a színek egy része hamis (a szem számára nem látható hullámhosszakat látható színnel jelenítik meg).",
+     "did_you_know": "",
+     "think": "Miért készít élesebb képet az űrtávcső, mint egy ugyanakkora földi?",
+     "think_answer": "Mert a földi távcső képét a légkör áramlásai elmossák, az űrben ez a torzítás nincs."
+    }
+   ]
+  }
+ ]
+}
