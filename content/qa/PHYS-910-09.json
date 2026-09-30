@@ -1,0 +1,1183 @@
+{
+ "nat_id": "PHYS-910-09",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 103,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres/hiányos kísérletblokkok: a 3db65863 blokk discovery, try_basic és try_advanced mezője és vázlata üres; a b9013486 blokkban a try_basic és try_advanced üres."
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-910-09-001",
+   "lesson_id": "a13e9da1-5288-4743-b8a8-77fe7fbd2da4",
+   "block_id": "12c4fe07-1303-436f-bd4f-4b4ed46af52a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az ampermérő „mennyi áramot használ a lámpa”; „az áramkörünk mennyire hatékony”",
+   "explanation": "Az áram az áramkörben nem fogy el: a mérés azt adja meg, mekkora áram folyik át a lámpán. A hatékonyság nem az áramerősségből olvasható ki.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ammeter",
+     "title": "Ammeter",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az áramerősség (I) megmutatja, hogy mennyi töltés áramlik át egy adott ponton egy másodperc alatt. Az áramerősség mérése fontos, hiszen segít megérteni, hogy az áramkörünk mennyire hatékony. Egy egyszerű kísérlet során használjunk ampermérőt, amelyet beépítünk egy áramkörbe, például egy LED-lámpa és egy galvánelem között. A mért értékekből láthatjuk, mennyi áramot használ a lámpa.",
+     "type": "text",
+     "heading": "Áramerősség mérése",
+     "key_term": "áramerősség"
+    },
+    "after": {
+     "body": "Az áramerősség (I) megmutatja, hogy mennyi töltés áramlik át egy adott ponton egy másodperc alatt. Az áramerősség mérése fontos, hiszen megmutatja, mekkora áram folyik az áramkörben. Egy egyszerű kísérlet során használjunk ampermérőt, amelyet beépítünk egy áramkörbe, például egy LED-lámpa és egy galvánelem között. A mért értékből láthatjuk, mekkora áram folyik át a lámpán.",
+     "type": "text",
+     "heading": "Áramerősség mérése",
+     "key_term": "áramerősség"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-002",
+   "lesson_id": "a13e9da1-5288-4743-b8a8-77fe7fbd2da4",
+   "block_id": "12c4fe07-1303-436f-bd4f-4b4ed46af52a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A feszültség „meghatározza, hogy mennyi energiát kap az áramkör”",
+   "explanation": "A feszültség az egységnyi töltésre jutó energia (U = W : Q); az „áramkör energiája” pontatlan.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Voltage",
+     "title": "Voltage",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A feszültség (U) az elektromos potenciálkülönbség, amely meghatározza, hogy mennyi energiát kap az áramkör. A legfontosabb egyenáramú áramforrások közé tartozik a galvánelem, a gépkocsi- és mobiltelefon-akkumulátorok, valamint a napelemek. Például a napelemek az energiát a napfényből nyerik, és feszültséget generálnak, amelyet felhasználhatunk különböző eszközök működtetésére.",
+     "type": "text",
+     "heading": "Feszültség és áramforrások",
+     "key_term": "feszültség"
+    },
+    "after": {
+     "body": "A feszültség (U) az elektromos potenciálkülönbség, amely megmutatja, hogy egységnyi töltés mennyi energiát kap vagy ad le. A legfontosabb egyenáramú áramforrások közé tartozik a galvánelem, a gépkocsi- és mobiltelefon-akkumulátorok, valamint a napelemek. Például a napelemek az energiát a napfényből nyerik, és feszültséget generálnak, amelyet felhasználhatunk különböző eszközök működtetésére.",
+     "type": "text",
+     "heading": "Feszültség és áramforrások",
+     "key_term": "feszültség"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-003",
+   "lesson_id": "a13e9da1-5288-4743-b8a8-77fe7fbd2da4",
+   "block_id": "12c4fe07-1303-436f-bd4f-4b4ed46af52a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„az áramerősség (I) és a feszültség (U) arányosak az ellenállással (R)”",
+   "explanation": "Ohm törvénye: a vezetőn átfolyó áram erőssége arányos a rákapcsolt feszültséggel, U = I · R; az ellenállás az arányossági tényező, nem arányos az áramerősséggel és feszültséggel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ohm's_law",
+     "title": "Ohm's law",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Ohm törvénye kimondja, hogy az áramerősség (I) és a feszültség (U) arányosak az ellenállással (R). Ez a törvény lehetővé teszi számunkra, hogy kiszámoljuk az áramkörünk működését. Például, ha ismerjük az áramerősséget és az ellenállást, kiszámíthatjuk a feszültséget. Ezt a törvényt számos gyakorlati alkalmazásban használjuk, például a telefonunk töltésekor.",
+     "type": "text",
+     "heading": "Ohm törvénye",
+     "key_term": "Ohm-törvénye"
+    },
+    "after": {
+     "body": "Ohm törvénye szerint egy fémes vezetőn átfolyó áram erőssége arányos a rákapcsolt feszültséggel: U = I · R, ahol R az ellenállás. Ez a törvény lehetővé teszi számunkra, hogy kiszámoljuk az áramkörünk működését. Például, ha ismerjük az áramerősséget és az ellenállást, kiszámíthatjuk a feszültséget. Ezt a törvényt számos gyakorlati alkalmazásban használjuk, például a telefonunk töltésekor.",
+     "type": "text",
+     "heading": "Ohm törvénye",
+     "key_term": "Ohm-törvénye"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-004",
+   "lesson_id": "a13e9da1-5288-4743-b8a8-77fe7fbd2da4",
+   "block_id": "12c4fe07-1303-436f-bd4f-4b4ed46af52a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a természetes anyagok is képesek elektromosságot termelni”",
+   "explanation": "A gyümölcs vagy zöldség csak elektrolitként működik; az energiát a fém (cink vagy vas) oxidációja adja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lemon_battery",
+     "title": "Lemon battery",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Egy izgalmas kísérlet lehet, ha gyümölcsökből vagy zöldségekből készítünk elektromos telepeket. Például egy citrom és egy réz- és egy vasszeget használva feszültséget generálhatunk. Az így kapott feszültség mérésével megértjük, hogyan működnek az elektromos áramforrások, és hogy a természetes anyagok is képesek elektromosságot termelni.",
+     "type": "text",
+     "heading": "Elektromos telepek készítése",
+     "key_term": "elektromos telepek"
+    },
+    "after": {
+     "body": "Egy izgalmas kísérlet lehet, ha gyümölcsökből vagy zöldségekből készítünk elektromos telepeket. Például egy citrom és egy réz- és egy vasszeget használva feszültséget generálhatunk. Az így kapott feszültség mérésével megértjük, hogyan működnek az elektromos áramforrások, és hogy a citrom savas leve elektrolitként működik, az energiát pedig a fém oxidációja (a cink vagy a vas oldódása) adja.",
+     "type": "text",
+     "heading": "Elektromos telepek készítése",
+     "key_term": "elektromos telepek"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-005",
+   "lesson_id": "d2a6601c-be0d-4ed8-a54f-04e2ce1e0b02",
+   "block_id": "aea70483-ec68-467c-9e86-4039b46e0ba3",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "unverifiable",
+   "severity": "medium",
+   "claim": "„az okostelefonok töltésénél több áramforrás párhuzamosan működik a gyorsabb töltés érdekében”",
+   "explanation": "A telefon töltésekor egyetlen áramforrás (töltő) dolgozik; az állítás forrás nélküli és téves. A lakás fogyasztói viszont párhuzamosan vannak kötve.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Series_and_parallel_circuits",
+     "title": "Series and parallel circuits",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A párhuzamos kapcsolásban az elemek külön utakon csatlakoznak, így ha az egyik elem meghibásodik, a többiek továbbra is működnek. Gondolj csak egy szobára, ahol több lámpa világít. Ha az egyik lámpa kiég, a többi még mindig világít. A párhuzamos kapcsolás előnye, hogy biztosítja a folyamatos működést, például a modern okostelefonok töltésénél is, ahol több áramforrás párhuzamosan működik a gyorsabb töltés érdekében.",
+     "type": "text",
+     "heading": "Párhuzamos kapcsolás: több út a fényhez",
+     "key_term": "párhuzamos kapcsolás"
+    },
+    "after": {
+     "body": "A párhuzamos kapcsolásban az elemek külön utakon csatlakoznak, így ha az egyik elem meghibásodik, a többiek továbbra is működnek. Gondolj csak egy szobára, ahol több lámpa világít. Ha az egyik lámpa kiég, a többi még mindig világít. A párhuzamos kapcsolás előnye, hogy biztosítja a folyamatos működést, például a lakás konnektoraiban, ahol minden fogyasztó ugyanazt a 230 V-os feszültséget kapja.",
+     "type": "text",
+     "heading": "Párhuzamos kapcsolás: több út a fényhez",
+     "key_term": "párhuzamos kapcsolás"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-006",
+   "lesson_id": "d2a6601c-be0d-4ed8-a54f-04e2ce1e0b02",
+   "block_id": "aea70483-ec68-467c-9e86-4039b46e0ba3",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A test ellenállásának mérése „segíti a biztonságos tranzakciót” az érintés nélküli fizetésnél",
+   "explanation": "Az érintés nélküli fizetés nem méri a testünk ellenállását (rádióhullámú kommunikáció a kártya és a terminál között). Az állítás kitalált.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Near-field_communication",
+     "title": "Near-field communication",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az emberi test ellenállása (R) változó, és számos tényezőtől függ, például a bőrfelület nedvességétől és a test hőmérsékletétől. Mérésekor egy ellenállásmérő műszert használhatunk, amely megmutatja, mennyi áram tudna átfolyni rajtunk. Ez fontos lehet például az érintés nélküli bankkártyás fizetés során, ahol a testünk ellenállásának mérése segíti a biztonságos tranzakciót. A testünk ellenállása segít megérteni, hogyan hatnak ránk az elektromos áramok.",
+     "type": "text",
+     "heading": "Az emberi test ellenállása",
+     "key_term": "emberi test ellenállása"
+    },
+    "after": {
+     "body": "Az emberi test ellenállása (R) változó, és számos tényezőtől függ, például a bőrfelület nedvességétől és a test hőmérsékletétől. Mérésekor egy ellenállásmérő műszert használhatunk, amely megmutatja, mennyi áram tudna átfolyni rajtunk. Száraz bőr ellenállása több tízezer ohm is lehet, nedves bőré ennek töredéke, ezért veszélyesebb a vizes kézzel végzett érintés. A testünk ellenállása segít megérteni, hogyan hatnak ránk az elektromos áramok.",
+     "type": "text",
+     "heading": "Az emberi test ellenállása",
+     "key_term": "emberi test ellenállása"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-007",
+   "lesson_id": "b5782dcd-e8b3-4324-aa66-69638c13de92",
+   "block_id": "0194c810-1992-44d5-9e6b-31bce9d5ff89",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A mikrohullámú sütő, vízforraló és indukciós főzőlap „az elektromos áramot hővé alakítják”",
+   "explanation": "A vízforralóban az áram a fűtőszálat melegíti; a mikrohullámú sütő mikrohullámmal, az indukciós főzőlap indukált áramokkal fűt, nem egyszerű áramhő.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Microwave_oven",
+     "title": "Microwave oven",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Induction_cooking",
+     "title": "Induction cooking",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A hőhatáson alapuló háztartási eszközök közé tartozik például a mikrohullámú sütő, a vízforraló és az indukciós főzőlap. Ezek az eszközök az elektromos áramot hővé alakítják, hogy az ételeinket gyorsan és hatékonyan elkészíthessük. Gondoljunk csak bele, mennyire megkönnyíti az életünket egy vízforraló, amely pár perc alatt felforralja a vizet. Az indukciós főzőlap pedig nemcsak gyors, de energiahatékony is, hiszen közvetlenül a fazék alját melegíti.",
+     "type": "text",
+     "heading": "Hőhatáson alapuló háztartási eszközök",
+     "key_term": "hőhatás"
+    },
+    "after": {
+     "body": "A hőhatáson alapuló háztartási eszközök közé tartozik például a mikrohullámú sütő, a vízforraló és az indukciós főzőlap. Ezek az eszközök az elektromos energiát alakítják hővé: a vízforralóban a fűtőszál melegszik, a mikrohullámú sütő mikrohullámokkal melegíti az ételt, az indukciós főzőlap pedig az edényben indukált áramokkal. Gondoljunk csak bele, mennyire megkönnyíti az életünket egy vízforraló, amely pár perc alatt felforralja a vizet. Az indukciós főzőlap pedig nemcsak gyors, de energiahatékony is, hiszen közvetlenül a fazék alját melegíti.",
+     "type": "text",
+     "heading": "Hőhatáson alapuló háztartási eszközök",
+     "key_term": "hőhatás"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-008",
+   "lesson_id": "b5782dcd-e8b3-4324-aa66-69638c13de92",
+   "block_id": "0194c810-1992-44d5-9e6b-31bce9d5ff89",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "A kWh „azt mutatja meg, mennyi áramot használtunk el”",
+   "explanation": "A kWh energiát mér, nem áramot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kilowatt-hour",
+     "title": "Kilowatt-hour",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A villanyszámlán található információk segítenek megérteni, mennyit fogyasztunk. A számlán szereplő kWh (kilowattóra) az elektromos energia mértékegysége, amely azt mutatja meg, mennyi áramot használtunk el. Ha például egy 1000 W teljesítményű eszközt 1 órán át használunk, az 1 kWh-t fogyaszt. Érdemes figyelni a különböző időszakokra vonatkozó díjakat is, mert a csúcsidőszakokban drágább lehet az áram.",
+     "type": "text",
+     "heading": "A villanyszámla értelmezése",
+     "key_term": "villanyszámla"
+    },
+    "after": {
+     "body": "A villanyszámlán található információk segítenek megérteni, mennyit fogyasztunk. A számlán szereplő kWh (kilowattóra) az elektromos energia mértékegysége, amely azt mutatja meg, mennyi energiát használtunk fel. Ha például egy 1000 W teljesítményű eszközt 1 órán át használunk, az 1 kWh-t fogyaszt. Érdemes figyelni a különböző időszakokra vonatkozó díjakat is, mert a csúcsidőszakokban drágább lehet az áram.",
+     "type": "text",
+     "heading": "A villanyszámla értelmezése",
+     "key_term": "villanyszámla"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-009",
+   "lesson_id": "b5782dcd-e8b3-4324-aa66-69638c13de92",
+   "block_id": "0194c810-1992-44d5-9e6b-31bce9d5ff89",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A címkén szereplő 5 W alapján a töltési ciklus energiája kiszámolható",
+   "explanation": "A címkén a névleges teljesítmény áll; a tényleges fogyasztás töltés közben változik, ezért fogyasztásmérővel érdemes mérni.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "névleges és tényleges teljesítmény",
+   "fix": {
+    "before": {
+     "body": "Egy kiválasztott háztartási eszköz, például egy vezeték nélküli telefontöltő teljesítményének meghatározása izgalmas feladat. Először is, nézd meg az eszközön található címkét, ahol általában feltüntetik a teljesítményt, például 5 W. Ezt követően mérj meg egy töltési ciklust, és figyeld meg, mennyi idő alatt tölti fel a telefont. Így kiszámolhatod, hogy mennyi energiát fogyasztott a töltés során.",
+     "type": "text",
+     "heading": "Fogyasztó teljesítményének meghatározása",
+     "key_term": "fogyasztó teljesítménye"
+    },
+    "after": {
+     "body": "Egy kiválasztott háztartási eszköz, például egy vezeték nélküli telefontöltő teljesítményének meghatározása izgalmas feladat. Először is, nézd meg az eszközön található címkét, ahol általában feltüntetik a teljesítményt, például 5 W. Ezt követően mérj meg egy töltési ciklust, és figyeld meg, mennyi idő alatt tölti fel a telefont. A tényleges fogyasztást pontosabban egy konnektorba dugható fogyasztásmérővel mérheted meg, mert a töltő teljesítménye töltés közben változik.",
+     "type": "text",
+     "heading": "Fogyasztó teljesítményének meghatározása",
+     "key_term": "fogyasztó teljesítménye"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-010",
+   "lesson_id": "de2f4359-6dda-473e-b7e9-a54abe93541e",
+   "block_id": "94dca059-7b56-4811-9f3b-eaa1f09aead2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az EKG és az EEG „az emberi idegvezetést mérik”",
+   "explanation": "Az EKG a szív, az EEG az agy elektromos aktivitását méri; az idegvezetés vizsgálata más eljárás (ENG/EMG).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electrocardiography",
+     "title": "Electrocardiography",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Electroencephalography",
+     "title": "Electroencephalography",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az EKG (elektrokardiográfia) és az EEG (elektroenkefalográfia) olyan orvosi diagnosztikai eszközök, amelyek az emberi idegvezetést mérik. Az EKG segítségével a szív elektromos aktivitását figyelik, míg az EEG az agyi tevékenységet rögzíti. Ezek az eszközök segítenek az orvosoknak diagnosztizálni a szív- és idegrendszeri problémákat. Például, ha valakinek szívritmuszavara van, az EKG segíthet kideríteni az okát.",
+     "type": "text",
+     "heading": "Az EKG és EEG diagnosztikai alkalmazások",
+     "key_term": "EKG, EEG"
+    },
+    "after": {
+     "body": "Az EKG (elektrokardiográfia) és az EEG (elektroenkefalográfia) olyan orvosi diagnosztikai eljárások, amelyek a szívből, illetve az agyból származó gyenge elektromos jeleket mérik. Az EKG segítségével a szív elektromos aktivitását figyelik, míg az EEG az agyi tevékenységet rögzíti. Ezek az eszközök segítenek az orvosoknak diagnosztizálni a szív- és idegrendszeri problémákat. Például, ha valakinek szívritmuszavara van, az EKG segíthet kideríteni az okát.",
+     "type": "text",
+     "heading": "Az EKG és EEG diagnosztikai alkalmazások",
+     "key_term": "EKG, EEG"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-011",
+   "lesson_id": "a13e9da1-5288-4743-b8a8-77fe7fbd2da4",
+   "block_id": "9cf47a23-ede9-4408-b8be-8a7dec243ca5",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mi Ohm törvénye?” – A) I = U/R, C) R = U/I és D) U = I · R (kulcs) is helyes",
+   "explanation": "Az Ohm-törvény három egyenértékű alakja mind helyes, így három válasz igaz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ohm's_law",
+     "title": "Ohm's law",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) I = U/R",
+      "B) U = I/R",
+      "C) R = U/I",
+      "D) U = I * R"
+     ],
+     "question": "Mi Ohm törvénye?",
+     "explanation": "Ohm törvénye kimondja, hogy a feszültség (U) egyenlő az áramerősség (I) és az ellenállás (R) szorzataként.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) I = R : U",
+      "B) U = I/R",
+      "C) R = U · I",
+      "D) U = I * R"
+     ],
+     "question": "Mi Ohm törvénye?",
+     "explanation": "Ohm törvénye kimondja, hogy a feszültség (U) egyenlő az áramerősség (I) és az ellenállás (R) szorzataként.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-012",
+   "lesson_id": "d2a6601c-be0d-4ed8-a54f-04e2ce1e0b02",
+   "block_id": "3300de1c-c4ba-497a-9113-234ea923b820",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Milyen kapcsolat van az ellenállás és a hőmérséklet között egy termisztor esetében?” – csökken",
+   "explanation": "Az NTC-termisztorra igaz, hogy az ellenállása a hőmérséklet emelkedésével csökken; PTC-termisztorra nem.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Thermistor",
+     "title": "Thermistor",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az ellenállás nő a hőmérséklet emelkedésével.",
+      "B) Az ellenállás csökken a hőmérséklet emelkedésével.",
+      "C) Az ellenállás független a hőmérséklettől.",
+      "D) Az ellenállás állandó értékű."
+     ],
+     "question": "Milyen kapcsolat van az ellenállás (R) és a hőmérséklet (T) között egy termisztor esetében?",
+     "explanation": "A termisztorok esetében az ellenállás csökken a hőmérséklet emelkedésével, ami jellemző a negatív hőmérsékleti együtthatójú anyagokra.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az ellenállás nő a hőmérséklet emelkedésével.",
+      "B) Az ellenállás csökken a hőmérséklet emelkedésével.",
+      "C) Az ellenállás független a hőmérséklettől.",
+      "D) Az ellenállás állandó értékű."
+     ],
+     "question": "Milyen kapcsolat van az ellenállás és a hőmérséklet között egy NTC-termisztor esetében?",
+     "explanation": "A termisztorok esetében az ellenállás csökken a hőmérséklet emelkedésével, ami jellemző a negatív hőmérsékleti együtthatójú anyagokra.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-013",
+   "lesson_id": "d2a6601c-be0d-4ed8-a54f-04e2ce1e0b02",
+   "block_id": "3300de1c-c4ba-497a-9113-234ea923b820",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik állítás igaz a párhuzamos kapcsolásra?” – A) az áram oszlik meg (kulcs), C) az összes elemen a forrásfeszültség is igaz",
+   "explanation": "Párhuzamos kapcsolásban az áram oszlik meg és a feszültség azonos, így A) és C) egyaránt igaz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Series_and_parallel_circuits",
+     "title": "Series and parallel circuits",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az áramerősség oszlik meg a párhuzamosan kapcsolt elemek között.",
+      "B) Az összes elemnek ugyanakkora az áramerőssége.",
+      "C) Az összes elem feszültsége megegyezik a forrás feszültségével.",
+      "D) A párhuzamos kapcsolás nem használható fényforrások esetén."
+     ],
+     "question": "Melyik állítás igaz a párhuzamos kapcsolásra?",
+     "explanation": "A párhuzamos kapcsolásban az áramerősség oszlik meg a párhuzamosan kapcsolt elemek között, míg a feszültség minden elemre megegyezik.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az áramerősség oszlik meg a párhuzamosan kapcsolt elemek között.",
+      "B) Az összes elemnek ugyanakkora az áramerőssége.",
+      "C) A feszültség oszlik meg az elemek között.",
+      "D) A párhuzamos kapcsolás nem használható fényforrások esetén."
+     ],
+     "question": "Melyik állítás igaz a párhuzamos kapcsolásra?",
+     "explanation": "A párhuzamos kapcsolásban az áramerősség oszlik meg a párhuzamosan kapcsolt elemek között, míg a feszültség minden elemre megegyezik.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-014",
+   "lesson_id": "d2a6601c-be0d-4ed8-a54f-04e2ce1e0b02",
+   "block_id": "3300de1c-c4ba-497a-9113-234ea923b820",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik tényező NEM befolyásolja az emberi test ellenállását?” – C) a test magassága",
+   "explanation": "A test ellenállását az áram útja (hossza), a bőr állapota és a nedvesség határozza meg; a magasság (az áram útja miatt) nem tekinthető biztosan irrelevánsnak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electrical_injury",
+     "title": "Electrical injury",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A bőr állapota",
+      "B) A test hőmérséklete",
+      "C) A test magassága",
+      "D) A bőr nedvessége"
+     ],
+     "question": "Melyik tényező NEM befolyásolja az emberi test ellenállását?",
+     "explanation": "A test magassága nem befolyásolja az emberi test ellenállását, míg a bőr állapota, hőmérséklete és nedvessége igen.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A bőr állapota",
+      "B) A test hőmérséklete",
+      "C) A ruha színe.",
+      "D) A bőr nedvessége"
+     ],
+     "question": "Melyik tényező NEM befolyásolja az emberi test ellenállását?",
+     "explanation": "A ruha színe nem befolyásolja az emberi test ellenállását, míg a bőr állapota, nedvessége és az áram útja igen.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-015",
+   "lesson_id": "b5782dcd-e8b3-4324-aa66-69638c13de92",
+   "block_id": "e70642d6-f164-48a7-b0ed-a5d7fc9970c3",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik eszköz fogyasztása a legnagyobb hőhatással jár?” – A) mikrohullámú sütő (D) kávéfőző is lehet",
+   "explanation": "A fogyasztás a modelltől függ (kávéfőző és mikró teljesítménye hasonló); a „hőhatással jár” megfogalmazás nem egyértelmű, a kulcs nem indokolható.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "háztartási eszközök teljesítménye"
+  },
+  {
+   "id": "PHYS-910-09-016",
+   "lesson_id": "de2f4359-6dda-473e-b7e9-a54abe93541e",
+   "block_id": "e392e016-9bc1-41ba-95a8-bdf734365386",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A biztosíték „megakadályozza a túláramot”",
+   "explanation": "A biztosíték nem akadályozza meg, hanem megszakítja az áramkört túláram esetén.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fuse_(electrical)",
+     "title": "Fuse (electrical)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Megakadályozza a túláramot, ezzel védve a berendezéseket.",
+      "B) Szabályozza az áramkör feszültségét.",
+      "C) Csökkenti az áramfogyasztást.",
+      "D) Növeli az áramkör teljesítményét."
+     ],
+     "question": "Mi a biztosíték feladata a lakás villamos hálózatában?",
+     "explanation": "A biztosíték feladata, hogy megakadályozza a túláramot, ezzel védve a villamos berendezéseket és az elektromos hálózatot.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Megszakítja az áramkört túláram esetén, ezzel védve a berendezéseket.",
+      "B) Szabályozza az áramkör feszültségét.",
+      "C) Csökkenti az áramfogyasztást.",
+      "D) Növeli az áramkör teljesítményét."
+     ],
+     "question": "Mi a biztosíték feladata a lakás villamos hálózatában?",
+     "explanation": "A biztosíték feladata, hogy túláram esetén megszakítsa az áramkört, ezzel védve a villamos berendezéseket és a hálózatot.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-017",
+   "lesson_id": null,
+   "block_id": "0132e595-8301-40fd-adc0-bc2c3df80033",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Mi az elektromos áram (elektromos áram) fogalma?”",
+   "explanation": "A zárójelben ismétlődik a kifejezés (a fordítási minta maradványa).",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "szerkesztési hiba",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az elektronok mozgása egy vezetőben.",
+      "B) A feszültség mértéke.",
+      "C) Az ellenállás mértéke.",
+      "D) A háztartási áramfogyasztás összegzése."
+     ],
+     "question": "Mi az elektromos áram (elektromos áram) fogalma?",
+     "explanation": "Az elektromos áram az elektronok mozgása egy vezetőben, amely lehetővé teszi az elektromos energia átvitelét.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az elektronok mozgása egy vezetőben.",
+      "B) A feszültség mértéke.",
+      "C) Az ellenállás mértéke.",
+      "D) A háztartási áramfogyasztás összegzése."
+     ],
+     "question": "Mi az elektromos áram fogalma?",
+     "explanation": "Az elektromos áram az elektronok mozgása egy vezetőben, amely lehetővé teszi az elektromos energia átvitelét.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-018",
+   "lesson_id": null,
+   "block_id": "0132e595-8301-40fd-adc0-bc2c3df80033",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Milyen mértékegységben mérjük az áramerősséget (áramerősség)?”",
+   "explanation": "A zárójelben ismétlődik a kifejezés (a fordítási minta maradványa).",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "szerkesztési hiba",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Volt (V)",
+      "B) Amper (A)",
+      "C) Ohm (Ω)",
+      "D) Joule (J)"
+     ],
+     "question": "Milyen mértékegységben mérjük az áramerősséget (áramerősség)?",
+     "explanation": "Az áramerősséget amper (A) mértékegységben mérjük, amely a vezetőn áthaladó elektromos töltés áramlását jelzi.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Volt (V)",
+      "B) Amper (A)",
+      "C) Ohm (Ω)",
+      "D) Joule (J)"
+     ],
+     "question": "Milyen mértékegységben mérjük az áramerősséget?",
+     "explanation": "Az áramerősséget amper (A) mértékegységben mérjük, amely a vezetőn áthaladó elektromos töltés áramlását jelzi.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-019",
+   "lesson_id": null,
+   "block_id": "0132e595-8301-40fd-adc0-bc2c3df80033",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Milyen hatással van az ellenállás (ellenállás) a hőmérséklet változására?”",
+   "explanation": "A zárójelben ismétlődik a kifejezés (a fordítási minta maradványa).",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "szerkesztési hiba",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csökken, ha a hőmérséklet nő.",
+      "B) Növekszik, ha a hőmérséklet nő.",
+      "C) Nem változik.",
+      "D) Csak párhuzamos kapcsolás esetén változik."
+     ],
+     "question": "Milyen hatással van az ellenállás (ellenállás) a hőmérséklet változására?",
+     "explanation": "Az ellenállás általában növekszik, ha a hőmérséklet nő, ami a legtöbb fém esetében megfigyelhető.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csökken, ha a hőmérséklet nő.",
+      "B) Növekszik, ha a hőmérséklet nő.",
+      "C) Nem változik.",
+      "D) Csak párhuzamos kapcsolás esetén változik."
+     ],
+     "question": "Milyen hatással van az ellenállás a hőmérséklet változására?",
+     "explanation": "Az ellenállás általában növekszik, ha a hőmérséklet nő, ami a legtöbb fém esetében megfigyelhető.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-020",
+   "lesson_id": null,
+   "block_id": "0132e595-8301-40fd-adc0-bc2c3df80033",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 5,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Melyik a soros kapcsolás (soros kapcsolás) jellemzője?”",
+   "explanation": "A zárójelben ismétlődik a kifejezés (a fordítási minta maradványa).",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "szerkesztési hiba",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az áramerősség azonos minden elemnél.",
+      "B) A feszültség oszlik meg az elemek között.",
+      "C) Az ellenállás csökken.",
+      "D) Az elemek párhuzamosan kapcsolódnak."
+     ],
+     "question": "Melyik a soros kapcsolás (soros kapcsolás) jellemzője?",
+     "explanation": "Soros kapcsolás esetén az áramerősség azonos minden elemnél, míg a feszültség oszlik meg.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az áramerősség azonos minden elemnél.",
+      "B) A feszültség oszlik meg az elemek között.",
+      "C) Az ellenállás csökken.",
+      "D) Az elemek párhuzamosan kapcsolódnak."
+     ],
+     "question": "Melyik a soros kapcsolás jellemzője?",
+     "explanation": "Soros kapcsolás esetén az áramerősség azonos minden elemnél, míg a feszültség oszlik meg.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-021",
+   "lesson_id": null,
+   "block_id": "0132e595-8301-40fd-adc0-bc2c3df80033",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Milyen szerepet játszik a biztosíték (biztosíték) a lakás villamos hálózatában?”",
+   "explanation": "A zárójelben ismétlődik a kifejezés (a fordítási minta maradványa).",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "szerkesztési hiba",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Megakadályozza a túlfeszültséget.",
+      "B) Védi az áramkört a túlterheléstől.",
+      "C) Fokozza az áramfogyasztást.",
+      "D) Csökkenti a feszültséget."
+     ],
+     "question": "Milyen szerepet játszik a biztosíték (biztosíték) a lakás villamos hálózatában?",
+     "explanation": "A biztosíték védelmet nyújt az áramkör túlterhelése ellen, így megakadályozza a károsodást.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Megakadályozza a túlfeszültséget.",
+      "B) Védi az áramkört a túlterheléstől.",
+      "C) Fokozza az áramfogyasztást.",
+      "D) Csökkenti a feszültséget."
+     ],
+     "question": "Milyen szerepet játszik a biztosíték a lakás villamos hálózatában?",
+     "explanation": "A biztosíték védelmet nyújt az áramkör túlterhelése ellen, így megakadályozza a károsodást.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-022",
+   "lesson_id": null,
+   "block_id": "0132e595-8301-40fd-adc0-bc2c3df80033",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Melyik berendezés segít megakadályozni az áramütést (áramütés)?”",
+   "explanation": "A zárójelben ismétlődik a kifejezés (a fordítási minta maradványa).",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "szerkesztési hiba",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Földvezeték",
+      "B) Akkumulátor",
+      "C) Villanyóra",
+      "D) Feszültségmérő"
+     ],
+     "question": "Melyik berendezés segít megakadályozni az áramütést (áramütés)?",
+     "explanation": "A földvezeték segít megakadályozni az áramütést azáltal, hogy a felesleges áramot a földbe vezeti.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Földvezeték",
+      "B) Akkumulátor",
+      "C) Villanyóra",
+      "D) Feszültségmérő"
+     ],
+     "question": "Melyik berendezés segít megakadályozni az áramütést?",
+     "explanation": "A földvezeték segít megakadályozni az áramütést azáltal, hogy a felesleges áramot a földbe vezeti.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-023",
+   "lesson_id": "a13e9da1-5288-4743-b8a8-77fe7fbd2da4",
+   "block_id": "bb84ca69-3442-4ea1-b1de-51fe26d9b550",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Az elektromos áram felfedezése szorosan összefonódik Alessandro Volta nevével”; a citromelem egyetlen citrommal világít LED-et",
+   "explanation": "Volta 1800-ban az első elektromos elemet (Volta-oszlop) készítette el, nem az áramot fedezte fel. Egyetlen citrom kb. 1 V-os, ez egy LED-hez nem elég; több sorba kötött citrom kell.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Alessandro_Volta",
+     "title": "Alessandro Volta",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Voltaic_pile",
+     "title": "Voltaic pile",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A gyümölcsök és zöldségek elektromos áramkörökhöz való használata ma is népszerű kísérlet iskolákban, ahol a diákok megtapasztalhatják az elektromosság alapjait, miközben szórakoztató módon kísérleteznek a különböző anyagokkal.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 60,
+        "w": 20,
+        "x": 50,
+        "y": 100,
+        "type": "battery"
+       },
+       {
+        "r": 30,
+        "x": 150,
+        "y": 100,
+        "type": "circle"
+       },
+       {
+        "r": 30,
+        "x": 250,
+        "y": 100,
+        "type": "circle"
+       },
+       {
+        "x": 150,
+        "y": 80,
+        "text": "Gyümölcs",
+        "type": "label"
+       },
+       {
+        "x": 250,
+        "y": 80,
+        "text": "Zöldség",
+        "type": "label"
+       },
+       {
+        "x1": 70,
+        "x2": 150,
+        "y1": 130,
+        "y2": 130,
+        "type": "line",
+        "dashed": true
+       },
+       {
+        "x1": 150,
+        "x2": 250,
+        "y1": 130,
+        "y2": 130,
+        "type": "line",
+        "dashed": true
+       },
+       {
+        "x1": 70,
+        "x2": 70,
+        "y1": 130,
+        "y2": 100,
+        "type": "line",
+        "dashed": true
+       },
+       {
+        "x1": 250,
+        "x2": 250,
+        "y1": 130,
+        "y2": 100,
+        "type": "line",
+        "dashed": true
+       },
+       {
+        "x": 90,
+        "y": 150,
+        "text": "I",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Gyümölcsök és zöldségek elektromos áramkörökben",
+     "discovery": "Az elektromos áram felfedezése szorosan összefonódik Alessandro Volta nevével, aki 1800-ban készítette el az első elektromos elemet, a Volta-oszlopot, amely fémek és savas oldatok kombinációjával működött. E felfedezés nyomán sokan kísérleteztek különböző anyagokkal, hogy megértsék az elektromosság működését.",
+     "try_basic": "Készíts egy egyszerű áramkört egy citromból, réz- és cinkérméből. Csatlakoztasd az érme két végét egy LED-hez, és figyeld meg, hogy világít-e!",
+     "try_advanced": "Próbáld ki különböző gyümölcsök és zöldségek feszültségét, és hasonlítsd össze az eredményeket. Mérd meg a feszültséget egy multiméter segítségével, és készítsd el a méréseid grafikonját."
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A gyümölcsök és zöldségek elektromos áramkörökhöz való használata ma is népszerű kísérlet iskolákban, ahol a diákok megtapasztalhatják az elektromosság alapjait, miközben szórakoztató módon kísérleteznek a különböző anyagokkal.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 60,
+        "w": 20,
+        "x": 50,
+        "y": 100,
+        "type": "battery"
+       },
+       {
+        "r": 30,
+        "x": 150,
+        "y": 100,
+        "type": "circle"
+       },
+       {
+        "r": 30,
+        "x": 250,
+        "y": 100,
+        "type": "circle"
+       },
+       {
+        "x": 150,
+        "y": 80,
+        "text": "Gyümölcs",
+        "type": "label"
+       },
+       {
+        "x": 250,
+        "y": 80,
+        "text": "Zöldség",
+        "type": "label"
+       },
+       {
+        "x1": 70,
+        "x2": 150,
+        "y1": 130,
+        "y2": 130,
+        "type": "line",
+        "dashed": true
+       },
+       {
+        "x1": 150,
+        "x2": 250,
+        "y1": 130,
+        "y2": 130,
+        "type": "line",
+        "dashed": true
+       },
+       {
+        "x1": 70,
+        "x2": 70,
+        "y1": 130,
+        "y2": 100,
+        "type": "line",
+        "dashed": true
+       },
+       {
+        "x1": 250,
+        "x2": 250,
+        "y1": 130,
+        "y2": 100,
+        "type": "line",
+        "dashed": true
+       },
+       {
+        "x": 90,
+        "y": 150,
+        "text": "I",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Gyümölcsök és zöldségek elektromos áramkörökben",
+     "discovery": "Alessandro Volta 1800-ban készítette el az első elektromos elemet, a Volta-oszlopot, amely fémek és savas oldatok kombinációjával működött. E felfedezés nyomán sokan kísérleteztek különböző anyagokkal, hogy megértsék az elektromosság működését.",
+     "try_basic": "Szúrj egy rézérmét és egy cinkezett szöget egy citromba, és mérd meg a feszültségüket multiméterrel (kb. 0,9 V). Egy LED világításához több, sorba kötött citrom kell (kb. 3–4 db).",
+     "try_advanced": "Próbáld ki különböző gyümölcsök és zöldségek feszültségét, és hasonlítsd össze az eredményeket. Mérd meg a feszültséget egy multiméter segítségével, és készítsd el a méréseid grafikonját."
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-09-024",
+   "lesson_id": "d2a6601c-be0d-4ed8-a54f-04e2ce1e0b02",
+   "block_id": "75823fba-3ddf-4d1b-b420-b4a2cd03832d",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Thomas Edison fejlesztette ki az első praktikus izzólámpát 1879-ben”",
+   "explanation": "Edison 1879-ben gyakorlatilag használható szénszálas izzólámpát mutatott be, de Joseph Swan hasonló lámpát fejlesztett ugyanebben az időben; „az első” túlzás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb",
+     "title": "Incandescent light bulb",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Joseph_Swan",
+     "title": "Joseph Swan",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A fényforrások, mint például LED-lámpák és izzók, mindennapi életünkben elengedhetetlenek. A mobiltelefonos applikációk segítségével könnyen mérhetjük a fényerőt, ami segíthet a megfelelő világítás kiválasztásában.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 20,
+        "w": 40,
+        "x": 50,
+        "y": 100,
+        "type": "battery"
+       },
+       {
+        "x": 60,
+        "y": 85,
+        "text": "V",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Fényforrások teljesítményének vizsgálata",
+     "discovery": "A 19. században Thomas Edison fejlesztette ki az első praktikus izzólámpát 1879-ben, amely forradalmasította a világítást. Edison célja az volt, hogy olyan fényforrást hozzon létre, amely gazdaságosan és hosszú ideig működik. Az izzólámpa teljesítményének és fényerejének mérése segít megérteni ennek a találmánynak a működését és hatékonyságát.",
+     "try_basic": "Mérjünk meg egy egyszerű áramkört egy elemmel és egy izzóval, majd használjunk multimétert a feszültség és áramerősség mérésére, hogy kiszámoljuk az izzó teljesítményét (P = U × I).",
+     "try_advanced": "Készítsünk egy bonyolultabb áramkört, amelyben több fényforrást is összehasonlítunk, és mérjük a teljesítményüket különböző feszültségeken."
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A fényforrások, mint például LED-lámpák és izzók, mindennapi életünkben elengedhetetlenek. A mobiltelefonos applikációk segítségével könnyen mérhetjük a fényerőt, ami segíthet a megfelelő világítás kiválasztásában.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 20,
+        "w": 40,
+        "x": 50,
+        "y": 100,
+        "type": "battery"
+       },
+       {
+        "x": 60,
+        "y": 85,
+        "text": "V",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Fényforrások teljesítményének vizsgálata",
+     "discovery": "A 19. században Thomas Edison 1879-ben olyan szénszálas izzólámpát mutatott be, amely már sokáig égett és gyakorlatban használható volt (ugyanebben az időben Joseph Swan angol feltaláló is hasonló lámpát fejlesztett). Ez forradalmasította a világítást. Edison célja az volt, hogy olyan fényforrást hozzon létre, amely gazdaságosan és hosszú ideig működik. Az izzólámpa teljesítményének és fényerejének mérése segít megérteni ennek a találmánynak a működését és hatékonyságát.",
+     "try_basic": "Mérjünk meg egy egyszerű áramkört egy elemmel és egy izzóval, majd használjunk multimétert a feszültség és áramerősség mérésére, hogy kiszámoljuk az izzó teljesítményét (P = U × I).",
+     "try_advanced": "Készítsünk egy bonyolultabb áramkört, amelyben több fényforrást is összehasonlítunk, és mérjük a teljesítményüket különböző feszültségeken."
+    }
+   }
+  }
+ ]
+}
