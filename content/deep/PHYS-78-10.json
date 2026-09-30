@@ -1,0 +1,292 @@
+{
+ "nat_id": "PHYS-78-10",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "eb2703bc-ff30-41c7-bf4d-6363e011abab",
+   "title_hu": "A Nap és a Föld-Hold rendszer",
+   "text_block_id": "86a4e61b-7392-4209-86ca-b7e8150e5e5b",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "A Naprendszer 99,8%-a",
+     "body": "A Nap nem a mérete, hanem a tömege miatt van a Naprendszer középpontjában: a Naprendszer teljes tömegének kb. 99,8%-a a Napban van. Ez a hatalmas tömeg tartja pályán a bolygókat a gravitációjával. A Nap térfogatába kb. 1,3 millió Föld férne bele. A felszíne kb. 5 500 °C-os, a legkülső, ritka légköre, a korona viszont több millió fokos, és a tudósok ma is kutatják, miért.",
+     "did_you_know": "A Nap koronája több millió fokos, sokkal forróbb, mint a Nap látható felszíne; ennek pontos oka ma is kutatási téma.",
+     "think": "Miért a Nap körül keringenek a bolygók, és nem fordítva?",
+     "think_answer": "Mert a Nap tömege sokkal nagyobb, mint az összes bolygóé együtt. A gravitációs vonzás a tömegtől függ, így a Nap tartja pályán a bolygókat."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Négymillió tonna másodpercenként",
+     "body": "A Nap magjában a hidrogén héliummá egyesül, és közben egy kevés tömeg energiává alakul. A Nap így másodpercenként kb. 4 millió tonna tömeget alakít át energiává. Ez óriásinak hangzik, de a Nap tömegéhez képest olyan kevés, hogy még több milliárd évig elég lesz. A magban keletkező energia nagyon lassan jut ki: a sűrű belsejében a fény sokszor elnyelődik és újra kisugárzódik, így a felszínig akár több tízezer év is eltelik.",
+     "did_you_know": "A Nap magjában keletkező energia a sűrű belső rétegeken át több tízezer év alatt jut ki a felszínre, onnan viszont 8 perc alatt ideér.",
+     "think": "Ha a Nap másodpercenként 4 millió tonna tömeget veszít, miért nem fogy el gyorsan?",
+     "think_answer": "Mert a Nap tömege óriási, ehhez képest ez a veszteség elenyésző. Még több milliárd évig süthet így."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A Föld januárban van a legközelebb",
+     "body": "Sokan gondolják, hogy nyáron azért meleg van, mert a Föld közelebb van a Naphoz, pedig éppen fordítva: a Föld január elején van a legközelebb a Naphoz. Az évszakokat a Föld tengelyének kb. 23,5 fokos dőlése okozza. Nyáron az északi félteke a Nap felé dől, ezért a napfény meredekebben érkezik, és hosszabbak a nappalok. Ha a távolság okozná az évszakokat, a két féltekén egyszerre lenne nyár.",
+     "did_you_know": "A Föld minden évben január elején van a legközelebb a Naphoz, amikor nálunk tél van.",
+     "think": "Hogyan bizonyítja az ausztráliai karácsony, hogy az évszakokat nem a Nap távolsága okozza?",
+     "think_answer": "Ausztráliában karácsonykor nyár van, nálunk tél, pedig a Föld ugyanakkora távolságra van a Naptól. Ha a távolság számítana, egyszerre lenne mindenhol nyár vagy tél."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Soha ne nézz távcsővel a Napba!",
+     "body": "A Hold 27,3 nap alatt kerül meg egyszer a Földet a csillagokhoz képest, de a holdfázisok ciklusa 29,5 napig tart, mert közben a Föld is továbbhalad a Nap körül. A Hold mindig ugyanazt az oldalát fordítja felénk, mert ugyanannyi idő alatt fordul meg a tengelye körül, mint amennyi idő alatt megkerüli a Földet. Fontos figyelmeztetés: napfogyatkozást soha nem szabad távcsővel, látcsővel vagy szabad szemmel nézni, csak speciális napszűrővel, mert a Nap fénye pillanatok alatt maradandóan károsíthatja a szemet.",
+     "did_you_know": "A Hold évente kb. 3,8 cm-rel távolodik a Földtől; ezt a Holdon hagyott fényvisszaverőkről visszaverődő lézerfénnyel mérik.",
+     "think": "Miért hosszabb a holdfázisok ciklusa (29,5 nap), mint a Hold keringési ideje (27,3 nap)?",
+     "think_answer": "Mert amíg a Hold megkerüli a Földet, a Föld is továbbhalad a Nap körül. A Holdnak ezért még kb. két napig haladnia kell, hogy újra ugyanúgy álljon a Naphoz képest."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Ellipszis és változó sebesség",
+     "body": "Már az ókori görög Arisztarkhosz felvetette, hogy a Föld kering a Nap körül, de ezt kétezer évig nem fogadták el. Kopernikusz 1543-ban megjelent könyve újra ezt állította, de ő még körpályákat feltételezett. Kepler Tycho Brahe pontos megfigyeléseit elemezve rájött, hogy a bolygók ellipszis alakú pályán keringenek, és a Naphoz közelebb gyorsabban haladnak. Ezek a törvények később Newton gravitációs elméletének is alapjául szolgáltak.",
+     "did_you_know": "Arisztarkhosz görög csillagász már Kr. e. a 3. században azt állította, hogy a Föld kering a Nap körül.",
+     "think": "Miért fogadták el olyan nehezen, hogy a Föld mozog?",
+     "think_answer": "Mert nem érezzük a mozgását, és a mindennapi tapasztalat szerint a Nap járja be az eget. Emellett ez az elképzelés ellentmondott az akkor elfogadott világképnek."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Dagad vagy csökken?",
+     "body": "Az árapályt nem a holdfázisok, hanem a Hold és kisebb mértékben a Nap gravitációja okozza. Újholdkor és teliholdkor a Nap és a Hold egy vonalban van, hatásuk összeadódik, ezért ilyenkor a legnagyobb a dagály. Első és utolsó negyedkor gyengébb az árapály. A növekvő Hold alakja nálunk a D betűre hasonlít, a fogyóé a C-re, a mondás szerint: D, mint dagad, C, mint csökken.",
+     "did_you_know": "A mondás szerint a Hold „hazudik”: amikor C alakú, akkor fogy (csökken), amikor D alakú, akkor növekszik (dagad).",
+     "think": "Miért van a tengerparton naponta kétszer dagály?",
+     "think_answer": "Mert a Hold vonzása két „dudort” hoz létre az óceánokban: egyet a Hold felőli, egyet az ellentétes oldalon. A Föld egy nap alatt mindkettőn áthalad."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Egy keskeny sáv",
+     "body": "Teljes napfogyatkozást egyszerre csak egy keskeny, legfeljebb néhány száz kilométer széles sávból lehet látni, mert a Hold árnyéka kicsi a Földhöz képest. A teljes szakasz egy helyen legfeljebb kb. 7 és fél percig tart. Egy adott helyen átlagosan csak néhány száz évente van teljes napfogyatkozás. Holdfogyatkozást viszont a Föld egész éjszakai oldaláról egyszerre lehet látni, mert a Hold egésze a Föld árnyékába kerül.",
+     "did_you_know": "Magyarországról legutóbb 1999. augusztus 11-én lehetett teljes napfogyatkozást látni.",
+     "think": "Miért látnak egy holdfogyatkozást sokkal többen, mint egy teljes napfogyatkozást?",
+     "think_answer": "A holdfogyatkozás a Föld teljes éjszakai oldaláról látszik, mert maga a Hold sötétedik el. A teljes napfogyatkozás csak ott látszik, ahová a Hold kicsi árnyéka esik."
+    }
+   ]
+  },
+  {
+   "lesson_id": "0c539871-eb11-4393-b50e-f39c777ca5bd",
+   "title_hu": "Égi jelenségek megfigyelése",
+   "text_block_id": "c40c3991-6402-4218-b2c0-c792772aaa9c",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Merre mutat az árnyék?",
+     "body": "Az árnyék mindig a Nappal ellentétes irányba mutat. Reggel a Nap keleten van, ezért a bot árnyéka nyugat felé mutat; este a Nap nyugaton van, az árnyék kelet felé. Délben a Nap Magyarországról nézve délen jár a legmagasabban, ezért az árnyék a legrövidebb, és észak felé mutat. Az égtájakat így is megtalálhatod: jelöld meg az árnyék végét, várj 15-20 percet, és jelöld meg újra; a két pontot összekötő vonal nagyjából nyugat–kelet irányú.",
+     "did_you_know": "Magyarországról nézve délben a Nap délen jár a legmagasabban, így ekkor minden árnyék észak felé mutat.",
+     "think": "Merre mutat délben egy bot árnyéka Magyarországon?",
+     "think_answer": "Észak felé, mert délben a Nap délen van, és az árnyék mindig a Nappal ellentétes irányba mutat."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Tengerek víz nélkül",
+     "body": "A Holdon szabad szemmel is látható sötét foltok, a „tengerek” valójában nem vizet tartalmaznak: ősi lávával elöntött, sima síkságok. A kráterek meteoritok becsapódásai nyomán keletkeztek, és azért maradtak meg milliárd évekig, mert a Holdnak nincs légköre, nincs rajta eső, szél és erózió. A Hold enyhe billegése miatt idővel a felszínének kb. 59%-át láthatjuk a Földről. A dagály nem a Hold felszínétől, hanem a gravitációjától függ.",
+     "did_you_know": "A Hold kissé billeg a pályáján, ezért idővel a felszínének kb. 59%-át láthatjuk, nem csak a felét.",
+     "think": "Miért maradtak fenn a Hold kráterei milliárd éveken át, míg a Földön alig látszanak?",
+     "think_answer": "A Holdnak nincs légköre és vize, így nincs eső, szél és erózió, amely eltüntetné a krátereket. A Földön ezek, valamint a növényzet és a kőzetlemezek mozgása idővel eltüntetik a nyomokat."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Hegyek árnyéka a Holdon",
+     "body": "Galilei 1609-ben kezdte távcsövével figyelni a Holdat. A világos és sötét rész határán hosszú árnyékokat és fénylő csúcsokat látott, és ebből arra következtetett, hogy a Holdon hegyek vannak; az árnyékok hosszából a magasságukat is megbecsülte. A Vénusz fázisait is megfigyelte, ami azt mutatta, hogy a Vénusz a Nap körül kering. Nézeteit az egyház elítélte, 1633-ban meg kellett tagadnia a Föld mozgásáról vallott tanait.",
+     "did_you_know": "Galilei a Vénusz holdéhoz hasonló fázisaiból arra következtetett, hogy a Vénusz a Nap körül kering.",
+     "think": "Hogyan lehet egy hegy magasságát megbecsülni az árnyéka hosszából?",
+     "think_answer": "Ha tudjuk, milyen szögben érkezik a fény, az árnyék hosszából kiszámolható, milyen magas tárgy vetette. Galilei a Holdon így becsülte meg a hegyek magasságát."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Minden nap később kel",
+     "body": "A Hold minden nap kb. 50 perccel később kel fel, mint előző nap, mert közben továbbhalad a pályáján. A telihold napnyugtakor kel fel, és egész éjjel látható, mert ekkor éppen a Nappal szemközti oldalon van. Az újhold a Nappal együtt kel és nyugszik, ezért nem látszik. A holdfázisok egymásutánja tehát egyszerűen a Nap, a Föld és a Hold helyzetéből következik.",
+     "did_you_know": "A telihold mindig napnyugta táján kel fel, és napkelte táján nyugszik le.",
+     "think": "Mikor kel fel a telihold, és miért?",
+     "think_answer": "Napnyugta táján, mert teliholdkor a Hold a Nappal szemközti oldalon van. Amikor a Nap lenyugszik, a Hold éppen felkel."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A csillagkép nem valódi csoport",
+     "body": "A csillagképek csillagai csak a Földről nézve látszanak egymás közelében; valójában nagyon különböző távolságra lehetnek tőlünk. A Göncölszekér két hátsó csillagát összekötve és ötszörösére meghosszabbítva megtalálod a Sarkcsillagot, amely az égi északi pólus közelében van. Ezért látszik egy helyben állni, miközben a többi csillag körülötte forog. A csillagok pislákolnak, mert a fényük a levegő mozgó rétegein át kissé ide-oda tér.",
+     "did_you_know": "A Sarkcsillag azért nem mozdul az égen, mert szinte pontosan a Föld forgástengelyének meghosszabbításában van.",
+     "think": "Miért látszik a Sarkcsillag egy helyben, miközben a többi csillag körbefordul?",
+     "think_answer": "Mert szinte pontosan a Föld forgástengelyének irányában van. Ahogy a Föld forog, a tengely iránya nem változik, így a Sarkcsillag sem mozdul."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Ezeréves fény",
+     "body": "A legtöbb szabad szemmel látható csillag fénye több tíz, több száz vagy több ezer éve indult el felénk. A Sarkcsillag fénye kb. 430 évig utazik hozzánk, az Androméda-galaxisé kb. 2,5 millió évig. A legtávolabbi galaxisokat úgy látjuk, amilyenek több mint 13 milliárd évvel ezelőtt voltak. A fény sebességét először Ole Rømer becsülte meg 1676-ban, a Jupiter egyik holdjának fogyatkozásait megfigyelve.",
+     "did_you_know": "A Sarkcsillagot úgy látjuk, amilyen kb. 430 évvel ezelőtt volt.",
+     "think": "Ha egy 400 fényévre lévő csillag ma felrobbanna, mikor látnánk?",
+     "think_answer": "Kb. 400 év múlva, mert ennyi idő kell, hogy a robbanás fénye ideérjen."
+    }
+   ]
+  },
+  {
+   "lesson_id": "389f1248-c419-4520-9440-f8e5b03dd57e",
+   "title_hu": "Bolygók és csillagok",
+   "text_block_id": "b816cc72-cd2e-4b4f-8fed-fabafc690a32",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "A Vénusz forróbb a Merkúrnál",
+     "body": "Bár a Merkúr van a legközelebb a Naphoz, a legforróbb bolygó a Vénusz, felszíne kb. 465 °C-os. Ennek oka a Vénusz sűrű, főleg szén-dioxidból álló légköre, amely rendkívül erős üvegházhatást okoz. A Marsnak nagyon ritka a légköre, a nyomás ott kevesebb, mint a földi nyomás egy százaléka. A Jupiter Nagy Vörös Foltja egy évszázadok óta tomboló vihar, amely nagyobb, mint az egész Föld.",
+     "did_you_know": "A Jupiter Nagy Vörös Foltja nagyobb, mint az egész Föld, és legalább 150 éve megfigyelik.",
+     "think": "Miért forróbb a Vénusz, mint a Merkúr, ha távolabb van a Naptól?",
+     "think_answer": "A Vénusz sűrű szén-dioxid-légköre rendkívül erős üvegházhatást okoz, és visszatartja a hőt. A Merkúrnak szinte nincs légköre, így az éjszakai oldala nagyon lehűl."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A csillagok színe a hőmérsékletük",
+     "body": "A csillagok színe a felszíni hőmérsékletüket árulja el: a vöröses csillagok hűvösebbek, kb. 3 000 °C körüliek, a fehéres-kékes csillagok 10 000 °C-nál is forróbbak. A mi Napunk sárgásfehér, középhőmérsékletű csillag. Az Orion csillagképben jól látható a különbség: a vöröses Betelgeuze és a kékesfehér Rigel. A kovácsolt vas is így változtatja a színét: előbb vörösen, majd egyre fehérebben izzik, ahogy melegszik.",
+     "did_you_know": "Az Orion csillagkép két legfényesebb csillaga közül a Betelgeuze vöröses, a Rigel kékesfehér.",
+     "think": "Miért mondjuk, hogy a kék csillagok forróbbak a vöröseknél?",
+     "think_answer": "Mert minél forróbb egy test, annál rövidebb hullámhosszú, kékebb fény felé tolódik a sugárzása. A kovácsolt vas is előbb vörösen, majd fehéren izzik."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A vándorló csillagok",
+     "body": "A „bolygó” szó is arra utal, hogy ezek az égitestek bolyonganak: hétről hétre elmozdulnak a csillagokhoz képest. A bolygók kevésbé pislákolnak, mert a Földről nézve nem pontszerűek, hanem kis korongok. Az Esthajnalcsillag nem csillag, hanem a Vénusz: mivel a Naphoz közelebb kering, mindig a Nap közelében látszik, este nyugaton vagy hajnalban keleten. Éjfélkor a Vénuszt soha nem láthatod.",
+     "did_you_know": "Az Esthajnalcsillag valójában a Vénusz bolygó, amely mindig a Nap közelében látszik az égen.",
+     "think": "Miért nem láthatod soha éjfélkor a Vénuszt?",
+     "think_answer": "Mert a Vénusz a Naphoz közelebb kering, mint a Föld, így az égen mindig a Nap közelében van. Éjfélkor a Nap a Föld túloldalán van, és vele együtt a Vénusz is."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Egy kör: 230 millió év",
+     "body": "A Nap kb. 26 000 fényévre van a Tejútrendszer középpontjától, és kb. 230 millió év alatt kerüli meg. Utoljára akkor járt a pálya mostani pontján, amikor a Földön az első dinoszauruszok éltek. Az égen látható tejszerű sáv a galaxisunk korongja, amelyet belülről, élével látunk. Az Androméda-galaxis közeledik felénk, és néhány milliárd év múlva összeolvad a Tejútrendszerrel.",
+     "did_you_know": "Az Androméda-galaxis közeledik felénk, és a számítások szerint néhány milliárd év múlva összeolvad a Tejútrendszerrel.",
+     "think": "Miért látszik a Tejút sávnak az égen, és nem egyenletesen szétszórt csillagoknak?",
+     "think_answer": "Mert a galaxisunk lapos korong, és mi a korongon belül vagyunk. A korong síkjába nézve sokkal több csillagot látunk, mint más irányban."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Az első kép egy fekete lyukról",
+     "body": "2019-ben egy, a Föld különböző pontjain lévő rádiótávcsövekből álló hálózat elkészítette az első képet egy fekete lyuk környezetéről, az M87 galaxis közepén. A Tejútrendszer középpontjában is van egy óriási fekete lyuk, amelynek tömege kb. négymillió Nap tömegével egyenlő. A fekete lyukak nem szívnak be mindent: ha a Nap helyére egy ugyanakkora tömegű fekete lyuk kerülne, a Föld pályája nem változna. A vonzásuk csak nagyon közel lesz leküzdhetetlen.",
+     "did_you_know": "2019-ben készült az első kép egy fekete lyuk környezetéről; ehhez a Föld különböző pontjain lévő rádiótávcsöveket kapcsoltak össze.",
+     "think": "Mi történne a Föld pályájával, ha a Nap helyén egy ugyanakkora tömegű fekete lyuk lenne?",
+     "think_answer": "A pálya nem változna, mert a gravitáció csak a tömegtől és a távolságtól függ. A Földön viszont sötét és hideg lenne."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Mars helyett egyelőre a Föld körül",
+     "body": "Űrturisták eddig csak a világűr határáig, kb. 100 km magasra, illetve a Föld körüli pályán keringő Nemzetközi Űrállomásra jutottak el. A Holdnál messzebb ember még soha nem járt. A Marsra egy út a mai technikával kb. 6-9 hónapig tartana egy irányba, és komoly veszélyt jelentene a világűr sugárzása. A Jupiter Europa nevű holdját vastag jégkéreg borítja, alatta valószínűleg folyékony víz óceán van, ezért a kutatók életet is keresnek ott.",
+     "did_you_know": "2025-ben Kapu Tibor lett a második magyar űrhajós, aki a világűrben járt, Farkas Bertalan 1980-as repülése után.",
+     "think": "Miért nehezebb embert küldeni a Marsra, mint a Holdra?",
+     "think_answer": "A Mars sokkal messzebb van, így az út hónapokig tart. Ennyi időre kell ételt, vizet, levegőt vinni, és az űrhajósokat hosszú ideig éri a világűr sugárzása."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "A hurkot vető Mars",
+     "body": "A Mars néha hetekig látszólag visszafelé halad a csillagok között, majd újra előre. Ez a látszólagos hurok abból adódik, hogy a Föld belső pályán gyorsabban kering, és időnként megelőzi a Marsot. Olyan ez, mint amikor egy autópályán megelőzünk egy lassabb autót: rövid ideig úgy tűnik, mintha hátrafelé haladna. Az ókori csillagászoknak ez a hurok nagy fejtörést okozott, a Nap-középpontú világkép viszont egyszerűen megmagyarázta.",
+     "did_you_know": "A Mars időnként hetekig látszólag visszafelé halad az égen, mert a Föld megelőzi a pályáján.",
+     "think": "Miért látszik úgy néha, mintha a Mars visszafelé haladna az égen?",
+     "think_answer": "Mert a Föld gyorsabban kering, és időnként megelőzi a Marsot. Ekkor a Mars a távoli csillagokhoz képest látszólag visszafelé mozdul."
+    }
+   ]
+  },
+  {
+   "lesson_id": "87e85e56-dd2b-4f22-a7d1-2ccccb10b282",
+   "title_hu": "Űrkutatás és a Világegyetem",
+   "text_block_id": "c7f6000f-4c07-425e-903c-a1fabb7746af",
+   "n_text": 8,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Súlytalanság, nem gravitáció nélküli",
+     "body": "A Nemzetközi Űrállomás kb. 400 km magasan kering, és kb. 90 perc alatt kerüli meg a Földet, így az űrhajósok naponta kb. 16 napfelkeltét látnak. Ott a gravitáció még kb. 90%-a a földinek. Az űrhajósok azért lebegnek, mert az űrállomással együtt folyamatosan szabadon esnek a Föld felé, csak közben olyan gyorsan haladnak előre, hogy mindig „elvétik” a Földet. Ezt nevezzük súlytalanságnak.",
+     "did_you_know": "Az űrállomáson a gravitáció még kb. 90%-a a földinek; az űrhajósok azért lebegnek, mert folyamatosan szabadon esnek.",
+     "think": "Ha az űrállomáson is van gravitáció, miért lebegnek az űrhajósok?",
+     "think_answer": "Mert az űrállomással együtt szabadon esnek. Mivel minden ugyanúgy esik, semmi sem nyomódik semminek, ezért súlytalannak érzik magukat."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Víz a Szaturnusz holdján",
+     "body": "A kutatók elsősorban ott keresnek életet, ahol folyékony víz lehet. A Szaturnusz Enceladus nevű holdjának déli sarkán a jégkéreg repedéseiből vízsugarak törnek elő, ami egy jég alatti óceánra utal. A Marson a Perseverance marsjáró egy egykori tómeder környékén gyűjt kőzetmintákat, amelyeket később a Földre szeretnének hozni. A Kepler-186f bolygó kb. 500 fényévnyire van, túl messze ahhoz, hogy közelről megvizsgálhassuk.",
+     "did_you_know": "A Szaturnusz Enceladus nevű holdjának felszínéből vízsugarak törnek fel, amelyek egy jég alatti óceánból származnak.",
+     "think": "Miért éppen a folyékony vizet keresik a kutatók, amikor életet kutatnak más égitesteken?",
+     "think_answer": "Mert minden ismert földi élőlénynek szüksége van folyékony vízre. Víz nélkül a sejtekben zajló kémiai folyamatok nem mehetnének végbe."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Csillagporból vagyunk",
+     "body": "Az ősrobbanás nem egy pontból kiinduló robbanás volt a térben, hanem maga a tér kezdett tágulni. Közvetlenül utána szinte csak hidrogén és hélium keletkezett. A szén, az oxigén, a vas és a többi nehezebb elem csillagok belsejében jött létre, és a csillagok halálakor szóródott szét az űrben. A testünkben lévő szén- és oxigénatomok tehát egykor csillagokban keletkeztek.",
+     "did_you_know": "A testünkben lévő szén-, oxigén- és vasatomok egykor csillagok belsejében jöttek létre.",
+     "think": "Honnan származik a vér vasa?",
+     "think_answer": "A vasat a csillagok belsejében zajló magreakciók hozták létre, majd a csillagok halálakor szétszóródott az űrben, és így került a Föld anyagába és végül a testünkbe."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "75 000 év a legközelebbi csillagig",
+     "body": "A legtávolabbra jutott ember alkotta tárgy, a Voyager–1 űrszonda 1977 óta úton van, és ma már több mint 24 milliárd km-re jár tőlünk, a fénynek is majdnem egy teljes napba telik, hogy elérje. Sebessége kb. 17 km/s, vagyis több mint 60 000 km/h. Ezzel a sebességgel a 4,24 fényévre lévő Proxima Centaurihoz kb. 75 000 év alatt érne el. A csillagközi távolságok tehát a mai technikával szinte leküzdhetetlenek.",
+     "did_you_know": "A Voyager–1 űrszonda 1977 óta utazik, és az ember alkotta legtávolabbi tárgy.",
+     "think": "Miért nem küldhetünk ma űrszondát a legközelebbi csillaghoz néhány év alatt?",
+     "think_answer": "Mert a mai űrszondák sebességével ez az út több tízezer évig tartana. Sokkal gyorsabb meghajtásra lenne szükség, amely még nem létezik."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Legalább négy műhold",
+     "body": "A telefonod úgy határozza meg a helyzetét, hogy a GPS-műholdak rádiójeleit veszi, amelyek pontosan megadják, mikor indultak. A jelek késéséből kiszámítja, milyen messze van egy-egy műholdtól. A pontos helymeghatározáshoz legalább négy műhold jele kell: hármat a helyzet, a negyediket a telefon pontatlan órájának kijavítása igényli. Az időjárási műholdak egy része kb. 36 000 km magasan kering, és így mindig ugyanazon terület fölött marad.",
+     "did_you_know": "Az időjárási műholdak egy része kb. 36 000 km magasan kering, pontosan olyan ütemben, ahogy a Föld forog, így mindig ugyanazt a területet látja.",
+     "think": "Miért kell legalább négy műhold jele a GPS-helymeghatározáshoz?",
+     "think_answer": "Három távolságból a helyzet kiszámolható lenne, de a telefon órája nem elég pontos. A negyedik műhold jele az óra hibájának kiszámítását is lehetővé teszi."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Ha a Föld borsó lenne",
+     "body": "Ha a Földet egy 1 cm-es borsószemre kicsinyítenénk, a Hold egy kis mag lenne tőle kb. 30 cm-re. A Nap egy kb. 1,1 m átmérőjű labda lenne, kb. 117 m távolságban. A Neptunusz, a legtávolabbi bolygó, kb. 3,5 km-re keringene. A legközelebbi csillag, a Proxima Centauri pedig ezen a méretarányon is kb. 30 000 km-re, a Föld teljes kerületének háromnegyedére lenne.",
+     "did_you_know": "A Föld borsó méretű modelljében a legközelebbi csillag több mint 30 000 km-re lenne, mintha a Föld körül háromnegyed utat tennénk meg.",
+     "think": "Ha a Föld egy 1 cm-es borsó, mekkora a Nap ebben a modellben?",
+     "think_answer": "A Nap átmérője kb. 109-szerese a Földének, így kb. 109 cm, vagyis kb. 1,1 m átmérőjű labda lenne."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Ködök és a Messier-katalógus",
+     "body": "A csillagok és galaxisok mellett az égen ködök is láthatók: gáz- és porfelhők, amelyekben új csillagok születnek vagy haldokló csillagok anyaga terjed szét. Az Orion-köd szabad szemmel is látható halvány foltként az Orion kardjában. Charles Messier francia csillagász a 18. században azért készített katalógust a ködös foltokról, hogy ne tévessze össze őket az üstökösökkel. A katalógus számai ma is használatosak: az Androméda-galaxis jele M31.",
+     "did_you_know": "Az Orion-köd szabad szemmel is látható halvány foltként, és benne ma is csillagok születnek.",
+     "think": "Miért készített Messier katalógust a ködös égi foltokról?",
+     "think_answer": "Üstökösöket keresett, és a ködös foltok könnyen összetéveszthetők voltak velük. A katalógussal azt akarta elkerülni, hogy újra és újra ezekre figyeljen."
+    },
+    {
+     "type": "deep",
+     "anchor": 7,
+     "heading": "Az ősrobbanás visszhangja",
+     "body": "1965-ben két amerikai rádiócsillagász, Penzias és Wilson egy mindenhonnan érkező, halvány rádiózajt észlelt. Először azt hitték, hogy az antennájukban fészkelő galambok okozzák, de kiderült: ez az ősrobbanás utáni forró korszak maradék sugárzása. Ez a mikrohullámú háttérsugárzás az ősrobbanás elméletének egyik legfontosabb bizonyítéka. A régi, antennás tévék „hangyás” képének egy kis része is ebből a sugárzásból származott.",
+     "did_you_know": "A régi antennás tévék „hangyás” képének egy kis része az ősrobbanás maradék sugárzásából származott.",
+     "think": "Ha minden távoli galaxis távolodik tőlünk, a Világegyetem közepén vagyunk?",
+     "think_answer": "Nem. A tér mindenhol egyformán tágul, ezért bármelyik galaxisból nézve úgy tűnne, hogy a többi távolodik. Olyan ez, mint egy kelő kalácsban a mazsolák: mindegyikhez képest a többi távolodik."
+    }
+   ]
+  }
+ ]
+}

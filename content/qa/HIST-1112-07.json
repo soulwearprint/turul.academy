@@ -1,0 +1,1540 @@
+{
+ "nat_id": "HIST-1112-07",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 31,
+  "cards": 165,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Az 1945. május 8/9-i dátum a leckében, a világblokkban és a két kvízben eltérően szerepel; a javaslat a „május 8–9.” egységes megfogalmazása."
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-1112-07-001",
+   "lesson_id": "048e1eac-3f26-495f-9dfe-7680bc6c61b0",
+   "block_id": "989aaf4e-02da-43cb-8300-caf3b997273f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A megállapodás titkos záradéka lehetővé tette Közép-Európa felosztását”",
+   "explanation": "A titkos jegyzőkönyv Kelet-Európát osztotta fel érdekszférákra (Lengyelország, a balti államok, Finnország, Besszarábia).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Molotov–Ribbentrop_Pact",
+     "title": "Molotov–Ribbentrop Pact",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Molotov–Ribbentrop-paktum 1939. augusztus 23-án jött létre a Szovjetunió és a náci Németország között. A megállapodás titkos záradéka lehetővé tette Közép-Európa felosztását a két hatalom között. Ennek következtében Lengyelországot két részre osztották, a nyugati része a németek, míg a keleti része a szovjetek kezére került. A paktum jelentős hatással volt Magyarország történelmére, mivel a térség geopolitikai helyzete megváltozott.",
+     "type": "text",
+     "heading": "A Molotov–Ribbentrop-paktum",
+     "key_term": "Molotov–Ribbentrop-paktum"
+    },
+    "after": {
+     "body": "A Molotov–Ribbentrop-paktum 1939. augusztus 23-án jött létre a Szovjetunió és a náci Németország között. A megállapodás titkos záradéka Kelet-Európát érdekszférákra osztotta (Lengyelország, a balti államok, Finnország, Besszarábia). Ennek következtében Lengyelországot két részre osztották, a nyugati része a németek, míg a keleti része a szovjetek kezére került. A paktum jelentős hatással volt Magyarország történelmére, mivel a térség geopolitikai helyzete megváltozott.",
+     "type": "text",
+     "heading": "A Molotov–Ribbentrop-paktum",
+     "key_term": "Molotov–Ribbentrop-paktum"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-002",
+   "lesson_id": "048e1eac-3f26-495f-9dfe-7680bc6c61b0",
+   "block_id": "989aaf4e-02da-43cb-8300-caf3b997273f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a németek először komoly ellenállásba ütköztek”",
+   "explanation": "Nem az első komoly ellenállás volt (például a britek 1940-es légi csatája); a német előrenyomulás Moszkva előtt 1941 decemberében akadt el.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Moscow",
+     "title": "Battle of Moscow",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Operation_Barbarossa",
+     "title": "Operation Barbarossa",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1941. június 22-én a német hadsereg megindította a Barbarossa hadműveletet, amely a Szovjetunió megtámadását célozta. A támadás célja a szovjet területek gyors elfoglalása és a kommunizmus megsemmisítése volt. A magyar hadsereg is részt vett a hadműveletekben, ami jelentős hatással volt a későbbi magyar sorsra. A háború ezen szakasza döntő jelentőségű volt, hiszen a németek először komoly ellenállásba ütköztek.",
+     "type": "text",
+     "heading": "A Szovjetunió megtámadása",
+     "key_term": "1941. június 22."
+    },
+    "after": {
+     "body": "1941. június 22-én a német hadsereg megindította a Barbarossa hadműveletet, amely a Szovjetunió megtámadását célozta. A támadás célja a szovjet területek gyors elfoglalása és a kommunizmus megsemmisítése volt. A magyar hadsereg is részt vett a hadműveletekben, ami jelentős hatással volt a későbbi magyar sorsra. A háború ezen szakasza döntő jelentőségű volt, hiszen a német előrenyomulás 1941 decemberében Moszkva előtt elakadt.",
+     "type": "text",
+     "heading": "A Szovjetunió megtámadása",
+     "key_term": "1941. június 22."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-003",
+   "lesson_id": "048e1eac-3f26-495f-9dfe-7680bc6c61b0",
+   "block_id": "989aaf4e-02da-43cb-8300-caf3b997273f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A jaltai megállapodások jelentős hatással voltak Magyarország sorsára”",
+   "explanation": "Jaltában (1945. február) Magyarországról külön nem döntöttek; a szovjet befolyás inkább az 1944. októberi moszkvai „százalékos egyezségből” (Churchill–Sztálin, Magyarország: 50–50%) és a katonai helyzetből következett. A konferencia célja nem az „újjáépítés” volt, hanem Németország megszállási övezetei, Lengyelország határai, az ENSZ.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Yalta_Conference",
+     "title": "Yalta Conference",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Percentages_agreement",
+     "title": "Percentages agreement",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A jaltai konferencia 1945 februárjában zajlott, ahol a szövetséges hatalmak vezetői, köztük Sztálin, Roosevelt és Churchill találkoztak. A konferencia célja a háború utáni Európa újjáépítése volt, a területi kérdések rendezésével. A jaltai megállapodások jelentős hatással voltak Magyarország sorsára, mivel a térségben a szovjet befolyás megerősödött. A konferencia eredményei a későbbi politikai helyzetet is meghatározták.",
+     "type": "text",
+     "heading": "A jaltai konferencia",
+     "key_term": "jaltai konferencia"
+    },
+    "after": {
+     "body": "A jaltai konferencia 1945 februárjában zajlott, ahol a szövetséges hatalmak vezetői, köztük Sztálin, Roosevelt és Churchill találkoztak. A konferencián a háború utáni Európa rendezéséről tárgyaltak (Németország megszállási övezetei, Lengyelország határai, az ENSZ létrehozása). Magyarországról külön nem döntöttek: a szovjet befolyást inkább az 1944. októberi moszkvai „százalékos egyezség” (Churchill–Sztálin) és a katonai helyzet határozta meg. A konferencia eredményei a későbbi politikai helyzetet is meghatározták.",
+     "type": "text",
+     "heading": "A jaltai konferencia",
+     "key_term": "jaltai konferencia"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-004",
+   "lesson_id": "048e1eac-3f26-495f-9dfe-7680bc6c61b0",
+   "block_id": "57261a3d-d34c-4a65-994c-18f8c9db4437",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: „közvetve befolyásolta a háború alakulását Magyarország területén is”",
+   "explanation": "Homályos. Valós magyar vonatkozás: Magyarország 1941. december 6-án Nagy-Britanniának, december 13-án az Egyesült Államoknak üzent hadat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungary_in_World_War_II",
+     "title": "Hungary in World War II",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1941. december 7-én Japán meglepetésszerű támadást indított az Egyesült Államok Pearl Harbor-i haditengerészeti támaszpontja ellen. A támadás következtében az Egyesült Államok belépett a második világháborúba, és a háború globális kiterjedése tovább nőtt. A japán támadás hatására az amerikai hadsereg fokozta az erőfeszítéseit a tengelyhatalmak ellen.",
+     "type": "world",
+     "year": "1941",
+     "heading": "Pearl Harbor bombázása",
+     "link_hu": "Az Egyesült Államok háborúba lépése növelte a szövetségesek erejét, ami közvetve befolyásolta a háború alakulását Magyarország területén is."
+    },
+    "after": {
+     "body": "1941. december 7-én Japán meglepetésszerű támadást indított az Egyesült Államok Pearl Harbor-i haditengerészeti támaszpontja ellen. A támadás következtében az Egyesült Államok belépett a második világháborúba, és a háború globális kiterjedése tovább nőtt. A japán támadás hatására az amerikai hadsereg fokozta az erőfeszítéseit a tengelyhatalmak ellen.",
+     "type": "world",
+     "year": "1941",
+     "heading": "Pearl Harbor bombázása",
+     "link_hu": "Magyarország 1941 decemberében hadat üzent Nagy-Britanniának (december 6.) és az Egyesült Államoknak (december 13.)."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-005",
+   "lesson_id": "048e1eac-3f26-495f-9dfe-7680bc6c61b0",
+   "block_id": "57261a3d-d34c-4a65-994c-18f8c9db4437",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1943 januárjában a Szovjetunió ellen indított német hadjárat súlyos vereséget szenvedett el a Don folyónál”",
+   "explanation": "A Donnál 1943 januárjában a szovjet erők a magyar 2. hadsereg, valamint az olasz és román csapatok védelmi vonalát törték át; a német 6. hadsereg Sztálingrádnál 1943. február 2-án adta meg magát. A kártya keveri a két eseményt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Stalingrad",
+     "title": "Battle of Stalingrad",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Voronezh–Kharkov_Offensive",
+     "title": "Voronezh–Kharkov Offensive",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1943 januárjában a Szovjetunió ellen indított német hadjárat súlyos vereséget szenvedett el a Don folyónál. Ez a vereség a német hadsereg háborús helyzetét jelentősen megváltoztatta, és a szovjet ellentámadások kezdetét jelentette. A Donnál elszenvedett vereség következtében a németek visszavonulásra kényszerültek, ami a háború menetét kedvezően befolyásolta a szövetségesek számára.",
+     "type": "world",
+     "year": "1943",
+     "heading": "A Donnál elszenvedett vereség",
+     "link_hu": "A német vereség a Donnál megerősítette a szovjet hadsereg pozícióját, ami Magyarország számára is kedvezőtlen helyzetet teremtett a háború további alakulásában."
+    },
+    "after": {
+     "body": "1943 januárjában a Don mellett a szovjet erők áttörték a magyar 2. hadsereg, valamint az olasz és román csapatok védelmi vonalát; a német 6. hadsereget Sztálingrádnál bekerítették, és 1943. február 2-án megadta magát.",
+     "type": "world",
+     "year": "1943",
+     "heading": "A Donnál elszenvedett vereség",
+     "link_hu": "A magyar 2. hadsereg a Donnál gyakorlatilag megsemmisült: több mint százezer katonája esett el, sebesült meg vagy került fogságba."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-006",
+   "lesson_id": "048e1eac-3f26-495f-9dfe-7680bc6c61b0",
+   "block_id": "9582a586-5321-4a3a-9ea9-62a602d02d86",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„nem támadási szerződés … a kölcsönös megtámadás elkerüléséről”",
+   "explanation": "Igaz, de a jelentőségét a titkos jegyzőkönyv adja: Kelet-Európa felosztása; a magyarázat ezt elhagyja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Molotov–Ribbentrop_Pact",
+     "title": "Molotov–Ribbentrop Pact",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Két ország közötti katonai szövetség.",
+      "B) Németország és a Szovjetunió közötti nem támadási szerződés.",
+      "C) Egy konferencia a háborús békefeltételekről.",
+      "D) A tengelyhatalmak létrejötte."
+     ],
+     "question": "Mi volt a Molotov–Ribbentrop-paktum, és miért volt jelentős?",
+     "explanation": "A Molotov–Ribbentrop-paktum 1939. augusztus 23-án jött létre, amelyben Németország és a Szovjetunió megállapodott egymás kölcsönös megtámadásának elkerüléséről.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Két ország közötti katonai szövetség.",
+      "B) Németország és a Szovjetunió közötti nem támadási szerződés.",
+      "C) Egy konferencia a háborús békefeltételekről.",
+      "D) A tengelyhatalmak létrejötte."
+     ],
+     "question": "Mi volt a Molotov–Ribbentrop-paktum, és miért volt jelentős?",
+     "explanation": "A Molotov–Ribbentrop-paktum 1939. augusztus 23-án jött létre; nem támadási szerződés volt, titkos jegyzőkönyve pedig Kelet-Európát érdekszférákra osztotta.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-007",
+   "lesson_id": "004515e4-3966-4130-8047-144d595f8a04",
+   "block_id": "6db34c04-8c3c-4c72-b4a5-11ddfed65723",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Japán gyorsan megadta magát”; „1945. május 9-én zárult le”",
+   "explanation": "Japán Nagaszaki (augusztus 9.) és a szovjet hadüzenet (augusztus 8.) után, augusztus 15-én jelentette be a kapitulációt, amelyet szeptember 2-án írtak alá. Németország kapitulációját május 7-én (Reims) és 8-án (Berlin) írták alá; a nyugati országokban május 8-án, a Szovjetunióban május 9-én ünnepelnek.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Surrender_of_Japan",
+     "title": "Surrender of Japan",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/German_Instrument_of_Surrender",
+     "title": "German Instrument of Surrender",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1945. augusztus 6-án az Egyesült Államok atomtámadást indított Hirosima ellen, amely jelentős hatással volt a második világháború kimenetelére. Az atomtámadás következményeként Japán gyorsan megadta magát, ezzel véget vetve a csendes-óceáni hadszíntér harcainak. A háború európai szakasza 1945. május 9-én zárult le, amikor a német csapatok letették a fegyvert. A háború befejezése után Magyarország helyzete is megváltozott, hiszen a szovjet csapatok felszabadították az országot a német megszállás alól.",
+     "type": "text",
+     "heading": "Hirosima és a háború vége",
+     "key_term": "1945. május 9., 1945. augusztus 6., Hirosima"
+    },
+    "after": {
+     "body": "1945. augusztus 6-án az Egyesült Államok atomtámadást indított Hirosima ellen, amely jelentős hatással volt a második világháború kimenetelére. Hirosima (augusztus 6.) és Nagaszaki (augusztus 9.) atombombázása, valamint a szovjet hadüzenet (augusztus 8.) után Japán augusztus 15-én bejelentette a kapitulációt, amelyet szeptember 2-án írtak alá. A háború európai szakasza 1945. május 8–9-én zárult le, amikor Németország feltétel nélkül kapitulált. A háború befejezése után Magyarország helyzete is megváltozott, hiszen a szovjet csapatok felszabadították az országot a német megszállás alól.",
+     "type": "text",
+     "heading": "Hirosima és a háború vége",
+     "key_term": "1945. május 9., 1945. augusztus 6., Hirosima"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-008",
+   "lesson_id": "004515e4-3966-4130-8047-144d595f8a04",
+   "block_id": "6db34c04-8c3c-4c72-b4a5-11ddfed65723",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„kulcsszereplője volt a szövetségesek politikai stratégiájának”; „fontos szerepet játszott az európai integrációban”; „Magyarország számára … lényeges volt”",
+   "explanation": "De Gaulle a Szabad Franciaország vezetője volt (1940. június 18-i londoni felhívása), Jaltába nem hívták meg; az európai integrációt inkább ellenezte, a francia–német megbékélést támogatta (1963, Élysée-szerződés). A magyar vonatkozás erőltetett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Charles_de_Gaulle",
+     "title": "Charles de Gaulle",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Free_France",
+     "title": "Free France",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Charles de Gaulle, a Franciaországot képviselő vezető, kulcsszereplője volt a szövetségesek politikai stratégiájának a második világháború során. A háború alatt a francia ellenállás vezetőjeként dolgozott, és a háború végére ő képviselte Franciaországot a szövetségesek között. De Gaulle tevékenysége hozzájárult ahhoz, hogy Franciaország visszanyerje helyét a világpolitikában, és a háború utáni időszakban fontos szerepet játszott az európai integrációban. Magyarország számára a francia politika alakulása is lényeges volt, hiszen a háború utáni rendezésben Franciaország is érintett volt.",
+     "type": "text",
+     "heading": "Charles de Gaulle szerepe",
+     "key_term": "Charles de Gaulle"
+    },
+    "after": {
+     "body": "Charles de Gaulle a Szabad Franciaország vezetője volt: 1940. június 18-i londoni rádióbeszédében ellenállásra szólította fel a franciákat. A háború alatt a francia ellenállás vezetőjeként dolgozott, és a háború végére ő képviselte Franciaországot a szövetségesek között. De Gaulle tevékenysége hozzájárult ahhoz, hogy Franciaország visszanyerje helyét a világpolitikában, és 1959-től köztársasági elnökként a francia–német megbékélést is támogatta (Élysée-szerződés, 1963). Franciaországot Jaltába nem hívták meg, de a győztesek egyikeként megszállási övezetet kapott Németországban.",
+     "type": "text",
+     "heading": "Charles de Gaulle szerepe",
+     "key_term": "Charles de Gaulle"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-009",
+   "lesson_id": "004515e4-3966-4130-8047-144d595f8a04",
+   "block_id": "0b811023-6dcb-4c8b-b206-4279e348bdcb",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„lehetővé téve … hogy 1944-ben ellentámadást indítsanak”; link_hu: a sztálingrádi győzelem „magabiztosabbá tette” a szovjeteket a normandiai partraszálláskor",
+   "explanation": "A szovjet ellentámadások 1943-ban kezdődtek (Kurszk); a link_hu kitalált. Valós magyar vonatkozás: a magyar 2. hadsereg 1943 januári pusztulása és a Kállay-kormány titkos békekísérletei.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Stalingrad",
+     "title": "Battle of Stalingrad",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Miklós_Kállay",
+     "title": "Miklós Kállay",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A sztálingrádi csata 1943. februárban zárult le, és a Szovjetunió jelentős győzelmét hozta a náci Németország felett. Ez a győzelem megfordította a háború menetét a keleti fronton, lehetővé téve a szovjet csapatok számára, hogy 1944-ben ellentámadást indítsanak. A csata során tapasztalt harci taktikák és a szovjet erők kitartása új stratégiákat inspiráltak a háború további szakaszaiban.",
+     "type": "world",
+     "year": "1943",
+     "heading": "A sztálingrádi csata vége",
+     "link_hu": "A sztálingrádi csata végkimenetele hozzájárult ahhoz, hogy a szovjet csapatok a jövőbeli támadások során, például a normandiai partraszállás idején is magabiztosabbak legyenek."
+    },
+    "after": {
+     "body": "A sztálingrádi csata 1943. február 2-án a német 6. hadsereg megadásával zárult. A Wehrmacht addigi legnagyobb veresége volt; a Vörös Hadsereg innentől kezdte visszaszorítani a németeket.",
+     "type": "world",
+     "year": "1943",
+     "heading": "A sztálingrádi csata vége",
+     "link_hu": "A Sztálingrád körüli harcokkal egy időben, 1943 januárjában a Don mellett megsemmisült a magyar 2. hadsereg; Kállay Miklós kormánya ezután titkos békekísérletekbe kezdett."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-010",
+   "lesson_id": "004515e4-3966-4130-8047-144d595f8a04",
+   "block_id": "0b811023-6dcb-4c8b-b206-4279e348bdcb",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„1945. május 9-én … a náci Németország feltétel nélkül megadta magát”",
+   "explanation": "A kapitulációt 1945. május 7-én Reimsben, május 8-án késő este Berlin-Karlshorstban írták alá; nyugaton május 8-án, a Szovjetunióban május 9-én ünnepelték.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/German_Instrument_of_Surrender",
+     "title": "German Instrument of Surrender",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1945. május 9-én a második világháború véget ért Európában, miután a náci Németország feltétel nélkül megadta magát a szövetségeseknek. Ezt követően a világpolitikai helyzet jelentősen átalakult, a szovjet befolyás növekedett Közép- és Kelet-Európában. Az új hatalmi egyensúly kialakulása hozzájárult a hidegháború kezdetéhez.",
+     "type": "world",
+     "year": "1945",
+     "heading": "Az európai háború vége",
+     "link_hu": "Az európai háború vége közvetlenül befolyásolta Magyarország sorsát, hiszen a szovjet megszállás következtében a kommunista rendszer kiépüléséhez vezetett."
+    },
+    "after": {
+     "body": "1945. május 8–9-én (nyugaton május 8-án, a Szovjetunióban május 9-én ünnepelték) a második világháború véget ért Európában, miután a náci Németország feltétel nélkül megadta magát. Ezt követően a világpolitikai helyzet jelentősen átalakult, a szovjet befolyás növekedett Közép- és Kelet-Európában. Az új hatalmi egyensúly kialakulása hozzájárult a hidegháború kezdetéhez.",
+     "type": "world",
+     "year": "1945",
+     "heading": "Az európai háború vége",
+     "link_hu": "Az európai háború vége közvetlenül befolyásolta Magyarország sorsát, hiszen a szovjet megszállás következtében a kommunista rendszer kiépüléséhez vezetett."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-011",
+   "lesson_id": "004515e4-3966-4130-8047-144d595f8a04",
+   "block_id": "0b811023-6dcb-4c8b-b206-4279e348bdcb",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: a hirosimai támadás „a totális háború fogalmának példája, amely Magyarországot is érintette”",
+   "explanation": "Erőltetett. Valós magyar kapcsolat: az atombomba kifejlesztésében magyar származású tudósok is részt vettek (Szilárd Leó, Teller Ede, Neumann János, Wigner Jenő).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Manhattan_Project",
+     "title": "Manhattan Project",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/The_Martians_(scientists)",
+     "title": "The Martians (scientists)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1945. augusztus 6-án az Egyesült Államok atombombát dobott Hirosimára, amely a második világháború legnagyobb pusztítást végző támadása volt. A támadás következményeként Japán megadta magát, ezzel véget vetve a csendes-óceáni háborúnak. Az atomfegyverek bevetése új korszakot nyitott a háborúban és a nemzetközi kapcsolatokban.",
+     "type": "world",
+     "year": "1945",
+     "heading": "Az atomtámadás Hirosima ellen",
+     "link_hu": "A hirosimai atomtámadás példája a totális háború fogalmának, amely a második világháború során Magyarországot is érintette, hiszen a háború következményei világszerte érződtek."
+    },
+    "after": {
+     "body": "1945. augusztus 6-án az Egyesült Államok atombombát dobott Hirosimára, amely a második világháború legnagyobb pusztítást végző támadása volt. A támadás következményeként Japán megadta magát, ezzel véget vetve a csendes-óceáni háborúnak. Az atomfegyverek bevetése új korszakot nyitott a háborúban és a nemzetközi kapcsolatokban.",
+     "type": "world",
+     "year": "1945",
+     "heading": "Az atomtámadás Hirosima ellen",
+     "link_hu": "Az atombomba kifejlesztésében magyar származású tudósok is részt vettek (Szilárd Leó, Teller Ede, Neumann János, Wigner Jenő)."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-012",
+   "lesson_id": "004515e4-3966-4130-8047-144d595f8a04",
+   "block_id": "a24ec320-fce2-4b27-8dc7-0e8b8faad330",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Kulcs C: „1945. május 8.”; a világblokk és a topic-kvíz május 9-et ad meg",
+   "explanation": "Ugyanaz az esemény három helyen három dátummal szerepel (május 8., 9.): a kapitulációt május 8-án késő este írták alá, a Szovjetunióban ekkor már május 9. volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/German_Instrument_of_Surrender",
+     "title": "German Instrument of Surrender",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1943. február",
+      "B) 1944. június 6.",
+      "C) 1945. május 8.",
+      "D) 1945. augusztus 6."
+     ],
+     "question": "Mikor ért véget az európai háború?",
+     "explanation": "Az európai háború 1945. május 8-án ért véget, amikor a náci Németország kapitulált, ezzel a szövetségesek győzelmét biztosítva Európában.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1943. február",
+      "B) 1944. június 6.",
+      "1945. május 8–9.",
+      "D) 1945. augusztus 6."
+     ],
+     "question": "Mikor ért véget az európai háború?",
+     "explanation": "Németország feltétel nélküli kapitulációját 1945. május 7-én Reimsben, május 8-án késő este Berlin-Karlshorstban írták alá; nyugaton május 8-án, a Szovjetunióban május 9-én ünnepelték a győzelmet.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-013",
+   "lesson_id": "ef68190d-e5ff-4712-9cec-09f25e571848",
+   "block_id": "3f2977a5-ad3a-4b16-a0d1-528db2d9894e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Bárdossy László miniszterelnök hirdette meg ezt a politikát”; „a német megszállás elkerülhetetlenné vált”",
+   "explanation": "A fegyveres semlegességet (non-belligerence) 1939 szeptemberében Teleki Pál miniszterelnök hirdette meg; Bárdossy 1941 áprilisától miniszterelnök. A semlegesség vége nem a német megszállás (1944. március), hanem a háromhatalmi egyezményhez csatlakozás (1940. november 20.) és a háborúba lépés (1941. június) volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pál_Teleki",
+     "title": "Pál Teleki",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Tripartite_Pact",
+     "title": "Tripartite Pact",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A második világháború kezdetén Magyarország a fegyveres semlegesség politikáját hirdette meg, amelynek célja a háború elkerülése volt. Bárdossy László miniszterelnök hirdette meg ezt a politikát, amely a nemzetközi helyzet és a belpolitikai feszültségek figyelembevételével alakult. A semlegesség azonban csak ideiglenes megoldásnak bizonyult, hiszen a német megszállás elkerülhetetlenné vált. A semlegesség politikája alatt Magyarország gazdasági és katonai kapcsolatokat ápolt a tengelyhatalmakkal, ami később a háborús részvételt is magával hozta.",
+     "type": "text",
+     "heading": "A fegyveres semlegesség",
+     "key_term": "fegyveres semlegesség"
+    },
+    "after": {
+     "body": "A második világháború kezdetén Magyarország a fegyveres semlegesség politikáját hirdette meg, amelynek célja a háború elkerülése volt. Teleki Pál miniszterelnök hirdette meg ezt a politikát, amely a nemzetközi helyzet és a belpolitikai feszültségek figyelembevételével alakult. A semlegesség azonban csak ideiglenes megoldásnak bizonyult: Magyarország 1940 novemberében csatlakozott a háromhatalmi egyezményhez, 1941 júniusában pedig belépett a háborúba. A semlegesség politikája alatt Magyarország gazdasági és katonai kapcsolatokat ápolt a tengelyhatalmakkal, ami később a háborús részvételt is magával hozta.",
+     "type": "text",
+     "heading": "A fegyveres semlegesség",
+     "key_term": "fegyveres semlegesség"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-014",
+   "lesson_id": "ef68190d-e5ff-4712-9cec-09f25e571848",
+   "block_id": "3f2977a5-ad3a-4b16-a0d1-528db2d9894e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„1941. június 22-én a németek megtámadták a Szovjetuniót, és Magyarország is hadba lépett”; „június 27-én deklarálták”",
+   "explanation": "A mondat két időpontot ad; Magyarország csak június 27-én, a kassai bombázás (június 26.) után üzent hadat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungary_in_World_War_II",
+     "title": "Hungary in World War II",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Bombing_of_Kassa",
+     "title": "Bombing of Kassa",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1941. június 22-én a németek megtámadták a Szovjetuniót, és Magyarország is hadba lépett a Szovjetunió ellen. A hadiállapot beálltát 1941. június 27-én deklarálták, ami a magyar hadsereg keleti fronton való részvételét jelentette. A Don-kanyarban vívott harcok során a magyar katonák súlyos veszteségeket szenvedtek el, ami aláásta a háborús morált. A Szovjetunió elleni háború nemcsak katonai, hanem politikai szempontból is kényszerpályára állította Magyarországot.",
+     "type": "text",
+     "heading": "A Szovjetunió elleni háború",
+     "key_term": "Szovjetunió elleni háború"
+    },
+    "after": {
+     "body": "1941. június 22-én a németek megtámadták a Szovjetuniót; Magyarország néhány nappal később, június 27-én, a kassai bombázás után üzent hadat a Szovjetuniónak. A hadiállapot beálltát 1941. június 27-én deklarálták, ami a magyar hadsereg keleti fronton való részvételét jelentette. A Don-kanyarban vívott harcok során a magyar katonák súlyos veszteségeket szenvedtek el, ami aláásta a háborús morált. A Szovjetunió elleni háború nemcsak katonai, hanem politikai szempontból is kényszerpályára állította Magyarországot.",
+     "type": "text",
+     "heading": "A Szovjetunió elleni háború",
+     "key_term": "Szovjetunió elleni háború"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-015",
+   "lesson_id": "ef68190d-e5ff-4712-9cec-09f25e571848",
+   "block_id": "3f2977a5-ad3a-4b16-a0d1-528db2d9894e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„a nyugati szövetségesek oldalán folytassa”; „a németek a magyar hadsereget visszavonták”",
+   "explanation": "A kiugrási kísérlet célja fegyverszünet volt (a Szovjetunióval előzetes megállapodást október 11-én írtak alá), nem a nyugatiak oldalán folytatás; a németek elrabolták Horthy fiát, lemondásra kényszerítették Horthyt (október 16.), és a magyar hadsereg Szálasi alatt tovább harcolt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Horthy_Proclamation",
+     "title": "Horthy Proclamation",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Operation_Panzerfaust",
+     "title": "Operation Panzerfaust",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1944. október 15-én Horthy Miklós kormányzó próbálkozott kiugrási kísérlettel a háborúból való kilépés érdekében. A kísérlet célja az volt, hogy Magyarország a nyugati szövetségesek oldalán folytassa, azonban a németek gyorsan reagáltak, és a kísérlet kudarcot vallott. A kiugrási kísérlet nemcsak politikai, hanem katonai következményekkel is járt, hiszen a németek a magyar hadsereget visszavonták, és a nyilasok megerősödtek. A kísérlet a magyar történelem egyik fontos eseményévé vált, amely a háború végkimenetelére is hatással volt.",
+     "type": "text",
+     "heading": "A kiugrási kísérlet",
+     "key_term": "kiugrási kísérlet"
+    },
+    "after": {
+     "body": "1944. október 15-én Horthy Miklós kormányzó próbálkozott kiugrási kísérlettel a háborúból való kilépés érdekében. A kísérlet célja az volt, hogy Magyarország fegyverszünetet kössön a szövetségesekkel (a Szovjetunióval október 11-én előzetes megállapodást írtak alá), azonban a németek gyorsan reagáltak, és a kísérlet kudarcot vallott. A kiugrási kísérlet nemcsak politikai, hanem katonai következményekkel is járt, hiszen a németek elrabolták Horthy fiát, lemondásra kényszerítették Horthyt (október 16.), és Szálasi Ferenc nyilas kormánya vette át a hatalmat. A kísérlet a magyar történelem egyik fontos eseményévé vált, amely a háború végkimenetelére is hatással volt.",
+     "type": "text",
+     "heading": "A kiugrási kísérlet",
+     "key_term": "kiugrási kísérlet"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-016",
+   "lesson_id": "ef68190d-e5ff-4712-9cec-09f25e571848",
+   "block_id": "3f2977a5-ad3a-4b16-a0d1-528db2d9894e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a második világháború előtti időszakban”",
+   "explanation": "A második bécsi döntés 1940. augusztus 30-án, már a háború alatt született.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_Vienna_Award",
+     "title": "Second Vienna Award",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A bécsi döntések két fontos területi döntést jelentettek Magyarország számára a második világháború előtti időszakban. Az első bécsi döntés 1938. november 2-án született, amelynek eredményeként Magyarország visszakapta Csehszlovákiától a Felvidék déli, magyarlakta területeit. A második bécsi döntés 1940. augusztus 30-án történt, amely Észak-Erdélyt és a Székelyföldet juttatta vissza Magyarországnak Romániától. Ezek a döntések a tengelyhatalmak, főként Németország és Olaszország közvetítésével születtek meg, és jelentős mértékben befolyásolták Magyarország külpolitikai mozgásterét. Bár területi nyereséget jelentettek, Magyarország egyre inkább a tengelyhatalmak befolyása alá került, ami később a háborúba való belépéshez vezetett.",
+     "type": "text",
+     "heading": "A bécsi döntések hatása Magyarországra",
+     "key_term": "bécsi döntések"
+    },
+    "after": {
+     "body": "A bécsi döntések két fontos területi döntést jelentettek Magyarország számára a második világháború előtt és alatt. Az első bécsi döntés 1938. november 2-án született, amelynek eredményeként Magyarország visszakapta Csehszlovákiától a Felvidék déli, magyarlakta területeit. A második bécsi döntés 1940. augusztus 30-án történt, amely Észak-Erdélyt és a Székelyföldet juttatta vissza Magyarországnak Romániától. Ezek a döntések a tengelyhatalmak, főként Németország és Olaszország közvetítésével születtek meg, és jelentős mértékben befolyásolták Magyarország külpolitikai mozgásterét. Bár területi nyereséget jelentettek, Magyarország egyre inkább a tengelyhatalmak befolyása alá került, ami később a háborúba való belépéshez vezetett.",
+     "type": "text",
+     "heading": "A bécsi döntések hatása Magyarországra",
+     "key_term": "bécsi döntések"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-017",
+   "lesson_id": "ef68190d-e5ff-4712-9cec-09f25e571848",
+   "block_id": "3f2977a5-ad3a-4b16-a0d1-528db2d9894e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 8,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„ami véglegesen a háborúba sodorta az országot”",
+   "explanation": "A Jugoszlávia elleni támadás (1941. április) még nem a háborúba lépés volt; azt a Szovjetunió elleni hadüzenet (1941. június 27.) jelentette.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pál_Teleki",
+     "title": "Pál Teleki",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Teleki Pál, Magyarország miniszterelnöke 1939 és 1941 között, jelentős szerepet játszott az ország második világháborús politikájának alakításában. Teleki igyekezett megőrizni Magyarország semlegességét, de a német nyomás és a revíziós politika miatt nehéz helyzetben találta magát. 1940-ben aláírta a háromhatalmi egyezményt, amely szorosabbra fűzte Magyarország kapcsolatát a tengelyhatalmakkal. Azonban a Jugoszlávia elleni német támadás előestéjén, 1941 áprilisában, Teleki öngyilkosságot követett el, tiltakozásul az ország háborúba sodródása ellen. Halála után Magyarország részt vett a Jugoszlávia elleni hadjáratban, ami véglegesen a háborúba sodorta az országot.",
+     "type": "text",
+     "heading": "Teleki Pál és Magyarország háborús politikája",
+     "key_term": "Teleki Pál"
+    },
+    "after": {
+     "body": "Teleki Pál, Magyarország miniszterelnöke 1939 és 1941 között, jelentős szerepet játszott az ország második világháborús politikájának alakításában. Teleki igyekezett megőrizni Magyarország semlegességét, de a német nyomás és a revíziós politika miatt nehéz helyzetben találta magát. 1940-ben aláírta a háromhatalmi egyezményt, amely szorosabbra fűzte Magyarország kapcsolatát a tengelyhatalmakkal. Azonban a Jugoszlávia elleni német támadás előestéjén, 1941 áprilisában, Teleki öngyilkosságot követett el, tiltakozásul az ország háborúba sodródása ellen. Halála után Magyarország részt vett a Jugoszlávia elleni hadjáratban, ami tovább közelítette az országot a háborúhoz (a Szovjetunió elleni hadba lépés 1941 júniusában követte).",
+     "type": "text",
+     "heading": "Teleki Pál és Magyarország háborús politikája",
+     "key_term": "Teleki Pál"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-018",
+   "lesson_id": "ef68190d-e5ff-4712-9cec-09f25e571848",
+   "block_id": "612f1093-5fba-4e48-8474-d63d5f9960f8",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: „A Jugoszlávia elleni támadás hozzájárult Magyarország hadiállapotának kikiáltásához”",
+   "explanation": "Zavaros. Valós magyar vonatkozás: Magyarország 1941 áprilisában részt vett a Jugoszlávia elleni támadásban (Bácska, Baranya, Muraköz), Teleki Pál öngyilkos lett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Invasion_of_Yugoslavia",
+     "title": "Invasion of Yugoslavia",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Pál_Teleki",
+     "title": "Pál Teleki",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1941 áprilisában a tengelyhatalmak, köztük Németország, Jugoszláviát támadták meg, ami a második világháború újabb fázisának kezdetét jelentette. A német hadsereg gyorsan legyőzte a jugoszláv erőket, és a területet megszállta. Ezt követően a német hadsereg a Szovjetunió ellen indított hadjáratot, ami a keleti front megnyitását eredményezte.",
+     "type": "world",
+     "year": "1941",
+     "heading": "A második világháború kibővülése",
+     "link_hu": "A Jugoszlávia elleni támadás hozzájárult Magyarország hadiállapotának kikiáltásához, mivel a magyar kormány is a tengelyhatalmak oldalán kívánt fellépni."
+    },
+    "after": {
+     "body": "1941 áprilisában a tengelyhatalmak, köztük Németország, Jugoszláviát támadták meg, ami a második világháború újabb fázisának kezdetét jelentette. A német hadsereg gyorsan legyőzte a jugoszláv erőket, és a területet megszállta. Ezt követően a német hadsereg a Szovjetunió ellen indított hadjáratot, ami a keleti front megnyitását eredményezte.",
+     "type": "world",
+     "year": "1941",
+     "heading": "A második világháború kibővülése",
+     "link_hu": "Magyarország 1941 áprilisában részt vett a Jugoszlávia elleni támadásban, és megszállta a Délvidék egy részét (Bácska, Baranya, Muraköz); Teleki Pál miniszterelnök tiltakozásul öngyilkos lett."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-019",
+   "lesson_id": "ef68190d-e5ff-4712-9cec-09f25e571848",
+   "block_id": "612f1093-5fba-4e48-8474-d63d5f9960f8",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "heading",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "Cím: „A német megszállás Európában”; a szöveg Magyarország 1944. márciusi megszállásáról szól",
+   "explanation": "A cím nem egyezik a tartalommal.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "blokk-cím",
+   "fix": {
+    "before": {
+     "body": "1944 márciusában a német hadsereg megszállta Magyarországot, ami a magyar kormány politikai helyzetét drámaian megváltoztatta. A német megszállás következtében a zsidó lakosság deportálása felgyorsult, és a magyar kormány a német befolyás alatt állt. Ez a helyzet hozzájárult a magyar politikai élet radikális átalakulásához.",
+     "type": "world",
+     "year": "1944",
+     "heading": "A német megszállás Európában",
+     "link_hu": "A német megszállás közvetlen következménye volt a zsidóüldözés felerősödése Magyarországon, amely a háború végéhez közeledve egyre súlyosabbá vált."
+    },
+    "after": {
+     "body": "1944 márciusában a német hadsereg megszállta Magyarországot, ami a magyar kormány politikai helyzetét drámaian megváltoztatta. A német megszállás következtében a zsidó lakosság deportálása felgyorsult, és a magyar kormány a német befolyás alatt állt. Ez a helyzet hozzájárult a magyar politikai élet radikális átalakulásához.",
+     "type": "world",
+     "year": "1944",
+     "heading": "A német megszállás Magyarországon",
+     "link_hu": "A német megszállás közvetlen következménye volt a zsidóüldözés felerősödése Magyarországon, amely a háború végéhez közeledve egyre súlyosabbá vált."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-020",
+   "lesson_id": "ef68190d-e5ff-4712-9cec-09f25e571848",
+   "block_id": "402ca226-8a7d-4a06-946a-f9ba4c46dc0b",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Q: „Melyik terület került vissza Magyarországhoz a második világháború alatt?” A) Észak-Erdély, B) Újvidék, D) Székelyföld",
+   "explanation": "Több jó válasz: az Újvidék (Bácska, 1941) és a Székelyföld (Észak-Erdély, 1940) is Magyarországhoz került.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_Vienna_Award",
+     "title": "Second Vienna Award",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_occupation_of_Yugoslavia",
+     "title": "Hungarian occupation of Yugoslavia",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Észak-Erdély",
+      "B) Újvidék",
+      "C) Don-kanyar",
+      "D) Székelyföld"
+     ],
+     "question": "Melyik terület került vissza Magyarországhoz a második világháború alatt, amely a területi revízió része volt?",
+     "explanation": "Észak-Erdély visszacsatolása a második világháború alatt a területi revízió egyik fontos lépése volt, amely a trianoni békeszerződés következményeit próbálta orvosolni.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Észak-Erdély",
+      "Pozsony",
+      "C) Don-kanyar",
+      "Fiume"
+     ],
+     "question": "Melyik terület került vissza Magyarországhoz a második világháború alatt, amely a területi revízió része volt?",
+     "explanation": "Észak-Erdély visszacsatolása a második világháború alatt a területi revízió egyik fontos lépése volt, amely a trianoni békeszerződés következményeit próbálta orvosolni.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-021",
+   "lesson_id": "ef68190d-e5ff-4712-9cec-09f25e571848",
+   "block_id": "402ca226-8a7d-4a06-946a-f9ba4c46dc0b",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Kulcs B: „A németek elleni fegyveres ellenállás megvalósítása”",
+   "explanation": "Horthy kiugrási kísérlete fegyverszünet kérése volt a szövetségesektől (különösen a Szovjetuniótól), nem a németek elleni fegyveres ellenállás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Horthy_Proclamation",
+     "title": "Horthy Proclamation",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A szovjet csapatokkal való együttműködés",
+      "B) A németek elleni fegyveres ellenállás",
+      "C) A fegyveres semlegesség fenntartása",
+      "D) A nyilasok hatalomra jutása"
+     ],
+     "question": "Mi jellemezte a kiugrási kísérletet, amely 1944. október 15-én zajlott?",
+     "explanation": "A kiugrási kísérlet célja a németek elleni fegyveres ellenállás megvalósítása volt, amely azonban végül nem járt sikerrel.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Fegyverszünet kérése a szövetségesektől",
+      "A németek elleni nyílt háború megindítása",
+      "A háború folytatása a németek oldalán",
+      "A nyilasok hatalomra juttatása"
+     ],
+     "question": "Mi volt a célja a kiugrási kísérletnek (1944. október 15.)?",
+     "explanation": "Horthy 1944. október 15-én rádióban bejelentette a fegyverszünet kérését; a németek elrabolták a fiát, és lemondásra kényszerítették.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-022",
+   "lesson_id": "20f07103-b9ee-4597-94b0-d6b623d74089",
+   "block_id": "17a5e528-5a88-48ae-a9f7-ff4b69bbde19",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„a harmadik (1941) már a zsidók munkaszolgálatra kötelezését írta elő”",
+   "explanation": "A harmadik zsidótörvény (1941. évi XV. tc.) a zsidók és nem zsidók közötti házasságot tiltotta meg; a munkaszolgálat a honvédelmi törvény alapján 1939-től létezett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Anti-Jewish_laws_in_Hungary",
+     "title": "Anti-Jewish laws in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A zsidótörvények sorozata, amely 1938-ban kezdődött, a magyar zsidóság jogait és lehetőségeit drasztikusan korlátozta. Az első zsidótörvény a zsidók arányát a különböző szakmákban 20%-ra csökkentette. A második zsidótörvény (1939) további megszorításokat hozott, míg a harmadik (1941) már a zsidók munkaszolgálatra kötelezését írta elő. Ezek a törvények a holokauszt előkészítésének fontos lépései voltak, amelyek hozzájárultak a magyar zsidóság későbbi deportálásához.",
+     "type": "text",
+     "heading": "Zsidótörvények és a magyarországi zsidóság helyzete",
+     "key_term": "zsidótörvények"
+    },
+    "after": {
+     "body": "A zsidótörvények sorozata, amely 1938-ban kezdődött, a magyar zsidóság jogait és lehetőségeit drasztikusan korlátozta. Az első zsidótörvény a zsidók arányát a különböző szakmákban 20%-ra csökkentette. A második zsidótörvény (1939) további megszorításokat hozott, míg a harmadik (1941) a zsidók és nem zsidók közötti házasságot tiltotta meg. A zsidó férfiak munkaszolgálata a honvédelmi törvény alapján már 1939-től létezett, és a háború alatt egyre kegyetlenebbé vált. Ezek a törvények a holokauszt előkészítésének fontos lépései voltak, amelyek hozzájárultak a magyar zsidóság későbbi deportálásához.",
+     "type": "text",
+     "heading": "Zsidótörvények és a magyarországi zsidóság helyzete",
+     "key_term": "zsidótörvények"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-023",
+   "lesson_id": "20f07103-b9ee-4597-94b0-d6b623d74089",
+   "block_id": "17a5e528-5a88-48ae-a9f7-ff4b69bbde19",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„körülbelül 600 ezer magyar zsidó esett áldozatul”; „a zsidóság és más kisebbségek … megsemmisítését”",
+   "explanation": "A becslések 500 és 600 ezer között mozognak (kb. 565 ezer); a holokauszt fogalma a zsidók népirtását jelenti, a romák üldözése (porajmos) külön népirtás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/The_Holocaust_in_Hungary",
+     "title": "The Holocaust in Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Porajmos",
+     "title": "Porajmos",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A holokauszt a második világháború alatt zajló, a zsidóság és más kisebbségek, például a cigányság, szisztematikus megsemmisítését jelenti. A népirtás fogalma ide tartozik, hiszen a náci rezsim célja a zsidó nép teljes kiirtása volt. A holokauszt során körülbelül 600 ezer magyar zsidó esett áldozatul a népirtásnak. A történtek jelentős hatással voltak Magyarország történelmére és a társadalom morális megítélésére.",
+     "type": "text",
+     "heading": "A holokauszt és a népirtás fogalma",
+     "key_term": "holokauszt, népirtás"
+    },
+    "after": {
+     "body": "A holokauszt a második világháború alatt zajló, a zsidóság és más kisebbségek, például a cigányság, szisztematikus megsemmisítését jelenti. A népirtás fogalma ide tartozik, hiszen a náci rezsim célja a zsidó nép teljes kiirtása volt. A holokauszt során a becslések szerint 500–600 ezer (mintegy 565 ezer) magyar zsidó esett áldozatul a népirtásnak. A történtek jelentős hatással voltak Magyarország történelmére és a társadalom morális megítélésére.",
+     "type": "text",
+     "heading": "A holokauszt és a népirtás fogalma",
+     "key_term": "holokauszt, népirtás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-024",
+   "lesson_id": "20f07103-b9ee-4597-94b0-d6b623d74089",
+   "block_id": "17a5e528-5a88-48ae-a9f7-ff4b69bbde19",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Salkaházi Sára és Apor Vilmos a keresztény közösség védelmében segítettek”",
+   "explanation": "Salkaházi Sára szerzetesnővér zsidó üldözötteket bújtatott (1944 decemberében kivégezték), Apor Vilmos győri püspök 1945 húsvétján menekülő nőket védett meg, és egy szovjet katona lelőtte; nem csak a keresztények védelmében.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sára_Salkaházi",
+     "title": "Sára Salkaházi",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Vilmos_Apor",
+     "title": "Vilmos Apor",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A holokauszt idején számos ember, köztük Raoul Wallenberg, Salkaházi Sára és Apor Vilmos, kockázatot vállalt, hogy megmentse a zsidókat. Wallenberg diplomataként számos zsidót mentett meg, míg Salkaházi Sára és Apor Vilmos a keresztény közösség védelmében segítettek. Sztehlo Gábor pedig a gyermekek mentésére összpontosított. Az ő bátorságuk és humanitárius tetteik példaértékűek és emlékezetesek a magyar történelemben.",
+     "type": "text",
+     "heading": "Felelősség és embermentés a holokauszt alatt",
+     "key_term": "embermentés"
+    },
+    "after": {
+     "body": "A holokauszt idején számos ember, köztük Raoul Wallenberg, Salkaházi Sára és Apor Vilmos, kockázatot vállalt, hogy megmentse a zsidókat. Wallenberg diplomataként számos zsidót mentett meg, míg Salkaházi Sára szerzetesnővér zsidó üldözötteket bújtatott (1944 decemberében a nyilasok kivégezték), Apor Vilmos győri püspök pedig 1945 húsvétján menekülő nőket védett meg, és egy szovjet katona lelőtte. Sztehlo Gábor pedig a gyermekek mentésére összpontosított. Az ő bátorságuk és humanitárius tetteik példaértékűek és emlékezetesek a magyar történelemben.",
+     "type": "text",
+     "heading": "Felelősség és embermentés a holokauszt alatt",
+     "key_term": "embermentés"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-025",
+   "lesson_id": "20f07103-b9ee-4597-94b0-d6b623d74089",
+   "block_id": "17a5e528-5a88-48ae-a9f7-ff4b69bbde19",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Ezen a konferencián döntöttek a zsidók teljes megsemmisítéséről Európa-szerte.”",
+   "explanation": "A tömeggyilkosság a Wannsee-konferencia előtt már folyt (Einsatzgruppen, 1941); a konferencia a végrehajtás európai összehangolására szolgált, a döntés időpontját a történészek vitatják.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Wannsee_Conference",
+     "title": "Wannsee Conference",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Wannsee-i konferencia 1942. január 20-án zajlott, ahol a náci vezetők megfogalmazták az 'Endlösung', vagyis a zsidóság végső megoldásának tervét. Ezen a konferencián döntöttek a zsidók teljes megsemmisítéséről Európa-szerte. A konferencia eredményei közvetlenül befolyásolták a deportálások és a haláltáborok működését, beleértve Auschwitzot is. A konferencia fontos mérföldkő volt a holokauszt történetében.",
+     "type": "text",
+     "heading": "A Wannsee-i konferencia és az 'Endlösung' programja",
+     "key_term": "Endlösung, Wannsee-i konferencia"
+    },
+    "after": {
+     "body": "A Wannsee-i konferencia 1942. január 20-án zajlott, ahol a náci vezetők megfogalmazták az 'Endlösung', vagyis a zsidóság végső megoldásának tervét. A konferencián a már folyó tömeggyilkosság európai szintű végrehajtását hangolták össze (a döntés időpontját a történészek vitatják). A konferencia eredményei közvetlenül befolyásolták a deportálások és a haláltáborok működését, beleértve Auschwitzot is. A konferencia fontos mérföldkő volt a holokauszt történetében.",
+     "type": "text",
+     "heading": "A Wannsee-i konferencia és az 'Endlösung' programja",
+     "key_term": "Endlösung, Wannsee-i konferencia"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-026",
+   "lesson_id": "20f07103-b9ee-4597-94b0-d6b623d74089",
+   "block_id": "17a5e528-5a88-48ae-a9f7-ff4b69bbde19",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„1944 tavaszán … több mint 400 ezer magyar zsidót deportáltak”",
+   "explanation": "A deportálások 1944. május 15. és július 9. között zajlottak, a számot 437 ezerre becsülik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/The_Holocaust_in_Hungary",
+     "title": "The Holocaust in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A magyar holokauszt során 1944 tavaszán, a német megszállás következtében, több mint 400 ezer magyar zsidót deportáltak. A legnagyobb tömegmészárlás Auschwitzban zajlott, ahol sokan életüket vesztették. A holokauszt következményeként Magyarország társadalma mély sebeket szenvedett el, és a zsidó közösség drámai mértékben megfogyatkozott. A történtek máig hatással vannak a magyar társadalomra és identitásra.",
+     "type": "text",
+     "heading": "A magyar holokauszt és következményei",
+     "key_term": "magyar holokauszt"
+    },
+    "after": {
+     "body": "A magyar holokauszt során 1944 májusa és júliusa között, a német megszállás után, mintegy 437 ezer magyar zsidót deportáltak. A legnagyobb tömegmészárlás Auschwitzban zajlott, ahol sokan életüket vesztették. A holokauszt következményeként Magyarország társadalma mély sebeket szenvedett el, és a zsidó közösség drámai mértékben megfogyatkozott. A történtek máig hatással vannak a magyar társadalomra és identitásra.",
+     "type": "text",
+     "heading": "A magyar holokauszt és következményei",
+     "key_term": "magyar holokauszt"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-027",
+   "lesson_id": "20f07103-b9ee-4597-94b0-d6b623d74089",
+   "block_id": "17a5e528-5a88-48ae-a9f7-ff4b69bbde19",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Auschwitz … ahol több millió zsidót öltek meg”; „Kamenyec Podolszk … a zsidó közösségeket tömegesen végezték ki”",
+   "explanation": "Auschwitzban mintegy 1,1 millió embert öltek meg, közülük kb. egymilliót zsidót. Kamenyec-Podolszkban 1941 augusztusában mintegy 23 ezer zsidót lőttek agyon, köztük Magyarországról kitoloncolt, állampolgárság nélküli zsidókat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Auschwitz_concentration_camp",
+     "title": "Auschwitz concentration camp",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Kamianets-Podilskyi_massacre",
+     "title": "Kamianets-Podilskyi massacre",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Auschwitz a legismertebb haláltábor, ahol több millió zsidót öltek meg a holokauszt során. Kamenyec Podolszk, a mai Ukrajna területén, szintén tragikus helyszín volt, ahol a zsidó közösségeket tömegesen végezték ki. Ezek a helyszínek a holokauszt emlékezetének fontos részei, és a történelem során a népirtás borzalmait jelképezik. A topográfiai helyszínek megismerése segít megérteni a történtek súlyosságát és következményeit.",
+     "type": "text",
+     "heading": "Topográfia: Auschwitz és Kamenyec Podolszk",
+     "key_term": "Auschwitz, Kamenyec Podolszk"
+    },
+    "after": {
+     "body": "Auschwitz a legismertebb haláltábor, ahol mintegy 1,1 millió embert, közülük kb. egymillió zsidót öltek meg. Kamenyec Podolszk, a mai Ukrajna területén, szintén tragikus helyszín volt, ahol 1941 augusztusában mintegy 23 ezer zsidót lőttek agyon, köztük Magyarországról kitoloncolt zsidókat is. Ezek a helyszínek a holokauszt emlékezetének fontos részei, és a történelem során a népirtás borzalmait jelképezik. A topográfiai helyszínek megismerése segít megérteni a történtek súlyosságát és következményeit.",
+     "type": "text",
+     "heading": "Topográfia: Auschwitz és Kamenyec Podolszk",
+     "key_term": "Auschwitz, Kamenyec Podolszk"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-028",
+   "lesson_id": "20f07103-b9ee-4597-94b0-d6b623d74089",
+   "block_id": "bb5f10f1-a36e-4ea7-b111-733caf4328b3",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "Általános világblokk: „a holokauszt jelensége … világszerte megjelent”, év és fejléc nélkül; a ruandai népirtással való összemosás",
+   "explanation": "A holokauszt egyedi (állami, iparszerű, teljes megsemmisítésre irányuló); az általános szöveg félrevezető. Javaslat: Auschwitz felszabadítása (1945. január 27.), Budapest gettójának felszabadítása.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Liberation_of_Auschwitz",
+     "title": "Liberation of Auschwitz",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A holokauszt jelensége nemcsak Magyarországon, hanem világszerte megjelent a történelem során, különböző kultúrákban és időszakokban. Más népirtások, mint például a ruandai népirtás, szintén hasonló mechanizmusok révén zajlottak le, ahol etnikai vagy vallási alapon üldözték az embereket.",
+     "type": "world",
+     "year": "",
+     "heading": "",
+     "link_hu": ""
+    },
+    "after": {
+     "body": "1945. január 27-én szovjet csapatok felszabadították az auschwitzi tábort, ahol addig mintegy 1,1 millió embert öltek meg. A napot ma a holokauszt nemzetközi emléknapjaként tartják számon.",
+     "type": "world",
+     "year": "1945",
+     "heading": "Auschwitz felszabadítása",
+     "link_hu": "A budapesti gettót 1945. január 17–18-án szabadították fel; a magyarországi zsidók közül mintegy 565 ezren váltak a holokauszt áldozatává."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-029",
+   "lesson_id": "20f07103-b9ee-4597-94b0-d6b623d74089",
+   "block_id": "bc0bd109-1eff-4d9e-946a-3711a822b6a0",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options[0]",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A zsidóság és a cigányság megsemmisítése”",
+   "explanation": "A deportálások (Magyarországról 1944-ben) célja a zsidóság megsemmisítése volt; a romák deportálása külön, kisebb léptékű folyamat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/The_Holocaust_in_Hungary",
+     "title": "The Holocaust in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A zsidóság és a cigányság megsemmisítése",
+      "B) A zsidók visszatelepítése",
+      "C) A zsidók munkába állítása",
+      "D) A zsidók védelme"
+     ],
+     "question": "Mi volt a célja a deportálásoknak a második világháború alatt?",
+     "explanation": "A deportálások célja a zsidóság és a cigányság megsemmisítése volt, amely a holokauszt részeként valósult meg.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A zsidóság megsemmisítése a haláltáborokban",
+      "B) A zsidók visszatelepítése",
+      "C) A zsidók munkába állítása",
+      "D) A zsidók védelme"
+     ],
+     "question": "Mi volt a célja a deportálásoknak a második világháború alatt?",
+     "explanation": "A magyarországi zsidók 1944-es deportálásának célja a megsemmisítés volt; többségüket Auschwitzban gyilkolták meg.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-030",
+   "lesson_id": "47cc2e04-87aa-492a-9e72-4445b9a06770",
+   "block_id": "0e237ac5-3559-4188-b333-1dbdf36b4c55",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A villámháború következményeként a háború hamarosan globálissá vált, és a magyar hadsereg is részt vett”",
+   "explanation": "Non sequitur: a háború a világméretűvé válását nem a villámháború okozta; a magyar hadsereg részvétele ezzel nem magyarázható.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Blitzkrieg",
+     "title": "Blitzkrieg",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A villámháború, azaz Blitzkrieg, a német hadviselés új stratégiája volt, amely gyors és meglepetésszerű támadásokra épült. Ezzel a módszerrel a német csapatok 1940 tavaszán gyorsan elfoglalták Franciaországot. A villámháború következményeként a háború hamarosan globálissá vált, és a magyar hadsereg is részt vett a harcokban. A stratégia hatékonysága azonban súlyos következményekkel járt a civil lakosságra nézve is.",
+     "type": "text",
+     "heading": "A villámháború és következményei",
+     "key_term": "villámháború"
+    },
+    "after": {
+     "body": "A villámháború, azaz Blitzkrieg, a német hadviselés új stratégiája volt, amely gyors és meglepetésszerű támadásokra épült. Ezzel a módszerrel a német csapatok 1940 tavaszán gyorsan elfoglalták Franciaországot. A villámháborús győzelmek után Németország 1941-ben megtámadta a Szovjetuniót, ahol ez a stratégia már nem hozott gyors döntést. A stratégia hatékonysága azonban súlyos következményekkel járt a civil lakosságra nézve is.",
+     "type": "text",
+     "heading": "A villámháború és következményei",
+     "key_term": "villámháború"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-031",
+   "lesson_id": "47cc2e04-87aa-492a-9e72-4445b9a06770",
+   "block_id": "0e237ac5-3559-4188-b333-1dbdf36b4c55",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Magyarországon a partizánok tevékenysége kiemelkedő jelentőségű volt”",
+   "explanation": "A magyarországi ellenállás gyenge maradt: néhány kis partizáncsoport és a Magyar Front (Bajcsy-Zsilinszky Endre, akit 1944 decemberében kivégeztek) működött.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Endre_Bajcsy-Zsilinszky",
+     "title": "Endre Bajcsy-Zsilinszky",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Resistance_in_Hungary",
+     "title": "Resistance in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A második világháború alatt számos ellenállási mozgalom alakult ki, amelyek célja a megszálló hatalmak elleni harc volt. Magyarországon a partizánok tevékenysége kiemelkedő jelentőségű volt, akik különböző akciókat hajtottak végre a német és nyilas hatóságok ellen. Az ellenállás formái között szerepeltek a titkos csoportok, a sztrájkok és a propaganda tevékenységek is. Ezek az akciók hozzájárultak a háború végkimeneteléhez és a magyar társadalom ellenálló képességéhez.",
+     "type": "text",
+     "heading": "Az ellenállás formái",
+     "key_term": "partizán"
+    },
+    "after": {
+     "body": "A második világháború alatt számos ellenállási mozgalom alakult ki, amelyek célja a megszálló hatalmak elleni harc volt. Magyarországon az ellenállás gyenge maradt: néhány kisebb partizáncsoport és a Magyar Front (Bajcsy-Zsilinszky Endre, akit 1944 decemberében kivégeztek) működött a németek és a nyilasok ellen. Az ellenállás formái között szerepeltek a titkos csoportok, a sztrájkok és a propaganda tevékenységek is. Ezek az akciók hozzájárultak a háború végkimeneteléhez és a magyar társadalom ellenálló képességéhez.",
+     "type": "text",
+     "heading": "Az ellenállás formái",
+     "key_term": "partizán"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-032",
+   "lesson_id": "47cc2e04-87aa-492a-9e72-4445b9a06770",
+   "block_id": "83f108f1-a369-46b1-98ba-8e1345cf91ca",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "Általános világblokk: „más történelmi korszakokban és kultúrákban is megjelentek”, év és fejléc nélkül",
+   "explanation": "Nincs valódi világesemény. Javaslat: a nankingi mészárlás (1937 december–1938 január), a polgári lakosság elleni háborús bűnök példája, az újvidéki razziával (1942) együtt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nanjing_Massacre",
+     "title": "Nanjing Massacre",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Novi_Sad_raid",
+     "title": "Novi Sad raid",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A második világháború jellemzői, mint a háborús bűnök és a polgári lakosság elleni terror, más történelmi korszakokban és kultúrákban is megjelentek, például az első világháború, a kínai polgárháború vagy a jugoszláv háborúk során.",
+     "type": "note",
+     "year": "",
+     "heading": "",
+     "link_hu": ""
+    },
+    "after": {
+     "body": "1937 decemberében a japán hadsereg elfoglalta Nankingot, és heteken át polgári lakosokat és hadifoglyokat gyilkolt; az áldozatok számát a becslések tízezrekre, egyes becslések szerint 200 ezer fölé teszik.",
+     "type": "note",
+     "year": "1937",
+     "heading": "A nankingi mészárlás",
+     "link_hu": "Magyarországon az 1942. januári újvidéki razzián magyar csendőrök és katonák Újvidéken és környékén több mint háromezer szerbet és zsidót öltek meg."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-033",
+   "lesson_id": "51eefeba-f746-488f-9d69-cf049e2580f0",
+   "block_id": "00ac9732-a923-48dc-b5e5-5ac78b203a06",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A város védelmét a nyilasok irányították”",
+   "explanation": "Budapestet német és magyar csapatok védték (a német parancsnok Karl Pfeffer-Wildenbruch volt); a nyilasok terrort gyakoroltak a civilek, főként a zsidók ellen.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Budapest",
+     "title": "Siege of Budapest",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1944 végén a Vörös Hadsereg megkezdte Budapest ostromát, amely 1944 decemberétől 1945 februárjáig tartott. A város védelmét a nyilasok irányították, akik brutális módszerekkel próbálták megakadályozni a szovjet csapatok előrenyomulását. A harcok során Budapest súlyos pusztításon ment keresztül, és a lakosság szenvedett a bombázások és a harcok következményeitől. Az ostrom végeztével a város a szovjet csapatok kezére került, ami a magyar történelem egy újabb sötét időszakát indította el.",
+     "type": "text",
+     "heading": "A Vörös Hadsereg és Budapest ostroma",
+     "key_term": "Vörös Hadsereg"
+    },
+    "after": {
+     "body": "1944 végén a Vörös Hadsereg megkezdte Budapest ostromát, amely 1944 decemberétől 1945 februárjáig tartott. A várost német és magyar csapatok védték (a német parancsnok Karl Pfeffer-Wildenbruch volt), a nyilasok pedig brutális terrort gyakoroltak a civilek, különösen a zsidók ellen. A harcok során Budapest súlyos pusztításon ment keresztül, és a lakosság szenvedett a bombázások és a harcok következményeitől. Az ostrom végeztével a város a szovjet csapatok kezére került, ami a magyar történelem egy újabb sötét időszakát indította el.",
+     "type": "text",
+     "heading": "A Vörös Hadsereg és Budapest ostroma",
+     "key_term": "Vörös Hadsereg"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-034",
+   "lesson_id": "51eefeba-f746-488f-9d69-cf049e2580f0",
+   "block_id": "00ac9732-a923-48dc-b5e5-5ac78b203a06",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A háború után számos magyar embert deportáltak a Szovjetunióba”",
+   "explanation": "A deportálások 1944 őszétől, a szovjet csapatok bevonulásával kezdődtek, nem a háború után; a becslések szerint mintegy 600–700 ezer magyar katonát és civilt hurcoltak el.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Malenki_robot",
+     "title": "Malenki robot",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A malenkij robot kifejezés a szovjet munkatáborokba való kényszerített munkát jelöli, amelyet sok magyar állampolgár is megtapasztalt. A háború után számos magyar embert deportáltak a Szovjetunióba, ahol kemény munkára kényszerítették őket. A deportálások célja a munkaerő biztosítása volt a szovjet gazdaság számára, és sokan közülük soha nem tértek vissza. Ez a folyamat rendkívül súlyosan érintette a magyar társadalmat, hiszen családok szakadtak szét, és a közösségek jelentős része elveszett.",
+     "type": "text",
+     "heading": "A malenkij robot és a deportálások",
+     "key_term": "malenkij robot"
+    },
+    "after": {
+     "body": "A malenkij robot kifejezés a szovjet munkatáborokba való kényszerített munkát jelöli, amelyet sok magyar állampolgár is megtapasztalt. 1944 őszétől, a harcok végén és után számos magyar embert (katonát és civilt) hurcoltak a Szovjetunióba, ahol kemény munkára kényszerítették őket. A deportálások célja a munkaerő biztosítása volt a szovjet gazdaság számára, és sokan közülük soha nem tértek vissza. Ez a folyamat rendkívül súlyosan érintette a magyar társadalmat, hiszen családok szakadtak szét, és a közösségek jelentős része elveszett.",
+     "type": "text",
+     "heading": "A malenkij robot és a deportálások",
+     "key_term": "malenkij robot"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-035",
+   "lesson_id": "51eefeba-f746-488f-9d69-cf049e2580f0",
+   "block_id": "00ac9732-a923-48dc-b5e5-5ac78b203a06",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A felvidéki magyarok jogfosztása szintén a háború következménye volt”",
+   "explanation": "Konkrétum hiányzik: a felvidéki magyarok jogfosztását a Beneš-dekrétumok (1945) mondták ki, a kollektív bűnösség elvén.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Beneš_decrees",
+     "title": "Beneš decrees",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A második világháború végén a határon túli magyar közösségeket is súlyosan érintették a jogfosztások és a megtorlások. A délvidéki vérengzés során a helyi magyarokat tömegesen üldözték, míg Kárpátalján deportálásokra került sor. A felvidéki magyarok jogfosztása szintén a háború következménye volt, amely a magyar nemzeti identitás szempontjából különösen fájdalmas időszakot jelentett. Ezek az események hozzájárultak a magyar közösségek szétszakadásához és a nemzeti tudat erodálódásához.",
+     "type": "text",
+     "heading": "A határon túli magyarok jogfosztása",
+     "key_term": "délvidéki vérengzés"
+    },
+    "after": {
+     "body": "A második világháború végén a határon túli magyar közösségeket is súlyosan érintették a jogfosztások és a megtorlások. A délvidéki vérengzés során a helyi magyarokat tömegesen üldözték, míg Kárpátalján deportálásokra került sor. A felvidéki magyarok jogfosztását a Beneš-dekrétumok (1945) mondták ki, a kollektív bűnösség elvén, amely a magyar nemzeti identitás szempontjából különösen fájdalmas időszakot jelentett. Ezek az események hozzájárultak a magyar közösségek szétszakadásához és a nemzeti tudat erodálódásához.",
+     "type": "text",
+     "heading": "A határon túli magyarok jogfosztása",
+     "key_term": "délvidéki vérengzés"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-036",
+   "lesson_id": "51eefeba-f746-488f-9d69-cf049e2580f0",
+   "block_id": "2520f850-3370-4df2-8322-de35763d2df1",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "Általános világblokk: „más kultúrákban és korokban is megjelentek”, év és fejléc nélkül",
+   "explanation": "Nincs valódi világesemény. Javaslat: a potsdami konferencia (1945 nyara) döntése a németek kitelepítéséről, amely Magyarországot is érintette.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Potsdam_Conference",
+     "title": "Potsdam Conference",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A lecke fogalmai és jelenségei, mint a deportálások és a háborús erőszak, más kultúrákban és korokban is megjelentek, például a második világháború alatt más országokban is zajlottak hasonló események.",
+     "type": "no_world"
+    },
+    "after": {
+     "body": "1945 nyarán a potsdami konferencián a győztes hatalmak jóváhagyták a német lakosság kitelepítését Lengyelországból, Csehszlovákiából és Magyarországról. Magyarországról 1946 és 1948 között mintegy 200 ezer német nemzetiségű lakost telepítettek ki Németországba.",
+     "type": "no_world"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-07-037",
+   "lesson_id": null,
+   "block_id": "1be9b6ac-2981-4c75-bbf9-95e199a01951",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„1945. május 9-én ért véget az európai háború, amikor Németország kapitulált a szövetségesek előtt”",
+   "explanation": "A kapitulációt május 8-án késő este írták alá, a Szovjetunióban ekkor már május 9. volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/German_Instrument_of_Surrender",
+     "title": "German Instrument of Surrender",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az európai háború vége.",
+      "B) A japán főváros bombázása.",
+      "C) A második bécsi döntés.",
+      "D) A Pearl Harbor elleni támadás."
+     ],
+     "question": "Mi történt 1945. május 9-én?",
+     "explanation": "1945. május 9-én ért véget az európai háború, amikor Németország kapitulált a szövetségesek előtt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az európai háború vége.",
+      "B) A japán főváros bombázása.",
+      "C) A második bécsi döntés.",
+      "D) A Pearl Harbor elleni támadás."
+     ],
+     "question": "Mi történt 1945. május 9-én?",
+     "explanation": "Németország feltétel nélküli kapitulációját 1945. május 8-án késő este írták alá Berlinben; a Szovjetunióban ekkor már május 9. volt, ezért a szovjet győzelem napja május 9.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-1112-07-001": "912b8e8d-09d0-4fbd-b735-e9908efb4b1c",
+  "HIST-1112-07-002": "252b317d-a7db-4d0a-a0d3-3449ee851379",
+  "HIST-1112-07-003": "e9de4c1a-2f61-47d4-950e-53c55ac97114",
+  "HIST-1112-07-004": "352b971a-0626-4033-8d22-389039ab45b5",
+  "HIST-1112-07-005": "ce6203d3-b22b-47b1-913f-1d2902564c00",
+  "HIST-1112-07-006": "e06daf2c-b92e-4caf-9dbc-52cd0a6bc59e",
+  "HIST-1112-07-007": "e9444f97-cd43-46a2-8861-acf223ec1f47",
+  "HIST-1112-07-008": "1c4c3811-7ef3-4562-8257-e1d361f0841f",
+  "HIST-1112-07-009": "729166ea-18ac-4202-825e-e5d2fd24340b",
+  "HIST-1112-07-010": "425e7f60-4d1f-4d7c-b728-243e1cf102b3",
+  "HIST-1112-07-011": "6847ac7e-5064-4d57-a0fa-93f8c3e707b7",
+  "HIST-1112-07-012": "16988ba4-b68f-483b-b37d-487d8bdb0256",
+  "HIST-1112-07-013": "140db895-2b48-40aa-ab83-56e160da2287",
+  "HIST-1112-07-014": "aa505c04-182e-47ba-aea1-f5989f7c9859",
+  "HIST-1112-07-015": "f445d561-aab2-49de-a0df-6300e721231d",
+  "HIST-1112-07-016": "f9271929-1a0d-4b6f-bbca-0e270fb05eda",
+  "HIST-1112-07-017": "c5d10e6f-268b-4d6f-8947-49ac595492c4",
+  "HIST-1112-07-018": "36b812cb-dbdc-4072-acc1-56cc22b73dc9",
+  "HIST-1112-07-019": "b5710e04-030c-40ad-9ff8-b19acaf54163",
+  "HIST-1112-07-020": "6138e603-1548-497d-8825-180b92043a91",
+  "HIST-1112-07-021": "dd6aaa7a-499c-48a6-82b0-aa01b80ad57a",
+  "HIST-1112-07-022": "a66feb99-c323-4892-b5a2-e0a5b5218395",
+  "HIST-1112-07-023": "c347349d-28da-42d3-81d0-f2a629ffb767",
+  "HIST-1112-07-024": "5fd7d86c-4778-4be8-89c5-75e9098c2a1d",
+  "HIST-1112-07-025": "081e668c-1cfb-4986-9220-4ac7aedc4e63",
+  "HIST-1112-07-026": "0447d6d5-db7c-4f2f-b7d6-343b6c3a4639",
+  "HIST-1112-07-027": "1b49952a-e8d0-4216-a897-bd5b6ba6dd3c",
+  "HIST-1112-07-029": "71f5c7dd-7ac0-4f02-923d-f592147a34f0",
+  "HIST-1112-07-030": "7b7acd10-45b1-49cc-8dc1-1a2cdf42e866",
+  "HIST-1112-07-031": "ae1c8a97-1f94-47d8-a41e-c8aab6279b36",
+  "HIST-1112-07-033": "b282ac20-0f43-46be-b575-374ce02c9ac4",
+  "HIST-1112-07-034": "60e59819-3d19-47e7-8ec1-6649b97799d8",
+  "HIST-1112-07-035": "d593a96e-351a-45be-bb7d-a4fb59b18fde",
+  "HIST-1112-07-037": "5222cc06-80e4-4eff-8d19-a8b3cddf3f93"
+ }
+}

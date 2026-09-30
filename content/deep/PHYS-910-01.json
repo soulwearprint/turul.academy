@@ -1,0 +1,238 @@
+{
+ "nat_id": "PHYS-910-01",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "d282af5a-1d19-4833-b13c-60bf1ec8e7e6",
+   "title_hu": "Mozgások jellemzése és sebesség fogalma",
+   "text_block_id": "138441a5-3033-4abb-986a-7ae9f4fe2305",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Út és elmozdulás nem ugyanaz",
+     "body": "Az út a pálya tényleges hossza, az elmozdulás viszont a kezdőpontból a végpontba mutató egyenes szakasz. Ha egy 400 méteres pályán egy teljes kört futsz, az utad 400 méter, az elmozdulásod viszont nulla, hiszen ugyanoda érkeztél vissza. Az elmozdulásnak iránya is van, ezért vektor. Az út mindig legalább akkora, mint az elmozdulás nagysága.",
+     "did_you_know": "Az autók kilométerórája az utat méri, nem az elmozdulást: hazafelé menet is nő az érték.",
+     "think": "Mennyi az elmozdulásod, ha otthonról elmész a boltba, és onnan hazasétálsz?",
+     "think_answer": "Nulla, mert a végpont ugyanaz, mint a kezdőpont. Az utad viszont a bolt oda-vissza távolsága."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Átlagsebesség: az egész út, az egész idő",
+     "body": "Az átlagsebesség az összes megtett út és az összes eltelt idő hányadosa, a közbeni megállásokkal együtt. Ha egy busz 30 kilométert tesz meg 40 perc alatt, akkor v = 30 km : (2/3 h) = 45 km/h. A km/h-ból m/s-ba úgy számolunk át, hogy elosztjuk 3,6-tal: 36 km/h éppen 10 m/s.",
+     "did_you_know": "Aki 100 métert 10 másodperc alatt fut le, az átlagosan 10 m/s-mal, vagyis 36 km/h-val halad.",
+     "think": "Egy vonat 2 óra alatt 150 kilométert tesz meg, és közben 20 percig áll. Mennyi az átlagsebessége?",
+     "think_answer": "150 km : 2 h = 75 km/h, mert az összes időt vesszük, a várakozást is."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Honnan tudja az autó a sebességét?",
+     "body": "A sebességmérő általában a kerekek fordulatszámából számol: ismert a kerék kerülete, így a fordulatok száma megadja a megtett utat, az idővel együtt pedig a sebességet. Ezért egy más méretű gumi kis eltérést okozhat a kijelzőn. Az előírások szerint a sebességmérő nem mutathat kevesebbet a valódi sebességnél, ezért néha kicsivel többet mutat annál.",
+     "did_you_know": "A szakaszsebesség-mérő két pont között méri az átlagsebességet, így a pillanatnyi lassítás nem segít.",
+     "think": "Miért nem mutathat kevesebbet a sebességmérő a valódinál?",
+     "think_answer": "Mert akkor a vezető észrevétlenül gyorsabban menne, mint hinné, és túllépné a sebességhatárt."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Az s = v · t használata",
+     "body": "Állandó sebességnél a megtett út a sebesség és az idő szorzata. A 80 km/h a 2 órán át 160 km, ahogy a kártya mondja. Rövid időnél érdemes m/s-ban számolni: 72 km/h éppen 20 m/s, ami 5 másodperc alatt 100 métert jelent. Ha az utat és a sebességet ismered, az időt is kiszámolhatod: t = s : v.",
+     "did_you_know": "A grafikonon az egyenletes mozgás út–idő görbéje egyenes, meredeksége a sebesség.",
+     "think": "Mekkora utat tesz meg 10 perc alatt egy 90 km/h-val haladó autó?",
+     "think_answer": "10 perc = 1/6 óra, így 90 km/h · 1/6 h = 15 km."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Miért lejtőn kísérletezünk?",
+     "body": "A lejtő meredeksége határozza meg, milyen gyorsan gyorsul a golyó: meredekebb lejtőn nagyobb a gyorsulás. A golyó anyaga csak a gördülési ellenálláson és a súrlódáson keresztül számít, a súrlódásmentes esetben a gyorsulás nem függ a tömegtől. A lejtő lassítja az esést, így pontatlan óra mellett is mérhető a mozgás.",
+     "did_you_know": "Galilei vízórával mérte az időt: a lejtőn legördülő golyó alatt kifolyó víz tömegét mérte meg.",
+     "think": "Mit várunk, ha ugyanazt a golyót meredekebb lejtőn engedjük el?",
+     "think_answer": "Nagyobb lesz a gyorsulása, ezért a lejtő alján nagyobb sebességet ér el, és rövidebb idő alatt ér le."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Galilei és az egyenletes gyorsulás",
+     "body": "Galilei kimutatta, hogy a szabadon eső testek egyenletesen gyorsulnak: a megtett út az idő négyzetével arányos. Levegőben a nehéz és a könnyű test légellenállás miatt eltérően esik, vákuumban viszont egyszerre érnek le. Egy híres kísérlet a Holdon volt: 1971-ben az Apollo–15 asztronautája egyszerre ejtett le egy kalapácsot és egy tollat, és egyszerre értek talajt.",
+     "did_you_know": "A pisai ferde toronyban végzett kísérlet valószínűleg csak legenda, Galilei lejtőn dolgozott.",
+     "think": "Miért esik a toll lassabban, mint a kő a Földön?",
+     "think_answer": "A levegő ellenállása a tollat jobban fékezi. Vákuumban a kettő ugyanúgy esik."
+    }
+   ]
+  },
+  {
+   "lesson_id": "40a75ee2-1c77-4c10-9de7-d93fa99aef11",
+   "title_hu": "Állandó sebességű mozgások megfigyelése",
+   "text_block_id": "d263c865-d485-48b4-8dd4-d6031a70f833",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "A mozgólépcső sebessége",
+     "body": "A mozgólépcső jellemzően 0,5–0,7 m/s sebességgel halad. Egy 6 méter hosszú lépcső 0,5 m/s-nál 12 másodperc alatt visz fel. Ha közben te is lépsz, a sebességek összeadódnak: 0,5 m/s + 1 m/s = 1,5 m/s a talajhoz képest. A mozgást mindig valamihez viszonyítjuk, ezt nevezzük vonatkoztatási rendszernek.",
+     "did_you_know": "A repülőtéri mozgójárdán állva haladsz, a mellette lévőhöz képest mégis gyorsabb vagy.",
+     "think": "Mennyi idő alatt teszel meg 30 métert 1,5 m/s-mal a mozgójárdán sétálva?",
+     "think_answer": "30 m : 1,5 m/s = 20 s."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Mi tartja egyenletesen a buborékot?",
+     "body": "A Mikola-csőben a buborékot felfelé a felhajtóerő hajtja, a folyadék közegellenállása fékezi. Rövid gyorsulás után a két erő kiegyenlítődik, így a buborék állandó sebességgel halad. A cső dőlésszögétől függ a sebesség: meredekebb csőben gyorsabb a buborék. A cső Mikola Sándor magyar fizikatanárról kapta a nevét.",
+     "did_you_know": "Az ejtőernyős is hasonlóan éri el az állandó végsebességet: amikor a légellenállás egyenlő a súlyával.",
+     "think": "Mikor mozog egy test állandó sebességgel, ha több erő hat rá?",
+     "think_answer": "Ha az erők eredője nulla, vagyis kiegyenlítik egymást."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Számoljunk az esésről",
+     "body": "Az elejtett labda sebessége minden másodpercben körülbelül 10 m/s-mal nő. Egy másodperc után kb. 10 m/s, két másodperc után kb. 20 m/s. Az út közben a másodperc négyzetével nő: 1 s alatt kb. 5 m, 2 s alatt kb. 20 m, 3 s alatt kb. 45 m. Ezért is halálos veszély egy magas épületről az esés.",
+     "did_you_know": "A nehézségi gyorsulás pontos értéke 9,81 m/s², de a számoláshoz sokszor 10 m/s²-et használunk.",
+     "think": "Mekkora utat tesz meg egy elejtett kő 3 másodperc alatt (g ≈ 10 m/s²)?",
+     "think_answer": "s = 5 · 3² = 45 m."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A gyorsulás mértékegysége",
+     "body": "A nehézségi gyorsulás 9,81 m/s², vagyis szabadeséskor a sebesség másodpercenként 9,81 m/s-mal nő. A gyorsulás egysége azért m/s², mert a sebesség változását (m/s) osztjuk az idővel (s). A Földön g értéke helyenként kissé eltér: a sarkokon nagyobb (kb. 9,83 m/s²), az Egyenlítőn kisebb (kb. 9,78 m/s²).",
+     "did_you_know": "A Holdon a nehézségi gyorsulás körülbelül hatoda a földinek, ezért ugrálnak ott olyan magasra az űrhajósok.",
+     "think": "Miért m/s² a gyorsulás mértékegysége?",
+     "think_answer": "Mert a sebességváltozást (m/s) osztjuk az idővel (s), így (m/s) : s = m/s²."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Súrlódás nélküli mozgás",
+     "body": "Ha a súrlódás nagyon kicsi, a test sokáig változatlan sebességgel csúszik tovább. A jégkorong ezért siklik messzire, a légpárnás asztalon pedig a korongot a levegő emeli el a felülettől. Ez Newton első törvényét mutatja: erő hiányában a test megtartja mozgásállapotát. A mágnesesen lebegő vonatok ugyanezért érhetnek el 400 km/h feletti sebességet.",
+     "did_you_know": "Az űrben, ahol alig van közegellenállás, a szondák évekig haladnak hajtóanyag nélkül.",
+     "think": "Miért áll meg mégis a jégkorong előbb-utóbb?",
+     "think_answer": "Mert a jég és a levegő kis súrlódása és közegellenállása lassítja."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Eötvös Loránd és a torziós inga",
+     "body": "Eötvös Loránd (1848–1919) torziós ingája a nehézségi erő kis helyi változásait méri, nem magát a gravitációs gyorsulást. Az ingával a föld alatti sűrűségkülönbségeket, például az olajat rejtő rétegeket lehet kimutatni. Eötvös kísérleteivel a nehéz (gravitációs) és a tehetetlen tömeg egyenlőségét is igazolta nagyjából százmilliomod pontossággal, ami később Einstein általános relativitáselméletének fontos alapja lett.",
+     "did_you_know": "Az Eötvös-ingával az 1910-es és 1920-as években olajmezőket kerestek a világ számos táján.",
+     "think": "Mire használják a torziós ingát a nehézségi erő méréséhez?",
+     "think_answer": "Arra, hogy a nehézségi erő kis helyi eltéréseit kimutassák, és ebből a föld alatti kőzetek sűrűségére következtessenek."
+    }
+   ]
+  },
+  {
+   "lesson_id": "c256e214-c597-416e-8ef8-23004c39c063",
+   "title_hu": "Esés és csúszás vizsgálata",
+   "text_block_id": "dfd4f409-d34a-4b32-a6f4-17eeb4f34338",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Egy kút mélysége hangból és esésből",
+     "body": "A kút mélysége az esési időből számolható: h = ½ · g · t². Ha a kő 2 másodperc alatt ér a vízbe, a kút mélysége kb. 19,6 méter. Nagyobb mélységnél a hang visszaérkezési idejét is figyelembe kell venni, mert a hang kb. 340 m/s sebességgel halad: 20 méterről ez már 0,06 másodperc.",
+     "did_you_know": "A kútba dobott kő esési ideje hosszabb, mint amit a képlet mutat, ha figyelmen kívül hagyjuk, hogy a hang is időbe telik.",
+     "think": "Miért kevésbé pontos a módszer nagyon mély kútnál?",
+     "think_answer": "Mert a hang visszajutása az idő nagyobb részét adja, és a légellenállás is számít."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A becsapódási sebesség és az energia",
+     "body": "Az energiamegmaradás szerint a leeséskor a helyzeti energia mozgási energiává alakul: m · g · h = ½ · m · v². Innen v = √(2 · g · h), és a tömeg kiesik, mert mindkét oldalon szerepel. Egy 5 méterről eső test sebessége 10 m/s, vagyis 36 km/h. Ez az eredmény a légellenállás elhanyagolásával igaz.",
+     "did_you_know": "Egy 20 méter magasból eső test (kb. 6. emelet) 20 m/s-mal, vagyis 72 km/h-val csapódik be.",
+     "think": "Mekkora sebességgel csapódik be egy 20 méterről eső test (g ≈ 10 m/s²)?",
+     "think_answer": "v = √(2 · 10 · 20) = 20 m/s, ami 72 km/h."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mikor indul meg a könyv?",
+     "body": "A könyv akkor kezd csúszni, ha a nehézségi erő lejtővel párhuzamos összetevője nagyobb, mint a tapadási súrlódás legnagyobb értéke. Emeld fokozatosan a deszkát, és figyeld meg a szöget, amelynél a könyv megindul. Ez a tapadási határszög: minél nagyobb a súrlódás, annál meredekebb lejtő kell. Csúszás közben a súrlódás már állandó erővel fékez.",
+     "did_you_know": "Az autógumi és az út közötti tapadási súrlódás miatt tud a kocsi elindulni és fékezni.",
+     "think": "Miért kell durva felületen meredekebb lejtő ahhoz, hogy a könyv megcsússzon?",
+     "think_answer": "Mert nagyobb a tapadási súrlódás, amit a lejtő irányú összetevőnek le kell győznie."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A nehézségi erő két összetevője",
+     "body": "A lejtőn a nehézségi erő két részre bontható: az egyik a lejtővel párhuzamosan lefelé húz, a másik a lejtőre merőlegesen nyomja a testet. A súrlódási erő a merőleges összetevővel arányos, ezért meredekebb lejtőn kisebb a súrlódás, és nagyobb a lefelé húzó összetevő. Ezért gyorsul jobban a test a meredekebb lejtőn. A cipő az esőben azért csúszik, mert a víz a súrlódást csökkenti.",
+     "did_you_know": "A síelők a lejtő szögével és a viasszal is a súrlódást szabályozzák.",
+     "think": "Miért nő a gyorsulás, ha a lejtő meredekebb?",
+     "think_answer": "Mert a lejtővel párhuzamos összetevő nő, a súrlódást okozó merőleges összetevő pedig csökken."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A mérési hiba és a reakcióidő",
+     "body": "A kézi stopperrel mért idő hibája a reakcióidőből ered, ami átlagosan 0,15–0,25 másodperc. Egy 2 másodperces esésnél ez már 10 százalékos hiba, és ezt a digitális kijelző sem szünteti meg. Pontosabb mérést fényrekesz és időmérő vagy videóelemzés ad. Az átlagolás csökkenti a véletlen hibákat, de az állandó hibát (például rossz kezdőpont) nem.",
+     "did_you_know": "Egy telefon videója másodpercenként 30 vagy 60 képkockát rögzít, így 0,03 másodperces pontossággal lehet időt mérni.",
+     "think": "Miért nem elég a digitális stopperóra az esési idő pontos méréséhez?",
+     "think_answer": "Mert a mérés pontosságát a stopper indítása és leállítása közötti emberi reakcióidő rontja."
+    }
+   ]
+  },
+  {
+   "lesson_id": "a64a196e-8702-4500-91a9-508ca6bb22ca",
+   "title_hu": "Gyorsulás és mozgás leírása",
+   "text_block_id": "eaa775ab-7bf5-4483-a123-9d622e8b3c8b",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mennyi a gyorsulás 0-tól 100-ig?",
+     "body": "A gyorsulás a sebességváltozás és az idő hányadosa: a = Δv : Δt. Ha egy autó 10 másodperc alatt gyorsul 0-ról 100 km/h-ra (27,8 m/s), a gyorsulása kb. 2,8 m/s². Ez a szabadesés gyorsulásának nagyjából a harmada. Az elektromos autók ezt néha 3 másodperc alatt is megteszik, ami már 9 m/s² körüli gyorsulást jelent.",
+     "did_you_know": "A vadászrepülők pilótái 9 g körüli gyorsulást is elviselnek, de ehhez speciális ruha kell.",
+     "think": "Mekkora a gyorsulása annak az autónak, amely 5 s alatt gyorsul 0-ról 20 m/s-ra?",
+     "think_answer": "a = 20 m/s : 5 s = 4 m/s²."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Út és sebesség egyenletes gyorsulásnál",
+     "body": "Ha a test nyugalomból egyenletesen gyorsul, sebessége v = a · t, a megtett út pedig s = ½ · a · t². Ha a = 1 m/s², akkor 3 másodperc múlva a sebesség 3 m/s, az út 4,5 méter. Az út tehát nem az idővel, hanem az idő négyzetével nő. A sebesség–idő grafikon alatti terület az út, ezért a gyorsulás során az út gyorsabban nő, mint az egyenletes mozgásnál.",
+     "did_you_know": "A grafikon meredeksége a gyorsulás, a görbe alatti terület pedig a megtett út.",
+     "think": "Mekkora utat tesz meg 4 másodperc alatt a 2 m/s² gyorsulással induló test?",
+     "think_answer": "s = ½ · 2 · 4² = 16 m."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A páratlan számok szabálya",
+     "body": "Ha a golyó nyugalomból egyenletesen gyorsul, az egymás utáni egyenlő időszakaszokban megtett utak aránya 1 : 3 : 5 : 7. Galilei ezt lejtőn fedezte fel, így igazolta, hogy az út az idő négyzetével arányos. Ehhez Galilei egy lejtőn jelölte meg a golyó helyét ugyanolyan időközönként. A módszer mai megfelelője a videóelemzés.",
+     "did_you_know": "Galilei egyik nagy újítása az volt, hogy a mozgást mérte és matematikai összefüggéssel írta le.",
+     "think": "Ha az első másodpercben 2 métert tett meg a golyó, mennyit tesz meg a második másodpercben?",
+     "think_answer": "3-szor annyit, vagyis 6 métert."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A szabadesés terve, számokkal",
+     "body": "Ha 1 méterről ejtesz le egy labdát, az esési idő kb. 0,45 másodperc, 2 méterről kb. 0,64 másodperc, 4 méterről kb. 0,90 másodperc. Az idő tehát nem duplázódik a magasság duplázásakor, hanem a magasság négyzetgyökével nő. A mérés akkor pontos, ha a labda nehéz és kicsi, hogy a légellenállás elhanyagolható legyen. A telefon lassított felvétele jól használható az esési idő méréséhez.",
+     "did_you_know": "Egy tenisz- és egy pingponglabda különböző ideig esik, mert a légellenállás a könnyebbet jobban lassítja.",
+     "think": "Mennyi idő alatt esik le egy test 4 méterről?",
+     "think_answer": "t = √(2 · 4 : 9,81) ≈ 0,90 s."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A telefon gyorsulásérzékelője",
+     "body": "A telefonokban gyorsulásmérő (akcelerométer) van, amely a gyorsulást méri három irányban. Ebből tudja a készülék, hogy vízszintesen vagy függőlegesen tartod, és ezért forgatja el a képernyőt. Az érintőképernyő ettől független: az nem gyorsulást, hanem az érintés helyét érzékeli. Szabadeséskor az érzékelő értéke nullára esik, ezt a telefon esésként ismeri fel.",
+     "did_you_know": "Az okosórák ugyanígy számolják a lépéseidet: a karod ritmikus gyorsulásából.",
+     "think": "Miért tudja a telefon, hogy elfordítottad?",
+     "think_answer": "Mert a gyorsulásmérő a nehézségi gyorsulás irányát érzékeli, és az irány megváltozik."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1169 @@
+{
+ "nat_id": "PHYS-78-06",
+ "topic_id": "e81cc8a6-c4dc-4c47-8cd6-348291e89a5f",
+ "title_hu": "Elektromosság a háztartásban",
+ "grade": 7,
+ "lessons": [
+  {
+   "lesson_id": "5fafe4d3-3c7d-4cf9-a04c-e3244094d734",
+   "title_hu": "Elektromos állapot és jelenségek",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "920e0d9c-ff7c-4ac6-98b7-e953c46bc7bb",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az atom a matéria alapvető építőköve, amely protonokból, neutronokból és elektronokból áll. A protonok pozitív töltésűek, míg az elektronok negatív töltésűek. Az atommag a protonok és neutronok csoportja, körülötte keringenek az elektronok. Amikor egy atom elektronokat veszít vagy nyer, elektromos állapotba kerül, ami azt jelenti, hogy töltötté válik. Ez a jelenség mindennapi életünkben is megfigyelhető, például amikor egy dörzsölt léggömböt a hajunkhoz érintünk, és az a hajunkat vonzza.",
+       "type": "text",
+       "heading": "Az atom és az elektromos állapot",
+       "key_term": "atom"
+      },
+      {
+       "body": "A dörzselektromos jelenség jól megfigyelhető, ha egy léggömböt dörzsölünk a pulóverünkhöz. Ekkor a léggömb és a pulóver között elektronok áramlanak, és a léggömb negatív töltést kap. Ha ezt a léggömböt a hajunkhoz közelítjük, az elektronok vonzzák a hajszálakat, amelyek így felfelé állnak. Ez a kísérlet egyszerű, de jól bemutatja, hogyan alakulhat ki elektromos állapot dörzsölés hatására.",
+       "type": "text",
+       "heading": "Dörzselektromos jelenség kísérletezése",
+       "key_term": "elektromos állapot"
+      },
+      {
+       "body": "A villámok kialakulása egy izgalmas elektromos jelenség, amely a felhőkben lévő vízcseppek és jégkristályok mozgásának következménye. Ezek a részecskék ütköznek egymással, és elektronok szabadulnak fel, így a felhőkben töltéskülönbség alakul ki. Amikor ez a különbség elég nagy lesz, a levegő vezetővé válik, és a villám hirtelen lecsap. Ezért a villámok nemcsak félelmetesek, hanem a természet csodálatos elektromos állapotának megnyilvánulásai is.",
+       "type": "text",
+       "heading": "A villámok kialakulása",
+       "key_term": "villám"
+      },
+      {
+       "body": "A dipólus olyan rendszer, amelyben két ellentétes töltés található közel egymáshoz. Egy egyszerű példa a vízmolekula, amelyben az oxigénatom negatív, míg a hidrogénatomok pozitív töltésűek. Ez a dipólus jelenség fontos szerepet játszik a víz oldószerként való működésében, ami nélkülözhetetlen a biológiai folyamatokhoz. A dipólusok nemcsak a természetben, hanem a modern technológiában is megtalálhatóak, például a vezeték nélküli töltésnél, ahol az elektromos mezők kölcsönhatásba lépnek a töltött részecskékkel.",
+       "type": "text",
+       "heading": "Dipólusok a mindennapokban",
+       "key_term": "dipólus"
+      },
+      {
+       "body": "Egy egyszerű áramkör létrehozása LED (fénykibocsátó dióda) használatával nagyszerű módja annak, hogy megértsük az elektromosság működését. A LED-et egy elemmel és egy ellenállással (például grafitbéllel) összekötve láthatjuk, hogyan áramlik az áram. A változó ellenállás használata lehetővé teszi, hogy megfigyeljük, hogyan változik a feszültség és az áramerősség, amikor az ellenállást állítjuk. Ez a kísérlet segít megérteni az Ohm törvényét, amely a feszültség, áramerősség és ellenállás közötti kapcsolatot írja le.",
+       "type": "text",
+       "heading": "Egyszerű áramkör LED-del",
+       "key_term": "áramkör"
+      }
+     ]
+    },
+    {
+     "block_id": "9b3bbce5-696c-4b81-b368-6589f3d9002a",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal elindítja a telefonját, majd a töltőt a konnektorba dugja. Ezzel a folyamat elindul: az elektromos energia (elektromos állapot) a konnektorból a töltőn keresztül a telefon akkumulátorába áramlik.",
+       "type": "story",
+       "heading": "A telefon töltése"
+      },
+      {
+       "body": "Amikor a töltő csatlakozik a konnektorhoz, a vezetékben lévő elektronok (töltött részecskék) elkezdenek mozogni. Az elektronok mozgása létrehozza az áramot, amely a telefon akkumulátorába érkezik, hogy feltöltse azt.",
+       "type": "story",
+       "heading": "Az áramlás kezdete"
+      },
+      {
+       "body": "A telefon belsejében az akkumulátor atomjaiban lévő elektronok és protonok kölcsönhatásba lépnek egymással. Az elektronok mozgása az atomok elektromos állapotát változtatja meg, ami lehetővé teszi, hogy az akkumulátor energiát tároljon.",
+       "type": "story",
+       "heading": "Az atomok szerepe"
+      },
+      {
+       "body": "A természetben hasonló jelenség figyelhető meg a villámok kialakulásakor. A felhőkben lévő vízcseppek és jégkristályok dörzsölődése során elektromos töltések keletkeznek. Ez az elektromos állapot felhalmozódik, és amikor a feszültség eléri a kritikus szintet, villám formájában kisül.",
+       "type": "story",
+       "heading": "Villámok és elektromos állapotok"
+      },
+      {
+       "body": "A villámok elektromos kisülések, amelyek a felhőkben felhalmozódott töltések közötti különbség miatt alakulnak ki. E jelenség megértése segít abban, hogy jobban megértsük az elektromos állapotokat a mindennapi életünkben.",
+       "type": "story",
+       "heading": "Dipólusok és a természet"
+      },
+      {
+       "body": "Miután a telefon akkumulátora feltöltődött, az elektronok folytatják útjukat, és a telefon újra működőképes lesz. Ezzel a folyamat végére érünk, ahol a dörzselektromos jelenség és az elektromos állapotok kölcsönhatása láthatóvá válik a mindennapi technológiában.",
+       "type": "story",
+       "heading": "A telefon újraéledése"
+      }
+     ]
+    },
+    {
+     "block_id": "1de07e39-1ca4-4841-a9ea-ed32bdb01021",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az atom felépítése: protonok (pozitív töltés) és neutronok (semleges) az atommagban, elektronok (negatív töltés) a mag körül.",
+       "heading": "Atom szerkezete",
+       "description": "Az atom szerkezetét bemutató ábra, amelyen láthatók a protonok és neutronok az atommagban, valamint az elektronok a mag körüli pályákon.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Elektromos állapot: dörzselektromos jelenség, amikor a léggömbök töltődnek és kölcsönhatásba lépnek egymással.",
+       "heading": "Elektromos állapot",
+       "description": "Két dörzsölt léggömb, amelyek között elektromos kölcsönhatás látható, jelezve a vonzást vagy taszítást.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Dipólus: a pozitív és negatív töltés közötti kölcsönhatás, amely elektromos mezőt hoz létre.",
+       "heading": "Dipólus",
+       "description": "Egy dipólus, amely két ellentétes töltésből áll, azaz pozitív és negatív pólusból, valamint a közöttük lévő távolságból.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Villám: a felhőkben felhalmozódott töltések közötti elektromos kisülés.",
+       "heading": "Villám kialakulása",
+       "description": "A villám kialakulásának folyamata, amely bemutatja a felhők közötti töltés eloszlását és az elektromos kisülést.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Egyszerű áramkör LED-del: bemutatja az elektromos áramkör működését.",
+       "heading": "Egyszerű áramkör LED-del",
+       "description": "Egyszerű áramkör, amelyben LED, akkumulátor és ellenállás található, a kapcsolódások és az áram irányának jelzésével.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Változó ellenállás hatása: a feszültség és áramerősség összefüggése az áramkörben.",
+       "heading": "Változó ellenállás hatása",
+       "description": "A feszültség és áramerősség változását bemutató grafikon, amely a változó ellenállás hatását szemlélteti.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Dörzselektromos jelenség: léggömb tapadása a falhoz, amikor elektromos töltés halmozódik fel.",
+       "heading": "Dörzselektromos jelenség",
+       "description": "Kép, amelyen egy dörzsölt léggömb tapad egy falhoz, a dörzselektromos hatás bemutatására.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "Elektromos mező: a töltések által létrehozott mező, amely hatással van a környező töltésekre.",
+       "heading": "Elektromos mező",
+       "description": "Az elektromos mezőt bemutató ábra, amelyen a töltések körüli mezővonalak láthatók.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "8ef4ca2b-0ba2-4d65-9105-e4f2ab83dc24",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A dörzselektromos jelenség a mindennapi életben is jelen van, például amikor a hajunk statikusan feltöltődik, és a fésűhöz vonzódik, vagy amikor a léggömböt a hajunkhoz dörzsöljük, és az a falhoz tapad.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 20,
+          "x": 100,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "r": 20,
+          "x": 150,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x1": 120,
+          "x2": 140,
+          "y1": 150,
+          "y2": 150,
+          "type": "arrow"
+         },
+         {
+          "x": 95,
+          "y": 140,
+          "text": "Dörzsölt borostyán",
+          "type": "label"
+         },
+         {
+          "x": 145,
+          "y": 140,
+          "text": "Könnyű tárgy",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Elektromos állapotok a hétköznapokban",
+       "discovery": "A dörzselektromos jelenséget először az ókori görögök fedezték fel, amikor megfigyelték, hogy az amber (borostyán) dörzsölése vonzza a könnyű tárgyakat. Ez a jelenség a statikus elektromossággal kapcsolatos, amelyet később William Gilbert és más tudósok is tanulmányoztak a 16. században, megpróbálva megérteni az elektromosság természetét és működését.",
+       "try_basic": "Végy egy léggömböt, és dörzsöld meg a hajadon. Figyeld meg, hogy a léggömb elkezd vonzani könnyű tárgyakat, például papírdarabokat.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "43e27e6c-6546-4490-93d0-d795b335f107",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Töltött részecskék (elektronok és protonok) eloszlása.",
+        "B) Csak pozitív töltések jelenléte.",
+        "C) Minden anyag elektromos állapota azonos.",
+        "D) Az atommag töltése határozza meg az elektromos állapotot."
+       ],
+       "question": "Mi jellemzi az elektromos állapotot?",
+       "explanation": "Az elektromos állapot a töltött részecskék, mint az elektronok és protonok eloszlásának következménye.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Proton",
+        "B) Neutron",
+        "C) Elektron",
+        "D) Atommag"
+       ],
+       "question": "Melyik részecske negatív töltésű az atom felépítésében?",
+       "explanation": "Az elektron az atom negatív töltésű részecskéje, míg a proton pozitív, a neutron pedig semleges.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Olyan rendszer, amelyben az elektromos töltések eloszlása nem szimmetrikus.",
+        "B) Olyan rendszer, ahol csak pozitív töltések találhatók.",
+        "C) Egy atommag körüli elektronfelhő.",
+        "D) Az elektromos áramkör egy része."
+       ],
+       "question": "Mi a dipólus fogalma?",
+       "explanation": "A dipólus olyan rendszer, ahol az elektromos töltések eloszlása nem szimmetrikus, például egy pozitív és egy negatív töltés által alkotott rendszer.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az elektromos töltések felhalmozódása a felhőkben.",
+        "B) A felhők hőmérsékletének hirtelen csökkenése.",
+        "C) Csak a pozitív töltések mozgása.",
+        "D) Az atomok összetapadása a felhőkben."
+       ],
+       "question": "Hogyan alakul ki a villám?",
+       "explanation": "A villám akkor alakul ki, amikor az elektromos töltések felhalmozódnak a felhőkben, és a különbség elér egy kritikus szintet.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Csak elektronok.",
+        "B) Protonok, neutronok és elektronok.",
+        "C) Csak protonok és neutronok.",
+        "D) Csak neutronok."
+       ],
+       "question": "Milyen részecskék alkotják az atomot?",
+       "explanation": "Az atom protonokból és neutronokból áll az atommagban, míg az elektronok az atom körül keringenek.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "1946621e-51c5-4137-a997-aeb540da4d6a",
+   "title_hu": "Elektromos áram és eszközök",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "a2a66b1a-60ef-46ee-9db4-e0d5290db370",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az elektromos áram (áram) a vezetőkben áramló töltéshordozók mozgása. Képzelj el egy vízcsövet, ahol a víz a töltéshordozó, és a csőben folyó víz mennyisége az áramerősség (I). Az áramot amperben (A) mérjük, és az eszközökön általában feltüntetik az áramerősség értékét.",
+       "type": "text",
+       "heading": "Mi az elektromos áram?",
+       "key_term": "elektromos áram"
+      },
+      {
+       "body": "A háztartásban kétféle áramot használunk: egyenáramot (DC) és váltakozó áramot (AC). Az egyenáram például egy mobiltelefon töltőjében található, míg a váltakozó áram a konnektorból érkezik, amely a legtöbb háztartási eszközt működteti. A váltakozó áram esetében a feszültség és az áramerősség folyamatosan változik, ami az eszközök hatékony működését biztosít.",
+       "type": "text",
+       "heading": "Egyen- és váltakozó áram",
+       "key_term": "egyenáram, váltakozó áram"
+      },
+      {
+       "body": "A feszültség (U) a töltések mozgásához szükséges erő, amit voltban (V) mérünk. Az áramerősség (I) pedig azt mutatja meg, hogy mennyi töltés halad át egy adott ponton egy másodperc alatt. Például, ha egy LED-izzó 5 V feszültséggel működik, az azt jelenti, hogy 5 voltnyi energia szükséges az izzó világításához.",
+       "type": "text",
+       "heading": "Feszültség és áramerősség",
+       "key_term": "feszültség, áramerősség"
+      },
+      {
+       "body": "Ohm törvénye megmutatja, hogy a feszültség (U), az áramerősség (I) és az ellenállás (R) között milyen kapcsolat van: U = I × R. Ha tudjuk, hogy egy eszköz ellenállása 10 ohm, és az áramerősség 2 A, akkor a feszültség 20 V lesz. Ez a törvény segít megérteni, hogyan működnek az elektromos eszközök.",
+       "type": "text",
+       "heading": "Ohm törvénye",
+       "key_term": "Ohm törvénye, ellenállás"
+      },
+      {
+       "body": "Egy egyszerű áramkör négy fő részből áll: áramforrásból (pl. elem), kapcsolóból, fogyasztóból (pl. izzó) és vezetékből. Amikor a kapcsolót bekapcsoljuk, az áramforrásból származó áram átfolyik a fogyasztón, így az izzó világítani kezd. Ez a folyamat teszi lehetővé, hogy a különböző elektromos eszközök működjenek.",
+       "type": "text",
+       "heading": "Áramkör részei",
+       "key_term": "áramforrás, fogyasztó"
+      },
+      {
+       "body": "Az elektromos eszközök ellenállását különböző anyagok jellemzik. Például a réz jó vezető, míg a műanyag szigetelő. A háztartásban gyakran találkozunk különböző vezető és szigetelő anyagokkal, és az ellenállás mérése segít megérteni, hogy ezek az anyagok hogyan befolyásolják az áram áramlását. Az ellenállás mérése multiméter segítségével történik.",
+       "type": "text",
+       "heading": "Ellenállás mérése",
+       "key_term": "ellenállás"
+      },
+      {
+       "body": "A háztartási eszközök különböző típusú áramforrásokat használnak. Az elemek egy irányba áramló áramot biztosítanak, míg az akkumulátorok újratölthetőek és hosszabb ideig használhatóak. Például a mobiltelefonok akkumulátorai lehetővé teszik, hogy az eszközök vezeték nélkül működjenek, míg a távirányítók egyszerű elemekkel működnek.",
+       "type": "text",
+       "heading": "Elemek és akkumulátorok",
+       "key_term": "elemek, akkumulátorok"
+      }
+     ]
+    },
+    {
+     "block_id": "47951149-8793-4975-929d-becfa6813601",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal elindítja a telefonját, és a töltőt a konnektorba dugja. Ezzel megnyitja az utat az elektromos áram számára, amely a hálózati feszültség hatására elkezd áramlani.",
+       "type": "story",
+       "heading": "A telefon töltése"
+      },
+      {
+       "body": "A töltőben az elektromos áram áthalad a vezetékeken, és a telefon töltőcsatlakozóján keresztül belép a telefonba. Itt a feszültség csökken, és az áramerősség elér egy optimális szintet, amely elegendő ahhoz, hogy feltöltse az akkumulátort.",
+       "type": "story",
+       "heading": "Áramlás az eszközben"
+      },
+      {
+       "body": "A telefon akkumulátorában a kémiai energia elektromos energiává alakul, amely táplálja a telefon működését. Az akkumulátor ellenállása befolyásolja, hogy mennyi áramot tud felvenni, és ezáltal mennyi idő alatt töltődik fel.",
+       "type": "story",
+       "heading": "A telefon akkumulátorának működése"
+      },
+      {
+       "body": "Ha a fiatal meg akarja tudni, hogy mennyi áram jut el a telefonhoz, egy egyszerű multiméter segítségével megméri a feszültséget és az áramerősséget. Ezzel alkalmazza Ohm törvényét, amely szerint az áram erőssége egyenesen arányos a feszültséggel és fordítottan arányos az ellenállással.",
+       "type": "story",
+       "heading": "Ellenállás mérése"
+      },
+      {
+       "body": "Miután a telefon teljesen feltöltődött, a fiatal leválasztja a töltőt a konnektorról. Ekkor az elektromos áram megáll, és a telefon készen áll a használatra. Az egész folyamat során a feszültség és áramerősség mérése, valamint az ellenállás ismerete segített megérteni, hogyan működik az elektromos áram a mindennapi eszközeinkben.",
+       "type": "story",
+       "heading": "A folyamat vége"
+      }
+     ]
+    },
+    {
+     "block_id": "6f4d5dcf-c362-41da-81c7-9c070061c6f1",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az elektromos áram iránya az áramforrástól a fogyasztó felé mutat.",
+       "heading": "Elektromos áram",
+       "description": "Egy egyszerű áramkör, amely bemutatja az elektromos áram (I) áramlását az áramforrástól a fogyasztóig.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az egyenáram (DC) állandó, míg a váltakozó áram (AC) periódikus változást mutat.",
+       "heading": "Egyen- és váltakozó áram",
+       "description": "Egy grafikon, amely az egyenáram (DC) és a váltakozó áram (AC) feszültségét és áramerősségét szemlélteti az idő függvényében.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A feszültség (U) mértékegysége V, az áramerősség (I) mértékegysége A.",
+       "heading": "Feszültség és áramerősség",
+       "description": "Egy vázlat, amelyen az áramforrás feszültsége (U) és az áramerősség (I) mértékegységei (V, A) láthatók.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Ohm törvénye összekapcsolja a feszültséget, az áramerősséget és az ellenállást.",
+       "heading": "Ohm törvénye",
+       "description": "Egy diagram, amely bemutatja Ohm törvényét: U = I * R, ahol R az ellenállás mértékegysége (Ω).",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az áramkör fő részei, amelyek lehetővé teszik az elektromos áram áramlását.",
+       "heading": "Áramkör részei",
+       "description": "Egy keresztmetszeti ábra, amely bemutatja az áramkör alapvető részeit: áramforrás, kapcsoló, fogyasztó és vezeték.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Az elemek és akkumulátorok teljesítményének összehasonlítása.",
+       "heading": "Elemek és akkumulátorok",
+       "description": "Egy grafikon, amely összehasonlítja az elemek és akkumulátorok jellemző adatait, mint pl. feszültség, kapacitás és élettartam.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A különböző anyagok ellenállása, amely meghatározza az áram áthaladásának képességét.",
+       "heading": "Szigetelő és vezető anyagok",
+       "description": "Egy diagram, amely bemutatja a szigetelő (pl. műanyag) és vezető (pl. réz) anyagok ellenállását.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A mindennapi életben használt elektromos eszközök.",
+       "heading": "Háztartási eszközök",
+       "description": "Fotók különböző háztartási eszközökről, mint például a hűtőszekrény, mosógép és porszívó, amelyek elektromos áramot használnak.",
+       "visual_type": "fotó"
+      }
+     ]
+    },
+    {
+     "block_id": "86a9459d-5244-407a-8bee-133c2672b345",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Az elektromos áram mindennapi életünk szerves részét képezi, például a háztartási gépek működésében, mint a hűtőszekrény, a mosógép vagy a televízió.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Elektromos áram a háztartásban",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "6128e574-0f99-4a40-9b32-5733ed8c7665",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Amper (A)",
+        "B) Volt (V)",
+        "C) Ohm (Ω)",
+        "D) Watt (W)"
+       ],
+       "question": "Mi az elektromos áram (I) mértékegysége?",
+       "explanation": "Az elektromos áram (I) mértékegysége az amper (A), amely megmutatja, hogy mennyi töltés áramlik át egy vezetőn egy másodperc alatt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Hűtőszekrény",
+        "B) Elem",
+        "C) Akkumulátor",
+        "D) LED-lámpa"
+       ],
+       "question": "Melyik eszköz működik váltakozó áram (AC) segítségével?",
+       "explanation": "A hűtőszekrény váltakozó áram (AC) segítségével működik, míg az elem és az akkumulátor egyenáramot (DC) szolgáltat.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Volt (V)",
+        "B) Amper (A)",
+        "C) Ohm (Ω)",
+        "D) Joule (J)"
+       ],
+       "question": "Mi a feszültség (U) mértékegysége?",
+       "explanation": "A feszültség (U) mértékegysége a volt (V), amely az elektromos potenciálkülönbséget jelzi.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) U = I × R",
+        "B) P = U × I",
+        "C) Q = I × t",
+        "D) E = m × g"
+       ],
+       "question": "Milyen összefüggést fejez ki Ohm törvénye?",
+       "explanation": "Ohm törvénye szerint a feszültség (U) egyenlő az áramerősség (I) és az ellenállás (R) szorzataként.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Réz",
+        "B) Fa",
+        "C) Üveg",
+        "D) Gumi"
+       ],
+       "question": "Melyik anyag jellemzően jó vezető?",
+       "explanation": "A réz egy kiváló vezető, mivel alacsony ellenállással rendelkezik, míg a fa, üveg és gumi szigetelő anyagok.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "e97e5cfd-5374-4d0e-9139-9e1bc7c75c7c",
+   "title_hu": "Biztonság az elektromosság használatában",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "6fb062ba-ec84-4645-8d99-7b5c968a0c4b",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az emberi testre veszélyes feszültség 50 V (volt) felett kezdődik, míg az áramerősség 30 mA (milliamper) felett már életveszélyes lehet. Az áramütés hatásai rendkívül változóak, a legkisebb áramerősség is okozhat izomgörcsöt, míg a nagyobb áram akár szívmegállást is eredményezhet. Fontos, hogy mindig figyeljünk az elektromos eszközök használatakor, és kerüljük a nedves helyeket, ahol a feszültség könnyebben áramot vezethet. Ne felejtsük el, hogy a biztonságos használat érdekében mindig ellenőrizzük az elektromos berendezések állapotát.",
+       "type": "text",
+       "heading": "Az áramütés veszélyei",
+       "key_term": "áramütés"
+      },
+      {
+       "body": "A Joule-hő (Joule) az elektromos áram által termelt hőenergia, amely a fűtőszálak működésének alapja. Például a hajszárítóban a fűtőszálak áramot vezetnek, ami hőt termel, így gyorsan megszárítja a hajat. A Joule-hő mennyisége az áramerősségtől és az időtől függ, tehát minél nagyobb az áram és minél tovább működik az eszköz, annál több hőt termel. Ezt a jelenséget sok háztartási eszközben, például vízmelegítőkben is alkalmazzák.",
+       "type": "text",
+       "heading": "A Joule-hő jelentősége",
+       "key_term": "Joule-hő"
+      },
+      {
+       "body": "A fűtőszálak, mint amilyeneket a vasalókban vagy vízmelegítőkben találunk, ellenállásos vezetőkből készülnek. Amikor áram halad át rajtuk, a Joule-hő hatására felmelegszenek. A vasalóban ez a melegítő felület lehetővé teszi a ruhák simítását, míg a vízmelegítőben a víz gyors felforrósítását szolgálja. Az eszközök tervezésénél figyelembe kell venni a fűtőszálak anyagát és vastagságát, hogy hatékonyan működjenek és biztonságosak legyenek.",
+       "type": "text",
+       "heading": "Hogyan működik a fűtőszál?",
+       "key_term": "fűtőszál"
+      },
+      {
+       "body": "A rövidzár akkor következik be, amikor az áram váratlanul egy rövid úton áramlik, ami túlmelegedést és tűzveszélyt okozhat. A biztosítékok védelmet nyújtanak az ilyen helyzetek ellen, mivel megszakítják az áramkört, ha a terhelés meghaladja a biztonságos szintet. A biztosítékok tehát kulcsszerepet játszanak a háztartási elektromos biztonságban, és minden otthonban megtalálhatóak. Érdemes rendszeresen ellenőrizni őket, hogy biztosan jól működjenek.",
+       "type": "text",
+       "heading": "Rövidzár és biztosítékok szerepe",
+       "key_term": "biztosíték"
+      },
+      {
+       "body": "A földelés (földelés) a biztonságos elektromos használat egyik alapvető eleme. Ez a rendszer lehetővé teszi, hogy az esetleges hibák, például szigetelési problémák esetén az áram a földön keresztül vezesse el a feszültséget, ezzel megakadályozva az áramütést. A modern elektromos eszközök, mint például a számítógépek és a televíziók, mind földeléssel rendelkeznek, hogy védjék a felhasználókat. A földelés tehát elengedhetetlen a biztonságos otthoni környezethez.",
+       "type": "text",
+       "heading": "A földelés fontossága",
+       "key_term": "földelés"
+      },
+      {
+       "body": "A lakásban számos olyan helyzet létezhet, ahol az áramütés veszélye fennáll. Például, ha egy elektromos eszközt nedves kézzel használunk, vagy ha a kábelek megsérülnek. Az ilyen helyzetek elkerülése érdekében fontos, hogy mindig száraz kézzel nyúljunk az elektromos berendezésekhez, és rendszeresen ellenőrizzük a kábeleket. Az érintés nélküli bankkártyás fizetés is egy példa arra, hogyan lehet biztonságosan kezelni az elektromos eszközöket, mivel csökkenti a fizikai érintkezést.",
+       "type": "text",
+       "heading": "Áramütés-veszélyes helyzetek a lakásban",
+       "key_term": "áramütés"
+      }
+     ]
+    },
+    {
+     "block_id": "6cc26db0-eaec-4018-aa52-450ed5e80cd2",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal éppen a telefonját szeretné feltölteni. Bedugja a töltőt a konnektorba, és figyelmesen megnézi, hogy a csatlakozó jól illeszkedik. Ekkor a konnektorban lévő feszültség (230 V) aktiválja a töltő áramkörét, amely lehetővé teszi az áram (A) áthaladását a töltőn keresztül.",
+       "type": "story",
+       "heading": "A telefon töltése"
+      },
+      {
+       "body": "A töltőből érkező áram a telefon akkumulátorába jut. A töltő áramkörében nincs fűtőszál, a Joule-hő nem releváns a töltés során. Ez a hő a töltő belsejében keletkezik, és ha a töltő nem megfelelően van szigetelve, akkor áramütés-veszélyes helyzetet idézhet elő.",
+       "type": "story",
+       "heading": "A fűtőszál működése"
+      },
+      {
+       "body": "A fiatal tudja, hogy a túlmelegedés és az áramütés elkerülése érdekében a töltőben biztosíték található, amely megvédi az eszközt. Ha a töltő túlterhelt, a biztosíték megszakítja az áramkört, így megakadályozza a további áramfolyást és a potenciális baleseteket.",
+       "type": "story",
+       "heading": "A biztosíték szerepe"
+      },
+      {
+       "body": "A töltő használatakor a fiatal észreveszi, hogy a konnektor földeléssel is rendelkezik. Ez a földelés (GND) biztosítja, hogy ha valami hiba történik, akkor az áram a földbe vezessen, ezzel csökkentve az áramütés kockázatát, és a biztonságos használat érdekében elengedhetetlen.",
+       "type": "story",
+       "heading": "A földelés fontossága"
+      },
+      {
+       "body": "Miután a telefon feltöltődött, a fiatal óvatosan kihúzza a töltőt a konnektorból. Tudja, hogy a megfelelő óvintézkedések betartásával, mint a biztosítékok és földelések ismerete, biztonságosan használhatja az elektromos eszközöket a mindennapokban.",
+       "type": "story",
+       "heading": "A biztonságos használat"
+      }
+     ]
+    },
+    {
+     "block_id": "8d3b5de3-3f95-4771-9d45-7331479ee1b2",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Feszültség és áramerősség határértékek",
+       "heading": "Veszélyes feszültség és áramerősség",
+       "description": "Egy diagram, amely bemutatja az átlagos feszültség és áramerősség határértékeit, valamint a veszélyes szintet. A diagramon látható, hogy 50 V felett már veszélyes lehet az áram, és 30 mA áramerősség felett áramütés léphet fel.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Áramütés hatásai",
+       "heading": "Áramütés hatása",
+       "description": "Egy grafikon, amely az áramütés különböző erősségeinek hatásait mutatja be az emberi testre, például 1 mA, 10 mA és 100 mA esetén. A grafikonon látható, hogy a 100 mA áramerősség már életveszélyes lehet.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A Joule-hő kiszámítása",
+       "heading": "Joule-hő meghatározása",
+       "description": "Egy vázlat, amely bemutatja a Joule-hő (Q) kiszámításának képletét: Q = I² * R * t. A vázlaton látható, hogyan kapcsolódik az áramerősség (I), az ellenállás (R) és az idő (t) a hőtermeléshez.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Fűtőszál működése",
+       "heading": "Fűtőszál működése",
+       "description": "Egy keresztmetszeti ábra, amely bemutatja a fűtőszál felépítését és működését, valamint a hőtermelés folyamatát. Az ábrán látható, hogy az áram áthalad a fűtőszálon, amely felmelegszik és hőt bocsát ki.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Áramütés-veszélyes helyzetek a lakásban",
+       "heading": "Áramütés-veszélyes helyzetek",
+       "description": "Egy diagram, amely bemutatja a lakás különböző helyszíneit, ahol áramütés-veszélyes helyzetek fordulhatnak elő, például a fürdőszobában, a konyhában vagy vizes helyiségekben.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A biztosíték működése",
+       "heading": "A biztosíték szerepe",
+       "description": "Egy vázlat, amely bemutatja a biztosíték működését és szerepét a lakás elektromos hálózatában. A vázlaton látható, hogyan véd a biztosíték a túlterhelés és rövidzár ellen.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A földelés szerepe",
+       "heading": "Földelés fontossága",
+       "description": "Egy diagram, amely bemutatja a földelés működését és fontosságát az elektromos eszközök biztonságos használatában. A diagramon látható, hogyan vezeti el a földelés a felesleges áramot a földbe.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "d57a38bc-350a-47ba-b403-af032ac52d66",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A diákok találkozhatnak ezzel a témával, amikor otthon használják a különböző elektromos készülékeket, például a számítógépeket, mikrohullámú sütőket vagy a telefonjaikat.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Elektromos biztonság a háztartásban",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "e97fedb1-165c-4fbd-a14f-da8ee541a0bb",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 50 V",
+        "B) 10 V",
+        "C) 20 V",
+        "D) 100 V"
+       ],
+       "question": "Milyen feszültség felett számít veszélyesnek az áram az emberi testre?",
+       "explanation": "50 V felett a feszültség már veszélyes lehet, mivel áramütést okozhat.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az áram folyása során hő keletkezik.",
+        "B) Az áram nem termel hőt.",
+        "C) A hőmérséklet csökken, ha áram folyik.",
+        "D) Az áram csak mágneses mezőt hoz létre."
+       ],
+       "question": "Mi a Joule-hő (Joule-efektus) lényege?",
+       "explanation": "A Joule-hő azt jelenti, hogy az áram folyása során a vezetékben hő keletkezik, ami az áram ellenállásából adódik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Áramot tárol.",
+        "B) Hőt termel az áram hatására.",
+        "C) Fényforrást biztosít.",
+        "D) Zajcsökkentésre szolgál."
+       ],
+       "question": "Milyen szerepe van a fűtőszálnak egy hajszárítóban?",
+       "explanation": "A fűtőszál az áram hatására hőt termel, amely segít a haj szárításában.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Szakszerűtlenül csatlakoztatott eszközök.",
+        "B) A biztosíték helyes használata.",
+        "C) A földelés megléte.",
+        "D) Az eszközök rendszeres karbantartása."
+       ],
+       "question": "Mi okozhat rövidzárlatot a háztartásban?",
+       "explanation": "A szakszerűtlenül csatlakoztatott eszközök rövidzárlatot okozhatnak, ami veszélyes áramütést eredményezhet.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) Megakadályozza az áram túlfeszültségét.",
+        "B) Csökkenti az áramkör ellenállását.",
+        "C) Fokozza az áram erősségét.",
+        "D) Védi az eszközöket a rövidzárlattól."
+       ],
+       "question": "Milyen szerepe van a biztosítéknak az elektromos hálózatban?",
+       "explanation": "A biztosíték védi az elektromos eszközöket a rövidzárlat és az áram túlterhelés ellen, megszakítva az áramkört.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "07f1a08c-8b88-46fd-b58c-a94b33a25f46",
+   "title_hu": "Elektromágnesesség és alkalmazásai",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "38e54ac5-dae2-40fd-aa00-7d9ec6370ebe",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az iránytű (mágneses iránytű) működésének alapja a Föld mágneses tere. A Föld belsejében lévő olvadt fémek mozgása miatt a Föld egy hatalmas mágnesként viselkedik. Az iránytű tűje, amely egy kis mágnes, mindig a Föld mágneses pólusai felé áll. Ezt a jelenséget a tizenévesek is tapasztalhatják, amikor okostelefonjuk GPS-ét használják, hiszen az iránytű segít a pontos helymeghatározásban.",
+       "type": "text",
+       "heading": "Az iránytű működése",
+       "key_term": "iránytű"
+      },
+      {
+       "body": "Jedlik Ányos, a magyar tudós, az elektromos motor (elektromos gép) egyik úttörője volt. Ő fedezte fel, hogy az elektromágneses mező segítségével mozgást lehet létrehozni. Napjainkban az elektromos motorok megtalálhatók a legkülönfélébb eszközökben, mint például az elektromos autókban, amelyek környezetbarát alternatívát jelentenek a hagyományos járművekkel szemben. Az elektromos motorok működése a mindennapi életünkben is jelen van, hiszen a háztartási gépeink, mint a mosógép vagy a porszívó, mind elektromos motorral működnek.",
+       "type": "text",
+       "heading": "Jedlik Ányos és az elektromos motor",
+       "key_term": "elektromos motor"
+      },
+      {
+       "body": "A transzformátor (feszültségátalakító) egy olyan eszköz, amely az elektromos energia (elektromos teljesítmény) feszültségét képes megváltoztatni. Például a háztartásokban használt alacsony feszültségű áramot a transzformátorok emelik meg a szállításhoz szükséges magas feszültségű árammá. Ez a folyamat lehetővé teszi, hogy a villamos energia hatékonyan eljusson a távoli helyekre, például a lakóhelyünkre. A transzformátorok működését könnyen megfigyelhetjük a közlekedési lámpákban is, ahol a különböző feszültségszintek segítik a világítást.",
+       "type": "text",
+       "heading": "A transzformátor működése",
+       "key_term": "transzformátor"
+      },
+      {
+       "body": "Az elektromos energia a mindennapi életünk alapvető része. Például, amikor a telefonunkat töltjük, vagy a számítógépünket használjuk, elektromos energiát fogyasztunk. A teljesítmény (P) megmutatja, hogy mennyi elektromos energia hasznosul egy adott idő alatt. A háztartási eszközök, mint például a hűtőszekrény vagy a mikrohullámú sütő, különböző teljesítménnyel rendelkeznek, ami meghatározza, hogy mennyire gyorsan tudják elvégezni a feladatukat. A tizenéveseknek érdemes figyelniük a készülékek teljesítményét, mert ez hatással van a villanyszámlájukra is.",
+       "type": "text",
+       "heading": "Elektromos energia és teljesítmény",
+       "key_term": "elektromos energia, teljesítmény"
+      },
+      {
+       "body": "A Föld mágneses tere nem csupán az iránytű működését befolyásolja, hanem sok más területen is fontos szerepet játszik. Tizenévesek számára izgalmas lehet adatokat gyűjteni a Föld mágneses teréről, például megfigyelni, hogy az iránytű hogyan reagál különböző helyeken. Ezt a megfigyelést akár egy iskolai projekt keretében is végezhetik, ahol különböző helyszíneken mérhetik a mágneses mezőt, és összehasonlíthatják az eredményeket.",
+       "type": "text",
+       "heading": "A Föld mágneses terének megfigyelése",
+       "key_term": "Föld mágneses tere"
+      },
+      {
+       "body": "Az elemek és akkumulátorok használata széles körben elterjedt, de fontos figyelembe venni a környezeti hatásukat is. A tizenévesek tudatosan választhatják meg, hogy újratölthető akkumulátorokat használnak, ezzel csökkentve a hulladék mennyiségét. Érdemes kutatni, hogy milyen hatással vannak az elemek és akkumulátorok a környezetre, és hogyan lehet ezeket a hatásokat minimalizálni. A környezettudatos döntések segíthetnek a fenntarthatóbb jövő kialakításában.",
+       "type": "text",
+       "heading": "Elemek és akkumulátorok környezeti hatása",
+       "key_term": "környezeti hatás"
+      }
+     ]
+    },
+    {
+     "block_id": "47e8d3ea-ce7d-44dd-907e-6bf48598fa4b",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A fiatal felkapcsolja a telefonja töltőjét, és csatlakoztatja a készülékhez. Ezzel egy áramkört zár be, amely lehetővé teszi az elektromos energia áramlását a töltőből a telefon akkumulátorába.",
+       "type": "story",
+       "heading": "A telefon töltése"
+      },
+      {
+       "body": "A töltőben az AC (váltakozó áram) átalakul egyenárammá, amely a telefon akkumulátorának működéséhez szükséges. Az áram az elektromos motor működéséhez hasonlóan mozgásba hozza a töltési folyamatot, amely során a kémiai energia tárolódik az akkumulátorban.",
+       "type": "story",
+       "heading": "Az elektromos energia átalakulása"
+      },
+      {
+       "body": "A töltőben lévő transzformátor felelős azért, hogy a hálózati feszültséget csökkentse a telefon számára megfelelő szintre. A transzformátor működése során a mágneses tér segítségével alakítja át az energiát, lehetővé téve a biztonságos töltést.",
+       "type": "story",
+       "heading": "A transzformátor szerepe"
+      },
+      {
+       "body": "Ahogy az elektromos energia áramlik az akkumulátorba, a kémiai reakciók során tárolódik az energia. Ez a folyamat a telefon használatakor is megfigyelhető, hiszen a telefon később ezt az energiát felhasználva működik, lehetővé téve a különböző alkalmazások futtatását.",
+       "type": "story",
+       "heading": "A telefon akkumulátorának feltöltése"
+      },
+      {
+       "body": "Amikor a fiatal a telefont használja, az akkumulátorban tárolt energia szabadul fel, amely a telefon elektronikai áramköreit működteti. Ez a motor lehetővé teszi a telefon különböző funkcióinak működését, mint például a hívások lebonyolítása vagy a zenék lejátszása.",
+       "type": "story",
+       "heading": "A telefon használata a mindennapokban"
+      },
+      {
+       "body": "A telefon használata során fontos figyelembe venni az elemek és akkumulátorok környezeti hatásait. A fiatal tudatosan választja a környezetbarát töltőket és akkumulátorokat, hogy csökkentse a káros hatásokat, ezzel is hozzájárulva a fenntartható jövőhöz.",
+       "type": "story",
+       "heading": "Környezetvédelmi hatások"
+      }
+     ]
+    },
+    {
+     "block_id": "b231e9a0-ea27-4fc3-93fd-33627330aba3",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az iránytű működése a Föld mágneses terében",
+       "heading": "Iránytű működése",
+       "description": "Az iránytű egy mágneses tű, amely a Föld mágneses terének hatására észak-déli irányba áll be. A diagram bemutatja a Föld mágneses terét és az iránytű tűjének elhelyezkedését.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Jedlik Ányos elektromos motorja",
+       "heading": "Jedlik Ányos és az elektromos motor",
+       "description": "Jedlik Ányos által tervezett elektromos motor vázlata, amely bemutatja az elektromos áram és a mágneses tér kölcsönhatását. A vázlaton látható az elektromos áramkör, a mágneses mező és a motor forgórésze.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A transzformátor működése",
+       "heading": "Transzformátor működése",
+       "description": "A transzformátor keresztmetszeti ábrája, amely bemutatja a primer és szekunder tekercseket, valamint a mágneses magot. Az ábra szemlélteti, hogyan történik az elektromos energia átalakítása.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Elektromos energia és teljesítmény kapcsolata",
+       "heading": "Elektromos energia és teljesítmény",
+       "description": "A grafikon ábrázolja az elektromos energia (kWh) és a teljesítmény (W) közötti kapcsolatot. Az energiafogyasztás időbeli változását is bemutatja.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A Föld mágneses tere",
+       "heading": "Föld mágneses tere",
+       "description": "A Föld mágneses terének vázlata, amely bemutatja a mágneses pólusokat és a mágneses vonalakat. Az ábra segít megérteni a Föld mágneses terének eloszlását.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Elemek és akkumulátorok környezeti hatásai",
+       "heading": "Környezetvédelmi hatások",
+       "description": "A grafikon bemutatja az elemek és akkumulátorok környezeti hatásait, például a szennyező anyagok kibocsátását és a hulladék mennyiségét.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "46b58070-26ec-4992-aa09-bf487f57143f",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Az elektromágneses elvek alapján működnek a háztartási készülékek, például a hűtőszekrények, mosógépek és porszívók, amelyek elektromotorokat használnak a működésükhöz.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 80,
+          "w": 120,
+          "x": 150,
+          "y": 100,
+          "type": "coil",
+          "turns": 6
+         },
+         {
+          "h": 60,
+          "w": 30,
+          "x": 50,
+          "y": 120,
+          "type": "battery"
+         },
+         {
+          "x": 55,
+          "y": 145,
+          "text": "+",
+          "type": "label"
+         },
+         {
+          "x": 55,
+          "y": 185,
+          "text": "-",
+          "type": "label"
+         },
+         {
+          "x1": 80,
+          "x2": 150,
+          "y1": 140,
+          "y2": 140,
+          "type": "arrow"
+         },
+         {
+          "x": 200,
+          "y": 140,
+          "text": "I",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Elektromágneses alkalmazások a mindennapokban",
+       "discovery": "A 19. század elején Hans Christian Ørsted felfedezte, hogy az elektromosság és a mágnesesség összefügg. 1820-ban Ørsted megmutatta, hogy egy áramot vezető drót körül mágneses mező keletkezik, amely később hozzájárult az elektromágneses indukció felfedezéséhez, amelyet Michael Faraday dolgozott ki. E felfedezések révén vált lehetővé az elektromágneses eszközök, például az elektromotorok és generátorok kifejlesztése.",
+       "try_basic": "Készíts egy egyszerű elektromágneses tekercset: tekerj egy rézdrótot egy szögletes kartonra, majd csatlakoztasd egy 1,5 V-os elemmel. Figyeld meg, hogy a tekercs mágneses mezőt hoz létre, és vonzza a kis fémtárgyakat.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "bdf27426-a11a-4296-b7fd-6c342d06c82a",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A Föld mágneses terének hatása",
+        "B) Az elektromos áram hőtermelése",
+        "C) A mechanikai erők kölcsönhatása",
+        "D) A fény terjedése"
+       ],
+       "question": "Mi az iránytű működésének fizikai alapja?",
+       "explanation": "Az iránytű működése a Föld mágneses terének hatásán alapul, amely vonzza a mágneses tűt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Elektromos motor",
+        "B) Transzformátor",
+        "C) Generátor",
+        "D) Akkumulátor"
+       ],
+       "question": "Milyen jelentős találmány fűződik Jedlik Ányos nevéhez?",
+       "explanation": "Jedlik Ányos az elektromos motor (elektromos gép) fejlesztésével járult hozzá az elektromosság gyakorlati alkalmazásához.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az elektromos energia feszültségszintjének átalakítása",
+        "B) Az elektromos áram hőtermelése",
+        "C) Az elektromos áram tárolása",
+        "D) Az elektromos energia mechanikai munkává alakítása"
+       ],
+       "question": "Mi a transzformátor alapvető működési elve?",
+       "explanation": "A transzformátor működése az elektromos energia feszültségszintjének átalakításán alapul, lehetővé téve a feszültség emelését vagy csökkentését.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Joule (J)",
+        "B) Watt (W)",
+        "C) Volt (V)",
+        "D) Amper (A)"
+       ],
+       "question": "Mi a teljesítmény (P) mértékegysége?",
+       "explanation": "A teljesítmény (P) mértékegysége a Watt (W), amely az energia időegység alatti átvitelének mértékét jelöli.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) Mechanikai energia",
+        "B) Hőenergia",
+        "C) Potenciális energia",
+        "D) Elektromágneses energia"
+       ],
+       "question": "Milyen típusú energia az elektromos energia?",
+       "explanation": "Az elektromos energia az elektromágneses energia egy formája, amely az elektromos töltések mozgásából származik.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "50d45658-bfbf-42dc-b5be-92d34d612538",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Elektronok, protonok és neutronok",
+      "B) Elektronok és ionok",
+      "C) Protonok és atommagok",
+      "D) Csak elektronok"
+     ],
+     "question": "Mi alkotja az atomot?",
+     "explanation": "Az atomot elektronok, protonok és neutronok alkotják. Az elektronok negatív töltésűek, a protonok pozitív töltésűek, a neutronok pedig semlegesek.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Elektromos áram",
+      "B) Áramütés",
+      "C) Feszültség",
+      "D) Vezető anyag"
+     ],
+     "question": "Milyen fizikai jelenség a villám?",
+     "explanation": "A villám egy hirtelen elektromos áram, amely a felhők között vagy a felhő és a föld között jön létre, amikor a feszültség elér egy kritikus szintet.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Vasaló",
+      "B) Akkumulátor",
+      "C) Hajszárító",
+      "D) Elemes zseblámpa"
+     ],
+     "question": "Melyik eszköz működik váltakozó árammal (AC)?",
+     "explanation": "A hajszárítók általában váltakozó árammal működnek, míg az akkumulátorok és elemes zseblámpák egyenáramot (DC) használnak.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) I (amper)",
+      "B) V (volt)",
+      "C) R (ohm)",
+      "D) P (watt)"
+     ],
+     "question": "Mi a feszültség jele és mértékegysége?",
+     "explanation": "A feszültség jele V (volt), amely az elektromos potenciálkülönbséget méri.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) I = V * R",
+      "B) V = I / R",
+      "C) V = I * R",
+      "D) R = V * I"
+     ],
+     "question": "Mi az Ohm törvénye?",
+     "explanation": "Ohm törvénye kimondja, hogy a feszültség (V) egyenlő az áramerősség (I) és az ellenállás (R) szorzataként: V = I * R.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Réz",
+      "B) Fa",
+      "C) Alumínium",
+      "D) Acél"
+     ],
+     "question": "Melyik anyag jellemzően szigetelő?",
+     "explanation": "A fa szigetelő anyag, amely nem vezeti jól az elektromos áramot, míg a réz és az alumínium jó vezetők.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Vezeték",
+      "B) Biztosíték",
+      "C) Kapcsoló",
+      "D) Fogyasztó"
+     ],
+     "question": "Melyik eszköz mérése segíthet az áramütés elkerülésében?",
+     "explanation": "A biztosíték védi az elektromos rendszert túláram esetén, és segít elkerülni az áramütést.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az elektromos energia mértéke",
+      "B) Az áram által termelt hő",
+      "C) Az áramerősség mértéke",
+      "D) Az ellenállás mértéke"
+     ],
+     "question": "Mi a Joule-hő?",
+     "explanation": "A Joule-hő az áram által generált hő, amely az ellenálláson való áthaladás során keletkezik.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

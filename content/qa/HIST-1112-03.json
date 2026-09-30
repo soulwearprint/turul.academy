@@ -1,0 +1,951 @@
+{
+ "nat_id": "HIST-1112-03",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 106,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világblokkok: ad2df0e0 (Az első világháború) és 38f64eef (Magyarország a világháborúban) egyetlen kártyát sem tartalmaz.",
+   "Villámháború/Blitzkrieg: második világháborús fogalom az első világháborús leckében."
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-1112-03-001",
+   "lesson_id": "ed494c42-01c8-4f51-a6f9-ae0a500569df",
+   "block_id": "e4969a49-2d8e-40d8-8377-e63b873b968e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a Monarchia is részt vett a gyarmati versenyben, bár nem volt olyan jelentős”",
+   "explanation": "Az Osztrák–Magyar Monarchiának nem voltak gyarmatai; egyetlen tengerentúli birtoka egy kis tiencsini (kínai) koncesszió volt 1901 és 1917 között. Erőltetett magyar vonatkozás.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Austria-Hungary concession in Tianjin (1901–1917)",
+   "fix": {
+    "before": {
+     "body": "A gyarmatosítás a 19. század végén és a 20. század elején terjedt el, amikor a nagyhatalmak új piacokat és nyersanyagforrásokat kerestek. Az ipari forradalom következtében megnövekedett a termelés, ami a verseny fokozódásához vezetett. A gyarmatosítás célja nemcsak gazdasági, hanem politikai hatalom megszerzése is volt. A gyarmati területek birtoklása növelte a nemzetközi presztízst és befolyást. A magyar nézőpontból fontos, hogy a Monarchia is részt vett a gyarmati versenyben, bár nem volt olyan jelentős, mint más nagyhatalmak.",
+     "type": "text",
+     "heading": "A gyarmatosítás okai és céljai",
+     "key_term": "gyarmatosítás"
+    },
+    "after": {
+     "body": "A gyarmatosítás a 19. század végén és a 20. század elején terjedt el, amikor a nagyhatalmak új piacokat és nyersanyagforrásokat kerestek. Az ipari forradalom következtében megnövekedett a termelés, ami a verseny fokozódásához vezetett. A gyarmatosítás célja nemcsak gazdasági, hanem politikai hatalom megszerzése is volt. A gyarmati területek birtoklása növelte a nemzetközi presztízst és befolyást. A magyar nézőpontból fontos, hogy a Monarchia is részt vett a gyarmati versenyben, gyarmatai azonban nem voltak, csak egy kis kínai koncessziója (Tiencsin, 1901–1917).",
+     "type": "text",
+     "heading": "A gyarmatosítás okai és céljai",
+     "key_term": "gyarmatosítás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-002",
+   "lesson_id": "ed494c42-01c8-4f51-a6f9-ae0a500569df",
+   "block_id": "e4969a49-2d8e-40d8-8377-e63b873b968e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A 1914-es szarajevói merénylet”",
+   "explanation": "Névelőhiba: 1914 előtt „az” áll (az egyes szám kiejtése miatt).",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "magyar helyesírás",
+   "fix": {
+    "before": {
+     "body": "Az Osztrák-Magyar Monarchia a balkáni feszültségek közepette próbálta megőrizni befolyását a térségben. A Monarchia számára Szerbia terjeszkedése komoly fenyegetést jelentett, mivel a szerb nacionalizmus erősödése a Monarchia széteséséhez vezethetett. A 1914-es szarajevói merénylet, amely Ferenc Ferdinánd trónörököst érte, végül a háború kirobbanásához vezetett. A magyar történelem szempontjából ez a konfliktus alapvető jelentőségű, hiszen a Monarchia bukása után Magyarország új politikai helyzetbe került.",
+     "type": "text",
+     "heading": "Az Osztrák-Magyar Monarchia helyzete – balkáni konfliktusok",
+     "key_term": "Osztrák-Magyar Monarchia"
+    },
+    "after": {
+     "body": "Az Osztrák-Magyar Monarchia a balkáni feszültségek közepette próbálta megőrizni befolyását a térségben. A Monarchia számára Szerbia terjeszkedése komoly fenyegetést jelentett, mivel a szerb nacionalizmus erősödése a Monarchia széteséséhez vezethetett. Az 1914-es szarajevói merénylet, amely Ferenc Ferdinánd trónörököst érte, végül a háború kirobbanásához vezetett. A magyar történelem szempontjából ez a konfliktus alapvető jelentőségű, hiszen a Monarchia bukása után Magyarország új politikai helyzetbe került.",
+     "type": "text",
+     "heading": "Az Osztrák-Magyar Monarchia helyzete – balkáni konfliktusok",
+     "key_term": "Osztrák-Magyar Monarchia"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-003",
+   "lesson_id": "ed494c42-01c8-4f51-a6f9-ae0a500569df",
+   "block_id": "e4969a49-2d8e-40d8-8377-e63b873b968e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A magyar nézőpontból a Brit Birodalom politikai döntései közvetett hatással voltak a Monarchia sorsára is”",
+   "explanation": "Erőltetett, tartalmatlan magyar vonatkozás; helyette a lényeges tényt kell írni: az 1904-es angol–francia megegyezés és az 1907-es angol–orosz egyezmény hozta létre az antantot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Triple_Entente",
+     "title": "Triple Entente",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Entente_Cordiale",
+     "title": "Entente Cordiale",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Brit Birodalom a világ legnagyobb gyarmati hatalma volt, amely jelentős gazdasági és katonai befolyással bírt. Az imperializmus csúcsán a brit érdekek globális kiterjedése konfliktusokat generált más nagyhatalmakkal, különösen Németországgal. A brit politikai stratégiák célja a kereskedelmi útvonalak védelme és a gyarmatok irányítása volt. A magyar nézőpontból a Brit Birodalom politikai döntései közvetett hatással voltak a Monarchia sorsára is, mivel a háború kimenetele befolyásolta a térség politikai térképét.",
+     "type": "text",
+     "heading": "A Brit Birodalom szerepe",
+     "key_term": "Brit Birodalom"
+    },
+    "after": {
+     "body": "A Brit Birodalom a világ legnagyobb gyarmati hatalma volt, amely jelentős gazdasági és katonai befolyással bírt. Az imperializmus csúcsán a brit érdekek globális kiterjedése konfliktusokat generált más nagyhatalmakkal, különösen Németországgal. A brit politikai stratégiák célja a kereskedelmi útvonalak védelme és a gyarmatok irányítása volt. Az 1904-es angol–francia megegyezés (entente cordiale) és az 1907-es angol–orosz egyezmény Nagy-Britanniát az antant tagjává tette.",
+     "type": "text",
+     "heading": "A Brit Birodalom szerepe",
+     "key_term": "Brit Birodalom"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-004",
+   "lesson_id": "ed494c42-01c8-4f51-a6f9-ae0a500569df",
+   "block_id": "e4969a49-2d8e-40d8-8377-e63b873b968e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Franciaország, Nagy-Britannia és Oroszország, akik szövetkeztek a központi hatalmakkal”",
+   "explanation": "Az antant a központi hatalmak ellenfele volt, nem szövetségese; a mondat a jelentés ellentétét állítja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Triple_Entente",
+     "title": "Triple Entente",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az antant hatalmak közé tartozott Franciaország, Nagy-Britannia és Oroszország, akik szövetkeztek a központi hatalmakkal, mint Németország és az Osztrák-Magyar Monarchia. E két szövetség harca a világháború során döntő hatással volt a térség politikai és gazdasági helyzetére. A magyar történelem szempontjából a Monarchia a központi hatalmak részeként harcolt, és a háború kimenetele alapvetően megváltoztatta Magyarország jövőjét. Az antant győzelme után a Monarchia szétesett, ami új kihívások elé állította a magyar nemzetet.",
+     "type": "text",
+     "heading": "Az antant és a központi hatalmak",
+     "key_term": "antant, központi hatalmak"
+    },
+    "after": {
+     "body": "Az antant hatalmak közé tartozott Franciaország, Nagy-Britannia és Oroszország, akik a központi hatalmak (Németország, az Osztrák-Magyar Monarchia) ellen harcoltak. E két szövetség harca a világháború során döntő hatással volt a térség politikai és gazdasági helyzetére. A magyar történelem szempontjából a Monarchia a központi hatalmak részeként harcolt, és a háború kimenetele alapvetően megváltoztatta Magyarország jövőjét. Az antant győzelme után a Monarchia szétesett, ami új kihívások elé állította a magyar nemzetet.",
+     "type": "text",
+     "heading": "Az antant és a központi hatalmak",
+     "key_term": "antant, központi hatalmak"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-005",
+   "lesson_id": "70df7daf-a4e7-46dd-b0a7-c6fd1c73eb75",
+   "block_id": "6607b34b-257b-4c50-a7b4-19b750a3a0f4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A merényletet egy szerb nacionalista követte el”; a hadüzenet kétszer szerepel",
+   "explanation": "A merénylő, Gavrilo Princip boszniai szerb (Habsburg-alattvaló) volt, a Fiatal Bosznia tagja. A merénylet Szarajevóban, Bosznia-Hercegovinában történt. A második mondat megismétli a hadüzenetet (duplikált szöveg).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Gavrilo_Princip",
+     "title": "Gavrilo Princip",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Assassination_of_Archduke_Franz_Ferdinand",
+     "title": "Assassination of Archduke Franz Ferdinand",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az első világháború 1914. július 28-án kezdődött, amikor az Osztrák-Magyar Monarchia hadat üzent Szerbiának, miután Ferenc Ferdinánd osztrák főherceget június 28-án Szarajevóban meggyilkolták. A merényletet egy szerb nacionalista követte el, ami feszültséget okozott a Monarchia és Szerbia között. A gyilkosság következtében az Osztrák-Magyar Monarchia hadat üzent Szerbiának, ami láncreakciót indított el, és számos országot bevont a konfliktusba. A háború kitörése a világpolitika jelentős átalakulását hozta magával, amely Magyarország történetére is mély hatással volt.",
+     "type": "text",
+     "heading": "A világháború kitörése",
+     "key_term": "Szarajevó"
+    },
+    "after": {
+     "body": "Az első világháború 1914. július 28-án kezdődött, amikor az Osztrák-Magyar Monarchia hadat üzent Szerbiának, miután Ferenc Ferdinánd osztrák főherceget június 28-án Szarajevóban meggyilkolták. A merényletet Gavrilo Princip, a Fiatal Bosznia nevű szervezet boszniai szerb tagja követte el; a Monarchia Szerbiát tette felelőssé. Ez láncreakciót indított el, amely számos országot bevont a konfliktusba. A háború kitörése a világpolitika jelentős átalakulását hozta magával, amely Magyarország történetére is mély hatással volt.",
+     "type": "text",
+     "heading": "A világháború kitörése",
+     "key_term": "Szarajevó"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-006",
+   "lesson_id": "70df7daf-a4e7-46dd-b0a7-c6fd1c73eb75",
+   "block_id": "6607b34b-257b-4c50-a7b4-19b750a3a0f4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Központi Hatalmak … a Török Birodalom”; „Antant, amelyhez Oroszország, Franciaország és Nagy-Britannia tartozott”",
+   "explanation": "A helyes név Oszmán Birodalom; a Központi Hatalmakhoz 1915-től Bulgária is tartozott. Az antanthoz később Olaszország (1915), Románia (1916), az USA (1917) és mások is csatlakoztak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Central_Powers",
+     "title": "Central Powers",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Allies_of_World_War_I",
+     "title": "Allies of World War I",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A háborúban két fő szövetség állt szemben egymással: a Központi Hatalmak, amelynek tagjai között volt Németország, az Osztrák-Magyar Monarchia és a Török Birodalom, valamint az Antant, amelyhez Oroszország, Franciaország és Nagy-Britannia tartozott. A hadviselő felek közötti ellentétek és a szövetségi rendszerek bonyolultsága hozzájárult a háború elhúzódásához. A frontok különböző területeken alakultak ki, és a harcok kiterjedtek Európa szinte minden részére, beleértve Olaszországot is. A frontvonalak elhelyezkedése és a hadviselési stratégiák meghatározták a háború menetét.",
+     "type": "text",
+     "heading": "A hadviselő felek",
+     "key_term": "front"
+    },
+    "after": {
+     "body": "A háborúban két fő szövetség állt szemben egymással: a Központi Hatalmak, amelynek tagjai között volt Németország, az Osztrák-Magyar Monarchia, az Oszmán Birodalom és Bulgária, valamint az Antant, amelyhez kezdetben Oroszország, Franciaország és Nagy-Britannia tartozott (később Olaszország, Románia, az Egyesült Államok és mások is csatlakoztak). A hadviselő felek közötti ellentétek és a szövetségi rendszerek bonyolultsága hozzájárult a háború elhúzódásához. A frontok különböző területeken alakultak ki, és a harcok kiterjedtek Európa szinte minden részére, beleértve Olaszországot is. A frontvonalak elhelyezkedése és a hadviselési stratégiák meghatározták a háború menetét.",
+     "type": "text",
+     "heading": "A hadviselő felek",
+     "key_term": "front"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-007",
+   "lesson_id": "70df7daf-a4e7-46dd-b0a7-c6fd1c73eb75",
+   "block_id": "6607b34b-257b-4c50-a7b4-19b750a3a0f4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1917-re a forradalmak következtében Oroszország kilépett a háborúból”",
+   "explanation": "Oroszország nem 1917-ben lépett ki: fegyverszünet 1917 decemberében, a breszt-litovszki béke 1918. március 3-án.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Brest-Litovsk",
+     "title": "Treaty of Brest-Litovsk",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Russian_Revolution",
+     "title": "Russian Revolution",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A háború során Oroszország súlyos veszteségeket szenvedett el a harctéren, és a belpolitikai helyzete is instabillá vált. 1917-re a forradalmak következtében Oroszország kilépett a háborúból, ami a Központi Hatalmak számára kedvező helyzetet teremtett. II. Miklós orosz cár uralkodása alatt a katonai kudarcok és a gazdasági problémák felerősítették a társadalmi feszültségeket. A Monarchia és a Központi Hatalmak összeomlása nemcsak Oroszországra, hanem Magyarországra is jelentős hatással volt, hiszen a háború végén új politikai és társadalmi viszonyok alakultak ki.",
+     "type": "text",
+     "heading": "Oroszország és a központi hatalmak összeomlása",
+     "key_term": "II. Miklós"
+    },
+    "after": {
+     "body": "A háború során Oroszország súlyos veszteségeket szenvedett el a harctéren, és a belpolitikai helyzete is instabillá vált. 1917 forradalmai után Oroszország békét kötött (1918. március, Breszt-Litovszk), és kilépett a háborúból, ami a Központi Hatalmak számára kedvező helyzetet teremtett. II. Miklós orosz cár uralkodása alatt a katonai kudarcok és a gazdasági problémák felerősítették a társadalmi feszültségeket. A Monarchia és a Központi Hatalmak összeomlása nemcsak Oroszországra, hanem Magyarországra is jelentős hatással volt, hiszen a háború végén új politikai és társadalmi viszonyok alakultak ki.",
+     "type": "text",
+     "heading": "Oroszország és a központi hatalmak összeomlása",
+     "key_term": "II. Miklós"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-008",
+   "lesson_id": "70df7daf-a4e7-46dd-b0a7-c6fd1c73eb75",
+   "block_id": "6607b34b-257b-4c50-a7b4-19b750a3a0f4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A „villámháború” (Blitzkrieg) az első világháború leckéjében mint a német hadsereg taktikája",
+   "explanation": "A fogalom a második világháborúból ered. Az első világháborúban a németek a Schlieffen-tervtől vártak gyors győzelmet, de az 1914. szeptemberi marne-i csata után a nyugati front megmerevedett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Blitzkrieg",
+     "title": "Blitzkrieg",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Schlieffen_Plan",
+     "title": "Schlieffen Plan",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A villámháború, vagy más néven Blitzkrieg, egy katonai stratégia, amely a gyors támadásokra és a meglepetés erejére épít. A német hadsereg alkalmazta ezt a taktikát a második világháborúban, különösen a háború elején, amikor gyorsan próbálták legyőzni ellenfeleiket. A stratégiának köszönhetően a német csapatok rövid időn belül jelentős területeket foglaltak el, ám a háború későbbi szakaszaiban a frontok stabilizálódtak, és a harcok elhúzódtak. A villámháború hatása a későbbi katonai stratégiákra is kihatott, különösen a második világháborúban.",
+     "type": "text",
+     "heading": "A villámháború fogalma",
+     "key_term": "villámháború"
+    },
+    "after": {
+     "body": "A villámháború, vagy más néven Blitzkrieg, egy katonai stratégia, amely a gyors támadásokra és a meglepetés erejére épít. Elnevezése a második világháborúból ered (1939–1941); az első világháborúban a németek a Schlieffen-tervtől vártak gyors győzelmet Franciaország ellen, de az 1914. szeptemberi marne-i csata után a nyugati front megmerevedett. A stratégiának köszönhetően a német csapatok rövid időn belül jelentős területeket foglaltak el, ám a háború későbbi szakaszaiban a frontok stabilizálódtak, és a harcok elhúzódtak. A villámháború hatása a későbbi katonai stratégiákra is kihatott, különösen a második világháborúban.",
+     "type": "text",
+     "heading": "A villámháború fogalma",
+     "key_term": "villámháború"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-009",
+   "lesson_id": "70df7daf-a4e7-46dd-b0a7-c6fd1c73eb75",
+   "block_id": "6607b34b-257b-4c50-a7b4-19b750a3a0f4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A háború alatt a német hadsereg irányítását is ő felügyelte”",
+   "explanation": "1916-tól a tényleges katonai irányítást Hindenburg és Ludendorff (Legfelsőbb Hadvezetőség) gyakorolta, a császár szerepe formális volt. Vilmos 1918. november 9-én kényszerült lemondásra.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Wilhelm_II,_German_Emperor",
+     "title": "Wilhelm II, German Emperor",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Paul_von_Hindenburg",
+     "title": "Paul von Hindenburg",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "II. Vilmos, Németország császára, kulcsszerepet játszott az első világháború kitörésében és irányításában. Ő volt az, aki a német külpolitikát a katonai erőre építette, és támogatta a Központi Hatalmak szövetségét. A háború alatt a német hadsereg irányítását is ő felügyelte, és a háború folyamán többször is megpróbálta növelni Németország befolyását Európában. II. Vilmos uralkodása alatt a háború végére Németország gazdasági és politikai helyzete annyira meggyengült, hogy a császár lemondásra kényszerült.",
+     "type": "text",
+     "heading": "II. Vilmos szerepe a háborúban",
+     "key_term": "II. Vilmos"
+    },
+    "after": {
+     "body": "II. Vilmos, Németország császára, kulcsszerepet játszott az első világháború kitörésében és irányításában. Ő volt az, aki a német külpolitikát a katonai erőre építette, és támogatta a Központi Hatalmak szövetségét. A háború alatt a tényleges katonai irányítás 1916-tól Hindenburg és Ludendorff kezében volt. II. Vilmos uralkodása alatt a háború végére Németország gazdasági és politikai helyzete annyira meggyengült, hogy a császár lemondásra kényszerült.",
+     "type": "text",
+     "heading": "II. Vilmos szerepe a háborúban",
+     "key_term": "II. Vilmos"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-010",
+   "lesson_id": "1cf7310b-9766-4196-acda-b66eb6543c2b",
+   "block_id": "b2b5be27-df10-41e6-b0c1-632463d85b44",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Az antant hatalmak különböző ígéretekkel próbálták megnyerni a Monarchia nemzetiségeit, köztük a magyarokat is”",
+   "explanation": "Az antant a magyaroknak nem tett ígéreteket; a cseheknek, szlovákoknak, románoknak és délszlávoknak igen (londoni szerződés 1915, bukaresti szerződés 1916, korfui nyilatkozat 1917).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_London_(1915)",
+     "title": "Treaty of London (1915)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Bucharest_(1916)",
+     "title": "Treaty of Bucharest (1916)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A világháború során az antant hatalmak különböző ígéretekkel próbálták megnyerni a Monarchia nemzetiségeit, köztük a magyarokat is. Az ígéretek között szerepelt a nemzeti önrendelkezés biztosítása, ami sok nemzetiség számára vonzó volt. A magyar politikai vezetés azonban nem tudta megakadályozni, hogy ezek az ígéretek feszültséget keltsenek a Monarchián belül. Az antant ígéretei végül hozzájárultak a Monarchia széteséséhez, és a magyar történelem új fejezetét indították el.",
+     "type": "text",
+     "heading": "Az antant ígéretei",
+     "key_term": "antant ígéretei"
+    },
+    "after": {
+     "body": "A világháború során az antant hatalmak különböző ígéretekkel próbálták megnyerni a Monarchia nemzetiségeit (például a cseheket, a szlovákokat, a románokat és a délszlávokat). Az ígéretek között szerepelt a nemzeti önrendelkezés biztosítása, ami sok nemzetiség számára vonzó volt. A magyar politikai vezetés azonban nem tudta megakadályozni, hogy ezek az ígéretek feszültséget keltsenek a Monarchián belül. Az antant ígéretei végül hozzájárultak a Monarchia széteséséhez, és a magyar történelem új fejezetét indították el.",
+     "type": "text",
+     "heading": "Az antant ígéretei",
+     "key_term": "antant ígéretei"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-011",
+   "lesson_id": "ed494c42-01c8-4f51-a6f9-ae0a500569df",
+   "block_id": "0838918c-15db-43f8-8863-7642d14333be",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az 1910-es évek elején a nagyhatalmak szövetségi rendszerekbe szerveződtek”",
+   "explanation": "A Hármas Szövetség 1882-ben, az antant 1904–1907 között alakult; 1914-ben Olaszország semleges maradt, és 1915-ben az antant oldalán lépett be.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Triple_Alliance_(1882)",
+     "title": "Triple Alliance (1882)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Triple_Entente",
+     "title": "Triple Entente",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az 1910-es évek elején a nagyhatalmak szövetségi rendszerekbe szerveződtek, mint a Hármas Szövetség (Németország, Osztrák-Magyar Monarchia, Olaszország) és a Hármas Antant (Franciaország, Oroszország, Nagy-Britannia). Ezek a szövetségek növelték a feszültséget és a konfliktusok kockázatát, mivel egy helyi háború könnyen globális konfliktussá válhatott.",
+     "type": "world",
+     "year": "1914",
+     "heading": "Nagyhatalmi szövetségek",
+     "link_hu": "A szövetségi rendszerek kiépítése a balkáni konfliktusok eszkalációjához vezetett, amely hozzájárult az első világháború kitöréséhez."
+    },
+    "after": {
+     "body": "A nagyhatalmak szövetségi rendszerekbe szerveződtek: 1882-ben létrejött a Hármas Szövetség (Németország, Osztrák-Magyar Monarchia, Olaszország), 1904–1907 között pedig az antant (Franciaország, Oroszország, Nagy-Britannia). Olaszország 1914-ben semleges maradt, majd 1915-ben az antant oldalán lépett be. Ezek a szövetségek növelték a feszültséget, mert egy helyi háború könnyen globális konfliktussá válhatott.",
+     "type": "world",
+     "year": "1914",
+     "heading": "Nagyhatalmi szövetségek",
+     "link_hu": "A szövetségi rendszerek kiépítése a balkáni konfliktusok eszkalációjához vezetett, amely hozzájárult az első világháború kitöréséhez."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-012",
+   "lesson_id": "ed494c42-01c8-4f51-a6f9-ae0a500569df",
+   "block_id": "0838918c-15db-43f8-8863-7642d14333be",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "year",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az imperializmus-blokk éve 1914, a szöveg a 19. század végéről szól",
+   "explanation": "Az év a megjelenő tartalomhoz nem illik; mind a négy blokk azonos, általános 1914-es évet kap.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "a világblokk generált év-mezője"
+  },
+  {
+   "id": "HIST-1112-03-013",
+   "lesson_id": "b7766dce-ca37-4b03-85f6-351dd312bee3",
+   "block_id": "62ec0545-037a-4597-8b31-17aa3fc8c28c",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A német forradalom hatására Magyarországon is politikai változások indultak el, amelyek végül a Tanácsköztársaság megalakulásához vezettek”",
+   "explanation": "A magyarországi őszirózsás forradalom 1918. október 31-én győzött, a német forradalom (november) előtt; a Tanácsköztársaság 1919 márciusában belső válság és a Vix-jegyzék hatására alakult, nem a német forradalom közvetlen hatására.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Aster_Revolution",
+     "title": "Aster Revolution",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Soviet_Republic",
+     "title": "Hungarian Soviet Republic",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A német forradalom 1918 őszén robbant ki, amely a német császárság bukásához vezetett. A forradalom hatására a Monarchia területén is megjelentek hasonló mozgalmak, amelyek a politikai rendszerek megváltozását szorgalmazták. A forradalom következtében kikiáltották a Weimari Köztársaságot, és megkezdődött a politikai átalakulás.",
+     "type": "world",
+     "year": "1918",
+     "heading": "A német forradalom",
+     "link_hu": "A német forradalom hatására Magyarországon is politikai változások indultak el, amelyek végül a Tanácsköztársaság megalakulásához vezettek."
+    },
+    "after": {
+     "body": "A német forradalom 1918 őszén robbant ki, amely a német császárság bukásához vezetett. A forradalom hatására a Monarchia területén is megjelentek hasonló mozgalmak, amelyek a politikai rendszerek megváltozását szorgalmazták. A forradalom következtében kikiáltották a Weimari Köztársaságot, és megkezdődött a politikai átalakulás.",
+     "type": "world",
+     "year": "1918",
+     "heading": "A német forradalom",
+     "link_hu": "Magyarországon a polgári demokratikus forradalom, az őszirózsás forradalom már 1918. október 31-én győzött Károlyi Mihály vezetésével; a Tanácsköztársaság csak 1919 márciusában alakult meg."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-014",
+   "lesson_id": "ed494c42-01c8-4f51-a6f9-ae0a500569df",
+   "block_id": "5927af3c-279f-4731-b7c8-63218a3d1bf0",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "options[3]",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "D) Japán, Ausztrália, Kanada",
+   "explanation": "Japán az antant oldalán harcolt, Ausztrália és Kanada a Brit Birodalom részeként szintén; a D) válasz részben helyes, több jó válasz lehetséges.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Japan in World War I",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Nagy-Britannia, Franciaország, Oroszország",
+      "B) Németország, Osztrák-Magyar Monarchia, Törökország",
+      "C) Olaszország, Bulgária, Szerbia",
+      "D) Japán, Ausztrália, Kanada"
+     ],
+     "question": "Melyik országok alkották az Antant szövetséget az első világháborúban?",
+     "explanation": "Az Antant szövetség a Nagy-Britannia, Franciaország és Oroszország által alkotott koalíció volt, amely az első világháborúban állt szemben a Központi Hatalmakkal.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Nagy-Britannia, Franciaország, Oroszország",
+      "B) Németország, Osztrák-Magyar Monarchia, Törökország",
+      "C) Olaszország, Bulgária, Szerbia",
+      "Olaszország, Bulgária, Törökország"
+     ],
+     "question": "Melyik országok alkották az Antant szövetséget az első világháborúban?",
+     "explanation": "Az Antant szövetség a Nagy-Britannia, Franciaország és Oroszország által alkotott koalíció volt, amely az első világháborúban állt szemben a Központi Hatalmakkal.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-015",
+   "lesson_id": "ed494c42-01c8-4f51-a6f9-ae0a500569df",
+   "block_id": "5927af3c-279f-4731-b7c8-63218a3d1bf0",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Kulcs C: „a háború kirobbantója”; magyarázat: „a trónörökös meggyilkolása Szerbiában történt”",
+   "explanation": "A merénylet Szarajevóban, Bosznia-Hercegovinában történt, nem Szerbiában; Szerbia nem „kirobbantója” volt a háborúnak, hanem a Monarchia ultimátuma és hadüzenete célpontja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Assassination_of_Archduke_Franz_Ferdinand",
+     "title": "Assassination of Archduke Franz Ferdinand",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Mert a szláv népek vezetője volt.",
+      "B) Mert a Központi Hatalmak szövetségese volt.",
+      "C) Mert a háború kirobbantója volt.",
+      "D) Mert semleges maradt a konfliktusban."
+     ],
+     "question": "Miért volt fontos Szerbia a balkáni konfliktusok során?",
+     "explanation": "Szerbia fontos szerepet játszott a balkáni konfliktusokban, és a fő kiváltó oka volt az első világháború kitörésének, mivel a trónörökös meggyilkolása Szerbiában történt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Mert a Monarchia Szerbiát tette felelőssé a szarajevói merényletért, és hadat üzent neki.",
+      "Mert a Központi Hatalmak szövetségese volt.",
+      "Mert semleges maradt a konfliktusban.",
+      "Mert Szerbia üzent hadat elsőként Oroszországnak."
+     ],
+     "question": "Miért került Szerbia a válság középpontjába 1914-ben?",
+     "explanation": "A merényletet egy boszniai szerb követte el Szarajevóban; a Monarchia Szerbiát tette felelőssé, ultimátumot küldött, majd 1914. július 28-án hadat üzent neki.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-016",
+   "lesson_id": "70df7daf-a4e7-46dd-b0a7-c6fd1c73eb75",
+   "block_id": "fc94300c-cfd3-4419-a31f-e28fa8823172",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Mi a villámháború fogalma az első világháború kontextusában? … a központi hatalmak stratégiájára”",
+   "explanation": "A „villámháború” elnevezés a második világháborúból ered; az első világháború elején a Schlieffen-terv gyors győzelmet célzott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Blitzkrieg",
+     "title": "Blitzkrieg",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Schlieffen_Plan",
+     "title": "Schlieffen Plan",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Gyors, megelőző támadás",
+      "B) Hosszú, elhúzódó háború",
+      "C) Politikai tárgyalások sorozata",
+      "D) Gazdasági válság"
+     ],
+     "question": "Mi a villámháború fogalma az első világháború kontextusában?",
+     "explanation": "A villámháború a gyors, megelőző támadást jelenti, amely a háború elején jellemző volt a központi hatalmak stratégiájára.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Gyors, megelőző támadás",
+      "B) Hosszú, elhúzódó háború",
+      "C) Politikai tárgyalások sorozata",
+      "D) Gazdasági válság"
+     ],
+     "question": "Mit jelent a villámháború (Blitzkrieg) fogalma?",
+     "explanation": "A villámháború gyors, meglepetésszerű támadással rövid idő alatt kíván döntést elérni; a fogalom a második világháborúból ered.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-017",
+   "lesson_id": "70df7daf-a4e7-46dd-b0a7-c6fd1c73eb75",
+   "block_id": "fc94300c-cfd3-4419-a31f-e28fa8823172",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Melyik ország volt Olaszország háborús szövetségese?” (a válaszok szövetségek, nem országok)",
+   "explanation": "Rosszul feltett kérdés: a lehetséges válaszok szövetségi rendszerek, nem országok.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "kérdésszöveg",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Központi hatalmak",
+      "B) Antant",
+      "C) Semleges",
+      "D) Osztrák-Magyar Monarchia"
+     ],
+     "question": "Melyik ország volt Olaszország háborús szövetségese az első világháborúban?",
+     "explanation": "Olaszország az Antant szövetségese lett 1915-ben, bár kezdetben semleges volt, majd csatlakozott az Antanthoz.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Központi hatalmak",
+      "B) Antant",
+      "C) Semleges",
+      "D) Osztrák-Magyar Monarchia"
+     ],
+     "question": "Melyik szövetség oldalán lépett be Olaszország a háborúba 1915-ben?",
+     "explanation": "Olaszország az Antant szövetségese lett 1915-ben, bár kezdetben semleges volt, majd csatlakozott az Antanthoz.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-018",
+   "lesson_id": "70df7daf-a4e7-46dd-b0a7-c6fd1c73eb75",
+   "block_id": "fc94300c-cfd3-4419-a31f-e28fa8823172",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„1918. november 11-én ért véget, a fegyverszünet aláírásával”",
+   "explanation": "November 11-én a német fegyverszünet lépett életbe; a Monarchia fegyverszünete november 3-án, a békeszerződések 1919–1920-ban születtek (Trianon: 1920).",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Armistice of Villa Giusti (1918. november 3.)",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1914",
+      "B) 1916",
+      "C) 1918",
+      "D) 1920"
+     ],
+     "question": "Mikor zárult le az első világháború?",
+     "explanation": "Az első világháború 1918. november 11-én ért véget, a fegyverszünet aláírásával.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1914",
+      "B) 1916",
+      "C) 1918",
+      "D) 1920"
+     ],
+     "question": "Mikor zárult le az első világháború?",
+     "explanation": "A nyugati fronton 1918. november 11-én lépett életbe a német fegyverszünet; a Monarchia november 3-án kötött fegyverszünetet, a békeszerződések 1919–1920-ban születtek.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-019",
+   "lesson_id": "1cf7310b-9766-4196-acda-b66eb6543c2b",
+   "block_id": "598ea148-be81-45a5-944e-cc59db5f6eed",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Ki volt Magyarország uralkodója a világháború alatt?”",
+   "explanation": "Ferenc József 1916. november 21-ig uralkodott, IV. Károly csak ezután; a kérdésnek egy időpontra kell vonatkoznia, különben a C) is jó.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Charles_I_of_Austria",
+     "title": "Charles I of Austria",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Franz_Joseph_I_of_Austria",
+     "title": "Franz Joseph I of Austria",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) IV. Károly",
+      "B) Horthy Miklós",
+      "C) Ferenc József",
+      "D) Károlyi Mihály"
+     ],
+     "question": "Ki volt Magyarország uralkodója a világháború alatt?",
+     "explanation": "IV. Károly volt Magyarország uralkodója a világháború alatt, aki többször is próbálta békét kötni.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) IV. Károly",
+      "B) Horthy Miklós",
+      "C) Ferenc József",
+      "D) Károlyi Mihály"
+     ],
+     "question": "Ki lett Ferenc József halála (1916) után Magyarország királya?",
+     "explanation": "IV. Károly volt Magyarország uralkodója a világháború alatt, aki többször is próbálta békét kötni.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-020",
+   "lesson_id": "1cf7310b-9766-4196-acda-b66eb6543c2b",
+   "block_id": "598ea148-be81-45a5-944e-cc59db5f6eed",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a magyar hadifoglyok … gyakran kényszermunkára ítélték őket”",
+   "explanation": "Nyelvtanilag hibás mondat (alany nélküli tárgyas szerkezet), és az általánosítás túlzó.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "magyar helyesírás",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kényszermunka és rossz körülmények",
+      "B) Szabadon bocsátás",
+      "C) Dicsőség és elismerés",
+      "D) Jóléti ellátás"
+     ],
+     "question": "Milyen sors várt a magyar hadifoglyokra a világháborúban?",
+     "explanation": "A magyar hadifoglyok a világháborúban gyakran kényszermunkára ítélték őket, és rossz körülmények között éltek.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kényszermunka és rossz körülmények",
+      "B) Szabadon bocsátás",
+      "C) Dicsőség és elismerés",
+      "D) Jóléti ellátás"
+     ],
+     "question": "Milyen sors várt a magyar hadifoglyokra a világháborúban?",
+     "explanation": "A magyar hadifoglyok közül sokan kényszermunkára kerültek, és rossz körülmények között éltek.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-021",
+   "lesson_id": "1cf7310b-9766-4196-acda-b66eb6543c2b",
+   "block_id": "598ea148-be81-45a5-944e-cc59db5f6eed",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Melyik ország területén zajlott a román front?” Key A: Románia",
+   "explanation": "A román front nagy része 1916-ban Erdélyben, akkor magyar területen zajlott; a kérdés ezért félrevezető.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Romanian campaign (1916)",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Románia",
+      "B) Szlovákia",
+      "C) Szerbia",
+      "D) Olaszország"
+     ],
+     "question": "Melyik ország területén zajlott a román front a világháború alatt?",
+     "explanation": "A román front a világháború során Románia területén zajlott, ahol a magyar hadsereg is részt vett a harcokban.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Románia",
+      "B) Szlovákia",
+      "C) Szerbia",
+      "D) Olaszország"
+     ],
+     "question": "Melyik ország lépett be 1916-ban az antant oldalán, és nyitott új frontot a Monarchia ellen?",
+     "explanation": "Románia 1916. augusztus 27-én lépett be az antant oldalán, és csapatai betörtek Erdélybe.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-03-022",
+   "lesson_id": null,
+   "block_id": "bef52da6-058a-4d2c-b42f-9c8aecb0d9fb",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 5,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A Doberdó Olaszország területén található”",
+   "explanation": "A Doberdó-fennsík a háború idején az Osztrák–Magyar Monarchia területén (Osztrák Tengermellék) volt, ma Olaszország és Szlovénia határán fekszik.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Doberdò del Lago",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Franciaország",
+      "B) Olaszország",
+      "C) Románia",
+      "D) Szerbia"
+     ],
+     "question": "Melyik terület volt a Doberdó?",
+     "explanation": "A Doberdó Olaszország területén található, és fontos harctér volt az első világháborúban.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Franciaország",
+      "B) Olaszország",
+      "C) Románia",
+      "D) Szerbia"
+     ],
+     "question": "Melyik terület volt a Doberdó?",
+     "explanation": "A Doberdó az olasz fronton fekvő, karsztos fennsík volt, ma Olaszország és Szlovénia határán található; fontos harctér volt az első világháborúban.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-1112-03-001": "761c9140-ab79-49f8-91c1-ec37de07768c",
+  "HIST-1112-03-002": "2cb18b77-9f73-4b93-a2e8-8ff02c76d4f7",
+  "HIST-1112-03-003": "b8e8560e-0ece-4345-b373-2819a4955828",
+  "HIST-1112-03-004": "7abb1d44-b0f6-4e14-bcc1-7b52fc83feec",
+  "HIST-1112-03-005": "ca8c53bd-4753-4a5d-b441-9eaefd57d490",
+  "HIST-1112-03-006": "aaa818f1-09ce-4883-896a-22e4b897749b",
+  "HIST-1112-03-007": "feb541c6-d5fc-4147-bdca-3c62b5913a81",
+  "HIST-1112-03-008": "004eeb0a-1bc2-47e2-9795-f7f4a88c56e1",
+  "HIST-1112-03-009": "5bc9dfb2-b9d0-49bd-894e-cddc05319f92",
+  "HIST-1112-03-010": "9979261f-c62d-4c43-a8d0-1d1586e42738",
+  "HIST-1112-03-011": "eb03cb21-01f5-4ae6-ae4d-2490e3bbca2f",
+  "HIST-1112-03-013": "9d3772b1-5fbf-47c4-8769-2b0841fcf944",
+  "HIST-1112-03-014": "419d8c04-3e6e-42ee-9cb0-5643358cdd10",
+  "HIST-1112-03-015": "09841c61-10c1-46dd-8df0-1784913fb698",
+  "HIST-1112-03-016": "4b991329-af02-4143-a155-810575250595",
+  "HIST-1112-03-017": "b405c9db-7de6-4bf0-8610-edfe19e033f6",
+  "HIST-1112-03-018": "54927bad-29e4-4607-ab58-97345b379c42",
+  "HIST-1112-03-019": "aebe3272-5f38-4cab-b16f-6cc47eea2432",
+  "HIST-1112-03-020": "59a73f48-25e0-4309-828c-13a8eb30cc4f",
+  "HIST-1112-03-021": "f4ed0845-3011-4ca5-bb0f-27649dbfdcdb",
+  "HIST-1112-03-022": "5b87cfe6-e407-4246-9c2e-7e12ade18b9a"
+ }
+}

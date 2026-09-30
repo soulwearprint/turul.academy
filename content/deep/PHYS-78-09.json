@@ -1,0 +1,203 @@
+{
+ "nat_id": "PHYS-78-09",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "1721238b-1402-409f-b5dc-83e651971258",
+   "title_hu": "Az ózonpajzs és az éghajlatváltozás",
+   "text_block_id": "37143c9d-3ca5-4320-99f7-76afe8261128",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Három milliméter védelem",
+     "body": "Az ózonréteg nagyjából 15 és 35 km magasan, a sztratoszférában található. Ha az összes ózont a talaj szintjén uralkodó nyomásra sűrítenénk össze, csak kb. 3 mm vastag réteget alkotna, mégis elnyeli a Nap káros ultraibolya sugárzásának nagy részét. Az UV-sugárzás a magasabb hegyeken erősebb, mert ott kevesebb levegő van felettünk, ami szűrné. Ezért lehet a hegyekben vagy a vízparton gyorsabban leégni, még hűvös időben is.",
+     "did_you_know": "Ha a légkör összes ózonját a földfelszíni nyomásra sűrítenénk, csak kb. 3 mm vastag réteget alkotna.",
+     "think": "Miért lehet egy magas hegyen hűvös időben is gyorsan leégni?",
+     "think_answer": "Mert fent kevesebb levegő szűri az UV-sugárzást, és a leégést az UV okozza, nem a meleg. A hó ráadásul vissza is veri az UV-t."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Az ózonlyuk nem a felmelegedés oka",
+     "body": "Gyakori tévedés, hogy az ózonlyuk okozza a globális felmelegedést. Valójában két külön problémáról van szó: az ózonlyuk miatt több UV-sugárzás jut a felszínre, a felmelegedést pedig az üvegházhatású gázok okozzák. Az ózonlyuk minden évben az Antarktisz fölött, a déli félteke tavaszán, szeptember–októberben a legnagyobb, mert a nagyon hideg sarki felhőkön gyorsan zajlanak az ózont bontó kémiai folyamatok. A megnövekedett UV-sugárzás a tengeri planktonnak is árt, amely a tengeri tápláléklánc alapja.",
+     "did_you_know": "Az ózonlyuk az Antarktisz fölött minden évben a déli félteke tavaszán, szeptember és október táján a legnagyobb.",
+     "think": "Az ózonlyuk okozza a globális felmelegedést?",
+     "think_answer": "Nem, a kettő két külön probléma. Az ózonlyuk az UV-sugárzást engedi át, a felmelegedést az üvegházhatású gázok okozzák. Az ózont bontó freonok ugyanakkor üvegházhatású gázok is."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A sikeres egyezmény",
+     "body": "Az 1987-es montreali jegyzőkönyv betiltotta a freonokat és más ózonbontó anyagokat, és a világ minden országa elfogadta. Azóta a légkörben csökken a mennyiségük, és a tudósok szerint az ózonréteg az évszázad közepére-második felére helyreállhat. Az ózonbontó anyagok ma már nincsenek az új hűtőkben és spray-kben, de a régi hűtőszekrényekben még lehetnek. Ezért kell a régi hűtőket szakszerűen, gyűjtőhelyen leadni, az energiatakarékosság viszont az ózonrétegen nem segít, az a klímavédelmet szolgálja.",
+     "did_you_know": "A montreali jegyzőkönyv az első olyan nemzetközi egyezmény, amelyet az ENSZ összes tagállama elfogadott.",
+     "think": "Miért nem szabad egy régi hűtőszekrényt egyszerűen a szemétbe dobni?",
+     "think_answer": "A régi hűtők hűtőközegében és szigetelésében ózonbontó anyagok lehetnek, amelyek szakszerűtlen bontásnál a levegőbe jutnak."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Egy liter benzinből 2,3 kg szén-dioxid",
+     "body": "A levegő szén-dioxid-tartalma az ipari forradalom előtt kb. 280 milliomod rész volt, ma már 420 milliomod rész fölött van. Egy liter benzin elégetésekor kb. 2,3 kg szén-dioxid keletkezik, pedig maga a benzin csak kb. 0,75 kg. Ennek az az oka, hogy a benzinben lévő szén égéskor a levegő oxigénjével egyesül, és a szén-dioxid tömegének nagyobb része ebből az oxigénből származik. A metán kevesebb, de sokkal erősebb üvegházhatású gáz: 100 év alatt kb. 25-30-szor erősebben melegít, mint ugyanannyi szén-dioxid.",
+     "did_you_know": "Egy liter benzin elégetésekor a keletkező szén-dioxid tömege háromszorosa a benzinének.",
+     "think": "Hogyan lehet, hogy 0,75 kg benzinből 2,3 kg szén-dioxid keletkezik?",
+     "think_answer": "Égéskor a benzin szénatomjai a levegő oxigénjével egyesülnek. A szén-dioxid tömegének nagy része ebből a levegőből származó oxigénből adódik."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Egy fok is sokat számít",
+     "body": "A Föld átlaghőmérséklete az ipari forradalom óta kb. 1,2-1,3 °C-kal nőtt. Ez kevésnek tűnik, de egy egész bolygó átlagáról van szó: az átlag kis emelkedése sokkal gyakoribb és erősebb hőhullámokat jelent. Magyarország a szárazföld belsejében fekszik, ezért nálunk gyorsabban nő a hőmérséklet, mint a világátlag. Velence az emelkedő tengerszint és a dagályok ellen 2020 óta mozgatható gátrendszerrel védekezik, amelyet vihar esetén felemelnek.",
+     "did_you_know": "Velencét 2020 óta egy mozgatható gátrendszer védi, amelynek elemei a tengerfenékről emelkednek fel dagály idején.",
+     "think": "Miért számít sokat, ha az átlaghőmérséklet csak 1 °C-kal nő?",
+     "think_answer": "Mert az átlag kis változása mögött a szélsőségek gyakoriságának nagy változása áll: sokkal több lesz a nagyon forró nap és a hőhullám."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "A jégkocka a pohárban",
+     "body": "Ha egy pohár vízben úszó jégkocka elolvad, a vízszint nem emelkedik, mert a jég már eddig is annyi vizet szorított ki, amennyi olvadás után lesz belőle. Ugyanez igaz a tengeren úszó jégre, például az Északi-sarkvidék jegére. A tengerszintet a szárazföldön lévő jég, a grönlandi és az antarktiszi jégtakaró, valamint a gleccserek olvadása emeli, továbbá az, hogy a melegedő tengervíz kitágul. A tengerszint 1900 óta kb. 20 cm-t emelkedett; ezt egy kiránduláson nem lehet látni, mert a dagály és az apály ennél sokkal nagyobb ingadozást okoz.",
+     "did_you_know": "Az úszó tengeri jég olvadása alig emeli a tengerszintet, a szárazföldi jégtakarók olvadása viszont igen.",
+     "think": "Mi emeli jobban a tengerszintet: az Északi-sarki úszó jég, vagy a grönlandi jégtakaró olvadása?",
+     "think_answer": "A grönlandi jégtakaró, mert az a szárazföldön fekszik, így olvadékvize új vízként kerül a tengerbe. Az úszó jég olvadása alig változtat a szinten."
+    }
+   ]
+  },
+  {
+   "lesson_id": "a6fa16e6-c44b-42e3-b49e-34dbfa03ebe4",
+   "title_hu": "Az üvegházhatás és az emberi tevékenység hatásai",
+   "text_block_id": "2ee46848-40a5-4907-9cdb-e9264c8cf6bc",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "−18 °C üvegházhatás nélkül",
+     "body": "Természetes üvegházhatás nélkül a Föld átlaghőmérséklete kb. −18 °C lenne, a mai kb. +15 °C helyett. A Nap fénye átjut a légkörön, és felmelegíti a felszínt, a felszín pedig láthatatlan infravörös sugárzást bocsát ki. Ezt az infravörös sugárzást a vízgőz, a szén-dioxid és a metán részben elnyeli, és egy részét visszasugározza a felszín felé. A legnagyobb természetes üvegházhatású gáz egyébként a vízgőz.",
+     "did_you_know": "A természetes üvegházhatás nélkül a Föld átlaghőmérséklete kb. −18 °C lenne.",
+     "think": "Ha az üvegházhatás életet ad, miért gond, ha erősödik?",
+     "think_answer": "Mert az élővilág és az emberi társadalom a mostani éghajlathoz alkalmazkodott. A gyors erősödés gyors felmelegedést okoz, amelyhez nehéz alkalmazkodni."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Egy iskolai út szén-dioxidja",
+     "body": "Ha egy autó 100 km-en 7 liter benzint fogyaszt, egy 10 km-es út 0,7 liter benzinbe kerül, ami kb. 1,6 kg szén-dioxidot jelent. Egy busz ugyanezt az utat sok utassal teszi meg, így egy főre sokkal kevesebb kibocsátás jut. Az elektromos autó menet közben nem bocsát ki szén-dioxidot, de az áram előállítása járhat kibocsátással. Gyalog vagy kerékpárral pedig szinte semmi szén-dioxid nem keletkezik.",
+     "did_you_know": "Egy 10 km-es autóút kb. 1,6 kg szén-dioxiddal jár, ami több, mint egy nagy üveg víz tömege.",
+     "think": "Miért kisebb egy főre jutó kibocsátás buszon, mint autóban, pedig a busz több üzemanyagot fogyaszt?",
+     "think_answer": "Mert a busz üzemanyag-fogyasztása sok utas között oszlik meg, így egy emberre sokkal kevesebb jut."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Hány Földre lenne szükség?",
+     "body": "Az ökológiai lábnyomot összevethetjük azzal, amit a Föld egy év alatt meg tud újítani. A számítások szerint az emberiség jelenleg úgy használja az erőforrásokat, mintha kb. 1,7 Földünk lenne. Ezt mutatja a túlfogyasztás napja is: az év azon napja, amikorra elhasználjuk azt, amit a Föld egész évben megújítani képes. Ez az utóbbi években július végére, augusztus elejére esett.",
+     "did_you_know": "A túlfogyasztás napja az utóbbi években július végére vagy augusztus elejére esett.",
+     "think": "Mit jelent az, hogy az emberiség úgy él, mintha 1,7 Földünk lenne?",
+     "think_answer": "Azt, hogy egy év alatt többet használunk el a természet erőforrásaiból, mint amennyit a Föld abban az évben meg tud újítani, így a tartalékokat éljük fel."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mit eszel, számít jobban, mint honnan",
+     "body": "Az élelmiszerek lábnyomában a szállítás általában kisebb tétel, mint maga a termelés. Egy kilogramm marhahús előállítása több tíz kg szén-dioxiddal egyenértékű kibocsátással jár, főleg a szarvasmarhák emésztése során keletkező metán miatt. Ugyanennyi zöldség vagy hüvelyes lábnyoma ennek töredéke. A helyi, idénynek megfelelő élelmiszer is segít, de a legnagyobb különbséget az okozza, milyen élelmiszert eszünk.",
+     "did_you_know": "A szarvasmarhák emésztésük során metánt böfögnek ki, ez a marhahús nagy lábnyomának egyik fő oka.",
+     "think": "Miért nagyobb a marhahús lábnyoma, mint a babé, még akkor is, ha a babot messzebbről hozzák?",
+     "think_answer": "A marhák takarmányt esznek és metánt termelnek, így egy kilogramm hús előállítása sokkal több kibocsátással jár, mint a szállítás. A bab termelése sokkal kisebb terhelést jelent."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A hasonlat határai",
+     "body": "A valódi üvegház főleg azért melegszik fel, mert az üveg megakadályozza, hogy a felmelegedett levegő felszálljon és elkeveredjen a kintivel. A légkör üvegházhatása ettől eltér: ott a gázok az infravörös sugárzást nyelik el és sugározzák vissza. A napon álló autóban is az üvegházhoz hasonló folyamat zajlik: a sötét műszerfal akár 70 °C fölé is felmelegedhet. Ezért soha nem szabad gyereket vagy állatot napon álló autóban hagyni, még rövid időre sem.",
+     "did_you_know": "Nyári napon egy zárt autó belseje fél óra alatt 20 °C-kal is melegebb lehet a külső levegőnél.",
+     "think": "Miért életveszélyes nyáron egy állatot akár csak néhány percre is az autóban hagyni?",
+     "think_answer": "A zárt autóban a levegő nem tud cserélődni, ezért a belső hőmérséklet percek alatt nagyon magasra emelkedhet, és az állat hőgutát kaphat."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Egy kilowatt nem mindig egy kilowatt",
+     "body": "Egy 1 kW-os napelemrendszer csak derült délben termel közel 1 kW teljesítményt; éjjel semmit, felhős időben keveset. Magyarországon egy ilyen rendszer egy év alatt kb. 1 100–1 300 kWh áramot termel, ami sokkal kevesebb, mint ha egész évben folyamatosan 1 kW-tal működne. A szélerőművek is csak akkor termelnek, ha fúj a szél. Ezért van szükség több különböző energiaforrásra és tárolásra.",
+     "did_you_know": "Egy napelem egész éves termelése nagyjából annyi, mintha az évnek csak kb. hetedében működne teljes teljesítménnyel.",
+     "think": "Miért termel egy 1 kW-os napelem egy év alatt sokkal kevesebb áramot, mint 1 kW · 8 760 óra?",
+     "think_answer": "Mert éjjel nem termel, reggel és este, valamint felhős időben kevesebbet, télen pedig rövidek a nappalok."
+    }
+   ]
+  },
+  {
+   "lesson_id": "fc9bc26d-9e63-438b-b26c-3b16966dc508",
+   "title_hu": "Környezeti szennyezések és innovatív megoldások",
+   "text_block_id": "9d7cb434-22a0-4e65-84eb-f846f0c8f867",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Eltűnt Tejút",
+     "body": "A fényszennyezés miatt az emberiség kb. harmada már nem látja otthonról a Tejutat. Magyarországon vannak csillagoségbolt-parkok, például a Zselicben és a Hortobágyon, ahol ma is sötét az éjszakai ég. A fényszennyezés az élőlényeket is zavarja: a rovarokat vonzzák a lámpák, a vándormadarak eltévedhetnek. A lefelé irányított, meleg színű LED-lámpák sokkal kevesebb fényt szórnak az égre, mint a régi, gömb alakú lámpatestek.",
+     "did_you_know": "A tengerparton kikelő kisteknősök a tenger felett csillogó égbolt fénye felé indulnak, ezért a parti lámpák a szárazföld felé csalogathatják őket.",
+     "think": "Miért jobb a fényszennyezés szempontjából a lefelé világító lámpa, mint a gömb alakú?",
+     "think_answer": "A lefelé világító lámpa csak oda juttat fényt, ahol szükség van rá. A gömb alakú minden irányba, így az ég felé is világít."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Zaj ellen zajjal",
+     "body": "A zajszennyezés a hallás mellett az alvást és a koncentrációt is rontja, és hosszú távon a stressz miatt a szív egészségére is hatással lehet. A zajszűrős fejhallgatók különleges módon működnek: mikrofonnal érzékelik a külső zajt, és ellentétes fázisú hangot keltenek, amely kioltja azt. Ez főleg az egyenletes, mély zajoknál, például a repülőgép motorjának zúgásánál működik jól. A hirtelen, magas hangokat kevésbé tudják kioltani.",
+     "did_you_know": "A zajszűrős fejhallgató a külső zajjal ellentétes fázisú hangot kelt, és így a két hang kioltja egymást.",
+     "think": "Miért könnyebb egy repülőgép egyenletes zúgását kioltani, mint egy hirtelen kiáltást?",
+     "think_answer": "Az egyenletes zúgás kiszámítható, így a fejhallgató előre tudja kelteni az ellentétes hangot. A hirtelen hangra nincs ideje felkészülni."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Nem szita, hanem csapda",
+     "body": "A HEPA szűrő nem egyszerű szita: a részecskék egy része a szálaknak ütközik, más része megtapad rajtuk, a legkisebbek pedig a véletlenszerű mozgásuk miatt előbb-utóbb a szálakba ütköznek. Meglepő, hogy a legnehezebben a kb. 0,3 mikrométeres részecskéket szűri ki, a náluk kisebbeket és nagyobbakat is jobban. A HEPA szűrő ezeket is legalább 99,97%-os hatékonysággal megfogja. A 2,5 mikrométernél kisebb szálló por azért veszélyes, mert mélyen a tüdőbe jut.",
+     "did_you_know": "A HEPA szűrő a kb. 0,3 mikrométeres részecskéket szűri a legnehezebben; a náluk kisebbeket és nagyobbakat is könnyebben megfogja.",
+     "think": "Miért veszélyesebb a nagyon apró szálló por, mint a nagyobb porszemcsék?",
+     "think_answer": "A nagyobb szemcséket az orr és a légutak kiszűrik, a nagyon aprók viszont mélyen a tüdőbe, sőt a vérbe is bejuthatnak."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Nehéz fal, csendes szoba",
+     "body": "A hang a levegőn kívül a szilárd anyagokon is terjed, sőt azokban gyorsabban. Egy fal annál jobban szigetel, minél nagyobb a tömege: egy kétszer nehezebb fal kb. 6 decibellel jobban szigetel. Még jobb, ha két réteg közé levegő- vagy szigetelőréteget tesznek, mert így a rezgés nehezebben jut át. A szomszéd lépései a födémen át terjednek, ezért a padlóba rugalmas, úsztató réteget építenek.",
+     "did_you_know": "A felettünk lakók lépteinek zaja nem a levegőn, hanem a födémen, szilárd anyagon át jut le hozzánk.",
+     "think": "Miért halljuk jobban a felső szomszéd lépteit, mint a beszélgetését?",
+     "think_answer": "A léptek közvetlenül a födémet rezegtetik meg, és a szilárd anyag jól vezeti a rezgést. A beszéd a levegőben terjed, ezt a födém jobban elnyeli."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Új címkék: A-tól G-ig",
+     "body": "Az Európai Unióban 2021-től a háztartási gépek energiacímkéje új, A-tól G-ig terjedő skálát kapott, az A+, A++ és A+++ jelölések megszűntek. Az új skálát szigorúbbra tervezték, ezért egy korábban A+++ osztályú hűtő ma akár csak D vagy E osztályú lehet. A címkén egy QR-kód is van, amelyen keresztül a termék pontos adatai ellenőrizhetők. A legfontosabb szám azonban az éves energiafogyasztás kWh-ban, mert ezzel lehet összehasonlítani a gépeket.",
+     "did_you_know": "A 2021-es átsorolás után sok korábban A+++ osztályú hűtőszekrény D vagy E besorolást kapott, pedig ugyanannyit fogyaszt.",
+     "think": "Miért jobb a címkén az éves kWh-fogyasztást nézni, mint csak a betűt?",
+     "think_answer": "Mert a kWh pontosan megmutatja, mennyi energiát fogyaszt a gép egy évben, így két különböző méretű vagy osztályú gép is összehasonlítható."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Szennyezés az űrből",
+     "body": "A levegőszennyezést ma már műholdakról is mérik: bizonyos műszerek a légkörön átjutó napfényből kiolvassák, mennyi nitrogén-dioxid van a levegőben. Ez a gáz főleg a járművek és erőművek égéstermékeiből származik. 2020 tavaszán, a járvány miatti korlátozások idején a műholdképeken jól látszott, hogy a nagyvárosok fölött jelentősen csökkent a nitrogén-dioxid mennyisége. A földi mérőállomások adatait mobilalkalmazásokban is bárki megnézheti.",
+     "did_you_know": "2020 tavaszán a műholdfelvételeken jól látszott, hogy a korlátozások idején a nagyvárosok feletti nitrogén-dioxid mennyisége jelentősen csökkent.",
+     "think": "Miért csökkent 2020 tavaszán a nagyvárosok levegőjének szennyezettsége?",
+     "think_answer": "Mert a korlátozások miatt sokkal kevesebb autó közlekedett, és kevesebb gyár működött, így kevesebb égéstermék került a levegőbe."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Az alumíniumdoboz második élete",
+     "body": "Az újrahasznosítás sokszor rengeteg energiát takarít meg. Egy alumíniumdoboz újrahasznosításához kb. 95%-kal kevesebb energia kell, mint új alumínium előállításához a bauxitércből. Az alumínium ráadásul minőségromlás nélkül akárhányszor újraolvasztható. Ezért ér annyit a szelektív gyűjtés: a jól szétválogatott hulladékból új termék lesz, a vegyes szemétből legfeljebb energia vagy lerakott hulladék.",
+     "did_you_know": "Egy alumíniumdoboz újrahasznosítása kb. 95%-kal kevesebb energiát igényel, mint egy új előállítása ércből.",
+     "think": "Miért érdemes a szelektív gyűjtésnél a dobozokat és palackokat összelapítani?",
+     "think_answer": "Így kevesebb helyet foglalnak a gyűjtőben és a szállító autóban, ezért ritkábban kell üríteni és kevesebb üzemanyag kell a szállításhoz."
+    }
+   ]
+  }
+ ]
+}

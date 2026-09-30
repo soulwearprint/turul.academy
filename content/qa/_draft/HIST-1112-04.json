@@ -1,0 +1,1175 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világblokkok: b9409daa (Szocialista és nemzeti törekvések) és ef8aed90 (A Párizs környéki békék) egyetlen kártyát sem tartalmaznak.",
+   "A „vörös térkép” mint bolsevik elv (1. lecke) és mint trianoni térkép (5. lecke) közös hiba: Teleki Pál 1919-es néprajzi térképe."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "289aa1a6-a466-4d9d-a891-976ff2717942",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Vlagyimir I. Lenin”; „A bolsevikok a 'vörös térkép' elvét alkalmazták, amely a szocialista államok terjeszkedését célozta.”",
+   "explanation": "Lenin neve Vlagyimir Iljics Uljanov; az „I.” az apai név kezdőbetűje, nem uralkodói sorszám. A „vörös térkép” nem bolsevik elv: Teleki Pál 1919-es néprajzi térképe (a trianoni békéhez kapcsolódik). A bolsevikok jelszava a világforradalom volt (Komintern, 1919).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Vladimir_Lenin",
+     "title": "Vladimir Lenin",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Communist_International",
+     "title": "Communist International",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Vlagyimir I. Lenin",
+     "Vlagyimir Iljics Lenin"
+    ],
+    [
+     "A bolsevikok a 'vörös térkép' elvét alkalmazták, amely a szocialista államok terjeszkedését célozta.",
+     "A bolsevikok a világforradalom gondolatát vallották: 1919-ben megalapították a Kommunista Internacionálét (Komintern)."
+    ]
+   ]
+  },
+  {
+   "block_id": "289aa1a6-a466-4d9d-a891-976ff2717942",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A 'kisantant' szövetség keretein belül Csehszlovákia, Románia és Jugoszlávia együttműködtek”",
+   "explanation": "A kisantantot 1920–21-ben hozták létre; Lengyelország nem volt tagja, a kártya témájához (lengyel függetlenség) nem tartozik. A magyar revízió elleni célt sem említi.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Little_Entente",
+     "title": "Little Entente",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A 'kisantant' szövetség keretein belül Csehszlovákia, Románia és Jugoszlávia együttműködtek a közép-európai stabilitás megteremtésére.",
+     "Csehszlovákia, Jugoszlávia és Románia 1920–21-ben megalakította a kisantantot (Lengyelország nem volt tagja), elsősorban a magyar revízió megakadályozására."
+    ]
+   ]
+  },
+  {
+   "block_id": "289aa1a6-a466-4d9d-a891-976ff2717942",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "„1915 és 1917 között … több százezer örményt gyilkoltak meg”; „Magyarország számára is fontos tanulságokat hordozott”",
+   "explanation": "A népirtás 1915 áprilisában kezdődött; az áldozatok számát egy-másfél millióra becsülik. A magyar vonatkozás erőltetett; valós hatás: Lemkin genocídium-fogalma és az 1948-as ENSZ-egyezmény.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Armenian_genocide",
+     "title": "Armenian genocide",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Raphael_Lemkin",
+     "title": "Raphael Lemkin",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "1915 és 1917 között",
+     "1915-től"
+    ],
+    [
+     "több százezer örményt gyilkoltak meg",
+     "becslések szerint egy-másfél millió örményt gyilkoltak meg"
+    ],
+    [
+     "Magyarország számára is fontos tanulságokat hordozott a kisebbségi jogok védelme szempontjából.",
+     "Raphael Lemkin 1944-ben ennek nyomán alkotta meg a „genocídium” (népirtás) fogalmát, és 1948-ban az ENSZ elfogadta a népirtás elleni egyezményt."
+    ]
+   ]
+  },
+  {
+   "block_id": "289aa1a6-a466-4d9d-a891-976ff2717942",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Benito Mussolini 1922-ben került hatalomra Olaszországban, megalapítva a fasizmust”",
+   "explanation": "A fasiszta mozgalmat Mussolini 1919-ben alapította; 1922 októberében a Római menetelés után a király nevezte ki miniszterelnöknek. A hatalomra jutás és az alapítás két külön esemény.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Benito_Mussolini",
+     "title": "Benito Mussolini",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/March_on_Rome",
+     "title": "March on Rome",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "1922-ben került hatalomra Olaszországban, megalapítva a fasizmust, amely",
+     "1922 októberében, a Római menetelés után lett Olaszország miniszterelnöke; az általa 1919-ben alapított fasiszta mozgalom"
+    ]
+   ]
+  },
+  {
+   "block_id": "289aa1a6-a466-4d9d-a891-976ff2717942",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "„Károlyi Mihály 1918-1919 között vezette Magyarországot”; „Az ellenforradalom 1919-ben kezdődött, amely a kommunista kormány bukásához vezetett”",
+   "explanation": "Károlyi 1918. október 31-től miniszterelnök, 1919. január 11-től ideiglenes köztársasági elnök volt; a Tanácsköztársaság bukását a román katonai előretörés okozta, az ellenforradalmi kormány Aradon, majd Szegeden szerveződött (Horthy Nemzeti Hadserege).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mihály_Károlyi",
+     "title": "Mihály Károlyi",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Soviet_Republic",
+     "title": "Hungarian Soviet Republic",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Károlyi Mihály 1918-1919 között vezette Magyarországot a kommunista hatalomátvétel előtt.",
+     "Károlyi Mihály 1918. október 31-től miniszterelnök, 1919. január 11-től a Magyar Népköztársaság ideiglenes elnöke volt; 1919 márciusában a hatalom a szociáldemokraták és a kommunisták kezébe került."
+    ],
+    [
+     "Az ellenforradalom 1919-ben kezdődött, amely a kommunista kormány bukásához vezetett.",
+     "Az ellenforradalom 1919 tavaszán Aradon és Szegeden szerveződött; a Tanácsköztársaság bukását végül a román hadsereg előrenyomulása okozta."
+    ]
+   ]
+  },
+  {
+   "block_id": "61a02b4c-0eda-4e9c-8682-bdd45f98e7dc",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Kárpátalja és a Felvidék területeit Csehszlovákia, míg Délvidék egy részét Románia igényelte”",
+   "explanation": "Erdély kimaradt (a legnagyobb terület, Románia igényelte); a Délvidéket (Bácska, Baranya, a Bánság nyugati része) a Szerb–Horvát–Szlovén Királyság igényelte, nem Románia.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Trianon",
+     "title": "Treaty of Trianon",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Romanian_Army_in_Transylvania_(1918)",
+     "title": "Romanian Army in Transylvania (1918)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "míg Délvidék egy részét Románia igényelte",
+     "Erdélyt és a Bánság keleti részét Románia, a Délvidéket (Bácska, Baranya, a Bánság nyugati része) a Szerb–Horvát–Szlovén Királyság igényelte"
+    ]
+   ]
+  },
+  {
+   "block_id": "61a02b4c-0eda-4e9c-8682-bdd45f98e7dc",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Burgenland, amely a Monarchia szétesése után került osztrák irányítás alá”",
+   "explanation": "Burgenland (Nyugat-Magyarország) 1921-ben került Ausztriához, a trianoni és saint-germaini békeszerződések alapján, Sopron környéki népszavazás után; és Erdély, a legnagyobb terület, kimarad a felsorolásból.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Burgenland",
+     "title": "Burgenland",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ödenburg_Plebiscite",
+     "title": "Ödenburg Plebiscite",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Burgenland, amely a Monarchia szétesése után került osztrák irányítás alá",
+     "Burgenland (Nyugat-Magyarország), amely a békeszerződések értelmében 1921-ben került Ausztriához"
+    ]
+   ]
+  },
+  {
+   "block_id": "61a02b4c-0eda-4e9c-8682-bdd45f98e7dc",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A 1918. október 31-i forradalom”; a kártya lényegében megismétli a 2. kártyát",
+   "explanation": "Névelőhiba: „Az 1918. október 31-i”. A szöveg nem nevezi meg a forradalmat (őszirózsás forradalom), és tartalmilag az 1. kártyát ismétli.",
+   "source_note": "magyar helyesírás; duplikált szöveg",
+   "replace": [
+    [
+     "A 1918. október 31-i forradalom",
+     "Az 1918. október 31-i őszirózsás forradalom"
+    ]
+   ]
+  },
+  {
+   "block_id": "71f99335-3cec-4f50-9108-6bdedb570c06",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "„a tanácsköztársaság 1919. március 21-én alakult meg, miután a KMP hatalomra jutott”",
+   "explanation": "A hatalmat a szociáldemokraták és a kommunisták egyesült pártja vette át; a Forradalmi Kormányzótanács elnöke formálisan Garbai Sándor volt, a tényleges vezető Kun Béla (külügyi népbiztos).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Soviet_Republic",
+     "title": "Hungarian Soviet Republic",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Béla_Kun",
+     "title": "Béla Kun",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "miután a KMP hatalomra jutott",
+     "miután a kommunisták és a szociáldemokraták egyesültek és átvették a hatalmat; formálisan Garbai Sándor lett a Forradalmi Kormányzótanács elnöke, a tényleges vezető Kun Béla volt"
+    ]
+   ]
+  },
+  {
+   "block_id": "71f99335-3cec-4f50-9108-6bdedb570c06",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A Lenin-fiúk, a KMP fegyveres csoportja”",
+   "explanation": "A Lenin-fiúk Cserny József vezette különítmény volt, a belügyi apparátus része; nem a párt fegyveres csoportja. A vörösterror áldozatainak száma néhány száz volt, a fehérterroré ennél nagyobb.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Red_Terror_(Hungary)",
+     "title": "Red Terror (Hungary)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Lenin_Boys",
+     "title": "Lenin Boys",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A Lenin-fiúk, a KMP fegyveres csoportja",
+     "A Lenin-fiúk, Cserny József vezette fegyveres különítmény"
+    ]
+   ]
+  },
+  {
+   "block_id": "71f99335-3cec-4f50-9108-6bdedb570c06",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "„A tanácsköztársaság hadereje gyengült, és a románok gyorsan előrehaladtak.”",
+   "explanation": "A Vörös Hadsereg kezdetben sikeres volt (Kassa, 1919 június); a párizsi békekonferencia felszólítására visszavonult, majd a román hadsereg július végén átkelt a Tiszán. A kártya nem magyarázza meg az északi hadjárat lefolyását.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian–Czechoslovak_War",
+     "title": "Hungarian–Czechoslovak War",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian–Romanian_War_of_1919",
+     "title": "Hungarian–Romanian War of 1919",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A tanácsköztársaság hadereje gyengült, és a románok gyorsan előrehaladtak.",
+     "A Vörös Hadsereg kezdeti sikerei (Kassa, 1919 június) után a békekonferencia felszólítására visszavonult; júliusban a román hadsereg átkelt a Tiszán, és a Vörös Hadsereg összeomlott."
+    ]
+   ]
+  },
+  {
+   "block_id": "71f99335-3cec-4f50-9108-6bdedb570c06",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "„a vörösterrorral szembeni válaszként jelent meg”",
+   "explanation": "A fehérterror nem pusztán válasz volt: célpontjai baloldaliak és sok zsidó származású ember voltak, és a vörösterrornál több áldozatot követelt. A „válasz” megfogalmazás a vörösterrort alapoknak tünteti fel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/White_Terror_(Hungary)",
+     "title": "White Terror (Hungary)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "ami a vörösterrorral szembeni válaszként jelent meg",
+     "amely gyakran baloldaliak és zsidók ellen irányult, és a vörösterrornál több áldozatot követelt"
+    ]
+   ]
+  },
+  {
+   "block_id": "19fdfd80-b457-4439-8b83-b933329db837",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A kisantant szoros kapcsolatban állt … a Népszövetség érdekeivel”; „A szövetség a magyar kisebbségek jogainak védelmét is hangsúlyozta”",
+   "explanation": "A kisantantot 1920–21-ben Csehszlovákia és Jugoszlávia, majd Románia hozta létre Franciaország támogatásával a magyar revízió ellen; a kisebbségvédelem külön kisebbségvédelmi szerződésekben volt rögzítve, nem a kisantant feladata.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Little_Entente",
+     "title": "Little Entente",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Minority_Treaties",
+     "title": "Minority Treaties",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A kisantant szoros kapcsolatban állt a nagyhatalmak, például Franciaország és a Népszövetség érdekeivel, amelyek a térség befolyásának megőrzésére törekedtek.",
+     "A kisantantot 1920–21-ben hozták létre; Franciaország támogatta, mert a térségben a német és a magyar revízióval szemben ellensúlyt akart."
+    ],
+    [
+     "A szövetség a magyar kisebbségek jogainak védelmét is hangsúlyozta, de a valóságban sok esetben nem biztosította a megfelelő védelmet.",
+     "A kisebbségi jogokat külön kisebbségvédelmi szerződések írták elő az új államoknak, de ezek betartása sokszor hiányos volt."
+    ]
+   ]
+  },
+  {
+   "block_id": "19fdfd80-b457-4439-8b83-b933329db837",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a hadsereg-korlátozás … a magyar fegyveres erők létszámának drasztikus csökkentését jelentette”",
+   "explanation": "A számszerű adat hiányzik: a trianoni béke 35 ezer fős, önkéntes hivatásos hadsereget engedélyezett, sorozás és nehézfegyverek nélkül. A jóvátétel összegét Trianon nem rögzítette.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Trianon",
+     "title": "Treaty of Trianon",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "ami a magyar fegyveres erők létszámának drasztikus csökkentését jelentette",
+     "ami a magyar hadsereget 35 ezer fős, önkéntes hivatásos haderőre korlátozta, sorozás és nehézfegyverek nélkül"
+    ]
+   ]
+  },
+  {
+   "block_id": "19fdfd80-b457-4439-8b83-b933329db837",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Wilson politikája tehát ambivalens hatású volt a magyar kisebbségek helyzetére.”",
+   "explanation": "Homályos, erőltetett magyar vonatkozás. A lényeges tény: Wilson 14 pontja még csak autonómiát ígért a Monarchia népeinek, és az USA Szenátusa nem ratifikálta a versailles-i békét.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fourteen_Points",
+     "title": "Fourteen Points",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles",
+     "title": "Treaty of Versailles",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Wilson politikája tehát ambivalens hatású volt a magyar kisebbségek helyzetére.",
+     "Wilson 14 pontja 1918 januárjában még csak autonómiát ígért az Osztrák–Magyar Monarchia népeinek; az Egyesült Államok végül nem ratifikálta a versailles-i békét, és nem lépett be a Népszövetségbe."
+    ]
+   ]
+  },
+  {
+   "block_id": "19fdfd80-b457-4439-8b83-b933329db837",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Csehszlovákia, Jugoszlávia és Ausztria új államként jelentek meg”",
+   "explanation": "Lengyelország kimaradt, és a „Jugoszlávia” név 1929-ig nem volt hivatalos: a Szerb–Horvát–Szlovén Királyság alakult meg 1918-ban.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Yugoslavia",
+     "title": "Kingdom of Yugoslavia",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_Polish_Republic",
+     "title": "Second Polish Republic",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Csehszlovákia, Jugoszlávia és Ausztria új államként jelentek meg",
+     "Lengyelország, Csehszlovákia, a Szerb–Horvát–Szlovén Királyság (későbbi Jugoszlávia) és Ausztria új államként jelentek meg"
+    ]
+   ]
+  },
+  {
+   "block_id": "334a7853-fe02-4ec4-9671-ef7d49607775",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a 1919-es békekonferencia, ahol a győztes hatalmak döntöttek”; „Magyarország képviseletét Apponyi Albert vezette”",
+   "explanation": "Névelőhiba („Az 1919-es”). A magyar delegáció nem vehetett részt a konferencián 1919-ben: csak 1920 januárjában kapott meghívást, amikor a békefeltételek elkészültek (Apponyi 1920. január 16-i beszéde).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Trianon",
+     "title": "Treaty of Trianon",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Albert_Apponyi",
+     "title": "Albert Apponyi",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A trianoni békediktátum előzménye a 1919-es békekonferencia, ahol a győztes hatalmak döntöttek a háború utáni területi változásokról.",
+     "A trianoni béke előzménye a párizsi békekonferencia (1919–1920), ahol a győztes hatalmak a magyar küldöttség nélkül döntöttek a területi változásokról; a delegáció csak 1920 januárjában jelenhetett meg."
+    ]
+   ]
+  },
+  {
+   "block_id": "334a7853-fe02-4ec4-9671-ef7d49607775",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A trianoni békediktátum 1920. június 4-én lépett életbe”; „figyelmen kívül hagyva a helyi lakosság akaratát”",
+   "explanation": "1920. június 4-én aláírták; hatályba 1921. július 26-án lépett. Népszavazást a győztesek csaknem mindenhol elutasítottak, de Sopron környékén 1921 decemberében tartottak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Trianon",
+     "title": "Treaty of Trianon",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ödenburg_Plebiscite",
+     "title": "Ödenburg Plebiscite",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A trianoni békediktátum 1920. június 4-én lépett életbe, és",
+     "A trianoni békeszerződést 1920. június 4-én írták alá a Versailles-i Nagy Trianon-palotában; hatályba 1921. július 26-án lépett, és"
+    ],
+    [
+     "figyelmen kívül hagyva a helyi lakosság akaratát",
+     "a legtöbb helyen népszavazás nélkül (kivéve Sopron környékét, 1921)"
+    ]
+   ]
+  },
+  {
+   "block_id": "334a7853-fe02-4ec4-9671-ef7d49607775",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A magyar állam elvesztette a legfontosabb ipari központjait”; „munkaerőhiány”",
+   "explanation": "Budapest, az ipar fő központja Magyarországon maradt; az ország a nyersanyagbázisok (erdő, érc, só) és a piacok nagy részét vesztette el. A menekültek (kb. 350 ezer fő) munkanélküliséget és lakáshiányt okoztak, nem munkaerőhiányt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Trianon",
+     "title": "Treaty of Trianon",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungary_between_the_wars",
+     "title": "Hungary between the wars",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A magyar állam elvesztette a legfontosabb ipari központjait, ami a gazdaság teljesítményére is negatívan hatott.",
+     "Az ipar nagyobb része (Budapest) az országban maradt, de a nyersanyagbázisok (erdők, ércek, só) és a piacok nagy része elveszett, ami a gazdaság teljesítményét rontotta."
+    ],
+    [
+     "és a munkaerőhiány",
+     "és a menekültek (mintegy 350 ezer fő) ellátásának gondja"
+    ]
+   ]
+  },
+  {
+   "block_id": "334a7853-fe02-4ec4-9671-ef7d49607775",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Balassagyarmat és Sopron esetében helyi mozgalmak alakultak, amelyek célja a területi revízió elősegítése volt”",
+   "explanation": "Balassagyarmaton 1919 elején a lakosság és a katonaság kiverte a cseh csapatokat; Sopronban 1921 decemberében népszavazás döntött a Magyarországhoz tartozásról. Egyik sem „revíziós mozgalom” volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ödenburg_Plebiscite",
+     "title": "Ödenburg Plebiscite",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Balassagyarmat",
+     "title": "Balassagyarmat",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Balassagyarmat és Sopron esetében helyi mozgalmak alakultak, amelyek célja a területi revízió elősegítése volt.",
+     "Balassagyarmaton 1919 elején a helyi lakosság és katonaság kiverte a cseh megszálló csapatokat; Sopron és környéke 1921 decemberében népszavazással Magyarország mellett döntött."
+    ]
+   ]
+  },
+  {
+   "block_id": "334a7853-fe02-4ec4-9671-ef7d49607775",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A 'vörös térkép' a trianoni békediktátum következményeként készült, amely a magyarság által elcsatolt területeket jelölte.”",
+   "explanation": "A vörös térkép Teleki Pál 1919-es néprajzi térképe (1910-es népszámlálás alapján), a békekonferencia előtt készült a magyar érvek alátámasztására, nem a béke következménye. (Az 1. leckében a „vörös térkép” mint bolsevik elv szintén hibás.)",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pál_Teleki",
+     "title": "Pál Teleki",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Red_Map_(Hungary)",
+     "title": "Red Map (Hungary)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A 'vörös térkép' a trianoni békediktátum következményeként készült, amely a magyarság által elcsatolt területeket jelölte.",
+     "A „vörös térkép” Teleki Pál 1919-es néprajzi térképe, amely az 1910-es népszámlálás alapján a magyarok lakta területeket vörös színnel jelölte; a békekonferencia előtt készült a magyar érvek alátámasztására."
+    ],
+    [
+     "E térkép célja a revíziós törekvések vizuális megjelenítése volt, és a magyarok számára emlékeztetett a területi egység fontosságára.",
+     "A térkép célja a magyar álláspont szemléltetése volt; később a revíziós propaganda is felhasználta."
+    ]
+   ]
+  },
+  {
+   "block_id": "b67deb15-84ca-47e6-be78-56a9c5ff1522",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "Üres/általános világblokk: „más kultúrákban és korokban is megjelent”, év és fejléc nélkül",
+   "explanation": "Nincs valódi világesemény. Javaslat: Csehszlovákia függetlenségének kikiáltása (1918. október 28.), amely közvetlenül a Felvidék és Kárpátalja elvesztéséhez kapcsolódik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Czechoslovakia",
+     "title": "Czechoslovakia",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "set": {
+    "body": "1918. október 28-án a cseh és szlovák politikusok Prágában kikiáltották az önálló Csehszlovákiát, amelyet az antant hatalmak hamarosan elismertek. Az új állam a Felvidéket és Kárpátalját is magáénak tekintette, és 1918 decemberétől csapataival megszállta; a határokat a trianoni béke rögzítette."
+   }
+  },
+  {
+   "block_id": "34316a21-18c1-4681-95d4-b625dceba4be",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1919 januárjában Németországban kitört a berlini forradalom, amely a monarchia megdöntésére … irányult”",
+   "explanation": "A német monarchia 1918. november 9-én megbukott. 1919 januárjában Berlinben a spartakisták felkelése a szociáldemokrata kormány ellen tört ki, amelyet leverték; Rosa Luxemburgot és Karl Liebknechtet meggyilkolták. A Tanácsköztársaság kikiáltását nem a berlini események, hanem a Vix-jegyzék váltotta ki.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Spartacist_uprising",
+     "title": "Spartacist uprising",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/German_Revolution_of_1918–1919",
+     "title": "German Revolution of 1918–1919",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "1919 januárjában Berlinben a spartakisták fegyveres felkelést indítottak a szociáldemokrata kormány ellen. A hadsereg és a szabadcsapatok leverték a felkelést, Rosa Luxemburgot és Karl Liebknechtet meggyilkolták.",
+    "link_hu": "A magyar kommunisták a berlini felkelés leverését a szociáldemokraták árulásaként értelmezték, de a Tanácsköztársaság kikiáltását közvetlenül a Vix-jegyzék (1919. március 20.) váltotta ki."
+   }
+  },
+  {
+   "block_id": "34316a21-18c1-4681-95d4-b625dceba4be",
+   "card_index": 2,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: a Comintern „támogatása ösztönözte … a vörösterror kialakulásához”",
+   "explanation": "Kitalált ok-okozati lánc; a Komintern nem irányította a vörösterrort. Valós kapcsolat: Kun Béla rádión levelezett Leninnel, de érdemi orosz katonai segítség nem érkezett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Communist_International",
+     "title": "Communist International",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Soviet_Republic",
+     "title": "Hungarian Soviet Republic",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "link_hu": "A Tanácsköztársaság kikiáltása után Kun Béla rádión levelezett Leninnel, és a magyar kormány a Komintern tagjának tekintette magát, de érdemi orosz katonai segítség nem érkezett."
+   }
+  },
+  {
+   "block_id": "186d6850-5250-43ba-b527-427f3f9da988",
+   "card_index": 0,
+   "field": "heading",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A Társadalmi Szerződés és a Népszövetség megalakulása”; a Népszövetség létrejötte „közvetlen hatással volt a trianoni békediktátumra”",
+   "explanation": "A „Társadalmi Szerződés” Rousseau műve, nem itt szerepel; a Népszövetség alapokmánya a békeszerződések része volt. Magyarország 1922-ben lett a tagja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/League_of_Nations",
+     "title": "League of Nations",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "heading": "A Népszövetség megalakulása",
+    "link_hu": "Magyarország 1922-ben csatlakozott a Népszövetséghez, amely 1924-ben nemzetközi kölcsönt (népszövetségi kölcsön) biztosított a magyar gazdaság stabilizálására."
+   }
+  },
+  {
+   "block_id": "186d6850-5250-43ba-b527-427f3f9da988",
+   "card_index": 1,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "link_hu: „Magyarország a német szövetségesek elvesztésével egyedül maradt … ami hozzájárult a trianoni békediktátum elfogadásához”",
+   "explanation": "Nonszensz ok: a magyar delegáció nem „fogadta el” a békét a francia–német viszony miatt, hanem kényszerből írta alá. Valós kapcsolat: Franciaország támogatta a kisantantot, amely a magyar revízió ellen jött létre.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Little_Entente",
+     "title": "Little Entente",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "link_hu": "A francia–német ellentét miatt Franciaország a térségben szövetségeseket keresett, és támogatta a kisantantot, amely a magyar revízió ellen irányult."
+   }
+  },
+  {
+   "block_id": "186d6850-5250-43ba-b527-427f3f9da988",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1920-ban a bolsevikok … létrehozták a Szovjetuniót”",
+   "explanation": "A Szovjetunió 1922. december 30-án alakult meg; 1920-ban az orosz polgárháború még folyt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Soviet_Union",
+     "title": "Soviet Union",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Russian_Civil_War",
+     "title": "Russian Civil War",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "1922. december 30-án az orosz polgárháború bolsevik győzelme után megalakult a Szovjetunió az orosz, ukrán, belorusz és a Kaukázuson túli szovjet köztársaságok egyesüléséből.",
+    "year": "1922",
+    "link_hu": "A Horthy-korszak erősen kommunistaellenes volt a Tanácsköztársaság emléke miatt; Magyarország a Szovjetunióval csak 1934-ben létesített diplomáciai kapcsolatot."
+   }
+  },
+  {
+   "block_id": "186d6850-5250-43ba-b527-427f3f9da988",
+   "card_index": 3,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: „Magyarország is a lengyel győzelem révén próbálta stabilizálni helyzetét”",
+   "explanation": "Kitalált magyarázat. Valós kapcsolat: 1920 nyarán Magyarország lőszert akart küldeni Lengyelországnak, de Csehszlovákia megakadályozta a szállítmányok átvonulását.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Polish–Soviet_War",
+     "title": "Polish–Soviet War",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungary–Poland_relations",
+     "title": "Hungary–Poland relations",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "link_hu": "1920 nyarán Magyarország lőszert akart küldeni Lengyelországnak, de Csehszlovákia megakadályozta a szállítmányok átvonulását; ez is erősítette a magyar–lengyel barátságot."
+   }
+  },
+  {
+   "block_id": "ccc5962c-01e4-49a5-a925-a7fd548ff51b",
+   "card_index": 0,
+   "field": "options[0]",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Vlagyimir I. Lenin”; „megbuktatva a cári rendszert”",
+   "explanation": "Lenin neve Vlagyimir Iljics; a cárt 1917 februárjában buktatták meg, a bolsevikok októberben az ideiglenes kormányt döntötték meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Vladimir_Lenin",
+     "title": "Vladimir Lenin",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/October_Revolution",
+     "title": "October Revolution",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "Vlagyimir Iljics Lenin",
+    "explanation": "Lenin vezette a bolsevikokat, akik 1917 októberében (november 7.) megdöntötték az ideiglenes kormányt Oroszországban."
+   }
+  },
+  {
+   "block_id": "ccc5962c-01e4-49a5-a925-a7fd548ff51b",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Mi volt az örmény népirtás, és melyik birodalom keretein belül zajlott?”; magyarázat: 1915–1923",
+   "explanation": "Kérdés kétrészes, a válaszok csak a birodalmat adják meg; az időszak sem egyezik a leckével (1915–1917).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Armenian_genocide",
+     "title": "Armenian genocide",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik birodalom területén zajlott az örmény népirtás 1915-től?",
+    "explanation": "Az örmény népirtás az Oszmán Birodalom területén zajlott 1915-től; becslések szerint egy-másfél millió örmény pusztult el."
+   }
+  },
+  {
+   "block_id": "ccc5962c-01e4-49a5-a925-a7fd548ff51b",
+   "card_index": 2,
+   "field": "options[2]",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "C) Monarchia (Mussolini rendszere)",
+   "explanation": "Olaszország formálisan monarchia maradt (III. Viktor Emánuel király), ezért a C) is helytálló lehet; több jó válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fascist_Italy",
+     "title": "Fascist Italy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[2]": "Tanácsköztársaság"
+   }
+  },
+  {
+   "block_id": "ccc5962c-01e4-49a5-a925-a7fd548ff51b",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Milyen néven ismert a kisantant, és mely országokat foglalta magában?”",
+   "explanation": "Értelmetlen kérdés: a kisantant maga a név; csak az országokra kérdez helyesen.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Little_Entente",
+     "title": "Little Entente",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Mely országok alkották a kisantantot?"
+   }
+  },
+  {
+   "block_id": "ccc5962c-01e4-49a5-a925-a7fd548ff51b",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Ki volt Károlyi Mihály szerepe a magyar történelemben 1918-1919-ben?”",
+   "explanation": "Nyelvtanilag hibás kérdés; a „Magyar Népköztársaság első miniszterelnöke” pontatlan (miniszterelnök, majd ideiglenes köztársasági elnök).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mihály_Károlyi",
+     "title": "Mihály Károlyi",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Mi volt Károlyi Mihály szerepe 1918–1919-ben?",
+    "options[0]": "1918 őszén miniszterelnök, majd a köztársaság ideiglenes elnöke",
+    "explanation": "Károlyi Mihály 1918. október 31-től miniszterelnök, 1919. január 11-től a Magyar Népköztársaság ideiglenes elnöke volt."
+   }
+  },
+  {
+   "block_id": "a287ed05-d031-4f30-9d39-bf622f32e6c3",
+   "card_index": 0,
+   "field": "options[0]",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A magyar köztársaság első elnöke”",
+   "explanation": "Károlyi ideiglenes elnök volt (1919. január 11-től), a köztársaság előtt miniszterelnök.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mihály_Károlyi",
+     "title": "Mihály Károlyi",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A Magyar Népköztársaság ideiglenes elnöke"
+   }
+  },
+  {
+   "block_id": "a287ed05-d031-4f30-9d39-bf622f32e6c3",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Kulcs A: „Kárpátalja, Felvidék, Délvidék, Burgenland”; magyarázat: „Burgenland az osztrák részhez tartozott”",
+   "explanation": "A B) válasz (Erdély, Székelyföld, Bácska, Baranya) szintén a történelmi Magyarországhoz tartozott, tehát több jó válasz van. Burgenland a Magyar Királyság része volt, nem az osztrák tartományé.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Burgenland",
+     "title": "Burgenland",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik terület került a trianoni béke értelmében Ausztriához?",
+    "options": [
+     "Burgenland (Nyugat-Magyarország)",
+     "Erdély",
+     "Bácska",
+     "Kárpátalja"
+    ],
+    "correct": "A",
+    "explanation": "Burgenland (Nyugat-Magyarország) a Magyar Királyság része volt, és 1921-ben került Ausztriához; Sopron környékén népszavazás döntött a Magyarországhoz tartozásról."
+   }
+  },
+  {
+   "block_id": "a287ed05-d031-4f30-9d39-bf622f32e6c3",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "D) „Minden fenti válasz helyes” (gazdasági válság és mezőgazdasági termelés csökkenése)",
+   "explanation": "A B) válasz (gazdasági válság, mezőgazdaság) nem oka az 1918-as forradalomnak; a „minden helyes” típusú válasz nem mér tudást, és az őszirózsás forradalom oka a háborús vereség volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Aster_Revolution",
+     "title": "Aster Revolution",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Mi vezetett az 1918. októberi forradalomhoz?",
+    "options": [
+     "A háborús vereség és a hátországi nyomor",
+     "Az 1929-es világgazdasági válság",
+     "A Tanácsköztársaság bukása",
+     "A trianoni béke aláírása"
+    ],
+    "correct": "A",
+    "explanation": "Az őszirózsás forradalmat a háborús vereség, az éhezés és a hadsereg felbomlása váltotta ki."
+   }
+  },
+  {
+   "block_id": "a287ed05-d031-4f30-9d39-bf622f32e6c3",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "D) „Minden fenti válasz helyes” (a magyar ellenállás kihívásai)",
+   "explanation": "A „minden helyes” típusú válasz ill-posed, és a magyarázat nem egyezik az egyes válaszokkal.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Aster_Revolution",
+     "title": "Aster Revolution",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Miért volt eredménytelen a magyar fegyveres ellenállás a cseh és román támadásokkal szemben 1918–1919-ben?",
+    "options": [
+     "A hadsereg felbomlott, és nem volt elég harcképes erő",
+     "A magyar hadsereg túl nagy volt",
+     "Az antant fegyverrel támogatta Magyarországot",
+     "A Monarchia megnyerte a háborút"
+    ],
+    "correct": "A",
+    "explanation": "1918 novemberében a hazatért katonákat nagyrészt leszerelték, a hadsereg felbomlott, ezért a szomszéd államok csapatai nagyrészt akadály nélkül nyomultak előre."
+   }
+  },
+  {
+   "block_id": "d8b7134d-e526-4c92-9ce0-f842588c794e",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Ki volt a tanácsköztársaság vezetője?” Kun Béla",
+   "explanation": "Formálisan Garbai Sándor volt a Forradalmi Kormányzótanács elnöke; a tényleges vezető Kun Béla (külügyi népbiztos).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Béla_Kun",
+     "title": "Béla Kun",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Sándor_Garbai",
+     "title": "Sándor Garbai",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Ki volt a Tanácsköztársaság tényleges vezetője?",
+    "explanation": "A Forradalmi Kormányzótanács elnöke formálisan Garbai Sándor volt, de a tényleges vezető Kun Béla külügyi népbiztos volt."
+   }
+  },
+  {
+   "block_id": "d8b7134d-e526-4c92-9ce0-f842588c794e",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mi volt a fehér különítményes megtorlások célja? A kommunista hatalom megdöntése”",
+   "explanation": "A fehér különítmények a Tanácsköztársaság bukása után léptek fel, ezért céljuk nem a megdöntés, hanem a baloldaliak és a zsidó származásúak elleni bosszú és megfélemlítés volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/White_Terror_(Hungary)",
+     "title": "White Terror (Hungary)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Kik ellen irányultak elsősorban a fehér különítmények megtorlásai 1919 nyarán és őszén?",
+    "options": [
+     "A Tanácsköztársaság támogatóinak tartott baloldaliak és sok zsidó származású ember ellen",
+     "A román megszállók ellen",
+     "A földbirtokosok ellen",
+     "A királypárti politikusok ellen"
+    ],
+    "correct": "A",
+    "explanation": "A fehérterror áldozatai főként baloldaliak és zsidó származású emberek voltak; a különítmények a Tanácsköztársaság bukása után léptek fel."
+   }
+  },
+  {
+   "block_id": "d8b7134d-e526-4c92-9ce0-f842588c794e",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik hadjárat vezetett a tanácsköztársaság vereségéhez? Az északi hadjárat”",
+   "explanation": "Az északi hadjárat kezdetben sikeres volt; a Tanácsköztársaság vereségét a román hadsereg júliusi tiszai előretörése okozta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian–Czechoslovak_War",
+     "title": "Hungarian–Czechoslovak War",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian–Romanian_War_of_1919",
+     "title": "Hungarian–Romanian War of 1919",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik hadjárat volt a Tanácsköztársaság legnagyobb katonai sikere?",
+    "explanation": "Az északi hadjáratban (1919 május–június) a Vörös Hadsereg Kassa térségéig jutott; a román hadsereg júliusi tiszai támadása viszont a Tanácsköztársaság vereségét hozta."
+   }
+  },
+  {
+   "block_id": "b51edcc5-4285-46aa-84a5-93d9981a963c",
+   "card_index": 3,
+   "field": "options[3]",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "D) David Lloyd George",
+   "explanation": "Lloyd George (brit miniszterelnök) a békekonferencia négyes tanácsának (Clemenceau, Wilson, Lloyd George, Orlando) tagja volt, így a D) is jó lehet; több helyes válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Paris_Peace_Conference,_1919",
+     "title": "Paris Peace Conference, 1919",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[3]": "Kemal Atatürk"
+   }
+  },
+  {
+   "block_id": "b51edcc5-4285-46aa-84a5-93d9981a963c",
+   "card_index": 4,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Csehszlovákia a Párizs környéki békék következtében jött létre”",
+   "explanation": "Csehszlovákia 1918. október 28-án kikiáltotta függetlenségét; határait és nemzetközi elismerését a Párizs környéki békék rögzítették.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Czechoslovakia",
+     "title": "Czechoslovakia",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "Csehszlovákia 1918. október 28-án alakult meg; határait és nemzetközi elismerését a Párizs környéki békék rögzítették."
+   }
+  },
+  {
+   "block_id": "863db042-d83f-46eb-a390-4e53e00bcf01",
+   "card_index": 0,
+   "field": "explanation",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„1920. június 4-én íródott alá”",
+   "explanation": "Nyelvtani hiba; a trianoni béke aláírása és hatályba lépése (1921) külön dátum.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Trianon",
+     "title": "Treaty of Trianon",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "A trianoni békét 1920. június 4-én írták alá; hatályba 1921. július 26-án lépett."
+   }
+  },
+  {
+   "block_id": "863db042-d83f-46eb-a390-4e53e00bcf01",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Melyik csoport harcolt a trianoni békediktátum ellen és vált ismertté? A) Rongyos Gárda / B) Székely Hadosztály”",
+   "explanation": "A B) is helytálló (a Székely Hadosztály 1919-ben harcolt); a Rongyos Gárda 1921-ben Nyugat-Magyarországon. A kérdés nem határozza meg időben vagy helyben.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Prónay_Pál",
+     "title": "Prónay Pál",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik félkatonai csoport lépett fel 1921-ben Nyugat-Magyarországon Burgenland Ausztriának átadása ellen?",
+    "explanation": "A Prónay Pál vezette Rongyos Gárda 1921-ben Nyugat-Magyarországon harcolt az osztrák csendőrök ellen."
+   }
+  },
+  {
+   "block_id": "72c9ddac-5a4a-43a9-8b5b-b2d2156433e0",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Kulcs B: „A kommunista hatalom területi igényei” (vörös térkép)",
+   "explanation": "A vörös térkép Teleki Pál 1919-es néprajzi térképe volt, nem a kommunista hatalom területi igényeit ábrázolta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pál_Teleki",
+     "title": "Pál Teleki",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Mi volt a „vörös térkép”?",
+    "options": [
+     "A szovjet terjeszkedés ábrázolása",
+     "Teleki Pál néprajzi térképe, amely a magyarok lakta területeket jelölte",
+     "A német megszállás térképe",
+     "A forradalom utáni Magyarország térképe"
+    ],
+    "correct": "B",
+    "explanation": "A vörös térkép Teleki Pál 1919-es néprajzi térképe volt, amely az 1910-es népszámlálás alapján a magyarok lakta területeket vörös színnel jelölte."
+   }
+  },
+  {
+   "block_id": "72c9ddac-5a4a-43a9-8b5b-b2d2156433e0",
+   "card_index": 4,
+   "field": "explanation",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Ki volt Károlyi Mihály szerepe a forradalom után?”; „első elnöke ... 1918. októberében”",
+   "explanation": "Nyelvtani hiba a kérdésben; Károlyi 1918. október 31-től miniszterelnök, ideiglenes elnök csak 1919. január 11-től volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mihály_Károlyi",
+     "title": "Mihály Károlyi",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "Károlyi Mihály 1918. október 31-től miniszterelnök, 1919. január 11-től a Magyar Népköztársaság ideiglenes elnöke volt."
+   }
+  },
+  {
+   "block_id": "72c9ddac-5a4a-43a9-8b5b-b2d2156433e0",
+   "card_index": 7,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Milyen következményekkel járt a vörösterror Magyarországon? A kommunista hatalom megszilárdulása”",
+   "explanation": "A vörösterror célja a hatalom megszilárdítása volt, de következménye inkább az volt, hogy sokakat elidegenített a rendszertől.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Red_Terror_(Hungary)",
+     "title": "Red Terror (Hungary)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Mi volt a vörösterror célja?",
+    "explanation": "A vörösterror célja a kommunista hatalom megszilárdítása volt; a valóságban sok embert elidegenített a Tanácsköztársaságtól."
+   }
+  }
+ ]
+}

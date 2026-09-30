@@ -1,0 +1,1264 @@
+{
+ "nat_id": "PHYS-910-12",
+ "topic_id": "a487fd9a-9c1b-4699-a0b1-0cbcc0131681",
+ "title_hu": "Képek és látás",
+ "grade": 10,
+ "lessons": [
+  {
+   "lesson_id": "167feff5-aa95-4bf6-8436-183d60e4acf9",
+   "title_hu": "Tükrök és képalkotás",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "e7ca211c-ce29-4411-9b92-cf15cb205ecb",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A síktükörben (síktükör) látott kép mindig egy látszólagos kép, amely a tükör mögött keletkezik. Ha a tükörbe nézünk, úgy tűnik, mintha a kép a tükör mögött lenne, pedig valójában csak a fényvisszaverődés (fényvisszaverődés) miatt látjuk. A síktükör képe ugyanolyan távolságra van a tükörtől, mint a tárgy, amelyről a képet készítjük. Ezért a tükörkép mérete és elhelyezkedése azonos a valódi tárgyéval, csak megfordulva, hiszen a bal és a jobb oldal felcserélődik.",
+       "type": "text",
+       "heading": "A síktükör és a képalkotás",
+       "key_term": "síktükör, fényvisszaverődés, látszólagos kép"
+      },
+      {
+       "body": "A tükrök nemcsak a fürdőszobában találhatók, hanem számos optikai eszközben is megtalálhatók. Például a reflektorok (reflektor) a gépjárművek fényszóróiban használatosak, hogy a fényt a lehető legjobban irányítsák. A kozmetikai tükrök, amelyek általában nagyítanak, segítenek a sminkelésnél, vagy a bőrproblémák ellenőrzésénél. A közlekedésben a tükör segít a sofőröknek a hátsó forgalom megfigyelésében, így biztonságosabbá téve az utazást.",
+       "type": "text",
+       "heading": "Tükrök a mindennapokban",
+       "key_term": "reflektor, kozmetikai tükör"
+      },
+      {
+       "body": "A valódi kép (valódi kép) az, amelyet egy fényérzékeny felületre, például fényképezőgép érzékelőjére vetítünk. Ezzel szemben a látszólagos kép csak a tükörben látható, és nem vetíthető fel egy felületre. Például, amikor a telefonunk kamerájával tükröződünk egy tükörben, a tükörben látott kép látszólagos, míg a telefonunk által rögzített kép valódi.",
+       "type": "text",
+       "heading": "Valódi és látszólagos képek",
+       "key_term": "valódi kép, látszólagos kép"
+      },
+      {
+       "body": "A fókusz (fókusz) az a pont, ahol a fényhullámok egyesülnek. A tárgytávolság (tárgytávolság) az a távolság, amely a tükör és a megfigyelt tárgy között van, míg a képtávolság (képtávolság) a tükör és a látszólagos kép közötti távolságot jelenti. Ezek a távolságok segítenek megérteni, hogyan alakulnak ki a képek a tükrökben. Kísérletezhetünk azzal, hogy különböző távolságokban állunk a tükör előtt, hogy lássuk, hogyan változik a kép.",
+       "type": "text",
+       "heading": "Fókuszálás és távolságok",
+       "key_term": "fókusz, tárgytávolság, képtávolság"
+      },
+      {
+       "body": "Könnyen meghatározhatjuk a tükrök fókusztávolságát egyszerű kísérletekkel. Például, ha egy tükör elé helyezünk egy lámpát, és megfigyeljük, hol találkozik a fény a falon, akkor láthatjuk, hogy a tükör fókuszpontja hol van. Ezen kívül, ha egy lencsét használunk, akkor a fókusztávolságot a lencse és a tárgy távolságának változtatásával is meghatározhatjuk.",
+       "type": "text",
+       "heading": "Kísérletek a fókusztávolsággal",
+       "key_term": "fókusztávolság"
+      },
+      {
+       "body": "A különböző állatok másképp látják a világot, ami a fény és a színek érzékelésének eltérő módjából adódik. Például a kutyák színlátása korlátozottabb, mint az embereké, így a világot főként kék és sárga árnyalatokban érzékelik. Ezzel szemben a ragadozó madarak, mint a sólymok, sokkal szélesebb spektrumot látnak, beleértve az ultraibolya fényt is, ami segíti őket a prédáik észlelésében. Érdemes adatokat gyűjteni arról, hogyan látják a különböző állatok a világot, és ezt projektmunkában bemutatni.",
+       "type": "text",
+       "heading": "Állatok színlátása",
+       "key_term": "színlátás"
+      }
+     ]
+    },
+    {
+     "block_id": "46fe7195-b504-4474-8475-8ee4fc97ef31",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal tizenéves elindul otthonról, és felkapcsolja az okostelefonján a fényképezőt. A telefon kijelzőjén megjelenik a tükörképe, amely a síktükör által visszavert fény segítségével jön létre. A fényvisszaverődés folyamata azonnal elkezdődik.",
+       "type": "story",
+       "heading": "Fényvisszaverődés kezdete"
+      },
+      {
+       "body": "A telefon kamerája a tükröt megvilágító fényt érzékeli, és azokat a tükör felületén visszaverve létrehozza a képet. Ez a kép látszólagos kép, mivel a tükör mögött valójában nem létezik tárgy. A tükör és a telefon közötti távolság meghatározza a képtávolságot, amely megegyezik a telefon és a tükör közötti távolsággal.",
+       "type": "story",
+       "heading": "Képalkotás a tükörben"
+      },
+      {
+       "body": "A fiatal a tükörből kilépve elindul a fürdőszobába, ahol kozmetikai tükröt használ. Ez a tükör nagyobb, és közelről mutatja meg az arcát, lehetővé téve a részletek pontosabb megfigyelését. Itt is a fényvisszaverődés játszik szerepet, de a tükör ívelt formája miatt a kép torzulhat, ami valódi képet is létrehozhat.",
+       "type": "story",
+       "heading": "Reflektorok és kozmetikai tükrök"
+      },
+      {
+       "body": "Később a fiatal elindul az utcára, ahol az autók tükröket használnak a biztonságos közlekedés érdekében. Ezek a tükrök segítik a sofőröket a környezetük jobb látásában. A tükörben látható kép szintén a fényvisszaverődés eredménye, és a képtávolság itt is fontos a balesetek elkerülése érdekében.",
+       "type": "story",
+       "heading": "Tükrök a közlekedésben"
+      },
+      {
+       "body": "Visszatérve otthon, a fiatal barátokkal együtt kísérleteznek a tükrökkel és lencsékkel, hogy meghatározzák a fókusztávolságot. Megfigyelik, hogyan változik a kép, amikor különböző távolságokra helyezik a tükröket és a lencséket. Ezzel a gyakorlattal a fényvisszaverődés és a képalkotás elméletét is jobban megértik.",
+       "type": "story",
+       "heading": "Kísérletezés és megfigyelés"
+      }
+     ]
+    },
+    {
+     "block_id": "3f077ce8-ed04-440a-a0b2-eba9e509153c",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A síktükörben keletkező látszólagos kép helye",
+       "heading": "A síktükör képe",
+       "description": "A síktükör és a tárgy elhelyezkedését bemutató diagram. A tükör síkját, a tárgyat és a keletkező látszólagos képet ábrázolja.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Fényvisszaverődés a síktükör felületén",
+       "heading": "Fényvisszaverődés",
+       "description": "A fényvisszaverődés jelenségét bemutató vázlat. A beeső fény, a normálvonal és a visszavert fény irányát ábrázolja.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Valódi és látszólagos kép elhelyezkedése",
+       "heading": "Valódi és látszólagos kép",
+       "description": "Grafikon, amely bemutatja a valódi és látszólagos képek közötti különbséget. A valódi kép a tükör előtt, míg a látszólagos kép a tükör mögött látható.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Fókusz-, tárgy- és képtávolság a tükörben",
+       "heading": "Fókusz-, tárgy- és képtávolság",
+       "description": "Keresztmetszeti ábra, amely bemutatja a fókusz-, tárgy- és képtávolság viszonyát a tükörben.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Reflektor működése és a fény irányítása",
+       "heading": "Reflektor használata",
+       "description": "A reflektor szerkezetét és működését bemutató diagram, amely a fénysugarak irányát is ábrázolja.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Kozmetikai tükör és a látszólagos kép",
+       "heading": "Kozmetikai tükör",
+       "description": "A kozmetikai tükör felépítése és a látszólagos kép keletkezésének vázlata, amely megmutatja, hogyan segíti a tükör a sminkelést.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Közlekedésben használt tükrök",
+       "heading": "Tükrök a közlekedésben",
+       "description": "A közlekedésben használt tükrök (pl. visszapillantó tükör) elhelyezkedését és működését bemutató diagram.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Állatok színlátása és a látott világ",
+       "heading": "Állatok színlátása",
+       "description": "Grafikon, amely különböző állatok színlátási képességét hasonlítja össze (pl. kutya, tehén, ragadozó madarak).",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "0c767e68-ab5c-4261-af87-4f6ad9edde89",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A tükrök széles körben elérhetők a mindennapi életben, például fürdőszobákban, autókban és mobiltelefonokban is. A tükörképalkotás alapelvei fontosak a fényképezés és az optikai eszközök, mint például a távcsövek és mikroszkópok működése szempontjából is.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 200,
+          "w": 100,
+          "x": 150,
+          "y": 50,
+          "type": "box"
+         },
+         {
+          "x": 160,
+          "y": 30,
+          "text": "Tükör",
+          "type": "label"
+         },
+         {
+          "x": 200,
+          "y": 250,
+          "type": "dot"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 200,
+          "y2": 50,
+          "type": "arrow"
+         },
+         {
+          "x": 210,
+          "y": 150,
+          "text": "Fény",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Tükrök és képalkotás",
+       "discovery": "A tükör felfedezése több ezer évre nyúlik vissza. Az ókori egyiptomiak már használtak polírozott fémlemezeket, hogy tükröződő felületet hozzanak létre. A tükörgyártás fejlődése a középkorban indult el, amikor a velencei mesterek finom üvegtükröket készítettek, amelyek a mai modern tükrök előfutárai voltak. A cél az volt, hogy a fényt és a képet visszaverjék, lehetővé téve a látás javítását.",
+       "try_basic": "Készíts egy egyszerű kísérletet: állíts egy tükör elé egy gyertyát vagy lámpát, és figyeld meg, hogyan tükröződik a fény! Próbáld ki, hogy különböző szögekből nézed a tükröt, és figyeld meg, hogyan változik a kép.",
+       "try_advanced": "Készíts egy egyszerű távcsövet gyűjtőlencsékkel, és vizsgáld meg, hogyan változik a kép nagyítása! Használj különböző fókusztávolságú lencséket, és tapasztald meg a képalkotás különböző aspektusait."
+      }
+     ]
+    },
+    {
+     "block_id": "f85fe298-69eb-41c8-aebb-06b26df325e2",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) A kép mindig valódi és megfordított.",
+        "B) A kép mindig látszólagos és egyenesen áll.",
+        "C) A kép mindig valódi és egyenesen áll.",
+        "D) A kép mindig látszólagos és megfordított."
+       ],
+       "question": "Mi jellemzi a síktükörben látott képet?",
+       "explanation": "A síktükörben a kép látszólagos, azaz a tükör mögött keletkezik, és egyenesen áll.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) A fény elnyelődik a felületen.",
+        "B) A fény irányt változtat, amikor egy felületről visszaverődik.",
+        "C) A fény áthalad a felületen.",
+        "D) A fény szétterjed a térben."
+       ],
+       "question": "Mi a fényvisszaverődés folyamata?",
+       "explanation": "A fényvisszaverődés során a fény irányt változtat, amikor egy fényvisszaverő felületről visszaverődik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) A valódi kép a tükör mögött keletkezik, a látszólagos kép a tükör előtt.",
+        "B) A valódi kép a fényforrástól távol keletkezik, a látszólagos kép a fényforrás közelében.",
+        "C) A valódi kép a fény valódi helyét mutatja, a látszólagos kép pedig a tükörben látható képet.",
+        "D) A valódi kép a tükör előtt keletkezik, a látszólagos kép a tükör mögött."
+       ],
+       "question": "Mi a különbség a valódi és látszólagos kép között?",
+       "explanation": "A valódi kép a fény valódi helyét mutatja, míg a látszólagos kép a tükörben látható képet jelenti.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) A tükör és a valódi kép távolsága.",
+        "B) A tükör és a látszólagos kép távolsága.",
+        "C) A tükör középpontjától a fókuszpontig mért távolság.",
+        "D) A tükör felületének távolsága a megfigyelőtől."
+       ],
+       "question": "Mi a fókusztávolság a tükör esetében?",
+       "explanation": "A fókusztávolság a tükör középpontjától a fókuszpontig mért távolságot jelenti.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Segítenek a járművek irányításában és a holttér csökkentésében.",
+        "B) Csak díszítő szerepet töltenek be.",
+        "C) Csökkentik a sebességet.",
+        "D) Megakadályozzák a baleseteket."
+       ],
+       "question": "Milyen szerepe van a tükröknek a közlekedésben?",
+       "explanation": "A tükrök a járművek irányításában és a holttér csökkentésében játszanak fontos szerepet.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "e96a5d83-6133-4131-b692-d7f00868a250",
+   "title_hu": "Fény törése és színek",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "5b82c471-0a61-4913-83d4-d11a50d0af33",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A fénytörés (fény törése) akkor következik be, amikor a fény különböző sűrűségű anyagokon halad át. Például, amikor egy pohár vízbe nézünk, a víz felszínén a fény iránya megváltozik, így a pohár szélénél a víz szintje torzultan jelenik meg. Ezt a jelenséget a törésmutató segítségével tudjuk mérni, amely megmutatja, hogy a fény mennyire lassul le az anyagban. A törésmutató értéke a víz esetében körülbelül 1,33, ami azt jelenti, hogy a fény a vízben 1,33-szor lassabban terjed, mint vákuumban.",
+       "type": "text",
+       "heading": "A fénytörés megfigyelése",
+       "key_term": "fény törése"
+      },
+      {
+       "body": "A fehér fény a szivárvány színeit tartalmazza, és ezt a jelenséget a prizmával könnyen megfigyelhetjük. Ha egy prizmán átbocsátjuk a fehér fényt, akkor az különböző színekre bontódik, mint például piros, narancs, sárga, zöld, kék, indigó és ibolya. Ezt a színkép (kialakult színkép) néven ismerjük, és a fényhullámok különböző hosszúsága okozza. A színek eltérő mértékben törnek meg, ami a prizmán való áthaladáskor különböző irányokat eredményez.",
+       "type": "text",
+       "heading": "A fehér fény felbontása",
+       "key_term": "színkép"
+      },
+      {
+       "body": "A fókuszálás (fókuszálás) során a fényhullámok egy pontba gyűlnek össze, amelyet fókuszpontnak nevezünk. Ezt a jelenséget a lencsék segítségével is megfigyelhetjük, például egy kézi nagyító (magnifying glass) használatával. Amikor a nagyítót a tárgyra irányítjuk, a fény a lencsén keresztül fókuszálódik, és egy éles képet alkot a fókuszpontban. A fókusz-, tárgy- és képtávolság fogalmai segítenek megérteni, hogy a képek hogyan alakulnak ki a különböző távolságokban.",
+       "type": "text",
+       "heading": "Fókuszálás és a fókuszpont",
+       "key_term": "fókuszpont"
+      },
+      {
+       "body": "Csoportmunkában különböző módszerekkel is megfigyelhetjük a fehér fény felbontását. Például egy vizes tálba tett síktükör segítségével a napfény visszaverődésekor szivárvány színek jelennek meg a víz felszínén. Ezen kívül optikai rácsot és szappanhártyát is használhatunk, hogy különböző színképeket alkossunk. Ezek a módszerek nemcsak szórakoztatóak, hanem segítenek megérteni a fény és a színek világát is.",
+       "type": "text",
+       "heading": "Kísérlet a színek felbontására",
+       "key_term": "színek felbontása"
+      },
+      {
+       "body": "A fény törésének és fókuszálásának elveit a modern technológiákban is alkalmazzák. Például a mobiltelefonok kamerái lencserendszereket használnak a képek éles megjelenítésére. Az érintés nélküli bankkártyás fizetésnél a fényhullámok segítségével olvassák le a kártya adatait, így a fény és a technológia összekapcsolódik a mindennapi életben. Ezzel a tudással megérthetjük, hogyan működnek ezek a modern eszközök.",
+       "type": "text",
+       "heading": "A fény és a modern technológia",
+       "key_term": "fény és technológia"
+      }
+     ]
+    },
+    {
+     "block_id": "c1ec57af-a7de-433b-9507-9a62b3ac132f",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal diák a szobájában ül, és felkapcsolja a lámpát. A szobában hirtelen megjelenik a fehér fény, amely mindenhol elterjed. A diák észreveszi, hogy a fény különböző irányokba terjed, és izgatottan gondol arra, hogy mit is jelent ez a jelenség.",
+       "type": "story",
+       "heading": "A fehér fény forrása"
+      },
+      {
+       "body": "A diák emlékszik arra, hogy a tanórán tanult a fénytörésről. Ahogy a fény a levegőből a vízbe lép, a fény iránya megváltozik. A diák egy vizes tálat helyez a lámpa fényébe, és figyeli, ahogy a fény szögben törik meg, miközben belép a vízbe. Ez a törésmutató segítségével megérthető, amely a különböző anyagok fénytörési képességét jellemzi.",
+       "type": "story",
+       "heading": "A fény törése"
+      },
+      {
+       "body": "A diák a tálban lévő víz fölé tart egy prizmát, és csodálkozva figyeli, ahogy a fehér fény színekre bontakozik. A prizmán áthaladó fény vörös, narancs, sárga, zöld, kék és ibolya színű sávokra oszlik. Ez a jelenség a fény hullámhosszának különbözősége miatt történik, és a diák megérti, hogy a fehér fény valójában sok színből áll.",
+       "type": "story",
+       "heading": "A fehér fény felbontása"
+      },
+      {
+       "body": "Most a diák egy egyszerű kézi nagyítót vesz elő. A nagyító segítségével megpróbálja fókuszálni a fényt egy távoli tárgyra, például egy könyv szövegére. Ahogy a lencse előtt mozgatja a könyvet, észreveszi, hogy a fókuszpont helyén a szöveg világosan látható. A diák felfedezi, hogy a tárgytávolság és a képtávolság arányai hogyan befolyásolják a kép élességét.",
+       "type": "story",
+       "heading": "Fókuszálás és képalkotás"
+      },
+      {
+       "body": "A diák, miután felfedezte a fény törését és a színek felbontását, egy szappanhártyát készít. Ahogy a fény áthalad a hártyán, újra színes fényjátékot lát. A hártya felületén a fény különböző hullámhosszai interferálnak, és a diák megérti, hogy a színek nemcsak a fény törésének, hanem az interferenciának is köszönhetők. Ez a csodálatos jelenség mélyebb megértést ad neki a fény természetéről.",
+       "type": "story",
+       "heading": "A színek varázsa"
+      }
+     ]
+    },
+    {
+     "block_id": "7f6bb77d-3801-401d-9747-922a71d17e84",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A fény irányának megváltozása a törés következtében.",
+       "heading": "Fény törése",
+       "description": "A fény törésének szemléltetése, amely bemutatja, hogyan változik meg a fény iránya, amikor egy optikai közegből (például levegőből) egy másikba (például vízbe) lép.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Törésmutató értékek különböző anyagokban.",
+       "heading": "Törésmutató",
+       "description": "A törésmutató (n) értékének bemutatása különböző anyagok esetében, például levegő, víz és üveg.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A fehér fény színspektrumának kialakulása prizma segítségével.",
+       "heading": "Fehér fény felbontása",
+       "description": "A fehér fény prizma általi felbontásának bemutatása, amely megmutatja, hogy a fehér fény különböző színekre bomlik.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A színkép, amely a fény különböző színeit tartalmazza.",
+       "heading": "Színkép",
+       "description": "A felbontott fény színképének ábrázolása, amely a különböző színek eloszlását mutatja.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A fókuszálás és a fókuszpont kialakulása.",
+       "heading": "Fókuszálás",
+       "description": "A fókuszálás folyamatának bemutatása, amely megmutatja, hogy a párhuzamos fénysugarak hogyan találkoznak a fókuszpontban.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A kézi nagyító és a képalkotás folyamata.",
+       "heading": "Kézi nagyító",
+       "description": "A kézi nagyító működésének bemutatása, amely szemlélteti, hogyan képes a nagyító a fényt fókuszálni és képet alkotni.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A tárgy- és képtávolság kapcsolata.",
+       "heading": "Tárgy- és képtávolság",
+       "description": "A tárgytávolság (d_t) és a képtávolság (d_k) kapcsolatának ábrázolása, amely bemutatja, hogy ezek hogyan befolyásolják a kép képződését.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A fehér fény felbontásának különböző módszerei.",
+       "heading": "Kísérleti vizsgálat",
+       "description": "Különböző módszerek bemutatása a fehér fény felbontására, mint például prizma, vizes tálba tett síktükör, optikai rács és szappanhártya.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "1e9024d7-eecb-4e54-9854-b5d808e7f02b",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A fénytörés és a színek felbontása elengedhetetlen a modern fényképezésben, optikai eszközökben és a televíziókban, ahol a színek pontos megjelenítése alapvető fontosságú.",
+       "sketch": {
+        "shapes": [
+         {
+          "x": 100,
+          "y": 100,
+          "size": 100,
+          "type": "triangle"
+         },
+         {
+          "x": 120,
+          "y": 50,
+          "text": "Prizma",
+          "type": "label"
+         },
+         {
+          "x1": 50,
+          "x2": 150,
+          "y1": 150,
+          "y2": 150,
+          "type": "wave",
+          "cycles": 2,
+          "amplitude": 10
+         },
+         {
+          "x": 30,
+          "y": 150,
+          "text": "Fehér fény",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 300,
+          "y1": 150,
+          "y2": 150,
+          "type": "wave",
+          "cycles": 2,
+          "amplitude": 10
+         },
+         {
+          "x": 250,
+          "y": 150,
+          "text": "Színek",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Fény törése és a színek felbontása",
+       "discovery": "Isaac Newton 1666-ban, amikor a prizmával végzett kísérleteit, felfedezte, hogy a fehér fény különböző színekre bontható. Ezzel a felfedezéssel a fény természetét és a színek kialakulását is jobban megértette, valamint megalapozta a modern optikát.",
+       "try_basic": "Tölts meg egy átlátszó poharat vízzel, és tartsd a napfénybe. Figyeld meg, hogyan keletkeznek színes fénycsíkok a víz felszínén.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "cf0afd3d-ffad-448d-85d0-db496be58244",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A fény irányának megváltozása, amikor különböző anyagok határfelületén halad át.",
+        "B) A fény sebességének csökkenése a vákuumban.",
+        "C) A fény hullámhosszának megváltozása a levegőben.",
+        "D) A fény elnyelődése egy anyagban."
+       ],
+       "question": "Mi a fénytörés (fény törése) jelensége?",
+       "explanation": "A fénytörés a fény irányának megváltozása, amikor különböző sűrűségű anyagok határfelületén halad át.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Törésmutató",
+        "B) Fókuszpont",
+        "C) Képtávolság",
+        "D) Tárgytávolság"
+       ],
+       "question": "Melyik kifejezés határozza meg a fény terjedésének irányát a törés során?",
+       "explanation": "A törésmutató (refrakciós index) megmutatja, hogy az adott anyag mennyire befolyásolja a fény terjedésének irányát.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) A fehér fény teljesen eltűnik.",
+        "B) A fehér fény felbontása színekre történik.",
+        "C) A fehér fény sebessége nő.",
+        "D) A fehér fény irányának megváltozása nem következik be."
+       ],
+       "question": "Milyen jelenség következik be, amikor a fehér fény prizma segítségével áthalad?",
+       "explanation": "A prizma segítségével a fehér fény felbontása színekre történik, így láthatóvá válik a színkép.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) A fókuszpont a fényforrás helyét jelöli.",
+        "B) A fókuszpont az a hely, ahol a párhuzamos fénysugarak találkoznak.",
+        "C) A fókuszpont a fény sebességének mérésére szolgál.",
+        "D) A fókuszpont a fény elnyelődésének helyét mutatja."
+       ],
+       "question": "Mi a fókuszpont (fókusz) szerepe a fény fókuszálásában?",
+       "explanation": "A fókuszpont az a hely, ahol a párhuzamos fénysugarak találkoznak, így éles képet alkotnak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Az a távolság, ahol a fényforrás található.",
+        "B) Az a távolság a lencsétől, ahol a kép éles és megjelenik.",
+        "C) Az a távolság, ahol a fény elnyelődik.",
+        "D) Az a távolság, ahol a fény sebessége változik."
+       ],
+       "question": "Mi a képtávolság (képtávolság) definíciója?",
+       "explanation": "A képtávolság az a távolság a lencsétől, ahol a kép éles és megjelenik, fontos a képalkotás szempontjából.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "642db0e7-1ab8-47bb-800d-7c71a9d4f02c",
+   "title_hu": "Látás és optikai eszközök",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "764d3e48-2fe3-4152-a22e-634b902cdde0",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A látás egy rendkívül bonyolult folyamat, amelyben a fény a szemünkbe jutva képpé alakul. A fény a szemben először a szaruhártyán (cornea) halad át, majd a pupillán (pupil) keresztül a lencséhez (lens) érkezik. A lencse a fényt úgy fókuszálja, hogy az a retinára (hártya) vetődjön. Itt a fényérzékeny sejtek (pálcikák és csapok) elektromos impulzusokat generálnak, amelyeket az agyunk értelmez. Ez a folyamat lehetővé teszi számunkra, hogy a világot színekkel és formákkal lássuk.",
+       "type": "text",
+       "heading": "A látás folyamata",
+       "key_term": "látás"
+      },
+      {
+       "body": "A szemünk felépítése hasonlít egy bonyolult fényképezőgéphez. A szaruhártya a külső réteg, amely védi a szemet és segíti a fény törését. A pupilla szabályozza, mennyi fény jut be, míg a lencse a fény fókuszálásáért felelős. A retina a fényérzékelő réteg, ahol a látásunkért felelős sejtek találhatók. Ha a lencse nem tudja megfelelően fókuszálni a fényt, akkor a kép homályos lesz, ami gyakran vezet látásproblémákhoz.",
+       "type": "text",
+       "heading": "A szem felépítése",
+       "key_term": "szem felépítése"
+      },
+      {
+       "body": "A szemüvegek a látás javításának egyik legelterjedtebb módja. A lencsék a szemüvegben úgy vannak kialakítva, hogy kompenzálják a szem hibáit, például a rövidlátást vagy a távollátást. Amikor a fény a szemüveg lencséjén keresztül halad, a lencsék újra fókuszálják azt, így élesebb képet adnak. A modern szemüvegek divatosak is lehetnek, így a látásjavítás mellett a stílusunkat is kifejezhetjük velük.",
+       "type": "text",
+       "heading": "Szemüvegek szerepe",
+       "key_term": "szemüveg"
+      },
+      {
+       "body": "A teljes visszaverődés egy olyan jelenség, amely akkor következik be, amikor a fény egy optikai anyag határán keresztül egy másik, kevésbé sűrű anyagba lép, és az érkezési szög meghaladja a kritikus szöget. Ez a jelenség lehetővé teszi például az optikai szálak működését, amelyek a modern kommunikáció alapját képezik. Az optikai szálakban a fény teljes mértékben visszaverődik, így nagyon kis veszteséggel tudnak információt továbbítani, például az internetkapcsolatunk során.",
+       "type": "text",
+       "heading": "Teljes visszaverődés",
+       "key_term": "teljes visszaverődés"
+      },
+      {
+       "body": "A mikroszkópok lehetővé teszik számunkra, hogy olyan apró részleteket lássunk, amelyeket szabad szemmel nem tudnánk észlelni. A mikroszkópok lencséket használnak a fény fókuszálására, ezáltal közelítve a megfigyelt tárgyat. Az iskolai laborokban gyakran használják őket sejtek, baktériumok és egyéb mikroszkopikus organizmusok megfigyelésére, így sokkal többet tudunk meg a világ apró részleteiről.",
+       "type": "text",
+       "heading": "Mikroszkópok működése",
+       "key_term": "mikroszkóp"
+      },
+      {
+       "body": "A távcsövek a csillagászatban használt optikai eszközök, amelyek lehetővé teszik számunkra, hogy távoli égitesteket figyeljünk meg. A távcsövek lencséket és tükör rendszereket használnak a fény összegyűjtésére és fókuszálására. Így a csillagászok képesek felfedezni a távoli galaxisokat és csillagokat, amelyek a Földről szabad szemmel nem láthatók. A modern távcsövek digitális technológiát is alkalmaznak, hogy még pontosabb képeket kapjunk az univerzumból.",
+       "type": "text",
+       "heading": "Távcsövek és a csillagászat",
+       "key_term": "távcső"
+      },
+      {
+       "body": "Nem minden állat látja a világot úgy, ahogy mi. Például a kutyák színlátása korlátozottabb, mint az embereké, mivel csak kétféle színérzékelő sejtjük van. Ezzel szemben a méhek képesek az ultraibolya fény észlelésére, amely az emberek számára láthatatlan. A különböző állatok színlátásának megértése segít nekünk jobban megérteni a természet sokszínűségét és az állatok viselkedését, például, hogy hogyan találják meg a virágokat vagy hogyan kommunikálnak egymással.",
+       "type": "text",
+       "heading": "Állatok színlátása",
+       "key_term": "állatok színlátása"
+      }
+     ]
+    },
+    {
+     "block_id": "721bf8df-a83e-482e-aa54-5b0d807a3943",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal diák a szobájában ül, és felkapcsolja a villanyt. A lámpa fénye bevilágítja a szobát, lehetővé téve számára, hogy lássa a körülötte lévő tárgyakat. A fényforrásból érkező fény sugarai a különböző felületeken visszaverődnek, és ezek a visszavert fények érik el a szemét.",
+       "type": "story",
+       "heading": "A világ felfedezése"
+      },
+      {
+       "body": "A diák szeme a fényre reagál. A fény a szaruhártyán (a szem elülső átlátszó részén) halad át, majd a lencsén keresztül fókuszálódik a retinára (a szem hátsó részén lévő fényérzékeny réteg). A retina érzékeli a fényt, és elektromos jeleket küld az agynak, ahol ezek az információk képpé alakulnak.",
+       "type": "story",
+       "heading": "A szem működése"
+      },
+      {
+       "body": "A diák észreveszi, hogy a távoli tárgyak homályosak. Elhatározza, hogy felkeresi a szemészetet, ahol szemüveget ajánlanak neki. A szemüveg lencséi úgy vannak megtervezve, hogy a fényt megfelelően törjék meg, így a diák számára élesebbé válik a látás. A szemüveg használatával a diák újra élvezheti a világ tisztánlátását.",
+       "type": "story",
+       "heading": "A látás javítása"
+      },
+      {
+       "body": "A diák érdeklődéssel figyeli a tanórán a mikroszkópot. A tanár bemutatja, hogyan működik: a fény a mikroszkóp lencséin keresztül halad, és a kis tárgyak nagyítva jelennek meg. A diák megérti, hogy a mikroszkóp a fényt használja, hogy részletesebben láthassa a mikroszkopikus világot.",
+       "type": "story",
+       "heading": "Optikai eszközök felfedezése"
+      },
+      {
+       "body": "A diák a távcsövek működéséről is tanul. Megtudja, hogy a távcső lencséi is a fény törésén alapulnak, de itt a cél az, hogy távoli égitesteket közel hozzanak. A távcsőben a fény a lencséken áthaladva összegyűlik, és az emberi szem számára láthatóvá teszi a csillagokat és bolygókat, lehetővé téve a világűr felfedezését.",
+       "type": "story",
+       "heading": "A távcső titkai"
+      },
+      {
+       "body": "A diák a következő órán találkozik a teljes visszaverődés fogalmával. Megtanulja, hogy amikor a fény egy optikai szálba kerül, a fény nem hagyja el a szálat, hanem teljesen visszaverődik, így lehetővé téve az információk gyors továbbítását. Ez a jelenség alapja a modern kommunikációs technológiáknak, mint például az internet.",
+       "type": "story",
+       "heading": "Teljes visszaverődés"
+      }
+     ]
+    },
+    {
+     "block_id": "f7761e9b-9ffe-4bd4-ae73-8d664d46aad1",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A szem felépítése és a fény útja",
+       "heading": "A szem felépítése",
+       "description": "Egy részletes diagram, amely bemutatja a szem fő részeit, mint a szaruhártya, lencse, retina és pupilla. A diagramon nyilak jelzik a fény útját a szemen keresztül.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A látás folyamata: fény - retina - agy",
+       "heading": "A látás folyamata",
+       "description": "Egy egyszerű vázlat, amely bemutatja, hogyan alakul át a fény elektromágneses hullámmá, majd idegi impulzussá a retinában, és hogyan jut el az agyba.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Szemüvegek és a látásjavítás",
+       "heading": "Szemüveg és látásjavítás",
+       "description": "Egy grafikon, amely a különböző lencsetípusok hatását mutatja be a látásra, például a domború és homorú lencsék működését.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Teljes visszaverődés az optikai szálban",
+       "heading": "Teljes visszaverődés",
+       "description": "Egy keresztmetszeti ábra, amely bemutatja, hogyan történik a teljes visszaverődés egy optikai szálban. Az ábra jelzi a kritikus szöget és a fény útját.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A mikroszkóp működése",
+       "heading": "Mikroszkóp működése",
+       "description": "Egy diagram, amely bemutatja a mikroszkóp fő részeit és működését, beleértve a lencséket és a világítást.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Távcsövek és a távoli objektumok megfigyelése",
+       "heading": "Távcsövek működése",
+       "description": "Egy vázlat, amely bemutatja a távcsövek működését, beleértve a gyűjtő- és okulárlencsék elhelyezkedését.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Állatok színlátása: különböző fajok összehasonlítása",
+       "heading": "Állatok színlátása",
+       "description": "Egy grafikon, amely összehasonlítja különböző állatok színlátási képességeit, például kutyák, tehenek és ragadozó madarak színérzékelését.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "27cbf4bf-ecd7-417e-9f22-b0af4395e3ce",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A különböző állatok színlátásának megértése segít az állatvédelmi munkákban, például a kutyák és macskák megfelelő táplálásában és a környezetük kialakításában.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 40,
+          "x": 100,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 85,
+          "y": 150,
+          "text": "Kutyák",
+          "type": "label"
+         },
+         {
+          "r": 40,
+          "x": 300,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 285,
+          "y": 150,
+          "text": "Emberek",
+          "type": "label"
+         },
+         {
+          "x1": 140,
+          "x2": 260,
+          "y1": 150,
+          "y2": 150,
+          "type": "line",
+          "dashed": true
+         },
+         {
+          "x": 200,
+          "y": 140,
+          "text": "Színlátás különbségek",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Különböző állatok színlátása",
+       "discovery": "A kutatók az 1800-as évek végén kezdték el vizsgálni, hogy az állatok hogyan érzékelik a színeket. A munkájuk során felfedezték, hogy a kutyák színlátása eltér az emberekétől, mivel ők főleg a kék és sárga árnyalatait látják, míg a piros és zöld színeket nehezen érzékelik. Ezt a felfedezést a szemükben található különböző típusú csapok (színérzékelő sejtek) jelenléte magyarázza.",
+       "try_basic": "Készítsünk egy egyszerű színkártyát, amelyen különböző színek találhatók. Kérjünk meg valakit, hogy mondja el, milyen színeket lát, majd hasonlítsuk össze a saját színérzékelésünkkel.",
+       "try_advanced": "Készítsünk egy projektet, amelyben különböző állatok színlátását vizsgáljuk, például fényképezőgéppel készített képeket elemezve, amelyek különböző színű szűrőkkel készültek."
+      }
+     ]
+    },
+    {
+     "block_id": "7433ff41-5e88-4250-8d3b-27e6d5df45fe",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A fény a szemlencsén keresztül a retinára fókuszálódik.",
+        "B) A fény a pupillán keresztül nem jut be a szembe.",
+        "C) A retinán a fény nem alakul képpé.",
+        "D) A fény a szaruhártyán keresztül nem törik meg."
+       ],
+       "question": "Mi a látás folyamata a szemünkben?",
+       "explanation": "A látás folyamata során a fény a szemlencsén keresztül a retinára fókuszálódik, ahol képpé alakul.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A látás javítására.",
+        "B) A színlátás megváltoztatására.",
+        "C) A szem védelmére a napfény ellen.",
+        "D) A szem fáradtságának csökkentésére."
+       ],
+       "question": "Mire szolgál a szemüveg?",
+       "explanation": "A szemüveg lencséje a fényt úgy törve javítja a látást, lehetővé téve a tisztább képek érzékelését.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) A fény olyan mértékben törik meg, hogy visszaverődik.",
+        "B) A fény teljesen elnyelődik egy optikai anyagban.",
+        "C) A fény a határfelületen teljesen visszaverődik, ha a beesési szög nagyobb a kritikus szögnél.",
+        "D) A fény egyenesen halad át az anyagon."
+       ],
+       "question": "Mi a teljes visszaverődés?",
+       "explanation": "A teljes visszaverődés akkor következik be, amikor a beesési szög nagyobb a kritikus szögnél, és a fény visszaverődik az anyag határfelületéről.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Nagyítószerkezet, amely lehetővé teszi a kis tárgyak részletes megfigyelését.",
+        "B) Távcső, amely távoli objektumok megfigyelésére szolgál.",
+        "C) Lencsék nélküli eszköz, amely a fény irányítására szolgál.",
+        "D) Fényforrás, amely a látás javítására szolgál."
+       ],
+       "question": "Milyen optikai eszköz a mikroszkóp?",
+       "explanation": "A mikroszkóp egy nagyítószerkezet, amely lehetővé teszi a kis tárgyak részletes megfigyelését a lencsék segítségével.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Fényinformációk továbbítására.",
+        "B) Fény szétbontására.",
+        "C) Fény elnyelésére.",
+        "D) Fény visszaverésére."
+       ],
+       "question": "Mire használják az optikai szálakat?",
+       "explanation": "Az optikai szálakat fényinformációk továbbítására használják, mivel képesek a fényt nagy távolságokra eljuttatni.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "7f361612-e0ab-4587-afde-4364b8b84391",
+   "title_hu": "Távcsövek és természetes színek",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "8991dd31-b971-43aa-a1db-237cf7d6a8ff",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Galilei távcsöve a 17. században forradalmasította a csillagászatot. Ezzel a műszerrel felfedezte a Jupiter holdjait, amelyek megfigyelése új dimenziókat nyitott a bolygók mozgásának megértésében. A távcső segítségével Galilei elsőként látta a Vénusz fázisait is, ami alátámasztotta a heliocentrikus világképet. A távcső működése alapvetően a gyűjtő- és szórólencsék kombinációján alapul, ami lehetővé teszi a távoli objektumok nagyobb részletességgel való megfigyelését.",
+       "type": "text",
+       "heading": "Galilei távcsöve és megfigyelései",
+       "key_term": "Galilei távcső"
+      },
+      {
+       "body": "A természetben látott színek, mint például a kék égbolt vagy a naplemente, a fény szóródásának és színkeverésének eredményei. A kék égbolt a Rayleigh-szórás miatt alakul ki, ahol a napfény a légkörben lévő apró részecskékhez ütközve szóródik. A naplemente vöröses színe a fény hosszabb utazási idejének köszönhető, amely során a kék és zöld fény egy része szétszóródik, így a vörös és narancs színek dominálnak. Ez a jelenség gyakran megfigyelhető a városok felett, amikor a nap lenyugszik.",
+       "type": "text",
+       "heading": "A természetes színek kialakulása",
+       "key_term": "természetes színek"
+      },
+      {
+       "body": "A szivárvány színei a fény törésének és visszaverődésének következményei, amikor a napfény áthalad a vízcseppeken. A szivárványban látható színek a vöröstől a liláig terjednek, és a fény spektrumának különböző hullámhosszaihoz kapcsolódnak. E színek megjelenése a vízcseppek méretétől és a napfény szögétől is függ. A szivárvány megfigyelése különösen szép élmény, ha eső után a nap ismét előbújik.",
+       "type": "text",
+       "heading": "A szivárvány színei",
+       "key_term": "szivárvány"
+      },
+      {
+       "body": "A kiegészítő színek a színkörben egymással szemben található színek, mint például a piros és zöld, vagy a kék és narancs. Ezek a színek a színkeverés során fontos szerepet játszanak, hiszen ha két kiegészítő színt keverünk, akkor a végeredmény szürke vagy fekete lesz. A kiegészítő színek használata a művészetben és a dizájnban is elterjedt, hiszen élénk kontrasztokat hoznak létre, így vonzóbbá téve a vizuális élményt.",
+       "type": "text",
+       "heading": "Kiegészítő színek",
+       "key_term": "kiegészítő színek"
+      },
+      {
+       "body": "A távcsövek felépítése általában gyűjtő- és szórólencsékből áll, amelyeket pontosan úgy terveztek, hogy a lehető legjobban összegyűjtsék a fényt. A Galilei-féle távcső egy egyszerűbb változat, míg a Kepler-féle távcső bonyolultabb, de nagyobb nagyítást biztosít. A távcsövek használata lehetővé teszi a csillagok, bolygók és más égitestek részletes megfigyelését, és a modern technológia által vezérelt digitális távcsövek már a csillagászati képek rögzítésére is képesek.",
+       "type": "text",
+       "heading": "Távcsövek felépítése és működése",
+       "key_term": "távcsövek"
+      },
+      {
+       "body": "A mikroszkóp működése hasonló a távcsövekhez, hiszen itt is lencsék segítségével nagyítunk. A gyűjtő lencsék a mikroszkópban a fényt összegyűjtik, míg a szórólencsék a megfigyelt tárgy képméretét növelik meg. A mikroszkópok használata elengedhetetlen a tudományos kutatásokban, hiszen lehetővé teszik a mikroszkopikus világ felfedezését, ami a távcsövekhez hasonlóan új perspektívát ad a látható világ megértéséhez.",
+       "type": "text",
+       "heading": "Mikroszkóp mint távcső modell",
+       "key_term": "mikroszkóp"
+      },
+      {
+       "body": "A nagy csillagászati távcsövek, mint például a Hubble Űrtávcső, lehetővé teszik a távoli galaxisok és csillagok részletes megfigyelését. Ezek a távcsövek speciális érzékelőkkel és kamerákkal vannak felszerelve, amelyek képesek rögzíteni a fényt és más elektromágneses hullámokat. Az adatgyűjtés során a tudósok hatalmas mennyiségű információt kapnak, amely segíti a világegyetem működésének megértését, és új felfedezésekhez vezet.",
+       "type": "text",
+       "heading": "Adatgyűjtés a csillagászati távcsövekről",
+       "key_term": "csillagászati távcsövek"
+      }
+     ]
+    },
+    {
+     "block_id": "c923f0cb-67e4-4124-8303-eaac61b4b6f7",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy éjszaka, amikor az ég tele van csillagokkal, valaki felkapcsolja a távcsövet, hogy jobban megfigyelhesse a távoli égitesteket. A távcső lencséin keresztül a fény, amely a csillagokból érkezik, egy gyűjtőlencsén halad át, ahol a fény párhuzamos sugarakká alakul.",
+       "type": "story",
+       "heading": "A csillagok felfedezése"
+      },
+      {
+       "body": "A gyűjtőlencse után a fény továbbhalad a távcső második lencséje felé, amely a Galilei-féle távcsőben szórólencse. Ez a lencse a fényt szétszórja, lehetővé téve, hogy a megfigyelő egy nagyított képet lásson a csillagokról. Galilei ezzel a távcsővel felfedezte a Jupiter holdjait és a Vénusz fázisait.",
+       "type": "story",
+       "heading": "Galilei távcsöve"
+      },
+      {
+       "body": "A távcsöves megfigyelés során a fény színei is felfedezhetőek. A naplemente vörös és narancs árnyalatait a légkörben lévő részecskék szórása okozza. A hosszabb hullámhosszú fény, mint a vörös, könnyebben átjut a légkörön, míg a kék fény szétszóródik, így a naplemente színei varázslatosak.",
+       "type": "story",
+       "heading": "A természet színei"
+      },
+      {
+       "body": "Amikor a megfigyelő a távcsővel a szivárványt nézi, a napfény áthalad a vízcseppeken, és a fény különböző színekre bomlik. A szivárvány színei, mint a piros, narancs, sárga, zöld, kék, indigó és lila, a fény törésének és szóródásának eredményeként jelennek meg.",
+       "type": "story",
+       "heading": "A szivárvány titka"
+      },
+      {
+       "body": "A távcsőben megfigyelt színek mellett a megfigyelő észreveszi, hogy a kék és sárga színek keveredése zöldet eredményez. Ez a színkeverés a kiegészítő színek elvén alapul, ahol a különböző színek kombinációja új árnyalatokat hoz létre, ami szintén fontos a természetes színek megértésében.",
+       "type": "story",
+       "heading": "Kiegészítő színek"
+      }
+     ]
+    },
+    {
+     "block_id": "18986264-7b22-4d22-82fe-be637c5789ff",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A Galilei távcső szerkezete: a gyűjtőlencse összegyűjti a fényt, míg a szemlencse felnagyítja a képet.",
+       "heading": "Galilei távcső felépítése",
+       "description": "A Galilei távcső vázlata, amely bemutatja a gyűjtőlencsét és a szemlencsét.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A Kepler távcső szerkezete: a gyűjtőlencse és a szemlencse kombinációja élesebb képet ad.",
+       "heading": "Kepler távcső felépítése",
+       "description": "A Kepler távcső vázlata, amely a gyűjtőlencsét és a szórólencsét mutatja be.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A naplementekor a fény szóródása miatt a kék és zöld színek eltűnnek, míg a vörös és narancs színek dominálnak.",
+       "heading": "Naplemente színkép",
+       "description": "A naplemente során megfigyelt színek spektrumának ábrázolása.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A kék égbolt színe a rövidebb hullámhosszú fény szóródásának köszönhető.",
+       "heading": "Kék égbolt",
+       "description": "A Rayleigh-szórás elve, amely bemutatja, hogyan szóródik a fény a légkörben.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A szivárvány a fény refrakciójának és visszaverődésének következménye a vízcseppekben.",
+       "heading": "Szivárvány színei",
+       "description": "A szivárvány színeinek sorrendje és a fényvisszaverődés folyamata.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A kiegészítő színek, mint a piros és zöld, egymás mellett erősítik a színeket.",
+       "heading": "Kiegészítő színek",
+       "description": "A színek kiegészítő párjainak ábrázolása a színkörön.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A mikroszkóp a távcső elvére épül, nagyítva a kis tárgyakat.",
+       "heading": "Mikroszkóp modell",
+       "description": "A mikroszkóp vázlata, amely a gyűjtő- és szórólencsék elhelyezkedését mutatja.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A különböző távcsövek mérete és nagyítása befolyásolja a megfigyelhető égi jelenségeket.",
+       "heading": "Csillagászati távcsövek",
+       "description": "A különböző csillagászati távcsövek méreteinek és nagyításuknak összehasonlítása.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "6c116b94-b3c4-4262-8fcf-c4296be0e876",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A távcsöveket ma is széles körben használják csillagászati megfigyelésekhez, például a csillagok és bolygók tanulmányozásához, de a mikroszkópok is hasonló elven működnek, amelyek a mikroszkopikus világ felfedezésére szolgálnak.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 50,
+          "w": 300,
+          "x": 50,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 70,
+          "y": 120,
+          "text": "Távcső",
+          "type": "label"
+         },
+         {
+          "r": 10,
+          "x": 350,
+          "y": 125,
+          "type": "circle"
+         },
+         {
+          "x": 360,
+          "y": 120,
+          "text": "Fényforrás",
+          "type": "label"
+         },
+         {
+          "x1": 250,
+          "x2": 350,
+          "y1": 125,
+          "y2": 125,
+          "type": "arrow"
+         },
+         {
+          "x": 100,
+          "y": 90,
+          "text": "Lencse",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Távcsövek működése és alkalmazása",
+       "discovery": "A távcsövek története a 17. századra nyúlik vissza, amikor Galileo Galilei 1609-ben bemutatta az első, saját készítésű távcsövét. Ezzel a találmánnyal lehetővé vált a távoli égitestek megfigyelése, ami forradalmasította a csillagászatot és hozzájárult a heliocentrikus világkép elfogadásához.",
+       "try_basic": "Készítsünk egyszerű lencsés távcsövet két lencséből (gyűjtőlencse és szórólencse) és egy kartondobozból. A gyűjtőlencsét a doboz egyik végére, a szórólencsét a másik végére rögzítjük. Ezután figyeljük meg, hogy a távcsövön keresztül hogyan látjuk a távoli tárgyakat.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "fe6683cb-58ec-45f0-a9b2-ac733e6bb2f3",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Galilei távcsöve",
+        "B) Kepler távcsöve",
+        "C) Hubble távcsöve",
+        "D) Newton távcsöve"
+       ],
+       "question": "Milyen távcsövet használt Galilei a csillagok megfigyelésére?",
+       "explanation": "Galilei távcsöve egy egyszerű, egy gyűjtőlencsét és egy szórólencsét használó eszköz volt, amely lehetővé tette számára a csillagok és bolygók megfigyelését.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A légkörben lévő részecskék szórják a kék fényt.",
+        "B) A napfény nem tartalmaz kék színt.",
+        "C) A felhők visszaverik a kék fényt.",
+        "D) A földfelszín kék színű."
+       ],
+       "question": "Miért látjuk a kék égboltot?",
+       "explanation": "A légkörben lévő apró részecskék a napfényből a kék fényt szórják el a legjobban, ezért látjuk az égboltot kéknek.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Vörös, narancs, sárga, zöld, kék, indigó, lila",
+        "B) Piros, zöld, sárga",
+        "C) Kék, lila, fekete",
+        "D) Narancs, zöld, barna"
+       ],
+       "question": "Mik a szivárvány színei?",
+       "explanation": "A szivárvány színei a napfény prizmatikus szétszóródásából adódnak, és a következő sorrendben jelennek meg: vörös, narancs, sárga, zöld, kék, indigó és lila.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Olyan színek, amelyek összeadva fehér fényt adnak.",
+        "B) Olyan színek, amelyek nem keverhetők.",
+        "C) Olyan színek, amelyek a szivárványban találhatók.",
+        "D) Olyan színek, amelyek az éjszakai égbolton láthatók."
+       ],
+       "question": "Mik a kiegészítő színek?",
+       "explanation": "A kiegészítő színek olyan színek, amelyek ha együtt vannak jelen, akkor a fehér fény hatását keltik, például a piros és a zöld.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A fény szóródása a légkörben.",
+        "B) A napfény elnyelődése a felhőkben.",
+        "C) A Föld árnyéka.",
+        "D) A napfény visszaverődése a víz felszínéről."
+       ],
+       "question": "Milyen jelenség okozza a naplemente vörös színét?",
+       "explanation": "A naplemente vörös színét a légkörben lévő részecskék szórják el, így a kék fény nagy része eltűnik, és a vörös fény dominál.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "09d7f500-883b-421d-9f16-679b6056d890",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Valódi kép",
+      "B) Látszólagos kép",
+      "C) Térbeli kép",
+      "D) Fókuszált kép"
+     ],
+     "question": "Milyen típusú képet látunk egy síktükörben?",
+     "explanation": "A síktükörben látszólagos képet látunk, amely a tükör mögött helyezkedik el, de valójában nem létezik.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Mikroszkóp",
+      "B) Távcső",
+      "C) Reflektor",
+      "D) Kozmetikai tükör"
+     ],
+     "question": "Milyen optikai eszközben használunk kozmetikai tükröt?",
+     "explanation": "A kozmetikai tükör a személyes használatra készült, hogy közelről láthassuk magunkat.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Fényvisszaverődés",
+      "B) Fényelnyelés",
+      "C) Fény törése",
+      "D) Teljes visszaverődés"
+     ],
+     "question": "Mi történik, amikor a fény átlép egy másik közegbe?",
+     "explanation": "A fény törése akkor következik be, amikor a fény átlép egy másik közegbe, és megváltozik a sebessége.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Fényvisszaverődés és törés",
+      "B) Csak fénytörés",
+      "C) Csak fényvisszaverődés",
+      "D) Fényelnyelés"
+     ],
+     "question": "Hogyan keletkezik a szivárvány?",
+     "explanation": "A szivárvány a fényvisszaverődés és a fénytörés kombinációja révén keletkezik a vízcseppekben.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A fényvisszaverődés helye",
+      "B) A fény összegyűjtésének helye",
+      "C) A képtávolság meghatározása",
+      "D) A fény elnyelésének helye"
+     ],
+     "question": "Mi a fókuszpont (fókusz) szerepe a lencsékben?",
+     "explanation": "A fókuszpont a hely, ahol a lencse által fókuszált fény találkozik.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Valódi és fordított kép",
+      "B) Látszólagos és egyenesen álló kép",
+      "C) Valódi és egyenesen álló kép",
+      "D) Látszólagos és fordított kép"
+     ],
+     "question": "Milyen típusú kép keletkezik egy domború lencsénél, ha a tárgy a fókuszon kívül van?",
+     "explanation": "Domború lencsénél, ha a tárgy a fókuszon kívül van, valódi és fordított képet kapunk.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Távcső",
+      "B) Szemüveg",
+      "C) Mikroszkóp",
+      "D) Fényforrás"
+     ],
+     "question": "Minek a segítségével javítható a látás?",
+     "explanation": "A szemüveg segít a látás javításában azáltal, hogy a fényt a szem megfelelő helyére irányítja.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Fényvisszaverődés",
+      "B) Fényelnyelés",
+      "C) Fény törése",
+      "D) Szóródás"
+     ],
+     "question": "Milyen jelenség okozza a kék égboltot?",
+     "explanation": "A kék égbolt a fény szóródásának következménye, amely során a rövidebb hullámhosszú fény (kék) jobban szétszóródik.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

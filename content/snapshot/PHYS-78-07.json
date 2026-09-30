@@ -1,0 +1,1248 @@
+{
+ "nat_id": "PHYS-78-07",
+ "topic_id": "e7bded01-db9b-46b5-bc9e-c0dd4d05f9c3",
+ "title_hu": "Világítás, fény, optikai eszközök",
+ "grade": 8,
+ "lessons": [
+  {
+   "lesson_id": "dd2abafe-bf63-4d93-a1c1-c44dee9962cd",
+   "title_hu": "A fény terjedése és visszaverődése",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "00044856-36c3-407f-953e-99eb09732af8",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A fény mindig egyenes vonalban terjed, amíg nem találkozik valamilyen akadállyal. Ezt a jelenséget könnyen megfigyelhetjük, ha egy kis teljesítményű lézert használunk. Ha a lézernyaláb egy falra vagy egy tükörre irányul, láthatjuk, hogy a fénysugár egyenesen halad, amíg el nem éri az akadályt. A fény egyenes vonalú terjedése teszi lehetővé, hogy például a mobiltelefonunk kijelzője tisztán látható legyen, amikor a fény ráesik.",
+       "type": "text",
+       "heading": "A fény egyenes vonalú terjedése",
+       "key_term": "egyenes vonalú terjedés"
+      },
+      {
+       "body": "A fény visszaverődése akkor történik, amikor a fénysugár egy tükörrel találkozik. A síktükör egy olyan felület, amely sima és fényes, így a fénysugarak szabályosan verődnek vissza. Ha egy fénysugarat egy tükörre irányítunk, a visszaverődött sugár szögének meg kell egyeznie a beeső sugár szögével. Ezt a jelenséget használjuk például a fürdőszobai tükörben látott tükörképünk kialakulásánál.",
+       "type": "text",
+       "heading": "Szabályos visszaverődés",
+       "key_term": "szabályos visszaverődés"
+      },
+      {
+       "body": "Amikor a tükör előtt állunk, a fény, amely rólunk visszaverődik, a tükör felületén találkozik. A tükör úgy viselkedik, mint egy fényvisszaverő felület, így a rólunk visszaverődött fény a tükörben egy tükörképet hoz létre. Ezt a jelenséget a mindennapi életben is tapasztalhatjuk, például amikor sminkelünk vagy fésülködünk. A tükörkép valójában a valóság tükörképe, amelyet a fény visszaverődése hoz létre.",
+       "type": "text",
+       "heading": "A tükörkép kialakulása",
+       "key_term": "tükörkép"
+      },
+      {
+       "body": "Az árnyékok kialakulása szorosan összefügg a fény egyenes vonalú terjedésével. Amikor egy fényforrás, például egy LED-lámpa, egy akadály, például a testünk mögé kerül, az akadály megakadályozza, hogy a fény elérje a mögötte lévő felületet, így árnyékot hoz létre. A tizenévesek számára ismerős lehet, hogy az árnyékok hossza és formája a napszak és a fényforrás helyzetének változásával folyamatosan változik.",
+       "type": "text",
+       "heading": "Árnyékok és a fény terjedése",
+       "key_term": "árnyék"
+      },
+      {
+       "body": "A napfogyatkozás akkor következik be, amikor a Hold a Föld és a Nap közé kerül, így árnyékot vet a Földre. Ezzel szemben a holdfogyatkozás akkor történik, amikor a Föld a Hold és a Nap között helyezkedik el, így a Föld árnyéka a Holdra vetül. Ezek a jelenségek lenyűgöző példái a fény terjedésének és annak, hogyan képes a Föld és a Hold egymás árnyékát létrehozni a világűrben.",
+       "type": "text",
+       "heading": "Napfogyatkozás és holdfogyatkozás",
+       "key_term": "napfogyatkozás, holdfogyatkozás"
+      },
+      {
+       "body": "Az optikai illúziók olyan jelenségek, amelyek a fény és a látásunk kölcsönhatásából fakadnak. Például, amikor egy színes képet nézünk, a fény különböző szögekből érkezik, és az agyunk értelmezi a látottakat. A tizenévesek számára izgalmas lehet felfedezni, hogyan manipulálják a művészek a fényt és a színeket, hogy megtévesszék a szemünket, például a 3D-s képek vagy a mozgó képek esetében.",
+       "type": "text",
+       "heading": "Optikai illúziók",
+       "key_term": "optikai illúzió"
+      },
+      {
+       "body": "A fényforrások, mint például a LED-lámpák vagy a mobiltelefonok világítása, mindennapi életünk elengedhetetlen részei. Ezek a fényforrások különböző módon működnek, és a bennük található alkatrészek, mint a diódák vagy a lencsék, különböző feladatokat látnak el. A tizenévesek számára érdekes lehet szétszerelni egy régi lámpát vagy telefont, hogy megértsék, hogyan működnek ezek az eszközök és hogyan befolyásolják a fény terjedését.",
+       "type": "text",
+       "heading": "Fényforrások a mindennapokban",
+       "key_term": "fényforrás"
+      }
+     ]
+    },
+    {
+     "block_id": "d4953499-6dcf-4a24-aab4-7b9df0880757",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal elér a falon lévő kapcsolóhoz, és megnyomja azt. Ezzel a folyamat elindul, hiszen a villanykörte áramot kap, és fényt bocsát ki.",
+       "type": "story",
+       "heading": "A villanykapcsoló megnyomása"
+      },
+      {
+       "body": "A villanykörte fényének egy része egyenesen terjedni kezd a szobában. Ez a fény egyenes vonalú terjedése, amelyet a környezetben lévő tárgyak árnyékainak megfigyelésével is észlelhetünk.",
+       "type": "story",
+       "heading": "A fény terjedése"
+      },
+      {
+       "body": "A szoba egyik sarkában egy síktükör található. Amikor a fény eléri a tükröt, a fény visszaverődik. Ezt a szabályos visszaverődést figyelve a fiatal észreveszi, hogy a tükörben a saját tükörképe jelenik meg.",
+       "type": "story",
+       "heading": "A tükörkép megjelenése"
+      },
+      {
+       "body": "A fiatal megrajzolja a fénysugarak útját. Az egyik fénysugár a villanykörtéből indul, eljut a tükörhöz, majd visszaverődik a szeméhez, ahol a tükörképét látja. Ez a folyamat segít megérteni, hogyan működik a fény visszaverődése.",
+       "type": "story",
+       "heading": "A tükörkép útja"
+      },
+      {
+       "body": "A fiatal a szobában található különböző fényforrásokat is megvizsgálja, például a telefonján lévő LED-világítást. A fényforrások szerkezetének szétszerelése során felfedezi, hogy a LED-ek is a fény egyenes vonalú terjedését és visszaverődését használják a világítás során.",
+       "type": "story",
+       "heading": "A fényforrások felfedezése"
+      }
+     ]
+    },
+    {
+     "block_id": "d60d64bd-0561-468c-adcc-fbc228f48012",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A fény egyenes vonalú terjedése",
+       "heading": "Fény egyenes vonalú terjedése",
+       "description": "Egy egyszerű ábra, amely bemutatja, hogyan terjed a fény egyenesen a forrástól egy sík felületig. A diagramon szerepelnek fénysugarak, amelyek párhuzamosan haladnak.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Párhuzamos fénysugarak a tükör előtt",
+       "heading": "Párhuzamos fénysugarak",
+       "description": "Egy vázlat, amely bemutatja, hogy a párhuzamos fénysugarak hogyan haladnak a térben, és hogyan érkeznek egy síktükörhöz.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Szabályos visszaverődés a síktükörnél",
+       "heading": "Szabályos visszaverődés",
+       "description": "Egy ábra, amely bemutatja a fény visszaverődését egy síktükör felületén, feltüntetve a beesési szöget és a visszaverődési szöget.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Tükörkép kialakulása",
+       "heading": "Tükörkép kialakulása",
+       "description": "Egy ábra, amely bemutatja, hogyan keletkezik a tükörkép a tükör előtt álló tárgyról, a fénysugarak visszaverődésével.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Árnyékok kialakulása a napfény hatására",
+       "heading": "Árnyékok megfigyelése",
+       "description": "Egy grafikon, amely bemutatja, hogyan változik az árnyék hossza és iránya a nap állásának függvényében.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Napfogyatkozás: a Hold árnyéka a Földön",
+       "heading": "Napfogyatkozás",
+       "description": "Egy ábra, amely bemutatja, hogyan helyezkedik el a Hold a Föld és a Nap között napfogyatkozáskor.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Holdfogyatkozás: a Föld árnyéka a Holdon",
+       "heading": "Holdfogyatkozás",
+       "description": "Egy ábra, amely bemutatja, hogyan helyezkedik el a Föld a Hold és a Nap között holdfogyatkozáskor.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Optikai illúziók: a fény és a percepció",
+       "heading": "Optikai illúziók",
+       "description": "Egy vázlat, amely bemutatja különböző optikai illúziókat, például a párhuzamos vonalak hatását.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "7c7a9d62-2ca7-4c89-bf0b-5d3f6e3e2de5",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A fény és árnyék jelenségei a mindennapi életünkben is megfigyelhetők, például a napfény által létrehozott árnyékokban vagy a különböző fényforrások (pl. lámpák) használatakor.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 100,
+          "w": 300,
+          "x": 50,
+          "y": 150,
+          "type": "box"
+         },
+         {
+          "r": 30,
+          "x": 350,
+          "y": 50,
+          "type": "circle"
+         },
+         {
+          "x": 355,
+          "y": 45,
+          "text": "Fényforrás",
+          "type": "label"
+         },
+         {
+          "x": 200,
+          "y": 180,
+          "text": "Árnyék",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Fény és árnyék",
+       "discovery": "A fény egyenes vonalú terjedését már az ókorban felfedezték. Arisztotelész és más filozófusok megfigyelték, hogy a fény forrása és az árnyékok kialakulása összefügg. A modern tudományban Newton és más tudósok tovább vizsgálták a fény viselkedését, különösen a visszaverődést és a törést.",
+       "try_basic": "Egy egyszerű kísérlet: helyezz egy lámpát az asztalra, és egy tárgyat (pl. könyvet) elé. Figyeld meg, hogyan alakul ki az árnyék a tárgy mögött, és kísérletezz a lámpa pozíciójával!",
+       "try_advanced": "Próbálj meg egy napfogyatkozást szimulálni egy gömb és egy lámpa segítségével, hogy megértsd a Föld, a Hold és a Nap közötti viszonyokat."
+      }
+     ]
+    },
+    {
+     "block_id": "38f5ff98-aded-498f-b422-93bd74376bad",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Egyenes vonalban",
+        "B) Körkörösen",
+        "C) Zavaros irányban",
+        "D) Csak fényvisszaverődés után"
+       ],
+       "question": "Hogyan terjed a fény a légkörben?",
+       "explanation": "A fény egyenes vonalban terjed a légkörben, amíg akadályba nem ütközik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A fény szabályos visszaverődése",
+        "B) A fény szétszórása",
+        "C) A fény elnyelése",
+        "D) A fény irányának megváltoztatása véletlenszerűen"
+       ],
+       "question": "Mi a síktükör feladata a fény visszaverődésében?",
+       "explanation": "A síktükör a fény szabályos visszaverődésével képes a tükörkép kialakítására.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Tükörkép kialakulása",
+        "B) Fényelnyelés",
+        "C) Fény szétszóródás",
+        "D) Fény hővé alakulás"
+       ],
+       "question": "Melyik jelenség figyelhető meg, amikor a fény egy tükörre esik?",
+       "explanation": "A fény tükörre esésekor a tükörkép kialakulása a szabályos visszaverődés következménye.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Egyenesen halad",
+        "B) Szétszóródik",
+        "C) Visszaverődik véletlenszerűen",
+        "D) Különböző irányokba terjed"
+       ],
+       "question": "Mi történik, ha a fény egy párhuzamos nyaláb formájában terjed?",
+       "explanation": "A párhuzamos nyaláb formájában terjedő fény egyenesen halad, amíg akadályba nem ütközik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Árnyékok kialakulásának megfigyelésével",
+        "B) Fényforrások elrejtésével",
+        "C) Fényelnyelés közben",
+        "D) Fény szórásával"
+       ],
+       "question": "Miként figyelhetjük meg a fény egyenes vonalú terjedését?",
+       "explanation": "A fény egyenes vonalú terjedése árnyékok kialakulásán keresztül jól megfigyelhető.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "7de2eea2-0464-4299-95a7-b72c892deef2",
+   "title_hu": "Fényforrások és tulajdonságaik",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "76d3f923-8341-4e9b-8e4f-529001344905",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A fényforrás olyan eszköz, amely fényt bocsát ki. A leggyakoribb példák közé tartoznak a hagyományos izzók, LED lámpák és fénycsövek. Ezek a fényforrások különböző módon működnek, de mindegyik célja a világítás biztosítása. A fényforrások fontos szerepet játszanak a mindennapi életünkben, hiszen lehetővé teszik, hogy lássunk a sötétben, és hangulatot teremtsenek a környezetünkben.",
+       "type": "text",
+       "heading": "Mi az a fényforrás?",
+       "key_term": "fényforrás"
+      },
+      {
+       "body": "A fény színe és fényerőssége befolyásolja a hangulatunkat és a látásunkat. Például a meleg fehér fény (sárgás árnyalat) barátságosabb és meghittebb légkört teremt, míg a hideg fehér fény (kékes árnyalat) éberebbé és energikusabbá tesz. A fényerősség azt mutatja meg, hogy mennyi fényt bocsát ki a forrás. A LED lámpák általában nagyobb fényerősséget biztosítanak, mint a hagyományos izzók, miközben kevesebb energiát fogyasztanak.",
+       "type": "text",
+       "heading": "A fény színe és fényerőssége",
+       "key_term": "fény színe, fényerősség"
+      },
+      {
+       "body": "A fény térbeli eloszlása azt jelenti, hogy a fényforrás hogyan osztja el a kibocsátott fényt a térben. Például a spotlámpák egy irányba fókuszálják a fényt, így ideálisak a hangsúlyozásra, míg a mennyezeti lámpák szélesebb területen biztosítanak világítást. A különböző típusú fényforrások különböző térbeli eloszlással rendelkeznek, ami befolyásolja, hogy hol és hogyan használhatók a legjobban.",
+       "type": "text",
+       "heading": "Fény térbeli eloszlása",
+       "key_term": "fény térbeli eloszlása"
+      },
+      {
+       "body": "Az energiahatékonyság azt mutatja meg, hogy egy fényforrás mennyi fényt képes kibocsátani egy adott mennyiségű energia felhasználásával. A LED lámpák sokkal energiahatékonyabbak, mint a hagyományos izzók, így hosszú távon kevesebb pénzt költünk a villanyszámlára. Az iskola költségeit is befolyásolja, hogy milyen fényforrásokat választanak, hiszen a drágább, de energiahatékonyabb lámpák végül kevesebb kiadást jelentenek.",
+       "type": "text",
+       "heading": "Energiahatékonyság és költségek",
+       "key_term": "energiahatékonyság, ár"
+      },
+      {
+       "body": "A fényforrások élettartama fontos szempont a választásnál. A LED lámpák például akár 25 000 órát is működhetnek, míg a hagyományos izzók élettartama gyakran csak 1 000 óra. Ez azt jelenti, hogy a LED lámpák ritkábban igényelnek cserét, ami csökkenti a hulladékot és a karbantartási költségeket. A hosszabb élettartamú fényforrások tehát nemcsak gazdaságosabbak, hanem környezetbarátabbak is.",
+       "type": "text",
+       "heading": "Élettartam és fenntartás",
+       "key_term": "élettartam"
+      },
+      {
+       "body": "A környezetünkben található fényforrások megfigyelése izgalmas feladat. Például nézd meg az iskola világítási rendszerét: hány lámpa van, milyen típusúak, és mennyi ideig működnek naponta. Érdemes megfigyelni, hogy a különböző fényforrások milyen hatással vannak az iskola hangulatára és tanulási környezetére. Ezen információk birtokában könnyebben választhatunk energiatakarékos megoldásokat a jövőben.",
+       "type": "text",
+       "heading": "Fényforrások megfigyelése a környezetben",
+       "key_term": "megfigyelés"
+      }
+     ]
+    },
+    {
+     "block_id": "99e07996-69cf-4958-bab6-c1ad119b1656",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A történet egy egyszerű, de mindennapi mozzanattal kezdődik: valaki megnyomja a villanykapcsolót. Ezzel a mozdulattal áramot enged a világítási rendszerbe, amely az iskolai folyosón található.",
+       "type": "story",
+       "heading": "A villanykapcsoló megnyomása"
+      },
+      {
+       "body": "A villanykapcsoló megnyomása után a villamos energia (elektromos áram) átáramlik a vezetékeken. Az iskola világítási rendszerében LED (fénykibocsátó dióda) fényforrások találhatók, amelyek az áram hatására fényt bocsátanak ki. A LED-ek energiahatékonysága miatt kevesebb áramot igényelnek, mint a hagyományos izzók.",
+       "type": "story",
+       "heading": "Az áram útja"
+      },
+      {
+       "body": "Ahogy az áram a LED fényforrásokhoz érkezik, a diódák aktiválódnak. A LED-ek különböző színű fényt bocsátanak ki a kibocsátott fény színe (például meleg fehér vagy hideg fehér) függvényében. Ez a fény elárasztja a folyosót, lehetővé téve, hogy a diákok biztonságosan közlekedjenek.",
+       "type": "story",
+       "heading": "A fény kibocsátása"
+      },
+      {
+       "body": "A kibocsátott fény térbeli eloszlása is fontos szempont. A LED fényforrások által kibocsátott fény szögben terjed, így a világítás egyenletesen oszlik el a folyosón. Ez segít abban, hogy a diákok jól lássanak, és elkerüljék a baleseteket.",
+       "type": "story",
+       "heading": "A fény eloszlása"
+      },
+      {
+       "body": "A világítás működéséhez szükséges áramforrás kiválasztása során az iskola figyelembe veszi az energiahatékonyságot és az árakat. A LED fényforrások hosszú élettartama és alacsony energiafogyasztása miatt az iskola kevesebb pénzt költ az áramra, így a világítás gazdaságosabbá válik.",
+       "type": "story",
+       "heading": "Az iskola energiaszámlája"
+      },
+      {
+       "body": "A LED fényforrások élettartama általában 15 000-50 000 óra, ami azt jelenti, hogy ritkábban kell cserélni őket. Ez nemcsak költségtakarékos, hanem csökkenti a hulladék mennyiségét is, így az iskola környezettudatosabbá válik.",
+       "type": "story",
+       "heading": "Az élettartam előnyei"
+      }
+     ]
+    },
+    {
+     "block_id": "dd7a5012-4bee-4bf0-baed-72f67d3b0487",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Fényforrások típusai és jellemzőik",
+       "heading": "Fényforrások típusai",
+       "description": "Egy diagram, amely bemutatja a különböző típusú fényforrásokat, mint például a hagyományos izzók, LED-ek, fénycsövek és halogén lámpák. Az egyes típusok mellett feltüntetjük a jellemzőiket, mint például az energiafogyasztást és az élettartamot.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A fényforrások színhőmérséklete",
+       "heading": "Fény színe",
+       "description": "Egy színskála, amely a különböző fényforrások által kibocsátott fény színét mutatja be, például meleg fehér, hideg fehér és színes fények. A színskálán a színek mellett a színhőmérséklet (Kelvin) is megjelenik.",
+       "visual_type": "színskála"
+      },
+      {
+       "type": "visual",
+       "caption": "Fényerősség különböző fényforrásoknál",
+       "heading": "Fényerősség",
+       "description": "Egy grafikon, amely a különböző fényforrások fényerejét (lumen) mutatja be. A grafikonon látható, hogy a LED-ek általában magas fényerősséget biztosítanak alacsonyabb energiafogyasztás mellett.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Fény térbeli eloszlása különböző fényforrásoknál",
+       "heading": "Kibocsátott fény térbeli eloszlása",
+       "description": "Egy vázlat, amely bemutatja a különböző fényforrások által kibocsátott fény térbeli eloszlását, például a spotlámpák és a diffúz lámpák fényeloszlását.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Energiahatékonyság különböző fényforrásoknál",
+       "heading": "Energiahatékonyság",
+       "description": "Egy diagram, amely a különböző fényforrások energiahatékonyságát (lm/W) mutatja be, kiemelve a LED-ek előnyét a hagyományos izzókkal szemben.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Fényforrások ára és élettartama",
+       "heading": "Ár és élettartam",
+       "description": "Egy táblázat, amely a különböző fényforrások árát és élettartamát hasonlítja össze. Az olcsóbb, de rövidebb élettartamú izzók és a drágább, de hosszabb élettartamú LED-ek összehasonlítása.",
+       "visual_type": "összehasonlító táblázat"
+      },
+      {
+       "type": "visual",
+       "caption": "Fényforrások a háztartásban",
+       "heading": "Fényforrások megfigyelése",
+       "description": "Egy fotó, amely egy háztartásban található különböző fényforrásokat mutat be, például nappali lámpát, konyhai világítást és kültéri világítást. A fotón látható, hogy hol és hogyan használják ezeket a fényforrásokat.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "Iskola világítási rendszerének áttekintése",
+       "heading": "Iskola világítási rendszere",
+       "description": "Egy diagram, amely bemutatja az iskola világítási rendszerét, beleértve a használatban lévő világítótestek számát, típusát, működési idejét és az energiafogyasztás költségeit.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "93a079eb-9c8f-4323-abfa-dd12302027f1",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A diákok a mindennapi életükben találkoznak különböző fényforrásokkal, például a LED-es lámpákkal vagy a mobiltelefonok kijelzőivel.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Fényforrások megfigyelése",
+       "discovery": "",
+       "try_basic": "Készítsünk egy egyszerű megfigyelést: sötétítsük el a szobát, majd kapcsoljunk be különböző fényforrásokat (pl. hagyományos izzó, LED, fénycső), és figyeljük meg a fényerősségüket és a színüket.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "ee5cd48f-bb85-4dec-b693-0ab3549188d9",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) LED (fénykibocsátó dióda)",
+        "B) Halogén izzó",
+        "C) Fluoreszcens lámpa",
+        "D) Izzólámpa"
+       ],
+       "question": "Melyik fényforrás jellemzője, hogy az energiahatékonysága általában magasabb, mint a hagyományos izzólámpáké?",
+       "explanation": "A LED (fénykibocsátó dióda) fényforrások energiahatékonysága sokkal magasabb, mint a hagyományos izzólámpáké, mivel kevesebb energiát fogyasztanak azonos fényerősség eléréséhez.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Sárgás színű",
+        "B) Kék színű",
+        "C) Zöld színű",
+        "D) Piros színű"
+       ],
+       "question": "Milyen színű fény kibocsátására képes a melegfehér LED?",
+       "explanation": "A melegfehér LED sárgás színű fényt bocsát ki, ami kellemesebb és otthonosabb világítást biztosít.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Izzólámpa",
+        "B) Halogén izzó",
+        "C) LED (fénykibocsátó dióda)",
+        "D) Fluoreszcens lámpa"
+       ],
+       "question": "Melyik fényforrásnak van a leghosszabb élettartama?",
+       "explanation": "A LED (fénykibocsátó dióda) fényforrások élettartama általában 15 000-50 000 óra között mozog, ami sokkal hosszabb, mint a többi fényforrásé.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Lux",
+        "B) Lumen",
+        "C) Watt",
+        "D) Kelvin"
+       ],
+       "question": "Mi a fényerősség mértékegysége?",
+       "explanation": "A fényerősség mértékegysége a lumen, amely a fényforrás által kibocsátott fény mennyiségét méri.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Izzólámpa",
+        "B) LED (fénykibocsátó dióda)",
+        "C) Halogén izzó",
+        "D) Fluoreszcens lámpa"
+       ],
+       "question": "Melyik fényforrás kibocsátott fényének térbeli eloszlása a legszélesebb?",
+       "explanation": "Az izzólámpák általában szélesebb térbeli eloszlású fényt bocsátanak ki, ami lehetővé teszi a nagyobb területek egyenletes megvilágítását.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "1f0e7c54-c3a0-4120-af07-3012b80e1b35",
+   "title_hu": "Fénytörés és lencsék",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "12eb0946-1bca-462a-a9df-10129685d79f",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A fénytörés akkor következik be, amikor a fény egy másik közegbe lép, például levegőből vízbe. Ekkor a fény iránya megváltozik, és ezt a jelenséget a mindennapi életben is megfigyelhetjük, például amikor a vízben állunk, és a lábunkat torzítva látjuk. A törés szögét a Snell-törvény írja le, amely azt mondja meg, hogy a fény sebessége más a különböző anyagokban. Ezt a jelenséget használják a szemüvegek és a fényképezőgépek lencséinek tervezésénél is.",
+       "type": "text",
+       "heading": "A fénytörés jelensége",
+       "key_term": "fény törés"
+      },
+      {
+       "body": "A gyűjtőlencse (konvex lencse) a fényt összegyűjti, és a fókuszpontjában egy éles képet alkot. Ha például egy gyűjtőlencsét használunk egy nagyítóban, a lencse fókuszpontjánál a fény egyesül, így a nézett tárgy nagyobb és élesebb lesz. A gyűjtőlencse használata során fontos a fókusztávolság, ami megmutatja, hogy a lencse milyen távolságra képes éles képet alkotni. Ezt a jelenséget a mindennapi életben is tapasztalhatjuk, például amikor a napfény egy gyűjtőlencsével egy papírlapra fókuszálva tüzet okoz.",
+       "type": "text",
+       "heading": "Gyűjtőlencse működése",
+       "key_term": "gyűjtőlencse"
+      },
+      {
+       "body": "A szórólencse (konkáv lencse) a fényt szétszórja, ami azt jelenti, hogy a fókuszpontja virtuális, és a képet a lencse mögött hozza létre. Ezt a lencsetípust használják például a szemüvegekben, amelyek a távolra látás nehézségeit segítik. A szórólencse által alkotott kép kisebb és egyenes, amit a tükörben is megfigyelhetünk, amikor a tükörképünk nem egyezik meg a valósággal. A szórólencsék gyakran használatosak a projektorokban is, hogy a képet nagyobb méretben vetítsék ki.",
+       "type": "text",
+       "heading": "Szórólencse működése",
+       "key_term": "szórólencse"
+      },
+      {
+       "body": "A fókusztávolság az a távolság, amely a lencse középpontjától a fókuszpontig terjed. Ez a távolság határozza meg, hogy a lencse milyen távolságra képes éles képet alkotni. Például egy nagyító esetében, ha a fókusztávolság kicsi, akkor a nagyító közelről is éles képet tud adni. A fókuszpont a lencse azon pontja, ahol a beérkező párhuzamos fények összegyűlnek. Ezt a jelenséget a fényképezőgépek és a projektorok tervezésénél is figyelembe kell venni.",
+       "type": "text",
+       "heading": "Fókusztávolság és fókuszpont",
+       "key_term": "fókusztávolság, fókuszpont"
+      },
+      {
+       "body": "A nagyító működése a gyűjtőlencse tulajdonságain alapul. Amikor egy tárgyat a gyűjtőlencse közelében helyezünk el, a lencse mögött létrejön egy nagyított, éles kép. Ezt a hatást a diákok a tanórákon kísérletezhetik, például egy könyv lapjait megnézve a nagyítóval. A nagyító használata során fontos, hogy a lencse és a tárgy között a megfelelő távolságot tartsuk, hogy a kép éles legyen. A nagyítók mindennapi használata segít megérteni a fénytörés és a lencsék működését.",
+       "type": "text",
+       "heading": "Nagyító képalkotása",
+       "key_term": "nagyító"
+      },
+      {
+       "body": "A camera obscura (sötét kamra) egy egyszerű optikai eszköz, amely lehetővé teszi, hogy a külvilág képe a belsejébe vetüljön. Ezt könnyen elkészíthetjük egy dobozból, amelynek egyik oldalán egy kis lyukat fúrunk. A fény a lyukon keresztül behatol a dobozba, és a belső falon fordított képet alkot. Ez a kísérlet remek lehetőséget ad arra, hogy a diákok megértsék a fénytörés és a képalkotás alapelveit. A camera obscura működése a modern fényképezőgépek alapjait is megágyazta.",
+       "type": "text",
+       "heading": "Camera obscura készítése",
+       "key_term": "camera obscura"
+      },
+      {
+       "body": "A fénytörés (refrakció) jelenségét egyszerűen megfigyelhetjük egy pohár víz és egy szívószál segítségével. Ha a szívószálat ferdén helyezzük a vízbe, láthatjuk, hogy a víz felszínénél megtörik, és úgy tűnik, mintha elhajlana. Ez azért van, mert a fény sebessége megváltozik, amikor a levegőből a vízbe lép, és ez a sebességváltozás okozza a fénytörést. A jelenség pontos megértéséhez fontos tudni, hogy a fény különböző anyagokban különböző sebességgel terjed. A fénytörés jelensége az alapja számos optikai eszköz működésének, mint például a szemüvegek és a nagyítók.",
+       "type": "text",
+       "heading": "A fénytörés jelenségének megfigyelése",
+       "key_term": "fénytörés (refrakció)"
+      },
+      {
+       "body": "A gyűjtőlencsék, más néven konvex lencsék, fontos szerepet játszanak a fénytörés jelenségében. Ezek a lencsék a rájuk eső párhuzamos fénysugarakat egy pontba, az úgynevezett fókuszpontba gyűjtik. Egy egyszerű kísérlet során egy gyűjtőlencsét és egy fehér ernyőt használva megfigyelhetjük, hogyan alakul ki a lencse mögött egy éles kép. A kísérlet során változtathatjuk a tárgy és a lencse közötti távolságot, hogy megfigyeljük a kép méretének és élességének változását. Ez a jelenség alapvető fontosságú a nagyító működésének megértéséhez, hiszen a nagyító is egy gyűjtőlencse, amely közelről nézve nagyítja fel a tárgyakat.",
+       "type": "text",
+       "heading": "A gyűjtőlencse optikai tulajdonságainak kísérleti vizsgálata",
+       "key_term": "gyűjtőlencse"
+      }
+     ]
+    },
+    {
+     "block_id": "3382d33a-3db1-42d1-bd93-850f28dc55d8",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal éppen a szobájában ül, és felkapcsolja a lámpát. A villanykörte belsejében lévő izzó fénye hirtelen megjelenik, és a világítás beborítja a szobát. A fény, amely a lámpából árad, egyenesen halad a levegőn keresztül.",
+       "type": "story",
+       "heading": "A fényforrás bekapcsolása"
+      },
+      {
+       "body": "A szobában található gyűjtőlencse (konvex lencse) irányába terjed a fény. Amikor a fény áthalad a lencsén, a lencse görbülete miatt a fénysugarak megtörnek, azaz fénytörés lép fel. A lencse középpontja felé közelítve a fénysugarak egyesülnek, és a fókuszpont (fókusz) körül egy éles kép keletkezik.",
+       "type": "story",
+       "heading": "Fény útja a gyűjtőlencséhez"
+      },
+      {
+       "body": "A fiatal kíváncsian figyeli, ahogy a gyűjtőlencse fókuszpontjában a fény egyesül. Itt a lencse fókusztávolsága (fókusz távolság) határozza meg, hogy a lencse milyen messze van a fókuszponttól. Ez a távolság kulcsszerepet játszik a képalkotásban, hiszen a fókuszpontban éles képet lát.",
+       "type": "story",
+       "heading": "A fókuszpont felfedezése"
+      },
+      {
+       "body": "A fiatal most egy nagyítót (másik gyűjtőlencse) használ, hogy megnézze a könyvében található apró betűket. A nagyító lencséje szintén gyűjtőlencse, amely a szöveg fölé tartva a fókuszpontjánál éles képet alkot. A fény, amely a betűkből érkezik, a nagyító lencséjén keresztül megtörik, és így a betűk nagyobbnak tűnnek.",
+       "type": "story",
+       "heading": "Képalkotás a gyűjtőlencsével"
+      },
+      {
+       "body": "A fiatal most már tudja, hogy a fénytörés jelensége nem csupán a nagyítónál, hanem bármely lencsével előfordulhat. Ez a jelenség lehetővé teszi, hogy különféle optikai eszközöket, például távcsöveket és mikroszkópokat használjunk a világ felfedezésére. A fény irányának megváltozása pedig a mindennapi életünk szerves része.",
+       "type": "story",
+       "heading": "A fénytörés megértése"
+      }
+     ]
+    },
+    {
+     "block_id": "d03c3446-1600-48b6-b02f-4812998a3180",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Fénytörés a levegő és a víz határvonalán",
+       "heading": "Fénytörés jelensége",
+       "description": "A diagram bemutatja, hogyan törik meg a fény, amikor különböző sűrűségű közegből (például levegőből vízbe) lép. Az érkező és a törött fénysugár, valamint a normálvonal is látható.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Gyűjtőlencse keresztmetszete",
+       "heading": "Gyűjtőlencse",
+       "description": "A keresztmetszet ábrázolja a gyűjtőlencsét, amely domború formájú. A fókuszpont és a fókusztávolság is meg van jelölve.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Fókuszpont és fókusztávolság a gyűjtőlencsénél",
+       "heading": "Fókuszpont és fókusztávolság",
+       "description": "A diagram bemutatja a gyűjtőlencse fókuszpontját (F) és a fókusztávolságot (f), amely a lencse középpontjától a fókuszpontig terjed.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Szórólencse keresztmetszete",
+       "heading": "Szórólencse",
+       "description": "A keresztmetszet ábrázolja a szórólencsét, amely homorú formájú. A fókuszpont a lencse mögött található.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Képalkotás gyűjtőlencsével",
+       "heading": "Képalkotás gyűjtőlencsével",
+       "description": "A diagram bemutatja, hogyan keletkezik a kép egy gyűjtőlencse segítségével, amikor egy tárgy a fókusztávolságon kívül helyezkedik el.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Nagyító működése",
+       "heading": "Nagyító képalkotás",
+       "description": "A diagram illusztrálja, hogyan működik a nagyító, amely egy gyűjtőlencsét használ a közeli tárgyak nagyítására.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Camera obscura elve",
+       "heading": "Camera obscura",
+       "description": "A rajz bemutatja a camera obscura (sötétkamra) elvét, ahol a fény áthalad egy kis nyíláson, és megfordítva vetíti a külső világot a belső falra.",
+       "visual_type": "rajz"
+      }
+     ]
+    },
+    {
+     "block_id": "79cdc1e1-3a7f-43a9-b559-eb0a1421cd9f",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A fénytörést a mindennapi életben használjuk, például szemüvegek és fényképezőgép-lencsék esetében, amelyek segítenek a világosabb és élesebb képalkotásban.",
+       "sketch": {
+        "shapes": [
+         {
+          "x1": 50,
+          "x2": 200,
+          "y1": 150,
+          "y2": 150,
+          "type": "line",
+          "dashed": false
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 150,
+          "y2": 100,
+          "type": "line",
+          "dashed": false
+         },
+         {
+          "x1": 200,
+          "x2": 350,
+          "y1": 100,
+          "y2": 150,
+          "type": "line",
+          "dashed": false
+         },
+         {
+          "x": 25,
+          "y": 145,
+          "text": "Fény",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Fénytörés a mindennapokban",
+       "discovery": "A fénytörés törvényét a 17. században Willebrord Snellius (Snell) fogalmazta meg, amikor a fény irányának megváltozását tanulmányozta, miközben az különböző anyagokon haladt át. Ezzel a felfedezéssel lehetővé vált a lencsék és optikai eszközök fejlesztése, amelyek a fény irányítására és képalkotására szolgálnak.",
+       "try_basic": "Készíts egy egyszerű kísérletet egy pohár víz és egy ceruza segítségével: helyezd a ceruzát a vízbe, és figyeld meg, hogy a ceruza látszólag megtörik a víz felszínén.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "1a159b2e-ce6f-4553-819c-bed6fbde7be2",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A fény irányának megváltozása, amikor különböző sűrűségű közegbe lép.",
+        "B) A fény sebességének csökkenése a sötétben.",
+        "C) A fény szóródása a vízcseppeken.",
+        "D) A fény visszaverődése a tükörből."
+       ],
+       "question": "Mi a fénytörés?",
+       "explanation": "A fénytörés a fény irányának megváltozását jelenti, amikor az egyik anyagból (pl. levegő) egy másik anyagba (pl. víz) lép.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A párhuzamos fénysugarakat a fókuszpontba gyűjti.",
+        "B) A párhuzamos fénysugarakat szétszórja.",
+        "C) Csak a szórólencséknél használják.",
+        "D) A fényt nem képes befolyásolni."
+       ],
+       "question": "Mi jellemzi a gyűjtőlencsét?",
+       "explanation": "A gyűjtőlencse a párhuzamosan érkező fénysugarakat a fókuszpontba gyűjti, így képes éles képet létrehozni.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A fókuszpont és a lencse közötti távolság.",
+        "B) A lencse vastagsága.",
+        "C) A lencse átmérője.",
+        "D) A fénysebesség mértéke."
+       ],
+       "question": "Mi a fókusztávolság?",
+       "explanation": "A fókusztávolság a fókuszpont és a lencse közötti távolság, amely meghatározza a lencse optikai teljesítményét.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Olyan lencse, amely a párhuzamos fénysugarakat szétszórja.",
+        "B) Olyan lencse, amely a fénysugarakat a fókuszpontba gyűjti.",
+        "C) Olyan lencse, amely nem befolyásolja a fényt.",
+        "D) Olyan lencse, amely csak színes fényt képes áteresztani."
+       ],
+       "question": "Milyen típusú lencse a szórólencse?",
+       "explanation": "A szórólencse a párhuzamosan érkező fénysugarakat szétszórja, így a fénysugarak a fókuszpont mögött találkoznak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) Valós, fordított és nagyított kép.",
+        "B) Valós, egyenes és kicsinyített kép.",
+        "C) Kép nem keletkezik.",
+        "D) Virtuális, egyenes és nagyított kép."
+       ],
+       "question": "Milyen kép keletkezik egy gyűjtőlencsénél, ha az objektum a fókuszpontnál közelebb van?",
+       "explanation": "Ha az objektum a fókuszpontnál közelebb van egy gyűjtőlencséhez, akkor virtuális, egyenes és nagyított kép keletkezik.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "bfb509b6-e764-4a44-b5dc-9bff3db181bd",
+   "title_hu": "Látás és optikai eszközök",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "81860269-75fd-4874-b970-d3f1d6c7260b",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A látás folyamata a fény szemünkbe jutásával kezdődik. Amikor a fény áthalad a szaruhártyán, a pupillán és a lencsén, akkor a retinán (ideghártya) képet alkot. A retina érzékelő sejtjei, a pálcikák és csapok, elektromos jeleket küldenek az agyunkba, ahol a képet észleljük. Ez a folyamat lehetővé teszi, hogy a világot színekben és formákban lássuk, például amikor a barátainkkal együtt nézzük a legújabb filmet a moziban.",
+       "type": "text",
+       "heading": "A látás folyamata",
+       "key_term": "látás"
+      },
+      {
+       "body": "A rövidlátás (myopia) akkor fordul elő, amikor a szemgolyó túl hosszú, így a távoli tárgyak elmosódottan látszanak. Ezt gyakran tapasztalják a fiatalok, akik például a táblát nehezen látják az iskolában. A távollátás (hyperopia) esetén a szemgolyó túl rövid, így a közeli tárgyak, például a telefonunk képernyője, homályosak. Mindkét állapotot szemüveggel, kontaktlencsével vagy lézeres beavatkozással lehet korrigálni.",
+       "type": "text",
+       "heading": "Rövidlátás és távollátás",
+       "key_term": "rövidlátás, távollátás"
+      },
+      {
+       "body": "A szem egészségének megőrzéséhez fontos a megfelelő világítás, például amikor olvasunk vagy tanulunk. A kék fény, amit a számítógép vagy mobiltelefon képernyője bocsát ki, károsíthatja a szemet, ezért érdemes szüneteket tartani. Emellett a rendszeres szemvizsgálatok segíthetnek a problémák korai felismerésében, így például a szüleink is figyelnek arra, hogy ne terheljük túl a szemünket játék közben.",
+       "type": "text",
+       "heading": "Szem egészségvédelme",
+       "key_term": "szem egészség"
+      },
+      {
+       "body": "A nagyító egy egyszerű optikai eszköz, amely segít a kis részletek megfigyelésében, például amikor a természetben gyűjtünk növényeket. A mikroszkóp lehetővé teszi, hogy még apróbb részleteket is lássunk, mint például a sejteket, amikor biológiai kísérleteket végzünk az iskolában. Mindkét eszköz használata fejleszti a megfigyelőképességünket és a tudomány iránti érdeklődésünket.",
+       "type": "text",
+       "heading": "Nagyító és mikroszkóp használata",
+       "key_term": "nagyító, mikroszkóp"
+      },
+      {
+       "body": "A távcső és a látcső olyan optikai eszközök, amelyek lehetővé teszik a távoli tárgyak megfigyelését, például amikor csillagokat nézünk az éjszakai égbolton. A távcső lencse- és tükörrendszere segít a fény összegyűjtésében, míg a látcső, amely általában egyszerűbb, a távolságok megértésére szolgál. Ezek az eszközök nagyszerűek a természetjárás során, amikor fákat vagy állatokat megfigyelésére használjuk őket.",
+       "type": "text",
+       "heading": "Távcső és látcső",
+       "key_term": "távcső, látcső"
+      },
+      {
+       "body": "A mikroszkóp és a távcső is több fontos részből áll, mint például a lencsék, a szemlencse és a fókuszáló mechanizmus. A mikroszkóp esetében a tárgyasztal és a fényforrás is kulcsszerepet játszik a megfigyelés során. A távcsőnél a kereső és a zoom funkciók segítenek a távoli objektumok pontos megfigyelésében. E részek megértése fontos ahhoz, hogy hatékonyan tudjuk használni ezeket az eszközöket.",
+       "type": "text",
+       "heading": "Optikai eszközök részei",
+       "key_term": "optikai eszközök részei"
+      },
+      {
+       "body": "A látás folyamata a fény szemünkbe jutásával kezdődik, ahol a szaruhártya és a szemlencse együttesen fókuszálja a fényt a retinára. A rövidlátás akkor alakul ki, ha a szemgolyó túl hosszú, így a fókuszpont a retina előtt van. Ezt konkáv lencséjű szemüveggel vagy kontaktlencsével lehet korrigálni. A távollátás esetén a szemgolyó túl rövid, így a fókuszpont a retina mögé kerül, amit konvex lencsével lehet javítani. A lézeres beavatkozás a szaruhártya alakját módosítja, hogy a fény pontosan a retinára fókuszáljon. A szem egészségvédelme érdekében fontos a megfelelő világítás és a rendszeres szemvizsgálat.",
+       "type": "text",
+       "heading": "A látás folyamata és a jellegzetes lencsehibák",
+       "key_term": "látás folyamata"
+      },
+      {
+       "body": "A nagyító és a távcső olyan optikai eszközök, amelyek segítenek a szemünk számára nehezen látható részletek megfigyelésében. A nagyító egy egyszerű, domború lencse, amely felnagyítja a közeli tárgyakat, így részletesebben vizsgálhatjuk például a növények leveleit vagy apró rovarokat. A távcső ezzel szemben távoli objektumok, például csillagok vagy madarak megfigyelésére szolgál. A távcsőben több lencse és tükör is található, amelyek a fényt összegyűjtik és felnagyítják a távoli képet. Ezek az eszközök nemcsak a tudományos kutatásokban, hanem a mindennapi életben is hasznosak, például természetjárás vagy csillagászat során.",
+       "type": "text",
+       "heading": "Megfigyelések nagyítóval és távcsővel",
+       "key_term": "optikai eszközök"
+      },
+      {
+       "body": "A távcsövek és mikroszkópok olyan optikai eszközök, amelyek lencsék segítségével nagyítják fel a távoli vagy apró tárgyakat. A távcsőben a fény először egy objektív lencsén halad át, amely összegyűjti a fényt és egy köztes képet hoz létre. Ezt a képet egy okulár lencse nagyítja fel, így a szemünk számára könnyebben megfigyelhető. A mikroszkóp hasonló elven működik, de a célja az apró részletek felnagyítása. A mikroszkóp objektív lencséje közel helyezkedik el a vizsgált tárgyhoz, és a nagyított képet az okulár lencse tovább nagyítja. Ezek az eszközök a fénytörés és a lencsék tulajdonságait használják ki, hogy a szemünk számára láthatóvá tegyék a részleteket.",
+       "type": "text",
+       "heading": "A távcső és mikroszkóp működése",
+       "key_term": "optikai eszközök"
+      }
+     ]
+    },
+    {
+     "block_id": "6b1a290c-229b-4061-a0da-dd3f5e063998",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal tizenéves éppen a szobájában ül, és a telefonján böngészik. Amikor a képernyőn megjelenik egy szép kép, a fény (fényhullámok) elindul a telefon kijelzőjéből, és bejut a szemeibe. A fény a szaruhártyán (a szem elülső átlátszó része) halad át, majd a pupillán (a szem közepén lévő nyíláson) keresztül a lencséhez (a szem belső lencséje) érkezik.",
+       "type": "story",
+       "heading": "A fény útja"
+      },
+      {
+       "body": "A lencse feladata, hogy a beérkező fényt a retinára (a szem hátsó részén található fényérzékeny réteg) fókuszálja. Ha a lencse megfelelően működik, a kép éles lesz. Azonban ha a lencse nem tudja megfelelően fókuszálni a fényt, akkor rövidlátás (myopia) vagy távollátás (hyperopia) léphet fel. A rövidlátás esetén a képek a retina előtt keletkeznek, míg a távollátásnál a retina mögött.",
+       "type": "story",
+       "heading": "A lencse működése"
+      },
+      {
+       "body": "A fiatal észreveszi, hogy a képek elmosódottak. Elhatározza, hogy szemüveget (optikai lencséket) készíttet, ami segít a fény megfelelő fókuszálásában. A szemüveg lencséi úgy vannak kialakítva, hogy a fényt a retinára pontosan fókuszálják, így a kép éles lesz. Alternatív megoldásként a kontaktlencsék is szóba jöhetnek, vagy akár lézeres beavatkozás is, amely véglegesen korrigálja a látását.",
+       "type": "story",
+       "heading": "A korrekció lehetőségei"
+      },
+      {
+       "body": "Miközben a tizenéves a szemüvegét viseli, tudatosan figyel a szem egészségére is. Rendszeresen pihenőt tart a képernyő előtt töltött idő után, és megfelelő világítás mellett olvas. Ezen kívül, ha szükséges, kéri a szemorvos tanácsát, hogy biztosítsa a látása védelmét.",
+       "type": "story",
+       "heading": "A szem védelme"
+      },
+      {
+       "body": "Egy nap a tizenéves elővesz egy mikroszkópot, hogy megvizsgáljon egy vízcseppet. A mikroszkóp lencséi hasonlóan működnek, mint a szem lencséje, de sokkal nagyobb nagyítást biztosítanak. A vízcseppben lévő apró élőlények részleteit figyeli meg, ami lehetőséget ad arra, hogy a kicsi világot felfedezze. Ez a megfigyelés nemcsak izgalmas, hanem tanulságos is, hiszen megérti a fény és a lencsék működését.",
+       "type": "story",
+       "heading": "Megfigyelések optikai eszközökkel"
+      }
+     ]
+    },
+    {
+     "block_id": "d95386f7-d850-4c13-9fc5-8b845fce0bf5",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A fény a szemlencsén (lencse) keresztül jut a retinára, ahol a fényérzékelő sejtek képpé alakítják.",
+       "heading": "A látás folyamata",
+       "description": "Egy ábra, amely bemutatja, hogyan jut el a fény a szemhez, és hogyan alakul át képpé a retinában.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A rövidlátó szem esetében a fény a retina előtt fókuszálódik, ami homályos látást eredményez a távoli tárgyaknál.",
+       "heading": "Rövidlátás",
+       "description": "Egy vázlat, amely bemutatja a rövidlátás jellegzetes optikai hibáját, ahol a kép a retina előtt keletkezik.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A távollátó szem esetében a fény a retina mögött fókuszálódik, ami homályos látást eredményez a közeli tárgyaknál.",
+       "heading": "Távollátás",
+       "description": "Egy vázlat, amely bemutatja a távollátás jellegzetes optikai hibáját, ahol a kép a retina mögött keletkezik.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A szemüvegek és kontaktlencsék segítségével a fényt a megfelelő helyre irányítják a retinán.",
+       "heading": "Szemüveg és kontaktlencse korrekció",
+       "description": "Egy grafikon, amely bemutatja, hogyan javítják a rövidlátás és távollátás esetén a szemüvegek és kontaktlencsék.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A lézeres beavatkozás során a szaruhártya alakját módosítják, hogy a fény a retinára pontosan fókuszáljon.",
+       "heading": "Lézeres szemműtét",
+       "description": "Egy diagram, amely bemutatja a lézeres szemműtét folyamatát és célját.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A nagyító lencséje felnagyítja a közeli tárgyakat, mivel a fényt a retina felé irányítja.",
+       "heading": "Nagyító működése",
+       "description": "Egy keresztmetszet, amely bemutatja, hogyan működik a nagyító lencséje.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A mikroszkóp lencséje és fényforrása lehetővé teszi a mikroszkopikus tárgyak részletes megfigyelését.",
+       "heading": "Mikroszkóp felépítése",
+       "description": "Egy diagram a mikroszkóp főbb részeiről és működéséről.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A távcső lencséi összegyűjtik a fényt, így távoli objektumok részletes megfigyelését teszik lehetővé.",
+       "heading": "Távcső működése",
+       "description": "Egy diagram, amely bemutatja a távcső felépítését és működését.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "e7fb7bbd-18e5-4c74-9528-b8a1a720b411",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A mikroszkópokat széles körben használják a tudományos kutatásban, az orvosi diagnosztikában és az iparban, például a sejtelemzéshez és anyagok vizsgálatához.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 80,
+          "w": 100,
+          "x": 50,
+          "y": 200,
+          "type": "box"
+         },
+         {
+          "x": 70,
+          "y": 250,
+          "text": "Mikroszkóp",
+          "type": "label"
+         },
+         {
+          "r": 30,
+          "x": 150,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 145,
+          "y": 145,
+          "text": "Lencse",
+          "type": "label"
+         },
+         {
+          "x1": 150,
+          "x2": 150,
+          "y1": 120,
+          "y2": 200,
+          "type": "line"
+         },
+         {
+          "x": 160,
+          "y": 160,
+          "text": "Fény",
+          "type": "label"
+         },
+         {
+          "x": 200,
+          "y": 150,
+          "type": "dot"
+         },
+         {
+          "x": 205,
+          "y": 155,
+          "text": "Mintázat",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A mikroszkóp működése",
+       "discovery": "A mikroszkóp korai formáit a 16. század végén fejlesztették ki, és Anton van Leeuwenhoek az egyik első, aki jelentős felfedezéseket tett vele. A 17. században Leeuwenhoek először használta a lencséket a mikroszkopikus világ megfigyelésére. Célja az volt, hogy jobban megértse a mikroszkopikus élőlényeket, mint például a baktériumokat, amelyeket először ő írt le. E felfedezés révén a biológia és az orvostudomány területén új lehetőségek nyíltak meg.",
+       "try_basic": "Készíts egy egyszerű nagyítót egy lencséből és egy fényforrásból, majd figyelj meg különböző tárgyakat (pl. levelek, hajszálak) a nagyító segítségével.",
+       "try_advanced": "Készíts egy egyszerű mikroszkópot otthon, használva egy lencsét és egy fényforrást, majd végezz megfigyeléseket különböző mintákon, például vízcseppeken."
+      }
+     ]
+    },
+    {
+     "block_id": "86b03ed0-ced6-42f6-8111-756a2cd2dae9",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A fény visszaverődése és a szemlencse fókuszálása.",
+        "B) A színek keveredése és a fény abszorpciója.",
+        "C) A hanghullámok érzékelése és feldolgozása.",
+        "D) Az elektromágneses hullámok terjedése a levegőben."
+       ],
+       "question": "Mi a látás folyamatának alapja?",
+       "explanation": "A látás folyamata a fény visszaverődésén és a szemlencse fókuszálásán alapul, amely lehetővé teszi, hogy a szembe jutó fény képet alkosson.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A távoli tárgyak homályosak, a közeli tárgyak élesek.",
+        "B) A közeli tárgyak homályosak, a távoli tárgyak élesek.",
+        "C) A szemlencse alakja nem változik.",
+        "D) A fény nem jut el a retinához."
+       ],
+       "question": "Mi a rövidlátás (myopia) jellemzője?",
+       "explanation": "A rövidlátás esetén a távoli tárgyak homályosak, mivel a szem fénytörő képessége miatt a kép a retina előtt keletkezik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Konvex lencsével.",
+        "B) Különböző színű szemüvegekkel.",
+        "C) Konkáv lencsével.",
+        "D) Lézeres beavatkozással."
+       ],
+       "question": "Hogyan lehet korrigálni a rövidlátást?",
+       "explanation": "A rövidlátás korrigálására konkáv lencséket használnak, amelyek segítenek a fény megfelelő fókuszálásában a retinán.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Távcső.",
+        "B) Nagyító.",
+        "C) Mikroszkóp.",
+        "D) Látcső."
+       ],
+       "question": "Melyik eszköz használható mikroszkopikus megfigyelésekhez?",
+       "explanation": "A mikroszkóp olyan optikai eszköz, amely lehetővé teszi a mikroszkopikus méretű tárgyak részletes megfigyelését.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Konkáv lencsék.",
+        "B) Konvex lencsék.",
+        "C) Aszférikus lencsék.",
+        "D) Prizma lencsék."
+       ],
+       "question": "Melyik lencsetípust használják távcsövekben?",
+       "explanation": "A távcsövekben konvex lencséket használnak, amelyek segítenek a távoli objektumok megfigyelésében és a fény fókuszálásában.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "e695e297-9ef3-40de-8409-347a830162cf",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A fény mindig görbült pályán halad.",
+      "B) A fény terjedése csak vákuumban lehetséges.",
+      "C) A fény egyenesen halad, amíg valami meg nem zavarja.",
+      "D) A fény nem terjed el az átlátszó anyagokon."
+     ],
+     "question": "Mi jellemzi a fény egyenes vonalú terjedését?",
+     "explanation": "A fény egyenes vonalú terjedése azt jelenti, hogy ha nem ütközik akadályba, egyenesen halad.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A fény szóródik a tükör felületén.",
+      "B) A fény szabályos visszaverődésével.",
+      "C) A fény törik a tükörben.",
+      "D) A tükör elnyeli a fényt."
+     ],
+     "question": "Hogyan alakul ki a tükörkép egy síktükörben?",
+     "explanation": "A síktükörben a fény visszaverődik, és a szabályos visszaverődés révén alakul ki a tükörkép.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Izzólámpa",
+      "B) LED-lámpa",
+      "C) Halogén lámpa",
+      "D) Fluoreszcens lámpa"
+     ],
+     "question": "Melyik fényforrás jellemzője a legnagyobb energiahatékonyság?",
+     "explanation": "A LED-lámpák a legenergiahatékonyabb fényforrások, mivel kevesebb energiát használnak fel a fény előállításához.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A fény visszaverődik.",
+      "B) A fény sebessége megváltozik, amikor különböző anyagok között halad.",
+      "C) A fény szóródik.",
+      "D) A fény hőmérséklete változik."
+     ],
+     "question": "Melyik jelenség magyarázza a fénytörést?",
+     "explanation": "A fénytörés akkor következik be, amikor a fény sebessége megváltozik, miközben különböző anyagok határfelületén halad át.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Szórja a fényt.",
+      "B) Összegyűjti a párhuzamos fénysugarakat a fókuszpontban.",
+      "C) Nem változtatja meg a fény irányát.",
+      "D) Csak színes fényt bocsát ki."
+     ],
+     "question": "Milyen optikai tulajdonsága van a gyűjtőlencsének?",
+     "explanation": "A gyűjtőlencse a párhuzamos fénysugarakat a fókuszpontban összegyűjti.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A szemgolyó túl rövid.",
+      "B) A szemgolyó túl hosszú.",
+      "C) A lencsék nem megfelelően görbülnek.",
+      "D) A szaruhártya nem átlátszó."
+     ],
+     "question": "Mi okozza a rövidlátást?",
+     "explanation": "A rövidlátás a szemgolyó túl hosszú volta miatt alakul ki, ami miatt a távoli tárgyak képe a retinán kívül keletkezik.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A fényt visszaveri.",
+      "B) A fényt összegyűjti és nagyítja.",
+      "C) A fényt szórja.",
+      "D) A fényt csak átlátszó anyagokon keresztül engedi át."
+     ],
+     "question": "Hogyan működik a mikroszkóp?",
+     "explanation": "A mikroszkóp a fényt összegyűjti és nagyítja, lehetővé téve a kicsi tárgyak részletes megfigyelését.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A lencse vastagsága.",
+      "B) A lencse átmérője.",
+      "C) A lencse és a fókuszpont közötti távolság.",
+      "D) A lencse színének megváltozása."
+     ],
+     "question": "Mi a fókusztávolság a lencsék esetében?",
+     "explanation": "A fókusztávolság a lencse és a fókuszpont közötti távolság, amely meghatározza a lencse képalkotó képességét.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

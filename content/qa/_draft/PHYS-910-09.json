@@ -1,0 +1,491 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres/hiányos kísérletblokkok: a 3db65863 blokk discovery, try_basic és try_advanced mezője és vázlata üres; a b9013486 blokkban a try_basic és try_advanced üres."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "12c4fe07-1303-436f-bd4f-4b4ed46af52a",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az ampermérő „mennyi áramot használ a lámpa”; „az áramkörünk mennyire hatékony”",
+   "explanation": "Az áram az áramkörben nem fogy el: a mérés azt adja meg, mekkora áram folyik át a lámpán. A hatékonyság nem az áramerősségből olvasható ki.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ammeter",
+     "title": "Ammeter",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az áramerősség mérése fontos, hiszen segít megérteni, hogy az áramkörünk mennyire hatékony.",
+     "Az áramerősség mérése fontos, hiszen megmutatja, mekkora áram folyik az áramkörben."
+    ],
+    [
+     "A mért értékekből láthatjuk, mennyi áramot használ a lámpa.",
+     "A mért értékből láthatjuk, mekkora áram folyik át a lámpán."
+    ]
+   ]
+  },
+  {
+   "block_id": "12c4fe07-1303-436f-bd4f-4b4ed46af52a",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A feszültség „meghatározza, hogy mennyi energiát kap az áramkör”",
+   "explanation": "A feszültség az egységnyi töltésre jutó energia (U = W : Q); az „áramkör energiája” pontatlan.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Voltage",
+     "title": "Voltage",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "amely meghatározza, hogy mennyi energiát kap az áramkör",
+     "amely megmutatja, hogy egységnyi töltés mennyi energiát kap vagy ad le"
+    ]
+   ]
+  },
+  {
+   "block_id": "12c4fe07-1303-436f-bd4f-4b4ed46af52a",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„az áramerősség (I) és a feszültség (U) arányosak az ellenállással (R)”",
+   "explanation": "Ohm törvénye: a vezetőn átfolyó áram erőssége arányos a rákapcsolt feszültséggel, U = I · R; az ellenállás az arányossági tényező, nem arányos az áramerősséggel és feszültséggel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ohm's_law",
+     "title": "Ohm's law",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ohm törvénye kimondja, hogy az áramerősség (I) és a feszültség (U) arányosak az ellenállással (R).",
+     "Ohm törvénye szerint egy fémes vezetőn átfolyó áram erőssége arányos a rákapcsolt feszültséggel: U = I · R, ahol R az ellenállás."
+    ]
+   ]
+  },
+  {
+   "block_id": "12c4fe07-1303-436f-bd4f-4b4ed46af52a",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a természetes anyagok is képesek elektromosságot termelni”",
+   "explanation": "A gyümölcs vagy zöldség csak elektrolitként működik; az energiát a fém (cink vagy vas) oxidációja adja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lemon_battery",
+     "title": "Lemon battery",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "és hogy a természetes anyagok is képesek elektromosságot termelni",
+     "és hogy a citrom savas leve elektrolitként működik, az energiát pedig a fém oxidációja (a cink vagy a vas oldódása) adja"
+    ]
+   ]
+  },
+  {
+   "block_id": "aea70483-ec68-467c-9e86-4039b46e0ba3",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "unverifiable",
+   "severity": "medium",
+   "claim": "„az okostelefonok töltésénél több áramforrás párhuzamosan működik a gyorsabb töltés érdekében”",
+   "explanation": "A telefon töltésekor egyetlen áramforrás (töltő) dolgozik; az állítás forrás nélküli és téves. A lakás fogyasztói viszont párhuzamosan vannak kötve.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Series_and_parallel_circuits",
+     "title": "Series and parallel circuits",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "például a modern okostelefonok töltésénél is, ahol több áramforrás párhuzamosan működik a gyorsabb töltés érdekében",
+     "például a lakás konnektoraiban, ahol minden fogyasztó ugyanazt a 230 V-os feszültséget kapja"
+    ]
+   ]
+  },
+  {
+   "block_id": "aea70483-ec68-467c-9e86-4039b46e0ba3",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A test ellenállásának mérése „segíti a biztonságos tranzakciót” az érintés nélküli fizetésnél",
+   "explanation": "Az érintés nélküli fizetés nem méri a testünk ellenállását (rádióhullámú kommunikáció a kártya és a terminál között). Az állítás kitalált.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Near-field_communication",
+     "title": "Near-field communication",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ez fontos lehet például az érintés nélküli bankkártyás fizetés során, ahol a testünk ellenállásának mérése segíti a biztonságos tranzakciót.",
+     "Száraz bőr ellenállása több tízezer ohm is lehet, nedves bőré ennek töredéke, ezért veszélyesebb a vizes kézzel végzett érintés."
+    ]
+   ]
+  },
+  {
+   "block_id": "0194c810-1992-44d5-9e6b-31bce9d5ff89",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A mikrohullámú sütő, vízforraló és indukciós főzőlap „az elektromos áramot hővé alakítják”",
+   "explanation": "A vízforralóban az áram a fűtőszálat melegíti; a mikrohullámú sütő mikrohullámmal, az indukciós főzőlap indukált áramokkal fűt, nem egyszerű áramhő.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Microwave_oven",
+     "title": "Microwave oven",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Induction_cooking",
+     "title": "Induction cooking",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ezek az eszközök az elektromos áramot hővé alakítják, hogy az ételeinket gyorsan és hatékonyan elkészíthessük.",
+     "Ezek az eszközök az elektromos energiát alakítják hővé: a vízforralóban a fűtőszál melegszik, a mikrohullámú sütő mikrohullámokkal melegíti az ételt, az indukciós főzőlap pedig az edényben indukált áramokkal."
+    ]
+   ]
+  },
+  {
+   "block_id": "0194c810-1992-44d5-9e6b-31bce9d5ff89",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "A kWh „azt mutatja meg, mennyi áramot használtunk el”",
+   "explanation": "A kWh energiát mér, nem áramot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kilowatt-hour",
+     "title": "Kilowatt-hour",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "amely azt mutatja meg, mennyi áramot használtunk el",
+     "amely azt mutatja meg, mennyi energiát használtunk fel"
+    ]
+   ]
+  },
+  {
+   "block_id": "0194c810-1992-44d5-9e6b-31bce9d5ff89",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A címkén szereplő 5 W alapján a töltési ciklus energiája kiszámolható",
+   "explanation": "A címkén a névleges teljesítmény áll; a tényleges fogyasztás töltés közben változik, ezért fogyasztásmérővel érdemes mérni.",
+   "source_note": "névleges és tényleges teljesítmény",
+   "replace": [
+    [
+     "Így kiszámolhatod, hogy mennyi energiát fogyasztott a töltés során.",
+     "A tényleges fogyasztást pontosabban egy konnektorba dugható fogyasztásmérővel mérheted meg, mert a töltő teljesítménye töltés közben változik."
+    ]
+   ]
+  },
+  {
+   "block_id": "94dca059-7b56-4811-9f3b-eaa1f09aead2",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az EKG és az EEG „az emberi idegvezetést mérik”",
+   "explanation": "Az EKG a szív, az EEG az agy elektromos aktivitását méri; az idegvezetés vizsgálata más eljárás (ENG/EMG).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electrocardiography",
+     "title": "Electrocardiography",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Electroencephalography",
+     "title": "Electroencephalography",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "olyan orvosi diagnosztikai eszközök, amelyek az emberi idegvezetést mérik",
+     "olyan orvosi diagnosztikai eljárások, amelyek a szívből, illetve az agyból származó gyenge elektromos jeleket mérik"
+    ]
+   ]
+  },
+  {
+   "block_id": "9cf47a23-ede9-4408-b8be-8a7dec243ca5",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mi Ohm törvénye?” – A) I = U/R, C) R = U/I és D) U = I · R (kulcs) is helyes",
+   "explanation": "Az Ohm-törvény három egyenértékű alakja mind helyes, így három válasz igaz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ohm's_law",
+     "title": "Ohm's law",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) I = R : U",
+    "options[2]": "C) R = U · I"
+   }
+  },
+  {
+   "block_id": "3300de1c-c4ba-497a-9113-234ea923b820",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Milyen kapcsolat van az ellenállás és a hőmérséklet között egy termisztor esetében?” – csökken",
+   "explanation": "Az NTC-termisztorra igaz, hogy az ellenállása a hőmérséklet emelkedésével csökken; PTC-termisztorra nem.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Thermistor",
+     "title": "Thermistor",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Milyen kapcsolat van az ellenállás és a hőmérséklet között egy NTC-termisztor esetében?"
+   }
+  },
+  {
+   "block_id": "3300de1c-c4ba-497a-9113-234ea923b820",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik állítás igaz a párhuzamos kapcsolásra?” – A) az áram oszlik meg (kulcs), C) az összes elemen a forrásfeszültség is igaz",
+   "explanation": "Párhuzamos kapcsolásban az áram oszlik meg és a feszültség azonos, így A) és C) egyaránt igaz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Series_and_parallel_circuits",
+     "title": "Series and parallel circuits",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[2]": "C) A feszültség oszlik meg az elemek között."
+   }
+  },
+  {
+   "block_id": "3300de1c-c4ba-497a-9113-234ea923b820",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik tényező NEM befolyásolja az emberi test ellenállását?” – C) a test magassága",
+   "explanation": "A test ellenállását az áram útja (hossza), a bőr állapota és a nedvesség határozza meg; a magasság (az áram útja miatt) nem tekinthető biztosan irrelevánsnak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electrical_injury",
+     "title": "Electrical injury",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[2]": "C) A ruha színe.",
+    "explanation": "A ruha színe nem befolyásolja az emberi test ellenállását, míg a bőr állapota, nedvessége és az áram útja igen."
+   }
+  },
+  {
+   "block_id": "e70642d6-f164-48a7-b0ed-a5d7fc9970c3",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik eszköz fogyasztása a legnagyobb hőhatással jár?” – A) mikrohullámú sütő (D) kávéfőző is lehet",
+   "explanation": "A fogyasztás a modelltől függ (kávéfőző és mikró teljesítménye hasonló); a „hőhatással jár” megfogalmazás nem egyértelmű, a kulcs nem indokolható.",
+   "source_note": "háztartási eszközök teljesítménye",
+   "apply": "none"
+  },
+  {
+   "block_id": "e392e016-9bc1-41ba-95a8-bdf734365386",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A biztosíték „megakadályozza a túláramot”",
+   "explanation": "A biztosíték nem akadályozza meg, hanem megszakítja az áramkört túláram esetén.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fuse_(electrical)",
+     "title": "Fuse (electrical)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) Megszakítja az áramkört túláram esetén, ezzel védve a berendezéseket.",
+    "explanation": "A biztosíték feladata, hogy túláram esetén megszakítsa az áramkört, ezzel védve a villamos berendezéseket és a hálózatot."
+   }
+  },
+  {
+   "block_id": "0132e595-8301-40fd-adc0-bc2c3df80033",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Mi az elektromos áram (elektromos áram) fogalma?”",
+   "explanation": "A zárójelben ismétlődik a kifejezés (a fordítási minta maradványa).",
+   "source_note": "szerkesztési hiba",
+   "set": {
+    "question": "Mi az elektromos áram fogalma?"
+   }
+  },
+  {
+   "block_id": "0132e595-8301-40fd-adc0-bc2c3df80033",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Milyen mértékegységben mérjük az áramerősséget (áramerősség)?”",
+   "explanation": "A zárójelben ismétlődik a kifejezés (a fordítási minta maradványa).",
+   "source_note": "szerkesztési hiba",
+   "set": {
+    "question": "Milyen mértékegységben mérjük az áramerősséget?"
+   }
+  },
+  {
+   "block_id": "0132e595-8301-40fd-adc0-bc2c3df80033",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Milyen hatással van az ellenállás (ellenállás) a hőmérséklet változására?”",
+   "explanation": "A zárójelben ismétlődik a kifejezés (a fordítási minta maradványa).",
+   "source_note": "szerkesztési hiba",
+   "set": {
+    "question": "Milyen hatással van az ellenállás a hőmérséklet változására?"
+   }
+  },
+  {
+   "block_id": "0132e595-8301-40fd-adc0-bc2c3df80033",
+   "card_index": 5,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Melyik a soros kapcsolás (soros kapcsolás) jellemzője?”",
+   "explanation": "A zárójelben ismétlődik a kifejezés (a fordítási minta maradványa).",
+   "source_note": "szerkesztési hiba",
+   "set": {
+    "question": "Melyik a soros kapcsolás jellemzője?"
+   }
+  },
+  {
+   "block_id": "0132e595-8301-40fd-adc0-bc2c3df80033",
+   "card_index": 6,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Milyen szerepet játszik a biztosíték (biztosíték) a lakás villamos hálózatában?”",
+   "explanation": "A zárójelben ismétlődik a kifejezés (a fordítási minta maradványa).",
+   "source_note": "szerkesztési hiba",
+   "set": {
+    "question": "Milyen szerepet játszik a biztosíték a lakás villamos hálózatában?"
+   }
+  },
+  {
+   "block_id": "0132e595-8301-40fd-adc0-bc2c3df80033",
+   "card_index": 7,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Melyik berendezés segít megakadályozni az áramütést (áramütés)?”",
+   "explanation": "A zárójelben ismétlődik a kifejezés (a fordítási minta maradványa).",
+   "source_note": "szerkesztési hiba",
+   "set": {
+    "question": "Melyik berendezés segít megakadályozni az áramütést?"
+   }
+  },
+  {
+   "block_id": "bb84ca69-3442-4ea1-b1de-51fe26d9b550",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Az elektromos áram felfedezése szorosan összefonódik Alessandro Volta nevével”; a citromelem egyetlen citrommal világít LED-et",
+   "explanation": "Volta 1800-ban az első elektromos elemet (Volta-oszlop) készítette el, nem az áramot fedezte fel. Egyetlen citrom kb. 1 V-os, ez egy LED-hez nem elég; több sorba kötött citrom kell.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Alessandro_Volta",
+     "title": "Alessandro Volta",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Voltaic_pile",
+     "title": "Voltaic pile",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az elektromos áram felfedezése szorosan összefonódik Alessandro Volta nevével, aki 1800-ban készítette el az első elektromos elemet, a Volta-oszlopot,",
+     "Alessandro Volta 1800-ban készítette el az első elektromos elemet, a Volta-oszlopot,"
+    ]
+   ],
+   "set": {
+    "try_basic": "Szúrj egy rézérmét és egy cinkezett szöget egy citromba, és mérd meg a feszültségüket multiméterrel (kb. 0,9 V). Egy LED világításához több, sorba kötött citrom kell (kb. 3–4 db)."
+   }
+  },
+  {
+   "block_id": "75823fba-3ddf-4d1b-b420-b4a2cd03832d",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Thomas Edison fejlesztette ki az első praktikus izzólámpát 1879-ben”",
+   "explanation": "Edison 1879-ben gyakorlatilag használható szénszálas izzólámpát mutatott be, de Joseph Swan hasonló lámpát fejlesztett ugyanebben az időben; „az első” túlzás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb",
+     "title": "Incandescent light bulb",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Joseph_Swan",
+     "title": "Joseph Swan",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Thomas Edison fejlesztette ki az első praktikus izzólámpát 1879-ben, amely forradalmasította a világítást.",
+     "Thomas Edison 1879-ben olyan szénszálas izzólámpát mutatott be, amely már sokáig égett és gyakorlatban használható volt (ugyanebben az időben Joseph Swan angol feltaláló is hasonló lámpát fejlesztett). Ez forradalmasította a világítást."
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,185 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "A lecke szövegei, kvízei és kísérletei általánosan igazak, a fenti pontokon kívül nem találtunk hibát."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "48b363fc-5e40-4ae3-8e36-da3630011874",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az elektromos autók „kevesebb szennyező anyagot bocsátanak ki”",
+   "explanation": "Az elektromos autó menet közben nem bocsát ki kipufogógázt; az életciklus-kibocsátás az áram forrásától és a gyártástól függ.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electric_vehicle",
+     "title": "Electric vehicle",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az elektromos autók, amelyek kevesebb szennyező anyagot bocsátanak ki, egyre elterjedtebbek a városokban.",
+     "Az elektromos autók, amelyek menet közben nem bocsátanak ki kipufogógázt, egyre elterjedtebbek a városokban."
+    ]
+   ]
+  },
+  {
+   "block_id": "48b363fc-5e40-4ae3-8e36-da3630011874",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A napállandó „megmutatja, mennyi energiát tudunk a Napból hasznosítani”; a napelemek hatékonysága „szorosan összefügg a napállandó értékével”",
+   "explanation": "A napállandó (kb. 1361 W/m²) a légkör felső határán, a sugarakra merőleges felületre érkező teljesítmény. A talajra jutó sugárzás legfeljebb kb. 1000 W/m². A napelem hatásfoka a technológiától függ, nem a napállandótól.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Solar_constant",
+     "title": "Solar constant",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A napállandó a Napból a Földre érkező sugárzás mennyiségét jelenti, és megmutatja, mennyi energiát tudunk a Napból hasznosítani. A napelemek hatékonysága szorosan összefügg a napállandó értékével, amely körülbelül 1361 W/m².",
+     "A napállandó a légkör felső határán, a napsugarakra merőleges felületre érkező sugárzás teljesítménye, értéke körülbelül 1361 W/m². A talajra ennél kevesebb jut, legfeljebb kb. 1000 W/m²; a napelem termelése ettől és a napelem hatásfokától függ."
+    ]
+   ]
+  },
+  {
+   "block_id": "215da348-93bb-4828-99c1-72da8644893e",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„az áram a közeli erőműből érkezik”",
+   "explanation": "A háztartások az országos villamosenergia-hálózatról kapnak áramot, amelyet több, gyakran távoli erőmű táplál.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electrical_grid",
+     "title": "Electrical grid",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "az áram a közeli erőműből érkezik",
+     "az áram az országos hálózatból érkezik, amelyet több, gyakran távoli erőmű táplál"
+    ]
+   ]
+  },
+  {
+   "block_id": "063857cd-43e8-4bf5-a3f6-5bd5fdb80994",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Tesla és Edison versengése „az autók fejlődéséhez is hozzájárult”",
+   "explanation": "Az „áramháború” (Edison egyenáram, Westinghouse és Tesla váltakozó áram) a villamosenergia-hálózatok kialakítását formálta, nem az autókét.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/War_of_the_currents",
+     "title": "War of the currents",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A 19. század végén Nikola Tesla és Thomas Edison versengése során sokat tanultunk az elektromos áram termeléséről és felhasználásáról, ami az autók fejlődéséhez is hozzájárult.",
+     "A 19. század végén Nikola Tesla és Thomas Edison versengése (az „áramháború”) az elektromos áram termelésének és elosztásának módját formálta, amire később az elektromos közlekedés is épült."
+    ]
+   ]
+  },
+  {
+   "block_id": "b09f39df-f7fd-4af2-b3d9-b9f6faa22817",
+   "card_index": 0,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„az összes többi energiaforrás … a Nap energiájából származik”",
+   "explanation": "A geotermikus, a nukleáris és az árapály-energia nem a Napból ered.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Renewable_energy",
+     "title": "Renewable energy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "A Nap a Föld energiakészletének elsődleges forrása: a szél, a vízenergia és a fosszilis tüzelőanyagok is végső soron a Nap energiájából származnak (kivéve például a geotermikus, az atom- és az árapály-energiát)."
+   }
+  },
+  {
+   "block_id": "52dc1a47-3e55-4044-9ce1-96f16f78dca7",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A helyzeti energia alapja: A) „a test magassága és a gravitációs gyorsulás” (a tömeg is számít)",
+   "explanation": "E_p = m · g · h: a tömeg is szerepel, így C) „A test tömege” is része a helyes válasznak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Potential_energy",
+     "title": "Potential energy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) A test tömege, magassága és a gravitációs gyorsulás.",
+    "options[2]": "C) Csak a test tömege."
+   }
+  },
+  {
+   "block_id": "eb8478d2-4abb-4593-a15c-0c8427aa408c",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A hőerőmű átalakítása: A) hő→mechanikai; B) mechanikai→elektromos is helyes",
+   "explanation": "A hőerőműben mindkét lépés lejátszódik: a hő turbinát forgat, a turbinát generátor elektromos energiává alakítja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Thermal_power_station",
+     "title": "Thermal power station",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[1]": "B) Mechanikai energia hőenergiává alakítása."
+   }
+  },
+  {
+   "block_id": "eb8478d2-4abb-4593-a15c-0c8427aa408c",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Az energiahatékonyság az „elveszett energia aránya”; a magyarázat a hasznos és a veszett energia arányát említi",
+   "explanation": "A hatásfok a hasznos és a befektetett energia hányadosa, nem az elveszett rész aránya.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Energy_conversion_efficiency",
+     "title": "Energy conversion efficiency",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[1]": "B) A hasznos energia és a befektetett energia aránya.",
+    "explanation": "Az energiahatékonyság (hatásfok) a hasznos energia és a befektetett energia aránya, amely megmutatja, mennyire hatékonyan használják fel az energiát."
+   }
+  }
+ ]
+}

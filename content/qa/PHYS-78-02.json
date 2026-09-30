@@ -1,0 +1,315 @@
+{
+ "nat_id": "PHYS-78-02",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 107,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-78-02-001",
+   "lesson_id": "31fc303f-fff7-45fc-babd-a20d57b92b4b",
+   "block_id": "59640b68-8d5d-4a6d-9f71-ba647d6b5392",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az energiaszámlánk ezért gyakran a wattban megadott teljesítmény alapján számolja ki a havi költségeinket.”",
+   "explanation": "A számla az elfogyasztott energiát (kWh) méri, nem a teljesítményt (W). Pont ezt a különbséget tanítja a lecke.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kilowatt-hour",
+     "title": "Kilowatt-hour",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A teljesítmény (P) azt mutatja meg, hogy egy eszköz mennyi energiát használ fel egy adott idő alatt. Gondoljunk csak egy egyszerű példára: ha van egy 60 W-os (wattos) izzónk, az azt jelenti, hogy ez az izzó 60 watt teljesítménnyel működik, és egy óra alatt 0,06 kWh energiát fogyaszt. Tehát, ha este bekapcsoljuk az izzót, a teljesítmény segít nekünk megérteni, hogy mennyi áramot fogyasztunk. Az energiaszámlánk ezért gyakran a wattban megadott teljesítmény alapján számolja ki a havi költségeinket.",
+     "type": "text",
+     "heading": "Mi az a teljesítmény?",
+     "key_term": "teljesítmény"
+    },
+    "after": {
+     "body": "A teljesítmény (P) azt mutatja meg, hogy egy eszköz mennyi energiát használ fel egy adott idő alatt. Gondoljunk csak egy egyszerű példára: ha van egy 60 W-os (wattos) izzónk, az azt jelenti, hogy ez az izzó 60 watt teljesítménnyel működik, és egy óra alatt 0,06 kWh energiát fogyaszt. Tehát, ha este bekapcsoljuk az izzót, a teljesítmény segít nekünk megérteni, hogy mennyi áramot fogyasztunk. Az energiaszámla viszont nem a teljesítményt, hanem az elfogyasztott energiát méri kilowattórában (kWh): ez a teljesítmény és a használati idő szorzata.",
+     "type": "text",
+     "heading": "Mi az a teljesítmény?",
+     "key_term": "teljesítmény"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-02-002",
+   "lesson_id": "31fc303f-fff7-45fc-babd-a20d57b92b4b",
+   "block_id": "59640b68-8d5d-4a6d-9f71-ba647d6b5392",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„egy mosógép akár 2000 W-ot is felhasználhat egy mosás során”",
+   "explanation": "A watt teljesítmény, nem elhasznált energia; egy mosás energiája kWh-ban adható meg.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Mértékegység-hiba (W vs. kWh).",
+   "fix": {
+    "before": {
+     "body": "A háztartásunkban az energiaszükséglet legnagyobb részét általában a hűtőszekrény, a fűtés és a mosógép teszi ki. Például egy modern hűtőszekrény teljesítménye 150-200 W között változhat, míg egy mosógép akár 2000 W-ot is felhasználhat egy mosás során. Ezen eszközök ismerete segít abban, hogy tudatosabban gazdálkodjunk az energiával, és csökkentsük a költségeinket.",
+     "type": "text",
+     "heading": "A legnagyobb energiafogyasztók a lakásban",
+     "key_term": "energiafogyasztás"
+    },
+    "after": {
+     "body": "A háztartásunkban az energiaszükséglet legnagyobb részét általában a hűtőszekrény, a fűtés és a mosógép teszi ki. Például egy modern hűtőszekrény teljesítménye 150-200 W között változhat, míg egy mosógép vízmelegítés közben akár 2000 W teljesítménnyel is működhet. Ezen eszközök ismerete segít abban, hogy tudatosabban gazdálkodjunk az energiával, és csökkentsük a költségeinket.",
+     "type": "text",
+     "heading": "A legnagyobb energiafogyasztók a lakásban",
+     "key_term": "energiafogyasztás"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-02-003",
+   "lesson_id": "31fc303f-fff7-45fc-babd-a20d57b92b4b",
+   "block_id": "4d8452dc-c976-4005-b3b2-8a54501d1635",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mi az energiafogyasztás (E) mértékegysége?” — megjelölt C) kWh, de B) J is helyes",
+   "explanation": "Az energia SI-mértékegysége a joule; a kWh a számlázásban használt egység. Két helyes válasz van.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Joule",
+     "title": "Joule",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) W (watt)",
+      "B) J (joule)",
+      "C) kWh (kilowattóra)",
+      "D) V (volt)"
+     ],
+     "question": "Mi az energiafogyasztás (E) mértékegysége?",
+     "explanation": "Az energiafogyasztás mértékegysége a kilowattóra (kWh), amely az egy óra alatt felhasznált energia mennyiségét jelzi.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) W (watt)",
+      "B) J (joule)",
+      "C) kWh (kilowattóra)",
+      "D) V (volt)"
+     ],
+     "question": "Milyen mértékegységben tünteti fel az áramszámla az elfogyasztott energiát?",
+     "explanation": "Az áramszámla az elfogyasztott energiát kilowattórában (kWh) adja meg; 1 kWh = 3 600 000 J.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-02-004",
+   "lesson_id": "31fc303f-fff7-45fc-babd-a20d57b92b4b",
+   "block_id": "4d8452dc-c976-4005-b3b2-8a54501d1635",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options[0]",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik energiahordozó nem megújuló?” — A) Földgáz és C) Szén is nem megújuló",
+   "explanation": "A földgáz is fosszilis, nem megújuló energiahordozó, így két helyes válasz van.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fossil_fuel",
+     "title": "Fossil fuel",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Földgáz",
+      "B) Fa",
+      "C) Szén",
+      "D) Napenergia"
+     ],
+     "question": "Melyik energiahordozó nem megújuló?",
+     "explanation": "A szén nem megújuló energiahordozó, mivel a föld mélyéről nyerjük ki, és a felhasználása során kimeríti a készleteit.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Szélenergia",
+      "B) Fa",
+      "C) Szén",
+      "D) Napenergia"
+     ],
+     "question": "Melyik energiahordozó nem megújuló?",
+     "explanation": "A szén nem megújuló energiahordozó, mivel a föld mélyéről nyerjük ki, és a felhasználása során kimeríti a készleteit.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-02-005",
+   "lesson_id": "31fc303f-fff7-45fc-babd-a20d57b92b4b",
+   "block_id": "4d8452dc-c976-4005-b3b2-8a54501d1635",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "question, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik eszköz a legnagyobb energiafogyasztó a háztartásban?” — C) Elektromos tűzhely; a témazáró kvíz ugyanerre a vízmelegítőt jelöli",
+   "explanation": "A válasz háztartásonként eltér, és a két kvíz ellentmond egymásnak. A magyarázat a teljesítményt keveri az energiával. Javasolt: a teljesítményre kérdezni.",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Belső ellentmondás a két kvíz között; nincs egyértelmű tényszerű válasz.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Hűtőszekrény",
+      "B) Televízió",
+      "C) Elektromos tűzhely",
+      "D) Izzó"
+     ],
+     "question": "Melyik eszköz a legnagyobb energiafogyasztó a háztartásban?",
+     "explanation": "Az elektromos tűzhely jellemzően a legnagyobb energiafogyasztó a háztartásban, mivel nagy teljesítményű eszköz.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Hűtőszekrény",
+      "B) Televízió",
+      "C) Elektromos tűzhely",
+      "D) Izzó"
+     ],
+     "question": "Melyik eszköznek a legnagyobb a teljesítménye működés közben?",
+     "explanation": "Az elektromos tűzhely működés közben több ezer watt teljesítményt is felvehet; hogy havonta mennyi energiát fogyaszt, az a használati időtől is függ.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-02-006",
+   "lesson_id": null,
+   "block_id": "d3b20c23-21ce-4e5b-92a4-d08927615237",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik háztartási eszköz a legnagyobb energiafogyasztó általában?” — C) vízmelegítő; a lecke kvíze a tűzhelyet jelöli",
+   "explanation": "Ellentmond a lecke kvízének; a legnagyobb fogyasztó háztartásonként eltér. Pontosított kérdés javasolt.",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Belső ellentmondás a két kvíz között.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Hűtőszekrény",
+      "B) Mosógép",
+      "C) Elektromos vízmelegítő",
+      "D) Televízió"
+     ],
+     "question": "Melyik háztartási eszköz a legnagyobb energiafogyasztó általában?",
+     "explanation": "Az elektromos vízmelegítők általában a legnagyobb energiafogyasztók közé tartoznak a háztartásban.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Hűtőszekrény",
+      "B) Mosógép",
+      "C) Elektromos vízmelegítő",
+      "D) Televízió"
+     ],
+     "question": "Az alábbiak közül melyik fogyaszthat a legtöbb energiát egy olyan háztartásban, ahol villanybojler készíti a meleg vizet?",
+     "explanation": "Az elektromos vízmelegítők általában a legnagyobb energiafogyasztók közé tartoznak a háztartásban.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-02-007",
+   "lesson_id": "41bf09a9-8c8f-47f3-905a-23bcc1379bae",
+   "block_id": "7fdc02be-a616-4825-bec5-ead2837d3d8a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "heading, body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Energiabiztonság” a táplálkozás kapcsán",
+   "explanation": "Az élelmiszerellátás biztonságának magyar szakszava az élelmezésbiztonság; az energiabiztonság az energiaellátásra vonatkozik.",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Szakszóhasználat.",
+   "fix": {
+    "before": {
+     "body": "Az energiabiztonság fogalma a táplálkozásban is megjelenik. Ez azt jelenti, hogy a megfelelő mennyiségű és minőségű táplálék mindig elérhető legyen. A mai világban, amikor sokan élnek gyorséttermi étkezésből, fontos, hogy figyeljünk az ételek energiatartalmára. Ha például egy gyorsétteremben választunk, érdemes megnézni az ételek kalóriaértékét, hogy tudatosan válasszunk, és ne csak ízlés alapján döntsünk.",
+     "type": "text",
+     "heading": "Energiabiztonság a mindennapokban",
+     "key_term": "energiabiztonság"
+    },
+    "after": {
+     "body": "Az energiabiztonsághoz hasonló fogalom a táplálkozásban az élelmezésbiztonság. Ez azt jelenti, hogy a megfelelő mennyiségű és minőségű táplálék mindig elérhető legyen. A mai világban, amikor sokan élnek gyorséttermi étkezésből, fontos, hogy figyeljünk az ételek energiatartalmára. Ha például egy gyorsétteremben választunk, érdemes megnézni az ételek kalóriaértékét, hogy tudatosan válasszunk, és ne csak ízlés alapján döntsünk.",
+     "type": "text",
+     "heading": "Energiabiztonság a mindennapokban",
+     "key_term": "energiabiztonság"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "PHYS-78-02-001": "23977a50-59f3-4e21-ab4f-5e9fca1174f4",
+  "PHYS-78-02-002": "5df39607-78a1-435d-8219-3df915fa8fc8",
+  "PHYS-78-02-003": "413e978a-3820-45dd-8ebf-d855fdd11eb9",
+  "PHYS-78-02-004": "a3adc97a-8ba9-4f8e-b4da-acbccd8944d3"
+ }
+}

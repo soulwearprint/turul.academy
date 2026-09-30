@@ -1,0 +1,247 @@
+{
+ "nat_id": "PHYS-910-13",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "23274652-fb08-4a6b-93c8-f6847c870204",
+   "title_hu": "A fény természete és jellemzése",
+   "text_block_id": "c0557182-0e11-43a7-9cf0-73ebdc55d105",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mennyi idő alatt ér hozzánk a fény?",
+     "body": "A fény vákuumban pontosan 299 792 458 m/s sebességgel terjed, ezt gyakran 300 000 km/s-ra kerekítjük. Ez a legnagyobb sebesség, amellyel információ terjedhet. A Nap 149,6 millió km-re van tőlünk, ezért t = s : v = 1,496 · 10¹¹ : 3 · 10⁸ ≈ 500 s, azaz kb. 8 perc 20 másodperc telik el, míg a napfény hozzánk ér. Ha a Nap most eltűnne, ennyi ideig még látnánk. A Holdtól a fény már 1,3 s alatt ér ide. A fény sebessége levegőben alig kisebb, üvegben viszont már csak kb. kétharmada.",
+     "did_you_know": "A fény egy másodperc alatt majdnem 7,5-ször körbeérné a Földet.",
+     "think": "Mennyi idő alatt ér a fény a Holdról a Földre, ha a távolság 384 000 km?",
+     "think_answer": "t = 384 000 : 300 000 ≈ 1,3 s."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Milyen színű a fény, ha 550 nm a hullámhossza?",
+     "body": "A fény színét a frekvenciája határozza meg, a hullámhossz csak az adott közegben kapcsolódik hozzá: f = c : λ. A zöld fény (550 nm) frekvenciája f = 3 · 10⁸ : 550 · 10⁻⁹ ≈ 5,5 · 10¹⁴ Hz, a vörösé (700 nm) kb. 4,3 · 10¹⁴ Hz, az ibolyáé (400 nm) kb. 7,5 · 10¹⁴ Hz. Amikor a fény üvegbe lép, a hullámhossza rövidebb lesz, a frekvenciája viszont változatlan marad, ezért a színe sem változik. A látható fény tartománya kb. 380–750 nm. A hangról szóló példa nem illik ide: a hang mechanikai hullám, a fény elektromágneses.",
+     "did_you_know": "",
+     "think": "Mekkora a frekvenciája a 600 nm hullámhosszú fénynek?",
+     "think_answer": "f = c : λ = 3 · 10⁸ : 600 · 10⁻⁹ = 5 · 10¹⁴ Hz."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Miért számít a fény színe a fényelektromos jelenségnél?",
+     "body": "Einstein 1905-ben úgy magyarázta a jelenséget, hogy a fény fotonokból áll, és egy foton energiája E = h · f. Az elektron akkor szabadul ki, ha a foton energiája legalább a kilépési munkával egyenlő. Nátriumnál a kilépési munka kb. 2,3 eV. A zöld fény (550 nm) fotonjának energiája E = 1240 : 550 ≈ 2,25 eV, ez kicsit kevés, ezért zöld fénnyel nem lökhetők ki elektronok, akármilyen erős a lámpa. A kék fény (450 nm) fotonja 1240 : 450 ≈ 2,76 eV, ezért kilöki, a fölös 0,46 eV az elektron mozgási energiája lesz. A fény erőssége a kilökött elektronok számát növeli, nem az energiájukat. A napelem az úgynevezett belső fényelektromos jelenségen alapul: ott az elektron nem hagyja el az anyagot, csak vezetővé válik.",
+     "did_you_know": "Einstein a fizikai Nobel-díjat nem a relativitáselméletért, hanem a fényelektromos jelenség magyarázatáért kapta (1921).",
+     "think": "Mekkora a 400 nm-es fény fotonjának energiája (E = 1240 : λ, nm-ben, eV-ban)?",
+     "think_answer": "E = 1240 : 400 = 3,1 eV."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyi áramot ad egy napelem?",
+     "body": "A fotocella, pontosabban a napelem a beeső fény energiájának egy részét alakítja át elektromos energiává. Délben tiszta időben kb. 1000 W/m² teljesítmény éri a felületet. Egy 1,6 m²-es panel 20%-os hatásfokkal kb. 1000 · 1,6 · 0,2 = 320 W-ot termel. A fénymérő működése hasonló: a fényérzékelő elem áramot vagy ellenállásváltozást ad, és ebből számítja ki a kamera a helyes expozíciót. Az LDR (fényfüggő ellenállás) sötétben nagy, világosban kicsi ellenállású, ezért kapcsolják vele az utcai lámpákat.",
+     "did_you_know": "",
+     "think": "Mekkora teljesítményt ad egy 2 m²-es, 20%-os hatásfokú napelem 1000 W/m² besugárzásnál?",
+     "think_answer": "P = 1000 · 2 · 0,2 = 400 W."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Hogyan lát színeket a fényképezőgép?",
+     "body": "A képérzékelő milliónyi apró fényérzékelő pontból, pixelből áll. A pixel a ráeső fotonok számának megfelelő elektromos töltést gyűjt össze, ezért önmagában csak fényerősséget mér, színt nem. A színt a pixelek fölé tett piros, zöld és kék szűrők adják (Bayer-mintázat), 4 pixelből 2 zöld, 1 piros, 1 kék, mert a szemünk a zöldre a legérzékenyebb. A hiányzó színeket a szomszédos pixelekből számítják ki. Egy 12 megapixeles kép kb. 12 millió pixelből áll, például 4000 × 3000. Az ISO érzékenység a jel erősítését növeli, de a zajt is, ezért sötétben szemcsés a kép.",
+     "did_you_know": "",
+     "think": "Hány pixelből áll egy 4000 × 3000 pixeles kép?",
+     "think_answer": "4000 · 3000 = 12 000 000, vagyis 12 megapixel."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Hol dolgozik még a fényelektromos hatás?",
+     "body": "A fényérzékelők a lakásban mindenhol ott vannak: az automata ajtók, a füstérzékelők és a távirányító vevője is fényre reagál. A fénymásoló alapja az 1938-ban Chester Carlson által feltalált elektrofotográfia (xerográfia): a dob felülete fény hatására veszíti el a töltését. A fehér részekről visszavert fény kisüti a dobot, a sötét részeken marad a töltés, ehhez tapad a festékpor, amit aztán a papírra visznek. A lézernyomtató hasonlóan működik, de ott a lézer rajzolja meg a képet a dobon. A telefon kamerája a fényt elektromos jellé alakítja, ez a jel a memóriába kerül.",
+     "did_you_know": "",
+     "think": "Miért tapad a festékpor csak a sötét részekre a fénymásolóban?",
+     "think_answer": "Mert a fehér részekről visszavert fény kisüti a dobot, a sötét részeken marad a töltés."
+    }
+   ]
+  },
+  {
+   "lesson_id": "dbb5de73-9f08-4402-9ae9-6f49256a39e0",
+   "title_hu": "Mikroszkópok és a fény hullámtermészete",
+   "text_block_id": "f14900ab-da68-449a-92aa-c4eab2bbc7d1",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Miért lát többet az elektronmikroszkóp?",
+     "body": "A felbontást a hullámhossz szabja meg: két pont csak akkor különböztethető meg, ha távolságuk nagyobb kb. λ : 2-nél. Látható fénynél (550 nm) ez kb. 200–300 nm, ezért a legtöbb vírust (kb. 100 nm) fénymikroszkóppal nem látjuk. A 100 kV-tal gyorsított elektron de Broglie-hullámhossza kb. 0,004 nm, vagyis százezerszer rövidebb, mint a fényé. A gyakorlatban a lencsehibák miatt a felbontás kb. 0,1 nm, így már atomok is láthatók. A fénymikroszkóp hasznos nagyítása kb. 1000–1500-szoros; efölött a kép csak nagyobb, de nem lesz részletesebb.",
+     "did_you_know": "Az első elektronmikroszkópot Ernst Ruska építette 1931-ben, ezért 1986-ban Nobel-díjat kapott.",
+     "think": "Miért nem látható fénymikroszkóppal egy 100 nm-es vírus?",
+     "think_answer": "Mert a fény hullámhossza (kb. 400–700 nm) nagyobb, mint a vírus, a felbontási határ kb. 200 nm."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Hullám az elektron is?",
+     "body": "Louis de Broglie 1924-ben azt javasolta, hogy minden részecskéhez hullámhossz tartozik: λ = h : (m · v). Egy 10⁶ m/s sebességű elektronnál λ = 6,63 · 10⁻³⁴ : (9,11 · 10⁻³¹ · 10⁶) ≈ 7,3 · 10⁻¹⁰ m, ez az atomok méretével azonos nagyságrend, ezért az elektron kristályon elhajlik. Ezt 1927-ben Davisson és Germer kísérlete igazolta. Egy 0,15 kg-os labda 20 m/s sebességgel λ = 6,63 · 10⁻³⁴ : 3 ≈ 2,2 · 10⁻³⁴ m, amely mérhetetlenül kicsi, ezért a labdán nem látunk hullámjelenséget. A hullámtermészetet az interferencia és az elhajlás mutatja meg, nem a vízhullámokhoz való hasonlóság.",
+     "did_you_know": "",
+     "think": "Miért nem látjuk egy focilabda hullámtermészetét?",
+     "think_answer": "Mert a hullámhossza (kb. 10⁻³⁴ m) elképzelhetetlenül kicsi, nincs olyan rés vagy rács, amelyen elhajlana."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Az atomok ujjlenyomata",
+     "body": "Minden elem atomja csak meghatározott energiájú fotonokat bocsát ki vagy nyel el, ezért a színképe vonalakból áll. A hidrogén legfényesebb vonala a vörös H-alfa (656 nm): ekkor az elektron a 3. energiaszintről (−1,51 eV) a 2.-ra (−3,4 eV) ugrik, a foton energiája 1,89 eV. Ellenőrzés: E = 1240 : 656 ≈ 1,89 eV. A csillagok színképéből így tudjuk meg összetételüket. A héliumot 1868-ban a Nap színképében találták meg, csak 1895-ben mutatták ki a Földön, innen a neve (hélios = Nap).",
+     "did_you_know": "",
+     "think": "Mekkora a foton energiája, ha az elektron −1,51 eV-ról −3,4 eV-ra ugrik?",
+     "think_answer": "E = −1,51 − (−3,4) = 1,89 eV."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A határozatlansági reláció",
+     "body": "Heisenberg határozatlansági relációja a hely és a lendület (impulzus) egyszerre mérhető pontosságáról szól: Δx · Δp ≥ ħ : 2, ahol ħ = 1,05 · 10⁻³⁴ J·s. Ha egy elektront egy atom méretű (0,1 nm) tartományba zárunk, Δp ≥ 1,05 · 10⁻³⁴ : (2 · 10⁻¹⁰) ≈ 5,3 · 10⁻²⁵ kg·m/s, ami Δv ≈ 5,8 · 10⁵ m/s sebességbizonytalanságot jelent. A kis tartományba zárt részecske tehát nyugalmi állapotban sem lehet. Ez nem a mérőeszköz hibája, hanem a természet tulajdonsága. Az alagúteffektus miatt fúzionál a Nap belsejében a hidrogén, és a pásztázó alagútmikroszkóp (STM, Binnig és Rohrer, 1981) is ezt használja atomok leképezésére.",
+     "did_you_know": "",
+     "think": "Melyik jelenséget használja a pásztázó alagútmikroszkóp?",
+     "think_answer": "Az alagúteffektust: az elektronok áthatolnak a hegy és a minta közötti rés potenciálgátján."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mit mondott valójában Schrödinger macskája?",
+     "body": "Schrödinger a gondolatkísérletet 1935-ben nem példaként, hanem kritikaként találta ki: azt akarta megmutatni, hogy a kvantumfizika szabályait nem lehet ész nélkül a hétköznapi tárgyakra alkalmazni. Egy macska nincs egyszerre élő és halott állapotban, mert a környezettel való kölcsönhatás (dekoherencia) a szuperpozíciót rendkívül gyorsan lerombolja. Szuperpozícióba hozott apró rendszerekkel dolgoznak viszont a kvantumszámítógépek, a qubitek. Ezek ma még zajosak, és csak bizonyos feladatoknál (például szimulációknál vagy nagy számok felbontásánál) ígérnek előnyt, általános számításoknál nem gyorsabbak.",
+     "did_you_know": "",
+     "think": "Miért nem látunk a hétköznapokban szuperpozícióban lévő tárgyakat?",
+     "think_answer": "Mert a környezettel való kölcsönhatás (dekoherencia) a szuperpozíciót azonnal megszünteti."
+    }
+   ]
+  },
+  {
+   "lesson_id": "e5719bbd-9cc9-4e9f-b5de-f834242079ba",
+   "title_hu": "Atommodellek és a fény kapcsolata",
+   "text_block_id": "d57269d7-9dde-4647-ab1a-ada476ce9a64",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mekkora az atom, és mekkora a mag?",
+     "body": "Az atom nem a legkisebb építőkő: a proton és a neutron is kisebb részecskékből, kvarkokból áll, az elektronról pedig ma azt tudjuk, hogy elemi részecske. Az atom mérete kb. 10⁻¹⁰ m, az atommagé kb. 10⁻¹⁵ m, vagyis a mag átmérője az atomé százezred része. Ha a mag akkora lenne, mint egy 1 cm-es borsószem, az atom átmérője kb. 1 km volna. Az atom tömegének több mint 99,9%-a a magban van, a többi az elektronoké, mert az elektron kb. 1836-szor könnyebb a protonnál. A térfogat legnagyobb része tehát üres tér, ahol az elektronok tartózkodási valószínűsége nagy.",
+     "did_you_know": "",
+     "think": "Ha az atommag 1 mm lenne, mekkora lenne az atom?",
+     "think_answer": "100 000-szeres arány: 1 mm · 10⁵ = 100 m."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Mit fedezett fel Thomson?",
+     "body": "J. J. Thomson 1897-ben katódsugarakat vizsgálva megmérte, hogy a részecskék fajlagos töltése (e : m) kb. 1,76 · 10¹¹ C/kg, ez ezerszer nagyobb, mint a hidrogénionoké. Ebből arra következtetett, hogy nagyon könnyű, negatív részecskékről van szó: ezek az elektronok. Az atomot ezután pozitív töltésű „pudingnak” képzelte, amelyben az elektronok mazsolaként ülnek (mazsolás puding modell, 1904). Thomson 1906-ban Nobel-díjat kapott. Fia, G. P. Thomson 1927-ben kimutatta, hogy az elektron hullámként is viselkedik, ezért ő is Nobel-díjat kapott: az apa a részecske-, a fia a hullámtermészetét igazolta.",
+     "did_you_know": "",
+     "think": "Hányszor könnyebb az elektron a protonnál?",
+     "think_answer": "Kb. 1836-szor."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mi lepte meg Rutherfordot?",
+     "body": "A kísérletet Hans Geiger és Ernest Marsden végezte 1909-ben Rutherford irányításával, a magyarázatot Rutherford adta 1911-ben. Az alfa-részecskék többsége valóban áthaladt a vékony aranyfólián, kb. minden 8000-edik viszont nagy szögben visszaszóródott. Rutherford szavaival ez olyan volt, mintha egy 38 cm-es gránátot lőnének egy selyempapírra, és az visszapattanna. Ebből következett, hogy az atom tömege és pozitív töltése egy kis magban összpontosul, sugara kb. 10⁻¹⁵ m. A régi Thomson-modell ezt nem tudta megmagyarázni, mert abban a töltés szétterjed az egész atomban.",
+     "did_you_know": "",
+     "think": "Az alfa-részecskék hányad része szóródott vissza nagy szögben?",
+     "think_answer": "Kb. minden 8000-edik."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A Bohr-modell számai",
+     "body": "Bohr 1913-ban feltételezte, hogy a hidrogénatom elektronja csak meghatározott energiájú pályákon lehet: E_n = −13,6 eV : n². A legalacsonyabb szint (n = 1) −13,6 eV, az n = 2 szint −3,4 eV. Az n = 1-ből n = 2-be való gerjesztéshez 10,2 eV kell. Visszatéréskor a fölös energia fotonként távozik, E = h · f. A modell a hidrogén vonalas színképét pontosan megmagyarázta, de több elektronos atomokra már nem működik. A neonlámpa fénye gázkisülésből jön, amelyben a neonatomok gerjesztődnek, majd vörös-narancs fotont bocsátanak ki.",
+     "did_you_know": "",
+     "think": "Mekkora energia kell a hidrogénatom gerjesztéséhez az n = 1 szintről az n = 2 szintre?",
+     "think_answer": "−3,4 − (−13,6) = 10,2 eV."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Orbitál, nem pálya",
+     "body": "Schrödinger 1926-os egyenlete szerint az elektron állapotát hullámfüggvény írja le, és a hullámfüggvény négyzete adja meg annak valószínűségét, hogy az elektront hol találjuk. Az orbitál az a tér, amelyben az elektron 90%-os valószínűséggel tartózkodik: az s orbitál gömb, a p orbitál súlyzó alakú. Pauli elve szerint egy orbitálban legfeljebb két, ellentétes spinű elektron lehet. Az n. héjon összesen legfeljebb 2n² elektron fér el: 2, 8, 18, … Ez magyarázza a periódusos rendszer felépítését, és ezen alapul a lézerek, félvezetők tervezése is.",
+     "did_you_know": "",
+     "think": "Legfeljebb hány elektron lehet a harmadik (n = 3) héjon?",
+     "think_answer": "2 · 3² = 18."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Hogyan világít a LED?",
+     "body": "A LED nem attól világít, hogy felforrósodik. Félvezetőben az elektron és a lyuk találkozásakor (rekombináció) a szabaddá váló energia foton formájában távozik; ezt elektrolumineszcenciának hívjuk. A kibocsátott fény színét a félvezető tiltott sávjának szélessége szabja meg: λ = 1240 : E (nm, eV). Kék LED-nél az InGaN tiltott sávja kb. 2,7 eV, így λ ≈ 460 nm. A kék LED feltalálásáért 2014-ben Akaszaki, Amano és Nakamura Nobel-díjat kapott. A fehér LED valójában kék LED, amelyet sárga fénypor borít, a kettő keveréke fehérnek látszik. Az atomok felforrósodás miatt történő fénykibocsátása az izzólámpára és a lángokra jellemző.",
+     "did_you_know": "",
+     "think": "Milyen színű az a LED, amelynek tiltott sávja 1,9 eV?",
+     "think_answer": "λ = 1240 : 1,9 ≈ 650 nm, vagyis vörös."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Mit vizsgálnak a gyorsítók?",
+     "body": "A CERN nagy hadronütköztetőjének (LHC) gyűrűje 27 km hosszú, a protonok itt a fénysebesség több mint 99,999999%-ával keringenek. Egy kör megtételéhez a fénynek t = 26 659 : 3 · 10⁸ ≈ 89 μs kell, azaz másodpercenként kb. 11 245 kört tesznek meg. Az ütközésekben új részecskéket keltenek, itt fedezték fel 2012-ben a Higgs-bozont. A gyorsítókat nem az atomok, hanem az atommagok és az elemi részecskék vizsgálatára használják. Az orvosi képalkotáshoz (PET) szükséges izotópokat és a protonsugaras daganatkezelést is gyorsítók teszik lehetővé. A világháló (WWW) ötlete is a CERN-ben született 1989-ben.",
+     "did_you_know": "",
+     "think": "Hányszor kerüli meg a proton másodpercenként az LHC gyűrűjét (a gyűrű hossza 27 km)?",
+     "think_answer": "n = 3 · 10⁸ : 27 000 ≈ 11 000-szer."
+    }
+   ]
+  },
+  {
+   "lesson_id": "548566e4-ac0e-4309-ad81-59635482629f",
+   "title_hu": "Fényforrások és működésük",
+   "text_block_id": "b39123fa-97e7-48b2-954f-c88368bd08dc",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Miért izzik az izzószál?",
+     "body": "Az izzólámpa nem hőemisszióval, hanem hősugárzással világít: a kb. 2700 K hőmérsékletű wolframszál minden test módjára sugároz. A Wien-törvény szerint a maximum hullámhossza λ = 2,9 · 10⁻³ : T = 2,9 · 10⁻³ : 2700 ≈ 1070 nm, ez az infravörös tartományban van. Ezért a felvett energia kb. 95%-a hőként távozik, csak kb. 5% a látható fény. A Nap felszíne 5800 K, ott a maximum 500 nm körül van, éppen a látható tartományban. Az izzószál wolfram, mert olvadáspontja 3422 °C, és izzáskor vákuumban vagy védőgázban nem ég el.",
+     "did_you_know": "",
+     "think": "Hol van a maximum hullámhossza az 5800 K-es Nap sugárzásában (λ = 2,9 · 10⁻³ : T)?",
+     "think_answer": "λ = 2,9 · 10⁻³ : 5800 = 5 · 10⁻⁷ m = 500 nm."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Miért tart tovább a halogén izzó?",
+     "body": "A halogénizzó bura kis mennyiségű jód- vagy brómgázt tartalmaz. A forró wolframszálról elpárolgott wolfram a gázzal vegyületet alkot, ez a szál közelében elbomlik, és a wolfram visszakerül a szálra (halogénciklus). Ezért lehet a szál 3000 K körüli, forróbb és fehérebb fényű, mint a hagyományos izzóé. A bura kvarcüveg, mert nagyon forró. Zsíros ujjal ne érj hozzá: a zsír a forró üvegen kiég, és a bura megrepedhet. Fényhasznosítása kb. 20 lm/W, az egyszerű izzóé kb. 12 lm/W, a LED-é 100 lm/W fölött van. Az autók fényszóróiban ma már egyre inkább LED váltja fel.",
+     "did_you_know": "",
+     "think": "Miért nem szabad puszta kézzel megfogni a halogénizzót?",
+     "think_answer": "Mert a bőr zsírja a forró kvarcüvegen kiég, és a bura megrepedhet."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Hogyan világít a fénycső?",
+     "body": "A fénycső üvegcsövében alacsony nyomású higanygőz és argon van. Az elektromos kisülésben a higanyatomok főként 254 nm-es ibolyántúli fényt bocsátanak ki, ezt a szemünk nem látja. A cső falán lévő fénypor ezt elnyeli, és látható fényt sugároz ki: ez a fluoreszcencia, nem „izzítás”, mert a fénypor közben nem melegszik fel jelentősen. A fénypor keveréke szabja meg a színhőmérsékletet. A fénycső fényhasznosítása kb. 60–100 lm/W. A kompakt fénycső (kompakt izzó) is fénycső, csak összehajtva és elektronikával. Higanyt tartalmaz (néhány mg), ezért veszélyes hulladék, nem a szemetesbe való.",
+     "did_you_know": "",
+     "think": "Miért veszélyes hulladék a kiégett fénycső?",
+     "think_answer": "Mert higanyt tartalmaz."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyit spórol a LED?",
+     "body": "A LED fényhasznosítása 100–200 lm/W, az izzólámpáé 12–15 lm/W. Egy 60 W-os izzólámpa kb. 800 lm fényáramot ad, ugyanennyit egy kb. 8 W-os LED is. A megtakarítás 52 W, 1000 óra alatt 52 kWh. A LED nem minden energiát fény formájában sugároz ki: a bevitt energia kb. 30–50%-át alakítja fénnyé, a többi hő, amelyet a lámpafoglalat és a hűtőborda vezet el. Előre nem sugároz infravörös hőt, ezért érintésre langyos. A telefon képernyőjén a LED gyakran csak a háttérvilágítás, az OLED-nél viszont maguk a pixelek világítanak.",
+     "did_you_know": "",
+     "think": "Mennyi energiát takarít meg egy 52 W-tal kisebb fogyasztású lámpa 1000 óra alatt?",
+     "think_answer": "52 W · 1000 h = 52 kWh."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Megéri-e a LED?",
+     "body": "Egy 60 W-os izzólámpa helyett 8 W-os LED-et használva 52 W-ot spórolunk. Ha egy lámpa napi 4 órán át ég, egy év alatt 52 · 4 · 365 : 1000 ≈ 76 kWh a megtakarítás. Egy háztartás öt ilyen lámpájánál ez már kb. 380 kWh évente. A LED ára magasabb, de élettartama 15 000–25 000 óra, az izzóé kb. 1000 óra. Az EU 2009 és 2012 között fokozatosan kivonta az izzólámpákat, 2018-tól a halogénizzókat is. A szén-dioxid-megtakarítás nagysága attól függ, milyen erőművekből származik az áram.",
+     "did_you_know": "",
+     "think": "Mennyi energiát takarít meg egy lámpa évente, ha naponta 3 órán át ég és a teljesítménykülönbség 52 W?",
+     "think_answer": "52 · 3 · 365 : 1000 ≈ 57 kWh."
+    }
+   ]
+  }
+ ]
+}

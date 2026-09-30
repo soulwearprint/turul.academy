@@ -1,0 +1,616 @@
+{
+ "nat_id": "HIST-910-02",
+ "topic_id": "97143684-6b79-4143-add0-dba27db00bea",
+ "title_hu": "Vallások az ókorban",
+ "grade": 9,
+ "lessons": [
+  {
+   "lesson_id": "a495e221-d762-4bd2-ae3c-7dad465ebfb5",
+   "title_hu": "Politeizmus és monoteizmus",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "56cf6231-060f-4f57-a099-4e76de71fcb0",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A politeizmus a többistenhit, amely az ókori Keleten, például Egyiptomban és Mezopotámiában volt jellemző. Az egyiptomi vallásban Kheopsz fáraó idején több isten, mint például Ra és Osiris, játszott fontos szerepet. Ezek az istenek különböző természeti jelenségeket és életciklusokat képviseltek. A politeista vallásokban a templomok és szertartások központi szerepet játszottak, amelyek célja az istenek kiengesztelése volt.",
+       "type": "text",
+       "heading": "Politeizmus az ókori Keleten",
+       "key_term": "politeizmus"
+      },
+      {
+       "body": "A görög és római vallás szintén politeista volt, ahol Zeusz és Pallasz Athéné voltak a legismertebb istenek. Zeusz, mint az istenek királya, az ég és a viharok ura volt, míg Pallasz Athéné a bölcsesség és a háború istennője. A görögök és rómaiak számára a mitológia és a vallás szorosan összefonódott, számos mítosz és kultusz alakult ki. Ezek az istenek nemcsak a vallásos életben, hanem a művészetekben és a politikában is meghatározó szerepet játszottak.",
+       "type": "text",
+       "heading": "Görög és római istenek",
+       "key_term": "Zeusz, Pallasz Athéné"
+      },
+      {
+       "body": "A zsidó monoteizmus a világ egyik első egyistenhite, amely Ábrahámhoz vezethető vissza. A monoteizmus alapja az, hogy csak egy Isten létezik, aki teremtette a világot és irányítja azt. Mózes, a zsidó vallás egyik legfontosabb prófétája, a Tízparancsolatot hozta le a Sínai-hegyről, amely a zsidó vallási és etikai alapelvek meghatározó része. A jeruzsálemi templom a zsidó vallás központi helyszíne volt, ahol az áldozatok és imák zajlottak.",
+       "type": "text",
+       "heading": "A zsidó monoteizmus",
+       "key_term": "zsidó vallás, Mózes, Tízparancsolat, jeruzsálemi templom"
+      },
+      {
+       "body": "A diaszpóra a zsidók szétszóródását jelenti, amely a babiloni fogság után kezdődött, amikor sok zsidó elhagyta Kánaánt. A zsidó közösségek világszerte megőrizték vallásukat és hagyományaikat, ami hozzájárult a zsidó identitás fenntartásához. A Messiás várása a zsidó hit egyik központi eleme, aki eljön, hogy helyreállítsa Izrael dicsőségét. A Tízparancsolat és a próféták tanításai fontos irányelvek a zsidó közösségek számára.",
+       "type": "text",
+       "heading": "A diaszpóra és a Messiás várása",
+       "key_term": "diaszpóra, Messiás"
+      },
+      {
+       "body": "Jeruzsálem a zsidó vallás szent városa, ahol a jeruzsálemi templom állt, és ahol Mózes tanításai és a Tízparancsolat középpontban álltak. Kánaán, amely Izrael földje, a zsidó nép történetének és vallásának szülőhelye. Júdea és Palesztina területei a zsidó történelem és kultúra szempontjából alapvető fontosságúak voltak. A földrajzi helyszínek nemcsak vallási, hanem politikai és társadalmi jelentőséggel is bírtak.",
+       "type": "text",
+       "heading": "Topográfiai jelentőségek: Jeruzsálem és Kánaán",
+       "key_term": "Jeruzsálem, Kánaán, Júdea, Izrael, Palesztina"
+      },
+      {
+       "body": "A Tízparancsolat a zsidó és keresztény vallások egyik legfontosabb erkölcsi és vallási alapelve, amelyet a Biblia szerint Mózes próféta kapott Istentől a Sínai-hegyen. Mózes, aki a zsidó nép vezetője volt, központi szerepet játszott a monoteizmus elterjesztésében, hiszen ő vezette ki népét Egyiptomból, ahol politeizmus uralkodott. A Tízparancsolat nemcsak vallási, hanem társadalmi normákat is meghatározott, amelyek a monoteista hit alapját képezték. Mózes prófétai tevékenysége és a Tízparancsolat bevezetése hozzájárult a zsidó vallás megerősödéséhez, és később hatással volt a kereszténység és az iszlám kialakulására is. A Tízparancsolat a monoteizmus egyik legkorábbi és legjelentősebb dokumentuma, amely ma is meghatározó szerepet játszik a vallási és erkölcsi tanításokban.",
+       "type": "text",
+       "heading": "A Tízparancsolat és Mózes szerepe a monoteizmus kialakulásában",
+       "key_term": "Tízparancsolat próféta"
+      }
+     ]
+    },
+    {
+     "block_id": "22758635-f62a-498b-b5ef-ed066cef8ac6",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A földművesek az ókori Keleten a természet erőit tisztelték, hiszen a megélhetésük a termékeny földtől függött. A nap, a víz és a föld istenei, mint például Ra és Osiris, fontos szerepet játszottak mindennapjaikban. Minden vetés előtt áldozatot mutattak be, hogy biztosítsák a bőséges termést. Az ünnepek, amelyek a terméshez kapcsolódtak, közösségi eseményekké váltak, ahol a falu népe együtt imádkozott és ünnepelt, megerősítve ezzel a közösségi kötelékeket.",
+       "mood": "hétköznapi élet",
+       "type": "story",
+       "heading": "A földművesek hite az ókori Keleten"
+      },
+      {
+       "body": "A kereskedők, akik a városokban éltek, a római istenekhez fohászkodtak, mint Zeusz és Pallasz Athéné, hogy sikeres üzleteket köthessenek. Minden reggel, mielőtt megnyitották boltjaikat, imát mondtak, hogy a kereskedelem szerencsés legyen. Az üzletek előtt gyakran álltak oltárok, ahol az emberek áldozatokat mutattak be a kereskedelem istenének. A kereskedők közötti verseny nemcsak anyagi, hanem vallási kötelezettség is volt, hiszen a sikerüket a vallásos hiedelmekkel is összekapcsolták.",
+       "mood": "kereskedelem",
+       "type": "story",
+       "heading": "A kereskedők és a római istenek"
+      },
+      {
+       "body": "A zsidó családok számára a vallás központi szerepet játszott a mindennapi életben. A szombat, mint a pihenés és a családi összejövetel napja, szent idő volt. A szülők meséltek a gyermekeiknek Ábrahám és Mózes történeteiről, akik a zsidó monoteizmus alapjait fektették le. A Tízparancsolat betartása nemcsak vallási, hanem erkölcsi kötelezettség is volt, amely irányította a családok életét. A jeruzsálemi templom, mint a vallás központja, az ünnepek idején különösen fontos helyszín volt, ahol a közösség összegyűlt imádkozni és ünnepelni.",
+       "mood": "család és hit",
+       "type": "story",
+       "heading": "A család és a zsidó vallás"
+      },
+      {
+       "body": "A gyermekek nevelése szorosan összefonódott a vallással az ókori Keleten. Az iskolákban a fiatalok tanulták a Héber Bibliát, amely a zsidó vallás alapját képezte. A tanítás során Mózes történetei és a Tízparancsolat értelmezése segítette a fiatalokat abban, hogy megértsék a közösségük értékeit és hagyományait. A gyermekek nemcsak tudást, hanem vallási és erkölcsi értékeket is kaptak, amelyek meghatározták későbbi életüket.",
+       "mood": "nevelés és iskola",
+       "type": "story",
+       "heading": "A gyermekek nevelése és a vallás"
+      },
+      {
+       "body": "A betegség idején a közösség tagjai gyakran a vallásos hagyományokhoz fordultak segítségért. A zsidó közösségekben a próféták tanítása szerint a betegség a bűn következménye is lehetett, így a gyógyulás érdekében nemcsak orvoshoz, hanem a templomba is elmentek imádkozni. Az emberek gyakran áldozatokat mutattak be, hogy elnyerjék az istenek kegyét, és remélték, hogy a Messiás eljövetele révén végleg megszabadulnak a betegségektől és szenvedésektől.",
+       "mood": "betegség és gyógyítás",
+       "type": "story",
+       "heading": "A betegség és a gyógyítás a vallás fényében"
+      }
+     ]
+    },
+    {
+     "block_id": "2f8e619b-39d5-464e-a5d1-623e585a43b2",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az ókori Kelet politeista vallásainak elterjedése",
+       "heading": "A politeizmus az ókori Keleten",
+       "description": "Az ókori Kelet térképe, amely bemutatja a főbb politeista kultúrákat, mint Egyiptom, Mezopotámia és a föníciai városállamok.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A görög panteon főbb istenei",
+       "heading": "Görög istenek",
+       "description": "Diagram, amely bemutatja a görög istenek főbb jellemzőit, köztük Zeusz, Pallasz Athéné és más fontos istenek szerepét a görög mitológiában.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A római panteon és görög megfelelőik",
+       "heading": "Római istenek",
+       "description": "Diagram, amely a római istenek párhuzamait mutatja be a görög istenekkel, például Jupiter (Zeusz) és Minerva (Pallasz Athéné).",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A zsidó monoteizmus fejlődése",
+       "heading": "A zsidó monoteizmus",
+       "description": "Idővonal, amely bemutatja a zsidó vallás főbb eseményeit, beleértve Ábrahámot, Mózest és a Tízparancsolat megjelenését.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A jeruzsálemi templom és a diaszpóra",
+       "heading": "Jeruzsálemi templom",
+       "description": "Térkép, amely jelöli a jeruzsálemi templom helyét és jelentőségét a zsidó vallásban, valamint a diaszpóra elterjedését.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A Tízparancsolat alapelvei",
+       "heading": "A Tízparancsolat",
+       "description": "Diagram, amely a Tízparancsolat főbb parancsolatait mutatja be, és azok hatását a zsidó vallásra és a kereszténységre.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A Messiás és a próféták",
+       "heading": "A Messiás fogalma",
+       "description": "Diagram, amely bemutatja a Messiás fogalmát a zsidó vallásban, és a próféták szerepét a Messiás várásában.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Kánaán és Júdea földrajzi jelentősége",
+       "heading": "Kánaán és Júdea",
+       "description": "Térkép, amely Kánaán és Júdea földrajzi elhelyezkedését mutatja be, valamint a zsidó nép történelmi vándorlását.",
+       "visual_type": "térkép"
+      }
+     ]
+    },
+    {
+     "block_id": "7e8c8a0a-afa8-40f5-8b63-c2f3ca94054b",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A politeizmus és a monoteizmus fogalmai más kultúrákban és korokban is megjelentek, például az ókori Egyiptomban és a mezopotámiai civilizációkban. Ezek a vallási rendszerek különböző formákat ölthettek, de a hiedelmek és szertartások sokszínűsége mindenütt jelen volt.",
+       "type": "note"
+      }
+     ]
+    },
+    {
+     "block_id": "f590c3e4-c4f6-46fa-ac05-e82dcea8839f",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Több isten tisztelete",
+        "B) Egyetlen isten tisztelete",
+        "C) Vallás nélküli állapot",
+        "D) A vallás teljes elutasítása"
+       ],
+       "question": "Mi a politeizmus?",
+       "explanation": "A politeizmus több isten tiszteletét jelenti, amely az ókori Keleten, például Egyiptomban elterjedt volt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A zsidó nép ősatyja",
+        "B) A legfőbb isten",
+        "C) Egy római isten",
+        "D) Egyiptom fáraója"
+       ],
+       "question": "Ki volt Ábrahám a zsidó vallásban?",
+       "explanation": "Ábrahám a zsidó vallásban a zsidó nép ősatyja, akinek a története fontos része az Ószövetségnek.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Tízparancsolat",
+        "B) Korán",
+        "C) Újszövetség",
+        "D) Bhagavad-gítá"
+       ],
+       "question": "Milyen fontos dokumentum a zsidó vallás alapja?",
+       "explanation": "A Tízparancsolat a zsidó vallás alapvető erkölcsi törvényeit tartalmazza, amelyet Mózes kapott.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Jeruzsálemben",
+        "B) Kánaánban",
+        "C) Palesztinában",
+        "D) Júdeában"
+       ],
+       "question": "Hol található a jeruzsálemi templom?",
+       "explanation": "A jeruzsálemi templom Jeruzsálemben állt, és a zsidó vallás központi helyszíne volt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az istenek királya",
+        "B) A zsidó próféta",
+        "C) Egy római isten",
+        "D) Egyiptom fáraója"
+       ],
+       "question": "Ki volt Zeusz a görög mitológiában?",
+       "explanation": "Zeusz a görög mitológiában az istenek királya, aki a politeista vallás középpontjában állt.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "7366f424-67ca-4f5c-b67c-452756dfb915",
+   "title_hu": "A kereszténység kezdete",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "99a79db6-39f0-4ad6-8385-4c415abba687",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A keresztény vallás az ókorban Jézus Krisztus tanításain alapult, aki Kr. u. 1. században élt Betlehemben és Galileában. Jézus hirdette Isten szeretetét és az emberek közötti szeretet fontosságát. Tanításaiban középpontban állt a megbocsátás, a szegények és elnyomottak védelme. Az ő üzenetei az evangéliumokban, az Újszövetség részében találhatók.",
+       "type": "text",
+       "heading": "A keresztény vallás és Jézus tanításai",
+       "key_term": "keresztény vallás"
+      },
+      {
+       "body": "Szent Pál apostol, aki eredetileg Saul néven ismert, a kereszténység egyik legfontosabb misszionáriusa lett. Pál megtérése után sok nép között hirdette a kereszténységet, különösen a pogányok körében. Tanításai és levelei jelentős hatással voltak a keresztény közösség formálódására. Ő volt az, aki a kereszténységet világszerte elterjesztette, így hozzájárult a vallás terjedéséhez a Római Birodalomban.",
+       "type": "text",
+       "heading": "A páli fordulat",
+       "key_term": "Szent Pál"
+      },
+      {
+       "body": "A kereszténység elterjedése során a hívők gyakran üldözésnek voltak kitéve a Római Birodalomban. Az első keresztény-üldözések a 1. és 2. században zajlottak, amikor a római hatóságok a keresztényeket vallásuk miatt üldözték. A milánói rendelet, amelyet Constantinus adott ki 313-ban, jelentős változást hozott, mivel legalizálta a kereszténységet. Ez hozzájárult a vallás gyors elterjedéséhez a birodalomban.",
+       "type": "text",
+       "heading": "Keresztény-üldözések és elterjedés a Római Birodalomban",
+       "key_term": "milánói rendelet"
+      },
+      {
+       "body": "A Szentháromság-tan a kereszténység egyik alapvető hittétele, amely szerint Isten három személyben létezik: az Atyában, a Fiúban (Jézus Krisztus) és a Szentlélekben. E tan megfogalmazása a niceai zsinaton, 325-ben történt, amely fontos mérföldkő volt a keresztény egyház történetében. A Szentháromság tanítása egységet teremtett a hívők között, és segítette a keresztény hit megerősödését.",
+       "type": "text",
+       "heading": "A Szentháromság-tan",
+       "key_term": "niceai zsinat"
+      },
+      {
+       "body": "A keresztség és az úrvacsora a keresztény vallás két alapvető szentsége. A keresztség a hívők belépését jelenti a keresztény közösségbe, míg az úrvacsora Jézus utolsó vacsorájának megemlékezése. Ezek a szertartások fontos szerepet játszanak a keresztény identitás megélésében és a közösség összetartásában. Az apostolok, mint Szent Péter, nagy szerepet játszottak e szentségek elterjesztésében.",
+       "type": "text",
+       "heading": "A keresztség és úrvacsora",
+       "key_term": "keresztség és úrvacsora"
+      },
+      {
+       "body": "Szent Péter és Szent Pál apostolok kiemelkedő szerepet játszottak a kereszténység korai terjedésében. Szent Péter, akit Jézus az egyház alapjának nevezett, az első pápaként tekinthető, és jelentős hatással volt a keresztény közösségek megszervezésére. Szent Pál, eredeti nevén Saul, a kereszténység egyik legnagyobb terjesztője volt, aki számos missziós utat tett a Római Birodalom területén. Pál apostol levelei fontos teológiai alapokat fektettek le, amelyek a keresztény hit alapját képezik. Mindkét apostol Rómában halt mártírhalált, és emléküket a keresztény egyház június 29-én ünnepli.",
+       "type": "text",
+       "heading": "Szent Péter és Szent Pál apostolok szerepe a kereszténység kezdetén",
+       "key_term": "Szent Péter, Szent Pál, apostolok, kereszténység, Római Birodalom"
+      },
+      {
+       "body": "A keresztény időszámítás kezdete Jézus Krisztus születéséhez kötődik, amelyet hagyományosan Kr. e. 4 és Kr. e. 6 közé helyeznek. A keresztény időszámítás a Krisztus születésétől számított éveket jelöli, és a világ egyik legelterjedtebb időszámítási rendszere. A Kr. e. (Krisztus előtt) és Kr. u. (Krisztus után) jelölések segítenek az események időbeli elhelyezésében. A keresztény időszámítás bevezetése Dionysius Exiguus nevéhez fűződik, aki a 6. században dolgozta ki ezt a rendszert. Az időszámítás kezdete fontos mérföldkő a történelmi események kronológiai rendezésében.",
+       "type": "text",
+       "heading": "A keresztény időszámítás kezdete",
+       "key_term": "keresztény időszámítás"
+      },
+      {
+       "body": "A keresztény időszámítás kezdete Jézus Krisztus születéséhez kapcsolódik, amelyet a hagyomány szerint Kr. e. 1-ben vagy Kr. u. 1-ben helyeznek el. Az időszámításunk előtti (Kr. e.) és az időszámításunk utáni (Kr. u.) korszakok elválasztása a keresztény kultúra egyik alapvető időmérési rendszere lett. A keresztény időszámítás bevezetése Dionysius Exiguus nevéhez fűződik, aki a 6. században alkotta meg ezt a rendszert. A keresztény időszámítás elterjedése a középkor folyamán fokozatosan történt meg, és mára világszerte elfogadottá vált. Az időszámítás kezdete nemcsak vallási, hanem kulturális és történelmi szempontból is jelentős, mivel a kereszténység hatása a nyugati civilizáció fejlődésére meghatározó volt.",
+       "type": "text",
+       "heading": "A keresztény időszámítás kezdete",
+       "key_term": "keresztény időszámítás"
+      }
+     ]
+    },
+    {
+     "block_id": "18435c76-bca8-4d17-a67b-e1b46f351317",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A falusi közösség tagjai rendszeresen összegyűltek, hogy megünnepeljék a keresztény szokásokat, mint például a keresztséget és az úrvacsorát. Az ünnepségek során a közösség tagjai együtt imádkoztak, énekeltek és osztoztak a közös étkezéseken. Az evangéliumok tanítása szerint a szeretet és az összefogás fontos volt, ami a közösség összetartását erősítette. A helyi püspök irányítása alatt zajló események nemcsak a vallási életet, hanem a közösségi kapcsolatokat is szorosabbá tették.",
+       "mood": "hit, ünnepek és szokások",
+       "type": "story",
+       "heading": "A hit és a közösség"
+      },
+      {
+       "body": "A gyermekek nevelése a családokban a keresztény értékek mentén zajlott. A szülők igyekeztek átadni gyermekeiknek Jézus tanításait, és a Biblia történeteit mesélték el nekik. Az otthonokban a vallásos szokások, mint a közös imádkozás, a napi étkezések során is megjelentek. A családok számára fontos volt a hit, hiszen a vallásos nevelés segítette a gyermekek erkölcsi fejlődését.",
+       "mood": "család, gyermekek és nevelés",
+       "type": "story",
+       "heading": "Család és nevelés"
+      },
+      {
+       "body": "A falusi emberek főként földműveléssel foglalkoztak, és a keresztény ünnepek fontos szerepet játszottak a mezőgazdasági munkák ütemezésében. A termés betakarítása előtt a közösség közösen imádkozott, hogy a jó időjárás segítse a munkájukat. A helyi kézművesek is részt vettek a vallási ünnepekben, hiszen sokan a templomok számára készítettek szentelt tárgyakat, ami a hitéletük szerves részét képezte.",
+       "mood": "munka és megélhetés",
+       "type": "story",
+       "heading": "Munka és megélhetés"
+      },
+      {
+       "body": "A kereszténység terjedése idején a betegség és a járványok sok embert sújtottak. A közösségekben a hit és a vallásos szokások fontos szerepet játszottak a gyógyításban. Az emberek gyakran fordultak a helyi papokhoz imádságért és segítségért, bízva abban, hogy a hitük segít a gyógyulásban. A közösségi összefogás, a szomszédok támogatása és a közös imádságok sokak számára vigaszt nyújtottak a nehéz időkben.",
+       "mood": "betegség, járvány és gyógyítás",
+       "type": "story",
+       "heading": "Betegség és gyógyítás"
+      },
+      {
+       "body": "A helyi közösségekben a kereszténység terjedése újfajta hatalmi struktúrákat alakított ki. A püspökök nemcsak vallási vezetők voltak, hanem a közösség életében is komoly befolyással bírtak. A milánói rendelet után a kereszténység hivatalosan elismert vallássá vált, ami új lehetőségeket teremtett a közösségek számára. Az emberek biztonságosabbnak érezték magukat, hiszen a vallásos közösségek támogatása erősítette a helyi identitást.",
+       "mood": "hatalom, hivatalok és közösség",
+       "type": "story",
+       "heading": "Hatalom és közösség"
+      }
+     ]
+    },
+    {
+     "block_id": "e15859bb-88af-4dcf-9e5e-bbd4ec3285a1",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Jézus, a kereszténység megalapítója, aki tanításaival új vallást indított.",
+       "heading": "Jézus tanításai",
+       "description": "Jézus arcképe, amely bemutatja őt tanítói szerepében.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "Szent Pál apostol, aki a kereszténység elterjedésében kulcsszerepet játszott.",
+       "heading": "A páli fordulat",
+       "description": "Diagram, amely bemutatja Szent Pál apostol missziós tevékenységeit és leveleit.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A keresztényüldözések, amelyek a vallás terjedését nehezítették.",
+       "heading": "Keresztényüldözések",
+       "description": "Térkép, amely ábrázolja a Római Birodalom területén a keresztényüldözések helyszíneit.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A Szentháromság-tan, amely a keresztény hit alapját képezi.",
+       "heading": "A Szentháromság-tan",
+       "description": "Diagram, amely bemutatja a Szentháromság fogalmát: Atya, Fiú, Szentlélek.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A keresztény időszámítás kezdetétől a fontos eseményekig.",
+       "heading": "A keresztény időszámítás kezdete",
+       "description": "Idővonal, amely bemutatja a keresztény időszámítás kezdetét és fontos eseményeit, mint a milánói rendelet (313) és a niceai zsinat (325).",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "Betlehem, Jézus születésének helyszíne, a kereszténység egyik központi helyszíne.",
+       "heading": "Betlehem",
+       "description": "Térkép, amely megmutatja Betlehem helyét a Római Birodalomban.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A Biblia, a keresztény vallás szent könyve, amely tartalmazza az Újszövetséget is.",
+       "heading": "A Biblia és az Újszövetség",
+       "description": "Diagram, amely bemutatja a Biblia felépítését, kiemelve az Újszövetséget.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Szent Péter, a kereszténység egyik legfontosabb apostola és a római egyház alapítója.",
+       "heading": "Szent Péter",
+       "description": "Szent Péter arcképe, aki az apostolok vezetője volt.",
+       "visual_type": "arckép"
+      }
+     ]
+    },
+    {
+     "block_id": "ed6a3ba4-035a-491e-b6ca-43b9261062d6",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": []
+    },
+    {
+     "block_id": "394dba39-758f-48d4-a5d9-20ca07ef33ef",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Szent Péter",
+        "B) Constantinus",
+        "C) Szent Pál",
+        "D) Mózes"
+       ],
+       "question": "Ki volt Jézus tanítványa, aki a kereszténység elterjedésében kulcsszerepet játszott?",
+       "explanation": "Szent Péter Jézus egyik legközelebbi tanítványa volt, aki a kereszténység első vezetője lett.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 313",
+        "B) 325",
+        "C) 30",
+        "D) 1"
+       ],
+       "question": "Mikor történt a milánói rendelet, amely legalizálta a kereszténységet a Római Birodalomban?",
+       "explanation": "A milánói rendelet 313-ban történt, és jelentős lépés volt a kereszténység terjedésében.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Korán",
+        "B) Biblia",
+        "C) Tóra",
+        "D) Védák"
+       ],
+       "question": "Mi a keresztény vallás szent könyve, amely az Újszövetséget is tartalmazza?",
+       "explanation": "A Biblia a keresztény vallás szent könyve, amely az Ó- és Újszövetséget foglalja magában.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Egy Isten három személye",
+        "B) Három különböző isten",
+        "C) Az apostolok száma",
+        "D) A keresztény egyház vezetése"
+       ],
+       "question": "Mi a Szentháromság-tan lényege a kereszténységben?",
+       "explanation": "A Szentháromság-tan szerint egy Isten három személyből áll: az Atyából, a Fiúból és a Szentlélekből.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Niceai zsinat",
+        "B) Konstantinápolyi zsinat",
+        "C) Efezusi zsinat",
+        "D) Tridenti zsinat"
+       ],
+       "question": "Melyik zsinatot tartották 325-ben, amely a keresztény hit alapjait határozta meg?",
+       "explanation": "A niceai zsinat 325-ben történt, és fontos szerepet játszott a keresztény doktrína megfogalmazásában.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "a1b9b711-fc11-4372-901d-6149f4f744f6",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Egyistenhit",
+      "B) Többistenhit",
+      "C) Vallási szertartás",
+      "D) Vallási közösség"
+     ],
+     "question": "Mi a politeizmus?",
+     "explanation": "A politeizmus több isten tiszteletét jelenti, szemben a monoteizmussal, amely egyetlen istenbe vetett hitet jelent.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A zsidó vallás prófétája",
+      "B) A görög istenek vezetője",
+      "C) A keresztény egyház alapítója",
+      "D) Egyiptom fáraója"
+     ],
+     "question": "Ki volt Mózes?",
+     "explanation": "Mózes a zsidó vallás egyik legfontosabb prófétája, aki vezette a zsidókat Egyiptomból, és átadta a Tízparancsolatot.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A keresztények szent helye",
+      "B) A zsidó vallás központja",
+      "C) A politeista vallások szentélye",
+      "D) Egy római templom"
+     ],
+     "question": "Mi a Jeruzsálemi Templom jelentősége?",
+     "explanation": "A Jeruzsálemi Templom a zsidó vallás központi helyszíne volt, ahol a zsidók imádkoztak és áldozatokat mutattak be.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Vallási közösség",
+      "B) Egyiptomi fáraó",
+      "C) A zsidók szétszóródása",
+      "D) Vallási szertartás"
+     ],
+     "question": "Mit jelent a diaszpóra?",
+     "explanation": "A diaszpóra a zsidóság szétszóródását jelenti, különösen azután, hogy a rómaiak lerombolták a Jeruzsálemi Templomot.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A zsidó vallás megalapítója",
+      "B) A keresztény vallás középpontja",
+      "C) Egyiptomi fáraó",
+      "D) A görög mitológia istene"
+     ],
+     "question": "Ki volt Jézus?",
+     "explanation": "Jézus a keresztény vallás középpontjában áll, őt tekintik Isten fiának és a megváltónak.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A niceai zsinat",
+      "B) A milánói rendelet",
+      "C) A keresztény időszámítás kezdete",
+      "D) A zsidó templom lerombolása"
+     ],
+     "question": "Mi történt 313-ban?",
+     "explanation": "A milánói rendelet 313-ban történt, amely legalizálta a kereszténységet Róma területén.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A zsidó vallás szent könyve",
+      "B) A keresztény vallás szent könyve",
+      "C) A görög mitológiák gyűjteménye",
+      "D) Egyiptomi papiruszok"
+     ],
+     "question": "Mi az Újszövetség?",
+     "explanation": "Az Újszövetség a keresztény vallás szent könyve, amely Jézus életét és tanításait tartalmazza.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A zsidó vallás prófétája",
+      "B) A keresztény vallás első császára",
+      "C) A görög istenek vezetője",
+      "D) Egyiptom fáraója"
+     ],
+     "question": "Ki volt Constantinus?",
+     "explanation": "Constantinus a római császár volt, aki a kereszténység első védelmezője lett, és megszüntette a keresztények üldözését.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

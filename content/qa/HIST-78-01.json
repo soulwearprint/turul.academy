@@ -1,0 +1,242 @@
+{
+ "nat_id": "HIST-78-01",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 13,
+  "cards": 63,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-78-01-001",
+   "lesson_id": "077c16ea-5c22-4330-8730-ed325b637d9b",
+   "block_id": "220f431b-83ae-4b5c-9819-3e016731cf14",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options[2], explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik ország nem tartozik a gyarmatbirodalmak közé a 20. század elején?” — megjelölt: Amerikai Egyesült Államok.",
+   "explanation": "Az USA 1898-tól gyarmattartó volt (Fülöp-szigetek, Puerto Rico, Guam); a felsorolt országok mind rendelkeztek gyarmatokkal, így nincs helyes válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Spanish%E2%80%93American_War",
+     "title": "Spanish–American War",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Brit Birodalom",
+      "B) Franciaország",
+      "C) Amerikai Egyesült Államok",
+      "D) Németország"
+     ],
+     "question": "Melyik ország nem tartozik a gyarmatbirodalmak közé a 20. század elején?",
+     "explanation": "Az Amerikai Egyesült Államok nem volt gyarmatbirodalom a 20. század elején, hanem független állam, míg a Brit Birodalom és Franciaország gyarmati hatalmak voltak.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Brit Birodalom",
+      "B) Franciaország",
+      "C) Svájc",
+      "D) Németország"
+     ],
+     "question": "Melyik ország nem tartozik a gyarmatbirodalmak közé a 20. század elején?",
+     "explanation": "Svájcnak soha nem voltak gyarmatai. A Brit Birodalom, Franciaország és Németország is gyarmattartó volt — sőt 1898-tól az Egyesült Államok is (pl. Fülöp-szigetek).",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-01-002",
+   "lesson_id": null,
+   "block_id": "2a25b529-d569-4b1e-b317-b0564884bebb",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 8,
+   "field": "question, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik ország volt az első, amely a modern korban jelentős ipari fejlődést mutatott?” — megjelölt: USA.",
+   "explanation": "Az ipari forradalom Nagy-Britanniában kezdődött (a válaszok között nem is szerepel). Az USA a 19. század végére lett a legnagyobb ipari termelő.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Industrial_Revolution",
+     "title": "Industrial Revolution",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Olaszország",
+      "B) Németország",
+      "C) Amerikai Egyesült Államok",
+      "D) Japán"
+     ],
+     "question": "Melyik ország volt az első, amely a modern korban jelentős ipari fejlődést mutatott?",
+     "explanation": "Az Amerikai Egyesült Államok a modern korban jelentős ipari fejlődést mutatott, különösen a 19. század végén.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Olaszország",
+      "B) Németország",
+      "C) Amerikai Egyesült Államok",
+      "D) Japán"
+     ],
+     "question": "Melyik ország lett a 19. század végére a világ legnagyobb ipari termelője?",
+     "explanation": "Az ipari forradalom Nagy-Britanniában kezdődött, de a 19. század végére az Amerikai Egyesült Államok lett a világ legnagyobb ipari termelője.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-01-003",
+   "lesson_id": null,
+   "block_id": "2a25b529-d569-4b1e-b317-b0564884bebb",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Németország „nem volt része a Brit Birodalomnak, mivel az egyesítése csak 1871-ben történt”.",
+   "explanation": "Az indoklás értelmetlen: Németország független állam volt, saját gyarmatbirodalommal.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Belső logikai hiba.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Kanada",
+      "B) India",
+      "C) Németország",
+      "D) Ausztrália"
+     ],
+     "question": "Melyik ország nem volt része a Brit Birodalomnak a modern kor elején?",
+     "explanation": "Németország nem volt része a Brit Birodalomnak, mivel az egyesítése csak 1871-ben történt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Kanada",
+      "B) India",
+      "C) Németország",
+      "D) Ausztrália"
+     ],
+     "question": "Melyik ország nem volt része a Brit Birodalomnak a modern kor elején?",
+     "explanation": "Kanada, India és Ausztrália a Brit Birodalom része volt; Németország független nagyhatalom volt, és 1884-től maga is gyarmatokat szerzett Afrikában és a Csendes-óceánon.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-01-004",
+   "lesson_id": "077c16ea-5c22-4330-8730-ed325b637d9b",
+   "block_id": "9dad4a96-5532-4626-a998-0d52207909c6",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Ezzel a lépéssel a nacionalizmus győzelmet aratott a birodalmi politikával szemben.”",
+   "explanation": "Az egyesítés eredménye maga is császárság (Német Császárság) lett; a mondat önellentmondó.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Belső logikai hiba (a kártya maga írja: „létrehozva a Német Császárságot”).",
+   "fix": {
+    "before": {
+     "body": "Otto von Bismarck, a német politikai élet meghatározó alakja, a 19. század második felében vezette a német egyesítési folyamatot. 1871-ben, a francia-porosz háború után, Bismarck sikeresen egyesítette Németországot, létrehozva a Német Császárságot. Ezzel a lépéssel a nacionalizmus győzelmet aratott a birodalmi politikával szemben. Bismarck politikája és a német egyesítés jelentős hatással volt a közép-európai politikai térképre és a magyar történelem alakulására is.",
+     "type": "text",
+     "heading": "Bismarck és Németország egyesítése",
+     "key_term": "Bismarck"
+    },
+    "after": {
+     "body": "Otto von Bismarck, a német politikai élet meghatározó alakja, a 19. század második felében vezette a német egyesítési folyamatot. 1871-ben, a francia-porosz háború után, Bismarck sikeresen egyesítette Németországot, létrehozva a Német Császárságot. Az egységes Németországot a versailles-i kastély tükörtermében kiáltották ki, a legyőzött Franciaország megalázására. Bismarck politikája és a német egyesítés jelentős hatással volt a közép-európai politikai térképre és a magyar történelem alakulására is.",
+     "type": "text",
+     "heading": "Bismarck és Németország egyesítése",
+     "key_term": "Bismarck"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-01-005",
+   "lesson_id": "7c64ce39-a999-4377-813f-88fd74b47700",
+   "block_id": "ff53bdfd-29c4-4693-8378-cc52700383a4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Magyarországon a szocialista eszmék a 20. század elején kezdtek elterjedni, különösen a Tanácsköztársaság idején.”",
+   "explanation": "Az első munkásegyletek 1868-ban alakultak, a Magyarországi Szociáldemokrata Párt 1890-ben; az 1919-es Tanácsköztársaság kommunista diktatúra volt.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1gi_Szoci%C3%A1ldemokrata_P%C3%A1rt",
+     "title": "Magyarországi Szociáldemokrata Párt",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A szocializmus a 19. század közepén alakult ki, válaszul a kapitalizmus társadalmi igazságtalanságaira. Célja a társadalmi egyenlőség megteremtése és a közjavak közös birtoklása. A kommunizmus, mint a szocializmus radikálisabb formája, Karl Marx munkásságához köthető, aki a 19. században hirdette meg a proletárforradalom szükségességét. Magyarországon a szocialista eszmék a 20. század elején kezdtek elterjedni, különösen a Tanácsköztársaság idején.",
+     "type": "text",
+     "heading": "A szocializmus és kommunizmus eszméje",
+     "key_term": "szocializmus, kommunizmus"
+    },
+    "after": {
+     "body": "A szocializmus a 19. század közepén alakult ki, válaszul a kapitalizmus társadalmi igazságtalanságaira. Célja a társadalmi egyenlőség megteremtése és a közjavak közös birtoklása. A kommunizmus, mint a szocializmus radikálisabb formája, Karl Marx munkásságához köthető, aki a 19. században hirdette meg a proletárforradalom szükségességét. Magyarországon az első munkásegyletek 1868-ban alakultak, a Szociáldemokrata Párt 1890-ben; a kommunisták 1919-ben, a Tanácsköztársaság idején ragadták magukhoz a hatalmat.",
+     "type": "text",
+     "heading": "A szocializmus és kommunizmus eszméje",
+     "key_term": "szocializmus, kommunizmus"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-78-01-001": "fff67d62-4ce8-4f2d-8a82-2ba76b4a6429",
+  "HIST-78-01-002": "45a5f832-a90c-43b8-8231-890c508a93e4",
+  "HIST-78-01-003": "10dd883d-6590-41da-a6ad-68de4dc65283",
+  "HIST-78-01-004": "5833bbec-8ca1-420f-be27-2b3fb9302d26",
+  "HIST-78-01-005": "c3fb8b89-3d2f-47a6-80ec-0b586b5c082f"
+ }
+}

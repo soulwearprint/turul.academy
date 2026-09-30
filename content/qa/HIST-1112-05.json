@@ -1,0 +1,818 @@
+{
+ "nat_id": "HIST-1112-05",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 16,
+  "cards": 84,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "A 070023b4 kvíz nem kérdez a nemzetiszocializmus terrorjáról; a 9eaad9d0 kvíz [3] egyik hibás válasza valójában igaz."
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-1112-05-001",
+   "lesson_id": "dd08aeb4-eaab-4698-a157-099cff8d3780",
+   "block_id": "4e0003e0-3b7a-4711-b4dc-5e418dee9b5f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A magyar történelem szempontjából fontos, hogy a Szovjetunió a következő évtizedekben jelentős befolyással bírt”",
+   "explanation": "Erőltetett, tartalmatlan magyar vonatkozás; a valós összefüggés: a polgárháború (1918–1921) bolsevik győzelme után jött létre a Szovjetunió, és 1945 után Magyarország is a szovjet érdekszférába került.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Soviet_Union",
+     "title": "Soviet Union",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Russian_Civil_War",
+     "title": "Russian Civil War",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Szovjetunió 1922-ben alakult meg, miután a bolsevik forradalom győzelmet aratott. Az új állam célja a kommunista ideológia megvalósítása volt, amely az osztályharcra és a proletárdiktatúrára épült. A Szovjetunió területén számos nemzet élt, amelyek autonómiát kaptak, de a központi hatalom Moszkvából irányította az országot. A magyar történelem szempontjából fontos, hogy a Szovjetunió a következő évtizedekben jelentős befolyással bírt a közép-európai országokra.",
+     "type": "text",
+     "heading": "A Szovjetunió létrejötte",
+     "key_term": "Szovjetunió, 1922"
+    },
+    "after": {
+     "body": "A Szovjetunió 1922-ben alakult meg, miután a bolsevik forradalom győzelmet aratott. Az új állam célja a kommunista ideológia megvalósítása volt, amely az osztályharcra és a proletárdiktatúrára épült. A Szovjetunió területén számos nemzet élt, amelyek autonómiát kaptak, de a központi hatalom Moszkvából irányította az országot. A Szovjetunió a polgárháború (1918–1921) bolsevik győzelme után jött létre, és 1945 után Magyarország is a szovjet érdekszférába került.",
+     "type": "text",
+     "heading": "A Szovjetunió létrejötte",
+     "key_term": "Szovjetunió, 1922"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-002",
+   "lesson_id": "dd08aeb4-eaab-4698-a157-099cff8d3780",
+   "block_id": "4e0003e0-3b7a-4711-b4dc-5e418dee9b5f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A kollektivizálás során a földeket államosították”",
+   "explanation": "A földet a bolsevikok már 1917–18-ban államosították; a kollektivizálás (1929-től) a parasztgazdaságok megszüntetését és kolhozokba kényszerítését jelentette.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Collectivization_in_the_Soviet_Union",
+     "title": "Collectivization in the Soviet Union",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Dekulakization",
+     "title": "Dekulakization",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Szovjetunió gazdasági rendszere a tervgazdaságra épült, amely központilag irányította a termelést és az elosztást. A kollektivizálás során a földeket államosították, és a parasztokat kolhozokba kényszerítették. A kulákok, azaz a gazdagabb parasztok, ellenségnek számítottak, és sok esetben üldözték őket. Ez a gazdasági modell a mezőgazdasági termelés drámai csökkenéséhez vezetett, ami éhínséget okozott.",
+     "type": "text",
+     "heading": "A tervgazdaság és a kollektivizálás",
+     "key_term": "tervgazdaság, kollektivizálás, kulák, államosítás"
+    },
+    "after": {
+     "body": "A Szovjetunió gazdasági rendszere a tervgazdaságra épült, amely központilag irányította a termelést és az elosztást. A kollektivizálás (1929-től) során megszüntették a parasztgazdaságokat, és a parasztokat kolhozokba kényszerítették (a földet már 1917–18-ban államosították). A kulákok, azaz a gazdagabb parasztok, ellenségnek számítottak, és sok esetben üldözték őket. Ez a gazdasági modell a mezőgazdasági termelés drámai csökkenéséhez vezetett, ami éhínséget okozott.",
+     "type": "text",
+     "heading": "A tervgazdaság és a kollektivizálás",
+     "key_term": "tervgazdaság, kollektivizálás, kulák, államosítás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-003",
+   "lesson_id": "dd08aeb4-eaab-4698-a157-099cff8d3780",
+   "block_id": "4e0003e0-3b7a-4711-b4dc-5e418dee9b5f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A holodomor, az ukrán éhínség”: az év hiányzik",
+   "explanation": "Az éhínség éve (1932–33) hiányzik a szövegből, holott a kvíz (3322ef33) is ezt kérdezi.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Holodomor",
+     "title": "Holodomor",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Szovjetunióban a terror eszközei közé tartoztak a koncepciós perek és a GULAG, a kényszermunkatáborok rendszere. Sztálin politikája során milliók estek áldozatul a politikai tisztogatásoknak, sokan hamisan vádolták meg őket. A holodomor, az ukrán éhínség, szintén a kommunista politika következménye volt, amely milliók életét követelte. A terror célja a hatalom megszilárdítása és a társadalmi ellenállás megfékezése volt.",
+     "type": "text",
+     "heading": "A terror eszközei és áldozatai",
+     "key_term": "terror, koncepciós per, GULAG, holodomor"
+    },
+    "after": {
+     "body": "A Szovjetunióban a terror eszközei közé tartoztak a koncepciós perek és a GULAG, a kényszermunkatáborok rendszere. Sztálin politikája során milliók estek áldozatul a politikai tisztogatásoknak, sokan hamisan vádolták meg őket. A holodomor, az 1932–33-as ukrán éhínség, szintén a kommunista politika következménye volt, amely milliók életét követelte. A terror célja a hatalom megszilárdítása és a társadalmi ellenállás megfékezése volt.",
+     "type": "text",
+     "heading": "A terror eszközei és áldozatai",
+     "key_term": "terror, koncepciós per, GULAG, holodomor"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-004",
+   "lesson_id": "dd08aeb4-eaab-4698-a157-099cff8d3780",
+   "block_id": "4e0003e0-3b7a-4711-b4dc-5e418dee9b5f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Ezek a városok nemcsak a szovjet politika, hanem a magyar történelem szempontjából is jelentőséggel bírnak.”",
+   "explanation": "Erőltetett magyar vonatkozás, tartalom nélkül; a Leningrád név viszont magyarázatot igényel (Szentpétervár → Petrográd → Leningrád).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Saint_Petersburg",
+     "title": "Saint Petersburg",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Szovjetunió területe hatalmas volt, magában foglalva számos fontos várost, például Moszkvát és Leningrádot. A Kolima-vidék a GULAG egyik legismertebb helyszíne volt, ahol a legkeményebb munkatáborok működtek. Moszkva, mint a Szovjetunió fővárosa, a politikai hatalom középpontja volt, míg Leningrád a kulturális élet központja. Ezek a városok nemcsak a szovjet politika, hanem a magyar történelem szempontjából is jelentőséggel bírnak.",
+     "type": "text",
+     "heading": "Földrajzi jelentőség",
+     "key_term": "Moszkva, Leningrád, Kolima-vidék"
+    },
+    "after": {
+     "body": "A Szovjetunió területe hatalmas volt, magában foglalva számos fontos várost, például Moszkvát és Leningrádot. A Kolima-vidék a GULAG egyik legismertebb helyszíne volt, ahol a legkeményebb munkatáborok működtek. Moszkva, mint a Szovjetunió fővárosa, a politikai hatalom középpontja volt, míg Leningrád a kulturális élet központja. Leningrád régi és mai neve Szentpétervár (1914–1924 között Petrográd volt).",
+     "type": "text",
+     "heading": "Földrajzi jelentőség",
+     "key_term": "Moszkva, Leningrád, Kolima-vidék"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-005",
+   "lesson_id": "dd08aeb4-eaab-4698-a157-099cff8d3780",
+   "block_id": "4e0003e0-3b7a-4711-b4dc-5e418dee9b5f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Az 1938-as Anschluss és a müncheni konferencia eseményei a német terjeszkedés előjeleit mutatták” (a Szovjetunió leckéjében)",
+   "explanation": "Az Anschluss és München a Németországról szóló leckéhez tartozik; a szovjet vonatkozás az, hogy a Szovjetuniót nem hívták meg Münchenbe, és Sztálin 1939-ben Hitlerrel kötött paktumot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Munich_Agreement",
+     "title": "Munich Agreement",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Molotov–Ribbentrop_Pact",
+     "title": "Molotov–Ribbentrop Pact",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Szovjetunió 1922-es létrejötte és a totális diktatúra kiépítése közvetlen hatással volt a nemzetközi politikai helyzetre. Az 1938-as Anschluss és a müncheni konferencia eseményei a német terjeszkedés előjeleit mutatták, amelyek a második világháborúhoz vezettek. A Szovjetunió és a nyugati hatalmak közötti feszültségek a hidegháború időszakának alapját képezték. A magyar történelem szempontjából a Szovjetunió politikai és gazdasági befolyása meghatározó volt a 20. század második felében.",
+     "type": "text",
+     "heading": "A nemzetközi helyzet és következmények",
+     "key_term": "1938, Anschluss, müncheni konferencia"
+    },
+    "after": {
+     "body": "A Szovjetunió 1922-es létrejötte és a totális diktatúra kiépítése közvetlen hatással volt a nemzetközi politikai helyzetre. A Szovjetuniót az 1938-as müncheni konferenciára nem hívták meg, majd 1939. augusztus 23-án Sztálin a Molotov–Ribbentrop-paktumot kötötte Hitlerrel. A Szovjetunió és a nyugati hatalmak közötti feszültségek a hidegháború időszakának alapját képezték. A magyar történelem szempontjából a Szovjetunió politikai és gazdasági befolyása meghatározó volt a 20. század második felében.",
+     "type": "text",
+     "heading": "A nemzetközi helyzet és következmények",
+     "key_term": "1938, Anschluss, müncheni konferencia"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-006",
+   "lesson_id": "e9a9b0ae-fed5-49c3-bf8e-9ad80400fea3",
+   "block_id": "f755750c-e7d8-42f9-9071-074a480e8263",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "„Magyarországon is több százezer ember maradt munka nélkül”",
+   "explanation": "A szám nem ellenőrizhető: az ipari munkanélküliség adatai forrásonként eltérnek (nem volt általános nyilvántartás); a „több százezer” túlzás lehet.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "A magyar munkanélküliség adatai 1931–33 (KSH), forrásonként eltérő"
+  },
+  {
+   "id": "HIST-1112-05-007",
+   "lesson_id": "e9a9b0ae-fed5-49c3-bf8e-9ad80400fea3",
+   "block_id": "f755750c-e7d8-42f9-9071-074a480e8263",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A többpártrendszer, amely a két világháború között jellemezte Magyarországot”",
+   "explanation": "A Horthy-korszak nem működött valódi többpártrendszerként: a kormánypárt (Bethlen Egységes Pártja, majd Gömbös Nemzeti Egység Pártja) folyamatosan kormányzott, a vidéki választókerületekben nyílt szavazás volt, a választójog korlátozott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1920–1946)",
+     "title": "Kingdom of Hungary (1920–1946)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/István_Bethlen",
+     "title": "István Bethlen",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A gazdasági világválság következtében a politikai helyzet is megváltozott. A többpártrendszer, amely a két világháború között jellemezte Magyarországot, válságba került. A gazdasági nehézségek miatt sokan a politikai stabilitás elvesztésétől tartottak. A válság hatására a politikai szélsőségek megerősödtek, ami a következő évtizedek politikai eseményeire is kihatott.",
+     "type": "text",
+     "heading": "A többpártrendszer és politikai következmények",
+     "key_term": "többpártrendszer"
+    },
+    "after": {
+     "body": "A gazdasági világválság következtében a politikai helyzet is megváltozott. A Horthy-korszak korlátozott, félig autoriter parlamentarizmusa (folyamatosan kormányzó kormánypárttal, vidéken nyílt szavazással) válságba került. A gazdasági nehézségek miatt sokan a politikai stabilitás elvesztésétől tartottak. A válság hatására a politikai szélsőségek megerősödtek, ami a következő évtizedek politikai eseményeire is kihatott.",
+     "type": "text",
+     "heading": "A többpártrendszer és politikai következmények",
+     "key_term": "többpártrendszer"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-008",
+   "lesson_id": "e9a9b0ae-fed5-49c3-bf8e-9ad80400fea3",
+   "block_id": "f755750c-e7d8-42f9-9071-074a480e8263",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a gazdaság központosítása és a tervezett gazdaság irányába történt elmozdulás”",
+   "explanation": "Magyarországon 1931 után az állami beavatkozás erősödött (devizakorlátozás, adósságmoratórium), de tervgazdaság csak a szovjet mintájú rendszerben (1948 után) jött létre.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Great_Depression_in_Hungary",
+     "title": "Great Depression in Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Planned_economy",
+     "title": "Planned economy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A gazdasági világválság a piacgazdaság alapjait is megrendítette. A szabadpiaci mechanizmusok nem tudtak megküzdeni a válság okozta kihívásokkal. Magyarországon a válság hatására a gazdaság központosítása és a tervezett gazdaság irányába történt elmozdulás. A helyzet arra is rávilágított, hogy a gazdasági stabilitás megőrzéséhez állami beavatkozás szükséges.",
+     "type": "text",
+     "heading": "A piacgazdaság válsága",
+     "key_term": "piacgazdaság"
+    },
+    "after": {
+     "body": "A gazdasági világválság a piacgazdaság alapjait is megrendítette. A szabadpiaci mechanizmusok nem tudtak megküzdeni a válság okozta kihívásokkal. Magyarországon a válság hatására erősödött az állami beavatkozás (például devizakorlátozás, adósságmoratórium). A helyzet arra is rávilágított, hogy a gazdasági stabilitás megőrzéséhez állami beavatkozás szükséges.",
+     "type": "text",
+     "heading": "A piacgazdaság válsága",
+     "key_term": "piacgazdaság"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-009",
+   "lesson_id": "eda650e9-c47f-47f2-9519-30322c4d9c16",
+   "block_id": "5c3c730e-bb1a-4027-8a75-2668aa902809",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az 1920-as évek végén alakult ki”; „a fasizmus egyik ága”",
+   "explanation": "Az NSDAP-t 1919-ben alapították (1920-tól viseli ezt a nevet), Hitler 1921-től vezette; az 1920-as évek végén már tömegpárt volt. Hogy a nemzetiszocializmus a fasizmus egy ága-e, a történészek vitatják.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nazi_Party",
+     "title": "Nazi Party",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Nazism",
+     "title": "Nazism",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A nemzetiszocializmus a fasizmus egyik ága, amely Adolf Hitler vezetésével alakult ki Németországban az 1920-as évek végén. Ez az ideológia hangsúlyozza a fajok közötti hierarchiát, különösen a germán nép felsőbbrendűségét. A fajelmélet középpontjában állt a zsidóság elleni gyűlölet, amely antiszemitizmus formájában nyilvánult meg. A nemzetiszocialisták célja a német társadalom egységesítése és a nemzet felemelése volt, amelyhez a totális állam kiépítésén keresztül kívánták elérni.",
+     "type": "text",
+     "heading": "A nemzetiszocialista ideológia",
+     "key_term": "nemzetiszocializmus"
+    },
+    "after": {
+     "body": "A nemzetiszocializmus a fasizmus legradikálisabb német változata (a történészek egy része külön ideológiának tartja, mert a faji gyűlölet központi szerepet játszott benne), amely Adolf Hitler vezetésével alakult ki Németországban az 1920-as évek elején (a pártot 1919-ben alapították, Hitler 1921-től vezette). Ez az ideológia hangsúlyozza a fajok közötti hierarchiát, különösen a germán nép felsőbbrendűségét. A fajelmélet középpontjában állt a zsidóság elleni gyűlölet, amely antiszemitizmus formájában nyilvánult meg. A nemzetiszocialisták célja a német társadalom egységesítése és a nemzet felemelése volt, amelyhez a totális állam kiépítésén keresztül kívánták elérni.",
+     "type": "text",
+     "heading": "A nemzetiszocialista ideológia",
+     "key_term": "nemzetiszocializmus"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-010",
+   "lesson_id": "eda650e9-c47f-47f2-9519-30322c4d9c16",
+   "block_id": "5c3c730e-bb1a-4027-8a75-2668aa902809",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 1930-as években”; „Németország egyesítette Ausztriát”",
+   "explanation": "Névelőhiba („az 1930-as”); az Anschluss Ausztria bekebelezése volt, nem egyesítés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Anschluss",
+     "title": "Anschluss",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A náci Németország terjeszkedése a 1930-as években kezdődött, különösen az Anschluss révén, amely 1938 márciusában valósult meg. Ekkor Németország egyesítette Ausztriát, ami a nemzetiszocialista ideológia terjeszkedésének első jelentős lépése volt. A müncheni konferencia során a nyugati nagyhatalmak a csehszlovákiai Szudéta-vidék átadására kényszerítették Csehszlovákiát, ezzel legitimálva a német terjeszkedést. E lépések hozzájárultak a második világháború kitöréséhez.",
+     "type": "text",
+     "heading": "Terjeszkedés a háború előtt",
+     "key_term": "Anschluss"
+    },
+    "after": {
+     "body": "A náci Németország terjeszkedése az 1930-as években kezdődött, különösen az Anschluss révén, amely 1938 márciusában valósult meg. Ekkor Németország bekebelezte Ausztriát, ami a nemzetiszocialista ideológia terjeszkedésének első jelentős lépése volt. A müncheni konferencia során a nyugati nagyhatalmak a csehszlovákiai Szudéta-vidék átadására kényszerítették Csehszlovákiát, ezzel legitimálva a német terjeszkedést. E lépések hozzájárultak a második világháború kitöréséhez.",
+     "type": "text",
+     "heading": "Terjeszkedés a háború előtt",
+     "key_term": "Anschluss"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-011",
+   "lesson_id": "dd08aeb4-eaab-4698-a157-099cff8d3780",
+   "block_id": "b0aec3d9-8bba-4615-a033-8a82f46fdd03",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "link_hu: „A Szovjetunió létrejötte ösztönözte a magyarországi kommunista párt megerősödését, amely 1919-ben a Tanácsköztársaság idején”",
+   "explanation": "Időrendi képtelenség: a Szovjetunió 1922-ben alakult, a Tanácsköztársaság 1919-ben már megbukott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Soviet_Republic",
+     "title": "Hungarian Soviet Republic",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Soviet_Union",
+     "title": "Soviet Union",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1922-ben megalakult a Szovjetunió, amely a bolsevik forradalom eredményeként jött létre. Ezt a politikai formációt a kommunista párt irányította, amely gyorsan totális állammá fejlődött. A Szovjetunió megalakulása világszerte hatással volt a kommunista mozgalmakra, amelyek más országokban is erősödtek, például Kínában és Németországban.",
+     "type": "world",
+     "year": "1922",
+     "heading": "A Szovjetunió megalakulása",
+     "link_hu": "A Szovjetunió létrejötte ösztönözte a magyarországi kommunista párt megerősödését, amely 1919-ben a Tanácsköztársaság idején próbálta átvenni a hatalmat."
+    },
+    "after": {
+     "body": "1922-ben megalakult a Szovjetunió, amely a bolsevik forradalom eredményeként jött létre. Ezt a politikai formációt a kommunista párt irányította, amely gyorsan totális állammá fejlődött. A Szovjetunió megalakulása világszerte hatással volt a kommunista mozgalmakra, amelyek más országokban is erősödtek, például Kínában és Németországban.",
+     "type": "world",
+     "year": "1922",
+     "heading": "A Szovjetunió megalakulása",
+     "link_hu": "A Szovjetunió létrejötte előtt, 1919-ben a magyar kommunisták már létrehozták a Tanácsköztársaságot; a KMP vezetői (például Kun Béla) a bukás után a Szovjetunióban találtak menedéket."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-012",
+   "lesson_id": "dd08aeb4-eaab-4698-a157-099cff8d3780",
+   "block_id": "b0aec3d9-8bba-4615-a033-8a82f46fdd03",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "„Ausztria Németországhoz csatlakozott”; link_hu: „a magyar politikai elit is a totális diktatúrák irányába mozdult el”",
+   "explanation": "Az Anschluss Ausztria erőszakos bekebelezése volt (1938. március), a müncheni konferencián Csehszlovákiát meg sem kérdezték. A valós magyar kapcsolat: az 1938. november 2-i első bécsi döntés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Anschluss",
+     "title": "Anschluss",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/First_Vienna_Award",
+     "title": "First Vienna Award",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1938-ban Ausztria Németországhoz csatlakozott, amit Anschluss néven ismerünk. Ez a lépés a náci Németország terjeszkedésének része volt, amely destabilizálta a közép-európai politikai helyzetet. A müncheni konferencia során a nyugati hatalmak megpróbálták elkerülni a háborút, de ezzel gyengítették a demokratikus államokat, ami hozzájárult a totális diktatúrák megerősödéséhez.",
+     "type": "world",
+     "year": "1938",
+     "heading": "Az Anschluss és a müncheni konferencia",
+     "link_hu": "A müncheni konferencia következményeként a magyar politikai elit is a totális diktatúrák irányába mozdult el, ami a magyarországi politikai helyzet alakulására is hatással volt."
+    },
+    "after": {
+     "body": "1938 márciusában a náci Németország bekebelezte Ausztriát (Anschluss). Szeptemberben a müncheni konferencián Németország, Nagy-Britannia, Franciaország és Olaszország Csehszlovákia megkérdezése nélkül a Szudéta-vidéket Németországnak ítélte.",
+     "type": "world",
+     "year": "1938",
+     "heading": "Az Anschluss és a müncheni konferencia",
+     "link_hu": "A müncheni döntés után az 1938. november 2-i első bécsi döntés Magyarországnak juttatta a Felvidék déli, magyarlakta sávját és Kassát."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-013",
+   "lesson_id": "e9a9b0ae-fed5-49c3-bf8e-9ad80400fea3",
+   "block_id": "2e52ba29-054b-4f0d-8842-36392e39c367",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: „A New Deal politikája inspirálta Magyarországon is az állami beavatkozásokat”",
+   "explanation": "A kapcsolatra nincs bizonyíték; a magyar kormányok devizakorlátozással és moratóriummal reagáltak, de a New Deal átvételéről nincs adat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Great_Depression_in_Hungary",
+     "title": "Great Depression in Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/New_Deal",
+     "title": "New Deal",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az Egyesült Államokban Franklin D. Roosevelt 1933-ban bevezette a New Deal programját, amelynek célja a gazdasági válság kezelésére és a munkanélküliség csökkentésére irányult. A program keretein belül számos állami beavatkozást indítottak a gazdaság élénkítése érdekében, beleértve a munkahelyteremtő projekteket és a bankrendszer stabilizálását. A New Deal hatására az Egyesült Államok gazdasága fokozatosan kezdett helyreállni, és ez más országokban is hasonló politikák bevezetését inspirálta.",
+     "type": "world",
+     "year": "1933",
+     "heading": "Franklin D. Roosevelt New Deal politikája",
+     "link_hu": "A New Deal politikája inspirálta Magyarországon is az állami beavatkozásokat a gazdaság élénkítése érdekében, hiszen a válság hatásait itt is kezelni kellett."
+    },
+    "after": {
+     "body": "Az Egyesült Államokban Franklin D. Roosevelt 1933-ban bevezette a New Deal programját, amelynek célja a gazdasági válság kezelésére és a munkanélküliség csökkentésére irányult. A program keretein belül számos állami beavatkozást indítottak a gazdaság élénkítése érdekében, beleértve a munkahelyteremtő projekteket és a bankrendszer stabilizálását. A New Deal hatására az Egyesült Államok gazdasága fokozatosan kezdett helyreállni, és ez más országokban is hasonló politikák bevezetését inspirálta.",
+     "type": "world",
+     "year": "1933",
+     "heading": "Franklin D. Roosevelt New Deal politikája",
+     "link_hu": "A magyar kormányok az 1930-as években szintén állami beavatkozással próbálták kezelni a válságot (például devizakorlátozás, adósságmoratórium), de a New Deal átvételéről nincs adat."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-014",
+   "lesson_id": "eda650e9-c47f-47f2-9519-30322c4d9c16",
+   "block_id": "903f563e-39fc-4e02-9e89-ae94b3825e99",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„az Új Megállapodás programját”",
+   "explanation": "A program neve New Deal; az „Új Megállapodás” fordítás a többi leckében nem szerepel (terminológiai ütközés).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/New_Deal",
+     "title": "New Deal",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1933-ban az Egyesült Államokban Franklin D. Roosevelt elnök bevezette az Új Megállapodás programját, amely a gazdasági válság kezelésére irányult. A program célja a munkahelyteremtés és a gazdasági stabilitás helyreállítása volt, amely számos európai országra is hatással volt, így a német gazdaságra is. A gazdasági nehézségek és a politikai instabilitás hozzájárultak a nemzetiszocialista párt felemelkedéséhez Németországban.",
+     "type": "world",
+     "year": "1933",
+     "heading": "A nagy gazdasági világválság következményei",
+     "link_hu": "A gazdasági válság miatt a német állampolgárok egyre inkább a radikális megoldások felé fordultak, ami lehetővé tette Adolf Hitler hatalomra jutását."
+    },
+    "after": {
+     "body": "1933-ban az Egyesült Államokban Franklin D. Roosevelt elnök bevezette a New Deal programját, amely a gazdasági válság kezelésére irányult. A program célja a munkahelyteremtés és a gazdasági stabilitás helyreállítása volt. A gazdasági nehézségek és a politikai instabilitás Németországban hozzájárultak a nemzetiszocialista párt felemelkedéséhez.",
+     "type": "world",
+     "year": "1933",
+     "heading": "A nagy gazdasági világválság következményei",
+     "link_hu": "A gazdasági válság miatt a német állampolgárok egyre inkább a radikális megoldások felé fordultak, ami lehetővé tette Adolf Hitler hatalomra jutását."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-015",
+   "lesson_id": "eda650e9-c47f-47f2-9519-30322c4d9c16",
+   "block_id": "903f563e-39fc-4e02-9e89-ae94b3825e99",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„megvitassák Csehszlovákia területi követeléseit”; link_hu: Magyarország „területi követeléseket és a trianoni békeszerződés revízióját hozta”",
+   "explanation": "A konferencián Németország követelései szerepeltek Csehszlovákia ellen; Csehszlovákiát nem hívták meg. A valós magyar következmény: az 1938. november 2-i első bécsi döntés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Munich_Agreement",
+     "title": "Munich Agreement",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/First_Vienna_Award",
+     "title": "First Vienna Award",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1938 szeptemberében a müncheni konferencián Németország, Nagy-Britannia, Franciaország és Olaszország vezetői találkoztak, hogy megvitassák Csehszlovákia területi követeléseit. A konferencia döntései, amelyek a területek engedéséről szóltak, hozzájárultak a második világháború kirobbanásához, mivel Hitler további terjeszkedését ösztönözték. A nyugati hatalmak politikája a béke fenntartására irányult, de végül a náci terjeszkedéshez vezetett.",
+     "type": "world",
+     "year": "1938",
+     "heading": "A müncheni konferencia",
+     "link_hu": "A müncheni konferencia döntései lehetővé tették a náci Németország számára, hogy tovább terjeszkedjen, ami Magyarország számára is területi követeléseket és a trianoni békeszerződés revízióját hozta."
+    },
+    "after": {
+     "body": "1938 szeptemberében a müncheni konferencián Németország, Nagy-Britannia, Franciaország és Olaszország vezetői Németország Csehszlovákiával szembeni területi követeléseiről tárgyaltak; Csehszlovákiát nem hívták meg. A döntés a Szudéta-vidéket Németországnak ítélte, és Hitler további terjeszkedését ösztönözte.",
+     "type": "world",
+     "year": "1938",
+     "heading": "A müncheni konferencia",
+     "link_hu": "A müncheni döntés nyomán az 1938. november 2-i első bécsi döntés Magyarországnak juttatta a Felvidék déli sávját és Kassát; ezzel a revízió német–olasz döntőbíráskodás útján indult el."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-016",
+   "lesson_id": "dd08aeb4-eaab-4698-a157-099cff8d3780",
+   "block_id": "3322ef33-ba4a-4912-9ab2-947390403358",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 1932-1933-as éhínség”",
+   "explanation": "Névelőhiba („az 1932–1933-as”).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Holodomor",
+     "title": "Holodomor",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Egy politikai mozgalom",
+      "B) Éhínség Ukrajnában",
+      "C) A Szovjetunió iparosítása",
+      "D) A Szovjetunió megalakulása"
+     ],
+     "question": "Mi volt a holodomor?",
+     "explanation": "A holodomor a 1932-1933-as éhínség, amely Ukrajnában következett be, és a szovjet állam politikai intézkedései miatt milliók haltak éhen.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Egy politikai mozgalom",
+      "B) Éhínség Ukrajnában",
+      "C) A Szovjetunió iparosítása",
+      "D) A Szovjetunió megalakulása"
+     ],
+     "question": "Mi volt a holodomor?",
+     "explanation": "A holodomor az 1932–1933-as ukrajnai éhínség volt, amelyet a szovjet állam politikai intézkedései (kényszerű gabonabeszolgáltatás) súlyosbítottak.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-017",
+   "lesson_id": "eda650e9-c47f-47f2-9519-30322c4d9c16",
+   "block_id": "9eaad9d0-986c-4961-a895-417ebb0c48da",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Mi a fasizmus és a nemzetiszocializmus közötti fő különbség?” (a kulcs csak a keletkezés helye)",
+   "explanation": "A kérdés a fő különbségre kérdez, a kulcs viszont csak a helyet adja meg; a valódi különbség a faji ideológia központi szerepe a nemzetiszocializmusban.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fascism",
+     "title": "Fascism",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Nazism",
+     "title": "Nazism",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A fasizmus a szocializmusra épít, míg a nemzetiszocializmus a fajelméletre.",
+      "B) A fasizmus demokratikus, míg a nemzetiszocializmus totális államot épít.",
+      "C) A fasizmus Olaszországban alakult ki, míg a nemzetiszocializmus Németországban.",
+      "D) A fasizmus nem tartalmaz antiszemitizmust, míg a nemzetiszocializmus igen."
+     ],
+     "question": "Mi a fasizmus és a nemzetiszocializmus közötti fő különbség?",
+     "explanation": "A fasizmus Olaszországban, míg a nemzetiszocializmus Németországban alakult ki, de mindkettő autoriter ideológia.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A fasizmus a szocializmusra épít, míg a nemzetiszocializmus a fajelméletre.",
+      "B) A fasizmus demokratikus, míg a nemzetiszocializmus totális államot épít.",
+      "C) A fasizmus Olaszországban alakult ki, míg a nemzetiszocializmus Németországban.",
+      "D) A fasizmus nem tartalmaz antiszemitizmust, míg a nemzetiszocializmus igen."
+     ],
+     "question": "Hol alakult ki a fasizmus, és hol a nemzetiszocializmus?",
+     "explanation": "A fasizmus Olaszországban, míg a nemzetiszocializmus Németországban alakult ki, de mindkettő autoriter ideológia.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-018",
+   "lesson_id": "eda650e9-c47f-47f2-9519-30322c4d9c16",
+   "block_id": "9eaad9d0-986c-4961-a895-417ebb0c48da",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options[1]",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "B) Ő volt a német hadsereg főparancsnoka.",
+   "explanation": "Hitler valóban a német fegyveres erők főparancsnoka volt (1934-től, 1938-tól közvetlenül); a B) is helyes, több jó válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Adolf_Hitler",
+     "title": "Adolf Hitler",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Ő volt a náci párt vezetője és Németország Führere.",
+      "B) Ő volt a német hadsereg főparancsnoka.",
+      "C) Ő volt a német gazdaság minisztere.",
+      "D) Ő volt a német parlament elnöke."
+     ],
+     "question": "Milyen szerepet játszott Adolf Hitler a nemzetiszocialista Németországban?",
+     "explanation": "Adolf Hitler a náci párt vezetője volt, és Führerként irányította Németországot.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Ő volt a náci párt vezetője és Németország Führere.",
+      "Ő volt a weimari köztársaság első elnöke.",
+      "C) Ő volt a német gazdaság minisztere.",
+      "D) Ő volt a német parlament elnöke."
+     ],
+     "question": "Milyen szerepet játszott Adolf Hitler a nemzetiszocialista Németországban?",
+     "explanation": "Adolf Hitler a náci párt vezetője volt, és Führerként irányította Németországot.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-05-019",
+   "lesson_id": null,
+   "block_id": "070023b4-3473-48b4-87a7-c7630a8e5ee8",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 4,
+   "field": "options[0]",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Melyik fogalom kapcsolódik a mezőgazdaság államosításához és a kulákok üldözéséhez? Tervgazdaság”",
+   "explanation": "A tervgazdaság tág fogalom; a földmagántulajdon megszüntetésének és a kulákok üldözésének fogalma a kollektivizálás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Collectivization_in_the_Soviet_Union",
+     "title": "Collectivization in the Soviet Union",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Tervgazdaság",
+      "B) Piacgazdaság",
+      "C) New Deal",
+      "D) Fasizmus"
+     ],
+     "question": "Melyik fogalom kapcsolódik a mezőgazdaság államosításához és a kulákok üldözéséhez?",
+     "explanation": "A tervgazdaság a Szovjetunióban a mezőgazdaság államosítását és a kulákok kollektivizálását jelentette.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Kollektivizálás",
+      "B) Piacgazdaság",
+      "C) New Deal",
+      "D) Fasizmus"
+     ],
+     "question": "Melyik fogalom kapcsolódik a mezőgazdaság államosításához és a kulákok üldözéséhez?",
+     "explanation": "A kollektivizálás során a parasztgazdaságokat megszüntették, a parasztokat kolhozokba kényszerítették, a kulákokat pedig üldözték.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-1112-05-001": "7c4e8957-d65b-49c2-a0ba-1c5308238b48",
+  "HIST-1112-05-002": "3dc46b3c-3615-4029-b0d1-7b362e87800f",
+  "HIST-1112-05-003": "2855c5aa-323b-407e-8536-68db46152e23",
+  "HIST-1112-05-004": "d2c96e67-8eb6-4362-a42d-f88692762cb8",
+  "HIST-1112-05-005": "04db1999-78f7-41c5-86ef-6eb5f9f1f7ef",
+  "HIST-1112-05-007": "0306782c-d550-44bf-8e18-d77318b8ec9c",
+  "HIST-1112-05-008": "52086810-7cbc-43f8-ab1f-d9bfaaa7c9eb",
+  "HIST-1112-05-009": "fcc3a968-4983-4caa-8a4d-83e52d8f1d09",
+  "HIST-1112-05-010": "d0897f94-f2f8-47ce-8a21-dfef68911e03",
+  "HIST-1112-05-011": "a9178cb8-1d82-4567-a9d2-a5182e87c5cd",
+  "HIST-1112-05-012": "06239c22-90ca-4390-b297-1ab734345d27",
+  "HIST-1112-05-013": "af1dbb8f-ca9e-40f0-8b52-e19adab06f10",
+  "HIST-1112-05-014": "4e474a68-7d20-45cc-9e48-80393fd52b38",
+  "HIST-1112-05-015": "f7e30ac7-a422-4a2d-994e-68a3d4e694a1",
+  "HIST-1112-05-016": "5e7e828a-bddf-4adb-bd5e-50010cc42227",
+  "HIST-1112-05-017": "90496f7b-ca08-4ae9-8259-f1d46110bc60",
+  "HIST-1112-05-018": "7f65e0cf-3dbb-4c93-9b2a-1d9085b8f983",
+  "HIST-1112-05-019": "a8d03268-c77e-4f5b-b304-7367eada9a18"
+ }
+}

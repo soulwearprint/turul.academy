@@ -1,0 +1,271 @@
+{
+ "nat_id": "HIST-78-12",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 13,
+  "cards": 69,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-78-12-001",
+   "lesson_id": "deebe12f-363d-4dd8-b36d-c1f9dd71dab0",
+   "block_id": "6516e690-f886-42d9-bf86-39f9c3299f1b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„2012. április 25-én lépett hatályba Magyarország Alaptörvénye”",
+   "explanation": "Az Alaptörvényt az Országgyűlés 2011. április 18-án fogadta el, a köztársasági elnök 2011. április 25-én írta alá, és 2012. január 1-jén lépett hatályba.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fundamental_Law_of_Hungary",
+     "title": "Fundamental Law of Hungary",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "2012. április 25-én lépett hatályba Magyarország Alaptörvénye, amely a modern magyar állam alapdokumentuma. Az Alaptörvény rögzíti az állam alapelveit, a jogállamiságot és a demokratikus intézményrendszert. Fontos szerepet játszik a jogi keretek meghatározásában, és biztosítja a polgárok jogait. Az Alaptörvény elfogadása jelentős mérföldkő volt a magyar demokratikus fejlődésben.",
+     "type": "text",
+     "heading": "Az Alaptörvény jelentősége",
+     "key_term": "Alaptörvény"
+    },
+    "after": {
+     "body": "Magyarország Alaptörvényét 2011 áprilisában fogadta el az Országgyűlés, és 2012. január 1-jén lépett hatályba, amely a modern magyar állam alapdokumentuma. Az Alaptörvény rögzíti az állam alapelveit, a jogállamiságot és a demokratikus intézményrendszert. Fontos szerepet játszik a jogi keretek meghatározásában, és biztosítja a polgárok jogait. Az Alaptörvény elfogadása jelentős mérföldkő volt a magyar demokratikus fejlődésben.",
+     "type": "text",
+     "heading": "Az Alaptörvény jelentősége",
+     "key_term": "Alaptörvény"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-12-002",
+   "lesson_id": "deebe12f-363d-4dd8-b36d-c1f9dd71dab0",
+   "block_id": "8fefea8b-9a45-430e-a79b-20af1671beb4",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "question, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mikor fogadták el Magyarország Alaptörvényét?” — megjelölt: 2012 („2012. április 25-én fogadták el”).",
+   "explanation": "Az Alaptörvényt 2011-ben fogadták el (ez nincs a válaszok között); 2012. január 1-jén lépett hatályba.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fundamental_Law_of_Hungary",
+     "title": "Fundamental Law of Hungary",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 2010",
+      "B) 2012",
+      "C) 2015",
+      "D) 2020"
+     ],
+     "question": "Mikor fogadták el Magyarország Alaptörvényét?",
+     "explanation": "Magyarország Alaptörvényét 2012. április 25-én fogadták el, és ez a dokumentum a modern jogrend alapját képezi.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 2010",
+      "B) 2012",
+      "C) 2015",
+      "D) 2020"
+     ],
+     "question": "Melyik évben lépett hatályba Magyarország Alaptörvénye?",
+     "explanation": "Az Alaptörvényt az Országgyűlés 2011 áprilisában fogadta el, és 2012. január 1-jén lépett hatályba.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-12-003",
+   "lesson_id": null,
+   "block_id": "210a5d66-9fb6-49a2-9743-42eba9b2ce92",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "question, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik évben fogadták el Magyarország Alaptörvényét?” — megjelölt: 2012.",
+   "explanation": "Mint fent: elfogadás 2011, hatálybalépés 2012. január 1.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fundamental_Law_of_Hungary",
+     "title": "Fundamental Law of Hungary",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1990",
+      "B) 2012",
+      "C) 2004",
+      "D) 1989"
+     ],
+     "question": "Melyik évben fogadták el Magyarország Alaptörvényét?",
+     "explanation": "Magyarország Alaptörvényét 2012. április 25-én fogadták el, amely az ország jogi alapját képezi.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1990",
+      "B) 2012",
+      "C) 2004",
+      "D) 1989"
+     ],
+     "question": "Melyik évben lépett hatályba Magyarország Alaptörvénye?",
+     "explanation": "Az Alaptörvényt 2011 áprilisában fogadták el, és 2012. január 1-jén lépett hatályba, felváltva az 1949-es (1989-ben alaposan átírt) alkotmányt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-12-004",
+   "lesson_id": "deebe12f-363d-4dd8-b36d-c1f9dd71dab0",
+   "block_id": "6516e690-f886-42d9-bf86-39f9c3299f1b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Magyarországon az általános választójogot 1990 óta érvényesítik”",
+   "explanation": "Az általános, egyenlő és titkos választójog először 1945-ben érvényesült (a nők egy része 1920-tól szavazhatott); 1990 óta élhetnek vele szabad, többpárti választásokon.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1945_Hungarian_parliamentary_election",
+     "title": "1945 Hungarian parliamentary election",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az általános választójog a demokratikus államok alapelve, amely biztosítja, hogy minden nagykorú állampolgár részt vehessen a választásokon. Magyarországon az általános választójogot 1990 óta érvényesítik, lehetővé téve a polgárok számára, hogy szabadon válasszák meg képviselőiket. Ez a jog biztosítja a demokratikus részvételt és a politikai pluralizmust. Az általános választójog elengedhetetlen a demokratikus társadalom működéséhez és fejlődéséhez.",
+     "type": "text",
+     "heading": "Az általános választójog",
+     "key_term": "általános választójog"
+    },
+    "after": {
+     "body": "Az általános választójog a demokratikus államok alapelve, amely biztosítja, hogy minden nagykorú állampolgár részt vehessen a választásokon. Magyarországon az általános, egyenlő és titkos választójog először 1945-ben érvényesült; szabad, többpárti választásokon 1990 óta választhatják meg a polgárok képviselőiket. Ez a jog biztosítja a demokratikus részvételt és a politikai pluralizmust. Az általános választójog elengedhetetlen a demokratikus társadalom működéséhez és fejlődéséhez.",
+     "type": "text",
+     "heading": "Az általános választójog",
+     "key_term": "általános választójog"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-12-005",
+   "lesson_id": "7ccc8ddb-2667-4508-9e2d-178c1fba23d7",
+   "block_id": "296aadf9-0f91-40fb-b37b-87628695062b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„az elnöki rendszer 1776-ban, a Függetlenségi nyilatkozattal vette kezdetét”",
+   "explanation": "A Függetlenségi nyilatkozat (1776) nem hozott létre elnöki rendszert; azt az 1787-es alkotmány vezette be, az első elnök, George Washington 1789-ben lépett hivatalba.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Constitution_of_the_United_States",
+     "title": "Constitution of the United States",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az Amerikai Egyesült Államokban az elnöki rendszer 1776-ban, a Függetlenségi nyilatkozattal vette kezdetét, amely megerősítette a nép jogait és a demokratikus elveket. Az elnök, mint a végrehajtó hatalom vezetője, fontos szerepet játszik a politikai döntéshozatalban, a kongresszussal együttműködve. Az elnöki rendszer biztosítja a hatalmi ágak elválasztását, ami a demokrácia védelmét szolgálja. Az amerikai példa szintén hatással volt a magyar politikai gondolkodásra és a demokratikus intézmények fejlődésére.",
+     "type": "text",
+     "heading": "Az elnöki rendszer az Amerikai Egyesült Államokban",
+     "key_term": "elnök"
+    },
+    "after": {
+     "body": "Az Amerikai Egyesült Államokban az 1776-os Függetlenségi nyilatkozat kimondta a nép jogait, az elnöki rendszert pedig az 1787-es alkotmány vezette be; az első elnök, George Washington 1789-ben lépett hivatalba. Az elnök, mint a végrehajtó hatalom vezetője, fontos szerepet játszik a politikai döntéshozatalban, a kongresszussal együttműködve. Az elnöki rendszer biztosítja a hatalmi ágak elválasztását, ami a demokrácia védelmét szolgálja. Az amerikai példa szintén hatással volt a magyar politikai gondolkodásra és a demokratikus intézmények fejlődésére.",
+     "type": "text",
+     "heading": "Az elnöki rendszer az Amerikai Egyesült Államokban",
+     "key_term": "elnök"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-12-006",
+   "lesson_id": "deebe12f-363d-4dd8-b36d-c1f9dd71dab0",
+   "block_id": "6f6f3fbc-733a-45a8-bcc8-8671f082965c",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "heading",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "Cím: „Nincs konkrét globális párhuzam” — a kártya szövege viszont párhuzamokat hoz.",
+   "explanation": "A cím ellentmond a tartalomnak.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A modern demokratikus államok kialakulása és alkotmányos fejlődése más országokban is megfigyelhető, például az Egyesült Államokban és Franciaországban, ahol szintén fontos szerepet játszott az alkotmány és a hatalmi ágak elválasztása.",
+     "type": "world",
+     "year": "",
+     "heading": "Nincs konkrét globális párhuzam",
+     "link_hu": ""
+    },
+    "after": {
+     "body": "A modern demokratikus államok kialakulása és alkotmányos fejlődése más országokban is megfigyelhető, például az Egyesült Államokban és Franciaországban, ahol szintén fontos szerepet játszott az alkotmány és a hatalmi ágak elválasztása.",
+     "type": "world",
+     "year": "",
+     "heading": "Alkotmányok és hatalommegosztás más országokban",
+     "link_hu": ""
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-78-12-001": "2643adb2-4ca5-4bc1-a188-c491a2113c5d",
+  "HIST-78-12-002": "7484678f-6985-4b07-8fa9-48c8c64e390d",
+  "HIST-78-12-003": "ee92d67e-a5ae-401a-a88b-a765b4790276",
+  "HIST-78-12-004": "f497c5be-e645-401b-89b2-8f30868c21ba",
+  "HIST-78-12-005": "9ae2f45b-6294-4dc2-b9f4-95528122aaea",
+  "HIST-78-12-006": "103bca2f-5073-462a-bfa7-1afcd55f13bb"
+ }
+}

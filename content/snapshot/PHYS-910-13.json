@@ -1,0 +1,1240 @@
+{
+ "nat_id": "PHYS-910-13",
+ "topic_id": "1909524d-ef24-4f2b-80fb-f9ee237d8500",
+ "title_hu": "Az atomok és a fény",
+ "grade": 10,
+ "lessons": [
+  {
+   "lesson_id": "23274652-fb08-4a6b-93c8-f6847c870204",
+   "title_hu": "A fény természete és jellemzése",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "c0557182-0e11-43a7-9cf0-73ebdc55d105",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A fény elektromágneses hullám, ami azt jelenti, hogy az elektromos és mágneses mezők együttesen terjednek a térben. Képzelj el egy vízfelületet, ahol a hullámok terjednek: a fény is hasonlóan viselkedik, csak éppen nem vízben, hanem vákuumban vagy levegőben. A fény terjedési sebessége vákuumban körülbelül 300 000 km/s, ami hihetetlen gyorsaságot jelent. A fény jellemzéséhez fontos fizikai mennyiségek tartoznak, mint az amplitúdó, frekvencia és hullámhossz.",
+       "type": "text",
+       "heading": "A fény mint elektromágneses hullám",
+       "key_term": "elektromágneses hullám"
+      },
+      {
+       "body": "A frekvencia (Hz) a hullámok számát jelzi, ami egy adott időegység alatt áthalad egy adott ponton. Például, ha egy zene hangszórója 440 Hz-en szól, az azt jelenti, hogy másodpercenként 440 hullámot bocsát ki. A hullámhossz a hullám egy teljes ciklusának hosszát jelenti, amit a fény esetében nanométerben (nm) mérünk. A látható fény hullámhossza 400 nm-től 700 nm-ig terjed, ami a szivárvány színeit is meghatározza.",
+       "type": "text",
+       "heading": "Fizikai mennyiségek: frekvencia és hullámhossz",
+       "key_term": "frekvencia, hullámhossz"
+      },
+      {
+       "body": "A fényelektromos jelenség azt jelenti, hogy a fény hatására elektronok szabadulnak fel egy anyagból, például fémből. Képzeld el, hogy egy napelem napfény hatására képes áramot termelni. A fotonok (a fény részecskéi) energiát adnak át az elektronoknak, amelyek így mozgásba lendülnek. Ez a jelenség nemcsak a napelemekben, hanem fénymérőkben is fontos szerepet játszik, ahol a fény mennyiségét mérjük.",
+       "type": "text",
+       "heading": "A fényelektromos jelenség",
+       "key_term": "fényelektromos jelenség, foton"
+      },
+      {
+       "body": "A fotocella egy olyan eszköz, amely a fényelektromos jelenséget használja, hogy elektromos áramot termeljen. Például, amikor a napfény megérinti a fotocellát, a benne lévő elektronok mozgásba lendülnek, és áramot generálnak. A fénymérők a fény erősségét mérik, és gyakran használják őket fényképezőgépekben, hogy a megfelelő expozíciós beállítást biztosítsák a legjobb képminőség érdekében.",
+       "type": "text",
+       "heading": "Fotocella és fénymérő működése",
+       "key_term": "fotocella, fénymérő"
+      },
+      {
+       "body": "A digitális fényképezőgépek a fényelektromos jelenséget alkalmazzák a képrögzítés során. Amikor megnyomod a gombot, a fény a lencsén keresztül a képérzékelőre (szenzorra) jut, ahol a fotonok által generált elektronok alapján kép alakul ki. A fényképezőgép beállításai, mint a záridő és az ISO érzékenység, befolyásolják a kép világosságát és élességét, így fontos, hogy ezeket jól értsük.",
+       "type": "text",
+       "heading": "Digitális fényképek készítése",
+       "key_term": "digitális fényképezőgép"
+      },
+      {
+       "body": "A fényelektromos jelenség nem csupán a napelemekben van jelen, hanem számos más eszközben is, mint például a fénymásolókban és a digitális fényképezőgépekben. Gondolj csak bele, a telefonod kamerája is a fény által generált elektronok mozgását használja, hogy a képeket rögzítse. Ezen kívül az optoelektronikai eszközök, mint például a lézeres nyomtatók is ezt a jelenséget alkalmazzák a működésükhöz.",
+       "type": "text",
+       "heading": "Fényelektromos jelenség a mindennapokban",
+       "key_term": "optoelektronika"
+      }
+     ]
+    },
+    {
+     "block_id": "f07d0c19-1f3d-4f31-8e41-03075babb9f6",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal diák éppen hazaérkezik, és felkapcsolja a villanyt. Ezzel a mozdulattal a villanykörte belsejében lévő áramkör aktiválódik, és az elektromos áram elkezd áramlani a vezetékeken keresztül.",
+       "type": "story",
+       "heading": "A fény bekapcsolása"
+      },
+      {
+       "body": "Ahogy az áram áthalad a villanykörtén, az elektromágneses hullámok keletkeznek. Ezek a hullámok a fény sebességével (c) terjednek, ami a vákuumban körülbelül 300 000 km/s. A fény a hullámok jellemzőivel bír: van amplitúdója, frekvenciája és hullámhossza, amelyek meghatározzák a fény színét és intenzitását.",
+       "type": "story",
+       "heading": "A fény elektromágneses hullámként terjed"
+      },
+      {
+       "body": "A diák észreveszi, hogy a fény erősebbé válik, ahogy közelebb lép a villanykörtéhez. Ez a jelenség a fényelektromos jelenség, amely során a fény hatására elektronok szabadulnak fel egy anyagból. Ezek a fotonok képesek elektronokat kiszabadítani az anyagból, ami a fénymérő működéséhez is kapcsolódik.",
+       "type": "story",
+       "heading": "A fényelektromos jelenség"
+      },
+      {
+       "body": "A diák emlékszik, hogy a fotocella, amelyet a napelem is használ, a fényelektromos jelenség alapján működik. Amikor a napfény (fotonok) éri a napelem felületét, az elektronokat gerjeszt, ami áramot termel. Ez az áram aztán felhasználható különböző eszközök működtetésére.",
+       "type": "story",
+       "heading": "A fotocella működése"
+      },
+      {
+       "body": "A diák most egy fényképezőgéppel készít képet a barátairól. A fényképezőgép érzékelője is a fényelektromos jelenséget használja. Ahogy a fény a tárgyakról visszaverődik és a gép érzékelőjére jut, a fotonok energiája digitális jelekké alakul, amelyekből a kép létrejön. A gép beállításai, mint a záridő és az ISO érzékenység, befolyásolják a kép minőségét.",
+       "type": "story",
+       "heading": "Digitális fénykép készítése"
+      }
+     ]
+    },
+    {
+     "block_id": "52d9fe38-94cc-4422-8544-0f4cc944f3f0",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az elektromágneses hullám szerkezete: az elektromos és mágneses mezők kölcsönhatása.",
+       "heading": "A fény elektromágneses hullám",
+       "description": "A diagram bemutatja az elektromágneses hullám szerkezetét, amely tartalmazza az elektromos és mágneses mezők váltakozását, valamint a terjedési irányt.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A fény terjedési sebessége, frekvenciája és hullámhossza közötti kapcsolat.",
+       "heading": "Fizikai mennyiségek jellemzése",
+       "description": "A grafikonon a hullámhossz (λ), frekvencia (f) és terjedési sebesség (v) közötti összefüggés látható, ahol a v = f * λ képlet is szerepel.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A fényelektromos jelenség folyamata: fény hatására elektronok szabadulnak fel.",
+       "heading": "Fényelektromos jelenség",
+       "description": "Az illusztráció bemutatja, hogyan hat a fény egy fotocellára, és hogyan szabadít fel elektront, amely áramot generál.",
+       "visual_type": "illusztráció"
+      },
+      {
+       "type": "visual",
+       "caption": "A foton: a fény legkisebb részecskéje, amely energia- és impulzushordozó.",
+       "heading": "Foton",
+       "description": "A grafika ábrázolja a foton tulajdonságait, beleértve az energiáját és impulzusát, valamint a fotonok különböző hullámhosszait.",
+       "visual_type": "grafika"
+      },
+      {
+       "type": "visual",
+       "caption": "A digitális fényképezőgép működése: fény beérkezése és a képrögzítés folyamata.",
+       "heading": "Digitális fényképezőgép működése",
+       "description": "A diagram bemutatja a digitális fényképezőgép felépítését, beleértve a lencsét, érzékelőt és a képrögzítést.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A megvilágító fény intenzitása és a fotonok energiája közötti összefüggés.",
+       "heading": "Megvilágító fény és foton energia",
+       "description": "A grafikonon a megvilágító fény intenzitása és a fotonok energiája közötti kapcsolat látható, amely a Planck-állandó használatával van megjelenítve.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A fényképezőgép beállításai és a távolság hatása a képminőségre.",
+       "heading": "Fényképek készítése különböző távolságokról",
+       "description": "A vázlat bemutatja, hogyan változik a fényképek minősége különböző távolságokban a tárgyaktól, és a fényképezőgép beállításainak hatását.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A fénymérő működése: fényintenzitás mérése a fényelektromos jelenség alapján.",
+       "heading": "Fénymérő működése",
+       "description": "A diagram bemutatja, hogyan működik egy fénymérő, és hogyan méri a fény intenzitását a fényelektromos jelenség segítségével.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "8906c6cb-c3d4-478e-86bf-421d7dc89d12",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A fényelektromos jelenség alapja a napelemek működésének, amelyek napenergiát alakítanak át elektromos árammá. Ezt a technológiát széles körben használják a megújuló energiaforrások között.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 30,
+          "w": 100,
+          "x": 150,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 160,
+          "y": 115,
+          "text": "Fémlemez",
+          "type": "label"
+         },
+         {
+          "x1": 50,
+          "x2": 150,
+          "y1": 150,
+          "y2": 150,
+          "type": "wave",
+          "cycles": 3,
+          "amplitude": 20
+         },
+         {
+          "x": 20,
+          "y": 140,
+          "text": "Fény (hullám)",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A fény és az elektronok kapcsolata",
+       "discovery": "A fényelektromos jelenséget Albert Einstein magyarázta meg 1905-ben, amiért később Nobel-díjat kapott. Ez a felfedezés alapvető szerepet játszott az elektromos áram és a fény kapcsolatának megértésében.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "d1a86313-fa40-473a-a8c6-24fc0db09d9e",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Elektromágneses hullám",
+        "B) Mechanikai hullám",
+        "C) Térbeli hullám",
+        "D) Hanghullám"
+       ],
+       "question": "Milyen típusú hullám a fény?",
+       "explanation": "A fény elektromágneses hullám, amely a térben terjed, és különböző frekvenciájú és hullámhosszú komponensekből áll.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 300 000 km/s",
+        "B) 150 000 km/s",
+        "C) 1 000 000 km/s",
+        "D) 3 000 km/s"
+       ],
+       "question": "Mi a fény terjedési sebessége vákuumban?",
+       "explanation": "A fény terjedési sebessége vákuumban körülbelül 300 000 km/s, ami a legnagyobb ismert sebesség az univerzumban.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Frekvencia",
+        "B) Amplitúdó",
+        "C) Hullámhossz",
+        "D) Terjedési sebesség"
+       ],
+       "question": "Melyik mennyiség határozza meg a fény színét?",
+       "explanation": "A fény színe a hullámhossz (λ) függvénye, amely meghatározza, hogy az emberi szem hogyan érzékeli azt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A fény hatására elektronok kibocsátása egy anyagból",
+        "B) A fény terjedése vákuumban",
+        "C) A fény színének változása",
+        "D) A fény és a hang kapcsolatának vizsgálata"
+       ],
+       "question": "Mi a fényelektromos jelenség?",
+       "explanation": "A fényelektromos jelenség során a fény hatására elektronok szabadulnak fel egy anyagból, például fémfelületről.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A fény legkisebb energiarészecskéje",
+        "B) A fényhullám amplitúdója",
+        "C) A fény frekvenciája",
+        "D) A fény terjedési sebessége"
+       ],
+       "question": "Mi a foton?",
+       "explanation": "A foton a fény legkisebb energiarészecskéje, amely a fény energiáját hordozza, és részt vesz a fényelektromos jelenségben.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "dbb5de73-9f08-4402-9ae9-6f49256a39e0",
+   "title_hu": "Mikroszkópok és a fény hullámtermészete",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "f14900ab-da68-449a-92aa-c4eab2bbc7d1",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A fénymikroszkóp (optikai mikroszkóp) a fényt használja a minták megfigyelésére. Képzelj el egy fénymikroszkópot, amely a sejteket vizsgálja; a fénysugarak áthaladnak a mintán, és felnagyítják a képet. Ezzel szemben az elektronmikroszkóp elektronokat használ, amelyek hullámtermészetük miatt sokkal kisebb részleteket képesek megjeleníteni. Például, míg a fénymikroszkóp csak 2000-szeres nagyítást tud adni, az elektronmikroszkóp akár 1 milliószoros nagyítást is elérhet, felfedve a sejtek belső struktúráját.",
+       "type": "text",
+       "heading": "Fénymikroszkóp és elektronmikroszkóp",
+       "key_term": "fénymikroszkóp, elektronmikroszkóp"
+      },
+      {
+       "body": "Az elektronok nem csupán részecskék, hanem hullámok is. Ez a hullámtermészet magyarázza meg, hogy az elektronmikroszkópok miért képesek sokkal nagyobb felbontásra, mint a fénymikroszkópok. A hullámok, mint a vízfelületen keletkező hullámok, képesek a legapróbb részletek megfigyelésére. Ez a jelenség lehetővé teszi számunkra, hogy olyan mikroszkopikus világot lássunk, amely a fénnyel nem lenne elérhető.",
+       "type": "text",
+       "heading": "Az elektron hullámtermészete",
+       "key_term": "elektron, hullámtermészet"
+      },
+      {
+       "body": "A vonalas színkép a fény spektrumának egyedi vonásait mutatja, amelyeket az atomok kibocsátanak vagy elnyelnek. Képzelj el egy szivárványt, amelyben az egyes színek az atomok által kibocsátott fény frekvenciáját jelzik. Amikor egy atom energiaszintje megváltozik, képes egy bizonyos frekvenciájú fényt kibocsátani vagy elnyelni, így létrehozva a jellegzetes vonalas színképet. Ez a jelenség kulcsszerepet játszik a csillagászatban is, hiszen a csillagok színképének elemzésével megismerhetjük összetételüket.",
+       "type": "text",
+       "heading": "Vonalas színkép és atomok",
+       "key_term": "vonalas színkép, atomok"
+      },
+      {
+       "body": "A kvantummechanika különös jelenségeket tár fel, mint például a határozatlansági reláció, amely azt mondja ki, hogy nem lehet egyszerre pontosan meghatározni egy részecske helyét és sebességét. Képzeld el, hogy próbálod elkapni a barátodat egy focipályán; minél pontosabban próbálod megmondani, hol van, annál bizonytalanabb, hogy milyen gyorsan mozog. Az alagúteffektus pedig azt mutatja, hogy egy részecske képes áthatolni egy potenciálgáton, amelyet fizikailag nem tudna átlépni; ez a jelenség például a modern elektronikai eszközök működésében is szerepet játszik.",
+       "type": "text",
+       "heading": "Kvantummechanika és hétköznapi példák",
+       "key_term": "kvantummechanika, határozatlansági reláció, alagúteffektus"
+      },
+      {
+       "body": "A Schrödinger macskája egy híres gondolatkísérlet, amely bemutatja a kvantummechanika furcsa világát. Képzelj el, hogy egy dobozban van egy macska, ami egyszerre élő és halott, amíg ki nem nyitod a dobozt. A mindennapokban ez a jelenség a kvantumállapotok szuperpozíciójának példájaként értelmezhető, amely a modern technológia, például a kvantumszámítógépek alapját képezi. A kvantumszámítógépek képesek párhuzamosan végezni számításokat, ami forradalmasíthatja a számítástechnikát.",
+       "type": "text",
+       "heading": "Schrödinger macskája a mindennapokban",
+       "key_term": "Schrödinger macskája"
+      }
+     ]
+    },
+    {
+     "block_id": "f0f18e61-b67e-42d5-a213-e4f054a7a4bd",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy diák a laborban fénymikroszkópot készül használni. Először is, felkapcsolja a mikroszkóp lámpáját, amely fényt bocsát ki. Ez a fény a mikroszkóp lencséin keresztül halad át, majd a preparátumra irányul.",
+       "type": "story",
+       "heading": "A fénymikroszkóp bekapcsolása"
+      },
+      {
+       "body": "A fény, amikor eléri a preparátumot, különböző hullámhosszú fényeket nyel el vagy bocsát ki. Az atomok a preparátumban elnyelik a fény egy részét, és visszaverik a többit, amely a mikroszkóp lencséin keresztül visszajut a diák szemébe.",
+       "type": "story",
+       "heading": "A fény interakciója a preparátummal"
+      },
+      {
+       "body": "Miközben a diák figyeli a preparátumot, észreveszi, hogy bizonyos színek hiányoznak a megfigyelt fényből. Ez a jelenség a vonalas színkép (spectrum) kialakulásának köszönhető, amely az atomok által elnyelt és kibocsátott fény frekvenciájának eredménye.",
+       "type": "story",
+       "heading": "A vonalas színkép megjelenése"
+      },
+      {
+       "body": "A diák kíváncsi, és úgy dönt, hogy megnézi az elektronmikroszkópot is. Ez a mikroszkóp nem fényt használ, hanem elektronokat, amelyek hullámtermészetük miatt sokkal kisebb részleteket képesek megfigyelni. Az elektronok képesek áthatolni a preparátumon, így a felbontás sokkal nagyobb, mint a fénymikroszkópnál.",
+       "type": "story",
+       "heading": "Az elektronmikroszkóp előnyei"
+      },
+      {
+       "body": "A diák megérti, hogy az elektronok hullámtermészete teszi lehetővé a nagyobb felbontást az elektronmikroszkópban. Az elektronok, mint a fény, hullámként viselkednek, így a mikroszkóp képes a legkisebb atomok és struktúrák megfigyelésére is.",
+       "type": "story",
+       "heading": "A hullámtermészet megértése"
+      }
+     ]
+    },
+    {
+     "block_id": "5f31876b-fb24-4623-afb1-a281a5b16262",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A fénymikroszkóp működése a fény hullámtermészetén alapul.",
+       "heading": "Fénymikroszkóp felépítése",
+       "description": "A fénymikroszkóp felépítését bemutató ábra, amelyen látható a fényforrás, a lencsék és az okulár helyzete.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az elektronmikroszkóp a hullámtermészet miatt nagyobb felbontást biztosít.",
+       "heading": "Elektronmikroszkóp felépítése",
+       "description": "Az elektronmikroszkóp szerkezeti felépítése, amely bemutatja az elektronforrást, a kondenzorlencsét és a detektort.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A fénymikroszkóp képe a fény hullámtermészetének következménye.",
+       "heading": "Fénymikroszkóppal készült kép",
+       "description": "Egy fénymikroszkóppal készült kép egy sejtről, amely színes és részletes, de a felbontása korlátozott.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "Az elektronmikroszkóp képe az elektronok hullámtermészete miatt részletesebb.",
+       "heading": "Elektronmikroszkóppal készült kép",
+       "description": "Egy elektronmikroszkóppal készült kép egy sejtről, amely rendkívül részletes és nagy felbontású.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "A vonalas színkép az atomok energiaállapotainak változása miatt alakul ki.",
+       "heading": "A vonalas színkép magyarázata",
+       "description": "Egy grafikon, amely bemutatja az atom által elnyelt és kibocsátott fény frekvenciáit, a vonalas színkép kialakulásának érthető ábrázolásával.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Ezek a jelenségek a kvantummechanika alapvető jellemzői.",
+       "heading": "Kvantummechanikai jelenségek",
+       "description": "Egy vázlat, amely bemutatja a határozatlansági relációt, az alagúteffektust és Schrödinger macskáját, mint példákat a kvantummechanikára.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "8c9ba544-e3fa-44a2-b72d-98b4ebcb474c",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A mikroszkópok ma is elengedhetetlenek a tudományos kutatásokban, például a biológiai, orvosi vagy anyagtudományi területeken, ahol a sejtek és anyagok részletes vizsgálata szükséges.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 150,
+          "w": 60,
+          "x": 50,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "r": 10,
+          "x": 80,
+          "y": 80,
+          "type": "circle"
+         },
+         {
+          "x": 60,
+          "y": 250,
+          "text": "Mikroszkóp",
+          "type": "label"
+         },
+         {
+          "x": 70,
+          "y": 70,
+          "text": "Lencse",
+          "type": "label"
+         },
+         {
+          "x1": 150,
+          "x2": 300,
+          "y1": 150,
+          "y2": 150,
+          "type": "wave",
+          "cycles": 3,
+          "amplitude": 20
+         },
+         {
+          "x": 320,
+          "y": 150,
+          "text": "Fényhullámok",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A fény hullámtermészete és a mikroszkópok",
+       "discovery": "A mikroszkópok felfedezése a 17. századra nyúlik vissza, amikor Antonie van Leeuwenhoek 1676-ban először használta a lencséket a mikroszkopikus világ megfigyelésére. Az ő munkája indította el a biológiai mikroszkópiát, amely lehetővé tette az élő sejtek és mikroorganizmusok tanulmányozását, ezzel megoldva a tudományos megfigyelések korlátait.",
+       "try_basic": "Készíts egy egyszerű lencsét egy vízcseppből, és nézd meg, hogyan nagyítja fel a mögötte lévő tárgyakat, mint például egy apró írást vagy mintát.",
+       "try_advanced": "Készíts egy egyszerű mikroszkópot egy lencséből és egy állványból, és hasonlítsd össze a különböző lencsék képességeit."
+      }
+     ]
+    },
+    {
+     "block_id": "1eb6f3ec-e361-4069-a1ef-3e4b7e2c029d",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Elektronmikroszkóp",
+        "B) Fénymikroszkóp",
+        "C) Hibrid mikroszkóp",
+        "D) Optikai mikroszkóp"
+       ],
+       "question": "Melyik mikroszkóp képes nagyobb felbontású képek készítésére?",
+       "explanation": "Az elektronmikroszkóp (EM) nagyobb felbontást biztosít, mert az elektronok hullámtermészete lehetővé teszi a kisebb részletek megfigyelését, mint a fény.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mert az elektronok rövidebb hullámhosszal rendelkeznek, mint a fény.",
+        "B) Mert a fénymikroszkóp nem használ fényt.",
+        "C) Mert az elektronmikroszkóp nagyobb lencséket használ.",
+        "D) Mert az elektronmikroszkóp gyorsabb."
+       ],
+       "question": "Miért tud az elektronmikroszkóp részletesebb képeket készíteni, mint a fénymikroszkóp?",
+       "explanation": "Az elektronok rövidebb hullámhosszal rendelkeznek, mint a fény, így képesek részletesebb képeket készíteni, mivel a hullámhossz határozza meg a megfigyelhető részletek méretét.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az atomok által elnyelt és kibocsátott fény frekvenciájának segítségével.",
+        "B) Csak az atomok által kibocsátott fény frekvenciája alapján.",
+        "C) Az atomok hőmérséklete alapján.",
+        "D) A környezeti fény intenzitásának hatására."
+       ],
+       "question": "Miként alakul ki a vonalas színkép egy atom esetében?",
+       "explanation": "A vonalas színkép az atomok által elnyelt és kibocsátott fény frekvenciájának segítségével alakul ki, mivel különböző atomok különböző frekvenciájú fényt bocsátanak ki.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az elektronok viselkedése leírható hullámokkal, ami lehetővé teszi a kvantummechanikai jelenségeket.",
+        "B) Az elektronok mindig részecskeként viselkednek.",
+        "C) Az elektronok csak akkor viselkednek hullámként, ha nem figyeljük meg őket.",
+        "D) Az elektronok nem rendelkeznek hullámtermészettel."
+       ],
+       "question": "Melyik állítás igaz az elektronok hullámtermészetére?",
+       "explanation": "Az elektronok hullámtermészete lehetővé teszi a kvantummechanikai jelenségek, például a hullám-részecske dualitás megértését.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hullámhossz határozza meg a részletek megfigyelésének képességét.",
+        "B) A hullámhossz csak a fény színét befolyásolja.",
+        "C) A hullámhossz nem fontos a mikroszkópi alkalmazásokban.",
+        "D) A hullámhossz csak az elektronok viselkedésére van hatással."
+       ],
+       "question": "Mi a szerepe a hullámhossznak a fény mikroszkópi alkalmazásában?",
+       "explanation": "A hullámhossz határozza meg, hogy milyen kicsi részletek figyelhetők meg; a kisebb hullámhosszú fény képes kisebb részletek megfigyelésére.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "e5719bbd-9cc9-4e9f-b5de-f834242079ba",
+   "title_hu": "Atommodellek és a fény kapcsolata",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "d57269d7-9dde-4647-ab1a-ada476ce9a64",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az atomok a természet legkisebb építőkövei, amelyek minden anyagot alkotnak körülöttünk. Az atommag (atom nucleus) középpontjában található, amely pozitív töltésű protonokból és semleges neutronokból áll. Az atom körül elektronok keringenek, amelyek negatív töltésűek. Az atomok mérete és szerkezete határozza meg, hogy az anyag hogyan viselkedik különböző körülmények között, például amikor fényt bocsátanak ki vagy nyelnek el.",
+       "type": "text",
+       "heading": "Az atomok világa",
+       "key_term": "atom, atommag"
+      },
+      {
+       "body": "J.J. Thomson 1897-ben felfedezte az elektront (electron), ami forradalmasította az atomokról alkotott képünket. Thomson modellje szerint az atom egy pozitív töltésű 'zselébe' van ágyazva, amelyben a negatív töltésű elektronok szórtan helyezkednek el, mint a gyümölcsök egy pudingban. Ez a modell azonban nem tudta megmagyarázni, miért bocsátanak ki különböző színű fényt az atomok, amikor felforrósítjuk őket.",
+       "type": "text",
+       "heading": "Thomson atommodellje",
+       "key_term": "elektron"
+      },
+      {
+       "body": "Ernest Rutherford híres kísérlete során alfa-részecskéket (alpha particles) irányított egy aranyfóliára. A várakozásaik szerint a részecskék többségének át kellett volna haladnia a fólián, de néhányuk visszapattant. Ez azt bizonyította, hogy az atomokban van egy sűrű, pozitív töltésű középpont, az atommag. Ez a felfedezés megváltoztatta az atommodellek megértését, és megalapozta a modern atomfizikát.",
+       "type": "text",
+       "heading": "Rutherford szórási kísérlete",
+       "key_term": "Rutherford"
+      },
+      {
+       "body": "Niels Bohr 1913-ban továbbfejlesztette Rutherford modelljét, és bevezette az elektronok kvantált energiaszintjeit. Bohr szerint az elektronok csak bizonyos pályákon keringhetnek az atommag körül, és amikor energiát nyernek vagy veszítenek, ugrásokkal változtatják meg a pályáikat. Ez a modell segít megérteni, miért bocsátanak ki az atomok különböző színű fényt, például amikor egy neonlámpa világít.",
+       "type": "text",
+       "heading": "Bohr atommodellje",
+       "key_term": "Bohr"
+      },
+      {
+       "body": "A kvantumfizikai modell szerint az elektronok nem pontos pályákon keringenek, hanem valószínűségi eloszlásokban, úgynevezett orbitálisokban helyezkednek el. Ez a megközelítés lehetővé teszi, hogy megértsük az atomok viselkedését, például azt, hogy miért reagálnak különböző módon a fényre. A kvantummechanika új utakat nyitott a technológiai fejlődésben, például a lézerek és a félvezetők terén.",
+       "type": "text",
+       "heading": "Kvantumfizikai modell",
+       "key_term": "kvantumfizika"
+      },
+      {
+       "body": "Amikor az atomok felforrósodnak, az elektronok energiát nyernek, és magasabb energiaszintre ugranak. Amikor visszatérnek az alapállapotba, fényt bocsátanak ki. Ezt a jelenséget használják például a LED lámpákban, ahol az elektronok által kibocsátott fény színe a használt anyagtól függ. Így a fény és az atomok közötti kapcsolat nemcsak tudományos érdekesség, hanem a mindennapi életünk része is.",
+       "type": "text",
+       "heading": "A fény és az atomok kapcsolata",
+       "key_term": "fény"
+      },
+      {
+       "body": "A mai világban a gyorsítóberendezések, mint például a CERN részecskefizikai laboratórium, az atomok és részecskék vizsgálatára szolgálnak. Ezek a berendezések képesek hatalmas energiákat előállítani, hogy felfedezzék az atomok belső szerkezetét. A felfedezések segítenek megérteni az univerzum működését, és új technológiák, például az orvosi képalkotás terén is hasznosak lehetnek.",
+       "type": "text",
+       "heading": "A modern atomfizika alkalmazásai",
+       "key_term": "gyorsítóberendezés"
+      }
+     ]
+    },
+    {
+     "block_id": "66891d8a-b814-47af-9855-6ef1e096f5b4",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A fiatalok egy csoportja éppen egy modern laboratóriumba lép, ahol a legújabb technológiákat használják. Az egyikük felkapcsolja a lámpát, és a szoba hirtelen fényárban úszik. A fény, amit látnak, az elektromágneses sugárzás egy formája, amely az atomok közötti kölcsönhatásokból származik.",
+       "type": "story",
+       "heading": "Egy fényes jövő kezdete"
+      },
+      {
+       "body": "Ahogy a lámpa felkeltette a figyelmüket, a fiatalok elkezdik felfedezni az atomok világát. Megtanulják, hogy az atomok középpontjában található az atommag, amely protonokból és neutronokból áll, és körülötte elektronok keringenek. Az elektronok energiájának kvantáltsága azt jelenti, hogy csak bizonyos meghatározott energiaszinteken létezhetnek.",
+       "type": "story",
+       "heading": "Az atomok titkai"
+      },
+      {
+       "body": "A csoport tagjai ezután Rutherford szórási kísérletét tanulmányozzák. Ez a kísérlet megmutatta, hogy az atomok nagy része üres, hiszen a részecskék többsége átjutott az aranyfólián, de néhány részecske visszaverődött. Ez a felfedezés vezette el őket ahhoz a megértéshez, hogy az atomok középpontjában egy sűrű atommag található, amely körül az elektronok keringenek.",
+       "type": "story",
+       "heading": "Rutherford szórási kísérlete"
+      },
+      {
+       "body": "A fiatalok izgatottan tanulmányozzák Bohr atommodelljét, amely további lépést tett a megértés felé. Bohr szerint az elektronok meghatározott pályákon keringenek az atommag körül, és amikor energiát nyernek, képesek ugrani a magasabb energiaszintekre. Ezt a jelenséget a fény kibocsátásával vagy elnyelésével tapasztalják meg, amikor az elektronok visszatérnek az alapállapotukba.",
+       "type": "story",
+       "heading": "A Bohr-modell felfedezése"
+      },
+      {
+       "body": "A csoport végül a kvantumfizikához érkezik, amely új megvilágításba helyezi az atomok viselkedését. Megértik, hogy a kvantummechanika sokkal bonyolultabb, mint azt korábban gondolták, és hogy a fény és az anyag kölcsönhatása kulcsszerepet játszik a modern technológiákban, mint például a lézerek és a félvezetők működésében.",
+       "type": "story",
+       "heading": "A kvantumfizika hatásai"
+      }
+     ]
+    },
+    {
+     "block_id": "253f8593-e1b9-4e5e-bc2f-57e338cb7e8d",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Thomson atommodellje: az elektronok a pozitív töltésű atomgömbben.",
+       "heading": "Thomson-modell",
+       "description": "A Thomson-modell bemutatja az atomot, mint egy pozitív töltésű gömböt, amelyben negatív töltésű elektronok helyezkednek el.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Rutherford atommodellje: az atommag és az elektronok elhelyezkedése.",
+       "heading": "Rutherford-modell",
+       "description": "A Rutherford-modell szerint az atommag pozitív töltésű, körülötte pedig az elektronok keringenek, hasonlóan a bolygók mozgásához a Nap körül.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Bohr atommodellje: kvantált energiaszintek az atom körül.",
+       "heading": "Bohr-modell",
+       "description": "A Bohr-modell ábrázolja az elektronok kvantált energiaszintjeit, ahol az elektronok csak meghatározott pályákon keringenek.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Kvantumfizikai modell: elektronok valószínűségi eloszlása az atom körül.",
+       "heading": "Kvantumfizikai modell",
+       "description": "A kvantumfizikai modell a valószínűségi eloszlásokat mutatja be, ahol az elektronok helye nem pontosan meghatározott, hanem egy valószínűségi térben találhatóak.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Rutherford szórási kísérlete: részecskék szóródása aranyfólián.",
+       "heading": "Rutherford szórási kísérlet",
+       "description": "A szimuláció bemutatja, hogyan szóródnak a részecskék, amikor egy vékony aranyfólián áthaladnak, és hogyan segítettek felfedezni az atommagot.",
+       "visual_type": "szimuláció"
+      },
+      {
+       "type": "visual",
+       "caption": "Elektronok kvantált energiaszintjei és a fény kibocsátása.",
+       "heading": "Elektronok energiájának kvantáltsága",
+       "description": "A grafikon ábrázolja az elektronok energiaszintjeit, amelyek diszkrét értékeket vesznek fel, és a fény kibocsátását jelképezik.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Gyorsítóberendezések: részecskék gyorsítása és ütköztetése.",
+       "heading": "Gyorsítóberendezések működése",
+       "description": "A gyorsítóberendezések működését bemutató diagram, amely a részecskék gyorsítását és ütközését szemlélteti.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Felfedezték az elektront! - Korabeli hír stílusában.",
+       "heading": "Korabeli hír: Felfedezték az elektront!",
+       "description": "Egy fiktív újságcikk, amely bemutatja az elektron felfedezését, figyelemfelkeltő címmel és képekkel.",
+       "visual_type": "újságcikk"
+      }
+     ]
+    },
+    {
+     "block_id": "80e69395-255e-4628-8e29-0ac1849ac731",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A fény és az atomok kölcsönhatása a modern fényképezésben, lézertechnológiában és a fényforrások működésében is megfigyelhető.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 50,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 180,
+          "y": 145,
+          "text": "Atommag",
+          "type": "label"
+         },
+         {
+          "r": 5,
+          "x": 200,
+          "y": 100,
+          "type": "circle"
+         },
+         {
+          "x": 205,
+          "y": 95,
+          "text": "e-",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 100,
+          "y2": 130,
+          "type": "arrow"
+         },
+         {
+          "x": 210,
+          "y": 120,
+          "text": "Energianövekedés",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 130,
+          "y2": 150,
+          "type": "arrow"
+         },
+         {
+          "x": 210,
+          "y": 140,
+          "text": "Fény (fotonsugár)",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Fény és atomok kölcsönhatása",
+       "discovery": "A 20. század elején Niels Bohr kifejlesztette az atommodellek új generációját, amelyben a fény és az atomok közötti kölcsönhatást vizsgálta. Bohr 1913-ban mutatta be elméletét, amely szerint az elektronok meghatározott pályákon keringenek az atommag körül, és amikor egy elektron energiatöbbletet kap, képes magasabb energiaszintre ugrani, majd visszatérve kibocsát egy fotont (fénykvantum).",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "fe755cec-6ea0-42f4-9513-ca28185ec5fc",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Rutherford-modell",
+        "B) Thomson-modell",
+        "C) Bohr-modell",
+        "D) Kvantumfizikai modell"
+       ],
+       "question": "Melyik atommodell írja le az atomot, mint kis méretű, pozitív töltésű magot, amely körül elektronok keringenek?",
+       "explanation": "A Rutherford-modell szerint az atom egy pozitív töltésű magból áll, amely körül az elektronok keringenek.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Thomson-modell",
+        "B) Rutherford-modell",
+        "C) Bohr-modell",
+        "D) Kvantumfizikai modell"
+       ],
+       "question": "Melyik atommodell vezette be az elektronok kvantált energiaszintjeit?",
+       "explanation": "A Bohr-modell bevezette az elektronok kvantált energiaszintjeit, amelyek meghatározzák, hogy az elektronok milyen távolságra lehetnek a magtól.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Az elektronokat felfedezték.",
+        "B) A pozitív magot felfedezték.",
+        "C) Az atomok tömegét mérték.",
+        "D) Az atomok méretét meghatározták."
+       ],
+       "question": "Mi történt Rutherford szórási kísérletében, amely megváltoztatta az atomokkal kapcsolatos elképzeléseinket?",
+       "explanation": "Rutherford szórási kísérlete során felfedezte, hogy az atomokban egy sűrű, pozitív töltésű mag található.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) Thomson-modell",
+        "B) Rutherford-modell",
+        "C) Bohr-modell",
+        "D) Kvantumfizikai modell"
+       ],
+       "question": "Melyik atommodell alapozta meg a modern kvantummechanikát?",
+       "explanation": "A kvantumfizikai modell a modern kvantummechanika alapjait képezi, figyelembe véve az elektronok hullámtermészetét.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Thomson-féle katódsugárcső kísérlet",
+        "B) Rutherford-féle szórási kísérlet",
+        "C) Bohr-féle spektroszkópia",
+        "D) Heisenberg-féle határozatlansági reláció"
+       ],
+       "question": "Melyik kísérlet bizonyította a pozitív töltésű atommag létezését?",
+       "explanation": "A Rutherford-féle szórási kísérlet során a részecskék szóródása azt mutatta, hogy a pozitív töltésű atommag létezik az atomokban.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "548566e4-ac0e-4309-ad81-59635482629f",
+   "title_hu": "Fényforrások és működésük",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "b39123fa-97e7-48b2-954f-c88368bd08dc",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az izzók a legklasszikusabb fényforrások közé tartoznak. A működésük lényege, hogy az áram átfolyik egy vékony fémszálon, amely felmelegszik és fényt bocsát ki. Ezt a folyamatot hőemissziónak nevezzük. A hagyományos izzók viszont sok energiát veszítenek hő formájában, ezért ma már egyre inkább háttérbe szorulnak. A legtöbb otthonban még mindig találkozhatunk velük, például a régi lámpákban.",
+       "type": "text",
+       "heading": "Izzók működése",
+       "key_term": "izzó"
+      },
+      {
+       "body": "A halogén izzók egy továbbfejlesztett verziói a hagyományos izzóknak. Ezek a fényforrások egy halogén gázzal vannak feltöltve, ami segít a fémszál élettartamának növelésében. A halogén izzók fényerősebbek és hosszabb ideig működnek, mint a sima izzók. Ezt a típusú izzót gyakran használják autók fényszóróiban, mert erős és tiszta fényt biztosítanak.",
+       "type": "text",
+       "heading": "Halogén izzók előnyei",
+       "key_term": "halogén izzó"
+      },
+      {
+       "body": "A fénycsövek, vagyis a kompakt fénycsövek, egyre népszerűbbek a modern világban. Ezek a fényforrások gázkisülésen alapulnak, ahol az elektromos áram ionizálja a benne lévő gázt, ezáltal UV fényt termel, ami a cső belsejében lévő foszfor bevonatot izzítja fel. Az iskolákban és irodákban gyakran találkozhatunk velük, mivel energiatakarékosak és hosszú élettartamúak.",
+       "type": "text",
+       "heading": "Fénycsövek működése",
+       "key_term": "fénycső"
+      },
+      {
+       "body": "A LED (fénykibocsátó dióda) fényforrások a legújabb technológiát képviselik a világításban. Ezek a kis diódák rendkívül hatékonyak, mivel a felhasznált energia nagy részét fény formájában bocsátják ki, így sokkal kevesebb hőt termelnek. A LED lámpák széles körben használatosak, például a mobiltelefonok kijelzőin, illetve a modern otthonok világításában, köszönhetően az alacsony energiafogyasztásuknak és hosszú élettartamuknak.",
+       "type": "text",
+       "heading": "LED fényforrások előnyei",
+       "key_term": "LED"
+      },
+      {
+       "body": "A különböző fényforrások közötti választás nemcsak a fény minőségét, hanem az energiafogyasztást is befolyásolja. Ma már a legtöbb háztartásban LED izzókat használnak, mivel ezek akár 80%-kal kevesebb energiát fogyasztanak, mint a hagyományos izzók. Ez nemcsak a villanyszámlát csökkenti, hanem környezetvédelmi szempontból is kedvező, hiszen kevesebb szén-dioxid-kibocsátással jár.",
+       "type": "text",
+       "heading": "Fényforrások és energiatakarékosság",
+       "key_term": "energiatakarékosság"
+      }
+     ]
+    },
+    {
+     "block_id": "be206db2-cdc8-42e2-baf6-67ad9b086a8a",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal a szobájában ül, és felkapcsolja a villanyt. Ezzel elindít egy folyamatot, amely a fényforrás működéséhez vezet.",
+       "type": "story",
+       "heading": "A világítás bekapcsolása"
+      },
+      {
+       "body": "A villanykapcsoló megnyomásával az elektromos áramkör zárul, lehetővé téve az áram (A) áramlását a vezetékeken keresztül. Az áram a fényforráshoz, például egy LED-hez (fénykibocsátó dióda) jut el.",
+       "type": "story",
+       "heading": "Az áramkör zárása"
+      },
+      {
+       "body": "A LED-ben az áram hatására az elektronok és a lyukak rekombinálnak, ami fényt bocsát ki. Ez a folyamat a félvezető anyagban zajlik, amely a LED alapját képezi, és a kibocsátott fény színe a használt anyagtól függ.",
+       "type": "story",
+       "heading": "A LED működése"
+      },
+      {
+       "body": "Ha a fiatal a fénycsövet választja, az áram a fénycső belsejében lévő gázt ionizálja, ami fényt termel. Itt a gázmolekulák gerjesztése hozza létre a fényt, amely a cső falán található fluoreszcens anyagon keresztül láthatóvá válik.",
+       "type": "story",
+       "heading": "A fénycső aktiválása"
+      },
+      {
+       "body": "Alternatívaként egy halogén izzó is szóba jöhet. Itt az áram fűti a szálat, amely fényt bocsát ki. A halogéngáz visszajuttatja a fémgőzt a szálra, így a világítás hatékonyabbá válik, és a fényerő is nő.",
+       "type": "story",
+       "heading": "A halogén izzó előnyei"
+      },
+      {
+       "body": "Végül a szobában megjelenik a fény, amely lehetővé teszi a fiatal számára, hogy olvasson, tanuljon vagy pihenjen. A különböző fényforrások működése mögött a fizikai jelenségek sorozata áll, amely a modern világunk világítási lehetőségeit biztosítja.",
+       "type": "story",
+       "heading": "A világítás hatása"
+      }
+     ]
+    },
+    {
+     "block_id": "8bfb9b57-8058-4407-890e-adf34dfbfa74",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A LED működése: elektronok és lyukak találkozása.",
+       "heading": "LED (fénykibocsátó dióda)",
+       "description": "A LED működésének ábrázolása, amely bemutatja a félvezető anyagokat, az elektronok és a lyukak rekombinációját, ami fényt eredményez.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Izzó felépítése: fém szál a vákuumban.",
+       "heading": "Izzó",
+       "description": "Az izzó keresztmetszete, amely bemutatja a fém szálat (általában volfrám), a vákuumot és az izzó burkát.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Fénycső működése: gázkisülés és fluoreszcens fény.",
+       "heading": "Fénycső",
+       "description": "A fénycső felépítése, amely bemutatja a gáz töltését, az elektródákat és a fluoreszcens bevonatot.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Halogén izzó: a volfrám szál regenerálódása.",
+       "heading": "Halogén izzó",
+       "description": "A halogén izzó működésének ábrázolása, amely bemutatja a halogén gázt, a volfrám szálat és a regenerációs folyamatot.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Energiafogyasztás és fényerősség összehasonlítása.",
+       "heading": "Fényforrások összehasonlítása",
+       "description": "Grafikon, amely összehasonlítja a különböző fényforrások energiafogyasztását és fényerősségét.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Fény spektrum: különböző fényforrások kibocsátása.",
+       "heading": "Fény spektrum",
+       "description": "A különböző fényforrások által kibocsátott fény spektrumának ábrázolása, bemutatva a látható fény tartományát.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Fényforrások hatékonysága: fényáram és energiafogyasztás.",
+       "heading": "Fényforrások hatékonysága",
+       "description": "Grafikon, amely bemutatja a különböző fényforrások fényáramát (lm) és a felhasznált energia (W) arányát.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Fényforrások felhasználása különböző területeken.",
+       "heading": "Fényforrások alkalmazása",
+       "description": "Vázlat, amely bemutatja a különböző fényforrások alkalmazási területeit, például otthon, ipar és közlekedés.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "98b6bd76-e089-4b00-99f5-a584822a6c43",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A fényforrásokat, mint például az energiatakarékos izzókat és LED-lámpákat, a mindennapi életünkben használjuk, például otthonainkban, iskolákban és közlekedési lámpákban.",
+       "sketch": {
+        "shapes": [
+         {
+          "r": 40,
+          "x": 200,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 190,
+          "y2": 250,
+          "type": "line"
+         },
+         {
+          "h": 20,
+          "w": 60,
+          "x": 170,
+          "y": 250,
+          "type": "battery"
+         },
+         {
+          "x": 180,
+          "y": 265,
+          "text": "AC",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Fényforrások működése",
+       "discovery": "A fényforrások működésének megértése szorosan összefonódik Thomas Edison nevével, aki 1879-ben szabadalmaztatta az első gyakorlati izzólámpát. Edison célja az volt, hogy hosszú élettartamú és biztonságos fényforrást alkosson, amely helyettesítheti a gázlámpákat.",
+       "try_basic": "Készíts egy egyszerű áramkört egy elemből, egy kapcsolóból és egy LED-ből, hogy megfigyeld, hogyan világít a LED, amikor az áramkör zárva van.",
+       "try_advanced": "Kísérletezz különböző fényforrásokkal (izzó, LED, fénycső), és mérd meg a fényerősségüket egy fényerősségmérő segítségével."
+      }
+     ]
+    },
+    {
+     "block_id": "aa08c273-7cd6-447c-9817-8fa1c7146afe",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) LED",
+        "B) Izzó",
+        "C) Halogén izzó",
+        "D) Fénycső"
+       ],
+       "question": "Melyik fényforrás működik a legnagyobb hatásfokkal, vagyis a legkevesebb hőtermeléssel?",
+       "explanation": "A LED (fénykibocsátó dióda) a legmagasabb hatásfokkal működik, mivel a legtöbb energiát fény formájában bocsátja ki, míg a hőtermelése minimális.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Fénykibocsátás elektromos áram által hevített szálon",
+        "B) Fénykibocsátás gázkisülésével",
+        "C) Fénykibocsátás félvezetők révén",
+        "D) Fénykibocsátás foszforeszkáló anyaggal"
+       ],
+       "question": "Mi a fő működési elve az izzóknak?",
+       "explanation": "Az izzók működése azon alapul, hogy az elektromos áram hevít egy szálat, amely így fényt bocsát ki.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Neon",
+        "B) Argon",
+        "C) Xenon",
+        "D) Oxigén"
+       ],
+       "question": "Milyen gáz található a fénycső belsejében, ami segít a fénykibocsátásban?",
+       "explanation": "A fénycső belsejében általában argont használnak, amely kisüléskor fényt bocsát ki, amikor elektromos áram halad át rajta.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Magasabb energiafogyasztás",
+        "B) Alacsonyabb fényerő",
+        "C) Rövidebb élettartam",
+        "D) Magasabb hőmérséklet"
+       ],
+       "question": "Mi a legnagyobb hátránya a halogén izzóknak a LED-hez képest?",
+       "explanation": "A halogén izzók energiafogyasztása magasabb, mint a LED-eké, ami miatt kevésbé hatékonyak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) Fénycső",
+        "B) Halogén izzó",
+        "C) Izzó",
+        "D) LED"
+       ],
+       "question": "Melyik fényforrás használ félvezetőt a fénykibocsátáshoz?",
+       "explanation": "A LED (fénykibocsátó dióda) félvezető anyagból készül, amely az elektromos áram hatására fényt bocsát ki.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "fab406ba-e3b1-44ab-a3f0-d73d55b312e0",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Amplitúdó, frekvencia, hullámhossz, terjedési sebesség",
+      "B) Csak frekvencia és hullámhossz",
+      "C) Csak amplitúdó és terjedési sebesség",
+      "D) Csak hullámhossz és terjedési sebesség"
+     ],
+     "question": "Mi jellemzi a fény elektromágneses hullámát?",
+     "explanation": "A fény elektromágneses hullámát az amplitúdó, frekvencia, hullámhossz és terjedési sebesség határozza meg.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A fotonok energiájának felszabadulása",
+      "B) A fény és az elektronok kölcsönhatása",
+      "C) A fény hullámtermészetének megnyilvánulása",
+      "D) Az atommag szóródása"
+     ],
+     "question": "Mi a fényelektromos jelenség?",
+     "explanation": "A fényelektromos jelenség a fény és az elektronok kölcsönhatása, amely során a fény hatására elektronok szabadulnak fel.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A fényképezőgép beállításainak változtatásával",
+      "B) Csak a távolság megváltoztatásával",
+      "C) Csak a fény erősségének növelésével",
+      "D) A tárgyak mozgatásával"
+     ],
+     "question": "Hogyan készülnek digitális fényképek különböző távolságban elhelyezett tárgyakról?",
+     "explanation": "A digitális fényképek elkészítése a fényképezőgép beállításainak, például a záridő és rekeszérték változtatásával történik.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az elektronmikroszkóp nagyobb felbontású, mivel az elektronok hullámtermészetét használja ki.",
+      "B) A fénymikroszkóp használja az elektronokat.",
+      "C) Az elektronmikroszkóp nem képes képet alkotni.",
+      "D) A fénymikroszkóp nagyobb felbontású."
+     ],
+     "question": "Miben különbözik az elektronmikroszkóp a fénymikroszkóptól?",
+     "explanation": "Az elektronmikroszkóp nagyobb felbontású, mert az elektronok hullámtermészetét használja ki, míg a fénymikroszkóp fényt használ.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az atomok által elnyelt és kibocsátott fény frekvenciája.",
+      "B) A fény hullámhossza.",
+      "C) Az elektronok mozgása.",
+      "D) A fotonok számának változása."
+     ],
+     "question": "Mi okozza a vonalas színképet?",
+     "explanation": "A vonalas színkép az atomok által elnyelt és kibocsátott fény frekvenciájának függvénye, amely meghatározza a színképet.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Bohr-modell",
+      "B) Thomson-modell",
+      "C) Rutherford-modell",
+      "D) Kvantumfizikai modell"
+     ],
+     "question": "Melyik atommodell írja le legjobban az elektronok energiájának kvantáltságát?",
+     "explanation": "A kvantumfizikai modell írja le legjobban az elektronok energiájának kvantáltságát, amely szerint az elektronok csak meghatározott energiaállapotokban létezhetnek.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az atommag méretének meghatározása.",
+      "B) Az elektronok mozgásának vizsgálata.",
+      "C) A fotonok energiájának mérése.",
+      "D) Az atomok közötti kölcsönhatások tanulmányozása."
+     ],
+     "question": "Mi a Rutherford szórási kísérletének célja?",
+     "explanation": "A Rutherford szórási kísérlet célja az atommag méretének meghatározása volt, amely során a részecskék szóródását vizsgálták.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) LED",
+      "B) Izzó",
+      "C) Halogén izzó",
+      "D) Fénycső"
+     ],
+     "question": "Melyik fényforrás működik a legjobban energiatakarékosan?",
+     "explanation": "A LED (fénykibocsátó dióda) a legenergiatekintetben takarékosabb fényforrás, mivel kevesebb energiát használ fel a fény előállításához.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

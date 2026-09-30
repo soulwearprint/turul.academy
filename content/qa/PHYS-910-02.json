@@ -1,0 +1,169 @@
+{
+ "nat_id": "PHYS-910-02",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 11,
+  "cards": 55,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "A lecke szövege, kvízei és kísérletei a leellenőrzött pontokon (képletek, számítások, kulcsok) helyesek."
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-910-02-001",
+   "lesson_id": "a3024331-572f-44b0-b5eb-2b5f5e1911d3",
+   "block_id": "e168bfb9-881b-4cc6-9b6c-0f911461239d",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Galilei „1583 körül” megfigyelte a lengő lámpa izokronizmusát",
+   "explanation": "A történet Galilei 1583-as pisai megfigyeléséről (a székesegyház lámpája) Viviani életrajzából származik, és legendának számít; az izokronizmust később, kísérletekkel vizsgálta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+     "title": "Galileo Galilei",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "Az okostelefonok gyorsulásmérője (pl. a lépésszámláló és a képernyő automatikus elforgatása mögött) egy parányi, rugóhoz hasonlóan viselkedő, rezgő mikroszerkezetet (MEMS-t) használ, amelynek kitérését elektromosan érzékeli a készülék.",
+     "sketch": {
+      "shapes": [
+       {
+        "x1": 150,
+        "x2": 250,
+        "y1": 40,
+        "y2": 40,
+        "type": "line"
+       },
+       {
+        "x1": 200,
+        "x2": 200,
+        "y1": 40,
+        "y2": 150,
+        "type": "spring",
+        "coils": 6
+       },
+       {
+        "h": 40,
+        "w": 50,
+        "x": 175,
+        "y": 150,
+        "type": "box"
+       },
+       {
+        "x1": 100,
+        "x2": 300,
+        "y1": 190,
+        "y2": 190,
+        "type": "line",
+        "dashed": true
+       },
+       {
+        "x1": 260,
+        "x2": 260,
+        "y1": 190,
+        "y2": 150,
+        "type": "arrow"
+       },
+       {
+        "x": 270,
+        "y": 170,
+        "text": "kitérés",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Az inga izokronizmusától a rugótörvényig",
+     "discovery": "Galileo Galilei figyelte meg 1583 körül, hogy egy lengő lámpa lengésideje (kis kitérésnél) nem függ a kilengés nagyságától, csak az inga hosszától – ezt nevezzük az inga izokronizmusának. Ezt a felismerést használta fel Christiaan Huygens, amikor 1656-ban megépítette az első ingaórát. Néhány évtizeddel később Robert Hooke fedezte fel, hogy a rugó megnyúlása egyenesen arányos a rá ható erővel – ez a ma Hooke-törvényként ismert összefüggés.",
+     "try_basic": "Akasszunk egy súlyt egy rugóra, húzzuk le kissé az egyensúlyi helyzetéből, majd engedjük el. Figyeljük meg a mozgást: hol a leggyorsabb, hol áll meg pillanatra a test, és hogyan csökken lassan a kilengés nagysága.",
+     "try_advanced": "Készítsünk egy 1 másodperc periódusidejű ingát. A képlet (T = 2π·√(L/g)) alapján L = g·T² / (4π²) ≈ 9,81 · 1 / 39,48 ≈ 0,25 m, vagyis kb. 25 cm hosszú fonálra van szükség. Építsük meg, majd stopperrel mérjük meg 10 lengés idejét, és ellenőrizzük, hogy egy lengés valóban közel 1 másodpercig tart-e."
+    },
+    "after": {
+     "type": "experiment",
+     "today": "Az okostelefonok gyorsulásmérője (pl. a lépésszámláló és a képernyő automatikus elforgatása mögött) egy parányi, rugóhoz hasonlóan viselkedő, rezgő mikroszerkezetet (MEMS-t) használ, amelynek kitérését elektromosan érzékeli a készülék.",
+     "sketch": {
+      "shapes": [
+       {
+        "x1": 150,
+        "x2": 250,
+        "y1": 40,
+        "y2": 40,
+        "type": "line"
+       },
+       {
+        "x1": 200,
+        "x2": 200,
+        "y1": 40,
+        "y2": 150,
+        "type": "spring",
+        "coils": 6
+       },
+       {
+        "h": 40,
+        "w": 50,
+        "x": 175,
+        "y": 150,
+        "type": "box"
+       },
+       {
+        "x1": 100,
+        "x2": 300,
+        "y1": 190,
+        "y2": 190,
+        "type": "line",
+        "dashed": true
+       },
+       {
+        "x1": 260,
+        "x2": 260,
+        "y1": 190,
+        "y2": 150,
+        "type": "arrow"
+       },
+       {
+        "x": 270,
+        "y": 170,
+        "text": "kitérés",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Az inga izokronizmusától a rugótörvényig",
+     "discovery": "A hagyomány szerint Galileo Galilei figyelte meg 1583 körül, hogy egy lengő lámpa lengésideje (kis kitérésnél) nem függ a kilengés nagyságától, csak az inga hosszától – ezt nevezzük az inga izokronizmusának. Ezt a felismerést használta fel Christiaan Huygens, amikor 1656-ban megépítette az első ingaórát. Néhány évtizeddel később Robert Hooke fedezte fel, hogy a rugó megnyúlása egyenesen arányos a rá ható erővel – ez a ma Hooke-törvényként ismert összefüggés.",
+     "try_basic": "Akasszunk egy súlyt egy rugóra, húzzuk le kissé az egyensúlyi helyzetéből, majd engedjük el. Figyeljük meg a mozgást: hol a leggyorsabb, hol áll meg pillanatra a test, és hogyan csökken lassan a kilengés nagysága.",
+     "try_advanced": "Készítsünk egy 1 másodperc periódusidejű ingát. A képlet (T = 2π·√(L/g)) alapján L = g·T² / (4π²) ≈ 9,81 · 1 / 39,48 ≈ 0,25 m, vagyis kb. 25 cm hosszú fonálra van szükség. Építsük meg, majd stopperrel mérjük meg 10 lengés idejét, és ellenőrizzük, hogy egy lengés valóban közel 1 másodpercig tart-e."
+    }
+   }
+  }
+ ],
+ "applied": {
+  "PHYS-910-02-001": "07fea7ae-93cd-408f-a5f8-206146b690db"
+ }
+}

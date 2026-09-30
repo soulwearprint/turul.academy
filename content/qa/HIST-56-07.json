@@ -1,0 +1,625 @@
+{
+ "nat_id": "HIST-56-07",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 25,
+  "cards": 127,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-56-07-001",
+   "lesson_id": "7ff73134-c22c-4878-9c85-be4a381c0689",
+   "block_id": "54cee18a-d078-4713-b232-2848e2ddf5af",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Az ő felfedezései előtt az európaiak nem tudtak a kontinens létezéséről.”",
+   "explanation": "A vikingek (Leif Eriksson) 1000 körül már eljutottak Észak-Amerikába (L'Anse aux Meadows), de ennek emléke nem terjedt el Európában.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/L%27Anse_aux_Meadows",
+     "title": "L'Anse aux Meadows",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Kolumbusz Kristóf 1492-ben érkezett meg Amerikába, miközben Indiába vezető nyugati útvonalat keresett. Az ő felfedezései alapjaiban változtatták meg a világot, hiszen Európa és Amerika közötti kapcsolatokat megnyitották. Kolumbusz expedíciója Spanyolország megbízásából indult, és jelentős hatással volt a gyarmatosítás folyamatára. Az ő felfedezései előtt az európaiak nem tudtak a kontinens létezéséről.",
+     "type": "text",
+     "heading": "Kolumbusz Kristóf és Amerika felfedezése",
+     "key_term": "Kolumbusz Kristóf"
+    },
+    "after": {
+     "body": "Kolumbusz Kristóf 1492-ben érkezett meg Amerikába, miközben Indiába vezető nyugati útvonalat keresett. Az ő felfedezései alapjaiban változtatták meg a világot, hiszen Európa és Amerika közötti kapcsolatokat megnyitották. Kolumbusz expedíciója Spanyolország megbízásából indult, és jelentős hatással volt a gyarmatosítás folyamatára. Bár a vikingek 1000 körül már jártak Észak-Amerikában, erről Európa megfeledkezett — Kolumbusz útja után vált a kontinens mindenki számára ismertté.",
+     "type": "text",
+     "heading": "Kolumbusz Kristóf és Amerika felfedezése",
+     "key_term": "Kolumbusz Kristóf"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-07-002",
+   "lesson_id": "7ff73134-c22c-4878-9c85-be4a381c0689",
+   "block_id": "54cee18a-d078-4713-b232-2848e2ddf5af",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A Magellán-szoros „Dél-Amerika és a Csendes-óceán között helyezkedik el”.",
+   "explanation": "A szoros az Atlanti- és a Csendes-óceánt köti össze, Dél-Amerika szárazföldje és a Tűzföld között. Magellán 1521-ben a Fülöp-szigeteken meghalt; az utat Elcano fejezte be 1522-ben.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Strait_of_Magellan",
+     "title": "Strait of Magellan",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Ferdinand Magellán 1519-ben indított expedíciója volt az első, amely megkerülte a Földet. Az ő útja során felfedezte a Magellán-szorost, amely Dél-Amerika és a Csendes-óceán között helyezkedik el. Magellán célja az volt, hogy nyugati irányban érje el Indiát, de a felfedezései során számos új területet és népet is megismert. Az expedíciója hozzájárult a globális kereskedelem fejlődéséhez.",
+     "type": "text",
+     "heading": "Magellán és a világ körüli hajózás",
+     "key_term": "Magellán"
+    },
+    "after": {
+     "body": "Ferdinand Magellán 1519-ben indított expedíciója volt az első, amely megkerülte a Földet — bár Magellán 1521-ben a Fülöp-szigeteken meghalt, és az utat Juan Sebastián Elcano fejezte be 1522-ben. Az ő útja során felfedezte a Magellán-szorost, amely Dél-Amerika déli csücskénél összeköti az Atlanti- és a Csendes-óceánt. Magellán célja az volt, hogy nyugati irányban érje el Indiát, de a felfedezései során számos új területet és népet is megismert. Az expedíciója hozzájárult a globális kereskedelem fejlődéséhez.",
+     "type": "text",
+     "heading": "Magellán és a világ körüli hajózás",
+     "key_term": "Magellán"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-07-003",
+   "lesson_id": "7ff73134-c22c-4878-9c85-be4a381c0689",
+   "block_id": "e7509cc2-5b54-4656-9ce7-7f16ccdfa272",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "heading",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Cím: „Az iszlám terjeszkedésének csúcspontja” (1492, Granada eleste).",
+   "explanation": "1492-ben épp a muszlim uralom ért véget az Ibériai-félszigeten; a cím a kártya tartalmának ellenkezőjét állítja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fall_of_Granada",
+     "title": "Fall of Granada",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1492-ben a Reconquista befejeződött, amikor a spanyolok elfoglalták Granadát, ezzel véget vetve a mór uralomnak Spanyolország területén. Ez a győzelem nemcsak a spanyol egységet erősítette, hanem hozzájárult ahhoz is, hogy Spanyolország a felfedezések élvonalába kerüljön. A gyarmatosítási törekvések felerősödésével a spanyolok új területeket kezdtek felfedezni, így Kolumbusz Kristóf 1492-es útja is ennek a folyamatnak volt a része.",
+     "type": "world",
+     "year": "1492",
+     "heading": "Az iszlám terjeszkedésének csúcspontja",
+     "link_hu": "A Reconquista befejezése lehetővé tette a spanyolok számára, hogy Kolumbusz Kristóf vezetésével elinduljanak az új területek felfedezésére, ami közvetlenül hozzájárult Amerika gyarmatosításához."
+    },
+    "after": {
+     "body": "1492-ben a Reconquista befejeződött, amikor a spanyolok elfoglalták Granadát, ezzel véget vetve a mór uralomnak Spanyolország területén. Ez a győzelem nemcsak a spanyol egységet erősítette, hanem hozzájárult ahhoz is, hogy Spanyolország a felfedezések élvonalába kerüljön. A gyarmatosítási törekvések felerősödésével a spanyolok új területeket kezdtek felfedezni, így Kolumbusz Kristóf 1492-es útja is ennek a folyamatnak volt a része.",
+     "type": "world",
+     "year": "1492",
+     "heading": "Granada eleste: a reconquista vége",
+     "link_hu": "A Reconquista befejezése lehetővé tette a spanyolok számára, hogy Kolumbusz Kristóf vezetésével elinduljanak az új területek felfedezésére, ami közvetlenül hozzájárult Amerika gyarmatosításához."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-07-004",
+   "lesson_id": "7ff73134-c22c-4878-9c85-be4a381c0689",
+   "block_id": "2394f629-a808-4d8e-87c9-1d50689959bd",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body, did_you_know",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az expedíció „bizonyítva annak gömbölyűségét”; „Magellán hajói majdnem teljesen körbehajózták a bolygót”.",
+   "explanation": "A Föld gömb alakját a görögök óta tudták (Eratoszthenész Kr. e. 3. században meg is mérte); az út azt bizonyította, hogy körbe lehet hajózni. Az expedíció egyetlen megmaradt hajója, a Victoria teljesen körbehajózta a Földet.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Spherical_Earth",
+     "title": "Spherical Earth",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Magellán útja során az egyik legnagyobb kihívás az volt, hogy a Föld méretét pontosan felmérjék. Akkoriban még nem tudták, hogy a Csendes-óceán milyen hatalmas. Magellán expedíciója során jelentős távolságot tettek meg, ami megmutatta, hogy a Föld sokkal nagyobb, mint azt korábban gondolták. Az út során tapasztalt nehézségek és veszteségek ellenére az expedíció sikeresen körbehajózta a Földet, bizonyítva annak gömbölyűségét.",
+     "type": "deep",
+     "think": "Miért fontos tudni, hogy a Föld gömbölyű, és hogyan befolyásolja ez a mindennapi életünket?",
+     "anchor": 2,
+     "heading": "Magellán útja és a Föld mérete",
+     "did_you_know": "A Föld kerülete az Egyenlítő mentén körülbelül 40 075 kilométer, ami azt jelenti, hogy Magellán hajói majdnem teljesen körbehajózták a bolygót.",
+     "think_answer": "A Föld gömbölyűsége befolyásolja az időzónákat, az éghajlatot és a navigációt, ami mind hatással van az utazásra, a kereskedelemre és a globális kommunikációra."
+    },
+    "after": {
+     "body": "Magellán útja során az egyik legnagyobb kihívás az volt, hogy a Föld méretét pontosan felmérjék. Akkoriban még nem tudták, hogy a Csendes-óceán milyen hatalmas. Magellán expedíciója során jelentős távolságot tettek meg, ami megmutatta, hogy a Föld sokkal nagyobb, mint azt korábban gondolták. Az út során tapasztalt nehézségek és veszteségek ellenére az expedíció sikeresen körbehajózta a Földet, bizonyítva, hogy a Földet körbe lehet hajózni (azt, hogy gömb alakú, a művelt emberek már az ókor óta tudták).",
+     "type": "deep",
+     "think": "Miért fontos tudni, hogy a Föld gömbölyű, és hogyan befolyásolja ez a mindennapi életünket?",
+     "anchor": 2,
+     "heading": "Magellán útja és a Föld mérete",
+     "did_you_know": "Az öt hajóból és kb. 270 emberből csak egyetlen hajó, a Victoria és 18 tengerész tért vissza Spanyolországba három év után.",
+     "think_answer": "A Föld gömbölyűsége befolyásolja az időzónákat, az éghajlatot és a navigációt, ami mind hatással van az utazásra, a kereskedelemre és a globális kommunikációra."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-07-005",
+   "lesson_id": "7ff73134-c22c-4878-9c85-be4a381c0689",
+   "block_id": "a5034221-006a-453a-b82a-c7d028d135d7",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "options[3]",
+   "verdict": "quiz_key",
+   "severity": "low",
+   "claim": "D) Fernão de Magalhães",
+   "explanation": "Ez Magellán portugál neve — ugyanaz a személy, mint a B) válasz.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Fernão de Magalhães = Ferdinand Magellán (portugál névalak).",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kolumbusz Kristóf",
+      "B) Magellán",
+      "C) Vasco da Gama",
+      "D) Fernão de Magalhães"
+     ],
+     "question": "Ki volt az, aki 1492-ben felfedezte Amerikát?",
+     "explanation": "Kolumbusz Kristóf 1492-ben indult el a nyugati irányba, hogy új kereskedelmi utakat találjon, és ő fedezte fel Amerikát.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kolumbusz Kristóf",
+      "B) Magellán",
+      "C) Vasco da Gama",
+      "D) James Cook"
+     ],
+     "question": "Ki volt az, aki 1492-ben felfedezte Amerikát?",
+     "explanation": "Kolumbusz Kristóf 1492-ben indult el a nyugati irányba, hogy új kereskedelmi utakat találjon, és ő fedezte fel Amerikát.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-07-006",
+   "lesson_id": "7ff73134-c22c-4878-9c85-be4a381c0689",
+   "block_id": "a5034221-006a-453a-b82a-c7d028d135d7",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "question, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik országban kezdődtek a földrajzi felfedezések?” — megjelölt: Spanyolország.",
+   "explanation": "A felfedezéseket Portugália kezdte (Tengerész Henrik, 15. század; Bartolomeu Dias 1488-ban megkerülte Afrika déli csücskét) — a C) válasz a helyes.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Age_of_Discovery",
+     "title": "Age of Discovery",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Spanyolország",
+      "B) Franciaország",
+      "C) Portugália",
+      "D) Anglia"
+     ],
+     "question": "Melyik országban kezdődtek a földrajzi felfedezések, amelynek jelentős szerepe volt a gyarmatosításban?",
+     "explanation": "Spanyolország volt az egyik legfontosabb ország a gyarmatosítás során, Kolumbusz Kristóf is spanyol szolgálatban indult el.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Spanyolország",
+      "B) Franciaország",
+      "C) Portugália",
+      "D) Anglia"
+     ],
+     "question": "Melyik ország szolgálatában indult útnak Kolumbusz Kristóf 1492-ben?",
+     "explanation": "Kolumbusz a spanyol királyi pár, Izabella és Ferdinánd megbízásából indult útnak; a felfedezéseket egyébként Portugália kezdte a 15. században.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-07-007",
+   "lesson_id": "a8fec616-8457-42bd-af37-af4015e29cde",
+   "block_id": "de7d9bac-2a52-458b-a1be-80b14cfac55a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Londonban az első tőzsde 1773-ban alakult meg”; „Magyarországon is megjelentek az első bankok” (a 17. századi kontextusban).",
+   "explanation": "Az első értéktőzsde Amszterdamban működött 1602-től (a Holland Kelet-indiai Társaság részvényeivel). Magyarország első pénzintézete 1840-ben alakult — a 16–17. századra ez anakronizmus.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Amsterdam_Stock_Exchange",
+     "title": "Amsterdam Stock Exchange",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A modern bankrendszer és a tőzsdék kialakulása a 17. századra tehető, amikor a kereskedelem növekedésével párhuzamosan a pénzügyi intézmények is fejlődni kezdtek. Londonban az első tőzsde 1773-ban alakult meg, ahol a részvények kereskedése zajlott. A bankok szerepe a hitelezés és a tőke összegyűjtése volt, amely elősegítette a vállalkozások fejlődését. Magyarországon is megjelentek az első bankok, amelyek támogatást nyújtottak a helyi gazdaság számára.",
+     "type": "text",
+     "heading": "Az első bankok és tőzsdék",
+     "key_term": "bank, tőzsde, részvény"
+    },
+    "after": {
+     "body": "A modern bankrendszer és a tőzsdék kialakulása a 17. századra tehető, amikor a kereskedelem növekedésével párhuzamosan a pénzügyi intézmények is fejlődni kezdtek. Az első értéktőzsde 1602-ben Amszterdamban kezdte meg működését, ahol a Holland Kelet-indiai Társaság részvényeivel kereskedtek. A bankok szerepe a hitelezés és a tőke összegyűjtése volt, amely elősegítette a vállalkozások fejlődését.",
+     "type": "text",
+     "heading": "Az első bankok és tőzsdék",
+     "key_term": "bank, tőzsde, részvény"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-07-008",
+   "lesson_id": null,
+   "block_id": "c55b4c9a-287e-4db5-9fa3-249ed3350c49",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "options[1], explanation",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Manufaktúra: „kézműves termelési forma … jellemzően kis léptékben”.",
+   "explanation": "A manufaktúra épp a nagyobb léptékű, munkamegosztáson alapuló kézi termelés volt (ugyanezt a lecke kvíze és mélyítése is tanítja).",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Tankönyvi fogalom: manufaktúra = gépek nélküli, munkamegosztásos nagyüzem.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Olyan üzem, ahol gépeket használnak.",
+      "B) Kézműves termelési forma, ahol munkások kézzel dolgoznak.",
+      "C) Olyan intézmény, ahol banki ügyeket intéznek.",
+      "D) Olyan terület, amely gyarmati irányítás alatt áll."
+     ],
+     "question": "Mi a manufaktúra?",
+     "explanation": "A manufaktúra kézműves termelési forma, ahol munkások kézzel dolgoznak, jellemzően kis léptékben.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Olyan üzem, ahol gépeket használnak.",
+      "B) Gépek nélküli nagyüzem, ahol sok munkás munkamegosztásban, kézzel dolgozik.",
+      "C) Olyan intézmény, ahol banki ügyeket intéznek.",
+      "D) Olyan terület, amely gyarmati irányítás alatt áll."
+     ],
+     "question": "Mi a manufaktúra?",
+     "explanation": "A manufaktúrában sok bérmunkás dolgozott együtt, mindenki a termék egy-egy részét készítette kézzel — így gyorsabb és olcsóbb volt a termelés, mint a céhes műhelyekben.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-07-009",
+   "lesson_id": "f7d7df73-fdf5-4aaa-8afd-578abaca0d18",
+   "block_id": "d32fd800-fe92-4973-9d58-7524bf45ef1a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Erdélyben „a református, evangélikus és katolikus hívők” éltek.",
+   "explanation": "Kimaradt a negyedik bevett vallás, az unitárius; a vallásszabadságot az 1568-as tordai országgyűlés mondta ki.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Edict_of_Torda",
+     "title": "Edict of Torda",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Erdélyben a vallási türelem példája, hogy a különböző felekezetek békésen megfértek egymás mellett. A reformáció következtében Erdélyben a református, evangélikus és katolikus hívők is éltek, és a helyi politikai viszonyok lehetővé tették a vallási sokszínűséget. Ez a vallási tolerancia hozzájárult Erdély kulturális és szellemi fejlődéséhez, és példaértékű volt a korabeli Európában. A vallási türelem megőrzése fontos szerepet játszott a magyar nemzet identitásának formálásában.",
+     "type": "text",
+     "heading": "Vallási türelem Erdélyben",
+     "key_term": "vallási türelem"
+    },
+    "after": {
+     "body": "Erdélyben a vallási türelem példája, hogy a különböző felekezetek békésen megfértek egymás mellett. A reformáció következtében Erdélyben a katolikus, evangélikus, református és unitárius hívők is éltek (az 1568-as tordai országgyűlés mondta ki a vallás szabad gyakorlását), és a helyi politikai viszonyok lehetővé tették a vallási sokszínűséget. Ez a vallási tolerancia hozzájárult Erdély kulturális és szellemi fejlődéséhez, és példaértékű volt a korabeli Európában. A vallási türelem megőrzése fontos szerepet játszott a magyar nemzet identitásának formálásában.",
+     "type": "text",
+     "heading": "Vallási türelem Erdélyben",
+     "key_term": "vallási türelem"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-07-010",
+   "lesson_id": "f7d7df73-fdf5-4aaa-8afd-578abaca0d18",
+   "block_id": "689dbb8f-3769-4175-a91f-4360be27e2c4",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options[0]",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik város vált a református egyház egyik központjává?” — megjelölt: Sárospatak; A) Debrecen is választható.",
+   "explanation": "Debrecen is a református egyház központja volt („kálvinista Róma”), tehát két helyes válasz van.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Debrecen",
+     "title": "Debrecen",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Debrecen",
+      "B) Sárospatak",
+      "C) Buda",
+      "D) Pécs"
+     ],
+     "question": "Melyik város vált a református egyház egyik központjává Magyarországon?",
+     "explanation": "Sárospatak fontos központja volt a református egyháznak és a magyar nyelvű oktatásnak.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Pannonhalma",
+      "B) Sárospatak",
+      "C) Buda",
+      "D) Pécs"
+     ],
+     "question": "Melyik város vált a református egyház egyik központjává Magyarországon?",
+     "explanation": "Sárospatak fontos központja volt a református egyháznak és a magyar nyelvű oktatásnak.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-07-011",
+   "lesson_id": "38bb9eb2-fb50-47ad-8f81-583f8aeb48b7",
+   "block_id": "b1f7f23c-e658-4353-9501-e5b75ca5e6c4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A felvilágosodás magyar képviselői: „Kármán József és Kölcsey Ferenc”.",
+   "explanation": "Kölcsey a reformkor romantikus költője; a magyar felvilágosodás kezdetét Bessenyei György fellépéséhez (1772) kötjük.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Bessenyei_Gy%C3%B6rgy",
+     "title": "Bessenyei György",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A felvilágosodás eszméi Magyarországon a 18. században terjedtek el, és jelentős hatással voltak a társadalmi és politikai gondolkodásra. A magyar értelmiség, mint például Kármán József és Kölcsey Ferenc, a felvilágosodás eszméit képviselve a társadalmi reformokat és a nemzeti öntudatot hirdették. E korszakban jelent meg a magyar nyelvű tudományos irodalom, amely hozzájárult a magyar kultúra fejlődéséhez. A felvilágosodás eszméi segítették a magyar nemzeti identitás megerősödését is.",
+     "type": "text",
+     "heading": "A felvilágosodás és a magyar társadalom",
+     "key_term": ""
+    },
+    "after": {
+     "body": "A felvilágosodás eszméi Magyarországon a 18. században terjedtek el, és jelentős hatással voltak a társadalmi és politikai gondolkodásra. A magyar értelmiség, mint például Bessenyei György és Kármán József, a felvilágosodás eszméit képviselve a társadalmi reformokat és a nemzeti öntudatot hirdették. E korszakban jelent meg a magyar nyelvű tudományos irodalom, amely hozzájárult a magyar kultúra fejlődéséhez. A felvilágosodás eszméi segítették a magyar nemzeti identitás megerősödését is.",
+     "type": "text",
+     "heading": "A felvilágosodás és a magyar társadalom",
+     "key_term": ""
+    }
+   }
+  },
+  {
+   "id": "HIST-56-07-012",
+   "lesson_id": "38bb9eb2-fb50-47ad-8f81-583f8aeb48b7",
+   "block_id": "67dd053e-6648-4c69-bc0c-65c7b659fe4e",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "options[0]",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Kopernikusz „volt az első, aki a Föld keringését a Nap körül javasolta”.",
+   "explanation": "Már a görög Arisztarkhosz (Kr. e. 3. század) felvetette; Kopernikusz dolgozta ki részletesen, csillagászati számításokkal.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Aristarchus_of_Samos",
+     "title": "Aristarchus of Samos",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Ő volt az első, aki a Föld keringését a Nap körül javasolta.",
+      "B) Ő volt a legelső, aki feltalálta a teleszkópot.",
+      "C) Ő volt a legnagyobb magyar tudós a 19. században.",
+      "D) Ő volt a felvilágosodás legnagyobb filozófusa."
+     ],
+     "question": "Ki volt Kopernikusz, és miért fontos a tudomány történetében?",
+     "explanation": "Kopernikusz a heliocentrikus világkép megalkotásával megváltoztatta a csillagászatról alkotott nézeteket, ami alapvetően hozzájárult a természettudományok fejlődéséhez.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Részletesen kidolgozta a napközéppontú (heliocentrikus) világképet.",
+      "B) Ő volt a legelső, aki feltalálta a teleszkópot.",
+      "C) Ő volt a legnagyobb magyar tudós a 19. században.",
+      "D) Ő volt a felvilágosodás legnagyobb filozófusa."
+     ],
+     "question": "Ki volt Kopernikusz, és miért fontos a tudomány történetében?",
+     "explanation": "Kopernikusz a heliocentrikus világkép megalkotásával megváltoztatta a csillagászatról alkotott nézeteket, ami alapvetően hozzájárult a természettudományok fejlődéséhez.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-07-013",
+   "lesson_id": "38bb9eb2-fb50-47ad-8f81-583f8aeb48b7",
+   "block_id": "67dd053e-6648-4c69-bc0c-65c7b659fe4e",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "Torunban „később tudományos munkásságát is folytatta”.",
+   "explanation": "Kopernikusz Torunban született, de munkássága nagy részét Fromborkban (Frauenburg) végezte.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nicolaus_Copernicus",
+     "title": "Nicolaus Copernicus",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Budapesten.",
+      "B) Torunban.",
+      "C) Krakkóban.",
+      "D) Párizsban."
+     ],
+     "question": "Hol született Kopernikusz?",
+     "explanation": "Kopernikusz Lengyelországban, Torunban született, ahol később tudományos munkásságát is folytatta.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Budapesten.",
+      "B) Torunban.",
+      "C) Krakkóban.",
+      "D) Párizsban."
+     ],
+     "question": "Hol született Kopernikusz?",
+     "explanation": "Kopernikusz 1473-ban Torunban született; csillagászati munkáját főként a Balti-tenger melletti Fromborkban végezte.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-07-014",
+   "lesson_id": null,
+   "block_id": "c55b4c9a-287e-4db5-9fa3-249ed3350c49",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Melyik országban található Spanyolország?”",
+   "explanation": "Helyesen: melyik földrészen.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Dél-Amerika",
+      "B) Európa",
+      "C) Ázsia",
+      "D) Afrika"
+     ],
+     "question": "Melyik országban található Spanyolország?",
+     "explanation": "Spanyolország Európában található, és a gyarmatosítás egyik központja volt a történelem során.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Dél-Amerika",
+      "B) Európa",
+      "C) Ázsia",
+      "D) Afrika"
+     ],
+     "question": "Melyik földrészen található Spanyolország?",
+     "explanation": "Spanyolország Európában található, és a gyarmatosítás egyik központja volt a történelem során.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-56-07-001": "25153dd9-5ea2-41e3-a369-496b77d1f1db",
+  "HIST-56-07-002": "fe5c8040-8e50-4513-b19d-139ce7fa89be",
+  "HIST-56-07-003": "cd5ae2c1-2795-43f5-820a-6fa46eba4a5f",
+  "HIST-56-07-004": "07a6c227-966e-4804-b995-c7720e77e39c",
+  "HIST-56-07-005": "af564d32-cd23-4c1b-92aa-d0cd5fed6f25",
+  "HIST-56-07-006": "d1b5080a-aaa6-4e5f-9272-a5bd173f663f",
+  "HIST-56-07-007": "d1abcf3b-0590-4c50-8d03-dbd4e81b8bbd",
+  "HIST-56-07-008": "fa3290b3-a8f5-428e-8f3a-6689285270fe",
+  "HIST-56-07-009": "f18c42f6-337f-4860-9b08-cf293f45fd8a",
+  "HIST-56-07-010": "cc44330a-6e5f-4d0e-922b-999491faea09",
+  "HIST-56-07-011": "a41ad54e-9a3f-4740-bc9b-40547e04a199",
+  "HIST-56-07-012": "e1f632cb-3c70-4dc2-a513-35a51abaaa81",
+  "HIST-56-07-013": "565efcf1-7d44-46ff-af2a-cf697dcd988f",
+  "HIST-56-07-014": "53068cdb-55d5-41b9-9588-e7dd44a828d6"
+ }
+}

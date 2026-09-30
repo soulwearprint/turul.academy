@@ -1,0 +1,479 @@
+{
+ "exported_at": "2026-09-29T14:28:11+00:00",
+ "topics": [
+  {
+   "nat_id": "HIST-56-01",
+   "band": "HIST-56",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-56-02",
+   "band": "HIST-56",
+   "lessons": 5,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-56-03",
+   "band": "HIST-56",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-56-04",
+   "band": "HIST-56",
+   "lessons": 4,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-56-05",
+   "band": "HIST-56",
+   "lessons": 7,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-56-07",
+   "band": "HIST-56",
+   "lessons": 4,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-56-08",
+   "band": "HIST-56",
+   "lessons": 4,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-56-09",
+   "band": "HIST-56",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-56-10",
+   "band": "HIST-56",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-56-11",
+   "band": "HIST-56",
+   "lessons": 4,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-56-MA1",
+   "band": "HIST-56",
+   "lessons": 3,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-01",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-02",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-04",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-05",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-06",
+   "band": "HIST-78",
+   "lessons": 4,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-07",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-08",
+   "band": "HIST-78",
+   "lessons": 3,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-09",
+   "band": "HIST-78",
+   "lessons": 5,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-10",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-11",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-12",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-13",
+   "band": "HIST-78",
+   "lessons": 6,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "HIST-78-14",
+   "band": "HIST-78",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-78-VH1",
+   "band": "HIST-78",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-01",
+   "band": "PHYS-78",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-02",
+   "band": "PHYS-78",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-03",
+   "band": "PHYS-78",
+   "lessons": 4,
+   "has_deep_all": true
+  },
+  {
+   "nat_id": "PHYS-78-04",
+   "band": "PHYS-78",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-05",
+   "band": "PHYS-78",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-06",
+   "band": "PHYS-78",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-07",
+   "band": "PHYS-78",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-08",
+   "band": "PHYS-78",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-09",
+   "band": "PHYS-78",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-78-10",
+   "band": "PHYS-78",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-910-01",
+   "band": "HIST-910",
+   "lessons": 5,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-910-02",
+   "band": "HIST-910",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-910-03",
+   "band": "HIST-910",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-910-04",
+   "band": "HIST-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-910-05",
+   "band": "HIST-910",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-910-06",
+   "band": "HIST-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-910-07",
+   "band": "HIST-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-910-08",
+   "band": "HIST-910",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-910-09",
+   "band": "HIST-910",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-910-10",
+   "band": "HIST-910",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-910-11",
+   "band": "HIST-910",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-910-12",
+   "band": "HIST-910",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-910-13",
+   "band": "HIST-910",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-01",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-02",
+   "band": "PHYS-910",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-03",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-04",
+   "band": "PHYS-910",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-05",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-06",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-07",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-08",
+   "band": "PHYS-910",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-09",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-10",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-11",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-12",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-13",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-14",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "PHYS-910-15",
+   "band": "PHYS-910",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-01",
+   "band": "HIST-1112",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-02",
+   "band": "HIST-1112",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-03",
+   "band": "HIST-1112",
+   "lessons": 4,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-04",
+   "band": "HIST-1112",
+   "lessons": 5,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-05",
+   "band": "HIST-1112",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-06",
+   "band": "HIST-1112",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-07",
+   "band": "HIST-1112",
+   "lessons": 6,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-08",
+   "band": "HIST-1112",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-09",
+   "band": "HIST-1112",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-10",
+   "band": "HIST-1112",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-11",
+   "band": "HIST-1112",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-12",
+   "band": "HIST-1112",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-13",
+   "band": "HIST-1112",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-14",
+   "band": "HIST-1112",
+   "lessons": 2,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-15",
+   "band": "HIST-1112",
+   "lessons": 3,
+   "has_deep_all": false
+  },
+  {
+   "nat_id": "HIST-1112-16",
+   "band": "HIST-1112",
+   "lessons": 2,
+   "has_deep_all": false
+  }
+ ]
+}

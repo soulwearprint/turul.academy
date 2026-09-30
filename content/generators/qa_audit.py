@@ -43,6 +43,7 @@ TIME_SENSITIVE = re.compile(
 YEAR = re.compile(r"\b(1[0-9]{3}|20[0-9]{2})\b")
 DOT_DECIMAL = re.compile(r"(?<![\d.])\d+\.\d+(?![\d.])")          # 9.81 → should be 9,81
 AZ_CONSONANT = re.compile(r"(?<![^\W\d_])[Aa]z (?=[bcdfghjklmnprstvzBCDFGHJKLMNPRSTVZ])")
+A_CONSONANT = re.compile(r"(?<![^\W\d_])[Aa] (?=[bcdfghjklmnprstvzBCDFGHJKLMNPRSTVZ])")
 A_VOWEL = re.compile(r"(?<![^\W\d_])[Aa] (?=[aáeéiíoóöőuúüűAÁEÉIÍOÓÖŐUÚÜŰ])")
 
 
@@ -113,11 +114,12 @@ def lint_card(mode, card):
                 out.append(("quiz_key", "duplicate options"))
             if not (card.get("explanation") or "").strip():
                 out.append(("quiz", "no explanation"))
-    text = " ".join(t for _, t in iter_fields(card))
+    # Prose only: the answer key ("A") next to "A) …" would read as „A A…”.
+    text = " ".join(re.sub(r"^\s*[A-Z]\)\s*", "", t) for p, t in iter_fields(card) if p != "correct")
     for m in DOT_DECIMAL.findall(text):                   # full dates (1914.07.28.) don't match
         out.append(("language", f"decimal point: {m} (Hungarian uses a comma)"))
     az = AZ_CONSONANT.findall(text)
-    if len(az) >= 2:
+    if len(az) >= 4 and len(az) > len(A_CONSONANT.findall(text)):   # „az” as a pronoun is legit
         out.append(("language", f"„az” before a consonant ×{len(az)} — possible article damage"))
     if A_VOWEL.findall(text):
         out.append(("language", f"„a” before a vowel ×{len(A_VOWEL.findall(text))}"))
@@ -175,8 +177,8 @@ def validate(nat_id):
             errs.append(f"{tag}: severity {x.get('severity')!r}")
         if x.get("apply") not in APPLY:
             errs.append(f"{tag}: apply {x.get('apply')!r}")
-        if x.get("verdict") in NEEDS_SOURCE and not x.get("sources"):
-            errs.append(f"{tag}: verdict {x.get('verdict')} needs at least one source")
+        if x.get("verdict") in NEEDS_SOURCE and not (x.get("sources") or x.get("source_note")):
+            errs.append(f"{tag}: verdict {x.get('verdict')} needs a source (or a source_note saying why none applies)")
         for s in x.get("sources") or []:
             if not str(s.get("url", "")).startswith("http"):
                 errs.append(f"{tag}: source without a URL")
@@ -215,6 +217,64 @@ def cmd_validate(a):
         print(f"{'✗' if errs else '✓'} {nat}" + "".join(f"\n    {e}" for e in errs))
         bad += bool(errs)
     sys.exit(1 if bad else 0)
+
+
+# ── build: draft → findings file ──────────────────────────────────
+def _set_path(card, path, value):
+    """Set 'body', 'options[2]' or 'a.b[1]' inside a card."""
+    parts = re.findall(r"[^.\[\]]+|\[\d+\]", path)
+    cur = card
+    for i, p in enumerate(parts):
+        last = i == len(parts) - 1
+        key = int(p[1:-1]) if p.startswith("[") else p
+        if last:
+            cur[key] = value
+        else:
+            cur = cur[key]
+
+
+def cmd_build(a):
+    """Expand a compact draft (content/qa/_draft/<nat_id>.json) into the findings file:
+    each draft finding names block/card and either `set` {field_path: new value} or
+    `replace` [[old, new], …] (applied to every text field); before/after come from the
+    snapshot, so they always match it exactly."""
+    import copy
+    snap = load_snapshot(a.nat_id)
+    draft = json.load(open(os.path.join(QA, "_draft", f"{a.nat_id}.json"), encoding="utf-8"))
+    out = []
+    for n, d in enumerate(draft["findings"], 1):
+        L, b, card = find_card(snap, d["block_id"], d["card_index"])
+        if card is None:
+            sys.exit(f"draft finding {n}: block/card not in snapshot")
+        x = {"id": f"{a.nat_id}-{n:03d}", "lesson_id": (L or {}).get("lesson_id"), "block_id": d["block_id"],
+             "mode": b["mode"], "scope": b.get("scope", "topic" if L is None else "lesson"),
+             "card_index": d["card_index"], "field": d.get("field", ""), "verdict": d["verdict"],
+             "severity": d["severity"], "claim": d["claim"], "explanation": d.get("explanation", ""),
+             "sources": d.get("sources", []), "apply": d.get("apply", "auto")}
+        if d.get("source_note"):
+            x["source_note"] = d["source_note"]
+        if x["apply"] != "none":
+            after = copy.deepcopy(card)
+            for path, value in (d.get("set") or {}).items():
+                _set_path(after, path, value)
+            for old, new in d.get("replace") or []:
+                hits = 0
+                for path, text in list(iter_fields(after)):
+                    if old in text:
+                        _set_path(after, path, text.replace(old, new)); hits += 1
+                if not hits:
+                    sys.exit(f"draft finding {n}: {old!r} not found in the card")
+            x["fix"] = {"before": card, "after": after}
+        out.append(x)
+    blocks = [b for _, b in iter_blocks(snap)]
+    coverage = {"blocks": len(blocks), "cards": sum(len(b.get("content") or []) for b in blocks),
+                "modes": sorted({b["mode"] for b in blocks if b.get("content")}), **(draft.get("coverage") or {})}
+    doc = {"nat_id": a.nat_id, "snapshot_exported_at": snap.get("exported_at"),
+           "checked_at": date.today().isoformat(), "coverage": coverage, "findings": out}
+    with open(os.path.join(QA, f"{a.nat_id}.json"), "w", encoding="utf-8") as f:
+        json.dump(doc, f, ensure_ascii=False, indent=1)
+    errs = validate(a.nat_id)
+    print(f"{a.nat_id}: {len(out)} findings" + ("" if not errs else "\n  " + "\n  ".join(errs)))
 
 
 # ── status ────────────────────────────────────────────────────────
@@ -282,6 +342,7 @@ def main():
     p.set_defaults(fn=cmd_lint)
     p = sp.add_parser("validate"); p.add_argument("nat_ids", nargs="*"); p.set_defaults(fn=cmd_validate)
     p = sp.add_parser("status"); p.set_defaults(fn=cmd_status)
+    p = sp.add_parser("build"); p.add_argument("nat_id"); p.set_defaults(fn=cmd_build)
     p = sp.add_parser("apply"); p.add_argument("nat_id"); p.add_argument("--dry-run", action="store_true")
     p.add_argument("--editor", help="user_profiles.id recorded as the editor (default: none)")
     p.add_argument("--include-review", action="store_true", help="also apply findings marked apply=review")

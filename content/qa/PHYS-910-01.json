@@ -1,0 +1,766 @@
+{
+ "nat_id": "PHYS-910-01",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 102,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-910-01-001",
+   "lesson_id": "d282af5a-1d19-4833-b13c-60bf1ec8e7e6",
+   "block_id": "138441a5-3033-4abb-986a-7ae9f4fe2305",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„az elmozdulás a kezdeti és a végpont közötti távolságot jelenti”",
+   "explanation": "Az elmozdulás irányított mennyiség (vektor): a kezdőpontból a végpontba mutató egyenes szakasz. Nagysága a két pont közötti egyenes távolság. Kör alakú mozgásnál az út 400 m lehet, az elmozdulás nulla.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Displacement_(geometry)",
+     "title": "Displacement (geometry)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A mozgás akkor történik, amikor egy test megváltoztatja a helyét egy adott idő alatt. Gondoljunk csak arra, amikor a barátunkkal a buszmegállóba sietünk. Az út, amit megteszünk, a mozgásunk pályája, míg az elmozdulás a kezdeti és a végpont közötti távolságot jelenti. Ha a buszmegálló a célpont, akkor az elmozdulás a kiindulási ponttól (pl. otthon) a buszmegállóig terjed. Így a mozgás nemcsak az út hosszát, hanem a helyváltoztatást is magában foglalja.",
+     "type": "text",
+     "heading": "A mozgás és a hely fogalma",
+     "key_term": "mozgás"
+    },
+    "after": {
+     "body": "A mozgás akkor történik, amikor egy test megváltoztatja a helyét egy adott idő alatt. Gondoljunk csak arra, amikor a barátunkkal a buszmegállóba sietünk. Az út, amit megteszünk, a mozgásunk pályája, míg az elmozdulás a kezdőpontból a végpontba mutató irányított egyenes szakasz (nagysága a két pont közötti egyenes távolság). Ha a buszmegálló a célpont, akkor az elmozdulás a kiindulási ponttól (pl. otthon) a buszmegállóig terjed. Így a mozgás nemcsak az út hosszát, hanem a helyváltoztatást is magában foglalja.",
+     "type": "text",
+     "heading": "A mozgás és a hely fogalma",
+     "key_term": "mozgás"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-002",
+   "lesson_id": "d282af5a-1d19-4833-b13c-60bf1ec8e7e6",
+   "block_id": "138441a5-3033-4abb-986a-7ae9f4fe2305",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A lejtő meredeksége és a golyó anyaga befolyásolja a mozgás sebességét”",
+   "explanation": "Súrlódásmentes esetben a gyorsulás csak a lejtő szögétől függ (a·sin α), a tömegtől és az anyagtól nem. Az anyag csak a súrlódáson és a gördülési ellenálláson keresztül számít.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Inclined_plane",
+     "title": "Inclined plane",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A mozgás megértéséhez kísérletezhetünk is. Például, ha egy lejtőn legurítunk egy golyót, megfigyelhetjük, hogy a golyó sebessége hogyan változik. A lejtő meredeksége és a golyó anyaga befolyásolja a mozgás sebességét. Ezen kísérletek segítenek megérteni a súrlódás hatását és a mozgás törvényeit, így jobban megismerhetjük a fizika alapjait.",
+     "type": "text",
+     "heading": "Kísérletezés a mozgással",
+     "key_term": "kísérletezés"
+    },
+    "after": {
+     "body": "A mozgás megértéséhez kísérletezhetünk is. Például, ha egy lejtőn legurítunk egy golyót, megfigyelhetjük, hogy a golyó sebessége hogyan változik. A lejtő meredeksége határozza meg a gyorsulást; a golyó anyaga csak a súrlódáson és a gördülési ellenálláson keresztül számít. Ezen kísérletek segítenek megérteni a súrlódás hatását és a mozgás törvényeit, így jobban megismerhetjük a fizika alapjait.",
+     "type": "text",
+     "heading": "Kísérletezés a mozgással",
+     "key_term": "kísérletezés"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-003",
+   "lesson_id": "40a75ee2-1c77-4c10-9de7-d93fa99aef11",
+   "block_id": "d263c865-d485-48b4-8dd4-d6031a70f833",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A Mikola-csőben a buborék „a súrlódás és a nehézségi erő hatására” halad egyenletes sebességgel",
+   "explanation": "A buborékot a felhajtóerő hajtja felfelé, a közegellenállás (a folyadék fékező hatása) fékezi. Ha a két erő kiegyenlíti egymást, a buborék állandó sebességgel halad. A nehézségi erő a buborékra a folyadékhoz képest elhanyagolható.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Buoyancy",
+     "title": "Buoyancy",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Terminal_velocity",
+     "title": "Terminal velocity",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Mikola-csőben lévő buborék mozgása szintén érdekes példa az egyenes vonalú, közel állandó sebességű mozgásra. Amikor a buborék felemelkedik a folyadékban, a súrlódás és a nehézségi erő hatására egyenletes sebességgel halad. Ezt a jelenséget megfigyelhetjük, ha egy átlátszó csövet vízzel töltünk meg, és beleengedünk egy levegőbuborékot.",
+     "type": "text",
+     "heading": "Buborék a Mikola-csőben",
+     "key_term": "Mikola-cső"
+    },
+    "after": {
+     "body": "A Mikola-csőben lévő buborék mozgása szintén érdekes példa az egyenes vonalú, közel állandó sebességű mozgásra. Amikor a buborék felemelkedik a folyadékban, a felhajtóerő és a közegellenállás egyensúlya miatt egyenletes sebességgel halad. Ezt a jelenséget megfigyelhetjük, ha egy átlátszó csövet vízzel töltünk meg, és beleengedünk egy levegőbuborékot.",
+     "type": "text",
+     "heading": "Buborék a Mikola-csőben",
+     "key_term": "Mikola-cső"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-004",
+   "lesson_id": "40a75ee2-1c77-4c10-9de7-d93fa99aef11",
+   "block_id": "d263c865-d485-48b4-8dd4-d6031a70f833",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az Eötvös-inga „a földi nehézségi erő mérésére szolgál”; „a gyorsulás mértékét is meghatározhatjuk”",
+   "explanation": "Az Eötvös-féle torziós inga a nehézségi erő térbeli változását (gradiensét) méri, nem a gyorsulás értékét. Az ingát ásványkincsek és olaj keresésére használták.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Eötvös_torsion_balance",
+     "title": "Eötvös torsion balance",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Loránd_Eötvös",
+     "title": "Loránd Eötvös",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Eötvös Loránd nevéhez fűződik az Eötvös inga kifejlesztése, amely a földi nehézségi erő mérésére szolgál. Az inga lengése közben a testek mozgásának megfigyelésével a gyorsulás mértékét is meghatározhatjuk. Eötvös munkássága hozzájárult a gravitációs törvények megértéséhez, és a mai tudományos ismeretek alapjait képezi.",
+     "type": "text",
+     "heading": "Eötvös Loránd és az Eötvös inga",
+     "key_term": "Eötvös inga"
+    },
+    "after": {
+     "body": "Eötvös Loránd nevéhez fűződik az Eötvös-inga kifejlesztése, amely a nehézségi erő térbeli változásának mérésére szolgál. A torziós inga elfordulásából a nehézségi erő kis helyi változásait lehet kimutatni, ezért ásványkincsek és olaj keresésére is használták. Eötvös munkássága hozzájárult a gravitációs törvények megértéséhez, és a mai tudományos ismeretek alapjait képezi.",
+     "type": "text",
+     "heading": "Eötvös Loránd és az Eötvös inga",
+     "key_term": "Eötvös inga"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-005",
+   "lesson_id": "c256e214-c597-416e-8ef8-23004c39c063",
+   "block_id": "dfd4f409-d34a-4b32-a6f4-17eeb4f34338",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Ha a súrlódás kisebb, mint a gravitációs erő, a könyv gyorsan lecsúszik”",
+   "explanation": "A csúszást nem a teljes nehézségi erőhöz, hanem annak lejtővel párhuzamos összetevőjéhez kell hasonlítani: a test akkor gyorsul lefelé, ha ez nagyobb a súrlódási erőnél.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Inclined_plane",
+     "title": "Inclined plane",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Minden mozgás mögött erők állnak. Amikor a könyv csúszik, a gravitáció húzza lefelé, míg a súrlódás felfelé hat. Ha a súrlódás kisebb, mint a gravitációs erő, a könyv gyorsan lecsúszik. De ha a felület durva, a súrlódás erősebb, és a könyv lassabban mozog. Ezt a jelenséget a mindennapi életben is tapasztalhatod, például amikor a cipőd talpa csúszik az esőben.",
+     "type": "text",
+     "heading": "Erők hatása a mozgásra",
+     "key_term": "erő"
+    },
+    "after": {
+     "body": "Minden mozgás mögött erők állnak. Amikor a könyv csúszik, a gravitáció húzza lefelé, míg a súrlódás felfelé hat. Ha a súrlódás kisebb, mint a gravitációs erő lejtővel párhuzamos összetevője, a könyv lecsúszik. De ha a felület durva, a súrlódás erősebb, és a könyv lassabban mozog. Ezt a jelenséget a mindennapi életben is tapasztalhatod, például amikor a cipőd talpa csúszik az esőben.",
+     "type": "text",
+     "heading": "Erők hatása a mozgásra",
+     "key_term": "erő"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-006",
+   "lesson_id": "c256e214-c597-416e-8ef8-23004c39c063",
+   "block_id": "dfd4f409-d34a-4b32-a6f4-17eeb4f34338",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Használj digitális stopperórát, hogy minimalizáld az emberi hibát”",
+   "explanation": "A stopperóra pontosságától függetlenül a kézi indítás és leállítás reakcióideje (kb. 0,15–0,25 s) hibát okoz. Rövid esési időknél ez jelentős. Fényrekesszel vagy videóelemzéssel pontosabb a mérés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Reaction_time",
+     "title": "Reaction time",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Amikor az esési időt méred, fontos, hogy a mérések pontosak legyenek. Használj digitális stopperórát, hogy minimalizáld az emberi hibát. A mérések pontosságát a mérési körülmények is befolyásolják, mint például a szél vagy a zaj. Ha többször ismétled a kísérletet, és átlagolod az eredményeket, akkor pontosabb értékeket kapsz, ami segít a kút mélységének pontos meghatározásában.",
+     "type": "text",
+     "heading": "A mérés pontossága",
+     "key_term": "mérés pontossága"
+    },
+    "after": {
+     "body": "Amikor az esési időt méred, fontos, hogy a mérések pontosak legyenek. A digitális stopperóra sem szünteti meg a kézi indítás reakcióidejéből (kb. 0,2 s) adódó hibát, ezért érdemes videóelemzést vagy fényrekeszes időmérést használni. A mérések pontosságát a mérési körülmények is befolyásolják, mint például a szél vagy a zaj. Ha többször ismétled a kísérletet, és átlagolod az eredményeket, akkor pontosabb értékeket kapsz, ami segít a kút mélységének pontos meghatározásában.",
+     "type": "text",
+     "heading": "A mérés pontossága",
+     "key_term": "mérés pontossága"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-007",
+   "lesson_id": "a64a196e-8702-4500-91a9-508ca6bb22ca",
+   "block_id": "eaa775ab-7bf5-4483-a123-9d622e8b3c8b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Galilei „volt az első, aki kísérletekkel vizsgálta a mozgás törvényeit”",
+   "explanation": "Galilei úttörő volt a kísérletes és mérésen alapuló mozgástanban, de az „első” túlzás. A leejtett testek egyenlő gyorsulása levegőben nem pontosan teljesül.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+     "title": "Galileo Galilei",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Galilei munkássága alapvető fontosságú volt a mozgások megértésében. Ő volt az első, aki kísérletekkel vizsgálta a mozgás törvényeit, és kimutatta, hogy a szabadesés során a gyorsulás állandó. Ez a megközelítés segített a tudományos módszer kialakulásában, amely ma is alapvető a tudományban. Galilei kísérletei közül az egyik legismertebb a leejtett golyók vizsgálata volt, amely megmutatta, hogy a mozgás független a test súlyától.",
+     "type": "text",
+     "heading": "Galilei és a mozgások",
+     "key_term": "Galilei"
+    },
+    "after": {
+     "body": "Galilei munkássága alapvető fontosságú volt a mozgások megértésében. Ő volt az egyik első, aki kísérletekkel és méréssel vizsgálta a mozgás törvényeit, és kimutatta, hogy a szabadesés során a gyorsulás állandó. Ez a megközelítés segített a tudományos módszer kialakulásában, amely ma is alapvető a tudományban. Galilei kísérletei közül az egyik legismertebb a leejtett golyók vizsgálata volt, amely megmutatta, hogy a mozgás független a test súlyától.",
+     "type": "text",
+     "heading": "Galilei és a mozgások",
+     "key_term": "Galilei"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-008",
+   "lesson_id": "a64a196e-8702-4500-91a9-508ca6bb22ca",
+   "block_id": "eaa775ab-7bf5-4483-a123-9d622e8b3c8b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az érintőképernyő gyors húzása „a telefon gyorsulása”; a gyorsulás érzése azt jelenti, hogy a telefon gyorsan feldolgozza a parancsokat",
+   "explanation": "Az érintőképernyő húzása az ujj helyzetének érzékelése, nem a telefon gyorsulása. A gyorsulás fogalmának a feldolgozási sebességhez nincs köze. A telefon gyorsulásmérője (akcelerométer) viszont a készülék tényleges gyorsulását érzékeli.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Accelerometer",
+     "title": "Accelerometer",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A gyorsulás nemcsak a sportban, hanem a technológiai eszközökben is jelen van. Például, amikor használod a telefonodat, és az érintőképernyőt gyorsan húzod, a telefon gyorsulását tapasztalod. Az alkalmazások azonnal reagálnak, és a gyorsulás érzése azt jelenti, hogy a telefon gyorsan feldolgozza a parancsokat. Az ilyen tapasztalatok segítenek megérteni a gyorsulás mindennapi hatásait.",
+     "type": "text",
+     "heading": "A gyorsulás mindennapi példái",
+     "key_term": "gyorsulás"
+    },
+    "after": {
+     "body": "A gyorsulás nemcsak a sportban, hanem a technológiai eszközökben is jelen van. Például a telefonod gyorsulásmérője (akcelerométer) érzékeli, ha elfordítod vagy megrázod a készüléket. Az alkalmazások erre reagálnak, például elforgatják a képernyőt. Az ilyen tapasztalatok segítenek megérteni a gyorsulás mindennapi hatásait.",
+     "type": "text",
+     "heading": "A gyorsulás mindennapi példái",
+     "key_term": "gyorsulás"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-009",
+   "lesson_id": "40a75ee2-1c77-4c10-9de7-d93fa99aef11",
+   "block_id": "06eb1a49-72e7-45c6-a1e6-3ded83a6c79e",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A Mikola-csőben a buborék egyenletes mozgása „mivel a víz áramlása stabil”",
+   "explanation": "A víz a csőben nyugszik; a buborék állandó sebességét a felhajtóerő és a közegellenállás egyensúlya okozza.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Buoyancy",
+     "title": "Buoyancy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Buborék a Mikola-csőben",
+      "B) Autó gyorsítása",
+      "C) Labda felfelé dobása",
+      "D) Folyó víz áramlása"
+     ],
+     "question": "Melyik példa mutatja be a közel állandó sebességű, egyenes vonalú mozgást?",
+     "explanation": "A buborék a Mikola-csőben egyenes vonalú mozgást végez, amely közel állandó sebességgel történik, mivel a víz áramlása stabil.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Buborék a Mikola-csőben",
+      "B) Autó gyorsítása",
+      "C) Labda felfelé dobása",
+      "D) Folyó víz áramlása"
+     ],
+     "question": "Melyik példa mutatja be a közel állandó sebességű, egyenes vonalú mozgást?",
+     "explanation": "A buborék a Mikola-csőben egyenes vonalú, közel állandó sebességű mozgást végez, mert a felhajtóerő és a közegellenállás egyensúlyban van.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-010",
+   "lesson_id": "40a75ee2-1c77-4c10-9de7-d93fa99aef11",
+   "block_id": "06eb1a49-72e7-45c6-a1e6-3ded83a6c79e",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Eötvös Loránd „a gravitációs törvények … kutatója”",
+   "explanation": "Eötvös a nehézségi erő kis változásait és a tehetetlen és nehéz tömeg egyenlőségét mérte, gravitációs törvényt nem fedezett fel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Loránd_Eötvös",
+     "title": "Loránd Eötvös",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Fizikus és a gravitációs törvények kutatója",
+      "B) Csillagász",
+      "C) Kémikus",
+      "D) Biológus"
+     ],
+     "question": "Ki volt Eötvös Loránd?",
+     "explanation": "Eötvös Loránd fizikus volt, aki jelentős munkát végzett a gravitációs törvények és az Eötvös-ingára vonatkozóan.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Fizikus és a gravitációs törvények kutatója",
+      "B) Csillagász",
+      "C) Kémikus",
+      "D) Biológus"
+     ],
+     "question": "Ki volt Eötvös Loránd?",
+     "explanation": "Eötvös Loránd fizikus volt: a nehézségi erő kis helyi változásait mérte az Eötvös-ingával, és igazolta a nehéz és a tehetetlen tömeg egyenlőségét.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-011",
+   "lesson_id": "c256e214-c597-416e-8ef8-23004c39c063",
+   "block_id": "04f729cf-9f3b-42d5-8836-a7fc017cba77",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mennyi ideig esik egy test 5 méter magasból?” – kulcs B) 2 s",
+   "explanation": "t = √(2 · 5 : 9,81) ≈ 1,01 s, tehát A) 1 s a helyes válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Free_fall",
+     "title": "Free fall",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1 s",
+      "B) 2 s",
+      "C) 3 s",
+      "D) 4 s"
+     ],
+     "question": "Mennyi ideig esik egy test, ha 5 méter magasból ejtjük le? (g = 9,81 m/s²)",
+     "explanation": "Az esési időt a szabadesés képlete alapján számoljuk: t = √(2h/g), ahol h a magasság és g a gravitációs gyorsulás.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1 s",
+      "B) 2 s",
+      "C) 3 s",
+      "D) 4 s"
+     ],
+     "question": "Mennyi ideig esik egy test, ha 5 méter magasból ejtjük le? (g = 9,81 m/s²)",
+     "explanation": "Az esési időt a szabadesés képlete alapján számoljuk: t = √(2h/g), ahol h a magasság és g a gravitációs gyorsulás.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-012",
+   "lesson_id": "c256e214-c597-416e-8ef8-23004c39c063",
+   "block_id": "04f729cf-9f3b-42d5-8836-a7fc017cba77",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A lejtőn csúszó test sebessége „fokozatosan növekszik, amíg a súrlódás nem lassítja le”",
+   "explanation": "Súrlódásmentes lejtőn a sebesség egyenletesen nő. Súrlódás esetén a test állandó sebességgel is csúszhat, vagy meg is állhat, ha a súrlódás elég nagy.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Inclined_plane",
+     "title": "Inclined plane",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Állandó sebességgel csúszik",
+      "B) Fokozatosan növekszik",
+      "C) Fokozatosan csökken",
+      "D) Változó sebességgel csúszik"
+     ],
+     "question": "Hogyan változik a csúszó test sebessége a lejtőn?",
+     "explanation": "A csúszó test sebessége fokozatosan növekszik, amíg a súrlódás nem lassítja le.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Állandó sebességgel csúszik",
+      "B) Fokozatosan növekszik",
+      "C) Fokozatosan csökken",
+      "D) Változó sebességgel csúszik"
+     ],
+     "question": "Hogyan változik a súrlódásmentes lejtőn csúszó test sebessége?",
+     "explanation": "Súrlódásmentes lejtőn a nehézségi erő lejtővel párhuzamos összetevője állandó gyorsulást okoz, ezért a sebesség egyenletesen nő.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-013",
+   "lesson_id": "a64a196e-8702-4500-91a9-508ca6bb22ca",
+   "block_id": "f3a545f7-0cc5-468b-8da1-99802724c063",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "Tizedesvessző helyett tizedespont és „t^2” az összefüggésben",
+   "explanation": "Magyar számformátum: tizedesvessző, és a négyzetet felső indexszel írjuk.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "magyar számírás és jelölés",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) s = v0 * t + 0.5 * a * t^2",
+      "B) s = v * t",
+      "C) s = a * t^2",
+      "D) s = v0 + a"
+     ],
+     "question": "Milyen összefüggés van az elmozdulás (s), a sebesség (v) és a gyorsulás (a) között egyenletesen gyorsuló mozgás esetén?",
+     "explanation": "Az elmozdulás (s) egyenletesen gyorsuló mozgás esetén a kezdeti sebesség (v0), a gyorsulás (a) és az idő (t) függvényében számítható ki az A opcióban megadott képlettel.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) s = v0 · t + 0,5 · a · t²",
+      "B) s = v · t",
+      "C) s = a · t²",
+      "D) s = v0 + a"
+     ],
+     "question": "Milyen összefüggés van az elmozdulás (s), a sebesség (v) és a gyorsulás (a) között egyenletesen gyorsuló mozgás esetén?",
+     "explanation": "Az elmozdulás (s) egyenletesen gyorsuló mozgás esetén a kezdeti sebesség (v0), a gyorsulás (a) és az idő (t) függvényében számítható ki az A opcióban megadott képlettel.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-014",
+   "lesson_id": null,
+   "block_id": "87095470-7a4e-4606-b332-c9baa8c58005",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Az átlagsebesség „az elmozdulás és az idő hányadosa” (kulcs A)",
+   "explanation": "A tananyag és a lecke kvíze szerint az átlagsebesség az összes megtett út és az idő hányadosa (v = s : t). Az elmozdulás és az idő hányadosa az átlagos sebességvektor.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Speed",
+     "title": "Speed",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az elmozdulás és az idő hányadosaként.",
+      "B) Az út és az elmozdulás különbségeként.",
+      "C) Az idő és az út szorzataként.",
+      "D) Az elmozdulás és az út összegének hányadosaként."
+     ],
+     "question": "Miként számítható ki az átlagsebesség?",
+     "explanation": "Az átlagsebesség az elmozdulás és az ehhez szükséges idő hányadosa.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az összes megtett út és az eltelt idő hányadosaként.",
+      "B) Az út és az elmozdulás különbségeként.",
+      "C) Az idő és az út szorzataként.",
+      "D) Az elmozdulás és az út összegének hányadosaként."
+     ],
+     "question": "Miként számítható ki az átlagsebesség?",
+     "explanation": "Az átlagsebesség az összes megtett út és az ehhez szükséges idő hányadosa.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-01-015",
+   "lesson_id": "d282af5a-1d19-4833-b13c-60bf1ec8e7e6",
+   "block_id": "4deea59f-1b7f-4d91-8a13-8358ef01a5a7",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 1600-as évek elején”",
+   "explanation": "Magánhangzóval kezdődő szám előtt az névelő áll.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "magyar helyesírás, névelőhasználat (a/az)",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A sebesség fogalma a sportban is fontos, például a futóversenyek időmérő rendszereiben, ahol a résztvevők sebességének meghatározása kulcsszerepet játszik.",
+     "sketch": {
+      "shapes": [
+       {
+        "x1": 50,
+        "x2": 350,
+        "y1": 250,
+        "y2": 250,
+        "type": "line"
+       },
+       {
+        "x1": 50,
+        "x2": 150,
+        "y1": 250,
+        "y2": 150,
+        "type": "line"
+       },
+       {
+        "x": 40,
+        "y": 260,
+        "text": "Lejtő",
+        "type": "label"
+       },
+       {
+        "x": 160,
+        "y": 140,
+        "text": "Test",
+        "type": "label"
+       },
+       {
+        "x1": 160,
+        "x2": 160,
+        "y1": 150,
+        "y2": 200,
+        "type": "arrow"
+       },
+       {
+        "x": 170,
+        "y": 180,
+        "text": "v (sebesség)",
+        "type": "label"
+       },
+       {
+        "x": 150,
+        "y": 150,
+        "type": "dot"
+       },
+       {
+        "x": 160,
+        "y": 200,
+        "type": "dot"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Mozgások jellemzése és sebesség fogalma",
+     "discovery": "Galileo Galilei a 1600-as évek elején kísérletezett a mozgásokkal, különösen a lejtőkön leguruló testek mozgásának tanulmányozásával. Az ő munkássága segített megérteni, hogy a testek mozgása, mint például a szabadesés, egyenes vonalú, egyenletesen változó mozgásként írható le, ami forradalmasította a tudományos gondolkodást.",
+     "try_basic": "Mérj meg egy tárgy zuhanási idejét egy adott magasságból, és számold ki a sebességét a zuhanás végén a v = g * t képlettel!",
+     "try_advanced": ""
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A sebesség fogalma a sportban is fontos, például a futóversenyek időmérő rendszereiben, ahol a résztvevők sebességének meghatározása kulcsszerepet játszik.",
+     "sketch": {
+      "shapes": [
+       {
+        "x1": 50,
+        "x2": 350,
+        "y1": 250,
+        "y2": 250,
+        "type": "line"
+       },
+       {
+        "x1": 50,
+        "x2": 150,
+        "y1": 250,
+        "y2": 150,
+        "type": "line"
+       },
+       {
+        "x": 40,
+        "y": 260,
+        "text": "Lejtő",
+        "type": "label"
+       },
+       {
+        "x": 160,
+        "y": 140,
+        "text": "Test",
+        "type": "label"
+       },
+       {
+        "x1": 160,
+        "x2": 160,
+        "y1": 150,
+        "y2": 200,
+        "type": "arrow"
+       },
+       {
+        "x": 170,
+        "y": 180,
+        "text": "v (sebesség)",
+        "type": "label"
+       },
+       {
+        "x": 150,
+        "y": 150,
+        "type": "dot"
+       },
+       {
+        "x": 160,
+        "y": 200,
+        "type": "dot"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Mozgások jellemzése és sebesség fogalma",
+     "discovery": "Galileo Galilei az 1600-as évek elején kísérletezett a mozgásokkal, különösen a lejtőkön leguruló testek mozgásának tanulmányozásával. Az ő munkássága segített megérteni, hogy a testek mozgása, mint például a szabadesés, egyenes vonalú, egyenletesen változó mozgásként írható le, ami forradalmasította a tudományos gondolkodást.",
+     "try_basic": "Mérj meg egy tárgy zuhanási idejét egy adott magasságból, és számold ki a sebességét a zuhanás végén a v = g * t képlettel!",
+     "try_advanced": ""
+    }
+   }
+  }
+ ],
+ "applied": {
+  "PHYS-910-01-001": "fa58788a-1fa8-466f-8f98-dd7a96e530ff",
+  "PHYS-910-01-002": "ac790ded-e5ac-4c0e-b4f3-7263c273c9dc",
+  "PHYS-910-01-003": "30854d36-3221-47c9-b6a1-06eb742b4c98",
+  "PHYS-910-01-004": "0249950b-074f-490c-8217-9398d93d7099",
+  "PHYS-910-01-005": "48358efa-d260-4302-b7b4-c24c0d885ec5",
+  "PHYS-910-01-006": "8999ad9c-b4e6-4781-b952-5d2ae5965f8d",
+  "PHYS-910-01-007": "f88a3abd-6bf5-4a01-b344-eb7c96478c16",
+  "PHYS-910-01-008": "12fd44e0-8e2a-4c4c-b678-89871fa9fa5b",
+  "PHYS-910-01-009": "4a554579-0906-46a9-a871-0119658248b5",
+  "PHYS-910-01-010": "2a947fee-afd7-41ff-8cc0-3b08f97f5e0a",
+  "PHYS-910-01-011": "953c00cf-a9ee-45a5-a9ca-3f350142cc76",
+  "PHYS-910-01-012": "335b27b9-6831-447a-a704-c9cf0d5353fe",
+  "PHYS-910-01-013": "1f9cf473-cc9a-4fde-9e8d-95840fe9ea1b",
+  "PHYS-910-01-014": "193b1dc8-291b-442e-ad87-ba0f46bc6c50",
+  "PHYS-910-01-015": "ba5e28b1-1596-41ff-9db9-9e734e5141d8"
+ }
+}

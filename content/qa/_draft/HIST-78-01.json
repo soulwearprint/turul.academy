@@ -1,0 +1,22 @@
+{"coverage":{"read":["text","deep","world","quiz"],"lint_only":["story","visual"]},"findings": [
+{"block_id":"220f431b-83ae-4b5c-9819-3e016731cf14","card_index":3,"field":"options[2], explanation","verdict":"quiz_key","severity":"high",
+ "claim":"„Melyik ország nem tartozik a gyarmatbirodalmak közé a 20. század elején?” — megjelölt: Amerikai Egyesült Államok.","explanation":"Az USA 1898-tól gyarmattartó volt (Fülöp-szigetek, Puerto Rico, Guam); a felsorolt országok mind rendelkeztek gyarmatokkal, így nincs helyes válasz.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Spanish%E2%80%93American_War","title":"Spanish–American War","accessed":"2026-09-29"}],
+ "set":{"options[2]":"C) Svájc","explanation":"Svájcnak soha nem voltak gyarmatai. A Brit Birodalom, Franciaország és Németország is gyarmattartó volt — sőt 1898-tól az Egyesült Államok is (pl. Fülöp-szigetek)."}},
+{"block_id":"2a25b529-d569-4b1e-b317-b0564884bebb","card_index":8,"field":"question, explanation","verdict":"quiz_key","severity":"high",
+ "claim":"„Melyik ország volt az első, amely a modern korban jelentős ipari fejlődést mutatott?” — megjelölt: USA.","explanation":"Az ipari forradalom Nagy-Britanniában kezdődött (a válaszok között nem is szerepel). Az USA a 19. század végére lett a legnagyobb ipari termelő.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Industrial_Revolution","title":"Industrial Revolution","accessed":"2026-09-29"}],
+ "set":{"question":"Melyik ország lett a 19. század végére a világ legnagyobb ipari termelője?","explanation":"Az ipari forradalom Nagy-Britanniában kezdődött, de a 19. század végére az Amerikai Egyesült Államok lett a világ legnagyobb ipari termelője."}},
+{"block_id":"2a25b529-d569-4b1e-b317-b0564884bebb","card_index":6,"field":"explanation","verdict":"misleading","severity":"low",
+ "claim":"Németország „nem volt része a Brit Birodalomnak, mivel az egyesítése csak 1871-ben történt”.","explanation":"Az indoklás értelmetlen: Németország független állam volt, saját gyarmatbirodalommal.",
+ "source_note":"Belső logikai hiba.",
+ "set":{"explanation":"Kanada, India és Ausztrália a Brit Birodalom része volt; Németország független nagyhatalom volt, és 1884-től maga is gyarmatokat szerzett Afrikában és a Csendes-óceánon."}},
+{"block_id":"9dad4a96-5532-4626-a998-0d52207909c6","card_index":1,"field":"body","verdict":"misleading","severity":"low",
+ "claim":"„Ezzel a lépéssel a nacionalizmus győzelmet aratott a birodalmi politikával szemben.”","explanation":"Az egyesítés eredménye maga is császárság (Német Császárság) lett; a mondat önellentmondó.",
+ "source_note":"Belső logikai hiba (a kártya maga írja: „létrehozva a Német Császárságot”).",
+ "replace":[["Ezzel a lépéssel a nacionalizmus győzelmet aratott a birodalmi politikával szemben.","Az egységes Németországot a versailles-i kastély tükörtermében kiáltották ki, a legyőzött Franciaország megalázására."]]},
+{"block_id":"ff53bdfd-29c4-4693-8378-cc52700383a4","card_index":2,"field":"body","verdict":"misleading","severity":"medium",
+ "claim":"„Magyarországon a szocialista eszmék a 20. század elején kezdtek elterjedni, különösen a Tanácsköztársaság idején.”","explanation":"Az első munkásegyletek 1868-ban alakultak, a Magyarországi Szociáldemokrata Párt 1890-ben; az 1919-es Tanácsköztársaság kommunista diktatúra volt.",
+ "sources":[{"url":"https://hu.wikipedia.org/wiki/Magyarorsz%C3%A1gi_Szoci%C3%A1ldemokrata_P%C3%A1rt","title":"Magyarországi Szociáldemokrata Párt","accessed":"2026-09-29"}],
+ "replace":[["Magyarországon a szocialista eszmék a 20. század elején kezdtek elterjedni, különösen a Tanácsköztársaság idején.","Magyarországon az első munkásegyletek 1868-ban alakultak, a Szociáldemokrata Párt 1890-ben; a kommunisták 1919-ben, a Tanácsköztársaság idején ragadták magukhoz a hatalmat."]]}
+]}

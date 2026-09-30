@@ -1,0 +1,339 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "world 74ad9dae (A pártállami diktatúra és működése): a world-blokknak nincs egyetlen kártyája sem (üres)."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "8bb15cbf-2a7d-45fe-985c-0f2c3b5ad1c9",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A III/III. ügyosztály”; „számos politikai áldozatot követelt”",
+   "explanation": "A III/III. az állambiztonsági szervek csoportfőnöksége volt (belső reakció elhárítás), nem ügyosztály. A megtorlás: mintegy 230 kivégzés, tízezernyi elítélt és internált.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kádár_era",
+     "title": "Kádár era",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Retribution_after_the_Hungarian_Revolution_of_1956",
+     "title": "Retribution after the Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A megtorlások időszaka a Kádár-rendszer kezdetén zajlott, és számos politikai áldozatot követelt.",
+     "A megtorlások időszaka a Kádár-rendszer kezdetén zajlott: mintegy 230 embert végeztek ki, tízezreket ítéltek el vagy internáltak."
+    ],
+    [
+     "A III/III. ügyosztály, a belügyminisztérium titkosrendőrségi egysége,",
+     "A III/III. Csoportfőnökség, a belügyminisztérium állambiztonsági (titkosrendőrségi) szerve,"
+    ]
+   ]
+  },
+  {
+   "block_id": "8bb15cbf-2a7d-45fe-985c-0f2c3b5ad1c9",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a paraszti vagyon államosítása”; „sok paraszt elvesztette földjét”",
+   "explanation": "A téeszek szövetkezeti tulajdonúak voltak, nem állami tulajdonúak (az állami gazdaság más forma). A parasztok földje formálisan az övék maradt, de kötelező volt bevinni a közösbe; a második hullám (1958–61) után a szántó nagy része téeszekbe került.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Collectivization_in_Hungary",
+     "title": "Collectivization in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A termelőszövetkezetek létrehozásának célja a mezőgazdasági termelés centralizálása és a paraszti vagyon államosítása volt.",
+     "A termelőszövetkezetek (téeszek) létrehozásának célja a mezőgazdasági termelés központi irányítása volt: a parasztoknak a földjüket és az eszközeiket be kellett vinniük a közösbe, és 1961-re a szántóterület nagy része szövetkezeti kézbe került."
+    ],
+    [
+     "Ennek következtében sok paraszt elvesztette földjét és megélhetését, ami társadalmi feszültségeket teremtett.",
+     "Ennek következtében a parasztok elvesztették a földjük feletti rendelkezést, sokan a városba költöztek, ami társadalmi feszültségeket teremtett."
+    ]
+   ]
+  },
+  {
+   "block_id": "0d897e30-7ec7-417f-b54b-78f16a5fc7ab",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A reformok azonban nem hozták meg a várt eredményeket”",
+   "explanation": "Az új gazdasági mechanizmus (Nyers Rezső) az első években növekedést és életszínvonal-emelkedést hozott; 1972–73-tól a szovjet és a hazai konzervatív nyomásra visszafogták.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/New_Economic_Mechanism_(Hungary)",
+     "title": "New Economic Mechanism (Hungary)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Rezső_Nyers",
+     "title": "Rezső Nyers",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A reformok azonban nem hozták meg a várt eredményeket, és a gazdasági problémák továbbra is fennmaradtak.",
+     "A reform az első években növekedést és életszínvonal-emelkedést hozott, de 1972–73-tól a szovjet és a hazai konzervatív nyomásra visszafogták, így a gazdasági problémák fennmaradtak."
+    ]
+   ]
+  },
+  {
+   "block_id": "0d897e30-7ec7-417f-b54b-78f16a5fc7ab",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A maszekok, azaz a magánszemélyek által végzett, hivatalosan nem engedélyezett tevékenységek”; „saját szükségleteik … termeltek”; „a rendszer stabilitását is veszélyeztette”",
+   "explanation": "A maszek az engedéllyel működő magánkisiparos vagy kiskereskedő volt, nem tiltott tevékenység. A háztáji gazdaságok a piacra is termeltek (nagy részt adtak a mezőgazdasági kibocsátásból). A második gazdaság inkább stabilizálta a rendszert, mert csökkentette az elégedetlenséget.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_economy_(Hungary)",
+     "title": "Second economy (Hungary)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Kádár_era",
+     "title": "Kádár era",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A maszekok, azaz a magánszemélyek által végzett, hivatalosan nem engedélyezett tevékenységek, jelentős szerepet játszottak a második gazdaságban.",
+     "A maszekok, azaz az engedéllyel dolgozó magánkisiparosok és kiskereskedők, a háztáji gazdaságok és a hivatalos munkaidő után végzett mellékes munkák jelentős szerepet játszottak a második gazdaságban."
+    ],
+    [
+     "ahol az emberek saját szükségleteik kielégítése érdekében termeltek",
+     "ahol a családok saját szükségleteiken túl a piacra is termeltek"
+    ],
+    [
+     "de a rendszer stabilitását is veszélyeztette",
+     "és egyben a rendszer stabilitását is szolgálta, mert csökkentette az elégedetlenséget"
+    ]
+   ]
+  },
+  {
+   "block_id": "0d897e30-7ec7-417f-b54b-78f16a5fc7ab",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„hosszú távon nem oldotta meg a gazdasági problémákat”",
+   "explanation": "Hiányzik a lényeg: a fogyasztást részben hitelből finanszírozták; az ország bruttó külföldi adóssága az 1980-as évek végére mintegy húszmilliárd dollárra nőtt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kádár_era",
+     "title": "Kádár era",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Economy_of_Hungary",
+     "title": "Economy of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "hosszú távon nem oldotta meg a gazdasági problémákat",
+     "hosszú távon nem oldotta meg a gazdasági problémákat: az ország külföldi adóssága az 1980-as évekre mintegy húszmilliárd dollárra nőtt"
+    ]
+   ]
+  },
+  {
+   "block_id": "0d897e30-7ec7-417f-b54b-78f16a5fc7ab",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a 70-es évektől kezdve a népességfogyás jelei is megjelentek”",
+   "explanation": "A népesség 1980-ban érte el a csúcsát (kb. 10,7 millió), 1981-től fogy. A gyermekvállalás már a hatvanas években visszaesett. Konkrét intézkedés: a GYES (1967).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Demographics_of_Hungary",
+     "title": "Demographics of Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Childcare_in_Hungary",
+     "title": "Childcare in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "de a 70-es évektől kezdve a népességfogyás jelei is megjelentek",
+     "a népesség azonban 1980-ban érte el a csúcsát (kb. 10,7 millió), és 1981-től fogy"
+    ],
+    [
+     "A népesedési problémák kezelése érdekében a kormány különböző intézkedéseket vezetett be, de ezek hatékonysága megkérdőjelezhető volt.",
+     "A kormány 1967-ben bevezette a gyermekgondozási segélyt (GYES), de a hatása korlátozott maradt."
+    ]
+   ]
+  },
+  {
+   "block_id": "0d897e30-7ec7-417f-b54b-78f16a5fc7ab",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A kultúrpolitika elvei hiányoznak (tiltott–tűrt–támogatott)",
+   "explanation": "A korszak jellegzetes elve, Aczél György nevéhez fűződő „három T” a kártyából hiányzik, pedig a teszt kérdez rá.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/György_Aczél",
+     "title": "György Aczél",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A Kádár-korszak kultúrpolitikája a politikai irányítás alatt állt, és a művészetek, a média és az oktatás terén is korlátozott nyilvánosságot biztosított.",
+     "A Kádár-korszak kultúrpolitikáját Aczél György irányította a „három T” elve szerint: a művek lehettek tiltottak, tűrtek vagy támogatottak; a művészetek, a média és az oktatás terén korlátozott nyilvánosság volt."
+    ]
+   ]
+  },
+  {
+   "block_id": "9eb622d8-8a12-48b6-aa67-e6a3b1940158",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: a prágai tavasz elfojtása „hozzájárult a magyar gazdasági reformok óvatosabb megközelítéséhez”",
+   "explanation": "Az új gazdasági mechanizmus 1968. január 1-jén már elindult; a visszafogás 1972–73-ban jött. Konkrét magyar vonatkozás: Magyarország csapatokkal (mintegy 12 ezer katona) részt vett az invázióban, Kádár még augusztus 13-án Komáromban tárgyalt Dubčekkel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Prague_Spring",
+     "title": "Prague Spring",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Warsaw_Pact_invasion_of_Czechoslovakia",
+     "title": "Warsaw Pact invasion of Czechoslovakia",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "link_hu": "Kádár János 1968. augusztus 13-án még Komáromban tárgyalt Dubčekkel, de augusztus 21-én magyar csapatok (mintegy tizenkétezer katona) is részt vettek Csehszlovákia megszállásában."
+   }
+  },
+  {
+   "block_id": "a7d37a06-5d92-4462-8b17-bd3943b54294",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mik a 'három T' a Kádár-korszakban?” (kulcs: D, Terv–Termelés–Társadalom)",
+   "explanation": "A kulcs ellentmond a magyarázatnak (tiltott, tűrt, támogatott), és egyik lehetőségben sem szerepel a helyes válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/György_Aczél",
+     "title": "György Aczél",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options": [
+     "Tiltott, tűrt, támogatott",
+     "Terv, Támogatás, Tevékenység",
+     "Társadalom, Történelem, Technológia",
+     "Tárgyalás, Tolerancia, Törvényesség"
+    ],
+    "correct": "A",
+    "explanation": "A „három T” a Kádár-korszak kultúrpolitikájának elve volt (Aczél György nevéhez fűződik): a művek lehettek tiltottak, tűrtek vagy támogatottak."
+   }
+  },
+  {
+   "block_id": "e381f8da-ce3c-4151-91d0-8143bbdba787",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mik voltak a termelőszövetkezetek?” (kulcs: állami tulajdonban lévő mezőgazdasági egységek)",
+   "explanation": "A termelőszövetkezet szövetkezeti tulajdonú nagyüzem volt; az állami tulajdonú forma az állami gazdaság.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Collectivization_in_Hungary",
+     "title": "Collectivization in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options": [
+     "Magánvállalkozások.",
+     "Szövetkezeti tulajdonban lévő mezőgazdasági nagyüzemek.",
+     "Társadalmi szervezetek.",
+     "Politikai pártok."
+    ],
+    "correct": "B",
+    "explanation": "A termelőszövetkezetek szövetkezeti tulajdonú mezőgazdasági nagyüzemek voltak, amelyekbe a parasztoknak be kellett vinniük a földjüket és eszközeiket (kollektivizálás); az állami gazdaságok ezzel szemben állami tulajdonúak voltak."
+   }
+  },
+  {
+   "block_id": "e381f8da-ce3c-4151-91d0-8143bbdba787",
+   "card_index": 4,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„miután a forradalom után politikai ellenfelekké váltak”",
+   "explanation": "Torz, homályos magyarázat. Nagy Imrét, Maléter Pált és Gimes Miklóst 1958. június 16-án végezték ki.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Imre_Nagy",
+     "title": "Imre Nagy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "Nagy Imrét, Maléter Pált és Gimes Miklóst 1958. június 16-án végezték ki."
+   }
+  },
+  {
+   "block_id": "e381f8da-ce3c-4151-91d0-8143bbdba787",
+   "card_index": 7,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mi volt a 'három T' a Kádár-rendszerben?” (kulcs: Terv, termelés, technológia)",
+   "explanation": "A „három T” a kultúrpolitika elve: tiltott, tűrt, támogatott (Aczél György). A kulcs téves.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/György_Aczél",
+     "title": "György Aczél",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options": [
+     "Tiltott, tűrt, támogatott (a kultúrpolitika elve).",
+     "Türelmetlenség, terror, tüntetés.",
+     "Társadalmi, technikai, tervezési.",
+     "Társadalom, technológia, tolerancia."
+    ],
+    "correct": "A",
+    "explanation": "A „három T” a Kádár-korszak kultúrpolitikájának elve volt: tiltott, tűrt, támogatott."
+   }
+  }
+ ]
+}

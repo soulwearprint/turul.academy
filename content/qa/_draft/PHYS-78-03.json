@@ -1,0 +1,22 @@
+{"coverage":{"read":["text","deep","quiz","world","experiment"],"lint_only":["story","visual"]},"findings":[
+{"block_id":"80ff9707-85b3-4cc0-b987-cd6d7afa06ca","card_index":3,"field":"think_answer","verdict":"wrong","severity":"medium",
+ "claim":"„Mert a gravitáció hat rá, ami egy külső erő, és az inercia miatt a test mozgásba lendül.”","explanation":"A tehetetlenség éppen a mozgásállapot megváltozásának ellenáll; a testet a nehézségi erő gyorsítja.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Inertia","title":"Inertia","accessed":"2026-09-30"}],
+ "set":{"think_answer":"Mert a nehézségi erő lefelé húzza, és ha semmi sem tartja meg, ez az erő gyorsítja a talaj felé."}},
+{"block_id":"d7b067b8-a8ab-4390-8aca-0b0dce87f7d2","card_index":0,"field":"discovery","verdict":"wrong","severity":"medium",
+ "claim":"„a sebességmérő (speedometer) feltalálása, amelyet az 1800-as évek elején kezdtek el használni az autókban”","explanation":"Az 1800-as évek elején még nem voltak autók; az első autók az 1880-as években jelentek meg, a sebességmérő az 1900-as évek elején terjedt el bennük. A rómaiak futósebesség-méréséről sincs megbízható adat.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Speedometer","title":"Speedometer","accessed":"2026-09-30"}],
+ "replace":[["A sebesség mérése már az ókorban is fontos volt, például a rómaiak a futók sebességét mérték, hogy megállapítsák, ki a leggyorsabb. A modern időszakban a sebességmérő (speedometer) feltalálása, amelyet az 1800-as évek elején kezdtek el használni az autókban, forradalmasította a közlekedést.","A járművek sebességmérője a 20. század elején terjedt el az autókban, nem sokkal azután, hogy az 1880-as években megjelentek az első autók."]]},
+{"block_id":"9dd860e7-ac36-4293-bae7-be55a5f0b040","card_index":3,"field":"options[3]","verdict":"quiz_key","severity":"high",
+ "claim":"„Melyik erő okozza a járművek kanyarodását?” — A) Súrlódási erő; D) Centripetális erő is helyesnek tűnik","explanation":"Kanyarban a súrlódási erő tölti be a centripetális (befelé mutató) erő szerepét, így mindkét válasz védhető.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Centripetal_force","title":"Centripetal force","accessed":"2026-09-30"}],
+ "set":{"options":["A) Súrlódási erő","B) Nehézségi erő","C) Légellenállás","D) Felhajtóerő"]}},
+{"block_id":"9dd860e7-ac36-4293-bae7-be55a5f0b040","card_index":0,"field":"question","verdict":"quiz_key","severity":"medium",
+ "claim":"„Melyik erő hat egy elejtett testre a Föld felszínén?” — A) Nehézségi erő; B) Légellenállás is hat","explanation":"Levegőben a légellenállás is hat a zuhanó testre, így két helyes válasz van; a kérdést a gyorsító erőre kell szűkíteni.",
+ "source_note":"Két helyes válasz.",
+ "set":{"question":"Melyik erő gyorsítja lefelé az elejtett testet a Föld felszínén?"}},
+{"block_id":"1c5dea85-eec0-471e-8346-26fcaf66e56b","card_index":5,"field":"heading, key_term","verdict":"misleading","severity":"low","apply":"review",
+ "claim":"Címsor „Sebességrekordok és kutatás”, kulcsszó „Newton második törvénye”, a szöveg a rekuperációs fékezésről szól","explanation":"A címsor és a kulcsszó nem illik a kártya tartalmához.",
+ "source_note":"Belső ellentmondás a kártyán.",
+ "set":{"heading":"Új technológiák a közlekedésben","key_term":"rekuperációs fékezés"}}
+]}

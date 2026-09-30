@@ -1,0 +1,596 @@
+{
+ "nat_id": "HIST-1112-01",
+ "topic_id": "361b09dc-69e0-4088-ad79-2a84a55869da",
+ "title_hu": "A nemzetállamok születése és a szocialista eszmék megjelenése",
+ "grade": 11,
+ "lessons": [
+  {
+   "lesson_id": "2419cc63-8a39-4438-8c88-9d6b46656f4b",
+   "title_hu": "A szocializmus és a munkásmozgalom",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "d871b7db-70e2-4565-b7f6-5a580b0bc5d2",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A szocializmus egy politikai és gazdasági eszmerendszer, amely a társadalmi egyenlőség és a közös tulajdon elveire épít. A 19. század közepén alakult ki, válaszul a kapitalizmus társadalmi feszültségeire. A szocializmus célja a vagyoni különbségek csökkentése és a munkások jogainak védelme. Magyarországon a szocialista eszmék a 19. század végén és a 20. század elején kezdtek elterjedni, különösen a munkásmozgalmak keretein belül.",
+       "type": "text",
+       "heading": "A szocializmus fogalma",
+       "key_term": "szocializmus"
+      },
+      {
+       "body": "Karl Marx német filozófus és közgazdász, a modern szocializmus egyik alapító atyja. 1848-ban publikálta a Kommunista kiáltványt, amely a munkásosztály felszabadítását és a kapitalizmus kritikáját hirdette. A kiáltvány hangsúlyozza a proletáriátus szerepét a társadalmi változásokban és a közös tulajdon szükségességét. Marx munkássága jelentős hatással volt a magyar munkásmozgalomra, különösen a 20. században.",
+       "type": "text",
+       "heading": "Karl Marx és a Kommunista kiáltvány",
+       "key_term": "Karl Marx"
+      },
+      {
+       "body": "A szakszervezetek a munkavállalók érdekképviseleti szervei, amelyek célja a munkakörülmények javítása és a munkások jogainak védelme. A 19. század végén Magyarországon is megalakultak az első szakszervezetek, amelyek a szocialista eszmék hatására jöttek létre. A szakszervezetek fontos szerepet játszottak a munkásmozgalmakban, segítve a munkások összefogását és a politikai képviseletüket. A szakszervezetek ma is kulcsszereplői a munkavállalói jogok védelmének.",
+       "type": "text",
+       "heading": "Szakszervezetek szerepe",
+       "key_term": "szakszervezet"
+      },
+      {
+       "body": "A szociáldemokrácia a szocializmus egyik ága, amely a demokratikus politikai rendszeren belül kívánja megvalósítani a társadalmi igazságosságot. A kommunizmus viszont a forradalmi átalakulást és a teljes közös tulajdont hirdeti. Magyarországon a szociáldemokrata pártok a 20. század elején alakultak meg, és a munkásosztály politikai képviseletét célozták. A két irányzat közötti feszültség jelentős hatással volt a magyar politikai életre.",
+       "type": "text",
+       "heading": "Szociáldemokrácia és kommunizmus",
+       "key_term": "szociáldemokrácia"
+      },
+      {
+       "body": "A keresztényszocializmus a keresztény értékek és a szocialista eszmék ötvözete, amely a társadalmi igazságosságot és a szolidaritást hangsúlyozza. A 19. század végén és a 20. század elején Magyarországon is megjelent, válaszul a munkásmozgalmakra és a társadalmi problémákra. A keresztényszocialista mozgalmak célja a szegénység és a társadalmi egyenlőtlenségek csökkentése volt, miközben megőrizték a keresztény értékeket. Ez a mozgalom hozzájárult a magyar társadalom szociális érzékenységének növeléséhez.",
+       "type": "text",
+       "heading": "Keresztényszocializmus",
+       "key_term": "keresztényszocializmus"
+      }
+     ]
+    },
+    {
+     "block_id": "24bba301-b01d-470f-a4e9-5611da838a31",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A gyári munkások napjai hajnali négy órakor kezdődtek, amikor a csengő megszólalt. A sötétben, fáradtan indultak el otthonról, hogy a gyárban eltöltött hosszú órák után a családjuk megélhetéséről gondoskodhassanak. A gépek zaja, a füst és a meleg légkör mindennapos volt. A munkások között sokan beszélgettek a szakszervezetekről, amelyek a munkakörülmények javításáért küzdöttek. A szakszervezet tagjai közötti szolidaritás erősítette a közösséget, és reményt adott a változásra.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A gyári munkások mindennapjai"
+      },
+      {
+       "body": "A munkáscsaládok otthonai kicsik és zsúfoltak voltak, gyakran több generáció élt együtt egy szobában. Az étkezések egyszerűek voltak, főleg kenyérből és burgonyából álltak. A gyermekek sokszor segítettek a házimunkában, míg a szülők fáradtan tértek haza a gyárból. Az ünnepek alkalmával, mint például a húsvét vagy karácsony, a családok próbáltak összegyűlni, hogy együtt ünnepeljenek, még ha a lehetőségeik korlátozottak is voltak.",
+       "mood": "család",
+       "type": "story",
+       "heading": "Családi élet a szegénység árnyékában"
+      },
+      {
+       "body": "A helyi közösségek fontos szerepet játszottak a munkások életében. A községi tanácsok gyakran foglalkoztak a munkásosztály problémáival, bár a hatalom gyakran nem hallgatta meg a kéréseiket. A közösségi rendezvények, mint a falunapok vagy a vásárok, lehetőséget adtak a munkásoknak, hogy találkozzanak, tapasztalataikat megosszák, és közösen küzdjenek a jogaikért. Az emberek közötti összetartás segített átvészelni a nehéz időszakokat.",
+       "mood": "hatalom",
+       "type": "story",
+       "heading": "A helyi közösség szerepe"
+      },
+      {
+       "body": "A vallás sok munkás számára menedéket jelentett a mindennapi nehézségek elől. A templomokban nemcsak a hit, hanem a közösség összetartozása is megnyilvánult. Az ünnepek, mint a karácsony és a pünkösd, alkalmat adtak arra, hogy a családok együtt imádkozzanak, és megerősítsék a kötelékeket. A keresztényszocializmus eszméje is teret nyert, amely a társadalmi egyenlőség és a közösségi felelősségvállalás fontosságát hangsúlyozta.",
+       "mood": "hit",
+       "type": "story",
+       "heading": "Hit és közösségi ünnepek"
+      },
+      {
+       "body": "A gyermekeik jövőjéért aggódó szülők igyekeztek biztosítani, hogy a gyerekek iskolába járjanak. Az oktatás nem volt mindenki számára elérhető, és sokan a gyárban dolgoztak, hogy hozzájáruljanak a család megélhetéséhez. Az iskolákban a tanárok igyekeztek a gyermekeknek a szocializmus eszméit is átadni, a társadalmi egyenlőség és a közösségi szellem fontosságát hangsúlyozva. Az iskolai ünnepségek lehetőséget adtak a gyerekeknek, hogy bemutassák tudásukat és tehetségüket.",
+       "mood": "gyermekek",
+       "type": "story",
+       "heading": "A gyermekek nevelése és oktatása"
+      }
+     ]
+    },
+    {
+     "block_id": "eaef227c-b624-4702-b0f0-e6e51967f11f",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A szocializmus alapelvei",
+       "heading": "A szocializmus fogalma",
+       "description": "A diagram bemutatja a szocializmus alapelveit, mint a társadalmi egyenlőség, közös tulajdon és a munkásosztály szerepe. Az egyes elemek összekapcsolása segít megérteni a szocializmus céljait és eszméit.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Karl Marx életének főbb állomásai",
+       "heading": "Karl Marx élete és munkássága",
+       "description": "Az idővonal bemutatja Karl Marx életének fontosabb eseményeit, például születését (1818), a Kommunista Kiáltvány megjelenését (1848) és halálát (1883). A helyszínek, mint Trier, London és Párizs, szintén fontosak a munkásmozgalom szempontjából.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A Kommunista Kiáltvány borítója",
+       "heading": "A Kommunista Kiáltvány",
+       "description": "A Kommunista Kiáltvány borítója, amely 1848-ban jelent meg. A kiáltvány a munkásosztály harcát és a tőke kritikáját fogalmazza meg, és nagy hatással volt a világ politikai gondolkodására.",
+       "visual_type": "kép"
+      },
+      {
+       "type": "visual",
+       "caption": "Szakszervezetek Európában",
+       "heading": "Szakszervezetek kialakulása",
+       "description": "A térkép bemutatja a szakszervezetek elterjedését Európában a 19. században, különös figyelmet fordítva Magyarországra, ahol a munkásmozgalom erősödése a szakszervezetek létrejöttét eredményezte.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "Szociáldemokrácia és kommunizmus összehasonlítása",
+       "heading": "Szociáldemokrácia és kommunizmus",
+       "description": "A diagram bemutatja a szociáldemokrácia és a kommunizmus közötti különbségeket és hasonlóságokat, kiemelve a politikai céljaikat és eszközeiket.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Keresztényszocializmus alapelvei",
+       "heading": "Keresztényszocializmus",
+       "description": "A diagram bemutatja a keresztényszocializmus alapelveit, amely a keresztény értékek és a szociális igazságosság összekapcsolására törekszik, és a munkásmozgalom alternatívájaként jelent meg.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "1b347c6c-7870-414e-aed7-c4b0e735c0db",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A szocializmus és a munkásmozgalom eszméi a 19. század közepén kezdtek el terjedni Európában, különösen a gyári munkások körében, akik a munkahelyi körülmények javításáért küzdöttek. Ekkoriban több országban is megjelentek a szakszervezetek, amelyek a munkavállalók jogait és érdekeit képviselték. A szocialista eszmék, beleértve a kommunizmust és a szociáldemokráciát, különböző formákban más kultúrákban és időszakokban is megjelentek, például a francia forradalom idején vagy a 20. századi szocialista államok létrejöttekor.",
+       "type": "world",
+       "year": "",
+       "heading": "A szocializmus és a munkásmozgalom megjelenése a világban",
+       "link_hu": ""
+      }
+     ]
+    },
+    {
+     "block_id": "b109a935-dd47-4409-a98d-80919e828e79",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A munkavállalók jogainak védelme és érdekeik képviselete",
+        "B) Politikai hatalom megszerzése",
+        "C) Vallási közösségek alapítása",
+        "D) A vállalatok profitjának növelése"
+       ],
+       "question": "Mi a szakszervezetek fő célja?",
+       "explanation": "A szakszervezetek a munkavállalók jogainak védelmére és érdekeik képviseletére jöttek létre, hogy jobb munkakörülményeket és magasabb bért harcoljanak ki.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A szocializmus elméleti megalapozója",
+        "B) A Magyar Szakszervezetek Szövetségének alapítója",
+        "C) A keresztényszocializmus ideológusa",
+        "D) Egy magyar politikai vezető"
+       ],
+       "question": "Ki volt Karl Marx?",
+       "explanation": "Karl Marx a szocializmus elméleti megalapozója, akinek munkássága jelentős hatással volt a munkásmozgalomra és a politikai gondolkodásra.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 1848",
+        "B) 1867",
+        "C) 1905",
+        "D) 1917"
+       ],
+       "question": "Mikor jelent meg a Kommunista kiáltvány?",
+       "explanation": "A Kommunista kiáltvány 1848-ban jelent meg, és Karl Marx valamint Friedrich Engels írták, célja a munkásosztály összefogásának elősegítése volt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A szociáldemokrácia reformista, a kommunizmus forradalmi",
+        "B) A szociáldemokrácia vallásos, a kommunizmus ateista",
+        "C) A szociáldemokrácia a munkásmozgalom része, a kommunizmus pedig nem",
+        "D) A szociáldemokrácia kizárólag Magyarországra vonatkozik, a kommunizmus globális"
+       ],
+       "question": "Mi a különbség a szociáldemokrácia és a kommunizmus között?",
+       "explanation": "A szociáldemokrácia reformista megközelítést képvisel, amely a meglévő társadalmi rendszerek keretein belül kívánja elérni a társadalmi egyenlőséget, míg a kommunizmus forradalmi átalakulást sürget.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A keresztény tanítások és értékek társadalmi és politikai alkalmazása",
+        "B) A vallás teljes elutasítása",
+        "C) A kapitalizmus kizárólagos támogatása",
+        "D) A munkásmozgalom elleni fellépés"
+       ],
+       "question": "Mi a keresztényszocializmus alapelve?",
+       "explanation": "A keresztényszocializmus a keresztény tanítások és értékek társadalmi és politikai alkalmazására törekszik, hangsúlyozva a szociális igazságosságot és a közösség fontosságát.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "23c4335e-f374-44b7-b3ed-cd13003bd49c",
+   "title_hu": "A polgári nemzetállam megteremtése (Németország, Amerikai Egyesült Államok, Japán)",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "1cb031e9-59ca-4ab9-8d34-1e81d8c4d1c3",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A polgári állam fogalma a 19. századra terjedt el, amikor a politikai hatalom demokratikus alapokra helyeződött. A polgári állam jellemzője a jogegyenlőség és a társadalmi mobilitás elősegítése. A polgári állam kiépítése során a választójog kiterjesztése és az alkotmányosság megteremtése vált középpontba. A polgári állam megteremtése különösen fontos volt Magyarország számára, mivel a nemzeti függetlenség és a modernizáció alapjait képezte.",
+       "type": "text",
+       "heading": "A polgári állam kialakulása",
+       "key_term": "polgári állam"
+      },
+      {
+       "body": "Az amerikai polgárháború 1861 és 1865 között zajlott, és a déli államok elszakadási törekvéseivel indult. Abraham Lincoln, az Egyesült Államok elnöke, a háború során a szövetségi egység megőrzésére törekedett, valamint a rabszolgaság eltörlésére. A polgárháború végül a szövetségi államok győzelmével zárult, amely megerősítette a polgári állam alapjait. A háború következményei a jogegyenlőség és az emancipációs törekvések szempontjából is jelentősek voltak.",
+       "type": "text",
+       "heading": "Az amerikai polgárháború",
+       "key_term": "polgárháború"
+      },
+      {
+       "body": "Németország egyesítése 1871-ben valósult meg, Otto von Bismarck vezetésével. Bismarck politikai stratégiája a háborúk és diplomácia kombinálására épült, amely lehetővé tette a német államok egyesülését egy erős központi hatalom alatt. Az egyesítés nemcsak politikai, hanem gazdasági szempontból is fontos volt, mivel elősegítette a német ipar fejlődését és a monopóliumok kialakulását. A német egység és Bismarck politikája Magyarország számára is példát jelentett a nemzeti egység megteremtésében.",
+       "type": "text",
+       "heading": "Németország egyesítése",
+       "key_term": "Otto von Bismarck"
+      },
+      {
+       "body": "A Meidzsi-restauráció 1868-ban indult Japánban, amely a feudális rendszer végét és a modern állam kialakulását hozta el. A restauráció célja a nyugati hatalmakhoz való felzárkózás volt, amelynek keretében a politikai, gazdasági és kulturális reformok valósultak meg. Japán példája arra is rámutat, hogy a nemzeti egység és a modernizáció hogyan valósulhat meg egy tradicionális társadalomban. A Meidzsi-restauráció fontos tanulságokat hordoz a magyar nemzet számára a modern államépítés szempontjából.",
+       "type": "text",
+       "heading": "A Meidzsi-restauráció Japánban",
+       "key_term": "Meidzsi-restauráció"
+      },
+      {
+       "body": "A 19. század végén és a 20. század elején a polgári államokban megjelentek a társadalombiztosítási rendszerek, amelyek célja a társadalmi egyenlőtlenségek csökkentése volt. Az emancipációs törekvések, különösen a nők jogainak érvényesítése, szintén fontos szerepet játszottak a modern államok fejlődésében. Magyarországon is megjelentek hasonló mozgalmak, amelyek célja a jogegyenlőség és a társadalmi igazságosság megteremtése volt. A társadalombiztosítási rendszerek bevezetése a polgári államok stabilitását is növelte.",
+       "type": "text",
+       "heading": "Társadalombiztosítás és emancipációs törekvések",
+       "key_term": "társadalombiztosítás"
+      }
+     ]
+    },
+    {
+     "block_id": "91199039-a72a-461b-92cc-1a1eb67b8170",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A falusi közösségekben a földművesek mindennapjaikat a földek megművelésével töltötték. A tavaszi vetés és az őszi aratás ritmusában éltek, amely az évszakok váltakozását követte. A gazdák fáradhatatlan munkájukkal biztosították családjaik megélhetését, a friss élelmiszert és a megélhetés alapjait. A mezőgazdaságban dolgozók számára a munka nemcsak fizikai megterhelést jelentett, hanem közösségi összetartozást is, hiszen a szüret vagy a betakarítás alkalmával együtt dolgoztak, megosztva a terheket és az örömöket.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A mezőgazdasági élet mindennapjai"
+      },
+      {
+       "body": "A családok életében a táplálkozás központi szerepet játszott. Az ételek beszerzése, elkészítése és fogyasztása nemcsak a fizikai szükségletek kielégítéséről szólt, hanem a családi kötelékek erősítéséről is. Az ünnepek során különleges ételeket készítettek, amelyek a hagyományok ápolását szolgálták. A falusi asszonyok gyakran összegyűltek, hogy közösen készítsenek ételeket, miközben a gyerekek játszottak a közelben. Az étkezések során a családtagok megosztották egymással életük eseményeit, ezáltal erősítve a családi kötelékeket.",
+       "mood": "otthon",
+       "type": "story",
+       "heading": "A család és a táplálkozás"
+      },
+      {
+       "body": "A falvakban a helyi közösségek szoros kapcsolatban álltak a hivatalokkal. A községi elöljárók fontos szerepet játszottak a közrend fenntartásában és a közszolgáltatások biztosításában. A községi gyűlések alkalmával a felnőttek megvitatták a közös ügyeket, például az utak karbantartását vagy a közmunkákat. A hivatalnokok, akik a közösség érdekeit képviselték, gyakran szoros kapcsolatokat ápoltak a helyi gazdákkal és kereskedőkkel, ezzel elősegítve a közösségi élet fejlődését.",
+       "mood": "hatalom",
+       "type": "story",
+       "heading": "A helyi közösség és a hivatalok viszonya"
+      },
+      {
+       "body": "A gyermekek nevelése a közösségek alapvető feladata volt. Az iskolákban a gyerekek alapvető írás-olvasási ismereteket szereztek. A falusi tanítók nemcsak az iskolai tantárgyakat oktatták, hanem a helyi hagyományok és szokások átadásában is fontos szerepet játszottak. Az iskolai ünnepségek, mint például a szüret ünnepe, alkalmat adtak arra, hogy a közösség együtt ünnepeljen, és a gyerekek számára is emlékezetessé váljon a tanulás.",
+       "mood": "gyermekek",
+       "type": "story",
+       "heading": "A gyermekek nevelése és az iskola"
+      },
+      {
+       "body": "A falusi közösségekben a betegség gyakran félelemmel töltötte el az embereket. A gyógyítók és a bábaasszonyok fontos szerepet játszottak a helyi egészségügyben, hiszen a modern orvostudomány még nem volt elérhető. A természetes gyógymódok, mint a gyógynövények használata, elterjedtek. A közösség tagjai gyakran összegyűltek, hogy támogassák a betegeket, élelmet és segítséget nyújtva nekik a gyógyulás idején. Az ünnepek és a szokások gyakran tartalmaztak olyan elemeket is, amelyek a betegség elkerülésére irányultak.",
+       "mood": "betegség",
+       "type": "story",
+       "heading": "A betegség és a gyógyítás"
+      }
+     ]
+    },
+    {
+     "block_id": "7924afec-fd2d-436f-9c29-6ba848afce34",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Amerikai polgárháború idővonala (1861-1865)",
+       "heading": "Amerikai polgárháború idővonala",
+       "description": "Az amerikai polgárháború 1861 és 1865 között zajlott, amely a déli államok függetlenségéért folytatott harc volt az északi államokkal szemben. Az idővonal bemutatja a háború főbb eseményeit és Abraham Lincoln szerepét.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "Németország egyesítése (1871)",
+       "heading": "Németország egyesítése",
+       "description": "A térkép bemutatja Németország területi egységét, amely 1871-ben jött létre Otto von Bismarck vezetésével. A térkép jelzi a különböző német államokat, amelyek egyesültek a Német Császárság megalakulása érdekében.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "Meidzsi-restauráció idővonala (1868)",
+       "heading": "Meidzsi-restauráció Japánban",
+       "description": "A Meidzsi-restauráció 1868-ban kezdődött, amely során Japán modernizálta politikai és gazdasági rendszerét, ezzel megalapozva a polgári államot. Az idővonal bemutatja a reformok főbb lépéseit.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A polgári állam kiépítése",
+       "heading": "Polgári állam és jogegyenlőség",
+       "description": "A diagram szemlélteti a polgári állam kiépítésének főbb elemeit, mint a jogegyenlőség, az alkotmányosság és a választójog. A diagram bemutatja, hogy ezek az elemek hogyan alakították a modern nemzetállamokat.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Monopóliumok és társadalombiztosítás",
+       "heading": "Monopóliumok és társadalombiztosítás",
+       "description": "A diagram bemutatja a monopóliumok kialakulását a polgári államokban, valamint a társadalombiztosítás bevezetésének fontosságát a munkavállalók védelmében. A diagram szemlélteti a gazdasági és társadalmi hatásokat.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Abraham Lincoln, a polgári jogok harcosa",
+       "heading": "Abraham Lincoln arcképe",
+       "description": "Abraham Lincoln, az Egyesült Államok 16. elnöke, aki a polgárháború alatt a függetlenség és a jogegyenlőség megteremtéséért küzdött. Az arckép bemutatja Lincoln jelentőségét a polgári állam kialakulásában.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "Otto von Bismarck, a német egység megteremtője",
+       "heading": "Otto von Bismarck arcképe",
+       "description": "Otto von Bismarck, Németország kancellárja, aki a német egység megteremtésében játszott kulcsszerepet. Az arckép hangsúlyozza Bismarck politikai stratégiáját és a polgári állam kiépítését.",
+       "visual_type": "arckép"
+      }
+     ]
+    },
+    {
+     "block_id": "c0b74cd8-83ef-4f89-a1de-0fb57759c912",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az Egyesült Államokban 1861 és 1865 között zajlott polgárháború a déli államok és az északi államok között. A konfliktus fő oka a rabszolgaság kérdése volt, amely megosztotta a nemzetet. Abraham Lincoln elnök vezette az északiakat, akik a rabszolgaság eltörlését tűzték ki célul, míg a déli államok a rabszolgaság fenntartását védték.",
+       "type": "world",
+       "year": "1861",
+       "heading": "Az amerikai polgárháború",
+       "link_hu": "A polgárháború során a rabszolgaság eltörlése és a jogegyenlőség előmozdítása hozzájárult a polgári állam kiépítéséhez Magyarországon is, ahol hasonló emancipációs törekvések indultak."
+      },
+      {
+       "body": "1868-ban Japánban a Meidzsi-restauráció kezdődött, amely a császári hatalom helyreállítását célozta meg. Ez a folyamat a nyugati modernizációs törekvések jegyében zajlott, és jelentős társadalmi, politikai és gazdasági reformokat hozott magával. Japán gyorsan iparosodott, és a nemzeti egység megteremtésére törekedett.",
+       "type": "world",
+       "year": "1868",
+       "heading": "Meidzsi-restauráció Japánban",
+       "link_hu": "A Meidzsi-restauráció során végrehajtott reformok és a polgári állam kiépítése hasonlóságot mutat a Magyarországon a 19. század második felében végbemenő modernizációs törekvésekkel."
+      },
+      {
+       "body": "1871-ben Otto von Bismarck vezetésével Németország egyesült, ezzel létrejött a Német Császárság. Az egyesítés mögött álló politikai és katonai stratégiák, valamint a nemzeti egység megteremtésére irányuló törekvések alapvetően átalakították a német állam szerkezetét. Bismarck politikája a nacionalizmus és a militarizmus kombinációjára épült.",
+       "type": "world",
+       "year": "1871",
+       "heading": "Németország egyesítése",
+       "link_hu": "Németország egyesítése példát mutatott arra, hogyan lehet politikai egységet teremteni, ami hatással volt Magyarország nemzeti egység megteremtésére is, különösen a dualizmus korában."
+      }
+     ]
+    },
+    {
+     "block_id": "ef2e50c3-2f60-4157-9abb-fac6cfae203b",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A rabszolgaság kérdése",
+        "B) A gazdasági válság",
+        "C) A területi viták",
+        "D) A külső beavatkozások"
+       ],
+       "question": "Mi volt a fő oka az amerikai polgárháborúnak (1861-1865)?",
+       "explanation": "Az amerikai polgárháború fő oka a rabszolgaság eltörlésének és a rabszolgatartó államok jogainak ellentéte volt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) 1861, Abraham Lincoln",
+        "B) 1868, Otto von Bismarck",
+        "C) 1871, Otto von Bismarck",
+        "D) 1871, Abraham Lincoln"
+       ],
+       "question": "Mikor egyesült Németország, és ki volt ennek a fő irányítója?",
+       "explanation": "Németország 1871-ben egyesült, és Otto von Bismarck volt a fő irányítója ennek a folyamatnak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) 1861",
+        "B) 1865",
+        "C) 1868",
+        "D) 1871"
+       ],
+       "question": "Melyik évben zajlott a Meidzsi-restauráció Japánban?",
+       "explanation": "A Meidzsi-restauráció 1868-ban kezdődött, ami jelentős politikai és társadalmi átalakulást hozott Japánban.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A polgári állam kiépítése és a rabszolgaság eltörlése",
+        "B) A német egység megteremtése",
+        "C) A japán iparosítás irányítása",
+        "D) A társadalombiztosítás bevezetése"
+       ],
+       "question": "Milyen szerepet játszott Abraham Lincoln az Egyesült Államok történetében?",
+       "explanation": "Abraham Lincoln az Egyesült Államok elnöke volt, aki a polgárháború alatt a rabszolgaság eltörléséért és a polgári állam kiépítéséért küzdött.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Egy piaci helyzet, ahol egyetlen vállalat uralja a piacot",
+        "B) Az állampolgárok jogegyenlősége",
+        "C) A társadalombiztosítási rendszer",
+        "D) A választójog kiterjesztése"
+       ],
+       "question": "Mi a monopólium?",
+       "explanation": "A monopólium olyan piaci helyzet, amikor egyetlen vállalat dominál a piacon, amely versenyellenes helyzetet teremt.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "2ffd1628-6f12-42c6-8ce7-a13419b53571",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az északi és déli államok közötti ellentétek",
+      "B) A szakszervezetek megerősödése",
+      "C) A német egység megteremtése",
+      "D) A japán iparosodás"
+     ],
+     "question": "Mi jellemezte az amerikai polgárháborút (1861-1865)?",
+     "explanation": "Az amerikai polgárháború az északi államok (Unió) és a déli államok (Konföderáció) közötti konfliktus volt, amely a rabszolgaság kérdése körül alakult ki.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Abraham Lincoln",
+      "B) Otto von Bismarck",
+      "C) Karl Marx",
+      "D) George Washington"
+     ],
+     "question": "Ki volt az, aki a német egység megteremtésében kulcsszerepet játszott?",
+     "explanation": "Otto von Bismarck, mint a porosz kancellár, a német egység megvalósításának motorja volt, és 1871-ben egyesítette Németországot.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Központi tervezés",
+      "B) Magántulajdon és szabad verseny",
+      "C) Rabszolgaság",
+      "D) Szocialista irányítás"
+     ],
+     "question": "Mi a polgári állam fő jellemzője?",
+     "explanation": "A polgári állam a magántulajdon, a szabad verseny és a polgári jogok védelmén alapul.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A kommunizmus radikális formája",
+      "B) A polgári demokrácia mellett a munkásjogok védelme",
+      "C) A kapitalizmus teljes eltörlése",
+      "D) A keresztényszocializmus elvei"
+     ],
+     "question": "Milyen eszmék jellemzik a szociáldemokráciát?",
+     "explanation": "A szociáldemokrácia a polgári demokrácia keretein belül a munkásjogok védelmét és a társadalmi igazságosságot helyezi előtérbe.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Több vállalat egyesülése",
+      "B) Egyetlen vállalat dominál a piacon",
+      "C) Szakszervezetek létrehozása",
+      "D) Társadalombiztosítás bevezetése"
+     ],
+     "question": "Mi a monopólium?",
+     "explanation": "A monopólium olyan piaci helyzet, amikor egyetlen vállalat uralja a piacot, ezzel megakadályozva a versenyt.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Keresztényszocializmus",
+      "B) Szocializmus és kommunizmus",
+      "C) Polgári liberalizmus",
+      "D) Monarchizmus"
+     ],
+     "question": "Milyen eszmevilágot képviselt Karl Marx?",
+     "explanation": "Karl Marx a szocializmus és a kommunizmus elméleti megalapozója volt, aki a munkásosztály emancipációját hirdette.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A rabszolgaság eltörlése",
+      "B) A modernizálás és iparosítás",
+      "C) A szakszervezetek megerősítése",
+      "D) A német egység megteremtése"
+     ],
+     "question": "Mi volt a Meidzsi-restauráció célja Japánban 1868-ban?",
+     "explanation": "A Meidzsi-restauráció célja Japán modernizálása és iparosítása volt, amely lehetővé tette az ország nyugati hatalmakkal való versenyképességét.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Szakszervezet",
+      "B) Szocializmus",
+      "C) Kommunizmus",
+      "D) Polgárháború"
+     ],
+     "question": "Melyik fogalom kapcsolódik a társadalombiztosításhoz?",
+     "explanation": "A társadalombiztosítás a szocialista eszmék egyik megvalósulása, amely a munkavállalók védelmét és jólétét célozza.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,539 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres/hiányos kísérletblokkok: a try_advanced mező üres az a8d6f35d, 11ab9bf7 és b7efa2c2 blokkban.",
+   "A b7efa2c2 blokkban a termosz Dewar-féle feltalálása (1892) rendben van."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "313eb94d-076a-405f-b562-c50266e7d277",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a vákuumos szigetelés is elterjedt … energiatakarékosabbá teszi az épületeket”",
+   "explanation": "Épületeknél a vákuumszigetelés nem elterjedt; a jól ismert példa a termosz, ahol a két fal közötti légritkított tér szünteti meg a hővezetést és -áramlást.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Vacuum_flask",
+     "title": "Vacuum flask",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Továbbá a vákuumos szigetelés is elterjedt, hiszen a légritkított tér kiváló hőszigetelő, így energiatakarékosabbá teszi az épületeket.",
+     "A termosz falai között is légritkított tér van, mert a vákuum kiválóan szigetel: nincs benne részecske, amely vezethetné vagy áramoltathatná a hőt."
+    ]
+   ]
+  },
+  {
+   "block_id": "313eb94d-076a-405f-b562-c50266e7d277",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A fűtési rendszer működése „összefügg a légnyomással”; a cirkulációs szivattyúk „segítik a levegő keringését”",
+   "explanation": "A radiátoros fűtés hőáramláson alapul, nem légnyomáson. A cirkulációs szivattyú a fűtővizet mozgatja, nem a levegőt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Convection",
+     "title": "Convection",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az iskola fűtési rendszerének működése is összefügg a légnyomással. A fűtési rendszerben a meleg levegő felfelé áramlik, míg a hideg levegő lesüllyed. A fűtési rendszer elemei, mint a radiátorok és a cirkulációs szivattyúk, segítik a levegő keringését, így biztosítva a megfelelő hőmérsékletet az osztálytermekben.",
+     "Az iskola fűtési rendszerének működése a hőáramlásra épül: a radiátor melegíti a levegőt, a meleg levegő felfelé áramlik, a hideg lesüllyed. A cirkulációs szivattyú a radiátorokban keringő fűtővizet mozgatja, így jut el a hő az osztálytermekig."
+    ]
+   ]
+  },
+  {
+   "block_id": "a5ea82db-f91d-4d56-ab00-2dbcdb342cd0",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„20 °C-on 10 g vízgőz … a maximális kapacitás 20 g … a relatív páratartalom 50%”",
+   "explanation": "20 °C-on 1 m³ levegő legfeljebb kb. 17,3 g vízgőzt tartalmazhat, nem 20 g-ot. A 10 g/17,3 g nem 50%, hanem kb. 58%.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Humidity",
+     "title": "Humidity",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Például, ha a levegő 20 °C-on 10 g vízgőzt tartalmaz, de a maximális kapacitás 20 g, akkor a relatív páratartalom 50%.",
+     "Például 20 °C-on 1 m³ levegő legfeljebb kb. 17 g vízgőzt tartalmazhat; ha éppen 8,5 g van benne, a relatív páratartalom kb. 50%."
+    ]
+   ]
+  },
+  {
+   "block_id": "a5ea82db-f91d-4d56-ab00-2dbcdb342cd0",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„amikor 30 °C van, a levegő sokkal szárazabbnak tűnik … a testünk hűtése nehezebbé válik”",
+   "explanation": "A testhűtés a nagy páratartalomnál nehezebb, mert a verejték nehezebben párolog; a szöveg a száraz levegőre mondja. A 30 °C és 20 °C összevetése is zavaros: a lényeg, hogy állandó vízgőztartalomnál melegítéskor a relatív páratartalom csökken.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Relative_humidity",
+     "title": "Relative humidity",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Gondoljunk csak a nyári hőségre: amikor 30 °C van, a levegő sokkal szárazabbnak tűnik, mint egy 20 °C-os, párásabb napon. Ezért fontos figyelni a páratartalomra, különösen a hőségben, mert a testünk hűtése nehezebbé válik.",
+     "Gondoljunk csak a nyári hőségre: ha a levegő vízgőztartalma nem változik, a délutáni 30 °C-on jóval kisebb a relatív páratartalom, mint hajnalban 15 °C-on. Ezért fontos figyelni a páratartalomra, különösen a hőségben, mert nagy páratartalomnál a verejték nehezebben párolog, így a testünk hűtése nehezebbé válik."
+    ]
+   ]
+  },
+  {
+   "block_id": "a5ea82db-f91d-4d56-ab00-2dbcdb342cd0",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A harmatcseppek „a levegő hőmérsékletének csökkenésével alakulnak ki, és ez az egyik természetes módja a páraképződésnek”",
+   "explanation": "A harmat nem páraképződés, hanem a vízgőz lecsapódása arra a felületre, amely a harmatpont alá hűlt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dew",
+     "title": "Dew",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A harmatcseppek a levegő hőmérsékletének csökkenésével alakulnak ki, és ez az egyik természetes módja a páraképződésnek.",
+     "A harmat akkor képződik, amikor a felület a harmatpont alá hűl, és a levegő vízgőze lecsapódik rajta."
+    ]
+   ]
+  },
+  {
+   "block_id": "a5ea82db-f91d-4d56-ab00-2dbcdb342cd0",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A dér (jégkristályok) és a zúzmara (jégkristályok a felületeken)” – a két jelenség nincs megkülönböztetve",
+   "explanation": "A dér a fagypont alatti felületen a vízgőzből közvetlenül kiváló jég (deszublimáció); a zúzmara a túlhűtött ködcseppek megfagyásával keletkezik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Frost",
+     "title": "Frost",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Rime_ice",
+     "title": "Rime ice",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A dér (jégkristályok) és a zúzmara (jégkristályok a felületeken) a levegő hőmérsékletének csökkenésekor alakul ki, amikor a levegő relatív páratartalma 100% körüli értéket ér el.",
+     "A dér a 0 °C alatti felületeken a vízgőzből közvetlenül kiváló jégkristály, a zúzmara pedig a ködcseppek megfagyásával keletkezik a fagyott tárgyakon, ha a levegő relatív páratartalma 100% körüli."
+    ]
+   ]
+  },
+  {
+   "block_id": "a5ea82db-f91d-4d56-ab00-2dbcdb342cd0",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A meleg levegő kiszáríthatja a szobát, így a relatív páratartalom csökken”",
+   "explanation": "A fűtés nem szárítja ki a levegőt: a vízgőz mennyisége nem változik, csak a melegebb levegő nagyobb telítési mennyisége miatt csökken a relatív páratartalom.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Relative_humidity",
+     "title": "Relative humidity",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A meleg levegő kiszáríthatja a szobát, így a relatív páratartalom csökken.",
+     "A fűtés melegíti a levegőt, de a vízgőz mennyisége nem változik, ezért a relatív páratartalom csökken."
+    ]
+   ]
+  },
+  {
+   "block_id": "75ca69b6-4668-431e-96b4-b5a090f2f845",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Ezt a jelenséget használják a napelemek is, amelyek a napfényből elektromos áramot termelnek”",
+   "explanation": "A napelem a fény energiáját alakítja közvetlenül árammá (fotoelektromos hatás), nem a hősugárzás hőjét használja; a hőt a napkollektor hasznosítja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Solar_cell",
+     "title": "Solar cell",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ezt a jelenséget használják a napelemek is, amelyek a napfényből elektromos áramot termelnek.",
+     "A napkollektor a napsugárzás hőjét használja a víz melegítésére; a napelem viszont nem hőt, hanem a fényt alakítja elektromos árammá."
+    ]
+   ]
+  },
+  {
+   "block_id": "75ca69b6-4668-431e-96b4-b5a090f2f845",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A dupla üvegezés „megakadályozza a hőáramlást”",
+   "explanation": "A kétrétegű üvegezés csökkenti, de nem szünteti meg a hőátadást.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Insulated_glazing",
+     "title": "Insulated glazing",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ez a réteg megakadályozza a hőáramlást, így a meleg levegő nem tud távozni télen, és a nyári hőség sem tud bejutni.",
+     "Ez a réteg jelentősen csökkenti a hőátadást, így kevesebb hő távozik télen, és nyáron kevesebb hő jut be."
+    ]
+   ]
+  },
+  {
+   "block_id": "75ca69b6-4668-431e-96b4-b5a090f2f845",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A termosz „hőszigetelő anyag megakadályozza a hővezetést és a hőáramlást”",
+   "explanation": "A termoszban nem szigetelőanyag, hanem a két fal közötti légritkított tér (vákuum) csökkenti a vezetést és az áramlást, a tükröző bevonat pedig a sugárzást.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Vacuum_flask",
+     "title": "Vacuum flask",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "mivel a hőszigetelő anyag megakadályozza a hővezetést és a hőáramlást",
+     "mivel a falai közötti vákuum szinte megszünteti a hővezetést és a hőáramlást, a tükröző bevonat pedig a hősugárzást csökkenti"
+    ]
+   ]
+  },
+  {
+   "block_id": "cf830778-2de8-4ede-bcb5-7e708658e2cb",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„0 °C alatt, amikor jég képződik, a víz térfogata nő”; „tavasszal, amikor a jég elkezd olvadni … a mélyebb víz hőmérséklete nem csökken”",
+   "explanation": "A víz rendhagyósága, hogy 0–4 °C között melegítéskor összehúzódik (4 °C-on a legsűrűbb), fagyáskor pedig kitágul. A jégréteg télen védi a mélyebb vizet, nem olvadáskor.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Properties_of_water",
+     "title": "Properties of water",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A víz hőtágulása különleges, mert 0 °C alatt, amikor jég képződik, a víz térfogata nő.",
+     "A víz hőtágulása különleges: 0 °C és 4 °C között melegítéskor összehúzódik (4 °C-on a legsűrűbb), fagyáskor pedig kitágul, kb. 9%-kal."
+    ],
+    [
+     "Gondoljunk bele, hogy tavasszal, amikor a jég elkezd olvadni a tavakon, a jégréteg a víz felszínén marad, így a mélyebb víz hőmérséklete nem csökken drasztikusan, ami segíti a vízi élőlények túlélését.",
+     "Gondoljunk bele, hogy télen a tavak jégrétege a víz felszínén marad, így a mélyebb víz nem fagy meg, ami segíti a vízi élőlények túlélését."
+    ]
+   ]
+  },
+  {
+   "block_id": "cf830778-2de8-4ede-bcb5-7e708658e2cb",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„ha a hőmérséklet emelkedik, a levegő képes több nedvességet megtartani, ami esőhöz vezethet”",
+   "explanation": "A csapadékhoz nem a melegedés, hanem a lehűlés vezet: a lehűlő levegő vízgőze lecsapódik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Precipitation",
+     "title": "Precipitation",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "ami esőhöz vezethet",
+     "ha viszont lehűl, a vízgőz lecsapódik, és felhő, csapadék keletkezhet"
+    ]
+   ]
+  },
+  {
+   "block_id": "cf830778-2de8-4ede-bcb5-7e708658e2cb",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a nyarak egyre melegebbek és szárazabbak, míg a telek enyhébbek lehetnek”",
+   "explanation": "A szárazság regionálisan eltérő; az általánosítás pontatlan.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Climate_change",
+     "title": "Climate change",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a nyarak egyre melegebbek és szárazabbak, míg a telek enyhébbek lehetnek",
+     "sok helyen, így Magyarországon is melegebbek a nyarak és gyakoribbak a hőhullámok, a telek pedig átlagosan enyhébbek"
+    ]
+   ]
+  },
+  {
+   "block_id": "850a4047-976e-4d83-aef2-67d1743da9ae",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A légritkított térben az oxigén mennyisége csökken”",
+   "explanation": "Magasan az oxigén aránya a levegőben ugyanannyi (kb. 21%), de a nyomás, így az oxigén parciális nyomása csökken.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Altitude_sickness",
+     "title": "Altitude sickness",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "A légritkított térben kisebb a nyomás, így a belélegzett oxigén parciális nyomása is kisebb, ezért nehezebb a légzés."
+   }
+  },
+  {
+   "block_id": "8849faa3-0fd3-4bc7-bcf6-2efb2b42ce5d",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi az abszolút páratartalom?” – A) tömeg/köbméter (kulcs) és D) „a vízgőz koncentrációja a levegőben” is helyes",
+   "explanation": "A vízgőz koncentrációja a levegőben szintén az abszolút páratartalom egy megfogalmazása, így két válasz helyes.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Humidity",
+     "title": "Humidity",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[3]": "D) A levegőben lévő vízgőz hőmérséklete."
+   }
+  },
+  {
+   "block_id": "053d8dea-d365-4c73-ba93-e8302f170669",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mert 0 °C alatt a víz térfogata nő.”",
+   "explanation": "A rendhagyóság az, hogy a víz 0–4 °C között melegítéskor összehúzódik, fagyáskor pedig kitágul; a „0 °C alatt hőtágul” megfogalmazás pontatlan.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Properties_of_water",
+     "title": "Properties of water",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) Mert 0 és 4 °C között melegítéskor összehúzódik, fagyáskor pedig kitágul.",
+    "explanation": "A víz 0 és 4 °C között melegítéskor összehúzódik, fagyáskor kitágul, ezért a jég sűrűsége kisebb a folyékony vízénél, és a jég a felszínen úszik."
+   }
+  },
+  {
+   "block_id": "053d8dea-d365-4c73-ba93-e8302f170669",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik állapothatározó változik, ha a levegő hőmérséklete emelkedik?” – A) térfogata növekszik (kulcs), D) „a tömege változatlan marad” is igaz",
+   "explanation": "Zárt levegőmennyiség tömege a melegítéstől nem változik, így két válasz igaz. A tömeg emellett nem állapothatározó.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ideal_gas_law",
+     "title": "Ideal gas law",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Mi történik állandó nyomású, zárt levegővel, ha a hőmérséklete emelkedik?",
+    "options[3]": "D) A levegő tömege megnő."
+   }
+  },
+  {
+   "block_id": "053d8dea-d365-4c73-ba93-e8302f170669",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "low",
+   "claim": "„Melyik állapothatározó befolyásolja leginkább a levegő sűrűségét?” – A) hőmérséklet",
+   "explanation": "A sűrűséget a nyomás és a hőmérséklet együtt szabja meg (ρ = p · M : (R · T)); a „leginkább” nem egyértelmű, és a tömeg nem állapothatározó.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Density_of_air",
+     "title": "Density of air",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "none"
+  },
+  {
+   "block_id": "e8d13a2f-f2d2-4a2b-83d7-6364896b230c",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A relatív páratartalom: „a levegőhöz viszonyított vízgőz mennyisége”",
+   "explanation": "A relatív páratartalom a jelen lévő és az adott hőmérsékleten lehetséges legnagyobb vízgőzmennyiség aránya, nem a „levegőhöz” viszonyított mennyiség.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Relative_humidity",
+     "title": "Relative humidity",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) Az abszolút páratartalom a vízgőz tömege 1 m³ levegőben, a relatív páratartalom pedig az adott hőmérsékleten lehetséges legnagyobb mennyiséghez viszonyított aránya.",
+    "explanation": "Az abszolút páratartalom a vízgőz tömege egységnyi térfogatú levegőben, a relatív páratartalom ennek az adott hőmérsékleten lehetséges maximumhoz viszonyított aránya."
+   }
+  },
+  {
+   "block_id": "e8d13a2f-f2d2-4a2b-83d7-6364896b230c",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Hogyan függ össze a relatív páratartalom és a hőmérséklet?” – A) magasabb hőmérsékleten csökken (kulcs), B) alacsonyabb hőmérsékleten nő is igaz",
+   "explanation": "Ha a vízgőztartalom állandó, a hőmérséklet csökkenésekor a relatív páratartalom nő, tehát A) és B) egyaránt igaz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Relative_humidity",
+     "title": "Relative humidity",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Hogyan függ össze a relatív páratartalom és a hőmérséklet, ha a levegő vízgőztartalma nem változik?",
+    "options[1]": "B) Alacsonyabb hőmérsékleten a levegő vízgőztartalma nő."
+   }
+  },
+  {
+   "block_id": "f590ef7e-e302-4b45-8c11-341422e9d742",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Melyik anyag a legjobb hőszigetelő?” – C) levegő",
+   "explanation": "A levegő az itt felsorolt anyagok közül a legjobb, de általában nem a legjobb (vákuum, aerogél); és csak mozdulatlanul szigetel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Thermal_insulation",
+     "title": "Thermal insulation",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik anyag a legjobb hőszigetelő az alábbiak közül?",
+    "explanation": "A mozdulatlan levegő a felsoroltak közül a legjobb hőszigetelő, mert kicsi a hővezető képessége."
+   }
+  },
+  {
+   "block_id": "a8d6f35d-d304-4d4f-8946-a633032a4775",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Torricelli „1644-ben készítette el az első higanyos barométert, amely lehetővé tette … az időjárás előrejelzését”",
+   "explanation": "Torricelli kísérlete 1643-ra tehető (levelében 1644-ben számolt be róla); az időjárás-előrejelzésre való használat később alakult ki, az ingadozást azonban ő maga is észrevette.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Evangelista_Torricelli",
+     "title": "Evangelista Torricelli",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A légnyomás felfedezéséhez kapcsolódóan Torricelli 1644-ben készítette el az első higanyos barométert, amely lehetővé tette a légnyomás mérését és az időjárás előrejelzését. Torricelli azt próbálta megérteni, hogy miért változik a levegő nyomása, és hogyan befolyásolja az időjárási jelenségeket.",
+     "Evangelista Torricelli 1643 körül higannyal töltött üvegcsővel kimutatta a légnyomást, és ezzel megalkotta az első higanyos barométert. A higanyoszlop magasságának napi ingadozását ő maga is észrevette, később ezt használták fel az időjárás előrejelzésére."
+    ]
+   ],
+   "set": {
+    "try_basic": "Készítsünk egyszerű barométert: fedjünk le egy befőttesüveget szorosan egy lufi anyagával, ragasszunk a közepére egy szívószálat mutatónak, és figyeljük a mutató mozgását a nap folyamán!"
+   }
+  },
+  {
+   "block_id": "11ab9bf7-5042-4991-b619-c858c57633ab",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A páraképződés jelenségét a 17. században Robert Boyle tanulmányozta … Boyle törvénye alapján”",
+   "explanation": "Boyle törvénye a gázok nyomása és térfogata közti összefüggés; a páraképződés és a páratartalom vizsgálatához nincs közvetlen köze. A kísérleti állítás forrás nélküli.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Boyle's_law",
+     "title": "Boyle's law",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A páraképződés jelenségét a 17. században Robert Boyle tanulmányozta, aki a gázok viselkedését kutatta. Boyle törvénye alapján a gázok térfogatának és nyomásának viszonyát vizsgálta, amely segített megérteni a páratartalom és a levegő közötti összefüggéseket. Ekkoriban a tudósok már tudták, hogy a levegő képes vízgőzt tartalmazni, és ennek mennyisége befolyásolja a levegő páratartalmát.",
+     "A levegő páratartalmát higrométerrel mérik. A hajszálhigrométer azt használja ki, hogy a haj hossza a levegő nedvességétől függően változik. A levegő adott hőmérsékleten csak korlátozott mennyiségű vízgőzt tud tartalmazni, ezért csapódik le a pára a hideg felületeken."
+    ]
+   ],
+   "set": {
+    "try_basic": "Egy egyszerű kísérlet: vegyünk ki a hűtőből egy pohár hideg vizet, és tegyük a szobába. Figyeljük meg, hogy a pohár külső felületén vízcseppek keletkeznek, ahogy a vízgőz kicsapódik a hideg felületen."
+   }
+  },
+  {
+   "block_id": "aeda3f5d-4751-4272-b1ab-c54cac132b66",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "unverifiable",
+   "severity": "medium",
+   "claim": "„A víz hőtágulásának felfedezése a 18. századra nyúlik vissza”; try_basic: „Tölts meg egy üveg vízzel, majd helyezd a fagyasztóba”",
+   "explanation": "A történeti állítás forrás nélküli, és a felmelegítéskor megnövekvő térfogat a víz 4 °C feletti viselkedése, a lecke fő pontja viszont a rendhagyóság. A kísérlet balesetveszélyes: a fagyó víz az üveget szétrepesztheti.",
+   "source_note": "a víz rendhagyó viselkedése (4 °C-on legsűrűbb); üvegpalack fagyasztása veszélyes",
+   "replace": [
+    [
+     "A víz hőtágulásának felfedezése a 18. századra nyúlik vissza, amikor a tudósok észrevették, hogy a víz térfogata megnő, amikor felmelegítik. A jelenség megértése segített a hőmérséklet és a hőátadás folyamatainak tanulmányozásában.",
+     "A víz 4 °C-on a legsűrűbb: ennél melegebben és hidegebben is kisebb a sűrűsége. Ezért fagy be a tó felszíne először, a mélye pedig kb. 4 °C-os marad."
+    ]
+   ],
+   "set": {
+    "try_basic": "Tölts meg egy műanyag palackot háromnegyedig vízzel (üveget ne használj, mert elrepedhet), tedd a fagyasztóba, és figyeld meg, hogy a jég térfogata nagyobb, mint a vízé volt!"
+   }
+  }
+ ]
+}

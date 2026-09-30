@@ -1,0 +1,779 @@
+{
+ "nat_id": "HIST-56-08",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 25,
+  "cards": 118,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-56-08-001",
+   "lesson_id": "f2f8ff00-b211-4087-ac9d-e3166870cdb6",
+   "block_id": "6d2ec6da-8d45-4bcd-85a4-dcf45fa36e25",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Zrínyi Miklós 1664-ben „a szentgotthárdi csatában jelentős győzelmet aratott a török seregek felett”.",
+   "explanation": "A szentgotthárdi csatát Montecuccoli császári fővezér nyerte; Zrínyi nem vett részt benne. Zrínyi 1664-es sikere a téli hadjárat volt (az eszéki híd felégetése). A kártya egyébként a [7] kártyával szinte azonos.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Zr%C3%ADnyi_Mikl%C3%B3s_(k%C3%B6lt%C5%91)",
+     "title": "Zrínyi Miklós (költő)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Zrínyi Miklós, a 17. századi magyar költő és hadvezér, kiemelkedő alakja volt a törökellenes harcoknak. 1664-ben a szentgotthárdi csatában jelentős győzelmet aratott a török seregek felett, ami hozzájárult a vasvári béke megkötéséhez. Zrínyi nemcsak katonai sikereivel, hanem irodalmi munkásságával is maradandó nyomot hagyott, legismertebb műve a \"Szigeti veszedelem\", amelyben dédapja, Zrínyi Miklós hőstetteit örökítette meg. Munkásságával a magyar nemzeti öntudat erősítésére törekedett, és a keresztény Európa védelmezőjeként tekintett magára. Zrínyi Miklós halála után is példakép maradt a magyar szabadságharcok során.",
+     "type": "text",
+     "heading": "Zrínyi Miklós: A költő és hadvezér szerepe a magyar történelemben",
+     "key_term": "Zrínyi Miklós"
+    },
+    "after": {
+     "body": "Zrínyi Miklós, a 17. századi magyar költő és hadvezér, kiemelkedő alakja volt a törökellenes harcoknak. 1663–64 telén merész hadjáratot vezetett a török területekre, és felégette a török utánpótlás fő útvonalát, az eszéki hidat. A nyári szentgotthárdi győzelem után azonban a császár a kedvezőtlen vasvári békét kötötte meg, ami Zrínyit és a magyar urakat felháborította. Zrínyi nemcsak katonai sikereivel, hanem irodalmi munkásságával is maradandó nyomot hagyott, legismertebb műve a \"Szigeti veszedelem\", amelyben dédapja, Zrínyi Miklós hőstetteit örökítette meg. Munkásságával a magyar nemzeti öntudat erősítésére törekedett, és a keresztény Európa védelmezőjeként tekintett magára. Zrínyi Miklós halála után is példakép maradt a magyar szabadságharcok során.",
+     "type": "text",
+     "heading": "Zrínyi Miklós: A költő és hadvezér szerepe a magyar történelemben",
+     "key_term": "Zrínyi Miklós"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-002",
+   "lesson_id": "f2f8ff00-b211-4087-ac9d-e3166870cdb6",
+   "block_id": "6d2ec6da-8d45-4bcd-85a4-dcf45fa36e25",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A hadjáratban Zrínyi Miklós nem játszhatott szerepet, mivel 1664-ben meghalt.”",
+   "explanation": "Töltelékmondat egy 1686-ról szóló kártyán.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Buda visszavétele 1686-ban volt a török uralom alól, amely a Habsburgok és a magyarok közös hadjárata révén valósult meg. A hadjáratban Zrínyi Miklós nem játszhatott szerepet, mivel 1664-ben meghalt. A város visszafoglalása nemcsak katonai győzelem volt, hanem a magyar nemzeti identitás megerősítésének is szimbóluma. Ezzel a győzelemmel kezdődött meg a törökök kiűzése Magyarországról.",
+     "type": "text",
+     "heading": "Buda visszavétele: a török kiűzése",
+     "key_term": "Buda visszavétele"
+    },
+    "after": {
+     "body": "Buda visszavétele 1686-ban volt a török uralom alól, amely a Habsburgok és a magyarok közös hadjárata révén valósult meg. A város visszafoglalása nemcsak katonai győzelem volt, hanem a magyar nemzeti identitás megerősítésének is szimbóluma. Ezzel a győzelemmel kezdődött meg a törökök kiűzése Magyarországról.",
+     "type": "text",
+     "heading": "Buda visszavétele: a török kiűzése",
+     "key_term": "Buda visszavétele"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-003",
+   "lesson_id": "f2f8ff00-b211-4087-ac9d-e3166870cdb6",
+   "block_id": "10741b84-79a2-4a5b-b1b2-192d3738fb2d",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "heading, body, link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1606-ban a prágai békében a Habsburgok és a cseh rendek megállapodtak…”",
+   "explanation": "Ilyen béke nem volt: 1606-ban a bécsi béke (Bocskaival) és a zsitvatoroki béke (a Habsburgok és az Oszmán Birodalom között) született. A prágai béke 1635-ös, a harmincéves háborúhoz tartozik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Peace_of_Zsitvatorok",
+     "title": "Peace of Zsitvatorok",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1606-ban a prágai békében a Habsburgok és a cseh rendek megállapodtak a harcok befejezéséről, ami hozzájárult a Habsburg Birodalom stabilizálódásához. A béke következtében a cseh rendeknek nagyobb önállóságot biztosítottak, ami párhuzamba állítható Bocskai István által elért erdélyi függetlenséggel. A béke aláírása erősítette a protestánsok pozícióját a birodalmon belül, ami a magyarországi reformációs mozgalmakat is érintette.",
+     "type": "world",
+     "year": "1606",
+     "heading": "A prágai béke aláírása",
+     "link_hu": "A prágai béke megkötése erősítette a Habsburgok hatalmát, ami közvetetten befolyásolta Bocskai István fejedelemségét és a hajdúk szerepét a törökellenes harcokban."
+    },
+    "after": {
+     "body": "1606 novemberében a Habsburgok és az Oszmán Birodalom megkötötték a zsitvatoroki békét, amely lezárta a tizenöt éves háborút. A szultán először ismerte el a Habsburg császárt egyenrangú félnek, és a határok nagyjából a korábbi állapot szerint maradtak.",
+     "type": "world",
+     "year": "1606",
+     "heading": "A zsitvatoroki béke",
+     "link_hu": "A béke megkötéséhez Bocskai István közvetítése is hozzájárult; ugyanebben az évben kötötte meg vele a király a bécsi békét, amely biztosította a vallásszabadságot."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-004",
+   "lesson_id": "f2f8ff00-b211-4087-ac9d-e3166870cdb6",
+   "block_id": "4c4d3801-bc5e-4d19-8cb1-83f5c22fcb1d",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Bocskai „a hajdúk vezetésével fontos szerepet játszott a török uralom elleni harcban”.",
+   "explanation": "Bocskai szabadságharca a Habsburgok ellen irányult (1604–1606), és a török támogatását élvezte.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Bocskai-felkel%C3%A9s",
+     "title": "Bocskai-felkelés",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Erdély fejedelme és a hajdúk vezére",
+      "B) A magyar király",
+      "C) A török szultán",
+      "D) A Habsburgok császára"
+     ],
+     "question": "Ki volt Bocskai István?",
+     "explanation": "Bocskai István Erdély fejedelme volt, aki a hajdúk vezetésével fontos szerepet játszott a török uralom elleni harcban.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Erdély fejedelme és a hajdúk vezére",
+      "B) A magyar király",
+      "C) A török szultán",
+      "D) A Habsburgok császára"
+     ],
+     "question": "Ki volt Bocskai István?",
+     "explanation": "Bocskai István 1604-ben a Habsburgok vallási és politikai sérelmei ellen fogott fegyvert; a hajdúk segítségével győzött, 1605-ben Erdély fejedelmévé választották, és az 1606-os bécsi béke biztosította a vallásszabadságot.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-005",
+   "lesson_id": "f2f8ff00-b211-4087-ac9d-e3166870cdb6",
+   "block_id": "4c4d3801-bc5e-4d19-8cb1-83f5c22fcb1d",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options[0], explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Buda 1686-os visszavétele „megerősítette a magyar függetlenséget” (megjelölt helyes válasz).",
+   "explanation": "Buda visszavétele után Magyarország a Habsburgok uralma alá került; függetlenség nem lett. A visszavétel a török kiűzésének kezdetét jelentette.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Buda_(1686)",
+     "title": "Siege of Buda (1686)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Megerősítette a magyar függetlenséget",
+      "B) A török uralom véglegessé válása",
+      "C) A Habsburgok hatalmának növekedése",
+      "D) Erdély fejedelmének megerősítése"
+     ],
+     "question": "Miért fontos a Buda visszavétele a magyar történelem szempontjából?",
+     "explanation": "Buda visszavétele 1686-ban fontos lépés volt a török uralom megszüntetésében, amely hozzájárult a magyar függetlenség helyreállításához.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Megkezdődött a török kiűzése Magyarországról",
+      "B) A török uralom véglegessé válása",
+      "C) A Habsburgok hatalmának növekedése",
+      "D) Erdély fejedelmének megerősítése"
+     ],
+     "question": "Miért fontos a Buda visszavétele a magyar történelem szempontjából?",
+     "explanation": "Buda 1686-os visszavételével megkezdődött a török kiűzése, amely az 1699-es karlócai békével zárult. Az ország ezután a Habsburgok uralma alá került.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-006",
+   "lesson_id": "9869a227-43a8-489c-a35d-cf735fa4a526",
+   "block_id": "621a58f6-2894-4f42-afc1-ad216c09a0cf",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Rákóczi „1701-ben örökölte meg a családi vagyont”; a szabadságharc „Munkács várának ostroma után” kezdődött; született „a mai Kassa közelében”.",
+   "explanation": "Rákóczi Borsiban született (Sárospatak közelében). 1701-ben letartóztatták, mert XIV. Lajostól kért segítséget; megszökött Lengyelországba. A szabadságharc 1703-ban a tiszaháti felkeléssel kezdődött; Rákóczi júniusban a Vereckei-hágón tért vissza.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/II._R%C3%A1k%C3%B3czi_Ferenc",
+     "title": "II. Rákóczi Ferenc",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "II. Rákóczi Ferenc 1676-ban született a Rákóczi család birtokán, a mai Kassa közelében. Fiatal korában a bécsi udvarban nevelkedett, ahol megismerkedett a politikai intrikákkal. 1701-ben örökölte meg a családi vagyont, és hamarosan a magyar szabadság ügyének élharcosa lett. 1703-ban, Munkács várának ostroma után kezdődött el a szabadságharca, amely a Habsburgok ellen irányult.",
+     "type": "text",
+     "heading": "II. Rákóczi Ferenc életpályája",
+     "key_term": "II. Rákóczi Ferenc"
+    },
+    "after": {
+     "body": "II. Rákóczi Ferenc 1676-ban született Borsiban, a Rákóczi család birtokán, Sárospatak közelében. Fiatal korában a bécsi udvarban nevelkedett, ahol megismerkedett a politikai intrikákkal. 1701-ben letartóztatták, mert a francia királytól kért segítséget a Habsburgok ellen, de a börtönből megszökött Lengyelországba. 1703-ban a felkelt tiszaháti parasztok hívására a Vereckei-hágón tért vissza, és megkezdődött a szabadságharc.",
+     "type": "text",
+     "heading": "II. Rákóczi Ferenc életpályája",
+     "key_term": "II. Rákóczi Ferenc"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-007",
+   "lesson_id": "9869a227-43a8-489c-a35d-cf735fa4a526",
+   "block_id": "621a58f6-2894-4f42-afc1-ad216c09a0cf",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A főbb csaták „például a nagymegyeri csata és a trencséni csata”, győzelmek sorában.",
+   "explanation": "A trencséni csata (1708) a kurucok súlyos veresége volt, ami a szabadságharc hanyatlását hozta.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/II._R%C3%A1k%C3%B3czi_Ferenc",
+     "title": "II. Rákóczi Ferenc",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Rákóczi-szabadságharc során számos fontos csata zajlott, például a nagymegyeri csata és a trencséni csata. Rákóczi vezetésével a kurucok sikeresen elfoglalták Magyarország jelentős részeit, és számos várost szabadítottak fel. A harcok során a magyar nép összefogott, és a szabadságharc szimbólumává vált. A harcok 1711-ig folytatódtak, amikor a békekötésre került sor.",
+     "type": "text",
+     "heading": "A szabadságharc főbb eseményei",
+     "key_term": "szabadságharc"
+    },
+    "after": {
+     "body": "A Rákóczi-szabadságharc során számos fontos csata zajlott, például a zsibói (1705) és a trencséni (1708) csata — mindkettő súlyos kuruc vereség volt. Rákóczi vezetésével a kurucok sikeresen elfoglalták Magyarország jelentős részeit, és számos várost szabadítottak fel. A harcok során a magyar nép összefogott, és a szabadságharc szimbólumává vált. A harcok 1711-ig folytatódtak, amikor a békekötésre került sor.",
+     "type": "text",
+     "heading": "A szabadságharc főbb eseményei",
+     "key_term": "szabadságharc"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-008",
+   "lesson_id": "9869a227-43a8-489c-a35d-cf735fa4a526",
+   "block_id": "cd865d35-cf70-4e5e-a7d3-a4f22d4028e9",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "year, body, link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "year: 1703; „1714-ben a utrechti békével zárult”.",
+   "explanation": "A háború 1701–1714 között zajlott; az utrechti béke 1713-as, a Habsburgokkal a rastatti béke zárta 1714-ben. A kapcsolat valódi lényege: a Habsburg-seregek nyugaton voltak lekötve, és Rákóczi francia támogatást kapott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/War_of_the_Spanish_Succession",
+     "title": "War of the Spanish Succession",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A spanyol örökösödési háború 1701 és 1714 között zajlott Európában, amelyben Franciaország és Spanyolország szövetségben állt szemben a Habsburg Monarchiával, Nagy-Britanniával és más államokkal. A háború célja a spanyol trón örökösének megvédése volt, ami jelentős politikai átrendeződéseket hozott a kontinensen. A háború végén, 1714-ben a utrechti békével zárult, amely új határokat és szövetségeket alakított ki Európában.",
+     "type": "world",
+     "year": "1703",
+     "heading": "A spanyol örökösödési háború",
+     "link_hu": "A háború következtében a Habsburgok megerősödése és a közép-európai politikai helyzet átalakulása hozzájárult a Rákóczi-szabadságharc nemzetközi támogatottságának kereséséhez, mivel a magyar fejedelem a Habsburgok ellen harcolt."
+    },
+    "after": {
+     "body": "A spanyol örökösödési háború 1701 és 1714 között zajlott Európában, amelyben Franciaország és Spanyolország szövetségben állt szemben a Habsburg Monarchiával, Nagy-Britanniával és más államokkal. A háború célja a spanyol trón örökösének megvédése volt, ami jelentős politikai átrendeződéseket hozott a kontinensen. A háborút az 1713-as utrechti és az 1714-es rastatti béke zárta le, amely új határokat és szövetségeket alakított ki Európában.",
+     "type": "world",
+     "year": "1701–1714",
+     "heading": "A spanyol örökösödési háború",
+     "link_hu": "Rákóczi azért kezdhette meg 1703-ban a szabadságharcot, mert a Habsburg-seregek nagy része nyugaton harcolt; a kurucok XIV. Lajos francia királytól kaptak pénzt és tanácsadókat."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-009",
+   "lesson_id": "26696b60-399b-46a8-a0ff-53e0b3bf211f",
+   "block_id": "744dd56b-fda9-4eff-9a15-00a81c9b1b94",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "„tizenöt gyermekének nevelése”",
+   "explanation": "Mária Teréziának 16 gyermeke született.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Maria_Theresa",
+     "title": "Maria Theresa",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Mária Terézia 1717-ben született Bécsben, Habsburg-házi uralkodóként 1740-től 1780-ig uralkodott. Ő volt az első női uralkodó, aki a Habsburg-birodalom trónjára lépett, és uralkodása alatt számos reformot vezetett be. Családanya is volt, tizenöt gyermekének nevelése mellett államügyekkel is foglalkozott. Mária Terézia uralkodása alatt a magyar nemesség és a nép közötti kapcsolatok is jelentős változásokon mentek keresztül, melyek hatással voltak Magyarország jövőjére is.",
+     "type": "text",
+     "heading": "Mária Terézia, a családanya és uralkodó",
+     "key_term": "Mária Terézia"
+    },
+    "after": {
+     "body": "Mária Terézia 1717-ben született Bécsben, Habsburg-házi uralkodóként 1740-től 1780-ig uralkodott. Ő volt az első női uralkodó, aki a Habsburg-birodalom trónjára lépett, és uralkodása alatt számos reformot vezetett be. Családanya is volt, tizenhat gyermekének nevelése mellett államügyekkel is foglalkozott. Mária Terézia uralkodása alatt a magyar nemesség és a nép közötti kapcsolatok is jelentős változásokon mentek keresztül, melyek hatással voltak Magyarország jövőjére is.",
+     "type": "text",
+     "heading": "Mária Terézia, a családanya és uralkodó",
+     "key_term": "Mária Terézia"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-010",
+   "lesson_id": "26696b60-399b-46a8-a0ff-53e0b3bf211f",
+   "block_id": "744dd56b-fda9-4eff-9a15-00a81c9b1b94",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Bevezette a kötelező iskoláztatást”; „a magyar nemesség is aktívan részt vett a reformokban”.",
+   "explanation": "Magyarországon az 1777-es Ratio Educationis szabályozta egységesen az oktatást (a kötelező iskolába járás az osztrák tartományokra vonatkozott 1774-től). A nemesség a reformokkal szemben állt: az 1764-es országgyűlés elutasította az adóemelést, ezért az úrbéri rendeletet (1767) a királynő rendeletben adta ki.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Ratio_Educationis",
+     "title": "Ratio Educationis",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "Mária Terézia uralkodása alatt számos fontos intézkedést hozott Magyarországon, amelyek célja a modernizáció és a központosítás volt. Bevezette a kötelező iskoláztatást, amely jelentősen hozzájárult a műveltség növeléséhez. Reformjainak részeként a vám- és adórendszert is átalakította, hogy a birodalom gazdasági stabilitását erősítse. Ezen intézkedések hozzájárultak Magyarország modern állammá fejlődéséhez, és a magyar nemesség is aktívan részt vett a reformokban.",
+     "type": "text",
+     "heading": "Intézkedései Magyarországon",
+     "key_term": "intézkedések"
+    },
+    "after": {
+     "body": "Mária Terézia uralkodása alatt számos fontos intézkedést hozott Magyarországon, amelyek célja a modernizáció és a központosítás volt. Az 1777-es Ratio Educationis rendelettel egységesen szabályozta az iskolákat, az elemi iskoláktól az egyetemig. Reformjainak részeként a vám- és adórendszert is átalakította, hogy a birodalom gazdasági stabilitását erősítse. Ezen intézkedések hozzájárultak Magyarország modern állammá fejlődéséhez, bár a magyar nemesség sok reformot ellenzett, ezért a királynő ezeket rendeletekkel vezette be.",
+     "type": "text",
+     "heading": "Intézkedései Magyarországon",
+     "key_term": "intézkedések"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-011",
+   "lesson_id": "26696b60-399b-46a8-a0ff-53e0b3bf211f",
+   "block_id": "744dd56b-fda9-4eff-9a15-00a81c9b1b94",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Eszterházát „Joseph Haydn is gyakran látogatott”.",
+   "explanation": "Haydn az Esterházy-család udvari karmestere volt, és évtizedekig Eszterházán élt és alkotott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Joseph_Haydn",
+     "title": "Joseph Haydn",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Mária Terézia uralkodása alatt számos főúri kastély épült, amelyek a művelődés és a kultúra központjaivá váltak. Például Eszterháza, amelyet a híres zeneszerző, Joseph Haydn is gyakran látogatott, a barokk művészet és zene otthona volt. A gödöllői kastély is jelentős szerepet játszott, ahol a magyar arisztokrácia találkozott és kulturális eseményeken vett részt. Ezek a kastélyok nemcsak a művészetek támogatására szolgáltak, hanem a magyar identitás megőrzésére is hatással voltak.",
+     "type": "text",
+     "heading": "Főúri kastélyok a művelődés szolgálatában",
+     "key_term": "főúri kastélyok"
+    },
+    "after": {
+     "body": "Mária Terézia uralkodása alatt számos főúri kastély épült, amelyek a művelődés és a kultúra központjaivá váltak. Például Eszterháza, ahol a híres zeneszerző, Joseph Haydn évtizedekig udvari karmesterként élt és alkotott, a barokk művészet és zene otthona volt. A gödöllői kastély is jelentős szerepet játszott, ahol a magyar arisztokrácia találkozott és kulturális eseményeken vett részt. Ezek a kastélyok nemcsak a művészetek támogatására szolgáltak, hanem a magyar identitás megőrzésére is hatással voltak.",
+     "type": "text",
+     "heading": "Főúri kastélyok a művelődés szolgálatában",
+     "key_term": "főúri kastélyok"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-012",
+   "lesson_id": "26696b60-399b-46a8-a0ff-53e0b3bf211f",
+   "block_id": "744dd56b-fda9-4eff-9a15-00a81c9b1b94",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Buda visszafoglalása „a török hódoltság végét jelentette”, és lehetővé tette, hogy Magyarország „újra önálló politikai entitásként létezzen”.",
+   "explanation": "A török kiűzése 1699-ig (karlócai béke) tartott; Magyarország ezután a Habsburg Birodalom része lett, nem önálló.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Buda_(1686)",
+     "title": "Siege of Buda (1686)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Buda visszafoglalása 1686-ban kiemelkedő esemény volt a magyar történelemben, mivel a török hódoltság végét jelentette. A város visszafoglalásában a Habsburgok és a magyar hadsereg közösen harcoltak, ami összefogást mutatott a különböző népek között. Ez az esemény lehetővé tette Magyarország számára, hogy újra önálló politikai entitásként létezzen. Buda visszafoglalása a Habsburg-birodalom terjeszkedését is elősegítette, ami Mária Terézia uralkodása alatt is jelentős hatással volt.",
+     "type": "text",
+     "heading": "Buda visszafoglalása 1686",
+     "key_term": "Buda visszafoglalása"
+    },
+    "after": {
+     "body": "Buda visszafoglalása 1686-ban kiemelkedő esemény volt a magyar történelemben, mivel ezzel megkezdődött a török kiűzése. A város visszafoglalásában a Habsburgok és a magyar hadsereg közösen harcoltak, ami összefogást mutatott a különböző népek között. A török háborúk az 1699-es karlócai békével zárultak, és az ország egésze a Habsburgok uralma alá került. Buda visszafoglalása a Habsburg-birodalom terjeszkedését is elősegítette, ami Mária Terézia uralkodása alatt is jelentős hatással volt.",
+     "type": "text",
+     "heading": "Buda visszafoglalása 1686",
+     "key_term": "Buda visszafoglalása"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-013",
+   "lesson_id": "26696b60-399b-46a8-a0ff-53e0b3bf211f",
+   "block_id": "1a000a2c-adc1-49f1-ae1d-3f6cf442fa08",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "did_you_know",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Az emberi agy idegsejtjeinek száma és azok kapcsolatai változóak.”",
+   "explanation": "A leckéhez semmilyen módon nem kapcsolódó 'Tudtad?' tény (ugyanebben a blokkban a szem színérzékelése, a hangyák és a polipok is szerepelnek) — a generátor hibája.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pragmatic_Sanction_of_1713",
+     "title": "Pragmatic Sanction of 1713",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Mária Terézia hatalomra kerülése nem volt magától értetődő, hiszen a Habsburg-birodalom trónját hagyományosan férfiak örökölték. Az ő trónra lépését édesapja, III. Károly biztosította az úgynevezett Pragmatica Sanctio kiadásával, amely lehetővé tette, hogy női örökös is trónra léphessen. Ezzel a döntéssel próbálta megőrizni a Habsburg-birodalom egységét és hatalmát. Azonban Mária Terézia hatalomra lépése után háborúk és belső konfliktusok is nehezítették uralkodását, mivel nem mindenki fogadta el őt uralkodóként.",
+     "type": "deep",
+     "think": "Miért fontos, hogy egy országban legyen egyértelmű öröklési rend?",
+     "anchor": 0,
+     "heading": "Miért lett Mária Terézia uralkodó?",
+     "did_you_know": "Az emberi agy idegsejtjeinek száma és azok kapcsolatai változóak.",
+     "think_answer": "Az egyértelmű öröklési rend biztosítja a politikai stabilitást és elkerüli a hatalmi harcokat, amelyek káoszhoz és belső konfliktusokhoz vezethetnek."
+    },
+    "after": {
+     "body": "Mária Terézia hatalomra kerülése nem volt magától értetődő, hiszen a Habsburg-birodalom trónját hagyományosan férfiak örökölték. Az ő trónra lépését édesapja, III. Károly biztosította az úgynevezett Pragmatica Sanctio kiadásával, amely lehetővé tette, hogy női örökös is trónra léphessen. Ezzel a döntéssel próbálta megőrizni a Habsburg-birodalom egységét és hatalmát. Azonban Mária Terézia hatalomra lépése után háborúk és belső konfliktusok is nehezítették uralkodását, mivel nem mindenki fogadta el őt uralkodóként.",
+     "type": "deep",
+     "think": "Miért fontos, hogy egy országban legyen egyértelmű öröklési rend?",
+     "anchor": 0,
+     "heading": "Miért lett Mária Terézia uralkodó?",
+     "did_you_know": "A Pragmatica Sanctiót a magyar országgyűlés csak 1723-ban fogadta el, cserébe azért, hogy a király tiszteletben tartja Magyarország jogait.",
+     "think_answer": "Az egyértelmű öröklési rend biztosítja a politikai stabilitást és elkerüli a hatalmi harcokat, amelyek káoszhoz és belső konfliktusokhoz vezethetnek."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-014",
+   "lesson_id": "26696b60-399b-46a8-a0ff-53e0b3bf211f",
+   "block_id": "1a000a2c-adc1-49f1-ae1d-3f6cf442fa08",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "did_you_know",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Az emberi szem színérzékelési képessége változó.”",
+   "explanation": "A leckéhez nem kapcsolódó 'Tudtad?' tény.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "A leckétől független, kitöltő állítás; helyette üres mező.",
+   "fix": {
+    "before": {
+     "body": "A kötelező iskoláztatás bevezetése Mária Terézia alatt jelentős lépés volt a társadalom fejlődése szempontjából. Az iskoláztatás nemcsak az egyének műveltségét növelte, hanem a társadalmi mobilitást is elősegítette. Az emberek jobb oktatási lehetőségek révén többféle munkát vállalhattak, ami javította az életszínvonalukat. A műveltség növelése emellett hozzájárult a gazdaság fejlődéséhez is, hiszen a képzett munkaerő hatékonyabban tudott részt venni a gazdasági tevékenységekben.",
+     "type": "deep",
+     "think": "Hogyan befolyásolja az oktatás a jövőbeli lehetőségeidet?",
+     "anchor": 1,
+     "heading": "Miért volt fontos a kötelező iskoláztatás?",
+     "did_you_know": "Az emberi szem színérzékelési képessége változó.",
+     "think_answer": "Az oktatás szélesíti a látókörödet, növeli a szakmai lehetőségeidet, és segít abban, hogy jobban megértsd a világot, ami hozzájárul a személyes és szakmai fejlődésedhez."
+    },
+    "after": {
+     "body": "A kötelező iskoláztatás bevezetése Mária Terézia alatt jelentős lépés volt a társadalom fejlődése szempontjából. Az iskoláztatás nemcsak az egyének műveltségét növelte, hanem a társadalmi mobilitást is elősegítette. Az emberek jobb oktatási lehetőségek révén többféle munkát vállalhattak, ami javította az életszínvonalukat. A műveltség növelése emellett hozzájárult a gazdaság fejlődéséhez is, hiszen a képzett munkaerő hatékonyabban tudott részt venni a gazdasági tevékenységekben.",
+     "type": "deep",
+     "think": "Hogyan befolyásolja az oktatás a jövőbeli lehetőségeidet?",
+     "anchor": 1,
+     "heading": "Miért volt fontos a kötelező iskoláztatás?",
+     "did_you_know": "",
+     "think_answer": "Az oktatás szélesíti a látókörödet, növeli a szakmai lehetőségeidet, és segít abban, hogy jobban megértsd a világot, ami hozzájárul a személyes és szakmai fejlődésedhez."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-015",
+   "lesson_id": "26696b60-399b-46a8-a0ff-53e0b3bf211f",
+   "block_id": "1a000a2c-adc1-49f1-ae1d-3f6cf442fa08",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body, did_you_know",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A hangya kolóniákban a munkások közötti kommunikáció feromonok segítségével történik.”; „1 686-ban”.",
+   "explanation": "A leckéhez nem kapcsolódó 'Tudtad?' tény; évszámba nem kell ezres szóköz. A törökök kiűzése 1699-ig tartott.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "A leckétől független, kitöltő állítás.",
+   "fix": {
+    "before": {
+     "body": "Buda visszafoglalása 1 686-ban nemcsak a török uralom végét jelentette, hanem szimbolikus jelentőséggel is bírt. A város visszaszerzése erősítette a magyarok nemzeti öntudatát és összetartozását. Ezen túlmenően a Habsburg-birodalom számára is fontos volt, mivel ezáltal növelhették területüket és befolyásukat. A visszafoglalás lehetővé tette, hogy Magyarország újra bekapcsolódjon az európai politikai és gazdasági életbe, ami hosszú távon hozzájárult az ország fejlődéséhez.",
+     "type": "deep",
+     "think": "Hogyan befolyásolja egy város visszafoglalása az ott élők életét?",
+     "anchor": 4,
+     "heading": "Miért volt fontos Buda visszafoglalása?",
+     "did_you_know": "A hangya kolóniákban a munkások közötti kommunikáció feromonok segítségével történik.",
+     "think_answer": "Egy város visszafoglalása megváltoztathatja az ott élők politikai, gazdasági és társadalmi helyzetét, új lehetőségeket nyitva meg számukra, de kihívásokat is hozhat."
+    },
+    "after": {
+     "body": "Buda visszafoglalása 1686-ban a török uralom végének kezdetét jelentette, hanem szimbolikus jelentőséggel is bírt. A város visszaszerzése erősítette a magyarok nemzeti öntudatát és összetartozását. Ezen túlmenően a Habsburg-birodalom számára is fontos volt, mivel ezáltal növelhették területüket és befolyásukat. A visszafoglalás lehetővé tette, hogy Magyarország újra bekapcsolódjon az európai politikai és gazdasági életbe, ami hosszú távon hozzájárult az ország fejlődéséhez.",
+     "type": "deep",
+     "think": "Hogyan befolyásolja egy város visszafoglalása az ott élők életét?",
+     "anchor": 4,
+     "heading": "Miért volt fontos Buda visszafoglalása?",
+     "did_you_know": "",
+     "think_answer": "Egy város visszafoglalása megváltoztathatja az ott élők politikai, gazdasági és társadalmi helyzetét, új lehetőségeket nyitva meg számukra, de kihívásokat is hozhat."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-016",
+   "lesson_id": "26696b60-399b-46a8-a0ff-53e0b3bf211f",
+   "block_id": "1a000a2c-adc1-49f1-ae1d-3f6cf442fa08",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "did_you_know",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A polipok képesek megváltoztatni a bőrük színét és textúráját.”",
+   "explanation": "A leckéhez nem kapcsolódó 'Tudtad?' tény.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "A leckétől független, kitöltő állítás; helyette a pozsonyi koronázásokról szóló tény.",
+   "fix": {
+    "before": {
+     "body": "Pozsony és Bécs kapcsolata Mária Terézia uralkodása alatt kulcsszerepet játszott a Habsburg-birodalom és a Magyar Királyság közötti együttműködésben. A két város közötti szoros kapcsolat lehetővé tette a politikai döntéshozatal hatékonyabb lebonyolítását. Pozsonyban tartották a magyar országgyűléseket, ahol a magyar nemesség közvetlenül részt vehetett a birodalom ügyeiben. Ez a kapcsolat hozzájárult a magyar nemesség és a Habsburgok közötti viszony javulásához, ami hosszú távon stabilitást eredményezett a régióban.",
+     "type": "deep",
+     "think": "Miért fontos a különböző városok közötti együttműködés?",
+     "anchor": 5,
+     "heading": "Miért volt fontos Pozsony és Bécs kapcsolata?",
+     "did_you_know": "A polipok képesek megváltoztatni a bőrük színét és textúráját.",
+     "think_answer": "A városok közötti együttműködés lehetővé teszi a gazdasági, kulturális és politikai kapcsolatok erősítését, ami elősegíti a fejlődést és a stabilitást."
+    },
+    "after": {
+     "body": "Pozsony és Bécs kapcsolata Mária Terézia uralkodása alatt kulcsszerepet játszott a Habsburg-birodalom és a Magyar Királyság közötti együttműködésben. A két város közötti szoros kapcsolat lehetővé tette a politikai döntéshozatal hatékonyabb lebonyolítását. Pozsonyban tartották a magyar országgyűléseket, ahol a magyar nemesség közvetlenül részt vehetett a birodalom ügyeiben. Ez a kapcsolat hozzájárult a magyar nemesség és a Habsburgok közötti viszony javulásához, ami hosszú távon stabilitást eredményezett a régióban.",
+     "type": "deep",
+     "think": "Miért fontos a különböző városok közötti együttműködés?",
+     "anchor": 5,
+     "heading": "Miért volt fontos Pozsony és Bécs kapcsolata?",
+     "did_you_know": "1563 és 1830 között Pozsonyban koronázták a magyar királyokat — Mária Teréziát is itt koronázták meg 1741-ben.",
+     "think_answer": "A városok közötti együttműködés lehetővé teszi a gazdasági, kulturális és politikai kapcsolatok erősítését, ami elősegíti a fejlődést és a stabilitást."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-017",
+   "lesson_id": "26696b60-399b-46a8-a0ff-53e0b3bf211f",
+   "block_id": "29f90288-223e-4237-9577-b7a3dcdee0d1",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Mikor foglalta vissza Buda városát a magyar hadsereg?”",
+   "explanation": "Budát a Habsburg vezetésű keresztény szövetséges sereg foglalta vissza, amelyben magyar csapatok is harcoltak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Buda_(1686)",
+     "title": "Siege of Buda (1686)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1686",
+      "B) 1700",
+      "C) 1756",
+      "D) 1800"
+     ],
+     "question": "Mikor foglalta vissza Buda városát a magyar hadsereg?",
+     "explanation": "Buda visszafoglalása 1686-ban történt, ami fontos mérföldkő volt a magyar történelemben, hiszen ez a város a magyar főváros volt, és a török uralom alóli felszabadítást jelentette.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1686",
+      "B) 1700",
+      "C) 1756",
+      "D) 1800"
+     ],
+     "question": "Mikor foglalta vissza Budát a keresztény szövetséges sereg?",
+     "explanation": "Buda visszafoglalása 1686-ban történt, ami fontos mérföldkő volt a magyar történelemben, hiszen ez a város a magyar főváros volt, és a török uralom alóli felszabadítást jelentette.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-018",
+   "lesson_id": null,
+   "block_id": "80c1bd8d-d38f-4922-94dc-e2bc78b59741",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 1552-es”",
+   "explanation": "Névelő: az 1552-es.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A török hódító",
+      "B) Eger védelmének hőse",
+      "C) Erdély fejedelme",
+      "D) A labancok vezetője"
+     ],
+     "question": "Ki volt Dobó István, és miért ismert?",
+     "explanation": "Dobó István a 1552-es egri vár védelmét irányította, sikeresen megvédve a várat a török támadásoktól.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A török hódító",
+      "B) Eger védelmének hőse",
+      "C) Erdély fejedelme",
+      "D) A labancok vezetője"
+     ],
+     "question": "Ki volt Dobó István, és miért ismert?",
+     "explanation": "Dobó István az 1552-es egri vár védelmét irányította, sikeresen megvédve a várat a török támadásoktól.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-08-019",
+   "lesson_id": null,
+   "block_id": "80c1bd8d-d38f-4922-94dc-e2bc78b59741",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 5,
+   "field": "explanation",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 1703 és 1711 közötti”",
+   "explanation": "Névelő: az 1703 és 1711 közötti.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Bocskai István",
+      "B) II. Rákóczi Ferenc",
+      "C) Zrínyi Miklós",
+      "D) Mária Terézia"
+     ],
+     "question": "Ki volt a Rákóczi-szabadságharc vezetője?",
+     "explanation": "II. Rákóczi Ferenc vezette a 1703 és 1711 közötti Rákóczi-szabadságharcot a Habsburgok ellen.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Bocskai István",
+      "B) II. Rákóczi Ferenc",
+      "C) Zrínyi Miklós",
+      "D) Mária Terézia"
+     ],
+     "question": "Ki volt a Rákóczi-szabadságharc vezetője?",
+     "explanation": "II. Rákóczi Ferenc vezette az 1703 és 1711 közötti Rákóczi-szabadságharcot a Habsburgok ellen.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-56-08-001": "ccbffe87-8386-4d29-98c4-6bc7b2fc9f4c",
+  "HIST-56-08-002": "42237bdb-75be-4f6d-968e-b21a3b2ad91a",
+  "HIST-56-08-003": "12c54bee-fe5d-49b8-a0c4-e7f00adc090f",
+  "HIST-56-08-004": "42e86cc7-f729-42c1-a04e-d5f9bc99c4ff",
+  "HIST-56-08-005": "f2580fbc-b5e4-47fd-8ad9-9203865a8936",
+  "HIST-56-08-006": "c7a4219b-e5ef-48a1-a155-49776a89ff0f",
+  "HIST-56-08-007": "e4243a88-8b5e-43e6-9b5d-ebca53d3ede4",
+  "HIST-56-08-008": "8e4e34a2-e16c-4cd2-8ffe-7270856921e0",
+  "HIST-56-08-009": "89c69d0e-f3a5-4b89-b718-e45f88e80fce",
+  "HIST-56-08-011": "77cfca52-2aa3-46be-be0f-47e251db3bc1",
+  "HIST-56-08-012": "536ce318-ce3a-465e-ad78-d2869bd873c5",
+  "HIST-56-08-013": "52eed46d-cb30-4bf9-9427-48fe81bfbde2",
+  "HIST-56-08-014": "5c30653a-e201-4804-9ec6-7cf31a5aeca9",
+  "HIST-56-08-015": "75b6892c-d3cf-44d7-a0ee-6b7a8d9ff581",
+  "HIST-56-08-016": "453d2ae9-75f0-432f-a9ea-4f8b0b31ab06",
+  "HIST-56-08-017": "708c02fb-c570-4dde-bf72-ad40c019aa46",
+  "HIST-56-08-018": "dfbcd5a9-5f33-4599-a05b-c3d093c86d04",
+  "HIST-56-08-019": "ce67de42-d4d6-4979-ad19-b12d563fa834"
+ }
+}

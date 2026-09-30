@@ -1,0 +1,283 @@
+{
+ "nat_id": "PHYS-910-14",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "c15a4272-967f-40c5-b31f-3ad8d963406f",
+   "title_hu": "Az ózonpajzs és az üvegházhatás",
+   "text_block_id": "32886ed7-c950-4fb2-b7dd-0fdeed839d54",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Hol van az ózonréteg, és mennyire vékony?",
+     "body": "Az ózonréteg 15–35 km magasan, a sztratoszférában van. Az ózon (O₃) úgy keletkezik, hogy az UV-fény oxigénmolekulákat (O₂) hasít atomokra, és az oxigénatomok új O₂-höz kapcsolódnak. Ha a teljes ózonréteget a talaj nyomására sűrítenénk, csak kb. 3 mm vastag lenne (300 dobson-egység). Az UV-C sugarat (100–280 nm) teljesen elnyeli, az UV-B-t (280–315 nm) nagyrészt, az UV-A (315–400 nm) viszont többnyire átjut. Az UV-B okozza a leégést és növeli a bőrrák kockázatát, a napkrém tehát kiegészítő védelem, az ózonréteget nem pótolja.",
+     "did_you_know": "Az ózon a talaj közelében szennyező, légzőszervi irritáló gáz, a sztratoszférában viszont védőpajzs.",
+     "think": "Mekkora lenne az ózonréteg vastagsága, ha talajnyomású gázként a Föld felszínén elterülne?",
+     "think_answer": "Kb. 3 mm."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Miért tart olyan sokáig a gyógyulás?",
+     "body": "A Montreali Jegyzőkönyvet (1987) mára minden ország megerősítette, ez az első olyan ENSZ-szerződés, amelyhez mindenki csatlakozott. A CFC-k a légkörben 50–100 évig maradnak, ezért az ózonréteg csak lassan regenerálódik. A klóratom katalizátorként működik: egyetlen klóratom több tízezer ózonmolekulát bont el, mielőtt kikerül a körforgásból. Az ENSZ 2022-es értékelése szerint az ózonréteg az Antarktisz felett 2066 körülre, az Északi-sarkvidék felett 2045 körülre, a világ többi része felett 2040 körülre állhat vissza az 1980-as szintre. Az intézkedések tehát hatnak, de a bőrrák-kockázat csökkenése évtizedes folyamat.",
+     "did_you_know": "",
+     "think": "Miért marad a CFC évtizedekig a légkörben, és mit jelent ez a gyógyulásra?",
+     "think_answer": "Mert alig bomlik le, ezért a réteg regenerálódása is évtizedekig tart."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mennyi lenne a Föld hőmérséklete üvegházhatás nélkül?",
+     "body": "A Föld a napfény nagy részét elnyeli, felmelegszik, és infravörös hősugárzással sugároz vissza; az üvegházgázok (CO₂, metán, vízgőz) ezt az infravörös sugárzást nyelik el, majd minden irányba kisugározzák, így a felszín melegebb marad. A Stefan–Boltzmann-törvény szerint légkör nélkül a Föld átlaghőmérséklete kb. 255 K lenne, ez −18 °C. A valóságos átlag kb. +15 °C, tehát a természetes üvegházhatás kb. 33 °C-ot ad. Az üvegház (növényház) valójában másként működik: főleg azért marad meleg, mert az üveg megakadályozza a felmelegedett levegő elkeveredését. A hasonlat ezért csak részben pontos.",
+     "did_you_know": "",
+     "think": "Mennyivel melegebb a Föld a természetes üvegházhatás miatt?",
+     "think_answer": "Kb. 33 °C-kal (−18 °C helyett +15 °C)."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyi szén-dioxidot bocsát ki egy kilowattóra?",
+     "body": "A villamosenergia-termelés életciklus-alapú kibocsátása nagyon eltérő: szénerőműnél kb. 800–1000 g CO₂ kWh-nként, földgáznál kb. 450–500 g, a napelemnél kb. 40–50 g, a szélerőműnél és az atomerőműnél kb. 10–15 g. Ha 1000 kWh áramot földgázból termelünk, kb. 490 kg CO₂ kerül a levegőbe. Az elektromos autó akkor csökkenti a kibocsátást, ha az áram is tiszta forrásból jön, de az életciklus-elemzések szerint Európában általában így is kedvezőbb, mint a benzines. A légköri CO₂-koncentráció ma kb. 420 ppm, az ipari forradalom előtt kb. 280 ppm volt.",
+     "did_you_know": "",
+     "think": "Hány kg CO₂ keletkezik, ha 1000 kWh áramot földgázból termelünk (kb. 490 g/kWh)?",
+     "think_answer": "490 g · 1000 = 490 000 g = 490 kg."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Miért gyenge ez a kísérlet, és hogyan lehet javítani?",
+     "body": "A szén-dioxid az infravörös sugárzásból főleg 4,3 és 15 μm hullámhosszon nyel el. A palackos kísérletben azonban csak néhány deciméteres gázoszlop van, míg a légkör vastagsága több tíz km, ezért a hőmérsékletkülönbség kicsi, akár a mérési hibán belül is lehet. A szódavíz nem jó CO₂-forrás, mert vizet és egyéb gázokat tartalmaz. Jobb módszer: ecetből és szódabikarbónából fejlesszünk CO₂-t, két egyforma palackot töltsünk meg (az egyiket levegővel, a másikat CO₂-vel), ugyanolyan távolságban tegyük őket egy izzólámpa elé, és két hőmérővel mérjünk 15–20 percig. Legyen a két palack minden más szempontból azonos.",
+     "did_you_know": "",
+     "think": "Miért kisebb a hatás a palackban, mint a légkörben?",
+     "think_answer": "Mert a palackban a gázoszlop csak néhány deciméter, a légkör pedig több tíz km vastag."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Mennyire nagy az ember lábnyoma?",
+     "body": "Az ökológiai lábnyom azt méri, hogy egy ember vagy ország fogyasztásának kiszolgálásához mennyi biológiailag termékeny területre van szükség (globális hektárban). A Global Footprint Network számításai szerint az emberiség kb. 1,7 Földnyi erőforrást használ el évente, és az úgynevezett túlfogyasztási nap (Earth Overshoot Day) az utóbbi években augusztus elejére esik. Az élelmiszerek kibocsátása is nagyon eltérő: 1 kg marhahús előállítása kb. 60 kg CO₂-egyenértékkel jár, a csirkéé kb. 6–10 kg-mal, a zöldségeké jóval kevesebbel. Ezek átlagértékek, a termelési módtól függően eltérhetnek.",
+     "did_you_know": "",
+     "think": "Melyik jár nagyobb üvegházhatású kibocsátással, 1 kg marhahús vagy 1 kg csirkehús?",
+     "think_answer": "A marhahús, kb. tízszeres kibocsátással."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Mit mondanak a klímamodellek?",
+     "body": "A globális átlaghőmérséklet 2011–2020-ban kb. 1,1 °C-kal volt magasabb, mint 1850–1900-ban (IPCC, 2021). A 2015-ös Párizsi Megállapodás célja a felmelegedés jóval 2 °C alatt tartása, lehetőleg 1,5 °C-ra korlátozása. A modellek szerint az 1,5 °C-os határ átlépése a 2030-as években várható, ha a kibocsátás nem csökken elég gyorsan. Minden további tized fok gyakoribbá teszi a szélsőséges eseményeket (hőhullámok, aszályok, özönvízszerű esők). A szöveg „20–30 éven belüli drámai változás” állítása így pontatlan: a változások már zajlanak, mértékük pedig a kibocsátásoktól függ.",
+     "did_you_know": "",
+     "think": "Mekkora a Párizsi Megállapodás hőmérsékleti célja?",
+     "think_answer": "Jóval 2 °C alatt tartani a felmelegedést, lehetőleg 1,5 °C-ra korlátozni."
+    }
+   ]
+  },
+  {
+   "lesson_id": "641a6a08-649c-4575-86da-81299b155b71",
+   "title_hu": "Nukleáris folyamatok és energiatermelés",
+   "text_block_id": "3f76f9aa-8ee9-4b3b-95e0-d6781ee4daa4",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Milyen sűrű az atommag?",
+     "body": "Az atomot a rendszám (Z, a protonok száma) azonosítja, az izotópot a neutronok száma határozza meg. A tömegszám A = Z + N: az urán-235 magja 92 protont és 143 neutront tartalmaz. Az atommag sugara kb. R ≈ 1,2 · A^(1/3) fm, például urán-235-nél kb. 7,4 fm. A magsűrűség kb. 2 · 10¹⁷ kg/m³, ezért egy teáskanálnyi (5 cm³) magsűrűségű anyag tömege kb. 10¹² kg, vagyis egymilliárd tonna. A magban a protonok között az elektromos taszítás hat, az összetartást a nagyon rövid hatótávolságú erős kölcsönhatás biztosítja.",
+     "did_you_know": "",
+     "think": "Hány neutron van az urán-235 magjában, ha rendszáma 92?",
+     "think_answer": "235 − 92 = 143."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Hogyan működik a szén-14-es kormeghatározás?",
+     "body": "A szén-12 magjában 6 proton és 6 neutron van, a szén-14-ében 6 proton és 8 neutron, tehát a nukleonok száma különbözik. A szén-14 felezési ideje 5730 év. A légkörben a kozmikus sugárzás állandóan újat képez, ezért az élő szervezetekben a szén-14 aránya állandó (kb. 10⁻¹² a szén-12-höz képest). Az elpusztult szervezetben a szén-14 nem pótlódik, csak bomlik. Ha egy csont még a szén-14 negyedét tartalmazza, két felezési idő, vagyis kb. 11 460 év telt el. A módszer kb. 50 000 évig használható.",
+     "did_you_know": "",
+     "think": "Mennyi szén-14 marad három felezési idő után?",
+     "think_answer": "Az eredeti 1/8-a."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mennyi energia szabadul fel a hasadáskor?",
+     "body": "Amikor egy lassú neutron az urán-235 magját eltalálja, a mag két kisebb magra hasad (például bárium-141-re és kripton-92-re), és 2–3 neutron szabadul fel, ezek újabb hasadásokat indíthatnak: ez a láncreakció. Egy hasadásban kb. 200 MeV energia szabadul fel. 1 kg urán-235 teljes hasadásából kb. 8 · 10¹³ J energia keletkezik, ez annyi, mint kb. 3000 tonna kőszén elégetéséből. A Paksi Atomerőmű négy blokkja összesen kb. 2000 MW villamos teljesítményű, és Magyarország áramának nagyjából 40–50%-át adja. A tűzijáték-hasonlat a láncreakció lényegét (egy esemény újabbakat indít) jól megvilágítja, de a hasadásnál a neutronok számát szabályozórudakkal szabályozzák.",
+     "did_you_know": "",
+     "think": "Kb. hány tonna kőszénnek felel meg 1 kg urán-235 teljes hasadása?",
+     "think_answer": "Kb. 3000 tonnának."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Miért süt a Nap?",
+     "body": "A Nap magjában kb. 15 millió K hőmérsékleten hidrogénmagok (protonok) egyesülnek héliummá: négy proton egy hélium-4 magot ad, és kb. 26,7 MeV szabadul fel. Nem az „űrben zajlik” a folyamat, hanem a Nap belsejében. A Nap teljesítménye 3,8 · 10²⁶ W, ebből az E = m · c² alapján a tömegcsökkenés m = P : c² = 3,8 · 10²⁶ : 9 · 10¹⁶ ≈ 4,2 · 10⁹ kg/s, vagyis másodpercenként kb. 4 millió tonna. A Nap ennek ellenére még kb. 5 milliárd évig süt. A napenergia emberi időskálán megújuló, de a hasznosításnak is van ökológiai lábnyoma (gyártás, hulladék).",
+     "did_you_know": "",
+     "think": "Mennyi tömeget veszít a Nap másodpercenként a sugárzás miatt?",
+     "think_answer": "Kb. 4 millió tonnát."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mennyit termel egy erőmű?",
+     "body": "Az erőmű éves energiatermelése az teljesítmény szorozva az üzemidővel és a kihasználtsággal. Egy 1000 MW-os atomerőmű 90%-os kihasználtsággal évente 1000 MW · 8760 h · 0,9 ≈ 7,9 TWh energiát termel. Az atomerőmű kihasználtsága 85–95%, a szélerőműé kb. 25–35%, a napelemparké Magyarországon kb. 12–15%, mert az időjárás és a napszak szabja meg. A használt fűtőelem térfogata kicsi, de sok ezer évig sugároz; az alacsony és közepes aktivitású hulladék végleges elhelyezésére Magyarországon a bátaapáti tároló szolgál. A szél- és napenergia ingadozását tárolással és hálózati szabályozással kell kiegyenlíteni.",
+     "did_you_know": "",
+     "think": "Mennyi energiát termel egy évben egy 500 MW-os erőmű 80%-os kihasználtsággal (1 év = 8760 h)?",
+     "think_answer": "500 · 8760 · 0,8 = 3 504 000 MWh ≈ 3,5 TWh."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Az erős kölcsönhatás",
+     "body": "Az erős kölcsönhatás a protonokat és neutronokat tartja össze, hatótávolsága kb. 1–2 fm. Két, egymástól 1 fm-re lévő proton között az elektromos taszítás F = k · e² : r² = 9 · 10⁹ · (1,6 · 10⁻¹⁹)² : (10⁻¹⁵)² ≈ 230 N, ami óriási, a magerő mégis erősebb. Egy nukleonra jutó kötési energia a vas-56-nál a legnagyobb (kb. 8,8 MeV), ezért a nehéz magok hasadásakor és a könnyű magok egyesülésekor is energia szabadul fel. A hélium-4 kötési energiája 28,3 MeV, azaz 7,1 MeV nukleononként. A mobiltelefonok induktív töltésének semmi köze a magerőkhöz: az elektromágneses indukcióra épül.",
+     "did_you_know": "",
+     "think": "Melyik erő tartja össze az atommagot, annak ellenére, hogy a protonok taszítják egymást?",
+     "think_answer": "Az erős kölcsönhatás."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Honnan érdemes adatot gyűjteni?",
+     "body": "Az atomerőművek aránya országonként nagyon eltérő: Franciaországban kb. 65%, Magyarországon nagyjából 40–50%, világszerte kb. 9–10% a villamosenergia-termelésen belül, és évenként változik. Megbízható forrás a Nemzetközi Atomenergia-ügynökség (IAEA) PRIS-adatbázisa, az Our World in Data és az Eurostat. Az adatoknál mindig jegyezd fel az évet és a forrást, mert a számok évről évre változnak, és a különböző források másként számolhatnak (termelés, kapacitás, fogyasztás).",
+     "did_you_know": "",
+     "think": "Melyik nemzetközi szervezet ad megbízható adatot az atomerőművekről?",
+     "think_answer": "A Nemzetközi Atomenergia-ügynökség (IAEA)."
+    }
+   ]
+  },
+  {
+   "lesson_id": "f13611c5-c238-4db5-bc8c-ab053706a7fa",
+   "title_hu": "Tudósok és sugárzások",
+   "text_block_id": "4baf87b0-9a5a-4d29-acaf-6c8db2231116",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Ki mit tett a magfizikában?",
+     "body": "Szilárd Leó 1933-ban Londonban, egy közlekedési lámpánál jutott eszébe a nukleáris láncreakció ötlete, ezt 1934-ben szabadalmaztatta; 1939-ben Einsteinnel közösen írt levelet Roosevelt elnöknek. Wigner Jenő a szimmetriaelvek kutatásáért 1963-ban fizikai Nobel-díjat kapott, és részt vett az első reaktorok tervezésében. Teller Ede az 1950-es években a hidrogénbomba kidolgozásában játszott vezető szerepet (Stanisław Ulammal közösen). Mindhárman Magyarországon születtek, és a második világháború idején az Egyesült Államokban dolgoztak. Szilárd később a bomba bevetése ellen tiltakozott.",
+     "did_you_know": "",
+     "think": "Ki jött rá 1933-ban a nukleáris láncreakció lehetőségére?",
+     "think_answer": "Szilárd Leó."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Mi állítja meg az alfa-, béta- és gamma-sugárzást?",
+     "body": "Az alfa-sugárzás hélium-4 atommagokból áll: levegőben kb. 3–5 cm-t tesz meg, egy papírlap vagy a bőr felső, elhalt rétege megállítja. A béta-sugárzás elektronok (vagy pozitronok) árama, levegőben akár méteres úton is eljut, néhány mm alumínium megállítja. A gamma-sugárzás nagy energiájú foton, nem áll meg teljesen: minden úgynevezett felezőréteg a sugárzás felét nyeli el. Cs-137 gammája esetén ez kb. 0,65 cm ólom vagy kb. 5 cm beton. Három felezőréteg után a sugárzás 1/8-ára gyengül.",
+     "did_you_know": "",
+     "think": "Mennyire gyengül a gamma-sugárzás intenzitása három felezőréteg után?",
+     "think_answer": "Az eredeti 1/8-ára."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mit jelent a szívert?",
+     "body": "A sugárdózist grayben (Gy, 1 J/kg elnyelt energia) mérik. Az élettani hatás azonban a sugárzás fajtájától is függ, ezért használják az ekvivalens dózist szívertben (Sv): alfa-sugárzásnál a szorzó 20, béta- és gammasugárzásnál 1. Ezért az alfa-sugárzás kívülről ártalmatlan, de a szervezetbe jutva (például a radongáz belélegzésekor) a legkárosabb. A természetes háttérsugárzás világátlaga kb. 2,4 mSv évente, egy mellkasröntgen kb. 0,1 mSv. Az akut sugárbetegség kb. 1 Sv körül kezdődik, és kezelés nélkül 4–5 Sv-nél a halálozás kb. 50%-os. A gamma-sugárzás ezért nem „a legveszélyesebb”: ez az elnyelt energia és a helyzet függvénye.",
+     "did_you_know": "A banán kálium-40-et tartalmaz, egyetlen banán elfogyasztása kb. 0,1 μSv dózist jelent.",
+     "think": "Mekkora az ekvivalens dózis, ha egy szervet 0,1 mGy alfa-sugárzás ér?",
+     "think_answer": "0,1 mGy · 20 = 2 mSv."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A hármas szabály",
+     "body": "A védekezés három eszköze: idő (minél rövidebb ideig tartózkodjunk a forrás közelében), távolság és árnyékolás. A pontszerű forrás dózisteljesítménye a távolság négyzetével fordítottan csökken: ha a távolságot megkétszerezzük, a dózisteljesítmény a negyedére esik. Ha 1 m-en 100 μSv/h a dózisteljesítmény, 4 m-en (100 : 16) ≈ 6,3 μSv/h. Röntgenvizsgálatnál a beteg az adott ideig nem kerülheti el a sugárzást, ezért az orvos csak akkor rendeli el, ha az információ szükséges, és ólomkötényt, egyéb védelmet használ. A sugárvédelem általános elve az ALARA: olyan alacsonyra, amilyen észszerűen elérhető.",
+     "did_you_know": "",
+     "think": "Hányad részére csökken a dózisteljesítmény, ha a forrástól háromszor messzebb állunk?",
+     "think_answer": "1/9-ére."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mi volt a Curie-házaspár igazi érdeme?",
+     "body": "A radioaktivitást 1896-ban Henri Becquerel fedezte fel uránsókkal, Marie és Pierre Curie 1898-ban kimutatták, hogy az uránérc több sugárzó elemet tartalmaz, és felfedezték a polóniumot (Marie hazájáról, Lengyelországról nevezték el) és a rádiumot. Marie Curie két Nobel-díjat kapott két tudományágban: 1903-ban fizikából (Pierre-rel és Becquerellel), 1911-ben kémiából. A rádium-226 felezési ideje 1600 év, ezért Marie Curie jegyzetfüzetei ma is sugároznak. Valószínűleg a sugárzás okozta a csontvelő-károsodást (aplasztikus anémia), amelybe 1934-ben belehalt.",
+     "did_you_know": "",
+     "think": "Hány Nobel-díjat kapott Marie Curie, és miből?",
+     "think_answer": "Kettőt: 1903-ban fizikából, 1911-ben kémiából."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Mit tudunk a csernobili balesetről?",
+     "body": "A csernobili baleset 1986. április 26-án a 4. blokkban történt, a nemzetközi INES-skála legmagasabb, 7. fokozata. A robbanásban és a tűzben közvetlenül 2 ember halt meg, a következő hónapokban 28 tűzoltó és mentődolgozó halt bele az akut sugárbetegségbe. A gyermekkori pajzsmirigyrákok száma az UNSCEAR jelentése szerint több mint 6000-rel nőtt, mert a jód-131 (felezési ideje 8 nap) a tejjel a pajzsmirigybe jutott. A cézium-137 felezési ideje 30 év, ezért kb. 90 év alatt az eredeti 1/8-ára csökken. A 30 km-es kizárási zónában nem lehet lakni, a szennyezés pedig foltokban, nem egyenletesen oszlott el.",
+     "did_you_know": "",
+     "think": "Mennyire csökken a cézium-137 mennyisége 90 év alatt, ha felezési ideje 30 év?",
+     "think_answer": "Az eredeti 1/8-ára (három felezési idő)."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Hogyan ismerheted fel a megbízható forrást?",
+     "body": "Egy hír akkor hihető, ha megnevezi az eredeti forrást (kutatás, intézmény), a szerző szakmai hátterét, és az állítás nem egyetlen kísérletre épül. 2011-ben az OPERA-kísérlet azt közölte, hogy neutrínók gyorsabban haladtak a fénynél; később kiderült, hogy egy laza optikai kábelcsatlakozó okozta a mérési hibát, és a fénysebesség-korlát érvényben maradt. A médiában a „kvantum” szó gyakran csak divatos jelző. Érdemes megnézni, hogy a cikk mennyiségeket és mértékegységeket is közöl-e, és hogy más, független forrás is megerősíti-e.",
+     "did_you_know": "",
+     "think": "Mi okozta az OPERA-kísérlet hibás eredményét?",
+     "think_answer": "Egy laza optikai kábelcsatlakozó."
+    }
+   ]
+  },
+  {
+   "lesson_id": "5b113ffa-8d8f-4684-bc55-1b8eac198ece",
+   "title_hu": "Radioaktív izotópok és környezeti hatásaik",
+   "text_block_id": "551f8c7f-cffc-4069-973d-afabe287f5c2",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mennyire sugárzunk mi magunk?",
+     "body": "A természetben is sok radioaktív izotóp van. Egy felnőtt testében kb. 4000 Bq a kálium-40 és kb. 3000 Bq a szén-14 aktivitása, összesen kb. 8000 Bq. A természetes sugárterhelés legnagyobb része a radonból (Rn-222, felezési ideje 3,8 nap) származik, amely a talajból szivárog a pincékbe. A radioaktív anyag hatása nem egyszerűen a sugárzás mennyiségétől, hanem a fajtától, az energiától és attól függ, hogy a szervezeten kívül vagy belül van-e. Az orvosi izotópok szándékosan kerülnek a szervezetbe, kis mennyiségben és rövid felezési idővel.",
+     "did_you_know": "",
+     "think": "Kb. mekkora egy felnőtt ember testének aktivitása?",
+     "think_answer": "Kb. 8000 Bq (főleg kálium-40 és szén-14)."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Hogyan számolunk a felezési idővel?",
+     "body": "A radioaktív atommagok száma exponenciálisan csökken: N = N₀ · (1/2)^(t : T), ahol T a felezési idő. A jód-131 felezési ideje 8 nap, ezért 40 nap múlva (5 felezési idő) az eredeti 1/32 része marad. A cézium-137 felezési ideje 30 év, 100 év után (100 : 30 ≈ 3,3 felezési idő) az eredeti kb. 10%-a maradt meg. A felezési idő nem a „veszélytelenné válás” ideje: a rövid felezési idejű izotóp erősebben sugároz (nagyobb az aktivitása), de gyorsabban el is tűnik. A kb. 10 felezési idő után az izotóp az eredeti ezredrészére csökken.",
+     "did_you_know": "",
+     "think": "Mennyi jód-131 marad 24 nap után, ha a felezési idő 8 nap?",
+     "think_answer": "Az eredeti 1/8-a."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mit mér a becquerel?",
+     "body": "1 Bq egy bomlást jelent másodpercenként, az aktivitás A = λ · N = (ln 2 : T) · N. Az 1 g rádium-226 aktivitása kb. 3,7 · 10¹⁰ Bq, ez a régi mértékegység, a curie (Ci) eredeti definíciója. Egy banán kb. 15 Bq aktivitású (kálium-40), egy felnőtt ember kb. 8000 Bq. Az aktivitás azt mutatja meg, hány bomlás van, de nem mondja meg, mekkora a sugárzás egészségügyi hatása: ehhez az elnyelt dózist (Gy, Sv) kell tudni. Az orvosi vizsgálatoknál a beadott izotóp aktivitását MBq-ben adják meg.",
+     "did_you_know": "",
+     "think": "Hány bomlás történik másodpercenként egy 30 000 Bq aktivitású forrásban?",
+     "think_answer": "30 000."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Hogyan követik nyomon az anyagokat?",
+     "body": "A nyomjelző izotóp kémiailag ugyanúgy viselkedik, mint a stabil párja, ezért követhető. A leggyakoribb diagnosztikai izotóp a technécium-99m (felezési ideje 6 óra, gammasugárzó), a PET-vizsgálatnál a fluor-18-at (felezési ideje 110 perc) glükózszerű anyaghoz kötik, és a daganatos szövet több glükózt vesz fel. A rövid felezési idő előny: 5,5 óra (3 felezési idő) után a fluor-18 1/8-ára csökken, a beteg terhelése kicsi. Folyók vízáramlásának vagy a növények tápanyagfelvételének követésére szintén használnak izotópokat, de ilyenkor zárt, engedélyezett körülmények között.",
+     "did_you_know": "",
+     "think": "Mennyi fluor-18 marad 220 perc múlva, ha a felezési idő 110 perc?",
+     "think_answer": "Az eredeti 1/4-e."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Hogyan működik a gammakés?",
+     "body": "A gammakészülék kb. 190–200 kobalt-60 forrást tartalmaz, amelyek gammasugarait egyetlen pontba fókuszálják. Egy sugár önmagában gyenge, ezért az útjába eső szövetek alig károsodnak, a találkozási pontban azonban nagy a dózis. Lars Leksell svéd idegsebész találta ki 1967-ben, elsősorban kis agyi elváltozások kezelésére. A kobalt-60 felezési ideje 5,27 év, gammaenergiája 1,17 és 1,33 MeV. Ahogy a forrás aktivitása fokozatosan felére csökken, a kezelési időt meg kell duplázni, a forrásokat néhány évente cserélik. A „gammakés” nem kés, hanem sugárkezelés, vágás nélkül.",
+     "did_you_know": "",
+     "think": "Mennyivel kell hosszabb ideig kezelni, ha a forrás aktivitása a felére csökkent?",
+     "think_answer": "Kétszer olyan hosszú ideig."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Hogyan datálnak a szén-14-gyel?",
+     "body": "Az élő szervezetek szén-14-tartalma az elpusztulás után az 5730 éves felezési idő szerint csökken. Ha egy lelet az eredeti szén-14 12,5%-át (1/8) tartalmazza, akkor három felezési idő, vagyis 3 · 5730 = 17 190 év telt el. Az 1991-ben talált jégember, Ötzi kora szén-14-es vizsgálat alapján kb. 5300 év. A módszer kb. 50 000 évnél idősebb leleteknél már nem használható, mert a szén-14 alig marad; a dinoszauruszok kora ezért nem mérhető vele. Ilyenkor hosszabb felezési idejű izotópokat (urán-ólom, kálium-argon) alkalmaznak. A kort fagyűrűk alapján kalibrálják.",
+     "did_you_know": "",
+     "think": "Hány éves egy lelet, ha az eredeti szén-14 25%-a maradt (T = 5730 év)?",
+     "think_answer": "Két felezési idő: 2 · 5730 = 11 460 év."
+    }
+   ]
+  }
+ ]
+}

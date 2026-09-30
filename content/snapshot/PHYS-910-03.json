@@ -1,0 +1,1156 @@
+{
+ "nat_id": "PHYS-910-03",
+ "topic_id": "4e0b6c7f-1ea3-45ec-a222-ea620f4797e0",
+ "title_hu": "A közlekedés és sportolás fizikája",
+ "grade": 9,
+ "lessons": [
+  {
+   "lesson_id": "8304b65a-2906-4f6b-81dc-20c4f4c0e34a",
+   "title_hu": "Ütközések és lendület",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "b1e776da-5773-4bdc-bf44-27988c884295",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Képzelj el egy helyzetet, amikor egy focilabda és egy autó ütközik. Az autó gyorsan halad, míg a labda áll. Az ütközés után a labda deformálódik, és nem pattog vissza teljesen. Ez a rugalmatlan ütközés. Az ilyen ütközések során az összes lendület megmarad, de az energia egy része deformációra és hőre alakul át. A lendület megmaradásának törvénye segít megérteni, hogy az autó sebessége hogyan változik az ütközés után.",
+       "type": "text",
+       "heading": "Rugalmatlan ütközések megfigyelése",
+       "key_term": "rugalmatlan ütközés"
+      },
+      {
+       "body": "Tegyük fel, hogy két jégkorongkorcsolyázó ütközik, az egyik 80 kg, a másik 70 kg, és az első 5 m/s sebességgel halad, míg a másik áll. Az ütközés után közös sebességük kialakul. A lendület megmaradásának törvénye szerint a két korcsolyázó közös sebessége 3,33 m/s lesz. Ez jól mutatja, hogy az ütközés során a lendület átadódik, és hogyan alakítja a mozgást.",
+       "type": "text",
+       "heading": "A közös sebesség számítása",
+       "key_term": "lendület megmaradása"
+      },
+      {
+       "body": "Az autók tervezésekor fontos a gyűrődési zóna, amely az ütközések során elnyeli az energiát. Gondolj csak bele, amikor egy autó balesetet szenved, a gyűrődési zóna segít csökkenteni a sofőr és az utasok sérüléseit. Az ilyen zónák kialakítása során a mérnökök a lendület megmaradását és a hatások csökkentését tartják szem előtt. Ezért a modern autók sokkal biztonságosabbak, mint régen.",
+       "type": "text",
+       "heading": "A gyűrődési zóna szerepe ütközéskor",
+       "key_term": "gyűrődési zóna"
+      },
+      {
+       "body": "Képzelj el egy kísérletet, ahol különböző labdákat dobsz le ugyanarról a magasságról. A foci- és kosárlabda visszapattanása különböző magasságokat produkál. A focilabda alacsonyabb magasságra pattan vissza, míg a kosárlabda magasabbra. Ez a rugalmasság mértéke, ami a labdák anyagától függ. Ezzel a kísérlettel könnyen bemutathatod a különböző anyagok és formák hatását a mozgásra.",
+       "type": "text",
+       "heading": "Labdák rugalmasságának vizsgálata",
+       "key_term": "rugalmasság"
+      },
+      {
+       "body": "Amikor egy elektromos autó fékezik, a rekuperációs fékezés során a lendületet visszanyerik, és az energiát akkumulátorba tárolják. Ez a folyamat segít csökkenteni a fogyasztást és növelni a hatékonyságot. A lendület megmaradásának törvénye itt is érvényesül, de az autó mozgási energiája részben visszanyerhető és tárolható az akkumulátorban. Ez a modern technológia egy élő példája a fizika alkalmazásának a mindennapi életben.",
+       "type": "text",
+       "heading": "A lendület szerepe fékezés és gyorsítás során",
+       "key_term": "rekuperációs fékezés"
+      },
+      {
+       "body": "A fékút hossza attól függ, hogy milyen gyorsan halad az autó, és milyen erővel fékezünk. Például, ha 90 km/h sebességgel haladunk, és hirtelen fékezünk, a fékút akár 40 méter is lehet. A fékezési idő alatt a jármű lassul, és a lendület csökken. Ezért fontos, hogy mindig tartsuk be a követési távolságot, hiszen a fizika törvényei alapján a lendület és az erő határozza meg, hogy mennyi idő alatt áll meg az autó.",
+       "type": "text",
+       "heading": "Fékút és fékezési idő",
+       "key_term": "fékút"
+      },
+      {
+       "body": "Newton első törvénye szerint, ha egy autó egyenletes sebességgel halad, és nem hat rá külső erő, akkor továbbra is egyenletesen halad. Ha azonban fékezünk, a fékekkel ható erő megváltoztatja a mozgás állapotát. Ezért a járművek tervezésénél nagyon fontos figyelembe venni az autóra ható erőket, hogy biztonságos és hatékony legyen a közlekedés. Az autók gyorsulása és fékezése a dinamika alaptörvényeit követi.",
+       "type": "text",
+       "heading": "Newton törvényei az autó mozgásában",
+       "key_term": "dinamika alaptörvénye"
+      }
+     ]
+    },
+    {
+     "block_id": "b178f52a-3698-4223-90aa-3b729e87943f",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy autó motorja beindul, és a vezető lenyomja a gázpedált. A motor teljesítménye lendületet ad az autónak, amely az úton előre kezd haladni. Ekkor a jármű lendülete (p) folyamatosan növekszik, hiszen a gyorsulás (a) a motor erejéből adódik.",
+       "type": "story",
+       "heading": "Az autó elindulása"
+      },
+      {
+       "body": "Ahogy az autó sebessége nő, a vezető észreveszi, hogy piros lámpa villan fel. Azonnal rálép a fékre. A fékek segítségével az autó lassulni kezd, de a lendület megmaradása miatt a jármű egy ideig még előre halad. A fékezési idő és a fékút a jármű sebességétől, a fékerőtől és az útfelület tapadásától függ.",
+       "type": "story",
+       "heading": "Fékezés és lendület megmaradása"
+      },
+      {
+       "body": "Az autó megáll, de egy másik jármű hirtelen beleszalad. Az ütközéskor a gyűrődési zóna szerepe kulcsszerepet játszik: a járművek deformálódnak, így a lendület megmaradása miatt a mozgási energia egy része a deformációba megy át. Ez csökkenti a baleset következményeit, hiszen a gyűrődési zóna elnyeli az ütközés energiáját.",
+       "type": "story",
+       "heading": "Ütközés és gyűrődési zóna"
+      },
+      {
+       "body": "Az ütközés után a járművek megállnak, de a vezető kiszáll, és egy labdát kezd el dobálni. A labda esésekor a rugalmasságát vizsgálja, amely a visszapattanás magasságában nyilvánul meg. Ha a labda kemény felületre érkezik, akkor magasabbra pattan vissza, mint ha puhább felületre esne, így a lendület megmaradásának elve itt is érvényesül.",
+       "type": "story",
+       "heading": "A labda visszapattanása"
+      },
+      {
+       "body": "A labda és az autó közötti kapcsolatot megértve a fiatalok sporteszközök tervezésébe kezdenek. Megvizsgálják, hogyan lehet a legjobban kihasználni a lendület megmaradásának elvét a tervezés során. Kísérleteznek különböző anyagokkal és formákkal, hogy a mozgásuk hatékonyabb legyen, figyelembe véve a dinamikai alaptörvényeket.",
+       "type": "story",
+       "heading": "A sporteszköz tervezése"
+      }
+     ]
+    },
+    {
+     "block_id": "11add541-e9e9-40a8-9826-df1c441e089c",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Rugalmatlan ütközés során a lendület megmarad, a járművek közös sebessége a tömegük arányában alakul ki.",
+       "heading": "Rugalmatlan ütközés",
+       "description": "Két autó ütközésének vázlata, ahol a járművek egyesülnek, és közös sebességgel haladnak tovább.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az ütközés előtt és után a lendület összegének állandósága.",
+       "heading": "Lendület megmaradása",
+       "description": "A lendület megmaradását bemutató grafikon, amely az ütközés előtti és utáni lendületeket ábrázolja.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A gyűrődési zóna csökkenti az ütközés során keletkező erőket, védve az utasokat.",
+       "heading": "Gyűrődési zóna szerepe",
+       "description": "Autógyűrődési zóna keresztmetszete, amely bemutatja, hogyan deformálódik az autó ütközéskor.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A visszapattanás magassága a labda anyagának rugalmasságától függ.",
+       "heading": "Labdák rugalmasságának vizsgálata",
+       "description": "A labda visszapattanásának magasságát bemutató ábra, ahol a különböző labdák rugalmasságát hasonlítjuk össze.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A sebesség növekedésével a fékút is nő, így fontos a fékezési idő helyes megválasztása.",
+       "heading": "Fékút és fékezési idő",
+       "description": "A fékút és a fékezési idő összefüggését bemutató grafikon, amely a sebességet és a fékezési távolságot ábrázolja.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az autó gyorsulása a ható erők egyensúlyától függ, Newton törvényei alapján.",
+       "heading": "Autó gyorsulásának magyarázata",
+       "description": "Az autóra ható erők ábrázolása, beleértve a hajtóerőt, a súrlódást és a légellenállást.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A súrlódás csökkentése különböző anyagokkal, és annak hatása a mozgásra.",
+       "heading": "Súrlódás befolyásolása",
+       "description": "Kísérlet bemutatása, ahol különböző szennyező anyagokkal (por, olaj) befolyásoljuk a súrlódást.",
+       "visual_type": "kísérleti elrendezés"
+      },
+      {
+       "type": "visual",
+       "caption": "Az áramló levegő nyomáscsökkenése, ami fontos a sporteszközök aerodinamikájában.",
+       "heading": "Áramló levegő nyomáscsökkenése",
+       "description": "Egyszerű eszköz, amely bemutatja a levegő áramlásának hatását a nyomáscsökkenésre.",
+       "visual_type": "demonstrációs eszköz"
+      }
+     ]
+    },
+    {
+     "block_id": "67e1b8ac-67a9-4b84-9e15-c288494a2262",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A közlekedésben és a sportban gyakran találkozunk ütközésekkel, például autóbaleseteknél vagy labdajátékok során.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Mozgás a mindennapokban",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "03446e77-45cb-498b-bfc1-74159734fc9f",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A résztvevő testek összetapadnak, és közös sebességgel mozognak tovább.",
+        "B) A résztvevő testek visszapattannak, és megőrzik a kezdeti sebességüket.",
+        "C) A lendület megmaradása nem érvényes.",
+        "D) Az ütközés során az energia teljes mértékben megmarad."
+       ],
+       "question": "Mi jellemzi a rugalmatlan ütközéseket?",
+       "explanation": "Rugalmatlan ütközés során a testek összetapadnak, így közös sebességgel folytatják a mozgást.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A lendület megmaradásának törvénye alapján.",
+        "B) Az ütközés előtt mért sebességek átlagaként.",
+        "C) Az ütközés utáni időtartam alapján.",
+        "D) A testek tömegének alapján, függetlenül a sebességtől."
+       ],
+       "question": "Hogyan számítható ki a közös sebesség rugalmatlan ütközés után?",
+       "explanation": "A közös sebesség a lendület megmaradásának törvénye alapján számítható ki az ütközés előtt és után.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Csökkenti az ütközés során fellépő erőket.",
+        "B) Növeli a jármű sebességét.",
+        "C) Megakadályozza a lendület megmaradását.",
+        "D) Csökkenti a légellenállást."
+       ],
+       "question": "Mi a gyűrődési zóna szerepe ütközéskor?",
+       "explanation": "A gyűrődési zóna feladata, hogy csökkentse az ütközés során a testekre ható erőket, ezáltal védelmet nyújt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az autó sebessége és a fékezési idő.",
+        "B) Csak az autó tömege.",
+        "C) Csak a fékek hatékonysága.",
+        "D) Az út minősége és a szélsebesség."
+       ],
+       "question": "Milyen tényezők befolyásolják a fékút hosszát?",
+       "explanation": "A fékút hosszát az autó sebessége és a fékezési idő határozza meg, mivel ezek befolyásolják a lassulást.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Newton második törvénye.",
+        "B) Az energia megmaradásának törvénye.",
+        "C) A lendület megmaradásának törvénye.",
+        "D) Az impulzus törvénye."
+       ],
+       "question": "Melyik törvény segít megérteni az autó gyorsulását és fékezését?",
+       "explanation": "Newton második törvénye leírja, hogy az erő és a gyorsulás hogyan kapcsolódik egymáshoz, így segít megérteni az autó mozgását.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "ed4313e2-f36b-437d-a989-1e794e956238",
+   "title_hu": "Kanyarodás és súrlódás",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "b6996675-180e-470f-abef-ad9627591749",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Amikor egy autó kanyarodik, a járműnek folyamatosan irányt kell változtatnia. Ehhez szüksége van egy erőre, amely a kanyarodás irányába hat. Ez az erő a súrlódási erő (f) a gumiabroncsok és az út között. Minél nagyobb a sebesség, annál nagyobb súrlódásra van szükség ahhoz, hogy az autó ne csússzon ki a kanyarban.",
+       "type": "text",
+       "heading": "A kanyarodás fizikája",
+       "key_term": "súrlódási erő"
+      },
+      {
+       "body": "Gondoljunk arra, amikor egy autó nagy sebességgel próbál meg kanyarodni. Ha a kanyar túl éles, vagy a felület csúszós (például eső után), a gumiabroncsok nem tudják megtartani a szükséges súrlódási erőt, és az autó kicsúszik. Ezért fontos, hogy a sofőr a sebességet és a kanyar ívét mindig figyelembe vegye.",
+       "type": "text",
+       "heading": "Kicsúszás megfigyelése autókkal",
+       "key_term": "kicsúszás"
+      },
+      {
+       "body": "A motorosoknak is figyelniük kell a kanyarodás során a súrlódásra. Amikor egy motoros kanyarodik, a motor dőlése és a gumi tapadása kulcsfontosságú a stabilitás megőrzéséhez. Ha a motor túl gyorsan fordul, vagy a felület csúszós, a motoros könnyen elveszítheti az egyensúlyát és kicsúszhat.",
+       "type": "text",
+       "heading": "Kanyarodás motorral",
+       "key_term": "kanyarodás"
+      },
+      {
+       "body": "A jégen korcsolyázva is tapasztalhatjuk a kicsúszást. Ha túl gyorsan próbálunk megfordulni, a korcsolya éle nem tudja megtartani a súrlódást, és a korcsolyázó elesik. Ezért fontos a megfelelő technika és a sebesség kontrollálása a biztonságos kanyarodás érdekében.",
+       "type": "text",
+       "heading": "Kicsúszás korcsolyával",
+       "key_term": "kicsúszás"
+      },
+      {
+       "body": "Kísérletezhetünk azzal, hogy hogyan befolyásolják a súrlódást különböző szennyező anyagok, például por vagy olaj. Ha egy lejtős felületet porral szennyezünk, és egy tárgyat ráhelyezünk, észlelhetjük, hogy a tárgy könnyebben csúszik le, mivel a súrlódási erő csökken. Ez a kísérlet jól szemlélteti, hogyan hat a környezet a kanyarodásra és a mozgásra.",
+       "type": "text",
+       "heading": "Súrlódási erő és szennyező anyagok",
+       "key_term": "súrlódási erő"
+      },
+      {
+       "body": "Készíthetünk egy változtatható hajlásszögű lejtőt, amely lehetővé teszi a különböző szögek és felületek tesztelését. Ezzel a kísérlettel megfigyelhetjük, hogyan változik a súrlódási erő a lejtő dőlésszögének módosításával. Ez segít megérteni a kanyarodás fizikáját és a kicsúszás okait.",
+       "type": "text",
+       "heading": "Kísérleti eszköz építése",
+       "key_term": "kísérleti eszköz"
+      }
+     ]
+    },
+    {
+     "block_id": "80708465-612d-4525-9c9e-afaa9763ee83",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy autó, amely a városban közlekedik, megközelíti a sarkot. A sofőr észreveszi, hogy a kanyar éles, ezért lassítani kezd. A lassulás miatt a jármű sebessége csökken, de a kanyarodáshoz szükséges centripetális erő (középponti erő) még mindig jelen van, hiszen a kanyarban való haladás megköveteli, hogy a jármű egy ívet írjon le.",
+       "type": "story",
+       "heading": "A kanyarodás kezdete"
+      },
+      {
+       "body": "Ahogy az autó a kanyarba ér, a gumik és az út közötti súrlódási erő lép működésbe. Ez az erő biztosítja, hogy az autó ne csússzon ki a kanyarból. A sofőr tudja, hogy a súrlódási erő a gumik tapadásának köszönhető, amely a gumi és az aszfalt érintkezéséből adódik. A kanyarodás során a súrlódás kulcsszerepet játszik, hiszen enélkül az autó könnyen megcsúszhatna.",
+       "type": "story",
+       "heading": "Súrlódás szerepe a kanyarodásban"
+      },
+      {
+       "body": "A sofőr hirtelen észreveszi, hogy a kanyar túl éles, és a sebessége túl magas. A gumik már nem tudják megfékezni az autót, és a jármű elkezd kicsúszni. Ez a kicsúszás a súrlódási erő csökkenése miatt következik be, ami akkor történik, amikor a gumik nem tudják a megfelelő tapadást biztosítani az úton. Az autó irányíthatatlanná válik, és az út menti árok felé csúszik.",
+       "type": "story",
+       "heading": "Kicsúszás megfigyelése"
+      },
+      {
+       "body": "A sofőr emlékszik arra, hogy az út eső után csúszós lehet, főleg, ha szennyező anyagok, mint például olaj vagy por, jelen vannak. Ezen anyagok csökkentik a gumik és az út közötti súrlódást, ami még inkább hozzájárul a kicsúszáshoz. Ezért fontos, hogy a sofőr figyeljen az útviszonyokra, és szükség esetén csökkentse a sebességét a kanyarokban.",
+       "type": "story",
+       "heading": "Szennyező anyagok hatása"
+      },
+      {
+       "body": "A sofőr, hogy jobban megértse a kanyarodás és a súrlódás kapcsolatát, elhatározza, hogy egy kísérletet végez. Összeállít egy lejtőt, amelynek hajlásszöge változtatható. Különböző anyagokat, például port és olajat, helyez az útfelületre, hogy megfigyelje, hogyan változik a kanyarodás során a súrlódási erő. A kísérlet során észreveszi, hogy a szennyezett felületen a jármű sokkal könnyebben csúszik, mint a tiszta úton, így még inkább megerősíti a tapasztalatait a súrlódás és a kanyarodás fizikájáról.",
+       "type": "story",
+       "heading": "Kísérleti megfigyelés"
+      }
+     ]
+    },
+    {
+     "block_id": "be95c227-2fab-4dd1-99bd-dd5a0d4915b8",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Kanyarodás során az autó mozgását a centrifugális erő és a súrlódási erő egyensúlya határozza meg.",
+       "heading": "A kanyarodás fizikája",
+       "description": "Egy autó kanyarodás közben ábrázolt vázlata, amelyen látható a centrifugális erő és a súrlódási erő iránya. Az autó a kanyar belső oldalán halad, a centrifugális erő kifelé hat, míg a súrlódási erő befelé.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A kicsúszás oka a súrlódási erő csökkenése, amelyet a kanyarodás gyorsasága és az út állapota befolyásol.",
+       "heading": "Kicsúszás megfigyelése",
+       "description": "Kép egy autóról, amely kanyarodás közben kicsúszik, bemutatva a kerekek és az út közötti kapcsolatot. A kerekek csúszása jól látható.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "A súrlódási erő kulcsszerepet játszik a kanyarodás során, és meghatározza, hogy az autó kicsúszik-e vagy sem.",
+       "heading": "Súrlódási erő",
+       "description": "Grafikon, amely a súrlódási erőt (F_s) ábrázolja a kanyarodási sebesség (v) függvényében. A grafikonon látható, hogy a súrlódási erő növekszik a sebességgel, de egy bizonyos ponton elérheti a maximális értékét.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A szennyező anyagok jelenléte jelentősen befolyásolja a kanyarodás során tapasztalt súrlódást.",
+       "heading": "Súrlódás csökkentése",
+       "description": "Vázlat, amely bemutatja, hogyan csökkenti a por vagy olaj a felületek közötti súrlódást. Az ábrán látható, hogy a szennyező anyagok csökkentik a tapadást.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A kísérleti eszköz lehetővé teszi a diákok számára a súrlódás hatásának megfigyelését különböző körülmények között.",
+       "heading": "Kísérleti eszköz megépítése",
+       "description": "Kép egy változtatható hajlásszögű lejtőről, amelyet a diákok kísérletezésre használnak. A lejtőn különböző szennyező anyagokat alkalmaznak a súrlódás vizsgálatára.",
+       "visual_type": "fotó"
+      }
+     ]
+    },
+    {
+     "block_id": "78e92e37-178e-4c42-ab12-a80047847145",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A diákok a közlekedés során, például autóval kanyarodás közben tapasztalják meg a súrlódás szerepét, amely segít megakadályozni a csúszást.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Kanyarodás és súrlódás a közlekedésben",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "75b34c1c-c002-4265-90f8-d8bf1c3bc4f0",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A súrlódási erő nagysága",
+        "B) Az autó sebessége",
+        "C) A kanyar ívének sugara",
+        "D) Az autó színe"
+       ],
+       "question": "Mi határozza meg, hogy egy autó kanyarodás közben kicsúszik-e?",
+       "explanation": "A kicsúszás oka a súrlódási erő nagyságában rejlik, ami a kanyarodás során biztosítja az autó stabilitását.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Megakadályozza a kicsúszást",
+        "B) Csökkenti a sebességet",
+        "C) Növeli a kanyarodási ívet",
+        "D) Növeli az autó tömegét"
+       ],
+       "question": "Milyen szerepe van a súrlódási erőnek kanyarodás közben?",
+       "explanation": "A súrlódási erő megakadályozza a kicsúszást, lehetővé téve a jármű stabil kanyarodását.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az érintkező felületek anyaga és állapota",
+        "B) A jármű színe",
+        "C) Az időjárási körülmények",
+        "D) A jármű sebessége"
+       ],
+       "question": "Milyen tényezők befolyásolják a súrlódási erő nagyságát?",
+       "explanation": "A súrlódási erő nagyságát az érintkező felületek anyaga és állapota határozza meg, például sima vagy érdes felületek esetén.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az autó kicsúszik",
+        "B) Az autó megáll",
+        "C) Az autó gyorsul",
+        "D) Az autó irányt változtat"
+       ],
+       "question": "Mi történik, ha a kanyarodás során a súrlódási erő nem elegendő?",
+       "explanation": "Ha a súrlódási erő nem elegendő, az autó kicsúszik a kanyarból, mivel nem tudja megtartani az ívet.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Csökkenti a súrlódási erőt",
+        "B) Növeli a súrlódási erőt",
+        "C) Nincs hatása a súrlódási erőre",
+        "D) Megszünteti a súrlódási erőt"
+       ],
+       "question": "Milyen hatással van a por vagy olaj a súrlódási erőre?",
+       "explanation": "A por vagy olaj csökkenti a súrlódási erőt, ami növeli a kicsúszás kockázatát kanyarodás közben.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "77737513-65a8-49d5-a1c8-9182f78dfed8",
+   "title_hu": "Úszás és hajózás fizikája",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "37213ec7-50ff-412b-b08d-f379f9852db5",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A hidrosztatikai nyomás (víznyomás) a víz mélységétől függ. Minél mélyebbre merülünk, annál nagyobb nyomás hat ránk. Ezt tapasztalhatjuk, ha egy medencében merülünk el: a fülünknél érzett nyomás a víz mélységéből adódik. Egy egyszerű kísérlettel is megvizsgálhatjuk ezt: töltsünk meg egy üvegpalackot vízzel, és fúrjunk bele több lyukat a különböző magasságokban. A lyukakból kilövellő víz távolsága a mélységtől függően változik.",
+       "type": "text",
+       "heading": "Hidrosztatikai nyomás",
+       "key_term": "hidrosztatikai nyomás"
+      },
+      {
+       "body": "A felhajtó erő az a fizikai jelenség, amely lehetővé teszi, hogy a testek úszni tudjanak. Amikor egy test a vízbe merül, a víz alulról felfelé hat rá, így képes a testet a víz felszínén tartani. Gondoljunk csak a felfújt lufira: a vízben úszva a lufi a felhajtó erő miatt nem süllyed el, hanem a víz felszínén lebeg. Kísérletként próbáljunk meg különböző zöldségeket, például sárgarépát vagy almát vízbe helyezni, és figyeljük meg, hogy melyik úszik és melyik merül el, valamint hogy a víz sótartalma hogyan befolyásolja ezt.",
+       "type": "text",
+       "heading": "Felhajtó erő",
+       "key_term": "felhajtó erő"
+      },
+      {
+       "body": "A hajók, például a vitorlás hajók, a felhajtó erő és a víz ellenállása révén képesek haladni. A vitorlák a szél erejét hasznosítják, így a hajó előrehalad. Ha elképzeljük, hogy egy barátunkkal együtt egy vitorlást irányítunk, és a szél fúj, érezni fogjuk, hogy a vitorlák feszülnek, és a hajó egy irányba halad. A hajócsavaros hajók esetében a propeller forgása hozza létre a mozgást, ami hasonló ahhoz, mint amikor egy úszó a karjaival hajtja magát előre a vízben.",
+       "type": "text",
+       "heading": "Hajók működése",
+       "key_term": "hajócsavaros hajó"
+      },
+      {
+       "body": "A tengeralattjárók működése szorosan összefonódik a felhajtó erő és a víz sűrűségének megértésével. Ezek a járművek képesek a víz felszíne alatt mozogni, és a merüléshez vagy felemelkedéshez a belső ballaszt tartályaik vízszintjét változtatják. Képzeljük el, hogy egy tengeralattjáró a víz alatt úszik, és a ballaszt tartályok vízzel való feltöltésével elmerül, míg a levegő befecskendezésével felemelkedik a felszínre. Ez a folyamat a felhajtó erő szabályozásán alapul.",
+       "type": "text",
+       "heading": "Tengeralattjárók működése",
+       "key_term": "tengeralattjáró"
+      },
+      {
+       "body": "Az áramvonalas testek kialakítása kulcsfontosságú a vízben való hatékony haladás érdekében. Minél áramvonalasabb egy jármű, annál kisebb az ellenállás, így gyorsabban és kevesebb energiafelhasználással tud haladni. Gondoljunk csak a modern versenyhajókra, amelyek formája a víz áramlásának optimalizálására lett tervezve. Ha egy egyszerű kísérletet végzünk, és egy sima és egy durva felületű tárgyat is vízbe dobunk, láthatjuk, hogy a simább tárgy gyorsabban halad át a vízen, mivel az áramlás kevésbé zavarodik meg.",
+       "type": "text",
+       "heading": "Áramvonalas testek",
+       "key_term": "áramvonalas test"
+      },
+      {
+       "body": "Egy izgalmas tevékenység lehet egy hajómodell elkészítése. Használhatunk különböző anyagokat, például műanyagot, fát vagy kartont. A hajó formájának megtervezésekor figyeljünk a felhajtó erőre és az áramvonalasságra, hiszen ezek segítik a hajó hatékony haladását. Miután elkészült a modell, próbáljuk ki vízben, és nézzük meg, mennyi súlyt tud elvinni. Ez egy remek lehetőség arra, hogy a fizikai elveket a gyakorlatban is alkalmazzuk.",
+       "type": "text",
+       "heading": "Hajómodell készítése",
+       "key_term": "hajómodell"
+      }
+     ]
+    },
+    {
+     "block_id": "52812f96-3758-4471-835a-ffa474c5e09f",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal a strandra érkezik, és izgatottan lép a vízbe. Amikor a lába a vízbe ér, a víz felhajtóereje (F_b) azonnal érezhetővé válik, hiszen a test súlya (m*g) és a víz alatti nyomás hatására a víz felfelé tolja.",
+       "type": "story",
+       "heading": "A vízbe lépés"
+      },
+      {
+       "body": "A fiatal észreveszi, hogy a vízben a testének egy része a víz fölött van, míg más része elmerül. Ez a jelenség a felhajtóerő (F_b) és a gravitációs erő (m*g) egyensúlyának köszönhető. A felhajtóerő nagysága a vízben kiszorított víz tömegével arányos, ami lehetővé teszi számára, hogy úszni tudjon.",
+       "type": "story",
+       "heading": "A test úszásának vizsgálata"
+      },
+      {
+       "body": "A fiatal elhatározza, hogy készít egy hajómodellt a strandon. Összegyűjt néhány műanyag palackot és kartondarabot. A hajómodell felépítése során figyelembe veszi a felhajtóerőt, ezért ügyel arra, hogy a hajó formája áramvonalas legyen, így könnyebben mozog a vízben.",
+       "type": "story",
+       "heading": "Hajómodell készítése"
+      },
+      {
+       "body": "Miután elkészítette a hajómodellt, a fiatal vízre helyezi. A hajó úszik, mert a víz felhajtóereje éppen elég ahhoz, hogy ellensúlyozza a hajó súlyát. A hajócsavaros rendszer, ha lenne, segítene a hajó előrehaladásában, de a fiatal most csak a víz alatti áramlásra támaszkodik.",
+       "type": "story",
+       "heading": "A hajó működése"
+      },
+      {
+       "body": "A strandon a fiatal észrevesz egy asztalt, ahol különböző zöldségek és gyümölcsök vannak. Elhatározza, hogy megvizsgálja, melyek úsznak és melyek merülnek el a vízben. Különböző mennyiségű cukrot old fel a vízben, és megfigyeli, hogy a víz sűrűsége hogyan befolyásolja a zöldségek és gyümölcsök felhajtóerejét, ezzel is demonstrálva a hidrosztatikai nyomás változását.",
+       "type": "story",
+       "heading": "Elmerült zöldségek vizsgálata"
+      }
+     ]
+    },
+    {
+     "block_id": "ae9265ad-4569-4d5c-902a-002509b7e274",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A hidrosztatikai nyomás növekszik a víz mélységével.",
+       "heading": "Hidrosztatikai nyomás",
+       "description": "Egy vízoszlopot ábrázoló diagram, amelyen a víz mélysége és a hidrosztatikai nyomás közötti kapcsolat látható. A diagramon jelölve van a vízoszlop magassága, valamint a nyomásértékek.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A felhajtó erő és a gravitációs erő hatása a testre vízben.",
+       "heading": "Felhajtó erő",
+       "description": "Egy test vízben való elhelyezését bemutató vázlat, amelyen a felhajtó erő és a gravitációs erő hatását is feltüntettük. A vázlaton látható, hogy a felhajtó erő felfelé hat, míg a gravitációs erő lefelé.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A vitorlás hajó felépítése és a felhajtó erő hatása.",
+       "heading": "Hajók működése",
+       "description": "Egy vitorlás hajó keresztmetszeti ábrázolása, amelyen a vitorla és a hajótest alakja látható. Az ábrán jelölve van a víz alatti rész és a felhajtó erő hatásvonalai.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A hajócsavaros hajó működése és a vízáram hatása.",
+       "heading": "Hajócsavaros hajók",
+       "description": "Egy hajócsavaros hajó működését bemutató diagram, amelyen a hajócsavar forgása és a vízáram iránya látható. A diagramon a hajó mozgásának iránya is feltüntetve van.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A tengeralattjáró süllyedése és emelkedése ballasztartályok segítségével.",
+       "heading": "Tengeralattjárók működése",
+       "description": "Egy tengeralattjáró vázlata, amely bemutatja a ballasztartályok működését és a tengeralattjáró süllyedését, illetve emelkedését a vízben.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Az áramvonalas testek csökkentik a vízellenállást.",
+       "heading": "Áramvonalas testek",
+       "description": "Egy grafikon, amely az áramvonalas testek és a vízellenállás közötti kapcsolatot szemlélteti. Az ábrán látható, hogy az áramvonalas forma csökkenti a vízellenállást.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A zöldségek és gyümölcsök vízben való elmerülése különböző oldatokban.",
+       "heading": "Zöldségek és gyümölcsök elmerülése",
+       "description": "Egy kísérleti diagram, amely a különböző zöldségek és gyümölcsök vízben való elmerülését mutatja, különböző cukor- vagy sóoldatokban. Az ábrán a vízben való elmerülés mértéke és a felhajtó erő hatása is látható.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "a1c97480-9d62-41c2-8464-47fadbfea3c9",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A víz alatti úszás és a hajózás fizikáját a modern technológiák is felhasználják, például a víz alatti drónok és a hajók tervezésénél.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 50,
+          "w": 100,
+          "x": 50,
+          "y": 200,
+          "type": "box"
+         },
+         {
+          "x": 70,
+          "y": 210,
+          "text": "Hajó",
+          "type": "label"
+         },
+         {
+          "x": 100,
+          "y": 150,
+          "type": "dot"
+         },
+         {
+          "x": 105,
+          "y": 145,
+          "text": "Felhajtóerő",
+          "type": "label"
+         },
+         {
+          "x1": 100,
+          "x2": 100,
+          "y1": 150,
+          "y2": 200,
+          "type": "arrow"
+         },
+         {
+          "x": 80,
+          "y": 250,
+          "text": "Víz szint",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A víz és a testek úszása",
+       "discovery": "Arisztotelész már az ókorban foglalkozott a testek úszásának kérdésével, és megfigyelte, hogy a vízben elmerült testek súlya csökken. Ezt a jelenséget Archimédész is tanulmányozta, aki megfogalmazta az Archimédész törvényét, amely szerint egy testre a folyadékban ráható felhajtóerő egyenlő a test által kiszorított folyadék súlyával. Ez a felfedezés alapvető fontosságú volt a hajózás és a hidrodinamika fejlődésében.",
+       "try_basic": "Készítsünk egyszerű hajómodellt papírból, és teszteljük, hogy mennyi súlyt képes elvinni a vízen anélkül, hogy elsüllyedne.",
+       "try_advanced": "Tervezünk egy bonyolultabb hajómodellt, amely különböző anyagokból készült, és vizsgáljuk meg, hogy a különböző anyagok hogyan befolyásolják a hajó úszását."
+      }
+     ]
+    },
+    {
+     "block_id": "7fa79672-09d7-497e-889b-64db93f38d91",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A test sűrűsége és a víz sűrűsége közötti viszony.",
+        "B) A test formája és a víz hőmérséklete.",
+        "C) A test színe és a víz áramlása.",
+        "D) A test súlya és a víz mélysége."
+       ],
+       "question": "Mi határozza meg, hogy egy test elmerül-e a vízben vagy sem?",
+       "explanation": "A test elmerülését a test sűrűsége és a víz sűrűsége közötti viszony határozza meg: ha a test sűrűsége nagyobb, mint a vízé, akkor elmerül.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A vízben lévő testekre ható erő, amely a víz által kiszorított térfogat tömegével arányos.",
+        "B) A víz áramlása által keltett erő, amely a hajókat előre hajtja.",
+        "C) A víz hőmérséklete által befolyásolt erő.",
+        "D) A víz felszínén lévő hullámok által keltett erő."
+       ],
+       "question": "Mi a felhajtóerő (Archimedesz törvénye) lényege?",
+       "explanation": "A felhajtóerő a vízben lévő test által kiszorított víz tömegének megfelelő erő, amely felfelé hat a testre.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A víz alatti testekre ható erő, amely a mélységgel nő.",
+        "B) A víz felszínén lévő hullámok erőssége.",
+        "C) A víz hőmérsékletének mérése.",
+        "D) A vízben lévő szennyeződések koncentrációja."
+       ],
+       "question": "Milyen szerepe van a hidrosztatikai nyomásnak a vízben?",
+       "explanation": "A hidrosztatikai nyomás a víz mélységével növekszik, és hatással van a vízben lévő testekre.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Csökkenti a víz ellenállását.",
+        "B) Növeli a test súlyát.",
+        "C) Megváltoztatja a víz hőmérsékletét.",
+        "D) Fokozza a víz szennyeződését."
+       ],
+       "question": "Miért fontos az áramvonalas testforma a vízben való haladás során?",
+       "explanation": "Az áramvonalas forma csökkenti a víz ellenállását, így a test könnyebben haladhat a vízben.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A vitorla a szél erejét használja fel, hogy a hajót előre mozgassa.",
+        "B) A hajó motorja hajtja a vitorlát.",
+        "C) A víz áramlása mozgatja a hajót.",
+        "D) A hajó súlya segíti a vitorla működését."
+       ],
+       "question": "Hogyan működik egy vitorlás hajó?",
+       "explanation": "A vitorlás hajó a vitorlába érkező szél erejét használja, hogy a hajót előre mozgassa.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "bcf7bcd6-7ef9-4f97-b0ee-027a1fa3c262",
+   "title_hu": "Repülés fizikája",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "92d0e790-dcee-41b8-ae9b-424494ff96c1",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A repülőgépek működése a fizikában gyökerezik. A repülés alapja a felhajtó erő, amely lehetővé teszi, hogy a gép a levegőben maradjon. A repülőgépek szárnyai úgy vannak tervezve, hogy a levegő áramlása alatt a szárny fölött alacsonyabb nyomás alakuljon ki, mint alatta. Ez a nyomáskülönbség hozza létre a felhajtó erőt, ami felemeli a gépet. Mindez a Bernoulli-elv alapján működik, amely a folyadékok és gázok áramlásával foglalkozik.",
+       "type": "text",
+       "heading": "A repülőgépek fizikája",
+       "key_term": "repülőgép"
+      },
+      {
+       "body": "A felhajtó erő (lift) a repülés egyik legfontosabb tényezője. Amikor a repülőgép sebessége megnő, a szárnyak körüli levegő gyorsabban áramlik, így a szárny fölötti nyomás csökken. Ha a szárny alakja és dőlésszöge megfelelő, akkor a szárny alatt nagyobb nyomás alakul ki, ami felemeli a gépet. Gondoljunk csak arra, mikor egy kinyújtott kézzel autóban ülve próbálunk a levegőbe nyúlni; érezzük, hogy a levegő felfelé húzza a kezünket.",
+       "type": "text",
+       "heading": "A felhajtó erő magyarázata",
+       "key_term": "felhajtó erő"
+      },
+      {
+       "body": "Az áramvonalas forma kulcsszerepet játszik a repülőgépek hatékonyságában. Ha a gép formája aerodinamikus, akkor csökkenti a közegellenállást, ami azt jelenti, hogy kevesebb energia szükséges a repüléshez. Ezt a jelenséget jól láthatjuk az autók tervezésénél is; a sportautók áramvonalas formája segít a gyorsabb haladásban. A repülőgépek esetében a megfelelő forma nemcsak a sebességet, hanem az üzemanyag-hatékonyságot is javítja.",
+       "type": "text",
+       "heading": "Az áramvonalas forma fontossága",
+       "key_term": "áramvonalas forma"
+      },
+      {
+       "body": "A közegellenállás (drag) a levegő vagy más közeg által kifejtett ellenállás, amely gátolja a mozgást. A repülőgépek esetében ez a tényező jelentős hatással van a repülés hatékonyságára. Ha a közegellenállás nagy, akkor a gépnek több üzemanyagra van szüksége, hogy fenntartsa a sebességét. A közegellenállás csökkentésére a repülőgépek tervezésénél figyelembe veszik az áramvonalas formát és a szárnyak kialakítását.",
+       "type": "text",
+       "heading": "Közegellenállás",
+       "key_term": "közegellenállás"
+      },
+      {
+       "body": "Egy egyszerű kísérlet segítségével bemutathatjuk a levegő nyomáscsökkenését. Vegyünk két papírlapot, és tartsuk őket egymás mellett, majd fújjunk közöttük levegőt. Amikor a levegő áramlik a lapok között, észrevehetjük, hogy a lapok közelebb kerülnek egymáshoz. Ez a jelenség a levegő sebességének növekedésével és a nyomás csökkenésével magyarázható. Ez a kísérlet jól szemlélteti, hogyan működik a felhajtó erő a repülőgépek esetében is.",
+       "type": "text",
+       "heading": "Demonstráció: Levegő nyomáscsökkenése",
+       "key_term": "demonstráció"
+      }
+     ]
+    },
+    {
+     "block_id": "01d4961b-3953-4feb-8a60-8eddf1de0779",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy repülőgép a kifutópályán áll, a pilóta a vezérlőműszer előtt ül. A motorok beindulnak, és a repülőgép előre kezd haladni. Ez a mozgás elindítja a levegő áramlását a szárnyak körül. A szárnyak alakja és dőlésszöge miatt az áramló levegő sebessége megnő a szárnyak felett, míg a szárnyak alatti levegő lassabban áramlik. Ebből következően a szárnyra ható felhajtóerő (lift) keletkezik, amely felfelé emeli a repülőgépet.",
+       "type": "story",
+       "heading": "A repülőgép felkészül a felszállásra"
+      },
+      {
+       "body": "Ahogy a repülőgép sebessége növekszik, a felhajtóerő egyre nagyobbá válik. A pilóta érzékeli, hogy a repülőgép felemelkedik, és a kormányokat finoman állítva irányítja az emelkedést. A közegellenállás (drag) is hat a gépre, amely a levegő ellenállásából adódik. A pilóta ügyesen egyensúlyozza a motorok teljesítményét és a kormányzást, hogy a repülőgép optimális magasságra emelkedjen.",
+       "type": "story",
+       "heading": "A repülőgép emelkedése"
+      },
+      {
+       "body": "A repülőgép a levegőben stabilan halad. A felhajtóerő és a közegellenállás folyamatosan hatnak. A pilóta a repülőgép sebességét és irányát figyeli, miközben a szárnyak áramvonalas formája csökkenti a közegellenállást. Ez a forma lehetővé teszi, hogy a repülőgép kevesebb energiát használjon, és így hatékonyabban repüljön. A levegő áramlása a szárnyak körül továbbra is kulcsszerepet játszik a stabil repülés fenntartásában.",
+       "type": "story",
+       "heading": "A repülés közben"
+      },
+      {
+       "body": "Ahogy a repülőgép közelít a leszállópályához, a pilóta fokozatosan csökkenti a sebességet. A felhajtóerő csökken, és a közegellenállás nő, így a repülőgép lassan ereszkedik. A szárnyak dőlésszögét módosítva a pilóta biztosítja, hogy a repülőgép simán érkezzen a földre. A levegő áramlásának változása a szárnyak körül segít a stabilitás megőrzésében a leszállás során.",
+       "type": "story",
+       "heading": "A leszállás előkészítése"
+      },
+      {
+       "body": "A repülőgép végül simán leszáll a kifutópályára. A közegellenállás és a felhajtóerő egyensúlya a földet érés pillanatában megváltozik, a repülőgép lassan megáll. A pilóta leállítja a motorokat, és a repülőgép az utasoknak biztonságosan megérkezik a célállomásra. A repülés során a fizikai törvényszerűségek – mint a felhajtóerő, közegellenállás és az áramvonalas forma – mind hozzájárultak ahhoz, hogy ez az élmény zökkenőmentes legyen.",
+       "type": "story",
+       "heading": "A repülőgép földet ér"
+      }
+     ]
+    },
+    {
+     "block_id": "fcd0f0d3-7a9d-44e2-936e-91ec49fd015e",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A repülőgép fő részei: szárny, törzs, farok.",
+       "heading": "Repülőgép szerkezete",
+       "description": "Egy egyszerű repülőgép vázlatos ábrája, amely bemutatja a szárnyakat, a törzset és a farok részeit.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A szárny alakja és a levegő áramlása: a felhajtó erő keletkezése.",
+       "heading": "Felhajtó erő",
+       "description": "Egy grafikon, amely a repülőgép szárnyának alakját és a levegő áramlását mutatja, kiemelve a felhajtó erőt.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A közegellenállás hatása a repülésre.",
+       "heading": "Közegellenállás",
+       "description": "A repülőgép keresztmetszete, amely bemutatja a közegellenállást, amely a levegő ellenállásából fakad.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Az áramvonalas forma csökkenti a közegellenállást.",
+       "heading": "Áramvonalas forma",
+       "description": "Egy áramvonalas forma vázlata, amely összehasonlítja az áramvonalas és a nem áramvonalas formákat.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A levegő nyomáscsökkenésének bemutatása.",
+       "heading": "Levegő nyomáscsökkenés",
+       "description": "Egy egyszerű eszköz, mint például egy műanyag palack, amelyben a levegő nyomásának csökkenését mutatjuk be, amikor a palackot összenyomjuk.",
+       "visual_type": "demonstrációs eszköz"
+      },
+      {
+       "type": "visual",
+       "caption": "A repülési sebesség növekedése és a felhajtó erő.",
+       "heading": "Repülési sebesség",
+       "description": "Egy grafikon, amely a repülési sebesség és a felhajtó erő kapcsolatát mutatja.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az aerodinamikai elvek szerepe a repülésben.",
+       "heading": "Aerodinamikai elvek",
+       "description": "Egy diagram, amely bemutatja az aerodinamikai elveket, mint a Bernoulli-törvény és a Newton törvényei.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Különböző repülőgépek és azok aerodinamikai jellemzői.",
+       "heading": "Repülés gyakorlati példák",
+       "description": "Képek különböző repülőgépekről, amelyek bemutatják a különböző szárnyformákat és aerodinamikai megoldásokat.",
+       "visual_type": "fotó"
+      }
+     ]
+    },
+    {
+     "block_id": "6a926a15-fbc7-4b79-add6-c44e197551c3",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A repülőgépek és drónok tervezésénél a levegő áramlásának és a nyomáscsökkenésnek a megértése elengedhetetlen, hiszen ezek határozzák meg a repülő járművek teljesítményét és stabilitását.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 20,
+          "w": 100,
+          "x": 50,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 70,
+          "y": 85,
+          "text": "Szárny",
+          "type": "label"
+         },
+         {
+          "x1": 150,
+          "x2": 200,
+          "y1": 110,
+          "y2": 110,
+          "type": "arrow"
+         },
+         {
+          "x": 180,
+          "y": 95,
+          "text": "Levegő áramlás",
+          "type": "label"
+         },
+         {
+          "r": 30,
+          "x": 250,
+          "y": 120,
+          "type": "circle"
+         },
+         {
+          "x": 250,
+          "y": 160,
+          "text": "Nyomáscsökkenés",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Az áramló levegő nyomáscsökkenése",
+       "discovery": "A repülés fizikájának alapjait a 18. század végén és a 19. század elején fektették le, amikor Sir George Cayley, az angol mérnök felismerte, hogy a szárnyak alakja és a levegő áramlása kulcsszerepet játszik a repülésben. Cayley kísérletei során megalkotta az első valódi repülőgépet, amely képes volt emelkedni és repülni.",
+       "try_basic": "Készíts egy egyszerű kísérletet egy papírsárkány segítségével! Fújd fel a sárkányt, és figyeld meg, hogyan emelkedik fel a levegő áramlása miatt.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "2a989c37-b188-4864-9427-333c64cc8bb6",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A repülőgépet felfelé emeli.",
+        "B) A repülőgépet lefelé húzza.",
+        "C) A repülőgépet oldalra tereli.",
+        "D) A repülőgépet megállítja."
+       ],
+       "question": "Mi a felhajtóerő szerepe a repülőgépek repülésében?",
+       "explanation": "A felhajtóerő a repülőgépet felfelé emeli, lehetővé téve ezzel a repülést.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Csökkenti a közegellenállást.",
+        "B) Növeli a közegellenállást.",
+        "C) Nincs hatása a közegellenállásra.",
+        "D) Csak a felhajtóerőt növeli."
+       ],
+       "question": "Milyen hatással van az áramvonalas forma a repülőgépekre?",
+       "explanation": "Az áramvonalas forma csökkenti a közegellenállást, ami segíti a repülőgépet a hatékonyabb repülésben.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az az erő, amely a repülőgépet hátrafelé húzza.",
+        "B) Az az erő, amely a repülőgépet felfelé emeli.",
+        "C) Az az erő, amely a repülőgépet oldalra tereli.",
+        "D) Az az erő, amely a repülőgépet megállítja."
+       ],
+       "question": "Mi a közegellenállás a repülés során?",
+       "explanation": "A közegellenállás az az erő, amely a repülőgépet hátrafelé húzza, és amelyet a levegő mozgása okoz.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A szárny mérete, alakja és a levegő sebessége.",
+        "B) Csak a szárny alakja.",
+        "C) Csak a levegő hőmérséklete.",
+        "D) Csak a repülőgép súlya."
+       ],
+       "question": "Milyen tényezők befolyásolják a felhajtóerőt?",
+       "explanation": "A felhajtóerőt a szárny mérete, alakja és a levegő sebessége egyaránt befolyásolja.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A szárny alakja és a levegő sebessége.",
+        "B) A szárny súlya.",
+        "C) A levegő hőmérséklete.",
+        "D) A repülőgép sebessége."
+       ],
+       "question": "Milyen jelenség okozza a levegő nyomáscsökkenését a szárny fölött?",
+       "explanation": "A levegő nyomáscsökkenését a szárny alakja és a levegő sebessége okozza, ami lehetővé teszi a felhajtóerő kialakulását.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "02f8134f-5c1d-4295-a080-e92e346b9065",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A két test összetapad ütközés után.",
+      "B) A lendület megmaradása nem érvényes.",
+      "C) A mozgási energia megmarad.",
+      "D) Az ütközés során a testek sebessége nem változik."
+     ],
+     "question": "Mi jellemzi a rugalmatlan ütközéseket?",
+     "explanation": "A rugalmatlan ütközés során a testek összetapadnak, és a lendület megmarad, de a mozgási energia nem.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az ütköző testek tömegének és sebességének arányából.",
+      "B) A lendület megmaradásának törvénye segítségével.",
+      "C) A mozgási energia megmaradásával.",
+      "D) A súrlódási erő figyelembevételével."
+     ],
+     "question": "Hogyan számítható ki a közös sebesség rugalmatlan ütközés után?",
+     "explanation": "A közös sebesség a lendület megmaradásának törvénye alapján számítható ki.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Csökkenti a jármű súlyát.",
+      "B) Megakadályozza a balesetet.",
+      "C) Fokozza a lendületet.",
+      "D) Csökkenti a járműre ható erőket ütközéskor."
+     ],
+     "question": "Milyen szerepe van a gyűrődési zónának ütközéskor?",
+     "explanation": "A gyűrődési zóna célja, hogy csökkentse az ütközéskor a járműre ható erőket, ezzel védve az utasokat.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A labda súlyának mérésével.",
+      "B) A visszapattanás magasságának megfigyelésével.",
+      "C) A labda színének megfigyelésével.",
+      "D) A labda anyagának megvizsgálásával."
+     ],
+     "question": "Hogyan vizsgálhatjuk a labdák rugalmasságát?",
+     "explanation": "A labdák rugalmasságát a visszapattanás magasságának megfigyelésével tudjuk vizsgálni.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az autó sebessége és a fékezési idő.",
+      "B) Az autó színe.",
+      "C) A motor teljesítménye.",
+      "D) Az autó súlya."
+     ],
+     "question": "Mi határozza meg a fékút hosszát?",
+     "explanation": "A fékút hosszát az autó sebessége és a fékezési idő határozza meg.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az autóra ható gravitációs erővel.",
+      "B) A Newton törvényei és az autóra ható erők segítségével.",
+      "C) Az autó színével.",
+      "D) Az üzemanyag típusával."
+     ],
+     "question": "Miként magyarázható az autó gyorsulása?",
+     "explanation": "Az autó gyorsulása a Newton törvényei és az autóra ható erők segítségével magyarázható.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) A súrlódási erő csökkenése.",
+      "B) A jármű sebességének növekedése.",
+      "C) A kanyar ívének élessége.",
+      "D) Minden fent említett tényező."
+     ],
+     "question": "Mi okozhatja a kicsúszást kanyarodáskor?",
+     "explanation": "A kicsúszást kanyarodáskor a súrlódási erő csökkenése, a jármű sebességének növekedése és a kanyar ívének élessége is okozhatja.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Megakadályozza a test elsüllyedését.",
+      "B) Növeli a test súlyát.",
+      "C) Csökkenti a víz ellenállását.",
+      "D) Növeli a test gyorsulását."
+     ],
+     "question": "Mi a felhajtóerő szerepe a vízben való úszáskor?",
+     "explanation": "A felhajtóerő megakadályozza a test elsüllyedését, lehetővé téve az úszást.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

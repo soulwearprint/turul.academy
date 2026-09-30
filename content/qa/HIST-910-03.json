@@ -1,0 +1,482 @@
+{
+ "nat_id": "HIST-910-03",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 11,
+  "cards": 55,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "A 59ba4e7f [4] kérdés B) opciója toldalékos alakja miatt kiszűrhető volt."
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-910-03-001",
+   "lesson_id": "4b9009ce-0fe3-484b-9635-448392b9d8d3",
+   "block_id": "ac3b51f7-5652-4bfd-92e3-7b4bb95e3f91",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Justinianus „a bizánci császár, aki megpróbálta megállítani az arab terjeszkedést”",
+   "explanation": "I. Justinianus 565-ben meghalt, Mohamed pedig 570 körül született; az arab hódítások az 630-as években kezdődtek. Justinianus nem harcolt az arabok ellen. Ellene Hérakleiosz császár harcolt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Justinian_I",
+     "title": "Justinian I",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Heraclius",
+     "title": "Heraclius",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az iszlám alapítója.",
+      "B) A bizánci császár, aki megpróbálta megállítani az arab terjeszkedést.",
+      "C) A frankok királya.",
+      "D) A kalifa, aki irányította az arab birodalmat."
+     ],
+     "question": "Ki volt Justinianus, és milyen kapcsolatban áll az arab hódításokkal?",
+     "explanation": "Justinianus a bizánci császár volt, aki a hódítások idején próbálta megvédeni birodalmát az iszlám terjedésétől.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) I. Justinianus",
+      "B) Hérakleiosz",
+      "C) Nagy Konstantin",
+      "D) Nagy Károly"
+     ],
+     "question": "Melyik bizánci császár alatt kezdődtek az arab hódítások?",
+     "explanation": "Az arab hódítások az 630-as években, Hérakleiosz császár uralkodása alatt kezdődtek; Bizánc ekkor elvesztette Szíriát és Egyiptomot. Justinianus már 565-ben meghalt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-03-002",
+   "lesson_id": null,
+   "block_id": "59ba4e7f-e70a-4a53-aec9-a387e6cb848f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Nagy Károly „a Német-római Császárságot megalapította … a 9. században”",
+   "explanation": "Nagy Károlyt 800 karácsonyán koronázták császárrá; a Német-római Császárság kezdetét I. Ottó 962-es koronázásához kötik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Charlemagne",
+     "title": "Charlemagne",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Holy_Roman_Empire",
+     "title": "Holy Roman Empire",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A Bizánci Birodalom császára",
+      "B) A frankok királya, aki a Német-római Császárságot megalapította",
+      "C) A hunok vezetője",
+      "D) Mohamed utódja"
+     ],
+     "question": "Ki volt Nagy Károly?",
+     "explanation": "Nagy Károly a frankok királya volt, aki a 9. században a Német-római Császárságot megalapította.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A Bizánci Birodalom császára",
+      "B) A frankok királya, akit 800-ban császárrá koronáztak",
+      "C) A hunok vezetője",
+      "D) Mohamed utódja"
+     ],
+     "question": "Ki volt Nagy Károly?",
+     "explanation": "Nagy Károly a frankok királya volt, akit 800 karácsonyán Rómában császárrá koronáztak. A Német-római Császárság később, I. Ottó 962-es koronázásával jött létre.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-03-003",
+   "lesson_id": null,
+   "block_id": "59ba4e7f-e70a-4a53-aec9-a387e6cb848f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "B) „Medinába” – helyhatározós alak a többi alanyeseti válasz között",
+   "explanation": "Egységes alak kell (Medina); a toldalékos forma elárulja, hogy nem ez a helyes válasz.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Nyelvi/formai javítás, nem igényel forrást.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Mekka",
+      "B) Medinába",
+      "C) Konstantinápoly",
+      "D) Poitiers"
+     ],
+     "question": "Melyik város volt Mohamed szülőhelye?",
+     "explanation": "Mohamed Mekka városában született, amely az iszlám vallás szent helye.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Mekka",
+      "B) Medina",
+      "C) Konstantinápoly",
+      "D) Poitiers"
+     ],
+     "question": "Melyik város volt Mohamed szülőhelye?",
+     "explanation": "Mohamed Mekka városában született, amely az iszlám vallás szent helye.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-03-004",
+   "lesson_id": null,
+   "block_id": "59ba4e7f-e70a-4a53-aec9-a387e6cb848f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "„Mi volt a népvándorlás fő oka?” – kulcs: gazdasági válság és éghajlati változások",
+   "explanation": "A népvándorlás okai vitatottak (hun nyomás, népességnövekedés, a Római Birodalom vonzása és gyengülése, éghajlat). Az egyetlen „fő ok” nem ellenőrizhető; a tankönyvi válasz a hunok nyomása lenne.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Migration_Period",
+     "title": "Migration Period",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Gazdasági válság és éghajlati változások",
+      "B) Vallási ellentétek",
+      "C) Politikai hatalomvágy",
+      "D) Hódító szándékok"
+     ],
+     "question": "Mi volt a népvándorlás fő oka?",
+     "explanation": "A népvándorlás fő oka a gazdasági válság és az éghajlati változások voltak, amelyek új területek keresésére ösztönözték a népeket.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A hunoké",
+      "B) Az araboké",
+      "C) A frankoké",
+      "D) A vikingeké"
+     ],
+     "question": "Melyik nép támadása indította el a germán népek nagy vándorlását a 4. század végén?",
+     "explanation": "A hunok 375 körül legyőzték a keleti gótokat, és a nyomásuk elől menekülő germán népek átlépték a Római Birodalom határait.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-03-005",
+   "lesson_id": "4b9009ce-0fe3-484b-9635-448392b9d8d3",
+   "block_id": "ac3b51f7-5652-4bfd-92e3-7b4bb95e3f91",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Mohamed: „A) A Korán szerzője”",
+   "explanation": "Az iszlám tanítása szerint a Korán Isten kinyilatkoztatása, amelyet Mohamed közvetített; a „szerzője” megfogalmazás a hívők szemében hamis. Semleges forma: a Korán kinyilatkoztatását hirdető próféta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Quran",
+     "title": "Quran",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A Korán szerzője, aki a vallás alapelveit hirdette.",
+      "B) Az arab hódítások vezetője, aki a kalifátus létrehozta.",
+      "C) A bizánci császár, aki megpróbálta megállítani az iszlám terjedését.",
+      "D) A frankok királya, aki megvédte Európát az arab hódításoktól."
+     ],
+     "question": "Ki volt Mohamed, és mi a szerepe az iszlám vallás alapításában?",
+     "explanation": "Mohamed az iszlám vallás alapítója, aki a Korán tanításait hirdette, és 622-ben Medinába költözött.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az iszlám prófétája, aki a Korán tanításait hirdette.",
+      "B) Az arab hódítások vezetője, aki a kalifátus létrehozta.",
+      "C) A bizánci császár, aki megpróbálta megállítani az iszlám terjedését.",
+      "D) A frankok királya, aki megvédte Európát az arab hódításoktól."
+     ],
+     "question": "Ki volt Mohamed, és mi a szerepe az iszlám vallás alapításában?",
+     "explanation": "Mohamed az iszlám vallás alapítója, aki a Korán tanításait hirdette, és 622-ben Medinába költözött.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-03-006",
+   "lesson_id": "69c8568c-cd2f-4cbb-924d-66cada93e44d",
+   "block_id": "fb7a2004-38d3-4832-81ed-f83590e5188a",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "476 „lehetőséget adott a hunoknak … a terjeszkedésre”",
+   "explanation": "A Hun Birodalom Attila halála (453) után néhány éven belül felbomlott; 476-ban a hunok már nem voltak jelentős hatalom.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Huns",
+     "title": "Huns",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 476-ban",
+      "B) 410-ben",
+      "C) 500-ban",
+      "D) 330-ban"
+     ],
+     "question": "Mikor bukott meg a Nyugatrómai Birodalom?",
+     "explanation": "A Nyugatrómai Birodalom 476-ban bukott meg, ami a népvándorlás időszakának fontos mérföldköve volt, és lehetőséget adott a hunoknak és más népeknek a terjeszkedésre.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 476-ban",
+      "B) 410-ben",
+      "C) 500-ban",
+      "D) 330-ban"
+     ],
+     "question": "Mikor bukott meg a Nyugatrómai Birodalom?",
+     "explanation": "A Nyugatrómai Birodalom 476-ban bukott meg, ami a népvándorlás időszakának fontos mérföldköve volt, és lehetőséget adott a germán népeknek új királyságok alapítására.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-03-007",
+   "lesson_id": "69c8568c-cd2f-4cbb-924d-66cada93e44d",
+   "block_id": "fae3bbd9-e7aa-40ac-813b-c17f710f1c2d",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A hunok a Római Birodalom határain belül terjeszkedtek”; link_hu: a hunok nyomása „közvetlenül” vezetett a bukáshoz",
+   "explanation": "A hunok birodalma a római határokon kívül (a Kárpát-medencében és attól keletre) terült el; betöréseket vezettek, de nem terjeszkedtek a birodalmon belül. 476-ban a Hun Birodalom már nem létezett. „Romulus Augustust” helyesen Romulus Augustulust.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+     "title": "Fall of the Western Roman Empire",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "476-ban Odoaker, a germán hadvezér megdöntötte az utolsó nyugatrómai császárt, Romulus Augustust, ezzel véget vetett a Nyugatrómai Birodalomnak. Ez az esemény a népvándorlás időszakának egyik legfontosabb fordulópontja volt, melynek során különböző népek, köztük a hunok is, mozgásba lendültek. A hunok a Római Birodalom határain belül terjeszkedtek, és Attila vezetésével jelentős hatást gyakoroltak Európa politikai térképére.",
+     "type": "world",
+     "year": "476",
+     "heading": "A Nyugatrómai Birodalom bukása",
+     "link_hu": "A hunok nyugati terjeszkedése közvetlenül a Római Birodalom bukásához vezetett, mivel a hunok nyomása miatt a germán népek is megindultak a birodalom területei felé."
+    },
+    "after": {
+     "body": "476-ban Odoaker, a germán hadvezér megdöntötte az utolsó nyugatrómai császárt, Romulus Augustulust, ezzel véget vetett a Nyugatrómai Birodalomnak. Ez az esemény a népvándorlás időszakának egyik legfontosabb fordulópontja volt, melynek során különböző népek, köztük a hunok is, mozgásba lendültek. A hunok korábban, Attila vezetésével, a birodalom határain túlról jelentős hatást gyakoroltak Európa politikai térképére.",
+     "type": "world",
+     "year": "476",
+     "heading": "A Nyugatrómai Birodalom bukása",
+     "link_hu": "A hunok nyugati terjeszkedése hozzájárult a Nyugatrómai Birodalom meggyengüléséhez, mivel a hunok nyomása miatt a germán népek is megindultak a birodalom területei felé."
+    }
+   }
+  },
+  {
+   "id": "HIST-910-03-008",
+   "lesson_id": "69c8568c-cd2f-4cbb-924d-66cada93e44d",
+   "block_id": "3e4e2351-14bd-483f-8796-07503a05611e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A birodalom terjedelme kiterjedt a Kárpát-medencére és a Római Birodalom jelentős részeire.”",
+   "explanation": "A Hun Birodalom a Kárpát-medencétől a pontusi sztyeppéig terjedt, de római területeket tartósan nem foglalt el; Attila hadjáratai betörések voltak. Nyelvi: „a 5.” → „az 5.”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Attila",
+     "title": "Attila",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Hun Birodalom a 5. században jött létre, amikor Attila vezetésével a hunok egyesítették erőiket. A birodalom terjedelme kiterjedt a Kárpát-medencére és a Római Birodalom jelentős részeire. Attila uralkodása alatt a hunok félelmetes hatalommá váltak, és Róma is tartott tőlük. A Hun Birodalom jelentős hatással volt a korabeli európai politikai térképre.",
+     "type": "text",
+     "heading": "A Hun Birodalom",
+     "key_term": "Hun Birodalom"
+    },
+    "after": {
+     "body": "A Hun Birodalom az 5. században jött létre, amikor Attila vezetésével a hunok egyesítették erőiket. A birodalom terjedelme kiterjedt a Kárpát-medencére és a keleti sztyeppék nagy részére, és hadjáratai a Római Birodalom területeit is sújtották. Attila uralkodása alatt a hunok félelmetes hatalommá váltak, és Róma is tartott tőlük. A Hun Birodalom jelentős hatással volt a korabeli európai politikai térképre.",
+     "type": "text",
+     "heading": "A Hun Birodalom",
+     "key_term": "Hun Birodalom"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-03-009",
+   "lesson_id": "4b9009ce-0fe3-484b-9635-448392b9d8d3",
+   "block_id": "69754143-782c-4d54-b445-647fe59a7973",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Poitiers „megakadályozta, hogy az iszlám befolyása elérje Nyugat-Európát”",
+   "explanation": "Az Ibériai-félsziget nagy része 711-től muszlim uralom alatt állt, tehát az iszlám már elérte Nyugat-Európát. Poitiers az arabok Pireneusokon túli előrenyomulását állította meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Tours",
+     "title": "Battle of Tours",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "732-ben zajlott le a poitiers-i csata, ahol a frankok vezetésével Martell Károly megállította az arab hódítók előrenyomulását. Ez a csata kulcsfontosságú volt, mivel megakadályozta, hogy az iszlám befolyása elérje Nyugat-Európát. A frankok győzelme nemcsak a vallási, hanem a politikai hatalmat is megvédte, és hozzájárult a Frank Birodalom megerősödéséhez. A poitiers-i csata következményeként a keresztény Európa és az iszlám világ közötti határvonalak megmerevedtek.",
+     "type": "text",
+     "heading": "Az arab hódítás feltartóztatása Európában: Poitiers",
+     "key_term": "Poitiers, Nagy Károly"
+    },
+    "after": {
+     "body": "732-ben zajlott le a poitiers-i csata, ahol a frankok vezetésével Martell Károly megállította az arab hódítók előrenyomulását. Ez a csata kulcsfontosságú volt, mivel megállította az arabok előrenyomulását a Pireneusoktól északra (az Ibériai-félsziget nagy része 711 óta muszlim uralom alatt állt). A frankok győzelme nemcsak a vallási, hanem a politikai hatalmat is megvédte, és hozzájárult a Frank Birodalom megerősödéséhez. A poitiers-i csata következményeként a keresztény Európa és az iszlám világ közötti határvonalak megmerevedtek.",
+     "type": "text",
+     "heading": "Az arab hódítás feltartóztatása Európában: Poitiers",
+     "key_term": "Poitiers, Nagy Károly"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-03-010",
+   "lesson_id": "4b9009ce-0fe3-484b-9635-448392b9d8d3",
+   "block_id": "69754143-782c-4d54-b445-647fe59a7973",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "A német-római császárság vezetői „igyekeztek fenntartani a vallási és politikai egyensúlyt a két világ között”",
+   "explanation": "Ellenőrizhető tartalom nélküli töltelékmondat; I. Ottó fő ellenfelei a kalandozó magyarok és a szlávok voltak (Lech-mező, 955), nem az iszlám világ.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Otto_I,_Holy_Roman_Emperor",
+     "title": "Otto I, Holy Roman Emperor",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "I. Ottó uralkodása alatt, a 10. században, a Német-római Császárság kialakulása és megerősödése figyelhető meg. Az iszlám világ és a keresztény Európa közötti kapcsolatokat a kereskedelem és a kultúra határozta meg. A német-római császárság vezetői igyekeztek fenntartani a vallási és politikai egyensúlyt a két világ között. Az iszlám hatása érezhető volt a tudományokban és a művészetekben is, amely hozzájárult a keresztény kultúra fejlődéséhez.",
+     "type": "text",
+     "heading": "Az iszlám és a német-római császárság kapcsolata",
+     "key_term": "I. Ottó, Német-római Császárság"
+    },
+    "after": {
+     "body": "I. Ottó uralkodása alatt, a 10. században, a Német-római Császárság kialakulása és megerősödése figyelhető meg. Az iszlám világ és a keresztény Európa közötti kapcsolatokat a kereskedelem és a kultúra határozta meg. I. Ottó 955-ben a Lech-mezőnél legyőzte a kalandozó magyarokat, 962-ben pedig császárrá koronázták. Az iszlám hatása érezhető volt a tudományokban és a művészetekben is, amely hozzájárult a keresztény kultúra fejlődéséhez.",
+     "type": "text",
+     "heading": "Az iszlám és a német-római császárság kapcsolata",
+     "key_term": "I. Ottó, Német-római Császárság"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-910-03-001": "b7dc9fbc-f73c-46d7-a0ee-77e8e1104e04",
+  "HIST-910-03-002": "5dc94c88-e7f6-4e54-b759-bbb0d5d341f9",
+  "HIST-910-03-003": "debfc0b5-2285-4472-a658-7f8c304301cc",
+  "HIST-910-03-005": "1bc77abe-5841-44dc-89ba-430bf193107a",
+  "HIST-910-03-006": "d2cd7187-6cee-49bf-adf3-0449385a2d55",
+  "HIST-910-03-007": "73036916-cc7b-49c7-b4e5-ba95b7ad1e53",
+  "HIST-910-03-008": "d44b654a-c6ba-4333-8bf8-c10fd1fe9257",
+  "HIST-910-03-009": "90f252c8-e263-49d6-90e6-bbeb77735a3d"
+ }
+}

@@ -1,0 +1,930 @@
+{
+ "nat_id": "PHYS-78-09",
+ "topic_id": "1adb52b6-c5ae-44a7-8da3-fac56e3143fb",
+ "title_hu": "Környezetünk globális problémái",
+ "grade": 8,
+ "lessons": [
+  {
+   "lesson_id": "1721238b-1402-409f-b5dc-83e651971258",
+   "title_hu": "Az ózonpajzs és az éghajlatváltozás",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "37143c9d-3ca5-4320-99f7-76afe8261128",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az ózonpajzs (ózonréteg) a Föld légkörének felső részén található, és védelmet nyújt a Földet érő ultraibolya (UV) sugárzás ellen. Ez a réteg megakadályozza, hogy a káros UV-sugárzás elérje a Föld felszínét, amely különösen fontos az élőlények, köztük az emberek egészsége szempontjából. Ha az ózonpajzs elvékonyodik, a UV-sugárzás szintje megnő, ami bőrbetegségekhez, szürkehályoghoz és egyéb egészségügyi problémákhoz vezethet. A napfény alatt töltött idő, például a strandon, fontos, hogy figyeljünk a napvédelemre, hiszen a megnövekedett UV-sugárzás hatásait nap mint nap tapasztalhatjuk.",
+       "type": "text",
+       "heading": "Az ózonpajzs szerepe",
+       "key_term": "ózonpajzs"
+      },
+      {
+       "body": "Az ózonpajzs elvékonyodása közvetlen hatással van a Föld éghajlatára és az élővilágra. A megnövekedett UV-sugárzás nemcsak az emberi egészséget veszélyezteti, hanem a növények növekedését és a planktonok életciklusát is befolyásolja, ami a tengeri ökoszisztémákra is hatással van. A tengerfenék élővilágának változása a halászati ipart is érintheti, hiszen a halak és egyéb tengeri élőlények száma csökkenhet. A fiatalok számára ez azt jelenti, hogy a kedvenc tengerparti nyaralásaink is megváltozhatnak, ha nem figyelünk a környezetvédelmi intézkedésekre.",
+       "type": "text",
+       "heading": "Az ózonpajzs elvékonyodásának hatása",
+       "key_term": "ózonpajzs elvékonyodás"
+      },
+      {
+       "body": "Az ózonpajzs védelme érdekében számos intézkedést hoztak világszerte, mint például a Montreal-i Jegyzőkönyv, amely a klórfluor-szenet (CFC) tartalmazó anyagok használatának csökkentését célozta. Ezek az anyagok a hűtőberendezésekben és aeroszolokban találhatók, és jelentős mértékben hozzájárultak az ózonréteg elvékonyodásához. A fiatalok is hozzájárulhatnak a védelemhez, ha tudatosan választanak termékeket, és elkerülik azokat, amelyek káros anyagokat tartalmaznak. Az otthoni hűtők és légkondicionálók energiatakarékos használata is segíthet az ózonpajzs megóvásában.",
+       "type": "text",
+       "heading": "Intézkedések az ózonpajzs védelmében",
+       "key_term": "ózonpajzs védelme"
+      },
+      {
+       "body": "Az éghajlatváltozás (klímaváltozás) fő okai közé tartozik az üvegházhatású gázok, mint a szén-dioxid (CO2) és a metán (CH4) kibocsátása. Ezek a gázok a fosszilis tüzelőanyagok égetéséből, például az autók üzemanyagából származnak. A fiatalok számára is ismerős lehet, hogy a közlekedésünk, például az elektromos autók használata, jelentősen csökkentheti a szén-dioxid-kibocsátást. Az éghajlatváltozás következményei közé tartozik a szélsőséges időjárás, mint a hőhullámok és a heves esőzések, amelyek mindennapi életünket befolyásolják.",
+       "type": "text",
+       "heading": "Éghajlatváltozás okai",
+       "key_term": "éghajlatváltozás"
+      },
+      {
+       "body": "Az éghajlatváltozás következményei széleskörűek és sokrétűek. A globális felmelegedés miatt a jégsapkák olvadása és a tengerszint emelkedése várható. A tengerszint emelkedése miatt sok tengerparti város, például Velence vagy New Orleans, veszélybe kerülhet. Az éghajlatváltozás hatásai a mezőgazdaságra is kiterjednek, hiszen a növénytermesztéshez szükséges időjárási viszonyok megváltozhatnak. A fiatalok számára ez azt jelenti, hogy a kedvenc ételeik, például a gyümölcsök és zöldségek ára is emelkedhet.",
+       "type": "text",
+       "heading": "Az éghajlatváltozás következményei",
+       "key_term": "tengerszint emelkedés"
+      },
+      {
+       "body": "A tengerszint emelkedésének fő fizikai oka a globális felmelegedés, amely a jégsapkák olvadásához és a tengervíz hőmérsékletének növekedéséhez vezet. A meleg víz térfogata megnő, így a tengerszint is emelkedik. A fiatalok számára hasznos lehet, ha megfigyelik, hogy a tengerparti kirándulások során a vízszint mennyire változik. A tengerszint emelkedése nemcsak a természetes élőhelyeket veszélyezteti, hanem a városi infrastruktúrákra is hatással van, például a kikötők és a part menti épületek biztonságára.",
+       "type": "text",
+       "heading": "A tengerszint emelkedésének fizikai okai",
+       "key_term": "tengerszint emelkedés okai"
+      }
+     ]
+    },
+    {
+     "block_id": "1f1e5a35-a7a6-4128-9f88-047172509c46",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy átlagos nyári napon a napfény erősen süt. A Föld légkörébe érkezve a napsugarak egy része az ózonpajzson (ózonrétegen) ütközik, amely megvédi a Földet az ultraibolya (UV) sugárzás káros hatásaitól. Az ózonpajzs elvékonyodása miatt a napfény egyre több UV-sugarat juttat el a felszínre.",
+       "type": "story",
+       "heading": "A napfény érkezése"
+      },
+      {
+       "body": "A megnövekedett UV-sugárzás hatására a bőrön egyre több napégés és bőrbetegség jelentkezik. A növények is érzékelik a változást: a túlzott UV-sugárzás gátolja a fotoszintézist, ami a növények növekedésére és a táplálékláncra is hatással van. Emellett a tengerek és óceánok élővilágának, például a planktonoknak is a túlzott UV-sugárzás árt.",
+       "type": "story",
+       "heading": "Az UV-sugárzás hatása"
+      },
+      {
+       "body": "A Föld hőmérséklete emelkedik, amelyet a környezetszennyezés és az üvegházhatású gázok, mint a szén-dioxid (CO₂) és a metán (CH₄) kibocsátása okoz. Az emberi tevékenység, például az ipari termelés és a fosszilis tüzelőanyagok égetése hozzájárul a globális éghajlatváltozás (klímaváltozás) fokozódásához.",
+       "type": "story",
+       "heading": "A klímaváltozás megjelenése"
+      },
+      {
+       "body": "A globális felmelegedés következtében a jégsapkák olvadni kezdenek, és a tengerek hőmérséklete is emelkedik. Ez a tengerszint emelkedéséhez vezet, ami már most is számos part menti települést veszélyeztet. A tengerszint emelkedésének fizikai okai tehát a jégolvadás és a víz hőtágulása.",
+       "type": "story",
+       "heading": "A tengerszint emelkedése"
+      },
+      {
+       "body": "A világ vezetői és tudósai különböző intézkedéseket hoznak az ózonpajzs védelme érdekében, mint például a káros anyagok kibocsátásának csökkentése. A megújuló energiaforrások, mint a nap- és szélenergia, egyre nagyobb szerepet kapnak, hogy csökkentsék a fosszilis tüzelőanyagok használatát és ezzel a klímaváltozás hatásait.",
+       "type": "story",
+       "heading": "Intézkedések a jövőért"
+      }
+     ]
+    },
+    {
+     "block_id": "8d660d01-9874-4261-823a-900d6d6b1dcf",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az ózonpajzs elvékonyodása és az UV-sugárzás hatásai",
+       "heading": "Ózonpajzs elvékonyodásának hatása",
+       "description": "A diagram bemutatja az ózonpajzs rétegeit és az elvékonyodás következményeit, kiemelve az ultraibolya sugárzás növekedését.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Ultraibolya sugárzás szintje és ózonpajzs állapota",
+       "heading": "Ultraibolya sugárzás erősödése",
+       "description": "A grafikon ábrázolja az ultraibolya sugárzás szintjének változását az utóbbi évtizedekben, párhuzamot vonva az ózonpajzs állapotával.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Nemzetközi intézkedések az ózonpajzs védelmében",
+       "heading": "Ózonpajzs védelmében hozott intézkedések",
+       "description": "A vázlat bemutatja a különböző nemzetközi egyezményeket, mint például a Montreali Jegyzőkönyvet, amelyek célja az ózonpajzs védelme.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Az éghajlatváltozás okai",
+       "heading": "Éghajlatváltozás okai",
+       "description": "A diagram bemutatja az éghajlatváltozás fő okait, mint a szén-dioxid-kibocsátás, erdőirtás és ipari tevékenységek.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Globális hőmérséklet-emelkedés és szélsőséges időjárás",
+       "heading": "Éghajlatváltozás következményei",
+       "description": "A grafikon illusztrálja a globális hőmérséklet-emelkedést és a szélsőséges időjárási események gyakoriságát az évek során.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A tengerszint emelkedésének fizikai okai",
+       "heading": "Tengerszint emelkedésének fizikai okai",
+       "description": "A keresztmetszet bemutatja a tengerszint emelkedésének okait, beleértve a jégolvadást és a hőmérséklet-emelkedés hatását a víz térfogatára.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Sötét és világos felületek fényelnyelése",
+       "heading": "Fényelnyelési tulajdonságok",
+       "description": "A kísérleti ábra bemutatja a sötét és világos felületek fényelnyelési tulajdonságait, kísérlet során végzett mérésekkel.",
+       "visual_type": "kísérleti ábra"
+      },
+      {
+       "type": "visual",
+       "caption": "Globális éghajlatváltozás bizonyítékai",
+       "heading": "Globális éghajlatváltozás bizonyítékai",
+       "description": "A diagram összegzi a globális éghajlatváltozás bizonyítékait, beleértve a hőmérsékleti adatokat, a jégmennyiség csökkenését és a növényzet változásait.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "3f0dbc84-f341-48eb-9947-952c97d7f50f",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Az ózonpajzs védelme és az éghajlatváltozás hatásai mindennapi életünkre is kihatnak, például a napvédő krémek használatakor vagy a klímaváltozás következményeinek megértésében.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Ózonpajzs és éghajlatváltozás",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "1c6bcda2-a8d1-4444-8735-08109747d210",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Növekvő ultraibolya sugárzás a Föld felszínén",
+        "B) Csökkenő hőmérséklet a Földön",
+        "C) Megnövekedett oxigénszint a légkörben",
+        "D) Csökkenő tengeri szint"
+       ],
+       "question": "Mi a következménye az ózonpajzs elvékonyodásának?",
+       "explanation": "Az ózonpajzs elvékonyodása miatt több ultraibolya sugárzás éri a Földet, ami káros hatással van az élőlényekre.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az ózonlebontó anyagok használatának tilalma",
+        "B) Az üvegházhatású gázok növelése",
+        "C) A fosszilis tüzelőanyagok használatának ösztönzése",
+        "D) A légszennyezés fokozása"
+       ],
+       "question": "Milyen intézkedéseket hoztak az ózonpajzs védelmében?",
+       "explanation": "Az ózonpajzs védelme érdekében az ózonlebontó anyagok, mint például a klórfluor-karbonok használatát betiltották.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Emberi tevékenység, mint a fosszilis tüzelőanyagok égetése",
+        "B) Természetes vulkáni tevékenység",
+        "C) A Föld távolságának változása a Naptól",
+        "D) Csak a napfoltok aktivitása"
+       ],
+       "question": "Mik az éghajlatváltozás fő okai?",
+       "explanation": "Az éghajlatváltozás fő okai közé tartozik az emberi tevékenység, különösen a fosszilis tüzelőanyagok égetése, ami üvegházhatású gázok kibocsátásához vezet.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Hőmérséklet és szén-dioxid koncentráció",
+        "B) Fényerősség és hangnyomás",
+        "C) Vízszint és légnyomás",
+        "D) Szélsebesség és levegő páratartalom"
+       ],
+       "question": "Milyen fizikai mennyiségek utalnak az éghajlatváltozásra?",
+       "explanation": "A hőmérséklet emelkedése és a szén-dioxid koncentráció növekedése egyértelműen jelzi az éghajlatváltozást.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A gleccserek olvadása és a víz hőmérsékletének emelkedése",
+        "B) A Föld forgásának lelassulása",
+        "C) A légkör nyomásának csökkenése",
+        "D) A földfelszín süllyedése"
+       ],
+       "question": "Mi okozza a tengerszint emelkedését?",
+       "explanation": "A tengerszint emelkedése a gleccserek olvadásának és a víz hőmérsékletének emelkedésének következménye.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "a6fa16e6-c44b-42e3-b49e-34dbfa03ebe4",
+   "title_hu": "Az üvegházhatás és az emberi tevékenység hatásai",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "2ee46848-40a5-4907-9cdb-e9264c8cf6bc",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az üvegházhatás (üvegházhatás) egy természetes jelenség, amely során a Föld légkörében lévő gázok, például szén-dioxid (CO2) és metán (CH4), megakadályozzák, hogy a Föld által kibocsátott hő teljes mértékben visszajusson az űrbe. Ez a hatás melegen tartja a bolygót, lehetővé téve az életet. Azonban az emberi tevékenység, mint például a fosszilis tüzelőanyagok elégetése, fokozza ezt a jelenséget, ami globális felmelegedéshez vezet.",
+       "type": "text",
+       "heading": "Mi az üvegházhatás?",
+       "key_term": "üvegházhatás"
+      },
+      {
+       "body": "A fosszilis tüzelőanyagok, mint a szén, olaj és földgáz, a világ energiaigényének jelentős részét fedezik. Amikor ezeket elégetjük, hatalmas mennyiségű szén-dioxid (CO2) kerül a légkörbe. Gondoljunk csak a napi ingázásunkra: ha autóval járunk iskolába, azzal hozzájárulunk a légszennyezéshez és az üvegházhatás fokozódásához. Az elektromos autók használata azonban csökkentheti ezt a hatást, hiszen ezek kevesebb szennyezőanyagot bocsátanak ki.",
+       "type": "text",
+       "heading": "A fosszilis tüzelőanyagok szerepe",
+       "key_term": "fosszilis tüzelőanyagok"
+      },
+      {
+       "body": "Az ökológiai lábnyom (ökológiai lábnyom) egy mérőszám, amely megmutatja, hogy egyénileg vagy közösségileg mennyi természeti erőforrást használunk fel. Például, ha sok műanyagot használunk, vagy gyakran repülünk, az növeli a lábnyomunkat. A fenntarthatóság érdekében fontos, hogy csökkentsük ezt a lábnyomot, például kevesebb húst fogyasztva vagy tömegközlekedéssel járva.",
+       "type": "text",
+       "heading": "Ökológiai lábnyom",
+       "key_term": "ökológiai lábnyom"
+      },
+      {
+       "body": "Sok egyszerű lépést tehetünk az ökológiai lábnyomunk csökkentésére. Például, ha kevesebb műanyagot használunk, mint a műanyag palackok elkerülése vagy a vászontáska használata, máris csökkentjük a környezeti terhelést. Emellett a helyi élelmiszerek vásárlása is segít, hiszen így kevesebb szállítási költséggel járó szén-dioxid-kibocsátás történik.",
+       "type": "text",
+       "heading": "Hogyan csökkenthetjük ökológiai lábnyomunkat?",
+       "key_term": "ökológiai lábnyom"
+      },
+      {
+       "body": "Az üvegházhatás megfigyelésére jó példa egy üvegház. Az üvegházban a napfény bejut, de a hő nem tud könnyen távozni. Ezért a növények gyorsabban nőnek benne. Hasonló jelenséget tapasztalhatunk egy napon álló autóban is: a napfény felmelegíti az autót, és a belső hőmérséklet sokkal magasabb lesz, mint a külső levegő hőmérséklete. Ez a hatás jól illusztrálja, hogy a légkörünkben lévő üvegházhatású gázok hogyan tartják meg a hőt.",
+       "type": "text",
+       "heading": "Üvegházhatás megfigyelése",
+       "key_term": "üvegházhatás"
+      },
+      {
+       "body": "A megújuló energiaforrások, mint a napenergia és a szélenergia, kulcsszerepet játszanak az üvegházhatás csökkentésében. Például a napelemek otthonunk tetején képesek napenergiát elektromos árammá alakítani, így csökkentve a fosszilis tüzelőanyagok iránti igényt. A szélerőművek pedig a szél erejét hasznosítják, így tiszta, környezetbarát energiát termelnek.",
+       "type": "text",
+       "heading": "Fenntartható energiaforrások",
+       "key_term": "megújuló energiaforrások"
+      }
+     ]
+    },
+    {
+     "block_id": "d2ddac75-4113-4fe2-b2f3-f24730b92a3b",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal ember reggel felkapcsolja a villanyt, hogy világosságot varázsoljon a szobájába. A villanykörte működéséhez szükséges áramot a helyi erőmű termeli, amely fosszilis tüzelőanyagokat, például szenet és földgázt éget el.",
+       "type": "story",
+       "heading": "A napi rutin kezdete"
+      },
+      {
+       "body": "A tüzelőanyagok elégetése során szén-dioxid (CO₂) és más üvegházhatású gázok keletkeznek. Ezek a gázok a légkörbe kerülnek, ahol megakadályozzák a Földről visszaverődő hő egy részének távozását, így fokozva az üvegházhatást.",
+       "type": "story",
+       "heading": "A fosszilis tüzelőanyagok égetése"
+      },
+      {
+       "body": "A fokozódó üvegházhatás miatt a Föld átlaghőmérséklete emelkedik. Ez a jelenség szélsőséges időjárási eseményeket, például hőhullámokat és intenzív esőzéseket okoz, amelyek hatással vannak a környezetünkre és az ökoszisztémákra.",
+       "type": "story",
+       "heading": "Az üvegházhatás következményei"
+      },
+      {
+       "body": "Az emberi tevékenységek, mint a fosszilis tüzelőanyagok használata, hozzájárulnak az ökológiai lábnyomunk növekedéséhez. Ez a fogalom azt méri, hogy mennyi természeti erőforrást használunk fel az életmódunk fenntartásához, és mennyi szén-dioxidot bocsátunk ki.",
+       "type": "story",
+       "heading": "Az ökológiai lábnyom"
+      },
+      {
+       "body": "A fiatal ember elhatározza, hogy csökkenti az ökológiai lábnyomát. Elektromos autót választ, amely kevesebb káros anyagot bocsát ki, és napelemeket telepít a házára, hogy saját energiaforrást biztosítson, csökkentve ezzel a fosszilis tüzelőanyagok iránti igényt.",
+       "type": "story",
+       "heading": "A lábnyom csökkentése"
+      }
+     ]
+    },
+    {
+     "block_id": "7a8ab7d3-bfee-4077-8682-7a5bcfbf97f9",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az üvegházhatás folyamata",
+       "heading": "Üvegházhatás folyamata",
+       "description": "A diagram bemutatja, hogyan működik az üvegházhatás. A napfény a Földre érkezik, egy része visszaverődik, míg a többi hővé alakul és a légkörbe kerül. Az üvegházhatás gázai (pl. CO2, CH4) csapdába ejtik ezt a hőt, így melegen tartják a bolygót.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Tüzelőanyagok és CO2-kibocsátás",
+       "heading": "Tüzelőanyagok elégetése",
+       "description": "A grafikon ábrázolja a különböző tüzelőanyagok elégetésének CO2-kibocsátását. A fosszilis tüzelőanyagok (szén, olaj, földgáz) jelentős mértékben hozzájárulnak az üvegházhatás kialakulásához.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az ökológiai lábnyom összetevői",
+       "heading": "Ökológiai lábnyom",
+       "description": "A vázlat bemutatja az ökológiai lábnyom fogalmát, amely a természetes erőforrások felhasználását és a környezeti terhelést szemlélteti. A lábnyom különböző részei: energiafelhasználás, vízfogyasztás, élelmiszer-fogyasztás.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Üvegház hőmérséklet-eloszlása",
+       "heading": "Üvegház megfigyelése",
+       "description": "A keresztmetszet bemutat egy üvegházat, amelyben a napfény bejut, de a hő nem tud távozni. A diagramon látható, hogy az üvegházban a hőmérséklet magasabb, mint a külső környezetben.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Napon álló autó hőmérséklet-emelkedése",
+       "heading": "Napon álló autó hőmérséklete",
+       "description": "A grafikon bemutatja, hogy egy napon álló autó belső hőmérséklete hogyan emelkedik a külső hőmérséklethez képest. Ez a jelenség jól szemlélteti az üvegházhatás hatását zárt térben.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Ökológiai lábnyom csökkentése",
+       "heading": "Ökológiai lábnyom csökkentése",
+       "description": "A diagram bemutatja azokat a tevékenységeket, amelyek segíthetnek az ökológiai lábnyom csökkentésében, mint például a kerékpározás, a szelektív hulladékgyűjtés és a megújuló energia használata.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "bb68ffdf-b594-45e6-a718-3268cdb2834b",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Az üvegházhatást a modern technológiákban, mint például a napelemek és az energiatakarékos épületek tervezésében figyelembe kell venni, hogy csökkentsük a globális felmelegedést.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 100,
+          "w": 300,
+          "x": 50,
+          "y": 150,
+          "type": "box"
+         },
+         {
+          "x": 75,
+          "y": 170,
+          "text": "Üvegház",
+          "type": "label"
+         },
+         {
+          "r": 20,
+          "x": 100,
+          "y": 120,
+          "type": "circle"
+         },
+         {
+          "x": 95,
+          "y": 115,
+          "text": "Nap",
+          "type": "label"
+         },
+         {
+          "r": 20,
+          "x": 250,
+          "y": 120,
+          "type": "circle"
+         },
+         {
+          "x": 245,
+          "y": 115,
+          "text": "Föld",
+          "type": "label"
+         },
+         {
+          "x1": 100,
+          "x2": 100,
+          "y1": 140,
+          "y2": 150,
+          "type": "arrow"
+         },
+         {
+          "x": 105,
+          "y": 155,
+          "text": "Hő",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Üvegházhatás megfigyelése",
+       "discovery": "A 19. század közepén John Tyndall brit tudós felfedezte, hogy bizonyos gázok, mint a szén-dioxid és a vízgőz, képesek elnyelni a hőt. Ezzel hozzájárult a modern üvegházhatás megértéséhez, amely a globális felmelegedés egyik fő tényezője.",
+       "try_basic": "Készíts egy egyszerű üvegházat egy átlátszó műanyag palackból, és figyeld meg, hogyan melegszik fel a benne lévő levegő, ha napfény éri.",
+       "try_advanced": "Készíts kísérletet, ahol különböző gázokat (pl. szén-dioxid, nitrogén) tartalmazó üvegburák alatt mérheted a hőmérsékletváltozást, és hasonlítsd össze az eredményeket."
+      }
+     ]
+    },
+    {
+     "block_id": "5cea52b5-45d3-42f2-892d-003ad6da9251",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A fosszilis tüzelőanyagok elégetése",
+        "B) Az erdők növekedése",
+        "C) A napfény erősebb sugárzása",
+        "D) A víz párolgása"
+       ],
+       "question": "Mi a fő oka az üvegházhatás fokozódásának?",
+       "explanation": "A fosszilis tüzelőanyagok elégetése során szén-dioxid és más üvegházhatású gázok kerülnek a légkörbe, amelyek fokozzák az üvegházhatást.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az emberi tevékenységek által igényelt természeti erőforrások mennyisége",
+        "B) Az állatok élőhelyének mérete",
+        "C) A levegőszennyezés mértéke",
+        "D) A vízfelhasználás mértéke"
+       ],
+       "question": "Mi jellemzi az ökológiai lábnyom fogalmát?",
+       "explanation": "Az ökológiai lábnyom az emberi tevékenységek által felhasznált természeti erőforrások mennyiségét jelenti, amely tükrözi az ökológiai hatást.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Csökkenti a globális hőmérsékletet",
+        "B) Növeli a globális hőmérsékletet",
+        "C) Stabilizálja a klímát",
+        "D) Nincs hatása a klímára"
+       ],
+       "question": "Milyen hatással van az üvegházhatás a Föld klímájára?",
+       "explanation": "Az üvegházhatás növeli a globális hőmérsékletet, mivel a légkörben lévő üvegházhatású gázok megakadályozzák a hő elnyelődését.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Szén-dioxid (CO2)",
+        "B) Metán (CH4)",
+        "C) Nitrogén (N2)",
+        "D) Vízgőz (H2O)"
+       ],
+       "question": "Melyik gáz nem tartozik az üvegházhatású gázok közé?",
+       "explanation": "A nitrogén (N2) nem üvegházhatású gáz, míg a szén-dioxid, metán és vízgőz mind hozzájárul az üvegházhatáshoz.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Fenntartható mezőgazdaság",
+        "B) Fosszilis tüzelőanyagok használata",
+        "C) Újrahasznosítás",
+        "D) Megújuló energiaforrások alkalmazása"
+       ],
+       "question": "Milyen tevékenység növeli leginkább az ökológiai lábnyomot?",
+       "explanation": "A fosszilis tüzelőanyagok használata jelentősen növeli az ökológiai lábnyomot, mivel nagy mennyiségű szén-dioxidot és más szennyező anyagokat bocsát ki.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "fc9bc26d-9e63-438b-b26c-3b16966dc508",
+   "title_hu": "Környezeti szennyezések és innovatív megoldások",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "9d7cb434-22a0-4e65-84eb-f846f0c8f867",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A fényszennyezés olyan mesterséges fényforrásokból származó fény, amely zavarja a természetes világítást. Ha este sétálunk a városban, észlelhetjük, hogy a csillagok fénye alig látható a városi fényáradat miatt. Ez nemcsak a csillagászatot nehezíti meg, hanem hatással van az élőlények biológiai ritmusára is. A fényszennyezés csökkentésére innovatív megoldásként használhatunk energiatakarékos LED-lámpákat, amelyek irányított fényt bocsátanak ki, így kevesebb fény szóródik szét a környezetben.",
+       "type": "text",
+       "heading": "Fényszennyezés megfigyelése",
+       "key_term": "fényszennyezés"
+      },
+      {
+       "body": "A zajszennyezés a környezetünkben lévő zavaró hangok összessége, amely stresszt és egészségügyi problémákat okozhat. Gondoljunk csak a forgalmas utcákra, ahol a járművek zaja folyamatosan hallható. A fiatalok gyakran hallgatnak zenét fülhallgatón keresztül, de ha a zajszint túl magas, az károsíthatja a hallásukat. A zajszennyezés csökkentésére alkalmazhatunk hangszigetelő anyagokat, mint például speciális ablakokat, amelyek blokkolják a külső zajokat, így otthonunkban nyugodtabb környezetet teremthetünk.",
+       "type": "text",
+       "heading": "A zajszennyezés fogalma",
+       "key_term": "zajszennyezés"
+      },
+      {
+       "body": "A porszűrők olyan eszközök, amelyek a levegőben található szennyeződéseket, porokat és allergéneket eltávolítják. Képzeljük el, hogy egy modern porszívó HEPA szűrővel rendelkezik, amely képes akár 99,97%-os hatékonysággal megszűrni a levegőben lévő részecskéket. Ez különösen fontos lehet asztmások vagy allergiások számára, akiknek a tiszta levegő elengedhetetlen. Az innovatív porszűrők nemcsak az otthoni levegő minőségét javítják, hanem energiatakarékos működésükkel is hozzájárulnak a környezet védelméhez.",
+       "type": "text",
+       "heading": "Innovatív porszűrők működési elve",
+       "key_term": "porszűrők"
+      },
+      {
+       "body": "A hangszigetelés olyan technológia, amely csökkenti a zaj áthatolását egyik helyiségből a másikba. Ma már sok lakásban találkozhatunk hangszigetelt falakkal és ajtókkal, amelyek segítenek megakadályozni, hogy a külső zajok zavarják a nyugalmunkat. Például egy jól hangszigetelt otthonban a szomszédok zaját alig hallani, így a tanulás és pihenés is könnyebbé válik. Ezen kívül a hangszigetelő anyagok használata segít csökkenteni a közlekedési zajokat is, ami javítja a városi életminőséget.",
+       "type": "text",
+       "heading": "Hangszigetelés a zajszennyezés csökkentésére",
+       "key_term": "hangszigetelés"
+      },
+      {
+       "body": "Az energiatakarékos eszközök, mint például az A+ vagy A++ energiaosztályú háztartási készülékek, jelentősen csökkenthetik az energiafogyasztást. Gondoljunk csak a modern LED-izzókra, amelyek sokkal kevesebb energiát használnak, mint a hagyományos izzók. Ezek az eszközök nemcsak a villanyszámlánkat csökkentik, hanem a környezetünket is védik, hiszen kevesebb energiafelhasználással járnak. Az energiatakarékos megoldások alkalmazása mindannyiunk felelőssége, hogy fenntarthatóbb jövőt építsünk.",
+       "type": "text",
+       "heading": "Energiatakarékos eszközök használata",
+       "key_term": "energiatakarékos eszközök"
+      },
+      {
+       "body": "A levegőszennyezők távolsági mérése lehetővé teszi a szennyezett területek azonosítását és a forgalomkorlátozások elrendelését. Például, ha egy városban a légszennyezettség meghaladja a megengedett szintet, a helyi hatóságok forgalomkorlátozást vezethetnek be, hogy csökkentsék a gépjárművek által kibocsátott szennyező anyagokat. Ezt a technológiát már alkalmazzák a nagyvárosokban, ahol a levegőminőség folyamatos ellenőrzése segít a lakosság egészségének megóvásában. A modern érzékelők és mobilalkalmazások segítségével bárki nyomon követheti a levegő minőségét a környezetében.",
+       "type": "text",
+       "heading": "Levegőszennyezők távolsági mérése",
+       "key_term": "levegőszennyezők mérése"
+      },
+      {
+       "body": "A környezettudatosság azt jelenti, hogy tudatában vagyunk a környezetvédelmi problémáknak, és aktívan törekszünk a megoldásukra. Fiatalokként sokat tehetünk a környezetünk védelméért, például szelektíven gyűjtjük a hulladékot, kerüljük a felesleges műanyag használatát, és támogassuk a helyi termékeket. Emellett fontos, hogy tudatosan válasszuk meg, milyen közlekedési módot használunk — például a gyaloglás vagy a kerékpározás nemcsak egészséges, de környezetbarát is. A környezettudatosság nemcsak egy trend, hanem a jövőnk záloga.",
+       "type": "text",
+       "heading": "Környezettudatosság a mindennapokban",
+       "key_term": "környezettudatosság"
+      }
+     ]
+    },
+    {
+     "block_id": "1e3ec4e8-d0a5-4bfb-ada6-0be595a8c420",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal tizenéves este hazafelé tart, amikor észreveszi, hogy a város fényei szinte elnyomják a csillagokat az égen. A fényszennyezés következtében a természetes éjszakai világosság csökken, és ez zavarja a csillagok megfigyelését. A fiatal elhatározza, hogy méréseket végez, hogy megismerje a város fényszennyezésének mértékét.",
+       "type": "story",
+       "heading": "A fényszennyezés észlelése"
+      },
+      {
+       "body": "Hazatérve a fiatal mobiltelefonjával zajszintet mér. A mobiltelefonján található alkalmazás segítségével megfigyeli a környezeti zajszennyezést. Míg a város központjában a zajszint elérheti a 80 decibelt, a csendesebb külvárosi területeken ez 50 decibel alá csökken. Ezzel a méréssel tudományos alapot teremt a zajszennyezés hatásainak megértéséhez.",
+       "type": "story",
+       "heading": "Zajszennyezés mérése"
+      },
+      {
+       "body": "A fiatal felfedezi, hogy a környezeti problémák csökkentésére innovatív technológiák is léteznek. Például a porszűrők működési elve alapján a levegőből kiszűrik a szennyező anyagokat, így tisztább levegőt biztosítanak. Emellett a zajszigetelés révén a házak falai csökkenthetik a külső zajok behatolását, így a lakók csendesebb környezetben élhetnek.",
+       "type": "story",
+       "heading": "Innovatív technológiák alkalmazása"
+      },
+      {
+       "body": "A fiatal a környezetvédelmi szempontokat is figyelembe véve energiatakarékos eszközöket használ otthonában. LED-lámpákra vált, amelyek kevesebb energiát fogyasztanak és hosszabb élettartamúak, így csökkentve a fényszennyezést is. Ezen kívül a háztartásában alkalmazott okos eszközök segítenek nyomon követni az energiafogyasztást.",
+       "type": "story",
+       "heading": "Energiatakarékos megoldások"
+      },
+      {
+       "body": "A fiatal értesül róla, hogy a város levegőminőségének javítása érdekében forgalomkorlátozást rendeltek el. A levegőben található szennyezők távolról történő mérése alapján, a városvezetés döntése értelmében a legszennyezettebb időszakokban csökkentik a gépjárműforgalmat, hogy a levegő tisztább legyen. Ez a lépés nemcsak a környezetvédelmet szolgálja, hanem az emberek egészségét is védi.",
+       "type": "story",
+       "heading": "Forgalomkorlátozás a levegő tisztaságáért"
+      }
+     ]
+    },
+    {
+     "block_id": "4c83ef6a-464b-4ae6-b269-e9a0b4ec3f3e",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A fényszennyezés hatásai az éjszakai égboltra",
+       "heading": "Fényszennyezés",
+       "description": "A fényszennyezés forrásait és hatásait bemutató diagram, amely a városi fényforrásokat, például utcai lámpákat és reklámfelületeket ábrázolja, valamint a természetes éjszakai égbolt elhomályosulását.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A zajszennyezés forrásai és hatásai",
+       "heading": "Zajszennyezés",
+       "description": "Egy grafikon, amely a különböző zajforrások (pl. közlekedés, ipar, építkezés) által keltett zajszintet (dB-ben) mutatja be, valamint a zajszennyezés hatásait az emberi egészségre.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A porszűrők működése",
+       "heading": "Porszűrők működési elve",
+       "description": "Egy keresztmetszeti ábra, amely bemutatja a porszűrők felépítését és működését, beleértve a szűrőrétegeket, a levegő áramlását és a szennyező anyagok eltávolítását.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Hangszigetelési technikák",
+       "heading": "Hangszigetelés",
+       "description": "Egy vázlat, amely a hangszigetelés különböző módszereit mutatja be, például a hangszigetelő anyagok használatát és a falak, ablakok szigetelésének technikáit.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Energiatakarékos eszközök előnyei",
+       "heading": "Energiatakarékos eszközök",
+       "description": "Egy diagram, amely az energiatakarékos eszközök (pl. LED izzók, energiatakarékos háztartási gépek) előnyeit és energiatakarékossági mutatóikat hasonlítja össze a hagyományos eszközökkel.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Forgalomkorlátozás hatása a levegőminőségre",
+       "heading": "Forgalomkorlátozás mérések alapján",
+       "description": "Egy grafikon, amely a levegőszennyezettség méréseinek eredményeit és a forgalomkorlátozások bevezetésének időpontját mutatja, szemléltetve a levegőminőség javulását.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A környezettudatosság alapelvei",
+       "heading": "Környezettudatosság",
+       "description": "Egy infografika, amely a környezettudatosság fontosságát és a fenntartható életmód alapelveit mutatja be, például a hulladékcsökkentést és a szelektív gyűjtést.",
+       "visual_type": "infografika"
+      },
+      {
+       "type": "visual",
+       "caption": "Zajszint mérésének folyamata",
+       "heading": "Zajszint mérése",
+       "description": "Egy vázlat, amely bemutatja, hogyan lehet zajszintet mérni mobiltelefonnal vagy más eszközzel, beleértve a mérési folyamat lépéseit és a szükséges alkalmazásokat.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "278b1bb0-fb6f-4e81-88b0-a412c26eef86",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A diákok gyakran találkoznak zajszintmérő alkalmazásokkal a mobiltelefonjaikon, amelyek segítségével megmérhetik a környezetük zajszintjét, például egy koncerten vagy az utcán.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 100,
+          "w": 200,
+          "x": 100,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 150,
+          "y": 145,
+          "text": "Zajszintmérő",
+          "type": "label"
+         },
+         {
+          "r": 20,
+          "x": 50,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 40,
+          "y": 155,
+          "text": "Mobiltelefon",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Zajszint mérése mobiltelefonnal",
+       "discovery": "A zajszennyezés problémája már az 1960-as évek óta egyre nagyobb figyelmet kap, amikor a városi életmód terjedésével a zajszint is folyamatosan növekedett. A kutatók és mérnökök ekkor kezdték el fejleszteni azokat az eszközöket, amelyekkel a zajszintet pontosan lehetett mérni, így felmérhették a zajszennyezés hatásait az emberek egészségére és a környezetre.",
+       "try_basic": "Használj egy zajszintmérő alkalmazást a mobiltelefonodon, és mérd meg a zajszintet különböző helyszíneken, például otthon, az iskolában vagy a játszótéren.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "9be71e24-5ab1-4f64-a2d0-174d95294dc8",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A mesterséges fények túlzott jelenléte, ami zavarja a természetes éjszakai világítást.",
+        "B) A levegőben található szennyező anyagok mérése.",
+        "C) A zajok, amelyek zavarják a természetes környezetet.",
+        "D) A víz szennyezése különböző anyagokkal."
+       ],
+       "question": "Mi a fényszennyezés?",
+       "explanation": "A fényszennyezés a mesterséges fények túlzott jelenlétét jelenti, amely zavarja az éjszakai égbolt természetes megjelenését.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Olyan zavaró hangok, amelyek káros hatással vannak az emberek egészségére és a környezetre.",
+        "B) A levegőben található kémiai anyagok mérése.",
+        "C) A vízben található szennyező anyagok mérése.",
+        "D) A természetes zajok csökkenése."
+       ],
+       "question": "Melyik a zajszennyezés definíciója?",
+       "explanation": "A zajszennyezés olyan zavaró hangok összessége, amelyek káros hatással lehetnek az emberek egészségére és a környezetre.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A levegőben levő részecskék kiszűrése mechanikai vagy elektrosztatikus úton.",
+        "B) A levegő hőmérsékletének csökkentése.",
+        "C) A levegőben levő szagok semlegesítése.",
+        "D) A zajok csillapítása."
+       ],
+       "question": "Milyen elven működnek a porszűrők?",
+       "explanation": "A porszűrők a levegőben található részecskék kiszűrésére szolgálnak, működhetnek mechanikai vagy elektrosztatikus módszerekkel.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A zajok csökkentése a környezetben.",
+        "B) A levegő szennyezésének mérséklése.",
+        "C) A hőmérséklet szabályozása.",
+        "D) A víz szennyezésének megakadályozása."
+       ],
+       "question": "Mi a célja a hangszigetelésnek?",
+       "explanation": "A hangszigetelés célja a zajok csökkentése, hogy a belső tér csendesebb és kellemesebb legyen.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Csökkenti az energiafogyasztást és a környezeti terhelést.",
+        "B) Növeli a zajszennyezést.",
+        "C) Emeli a levegő szennyezettségét.",
+        "D) Csökkenti a vízfogyasztást."
+       ],
+       "question": "Miért fontos az energiatakarékos eszközök használata?",
+       "explanation": "Az energiatakarékos eszközök használata csökkenti az energiafogyasztást, ezáltal mérsékli a környezeti terhelést is.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "8659b911-3759-4c43-856f-f0bde4e63fa7",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Növekvő ultraibolya sugárzás a Földön",
+      "B) Csökkenő tengerszint",
+      "C) Stabil éghajlat",
+      "D) Csökkenő fényszennyezés"
+     ],
+     "question": "Mi a következménye az ózonpajzs elvékonyodásának?",
+     "explanation": "Az ózonpajzs elvékonyodása miatt a Földet erősebb ultraibolya sugárzás éri, ami káros hatással van az élőlényekre.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Tüzelőanyagok elégetése",
+      "B) Erdőirtás",
+      "C) Napenergia használata",
+      "D) Ipari kibocsátás"
+     ],
+     "question": "Melyik tényező NEM járul hozzá az üvegházhatás kialakulásához?",
+     "explanation": "A napenergia használata nem járul hozzá az üvegházhatáshoz, sőt, környezetbarát megoldás.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csökken a tengerszint",
+      "B) Növekszik a tengerszint",
+      "C) Stabil marad a tengerszint",
+      "D) Változó hatású"
+     ],
+     "question": "Milyen hatással van az éghajlatváltozás a tengerszintre?",
+     "explanation": "Az éghajlatváltozás miatt a jégsapkák olvadása és a víz hőmérsékletének emelkedése miatt a tengerszint emelkedik.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az élőhelyek területe",
+      "B) Az emberi tevékenység környezeti hatásának mértéke",
+      "C) A levegőszennyezés mértéke",
+      "D) Az energiatakarékos eszközök száma"
+     ],
+     "question": "Mi az ökológiai lábnyom?",
+     "explanation": "Az ökológiai lábnyom az emberi tevékenység környezeti hatásának mértékét mutatja meg, beleértve a természeti erőforrások felhasználását.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Porszűrők",
+      "B) Hangszigetelés",
+      "C) Energiaspóroló izzók",
+      "D) Napkollektorok"
+     ],
+     "question": "Melyik technológia segít csökkenteni a zajszennyezést?",
+     "explanation": "A hangszigetelés segít csökkenteni a zajszennyezést, mivel megakadályozza a zajok terjedését.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A természetes fényforrások csökkenése",
+      "B) A mesterséges fényforrások túlzott használata",
+      "C) A levegőszennyezés mértéke",
+      "D) A zajszennyezés hatása"
+     ],
+     "question": "Mi a fényszennyezés?",
+     "explanation": "A fényszennyezés a mesterséges fényforrások túlzott használatából adódik, amely zavarja az éjszakai égbolt látványát és az élőlények természetes ritmusát.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) CFC-k (klórozott fluorozott szénhidrogének) használatának csökkentése",
+      "B) Szén-dioxid kibocsátás növelése",
+      "C) Üvegházhatású gázok emissziójának növelése",
+      "D) Tüzelőanyagok elégetésének fokozása"
+     ],
+     "question": "Melyik intézkedés segít az ózonpajzs védelmében?",
+     "explanation": "A CFC-k használatának csökkentése segít védeni az ózonpajzsot, mivel ezek a vegyületek károsítják azt.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csökken a levegő minősége",
+      "B) Növekszik a stressz és a fáradtság",
+      "C) Stabilizálódik az éghajlat",
+      "D) Csökken a szén-dioxid kibocsátás"
+     ],
+     "question": "Mi a zajszennyezés következménye?",
+     "explanation": "A zajszennyezés növelheti a stressz szintet és fáradtságot okozhat, ami negatívan befolyásolja az emberek egészségét.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,712 @@
+{
+ "nat_id": "PHYS-78-10",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 111,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-78-10-001",
+   "lesson_id": "0c539871-eb11-4393-b50e-f39c777ca5bd",
+   "block_id": "c40c3991-6402-4218-b2c0-c792772aaa9c",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Reggel a bot árnyéka kelet felé mutat, délben a legkisebb, majd este nyugatra fordul.”",
+   "explanation": "Fordítva: az árnyék a Nappal ellentétes irányba mutat. Reggel (Nap keleten) nyugat felé, délben (Nap délen) észak felé és a legrövidebb, este (Nap nyugaton) kelet felé. A diák rosszul tájékozódna.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Gnomon",
+     "title": "Gnomon",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Nap járását megfigyelhetjük, ha egy botot állítunk a földre, amelynek árnyéka a Föld forgásával változik. Reggel a bot árnyéka kelet felé mutat, délben a legkisebb, majd este nyugatra fordul. Ez a jelenség segít az égtájak meghatározásában is. Ha tudod, hogy a Nap hol kel és hol nyugszik, könnyen tájékozódhatsz a környezetedben, akár egy kirándulás során is.",
+     "type": "text",
+     "heading": "A Nap járása és az égtájak",
+     "key_term": "Nap járása"
+    },
+    "after": {
+     "body": "A Nap járását megfigyelhetjük, ha egy botot állítunk a földre, amelynek árnyéka a Föld forgásával változik. Az árnyék mindig a Nappal ellentétes irányba mutat: reggel, amikor a Nap keleten van, nyugat felé; délben a legrövidebb, és Magyarországon észak felé mutat; este kelet felé fordul. Ez a jelenség segít az égtájak meghatározásában is. Ha tudod, hogy a Nap hol kel és hol nyugszik, könnyen tájékozódhatsz a környezetedben, akár egy kirándulás során is.",
+     "type": "text",
+     "heading": "A Nap járása és az égtájak",
+     "key_term": "Nap járása"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-10-002",
+   "lesson_id": "eb2703bc-ff30-41c7-bf4d-6363e011abab",
+   "block_id": "86a4e61b-7392-4209-86ca-b7e8150e5e5b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "Napfogyatkozás: „Ezt a jelenséget a távcsövek segítségével is csodálhatjuk”; a 27,3 napos keringés „okozza a különböző holdfázisokat”",
+   "explanation": "Biztonsági hiba: napfogyatkozást soha nem szabad szűrő nélküli távcsővel, látcsővel vagy szabad szemmel nézni, mert maradandó szemkárosodást okoz. A holdfázisok ciklusa kb. 29,5 nap (szinodikus hónap); a 27,3 nap a csillagokhoz viszonyított keringés.",
+   "sources": [
+    {
+     "url": "https://science.nasa.gov/eclipses/safety/",
+     "title": "NASA – Eclipse safety",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Lunar_month",
+     "title": "Lunar month",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Hold a Föld körül kering, és egy teljes keringése körülbelül 27,3 napig tart. Ez a mozgás okozza a különböző holdfázisokat, amelyeket mindenki megfigyelhet. Amikor a Hold a Föld és a Nap között helyezkedik el, napfogyatkozás történik. Ezt a jelenséget a távcsövek segítségével is csodálhatjuk, hiszen a Hold és a Nap elhelyezkedése lenyűgöző látványt nyújt.",
+     "type": "text",
+     "heading": "A Hold Föld körüli mozgása",
+     "key_term": "Hold Föld körüli mozgása"
+    },
+    "after": {
+     "body": "A Hold a Föld körül kering, és egy teljes keringése körülbelül 27,3 napig tart a csillagokhoz képest; a holdfázisok teljes ciklusa kb. 29,5 nap. Ez a mozgás okozza a különböző holdfázisokat, amelyeket mindenki megfigyelhet. Amikor a Hold a Föld és a Nap között helyezkedik el, napfogyatkozás történik. Napfogyatkozást azonban soha nem szabad szabad szemmel, távcsővel vagy látcsővel nézni, csak speciális napszűrős szemüveggel, mert a Nap fénye maradandóan károsíthatja a szemet.",
+     "type": "text",
+     "heading": "A Hold Föld körüli mozgása",
+     "key_term": "Hold Föld körüli mozgása"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-10-003",
+   "lesson_id": "eb2703bc-ff30-41c7-bf4d-6363e011abab",
+   "block_id": "86a4e61b-7392-4209-86ca-b7e8150e5e5b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A Hold fázisai ... a tengeráramlatokra is hatással vannak.”",
+   "explanation": "A Hold gravitációja az árapályt okozza, nem a tengeráramlatokat; a fázisok csak jelzik az árapály erősségét (újhold és telihold idején a legnagyobb a dagály).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Tide",
+     "title": "Tide",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Hold fázisai a Földről nézve a Hold világításának változását jelentik. A telihold, újhold és a félhold mind-mind különböző helyzetekben jönnek létre, attól függően, hogy a Nap, a Föld és a Hold hogyan helyezkedik el egymáshoz képest. Ezeket a fázisokat könnyedén megfigyelhetjük esténként, amikor a Hold az égen látható. A Hold fázisai nemcsak gyönyörű látványt nyújtanak, hanem a tengeráramlatokra is hatással vannak.",
+     "type": "text",
+     "heading": "Holdfázisok",
+     "key_term": "holdfázis"
+    },
+    "after": {
+     "body": "A Hold fázisai a Földről nézve a Hold világításának változását jelentik. A telihold, újhold és a félhold mind-mind különböző helyzetekben jönnek létre, attól függően, hogy a Nap, a Föld és a Hold hogyan helyezkedik el egymáshoz képest. Ezeket a fázisokat könnyedén megfigyelhetjük esténként, amikor a Hold az égen látható. A Hold fázisai nemcsak gyönyörű látványt nyújtanak, hanem az árapály erősségét is jelzik: újholdkor és teliholdkor a legnagyobb a dagály, mert a Nap és a Hold vonzása összeadódik.",
+     "type": "text",
+     "heading": "Holdfázisok",
+     "key_term": "holdfázis"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-10-004",
+   "lesson_id": "87e85e56-dd2b-4f22-a7d1-2ccccb10b282",
+   "block_id": "c7f6000f-4c07-425e-903c-a1fabb7746af",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Ha a Föld méretét egy borsóhoz hasonlítjuk, akkor a Nap körülbelül 30 méter átmérőjű lenne.”",
+   "explanation": "A Nap átmérője kb. 109-szerese a Földének: egy 1 cm-es borsóhoz kb. 1,1 m-es Nap tartozik, kb. 117 m távolságban.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sun",
+     "title": "Sun",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A világűr méretei elképesztőek, és sokszor nehezen felfoghatók. Ha a Föld méretét egy borsóhoz hasonlítjuk, akkor a Nap körülbelül 30 méter átmérőjű lenne. A Tejútrendszer, amelyben élünk, több száz milliárd csillagot tartalmaz, és a legközelebbi galaxis, az Androméda, több mint 2,5 millió fényév távolságra van. Érdemes elgondolkodni azon, hogy a Világegyetemben vajon hány másik bolygón élhet intelligens élet.",
+     "type": "text",
+     "heading": "Beszélgetés a világűr méreteiről",
+     "key_term": "világűr méretei, Tejútrendszer, Androméda"
+    },
+    "after": {
+     "body": "A világűr méretei elképesztőek, és sokszor nehezen felfoghatók. Ha a Földet egy 1 cm-es borsószemhez hasonlítjuk, akkor a Nap egy kb. 1,1 méter átmérőjű labda lenne, kb. 117 méter távolságban. A Tejútrendszer, amelyben élünk, több száz milliárd csillagot tartalmaz, és a legközelebbi galaxis, az Androméda, több mint 2,5 millió fényév távolságra van. Érdemes elgondolkodni azon, hogy a Világegyetemben vajon hány másik bolygón élhet intelligens élet.",
+     "type": "text",
+     "heading": "Beszélgetés a világűr méreteiről",
+     "key_term": "világűr méretei, Tejútrendszer, Androméda"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-10-005",
+   "lesson_id": "87e85e56-dd2b-4f22-a7d1-2ccccb10b282",
+   "block_id": "c7f6000f-4c07-425e-903c-a1fabb7746af",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„egy hatalmas robbanás következtében jött létre”",
+   "explanation": "Az ősrobbanás nem a térben lezajló robbanás volt, hanem maga a tér kezdett tágulni egy forró, sűrű állapotból; ugyanennek a leckének a 8. kártyája ezt helyesen írja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Big_Bang",
+     "title": "Big Bang",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Világegyetem keletkezésének magyarázata a Nagy Bumm elméletén alapul, amely szerint a Világegyetem körülbelül 13,8 milliárd évvel ezelőtt egy hatalmas robbanás következtében jött létre. Azóta a Világegyetem folyamatosan tágul, és a csillagok, galaxisok fejlődése is ennek eredményeként zajlik. A csillagok életciklusa során új elemek keletkeznek, amelyek később más égitestekben, például bolygókban megjelenhetnek.",
+     "type": "text",
+     "heading": "A Világegyetem keletkezése és fejlődése",
+     "key_term": "Világegyetem keletkezése, Nagy Bumm"
+    },
+    "after": {
+     "body": "A Világegyetem keletkezésének magyarázata a Nagy Bumm elméletén alapul, amely szerint a Világegyetem körülbelül 13,8 milliárd évvel ezelőtt egy rendkívül forró és sűrű állapotból kezdett tágulni (ez nem a térben lezajló robbanás volt, hanem maga a tér tágulása). Azóta a Világegyetem folyamatosan tágul, és a csillagok, galaxisok fejlődése is ennek eredményeként zajlik. A csillagok életciklusa során új elemek keletkeznek, amelyek később más égitestekben, például bolygókban megjelenhetnek.",
+     "type": "text",
+     "heading": "A Világegyetem keletkezése és fejlődése",
+     "key_term": "Világegyetem keletkezése, Nagy Bumm"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-10-006",
+   "lesson_id": "389f1248-c419-4520-9440-f8e5b03dd57e",
+   "block_id": "b816cc72-cd2e-4b4f-8fed-fabafc690a32",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Az űrhajók most már elérhetik a Marsot, ahol felfedezheted a vörös bolygó felszínét” (űrturizmus)",
+   "explanation": "Ember eddig nem jutott a Holdnál messzebb; űrturisták csak a világűr határáig és a Föld körüli pályára jutottak. A Marsra csak robotszondák érkeztek.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Space_tourism",
+     "title": "Space tourism",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Képzeld el, hogy űrturistaként a Naprendszerbe utazol! Az űrhajók most már elérhetik a Marsot, ahol felfedezheted a vörös bolygó felszínét, vagy akár a Jupiter holdjait, mint a Europa, amelyen vízjég borítja a felszínt. Az űrturizmus lehetőségei izgalmasak, és lehetőséget adnak arra, hogy személyesen tapasztalhassuk meg a bolygók és csillagok csodáit. Az ilyen utazások során a legmodernebb technológiák, például a 3D-s térképek segítenek a tájékozódásban.",
+     "type": "text",
+     "heading": "Űrturizmus: a Naprendszer felfedezése",
+     "key_term": "Naprendszer"
+    },
+    "after": {
+     "body": "Képzeld el, hogy űrturista vagy! Ma az űrturisták a világűr határáig, kb. 100 km magasra, vagy a Föld körül keringő Nemzetközi Űrállomásra juthatnak el; a Holdnál messzebb ember még nem járt. A Marsot eddig robotszondák és marsjárók kutatják, egy emberes út oda-vissza több mint egy évig tartana. A Jupiter Europa nevű holdját vastag jégkéreg borítja, alatta valószínűleg folyékony víz óceán van, ezért a kutatók nagy érdeklődéssel vizsgálják.",
+     "type": "text",
+     "heading": "Űrturizmus: a Naprendszer felfedezése",
+     "key_term": "Naprendszer"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-10-007",
+   "lesson_id": "0c539871-eb11-4393-b50e-f39c777ca5bd",
+   "block_id": "c40c3991-6402-4218-b2c0-c792772aaa9c",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a fényük évekig, akár évtizedekig is elérhet hozzánk”",
+   "explanation": "A szabad szemmel látható csillagok fénye többnyire több tíz, száz vagy ezer évig utazik; a galaxisoké millió-milliárd évig.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Light-year",
+     "title": "Light-year",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A fény sebessége körülbelül 300 000 km/s, ami azt jelenti, hogy a csillagok fényének eljutása hozzánk időbe telik. Amikor az éjszakai égbolton nézünk csillagokat, valójában a múltjukat látjuk, hiszen a fényük évekig, akár évtizedekig is elérhet hozzánk. Ez a jelenség különösen érdekes, mert megmutatja, hogy a világűr milyen hatalmas, és hogy mennyire kis időegységekben gondolkodunk a mindennapjaink során.",
+     "type": "text",
+     "heading": "A fény véges sebessége",
+     "key_term": "fény sebessége"
+    },
+    "after": {
+     "body": "A fény sebessége körülbelül 300 000 km/s, ami azt jelenti, hogy a csillagok fényének eljutása hozzánk időbe telik. Amikor az éjszakai égbolton nézünk csillagokat, valójában a múltjukat látjuk, hiszen a legtöbb csillag fénye több tíz, száz vagy akár ezer évig utazik hozzánk. Ez a jelenség különösen érdekes, mert megmutatja, hogy a világűr milyen hatalmas, és hogy mennyire kis időegységekben gondolkodunk a mindennapjaink során.",
+     "type": "text",
+     "heading": "A fény véges sebessége",
+     "key_term": "fény sebessége"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-10-008",
+   "lesson_id": "eb2703bc-ff30-41c7-bf4d-6363e011abab",
+   "block_id": "f75b75f0-006f-4af5-942f-ebe55c813dc4",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options[3]",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mi a Nap energiájának fő forrása?” — B) Magfúzió; D) Fúziós reakciók ugyanaz",
+   "explanation": "A B és a D ugyanazt jelenti, így két helyes válasz van.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Két azonos jelentésű válasz.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Kémiai reakciók.",
+      "B) Magfúzió.",
+      "C) Elektromos áram.",
+      "D) Fúziós reakciók."
+     ],
+     "question": "Mi a Nap energiájának fő forrása?",
+     "explanation": "A Nap energiájának fő forrása a magfúzió, amely során a hidrogénatomok egyesülnek héliummá, hatalmas mennyiségű energiát szabadítva fel.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Kémiai reakciók.",
+      "B) Magfúzió.",
+      "C) Elektromos áram.",
+      "D) Radioaktív bomlás."
+     ],
+     "question": "Mi a Nap energiájának fő forrása?",
+     "explanation": "A Nap energiájának fő forrása a magfúzió, amely során a hidrogénatomok egyesülnek héliummá, hatalmas mennyiségű energiát szabadítva fel.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-10-009",
+   "lesson_id": null,
+   "block_id": "82f21703-22bc-4b5f-9c30-b180fbcad6aa",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 1,
+   "field": "options[3]",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Milyen típusú bolygók a Föld és a Vénusz?” — B) Földtípusú; D) Kőzetbolygók is",
+   "explanation": "A földtípusú bolygó és a kőzetbolygó ugyanazt jelenti, így két helyes válasz van.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Terrestrial_planet",
+     "title": "Terrestrial planet",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Óriásbolygók",
+      "B) Földtípusú bolygók",
+      "C) Jégbolygók",
+      "D) Kőzetbolygók"
+     ],
+     "question": "Milyen típusú bolygók a Föld és a Vénusz?",
+     "explanation": "A Föld és a Vénusz földtípusú bolygók, amelyek szilárd felszínnel rendelkeznek, és hasonló fizikai jellemzőkkel bírnak.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Óriásbolygók",
+      "B) Földtípusú bolygók",
+      "C) Jégbolygók",
+      "D) Törpebolygók"
+     ],
+     "question": "Milyen típusú bolygók a Föld és a Vénusz?",
+     "explanation": "A Föld és a Vénusz földtípusú bolygók, amelyek szilárd felszínnel rendelkeznek, és hasonló fizikai jellemzőkkel bírnak.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-10-010",
+   "lesson_id": "0c539871-eb11-4393-b50e-f39c777ca5bd",
+   "block_id": "33c7758d-29e7-4822-993e-000770a04b65",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "options[0], explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Mi a csillag?” — A) „Égő gázgömb”",
+   "explanation": "A csillag nem ég (nem égés zajlik benne), hanem a magjában zajló magfúzió termel energiát; az „égő” tévképzetet erősít.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Star",
+     "title": "Star",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Égő gázgömb, amely saját fényt bocsát ki.",
+      "B) Földi anyag, amely visszaveri a napfényt.",
+      "C) Mesterséges égitest, amely az űrben kering.",
+      "D) A Hold egy fázisa."
+     ],
+     "question": "Mi a csillag?",
+     "explanation": "A csillag egy égő gázgömb, amely saját fényt bocsát ki, és a világűrben található.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Forró gázgömb, amely a belsejében zajló magfúzió révén saját fényt bocsát ki.",
+      "B) Földi anyag, amely visszaveri a napfényt.",
+      "C) Mesterséges égitest, amely az űrben kering.",
+      "D) A Hold egy fázisa."
+     ],
+     "question": "Mi a csillag?",
+     "explanation": "A csillag forró gázgömb, amely a magjában zajló magfúzió energiájával saját fényt bocsát ki. Nem égés zajlik benne.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-10-011",
+   "lesson_id": "0c539871-eb11-4393-b50e-f39c777ca5bd",
+   "block_id": "33c7758d-29e7-4822-993e-000770a04b65",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„kráterekből és tengerekből áll, amelyek a meteorok becsapódása miatt keletkeztek”",
+   "explanation": "A kráterek becsapódásokból, a holdi „tengerek” viszont ősi lávával elöntött síkságokból keletkeztek.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lunar_mare",
+     "title": "Lunar mare",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kráterek és tengerek.",
+      "B) Fák és hegyek.",
+      "C) Óceánok és folyók.",
+      "D) Felhők és csillagok."
+     ],
+     "question": "Milyen felszíni formák láthatók a Holdon?",
+     "explanation": "A Hold felszíne kráterekből és tengerekből áll, amelyek a meteorok becsapódása miatt keletkeztek.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kráterek és tengerek.",
+      "B) Fák és hegyek.",
+      "C) Óceánok és folyók.",
+      "D) Felhők és csillagok."
+     ],
+     "question": "Milyen felszíni formák láthatók a Holdon?",
+     "explanation": "A Hold felszínén kráterek és „tengerek” láthatók. A krátereket becsapódások hozták létre, a sötét „tengerek” pedig víz nélküli, ősi lávával elöntött síkságok.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-10-012",
+   "lesson_id": "389f1248-c419-4520-9440-f8e5b03dd57e",
+   "block_id": "4f181bec-05f3-4a8d-a699-f3c33f6d30c7",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A 16. században Galilei Galilei ... távcsövet használt először”",
+   "explanation": "Galilei 1609–1610-ben, a 17. század elején kezdte távcsővel vizsgálni az eget; nem ő volt az egyetlen első (pl. Thomas Harriot szintén 1609-ben), de ő tette közzé az első nagy felfedezéseket.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+     "title": "Galileo Galilei",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A bolygók és csillagok megfigyelése alapvető az asztronómiában, és ma már sok modern távcső és űrszonda segíti a kutatásokat az égi jelenségek megértésében.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 80,
+        "x": 200,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "r": 10,
+        "x": 120,
+        "y": 80,
+        "type": "circle"
+       },
+       {
+        "r": 10,
+        "x": 240,
+        "y": 80,
+        "type": "circle"
+       },
+       {
+        "r": 10,
+        "x": 160,
+        "y": 220,
+        "type": "circle"
+       },
+       {
+        "r": 10,
+        "x": 240,
+        "y": 220,
+        "type": "circle"
+       },
+       {
+        "x": 190,
+        "y": 150,
+        "text": "Föld",
+        "type": "label"
+       },
+       {
+        "x": 110,
+        "y": 75,
+        "text": "Hold 1",
+        "type": "label"
+       },
+       {
+        "x": 230,
+        "y": 75,
+        "text": "Hold 2",
+        "type": "label"
+       },
+       {
+        "x": 150,
+        "y": 230,
+        "text": "Hold 3",
+        "type": "label"
+       },
+       {
+        "x": 230,
+        "y": 230,
+        "text": "Hold 4",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Bolygók és csillagok megfigyelése",
+     "discovery": "A 16. században Galilei Galilei, a híres olasz csillagász, távcsövet használt először az égi objektumok megfigyelésére. Felfedezte, hogy a Jupiter körül négy hold kering, ezzel megkérdőjelezve a Föld középpontú világképet, és hozzájárult a heliocentrikus elmélet elfogadásához.",
+     "try_basic": "Használj egy egyszerű távcsövet vagy binokulárt, hogy megfigyeld a Holdat, és jegyezd fel a látott részleteket, például a krátereket vagy a sötét foltokat.",
+     "try_advanced": ""
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A bolygók és csillagok megfigyelése alapvető az asztronómiában, és ma már sok modern távcső és űrszonda segíti a kutatásokat az égi jelenségek megértésében.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 80,
+        "x": 200,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "r": 10,
+        "x": 120,
+        "y": 80,
+        "type": "circle"
+       },
+       {
+        "r": 10,
+        "x": 240,
+        "y": 80,
+        "type": "circle"
+       },
+       {
+        "r": 10,
+        "x": 160,
+        "y": 220,
+        "type": "circle"
+       },
+       {
+        "r": 10,
+        "x": 240,
+        "y": 220,
+        "type": "circle"
+       },
+       {
+        "x": 190,
+        "y": 150,
+        "text": "Föld",
+        "type": "label"
+       },
+       {
+        "x": 110,
+        "y": 75,
+        "text": "Hold 1",
+        "type": "label"
+       },
+       {
+        "x": 230,
+        "y": 75,
+        "text": "Hold 2",
+        "type": "label"
+       },
+       {
+        "x": 150,
+        "y": 230,
+        "text": "Hold 3",
+        "type": "label"
+       },
+       {
+        "x": 230,
+        "y": 230,
+        "text": "Hold 4",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Bolygók és csillagok megfigyelése",
+     "discovery": "1609–1610-ben Galileo Galilei, a híres olasz csillagász, az elsők között fordított távcsövet az ég felé. Felfedezte, hogy a Jupiter körül négy hold kering, ezzel megkérdőjelezve a Föld középpontú világképet, és hozzájárult a heliocentrikus elmélet elfogadásához.",
+     "try_basic": "Használj egy egyszerű távcsövet vagy binokulárt, hogy megfigyeld a Holdat, és jegyezd fel a látott részleteket, például a krátereket vagy a sötét foltokat.",
+     "try_advanced": ""
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-10-013",
+   "lesson_id": "389f1248-c419-4520-9440-f8e5b03dd57e",
+   "block_id": "1c15c75f-ed4e-4e34-8dd1-8679380b0273",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "options[3]",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„D) Galaktikus klaszter”",
+   "explanation": "A magyar szakszó galaxishalmaz.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Tejútrendszer",
+      "B) Univerzális halmaz",
+      "C) Csillaghalmaz",
+      "D) Galaktikus klaszter"
+     ],
+     "question": "Melyik kifejezés jelenti a galaxisok csoportosulását?",
+     "explanation": "A galaktikus klaszterek a galaxisok csoportosulásait jelentik, amelyek gravitációs vonzás alatt állnak egymással.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Tejútrendszer",
+      "B) Univerzális halmaz",
+      "C) Csillaghalmaz",
+      "D) Galaxishalmaz"
+     ],
+     "question": "Melyik kifejezés jelenti a galaxisok csoportosulását?",
+     "explanation": "A galaxishalmazok galaxisok csoportosulásai, amelyeket a gravitáció tart össze.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-78-10-014",
+   "lesson_id": null,
+   "block_id": "82f21703-22bc-4b5f-9c30-b180fbcad6aa",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 5,
+   "field": "question",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "„Melyik csillagkép a legismertebb az égen?” — A) Orion",
+   "explanation": "Szubjektív kérdés; Magyarországon a Göncölszekér (Nagy Medve) legalább annyira ismert. Tényszerű kérdésre érdemes cserélni.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "Véleménykérdés."
+  }
+ ],
+ "applied": {
+  "PHYS-78-10-001": "2804fcf5-c3b0-42a3-b5de-1b7eebd65040",
+  "PHYS-78-10-002": "1be0b1a5-6e20-43d6-9942-65b2ec7dc763",
+  "PHYS-78-10-003": "da8801c2-dfae-4272-9fb8-886be6c0881a",
+  "PHYS-78-10-004": "2fa1075a-ce87-4cc0-a7e1-34df2341536c",
+  "PHYS-78-10-005": "24a9c9bd-925f-43d1-8212-8bf43b9e17a8",
+  "PHYS-78-10-006": "5eca221b-e5cf-4010-8e7b-56ebeeacdb57",
+  "PHYS-78-10-007": "f0a788cd-4e8d-4a55-ad3e-64e0b21a1738",
+  "PHYS-78-10-008": "9c7d1ddb-77f3-4fbe-adca-0530b050653e",
+  "PHYS-78-10-009": "d05ddf17-9cbd-4be0-9cd2-a6a4ce96ec8c",
+  "PHYS-78-10-010": "aa4b5f34-3c4c-4fcd-8b57-08b037e5e180",
+  "PHYS-78-10-011": "66a8e941-9a9d-4a33-bbf2-7ddae2e01f1d",
+  "PHYS-78-10-012": "0d0dcf30-7c82-415c-8916-87eeb2719d88",
+  "PHYS-78-10-013": "9963112c-cb6c-4102-bb33-f7b45e2f1b5d"
+ }
+}

@@ -1,0 +1,758 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "e7ca211c-ce29-4411-9b92-cf15cb205ecb",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„csak megfordulva, hiszen a bal és a jobb oldal felcserélődik” és „síktükörben (síktükör)”",
+   "explanation": "A síktükör a tükörre merőleges irányt fordítja meg (elöl-hátul), nem a bal-jobb irányt; a bal-jobb „felcserélődés” a saját megfordulásunk értelmezése. A zárójeles szómagyarázat üres ismétlés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mirror_image",
+     "title": "Mirror image",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A síktükörben (síktükör) látott kép",
+     "A síktükörben látott kép"
+    ],
+    [
+     "fényvisszaverődés (fényvisszaverődés) miatt",
+     "fényvisszaverődés miatt"
+    ],
+    [
+     "csak megfordulva, hiszen a bal és a jobb oldal felcserélődik",
+     "csak a tükörre merőleges irányban megfordulva (a jobb kezünk a képen is jobb oldalon van, csak elölről látjuk)"
+    ]
+   ]
+  },
+  {
+   "block_id": "e7ca211c-ce29-4411-9b92-cf15cb205ecb",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a reflektorok (reflektor)”",
+   "explanation": "Ismétlődő zárójeles szómagyarázat.",
+   "source_note": "szerkesztési hiba",
+   "replace": [
+    [
+     "a reflektorok (reflektor) a gépjárművek",
+     "a reflektorok a gépjárművek"
+    ]
+   ]
+  },
+  {
+   "block_id": "e7ca211c-ce29-4411-9b92-cf15cb205ecb",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Valódi kép … a telefonunk által rögzített kép valódi” és „valódi kép (valódi kép)”",
+   "explanation": "Az érzékelőn valóban valódi kép keletkezik, de a példa zavaros: a tükörben látott kép látszólagos, a fotó pedig már rögzített felvétel. A valódi kép lényege, hogy a fénysugarak ténylegesen találkoznak, ezért ernyőre vetíthető.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Real_image",
+     "title": "Real image",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A valódi kép (valódi kép) az, amelyet egy fényérzékeny felületre, például fényképezőgép érzékelőjére vetítünk.",
+     "A valódi kép az, amelynél a fénysugarak ténylegesen találkoznak, ezért ernyőre vagy fényképezőgép érzékelőjére vetíthető."
+    ],
+    [
+     " Például, amikor a telefonunk kamerájával tükröződünk egy tükörben, a tükörben látott kép látszólagos, míg a telefonunk által rögzített kép valódi.",
+     " Például a tükörben látott kép látszólagos, a telefon lencséje viszont az érzékelőn valódi képet hoz létre."
+    ]
+   ]
+  },
+  {
+   "block_id": "e7ca211c-ce29-4411-9b92-cf15cb205ecb",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„fókusz (fókusz) … a képtávolság a tükör és a látszólagos kép közötti távolság”",
+   "explanation": "A fókusz csak gyűjtőtükörnél (homorúnál) a sugarak találkozási pontja; a képtávolság valódi képre is értendő. A zárójeles ismétlések üresek.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Focal_length",
+     "title": "Focal length",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A fókusz (fókusz) az a pont, ahol a fényhullámok egyesülnek. A tárgytávolság (tárgytávolság) az a távolság, amely a tükör és a megfigyelt tárgy között van, míg a képtávolság (képtávolság) a tükör és a látszólagos kép közötti távolságot jelenti.",
+     "A fókusz az a pont, ahol a homorú tükörre érkező párhuzamos fénysugarak összegyűlnek. A tárgytávolság a tükör és a tárgy közötti távolság, a képtávolság pedig a tükör és a kép (valódi vagy látszólagos) közötti távolság."
+    ]
+   ]
+  },
+  {
+   "block_id": "e7ca211c-ce29-4411-9b92-cf15cb205ecb",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„ha egy tükör elé helyezünk egy lámpát, és megfigyeljük, hol találkozik a fény a falon, akkor láthatjuk, hogy a tükör fókuszpontja hol van”",
+   "explanation": "A fókusztávolságot távoli fényforrással (párhuzamos sugarakkal) mérjük; a közeli lámpa képe a képletből számítható helyre esik, nem a fókuszba. A lencsés mondat is zavaros.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Focal_length",
+     "title": "Focal length",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Például, ha egy tükör elé helyezünk egy lámpát, és megfigyeljük, hol találkozik a fény a falon, akkor láthatjuk, hogy a tükör fókuszpontja hol van. Ezen kívül, ha egy lencsét használunk, akkor a fókusztávolságot a lencse és a tárgy távolságának változtatásával is meghatározhatjuk.",
+     "Például egy homorú tükörrel egy távoli ablak vagy a Nap képét egy papírlapra vetítjük, és megmérjük a tükör és a papír távolságát: az a fókusztávolság. Lencsénél is ugyanígy lehet mérni, vagy a lencsetörvénnyel a tárgy- és képtávolság ismeretében kiszámítani."
+    ]
+   ]
+  },
+  {
+   "block_id": "e7ca211c-ce29-4411-9b92-cf15cb205ecb",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az állatok színlátásáról szóló kártya a tükrök leckében; „a ragadozó madarak sokkal szélesebb spektrumot látnak … ami segíti a prédáik észlelésében”",
+   "explanation": "Nem tartozik a tükrökhöz; a madarak többségének négy csaptípusa van, az egyik az UV-re érzékeny, de azt, hogy a ragadozók ezzel a zsákmányt jobban észlelik, vitatott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bird_vision",
+     "title": "Bird vision",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ezzel szemben a ragadozó madarak, mint a sólymok, sokkal szélesebb spektrumot látnak, beleértve az ultraibolya fényt is, ami segíti őket a prédáik észlelésében.",
+     "Ezzel szemben a madarak többségének négy csaptípusa van, közülük az egyik az ultraibolya fényre érzékeny."
+    ]
+   ]
+  },
+  {
+   "block_id": "5b82c471-0a61-4913-83d4-d11a50d0af33",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„fénytörés (fény törése) … különböző sűrűségű anyagokon halad át”",
+   "explanation": "Nem a tömegsűrűség, hanem az optikai sűrűség (törésmutató) számít; a zárójeles rész üres ismétlés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Refraction",
+     "title": "Refraction",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A fénytörés (fény törése) akkor következik be, amikor a fény különböző sűrűségű anyagokon halad át.",
+     "A fénytörés akkor következik be, amikor a fény az egyik átlátszó anyagból egy másik, más törésmutatójú anyagba lép."
+    ]
+   ]
+  },
+  {
+   "block_id": "5b82c471-0a61-4913-83d4-d11a50d0af33",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Ezt a színkép (kialakult színkép) néven ismerjük”",
+   "explanation": "Automatikus szómagyarázat-maradvány, értelmetlen zárójelben.",
+   "source_note": "szerkesztési hiba",
+   "replace": [
+    [
+     "Ezt a színkép (kialakult színkép) néven ismerjük",
+     "Ezt színképnek (spektrumnak) nevezzük"
+    ]
+   ]
+  },
+  {
+   "block_id": "5b82c471-0a61-4913-83d4-d11a50d0af33",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„egy kézi nagyító (magnifying glass) … éles képet alkot a fókuszpontban”",
+   "explanation": "Angol glossza magyar szövegben; a nagyító akkor nagyít, ha a tárgy a fókusztávolságon belül van, és látszólagos képet ad; a fókuszpont a párhuzamos sugarak találkozási pontja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Magnifying_glass",
+     "title": "Magnifying glass",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "például egy kézi nagyító (magnifying glass) használatával",
+     "például egy kézi nagyítóval"
+    ],
+    [
+     "Amikor a nagyítót a tárgyra irányítjuk, a fény a lencsén keresztül fókuszálódik, és egy éles képet alkot a fókuszpontban.",
+     "Ha a nagyítót a Nap felé tartjuk, a párhuzamos sugarak a fókuszpontban gyűlnek össze, és éles, fényes foltot alkotnak."
+    ]
+   ]
+  },
+  {
+   "block_id": "5b82c471-0a61-4913-83d4-d11a50d0af33",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a napfény visszaverődésekor szivárvány színek jelennek meg a víz felszínén” és „szappanhártyát … színképeket alkossunk”",
+   "explanation": "A színek a falon vagy a plafonon jelennek meg, nem a víz felszínén; a szappanhártya színeit nem törés, hanem interferencia adja (nem prizma-színkép).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Soap_bubble",
+     "title": "Soap bubble",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Thin-film_interference",
+     "title": "Thin-film interference",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a napfény visszaverődésekor szivárvány színek jelennek meg a víz felszínén",
+     "a visszavert napfény a falon színes sávként jelenik meg"
+    ],
+    [
+     "Ezen kívül optikai rácsot és szappanhártyát is használhatunk, hogy különböző színképeket alkossunk.",
+     "Optikai rácsot (például CD-t) is használhatunk, a szappanhártya színei pedig interferenciából erednek."
+    ]
+   ]
+  },
+  {
+   "block_id": "5b82c471-0a61-4913-83d4-d11a50d0af33",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Az érintés nélküli bankkártyás fizetésnél a fényhullámok segítségével olvassák le a kártya adatait”",
+   "explanation": "Az érintés nélküli fizetés (NFC) 13,56 MHz-es rádiófrekvenciás közeli mezővel működik, nem látható fénnyel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Near-field_communication",
+     "title": "Near-field communication",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az érintés nélküli bankkártyás fizetésnél a fényhullámok segítségével olvassák le a kártya adatait, így a fény és a technológia összekapcsolódik a mindennapi életben.",
+     "Az érintés nélküli bankkártyás fizetés viszont nem fényt, hanem 13,56 MHz-es rádióhullámot (NFC) használ, az optikai szálak pedig a fényt vezetik, így a fény és a technológia összekapcsolódik a mindennapi életben."
+    ]
+   ]
+  },
+  {
+   "block_id": "764d3e48-2fe3-4152-a22e-634b902cdde0",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A lencse a fényt úgy fókuszálja, hogy az a retinára vetődjön” és angol glosszák (cornea, pupil, lens)",
+   "explanation": "A szem törőképességének kb. kétharmadát a szaruhártya adja; a lencse a finom élességállítást végzi. Angol zárójeles glosszák magyar szövegben.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Human_eye",
+     "title": "Human eye",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "szaruhártyán (cornea)",
+     "szaruhártyán"
+    ],
+    [
+     "pupillán (pupil)",
+     "pupillán"
+    ],
+    [
+     "a lencséhez (lens)",
+     "a lencséhez"
+    ],
+    [
+     "A lencse a fényt úgy fókuszálja, hogy az a retinára (hártya) vetődjön.",
+     "A szaruhártya és a lencse együtt fókuszálja úgy a fényt, hogy az a retinára (hártya) vetüljön; a törés nagyobb részét a szaruhártya végzi, a lencse az élességet állítja be."
+    ]
+   ]
+  },
+  {
+   "block_id": "764d3e48-2fe3-4152-a22e-634b902cdde0",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A pupilla szabályozza, mennyi fény jut be”",
+   "explanation": "A pupilla csak nyílás; a szivárványhártya (írisz) izmai változtatják a méretét.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pupil",
+     "title": "Pupil",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A pupilla szabályozza, mennyi fény jut be",
+     "A szivárványhártya a pupilla méretének változtatásával szabályozza, mennyi fény jut be"
+    ]
+   ]
+  },
+  {
+   "block_id": "764d3e48-2fe3-4152-a22e-634b902cdde0",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„egy másik, kevésbé sűrű anyagba lép”",
+   "explanation": "Teljes visszaverődésnél a fény nem lép be a ritkább közegbe; a feltétel az optikailag ritkább közeg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Total_internal_reflection",
+     "title": "Total internal reflection",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "egy másik, kevésbé sűrű anyagba lép, és az érkezési szög meghaladja a kritikus szöget",
+     "egy optikailag ritkább anyag felé halad, és a beesési szög meghaladja a határszöget; ekkor nem lép ki, hanem teljesen visszaverődik"
+    ]
+   ]
+  },
+  {
+   "block_id": "8991dd31-b971-43aa-a1db-237cf7d6a8ff",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A Vénusz fázisai „alátámasztották a heliocentrikus világképet”",
+   "explanation": "A Vénusz fázisai a Ptolemaiosz-féle geocentrikus rendszert cáfolták, de a Tycho Brahe-féle rendszerrel is összefértek, tehát önmagukban nem bizonyították a heliocentrikus világképet.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Phases_of_Venus",
+     "title": "Phases of Venus",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+     "title": "Galileo Galilei",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "ami alátámasztotta a heliocentrikus világképet",
+     "ami a Ptolemaiosz-féle világkép ellen szólt"
+    ]
+   ]
+  },
+  {
+   "block_id": "8991dd31-b971-43aa-a1db-237cf7d6a8ff",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A naplemente vöröses színe a fény hosszabb utazási idejének köszönhető”",
+   "explanation": "Nem az idő, hanem a légkörben megtett út hossza számít: hosszabb úton a kék fény nagyobb része kiszóródik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Rayleigh_scattering",
+     "title": "Rayleigh scattering",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a fény hosszabb utazási idejének köszönhető, amely során a kék és zöld fény egy része szétszóródik",
+     "annak köszönhető, hogy a fény hosszabb utat tesz meg a légkörben, és közben a kék és zöld fény nagy része kiszóródik a nyalábból"
+    ],
+    [
+     " Ez a jelenség gyakran megfigyelhető a városok felett, amikor a nap lenyugszik.",
+     ""
+    ]
+   ]
+  },
+  {
+   "block_id": "8991dd31-b971-43aa-a1db-237cf7d6a8ff",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„E színek megjelenése a vízcseppek méretétől és a napfény szögétől is függ”",
+   "explanation": "A színek szögét (kb. 42°) a víz törésmutatója szabja meg, a cseppméret a sáv élességét befolyásolja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Rainbow",
+     "title": "Rainbow",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "E színek megjelenése a vízcseppek méretétől és a napfény szögétől is függ.",
+     "A vörös fény kb. 42°-nál, az ibolya kb. 40°-nál látszik a Nappal szembeni iránytól mérve; a cseppek mérete a sáv élességét befolyásolja."
+    ]
+   ]
+  },
+  {
+   "block_id": "8991dd31-b971-43aa-a1db-237cf7d6a8ff",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„kiegészítő színek … piros és zöld … ha két kiegészítő színt keverünk, a végeredmény szürke vagy fekete”",
+   "explanation": "Fizikailag a kiegészítő színek fényként összeadva fehéret adnak (pl. kék–sárga, vörös–cián, zöld–bíbor); a vörös és zöld fény összege sárga. A festők színkörének párjai (piros–zöld) festékkeverésre vonatkoznak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Complementary_colors",
+     "title": "Complementary colors",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "mint például a piros és zöld, vagy a kék és narancs",
+     "mint például a kék és a sárga (a festők színkörében a piros és a zöld)"
+    ],
+    [
+     "akkor a végeredmény szürke vagy fekete lesz",
+     "akkor festékként sötétszürke, fényként összeadva fehér lesz az eredmény"
+    ]
+   ]
+  },
+  {
+   "block_id": "8991dd31-b971-43aa-a1db-237cf7d6a8ff",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a Kepler-féle távcső bonyolultabb, de nagyobb nagyítást biztosít”",
+   "explanation": "A nagyítást mindkét típusnál az objektív és a szemlencse fókusztávolságának hányadosa adja; a Kepler-távcső két gyűjtőlencsét használ, nagyobb látómezőt ad, de fordított képet.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Refracting_telescope",
+     "title": "Refracting telescope",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a Kepler-féle távcső bonyolultabb, de nagyobb nagyítást biztosít",
+     "a Kepler-féle távcső két gyűjtőlencsét használ, nagyobb látómezőt ad, de fordított képet mutat"
+    ]
+   ]
+  },
+  {
+   "block_id": "8991dd31-b971-43aa-a1db-237cf7d6a8ff",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A gyűjtő lencsék a mikroszkópban a fényt összegyűjtik, míg a szórólencsék a megfigyelt tárgy képméretét növelik meg.”",
+   "explanation": "Az összetett mikroszkópban két gyűjtőlencse-rendszer (objektív és szemlencse) nagyít, szórólencse nincs; nem a szórólencse növeli a képméretet.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Optical_microscope",
+     "title": "Optical microscope",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A gyűjtő lencsék a mikroszkópban a fényt összegyűjtik, míg a szórólencsék a megfigyelt tárgy képméretét növelik meg.",
+     "A mikroszkópban két gyűjtőlencse-rendszer, az objektív és a szemlencse nagyítja egymás után a tárgyat; szórólencse nincs benne."
+    ]
+   ]
+  },
+  {
+   "block_id": "f85fe298-69eb-41c8-aebb-06b26df325e2",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "B) látszólagos és egyenesen áll / D) látszólagos és megfordított",
+   "explanation": "A síktükörben a tükörre merőleges irány megfordul, ezért a „megfordított” kifejezés a D válasznál kétértelmű; a D-t egyértelműen hamissá kell tenni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mirror_image",
+     "title": "Mirror image",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[3]": "A kép mindig valódi és fejjel lefelé áll."
+   }
+  },
+  {
+   "block_id": "f85fe298-69eb-41c8-aebb-06b26df325e2",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "C) „A valódi kép a fény valódi helyét mutatja, a látszólagos pedig a tükörben látható képet”; D) „a valódi kép a tükör előtt, a látszólagos mögötte”",
+   "explanation": "A C nem definíció, a D homorú tükörnél gyakran igaz, tehát két válasz vitatható. A helyes megkülönböztetés: a valódi kép ernyőre vetíthető.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Real_image",
+     "title": "Real image",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[2]": "A valódi kép ernyőre vetíthető, mert a fénysugarak ténylegesen találkoznak, a látszólagos nem.",
+    "options[3]": "A valódi kép mindig nagyobb, mint a látszólagos.",
+    "explanation": "Valódi képnél a fénysugarak ténylegesen találkoznak a kép helyén, ezért ernyőre vetíthető; látszólagos képnél csak úgy tűnik, mintha onnan indulnának."
+   }
+  },
+  {
+   "block_id": "cf0afd3d-ffad-448d-85d0-db496be58244",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Mi a fénytörés (fény törése) jelensége?”",
+   "explanation": "Üres ismétlés zárójelben.",
+   "source_note": "szerkesztési hiba",
+   "set": {
+    "question": "Mi a fénytörés jelensége?"
+   }
+  },
+  {
+   "block_id": "cf0afd3d-ffad-448d-85d0-db496be58244",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Melyik kifejezés határozza meg a fény terjedésének irányát a törés során?”",
+   "explanation": "Pontatlan kérdés: a törésmutató azt jellemzi, mennyire töri egy anyag a fényt, az irányt a beesési szög és a két törésmutató együtt szabja meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Refractive_index",
+     "title": "Refractive index",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik mennyiség jellemzi, hogy egy anyag mennyire töri a fényt?"
+   }
+  },
+  {
+   "block_id": "cf0afd3d-ffad-448d-85d0-db496be58244",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Mi a képtávolság (képtávolság) definíciója?”",
+   "explanation": "Üres ismétlés zárójelben.",
+   "source_note": "szerkesztési hiba",
+   "set": {
+    "question": "Mi a képtávolság definíciója?"
+   }
+  },
+  {
+   "block_id": "fe6683cb-58ec-45f0-a9b2-ac733e6bb2f3",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Milyen távcsövet használt Galilei a csillagok megfigyelésére? A) Galilei távcsöve”",
+   "explanation": "A kérdés önmagát válaszolja meg (Galilei távcsöve), tehát nem mér tudást.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+     "title": "Galileo Galilei",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Milyen lencsékből állt Galilei távcsöve?",
+    "options": [
+     "Gyűjtő objektívből és szóró szemlencséből",
+     "Két gyűjtőlencséből",
+     "Egy homorú tükörből",
+     "Két szórólencséből"
+    ],
+    "explanation": "Galilei távcsöve gyűjtő objektívből és szóró szemlencséből állt, ezért a képe egyenes állású."
+   }
+  },
+  {
+   "block_id": "fe6683cb-58ec-45f0-a9b2-ac733e6bb2f3",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„kiegészítő színek … például a piros és a zöld”",
+   "explanation": "A piros és a zöld fény összegéből sárga lesz, nem fehér; fehéret pl. a kék és a sárga (vagy vörös és cián) ad.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Complementary_colors",
+     "title": "Complementary colors",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "A kiegészítő színek fényként összeadva fehér fényt adnak, például a kék és a sárga vagy a vörös és a cián."
+   }
+  },
+  {
+   "block_id": "09d7f500-883b-421d-9f16-679b6056d890",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Milyen optikai eszközben használunk kozmetikai tükröt? D) Kozmetikai tükör”",
+   "explanation": "A kérdés értelmetlen, a helyes válasz a kérdésben szereplő fogalom ismétlése.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Concave_mirror",
+     "title": "Concave mirror",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik tükör ad nagyított, egyenes állású képet, ha közel tartjuk az arcunkhoz?",
+    "options": [
+     "Domború tükör",
+     "Síktükör",
+     "Homorú tükör",
+     "Két, egymásra merőleges síktükör"
+    ],
+    "correct": "C",
+    "explanation": "A kozmetikai tükör homorú: a fókusztávolságon belül nagyított, egyenes állású, látszólagos képet ad."
+   }
+  },
+  {
+   "block_id": "0c767e68-ab5c-4261-af87-4f6ad9edde89",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A cél az volt, hogy a fényt és a képet visszaverjék, lehetővé téve a látás javítását.”",
+   "explanation": "A tükör nem a látás javítására készült; az ezüstözött üvegtükör a 19. század közepén, Liebig 1835-ös ezüstözési eljárása nyomán vált olcsóvá.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mirror",
+     "title": "Mirror",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A cél az volt, hogy a fényt és a képet visszaverjék, lehetővé téve a látás javítását.",
+     "Az olcsó ezüstözött üvegtükör a 19. század közepén, Justus von Liebig ezüstözési eljárása után terjedt el."
+    ]
+   ]
+  },
+  {
+   "block_id": "0c767e68-ab5c-4261-af87-4f6ad9edde89",
+   "card_index": 0,
+   "field": "try_advanced",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "try_advanced: „Készíts egy egyszerű távcsövet gyűjtőlencsékkel …”",
+   "explanation": "Ez a feladat nem a tükrökhöz tartozik.",
+   "source_note": "tartalmi tévesztés",
+   "apply": "none"
+  },
+  {
+   "block_id": "1e9024d7-eecb-4e54-9854-b5d808e7f02b",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Tölts meg egy átlátszó poharat vízzel, és tartsd a napfénybe. Figyeld meg, hogyan keletkeznek színes fénycsíkok a víz felszínén.”",
+   "explanation": "A színes sáv a pohár mögötti felületen jelenik meg (és csak megfelelő szögben), nem a víz felszínén; a megbízható változat a vízbe állított tükör.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Prism",
+     "title": "Prism",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "try_basic": "Tölts meg egy lapos tálat vízzel, állíts bele ferdén egy kis síktükröt, és fordítsd a napos ablak felé úgy, hogy a visszavert fény a falra essen. A falon színes sáv jelenik meg, mert a fény színenként eltérően törik."
+   }
+  },
+  {
+   "block_id": "1e9024d7-eecb-4e54-9854-b5d808e7f02b",
+   "card_index": 0,
+   "field": "try_advanced",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Üres try_advanced",
+   "explanation": "Nincs haladó feladat.",
+   "source_note": "üres mező",
+   "apply": "none"
+  },
+  {
+   "block_id": "27cbf4bf-ecd7-417e-9f22-b0af4395e3ce",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "unverifiable",
+   "severity": "medium",
+   "claim": "„A kutatók az 1800-as évek végén kezdték el vizsgálni …”",
+   "explanation": "Kitalált történeti tényállítás; a kutyák kétszínű látását viselkedéskísérletekkel az 1980-as években igazolták (Neitz, Geist és Jacobs, 1989).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dog#Vision",
+     "title": "Dog#Vision",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A kutatók az 1800-as évek végén kezdték el vizsgálni, hogy az állatok hogyan érzékelik a színeket. A munkájuk során felfedezték, hogy",
+     "Az 1980-as évek végén végzett viselkedéskísérletek (Neitz és munkatársai, 1989) kimutatták, hogy"
+    ]
+   ]
+  },
+  {
+   "block_id": "27cbf4bf-ecd7-417e-9f22-b0af4395e3ce",
+   "card_index": 0,
+   "field": "today",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a kutyák és macskák megfelelő táplálásában”",
+   "explanation": "A színlátásnak nincs köze a táplálás megtervezéséhez.",
+   "source_note": "tartalmi tévesztés",
+   "apply": "none"
+  },
+  {
+   "block_id": "6c116b94-b3c4-4262-8fcf-c4296be0e876",
+   "card_index": 0,
+   "field": "try_advanced",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Üres try_advanced",
+   "explanation": "Nincs haladó feladat.",
+   "source_note": "üres mező",
+   "apply": "none"
+  }
+ ]
+}

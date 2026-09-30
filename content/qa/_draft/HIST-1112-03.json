@@ -1,0 +1,485 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világblokkok: ad2df0e0 (Az első világháború) és 38f64eef (Magyarország a világháborúban) egyetlen kártyát sem tartalmaz.",
+   "Villámháború/Blitzkrieg: második világháborús fogalom az első világháborús leckében."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "e4969a49-2d8e-40d8-8377-e63b873b968e",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a Monarchia is részt vett a gyarmati versenyben, bár nem volt olyan jelentős”",
+   "explanation": "Az Osztrák–Magyar Monarchiának nem voltak gyarmatai; egyetlen tengerentúli birtoka egy kis tiencsini (kínai) koncesszió volt 1901 és 1917 között. Erőltetett magyar vonatkozás.",
+   "source_note": "Austria-Hungary concession in Tianjin (1901–1917)",
+   "replace": [
+    [
+     "bár nem volt olyan jelentős, mint más nagyhatalmak",
+     "gyarmatai azonban nem voltak, csak egy kis kínai koncessziója (Tiencsin, 1901–1917)"
+    ]
+   ]
+  },
+  {
+   "block_id": "e4969a49-2d8e-40d8-8377-e63b873b968e",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A 1914-es szarajevói merénylet”",
+   "explanation": "Névelőhiba: 1914 előtt „az” áll (az egyes szám kiejtése miatt).",
+   "source_note": "magyar helyesírás",
+   "replace": [
+    [
+     "A 1914-es szarajevói merénylet",
+     "Az 1914-es szarajevói merénylet"
+    ]
+   ]
+  },
+  {
+   "block_id": "e4969a49-2d8e-40d8-8377-e63b873b968e",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A magyar nézőpontból a Brit Birodalom politikai döntései közvetett hatással voltak a Monarchia sorsára is”",
+   "explanation": "Erőltetett, tartalmatlan magyar vonatkozás; helyette a lényeges tényt kell írni: az 1904-es angol–francia megegyezés és az 1907-es angol–orosz egyezmény hozta létre az antantot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Triple_Entente",
+     "title": "Triple Entente",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Entente_Cordiale",
+     "title": "Entente Cordiale",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A magyar nézőpontból a Brit Birodalom politikai döntései közvetett hatással voltak a Monarchia sorsára is, mivel a háború kimenetele befolyásolta a térség politikai térképét.",
+     "Az 1904-es angol–francia megegyezés (entente cordiale) és az 1907-es angol–orosz egyezmény Nagy-Britanniát az antant tagjává tette."
+    ]
+   ]
+  },
+  {
+   "block_id": "e4969a49-2d8e-40d8-8377-e63b873b968e",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Franciaország, Nagy-Britannia és Oroszország, akik szövetkeztek a központi hatalmakkal”",
+   "explanation": "Az antant a központi hatalmak ellenfele volt, nem szövetségese; a mondat a jelentés ellentétét állítja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Triple_Entente",
+     "title": "Triple Entente",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "akik szövetkeztek a központi hatalmakkal, mint Németország és az Osztrák-Magyar Monarchia",
+     "akik a központi hatalmak (Németország, az Osztrák-Magyar Monarchia) ellen harcoltak"
+    ]
+   ]
+  },
+  {
+   "block_id": "6607b34b-257b-4c50-a7b4-19b750a3a0f4",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A merényletet egy szerb nacionalista követte el”; a hadüzenet kétszer szerepel",
+   "explanation": "A merénylő, Gavrilo Princip boszniai szerb (Habsburg-alattvaló) volt, a Fiatal Bosznia tagja. A merénylet Szarajevóban, Bosznia-Hercegovinában történt. A második mondat megismétli a hadüzenetet (duplikált szöveg).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Gavrilo_Princip",
+     "title": "Gavrilo Princip",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Assassination_of_Archduke_Franz_Ferdinand",
+     "title": "Assassination of Archduke Franz Ferdinand",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A merényletet egy szerb nacionalista követte el, ami feszültséget okozott a Monarchia és Szerbia között.",
+     "A merényletet Gavrilo Princip, a Fiatal Bosznia nevű szervezet boszniai szerb tagja követte el; a Monarchia Szerbiát tette felelőssé."
+    ],
+    [
+     "A gyilkosság következtében az Osztrák-Magyar Monarchia hadat üzent Szerbiának, ami láncreakciót indított el, és számos országot bevont a konfliktusba.",
+     "Ez láncreakciót indított el, amely számos országot bevont a konfliktusba."
+    ]
+   ]
+  },
+  {
+   "block_id": "6607b34b-257b-4c50-a7b4-19b750a3a0f4",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Központi Hatalmak … a Török Birodalom”; „Antant, amelyhez Oroszország, Franciaország és Nagy-Britannia tartozott”",
+   "explanation": "A helyes név Oszmán Birodalom; a Központi Hatalmakhoz 1915-től Bulgária is tartozott. Az antanthoz később Olaszország (1915), Románia (1916), az USA (1917) és mások is csatlakoztak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Central_Powers",
+     "title": "Central Powers",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Allies_of_World_War_I",
+     "title": "Allies of World War I",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "az Osztrák-Magyar Monarchia és a Török Birodalom",
+     "az Osztrák-Magyar Monarchia, az Oszmán Birodalom és Bulgária"
+    ],
+    [
+     "Oroszország, Franciaország és Nagy-Britannia tartozott",
+     "kezdetben Oroszország, Franciaország és Nagy-Britannia tartozott (később Olaszország, Románia, az Egyesült Államok és mások is csatlakoztak)"
+    ]
+   ]
+  },
+  {
+   "block_id": "6607b34b-257b-4c50-a7b4-19b750a3a0f4",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1917-re a forradalmak következtében Oroszország kilépett a háborúból”",
+   "explanation": "Oroszország nem 1917-ben lépett ki: fegyverszünet 1917 decemberében, a breszt-litovszki béke 1918. március 3-án.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Brest-Litovsk",
+     "title": "Treaty of Brest-Litovsk",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Russian_Revolution",
+     "title": "Russian Revolution",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "1917-re a forradalmak következtében Oroszország kilépett a háborúból",
+     "1917 forradalmai után Oroszország békét kötött (1918. március, Breszt-Litovszk), és kilépett a háborúból"
+    ]
+   ]
+  },
+  {
+   "block_id": "6607b34b-257b-4c50-a7b4-19b750a3a0f4",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A „villámháború” (Blitzkrieg) az első világháború leckéjében mint a német hadsereg taktikája",
+   "explanation": "A fogalom a második világháborúból ered. Az első világháborúban a németek a Schlieffen-tervtől vártak gyors győzelmet, de az 1914. szeptemberi marne-i csata után a nyugati front megmerevedett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Blitzkrieg",
+     "title": "Blitzkrieg",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Schlieffen_Plan",
+     "title": "Schlieffen Plan",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A német hadsereg alkalmazta ezt a taktikát a második világháborúban, különösen a háború elején, amikor gyorsan próbálták legyőzni ellenfeleiket.",
+     "Elnevezése a második világháborúból ered (1939–1941); az első világháborúban a németek a Schlieffen-tervtől vártak gyors győzelmet Franciaország ellen, de az 1914. szeptemberi marne-i csata után a nyugati front megmerevedett."
+    ]
+   ]
+  },
+  {
+   "block_id": "6607b34b-257b-4c50-a7b4-19b750a3a0f4",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A háború alatt a német hadsereg irányítását is ő felügyelte”",
+   "explanation": "1916-tól a tényleges katonai irányítást Hindenburg és Ludendorff (Legfelsőbb Hadvezetőség) gyakorolta, a császár szerepe formális volt. Vilmos 1918. november 9-én kényszerült lemondásra.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Wilhelm_II,_German_Emperor",
+     "title": "Wilhelm II, German Emperor",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Paul_von_Hindenburg",
+     "title": "Paul von Hindenburg",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A háború alatt a német hadsereg irányítását is ő felügyelte, és a háború folyamán többször is megpróbálta növelni Németország befolyását Európában.",
+     "A háború alatt a tényleges katonai irányítás 1916-tól Hindenburg és Ludendorff kezében volt."
+    ]
+   ]
+  },
+  {
+   "block_id": "b2b5be27-df10-41e6-b0c1-632463d85b44",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Az antant hatalmak különböző ígéretekkel próbálták megnyerni a Monarchia nemzetiségeit, köztük a magyarokat is”",
+   "explanation": "Az antant a magyaroknak nem tett ígéreteket; a cseheknek, szlovákoknak, románoknak és délszlávoknak igen (londoni szerződés 1915, bukaresti szerződés 1916, korfui nyilatkozat 1917).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_London_(1915)",
+     "title": "Treaty of London (1915)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Bucharest_(1916)",
+     "title": "Treaty of Bucharest (1916)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a Monarchia nemzetiségeit, köztük a magyarokat is",
+     "a Monarchia nemzetiségeit (például a cseheket, a szlovákokat, a románokat és a délszlávokat)"
+    ]
+   ]
+  },
+  {
+   "block_id": "0838918c-15db-43f8-8863-7642d14333be",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az 1910-es évek elején a nagyhatalmak szövetségi rendszerekbe szerveződtek”",
+   "explanation": "A Hármas Szövetség 1882-ben, az antant 1904–1907 között alakult; 1914-ben Olaszország semleges maradt, és 1915-ben az antant oldalán lépett be.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Triple_Alliance_(1882)",
+     "title": "Triple Alliance (1882)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Triple_Entente",
+     "title": "Triple Entente",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "A nagyhatalmak szövetségi rendszerekbe szerveződtek: 1882-ben létrejött a Hármas Szövetség (Németország, Osztrák-Magyar Monarchia, Olaszország), 1904–1907 között pedig az antant (Franciaország, Oroszország, Nagy-Britannia). Olaszország 1914-ben semleges maradt, majd 1915-ben az antant oldalán lépett be. Ezek a szövetségek növelték a feszültséget, mert egy helyi háború könnyen globális konfliktussá válhatott."
+   }
+  },
+  {
+   "block_id": "0838918c-15db-43f8-8863-7642d14333be",
+   "card_index": 2,
+   "field": "year",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az imperializmus-blokk éve 1914, a szöveg a 19. század végéről szól",
+   "explanation": "Az év a megjelenő tartalomhoz nem illik; mind a négy blokk azonos, általános 1914-es évet kap.",
+   "source_note": "a világblokk generált év-mezője",
+   "apply": "none"
+  },
+  {
+   "block_id": "62ec0545-037a-4597-8b31-17aa3fc8c28c",
+   "card_index": 3,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A német forradalom hatására Magyarországon is politikai változások indultak el, amelyek végül a Tanácsköztársaság megalakulásához vezettek”",
+   "explanation": "A magyarországi őszirózsás forradalom 1918. október 31-én győzött, a német forradalom (november) előtt; a Tanácsköztársaság 1919 márciusában belső válság és a Vix-jegyzék hatására alakult, nem a német forradalom közvetlen hatására.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Aster_Revolution",
+     "title": "Aster Revolution",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Soviet_Republic",
+     "title": "Hungarian Soviet Republic",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "link_hu": "Magyarországon a polgári demokratikus forradalom, az őszirózsás forradalom már 1918. október 31-én győzött Károlyi Mihály vezetésével; a Tanácsköztársaság csak 1919 márciusában alakult meg."
+   }
+  },
+  {
+   "block_id": "5927af3c-279f-4731-b7c8-63218a3d1bf0",
+   "card_index": 0,
+   "field": "options[3]",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "D) Japán, Ausztrália, Kanada",
+   "explanation": "Japán az antant oldalán harcolt, Ausztrália és Kanada a Brit Birodalom részeként szintén; a D) válasz részben helyes, több jó válasz lehetséges.",
+   "source_note": "Japan in World War I",
+   "set": {
+    "options[3]": "Olaszország, Bulgária, Törökország"
+   }
+  },
+  {
+   "block_id": "5927af3c-279f-4731-b7c8-63218a3d1bf0",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Kulcs C: „a háború kirobbantója”; magyarázat: „a trónörökös meggyilkolása Szerbiában történt”",
+   "explanation": "A merénylet Szarajevóban, Bosznia-Hercegovinában történt, nem Szerbiában; Szerbia nem „kirobbantója” volt a háborúnak, hanem a Monarchia ultimátuma és hadüzenete célpontja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Assassination_of_Archduke_Franz_Ferdinand",
+     "title": "Assassination of Archduke Franz Ferdinand",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Miért került Szerbia a válság középpontjába 1914-ben?",
+    "options": [
+     "Mert a Monarchia Szerbiát tette felelőssé a szarajevói merényletért, és hadat üzent neki.",
+     "Mert a Központi Hatalmak szövetségese volt.",
+     "Mert semleges maradt a konfliktusban.",
+     "Mert Szerbia üzent hadat elsőként Oroszországnak."
+    ],
+    "correct": "A",
+    "explanation": "A merényletet egy boszniai szerb követte el Szarajevóban; a Monarchia Szerbiát tette felelőssé, ultimátumot küldött, majd 1914. július 28-án hadat üzent neki."
+   }
+  },
+  {
+   "block_id": "fc94300c-cfd3-4419-a31f-e28fa8823172",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Mi a villámháború fogalma az első világháború kontextusában? … a központi hatalmak stratégiájára”",
+   "explanation": "A „villámháború” elnevezés a második világháborúból ered; az első világháború elején a Schlieffen-terv gyors győzelmet célzott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Blitzkrieg",
+     "title": "Blitzkrieg",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Schlieffen_Plan",
+     "title": "Schlieffen Plan",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Mit jelent a villámháború (Blitzkrieg) fogalma?",
+    "explanation": "A villámháború gyors, meglepetésszerű támadással rövid idő alatt kíván döntést elérni; a fogalom a második világháborúból ered."
+   }
+  },
+  {
+   "block_id": "fc94300c-cfd3-4419-a31f-e28fa8823172",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Melyik ország volt Olaszország háborús szövetségese?” (a válaszok szövetségek, nem országok)",
+   "explanation": "Rosszul feltett kérdés: a lehetséges válaszok szövetségi rendszerek, nem országok.",
+   "source_note": "kérdésszöveg",
+   "set": {
+    "question": "Melyik szövetség oldalán lépett be Olaszország a háborúba 1915-ben?"
+   }
+  },
+  {
+   "block_id": "fc94300c-cfd3-4419-a31f-e28fa8823172",
+   "card_index": 4,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„1918. november 11-én ért véget, a fegyverszünet aláírásával”",
+   "explanation": "November 11-én a német fegyverszünet lépett életbe; a Monarchia fegyverszünete november 3-án, a békeszerződések 1919–1920-ban születtek (Trianon: 1920).",
+   "source_note": "Armistice of Villa Giusti (1918. november 3.)",
+   "set": {
+    "explanation": "A nyugati fronton 1918. november 11-én lépett életbe a német fegyverszünet; a Monarchia november 3-án kötött fegyverszünetet, a békeszerződések 1919–1920-ban születtek."
+   }
+  },
+  {
+   "block_id": "598ea148-be81-45a5-944e-cc59db5f6eed",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Ki volt Magyarország uralkodója a világháború alatt?”",
+   "explanation": "Ferenc József 1916. november 21-ig uralkodott, IV. Károly csak ezután; a kérdésnek egy időpontra kell vonatkoznia, különben a C) is jó.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Charles_I_of_Austria",
+     "title": "Charles I of Austria",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Franz_Joseph_I_of_Austria",
+     "title": "Franz Joseph I of Austria",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Ki lett Ferenc József halála (1916) után Magyarország királya?"
+   }
+  },
+  {
+   "block_id": "598ea148-be81-45a5-944e-cc59db5f6eed",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a magyar hadifoglyok … gyakran kényszermunkára ítélték őket”",
+   "explanation": "Nyelvtanilag hibás mondat (alany nélküli tárgyas szerkezet), és az általánosítás túlzó.",
+   "source_note": "magyar helyesírás",
+   "set": {
+    "explanation": "A magyar hadifoglyok közül sokan kényszermunkára kerültek, és rossz körülmények között éltek."
+   }
+  },
+  {
+   "block_id": "598ea148-be81-45a5-944e-cc59db5f6eed",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Melyik ország területén zajlott a román front?” Key A: Románia",
+   "explanation": "A román front nagy része 1916-ban Erdélyben, akkor magyar területen zajlott; a kérdés ezért félrevezető.",
+   "source_note": "Romanian campaign (1916)",
+   "set": {
+    "question": "Melyik ország lépett be 1916-ban az antant oldalán, és nyitott új frontot a Monarchia ellen?",
+    "explanation": "Románia 1916. augusztus 27-én lépett be az antant oldalán, és csapatai betörtek Erdélybe."
+   }
+  },
+  {
+   "block_id": "bef52da6-058a-4d2c-b42f-9c8aecb0d9fb",
+   "card_index": 5,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A Doberdó Olaszország területén található”",
+   "explanation": "A Doberdó-fennsík a háború idején az Osztrák–Magyar Monarchia területén (Osztrák Tengermellék) volt, ma Olaszország és Szlovénia határán fekszik.",
+   "source_note": "Doberdò del Lago",
+   "set": {
+    "explanation": "A Doberdó az olasz fronton fekvő, karsztos fennsík volt, ma Olaszország és Szlovénia határán található; fontos harctér volt az első világháborúban."
+   }
+  }
+ ]
+}

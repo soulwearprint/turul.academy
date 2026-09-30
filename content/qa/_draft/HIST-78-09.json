@@ -1,0 +1,313 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "0095883f-b7da-4888-87e8-50e468089485",
+   "card_index": 0,
+   "field": "year, body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1990. november 9-én a berlini fal leomlása…”; year: 1990.",
+   "explanation": "A berlini fal 1989. november 9-én nyílt meg; 1990. október 3-án történt a német újraegyesítés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall",
+     "title": "Fall of the Berlin Wall",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "replace": [
+    [
+     "1990. november 9-én a berlini fal leomlása",
+     "1989. november 9-én a berlini fal leomlása"
+    ]
+   ],
+   "set": {
+    "year": 1989
+   }
+  },
+  {
+   "block_id": "10d1cfd4-d11b-4979-9d20-97d0b15e55bd",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A berlini fal leomlása közvetlenül hozzájárult a magyarországi rendszerváltoztatáshoz”",
+   "explanation": "Fordítva: Magyarország 1989. szeptember 11-én megnyitotta határát a keletnémet menekültek előtt (előtte augusztus 19-én a páneurópai piknik), ami hozzájárult a fal leomlásához; a Magyar Köztársaságot október 23-án, még a fal leomlása előtt kiáltották ki.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pan-European_Picnic",
+     "title": "Pan-European Picnic",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "set": {
+    "link_hu": "Magyarország szerepe kulcsfontosságú volt: 1989 nyarán a páneurópai pikniken, majd szeptember 11-én a határnyitással keletnémetek tízezrei jutottak nyugatra — ez siettette a fal leomlását."
+   }
+  },
+  {
+   "block_id": "10d1cfd4-d11b-4979-9d20-97d0b15e55bd",
+   "card_index": 2,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A csehszlovák bársonyos forradalom „inspirálta a magyar ellenzéket, és elősegítették a magyarországi tárgyalásos rendszerváltoztatás elindulását”.",
+   "explanation": "Időrendi hiba: a bársonyos forradalom 1989 novemberében zajlott, amikor a magyar kerekasztal-tárgyalások (június–szeptember) már lezárultak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Velvet_Revolution",
+     "title": "Velvet Revolution",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "set": {
+    "link_hu": "A lengyel kerekasztal-tárgyalások (1989 február–április) mintát adtak a magyar Nemzeti Kerekasztalnak; a magyar és a lengyel változások pedig bátorították a csehszlovák és a keletnémet ellenzéket."
+   }
+  },
+  {
+   "block_id": "a4caeaec-1cab-4d4a-bb93-f52676230525",
+   "card_index": 1,
+   "field": "body, link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1956 októberében … Egyiptom államosította a Szuezi-csatornát”; a válság „a nemzetközi figyelmet irányította Magyarországra”.",
+   "explanation": "Egyiptom 1956 júliusában államosította a csatornát; októberben a brit–francia–izraeli támadás zajlott. A szuezi válság épp elvonta a világ figyelmét Magyarországról, és megosztotta a nyugati hatalmakat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Suez_Crisis",
+     "title": "Suez Crisis",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "replace": [
+    [
+     "1956 októberében a szuezi válság is zajlott, amikor Egyiptom államosította a Szuezi-csatornát",
+     "1956 októberében a szuezi válság is zajlott: miután Egyiptom júliusban államosította a Szuezi-csatornát, október végén Nagy-Britannia, Franciaország és Izrael megtámadta Egyiptomot"
+    ]
+   ],
+   "set": {
+    "link_hu": "A szuezi válság éppen a magyar forradalom napjaiban tört ki: elvonta a világ figyelmét Budapestről, a Nyugatot pedig megosztotta — ez megkönnyítette a szovjet beavatkozást."
+   }
+  },
+  {
+   "block_id": "a4caeaec-1cab-4d4a-bb93-f52676230525",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az ENSZ Közgyűlése később foglalkozott a szovjet beavatkozással, de nem november 4-én.”",
+   "explanation": "November 4-én a Biztonsági Tanács határozatát a Szovjetunió megvétózta, és még aznap a Közgyűlés rendkívüli ülése felszólította a Szovjetuniót csapatai kivonására.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "replace": [
+    [
+     "Az ENSZ Közgyűlése később foglalkozott a szovjet beavatkozással, de nem november 4-én.",
+     "November 4-én a Biztonsági Tanács határozatát a Szovjetunió megvétózta; még aznap az ENSZ Közgyűlése rendkívüli ülésen felszólította a Szovjetuniót csapatai kivonására — hiába."
+    ]
+   ]
+  },
+  {
+   "block_id": "a4caeaec-1cab-4d4a-bb93-f52676230525",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "1956-ban a feszültség „különösen a berlini válság” miatt éleződött.",
+   "explanation": "A berlini válságok 1948–49-ben, illetve 1958–1961 között voltak; 1956-ban nem.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Berlin_Crisis_of_1961",
+     "title": "Berlin Crisis of 1961",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "replace": [
+    [
+     "különösen a berlini válság és a közép-európai országokban zajló események miatt",
+     "különösen a lengyel és a magyar események, valamint a szuezi válság miatt"
+    ]
+   ]
+  },
+  {
+   "block_id": "c055da5b-d9e0-4b6e-95f7-abc0063e5574",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A kádári megtorlásról csak az szerepel, hogy „sok embert börtönbe zártak”.",
+   "explanation": "A megtorlás során mintegy 230 embert végeztek ki (köztük 1958-ban Nagy Imre miniszterelnököt), több tízezret börtönöztek be vagy internáltak, kb. 200 ezer ember menekült el az országból.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Imre_Nagy",
+     "title": "Imre Nagy",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "replace": [
+    [
+     "Az 1956-os eseményeket követően sok embert börtönbe zártak, és a megtorlás során a rendszert kritizáló személyeket elnyomták.",
+     "Az 1956-os eseményeket követően mintegy 230 embert kivégeztek — 1958-ban Nagy Imre miniszterelnököt is —, több tízezret börtönbe zártak vagy internáltak, és mintegy 200 ezer ember menekült el az országból."
+    ]
+   ]
+  },
+  {
+   "block_id": "0024f39a-4c1d-47dc-9ded-6410fb172fff",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a második gazdaság, vagyis a feketegazdaság”",
+   "explanation": "A második gazdaság nagyrészt legális volt (háztáji, kisiparos „maszek”, 1982-től gazdasági munkaközösségek); csak egy része volt feketegazdaság.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Goulash_communism",
+     "title": "Goulash communism",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "replace": [
+    [
+     "a második gazdaság, vagyis a feketegazdaság kiépülése kezdődött meg",
+     "a második gazdaság kiépülése kezdődött meg — ez részben legális volt (háztáji, maszek kisiparos, 1982-től a gazdasági munkaközösségek), részben feketegazdaság —,"
+    ]
+   ]
+  },
+  {
+   "block_id": "20ca0796-3f02-4033-b4a5-fa359b3660e5",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A második gazdaság, vagyis a feketegazdaság”",
+   "explanation": "Mint fent: a második gazdaság nagyrészt legális volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Goulash_communism",
+     "title": "Goulash communism",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "replace": [
+    [
+     "A második gazdaság, vagyis a feketegazdaság kialakulása",
+     "A második gazdaság (a háztáji, a maszek munka és részben a feketegazdaság) kialakulása"
+    ]
+   ]
+  },
+  {
+   "block_id": "c1f2ff66-3175-41f4-9835-f1294c999faa",
+   "card_index": 4,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a második gazdaság, vagyis a feketepiac kialakulásához vezetett”",
+   "explanation": "A második gazdaság nem azonos a feketepiaccal.",
+   "set": {
+    "explanation": "A hiánygazdaságban sok termékre várni kellett vagy kapcsolatok kellettek hozzá; ez a második gazdaság (háztáji, maszek munka) és részben a feketepiac kialakulásához vezetett."
+   },
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Goulash_communism",
+     "title": "Goulash communism",
+     "accessed": "2026-09-29"
+    }
+   ]
+  },
+  {
+   "block_id": "40122346-d817-4863-84b5-25770ab8cfaa",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Antall József 1990-től 1994-ig vezette a magyar kormányt”",
+   "explanation": "Antall József 1993. december 12-én hivatalában elhunyt; utódja Boross Péter lett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/J%C3%B3zsef_Antall",
+     "title": "József Antall",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "replace": [
+    [
+     "Antall József 1990-től 1994-ig vezette a magyar kormányt",
+     "Antall József 1990-től 1993 decemberében bekövetkezett haláláig vezette a magyar kormányt"
+    ]
+   ]
+  },
+  {
+   "block_id": "1028a8e0-9185-4abe-9c79-2b6d66b40b79",
+   "card_index": 4,
+   "field": "question, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik politikai vezető kezdeményezte a NATO-tagság irányába való lépéseket?” — megjelölt: Horn Gyula; magyarázat: Orbán Viktor.",
+   "explanation": "A válasz és a magyarázat ellentmond; a nyugati integráció célját már az Antall-kormány kitűzte, a NATO-népszavazást 1997-ben a Horn-kormány tartotta, a belépés 1999-ben az Orbán-kormány idején történt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1997_Hungarian_NATO_membership_referendum",
+     "title": "1997 Hungarian NATO membership referendum",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "set": {
+    "question": "Melyik miniszterelnök idején tartották 1997-ben a NATO-csatlakozásról szóló népszavazást?",
+    "explanation": "Az 1997-es népszavazást Horn Gyula kormánya írta ki; a szavazók 85%-a igennel szavazott. Magyarország 1999-ben, az Orbán-kormány idején lett a NATO tagja."
+   }
+  },
+  {
+   "block_id": "1028a8e0-9185-4abe-9c79-2b6d66b40b79",
+   "card_index": 1,
+   "field": "question, explanation",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "apply": "review",
+   "claim": "„Mikor vált Magyarország jogállammá?” — megjelölt: 1990.",
+   "explanation": "Kétértelmű: a jogállamot kimondó alkotmánymódosítás és a köztársaság kikiáltása 1989. október 23-án történt (A válasz), az első szabad választás 1990-ben.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Republic_(1989%E2%80%932012)",
+     "title": "Hungarian Republic (1989–2012)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "set": {
+    "question": "Melyik évben tartották Magyarországon az első szabad országgyűlési választást?",
+    "explanation": "Az első szabad országgyűlési választást 1990 tavaszán tartották; a köztársaságot és a jogállamot kimondó alkotmánymódosítást már 1989. október 23-án kihirdették."
+   }
+  },
+  {
+   "block_id": "24e05f11-00da-4c72-91c6-37a17f62c853",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "apply": "review",
+   "claim": "„Orbán Viktor kormányzása alatt a politikai diskurzus radikalizálódott…”",
+   "explanation": "Mai politikusról szóló értékítélet, nem ellenőrizhető tény; egy iskolai tananyagban semleges, tényszerű megfogalmazás szükséges (a mélyítő kártya ugyanezt ismétli).",
+   "source_note": "Értékítélet — tankönyvi semlegességi szempont, nem tényellenőrzési kérdés.",
+   "replace": [
+    [
+     "Orbán Viktor kormányzása alatt a politikai diskurzus radikalizálódott, és a Fidesz a közéletben domináló párttá vált. A politikai váltás új kihívások elé állította a demokratikus intézményeket és a társadalmi párbeszédet.",
+     "Első kormánya idején (1998–2002) Magyarország a NATO tagja lett, és folytatódtak az európai uniós csatlakozási tárgyalások; a Fidesz a jobboldal meghatározó pártjává vált."
+    ]
+   ]
+  }
+ ]
+}

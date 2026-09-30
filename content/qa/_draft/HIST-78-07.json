@@ -1,0 +1,21 @@
+{"coverage":{"read":["text","deep","world","quiz"],"lint_only":["story","visual"]},"findings": [
+{"block_id":"5669e1a8-8f4e-4a29-a02d-59b80358aaef","card_index":0,"field":"link_hu","verdict":"wrong","severity":"medium",
+ "claim":"„A Truman-doktrína és a Marshall-terv következményeként Magyarország is a szovjet érdekszféra alá került”","explanation":"Magyarország a szovjet megszállás és a nagyhatalmi megállapodások miatt került szovjet érdekszférába, nem a Marshall-terv miatt. A Marshall-segélyt Moszkva nyomására Magyarország el sem fogadhatta.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Marshall_Plan","title":"Marshall Plan","accessed":"2026-09-29"}],
+ "set":{"link_hu":"A Marshall-segélyt a kelet-európai országok is megkaphatták volna, de Moszkva nyomására Magyarország is visszautasította — így a Nyugat újjáépítéséből kimaradt."}},
+{"block_id":"5669e1a8-8f4e-4a29-a02d-59b80358aaef","card_index":2,"field":"link_hu","verdict":"wrong","severity":"medium",
+ "claim":"A koreai háború idején „Magyarország is a Varsói Szerződés keretein belül támogatta a szovjet érdekeket”.","explanation":"Időrendi hiba: a Varsói Szerződés csak 1955-ben jött létre, a koreai háború 1953-ban véget ért. Magyarország Észak-Koreát egészségügyi csoportokkal (tábori kórházzal) támogatta.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Warsaw_Pact","title":"Warsaw Pact","accessed":"2026-09-29"}],
+ "set":{"link_hu":"A szovjet tömb országaként Magyarország is segítette Észak-Koreát: magyar orvosok és ápolók tábori kórházban dolgoztak az országban."}},
+{"block_id":"5669e1a8-8f4e-4a29-a02d-59b80358aaef","card_index":3,"field":"link_hu","verdict":"unverifiable","severity":"low",
+ "claim":"A kubai rakétaválság „Magyarországon is fokozta a szovjet érdekek melletti elköteleződést”.","explanation":"Forrás nélküli általánosítás. Tényszerű következmény: 1963-ban közvetlen „forródrót” épült Washington és Moszkva között.",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Moscow%E2%80%93Washington_hotline","title":"Moscow–Washington hotline","accessed":"2026-09-29"}],
+ "set":{"link_hu":"A válság után, 1963-ban közvetlen „forródrótot” építettek Washington és Moszkva között, hogy egy újabb válságban azonnal beszélni tudjanak — ez a mi biztonságunkat is szolgálta."}},
+{"block_id":"e5bc0c71-825b-4228-bb21-4e3a57ee5144","card_index":4,"field":"body","verdict":"wrong","severity":"medium",
+ "claim":"„A háború során több mint 5 millió ember vesztette életét”","explanation":"A koreai háború áldozatainak számát a becslések mintegy 3 millió főre teszik (katonák és civilek együtt).",
+ "sources":[{"url":"https://en.wikipedia.org/wiki/Korean_War","title":"Korean War","accessed":"2026-09-29"}],
+ "replace":[["A háború során több mint 5 millió ember vesztette életét","A háborúban a becslések szerint mintegy 3 millió ember vesztette életét, többségük civil"]]},
+{"block_id":"e2f8d477-7a6d-4d02-8f55-cd2288e8d03f","card_index":4,"field":"did_you_know","verdict":"unverifiable","severity":"low",
+ "claim":"Az ENSZ Közgyűlése „az egyetlen olyan nemzetközi fórum, ahol minden tagállamnak egyenlő szavazati joga van”.","explanation":"Más nemzetközi szervezetekben is minden államnak egy szavazata van; az „egyetlen” túlzás.",
+ "set":{"did_you_know":"Az ENSZ Közgyűlésében minden tagállamnak egy szavazata van — a kis Máltának ugyanannyi, mint Kínának. A Biztonsági Tanácsban viszont öt állandó tag vétójoggal rendelkezik."}}
+]}

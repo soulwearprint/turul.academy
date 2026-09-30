@@ -1,0 +1,718 @@
+{
+ "nat_id": "HIST-78-11",
+ "topic_id": "9f0bbb60-5e4c-44c8-929c-4f57f76e16c2",
+ "title_hu": "Népesedés és társadalom",
+ "grade": 8,
+ "lessons": [
+  {
+   "lesson_id": "e4a6a853-8a84-40fc-a868-ee7c9acee178",
+   "title_hu": "A hagyományos/ agrártársadalmak",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "a2d70c56-1fb7-40fa-9442-58bce2042ed6",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A letelepedés folyamata a mezőgazdasági forradalom idején kezdődött, körülbelül 10 ezer évvel ezelőtt. Az emberek elkezdtek állandó helyeken élni, ami lehetővé tette számukra a növénytermesztést és állattenyésztést. Magyarország területén is megjelentek az első földműves közösségek, amelyek a termőföldek hasznosításával biztosították az élelmiszerellátást. E folyamat jelentős hatással volt a népesség növekedésére és a társadalmi struktúrák alakulására.",
+       "type": "text",
+       "heading": "Letelepedés és élelemtermelés",
+       "key_term": "letelepedés, növénytermesztés, állattenyésztés"
+      },
+      {
+       "body": "A hagyományos agrártársadalmakban az önellátás volt a jellemző, ahol a családok saját szükségleteik kielégítésére termeltek. Az árutermelés fokozatosan megjelent, ami lehetővé tette a kereskedelem kialakulását. A felesleg előállítása segítette a közösségek közötti kapcsolatok erősödését és a piaci viszonyok fejlődését. Magyarországon a középkorban a mezőgazdasági termelés bővülése hozzájárult a városok fejlődéséhez és a kereskedelem fellendüléséhez.",
+       "type": "text",
+       "heading": "Önellátás és árutermelés",
+       "key_term": "önellátás, árutermelés, kereskedelem"
+      },
+      {
+       "body": "A népességnövekedés a hagyományos agrártársadalmakban számos tényező által korlátozott volt. Az élelemtermelés mennyisége, az időjárási viszonyok és a járványok mind befolyásolták a népesség alakulását. A nagy pestisjárvány, amely a 14. században Európát sújtotta, drámai mértékben csökkentette a népességet, és hatással volt a társadalmi struktúrákra is. Magyarországon a pestis következtében sok faluban elnéptelenedés következett be, ami a gazdasági életre is kihatott.",
+       "type": "text",
+       "heading": "A népességnövekedés korlátai",
+       "key_term": "népességnövekedés korlátai, nagy pestisjárvány"
+      },
+      {
+       "body": "A hagyományos agrártársadalmakban a társadalmi hierarchia szigorú volt, amelyben a földbirtokosok, a parasztok és a kézművesek különböző szerepeket töltöttek be. A családok alapvető egységet képeztek, ahol a családfő irányította a háztartást és a termelést. A társadalmi osztályok közötti különbségek a gazdasági erőforrások birtoklásán alapultak. Magyarországon a feudális rendszer kialakulása és a földesúri viszonyok meghatározták a társadalom szerkezetét és működését.",
+       "type": "text",
+       "heading": "A hagyományos társadalom hierarchiája",
+       "key_term": "hierarchia, család"
+      },
+      {
+       "body": "A háziasítás a növények és állatok emberi igények szerinti szelektív tenyésztését jelenti, amely a mezőgazdaság alapját képezte. Magyarországon a háziasított növények, mint például a búza és az árpa, valamint az állatok, mint a szarvasmarha és a juh, jelentős szerepet játszottak az élelemtermelésben. A háziasítás lehetővé tette a termelés fokozását és a népesség növekedését, ami a középkori magyar társadalom fejlődését is segítette. A mezőgazdasági innovációk hozzájárultak a gazdasági stabilitáshoz és a közösségek fejlődéséhez.",
+       "type": "text",
+       "heading": "A háziasítás folyamata",
+       "key_term": "háziasítás"
+      }
+     ]
+    },
+    {
+     "block_id": "5c182cc2-f49d-48ff-bc91-512b5deae972",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A falusi közösség tagjai a napfelkeltével kezdték a munkát. A földművesek fáradhatatlanul szántották a földet, vetették a magokat, majd gondoskodtak a növények ápolásáról. A növénytermesztés nem csupán megélhetést biztosított, hanem a családok önellátását is szolgálta. A háziasítás során a különböző növényfajták és állatok kiválasztása lehetővé tette a gazdaságok fejlődését és a termelés növelését. A munka kemény volt, de a jó termés örömmel töltötte el a közösséget.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A földművelés mindennapjai"
+      },
+      {
+       "body": "A családi élet középpontjában a közös étkezések álltak. A falusi asszonyok a frissen termett zöldségeket, gyümölcsöket és a háztáji állatoktól származó ételeket készítették el. Az asztalra kerülő ételek nemcsak táplálóak voltak, hanem a családi kötelékeket is erősítették. Az ünnepek különösen fontosak voltak, amikor a közönséges ételek mellett különleges fogások is készültek, ünnepi díszítések kíséretében.",
+       "mood": "otthon",
+       "type": "story",
+       "heading": "Család és táplálkozás"
+      },
+      {
+       "body": "A falusi közösségek életében a helyi hatóságok szerepe meghatározó volt. A falusi elöljárók döntéseikben figyelembe vették a közösség szükségleteit. A hivatalos ügyek intézése, mint például a földek nyilvántartása, a közösség tagjainak együttműködését igényelte. A helyi közösség összetartó ereje segítette a tagokat abban, hogy együtt küzdjenek a nehézségekkel, mint például a nagy pestisjárvány idején.",
+       "mood": "közösség",
+       "type": "story",
+       "heading": "Helyi közösségek és hatalom"
+      },
+      {
+       "body": "A falusi emberek mindennapjait áthatotta a hit és a vallás. Az ünnepek, mint például a betakarítás ünnepe, különleges alkalmak voltak, amikor a közösség együtt ünnepelt. A templom látogatása, a közös imák és az ünnepi szokások megerősítették a közösségi összetartást. A vallás nemcsak a szellemi élet része volt, hanem a mindennapi cselekedeteket is irányította.",
+       "mood": "hit",
+       "type": "story",
+       "heading": "Hit és ünnepek"
+      },
+      {
+       "body": "A gyermekek nevelése a családokban kezdődött. A falusi asszonyok és férfiak a gyerekeknek a mindennapi munkák során tanították meg a szükséges készségeket, mint a földművelés vagy az állattenyésztés. Az iskolák, ha voltak, gyakran csak a fiúk számára biztosítottak oktatást, míg a lányok a háztartási feladatokat tanulták. A közösség figyelte a gyerekek fejlődését, hiszen ők képviselték a jövőt.",
+       "mood": "nevelés",
+       "type": "story",
+       "heading": "Gyermekek és nevelés"
+      },
+      {
+       "body": "A falusi emberek életét a betegségek és járványok is befolyásolták. A nagy pestisjárvány idején a közösség összefogott, hogy támogassák egymást a nehéz időkben. A gyógyítók és a bábaasszonyok hagyományos gyógymódokat alkalmaztak, hogy enyhítsenek a szenvedéseken. Az emberek gyakran imádkoztak a gyógyulásért, és a közösség ereje segítette a betegeket a felépülésben.",
+       "mood": "betegség",
+       "type": "story",
+       "heading": "Betegségek és gyógyítás"
+      }
+     ]
+    },
+    {
+     "block_id": "52d186be-8c91-4a58-a42b-09bccc0343ba",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A növénytermesztés és állattenyésztés háziasításának idővonala.",
+       "heading": "Letelepedés és élelemtermelés",
+       "description": "A letelepedés folyamata és az élelemtermelés fejlődése az őskortól a vaskorig. A diagram bemutatja a különböző növényfajták (pl. búza, árpa) és állatfajták (pl. juh, szarvasmarha) háziasításának időpontjait és helyszíneit.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az önellátás és árutermelés központjai Magyarországon.",
+       "heading": "Önellátás és árutermelés",
+       "description": "Egy térkép, amely bemutatja a különböző magyar régiókat, ahol az önellátás és árutermelés jellemző volt a középkorban. Az egyes területeken kiemelt termények és árucikkek láthatók.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A népességnövekedés korlátai a hagyományos társadalmakban.",
+       "heading": "A népességnövekedés korlátai",
+       "description": "Egy diagram, amely a népességnövekedés főbb korlátait mutatja be, mint például a természeti katasztrófák, betegségek (például a nagy pestisjárvány) és háborúk hatását a népességre.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A hagyományos társadalom hierarchiája.",
+       "heading": "A hagyományos társadalom hierarchiája",
+       "description": "Egy hierarchikus diagram, amely bemutatja a hagyományos agrártársadalom társadalmi felépítését, beleértve a földbirtokosokat, parasztokat és cselédeket, valamint a családon belüli szerepeket.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A háziasítás folyamata az őskortól a vaskorig.",
+       "heading": "A háziasítás folyamata",
+       "description": "Egy idővonal, amely bemutatja a háziasítás főbb eseményeit és időpontjait, kezdve a vadon élő növények és állatok megjelenésével, egészen a mezőgazdaság kialakulásáig.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A nagy pestisjárvány elterjedése Európában.",
+       "heading": "A nagy pestisjárvány",
+       "description": "Egy térkép, amely a nagy pestisjárvány elterjedését mutatja be Európában a 14. században, kiemelve a legnagyobb érintett területeket és a járvány hatását a népességre.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A családi struktúrák a hagyományos társadalmakban.",
+       "heading": "Családi struktúrák a hagyományos társadalomban",
+       "description": "Egy diagram, amely bemutatja a családi struktúrák jellemzőit a hagyományos agrártársadalmakban, beleértve a többgenerációs családokat és a családtagok szerepeit.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "5818043d-02c1-41f2-86a5-5b1fce66a696",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A hagyományos agrártársadalmak a világ különböző részein, például Mezopotámiában, Egyiptomban és Kínában is megjelentek, ahol a háziasítás és az élelemtermelés alapvető szerepet játszott a társadalmak fejlődésében. Ezekben a kultúrákban a mezőgazdasági termelés lehetővé tette a népesség növekedését és a társadalmi hierarchia kialakulását. A kereskedelem fejlődése, amely az árutermelés növekedésével párhuzamosan zajlott, hozzájárult a társadalmi kapcsolatok bővüléséhez.",
+       "type": "world",
+       "year": "",
+       "heading": "A hagyományos agrártársadalmak kialakulása",
+       "link_hu": ""
+      }
+     ]
+    },
+    {
+     "block_id": "8dc4e635-3024-4c90-bbc3-0d8e30410b63",
+     "mode": "deep",
+     "scope": "lesson",
+     "level": "emelt",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A letelepedés lehetővé tette az emberek számára, hogy stabil környezetben éljenek, ami hozzájárult a közösségek fejlődéséhez. Az állandó lakóhelyek kialakulása lehetővé tette a mezőgazdasági termelés fejlesztését, ami több élelmiszer előállítását tette lehetővé. Ez a stabilitás segítette a népesség növekedését, mivel a közösségek jobban tudtak alkalmazkodni a környezeti változásokhoz. A letelepedés révén az emberek képesek voltak specializálódni, például kézműves mesterségeket kifejleszteni, ami gazdagította a társadalmi struktúrákat.",
+       "type": "deep",
+       "think": "Miért lehetett nehéz a letelepedés az első földművesek számára?",
+       "anchor": 0,
+       "heading": "Miért lett fontos a letelepedés?",
+       "did_you_know": "",
+       "think_answer": "A letelepedés nehézségei közé tartozott az új környezethez való alkalmazkodás, a természeti erőforrások kihasználása és a közösségi együttműködés kialakítása."
+      },
+      {
+       "body": "Az árutermelés megjelenése lehetővé tette a közösségek számára, hogy felesleget termeljenek, amit elcserélhettek más árukra. Ez a cserekereskedelem alapját képezte, és segítette a gazdasági kapcsolatok kialakulását. A kereskedelem révén különböző közösségek tudtak egymással kapcsolatba lépni, ami hozzájárult a kulturális és technológiai ismeretek terjedéséhez. Az árutermelés és kereskedelem fejlődése a városok növekedését is elősegítette, mivel a városok központi szerepet játszottak a kereskedelmi hálózatokban.",
+       "type": "deep",
+       "think": "Miért volt fontos a felesleg termelése az árutermelés szempontjából?",
+       "anchor": 1,
+       "heading": "Hogyan alakult ki a kereskedelem?",
+       "did_you_know": "",
+       "think_answer": "A felesleg lehetővé tette, hogy a közösségek árukat cseréljenek más szükségletek kielégítésére, így szélesebb körű gazdasági kapcsolatok alakulhattak ki."
+      },
+      {
+       "body": "A hagyományos agrártársadalmakban a népesség növekedését számos tényező korlátozta, például az élelemtermelés korlátozott kapacitása és az időjárási viszonyok. Az éhínségek gyakoriak voltak, amikor a termés nem volt elegendő. A járványok, mint a pestis, szintén drasztikusan csökkentették a népességet. Ezek a tényezők együtt határozták meg, hogy egy közösség mennyire tudott növekedni és fejlődni. A népességnövekedés korlátai miatt a társadalmaknak folyamatosan alkalmazkodniuk kellett a változó körülményekhez.",
+       "type": "deep",
+       "think": "Hogyan befolyásolhatta az időjárás a középkori mezőgazdasági termelést?",
+       "anchor": 2,
+       "heading": "Mi korlátozta a népességnövekedést?",
+       "did_you_know": "",
+       "think_answer": "Az időjárás közvetlenül befolyásolta a terméshozamot; például egy szárazság csökkenthette a termést, ami éhínséget okozhatott."
+      },
+      {
+       "body": "A hagyományos agrártársadalmakban a társadalmi hierarchia szigorúsága a föld birtoklásán alapult. A földbirtokosok határozták meg a gazdasági és politikai viszonyokat, mivel a föld volt a legfontosabb erőforrás. A parasztok és kézművesek munkájukkal hozzájárultak a közösségek fenntartásához, de kevesebb hatalommal rendelkeztek. A hierarchia fenntartása érdekében a társadalmi normák és törvények szigorúan szabályozták az egyes osztályok közötti kapcsolatokat. Ez a rendszer biztosította a stabilitást, de korlátozta az egyéni mozgást a társadalmi rétegek között.",
+       "type": "deep",
+       "think": "Miért lehetett nehéz a társadalmi osztályok közötti mozgás?",
+       "anchor": 3,
+       "heading": "Miért volt szigorú a társadalmi hierarchia?",
+       "did_you_know": "",
+       "think_answer": "A társadalmi osztályok közötti mozgást a szigorú törvények és szokások akadályozták, amelyek meghatározták az egyes csoportok jogait és kötelességeit."
+      },
+      {
+       "body": "A háziasítás lehetővé tette, hogy az emberek olyan növényeket és állatokat termeljenek, amelyek jobban megfeleltek igényeiknek. A szelektív tenyésztés révén a termelés hatékonyabbá vált, ami hozzájárult a népesség növekedéséhez. Az élelemtermelés biztonsága lehetővé tette a közösségek számára, hogy nagyobb és összetettebb társadalmakat hozzanak létre. A háziasítás emellett új technológiák és módszerek kifejlesztését is ösztönözte, például az eke használatát a földművelésben.",
+       "type": "deep",
+       "think": "Miért volt fontos a szelektív tenyésztés a mezőgazdaságban?",
+       "anchor": 4,
+       "heading": "Hogyan segítette a háziasítás a fejlődést?",
+       "did_you_know": "",
+       "think_answer": "A szelektív tenyésztés lehetővé tette, hogy az emberek olyan növényeket és állatokat válasszanak, amelyek jobban alkalmazkodtak a környezethez és termékenyebbek voltak."
+      }
+     ]
+    },
+    {
+     "block_id": "e4f900c4-abcc-44ed-93f8-9cee0bd7495a",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Vadon élő állatok és növények emberi használatra való nevelése",
+        "B) Az állatok és növények vadászatának megszüntetése",
+        "C) A földművelés teljes elhagyása",
+        "D) A városi élet kialakulása"
+       ],
+       "question": "Mi a háziasítás folyamata?",
+       "explanation": "A háziasítás azt jelenti, hogy az emberek a vadon élő állatokat és növényeket elkezdték nevelni és termesztés alá vonni, ami alapvetően megváltoztatta az élelemtermelést.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 14. század közepén",
+        "B) 16. század elején",
+        "C) 18. század végén",
+        "D) 20. század elején"
+       ],
+       "question": "Mikor zajlott le a nagy pestisjárvány, amely jelentős hatással volt a népességre?",
+       "explanation": "A nagy pestisjárvány a 14. század közepén érte el Európát, és drámai mértékben csökkentette a népességet, ami hatással volt a társadalmi struktúrákra is.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Elősegítette a városok kialakulását",
+        "B) Megszüntette a kereskedelmet",
+        "C) Csökkentette a népességet",
+        "D) Növelte a nomád életformát"
+       ],
+       "question": "Milyen hatással volt a háziasítás a társadalmak fejlődésére?",
+       "explanation": "A háziasítás lehetővé tette az állandó települések létrejöttét, ami elősegítette a városok kialakulását és a kereskedelem fejlődését.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Családi és közösségi alapú hierarchiák",
+        "B) Csak politikai hierarchiák",
+        "C) Nincs hierarchia",
+        "D) Csak gazdasági hierarchiák"
+       ],
+       "question": "Milyen társadalmi hierarchiák alakultak ki a hagyományos agrártársadalmakban?",
+       "explanation": "A hagyományos agrártársadalmakban a család és a közösség alapú hierarchiák alakultak ki, ahol a családfők és a közösségi vezetők fontos szerepet játszottak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Természeti katasztrófák és járványok",
+        "B) Csak gazdasági okok",
+        "C) A technológiai fejlődés",
+        "D) A városi életformák"
+       ],
+       "question": "Milyen tényezők korlátozták a népességnövekedést a hagyományos társadalmakban?",
+       "explanation": "A hagyományos társadalmakban a népességnövekedést gyakran korlátozták természeti katasztrófák és járványok, mint például a nagy pestisjárvány.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "aee0a3b6-0ed9-4bb2-b684-5294998ea6ed",
+   "title_hu": "A modern/ipari társadalmak",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "99bca85c-5c04-4f3a-adf9-13c5e01d5df1",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az ipari forradalom a 18. század végén kezdődött Angliában, majd elterjedt Európában és Észak-Amerikában. Ennek hatására jelentős népességnövekedés indult meg, amely Magyarországra is kiterjedt. A mezőgazdasági termelés mechanizálása és a jobb egészségügyi körülmények hozzájárultak ehhez a népességrobbanáshoz. A falvakból a városokba való elvándorlás következtében a városiasodás folyamata felgyorsult, ami új társadalmi kihívásokat hozott magával.",
+       "type": "text",
+       "heading": "Népességrobbanás az ipari forradalom idején",
+       "key_term": "népességrobbanás"
+      },
+      {
+       "body": "A 19. és 20. században Magyarországon is megfigyelhető volt a migráció, amely a gazdasági lehetőségek keresésével állt összefüggésben. A falusi lakosság jelentős része a városokba költözött, de a nemzetközi migráció is növekedett, főként a háborúk és politikai zűrzavarok következtében. A multikulturalizmus a különböző népcsoportok együttélését jelenti, amely Magyarországon is megjelent a különböző etnikai közösségek által. E jelenségek hozzájárultak a modern magyar társadalom sokszínűségéhez.",
+       "type": "text",
+       "heading": "Migráció és multikulturalizmus",
+       "key_term": "migráció, multikulturalizmus"
+      },
+      {
+       "body": "A 21. századra a fejlett országokban, így Magyarországon is, a népességfogyás jelei mutatkoznak. A csökkenő születési ráta, a népesség elöregedése és a migrációs folyamatok mind hozzájárulnak ehhez a jelenséghez. Ezzel szemben a fejlődő országokban, mint például Afrika egyes területein, a népességrobbanás tapasztalható. A különbségek megértése fontos a globális társadalmi és gazdasági folyamatok szempontjából.",
+       "type": "text",
+       "heading": "A fejlődő és fejlett világ népességfogyása",
+       "key_term": "népességfogyás"
+      },
+      {
+       "body": "A modern társadalmakban az egyenjogúság és az individualizmus kiemelt szerepet kapott. A nők jogaiért folytatott küzdelem a 20. század folyamán egyre hangsúlyosabbá vált, amely a munkaerőpiacon és a társadalmi élet különböző területein is megmutatkozott. Az ipari forradalom következményeként a társadalmi mobilitás lehetőségei bővültek, ami új lehetőségeket teremtett az emberek számára. A modern társadalmak jellemzője a különböző identitások és kultúrák elfogadása.",
+       "type": "text",
+       "heading": "A modern/ipari társadalom jellemzői",
+       "key_term": "egyenjogúság, individualizmus"
+      },
+      {
+       "body": "Semmelweis Ignác a 19. században végezte kutatásait, amelyek forradalmasították a szülészeti gyakorlatot. Ő volt az, aki felismerte, hogy a kézmosás jelentős szerepet játszik a fertőzések megelőzésében. Munkássága hozzájárult a modern orvostudomány alapjainak lefektetéséhez, és az egészségügyi ellátás javításához Magyarországon. Semmelweis öröksége ma is él, hiszen a higiénia és a megelőzés alapelvei a modern orvostudomány alapvető részét képezik.",
+       "type": "text",
+       "heading": "Semmelweis Ignác és az egészségügyi reformok",
+       "key_term": "Semmelweis Ignác"
+      },
+      {
+       "body": "A terrorizmus a 20. század második felében vált globálisan ismert jelenséggé, különösen a modern ipari társadalmakban. A terrorizmus célja, hogy félelmet keltsen és politikai célokat érjen el erőszakos eszközökkel. Az 1970-es években a terrorista csoportok, mint például a Vörös Brigádok vagy az Ír Köztársasági Hadsereg, jelentős hatást gyakoroltak Európára. A 2001. szeptember 11-i terrortámadások az Egyesült Államokban új szintre emelték a terrorizmus elleni küzdelmet, és világszerte szigorúbb biztonsági intézkedéseket eredményeztek. Magyarországon is fokozott figyelmet fordítanak a terrorizmus megelőzésére és a nemzetközi együttműködésre a terrorizmus elleni harcban.",
+       "type": "text",
+       "heading": "A terrorizmus megjelenése és hatása a modern társadalmakra",
+       "key_term": "terrorizmus"
+      }
+     ]
+    },
+    {
+     "block_id": "b9f8313d-431d-404d-8dcc-7be244201a81",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A gyári munkások napjai korán kezdődtek, amikor a nap még csak derengeni kezdett. A gépek zúgása és a munkások zajos beszélgetései töltötték meg a levegőt. Az ipari forradalom hatására sokan hagyták el a falujukat, hogy a városokban keressenek munkát. A gyárakban a munka nehéz volt, és a hosszú műszakok alatt a munkások fáradtságtól kimerülten végezték feladataikat. A fizetés alacsony volt, de a városokban élő családok számára a megélhetés egyetlen lehetőségét jelentette. A népességrobbanás miatt a gyárakban egyre több ember dolgozott, és a verseny élesedett.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A gyári munkások élete"
+      },
+      {
+       "body": "A városi családok élete sokszor szűkös otthonokban zajlott, ahol a gyermekek és felnőttek együtt éltek. Az otthonok berendezése egyszerű volt, a mindennapi étkezések gyakran tartalmaztak olcsó alapanyagokat, mint a kenyér és a krumpli. A családok ünnepeik alkalmával közösen készítettek ételeket, és a hagyományos ünnepi szokások fontos szerepet játszottak az életükben. A női szerepek változása is érezhető volt; sok asszony dolgozott a gyárakban, míg a háztartási feladatokat a gyermekekre hárították. A családok összetartása és a közös élmények segítettek a nehéz idők átvészelésében.",
+       "mood": "család",
+       "type": "story",
+       "heading": "A család és az otthon"
+      },
+      {
+       "body": "A vallás fontos szerepet játszott a városi közösségek életében. A templomok nemcsak a hit gyakorlásának helyszínei voltak, hanem a közösségi élet központjai is. Az emberek gyakran összegyűltek az ünnepeken, ahol közösen ünnepeltek, imádkoztak és támogatták egymást. A migráció miatt a városokban különböző kultúrák és vallások keveredtek, ami multikulturalizmushoz vezetett. Az emberek igyekeztek megtalálni a közös nevezőt, hogy békében élhessenek egymás mellett.",
+       "mood": "hit",
+       "type": "story",
+       "heading": "A hit és a közösség"
+      },
+      {
+       "body": "A gyermekek nevelése a családokban és az iskolákban egyaránt fontos volt. Az ipari társadalmakban a gyermekek gyakran korán kezdtek dolgozni, hogy hozzájáruljanak a család megélhetéséhez. Az iskolákban azonban egyre több gyermek tanult, és az oktatás szerepe nőtt. Az iskolákban a tudás átadása mellett a közösségi értékekre is figyeltek, amelyek segítették a fiatalokat abban, hogy felnőttként is helytálljanak a társadalomban. A nevelés során a tanárok fontos szerepet játszottak, sokszor a közösség megbecsült tagjaiként.",
+       "mood": "gyermekek",
+       "type": "story",
+       "heading": "A gyermekek nevelése és az iskola"
+      },
+      {
+       "body": "A modern ipari társadalmakban a betegségek terjedése komoly problémát jelentett. A városok zsúfolt lakóhelyei és a higiéniai körülmények hiánya járványokhoz vezetett. Az emberek sokszor kétségbeesetten kerestek gyógyírt, és a hagyományos orvoslás mellett egyre inkább figyelmet kaptak az új tudományos megközelítések. Semmelweis Ignác munkássága jelentős hatással volt a szülészet területén, hiszen rámutatott a fertőzések megelőzésének fontosságára. Az emberek életében a betegség és a gyógyítás kérdései mindennaposak voltak, és a közösségek összefogtak, hogy támogassák egymást a nehéz időkben.",
+       "mood": "betegség",
+       "type": "story",
+       "heading": "Betegségek és gyógyítás"
+      }
+     ]
+    },
+    {
+     "block_id": "dbe399f6-7194-4a0b-be70-280bbe7207bc",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A népességrobbanás hatása az ipari forradalmakra",
+       "heading": "Népességrobbanás",
+       "description": "A népességrobbanás idővonalán a 18. század végétől a 20. század közepéig tartó időszakot ábrázolja, kiemelve a népesség növekedésének ütemét és a főbb ipari forradalmak időpontjait (pl. 1780, 1850, 1900).",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A városiasodás folyamata Magyarországon",
+       "heading": "Városiasodás",
+       "description": "Egy térkép, amely bemutatja a 19. században a legnagyobb ipari városok elhelyezkedését Magyarországon (pl. Budapest, Szeged, Miskolc) és azok népességváltozását.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "Migrációs folyamatok Magyarországon",
+       "heading": "Migráció",
+       "description": "Egy diagram, amely a 20. század során Magyarországról elvándorló és az országba bevándorló népességet mutatja be, kiemelve a legfontosabb migrációs hullámokat.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A multikulturalizmus fejlődése Magyarországon",
+       "heading": "Multikulturalizmus",
+       "description": "Az idővonal bemutatja a multikulturalizmus megjelenését Magyarországon a 20. században, kiemelve a különböző etnikai csoportok jelenlétét és az integrációs folyamatokat.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A globalizáció hatásai Magyarországra",
+       "heading": "Globalizáció",
+       "description": "A globalizáció hatásait bemutató diagram, amely a gazdasági, kulturális és társadalmi összefonódások folyamatát ábrázolja Magyarország és a világ többi része között.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Semmelweis Ignác és a modern orvostudomány",
+       "heading": "Semmelweis Ignác",
+       "description": "Semmelweis Ignác arcképe, amely a 19. századi orvostudományban betöltött szerepét és a gyermekágyi láz megelőzésére tett javaslatait hangsúlyozza.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "A női szerepek változása a történelem során",
+       "heading": "Női szerepek változása",
+       "description": "Egy diagram, amely a női szerepek változását mutatja be a 19. századtól napjainkig, kiemelve a női munkavállalás növekedését és a társadalmi elvárások átalakulását.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "1956e617-029d-4d59-8473-481ab9fe1198",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A 19. század közepén, különösen az ipari forradalom idején, számos országban megfigyelhető volt a népességrobbanás. Az iparosodás következtében a mezőgazdaságból a városokba történő elvándorlás felgyorsult, ami jelentős városiasodáshoz vezetett. Ezen folyamatok hatására a társadalmi struktúrák is átalakuláson mentek keresztül, új társadalmi osztályok, mint a munkásosztály és a középosztály alakultak ki.",
+       "type": "world",
+       "year": "",
+       "heading": "A népességrobbanás és a modern társadalmak hatásai a világban",
+       "link_hu": ""
+      }
+     ]
+    },
+    {
+     "block_id": "dd9b430a-be78-4c6c-9404-cd1b17da044f",
+     "mode": "deep",
+     "scope": "lesson",
+     "level": "emelt",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az ipari forradalom idején a mezőgazdaságban bekövetkezett változások jelentősen hozzájárultak a népességnövekedéshez. A gépesítés lehetővé tette, hogy kevesebb emberrel több élelmiszert termeljenek, ami csökkentette az éhínség kockázatát. Az orvostudomány fejlődése és a jobb táplálkozás hozzájárult a halálozási arány csökkenéséhez. Emellett az orvostudomány fejlődése, például az oltások bevezetése, szintén hozzájárult a népesség növekedéséhez. Az emberek hosszabb ideig éltek a jobb egészségügyi ellátás miatt.",
+       "type": "deep",
+       "think": "Miért fontos a népesség növekedésének megértése a mai világban?",
+       "anchor": 0,
+       "heading": "Miért nőtt meg hirtelen a népesség?",
+       "did_you_know": "",
+       "think_answer": "A népesség növekedése befolyásolja az erőforrások felhasználását, a gazdasági fejlődést és a környezeti hatásokat is, ezért fontos megérteni, hogy hogyan alakult ki és milyen következményekkel jár."
+      },
+      {
+       "body": "A vándorlás nemcsak gazdasági, hanem kulturális változásokat is hozott magával. Az újonnan érkezők saját kultúrájukat, szokásaikat és hagyományaikat is magukkal hozták, ami gazdagította a helyi közösségeket. Ez a sokszínűség azonban néha konfliktusokat is eredményezett, mivel a különböző csoportoknak meg kellett tanulniuk együtt élni. A vándorlás hozzájárult a városok növekedéséhez és a munkaerőpiac átalakulásához is. Az ipari központok vonzó célpontokká váltak, mivel ott több munkalehetőség volt.",
+       "type": "deep",
+       "think": "Hogyan befolyásolja a vándorlás a mindennapi életedet?",
+       "anchor": 1,
+       "heading": "Hogyan alakította a vándorlás a társadalmat?",
+       "did_you_know": "A vándorlás nemcsak az emberek mozgását jelenti, hanem a tudás, technológia és kultúra áramlását is.",
+       "think_answer": "A vándorlás révén a mindennapi életünkben találkozhatunk különböző kultúrákkal, ételekkel, szokásokkal, amelyek gazdagítják a közösséget és új perspektívákat nyitnak meg."
+      },
+      {
+       "body": "A fejlett országokban a népességfogyás egyik fő oka a csökkenő születési ráta. Az emberek később vállalnak gyermeket, és gyakran kevesebb gyermeket vállalnak, mint korábban. Ennek hátterében állhat a nők munkavállalása, a megélhetési költségek növekedése, valamint a családtervezés tudatosabb megközelítése. Az elöregedő népesség pedig azt jelenti, hogy egyre több idős ember él, miközben a fiatalok száma csökken. Ez a jelenség kihívásokat jelent a nyugdíjrendszer és az egészségügyi ellátás számára is.",
+       "type": "deep",
+       "think": "Miért lehet fontos a népességfogyás kérdése a jövőben?",
+       "anchor": 2,
+       "heading": "Miért csökken a népesség a fejlett országokban?",
+       "did_you_know": "A fejlett országokban a magasabb életszínvonal gyakran kevesebb gyermek vállalásával jár együtt.",
+       "think_answer": "A népességfogyás hatással lehet a munkaerőpiacra, a gazdasági növekedésre és a társadalmi ellátórendszerek fenntarthatóságára, ezért fontos megérteni és kezelni ezt a kihívást."
+      },
+      {
+       "body": "Az ipari forradalom előtt az emberek társadalmi helyzete gyakran generációkon keresztül változatlan maradt. Az iparosodás azonban új lehetőségeket teremtett a társadalmi felemelkedésre. Az emberek tanulással és kemény munkával új szakmákba léphettek, amelyek korábban nem léteztek. A gyárak és az ipari központok megjelenése új munkahelyeket teremtett, amelyek lehetőséget adtak a társadalmi helyzet javítására. Az oktatás elérhetősége is bővült, ami szintén hozzájárult a társadalmi mozgáshoz.",
+       "type": "deep",
+       "think": "Miért fontos a társadalmi mozgás a modern társadalmakban?",
+       "anchor": 3,
+       "heading": "Hogyan változtatta meg az ipari forradalom a társadalmi mozgást?",
+       "did_you_know": "A társadalmi mozgás azt jelenti, hogy az emberek képesek változtatni a társadalmi helyzetükön, például jobb munkát találni vagy magasabb iskolai végzettséget szerezni.",
+       "think_answer": "A társadalmi mozgás lehetőséget ad az embereknek, hogy javítsák életkörülményeiket, és hozzájárul a társadalmi igazságossághoz és a gazdasági fejlődéshez."
+      },
+      {
+       "body": "Semmelweis Ignác felfedezése, hogy a kézmosás csökkenti a fertőzések terjedését, alapvetően változtatta meg az orvosi gyakorlatot. Előtte a kórházakban gyakoriak voltak a fertőzések, amelyek halálos kimenetelűek is lehettek. Semmelweis felismerése lehetővé tette, hogy a kórházi halálozási arány jelentősen csökkenjen. Bár kezdetben sokan kételkedtek felfedezésében, később világszerte elismerték munkásságának jelentőségét. Ez a felismerés hozzájárult a modern higiéniai gyakorlatok kialakulásához.",
+       "type": "deep",
+       "think": "Miért fontos a higiénia a mindennapi életben?",
+       "anchor": 4,
+       "heading": "Miért volt forradalmi Semmelweis felfedezése?",
+       "did_you_know": "A kézmosás egyszerű, de hatékony módszer a fertőzések terjedésének megakadályozására, és ma már az orvosi gyakorlat alapvető része.",
+       "think_answer": "A higiénia segít megelőzni a betegségek terjedését, és hozzájárul az egészségesebb életkörülmények fenntartásához, így védve saját és mások egészségét."
+      },
+      {
+       "body": "Az erőszakos cselekmények nemcsak közvetlen fizikai veszélyt jelentenek, hanem pszichológiai hatásai is jelentősek. Félelmet és bizonytalanságot kelt az emberekben, ami befolyásolja a mindennapi életüket. Az ilyen cselekmények célja a társadalom destabilizálása, és politikai célok elérése. A válaszlépések, mint például a biztonsági intézkedések szigorítása, szintén hatással vannak a szabadságjogokra és a mindennapi életre. Az erőszakos cselekmények elleni küzdelem globális összefogást igényel, mivel hatásai nem korlátozódnak egyetlen országra.",
+       "type": "deep",
+       "think": "Hogyan befolyásolják az erőszakos cselekmények a mindennapi életet?",
+       "anchor": 5,
+       "heading": "Miért jelent veszélyt az erőszakos cselekmények a társadalomra?",
+       "did_you_know": "Az erőszakos cselekmények célja gyakran nemcsak a fizikai károkozás, hanem a társadalom félelemben tartása is.",
+       "think_answer": "Az erőszakos cselekmények miatt szigorúbb biztonsági intézkedések lépnek életbe, amelyek befolyásolhatják az utazást, a közlekedést és a mindennapi tevékenységeket, mivel a biztonság fenntartása elsődleges fontosságúvá válik."
+      }
+     ]
+    },
+    {
+     "block_id": "399a764c-72be-4104-90e4-fd7350efa89d",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A népesség hirtelen növekedése, általában a születések számának emelkedése miatt.",
+        "B) A népesség csökkenése egy háború következtében.",
+        "C) A népesség stagnálása egy adott időszakban.",
+        "D) A népesség elvándorlása más országokba."
+       ],
+       "question": "Mi a népességrobbanás?",
+       "explanation": "A népességrobbanás a születések számának hirtelen növekedését jelenti, amely az ipari forradalom idején kezdődött, és jelentős hatással volt a társadalomra és a gazdaságra.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Csak gazdasági előnyökkel jár.",
+        "B) Növeli a multikulturalizmust és a társadalmi sokszínűséget.",
+        "C) Mindig konfliktusokat okoz.",
+        "D) Nincs hatása a társadalomra."
+       ],
+       "question": "Milyen hatással van a migráció a társadalmakra?",
+       "explanation": "A migráció hozzájárul a multikulturalizmushoz, mivel különböző kultúrák és népek találkozását eredményezi, ami gazdagítja a társadalmat.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A 19. század közepén.",
+        "B) A 20. század elején.",
+        "C) A 18. század végén.",
+        "D) A 21. században."
+       ],
+       "question": "Mikor volt a legjelentősebb népességnövekedés a modern ipari társadalmakban?",
+       "explanation": "A 19. század közepén, az ipari forradalom idején a népességrobbanás jelentős növekedést eredményezett, mivel a mezőgazdasági termelés javulása és a városiasodás vonzotta az embereket.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Egy híres festő, aki a modern művészetet képviselte.",
+        "B) Egy orvos, aki felfedezte a kézfertőtlenítés fontosságát a szülészetben.",
+        "C) Egy politikai vezető, aki a szabadságharcot irányította.",
+        "D) Egy tudós, aki a magyar nyelv fejlesztésén dolgozott."
+       ],
+       "question": "Ki volt Semmelweis Ignác, és miért fontos a magyar történelem szempontjából?",
+       "explanation": "Semmelweis Ignác a kézfertőtlenítés bevezetésével forradalmasította a szülészeti gyakorlatot, ezzel jelentősen csökkentette a szülés utáni fertőzések számát, így hozzájárult a modern orvostudomány fejlődéséhez.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Csökkenti a kultúrák közötti különbségeket.",
+        "B) Növeli a gazdasági egyenlőtlenségeket.",
+        "C) Elősegíti a nemzetközi kereskedelmet és a kulturális csere folyamatát.",
+        "D) Csak negatív hatásai vannak."
+       ],
+       "question": "Milyen hatása van a globalizációnak a modern társadalmakra?",
+       "explanation": "A globalizáció elősegíti a nemzetközi kereskedelmet és a kulturális cserét, ami hozzájárul a gazdasági fejlődéshez és a társadalmi kapcsolatok bővüléséhez.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "757cbb3d-fcf5-4d31-aaf7-c91f488d32af",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Növények és állatok emberi hasznosításának folyamata",
+      "B) A népesség növekedésének mértéke",
+      "C) Az emberek közötti kulturális kapcsolatok erősítése",
+      "D) A különböző népcsoportok közötti együttélés"
+     ],
+     "question": "Mi a háziasítás folyamata?",
+     "explanation": "A háziasítás során az emberek a természetes állapotból kiindulva növényeket és állatokat alakítanak át, hogy azok hasznosak legyenek számukra.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 14. század",
+      "B) 16. század",
+      "C) 18. század",
+      "D) 20. század"
+     ],
+     "question": "Mikor következett be a nagy pestisjárvány?",
+     "explanation": "A nagy pestisjárvány, más néven fekete halál, a 14. század közepén sújtotta Európát, és jelentős népességcsökkenést okozott.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hirtelen népességnövekedés",
+      "B) A népesség csökkenése",
+      "C) Stabil népességnövekedés",
+      "D) A migráció csökkenése"
+     ],
+     "question": "Mi jellemzi a népességrobbanást?",
+     "explanation": "A népességrobbanás kifejezés a hirtelen és jelentős népességnövekedést jelenti, amely különösen a 20. század közepén volt jellemző.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az emberek helyváltoztatása",
+      "B) A kultúrák keveredése",
+      "C) Az állatok vándorlása",
+      "D) A népesség csökkenése"
+     ],
+     "question": "Mi a migráció?",
+     "explanation": "A migráció az emberek helyváltoztatását jelenti, amely lehet belső (országon belüli) vagy külső (országok közötti) is.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Különböző kultúrák együttélése",
+      "B) Egyetlen kultúra dominanciája",
+      "C) A kultúrák eltűnése",
+      "D) A gazdasági kapcsolatok erősítése"
+     ],
+     "question": "Mit jelent a multikulturalizmus?",
+     "explanation": "A multikulturalizmus a különböző kultúrák együttélését és kölcsönhatását jelenti egy adott társadalomban.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Politikai célok elérése erőszakos módszerekkel",
+      "B) Béke és együttműködés elősegítése",
+      "C) Gazdasági válságok okozása",
+      "D) Népességcsökkentés"
+     ],
+     "question": "Mi a terrorizmus?",
+     "explanation": "A terrorizmus politikai célok elérése érdekében erőszakos módszereket alkalmaz, ami gyakran ártatlan emberek szenvedésével jár.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A világ gazdasági, politikai és kulturális összekapcsolódása",
+      "B) A helyi kultúrák megőrzése",
+      "C) A nemzetállamok megszűnése",
+      "D) A népesség csökkenése"
+     ],
+     "question": "Mi a globalizáció?",
+     "explanation": "A globalizáció a világ különböző részeinek gazdasági, politikai és kulturális összekapcsolódását jelenti, amely hatással van az emberek életére.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Felfedezte a kézmosás fontosságát a fertőzések megelőzésében",
+      "B) Kifejlesztette az első vakcinát",
+      "C) Megalkotta a modern egészségügyi rendszert",
+      "D) Felfedezte a penicillint"
+     ],
+     "question": "Milyen szerepet játszott Semmelweis Ignác a népesség egészségügyében?",
+     "explanation": "Semmelweis Ignác felfedezte, hogy a kézmosás jelentősen csökkenti a szülészeti fertőzések számát, ami alapvetően megváltoztatta az egészségügyi gyakorlatot.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

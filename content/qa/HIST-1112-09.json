@@ -1,0 +1,1276 @@
+{
+ "nat_id": "HIST-1112-09",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 16,
+  "cards": 90,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-1112-09-001",
+   "lesson_id": "d8b156f9-d5cb-49ec-bd71-1bdd5eda2632",
+   "block_id": "4bbafda8-e8d6-432b-af67-39a7fa361ea7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A népbíróságok működése a kommunista hatalom megerősítését szolgálta … a társadalom félelemben tartását célozta”",
+   "explanation": "A népbíróságok (a népbírósági rendelet 1945 elején jelent meg) elsősorban a háborús és népellenes bűnök felett ítélkeztek: Bárdossy Lászlót, Imrédy Bélát és Szálasi Ferencet 1946-ban kivégezték. Az eltúlzott, egyoldalú állítás a bíróságok kezdeti célját elhallgatja; későbbi politikai felhasználásukat érdemes külön jelezni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/People's_Tribunals_in_Hungary",
+     "title": "People's Tribunals in Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ferenc_Szálasi",
+     "title": "Ferenc Szálasi",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A háborús bűnösök felelősségre vonása érdekében 1945-ben népbíróságokat alakítottak Magyarországon. Ezek a bíróságok a háború alatt elkövetett bűncselekmények miatt állították bíróság elé a vádlottakat, akik közé politikai ellenfelek is tartoztak. A népbíróságok működése a kommunista hatalom megerősítését szolgálta, mivel sok esetben politikai indíttatású ítéleteket hoztak. Ezzel a rendszer a társadalom félelemben tartását célozta.",
+     "type": "text",
+     "heading": "A népbíróságok szerepe",
+     "key_term": "népbíróság"
+    },
+    "after": {
+     "body": "A háborús bűnösök felelősségre vonása érdekében 1945-ben népbíróságokat alakítottak Magyarországon. Ezek a bíróságok a háború alatt elkövetett bűncselekmények miatt ítélkeztek; elé kerültek többek között Bárdossy László, Imrédy Béla és Szálasi Ferenc is, akiket 1946-ban kivégeztek. A kommunisták, akik a belügyi szervek felett rendelkeztek, később a népbírósági eljárásokat politikai ellenfeleik megbélyegzésére is felhasználták.",
+     "type": "text",
+     "heading": "A népbíróságok szerepe",
+     "key_term": "népbíróság"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-002",
+   "lesson_id": "d8b156f9-d5cb-49ec-bd71-1bdd5eda2632",
+   "block_id": "4bbafda8-e8d6-432b-af67-39a7fa361ea7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A kékcédulás választások során a kommunisták biztosították a hatalom megszerzését”",
+   "explanation": "A kékcédulás választáson (1947. augusztus 31.) az MKP mintegy 22 százalékkal lett a legnagyobb párt, de a teljes hatalom megszerzése 1948–49-ben fejeződött be. Az 1945-ös választáson a Kisgazdapárt 57 százalékot kapott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1947_Hungarian_parliamentary_election",
+     "title": "1947 Hungarian parliamentary election",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1945_Hungarian_parliamentary_election",
+     "title": "1945 Hungarian parliamentary election",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A második világháború után Magyarországon, 1945-ben megtartott választások során a Független Kisgazdapárt nyert, amely a demokratikus értékek képviseletét tűzte ki célul. Azonban a kommunista párt szalámitaktikával fokozatosan kiszorította a politikai ellenfeleit, így 1947-re a választások már erősen manipuláltak voltak. Az úgynevezett kékcédulás választások során a kommunisták biztosították a hatalom megszerzését, amely a demokrácia felszámolásához vezetett.",
+     "type": "text",
+     "heading": "A korlátozott többpártrendszer",
+     "key_term": "kékcédulás választások"
+    },
+    "after": {
+     "body": "A második világháború után Magyarországon, 1945-ben megtartott választások során a Független Kisgazdapárt nyert, amely a demokratikus értékek képviseletét tűzte ki célul. Azonban a kommunista párt szalámitaktikával fokozatosan kiszorította a politikai ellenfeleit, így 1947-re a választások már erősen manipuláltak voltak. Az úgynevezett kékcédulás választáson (1947. augusztus 31.) a Magyar Kommunista Párt a szavazatok mintegy 22 százalékával lett a legnagyobb párt; a hatalom teljes megszerzése, vagyis a demokrácia felszámolása 1948–49-re fejeződött be.",
+     "type": "text",
+     "heading": "A korlátozott többpártrendszer",
+     "key_term": "kékcédulás választások"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-003",
+   "lesson_id": "d8b156f9-d5cb-49ec-bd71-1bdd5eda2632",
+   "block_id": "4bbafda8-e8d6-432b-af67-39a7fa361ea7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Sulyok Dezső, a népbíróságok egyik vezetője, a háborús bűnösök felelősségre vonásában játszott kulcsszerepet”",
+   "explanation": "Sulyok Dezső kisgazda politikus volt, akit 1946-ban kizártak a Kisgazdapártból; ellenzéki politikusként a Magyar Szabadság Párt vezetője lett. A népbíróságok vezetőjeként nem ismert. (A szerkesztő ellenőrizze; hu.wikipedia nem volt elérhető.)",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Emlékezetből és a korszak szakirodalma alapján; az online ellenőrzés a hálózati korlátozás miatt nem volt lehetséges, ezért felülvizsgálandó.",
+   "fix": {
+    "before": {
+     "body": "A politikai élet alakító személyiségei között említhetjük Tildy Zoltánt, aki a Független Kisgazdapárt vezetője volt, és akit a köztársaság elnökévé választottak. Kovács Béla, a Független Kisgazdapárt főtitkára, szintén jelentős szerepet játszott a politikai küzdelmekben. Sulyok Dezső, a népbíróságok egyik vezetője, a háborús bűnösök felelősségre vonásában játszott kulcsszerepet. Slachta Margit, a szociális és politikai aktivizmus képviselője, a nők jogaiért és a társadalmi igazságosságért küzdött.",
+     "type": "text",
+     "heading": "Politikai személyiségek",
+     "key_term": "Tildy Zoltán, Kovács Béla, Sulyok Dezső, Slachta Margit"
+    },
+    "after": {
+     "body": "A politikai élet alakító személyiségei között említhetjük Tildy Zoltánt, aki a Független Kisgazdapárt vezetője volt, és akit a köztársaság elnökévé választottak. Kovács Béla, a Független Kisgazdapárt főtitkára, szintén jelentős szerepet játszott a politikai küzdelmekben. Sulyok Dezső kisgazda politikus volt, akit 1946-ban kizártak a Kisgazdapártból; később a Magyar Szabadság Párt vezetőjeként az ellenzék egyik meghatározó alakja lett. Slachta Margit, a szociális és politikai aktivizmus képviselője, a nők jogaiért és a társadalmi igazságosságért küzdött.",
+     "type": "text",
+     "heading": "Politikai személyiségek",
+     "key_term": "Tildy Zoltán, Kovács Béla, Sulyok Dezső, Slachta Margit"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-004",
+   "lesson_id": "d8b156f9-d5cb-49ec-bd71-1bdd5eda2632",
+   "block_id": "4bbafda8-e8d6-432b-af67-39a7fa361ea7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„ekkor zajlott le a szovjet megszállás”; „A következő években, 1945-ben tartották az első szabad választásokat”",
+   "explanation": "A szovjet csapatok 1944 őszétől jutottak be az országba; a harcok Magyarország területén 1945. április 4-én értek véget. Az „a következő években, 1945-ben” önellentmondás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Budapest_offensive",
+     "title": "Budapest offensive",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1945_Hungarian_parliamentary_election",
+     "title": "1945 Hungarian parliamentary election",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A magyar történelem 1945-ös éve kulcsfontosságú, hiszen ekkor zajlott le a szovjet megszállás, amely alapjaiban változtatta meg az ország politikai táját. A következő években, 1945-ben tartották az első szabad választásokat, majd 1947-ben a kékcédulás választásokat, amelyek már a kommunista párt dominanciáját tükrözték. A földosztás szintén 1945-ben kezdődött, amely a társadalmi struktúrák radikális átalakulását indította el.",
+     "type": "text",
+     "heading": "Kronológiai események",
+     "key_term": "1945, 1947"
+    },
+    "after": {
+     "body": "A magyar történelem 1945-ös éve kulcsfontosságú, hiszen a harcok 1945. április 4-én értek véget az ország területén, és a szovjet csapatok jelenléte meghatározta a politikai fejlődést. 1945 novemberében tartották az első szabad választásokat, majd 1947-ben a kékcédulás választásokat, amelyek már a kommunista párt dominanciáját tükrözték. A földosztás szintén 1945-ben kezdődött, amely a társadalmi struktúrák radikális átalakulását indította el.",
+     "type": "text",
+     "heading": "Kronológiai események",
+     "key_term": "1945, 1947"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-005",
+   "lesson_id": "d8b156f9-d5cb-49ec-bd71-1bdd5eda2632",
+   "block_id": "4bbafda8-e8d6-432b-af67-39a7fa361ea7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Recsk, mint a népbíróságok által elítélt politikai foglyok táborának helyszíne”; a Hortobágy „sok kisbirtokos gazdaság”",
+   "explanation": "Recsken (1950–53) bírósági ítélet nélkül, az ÁVH őrizetében tartottak fogva politikai foglyokat kényszermunkán, nem népbírósági elítélteket. A Hortobágy legelőit nem osztották szét kisbirtokosok között; az 1950-es évek elején kitelepítettek kényszerlakhelye lett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Recsk_forced_labor_camp",
+     "title": "Recsk forced labor camp",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hortobágy",
+     "title": "Hortobágy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Hortobágy, mint Magyarország egyik legnagyobb sík vidéke, a földosztás szempontjából is jelentős terület volt. Itt a mezőgazdasági termelés revitalizálása érdekében sok kisbirtokos gazdaság alakult ki. Recsk, mint a népbíróságok által elítélt politikai foglyok táborának helyszíne, a kommunista terror szimbólumává vált. E két helyszín jól tükrözi a háború utáni politikai és társadalmi átalakulás hatásait.",
+     "type": "text",
+     "heading": "Topográfiai jelentőségek",
+     "key_term": "Recsk, Hortobágy"
+    },
+    "after": {
+     "body": "A Hortobágy a Nagy-Alföld legnagyobb összefüggő füves pusztája, az 1950-es évek elején pedig a kitelepítettek kényszerlakhelye is lett. Recsk a Mátra lábánál működő kényszermunkatábor volt (1950–53), ahol bírósági ítélet nélkül tartottak fogva politikai foglyokat, és a kommunista terror szimbólumává vált. E két helyszín jól tükrözi a háború utáni politikai és társadalmi átalakulás hatásait.",
+     "type": "text",
+     "heading": "Topográfiai jelentőségek",
+     "key_term": "Recsk, Hortobágy"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-006",
+   "lesson_id": "d8b156f9-d5cb-49ec-bd71-1bdd5eda2632",
+   "block_id": "4bbafda8-e8d6-432b-af67-39a7fa361ea7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A [7]. kártya az 1990-es választásokról szól, „az első szabad … választások”",
+   "explanation": "Nem az „átmenet éveihez” (1944–48) tartozik, hanem a rendszerváltáshoz; az „első szabad választás” ellentmond a [8]. kártyának (1945). Az 1990-es választás az első szabad többpárti választás volt a kommunista rendszer megdöntése után.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1990_Hungarian_parliamentary_election",
+     "title": "1990 Hungarian parliamentary election",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az 1990-es országgyűlési választások jelentették az első szabad és demokratikus választásokat Magyarországon a második világháború óta. A választásokat két fordulóban tartották, március 25-én és április 8-án. A választások eredményeként a Magyar Demokrata Fórum (MDF) alakíthatott kormányt, Antall József vezetésével. Az esemény fontos mérföldkő volt a magyar demokrácia újjáépítésében, és a szovjet típusú egypártrendszer végét jelentette. Az új kormány célja a politikai és gazdasági rendszerváltás megvalósítása volt.",
+     "type": "text",
+     "heading": "Az első szabad választások Magyarországon 1990-ben",
+     "key_term": "1990-es választások"
+    },
+    "after": {
+     "body": "Az 1990-es országgyűlési választások jelentették az első szabad, többpárti választásokat a kommunista rendszer bukása után. A választásokat két fordulóban tartották, március 25-én és április 8-án. A választások eredményeként a Magyar Demokrata Fórum (MDF) alakíthatott kormányt, Antall József vezetésével. Az esemény fontos mérföldkő volt a magyar demokrácia újjáépítésében, és a szovjet típusú egypártrendszer végét jelentette. Az új kormány célja a politikai és gazdasági rendszerváltás megvalósítása volt.",
+     "type": "text",
+     "heading": "Az első szabad választások Magyarországon 1990-ben",
+     "key_term": "1990-es választások"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-007",
+   "lesson_id": "d8b156f9-d5cb-49ec-bd71-1bdd5eda2632",
+   "block_id": "4bbafda8-e8d6-432b-af67-39a7fa361ea7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 8,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A [8]. kártya az 1945-ös és 1947-es választásról szóló részt ismétli a [3]. és [5]. kártyából",
+   "explanation": "Duplikált tartalom; a három kártya egyesíthető.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "Szerkesztői észrevétel: a [8] törlendő vagy összevonandó a [3]-mal és [5]-tel."
+  },
+  {
+   "id": "HIST-1112-09-008",
+   "lesson_id": "6ac43c74-5b4d-423d-98d3-ddb364d01532",
+   "block_id": "efd26bf5-c879-4780-bb88-40cfe5eda14d",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a Magyar Dolgozók Pártja (MDP), amely az egyedüli politikai erővé vált”",
+   "explanation": "Az MDP a Magyar Kommunista Párt és a Szociáldemokrata Párt egyesülésével jött létre (1948. június); a többi párt (Kisgazdapárt, Nemzeti Parasztpárt) formálisan a Népfront részeként 1949-ig működött.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Working_People's_Party",
+     "title": "Hungarian Working People's Party",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1948-ban megalakult a Magyar Dolgozók Pártja (MDP), amely az egyedüli politikai erővé vált az országban. A párt célja a kommunista ideológia terjesztése és a szovjet befolyás megszilárdítása volt. Az MDP kiépítette az egypárti diktatúrát, amely alatt a politikai ellenfeleket elnyomták, és a demokratikus intézményeket felszámolták. A népköztársaság kikiáltása után a hatalom gyakorlása a párt és az állam szoros összefonódásán alapult.",
+     "type": "text",
+     "heading": "Az egypárti diktatúra kiépítése",
+     "key_term": "egypárti diktatúra"
+    },
+    "after": {
+     "body": "1948 júniusában a Magyar Kommunista Párt és a Szociáldemokrata Párt egyesülésével megalakult a Magyar Dolgozók Pártja (MDP), amely 1949-re gyakorlatilag egyeduralkodó politikai erővé vált. A párt célja a kommunista ideológia terjesztése és a szovjet befolyás megszilárdítása volt. Az MDP kiépítette az egypárti diktatúrát, amely alatt a politikai ellenfeleket elnyomták, és a demokratikus intézményeket felszámolták. A népköztársaság kikiáltása után a hatalom gyakorlása a párt és az állam szoros összefonódásán alapult.",
+     "type": "text",
+     "heading": "Az egypárti diktatúra kiépítése",
+     "key_term": "egypárti diktatúra"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-009",
+   "lesson_id": "6ac43c74-5b4d-423d-98d3-ddb364d01532",
+   "block_id": "efd26bf5-c879-4780-bb88-40cfe5eda14d",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Mindszenty József katolikus érsek”",
+   "explanation": "Mindszenty esztergomi érsek, hercegprímás és bíboros volt (1946-tól); 1949 februárjában életfogytiglanra ítélték.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/József_Mindszenty",
+     "title": "József Mindszenty",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A szovjetizálás időszakában koncepciós perek zajlottak, amelyek során politikai ellenfeleket, köztük Rajk Lászlót, hamis vádakkal ítéltek el. Az egyházüldözés is jellemző volt, különösen Mindszenty József katolikus érsek esetében, aki a kommunista rezsim ellenállásának szimbólumává vált. A perek célja a politikai hatalom megszilárdítása és a társadalom félelemben tartása volt. Ezen események súlyosan befolyásolták a magyar társadalom morális és politikai életét.",
+     "type": "text",
+     "heading": "Koncepciós perek, egyházüldözés",
+     "key_term": "koncepciós perek"
+    },
+    "after": {
+     "body": "A szovjetizálás időszakában koncepciós perek zajlottak, amelyek során politikai ellenfeleket, köztük Rajk Lászlót, hamis vádakkal ítéltek el. Az egyházüldözés is jellemző volt, különösen Mindszenty József esztergomi érsek, bíboros esetében, aki a kommunista rezsim ellenállásának szimbólumává vált. A perek célja a politikai hatalom megszilárdítása és a társadalom félelemben tartása volt. Ezen események súlyosan befolyásolták a magyar társadalom morális és politikai életét.",
+     "type": "text",
+     "heading": "Koncepciós perek, egyházüldözés",
+     "key_term": "koncepciós perek"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-010",
+   "lesson_id": "6ac43c74-5b4d-423d-98d3-ddb364d01532",
+   "block_id": "efd26bf5-c879-4780-bb88-40cfe5eda14d",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1949-ben elfogadták a kommunista alkotmányt, … legitimálta az egypárti rendszert”",
+   "explanation": "Az 1949. évi XX. törvény (augusztus 20.) a szovjet alkotmány mintájára készült, de a párt vezető szerepét nem rögzítette; ezt csak az 1972-es módosítás tette meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Constitution_of_Hungary",
+     "title": "Constitution of Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_People's_Republic",
+     "title": "Hungarian People's Republic",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az MDP 1948-as megalakulása a magyar politikai élet átalakulását jelezte, amikor a kommunista párt átvette a hatalmat. 1949-ben elfogadták a kommunista alkotmányt, amely jogi keretet biztosított a szovjet típusú állam működéséhez. Ez az alkotmány a népköztársaság elveit hangsúlyozta, és legitimálta az egypárti rendszert. A politikai hatalom így jogi alapokra helyeződött, ami hozzájárult a diktatúra megszilárdulásához.",
+     "type": "text",
+     "heading": "Kronológia: 1948 MDP megalakulása, 1949 kommunista alkotmány",
+     "key_term": "kommunista alkotmány"
+    },
+    "after": {
+     "body": "Az MDP 1948-as megalakulása a magyar politikai élet átalakulását jelezte, amikor a kommunista párt átvette a hatalmat. 1949-ben elfogadták a kommunista alkotmányt, amely jogi keretet biztosított a szovjet típusú állam működéséhez. Az alkotmány a szovjet alkotmány mintájára készült, a népköztársaság elveit hangsúlyozta, a párt vezető szerepét azonban csak az 1972-es módosítás rögzítette. A politikai hatalom így jogi alapokra helyeződött, ami hozzájárult a diktatúra megszilárdulásához.",
+     "type": "text",
+     "heading": "Kronológia: 1948 MDP megalakulása, 1949 kommunista alkotmány",
+     "key_term": "kommunista alkotmány"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-011",
+   "lesson_id": "01ea9b8d-1dad-4452-b3f6-4bb39bca0de0",
+   "block_id": "19409dbc-89cd-441e-922e-cdfc09646dde",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„1948-tól 1956-ig”; az MDP „a kommunista párt jogutódja volt”",
+   "explanation": "Rákosit 1956. július 18-án mozdították el; 1953–55 között Nagy Imre miniszterelnöksége idején az elnyomás enyhült. Az MDP két párt (MKP és SZDP) egyesülésével jött létre.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mátyás_Rákosi",
+     "title": "Mátyás Rákosi",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Working_People's_Party",
+     "title": "Hungarian Working People's Party",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Rákosi-diktatúra 1948-tól 1956-ig tartott Magyarországon. Ezen időszak alatt a Magyar Dolgozók Pártja, amely a kommunista párt jogutódja volt, a hatalom középpontjába került. Rákosi Mátyás, a párt vezetője, a politikai terror eszközeivel próbálta megszilárdítani hatalmát. A diktatúra idején a társadalom minden rétege szigorú ellenőrzés alatt állt, a politikai ellenfelek üldözése és a véleménynyilvánítás szabadságának korlátozása jellemezte a korszakot.",
+     "type": "text",
+     "heading": "A Rákosi-diktatúra időszaka",
+     "key_term": "Rákosi Mátyás"
+    },
+    "after": {
+     "body": "A Rákosi-diktatúra 1948-tól 1956 nyaráig tartott (Rákosit 1956. július 18-án mozdították el; 1953–55 között Nagy Imre miniszterelnöksége idején az elnyomás átmenetileg enyhült). Ezen időszak alatt a Magyar Dolgozók Pártja, amely a kommunista és a szociáldemokrata párt egyesítésével jött létre, a hatalom középpontjába került. Rákosi Mátyás, a párt vezetője, a politikai terror eszközeivel próbálta megszilárdítani hatalmát. A diktatúra idején a társadalom minden rétege szigorú ellenőrzés alatt állt, a politikai ellenfelek üldözése és a véleménynyilvánítás szabadságának korlátozása jellemezte a korszakot.",
+     "type": "text",
+     "heading": "A Rákosi-diktatúra időszaka",
+     "key_term": "Rákosi Mátyás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-012",
+   "lesson_id": "01ea9b8d-1dad-4452-b3f6-4bb39bca0de0",
+   "block_id": "19409dbc-89cd-441e-922e-cdfc09646dde",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Recsk, mint a politikai foglyok börtöne”",
+   "explanation": "Recsk kényszermunkatábor volt, nem börtön.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Recsk_forced_labor_camp",
+     "title": "Recsk forced labor camp",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Rákosi-diktatúra idején a terror eszközei széleskörűen alkalmazásra kerültek. A politikai foglyok tömeges elhurcolása és a koncepciós perek jellemezték ezt az időszakot. Recsk, mint a politikai foglyok börtöne, szimbólummá vált a diktatúra brutalitásának megjelenítésében. Az államhatalom célja a félelemkeltés volt, hogy megakadályozza a társadalmi ellenállást.",
+     "type": "text",
+     "heading": "Terror és elnyomás",
+     "key_term": "terror"
+    },
+    "after": {
+     "body": "A Rákosi-diktatúra idején a terror eszközei széleskörűen alkalmazásra kerültek. A politikai foglyok tömeges elhurcolása és a koncepciós perek jellemezték ezt az időszakot. Recsk, mint a politikai foglyok kényszermunkatábora, szimbólummá vált a diktatúra brutalitásának megjelenítésében. Az államhatalom célja a félelemkeltés volt, hogy megakadályozza a társadalmi ellenállást.",
+     "type": "text",
+     "heading": "Terror és elnyomás",
+     "key_term": "terror"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-013",
+   "lesson_id": "01ea9b8d-1dad-4452-b3f6-4bb39bca0de0",
+   "block_id": "19409dbc-89cd-441e-922e-cdfc09646dde",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A beszolgáltatás rendszere … a termelés állami ellenőrzését jelentette”",
+   "explanation": "A beszolgáltatás a parasztok kötelező terménybeadása volt, alacsony, kötelező áron. Az első ötéves terv (1950–54) a nehézipart favorizálta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Five-year_plan_(Hungary)",
+     "title": "Five-year plan (Hungary)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Collectivization_in_Hungary",
+     "title": "Collectivization in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az 1950-es évek elején, a Rákosi-diktatúra idején, erőltetett iparosítás indult Magyarországon. A cél a gazdaság gyors fejlesztése és a szovjet modell követése volt. A beszolgáltatás rendszere is bevezetésre került, amely a termelés állami ellenőrzését jelentette. A gazdasági nehézségek és az életszínvonal csökkenése azonban széleskörű elégedetlenséget szült a lakosság körében.",
+     "type": "text",
+     "heading": "Az erőltetett iparosítás",
+     "key_term": "beszolgáltatás"
+    },
+    "after": {
+     "body": "Az 1950-es évek elején, a Rákosi-diktatúra idején, erőltetett iparosítás indult Magyarországon. A cél a gazdaság gyors fejlesztése és a szovjet modell követése volt. Bevezették a beszolgáltatási rendszert is: a parasztoknak termésük nagy részét alacsony, kötelező áron kellett az államnak átadniuk. Az első ötéves terv (1950–54) a nehézipart részesítette előnyben. A gazdasági nehézségek és az életszínvonal csökkenése azonban széleskörű elégedetlenséget szült a lakosság körében.",
+     "type": "text",
+     "heading": "Az erőltetett iparosítás",
+     "key_term": "beszolgáltatás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-014",
+   "lesson_id": "01ea9b8d-1dad-4452-b3f6-4bb39bca0de0",
+   "block_id": "19409dbc-89cd-441e-922e-cdfc09646dde",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„az egészségügy és az oktatás állami irányítás alatt álltak, ami sok esetben a minőség romlásához vezetett”",
+   "explanation": "Egyoldalú, alátámasztatlan. Az iskolarendszer bővült (általános iskola, szakképzés); a valós probléma az ideológiai átitatottság és az osztályidegenek hátrányos megkülönböztetése volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungary_under_Communism",
+     "title": "Hungary under Communism",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Rákosi-diktatúra alatt a mindennapi élet jelentős mértékben megváltozott. Az emberek folyamatosan szembesültek az állami ellenőrzéssel és a politikai propagandával. A közszolgáltatások, mint az egészségügy és az oktatás, állami irányítás alatt álltak, ami sok esetben a minőség romlásához vezetett. A lakosság életében a félelem és a bizonytalanság mindennapossá vált.",
+     "type": "text",
+     "heading": "A mindennapi élet hatásai",
+     "key_term": "mindennapi élet"
+    },
+    "after": {
+     "body": "A Rákosi-diktatúra alatt a mindennapi élet jelentős mértékben megváltozott. Az emberek folyamatosan szembesültek az állami ellenőrzéssel és a politikai propagandával. Az egészségügy és az oktatás állami irányítás alatt állt; az iskolarendszer bővült, ugyanakkor az oktatást átitatta az ideológia, az „osztályidegen” családok gyermekeit pedig hátrányos megkülönböztetés érte. A lakosság életében a félelem és a bizonytalanság mindennapossá vált.",
+     "type": "text",
+     "heading": "A mindennapi élet hatásai",
+     "key_term": "mindennapi élet"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-015",
+   "lesson_id": "01ea9b8d-1dad-4452-b3f6-4bb39bca0de0",
+   "block_id": "19409dbc-89cd-441e-922e-cdfc09646dde",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a politikai ellenfelek fizikai megsemmisítése”",
+   "explanation": "Túlzás: a táborok célja a megfélemlítés és a kényszermunka volt. Recsken mintegy negyven fogoly halt meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Recsk_forced_labor_camp",
+     "title": "Recsk forced labor camp",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Rákosi-diktatúra idején, az 1950-es évek elején, a magyar állam politikai elnyomó rendszert működtetett, amelynek része volt a kényszermunkatáborok létrehozása. Recsk volt az egyik legismertebb ilyen tábor, ahol politikai foglyokat tartottak fogva embertelen körülmények között. A táborok célja a megfélemlítés és a politikai ellenfelek fizikai megsemmisítése volt. A Hortobágyon is létesítettek internálótáborokat, ahol a kitelepítetteket, köztük családokat, tartották fogva. Ezek a táborok a diktatúra embertelenségét és a személyi kultusz elnyomó jellegét tükrözték.",
+     "type": "text",
+     "heading": "Recsk és Hortobágy a Rákosi-diktatúrában",
+     "key_term": "Recsk"
+    },
+    "after": {
+     "body": "A Rákosi-diktatúra idején, az 1950-es évek elején, a magyar állam politikai elnyomó rendszert működtetett, amelynek része volt a kényszermunkatáborok létrehozása. Recsk volt az egyik legismertebb ilyen tábor, ahol politikai foglyokat tartottak fogva embertelen körülmények között. A táborok célja a megfélemlítés és a kényszermunka volt; Recsken mintegy negyven fogoly halt meg. A Hortobágyon is létesítettek internálótáborokat, ahol a kitelepítetteket, köztük családokat, tartották fogva. Ezek a táborok a diktatúra embertelenségét és a személyi kultusz elnyomó jellegét tükrözték.",
+     "type": "text",
+     "heading": "Recsk és Hortobágy a Rákosi-diktatúrában",
+     "key_term": "Recsk"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-016",
+   "lesson_id": "01ea9b8d-1dad-4452-b3f6-4bb39bca0de0",
+   "block_id": "19409dbc-89cd-441e-922e-cdfc09646dde",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 8,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„csak a diktatúra enyhülése után vált ismertté”",
+   "explanation": "A tábor 1953-ban bezárt, de létezését a rendszer elhallgatta; nyilvánosan csak 1989–90 után lehetett róla beszélni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Recsk_forced_labor_camp",
+     "title": "Recsk forced labor camp",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Rákosi-diktatúra idején, 1950 és 1953 között, Recsk településén működött Magyarország egyik legkeményebb kényszermunkatábora. A tábor a politikai elnyomás eszköze volt, ahol a rendszer ellenségeinek tartott személyeket tartottak fogva. A foglyokat embertelen körülmények között dolgoztatták, és sok esetben jogi eljárás nélkül zárták be őket. A tábor létezése sokáig titokban maradt, és csak a diktatúra enyhülése után vált ismertté a közvélemény számára. Recsk szimbóluma lett a Rákosi-korszak elnyomó politikájának és az emberi jogok megsértésének.",
+     "type": "text",
+     "heading": "Recsk és a Rákosi-diktatúra",
+     "key_term": "Recsk"
+    },
+    "after": {
+     "body": "A Rákosi-diktatúra idején, 1950 és 1953 között, Recsk településén működött Magyarország egyik legkeményebb kényszermunkatábora. A tábor a politikai elnyomás eszköze volt, ahol a rendszer ellenségeinek tartott személyeket tartottak fogva. A foglyokat embertelen körülmények között dolgoztatták, és sok esetben jogi eljárás nélkül zárták be őket. A tábort 1953-ban bezárták, létezését a rendszer elhallgatta; nyilvánosan csak 1989–90 után lehetett róla beszélni. Recsk szimbóluma lett a Rákosi-korszak elnyomó politikájának és az emberi jogok megsértésének.",
+     "type": "text",
+     "heading": "Recsk és a Rákosi-diktatúra",
+     "key_term": "Recsk"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-017",
+   "lesson_id": "d8b156f9-d5cb-49ec-bd71-1bdd5eda2632",
+   "block_id": "1db0db47-81c3-4f5f-97f1-0f985b6c9152",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: „a Szovjetunió megszállta Magyarországot” (a háború befejezése után)",
+   "explanation": "A szovjet csapatok 1944 őszétől nyomultak be, a harcok 1945. április 4-én értek véget. Hivatalos szovjet irányítás a Szövetséges Ellenőrző Bizottságon át érvényesült (elnöke Vorosilov marsall).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Allied_Control_Commission",
+     "title": "Allied Control Commission",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Budapest_offensive",
+     "title": "Budapest offensive",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1945 májusában véget ért a második világháború Európában, amikor a náci Németország kapitulált. Az Egyesült Államok, a Szovjetunió és más szövetséges országok közötti feszültségek fokozódtak, ami a hidegháború kezdetét jelentette. Ekkoriban a világpolitikai térkép átalakult, a gyarmati rendszer fokozatosan leépült, új államok alakultak meg, és a szovjet befolyás növekedett Közép- és Kelet-Európában.",
+     "type": "world",
+     "year": "1945",
+     "heading": "A második világháború vége és a világpolitikai átrendeződés",
+     "link_hu": "A második világháború befejezése után a Szovjetunió megszállta Magyarországot, ami lehetővé tette a kommunisták térnyerését és a Magyar Kommunista Párt megerősödését."
+    },
+    "after": {
+     "body": "1945 májusában véget ért a második világháború Európában, amikor a náci Németország kapitulált. Az Egyesült Államok, a Szovjetunió és más szövetséges országok közötti feszültségek fokozódtak, ami a hidegháború kezdetét jelentette. Ekkoriban a világpolitikai térkép átalakult, a gyarmati rendszer fokozatosan leépült, új államok alakultak meg, és a szovjet befolyás növekedett Közép- és Kelet-Európában.",
+     "type": "world",
+     "year": "1945",
+     "heading": "A második világháború vége és a világpolitikai átrendeződés",
+     "link_hu": "A szovjet csapatok 1945. április 4-ére kiszorították a németeket Magyarországról, és a Szövetséges Ellenőrző Bizottságon (elnöke Vorosilov marsall volt) keresztül 1947-ig meghatározó befolyást gyakoroltak."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-018",
+   "lesson_id": "d8b156f9-d5cb-49ec-bd71-1bdd5eda2632",
+   "block_id": "1db0db47-81c3-4f5f-97f1-0f985b6c9152",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1947-ben … Marshall-terv … Az év végén a Truman-doktrínát is bevezették”",
+   "explanation": "Fordított sorrend: a Truman-doktrína 1947. március 12-én, a Marshall-terv júniusban hangzott el. A link_hu (Marshall-terv → kékcédulás választás) kitalált okság.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Truman_Doctrine",
+     "title": "Truman Doctrine",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Marshall_Plan",
+     "title": "Marshall Plan",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1947-ben az Egyesült Államok bejelentette a Marshall-tervet, amelynek célja az európai országok gazdasági újjáépítése volt a szovjet befolyás ellensúlyozása érdekében. A világpolitikai feszültségek tovább nőttek, és a különböző országok között egyre élesebbé vált a verseny a befolyásért. Az év végén a Truman-doktrínát is bevezették, amely a kommunizmus terjedésének megakadályozására irányult.",
+     "type": "world",
+     "year": "1947",
+     "heading": "A hidegháború felerősödése és a Marshall-terv",
+     "link_hu": "A Marshall-terv és a Truman-doktrína hatására Magyarországon a kommunista vezetés megerősödött, ami hozzájárult a választások manipulálásához és a kékcédulás választások lebonyolításához."
+    },
+    "after": {
+     "body": "1947. március 12-én Truman amerikai elnök bejelentette a Truman-doktrínát: az USA támogatja a kommunista fenyegetés alatt álló országokat (elsősorban Görögországot és Törökországot). Júniusban George Marshall külügyminiszter meghirdette az európai újjáépítési segélyprogramot (Marshall-terv); a Szovjetunió és a befolyása alatt álló államok elutasították.",
+     "type": "world",
+     "year": "1947",
+     "heading": "A hidegháború felerősödése és a Marshall-terv",
+     "link_hu": "1947. augusztus 31-én Magyarországon a „kékcédulás” választáson a Magyar Kommunista Párt lett a legnagyobb párt."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-019",
+   "lesson_id": "6ac43c74-5b4d-423d-98d3-ddb364d01532",
+   "block_id": "899065f1-e4f1-4960-a038-f37cbfe0a67e",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Kínában a kulturális forradalom idején” (a szovjetizálás példájaként); üres year és link_hu",
+   "explanation": "A kínai kulturális forradalom (1966–76) nem szovjetizálás, hanem Mao saját, a szovjet modelltől eltávolodó kampánya. A szovjet mintát Kína az 1950-es években követte (első ötéves terv, 1953–57). A year és link_hu mező üres.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cultural_Revolution",
+     "title": "Cultural Revolution",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/First_five-year_plan_(China)",
+     "title": "First five-year plan (China)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A szovjetizálás jelensége nemcsak Magyarországon, hanem más kelet-európai országokban is megfigyelhető volt, például Lengyelországban és Csehszlovákiában. Ezekben az országokban is a kommunista pártok hatalomra jutása és a szovjet befolyás növekedése jellemezte az időszakot. A szovjetizálás különböző formái, mint a politikai elnyomás és a gazdasági kollektivizálás, más kultúrákban és történelmi kontextusokban is megjelentek, például Kínában a kulturális forradalom idején.",
+     "type": "world",
+     "year": "",
+     "heading": "A szovjetizálás folyamatai más országokban",
+     "link_hu": ""
+    },
+    "after": {
+     "body": "A szovjetizálás jelensége nemcsak Magyarországon, hanem más kelet-európai országokban is megfigyelhető volt, például Lengyelországban és Csehszlovákiában. Ezekben az országokban is a kommunista pártok hatalomra jutása és a szovjet befolyás növekedése jellemezte az időszakot. A szovjet típusú rendszer más földrészeken is megjelent: Kínában 1949 után, a szovjet mintájú első ötéves terv (1953–57) idején.",
+     "type": "world",
+     "year": "",
+     "heading": "A szovjetizálás folyamatai más országokban",
+     "link_hu": ""
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-020",
+   "lesson_id": "01ea9b8d-1dad-4452-b3f6-4bb39bca0de0",
+   "block_id": "45c29947-bd41-42b8-b0cd-56de6eabe9d9",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "link_hu: az atombomba „hozzájárult a kommunista hatalom megszilárdulásához Magyarországon”",
+   "explanation": "Kitalált ok-okozat. A body utolsó mondata („közvetlen hatással volt … Rákosi-diktatúra megerősödéséhez”) szintén üres. Valós magyar esemény 1949-ből: a Rajk-per (Rajkot 1949. október 15-én végezték ki).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Soviet_atomic_bomb_project",
+     "title": "Soviet atomic bomb project",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/László_Rajk",
+     "title": "László Rajk",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1949. augusztus 29-én a Szovjetunió sikeresen végrehajtotta első atombombájának robbantását, ezzel megkezdődött a nukleáris fegyverkezési verseny a hidegháború időszakában. Az Egyesült Államok és a Szovjetunió közötti feszültség fokozódott, amely világszerte politikai és katonai szövetségek kialakulásához vezetett. A fegyverkezési verseny és a hidegháborús szembenállás közvetlen hatással volt a kelet-európai országok, így Magyarország politikai helyzetére is, hozzájárulva a Rákosi-diktatúra megerősödéséhez.",
+     "type": "world",
+     "year": "1949",
+     "heading": "A Szovjetunió atombombát robbantott",
+     "link_hu": "A Szovjetunió atombombájának kifejlesztése hozzájárult a kommunista hatalom megszilárdulásához Magyarországon, mivel a Rákosi-kormány szorosabbra fűzte kapcsolatait a Szovjetunióval."
+    },
+    "after": {
+     "body": "1949. augusztus 29-én a Szovjetunió Kazahsztánban, Szemipalatyinszk közelében felrobbantotta első atombombáját, ezzel véget ért az amerikai atommonopólium. Ettől kezdve a hidegháborús fegyverkezési versenyt két atomhatalom folytatta.",
+     "type": "world",
+     "year": "1949",
+     "heading": "A Szovjetunió atombombát robbantott",
+     "link_hu": "1949-ben Magyarországon az új alkotmány (augusztus 20.) és a Rajk-per éve volt: Rajk Lászlót 1949. október 15-én végezték ki."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-021",
+   "lesson_id": "01ea9b8d-1dad-4452-b3f6-4bb39bca0de0",
+   "block_id": "45c29947-bd41-42b8-b0cd-56de6eabe9d9",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "link_hu: a NATO megalakulása „fokozta a Rákosi-diktatúra elnyomó politikáját”; body: „szövetség az USA és nyugat-európai országok között”",
+   "explanation": "Kitalált magyar okság. A NATO 1949. április 4-én tizenkét országgal jött létre (USA, Kanada és tíz európai állam). Valós magyar vonatkozás: a KGST (1949 januárja) és a NATO-tagság 1999-ben.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/NATO",
+     "title": "NATO",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Comecon",
+     "title": "Comecon",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1949. április 4-én megalakult a NATO, amely egy katonai szövetség volt az Egyesült Államok és nyugat-európai országok között a szovjet fenyegetés ellen. A szövetség célja a kollektív védelem biztosítása volt, amely a hidegháborús feszültségek közepette jelentős politikai és katonai stabilitást hozott a nyugati világ számára. A NATO megalakulása hozzájárult a keleti blokk országainak, köztük Magyarország politikai elszigeteltségéhez, mivel a kommunista kormányok a nyugati szövetségek ellenében alakították ki saját védelmi rendszereiket.",
+     "type": "world",
+     "year": "1949",
+     "heading": "A NATO megalakulása",
+     "link_hu": "A NATO megalakulása és a nyugati szövetségek erősödése fokozta a Rákosi-diktatúra elnyomó politikáját, mivel a kormány a nyugati befolyással szembeni védekezés érdekében szigorította a belső ellenőrzést."
+    },
+    "after": {
+     "body": "1949. április 4-én Washingtonban tizenkét ország (az USA, Kanada és tíz nyugat-európai állam) aláírta az Észak-atlanti Szerződést, amely kollektív védelmi szövetséget hozott létre. A szerződés 5. cikke szerint az egyik tag elleni támadás mindegyik tag elleni támadásnak minősül.",
+     "type": "world",
+     "year": "1949",
+     "heading": "A NATO megalakulása",
+     "link_hu": "Magyarország 1949 januárjában a KGST alapító tagja lett; a NATO tagja csak 1999. március 12-én lett."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-022",
+   "lesson_id": "01ea9b8d-1dad-4452-b3f6-4bb39bca0de0",
+   "block_id": "45c29947-bd41-42b8-b0cd-56de6eabe9d9",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„a Magyar Kommunista Pártot” (1949-ben); link_hu: a KNK „példaként” a magyar kormány előtt",
+   "explanation": "1949-ben már nem létezett az MKP (1948-ban beolvadt az MDP-be). A link_hu kitalált. Valós: Magyarország 1949 októberében ismerte el a Kínai Népköztársaságot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/People's_Republic_of_China",
+     "title": "People's Republic of China",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War",
+     "title": "Chinese Civil War",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1949. október 1-jén Kínában a Kommunista Párt győzelmet aratott a nacionalisták felett, megalakítva a Kínai Népköztársaságot. Ez a győzelem jelentős hatással volt a világ politikai tájára, hiszen Kína a kommunizmus egyik központjává vált, amely új szövetségeket és feszültségeket hozott létre a hidegháborús időszakban. A kommunista győzelem Kínában ösztönözte a kelet-európai kommunista pártokat, köztük a Magyar Kommunista Pártot, hogy még határozottabban lépjenek fel a nyugati befolyás ellen.",
+     "type": "world",
+     "year": "1949",
+     "heading": "A kínai polgárháború befejezése",
+     "link_hu": "A kínai kommunista győzelem erősítette a Rákosi-diktatúra legitimitását, mivel a magyar kormány a Kínai Népköztársaságot mint példát állította a szocialista építkezés elé."
+    },
+    "after": {
+     "body": "1949. október 1-jén Mao Ce-tung Pekingben kikiáltotta a Kínai Népköztársaságot, miután a kommunisták a polgárháborúban legyőzték a kuomintang-kormányt, amely Tajvanra menekült. Kína a Szovjetunió szövetségese lett (1950), ami a hidegháborút Ázsiában is kiélezte.",
+     "type": "world",
+     "year": "1949",
+     "heading": "A kínai polgárháború befejezése",
+     "link_hu": "Magyarország 1949 októberében ismerte el a Kínai Népköztársaságot."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-023",
+   "lesson_id": "01ea9b8d-1dad-4452-b3f6-4bb39bca0de0",
+   "block_id": "45c29947-bd41-42b8-b0cd-56de6eabe9d9",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: a berlini blokád „erősítette a Rákosi-diktatúra elnyomó intézkedéseit”",
+   "explanation": "Kitalált okság. A blokád végét (légihíd) a body nem említi. Valós magyar esemény: az MDP megalakulása 1948 júniusában, a blokád kezdetének hónapjában.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Berlin_Blockade",
+     "title": "Berlin Blockade",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Working_People's_Party",
+     "title": "Hungarian Working People's Party",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1948. június 24-től 1949. május 12-ig tartott a berlini blokkád, amely során a Szovjetunió elzárta Nyugat-Berlint, hogy megakadályozza a nyugati hatalmak befolyását. A blokkád végül kudarcot vallott, és a nyugati hatalmak megerősítették pozíciójukat Berlinben. Ez a konfliktus a hidegháború egyik első jelentős eseménye volt, és hozzájárult a kelet-nyugati feszültségek fokozódásához, amely Magyarországra is kihatott.",
+     "type": "world",
+     "year": "1949",
+     "heading": "A berlini blokkád",
+     "link_hu": "A berlini blokkád és a nyugati hatalmak reakciója erősítette a Rákosi-diktatúra elnyomó intézkedéseit, mivel a kormány a nyugati befolyással szembeni védekezés érdekében fokozta a propaganda és a belső ellenőrzés mértékét."
+    },
+    "after": {
+     "body": "1948. június 24-től 1949. május 12-ig tartott a berlini blokád: a Szovjetunió lezárta a nyugati övezetekből Nyugat-Berlinbe vezető szárazföldi útvonalakat. Az Egyesült Államok és Nagy-Britannia légihíddal látta el a várost, a blokád végül kudarcot vallott. A konfliktus a hidegháború első nagy válsága volt.",
+     "type": "world",
+     "year": "1949",
+     "heading": "A berlini blokkád",
+     "link_hu": "1948 júniusában, a blokád kezdetének hónapjában alakult meg Magyarországon a Magyar Dolgozók Pártja."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-024",
+   "lesson_id": "d8b156f9-d5cb-49ec-bd71-1bdd5eda2632",
+   "block_id": "b10fcfa9-318c-447f-85ea-de1cc08cdebd",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Ki volt a Magyar Kommunista Párt vezetője?” (kulcs: B, Kovács Béla)",
+   "explanation": "A kulcs ellentmond a magyarázatnak: Kovács Béla a Kisgazdapárt főtitkára volt. Rákosi Mátyás volt az MKP főtitkára, de nincs az opciók között.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mátyás_Rákosi",
+     "title": "Mátyás Rákosi",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Béla_Kovács_(politician)",
+     "title": "Béla Kovács (politician)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Tildy Zoltán.",
+      "B) Kovács Béla.",
+      "C) Sulyok Dezső.",
+      "D) Slachta Margit."
+     ],
+     "question": "Ki volt a Magyar Kommunista Párt vezetője a háború utáni időszakban?",
+     "explanation": "Kovács Béla a Független Kisgazdapárt főtitkára volt, nem a Magyar Kommunista Párt vezetője.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "Tildy Zoltán.",
+      "Rákosi Mátyás.",
+      "Sulyok Dezső.",
+      "Slachta Margit."
+     ],
+     "question": "Ki volt a Magyar Kommunista Párt vezetője a háború utáni időszakban?",
+     "explanation": "Rákosi Mátyás volt a Magyar Kommunista Párt főtitkára (1945–48), majd az MDP első embere.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-025",
+   "lesson_id": "6ac43c74-5b4d-423d-98d3-ddb364d01532",
+   "block_id": "835c47a2-f035-40c8-b27d-dd300b8ac058",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„A magántulajdon teljes megszüntetése” (kulcs: A)",
+   "explanation": "A kisipar és a kisebb üzletek 1950-ig, a háztáji gazdaság később is megmaradt; a földet nem államosították, hanem kollektivizálták. A pontos válasz: az ipar, a bankok és a nagykereskedelem államosítása.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nationalization",
+     "title": "Nationalization",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Collectivization_in_Hungary",
+     "title": "Collectivization in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A magántulajdon teljes megszüntetése",
+      "B) Csak a mezőgazdaság államosítása",
+      "C) Az államosítás elkerülése",
+      "D) A magánvállalkozások támogatása"
+     ],
+     "question": "Mi jellemezte a magyar államosítást a szovjetizálás időszakában?",
+     "explanation": "Az államosítás a szovjetizálás során a magántulajdon teljes megszüntetését jelentette, különösen az iparban és a mezőgazdaságban.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Az ipar, a bankok és a nagykereskedelem állami kézbe vétele",
+      "Csak a mezőgazdaság államosítása",
+      "Az államosítás elkerülése",
+      "A magánvállalkozások támogatása"
+     ],
+     "question": "Mi jellemezte a magyar államosítást a szovjetizálás időszakában?",
+     "explanation": "Az államosítás során az ipart, a bankokat és a nagykereskedelmet állami tulajdonba vették (1946–50); a mezőgazdaságban a földet nem államosították, hanem kollektivizálták.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-026",
+   "lesson_id": "6ac43c74-5b4d-423d-98d3-ddb364d01532",
+   "block_id": "835c47a2-f035-40c8-b27d-dd300b8ac058",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„az MDP 1948-ban alakult meg, és … államosította a gazdaságot”",
+   "explanation": "Az MDP az MKP és az SZDP egyesülésével jött létre; az államosítások egy része már korábban megtörtént.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Working_People's_Party",
+     "title": "Hungarian Working People's Party",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1945",
+      "B) 1948",
+      "C) 1949",
+      "D) 1956"
+     ],
+     "question": "Mikor alakult meg a Magyar Dolgozók Pártja (MDP)?",
+     "explanation": "Az MDP 1948-ban alakult meg, és a kommunista párt irányítása alatt államosította a gazdaságot.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1945",
+      "B) 1948",
+      "C) 1949",
+      "D) 1956"
+     ],
+     "question": "Mikor alakult meg a Magyar Dolgozók Pártja (MDP)?",
+     "explanation": "Az MDP 1948 júniusában alakult meg a Magyar Kommunista Párt és a Szociáldemokrata Párt egyesülésével.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-027",
+   "lesson_id": "01ea9b8d-1dad-4452-b3f6-4bb39bca0de0",
+   "block_id": "55a2648b-ee9d-453b-ae7f-9e7b3e3380ae",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Mi volt a Rákosi-diktatúra alatt bevezetett új magyar valuta neve?”",
+   "explanation": "A forintot 1946. augusztus 1-jén, a Nagy Ferenc-kormány idején vezették be, nem a Rákosi-diktatúra alatt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_forint",
+     "title": "Hungarian forint",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Pengő",
+      "B) Forint",
+      "C) Korona",
+      "D) Dénár"
+     ],
+     "question": "Mi volt a Rákosi-diktatúra alatt bevezetett új magyar valuta neve?",
+     "explanation": "A forint 1946-ban váltotta fel a pengőt, és a Rákosi-diktatúra alatt is a hivatalos valuta maradt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Pengő",
+      "B) Forint",
+      "C) Korona",
+      "D) Dénár"
+     ],
+     "question": "Mi volt a Magyarországon 1946-ban bevezetett új fizetőeszköz neve?",
+     "explanation": "A forintot 1946. augusztus 1-jén vezették be a pengő hiperinflációja után; a Rákosi-korszakban is ez maradt a fizetőeszköz.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-028",
+   "lesson_id": "01ea9b8d-1dad-4452-b3f6-4bb39bca0de0",
+   "block_id": "55a2648b-ee9d-453b-ae7f-9e7b3e3380ae",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik terület volt híres a politikai foglyok kényszermunkájáról?” (kulcs: A, Hortobágy)",
+   "explanation": "A magyarázat Recsket említi (Mátra), amely nincs az opciók között; a kulcs és a magyarázat ellentmond egymásnak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Recsk_forced_labor_camp",
+     "title": "Recsk forced labor camp",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hortobágy",
+      "B) Balaton",
+      "C) Tihany",
+      "D) Tokaj"
+     ],
+     "question": "Melyik terület volt híres a politikai foglyok kényszermunkájáról a Rákosi-diktatúra alatt?",
+     "explanation": "Recsk a Mátra hegységben található, és ismert volt a politikai foglyok munkatáborairól.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Recsk",
+      "Balaton",
+      "Tihany",
+      "Tokaj"
+     ],
+     "question": "Melyik terület volt híres a politikai foglyok kényszermunkájáról a Rákosi-diktatúra alatt?",
+     "explanation": "Recsk a Mátra lábánál található; 1950–53 között itt működött a politikai foglyok kényszermunkatábora.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-029",
+   "lesson_id": null,
+   "block_id": "57d17364-2663-4048-a955-b26b5dc8bd6d",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi a népbíróság feladata?” (kulcs: politikai perek lefolytatása)",
+   "explanation": "A népbíróságok elsősorban a háborús és népellenes bűnök felett ítélkeztek; a „politikai perek” torzítás. A magyarázat is ellentmondásos.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/People's_Tribunals_in_Hungary",
+     "title": "People's Tribunals in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Politikai perek lefolytatása",
+      "B) Gazdasági ügyek rendezése",
+      "C) Választások lebonyolítása",
+      "D) Hadsereg irányítása"
+     ],
+     "question": "Mi a népbíróság feladata?",
+     "explanation": "A népbíróságok a háborús bűnösök és politikai ellenfelek perét végezték el a kommunista rendszer alatt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Háborús bűnösök felett ítélkezni",
+      "Gazdasági ügyek rendezése",
+      "Választások lebonyolítása",
+      "A hadsereg irányítása"
+     ],
+     "question": "Mi a népbíróság feladata?",
+     "explanation": "A népbíróságok 1945-től a háborús és népellenes bűnök felett ítélkeztek (Bárdossyt, Imrédyt és Szálasit 1946-ban halálra ítélték); később a kommunisták politikai célokra is felhasználták őket.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-09-030",
+   "lesson_id": null,
+   "block_id": "57d17364-2663-4048-a955-b26b5dc8bd6d",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik városban alakítottak ki internáló tábort a Hortobágyon?” (kulcs: Recsk)",
+   "explanation": "Recsk (Heves megye, Mátra) nem a Hortobágyon van; a kérdés önellentmondó.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Recsk_forced_labor_camp",
+     "title": "Recsk forced labor camp",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Sztálinváros",
+      "B) Recsk",
+      "C) Debrecen",
+      "D) Szeged"
+     ],
+     "question": "Melyik városban alakítottak ki internáló tábort a Hortobágyon?",
+     "explanation": "Recsk volt az egyik legismertebb internáló tábor, ahol politikai foglyokat tartottak fogva.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Sztálinváros",
+      "B) Recsk",
+      "C) Debrecen",
+      "D) Szeged"
+     ],
+     "question": "Melyik településen működött 1950–53 között a politikai foglyok kényszermunkatábora?",
+     "explanation": "Recsk a Mátra lábánál található; itt működött 1950–53 között a politikai foglyok kényszermunkatábora.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-1112-09-001": "0f786bb0-0d76-4d1f-9a6d-502c0ca0a5a6",
+  "HIST-1112-09-002": "2f3d36c3-66b6-42a5-b15e-3aa60bdce96b",
+  "HIST-1112-09-004": "0d681b5e-8884-4b86-a806-ed44fef10849",
+  "HIST-1112-09-005": "660b8502-7bd0-4cbc-aeff-5b3773910671",
+  "HIST-1112-09-006": "6f1b41fd-ae3d-4af1-a3a5-07980b768d26",
+  "HIST-1112-09-008": "0f3038b2-82fd-4c9d-98fc-109a1d987b59",
+  "HIST-1112-09-009": "472c6d14-9c85-45bc-9a3e-75e240dba8a9",
+  "HIST-1112-09-010": "84060e33-bfc0-4c78-a7d7-f276e84c7db5",
+  "HIST-1112-09-011": "58c52079-f9ff-409c-92d5-750f029733b1",
+  "HIST-1112-09-012": "c125f79a-b411-4b8e-a173-315a5d07f713",
+  "HIST-1112-09-013": "8d61920b-b0d9-4064-8b44-eb29fd27bf4d",
+  "HIST-1112-09-014": "7610ea66-8942-4d8a-abeb-78e38f5f355c",
+  "HIST-1112-09-015": "501dd2fc-efb4-4e0c-976d-01fafec0d609",
+  "HIST-1112-09-016": "5f3a188e-e3e3-4848-b87e-75de89eb37fb",
+  "HIST-1112-09-017": "10469847-3f2d-477d-9a32-595fd92e1a16",
+  "HIST-1112-09-018": "c570e0b5-f84c-4d8b-b809-4b8c4acdd15a",
+  "HIST-1112-09-019": "1a2fbd61-5a76-4d0d-bf2e-1569e928f3ef",
+  "HIST-1112-09-020": "f87e1610-a059-46f0-8834-1c8759616669",
+  "HIST-1112-09-021": "bb0564ed-6bbc-4244-a2f0-3c085145f659",
+  "HIST-1112-09-022": "5503c856-e1ec-4da6-b751-dbe4a3f26b8d",
+  "HIST-1112-09-023": "debf0e82-644c-4c36-a9f0-dd5494e38fd0",
+  "HIST-1112-09-024": "6c640cf7-fc01-4067-bc9d-a41779b87bd1",
+  "HIST-1112-09-025": "7a40ab5f-9575-449c-ab28-ac13ca7bff2f",
+  "HIST-1112-09-026": "a8bc24a2-bb36-4bc3-9509-3ef1d2660a45",
+  "HIST-1112-09-027": "b9d88dfd-c086-42f9-b199-5b3f3ae14e0a",
+  "HIST-1112-09-028": "b97c1856-2e53-45fa-94a0-f85e3a1083f1",
+  "HIST-1112-09-029": "9a8bf87f-56af-473e-ad28-087fbd220eac",
+  "HIST-1112-09-030": "31ca82a0-af38-413a-8988-dd496812fea2"
+ }
+}

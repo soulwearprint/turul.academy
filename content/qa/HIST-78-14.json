@@ -1,0 +1,679 @@
+{
+ "nat_id": "HIST-78-14",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 11,
+  "cards": 58,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "world",
+   "quiz",
+   "story"
+  ],
+  "lint_only": [
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-78-14-001",
+   "lesson_id": "0f20ccee-2718-4450-bcb5-456ab25d3b96",
+   "block_id": "7453c039-a699-4273-9e86-d1192c82cdf2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Puskás Ferenc nem nyert aranyérmet az 1952-es helsinki olimpián”",
+   "explanation": "A magyar labdarúgó-válogatott (az Aranycsapat) Puskás Ferenc csapatkapitánysága alatt olimpiai bajnok lett Helsinkiben 1952-ben (döntő: Magyarország–Jugoszlávia 2:0, Puskás gólt is lőtt).",
+   "sources": [
+    {
+     "url": "https://www.olympics.com/en/olympic-games/helsinki-1952",
+     "title": "Helsinki 1952 – Olympics.com",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Football_at_the_1952_Summer_Olympics",
+     "title": "Football at the 1952 Summer Olympics",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A magyar sportolók a világ legnagyobb sporteseményein, így az olimpiákon is kiemelkedő teljesítményt nyújtanak. Puskás Ferenc nem nyert aranyérmet az 1952-es helsinki olimpián, de a magyar labdarúgás egyik legfontosabb eseménye volt a részvétele. Az olimpiai sikerek nemcsak a sportágakban, hanem a nemzeti büszkeségben is jelentős szerepet játszanak. A magyar olimpikonok teljesítménye világszerte elismerést nyert.",
+     "type": "text",
+     "heading": "Olimpiai sikerek",
+     "key_term": "olimpiai sikerek"
+    },
+    "after": {
+     "body": "A magyar sportolók a világ legnagyobb sporteseményein, így az olimpiákon is kiemelkedő teljesítményt nyújtanak. Puskás Ferenc csapatkapitányként olimpiai aranyérmet nyert a magyar labdarúgó-válogatottal az 1952-es helsinki olimpián. Az olimpiai sikerek nemcsak a sportágakban, hanem a nemzeti büszkeségben is jelentős szerepet játszanak. A magyar olimpikonok teljesítménye világszerte elismerést nyert.",
+     "type": "text",
+     "heading": "Olimpiai sikerek",
+     "key_term": "olimpiai sikerek"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-002",
+   "lesson_id": "0f20ccee-2718-4450-bcb5-456ab25d3b96",
+   "block_id": "13e3275d-7e16-47a0-948e-167431430b9e",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "Magyarázat: „Puskás Ferenc nem nyert aranyérmet az 1952-es helsinki olimpián” — miközben a megjelölt válasz A) Helsinki 1952",
+   "explanation": "A kulcs (Helsinki 1952) helyes, de a magyarázat tagadja; a diák az ellenkezőjét tanulná. Puskás csapatkapitányként olimpiai bajnok lett 1952-ben.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Football_at_the_1952_Summer_Olympics",
+     "title": "Football at the 1952 Summer Olympics",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Helsinki 1952",
+      "B) Róma 1960",
+      "C) Tokió 1964",
+      "D) Melbourne 1956"
+     ],
+     "question": "Melyik olimpiai helyszínen nyert Puskás Ferenc aranyérmet?",
+     "explanation": "Puskás Ferenc nem nyert aranyérmet az 1952-es helsinki olimpián, de a magyar labdarúgás egyik legfontosabb eseménye volt a részvétele.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Helsinki 1952",
+      "B) Róma 1960",
+      "C) Tokió 1964",
+      "D) Melbourne 1956"
+     ],
+     "question": "Melyik olimpiai helyszínen nyert Puskás Ferenc aranyérmet?",
+     "explanation": "Puskás Ferenc az Aranycsapat kapitányaként 1952-ben Helsinkiben olimpiai bajnok lett; a döntőben Magyarország 2:0-ra legyőzte Jugoszláviát.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-003",
+   "lesson_id": "0f20ccee-2718-4450-bcb5-456ab25d3b96",
+   "block_id": "7453c039-a699-4273-9e86-d1192c82cdf2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Kőrösi Csoma „Utazásai során sokat tett a magyar nyelv és kultúra nemzetközi megismertetéséért”",
+   "explanation": "Kőrösi Csoma a magyarok őshazáját kereste; fő eredménye az első tibeti–angol szótár és tibeti nyelvtan (Kalkutta, 1834), ezzel ő a tibetológia megalapítója. Nem a magyar kultúrát népszerűsítette külföldön.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Alexander_Csoma_de_K%C5%91r%C3%B6s",
+     "title": "Alexander Csoma de Kőrös",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A 19. században számos magyar utazó indult felfedezőútra, hogy új ismereteket szerezzen. Kőrösi Csoma Sándor a tibeti kultúra és nyelv kutatására összpontosított, jelentős hatással volt a keleti tudományokra. Utazásai során sokat tett a magyar nyelv és kultúra nemzetközi megismertetéséért. Munkássága példaértékű a magyar felfedezők között, akik a világ különböző tájain nyomot hagytak.",
+     "type": "text",
+     "heading": "Világjáró magyarok",
+     "key_term": "világjáró magyarok"
+    },
+    "after": {
+     "body": "A 19. században számos magyar utazó indult felfedezőútra, hogy új ismereteket szerezzen. Kőrösi Csoma Sándor a tibeti kultúra és nyelv kutatására összpontosított, jelentős hatással volt a keleti tudományokra. A magyarok őshazáját kereste; 1834-ben kiadta az első tibeti–angol szótárat és tibeti nyelvtant, ezért őt tartják a tibetológia megalapítójának. Munkássága példaértékű a magyar felfedezők között, akik a világ különböző tájain nyomot hagytak.",
+     "type": "text",
+     "heading": "Világjáró magyarok",
+     "key_term": "világjáró magyarok"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-004",
+   "lesson_id": "0f20ccee-2718-4450-bcb5-456ab25d3b96",
+   "block_id": "13e3275d-7e16-47a0-948e-167431430b9e",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Kőrösi Csoma Sándor a 19. században felfedezte Tibetet”",
+   "explanation": "Tibetet nem ő „fedezte fel”; a tibeti nyelvet kutatta (főleg Ladakhban és Zanszkárban), Lhászába sosem jutott el (1842-ben Dardzsilingben halt meg útközben). Fő műve az első tibeti–angol szótár és nyelvtan (1834).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Alexander_Csoma_de_K%C5%91r%C3%B6s",
+     "title": "Alexander Csoma de Kőrös",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Magyar utazó, aki a tibeti kultúra és nyelv kutatásával foglalkozott.",
+      "B) Magyar tudós, aki a gyógyszerészet terén végzett kutatásokat.",
+      "C) Magyar művész, aki nemzetközi hírnevet szerzett festményeivel.",
+      "D) Magyar sportoló, aki több olimpiai aranyérmet nyert."
+     ],
+     "question": "Ki volt Kőrösi Csoma Sándor, és miért fontos a magyar történelem szempontjából?",
+     "explanation": "Kőrösi Csoma Sándor a 19. században felfedezte Tibetet, és tudományos munkái révén hozzájárult a magyar nyelv és kultúra nemzetközi elismertségéhez.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Magyar utazó, aki a tibeti kultúra és nyelv kutatásával foglalkozott.",
+      "B) Magyar tudós, aki a gyógyszerészet terén végzett kutatásokat.",
+      "C) Magyar művész, aki nemzetközi hírnevet szerzett festményeivel.",
+      "D) Magyar sportoló, aki több olimpiai aranyérmet nyert."
+     ],
+     "question": "Ki volt Kőrösi Csoma Sándor, és miért fontos a magyar történelem szempontjából?",
+     "explanation": "Kőrösi Csoma Sándor a magyarok őshazáját keresve jutott el Ázsiába, ahol a tibeti nyelvet kutatta; 1834-ben kiadta az első tibeti–angol szótárat és nyelvtant, ezért a tibetológia megalapítójaként tartják számon.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-005",
+   "lesson_id": "0f20ccee-2718-4450-bcb5-456ab25d3b96",
+   "block_id": "7453c039-a699-4273-9e86-d1192c82cdf2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Bartók Béla „nemzetközi kiállításai”",
+   "explanation": "Zeneszerzőnek nincsenek kiállításai; Bartók koncertkörutakon lépett fel zongoristaként és népzenekutatóként is ismert lett.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Kategóriahiba (zeneszerző ↔ kiállítás); nem igényel külső forrást.",
+   "fix": {
+    "before": {
+     "body": "A 20. században Bartók Béla zeneszerző munkássága nemcsak Magyarországon, hanem világszerte elismertté vált. Zenei újításai és nemzetközi kiállításai hozzájárultak a magyar kultúra globális elismertségéhez. A magyar művészek, legyenek azok festők, szobrászok vagy zenészek, jelentős hatással voltak a nemzetközi művészeti életre. Művészetük a magyar identitás szerves részét képezi.",
+     "type": "text",
+     "heading": "Magyar művészet a világban",
+     "key_term": "magyar művészet"
+    },
+    "after": {
+     "body": "A 20. században Bartók Béla zeneszerző munkássága nemcsak Magyarországon, hanem világszerte elismertté vált. Zenei újításai, népzenegyűjtése és külföldi hangversenyei hozzájárultak a magyar kultúra globális elismertségéhez. A magyar művészek, legyenek azok festők, szobrászok vagy zenészek, jelentős hatással voltak a nemzetközi művészeti életre. Művészetük a magyar identitás szerves részét képezi.",
+     "type": "text",
+     "heading": "Magyar művészet a világban",
+     "key_term": "magyar művészet"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-006",
+   "lesson_id": "0f20ccee-2718-4450-bcb5-456ab25d3b96",
+   "block_id": "13e3275d-7e16-47a0-948e-167431430b9e",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question, options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik esemény jellemezte a 20. századi magyar művészetet a legjobban?” — megjelölt: C) Nemzetközi kiállítások",
+   "explanation": "Nincs tényszerű helyes válasz; a két világháború és Trianon is legalább ennyire meghatározta a korszak művészetét. Javasolt: tényszerű kérdés Bartókról.",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Véleménykérdés, nincs egyértelmű helyes válasz.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Az első világháború",
+      "B) A második világháború",
+      "C) Nemzetközi kiállítások",
+      "D) A trianoni békeszerződés"
+     ],
+     "question": "Melyik esemény jellemezte a 20. századi magyar művészetet a legjobban?",
+     "explanation": "A 20. századi magyar művészet kiemelkedő eseményei közé tartoznak a nemzetközi kiállítások, ahol magyar művészek nemzetközi elismerést nyertek.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Régi festményeket",
+      "B) Népdalokat",
+      "C) Népviseleteket",
+      "D) Régi könyveket"
+     ],
+     "question": "Mit gyűjtött Bartók Béla Kodály Zoltánnal együtt a falvakban?",
+     "explanation": "Bartók Béla és Kodály Zoltán a 20. század elején több ezer népdalt gyűjtött, és ezek elemeit beépítették műveikbe.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-007",
+   "lesson_id": "00cd13e9-5aab-4f1a-97cf-a2c1f4b67255",
+   "block_id": "fc85b514-bb56-49b3-aacf-3e5bc86de9b4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Bethlen Gábor és más vezetők próbálták megőrizni a magyar identitást a [Monarchián] belül”",
+   "explanation": "Anakronizmus: Bethlen Gábor erdélyi fejedelem volt 1613–1629 között, két és fél évszázaddal a Monarchia előtt. A kiegyezés magyar vezetői Deák Ferenc és Andrássy Gyula voltak. (Az 1867 a 19. század második fele, nem vége.)",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Gabriel_Bethlen",
+     "title": "Gabriel Bethlen",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+     "title": "Austro-Hungarian Compromise of 1867",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A 19. század végén, 1867-ben a kiegyezés létrehozta az Osztrák-Magyar Monarchiát, amely Közép-Európa legnagyobb birodalmává vált. Ferenc József császár uralkodása alatt a birodalom stabilitást és fejlődést hozott, de a nemzeti törekvések is felerősödtek. Bethlen Gábor és más vezetők próbálták megőrizni a magyar identitást a birodalmon belül.",
+     "type": "text",
+     "heading": "Az Osztrák-Magyar Monarchia",
+     "key_term": "Osztrák-Magyar Monarchia"
+    },
+    "after": {
+     "body": "A 19. század második felében, 1867-ben a kiegyezés létrehozta az Osztrák-Magyar Monarchiát, amely Közép-Európa legnagyobb birodalmává vált. Ferenc József császár uralkodása alatt a birodalom stabilitást és fejlődést hozott, de a nemzeti törekvések is felerősödtek. Deák Ferenc, Andrássy Gyula és más vezetők próbálták megőrizni a magyar identitást a birodalmon belül.",
+     "type": "text",
+     "heading": "Az Osztrák-Magyar Monarchia",
+     "key_term": "Osztrák-Magyar Monarchia"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-008",
+   "lesson_id": "00cd13e9-5aab-4f1a-97cf-a2c1f4b67255",
+   "block_id": "fc85b514-bb56-49b3-aacf-3e5bc86de9b4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„II. Rákóczi Ferenc vezetésével a 17-18. századi szabadságharcok”",
+   "explanation": "II. Rákóczi Ferenc egyetlen szabadságharcot vezetett, 1703–1711 között; a 17. századi kuruc mozgalmak (pl. Thököly Imre) nem az ő vezetésével zajlottak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Rákóczi%27s_War_of_Independence",
+     "title": "Rákóczi's War of Independence",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A magyar megmaradás titkai közé tartoznak a szabadságharcok, mint az 1848-49-es forradalom és szabadságharc, amely a nemzeti identitás megőrzését szolgálta. II. Rákóczi Ferenc vezetésével a 17-18. századi szabadságharcok is hozzájárultak a magyar önállóság megőrzéséhez. Emellett a békés építkezés, a kultúra és oktatás fejlesztése is kulcsszerepet játszott a megmaradásban.",
+     "type": "text",
+     "heading": "Szabadságharcok és békés építkezés",
+     "key_term": "szabadságharcok"
+    },
+    "after": {
+     "body": "A magyar megmaradás titkai közé tartoznak a szabadságharcok, mint az 1848-49-es forradalom és szabadságharc, amely a nemzeti identitás megőrzését szolgálta. A 17. századi kuruc mozgalmak és a II. Rákóczi Ferenc vezette szabadságharc (1703–1711) is hozzájárultak a magyar önállóság megőrzéséhez. Emellett a békés építkezés, a kultúra és oktatás fejlesztése is kulcsszerepet játszott a megmaradásban.",
+     "type": "text",
+     "heading": "Szabadságharcok és békés építkezés",
+     "key_term": "szabadságharcok"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-009",
+   "lesson_id": "00cd13e9-5aab-4f1a-97cf-a2c1f4b67255",
+   "block_id": "fc85b514-bb56-49b3-aacf-3e5bc86de9b4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A 1920-as Trianoni békeszerződés”",
+   "explanation": "Névelő: az 1920-as; a trianoni kisbetűs melléknév.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A 1920-as Trianoni békeszerződés következtében Magyarország területe jelentősen csökkent, és a magyarság a környező országokban kisebbségbe került. Ez a döntés máig tartó hatásokkal bír, hiszen a kisállami lét kényszerpályáira kényszerítette a magyarságot a nagyhatalmak árnyékában. A Trianon utáni Magyarország térképe a nemzeti identitás szempontjából is kulcsfontosságú.",
+     "type": "text",
+     "heading": "Trianon hatásai",
+     "key_term": "Trianon"
+    },
+    "after": {
+     "body": "Az 1920-as trianoni békeszerződés következtében Magyarország területe jelentősen csökkent, és a magyarság a környező országokban kisebbségbe került. Ez a döntés máig tartó hatásokkal bír, hiszen a kisállami lét kényszerpályáira kényszerítette a magyarságot a nagyhatalmak árnyékában. A Trianon utáni Magyarország térképe a nemzeti identitás szempontjából is kulcsfontosságú.",
+     "type": "text",
+     "heading": "Trianon hatásai",
+     "key_term": "Trianon"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-010",
+   "lesson_id": "00cd13e9-5aab-4f1a-97cf-a2c1f4b67255",
+   "block_id": "fc85b514-bb56-49b3-aacf-3e5bc86de9b4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A 1989-es rendszerváltoztatás”",
+   "explanation": "Névelő: az 1989-es.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A 1989-es rendszerváltoztatás új lehetőségeket nyitott a kisebbségbe került magyarok számára. Antall József miniszterelnök vezetésével a magyar kormány törekedett a határon túli magyarsággal való kapcsolatépítésre. Az új típusú kapcsolatépítés célja a nemzeti összetartozás erősítése és a kisebbségi jogok védelme volt.",
+     "type": "text",
+     "heading": "Rendszerváltoztatás és nemzeti összetartozás",
+     "key_term": "rendszerváltozás"
+    },
+    "after": {
+     "body": "Az 1989-es rendszerváltoztatás új lehetőségeket nyitott a kisebbségbe került magyarok számára. Antall József miniszterelnök vezetésével a magyar kormány törekedett a határon túli magyarsággal való kapcsolatépítésre. Az új típusú kapcsolatépítés célja a nemzeti összetartozás erősítése és a kisebbségi jogok védelme volt.",
+     "type": "text",
+     "heading": "Rendszerváltoztatás és nemzeti összetartozás",
+     "key_term": "rendszerváltozás"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-011",
+   "lesson_id": "0f20ccee-2718-4450-bcb5-456ab25d3b96",
+   "block_id": "1f1d6c02-634d-49bc-82a5-c08105b5a070",
+   "mode": "story",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A 1952-es Helsinki olimpia … mint egy híres sportoló”",
+   "explanation": "Névelő (az 1952-es), helyesírás (helsinki), és a generátor névhelyettesítő maradványa („mint egy híres sportoló”).",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A 1952-es Helsinki olimpia idején a magyar sportolók, mint egy híres sportoló, világraszóló sikereket értek el. A falvakban és városokban az emberek izgatottan követték a versenyeket, és a győzelmek után közös ünnepléseket tartottak. Az iskolákban külön órákat szenteltek a sportnak, amelynek hatására a gyerekek is aktívan részt vettek a helyi sportéletben. A sportolók sikerei nemcsak a büszkeséget, hanem a közösség összetartását is erősítették, hiszen mindenki együtt ünnepelt.",
+     "mood": "sport",
+     "type": "story",
+     "heading": "Olimpiai sikerek és közösségi ünneplések"
+    },
+    "after": {
+     "body": "Az 1952-es helsinki olimpia idején a magyar sportolók világraszóló sikereket értek el. A falvakban és városokban az emberek izgatottan követték a versenyeket, és a győzelmek után közös ünnepléseket tartottak. Az iskolákban külön órákat szenteltek a sportnak, amelynek hatására a gyerekek is aktívan részt vettek a helyi sportéletben. A sportolók sikerei nemcsak a büszkeséget, hanem a közösség összetartását is erősítették, hiszen mindenki együtt ünnepelt.",
+     "mood": "sport",
+     "type": "story",
+     "heading": "Olimpiai sikerek és közösségi ünneplések"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-012",
+   "lesson_id": "00cd13e9-5aab-4f1a-97cf-a2c1f4b67255",
+   "block_id": "39200511-ad1c-488f-ba87-dca96be1cf59",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "explanation",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A Trianon a 1920-ban aláírt békeszerződés”",
+   "explanation": "Névelő és szerkezet.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1867",
+      "B) 1920",
+      "C) 1947",
+      "D) 1989"
+     ],
+     "question": "Mi a Trianon, és mikor írták alá a békeszerződést?",
+     "explanation": "A Trianon a 1920-ban aláírt békeszerződés, amely Magyarország területének jelentős csökkentését eredményezte, és máig hatással van a magyar nemzet sorsára.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1867",
+      "B) 1920",
+      "C) 1947",
+      "D) 1989"
+     ],
+     "question": "Mi a Trianon, és mikor írták alá a békeszerződést?",
+     "explanation": "A trianoni békeszerződést 1920-ban írták alá; ez, amely Magyarország területének jelentős csökkentését eredményezte, és máig hatással van a magyar nemzet sorsára.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-013",
+   "lesson_id": "00cd13e9-5aab-4f1a-97cf-a2c1f4b67255",
+   "block_id": "552d24d1-03a4-461b-8104-23d0252a9417",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "1989: „Ekkoriban a berlini fal leomlása és a Szovjetunió felbomlása is zajlott”",
+   "explanation": "A berlini fal 1989. november 9-én nyílt meg, de a Szovjetunió csak 1991 decemberében bomlott fel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
+     "title": "Dissolution of the Soviet Union",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1989-ben a kelet-európai rendszerváltozások során Magyarországon is lezajlott a politikai átmenet, amely a szocialista rendszer végét és a demokratikus berendezkedés kialakulását hozta el. Ekkoriban a berlini fal leomlása és a Szovjetunió felbomlása is zajlott, amelyek globális szinten is jelentős változásokat idéztek elő. A rendszerváltozás lehetőséget biztosított a magyar kisebbségek számára, hogy újra kapcsolatokat építsenek a szomszédos országokban élő magyar közösségekkel, így erősítve a magyar nemzeti identitást.",
+     "type": "world",
+     "year": "1989",
+     "heading": "A rendszerváltoztatás és a globális kontextus",
+     "link_hu": "A rendszerváltozás következtében a magyar kisebbségek jogi és politikai helyzete javult, ami a magyar megmaradás szempontjából kedvező irányt jelentett."
+    },
+    "after": {
+     "body": "1989-ben a kelet-európai rendszerváltozások során Magyarországon is lezajlott a politikai átmenet, amely a szocialista rendszer végét és a demokratikus berendezkedés kialakulását hozta el. Ekkor omlott le a berlini fal, 1991-ben pedig a Szovjetunió is felbomlott; ezek az események globális szinten is jelentős változásokat idéztek elő. A rendszerváltozás lehetőséget biztosított a magyar kisebbségek számára, hogy újra kapcsolatokat építsenek a szomszédos országokban élő magyar közösségekkel, így erősítve a magyar nemzeti identitást.",
+     "type": "world",
+     "year": "1989",
+     "heading": "A rendszerváltoztatás és a globális kontextus",
+     "link_hu": "A rendszerváltozás következtében a magyar kisebbségek jogi és politikai helyzete javult, ami a magyar megmaradás szempontjából kedvező irányt jelentett."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-014",
+   "lesson_id": null,
+   "block_id": "edbff2c1-841b-42a9-9495-633d4b31995f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 3,
+   "field": "question, options, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mikor hirdették ki a magyar függetlenséget?” — megjelölt: 1848 („1848. március 15-én hirdették ki”)",
+   "explanation": "1848. március 15. a forradalom napja, nem függetlenségi nyilatkozat. A Függetlenségi nyilatkozatot 1849. április 14-én fogadta el az Országgyűlés Debrecenben — ez nem szerepel a válaszok között.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Declaration_of_Independence",
+     "title": "Hungarian Declaration of Independence",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1848",
+      "B) 1867",
+      "C) 1918",
+      "D) 1945"
+     ],
+     "question": "Mikor hirdették ki a magyar függetlenséget?",
+     "explanation": "A magyar függetlenséget 1848. március 15-én hirdették ki, ami a forradalom kezdetét jelezte.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1848",
+      "B) 1849",
+      "C) 1867",
+      "D) 1918"
+     ],
+     "question": "Melyik évben fogadták el Debrecenben a Függetlenségi nyilatkozatot, amely kimondta a Habsburg-ház trónfosztását?",
+     "explanation": "A Függetlenségi nyilatkozatot 1849. április 14-én fogadta el az Országgyűlés Debrecenben, Kossuth Lajos javaslatára. 1848. március 15. a forradalom kitörésének napja.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-015",
+   "lesson_id": null,
+   "block_id": "edbff2c1-841b-42a9-9495-633d4b31995f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Ki volt a kiegyezés egyik főszereplője?” — megjelölt: D) Andrássy Gyula",
+   "explanation": "A) Ferenc József is a kiegyezés főszereplője volt (ő kötötte meg a magyar féllel), így két helyes válasz van. Pontosított kérdéssel egy marad.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+     "title": "Austro-Hungarian Compromise of 1867",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Ferenc József",
+      "B) Kossuth Lajos",
+      "C) Széchenyi István",
+      "D) Andrássy Gyula"
+     ],
+     "question": "Ki volt a kiegyezés egyik főszereplője?",
+     "explanation": "Andrássy Gyula volt az egyik fő tárgyaló a kiegyezés során, amely 1867-ben jött létre.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Ferenc József",
+      "B) Kossuth Lajos",
+      "C) Széchenyi István",
+      "D) Andrássy Gyula"
+     ],
+     "question": "Ki lett 1867-ben, a kiegyezés után Magyarország miniszterelnöke?",
+     "explanation": "A kiegyezés után, 1867-ben Andrássy Gyula lett a felelős magyar kormány miniszterelnöke; Ferenc Józsefet ugyanekkor koronázták magyar királlyá. A kiegyezés fő magyar kidolgozója Deák Ferenc volt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-14-016",
+   "lesson_id": null,
+   "block_id": "edbff2c1-841b-42a9-9495-633d4b31995f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "question, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik évben történt a magyar rendszerváltás?” — megjelölt: A) 1989, de B) 1990 is szerepel",
+   "explanation": "A rendszerváltás folyamat: 1989-ben kiáltották ki a köztársaságot (október 23.), de az első szabad választás és az Antall-kormány 1990-es. Mindkét válasz védhető; a kérdést egy eseményre kell szűkíteni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1990_Hungarian_parliamentary_election",
+     "title": "1990 Hungarian parliamentary election",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1989",
+      "B) 1990",
+      "C) 1991",
+      "D) 1994"
+     ],
+     "question": "Melyik évben történt a magyar rendszerváltás?",
+     "explanation": "A magyar rendszerváltás 1989-ben zajlott, amely a kommunista rendszer végét jelentette.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1989",
+      "B) 1990",
+      "C) 1991",
+      "D) 1994"
+     ],
+     "question": "Melyik évben kiáltották ki a Magyar Köztársaságot (október 23-án)?",
+     "explanation": "A Magyar Köztársaságot 1989. október 23-án kiáltotta ki Szűrös Mátyás ideiglenes köztársasági elnök; az első szabad országgyűlési választást 1990 tavaszán tartották.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-78-14-001": "e347d929-83bc-4c11-84ec-9eea3df3d7ea",
+  "HIST-78-14-002": "8ff45d11-24c6-4643-851e-bd2599ad05cb",
+  "HIST-78-14-003": "10ae1930-a232-4d48-a03c-f38f8c1cd560",
+  "HIST-78-14-004": "11f698ad-7aa4-41eb-9000-8eb2d1070cf5",
+  "HIST-78-14-005": "0bbb8133-a99e-4238-bc07-2087c54492d5",
+  "HIST-78-14-007": "14883522-81dd-42cb-9c79-845d81cf3e04",
+  "HIST-78-14-008": "7b18a3f5-54e0-45b0-9296-ddfb5edc089d",
+  "HIST-78-14-009": "99b83ef5-6f90-4166-9c7f-7c0ad853870e",
+  "HIST-78-14-010": "0d7abbd3-6808-4d17-adc5-2d20e7617300",
+  "HIST-78-14-011": "e7cc2467-94ee-4986-8817-11cec1c9100e",
+  "HIST-78-14-012": "aefe484f-bff6-4957-beb0-beadc543a386",
+  "HIST-78-14-013": "a4e8f0c6-77f6-41ef-8de9-794b10d00dc5",
+  "HIST-78-14-014": "dc07b71e-0387-43ce-a2db-6d95cb6307a9",
+  "HIST-78-14-015": "83130c65-d584-4dad-b25b-f99b43918445"
+ }
+}

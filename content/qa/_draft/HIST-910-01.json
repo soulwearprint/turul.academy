@@ -1,0 +1,170 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Duplikált szövegkártyák (strukturális, a tartalomgenerálás hibája): 9d15c564 [3]/[7]/[8] olimpia; 41601efc [1]/[5]/[7] Kleiszthenész és [2]/[6]/[8] Periklész; 0e3902f2 [5]/[9], [6]/[10], [7]/[11], [8]/[12]; e33d56dc [0]/[6]/[7]."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "52749d14-98e7-491f-abd1-fda7e1be733f",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mikor és miért történt Jeruzsálem lerombolása?” – A) Kr. e. 586 (babiloniak) is helyes, a kulcs csak B",
+   "explanation": "Jeruzsálemet kétszer rombolták le: Kr. e. 586-ban II. Nabú-kudurri-uszur babiloni serege (az első templommal együtt), és Kr. u. 70-ben a rómaiak. Az A) válasz is igaz, így két helyes válasz van. A kérdést a rómaiakra kell szűkíteni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)",
+     "title": "Siege of Jerusalem (587 BC)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)",
+     "title": "Siege of Jerusalem (70 CE)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Mikor és kik rombolták le Jeruzsálemet és a második templomot?"
+   }
+  },
+  {
+   "block_id": "f8d6ae18-f3dd-4e1e-8473-9e2039e68ad0",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Melyik város volt … Pannónia fővárosa?” – kulcs: Aquincum",
+   "explanation": "Pannóniát Kr. u. 103 körül kettéosztották: Alsó-Pannónia székhelye Aquincum, Felső-Pannóniáé Carnuntum lett; később Savaria is tartományi székhely volt. Egyetlen „főváros” nincs, Savaria (B) is védhető. A kérdést Alsó-Pannóniára kell pontosítani.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pannonia_Inferior",
+     "title": "Pannonia Inferior",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik város volt Alsó-Pannónia (Pannonia Inferior) székhelye?",
+    "explanation": "Aquincum volt Alsó-Pannónia székhelye, fontos katonai és kereskedelmi központ. (Felső-Pannónia székhelye Carnuntum volt.)"
+   }
+  },
+  {
+   "block_id": "0e3902f2-6863-4cca-83a6-df767df1d34e",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Pannónia területe ma Magyarország nagy részét lefedi”",
+   "explanation": "Pannónia a Duna jobb partján feküdt: a mai Dunántúlt, valamint Ausztria, Szlovénia, Horvátország és Szerbia egyes részeit foglalta magában. A mai Magyarország Dunától keletre eső része (Alföld) nem tartozott hozzá.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pannonia",
+     "title": "Pannonia",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Pannónia területe ma Magyarország nagy részét lefedi",
+     "Pannónia a mai Dunántúlt és a szomszédos országok egyes részeit foglalta magában"
+    ]
+   ]
+  },
+  {
+   "block_id": "e33d56dc-17ca-4074-9f0a-3d7fd5ce5835",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Augustus „Julius Caesar unokaöccse volt”",
+   "explanation": "Octavianus Caesar húgának, Iulia Caesarisnak az unokája volt (Caesar nővérének lánya, Atia fia), vagyis Caesar dédunokaöccse; Caesar végrendeletében fiává fogadta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Augustus",
+     "title": "Augustus",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Julius Caesar unokaöccse volt",
+     "Julius Caesar rokona és fogadott fia volt"
+    ]
+   ]
+  },
+  {
+   "block_id": "3df22eac-d72a-46bf-9138-e941790a1db3",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Az első pénznemek, mint az ezüst és arany” Babilonban és Egyiptomban",
+   "explanation": "Mezopotámiában és Egyiptomban az ezüstöt mérlegen, súly szerint használták fizetőeszközként; pénzérme (vert pénz) először Lídiában, Kr. e. 7. században jelent meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lydian_coinage",
+     "title": "Lydian coinage",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az első pénznemek, mint az ezüst és arany, lehetővé tették",
+     "Kezdetben a lemért ezüst szolgált fizetőeszközként; az első pénzérméket később, a Kr. e. 7. században Lídiában verték. A pénz lehetővé tette"
+    ]
+   ]
+  },
+  {
+   "block_id": "0c9d6d6e-3b29-4d09-8049-d4864476f5dc",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Caesar halála után „a patríciusok és plebejusok közötti harcok éleződtek”",
+   "explanation": "A rendi harcok a Kr. e. 3. század elejére lezárultak (Lex Hortensia, Kr. e. 287). Caesar halála után a második triumvirátus és a polgárháborúk (Antonius, Octavianus) következtek.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Conflict_of_the_Orders",
+     "title": "Conflict of the Orders",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a patríciusok és plebejusok közötti harcok éleződtek",
+     "újabb polgárháborúk törtek ki Caesar örökségéért"
+    ]
+   ]
+  },
+  {
+   "block_id": "17b685b1-a205-4b53-9df7-0176e552e292",
+   "card_index": 6,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Milyen esemény volt az első olümpiai játékok?” – kulcs C) Sportverseny; B) Vallási ünnepség is helyes",
+   "explanation": "Az ókori olümpiai játékok Zeusz tiszteletére rendezett vallási ünnepek voltak, amelyeken sportversenyeket tartottak. A B) így szintén helyes.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ancient_Olympic_Games",
+     "title": "Ancient Olympic Games",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[1]": "B) Piaci vásár."
+   }
+  }
+ ]
+}

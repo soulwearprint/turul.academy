@@ -1,0 +1,249 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "A „Fontos személyek” kártya címe (heading) is pontosításra került."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "9a62a727-e841-4824-935a-4059d5b29708",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A majorság munkásai „nem voltak jobbágyok, általában béresek”",
+   "explanation": "A majorságban (földesúri saját kezelésű földön) elsősorban a jobbágyok dolgoztak robotban, azaz ingyenes kötelező munkával; emellett bérmunkások (napszámosok, béresek) is szerepet kaptak. A robot a késő középkorban, főleg 1514 után nőtt meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Demesne",
+     "title": "Demesne",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Corvée",
+     "title": "Corvée",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A majorságban dolgozó parasztok, akik nem voltak jobbágyok, általában béresek voltak, és munkájukért pénzt vagy természetbeni juttatásokat kaptak.",
+     "A majorságban főleg a jobbágyok dolgoztak robotban, vagyis ingyenes kötelező munkával; emellett bérmunkások (napszámosok, béresek) is részt vettek benne."
+    ]
+   ]
+  },
+  {
+   "block_id": "4e1e34a1-de09-4507-a35c-b07cb131d7ce",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A hűbériség „Magyarországon is meghatározta a politikai viszonyokat”",
+   "explanation": "A hűbéri lánc (hűbérúr–hűbéres) Nyugat-Európában, főleg a Frank Birodalomban és Franciaországban alakult ki. Magyarországon a király adományozott birtokot, de fejlett hűbéri lánc nem jött létre, a nemesek a királynak közvetlenül voltak alárendelve.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Feudalism",
+     "title": "Feudalism",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Vassal",
+     "title": "Vassal",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "replace": [
+    [
+     "Ez a rendszer Magyarországon is meghatározta a politikai viszonyokat, és hozzájárult a rendi monarchia kialakulásához.",
+     "Ez a rendszer főleg Nyugat-Európában volt jellemző; Magyarországon fejlett hűbéri lánc nem alakult ki, a nemesek a királynak voltak közvetlenül alárendelve, és ez a szerkezet a rendi monarchia kialakulásához vezetett."
+    ]
+   ]
+  },
+  {
+   "block_id": "abdbfa01-9dfa-407c-a025-7289f1100e8d",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A szabad királyi városok „adómentességet” élveztek",
+   "explanation": "A szabad királyi városok a földesúri és a megyei joghatóság alól mentesültek, önkormányzatuk és piaci jogaik voltak, de a királynak adót fizettek (például a kamara haszna). Teljes adómentességük nem volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Free_royal_city",
+     "title": "Free royal city",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "amelyek adómentességet és piaci jogokat élveztek",
+     "amelyek mentesültek a földesúri és a megyei joghatóság alól, önkormányzattal és piaci jogokkal rendelkeztek (a királynak azonban adót fizettek)"
+    ]
+   ]
+  },
+  {
+   "block_id": "abdbfa01-9dfa-407c-a025-7289f1100e8d",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A céhek „biztosítva a minőséget és a versenyt”",
+   "explanation": "A céhek szabályozták a termelés mennyiségét, az árakat és a mesterek számát, tehát a versenyt korlátozták, nem biztosították.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Guild",
+     "title": "Guild",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "biztosítva a minőséget és a versenyt",
+     "biztosítva a minőséget és korlátozva a versenyt (a mesterek számát, az árakat és a termelés mennyiségét is szabályozták)"
+    ]
+   ]
+  },
+  {
+   "block_id": "abdbfa01-9dfa-407c-a025-7289f1100e8d",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A reneszánsz építészet a 14. században vette kezdetét”; Velence és Firenze",
+   "explanation": "A reneszánsz építészet a 15. század elején Firenzében indult (Brunelleschi, a dóm kupolája 1420–36). A 14. század a késő gótika, a korareneszánsz irodalom és művészet kora.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Renaissance_architecture",
+     "title": "Renaissance architecture",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A reneszánsz építészet a 14. században vette kezdetét",
+     "A reneszánsz építészet a 15. század elején, Firenzében vette kezdetét"
+    ]
+   ]
+  },
+  {
+   "block_id": "abdbfa01-9dfa-407c-a025-7289f1100e8d",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Fontos személyek a középkorban”: Leonardo da Vinci, Gutenberg, Dózsa György",
+   "explanation": "Leonardo (1452–1519), Gutenberg (kb. 1400–1468) és Dózsa (1470–1514) a késő középkor és az újkor küszöbén éltek, a reneszánsz kortól számítanak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Renaissance",
+     "title": "Renaissance",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "replace": [
+    [
+     "A középkor alatt számos jelentős személyiség",
+     "A középkor végén és az újkor kezdetén számos jelentős személyiség"
+    ]
+   ],
+   "set": {
+    "heading": "Fontos személyek a középkor végén"
+   }
+  },
+  {
+   "block_id": "cfd15c91-e753-4ee3-95ca-fa05e842f9ce",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A pannonhalmi apátság „román stílusú épületei”",
+   "explanation": "A pannonhalmi bazilika 13. századi, korai gótikus, román elemeket is őrző épület; az apátság nagy része később átépült.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pannonhalma_Archabbey",
+     "title": "Pannonhalma Archabbey",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "replace": [
+    [
+     "a pannonhalmi bencés apátság román stílusú épületei",
+     "a pannonhalmi bencés apátság román elemeket őrző, korai gótikus bazilikája"
+    ]
+   ]
+  },
+  {
+   "block_id": "eb891a9c-7f72-46f6-9326-ce399d846fe5",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A keresztes hadjáratok szerepe: kulcs C (lovagi eszmény), de B) „a kereskedelem fellendítése” is a szokásos tankönyvi válasz",
+   "explanation": "A keresztes hadjáratok a Levante–Európa kereskedelem fellendülését is hozták (itáliai városok), így B) is védhető. A kérdést pontosítani kell.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Crusades",
+     "title": "Crusades",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "set": {
+    "options[1]": "B) A pápai hatalom megszüntetése."
+   }
+  },
+  {
+   "block_id": "3e825f5b-21cd-4cff-8049-ad3d9f451c42",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Melyik fogalom kapcsolódik a hűbériséghez?” – kulcs: Kiváltság",
+   "explanation": "A hűbériség lényege a hűbérúr és hűbéres (vazallus) kölcsönös hűségi kötelék: a hűbéres esküt tett, a hűbérúr birtokot (hűbért) adott. A „kiváltság” nem jellemzi a fogalmat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Vassal",
+     "title": "Vassal",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) Hűbéres (vazallus)",
+    "explanation": "A hűbériségben a hűbéres (vazallus) hűséget esküdött a hűbérúrnak, aki cserébe birtokot (hűbért) adott neki."
+   }
+  },
+  {
+   "block_id": "3e825f5b-21cd-4cff-8049-ad3d9f451c42",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Román stílus „az 1100-as évektől terjedt el”, a magyarázat: gótika „a 12. század végén”",
+   "explanation": "A román stílus Európában a 11. században terjedt el (Magyarországon Szent István korától), a gótika Franciaországban a 12. század közepén alakult ki, és a 13. században érkezett Magyarországra.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Romanesque_architecture",
+     "title": "Romanesque architecture",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik stílus jellemző a 11–12. századi középkori templomépítészetre?",
+    "explanation": "A román stílus a 11–12. században volt jellemző; a gótikus stílus Franciaországban a 12. század közepén jelent meg, és a 13. században terjedt el Magyarországon."
+   }
+  }
+ ]
+}

@@ -1,0 +1,258 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "A 59ba4e7f [4] kérdés B) opciója toldalékos alakja miatt kiszűrhető volt."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "ac3b51f7-5652-4bfd-92e3-7b4bb95e3f91",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Justinianus „a bizánci császár, aki megpróbálta megállítani az arab terjeszkedést”",
+   "explanation": "I. Justinianus 565-ben meghalt, Mohamed pedig 570 körül született; az arab hódítások az 630-as években kezdődtek. Justinianus nem harcolt az arabok ellen. Ellene Hérakleiosz császár harcolt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Justinian_I",
+     "title": "Justinian I",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Heraclius",
+     "title": "Heraclius",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik bizánci császár alatt kezdődtek az arab hódítások?",
+    "options": [
+     "A) I. Justinianus",
+     "B) Hérakleiosz",
+     "C) Nagy Konstantin",
+     "D) Nagy Károly"
+    ],
+    "correct": "B",
+    "explanation": "Az arab hódítások az 630-as években, Hérakleiosz császár uralkodása alatt kezdődtek; Bizánc ekkor elvesztette Szíriát és Egyiptomot. Justinianus már 565-ben meghalt."
+   }
+  },
+  {
+   "block_id": "59ba4e7f-e70a-4a53-aec9-a387e6cb848f",
+   "card_index": 7,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Nagy Károly „a Német-római Császárságot megalapította … a 9. században”",
+   "explanation": "Nagy Károlyt 800 karácsonyán koronázták császárrá; a Német-római Császárság kezdetét I. Ottó 962-es koronázásához kötik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Charlemagne",
+     "title": "Charlemagne",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Holy_Roman_Empire",
+     "title": "Holy Roman Empire",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[1]": "B) A frankok királya, akit 800-ban császárrá koronáztak",
+    "explanation": "Nagy Károly a frankok királya volt, akit 800 karácsonyán Rómában császárrá koronáztak. A Német-római Császárság később, I. Ottó 962-es koronázásával jött létre."
+   }
+  },
+  {
+   "block_id": "59ba4e7f-e70a-4a53-aec9-a387e6cb848f",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "B) „Medinába” – helyhatározós alak a többi alanyeseti válasz között",
+   "explanation": "Egységes alak kell (Medina); a toldalékos forma elárulja, hogy nem ez a helyes válasz.",
+   "source_note": "Nyelvi/formai javítás, nem igényel forrást.",
+   "set": {
+    "options[1]": "B) Medina"
+   }
+  },
+  {
+   "block_id": "59ba4e7f-e70a-4a53-aec9-a387e6cb848f",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "„Mi volt a népvándorlás fő oka?” – kulcs: gazdasági válság és éghajlati változások",
+   "explanation": "A népvándorlás okai vitatottak (hun nyomás, népességnövekedés, a Római Birodalom vonzása és gyengülése, éghajlat). Az egyetlen „fő ok” nem ellenőrizhető; a tankönyvi válasz a hunok nyomása lenne.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Migration_Period",
+     "title": "Migration Period",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "set": {
+    "question": "Melyik nép támadása indította el a germán népek nagy vándorlását a 4. század végén?",
+    "options": [
+     "A) A hunoké",
+     "B) Az araboké",
+     "C) A frankoké",
+     "D) A vikingeké"
+    ],
+    "explanation": "A hunok 375 körül legyőzték a keleti gótokat, és a nyomásuk elől menekülő germán népek átlépték a Római Birodalom határait."
+   }
+  },
+  {
+   "block_id": "ac3b51f7-5652-4bfd-92e3-7b4bb95e3f91",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Mohamed: „A) A Korán szerzője”",
+   "explanation": "Az iszlám tanítása szerint a Korán Isten kinyilatkoztatása, amelyet Mohamed közvetített; a „szerzője” megfogalmazás a hívők szemében hamis. Semleges forma: a Korán kinyilatkoztatását hirdető próféta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Quran",
+     "title": "Quran",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) Az iszlám prófétája, aki a Korán tanításait hirdette."
+   }
+  },
+  {
+   "block_id": "fb7a2004-38d3-4832-81ed-f83590e5188a",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "476 „lehetőséget adott a hunoknak … a terjeszkedésre”",
+   "explanation": "A Hun Birodalom Attila halála (453) után néhány éven belül felbomlott; 476-ban a hunok már nem voltak jelentős hatalom.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Huns",
+     "title": "Huns",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "lehetőséget adott a hunoknak és más népeknek a terjeszkedésre",
+     "lehetőséget adott a germán népeknek új királyságok alapítására"
+    ]
+   ]
+  },
+  {
+   "block_id": "fae3bbd9-e7aa-40ac-813b-c17f710f1c2d",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A hunok a Római Birodalom határain belül terjeszkedtek”; link_hu: a hunok nyomása „közvetlenül” vezetett a bukáshoz",
+   "explanation": "A hunok birodalma a római határokon kívül (a Kárpát-medencében és attól keletre) terült el; betöréseket vezettek, de nem terjeszkedtek a birodalmon belül. 476-ban a Hun Birodalom már nem létezett. „Romulus Augustust” helyesen Romulus Augustulust.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+     "title": "Fall of the Western Roman Empire",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Romulus Augustust",
+     "Romulus Augustulust"
+    ],
+    [
+     "A hunok a Római Birodalom határain belül terjeszkedtek, és Attila vezetésével jelentős hatást gyakoroltak",
+     "A hunok korábban, Attila vezetésével, a birodalom határain túlról jelentős hatást gyakoroltak"
+    ],
+    [
+     "közvetlenül a Római Birodalom bukásához vezetett",
+     "hozzájárult a Nyugatrómai Birodalom meggyengüléséhez"
+    ]
+   ]
+  },
+  {
+   "block_id": "3e4e2351-14bd-483f-8796-07503a05611e",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A birodalom terjedelme kiterjedt a Kárpát-medencére és a Római Birodalom jelentős részeire.”",
+   "explanation": "A Hun Birodalom a Kárpát-medencétől a pontusi sztyeppéig terjedt, de római területeket tartósan nem foglalt el; Attila hadjáratai betörések voltak. Nyelvi: „a 5.” → „az 5.”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Attila",
+     "title": "Attila",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a 5. században",
+     "az 5. században"
+    ],
+    [
+     "a Kárpát-medencére és a Római Birodalom jelentős részeire",
+     "a Kárpát-medencére és a keleti sztyeppék nagy részére, és hadjáratai a Római Birodalom területeit is sújtották"
+    ]
+   ]
+  },
+  {
+   "block_id": "69754143-782c-4d54-b445-647fe59a7973",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Poitiers „megakadályozta, hogy az iszlám befolyása elérje Nyugat-Európát”",
+   "explanation": "Az Ibériai-félsziget nagy része 711-től muszlim uralom alatt állt, tehát az iszlám már elérte Nyugat-Európát. Poitiers az arabok Pireneusokon túli előrenyomulását állította meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Tours",
+     "title": "Battle of Tours",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "megakadályozta, hogy az iszlám befolyása elérje Nyugat-Európát",
+     "megállította az arabok előrenyomulását a Pireneusoktól északra (az Ibériai-félsziget nagy része 711 óta muszlim uralom alatt állt)"
+    ]
+   ]
+  },
+  {
+   "block_id": "69754143-782c-4d54-b445-647fe59a7973",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "A német-római császárság vezetői „igyekeztek fenntartani a vallási és politikai egyensúlyt a két világ között”",
+   "explanation": "Ellenőrizhető tartalom nélküli töltelékmondat; I. Ottó fő ellenfelei a kalandozó magyarok és a szlávok voltak (Lech-mező, 955), nem az iszlám világ.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Otto_I,_Holy_Roman_Emperor",
+     "title": "Otto I, Holy Roman Emperor",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "replace": [
+    [
+     "A német-római császárság vezetői igyekeztek fenntartani a vallási és politikai egyensúlyt a két világ között.",
+     "I. Ottó 955-ben a Lech-mezőnél legyőzte a kalandozó magyarokat, 962-ben pedig császárrá koronázták."
+    ]
+   ]
+  }
+ ]
+}

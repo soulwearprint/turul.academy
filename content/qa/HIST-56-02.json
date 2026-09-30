@@ -1,0 +1,936 @@
+{
+ "nat_id": "HIST-56-02",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 31,
+  "cards": 154,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-56-02-001",
+   "lesson_id": "63acc2a1-d510-4b5f-8cfb-2ccbba8efaff",
+   "block_id": "ba7e14e3-6c23-4293-87a3-654f4e3c3c0d",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A Nílus a világ leghosszabb folyója.",
+   "explanation": "Hagyományosan így tanítják, de vitatott: a mérés módjától függően az Amazonas lehet hosszabb.",
+   "sources": [
+    {
+     "url": "https://blogs.loc.gov/maps/2018/10/extremities-of-the-earth-the-longest-river-part-1/",
+     "title": "Library of Congress: The Longest River",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Egyiptom Észak-Afrikában található, a Nílus folyó mentén. A Nílus a világ leghosszabb folyója, és életet ad a sivatagi területeknek. Az ókori Egyiptom földművelése szorosan összefonódott a Nílus áradásaival. A folyó áradása biztosította a termékeny földet, amely lehetővé tette az öntözéses földművelést.",
+     "type": "text",
+     "heading": "Egyiptom földrajzi elhelyezkedése",
+     "key_term": "Egyiptom, Nílus, öntözéses földművelés"
+    },
+    "after": {
+     "body": "Egyiptom Észak-Afrikában található, a Nílus folyó mentén. A Nílus a világ egyik leghosszabb folyója, és életet ad a sivatagi területeknek. Az ókori Egyiptom földművelése szorosan összefonódott a Nílus áradásaival. A folyó áradása biztosította a termékeny földet, amely lehetővé tette az öntözéses földművelést.",
+     "type": "text",
+     "heading": "Egyiptom földrajzi elhelyezkedése",
+     "key_term": "Egyiptom, Nílus, öntözéses földművelés"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-002",
+   "lesson_id": "63acc2a1-d510-4b5f-8cfb-2ccbba8efaff",
+   "block_id": "8ef080a8-e98e-4463-8de1-054e6ae1f0ae",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A kőblokkokat gyakran több száz kilométerről szállították.",
+   "explanation": "A Nagy Piramis tömbjeinek nagy része a helyszíntől pár száz méterre lévő kőfejtőből származik; a burkolókő 15 km-ről (Tura), csak a gránit jött 800 km-ről (Asszuán).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+     "title": "Great Pyramid of Giza",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Stone_quarries_of_ancient_Egypt",
+     "title": "Stone quarries of ancient Egypt",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A piramisok építése hatalmas kihívás volt, amely rengeteg ember munkáját igényelte. Az építkezéshez több ezer munkásra volt szükség, akik kőblokkokat mozgattak és helyeztek el precízen. A kőblokkokat gyakran több száz kilométerről szállították, és különleges eszközökkel emelték a helyükre. Az építkezés során a munkások együttműködése és szervezettsége kulcsfontosságú volt a sikerhez.",
+     "type": "deep",
+     "think": "Hogyan tudtak az ókori egyiptomiak ilyen hatalmas építményeket létrehozni technológia nélkül?",
+     "anchor": 2,
+     "heading": "Hogyan épültek a piramisok?",
+     "did_you_know": "A piramisok építésénél gyakran használtak rámpákat, hogy a nehéz kőblokkokat a magasba emeljék.",
+     "think_answer": "Az ókori egyiptomiak okos mérnöki megoldásokkal, például rámpák és emelőkarok használatával oldották meg a nehéz kőblokkok mozgatását."
+    },
+    "after": {
+     "body": "A piramisok építése hatalmas kihívás volt, amely rengeteg ember munkáját igényelte. Az építkezéshez több ezer munkásra volt szükség, akik kőblokkokat mozgattak és helyeztek el precízen. A kőtömbök nagy részét közvetlenül a piramis mellett fejtették, a sírkamra gránittömbjeit viszont 800 km-ről, Asszuánból hozták hajón a Níluson. Az építkezés során a munkások együttműködése és szervezettsége kulcsfontosságú volt a sikerhez.",
+     "type": "deep",
+     "think": "Hogyan tudtak az ókori egyiptomiak ilyen hatalmas építményeket létrehozni technológia nélkül?",
+     "anchor": 2,
+     "heading": "Hogyan épültek a piramisok?",
+     "did_you_know": "A piramisok építésénél gyakran használtak rámpákat, hogy a nehéz kőblokkokat a magasba emeljék.",
+     "think_answer": "Az ókori egyiptomiak okos mérnöki megoldásokkal, például rámpák és emelőkarok használatával oldották meg a nehéz kőblokkok mozgatását."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-003",
+   "lesson_id": "63acc2a1-d510-4b5f-8cfb-2ccbba8efaff",
+   "block_id": "3a1ce334-13a4-4347-80a5-e4ce96b165aa",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question, options, explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Milyen jelentősége volt Egyiptomnak a magyar történelem szempontjából?” — A) Az ókori kultúrák alapjainak megértése.",
+   "explanation": "Nincs értelmes helyes válasz: az ókori Egyiptomnak nincs közvetlen szerepe a magyar történelemben. A generátor minden kvízbe erőltet egy 'magyar történelem szempontjából' kérdést. Javaslat: valódi tudáskérdés.",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Pedagógiai hiba: a kérdésre nincs tényszerű helyes válasz, nincs mit forrással alátámasztani.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az ókori kultúrák alapjainak megértése",
+      "B) Kereskedelmi kapcsolatok kiépítése",
+      "C) A fáraók hatalma",
+      "D) A Nílus folyó vízforrása"
+     ],
+     "question": "Milyen jelentősége volt Egyiptomnak a magyar történelem szempontjából?",
+     "explanation": "Egyiptom ókori kultúrája és civilizációja alapvető jelentőséggel bír a történelem megértésében, és hatással volt más kultúrákra is, beleértve a magyar történelmet.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Mert a sivatagban csak a folyó közelében lehetett földet művelni.",
+      "B) Mert a fáraó megtiltotta, hogy máshol lakjanak.",
+      "C) Mert a Nílus mentén nem voltak háborúk.",
+      "D) Mert a folyó mentén nem kellett adót fizetni."
+     ],
+     "question": "Miért épültek az egyiptomi városok és falvak szinte mind a Nílus mentén?",
+     "explanation": "Egyiptomban alig esik eső; a Nílus áradása hozta a vizet és a termékeny iszapot, ezért csak a folyó mentén lehetett földet művelni és megélni.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-004",
+   "lesson_id": "1fb2c72b-650f-4ca2-96d2-bb277fc10148",
+   "block_id": "52a43c88-4bf2-4028-bb64-e6c3dc0399c4",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Marathónnál „a görög városállamok, különösen Athén” győztek; „A marathóni csata emléke máig él a magyar történelemben is”.",
+   "explanation": "Marathónnál csak Athén és a kis Plataia harcolt, Spárta nem érkezett meg időben. A magyar történelemmel való kapcsolat kitalált.",
+   "sources": [
+    {
+     "url": "https://www.livius.org/articles/battle/marathon-490-bce/",
+     "title": "Marathon (490 BCE) — Livius",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://www.britannica.com/event/Battle-of-Marathon",
+     "title": "Battle of Marathon — Britannica",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A marathóni csata Kr. e. 490-ben zajlott le, ahol a görög városállamok, különösen Athén, sikeresen megvédték magukat a perzsa invázióval szemben. Ez a győzelem nemcsak a görögök bátorságát és egységét bizonyította, hanem hozzájárult a görög kultúra és identitás megerősödéséhez is. A marathóni csata emléke máig él a magyar történelemben is, hiszen a hősies küzdelem és a szabadság védelme univerzális értékeket képvisel. A győzelem után Athén politikai és kulturális hatalma tovább nőtt.",
+     "type": "text",
+     "heading": "A marathóni csata és hatása",
+     "key_term": "Marathón"
+    },
+    "after": {
+     "body": "A marathóni csata Kr. e. 490-ben zajlott le, ahol Athén – egyedül a kis Plataia segítségével – sikeresen megvédte magát a perzsa invázióval szemben. Ez a győzelem nemcsak a görögök bátorságát és egységét bizonyította, hanem hozzájárult a görög kultúra és identitás megerősödéséhez is. A csata emlékét őrzi a mai maratoni futás is: a legenda szerint egy hírnök futott Athénba a győzelem hírével. A győzelem után Athén politikai és kulturális hatalma tovább nőtt.",
+     "type": "text",
+     "heading": "A marathóni csata és hatása",
+     "key_term": "Marathón"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-005",
+   "lesson_id": "1fb2c72b-650f-4ca2-96d2-bb277fc10148",
+   "block_id": "cb640c57-2fd3-4b53-935e-c9ce8b1a7e4a",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "did_you_know",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A spártai fiúk mezítláb jártak, hogy ellenállóbbá váljanak a hideg ellen.",
+   "explanation": "Xenophón szerint a mezítláb járás a láb megedzését és a biztos lépést szolgálta; a hideg ellen egyetlen köpenyt kaptak egész évre.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Xenophón: A lakedaimóni állam 2.3 (a mezítláb járás a láb edzését szolgálta).",
+   "fix": {
+    "before": {
+     "body": "A spártai nevelési rendszer, az 'agoge', a katonai fegyelem és erőnlét fejlesztésére összpontosított. A fiatalok kemény kiképzésen vettek részt, amely során megtanulták a túlélést és az önfegyelmet. Ez a rendszer biztosította, hogy Spárta mindig rendelkezzen jól képzett katonákkal. A spártai nők is fontos szerepet játszottak, hiszen ők feleltek a családért és a gazdaságért, míg a férfiak harcoltak. Ez a társadalmi berendezkedés tette Spártát különlegessé az ókori világban.",
+     "type": "deep",
+     "think": "Miért lehet fontos a fegyelem az élet különböző területein?",
+     "anchor": 4,
+     "heading": "Miért volt különleges a spártai nevelés?",
+     "did_you_know": "A spártai fiúk gyakran mezítláb jártak, hogy megerősítsék lábukat és ellenállóbbá váljanak a hideg ellen.",
+     "think_answer": "A fegyelem segít abban, hogy kitartóak legyünk, elérjük céljainkat, és hatékonyan kezeljük a mindennapi kihívásokat."
+    },
+    "after": {
+     "body": "A spártai nevelési rendszer, az 'agoge', a katonai fegyelem és erőnlét fejlesztésére összpontosított. A fiatalok kemény kiképzésen vettek részt, amely során megtanulták a túlélést és az önfegyelmet. Ez a rendszer biztosította, hogy Spárta mindig rendelkezzen jól képzett katonákkal. A spártai nők is fontos szerepet játszottak, hiszen ők feleltek a családért és a gazdaságért, míg a férfiak harcoltak. Ez a társadalmi berendezkedés tette Spártát különlegessé az ókori világban.",
+     "type": "deep",
+     "think": "Miért lehet fontos a fegyelem az élet különböző területein?",
+     "anchor": 4,
+     "heading": "Miért volt különleges a spártai nevelés?",
+     "did_you_know": "A spártai fiúk gyakran mezítláb jártak, hogy lábuk megedződjön és biztosabban mozogjanak a köves terepen.",
+     "think_answer": "A fegyelem segít abban, hogy kitartóak legyünk, elérjük céljainkat, és hatékonyan kezeljük a mindennapi kihívásokat."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-006",
+   "lesson_id": "1fb2c72b-650f-4ca2-96d2-bb277fc10148",
+   "block_id": "057c716b-b685-44b3-9b8f-aebb9e6547eb",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a görögök főisten”",
+   "explanation": "Hiányzó birtokos rag.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Pallasz Athéné",
+      "B) Apollón",
+      "C) Zeusz",
+      "D) Poszeidon"
+     ],
+     "question": "Melyik isten volt a görögök főisten, aki az olümpiai játékok védelmezője is?",
+     "explanation": "Zeusz volt a főisten, akit az olümpiai játékok keretein belül is tiszteltek, és akinek szentelték az eseményt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Pallasz Athéné",
+      "B) Apollón",
+      "C) Zeusz",
+      "D) Poszeidon"
+     ],
+     "question": "Melyik isten volt a görögök főistene, aki az olümpiai játékok védelmezője is?",
+     "explanation": "Zeusz volt a főisten, akit az olümpiai játékok keretein belül is tiszteltek, és akinek szentelték az eseményt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-007",
+   "lesson_id": "2d660f14-05df-4aac-8291-8df4eba37fbe",
+   "block_id": "efff3a0a-6366-4667-9440-6d94fe50ae48",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Romulus és Remus „egy farkas által nevelt árva gyermekként” alapították a várost.",
+   "explanation": "A monda szerint nem árvák voltak (anyjuk Rhea Silvia, apjuk Mars), hanem kitett csecsemők, akiket egy anyafarkas szoptatott.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Livius, Ab urbe condita I.4 (a kitett ikrek és az anyafarkas mondája).",
+   "fix": {
+    "before": {
+     "body": "A hagyomány szerint Róma alapításának időpontja Kr. e. 753. A monda szerint Romulus és Remus, a római mitológia ikerhősei, egy farkas által nevelt árva gyermekként alapították meg a várost. Romulus lett Róma első királya, és a város nevét is róla kapta. A monda nemcsak a város alapításának történetét meséli el, hanem a római identitás szempontjából is fontos, mivel a rómaiak büszkén hivatkoztak e legendára.",
+     "type": "text",
+     "heading": "Róma alapítása a mondákban",
+     "key_term": "monda"
+    },
+    "after": {
+     "body": "A hagyomány szerint Róma alapításának időpontja Kr. e. 753. A monda szerint Romulus és Remus, a római mitológia ikerhősei, akiket csecsemőként a Tiberis partján kitettek, és egy anyafarkas szoptatott, felnőve megalapították a várost. Romulus lett Róma első királya, és a város nevét is róla kapta. A monda nemcsak a város alapításának történetét meséli el, hanem a római identitás szempontjából is fontos, mivel a rómaiak büszkén hivatkoztak e legendára.",
+     "type": "text",
+     "heading": "Róma alapítása a mondákban",
+     "key_term": "monda"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-008",
+   "lesson_id": "2d660f14-05df-4aac-8291-8df4eba37fbe",
+   "block_id": "efff3a0a-6366-4667-9440-6d94fe50ae48",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Aquincum a provincia (Pannónia) fővárosa volt; a római örökség a későbbi magyar állam kialakulására is hatással volt.",
+   "explanation": "Pannóniát 106-ban kettéosztották; Aquincum Alsó-Pannónia (Pannonia Inferior) székhelye lett. A magyar államra gyakorolt közvetlen hatás kitalált.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Pannonia_(provincia)",
+     "title": "Pannonia (provincia)",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://lexikon.katolikus.hu/A/Aquincum.html",
+     "title": "Magyar Katolikus Lexikon: Aquincum",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Pannónia római provincia volt, amely jelentős szerepet játszott a Római Birodalom határainak védelmében. Aquincum, a mai Budapest területén, a provincia fővárosa volt, ahol számos római emlék található, mint például fürdők, színházak és városfalak. Ezek az emlékek nemcsak a római kultúra hatását tükrözik, hanem a magyar történelem szempontjából is fontosak, hiszen a római örökség a későbbi magyar állam kialakulására is hatással volt. A rómaiak itt hagyott nyomai a mai napig meghatározzák a térség kulturális örökségét.",
+     "type": "text",
+     "heading": "Római emlékek Pannóniában",
+     "key_term": "provincia"
+    },
+    "after": {
+     "body": "Pannónia római provincia volt, amely jelentős szerepet játszott a Római Birodalom határainak védelmében. Aquincum, a mai Budapest területén, 106-tól Alsó-Pannónia provincia székhelye volt, ahol számos római emlék található, mint például fürdők, színházak és városfalak. Ezek az emlékek nemcsak a római kultúra hatását tükrözik, hanem a magyar történelem szempontjából is fontosak, hiszen a rómaiak építették Magyarország első városait. A rómaiak itt hagyott nyomai a mai napig meghatározzák a térség kulturális örökségét.",
+     "type": "text",
+     "heading": "Római emlékek Pannóniában",
+     "key_term": "provincia"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-009",
+   "lesson_id": "3199b200-94f5-4456-91e1-6efe376b8fb2",
+   "block_id": "6869826a-9a52-4873-b17e-3672c56de306",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A marathóni csata 490-ben zajlott”",
+   "explanation": "Kr. e. 490; jelölés nélkül Kr. u. 490-nek olvasható. Athén mellett csak Plataia harcolt.",
+   "sources": [
+    {
+     "url": "https://www.livius.org/articles/battle/marathon-490-bce/",
+     "title": "Marathon (490 BCE) — Livius",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A marathóni csata 490-ben zajlott, ahol a görög városállamok, különösen Athén, sikeresen megvédték magukat a perzsa invázióval szemben. A görög hadviselés egyik legfontosabb jellemzője a falanx hadrend volt, amely lehetővé tette a katonák számára, hogy összeszervezett formációban harcoljanak. Ez a taktika jelentős előnyt biztosított a görögöknek, mivel a perzsa hadsereg nem tudta megkerülni a jól védett görög sorokat. A marathóni győzelem nemcsak a görög városállamok függetlenségét erősítette, hanem a görög kultúra és identitás fejlődését is elősegítette.",
+     "type": "text",
+     "heading": "A görög hadviselés és a marathóni csata",
+     "key_term": "falanx"
+    },
+    "after": {
+     "body": "A marathóni csata Kr. e. 490-ben zajlott, ahol Athén Plataia segítségével sikeresen megvédte magát a perzsa invázióval szemben. A görög hadviselés egyik legfontosabb jellemzője a falanx hadrend volt, amely lehetővé tette a katonák számára, hogy összeszervezett formációban harcoljanak. Ez a taktika jelentős előnyt biztosított a görögöknek, mivel a perzsa hadsereg nem tudta megkerülni a jól védett görög sorokat. A marathóni győzelem nemcsak a görög városállamok függetlenségét erősítette, hanem a görög kultúra és identitás fejlődését is elősegítette.",
+     "type": "text",
+     "heading": "A görög hadviselés és a marathóni csata",
+     "key_term": "falanx"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-010",
+   "lesson_id": "3199b200-94f5-4456-91e1-6efe376b8fb2",
+   "block_id": "6869826a-9a52-4873-b17e-3672c56de306",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Nagy Sándor egyesítette a görög városállamokat; „Magyarország történetében Nagy Sándor hódításai fontos példát szolgáltatnak…”",
+   "explanation": "A görög államokat apja, II. Philipposz egyesítette a korinthoszi szövetségben (Kr. e. 337); Sándor ezt örökölte. A magyar kapcsolat kitalált töltelékmondat.",
+   "sources": [
+    {
+     "url": "https://www.britannica.com/topic/League-of-Corinth",
+     "title": "League of Corinth — Britannica",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Nagy Sándor, Macedónia királya, Kr.e. 356-323 között élt, és híres hódításairól vált ismertté. Hadserege, amely a falanx taktikát alkalmazta, képes volt legyőzni a perzsákat és más népeket, így létrehozva egy hatalmas birodalmat. Hódításai során Nagy Sándor egyesítette a görög városállamokat és terjesztette a görög kultúrát, ami a hellenizmus korszakához vezetett. Magyarország történetében Nagy Sándor hódításai fontos példát szolgáltatnak a katonai stratégiák és a kultúrák találkozásának hatásairól.",
+     "type": "text",
+     "heading": "Nagy Sándor hadserege és hódításai",
+     "key_term": "Nagy Sándor"
+    },
+    "after": {
+     "body": "Nagy Sándor, Macedónia királya, Kr.e. 356-323 között élt, és híres hódításairól vált ismertté. Hadserege, amely a falanx taktikát alkalmazta, képes volt legyőzni a perzsákat és más népeket, így létrehozva egy hatalmas birodalmat. A görög városállamokat még apja, II. Philipposz fogta össze; Sándor hódításaival a görög kultúrát egészen Egyiptomig és Indiáig terjesztette, ami a hellenizmus korszakához vezetett.",
+     "type": "text",
+     "heading": "Nagy Sándor hadserege és hódításai",
+     "key_term": "Nagy Sándor"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-011",
+   "lesson_id": "3199b200-94f5-4456-91e1-6efe376b8fb2",
+   "block_id": "6869826a-9a52-4873-b17e-3672c56de306",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Hannibál „247-183 között élt”; az elefántok „taktikai újítás” voltak, ami meglepte a rómaiakat.",
+   "explanation": "Kr. e. 247–183 (jelölés nélkül Kr. u.-nak olvasható). A rómaiak már Kr. e. 280-ban, Pürrhosz ellen harcoltak elefántokkal; Hannibál újítása az Alpokon való átkelés volt. A magyar kapcsolat kitalált.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Heraclea",
+     "title": "Battle of Heraclea",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://www.worldhistory.org/article/876/elephants-in-greek--roman-warfare/",
+     "title": "Elephants in Greek & Roman Warfare",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Hannibál, a pun hadvezér, 247-183 között élt, és híres volt a rómaiakkal vívott háborúiról. Az ő hadseregének egyik leglátványosabb eleme volt az elefántok használata, amelyekkel átkelt az Alpokon. Ez a taktikai újítás meglepte a rómaiakat, és jelentős előnyhöz juttatta Hannibált a csaták során. Magyarország történelmében Hannibál példája arra figyelmeztet, hogy a hadviselés során a kreatív gondolkodás és az új technikák alkalmazása döntő jelentőségű lehet.",
+     "type": "text",
+     "heading": "Hannibál elefántjai az ókor hadviselésében",
+     "key_term": "Hannibál"
+    },
+    "after": {
+     "body": "Hannibál, a pun hadvezér, Kr. e. 247 és 183 között élt, és híres volt a rómaiakkal vívott háborúiról. Az ő hadseregének egyik leglátványosabb eleme volt az elefántok használata, amelyekkel átkelt az Alpokon. A rómaiak nem számítottak arra, hogy egy sereg elefántokkal együtt átjut a havas Alpokon, így Hannibál váratlanul, északról támadta meg Itáliát.",
+     "type": "text",
+     "heading": "Hannibál elefántjai az ókor hadviselésében",
+     "key_term": "Hannibál"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-012",
+   "lesson_id": "3199b200-94f5-4456-91e1-6efe376b8fb2",
+   "block_id": "6869826a-9a52-4873-b17e-3672c56de306",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Magyarország szempontjából Caesar légióinak sikerei hozzájárultak…”",
+   "explanation": "Caesar nem hódított a Kárpát-medencében (Pannóniát Augustus és Tiberius foglalta el). Töltelékmondat.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Pannonia_(provincia)",
+     "title": "Pannonia (provincia)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Julius Caesar, Kr.e. 100-44 között élt, a római hadsereg reformjairól és hódításairól ismert. A légiók, amelyek a római hadviselés alapját képezték, rendkívül jól szervezett és fegyelmezett egységek voltak. Caesar hadjáratai, különösen a gall háborúk során, bemutatták a római taktikai előnyöket és a hadsereg rugalmasságát. Magyarország szempontjából Caesar légióinak sikerei hozzájárultak a római civilizáció terjedéséhez, amely később a magyar területeken is érezhető hatással bírt.",
+     "type": "text",
+     "heading": "Caesar légiói és a római hadviselés",
+     "key_term": "légió"
+    },
+    "after": {
+     "body": "Julius Caesar, Kr.e. 100-44 között élt, a római hadsereg reformjairól és hódításairól ismert. A légiók, amelyek a római hadviselés alapját képezték, rendkívül jól szervezett és fegyelmezett egységek voltak. Caesar hadjáratai, különösen a gall háborúk során, bemutatták a római taktikai előnyöket és a hadsereg rugalmasságát. A mai Dunántúlt, Pannóniát már Caesar utódja, Augustus foglalta el.",
+     "type": "text",
+     "heading": "Caesar légiói és a római hadviselés",
+     "key_term": "légió"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-013",
+   "lesson_id": "3199b200-94f5-4456-91e1-6efe376b8fb2",
+   "block_id": "e8fd0dcf-0bdb-450f-ab0b-629c265050c9",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "year, body, link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "year: 490; link_hu: „A marathóni csata győzelme inspirálta a későbbi magyar hadseregek taktikáit…”",
+   "explanation": "Az évszám Kr. u. 490-ként jelenik meg a kártyán. A „Nekünk azért fontos” kapcsolat kitalált: a magyar hadviselés (könnyűlovas íjászat) épp a falanx ellentéte.",
+   "sources": [
+    {
+     "url": "https://www.livius.org/articles/battle/marathon-490-bce/",
+     "title": "Marathon (490 BCE) — Livius",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A marathóni csata 490-ben zajlott le, ahol a görög városállamok, főként Athén, legyőzték a perzsa haderőt. Ez a győzelem hozzájárult a görög városállamok összefogásához és a perzsa háborúk folytatásához, amely a görög demokrácia fejlődését is elősegítette. A csata emléke a nyugati hadviselés fejlődésének egyik mérföldköve lett, hiszen a görög falanx taktika hatékonyságát bizonyította.",
+     "type": "world",
+     "year": "490",
+     "heading": "A marathóni csata",
+     "link_hu": "A marathóni csata győzelme inspirálta a későbbi magyar hadseregek taktikáit, amelyek a közelharc és a tömör hadformák alkalmazására építettek."
+    },
+    "after": {
+     "body": "A marathóni csatában Kr. e. 490-ben az athéni és plataiai hopliták legyőzték a partra szálló perzsa sereget. A győzelem megmutatta, hogy a szorosan zárt falanx képes megállítani egy nagy birodalom hadát, és önbizalmat adott a görögöknek a további perzsa háborúkhoz.",
+     "type": "world",
+     "year": "Kr. e. 490",
+     "heading": "A marathóni csata",
+     "link_hu": "A mai maratoni futás a csatához kapcsolódó legendát őrzi: egy hírnök állítólag Marathóntól Athénig futott a győzelem hírével."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-014",
+   "lesson_id": "3199b200-94f5-4456-91e1-6efe376b8fb2",
+   "block_id": "e8fd0dcf-0bdb-450f-ab0b-629c265050c9",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "year, body, link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "year: 334; a hellenizmus „hatással volt az egész közép- és kelet-európai térségre”; Nagy Sándor „példát adott a magyar hadvezéreknek”.",
+   "explanation": "Kr. e. 334. A hellenizmus kelet felé (Egyiptom, Közel-Kelet, Közép-Ázsia) terjedt, nem Közép-Kelet-Európába. A magyar hadvezérekre gyakorolt hatás kitalált.",
+   "sources": [
+    {
+     "url": "https://www.britannica.com/topic/League-of-Corinth",
+     "title": "League of Corinth — Britannica",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Nagy Sándor 334-ben indította el hódító hadjáratát a perzsa birodalom ellen, amelynek során számos fontos csatát vívott, mint például a Granikosz és a Gaugamela. Hódításai nemcsak a görög kultúra terjesztését segítették elő, hanem a hellénizmus korának kezdetét is jelentették, amely hatással volt az egész közép- és kelet-európai térségre. Nagy Sándor hadserege a falanx formáció mellett új harci technikákat is alkalmazott, amelyek később a római légiók fejlődését is befolyásolták.",
+     "type": "world",
+     "year": "334",
+     "heading": "Nagy Sándor hódításai",
+     "link_hu": "Nagy Sándor hadjáratai példát adtak a magyar hadvezéreknek a terjeszkedés és a hadsereg szervezésének terén, különösen a középkorban."
+    },
+    "after": {
+     "body": "Nagy Sándor Kr. e. 334-ben indította hadjáratát a Perzsa Birodalom ellen; a Granikosz folyónál, Isszosznál és Gaugamelánál aratott győzelmeivel Egyiptomtól Indiáig hódított. Nyomában a görög nyelv és kultúra elterjedt a Közel-Keleten: ez a hellenizmus kora.",
+     "type": "world",
+     "year": "Kr. e. 334",
+     "heading": "Nagy Sándor hódításai",
+     "link_hu": "A középkori Magyarországon is ismerték Nagy Sándor történetét: a róla szóló legendák a lovagi olvasmányok kedvencei voltak."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-015",
+   "lesson_id": "3199b200-94f5-4456-91e1-6efe376b8fb2",
+   "block_id": "e8fd0dcf-0bdb-450f-ab0b-629c265050c9",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "year, link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "year: 218; „Hannibál hadjáratai és taktikái hatással voltak a magyar hadviselés fejlődésére, különösen a középkorban”.",
+   "explanation": "Kr. e. 218. A középkori magyar hadviselésre gyakorolt hatás kitalált.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "A tartalomban szereplő kapcsolat (Hannibál → középkori magyar hadviselés) semmilyen forrásban nem szerepel: kitalált állítás.",
+   "fix": {
+    "before": {
+     "body": "Hannibál 218-ban indította el hadjáratát Róma ellen, amely során híresen átkelt az Alpokon elefántokkal. A második pun háború során a római légiók elleni harcai új hadviselési formákat és stratégiákat hoztak, amelyek a hadtudomány fejlődését segítették elő. Hannibál hadvezéri képességei és taktikái a későbbi hadvezérek, köztük a rómaiak számára is tanulságosak voltak.",
+     "type": "world",
+     "year": "218",
+     "heading": "Hannibál háborúi",
+     "link_hu": "Hannibál hadjáratai és taktikái hatással voltak a magyar hadviselés fejlődésére, különösen a középkorban, amikor a hadvezérek a különféle harci formációkat és stratégiákat alkalmazták."
+    },
+    "after": {
+     "body": "Hannibál 218-ban indította el hadjáratát Róma ellen, amely során híresen átkelt az Alpokon elefántokkal. A második pun háború során a római légiók elleni harcai új hadviselési formákat és stratégiákat hoztak, amelyek a hadtudomány fejlődését segítették elő. Hannibál hadvezéri képességei és taktikái a későbbi hadvezérek, köztük a rómaiak számára is tanulságosak voltak.",
+     "type": "world",
+     "year": "Kr. e. 218",
+     "heading": "Hannibál háborúi",
+     "link_hu": "Hannibál cannae-i bekerítő csatáját (Kr. e. 216) a hadtörténet ma is a legtöbbet tanulmányozott csaták között tartja számon."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-016",
+   "lesson_id": "3199b200-94f5-4456-91e1-6efe376b8fb2",
+   "block_id": "e8fd0dcf-0bdb-450f-ab0b-629c265050c9",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "year, body, link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "year: 49; „Caesar légióinak taktikái … befolyásolták a magyar hadsereg későbbi fejlődését, különösen a középkorban”.",
+   "explanation": "Kr. e. 49. A magyar hadseregre gyakorolt hatás kitalált.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "A tartalomban szereplő kapcsolat (Caesar légiói → magyar hadsereg) semmilyen forrásban nem szerepel: kitalált állítás.",
+   "fix": {
+    "before": {
+     "body": "Julius Caesar 49-ben lépett át a Rubicon folyón, ezzel megkezdve a polgárháborút Róma területén. Légiói nemcsak a római hadviselés szempontjából voltak meghatározóak, hanem a római köztársaság átalakulásában is kulcsszerepet játszottak. Caesar hadjáratai és hadvezetési stílusa példát mutatott a későbbi hadvezérek számára, akik a hadsereg modernizálására törekedtek.",
+     "type": "world",
+     "year": "49",
+     "heading": "Caesar légiói",
+     "link_hu": "Caesar légióinak taktikái és szervezeti felépítése befolyásolták a magyar hadsereg későbbi fejlődését, különösen a középkorban, amikor a haderő struktúrája és a hadműveletek megváltoztak."
+    },
+    "after": {
+     "body": "Julius Caesar Kr. e. 49-ben lépett át a Rubicon folyón, ezzel megkezdve a polgárháborút Róma területén. Légiói nemcsak a római hadviselés szempontjából voltak meghatározóak, hanem a római köztársaság átalakulásában is kulcsszerepet játszottak. Caesar hadjáratai és hadvezetési stílusa példát mutatott a későbbi hadvezérek számára, akik a hadsereg modernizálására törekedtek.",
+     "type": "world",
+     "year": "Kr. e. 49",
+     "heading": "Caesar légiói",
+     "link_hu": "A „Rubicont átlépni” kifejezést ma is használjuk: olyan döntést jelent, amelyet már nem lehet visszacsinálni."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-017",
+   "lesson_id": "fd583c71-278b-45e2-a5ec-a0bf2a744931",
+   "block_id": "d97b841a-251f-4355-b754-cd4ad04f8d2e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„a hunok és Attila öröksége közvetlenül hozzájárult a magyar nép későbbi kialakulásához”.",
+   "explanation": "A hun–magyar rokonság a középkori krónikák hagyománya; a történettudomány (és a 2022-es archeogenetikai vizsgálatok) nem igazolja. Tényként tanítani hibás.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Hun%E2%80%93magyar_rokons%C3%A1g",
+     "title": "A hun–magyar rokonság elmélete",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Hun Birodalom a 4. és 5. század fordulóján alakult ki, és Attila vezetésével vált a korszak egyik legnagyobb hatalmává. A hunok a Kárpát-medencét is célba vették, és számos hadjáratot vezettek a környező népek ellen. Attila uralkodása alatt a hunok hatalmas területeket foglaltak el, és a Római Birodalomra is komoly nyomást gyakoroltak. A Hun Birodalom jelentősége a magyar történelem szempontjából abban rejlik, hogy a hunok és Attila öröksége közvetlenül hozzájárult a magyar nép későbbi kialakulásához.",
+     "type": "text",
+     "heading": "A Hun Birodalom",
+     "key_term": "Hun Birodalom"
+    },
+    "after": {
+     "body": "A Hun Birodalom a 4. és 5. század fordulóján alakult ki, és Attila vezetésével vált a korszak egyik legnagyobb hatalmává. A hunok a Kárpát-medencét is célba vették, és számos hadjáratot vezettek a környező népek ellen. Attila uralkodása alatt a hunok hatalmas területeket foglaltak el, és a Római Birodalomra is komoly nyomást gyakoroltak. A középkori magyar krónikák a magyarokat a hunok leszármazottainak tartották. Ezt a hun–magyar rokonságot a mai történettudomány nem igazolja, de a monda fontos része lett a magyar hagyománynak.",
+     "type": "text",
+     "heading": "A Hun Birodalom",
+     "key_term": "Hun Birodalom"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-018",
+   "lesson_id": "fd583c71-278b-45e2-a5ec-a0bf2a744931",
+   "block_id": "d97b841a-251f-4355-b754-cd4ad04f8d2e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 5. század”",
+   "explanation": "Névelő: az 5. század.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Attila, a hunok királya, a 5. század egyik legmeghatározóbb alakja volt. Hadjáratai során a Római Birodalom területeit támadta, és számos jelentős csatát vívott, köztük a catalaunumi csatát 451-ben. Ez a csata a hunok és a rómaiak, valamint szövetségeseik között zajlott, és a történelem egyik legnagyobb ütközeteként tartják számon. Attila hadjáratai nemcsak a hunok hírnevét növelték, hanem a Kárpát-medence politikai viszonyait is alapvetően befolyásolták.",
+     "type": "text",
+     "heading": "Attila és hadjáratai",
+     "key_term": "Attila"
+    },
+    "after": {
+     "body": "Attila, a hunok királya, az 5. század egyik legmeghatározóbb alakja volt. Hadjáratai során a Római Birodalom területeit támadta, és számos jelentős csatát vívott, köztük a catalaunumi csatát 451-ben. Ez a csata a hunok és a rómaiak, valamint szövetségeseik között zajlott, és a történelem egyik legnagyobb ütközeteként tartják számon. Attila hadjáratai nemcsak a hunok hírnevét növelték, hanem a Kárpát-medence politikai viszonyait is alapvetően befolyásolták.",
+     "type": "text",
+     "heading": "Attila és hadjáratai",
+     "key_term": "Attila"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-019",
+   "lesson_id": "fd583c71-278b-45e2-a5ec-a0bf2a744931",
+   "block_id": "d97b841a-251f-4355-b754-cd4ad04f8d2e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A catalaunumi csata 451 áprilisában zajlott.",
+   "explanation": "A hagyományos dátum 451. június 20.; az ütközet 451 nyarán volt.",
+   "sources": [
+    {
+     "url": "https://www.magyar-iskola.sk/2026/06/a-catalaunumi-csata/",
+     "title": "A catalaunumi csata",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A catalaunumi csata 451 áprilisában zajlott, és Attila hun vezér csapatait állította szembe a rómaiak és szövetségeseik hadaival. Ez a csata a népvándorlás korának egyik legfontosabb ütközete volt, amelynek során a hunok megpróbálták megdönteni a római hatalmat. A csata kimenetele döntetlennek mondható, de Attila hírneve tovább nőtt, és a hunok hatalma továbbra is megmaradt. A csata következményei, valamint a hunok és rómaiak közötti konfliktusok formálták a későbbi európai politikai tájat.",
+     "type": "text",
+     "heading": "A catalaunumi csata",
+     "key_term": "catalaunumi csata"
+    },
+    "after": {
+     "body": "A catalaunumi csata 451 nyarán zajlott, és Attila hun vezér csapatait állította szembe a rómaiak és szövetségeseik hadaival. Ez a csata a népvándorlás korának egyik legfontosabb ütközete volt, amelynek során a hunok megpróbálták megdönteni a római hatalmat. A csata kimenetele döntetlennek mondható, de Attila hírneve tovább nőtt, és a hunok hatalma továbbra is megmaradt. A csata következményei, valamint a hunok és rómaiak közötti konfliktusok formálták a későbbi európai politikai tájat.",
+     "type": "text",
+     "heading": "A catalaunumi csata",
+     "key_term": "catalaunumi csata"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-020",
+   "lesson_id": "fd583c71-278b-45e2-a5ec-a0bf2a744931",
+   "block_id": "2724137e-41b5-483e-ae30-72dc10c031b6",
+   "mode": "visual",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "description",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 5. században”",
+   "explanation": "Névelő: az 5. században.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "visual",
+     "caption": "A Hun Birodalom kiterjedése Attila alatt.",
+     "heading": "A Hun Birodalom",
+     "description": "Térkép, amely ábrázolja a Hun Birodalom terjeszkedését a 5. században, beleértve Attila uralkodásának területeit.",
+     "visual_type": "térkép"
+    },
+    "after": {
+     "type": "visual",
+     "caption": "A Hun Birodalom kiterjedése Attila alatt.",
+     "heading": "A Hun Birodalom",
+     "description": "Térkép, amely ábrázolja a Hun Birodalom terjeszkedését az 5. században, beleértve Attila uralkodásának területeit.",
+     "visual_type": "térkép"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-021",
+   "lesson_id": "fd583c71-278b-45e2-a5ec-a0bf2a744931",
+   "block_id": "0ceda280-53c5-4935-ae20-2ebf0264a0d8",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body, link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "Link: „A Római Birodalom bukása (476) közvetlenül hozzájárult a hunok … terjeszkedéséhez, amely Attila hadjárataiban is megmutatkozott.”",
+   "explanation": "Időrendi képtelenség: Attila 453-ban meghalt, a Nyugatrómai Birodalom 476-ban bukott el. A népvándorlás 476 után is folytatódott (langobárdok, avarok).",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/T%C3%B6rt%C3%A9nelmi_korszakol%C3%A1sok",
+     "title": "Történelmi korszakolások",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Kr. u. 476-ban Odoaker, a germán vezér, megdöntötte az utolsó nyugatrómai császárt, Romulus Augustust, ezzel hivatalosan is véget vetett a Nyugatrómai Birodalomnak. Ez az esemény a Római Birodalom szétesésének szimbolikus pillanata, amely a népvándorlás korának végéhez is köthető. A birodalom bukásával hatalmi vákuum keletkezett, amely lehetővé tette a germán törzsek számára, hogy új államokat alapítsanak a korábbi római területeken.",
+     "type": "world",
+     "year": "476",
+     "heading": "A Nyugatrómai Birodalom bukása",
+     "link_hu": "A Római Birodalom bukása közvetlenül hozzájárult a hunok és más népek, például a germán törzsek terjeszkedéséhez, amely Attila hadjárataiban is megmutatkozott."
+    },
+    "after": {
+     "body": "Kr. u. 476-ban Odoaker, a germán vezér, megdöntötte az utolsó nyugatrómai császárt, Romulus Augustulust, ezzel hivatalosan is véget vetett a Nyugatrómai Birodalomnak. Ez az esemény a Római Birodalom szétesésének szimbolikus pillanata. A birodalom bukásával hatalmi vákuum keletkezett, amely lehetővé tette a germán törzsek számára, hogy új államokat alapítsanak a korábbi római területeken.",
+     "type": "world",
+     "year": "476",
+     "heading": "A Nyugatrómai Birodalom bukása",
+     "link_hu": "Ezt az évet tekintjük az ókor végének és a középkor kezdetének — ezért tanuljuk ezt az évszámot."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-022",
+   "lesson_id": "fd583c71-278b-45e2-a5ec-a0bf2a744931",
+   "block_id": "0ceda280-53c5-4935-ae20-2ebf0264a0d8",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "year, body, link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A germán népek (vizigótok, osztrogótok, langobardok) a Nyugatrómai Birodalom bukása (476) UTÁN indultak el; ez elősegítette Attila hatalmi növekedését.",
+   "explanation": "A vizigótok már 376-ban átkeltek a Dunán és 410-ben kifosztották Rómát; a germán vándorlás oka és nem következménye volt a bukásnak. Attila 453-ban meghalt.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Pannonia_(provincia)",
+     "title": "Pannonia (provincia)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Nyugatrómai Birodalom bukása után a germán népek, mint a vizigótok, ostrogótok és langobardok, elindultak vándorlásuk során, hogy új területeket hódítsanak meg. E vándorlások a népvándorlás korszakának sajátos megnyilvánulásai voltak, amelyek a római kultúra hanyatlásához vezettek. A germán népek terjedése a korábban római területeken új politikai entitások létrejöttét eredményezte.",
+     "type": "world",
+     "year": "476",
+     "heading": "A germán népek vándorlása",
+     "link_hu": "A germán népek vándorlása közvetlen következménye volt a Római Birodalom szétesésének, amely elősegítette a hunok, így Attila hatalmi növekedését is."
+    },
+    "after": {
+     "body": "A germán népek vándorlása már jóval a Nyugatrómai Birodalom bukása előtt megkezdődött: a hunok elől menekülő vizigótok 376-ban keltek át a Dunán, és 410-ben kifosztották Rómát. A birodalom területén germán királyságok jöttek létre; a vándorlás a langobárdok 568-as itáliai bevonulásáig tartott.",
+     "type": "world",
+     "year": "376–568",
+     "heading": "A germán népek vándorlása",
+     "link_hu": "A Kárpát-medencében is germán népek, a gepidák és a longobárdok éltek a hunok után, mielőtt az avarok megérkeztek."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-023",
+   "lesson_id": "fd583c71-278b-45e2-a5ec-a0bf2a744931",
+   "block_id": "f7f65e84-087f-4053-b0db-606710acd422",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "options[0], explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A Római Birodalom szétesése „megnyitotta az utat a hunoknak” (megjelölt helyes válasz).",
+   "explanation": "Időrendi hiba: a hunok birodalma 476 előtt virágzott és bomlott fel (Attila †453). Pannónia már 433 körül a hunok kezére került.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Pannonia_(provincia)",
+     "title": "Pannonia (provincia)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Mert megnyitotta az utat a hunoknak és más népeknek.",
+      "B) Mert a magyarok közvetlenül részt vettek benne.",
+      "C) Mert a római kultúra megmaradt.",
+      "D) Mert új politikai rendszerek alakultak ki."
+     ],
+     "question": "Miért fontos a Római Birodalom szétesése a magyar történelem szempontjából?",
+     "explanation": "A Római Birodalom szétesése megnyitotta az utat a hunoknak és más népeknek, amelyek közvetlenül befolyásolták a magyar nép történelmét.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Mert a római uralom után a Kárpát-medencében egymást váltották a népvándorló népek.",
+      "B) Mert a magyarok közvetlenül részt vettek benne.",
+      "C) Mert a római kultúra megmaradt.",
+      "D) Mert új politikai rendszerek alakultak ki."
+     ],
+     "question": "Miért fontos a Római Birodalom szétesése a magyar történelem szempontjából?",
+     "explanation": "A római uralom megszűnése után a Kárpát-medencében egymást váltották a népvándorló népek: hunok, gepidák, longobárdok, majd avarok. A magyarok a honfoglaláskor (895 körül) ezt a sokféle nép lakta területet foglalták el.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-02-024",
+   "lesson_id": null,
+   "block_id": "9689859f-b389-4f2c-81ec-dce134cb4044",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 4,
+   "field": "options[1]",
+   "verdict": "quiz_key",
+   "severity": "low",
+   "claim": "Rabszolga szerepe: „B) Munkát végző személy”.",
+   "explanation": "A szabad parasztok és kézművesek is munkát végeztek; a válasz nem különbözteti meg a rabszolgát.",
+   "sources": [],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Szabad polgár",
+      "B) Munkát végző személy",
+      "C) Vallási vezető",
+      "D) Katona"
+     ],
+     "question": "Mi volt a rabszolga szerepe az ókori társadalomban?",
+     "explanation": "A rabszolgák az ókori társadalomban munkát végeztek, gyakran kényszerítették őket különböző feladatok elvégzésére.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Szabad polgár",
+      "B) Szabadságától megfosztott ember, akit gazdája dolgoztatott",
+      "C) Vallási vezető",
+      "D) Katona"
+     ],
+     "question": "Mi volt a rabszolga szerepe az ókori társadalomban?",
+     "explanation": "A rabszolgák az ókori társadalomban munkát végeztek, gyakran kényszerítették őket különböző feladatok elvégzésére.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-56-02-001": "4e0340c9-fd57-4752-ae1a-30bf65353cff",
+  "HIST-56-02-002": "8f443ccc-6e6b-4afc-8994-4783e663dc85",
+  "HIST-56-02-004": "8b09d316-cde2-4ece-bfd0-47e7242ce7cf",
+  "HIST-56-02-005": "5b21f259-ad5d-4fc3-bce3-b2c2ec2f0eff",
+  "HIST-56-02-006": "7c1d92db-b82b-474b-a056-10d3911b1aee",
+  "HIST-56-02-007": "9193a2fc-55bf-4310-a9b7-8b1d55f2e281",
+  "HIST-56-02-008": "da00b3e2-27fb-4e6e-837b-8081857d6a50",
+  "HIST-56-02-009": "98c3326b-606e-42ad-9440-1d302e75e909",
+  "HIST-56-02-010": "886cc84a-092f-43a9-bcf8-2a2ceb186cf7",
+  "HIST-56-02-011": "880d7024-5df6-481a-9abd-7e07cc73ba7c",
+  "HIST-56-02-012": "41220aed-8250-4579-801d-f0e0cd5d6d0d",
+  "HIST-56-02-013": "ac4d0f7c-dd56-459f-b991-b3cbb288c9c8",
+  "HIST-56-02-014": "bd78f622-344d-468a-88a6-6d9bb3ac01ef",
+  "HIST-56-02-015": "2e3f27b0-d462-490d-ae0f-ed8c086d0fc6",
+  "HIST-56-02-016": "67817f47-d349-4b0e-8354-be480ed54207",
+  "HIST-56-02-017": "49f4ed13-754f-4465-a4f4-0735c8bdb8a2",
+  "HIST-56-02-018": "9b81823a-70eb-448c-9de9-80b70eab4092",
+  "HIST-56-02-019": "d32a12d1-7777-4c20-93c6-51b446178752",
+  "HIST-56-02-020": "a4d0794d-ce14-4d6d-ab9e-d91c09c60762",
+  "HIST-56-02-021": "773f29d2-ddec-43c6-8b5b-98e5215251ec",
+  "HIST-56-02-022": "9ad95c7b-3693-452c-9635-e8d32e107cd0",
+  "HIST-56-02-023": "2d0e680e-2547-4719-acf7-470aa165a1a0"
+ }
+}

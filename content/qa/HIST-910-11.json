@@ -1,0 +1,337 @@
+{
+ "nat_id": "HIST-910-11",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 11,
+  "cards": 56,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világ blokk: ebfc010e (HIST-910-11)."
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-910-11-001",
+   "lesson_id": "d1efafb5-f9f7-4cfe-92cf-e6412b85d2ee",
+   "block_id": "1789b762-37c5-435d-97fc-90a7c65094c8",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A reformkor konzervatívjai között „Apponyi Albert”",
+   "explanation": "Apponyi Albert (1846–1933) a reformkor után született. A reformkori konzervatívok: Apponyi György, Dessewffy Aurél.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Albert_Apponyi",
+     "title": "Albert Apponyi",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A konzervativizmus a 19. század közepén jelent meg Magyarországon, mint válasz a liberalizmus és nacionalizmus kihívásaira. A konzervatív politikai gondolkodás a hagyományok megőrzésére és a fokozatos reformokra helyezte a hangsúlyt. A forradalmak elutasítása és a stabilitás fenntartása volt a célja, amelyet a Habsburgokkal való együttműködés is tükrözött. A konzervativizmus képviselői, mint például Apponyi Albert, a társadalmi rend és a monarchia megőrzésére törekedtek. Ez a megközelítés fontos szerepet játszott a politikai diskurzusban és a reformkor eseményeiben.",
+     "type": "text",
+     "heading": "Konzervativizmus: szerves reform és a forradalom elutasítása",
+     "key_term": "konzervativizmus"
+    },
+    "after": {
+     "body": "A konzervativizmus a 19. század közepén jelent meg Magyarországon, mint válasz a liberalizmus és nacionalizmus kihívásaira. A konzervatív politikai gondolkodás a hagyományok megőrzésére és a fokozatos reformokra helyezte a hangsúlyt. A forradalmak elutasítása és a stabilitás fenntartása volt a célja, amelyet a Habsburgokkal való együttműködés is tükrözött. A konzervativizmus képviselői, mint például Apponyi György és Dessewffy Aurél, a társadalmi rend és a monarchia megőrzésére törekedtek. Ez a megközelítés fontos szerepet játszott a politikai diskurzusban és a reformkor eseményeiben.",
+     "type": "text",
+     "heading": "Konzervativizmus: szerves reform és a forradalom elutasítása",
+     "key_term": "konzervativizmus"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-11-002",
+   "lesson_id": "bc59d657-da93-405a-8b8f-1c72f7cf8e68",
+   "block_id": "0ab93984-bc86-434a-8d2b-8b817a35775f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A második ipari forradalom „elektronika”; Edison „feltalálta az elektromos izzót”; „elektronikai gyárak”",
+   "explanation": "A második ipari forradalom villamosságra (nem elektronikára) épült; az elektronika a 20. századi fejlemény. Edison az izzólámpát továbbfejlesztette és kereskedelmileg elterjesztette.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_Industrial_Revolution",
+     "title": "Second Industrial Revolution",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb",
+     "title": "Incandescent light bulb",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A második ipari forradalom a 19. század végén és a 20. század elején zajlott, és az elektronika és a vegyipar fejlődésével volt jellemezhető. Thomas Edison feltalálta az elektromos izzót, amely forradalmasította a világítást és az ipari termelést. A vegyipar fejlődése új anyagok és termékek előállítását tette lehetővé, mint például a műanyagok. Magyarországon is megjelentek az elektronikai gyárak, amelyek új munkahelyeket teremtettek.",
+     "type": "text",
+     "heading": "A második hullám: elektronika és vegyipar",
+     "key_term": "második hullám, elektronika, vegyipar"
+    },
+    "after": {
+     "body": "A második ipari forradalom a 19. század végén és a 20. század elején zajlott, és a villamosság és a vegyipar fejlődésével volt jellemezhető. Thomas Edison továbbfejlesztette és elterjesztette az izzólámpát, amely forradalmasította a világítást és az ipari termelést. A vegyipar fejlődése új anyagok és termékek előállítását tette lehetővé, mint például a műanyagok. Magyarországon is megjelentek a villamossági gyárak (például a Ganz), amelyek új munkahelyeket teremtettek.",
+     "type": "text",
+     "heading": "A második hullám: villamosság és vegyipar",
+     "key_term": "második hullám, elektronika, vegyipar"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-11-003",
+   "lesson_id": "bc59d657-da93-405a-8b8f-1c72f7cf8e68",
+   "block_id": "0ab93984-bc86-434a-8d2b-8b817a35775f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az ipari forradalom társadalmi hatásai: „szegregáció”",
+   "explanation": "A szegregáció faji vagy csoportos elkülönítést jelent; az ipari forradalom hatása a társadalmi egyenlőtlenség és a városi nyomor növekedése volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Industrial_Revolution",
+     "title": "Industrial Revolution",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "Az ipari forradalom társadalmi hatásai közé tartozik a szegregáció és a munkanélküliség növekedése. A gyors iparosodás következtében sokan elveszítették hagyományos munkahelyeiket, míg mások új lehetőségekhez jutottak a gyárakban. A környezeti hatások, mint a légszennyezés és a vízszennyezés, szintén jelentős problémát jelentettek. Magyarországon a városok gyors fejlődése és a környezeti kihívások egyaránt tapasztalhatóak voltak az ipari forradalom során.",
+     "type": "text",
+     "heading": "Az ipari forradalmak társadalmi és környezeti hatásai",
+     "key_term": "szegregáció, munkanélküliség"
+    },
+    "after": {
+     "body": "Az ipari forradalom társadalmi hatásai közé tartozik a társadalmi egyenlőtlenség és a munkanélküliség növekedése. A gyors iparosodás következtében sokan elveszítették hagyományos munkahelyeiket, míg mások új lehetőségekhez jutottak a gyárakban. A környezeti hatások, mint a légszennyezés és a vízszennyezés, szintén jelentős problémát jelentettek. Magyarországon a városok gyors fejlődése és a környezeti kihívások egyaránt tapasztalhatóak voltak az ipari forradalom során.",
+     "type": "text",
+     "heading": "Az ipari forradalmak társadalmi és környezeti hatásai",
+     "key_term": "szegregáció, munkanélküliség"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-11-004",
+   "lesson_id": "bc59d657-da93-405a-8b8f-1c72f7cf8e68",
+   "block_id": "1dae9e45-5516-4f02-95a6-2a70b89038c9",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Edison „a villanykörte feltalálója”",
+   "explanation": "Az izzólámpát több feltaláló (Swan, Edison) fejlesztette ki; Edison az első tartósan használható és kereskedelmileg elterjedt változatot hozta létre (1879).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb",
+     "title": "Incandescent light bulb",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Gőzgép",
+      "B) Villanykörte",
+      "C) Autó",
+      "D) Telefon"
+     ],
+     "question": "Melyik találmány kapcsolódik Thomas Edisonhoz?",
+     "explanation": "Thomas Edison a villanykörte feltalálója, amely forradalmasította a világítást és hozzájárult az ipari forradalom második hullámához.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Gőzgép",
+      "B) Villanykörte",
+      "C) Autó",
+      "D) Telefon"
+     ],
+     "question": "Melyik találmány kapcsolódik Thomas Edisonhoz?",
+     "explanation": "Thomas Edison az első tartósan használható, kereskedelmileg elterjedt izzólámpát fejlesztette ki (1879), amely forradalmasította a világítást.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-11-005",
+   "lesson_id": "bc59d657-da93-405a-8b8f-1c72f7cf8e68",
+   "block_id": "1dae9e45-5516-4f02-95a6-2a70b89038c9",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A munkások és a gazdagok közötti különbség: kulcs „Szegregáció”",
+   "explanation": "A szegregáció elkülönítést jelent, nem a vagyoni különbségeket. A helyes fogalom a társadalmi egyenlőtlenség.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Social_inequality",
+     "title": "Social inequality",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Szegregáció",
+      "B) Integráció",
+      "C) Mobilizáció",
+      "D) Kooperáció"
+     ],
+     "question": "Milyen társadalmi jelenség következett be az ipari forradalom idején, amely a munkások és a gazdagok közötti különbségeket hangsúlyozta?",
+     "explanation": "A szegregáció a munkások és a gazdagok közötti ellentétek felerősödését jelenti, amely az ipari forradalom következtében alakult ki.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Társadalmi egyenlőtlenség",
+      "B) Integráció",
+      "C) Mobilizáció",
+      "D) Kooperáció"
+     ],
+     "question": "Milyen társadalmi jelenség következett be az ipari forradalom idején, amely a munkások és a gazdagok közötti különbségeket hangsúlyozta?",
+     "explanation": "A társadalmi egyenlőtlenség a munkások és a gazdagok közötti vagyoni és életszínvonalbeli különbséget jelenti, amely az ipari forradalom idején felerősödött.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-11-006",
+   "lesson_id": null,
+   "block_id": "cad7314a-90c9-419a-8594-12a196e6acb7",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Az USA ipari központja a 19. század végén: kulcs New York",
+   "explanation": "A 19. század végi amerikai ipar központja Chicago és Pittsburgh volt; New York pénzügyi és kereskedelmi központ.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Chicago",
+     "title": "Chicago",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Industrial_Revolution_in_the_United_States",
+     "title": "Industrial Revolution in the United States",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Chicago",
+      "B) New York",
+      "C) Los Angeles",
+      "D) San Francisco"
+     ],
+     "question": "Melyik város volt az Egyesült Államok ipari központja a 19. század végén?",
+     "explanation": "New York a 19. század végén az ipari fejlődés központjává vált az Egyesült Államokban.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Chicago",
+      "B) New York",
+      "C) Los Angeles",
+      "D) San Francisco"
+     ],
+     "question": "Melyik város volt az Egyesült Államok ipari központja a 19. század végén?",
+     "explanation": "Chicago a 19. század végén az USA egyik legfontosabb ipari és vasúti csomópontja volt; New York inkább pénzügyi és kereskedelmi központ.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-11-007",
+   "lesson_id": "bc59d657-da93-405a-8b8f-1c72f7cf8e68",
+   "block_id": "1bb6bc9f-6a4f-440f-9e8d-7068934dd0b7",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Edison „szabadalmaztatta az első gyakorlati elektromos izzót”",
+   "explanation": "Edison 1879-ben az első tartósan használható, kereskedelmileg elterjedt izzólámpát mutatta be; korábban Swan és mások készítettek izzólámpát.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb",
+     "title": "Incandescent light bulb",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Thomas Edison 1879-ben szabadalmaztatta az első gyakorlati elektromos izzót, amely forradalmasította a világítást és az energiaszolgáltatást. Az elektromos áram elterjedése új iparágakat teremtett, és hozzájárult a városok modernizációjához, valamint a gyárak működésének hatékonyságának növeléséhez.",
+     "type": "world",
+     "year": "1879",
+     "heading": "Thomas Edison első elektromos izzója",
+     "link_hu": "Edison találmánya a magyar iparban is megjelent, hiszen a 20. század elején a gyárak egyre inkább az elektromos áramot használták a termelés során."
+    },
+    "after": {
+     "body": "Thomas Edison 1879-ben bemutatta az első tartósan használható, kereskedelmileg elterjedt izzólámpát, amely forradalmasította a világítást és az energiaszolgáltatást. Az elektromos áram elterjedése új iparágakat teremtett, és hozzájárult a városok modernizációjához, valamint a gyárak működésének hatékonyságának növeléséhez.",
+     "type": "world",
+     "year": "1879",
+     "heading": "Thomas Edison első elektromos izzója",
+     "link_hu": "Edison találmánya a magyar iparban is megjelent, hiszen a 20. század elején a gyárak egyre inkább az elektromos áramot használták a termelés során."
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-910-11-001": "51573d6b-cf3d-48d8-b0bc-c082863fa982",
+  "HIST-910-11-002": "fb4698d4-219d-4683-9e73-d2aafebda835",
+  "HIST-910-11-004": "86746932-5af0-4430-9edc-56d4e3c73798",
+  "HIST-910-11-005": "2bdba820-f2af-492b-b82d-1eb05559296e",
+  "HIST-910-11-007": "d23832e8-2c36-40e8-a31b-66751d325e7e"
+ }
+}

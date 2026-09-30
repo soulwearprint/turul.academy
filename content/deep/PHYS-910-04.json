@@ -1,0 +1,203 @@
+{
+ "nat_id": "PHYS-910-04",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "105f8cb6-eb87-4261-a439-cf7514faa113",
+   "title_hu": "Energiafelhasználás és források",
+   "text_block_id": "48b363fc-5e40-4ae3-8e36-da3630011874",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Hány töltést ad egy kilowattóra?",
+     "body": "Az energiát joule-ban (J) vagy kilowattórában (kWh) mérjük: 1 kWh az az energia, amit egy 1000 wattos készülék egy óra alatt fogyaszt. Egy telefon akkumulátorának töltése kb. 15 Wh energiát igényel, így 1 kWh-ból nagyjából 66 telefontöltés jön ki. Az emberiség energiafelhasználása 1970 óta több mint kétszeresére nőtt, mert nőtt a népesség és az életszínvonal is.",
+     "did_you_know": "Egy 100 wattos izzó 10 óra alatt fogyaszt 1 kWh-t, a mai LED-izzó ugyanannyi fényhez kb. 10–15 watt teljesítményt használ.",
+     "think": "Mennyi energiát fogyaszt egy 2000 wattos vízforraló 3 perc alatt?",
+     "think_answer": "2 kW · 0,05 h = 0,1 kWh, vagyis 100 Wh."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Egy óra napfény és az emberiség éve",
+     "body": "A Föld keresztmetszetére érkező napsugárzás teljesítménye kb. 1,7 · 10¹⁷ watt. Egy óra alatt ez kb. 6 · 10²⁰ joule energiát jelent, ami nagyjából az emberiség egyéves energiafelhasználása. A napelemek jelenleg tipikusan 20 százalék körüli hatásfokkal alakítják át a fényt elektromos árammá. A Nap tehát bőségesen elég lenne, a nehézséget a tárolás és az elosztás jelenti.",
+     "did_you_know": "A Nap energiáját a fotoszintézis is hasznosítja: a növények kémiai energiává alakítják, és ez az élelmiszerlánc alapja.",
+     "think": "Miért nem használjuk fel a napenergiát még nagyobb mértékben?",
+     "think_answer": "Mert a napsütés időben változik, és az energiát tárolni kell, ami költséges."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Honnan jön a megújuló energia?",
+     "body": "A megújuló források többsége végső soron a Napból ered: a szelet a Nap egyenlőtlen fűtése kelti, a vizet a Nap párologtatja, a növényi biomasszát a fotoszintézis adja. Kivétel a geotermikus energia, amely a Föld belső hőjéből, és az árapály-energia, amely a Hold vonzásából származik. A fosszilis tüzelőanyagok is több millió éve élt növények és állatok maradványaiból keletkeztek, ezért felhasználásukkal szemben a keletkezésük sokkal lassabb. Magyarországon a villamos energia jelentős részét a paksi atomerőmű adja, ami sem megújuló, sem fosszilis.",
+     "did_you_know": "A szélerőmű forgórészének átmérője elérheti a 150 métert is, ekkora lapátkört egy nagy utasszállító repülőgép szárnyfesztávja sem ér el.",
+     "think": "Mi a különbség a megújuló és a nem megújuló energiaforrás között?",
+     "think_answer": "A megújuló forrás rövid idő alatt újratermelődik vagy nem merül ki, a nem megújuló pedig a felhasználás ütemében kimerül."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyi szén-dioxidot bocsát ki 1 kWh?",
+     "body": "Az IPCC becslései szerint az életciklus alapján 1 kWh villamos energia termelése átlagosan kb. 820 g szén-dioxidot (kőszén), 490 g-ot (földgáz), 45 g-ot (napelem), 12 g-ot (szélerőmű) bocsát ki. Az elektromos autó a menet közben nem bocsát ki kipufogógázt, de a kibocsátás az áram forrásától is függ. A tiszta áram tehát az elektromos közlekedés előfeltétele.",
+     "did_you_know": "Az atomerőmű életciklus alapú kibocsátása is nagyon kicsi, kb. 12 g/kWh.",
+     "think": "Miért nem teljesen kibocsátásmentes az elektromos autó?",
+     "think_answer": "Mert az áram termelése és az autó gyártása is kibocsátással járhat, még ha a menet közben nem is bocsát ki kipufogógázt."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A hidrogén nem forrás, hanem hordozó",
+     "body": "A hidrogén nem természetes energiaforrás, hanem energiahordozó: előállításához energia kell, például a víz elektrolízisével. Egy kilogramm hidrogén elégetésekor kb. 33 kWh energia szabadul fel, ez közel háromszor annyi, mint amennyi 1 kg benzinből nyerhető (kb. 12 kWh). A hidrogén viszont térfogatra vetítve nagyon kis energiasűrűségű, ezért tárolása nehéz: magas nyomás vagy nagyon alacsony hőmérséklet kell hozzá.",
+     "did_you_know": "A hidrogén elégetésekor csak vízgőz keletkezik, de az előállítás módja határozza meg, mennyire tiszta.",
+     "think": "Miért energiahordozó, és nem energiaforrás a hidrogén?",
+     "think_answer": "Mert a Földön szabad hidrogént alig találunk, előállításához energia kell, és azt szállítja, tárolja."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Miért nem lehet örökmozgót építeni?",
+     "body": "Az első fajú örökmozgó energiát termelne a semmiből, ez az energiamegmaradás törvényével ütközik. A második fajú örökmozgó teljes hatásfokkal alakítaná át a hőt munkává, ezt a termodinamika második főtétele tiltja. Minden valódi gép súrlódás és közegellenállás miatt energiát veszít, vagyis magától lassan megáll. Ezért a lendkerék is csak addig forog, amíg a mozgási energiáját fel nem emészti a súrlódás.",
+     "did_you_know": "A szabadalmi hivatalok általában működő modell nélkül nem fogadnak el örökmozgóra vonatkozó bejelentést.",
+     "think": "Miért áll meg magától az az inga, amely súrlódással lengene?",
+     "think_answer": "Mert a súrlódás és a légellenállás minden lengésnél hővé alakít egy kis energiát."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Mennyi valóban a napsugárzás?",
+     "body": "A napállandó (kb. 1361 W/m²) a légkör felső határán mért, a sugarakra merőleges felületre érkező teljesítmény. A talajra kerülő sugárzás a légkör elnyelése miatt legfeljebb kb. 1000 W/m². Egy 20 százalékos hatásfokú napelem négyzetméterenként így legfeljebb kb. 200 W csúcsteljesítményt ad. A tényleges termelés a beesés szögétől, a felhőzettől és az évszaktól is függ. Magyarországon évente kb. 2000 napsütéses óra van.",
+     "did_you_know": "A napelem hatásfoka a fényből elektromos energiává alakított hányad, ez nem a napállandótól, hanem a napelem technológiájától függ.",
+     "think": "Miért kevesebb a napelem téli teljesítménye?",
+     "think_answer": "Mert alacsonyabb a Nap járása, rövidebbek a nappalok, és több a felhő."
+    }
+   ]
+  },
+  {
+   "lesson_id": "0c30dccc-2b82-401b-94b8-6d1603177937",
+   "title_hu": "Energiaváltozások és megmaradás",
+   "text_block_id": "35b66a79-b3f7-4c43-b913-4ad1cd4d9fb7",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Munka és a táska",
+     "body": "A munka W = F · s · cos α, ahol α az erő és az elmozdulás közötti szög. Ha egy 20 kg-os táskát 1 méter magasra emelsz, az erő 196 N (m · g), így a munka kb. 196 J. Ha csak tartod a táskát mozdulatlanul, a fizikai értelemben vett munka nulla, mert nincs elmozdulás, pedig az izmaid elfáradnak. A vízszintesen cipelt táska esetében az erő merőleges az elmozdulásra, ezért szintén nulla a munka.",
+     "did_you_know": "Az izmaink még mozdulatlan tartásnál is energiát fogyasztanak, mert az izomrostok folyamatosan összehúzódnak és elernyednek.",
+     "think": "Mekkora munkát végzel, ha egy 5 kg-os dobozt 2 méter magasra emelsz (g ≈ 10 m/s²)?",
+     "think_answer": "W = 5 · 10 · 2 = 100 J."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Két energia, egy összeg",
+     "body": "A helyzeti energia E_p = m · g · h, a mozgási energia E_k = ½ · m · v². Ha egy 0,5 kg-os labdát 2 méterről ejtünk le, kezdetben E_p = 0,5 · 9,81 · 2 ≈ 9,8 J. Leérkezéskor ez mind mozgási energia, tehát a sebesség √(2 · 9,81 · 2) ≈ 6,3 m/s. A mozgási energia a sebesség négyzetével nő: kétszeres sebességnél négyszeres az energia, ezért olyan veszélyes a gyors ütközés.",
+     "did_you_know": "Az autó mozgási energiája 100 km/h-nál négyszer akkora, mint 50 km/h-nál.",
+     "think": "Hányszorosára nő a mozgási energia, ha a sebesség háromszorosára nő?",
+     "think_answer": "Kilencszeresére, mert E_k a sebesség négyzetével arányos."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mekkora sebességgel csapódik be a kő?",
+     "body": "Egy 45 méter mély szakadék szélén elejtett kő sebessége az alján: v = √(2 · g · h) = √(2 · 9,81 · 45) ≈ 30 m/s, vagyis kb. 107 km/h. Ez a tömegtől független, hiszen a tömeg mindkét oldalon kiesik. A valóságban a légellenállás miatt a sebesség kisebb, kisebb sűrűségű vagy nagy felületű testnél sokkal kisebb, ezért lassan esik a toll.",
+     "did_you_know": "Az ejtőernyős végsebessége kb. 5–6 m/s, míg ejtőernyő nélkül kb. 55 m/s (200 km/h) is lehet.",
+     "think": "Miért a szakadék mélységétől függ a becsapódási sebesség, a kő tömegétől nem?",
+     "think_answer": "Mert az energiamegmaradásban a tömeg mindkét oldalon szerepel, és kiesik az egyenletből."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Hova lesz a fékezés energiája?",
+     "body": "Fékezéskor az autó mozgási energiája súrlódás révén hővé alakul, a fékek felmelegednek. Egy 1500 kg-os, 72 km/h-val haladó autó 300 kJ mozgási energiát veszít; ez körülbelül 1 kg vizet melegítene 72 fokkal. A rekuperációs fékezés az energiának ezt a hányadát részben elektromos energiává alakítja, és visszatölti az akkumulátorba. A hő azonban nem alakítható vissza teljes mértékben mozgássá.",
+     "did_you_know": "Ezért forró a tárcsafék fékezés után, és versenyautóknál akár izzó is lehet.",
+     "think": "Miért melegszik fel a fékbetét fékezéskor?",
+     "think_answer": "Mert a súrlódás a mozgási energiát hővé alakítja."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mennyi a rugó energiája?",
+     "body": "A megnyújtott vagy összenyomott rugó rugalmas energiája E = ½ · k · x². Ha egy gumiszalag rugóállandója 200 N/m, és 10 cm-rel nyújtjuk meg, E = ½ · 200 · 0,1² = 1 J. Ha ez egy 10 grammos kőnek adódna át, sebessége legfeljebb kb. 14 m/s lenne. A kétszeres nyújtás négyszeres energiát ad, ezért erősebb az íj megfeszítettebb állapotban. A valóságban a szalag saját mozgása és a hő miatt kevesebb jut a kőre.",
+     "did_you_know": "Az íj nyilát akár 60–70 m/s-ra is felgyorsíthatja a megfeszített húr rugalmas energiája.",
+     "think": "Hányszorosára nő a rugalmas energia, ha a rugót kétszer akkorára nyújtjuk?",
+     "think_answer": "Négyszeresére, mert az energia a nyújtás négyzetével arányos."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Hogyan tölt a vezeték nélküli töltő?",
+     "body": "A vezeték nélküli töltőben a váltakozó áram váltakozó mágneses teret hoz létre. Ez a telefon tekercsében feszültséget indukál (Faraday indukciós törvénye), és így töltődik az akkumulátor. A folyamat közben az energia egy része hővé alakul, ezért a vezeték nélküli töltés hatásfoka általában kisebb, mint a kábeles töltésé. Az energia mennyisége azonban itt is megmarad: a bemenő energia egyenlő a hasznos energia és a veszteség összegével.",
+     "did_you_know": "Nikola Tesla már a 19. század végén kísérletezett vezeték nélküli energiaátvitellel.",
+     "think": "Hova alakul át az elvesző energia a vezeték nélküli töltésnél?",
+     "think_answer": "Főleg hővé, ezért melegszik a telefon és a töltő."
+    }
+   ]
+  },
+  {
+   "lesson_id": "8aa83039-31b6-48d6-83f3-f9defb4a6b76",
+   "title_hu": "Energia átalakulások és szállítás",
+   "text_block_id": "215da348-93bb-4828-99c1-72da8644893e",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mennyi gáz kell egy liter víz forralásához?",
+     "body": "Egy liter víz 20 °C-ról 100 °C-ra melegítéséhez Q = c · m · ΔT = 4,19 kJ/(kg·K) · 1 kg · 80 K ≈ 335 kJ hő kell. A földgáz fűtőértéke kb. 34 MJ/m³, tehát 100 százalékos hatásfok mellett 0,01 m³ gáz elég lenne. A gáztűzhely hatásfoka azonban csak 40–55 százalék, ezért a gyakorlatban kb. 0,02 m³ kell. Az indukciós főzőlap hatásfoka már 80–90 százalék.",
+     "did_you_know": "Fedő nélküli lábasnál sokkal több hő távozik a párával, ezért fedővel sokkal gyorsabban forr a víz.",
+     "think": "Miért gazdaságosabb az indukciós főzőlap a gáztűzhelynél?",
+     "think_answer": "Mert a hőt közvetlenül az edényben fejleszti, ezért kevesebb hő vész el a környezetbe."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Mennyi energiát fogyaszt az ember?",
+     "body": "A napi kb. 2000 kilokalória energia kb. 8,4 MJ, azaz 2,3 kWh. Nyugalomban a testünk kb. 80–100 W teljesítménnyel működik, mint egy erős izzó. Futásnál a táplálék kémiai energiájának csak kb. 20–25 százaléka válik mechanikai munkává, a többi hő. Ezért melegszünk fel mozgás közben, és ezért izzadunk, hogy a hőt leadjuk.",
+     "did_you_know": "Egy maratoni futó egy verseny alatt kb. 2500–3000 kilokalóriát éget el.",
+     "think": "Miért melegszik fel a test futás közben?",
+     "think_answer": "Mert a felhasznált energia nagy része hővé alakul, csak kb. egynegyede válik mechanikai munkává."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Milyen hatásfokúak az erőművek?",
+     "body": "A hőerőművek hatásfoka általában 35–45 százalék, a kombinált ciklusú gázerőműveké akár 55–60 százalék. A szélerőmű a szél mozgási energiájának elméletileg legfeljebb kb. 59 százalékát tudja hasznosítani (Betz-határ), a gyakorlatban 35–45 százalékát. A napelemek hatásfoka 20 százalék körül van. A hatásfok nem minőségi mutató: a szél és a Nap ingyenes, a fosszilis tüzelőanyag ára viszont számít.",
+     "did_you_know": "A hőerőművek hulladékhőjét sok városban távfűtésre használják, ezt kapcsolt energiatermelésnek nevezik.",
+     "think": "Miért nincs 100 százalékos hatásfokú hőerőmű?",
+     "think_answer": "Mert a hő egy része mindig a hűtőközegbe távozik, ezt a termodinamika második főtétele írja elő."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Miért nagy feszültségen szállítják az áramot?",
+     "body": "A vezetékben a hőveszteség P = I² · R, tehát az áramerősség négyzetével arányos. Ha ugyanazt a teljesítményt kétszeres feszültséggel szállítjuk, az áram fele akkora, és a veszteség negyedére csökken. Ezért használnak a távvezetékek 120–750 kilovoltos feszültséget, a háztartásokban pedig transzformátorok alakítják le 230 voltra. Az otthoni áram nem közvetlenül a legközelebbi erőműből érkezik, hanem az országos hálózatból.",
+     "did_you_know": "",
+     "think": "Mi történik a vezetékveszteséggel, ha az áramot háromszoros feszültségen szállítjuk?",
+     "think_answer": "Az áram harmadára csökken, a veszteség kilencedére."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Számoljuk ki a hatásfokot",
+     "body": "A hatásfok η = hasznos energia : befektetett energia. Ha 0,5 kg víz hőmérséklete 20 K-nel nő, a felvett hő 4200 · 0,5 · 20 = 42 kJ. Ha a gáz elégetése 100 kJ hőt szabadított fel, a hatásfok 42 százalék. Fedő, vastag aljú edény és megfelelő lángméret növeli a hatásfokot. Ha a láng túl nagy, a láng szélén elszaladó hő a környezetet melegíti.",
+     "did_you_know": "",
+     "think": "Mekkora a hatásfok, ha 60 kJ hőt fektettünk be, és a víz 30 kJ hőt vett fel?",
+     "think_answer": "η = 30 : 60 = 0,5, vagyis 50 százalék."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Mikor térül meg a napelem?",
+     "body": "A napelem gyártásához energia kell, de ezt a mai panelek kb. 1–3 év alatt megtermelik. Élettartamuk 25–30 év, tehát a legtöbb energiát a megtérülés után termelik. A szélerőmű megtérülési ideje általában 6–12 hónap. A megújuló források hátránya, hogy termelésük időjárásfüggő, ezért tárolás vagy szabályozható erőművek kellenek mellé. A csökkentett villanyszámla csak akkor valósul meg, ha a rendszer méretezése jó.",
+     "did_you_know": "A napelemek anyagának nagy része újrahasznosítható, az üveg és az alumínium keret is.",
+     "think": "Miért nem elég csak napelemekre támaszkodni az áramellátásban?",
+     "think_answer": "Mert éjjel és felhős időben nem termelnek, ezért tárolóra vagy más erőművekre is szükség van."
+    }
+   ]
+  }
+ ]
+}

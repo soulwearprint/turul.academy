@@ -1,0 +1,547 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "96d2a9b9-2be1-4537-b41c-79f4b18492df",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Nagy Imre … a reformok élére állva a nép megbecsülését és támogatását kereste”",
+   "explanation": "Nagy Imrét október 24-én hajnalban nevezték ki miniszterelnökké, a forradalom kirobbantásában nem játszott szerepet. Fontos tényei: 1956. november 1-jén bejelentette a Varsói Szerződésből való kilépést és a semlegességet; 1958. június 16-án kivégezték.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Imre_Nagy",
+     "title": "Imre Nagy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Nagy Imre, a forradalom egyik kulcsszereplője, a reformok élére állva a nép megbecsülését és támogatását kereste.",
+     "Nagy Imrét, a reformkommunista politikust október 24-én hajnalban nevezték ki miniszterelnöknek; november 1-jén bejelentette Magyarország kilépését a Varsói Szerződésből és semlegességét."
+    ]
+   ]
+  },
+  {
+   "block_id": "96d2a9b9-2be1-4537-b41c-79f4b18492df",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A tüntetés során a helyzet fokozatosan eszkalálódott, és a résztvevők fegyveres felkelésre szánták el magukat”",
+   "explanation": "A fordulópont október 23-án este volt: a tömeg ledöntötte a Sztálin-szobrot, majd a Magyar Rádió épületénél az ÁVH tüzet nyitott a tüntetőkre; erre fogtak fegyvert a felkelők. A „fegyveres felkelésre szánták el magukat” a fordulatot és az ÁVH felelősségét elhallgatja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A tüntetés során a helyzet fokozatosan eszkalálódott, és a résztvevők fegyveres felkelésre szánták el magukat.",
+     "Este a tömeg ledöntötte a Sztálin-szobrot, a Magyar Rádió épületénél pedig az ÁVH tüzet nyitott a tüntetőkre; erre a felkelők fegyvert fogtak."
+    ]
+   ]
+  },
+  {
+   "block_id": "96d2a9b9-2be1-4537-b41c-79f4b18492df",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A Kossuth tér és a Corvin köz a forradalom központi helyszíneivé váltak, ahol a felkelők szervezkedtek és harcoltak”",
+   "explanation": "A Kossuth tér nem a felkelők harci támaszpontja, hanem az október 25-i sortűz helyszíne volt; a fegyveres ellenállás egyik fő központja a Corvin köz volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Corvin_Passage",
+     "title": "Corvin Passage",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A Kossuth tér és a Corvin köz a forradalom központi helyszíneivé váltak, ahol a felkelők szervezkedtek és harcoltak a szabadságért.",
+     "A Kossuth téren október 25-én sortűz történt, a Corvin köz pedig a felkelők egyik legfontosabb fegyveres támaszpontja lett."
+    ]
+   ]
+  },
+  {
+   "block_id": "96d2a9b9-2be1-4537-b41c-79f4b18492df",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Nagy Imre és más vezetők sorsa tragikus lett”",
+   "explanation": "Homályos. Nagy Imrét, Maléter Pált és Gimes Miklóst 1958. június 16-án kivégezték; Nagy Imrét 1989. június 16-án újratemették.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Imre_Nagy",
+     "title": "Imre Nagy",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Pál_Maléter",
+     "title": "Pál Maléter",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A forradalom elbukása után Nagy Imre és más vezetők sorsa tragikus lett",
+     "A forradalom elbukása után Nagy Imrét, Maléter Pált és Gimes Miklóst 1958. június 16-án kivégezték; Nagy Imrét 1989. június 16-án újratemették"
+    ]
+   ]
+  },
+  {
+   "block_id": "2b725870-f6b5-456b-bb27-72427d5d4cf2",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a rendőrség és a szovjet csapatok sortüzet adtak le”; „számos ember életét vesztette”",
+   "explanation": "A Kossuth téri sortűz (október 25.) elkövetői vitatottak: az épületek tetejéről ismeretlen lövészek (feltehetően államvédelmisek) és szovjet harckocsik lőttek a tömegre. Az áldozatok száma becslések szerint legalább hatvan, egyes adatok szerint száznál több.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kossuth_Square_massacre",
+     "title": "Kossuth Square massacre",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a rendőrség és a szovjet csapatok sortüzet adtak le a békés tüntetőkre. A sortűz következtében számos ember életét vesztette",
+     "az épületek tetejéről ismeretlen lövészek (feltehetően államvédelmisek) és szovjet harckocsik lőttek a békés tüntetőkre. A sortűznek legalább hatvan halálos áldozata volt"
+    ]
+   ]
+  },
+  {
+   "block_id": "2b725870-f6b5-456b-bb27-72427d5d4cf2",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Maléter Pál, aki a forradalom alatt a Honvédelmi Minisztérium vezetője volt”",
+   "explanation": "Maléter ezredes a Kilián laktanya parancsnokaként csatlakozott a felkelőkhöz; Nagy Imre november 3-án nevezte ki honvédelmi miniszternek, még aznap éjjel letartóztatták a szovjetek. Pongrátz Gergely a Corvin köz egyik parancsnoka volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pál_Maléter",
+     "title": "Pál Maléter",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Gergely_Pongrátz",
+     "title": "Gergely Pongrátz",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Maléter Pál, aki a forradalom alatt a Honvédelmi Minisztérium vezetője volt. Ő irányította a harcot a szovjet csapatok ellen, és harcolt a nemzeti függetlenségért.",
+     "Maléter Pál ezredes, aki a Kilián laktanya parancsnokaként csatlakozott a felkelőkhöz. Nagy Imre november 3-án honvédelmi miniszterré nevezte ki, még aznap éjjel letartóztatták a szovjetek."
+    ],
+    [
+     "Pongrátz Gergely, a forradalom egyik hősének számító fiatal vezető,",
+     "Pongrátz Gergely, a Corvin köz egyik parancsnoka,"
+    ]
+   ]
+  },
+  {
+   "block_id": "2b725870-f6b5-456b-bb27-72427d5d4cf2",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Az ő nevéhez fűződik a 'kádári konszolidáció' … politikai és gazdasági stabilitását biztosította”",
+   "explanation": "Kihagyja a megtorlást: mintegy 230 embert végeztek ki, tízezreket börtönöztek vagy internáltak, kb. 200 ezren hagyták el az országot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/János_Kádár",
+     "title": "János Kádár",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Retribution_after_the_Hungarian_Revolution_of_1956",
+     "title": "Retribution after the Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Kádár politikája a forradalom elfojtására és a kommunista rendszer megszilárdítására irányult.",
+     "A megtorlás során mintegy 230 embert végeztek ki, tízezreket börtönbe zártak vagy internáltak, kb. 200 ezren elhagyták az országot."
+    ]
+   ]
+  },
+  {
+   "block_id": "2b725870-f6b5-456b-bb27-72427d5d4cf2",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "Mosonmagyaróvár: „a munkások és a helyi lakosság … aktívan részt vettek a tüntetésekben”; Salgótarján: „jelentős ellenállás alakult ki”",
+   "explanation": "A két város a sortüzek miatt ismert: Mosonmagyaróváron 1956. október 26-án határőrök lőttek a tüntetőkre (legalább ötven halott), Salgótarjánban 1956. december 8-án a karhatalom lőtt a békés tüntetőkre (több mint negyven halott).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mosonmagyaróvár_massacre",
+     "title": "Mosonmagyaróvár massacre",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Salgótarján_massacre",
+     "title": "Salgótarján massacre",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Mosonmagyaróváron a munkások és a helyi lakosság is aktívan részt vettek a tüntetésekben és a munkástanácsok megalakításában. Salgótarjánban szintén jelentős ellenállás alakult ki, ahol a helyi közösség összefogott a szovjet hatalom ellen, demonstrálva a magyar nép elszántságát a szabadságért.",
+     "Mosonmagyaróváron 1956. október 26-án határőrök sortüzet adtak a tüntetőkre; legalább ötvenen haltak meg. Salgótarjánban 1956. december 8-án a karhatalom lőtt a békés tüntetőkre; több mint negyven ember halt meg."
+    ]
+   ]
+  },
+  {
+   "block_id": "2b725870-f6b5-456b-bb27-72427d5d4cf2",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A [7]. kártya a Kossuth tér–Corvin köz témát ismétli",
+   "explanation": "Az L1 [5]. kártyájának lényegi ismétlése; kisebb új információ (a tér névadója).",
+   "source_note": "Szerkesztői észrevétel: a [7] összevonandó az A forradalom [5] kártyájával.",
+   "apply": "none"
+  },
+  {
+   "block_id": "44279b72-59a0-48ae-bba8-4a0e0e9a206b",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1956 októberében … Egyiptom államosította a csatornát”; „a nyugati hatalmak katonai beavatkozásra készültek, amely végül nem valósult meg”",
+   "explanation": "A csatornát 1956. július 26-án államosították. A katonai támadás megtörtént: október 29-én Izrael, október 31-től Nagy-Britannia és Franciaország támadta Egyiptomot; az USA és a Szovjetunió nyomására november 6–7-én tűzszünet lett. A link_hu (a szuezi válság a magyar forradalom kirobbanásához vezetett) kitalált.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Suez_Crisis",
+     "title": "Suez Crisis",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "1956. július 26-án Nasszer egyiptomi elnök államosította a Szuezi-csatornát. Október 29-én Izrael, majd Nagy-Britannia és Franciaország megtámadta Egyiptomot. Az Egyesült Államok és a Szovjetunió is a kivonulást követelte, az ENSZ közbelépésére november 6–7-én tűzszünet lett.",
+    "link_hu": "A szuezi válság egybeesett a magyar forradalommal, ezért a nyugati hatalmak figyelme megoszlott; a magyar forradalom nem a válság következménye volt."
+   }
+  },
+  {
+   "block_id": "44279b72-59a0-48ae-bba8-4a0e0e9a206b",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1956 júniusában Lengyelországban … A lengyel vezetés engedett a nyomásnak”",
+   "explanation": "Júniusban a poznańi munkásfelkelés volt (június 28.), amelyet leverték; a reformok októberben Gomułka hatalomra kerülésével (október 21.) jöttek. A link_hu általános.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Poznań_1956_protests",
+     "title": "Poznań 1956 protests",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Władysław_Gomułka",
+     "title": "Władysław Gomułka",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "1956. június 28-án Poznańban munkásfelkelés tört ki a bérek és az életszínvonal miatt; a hatóságok leverték. Októberben Gomułkát, a korábban félreállított reformer kommunistát választották első titkárrá (október 21.), és a szovjet vezetés végül beletörődött.",
+    "link_hu": "1956. október 23-án a budapesti egyetemisták a lengyelekkel való szolidaritás jegyében tüntettek Bem József szobránál."
+   }
+  },
+  {
+   "block_id": "44279b72-59a0-48ae-bba8-4a0e0e9a206b",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: „A nyugati reakciók … ösztönözték a magyar forradalmárokat”",
+   "explanation": "Nem ösztönözték; a Szabad Európa Rádió adásai reményt keltettek a nyugati segítségre, amely elmaradt. A nyugati hatalmakat a szuezi válság is megosztotta; az ENSZ Biztonsági Tanácsában a szovjet vétó megakadályozta a határozatot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Radio_Free_Europe",
+     "title": "Radio Free Europe",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "A nyugati hatalmak rokonszenvvel figyelték a magyar forradalmat, de katonai beavatkozásra nem került sor: a szuezi válság megosztotta őket, és nem akartak világháborút kockáztatni. Az ENSZ Biztonsági Tanácsában a Szovjetunió vétója megakadályozta a határozatot, a Közgyűlés viszont elítélte a szovjet beavatkozást.",
+    "link_hu": "A Szabad Európa Rádió adásai reményt keltettek a nyugati segítségre, amely végül elmaradt."
+   }
+  },
+  {
+   "block_id": "44279b72-59a0-48ae-bba8-4a0e0e9a206b",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A Szovjetunió végül katonai beavatkozásra szánta el magát, amely november 4-én kezdődött”; link_hu: „a politikai és gazdasági helyzet romlásához vezetett”",
+   "explanation": "A szovjet csapatok már október 23–24-én beavatkoztak, majd október 28–30-án megkezdték a kivonulást; a november 4-i támadás a „Forgószél” hadművelet volt. A link_hu tartalma vitatható és nem konkrét.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Operation_Whirlwind",
+     "title": "Operation Whirlwind",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "A szovjet csapatok már október 23–24-én beavatkoztak, majd október végén megkezdték a kivonulást. November 4-én hajnalban a szovjet hadsereg a „Forgószél” hadművelet keretében nagy erőkkel támadást indított Budapest ellen, és leverte a forradalmat.",
+    "link_hu": "Nagy Imre november 4-én a jugoszláv követségre menekült. A harcokban mintegy 2500 magyar és 700 szovjet katona esett el."
+   }
+  },
+  {
+   "block_id": "e8bfb5f6-9222-4bb8-9a65-aec74618c5b1",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1956 októberében … államosította … a Szovjetunió is beavatkozott, hogy megakadályozza a nyugati hatalmak előretörését”",
+   "explanation": "Az államosítás 1956. július 26-án volt; Izrael, Nagy-Britannia és Franciaország támadása megtörtént. A Szovjetunió nem avatkozott be katonailag, a kivonulást követelte (mint az USA). A link_hu szerinti „közvetlen hozzájárulás” kitalált.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Suez_Crisis",
+     "title": "Suez Crisis",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "1956. július 26-án Nasszer egyiptomi elnök államosította a Szuezi-csatornát. Október 29-én Izrael, majd Nagy-Britannia és Franciaország megtámadta Egyiptomot. Az Egyesült Államok és a Szovjetunió egyaránt a kivonulást követelte, ezért november 6–7-én tűzszünet lett.",
+    "link_hu": "A történészek szerint a szuezi válság elterelte a nyugati figyelmet, ami megkönnyítette a szovjet beavatkozást Magyarországon."
+   }
+  },
+  {
+   "block_id": "e8bfb5f6-9222-4bb8-9a65-aec74618c5b1",
+   "card_index": 1,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "link_hu: „növelve a szovjet vezetés nyomását a magyar helyzet kezelésére”",
+   "explanation": "Homályos, kitalált hatás. Valós: kb. 200 ezren hagyták el az országot 1956 végén, többségük Ausztrián át; ez nemzetközi menekültügy lett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "link_hu": "Nyugaton tüntetések zajlottak a magyar ügy mellett; mintegy 200 ezer magyar hagyta el az országot 1956 végén, többségük Ausztrián keresztül."
+   }
+  },
+  {
+   "block_id": "e8bfb5f6-9222-4bb8-9a65-aec74618c5b1",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1956 októberében Lengyelországban … a poznańi tüntetések”",
+   "explanation": "A poznańi felkelés 1956. június 28-án volt, nem októberben. Októberben Gomułka lett első titkár.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Poznań_1956_protests",
+     "title": "Poznań 1956 protests",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Władysław_Gomułka",
+     "title": "Władysław Gomułka",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "1956 júniusában Poznańban munkásfelkelés tört ki, októberben pedig Gomułka lett a lengyel párt első titkára, és a szovjet vezetés beletörődött a lengyel reformokba. A lengyel események példája ösztönözte a magyar egyetemistákat.",
+    "link_hu": "Október 23-án a budapesti egyetemisták a lengyelekkel való szolidaritás jegyében tüntettek Bem József szobránál."
+   }
+  },
+  {
+   "block_id": "e8bfb5f6-9222-4bb8-9a65-aec74618c5b1",
+   "card_index": 3,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: a forradalom „lehetőséget teremtett a szovjet beavatkozásra”",
+   "explanation": "Nem a forradalom teremtett lehetőséget: a beavatkozás oka az volt, hogy Nagy Imre november 1-jén bejelentette a Varsói Szerződésből való kilépést és a semlegességet.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+     "title": "Hungarian Revolution of 1956",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Warsaw_Pact",
+     "title": "Warsaw Pact",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "A magyar forradalom a hidegháború idején zajlott. Nagy Imre november 1-jén bejelentette Magyarország kilépését a Varsói Szerződésből és semlegességét; a Szovjetunió ezt nem tűrhette, mert egy tagállam kilépése az egész blokk felbomlását indíthatta volna el.",
+    "link_hu": "A Szabad Európa Rádió adásai reményt keltettek a nyugati segítségre, amely nem valósult meg."
+   }
+  },
+  {
+   "block_id": "a4f3fbee-5282-4771-9334-934a59b3a792",
+   "card_index": 0,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a rendőrség tüzet nyitott a tüntetőkre”",
+   "explanation": "A Kossuth téri sortűz elkövetői vitatottak (államvédelmisek a tetőkről, szovjet harckocsik); a „rendőrség” pontatlan.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kossuth_Square_massacre",
+     "title": "Kossuth Square massacre",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "A Kossuth téri sortűz 1956. október 25-én történt: az épületek tetejéről ismeretlen lövészek (feltehetően államvédelmisek) és szovjet harckocsik lőttek a tömegre; legalább hatvanan haltak meg."
+   }
+  },
+  {
+   "block_id": "a4f3fbee-5282-4771-9334-934a59b3a792",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Maléter Pál … A forradalom hőse és a Magyar Honvédség parancsnoka.”",
+   "explanation": "Maléter ezredes a Kilián laktanya parancsnoka volt, november 3-án lett honvédelmi miniszter; nem volt a honvédség parancsnoka.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pál_Maléter",
+     "title": "Pál Maléter",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A Kilián laktanya parancsnoka, majd Nagy Imre honvédelmi minisztere.",
+    "explanation": "Maléter Pál ezredes a Kilián laktanya parancsnokaként csatlakozott a felkelőkhöz, november 3-án honvédelmi miniszter lett; még aznap letartóztatták, 1958-ban kivégezték."
+   }
+  },
+  {
+   "block_id": "a4f3fbee-5282-4771-9334-934a59b3a792",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik városban alakult meg az egyik első munkástanács 1956-ban?” (kulcs: C Budapest; a magyarázat Győrt említi)",
+   "explanation": "A kulcs, az opciók és a magyarázat ellentmond egymásnak (Győr nincs az opciók között), és a kérdés vitatható. Helyette a leckében szereplő sortűz kérdezhető.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Salgótarján_massacre",
+     "title": "Salgótarján massacre",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik városban lőttek a karhatalmisták 1956. december 8-án a békés tüntetőkre?",
+    "options": [
+     "Mosonmagyaróvár",
+     "Salgótarján",
+     "Győr",
+     "Debrecen"
+    ],
+    "correct": "B",
+    "explanation": "Salgótarjánban 1956. december 8-án a karhatalom lőtt a békés tüntetőkre; több mint negyvenen haltak meg."
+   }
+  },
+  {
+   "block_id": "39131d80-cbb5-4a20-922a-024c52543aed",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A Molotov-koktél egy házilag készített robbanószer”",
+   "explanation": "A Molotov-koktél gyújtópalack, nem robbanószer.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Molotov_cocktail",
+     "title": "Molotov cocktail",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "A Molotov-koktél házilag készített gyújtópalack, amelyet a felkelők a szovjet harckocsik ellen használtak."
+   }
+  },
+  {
+   "block_id": "39131d80-cbb5-4a20-922a-024c52543aed",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik városban alakult meg az egyik első munkástanács?” (kulcs: C Salgótarján)",
+   "explanation": "Nincs forrás arra, hogy Salgótarján lett volna az első; a városról a sortűz ismert. A kérdés ellenőrizhetetlen.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mosonmagyaróvár_massacre",
+     "title": "Mosonmagyaróvár massacre",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik városban lőttek a határőrök 1956. október 26-án a tüntetők közé?",
+    "options": [
+     "Mosonmagyaróvár.",
+     "Szeged.",
+     "Salgótarján.",
+     "Debrecen."
+    ],
+    "correct": "A",
+    "explanation": "Mosonmagyaróváron 1956. október 26-án határőrök sortüzet adtak a tüntetőkre; legalább ötvenen haltak meg."
+   }
+  },
+  {
+   "block_id": "39131d80-cbb5-4a20-922a-024c52543aed",
+   "card_index": 6,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a megszorító intézkedéseket vezette be”",
+   "explanation": "Homályos, torz. Kádár 1956. november 4-től a szovjetek támogatta kormány élén állt, 1988 májusáig maradt a párt vezetője.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/János_Kádár",
+     "title": "János Kádár",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "Kádár János 1956. november 4-től a szovjetek által támogatott kormány élén állt, és 1988-ig a párt vezetője maradt."
+   }
+  }
+ ]
+}

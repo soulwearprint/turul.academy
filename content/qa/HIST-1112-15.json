@@ -1,0 +1,1191 @@
+{
+ "nat_id": "HIST-1112-15",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 16,
+  "cards": 81,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "world b17df972 (A demokrácia működése Magyarországon): a world-blokknak nincs egyetlen kártyája sem (üres)."
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-1112-15-001",
+   "lesson_id": "1f343714-2643-4936-8436-734f171cd0ee",
+   "block_id": "8228c7b5-d2a3-4dfe-a054-c4f45234a043",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Magyarországon a közvetett demokrácia érvényesül”",
+   "explanation": "Igaz, de hiányos: a magyar rendszer közvetett, közvetlen elemként azonban népszavazás is van.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Direct_democracy",
+     "title": "Direct democracy",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Referendums_in_Hungary",
+     "title": "Referendums in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A demokrácia olyan politikai rendszer, amelyben a hatalom forrása a nép. Két fő típusa van: közvetett és közvetlen demokrácia. Közvetett demokrácia esetén a választók képviselőket választanak, akik döntéseket hoznak a nevükben. A közvetlen demokráciában a polgárok közvetlenül részt vesznek a döntéshozatalban, például népszavazások során. Magyarországon a közvetett demokrácia érvényesül, ahol a választott képviselők hozzák meg a törvényeket és döntéseket.",
+     "type": "text",
+     "heading": "A demokrácia fogalma",
+     "key_term": "demokrácia"
+    },
+    "after": {
+     "body": "A demokrácia olyan politikai rendszer, amelyben a hatalom forrása a nép. Két fő típusa van: közvetett és közvetlen demokrácia. Közvetett demokrácia esetén a választók képviselőket választanak, akik döntéseket hoznak a nevükben. A közvetlen demokráciában a polgárok közvetlenül részt vesznek a döntéshozatalban, például népszavazások során. Magyarországon a közvetett demokrácia érvényesül, ahol a választott képviselők hozzák meg a törvényeket; közvetlen elemként népszavazást is lehet tartani.",
+     "type": "text",
+     "heading": "A demokrácia fogalma",
+     "key_term": "demokrácia"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-002",
+   "lesson_id": "1f343714-2643-4936-8436-734f171cd0ee",
+   "block_id": "8228c7b5-d2a3-4dfe-a054-c4f45234a043",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Fontos mérföldkő volt a rendszerváltoztatás óta, mivel egy új jogi keretet biztosított”",
+   "explanation": "Üres általánosság, az elfogadás ideje hiányzik. Az Alaptörvényt 2011 áprilisában fogadták el, 2012. január 1-jén lépett hatályba; az 1949-es alkotmányt váltotta fel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fundamental_Law_of_Hungary",
+     "title": "Fundamental Law of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Magyarország Alaptörvénye 2012. január 1-jén lépett hatályba, és az ország új alaptörvényeként funkcionál. Az Alaptörvény célja a demokratikus jogállam megerősítése és a polgári jogok védelme. Az Alaptörvény tartalmazza a hatalmi ágak elválasztásának elvét, a jogállamiság alapjait és a nemzeti identitás megőrzését. Fontos mérföldkő volt a rendszerváltoztatás óta, mivel egy új jogi keretet biztosított a politikai élet számára.",
+     "type": "text",
+     "heading": "Az Alaptörvény bevezetése",
+     "key_term": "Alaptörvény"
+    },
+    "after": {
+     "body": "Magyarország Alaptörvénye 2012. január 1-jén lépett hatályba, és az ország új alaptörvényeként funkcionál. Az Alaptörvény célja a demokratikus jogállam megerősítése és a polgári jogok védelme. Az Alaptörvény tartalmazza a hatalmi ágak elválasztásának elvét, a jogállamiság alapjait és a nemzeti identitás megőrzését. Az Országgyűlés 2011 áprilisában fogadta el, és a korábbi, 1949-es (1989-ben átfogóan módosított) alkotmányt váltotta fel.",
+     "type": "text",
+     "heading": "Az Alaptörvény bevezetése",
+     "key_term": "Alaptörvény"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-003",
+   "lesson_id": "1f343714-2643-4936-8436-734f171cd0ee",
+   "block_id": "8228c7b5-d2a3-4dfe-a054-c4f45234a043",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„az Országgyűlés … a képviselők által választott testület”",
+   "explanation": "Körkörös és téves: az Országgyűlést a polgárok választják, a miniszterelnököt viszont az Országgyűlés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/National_Assembly_(Hungary)",
+     "title": "National Assembly (Hungary)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A demokrácia működésének alapja a hatalmi ágak elválasztása, amely Magyarországon három ágra oszlik: a törvényhozó, a végrehajtó és a bírói hatalomra. A törvényhozó hatalmat az Országgyűlés gyakorolja, amely a képviselők által választott testület. A végrehajtó hatalom élén a miniszterelnök áll, aki a kormányt vezeti. A bírói hatalom független bíróságok által valósul meg, biztosítva a jogegyenlőséget és a jogállamiságot.",
+     "type": "text",
+     "heading": "A hatalmi ágak és intézményeik",
+     "key_term": "hatalmi ágak"
+    },
+    "after": {
+     "body": "A demokrácia működésének alapja a hatalmi ágak elválasztása, amely Magyarországon három ágra oszlik: a törvényhozó, a végrehajtó és a bírói hatalomra. A törvényhozó hatalmat az Országgyűlés gyakorolja, amelyet a polgárok választanak (a miniszterelnököt viszont az Országgyűlés választja meg). A végrehajtó hatalom élén a miniszterelnök áll, aki a kormányt vezeti. A bírói hatalom független bíróságok által valósul meg, biztosítva a jogegyenlőséget és a jogállamiságot.",
+     "type": "text",
+     "heading": "A hatalmi ágak és intézményeik",
+     "key_term": "hatalmi ágak"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-004",
+   "lesson_id": "1f343714-2643-4936-8436-734f171cd0ee",
+   "block_id": "8228c7b5-d2a3-4dfe-a054-c4f45234a043",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Magyarország választási rendszere arányos képviseletet biztosít … a polgárok pártokra szavaznak”",
+   "explanation": "A magyar rendszer vegyes: a 199 képviselőből 106-ot egyéni választókerületben, 93-at országos pártlistáról választanak; a választó két szavazatot ad le (egyéni jelöltre és listára).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Elections_in_Hungary",
+     "title": "Elections in Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Politics_of_Hungary",
+     "title": "Politics of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Magyarország választási rendszere arányos képviseletet biztosít, amely lehetővé teszi, hogy a választók szavazatai arányosan tükröződjenek a parlamenti mandátumokban. A választások során a polgárok pártokra szavaznak, amelyek képviselőket állítanak. A választási rendszer célja a politikai pluralizmus elősegítése és a különböző érdekek képviselete. A választási rendszer folyamatosan fejlődik, hogy jobban tükrözze a társadalmi igényeket.",
+     "type": "text",
+     "heading": "A választási rendszer Magyarországon",
+     "key_term": "választási rendszer"
+    },
+    "after": {
+     "body": "Magyarország választási rendszere vegyes: az Országgyűlés 199 képviselője közül 106-ot egyéni választókerületekben, 93-at pártlistáról választanak. A választó két szavazatot ad le: egyet az egyéni jelöltre, egyet a pártlistára. A választási rendszer célja a politikai pluralizmus elősegítése és a különböző érdekek képviselete. A választási rendszer folyamatosan fejlődik, hogy jobban tükrözze a társadalmi igényeket.",
+     "type": "text",
+     "heading": "A választási rendszer Magyarországon",
+     "key_term": "választási rendszer"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-005",
+   "lesson_id": "1f343714-2643-4936-8436-734f171cd0ee",
+   "block_id": "8228c7b5-d2a3-4dfe-a054-c4f45234a043",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A miniszterelnöklista hiányos (Boross Péter, Medgyessy Péter kimaradt); „az ő vezetésük alatt valósultak meg a legfontosabb reformok” üres állítás",
+   "explanation": "A rendszerváltoztatás óta a miniszterelnökök: Antall József (1990–93), Boross Péter (1993–94), Horn Gyula (1994–98), Orbán Viktor (1998–2002), Medgyessy Péter (2002–04), Gyurcsány Ferenc (2004–09), Bajnai Gordon (2009–10), Orbán Viktor (2010–). Az „Orbán Viktor (2010-től napjainkig)” időfüggő állítás, a 2026-os országgyűlési választás után frissítendő.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Hungary",
+     "title": "List of prime ministers of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A rendszerváltoztatás óta Magyarország miniszterelnökei közé tartozik Antall József (1990-1993), Horn Gyula (1994-1998), Orbán Viktor (1998-2002), Gyurcsány Ferenc (2004-2009), Bajnai Gordon (2009-2010) és újra Orbán Viktor (2010-től napjainkig). E miniszterelnökök politikai döntéseik és intézkedéseik révén jelentős hatással voltak az ország politikai és gazdasági irányvonalára. Az ő vezetésük alatt valósultak meg a legfontosabb politikai reformok és változások, amelyek alakították Magyarország mai arculatát.",
+     "type": "text",
+     "heading": "Magyarország miniszterelnökei a rendszerváltoztatás óta",
+     "key_term": "miniszterelnökök"
+    },
+    "after": {
+     "body": "A rendszerváltoztatás óta Magyarország miniszterelnökei közé tartozik Antall József (1990–1993), Boross Péter (1993–1994), Horn Gyula (1994–1998), Orbán Viktor (1998–2002), Medgyessy Péter (2002–2004), Gyurcsány Ferenc (2004–2009), Bajnai Gordon (2009-2010) és újra Orbán Viktor (2010-től napjainkig). E miniszterelnökök politikai döntéseik és intézkedéseik révén jelentős hatással voltak az ország politikai és gazdasági irányvonalára. Az Antall-kormány a rendszerváltoztatás intézményeit építette ki, a Horn-kormány (MSZP–SZDSZ) 1995-ben gazdasági megszorító csomagot (Bokros-csomag) hozott.",
+     "type": "text",
+     "heading": "Magyarország miniszterelnökei a rendszerváltoztatás óta",
+     "key_term": "miniszterelnökök"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-006",
+   "lesson_id": "1f343714-2643-4936-8436-734f171cd0ee",
+   "block_id": "8228c7b5-d2a3-4dfe-a054-c4f45234a043",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„néhányan legalább négy évig vezették az országot”; Medgyessy és Gyurcsány „mindketten a Magyar Szocialista Párt színeiben”; a lista hiányos; a kártya a [5] duplikátuma",
+   "explanation": "Antall József kb. három és fél évig (1990–93), Medgyessy Péter két évig (2002–04) volt miniszterelnök, tehát a „legalább négy év” téves. Medgyessyt az MSZP jelölte, de nem volt a párt tagja. A kártya a [5] és [7] kártyák ismétlése: törlendő vagy összevonandó.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Péter_Medgyessy",
+     "title": "Péter Medgyessy",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Hungary",
+     "title": "List of prime ministers of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A rendszerváltoztatás óta Magyarországon több miniszterelnök is hivatalban volt, akik közül néhányan legalább négy évig vezették az országot. Antall József, az első szabadon választott miniszterelnök, 1990 és 1993 között irányította az országot, és az MDF vezetőjeként fontos szerepet játszott a demokratikus intézményrendszer kiépítésében. Orbán Viktor, a Fidesz elnöke, 1998 és 2002, majd 2010-től folyamatosan tölti be a miniszterelnöki tisztséget, és kormányzása alatt jelentős politikai és gazdasági változások történtek. Medgyessy Péter 2002 és 2004 között, míg Gyurcsány Ferenc 2004 és 2009 között vezette a kormányt, mindketten a Magyar Szocialista Párt színeiben. Ezen miniszterelnökök tevékenysége meghatározó volt a magyar demokrácia fejlődése szempontjából.",
+     "type": "text",
+     "heading": "Magyarország miniszterelnökei a rendszerváltoztatás óta",
+     "key_term": "Magyarország miniszterelnökei a rendszerváltoztatás óta"
+    },
+    "after": {
+     "body": "A rendszerváltoztatás óta Magyarországon több miniszterelnök is hivatalban volt, akik közül többen hosszabb ideig vezették az országot. Antall József, az első szabadon választott miniszterelnök, 1990 és 1993 között irányította az országot, és az MDF vezetőjeként fontos szerepet játszott a demokratikus intézményrendszer kiépítésében. Orbán Viktor, a Fidesz elnöke, 1998 és 2002, majd 2010-től folyamatosan tölti be a miniszterelnöki tisztséget, és kormányzása alatt jelentős politikai és gazdasági változások történtek. Medgyessy Péter 2002 és 2004 között, míg Gyurcsány Ferenc 2004 és 2009 között vezette a kormányt, az MSZP–SZDSZ-koalíció élén (Medgyessyt az MSZP jelölte, Gyurcsány az MSZP tagja volt). Ezen miniszterelnökök tevékenysége meghatározó volt a magyar demokrácia fejlődése szempontjából.",
+     "type": "text",
+     "heading": "Magyarország miniszterelnökei a rendszerváltoztatás óta",
+     "key_term": "Magyarország miniszterelnökei a rendszerváltoztatás óta"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-007",
+   "lesson_id": "1f343714-2643-4936-8436-734f171cd0ee",
+   "block_id": "8228c7b5-d2a3-4dfe-a054-c4f45234a043",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„több miniszterelnök is legalább négy évig töltötte be a kormányfői tisztséget”; „mindketten a Magyar Szocialista Párt színeiben”; a [5]–[6] duplikátuma",
+   "explanation": "Antall József kb. három és fél, Medgyessy Péter két évig volt miniszterelnök. Medgyessyt az MSZP jelölte, de nem volt tag. Ismétlő kártya: törlendő.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Péter_Medgyessy",
+     "title": "Péter Medgyessy",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Hungary",
+     "title": "List of prime ministers of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A rendszerváltoztatás óta Magyarországon több miniszterelnök is legalább négy évig töltötte be a kormányfői tisztséget. Antall József 1990 és 1993 között, a rendszerváltás utáni első szabadon választott kormány élén állt. Orbán Viktor először 1998 és 2002 között, majd 2010-től folyamatosan vezeti az országot, jelentős hatással a magyar politikai életre. Medgyessy Péter 2002 és 2004 között, Gyurcsány Ferenc pedig 2004 és 2009 között volt miniszterelnök, mindketten a Magyar Szocialista Párt színeiben. Ezen kormányfők tevékenységei és politikai döntései alapvetően befolyásolták Magyarország demokratikus fejlődését.",
+     "type": "text",
+     "heading": "Magyarország miniszterelnökei a rendszerváltoztatás óta",
+     "key_term": "Magyarország miniszterelnökei"
+    },
+    "after": {
+     "body": "A rendszerváltoztatás óta Magyarországon több miniszterelnök hosszabb ideig töltötte be a kormányfői tisztséget. Antall József 1990 és 1993 között, a rendszerváltás utáni első szabadon választott kormány élén állt. Orbán Viktor először 1998 és 2002 között, majd 2010-től folyamatosan vezeti az országot, jelentős hatással a magyar politikai életre. Medgyessy Péter 2002 és 2004 között, Gyurcsány Ferenc pedig 2004 és 2009 között volt miniszterelnök, az MSZP–SZDSZ-koalíció élén (Medgyessyt az MSZP jelölte, Gyurcsány az MSZP tagja volt). Ezen kormányfők tevékenységei és politikai döntései alapvetően befolyásolták Magyarország demokratikus fejlődését.",
+     "type": "text",
+     "heading": "Magyarország miniszterelnökei a rendszerváltoztatás óta",
+     "key_term": "Magyarország miniszterelnökei"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-008",
+   "lesson_id": "67907717-bc7d-434a-9f24-203242481b9a",
+   "block_id": "f9cc71ad-d818-4d6a-914a-fa4bbe72b05e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A 1980-as évek végén”; „1989-ben … a pártállam megszűnt, és megtartották az első szabad választásokat”",
+   "explanation": "Névelőhiba (Az 1980-as). Az első szabad országgyűlési választás 1990 tavaszán (március–április) volt, nem 1989-ben; 1989-ben a nemzeti kerekasztal-tárgyalások zajlottak, és október 23-án kikiáltották a Magyar Köztársaságot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Third_Hungarian_Republic",
+     "title": "Third Hungarian Republic",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1990_Hungarian_parliamentary_election",
+     "title": "1990 Hungarian parliamentary election",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A 1980-as évek végén Magyarországon politikai és gazdasági reformok indultak, amelyek a szocialista rendszer megváltoztatásához vezettek. 1989-ben a politikai változások kulmináltak, amikor a pártállam megszűnt, és megtartották az első szabad választásokat. E korszak jelentősége abban rejlik, hogy Magyarország elindult a demokrácia és a piacgazdaság irányába, amely alapvetően meghatározta a következő évtizedek politikai táját. A rendszerváltoztatás folyamata nemcsak Magyarország, hanem a közép-európai régió számára is példaértékű volt.",
+     "type": "text",
+     "heading": "A rendszerváltoztatás előzményei",
+     "key_term": "rendszerváltoztatás"
+    },
+    "after": {
+     "body": "Az 1980-as évek végén Magyarországon politikai és gazdasági reformok indultak, amelyek a szocialista rendszer megváltoztatásához vezettek. 1989-ben a politikai változások kulmináltak: a nemzeti kerekasztal-tárgyalások után október 23-án kikiáltották a Magyar Köztársaságot, az első szabad országgyűlési választást pedig 1990 tavaszán tartották. E korszak jelentősége abban rejlik, hogy Magyarország elindult a demokrácia és a piacgazdaság irányába, amely alapvetően meghatározta a következő évtizedek politikai táját. A rendszerváltoztatás folyamata nemcsak Magyarország, hanem a közép-európai régió számára is példaértékű volt.",
+     "type": "text",
+     "heading": "A rendszerváltoztatás előzményei",
+     "key_term": "rendszerváltoztatás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-009",
+   "lesson_id": "67907717-bc7d-434a-9f24-203242481b9a",
+   "block_id": "f9cc71ad-d818-4d6a-914a-fa4bbe72b05e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A Visegrádi Négyek (V4) együttműködése 1991-ben indult, Magyarország, Csehország, Szlovákia és Lengyelország részvételével”",
+   "explanation": "1991-ben Csehszlovákia, Lengyelország és Magyarország kezdte az együttműködést (visegrádi hármak); a négytagú V4 Csehszlovákia 1993-as felbomlása után jött létre.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Visegrád_Group",
+     "title": "Visegrád Group",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Visegrádi Négyek (V4) együttműködése 1991-ben indult, Magyarország, Csehország, Szlovákia és Lengyelország részvételével. A célja a politikai, gazdasági és kulturális együttműködés erősítése volt a közép-európai régióban. A V4 keretein belül a tagállamok közösen lépnek fel fontos kérdésekben, például a migrációval és a biztonsággal kapcsolatos kihívásokra reagálva. Az együttműködés nemcsak a regionális stabilitás szempontjából jelentős, hanem hozzájárul a tagállamok európai uniós integrációjához is.",
+     "type": "text",
+     "heading": "Közép-európai együttműködés",
+     "key_term": "Visegrádi Négyek"
+    },
+    "after": {
+     "body": "A visegrádi együttműködés 1991-ben indult Magyarország, Csehszlovákia és Lengyelország részvételével; Csehszlovákia 1993-as felbomlása után lett belőle négytagú (V4). A célja a politikai, gazdasági és kulturális együttműködés erősítése volt a közép-európai régióban. A V4 keretein belül a tagállamok közösen lépnek fel fontos kérdésekben, például a migrációval és a biztonsággal kapcsolatos kihívásokra reagálva. Az együttműködés nemcsak a regionális stabilitás szempontjából jelentős, hanem hozzájárul a tagállamok európai uniós integrációjához is.",
+     "type": "text",
+     "heading": "Közép-európai együttműködés",
+     "key_term": "Visegrádi Négyek"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-010",
+   "lesson_id": "67907717-bc7d-434a-9f24-203242481b9a",
+   "block_id": "f9cc71ad-d818-4d6a-914a-fa4bbe72b05e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„számos jogszabályt módosítottak, amelyek jelentősen befolyásolták a média, a bíróságok és az oktatás működését”",
+   "explanation": "Homályos és tényként ítélkező megfogalmazás. Konkrétum: 2011-ben új Alaptörvény, átalakított médiaszabályozás és bírósági igazgatás; ezek megítélése politikai vita tárgya.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fundamental_Law_of_Hungary",
+     "title": "Fundamental Law of Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_Orbán_Government",
+     "title": "Second Orbán Government",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A 21. század elején Magyarország belpolitikai életét a politikai pártok közötti feszültségek jellemezték, különösen a Fidesz és az MSZP között. A 2010-es választások után a Fidesz kétharmados többséget szerzett, ami lehetővé tette a politikai rendszer átalakítását. Ekkor számos jogszabályt módosítottak, amelyek jelentősen befolyásolták a média, a bíróságok és az oktatás működését. A belpolitikai változások nemcsak a demokratikus intézményekre gyakoroltak hatást, hanem a társadalmi feszültségeket is fokozhatták.",
+     "type": "text",
+     "heading": "A magyar belpolitika alakulása",
+     "key_term": "belpolitika"
+    },
+    "after": {
+     "body": "A 21. század elején Magyarország belpolitikai életét a politikai pártok közötti feszültségek jellemezték, különösen a Fidesz és az MSZP között. A 2010-es választások után a Fidesz kétharmados többséget szerzett, ami lehetővé tette a politikai rendszer átalakítását. Ekkor elfogadták az új Alaptörvényt (2011), átalakították a médiaszabályozást, a bírósági igazgatást és az oktatást; ezek megítélése ma is politikai vita tárgya. A belpolitikai változások nemcsak a demokratikus intézményekre gyakoroltak hatást, hanem a társadalmi feszültségeket is fokozhatták.",
+     "type": "text",
+     "heading": "A magyar belpolitika alakulása",
+     "key_term": "belpolitika"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-011",
+   "lesson_id": "67907717-bc7d-434a-9f24-203242481b9a",
+   "block_id": "f9cc71ad-d818-4d6a-914a-fa4bbe72b05e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a keleti nyitásra, amely a kelet-ázsiai országokkal való kapcsolatok fejlesztését célozta”",
+   "explanation": "A 2010-től hirdetett keleti nyitás Oroszország, Kína, Törökország, a Kaukázus és Közép-Ázsia felé irányult, nem csak Kelet-Ázsiába.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungary–China_relations",
+     "title": "Hungary–China relations",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A 21. századi magyar külpolitika célja a nemzeti érdekek képviselete és a nemzetközi kapcsolatok erősítése. A kormány a gazdasági diplomáciát helyezte előtérbe, különös figyelmet fordítva a keleti nyitásra, amely a kelet-ázsiai országokkal való kapcsolatok fejlesztését célozta. A külpolitikai irányultság jelentős hatással volt Magyarország nemzetközi megítélésére és gazdasági lehetőségeire. A külpolitikai stratégiák a regionális együttműködések mellett a globális kihívásokra is reagálnak, mint például a klímaváltozás és a migráció.",
+     "type": "text",
+     "heading": "A magyar külpolitika irányai",
+     "key_term": "külpolitika"
+    },
+    "after": {
+     "body": "A 21. századi magyar külpolitika célja a nemzeti érdekek képviselete és a nemzetközi kapcsolatok erősítése. A kormány a gazdasági diplomáciát helyezte előtérbe, különös figyelmet fordítva a 2010-ben meghirdetett keleti nyitásra, amely Oroszország, Kína, Törökország és a közép-ázsiai országok felé építette a kapcsolatokat. A külpolitikai irányultság jelentős hatással volt Magyarország nemzetközi megítélésére és gazdasági lehetőségeire. A külpolitikai stratégiák a regionális együttműködések mellett a globális kihívásokra is reagálnak, mint például a klímaváltozás és a migráció.",
+     "type": "text",
+     "heading": "A magyar külpolitika irányai",
+     "key_term": "külpolitika"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-012",
+   "lesson_id": "86c61396-4008-48b5-ac4c-7e66fd21f774",
+   "block_id": "34b055a1-23a0-4d5a-8797-4dc30da942e7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az európai integráció folyamata 1957-ben kezdődött”",
+   "explanation": "Az integráció 1951-ben indult az Európai Szén- és Acélközösséggel (ESZAK, Párizsi Szerződés); 1957-ben a római szerződések hozták létre az EGK-t.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/European_Coal_and_Steel_Community",
+     "title": "European Coal and Steel Community",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Rome",
+     "title": "Treaty of Rome",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az európai integráció folyamata 1957-ben kezdődött, amikor aláírták a római szerződést. Ezzel létrejött az Európai Gazdasági Közösség, amely a tagállamok gazdasági együttműködését célozta. Az integráció célja a háborúk megelőzése és a gazdasági fejlődés elősegítése volt. Ez a folyamat később jelentős hatással volt Magyarországra is, mivel az ország a rendszerváltás után csatlakozni kívánt az európai közösséghez.",
+     "type": "text",
+     "heading": "Az európai integráció kezdetei",
+     "key_term": "integráció, római szerződés"
+    },
+    "after": {
+     "body": "Az európai integráció folyamata 1951-ben kezdődött az Európai Szén- és Acélközösséggel (ESZAK); 1957-ben aláírták a római szerződést, amellyel létrejött az Európai Gazdasági Közösség (EGK), amely a tagállamok gazdasági együttműködését célozta. Az integráció célja a háborúk megelőzése és a gazdasági fejlődés elősegítése volt. Ez a folyamat később jelentős hatással volt Magyarországra is, mivel az ország a rendszerváltás után csatlakozni kívánt az európai közösséghez.",
+     "type": "text",
+     "heading": "Az európai integráció kezdetei",
+     "key_term": "integráció, római szerződés"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-013",
+   "lesson_id": "86c61396-4008-48b5-ac4c-7e66fd21f774",
+   "block_id": "34b055a1-23a0-4d5a-8797-4dc30da942e7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A Maastrichti Szerződés 1992-ben jött létre”; „Magyarország célja az volt, hogy … a közös valutát is bevezesse”",
+   "explanation": "A szerződést 1992-ben írták alá, 1993. november 1-jén lépett hatályba. Magyarország vállalta az euró bevezetését, de időpontot nem tűzött ki, a fizetőeszköz ma is a forint.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Maastricht_Treaty",
+     "title": "Maastricht Treaty",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Euro_convergence_criteria",
+     "title": "Euro convergence criteria",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Maastrichti Szerződés 1992-ben jött létre, és alapvetően átalakította az Európai Közösséget, létrehozva az Európai Uniót. A szerződés célja a politikai és gazdasági integráció mélyítése volt, amely magában foglalta az euró bevezetését is. Az euró, mint közös valuta, a gazdasági stabilitás és a kereskedelem egyszerűsítése érdekében jött létre. Magyarország célja az volt, hogy a csatlakozás után a közös valutát is bevezesse.",
+     "type": "text",
+     "heading": "A Maastrichti Szerződés és az euró bevezetése",
+     "key_term": "euró, Maastrichti Szerződés"
+    },
+    "after": {
+     "body": "A Maastrichti Szerződést 1992-ben írták alá, 1993. november 1-jén lépett hatályba, és létrehozta az Európai Uniót. A szerződés célja a politikai és gazdasági integráció mélyítése volt, amely magában foglalta az euró bevezetését is. Az euró, mint közös valuta, a gazdasági stabilitás és a kereskedelem egyszerűsítése érdekében jött létre. Magyarország vállalta az euró bevezetését, de az időpontot nem tűzte ki, a fizetőeszköz ma is a forint.",
+     "type": "text",
+     "heading": "A Maastrichti Szerződés és az euró bevezetése",
+     "key_term": "euró, Maastrichti Szerződés"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-014",
+   "lesson_id": "86c61396-4008-48b5-ac4c-7e66fd21f774",
+   "block_id": "34b055a1-23a0-4d5a-8797-4dc30da942e7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„mivel közös határellenőrzést … igényel”; „Magyarország 2007-ben csatlakozott”",
+   "explanation": "A schengeni rendszerben a belső határellenőrzés szűnt meg, a külső határokat közösen védik. Magyarország 2007. december 21-én csatlakozott (a légi határokon 2008. március 30-tól).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Schengen_Area",
+     "title": "Schengen Area",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A schengeni egyezmény célja a határok nélküli utazás megvalósítása a tagállamok között. Magyarország 2007-ben csatlakozott a schengeni övezethez, ami lehetővé tette a szabad mozgást a magyar és a többi uniós polgár számára. Ez a lépés hozzájárult a turizmus növekedéséhez és a gazdasági kapcsolatok erősödéséhez. A schengeni rendszer a biztonságot is hangsúlyozza, mivel közös határellenőrzést és együttműködést igényel a tagállamoktól.",
+     "type": "text",
+     "heading": "A schengeni egyezmény jelentősége",
+     "key_term": "schengeni egyezmény"
+    },
+    "after": {
+     "body": "A schengeni egyezmény célja a határok nélküli utazás megvalósítása a tagállamok között. Magyarország 2007. december 21-én csatlakozott a schengeni övezethez (a légi határokon 2008. március 30-tól), ami lehetővé tette a szabad mozgást a magyar és a többi uniós polgár számára. Ez a lépés hozzájárult a turizmus növekedéséhez és a gazdasági kapcsolatok erősödéséhez. A schengeni rendszer a biztonságot is hangsúlyozza, mivel a belső határellenőrzés megszűnése miatt a külső határok közös védelmét és a rendőrségi együttműködést igényli.",
+     "type": "text",
+     "heading": "A schengeni egyezmény jelentősége",
+     "key_term": "schengeni egyezmény"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-015",
+   "lesson_id": "86c61396-4008-48b5-ac4c-7e66fd21f774",
+   "block_id": "34b055a1-23a0-4d5a-8797-4dc30da942e7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„például a migrációs válság és a politikai feszültségek a tagállamok között”",
+   "explanation": "Homályos. Konkrétumok: a 2015-ös migrációs válság, a Brexit (2020) és a jogállamisági viták (az Európai Parlament 2018-ban hetes cikk szerinti eljárást indított Magyarország ellen).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Article_7_of_the_Treaty_on_European_Union",
+     "title": "Article 7 of the Treaty on European Union",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Brexit",
+     "title": "Brexit",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Magyarország EU-tagsága számos előnnyel járt, mint például a gazdasági támogatások és a közös piac előnyei. Ugyanakkor a tagsággal együtt járó kihívások is megjelentek, például a migrációs válság és a politikai feszültségek a tagállamok között. Az EU-n belüli együttműködés folyamatosan fejlődik, és Magyarország számára fontos, hogy aktívan részt vegyen ebben a folyamatban. A jövőbeni kihívásokra való felkészülés érdekében szükséges a politikai és gazdasági stabilitás fenntartása.",
+     "type": "text",
+     "heading": "Az együttműködés eredményei és nehézségei",
+     "key_term": "Együttműködés, nehézségek"
+    },
+    "after": {
+     "body": "Magyarország EU-tagsága számos előnnyel járt, mint például a gazdasági támogatások és a közös piac előnyei. Ugyanakkor a tagsággal együtt járó kihívások is megjelentek, például a 2015-ös migrációs válság, a brit kilépés (2020) és a jogállamisági viták (az Európai Parlament 2018-ban hetes cikk szerinti eljárást indított Magyarország ellen). Az EU-n belüli együttműködés folyamatosan fejlődik, és Magyarország számára fontos, hogy aktívan részt vegyen ebben a folyamatban. A jövőbeni kihívásokra való felkészülés érdekében szükséges a politikai és gazdasági stabilitás fenntartása.",
+     "type": "text",
+     "heading": "Az együttműködés eredményei és nehézségei",
+     "key_term": "Együttműködés, nehézségek"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-016",
+   "lesson_id": "86c61396-4008-48b5-ac4c-7e66fd21f774",
+   "block_id": "34b055a1-23a0-4d5a-8797-4dc30da942e7",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Magyarország számára fontos, hogy a nemzeti érdekek védelme mellett részt vegyen az uniós integráció mélyítésében is”",
+   "explanation": "Vitatott politikai kérdésben egyetlen álláspontot ad tényként. Semlegesen: a magyar kormány 2010 óta a nemzetek Európáját hangsúlyozza, más kormányok mélyebb integrációt támogatnak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Federalism_in_the_European_Union",
+     "title": "Federalism in the European Union",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A kérdés, hogy az Európai Unió jövője nemzetek Európája vagy föderatív Európa lesz, komoly vitákat generál. A nemzetek Európája a tagállamok szuverenitásának megőrzésére helyezi a hangsúlyt, míg a föderatív Európa a közös döntéshozatali mechanizmusok erősítésére törekszik. Magyarország számára fontos, hogy a nemzeti érdekek védelme mellett részt vegyen az uniós integráció mélyítésében is. A jövőbeni döntések befolyásolják a magyar politikai és gazdasági stratégiát.",
+     "type": "text",
+     "heading": "Nemzetek Európája vagy föderatív Európa?",
+     "key_term": "Nemzetek Európája, föderatív Európa"
+    },
+    "after": {
+     "body": "A kérdés, hogy az Európai Unió jövője nemzetek Európája vagy föderatív Európa lesz, komoly vitákat generál. A nemzetek Európája a tagállamok szuverenitásának megőrzésére helyezi a hangsúlyt, míg a föderatív Európa a közös döntéshozatali mechanizmusok erősítésére törekszik. A magyar kormány 2010 óta a nemzetek Európáját hangsúlyozza, más kormányok (például a német) mélyebb integrációt támogatnak; ez politikai vita, nem eldöntött tény. A jövőbeni döntések befolyásolják a magyar politikai és gazdasági stratégiát.",
+     "type": "text",
+     "heading": "Nemzetek Európája vagy föderatív Európa?",
+     "key_term": "Nemzetek Európája, föderatív Európa"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-017",
+   "lesson_id": "67907717-bc7d-434a-9f24-203242481b9a",
+   "block_id": "e024f6ab-c551-4a90-bf1a-fbe86ed349f3",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„elősegítve a politikai és gazdasági reformokat az országban”",
+   "explanation": "Kitalált okozati állítás: a főbb reformok a NATO-tagság előtt megtörténtek. A világblokk ráadásul magyar esemény, nem globális párhuzam.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Enlargement_of_NATO",
+     "title": "Enlargement of NATO",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1999-ben Lengyelország, Csehország és Magyarország csatlakozott a NATO-hoz, ami a szövetség történetének egyik legfontosabb bővítése volt. Ez a lépés a hidegháború utáni európai biztonsági struktúrák átalakulását jelezte, és a volt szovjet befolyású országok integrációját a nyugati politikai és katonai rendszerekbe. A bővítés célja a regionális stabilitás növelése és a demokratikus értékek terjesztése volt a közép-európai térségben.",
+     "type": "world",
+     "year": "1999",
+     "heading": "A NATO bővítése",
+     "link_hu": "A NATO-tagság erősítette Magyarország nemzetközi pozícióját és biztonsági garanciákat nyújtott, elősegítve a politikai és gazdasági reformokat az országban."
+    },
+    "after": {
+     "body": "1999-ben Lengyelország, Csehország és Magyarország csatlakozott a NATO-hoz, ami a szövetség történetének egyik legfontosabb bővítése volt. Ez a lépés a hidegháború utáni európai biztonsági struktúrák átalakulását jelezte, és a volt szovjet befolyású országok integrációját a nyugati politikai és katonai rendszerekbe. A bővítés célja a regionális stabilitás növelése és a demokratikus értékek terjesztése volt a közép-európai térségben.",
+     "type": "world",
+     "year": "1999",
+     "heading": "A NATO bővítése",
+     "link_hu": "Magyarország a három, 1999. március 12-én belépő ország egyike volt (Csehország és Lengyelország mellett)."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-018",
+   "lesson_id": "86c61396-4008-48b5-ac4c-7e66fd21f774",
+   "block_id": "5ae178c1-bb19-4069-801f-b59eb6eb762e",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a Római Birodalom idején … együttműködtek … védelmi szövetségek érdekében”; heading: „Nincs egyértelmű globális párhuzam”",
+   "explanation": "Kényszerített, helytelen párhuzam: a Római Birodalom nem önkéntes integráció volt. Valódi párhuzam a regionális szervezetek (ASEAN 1967, Afrikai Unió 2002).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/ASEAN",
+     "title": "ASEAN",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/African_Union",
+     "title": "African Union",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A lecke fogalmai és jelenségei, mint az integráció és a nemzetközi együttműködés, más kultúrákban és korokban is megjelentek, például a Római Birodalom idején, amikor különböző népek együttműködtek a kereskedelem és a védelmi szövetségek érdekében.",
+     "type": "world",
+     "year": "",
+     "heading": "Nincs egyértelmű globális párhuzam",
+     "link_hu": ""
+    },
+    "after": {
+     "body": "Az EU-hoz hasonló regionális együttműködés máshol is létezik, de kevésbé mély: a délkelet-ázsiai ASEAN-t 1967-ben, az Afrikai Uniót 2002-ben alapították. Közös törvényhozásuk és közös valutájuk azonban nincs.",
+     "type": "world",
+     "year": "",
+     "heading": "Regionális integráció a világban",
+     "link_hu": ""
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-019",
+   "lesson_id": "1f343714-2643-4936-8436-734f171cd0ee",
+   "block_id": "b3c33159-705e-47ff-aa45-2709b39f6764",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Ki volt Magyarország miniszterelnöke 2010-től 2022-ig?”",
+   "explanation": "Az intervallum önkényes és félrevezető (a magyarázat mintha 2022-ben véget érne). Ténykérdésre cserélendő.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/List_of_prime_ministers_of_Hungary",
+     "title": "List of prime ministers of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Gyurcsány Ferenc",
+      "B) Orbán Viktor",
+      "C) Bajnai Gordon",
+      "D) Medgyessy Péter"
+     ],
+     "question": "Ki volt Magyarország miniszterelnöke 2010-től 2022-ig?",
+     "explanation": "Orbán Viktor 2010-től 2022-ig töltötte be a miniszterelnöki posztot, ő a leghosszabb ideig hivatalban lévő kormányfő a rendszerváltoztatás óta.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Gyurcsány Ferenc",
+      "B) Orbán Viktor",
+      "C) Bajnai Gordon",
+      "D) Medgyessy Péter"
+     ],
+     "question": "Ki volt Magyarország miniszterelnöke 2010 és 2014 között?",
+     "explanation": "2010 és 2014 között Orbán Viktor volt a miniszterelnök, aki 2010-ben Bajnai Gordont követte.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-020",
+   "lesson_id": "1f343714-2643-4936-8436-734f171cd0ee",
+   "block_id": "b3c33159-705e-47ff-aa45-2709b39f6764",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az Alaptörvényt 2012. január 1-jén fogadták el”",
+   "explanation": "Az Alaptörvényt 2011 áprilisában fogadták el, 2012. január 1-jén lépett hatályba.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fundamental_Law_of_Hungary",
+     "title": "Fundamental Law of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 2010",
+      "B) 2012",
+      "C) 2014",
+      "D) 2018"
+     ],
+     "question": "Mikor lépett életbe az Alaptörvény Magyarországon?",
+     "explanation": "Az Alaptörvényt 2012. január 1-jén fogadták el, és ez jelentős lépés volt a magyar jogrend megerősítésében.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 2010",
+      "B) 2012",
+      "C) 2014",
+      "D) 2018"
+     ],
+     "question": "Mikor lépett életbe az Alaptörvény Magyarországon?",
+     "explanation": "Az Alaptörvényt 2011 áprilisában fogadták el, 2012. január 1-jén lépett hatályba.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-021",
+   "lesson_id": "1f343714-2643-4936-8436-734f171cd0ee",
+   "block_id": "b3c33159-705e-47ff-aa45-2709b39f6764",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik önkormányzati szint felelős a helyi ügyek kezeléséért?” (kulcs: D, mindhárom)",
+   "explanation": "Rosszul feltett kérdés: a megyei önkormányzat főleg területfejlesztési feladatokat lát el, a helyi ügyek a települési önkormányzatok feladata. A „község/város” nem külön „szint”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Local_government_in_Hungary",
+     "title": "Local government in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Megyei önkormányzat",
+      "B) Községi önkormányzat",
+      "C) Városi önkormányzat",
+      "D) Mindhárom"
+     ],
+     "question": "Melyik önkormányzati szint felelős a helyi ügyek kezeléséért Magyarországon?",
+     "explanation": "Magyarországon a megyei, községi és városi önkormányzatok mind felelősek a helyi ügyek kezeléséért, így a helyi demokrácia megvalósításáért.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A megyei önkormányzat.",
+      "A települési (községi, városi) önkormányzat.",
+      "Az Országgyűlés.",
+      "A Kormány."
+     ],
+     "question": "Melyik önkormányzat felelős elsősorban a helyi (települési) ügyek intézéséért?",
+     "explanation": "A helyi ügyeket elsősorban a települési (községi, városi) önkormányzatok intézik; a megyei önkormányzat főleg területfejlesztéssel foglalkozik.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-022",
+   "lesson_id": "67907717-bc7d-434a-9f24-203242481b9a",
+   "block_id": "1a919b4b-c925-451a-aa1b-7afacd2fb17a",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Hol zajlott a NATO bővítési tárgyalása, amelyen Magyarország részt vett?” (kulcs: Brüsszel)",
+   "explanation": "Rosszul feltett és ellenőrizhetetlen (több tárgyalási forduló és csúcstalálkozó volt: Madrid 1997, Brüsszel). Ellenőrizhető tényre cserélendő: a NATO-csatlakozásról 1997. november 16-án népszavazást tartottak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1997_Hungarian_NATO_referendum",
+     "title": "1997 Hungarian NATO referendum",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Enlargement_of_NATO",
+     "title": "Enlargement of NATO",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Washington",
+      "B) Brüsszel",
+      "C) Budapest",
+      "D) Prága"
+     ],
+     "question": "Hol zajlott a NATO bővítési tárgyalása, amelyen Magyarország részt vett?",
+     "explanation": "A NATO bővítési tárgyalásai Brüsszelben zajlottak, ahol a tagállamok döntöttek a bővítés kérdéseiről.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "1994",
+      "1997",
+      "1999",
+      "2003"
+     ],
+     "question": "Melyik évben tartottak Magyarországon népszavazást a NATO-csatlakozásról?",
+     "explanation": "A NATO-csatlakozásról 1997. november 16-án tartottak népszavazást, a szavazók nagy többsége igennel voksolt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-023",
+   "lesson_id": "67907717-bc7d-434a-9f24-203242481b9a",
+   "block_id": "1a919b4b-c925-451a-aa1b-7afacd2fb17a",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik évben kezdődtek a NATO-tagságra irányuló tárgyalások?” (kulcs: 1994, Partnerség a Békéért)",
+   "explanation": "Ellentmondás: 1994-ben Magyarország a Partnerség a Békéért programhoz csatlakozott, a csatlakozási tárgyalások 1997-ben, a madridi meghívás után indultak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Partnership_for_Peace",
+     "title": "Partnership for Peace",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Enlargement_of_NATO",
+     "title": "Enlargement of NATO",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1994",
+      "B) 1996",
+      "C) 1998",
+      "D) 2000"
+     ],
+     "question": "Melyik évben kezdődtek a NATO-tagságra irányuló tárgyalások Magyarország számára?",
+     "explanation": "A NATO-tagságra irányuló tárgyalások 1994-ben kezdődtek, amikor Magyarország részt vett a Partnerség a Béke Programban.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1994",
+      "B) 1996",
+      "C) 1998",
+      "D) 2000"
+     ],
+     "question": "Melyik évben csatlakozott Magyarország a NATO Partnerség a Békéért programjához?",
+     "explanation": "Magyarország 1994-ben csatlakozott a Partnerség a Békéért programhoz, ami a NATO-tagság felé vezető első lépés volt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-024",
+   "lesson_id": "86c61396-4008-48b5-ac4c-7e66fd21f774",
+   "block_id": "2ef35649-63b4-45ec-bbd3-6818280310cc",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "low",
+   "claim": "„Mi a Maastrichti szerződés fő célja?” (kulcs: az euró bevezetése)",
+   "explanation": "Pontatlan: a szerződés főleg az Európai Uniót hozta létre és megalapozta a gazdasági és monetáris uniót; az eurót csak 1999-ben vezették be.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Maastricht_Treaty",
+     "title": "Maastricht Treaty",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az euró bevezetése",
+      "B) Schengeni egyezmény létrehozása",
+      "C) Európai Parlament megalapítása",
+      "D) Brüsszel főváros kijelölése"
+     ],
+     "question": "Mi a Maastrichti szerződés fő célja, amelyet 1992-ben írtak alá?",
+     "explanation": "A Maastrichti szerződés célja az euró bevezetése és az Európai Unió megerősítése volt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Az Európai Unió létrehozása és a közös valuta előkészítése",
+      "B) Schengeni egyezmény létrehozása",
+      "C) Európai Parlament megalapítása",
+      "D) Brüsszel főváros kijelölése"
+     ],
+     "question": "Mi a Maastrichti szerződés fő célja, amelyet 1992-ben írtak alá?",
+     "explanation": "A Maastrichti szerződés létrehozta az Európai Uniót, és megalapozta a gazdasági és monetáris uniót (az euró 1999-től).",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-025",
+   "lesson_id": null,
+   "block_id": "669582f0-c70a-41b6-aeb1-cfeff2a9de3f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "low",
+   "claim": "„Mi a közvetett demokrácia jellemzője?” (A: Közvetlenül választják meg a képviselőket.)",
+   "explanation": "A közvetett demokráciában a választók valóban közvetlenül választják a képviselőket, ezért az A opció is védhető: két lehetséges helyes válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Representative_democracy",
+     "title": "Representative democracy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Közvetlenül választják meg a képviselőket.",
+      "B) A polgárok közvetve választják meg a képviselőket.",
+      "C) Nincs választás.",
+      "D) A képviselők kinevezettek."
+     ],
+     "question": "Mi a közvetett demokrácia jellemzője?",
+     "explanation": "A közvetett demokráciában a polgárok képviselőket választanak, akik a döntéseket hozzák.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A polgárok közvetlenül döntenek minden kérdésben.",
+      "B) A polgárok közvetve választják meg a képviselőket.",
+      "C) Nincs választás.",
+      "D) A képviselők kinevezettek."
+     ],
+     "question": "Mi a közvetett demokrácia jellemzője?",
+     "explanation": "A közvetett demokráciában a polgárok képviselőket választanak, akik a döntéseket hozzák.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-026",
+   "lesson_id": null,
+   "block_id": "669582f0-c70a-41b6-aeb1-cfeff2a9de3f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi az Európai Parlament feladata?” (kulcs: A, jogszabályok kidolgozása)",
+   "explanation": "Téves: a jogszabálytervezetet az Európai Bizottság dolgozza ki; a Parlament a Tanáccsal közösen fogadja el a jogszabályokat, és ellenőrzi a Bizottságot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/European_Parliament",
+     "title": "European Parliament",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Jogszabályok kidolgozása.",
+      "B) Politikai döntések végrehajtása.",
+      "C) A tagállamok védelme.",
+      "D) Gazdasági tervek készítése."
+     ],
+     "question": "Mi az Európai Parlament feladata?",
+     "explanation": "Az Európai Parlament feladata jogszabályok kidolgozása és a demokratikus ellenőrzés biztosítása.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Jogszabályok elfogadása a Tanáccsal közösen, a Bizottság ellenőrzése.",
+      "B) Politikai döntések végrehajtása.",
+      "C) A tagállamok védelme.",
+      "D) Gazdasági tervek készítése."
+     ],
+     "question": "Mi az Európai Parlament feladata?",
+     "explanation": "Az Európai Parlament a Tanáccsal közösen fogadja el az uniós jogszabályokat, és ellenőrzi az Európai Bizottságot.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-15-027",
+   "lesson_id": null,
+   "block_id": "669582f0-c70a-41b6-aeb1-cfeff2a9de3f",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "low",
+   "claim": "„Hol található az Európai Unió székhelye?” (kulcs: Brüsszel)",
+   "explanation": "Az EU-nak nincs egyetlen székhelye: Brüsszel (Bizottság, Tanács), Strasbourg és Luxembourg is intézményközpont.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Institutions_of_the_European_Union",
+     "title": "Institutions of the European Union",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Párizs",
+      "B) Berlin",
+      "C) Brüsszel",
+      "D) Róma"
+     ],
+     "question": "Hol található az Európai Unió székhelye?",
+     "explanation": "Brüsszel az Európai Unió székhelye, ahol az uniós intézmények többsége található.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Párizs",
+      "B) Berlin",
+      "C) Brüsszel",
+      "D) Róma"
+     ],
+     "question": "Melyik város az Európai Bizottság székhelye?",
+     "explanation": "Az Európai Bizottság székhelye Brüsszel; az EU-nak nincs egyetlen székhelye (a Parlament ülésezik Strasbourgban is).",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-1112-15-001": "a95807b6-3881-4b64-9404-51def95110e8",
+  "HIST-1112-15-002": "4796550c-1c12-4953-bc2f-e960088af6b1",
+  "HIST-1112-15-003": "c0ccf8d2-ba3c-49a7-99a0-c66996b82b30",
+  "HIST-1112-15-004": "e9061d5a-2194-4763-9a42-1d3334cb14e6",
+  "HIST-1112-15-005": "3b5d7954-ef34-40a6-8e7f-80a04a853f44",
+  "HIST-1112-15-008": "9cb8b041-2d94-4f69-a2fd-9bf4be3ce028",
+  "HIST-1112-15-009": "643aaaf5-129a-42d1-8036-64ff6da624c7",
+  "HIST-1112-15-010": "6095ada6-5f75-4090-867e-6084e8d909c4",
+  "HIST-1112-15-011": "79b17fd1-57b7-4413-807a-21ba37b734bb",
+  "HIST-1112-15-012": "cceb5907-0987-4471-9673-56fcd795ced6",
+  "HIST-1112-15-013": "ede6a5a1-a688-474d-9d06-b38cfa51a57b",
+  "HIST-1112-15-014": "4c83f276-fb00-4d04-943a-86e83132cf12",
+  "HIST-1112-15-015": "1eefa003-01d9-4fa2-889a-21dab79b582a",
+  "HIST-1112-15-017": "8f873120-497f-45af-9886-b448f8777e1f",
+  "HIST-1112-15-019": "a36eed1c-9400-4a18-955c-7a13b4cb8e1e",
+  "HIST-1112-15-020": "8aff3509-c6ff-4541-86c2-65ad19c93289",
+  "HIST-1112-15-021": "79312477-a6d7-4827-a815-ae6a000a6e40",
+  "HIST-1112-15-022": "3616d240-040a-43f3-8e6a-9abf73cc90be",
+  "HIST-1112-15-023": "d513eaa8-384e-4368-9809-53e9577ac654",
+  "HIST-1112-15-024": "ed0e94d4-1cc9-4f9d-b304-57054be58f57",
+  "HIST-1112-15-025": "4c261c2c-0c41-46aa-afaf-ca0860f65e19",
+  "HIST-1112-15-026": "ad601888-4006-4b0d-bd80-334fa7daaa73",
+  "HIST-1112-15-027": "3b8c2b92-f68d-46cb-ad46-6adcfdedd997"
+ }
+}

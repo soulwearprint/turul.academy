@@ -1,0 +1,876 @@
+{
+ "nat_id": "HIST-56-05",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 43,
+  "cards": 200,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-56-05-001",
+   "lesson_id": "010eef90-485a-483d-bf95-06a8900ef7cf",
+   "block_id": "b8603cc3-f71c-48da-9d59-564893c87054",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Hunor és Magor, a hunok fiai, az ősi magyar nép ősatyái”; a kapcsolat „hangsúlyozza a nemzeti összetartozást”.",
+   "explanation": "A monda szerint Hunor és Magor Ménrót fiai, a hunok és a magyarok ősatyjai (nem a hunok fiai). A kártya a mondát tényként kezeli; a történettudomány a hun–magyar rokonságot nem igazolja.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Hun%E2%80%93magyar_rokons%C3%A1g",
+     "title": "A hun–magyar rokonság elmélete",
+     "accessed": "2026-09-29"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hunor_and_Magor",
+     "title": "Hunor and Magor",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A magyarok eredetét a krónikákban a hunokhoz vezetik vissza, akik a Kárpát-medencében éltek. A hagyomány szerint Hunor és Magor, a hunok fiai, az ősi magyar nép ősatyái. Eredettörténetük fontos, mert megerősíti a magyar nép identitását és összekapcsolja a hunok örökségével. A hunok és a magyarok közötti kapcsolat hangsúlyozza a nemzeti összetartozást.",
+     "type": "text",
+     "heading": "A hun-magyar eredettörténet",
+     "key_term": "hunok"
+    },
+    "after": {
+     "body": "A magyarok eredetét a krónikákban a hunokhoz vezetik vissza, akik a Kárpát-medencében éltek. A csodaszarvas mondája szerint Ménrót fiai, Hunor és Magor lettek a hunok és a magyarok ősatyjai. Eredettörténetük fontos, mert megerősíti a magyar nép identitását és összekapcsolja a hunok örökségével. Ez a hun–magyar rokonság a középkori krónikák hagyománya; a mai történettudomány nem igazolja, de a monda a magyar kultúra fontos része.",
+     "type": "text",
+     "heading": "A hun-magyar eredettörténet",
+     "key_term": "hunok"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-002",
+   "lesson_id": "010eef90-485a-483d-bf95-06a8900ef7cf",
+   "block_id": "b8603cc3-f71c-48da-9d59-564893c87054",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Etelköz a magyarok ősi hazája”",
+   "explanation": "Etelköz a magyarok utolsó szállásterülete volt a honfoglalás előtt; az őshaza (az uráli népek közös hazája) az Urál vidékén volt.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Etelk%C3%B6z",
+     "title": "Etelköz",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Etelköz a magyarok ősi hazája, ahol a magyar törzsek egyesültek és megszilárdították identitásukat. Ez a terület a Dnyeper és a Dnyeszter folyók közötti területen helyezkedett el, és fontos szerepet játszott a magyarok vándorlásában. Etelköz a vérszerződés színhelye is volt, ahol a törzsek vezetői összegyűltek, hogy megerősítsék szövetségüket. A terület tehát nemcsak földrajzi, hanem kulturális és politikai jelentőséggel is bír.",
+     "type": "text",
+     "heading": "Etelköz, a magyarok otthona",
+     "key_term": "Etelköz"
+    },
+    "after": {
+     "body": "Etelköz a magyarok utolsó szállásterülete volt a honfoglalás előtt, ahol a magyar törzsek egyesültek és megszilárdították identitásukat. Ez a terület a Dnyeper és a Dnyeszter folyók közötti területen helyezkedett el, és fontos szerepet játszott a magyarok vándorlásában. Etelköz a vérszerződés színhelye is volt, ahol a törzsek vezetői összegyűltek, hogy megerősítsék szövetségüket. A terület tehát nemcsak földrajzi, hanem kulturális és politikai jelentőséggel is bír.",
+     "type": "text",
+     "heading": "Etelköz, a magyarok otthona",
+     "key_term": "Etelköz"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-003",
+   "lesson_id": "010eef90-485a-483d-bf95-06a8900ef7cf",
+   "block_id": "54966e52-85d5-4791-8f24-97821bc8e2bb",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options[2], explanation",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Megjelölt válasz: Etelköz „a magyarok ősi hazája”.",
+   "explanation": "Mint fent: Etelköz nem az őshaza, hanem a honfoglalás előtti utolsó szállásterület (a Dnyeper és az Al-Duna között).",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Etelk%C3%B6z",
+     "title": "Etelköz",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A Duna mentén, a kereskedelem központja volt",
+      "B) A Kárpátokban, a menekülés helyszíne",
+      "C) A Dnyeper folyó mellett, a magyarok ősi hazája",
+      "D) A Tisza mentén, a tatárok támadásainak helyszíne"
+     ],
+     "question": "Hol található Etelköz, és miért fontos a magyarok történetében?",
+     "explanation": "Etelköz a Dnyeper folyó mellett található, és a magyarok ősi hazájaként szerepel a krónikákban.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A Duna mentén, a kereskedelem központja volt",
+      "B) A Kárpátokban, a menekülés helyszíne",
+      "C) A Dnyeper és az Al-Duna között, a honfoglalás előtti utolsó szállásterület",
+      "D) A Tisza mentén, a tatárok támadásainak helyszíne"
+     ],
+     "question": "Hol található Etelköz, és miért fontos a magyarok történetében?",
+     "explanation": "Etelköz a Dnyeper és az Al-Duna közötti terület volt; innen indultak a magyarok 895 körül a Kárpát-medencébe.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-004",
+   "lesson_id": "010eef90-485a-483d-bf95-06a8900ef7cf",
+   "block_id": "b8603cc3-f71c-48da-9d59-564893c87054",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A finnugor elmélet szerint a magyarok ősei a Volga-vidékéről származnak, és a magyar nyelv a finnugor népek közé tartozik.”",
+   "explanation": "Az uráli (finnugor) nyelvek őshazáját az Urál hegység két oldalára teszik; a Volga–Káma vidéke egy későbbi állomás volt. A mondat második fele nyelvtanilag is hibás (nyelv ≠ nép).",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Magyar_%C5%91st%C3%B6rt%C3%A9net",
+     "title": "Magyar őstörténet",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A magyar nyelv finnugor nyelvcsaládba tartozik, amely a magyarok származásának egyik kulcseleme. A finnugor elmélet szerint a magyarok ősei a Volga-vidékéről származnak, és a magyar nyelv a finnugor népek közé tartozik. Ez a nyelvi kapcsolat segít megérteni a magyarok múltját és a különböző népek közötti kapcsolatokat. A finnugor elmélet a magyar identitás szempontjából is jelentős, mivel összekapcsolja a magyarságot más európai népekkel.",
+     "type": "text",
+     "heading": "A finnugor nyelvrokonság",
+     "key_term": "finnugor"
+    },
+    "after": {
+     "body": "A magyar nyelv finnugor nyelvcsaládba tartozik, amely a magyarok származásának egyik kulcseleme. A nyelvészek szerint a finnugor nyelvek közös őse az Urál hegység környékén élt népek nyelve volt; a magyar legközelebbi rokonai a vogul (manysi) és az osztják (hanti) nyelv. Ez a nyelvi kapcsolat segít megérteni a magyarok múltját és a különböző népek közötti kapcsolatokat. A finnugor elmélet a magyar identitás szempontjából is jelentős, mivel összekapcsolja a magyarságot más európai népekkel.",
+     "type": "text",
+     "heading": "A finnugor nyelvrokonság",
+     "key_term": "finnugor"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-005",
+   "lesson_id": "41aced45-59a5-43c7-b6ea-ab4b6f49ffaf",
+   "block_id": "314b1a7d-2738-47d1-9b59-4eec67261c45",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A 1000-es évek elején István legyőzte Koppányt”",
+   "explanation": "Koppány lázadását István 997-ben vagy 998-ban verte le, még a koronázás előtt.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/I._Istv%C3%A1n_magyar_kir%C3%A1ly",
+     "title": "I. István magyar király",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "István uralkodása kezdetén Koppány lázadása fenyegette a hatalmát, aki a régi pogány hagyományokat kívánta megőrizni. A 1000-es évek elején István legyőzte Koppányt, ezzel megszilárdítva hatalmát és a kereszténység melletti elkötelezettségét. 1000. december 25-én István koronát kapott, amelyet a pápai támogatás biztosított, így hivatalosan is Magyarország első királyává koronázták. Ez a koronázás a magyar államiság szimbolikus eseménye lett.",
+     "type": "text",
+     "heading": "István harca Koppánnyal és a koronázás",
+     "key_term": "koronázás, Koppány"
+    },
+    "after": {
+     "body": "István uralkodása kezdetén Koppány lázadása fenyegette a hatalmát, aki a régi pogány hagyományokat kívánta megőrizni. István 997-ben (vagy 998-ban) Veszprém mellett legyőzte Koppányt, ezzel megszilárdítva hatalmát és a kereszténység melletti elkötelezettségét. 1000. december 25-én István koronát kapott, amelyet a pápai támogatás biztosított, így hivatalosan is Magyarország első királyává koronázták. Ez a koronázás a magyar államiság szimbolikus eseménye lett.",
+     "type": "text",
+     "heading": "István harca Koppánnyal és a koronázás",
+     "key_term": "koronázás, Koppány"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-006",
+   "lesson_id": "41aced45-59a5-43c7-b6ea-ab4b6f49ffaf",
+   "block_id": "314b1a7d-2738-47d1-9b59-4eec67261c45",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Székesfehérvár a magyar állam és egyház központja lett, ahol a fejedelmek koronázása is zajlott. Székesfehérvár szintén fontos város…”",
+   "explanation": "Az első mondatban Esztergomnak kellene állnia (érsekség, István szülővárosa); fejedelmeket nem koronáztak, a királyokat Székesfehérvárott.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/I._Istv%C3%A1n_magyar_kir%C3%A1ly",
+     "title": "I. István magyar király",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Székesfehérvár a magyar állam és egyház központja lett, ahol a fejedelmek koronázása is zajlott. Székesfehérvár szintén fontos város volt, ahol István király székhelye található. E városok nemcsak politikai, hanem vallási központok is voltak, amelyek hozzájárultak a magyar identitás kialakulásához. István uralkodása alatt ezek a városok a magyar állam és a kereszténység megerősítésének szimbólumai lettek.",
+     "type": "text",
+     "heading": "Topográfiai jelentőség: Esztergom és Székesfehérvár",
+     "key_term": "Esztergom, Székesfehérvár"
+    },
+    "after": {
+     "body": "Esztergom István szülővárosa és a magyar egyház központja, az érsekség székhelye lett. Székesfehérvárott István bazilikát építtetett; később itt koronázták és temették a magyar királyokat. E városok nemcsak politikai, hanem vallási központok is voltak, amelyek hozzájárultak a magyar identitás kialakulásához. István uralkodása alatt ezek a városok a magyar állam és a kereszténység megerősítésének szimbólumai lettek.",
+     "type": "text",
+     "heading": "Topográfiai jelentőség: Esztergom és Székesfehérvár",
+     "key_term": "Esztergom, Székesfehérvár"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-007",
+   "lesson_id": "41aced45-59a5-43c7-b6ea-ab4b6f49ffaf",
+   "block_id": "d218402d-c88b-406b-9030-2a4d80191aa4",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Esztergom az a hely, „ahol a magyar királyokat hagyományosan megkoronázták”.",
+   "explanation": "István koronázását a hagyomány Esztergomhoz köti, de a magyar királyok hagyományos koronázó helye Székesfehérvár volt (ugyanezt a témazáró kvíz helyesen tanítja).",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/I._Istv%C3%A1n_magyar_kir%C3%A1ly",
+     "title": "I. István magyar király",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Esztergom",
+      "B) Székesfehérvár",
+      "C) Pécs",
+      "D) Buda"
+     ],
+     "question": "Melyik város volt Szent István koronázási helyszíne?",
+     "explanation": "Szent István koronázási helyszíne Esztergom volt, ahol a magyar királyokat hagyományosan megkoronázták.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Esztergom",
+      "B) Székesfehérvár",
+      "C) Pécs",
+      "D) Buda"
+     ],
+     "question": "Melyik város volt Szent István koronázási helyszíne?",
+     "explanation": "A hagyomány szerint Istvánt Esztergomban koronázták királlyá 1000 karácsonyán (vagy 1001 első napján). A későbbi magyar királyokat Székesfehérvárott koronázták.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-008",
+   "lesson_id": "6eeda6d6-b6d9-41ac-a5ab-9de0e3dacd5a",
+   "block_id": "1406e378-1415-41ce-816d-25179755d21d",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "III. Béla „Buda városát is jelentős központtá alakította”.",
+   "explanation": "Buda városát IV. Béla alapította a tatárjárás után; III. Béla székhelye Esztergom volt, ahol királyi palotát építtetett.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/III._B%C3%A9la_magyar_kir%C3%A1ly",
+     "title": "III. Béla magyar király",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "III. Béla 1172-től 1196-ig uralkodott Magyarországon, és uralkodása alatt a magyar állam jelentős nemzetközi elismerésre tett szert. Ő volt az, aki a külpolitikában aktívan részt vett, és Buda városát is jelentős központtá alakította. III. Béla alatt a Magyar Királyság határai kiterjedtek, és a kereskedelem fellendült, ami hozzájárult a gazdasági fejlődéshez. Uralkodása alatt a feudális rendszer is megerősödött, ami a későbbi magyar történelem szempontjából kulcsfontosságú volt.",
+     "type": "text",
+     "heading": "III. Béla, a nagyhatalmú király",
+     "key_term": "III. Béla"
+    },
+    "after": {
+     "body": "III. Béla 1172-től 1196-ig uralkodott Magyarországon, és uralkodása alatt a magyar állam jelentős nemzetközi elismerésre tett szert. Ő volt az, aki a külpolitikában aktívan részt vett, és Esztergomban pompás királyi palotát építtetett. III. Béla alatt a Magyar Királyság határai kiterjedtek, és a kereskedelem fellendült, ami hozzájárult a gazdasági fejlődéshez. Uralkodása alatt a feudális rendszer is megerősödött, ami a későbbi magyar történelem szempontjából kulcsfontosságú volt.",
+     "type": "text",
+     "heading": "III. Béla, a nagyhatalmú király",
+     "key_term": "III. Béla"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-009",
+   "lesson_id": "6eeda6d6-b6d9-41ac-a5ab-9de0e3dacd5a",
+   "block_id": "1406e378-1415-41ce-816d-25179755d21d",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 1222-ben”",
+   "explanation": "Névelő: az 1222-ben.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "II. András 1205-től 1235-ig uralkodott Magyarországon, és legfontosabb intézkedése a 1222-ben kiadott Aranybulla volt. Ez a dokumentum a nemesség jogait rögzítette, és a király hatalmát korlátozta, ezzel megerősítve a feudális jogokat. Az Aranybulla nemcsak Magyarország, hanem a közép-európai politikai viszonyokban is fontos szerepet játszott, hiszen precedenst teremtett a későbbi alkotmányos fejlődéshez. II. András uralkodása alatt a királyság gazdaságilag is fejlődött, de a belső viszályok és a külső fenyegetések is megjelentek.",
+     "type": "text",
+     "heading": "II. András és az Aranybulla",
+     "key_term": "Aranybulla"
+    },
+    "after": {
+     "body": "II. András 1205-től 1235-ig uralkodott Magyarországon, és legfontosabb intézkedése az 1222-ben kiadott Aranybulla volt. Ez a dokumentum a nemesség jogait rögzítette, és a király hatalmát korlátozta, ezzel megerősítve a feudális jogokat. Az Aranybulla nemcsak Magyarország, hanem a közép-európai politikai viszonyokban is fontos szerepet játszott, hiszen precedenst teremtett a későbbi alkotmányos fejlődéshez. II. András uralkodása alatt a királyság gazdaságilag is fejlődött, de a belső viszályok és a külső fenyegetések is megjelentek.",
+     "type": "text",
+     "heading": "II. András és az Aranybulla",
+     "key_term": "Aranybulla"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-010",
+   "lesson_id": "6eeda6d6-b6d9-41ac-a5ab-9de0e3dacd5a",
+   "block_id": "1406e378-1415-41ce-816d-25179755d21d",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A tatárjárás után IV. Béla felismerte, hogy a kunok betelepítése erősítheti az ország védelmi képességeit. 1239-ben … érkeztek”",
+   "explanation": "Időrendi hiba: a kunok 1239-ben, a tatárjárás ELŐTT érkeztek; Kötöny 1241-es meggyilkolása után elvonultak, és csak 1246 körül tértek vissza.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/K%C3%B6t%C3%B6ny",
+     "title": "Kötöny",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "IV. Béla király uralkodása alatt a kunok jelentős szerepet játszottak Magyarország történetében. A tatárjárás után IV. Béla felismerte, hogy a kunok betelepítése erősítheti az ország védelmi képességeit. 1239-ben a kunok vezetője, Kötöny fejedelem vezetésével érkeztek Magyarországra, és a király a Duna-Tisza közén telepítette le őket. A kunok azonban nem minden esetben fogadták el a magyar szokásokat, ami feszültségekhez vezetett a helyi lakossággal. IV. Béla igyekezett integrálni őket a magyar társadalomba, ami hosszú távon sikeresnek bizonyult, hiszen a kunok később hűségesen szolgálták a magyar királyokat.",
+     "type": "text",
+     "heading": "A kunok és IV. Béla kapcsolata",
+     "key_term": "kunok"
+    },
+    "after": {
+     "body": "IV. Béla király uralkodása alatt a kunok jelentős szerepet játszottak Magyarország történetében. IV. Béla abban bízott, hogy a kunok betelepítése erősíti az ország védelmét. A mongolok elől menekülő kunok 1239-ben, Kötöny vezetésével érkeztek Magyarországra, és a király a Duna-Tisza közén telepítette le őket. A kunok nem fogadták el a magyar szokásokat, a feszültség nőtt, és 1241-ben, a tatárjárás elején Kötönyt megölték; a kunok elvonultak, és csak 1246 körül tértek vissza. IV. Béla igyekezett integrálni őket a magyar társadalomba, ami hosszú távon sikeresnek bizonyult, hiszen a kunok később hűségesen szolgálták a magyar királyokat.",
+     "type": "text",
+     "heading": "A kunok és IV. Béla kapcsolata",
+     "key_term": "kunok"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-011",
+   "lesson_id": "6eeda6d6-b6d9-41ac-a5ab-9de0e3dacd5a",
+   "block_id": "bda02638-8a3c-4334-ae5d-b41a2da655bd",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "unverifiable",
+   "severity": "medium",
+   "claim": "„A Magna Carta hatására a magyar nemesség is egyre inkább kezdett jogokat követelni, ami hozzájárult az Aranybulla kiadásához”",
+   "explanation": "Nincs forrás arra, hogy a Magna Carta hatott volna az Aranybullára; a két oklevél egymástól függetlenül, hasonló okokból született.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "A két oklevél közötti ok-okozati kapcsolatot a szakirodalom nem állítja.",
+   "fix": {
+    "before": {
+     "body": "1215-ben Angliában kiadták a Magna Cartát, amely korlátozta a király hatalmát és biztosította a nemesség jogait. Ez a dokumentum fontos lépés volt a jogállamiság és a parlamentáris demokrácia fejlődésében, amely később más országokban is példaként szolgált. A Magna Carta hatása megfigyelhető volt a középkori Európa politikai struktúrájában, ahol a nemesség jogainak védelme egyre fontosabbá vált.",
+     "type": "world",
+     "year": "1215",
+     "heading": "Az angol Magna Carta kiadása",
+     "link_hu": "A Magna Carta hatására a magyar nemesség is egyre inkább kezdett jogokat követelni, ami hozzájárult az Aranybulla kiadásához, amely szintén a nemesi jogok megerősítésére irányult."
+    },
+    "after": {
+     "body": "1215-ben Angliában kiadták a Magna Cartát, amely korlátozta a király hatalmát és biztosította a nemesség jogait. Ez a dokumentum fontos lépés volt a jogállamiság és a parlamentáris demokrácia fejlődésében, amely később más országokban is példaként szolgált. A Magna Carta hatása megfigyelhető volt a középkori Európa politikai struktúrájában, ahol a nemesség jogainak védelme egyre fontosabbá vált.",
+     "type": "world",
+     "year": "1215",
+     "heading": "Az angol Magna Carta kiadása",
+     "link_hu": "Hét évvel később, 1222-ben Magyarországon is kiadták a nemesek jogait rögzítő oklevelet, az Aranybullát — a két dokumentumot gyakran állítják párba, bár egymástól függetlenül születtek."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-012",
+   "lesson_id": "6eeda6d6-b6d9-41ac-a5ab-9de0e3dacd5a",
+   "block_id": "8bdd9dea-6188-4b41-8479-1d0c8b53071f",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Kálmán „tiltja a boszorkányok üldözését” — „a racionalitás és a tudományos megközelítés támogatásának jele”.",
+   "explanation": "A törvény a strigákról (éjjel repülő, vérszívó lényekről) mondja: „mivel nincsenek, ne legyen róluk vizsgálat”; az ártó varázslást (maleficium) továbbra is büntették. A „tudományos megközelítés” túlzó.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/K%C3%B6nyves_K%C3%A1lm%C3%A1n_magyar_kir%C3%A1ly",
+     "title": "Könyves Kálmán magyar király",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Könyves Kálmán király uralkodása alatt hozott egy olyan törvényt, amely tiltja a boszorkányok üldözését. Ez a törvény különösen érdekes, mert a középkorban a boszorkányokat gyakran üldözték Európa-szerte. Kálmán király döntése a boszorkányok üldözésének tiltásáról a racionalitás és a tudományos megközelítés támogatásának jeleként is értelmezhető, ami elősegítette a társadalmi fejlődést. Ez a lépés azt mutatja, hogy már akkor is voltak olyan vezetők, akik a tudás és az oktatás fontosságát helyezték előtérbe, szemben a babonákkal és előítéletekkel.",
+     "type": "deep",
+     "think": "Miért dönthetett úgy Könyves Kálmán, hogy tiltja a boszorkányok üldözését, amikor más országokban ez még gyakori volt?",
+     "anchor": 1,
+     "heading": "Könyves Kálmán és a boszorkányok",
+     "did_you_know": "",
+     "think_answer": "Könyves Kálmán valószínűleg felismerte, hogy a boszorkányüldözés nem segíti a társadalmi fejlődést, és inkább az oktatásra és a tudományra helyezte a hangsúlyt, hogy előmozdítsa a racionális gondolkodást."
+    },
+    "after": {
+     "body": "Könyves Kálmán király uralkodása alatt hozott egy híres törvényt: „A strigákról pedig, mivel nincsenek, semmiféle vizsgálat ne legyen.” A striga a néphit szerint éjjel repülő, vérszívó boszorkány volt. Ez a törvény különösen érdekes, mert a középkorban a boszorkányokat gyakran üldözték Európa-szerte. Az ártó varázslást azonban Kálmán is büntette — csak azt nem hitte, hogy léteznek repülő, vérszívó lények. Ez a lépés azt mutatja, hogy már akkor is voltak olyan vezetők, akik a tudás és az oktatás fontosságát helyezték előtérbe, szemben a babonákkal és előítéletekkel.",
+     "type": "deep",
+     "think": "Miért dönthetett úgy Könyves Kálmán, hogy tiltja a boszorkányok üldözését, amikor más országokban ez még gyakori volt?",
+     "anchor": 1,
+     "heading": "Könyves Kálmán és a boszorkányok",
+     "did_you_know": "",
+     "think_answer": "Könyves Kálmán valószínűleg felismerte, hogy a boszorkányüldözés nem segíti a társadalmi fejlődést, és inkább az oktatásra és a tudományra helyezte a hangsúlyt, hogy előmozdítsa a racionális gondolkodást."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-013",
+   "lesson_id": "e885664e-7549-4183-bd7b-68cac1b55faa",
+   "block_id": "1a324902-7730-4426-a5cd-c986f52ebe7b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Szent Gellért csanádi püspök volt, és később a csanádi püspökséget is betöltötte.”",
+   "explanation": "Ismétlés.",
+   "sources": [],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Szent Gellért a 11. században élt, a magyar államalapítás idején. Velencéből érkezett Magyarországra, ahol a kereszténység terjesztésében játszott fontos szerepet. Szent Gellért csanádi püspök volt, és később a csanádi püspökséget is betöltötte. Mártíromsága nagy hatással volt a magyar nép vallásos életére, így őt a magyar szentek között tisztelik.",
+     "type": "text",
+     "heading": "Szent Gellért",
+     "key_term": "Szent Gellért"
+    },
+    "after": {
+     "body": "Szent Gellért a 11. században élt, a magyar államalapítás idején. Velencéből érkezett Magyarországra, ahol a kereszténység terjesztésében játszott fontos szerepet. István király Szent Gellértet tette meg az újonnan alapított csanádi püspökség első püspökévé. Mártíromsága nagy hatással volt a magyar nép vallásos életére, így őt a magyar szentek között tisztelik.",
+     "type": "text",
+     "heading": "Szent Gellért",
+     "key_term": "Szent Gellért"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-014",
+   "lesson_id": "e885664e-7549-4183-bd7b-68cac1b55faa",
+   "block_id": "1a324902-7730-4426-a5cd-c986f52ebe7b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Szent Margit „a Szent István-i dinasztia tagja”; „ő a magyar nép védőszentje”.",
+   "explanation": "Margit az Árpád-ház tagja volt; Magyarország védőszentje (Patrona Hungariae) Szűz Mária. Margitot csak 1943-ban avatták szentté.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/%C3%81rp%C3%A1d-h%C3%A1zi_Szent_Margit",
+     "title": "Árpád-házi Szent Margit",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Szent Margit (1242-1271) a Szent István-i dinasztia tagja volt, IV. Béla és Laszkarisz Mária lánya. Fiatalon belépett a domonkos rendbe, és életét a vallásnak szentelte. Margit élete során számos csodát tett, és a középkori Magyarországon a hívők körében népszerű szentté vált. Szent Margit tisztelete a mai napig él, hiszen ő a magyar nép védőszentje.",
+     "type": "text",
+     "heading": "Szent Margit",
+     "key_term": "Szent Margit"
+    },
+    "after": {
+     "body": "Szent Margit (1242-1271) az Árpád-ház tagja volt, IV. Béla és Laszkarisz Mária lánya. Fiatalon belépett a domonkos rendbe, és életét a vallásnak szentelte. A legendák szerint Margit életében számos csodát tett, és a középkori Magyarországon a hívők körében népszerű szentté vált. Tisztelete a mai napig él; szentté 1943-ban avatták.",
+     "type": "text",
+     "heading": "Szent Margit",
+     "key_term": "Szent Margit"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-015",
+   "lesson_id": "e885664e-7549-4183-bd7b-68cac1b55faa",
+   "block_id": "1eb5face-ca71-4f44-bf3d-b34b9160609f",
+   "mode": "deep",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Szent Erzsébet kórházának alapítása fontos lépés lehetett a középkori Magyarországon.”",
+   "explanation": "Erzsébet férjhez menve Türingiába került; kórházát Marburgban (Németország) alapította.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/%C3%81rp%C3%A1d-h%C3%A1zi_Szent_Erzs%C3%A9bet",
+     "title": "Árpád-házi Szent Erzsébet",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Szent Erzsébet kórházának alapítása fontos lépés lehetett a középkori Magyarországon. A kórház nemcsak a betegek ápolását szolgálta, hanem a közösség szociális érzékenységét is erősítette. Erzsébet példája ösztönözte a nemeseket és a közembereket egyaránt, hogy támogassák a szegényeket és betegeket. Az ilyen intézmények megjelenése hosszú távon hozzájárult a társadalmi felelősségvállalás kialakulásához, és a jótékonyság fontos részévé vált a középkori életnek.",
+     "type": "deep",
+     "think": "Miért fontos a társadalomban a jótékonykodás?",
+     "anchor": 4,
+     "heading": "Szent Erzsébet kórházának hatása",
+     "did_you_know": "A középkori kórházak nemcsak gyógyító helyek voltak, hanem a közösségi gondoskodás központjai is, ahol a szegények és betegek támogatást kaptak.",
+     "think_answer": "A jótékonykodás segít a rászorulóknak, és erősíti a közösségi összetartozást, mert az emberek úgy érzik, hogy törődnek egymással."
+    },
+    "after": {
+     "body": "Szent Erzsébet férje halála után a németországi Marburgban alapított kórházat, ahol maga ápolta a betegeket. A kórház nemcsak a betegek ápolását szolgálta, hanem a közösség szociális érzékenységét is erősítette. Erzsébet példája ösztönözte a nemeseket és a közembereket egyaránt, hogy támogassák a szegényeket és betegeket. Az ilyen intézmények megjelenése hosszú távon hozzájárult a társadalmi felelősségvállalás kialakulásához, és a jótékonyság fontos részévé vált a középkori életnek.",
+     "type": "deep",
+     "think": "Miért fontos a társadalomban a jótékonykodás?",
+     "anchor": 4,
+     "heading": "Szent Erzsébet kórházának hatása",
+     "did_you_know": "A középkori kórházak nemcsak gyógyító helyek voltak, hanem a közösségi gondoskodás központjai is, ahol a szegények és betegek támogatást kaptak.",
+     "think_answer": "A jótékonykodás segít a rászorulóknak, és erősíti a közösségi összetartozást, mert az emberek úgy érzik, hogy törődnek egymással."
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-016",
+   "lesson_id": "e885664e-7549-4183-bd7b-68cac1b55faa",
+   "block_id": "4d67001b-97d0-4019-853b-cf70b49cef38",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Szent Margit Budán született (megjelölt helyes válasz).",
+   "explanation": "Margit 1242-ben Klissza várában, Dalmáciában született, ahová IV. Béla a tatárok elől menekült. Buda városa akkor még nem is létezett.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/%C3%81rp%C3%A1d-h%C3%A1zi_Szent_Margit",
+     "title": "Árpád-házi Szent Margit",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Szeged",
+      "B) Buda",
+      "C) Kolozsvár",
+      "D) Visegrád"
+     ],
+     "question": "Hol született Szent Margit?",
+     "explanation": "Szent Margit Budán született, és a domonkos rend tagjaként élt egy kolostorban, ahol szentté avatása után is tisztelték.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Szeged",
+      "B) Klissza várában, Dalmáciában",
+      "C) Kolozsvár",
+      "D) Visegrád"
+     ],
+     "question": "Hol született Szent Margit?",
+     "explanation": "Margit 1242-ben Klissza várában született, ahová szülei a tatárok elől menekültek. Szülei a tatárjárás túléléséért ajánlották fel Istennek; később a Nyulak szigetén (ma Margit-sziget) élt a domonkos kolostorban.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-017",
+   "lesson_id": "244b3ca6-8adc-474c-a86e-83a2769f9d3e",
+   "block_id": "5a55d497-7620-4e1c-ad22-902fcdb9a96e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A felperzselt föld taktikáját a német hadsereg alkalmazta; a 10. századi támadások és az 1051-es vértesi csata összemosva.",
+   "explanation": "1051-ben a magyarok alkalmazták a felperzselt föld taktikáját III. Henrik császár serege ellen, amely éhezve vonult vissza a Vértesen át.",
+   "sources": [
+    {
+     "url": "https://tti.abtk.hu/terkepek/terkepek/11-sz-nemet-tamadasok",
+     "title": "BTK TTI: 11. sz. Német támadások",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A német támadások a 10. század elején jelentős fenyegetést jelentettek a magyarok számára. A felperzselt föld taktika alkalmazása során a német hadsereg elpusztította a magyar területek termelését, hogy megakadályozza a magyarok utánpótlását. A vértesi csata 1051-ben zajlott, és a magyarok sikeresen megvédték magukat a német túlerővel szemben. Ez a győzelem nemcsak a magyar hadvezetés, hanem a nemzeti identitás szempontjából is fontos esemény volt.",
+     "type": "text",
+     "heading": "Német támadások nyugatról",
+     "key_term": "vértesi csata"
+    },
+    "after": {
+     "body": "A német-római császárok a 11. században is többször megtámadták Magyarországot. 1051-ben I. András és Béla herceg felperzselt föld taktikát alkalmazott: elhordták vagy elpusztították az élelmet III. Henrik serege elől, amely éhezve vonult vissza a Vértesen át. Ez a győzelem nemcsak a magyar hadvezetés, hanem a nemzeti identitás szempontjából is fontos esemény volt.",
+     "type": "text",
+     "heading": "Német támadások nyugatról",
+     "key_term": "vértesi csata"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-018",
+   "lesson_id": "244b3ca6-8adc-474c-a86e-83a2769f9d3e",
+   "block_id": "5a55d497-7620-4e1c-ad22-902fcdb9a96e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A kerlési csata a magyarok és a Kerlés népe közötti ütközet volt, amely 1068-ban zajlott”; a nomád támadások „a 9. század végén”.",
+   "explanation": "Kerlés helynév (Cserhalom), nem nép. 1068-ban (más források szerint 1070) Salamon király, Géza és László herceg itt verte meg a betörő besenyőket (úzokat). A győzelem nem terjeszkedést, hanem védekezést jelentett.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Cserhalmi_csata",
+     "title": "Cserhalmi csata",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A keletről érkező nomád támadások folyamatos kihívást jelentettek a magyarok számára a 9. század végén. A kerlési csata a magyarok és a Kerlés népe közötti ütközet volt, amely 1068-ban zajlott. A csata helyszínének megismerése segít megérteni a korabeli hadviselés taktikáit és a magyarok védekezési stratégiáit. A kerlési csata győzelme hozzájárult a magyarok terjeszkedéséhez és a Kárpát-medence védelméhez.",
+     "type": "text",
+     "heading": "Nomád támadások keletről",
+     "key_term": "kerlési csata"
+    },
+    "after": {
+     "body": "A keletről érkező nomád népek a 11. században is betörtek az országba. 1068-ban Kerlésnél (Cserhalomnál) Salamon király, valamint Géza és László herceg legyőzte az Erdélyt fosztogató besenyőket; a legenda szerint itt mentette meg László a magyar leányt. A csata helyszínének megismerése segít megérteni a korabeli hadviselés taktikáit és a magyarok védekezési stratégiáit. A kerlési győzelem megvédte az ország keleti részét.",
+     "type": "text",
+     "heading": "Nomád támadások keletről",
+     "key_term": "kerlési csata"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-019",
+   "lesson_id": "ee2ec529-cf56-4992-bc50-846ea0f2cb33",
+   "block_id": "33b138d3-b8d5-4784-be46-4a297462495c",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A korona a 11. században készült, és szentté avatták”.",
+   "explanation": "Tárgyat nem avatnak szentté: a korona a hagyomány szerint Szent Istváné volt, ezért Szent Korona. Alsó része (görög korona) a 11. század második felében Bizáncban készült; felső része (a keresztpántok) eredete vitatott.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/Magyar_Szent_Korona",
+     "title": "Magyar Szent Korona",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Szent Korona Magyarország legfontosabb koronázási jelvénye, amely a magyar államiság szimbóluma. A korona a 11. században készült, és szentté avatták, így a magyar királyok koronázásának elengedhetetlen része lett. A Szent Korona nem csupán egy ékszer, hanem a magyar nép történelmi és kulturális örökségének jelképe. A korona viselése a királyi hatalom legitimitását is kifejezi, hiszen a koronázás során a király a nép és az Isten előtt is megerősíti uralkodói jogait.",
+     "type": "text",
+     "heading": "A Szent Korona jelentősége",
+     "key_term": "Szent Korona"
+    },
+    "after": {
+     "body": "A Szent Korona Magyarország legfontosabb koronázási jelvénye, amely a magyar államiság szimbóluma. Alsó része a 11. század második felében Bizáncban készült; a hagyomány Szent Istvánnak tulajdonítja, ezért nevezzük Szent Koronának. Csak az számított igazi királynak, akit ezzel a koronával koronáztak meg. A Szent Korona nem csupán egy ékszer, hanem a magyar nép történelmi és kulturális örökségének jelképe. A korona viselése a királyi hatalom legitimitását is kifejezi, hiszen a koronázás során a király a nép és az Isten előtt is megerősíti uralkodói jogait.",
+     "type": "text",
+     "heading": "A Szent Korona jelentősége",
+     "key_term": "Szent Korona"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-020",
+   "lesson_id": "ee2ec529-cf56-4992-bc50-846ea0f2cb33",
+   "block_id": "33b138d3-b8d5-4784-be46-4a297462495c",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "„Ezen események során a Szent Korona szentté válása is megtörtént”",
+   "explanation": "Értelmetlen állítás; a korona nem 'vált szentté' a koronázásokon.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Lásd az előző tételt (Magyar Szent Korona).",
+   "fix": {
+    "before": {
+     "body": "A koronázási ceremónia a Szent Korona és más jelvények, mint a jogar és az országalma használatával zajlott. A koronázás helyszíne általában Székesfehérvár volt, ahol a magyar királyok hűséget fogadtak a népnek és az egyháznak. Ezen események során a Szent Korona szentté válása is megtörtént, amely a királyi hatalom és az Isten közötti kapcsolatot hangsúlyozta. A koronázási szertartás a magyar államiság egyik legfontosabb rituáléja volt.",
+     "type": "text",
+     "heading": "A koronázás folyamata",
+     "key_term": "koronázás"
+    },
+    "after": {
+     "body": "A koronázási ceremónia a Szent Korona és más jelvények, mint a jogar és az országalma használatával zajlott. A koronázás helyszíne általában Székesfehérvár volt, ahol a magyar királyok hűséget fogadtak a népnek és az egyháznak. A koronázási szertartás a magyar államiság egyik legfontosabb rituáléja volt.",
+     "type": "text",
+     "heading": "A koronázás folyamata",
+     "key_term": "koronázás"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-021",
+   "lesson_id": "ee2ec529-cf56-4992-bc50-846ea0f2cb33",
+   "block_id": "33b138d3-b8d5-4784-be46-4a297462495c",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A koronázási jelvények „a császári elismerést is szimbolizálták”.",
+   "explanation": "A magyar királyság független volt a Német-római Birodalomtól; István a koronát a pápától kapta, és a magyar koronázás nem jelentett császári elismerést.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/I._Istv%C3%A1n_magyar_kir%C3%A1ly",
+     "title": "I. István magyar király",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Német-római Császárság a középkori Európa egyik legnagyobb hatalmú állama volt, amely szoros kapcsolatban állt Magyarországgal. A koronázási szertartások során a Szent Korona és a hozzá kapcsolódó jelvények nemcsak a magyar királyi hatalmat, hanem a császári elismerést is szimbolizálták. A két állam közötti politikai és katonai kapcsolatok a középkor folyamán folyamatosan fejlődtek. A Német-római Császárság befolyása a magyar politikai életre és a királyi hatalomra is kihatott, különösen a koronázási szertartások során.",
+     "type": "text",
+     "heading": "A Német-római Császárság és Magyarország kapcsolata",
+     "key_term": "Német-római Császárság"
+    },
+    "after": {
+     "body": "A Német-római Császárság a középkori Európa egyik legnagyobb hatalmú állama volt, amely szoros kapcsolatban állt Magyarországgal. Istvánt a pápától kapott koronával koronázták meg, így Magyarország független királyság lett, nem a császár hűbérese. A két állam közötti politikai és katonai kapcsolatok a középkor folyamán folyamatosan fejlődtek.",
+     "type": "text",
+     "heading": "A Német-római Császárság és Magyarország kapcsolata",
+     "key_term": "Német-római Császárság"
+    }
+   }
+  },
+  {
+   "id": "HIST-56-05-022",
+   "lesson_id": null,
+   "block_id": "5ec5ec50-86fe-437a-8b21-610ea9b413a7",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik dokumentumot adta ki III. Béla…?” — válasz: Aranybulla.",
+   "explanation": "Az Aranybullát II. András adta ki 1222-ben; a kérdés hamis előfeltevést tanít.",
+   "sources": [
+    {
+     "url": "https://hu.wikipedia.org/wiki/III._B%C3%A9la_magyar_kir%C3%A1ly",
+     "title": "III. Béla magyar király",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Aranybulla",
+      "B) Tized",
+      "C) Vérszerződés",
+      "D) Szent Korona"
+     ],
+     "question": "Melyik dokumentumot adta ki III. Béla, amely a magyar nemesség jogait rögzítette?",
+     "explanation": "Az Aranybulla 1222-ben került kiadásra, és fontos jogi dokumentum volt a magyar nemesség számára.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Aranybulla",
+      "B) Tized",
+      "C) Vérszerződés",
+      "D) Szent Korona"
+     ],
+     "question": "Melyik dokumentumot adta ki II. András 1222-ben, amely a magyar nemesség jogait rögzítette?",
+     "explanation": "Az Aranybulla 1222-ben került kiadásra, és fontos jogi dokumentum volt a magyar nemesség számára.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-56-05-001": "ec2c54d5-d473-4f29-9393-e6f8b2056c8a",
+  "HIST-56-05-002": "8c8eb916-c349-46ff-bfee-37671674cc27",
+  "HIST-56-05-003": "dee38447-4894-49bf-a694-8a5f681c7926",
+  "HIST-56-05-004": "f958a8f6-bdd3-4eb1-a179-e45be6349b78",
+  "HIST-56-05-005": "f5a9b82f-7d6f-45a9-8a71-35c25869ae4d",
+  "HIST-56-05-006": "47c1b643-678f-419c-9afe-ed1ad32dfb7f",
+  "HIST-56-05-007": "386f3fab-12a4-4549-97d7-19bae5b3f5b6",
+  "HIST-56-05-008": "dc30ca3a-eb59-467d-baac-9cef93e6ed09",
+  "HIST-56-05-009": "ebf351c2-00f3-4a55-ba7f-b507bf03fb7a",
+  "HIST-56-05-010": "ef36f9d7-567c-42de-a3ba-3ef83c94249b",
+  "HIST-56-05-011": "52bc5abd-9df2-45b7-8ae3-d3dc5ea7d907",
+  "HIST-56-05-012": "02150d97-5635-43c1-9597-6f9eb380b63a",
+  "HIST-56-05-013": "80d6d314-d1fc-48fd-a031-3dada4b6e77e",
+  "HIST-56-05-014": "f94df142-4d26-42cf-ac51-9dd1aebded19",
+  "HIST-56-05-015": "0ce344af-a258-4f28-b404-d2693b393b76",
+  "HIST-56-05-016": "66b92890-156b-4120-a674-e7cadaddbeab",
+  "HIST-56-05-017": "d0eeefa5-8d7e-4130-890e-e240e42f780d",
+  "HIST-56-05-018": "1403c144-fb74-4716-8850-e79958ca6854",
+  "HIST-56-05-019": "65490d75-6353-45da-8d0c-2f3e0e70a409",
+  "HIST-56-05-020": "3af63aa4-3d64-4d13-a486-82a479fffa42",
+  "HIST-56-05-021": "3c7f908f-e860-4546-9c43-84ab8dcd3977",
+  "HIST-56-05-022": "12930ad8-5081-422e-8645-f75d13b1cf7e"
+ }
+}

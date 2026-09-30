@@ -1,0 +1,421 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "A lecke címe („A 1930-as évek Magyarországa”) és több kártya névelőhibás: „az 1930-as” a helyes.",
+   "A 3. és 5. kártya (Klebelsberg) tartalmi ismétlés."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "cd753473-b138-4bb6-80d3-9a9356e8e44f",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„ő gyakorolta a legfőbb hatalmat”",
+   "explanation": "A kormányzó a királyi jogok egy részét gyakorolta (kinevezte a miniszterelnököt, feloszlathatta az országgyűlést, halasztó vétója volt), de a törvényhozás az Országgyűlés dolga volt; ez nem „legfőbb hatalom”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Miklós_Horthy",
+     "title": "Miklós Horthy",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1920–1946)",
+     "title": "Kingdom of Hungary (1920–1946)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A kormányzó szerepe meghatározó lett a politikai életben, mivel ő gyakorolta a legfőbb hatalmat.",
+     "A kormányzó a királyi jogok egy részét gyakorolta (például kinevezte a miniszterelnököt, feloszlathatta az országgyűlést), a törvényhozást azonban az Országgyűlés végezte."
+    ]
+   ]
+  },
+  {
+   "block_id": "cd753473-b138-4bb6-80d3-9a9356e8e44f",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Klebelsberg Kunó, aki 1920-tól 1931-ig volt a kultuszminiszter … Az ő nevéhez fűződik a numerus clausus bevezetése”",
+   "explanation": "Klebelsberg 1922-től 1931-ig volt vallás- és közoktatásügyi miniszter. A numerus clausus törvényt (1920. évi XXV. tc.) Teleki Pál kormánya idején, Klebelsberg hivatalba lépése előtt fogadták el; ő 1928-ban enyhített rajta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kuno_von_Klebelsberg",
+     "title": "Kuno von Klebelsberg",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Numerus_clausus_(Hungary)",
+     "title": "Numerus clausus (Hungary)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "aki 1920-tól 1931-ig volt a kultuszminiszter",
+     "aki 1922-től 1931-ig volt vallás- és közoktatásügyi miniszter"
+    ],
+    [
+     "Az ő nevéhez fűződik a numerus clausus bevezetése, amely a felsőoktatásban a zsidó diákok számának korlátozását célozta.",
+     "A numerus clausus törvényt (1920. évi XXV. tc.), amely a felsőoktatásban a zsidó diákok számának korlátozását célozta, még hivatalba lépése előtt fogadták el; Klebelsberg 1928-ban enyhített rajta."
+    ]
+   ]
+  },
+  {
+   "block_id": "cd753473-b138-4bb6-80d3-9a9356e8e44f",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Teleki Pál 1939-től 1941-ig volt miniszterelnök … Mindkét politikai vezető hozzájárult a Horthy-rendszer konszolidációjához”",
+   "explanation": "Teleki kétszer volt miniszterelnök (1920–21, 1939–41); első kormánya idején fogadták el a numerus clausus törvényt, a második idején a második zsidótörvényt. A 1939–41-es időszak nem a konszolidáció korszaka; 1941-ben öngyilkos lett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pál_Teleki",
+     "title": "Pál Teleki",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/István_Bethlen",
+     "title": "István Bethlen",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Teleki Pál 1939-től 1941-ig volt miniszterelnök, és ő is a nemzeti érdekek védelmére törekedett. Mindkét politikai vezető hozzájárult a Horthy-rendszer konszolidációjához és a magyar állam helyzetének megerősítéséhez.",
+     "Teleki Pál 1920–21-ben, majd 1939-től 1941-ig volt miniszterelnök; első kormánya idején fogadták el a numerus clausus törvényt (1920), a második idején a második zsidótörvényt (1939). 1941 áprilisában öngyilkos lett."
+    ]
+   ]
+  },
+  {
+   "block_id": "cd753473-b138-4bb6-80d3-9a9356e8e44f",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Klebelsberg második kártyája („Klebelsberg Kuno”): tartalmi ismétlés",
+   "explanation": "A 3. és 5. kártya ugyanazt a témát dolgozza fel (duplikált szöveg); a név írásmódja is eltér (Kuno/Kunó); a „kultuszminiszter” hivatalos címe vallás- és közoktatásügyi miniszter.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kuno_von_Klebelsberg",
+     "title": "Kuno von Klebelsberg",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Klebelsberg Kuno, a magyar kultuszminiszter",
+     "Klebelsberg Kunó, a vallás- és közoktatásügyi miniszter"
+    ]
+   ]
+  },
+  {
+   "block_id": "d68126ad-5330-4a41-b198-1d5044a1056d",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A 1930-as évek elején”",
+   "explanation": "Névelőhiba („Az 1930-as”); ugyanez a lecke címében is szerepel („A 1930-as évek Magyarországa”).",
+   "source_note": "magyar helyesírás",
+   "replace": [
+    [
+     "A 1930-as évek elején",
+     "Az 1930-as évek elején"
+    ]
+   ]
+  },
+  {
+   "block_id": "d68126ad-5330-4a41-b198-1d5044a1056d",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A 1930-as években a belpolitikai életben”",
+   "explanation": "Névelőhiba („Az 1930-as”).",
+   "source_note": "magyar helyesírás",
+   "replace": [
+    [
+     "A 1930-as években a belpolitikai életben",
+     "Az 1930-as években a belpolitikai életben"
+    ]
+   ]
+  },
+  {
+   "block_id": "d68126ad-5330-4a41-b198-1d5044a1056d",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A 1930-as évek Magyarországán a társadalom”",
+   "explanation": "Névelőhiba („Az 1930-as”).",
+   "source_note": "magyar helyesírás",
+   "replace": [
+    [
+     "A 1930-as évek Magyarországán a társadalom",
+     "Az 1930-as évek Magyarországán a társadalom"
+    ]
+   ]
+  },
+  {
+   "block_id": "d68126ad-5330-4a41-b198-1d5044a1056d",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A kormányzat igyekezett reformokat végrehajtani a földterületek igazságosabb elosztása érdekében.”; „a 1930-as évek”",
+   "explanation": "A Horthy-korszakban csak szerény földreform történt (az 1920-as Nagyatádi-féle földosztás kisebb területet érintett), a nagybirtokrendszer megmaradt; a valódi földosztás 1945-ben történt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Land_reform_in_Hungary",
+     "title": "Land reform in Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/István_Nagyatádi_Szabó",
+     "title": "István Nagyatádi Szabó",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a 1930-as évek Magyarországán",
+     "az 1930-as évek Magyarországán"
+    ],
+    [
+     "A kormányzat igyekezett reformokat végrehajtani a földterületek igazságosabb elosztása érdekében.",
+     "A kormányzatok csak szerény földreformot valósítottak meg (az 1920-as Nagyatádi-féle földosztás a földterület kisebb részét érintette), így a nagybirtokrendszer alapvetően megmaradt."
+    ]
+   ]
+  },
+  {
+   "block_id": "d68126ad-5330-4a41-b198-1d5044a1056d",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A 1930-as években”; „1939-ben Kárpátalja visszacsatolása”",
+   "explanation": "Névelőhiba; Kárpátalját a magyar hadsereg 1939 márciusában, Csehszlovákia felbomlása után foglalta el (nem bécsi döntés útján). A kártya a második bécsi döntést (1940, Észak-Erdély) és a Délvidéket (1941) sem említi.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Carpathian_Ruthenia",
+     "title": "Carpathian Ruthenia",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_Vienna_Award",
+     "title": "Second Vienna Award",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A 1930-as években Magyarország külpolitikája",
+     "Az 1930-as években Magyarország külpolitikája"
+    ],
+    [
+     "Ezt követően, 1939-ben Kárpátalja visszacsatolása is megtörtént",
+     "1939 márciusában a magyar hadsereg Kárpátalját is elfoglalta"
+    ]
+   ]
+  },
+  {
+   "block_id": "d68126ad-5330-4a41-b198-1d5044a1056d",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Weiss Manfréd, a neves iparmágnás, a 1930-as években jelentős szereplője volt a magyar gazdaságnak … a kormány támogatója volt”",
+   "explanation": "Weiss Manfréd 1922-ben meghalt; az 1930-as években a csepeli Weiss Manfréd Művek jelentős, de a család által vezetett vállalat volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Manfréd_Weiss",
+     "title": "Manfréd Weiss",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Weiss Manfréd, a neves iparmágnás, a 1930-as években jelentős szereplője volt a magyar gazdaságnak.",
+     "Weiss Manfréd (1857–1922) iparmágnás cége, a csepeli Weiss Manfréd Művek az 1930-as években is a magyar ipar egyik legnagyobb szereplője volt."
+    ],
+    [
+     "Weiss Manfréd a kormány támogatója volt, és aktívan részt vett a gazdasági reformokban.",
+     "A vállalatot Manfréd halála után családja vezette."
+    ]
+   ]
+  },
+  {
+   "block_id": "6e1bda7e-ba40-4b5f-8888-75a7974e5b98",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "Üres világblokk: „A Horthy-korszak és a globális párhuzamok hiánya”, év és magyar kapcsolat nélkül",
+   "explanation": "Nincs valódi világesemény. Javaslat: Mussolini Római menetelése (1922) és a fasiszta hatalomátvétel Olaszországban, amely mintát adott a magyar jobboldalnak és Bethlen 1927-es barátsági szerződésének hátterét is adja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/March_on_Rome",
+     "title": "March on Rome",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "set": {
+    "heading": "A fasizmus hatalomra jut Olaszországban",
+    "year": "1922",
+    "body": "1922 októberében Mussolini fasiszta mozgalma a Római menetelés után hatalomra jutott Olaszországban, és Európában az első fasiszta kormányt alakította meg.",
+    "link_hu": "Olaszország volt Magyarország első fontos szövetségese a két háború között: Bethlen István 1927-ben barátsági szerződést kötött Mussolinivel."
+   }
+  },
+  {
+   "block_id": "d3b4a5ca-1d46-43ab-ac9b-0bd288295b46",
+   "card_index": 1,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "link_hu: „a háború során a magyar kormány revíziós politikáját továbbra is folytatta, Kárpátalja visszacsatolásával”",
+   "explanation": "Kárpátalját 1939 márciusában foglalták el, a háború kitörése (1939. szeptember 1.) előtt. Valós magyar vonatkozás: Magyarország nem lépett be azonnal a háborúba, hanem befogadta a lengyel menekülteket.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungary_in_World_War_II",
+     "title": "Hungary in World War II",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Polish_refugees_in_Hungary",
+     "title": "Polish refugees in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "link_hu": "Magyarország a háború kitörésekor nem lépett be a háborúba, semleges maradt, és több tízezer lengyel katonát és civil menekültet fogadott be."
+   }
+  },
+  {
+   "block_id": "7e7c3142-dbfa-4416-92cb-0b17d57e1105",
+   "card_index": 1,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Az Egységes Párt a Bethlen-kormány idején (1921–1931)”",
+   "explanation": "Az Egységes Pártot 1922 elején hozták létre; utódai (Nemzeti Egység Pártja, Magyar Élet Pártja) a korszak végéig kormányoztak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/István_Bethlen",
+     "title": "István Bethlen",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "Az Egységes Párt 1922-ben alakult, Bethlen István kormánypártja volt; utódai (Nemzeti Egység Pártja, Magyar Élet Pártja) a korszak végéig kormányoztak."
+   }
+  },
+  {
+   "block_id": "ee2f4ce5-cac3-4374-a6f0-76071aba8220",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Kulcs A: Gömbös Gyula mint „a magyar népi mozgalom egyik kiemelkedő képviselője”; a magyarázat szerint „Gömbös nem tartozott a népi mozgalomhoz”",
+   "explanation": "A kulcs és a magyarázat ellentmond egymásnak. Gömbös miniszterelnök volt, nem a népi mozgalom tagja; a népi írók közé Illyés Gyula, Németh László, Féja Géza, Veres Péter tartozott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Népi_írók",
+     "title": "Népi írók",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Ki tartozott a népi írók mozgalmához?",
+    "options": [
+     "Illyés Gyula",
+     "Gömbös Gyula",
+     "Weiss Manfréd",
+     "Bethlen István"
+    ],
+    "correct": "A",
+    "explanation": "Illyés Gyula („Puszták népe”, 1936) a népi írók mozgalmának egyik legismertebb tagja volt; Gömbös Gyula miniszterelnök volt."
+   }
+  },
+  {
+   "block_id": "ee2f4ce5-cac3-4374-a6f0-76071aba8220",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Melyik politikai csoportosulás volt a nyilasok előfutára?” B) Fasiszták",
+   "explanation": "Rosszul feltett kérdés: a nyilasok maguk fasiszta jellegű mozgalom voltak, nem egy előfutáruk kérdezhető ilyen válaszokkal.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Arrow_Cross_Party",
+     "title": "Arrow Cross Party",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik irányzathoz tartoztak a nyilasok?",
+    "explanation": "A nyilasok (Szálasi Ferenc pártja) fasiszta jellegű mozgalom voltak, a Horthy-korszak végén váltak jelentős politikai erővé."
+   }
+  },
+  {
+   "block_id": "f65835b6-6ef5-4e4f-b92d-0ad37ab49c3e",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Melyik valuta váltotta fel a pengőt a Horthy-korszakban? Forint”; magyarázat: „a Horthy-korszakban a pengő volt az érvényes valuta”",
+   "explanation": "A kérdés és a magyarázat ellentmond egymásnak: a forint 1946-ban, a Horthy-korszak után váltotta fel a pengőt.",
+   "source_note": "A forint bevezetése (1946. augusztus 1.)",
+   "set": {
+    "question": "Melyik pénznemet váltotta fel a forint 1946-ban?",
+    "options": [
+     "Pengő",
+     "Korona",
+     "Euro",
+     "Dollár"
+    ],
+    "correct": "A",
+    "explanation": "A forint 1946. augusztus 1-jén váltotta fel a pengőt, amely a hiperinfláció miatt értéktelenné vált."
+   }
+  },
+  {
+   "block_id": "f65835b6-6ef5-4e4f-b92d-0ad37ab49c3e",
+   "card_index": 7,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Kárpátalja visszacsatolása 1939. március 15-én történt, a második bécsi döntés alapján”",
+   "explanation": "A második bécsi döntés 1940. augusztus 30-án Észak-Erdélyt juttatta Magyarországnak; Kárpátalját a magyar hadsereg 1939 márciusában foglalta el, döntőbíráskodás nélkül.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_Vienna_Award",
+     "title": "Second Vienna Award",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Carpathian_Ruthenia",
+     "title": "Carpathian Ruthenia",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "Kárpátalját a magyar hadsereg 1939 márciusában foglalta el, Csehszlovákia felbomlása után; a második bécsi döntés (1940) Észak-Erdélyről szólt."
+   }
+  }
+ ]
+}

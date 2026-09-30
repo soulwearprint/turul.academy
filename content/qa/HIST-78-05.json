@@ -1,0 +1,323 @@
+{
+ "nat_id": "HIST-78-05",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-29",
+ "coverage": {
+  "blocks": 13,
+  "cards": 68,
+  "modes": [
+   "deep",
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "deep",
+   "world",
+   "quiz"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-78-05-001",
+   "lesson_id": null,
+   "block_id": "0950806b-1d18-4c32-bd67-c51c01526ad7",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 1,
+   "field": "correct, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A numerus clausus bevezetése — megjelölt: 1928.",
+   "explanation": "A numerus clausus törvényt (1920. évi XXV. tc.) 1920-ban fogadták el; 1928-ban csak módosították. Ugyanezt a lecke kvíze helyesen tanítja. A helyes válasz az A).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Numerus_clausus_in_Hungary",
+     "title": "Numerus clausus in Hungary",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1920-ban",
+      "B) 1928-ban",
+      "C) 1938-ban",
+      "D) 1944-ben"
+     ],
+     "question": "Mikor vezették be a numerus clausust Magyarországon?",
+     "explanation": "A numerus clausus 1928-ban lépett életbe, és a zsidó származású diákok egyetemre való bejutását korlátozta.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1920-ban",
+      "B) 1928-ban",
+      "C) 1938-ban",
+      "D) 1944-ben"
+     ],
+     "question": "Mikor vezették be a numerus clausust Magyarországon?",
+     "explanation": "A numerus clausus törvényt 1920-ban fogadták el; a nemzetiségek arányához kötötte az egyetemi felvételt, és elsősorban a zsidó diákokat sújtotta. 1928-ban enyhítették.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-05-002",
+   "lesson_id": null,
+   "block_id": "0950806b-1d18-4c32-bd67-c51c01526ad7",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 5,
+   "field": "correct, explanation",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Szent-Györgyi Albert „a kémia területén” kapott Nobel-díjat.",
+   "explanation": "Szent-Györgyi 1937-ben az élettani és orvostudományi Nobel-díjat kapta — a helyes válasz a C) Orvostudomány.",
+   "sources": [
+    {
+     "url": "https://www.nobelprize.org/prizes/medicine/1937/summary/",
+     "title": "The Nobel Prize in Physiology or Medicine 1937",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Fizika",
+      "B) Kémia",
+      "C) Orvostudomány",
+      "D) Biológia"
+     ],
+     "question": "Milyen tudományos területen lett világhírű Szent-Györgyi Albert?",
+     "explanation": "Szent-Györgyi Albert a kémia területén végzett munkájáért, különösen a C-vitamin felfedezéséért kapott Nobel-díjat.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Fizika",
+      "B) Kémia",
+      "C) Orvostudomány",
+      "D) Biológia"
+     ],
+     "question": "Milyen tudományos területen lett világhírű Szent-Györgyi Albert?",
+     "explanation": "Szent-Györgyi Albert 1937-ben orvosi (élettani) Nobel-díjat kapott a sejtek égési folyamatainak, különösen a C-vitamin szerepének feltárásáért; a C-vitamint szegedi paprikából állította elő nagy mennyiségben.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-05-003",
+   "lesson_id": "ba7ec713-9bb3-45f9-bfb9-123482e6302f",
+   "block_id": "f706f463-c698-4706-9826-b80ed2847e63",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "language",
+   "severity": "medium",
+   "claim": "„A zsidó közösség elleni diszkrét intézkedések, például a numerus clausus”",
+   "explanation": "A „diszkrét” jelentése tapintatos, feltűnés nélküli; itt „diszkriminatív” (hátrányos megkülönböztető) a helyes szó — a hibás szó elbagatellizálja a törvényt.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Szóhasználati hiba (diszkrét ≠ diszkriminatív).",
+   "fix": {
+    "before": {
+     "body": "A Horthy-korszakban a politikai antiszemitizmus jelentős mértékben megjelent, amely a társadalmi feszültségek és a gazdasági válságok következményeként erősödött. A zsidó közösség elleni diszkrét intézkedések, például a numerus clausus bevezetése, a társadalmi igazságosság és a politikai hatalom kérdéseit is érintették. Az antiszemitizmus nemcsak a zsidó közösség életére, hanem a magyar társadalom egészére is mély hatással volt. Ez a jelenség a korszak politikai kultúrájának sötét oldalát tükrözte.",
+     "type": "text",
+     "heading": "A politikai antiszemitizmus",
+     "key_term": "numerus clausus"
+    },
+    "after": {
+     "body": "A Horthy-korszakban a politikai antiszemitizmus jelentős mértékben megjelent, amely a társadalmi feszültségek és a gazdasági válságok következményeként erősödött. A zsidó közösséget hátrányosan megkülönböztető intézkedések, például az 1920-as numerus clausus bevezetése, a társadalmi igazságosság és a politikai hatalom kérdéseit is érintették. Az antiszemitizmus nemcsak a zsidó közösség életére, hanem a magyar társadalom egészére is mély hatással volt. Ez a jelenség a korszak politikai kultúrájának sötét oldalát tükrözte.",
+     "type": "text",
+     "heading": "A politikai antiszemitizmus",
+     "key_term": "numerus clausus"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-05-004",
+   "lesson_id": "ba7ec713-9bb3-45f9-bfb9-123482e6302f",
+   "block_id": "750701cd-fe51-4149-b2a5-4cd6094cc550",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "year, body, link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "year: 1920; a versailles-i békeszerződés vesztesei „köztük Magyarország”.",
+   "explanation": "A versailles-i béke (1919. június 28.) Németországgal köttetett; Magyarország a trianoni békeszerződést írta alá 1920. június 4-én.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Trianon",
+     "title": "Treaty of Trianon",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Versailles-i békeszerződést 1919. június 28-án írták alá, de annak következményei 1920-ra is kihatottak. A szerződés a győztes hatalmak által meghatározta a háború utáni új világrendet, amelyben a vesztes államok, köztük Magyarország, súlyos területi és gazdasági korlátozásokkal néztek szembe. A békeszerződés megkötése után a revíziós törekvések felerősödtek Magyarországon.",
+     "type": "world",
+     "year": "1920",
+     "heading": "A Versailles-i békeszerződés aláírása",
+     "link_hu": "A Versailles-i békeszerződés következményei közvetlenül hozzájárultak a Horthy-korszak revíziós politikájához, mivel Magyarország területi veszteségeit a kormányzó és miniszterelnöke, Bethlen István, folyamatosan próbálták orvosolni."
+    },
+    "after": {
+     "body": "1919. június 28-án a győztes hatalmak aláírták Németországgal a versailles-i békeszerződést: Németország elvesztette gyarmatait és területei egy részét, hadseregét 100 ezer főre korlátozták, és hatalmas jóvátételt kellett fizetnie. A többi vesztes állammal külön békét kötöttek a Párizs környéki kastélyokban.",
+     "type": "world",
+     "year": 1919,
+     "heading": "A Versailles-i békeszerződés aláírása",
+     "link_hu": "Magyarország békéjét a versailles-i Nagy-Trianon kastélyban írták alá 1920. június 4-én; ez a trianoni békeszerződés."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-05-005",
+   "lesson_id": "ba7ec713-9bb3-45f9-bfb9-123482e6302f",
+   "block_id": "750701cd-fe51-4149-b2a5-4cd6094cc550",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body, link_hu",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Mussolini hatalomra jutása inspirálta a magyar politikai antiszemitizmus erősödését”",
+   "explanation": "Az olasz fasizmus 1938-ig nem volt antiszemita; a magyar numerus clausus (1920) két évvel megelőzte Mussolini hatalomra jutását. A valódi kapcsolat az 1927-es olasz–magyar barátsági szerződés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Racial_laws_(Italy)",
+     "title": "Italian racial laws (1938)",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1922-ben Benito Mussolini vezette fasiszta párt hatalomra került Olaszországban, amely új politikai irányvonalat képviselt Európában. Mussolini autoriter rendszere és nacionalista retorikája számos országot, köztük Magyarországot is befolyásolt, mivel a politikai antiszemitizmus és a nacionalista ideológiák erősödtek.",
+     "type": "world",
+     "year": "1922",
+     "heading": "Olaszországban Mussolini hatalomra jutása",
+     "link_hu": "Mussolini hatalomra jutása inspirálta a magyar politikai antiszemitizmus erősödését, mivel a Horthy-korszak vezetői is hasonló ideológiákat kezdtek el alkalmazni a belpolitikai diskurzusban."
+    },
+    "after": {
+     "body": "1922-ben Benito Mussolini vezette fasiszta párt hatalomra került Olaszországban, amely új politikai irányvonalat képviselt Európában. Mussolini autoriter rendszere és nacionalista retorikája számos országban mintát adott a jobboldali mozgalmaknak.",
+     "type": "world",
+     "year": "1922",
+     "heading": "Olaszországban Mussolini hatalomra jutása",
+     "link_hu": "1927-ben Olaszország és Magyarország barátsági szerződést kötött: ez volt Trianon után Magyarország első fontos szövetsége a revízió érdekében."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-05-006",
+   "lesson_id": "ba7ec713-9bb3-45f9-bfb9-123482e6302f",
+   "block_id": "32754663-6798-41e0-a284-3bdc4e758c45",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "options[2], explanation",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A Horthy-kori külpolitikai helyzet: „C) A nyugati nagyhatalmak és a Szovjetunió közötti feszültség”.",
+   "explanation": "A korszak külpolitikáját a Kisantant (Csehszlovákia, Románia, Jugoszlávia) ellenséges gyűrűje és a revízió miatt a német–olasz oldal felé sodródás határozta meg; a megjelölt válasz nem ezt írja le.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Little_Entente",
+     "title": "Little Entente",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A Szovjetunióval való szoros együttműködés",
+      "B) A közép-európai országokkal való szövetség",
+      "C) A nyugati nagyhatalmak és a Szovjetunió közötti feszültség",
+      "D) A Balkán országokkal való konfliktus"
+     ],
+     "question": "Milyen külpolitikai helyzetben kellett Magyarországnak navigálnia a Horthy-korszak alatt?",
+     "explanation": "A Horthy-korszak külpolitikája a nyugati nagyhatalmak és a Szovjetunió közötti feszültségek közepette zajlott, ami komoly kihívásokat jelentett Magyarország számára.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A Szovjetunióval való szoros együttműködés",
+      "B) A közép-európai országokkal való szövetség",
+      "C) A Kisantant ellenséges szomszédai és a növekvő német–olasz befolyás között",
+      "D) A Balkán országokkal való konfliktus"
+     ],
+     "question": "Milyen külpolitikai helyzetben kellett Magyarországnak navigálnia a Horthy-korszak alatt?",
+     "explanation": "Magyarországot ellenséges szomszédok (a Kisantant: Csehszlovákia, Románia, Jugoszlávia) vették körül; a revízió reményében az ország egyre inkább Olaszország, majd Németország felé fordult.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-78-05-007",
+   "lesson_id": "5c73504a-483d-4584-8d27-15fe1d3d447c",
+   "block_id": "29d7f310-511e-4ca7-a1c6-6ef35263ec81",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "Klebelsberg „1920-tól 1931-ig volt a közoktatásügyi miniszter”; „Az ő nevéhez fűződik a budapesti egyetem és a vidéki főiskolák fejlesztése”.",
+   "explanation": "Klebelsberg 1922 és 1931 között volt vallás- és közoktatásügyi miniszter. Legismertebb eredményei a tanyasi népiskolák (kb. 5000 tanterem) és a vidéki egyetemek (Szeged, Debrecen, Pécs) fejlesztése.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kuno_von_Klebelsberg",
+     "title": "Kuno von Klebelsberg",
+     "accessed": "2026-09-29"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Klebelsberg Kuno, a korszak neves politikai és kulturális személyisége, 1920-tól 1931-ig volt a közoktatásügyi miniszter. Ő vezette be az oktatási reformokat, amelyek célja a magyar iskolarendszer modernizálása volt. A népiskolák fejlesztése és a felsőoktatás támogatása révén Klebelsberg hozzájárult a műveltség szintjének emelkedéséhez. Az ő nevéhez fűződik a budapesti egyetem és a vidéki főiskolák fejlesztése is.",
+     "type": "text",
+     "heading": "Klebelsberg Kuno és az oktatás reformja",
+     "key_term": "Klebelsberg Kuno"
+    },
+    "after": {
+     "body": "Klebelsberg Kuno, a korszak neves politikai és kulturális személyisége, 1922-től 1931-ig volt vallás- és közoktatásügyi miniszter. Ő vezette be az oktatási reformokat, amelyek célja a magyar iskolarendszer modernizálása volt. A népiskolák fejlesztése és a felsőoktatás támogatása révén Klebelsberg hozzájárult a műveltség szintjének emelkedéséhez. Az ő nevéhez fűződik a tanyasi népiskolák ezreinek felépítése, valamint a szegedi, debreceni és pécsi egyetem fejlesztése.",
+     "type": "text",
+     "heading": "Klebelsberg Kuno és az oktatás reformja",
+     "key_term": "Klebelsberg Kuno"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-78-05-001": "fbba1034-af3a-4c13-ae24-d0ec7319f69c",
+  "HIST-78-05-002": "d4e85f4b-cd45-4a06-89af-1cf47de0ea38",
+  "HIST-78-05-003": "9536b065-d096-4cab-9a89-9acd7664b069",
+  "HIST-78-05-004": "b91ba1c9-c23a-4e1c-a321-b2327cbfc297",
+  "HIST-78-05-005": "420c2916-f7bd-4005-b3f1-9c1b0618742e",
+  "HIST-78-05-007": "1959dda5-f2f1-42e4-985a-d5511cde77ba"
+ }
+}

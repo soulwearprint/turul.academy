@@ -1,0 +1,316 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világ blokk: da63f7cb (HIST-910-10 L2)."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "0fb23c25-760a-4256-a9b2-79914fa9bec4",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Temesvár a Rákóczi-szabadságharc egyik stratégiai központja”",
+   "explanation": "Temesvár 1552 óta török kézen volt, csak 1716-ban foglalta vissza Savoyai Jenő. A Rákóczi-szabadságharcban (1703–1711) nem játszott szerepet; a másik kártya ([2]) is ezt állítja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Timișoara",
+     "title": "Timișoara",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Rákóczi's_War_of_Independence",
+     "title": "Rákóczi's War of Independence",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "Temesvár fontos kereskedelmi és katonai központ volt a Temesközben, de a Rákóczi-szabadságharcban nem játszott szerepet: 1552 óta török kézen volt, és csak 1716-ban foglalta vissza Savoyai Jenő. A város ezért nem a kurucok és a labancok harcainak színhelye, hanem a török kor mérlegéhez tartozó helyszín."
+   }
+  },
+  {
+   "block_id": "0fb23c25-760a-4256-a9b2-79914fa9bec4",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "1705: „a nagyszombati országgyűlésen” erősítették meg Rákóczit",
+   "explanation": "1705-ben a szécsényi országgyűlés választotta Rákóczit vezérlő fejedelemmé; Nagyszombatban 1705-ben békeszerződés-tárgyalások folytak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Diet_of_Szécsény",
+     "title": "Diet of Szécsény",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "1705-ben a nagyszombati országgyűlésen",
+     "1705-ben a szécsényi országgyűlésen"
+    ]
+   ]
+  },
+  {
+   "block_id": "0fb23c25-760a-4256-a9b2-79914fa9bec4",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A szabadságharc célja „a trónfosztás”",
+   "explanation": "A szabadságharc kezdeti célja a Habsburgok elnyomó politikájának megszüntetése és a rendi jogok helyreállítása volt; a trónfosztást csak az 1707-es ónodi országgyűlés mondta ki.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Rákóczi's_War_of_Independence",
+     "title": "Rákóczi's War of Independence",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Diet_of_Ónod",
+     "title": "Diet of Ónod",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A szabadságharc célja a trónfosztás, vagyis a Habsburgok hatalmának megdöntése volt.",
+     "A szabadságharc kezdeti célja a Habsburgok elnyomó politikájának megszüntetése és a rendi jogok helyreállítása volt; a trónfosztást csak az 1707-es ónodi országgyűlésen mondták ki."
+    ]
+   ]
+  },
+  {
+   "block_id": "f4d43813-d373-4fc1-899e-371d9d5813a5",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A svábok „öntevékeny” betelepülők",
+   "explanation": "A svábok betelepítése zömmel szervezett volt (a bécsi udvar és a földesurak szervezésében). Öntevékeny volt inkább a románok és szlovákok bevándorlása.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Danube_Swabians",
+     "title": "Danube Swabians",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "E csoportok közé tartoznak a svábok, akik a mezőgazdasági lehetőségek miatt érkeztek.",
+     "Ilyen volt például a románok és a szlovákok spontán bevándorlása; a svábok betelepítése zömmel szervezett volt."
+    ]
+   ]
+  },
+  {
+   "block_id": "f4d43813-d373-4fc1-899e-371d9d5813a5",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a magyar kormányzat szervezett betelepítési programokat indított”",
+   "explanation": "A szervezett betelepítést a bécsi udvar és a földesurak irányították; önálló magyar kormányzat nem volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Danube_Swabians",
+     "title": "Danube Swabians",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a magyar kormányzat szervezett betelepítési programokat indított",
+     "a bécsi udvar és a földesurak szervezett betelepítési programokat indítottak"
+    ]
+   ]
+  },
+  {
+   "block_id": "582c75ec-7f5e-4399-a7e0-4ea3b712ed32",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Mária Terézia „együttműködött a magyar rendekkel” az úrbéri rendeletnél",
+   "explanation": "Az úrbérrendezést (1767) Mária Terézia rendelettel vezette be, mert az országgyűlés ellenállt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Maria_Theresa",
+     "title": "Maria Theresa",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Együttműködött a magyar rendekkel, hogy támogassák reformjait, mint például az úrbéri rendelet, amely a jobbágyok helyzetét szabályozta.",
+     "Az úrbéri rendeletet (1767) az országgyűlés ellenállása miatt rendelettel adta ki; ez a jobbágyok terheit szabályozta."
+    ]
+   ]
+  },
+  {
+   "block_id": "582c75ec-7f5e-4399-a7e0-4ea3b712ed32",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A kettős vámhatár „elősegítette a kereskedelem fejlődését”",
+   "explanation": "Az 1754-es vámrendelet a magyar nyersanyag- és mezőgazdasági kivitelt olcsón az osztrák tartományokba irányította, a magyar ipar fejlődését hátráltatta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1526–1867)",
+     "title": "Kingdom of Hungary (1526–1867)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "replace": [
+    [
+     "Ez a rendszer elősegítette a kereskedelem fejlődését, de a magyar gazdaságra is hatással volt.",
+     "Ez a rendszer (1754) a magyar mezőgazdasági termékeket olcsón az osztrák tartományokba irányította, a magyar ipar fejlődését azonban hátráltatta."
+    ]
+   ]
+  },
+  {
+   "block_id": "582c75ec-7f5e-4399-a7e0-4ea3b712ed32",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A türelmi rendelet „vallásszabadságot biztosított”",
+   "explanation": "A türelmi rendelet (1781) az evangélikusok, reformátusok és ortodoxok korlátozott vallásgyakorlatát engedte meg, de nem teljes vallásszabadság volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Patent_of_Toleration",
+     "title": "Patent of Toleration",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "amely a vallásszabadságot biztosította a különböző felekezetek számára",
+     "amely az evangélikusok, reformátusok és ortodoxok korlátozott vallásgyakorlatát engedte meg (de nem teljes vallásszabadságot)"
+    ]
+   ]
+  },
+  {
+   "block_id": "a6f1cd6c-404d-48ae-a6f1-c9150df6d65b",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Temesvár a Rákóczi-szabadságharc „fontos eseményének” helyszíne – a magyarázat szerint nem volt jelentős",
+   "explanation": "Temesvár török kézen volt 1716-ig, így a kulcs hamis, és az magyarázat ellentmond a kérdésnek.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Diet_of_Ónod",
+     "title": "Diet of Ónod",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik településen mondta ki az országgyűlés a Habsburg-ház trónfosztását 1707-ben?",
+    "options": [
+     "A) Ónod",
+     "B) Temesvár",
+     "C) Szeged",
+     "D) Pécs"
+    ],
+    "correct": "A",
+    "explanation": "Az ónodi országgyűlés 1707-ben mondta ki a Habsburg-ház trónfosztását."
+   }
+  },
+  {
+   "block_id": "f1d1423f-8ec5-49c2-a986-5ff38480deeb",
+   "card_index": 0,
+   "field": "year",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "A spanyol örökösödési háború éve: 1703",
+   "explanation": "A háború 1701-ben kezdődött (a kártya szövege is ezt mondja), a világ blokk éve pedig 1703.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/War_of_the_Spanish_Succession",
+     "title": "War of the Spanish Succession",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "year": "1701"
+   }
+  },
+  {
+   "block_id": "5675dbc3-9283-46dc-bf7d-a59a5d4e0fa8",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A Határőrvidék kialakításának kezdete: „17. század”",
+   "explanation": "A Katonai Határőrvidék a 16. században kezdett kialakulni (az 1520-as évektől), a török terjeszkedésre válaszul.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Military_Frontier",
+     "title": "Military Frontier",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "correct": "A",
+    "explanation": "A Katonai Határőrvidék kialakítása a 16. században kezdődött, válaszul a török terjeszkedésre."
+   }
+  },
+  {
+   "block_id": "f58bbbd8-6a54-4228-a056-7b0c75536bad",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Poroszország a „legfontosabb rivális … Magyarországnak”",
+   "explanation": "Poroszország a Habsburg Birodalom (az osztrák tartományok és Magyarország uralkodójának) rivális volt, nem külön „Magyarország” riválisa.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Silesian_Wars",
+     "title": "Silesian Wars",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik ország volt a Habsburg Birodalom legfontosabb európai riválisa a 18. században?",
+    "explanation": "Poroszország volt a legfontosabb rivális, különösen a sziléziai háborúk idején."
+   }
+  },
+  {
+   "block_id": "b96bbd2a-6fcd-47ee-80e1-65b57bb9cc21",
+   "card_index": 6,
+   "field": "options",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A nyelvrendelet „Mária Terézia idején”",
+   "explanation": "A nyelvrendelet (1784) II. József nevéhez fűződik; a német lett az államigazgatás nyelve.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Joseph_II,_Holy_Roman_Emperor",
+     "title": "Joseph II, Holy Roman Emperor",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Mi volt II. József 1784-es nyelvrendeletének célja?",
+    "options": [
+     "A) A latin nyelv hivatalossá tétele",
+     "B) A német nyelv előtérbe helyezése",
+     "C) A magyar nyelv korlátozása",
+     "D) A magyar nyelv hivatalos használatának bevezetése"
+    ],
+    "correct": "B",
+    "explanation": "II. József 1784-ben a németet tette az államigazgatás nyelvévé."
+   }
+  }
+ ]
+}

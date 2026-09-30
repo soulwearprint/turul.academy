@@ -1,0 +1,617 @@
+{
+ "nat_id": "HIST-78-14",
+ "topic_id": "cbb05fa8-75e5-46ff-bc4d-cb91e73a94df",
+ "title_hu": "Mérlegen a magyar történelem",
+ "grade": 8,
+ "lessons": [
+  {
+   "lesson_id": "0f20ccee-2718-4450-bcb5-456ab25d3b96",
+   "title_hu": "Lábnyomaink a nagyvilágban",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "7453c039-a699-4273-9e86-d1192c82cdf2",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A 19. században számos magyar utazó indult felfedezőútra, hogy új ismereteket szerezzen. Kőrösi Csoma Sándor a tibeti kultúra és nyelv kutatására összpontosított, jelentős hatással volt a keleti tudományokra. Utazásai során sokat tett a magyar nyelv és kultúra nemzetközi megismertetéséért. Munkássága példaértékű a magyar felfedezők között, akik a világ különböző tájain nyomot hagytak.",
+       "type": "text",
+       "heading": "Világjáró magyarok",
+       "key_term": "világjáró magyarok"
+      },
+      {
+       "body": "A 20. században Szent-Györgyi Albert felfedezései, különösen a C-vitamin izolálása, nemcsak a magyar tudományra, hanem az egész világ egészségügyi gyakorlatára is hatással voltak. Munkáját Nobel-díjjal ismerték el, ami tovább növelte Magyarország tudományos hírnevét. A magyar tudósok munkássága sok területen, például az informatikában és az autóiparban is kiemelkedő szerepet játszott. A tudományos áttörések hozzájárultak a globális fejlődéshez.",
+       "type": "text",
+       "heading": "Tudományos felfedezések",
+       "key_term": "tudományos felfedezések"
+      },
+      {
+       "body": "A magyar sportolók a világ legnagyobb sporteseményein, így az olimpiákon is kiemelkedő teljesítményt nyújtanak. Puskás Ferenc nem nyert aranyérmet az 1952-es helsinki olimpián, de a magyar labdarúgás egyik legfontosabb eseménye volt a részvétele. Az olimpiai sikerek nemcsak a sportágakban, hanem a nemzeti büszkeségben is jelentős szerepet játszanak. A magyar olimpikonok teljesítménye világszerte elismerést nyert.",
+       "type": "text",
+       "heading": "Olimpiai sikerek",
+       "key_term": "olimpiai sikerek"
+      },
+      {
+       "body": "A 20. században Bartók Béla zeneszerző munkássága nemcsak Magyarországon, hanem világszerte elismertté vált. Zenei újításai és nemzetközi kiállításai hozzájárultak a magyar kultúra globális elismertségéhez. A magyar művészek, legyenek azok festők, szobrászok vagy zenészek, jelentős hatással voltak a nemzetközi művészeti életre. Művészetük a magyar identitás szerves részét képezi.",
+       "type": "text",
+       "heading": "Magyar művészet a világban",
+       "key_term": "magyar művészet"
+      },
+      {
+       "body": "A magyar felfedezők útvonalai, mint Kőrösi Csoma Sándor tibeti utazásai, jelentős kulturális hidat képeztek Kelet és Nyugat között. A magyar tudósok munkásságának helyszínei, mint a Szegedi Tudományegyetem, a kutatások központjává váltak. Az olimpiai helyszínek, mint a Helsinki Stadion, emlékezetes pillanatokat őriznek a magyar sporttörténelemben. A magyar művészek nemzetközi kiállításai, például a Velencei Biennále, a magyar kultúra nemzetközi elismerését szolgálják.",
+       "type": "text",
+       "heading": "Topográfia és útvonalak",
+       "key_term": "topográfia"
+      }
+     ]
+    },
+    {
+     "block_id": "1f1d6c02-634d-49bc-82a5-c08105b5a070",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A 19. század elején, amikor a magyar felfedezők, mint egy híres felfedező, felfedezték a világot, sokan a falusi közösségben éltek. A falusi emberek számára a felfedezők kalandjai izgalmas mesék voltak, amelyeket a tűz mellett hallgattak. A felfedezők útvonalai sokszor távoli országokba vezettek, ahol új kultúrákat ismertek meg. A falusi asszonyok gyakran készítettek ételeket, amelyekhez fűszereket hoztak a felfedezők, ezzel gazdagítva a helyi konyhát. A felfedezők sikerei büszkeséget hoztak a közösségnek, és sok fiatal álmodozott arról, hogy egyszer ők is bejárják a világot.",
+       "mood": "felfedezés",
+       "type": "story",
+       "heading": "A felfedezők mindennapjai"
+      },
+      {
+       "body": "A 20. század közepén, amikor a tudósok, mint egy híres tudós, forradalmi felfedezéseket tettek, a mindennapi emberek életében is változások történtek. Az új orvosi felfedezések, mint a C-vitamin szerepe, javították az emberek egészségét. A falusi orvosok gyakran használták ezeket az új tudományos ismereteket a gyógyítás során, így a falusi közösségek is profitáltak a tudósok munkájából. Az emberek bizalma nőtt a tudomány iránt, és a gyerekek között egyre többen álmodoztak arról, hogy tudósokká válnak.",
+       "mood": "tudomány",
+       "type": "story",
+       "heading": "A tudományos áttörések hatása a mindennapokra"
+      },
+      {
+       "body": "A 1952-es Helsinki olimpia idején a magyar sportolók, mint egy híres sportoló, világraszóló sikereket értek el. A falvakban és városokban az emberek izgatottan követték a versenyeket, és a győzelmek után közös ünnepléseket tartottak. Az iskolákban külön órákat szenteltek a sportnak, amelynek hatására a gyerekek is aktívan részt vettek a helyi sportéletben. A sportolók sikerei nemcsak a büszkeséget, hanem a közösség összetartását is erősítették, hiszen mindenki együtt ünnepelt.",
+       "mood": "sport",
+       "type": "story",
+       "heading": "Olimpiai sikerek és közösségi ünneplések"
+      },
+      {
+       "body": "A 20. században egy híres zeneszerző és más magyar művészek világszerte ismertté váltak. A falusi közösségekben az emberek nagy érdeklődéssel hallgatták a zenéjüket, amely új színeket hozott a mindennapi életükbe. A művészek nemzetközi kiállításai révén a helyi művészet is elismerést nyert, és sokan kezdtek érdeklődni a művészet iránt. A gyerekek az iskolákban rajz- és zeneórák keretében ismerkedtek meg a művészettel, ami inspirálta őket saját kreativitásuk kibontakoztatására.",
+       "mood": "művészet",
+       "type": "story",
+       "heading": "A magyar művészet nemzetközi színtéren"
+      }
+     ]
+    },
+    {
+     "block_id": "b5bbfe03-8381-4ed6-9f15-e1a7ef6c50a2",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Kőrösi Csoma Sándor útvonalai",
+       "heading": "Világjáró magyarok",
+       "description": "A 19. századi magyar utazók, mint Kőrösi Csoma Sándor, útvonalait bemutató térkép. A térképen feltüntetett helyszínek közé tartozik Tibet, India és más ázsiai országok, ahol Kőrösi Csoma Sándor a magyar nyelvet és kultúrát népszerűsítette.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "Szent-Györgyi Albert és a C-vitamin",
+       "heading": "Tudományos felfedezések",
+       "description": "A 20. századi magyar tudósok, mint Szent-Györgyi Albert, által elért tudományos áttörések diagramja, amely bemutatja a C-vitamin felfedezését és annak hatását az orvostudományra.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Puskás Ferenc és az 1952-es olimpia",
+       "heading": "Olimpiai sikerek",
+       "description": "Az 1952-es Helsinki olimpia idővonala, amelyen Puskás Ferenc és a magyar vízilabda csapat kiemelkedő teljesítményét mutatja be. A vízilabda aranyérme és a labdarúgás sikere is szerepel az idővonalon.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "Bartók Béla és nemzetközi sikerei",
+       "heading": "Magyar művészet a világban",
+       "description": "Bartók Béla arcképe, amely mellett a nemzetközi zenei fesztiválok helyszínei szerepelnek, ahol Bartók műveit bemutatták. A művészeti hatás és a nemzetközi elismerés hangsúlyozása.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "A magyar tudományos élet központjai",
+       "heading": "Tudósok munkássága",
+       "description": "A magyar tudósok, mint Szent-Györgyi Albert és mások, munkásságának helyszíneit bemutató térkép, amely magában foglalja a debreceni egyetemet, a Szegedi Tudományegyetemet és az amerikai kutatóintézeteket.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "Olimpiai helyszínek és magyar sikerek",
+       "heading": "Olimpiai helyszínek",
+       "description": "A magyar olimpiai sikerek helyszíneit bemutató térkép, amely tartalmazza a budapesti olimpiai pályázat helyszíneit és a fontosabb olimpiai városokat, ahol a magyar csapat sikeresen szerepelt.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A magyar kultúra globális hatása",
+       "heading": "Világjáró magyarok hatása",
+       "description": "A világjáró magyarok kulturális hatását bemutató diagram, amely a magyar nyelv és kultúra elterjedését ábrázolja a világ különböző részein.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "3603139f-f5a9-42c4-b628-8f4bdbdc534d",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A magyar történelem során megjelenő jelenségek és fogalmak, mint a nemzeti identitás, a haza védelme vagy a közösségi összetartozás, más országokban és kultúrákban is megtalálhatók. Például a nemzeti ébredés folyamata számos európai országban zajlott a 19. században, amely a helyi kultúrák és nyelvek újjáéledéséhez vezetett.",
+       "type": "world",
+       "year": "",
+       "heading": "A magyar történelem fogalmai más kultúrákban is megjelentek",
+       "link_hu": ""
+      }
+     ]
+    },
+    {
+     "block_id": "13e3275d-7e16-47a0-948e-167431430b9e",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Magyar utazó, aki a tibeti kultúra és nyelv kutatásával foglalkozott.",
+        "B) Magyar tudós, aki a gyógyszerészet terén végzett kutatásokat.",
+        "C) Magyar művész, aki nemzetközi hírnevet szerzett festményeivel.",
+        "D) Magyar sportoló, aki több olimpiai aranyérmet nyert."
+       ],
+       "question": "Ki volt Kőrösi Csoma Sándor, és miért fontos a magyar történelem szempontjából?",
+       "explanation": "Kőrösi Csoma Sándor a 19. században felfedezte Tibetet, és tudományos munkái révén hozzájárult a magyar nyelv és kultúra nemzetközi elismertségéhez.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Felfedezte a C-vitamint, ami jelentős hatással volt az orvostudományra.",
+        "B) Kifejlesztett egy új autómodellt, amely forradalmasította az ipart.",
+        "C) Ő volt az első, aki a világűrbe utazott.",
+        "D) Készített egy új festési technikát."
+       ],
+       "question": "Milyen tudományos áttörést ért el Szent-Györgyi Albert, és miért fontos ez a magyar tudomány szempontjából?",
+       "explanation": "Szent-Györgyi Albert a 20. században felfedezte a C-vitamint, amely jelentős előrelépést jelentett az egészségügyi kutatásokban és a magyar tudomány nemzetközi hírnevében.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Helsinki 1952",
+        "B) Róma 1960",
+        "C) Tokió 1964",
+        "D) Melbourne 1956"
+       ],
+       "question": "Melyik olimpiai helyszínen nyert Puskás Ferenc aranyérmet?",
+       "explanation": "Puskás Ferenc nem nyert aranyérmet az 1952-es helsinki olimpián, de a magyar labdarúgás egyik legfontosabb eseménye volt a részvétele.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Irodalom",
+        "B) Festészet",
+        "C) Zene",
+        "D) Sport"
+       ],
+       "question": "Melyik területen ért el világraszóló sikereket Bartók Béla?",
+       "explanation": "Bartók Béla a 20. századi magyar zene kiemelkedő alakja volt, aki nemzetközi elismerést szerzett népzenei feldolgozásaival és kompozícióival.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Az első világháború",
+        "B) A második világháború",
+        "C) Nemzetközi kiállítások",
+        "D) A trianoni békeszerződés"
+       ],
+       "question": "Melyik esemény jellemezte a 20. századi magyar művészetet a legjobban?",
+       "explanation": "A 20. századi magyar művészet kiemelkedő eseményei közé tartoznak a nemzetközi kiállítások, ahol magyar művészek nemzetközi elismerést nyertek.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "00cd13e9-5aab-4f1a-97cf-a2c1f4b67255",
+   "title_hu": "A magyar megmaradás kérdései",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "fc85b514-bb56-49b3-aacf-3e5bc86de9b4",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A középkori Magyar Királyság a szuverenitás szimbóluma volt, amely a keresztény Európa részeként állt. Hunyadi János, a 15. századi hadvezér, a török terjeszkedés ellen harcolt, biztosítva ezzel az ország függetlenségét. A szuverenitás megőrzése érdekében a magyar királyok szövetségeket kötöttek más európai hatalmakkal.",
+       "type": "text",
+       "heading": "Szuverenitás a középkorban",
+       "key_term": "szuverenitás"
+      },
+      {
+       "body": "A mohácsi csata 1526-ban a török hódoltság kezdetét jelentette, amely súlyosan megrázta a magyar társadalmat és a politikai struktúrát. A török uralom alatt a középkori örökség jelentős része pusztult el, és az etnikai arányok is megváltoztak. A török hódoltság időszaka alatt a magyarok száma csökkent, míg a különböző etnikai csoportok aránya megnövekedett.",
+       "type": "text",
+       "heading": "A török hódoltság következményei",
+       "key_term": "török hódoltság"
+      },
+      {
+       "body": "A 19. század végén, 1867-ben a kiegyezés létrehozta az Osztrák-Magyar Monarchiát, amely Közép-Európa legnagyobb birodalmává vált. Ferenc József császár uralkodása alatt a birodalom stabilitást és fejlődést hozott, de a nemzeti törekvések is felerősödtek. Bethlen Gábor és más vezetők próbálták megőrizni a magyar identitást a birodalmon belül.",
+       "type": "text",
+       "heading": "Az Osztrák-Magyar Monarchia",
+       "key_term": "Osztrák-Magyar Monarchia"
+      },
+      {
+       "body": "A 1920-as Trianoni békeszerződés következtében Magyarország területe jelentősen csökkent, és a magyarság a környező országokban kisebbségbe került. Ez a döntés máig tartó hatásokkal bír, hiszen a kisállami lét kényszerpályáira kényszerítette a magyarságot a nagyhatalmak árnyékában. A Trianon utáni Magyarország térképe a nemzeti identitás szempontjából is kulcsfontosságú.",
+       "type": "text",
+       "heading": "Trianon hatásai",
+       "key_term": "Trianon"
+      },
+      {
+       "body": "A 1989-es rendszerváltoztatás új lehetőségeket nyitott a kisebbségbe került magyarok számára. Antall József miniszterelnök vezetésével a magyar kormány törekedett a határon túli magyarsággal való kapcsolatépítésre. Az új típusú kapcsolatépítés célja a nemzeti összetartozás erősítése és a kisebbségi jogok védelme volt.",
+       "type": "text",
+       "heading": "Rendszerváltoztatás és nemzeti összetartozás",
+       "key_term": "rendszerváltozás"
+      },
+      {
+       "body": "A magyar megmaradás titkai közé tartoznak a szabadságharcok, mint az 1848-49-es forradalom és szabadságharc, amely a nemzeti identitás megőrzését szolgálta. II. Rákóczi Ferenc vezetésével a 17-18. századi szabadságharcok is hozzájárultak a magyar önállóság megőrzéséhez. Emellett a békés építkezés, a kultúra és oktatás fejlesztése is kulcsszerepet játszott a megmaradásban.",
+       "type": "text",
+       "heading": "Szabadságharcok és békés építkezés",
+       "key_term": "szabadságharcok"
+      }
+     ]
+    },
+    {
+     "block_id": "be0ea589-ceff-421d-9120-ff2c8370f713",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A falusi közösségekben a földművelés volt a megélhetés alapja. A gazdák reggelente korán keltek, hogy megkezdjék a munkát a földeken. Az aratás, vetés és a szüret időszakai különösen fontosak voltak, hiszen az élelem megtermelése nemcsak a családok, hanem az egész közösség túlélését biztosította. A földművelők sokszor egymásnak segítettek, közösen végezték a munkát, így erősítve a helyi közösségek összetartását. A szuverenitás fogalma ebben a kontextusban a föld birtoklásának és használatának jogát jelentette, amely a középkori Magyar Királyságban alapvető fontosságú volt.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A földművelés mindennapjai a középkorban"
+      },
+      {
+       "body": "A török hódoltság alatt a családok mindennapi élete rendkívül megnehezedett. A falvakban élők gyakran kénytelenek voltak elhagyni otthonaikat a háborúk miatt, és sokan menekültek a hódítók elől. Az otthon fogalma nemcsak a fizikai helyet, hanem a közös értékeket, a tradíciókat és a biztonságot is magában foglalta. A családok próbáltak megmaradni, és a helyi szokásokhoz igazodva ünnepeket tartani, amelyek segítettek megőrizni identitásukat a nehéz időkben.",
+       "mood": "család",
+       "type": "story",
+       "heading": "A család és az otthon szerepe a török hódoltság idején"
+      },
+      {
+       "body": "Az Osztrák-Magyar Monarchia idején a kereskedelem fellendült, és a városokban számos mesterség virágzott. A kézművesek és kereskedők mindennapja a piacokon zajlott, ahol árusították portékáikat. A középkori örökség megőrzése érdekében a hagyományos mesterségek tovább éltek, és a helyi termékek kereslete növekedett. A Monarchia gazdasági ereje lehetővé tette, hogy a középosztály felemelkedjen, és a városok fejlődjenek, ami hozzájárult a magyar identitás megerősödéséhez.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A kereskedelem és a mesterségek szerepe az Osztrák-Magyar Monarchiában"
+      },
+      {
+       "body": "A Trianon utáni Magyarországon a hit és a vallási közösségek fontos szerepet játszottak a megmaradásban. Az emberek a templomokban gyűltek össze, ahol nemcsak vallási szertartásokat tartottak, hanem közösségi eseményeket is. Az ünnepek, mint például a karácsony és a húsvét, alkalmat adtak arra, hogy a családok és barátok együtt legyenek, megosszák örömeiket és nehézségeiket. A hitélet segített a közösségeknek összetartani a nehéz időkben, és erősítette a magyar identitást.",
+       "mood": "hit",
+       "type": "story",
+       "heading": "A hit és az ünnepek szerepe a Trianon utáni Magyarországon"
+      },
+      {
+       "body": "A rendszerváltoztatás után a gyermekek nevelése új irányt vett. A családokban a szülők igyekeztek biztosítani a gyermekeik számára a legjobb oktatást, hiszen a jövőjük szempontjából ez kulcsfontosságú volt. Az iskolákban a hagyományos tananyagon túl a magyar kultúra és történelem iránti érdeklődést is ösztönözték. A szülők, tanárok és közösségi vezetők együttműködése segítette a fiatalokat abban, hogy megértsék saját identitásukat és a magyar nemzet múltját, amely a megmaradásuk alapja volt.",
+       "mood": "nevelés",
+       "type": "story",
+       "heading": "A gyermekek nevelése a rendszerváltoztatás után"
+      }
+     ]
+    },
+    {
+     "block_id": "be957c18-a67a-4a5d-9eb5-b942419bded8",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A középkori Magyarország területei és fontos városai",
+       "heading": "A magyar királyság a középkorban",
+       "description": "Egy térkép, amely bemutatja a középkori Magyarország területét, beleértve a fontos városokat és régiókat, mint Buda, Pest, Szeged és Eger.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "Mohácsi csata: a török hódoltság kezdete",
+       "heading": "Mohácsi csata 1526",
+       "description": "Egy idővonal, amely a Mohácsi csata eseményeit mutatja be, kiemelve a csata dátumát (1526) és a következményeit a magyar államiságra.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A török hódoltság területei Magyarországon",
+       "heading": "A török hódoltság területei",
+       "description": "Egy térkép, amely a török hódoltság alatt Magyarország területének megoszlását mutatja, kiemelve a megszállt és a szabad területeket.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "Az Osztrák-Magyar Monarchia térképe",
+       "heading": "Az Osztrák-Magyar Monarchia",
+       "description": "Egy térkép, amely bemutatja az Osztrák-Magyar Monarchia területét, beleértve a különböző népeket és régiókat, mint Csehország, Szlovákia és Horvátország.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "Trianon utáni Magyarország",
+       "heading": "Trianon 1920",
+       "description": "Egy térkép, amely a Trianoni békeszerződés következtében Magyarország területének csökkenését mutatja be, kiemelve a határok változásait.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "A rendszerváltoztatás főbb eseményei",
+       "heading": "Rendszerváltoztatás 1989",
+       "description": "Egy idővonal, amely bemutatja a rendszerváltoztatás fontos eseményeit, beleértve Antall József miniszterelnöki beiktatását és a demokratikus választások lebonyolítását.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A magyar szabadságharcok időrendje",
+       "heading": "Szabadságharcok a magyar történelemben",
+       "description": "Egy diagram, amely a magyar szabadságharcokat mutatja be, beleértve a legfontosabb vezetőket, mint II. Rákóczi Ferenc és a 1848-49-es forradalom eseményeit.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Kisebbségi magyar területek a Trianon után",
+       "heading": "Kisebbségi magyar területek",
+       "description": "Egy térkép, amely bemutatja a Trianon után kisebbségbe került magyar közösségek elhelyezkedését a környező országokban, mint Szlovákia, Románia és Szerbia.",
+       "visual_type": "térkép"
+      }
+     ]
+    },
+    {
+     "block_id": "552d24d1-03a4-461b-8104-23d0252a9417",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "1526-ban a mohácsi csata után a Magyar Királyság jelentős területeket veszített, ami a Habsburgok és a törökök hatalmának megerősödéséhez vezetett. Ekkoriban a török Birodalom terjeszkedése középpontjában állt, míg Európa más részein a reformáció folyamata bontakozott ki, amely a vallási és politikai feszültségeket növelte. A török terjeszkedés következtében a magyar társadalom etnikai összetétele is jelentősen megváltozott, ami a későbbi magyar identitásformálás szempontjából is fontos volt.",
+       "type": "world",
+       "year": "1526",
+       "heading": "A mohácsi csata következményei Európában",
+       "link_hu": "A mohácsi csata következtében a török hódítások miatt a magyar népesség elvándorlása és a határmenti területek elnéptelenedése a magyar megmaradás kérdését sürgette."
+      },
+      {
+       "body": "1867-ben a kiegyezés létrejötte után az Osztrák-Magyar Monarchia megerősödött Közép-Európában, amely az iparosodás és a gazdasági fejlődés korszakát hozta el. Ekkoriban a nemzetállamok kialakulása, valamint a nacionalizmus erősödése jellemezte Európát, amely a különböző etnikai csoportok közötti feszültségeket is fokozta. A Monarchia keretein belül a magyar politikai elit próbálta megőrizni a magyar identitást és kulturális örökséget a nemzetiségi konfliktusok ellenére is.",
+       "type": "world",
+       "year": "1867",
+       "heading": "A kiegyezés és a közép-európai helyzet",
+       "link_hu": "A kiegyezés a magyar politikai autonómiát biztosította, ami a magyar megmaradás szempontjából kulcsfontosságú lépést jelentett a nemzeti identitás megőrzésében."
+      },
+      {
+       "body": "1920-ban a Trianoni békeszerződés következtében Magyarország területe több mint kétharmadával csökkent, és a környező országokhoz került a magyar nemzeti közösségek jelentős része. Ezen időszakban Európában a Versailles-i békeszerződések következtében kialakult új határok és államok a nemzeti kisebbségek helyzetét is megnehezítették, amely különböző etnikai feszültségeket szült a térségben. A Trianon utáni helyzet a magyar identitás megőrzését és a kisebbségi magyar közösségek helyzetét is alapvetően befolyásolta.",
+       "type": "world",
+       "year": "1920",
+       "heading": "Trianon és a nemzetközi helyzet",
+       "link_hu": "Trianon következményeként a magyar kisebbségek helyzete a környező országokban súlyosbodott, ami a magyar megmaradás kérdését új kihívások elé állította."
+      },
+      {
+       "body": "1989-ben a kelet-európai rendszerváltozások során Magyarországon is lezajlott a politikai átmenet, amely a szocialista rendszer végét és a demokratikus berendezkedés kialakulását hozta el. Ekkoriban a berlini fal leomlása és a Szovjetunió felbomlása is zajlott, amelyek globális szinten is jelentős változásokat idéztek elő. A rendszerváltozás lehetőséget biztosított a magyar kisebbségek számára, hogy újra kapcsolatokat építsenek a szomszédos országokban élő magyar közösségekkel, így erősítve a magyar nemzeti identitást.",
+       "type": "world",
+       "year": "1989",
+       "heading": "A rendszerváltoztatás és a globális kontextus",
+       "link_hu": "A rendszerváltozás következtében a magyar kisebbségek jogi és politikai helyzete javult, ami a magyar megmaradás szempontjából kedvező irányt jelentett."
+      }
+     ]
+    },
+    {
+     "block_id": "39200511-ad1c-488f-ba87-dca96be1cf59",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 1526",
+        "B) 1867",
+        "C) 1920",
+        "D) 1989"
+       ],
+       "question": "Mikor zajlott a mohácsi csata, amely jelentős hatással volt a magyar történelemre?",
+       "explanation": "A mohácsi csata 1526-ban zajlott, és a magyar királyság török hódoltság alá kerülését eredményezte, ami drámai változásokat indított el a magyar történelemben.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) 1867",
+        "B) 1920",
+        "C) 1947",
+        "D) 1989"
+       ],
+       "question": "Mi a Trianon, és mikor írták alá a békeszerződést?",
+       "explanation": "A Trianon a 1920-ban aláírt békeszerződés, amely Magyarország területének jelentős csökkentését eredményezte, és máig hatással van a magyar nemzet sorsára.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) A magyar király, aki a középkorban uralkodott.",
+        "B) A szabadságharc vezetője a török hódoltság ellen.",
+        "C) A Rákóczi-szabadságharc vezetője, aki a Habsburgok ellen küzdött.",
+        "D) Az Osztrák-Magyar Monarchia első uralkodója."
+       ],
+       "question": "Ki volt II. Rákóczi Ferenc, és miért fontos a magyar történelem szempontjából?",
+       "explanation": "II. Rákóczi Ferenc a 18. század elején a Rákóczi-szabadságharc vezetője volt, amely a Habsburg uralom ellen irányult, és fontos része a magyar megmaradás történetének.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) 1526",
+        "B) 1867",
+        "C) 1920",
+        "D) 1989"
+       ],
+       "question": "Mikor történt a kiegyezés, amely létrehozta az Osztrák-Magyar Monarchiát?",
+       "explanation": "A kiegyezés 1867-ben jött létre, amely az Osztrák-Magyar Monarchia megalakulásához vezetett, és Közép-Európa politikai stabilitását biztosította.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Mohácsi csata",
+        "B) Trianon",
+        "C) 1989",
+        "D) Kiegyezés"
+       ],
+       "question": "Melyik politikai esemény jelzi a magyar rendszerváltoztatást?",
+       "explanation": "A rendszerváltoztatás 1989-ben zajlott, és a kommunista rendszer végét, valamint a demokratikus berendezkedés kialakulását jelentette Magyarországon.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "edbff2c1-841b-42a9-9495-633d4b31995f",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1000",
+      "B) 896",
+      "C) 1526",
+      "D) 1848"
+     ],
+     "question": "Mikor történt a magyar államalapítás?",
+     "explanation": "A magyar államalapítást Szent István király 1000-ben véglegesítette, amikor megkoronázták.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Árpád",
+      "B) Géza",
+      "C) István",
+      "D) Kálmán"
+     ],
+     "question": "Ki volt a magyar honfoglalás vezetője?",
+     "explanation": "Árpád vezette a magyar törzseket a honfoglalás idején, amely 895 körül kezdődött.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Mohács",
+      "B) Nándorfehérvár",
+      "C) Trianon",
+      "D) Szigetvár"
+     ],
+     "question": "Melyik csata volt a magyar történelem egyik legfontosabb veresége?",
+     "explanation": "A mohácsi csata 1526-ban zajlott, és jelentős következményekkel járt a magyar államra nézve.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1848",
+      "B) 1867",
+      "C) 1918",
+      "D) 1945"
+     ],
+     "question": "Mikor hirdették ki a magyar függetlenséget?",
+     "explanation": "A magyar függetlenséget 1848. március 15-én hirdették ki, ami a forradalom kezdetét jelezte.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) Ferenc József",
+      "B) Kossuth Lajos",
+      "C) Széchenyi István",
+      "D) Andrássy Gyula"
+     ],
+     "question": "Ki volt a kiegyezés egyik főszereplője?",
+     "explanation": "Andrássy Gyula volt az egyik fő tárgyaló a kiegyezés során, amely 1867-ben jött létre.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A Molotov-Ribbentrop paktum",
+      "B) A lengyel invázió",
+      "C) A Pearl Harbor támadás",
+      "D) A D-napi partraszállás"
+     ],
+     "question": "Melyik esemény indította el a második világháborút?",
+     "explanation": "A második világháború 1939. szeptember 1-jén kezdődött, amikor Németország megtámadta Lengyelországot.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1920",
+      "B) 1918",
+      "C) 1947",
+      "D) 1956"
+     ],
+     "question": "Melyik évben írták alá a trianoni békeszerződést?",
+     "explanation": "A trianoni békeszerződést 1920. június 4-én írták alá, amely jelentős területveszteséget okozott Magyarországnak.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1989",
+      "B) 1990",
+      "C) 1991",
+      "D) 1994"
+     ],
+     "question": "Melyik évben történt a magyar rendszerváltás?",
+     "explanation": "A magyar rendszerváltás 1989-ben zajlott, amely a kommunista rendszer végét jelentette.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

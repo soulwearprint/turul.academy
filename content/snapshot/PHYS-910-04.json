@@ -1,0 +1,946 @@
+{
+ "nat_id": "PHYS-910-04",
+ "topic_id": "295487ec-e544-4880-af3e-feae27ee8f8b",
+ "title_hu": "Az energia",
+ "grade": 9,
+ "lessons": [
+  {
+   "lesson_id": "105f8cb6-eb87-4261-a439-cf7514faa113",
+   "title_hu": "Energiafelhasználás és források",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "48b363fc-5e40-4ae3-8e36-da3630011874",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az emberiség energiafelhasználása az utóbbi évtizedekben folyamatosan növekszik. A napi életünk során, például az otthonunkban, az iskolában és a munkahelyünkön is rengeteg energiát használunk. Gondoljunk csak a számítógépeinkre, mobiltelefonjainkra és a különféle háztartási gépekre, amelyek mind elektromos áramot igényelnek. Az energiaforrások megértése segít tudatos döntéseket hozni a fenntartható jövő érdekében.",
+       "type": "text",
+       "heading": "Az emberiség energiafelhasználása",
+       "key_term": "energiafelhasználás"
+      },
+      {
+       "body": "A Nap a Föld energiakészletének elsődleges forrása. Napjainkban egyre több háztartás használ napelemeket, amelyek közvetlenül a napfényből termelnek villamos energiát. Ez nemcsak környezetbarát megoldás, hanem hosszú távon költséghatékony is. A Nap energiája a fotoszintézis során is kulcsszerepet játszik, lehetővé téve a növények növekedését, amelyek az élelmiszerlánc alapját képezik.",
+       "type": "text",
+       "heading": "A Nap, mint energiaforrás",
+       "key_term": "Nap (energiaforrás)"
+      },
+      {
+       "body": "A megújuló energiaforrások, mint a napenergia, szélenergia és vízenergia, folyamatosan rendelkezésre állnak, míg a nem megújuló források, mint a fosszilis tüzelőanyagok, kimerülnek. Például a szélerőművek, amelyek a szél erejét használják fel, egyre népszerűbbek a világban. Ezzel szemben a szén- és kőolajfogyasztás csökkentése elengedhetetlen a környezet védelme érdekében.",
+       "type": "text",
+       "heading": "Megújuló és nem megújuló energiaforrások",
+       "key_term": "megújuló és nem megújuló energiaforrások"
+      },
+      {
+       "body": "Az energiaforrásaink kiválasztása közvetlen hatással van a környezet állapotára. Az elektromos autók, amelyek kevesebb szennyező anyagot bocsátanak ki, egyre elterjedtebbek a városokban. A hagyományos energiaforrások, mint a szén és a gáz, hozzájárulnak a légszennyezéshez és a globális felmelegedéshez. Fontos, hogy tudatosan válasszuk meg, milyen energiaforrást használunk.",
+       "type": "text",
+       "heading": "Az energiatermelés és a környezet kapcsolata",
+       "key_term": "energiatermelés és környezet"
+      },
+      {
+       "body": "A jövő energiaforrásainak kihasználása nemcsak a technológiai fejlődésen múlik, hanem a társadalom hozzáállásán is. A kutatók folyamatosan dolgoznak új technológiákon, mint például a hidrogénenergia, amely ígéretes alternatíva lehet. Az iskolákban és közösségekben folytatott energiahatékonysági programok segíthetnek a fiataloknak tudatosabb döntéseket hozni az energiafelhasználás terén.",
+       "type": "text",
+       "heading": "Jövőbeli energiaforrásaink kihasználása",
+       "key_term": "jövőbeli energiaforrások"
+      },
+      {
+       "body": "Az örökmozgók olyan gépek, amelyek állítólag képesek végtelen energiát termelni anélkül, hogy bármilyen energiaforrást használnának. A fizika törvényei szerint azonban ilyen gépek nem létezhetnek, mivel ellentmondanak az energiamegmaradás törvényének. A mai technológia fejlődése mellett is fontos, hogy megértsük, miért nem lehet örökmozgót építeni.",
+       "type": "text",
+       "heading": "Örökmozgók és a lehetetlenségük",
+       "key_term": "örökmozgó"
+      },
+      {
+       "body": "A napállandó a Napból a Földre érkező sugárzás mennyiségét jelenti, és megmutatja, mennyi energiát tudunk a Napból hasznosítani. A napelemek hatékonysága szorosan összefügg a napállandó értékével, amely körülbelül 1361 W/m². A napállandó megértése segít a napenergia hatékonyabb kihasználásában, ami kulcsfontosságú a fenntartható jövő szempontjából.",
+       "type": "text",
+       "heading": "A napállandó és jelentősége",
+       "key_term": "napállandó"
+      }
+     ]
+    },
+    {
+     "block_id": "a0457bbe-af84-4974-835d-eb5567ea2b43",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal, aki a naplementét nézi, észreveszi, hogy a napfény a földre érkezik. Ez a fény nem csupán szépséget hoz, hanem energiát is, amely a Föld elsődleges energiaforrása. A napfényből származó energia a fotoszintézis során a növények által kémiai energiává alakul át, ezáltal táplálva az élelmiszerláncot.",
+       "type": "story",
+       "heading": "A napfény beérkezése"
+      },
+      {
+       "body": "A növények a napfényből származó energiát felhasználva oxigént termelnek és szerves anyagokat hoznak létre. Ezek a szerves anyagok később a táplálékláncban állatokhoz és emberekhez jutnak el. Ezzel a folyamattal az emberek közvetve a napenergiát használják fel, ami a megújuló energiaforrások egyik legfontosabb példája.",
+       "type": "story",
+       "heading": "Növények és energiaátalakítás"
+      },
+      {
+       "body": "Amikor valaki napenergiát használó eszközt, például napelemeket telepít otthonába, a napfényből származó energiát közvetlenül elektromos árammá alakítja. Ez az áram felhasználható világításra, fűtésre vagy akár elektromos autók töltésére is. Ez a gyakorlat az energiafelhasználás fenntartható módját képviseli.",
+       "type": "story",
+       "heading": "Energiafelhasználás a mindennapokban"
+      },
+      {
+       "body": "A fiatal észreveszi, hogy az energiafelhasználás nem csupán megújuló forrásokra épül. Az energiaszükséglet kielégítése érdekében fosszilis tüzelőanyagokat, mint a szén és a kőolaj is használnak. Ezek a források viszont végesek, és a környezetre is káros hatással vannak, például szén-dioxid-kibocsátásukkal hozzájárulnak a globális felmelegedéshez.",
+       "type": "story",
+       "heading": "Nem megújuló energiaforrások"
+      },
+      {
+       "body": "A fiatal elgondolkodik a jövő lehetőségein. Az energiafelhasználás fenntarthatóbbá tétele érdekében egyre inkább a megújuló energiaforrások, mint a szél- és napenergia, valamint az innovatív technológiák, például az energiatárolás és a zöld hidrogén felé fordulunk. A jövőbeni energiaforrások kihasználása nemcsak a környezet védelmét szolgálja, hanem lehetőséget ad arra is, hogy az energiahatékonyságot növeljük.",
+       "type": "story",
+       "heading": "A jövő energiaforrásai"
+      }
+     ]
+    },
+    {
+     "block_id": "88dc4720-bc99-462d-8c4c-99539640f446",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az energiafelhasználás forrásainak változása az idő múlásával.",
+       "heading": "Az emberiség energiafelhasználása",
+       "description": "Egy oszlopdiagram, amely az emberiség energiafelhasználását mutatja különböző források szerint (pl. fosszilis tüzelőanyagok, megújuló energiaforrások, atomenergia) az utolsó 50 évben.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A Nap mint elsődleges energiaforrás a Földön.",
+       "heading": "A Nap energiaforrásként",
+       "description": "Egy kördiagram, amely bemutatja, hogy a Nap mennyi energiát biztosít a Föld számára, és hogyan hasznosítják ezt az energiát (pl. napenergia, fotoszintézis).",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Megújuló és nem megújuló energiaforrások áttekintése.",
+       "heading": "Megújuló és nem megújuló energiaforrások",
+       "description": "Egy vázlat, amely megkülönbözteti a megújuló energiaforrásokat (pl. napenergia, szélenergia, vízenergia) és a nem megújuló energiaforrásokat (pl. szén, kőolaj, földgáz).",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Az energiatermelés és a környezet kapcsolata.",
+       "heading": "Energiatermelés és környezet",
+       "description": "Egy keresztmetszeti ábra, amely bemutatja az energiatermelés különböző módjait és azok hatását a környezetre (pl. szén elégetése vs. napenergia hasznosítása).",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A jövő energiaforrásainak potenciálja.",
+       "heading": "Jövőbeli energiaforrások kihasználása",
+       "description": "Egy előrejelző grafikon, amely a jövőbeli energiaforrások (pl. hidrogénenergia, tengeri energia) várható növekedését mutatja be a következő 20 évben.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az örökmozgó gépek elmélete és a valóság.",
+       "heading": "Örökmozgók és lehetetlenségük",
+       "description": "Egy illusztráció, amely bemutatja, hogyan működne egy örökmozgó gép, és miért nem lehetséges az építése (pl. az energia megmaradásának törvénye).",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A napállandó és annak hatása a Föld energiakészletére.",
+       "heading": "Napállandó",
+       "description": "Egy grafikon, amely a napállandó (a Nap által a Földre érkező energia) változását mutatja különböző időszakokban, és a Föld távolságának hatását a napsugárzásra.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az energiafelhasználás területi eltérései.",
+       "heading": "Energiafelhasználás területi változásai",
+       "description": "Egy térkép, amely bemutatja a világ különböző részein az energiafelhasználás mértékét és típusait, kiemelve az ipari és fejlődő országokat.",
+       "visual_type": "térkép"
+      }
+     ]
+    },
+    {
+     "block_id": "b42fb806-692d-4cb1-8b4c-dff12d57d755",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Az energiafelhasználás témája a mindennapi életben több formában is megjelenik, például a háztartások energiafogyasztásában, mint a villanyszámla vagy az energiatakarékos készülékek választásakor.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Energia a mindennapokban",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "b09f39df-f7fd-4af2-b3d9-b9f6faa22817",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A Nap",
+        "B) A szél",
+        "C) A fosszilis tüzelőanyagok",
+        "D) A víz"
+       ],
+       "question": "Mi a Föld energiakészletének elsődleges forrása?",
+       "explanation": "A Nap (napenergia) az elsődleges forrása a Föld energiakészletének, mivel az összes többi energiaforrás, például a szél és a fosszilis tüzelőanyagok is a Nap energiájából származik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Szén",
+        "B) Földgáz",
+        "C) Napenergia",
+        "D) Kőolaj"
+       ],
+       "question": "Melyik energiaforrás tekinthető megújulónak?",
+       "explanation": "A napenergia (napfény) megújuló energiaforrás, mivel folyamatosan rendelkezésre áll, és nem merül ki, ellentétben a fosszilis tüzelőanyagokkal.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Az energiatermelés nem befolyásolja a környezetet.",
+        "B) Az energiatermelés környezetszennyezést okozhat.",
+        "C) A környezet állapota javítja az energiatermelést.",
+        "D) Az energiatermelés csak pozitív hatású."
+       ],
+       "question": "Mi a kapcsolat az energiatermelés és a környezet állapota között?",
+       "explanation": "Az energiatermelés, különösen a fosszilis tüzelőanyagok égetése, környezetszennyezést okozhat, ami negatívan befolyásolja a környezet állapotát.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Kimerülnek, ha felhasználják őket.",
+        "B) Végtelen mennyiségben állnak rendelkezésre.",
+        "C) Kizárólag napenergiából származnak.",
+        "D) Mindig környezetbarát módon hasznosíthatók."
+       ],
+       "question": "Melyik állítás igaz a nem megújuló energiaforrásokra?",
+       "explanation": "A nem megújuló energiaforrások, mint a szén, földgáz és kőolaj, kimerülnek, ha felhasználják őket, mivel hosszú idő alatt képződnek.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Csak fosszilis tüzelőanyagok használata.",
+        "B) Megújuló energiaforrások fejlesztése és alkalmazása.",
+        "C) Az energiafelhasználás csökkentése.",
+        "D) Az energiatakarékosság figyelmen kívül hagyása."
+       ],
+       "question": "Milyen lehetőségek vannak az energiaforrások kihasználásának javítására a jövőben?",
+       "explanation": "A megújuló energiaforrások, mint a nap- és szélenergia, fejlesztése és alkalmazása javíthatja az energiaforrások kihasználását és csökkentheti a környezeti hatásokat.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "0c30dccc-2b82-401b-94b8-6d1603177937",
+   "title_hu": "Energiaváltozások és megmaradás",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "35b66a79-b3f7-4c43-b913-4ad1cd4d9fb7",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A munka (W) az erő (F) és az elmozdulás (s) szorzataként értelmezhető. Ha például egy barátodat segíted felemelni egy nehéz táskát, akkor te munkát végzel, hiszen erőt fejtesz ki, hogy a táska magasabbra kerüljön. Ez a munka a helyzeti energiát (E_p) növeli, ami a test helyzetéből adódik. Az energia (E) pedig a munka végzésére való képesség, amely a fizikai világ alapvető fogalma.",
+       "type": "text",
+       "heading": "Munka és energia",
+       "key_term": "munka, energia, helyzeti energia"
+      },
+      {
+       "body": "A helyzeti energia (E_p) azt mutatja meg, mennyi energia van egy testben a magassága miatt. Például, ha egy labdát felemelsz, akkor a labda helyzeti energiát nyer. A mozgási energia (E_k) pedig azt fejezi ki, hogy mennyi energia van a mozgó testben, például amikor a labda leesik, és gyorsulni kezd. A kettő közötti átmenet jól látható, amikor a labda a föld felé zuhan — a helyzeti energia csökken, míg a mozgási energia növekszik.",
+       "type": "text",
+       "heading": "Helyzeti és mozgási energia",
+       "key_term": "helyzeti energia, mozgási energia"
+      },
+      {
+       "body": "Ha egy test szabadon esik, például egy kő, akkor a munkatétel és az energiamegmaradás segítségével meghatározhatjuk a becsapódási sebességét. Az esés során a helyzeti energia fokozatosan mozgási energiává alakul át, így a földre érkezve a kő maximális sebességgel ütközik. Ez a jelenség jól látható, ha egy szakadék széléről ejtünk le egy követ.",
+       "type": "text",
+       "heading": "Szabadon eső testek",
+       "key_term": "szabadon eső test, becsapódási sebesség, munkatétel, energiamegmaradás"
+      },
+      {
+       "body": "Az energia megmaradásának törvénye azt mondja ki, hogy zárt rendszerben az energia mennyisége állandó. Ha egy autó fékezik, az energia nem tűnik el, csupán átalakul hővé a súrlódás miatt. Az elektromos autók rekuperációs fékezése során a mozgási energia visszanyerésre kerül, és újra felhasználható, például az akkumulátor töltésére. Ez a folyamat bemutatja, hogyan lehet fenntartható módon energiát használni.",
+       "type": "text",
+       "heading": "Energiamegmaradás és súrlódás",
+       "key_term": "energia megmaradása, súrlódás"
+      },
+      {
+       "body": "A rugalmas energia (E_r) a deformált rugókban vagy gumiszalagokban tárolt energiát jelenti. Ha egy gumiszalagot megfeszítünk, akkor rugalmas energiát tárolunk benne. Amikor elengedjük, ez az energia mozgási energiává alakul, és a szalag visszaugrik. Ezt a jelenséget jól megfigyelhetjük, ha egy gumiszalagot használunk egy kő elhajítására — a gumiszalag energiája a kő mozgásává alakul.",
+       "type": "text",
+       "heading": "Rugalmas energia",
+       "key_term": "rugalmas energia"
+      },
+      {
+       "body": "Gondoljunk csak a telefonunk vezeték nélküli töltésére! Amikor a telefont a töltőpadra helyezzük, az elektromágneses energia átalakul elektromos energiává, amely feltölti az akkumulátort. Ez a folyamat jól példázza az energia átalakulását, és azt, hogy a modern technológia hogyan használja ki az energiamegmaradás elvét a mindennapi életben. Az ilyen jelenségek megértése segít a tudatos energiafelhasználásban.",
+       "type": "text",
+       "heading": "Energiaváltozások a mindennapokban",
+       "key_term": "energia átalakulás"
+      }
+     ]
+    },
+    {
+     "block_id": "ef0d497b-d41d-46f3-8348-e8ee91f56158",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal elhelyezi a telefonját a vezeték nélküli töltőn. A töltő áramot használ, hogy elektromágneses mezőt hozzon létre, amely energiát ad át a telefon akkumulátorának.",
+       "type": "story",
+       "heading": "A telefon töltése"
+      },
+      {
+       "body": "A telefon akkumulátora, amely kezdetben kémiai energiát tárol, elkezdi átalakítani ezt az energiát elektromos energiává. A telefon feléled, és a képernyőn megjelenik az akkumulátor töltöttségi szintje.",
+       "type": "story",
+       "heading": "Energia átalakulása"
+      },
+      {
+       "body": "A telefon működése során a tárolt elektromos energia mozgási energiává alakul, amikor a felhasználó az ujjával navigál a képernyőn. A mozgási energia a telefon belső alkatrészein keresztül terjed, lehetővé téve a különböző alkalmazások futtatását.",
+       "type": "story",
+       "heading": "A telefon működése"
+      },
+      {
+       "body": "Ha a telefon hirtelen a földre esik, a mozgási energia, amely a telefon sebességéből adódik, a becsapódáskor hővé és deformációs energiává alakul, majd a telefon törése vagy sérülése révén belső energiává változik.",
+       "type": "story",
+       "heading": "A telefon esése"
+      },
+      {
+       "body": "Miután a telefon megsérült, a felhasználó megpróbálja újraindítani. Az újraindítás során a telefon újra felhasználja a kémiai energiát az akkumulátorban, hogy helyreállítsa a működését, ezzel bemutatva az energia megmaradásának elvét.",
+       "type": "story",
+       "heading": "A telefon újraélesztése"
+      }
+     ]
+    },
+    {
+     "block_id": "fa808a7a-40cc-442e-bba4-e756161d523d",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A test emelésekor a helyzeti energia nő, míg a mozgási energia csökken, ha a test fokozatosan megáll.",
+       "heading": "Helyzeti és mozgási energia",
+       "description": "Egy test emelését és mozgását ábrázoló diagram, amely bemutatja a helyzeti energia (mgh) és a mozgási energia (mv²/2) közötti kapcsolatot.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A munka akkor végezhető, ha az erő és az elmozdulás iránya azonos.",
+       "heading": "Munka",
+       "description": "Egy vázlat, amely a munka fogalmát magyarázza: a munka (W) a test elmozdulása (s) és az alkalmazott erő (F) szorzataként van ábrázolva.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A sebesség folyamatosan nő, és a becsapódási sebesség a magasság és a gravitációs gyorsulás függvénye.",
+       "heading": "Becsapódási sebesség szabadon eső testnél",
+       "description": "Egy grafikon, amely a szabadon eső test sebességét (v) ábrázolja az idő (t) függvényében, figyelembe véve a gravitációs gyorsulást (g).",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az elhajított kő mozgása során a helyzeti energia csökken, míg a mozgási energia nő.",
+       "heading": "Elhajított kő mozgása",
+       "description": "Egy diagram, amely bemutatja az elhajított kő mozgásának parabolikus pályáját, a mozgási energia és a helyzeti energia változását.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az energia megmarad, de a súrlódás és közegellenállás miatt egy része hőenergiává alakul.",
+       "heading": "Energia megmaradása",
+       "description": "Egy vázlat, amely bemutatja az energia megmaradásának elvét, különböző esetekben, mint pl. súrlódás és közegellenállás hiányában és jelenlétében.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A rugó összenyomásakor rugalmas energia tárolódik, amely a rugó kinyitásakor mozgási energiává alakulhat.",
+       "heading": "Rugalmas energia",
+       "description": "Egy diagram, amely a rugó vagy gumiszalag összenyomódását és a rugalmas energia (E_rug) tárolását mutatja be.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A felület hőmérséklete a napsugarak irányától függően változik.",
+       "heading": "Napsugárzás felmelegedése",
+       "description": "Egy egyszerű kísérlet bemutatása, amely a felület napsugárzás hatására történő felmelegedését figyeli meg különböző szögekből.",
+       "visual_type": "kísérlet"
+      },
+      {
+       "type": "visual",
+       "caption": "Az autó indulásakor a motor munkát végez, amely mozgási energiát és hőt termel.",
+       "heading": "Autó indulásának energiaváltozásai",
+       "description": "Egy grafikon, amely az autó indulásakor bekövetkező energiaváltozásokat mutatja be: a motor munkája, mozgási energia és hőenergia.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "063857cd-43e8-4bf5-a3f6-5bd5fdb80994",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Az autók működése során a benzin vagy elektromos energia átalakulása mozgási energiává a mindennapi közlekedés része.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 50,
+          "w": 300,
+          "x": 50,
+          "y": 200,
+          "type": "box"
+         },
+         {
+          "x": 150,
+          "y": 215,
+          "text": "Autó",
+          "type": "label"
+         },
+         {
+          "x1": 100,
+          "x2": 100,
+          "y1": 200,
+          "y2": 150,
+          "type": "arrow"
+         },
+         {
+          "x": 80,
+          "y": 130,
+          "text": "Üzemanyag",
+          "type": "label"
+         },
+         {
+          "x1": 300,
+          "x2": 300,
+          "y1": 200,
+          "y2": 150,
+          "type": "arrow"
+         },
+         {
+          "x": 280,
+          "y": 130,
+          "text": "Mozgási energia",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Energia az autó működésében",
+       "discovery": "Az autók működésének megértésében fontos szerepet játszik az energia megmaradásának törvénye. A 19. század végén Nikola Tesla és Thomas Edison versengése során sokat tanultunk az elektromos áram termeléséről és felhasználásáról, ami az autók fejlődéséhez is hozzájárult.",
+       "try_basic": "Készíts egy egyszerű autómodellt egy papírdobozból, és figyeld meg, hogyan mozog, amikor megnyomod a hátulját, ami az energiaváltozásokat mutatja be.",
+       "try_advanced": "Kísérletezz egy elektromos autóval, és mérd meg, mennyi energia szükséges a különböző sebességeknél, majd elemezd a kapott adatokat."
+      }
+     ]
+    },
+    {
+     "block_id": "52dc1a47-3e55-4044-9ce1-96f16f78dca7",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A test magassága és a gravitációs gyorsulás.",
+        "B) A test sebessége.",
+        "C) A test tömege.",
+        "D) A test hőmérséklete."
+       ],
+       "question": "Mi a helyzeti energia (munkavégző képesség) alapja?",
+       "explanation": "A helyzeti energia a test magasságától és a gravitációs gyorsulástól függ, hiszen minél magasabbra emeljük a testet, annál nagyobb energiát tárol.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Helyzeti energia.",
+        "B) Mozgási energia.",
+        "C) Rugalmas energia.",
+        "D) Belső energia."
+       ],
+       "question": "Milyen energiaformát képvisel egy elhajított kő mozgása?",
+       "explanation": "Az elhajított kő mozgása mozgási energiát képvisel, amely a sebességéből és tömegéből adódik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A végzett munka egyenlő a mozgási energia változásával.",
+        "B) A végzett munka független a test magasságától.",
+        "C) A végzett munka a test hőmérsékletét növeli.",
+        "D) A végzett munka nem befolyásolja a test sebességét."
+       ],
+       "question": "Mi jellemzi a munkatételt a szabadon eső test esetében?",
+       "explanation": "A munkatétel szerint a szabadon eső test esetében a végzett munka egyenlő a mozgási energia változásával, mivel a gravitáció végzi a munkát.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A rugalmas energia a rugó vagy gumiszalag megnyújtásából vagy összenyomásából származik.",
+        "B) A rugalmas energia nem tárolható.",
+        "C) A rugalmas energia mindig hőenergiává alakul.",
+        "D) A rugalmas energia a test magasságától függ."
+       ],
+       "question": "Melyik állítás igaz a rugalmas energiára?",
+       "explanation": "A rugalmas energia a rugók és gumiszalagok megnyújtásából vagy összenyomásából ered, és tárolható energiát jelent.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az energia megmarad, és átalakulhat egyik formából a másikba.",
+        "B) Az energia folyamatosan csökken.",
+        "C) Az energia teljesen eltűnik.",
+        "D) Az energia nem tárolható."
+       ],
+       "question": "Mi történik az energia megmaradásával súrlódás és közegellenállás hiányában?",
+       "explanation": "Súrlódás és közegellenállás hiányában az energia megmarad, és átalakulhat helyzeti, mozgási vagy rugalmas energiává.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "8aa83039-31b6-48d6-83f3-f9defb4a6b76",
+   "title_hu": "Energia átalakulások és szállítás",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "215da348-93bb-4828-99c1-72da8644893e",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A háztartásban számos energiaátalakulás zajlik, amelyek közvetlen hatással vannak mindennapi életünkre. Például, amikor a gáztűzhelyen főzünk, a gáz (kémiai energia) elégetése során hőenergiát termel, amely a víz melegítésére szolgál. A hőmérséklet emelkedése a vízben hőenergia formájában tárolódik, amelyet később a főzés során használunk fel. A hatásfok itt azt mutatja meg, hogy a felhasznált gáz mennyire hatékonyan alakítja át az energiát hővé. Érdemes megfigyelni, hogy a gázláng mérete és a láng típusa is befolyásolja a hatásfokot.",
+       "type": "text",
+       "heading": "Energia átalakulások a háztartásban",
+       "key_term": "háztartási energiaátalakulások"
+      },
+      {
+       "body": "Az emberi test is folyamatosan végez energiaátalakulásokat. Amikor ételt fogyasztunk, a benne lévő tápanyagok kémiai energiát tartalmaznak. A testünk ezt az energiát hőenergiává és mechanikai energiává alakítja, amely lehetővé teszi számunkra a mozgást és a hőmérséklet fenntartását. Például, amikor futunk, a táplálékban tárolt energia mozgási energiává alakul, ami segít a lábaink előrehaladásában. Az energiaátalakulás hatékonysága itt is fontos, hiszen nem minden energia hasznosul teljes mértékben.",
+       "type": "text",
+       "heading": "Energia átalakulások az emberi szervezetben",
+       "key_term": "emberi energiaátalakulások"
+      },
+      {
+       "body": "Az erőművek különböző módon alakítják át az energiát. Például a hőerőművekben a fosszilis tüzelőanyagok elégetése hőenergiát termel, amely vízgőzt hoz létre, ez pedig turbinákat hajt meg, elektromos áramot generálva. A szélerőművek esetében a szél (mozgási energia) közvetlenül a turbinák forgását idézi elő, így elektromos energiát termel. A napkollektorok pedig a napfény (fényenergia) hőenergiává alakításával melegítik fel a vizet, amelyet felhasználhatunk a háztartásban. Az energiaátalakulás hatásfoka itt is kulcsfontosságú, mivel ez határozza meg, mennyi energia hasznosul.",
+       "type": "text",
+       "heading": "Erőművek energia átalakulása",
+       "key_term": "erőművek energiaátalakulásai"
+      },
+      {
+       "body": "Az energia szállítása kulcsfontosságú a modern világban. Az elektromos áramot általában vezetékek segítségével szállítják, amelyek lehetővé teszik, hogy a távoli erőművek energiáját eljuttassák a városokba. Például, amikor otthonunkban világítást kapcsolunk fel, az áram a közeli erőműből érkezik. A vezeték nélküli energiaátvitel, mint a Qi töltés, egy újabb példa, amely lehetővé teszi, hogy okostelefonjainkat anélkül töltsük fel, hogy kábelekre lenne szükség. Az energia szállításának hatékonysága szintén fontos, hiszen a hosszú távú szállítás során veszteségek léphetnek fel.",
+       "type": "text",
+       "heading": "Az energia szállításának lehetőségei",
+       "key_term": "energia szállítás"
+      },
+      {
+       "body": "Egy egyszerű kísérlet során megvizsgálhatjuk, hogyan befolyásolja a gázláng mérete a teavíz melegítésének hatásfokát. Ha különböző lángméretekkel főzünk, és mérjük a víz hőmérsékletének változását, láthatjuk, hogy a nagyobb láng gyorsabban melegíti a vizet, de nem mindig hatékonyabb. További tényezők is befolyásolják a hatásfokot, például a lábas anyaga, a víz mennyisége és a láng formája. Ezeket a tényezőket érdemes figyelembe venni a hatékony főzés érdekében.",
+       "type": "text",
+       "heading": "Kísérlet a teavíz melegítésének hatásfokával",
+       "key_term": "hatásfok kísérlet"
+      },
+      {
+       "body": "A modern technológia lehetővé teszi, hogy környezetbarát energiaforrásokat használjunk. A napkollektorok és szélerőművek egyre népszerűbbek, mivel a megújuló energiaforrások csökkentik a fosszilis tüzelőanyagok használatát. A napenergiát a napelemek segítségével elektromos árammá alakítjuk, míg a szélerőművek a szél erejét hasznosítják. Ezek a megoldások nemcsak környezetbarátok, hanem hosszú távon gazdaságosabbak is lehetnek, mivel csökkenthetik a villanyszámlát.",
+       "type": "text",
+       "heading": "Környezetbarát energiaforrások",
+       "key_term": "környezetbarát energiaforrások"
+      }
+     ]
+    },
+    {
+     "block_id": "4e73cc5d-d803-41ce-80c1-dec3062681ae",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal felkapcsolja a telefonja töltőjét, amely az AC (váltakozó áram) elektromos energiát alakít át egyenárammá. Ezzel megkezdődik az energia átalakulása, ahol a hálózati áram a töltőben hővé és elektromos energiává alakul.",
+       "type": "story",
+       "heading": "A telefon töltése"
+      },
+      {
+       "body": "A töltő a telefonhoz szállítja az átalakított egyenáramot. Az energia szállítása során a vezetékek hőmérséklete emelkedik, mivel a vezetékek ellenállása miatt energia-veszteség lép fel, ami csökkenti a hatásfokot.",
+       "type": "story",
+       "heading": "Energia szállítása a töltőhöz"
+      },
+      {
+       "body": "A telefon akkumulátora tárolja az energiát, amely kémiai energiává alakul át. Ez az energia később elektromos energiaként használható, amikor a felhasználó a telefont használja, például internetezésre vagy játékra.",
+       "type": "story",
+       "heading": "A telefon akkumulátorának töltése"
+      },
+      {
+       "body": "Amikor a fiatal a telefonját használja, az akkumulátorban tárolt kémiai energia elektromos energiává alakul, amely a telefon működéséhez szükséges. Ez a folyamat a hatásfok csökkenésével jár, mivel egy része hővé alakul.",
+       "type": "story",
+       "heading": "A telefon használata"
+      },
+      {
+       "body": "A telefon használata során keletkező hőenergia a környezetbe jut, növelve a hőmérsékletet. Ez a jelenség a hőenergia átalakulásának példája, amely a telefon működése során keletkezik.",
+       "type": "story",
+       "heading": "Energia átalakulás a környezetben"
+      }
+     ]
+    },
+    {
+     "block_id": "3e73e9e0-1bc2-44d1-9d72-bfa7c85f0b4a",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Energiaátalakulások a háztartásban",
+       "heading": "Energiaátalakulások a háztartásban",
+       "description": "A diagram bemutatja, hogyan alakul át az elektromos energia (pl. villany) hőenergiává (pl. főzőlap) és fényenergiává (pl. izzó) a háztartási készülékekben.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Energiaátalakulások az emberi szervezetben",
+       "heading": "Energiaátalakulások az emberi szervezetben",
+       "description": "A vázlat ábrázolja, hogyan alakul át a táplálék (kémiai energia) mozgási energiává (pl. futás) és hőenergiává (pl. testhőmérséklet fenntartása) az emberi szervezetben.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Hőerőmű működése",
+       "heading": "Hőerőmű működése",
+       "description": "A keresztmetszet bemutatja, hogyan alakul át a kémiai energia (pl. szén) hőenergiává, majd mechanikai energiává (turbina), végül elektromos energiává (generátor) a hőerőműben.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Szélerőmű működése",
+       "heading": "Szélerőmű működése",
+       "description": "A grafikon szemlélteti, hogyan alakul át a szél energiája (mozgási energia) mechanikai energiává (turbina) és végül elektromos energiává (generátor) a szélerőműben.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Vízi erőmű működése",
+       "heading": "Vízi erőmű működése",
+       "description": "A diagram bemutatja, hogyan alakul át a víz potenciális energiája (magas vízszint) mozgási energiává (áramlás), majd elektromos energiává a vízi erőműben.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Atomerőmű működése",
+       "heading": "Atomerőmű működése",
+       "description": "A vázlat ábrázolja, hogyan alakul át a nukleáris energia (atommag hasadás) hőenergiává, majd mechanikai energiává (turbina) és végül elektromos energiává (generátor) az atomerőműben.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Napkollektor működése",
+       "heading": "Napkollektor működése",
+       "description": "A diagram bemutatja, hogyan alakul át a napenergia (fényenergia) hőenergiává a napkollektorban, amelyet víz melegítésére használnak.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Hatásfok mérése gázláng méretekkel",
+       "heading": "Hatásfok mérése",
+       "description": "A grafikon szemlélteti a teavíz melegítésének hatásfokát különböző gázláng méretek mellett. A hatásfok a hőenergia és a felhasznált energia arányát mutatja.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "051ac65e-604d-4bea-ac76-1fc170a2e0b5",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A diákok gyakran találkoznak a gázlánggal a kémiai laborokban, ahol különböző anyagokat melegítenek, és a hatásfok vizsgálata kulcsfontosságú a kísérletek során.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 50,
+          "w": 100,
+          "x": 150,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 160,
+          "y": 120,
+          "text": "Teáskanna",
+          "type": "label"
+         },
+         {
+          "r": 30,
+          "x": 200,
+          "y": 180,
+          "type": "circle"
+         },
+         {
+          "x": 190,
+          "y": 175,
+          "text": "Gázláng",
+          "type": "label"
+         },
+         {
+          "x1": 200,
+          "x2": 200,
+          "y1": 150,
+          "y2": 180,
+          "type": "arrow"
+         },
+         {
+          "x": 220,
+          "y": 140,
+          "text": "Hő",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A teavíz melegítése és hatásfoka",
+       "discovery": "A gázláng hatásfokának vizsgálata már a 19. században is fontos téma volt, amikor az ipari forradalom során a gőzgépek és más hőerőgépek hatékonyságát próbálták javítani. A hatásfok növelése érdekében különböző égési technikákat és anyagokat teszteltek, hogy minél több hőt nyerjenek a tüzelőanyagból.",
+       "try_basic": "A diákok otthon is kipróbálhatják, hogy különböző méretű lángokkal melegítenek vizet, és megmérhetik, mennyi idő alatt forr fel a víz, ezzel megfigyelve a hatásfok változását.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "eb8478d2-4abb-4593-a15c-0c8427aa408c",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Hőenergia mechanikai energiává alakítása.",
+        "B) Mechanikai energia elektromos energiává alakítása.",
+        "C) Elektromos energia hőenergiává alakítása.",
+        "D) Kémiai energia hőenergiává alakítása."
+       ],
+       "question": "Milyen energiaátalakítást végez egy hőerőmű?",
+       "explanation": "A hőerőmű hőenergiát használ fel (például fosszilis tüzelőanyagokból), mechanikai energiává alakítva, majd ezt elektromos energiává transzformálja.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Hőerőmű",
+        "B) Szélerőmű",
+        "C) Vízi erőmű",
+        "D) Atomerőmű"
+       ],
+       "question": "Melyik erőmű típusa használja a víz mozgási energiáját?",
+       "explanation": "A vízi erőmű a víz mozgási energiáját hasznosítja, amelyet vízesések vagy folyók áramlása generál.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Elektromos energia hőenergiává alakítása.",
+        "B) Hőenergia elektromos energiává alakítása.",
+        "C) Napenergia hőenergiává alakítása.",
+        "D) Mechanikai energia kémiai energiává alakítása."
+       ],
+       "question": "Melyik energiaátalakítás történik a napkollektorban?",
+       "explanation": "A napkollektor a napenergiát hőenergiává alakítja, amelyet például víz melegítésére használnak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) A rendszerben lévő energia mennyisége.",
+        "B) Az energiaátalakítás során elveszett energia aránya.",
+        "C) Csak az energiaforrás típusa.",
+        "D) Az energia szállítási távolsága."
+       ],
+       "question": "Mi határozza meg az energiahatékonyságot egy rendszerben?",
+       "explanation": "Az energiahatékonyság a hasznos energia és az energiaátalakítás során elveszett energia arányát jelenti, amely meghatározza, mennyire hatékonyan használják fel az energiát.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Elektromos energia",
+        "B) Hőenergia",
+        "C) Mechanikai energia",
+        "D) Kémiai energia"
+       ],
+       "question": "Melyik energia szállítási forma a legelterjedtebb a háztartásokban?",
+       "explanation": "Az elektromos energia a legelterjedtebb energia szállítási forma a háztartásokban, mivel könnyen szállítható és sokféle eszköz működtetésére használható.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "1e38dd59-59f7-4e10-9768-255aa6b5eb01",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az egyetlen energiaforrásunk.",
+      "B) Az elsődleges energiaforrás, amely a megújuló energiaforrások többségét táplálja.",
+      "C) Csak a fosszilis energiaforrásokhoz kapcsolódik.",
+      "D) Nincs hatása az energiaforrásokra."
+     ],
+     "question": "Mi a Nap szerepe a Föld energiaforrásaiban?",
+     "explanation": "A Nap a Föld energiakészletének elsődleges forrása, hiszen a napfény a megújuló energiaforrások, mint például a napenergia és a szélenergia alapját képezi.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Napenergia",
+      "B) Szélenergia",
+      "C) Kőolaj",
+      "D) Geotermikus energia"
+     ],
+     "question": "Melyik energiaforrás nem megújuló?",
+     "explanation": "A kőolaj nem megújuló energiaforrás, mert a Föld mélyében keletkezett és kimerülhet, míg a napenergia és a szélenergia folyamatosan rendelkezésre áll.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A test sebességéből adódik.",
+      "B) A test helyzetéből adódik egy gravitációs mezőben.",
+      "C) Csak mozgó testekre vonatkozik.",
+      "D) Mindig állandó értékű."
+     ],
+     "question": "Mi jellemzi a helyzeti energiát?",
+     "explanation": "A helyzeti energia a test helyzetéből adódik, különösen egy gravitációs mezőben, például amikor egy test magasabb helyen van.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csak a lassú mozgású testekre vonatkozik.",
+      "B) A test tömegéből és sebességéből származik.",
+      "C) Nincs hatása a test mozgására.",
+      "D) Mindig állandó."
+     ],
+     "question": "Melyik állítás igaz a mozgási energiára?",
+     "explanation": "A mozgási energia a test tömegéből és sebességéből származik, és a sebesség növekedésével a mozgási energia is nő.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A sebesség mindig állandó.",
+      "B) A munkatétel és az energiamegmaradás segítségével.",
+      "C) Csak kísérleti úton.",
+      "D) Az időtartam mérése alapján."
+     ],
+     "question": "Hogyan határozható meg egy szabadon eső test becsapódási sebessége?",
+     "explanation": "A becsapódási sebesség a munkatétel és az energiamegmaradás törvényei alapján határozható meg, figyelembe véve a test helyzeti és mozgási energiáját.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Növeli a mozgási energiát.",
+      "B) Csökkenti a mozgási energiát.",
+      "C) Nincs hatása.",
+      "D) Csak a helyzeti energiát befolyásolja."
+     ],
+     "question": "Milyen hatással van a súrlódás a mozgás energiájára?",
+     "explanation": "A súrlódás csökkenti a mozgási energiát, mivel hőt termel, amely elveszíti az energiát a rendszerből.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Csak mozgó testekre vonatkozik.",
+      "B) A deformált testekben tárolt energia.",
+      "C) Mindig állandó.",
+      "D) Nincs hatása a mozgásra."
+     ],
+     "question": "Mi jellemzi a rugalmas energiát?",
+     "explanation": "A rugalmas energia a deformált testek, például rugók vagy gumiszalagok esetében tárolt energia, amely visszatér a kezdeti állapotába, amikor a deformáció megszűnik.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Mechanikai energia hőenergiává.",
+      "B) Hőenergia elektromos energiává.",
+      "C) Kémiai energia mechanikai energiává.",
+      "D) Elektromos energia hőenergiává."
+     ],
+     "question": "Melyik energiaátalakítás jellemző a hőerőműre?",
+     "explanation": "A hőerőmű hőenergiát alakít át elektromos energiává, általában fosszilis tüzelőanyagok elégetésével.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

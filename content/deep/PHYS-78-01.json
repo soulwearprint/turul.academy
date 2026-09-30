@@ -1,0 +1,256 @@
+{
+ "nat_id": "PHYS-78-01",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "d6336130-9fa6-43ad-b78b-04186ab2ed68",
+   "title_hu": "A fizika tudománya és alapjai",
+   "text_block_id": "3e583efa-fcb4-481d-8c15-139c638f2b38",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Miért forr a víz a hegyen hamarabb?",
+     "body": "A víz forráspontja nem mindig 100 °C: ez csak normál légköri nyomáson igaz. Magas hegyen kisebb a levegő nyomása, ezért a víz alacsonyabb hőmérsékleten kezd forrni; a Mount Everest csúcsán már kb. 70 °C-on. Ezért ott a tészta sokkal lassabban fő meg, hiába forr a víz. A fizika éppen az ilyen összefüggéseket keresi: nem elég, hogy „a víz forr”, azt is tudni akarjuk, mitől függ, mikor.",
+     "did_you_know": "A kuktában a megnövelt nyomás miatt a víz kb. 120 °C-on forr, ezért benne gyorsabban megfő az étel.",
+     "think": "Miért tart tovább megfőzni a tésztát egy magas hegyen?",
+     "think_answer": "Ott a víz alacsonyabb hőmérsékleten forr, így a forrásban lévő víz is hidegebb, mint lent. Hidegebb vízben lassabban fő meg az étel."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Kétezer éves tévedés",
+     "body": "Arisztotelész úgy gondolta, hogy a nehezebb test gyorsabban esik, és ezt majdnem kétezer évig elfogadták, mert senki sem ellenőrizte méréssel. Galilei lejtőn guruló golyókkal mérte meg az esést, és kimutatta, hogy légellenállás nélkül minden test ugyanúgy gyorsul. A tollpihe csak azért esik lassabban, mert a levegő erősebben fékezi. Ez a tudomány lényege: egy tekintélyes ember véleménye sem ér annyit, mint egy megismételhető kísérlet.",
+     "did_you_know": "1971-ben az Apollo–15 egyik űrhajósa a Holdon egyszerre ejtett le egy kalapácsot és egy sólyomtollat, és a kettő egyszerre ért le, mert a Holdon nincs levegő.",
+     "think": "Ha egy kísérlet százszor igazolja a feltevésedet, biztos lehetsz benne, hogy igazad van?",
+     "think_answer": "Nem teljesen: egyetlen jól elvégzett, cáfoló kísérlet is elég lehet ahhoz, hogy felül kelljen vizsgálni. Ezért marad a tudomány mindig nyitott az új bizonyítékokra."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Honnan jön a méter?",
+     "body": "Régen szinte minden városnak saját hosszegysége volt (rőf, láb, öl), ami a kereskedelemben állandó vitákat okozott. A francia forradalom idején ezért egy közös egységet alkottak: a métert, amelyet eredetileg az Egyenlítő és az Északi-sark közötti táv tízmilliomod részeként határoztak meg. Később egy platina rúdon jelölték ki a hosszát. Ma a métert a fény sebességével adják meg, mert az mindenhol és mindig ugyanakkora, így bárki, bármelyik laborban pontosan előállíthatja.",
+     "did_you_know": "A méter mai meghatározása: az a távolság, amelyet a fény vákuumban a másodperc 299 792 458-ad része alatt tesz meg.",
+     "think": "Milyen gondot okozna, ha minden ország más hosszúságú métert használna?",
+     "think_answer": "A különböző országokban gyártott alkatrészek nem illenének össze, és minden adásvételnél át kellene számolni a méreteket, ami sok hibához vezetne."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Hogyan mérj meg egy papírlapot?",
+     "body": "A vonalzó legkisebb beosztása 1 mm, egy papírlap viszont ennél sokkal vékonyabb, ezért egyetlen lapot nem tudsz vele lemérni. Van azonban egy trükk: mérj le sok lapot együtt! Ha 100 lap együtt 1 cm vastag, akkor egy lap vastagsága 1 cm : 100 = 0,1 mm. Ugyanígy mérheted meg egy pénzérme vastagságát egy érmeoszlopból, vagy egy lépésed hosszát 10 lépésből. A sok darab együttes mérése csökkenti a leolvasás hibájának hatását is.",
+     "did_you_know": "1999-ben egy amerikai Mars-szonda azért veszett oda, mert az egyik mérnökcsapat angolszász, a másik metrikus mértékegységekben számolt.",
+     "think": "Hogyan mérnéd meg vonalzóval egy vékony drót vastagságát?",
+     "think_answer": "Tekerd szorosan egymás mellé sok menetben egy ceruzára, mérd meg a tekercs hosszát, és oszd el a menetek számával."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Kő a mérőhengerben",
+     "body": "A szabálytalan testek térfogatát úgy mérjük, hogy a test kiszorítja a vizet. Ha a mérőhengerben 50 ml víz van, és egy kavics beleejtése után 65 ml-t mutat, akkor a kavics térfogata 15 ml, vagyis 15 cm³, mert 1 ml = 1 cm³. A vizet nem lehet összenyomni, ezért pontosan annyival emelkedik, amennyi helyet a kő elfoglal. A legenda szerint Arkhimédész is a fürdőkádban jött rá erre a módszerre.",
+     "did_you_know": "Egy 1 m élű kockában 1000 liter víz fér el, ez kb. öt-hat teli fürdőkádnyi víz, tömege pedig kb. 1 tonna.",
+     "think": "Hogyan mérnéd meg egy kulcs térfogatát, ha csak egy mérőhenger és víz van kéznél?",
+     "think_answer": "Tölts vizet a mérőhengerbe, olvasd le a szintet, tedd bele a kulcsot, és olvasd le újra. A két érték különbsége a kulcs térfogata."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Ugyanaz a tömeg a Holdon",
+     "body": "Egy 60 kg tömegű diák a Holdon is 60 kg tömegű marad, hiszen ugyanannyi anyagból áll. A fürdőszobai rugós mérleg azonban ott csak kb. 10 kg-ot mutatna, mert valójában azt méri, milyen erősen nyomod, és a Hold kb. hatodakkora erővel vonz. A kétkarú mérleg viszont a Holdon is helyes eredményt adna, mert mindkét serpenyőre ugyanúgy hat a kisebb vonzás. Ezért a tömeg és a súly két különböző dolog, bár a hétköznapokban gyakran összekeverjük őket.",
+     "did_you_know": "A kilogramm mintáját 1889 és 2019 között egy Párizs melletti páncélszekrényben őrzött fémhenger jelentette; ma egy természeti állandó segítségével határozzák meg.",
+     "think": "Mit mutatna a Holdon egy kétkarú mérleg, ha az egyik serpenyőbe egy 1 kg-os súlyt, a másikba egy csomag lisztet teszel?",
+     "think_answer": "Ugyanazt, mint a Földön, mert a Hold mindkét serpenyőt ugyanannyira gyengébben vonzza, így az egyensúly nem változik."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Hányat dobban a szíved egy nap alatt?",
+     "body": "Egy jó becslés lépésekből áll. A szív nyugalomban percenként kb. 70-et dobban; egy órában ez 70 · 60 ≈ 4 000, egy napban 4 000 · 24 ≈ 100 000 dobbanás. Nem kaptunk pontos számot, de a nagyságrend biztosan helyes: nem ezer és nem egymillió. Ezt a módszert Fermi-becslésnek hívják egy híres fizikus, Enrico Fermi után, aki kerek számokkal, fejben szeretett becsülni.",
+     "did_you_know": "Fermi 1945-ben az első atomrobbantáskor papírdarabokat ejtett le, és abból, hogy a lökéshullám mennyire sodorta el őket, megbecsülte a robbanás erejét.",
+     "think": "Mennyi víz folyik el egy nap alatt egy olyan csapból, amely másodpercenként egyet csöpög? (20 csepp kb. 1 ml.)",
+     "think_answer": "Egy nap 86 400 másodperc, ez kb. 86 400 csepp. 20 csepp 1 ml, tehát kb. 4 300 ml, vagyis több mint 4 liter víz."
+    }
+   ]
+  },
+  {
+   "lesson_id": "ba7ac535-33d2-48f3-98e9-0c68b5239fde",
+   "title_hu": "Idő és hőmérséklet mérése",
+   "text_block_id": "b9d14a00-8b9a-469b-8d52-a57de234e534",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Az atomóra másodperce",
+     "body": "Régen a másodpercet a nap hosszából számolták: egy nap 86 400 másodperc. Kiderült azonban, hogy a Föld forgása nem teljesen egyenletes, és nagyon lassan fékeződik. Ezért ma a másodpercet atomórákkal határozzák meg: a cézium atom egy bizonyos rezgése 9 192 631 770-szer ismétlődik egy másodperc alatt. Az atomórák olyan pontosak, hogy több millió év alatt sem sietnének vagy késnének egy másodpercet.",
+     "did_you_know": "A GPS-helymeghatározás pontos órákra épül: ha az idő egymilliomod másodpercet tévedne, a helyzet kb. 300 m-rel lenne hibás, mert ennyit tesz meg a rádiójel ennyi idő alatt.",
+     "think": "Miért nem jó a nagyon pontos időméréshez a Föld forgása?",
+     "think_answer": "A Föld forgása kissé ingadozik és lassan fékeződik, ezért a nap hossza nem pontosan állandó. Az atomok rezgése viszont mindig ugyanolyan."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Fejjel lefelé Celsius-skála",
+     "body": "Anders Celsius 1742-ben olyan skálát javasolt, amelyen a víz forráspontja 0 fok, fagyáspontja pedig 100 fok volt. A skálát halála után fordították meg, így lett a mai formája. A tudósok egy másik skálát, a Kelvin-skálát is használják, amely az abszolút nulla foktól, −273,15 °C-tól indul. Ennél hidegebb nem létezhet, mert a hőmérséklet a részecskék mozgásával függ össze, és ott a mozgás a lehető legkisebb.",
+     "did_you_know": "Az Egyesült Államokban a Fahrenheit-skálát használják, amelyen a víz 32 fokon fagy meg és 212 fokon forr.",
+     "think": "Miért nem létezhet −300 °C?",
+     "think_answer": "A hőmérséklet a részecskék mozgásának mértékével függ össze. Az abszolút nulla fokon (−273,15 °C) a mozgás a lehető legkisebb, ennél hidegebb állapot nincs."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Laboratórium a zsebedben",
+     "body": "Egy okostelefonban sok mérőeszköz van: gyorsulásmérő, amely érzékeli, merre tartod, iránytűként működő mágneses érzékelő, és sok készülékben légnyomásmérő is. Ingyenes alkalmazásokkal ezek adatai kiolvashatók, így a telefonnal mozgást, hangerőt vagy mágneses teret is mérhetsz. A konyhai mérleg „tára” gombja nullázza a kijelzőt: ha a tálat rátetted és megnyomtad, utána csak a beletett liszt tömegét méri. Így nem kell kivonnod a tál tömegét.",
+     "did_you_know": "Ha liftben néhány emeletet felmész, a telefon légnyomásmérője kimutatja, hogy a nyomás csökkent.",
+     "think": "Miért érdemes a mérleget nullázni, mielőtt a tálba teszed a lisztet?",
+     "think_answer": "Így a mérleg a tál tömegét nem számolja bele, és közvetlenül a liszt tömegét mutatja. Nem kell külön kivonnod, így kisebb az esély a számolási hibára."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Céltábla a méréshez",
+     "body": "Képzelj el egy céltáblát: ha a nyilak szorosan egymás mellé, de a középponttól távol csapódnak be, a lövés egyenletes, de mégsem pontos. A mérésben ugyanez történik, ha például a mérleg rosszul van nullázva: minden mérés ugyanannyival hibás. Az ilyen rendszeres hibát az ismétlés nem fedi fel, csak a mérőeszköz ellenőrzése. Hiba lehet az is, ha a skálát ferdén nézed: a mutató vagy a folyadékszint máshol látszik, mint ahol valójában van.",
+     "did_you_know": "A mérési hibát nem lehet teljesen megszüntetni, csak csökkenteni, ezért a pontos mérési eredmény mellé a hibahatárt is odaírják.",
+     "think": "Ha egy mérleg mindig 20 g-mal többet mutat, segít-e, ha sokszor mérsz és átlagolsz?",
+     "think_answer": "Nem, mert minden mérés ugyanúgy 20 g-mal nagyobb, így az átlag is. A rendszeres hibát a mérőeszköz beállításával vagy a hiba levonásával lehet kijavítani."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Amikor az átlag becsap",
+     "body": "Négy stopperes mérés eredménye: 12,1 s, 12,3 s, 12,2 s és 15,0 s. Az átlag (12,1 + 12,3 + 12,2 + 15,0) : 4 = 12,9 s, pedig egyik jó mérés sem ennyi. A 15,0 s-os adat valószínűleg elrontott mérés, például valaki későn nyomta meg a stoppert. Ha ezt kihagyjuk, az átlag 12,2 s, ami sokkal jobban jellemzi a valóságot. Ezért átlagolás előtt mindig érdemes megnézni, nincs-e az adatok között nyilvánvalóan hibás.",
+     "did_you_know": "Minél több mérést átlagolunk, annál kisebb a véletlen hibák hatása: négyszer annyi mérés nagyjából felére csökkenti az átlag bizonytalanságát.",
+     "think": "Miért jobb egy inga 10 lengésének idejét mérni, és elosztani 10-zel, mint egyetlen lengést mérni?",
+     "think_answer": "A stopper indításának és leállításának hibája (kb. 0,2 s) így 10 lengés között oszlik meg, tehát egy lengésre csak kb. 0,02 s hiba jut."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Mérd meg a reakcióidődet!",
+     "body": "A becsléshez hasznos tudni, milyen gyors vagy. Egy vonalzós kísérlettel megmérheted: valaki elengedi a függőlegesen tartott vonalzót, te pedig amilyen gyorsan tudod, elkapod. A legtöbb ember reakcióideje kb. 0,2 másodperc, ennyi idő alatt a vonalzó kb. 20 cm-t esik. Ez a reakcióidő minden kézi stopperes mérésben ott van, ezért a nagyon rövid időket kézzel nem lehet pontosan mérni.",
+     "did_you_know": "Nyugalomban egy egészséges ember szíve percenként kb. 60–100-at dobban, ezért a pulzus jó beépített „órája” a becslésnek.",
+     "think": "Hogyan tudnád megbecsülni a percenkénti pulzusodat mindössze 15 másodperc alatt?",
+     "think_answer": "Számold meg a szívdobbanásokat 15 másodpercig, és szorozd meg néggyel, mert egy perc négyszer 15 másodperc."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Árnyékban, két méteren",
+     "body": "Az időjárás-állomások a hőmérsékletet mindig ugyanúgy mérik: kb. 2 méter magasan, fehérre festett, szellőző dobozban, árnyékban. Erre azért van szükség, mert a napon álló hőmérő a saját felmelegedését is méri, nem csak a levegőét. Ha mindenki ugyanígy mér, a különböző városok adatai összehasonlíthatók. Ugyanez igaz az otthoni mérésekre: ha minden nap ugyanabban az órában, ugyanazon a helyen mérsz, a változások valódiak lesznek, nem a módszer eltéréséből adódnak.",
+     "did_you_know": "A napon hagyott sötét tárgy sokkal melegebb lehet, mint a körülötte lévő levegő, mert elnyeli a napfényt.",
+     "think": "Miért nem hasonlítható össze egy délben napon mért hőmérséklet egy hajnalban árnyékban mérttel?",
+     "think_answer": "Két dolog is különbözik: a napszak és a mérés helye. Így nem lehet tudni, mennyi az eltérésből a valódi változás és mennyi a módszer hatása."
+    }
+   ]
+  },
+  {
+   "lesson_id": "7a6f2b6a-8c16-413c-a124-b5be0e2c3d9b",
+   "title_hu": "Sűrűség és anyagvizsgálat",
+   "text_block_id": "0b7ef3db-69c6-4ced-a520-583a11df5d65",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Miért úszik a jég?",
+     "body": "A legtöbb anyag megfagyva összehúzódik, a víz viszont kitágul: 1 liter vízből megfagyva kb. 1,09 liter jég lesz. Mivel a tömeg ugyanaz marad, de a térfogat nő, a jég sűrűsége kisebb, kb. 917 kg/m³. Ezért úszik a jég a víz tetején. Ez a különös tulajdonság a tavakban élő állatok életét is megmenti.",
+     "did_you_know": "A tavak felülről fagynak be, mert a 4 °C-os víz a legsűrűbb, és leszáll a mélybe; a jégpáncél alatt a halak így átvészelik a telet.",
+     "think": "Miért reped szét a vízzel teli üveg a fagyasztóban?",
+     "think_answer": "A víz megfagyva kitágul, térfogata kb. tizedével nő. Az üveg nem tud ennyit tágulni, ezért szétreped."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Hogyan úszik egy acélhajó?",
+     "body": "Az acél sűrűsége majdnem nyolcszorosa a vízének, egy tömör acélkocka ezért elmerül. A hajó azonban üreges: az acélfalak között rengeteg levegő van. Ha a hajó teljes tömegét elosztjuk a víz alá merülő térfogatával, a hajó átlagos sűrűsége kisebb, mint a vízé, ezért fennmarad. Ha lék keletkezik, és a levegő helyére víz ömlik, az átlagos sűrűség megnő, és a hajó elsüllyed.",
+     "did_you_know": "A Holt-tenger vize annyira sós, hogy sűrűsége kb. 1 240 kg/m³, ezért az emberek szinte fekve lebegnek benne.",
+     "think": "Miért lebeg egy ember könnyebben a tengerben, mint egy édesvizű tóban?",
+     "think_answer": "A sós víz sűrűsége nagyobb, mint az édesvízé, ezért nagyobb felhajtóerővel tartja fenn a testet."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Arany vagy hamisítvány?",
+     "body": "Az arany sűrűsége kb. 19,3 g/cm³, az ezüsté kb. 10,5 g/cm³. Ezért 1 kg arany térfogata kb. 52 cm³, 1 kg ezüsté viszont kb. 95 cm³. Ha egy „aranykorona” ezüsttel van keverve, ugyanakkora tömeg mellett nagyobb a térfogata, és több vizet szorít ki. A legenda szerint Arkhimédész így leplezte le a csaló ötvöst anélkül, hogy megsértette volna a koronát.",
+     "did_you_know": "A legnagyobb sűrűségű elem az ozmium, sűrűsége kb. 22,6 g/cm³, még az aranyénál is nagyobb.",
+     "think": "Miért nem lehet a színe alapján eldönteni, hogy egy gyűrű tiszta aranyból van-e?",
+     "think_answer": "Egy olcsóbb fém is bevonható vékony aranyréteggel. A sűrűség viszont a belsejéről is árulkodik, mert az egész tárgy tömegétől és térfogatától függ."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyi a levegő tömege az osztályban?",
+     "body": "A levegőnek is van tömege, csak mivel mindig körülvesz, nem érezzük. Sűrűsége kb. 1,2 kg/m³. Egy 8 m hosszú, 6 m széles és 3 m magas osztályterem térfogata 8 · 6 · 3 = 144 m³, így a benne lévő levegő tömege 144 · 1,2 ≈ 170 kg. Ez több, mint két felnőtt ember tömege!",
+     "did_you_know": "A levegő nyomása azért érezhető, mert a fejünk fölötti levegőoszlop súlya nyom minket; mivel minden irányból egyformán nyom, nem vesszük észre.",
+     "think": "Mekkora egy 2 m × 1 m × 0,1 m-es betonlap tömege, ha a beton sűrűsége kb. 2 400 kg/m³?",
+     "think_answer": "A térfogat 2 · 1 · 0,1 = 0,2 m³, így a tömeg 0,2 · 2 400 = 480 kg. Ezt két ember biztosan nem tudná felemelni."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Egy kiló toll vagy egy kiló ólom?",
+     "body": "A régi találós kérdés szerint egy kiló toll és egy kiló ólom ugyanolyan nehéz, és ez igaz is. A térfogatuk viszont óriási mértékben eltér. Az ólom sűrűsége kb. 11,3 g/cm³, így 1 kg ólom térfogata 1 000 : 11,3 ≈ 88 cm³, ez egy kb. 4,5 cm élű kocka. Ugyanannyi toll egy nagy zsákot is megtöltene, mert a tollak között sok a levegő.",
+     "did_you_know": "A víz sűrűsége kb. 800-szor akkora, mint a levegőé.",
+     "think": "Egy 1 kg-os vasgolyó vagy egy 1 kg-os fakocka nagyobb?",
+     "think_answer": "A fakocka, mert a fa sűrűsége kisebb. Ugyanakkora tömeghez kisebb sűrűségű anyagból nagyobb térfogat kell."
+    }
+   ]
+  },
+  {
+   "lesson_id": "33d5786d-f741-4506-96e7-f6438d57d848",
+   "title_hu": "A fizika szakterületei és tudományos vizsgálat",
+   "text_block_id": "311c11dc-4c1a-4a44-ac4c-338e14ab60fc",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Egy telefon, sok fizika",
+     "body": "Egy okostelefon működésében a fizika szinte minden ága részt vesz. A kamera lencséi az optika törvényei szerint alkotnak képet, az érintőképernyő az elektromosságtanra épül, az akkumulátor melegedése hőtani kérdés. A helymeghatározás pedig a műholdak pontos óráin alapul, amelyeknél még Einstein relativitáselméletét is figyelembe kell venni. Ezért a modern technológia fejlesztéséhez különböző szakterületek fizikusainak kell együtt dolgozniuk.",
+     "did_you_know": "A GPS-műholdak órái a relativitáselmélet miatt naponta kb. 38 milliomod másodperccel többet mérnek, mint a földi órák; ha ezt nem javítanák, a helymeghatározás naponta kilométereket tévedne.",
+     "think": "Melyik fizikai szakterülethez tartozik a szivárvány?",
+     "think_answer": "Az optikához: a napfény az esőcseppekben megtörik, és a különböző színek kissé eltérő irányba haladnak tovább, így a fehér fény színekre bomlik."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A tér rezdülése",
+     "body": "A gravitációs hullámokat 2015. szeptember 14-én észlelték először az amerikai LIGO detektorai. A jelet két, egymásba olvadó fekete lyuk keltette, több mint egymilliárd fényévnyire tőlünk. A hullám a detektor 4 km-es karjainak hosszát egy proton átmérőjének ezredrészénél is kisebb mértékben változtatta meg. Hogy ilyen kicsi változást mérni lehessen, a kutatóknak évtizedeken át kellett fejleszteniük a műszereket. 2017-ben az eredményért fizikai Nobel-díjat adtak.",
+     "did_you_know": "Két, egymástól kb. 3 000 km-re lévő detektor egyszerre, alig néhány ezredmásodperc különbséggel észlelte ugyanazt a jelet.",
+     "think": "Miért volt szükség két, egymástól távoli detektorra?",
+     "think_answer": "Egy közeli teherautó vagy földmozgás csak az egyiket rázza meg. Ha mindkettő szinte egyszerre ugyanazt a jelet mutatja, az valódi, messziről jövő hullám."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A fénynél gyorsabb neutrínók esete",
+     "body": "2011-ben egy nemzetközi kutatócsoport azt mérte, hogy bizonyos részecskék, a neutrínók gyorsabban haladnak a fénynél, ami ellentmondott a fizika egyik legfontosabb törvényének. A kutatók nem ünnepelték az eredményt, hanem nyilvánosan megkérték a többi fizikust, hogy segítsenek megtalálni a hibát. Néhány hónap múlva kiderült, hogy egy rosszul csatlakoztatott kábel okozta a téves mérést. Ez jó példa arra, hogyan működik a tudomány: a meglepő eredményeket mindig független mérésekkel ellenőrzik.",
+     "did_you_know": "A hibát végül egy meglazult optikai kábel okozta, amely kissé megváltoztatta az időmérést.",
+     "think": "Miért kérték a kutatók maguk, hogy mások ellenőrizzék a meglepő eredményüket?",
+     "think_answer": "Mert tudták, hogy egy ilyen rendkívüli állításhoz rendkívül erős bizonyíték kell. Ha mások is ugyanezt mérik, az eredmény megbízható; ha nem, akkor hiba történt."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Örökmozgók nyomában",
+     "body": "Évszázadok óta próbálnak feltalálók olyan gépet építeni, amely magától, örökké mozog, és még munkát is végez. Egy ilyen örökmozgó ellentmondana az energia-megmaradás törvényének, amelyet számtalan mérés igazolt: energia nem keletkezhet a semmiből. Aki ma „ingyenenergiát” ígérő készüléket árul, szinte mindig az áltudomány jeleit mutatja: nem enged független mérést, és titkos elvre hivatkozik. Az ilyen állításokat mindig az ellenőrizhetőség felől érdemes megvizsgálni.",
+     "did_you_know": "A Francia Tudományos Akadémia már 1775-ben kimondta, hogy többé nem vizsgál örökmozgó-terveket.",
+     "think": "Egy hirdetés szerint egy karkötő különleges energiával javítja az egyensúlyérzéket. Milyen kérdést tennél fel?",
+     "think_answer": "Megkérdezném, végeztek-e olyan kísérletet, ahol a résztvevők nem tudták, valódi vagy hamis karkötőt viselnek-e, és mások megismételték-e az eredményt."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Miért nem működik a kesztyűs ujj?",
+     "body": "A legtöbb telefon érintőképernyője érzékeli, hogy az ujjad kissé megváltoztatja a felülete elektromos tulajdonságát, mert a bőröd vezeti az áramot. Egy vastag gyapjúkesztyű nem vezet, ezért a képernyő nem érzékeli. A speciális érintőképernyős kesztyűk ujjbegyébe vezető szálakat szőnek. Egy ilyen hétköznapi jelenség mögött is ott van az elektromosságtan.",
+     "did_you_know": "Az elektromos autók fékezéskor a motorjukat generátorként használják, így a mozgási energia egy részét visszatöltik az akkumulátorba.",
+     "think": "Miért működik egy érintőképernyő vizes ujjal is, de egy műanyag tollkupakkal nem?",
+     "think_answer": "A víz és a bőr vezeti az áramot, a műanyag viszont nem, így a képernyő nem érzékeli az érintését."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,938 @@
+{
+ "nat_id": "PHYS-78-08",
+ "topic_id": "6acccc43-0c92-4ba7-98ee-4a0db1eb5071",
+ "title_hu": "Hullámok",
+ "grade": 8,
+ "lessons": [
+  {
+   "lesson_id": "bcefb295-dbe0-433a-9277-49d2a02e2a80",
+   "title_hu": "Mechanikai hullámok és állóhullámok",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "61a1b4bd-ff37-4f91-8862-221d3292d5cb",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az állóhullám egy olyan hullámforma, amelyben a hullámok interferenciája következtében a hullámok látszólag megállnak. Képzeld el, hogy egy rugalmas kötélen, például egy ugrálóköteleken, a két végén rögzíted a kötelet. Ha a közepén megütöd, hullámok keletkeznek, amelyek visszaverődnek a végpontokról, és állóhullámot alkotnak. Ez a jelenség a zene világában is megjelenik, például amikor egy gitárhúron játszol, és a húrok rezgései állóhullámokat hoznak létre.",
+       "type": "text",
+       "heading": "Mi az állóhullám?",
+       "key_term": "állóhullám"
+      },
+      {
+       "body": "A hullámhossz a hullám két azonos fázisú pontja közötti távolságot jelenti. Például, ha egy vízhullámot nézel a Balatonban, a hullámok csúcsai közötti távolság a hullámhossz. A frekvencia pedig azt mutatja meg, hogy egy másodperc alatt hány hullám halad át egy adott ponton. Ha például a vízben a hullámok sűrűn követik egymást, akkor magas frekvenciáról beszélünk, míg ha ritkábban, akkor alacsony frekvenciáról.",
+       "type": "text",
+       "heading": "Hullámhossz és frekvencia",
+       "key_term": "hullámhossz, frekvencia"
+      },
+      {
+       "body": "A hullám terjedési sebessége megmutatja, milyen gyorsan halad át a hullám egy adott ponton. Ez a sebesség a hullámhossz és a frekvencia szorzataként számolható ki. Ha például egy vízhullám esetén a hullámhossz 2 méter, és a frekvencia 1 Hz, akkor a hullám terjedési sebessége 2 m/s. Ez a jelenség a mindennapi életben is fontos, hiszen például a Wi-Fi-hullámok is így terjednek a levegőben, lehetővé téve a gyors internetkapcsolatot.",
+       "type": "text",
+       "heading": "A hullám terjedési sebessége",
+       "key_term": "hullám terjedési sebessége"
+      },
+      {
+       "body": "Egy egyszerű kísérlet során megfigyelheted, hogyan alakulnak ki állóhullámok egy rugalmas kötélen. Ha az egyik végénél megfogod, és a másik végénél rezgéseket indítasz, láthatod, hogy a hullámok visszaverődnek, és állóhullámok jönnek létre. Ezzel a kísérlettel könnyen bemutathatod a hullámok viselkedését, és megértheted a hullámok interferenciáját. Ez a jelenség segít megérteni, hogyan működnek például a hangszerek is.",
+       "type": "text",
+       "heading": "Rugalmas kötélen kialakított állóhullámok",
+       "key_term": "állóhullám"
+      },
+      {
+       "body": "Képzeld el, hogy egy medencében vagy, és megfigyeled a vízhullámokat. Ha egy követ dobsz a vízbe, a hullámok elindulnak és terjednek. A hullámok terjedési sebességét a víz mélysége és a hullámok frekvenciája befolyásolja. Ezen a kísérleten keresztül megértheted, hogyan terjednek a hullámok a víz felszínén, és miért fontos ez a jelenség például a cunami esetében, amikor hatalmas hullámok keletkeznek.",
+       "type": "text",
+       "heading": "A vízhullámok kísérleti vizsgálata",
+       "key_term": "hullám terjedési sebessége"
+      },
+      {
+       "body": "A cunami egy hatalmas vízhullám, amelyet általában földrengések vagy vulkánkitörések okoznak. A cunami hullámok rendkívül nagy távolságokat képesek megtenni, és amikor part közelébe érnek, hatalmas erővel csapódnak a partra. A cunami megértése érdekében fontos tudni, hogy a hullámok sebessége és frekvenciája hogyan változik a víz mélységétől függően. A tudósok folyamatosan figyelik a cunami előjeleit, hogy időben figyelmeztethessék az embereket.",
+       "type": "text",
+       "heading": "A cunami jelensége",
+       "key_term": "cunami"
+      }
+     ]
+    },
+    {
+     "block_id": "15a57477-18a5-42b8-a714-243e9830d4fe",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy névtelen szereplő egy tó partján áll, és a kezében egy követ tart. Hirtelen a kő a vízbe zuhan, és hullámok indulnak el a vízfelszínen. A hullámok a kő által keltett rezgés következményeként terjednek, és a víz felszínén körkörös mozgást végeznek.",
+       "type": "story",
+       "heading": "A vízbe dobott kő"
+      },
+      {
+       "body": "Ahogy a hullámok terjednek, egy másik névtelen szereplő figyeli, ahogy a víz felszíne emelkedik és süllyed. A hullámok amplitúdója (a hullámcsúcs és a vízfelszín közötti távolság) és hullámhossza (a két egymást követő hullámcsúcs közötti távolság) jól látható. A hullámok terjedési sebessége is észlelhető, ahogy az idő múlásával egyre távolabbra jutnak.",
+       "type": "story",
+       "heading": "A hullámok terjedése"
+      },
+      {
+       "body": "A következő állomásban egy névtelen szereplő egy rugót tart a kezében, amelyet megfeszít, majd elenged. A rugó rezegni kezd, és állóhullámok alakulnak ki benne. A rugó végén keletkező csomópontok és a hullámcsúcsok világosan láthatók. Az állóhullámok jellemzője, hogy nem terjednek el, hanem a rugó különböző pontjain rezegnek.",
+       "type": "story",
+       "heading": "Állóhullámok a rugón"
+      },
+      {
+       "body": "A névtelen szereplő most egy vízszintes felületre helyez egy rugót, és megfigyeli, ahogy a hullámok haladnak át rajta. A rugó rezgései a hullámok terjedése által jönnek létre, és a haladó hullámok mozgása a rugó részecskéinek rezgéseit követi. Ez a jelenség jól illusztrálja, hogyan alakulnak ki a haladó hullámok az energia átadásával.",
+       "type": "story",
+       "heading": "A haladó hullámok elvi magyarázata"
+      },
+      {
+       "body": "Végül a névtelen szereplő a cunami jelenségével ismerkedik meg. A tenger mélyén lévő földrengés hatására hatalmas hullámok keletkeznek, amelyek gyorsan terjednek a víz felszínén. A cunami hullámok amplitúdója és hullámhossza is jelentős, és amikor a part közelébe érnek, óriási energiát szabadítanak fel, ami pusztító hatással bír.",
+       "type": "story",
+       "heading": "Cunami jelensége"
+      }
+     ]
+    },
+    {
+     "block_id": "72e87c8b-47cf-4052-86df-f23fd03808db",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az állóhullámok a hullámok interferenciájának következményei.",
+       "heading": "Állóhullámok kialakulása",
+       "description": "A diagramon egy rugalmas kötélen kialakuló állóhullám látható. Két hullám halad a kötél két végéből a középpont felé, ahol interferenciával állóhullámot alkotnak.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A hullámhossz (λ) a hullámok terjedésének egyik alapvető jellemzője.",
+       "heading": "Hullámhossz",
+       "description": "A grafikonon a hullám amplitúdója és a hullámhossza látható. A hullámhossz a két hullámhegy közötti távolságot jelöli.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A frekvencia a hullámok gyorsaságát jellemzi.",
+       "heading": "Frekvencia",
+       "description": "A vázlaton a frekvencia (f) és a hullámok időbeli változása látható. A frekvencia a másodpercenkénti hullámok számát mutatja.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A hullám terjedési sebessége a hullámok sebességét méri.",
+       "heading": "Hullám terjedési sebessége",
+       "description": "A diagram bemutatja a hullám terjedési sebességét (v), amely a hullámhossz (λ) és a frekvencia (f) szorzataként van meghatározva: v = f * λ.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A vízhullámok a mechanikai hullámok klasszikus példái.",
+       "heading": "Víz hullámok megfigyelése",
+       "description": "A fotón egy vízfelszínen kialakuló hullámok láthatók, amelyek különböző amplitúdóval és frekvenciával rendelkeznek.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "A cunami jelensége a földrengések és tenger alatti vulkánkitörések következménye.",
+       "heading": "Cunami jelensége",
+       "description": "Az infografika bemutatja a cunami keletkezésének okait, terjedését és hatásait. Színes diagramokkal illusztrálja a cunami hullámok magasságát és sebességét.",
+       "visual_type": "infografika"
+      }
+     ]
+    },
+    {
+     "block_id": "ce2b14c2-7a49-4c8a-9aa8-45855e7196c7",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A cunami jelensége a modern technológiában is fontos szerepet játszik, hiszen a helyszíni érzékelők és a számítógépes modellek segítik a kutatókat a várható cunamik előrejelzésében, ezzel csökkentve a veszélyt az érintett területeken.",
+       "sketch": {
+        "shapes": [
+         {
+          "x1": 0,
+          "x2": 400,
+          "y1": 150,
+          "y2": 150,
+          "type": "wave",
+          "cycles": 5,
+          "amplitude": 20
+         },
+         {
+          "x": 10,
+          "y": 130,
+          "text": "Cunami hullám",
+          "type": "label"
+         },
+         {
+          "x": 200,
+          "y": 150,
+          "type": "dot"
+         },
+         {
+          "x": 180,
+          "y": 170,
+          "text": "Földrengés",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Cunami és a hullámok",
+       "discovery": "A cunamik tudományos vizsgálata már a 19. században elkezdődött, de az 1946-os Aleut-szigeteki földrengés által kiváltott hatalmas hullámok - amelyek Hawaiit is elérték - fontos mérföldkövet jelentettek: ez vezetett a Csendes-óceáni Cunami Figyelmeztető Központ 1949-es létrehozásához. Azóta a kutatók folyamatosan fejlesztik a hullámok keletkezésének és terjedésének megértését, hogy jobban felkészülhessünk a jövőbeli eseményekre.",
+       "try_basic": "A diákok készíthetnek egyszerű hullámokat vízben, ha egy tál vízbe dobják a kezüket vagy egy tárgyat, megfigyelve a hullámok terjedését.",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "7f38ee76-af31-4272-99e0-2e6ea2584fa7",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "D",
+       "options": [
+        "A) Az amplitúdó változó, de a hullámhossz állandó.",
+        "B) Az amplitúdó és a hullámhossz is változó.",
+        "C) Az amplitúdó állandó, de a hullámhossz változó.",
+        "D) Az amplitúdó és a hullámhossz is állandó."
+       ],
+       "question": "Mi a jellemzője az állóhullámoknak?",
+       "explanation": "Az állóhullámoknak jellemzője, hogy az amplitúdó és a hullámhossz állandó, mivel a hullámok interferenciájából jönnek létre, és a csomópontok és antinódok helyzete nem változik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Méter (m)",
+        "B) Másodperc (s)",
+        "C) Hertz (Hz)",
+        "D) Joule (J)"
+       ],
+       "question": "Milyen mértékegységben mérjük a hullámhosszat?",
+       "explanation": "A hullámhossz a hullám egy periódusának hossza, amelyet méterben (m) mérünk.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hullámhossz és a frekvencia szorzataként számolható.",
+        "B) Mindig állandó érték.",
+        "C) A hullám energiájának mértéke.",
+        "D) A hullámok amplitúdójának mértéke."
+       ],
+       "question": "Mi a hullám terjedési sebessége?",
+       "explanation": "A hullám terjedési sebessége a hullámhossz (λ) és a frekvencia (f) szorzataként (v = f * λ) számolható.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) A vízhullámok mindig állóhullámok.",
+        "B) A vízhullámok terjedése nem befolyásolja az amplitúdót.",
+        "C) A vízhullámok a víz felszínén terjednek, és az energia átvitelére szolgálnak.",
+        "D) A vízhullámok frekvenciája állandó."
+       ],
+       "question": "Melyik állítás igaz a vízhullámokra?",
+       "explanation": "A vízhullámok a víz felszínén terjednek, és az energia átvitelére szolgálnak, miközben az egyes vízcseppek körkörösen mozognak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Az energiát egy helyben tartják.",
+        "B) Az energiát terjedés közben továbbítják.",
+        "C) Csak vízben léteznek.",
+        "D) Mindig állóhullámok formájában jelentkeznek."
+       ],
+       "question": "Mi a haladó hullámok fő jellemzője?",
+       "explanation": "A haladó hullámok fő jellemzője, hogy az energiát terjedés közben továbbítják, míg a hullámforma mozog a térben.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "f9bed1a8-cfe6-4a06-99c9-c13615a1af18",
+   "title_hu": "Hanghullámok és hangszerek",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "763fe72d-dbec-4f91-9a28-de34daa5a252",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A levegőben terjedő lökéshullámot egyszerű eszközökkel is megfigyelhetjük. Például, ha egy nagyobb tárgyat, mint egy üres műanyag palackot megütünk, a hang, amit hallunk, a levegőben terjedő lökéshullám következménye. A hang terjedési sebessége a levegőben körülbelül 343 m/s. Ezt a sebességet egyszerű kísérletekkel, például a hangforrás és a hallgató közötti távolság mérésével becsülhetjük meg.",
+       "type": "text",
+       "heading": "Lökéshullám megfigyelése",
+       "key_term": "lökéshullám"
+      },
+      {
+       "body": "A hangmagasság (frekvencia) a hanghullámok számának mértéke, ami azt jelzi, hogy egy másodperc alatt hány hullám keletkezik. Minél magasabb a frekvencia, annál magasabb a hang. Például, ha egy telefon csengőhangját hallgatod, a magasabb frekvenciájú hangok élesebbek, míg az alacsonyabbak, mint egy mély basszus, mélyebbnek érződnek. A zene világában ez a fogalom kulcsfontosságú, hiszen a különböző hangszerek eltérő frekvenciákat hoznak létre.",
+       "type": "text",
+       "heading": "Frekvencia és hangmagasság",
+       "key_term": "frekvencia, hangmagasság"
+      },
+      {
+       "body": "A hangerő a hang intenzitását jelzi, ami azt határozza meg, hogy mennyire hangos egy adott hang. A hangerőt decibelben (dB) mérjük. Például, amikor a kedvenc dalodat hallgatod a telefonodon, a hangerő növelésével a zene hangosabbá válik. Azonban fontos tudni, hogy a túl hangos zene halláskárosodáshoz vezethet, ezért érdemes mértékkel hallgatni.",
+       "type": "text",
+       "heading": "Hangerő és hangzás",
+       "key_term": "hangerő"
+      },
+      {
+       "body": "A hangszerek hangképzése különböző elveken alapul. Például a gitár húrjainak pengetése során a húrok rezgései keltik a hangot, amely a levegőben terjed. A zongora billentyűinek lenyomásával a kalapácsok ütése is hasonló elvet követ. A hangszerek megfigyelése közben láthatjuk, hogy a különböző anyagok és formák hogyan befolyásolják a hangzás minőségét és karakterét.",
+       "type": "text",
+       "heading": "Hangszerek működése",
+       "key_term": "hangszerek"
+      },
+      {
+       "body": "A hallás folyamata a fül felépítésén alapul. A hanghullámok a fülkagylón keresztül a dobhártyához jutnak, ahol rezgéseket keltve továbbítják azokat a belső fülbe. Ott a rezgések idegi impulzusokká alakulnak, amelyeket az agyunk hangként érzékel. A halláskárosodás megelőzése érdekében fontos, hogy kerüljük a túl hangos környezeteket, mint például a koncerteket vagy a fülhallgatóval, magas hangerőn való zenehallgatást.",
+       "type": "text",
+       "heading": "A hallás mechanizmusa",
+       "key_term": "hallás"
+      },
+      {
+       "body": "A hangok keltésére és elemzésére egyszerű programokat, mint például az Audacity, használhatunk. Ezen program segítségével rögzíthetjük a hangokat, majd megfigyelhetjük a hullámformájukat és a frekvenciájukat. Ez segít megérteni, hogyan különböztethetjük meg a hangokat, és milyen paraméterek befolyásolják a hangzásukat. A digitális zene világában ez a tudás elengedhetetlen a zeneszerzéshez és a hangmérnöki munkához.",
+       "type": "text",
+       "heading": "Hangok keltése és elemzése",
+       "key_term": "hangelemzés"
+      }
+     ]
+    },
+    {
+     "block_id": "20b9f3fb-b54d-4037-8075-b9c36dd76e48",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal zenei tehetség elhatározza, hogy megmutatja barátainak, milyen csodálatos élmény zenélni. Fog egy egyszerű ütőhangszert, például egy dobot, és megüti a felületét. Ezzel a mozdulattal a dob membránja rezgésbe kezd, ami lökéshullámot kelt a levegőben.",
+       "type": "story",
+       "heading": "A hangkeltés kezdete"
+      },
+      {
+       "body": "A levegőben keletkezett lökéshullámok gyorsan terjedni kezdenek. A levegő részecskéi egymás után ütköznek, és továbbítják a rezgéseket a környezetükbe. Az emberek, akik a közelben állnak, észlelik a hangot, ahogy az eljut hozzájuk. A hang terjedési sebessége a levegőben körülbelül 343 méter másodpercenként.",
+       "type": "story",
+       "heading": "A lökéshullám terjedése"
+      },
+      {
+       "body": "Ahogy a hang elér a hallgatókhoz, a frekvenciája (a rezgések száma másodpercenként) meghatározza a hangmagasságot. Magasabb frekvenciájú hangok élesebbek, míg alacsonyabb frekvenciájúak mélyebbek. Ezenkívül a hangerő is változik, ami a hullám amplitúdójával (a hullám kiemelkedése) van összefüggésben. Minél nagyobb az amplitúdó, annál hangosabb a hang.",
+       "type": "story",
+       "heading": "A hang tulajdonságai"
+      },
+      {
+       "body": "A fiatal zenész barátaihoz érve bemutatja, hogyan működnek a különböző hangszerek. Például egy hegedűnél a vonó mozgása a húr rezgését idézi elő, ami szintén lökéshullámokat kelt a levegőben. A hangszer felépítése és anyaghasználata befolyásolja a hangzás minőségét és karakterét.",
+       "type": "story",
+       "heading": "Hangszerek működése"
+      },
+      {
+       "body": "Amikor a barátok hallják a zenét, a hanghullámok a fülüknél érkeznek. A fül külső része összegyűjti a hanghullámokat, amelyek a dobhártyához jutnak. A dobhártya rezgéseket kelt, amelyek a hallócsontokhoz jutnak, majd a belső fülbe, ahol a hang jelekké alakul át, és az agy feldolgozza őket.",
+       "type": "story",
+       "heading": "A hallás mechanizmusa"
+      },
+      {
+       "body": "A fiatalok között elhangzik a figyelmeztetés is: a túl hangos zene vagy a folyamatos zaj károsíthatja a hallást. A hangerő és a hallás védelme érdekében fontos, hogy tudatosan figyeljenek arra, milyen hangerőn hallgatnak zenét, és használjanak fülvédőt, ha szükséges.",
+       "type": "story",
+       "heading": "A hallást károsító tényezők"
+      }
+     ]
+    },
+    {
+     "block_id": "f47308ac-7a15-483c-88b3-049688701b71",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Lökéshullám terjedése a levegőben",
+       "heading": "Lökéshullám megfigyelése",
+       "description": "Egy egyszerű kísérlet, ahol a levegőben terjedő lökéshullámot egy hangszóró és egy mikrofon segítségével figyeljük meg. A hangszóró kibocsát egy hangot, amelyet a mikrofon rögzít.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Hang terjedési sebessége (v = d/t)",
+       "heading": "Terjedési sebesség becslése",
+       "description": "Egy grafikon, amely a távolság és az idő kapcsolatát mutatja. A hang terjedési sebessége a távolság és az idő hányadosa, amelyet a kísérlet során mérhetünk.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "A frekvencia és a hangmagasság kapcsolata",
+       "heading": "Hangmagasság és frekvencia",
+       "description": "Egy diagram, amely a különböző frekvenciájú hangok (pl. mély és magas hangok) ábrázolását mutatja. A frekvencia (f) és a hangmagasság közötti kapcsolatot szemlélteti.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Hangerő és amplitúdó összefüggése",
+       "heading": "Hangerő és amplitúdó",
+       "description": "Egy grafikon, amely az amplitúdó (A) és a hangerő (L) közötti kapcsolatot mutatja. Az amplitúdó növekedésével a hangerő is nő.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Hangszer keresztmetszete és hangképzés",
+       "heading": "Hangszer működése",
+       "description": "Egy hangszer, például egy vonós hangszer keresztmetszete, amely bemutatja a hangképzés elvét. A vonó érintkezik a húrokkal, amelyek rezgéseket keltenek.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "A hallás mechanizmusa",
+       "heading": "Hallás mechanizmusa",
+       "description": "Egy diagram, amely bemutatja a fül felépítését és a hanghullámok érzékelésének folyamatát, a külső fültől a belső fülig.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Hallást károsító zajszintek",
+       "heading": "Hallást károsító tényezők",
+       "description": "Egy grafikon, amely a különböző zajszintek (dB) és azok hatásait mutatja a hallásra, például a zenehallgatás és a zajos környezet hatásait.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Hangok elemzése Audacity programban",
+       "heading": "Hangok elemzése Audacity programmal",
+       "description": "Egy képernyőfotó az Audacity programban, ahol a hanghullámformát és a spektrumot elemezhetjük. Az elemzés során különböző hangok frekvenciáit és amplitúdóit figyelhetjük meg.",
+       "visual_type": "screenshot"
+      }
+     ]
+    },
+    {
+     "block_id": "dbc82457-b22e-4d13-b01e-fd3666be57ce",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A hanghullámok elméletét a hangszórók, mikrofonok és zenei hangszerek működésében használják. Minden nap találkozunk velük, például amikor zenét hallgatunk vagy telefonálunk.",
+       "sketch": {
+        "shapes": [
+         {
+          "x1": 50,
+          "x2": 350,
+          "y1": 150,
+          "y2": 150,
+          "type": "wave",
+          "cycles": 5,
+          "amplitude": 20
+         },
+         {
+          "x": 20,
+          "y": 140,
+          "text": "Hanggal hullámok",
+          "type": "label"
+         },
+         {
+          "x": 100,
+          "y": 150,
+          "type": "dot"
+         },
+         {
+          "x": 200,
+          "y": 150,
+          "type": "dot"
+         },
+         {
+          "x": 300,
+          "y": 150,
+          "type": "dot"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Hanghullámok felfedezése",
+       "discovery": "A hanghullámok felfedezése a 17. században kezdődött, amikor Robert Hooke, angol tudós, megfigyelte, hogy a levegő rezgései hangot keltenek. Hooke kísérletei során felfedezte, hogy a hang terjedése a levegőben a levegő részecskéinek rezgésén alapul, amelyet ma is a hanghullámok elméletével magyarázunk.",
+       "try_basic": "Készíts hanghullámokat különböző hangszerekkel, például egy gitárral vagy egy furulyával, és figyeld meg, hogyan változik a hang magassága és erőssége a különböző hangképzési módokkal.",
+       "try_advanced": "Készíts egy egyszerű hanghullám-analizáló programot az Audacity szoftver segítségével, amely lehetővé teszi a különböző hanghullámok vizsgálatát és összehasonlítását."
+      }
+     ]
+    },
+    {
+     "block_id": "d511ae59-0579-4545-9a29-87a6da7b1628",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hanghullám, amely az anyag részecskéinek rezgése által terjed.",
+        "B) A fényhullám, amely vákuumban terjed.",
+        "C) A vízhullám, amely folyadékban terjed.",
+        "D) A mágneses hullám, amely elektromágneses térben terjed."
+       ],
+       "question": "Mi a levegőben terjedő lökéshullám?",
+       "explanation": "A levegőben terjedő lökéshullám a hanghullám, amely az anyag részecskéinek rezgése által terjed.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A frekvencia (frekvenciájú) értéke.",
+        "B) A hangerő (hangerősség) mértéke.",
+        "C) A hanghullám terjedési sebessége.",
+        "D) A hanghullám hosszúsága."
+       ],
+       "question": "Mi határozza meg a hangmagasságot?",
+       "explanation": "A hangmagasság a frekvencia (frekvenciájú) értékével arányos, amely megmutatja, hogy a hang milyen magas vagy mély.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hanghullám amplitúdója.",
+        "B) A hanghullám frekvenciája.",
+        "C) A hanghullám hossza.",
+        "D) A hanghullám terjedési sebessége."
+       ],
+       "question": "Melyik tényező befolyásolja a hangerőt?",
+       "explanation": "A hangerőt a hanghullám amplitúdója befolyásolja, mivel nagyobb amplitúdó esetén a hang hangosabbnak érződik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A levegő rezgése által, amikor a hangszer fúvókáján átáramlik.",
+        "B) A húrok rezgése által, amikor azokat megpengetik.",
+        "C) A membrán rezgése által, amikor azt megütik.",
+        "D) A levegő hőmérsékletének változása által."
+       ],
+       "question": "Hogyan képződik a hang egy fúvós hangszerben?",
+       "explanation": "A fúvós hangszerekben a levegő rezgése által képződik a hang, amikor a levegő a hangszer fúvókáján átáramlik.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A hanghullámok által keltett rezgések átalakulása idegi impulzusokká.",
+        "B) A fényhullámok érzékelése a szemben.",
+        "C) A hőmérséklet változása az agyban.",
+        "D) A szagok érzékelése az orrban."
+       ],
+       "question": "Mi a hallás mechanizmusának alapja?",
+       "explanation": "A hallás mechanizmusának alapja a hanghullámok által keltett rezgések átalakulása idegi impulzusokká, amelyek az agyban érzékelődnek.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "23864568-4648-4155-bada-4167e1e16247",
+   "title_hu": "Fényhullámok és színek",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "0fcb3024-d423-4e2c-abe6-9eefd286ebad",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A fény hullámtermészete azt jelenti, hogy a fény nem csupán részecskékből áll, hanem hullámként is viselkedik. Gondoljunk csak arra, amikor a napfény a vízfelületen tükröződik, és apró hullámokat hoz létre. Ezt a jelenséget hívjuk fényhullámnak. A fényhullámok különböző frekvenciájúak, és ez határozza meg, hogy milyen színt érzékelünk. Például a piros fény hullámhossza hosszabb, míg a kék fényé rövidebb.",
+       "type": "text",
+       "heading": "A fény hullámtermészete",
+       "key_term": "fény hullámtermészete"
+      },
+      {
+       "body": "A színek észlelése a szemünkben található érzékelő sejtek munkájának köszönhető. Amikor a fény a különböző tárgyakra esik, a tárgyak a fény bizonyos részeit elnyelik, míg más részeit visszaverik. Például egy zöld levél a zöld fényt visszaveri, míg a többit elnyeli. A kiegészítő színek azok a színek, amelyek akkor keletkeznek, ha két szín keveredik, és az eredmény egy új szín, mint például a piros és a zöld keveréke sárgát ad.",
+       "type": "text",
+       "heading": "A színek észlelése",
+       "key_term": "színek észlelése, kiegészítő színek"
+      },
+      {
+       "body": "A tárgyak színe nagymértékben függ attól, hogy milyen fényforrás világítja meg őket. Például, ha egy fehér pólót sárga fényben nézünk, akkor az sárgásnak tűnik, míg napfényben tiszta fehérnek. Ezt a jelenséget kísérletezhetjük otthon is, ha különböző izzókkal világítunk meg egy tárgyat, és megfigyeljük a színváltozást. Az izzók színhőmérséklete eltérő, így más-más színeket hoznak elő a tárgyakból.",
+       "type": "text",
+       "heading": "Miért függ a tárgyak színe a megvilágítás fényétől?",
+       "key_term": "tárgyak színe, megvilágítás"
+      },
+      {
+       "body": "A szivárvány a fény törésének és visszaverődésének csodálatos példája. Amikor a napfény esőcseppeken halad át, a fény színekre bontódik, és a szivárvány színeit látjuk: vörös, narancs, sárga, zöld, kék, indigó és ibolya. Ezt a jelenséget megfigyelhetjük, amikor eső után a nap kisüt, és a levegőben lévő vízcseppek szivárványt alkotnak. A szivárvány színei mindig ebben a sorrendben jelennek meg, függetlenül attól, hogy hol nézzük.",
+       "type": "text",
+       "heading": "A szivárvány színei",
+       "key_term": "szivárvány színei"
+      },
+      {
+       "body": "A felhők színe gyakran szürke vagy fehér, attól függően, hogy mennyi fényt nyelnek el. Az ég kék színét a légkörben lévő részecskék szóródása okozza, amely a kék fényt jobban szórja, mint a pirosat. A növényzet zöld színe a klorofillnak köszönhető, amely a fotoszintézishez szükséges. A víz színe pedig az átlátszóságától és a benne lévő szennyeződésektől függ; a tiszta víz színe kékes, míg a zavaros víz szürkének tűnik.",
+       "type": "text",
+       "heading": "Felhők, ég, növényzet és víz színei",
+       "key_term": "felhők, ég, növényzet, víz színei"
+      },
+      {
+       "body": "A színek kikeverése a festés egyik izgalmas része. Ha például keverjük a piros és a kék festéket, lila színt kapunk. Ezt a gyakorlatot elvégezhetjük festékekkel otthon, és megfigyelhetjük, hogyan alakulnak át a színek. A színkeverés során fontos megérteni, hogy a festékek aditív keverése különbözik a fény aditív keverésétől, ahol a színek összeadódnak, míg a festékek esetében a színek elnyelik egymást.",
+       "type": "text",
+       "heading": "Színek kikeverése festékekkel",
+       "key_term": "színek kikeverése"
+      }
+     ]
+    },
+    {
+     "block_id": "b7eaddf3-8ebb-4e56-a553-b237231a6fe5",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy tizenéves felkapcsolja a szobájában a lámpát. A villanykörte belsejében az áram (A) áthalad a filameneten, amely felmelegszik, és fényt bocsát ki. Ez a fény hullámtermészetű, ami azt jelenti, hogy elektromágneses hullámok formájában terjed.",
+       "type": "story",
+       "heading": "A fény bekapcsolása"
+      },
+      {
+       "body": "A szoba falán egy prizmát helyeznek el, amely a beérkező fehér fényt (amely a napfényből származik) szivárvány színeire bontja. A prizmán áthaladó fény különböző hullámhosszúságú fényhullámokból áll, amelyek a vörös, narancs, sárga, zöld, kék, indigó és ibolya színeket alkotják.",
+       "type": "story",
+       "heading": "A fény színekre bontása"
+      },
+      {
+       "body": "A tizenéves egy színes papírdarabot tart a fényforrás elé. Amikor a papírdarab színe piros, a piros fényhullámok visszaverődnek, míg a többi szín elnyelődik. Így a papírdarab pirosnak tűnik a megvilágító fény színétől függően.",
+       "type": "story",
+       "heading": "A színek észlelése"
+      },
+      {
+       "body": "A tizenéves észreveszi, hogy amikor zöld fény világít a piros papírdarabra, az nem tűnik pirosnak, hanem sötétnek. Ez a jelenség a kiegészítő színek elvén alapul: a zöld és piros színek kiegészítik egymást, így a piros papírdarab a zöld fény alatt nem tükröz semmit.",
+       "type": "story",
+       "heading": "Kiegészítő színek hatása"
+      },
+      {
+       "body": "Kint a szabadban a tizenéves megfigyeli az eget, a fákat és a vizet. Az ég kék, mert a légkörben a kék fényhullámok szóródnak a legjobban. A fák zöldek, mert a zöld fényhullámokat visszaverik, míg a többi színt elnyelik. A víz színe változó, attól függően, hogy milyen fény éri, és milyen mély a víz.",
+       "type": "story",
+       "heading": "A természet színei"
+      }
+     ]
+    },
+    {
+     "block_id": "85353700-060f-4440-bb9d-2b1760216e3a",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A fény hullámtermészete – a fényhullámok jellemzői",
+       "heading": "A fény hullámtermészete",
+       "description": "Egy hullámdiagram, amely bemutatja a fényhullámok terjedését, frekvenciáját és hullámhosszát. A diagramon látható a fényhullámok amplitúdója és a hullámhossz mérése.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A színek észlelése – a színek hullámhossza",
+       "heading": "Színek észlelése",
+       "description": "Egy színskála, amely bemutatja a különböző színeket és azok hullámhosszait. A skálán a vörös, narancs, sárga, zöld, kék, indigókék és ibolya színek láthatók.",
+       "visual_type": "színskála"
+      },
+      {
+       "type": "visual",
+       "caption": "Kiegészítő színek – színelmélet",
+       "heading": "Kiegészítő színek",
+       "description": "Egy ábra, amely bemutatja a kiegészítő színek párba állítását, például a vörös és zöld, a kék és narancs, valamint a sárga és ibolya színeket.",
+       "visual_type": "kép"
+      },
+      {
+       "type": "visual",
+       "caption": "A tárgyak színének változása a megvilágító fény színétől függően",
+       "heading": "Tárgyak színének függése a megvilágítástól",
+       "description": "Egy grafikon, amely bemutatja, hogyan változik egy tárgy színe különböző fényforrások (pl. napfény, izzó, LED) hatására.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Felhők és ég színe – a fény szóródása",
+       "heading": "Felhők és ég színe",
+       "description": "Egy fotó a kék égről és a fehér felhőkről naplementekor, bemutatva a fény szóródását és a színek változását.",
+       "visual_type": "fotó"
+      },
+      {
+       "type": "visual",
+       "caption": "A növényzet zöld színe – klorofill és fényelnyelés",
+       "heading": "Növényzet színe",
+       "description": "Egy diagram, amely bemutatja a klorofill szerepét a növények zöld színének kialakulásában és a fényelnyelést.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A tenger és folyók színe – mélység és fényvisszaverődés",
+       "heading": "Tenger és folyók színe",
+       "description": "Egy kép a tenger és a folyók különböző színeiről, bemutatva a víz mélységét, a szennyeződéseket és a fényvisszaverődést.",
+       "visual_type": "kép"
+      },
+      {
+       "type": "visual",
+       "caption": "A szivárvány színei – fény refrakciója",
+       "heading": "Szivárvány színei",
+       "description": "Egy fotó egy szivárványról, amely a fény refrakcióját és a színek szépségét mutatja be.",
+       "visual_type": "fotó"
+      }
+     ]
+    },
+    {
+     "block_id": "3251d538-fd92-4c41-acd3-6e02310ce7ac",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A színek és fényhullámok megértése nélkülözhetetlen a modern technológiákban, például a LED világításban, a televíziókban és a számítógépes kijelzőkben.",
+       "sketch": {
+        "shapes": [
+         {
+          "x": 50,
+          "y": 100,
+          "size": 80,
+          "type": "triangle"
+         },
+         {
+          "x1": 150,
+          "x2": 350,
+          "y1": 150,
+          "y2": 150,
+          "type": "wave",
+          "cycles": 5,
+          "amplitude": 20
+         },
+         {
+          "x": 30,
+          "y": 80,
+          "text": "Prizma",
+          "type": "label"
+         },
+         {
+          "x": 200,
+          "y": 130,
+          "text": "Fényhullámok",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Fényhullámok és színek",
+       "discovery": "Isaac Newton 1666-ban kísérletezett a fény és a színek kapcsolatával. Egy prizmán keresztül megfigyelte, hogy a fehér fény színkomponensekre bontva szivárványt alkot. Ezt a jelenséget a fény hullámtermészetével magyarázta, és rájött, hogy a különböző színek különböző hullámhosszúságú fényhullámok.",
+       "try_basic": "Készíts egy egyszerű prizmát, például egy üvegdarabot, és irányíts rá egy erős fényforrást. Figyeld meg, hogyan bontja a fényt különböző színekre.",
+       "try_advanced": "Készíts egy színszűrő kísérletet különböző színszűrőkkel, és mérd meg, milyen színű fényt engednek át, és hogyan keverednek a színek."
+      }
+     ]
+    },
+    {
+     "block_id": "0832a338-9681-403f-b069-49475a26fbf8",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A fény terjedése hullámok formájában történik.",
+        "B) A fény mindig egyenes vonalban terjed.",
+        "C) A fény nem terjedhet vákuumban.",
+        "D) A fény csak részecskékből áll."
+       ],
+       "question": "Mi jellemzi a fény hullámtermészetét?",
+       "explanation": "A fény hullámtermészete azt jelenti, hogy a fény elektromágneses hullámok formájában terjed.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Olyan színek, amelyek egymás mellett állva fehér fényt adnak.",
+        "B) Olyan színek, amelyek keverésével új színt kapunk.",
+        "C) Olyan színek, amelyek a szivárványban találhatók.",
+        "D) Olyan színek, amelyek nem észlelhetők az emberi szem számára."
+       ],
+       "question": "Mik a kiegészítő színek?",
+       "explanation": "A kiegészítő színek olyan színek, amelyek ha együtt vannak, akkor fehér fényt alkotnak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mert a tárgyak a megvilágító fényt visszaverik.",
+        "B) Mert a tárgyak mindig ugyanazt a színt mutatják.",
+        "C) Mert a megvilágító fény nem befolyásolja a színeket.",
+        "D) Mert a tárgyak színét a hőmérséklet határozza meg."
+       ],
+       "question": "Miért függ a tárgyak színe a megvilágító fény színétől?",
+       "explanation": "A tárgyak színe a megvilágító fény színétől függ, mert a tárgyak a fényt visszaverik, és a visszavert fény színe határozza meg, hogy mit látunk.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Vörös, narancs, sárga, zöld, kék, indigó, lila.",
+        "B) Lila, kék, zöld, sárga, narancs, vörös.",
+        "C) Zöld, sárga, narancs, vörös, lila, kék, indigó.",
+        "D) Narancs, sárga, zöld, kék, lila, vörös, indigó."
+       ],
+       "question": "Mik a szivárvány színei a megfelelő sorrendben?",
+       "explanation": "A szivárvány színei a következő sorrendben jelennek meg: vörös, narancs, sárga, zöld, kék, indigó és lila.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A felhők színe a vízcseppek fénytöréséből adódik.",
+        "B) A felhők mindig fehérek.",
+        "C) A felhők színét a napsugárzás befolyásolja.",
+        "D) A felhők színe a hőmérséklet változásától függ."
+       ],
+       "question": "Hogyan magyarázható a felhők színe?",
+       "explanation": "A felhők színe a vízcseppek fénytöréséből és a fény szóródásából adódik, ami különböző színeket eredményez.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "c3b7baa0-57dc-4596-bce6-ffae6938005f",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A hullámok visszaverődnek és interferálnak egymással.",
+      "B) A hullámok csak egy irányban terjednek.",
+      "C) Az amplitúdó folyamatosan változik.",
+      "D) A hullámhossz mindig állandó."
+     ],
+     "question": "Mi az állóhullám (standing wave) jellemzője?",
+     "explanation": "Az állóhullámok a hullámok interferenciájával jönnek létre, ahol a hullámok visszaverődnek és egymással találkoznak.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hertz (Hz)",
+      "B) Méter (m)",
+      "C) Másodperc (s)",
+      "D) Decibel (dB)"
+     ],
+     "question": "Milyen mértékegységben mérjük a frekvenciát (frequency)?",
+     "explanation": "A frekvencia a hullámok másodpercenkénti számát jelenti, és mértékegysége a Hertz (Hz).",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) A hullámhossz",
+      "B) A hangerő",
+      "C) A terjedési sebesség",
+      "D) A frekvencia"
+     ],
+     "question": "Melyik tényező befolyásolja a hangmagasságot (pitch)?",
+     "explanation": "A hangmagasság a frekvenciától függ: a magasabb frekvenciájú hangok magasabb hangmagasságot eredményeznek.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) v = f × λ",
+      "B) v = m × a",
+      "C) v = p × t",
+      "D) v = E × t"
+     ],
+     "question": "Mi a hullám terjedési sebességének (wave speed) képlete?",
+     "explanation": "A hullám terjedési sebessége a frekvencia (f) és a hullámhossz (λ) szorzataként határozható meg.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Egy kő vízbe dobása.",
+      "B) Egy rugó meghúzása.",
+      "C) Egy zenehallgatás.",
+      "D) Egy lökéshullám megfigyelése."
+     ],
+     "question": "Melyik kísérlet mutatja be a vízhullámok (water waves) viselkedését?",
+     "explanation": "A vízhullámok megfigyelésére legjobban egy kő vízbe dobása alkalmas, ami hullámokat kelt a víz felszínén.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Piros",
+      "B) Zöld",
+      "C) Kék",
+      "D) Lila"
+     ],
+     "question": "Melyik szín a szivárvány (rainbow) legfelső része?",
+     "explanation": "A szivárvány legfelső színe a piros, amely a fény spektrumának legnagyobb hullámhosszú színe.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Mert a fény elnyelődik.",
+      "B) Mert a fény visszaverődik.",
+      "C) Mert a fény áthalad a tárgyakon.",
+      "D) Mert a fény színekre bontódik."
+     ],
+     "question": "Miért függ a tárgyak színe a megvilágító fény színétől?",
+     "explanation": "A tárgyak színe a fény visszaverődésén alapul, ami attól függ, hogy a megvilágító fény milyen színű.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Magas frekvenciájú hangok.",
+      "B) Alacsony hangerő.",
+      "C) Csendes környezet.",
+      "D) Zenehallgatás fülhallgatóval."
+     ],
+     "question": "Melyik tényező károsíthatja a hallást?",
+     "explanation": "A magas frekvenciájú hangok hosszú távon károsíthatják a hallást, különösen nagy hangerő mellett.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

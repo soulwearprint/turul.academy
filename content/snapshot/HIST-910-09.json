@@ -1,0 +1,836 @@
+{
+ "nat_id": "HIST-910-09",
+ "topic_id": "828726e4-aec0-45f2-9c80-7e157a46d75b",
+ "title_hu": "A felvilágosodás kora",
+ "grade": 10,
+ "lessons": [
+  {
+   "lesson_id": "60f0c7a4-01ff-4940-b259-cfe08b55b1da",
+   "title_hu": "A felvilágosodás",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "53b487c7-a2ac-4965-90a0-05ea20f975d1",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A felvilágosodás a 17-18. században kibontakozó szellemi irányzat, amely az ész, a tudomány és az emberi jogok fontosságát hangsúlyozta. E korszakban a vallási dogmákkal szemben a racionális gondolkodás került előtérbe. A felvilágosodás célja az volt, hogy az emberek önállóan, értelemmel és tapasztalattal közelíthessenek a világ megértéséhez. A magyar történelem szempontjából a felvilágosodás új gondolkodásmódot hozott, amely hozzájárult a társadalmi és politikai reformokhoz.",
+       "type": "text",
+       "heading": "A felvilágosodás fogalma",
+       "key_term": "felvilágosodás"
+      },
+      {
+       "body": "A felvilágosodás során a tapasztalat és az értelem együttes alkalmazása vált a tudás forrásává. Nikolausz Kopernikusz és Isaac Newton munkássága például megkérdőjelezte a korábbi világképeket, és új alapokra helyezte a természettudományokat. Kopernikusz heliocentrikus elmélete és Newton gravitációs törvényei megmutatták, hogy a tudományos megismerés az ész és a megfigyelés révén fejlődhet. Ez a szemléletmód hatással volt a magyar értelmiségre is, akik a felvilágosodás eszméit magukévá tették.",
+       "type": "text",
+       "heading": "Tapasztalat és értelem",
+       "key_term": "tapasztalat és értelem"
+      },
+      {
+       "body": "A társadalmi szerződés elmélete Jean-Jacques Rousseau nevéhez fűződik, aki azt állította, hogy az emberek közötti kapcsolatok alapja egy kölcsönös megállapodás. Rousseau szerint a társadalom akkor működik jól, ha az egyének együttesen döntik el közös ügyeiket. Ez a gondolat a magyar politikai gondolkodásban is megjelent, különösen a 1848-as forradalom idején, amikor a nemzeti önrendelkezés és a demokrácia eszméi kerültek előtérbe.",
+       "type": "text",
+       "heading": "A társadalmi szerződés elmélete",
+       "key_term": "társadalmi szerződés"
+      },
+      {
+       "body": "Adam Smith, a modern közgazdaságtan atyja, a szabad verseny elméletét dolgozta ki a 18. században. Smith szerint a piac önszabályozó mechanizmusa biztosítja a gazdasági fejlődést és a jólétet. A szabad verseny eszméje a magyar gazdasági gondolkodásban is megjelent a 19. században, amikor a liberalizmus és a gazdasági reformok iránti igény felerősödött. Ez a megközelítés hozzájárult a magyar iparosodáshoz és a gazdasági modernizációhoz.",
+       "type": "text",
+       "heading": "A szabad verseny elmélete",
+       "key_term": "szabad verseny"
+      },
+      {
+       "body": "Charles Louis Montesquieu a hatalmi ágak megosztásának elméletét dolgozta ki, amely szerint a törvényhozó, végrehajtó és bírói hatalom különböző intézmények között oszlik meg. Ez az elmélet fontos hatással volt a modern demokratikus államok kialakulására, beleértve Magyarországot is. Montesquieu gondolatai hozzájárultak a jogállamiság és a demokratikus intézmények megerősödéséhez a 19. század folyamán. A hatalmi ágak elválasztása a politikai stabilitás alapja lett.",
+       "type": "text",
+       "heading": "Montesquieu államelmélete",
+       "key_term": "Montesquieu"
+      }
+     ]
+    },
+    {
+     "block_id": "ba393047-cd20-465a-bf8d-f98699ce1c34",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy falusi közösségben a földművesek reggelente korán keltek, hogy megkezdjék a napot. A felvilágosodás hatására egyre többen kezdtek érdeklődni a mezőgazdasági újítások iránt. Az új módszerek, mint például a vetésforgó, lehetővé tették, hogy a földek termékenyebbek legyenek. A közeli városokban megjelenő kereskedők kereslete pedig ösztönözte a falusiakat, hogy a megtermelt javakat értékesítsék. A falu életében a termés bősége nemcsak a megélhetést biztosította, hanem a közösség összetartását is erősítette.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A földművelés mindennapjai"
+      },
+      {
+       "body": "Egy falusi asszony a családja számára főzött, miközben a gyerekek a közelben játszottak. Az étkezések során a helyi alapanyagok domináltak, mint a kenyér, a zöldségek és a hús. A felvilágosodás eszméi, amelyek a tudományos megközelítést hangsúlyozták, fokozatosan eljutottak a faluba is. Az asszony érdeklődött az egészséges táplálkozás iránt, és próbálta bevezetni a változatosabb ételeket. Az ünnepeken különleges ételeket készítettek, amelyek a hagyományokat és a közösségi összetartást erősítették.",
+       "mood": "táplálkozás",
+       "type": "story",
+       "heading": "A család és a táplálkozás"
+      },
+      {
+       "body": "A faluban a gyermekek számára egy kis iskola működött, ahol az alapvető írás- és olvasástanulás mellett a felvilágosodás szellemében a tudományok iránti érdeklődést is próbálták felkelteni. A tanító, aki a falusi közösség megbecsült tagja volt, a gyermekek figyelmét a természet csodái és a tudományos felfedezések felé irányította. A szülők büszkék voltak arra, hogy gyermekeik iskolába járhatnak, hiszen ez a jövőjük szempontjából elengedhetetlen volt.",
+       "mood": "nevelés",
+       "type": "story",
+       "heading": "A tanulás és nevelés szerepe"
+      },
+      {
+       "body": "A falusi közösség tagjai számára az ünnepek különösen fontosak voltak. Az évszakok váltakozása, a termés betakarítása és a vallási ünnepek mind hozzájárultak a közösségi élet gazdagításához. A felvilágosodás hatására a hagyományos szokások mellett egyre inkább megjelentek új ünnepi szokások is, amelyek a tudományos felfedezések és a társadalmi szerződés eszméit tükrözték. Az ünnepeken a közös étkezések, táncok és énekek erősítették a helyi közösség összetartását.",
+       "mood": "hagyományok",
+       "type": "story",
+       "heading": "Hagyományok és ünnepek"
+      },
+      {
+       "body": "A falusi kereskedők a felvilágosodás idején egyre több árut kínáltak, ami lehetővé tette a helyi gazdaság fellendülését. Az új kereskedelmi kapcsolatok révén a falusiak hozzáférhettek olyan termékekhez, amelyek korábban ismeretlenek voltak számukra. A szabad verseny elmélete a kereskedők között is megjelent, akik igyekeztek minél jobb árakat és minőséget kínálni. Ez a verseny nemcsak a gazdasági helyzetüket javította, hanem a vásárlók számára is kedvezőbb lehetőségeket teremtett.",
+       "mood": "kereskedelem",
+       "type": "story",
+       "heading": "A kereskedelem fejlődése"
+      }
+     ]
+    },
+    {
+     "block_id": "3b01fe7f-16f5-46a3-8cea-2cba1a651873",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A felvilágosodás a tudományos gondolkodás és az értelem előtérbe helyezése.",
+       "heading": "A felvilágosodás definíciója",
+       "description": "A diagram bemutatja a felvilágosodás fogalmát, hangsúlyozva a tapasztalat és értelem szerepét a tudományos és filozófiai fejlődésben.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A felvilágosodás idővonalának főbb mérföldkövei.",
+       "heading": "A felvilágosodás idővonala",
+       "description": "Idővonal, amelyen a felvilágosodás korszakának főbb eseményei és a fontosabb gondolkodók élete található, például 1687: Newton 'Principia Mathematica'.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "Rousseau és Montesquieu társadalmi szerződés elmélete.",
+       "heading": "Államelméletek a felvilágosodásban",
+       "description": "A diagram bemutatja a társadalmi szerződés elméletét, Rousseau és Montesquieu nézeteit, valamint az államhatalom megosztásának fontosságát.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Adam Smith és a szabad verseny elmélete.",
+       "heading": "A szabad verseny elmélete",
+       "description": "Diagram, amely bemutatja Adam Smith 'A nemzetek gazdagsága' című művének alapelveit, a szabad verseny és a piaci mechanizmusok fontosságát.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Nikolausz Kopernikusz, a modern tudomány egyik megalapozója.",
+       "heading": "Nikolausz Kopernikusz",
+       "description": "Kopernikusz arcképe, aki a heliocentrikus világképet dolgozta ki, megkérdőjelezve a földközéppontú nézetet.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "Isaac Newton, a felvilágosodás tudományos forradalmának kiemelkedő alakja.",
+       "heading": "Isaac Newton",
+       "description": "Newton arcképe, aki a gravitáció törvényét és a mozgástan alapjait fektette le.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "Charles Louis Montesquieu, a politikai filozófia kiemelkedő alakja.",
+       "heading": "Charles Louis Montesquieu",
+       "description": "Montesquieu arcképe, aki az államhatalom megosztásának elvét dolgozta ki, mely a modern demokrácia alapja lett.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "Jean-Jacques Rousseau, a modern politikai gondolkodás egyik alapító atyja.",
+       "heading": "Jean-Jacques Rousseau",
+       "description": "Rousseau arcképe, aki a társadalmi szerződés elméletét dolgozta ki, hangsúlyozva a népi szuverenitást.",
+       "visual_type": "arckép"
+      }
+     ]
+    },
+    {
+     "block_id": "ab819dfd-e4b7-4a6f-9111-1043be7daa1c",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A felvilágosodás kora a 17-18. századra tehető, amikor Európában a tudományos gondolkodás és az értelem előtérbe kerültek. Ekkor jelentős filozófiai és tudományos munkák születtek, amelyek hatással voltak a politikai és társadalmi berendezkedésekre. A felvilágosodás eszméi, mint például a szabad verseny és a társadalmi szerződés, más kultúrákban is megjelentek, például az indiai és kínai filozófiákban is találkozunk hasonló gondolatokkal.",
+       "type": "world",
+       "year": "",
+       "heading": "A felvilágosodás szellemi mozgalma",
+       "link_hu": ""
+      }
+     ]
+    },
+    {
+     "block_id": "05e49229-130f-4bed-b8f1-00d65e63c0e1",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Nikolausz Kopernikusz",
+        "B) Isaac Newton",
+        "C) Charles-Louis Montesquieu",
+        "D) Jean-Jacques Rousseau"
+       ],
+       "question": "Ki volt az a tudós, aki a heliocentrikus világképet képviselte, és ezzel megalapozta a modern csillagászatot?",
+       "explanation": "Nikolausz Kopernikusz a heliocentrikus világképet képviselte, amely szerint a Föld és a többi bolygó a Nap körül kering, ezzel forradalmasítva a csillagászatot.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Adam Smith",
+        "B) Charles-Louis Montesquieu",
+        "C) Jean-Jacques Rousseau",
+        "D) Isaac Newton"
+       ],
+       "question": "Melyik filozófus írta a társadalmi szerződés elméletét, amely szerint az emberek szabad akaratukból hozzák létre a társadalmat?",
+       "explanation": "Jean-Jacques Rousseau a társadalmi szerződés elméletét dolgozta ki, amely hangsúlyozza, hogy a társadalom az emberek közötti megállapodás eredménye.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Nikolausz Kopernikusz",
+        "B) Isaac Newton",
+        "C) Adam Smith",
+        "D) Charles-Louis Montesquieu"
+       ],
+       "question": "Ki volt az a tudós, aki a gravitáció törvényét fogalmazta meg, és ezzel hozzájárult a modern fizika megalapozásához?",
+       "explanation": "Isaac Newton a gravitáció törvényének megfogalmazásával jelentős lépést tett a modern fizika fejlődésében, amely a felvilágosodás tudományos forradalmának része.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Társadalmi szerződés",
+        "B) Szabad verseny",
+        "C) Felvilágosodás",
+        "D) Közszolgáltatás"
+       ],
+       "question": "Melyik fogalom jelöli a gazdasági versenyt, amely a felvilágosodás idején kezdett elterjedni?",
+       "explanation": "A szabad verseny elmélete a felvilágosodás idején alakult ki, és arra utal, hogy a gazdasági tevékenységek szabadon folytathatók, ami elősegíti a fejlődést.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Adam Smith",
+        "B) Jean-Jacques Rousseau",
+        "C) Charles-Louis Montesquieu",
+        "D) Nikolausz Kopernikusz"
+       ],
+       "question": "Melyik filozófus volt a modern politikai filozófia egyik alapítója, aki a hatalmi ágak elválasztásának elvét hirdette?",
+       "explanation": "Charles-Louis Montesquieu a hatalmi ágak elválasztásának elvét hirdette, amely a modern demokratikus államok alapvető elve lett.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "130ec611-0c8c-43b1-b131-edfbf66b2782",
+   "title_hu": "A brit alkotmányos monarchia és az amerikai köztársaság működése",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "3c81a278-9d2f-48fd-8dcd-4a50c558110d",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az alkotmányos monarchia olyan államformát jelent, ahol a monarcha hatalmát az alkotmány korlátozza. Nagy-Britanniában a parlamenti rendszer keretein belül működik, ahol a miniszterelnök a kormány vezetője. A Jognyilatkozat 1689-ben rögzítette a parlament szerepét és a monarcha hatalmának korlátozását. Ez a rendszer lehetővé tette a politikai stabilitást és a polgári jogok védelmét.",
+       "type": "text",
+       "heading": "Az alkotmányos monarchia fogalma",
+       "key_term": "alkotmányos monarchia"
+      },
+      {
+       "body": "A brit parlamentáris rendszer alapja a parlament és a kormány együttműködése. A parlament két házból áll: a Képviselőházból és a Lordok Házából. A választott képviselők a cenzus alapján kerülnek a parlamentbe, ami korlátozza a szavazati jogot. A miniszterelnök a parlamenti többség támogatásával irányítja a kormányt, amely felelős a törvényhozásért és a végrehajtásért.",
+       "type": "text",
+       "heading": "A brit parlamentáris rendszer",
+       "key_term": "parlamentáris rendszer"
+      },
+      {
+       "body": "Az amerikai köztársaság 1776-ban a Függetlenségi Nyilatkozat aláírásával jött létre. Ekkor az Egyesült Államok függetlenedett Nagy-Britanniától, és megalapította saját politikai rendszerét. Az elnöki rendszer középpontjában az elnök áll, aki a végrehajtó hatalmat képviseli, míg a kongresszus a törvényhozó hatalmat gyakorolja. Az amerikai köztársaság mintája sok ország számára példaértékűvé vált.",
+       "type": "text",
+       "heading": "Az amerikai köztársaság kialakulása",
+       "key_term": "elnöki rendszer"
+      },
+      {
+       "body": "George Washington az Egyesült Államok első elnöke volt, aki a függetlenségi háború hőseként vált ismertté. Ő vezette az amerikai csapatokat a brit hatalom ellen, és a függetlenség kivívása után 1789-ben lett elnök. Washington politikai filozófiája hangsúlyozta a demokratikus értékeket és a hatalmi ágak elválasztását. Szerepe a köztársaság megalapozásában és stabilizálásában kulcsfontosságú volt.",
+       "type": "text",
+       "heading": "George Washington szerepe",
+       "key_term": "George Washington"
+      },
+      {
+       "body": "A választójog kérdése mind Nagy-Britanniában, mind az Egyesült Államokban fontos politikai téma volt. A cenzus alapú választás a brit parlamentben a társadalmi osztályok befolyását tükrözte. Az amerikai köztársaságban a Függetlenségi Nyilatkozat hirdette meg az egyenlőséget, de a választójog kezdetben mégis korlátozott volt. Az általános választójog fokozatosan terjedt el, amely a demokratikus elvek megvalósulását segítette elő.",
+       "type": "text",
+       "heading": "A választójog fejlődése",
+       "key_term": "általános választójog"
+      }
+     ]
+    },
+    {
+     "block_id": "fd0b5a03-5891-4217-b195-17b5268ee48e",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A falusi földművesek számára a reggel a napfelkeltével kezdődött. Az aratás, a vetés és a betakarítás időszakaiban a földekre siettek, hogy megélhetésüket biztosítsák. A brit alkotmányos monarchia és az amerikai köztársaság eseményei távolinak tűntek számukra, hiszen mindennapi gondjaik a földművelés körül forogtak. Az elnöki rendszer hírei is csak lassan jutottak el hozzájuk, de a hírek érkezésekor sokan beszélgettek a cenzusról és a választójogról, ami egyre inkább foglalkoztatta őket.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "Földművesek mindennapjai"
+      },
+      {
+       "body": "A családok életében a közös étkezések fontos szerepet játszottak. Az ételek jellemzően a helyben termelt alapanyagokból készültek, mint a kenyér, a zöldségek és a hús. A családtagok együtt főztek, a gyerekek pedig segítettek a ház körüli munkákban. Az ünnepek, mint például a szüret vagy a karácsony, különleges alkalmak voltak, amikor a közösség összegyűlt, és az emberek büszkén meséltek az új politikai változásokról, amelyek hatással voltak életükre.",
+       "mood": "otthon",
+       "type": "story",
+       "heading": "Családi élet és táplálkozás"
+      },
+      {
+       "body": "A falvakban a helyi közösségek élete szorosan összefonódott a hivatalok működésével. A helyi vezetők, akik a közösség érdekeit képviselték, gyakran tartottak gyűléseket, ahol a falusiak megoszthatták véleményüket. A brit és amerikai politikai változások iránti érdeklődés növekedett, hiszen egyre többen vágytak a felelős kormányzásra és az általános választójogra. A közösségi döntések sokszor befolyásolták a mindennapi életet, hiszen a helyi ügyek rendezése közvetlen hatással volt a falusiak életére.",
+       "mood": "hatalom",
+       "type": "story",
+       "heading": "Hivatalok és közösségi élet"
+      },
+      {
+       "body": "A vallás fontos szerepet játszott a falusi emberek életében. Hetente látogatták a templomot, ahol közösen imádkoztak és ünnepeltek. Az ünnepek során a közösség összegyűlt, hogy együtt ünnepeljék a hagyományokat. A politikai események, mint a Jognyilatkozat és a Függetlenségi Nyilatkozat, új gondolatokat hoztak a közéletbe, de a mindennapi életben a hit és a közösségi szokások maradtak a középpontban.",
+       "mood": "hit",
+       "type": "story",
+       "heading": "Hit és ünnepek"
+      },
+      {
+       "body": "A gyermekek nevelése a családokban és a helyi közösségekben zajlott. Az iskolák még nem voltak elérhetőek minden faluban, így a szülők maguk tanították a gyerekeket az alapvető ismeretekre. A gyerekek sokszor segítettek a szüleiknek a mezőn, és tanulták meg a földművelés fortélyait. A politikai események, mint a brit alkotmányos monarchia és az amerikai köztársaság kialakulása, a jövőjükre is hatással voltak, hiszen a jövő generációjának jogai és lehetőségei is a változó világban formálódtak.",
+       "mood": "nevelés",
+       "type": "story",
+       "heading": "Gyermekek és nevelés"
+      }
+     ]
+    },
+    {
+     "block_id": "5af6eeef-7d67-4488-8da8-349dfebef6c6",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Nagy-Britannia, ahol az alkotmányos monarchia működik.",
+       "heading": "A brit alkotmányos monarchia",
+       "description": "A brit alkotmányos monarchia térképe, amely bemutatja Nagy-Britannia területét és a parlamenti központokat.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "1689: A Jognyilatkozat, amely korlátozza a király hatalmát.",
+       "heading": "Jognyilatkozat",
+       "description": "Az 1689-es Jognyilatkozat idővonalon való elhelyezése, amely a brit alkotmányos monarchia alapját képezi.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "1776: A Függetlenségi nyilatkozat, amely az amerikai köztársaság születését jelzi.",
+       "heading": "Függetlenségi nyilatkozat",
+       "description": "A 1776-os Függetlenségi nyilatkozat idővonalon való elhelyezése, amely az Amerikai Egyesült Államok függetlenségét hirdeti.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "George Washington, aki az amerikai köztársaság alapító atyja volt.",
+       "heading": "George Washington",
+       "description": "George Washington arcképe, az Amerikai Egyesült Államok első elnöke.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "A parlamentáris rendszer működése Nagy-Britanniában.",
+       "heading": "Parlamentáris rendszer",
+       "description": "A brit parlamentáris rendszer felépítése, bemutatva a parlament és a kormány kapcsolatát.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az elnöki rendszer működése az Amerikai Egyesült Államokban.",
+       "heading": "Elnöki rendszer",
+       "description": "Az amerikai elnöki rendszer felépítése, bemutatva a kongresszus és az elnök közötti viszonyt.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A választójog fejlődése és jelentősége a politikai rendszerekben.",
+       "heading": "Választójog",
+       "description": "A választójog fejlődése, bemutatva a cenzus és az általános választójog közötti különbségeket.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "a7cbda5d-e49f-41c9-b1b2-9a1c12d25047",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "1689-ben Angliában elfogadták a Jognyilatkozatot, amely megerősítette a parlament hatalmát és korlátozta a monarcha jogait. Ez a dokumentum alapvető fontosságú volt az alkotmányos monarchia kialakulásában, mivel megteremtette a jogállamiság alapjait. A Jognyilatkozat hatására a parlament és a kormány közötti viszony átalakult, és a politikai hatalmi struktúrák stabilizálódtak.",
+       "type": "world",
+       "year": "1689",
+       "heading": "A Jognyilatkozat Angliában",
+       "link_hu": "A Jognyilatkozat közvetlenül hozzájárult a magyar alkotmányos fejlődéshez, hiszen a 19. századi reformkorban a magyar politikai elit is az alkotmányos berendezkedés irányába mozdult el."
+      },
+      {
+       "body": "1776-ban az Amerikai Egyesült Államokban elfogadták a Függetlenségi Nyilatkozatot, amelyben kinyilvánították az Egyesült Államok függetlenségét Nagy-Britanniától. Ez a dokumentum nemcsak az amerikai nép önrendelkezését hirdette meg, hanem alapelveiben a demokratikus kormányzás és az emberi jogok védelmét is hangsúlyozta. A nyilatkozat hatására kialakult az amerikai köztársaság, amely a világ más részein is inspirációt jelentett a demokratikus mozgalmak számára.",
+       "type": "world",
+       "year": "1776",
+       "heading": "Az Amerikai Függetlenségi Nyilatkozat",
+       "link_hu": "A Függetlenségi Nyilatkozat elvei hatással voltak Magyarországra is, ahol a reformkor idején a szabadságjogok és a függetlenség iránti vágy erősödött, ami a 1848-as forradalomhoz vezetett."
+      }
+     ]
+    },
+    {
+     "block_id": "f748f485-21e3-4092-bb30-7952458cd7f4",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A király vagy királynő hatalma korlátozott, és az alkotmány szabályozza.",
+        "B) A király vagy királynő teljes hatalommal rendelkezik.",
+        "C) Az államfő választott személy, aki nem kötődik az alkotmányhoz.",
+        "D) Az állam kormányzása kizárólag a katonai vezetés kezében van."
+       ],
+       "question": "Mi jellemzi az alkotmányos monarchiát?",
+       "explanation": "Az alkotmányos monarchia lényege, hogy a monarcha hatalma az alkotmány keretein belül működik, így a nép képviselete is érvényesül.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) 1689",
+        "B) 1776",
+        "C) 1789",
+        "D) 1804"
+       ],
+       "question": "Mikor fogadták el a Függetlenségi nyilatkozatot az Amerikai Egyesült Államokban?",
+       "explanation": "A Függetlenségi nyilatkozatot 1776. július 4-én fogadták el, amely az Egyesült Államok függetlenségét hirdette meg Nagy-Britanniától.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Thomas Jefferson",
+        "B) Abraham Lincoln",
+        "C) George Washington",
+        "D) John Adams"
+       ],
+       "question": "Ki volt az első elnöke az Amerikai Egyesült Államoknak?",
+       "explanation": "George Washington volt az első elnöke az Egyesült Államoknak, aki 1789-ben vette át a hivatalt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A választásra jogosultak számának korlátozása a vagyoni vagy egyéb feltételek alapján.",
+        "B) Az általános választójog bevezetése.",
+        "C) A választási kampány költségeinek ellenőrzése.",
+        "D) A választások lebonyolításának időpontja."
+       ],
+       "question": "Mi a cenzus a választások során?",
+       "explanation": "A cenzus a választásra jogosultak körének szűkítését jelenti, amely a vagyoni helyzethez vagy más feltételekhez kötheti a választási jogot.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 1689",
+        "B) 1776",
+        "C) 1789",
+        "D) 1815"
+       ],
+       "question": "Melyik évben történt a Jognyilatkozat elfogadása Nagy-Britanniában?",
+       "explanation": "A Jognyilatkozatot 1689-ben fogadták el, amely fontos lépés volt az alkotmányos monarchia kialakulásában és a parlamenti hatalom megerősödésében.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "4c71575a-c728-45a5-87d1-e7830a4d814b",
+   "title_hu": "A francia forradalom és hatása",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "2c9d19ae-081d-48e0-8c4b-a4c72766459b",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "1789. július 14-én Párizsban kitört a francia forradalom, amely a társadalmi és politikai berendezkedés radikális átalakulását célozta. A forradalom során a nép a jogegyenlőség és a népfelség elveit hirdette, amely a monarchia és az arisztokrácia hatalmát kérdőjelezte meg. A forradalom kulmináló eseménye az Emberi és Polgári Jogok Nyilatkozatának elfogadása volt, mely alapvető jogokat biztosított a polgároknak. E folyamat fontos hatással volt Magyarországra is, ahol a forradalom eszméi inspirálóan hatottak a reformmozgalmakra.",
+       "type": "text",
+       "heading": "A francia forradalom kitörése",
+       "key_term": "forradalom"
+      },
+      {
+       "body": "A francia forradalom során a jakobinusok kerültek hatalomra, vezetőjük Maximilien Robespierre volt. A jakobinus diktatúra időszaka alatt a forradalom radikális irányvonalat vett, és a politikai ellenfelek elnyomására törekedett, amely terrorral párosult. A jakobinusok célja a forradalom vívmányainak megvédése és a társadalmi egyenlőség megteremtése volt, de a hatalommal való visszaélés miatt széleskörű elutasításba ütköztek. Robespierre végül 1794-ben megbukott, ami a diktatúra végét jelentette.",
+       "type": "text",
+       "heading": "A jakobinus diktatúra",
+       "key_term": "diktatúra"
+      },
+      {
+       "body": "Napóleon Bonaparte 1804-ben kikiáltotta magát császárrá, ezzel megteremtve a francia birodalmat. Napóleon célja a polgári berendezkedés exportja volt, amely a forradalom eszméit terjesztette Európában. Birodalma alatt számos területen bevezette a jogegyenlőséget és a hatalmi ágak megosztását, amelyek a modern államok alapelveivé váltak. A birodalom terjeszkedése azonban háborúkhoz vezetett, amelyek végül a waterlooi csatában, 1815-ben Napóleon vereségével zárultak.",
+       "type": "text",
+       "heading": "Napóleon birodalma",
+       "key_term": "Bonaparte Napóleon"
+      },
+      {
+       "body": "A francia forradalom és Napóleon bukása után, 1815-ben létrejött a Szent Szövetség, amely a monarchiák védelmét célozta. Az Oroszország, Ausztria és Poroszország által alapított szövetség a forradalmi eszmék terjedésének megakadályozására törekedett. A Szent Szövetség politikai stabilitást kívánt teremteni Európában, azonban a forradalom hatásai továbbra is érezhetőek maradtak. Magyarországon is hatással volt a reformmozgalmakra, amelyek a szabadság és jogegyenlőség eszméit hirdették.",
+       "type": "text",
+       "heading": "A Szent Szövetség",
+       "key_term": "Szent Szövetség"
+      },
+      {
+       "body": "A francia forradalom eszméi jelentős hatással voltak Magyarország társadalmi és politikai életére. A jogegyenlőség és népfelség elvei inspirálták a magyar reformereket, akik a Habsburg-monarchia ellen küzdöttek. A forradalom eredményei hozzájárultak a magyar polgári átalakulás elősegítéséhez, és a szabadságharc eszméit is táplálták. Az 1848-as forradalom során a francia példa nyomán a magyar nép is követelte jogaik érvényesítését.",
+       "type": "text",
+       "heading": "A francia forradalom hatása Magyarországra",
+       "key_term": "jogegyenlőség"
+      }
+     ]
+    },
+    {
+     "block_id": "5fdc3098-b9c3-4e7d-8316-b5f13943ca4e",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A falusi földművelők a francia forradalom idején a mindennapi megélhetésükért küzdöttek. A forradalom hírei, mint a jogegyenlőség és a népfelség eszméi, eljutottak hozzájuk is, ami reményt adott a jobb életre. A földek megművelése mellett sokan a helyi közösség ügyeivel is foglalkoztak, hiszen a hatalom átalakulása a földesurak szerepét is megkérdőjelezte. Az új eszmék hatására sokan mertek a helyi hivatalokban is részt venni, hogy képviseljék érdekeiket.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A földművelők mindennapjai"
+      },
+      {
+       "body": "A falusi asszonyok a francia forradalom idején is megőrizték hagyományaikat, különösen az ünnepek során. A családi ünnepek, mint a szüret, fontos alkalmak voltak a közösség összetartására. Az új politikai eszmék hatására azonban a közös ünneplés mellett egyre inkább teret nyert a jogegyenlőség szelleme, ami a férfiak és nők közötti szerepek átalakulásához vezetett. Az asszonyok egyre nagyobb szerepet vállaltak a közösségi életben, sőt, sokan aktivisták lettek a helyi ügyekben.",
+       "mood": "hit, ünnepek",
+       "type": "story",
+       "heading": "Családi ünnepek és hagyományok"
+      },
+      {
+       "body": "A gyermekek nevelése a falvakban a francia forradalom idején is nagy hangsúlyt kapott. A szülők igyekeztek a gyermekeiket a legjobb tudásuk szerint nevelni, és az új eszmék hatására a népfelség és jogegyenlőség elvei beépültek a nevelési elvekbe is. Az iskolákban a gyerekek már nemcsak a hagyományos tantárgyakat tanulták, hanem a forradalom eszméit is, amelyek arra tanították őket, hogy joguk van a tudáshoz és a szabad véleménynyilvánításhoz.",
+       "mood": "nevelés",
+       "type": "story",
+       "heading": "Gyermekek nevelése és oktatása"
+      },
+      {
+       "body": "A városi kereskedők a francia forradalom idején új lehetőségeket láttak a gazdaságban. A jakobinus diktatúra alatt a kereskedelem szabályozása megváltozott, ami sok kereskedő számára kedvezőbb feltételeket teremtett. A polgári berendezkedés exportja miatt a kereskedők igyekeztek alkalmazkodni az új viszonyokhoz, és sokan új termékeket kezdtek árusítani, amelyek a forradalom eszméit tükrözték. A kereskedővállalkozások fellendülése a városi középosztály megerősödését is eredményezte.",
+       "mood": "gazdaság",
+       "type": "story",
+       "heading": "A kereskedők és a gazdasági változások"
+      },
+      {
+       "body": "A francia forradalom idején a falvakban a betegségek és járványok komoly problémát jelentettek. A gyógyítók és a népi orvoslás hívei a hagyományos módszerekkel próbálták enyhíteni a szenvedést. Az új eszmék hatására a közegészségügyi kérdések is egyre fontosabbá váltak, és a falusi közösségek igyekeztek összefogni, hogy közösen küzdjenek a betegségek ellen. Az emberek közötti szolidaritás erősödött, ami a közösségi értékek megerősödéséhez vezetett.",
+       "mood": "betegség, gyógyítás",
+       "type": "story",
+       "heading": "Betegségek és gyógyítás"
+      }
+     ]
+    },
+    {
+     "block_id": "2d219fa0-b53a-4376-abd6-4a4576c92b9e",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "1789: A francia forradalom kezdete - Bastille ostroma és az Emberi és Polgári Jogok Nyilatkozata.",
+       "heading": "A forradalom kitörése",
+       "description": "Az idővonal bemutatja a francia forradalom főbb eseményeit 1789-ben, beleértve a Bastille ostromát és az Emberi és Polgári Jogok Nyilatkozatának elfogadását.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "Az Emberi és Polgári Jogok Nyilatkozata: jogegyenlőség és népfelség.",
+       "heading": "Az Emberi és Polgári Jogok Nyilatkozata",
+       "description": "A diagram bemutatja az Emberi és Polgári Jogok Nyilatkozatának főbb pontjait, mint a jogegyenlőség és a népfelség elvét.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Maximilien Robespierre: A jakobinus diktatúra vezetője.",
+       "heading": "A jakobinus diktatúra",
+       "description": "Maximilien Robespierre arcképe, aki a jakobinusok vezetője volt a forradalom alatt, és a diktatúra egyik szimbóluma.",
+       "visual_type": "arckép"
+      },
+      {
+       "type": "visual",
+       "caption": "Napóleon birodalma: 1804-1814, terjeszkedés Oroszország felé.",
+       "heading": "Napóleon birodalma",
+       "description": "A térkép bemutatja Napóleon birodalmát 1804-1814 között, valamint a terjeszkedését Oroszország irányába.",
+       "visual_type": "térkép"
+      },
+      {
+       "type": "visual",
+       "caption": "1815: A waterlooi csata - Napóleon veresége.",
+       "heading": "A waterlooi csata",
+       "description": "Az idővonal bemutatja a waterlooi csata eseményeit 1815-ben, amely Napóleon császárságának végét jelenti.",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "A hatalmi ágak megosztása: a jogállamiság alapelve.",
+       "heading": "Hatalmi ágak megosztása",
+       "description": "A diagram bemutatja a hatalmi ágak megosztásának elvét, amely a forradalom idején alakult ki.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A Szent Szövetség: Európa államai 1815 után.",
+       "heading": "A Szent Szövetség",
+       "description": "A térkép bemutatja a Szent Szövetség tagállamait, amelyek 1815 után alakultak meg a francia forradalom és Napóleon bukása után.",
+       "visual_type": "térkép"
+      }
+     ]
+    },
+    {
+     "block_id": "ffedb142-65f8-4b2e-ac92-d6d74f98ca07",
+     "mode": "world",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A francia forradalom idején a jogegyenlőség, a népfelség és a hatalmi ágak megosztása fogalmai más országokban is megjelentek, például az amerikai függetlenségi háború során.",
+       "type": "note",
+       "year": "",
+       "heading": "A francia forradalom és hatása",
+       "link_hu": ""
+      }
+     ]
+    },
+    {
+     "block_id": "5f8926bf-5f7e-4368-a1bb-ddf3a90d6a34",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) 1789",
+        "B) 1804",
+        "C) 1815",
+        "D) 1799"
+       ],
+       "question": "Mikor tört ki a francia forradalom?",
+       "explanation": "A francia forradalom 1789-ben kezdődött, amikor a nép fellázadt a monarchia és a társadalmi egyenlőtlenségek ellen.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A francia forradalom vezető politikai alakja",
+        "B) Napóleon császár",
+        "C) A Szent Szövetség tagja",
+        "D) Oroszország cárja"
+       ],
+       "question": "Ki volt Maximilien Robespierre?",
+       "explanation": "Maximilien Robespierre a francia forradalom egyik vezetője volt, aki a jakobinus diktatúra idején fontos szerepet játszott.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Minden ember egyenlő jogokkal rendelkezik",
+        "B) Csak a nemesek rendelkeznek jogokkal",
+        "C) A nőket kizárták a jogegyenlőségből",
+        "D) A jogegyenlőség nem volt fontos"
+       ],
+       "question": "Mi a jogegyenlőség jelentősége a francia forradalom idején?",
+       "explanation": "A jogegyenlőség a forradalom egyik alapelve volt, amely a társadalmi igazságosságot hirdette meg.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A nép hatalma a legfőbb",
+        "B) A királyi hatalom abszolút",
+        "C) A politikai hatalom a papságé",
+        "D) A hadsereg irányít mindent"
+       ],
+       "question": "Mi a népfelség elve?",
+       "explanation": "A népfelség elve azt jelenti, hogy a hatalom a néptől származik, amely a forradalom alapgondolata volt.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Napóleon vereséget szenvedett",
+        "B) Robespierre hatalomra jutott",
+        "C) A francia forradalom véget ért",
+        "D) A Szent Szövetség megalakult"
+       ],
+       "question": "Mi történt a waterlooi csatában?",
+       "explanation": "A waterlooi csata 1815-ben zajlott, ahol Napóleon vereséget szenvedett, ami a császárságának végét jelentette.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "ca3fd60d-80b7-4d31-b95a-b3fec8d6fa51",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A tudományos megismerés és a racionális gondolkodás előtérbe kerülése",
+      "B) A vallási dogmák megerősödése",
+      "C) A feudális rendszer visszaállítása",
+      "D) A katonai erődominancia"
+     ],
+     "question": "Mi jellemzi a felvilágosodás korát?",
+     "explanation": "A felvilágosodás a tudományos megismerés és a racionális gondolkodás korszakát jelenti.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Társadalmi szerződés",
+      "B) Diktatúra",
+      "C) Jakobinus",
+      "D) Cenzus"
+     ],
+     "question": "Melyik fogalom kapcsolódik a jogegyenlőséghez?",
+     "explanation": "A jogegyenlőség a társadalmi szerződés elvével összefügg, amely a mindenki számára egyenlő jogokat hirdeti.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Isaac Newton",
+      "B) Jean-Jacques Rousseau",
+      "C) Charles Louis Montesquieu",
+      "D) Adam Smith"
+     ],
+     "question": "Ki volt a hatalmi ágak megosztásának elméletének megalkotója?",
+     "explanation": "Charles Louis Montesquieu dolgozta ki a hatalmi ágak megosztásának elméletét, amely a demokratikus berendezkedés alapelve.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1689",
+      "B) 1776",
+      "C) 1789",
+      "D) 1815"
+     ],
+     "question": "Melyik eseményhez kapcsolódik a Függetlenségi nyilatkozat?",
+     "explanation": "A Függetlenségi nyilatkozat 1776-ban született az Amerikai Egyesült Államokban.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Alkotmányos monarchia",
+      "B) Népfelség",
+      "C) Felelős kormány",
+      "D) Szabad verseny"
+     ],
+     "question": "Melyik fogalom jelenti a nép hatalmát?",
+     "explanation": "A népfelség elve azt jelenti, hogy a hatalom a néptől származik.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1789",
+      "B) 1804",
+      "C) 1815",
+      "D) 1776"
+     ],
+     "question": "Melyik esemény indította el a francia forradalmat?",
+     "explanation": "A francia forradalom 1789-ben kezdődött, amely alapvetően megváltoztatta Franciaország politikai rendszerét.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) George Washington",
+      "B) Maximilien Robespierre",
+      "C) Bonaparte Napóleon",
+      "D) Isaac Newton"
+     ],
+     "question": "Ki volt a jakobinusok vezetője a francia forradalom alatt?",
+     "explanation": "Maximilien Robespierre a jakobinusok vezetője volt, és kulcsszerepet játszott a forradalom radikalizálódásában.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A waterlooi csata",
+      "B) A francia forradalom",
+      "C) A Függetlenségi nyilatkozat",
+      "D) A Jognyilatkozat"
+     ],
+     "question": "Melyik csata zárta le Napóleon császárságát?",
+     "explanation": "A waterlooi csata 1815-ben zárta le Napóleon császárságát, és véglegesen száműzte őt.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

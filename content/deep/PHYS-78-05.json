@@ -1,0 +1,212 @@
+{
+ "nat_id": "PHYS-78-05",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "52d43954-73b2-46f1-8158-21c9ddc5612b",
+   "title_hu": "Halmazállapot-változások és hőmérséklet",
+   "text_block_id": "6cbadbbe-211c-4ce5-9b0c-683e8e144451",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Ahol a melegítés nem melegít",
+     "body": "Ha jeges vizet melegítünk, a hőmérője 0 °C-on megáll, és addig ott is marad, amíg az utolsó jégdarab el nem olvad. A közben felvett energia nem a hőmérsékletet emeli, hanem a jég kristályrácsát bontja szét. 1 kg jég megolvasztásához kb. 334 kJ kell, nagyjából annyi, amennyivel 1 kg vizet 80 °C-kal lehetne felmelegíteni. Ezért olvad olyan lassan egy nagy jégtömb még meleg napon is.",
+     "did_you_know": "A téli útsózás azért segít, mert a sós víz 0 °C alatt fagy meg, így a jég alacsonyabb hőmérsékleten is elolvad.",
+     "think": "Miért marad 0 °C-os egy jeges ital egészen addig, amíg a jég el nem olvad benne?",
+     "think_answer": "A környezetből érkező hőt a jég olvadása használja fel, ezért a víz nem melegszik. Csak amikor már nincs jég, kezd emelkedni a hőmérséklet."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A víz lassan melegszik",
+     "body": "A víz fajhője nagy: 1 kg víz 1 °C-kal való felmelegítéséhez kb. 4 200 J kell, ez kb. ötször annyi, mint ugyanannyi homokhoz. Ezért nyári délben a homok égeti a talpunkat, a víz viszont kellemesen hűvös. A víz nemcsak forráskor párolog: a tócsa 20 °C-on is felszárad, csak lassabban. Forráskor az a különbség, hogy a gőz már a víz belsejében, buborékok formájában is keletkezik.",
+     "did_you_know": "A nagy tavak és tengerek mellett enyhébb az éghajlat, mert a víz lassan melegszik és lassan hűl, így kiegyenlíti a hőmérséklet ingadozását.",
+     "think": "Miért forró nyáron a strand homokja, miközben a víz hűvös?",
+     "think_answer": "A homoknak sokkal kisebb a fajhője, ezért ugyanannyi napfénytől sokkal jobban felmelegszik, mint a víz."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Főzőlap, amely nem forrósodik",
+     "body": "A hő mindig a melegebb test felől a hidegebb felé áramlik, egészen addig, amíg a hőmérsékletük ki nem egyenlítődik. Az indukciós főzőlap különleges: a lap alatti tekercs gyorsan változó mágneses teret kelt, amely magában az edény aljában hoz létre áramot, és ez melegíti fel az edényt. A főzőlap üvegfelülete csak attól melegszik fel, hogy a forró edény átadja neki a hőt. Ezért egy indukciós főzőlap nem tudja felmelegíteni az alumínium- vagy üvegedényt, csak azt, amelyiket a mágnes vonzza.",
+     "did_you_know": "Egy egyszerű hűtőmágnessel ellenőrizheted, hogy egy edény jó-e indukciós főzőlapra: ha a mágnes rátapad az aljára, működni fog.",
+     "think": "Miért nem melegít fel egy alumíniumedényt az indukciós főzőlap?",
+     "think_answer": "Az indukciós főzés olyan edényt igényel, amelyben a változó mágneses tér jelentős hatást kelt; ilyenek a mágnesezhető anyagok, például a vas. Az alumínium nem ilyen, ezért alig melegszik."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A láthatatlan gőz",
+     "body": "A vízgőz valójában láthatatlan, mint a levegő. Amit a forraló fölött fehér felhőként látunk, az már apró vízcseppek sokasága, vagyis lecsapódott gőz. Ezért közvetlenül a kiöntő nyílásánál egy kis átlátszó rés látszik: ott még gőz van, amely csak a hidegebb levegőben csapódik le. 1 kg víz gőzzé alakításához kb. 2 260 kJ kell, több mint ötször annyi, mint a 0 °C-ról 100 °C-ra melegítéséhez.",
+     "did_you_know": "A forró gőz súlyosabb égési sérülést okoz, mint a forrásban lévő víz, mert lecsapódáskor a bőrön nagy mennyiségű hőt ad le.",
+     "think": "Miért látszik egy kis átlátszó rés a forrásban lévő vízforraló kiöntője és a fehér „gőzfelhő” között?",
+     "think_answer": "A kiöntőnél még láthatatlan vízgőz áramlik ki. Csak kicsit távolabb, a hidegebb levegőben csapódik le apró cseppekké, ezek alkotják a fehér felhőt."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Miért vékony a hőmérő csöve?",
+     "body": "A folyadékos hőmérő azért működik, mert a folyadék melegítéskor jobban tágul, mint az üveg. A tágulás azonban nagyon kicsi, ezért vékony csőre van szükség: ugyanaz a kis térfogat-növekedés egy keskeny csőben sokkal magasabb szintemelkedést okoz. A saját hőmérődet úgy kalibrálhatod, hogy bejelölöd a szintet jeges vízben (0 °C) és forrásban lévő vízben (100 °C), majd a kettő közötti szakaszt száz egyenlő részre osztod. Így a saját skáládat készíted el.",
+     "did_you_know": "Galilei 1600 körül készített „hőmérőjének” még nem volt skálája, csak azt mutatta meg, melegebb vagy hidegebb lett-e.",
+     "think": "Miért vékony szívószálat használunk a házi hőmérőhöz, és nem széles csövet?",
+     "think_answer": "A folyadék térfogata csak kicsit változik. Keskeny csőben ez a kis változás is jól látható szintemelkedést okoz, széles csőben alig látszana."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "A fagy, mint vésnök",
+     "body": "A megfagyó víz térfogata kb. tizedével nő, és ha nincs hová tágulnia, óriási nyomással feszíti szét a környezetét. A kőzetek repedéseibe jutott víz fagyáskor tágítja a repedést, olvadáskor a víz még mélyebbre jut, és a következő fagykor tovább tágít. Ez a fagyaprózódás, amely idővel sziklákat morzsol szét. Az utak kátyúi is így keletkeznek: különösen azokon a teleken, amikor sokszor váltakozik a fagy és az olvadás.",
+     "did_you_know": "A fagyasztóban hagyott jégkocka idővel zsugorodik, mert a jég olvadás nélkül, közvetlenül vízgőzzé alakul át; ezt szublimációnak hívjuk.",
+     "think": "Miért keletkezik több kátyú azokon a teleken, amikor gyakran váltakozik a fagy és az olvadás?",
+     "think_answer": "Minden olvadáskor víz szivárog a repedésekbe, és minden fagyáskor tágítja őket. Minél több ilyen ciklus van, annál jobban tönkremegy az út."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Miért fáraszt a párás hőség?",
+     "body": "A testünk úgy hűti magát, hogy izzadunk, és a bőrünkről elpárolgó veríték hőt von el. Ha a levegő páratartalma magas, a veríték nehezen párolog, ezért a hűtés rosszul működik, és melegebbnek, fáradtabbnak érezzük magunkat. A relatív páratartalom azt mutatja meg, hogy a levegő a lehetséges legtöbb vízgőznek hány százalékát tartalmazza. 100%-nál a levegő telített, ilyenkor alakul ki köd vagy harmat.",
+     "did_you_know": "A 30 °C-os levegő több mint háromszor annyi vízgőzt tud befogadni, mint a 10 °C-os.",
+     "think": "Miért érezzük melegebbnek a 30 °C-os párás napot, mint a 30 °C-os száraz napot?",
+     "think_answer": "Párás levegőben a veríték nehezebben párolog el a bőrünkről, így a testünk nem tud jól lehűlni."
+    }
+   ]
+  },
+  {
+   "lesson_id": "83b8e6f9-7097-4933-a9b7-f6ac4dcf9817",
+   "title_hu": "Víz tulajdonságai és nyomás",
+   "text_block_id": "1eca948d-3e0e-41f2-ace1-70ac0c982b8b",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Erősítés folyadékkal",
+     "body": "Mivel a víz és más folyadékok szinte összenyomhatatlanok, a rájuk kifejtett nyomás minden irányba változatlanul továbbterjed. Erre épül a hidraulikus emelő: ha egy 1 cm² felületű kis dugattyút nyomunk, a nyomás egy 100 cm²-es nagy dugattyúra is átadódik, és ott százszor akkora erőt kelt. Így emelik fel az autószerelők a több tonnás autókat. Az autó fékjében is folyadék viszi át a pedál nyomását a kerekekhez.",
+     "did_you_know": "A fékfolyadékba került légbuborék veszélyes, mert a levegő összenyomható, így a pedál „puha” lesz, és a fék gyengébben működik.",
+     "think": "Miért veszélyes, ha levegő kerül a fékrendszerbe?",
+     "think_answer": "A levegő összenyomható, ezért a pedál nyomásának egy része a buborék összenyomására megy el, és kevesebb jut el a fékekhez."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A 4 °C-os rejtély",
+     "body": "A víz legnagyobb sűrűségű állapota nem a jég, hanem a 4 °C-os víz. Ha a víz 4 °C alá hűl, kissé kitágul, így könnyebb lesz, és a felszínen marad. Ezért a tavak alján télen is kb. 4 °C-os víz van, a felszínen pedig megfagy. A hajó nem attól úszik, hogy az acél sűrűsége kisebb a vízénél, hanem attól, hogy a hajó egészének átlagos sűrűsége, a benne lévő levegővel együtt, kisebb.",
+     "did_you_know": "A tavak aljának vize télen kb. 4 °C-os, ezért tudnak ott a halak áttelelni.",
+     "think": "Miért nem fagynak be a mély tavak a fenekükig?",
+     "think_answer": "A legsűrűbb, 4 °C-os víz leszáll a fenékre, a hidegebb víz pedig felül marad és ott fagy meg. A jég ráadásul szigetel, így lassítja a további hűlést."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Tűsarok vs. elefánt",
+     "body": "A nyomás attól függ, mekkora erő mekkora felületen oszlik el. Ha egy 60 kg-os ember teljes súlyával, kb. 600 N-nal egy 1 cm²-es tűsarokra nehezedik, a nyomás 600 N : 0,0001 m² = 6 000 000 Pa. Egy kb. 5 tonnás elefánt súlya négy nagy talpon oszlik el, ezért a talajra kifejtett nyomása kb. 100 000 Pa. A tűsarok tehát sokkal nagyobb nyomást fejt ki, ezért hagyhat nyomot a parkettán.",
+     "did_you_know": "A tűsarok akár hatvanszor nagyobb nyomást is kifejthet a padlóra, mint egy elefánt talpa.",
+     "think": "Miért nem süllyed el a hóban a hótalpas ember, míg a cipős igen?",
+     "think_answer": "A hótalp nagy felületen osztja el ugyanazt a súlyt, így a hóra kisebb nyomás hat, és az elbírja."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Tíz méter víz = egy légkör",
+     "body": "A víz nyomása a mélységgel egyenletesen nő: p = ρ · g · h. 10 m mélyen ez 1 000 · 10 · 10 = 100 000 Pa, nagyjából akkora, mint a teljes légköri nyomás. Egy egyszerű kísérlet: egy műanyag palack oldalára különböző magasságban lyukakat szúrunk, és vízzel töltjük meg. A legalsó lyukon spriccel ki a víz a legmesszebbre, mert ott a legnagyobb a nyomás. A nyomás csak a mélységtől függ, a víz mennyiségétől nem.",
+     "did_you_know": "A gátakat alul sokkal vastagabbra építik, mint felül, mert a víz nyomása a mélységgel nő.",
+     "think": "Miért vastagabb egy völgyzáró gát az alján, mint a tetején?",
+     "think_answer": "A víz nyomása a mélységgel nő, ezért a gát alját éri a legnagyobb nyomás. Ott kell a legerősebbnek lennie."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Hajó a folyóról a tengerre",
+     "body": "Egy úszó hajó pontosan annyira merül a vízbe, hogy az általa kiszorított víz súlya megegyezzen a saját súlyával. Ha rakományt tesznek rá, mélyebbre merül, amíg a több kiszorított víz ki nem egyenlíti a többletsúlyt. A sós tengervíz sűrűbb az édesvíznél, ezért a tengeren a hajó kevesebb vizet szorít ki ugyanakkora súlyhoz, vagyis kissé kiemelkedik. A hajók oldalán ezért jelek mutatják, meddig lehet őket megrakni édes- és sós vízben.",
+     "did_you_know": "A hajók oldalán látható merülési jelek külön mutatják a megengedett merülést édesvízre, tengervízre és trópusi vizekre.",
+     "think": "Mi történik egy hajóval, amikor a folyótorkolatból kifut a tengerre?",
+     "think_answer": "Kissé kiemelkedik a vízből, mert a sós tengervíz sűrűbb, így kevesebb kiszorított víz is elég a súlya megtartásához."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Minél vékonyabb, annál magasabb",
+     "body": "A víz a keskeny csövekben azért emelkedik fel, mert a víz részecskéit a cső fala vonzza. Minél vékonyabb a cső, annál magasabbra jut a víz. A szivacs és a papírtörlő apró járatai is így szívják fel a vizet. A magas fáknál azonban a hajszálcsövesség önmagában kevés lenne: a vizet főleg a levelek párologtatása „húzza” felfelé, mintha egy szívószálon szívnák.",
+     "did_you_know": "A legmagasabb fák több mint 100 m magasak, és a vizet a gyökerektől a csúcsig juttatják.",
+     "think": "Hogyan jut fel a megolvadt viasz a gyertya kanócán a lángig?",
+     "think_answer": "A kanóc szálai között keskeny járatok vannak, amelyekben a folyékony viasz hajszálcsövességgel felkúszik, akárcsak a víz a papírtörlőben."
+    }
+   ]
+  },
+  {
+   "lesson_id": "58f0d256-8b3d-42fb-a919-24715bdbf267",
+   "title_hu": "Hőmérséklet és légköri jelenségek",
+   "text_block_id": "b0478a5d-e635-4175-80bb-9c7f3f5b0547",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Nyáron nő az Eiffel-torony",
+     "body": "Melegítéskor az atomok nem lesznek nagyobbak, hanem hevesebben rezegnek, és ezért kicsit távolabb kerülnek egymástól. Így az egész test mérete megnő. Az acél méterenként kb. 0,012 mm-rel nyúlik meg minden egyes fok melegedéskor. Egy 100 m-es acélhíd 40 °C-os melegedéskor így kb. 5 cm-t nyúlik, ezért építenek a hidakba tágulási hézagokat.",
+     "did_you_know": "Az Eiffel-torony a nyári melegben néhány centiméterrel magasabb, mint télen.",
+     "think": "Miért nyílik ki könnyebben a befőttesüveg fémteteje, ha meleg víz alá tartod?",
+     "think_answer": "A fém tető jobban tágul melegítéskor, mint az üveg, ezért kissé meglazul az üveg peremén."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A fém hidegebbnek tűnik",
+     "body": "Ha egy szobában megérinted a fém ajtókilincset és a fa ajtót, a fém hidegebbnek tűnik, pedig mindkettő ugyanolyan hőmérsékletű. A fém jó hővezető, ezért gyorsan elvezeti a hőt a kezedből, és ezt érzed hidegnek. A fa rossz hővezető, csak a felszíne melegszik fel a kezed alatt, és kevés hőt vesz el. A bőrünk tehát nem a hőmérsékletet, hanem a hőáramlás sebességét érzékeli.",
+     "did_you_know": "A gyémánt a réznél is jobban vezeti a hőt, ezért érintésre hűvösnek tűnik; az ékszerészek ezzel is megkülönböztetik az utánzatoktól.",
+     "think": "Miért érezzük a csempét hidegebbnek a szőnyegnél, ha ugyanabban a szobában vannak?",
+     "think_answer": "A csempe jobban vezeti a hőt, ezért gyorsabban elvezeti a talpunk melegét. A szőnyeg rossz hővezető, és ráadásul levegőt zár magába."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Egy kiló minden négyzetcentiméteren",
+     "body": "A légköri nyomás kb. 100 000 Pa, ami azt jelenti, hogy minden négyzetcentiméterre kb. 10 N erő hat, mintha 1 kg-os súly nehezedne rá. Egy 20 cm × 30 cm-es füzet felületére így kb. 6 000 N, vagyis több mint fél tonna súlyának megfelelő erő hat. Mégsem érezzük, mert a levegő minden oldalról egyformán nyom, és a testünkben is ugyanekkora a nyomás. Kb. 5 500 m magasan a légnyomás már csak fele akkora, mint a tengerszinten.",
+     "did_you_know": "1654-ben Otto von Guericke két összeillesztett fémfélgömbből kiszivattyúzta a levegőt, és a külső légnyomás olyan erősen szorította össze őket, hogy lovak sem tudták szétválasztani.",
+     "think": "Ha a légnyomás ilyen nagy erővel hat ránk, miért nem nyom össze minket?",
+     "think_answer": "Mert a testünk belsejében is ugyanakkora a nyomás, és a levegő minden irányból egyformán nyom, így az erők kiegyenlítik egymást."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Miért száraz télen a lakás levegője?",
+     "body": "Ha a levegő felmelegszik, de nem kap új vízgőzt, a relatív páratartalma csökken, mert a melegebb levegő több vízgőzt tudna befogadni. Télen a kinti hideg levegő kevés vízgőzt tartalmaz, és amikor a lakásban felmelegszik, a relatív páratartalma nagyon alacsony lesz, ezért száraz a lakás levegője. Fordítva, ha a levegő lehűl, a relatív páratartalma nő, és ha eléri a 100%-ot, köd vagy harmat keletkezik. A nyári párás idő sem attól párás, hogy meleg van, hanem attól, hogy a levegő sok vízgőzt vett fel, például egy tó vagy zivatar után.",
+     "did_you_know": "Télen a fűtött lakások levegője olyan száraz lehet, mint egy sivatagé, ezért használnak párásítót.",
+     "think": "Mi történik a relatív páratartalommal, ha egy lezárt szobában felmelegítjük a levegőt?",
+     "think_answer": "Csökken, mert a vízgőz mennyisége ugyanannyi marad, a melegebb levegő viszont több vízgőzt tudna befogadni."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Parti szél nappal és éjjel",
+     "body": "A tengerparton nappal a szárazföld gyorsabban melegszik fel, mint a víz. A felette lévő meleg levegő felemelkedik, és a helyére a tenger felől hűvösebb levegő áramlik: ez a nappali tengeri szél. Éjjel a szárazföld gyorsabban hűl le, ezért a szél megfordul, és a szárazföld felől fúj a víz felé. A szél tehát mindig a nagyobb nyomású hely felől a kisebb nyomású felé fúj.",
+     "did_you_know": "A szelet mindig arról nevezik el, ahonnan fúj: az északi szél észak felől érkezik.",
+     "think": "Miért fordul meg éjjelre a tengerparti szél iránya?",
+     "think_answer": "Éjjel a szárazföld gyorsabban lehűl, mint a víz, ezért a víz felett lesz melegebb a levegő. Az felemelkedik, és a helyére a szárazföld felől áramlik levegő."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Egy esőcsepp, egymillió felhőcsepp",
+     "body": "A felhőcseppek nagyon aprók, ezért lebegnek: a légellenállás és a felfelé áramló levegő megtartja őket. Egy esőcsepp nagyjából egymillió felhőcsepp összeolvadásából lesz elég nagy ahhoz, hogy lehulljon. A cseppek porszemek, sókristályok körül kezdenek kialakulni. A harmat akkor keletkezik, amikor derült éjszakán a fű annyira lehűl, hogy a mellette lévő levegő vízgőze lecsapódik rajta.",
+     "did_you_know": "Felhős éjszakákon ritkán van harmat, mert a felhők visszatartják a talaj hőjét, így az nem hűl le eléggé.",
+     "think": "Miért ritka a harmat felhős éjszaka után?",
+     "think_answer": "A felhők a takaróhoz hasonlóan visszatartják a talajról kisugárzott hőt, ezért a fű nem hűl le annyira, hogy rajta lecsapódjon a vízgőz."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Két jelentés, egy szó",
+     "body": "A hangtanban a lebegés azt jelenti, hogy két közeli rezgésszámú hang együtt szólva ütemesen erősödik és halkul. Ha az egyik hang 440 Hz, a másik 442 Hz, másodpercenként két ilyen erősödést hallunk. A hangszerkészítők addig hangolnak, amíg a lebegés el nem tűnik, mert akkor a két hang rezgésszáma egyenlő. Vigyázat: a folyadékoknál a lebegés mást jelent, azt, amikor egy test se nem süllyed, se nem emelkedik, mert a sűrűsége megegyezik a folyadékéval.",
+     "did_you_know": "A tengeralattjárók víztartályaik töltésével és ürítésével állítják be a sűrűségüket, így tudnak a víz alatt egy helyben lebegni.",
+     "think": "Ha az egyik hangvilla 256 Hz-es, a másik 260 Hz-es, hány lebegést hallasz másodpercenként?",
+     "think_answer": "A lebegések száma a két rezgésszám különbsége, vagyis 260 − 256 = 4 lebegés másodpercenként."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1046 @@
+{
+ "nat_id": "HIST-1112-16",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 11,
+  "cards": 58,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "world f97f0d1c (A magyarországi nemzetiségek, a magyarországi cigányság): a world-blokknak nincs egyetlen kártyája sem (üres)."
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-1112-16-001",
+   "lesson_id": "835f7dd8-0412-4978-b463-829483e2f5a8",
+   "block_id": "612d2404-ff5d-4c0e-9762-e40a93f24a30",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„a Beneš-dekrétumok … 1945-ben születtek”; „számos magyar kisebbségi tagot elüldöztek otthonaikból”",
+   "explanation": "A dekrétumokat 1940 és 1945 között bocsátották ki. A csehszlovákiai magyarokat kollektív bűnösnek nyilvánították: megfosztották őket az állampolgárságtól, elkobozták a földjüket, mintegy 44 ezer főt Csehországba hurcoltak kényszermunkára. Tömeges kiűzésről (mint a németeknél) nem volt szó.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Beneš_decrees",
+     "title": "Beneš decrees",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarians_in_Slovakia",
+     "title": "Hungarians in Slovakia",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Beneš-dekrétumok a második világháború után, 1945-ben születtek, és a csehszlovák állam területén élő magyarok jogait súlyosan korlátozták. E rendeletek alapján számos magyar kisebbségi tagot elüldöztek otthonaikból, és vagyonukat elkobozták. A Beneš-dekrétumok következményeként sok magyar család kényszerült menekülésre, ami a magyar közösségek drámai csökkenéséhez vezetett. A történet fontos, mert rávilágít a második világháború utáni politikai feszültségekre és a magyar kisebbségek helyzetére a közép-európai térségben.",
+     "type": "text",
+     "heading": "A Beneš-dekrétum és hatása",
+     "key_term": "Beneš-dekrétum"
+    },
+    "after": {
+     "body": "A Beneš-dekrétumokat Edvard Beneš csehszlovák elnök 1940 és 1945 között bocsátotta ki; az 1945-ös rendeletek a csehszlovák állam területén élő magyarokat és németeket kollektíven bűnösnek nyilvánították, és jogaikat súlyosan korlátozták. E rendeletek alapján a magyaroktól elvették az állampolgárságot, elkobozták a földjüket, és mintegy 44 ezer főt Csehországba hurcoltak kényszermunkára. A Beneš-dekrétumok következményeként sok magyar család kényszerült menekülésre, ami a magyar közösségek drámai csökkenéséhez vezetett. A történet fontos, mert rávilágít a második világháború utáni politikai feszültségekre és a magyar kisebbségek helyzetére a közép-európai térségben.",
+     "type": "text",
+     "heading": "A Beneš-dekrétum és hatása",
+     "key_term": "Beneš-dekrétum"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-002",
+   "lesson_id": "835f7dd8-0412-4978-b463-829483e2f5a8",
+   "block_id": "612d2404-ff5d-4c0e-9762-e40a93f24a30",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A lakosságcsere célja a nemzetiségi feszültségek csökkentése volt”",
+   "explanation": "A csehszlovák kormány a nemzetiségileg egységes állam megteremtésére törekedett; a lakosságcsere-egyezményt 1946 februárjában írták alá, végrehajtása 1947–48-ban történt, nagyjából 70 ezer szlovákiai magyart érintett, sokszor kényszerrel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Czechoslovak–Hungarian_population_exchange",
+     "title": "Czechoslovak–Hungarian population exchange",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarians_in_Slovakia",
+     "title": "Hungarians in Slovakia",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A második világháború után végrehajtott lakosságcserék, különösen a magyar és a szlovák közösségek között, jelentős demográfiai változásokat hoztak. A lakosságcsere célja a nemzetiségi feszültségek csökkentése volt, de valójában súlyos társadalmi következményekkel járt. A magyarok tömeges elvándorlása, illetve az újonnan érkező közösségek beilleszkedése sok esetben konfliktusokat eredményezett. A téma fontos, mert bemutatja, hogyan alakították a politikai döntések a határon túli magyarság sorsát.",
+     "type": "text",
+     "heading": "Lakosságcsere és következményei",
+     "key_term": "lakosságcsere"
+    },
+    "after": {
+     "body": "A második világháború után végrehajtott lakosságcserék, különösen a magyar és a szlovák közösségek között, jelentős demográfiai változásokat hoztak. A csehszlovák kormány a nemzetiségileg egységes állam megteremtésére törekedett; a lakosságcsere-egyezményt 1946 februárjában írták alá, végrehajtása 1947–1948-ban történt, és nagyjából 70 ezer szlovákiai magyart érintett, sokszor kényszerrel. A magyarok tömeges elvándorlása, illetve az újonnan érkező közösségek beilleszkedése sok esetben konfliktusokat eredményezett. A téma fontos, mert bemutatja, hogyan alakították a politikai döntések a határon túli magyarság sorsát.",
+     "type": "text",
+     "heading": "Lakosságcsere és következményei",
+     "key_term": "lakosságcsere"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-003",
+   "lesson_id": "835f7dd8-0412-4978-b463-829483e2f5a8",
+   "block_id": "612d2404-ff5d-4c0e-9762-e40a93f24a30",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A falurombolás … a vidéki magyar közösségek elpusztítása”; „Székelyföld és más magyar területek falvainak lerombolása”",
+   "explanation": "A falurombolás (szisztematizálás) Ceaușescu 1988-as terve volt, Románia összes falvát fenyegette (magyarokat, szászokat és románokat is), és 1989 decemberében a rendszer bukása miatt jórészt papíron maradt. Nem a magyarokat célzó lépés volt, és a Székelyföldet nem érintette kiemelten.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Romanian_villages_systematization",
+     "title": "Romanian villages systematization",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A falurombolás a 20. század második felében, különösen a kommunista időszak alatt zajlott, amikor a vidéki magyar közösségek elpusztítása és átkonstruálása történt. Székelyföld és más magyar területek falvainak lerombolása súlyos hatással volt a helyi kultúrára és identitásra. A falurombolás következményeként sok hagyományos érték és tudás veszett el, ami a magyarság kulturális örökségének csökkenését eredményezte. Fontos, hogy megértsük, hogyan formálta ez a folyamat a magyar közösségek identitását a 20. században.",
+     "type": "text",
+     "heading": "Falurombolás és kulturális örökség",
+     "key_term": "falurombolás"
+    },
+    "after": {
+     "body": "A falurombolás (szisztematizálás) Ceaușescu romániai diktatúrájának terve volt: 1988-ban jelentették be, hogy a falvak jelentős részét megszüntetik, lakóikat pedig „agrár-ipari központokba” költöztetik. A terv Románia összes falvát fenyegette, a magyarokat, a szászokat és a románokat is; nagy része papíron maradt, mert 1989 decemberében megbukott a rendszer. A falurombolás következményeként sok hagyományos érték és tudás veszett el, ami a kulturális örökség csökkenésével fenyegetett. Fontos, hogy megértsük, hogyan formálta ez a folyamat a magyar közösségek identitását a 20. században.",
+     "type": "text",
+     "heading": "Falurombolás és kulturális örökség",
+     "key_term": "falurombolás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-004",
+   "lesson_id": "835f7dd8-0412-4978-b463-829483e2f5a8",
+   "block_id": "612d2404-ff5d-4c0e-9762-e40a93f24a30",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„például a Duna-deltában vagy Csúrogon”",
+   "explanation": "Hibás példák: a Duna-deltában nem él jelentős magyar közösség, Csúrog (Čurug) pedig Vajdaságban, Szerbiában van, összefüggő magyar településrészen. A szórvány példái: Dél-Erdély, Szlavónia, a moldvai csángók.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarians_in_Romania",
+     "title": "Hungarians in Romania",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarians_in_Vojvodina",
+     "title": "Hungarians in Vojvodina",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A szórványmagyarság olyan magyar közösségeket jelent, amelyek kisebbségben élnek más nemzetek között, például a Duna-deltában vagy Csúrogon. Ezek a közösségek gyakran szembesülnek az asszimiláció kihívásaival és a nyelvhasználat csökkenésével. A szórványmagyarság helyzete különösen fontos, mivel a kisebb közösségek megőrzése hozzájárul a magyar nemzet egységéhez. A szórványmagyarság megértése lehetővé teszi a magyar identitás sokszínűségének és gazdagságának felismerését.",
+     "type": "text",
+     "heading": "A szórványmagyarság helyzete",
+     "key_term": "szórványmagyarság"
+    },
+    "after": {
+     "body": "A szórványmagyarság olyan magyar közösségeket jelent, amelyek kisebbségben élnek más nemzetek között, például Dél-Erdélyben vagy Szlavóniában. Ezek a közösségek gyakran szembesülnek az asszimiláció kihívásaival és a nyelvhasználat csökkenésével. A szórványmagyarság helyzete különösen fontos, mivel a kisebb közösségek megőrzése hozzájárul a magyar nemzet egységéhez. A szórványmagyarság megértése lehetővé teszi a magyar identitás sokszínűségének és gazdagságának felismerését.",
+     "type": "text",
+     "heading": "A szórványmagyarság helyzete",
+     "key_term": "szórványmagyarság"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-005",
+   "lesson_id": "835f7dd8-0412-4978-b463-829483e2f5a8",
+   "block_id": "612d2404-ff5d-4c0e-9762-e40a93f24a30",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Esterházy János a második világháború után a felvidéki magyarok jogaiért harcolt”",
+   "explanation": "Esterházy János (1901–1957) a Szlovákiai Magyar Párt vezetője volt a világháború előtt és alatt; 1942-ben nem szavazta meg a zsidók deportálását. 1945 után letartóztatták, halálra, majd életfogytiglanra ítélték, a börtönben halt meg. Tőkés László lelkész volt, kilakoltatása tiltakozást váltott ki Temesváron 1989 decemberében.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/János_Esterházy",
+     "title": "János Esterházy",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Áron_Márton",
+     "title": "Áron Márton",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/László_Tőkés",
+     "title": "László Tőkés",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Esterházy János, Márton Áron és Tőkés László jelentős politikai személyiségek, akik a magyar kisebbségek jogaiért küzdöttek. Esterházy János a második világháború után a felvidéki magyarok jogaiért harcolt, míg Márton Áron a romániai magyarok lelki vezetője volt, aki a közösség összetartásáért küzdött. Tőkés László a rendszerváltás idején játszott fontos szerepet, hiszen ő volt az, aki felhívta a figyelmet a romániai magyarság helyzetére. E személyek tevékenysége alapvetően hozzájárult a magyar közösségek identitásának megőrzéséhez és a politikai jogokért folytatott küzdelemhez.",
+     "type": "text",
+     "heading": "Politikai személyiségek és hatásuk",
+     "key_term": "Esterházy János, Márton Áron, Tőkés László"
+    },
+    "after": {
+     "body": "Esterházy János, Márton Áron és Tőkés László jelentős politikai személyiségek, akik a magyar kisebbségek jogaiért küzdöttek. Esterházy János a felvidéki magyarok politikusa volt, 1942-ben a szlovák parlamentben nem szavazta meg a zsidók deportálását, 1945 után pedig letartóztatták és elítélték (1957-ben börtönben halt meg), míg Márton Áron a romániai magyarok lelki vezetője volt, aki a közösség összetartásáért küzdött. Tőkés László református lelkész volt, akinek a kilakoltatása elleni tiltakozás 1989 decemberében Temesváron elindította a romániai forradalmat. E személyek tevékenysége alapvetően hozzájárult a magyar közösségek identitásának megőrzéséhez és a politikai jogokért folytatott küzdelemhez.",
+     "type": "text",
+     "heading": "Politikai személyiségek és hatásuk",
+     "key_term": "Esterházy János, Márton Áron, Tőkés László"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-006",
+   "lesson_id": "835f7dd8-0412-4978-b463-829483e2f5a8",
+   "block_id": "612d2404-ff5d-4c0e-9762-e40a93f24a30",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„súlyos magyarellenes atrocitásokra került sor, amelynek során a magyar közösségeket támadták meg”",
+   "explanation": "Pontatlan: 1990. március 19–20-án Marosvásárhelyen magyarok és románok között véres összecsapások voltak (öt halott, mintegy háromszáz sebesült); a feszültséget a Vatra Românească nacionalista szervezet uszítása fokozta. Sütő András írót is súlyosan bántalmazták.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Târgu_Mureș_ethnic_clashes",
+     "title": "Târgu Mureș ethnic clashes",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1990 márciusában Romániában a fekete március eseményei során súlyos magyarellenes atrocitásokra került sor, amelynek során a magyar közösségeket támadták meg. A Marosvásárhelyen történt összecsapások rávilágítottak a romániai magyarság nehéz helyzetére és a nemzetiségi feszültségekre. Az események következményeként a magyar kisebbség helyzete tovább súlyosbodott, és felhívta a figyelmet a kisebbségi jogok védelmének fontosságára. A fekete március jelentős esemény a magyar történelemben, amely a kisebbségi identitás és a politikai jogok harcát szimbolizálja.",
+     "type": "text",
+     "heading": "A fekete március eseményei",
+     "key_term": "1990 fekete március"
+    },
+    "after": {
+     "body": "1990. március 19–20-án Marosvásárhelyen magyarok és románok között véres összecsapások törtek ki, öten meghaltak, mintegy háromszázan megsebesültek; a feszültséget a román nacionalista Vatra Românească szervezet uszítása is fokozta, Sütő András írót pedig súlyosan bántalmazták. A Marosvásárhelyen történt összecsapások rávilágítottak a romániai magyarság nehéz helyzetére és a nemzetiségi feszültségekre. Az események következményeként a magyar kisebbség helyzete tovább súlyosbodott, és felhívta a figyelmet a kisebbségi jogok védelmének fontosságára. A fekete március jelentős esemény a magyar történelemben, amely a kisebbségi identitás és a politikai jogok harcát szimbolizálja.",
+     "type": "text",
+     "heading": "A fekete március eseményei",
+     "key_term": "1990 fekete március"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-007",
+   "lesson_id": "835f7dd8-0412-4978-b463-829483e2f5a8",
+   "block_id": "612d2404-ff5d-4c0e-9762-e40a93f24a30",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 8,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Jarek egy település a mai Szlovákiában”",
+   "explanation": "Járek (Јарек) Vajdaságban, Szerbiában van (Temerin község), nem Szlovákiában. Trianon után Jugoszláviához került.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bački_Jarak",
+     "title": "Bački Jarak",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Vojvodina",
+     "title": "Vojvodina",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Jarek egy település a mai Szlovákiában, amely a trianoni békeszerződés következtében került Magyarország határain kívülre. A település lakosságának jelentős része magyar nemzetiségű, akik a mai napig őrzik nyelvüket és kulturális hagyományaikat. A határon túli magyarok, így a jareki magyarok is, fontos szerepet játszanak a magyar nemzeti identitás megőrzésében. Az ilyen települések közösségei gyakran szembesülnek az asszimiláció veszélyével, ezért kiemelten fontos a magyar nyelvű oktatás és kulturális intézmények támogatása. A jareki magyarok helyzete jól példázza a határon túli magyar közösségek mindennapi küzdelmeit és törekvéseit.",
+     "type": "text",
+     "heading": "Jarek és a határon túli magyarok",
+     "key_term": "Jarek"
+    },
+    "after": {
+     "body": "Járek egy település a mai Szerbiában (Vajdaságban), amely a trianoni békeszerződés következtében került Magyarország határain kívülre. A település lakosságának jelentős része magyar nemzetiségű, akik a mai napig őrzik nyelvüket és kulturális hagyományaikat. A határon túli magyarok, így a jareki magyarok is, fontos szerepet játszanak a magyar nemzeti identitás megőrzésében. Az ilyen települések közösségei gyakran szembesülnek az asszimiláció veszélyével, ezért kiemelten fontos a magyar nyelvű oktatás és kulturális intézmények támogatása. A jareki magyarok helyzete jól példázza a határon túli magyar közösségek mindennapi küzdelmeit és törekvéseit.",
+     "type": "text",
+     "heading": "Jarek és a határon túli magyarok",
+     "key_term": "Jarek"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-008",
+   "lesson_id": "835f7dd8-0412-4978-b463-829483e2f5a8",
+   "block_id": "e5132b5e-3b8b-4325-af18-553506321ba7",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "A világblokk általános („Balkán térségében a különböző etnikai csoportok közötti feszültségek”), a year és a link_hu üres",
+   "explanation": "Nincs konkrét példa. A valódi párhuzam: a németek kitelepítése 1945 után Kelet-Közép-Európából (12–14 millió ember).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Expulsion_of_Germans_after_World_War_II",
+     "title": "Expulsion of Germans after World War II",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A határon túli magyarok helyzete a 20-21. században számos más országban is párhuzamos jelenségeket mutatott, ahol kisebbségi közösségek küzdöttek identitásuk megőrzéséért és jogaikért. Például a Balkán térségében a különböző etnikai csoportok közötti feszültségek, valamint a kisebbségi jogokért folytatott harcok szintén jelentős társadalmi és politikai kérdéseket vetettek fel. Az ilyen helyzetek a kulturális identitás megőrzését és a politikai autonómiát érintették, amely a határon túli magyar közösségekre is hatással volt.",
+     "type": "world",
+     "year": "",
+     "heading": "A határon túli magyarok helyzete és a nemzetiségi kérdések a 20-21. században",
+     "link_hu": ""
+    },
+    "after": {
+     "body": "A második világháború után Kelet-Közép-Európából a németek elűzése volt a legnagyobb népességmozgás: mintegy 12 millió német települt át vagy kényszerült elhagyni otthonát Csehszlovákiából, Lengyelországból, Magyarországról és más országokból. A potsdami konferencia (1945) „rendezett és emberséges” áttelepítést mondott ki, a gyakorlat azonban sokszor kegyetlen volt.",
+     "type": "world",
+     "year": "1945",
+     "heading": "A németek kitelepítése 1945 után",
+     "link_hu": "A Beneš-dekrétumok is ebbe a folyamatba illeszkedtek, a csehszlovákiai magyarokat is kollektív bűnösséggel sújtották."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-009",
+   "lesson_id": "1e55cd19-e820-4a17-ba50-aa329e3084ff",
+   "block_id": "fbd48096-6d37-4b51-b628-9d5bc8f4f635",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a magyar nemzetiség jelentős területeket veszített”",
+   "explanation": "Az ország veszített területet, nem a nemzetiség. Trianon után a nemzetiségek aránya erősen lecsökkent (a lakosság mintegy 90 százaléka magyar lett), a második világháború után pedig 1946–48 között mintegy 170–200 ezer magyarországi németet telepítettek ki.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Trianon",
+     "title": "Treaty of Trianon",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Expulsion_of_Germans_from_Hungary",
+     "title": "Expulsion of Germans from Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A 20. század elején Magyarország területén több nemzetiség élt, mint például a szlovákok, románok, németek és szerbek. A trianoni békeszerződés következtében a magyar nemzetiség jelentős területeket veszített, ami a nemzetiségek helyzetét is befolyásolta. A két világháború közötti időszakban a nemzetiségek jogai korlátozódtak, ami diszkriminációhoz vezetett. A politikai rendszerek változásai, mint a kommunizmus bevezetése, új kihívások elé állították a nemzetiségeket.",
+     "type": "text",
+     "heading": "A magyarországi nemzetiségek helyzete a 20. században",
+     "key_term": "diszkrimináció"
+    },
+    "after": {
+     "body": "A 20. század elején Magyarország területén több nemzetiség élt, mint például a szlovákok, románok, németek és szerbek. A trianoni békeszerződés (1920) után Magyarország területe a történelmi ország mintegy harmadára csökkent, a lakosság mintegy 90 százaléka magyar lett, a nemzetiségek aránya pedig erősen lecsökkent. A két világháború közötti időszakban a nemzetiségek jogai korlátozódtak, ami diszkriminációhoz vezetett. A második világháború után 1946 és 1948 között mintegy 170–200 ezer magyarországi németet telepítettek ki Németországba; a kommunista rendszer a nemzetiségi szervezeteket is felszámolta.",
+     "type": "text",
+     "heading": "A magyarországi nemzetiségek helyzete a 20. században",
+     "key_term": "diszkrimináció"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-010",
+   "lesson_id": "1e55cd19-e820-4a17-ba50-aa329e3084ff",
+   "block_id": "fbd48096-6d37-4b51-b628-9d5bc8f4f635",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A kommunista rendszer idején … a kitelepítések és a kultúra elnyomása jellemezte”",
+   "explanation": "Pontatlan: a rendszer a cigányságot nem nemzetiségként, hanem társadalmi problémaként kezelte (1961-es párthatározat), és a cigánytelepek felszámolására törekedett (1964); nemzeti és etnikai kisebbségként 1993-ban ismerték el. Tömeges kitelepítésről nem volt szó.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Romani_people_in_Hungary",
+     "title": "Romani people in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A cigány közösség Magyarországon a 20. század során számos nehézséggel nézett szembe, beleértve a diszkriminációt és a társadalmi kirekesztést. A második világháború alatt a holokauszt részeként sok roma áldozat lett. A kommunista rendszer idején a cigányok helyzete nem javult, a kitelepítések és a kultúra elnyomása jellemezte ezt az időszakot. A rendszerváltás után a cigány közösség jogi helyzete javult, de továbbra is számos problémával kell szembenézniük.",
+     "type": "text",
+     "heading": "A cigányok/romák története a 20. században",
+     "key_term": "kitelepítés"
+    },
+    "after": {
+     "body": "A cigány közösség Magyarországon a 20. század során számos nehézséggel nézett szembe, beleértve a diszkriminációt és a társadalmi kirekesztést. A második világháború alatt a holokauszt részeként sok roma áldozat lett. A kommunista rendszer a cigányságot nem nemzetiségként, hanem társadalmi problémaként kezelte (1961), a cigánytelepek felszámolására törekedett (1964), és a foglalkoztatás révén asszimilációjukat várta. A rendszerváltás után a cigány közösség jogi helyzete javult (1993-ban nemzeti és etnikai kisebbségként ismerték el), de továbbra is számos problémával kell szembenézniük.",
+     "type": "text",
+     "heading": "A cigányok/romák története a 20. században",
+     "key_term": "kitelepítés"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-011",
+   "lesson_id": "1e55cd19-e820-4a17-ba50-aa329e3084ff",
+   "block_id": "fbd48096-6d37-4b51-b628-9d5bc8f4f635",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A népszámlálások adatai szerint a cigány közösség száma folyamatosan növekszik”",
+   "explanation": "A népszámlálás önbevalláson alapul: 2001-ben mintegy 190 ezren, 2011-ben mintegy 316 ezren vallották magukat cigánynak. A tényleges létszámot a kutatók ennél jóval magasabbra becsülik, ezért az adat nem használható a népesség pontos alakulására.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Romani_people_in_Hungary",
+     "title": "Romani people in Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Demographics_of_Hungary",
+     "title": "Demographics of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A magyarországi cigányság demográfiai helyzete az elmúlt évtizedekben jelentős változásokon ment keresztül. A népszámlálások adatai szerint a cigány közösség száma folyamatosan növekszik, ami a fiatalabb korosztályok magas arányának is köszönhető. A cigányok körében a születési arány magasabb, mint a nem cigány lakosság körében. Ezen demográfiai folyamatok hatással vannak a társadalmi integrációra és a közszolgáltatásokhoz való hozzáférésre is.",
+     "type": "text",
+     "heading": "Demográfiai jellemzők és folyamatok",
+     "key_term": ""
+    },
+    "after": {
+     "body": "A magyarországi cigányság demográfiai helyzete az elmúlt évtizedekben jelentős változásokon ment keresztül. A népszámlálásokon 2001-ben mintegy 190 ezren, 2011-ben mintegy 316 ezren vallották magukat cigánynak; ez azonban önbevallás, a kutatók becslése ennél jóval magasabb. A cigányság korösszetétele fiatalabb az országos átlagnál. A cigányok körében a születési arány magasabb, mint a nem cigány lakosság körében. Ezen demográfiai folyamatok hatással vannak a társadalmi integrációra és a közszolgáltatásokhoz való hozzáférésre is.",
+     "type": "text",
+     "heading": "Demográfiai jellemzők és folyamatok",
+     "key_term": ""
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-012",
+   "lesson_id": "1e55cd19-e820-4a17-ba50-aa329e3084ff",
+   "block_id": "fbd48096-6d37-4b51-b628-9d5bc8f4f635",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„különböző jogszabályok és intézmények léteznek” (példa nélkül)",
+   "explanation": "Konkrétum hiányzik: Magyarországon 13 elismert nemzetiség van, a nemzetiségi önkormányzatok rendszere 1994-től működik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ethnic_minorities_in_Hungary",
+     "title": "Ethnic minorities in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A kulturális autonómia a magyarországi nemzetiségek számára lehetővé teszi saját nyelvük és kultúrájuk megőrzését. A kisebbségi jogok érvényesítése érdekében különböző jogszabályok és intézmények léteznek, amelyek védik a nemzetiségek érdekeit. A cigány közösség számára is fontos a kulturális örökség megőrzése, amely magában foglalja a nyelvet, a hagyományokat és a művészeteket. A kulturális autonómia elősegítheti a társadalmi integrációt és a diszkrimináció csökkentését.",
+     "type": "text",
+     "heading": "Kulturális autonómia és kisebbségi jogok",
+     "key_term": ""
+    },
+    "after": {
+     "body": "A kulturális autonómia a magyarországi nemzetiségek számára lehetővé teszi saját nyelvük és kultúrájuk megőrzését. Magyarországon 13 elismert nemzetiség él; a nemzetiségi önkormányzatok rendszere 1994 óta működik, és a jogaikat külön törvény védi. A cigány közösség számára is fontos a kulturális örökség megőrzése, amely magában foglalja a nyelvet, a hagyományokat és a művészeteket. A kulturális autonómia elősegítheti a társadalmi integrációt és a diszkrimináció csökkentését.",
+     "type": "text",
+     "heading": "Kulturális autonómia és kisebbségi jogok",
+     "key_term": ""
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-013",
+   "lesson_id": "1e55cd19-e820-4a17-ba50-aa329e3084ff",
+   "block_id": "fbd48096-6d37-4b51-b628-9d5bc8f4f635",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A magyarországi cigány közösség számára is fontos az anyanyelvű oktatás”",
+   "explanation": "A magyarországi cigányok többségének anyanyelve a magyar; a romani (lovári) és a beás nyelvet kisebb részük beszéli. A cigány nyelvoktatás ma is korlátozott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Romani_people_in_Hungary",
+     "title": "Romani people in Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Boyash",
+     "title": "Boyash",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az anyanyelvű oktatás biztosítása kulcsfontosságú a nemzetiségek számára, mivel ez segít megőrizni identitásukat és kultúrájukat. A magyarországi cigány közösség számára is fontos az anyanyelvű oktatás, amely hozzájárul a fiatalok kulturális tudatosságához. Az iskolákban a cigány nyelv és kultúra oktatása segíthet a társadalmi elfogadás növelésében. A nemzetiségi iskolák szerepe kiemelkedő a kulturális örökség ápolásában és a közösségi összetartás erősítésében.",
+     "type": "text",
+     "heading": "Anyanyelvű oktatás és kultúra",
+     "key_term": ""
+    },
+    "after": {
+     "body": "Az anyanyelvű oktatás biztosítása kulcsfontosságú a nemzetiségek számára, mivel ez segít megőrizni identitásukat és kultúrájukat. A magyarországi cigányok többségének anyanyelve a magyar; a romani (lovári) és a beás nyelvet kisebb részük beszéli, az ő nyelvük oktatása az iskolákban ma is korlátozott. Az iskolákban a cigány nyelv és kultúra oktatása segíthet a társadalmi elfogadás növelésében. A nemzetiségi iskolák szerepe kiemelkedő a kulturális örökség ápolásában és a közösségi összetartás erősítésében.",
+     "type": "text",
+     "heading": "Anyanyelvű oktatás és kultúra",
+     "key_term": ""
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-014",
+   "lesson_id": "835f7dd8-0412-4978-b463-829483e2f5a8",
+   "block_id": "c5e760b2-52c6-4ac3-b546-a1756e86d543",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi volt a Beneš-dekrétum … ?” (A: a magyar állampolgárság megvonása; kulcs B: kitelepítés és vagyonelkobzás)",
+   "explanation": "A magyarokat nem tömegesen kitelepítették, hanem megfosztották őket az állampolgárságuktól, elkobozták a vagyonukat, egy részüket Csehországba hurcolták. Az A opció is közel áll az igazsághoz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Beneš_decrees",
+     "title": "Beneš decrees",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A magyar állampolgárság megvonása.",
+      "B) A magyarok kitelepítése és vagyonelkobzása.",
+      "C) Az autonóm területek létrehozása.",
+      "D) A magyar nyelv hivatalos elismerése."
+     ],
+     "question": "Mi volt a Beneš-dekrétum, és milyen hatással volt a magyar kisebbség helyzetére?",
+     "explanation": "A Beneš-dekrétumok a második világháború után a magyar kisebbség kitelepítését és vagyonuk elkobzását írták elő, ami súlyosan érintette a határon túli magyarokat.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A magyar nyelv hivatalos elismerését.",
+      "Az állampolgárság elvételét, a vagyon elkobzását és kényszerű áttelepítést.",
+      "Az autonóm területek létrehozását.",
+      "A magyar nyelvű oktatás kiterjesztését."
+     ],
+     "question": "Mit írtak elő a Beneš-dekrétumok a csehszlovákiai magyarokra nézve?",
+     "explanation": "A Beneš-dekrétumok a csehszlovákiai magyarokat kollektíven bűnösnek nyilvánították: elvették az állampolgárságukat és a vagyonukat, egy részüket Csehországba hurcolták.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-015",
+   "lesson_id": "835f7dd8-0412-4978-b463-829483e2f5a8",
+   "block_id": "c5e760b2-52c6-4ac3-b546-a1756e86d543",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mikor zajlott a lakosságcsere …?” (kulcs: A, 1945, faji ellentétek)",
+   "explanation": "A kulcs ellentmond a magyarázatnak (1946), és az „faji ellentétek” nem tényszerű. A lakosságcsere-egyezmény 1946 februárjában született, a végrehajtás 1947–48-ban volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Czechoslovak–Hungarian_population_exchange",
+     "title": "Czechoslovak–Hungarian population exchange",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1945, a faji ellentétek csökkentése.",
+      "B) 1944, a háborús károk enyhítése.",
+      "C) 1946, a nemzetiségi feszültségek felszámolása.",
+      "D) 1947, a területi viták rendezése."
+     ],
+     "question": "Mikor zajlott a lakosságcsere a magyar és a szlovák népesség között, és mi volt a célja?",
+     "explanation": "A lakosságcsere 1946-ban zajlott, célja a nemzetiségi feszültségek kezelése volt, de valójában sok szenvedést okozott a magyar kisebbség számára.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "1938",
+      "1944",
+      "1946",
+      "1956"
+     ],
+     "question": "Melyik évben kötötték meg a magyar–csehszlovák lakosságcsere-egyezményt?",
+     "explanation": "A lakosságcsere-egyezményt 1946 februárjában írták alá; a cserét 1947–48-ban hajtották végre.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-016",
+   "lesson_id": "835f7dd8-0412-4978-b463-829483e2f5a8",
+   "block_id": "c5e760b2-52c6-4ac3-b546-a1756e86d543",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„… hol voltak ezek a legjellemzőbbek?” (kulcs: B, Duna-delta, 1950-es évek)",
+   "explanation": "A kulcs ellentmond a magyarázatnak (Románia, 1980-as évek); a falurombolás terve 1988-ban indult, Ceaușescu Romániájában. A magyarázatban „a 1980-as” névelőhiba.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Romanian_villages_systematization",
+     "title": "Romanian villages systematization",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Székelyföld, 1944.",
+      "B) Duna-delta, 1950-es évek.",
+      "C) Csúrog, 1945.",
+      "D) Marosvásárhely, 1990."
+     ],
+     "question": "Milyen események kapcsolódnak a falurombolás politikájához, és hol voltak ezek a legjellemzőbbek?",
+     "explanation": "A falurombolás politikája főként Romániában, a 1980-as években zajlott, ahol sok magyar települést elpusztítottak.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "Székelyföldön, 1944-ben.",
+      "Romániában, az 1980-as évek végén.",
+      "Csúrogon, 1945-ben.",
+      "Marosvásárhelyen, 1990-ben."
+     ],
+     "question": "Hol és mikor tervezték a falurombolást (szisztematizálást)?",
+     "explanation": "A falurombolás terve Ceaușescu Romániájában 1988-ban indult; 1989 végén a rendszer megbukott.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-017",
+   "lesson_id": "835f7dd8-0412-4978-b463-829483e2f5a8",
+   "block_id": "c5e760b2-52c6-4ac3-b546-a1756e86d543",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "low",
+   "claim": "„Esterházy János … politikai vezető, aki a magyarok autonómiájáért küzdött”",
+   "explanation": "Pontatlan: Esterházy a felvidéki magyarok jogaiért küzdött (nem autonómiáért); 1942-ben nem szavazta meg a zsidók deportálását, 1945 után elítélték.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/János_Esterházy",
+     "title": "János Esterházy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Politikai vezető, aki a magyarok autonómiájáért küzdött.",
+      "B) Katonai parancsnok, aki a háborúban harcolt.",
+      "C) Író, aki a magyar kultúrát népszerűsítette.",
+      "D) Vallási vezető, aki a kereszténységet terjesztette."
+     ],
+     "question": "Ki volt Esterházy János, és milyen szerepet játszott a magyar kisebbség jogainak védelmében?",
+     "explanation": "Esterházy János politikai vezetőként a magyar kisebbség jogainak védelméért küzdött, különösen a csehszlovákiai magyarok helyzetének javításáért.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Politikai vezető, aki a csehszlovákiai magyarok jogaiért küzdött.",
+      "B) Katonai parancsnok, aki a háborúban harcolt.",
+      "C) Író, aki a magyar kultúrát népszerűsítette.",
+      "D) Vallási vezető, aki a kereszténységet terjesztette."
+     ],
+     "question": "Ki volt Esterházy János, és milyen szerepet játszott a magyar kisebbség jogainak védelmében?",
+     "explanation": "Esterházy János a felvidéki magyarok politikusa volt; 1942-ben nem szavazta meg a zsidók deportálását, 1945 után elítélték, 1957-ben börtönben halt meg.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-018",
+   "lesson_id": "835f7dd8-0412-4978-b463-829483e2f5a8",
+   "block_id": "c5e760b2-52c6-4ac3-b546-a1756e86d543",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi történt 1990. március 15-én, és miért nevezik fekete márciusnak?”",
+   "explanation": "Az összecsapások Marosvásárhelyen 1990. március 19–20-án voltak (március 16-tól nőtt a feszültség), nem március 15-én. A „magyarok ellen irányuló” megfogalmazás is egyoldalú: magyarok és románok között zajlottak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Târgu_Mureș_ethnic_clashes",
+     "title": "Târgu Mureș ethnic clashes",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A romániai forradalom kezdete.",
+      "B) A magyar kisebbség jogainak elismerése.",
+      "C) A magyarok ellen irányuló erőszakos cselekmények.",
+      "D) A kettős állampolgárság bevezetése."
+     ],
+     "question": "Mi történt 1990. március 15-én, és miért nevezik fekete márciusnak?",
+     "explanation": "A fekete március 1990. március 15-én történt, amikor erőszakos cselekmények irányultak a magyar kisebbség ellen Romániában, súlyosan érintve a közösséget.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) A romániai forradalom kezdete.",
+      "B) A magyar kisebbség jogainak elismerése.",
+      "Magyarok és románok közötti véres összecsapások.",
+      "D) A kettős állampolgárság bevezetése."
+     ],
+     "question": "Mi történt 1990 márciusában Marosvásárhelyen, és miért nevezik fekete márciusnak?",
+     "explanation": "1990. március 19–20-án Marosvásárhelyen magyarok és románok között véres összecsapások törtek ki, öten meghaltak.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-019",
+   "lesson_id": "1e55cd19-e820-4a17-ba50-aa329e3084ff",
+   "block_id": "0b422fc4-32a5-4d9f-b2a2-2f000ebba660",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mikor történt a legnagyobb kitelepítés a magyar történelemben?” (kulcs: 1945 után)",
+   "explanation": "A „legnagyobb” meghatározatlan; a magyarországi németek kitelepítése 1946-ban kezdődött (az első szerelvény 1946 januárjában indult Budaörsről), 1945-ben még nem.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Expulsion_of_Germans_from_Hungary",
+     "title": "Expulsion of Germans from Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1945 után.",
+      "B) 1956-ban.",
+      "C) 1989-ben.",
+      "D) 2000-ben."
+     ],
+     "question": "Mikor történt a legnagyobb kitelepítés a magyar történelemben?",
+     "explanation": "A legnagyobb kitelepítések a második világháború után, 1945-ben történtek, amikor számos nemzetiséget érintett a kényszerű elköltöztetés.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "1919",
+      "1946",
+      "1956",
+      "1989"
+     ],
+     "question": "Mikor kezdődött a magyarországi németek kitelepítése?",
+     "explanation": "A magyarországi németek kitelepítése 1946 elején kezdődött, az első szerelvény januárban indult Budaörsről.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-020",
+   "lesson_id": "1e55cd19-e820-4a17-ba50-aa329e3084ff",
+   "block_id": "0b422fc4-32a5-4d9f-b2a2-2f000ebba660",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Milyen hatása van a diszkriminációnak a cigány közösségek demográfiai helyzetére?” (kulcs: B, csökkenés a születési arányban)",
+   "explanation": "Téves és sértő állítás: a cigányság születésszáma hagyományosan magasabb az átlagnál, és a diszkrimináció nem csökkenti. Ténykérdésre cserélendő.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Romani_people_in_Hungary",
+     "title": "Romani people in Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Növekedés a népességben.",
+      "B) Csökkenés a születési arányban.",
+      "C) Nincs hatása.",
+      "D) Növekvő foglalkoztatottság."
+     ],
+     "question": "Milyen hatása van a diszkriminációnak a cigány közösségek demográfiai helyzetére?",
+     "explanation": "A diszkrimináció következtében a cigány közösségek gyakran nehéz helyzetbe kerülnek, ami csökkenti a születési arányt és rontja demográfiai helyzetüket.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Korösszetétele fiatalabb az országos átlagnál.",
+      "Átlagéletkora magasabb az országos átlagnál.",
+      "A népszámlálás pontosan megmutatja a valós létszámot.",
+      "Aránya meghaladja az 50 százalékot."
+     ],
+     "question": "Melyik állítás igaz a magyarországi cigányság demográfiájáról?",
+     "explanation": "A cigányság korösszetétele fiatalabb az országos átlagnál; a népszámlálás önbevalláson alapul, ezért a valós létszámot nem mutatja pontosan.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-021",
+   "lesson_id": null,
+   "block_id": "c21d831b-0f6c-4eed-9f71-5607b0873554",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi volt a Beneš-dekrétumok célja?” (kulcs: B, a csehszlovákiai németek és magyarok elűzése)",
+   "explanation": "A magyarokat nem tömegesen űzték ki: megfosztották őket az állampolgárságtól és a vagyontól. A németeket viszont kitelepítették.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Beneš_decrees",
+     "title": "Beneš decrees",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A magyar kisebbség jogainak védelme",
+      "B) A csehszlovákiai németek és magyarok elűzése",
+      "C) A gazdasági kapcsolatok erősítése",
+      "D) A kulturális együttműködés elősegítése"
+     ],
+     "question": "Mi volt a Beneš-dekrétumok célja?",
+     "explanation": "A Beneš-dekrétumok a második világháború után a csehszlovákiai magyar és német kisebbségek kitelepítését és vagyonelkobzását célozták.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A magyar kisebbség jogainak védelme",
+      "A németek kitelepítése, a magyarok állampolgárságának és vagyonának elvétele",
+      "C) A gazdasági kapcsolatok erősítése",
+      "D) A kulturális együttműködés elősegítése"
+     ],
+     "question": "Mi volt a Beneš-dekrétumok célja?",
+     "explanation": "A Beneš-dekrétumok a csehszlovákiai németeket kitelepítették, a magyaroktól pedig elvették az állampolgárságot és a vagyont.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-022",
+   "lesson_id": null,
+   "block_id": "c21d831b-0f6c-4eed-9f71-5607b0873554",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Milyen következményekkel járt a falurombolás a magyar falvak számára?” (kulcs: a falvak megszüntetése)",
+   "explanation": "A terv Románia összes falvát érintette, és jórészt nem valósult meg (1989 decemberében megbukott a rendszer).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Romanian_villages_systematization",
+     "title": "Romanian villages systematization",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A falvak fejlődése",
+      "B) A falvak megszüntetése és lakosságuk elűzése",
+      "C) A mezőgazdaság fellendülése",
+      "D) A kulturális örökség megőrzése"
+     ],
+     "question": "Milyen következményekkel járt a falurombolás a magyar falvak számára?",
+     "explanation": "A falurombolás során sok magyar falu megszűnt, lakosságukat elüldözték, ami súlyosan érintette a helyi közösségeket.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A falvak fejlődése",
+      "A falvak megszüntetését és lakóik költöztetését „agrár-ipari központokba”",
+      "C) A mezőgazdaság fellendülése",
+      "D) A kulturális örökség megőrzése"
+     ],
+     "question": "Mit tűzött ki célul a romániai falurombolás terve?",
+     "explanation": "A falurombolási terv (1988) a romániai falvak jelentős részének felszámolását célozta; 1989 végén a rendszer bukása megállította.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-16-023",
+   "lesson_id": null,
+   "block_id": "c21d831b-0f6c-4eed-9f71-5607b0873554",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 6,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "„a magyar és román kisebbség” között zajlottak összecsapások",
+   "explanation": "A románok Romániában többségben vannak, nem kisebbség.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Târgu_Mureș_ethnic_clashes",
+     "title": "Târgu Mureș ethnic clashes",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Politikai választások",
+      "B) Fekete március eseményei",
+      "C) Kulturális fesztivál",
+      "D) Gazdasági reformok"
+     ],
+     "question": "Mi történt 1990 márciusában Marosvásárhelyen?",
+     "explanation": "A fekete március eseményei során Marosvásárhelyen súlyos összecsapások zajlottak a magyar és román kisebbség között.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Politikai választások",
+      "B) Fekete március eseményei",
+      "C) Kulturális fesztivál",
+      "D) Gazdasági reformok"
+     ],
+     "question": "Mi történt 1990 márciusában Marosvásárhelyen?",
+     "explanation": "1990. március 19–20-án Marosvásárhelyen magyarok és románok között véres összecsapások törtek ki, öten meghaltak, mintegy háromszázan megsebesültek.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ],
+ "applied": {
+  "HIST-1112-16-001": "ef2fa444-8700-4750-b499-ac081c770fa3",
+  "HIST-1112-16-002": "b789efc5-35d9-495a-a9bf-2dfb45116745",
+  "HIST-1112-16-003": "25b0fd33-336e-4a25-8be4-928e34fe843d",
+  "HIST-1112-16-004": "3443a8ad-aa0c-4573-885c-e32e14322619",
+  "HIST-1112-16-005": "4bf00657-0869-4f0e-a4a0-e055306889cf",
+  "HIST-1112-16-006": "22204f42-e1ef-4831-9a41-5d592f52d944",
+  "HIST-1112-16-007": "a13ebd45-ae51-4df0-af57-1e150d977f77",
+  "HIST-1112-16-009": "210eb09c-5635-4868-99d3-40bfc4d20fd2",
+  "HIST-1112-16-010": "6e8b4beb-486b-4e20-8d0c-8a82136fc970",
+  "HIST-1112-16-012": "aca1c622-2129-4b49-ae65-60a6faac560c",
+  "HIST-1112-16-013": "07a2734f-c6a9-4fc2-a7e7-5e891779b3b9",
+  "HIST-1112-16-014": "f9214bb4-c441-4925-9d1c-78b3fe4d2b6c",
+  "HIST-1112-16-015": "648988bd-4f22-4df6-bd9d-efe0956d5775",
+  "HIST-1112-16-016": "8e101c0e-bfa6-4352-b11c-98afc6f253e9",
+  "HIST-1112-16-017": "0e5e2658-15ff-4f1f-a0be-eb80601eafca",
+  "HIST-1112-16-018": "f81aea9b-4581-4b08-9321-173662032340",
+  "HIST-1112-16-019": "2efe7e73-5f53-49b3-a327-ebc466865b1c",
+  "HIST-1112-16-020": "dfb34ff8-0308-478e-88e3-c5cb84e4406b",
+  "HIST-1112-16-021": "30605556-970a-4982-a53d-08d9fdd30a23",
+  "HIST-1112-16-022": "d2c4289d-59af-499a-8799-80ff4da75eee",
+  "HIST-1112-16-023": "75fc0a1a-6a00-42fc-ad96-c8a48e022712"
+ }
+}

@@ -1,0 +1,238 @@
+{
+ "nat_id": "PHYS-910-09",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "a13e9da1-5288-4743-b8a8-77fe7fbd2da4",
+   "title_hu": "Az elektromos áram alapjai és mérése",
+   "text_block_id": "12c4fe07-1303-436f-bd4f-4b4ed46af52a",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mit visz az áram?",
+     "body": "Az áramerősség I = Q : t, egysége az amper (1 A = 1 C/s). Ha egy vezetéken 0,5 A folyik 20 másodpercig, Q = 0,5 · 20 = 10 C töltés halad át. Az elemi töltés 1,6 · 10⁻¹⁹ C, így 1 A áram másodpercenként kb. 6,2 · 10¹⁸ elektront jelent. Fémekben az elektronok viszik az áramot, sós vízben viszont az ionok (Na⁺ és Cl⁻), ezért vezet a sós víz. Az áram irányának a megegyezés szerint a pozitív töltések mozgásának irányát vesszük, ezért az elektronok éppen ellentétes irányban mozognak.",
+     "did_you_know": "Fémvezetőben az elektronok tényleges sodródási sebessége csak milliméter/másodperc nagyságrendű, mégis szinte azonnal világít a lámpa, mert az elektromos tér a jelet közel fénysebességgel viszi végig.",
+     "think": "Mennyi töltés halad át egy vezetéken 0,5 A áramnál 20 s alatt?",
+     "think_answer": "Q = I · t = 0,5 · 20 = 10 C."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Hogyan kösd be az ampermérőt?",
+     "body": "Az ampermérőt sorosan kell az áramkörbe kötni, mert az áramkör áramát kell mérnie, és a belső ellenállása kicsi, hogy ne módosítsa az áramot. A feszültségmérőt párhuzamosan kötjük, mert a két pont közötti feszültséget méri. Az ampermérőt soha nem szabad párhuzamosan kötni egy elemmel, mert nagy áram folyna át rajta. A LED-et ellenállással kell sorba kötni: ha a LED 20 mA-nél 2 V-ot esik, és 3 V-os forrásról üzemel, akkor R = (3 − 2) : 0,02 = 50 Ω kell. Az áram az áramkörben nem fogy el, a lámpán és az ellenálláson ugyanakkora folyik át.",
+     "did_you_know": "",
+     "think": "Hogyan kapcsolod az ampermérőt, és miért?",
+     "think_answer": "Sorosan, mert az áramkörön átfolyó áramot kell mérnie."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A feszültség és az energia",
+     "body": "A feszültség U = W : Q, vagyis az egységnyi töltésre jutó energia: 1 V = 1 J/C. Egy 1,5 V-os elem minden coulomb töltésnek 1,5 J energiát ad át. Ha 2 C töltés halad át az elemen, összesen 3 J energiát kap. A hálózati feszültség Magyarországon 230 V, az autóakkumulátoré 12 V, egy napelemcelláé kb. 0,5 V. A galvánelem egyszer használatos, az akkumulátor újratölthető. A napelemek fény hatására hoznak létre feszültséget, az energiát a fény adja.",
+     "did_you_know": "",
+     "think": "Mennyi energiát ad le 3 C töltés egy 1,5 V-os elemen?",
+     "think_answer": "W = U · Q = 1,5 · 3 = 4,5 J."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Ohm törvénye számokkal",
+     "body": "Ohm törvénye szerint egy fémes vezetőn átfolyó áram erőssége arányos a rákapcsolt feszültséggel, U = I · R, ahol az ellenállás az arányossági tényező: R = U : I. Ha 12 V-ot kapcsolunk egy 4 Ω-os ellenállásra, az áram I = 12 : 4 = 3 A. Fordított összefüggés is hasznos: ha az ellenállás nő, adott feszültségnél az áram csökken. Nem minden alkatrész követi Ohm törvényét: az izzószál ellenállása a melegedéssel nő, a dióda pedig csak egy irányban vezet.",
+     "did_you_know": "Georg Ohm törvényét 1827-ben közölte.",
+     "think": "Mekkora feszültség kell ahhoz, hogy egy 150 Ω-os ellenálláson 0,02 A folyjon?",
+     "think_answer": "U = I · R = 0,02 · 150 = 3 V."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mitől függ az ellenállás?",
+     "body": "Egy vezeték ellenállása R = ρ · l : A, ahol ρ a fajlagos ellenállás, l a hossz, a keresztmetszet pedig A. A réz fajlagos ellenállása kb. 1,7 · 10⁻⁸ Ω · m, ezért 10 m hosszú, 1 mm²-es réz vezeték ellenállása 1,7 · 10⁻⁸ · 10 : 10⁻⁶ = 0,17 Ω. Az ellenálláshuzalok (például konstantán) fajlagos ellenállása kb. 30-szor nagyobb, a grafité még nagyobb, ezért kis darabban is nagy az ellenállásuk. A hosszú és vékony vezeték ellenállása nagy, ezért a hosszabbítót vastag vezetékkel készítik.",
+     "did_you_know": "",
+     "think": "Mi történik egy vezeték ellenállásával, ha a hosszát megduplázzuk?",
+     "think_answer": "Kétszeresére nő, mert az ellenállás arányos a hosszal."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Mi adja az energiát a citromelemben?",
+     "body": "A citromelemben a citromlé savas oldat, azaz elektrolit, amelyben a két különböző fém eltérően oldódik. A cink vagy vas atomjai ionként oldatba mennek, elektronokat hagyva a fémen, és így feszültség keletkezik. Az energiát tehát a fém oxidációja adja, nem a citrom. Egyetlen citromelem feszültsége kb. 0,9–1 V, az áramerőssége nagyon kicsi. Egy LED-hez több, sorba kötött citrom kell. Ez az elv Volta 1800-ban készített oszlopával azonos.",
+     "did_you_know": "",
+     "think": "Miért nem világít egyetlen citromtól a LED?",
+     "think_answer": "Mert egy citrom feszültsége kb. 1 V, a LED működtetéséhez pedig ennél nagyobb (kb. 2 V feletti) feszültség kell."
+    }
+   ]
+  },
+  {
+   "lesson_id": "d2a6601c-be0d-4ed8-a54f-04e2ce1e0b02",
+   "title_hu": "Áramkörök és ellenállások vizsgálata",
+   "text_block_id": "aea70483-ec68-467c-9e86-4039b46e0ba3",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Az ellenállás és a hő",
+     "body": "Amikor az áram egy ellenálláson átfolyik, teljesítmény szabadul fel: P = I² · R. Egy 100 Ω-os ellenálláson 0,5 A áram esetén P = 0,25 · 100 = 25 W hő keletkezik. Ezért melegszik a töltő és a fűtőszál is. A fémek ellenállása a hőmérséklettel nő, ezért a felmelegedett izzószál ellenállása nagyobb, mint hidegen. A termisztor félvezető, az NTC-típusú ellenállása melegítésre csökken, ezért használják hőmérséklet-érzékelőnek.",
+     "did_you_know": "",
+     "think": "Mekkora hőteljesítmény keletkezik egy 100 Ω-os ellenálláson 0,5 A áramnál?",
+     "think_answer": "P = I² · R = 0,5² · 100 = 25 W."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A soros kapcsolás",
+     "body": "Soros kapcsolásban az áram mindenhol ugyanakkora, a feszültség pedig megoszlik az elemek között. Az eredő ellenállás az ellenállások összege: R = R₁ + R₂ + R₃. Ha 10 Ω, 20 Ω és 30 Ω van sorba kötve, az eredő ellenállás 60 Ω. A LED előtét-ellenállása is soros: 5 V-os forrásnál, ha a LED 2 V-ot esik és 20 mA kell, az ellenállásra 3 V esik, R = 3 : 0,02 = 150 Ω. A régi fényfüzérekben az izzók sorba voltak kötve, ezért ha egy kiégett, az egész füzér kialudt.",
+     "did_you_know": "",
+     "think": "Mekkora az eredő ellenállás, ha 10 Ω, 20 Ω és 30 Ω van sorba kötve?",
+     "think_answer": "R = 10 + 20 + 30 = 60 Ω."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A párhuzamos kapcsolás",
+     "body": "Párhuzamos kapcsolásban minden elemen ugyanakkora a feszültség, az áram pedig megoszlik. Az eredő ellenállásra 1/R = 1/R₁ + 1/R₂ érvényes, ezért két egyforma 100 Ω-os ellenállás eredője 50 Ω. A lakásban a konnektorok párhuzamosan vannak kötve, mindegyiken 230 V van. Ha egy 100 W-os és egy 60 W-os izzó ég, az áramuk I = P : U = 0,43 A és 0,26 A, összesen kb. 0,7 A. A párhuzamos kapcsolás tehát azért jó, mert az egyik fogyasztó kiesése nem állítja meg a többit.",
+     "did_you_know": "",
+     "think": "Mekkora az eredő ellenállás két 100 Ω-os ellenállás párhuzamos kapcsolásakor?",
+     "think_answer": "R = 50 Ω, mert 1/R = 1/100 + 1/100 = 2/100."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyi áram folyik az izzón?",
+     "body": "Az elektromos teljesítmény P = U · I. Egy 230 V-ra készült 60 W-os izzó árama I = 60 : 230 ≈ 0,26 A, és az izzószál üzemi ellenállása R = U² : P = 230² : 60 ≈ 880 Ω. Hidegen az izzószál ellenállása kb. tizede ennek, ezért bekapcsoláskor rövid ideig nagy áram folyik, ezért égnek ki az izzók leginkább bekapcsoláskor. A LED-ek ugyanazt a fényt sokkal kisebb teljesítménnyel adják, mert kevesebb energiát alakítanak hővé.",
+     "did_you_know": "",
+     "think": "Mekkora áram folyik egy 230 V-os hálózatra kötött 60 W-os izzón?",
+     "think_answer": "I = P : U = 60 : 230 ≈ 0,26 A."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mennyi az emberi test ellenállása?",
+     "body": "A száraz bőr ellenállása több tízezer ohm is lehet, nedves bőré ennek töredéke, ezer ohm körüli. A veszélyt az áram jelenti, nem a feszültség önmagában: kb. 10 mA már izomgörcsöt okozhat, 30 mA felett a szívritmus zavara is felléphet. Ha 230 V-ra kerül egy nedves kéz (1000 Ω), az áram I = 230 : 1000 = 0,23 A, ami életveszélyes. Száraz kézzel ez sokkal kisebb lenne. Ezért nem szabad vizes kézzel elektromos készüléket kezelni. Az érintés nélküli fizetés nem méri a test ellenállását.",
+     "did_you_know": "",
+     "think": "Miért veszélyesebb a vizes kézzel megfogott hibás készülék?",
+     "think_answer": "Mert a nedves bőr ellenállása sokkal kisebb, ezért adott feszültségnél sokkal nagyobb áram folyik át a testen."
+    }
+   ]
+  },
+  {
+   "lesson_id": "b5782dcd-e8b3-4324-aa66-69638c13de92",
+   "title_hu": "Háztartási eszközök és áramfogyasztás",
+   "text_block_id": "0194c810-1992-44d5-9e6b-31bce9d5ff89",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mit alakít hővé a vízforraló?",
+     "body": "A vízforralóban a fűtőszálon átfolyó áram hőt termel. Ha a 2000 W-os vízforraló 1 liter, 20 °C-os vizet forral fel, akkor 336 kJ hő kell, így ideális esetben 336 000 : 2000 = 168 s alatt kész. A mikrohullámú sütő nem az áramot alakítja közvetlenül hővé, hanem 2,45 GHz frekvenciájú mikrohullámot állít elő, amely a vízmolekulákat forgatja, ezért melegszik az étel. Az indukciós főzőlap az edény aljában indukált áramokkal fűt.",
+     "did_you_know": "",
+     "think": "Miért melegszik a víz a mikrohullámú sütőben, de a száraz porcelántányér alig?",
+     "think_answer": "Mert a mikrohullám a poláris vízmolekulákat forgatja, a száraz porcelánban pedig kevés ilyen molekula van."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Hogyan olvassuk a villanyszámlát?",
+     "body": "A kWh energiamennyiséget jelent, nem áramot: 1 kWh az az energia, amelyet egy 1 kW-os eszköz 1 óra alatt fogyaszt. Egy 2000 W-os vízforraló 3 perc (0,05 óra) alatt 2 · 0,05 = 0,1 kWh energiát használ. A számlán a fogyasztás mellett gyakran alapdíj is szerepel, és a tarifa szolgáltatótól és szerződéstől függ, nem minden háztartásban van külön csúcsidős díj. A számla összegét a leolvasott kWh és az egységár szorzata adja.",
+     "did_you_know": "",
+     "think": "Mennyi energiát fogyaszt egy 2000 W-os vízforraló 3 perc alatt?",
+     "think_answer": "2 kW · 0,05 h = 0,1 kWh."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mennyibe kerül a készenlét?",
+     "body": "Egy eszköz éves költsége = teljesítmény (kW) · üzemidő (h) · egységár. Egy 5 W-os készenléti fogyasztás egész évben 0,005 · 8760 = 43,8 kWh, ami 40 Ft/kWh-val számolva kb. 1750 Ft. Egy 100 W-os eszköz napi 5 órás használata évente 0,1 · 5 · 365 ≈ 183 kWh. A kis fogyasztók összeadódnak: egy háztartásban több készenléti eszköz is lehet. A konnektorba dugható fogyasztásmérővel a tényleges értékek megmérhetők.",
+     "did_you_know": "",
+     "think": "Mennyi energiát fogyaszt egy 5 W-os készenléti eszköz egy év alatt?",
+     "think_answer": "0,005 kW · 8760 h = 43,8 kWh."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyi a kWh joule-ban?",
+     "body": "1 kWh = 1000 W · 3600 s = 3,6 millió J = 3,6 MJ. Az összehasonlításhoz: egy kb. 100 g-os alma 1 m-rel való felemelése kb. 1 J munka, így 1 kWh nagyjából 3,6 millió alma 1 méter magasra emelésének felel meg. Egy ember napi kb. 2000 kcal (≈ 8,4 MJ) élelmiszer-energiája kb. 2,3 kWh. Az energia mértékegységei közül a joule az SI-egység, a kWh a mindennapi számlázásra kényelmesebb.",
+     "did_you_know": "",
+     "think": "Hány kWh 7,2 MJ?",
+     "think_answer": "7,2 : 3,6 = 2 kWh."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mennyit fogyaszt a töltő?",
+     "body": "A címkén szereplő 5 W általában a névleges teljesítmény, a tényleges fogyasztás töltés közben változik. Egy 3000 mAh, 3,7 V-os akkumulátor energiája 3 Ah · 3,7 V = 11,1 Wh. Veszteségek miatt a hálózatból ennél több energia kell: vezeték nélküli töltésnél a hatásfok jellemzően 60–80%, tehát kb. 11,1 : 0,7 ≈ 16 Wh. Pontosabb mérést a konnektorba dugható fogyasztásmérő ad, amely a teljes töltés energiáját kWh-ban mutatja.",
+     "did_you_know": "",
+     "think": "Mekkora energiát tárol egy 3000 mAh, 3,7 V-os akkumulátor?",
+     "think_answer": "3 Ah · 3,7 V = 11,1 Wh."
+    }
+   ]
+  },
+  {
+   "lesson_id": "de2f4359-6dda-473e-b7e9-a54abe93541e",
+   "title_hu": "Biztonság és diagnosztikai alkalmazások",
+   "text_block_id": "94dca059-7b56-4811-9f3b-eaa1f09aead2",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Hogyan árt az áram?",
+     "body": "A veszélyt az áram erőssége jelenti. A 0,5–1 mA már érezhető, 10 mA körül izomgörcs léphet fel, és nem lehet elengedni a vezetéket. Kb. 30 mA felett már a szívkamra remegése, szívleállás is előfordulhat, az áram útjától és időtartamától függően. A váltakozó áram (50 Hz) különösen veszélyes a szívre. Ha valakit áramütés ér, először az áramot kell kikapcsolni (kapcsoló, biztosíték), nem szabad az áldozatot megérinteni, majd hívni kell a 112-t.",
+     "did_you_know": "",
+     "think": "Mit kell elsőként tenni, ha valakit áramütés ér egy konnektornál?",
+     "think_answer": "Kikapcsolni az áramot, és csak azután segíteni; a sérültet előbb nem szabad megérinteni."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Az áramvédő kapcsoló",
+     "body": "Az áramvédő kapcsoló (FI-relé) azt figyeli, hogy a fázisvezetőn befolyó és a nullavezetőn kifolyó áram egyenlő-e. Ha a különbség eléri a 30 mA-t, azaz az áram valahol máshol, például az emberi testen át a földbe folyik, a készülék a másodperc törtrésze alatt lekapcsol. A lakásokban fürdőszobában, konyhában és kültéri áramkörökön is előírják. Nem véd viszont, ha valaki egyszerre a fázist és a nullát érinti meg, mert ilyenkor a differenciaáram nulla.",
+     "did_you_know": "",
+     "think": "Mi az áramvédő kapcsoló működési elve?",
+     "think_answer": "A befolyó és kifolyó áram különbségét figyeli, és lekapcsol, ha az eléri a 30 mA-t."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mennyit bír egy áramkör?",
+     "body": "A biztosíték vagy kismegszakító a túlterhelést és a zárlatot akadályozza meg azzal, hogy megszakítja az áramkört. Egy 16 A-es körön a legnagyobb teljesítmény P = U · I = 230 · 16 = 3680 W. Ha egy 2000 W-os hajszárítót és egy 2000 W-os vízforralót ugyanarra a körre kötünk, az összesen 4000 W, ami meghaladja a határt, ezért a kismegszakító lekapcsol. A földvezeték (védőföld) sárga-zöld színű, és a készülék fémházát köti a földhöz.",
+     "did_you_know": "",
+     "think": "Mekkora teljesítmény terhelhet egy 16 A-es, 230 V-os áramkört?",
+     "think_answer": "P = 230 · 16 = 3680 W."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Az EKG és az EEG",
+     "body": "Az EKG a szív, az EEG az agy elektromos jeleit rögzíti, nem az „idegvezetést”. A bőrre helyezett elektródák a kis feszültségkülönbségeket erősítőn keresztül mérik. Az EKG jelei mV, az EEG jelei csak néhányszor 10 μV nagyságrendűek, ezért kell erősítő. Willem Einthoven 1901-ben építette az első gyakorlati EKG-készüléket, munkájáért 1924-ben Nobel-díjat kapott. Az EKG-ból a szívritmus és bizonyos szívproblémák kiolvashatók.",
+     "did_you_know": "",
+     "think": "Miért kell erősítő az EEG méréséhez?",
+     "think_answer": "Mert az agyi jelek mikrovolt nagyságrendűek, közvetlenül nem mérhetők."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Biztonságos használat",
+     "body": "A vezeték nélküli töltő és az indukciós főzőlap is biztonságos, ha rendeltetésszerűen használjuk: a töltő és a telefon közé ne kerüljön fémtárgy (például kártya, érme), mert az felmelegedhet. Sérült vezetéket, hibás töltőt ne használjunk, és vásároljunk CE-jelöléssel ellátott eszközt. Vizes kézzel ne kapcsoljunk be hálózati készüléket. Az érintés nélküli kártyák jelét fémszálas tok is árnyékolhatja, ezért van ilyen tok az illetéktelen leolvasás ellen.",
+     "did_you_know": "",
+     "think": "Miért nem szabad vizes kézzel hálózati eszközt bekapcsolni?",
+     "think_answer": "Mert a nedves bőr ellenállása kicsi, ezért nagy, veszélyes áram folyhat át a testen."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Képalkotó eljárások az orvostudományban",
+     "body": "A röntgen és a CT ionizáló sugárzást használ: a CT sok irányból készített röntgenfelvételből számítógéppel állít elő metszeteket. Az MRI erős mágneses mezőt (1,5–3 T) és rádióhullámokat használ, nem ionizáló, a testben a hidrogénatomok jelét méri. Az ultrahang hanghullámokat használ. Wilhelm Röntgen 1895-ben fedezte fel a sugárzást. Gyűjtőmunkánál fontos megjelölni az adatok forrását és a sugárterhelést is.",
+     "did_you_know": "",
+     "think": "Melyik eljárás használ ionizáló sugárzást: az MRI vagy a CT?",
+     "think_answer": "A CT, mert röntgensugárzást használ; az MRI mágneses mezőt és rádióhullámokat."
+    }
+   ]
+  }
+ ]
+}

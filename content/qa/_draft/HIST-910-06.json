@@ -1,0 +1,376 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Strukturális: 34a430a8 és 7bdddd86 üres világ blokk."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "ae0c9582-2e12-402b-b2e9-e36f15ff1877",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A visegrádi királytalálkozó (1335) célja „a perszonálunió elősegítése”",
+   "explanation": "A találkozó (Károly Róbert, János cseh és Kázmér lengyel király) a cseh–lengyel viszály rendezéséről, a Habsburgok elleni együttműködésről és a bécsi árumegállító jog megkerüléséről szólt; perszonálunió nem jött létre.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Congress_of_Visegrád",
+     "title": "Congress of Visegrád",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a perszonálunió elősegítése",
+     "a cseh–lengyel viszály rendezése és a Habsburgok elleni együttműködés (a bécsi árumegállító jog megkerülése)"
+    ]
+   ]
+  },
+  {
+   "block_id": "ae0c9582-2e12-402b-b2e9-e36f15ff1877",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az 1351-es törvények „biztosították … a szabad királyi városok és bányavárosok önállóságát”",
+   "explanation": "Az 1351-es törvények (Nagy Lajos) a nemesség jogairól szólnak: kimondták az ősiséget, bevezették a jobbágyoktól szedett kilencedet, és rögzítették a nemesek egy és ugyanazon szabadságát. A városok önállóságáról nem szóltak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Louis_I_of_Hungary",
+     "title": "Louis I of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "és biztosították számukra a szabad királyi városok és bányavárosok önállóságát",
+     "mert kimondták az ősiséget, bevezették a jobbágyoktól szedett kilencedet, és rögzítették a nemesek egy és ugyanazon szabadságát"
+    ]
+   ]
+  },
+  {
+   "block_id": "ae0c9582-2e12-402b-b2e9-e36f15ff1877",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Nagy Lajos „lengyelországi hadjárata” a főbb hadjáratok között",
+   "explanation": "Nagy Lajos fő hadjáratai a nápolyi hadjáratok (1347–48, 1350) voltak, amelyekkel testvére, András meggyilkolása miatt állt bosszút. 1370-től lengyel király is volt, de ezt örökléssel szerezte.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Louis_I_of_Hungary",
+     "title": "Louis I of Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_campaigns_against_Naples",
+     "title": "Hungarian campaigns against Naples",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ezek közé tartozott a lengyelországi hadjárat, amely a két ország közötti szorosabb kapcsolatok kiépítését szolgálta.",
+     "Ezek közé tartoztak a nápolyi hadjáratok (1347–1348, 1350), amelyekkel testvére, András meggyilkolása miatt állt bosszút; 1370-től lengyel királyként is uralkodott."
+    ]
+   ]
+  },
+  {
+   "block_id": "ae0c9582-2e12-402b-b2e9-e36f15ff1877",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Bányavárosok, mint például Kassa és Eperjes”",
+   "explanation": "Kassa és Eperjes jelentős kereskedővárosok voltak, nem bányavárosok. A híres bányavárosok: Körmöcbánya, Selmecbánya, Besztercebánya.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Košice",
+     "title": "Košice",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Kremnica",
+     "title": "Kremnica",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A bányavárosok, mint például Kassa és Eperjes,",
+     "A bányavárosok, mint például Körmöcbánya, Selmecbánya és Besztercebánya,"
+    ]
+   ]
+  },
+  {
+   "block_id": "f30cab9d-9ee2-42bf-a06f-8bdb54f2c9ea",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Várna: „Hunyadi János vezetésével”",
+   "explanation": "A várnai csatában (1444) a keresztény sereget I. Ulászló magyar és lengyel király vezette; ő el is esett a csatában. Hunyadi a sereg egyik vezére volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Varna",
+     "title": "Battle of Varna",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "ahol Hunyadi János vezetésével a keresztény seregek újra megpróbálták megállítani a törököket",
+     "ahol I. Ulászló király és Hunyadi János vezette keresztény seregek újra megpróbálták megállítani a törököket; a király a csatában elesett"
+    ]
+   ]
+  },
+  {
+   "block_id": "c0240c05-6052-435b-a8ca-be86fdcf284c",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Mátyás terjeszkedése „a Balkán” felé; Kolozsvár és Kenyérmező",
+   "explanation": "Mátyás terjeszkedése nyugat felé irányult (Morvaország, Szilézia, Alsó-Ausztria; Bécs 1485). A törökkel szemben főként védekezett; Kenyérmező (1479) védelmi győzelem volt Erdélyben Kinizsi Pál és Báthory István vezetésével.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Matthias_Corvinus",
+     "title": "Matthias Corvinus",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Breadfield",
+     "title": "Battle of Breadfield",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "amelyek célja a Balkán és a környező területek magyar befolyásának növelése volt",
+     "amelyek nyugat felé irányultak: elfoglalta Morvaországot és Sziléziát, 1485-ben pedig Bécset"
+    ],
+    [
+     "Kolozsvár és Kenyérmező fontos stratégiai helyszínek voltak, ahol Mátyás hadjáratai során sikerült terjeszkednie.",
+     "A törökkel szemben főként védekezett: a kenyérmezei győzelmet (1479) Kinizsi Pál és Báthory István aratta Erdélyben."
+    ]
+   ]
+  },
+  {
+   "block_id": "c0240c05-6052-435b-a8ca-be86fdcf284c",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Mátyás jövedelmei: „a zsoldosok által végzett szolgáltatások”",
+   "explanation": "A zsoldosok költséget jelentettek, nem jövedelemforrást. Mátyás bevételei a királyi birtokok, a rendkívüli hadiadó és a vámok voltak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Matthias_Corvinus",
+     "title": "Matthias Corvinus",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a királyi birtokok, adók és a zsoldosok által végzett szolgáltatások voltak",
+     "a királyi birtokok, a rendkívüli hadiadó és a vámok voltak; a bevételekből fizette zsoldosseregét (a Fekete Sereget)"
+    ]
+   ]
+  },
+  {
+   "block_id": "74c995bd-da05-4259-b9b9-024fa1ac29b7",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Szent Korona-tan: „a nép akaratát” fejezi ki",
+   "explanation": "A Szent Korona-tan szerint a hatalom forrása a Szent Korona, amelyhez a politikai nemzet (a nemesség) tartozott, nem az egész nép.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Holy_Crown_of_Hungary",
+     "title": "Holy Crown of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "replace": [
+    [
+     "a nép akaratát",
+     "a politikai nemzet (a nemesség) akaratát"
+    ]
+   ]
+  },
+  {
+   "block_id": "cb86b7ab-a805-41ee-8ee3-af44143840a1",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "I. Károly uralkodásának kezdete: 1301 vagy 1308",
+   "explanation": "Károly Róbertet 1301-ben (III. András halála után) elismerték egyesek, 1308-ban a nagyurak királlyá választották, 1310-ben végleg megkoronázták. A kérdés kétértelmű.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Charles_I_of_Hungary",
+     "title": "Charles I of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "set": {
+    "question": "Melyik évben választották királlyá I. Károlyt a magyar főurak (először)?"
+   }
+  },
+  {
+   "block_id": "871f53a6-df9a-4ea1-be7d-b169c6cb8ab4",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "Nikápoly (1396): a vereség „a százéves háború kirobbanásához vezetett”",
+   "explanation": "A százéves háború 1337-ben kezdődött, Nikápoly (1396) idején már közel 60 éve zajlott. A francia lovagok vereséget szenvedtek, de ez nem okozta a háború kezdetét.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Nicopolis",
+     "title": "Battle of Nicopolis",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hundred_Years'_War",
+     "title": "Hundred Years' War",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A francia vereség következtében a francia udvar figyelme a belső problémákra irányult, ami végül a százéves háború kirobbanásához vezetett.",
+     "A keresztes sereg jelentős része burgundi és francia lovagokból állt; a vereség a nyugati keresztény hatalmak számára a török veszély komoly jelzése volt."
+    ]
+   ]
+  },
+  {
+   "block_id": "264a3168-40d9-4f68-986a-af5cdffb0a31",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Nikápoly: „a török hódítások megkezdése a Balkánon”",
+   "explanation": "A török hódítás a Balkánon a 14. század közepén kezdődött (1354 Gallipoli, 1389 Rigómező). Nikápoly a török Balkán-uralom megszilárdulását jelentette.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Nicopolis",
+     "title": "Battle of Nicopolis",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[2]": "C) A török uralom megszilárdulása a Balkánon.",
+    "explanation": "A nikápolyi csata (1396) megszilárdította a török uralmat a Balkánon, és megmutatta a Magyar Királyság déli határának veszélyeztetettségét."
+   }
+  },
+  {
+   "block_id": "93de15af-ae9f-4530-a2a5-f96e3ee2110d",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A Képes krónika: kulcs A) 13. század, a magyarázat 14. század",
+   "explanation": "A Képes krónika (Chronicon Pictum) 1358 körül, Nagy Lajos idején készült, tehát a 14. században.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Chronicon_Pictum",
+     "title": "Chronicon Pictum",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) A 14. században, Magyarországon.",
+    "options[3]": "D) A 13. században, Erdélyben."
+   }
+  },
+  {
+   "block_id": "93de15af-ae9f-4530-a2a5-f96e3ee2110d",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Szent Korona-tan: „a királyi hatalom isteni eredetét hangsúlyozza”",
+   "explanation": "A Szent Korona-tan szerint a királyi hatalom a Szent Koronából ered, amelyet a politikai nemzet és a király együtt viselt. Az isteni eredet a koronázási hagyományban szerepelt, de a tan lényege a korona jogi szimbóluma.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Holy_Crown_of_Hungary",
+     "title": "Holy Crown of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "set": {
+    "options[0]": "A) A hatalom forrása a Szent Korona, amely a király és a politikai nemzet egységét fejezi ki."
+   }
+  },
+  {
+   "block_id": "93de15af-ae9f-4530-a2a5-f96e3ee2110d",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A Szent Korona használata a „középkorra” jellemző",
+   "explanation": "A Szent Koronával a magyar királyokat 1916-ig (IV. Károly) koronázták, tehát a használat nem a középkorra korlátozódik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Holy_Crown_of_Hungary",
+     "title": "Holy Crown of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Mikor kezdték a Szent Koronával koronázni a magyar királyokat?",
+    "explanation": "A Szent Koronával a magyar királyokat a 12–13. századtól koronázták, egészen 1916-ig."
+   }
+  },
+  {
+   "block_id": "846d17d7-b7cd-4452-bb64-b7ec7544e8c8",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A „fekete sereg Hunyadi János idejében”",
+   "explanation": "A Fekete Sereg Mátyás király zsoldoshadserege volt (1458-tól, Hunyadi halála után), nem Hunyadi Jánosé.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Black_Army_of_Hungary",
+     "title": "Black Army of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Mi jellemezte a „fekete sereget” Hunyadi Mátyás idejében?",
+    "explanation": "A Fekete Sereg Mátyás király állandó zsoldoshadserege volt."
+   }
+  },
+  {
+   "block_id": "846d17d7-b7cd-4452-bb64-b7ec7544e8c8",
+   "card_index": 7,
+   "field": "question",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "A magyar középkor fénykora „a 15. század közepén” Konstantinápoly eleste zárta le",
+   "explanation": "A magyar fénykor a Mátyás-korral (1458–1490) szokás azonosítani. Konstantinápoly eleste (1453) a török veszély növekedésének jele, nem lezárta a fénykort.",
+   "source_note": "tankönyvi periodizáció; nincs egyetlen forrás",
+   "apply": "review",
+   "set": {
+    "question": "Melyik esemény jelezte a török veszély megnövekedését a 15. század közepén?"
+   }
+  }
+ ]
+}

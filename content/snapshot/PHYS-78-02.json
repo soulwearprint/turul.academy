@@ -1,0 +1,1162 @@
+{
+ "nat_id": "PHYS-78-02",
+ "topic_id": "7d4e6b8a-0d80-4a94-ab56-ee49496e12b8",
+ "title_hu": "Az energia",
+ "grade": 7,
+ "lessons": [
+  {
+   "lesson_id": "31fc303f-fff7-45fc-babd-a20d57b92b4b",
+   "title_hu": "Energiafogyasztás és teljesítmény a háztartásban",
+   "order_index": 1,
+   "blocks": [
+    {
+     "block_id": "59640b68-8d5d-4a6d-9f71-ba647d6b5392",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A teljesítmény (P) azt mutatja meg, hogy egy eszköz mennyi energiát használ fel egy adott idő alatt. Gondoljunk csak egy egyszerű példára: ha van egy 60 W-os (wattos) izzónk, az azt jelenti, hogy ez az izzó 60 watt teljesítménnyel működik, és egy óra alatt 0,06 kWh energiát fogyaszt. Tehát, ha este bekapcsoljuk az izzót, a teljesítmény segít nekünk megérteni, hogy mennyi áramot fogyasztunk. Az energiaszámlánk ezért gyakran a wattban megadott teljesítmény alapján számolja ki a havi költségeinket.",
+       "type": "text",
+       "heading": "Mi az a teljesítmény?",
+       "key_term": "teljesítmény"
+      },
+      {
+       "body": "Az energiafogyasztás (E) azt mutatja meg, hogy egy eszköz mennyi energiát használt el egy adott időszak alatt. Ha az előbb említett 60 W-os izzót egy órán keresztül használjuk, akkor 0,06 kWh (kilowattóra) energiát fogyaszt. A háztartásban a különböző eszközök, mint például a hűtőszekrény, a mosógép vagy akár a telefonunk töltője is folyamatosan használják az energiát, és ez a fogyasztás hatással van a havi költségeinkre.",
+       "type": "text",
+       "heading": "Energiafogyasztás a háztartásban",
+       "key_term": "energiafogyasztás"
+      },
+      {
+       "body": "A háztartásunkban az energiaszükséglet legnagyobb részét általában a hűtőszekrény, a fűtés és a mosógép teszi ki. Például egy modern hűtőszekrény teljesítménye 150-200 W között változhat, míg egy mosógép akár 2000 W-ot is felhasználhat egy mosás során. Ezen eszközök ismerete segít abban, hogy tudatosabban gazdálkodjunk az energiával, és csökkentsük a költségeinket.",
+       "type": "text",
+       "heading": "A legnagyobb energiafogyasztók a lakásban",
+       "key_term": "energiafogyasztás"
+      },
+      {
+       "body": "A háztartásban használt energiahordozók közé tartozik az elektromos áram, a földgáz, a szén és a fa. Az elektromos áram például a világításban és a háztartási gépek működtetésében játszik szerepet, míg a földgáz gyakran a fűtéshez és a főzéshez szükséges. A fa és a szén egyre ritkábban használt energiahordozók, de még mindig előfordulnak, főleg vidéki területeken. Az energiahordozók ismerete segít abban, hogy tudatosan válasszunk az energiaforrásaink között.",
+       "type": "text",
+       "heading": "Energiahordozók a háztartásban",
+       "key_term": "energiahordozók"
+      },
+      {
+       "body": "Az izzók gazdaságosságának összehasonlítása fontos lépés a tudatos energiafogyasztás felé. Például egy hagyományos izzó 60 W-ot fogyaszt, míg egy LED-izzó, amely ugyanakkora fényt ad, csak 8-10 W-ot. Ha a LED-izzót választjuk, hosszú távon jelentős energiát takaríthatunk meg, ami a számlánkon is meg fog látszani. A gazdaságos izzók használata környezetbarát döntés is, hiszen csökkenti az energiaigényünket.",
+       "type": "text",
+       "heading": "Izzók gazdaságossága",
+       "key_term": "energiafogyasztás"
+      },
+      {
+       "body": "Gondolkodj el egy átlagos napodon, és nézd meg, milyen energiahordozókat használtál! Reggel a telefonod töltéséhez elektromos áramot használtál, a kávéfőződ földgázzal működött, míg a vacsorához a sütő szintén gázzal üzemelt. Az energiaszükségletedet a napi tevékenységeid és az általad használt eszközök határozzák meg, így érdemes figyelni a fogyasztásra.",
+       "type": "text",
+       "heading": "Egy átlagos nap energiafogyasztás szempontjából",
+       "key_term": "energiafogyasztás"
+      },
+      {
+       "body": "Az energiabiztonság fogalma arra utal, hogy mennyire vagyunk képesek biztosítani a szükséges energiaforrásokat a mindennapi élethez. Az emberiség energiafogyasztása folyamatosan nő, míg a rendelkezésre álló energiaforrások, mint például a fosszilis tüzelőanyagok, korlátozottak. Ezért fontos, hogy megismerjük és támogassuk a megújuló energiaforrásokat, mint például a nap- és szélenergia, amelyek hozzájárulhatnak a fenntarthatósághoz.",
+       "type": "text",
+       "heading": "Energiabiztonság és források",
+       "key_term": "energiabiztonság"
+      }
+     ]
+    },
+    {
+     "block_id": "8a9a20e4-096c-402e-be37-926891d23e21",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A nap első fényei még csak sejtekkel játszanak a horizonton, de a lakásban már felkapcsolják a villanyt. Ezzel elkezdődik az elektromos áram (AC) használata, amely az izzók világítását biztosítja. A teljesítmény (P), amelyet az izzók igényelnek, megmutatja, hogy mennyi energiát fogyasztanak egy óra alatt. Például egy 60 W-os izzó 60 wattnyi teljesítménnyel működik, ami 0,06 kWh energiafogyasztást jelent egy óra alatt.",
+       "type": "story",
+       "heading": "A nap kezdete: felkapcsoljuk a villanyt"
+      },
+      {
+       "body": "A villanykapcsoló után következik a kávéfőző bekapcsolása. Ez a készülék általában 800-1200 W teljesítményű, így gyorsan felmelegíti a vizet. A teljesítmény itt is kulcsszerepet játszik: minél nagyobb a teljesítmény, annál gyorsabban készül el a kávé, de ezzel együtt az energiafogyasztás is nő. Egy kávéfőző, ami 1000 W teljesítménnyel működik, 1 kWh energiát használ el, ha 1 órán át működik.",
+       "type": "story",
+       "heading": "Reggeli készülődés: a kávéfőző működése"
+      },
+      {
+       "body": "A reggel folytatásaként a lakás fűtése kerül előtérbe. A fűtőberendezés lehet elektromos (AC), de használhat földgázt is. A földgáz és a fa égetése során keletkező energia szintén fontos energiahordozók. A fűtőberendezés teljesítménye, ami például 2000 W, meghatározza, mennyi energiát használ el a fűtéshez. A fűtési szezon alatt ez a fogyasztás jelentős része lehet a háztartás összes energiafogyasztásának.",
+       "type": "story",
+       "heading": "Energiahordozók: a fűtés forrása"
+      },
+      {
+       "body": "A nap végén a család összegyűlik a nappaliban, és bekapcsolják a tévét. Egy modern LCD tévé teljesítménye általában 50-100 W között mozog. A tévé működése alatt is folyamatosan figyelni kell az energiafogyasztásra, hiszen egy 100 W-os tévé 1 kWh energiát fogyaszt, ha 10 órán át nézik. Ezért érdemes tudatosan választani, hogy mikor és mennyit használunk.",
+       "type": "story",
+       "heading": "Szórakozás: a tévé bekapcsolása"
+      },
+      {
+       "body": "Az este végén a család átgondolja a nap energiafogyasztását. Összesítik, hogy a világítás, a kávéfőző, a fűtés és a tévé mennyi energiát használt el. A tudatos energiafelhasználás érdekében a család megbeszéli, hogy a következő napokban figyelniük kell a teljesítményre és az energiafogyasztásra, hogy csökkenthessék a költségeiket és támogathassák a fenntarthatóságot.",
+       "type": "story",
+       "heading": "Az energiafogyasztás összegzése"
+      }
+     ]
+    },
+    {
+     "block_id": "cab2193b-0f21-4eb3-addb-e48af2a86ebe",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A teljesítmény és energiafogyasztás kapcsolata",
+       "heading": "Teljesítmény és energiafogyasztás kapcsolata",
+       "description": "Egy egyszerű diagram, amely bemutatja a teljesítmény (P) és az energiafogyasztás (E) közötti kapcsolatot. A diagramon szerepel a képlet: E = P × t, ahol E az energia, P a teljesítmény, és t az idő.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A háztartás legnagyobb energiafogyasztói",
+       "heading": "Legnagyobb energiafogyasztók a háztartásban",
+       "description": "Olyan oszlopdiagram, amely a háztartás legnagyobb energiafogyasztóit mutatja be, mint például a hűtőgép, mosógép, szárítógép és fűtés. Az oszlopok magassága a készülékek átlagos teljesítményét (W) és havi energiafogyasztását (kWh) ábrázolja.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Energiahordozók áttekintése",
+       "heading": "Energiahordozók áttekintése",
+       "description": "Egy keresztmetszeti ábra, amely bemutatja a különböző energiahordozókat: elektromos áram, földgáz, szén és fa. Minden energiahordozónál feltüntetjük a jellemző energiaértéket (pl. MJ/kg) és a felhasználási területeket.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Izzók gazdaságosságának összehasonlítása",
+       "heading": "Izzók gazdaságosságának összehasonlítása",
+       "description": "Egy táblázat, amely különböző izzótípusok (pl. hagyományos, energiatakarékos, LED) teljesítményét, élettartamát és energiafogyasztását hasonlítja össze. Minden izzónál feltüntetjük az éves költséget is.",
+       "visual_type": "táblázat"
+      },
+      {
+       "type": "visual",
+       "caption": "Egy átlagos nap energiafogyasztása",
+       "heading": "Egy átlagos nap energiafogyasztása",
+       "description": "Egy idővonal, amely bemutatja egy átlagos nap energiafogyasztását óránként. A különböző tevékenységek mellett (például világítás, főzés, fűtés) feltüntetjük a felhasznált energiamennyiséget (kWh).",
+       "visual_type": "idővonal"
+      },
+      {
+       "type": "visual",
+       "caption": "Energiabiztonság és energiaforrások aránya",
+       "heading": "Energiabiztonság",
+       "description": "Egy kördiagram, amely bemutatja a különböző energiaforrások arányát a globális energiafogyasztásban. A diagramon szerepelnek a megújuló források, fosszilis tüzelőanyagok és nukleáris energia arányai.",
+       "visual_type": "grafikon"
+      }
+     ]
+    },
+    {
+     "block_id": "6aa2c228-1949-476e-8184-3b56aaf5622d",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A diákok a háztartásban találkoznak az energiafogyasztással, például a világítótestek, háztartási gépek vagy éppen a telefonjuk töltése során.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Energiafogyasztás a mindennapokban",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "4d8452dc-c976-4005-b3b2-8a54501d1635",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) W (watt)",
+        "B) J (joule)",
+        "C) V (volt)",
+        "D) A (amper)"
+       ],
+       "question": "Mi a teljesítmény (P) mértékegysége?",
+       "explanation": "A teljesítmény mértékegysége a watt (W), amely az energia átvitelének sebességét jelzi.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Hűtőszekrény",
+        "B) Televízió",
+        "C) Elektromos tűzhely",
+        "D) Izzó"
+       ],
+       "question": "Melyik eszköz a legnagyobb energiafogyasztó a háztartásban?",
+       "explanation": "Az elektromos tűzhely jellemzően a legnagyobb energiafogyasztó a háztartásban, mivel nagy teljesítményű eszköz.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) W (watt)",
+        "B) J (joule)",
+        "C) kWh (kilowattóra)",
+        "D) V (volt)"
+       ],
+       "question": "Mi az energiafogyasztás (E) mértékegysége?",
+       "explanation": "Az energiafogyasztás mértékegysége a kilowattóra (kWh), amely az egy óra alatt felhasznált energia mennyiségét jelzi.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "C",
+       "options": [
+        "A) Földgáz",
+        "B) Fa",
+        "C) Szén",
+        "D) Napenergia"
+       ],
+       "question": "Melyik energiahordozó nem megújuló?",
+       "explanation": "A szén nem megújuló energiahordozó, mivel a föld mélyéről nyerjük ki, és a felhasználása során kimeríti a készleteit.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Elektromos áram",
+        "B) Földgáz",
+        "C) Szén",
+        "D) Fa"
+       ],
+       "question": "Melyik energiahordozót használják leggyakrabban fűtésre a háztartásokban?",
+       "explanation": "A földgáz a leggyakrabban használt energiahordozó fűtésre a háztartásokban, mivel hatékony és kényelmes megoldást nyújt.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "04450472-14ac-4bb3-a848-cf772fea42b9",
+   "title_hu": "Energiahordozók és energiaátalakulások",
+   "order_index": 2,
+   "blocks": [
+    {
+     "block_id": "4bd4b273-52ad-445a-8702-98019e68b94e",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az energiahordozók olyan anyagok, amelyek képesek energiát tárolni és azt különböző formákban felszabadítani. A fosszilis energia, mint a kőolaj és a földgáz, a föld mélyéből származik, és a régi élőlények maradványainak lebomlásával keletkezik. Ezzel szemben a zöldenergia, például a napenergia, szélenergia vagy vízenergia, megújuló forrásokból származik, amelyek nem merülnek ki. A zöldenergia használata csökkenti a szén-dioxid-kibocsátást, így környezetbarátabb megoldásokat kínál a jövő energiagondjaira.",
+       "type": "text",
+       "heading": "Energiahordozók: fosszilis energia és zöldenergia",
+       "key_term": "energiahordozók"
+      },
+      {
+       "body": "A háztartások energiafogyasztásának jelentős része a fűtésre és meleg víz előállítására megy el. Például egy gázkonvektor használata általában olcsóbb lehet, mint egy elektromos vízmelegítőé, mivel a gáz ára alacsonyabb lehet, mint az elektromos áramé. Fontos, hogy a családok figyelemmel kísérjék a számláikat, és összehasonlítsák az energiaforrások költségeit, hogy megtalálják a számukra legmegfelelőbb megoldást.",
+       "type": "text",
+       "heading": "Energiaárak a háztartásban",
+       "key_term": "energiaárak"
+      },
+      {
+       "body": "A rugalmas energia olyan energia, amelyet egy rugó vagy más rugalmas anyag tárol. Például, ha egy rugós játékpuskát megfeszítünk, rugalmas energiát tárolunk benne. Amikor elengedjük, ez az energia mozgási energiává alakul, és a golyó kilőve elindul. Ez a jelenség jól szemlélteti, hogyan képes a tárolt energia mozgásra bírni egy tárgyat.",
+       "type": "text",
+       "heading": "Rugalmas energia és mozgási energia",
+       "key_term": "rugalmas energia"
+      },
+      {
+       "body": "A helyzeti energia olyan energia, amely egy test helyzetéből adódik. Például, ha egy labdát felemelünk, helyzeti energiát tárolunk benne. Amikor a labda leesik, ez a helyzeti energia mozgási energiává alakul, és a labda gyorsulva zuhan a földre. Ezt a jelenséget megfigyelhetjük, ha egy labdát leejtünk, és látjuk, ahogy gyorsul a zuhanás során.",
+       "type": "text",
+       "heading": "Helyzeti energia és zuhanó test",
+       "key_term": "helyzeti energia"
+      },
+      {
+       "body": "A belső energia a testek hőmérsékletének növelésével kapcsolatos. Ha a tenyerünket összedörzsöljük, a mozgási energia, amit a dörzsölés során generálunk, hőenergiává alakul, így a tenyereink felmelegszenek. Ez a példa jól mutatja, hogyan alakulhat át a mozgási energia belső energiává, és hogyan érezhetjük ezt a mindennapi életben.",
+       "type": "text",
+       "heading": "Belső energia és dörzsölés",
+       "key_term": "belső energia"
+      },
+      {
+       "body": "Az erőművekben különböző energiaátalakulások zajlanak, például a vízenergia átalakulása elektromos energiává. A vízturbinák a folyó víz mozgási energiáját mechanikai energiává alakítják, ami végül elektromos árammá alakul. Az energia megmaradásának törvénye alapján az energia nem vész el, csak átalakul egyik formából a másikba. Ezt a folyamatot figyelhetjük meg a modern vízerőművek működése során.",
+       "type": "text",
+       "heading": "Energiaátalakulások az erőművekben",
+       "key_term": "energiaátalakulások"
+      },
+      {
+       "body": "Az energiabiztonság azt jelenti, hogy egy ország vagy közösség képes biztosítani a szükséges energiaforrásokat a lakossága számára. Ez magában foglalja a megújuló energiaforrások használatát, mint a napelemek és szélerőművek, amelyek csökkentik a fosszilis energiaforrásokra való támaszkodást. Az energiabiztonság növelése érdekében fontos, hogy a fiatalok is tudatosan válasszák meg az energiafogyasztásuk módját és forrásait.",
+       "type": "text",
+       "heading": "Energiabiztonság",
+       "key_term": "energiabiztonság"
+      }
+     ]
+    },
+    {
+     "block_id": "f7496813-79cd-48af-b3d9-9e1c5b081fbb",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal, akinek a telefonja lemerült, felkapcsolja a villanyt, hogy eljusson a töltőhöz. A villanykörte fénye a villamos energia (energia) átalakulásának eredménye, amelyet fosszilis energiahordozók, például földgáz vagy szén elégetésével nyernek. Ez a folyamat energiaátalakulás, hiszen a kémiai energia hőenergiává, majd elektromos energiává alakul.",
+       "type": "story",
+       "heading": "A villanykörték fénye"
+      },
+      {
+       "body": "Miután a fiatal bedugta a töltőt, a vízmelegítő is bekapcsol. Az elektromos vízmelegítő működése során az elektromos energia (energia) hőenergiává alakul, amely felmelegíti a vizet. Ez az energiaátalakulás a háztartás energiafogyasztásának egyik példája, amelyet a számlákon is nyomon követhetünk.",
+       "type": "story",
+       "heading": "A vízmelegítő működése"
+      },
+      {
+       "body": "Miközben a vízmelegítő fűti a vizet, a fiatal felfedezi a szobában lévő rugós játékot. A rugós eszközben tárolt rugalmas energia (energia) mozgási energiává alakul, amikor a rugó kiengedi a feszültséget, és a golyó kilövésekor lendületet kap. Ez a mozgási energia példája a potenciális energia átalakulásának.",
+       "type": "story",
+       "heading": "Rugós játék"
+      },
+      {
+       "body": "A golyó egy asztal széléről lepottyan, és zuhanás közben a helyzeti energia (energia) mozgási energiává alakul. A fiatal észreveszi, hogy a golyó egyre gyorsabban mozog, ahogy közeledik a földhöz. Ez a jelenség jól mutatja, hogyan változik az energia formája a gravitáció hatására.",
+       "type": "story",
+       "heading": "Zuhanás és mozgás"
+      },
+      {
+       "body": "Miután a golyó földet ért, a fiatal a kezét dörzsöli össze, hogy felmelegítse. A mozgási energia (energia) belső energiává alakul, amikor a kezek dörzsölése hőt termel. Ez a példa a belső energia megjelenésére, valamint az energia átalakulásának mindennapi tapasztalatára mutat rá.",
+       "type": "story",
+       "heading": "A dörzsölés melege"
+      },
+      {
+       "body": "Végül a fiatal elgondolkodik az energia megmaradásának törvényén. A különböző energiák átalakulása során, legyen szó akár fosszilis energiahordozókról, zöldenergiáról vagy a napi tevékenységekről, az energia sosem vész el, csak átalakul. Ez a folyamat végigkíséri az emberiség energiafogyasztását és a rendelkezésre álló energiaforrásokat.",
+       "type": "story",
+       "heading": "Energia megmaradás"
+      }
+     ]
+    },
+    {
+     "block_id": "8566da05-e984-4679-b4fc-62facc484494",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az energiahordozók arányai a világ energiafogyasztásában.",
+       "heading": "Energiahordozók csoportosítása",
+       "description": "Egy kördiagram, amely bemutatja a fosszilis energiahordozók (szén, kőolaj, földgáz) és a zöldenergia (napenergia, szélenergia, vízenergia) arányát a globális energiafogyasztásban.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Havi energiaárak összehasonlítása különböző fűtési módszerek esetén.",
+       "heading": "Fűtési módszerek energiaárak",
+       "description": "Olyan oszlopdiagram, amely összehasonlítja a gázkonvektor és az elektromos vízmelegítő havi költségeit egy háztartásban, figyelembe véve az energiaárakat.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Rugalmas energia átalakulása mozgási energiává.",
+       "heading": "Rugalmas energia átalakulása",
+       "description": "Egy vázlat, amely bemutatja, hogyan alakul át a rugalmas energia mozgási energiává, amikor egy rugós eszközzel kilőtt golyó elindul.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Helyzeti energia átalakulása mozgási energiává zuhanás közben.",
+       "heading": "Helyzeti energia átalakulása",
+       "description": "Keresztmetszeti ábra, amely egy zuhanó testet mutat be, bemutatva a helyzeti energia mozgási energiává alakulását.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Mozgási energia belső energiává alakulása dörzsölés közben.",
+       "heading": "Mozgási energia belső energiává alakulása",
+       "description": "Egy képsorozat, amely bemutatja, hogyan dörzsöljük össze a tenyerünket, és hogyan alakul át a mozgási energia belső energiává, hőt termelve.",
+       "visual_type": "szemléltetés"
+      },
+      {
+       "type": "visual",
+       "caption": "Az erőművek energiaátalakulásának folyamata.",
+       "heading": "Erőművek energiaátalakulásai",
+       "description": "Egy folyamatábra, amely bemutatja az erőművekben zajló energiaátalakulásokat, például a kémiai energia (fosszilis tüzelőanyag) hőenergiává, majd mozgási energiává, végül elektromos energiává alakulását.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az energiamegmaradás elve zárt rendszerben.",
+       "heading": "Energiamegmaradás",
+       "description": "Olyan grafikon, amely bemutatja az energia megmaradásának elvét, ábrázolva a különböző energiaformák (pl. mozgási, helyzeti, belső) összegét egy zárt rendszerben.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az energiabiztonság fogalma és fontossága.",
+       "heading": "Energiabiztonság",
+       "description": "Egy vázlat, amely bemutatja az energiabiztonság fogalmát, beleértve a megújuló energiaforrások és energiatakarékosság szerepét.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "fd464e74-b4a3-4424-81a7-f42545036f7b",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "Ma a megújuló energiaforrások, mint a nap- és szélenergia, egyre nagyobb szerepet játszanak az energiaellátásban, és a fiatalok is gyakran találkoznak velük, például napelemeket látva otthonok tetején.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 100,
+          "w": 50,
+          "x": 50,
+          "y": 100,
+          "type": "box"
+         },
+         {
+          "x": 55,
+          "y": 150,
+          "text": "Olajfúró",
+          "type": "label"
+         },
+         {
+          "r": 30,
+          "x": 300,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 290,
+          "y": 150,
+          "text": "Földgáz",
+          "type": "label"
+         },
+         {
+          "r": 30,
+          "x": 350,
+          "y": 150,
+          "type": "circle"
+         },
+         {
+          "x": 340,
+          "y": 150,
+          "text": "Szén",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Energiaforrások felfedezése",
+       "discovery": "Az emberiség energiafogyasztása az ipari forradalom óta folyamatosan növekszik. A fosszilis tüzelőanyagok (szén, olaj, földgáz) felfedezése kulcsfontosságú volt az energiaellátásban. Az első olajfúró kutat 1859-ben Edwin Drake fúrta Pennsylvania államban, ami forradalmasította az energiaipart.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "2c1b1c06-adc6-42b2-a98b-82f5010113cb",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Kőolaj",
+        "B) Napenergia",
+        "C) Szélenergia",
+        "D) Geotermikus energia"
+       ],
+       "question": "Melyik energiahordozó tartozik a fosszilis energiahordozók közé?",
+       "explanation": "A kőolaj fosszilis energiahordozó, míg a napenergia, a szélenergia és a geotermikus energia megújuló források.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Rugalmas energia mozgási energiává alakul",
+        "B) Helyzeti energia belső energiává alakul",
+        "C) Belső energia helyzeti energiává alakul",
+        "D) Mozgási energia rugalmas energiává alakul"
+       ],
+       "question": "Milyen energiaátalakulás történik, amikor egy rugós eszközzel kilőtt golyó mozgási energiát nyer?",
+       "explanation": "A rugós eszköz tárolt rugalmas energiáját mozgási energiává alakítja, amikor a golyót kilövi.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Helyzeti energia mozgási energiává alakul",
+        "B) Mozgási energia belső energiává alakul",
+        "C) Rugalmas energia helyzeti energiává alakul",
+        "D) Belső energia mozgási energiává alakul"
+       ],
+       "question": "Mi történik, amikor egy zuhanó test mozgási energiát nyer?",
+       "explanation": "A zuhanó test helyzeti energiája mozgási energiává alakul, amikor a föld felé halad.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az anyag részecskéinek mozgásából és kölcsönhatásaiból származó energia",
+        "B) A test helyzetéből adódó energia",
+        "C) Az energia megmaradásának elve",
+        "D) A rugalmas testek deformálódásából származó energia"
+       ],
+       "question": "Mi a belső energia?",
+       "explanation": "A belső energia az anyag részecskéinek mozgásából és kölcsönhatásaiból származó energia, amely a hőmérsékletet is befolyásolja.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Energia megmaradásának elve",
+        "B) Helyzeti energia elve",
+        "C) Mozgási energia elve",
+        "D) Rugalmas energia elve"
+       ],
+       "question": "Melyik elv írja le, hogy az energia nem vész el, csak átalakul?",
+       "explanation": "Az energia megmaradásának elve állítja, hogy az energia nem vész el, csak átalakul egyik formából a másikba.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "1f967d39-f6e8-435e-817b-16fc3b07f2c2",
+   "title_hu": "Megújuló energiaforrások és energiatakarékosság",
+   "order_index": 3,
+   "blocks": [
+    {
+     "block_id": "cb7d6fa3-ff41-4f95-81f3-1b89c6bc2c7b",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A szélerőművek a szél energiáját alakítják át elektromos árammá. Amikor a szél a rotorlapátokat forgatja, az egy generátort hajt meg, ami áramot termel. Ezt az áramot felhasználhatjuk otthonainkban vagy az iparban. Például, ha egy szélerőművet látunk, ami a közeli dombon áll, tudhatjuk, hogy az ott termelt energia hozzájárul a zöldenergia (megújuló energia) előállításához.",
+       "type": "text",
+       "heading": "Szélerőművek működése",
+       "key_term": "szélerőmű"
+      },
+      {
+       "body": "A napelemek közvetlenül a napfényből nyerik az energiát, amelyet elektromos árammá alakítanak. A napkollektorok viszont a nap hőenergiáját használják fel, például vízmelegítésre. Ha valaki napelemes rendszert telepít az otthonába, jelentős energiamegtakarítást érhet el, és csökkentheti a villanyszámláját. A napelemeket gyakran látjuk tetőkön, ahol a napfény folyamatosan éri őket.",
+       "type": "text",
+       "heading": "Napelemek és napkollektorok",
+       "key_term": "napelem, napkollektor"
+      },
+      {
+       "body": "Az energiatakarékosság (energiaspórolás) fontos része a fenntartható életmódnak. Például, ha termosztátos fűtőeszközt használunk, beállíthatjuk, hogy a fűtés csak akkor működjön, amikor otthon vagyunk. Ez csökkenti a fűtési költségeinket és energiát takarít meg. Az okos termosztátok még a telefonunkról is irányíthatók, így mindig optimalizálhatjuk a fűtést.",
+       "type": "text",
+       "heading": "Energiaspórolás a mindennapokban",
+       "key_term": "energiaspórolás"
+      },
+      {
+       "body": "A hőszigetelés segít megőrizni a lakásban a meleget télen és a hűvöset nyáron. Ha jól szigetelt az otthonunk, kevesebb energiát kell felhasználnunk a fűtésre vagy a hűtésre. Például, ha a falak, ablakok és ajtók jól szigeteltek, akkor a fűtött levegő nem szökik el, így csökkenthetjük a fűtési költségeinket. Ez nemcsak pénzt takarít meg, hanem hozzájárul a környezet védelméhez is.",
+       "type": "text",
+       "heading": "Hőszigetelés fontossága",
+       "key_term": "hőszigetelés"
+      },
+      {
+       "body": "A zöldenergia (megújuló energia) forrásai közé tartozik a napenergia, szélenergia, vízenergia és biomassza. A jövőben egyre több háztartás fogja használni ezeket a forrásokat, hogy csökkentse a fosszilis energiahordozók használatát. Például az elektromos autók egyre népszerűbbek, és sok esetben napelemes töltőállomásokat használnak, hogy megújuló energiaforrásból töltsék őket.",
+       "type": "text",
+       "heading": "Zöldenergia és jövőbeli lehetőségek",
+       "key_term": "zöldenergia"
+      },
+      {
+       "body": "A környezetünkben sok energiatakarékossági lehetőség van, amelyeket könnyen megfigyelhetünk. Például a LED-izzók használata jelentősen csökkenti az áramfogyasztást a hagyományos izzókhoz képest. Továbbá, a víztakarékos csaptelepek és zuhanyfejek használata is segít csökkenteni a vízfogyasztást, ami közvetve energiatakarékosságot eredményez. Érdemes tehát figyelni a mindennapi döntéseinkre.",
+       "type": "text",
+       "heading": "Energiaspórolási lehetőségek a környezetben",
+       "key_term": "energiaspórolás"
+      }
+     ]
+    },
+    {
+     "block_id": "d97f189b-ddf0-487f-8579-0e2c97eccdea",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Egy fiatal otthonában reggel felkapcsolja a világítást, de hamarosan észreveszi, hogy a nap már felkelt, és a napfény átszűrődik az ablakokon. Ekkor jut eszébe, hogy a ház tetején napelemek (napenergia-hasznosító eszköz) találhatók, amelyek a napenergiát elektromos árammá alakítják.",
+       "type": "story",
+       "heading": "A napfény varázsa"
+      },
+      {
+       "body": "A napelemekből származó elektromos áram a ház elektromos rendszerébe jut, ahol energiát biztosít a különböző eszközöknek, például a számítógépnek és a hűtőszekrénynek. Ez a folyamat a zöldenergia (megújuló forrásból származó energia) felhasználásának egyik példája, ami csökkenti a fosszilis tüzelőanyagok használatát.",
+       "type": "story",
+       "heading": "Az áram átalakulása"
+      },
+      {
+       "body": "A fiatal észreveszi, hogy a fűtés nem szükséges, mivel a napfény felmelegítette a szobát. A termosztátos fűtőeszköz automatikusan csökkenti a fűtést, így energiatakarékosság (energiafelhasználás csökkentése) érhető el, mivel a felesleges energiafelhasználás elkerülhető.",
+       "type": "story",
+       "heading": "A hőmérséklet szabályozása"
+      },
+      {
+       "body": "A fiatal emlékszik arra, hogy a ház hőszigetelése (a hőveszteség csökkentésére szolgáló megoldás) is hozzájárul a takarékoskodáshoz. A jól szigetelt falak és ablakok megakadályozzák, hogy a meleg levegő távozzon, így a fűtés hatékonyabbá válik, és kevesebb energiát igényel.",
+       "type": "story",
+       "heading": "A hőszigetelés fontossága"
+      },
+      {
+       "body": "A nap végén a fiatal visszatekint a nap eseményeire, és rájön, hogy a napelemek által termelt energia nemcsak a világítást biztosította, hanem a fűtést is optimalizálta a termosztát és a hőszigetelés révén. Így a megújuló energiaforrások és az energiatakarékosság együtt segítettek neki a környezet kímélésében.",
+       "type": "story",
+       "heading": "Az energia megmaradása"
+      }
+     ]
+    },
+    {
+     "block_id": "358e6e11-d215-49e6-8c95-8f773f1b95e6",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "A szélerőmű működési elve",
+       "heading": "Szélerőmű működése",
+       "description": "A szélerőmű működését bemutató diagram, amely ábrázolja a szél energiájának átalakulását elektromos energiává. A szél a rotorlapátokat forgatja, ami a generátorban elektromos áramot termel.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Napelemek működése",
+       "heading": "Napelemek működése",
+       "description": "Egy vázlat, amely bemutatja, hogy a napelemek hogyan alakítják át a napfényt elektromos árammá. A napfény a napelem felületén lévő szilícium rétegeken hat, és elektronokat szabadít fel.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A napkollektor működése",
+       "heading": "Napkollektor működése",
+       "description": "A napkollektor keresztmetszete, amely bemutatja, hogyan gyűjti össze a napenergiát és alakítja át hőenergiává. A kollektor belsejében a folyadék felmelegszik, amely később fűtési célokra használható.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Termosztátos fűtés energiatakarékossága",
+       "heading": "Energiaspórolás termosztáttal",
+       "description": "Egy grafikon, amely bemutatja a termosztáttal szabályozott fűtés hatékonyságát. A termosztát automatikusan beállítja a hőmérsékletet, csökkentve ezzel az energiafogyasztást.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Hőszigetelés hatása az energiafogyasztásra",
+       "heading": "Hőszigetelés hatékonysága",
+       "description": "Egy diagram, amely bemutatja a hőszigetelés hatását a ház energiafogyasztására. A jól szigetelt ház kevesebb energiát igényel a fűtéshez és hűtéshez.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Zöldenergia források",
+       "heading": "Zöldenergia források",
+       "description": "Egy infografika, amely bemutatja a különböző megújuló energiaforrásokat, mint például a napenergia, szélenergia, vízenergia és biomassza, valamint azok előnyeit.",
+       "visual_type": "infografika"
+      },
+      {
+       "type": "visual",
+       "caption": "Energiaspórolási lehetőségek",
+       "heading": "Energiaspórolási lehetőségek",
+       "description": "Egy vázlat, amely bemutatja a különböző energiatakarékossági módszereket, mint például energiatakarékos izzók használata, háztartási gépek energiatakarékos üzemmódja, és a szigetelés javítása.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "Jövő energiaforrásai",
+       "heading": "Jövő energiaforrásai",
+       "description": "Egy diagram, amely bemutatja a jövő lehetséges energiaforrásait, mint például a hidrogénenergia, geotermikus energia és a tengeri energia. Az ábra a várható fejlődést is szemlélteti.",
+       "visual_type": "diagram"
+      }
+     ]
+    },
+    {
+     "block_id": "7b91c093-ab8e-4be0-9205-f6497eca1986",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A napkollektorokat széles körben használják háztartásokban vízmelegítésre, és a napelemek is egyre népszerűbbek az elektromos áram előállításában.",
+       "sketch": {
+        "shapes": [
+         {
+          "h": 150,
+          "w": 200,
+          "x": 100,
+          "y": 50,
+          "type": "box"
+         },
+         {
+          "x": 160,
+          "y": 120,
+          "text": "Napkollektor",
+          "type": "label"
+         },
+         {
+          "x1": 150,
+          "x2": 150,
+          "y1": 30,
+          "y2": 50,
+          "type": "arrow"
+         },
+         {
+          "x": 130,
+          "y": 20,
+          "text": "Napfény",
+          "type": "label"
+         }
+        ],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "A napenergia hasznosítása",
+       "discovery": "A napkollektorok elődje az 1891-ben szabadalmaztatott „Climax” nevű napenergiás vízmelegítő volt, amelyet az amerikai Clarence Kemp fejlesztett ki. A készülék a nap hőjét hasznosította vízmelegítésre, és ez volt az egyik első kereskedelmi forgalomba került napenergia-hasznosító eszköz.",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "008b02b3-e3e4-4374-9994-77e4156a72fa",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A szél energiáját mechanikai energiává alakítja.",
+        "B) A napfény energiáját hővé alakítja.",
+        "C) A víz áramlásának energiáját elektromos árammá alakítja.",
+        "D) A fosszilis tüzelőanyagok elégetésével termel energiát."
+       ],
+       "question": "Mi a szélerőmű (szélerőművek) működésének alapelve?",
+       "explanation": "A szélerőmű a szél energiáját mechanikai energiává alakítja, amelyet ezután elektromos árammá konvertál.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) A napfény energiáját közvetlenül elektromos árammá alakítják.",
+        "B) A hőenergiát elektromos árammá alakítják.",
+        "C) A szél energiáját mechanikai energiává alakítják.",
+        "D) A víz energiáját hővé alakítják."
+       ],
+       "question": "Milyen alapelven működnek a napelemek?",
+       "explanation": "A napelemek a napfény energiáját közvetlenül elektromos árammá alakítják a fotovoltaikus hatás révén.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "B",
+       "options": [
+        "A) Elektromos áramot termelni a napfényből.",
+        "B) A napenergiát hővé alakítani.",
+        "C) A szél energiáját elektromos árammá alakítani.",
+        "D) A fosszilis tüzelőanyagok elégetésével hőt termelni."
+       ],
+       "question": "Mi a napkollektor (napkollektorok) feladata?",
+       "explanation": "A napkollektorok a napenergiát hővé alakítják, amelyet fűtésre vagy meleg víz előállítására használnak.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Termosztátos fűtőeszköz használata.",
+        "B) Folyamatosan nyitott ablakok fenntartása.",
+        "C) Az elektromos készülékek folyamatos használata.",
+        "D) A hőszigetelés eltávolítása."
+       ],
+       "question": "Melyik megoldás segít az energiatakarékosságban?",
+       "explanation": "A termosztátos fűtőeszköz használata lehetővé teszi a hőmérséklet szabályozását, így csökkentve az energiafogyasztást.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Megújuló forrásokból származó energia.",
+        "B) Fosszilis tüzelőanyagokból nyert energia.",
+        "C) Nukleáris energia.",
+        "D) Szénhidrogének elégetésével nyert energia."
+       ],
+       "question": "Mi a zöldenergia (zöld energia) fogalma?",
+       "explanation": "A zöldenergia megújuló forrásokból származó energia, amely környezetbarát módon termelődik.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "lesson_id": "41bf09a9-8c8f-47f3-905a-23bcc1379bae",
+   "title_hu": "Táplálkozás és energiaegyensúly",
+   "order_index": 4,
+   "blocks": [
+    {
+     "block_id": "7fdc02be-a616-4825-bec5-ead2837d3d8a",
+     "mode": "text",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "Az emberi szervezet számára az energiafogyasztás és az energia bevitelének egyensúlya alapvető fontosságú. Ha többet eszünk, mint amennyit elégetünk, akkor a felesleges energia zsír formájában raktározódik el. Ezért fontos tudni, hogy az élelmiszerek energiatartalma mennyi kalóriát (kcal) jelent, ami segít a tudatos táplálkozásban. Például egy pizza, ami 800 kcal, jelentős energiaforrást jelent, de ha naponta többször is ilyet eszünk, könnyen túlléphetjük az ajánlott napi energiaszükségletünket.",
+       "type": "text",
+       "heading": "Az energiafogyasztás és bevitel egyensúlya",
+       "key_term": "energiafogyasztás, energia bevitel"
+      },
+      {
+       "body": "Az energiabiztonság fogalma a táplálkozásban is megjelenik. Ez azt jelenti, hogy a megfelelő mennyiségű és minőségű táplálék mindig elérhető legyen. A mai világban, amikor sokan élnek gyorséttermi étkezésből, fontos, hogy figyeljünk az ételek energiatartalmára. Ha például egy gyorsétteremben választunk, érdemes megnézni az ételek kalóriaértékét, hogy tudatosan válasszunk, és ne csak ízlés alapján döntsünk.",
+       "type": "text",
+       "heading": "Energiabiztonság a mindennapokban",
+       "key_term": "energiabiztonság"
+      },
+      {
+       "body": "A táplálkozási problémák, mint az elhízás vagy a táplálkozási zavarok, gyakran az energiafogyasztás és -bevitel egyensúlyának felborulásából adódnak. Például, ha valaki rendszeresen nassol és nem mozog eleget, az könnyen túlsúlyhoz vezethet. A fizikai aktivitás, mint a sportolás vagy a tánc, segít az energiafelhasználás növelésében, így fontos, hogy a fiatalok ezt beiktassák a mindennapjaikba.",
+       "type": "text",
+       "heading": "A táplálkozási problémák fizikai háttere",
+       "key_term": "táplálkozási problémák"
+      },
+      {
+       "body": "A fosszilis energia, mint a szén és a kőolaj, nemcsak az iparban, hanem az élelmiszertermelésben is jelentős szerepet játszik. Például a mezőgazdasági gépek üzemeltetéséhez szükséges üzemanyagok és a mesterséges trágyák előállítása mind fosszilis energia felhasználásával történik. Az élelmiszerek szállítása is sok energiát igényel, amely szintén fosszilis forrásokból származik. Ezért fontos, hogy a fenntartható táplálkozásra törekedjünk, és támogassuk a helyi termelést.",
+       "type": "text",
+       "heading": "Fosszilis energia a táplálkozásban",
+       "key_term": "fosszilis energia"
+      },
+      {
+       "body": "Az energiafelhasználásunk elemzése segíthet jobban megérteni, hogy mennyi energiát használunk el naponta. Például, ha naponta 30 percet biciklizek, akkor az körülbelül 200 kcal-t éget el, ami segíthet a napi energiaszükségletünk egyensúlyban tartásában. Érdemes nyomon követni, hogy a napi tevékenységeink mennyi energiát igényelnek, és ezeket összevetni az ételeink energiatartalmával, hogy tudatosabb döntéseket hozhassunk.",
+       "type": "text",
+       "heading": "Az energiafelhasználás elemzése",
+       "key_term": "energiafelhasználás"
+      }
+     ]
+    },
+    {
+     "block_id": "08cb4c3b-2fd8-41e7-9062-f6dd02610cd0",
+     "mode": "story",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "body": "A nap felkeltével egy tizenéves fiatal előveszi a napját, és először is reggelit készít. A tányéron egy tál müzli áll, amely tele van különféle gabonafélékkel és gyümölcsökkel. Ezek az élelmiszerek jelentős energiatartalommal bírnak, hiszen a gabonafélék szénhidrátokat tartalmaznak, amelyek az emberi szervezet számára azonnali energiaforrást biztosítanak.",
+       "type": "story",
+       "heading": "Az energiafogyasztás kezdete"
+      },
+      {
+       "body": "Miután elfogyasztotta a reggelit, a fiatal elindul az iskolába. Az energiát, amit a müzliből nyert, most a gyaloglásra és a tanulásra használja fel. Az emberi test a bevitt tápanyagokat, mint a szénhidrátokat, zsírokat és fehérjéket, energiává alakítja át, amelyet ATP (adenozin-trifoszfát) formájában tárol. Ez az energia szükséges a sejtek működéséhez és a fizikai aktivitáshoz.",
+       "type": "story",
+       "heading": "Az energiafelhasználás"
+      },
+      {
+       "body": "A nap végén, miután a fiatal hazatér, a kérdés az, hogy mennyi energiát fogyasztott el és mennyit vitt be. Az energiaegyensúly azt jelenti, hogy a bevitt kalóriák (energia) és a felhasznált kalóriák (energia) aránya egyensúlyban van. Ha több kalóriát visz be, mint amennyit felhasznál, az energiafelesleg zsírrá alakulhat, ami táplálkozási problémákhoz vezethet.",
+       "type": "story",
+       "heading": "Az energiaegyensúly"
+      },
+      {
+       "body": "A fiatal gondolkodik az energiafogyasztásról és arról, hogy a modern világban az energiabiztonság mennyire fontos. Az energiahordozók, mint például a fosszilis energiaforrások, mint a szén és a kőolaj, nemcsak a közlekedéshez és az iparhoz szükségesek, hanem közvetve az élelmiszertermeléshez is. A táplálkozás és az energiafelhasználás összekapcsolódik, hiszen a fenntartható energiaforrások használata elengedhetetlen a jövő generációi számára.",
+       "type": "story",
+       "heading": "Energiabiztonság és fosszilis energia"
+      },
+      {
+       "body": "A fiatal elhatározza, hogy tudatosabban fog táplálkozni. Megtanulja, hogy az élelmiszerek energiatartalmát figyelembe kell venni, és az arányokat ismerve képes lesz egyensúlyt tartani. Így nemcsak az egészségét, hanem a környezetét is védi, hiszen a fenntartható energiaforrások választása segíthet csökkenteni a fosszilis energiahordozók iránti keresletet.",
+       "type": "story",
+       "heading": "A tudatos táplálkozás"
+      }
+     ]
+    },
+    {
+     "block_id": "840975a0-6517-4978-b5e4-aa73a2caffc7",
+     "mode": "visual",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "visual",
+       "caption": "Az energiafogyasztás és bevitel egyensúlyának szemléltetése.",
+       "heading": "Energiafogyasztás és bevitel egyensúlya",
+       "description": "Egy kördiagram, amely bemutatja az energiafogyasztás és az energiabevitel arányát. Az energiafogyasztás részét a napi aktivitások (pl. munka, sport) energiaigénye, míg az energiabevitel részét az ételek energiatartalma alkotja.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "Az élelmiszerek energiatartalmának összehasonlítása.",
+       "heading": "Élelmiszerek energiatartalma",
+       "description": "Olyan oszlopdiagram, amely különböző élelmiszerek energiatartalmát (kcal) mutatja be 100 g-ra vonatkoztatva. Például: csokoládé, zöldségek, hús, gyümölcsök.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az energiabiztonság és a fenntartható táplálkozás kapcsolata.",
+       "heading": "Energiabiztonság",
+       "description": "Egy vázlat, amely bemutatja az energiabiztonság fogalmát, beleértve a helyi élelmiszertermelést, a fenntarthatóságot és a fosszilis energiaforrások csökkentését.",
+       "visual_type": "vázlat"
+      },
+      {
+       "type": "visual",
+       "caption": "A fosszilis energiaforrások kitermelésének folyamata.",
+       "heading": "Fosszílis energiaforrások",
+       "description": "Egy keresztmetszeti ábra, amely bemutatja a fosszilis energiaforrások (pl. szén, olaj, földgáz) kitermelésének és felhasználásának folyamatát, valamint a környezeti hatásait.",
+       "visual_type": "keresztmetszet"
+      },
+      {
+       "type": "visual",
+       "caption": "Az energiafelhasználás különböző állapotokban.",
+       "heading": "Az emberi szervezet energiafelhasználása",
+       "description": "Egy vonaldiagram, amely az emberi szervezet energiafelhasználását mutatja különböző állapotokban (pl. nyugalmi állapot, fizikai aktivitás, alvás) és az ezekhez szükséges kalóriaértékeket.",
+       "visual_type": "grafikon"
+      },
+      {
+       "type": "visual",
+       "caption": "Az energiaegyensúly hatásai a testsúlyra.",
+       "heading": "Energiaegyensúly",
+       "description": "Egy egyszerű ábra, amely az energiaegyensúly fogalmát szemlélteti, bemutatva, hogy ha az energiafogyasztás meghaladja az energiabevitelt, akkor a testsúly csökken, míg ha az energiabevitel meghaladja a fogyasztást, akkor a testsúly nő.",
+       "visual_type": "diagram"
+      },
+      {
+       "type": "visual",
+       "caption": "A táplálkozási problémák és azok következményei.",
+       "heading": "Táplálkozási problémák",
+       "description": "Egy vázlat, amely bemutatja a táplálkozási problémák (pl. elhízás, alultápláltság) okait és következményeit, valamint a helyes táplálkozás fontosságát.",
+       "visual_type": "vázlat"
+      }
+     ]
+    },
+    {
+     "block_id": "44f4fa90-87e8-4291-8f24-919fb34981bc",
+     "mode": "experiment",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "experiment",
+       "today": "A diákok a napi táplálkozásuk során találkoznak az energiaegyensúllyal, amikor eldöntik, hogy mennyi kalóriát fogyasztanak el, és mennyit égetnek el a mozgás során.",
+       "sketch": {
+        "shapes": [],
+        "viewBox": "0 0 400 300"
+       },
+       "heading": "Energiafogyasztás a mindennapokban",
+       "discovery": "",
+       "try_basic": "",
+       "try_advanced": ""
+      }
+     ]
+    },
+    {
+     "block_id": "35c5657a-fb31-4200-8d07-8c0eff17960e",
+     "mode": "quiz",
+     "scope": "lesson",
+     "level": "alap",
+     "is_active": true,
+     "content": [
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az energiafogyasztás és az energiabevitel egyenlősége.",
+        "B) Az energiafogyasztás mindig meghaladja az energiabevitelt.",
+        "C) Az energiabevitel mindig meghaladja az energiafogyasztást.",
+        "D) Az energiafogyasztás és az energiabevitel közötti különbség."
+       ],
+       "question": "Mi az energiaegyensúly?",
+       "explanation": "Az energiaegyensúly akkor áll fenn, ha az emberi szervezet által felhasznált energia megegyezik a bevitt energiával.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Az élelmiszerek energiatartalma kalóriában (kcal) mérhető.",
+        "B) Az élelmiszerek energiatartalma mindig azonos.",
+        "C) Az energiatartalom nem befolyásolja a táplálkozást.",
+        "D) Az energiatartalom csak a szénhidrátokra vonatkozik."
+       ],
+       "question": "Melyik állítás jellemző az energiatartalomra?",
+       "explanation": "Az élelmiszerek energiatartalmát kalóriában (kcal) mérjük, ami segít megérteni a táplálkozás hatását az energiaegyensúlyra.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Olyan energiaforrás, amely szénből, olajból vagy földgázból származik.",
+        "B) Olyan energiaforrás, amely megújuló.",
+        "C) Olyan energia, amelyet az emberi test állít elő.",
+        "D) Olyan energia, amely kizárólag elektromos formában létezik."
+       ],
+       "question": "Mi a fosszilis energia?",
+       "explanation": "A fosszilis energia olyan energiaforrás, amely szénből, olajból vagy földgázból származik, és jelentős szerepet játszik a világ energiaellátásában.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Túlsúlyhoz és egészségi problémákhoz vezethet.",
+        "B) Nincs hatással az energiaegyensúlyra.",
+        "C) Csökkenti az energiafogyasztást.",
+        "D) Növeli az energiafelhasználást."
+       ],
+       "question": "Milyen hatással van a túlfogyasztás az energiaegyensúlyra?",
+       "explanation": "A túlfogyasztás az energiaegyensúly felborulását okozza, ami túlsúlyhoz és különböző egészségi problémákhoz vezethet.",
+       "question_type": "multiple_choice"
+      },
+      {
+       "type": "quiz",
+       "correct": "A",
+       "options": [
+        "A) Mert biztosítja az emberek folyamatos energiaellátását.",
+        "B) Mert csökkenti az energiafogyasztást.",
+        "C) Mert növeli a fosszilis energiaforrások használatát.",
+        "D) Mert elengedhetetlen a táplálkozási szokások megváltoztatásához."
+       ],
+       "question": "Miért fontos az energiabiztonság?",
+       "explanation": "Az energiabiztonság biztosítja, hogy az emberek folyamatosan hozzáférjenek az energiához, ami alapvető az életminőséghez és a gazdasági fejlődéshez.",
+       "question_type": "multiple_choice"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "topic_blocks": [
+  {
+   "block_id": "d3b20c23-21ce-4e5b-92a4-d08927615237",
+   "mode": "quiz",
+   "scope": "topic",
+   "level": "alap",
+   "is_active": true,
+   "content": [
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az energia időegység alatti felhasználása",
+      "B) Az energiahordozók mennyisége",
+      "C) A hőmérséklet változása",
+      "D) Az erő és a távolság szorzata"
+     ],
+     "question": "Mi a teljesítmény (P) definíciója az energiafogyasztás meghatározásában?",
+     "explanation": "A teljesítmény az energia időegység alatti felhasználását jelenti, ami fontos az energiafogyasztás megértésében.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Hűtőszekrény",
+      "B) Mosógép",
+      "C) Elektromos vízmelegítő",
+      "D) Televízió"
+     ],
+     "question": "Melyik háztartási eszköz a legnagyobb energiafogyasztó általában?",
+     "explanation": "Az elektromos vízmelegítők általában a legnagyobb energiafogyasztók közé tartoznak a háztartásban.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Napenergia",
+      "B) Szén",
+      "C) Szélenergia",
+      "D) Biogáz"
+     ],
+     "question": "Melyik energiahordozó tartozik a fosszilis energiaforrások közé?",
+     "explanation": "A szén fosszilis energiahordozónak számít, míg a napenergia és a szélenergia megújuló források.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Kizárólag fosszilis tüzelőanyagokból származik",
+      "B) Megújuló és környezetbarát forrásokból származik",
+      "C) Kizárólag elektromos áramot jelent",
+      "D) Nem befolyásolja a klímaváltozást"
+     ],
+     "question": "Mi jellemzi a zöldenergia fogalmát?",
+     "explanation": "A zöldenergia megújuló forrásokból származik, és környezetbarát megoldásokat kínál.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Helyzeti energia mozgási energiává",
+      "B) Rugalmas energia mozgási energiává",
+      "C) Belső energia mozgási energiává",
+      "D) Hőenergia mozgási energiává"
+     ],
+     "question": "Milyen energiaátalakulás történik, amikor egy rugós eszközzel kilőtt golyó mozgási energiává alakul?",
+     "explanation": "A rugós eszközben tárolt rugalmas energia alakul át mozgási energiává, amikor a golyó elindul.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Mozgási energia helyzeti energiává",
+      "B) Helyzeti energia mozgási energiává",
+      "C) Rugalmas energia belső energiává",
+      "D) Belső energia hőenergiává"
+     ],
+     "question": "Milyen energiaátalakulás történik egy zuhanó test esetében?",
+     "explanation": "A zuhanó testnél a helyzeti energia mozgási energiává alakul, ahogy a test lefelé halad.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Az energiafogyasztás növelését",
+      "B) Az energiahatékonyság javítását és a fogyasztás csökkentését",
+      "C) Az energiahordozók mennyiségének növelését",
+      "D) Az energiahordozók árával való spekulációt"
+     ],
+     "question": "Mi jellemzi az energiatakarékosság fogalmát?",
+     "explanation": "Az energiatakarékosság célja az energiahatékonyság javítása és a fogyasztás csökkentése.",
+     "question_type": "multiple_choice"
+    },
+    {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hőszigetelés",
+      "B) Elektromos vízmelegítő",
+      "C) Földgáz",
+      "D) Szén"
+     ],
+     "question": "Melyik energiatakarékossági lehetőség segíti a fűtés hatékonyságát?",
+     "explanation": "A hőszigetelés csökkenti a hőveszteséget, így javítja a fűtés hatékonyságát.",
+     "question_type": "multiple_choice"
+    }
+   ]
+  }
+ ]
+}

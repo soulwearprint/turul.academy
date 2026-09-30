@@ -1,0 +1,256 @@
+{
+ "nat_id": "PHYS-910-11",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "ae5179e9-59d1-4e2c-bf01-96442e30e64c",
+   "title_hu": "Mechanikai hullámok megfigyelése és jellemzése",
+   "text_block_id": "54d25b3a-74c7-4e03-931f-eabc67cf3061",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Hogyan terjed a hang?",
+     "body": "A hanghullám longitudinális mechanikai hullám: a levegő részecskéi a terjedés irányában sűrűsödnek és ritkulnak. A hang sebessége levegőben kb. 331 + 0,6 · T m/s (T a Celsius-fok), tehát 20 °C-on 343 m/s, vízben kb. 1480 m/s, acélban kb. 5000 m/s. Ha egy kiáltás visszhangja 1,7 s múlva érkezik vissza, a fal távolsága d = 343 · 1,7 : 2 ≈ 290 m, mert a hang oda-vissza utat tesz meg. Vákuumban nincs hang, mert nincs közeg, amelyben a rezgés továbbterjedhetne.",
+     "did_you_know": "Az űrben nincs hang: az űrfilmek robbanásait valójában nem hallhatnánk.",
+     "think": "Mennyi idő alatt ér el a hang 686 m távolságot 343 m/s sebességgel?",
+     "think_answer": "t = s : v = 686 : 343 = 2 s."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Frekvencia és hullámhossz",
+     "body": "A hangmagasságot a frekvencia határozza meg, a hullámhossz ebből adódik: λ = v : f. Az 1 másodperc alatt lejátszódó rezgések száma a frekvencia. Az a¹ hang 440 Hz-es, ezért 343 m/s sebességnél λ = 343 : 440 ≈ 0,78 m. Egy gitár mélyebb E-húrja (82 Hz) hullámhossza kb. 4,2 m. A hullámhossz a közegtől is függ: vízben, ahol a hang sebessége nagyobb, ugyanaz a hang hosszabb hullámhosszú. A frekvencia viszont közeg-független, mert a forrás szabja meg.",
+     "did_you_know": "",
+     "think": "Mekkora a hullámhossza a 440 Hz-es hangnak, ha a terjedési sebesség 343 m/s?",
+     "think_answer": "λ = v : f = 343 : 440 ≈ 0,78 m."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Miért halkul a hang a távolsággal?",
+     "body": "Egy pontforrás hangja szabad térben minden irányba szétterjed, így az intenzitás a távolság négyzetével fogy: kétszeres távolságban az intenzitás negyedére csökken, ez kb. 6 dB csökkenés. Ez a szétterülés miatti gyengülés a távolság hatása. A csillapodás ezen felül azt jelenti, hogy a hullám energiája hővé alakul a közegben. A decibelskálán 10 dB különbség tízszeres, 3 dB kb. kétszeres intenzitást jelent.",
+     "did_you_know": "",
+     "think": "Mennyivel csökken a hang intenzitása, ha a távolságot megkétszerezzük (pontforrás, szabad tér)?",
+     "think_answer": "Negyedére csökken, mert az intenzitás a távolság négyzetével fordítottan arányos."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Hogyan szól a húr?",
+     "body": "A két végén rögzített húron állóhullám alakul ki. Az alaprezgésnél a húr hossza fél hullámhossz, így f₁ = v : (2L), ahol v a húrban terjedő hullám sebessége. Ha L = 0,65 m és v = 107 m/s, f₁ = 107 : 1,3 ≈ 82 Hz. A csomópontok a nyugvó pontok, a duzzadóhelyek a legnagyobb kitérésű helyek. Ha a húr hosszát felére csökkentjük (a húr megfogásával), a frekvencia kétszeres lesz, vagyis egy oktávval magasabb hangot kapunk. Így szól a 12. bundnál a gitár.",
+     "did_you_know": "",
+     "think": "Mi történik a hangmagassággal, ha a húr hosszát felezzük?",
+     "think_answer": "A frekvencia kétszeres lesz, így a hang egy oktávval magasabb."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Miért különböznek a hangszerek húrjai?",
+     "body": "A húr frekvenciája függ a húr hosszától, a feszítőerőtől és a lineáris tömegsűrűségtől: f = (1 : 2L) · √(F : μ). Erősebb feszítéssel a hang magasabb, vastagabb húrral (nagyobb μ) mélyebb. Ezért vastagabbak a zongora és a gitár mély húrjai. A hangszertest, például a gitár teste vagy a hegedű hangszekrénye a húr rezgését a levegőnek adja át, így lesz hangosabb a hang. A hangolás a feszítést változtatja.",
+     "did_you_know": "",
+     "think": "Miért vastagabbak a hangszerek mélyebb hangú húrjai?",
+     "think_answer": "Mert a nagyobb tömegsűrűségű húrban kisebb a hullámsebesség, ezért kisebb a frekvencia."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Mennyi a sok?",
+     "body": "A hangosságot decibelben (dB) mérik. A halk beszélgetés kb. 60 dB, forgalmas út 70–80 dB, egy koncert 100 dB fölött lehet. Napi 8 órán át tartó, 85 dB fölötti zaj tartósan károsíthatja a hallást. A zajszigetelő anyagok a hanghullámok energiáját elnyelik vagy visszaverik, a növényzet pedig kevéssé, de csökkenti a városi zajt, inkább pszichológiailag. A legjobb módszer a zajforrás csökkentése.",
+     "did_you_know": "",
+     "think": "Hányszoros az intenzitásbeli különbség 10 dB eltérés esetén?",
+     "think_answer": "Tízszeres."
+    }
+   ]
+  },
+  {
+   "lesson_id": "39a8163a-b85d-4de6-a440-26a68dee2882",
+   "title_hu": "Elektromágneses hullámok és alkalmazásaik",
+   "text_block_id": "689b37fa-9f81-47ad-b6d8-bbb71fdfc6a1",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Az elektromágneses hullám",
+     "body": "Az elektromágneses hullámban az elektromos és a mágneses tér egymásra és a terjedés irányára is merőlegesen rezeg. Vákuumban a sebességük c = 299 792 458 m/s ≈ 3 · 10⁸ m/s. A Nap fénye 150 millió km-t tesz meg, ehhez t = 1,5 · 10¹¹ : 3 · 10⁸ = 500 s, vagyis kb. 8,3 perc kell. A spektrum a rádióhullámoktól a mikrohullámokon, infravörösön, látható fényen, ultraibolyán és röntgensugárzáson át a gammasugárzásig terjed. Az eltérő tartományok között csak a frekvencia (és a hullámhossz) különbözik.",
+     "did_you_know": "A fénysebesség pontos értéke 299 792 458 m/s; a méter definíciója is erre épül.",
+     "think": "Mennyi idő alatt ér a Napból a fény a Földre?",
+     "think_answer": "Kb. 500 s, azaz 8,3 perc."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Számoljunk hullámhosszt",
+     "body": "A v = f · λ összefüggésből λ = c : f. A Wi-Fi 2,4 GHz-en λ = 3 · 10⁸ : 2,4 · 10⁹ = 0,125 m = 12,5 cm, az 5 GHz-es Wi-Fi hullámhossza kb. 6 cm. Az FM-rádió 100 MHz-en λ = 3 m, a 900 MHz-es mobiljelé kb. 33 cm. A nagyobb frekvencia rövidebb hullámhosszt jelent, és egy hullám általában annál jobban „elhajlik” az akadályok körül, minél hosszabb a hullámhossza. Ezért jut át a rádióhullám könnyebben az épületek között, mint a 5G-hez használt milliméteres hullám.",
+     "did_you_know": "",
+     "think": "Mekkora a hullámhossza a 100 MHz-es FM-rádióadásnak?",
+     "think_answer": "λ = 3 · 10⁸ : 10⁸ = 3 m."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A csoki, a sütő és a fénysebesség",
+     "body": "A mikrohullámú sütő 2,45 GHz frekvenciájú hullámot állít elő, amelynek hullámhossza λ = 3 · 10⁸ : 2,45 · 10⁹ ≈ 12,2 cm. A sütő fémfalai között állóhullám alakul ki, és a csomópontoknál a mező gyenge, a duzzadóhelyeknél erős. Két szomszédos duzzadóhely (az olvadt foltok) távolsága λ : 2 ≈ 6 cm. Ha forgótányér nélkül melegítünk egy csokoládét, és a foltok távolságát megmérjük, a hullám sebességét c = 2 · d · f módon kiszámíthatjuk: 2 · 0,061 · 2,45 · 10⁹ ≈ 3 · 10⁸ m/s. A sütőt üresen soha ne kapcsoljuk be.",
+     "did_you_know": "",
+     "think": "Az olvadt foltok távolsága 6,1 cm, a frekvencia 2,45 GHz. Mekkora a hullám sebessége?",
+     "think_answer": "c = 2 · 0,061 · 2,45 · 10⁹ ≈ 3 · 10⁸ m/s."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Az infrakamera",
+     "body": "Minden test sugároz, és a sugárzás jellemző hullámhossza a hőmérséklettől függ. A szobahőmérsékletű tárgyak és az emberi test (kb. 310 K) sugárzása 10 μm körüli hullámhosszú infravörös. Az infrakamera nem hőt mér, hanem ezt a sugárzást, és a felületi hőmérsékletet becsüli belőle. Az üveg a hosszú hullámú infravörös sugárzást nem engedi át, ezért az ablak mögött álló embert az infrakamera nem látja jól, csak az üveg felületét. Épületeknél a hőhidakat, a hiányos szigetelést lehet vele megkeresni.",
+     "did_you_know": "",
+     "think": "Miért nem látszik jól az infrakamerán az ablaküveg mögött álló ember?",
+     "think_answer": "Mert az üveg a hosszú hullámú infravörös sugárzást nem engedi át."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A röntgen és az elnyelés",
+     "body": "Röntgen 1895 novemberében fedezte fel az X-sugárzást. A röntgensugárzás hullámhossza 0,01–10 nm körüli, a fotonok energiája nagy, ezért képes áthatolni a testen. A csontok azért látszanak világosan, mert a kalciumot tartalmazó szövet több sugárzást nyel el, mint a lágy szövetek, így kevesebb éri a detektort. Egy mellkasröntgen sugárterhelése kb. 0,1 mSv, ami nagyjából két hét természetes háttérsugárzásnak felel meg, ezért a felesleges vizsgálatokat kerülni kell. Az iparban a hegesztési varratokat is ellenőrzik vele.",
+     "did_you_know": "",
+     "think": "Miért látszanak világosan a csontok a röntgenfelvételen?",
+     "think_answer": "Mert a csontok több röntgensugárzást nyelnek el, mint a lágy szövetek, így kevesebb jut el a detektorhoz."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "AM és FM",
+     "body": "A rádió úgy továbbít hangot, hogy a hangjelet egy nagyfrekvenciás vivőhullámra ültetik. Amplitúdómodulációnál (AM) a vivő amplitúdója, frekvenciamodulációnál (FM) a frekvenciája változik a hang ütemében. Az FM-adások az 87,5–108 MHz sávban vannak, és kevésbé zajérzékenyek, mint az AM-adások. A földi digitális televíziózás (DVB-T) a képet és a hangot digitálisan kódolja, a tévé pedig dekódolja.",
+     "did_you_know": "",
+     "think": "Mi a különbség az AM és az FM között?",
+     "think_answer": "Az AM-nél a vivőhullám amplitúdója, az FM-nél a frekvenciája változik a hangjel szerint."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "A mobilhálózat felépítése",
+     "body": "A mobilhálózat cellákra van osztva, minden cellában egy bázisállomás van. A frekvenciák korlátozottak, ezért a szomszédos cellák különböző frekvenciákat használnak, a távolabbiak viszont újrahasználhatják. A mobilok legnagyobb kimenő teljesítménye a régebbi GSM-nél 2 W, a 4G/5G-nél 0,2 W körüli. A mobiltelefon antennája jellemzően a hullámhossz negyede: 900 MHz-en 33 : 4 ≈ 8 cm. Az 5G-hez alacsony és közepes frekvenciákat (Magyarországon például 3,4–3,8 GHz) is használnak.",
+     "did_you_know": "",
+     "think": "Miért osztják cellákra a mobilhálózatot?",
+     "think_answer": "Mert a frekvenciák korlátozottak, és a távoli cellákban ugyanazok a frekvenciák újra felhasználhatók."
+    }
+   ]
+  },
+  {
+   "lesson_id": "ffb938a0-094d-42ad-807a-210e8fccd49b",
+   "title_hu": "Interferencia és holográfia",
+   "text_block_id": "094b3072-85af-45c8-a00f-6bfbb7ab0c7f",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Erősítés és kioltás",
+     "body": "Két hullám találkozásakor az amplitúdók összeadódnak. Ha az útkülönbség a hullámhossz egész számú többszöröse (k · λ), erősítés van, ha fél hullámhossz páratlan többszöröse ((k + ½) · λ), kioltás. Az ellenfázisú, azonos amplitúdójú hullámok teljesen kioltják egymást. Ezt használják a zajszűrős fejhallgatók: mikrofonnal mérik a külső zajt, és annak ellentétes fázisú hangját játsszák be. A tó felületén két kőből induló körhullámok találkozásánál is látható erősödő és gyengülő helyek.",
+     "did_you_know": "",
+     "think": "Mi történik, ha két azonos amplitúdójú, ellentétes fázisú hullám találkozik?",
+     "think_answer": "Kioltják egymást."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A kétréses kísérlet",
+     "body": "Egyetlen vékony rés esetén a fény elhajlik, kétréses elrendezésben pedig a két résből induló hullámok interferálnak. Thomas Young 1801 körül végzett ilyen kísérletet, és ez bizonyította a fény hullámtermészetét. A sötét és világos sávok távolsága y = λ · L : d, ahol d a rések távolsága, L az ernyő távolsága. Ha λ = 650 nm (vörös lézer), d = 0,1 mm, L = 2 m, akkor y = 650 · 10⁻⁹ · 2 : 10⁻⁴ = 0,013 m = 13 mm. Lézerrel dolgozva soha ne nézzünk bele a sugárba, és ne irányítsuk emberre vagy állatra.",
+     "did_you_know": "",
+     "think": "Mekkora a sávok távolsága, ha λ = 650 nm, d = 0,1 mm, L = 2 m?",
+     "think_answer": "y = λ · L : d = 650 · 10⁻⁹ · 2 : 10⁻⁴ = 13 mm."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A hologram rögzítése",
+     "body": "A hologram elkészítéséhez egy lézernyalábot kettéosztanak. Az egyik nyaláb a tárgyat világítja meg, és a visszavert fény jut a fényérzékeny lemezre (tárgynyaláb), a másik nyaláb közvetlenül a lemezre esik (referencianyaláb). A lemezen a két nyaláb interferenciamintázata rögzül, és ebben nemcsak a fény erőssége, hanem a fázisa is benne van. Ezért látszik a hologram térhatásúnak. Megvilágítva a lemez rekonstruálja az eredeti hullámfrontot. A hologram egy letört darabja is a teljes képet mutatja, csak kisebb felbontással.",
+     "did_you_know": "",
+     "think": "Miben más a hologram, mint a fénykép?",
+     "think_answer": "A fénykép csak a fény erősségét rögzíti, a hologram az interferenciaminta révén a fázist is, ezért térhatású a kép."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Gábor Dénes útja",
+     "body": "Gábor Dénes 1900-ban született Budapesten, és Londonban halt meg 1979-ben. 1947-ben, a Rugby-ben működő British Thomson-Houston cégnél az elektronmikroszkóp képminőségének javításán dolgozva találta fel a holográfiát. A gyakorlati hologramokhoz azonban koherens fény kellett, ilyen csak a lézer 1960-as feltalálása után állt rendelkezésre. Az első lézeres hologramokat 1963 körül készítették. Gábor Dénes a felfedezéséért 1971-ben fizikai Nobel-díjat kapott.",
+     "did_you_know": "",
+     "think": "Miért nem terjedt el 1947 után azonnal a holográfia?",
+     "think_answer": "Mert nem volt koherens fényforrás; a lézert csak 1960-ban találták fel."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Igazi és nem igazi hologram",
+     "body": "A bankkártyák, bankjegyek és igazolványok hologramjai domború (dombornyomott) hologramok, amelyeket sima fényben is látunk, és nehéz hamisítani őket. A „hologramos” koncerteken látható virtuális előadók viszont általában nem valódi hologramok, hanem a Pepper-szellem nevű optikai trükkel kivetített képek: egy ferdén álló átlátszó lapról visszavert kép, amelyet John Pepper és Henry Dircks mutatott be 1862-ben. Az igazi hologramnál interferenciamintázat rögzíti a fényt. Ha egy kép nem interferenciából jön létre, akkor nem hologram.",
+     "did_you_know": "",
+     "think": "Miért nem igazi hologram a „hologramos” koncert?",
+     "think_answer": "Mert egy átlátszó felületről visszavert képet használnak (Pepper-szellem), nem interferenciamintázatot."
+    }
+   ]
+  },
+  {
+   "lesson_id": "89117c4b-47fb-4849-b2e5-304954f7a086",
+   "title_hu": "Mobiltelefon használatának hatásai",
+   "text_block_id": "4be07cc3-ca3a-4631-9d37-eff255a1f751",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mekkora antenna kell?",
+     "body": "A mobiltelefon rádióhullámokat sugároz és fogad. A GSM 900 MHz-es tartományában a hullámhossz λ = 3 · 10⁸ : 9 · 10⁸ ≈ 33 cm. Az antenna gyakran negyed hullámhossz hosszú, tehát kb. 8 cm, ezért van az antenna a telefon belsejében. A kimenő teljesítmény GSM-nél legfeljebb 2 W, 4G-nél és 5G-nél tipikusan 0,2 W, ennél többet nem sugározhat. A telefonok a jelet mikrohullámú tartományban (0,7–3,8 GHz) adják, ez ugyanaz a fajta hullám, mint a mikrohullámú sütőé, csak sokkal kisebb teljesítménnyel.",
+     "did_you_know": "",
+     "think": "Mekkora a negyed hullámhossznyi antenna hossza 900 MHz-en?",
+     "think_answer": "λ = 33 cm, tehát a negyede kb. 8 cm."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Mit mond a tudomány a sugárzásról?",
+     "body": "A mobiltelefon nem ionizáló sugárzást használ: a rádióhullámok fotonjainak energiája túl kicsi ahhoz, hogy kötéseket szakítson fel, vagy elektront szakítson ki az atomból. Az ismert hatás a szövetek enyhe melegedése. A telefonokra vonatkozó határérték a fejre 2 W/kg (SAR). A WHO és az ICNIRP álláspontja szerint az eddigi bizonyítékok alapján a határértéket betartó telefonok sugárzása nem okoz igazolt egészségkárosodást. Az IARC 2011-ben a rádiófrekvenciás sugárzást a „lehetséges rákkeltő” (2B) csoportba sorolta a bizonytalan bizonyítékok miatt. Ugyanebbe a csoportba tartozik például a savanyított zöldség is, ami a kategória gyenge bizonyítottságát mutatja. A kutatás tovább folytatódik.",
+     "did_you_know": "",
+     "think": "Miért nem ionizáló a mobiltelefon sugárzása?",
+     "think_answer": "Mert a rádióhullámok fotonjainak energiája túl kicsi ahhoz, hogy elektront szakítson ki az atomokból."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A videóhívás sebessége",
+     "body": "A rádióhullám fénysebességgel terjed, de a hívás nem azonnali: a jelet digitalizálni, tömöríteni, továbbítani kell. Egy jó 4G-kapcsolatban a késés 30–50 ms. Műholdas kapcsolatnál a geostacionárius műhold 35 800 km magasan van, ezért a jelnek oda-vissza 2 · 35 800 km utat kell megtennie: 71 600 : 300 000 ≈ 0,24 s, ami már érezhető késést okoz a beszélgetésben. Ezért a mai alacsony pályás műholdas hálózatok kisebb késést adnak.",
+     "did_you_know": "",
+     "think": "Miért érezhető a késés műholdas beszélgetésnél?",
+     "think_answer": "Mert a geostacionárius műholdig és vissza a jel több tízezer km-t tesz meg, ami kb. 0,24 s."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mit mutat az Audacity?",
+     "body": "Az Audacity a hangot hullámformaként mutatja: a függőleges tengely az amplitúdó, a vízszintes az idő. A spektrum nézet mutatja, mely frekvenciák mennyire erősek. A digitális felvétel mintavételes: a CD-k mintavételi frekvenciája 44,1 kHz, ami a mintavételi tétel szerint legfeljebb 22,05 kHz-ig ad hűséges felvételt, ez meghaladja az emberi hallás felső határát (kb. 20 kHz). A kísérlethez vegyél fel egy sípoló hangot vagy hangvillát, és nézd meg a frekvenciáját.",
+     "did_you_know": "",
+     "think": "Miért elég a 44,1 kHz-es mintavétel a hangfelvételhez?",
+     "think_answer": "Mert a mintavételi frekvencia fele (22,05 kHz) meghaladja az emberi hallás felső határát, a kb. 20 kHz-et."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Kritikus internethasználat",
+     "body": "A mobilinternet miatt bármikor találunk információt, de nem minden információ megbízható. Az egészség és a fizika témájában különösen sok a hamis állítás. Egy állítás ellenőrzéséhez keress több független, megbízható forrást, nézd meg az eredeti adatokat, és számold végig, ha lehet. Egy tudományos állítás mellé érdemes megjegyezni, hogy mikor és ki vizsgálta. A közösségi médiában terjedő „tényeket” különösen óvatosan kezeld.",
+     "did_you_know": "",
+     "think": "Hogyan ellenőrizheted egy online talált fizikai állítás helyességét?",
+     "think_answer": "Több független, megbízható forrással, az eredeti adatokkal és saját számolással."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Alvás és képernyő",
+     "body": "A telefonozás legfontosabb bizonyított hatása az alvásra irányul: az esti képernyőhasználat és az értesítések késleltetik az elalvást. A kék fény gátolhatja az alvást segítő melatonin termelését, és az izgalmas tartalom is ébren tart. Az ajánlás szerint lefekvés előtt kb. egy órával érdemes letenni a képernyőt. A személyes találkozók a mentális egészséget támogatják, és a telefon ezt nem pótolja.",
+     "did_you_know": "",
+     "think": "Miért ronthatja az alvást az esti telefonozás?",
+     "think_answer": "Mert a képernyő fénye gátolhatja a melatonin termelését, a tartalom pedig ébren tart."
+    }
+   ]
+  }
+ ]
+}

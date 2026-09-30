@@ -55,7 +55,8 @@ told apart from "not checked".
 | `unverifiable` | no reliable source confirms it, so it should be generalised or removed |
 | `language` | grammar, Hungarian number format (tizedesvessző, ezres szóköz), a/az articles |
 
-`wrong`, `outdated` and `misleading` need at least one source; `quiz_key` does too when the
+`wrong`, `outdated` and `misleading` need at least one source, or a `source_note` when no
+source can apply (a fabricated link, a question with no factual answer, a classical text); `quiz_key` does too when the
 error is factual (not when it is internal, e.g. the marked letter is not among the options). Source priority:
 the official body (World Athletics, UCI, World Aquatics, BIPM, NASA/ESA …), then an academic
 or museum source or an encyclopedia (Britannica, MEK, Arcanum), then Wikipedia (only as a
@@ -103,3 +104,11 @@ running it again doesn't apply anything twice.
 - History: anachronisms and the global context layer (whether it fits the lesson's period).
 - NOT checked: textbook simplifications that are correct at the grade level, or style that
   isn't an error.
+
+## Source links: what was actually opened
+The audit session's network blocks hu.wikipedia.org, en.wikipedia.org and britannica.com, so
+it cannot open those pages. A source link is either (a) returned by a web search during the
+check, or (b) a Wikipedia article URL built from the article's standard title. Links of type
+(b) have not been opened. Before applying `review` findings, run a link check from a machine
+with open network access, e.g.
+`python -c "import json,glob,urllib.request as u;[print(s['url']) for f in glob.glob('content/qa/*.json') for x in json.load(open(f))['findings'] for s in x.get('sources',[])]" | sort -u | xargs -n1 curl -s -o /dev/null -w '%{http_code} %{url}\n'`.

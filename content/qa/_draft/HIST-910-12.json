@@ -1,0 +1,160 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világ blokkok: 066cf55a, 0e1f9da1 (HIST-910-12)."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "6ca48a71-bfec-42a2-b915-130cf27a621d",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Kölcsey Ferenc Hitel című munkája”",
+   "explanation": "A Hitel (1830) szerzője Széchenyi István; Kölcsey a Himnusz és a Parainesis szerzője.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hitel_(book)",
+     "title": "Hitel (book)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik évben jelent meg Széchenyi István Hitel című munkája?"
+   }
+  },
+  {
+   "block_id": "6ca48a71-bfec-42a2-b915-130cf27a621d",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A reformkori képviselet: A) „Alsó- és felsőtábla” és B) „Kétkamarás parlament” egyaránt helyes",
+   "explanation": "A kétkamarás országgyűlés az alsó- és felsőtáblából állt, így a két válasz ugyanazt jelenti.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Diet_of_Hungary",
+     "title": "Diet of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) Népképviseleti országgyűlés"
+   }
+  },
+  {
+   "block_id": "6ca48a71-bfec-42a2-b915-130cf27a621d",
+   "card_index": 0,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A jobbágyfelszabadítás a reformkor eredménye",
+   "explanation": "A jobbágyfelszabadítást 1848 tavaszán, az áprilisi törvények mondták ki; a reformkorban ehhez vezető viták zajlottak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Reform_Era",
+     "title": "Hungarian Reform Era",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "set": {
+    "explanation": "A jobbágyfelszabadításról a reformkorban vitáztak, és 1848 tavaszán, az áprilisi törvények mondták ki; ez szabad mozgást és földtulajdont jelentett a jobbágyok számára."
+   }
+  },
+  {
+   "block_id": "6ca48a71-bfec-42a2-b915-130cf27a621d",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A közteherviselés kulcsa: Deák Ferenc",
+   "explanation": "A közteherviselés mellett Deák és Kossuth is érvelt; a legjelentősebb szószólója Deák és a liberális ellenzék volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Deák_Ferenc",
+     "title": "Deák Ferenc",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "none"
+  },
+  {
+   "block_id": "45e90d28-fd5f-4079-9133-eb13af42b275",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A polgári alkotmányosság legismertebb képviselője: Kossuth Lajos (a szöveg Deákot említi)",
+   "explanation": "A polgári alkotmányosság ügyét Deák Ferenc képviselte következetesen; Kossuth a demokratikus követelések szószólója volt. A kérdés kétértelmű.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ferenc_Deák",
+     "title": "Ferenc Deák",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Lajos_Kossuth",
+     "title": "Lajos Kossuth",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "none"
+  },
+  {
+   "block_id": "a1c6141b-2648-4d8e-82c0-cc91e4f0735a",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Kossuth „a nemzeti függetlenségért küzdött” a reformkorban",
+   "explanation": "A reformkorban Kossuth a Habsburg Birodalmon belül követelt alkotmányos reformokat; a függetlenség csak 1849-ben vált céllá.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lajos_Kossuth",
+     "title": "Lajos Kossuth",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "míg Kossuth a politikai szabadságjogokért és a nemzeti függetlenségért küzdött",
+     "míg Kossuth a politikai szabadságjogokért és az alkotmányos reformokért küzdött a Habsburg Birodalmon belül"
+    ]
+   ]
+  },
+  {
+   "block_id": "a1c6141b-2648-4d8e-82c0-cc91e4f0735a",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Kölcsey „érdekegyesítést szorgalmazott a magyar nyelv védelme érdekében”",
+   "explanation": "Az érdekegyesítés a nemesek és nem nemesek érdekeinek összekapcsolását jelentette, nem a nyelv védelmét.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ferenc_Kölcsey",
+     "title": "Ferenc Kölcsey",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "érdekegyesítést szorgalmaztak a magyar nyelv védelme érdekében",
+     "a magyar nyelv védelmét szorgalmazták; az érdekegyesítés a nemesek és a nem nemesek érdekeinek összekapcsolását jelentette"
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,465 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "A 070023b4 kvíz nem kérdez a nemzetiszocializmus terrorjáról; a 9eaad9d0 kvíz [3] egyik hibás válasza valójában igaz."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "4e0003e0-3b7a-4711-b4dc-5e418dee9b5f",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A magyar történelem szempontjából fontos, hogy a Szovjetunió a következő évtizedekben jelentős befolyással bírt”",
+   "explanation": "Erőltetett, tartalmatlan magyar vonatkozás; a valós összefüggés: a polgárháború (1918–1921) bolsevik győzelme után jött létre a Szovjetunió, és 1945 után Magyarország is a szovjet érdekszférába került.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Soviet_Union",
+     "title": "Soviet Union",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Russian_Civil_War",
+     "title": "Russian Civil War",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A magyar történelem szempontjából fontos, hogy a Szovjetunió a következő évtizedekben jelentős befolyással bírt a közép-európai országokra.",
+     "A Szovjetunió a polgárháború (1918–1921) bolsevik győzelme után jött létre, és 1945 után Magyarország is a szovjet érdekszférába került."
+    ]
+   ]
+  },
+  {
+   "block_id": "4e0003e0-3b7a-4711-b4dc-5e418dee9b5f",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A kollektivizálás során a földeket államosították”",
+   "explanation": "A földet a bolsevikok már 1917–18-ban államosították; a kollektivizálás (1929-től) a parasztgazdaságok megszüntetését és kolhozokba kényszerítését jelentette.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Collectivization_in_the_Soviet_Union",
+     "title": "Collectivization in the Soviet Union",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Dekulakization",
+     "title": "Dekulakization",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A kollektivizálás során a földeket államosították, és a parasztokat kolhozokba kényszerítették.",
+     "A kollektivizálás (1929-től) során megszüntették a parasztgazdaságokat, és a parasztokat kolhozokba kényszerítették (a földet már 1917–18-ban államosították)."
+    ]
+   ]
+  },
+  {
+   "block_id": "4e0003e0-3b7a-4711-b4dc-5e418dee9b5f",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A holodomor, az ukrán éhínség”: az év hiányzik",
+   "explanation": "Az éhínség éve (1932–33) hiányzik a szövegből, holott a kvíz (3322ef33) is ezt kérdezi.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Holodomor",
+     "title": "Holodomor",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A holodomor, az ukrán éhínség, szintén",
+     "A holodomor, az 1932–33-as ukrán éhínség, szintén"
+    ]
+   ]
+  },
+  {
+   "block_id": "4e0003e0-3b7a-4711-b4dc-5e418dee9b5f",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Ezek a városok nemcsak a szovjet politika, hanem a magyar történelem szempontjából is jelentőséggel bírnak.”",
+   "explanation": "Erőltetett magyar vonatkozás, tartalom nélkül; a Leningrád név viszont magyarázatot igényel (Szentpétervár → Petrográd → Leningrád).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Saint_Petersburg",
+     "title": "Saint Petersburg",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ezek a városok nemcsak a szovjet politika, hanem a magyar történelem szempontjából is jelentőséggel bírnak.",
+     "Leningrád régi és mai neve Szentpétervár (1914–1924 között Petrográd volt)."
+    ]
+   ]
+  },
+  {
+   "block_id": "4e0003e0-3b7a-4711-b4dc-5e418dee9b5f",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Az 1938-as Anschluss és a müncheni konferencia eseményei a német terjeszkedés előjeleit mutatták” (a Szovjetunió leckéjében)",
+   "explanation": "Az Anschluss és München a Németországról szóló leckéhez tartozik; a szovjet vonatkozás az, hogy a Szovjetuniót nem hívták meg Münchenbe, és Sztálin 1939-ben Hitlerrel kötött paktumot.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Munich_Agreement",
+     "title": "Munich Agreement",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Molotov–Ribbentrop_Pact",
+     "title": "Molotov–Ribbentrop Pact",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az 1938-as Anschluss és a müncheni konferencia eseményei a német terjeszkedés előjeleit mutatták, amelyek a második világháborúhoz vezettek.",
+     "A Szovjetuniót az 1938-as müncheni konferenciára nem hívták meg, majd 1939. augusztus 23-án Sztálin a Molotov–Ribbentrop-paktumot kötötte Hitlerrel."
+    ]
+   ]
+  },
+  {
+   "block_id": "f755750c-e7d8-42f9-9071-074a480e8263",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "„Magyarországon is több százezer ember maradt munka nélkül”",
+   "explanation": "A szám nem ellenőrizhető: az ipari munkanélküliség adatai forrásonként eltérnek (nem volt általános nyilvántartás); a „több százezer” túlzás lehet.",
+   "source_note": "A magyar munkanélküliség adatai 1931–33 (KSH), forrásonként eltérő",
+   "apply": "none"
+  },
+  {
+   "block_id": "f755750c-e7d8-42f9-9071-074a480e8263",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„A többpártrendszer, amely a két világháború között jellemezte Magyarországot”",
+   "explanation": "A Horthy-korszak nem működött valódi többpártrendszerként: a kormánypárt (Bethlen Egységes Pártja, majd Gömbös Nemzeti Egység Pártja) folyamatosan kormányzott, a vidéki választókerületekben nyílt szavazás volt, a választójog korlátozott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1920–1946)",
+     "title": "Kingdom of Hungary (1920–1946)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/István_Bethlen",
+     "title": "István Bethlen",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A többpártrendszer, amely a két világháború között jellemezte Magyarországot, válságba került.",
+     "A Horthy-korszak korlátozott, félig autoriter parlamentarizmusa (folyamatosan kormányzó kormánypárttal, vidéken nyílt szavazással) válságba került."
+    ]
+   ]
+  },
+  {
+   "block_id": "f755750c-e7d8-42f9-9071-074a480e8263",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a gazdaság központosítása és a tervezett gazdaság irányába történt elmozdulás”",
+   "explanation": "Magyarországon 1931 után az állami beavatkozás erősödött (devizakorlátozás, adósságmoratórium), de tervgazdaság csak a szovjet mintájú rendszerben (1948 után) jött létre.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Great_Depression_in_Hungary",
+     "title": "Great Depression in Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Planned_economy",
+     "title": "Planned economy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a gazdaság központosítása és a tervezett gazdaság irányába történt elmozdulás",
+     "erősödött az állami beavatkozás (például devizakorlátozás, adósságmoratórium)"
+    ]
+   ]
+  },
+  {
+   "block_id": "5c3c730e-bb1a-4027-8a75-2668aa902809",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az 1920-as évek végén alakult ki”; „a fasizmus egyik ága”",
+   "explanation": "Az NSDAP-t 1919-ben alapították (1920-tól viseli ezt a nevet), Hitler 1921-től vezette; az 1920-as évek végén már tömegpárt volt. Hogy a nemzetiszocializmus a fasizmus egy ága-e, a történészek vitatják.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nazi_Party",
+     "title": "Nazi Party",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Nazism",
+     "title": "Nazism",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "az 1920-as évek végén",
+     "az 1920-as évek elején (a pártot 1919-ben alapították, Hitler 1921-től vezette)"
+    ],
+    [
+     "A nemzetiszocializmus a fasizmus egyik ága",
+     "A nemzetiszocializmus a fasizmus legradikálisabb német változata (a történészek egy része külön ideológiának tartja, mert a faji gyűlölet központi szerepet játszott benne)"
+    ]
+   ]
+  },
+  {
+   "block_id": "5c3c730e-bb1a-4027-8a75-2668aa902809",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 1930-as években”; „Németország egyesítette Ausztriát”",
+   "explanation": "Névelőhiba („az 1930-as”); az Anschluss Ausztria bekebelezése volt, nem egyesítés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Anschluss",
+     "title": "Anschluss",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a 1930-as években",
+     "az 1930-as években"
+    ],
+    [
+     "Németország egyesítette Ausztriát",
+     "Németország bekebelezte Ausztriát"
+    ]
+   ]
+  },
+  {
+   "block_id": "b0aec3d9-8bba-4615-a033-8a82f46fdd03",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "link_hu: „A Szovjetunió létrejötte ösztönözte a magyarországi kommunista párt megerősödését, amely 1919-ben a Tanácsköztársaság idején”",
+   "explanation": "Időrendi képtelenség: a Szovjetunió 1922-ben alakult, a Tanácsköztársaság 1919-ben már megbukott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Soviet_Republic",
+     "title": "Hungarian Soviet Republic",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Soviet_Union",
+     "title": "Soviet Union",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "link_hu": "A Szovjetunió létrejötte előtt, 1919-ben a magyar kommunisták már létrehozták a Tanácsköztársaságot; a KMP vezetői (például Kun Béla) a bukás után a Szovjetunióban találtak menedéket."
+   }
+  },
+  {
+   "block_id": "b0aec3d9-8bba-4615-a033-8a82f46fdd03",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "„Ausztria Németországhoz csatlakozott”; link_hu: „a magyar politikai elit is a totális diktatúrák irányába mozdult el”",
+   "explanation": "Az Anschluss Ausztria erőszakos bekebelezése volt (1938. március), a müncheni konferencián Csehszlovákiát meg sem kérdezték. A valós magyar kapcsolat: az 1938. november 2-i első bécsi döntés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Anschluss",
+     "title": "Anschluss",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/First_Vienna_Award",
+     "title": "First Vienna Award",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "1938 márciusában a náci Németország bekebelezte Ausztriát (Anschluss). Szeptemberben a müncheni konferencián Németország, Nagy-Britannia, Franciaország és Olaszország Csehszlovákia megkérdezése nélkül a Szudéta-vidéket Németországnak ítélte.",
+    "link_hu": "A müncheni döntés után az 1938. november 2-i első bécsi döntés Magyarországnak juttatta a Felvidék déli, magyarlakta sávját és Kassát."
+   }
+  },
+  {
+   "block_id": "2e52ba29-054b-4f0d-8842-36392e39c367",
+   "card_index": 2,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: „A New Deal politikája inspirálta Magyarországon is az állami beavatkozásokat”",
+   "explanation": "A kapcsolatra nincs bizonyíték; a magyar kormányok devizakorlátozással és moratóriummal reagáltak, de a New Deal átvételéről nincs adat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Great_Depression_in_Hungary",
+     "title": "Great Depression in Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/New_Deal",
+     "title": "New Deal",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "link_hu": "A magyar kormányok az 1930-as években szintén állami beavatkozással próbálták kezelni a válságot (például devizakorlátozás, adósságmoratórium), de a New Deal átvételéről nincs adat."
+   }
+  },
+  {
+   "block_id": "903f563e-39fc-4e02-9e89-ae94b3825e99",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„az Új Megállapodás programját”",
+   "explanation": "A program neve New Deal; az „Új Megállapodás” fordítás a többi leckében nem szerepel (terminológiai ütközés).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/New_Deal",
+     "title": "New Deal",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "1933-ban az Egyesült Államokban Franklin D. Roosevelt elnök bevezette a New Deal programját, amely a gazdasági válság kezelésére irányult. A program célja a munkahelyteremtés és a gazdasági stabilitás helyreállítása volt. A gazdasági nehézségek és a politikai instabilitás Németországban hozzájárultak a nemzetiszocialista párt felemelkedéséhez."
+   }
+  },
+  {
+   "block_id": "903f563e-39fc-4e02-9e89-ae94b3825e99",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„megvitassák Csehszlovákia területi követeléseit”; link_hu: Magyarország „területi követeléseket és a trianoni békeszerződés revízióját hozta”",
+   "explanation": "A konferencián Németország követelései szerepeltek Csehszlovákia ellen; Csehszlovákiát nem hívták meg. A valós magyar következmény: az 1938. november 2-i első bécsi döntés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Munich_Agreement",
+     "title": "Munich Agreement",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/First_Vienna_Award",
+     "title": "First Vienna Award",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "1938 szeptemberében a müncheni konferencián Németország, Nagy-Britannia, Franciaország és Olaszország vezetői Németország Csehszlovákiával szembeni területi követeléseiről tárgyaltak; Csehszlovákiát nem hívták meg. A döntés a Szudéta-vidéket Németországnak ítélte, és Hitler további terjeszkedését ösztönözte.",
+    "link_hu": "A müncheni döntés nyomán az 1938. november 2-i első bécsi döntés Magyarországnak juttatta a Felvidék déli sávját és Kassát; ezzel a revízió német–olasz döntőbíráskodás útján indult el."
+   }
+  },
+  {
+   "block_id": "3322ef33-ba4a-4912-9ab2-947390403358",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 1932-1933-as éhínség”",
+   "explanation": "Névelőhiba („az 1932–1933-as”).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Holodomor",
+     "title": "Holodomor",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "A holodomor az 1932–1933-as ukrajnai éhínség volt, amelyet a szovjet állam politikai intézkedései (kényszerű gabonabeszolgáltatás) súlyosbítottak."
+   }
+  },
+  {
+   "block_id": "9eaad9d0-986c-4961-a895-417ebb0c48da",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Mi a fasizmus és a nemzetiszocializmus közötti fő különbség?” (a kulcs csak a keletkezés helye)",
+   "explanation": "A kérdés a fő különbségre kérdez, a kulcs viszont csak a helyet adja meg; a valódi különbség a faji ideológia központi szerepe a nemzetiszocializmusban.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Fascism",
+     "title": "Fascism",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Nazism",
+     "title": "Nazism",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Hol alakult ki a fasizmus, és hol a nemzetiszocializmus?"
+   }
+  },
+  {
+   "block_id": "9eaad9d0-986c-4961-a895-417ebb0c48da",
+   "card_index": 3,
+   "field": "options[1]",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "B) Ő volt a német hadsereg főparancsnoka.",
+   "explanation": "Hitler valóban a német fegyveres erők főparancsnoka volt (1934-től, 1938-tól közvetlenül); a B) is helyes, több jó válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Adolf_Hitler",
+     "title": "Adolf Hitler",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[1]": "Ő volt a weimari köztársaság első elnöke."
+   }
+  },
+  {
+   "block_id": "070023b4-3473-48b4-87a7-c7630a8e5ee8",
+   "card_index": 4,
+   "field": "options[0]",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Melyik fogalom kapcsolódik a mezőgazdaság államosításához és a kulákok üldözéséhez? Tervgazdaság”",
+   "explanation": "A tervgazdaság tág fogalom; a földmagántulajdon megszüntetésének és a kulákok üldözésének fogalma a kollektivizálás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Collectivization_in_the_Soviet_Union",
+     "title": "Collectivization in the Soviet Union",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "Kollektivizálás",
+    "explanation": "A kollektivizálás során a parasztgazdaságokat megszüntették, a parasztokat kolhozokba kényszerítették, a kulákokat pedig üldözték."
+   }
+  }
+ ]
+}
