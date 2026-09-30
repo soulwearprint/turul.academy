@@ -1,0 +1,194 @@
+{
+ "nat_id": "PHYS-78-04",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "75efbfc1-1f1b-4b9e-8f86-e11f47b40d8a",
+   "title_hu": "Lendület és rakétamozgás",
+   "text_block_id": "071a36fa-4998-4798-b41c-d7823b2051b2",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Golyó vagy gyalogos?",
+     "body": "A lendület a tömegtől és a sebességtől egyszerre függ, ezért meglepő összehasonlításokat ad. Egy 10 g-os puskagolyó 400 m/s sebességgel 0,01 · 400 = 4 kg·m/s lendületű. Egy 70 kg-os ember lassú sétával, 1,5 m/s-mal már 105 kg·m/s lendületű, vagyis sokkal nagyobb. A golyó azért veszélyes, mert a lendülete nagyon kicsi felületen, nagyon rövid idő alatt adódik át.",
+     "did_you_know": "A lendületnek iránya is van: két egyforma autó, amelyek egyforma sebességgel szemből közelednek, együttes lendülete nulla.",
+     "think": "Melyiket nehezebb megállítani: egy 2 m/s-mal guruló 10 tonnás teherautót vagy egy 10 m/s-mal száguldó 80 kg-os kerékpárost?",
+     "think_answer": "A teherautó lendülete 10 000 · 2 = 20 000 kg·m/s, a kerékpárosé 80 · 10 = 800 kg·m/s. A lassú teherautót sokkal nehezebb megállítani."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Labdadobás gördeszkán",
+     "body": "Állj egy gördeszkára egy 5 kg-os medicinlabdával, és dobd el előre 4 m/s sebességgel! A labda lendülete 5 · 4 = 20 kg·m/s lesz. Mivel eldobás előtt a te és a labda együttes lendülete nulla volt, neked is 20 kg·m/s lendületet kell kapnod, csak hátrafelé. Ha 50 kg vagy, 20 : 50 = 0,4 m/s sebességgel gurulsz hátra. Végül a súrlódás megállít, mert az már külső erő.",
+     "did_you_know": "Ha egy csónakból a partra ugrasz, a csónak hátrafelé elsiklik alólad; ezért lehet könnyen a vízbe esni.",
+     "think": "Miért löki hátra a vállat a puska elsütéskor?",
+     "think_answer": "A golyó előre kap lendületet, ezért a puska ugyanakkora lendületet kap hátrafelé. A puska sokkal nehezebb, ezért csak lassan mozdul, de a vállunk érzi."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A rakéta nem a levegőt tolja",
+     "body": "Sokan azt hiszik, hogy a rakéta a levegőről rugaszkodik el, pedig a világűrben, levegő nélkül is működik. A rakéta a kiáramló gázt nagy sebességgel hátrafelé nyomja, a gáz pedig ugyanakkora erővel előre nyomja a rakétát. A két erő nem oltja ki egymást, mert két különböző testre hat: az egyik a gázra, a másik a rakétára. Ez Newton harmadik törvényének lényege.",
+     "did_you_know": "1920-ban egy nagy amerikai napilap kigúnyolta Robert Goddard rakétakutatót, mert szerintük vákuumban nem működhet a rakéta; 1969-ben, a holdra szálláskor helyreigazítást közöltek.",
+     "think": "Ha a ló ugyanakkora erővel húzza a kocsit, mint amekkorával a kocsi visszahúzza a lovat, hogyan indulhatnak el?",
+     "think_answer": "A két erő két különböző testre hat. A ló azért indul el, mert a talaj előre tolja a lábát, a kocsi pedig azért, mert a ló húzóereje nagyobb, mint a kocsira ható súrlódás."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Miért cikázik a léggömb?",
+     "body": "A szabadon engedett léggömb-rakéta összevissza cikázik, mert a nyílása nincs rögzítve: ahogy a gumi mozog, a kiáramló levegő iránya folyamatosan változik, és vele a lökőerő iránya is. Ha a léggömböt egy szívószálhoz ragasztod, és a szívószálat egy kifeszített zsinórra fűzöd, egyenes pályán halad. Így már mérni is lehet: mennyi idő alatt teszi meg a zsinór hosszát. Ha nehezebb terhet ragasztasz rá, lassabban gyorsul.",
+     "did_you_know": "Az igazi rakéták úgy kormányoznak, hogy a hajtómű fúvókáját kissé elfordítják, így a lökőerő iránya megváltozik.",
+     "think": "Miért repül egyenesebben a léggömb-rakéta, ha egy zsinórra fűzött szívószálhoz rögzítjük?",
+     "think_answer": "A zsinór megakadályozza, hogy a léggömb oldalra forduljon, így a lökőerő mindig a zsinór irányába tolja."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A megmaradás és a veszteség",
+     "body": "Ha egy 1 kg-os, 2 m/s sebességű kocsi nekiütközik egy álló, szintén 1 kg-os kocsinak, és összeakadnak, együtt 1 m/s sebességgel haladnak tovább. A lendület megmaradt: előtte 1 · 2 = 2 kg·m/s, utána 2 · 1 = 2 kg·m/s. A mozgási energia viszont a felére csökkent, mert egy része a kocsik alakváltozására és melegedésére fordítódott. A lendület tehát ütközéskor mindig megmarad, a mozgási energia nem feltétlenül.",
+     "did_you_know": "A Newton-bölcsőben az egyik oldalon elengedett golyó megáll, és a másik oldalon ugyanannyi golyó lendül ki, mert így marad meg a lendület és a mozgási energia is.",
+     "think": "Miért véd az autók gyűrődő eleje ütközéskor?",
+     "think_answer": "A lendület megváltozása ugyanakkora, de a gyűrődés miatt az ütközés hosszabb ideig tart. Hosszabb idő alatt kisebb erő kell ugyanahhoz a változáshoz, ezért kisebb erő hat az utasokra."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "A lendkerék titka",
+     "body": "A gőzgép lényege az energiaátalakulás: a tüzelőanyag hője a gőz nyomásán keresztül mozgási energiává alakul. A dugattyú azonban nem egyenletesen tol, hanem lökésszerűen. Ezt egy nehéz lendkerék egyenlíti ki: ha egyszer forgásba jött, a tehetetlensége miatt nehéz lassítani vagy gyorsítani, így a lökések között is egyenletesen forog tovább. Minél nagyobb a tömege, és minél távolabb van a tengelytől, annál jobban kiegyenlíti a lökéseket.",
+     "did_you_know": "Lendkereket a régi taposós varrógépeken és a fazekaskorongon is találsz: a nehéz kerék egyenletesen tartja a forgást.",
+     "think": "Miért érdemes a lendkerék tömegét a peremére tenni?",
+     "think_answer": "A peremen lévő tömeg távol van a tengelytől, ezért sokkal nehezebb megváltoztatni a forgását, így jobban kiegyenlíti az egyenetlen lökéseket."
+    }
+   ]
+  },
+  {
+   "lesson_id": "afc0f740-1047-4e4d-9247-d53bc2b71674",
+   "title_hu": "Körmozgások és lengések vizsgálata",
+   "text_block_id": "df1e4447-95d8-4216-bef2-5d271de02e70",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Galilei és a csillár",
+     "body": "A legenda szerint Galilei a pisai dómban figyelt meg egy lengő csillárt, és a saját pulzusával mérte a lengéseit. Azt vette észre, hogy a lengés ideje nem függ attól, hogy nagyot vagy kicsit leng. A későbbi mérések azt is kimutatták, hogy az inga tömegétől sem függ, csak a hosszától: négyszer hosszabb inga kétszer lassabban leng. Egy kb. 1 m hosszú inga periódusideje kb. 2 másodperc.",
+     "did_you_know": "Egy kb. 1 m hosszú inga éppen 1 másodperc alatt leng át egyik szélső helyzetéből a másikba, ezért hívták másodpercingának.",
+     "think": "Megváltozik-e a hinta ritmusa, ha egy nehezebb gyerek ül rá?",
+     "think_answer": "Nem, mert a lengésidő a hinta kötelének hosszától függ, nem a tömegtől. A nehezebb gyerek ugyanabban az ütemben leng."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Kerékfordulatból sebesség",
+     "body": "A fordulatszámból kiszámítható, milyen gyorsan halad valami. Egy kb. 70 cm átmérőjű kerékpárkerék kerülete kb. 2,2 m, vagyis egy fordulat alatt ennyit halad előre a bicikli. Ha a kerék másodpercenként kétszer fordul körbe, a sebesség 2 · 2,2 = 4,4 m/s, ami kb. 16 km/h. A kerékpár sebességmérője is így működik: egy érzékelő számolja a kerék fordulatait.",
+     "did_you_know": "A számítógépek régi merevlemezeinek lemezei percenként 5 400–7 200-at fordulnak.",
+     "think": "Mekkora a bicikli sebessége, ha a 2,2 m kerületű kereke másodpercenként háromszor fordul körbe?",
+     "think_answer": "3 · 2,2 = 6,6 m/s, ami kb. 24 km/h."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Hangerő és hangmagasság",
+     "body": "A hangot rezgések keltik: a rezgés amplitúdója a hangerőt, a rezgésszáma a hangmagasságot határozza meg. Az ember kb. 20 Hz és 20 000 Hz közötti hangokat hall. A zenekarok hangolásához használt „a” hang rezgésszáma 440 Hz. Ha a rezgésszám kétszeresére nő, egy oktávval magasabb hangot hallunk, tehát a 880 Hz ugyanaz a hang, csak egy oktávval feljebb.",
+     "did_you_know": "A kutyák a 20 000 Hz fölötti hangokat is hallják, ezért működik a számunkra néma kutyasíp.",
+     "think": "Mi változik, ha erősebben pengeted meg a gitárhúrt?",
+     "think_answer": "A húr nagyobb kitéréssel, vagyis nagyobb amplitúdóval rezeg, ezért hangosabb lesz. A rezgésszám és így a hangmagasság nem változik."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Az ingaóra forradalma",
+     "body": "Christiaan Huygens 1656-ban építette meg az első ingaórát. Az inga egyenletes lengése szabta meg az óra járását, és ettől az órák pontossága óriásit javult: a korábbi, naponta akár negyedórát tévedő órákkal szemben az ingaóra napi néhány másodperc pontosságot is elért. Az inga lengésideje a nehézségi gyorsulástól is függ, ezért ugyanaz az óra máshol kicsit másképp jár. Ezt a jelenséget később a Föld alakjának vizsgálatára is felhasználták.",
+     "did_you_know": "Egy ingaóra magas hegyen kicsit lassabban jár, mert ott valamivel gyengébb a nehézségi erő.",
+     "think": "Miért kell tíz lengést mérni az inga periódusidejének meghatározásához, és nem csak egyet?",
+     "think_answer": "A stopper indításának és leállításának hibája így tíz lengés között oszlik meg, ezért egy lengés idejét sokkal pontosabban kapjuk meg."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "23 óra 56 perc",
+     "body": "A Föld nem pontosan 24 óra alatt fordul meg a tengelye körül, hanem kb. 23 óra 56 perc alatt. A 24 órás nap azért hosszabb néhány perccel, mert a Föld közben a pályáján is halad, ezért kicsit tovább kell fordulnia, hogy a Nap újra ugyanott legyen az égen. A keringés ideje sem pontosan 365 nap, hanem kb. 365 és negyed nap. Ezért iktatunk be négyévente egy szökőnapot, február 29-ét.",
+     "did_you_know": "A csillagok minden este kb. 4 perccel korábban kelnek fel, mint előző este, a 23 óra 56 perces forgás miatt.",
+     "think": "Miért van szükség szökőévre?",
+     "think_answer": "Mert a Föld keringése kb. 365 és negyed nap. A negyed napok négy év alatt egy teljes nappá adódnak össze, ezt pótolja a szökőnap."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Centrifugálás tehetetlenséggel",
+     "body": "A mosógép dobja centrifugáláskor percenként kb. 1 200-at is fordulhat, ez másodpercenként 20 fordulat. Egy 50 cm átmérőjű dob fala így kb. 30 m/s, azaz kb. 110 km/h sebességgel mozog. A vizet nem egy kifelé toló erő löki ki: a vízcseppek a tehetetlenségük miatt egyenesen haladnának tovább, a dob fala tartja őket körpályán. Ahol a falon lyuk van, ott nincs, ami megtartsa őket, így egyenesen kirepülnek.",
+     "did_you_know": "A salátacentrifuga ugyanígy működik: a vízcseppek a lyukakon át egyenesen továbbrepülnek, a saláta levelei bent maradnak.",
+     "think": "Miért marad a ruha a dobban, a víz pedig kirepül belőle?",
+     "think_answer": "A dob fala mindkettőt körpályán tartja, de a lyukaknál a víz át tud jutni, a ruha nem. A víz ezért a tehetetlensége miatt egyenesen továbbhalad."
+    }
+   ]
+  },
+  {
+   "lesson_id": "306e0d67-5157-4fe1-9da0-61d17ca9cf58",
+   "title_hu": "Egyensúly és alakváltozások",
+   "text_block_id": "834bb44f-4fb6-45e2-a085-5a62df9d1bde",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "A polc visszanyom",
+     "body": "A könyvre két erő hat: a Föld lefelé húzza, a polc pedig felfelé nyomja. A polc azért tud felfelé nyomni, mert a könyv súlya alatt egy kicsit, szemmel láthatatlanul behajlik, és a rugalmassága miatt visszanyom. Ezt az erőt tartóerőnek hívjuk. A könyv akkor nem billen le a polc széléről, ha a súlypontja a polc fölött van. Ha a súlypont túljut a szélén, a könyv leesik.",
+     "did_you_know": "Ha egyforma könyveket lépcsőzetesen egymásra rakunk az asztal szélén, négy könyvvel már elérhető, hogy a legfelső teljes egészében az asztal szélén túl legyen, mégse essen le.",
+     "think": "Miért hajlik be láthatóan egy hosszú polc közepe, ha sok könyvet teszünk rá?",
+     "think_answer": "A könyvek súlya meghajlítja a polcot, és minél jobban meghajlik, annál nagyobb tartóerővel nyom vissza. Egy hosszú polc közepe könnyebben hajlik, ezért ott látszik a behajlás."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A gemkapocs próbája",
+     "body": "Egy rugó megnyúlása egy határig egyenesen arányos a ráakasztott teherrel: kétszer akkora teher kétszer akkora megnyúlást okoz. Ha azonban túl nagy a terhelés, a rugó túllépi a rugalmassági határát, és már nem ugrik vissza teljesen. Ha egy gemkapcsot sokszor ide-oda hajlítasz, a fém belső szerkezete minden hajlításkor egy kicsit károsodik, a kapocs felmelegszik, és végül eltörik. Ezt a jelenséget kifáradásnak hívják, és a mérnökök a hidak és repülőgépek tervezésénél is figyelembe veszik.",
+     "did_you_know": "Az ide-oda hajlítgatott gemkapocs hajlítási pontja érezhetően felmelegszik, mert a hajlítás munkája belső energiává alakul.",
+     "think": "Miért törik el a gemkapocs, ha sokszor ide-oda hajlítod?",
+     "think_answer": "Minden hajlítás maradandó változást okoz a fém belsejében, ezek összeadódnak, és a fém a hajlítási pontnál egyre gyengébb lesz, végül eltörik."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A keljfeljancsi titka",
+     "body": "Egy test annál stabilabb, minél alacsonyabban van a súlypontja és minél szélesebb az alapja. A keljfeljancsi azért áll mindig fel, mert az alja lekerekített és nagyon nehéz, így a súlypontja egészen alul van. Ha meglököd, a súlypontja megemelkedik, a nehézségi erő pedig visszabillenti oda, ahol a súlypont a legalacsonyabban van. A kötéltáncos hosszú rúdja nem a súlypontot süllyeszti, hanem lassítja a billegést, így van ideje a korrekcióra.",
+     "did_you_know": "A versenyautók nagyon alacsonyak, hogy a súlypontjuk közel legyen a talajhoz, és éles kanyarban se boruljanak fel.",
+     "think": "Miért visz a kötéltáncos hosszú rudat?",
+     "think_answer": "A hosszú rúd tömege távol van a testétől, ezért a test sokkal lassabban billen ki. Így több ideje marad arra, hogy visszanyerje az egyensúlyát."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Miért hatágú a hópehely?",
+     "body": "A jégben a vízmolekulák szabályos, hatszöges rácsba rendeződnek, amelyben sok az üres hely. Ez az oka annak, hogy a jég kisebb sűrűségű, mint a folyékony víz. A hópelyhek ugyanebből a hatszöges rendből nőnek ki, ezért mindig hatágúak, bár két egyforma alig van közöttük. Nem minden szilárd anyag kristályos: az üvegben a részecskék rendezetlenül helyezkednek el, mint egy megdermedt folyadékban.",
+     "did_you_know": "Az üveg nem kristályos anyag: a részecskéi rendezetlenül helyezkednek el, ezért nem egy adott hőmérsékleten olvad meg, hanem fokozatosan lágyul.",
+     "think": "Miért hatágú minden hópehely?",
+     "think_answer": "Mert a jégkristályban a vízmolekulák hatszöges rácsba rendeződnek, és a pehely ennek a rácsnak a szabályai szerint nő."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Két híres gondolat",
+     "body": "Arkhimédész nevéhez két külön felfedezés fűződik. A híres mondás („Adjatok egy szilárd pontot, és kimozdítom a Földet”) az emelőre vonatkozik: elég hosszú emelővel kis erővel is nagy terhet lehet megmozdítani. A felhajtóerő törvénye más: a folyadékba merülő testre akkora felhajtóerő hat, mint a kiszorított folyadék súlya. Ez minden testre hat, a süllyedőkre is, csak ha a test súlya nagyobb, akkor mégis elmerül. Egy 1 dm³-es kőre vízben kb. 10 N felhajtóerő hat, ezért vízben könnyebbnek érezzük.",
+     "did_you_know": "Ezért lehet egy nagy követ víz alatt könnyebben felemelni, mint a parton: a felhajtóerő a súlya egy részét átveszi.",
+     "think": "Miért tűnik könnyebbnek egy nehéz horgony a víz alatt, mint a hajó fedélzetén?",
+     "think_answer": "A víz alatt felhajtóerő hat rá, amely egyenlő a kiszorított víz súlyával. Ez felfelé hat, ezért kisebb erővel is meg lehet tartani."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Az autó, ami gyűrődni tud",
+     "body": "A maradandó alakváltozás nem mindig hiba, néha éppen ez véd meg. Az autók elejét úgy tervezik, hogy ütközéskor összegyűrődjön, mert az alakváltozás elnyeli a mozgási energia nagy részét, és meghosszabbítja az ütközés idejét. A kerékpáros sisak habja ugyanígy működik: becsapódáskor összenyomódik, és ezzel csökkenti a fejre ható erőt. Egy rugalmas anyag visszaadná az energiát, és visszapattanna, ami sokkal veszélyesebb lenne.",
+     "did_you_know": "A kerékpáros sisakot egy komolyabb esés után cserélni kell, mert a habja maradandóan összenyomódott, és már nem véd ugyanúgy.",
+     "think": "Miért nem rugalmas gumiból készítik a sisakok belsejét?",
+     "think_answer": "A rugalmas gumi visszaadná az energiát, és a fej visszapattanna. Az összenyomódó hab viszont elnyeli az energiát, így kisebb erő hat a fejre."
+    }
+   ]
+  }
+ ]
+}
