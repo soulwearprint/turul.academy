@@ -1,0 +1,229 @@
+{
+ "nat_id": "PHYS-910-07",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "c24b42ea-6038-42ae-a75f-4d226fdf740f",
+   "title_hu": "Egyszerű gépek és egyensúly",
+   "text_block_id": "3c5e75b2-19cd-4081-8701-68d3fde7c48d",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Nem a súly számít, hanem a súly és a kar szorzata",
+     "body": "A libikóka akkor van egyensúlyban, ha a két oldal forgatónyomatéka egyenlő: F₁ · k₁ = F₂ · k₂. Egyenlő súlyú emberek csak akkor egyensúlyoznak, ha a forgásponttól egyenlő távolságra ülnek. Ha egy 30 kg-os gyerek 2,0 m-re ül a forgásponttól, akkor egy 40 kg-os ember 30 · 2,0 : 40 = 1,5 m-re ülve tartja egyensúlyban. A mérleg is kétkarú emelő: egyenlő karok mellett a serpenyőkben akkor van egyensúly, ha a tömegek egyenlők.",
+     "did_you_know": "Az ókori Arkhimédésznek tulajdonítják azt a mondást, hogy elég lenne egy elég hosszú kar és egy szilárd támaszpont, és ő kimozdítaná a Földet.",
+     "think": "Egy 30 kg-os gyerek a forgásponttól 2,0 m-re ül. Hol üljön egy 40 kg-os ember, hogy a libikóka egyensúlyban legyen?",
+     "think_answer": "30 · 2,0 = 40 · k, ebből k = 1,5 m-re a forgásponttól."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Miért könnyebb a hosszú kulcs?",
+     "body": "A forgatónyomaték M = F · k, ahol k az erő hatásvonalának a forgásponttól mért merőleges távolsága. Ha egy csavarhoz 20 N · m nyomaték kell, akkor 20 cm-es kulccsal 100 N erő kell, 40 cm-es kulccsal viszont csak 50 N. A hosszabb kar tehát kisebb erőt kér, de a kezünknek nagyobb utat kell megtennie. Az „aranyszabály” szerint a munka az erő és az út szorzata, ezért egyszerű gépekkel az erő nyerhető, a munka nem.",
+     "did_you_know": "",
+     "think": "Mekkora erő kell egy 0,4 m hosszú kulccsal, ha a csavarhoz 20 N · m nyomaték szükséges?",
+     "think_answer": "F = M : k = 20 : 0,4 = 50 N."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Így mérj a libikókával",
+     "body": "A kísérlethez egy vonalzót egy ceruzára vagy hengerre helyezhetünk, a súlyokat pedig azonos érmékkel vagy kis tömegekkel képezhetjük. Érdemes a mérési eredményeket táblázatba írni: bal oldali súly, távolság, jobb oldali súly, távolság. Ha például a bal oldalon 2 érme 12 cm-re van, akkor a jobb oldalon 3 érmének 8 cm-re kell lennie: 2 · 12 = 3 · 8. A valódi mérések nem lesznek pontosan egyenlők, mert a vonalzó tömege és a leolvasási pontosság is hibát okoz, ezért érdemes többször megismételni.",
+     "did_you_know": "",
+     "think": "Ha a bal oldalon 3 érme 10 cm-re van a forgásponttól, hol legyen 5 érme a jobb oldalon?",
+     "think_answer": "3 · 10 = 5 · k, tehát k = 6 cm."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Van-e súlya a levegőnek?",
+     "body": "A levegőnek van tömege: 1 m³ kb. 1,2 kg. A felfújt léggömbbel a kísérlet mégis félrevezető, mert a léggömb a kiszorított levegő miatt felhajtóerőt kap, és ez majdnem pontosan kiegyenlíti a benne lévő levegő súlyát. Merev, felfújt labdánál (például focilabdánál) nem változik a térfogat, ezért kimutatható a különbség. Egy 5 literes labdában 1,8 bar abszolút nyomásnál kb. 5 · 1,2 · 1,8 ≈ 10,8 g levegő van, kiengedés után (1 bar) kb. 6 g, tehát a mérleg kb. 5 g-mal kevesebbet mutat.",
+     "did_you_know": "",
+     "think": "Miért nem mutat lényeges különbséget a mérleg egy felfújt és egy leeresztett léggömbnél?",
+     "think_answer": "Mert a felfújt léggömb a kiszorított levegő miatt felhajtóerőt kap, ami majdnem egyenlő a benne lévő levegő súlyával."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A fogó, a kétkarú emelő",
+     "body": "A fogó két, közös csuklóval összekapcsolt kétkarú emelő. Ha a nyél 15 cm, a pofa a csuklótól 3 cm-re fogja meg az anyagot, akkor az erő 15 : 3 = 5-szörösére nő: 50 N kézerőből 250 N szorítóerő lesz. Az oldalcsípő fogó a vágóéllel a csuklóhoz közel dolgozik, hogy minél nagyobb erőt fejtsen ki. Ez az emelő törvénye: F₁ · k₁ = F₂ · k₂. Az erő nyeresége az út rovására megy: a kezünk többet mozdul, mint a pofa.",
+     "did_you_know": "",
+     "think": "Miért érdemes a kemény drótot a fogó csuklójához közel vágni?",
+     "think_answer": "Mert ott kisebb az erőkar a pofa oldalán, így ugyanakkora kézerőből nagyobb vágóerő lesz."
+    }
+   ]
+  },
+  {
+   "lesson_id": "6bae0a9f-5407-4eb7-979a-51bbd1fd783e",
+   "title_hu": "Gépek teljesítménye és hatásfoka",
+   "text_block_id": "703edfb9-fd12-4b12-a7fc-49f5304cc2de",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Teljesítmény számokban",
+     "body": "A teljesítmény P = W : t, egysége a watt (1 W = 1 J/s). Ha egy 60 kg-os ember 3 méter magas lépcsőt 6 s alatt megmászik, a munkája W = m · g · h = 60 · 9,81 · 3 ≈ 1766 J, a teljesítménye pedig 1766 : 6 ≈ 294 W. A gépkocsik teljesítményét sokáig lóerőben adták meg; 1 metrikus lóerő kb. 735 W. Ugyanazt a munkát nagyobb teljesítményű gép rövidebb idő alatt végzi el, de a munka nem lesz kisebb.",
+     "did_you_know": "A gőzgépek jellemzésére James Watt vezette be a lóerőt; a teljesítmény SI-mértékegysége, a watt az ő nevét viseli.",
+     "think": "Egy 800 W-os motor 20 s alatt mennyi munkát végez?",
+     "think_answer": "W = P · t = 800 · 20 = 16 000 J."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A hatásfok számolása",
+     "body": "A hatásfok η = hasznos teljesítmény : felvett teljesítmény. Ha egy villanymotor 500 W-ot vesz fel és 400 W-ot ad le mechanikai teljesítményként, akkor η = 400 : 500 = 80%. A benzinmotorok hatásfoka jellemzően 25–35%, a dízeleké 35–45%, a villanymotoroké 85–95%. A hiányzó energia nem tűnik el: főleg hővé alakul (súrlódás, hőleadás). Ez összhangban van az energia megmaradásával, és azzal, hogy a hatásfok valós gépnél mindig 100% alatt van. Az indukciós főzőlapnál a 90% azt jelenti, hogy a felvett energia 90%-a jut az edénybe.",
+     "did_you_know": "",
+     "think": "Egy motor 2000 W-ot vesz fel és 1500 W mechanikai teljesítményt ad le. Mekkora a hatásfoka, és hová lesz a többi?",
+     "think_answer": "η = 1500 : 2000 = 75%; a hiányzó 500 W főleg hővé alakul."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Mennyit spórol egy jobb hatásfokú eszköz?",
+     "body": "A modern eszközök kevesebb energiával ugyanazt a hasznos munkát végzik. Egy 60 W-os izzó és egy ugyanolyan fényű, 10 W-os LED közötti különbség 50 W. Ha naponta 3 órát világít, évente 50 W · 3 h · 365 ≈ 55 kWh energiát takarít meg. A villanymotorok, hűtők és mosógépek energiaosztálya hasonlóan mutatja, mennyi energiát fogyaszt az eszköz. Az újabb eszköz gyártása azonban szintén energiát igényel, ezért nem mindig érdemes azonnal lecserélni a régi, működő gépet.",
+     "did_you_know": "",
+     "think": "Mennyi energiát takarít meg a 10 W-os LED a 60 W-os izzóhoz képest napi 4 óra használatnál?",
+     "think_answer": "50 W · 4 h = 200 Wh = 0,2 kWh naponta."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyit halad a kerékpár egy pedálfordulat alatt?",
+     "body": "A kerékpáron a lánckerék és a hátsó fogaskerék fogszámának aránya az áttétel. Ha az első lánckeréken 44, a hátsó fogaskeréken 11 fog van, az áttétel 4 : 1, vagyis egy pedálfordulat alatt a hátsó kerék négyszer fordul körbe. Ha a kerék kerülete 2,1 m, akkor egy pedálfordulatra 8,4 m út jut; 60 fordulat/percnél ez 504 m/perc, azaz 8,4 m/s, kb. 30 km/h. A lánchajtás hatásfoka jól karbantartott kerékpárnál kb. 95–98%, a többi veszteség főleg súrlódás, ezért fontos a kenés.",
+     "did_you_know": "",
+     "think": "Mekkora sebességgel halad a kerékpár, ha az áttétel 4 : 1, a kerék kerülete 2,1 m, a kerékpáros percenként 60-at fordul a pedállal?",
+     "think_answer": "Egy pedálfordulatra 4 · 2,1 = 8,4 m jut, így v = 60 · 8,4 : 60 = 8,4 m/s ≈ 30 km/h."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mit találunk egy ceruzahegyezőben?",
+     "body": "A kézi ceruzahegyező pengéje ék, vagyis az egyszerű gép egy fajtája: a ceruza fáját fokozatosan szeli. A hegyező tengelye és háza tartja a pengét, és a ceruza forgatásával kell a munkát elvégezni. Elektromos hegyezőben már motor is van. Szétszedéskor érdemes fényképet készíteni a sorrendről, és csak olyan eszközt bontani, amely nincs hálózatra kötve. Egyes készülékekben, például a mikrohullámú sütőben, a kondenzátor a kihúzás után is veszélyes töltést tarthat.",
+     "did_you_know": "",
+     "think": "Miért veszélyes szétszedni egy mikrohullámú sütőt?",
+     "think_answer": "Mert a kondenzátora a kihúzás után is veszélyesen nagy feszültségű töltést tarthat."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "A csavar, a feltekert lejtő",
+     "body": "A csavar egy hengerre tekert lejtő. A menetemelkedés az az út, amennyit a csavar egy körülfordulás alatt előrehalad. Az M10-es szabványos csavarnál ez 1,5 mm. Ha a csavarkulcs 20 cm hosszú, egy fordulat alatt a kezünk 2π · 0,2 ≈ 1,26 m = 1257 mm utat tesz meg, míg a csavar 1,5 mm-t halad, az elméleti erőnyereség tehát kb. 1257 : 1,5 ≈ 838-szoros (súrlódás nélkül). A valóságban a súrlódás sok erőt elvesz, ugyanakkor ez tartja a csavart a helyén.",
+     "did_you_know": "",
+     "think": "Miért nem lazul ki magától a csavar, ha nem hat rá erő?",
+     "think_answer": "Mert a menetek közötti súrlódás megakadályozza, hogy magától visszacsússzon, ezt nevezzük önzárásnak."
+    }
+   ]
+  },
+  {
+   "lesson_id": "ec8400b0-1571-416d-b6ff-b2f3ca17efb3",
+   "title_hu": "Történelmi gépek és technológiák",
+   "text_block_id": "74e99c61-eeb8-4690-ad40-d609ad6410ad",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Watt nem a gőzgépet találta fel",
+     "body": "A gőzgép Watt előtt is létezett: Thomas Newcomen gépe 1712-ben már működött. Ez azonban rengeteg szenet fogyasztott, mert a hengert minden ütemben újra kellett melegíteni és hűteni. Watt az 1760-as években külön kondenzátort ötlött ki, így a henger végig forró maradhatott, a gép hatásfoka megnőtt. A korai gőzgépek hatásfoka még így is csak néhány százalék volt. Ma a gőz elve az erőművekben él tovább: a gőzturbinák hajtják a generátorokat, a mozdonyok többsége pedig már villamos vagy dízelmotoros.",
+     "did_you_know": "A teljesítmény SI-mértékegysége, a watt James Watt nevét viseli.",
+     "think": "Miért volt jelentős fejlesztés a külön kondenzátor?",
+     "think_answer": "Mert így nem kellett a hengert minden ütemben lehűteni és újra felmelegíteni, ezért kevesebb hő ment kárba."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A hajítógép, az emelő elvén",
+     "body": "A hajítógép, például az ellensúlyos trebuchet, hosszú kar és nehéz ellensúly segítségével dobja el a lövedéket. A hosszú kar végén nagy a sebesség (v = ω · r), ezért a lövedék gyorsan indul, és több száz métert is repülhet. A hajítógép az emelő elvén alapul, és a kar mozgási energiája adja át a lövedéknek az energiát. A rakéták és a lövegek később átvették a nagy hatótávú eszközök szerepét, de működésük más: a rakéta a kiáramló gáz visszahatásával mozog, az ágyú lövedékét pedig a gázok nyomása gyorsítja fel.",
+     "did_you_know": "",
+     "think": "Miért hosszú a hajítógép karja?",
+     "think_answer": "Mert a kar végén nagy a sebesség, így a lövedék gyorsan indul és messze repül."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A lyukkártya, a programozás előfutára",
+     "body": "Joseph Marie Jacquard szövőgépét 1804 körül szabadalmaztatták. A szövet mintáját lyukkártyák tárolták: a lyuk helyén a horog felemeli a szálat, ahol nincs lyuk, ott a szál marad. Ez egyfajta kétállapotú (bináris) információ. A lyukkártya elve később hatott a számítógépek fejlődésére is: Charles Babbage Analytical Engine tervében szintén lyukkártyákat használt volna. A gép a minták szövését automatizálta, ezért kevesebb szövőmunkás kellett, ami a korabeli szövők ellenállását is kiváltotta.",
+     "did_you_know": "Ada Lovelace szerint az Analytical Engine algebrai mintákat sző, ahogy a Jacquard-szövőgép virágokat és leveleket.",
+     "think": "Hogyan tárolja a Jacquard-gép a szövet mintáját?",
+     "think_answer": "Lyukkártyákon: a lyuk azt jelenti, hogy a szál felemelkedik, a lyuk hiánya azt, hogy a szál lent marad."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A Pascaline",
+     "body": "Blaise Pascal 1642-ben, 19 évesen készítette az első összeadó gépét, hogy segítsen apjának, aki adószedő volt. A gép fogaskerekekből állt: amikor egy számjegykerék 9-ről 0-ra fordult, egy szerkezet a következő kereket eggyel továbbforgatta, ez a tizes átvitel. Kivonni a kiegészítő számok segítségével lehetett. A gép megbízhatósága korlátozott volt, ezért kevesen vették meg. A számológépek tehát elősegítették a pontosabb számítást, de a tudományos munka terjedéséhez sokkal több kellett.",
+     "did_you_know": "Pascalról nevezték el a nyomás mértékegységét, a paszkált is.",
+     "think": "Hogyan „viszi át” a Pascaline a tizest?",
+     "think_answer": "Amikor egy számjegykerék 9-ről 0-ra fordul, egy szerkezet a következő kereket eggyel továbbforgatja."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A négyütemű motor",
+     "body": "A négyütemű belső égésű motor ütemei: szívás, sűrítés, munka (égés) és kipufogás. Nikolaus Otto 1876-ban készítette el az első működő ilyen motort, Karl Benz pedig 1885–86-ban építette az első benzinmotoros autót. A sűrítéskor a gázon munkát végzünk, az égés közben nyomás keletkezik, ez tolja a dugattyút. A benzinmotor hatásfoka jellemzően 25–35%, a többi hő formájában a kipufogóval és a hűtővel távozik. Ezért előnyös az elektromos hajtás: a villanymotor hatásfoka jóval magasabb.",
+     "did_you_know": "",
+     "think": "Sorold fel a négyütemű motor négy ütemét!",
+     "think_answer": "Szívás, sűrítés, munka (égés és tágulás), kipufogás."
+    }
+   ]
+  },
+  {
+   "lesson_id": "52906fb2-9a74-42ff-a34e-cff5b8f3b350",
+   "title_hu": "A jövő gépei: robotok és mesterséges intelligencia",
+   "text_block_id": "0369ce26-a244-4cf6-a120-5dea50aee63e",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Érzékel, dönt, cselekszik",
+     "body": "Minden robot három lépést ismétel: érzékeli a környezetét, dönt, majd cselekszik. A robotporszívó ütközésérzékelővel és infravörös érzékelővel vagy lézeres távolságmérővel (lidar) figyeli a falakat, a program alapján dönt az útvonalról, és a motorokkal mozog. Az egyszerű robotporszívó véletlenszerű útvonalon halad, a drágábbak térképet építenek a szobáról. A három lépés egyfajta szabályozási kör: a cselekvés megváltoztatja a környezetet, amit az érzékelők újra észlelnek.",
+     "did_you_know": "",
+     "think": "Melyik három lépést ismétli minden robot?",
+     "think_answer": "Érzékel, dönt, cselekszik."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Mit tud az ajánlórendszer?",
+     "body": "A streaming szolgáltatások ajánlásai statisztikai mintákra épülnek: a rendszer az ízlésünkhöz hasonló felhasználók választásait keresi. Ehhez adatot gyűjt arról, mit nézünk és meddig. Az ajánlás kényelmes, de azt is jelentheti, hogy mindig ugyanolyan tartalmat látunk, vagyis szűkül a választékunk. Az adatgyűjtésre az európai adatvédelmi szabályok (GDPR) szerint hozzájárulás kell, és 13 éven aluliaknál a szülő hozzájárulása is szükséges lehet.",
+     "did_you_know": "",
+     "think": "Miért fontos tudni, milyen adatot gyűjt rólunk egy alkalmazás?",
+     "think_answer": "Mert az adataink személyes információk, és jogunk van tudni, mire használják őket."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Hogyan tanul a gép?",
+     "body": "A gépi tanulás a mesterséges intelligencia egyik ága: a program nem szabályokat kap, hanem példákból tanul. Például több ezer címkézett képből tanul meg különbséget tenni macska és kutya között. A tanítás után a rendszert olyan képeken teszteljük, amelyeket még nem látott. A pontosság a tanítóadat minőségétől függ: ha a gép csak napsütésben készült képeket látott, esőben rosszabbul működhet. A használat közben a legtöbb alkalmazás nem tanul tovább, csak az új verzió tanítása után frissül.",
+     "did_you_know": "",
+     "think": "Mi lehet a probléma, ha a gép csak napos időben készült képeken tanult?",
+     "think_answer": "Esőben vagy sötétben rosszabbul ismerhet fel, mert ilyen példákat nem látott."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Az önvezetés szintjei",
+     "body": "Az autóipari szabvány (SAE J3016) hat szintet különböztet meg, 0-tól 5-ig. A 0. szinten az ember mindent maga csinál, a 2. szinten az autó kormányoz és gyorsít is, de az embernek figyelnie kell, az 5. szinten az autó minden helyzetben önállóan vezet. A legtöbb ma kapható autó legfeljebb a 2. szintű asszisztenseket kínálja. Az önvezető autók több érzékelőt használnak együtt: kamerát, radart, lidart, mert az egyik gyengeségét a másik pótolja, például a kamera nehezen lát ködben, a radar viszont nem érzi a színeket.",
+     "did_you_know": "",
+     "think": "Miért használnak egyszerre többféle érzékelőt az önvezető autók?",
+     "think_answer": "Mert az egyik érzékelő gyengeségét a másik pótolja."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Amit a gép nem vesz át egykönnyen",
+     "body": "Az automatizáció a feladatokat veszi át, nem feltétlenül a teljes munkakört. A gépesítés története azt mutatja, hogy egyes munkák megszűnnek, mások átalakulnak, újak keletkeznek: a szövőgépek megjelenésével kevesebb szövőmunkás kellett, de gépkarbantartókra és tervezőkre is szükség lett. Ma még nehezen automatizálhatók az összetett kézügyességet, a kreativitást és az emberi kapcsolatot igénylő feladatok. Az alkalmazkodáshoz folyamatos tanulásra van szükség, ez a tanulás már ma elkezdődik.",
+     "did_you_know": "",
+     "think": "Melyik tulajdonságok nehezen automatizálhatók ma?",
+     "think_answer": "A kreativitás, az empátia és az összetett kézügyesség."
+    }
+   ]
+  }
+ ]
+}
