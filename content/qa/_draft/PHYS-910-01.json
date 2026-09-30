@@ -1,0 +1,339 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "138441a5-3033-4abb-986a-7ae9f4fe2305",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„az elmozdulás a kezdeti és a végpont közötti távolságot jelenti”",
+   "explanation": "Az elmozdulás irányított mennyiség (vektor): a kezdőpontból a végpontba mutató egyenes szakasz. Nagysága a két pont közötti egyenes távolság. Kör alakú mozgásnál az út 400 m lehet, az elmozdulás nulla.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Displacement_(geometry)",
+     "title": "Displacement (geometry)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "míg az elmozdulás a kezdeti és a végpont közötti távolságot jelenti",
+     "míg az elmozdulás a kezdőpontból a végpontba mutató irányított egyenes szakasz (nagysága a két pont közötti egyenes távolság)"
+    ]
+   ]
+  },
+  {
+   "block_id": "138441a5-3033-4abb-986a-7ae9f4fe2305",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A lejtő meredeksége és a golyó anyaga befolyásolja a mozgás sebességét”",
+   "explanation": "Súrlódásmentes esetben a gyorsulás csak a lejtő szögétől függ (a·sin α), a tömegtől és az anyagtól nem. Az anyag csak a súrlódáson és a gördülési ellenálláson keresztül számít.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Inclined_plane",
+     "title": "Inclined plane",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A lejtő meredeksége és a golyó anyaga befolyásolja a mozgás sebességét.",
+     "A lejtő meredeksége határozza meg a gyorsulást; a golyó anyaga csak a súrlódáson és a gördülési ellenálláson keresztül számít."
+    ]
+   ]
+  },
+  {
+   "block_id": "d263c865-d485-48b4-8dd4-d6031a70f833",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A Mikola-csőben a buborék „a súrlódás és a nehézségi erő hatására” halad egyenletes sebességgel",
+   "explanation": "A buborékot a felhajtóerő hajtja felfelé, a közegellenállás (a folyadék fékező hatása) fékezi. Ha a két erő kiegyenlíti egymást, a buborék állandó sebességgel halad. A nehézségi erő a buborékra a folyadékhoz képest elhanyagolható.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Buoyancy",
+     "title": "Buoyancy",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Terminal_velocity",
+     "title": "Terminal velocity",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a súrlódás és a nehézségi erő hatására",
+     "a felhajtóerő és a közegellenállás egyensúlya miatt"
+    ]
+   ]
+  },
+  {
+   "block_id": "d263c865-d485-48b4-8dd4-d6031a70f833",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az Eötvös-inga „a földi nehézségi erő mérésére szolgál”; „a gyorsulás mértékét is meghatározhatjuk”",
+   "explanation": "Az Eötvös-féle torziós inga a nehézségi erő térbeli változását (gradiensét) méri, nem a gyorsulás értékét. Az ingát ásványkincsek és olaj keresésére használták.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Eötvös_torsion_balance",
+     "title": "Eötvös torsion balance",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Loránd_Eötvös",
+     "title": "Loránd Eötvös",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "az Eötvös inga kifejlesztése, amely a földi nehézségi erő mérésére szolgál",
+     "az Eötvös-inga kifejlesztése, amely a nehézségi erő térbeli változásának mérésére szolgál"
+    ],
+    [
+     "Az inga lengése közben a testek mozgásának megfigyelésével a gyorsulás mértékét is meghatározhatjuk.",
+     "A torziós inga elfordulásából a nehézségi erő kis helyi változásait lehet kimutatni, ezért ásványkincsek és olaj keresésére is használták."
+    ]
+   ]
+  },
+  {
+   "block_id": "dfd4f409-d34a-4b32-a6f4-17eeb4f34338",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Ha a súrlódás kisebb, mint a gravitációs erő, a könyv gyorsan lecsúszik”",
+   "explanation": "A csúszást nem a teljes nehézségi erőhöz, hanem annak lejtővel párhuzamos összetevőjéhez kell hasonlítani: a test akkor gyorsul lefelé, ha ez nagyobb a súrlódási erőnél.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Inclined_plane",
+     "title": "Inclined plane",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ha a súrlódás kisebb, mint a gravitációs erő, a könyv gyorsan lecsúszik.",
+     "Ha a súrlódás kisebb, mint a gravitációs erő lejtővel párhuzamos összetevője, a könyv lecsúszik."
+    ]
+   ]
+  },
+  {
+   "block_id": "dfd4f409-d34a-4b32-a6f4-17eeb4f34338",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Használj digitális stopperórát, hogy minimalizáld az emberi hibát”",
+   "explanation": "A stopperóra pontosságától függetlenül a kézi indítás és leállítás reakcióideje (kb. 0,15–0,25 s) hibát okoz. Rövid esési időknél ez jelentős. Fényrekesszel vagy videóelemzéssel pontosabb a mérés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Reaction_time",
+     "title": "Reaction time",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Használj digitális stopperórát, hogy minimalizáld az emberi hibát.",
+     "A digitális stopperóra sem szünteti meg a kézi indítás reakcióidejéből (kb. 0,2 s) adódó hibát, ezért érdemes videóelemzést vagy fényrekeszes időmérést használni."
+    ]
+   ]
+  },
+  {
+   "block_id": "eaa775ab-7bf5-4483-a123-9d622e8b3c8b",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Galilei „volt az első, aki kísérletekkel vizsgálta a mozgás törvényeit”",
+   "explanation": "Galilei úttörő volt a kísérletes és mérésen alapuló mozgástanban, de az „első” túlzás. A leejtett testek egyenlő gyorsulása levegőben nem pontosan teljesül.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+     "title": "Galileo Galilei",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ő volt az első, aki kísérletekkel vizsgálta a mozgás törvényeit",
+     "Ő volt az egyik első, aki kísérletekkel és méréssel vizsgálta a mozgás törvényeit"
+    ]
+   ]
+  },
+  {
+   "block_id": "eaa775ab-7bf5-4483-a123-9d622e8b3c8b",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az érintőképernyő gyors húzása „a telefon gyorsulása”; a gyorsulás érzése azt jelenti, hogy a telefon gyorsan feldolgozza a parancsokat",
+   "explanation": "Az érintőképernyő húzása az ujj helyzetének érzékelése, nem a telefon gyorsulása. A gyorsulás fogalmának a feldolgozási sebességhez nincs köze. A telefon gyorsulásmérője (akcelerométer) viszont a készülék tényleges gyorsulását érzékeli.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Accelerometer",
+     "title": "Accelerometer",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Például, amikor használod a telefonodat, és az érintőképernyőt gyorsan húzod, a telefon gyorsulását tapasztalod.",
+     "Például a telefonod gyorsulásmérője (akcelerométer) érzékeli, ha elfordítod vagy megrázod a készüléket."
+    ],
+    [
+     "Az alkalmazások azonnal reagálnak, és a gyorsulás érzése azt jelenti, hogy a telefon gyorsan feldolgozza a parancsokat.",
+     "Az alkalmazások erre reagálnak, például elforgatják a képernyőt."
+    ]
+   ]
+  },
+  {
+   "block_id": "06eb1a49-72e7-45c6-a1e6-3ded83a6c79e",
+   "card_index": 0,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A Mikola-csőben a buborék egyenletes mozgása „mivel a víz áramlása stabil”",
+   "explanation": "A víz a csőben nyugszik; a buborék állandó sebességét a felhajtóerő és a közegellenállás egyensúlya okozza.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Buoyancy",
+     "title": "Buoyancy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "A buborék a Mikola-csőben egyenes vonalú, közel állandó sebességű mozgást végez, mert a felhajtóerő és a közegellenállás egyensúlyban van."
+   }
+  },
+  {
+   "block_id": "06eb1a49-72e7-45c6-a1e6-3ded83a6c79e",
+   "card_index": 4,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Eötvös Loránd „a gravitációs törvények … kutatója”",
+   "explanation": "Eötvös a nehézségi erő kis változásait és a tehetetlen és nehéz tömeg egyenlőségét mérte, gravitációs törvényt nem fedezett fel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Loránd_Eötvös",
+     "title": "Loránd Eötvös",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "Eötvös Loránd fizikus volt: a nehézségi erő kis helyi változásait mérte az Eötvös-ingával, és igazolta a nehéz és a tehetetlen tömeg egyenlőségét."
+   }
+  },
+  {
+   "block_id": "04f729cf-9f3b-42d5-8836-a7fc017cba77",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mennyi ideig esik egy test 5 méter magasból?” – kulcs B) 2 s",
+   "explanation": "t = √(2 · 5 : 9,81) ≈ 1,01 s, tehát A) 1 s a helyes válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Free_fall",
+     "title": "Free fall",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "correct": "A"
+   }
+  },
+  {
+   "block_id": "04f729cf-9f3b-42d5-8836-a7fc017cba77",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A lejtőn csúszó test sebessége „fokozatosan növekszik, amíg a súrlódás nem lassítja le”",
+   "explanation": "Súrlódásmentes lejtőn a sebesség egyenletesen nő. Súrlódás esetén a test állandó sebességgel is csúszhat, vagy meg is állhat, ha a súrlódás elég nagy.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Inclined_plane",
+     "title": "Inclined plane",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Hogyan változik a súrlódásmentes lejtőn csúszó test sebessége?",
+    "explanation": "Súrlódásmentes lejtőn a nehézségi erő lejtővel párhuzamos összetevője állandó gyorsulást okoz, ezért a sebesség egyenletesen nő."
+   }
+  },
+  {
+   "block_id": "f3a545f7-0cc5-468b-8da1-99802724c063",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "Tizedesvessző helyett tizedespont és „t^2” az összefüggésben",
+   "explanation": "Magyar számformátum: tizedesvessző, és a négyzetet felső indexszel írjuk.",
+   "source_note": "magyar számírás és jelölés",
+   "set": {
+    "options[0]": "A) s = v0 · t + 0,5 · a · t²",
+    "options[1]": "B) s = v · t",
+    "options[2]": "C) s = a · t²",
+    "options[3]": "D) s = v0 + a"
+   }
+  },
+  {
+   "block_id": "87095470-7a4e-4606-b332-c9baa8c58005",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Az átlagsebesség „az elmozdulás és az idő hányadosa” (kulcs A)",
+   "explanation": "A tananyag és a lecke kvíze szerint az átlagsebesség az összes megtett út és az idő hányadosa (v = s : t). Az elmozdulás és az idő hányadosa az átlagos sebességvektor.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Speed",
+     "title": "Speed",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) Az összes megtett út és az eltelt idő hányadosaként.",
+    "explanation": "Az átlagsebesség az összes megtett út és az ehhez szükséges idő hányadosa."
+   }
+  },
+  {
+   "block_id": "4deea59f-1b7f-4d91-8a13-8358ef01a5a7",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 1600-as évek elején”",
+   "explanation": "Magánhangzóval kezdődő szám előtt az névelő áll.",
+   "source_note": "magyar helyesírás, névelőhasználat (a/az)",
+   "replace": [
+    [
+     "Galileo Galilei a 1600-as évek elején",
+     "Galileo Galilei az 1600-as évek elején"
+    ]
+   ]
+  }
+ ]
+}
