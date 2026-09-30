@@ -1,0 +1,1511 @@
+{
+ "nat_id": "HIST-1112-12",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 16,
+  "cards": 91,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-1112-12-001",
+   "lesson_id": "0bf544bb-4778-439a-87dc-e19f4763eb53",
+   "block_id": "b834d269-443a-47b3-93b1-e2e7ef359903",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„az Egyesült Államok és a nyugat-európai államok … a jóléti állam kiépítése”; „Magyarországon is hatással volt a rendszerváltozásra”",
+   "explanation": "A klasszikus jóléti állam nyugat-európai (Nagy-Britannia: Beveridge-terv, NHS 1948; Svédország), az Egyesült Államokban kevésbé kiterjedt. A magyar rendszerváltásra gyakorolt hatás kitalált.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Welfare_state",
+     "title": "Welfare state",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/National_Health_Service",
+     "title": "National Health Service",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A jóléti állam olyan kormányzati rendszer, amely a társadalmi jólét biztosítására összpontosít, különböző szociális juttatások és szolgáltatások révén. A 20. század második felében a nyugati országok, mint például az Egyesült Államok és a nyugat-európai államok, jelentős lépéseket tettek a jóléti állam kiépítése érdekében. E rendszer célja a szegénység csökkentése, az egészségügyi ellátás biztosítása és az oktatás fejlesztése volt. A jóléti állam kialakulása fontos szerepet játszott a polgári jogok és a társadalmi egyenlőség előmozdításában, amely Magyarországon is hatással volt a rendszerváltozásra.",
+     "type": "text",
+     "heading": "A jóléti állam fogalma",
+     "key_term": "jóléti állam"
+    },
+    "after": {
+     "body": "A jóléti állam olyan kormányzati rendszer, amely a társadalmi jólét biztosítására összpontosít, különböző szociális juttatások és szolgáltatások révén. A 20. század második felében a nyugat-európai államok (például Nagy-Britannia az 1948-as Nemzeti Egészségügyi Szolgálattal, vagy Svédország) jelentős lépéseket tettek a jóléti állam kiépítése érdekében; az Egyesült Államokban kevésbé volt kiterjedt. E rendszer célja a szegénység csökkentése, az egészségügyi ellátás biztosítása és az oktatás fejlesztése volt. A jóléti állam kialakulása fontos szerepet játszott a polgári jogok és a társadalmi egyenlőség előmozdításában, és a hidegháborúban a nyugati rendszer vonzerejét is növelte.",
+     "type": "text",
+     "heading": "A jóléti állam fogalma",
+     "key_term": "jóléti állam"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-002",
+   "lesson_id": "0bf544bb-4778-439a-87dc-e19f4763eb53",
+   "block_id": "b834d269-443a-47b3-93b1-e2e7ef359903",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„VI. Pál hangsúlyozta a szekularizáció és az emancipáció fontosságát”",
+   "explanation": "VI. Pál befejezte a II. vatikáni zsinatot (1965), de az 1968-as Humanae vitae enciklikában elutasította a fogamzásgátlást; a szekularizációval szemben állt. Magyar vonatkozás: 1964-ben részleges megállapodás a Vatikán és a magyar állam között.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pope_Paul_VI",
+     "title": "Pope Paul VI",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Humanae_vitae",
+     "title": "Humanae vitae",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_Vatican_Council",
+     "title": "Second Vatican Council",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "VI. Pál pápa a 20. század második felében jelentős szereplője volt a katolikus egyház modernizációjának. Az ő pápasága alatt, 1963 és 1978 között, a katolikus egyház nyitottabbá vált a modern világ kihívásaival szemben. VI. Pál hangsúlyozta a szekularizáció és az emancipáció fontosságát, amely a társadalmi és vallási normák átalakulásához vezetett. A pápa üzenetei és reformjai hatással voltak a nyugati társadalmakra, így Magyarországra is, ahol a vallásos hagyományok és a modern értékek közötti feszültség érezhető volt.",
+     "type": "text",
+     "heading": "VI. Pál és a társadalmi változások",
+     "key_term": "VI. Pál"
+    },
+    "after": {
+     "body": "VI. Pál pápa a 20. század második felében jelentős szereplője volt a katolikus egyház modernizációjának. Az ő pápasága alatt, 1963 és 1978 között, a katolikus egyház nyitottabbá vált a modern világ kihívásaival szemben. VI. Pál befejezte a II. vatikáni zsinatot (1965), amely engedélyezte a nemzeti nyelvű liturgiát; az 1968-as Humanae vitae enciklikában azonban elutasította a fogamzásgátlást, ezzel szembement a szekularizálódó társadalmakkal. A pápa üzenetei és reformjai hatással voltak a nyugati társadalmakra, Magyarország és a Vatikán között 1964-ben részleges megállapodás született.",
+     "type": "text",
+     "heading": "VI. Pál és a társadalmi változások",
+     "key_term": "VI. Pál"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-003",
+   "lesson_id": "0bf544bb-4778-439a-87dc-e19f4763eb53",
+   "block_id": "b834d269-443a-47b3-93b1-e2e7ef359903",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a Reagan-féle gazdasági elvek … inspirálóan hatottak a reformpolitikai gondolkodásra” (Magyarországon)",
+   "explanation": "Alátámasztatlan hazai vonatkozás. Reagan valós hatása: adócsökkentés, fegyverkezési verseny (SDI, 1983), amely a Szovjetunió terheit növelte.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ronald_Reagan",
+     "title": "Ronald Reagan",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Strategic_Defense_Initiative",
+     "title": "Strategic Defense Initiative",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Ronald Reagan az Egyesült Államok elnöke volt 1981 és 1989 között, és a neoliberalizmus híveként ismert. Elnöksége alatt a gazdasági reformok célja a piaci szabadság növelése és a kormányzati beavatkozás csökkentése volt. Reagan politikája jelentős hatással volt a nyugati világ gazdasági struktúrájára, és hozzájárult a jóléti állam átalakulásához. Magyarországon a Reagan-féle gazdasági elvek a rendszerváltozás előtti időszakban is inspirálóan hatottak a reformpolitikai gondolkodásra.",
+     "type": "text",
+     "heading": "Ronald Reagan és a gazdasági politika",
+     "key_term": "Ronald Reagan"
+    },
+    "after": {
+     "body": "Ronald Reagan az Egyesült Államok elnöke volt 1981 és 1989 között, és a neoliberalizmus híveként ismert. Elnöksége alatt a gazdasági reformok célja a piaci szabadság növelése és a kormányzati beavatkozás csökkentése volt. Reagan politikája jelentős hatással volt a nyugati világ gazdasági struktúrájára, és hozzájárult a jóléti állam átalakulásához. Reagan a fegyverkezési versenyt is fokozta (csillagháborús terv, 1983), ami a Szovjetunió gazdasági terheit növelte.",
+     "type": "text",
+     "heading": "Ronald Reagan és a gazdasági politika",
+     "key_term": "Ronald Reagan"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-004",
+   "lesson_id": "0bf544bb-4778-439a-87dc-e19f4763eb53",
+   "block_id": "b834d269-443a-47b3-93b1-e2e7ef359903",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a '68-as események inspirálták a későbbi rendszerváltozási törekvéseket”",
+   "explanation": "Alátámasztatlan. Magyar vonatkozás: 1968-ban indult az új gazdasági mechanizmus, és magyar csapatok részt vettek Csehszlovákia megszállásában. A mondat elején „Az Egyesült Államokbeli” is nyelvileg hibás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Protests_of_1968",
+     "title": "Protests of 1968",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Warsaw_Pact_invasion_of_Czechoslovakia",
+     "title": "Warsaw Pact invasion of Czechoslovakia",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az 1968-as mozgalmak világszerte a fiatalok és a különböző társadalmi csoportok elégedetlenségét tükrözték a politikai és gazdasági viszonyokkal szemben. Ezek a mozgalmak a társadalmi igazságosság, a szexuális forradalom és a polgári jogokért folytatott harc jegyében zajlottak. Az Egyesült Államokbeli diáktüntetések és a francia felkelések példát mutattak arra, hogy a fiatal generációk milyen mértékben képesek megkérdőjelezni a fennálló rendet. Magyarországon is érződött a hatásuk, hiszen a '68-as események inspirálták a későbbi rendszerváltozási törekvéseket.",
+     "type": "text",
+     "heading": "Az 1968-as mozgalmak hatása",
+     "key_term": "1968-as mozgalmak"
+    },
+    "after": {
+     "body": "Az 1968-as mozgalmak világszerte a fiatalok és a különböző társadalmi csoportok elégedetlenségét tükrözték a politikai és gazdasági viszonyokkal szemben. Ezek a mozgalmak a társadalmi igazságosság, a szexuális forradalom és a polgári jogokért folytatott harc jegyében zajlottak. Az amerikai diáktüntetések (a vietnami háború ellen) és az 1968. májusi francia felkelés példát mutattak arra, hogy a fiatal generációk milyen mértékben képesek megkérdőjelezni a fennálló rendet. Magyarországon 1968-ban az új gazdasági mechanizmus indult, és magyar csapatok részt vettek Csehszlovákia megszállásában.",
+     "type": "text",
+     "heading": "Az 1968-as mozgalmak hatása",
+     "key_term": "1968-as mozgalmak"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-005",
+   "lesson_id": "0bf544bb-4778-439a-87dc-e19f4763eb53",
+   "block_id": "b834d269-443a-47b3-93b1-e2e7ef359903",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A berlini fal lebontása 1989. november 9-én”",
+   "explanation": "1989. november 9-én a fal megnyílt; a tényleges lebontás 1990 nyarán kezdődött. Magyar vonatkozás: 1989. szeptember 11-én a magyar kormány megnyitotta a határt a kelet-német menekültek előtt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Berlin_Wall",
+     "title": "Berlin Wall",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Pan-European_Picnic",
+     "title": "Pan-European Picnic",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A berlini fal lebontása 1989. november 9-én jelentős esemény volt, amely a hidegháború végének szimbólumává vált. Ez a lépés nemcsak Németország, hanem Közép-Európa többi országára is hatással volt, hiszen elindította a kommunista rendszerek fokozatos felszámolását. Magyarországon a rendszerváltoztatás 1989-ben kezdődött, amely a demokratikus intézmények kiépítéséhez vezetett. A berlini fal lebontása és a magyarországi események összefonódtak, hiszen a két ország sorsa szorosan összefüggött a kétpólusú világ felbomlásával.",
+     "type": "text",
+     "heading": "A berlini fal lebontása és a rendszerváltozás",
+     "key_term": "1989 a berlini fal lebontása"
+    },
+    "after": {
+     "body": "A berlini fal 1989. november 9-én megnyílt (a tényleges lebontás 1990 nyarán kezdődött), ami a hidegháború végének szimbólumává vált. Ez a lépés nemcsak Németország, hanem Közép-Európa többi országára is hatással volt, hiszen elindította a kommunista rendszerek fokozatos felszámolását. Magyarországon a rendszerváltoztatás 1989-ben kezdődött, amely a demokratikus intézmények kiépítéséhez vezetett. A berlini fal lebontása és a magyarországi események összefonódtak, hiszen Magyarország 1989. szeptember 11-én megnyitotta a határát a kelet-német menekültek előtt.",
+     "type": "text",
+     "heading": "A berlini fal lebontása és a rendszerváltozás",
+     "key_term": "1989 a berlini fal lebontása"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-006",
+   "lesson_id": "6b6ec4bd-b249-4d86-bdd4-51b6a251b83b",
+   "block_id": "165d6823-4353-4556-b78c-3df806023bba",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A szocialista országok … a nyersanyagok drágulásával … szembesültek”",
+   "explanation": "A Szovjetunió olajexportőrként nyert az áremeléssel; a KGST-árak késleltetve követték a világpiaci árakat, az importőr Magyarország cserearány-romlást szenvedett és nyugati hitelekből fedezte a hiányt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1973_oil_crisis",
+     "title": "1973 oil crisis",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Comecon",
+     "title": "Comecon",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az 1973-as olajválság jelentős hatással volt a világ gazdaságára, különösen a tőkés és szocialista országokban. A nyugati országokban a magas üzemanyagárak inflációt és gazdasági stagnálást okoztak. A szocialista országok, beleértve Magyarországot is, a nyersanyagok drágulásával és a gazdasági teljesítmény csökkenésével szembesültek. Ez a helyzet hozzájárult a szocializmus válságának elmélyüléséhez, mivel a központi tervezés nem tudta kezelni a piaci változásokat.",
+     "type": "text",
+     "heading": "Az olajválság és hatásai",
+     "key_term": "olajválság"
+    },
+    "after": {
+     "body": "Az 1973-as olajválság jelentős hatással volt a világ gazdaságára, különösen a tőkés és szocialista országokban. A nyugati országokban a magas üzemanyagárak inflációt és gazdasági stagnálást okoztak. A Szovjetunió olajexportőrként nyert az áremeléssel, a KGST-árak azonban késéssel követték a világpiaci árakat, így az energiaimportőr Magyarország romló cserearányokkal szembesült, és nyugati hitelekből fedezte a hiányát. Ez a helyzet hozzájárult a szocializmus válságának elmélyüléséhez, mivel a központi tervezés nem tudta kezelni a piaci változásokat.",
+     "type": "text",
+     "heading": "Az olajválság és hatásai",
+     "key_term": "olajválság"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-007",
+   "lesson_id": "6b6ec4bd-b249-4d86-bdd4-51b6a251b83b",
+   "block_id": "165d6823-4353-4556-b78c-3df806023bba",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A kis hidegháború a 1970-es években zajlott”",
+   "explanation": "A hetvenes évek az enyhülés korszaka volt; a „második” (kis) hidegháború 1979–85 között zajlott (afganisztáni invázió, Reagan fegyverkezési programja). Nyelvtani hiba is: „a 1970-es”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_Cold_War",
+     "title": "Second Cold War",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Détente",
+     "title": "Détente",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A kis hidegháború a 1970-es években zajlott, amikor a Szovjetunió és a nyugati országok közötti feszültség újra fokozódott. Ez a konfliktus nemcsak katonai, hanem ideológiai síkon is megnyilvánult, és hatással volt a kelet-európai országok politikai helyzetére. A magyar társadalomban is érzékelhető volt a feszültség, amely a politikai ellenállás növekedéséhez vezetett. A kis hidegháború eseményei elősegítették a szocialista rendszer megkérdőjelezését a térség országaiban.",
+     "type": "text",
+     "heading": "A kis hidegháború",
+     "key_term": "kis hidegháború"
+    },
+    "after": {
+     "body": "A „második hidegháború” (kis hidegháború) az 1979–85 közötti időszak volt: az 1970-es évek enyhülése után a szovjet afganisztáni invázió (1979) és Reagan fegyverkezési programja újra fokozta a feszültséget. Ez a konfliktus nemcsak katonai, hanem ideológiai síkon is megnyilvánult, és hatással volt a kelet-európai országok politikai helyzetére. A magyar társadalomban is érzékelhető volt a feszültség, amely a politikai ellenállás növekedéséhez vezetett. A kis hidegháború eseményei elősegítették a szocialista rendszer megkérdőjelezését a térség országaiban.",
+     "type": "text",
+     "heading": "A kis hidegháború",
+     "key_term": "kis hidegháború"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-008",
+   "lesson_id": "6b6ec4bd-b249-4d86-bdd4-51b6a251b83b",
+   "block_id": "165d6823-4353-4556-b78c-3df806023bba",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A Szovjetunió gazdasági kimerülése a katonai egyensúly felborulásához vezetett”",
+   "explanation": "Zavaros ok-okozat. A fegyverkezési verseny terhelte a szovjet gazdaságot; 1987-ben Reagan és Gorbacsov aláírta a közepes hatótávolságú rakétákat betiltó INF-szerződést.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Intermediate-Range_Nuclear_Forces_Treaty",
+     "title": "Intermediate-Range Nuclear Forces Treaty",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Arms_race",
+     "title": "Arms race",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Szovjetunió gazdasági kimerülése a katonai egyensúly felborulásához vezetett, amely a hidegháborús időszak végéhez közeledett. A fegyverkezési verseny és a gazdasági problémák miatt a szovjet vezetés képtelen volt fenntartani a korábbi katonai erejét. Ez a helyzet destabilizálta a keleti blokkot, és hozzájárult a szocialista rendszerek válságához. A magyar politikai elit is érzékelte ezt a gyengülést, amely lehetőséget teremtett az ellenzéki mozgalmak számára.",
+     "type": "text",
+     "heading": "A katonai egyensúly felborulása",
+     "key_term": "katonai egyensúly"
+    },
+    "after": {
+     "body": "A fegyverkezési verseny gazdaságilag kimerítette a Szovjetuniót: a katonai kiadások a nemzeti jövedelem jelentős részét emésztették fel. 1987-ben Reagan és Gorbacsov aláírta a közepes hatótávolságú rakétákat betiltó INF-szerződést. A fegyverkezési verseny és a gazdasági problémák miatt a szovjet vezetés képtelen volt fenntartani a korábbi katonai erejét. Ez a helyzet destabilizálta a keleti blokkot, és hozzájárult a szocialista rendszerek válságához. A magyar politikai elit is érzékelte ezt a gyengülést, amely lehetőséget teremtett az ellenzéki mozgalmak számára.",
+     "type": "text",
+     "heading": "A katonai egyensúly felborulása",
+     "key_term": "katonai egyensúly"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-009",
+   "lesson_id": "6b6ec4bd-b249-4d86-bdd4-51b6a251b83b",
+   "block_id": "165d6823-4353-4556-b78c-3df806023bba",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Magyarországon az 1980-as évek elején megkezdődött az ellenzék szerveződése”",
+   "explanation": "A magyar demokratikus ellenzék az 1970-es évek végén szerveződött (Charta 77 támogatása 1977-ben), a Beszélő szamizdat 1981-től jelent meg. A Szolidaritás 1980 augusztusában alakult.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Solidarity_(Polish_trade_union)",
+     "title": "Solidarity (Polish trade union)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_democratic_opposition",
+     "title": "Hungarian democratic opposition",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A szocialista országokban, köztük Magyarországon, az 1980-as évek elején megkezdődött az ellenzék szerveződése. Az ellenzéki mozgalmak, mint például a Szolidaritás Lengyelországban, komoly hatást gyakoroltak a szocialista rendszerekre. Lech Wałęsa, a Szolidaritás vezetője, kulcsszereplővé vált a lengyel politikai életben, és a szakszervezeti mozgalom példát mutatott más országok számára is. Magyarországon a politikai ellenállás fokozatosan erősödött, és a társadalmi feszültségek növekedése hozzájárult a rendszer megdöntéséhez.",
+     "type": "text",
+     "heading": "Az ellenzék megszerveződése",
+     "key_term": "Szolidaritás"
+    },
+    "after": {
+     "body": "A szocialista országokban, köztük Magyarországon, az 1970-es évek végén kezdődött az ellenzék szerveződése (Magyarországon a demokratikus ellenzék, a Beszélő szamizdat 1981-től). Az ellenzéki mozgalmak, mint például a Szolidaritás Lengyelországban, komoly hatást gyakoroltak a szocialista rendszerekre. Lech Wałęsa, a Szolidaritás vezetője, kulcsszereplővé vált a lengyel politikai életben, és a szakszervezeti mozgalom példát mutatott más országok számára is. Magyarországon a politikai ellenállás fokozatosan erősödött, és a társadalmi feszültségek növekedése hozzájárult a rendszer megdöntéséhez.",
+     "type": "text",
+     "heading": "Az ellenzék megszerveződése",
+     "key_term": "Szolidaritás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-010",
+   "lesson_id": "6b6ec4bd-b249-4d86-bdd4-51b6a251b83b",
+   "block_id": "165d6823-4353-4556-b78c-3df806023bba",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A prágai tavasz … példát mutattak … hogy a szocializmus is reformálható, ami később inspirálta a magyar ellenzéki mozgalmakat”",
+   "explanation": "A megszállás épp azt mutatta meg, hogy Moszkva nem tűri a reformot (Brezsnyev-doktrína). Magyar vonatkozás: magyar csapatok is részt vettek.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Prague_Spring",
+     "title": "Prague Spring",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Brezhnev_Doctrine",
+     "title": "Brezhnev Doctrine",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A prágai tavasz 1968-ban zajlott Csehszlovákiában, amikor a reformerek megpróbálták liberalizálni a kommunista rendszert. A mozgalom célja a politikai pluralizmus és a gazdasági reformok bevezetése volt. A szovjet vezetés azonban a Varsói Szerződés csapataival bevonult az országba, és elfojtotta a reformokat. A prágai tavasz eseményei példát mutattak a kelet-európai országok számára, hogy a szocializmus is reformálható, ami később inspirálta a magyar ellenzéki mozgalmakat is.",
+     "type": "text",
+     "heading": "A prágai tavasz",
+     "key_term": "prágai tavasz"
+    },
+    "after": {
+     "body": "A prágai tavasz 1968-ban zajlott Csehszlovákiában, amikor a reformerek megpróbálták liberalizálni a kommunista rendszert. A mozgalom célja a politikai pluralizmus és a gazdasági reformok bevezetése volt. A szovjet vezetés azonban a Varsói Szerződés csapataival bevonult az országba, és elfojtotta a reformokat. A megszállás megmutatta, hogy Moszkva nem tűri a szocializmus reformját (Brezsnyev-doktrína); Magyarország csapatokkal vett részt a megszállásban.",
+     "type": "text",
+     "heading": "A prágai tavasz",
+     "key_term": "prágai tavasz"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-011",
+   "lesson_id": "6b6ec4bd-b249-4d86-bdd4-51b6a251b83b",
+   "block_id": "165d6823-4353-4556-b78c-3df806023bba",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A 1975-ös helsinki értekezlet … a nyugati és keleti blokk országai együttműködési megállapodásokat kötöttek”",
+   "explanation": "35 állam (az USA-val és Kanadával) írta alá a záróokmányt 1975. augusztus 1-jén; az emberi jogi vállalások később az ellenzék hivatkozási alapja lettek. Nyelvtani hiba: „A 1975”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Helsinki_Accords",
+     "title": "Helsinki Accords",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A 1975-ös helsinki értekezlet fontos mérföldkő volt a hidegháborús politikában, ahol a nyugati és keleti blokk országai együttműködési megállapodásokat kötöttek. A megállapodás célja a biztonság növelése és az emberi jogok védelme volt. A magyar kormány számára a helsinki záróokmány aláírása lehetőséget adott arra, hogy a nemzetközi közösség előtt legitimálja saját politikai rendszerét. Ugyanakkor a dokumentum tartalmazta az emberi jogok védelmét, ami később a magyar ellenzék számára is alapot biztosított.",
+     "type": "text",
+     "heading": "Helsinki értekezlet",
+     "key_term": "1975 a helsinki értekezlet"
+    },
+    "after": {
+     "body": "Az 1975-ös helsinki értekezlet fontos mérföldkő volt a hidegháborús politikában: 35 állam (az USA-val és Kanadával együtt) írta alá 1975. augusztus 1-jén a záróokmányt. A megállapodás célja a biztonság növelése és az emberi jogok védelme volt. A magyar kormány számára a helsinki záróokmány aláírása lehetőséget adott arra, hogy a nemzetközi közösség előtt legitimálja saját politikai rendszerét. Ugyanakkor a dokumentum tartalmazta az emberi jogok védelmét, ami később a magyar ellenzék számára is alapot biztosított.",
+     "type": "text",
+     "heading": "Helsinki értekezlet",
+     "key_term": "1975 a helsinki értekezlet"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-012",
+   "lesson_id": "6b6ec4bd-b249-4d86-bdd4-51b6a251b83b",
+   "block_id": "165d6823-4353-4556-b78c-3df806023bba",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Végül a 1989-es forradalom során” (a [6] kártya a [8]. kártya rövidebb ismétlése)",
+   "explanation": "Nyelvtani hiba („a 1989”); tartalmilag duplikátum, kivégzés dátuma (1989. december 25.) hiányzik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nicolae_Ceaușescu",
+     "title": "Nicolae Ceaușescu",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Romanian_Revolution",
+     "title": "Romanian Revolution",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Nicolae Ceaușescu, Románia kommunista vezetője, a szocializmus válságának egyik szimbolikus alakja lett. Ő a hatalom megszilárdítása érdekében egyre autoritáriusabb politikát folytatott, ami a társadalmi elégedetlenség növekedéséhez vezetett. A Ceaușescu-rezsim alatt a román nép elszenvedte a gazdasági nehézségeket és az emberi jogok megsértését. Végül a 1989-es forradalom során a nép fellázadt a diktatúra ellen, és Ceaușescut bíróság elé állították, majd kivégezték, ami a szocializmus bukásának egyik fontos pillanata volt.",
+     "type": "text",
+     "heading": "Nicolae Ceaușescu",
+     "key_term": "Nicolae Ceaușescu"
+    },
+    "after": {
+     "body": "Nicolae Ceaușescu, Románia kommunista vezetője, a szocializmus válságának egyik szimbolikus alakja lett. Ő a hatalom megszilárdítása érdekében egyre autoritáriusabb politikát folytatott, ami a társadalmi elégedetlenség növekedéséhez vezetett. A Ceaușescu-rezsim alatt a román nép elszenvedte a gazdasági nehézségeket és az emberi jogok megsértését. Végül az 1989-es forradalom során a nép fellázadt a diktatúra ellen, és Ceaușescut bíróság elé állították, majd kivégezték, ami a szocializmus bukásának egyik fontos pillanata volt.",
+     "type": "text",
+     "heading": "Nicolae Ceaușescu",
+     "key_term": "Nicolae Ceaușescu"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-013",
+   "lesson_id": "6b6ec4bd-b249-4d86-bdd4-51b6a251b83b",
+   "block_id": "165d6823-4353-4556-b78c-3df806023bba",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A [7], [9], [11] kártya három ismétlése ugyanannak (Wałęsa)",
+   "explanation": "Ismétlődő tartalom a [9]-ben és [11]-ben; a [9]-ben és a [11]-ben „szabad választások” 1989-ben helytelen (részben szabad volt, június 4.).",
+   "sources": [],
+   "apply": "none",
+   "source_note": "Szerkesztői észrevétel: a [7] és [11] törlendő, a [9] marad."
+  },
+  {
+   "id": "HIST-1112-12-014",
+   "lesson_id": "6b6ec4bd-b249-4d86-bdd4-51b6a251b83b",
+   "block_id": "165d6823-4353-4556-b78c-3df806023bba",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 9,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„elérte, hogy szabad választásokat tartsanak”",
+   "explanation": "Az 1989. június 4-i lengyel választás csak részben volt szabad (az alsóház mandátumainak 35 százaléka volt versenyző).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1989_Polish_legislative_election",
+     "title": "1989 Polish legislative election",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Polish_Round_Table_Agreement",
+     "title": "Polish Round Table Agreement",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Lech Wałęsa lengyel villanyszerelőként kezdte pályafutását, de a Szolidaritás szakszervezet vezetőjeként vált világszerte ismertté. Az 1980-as évek elején a lengyel munkások elégedetlensége nyomán alakult ki a Szolidaritás, amely az első független szakszervezet volt a szocialista blokkban. Wałęsa vezetésével a mozgalom jelentős szerepet játszott a kommunista rendszer meggyengítésében Lengyelországban. Az 1989-es kerekasztal-tárgyalások során a Szolidaritás elérte, hogy szabad választásokat tartsanak, ami a szocialista rendszer összeomlásához vezetett. Lech Wałęsa 1990-ben Lengyelország első szabadon választott elnöke lett, és jelentős szerepet játszott az ország demokratikus átalakulásában.",
+     "type": "text",
+     "heading": "Lech Wałęsa és a Szolidaritás mozgalom",
+     "key_term": "Lech Wałęsa"
+    },
+    "after": {
+     "body": "Lech Wałęsa lengyel villanyszerelőként kezdte pályafutását, de a Szolidaritás szakszervezet vezetőjeként vált világszerte ismertté. Az 1980-as évek elején a lengyel munkások elégedetlensége nyomán alakult ki a Szolidaritás, amely az első független szakszervezet volt a szocialista blokkban. Wałęsa vezetésével a mozgalom jelentős szerepet játszott a kommunista rendszer meggyengítésében Lengyelországban. Az 1989-es kerekasztal-tárgyalások során a Szolidaritás elérte, hogy részben szabad választásokat tartsanak (1989. június 4.), ami a szocialista rendszer összeomlásához vezetett. Lech Wałęsa 1990-ben Lengyelország első szabadon választott elnöke lett, és jelentős szerepet játszott az ország demokratikus átalakulásában.",
+     "type": "text",
+     "heading": "Lech Wałęsa és a Szolidaritás mozgalom",
+     "key_term": "Lech Wałęsa"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-015",
+   "lesson_id": "6b6ec4bd-b249-4d86-bdd4-51b6a251b83b",
+   "block_id": "165d6823-4353-4556-b78c-3df806023bba",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 10,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Lengyelországban … 1989-ben szabad választásokat tartottak”; „a 1980-as évek végén”",
+   "explanation": "Részben szabad választás volt (június 4.). Nyelvtan: „a 1980-as”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1989_Polish_legislative_election",
+     "title": "1989 Polish legislative election",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A rendszerváltoztatás Közép-Európában a szocialista rendszerek összeomlásának időszakát jelenti, amely a 1980-as évek végén és az 1990-es évek elején zajlott le. Magyarországon a politikai változások 1989-ben gyorsultak fel, amikor az Ellenzéki Kerekasztal tárgyalások eredményeként megkezdődött a többpártrendszerű demokrácia kiépítése. Lengyelországban a Szolidaritás mozgalom vezetésével 1989-ben szabad választásokat tartottak, ami a kommunista párt hatalmának végét jelentette. Csehszlovákiában a 'bársonyos forradalom' során 1989 novemberében békés úton távolították el a kommunista vezetést. A rendszerváltoztatás Közép-Európában nemcsak politikai, hanem gazdasági és társadalmi átalakulásokat is hozott, amelyek a mai napig meghatározzák a térség fejlődését.",
+     "type": "text",
+     "heading": "Rendszerváltoztatás Közép-Európában",
+     "key_term": "rendszerváltoztatás"
+    },
+    "after": {
+     "body": "A rendszerváltoztatás Közép-Európában a szocialista rendszerek összeomlásának időszakát jelenti, amely az 1980-as évek végén és az 1990-es évek elején zajlott le. Magyarországon a politikai változások 1989-ben gyorsultak fel, amikor az Ellenzéki Kerekasztal tárgyalások eredményeként megkezdődött a többpártrendszerű demokrácia kiépítése. Lengyelországban a Szolidaritás mozgalom vezetésével 1989-ben részben szabad választásokat tartottak (június 4.), ami a kommunista párt hatalmának végét jelentette. Csehszlovákiában a 'bársonyos forradalom' során 1989 novemberében békés úton távolították el a kommunista vezetést. A rendszerváltoztatás Közép-Európában nemcsak politikai, hanem gazdasági és társadalmi átalakulásokat is hozott, amelyek a mai napig meghatározzák a térség fejlődését.",
+     "type": "text",
+     "heading": "Rendszerváltoztatás Közép-Európában",
+     "key_term": "rendszerváltoztatás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-016",
+   "lesson_id": "6b6ec4bd-b249-4d86-bdd4-51b6a251b83b",
+   "block_id": "165d6823-4353-4556-b78c-3df806023bba",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 11,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1989-ben a kerekasztal-tárgyalások eredményeként szabad választásokat tartottak”",
+   "explanation": "Részben szabad választás volt (június 4.); a teljesen szabad választás 1991-ben történt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1989_Polish_legislative_election",
+     "title": "1989 Polish legislative election",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1991_Polish_parliamentary_election",
+     "title": "1991 Polish parliamentary election",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Lech Wałęsa lengyel villanyszerelőből lett politikai vezető, aki a Szolidaritás nevű független szakszervezet élén jelentős szerepet játszott a szocialista rendszer megrendülésében Lengyelországban. 1980-ban a gdański hajógyárban kezdődött sztrájk során vált ismertté, amikor a munkások követeléseinek élére állt. A Szolidaritás mozgalom az első független szakszervezet volt a keleti blokkban, amely a munkások jogaiért és politikai reformokért küzdött. Wałęsa vezetésével a mozgalom jelentős társadalmi támogatottságot szerzett, és hozzájárult a kommunista kormányzat tárgyalásokra kényszerítéséhez. 1989-ben a kerekasztal-tárgyalások eredményeként szabad választásokat tartottak, amelyek a kommunista rendszer bukásához vezettek Lengyelországban.",
+     "type": "text",
+     "heading": "Lech Wałęsa és a Szolidaritás mozgalom",
+     "key_term": "Lech Wałęsa"
+    },
+    "after": {
+     "body": "Lech Wałęsa lengyel villanyszerelőből lett politikai vezető, aki a Szolidaritás nevű független szakszervezet élén jelentős szerepet játszott a szocialista rendszer megrendülésében Lengyelországban. 1980-ban a gdański hajógyárban kezdődött sztrájk során vált ismertté, amikor a munkások követeléseinek élére állt. A Szolidaritás mozgalom az első független szakszervezet volt a keleti blokkban, amely a munkások jogaiért és politikai reformokért küzdött. Wałęsa vezetésével a mozgalom jelentős társadalmi támogatottságot szerzett, és hozzájárult a kommunista kormányzat tárgyalásokra kényszerítéséhez. 1989-ben a kerekasztal-tárgyalások eredményeként részben szabad választásokat tartottak (június 4.), amelyek a kommunista rendszer bukásához vezettek Lengyelországban.",
+     "type": "text",
+     "heading": "Lech Wałęsa és a Szolidaritás mozgalom",
+     "key_term": "Lech Wałęsa"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-017",
+   "lesson_id": "6b6ec4bd-b249-4d86-bdd4-51b6a251b83b",
+   "block_id": "165d6823-4353-4556-b78c-3df806023bba",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 12,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a kommunista párt lemondott hatalmáról, és szabad választásokra került sor” (1989-ben)",
+   "explanation": "Az MSZMP 1989 októberében szűnt meg (MSZP), a szabad választás 1990 tavaszán volt (március 25. és április 8.). A cikk a [10]. kártya ismétlése.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1990_Hungarian_parliamentary_election",
+     "title": "1990 Hungarian parliamentary election",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Socialist_Workers'_Party",
+     "title": "Hungarian Socialist Workers' Party",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A rendszerváltoztatás Közép-Európában a szocialista rendszerek összeomlásával és a demokratikus átalakulások megindulásával járt. Magyarországon 1989-ben kezdődött meg a politikai átmenet, amelynek során a kommunista párt lemondott hatalmáról, és szabad választásokra került sor. Lengyelországban a Szolidaritás mozgalom vezetésével tárgyalások kezdődtek, amelyek végül a kommunista kormány bukásához vezettek. Csehszlovákiában a bársonyos forradalom során békés úton sikerült elérni a politikai változásokat. A berlini fal 1989-es leomlása szimbolikus jelentőségű volt, és a két Németország egyesüléséhez vezetett. Ezek az események hozzájárultak a szocialista rendszerek végleges megrendüléséhez és a kétpólusú világ megszűnéséhez.",
+     "type": "text",
+     "heading": "Rendszerváltoztatás Közép-Európában",
+     "key_term": "rendszerváltoztatás"
+    },
+    "after": {
+     "body": "A rendszerváltoztatás Közép-Európában a szocialista rendszerek összeomlásával és a demokratikus átalakulások megindulásával járt. Magyarországon 1989-ben kezdődött meg a politikai átmenet, amelynek során a kommunista párt lemondott a hatalmi monopóliumról (a többpártrendszert 1989 elején elfogadták, az MSZMP októberben megszűnt), és 1990 tavaszán szabad választásokra került sor. Lengyelországban a Szolidaritás mozgalom vezetésével tárgyalások kezdődtek, amelyek végül a kommunista kormány bukásához vezettek. Csehszlovákiában a bársonyos forradalom során békés úton sikerült elérni a politikai változásokat. A berlini fal 1989-es leomlása szimbolikus jelentőségű volt, és a két Németország egyesüléséhez vezetett. Ezek az események hozzájárultak a szocialista rendszerek végleges megrendüléséhez és a kétpólusú világ megszűnéséhez.",
+     "type": "text",
+     "heading": "Rendszerváltoztatás Közép-Európában",
+     "key_term": "rendszerváltoztatás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-018",
+   "lesson_id": "1c3a0cfd-ea27-4c96-b4eb-0b0cb0c6d1de",
+   "block_id": "59c0000c-91a3-4d0d-9419-f5debafc412b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "„a berlini fal lebontása és a magyarországi rendszerváltozás Gorbacsov reformjainak közvetlen következménye volt”; „belső feszültségeinek csökkentéséhez”",
+   "explanation": "Túlzás: Gorbacsov 1988-ban az ENSZ-ben bejelentette, hogy a Szovjetunió nem avatkozik be szövetségesei belügyeibe („Sinatra-doktrína”), ez tette lehetővé 1989-et, de az eseményeket a helyi ellenzékek és a válság hozták. A reformok kiszabadították, nem csökkentették a belső feszültségeket.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mikhail_Gorbachev",
+     "title": "Mikhail Gorbachev",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Sinatra_Doctrine",
+     "title": "Sinatra Doctrine",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Mihail Sz. Gorbacsov 1985-ben került a Szovjetunió élére, és ő volt a peresztrojka, azaz a gazdasági reformok és a glasznoszty, vagyis a nyitottság politikájának bevezetője. Gorbacsov politikai reformjai hozzájárultak a Szovjetunió belső feszültségeinek csökkentéséhez, ugyanakkor elősegítették a kelet-európai országokban a kommunista rendszerek megdöntését. Magyarország számára Gorbacsov politikája lehetőséget teremtett a rendszerváltoztatásra, hiszen a szovjet vezetés nem avatkozott be a térség politikai folyamataiba. 1989-ben a berlini fal lebontása és a magyarországi rendszerváltozás Gorbacsov reformjainak közvetlen következménye volt.",
+     "type": "text",
+     "heading": "Mihail Sz. Gorbacsov szerepe",
+     "key_term": "Gorbacsov"
+    },
+    "after": {
+     "body": "Mihail Sz. Gorbacsov 1985-ben került a Szovjetunió élére, és ő volt a peresztrojka, azaz a gazdasági reformok és a glasznoszty, vagyis a nyitottság politikájának bevezetője. Gorbacsov reformjai felszabadították a belső feszültségeket, és elősegítették a kelet-európai országokban a kommunista rendszerek megdöntését. Magyarország számára Gorbacsov politikája lehetőséget teremtett a rendszerváltoztatásra, hiszen a szovjet vezetés nem avatkozott be a térség politikai folyamataiba. Gorbacsov 1988-ban az ENSZ-ben bejelentette, hogy a Szovjetunió nem avatkozik be a szövetségesek belügyeibe (a „Sinatra-doktrína”); ez tette lehetővé 1989 eseményeit, de azokat elsősorban a helyi ellenzékek és a válság hozta.",
+     "type": "text",
+     "heading": "Mihail Sz. Gorbacsov szerepe",
+     "key_term": "Gorbacsov"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-019",
+   "lesson_id": "1c3a0cfd-ea27-4c96-b4eb-0b0cb0c6d1de",
+   "block_id": "59c0000c-91a3-4d0d-9419-f5debafc412b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„jelentős moralelem”",
+   "explanation": "Nem szó; „erkölcsi tényező”. A pápa első lengyelországi látogatása 1979-ben volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pope_John_Paul_II",
+     "title": "Pope John Paul II",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "II. János Pál pápa 1978-ban lépett pápai hivatalba, és a kommunizmus ellenállásának szimbólumává vált. 1989-ben, amikor Magyarországon és más közép-európai országokban a rendszerváltozás elkezdődött, a pápa támogatása jelentős moralelem volt a változásokhoz. A pápai látogatás 1991-ben Magyarországon megerősítette a keresztény értékek szerepét a demokratikus átalakulásban. II. János Pál pápa üzenetei a szabadságról és az emberi jogokról inspirálóan hatottak a magyar társadalomra és politikai elitjére.",
+     "type": "text",
+     "heading": "II. János Pál pápa és a kommunista rendszer",
+     "key_term": "II. János Pál"
+    },
+    "after": {
+     "body": "II. János Pál pápa 1978-ban lépett pápai hivatalba, és a kommunizmus ellenállásának szimbólumává vált. 1989-ben, amikor Magyarországon és más közép-európai országokban a rendszerváltozás elkezdődött, a pápa erkölcsi támogatása jelentős tényező volt a változásokban. A pápai látogatás 1991-ben Magyarországon megerősítette a keresztény értékek szerepét a demokratikus átalakulásban. II. János Pál pápa üzenetei a szabadságról és az emberi jogokról inspirálóan hatottak a magyar társadalomra és politikai elitjére.",
+     "type": "text",
+     "heading": "II. János Pál pápa és a kommunista rendszer",
+     "key_term": "II. János Pál"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-020",
+   "lesson_id": "1c3a0cfd-ea27-4c96-b4eb-0b0cb0c6d1de",
+   "block_id": "59c0000c-91a3-4d0d-9419-f5debafc412b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Helmuth Kohl”",
+   "explanation": "A kancellár neve Helmut Kohl (egy t).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Helmut_Kohl",
+     "title": "Helmut Kohl",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Helmuth Kohl, Németország kancellárja, kulcsszerepet játszott Németország újraegyesítésében, amely 1990. október 3-án valósult meg. A berlini fal 1989-es lebontása után Kohl politikai és diplomáciai erőfeszítései hozzájárultak a kelet-német állam megszűnéséhez. Magyarország fontos szerepet játszott a német menekültek átjárásában, akik a magyar-osztrák határon keresztül jutottak el Nyugat-Németországba. A német újraegyesítés a kétpólusú világ végének szimbólumává vált, és Magyarország számára is új lehetőségeket teremtett a nyugati integrációban.",
+     "type": "text",
+     "heading": "Helmuth Kohl és a német újraegyesítés",
+     "key_term": "Helmuth Kohl"
+    },
+    "after": {
+     "body": "Helmut Kohl, Németország kancellárja, kulcsszerepet játszott Németország újraegyesítésében, amely 1990. október 3-án valósult meg. A berlini fal 1989-es lebontása után Kohl politikai és diplomáciai erőfeszítései hozzájárultak a kelet-német állam megszűnéséhez. Magyarország fontos szerepet játszott a német menekültek átjárásában, akik a magyar-osztrák határon keresztül jutottak el Nyugat-Németországba. A német újraegyesítés a kétpólusú világ végének szimbólumává vált, és Magyarország számára is új lehetőségeket teremtett a nyugati integrációban.",
+     "type": "text",
+     "heading": "Helmuth Kohl és a német újraegyesítés",
+     "key_term": "Helmuth Kohl"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-021",
+   "lesson_id": "1c3a0cfd-ea27-4c96-b4eb-0b0cb0c6d1de",
+   "block_id": "59c0000c-91a3-4d0d-9419-f5debafc412b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A magyar történelem szempontjából a Szovjetunió felbomlása lehetőséget teremtett … függetlenedjenek”",
+   "explanation": "Magyarország függetlenedése már korábban megtörtént: a szovjet csapatok 1991. június 19-én hagyták el az országot, a KGST június 28-án, a Varsói Szerződés július 1-jén szűnt meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
+     "title": "Dissolution of the Soviet Union",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Warsaw_Pact",
+     "title": "Warsaw Pact",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A Szovjetunió felbomlása 1991. december 26-án következett be, amikor a szovjet köztársaságok függetlenné váltak. A felbomlás előzményei között szerepeltek a gazdasági válság, a politikai reformok és a nemzeti mozgalmak erősödése. A magyar történelem szempontjából a Szovjetunió felbomlása lehetőséget teremtett a kelet-európai országok számára, hogy függetlenedjenek a szovjet befolyástól. Ez a folyamat hozzájárult a demokratikus intézmények kiépítéséhez és a nyugati integrációhoz.",
+     "type": "text",
+     "heading": "A Szovjetunió felbomlása",
+     "key_term": "Szovjetunió felbomlása"
+    },
+    "after": {
+     "body": "A Szovjetunió felbomlása 1991. december 26-án következett be, amikor a szovjet köztársaságok függetlenné váltak. A felbomlás előzményei között szerepeltek a gazdasági válság, a politikai reformok és a nemzeti mozgalmak erősödése. Magyarország számára a függetlenedés már korábban megtörtént: a szovjet csapatok 1991. június 19-én hagyták el az országot, a KGST 1991. június 28-án, a Varsói Szerződés 1991. július 1-jén szűnt meg. Ez a folyamat hozzájárult a demokratikus intézmények kiépítéséhez és a nyugati integrációhoz.",
+     "type": "text",
+     "heading": "A Szovjetunió felbomlása",
+     "key_term": "Szovjetunió felbomlása"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-022",
+   "lesson_id": "1c3a0cfd-ea27-4c96-b4eb-0b0cb0c6d1de",
+   "block_id": "59c0000c-91a3-4d0d-9419-f5debafc412b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„a magyarországi rendszerváltozás hatására a térség többi országában is megindultak a demokratikus átalakulások”",
+   "explanation": "Egyszerűsített ok-okozat: Lengyelországban a júniusi választás megelőzte a magyar átmenetet; az NDK-ban, Csehszlovákiában és Romániában különböző úton (fal, bársonyos forradalom, erőszakos bukás) jött a fordulat.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Revolutions_of_1989",
+     "title": "Revolutions of 1989",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A kommunista diktatúrák bukása Közép-Európában 1989-ben kezdődött, amikor a magyarországi rendszerváltozás hatására a térség többi országában is megindultak a demokratikus átalakulások. A berlini fal lebontása és a magyar rendszerváltozás példát mutatott más országoknak, mint például Lengyelország és Csehszlovákia. A magyar szerepvállalás különösen fontos volt, hiszen a határnyitás lehetővé tette a kelet-német menekültek átjutását Nyugat-Németországba. A kommunista rendszerek bukása a demokratikus értékek terjedését hozta el Közép-Európában.",
+     "type": "text",
+     "heading": "A kommunista diktatúrák bukása Közép-Európában",
+     "key_term": "kommunista diktatúrák bukása"
+    },
+    "after": {
+     "body": "A kommunista diktatúrák bukása Közép-Európában 1989-ben kezdődött: Lengyelországban a júniusi részben szabad választás, Magyarországon a tárgyalásos átmenet, az NDK-ban a fal megnyitása, Csehszlovákiában a bársonyos forradalom, Romániában pedig decemberben az erőszakos rendszerbukás hozott fordulatot. A berlini fal lebontása és a magyar rendszerváltozás példát mutatott más országoknak, mint például Lengyelország és Csehszlovákia. A magyar szerepvállalás különösen fontos volt, hiszen a határnyitás lehetővé tette a kelet-német menekültek átjutását Nyugat-Németországba. A kommunista rendszerek bukása a demokratikus értékek terjedését hozta el Közép-Európában.",
+     "type": "text",
+     "heading": "A kommunista diktatúrák bukása Közép-Európában",
+     "key_term": "kommunista diktatúrák bukása"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-023",
+   "lesson_id": "1c3a0cfd-ea27-4c96-b4eb-0b0cb0c6d1de",
+   "block_id": "59c0000c-91a3-4d0d-9419-f5debafc412b",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Szlovénia, Horvátország, Bosznia-Hercegovina és Koszovó függetlenséget nyert” (1991–95)",
+   "explanation": "Koszovó csak 2008-ban kiáltotta ki függetlenségét; a felsorolásból hiányzik Macedónia (1991). Bosznia függetlensége 1992.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Breakup_of_Yugoslavia",
+     "title": "Breakup of Yugoslavia",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Kosovo_declaration_of_independence",
+     "title": "Kosovo declaration of independence",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Jugoszlávia felbomlása 1991 és 1995 között zajlott, és több etnikai konfliktushoz vezetett a térségben. A háború következményeként Szlovénia, Horvátország, Bosznia-Hercegovina és Koszovó függetlenséget nyert. A magyar kormány a háború alatt támogatta a kisebbségi magyar közösségeket a térségben, különösen a Vajdaságban. A délszláv háború sok szempontból rávilágított a nemzeti identitás kérdéseire és a határok átformálódására, amelyek a magyar történelem szempontjából is fontos tanulságokat hordoznak.",
+     "type": "text",
+     "heading": "Jugoszlávia felbomlása és a délszláv háború",
+     "key_term": "Jugoszlávia felbomlása"
+    },
+    "after": {
+     "body": "Jugoszlávia felbomlása 1991 és 1995 között zajlott, és több etnikai konfliktushoz vezetett a térségben. A háborúk következményeként Szlovénia, Horvátország és Macedónia (1991), valamint Bosznia-Hercegovina (1992) függetlenné vált; Koszovó csak 2008-ban kiáltotta ki függetlenségét. A magyar kormány a háború alatt támogatta a kisebbségi magyar közösségeket a térségben, különösen a Vajdaságban. A délszláv háború sok szempontból rávilágított a nemzeti identitás kérdéseire és a határok átformálódására, amelyek a magyar történelem szempontjából is fontos tanulságokat hordoznak.",
+     "type": "text",
+     "heading": "Jugoszlávia felbomlása és a délszláv háború",
+     "key_term": "Jugoszlávia felbomlása"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-024",
+   "lesson_id": "0bf544bb-4778-439a-87dc-e19f4763eb53",
+   "block_id": "3955ebf4-dea3-4491-b467-fd9cc524068c",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "link_hu: „A berlini fal lebontása közvetlenül hozzájárult a magyarországi rendszerváltoztatáshoz”; body: „lebontása”",
+   "explanation": "Fordított ok-okozat: Magyarország 1989. szeptember 11-i határnyitása gyorsította az NDK összeomlását. A fal 1989. november 9-én megnyílt; a lebontás 1990 nyarán kezdődött.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Berlin_Wall",
+     "title": "Berlin Wall",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Pan-European_Picnic",
+     "title": "Pan-European Picnic",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1989. november 9-én a berlini fal lebontása a hidegháború végének szimbólumává vált. A kelet-német hatóságok bejelentették, hogy a polgárok szabadon utazhatnak Nyugat-Németországba, ami tömeges ünnepléshez vezetett. Ez az esemény a kommunista rezsimek összeomlásának kezdetét is jelezte Közép-Európában, és hozzájárult a német újraegyesítéshez.",
+     "type": "world",
+     "year": "1989",
+     "heading": "A berlini fal lebontása",
+     "link_hu": "A berlini fal lebontása közvetlenül hozzájárult a magyarországi rendszerváltoztatáshoz, mivel a magyar határnyitás és a szabad utazás lehetősége sok kelet-európai számára inspiráló példát jelentett."
+    },
+    "after": {
+     "body": "1989. november 9-én a kelet-német hatóságok bejelentették, hogy a polgárok szabadon utazhatnak Nyugatra; a tömeg még aznap éjjel átkelt a falon. A fal tényleges lebontása 1990 nyarán kezdődött. Az esemény a hidegháború végének szimbóluma lett, és hozzájárult a német újraegyesítéshez (1990. október 3.).",
+     "type": "world",
+     "year": "1989",
+     "heading": "A berlini fal lebontása",
+     "link_hu": "Magyarország 1989. szeptember 11-én megnyitotta határát a kelet-német menekültek előtt, ami hozzájárult a fal megnyitásához."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-025",
+   "lesson_id": "6b6ec4bd-b249-4d86-bdd4-51b6a251b83b",
+   "block_id": "0a4e228a-f0be-454b-b55c-0150a276005a",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "medium",
+   "claim": "body: „A 1975-ös helsinki értekezlet … és az 1975-ös helsinki értekezlet …” (megismételt, összekuszált mondat)",
+   "explanation": "Elrontott, megismételt mondat; a záróokmányt 1975. augusztus 1-jén 35 állam írta alá. Az EBEÉ neve 1995-től EBESZ.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Helsinki_Accords",
+     "title": "Helsinki Accords",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Organization_for_Security_and_Co-operation_in_Europe",
+     "title": "Organization for Security and Co-operation in Europe",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A 1975-ös helsinki értekezlet a Kelet és Nyugat közötti feszültségek csökkentését célozta, és az 1975-ös helsinki értekezlet a Helsinki Záróokmány aláírásával a későbbi EBEÉ alapjait fektette le. Az értekezlet eredményeként a résztvevő országok kötelezettséget vállaltak a határok tiszteletben tartására, valamint az emberi jogok védelmére. Ez a folyamat hozzájárult a szocialista országokban megjelenő ellenzéki mozgalmak megerősödéséhez, hiszen a nyugati országok által képviselt értékek és elvek inspirációt adtak a helyi ellenállásoknak.",
+     "type": "world",
+     "year": "1975",
+     "heading": "A helsinki értekezlet és a kelet-nyugati kapcsolatok",
+     "link_hu": "A helsinki értekezlet hatására a szocialista országokban, így Magyarországon is, az emberi jogok és a politikai szabadság iránti igények erősödtek, ami hozzájárult az ellenzék megszerveződéséhez."
+    },
+    "after": {
+     "body": "1975. augusztus 1-jén Helsinkiben 35 állam (az USA-val, Kanadával, a Szovjetunióval és Európa szinte minden államával) aláírta az Európai Biztonsági és Együttműködési Értekezlet (EBEÉ) záróokmányát. A résztvevők elismerték a háború utáni európai határok sérthetetlenségét, és vállalták az emberi jogok tiszteletben tartását. A szocialista országok ellenzéke később erre a dokumentumra hivatkozott.",
+     "type": "world",
+     "year": "1975",
+     "heading": "A helsinki értekezlet és a kelet-nyugati kapcsolatok",
+     "link_hu": "A magyar vezetés a határok elismerését tekintette előnynek; a záróokmány emberi jogi elvei viszont az 1970-es évek végén szerveződő magyar demokratikus ellenzék hivatkozási alapja lettek."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-026",
+   "lesson_id": "1c3a0cfd-ea27-4c96-b4eb-0b0cb0c6d1de",
+   "block_id": "4228acd7-5943-4ba0-9f70-26d929c05b40",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "body: „lebontása”; link_hu: „közvetlenül összefüggött ezzel az eseménnyel”",
+   "explanation": "A fal 1989. november 9-én megnyílt; a magyar határnyitás (szeptember 11.) megelőzte és előkészítette. A Páneurópai Piknik augusztus 19-én volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Berlin_Wall",
+     "title": "Berlin Wall",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Pan-European_Picnic",
+     "title": "Pan-European Picnic",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1989. november 9-én a berlini fal lebontása szimbolizálta a hidegháború végét és a kétpólusú világ átalakulását. Ez az esemény nemcsak Németországra, hanem egész Európára kihatással volt, lehetővé téve a kommunista rendszerek fokozatos leépülését Közép-Európában. A fal lebontása után számos ország, köztük Magyarország is, megkezdte a demokratikus átmenetet.",
+     "type": "world",
+     "year": "1989",
+     "heading": "A berlini fal lebontása",
+     "link_hu": "A berlini fal lebontása hozzájárult a magyarországi rendszerváltozáshoz, mivel a magyar határnyitás és a demokratikus mozgalmak erősödése közvetlenül összefüggött ezzel az eseménnyel."
+    },
+    "after": {
+     "body": "1989. november 9-én a kelet-német hatóságok megnyitották a berlini falat, ami a hidegháború és a kétpólusú világ végének szimbóluma lett. A fal tényleges lebontása 1990 nyarán kezdődött, és 1990. október 3-án Németország egyesült.",
+     "type": "world",
+     "year": "1989",
+     "heading": "A berlini fal lebontása",
+     "link_hu": "Magyarország 1989. szeptember 11-től szabadon átengedte a kelet-német állampolgárokat Ausztriába, ami felgyorsította az NDK összeomlását; ezt előzte meg augusztus 19-én a soproni Páneurópai Piknik."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-027",
+   "lesson_id": "1c3a0cfd-ea27-4c96-b4eb-0b0cb0c6d1de",
+   "block_id": "4228acd7-5943-4ba0-9f70-26d929c05b40",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "link_hu: a felbomlás „lehetővé tette Magyarország számára, hogy véglegesen elmozduljon a szovjet befolyás alól”",
+   "explanation": "Magyarország függetlenedése előbb történt: a szovjet csapatok 1991. június 19-én távoztak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
+     "title": "Dissolution of the Soviet Union",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1991. december 26-án hivatalosan felbomlott a Szovjetunió, amely a kommunista blokk legnagyobb állama volt. A felbomlás következményeként több új állam jött létre, és a világpolitikai térkép jelentősen átrajzolódott. A Szovjetunió felbomlása a közép-európai országok számára új lehetőségeket teremtett a demokratikus fejlődésre.",
+     "type": "world",
+     "year": "1991",
+     "heading": "A Szovjetunió felbomlása",
+     "link_hu": "A Szovjetunió felbomlása lehetővé tette Magyarország számára, hogy véglegesen elmozduljon a szovjet befolyás alól, és megerősítse nyugati orientációját."
+    },
+    "after": {
+     "body": "1991. december 26-án hivatalosan felbomlott a Szovjetunió, amely a kommunista blokk legnagyobb állama volt. A felbomlás következményeként több új állam jött létre, és a világpolitikai térkép jelentősen átrajzolódott. A Szovjetunió felbomlása a közép-európai országok számára új lehetőségeket teremtett a demokratikus fejlődésre.",
+     "type": "world",
+     "year": "1991",
+     "heading": "A Szovjetunió felbomlása",
+     "link_hu": "Magyarország már a Szovjetunió felbomlása előtt függetlenedett: a szovjet csapatok 1991. június 19-én hagyták el az országot."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-028",
+   "lesson_id": "1c3a0cfd-ea27-4c96-b4eb-0b0cb0c6d1de",
+   "block_id": "4228acd7-5943-4ba0-9f70-26d929c05b40",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: „a magyar kormány humanitárius segítséget nyújtott a menekülteknek, és aktívan részt vett a békefolyamatokban”",
+   "explanation": "Homályos, ellenőrizhetetlen. Ismert magyar vonatkozás: Taszáron állomásozott a boszniai NATO-békefenntartó erők (IFOR, 1995) amerikai logisztikai bázisa.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Yugoslav_Wars",
+     "title": "Yugoslav Wars",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Taszár_Air_Base",
+     "title": "Taszár Air Base",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A délszláv háború 1991-ben kezdődött, amikor Szlovénia és Horvátország kikiáltotta függetlenségét, ami véres konfliktusokhoz vezetett a térségben. A háború következményeként a Balkánon új politikai és etnikai feszültségek alakultak ki, amelyek hatással voltak a régió stabilitására. A háború során számos nemzetközi beavatkozás történt, hogy megállítsák az erőszakot.",
+     "type": "world",
+     "year": "1991",
+     "heading": "A délszláv háború kezdete",
+     "link_hu": "A délszláv háború közvetlen hatással volt Magyarországra, mivel a magyar kormány humanitárius segítséget nyújtott a menekülteknek, és aktívan részt vett a békefolyamatokban."
+    },
+    "after": {
+     "body": "A délszláv háború 1991-ben kezdődött, amikor Szlovénia és Horvátország kikiáltotta függetlenségét, ami véres konfliktusokhoz vezetett a térségben. A háború következményeként a Balkánon új politikai és etnikai feszültségek alakultak ki, amelyek hatással voltak a régió stabilitására. A háború során számos nemzetközi beavatkozás történt, hogy megállítsák az erőszakot.",
+     "type": "world",
+     "year": "1991",
+     "heading": "A délszláv háború kezdete",
+     "link_hu": "Magyarországon, Taszáron működött a boszniai NATO-békefenntartó erők (IFOR, 1995) amerikai logisztikai bázisa."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-029",
+   "lesson_id": "0bf544bb-4778-439a-87dc-e19f4763eb53",
+   "block_id": "2efb987f-08ac-4911-8756-0443cfface86",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„VI. Pál … fontos szerepet játszott a szekularizáció és az egyház modernizálása terén”",
+   "explanation": "VI. Pál befejezte a II. vatikáni zsinatot, de a Humanae vitae (1968) elutasította a fogamzásgátlást, és a szekularizációval szemben állt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pope_Paul_VI",
+     "title": "Pope Paul VI",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Humanae_vitae",
+     "title": "Humanae vitae",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1958-1978",
+      "B) 1963-1978",
+      "C) 1945-1965",
+      "D) 1970-1980"
+     ],
+     "question": "Mikor volt VI. Pál pápa a katolikus egyház vezetője?",
+     "explanation": "VI. Pál pápa 1963-tól 1978-ig vezette a katolikus egyházat, és fontos szerepet játszott a szekularizáció és az egyház modernizálása terén.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1958-1978",
+      "B) 1963-1978",
+      "C) 1945-1965",
+      "D) 1970-1980"
+     ],
+     "question": "Mikor volt VI. Pál pápa a katolikus egyház vezetője?",
+     "explanation": "VI. Pál 1963-tól 1978-ig volt pápa; ő fejezte be a II. vatikáni zsinatot, az 1968-as Humanae vitae enciklikában pedig elutasította a fogamzásgátlást.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-030",
+   "lesson_id": "0bf544bb-4778-439a-87dc-e19f4763eb53",
+   "block_id": "2efb987f-08ac-4911-8756-0443cfface86",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A fal lebontása” (1989)",
+   "explanation": "1989. november 9-én a fal megnyílt; a lebontás 1990-ben kezdődött.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Berlin_Wall",
+     "title": "Berlin Wall",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A fal lebontása, amely a hidegháború végét jelképezte.",
+      "B) A fal megépítése, amely a kelet-nyugati megosztottságot szimbolizálta.",
+      "C) A fal körüli zavargások.",
+      "D) A fal melletti újabb építkezések kezdete."
+     ],
+     "question": "Mi történt 1989-ben a berlini falnál?",
+     "explanation": "A berlini fal lebontása 1989-ben a hidegháború végének és a közép-európai rendszerváltozások kezdetének szimbóluma volt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A fal megnyitása, amely a hidegháború végét jelképezte.",
+      "B) A fal megépítése, amely a kelet-nyugati megosztottságot szimbolizálta.",
+      "C) A fal körüli zavargások.",
+      "D) A fal melletti újabb építkezések kezdete."
+     ],
+     "question": "Mi történt 1989-ben a berlini falnál?",
+     "explanation": "A berlini falat 1989. november 9-én megnyitották; ez a hidegháború végének és a közép-európai rendszerváltozások kezdetének szimbóluma lett.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-031",
+   "lesson_id": "1c3a0cfd-ea27-4c96-b4eb-0b0cb0c6d1de",
+   "block_id": "1241652e-da86-48c0-804b-097ba995833b",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Helmuth Kohl”; „glasznosz”",
+   "explanation": "A kancellár neve Helmut Kohl; a szovjet nyitottság politikája glasznoszty.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Helmut_Kohl",
+     "title": "Helmut Kohl",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Glasnost",
+     "title": "Glasnost",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Mihail S. Gorbacsov",
+      "B) II. János Pál",
+      "C) Helmuth Kohl",
+      "D) Lech Wałęsa"
+     ],
+     "question": "Ki volt a Szovjetunió vezetője, aki reformjaival hozzájárult a kelet-európai rendszerváltozásokhoz?",
+     "explanation": "Mihail S. Gorbacsov volt a Szovjetunió utolsó főtitkára, akinek peresztrojka és glasznosz reformjai alapvetően befolyásolták a kelet-európai politikai változásokat.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Mihail S. Gorbacsov",
+      "B) II. János Pál",
+      "Helmut Kohl",
+      "D) Lech Wałęsa"
+     ],
+     "question": "Ki volt a Szovjetunió vezetője, aki reformjaival hozzájárult a kelet-európai rendszerváltozásokhoz?",
+     "explanation": "Mihail S. Gorbacsov volt a Szovjetunió utolsó főtitkára, akinek peresztrojka és glasznoszty reformjai alapvetően befolyásolták a kelet-európai politikai változásokat.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-032",
+   "lesson_id": "1c3a0cfd-ea27-4c96-b4eb-0b0cb0c6d1de",
+   "block_id": "1241652e-da86-48c0-804b-097ba995833b",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Melyik évben történt a berlini fal lebontása”",
+   "explanation": "1989-ben a fal megnyílt, a lebontás 1990-ben kezdődött.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Berlin_Wall",
+     "title": "Berlin Wall",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1989",
+      "B) 1991",
+      "C) 1990",
+      "D) 1988"
+     ],
+     "question": "Melyik évben történt a berlini fal lebontása, ami a kétpólusú világ végét jelképezte?",
+     "explanation": "A berlini fal lebontása 1989. november 9-én történt, ami a hidegháborús megosztottság végét és a kelet-európai rendszerváltozások kezdetét jelképezte.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1989",
+      "B) 1991",
+      "C) 1990",
+      "D) 1988"
+     ],
+     "question": "Melyik évben nyitották meg a berlini falat, ami a kétpólusú világ végét jelképezte?",
+     "explanation": "A berlini falat 1989. november 9-én nyitották meg, ami a hidegháborús megosztottság végét és a kelet-európai rendszerváltozások kezdetét jelképezte.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-033",
+   "lesson_id": "1c3a0cfd-ea27-4c96-b4eb-0b0cb0c6d1de",
+   "block_id": "1241652e-da86-48c0-804b-097ba995833b",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Helmuth Kohl”",
+   "explanation": "A helyes írásmód Helmut Kohl.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Helmut_Kohl",
+     "title": "Helmut Kohl",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Helmuth Kohl",
+      "B) Mihail S. Gorbacsov",
+      "C) II. János Pál",
+      "D) Václav Havel"
+     ],
+     "question": "Ki volt a német újraegyesítés kulcsszereplője, aki a kétpólusú világ végén segítette elő a német egységet?",
+     "explanation": "Helmuth Kohl, a német kancellár, fontos szerepet játszott Németország újraegyesítésében, amely a hidegháború végének egyik jelentős eseménye volt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Helmut Kohl",
+      "B) Mihail S. Gorbacsov",
+      "C) II. János Pál",
+      "D) Václav Havel"
+     ],
+     "question": "Ki volt a német újraegyesítés kulcsszereplője, aki a kétpólusú világ végén segítette elő a német egységet?",
+     "explanation": "Helmut Kohl, a német kancellár, fontos szerepet játszott Németország 1990. október 3-i újraegyesítésében, amely a hidegháború végének egyik jelentős eseménye volt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-034",
+   "lesson_id": "1c3a0cfd-ea27-4c96-b4eb-0b0cb0c6d1de",
+   "block_id": "1241652e-da86-48c0-804b-097ba995833b",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a kétpólusú világ véglegessé válását eredményezte” (Szovjetunió felbomlása)",
+   "explanation": "A felbomlás a kétpólusú világ megszűnésének, nem végleges kialakulásának felelt meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
+     "title": "Dissolution of the Soviet Union",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1991",
+      "B) 1990",
+      "C) 1989",
+      "D) 1992"
+     ],
+     "question": "Mikor történt a Szovjetunió felbomlása, amely a kétpólusú világ véglegessé válását eredményezte?",
+     "explanation": "A Szovjetunió felbomlása 1991. december 26-án következett be, ami a hidegháború végéhez és a kétpólusú világ megszűnéséhez vezetett.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1991",
+      "B) 1990",
+      "C) 1989",
+      "D) 1992"
+     ],
+     "question": "Mikor bomlott fel a Szovjetunió, ami a kétpólusú világ megszűnését jelentette?",
+     "explanation": "A Szovjetunió felbomlása 1991. december 26-án következett be, ami a hidegháború végéhez és a kétpólusú világ megszűnéséhez vezetett.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-035",
+   "lesson_id": null,
+   "block_id": "f01e4312-7be9-481d-8426-cd7d05b0d3e8",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 4,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A berlini fal lebontása 1989. november 9-én történt”",
+   "explanation": "A fal 1989. november 9-én megnyílt; a lebontás 1990-ben kezdődött.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Berlin_Wall",
+     "title": "Berlin Wall",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1987",
+      "B) 1989",
+      "C) 1991",
+      "D) 1993"
+     ],
+     "question": "Melyik évben dőlt le a berlini fal?",
+     "explanation": "A berlini fal lebontása 1989. november 9-én történt, ami a hidegháború végének szimbóluma lett.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) 1987",
+      "B) 1989",
+      "C) 1991",
+      "D) 1993"
+     ],
+     "question": "Melyik évben dőlt le a berlini fal?",
+     "explanation": "A berlini falat 1989. november 9-én megnyitották, ami a hidegháború végének szimbóluma lett.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-12-036",
+   "lesson_id": null,
+   "block_id": "f01e4312-7be9-481d-8426-cd7d05b0d3e8",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 5,
+   "field": "options",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Helmuth Kohl”",
+   "explanation": "A helyes írásmód Helmut Kohl.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Helmut_Kohl",
+     "title": "Helmut Kohl",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Ronald Reagan",
+      "B) Nicolae Ceaușescu",
+      "C) Mihail Sz. Gorbacsov",
+      "D) Helmuth Kohl"
+     ],
+     "question": "Melyik személy volt a Szovjetunió vezetője a felbomlás idején?",
+     "explanation": "Mihail Sz. Gorbacsov volt a Szovjetunió utolsó vezetője, akinek reformjai hozzájárultak a Szovjetunió felbomlásához 1991-ben.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Ronald Reagan",
+      "B) Nicolae Ceaușescu",
+      "C) Mihail Sz. Gorbacsov",
+      "Helmut Kohl"
+     ],
+     "question": "Melyik személy volt a Szovjetunió vezetője a felbomlás idején?",
+     "explanation": "Mihail Sz. Gorbacsov volt a Szovjetunió utolsó vezetője, akinek reformjai hozzájárultak a Szovjetunió felbomlásához 1991-ben.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}
