@@ -1,0 +1,487 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "54d25b3a-74c7-4e03-931f-eabc67cf3061",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a hanghullámok (hanghullám)”",
+   "explanation": "Automatikus szómagyarázat-maradvány: a zárójelben ugyanaz a szó ismétlődik.",
+   "source_note": "szerkesztési hiba",
+   "replace": [
+    [
+     "a hanghullámok (hanghullám) terjednek",
+     "a hanghullámok terjednek"
+    ]
+   ]
+  },
+  {
+   "block_id": "54d25b3a-74c7-4e03-931f-eabc67cf3061",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„annak hullámhossza befolyásolja a hang magasságát … a mélyebb hangok hosszabb hullámhosszal rendelkeznek”",
+   "explanation": "A hangmagasságot a frekvencia határozza meg; a hullámhossz csak a λ = v/f összefüggésen át kapcsolódik hozzá (adott közegben).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pitch_(music)",
+     "title": "Pitch (music)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "annak hullámhossza befolyásolja a hang magasságát. A gitáron játszott mélyebb hangok hosszabb hullámhosszal rendelkeznek, míg a magasabb hangok rövidebb hullámhosszal bírnak.",
+     "a hang magasságát a frekvenciája határozza meg. A mélyebb hangok frekvenciája kisebb, ezért a levegőben a hullámhosszuk nagyobb (λ = v/f), a magasabb hangoké pedig nagyobb frekvenciájú és rövidebb hullámhosszú."
+    ]
+   ]
+  },
+  {
+   "block_id": "54d25b3a-74c7-4e03-931f-eabc67cf3061",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Az állóhullámok (állóhullám)”",
+   "explanation": "Ismétlődő zárójeles szómagyarázat.",
+   "source_note": "szerkesztési hiba",
+   "replace": [
+    [
+     "Az állóhullámok (állóhullám) kialakulása",
+     "Az állóhullámok kialakulása"
+    ]
+   ]
+  },
+  {
+   "block_id": "54d25b3a-74c7-4e03-931f-eabc67cf3061",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„hanghullámokat (hanghullám) hoznak létre”",
+   "explanation": "Ismétlődő zárójeles szómagyarázat.",
+   "source_note": "szerkesztési hiba",
+   "replace": [
+    [
+     "hanghullámokat (hanghullám) hoznak",
+     "hanghullámokat hoznak"
+    ]
+   ]
+  },
+  {
+   "block_id": "54d25b3a-74c7-4e03-931f-eabc67cf3061",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A zajszennyezés (zajszennyezés)”",
+   "explanation": "Ismétlődő zárójeles szómagyarázat.",
+   "source_note": "szerkesztési hiba",
+   "replace": [
+    [
+     "A zajszennyezés (zajszennyezés) egyre",
+     "A zajszennyezés egyre"
+    ]
+   ]
+  },
+  {
+   "block_id": "094b3072-85af-45c8-a00f-6bfbb7ab0c7f",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "„két kőhullámot”",
+   "explanation": "Nem kő hullámzik: a tóba dobott kövek két hullámrendszert keltenek.",
+   "source_note": "fizikai szóhasználat",
+   "replace": [
+    [
+     "Képzelj el két kőhullámot, amelyek egy tóba dobva keletkeznek.",
+     "Képzelj el két követ, amelyet egy tóba dobsz: mindkettő körkörös hullámokat kelt."
+    ]
+   ]
+  },
+  {
+   "block_id": "094b3072-85af-45c8-a00f-6bfbb7ab0c7f",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Ha a lézerfény egy résen halad át, a fény hullámfrontjai interferálnak”",
+   "explanation": "Az egyetlen résen áthaladó fény elhajlik (diffrakció); a kép a rés különböző pontjairól induló hullámok interferenciájából áll elő, de az „interferencia” kettős rés (Young) esetén a szokásos példa.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Diffraction",
+     "title": "Diffraction",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ha a lézerfény egy résen halad át, a fény hullámfrontjai interferálnak, és érdekes mintázatok keletkeznek a falon.",
+     "Ha a lézerfény egy szűk résen halad át, elhajlik (diffrakció), két résen áthaladva pedig a két résből induló hullámok interferenciája sötét és világos csíkokat hoz létre a falon."
+    ]
+   ]
+  },
+  {
+   "block_id": "094b3072-85af-45c8-a00f-6bfbb7ab0c7f",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„egy másik fényforrással együtt interferál”",
+   "explanation": "A hologramnál ugyanabból a lézerből két nyaláb lesz: a tárgyról visszavert fény és a közvetlenül a lemezre jutó referencianyaláb; nem külön fényforrás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Holography",
+     "title": "Holography",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "és egy másik fényforrással együtt interferál",
+     "és a lemezre közvetlenül jutó referencianyalábbal interferál"
+    ]
+   ]
+  },
+  {
+   "block_id": "094b3072-85af-45c8-a00f-6bfbb7ab0c7f",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a holográfia felfedezésével forradalmasította a fényképezést”",
+   "explanation": "Gábor Dénes 1947-ben javasolta a holográfiát (fizikai Nobel-díj 1971), de a gyakorlati hologramok a lézer megjelenése (1960) után terjedtek el; a fényképezést nem forradalmasította.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dennis_Gabor",
+     "title": "Dennis Gabor",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Holography",
+     "title": "Holography",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a holográfia felfedezésével forradalmasította a fényképezést. 1947-ben dolgozta ki a holográfia alapjait, amiért később Nobel-díjat is kapott.",
+     "a holográfia elvét találta ki. 1947-ben dolgozta ki az alapjait, amiért 1971-ben fizikai Nobel-díjat kapott; a lézer 1960-as megjelenése után lettek igazán használhatók a hologramok."
+    ]
+   ]
+  },
+  {
+   "block_id": "094b3072-85af-45c8-a00f-6bfbb7ab0c7f",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„koncertfelvételeken, ahol holografikus előadásokkal” és „megakadályozzák a hamisítást”",
+   "explanation": "A „hologramos koncertek” valójában a 19. századi Pepper-szellem trükkjén (átlátszó lemezre vetítés) alapulnak, nem holográfián; a biztonsági hologramok megnehezítik, de nem akadályozzák meg a hamisítást.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pepper's_ghost",
+     "title": "Pepper's ghost",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Security_hologram",
+     "title": "Security hologram",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "megakadályozzák a hamisítást",
+     "megnehezítik a hamisítást"
+    ],
+    [
+     "koncertfelvételeken, ahol holografikus előadásokkal szórakoztatják a közönséget",
+     "a „hologramos koncerteken”, amelyek valójában a Pepper-szellem nevű optikai trükkel (átlátszó lemezre vetített kép) készülnek, nem igazi holográfiával"
+    ]
+   ]
+  },
+  {
+   "block_id": "4be07cc3-ca3a-4631-9d37-eff255a1f751",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A „tudományos vita” úgy állítja be, mintha fele-fele arányban vitatott lenne a sugárzás egészségkárosító hatása",
+   "explanation": "A WHO és az ICNIRP szerint a határértékek alatti rádiófrekvenciás sugárzásra nincs igazolt egészségkárosító hatás; az IARC 2011-ben csak „esetleg rákkeltő” (2B) kategóriába sorolta, mert a bizonyítékok korlátozottak. A fejfájás és az alvászavar ok-okozati kapcsolata nem bizonyított.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mobile_phone_radiation_and_health",
+     "title": "Mobile phone radiation and health",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/International_Agency_for_Research_on_Cancer",
+     "title": "International Agency for Research on Cancer",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Egyes kutatások szerint a mobiltelefonok sugárzása hozzájárulhat a különböző egészségügyi problémákhoz, például fejfájáshoz vagy alvászavarokhoz. Mások viszont azt állítják, hogy a mobiltelefonok használata biztonságos, ha betartjuk a megfelelő távolságot és időkorlátokat.",
+     "A nemzetközi egészségügyi szervezetek (WHO, ICNIRP) szerint a határértékek alatti sugárzásnak nem igazolt egészségkárosító hatása, az IARC pedig 2011-ben „esetleg rákkeltőnek” (2B) minősítette, mert a bizonyítékok korlátozottak. A hosszú távú hatásokat még kutatják; a fejfájás és az alvászavar mögött inkább a sok képernyőidő és a késő esti használat állhat."
+    ]
+   ]
+  },
+  {
+   "block_id": "f28576a4-33e5-444f-bcce-2dc62fd75ea4",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A és C opció: „A hangforrás frekvenciája” / „A hullámhossz”",
+   "explanation": "Adott közegben a hullámhossz és a frekvencia egymással függ össze (λ = v/f), így a C is elfogadható lenne; a C-t egyértelműen hamissá kell tenni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pitch_(music)",
+     "title": "Pitch (music)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[2]": "A hangforrás színe"
+   }
+  },
+  {
+   "block_id": "df63021a-8716-4ecf-8696-eb5ee320440b",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Két lézerfény interferenciájának felvétele”",
+   "explanation": "A hologram egyetlen lézer nyalábjának két részéből (tárgyról visszavert fény és referencianyaláb) jön létre; két külön lézer nem koherens egymással.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Holography",
+     "title": "Holography",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A tárgyról visszavert fény és a referencianyaláb interferenciájának rögzítése",
+    "options[1]": "Egy zseblámpa fényének lefényképezése",
+    "explanation": "A hologramhoz egyetlen lézer fényét két nyalábra bontják: az egyik a tárgyról verődik vissza, a másik (referencianyaláb) közvetlenül a lemezre jut; a kettő interferenciáját rögzítik."
+   }
+  },
+  {
+   "block_id": "1e430d78-7ea8-44bb-ba6d-189c8159dac2",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Fejfájás és alvászavarok” mint a mobilhasználat ártalma",
+   "explanation": "A sugárzás és a fejfájás/alvászavar közti ok-okozati kapcsolat nem bizonyított; a kérdés bizonyított ártalomként állítja be.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mobile_phone_radiation_and_health",
+     "title": "Mobile phone radiation and health",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik állítás igaz a mobiltelefonok sugárzásának egészségi hatásairól?",
+    "options[0]": "A határértékek alatti sugárzás károsító hatása nem bizonyított, a kutatás folytatódik",
+    "explanation": "A WHO és az ICNIRP szerint a határértékek alatti rádiófrekvenciás sugárzás egészségkárosító hatása nem igazolt; az IARC 2B („esetleg rákkeltő”) besorolása korlátozott bizonyítékokra épül."
+   }
+  },
+  {
+   "block_id": "1e430d78-7ea8-44bb-ba6d-189c8159dac2",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Az egészségügyi kockázatok csökkentése miatt”",
+   "explanation": "A telefonhasználat korlátozásának fő indoka az alvás, a figyelem és a tanulás védelme, nem a sugárzás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Problematic_smartphone_use",
+     "title": "Problematic smartphone use",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Miért érdemes korlátozni a mobiltelefonhasználatot (főleg lefekvés előtt)?",
+    "options[0]": "Mert az alvás és a figyelem javul, ha kevesebb a képernyőidő",
+    "explanation": "A túlzott, főleg esti telefonhasználat rontja az alvást és a koncentrációt; ez jobban dokumentált, mint a sugárzás egészségi hatása."
+   }
+  },
+  {
+   "block_id": "3ce43223-0e6b-485b-bb8a-e12f15924a71",
+   "card_index": 7,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„C) A lézer felfedezője” mint igaz állítás, D = „Minden válasz helyes”",
+   "explanation": "Gábor Dénes nem a lézer felfedezője (Maiman 1960, elmélet: Townes, Basov, Prohorov), ezért a D válasz hamis állításra épül.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dennis_Gabor",
+     "title": "Dennis Gabor",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Laser",
+     "title": "Laser",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[2]": "A lézer feltalálója",
+    "options[3]": "A és B is igaz",
+    "explanation": "Gábor Dénes a holográfia feltalálója és fizikai Nobel-díjas (1971); a lézert nem ő találta fel."
+   }
+  },
+  {
+   "block_id": "442201c8-fa6f-488f-9054-4e2f38e82f82",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Percy Spencer „1945-ben fedezte fel … megolvasztják a csokoládét a zsebében”",
+   "explanation": "Spencer 1945 körül járt így (a szabadalmat 1945-ben nyújtották be), de a felfedezés dátuma és a történet részletei forrásonként eltérnek; „mikrohullámú sütő működése” nem fedezhető fel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Percy_Spencer",
+     "title": "Percy Spencer",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "none"
+  },
+  {
+   "block_id": "442201c8-fa6f-488f-9054-4e2f38e82f82",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„reszelt sajtot és csokoládét helyeznek a mikrohullámú sütőbe” forgótányér nélkül nincs útmutatás",
+   "explanation": "A kísérlet csak akkor mutat állóhullámot, ha a forgótányért kivesszük; a forró pontok kb. 6 cm távolságra vannak egymástól (fél hullámhossz, ≈ 12,2 cm).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Microwave_oven",
+     "title": "Microwave oven",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "try_basic": "Vedd ki a forgótányért, tegyél egy tányérra egy sor csokoládékockát, és melegítsd rövid ideig (20–30 s), felügyelettel. A csokoládé kb. 6 cm-ként olvad meg: ez a hullámhossz fele, amiből a fény sebessége kiszámolható (c = λ · f, f = 2,45 GHz)."
+   }
+  },
+  {
+   "block_id": "31dd37a1-d1b1-459e-a95f-bbe90c18aae4",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Marconi „volt az első, aki sikeresen alkalmazta” a rádióhullámokat távolsági kommunikációra",
+   "explanation": "Az elsőség vitatott (Popov, Tesla, Lodge is kísérleteztek); Marconi az első sikeres kereskedelmi rendszert alakította ki.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Guglielmo_Marconi",
+     "title": "Guglielmo Marconi",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "none"
+  },
+  {
+   "block_id": "31dd37a1-d1b1-459e-a95f-bbe90c18aae4",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Készíts egy egyszerű rádiót, amely képes érzékelni az FM-adásokat” fejhallgatóból, rézdrótból és elemből",
+   "explanation": "Ilyen alkatrészekből FM-vevő nem építhető (nincs hangolóáramkör, detektor). Az egyszerű kristályrádió AM-adásokat vesz, tekercsből, diódából, kondenzátorból és fülhallgatóból.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Crystal_radio",
+     "title": "Crystal radio",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "try_basic": "Építs kristályrádiót (AM): tekercs, hangolókondenzátor, germániumdióda, hosszú antennavezeték, földelés és nagy impedanciájú fülhallgató kell hozzá. Keress hozzá részletes leírást, és tanári segítséggel építsd meg."
+   }
+  },
+  {
+   "block_id": "a3ac3276-33e8-41fc-9d9f-0b98be986b93",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„forradalmasította a fényképezést és a vizuális kommunikációt”",
+   "explanation": "A holográfia 1947-es elve a lézer (1960) előtt még alig volt alkalmazható; a fényképezést nem forradalmasította.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dennis_Gabor",
+     "title": "Dennis Gabor",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Holography",
+     "title": "Holography",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "ami forradalmasította a fényképezést és a vizuális kommunikációt",
+     "amiből a lézer megjelenése (1960) után lett használható technika"
+    ]
+   ]
+  },
+  {
+   "block_id": "a3ac3276-33e8-41fc-9d9f-0b98be986b93",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Üres try_basic",
+   "explanation": "Nincs kipróbálható feladat.",
+   "source_note": "üres mező",
+   "apply": "none"
+  },
+  {
+   "block_id": "ee8e4f84-9ad2-4265-8123-e1c603e12e18",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Üres discovery/try_basic/try_advanced",
+   "explanation": "A kísérletkártya három mezője üres.",
+   "source_note": "üres mező",
+   "apply": "none"
+  },
+  {
+   "block_id": "442201c8-fa6f-488f-9054-4e2f38e82f82",
+   "card_index": 0,
+   "field": "try_advanced",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Üres try_advanced",
+   "explanation": "Nincs haladó feladat.",
+   "source_note": "üres mező",
+   "apply": "none"
+  }
+ ]
+}

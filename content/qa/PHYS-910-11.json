@@ -1,0 +1,1139 @@
+{
+ "nat_id": "PHYS-910-11",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 108,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-910-11-001",
+   "lesson_id": "ae5179e9-59d1-4e2c-bf01-96442e30e64c",
+   "block_id": "54d25b3a-74c7-4e03-931f-eabc67cf3061",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a hanghullámok (hanghullám)”",
+   "explanation": "Automatikus szómagyarázat-maradvány: a zárójelben ugyanaz a szó ismétlődik.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "szerkesztési hiba",
+   "fix": {
+    "before": {
+     "body": "Gondoljunk csak bele, amikor a barátunkkal beszélgetünk, a hanghullámok (hanghullám) terjednek a levegőben. Ezek a hullámok a levegő molekuláinak rezgéséből keletkeznek, és eljutnak a fülünkhöz, ahol érzékeljük őket. A hanghullámok terjedési sebessége a levegőben körülbelül 343 m/s. Ezért halljuk meg a barátunk szavát, még ha távolabb is áll tőlünk.",
+     "type": "text",
+     "heading": "A mechanikai hullámok megfigyelése a hétköznapokban",
+     "key_term": "hanghullám"
+    },
+    "after": {
+     "body": "Gondoljunk csak bele, amikor a barátunkkal beszélgetünk, a hanghullámok terjednek a levegőben. Ezek a hullámok a levegő molekuláinak rezgéséből keletkeznek, és eljutnak a fülünkhöz, ahol érzékeljük őket. A hanghullámok terjedési sebessége a levegőben körülbelül 343 m/s. Ezért halljuk meg a barátunk szavát, még ha távolabb is áll tőlünk.",
+     "type": "text",
+     "heading": "A mechanikai hullámok megfigyelése a hétköznapokban",
+     "key_term": "hanghullám"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-002",
+   "lesson_id": "ae5179e9-59d1-4e2c-bf01-96442e30e64c",
+   "block_id": "54d25b3a-74c7-4e03-931f-eabc67cf3061",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„annak hullámhossza befolyásolja a hang magasságát … a mélyebb hangok hosszabb hullámhosszal rendelkeznek”",
+   "explanation": "A hangmagasságot a frekvencia határozza meg; a hullámhossz csak a λ = v/f összefüggésen át kapcsolódik hozzá (adott közegben).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pitch_(music)",
+     "title": "Pitch (music)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A hanghullámok jellemzésekor fontos a terjedési sebesség (v) és a hullámhossz (λ) ismerete. A hullámhossz az a távolság, amelyet a hullám egy ciklus alatt megtesz. Például, ha egy zenei hangot hallunk, annak hullámhossza befolyásolja a hang magasságát. A gitáron játszott mélyebb hangok hosszabb hullámhosszal rendelkeznek, míg a magasabb hangok rövidebb hullámhosszal bírnak.",
+     "type": "text",
+     "heading": "A hullámok jellemzése: terjedési sebesség és hullámhossz",
+     "key_term": "terjedési sebesség, hullámhossz"
+    },
+    "after": {
+     "body": "A hanghullámok jellemzésekor fontos a terjedési sebesség (v) és a hullámhossz (λ) ismerete. A hullámhossz az a távolság, amelyet a hullám egy ciklus alatt megtesz. Például, ha egy zenei hangot hallunk, a hang magasságát a frekvenciája határozza meg. A mélyebb hangok frekvenciája kisebb, ezért a levegőben a hullámhosszuk nagyobb (λ = v/f), a magasabb hangoké pedig nagyobb frekvenciájú és rövidebb hullámhosszú.",
+     "type": "text",
+     "heading": "A hullámok jellemzése: terjedési sebesség és hullámhossz",
+     "key_term": "terjedési sebesség, hullámhossz"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-003",
+   "lesson_id": "ae5179e9-59d1-4e2c-bf01-96442e30e64c",
+   "block_id": "54d25b3a-74c7-4e03-931f-eabc67cf3061",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Az állóhullámok (állóhullám)”",
+   "explanation": "Ismétlődő zárójeles szómagyarázat.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "szerkesztési hiba",
+   "fix": {
+    "before": {
+     "body": "Az állóhullámok (állóhullám) kialakulása a zenei hangszereknél is megfigyelhető. Például, amikor egy gitárhúrt megpengetünk, a húron állóhullámok alakulnak ki. Ezek a hullámok az adott húrlengés frekvenciájától függenek, és lehetővé teszik, hogy különböző hangmagasságokat halljunk. Az állóhullámok megfigyelése segíthet a zenészeknek a hangszereik hangolásában.",
+     "type": "text",
+     "heading": "Állóhullámok a zenében",
+     "key_term": "állóhullám"
+    },
+    "after": {
+     "body": "Az állóhullámok kialakulása a zenei hangszereknél is megfigyelhető. Például, amikor egy gitárhúrt megpengetünk, a húron állóhullámok alakulnak ki. Ezek a hullámok az adott húrlengés frekvenciájától függenek, és lehetővé teszik, hogy különböző hangmagasságokat halljunk. Az állóhullámok megfigyelése segíthet a zenészeknek a hangszereik hangolásában.",
+     "type": "text",
+     "heading": "Állóhullámok a zenében",
+     "key_term": "állóhullám"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-004",
+   "lesson_id": "ae5179e9-59d1-4e2c-bf01-96442e30e64c",
+   "block_id": "54d25b3a-74c7-4e03-931f-eabc67cf3061",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„hanghullámokat (hanghullám) hoznak létre”",
+   "explanation": "Ismétlődő zárójeles szómagyarázat.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "szerkesztési hiba",
+   "fix": {
+    "before": {
+     "body": "A hangszerek, mint például a zongora vagy a hegedű, hanghullámokat (hanghullám) hoznak létre, amikor az adott eszköz rezeg. A zongora billentyűinek lenyomásakor a húrok rezegni kezdenek, és ezáltal hangot produkálnak. A hanghullámok jellemzése során figyelembe kell venni a hangmagasságot, amely a húrok hosszától és feszültségétől függ.",
+     "type": "text",
+     "heading": "Hangszerek és hangkeltő eszközök",
+     "key_term": "hanghullám"
+    },
+    "after": {
+     "body": "A hangszerek, mint például a zongora vagy a hegedű, hanghullámokat hoznak létre, amikor az adott eszköz rezeg. A zongora billentyűinek lenyomásakor a húrok rezegni kezdenek, és ezáltal hangot produkálnak. A hanghullámok jellemzése során figyelembe kell venni a hangmagasságot, amely a húrok hosszától és feszültségétől függ.",
+     "type": "text",
+     "heading": "Hangszerek és hangkeltő eszközök",
+     "key_term": "hanghullám"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-005",
+   "lesson_id": "ae5179e9-59d1-4e2c-bf01-96442e30e64c",
+   "block_id": "54d25b3a-74c7-4e03-931f-eabc67cf3061",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„A zajszennyezés (zajszennyezés)”",
+   "explanation": "Ismétlődő zárójeles szómagyarázat.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "szerkesztési hiba",
+   "fix": {
+    "before": {
+     "body": "A zajszennyezés (zajszennyezés) egyre nagyobb problémát jelent a mai városokban. A forgalom, az építkezések és a szórakozóhelyek hangja mind hozzájárul a környezetünk hangterheléséhez. Javasolt, hogy csökkentsük a zajt, például zajszigetelő anyagok használatával, vagy a városokban zöld területek kialakításával, amelyek csökkenthetik a zajszennyezést.",
+     "type": "text",
+     "heading": "Környezetünk hangterhelése",
+     "key_term": "zajszennyezés"
+    },
+    "after": {
+     "body": "A zajszennyezés egyre nagyobb problémát jelent a mai városokban. A forgalom, az építkezések és a szórakozóhelyek hangja mind hozzájárul a környezetünk hangterheléséhez. Javasolt, hogy csökkentsük a zajt, például zajszigetelő anyagok használatával, vagy a városokban zöld területek kialakításával, amelyek csökkenthetik a zajszennyezést.",
+     "type": "text",
+     "heading": "Környezetünk hangterhelése",
+     "key_term": "zajszennyezés"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-006",
+   "lesson_id": "ffb938a0-094d-42ad-807a-210e8fccd49b",
+   "block_id": "094b3072-85af-45c8-a00f-6bfbb7ab0c7f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "„két kőhullámot”",
+   "explanation": "Nem kő hullámzik: a tóba dobott kövek két hullámrendszert keltenek.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "fizikai szóhasználat",
+   "fix": {
+    "before": {
+     "body": "Az interferencia a hullámok kölcsönhatása, amely során a hullámok összeadódnak vagy kioltják egymást. Képzelj el két kőhullámot, amelyek egy tóba dobva keletkeznek. Ahogy a hullámok terjednek, találkoznak egymással, és különböző alakú hullámformákat hoznak létre. Ez a jelenség a mindennapi életben is megfigyelhető, például amikor a hangok keverednek egy szobában, vagy amikor két különböző fényforrás fénye egy felületen találkozik.",
+     "type": "text",
+     "heading": "Mi az interferencia?",
+     "key_term": "interferencia"
+    },
+    "after": {
+     "body": "Az interferencia a hullámok kölcsönhatása, amely során a hullámok összeadódnak vagy kioltják egymást. Képzelj el két követ, amelyet egy tóba dobsz: mindkettő körkörös hullámokat kelt. Ahogy a hullámok terjednek, találkoznak egymással, és különböző alakú hullámformákat hoznak létre. Ez a jelenség a mindennapi életben is megfigyelhető, például amikor a hangok keverednek egy szobában, vagy amikor két különböző fényforrás fénye egy felületen találkozik.",
+     "type": "text",
+     "heading": "Mi az interferencia?",
+     "key_term": "interferencia"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-007",
+   "lesson_id": "ffb938a0-094d-42ad-807a-210e8fccd49b",
+   "block_id": "094b3072-85af-45c8-a00f-6bfbb7ab0c7f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Ha a lézerfény egy résen halad át, a fény hullámfrontjai interferálnak”",
+   "explanation": "Az egyetlen résen áthaladó fény elhajlik (diffrakció); a kép a rés különböző pontjairól induló hullámok interferenciájából áll elő, de az „interferencia” kettős rés (Young) esetén a szokásos példa.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Diffraction",
+     "title": "Diffraction",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A lézerfény különleges, mert párhuzamos és koherens, ami ideálissá teszi az interferencia jelenségeinek tanulmányozására. Ha a lézerfény egy résen halad át, a fény hullámfrontjai interferálnak, és érdekes mintázatok keletkeznek a falon. Ezeket a mintázatokat fényképezőgéppel megörökíthetjük, így láthatjuk az interferencia eredményét. Ez a technika a tudományos kutatások mellett művészi alkotások létrehozására is használható.",
+     "type": "text",
+     "heading": "Hogyan készíthetünk interferencia képeket lézerrel?",
+     "key_term": "lézer"
+    },
+    "after": {
+     "body": "A lézerfény különleges, mert párhuzamos és koherens, ami ideálissá teszi az interferencia jelenségeinek tanulmányozására. Ha a lézerfény egy szűk résen halad át, elhajlik (diffrakció), két résen áthaladva pedig a két résből induló hullámok interferenciája sötét és világos csíkokat hoz létre a falon. Ezeket a mintázatokat fényképezőgéppel megörökíthetjük, így láthatjuk az interferencia eredményét. Ez a technika a tudományos kutatások mellett művészi alkotások létrehozására is használható.",
+     "type": "text",
+     "heading": "Hogyan készíthetünk interferencia képeket lézerrel?",
+     "key_term": "lézer"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-008",
+   "lesson_id": "ffb938a0-094d-42ad-807a-210e8fccd49b",
+   "block_id": "094b3072-85af-45c8-a00f-6bfbb7ab0c7f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„egy másik fényforrással együtt interferál”",
+   "explanation": "A hologramnál ugyanabból a lézerből két nyaláb lesz: a tárgyról visszavert fény és a közvetlenül a lemezre jutó referencianyaláb; nem külön fényforrás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Holography",
+     "title": "Holography",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A holográfia a fény interferenciáját használja, hogy háromdimenziós képeket hozzon létre. Amikor egy lézerfénnyel megvilágítunk egy tárgyat, a fény visszaverődik róla, és egy másik fényforrással együtt interferál. Ebből a folyamatból születik meg a hologram, amely nem csupán sík képet ad, hanem mélységet is. Gondolj a holografikus kártyákra, amelyeket sokan ismernek a bankkártyákról vagy az ajándékkártyákról.",
+     "type": "text",
+     "heading": "A holográfia titkai",
+     "key_term": "holográfia"
+    },
+    "after": {
+     "body": "A holográfia a fény interferenciáját használja, hogy háromdimenziós képeket hozzon létre. Amikor egy lézerfénnyel megvilágítunk egy tárgyat, a fény visszaverődik róla, és a lemezre közvetlenül jutó referencianyalábbal interferál. Ebből a folyamatból születik meg a hologram, amely nem csupán sík képet ad, hanem mélységet is. Gondolj a holografikus kártyákra, amelyeket sokan ismernek a bankkártyákról vagy az ajándékkártyákról.",
+     "type": "text",
+     "heading": "A holográfia titkai",
+     "key_term": "holográfia"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-009",
+   "lesson_id": "ffb938a0-094d-42ad-807a-210e8fccd49b",
+   "block_id": "094b3072-85af-45c8-a00f-6bfbb7ab0c7f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a holográfia felfedezésével forradalmasította a fényképezést”",
+   "explanation": "Gábor Dénes 1947-ben javasolta a holográfiát (fizikai Nobel-díj 1971), de a gyakorlati hologramok a lézer megjelenése (1960) után terjedtek el; a fényképezést nem forradalmasította.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dennis_Gabor",
+     "title": "Dennis Gabor",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Holography",
+     "title": "Holography",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Gábor Dénes magyar fizikus volt, aki a holográfia felfedezésével forradalmasította a fényképezést. 1947-ben dolgozta ki a holográfia alapjait, amiért később Nobel-díjat is kapott. Az ő munkája lehetővé tette, hogy a hologramokat a modern technológiában, például biztonsági elemekben vagy orvosi képalkotásban használják. Gábor Dénes felfedezései ma is hatással vannak a tudományos és technológiai fejlődésre.",
+     "type": "text",
+     "heading": "Gábor Dénes és a holográfia felfedezése",
+     "key_term": "Gábor Dénes"
+    },
+    "after": {
+     "body": "Gábor Dénes magyar fizikus volt, aki a holográfia elvét találta ki. 1947-ben dolgozta ki az alapjait, amiért 1971-ben fizikai Nobel-díjat kapott; a lézer 1960-as megjelenése után lettek igazán használhatók a hologramok. Az ő munkája lehetővé tette, hogy a hologramokat a modern technológiában, például biztonsági elemekben vagy orvosi képalkotásban használják. Gábor Dénes felfedezései ma is hatással vannak a tudományos és technológiai fejlődésre.",
+     "type": "text",
+     "heading": "Gábor Dénes és a holográfia felfedezése",
+     "key_term": "Gábor Dénes"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-010",
+   "lesson_id": "ffb938a0-094d-42ad-807a-210e8fccd49b",
+   "block_id": "094b3072-85af-45c8-a00f-6bfbb7ab0c7f",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„koncertfelvételeken, ahol holografikus előadásokkal” és „megakadályozzák a hamisítást”",
+   "explanation": "A „hologramos koncertek” valójában a 19. századi Pepper-szellem trükkjén (átlátszó lemezre vetítés) alapulnak, nem holográfián; a biztonsági hologramok megnehezítik, de nem akadályozzák meg a hamisítást.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pepper's_ghost",
+     "title": "Pepper's ghost",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Security_hologram",
+     "title": "Security hologram",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A holográfia nemcsak tudományos területeken hasznos, hanem a mindennapi életben is találkozhatunk vele. Például a bankkártyák holografikus biztonsági elemei megakadályozzák a hamisítást. Emellett a hologramokat használják a szórakoztatóiparban is, például koncertfelvételeken, ahol holografikus előadásokkal szórakoztatják a közönséget. A holográfia tehát a technológia és a művészet határvonalán áll.",
+     "type": "text",
+     "heading": "Hogyan használjuk a holográfiát a mindennapi életben?",
+     "key_term": "holográfia"
+    },
+    "after": {
+     "body": "A holográfia nemcsak tudományos területeken hasznos, hanem a mindennapi életben is találkozhatunk vele. Például a bankkártyák holografikus biztonsági elemei megnehezítik a hamisítást. Emellett a hologramokat használják a szórakoztatóiparban is, például a „hologramos koncerteken”, amelyek valójában a Pepper-szellem nevű optikai trükkel (átlátszó lemezre vetített kép) készülnek, nem igazi holográfiával. A holográfia tehát a technológia és a művészet határvonalán áll.",
+     "type": "text",
+     "heading": "Hogyan használjuk a holográfiát a mindennapi életben?",
+     "key_term": "holográfia"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-011",
+   "lesson_id": "89117c4b-47fb-4849-b2e5-304954f7a086",
+   "block_id": "4be07cc3-ca3a-4631-9d37-eff255a1f751",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A „tudományos vita” úgy állítja be, mintha fele-fele arányban vitatott lenne a sugárzás egészségkárosító hatása",
+   "explanation": "A WHO és az ICNIRP szerint a határértékek alatti rádiófrekvenciás sugárzásra nincs igazolt egészségkárosító hatás; az IARC 2011-ben csak „esetleg rákkeltő” (2B) kategóriába sorolta, mert a bizonyítékok korlátozottak. A fejfájás és az alvászavar ok-okozati kapcsolata nem bizonyított.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mobile_phone_radiation_and_health",
+     "title": "Mobile phone radiation and health",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/International_Agency_for_Research_on_Cancer",
+     "title": "International Agency for Research on Cancer",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A mobiltelefonok használatának lehetséges ártalmairól sokféle vélemény létezik. Egyes kutatások szerint a mobiltelefonok sugárzása hozzájárulhat a különböző egészségügyi problémákhoz, például fejfájáshoz vagy alvászavarokhoz. Mások viszont azt állítják, hogy a mobiltelefonok használata biztonságos, ha betartjuk a megfelelő távolságot és időkorlátokat. Fontos, hogy tudatosan használjuk a telefonunkat, és figyeljünk a testünk jelzéseire.",
+     "type": "text",
+     "heading": "Lehetséges ártalmak: tudományos vita",
+     "key_term": "sugárzás"
+    },
+    "after": {
+     "body": "A mobiltelefonok használatának lehetséges ártalmairól sokféle vélemény létezik. A nemzetközi egészségügyi szervezetek (WHO, ICNIRP) szerint a határértékek alatti sugárzásnak nem igazolt egészségkárosító hatása, az IARC pedig 2011-ben „esetleg rákkeltőnek” (2B) minősítette, mert a bizonyítékok korlátozottak. A hosszú távú hatásokat még kutatják; a fejfájás és az alvászavar mögött inkább a sok képernyőidő és a késő esti használat állhat. Fontos, hogy tudatosan használjuk a telefonunkat, és figyeljünk a testünk jelzéseire.",
+     "type": "text",
+     "heading": "Lehetséges ártalmak: tudományos vita",
+     "key_term": "sugárzás"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-012",
+   "lesson_id": "ae5179e9-59d1-4e2c-bf01-96442e30e64c",
+   "block_id": "f28576a4-33e5-444f-bcce-2dc62fd75ea4",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A és C opció: „A hangforrás frekvenciája” / „A hullámhossz”",
+   "explanation": "Adott közegben a hullámhossz és a frekvencia egymással függ össze (λ = v/f), így a C is elfogadható lenne; a C-t egyértelműen hamissá kell tenni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Pitch_(music)",
+     "title": "Pitch (music)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A hangforrás frekvenciája",
+      "B) A hanghullám terjedési sebessége",
+      "C) A hullámhossz",
+      "D) A hangforrás mérete"
+     ],
+     "question": "Melyik tényező befolyásolja a hangmagasságot?",
+     "explanation": "A hangmagasság a hangforrás frekvenciájától függ: a magasabb frekvenciájú hangok magasabb hangmagasságot eredményeznek.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A hangforrás frekvenciája",
+      "B) A hanghullám terjedési sebessége",
+      "A hangforrás színe",
+      "D) A hangforrás mérete"
+     ],
+     "question": "Melyik tényező befolyásolja a hangmagasságot?",
+     "explanation": "A hangmagasság a hangforrás frekvenciájától függ: a magasabb frekvenciájú hangok magasabb hangmagasságot eredményeznek.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-013",
+   "lesson_id": "ffb938a0-094d-42ad-807a-210e8fccd49b",
+   "block_id": "df63021a-8716-4ecf-8696-eb5ee320440b",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Két lézerfény interferenciájának felvétele”",
+   "explanation": "A hologram egyetlen lézer nyalábjának két részéből (tárgyról visszavert fény és referencianyaláb) jön létre; két külön lézer nem koherens egymással.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Holography",
+     "title": "Holography",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Két lézerfény interferenciájának felvétele.",
+      "B) Csak egy lézerfény használata.",
+      "C) Átlagos fényforrások használata.",
+      "D) Csak tükrök alkalmazása."
+     ],
+     "question": "Milyen eljárás szükséges a hologramok létrehozásához?",
+     "explanation": "A hologramok létrehozásához két lézerfény interferenciáját kell rögzíteni, hogy a holografikus kép megjelenjen.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A tárgyról visszavert fény és a referencianyaláb interferenciájának rögzítése",
+      "Egy zseblámpa fényének lefényképezése",
+      "C) Átlagos fényforrások használata.",
+      "D) Csak tükrök alkalmazása."
+     ],
+     "question": "Milyen eljárás szükséges a hologramok létrehozásához?",
+     "explanation": "A hologramhoz egyetlen lézer fényét két nyalábra bontják: az egyik a tárgyról verődik vissza, a másik (referencianyaláb) közvetlenül a lemezre jut; a kettő interferenciáját rögzítik.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-014",
+   "lesson_id": "89117c4b-47fb-4849-b2e5-304954f7a086",
+   "block_id": "1e430d78-7ea8-44bb-ba6d-189c8159dac2",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Fejfájás és alvászavarok” mint a mobilhasználat ártalma",
+   "explanation": "A sugárzás és a fejfájás/alvászavar közti ok-okozati kapcsolat nem bizonyított; a kérdés bizonyított ártalomként állítja be.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Mobile_phone_radiation_and_health",
+     "title": "Mobile phone radiation and health",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Fejfájás és alvászavarok",
+      "B) Jobb hallás",
+      "C) Magasabb energiaszint",
+      "D) Nincs hatása az egészségre"
+     ],
+     "question": "Milyen potenciális ártalmakat okozhat a mobiltelefonok használata?",
+     "explanation": "A mobiltelefonok használata összefüggésbe hozható fejfájással és alvászavarokkal, amelyek a hosszú távú használat következményei lehetnek.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A határértékek alatti sugárzás károsító hatása nem bizonyított, a kutatás folytatódik",
+      "B) Jobb hallás",
+      "C) Magasabb energiaszint",
+      "D) Nincs hatása az egészségre"
+     ],
+     "question": "Melyik állítás igaz a mobiltelefonok sugárzásának egészségi hatásairól?",
+     "explanation": "A WHO és az ICNIRP szerint a határértékek alatti rádiófrekvenciás sugárzás egészségkárosító hatása nem igazolt; az IARC 2B („esetleg rákkeltő”) besorolása korlátozott bizonyítékokra épül.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-015",
+   "lesson_id": "89117c4b-47fb-4849-b2e5-304954f7a086",
+   "block_id": "1e430d78-7ea8-44bb-ba6d-189c8159dac2",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Az egészségügyi kockázatok csökkentése miatt”",
+   "explanation": "A telefonhasználat korlátozásának fő indoka az alvás, a figyelem és a tanulás védelme, nem a sugárzás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Problematic_smartphone_use",
+     "title": "Problematic smartphone use",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az egészségügyi kockázatok csökkentése miatt",
+      "B) Mert drága",
+      "C) Mert nem praktikus",
+      "D) Mert nem divatos"
+     ],
+     "question": "Miért fontos a mobiltelefonok használatának korlátozása?",
+     "explanation": "A mobiltelefonok használatának korlátozása fontos az egészségügyi kockázatok csökkentése érdekében, különösen a gyermekek és fiatalok esetében.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Mert az alvás és a figyelem javul, ha kevesebb a képernyőidő",
+      "B) Mert drága",
+      "C) Mert nem praktikus",
+      "D) Mert nem divatos"
+     ],
+     "question": "Miért érdemes korlátozni a mobiltelefonhasználatot (főleg lefekvés előtt)?",
+     "explanation": "A túlzott, főleg esti telefonhasználat rontja az alvást és a koncentrációt; ez jobban dokumentált, mint a sugárzás egészségi hatása.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-016",
+   "lesson_id": null,
+   "block_id": "3ce43223-0e6b-485b-bb8a-e12f15924a71",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„C) A lézer felfedezője” mint igaz állítás, D = „Minden válasz helyes”",
+   "explanation": "Gábor Dénes nem a lézer felfedezője (Maiman 1960, elmélet: Townes, Basov, Prohorov), ezért a D válasz hamis állításra épül.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dennis_Gabor",
+     "title": "Dennis Gabor",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Laser",
+     "title": "Laser",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) A holográfia feltalálója",
+      "B) Fizikai Nobel-díjas",
+      "C) A lézer felfedezője",
+      "D) Minden válasz helyes"
+     ],
+     "question": "Ki volt Gábor Dénes?",
+     "explanation": "Gábor Dénes a holográfia feltalálója, fizikai Nobel-díjat nyert, és a lézerrel kapcsolatos munkái is jelentősek.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "D",
+     "options": [
+      "A) A holográfia feltalálója",
+      "B) Fizikai Nobel-díjas",
+      "A lézer feltalálója",
+      "A és B is igaz"
+     ],
+     "question": "Ki volt Gábor Dénes?",
+     "explanation": "Gábor Dénes a holográfia feltalálója és fizikai Nobel-díjas (1971); a lézert nem ő találta fel.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-017",
+   "lesson_id": "39a8163a-b85d-4de6-a440-26a68dee2882",
+   "block_id": "442201c8-fa6f-488f-9054-4e2f38e82f82",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Percy Spencer „1945-ben fedezte fel … megolvasztják a csokoládét a zsebében”",
+   "explanation": "Spencer 1945 körül járt így (a szabadalmat 1945-ben nyújtották be), de a felfedezés dátuma és a történet részletei forrásonként eltérnek; „mikrohullámú sütő működése” nem fedezhető fel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Percy_Spencer",
+     "title": "Percy Spencer",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "none"
+  },
+  {
+   "id": "PHYS-910-11-018",
+   "lesson_id": "39a8163a-b85d-4de6-a440-26a68dee2882",
+   "block_id": "442201c8-fa6f-488f-9054-4e2f38e82f82",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„reszelt sajtot és csokoládét helyeznek a mikrohullámú sütőbe” forgótányér nélkül nincs útmutatás",
+   "explanation": "A kísérlet csak akkor mutat állóhullámot, ha a forgótányért kivesszük; a forró pontok kb. 6 cm távolságra vannak egymástól (fél hullámhossz, ≈ 12,2 cm).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Microwave_oven",
+     "title": "Microwave oven",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A mikrohullámú sütő a modern konyhák elengedhetetlen része, lehetővé téve az ételek gyors és egyenletes melegítését.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 200,
+        "w": 300,
+        "x": 50,
+        "y": 80,
+        "type": "box"
+       },
+       {
+        "x": 180,
+        "y": 40,
+        "text": "Mikrohullámú sütő",
+        "type": "label"
+       },
+       {
+        "r": 20,
+        "x": 100,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x": 90,
+        "y": 145,
+        "text": "Sajt",
+        "type": "label"
+       },
+       {
+        "r": 20,
+        "x": 300,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x": 290,
+        "y": 145,
+        "text": "Csokoládé",
+        "type": "label"
+       },
+       {
+        "x1": 50,
+        "x2": 350,
+        "y1": 100,
+        "y2": 100,
+        "type": "wave",
+        "cycles": 5,
+        "amplitude": 20
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Mikrohullámú sütő és állóhullámok",
+     "discovery": "A mikrohullámú sütő működését 1945-ben fedezte fel Percy Spencer, aki véletlenül tapasztalta, hogy a radartechnológiával dolgozó eszközök által kibocsátott mikrohullámok megolvasztják a csokoládét a zsebében. Ez a felfedezés vezette el a mikrohullámú sütők kifejlesztéséhez, amelyek azóta elterjedtek a háztartásokban.",
+     "try_basic": "Egy egyszerű kísérlet lehet, ha a diákok reszelt sajtot és csokoládét helyeznek a mikrohullámú sütőbe, és megfigyelik, hogyan melegednek fel különböző sebességgel. Ezzel felfedezhetik az állóhullámok hatását.",
+     "try_advanced": ""
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A mikrohullámú sütő a modern konyhák elengedhetetlen része, lehetővé téve az ételek gyors és egyenletes melegítését.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 200,
+        "w": 300,
+        "x": 50,
+        "y": 80,
+        "type": "box"
+       },
+       {
+        "x": 180,
+        "y": 40,
+        "text": "Mikrohullámú sütő",
+        "type": "label"
+       },
+       {
+        "r": 20,
+        "x": 100,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x": 90,
+        "y": 145,
+        "text": "Sajt",
+        "type": "label"
+       },
+       {
+        "r": 20,
+        "x": 300,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x": 290,
+        "y": 145,
+        "text": "Csokoládé",
+        "type": "label"
+       },
+       {
+        "x1": 50,
+        "x2": 350,
+        "y1": 100,
+        "y2": 100,
+        "type": "wave",
+        "cycles": 5,
+        "amplitude": 20
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Mikrohullámú sütő és állóhullámok",
+     "discovery": "A mikrohullámú sütő működését 1945-ben fedezte fel Percy Spencer, aki véletlenül tapasztalta, hogy a radartechnológiával dolgozó eszközök által kibocsátott mikrohullámok megolvasztják a csokoládét a zsebében. Ez a felfedezés vezette el a mikrohullámú sütők kifejlesztéséhez, amelyek azóta elterjedtek a háztartásokban.",
+     "try_basic": "Vedd ki a forgótányért, tegyél egy tányérra egy sor csokoládékockát, és melegítsd rövid ideig (20–30 s), felügyelettel. A csokoládé kb. 6 cm-ként olvad meg: ez a hullámhossz fele, amiből a fény sebessége kiszámolható (c = λ · f, f = 2,45 GHz).",
+     "try_advanced": ""
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-019",
+   "lesson_id": "89117c4b-47fb-4849-b2e5-304954f7a086",
+   "block_id": "31dd37a1-d1b1-459e-a95f-bbe90c18aae4",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Marconi „volt az első, aki sikeresen alkalmazta” a rádióhullámokat távolsági kommunikációra",
+   "explanation": "Az elsőség vitatott (Popov, Tesla, Lodge is kísérleteztek); Marconi az első sikeres kereskedelmi rendszert alakította ki.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Guglielmo_Marconi",
+     "title": "Guglielmo Marconi",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "none"
+  },
+  {
+   "id": "PHYS-910-11-020",
+   "lesson_id": "89117c4b-47fb-4849-b2e5-304954f7a086",
+   "block_id": "31dd37a1-d1b1-459e-a95f-bbe90c18aae4",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Készíts egy egyszerű rádiót, amely képes érzékelni az FM-adásokat” fejhallgatóból, rézdrótból és elemből",
+   "explanation": "Ilyen alkatrészekből FM-vevő nem építhető (nincs hangolóáramkör, detektor). Az egyszerű kristályrádió AM-adásokat vesz, tekercsből, diódából, kondenzátorból és fülhallgatóból.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Crystal_radio",
+     "title": "Crystal radio",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A diákok a mobiltelefonjaik használatakor nap mint nap találkoznak a rádióhullámokkal, amelyek lehetővé teszik a hívások, üzenetek és internetes kapcsolatok létrejöttét.",
+     "sketch": {
+      "shapes": [
+       {
+        "x": 20,
+        "y": 20,
+        "text": "Mobiltelefon",
+        "type": "label"
+       },
+       {
+        "h": 100,
+        "w": 60,
+        "x": 30,
+        "y": 50,
+        "type": "box"
+       },
+       {
+        "x": 30,
+        "y": 160,
+        "text": "Rádióhullámok",
+        "type": "label"
+       },
+       {
+        "x1": 100,
+        "x2": 300,
+        "y1": 100,
+        "y2": 100,
+        "type": "wave",
+        "cycles": 5,
+        "amplitude": 20
+       },
+       {
+        "x": 310,
+        "y": 90,
+        "text": "(rádióhullám)",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "A mobiltelefonok és a hullámok",
+     "discovery": "A mobiltelefonok működésének alapját a rádióhullámok képezik, amelyek létezését Heinrich Hertz igazolta kísérletileg 1887-ben, és Guglielmo Marconi volt az első, aki sikeresen alkalmazta őket távolsági kommunikációra 1895-ben. Marconi felfedezése lehetővé tette a vezeték nélküli kommunikációt, amely a modern mobiltelefonok alapját képezi.",
+     "try_basic": "Készíts egy egyszerű rádiót, amely képes érzékelni az FM-adásokat. Használhatsz egy régi fejhallgatót, egy kis darab rézdrótot és egy elemet az áramkörhöz.",
+     "try_advanced": "Készíts egy projektet, amelyben megvizsgálod a mobiltelefonok és a Wi-Fi jelek hatását a környezetre, például a jel erősségét különböző helyszíneken mérve."
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A diákok a mobiltelefonjaik használatakor nap mint nap találkoznak a rádióhullámokkal, amelyek lehetővé teszik a hívások, üzenetek és internetes kapcsolatok létrejöttét.",
+     "sketch": {
+      "shapes": [
+       {
+        "x": 20,
+        "y": 20,
+        "text": "Mobiltelefon",
+        "type": "label"
+       },
+       {
+        "h": 100,
+        "w": 60,
+        "x": 30,
+        "y": 50,
+        "type": "box"
+       },
+       {
+        "x": 30,
+        "y": 160,
+        "text": "Rádióhullámok",
+        "type": "label"
+       },
+       {
+        "x1": 100,
+        "x2": 300,
+        "y1": 100,
+        "y2": 100,
+        "type": "wave",
+        "cycles": 5,
+        "amplitude": 20
+       },
+       {
+        "x": 310,
+        "y": 90,
+        "text": "(rádióhullám)",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "A mobiltelefonok és a hullámok",
+     "discovery": "A mobiltelefonok működésének alapját a rádióhullámok képezik, amelyek létezését Heinrich Hertz igazolta kísérletileg 1887-ben, és Guglielmo Marconi volt az első, aki sikeresen alkalmazta őket távolsági kommunikációra 1895-ben. Marconi felfedezése lehetővé tette a vezeték nélküli kommunikációt, amely a modern mobiltelefonok alapját képezi.",
+     "try_basic": "Építs kristályrádiót (AM): tekercs, hangolókondenzátor, germániumdióda, hosszú antennavezeték, földelés és nagy impedanciájú fülhallgató kell hozzá. Keress hozzá részletes leírást, és tanári segítséggel építsd meg.",
+     "try_advanced": "Készíts egy projektet, amelyben megvizsgálod a mobiltelefonok és a Wi-Fi jelek hatását a környezetre, például a jel erősségét különböző helyszíneken mérve."
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-021",
+   "lesson_id": "ffb938a0-094d-42ad-807a-210e8fccd49b",
+   "block_id": "a3ac3276-33e8-41fc-9d9f-0b98be986b93",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„forradalmasította a fényképezést és a vizuális kommunikációt”",
+   "explanation": "A holográfia 1947-es elve a lézer (1960) előtt még alig volt alkalmazható; a fényképezést nem forradalmasította.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Dennis_Gabor",
+     "title": "Dennis Gabor",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Holography",
+     "title": "Holography",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "A holográfiát ma már a biztonsági címkék, bankkártyák, valamint a szórakoztatóiparban, például koncertfelvételek során is alkalmazzák.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 50,
+        "x": 200,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x1": 150,
+        "x2": 250,
+        "y1": 100,
+        "y2": 100,
+        "type": "wave",
+        "cycles": 3,
+        "amplitude": 10
+       },
+       {
+        "x1": 150,
+        "x2": 250,
+        "y1": 200,
+        "y2": 200,
+        "type": "wave",
+        "cycles": 3,
+        "amplitude": 10
+       },
+       {
+        "x": 170,
+        "y": 145,
+        "text": "Hologram",
+        "type": "label"
+       },
+       {
+        "x": 150,
+        "y": 85,
+        "text": "Fényhullám 1",
+        "type": "label"
+       },
+       {
+        "x": 150,
+        "y": 185,
+        "text": "Fényhullám 2",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Holográfia a mindennapokban",
+     "discovery": "A holográfiát 1947-ben Dennis Gabor fedezte fel, miközben az elektronmikroszkópiás képek javításán dolgozott. A holográfia célja az volt, hogy a háromdimenziós képek rögzítését és megjelenítését lehetővé tegye, ami forradalmasította a fényképezést és a vizuális kommunikációt.",
+     "try_basic": "",
+     "try_advanced": ""
+    },
+    "after": {
+     "type": "experiment",
+     "today": "A holográfiát ma már a biztonsági címkék, bankkártyák, valamint a szórakoztatóiparban, például koncertfelvételek során is alkalmazzák.",
+     "sketch": {
+      "shapes": [
+       {
+        "r": 50,
+        "x": 200,
+        "y": 150,
+        "type": "circle"
+       },
+       {
+        "x1": 150,
+        "x2": 250,
+        "y1": 100,
+        "y2": 100,
+        "type": "wave",
+        "cycles": 3,
+        "amplitude": 10
+       },
+       {
+        "x1": 150,
+        "x2": 250,
+        "y1": 200,
+        "y2": 200,
+        "type": "wave",
+        "cycles": 3,
+        "amplitude": 10
+       },
+       {
+        "x": 170,
+        "y": 145,
+        "text": "Hologram",
+        "type": "label"
+       },
+       {
+        "x": 150,
+        "y": 85,
+        "text": "Fényhullám 1",
+        "type": "label"
+       },
+       {
+        "x": 150,
+        "y": 185,
+        "text": "Fényhullám 2",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Holográfia a mindennapokban",
+     "discovery": "A holográfiát 1947-ben Dennis Gabor fedezte fel, miközben az elektronmikroszkópiás képek javításán dolgozott. A holográfia célja az volt, hogy a háromdimenziós képek rögzítését és megjelenítését lehetővé tegye, amiből a lézer megjelenése (1960) után lett használható technika.",
+     "try_basic": "",
+     "try_advanced": ""
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-11-022",
+   "lesson_id": "ffb938a0-094d-42ad-807a-210e8fccd49b",
+   "block_id": "a3ac3276-33e8-41fc-9d9f-0b98be986b93",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "try_basic",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Üres try_basic",
+   "explanation": "Nincs kipróbálható feladat.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "üres mező"
+  },
+  {
+   "id": "PHYS-910-11-023",
+   "lesson_id": "ae5179e9-59d1-4e2c-bf01-96442e30e64c",
+   "block_id": "ee8e4f84-9ad2-4265-8123-e1c603e12e18",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Üres discovery/try_basic/try_advanced",
+   "explanation": "A kísérletkártya három mezője üres.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "üres mező"
+  },
+  {
+   "id": "PHYS-910-11-024",
+   "lesson_id": "39a8163a-b85d-4de6-a440-26a68dee2882",
+   "block_id": "442201c8-fa6f-488f-9054-4e2f38e82f82",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "try_advanced",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Üres try_advanced",
+   "explanation": "Nincs haladó feladat.",
+   "sources": [],
+   "apply": "none",
+   "source_note": "üres mező"
+  }
+ ]
+}
