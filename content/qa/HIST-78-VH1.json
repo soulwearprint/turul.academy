@@ -1,7 +1,7 @@
 {
  "nat_id": "HIST-78-VH1",
  "snapshot_exported_at": null,
- "checked_at": "2026-09-29",
+ "checked_at": "2026-09-30",
  "coverage": {
   "blocks": 17,
   "cards": 87,
@@ -18,7 +18,7 @@
    "quiz"
   ],
   "lint_only": [],
-  "note": "text/deep hand-corrected earlier; only world and quiz checked"
+  "note": "text/deep hand-corrected earlier; world and quiz checked; text card 5 of lesson 20 re-read while writing deep dives"
  },
  "findings": [
   {
@@ -410,6 +410,41 @@
      "year": "1920",
      "heading": "A Népszövetség megalakulása",
      "link_hu": "A Népszövetség megalakulása közvetlenül kapcsolódik a Trianoni békediktátumhoz, mivel a békeszerződés a nemzetközi közösség új keretein belül próbálta rendezni a háború utáni helyzetet, amely Magyarország területi veszteségeit is magában foglalta."
+    }
+   }
+  },
+  {
+   "id": "HIST-78-VH1-010",
+   "lesson_id": "5c08f606-ebd6-4fee-a611-b2e1a551c105",
+   "block_id": "eb33f40b-c78b-40c0-a20a-9160448f412e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Horthy politikai rendszere a monarchikus hagyományokra épült, de a köztársaság keretein belül működött.”",
+   "explanation": "Fordítva: az 1920. évi I. törvénycikk után Magyarország királyság maradt, király nélkül; Horthy kormányzóként az államfői jogokat gyakorolta. (Talált hiba a kézzel javított szövegben, a mélyítő kártyák írása közben.)",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1920%E2%80%931946)",
+     "title": "Kingdom of Hungary (1920–1946)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Horthy Miklós 1920 márciusában lett Magyarország kormányzója; 1919 végén vonult be Budapestre, majd a tanácsköztársaság bukása után az ellenforradalmi erők vezetőjeként szerezte meg a hatalmat. Horthy a nemzeti konzervativizmus képviselője volt, és célja a rend helyreállítása és a politikai stabilitás megteremtése volt. A Horthy-korszakban a magyar társadalom erőteljesen polarizálódott, a baloldali és jobboldali erők közötti feszültségek tovább növekedtek. Horthy politikai rendszere a monarchikus hagyományokra épült, de a köztársaság keretein belül működött.",
+     "type": "text",
+     "heading": "Horthy Miklós hatalomra jutása",
+     "key_term": "Horthy Miklós"
+    },
+    "after": {
+     "body": "Horthy Miklós 1920 márciusában lett Magyarország kormányzója; 1919 végén vonult be Budapestre, majd a tanácsköztársaság bukása után az ellenforradalmi erők vezetőjeként szerezte meg a hatalmat. Horthy a nemzeti konzervativizmus képviselője volt, és célja a rend helyreállítása és a politikai stabilitás megteremtése volt. A Horthy-korszakban a magyar társadalom erőteljesen polarizálódott, a baloldali és jobboldali erők közötti feszültségek tovább növekedtek. Magyarország királyság maradt, de király nélkül: Horthy kormányzóként töltötte be az államfői tisztséget.",
+     "type": "text",
+     "heading": "Horthy Miklós hatalomra jutása",
+     "key_term": "Horthy Miklós"
     }
    }
   }
