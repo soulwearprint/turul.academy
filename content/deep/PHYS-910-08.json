@@ -1,0 +1,194 @@
+{
+ "nat_id": "PHYS-910-08",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "0c71e878-752b-4d99-ad51-e939bf0da2c5",
+   "title_hu": "Az elektromos állapot és kölcsönhatások",
+   "text_block_id": "6db30cf2-6b26-40df-926b-4a0a15e81416",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Az atom töltései",
+     "body": "Az atommagot Ernest Rutherford kísérletei mutatták ki 1911-ben. A mag pozitív töltésű protonokból és semleges neutronokból áll, körülötte pedig negatív töltésű elektronok vannak. Az elektron töltése az elemi töltés negatívja: e = 1,602 · 10⁻¹⁹ C. Egy semleges atomban a protonok és az elektronok száma egyenlő, ezért kifelé nincs töltése. Ha egy atom elektront veszít, pozitív ion lesz, ha felvesz, negatív ion. A naprendszerhez hasonlító kép csak egyszerűsítés: az elektronok nem pontos pályán keringenek, hanem felhőszerűen helyezkednek el.",
+     "did_you_know": "Az atom kb. 100 000-szer nagyobb, mint az atommagja. Ha az atom akkora lenne, mint egy 100 m-es focipálya, a magja egy homokszem lenne.",
+     "think": "Mi történik, ha egy semleges atom egy elektront veszít?",
+     "think_answer": "Pozitív ion lesz, mert több lesz benne a proton, mint az elektron."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Miért vonzza a lufi a papírfecnit?",
+     "body": "Dörzsöléskor elektronok mennek át az egyik anyagból a másikba, az egyik pozitív, a másik negatív töltésű lesz, összesen pedig a töltés megmarad. Két, hajon megdörzsölt lufi azonos töltésű, ezért taszítják egymást. Ha viszont egy megdörzsölt lufit egy semleges papírfecni közelébe viszünk, a papír töltései kissé elmozdulnak: a közelebbi oldalon ellentétes töltés gyűlik össze, a távolabbin azonos. Mivel a közelebbi töltés erősebben vonz, mint amennyire a távolabbi taszít, a papír a lufi felé mozdul. Ezt nevezzük elektromos megosztásnak.",
+     "did_you_know": "",
+     "think": "Miért vonzza a dörzsölt lufi a semleges papírfecnit?",
+     "think_answer": "Mert a lufi közelében a papírban a töltések szétválnak, és a közelebbi, ellentétes töltés erősebben vonz, mint amennyire a távolabbi azonos töltés taszít."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A Coulomb-törvény számokkal",
+     "body": "A Coulomb-törvény szerint F = k · Q₁ · Q₂ : r², ahol k = 9 · 10⁹ N · m²/C². Két, egyenként 1 μC töltésű pontszerű test 10 cm távolságban F = 9 · 10⁹ · 10⁻⁶ · 10⁻⁶ : 0,01 = 0,9 N erővel hat egymásra. Ha a távolságot megkétszerezzük, az erő negyedére csökken, háromszoros távolságnál kilencedére. Az erő attól függően vonzó vagy taszító, hogy a töltések előjele különböző vagy azonos. Charles-Augustin de Coulomb 1785 körül torziós mérleggel mérte meg ezt az összefüggést.",
+     "did_you_know": "",
+     "think": "Mekkora lesz az erő, ha az előző példában a távolságot 10 cm-ről 30 cm-re növeljük?",
+     "think_answer": "Kilencedére csökken: 0,9 : 9 = 0,1 N."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Miért véd az autó a villámtól?",
+     "body": "A zárt fémfelület, a Faraday-kalitka az elektromos mezőt kívül tartja: a töltések a vezető külső felületén mozognak, belül a térerősség nulla. Ezért biztonságos a villámlás közben a fémkarosszériás autó vagy repülőgép belseje. A mikrohullámú sütő ajtaján lévő rács lyukai kisebbek a mikrohullám hullámhosszánál (kb. 12 cm), ezért a sugárzás nem jut ki. A mobiltelefon jelét a fém is árnyékolja, ezért van rossz térerő lift belsejében. A jelenség demonstrálásához a telefont csak kikapcsolt, dugó nélküli sütőbe tegyük.",
+     "did_you_know": "",
+     "think": "Miért védi meg az autó a benne ülőket a villámtól?",
+     "think_answer": "Mert a fémkarosszéria Faraday-kalitkaként a töltést a külső felületén vezeti, és belül nulla marad az elektromos mező."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A csúcs, ahol a mező felerősödik",
+     "body": "Egy vezető felületén a töltés a hegyes, kis görbületi sugarú helyeken sűrűsödik, ott a legerősebb az elektromos mező. Egy gömb felszínén a térerősség kb. E = U : r. Egy 10 kV-ra töltött, 1 cm sugarú gömb felszínén ez 10 000 : 0,01 = 1 MV/m, egy 1 mm sugarú csúcson viszont már 10 MV/m. A levegő átütési térerőssége kb. 3 MV/m, ezért a csúcs közelében a levegő ionizálódik, és szikra vagy koronakisülés indul. A villámhárító hegye is ezt használja ki: a felfogó rúd fogja be a villámot, a levezető és a földelés pedig a földbe vezeti az áramot.",
+     "did_you_know": "",
+     "think": "Miért indul a szikra hamarabb egy hegyes tűtől, mint egy gömbtől?",
+     "think_answer": "Mert a csúcson sűrűsödik a töltés, ott nagyobb a térerősség, és hamarabb éri el a levegő átütési értékét."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Töltés érintés nélkül",
+     "body": "Az elektroszkópot megosztással is feltölthetjük. Ha egy negatív töltésű rudat a gombhoz közelítünk (nem érintjük meg), a gombon pozitív, a lemezkéken negatív töltés gyűlik össze, a lemezkék szétnyílnak. Ha közben ujjunkkal megérintjük a gombot, a negatív töltés a földbe távozik. Ezután először az ujjunkat, majd a rudat elvesszük: az elektroszkóp pozitív töltésű marad, a lemezkék szétállnak. A töltés megosztással tehát ellentétes előjelű lesz, mint a rúd töltése, míg érintéssel megegyező.",
+     "did_you_know": "",
+     "think": "Miért nyílnak szét az elektroszkóp lemezkéi, ha érintés nélkül közelítünk egy töltött rudat a gombhoz?",
+     "think_answer": "Mert a megosztás miatt a lemezkékre azonos előjelű töltés kerül, és azok taszítják egymást."
+    }
+   ]
+  },
+  {
+   "lesson_id": "379610ff-1892-4209-b6b6-b2969d69786e",
+   "title_hu": "Az elektromos mező és szemléltetése",
+   "text_block_id": "46f927b1-02a5-406b-b49d-63b192686a53",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "A mező erőssége",
+     "body": "Az elektromos mező minden töltés körül kialakuló tér, amelyben egy másik töltésre erő hat. Az erősségét úgy adjuk meg, hogy egy kis próbatöltésre ható erőt elosztjuk a próbatöltéssel: E = F : q, egysége N/C, vagyis V/m. Ha egy 2 nC-os próbatöltésre 6 μN erő hat, akkor E = 6 · 10⁻⁶ : (2 · 10⁻⁹) = 3000 N/C. Az elektromos mező nem mágnes: a mágnesek vonzása és taszítása a mágneses mező hatása. A pozitív töltésre a mező irányában hat erő, a negatívra ellenkező irányban.",
+     "did_you_know": "A Föld felszínén szép időben kb. 100 V/m az elektromos mező, vihar közben ennél sokszorosa is lehet.",
+     "think": "Mekkora az elektromos térerősség, ha egy 2 nC-os töltésre 6 μN erő hat?",
+     "think_answer": "E = F : q = 6 · 10⁻⁶ : (2 · 10⁻⁹) = 3000 N/C."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A búzadarás kísérlet",
+     "body": "A kísérlethez a búzadarát olajba szórjuk, és két elektródát merítünk bele. A mező hatására a búzadara szemcséi polarizálódnak: a végükön ellentétes töltések jelennek meg. Ezért a szemcsék az erővonalak mentén láncokba rendeződnek. Így látjuk a mező alakját: két ellentétes töltésű pont között ívelt láncok, két párhuzamos lemez között párhuzamos láncok jelennek meg. Az olaj azért kell, mert a szemcsék így szabadon elfordulhatnak, és nem tapadnak a felülethez. A kísérlet nagyfeszültségű forrást igényel, tanári felügyelettel végezzük.",
+     "did_you_know": "",
+     "think": "Miért kell a búzadarát olajba szórni?",
+     "think_answer": "Mert az olajban a szemcsék szabadon elfordulhatnak, és az erővonalak mentén láncokba rendeződhetnek."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Az erővonalak szabályai",
+     "body": "Az erővonalak a pozitív töltésből indulnak ki, és a negatív töltésben végződnek. Soha nem metszik egymást, mert egy pontban a mezőnek csak egy iránya lehet. Ahol sűrűbbek, ott erősebb a mező. Egyetlen pontszerű töltésnél sugárirányú egyenesek, két ellentétes töltésnél ívelt vonalak, két párhuzamos lemez között párhuzamos, egyenlő távolságú vonalak alkotják a képet, ez a homogén mező. A homogén mező erőssége E = U : d, például 100 V és 1 cm esetén 10 kV/m.",
+     "did_you_know": "",
+     "think": "Hogyan néznek ki az erővonalak két párhuzamos, ellentétes töltésű lemez között?",
+     "think_answer": "Párhuzamos, egyenlő távolságú egyenesek, ami homogén mezőt jelent."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Hogyan fizet a kártyád?",
+     "body": "Az érintés nélküli bankkártya rádióhullámú elektromágneses teret használ, 13,56 MHz frekvencián (NFC). A terminál váltakozó mágneses tere áramot indukál a kártya antennatekercsében, és ez a chip működtetéséhez is elegendő, ezért a kártyában nincs elem. A hatótávolság csak néhány centiméter, ezért kell a kártyát a terminálhoz érinteni. Az adat titkosított. A fémbevonatú tárca vagy fóliás tok árnyékolja a jelet, ez ugyanaz a jelenség, mint a Faraday-kalitka.",
+     "did_you_know": "",
+     "think": "Honnan kap áramot a kártya chipje, ha nincs benne elem?",
+     "think_answer": "A terminál váltakozó mágneses tere áramot indukál a kártya antennatekercsében."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A fénymásoló, a xerográfia",
+     "body": "A fénymásoló lelke egy fényérzékeny henger. Először egyenletesen feltöltik, majd a dokumentum képét rávetítik. A világos részekről visszavert fény kisüti a hengert, mert a fényérzékeny réteg megvilágítva vezetővé válik, a sötét részeken viszont a töltés megmarad. Ehhez a töltött képhez tapad a töltéssel ellentétes töltésű festékpor, a toner. A tonert a gép a papírra viszi, és hővel rásüti. Az eljárást Chester Carlson találta fel, az első xerográfiai másolat 1938-ban készült.",
+     "did_you_know": "",
+     "think": "Miért marad töltés a henger sötét részein?",
+     "think_answer": "Mert oda nem jut fény, és a fényérzékeny réteg csak megvilágítva vezet, ezért nem sül ki."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Az indukciós főzőlap titka",
+     "body": "A főzőlap alatt tekercs van, amelyben nagyfrekvenciás (több tíz kHz) váltakozó áram folyik, és változó mágneses teret kelt. A változó mágneses tér, Faraday indukciós törvénye (1831) szerint feszültséget indukál az edény aljában, és ez örvényáramot hajt, amely felmelegíti azt. Az edény tehát maga a hőforrás, a főzőlap üvege csak a visszamaradó hőtől melegszik. Csak mágnesezhető fémek (például vas, néhány rozsdamentes acél) használhatók; a réz és az alumínium edény nem. A jó edény alján a mágnes megtapad.",
+     "did_you_know": "",
+     "think": "Hogyan ellenőrizheted, hogy egy edény használható-e indukciós főzőlapon?",
+     "think_answer": "Egy mágnes megtapad az edény alján, ha jó."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Mi tartozik a projektmunkához?",
+     "body": "Az elektromos mező hatásán alapuló eszközök közül jó téma a villámhárító, a fénymásoló, a lézernyomtató, az elektrosztatikus por- és füstleválasztó az erőművekben, vagy az autók festése elektrosztatikus szórással. A Wi-Fi és a mobilinternet nem statikus elektromos mező, hanem elektromágneses hullámon alapul, ahol az elektromos és a mágneses tér együtt terjed. A szélerőmű a mágneses indukció elvén termel áramot. A projektmunkához megbízható forrásokat használj, és mindig jelöld meg az idézett forrást, illetve a képek szerzőjét.",
+     "did_you_know": "",
+     "think": "Miért fontos a források megjelölése a projektmunkában?",
+     "think_answer": "Hogy ellenőrizhető legyen az információ, és hogy elismerjük mások munkáját."
+    }
+   ]
+  },
+  {
+   "lesson_id": "f600e2d2-7dcb-4c2f-8b00-36528477fef4",
+   "title_hu": "Elektromos szikrák és villámok",
+   "text_block_id": "4db6de47-b2bc-4f64-a4bd-0e509bec4261",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mekkora feszültség kell egy szikrához?",
+     "body": "A levegő átütési térerőssége kb. 3 MV/m, vagyis 3 kV/mm. Ha a térerősség ezt eléri, a levegő ionizálódik, vezetővé válik, és szikra ugrik át. Egy 1 cm-es légrés átütéséhez tehát kb. 30 kV kell. Egy 10 kV-os megosztó gép szikrája kb. 3 mm hosszú. A szikra csatornájában a levegő nagyon forró, ezért világít, és hirtelen tágul, ez okozza a pukkanást. A villám ugyanez sokkal nagyobb léptékben: a mennydörgés a felforrósodó levegő gyors tágulásának hangja.",
+     "did_you_know": "",
+     "think": "Hány kV kell kb. egy 1 cm-es légrés átütéséhez?",
+     "think_answer": "3 MV/m · 0,01 m = 30 kV."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Hogyan tudjuk, milyen messze van a vihar?",
+     "body": "A villám fénye gyakorlatilag azonnal ideér, a hang viszont kb. 340 m/s sebességgel jön. Ha a villám és a dörgés között t másodperc telik el, a vihar távolsága kb. 340 · t méter, vagyis nagyjából t : 3 kilométer. A töltésszétválás a felhőben főként a jégkristályok és a nagyobb jégszemcsék ütközéséből jön létre. A villámok jelentős része a felhőn belül vagy felhők között villan, a többi csap a földbe. A földbe csapó villám árama tipikusan több tízezer amper.",
+     "did_you_know": "",
+     "think": "A villám után 6 másodperccel hallod a dörgést. Milyen messze csapott le?",
+     "think_answer": "340 m/s · 6 s ≈ 2 km."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A villámhárító útja",
+     "body": "A villámhárító három részből áll: a felfogó rúd a tetőn, a levezető vezeték és a földelés. Benjamin Franklin javasolta a 18. században. Nem azt akadályozza meg, hogy a villám lecsapjon, hanem biztonságos utat ad neki a földig, ezért az áram nem az épületen halad át. A jó védelemhez a földelés ellenállása kicsi kell legyen, különben az áram az épületbe ugorhat át. A villámhárító működéséhez tartozik az is, hogy a hegyes fém felfogó csúcs közelében erős a mező, ezért oda vonzódik a kisülés.",
+     "did_you_know": "",
+     "think": "Miért kell a villámhárítót földelni?",
+     "think_answer": "Hogy a villám árama a földbe folyjon, és ne az épületen keresztül haladjon."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mit tegyünk viharban?",
+     "body": "A hüvelykujjszabály szerint, ha a villám és a dörgés között 30 másodpercnél kevesebb telik el, keressünk menedéket. Az utolsó dörgés után még kb. 30 percet érdemes várni, mert a vihar mögött is lehet villám. Az épület vagy a fémkarosszériás autó jó védelem. Nyílt terepen a fák alatt állni veszélyes, mert a villám a fába csap, és a törzsön vagy a talajon át oldalról áthaladhat. Ha nincs menedék, guggoljunk le lábunkat összezárva (lépésfeszültség miatt), de ne feküdjünk le. A mobiltelefon nem vonzza a villámot, de viharban kerüljük a vezetékes készülékek és a töltés közbeni eszközök használatát, mert a hálózaton túlfeszültség jelenhet meg.",
+     "did_you_know": "",
+     "think": "Miért nem szabad viharban fa alatt állni?",
+     "think_answer": "Mert a fa magas, a villám becsaphat bele, és az áram a törzsről vagy a talajon át rád is átterjedhet."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Villámok biztonságos megfigyelése",
+     "body": "A villámot biztonságosan ablakból vagy fedett helyről érdemes megfigyelni. Fényképezéskor állványt és hosszú záridőt használjunk, így több villám is ráfér a képre. A villámok típusait (felhőn belüli, felhők közötti, földbe csapó) a felvételeken meg lehet különböztetni. A megfigyelés közben feljegyezhetjük a dörgés késését is, és ebből a távolságot. A villám átlagosan kb. 30 000 A áramot visz, ezért a közelébe menni életveszélyes.",
+     "did_you_know": "",
+     "think": "Hogyan becsülheted meg a vihar távolságát?",
+     "think_answer": "A villám és a dörgés között eltelt másodpercek számát elosztod 3-mal, így kilométerben kapod meg."
+    }
+   ]
+  }
+ ]
+}

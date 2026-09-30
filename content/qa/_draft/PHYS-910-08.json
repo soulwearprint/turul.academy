@@ -1,0 +1,471 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres/hiányos kísérletblokkok: az a78f257b blokk discovery, try_basic és try_advanced mezője és vázlata üres; a 91e84ded blokkban a try_basic és try_advanced mező üres; a 56eab446 blokkban a try_advanced üres."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "6db30cf2-6b26-40df-926b-4a0a15e81416",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az atom mint „kis naprendszer”, az elektronok „körülötte keringenek”",
+   "explanation": "Az elektronok nem pontos pályán keringenek, hanem felhőszerűen helyezkednek el (kvantummechanikai kép). A naprendszer-modell csak leegyszerűsítés, és ezt jelezni kell.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Bohr_model",
+     "title": "Bohr model",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Képzelj el egy egyszerű atomot, mint egy kis naprendszert, ahol a középpontban az atommag található, míg az elektronok körülötte keringenek.",
+     "Az atom egyszerűsített képe egy kis naprendszerhez hasonló: középen az atommag található, körülötte pedig az elektronok mozognak (valójában nem pontos pályán, hanem elektronfelhőként)."
+    ]
+   ]
+  },
+  {
+   "block_id": "6db30cf2-6b26-40df-926b-4a0a15e81416",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A vezeték nélküli töltőnél „a töltő és a telefon között vonzás van”",
+   "explanation": "A vezeték nélküli töltő elektromágneses indukcióval (váltakozó mágneses tér) visz át energiát, nem elektromos vonzással. Az elektromos vonzás/taszítás jobb példája a dörzsölt lufi.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Inductive_charging",
+     "title": "Inductive charging",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Gondolj csak a mobiltelefonod vezeték nélküli töltőjére: a töltő és a telefon között vonzás van, ami lehetővé teszi az energia átadását.",
+     "Gondolj két, hajon megdörzsölt lufira: azonos töltésűek, ezért taszítják egymást."
+    ]
+   ]
+  },
+  {
+   "block_id": "6db30cf2-6b26-40df-926b-4a0a15e81416",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„ha egy mobiltelefont helyezünk ezekbe, a telefon nem tud hívásokat fogadni” (hűtőszekrény, mikrohullámú sütő)",
+   "explanation": "A jelenség a fémdoboz árnyékoló hatása; a hűtőszekrény nem zárt Faraday-kalitka (a jel részben átjut), a sütőt pedig soha nem szabad telefonnal bekapcsolni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Faraday_cage",
+     "title": "Faraday cage",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ezt a jelenséget a hűtőszekrényben vagy mikrohullámú sütőben is megfigyelhetjük: ha egy mobiltelefont helyezünk ezekbe, a telefon nem tud hívásokat fogadni.",
+     "Ezt a jelenséget megfigyelhetjük a mikrohullámú sütőben is (kikapcsolt, dugó nélküli sütővel): a benne lévő telefon nem kap jelet."
+    ]
+   ]
+  },
+  {
+   "block_id": "6db30cf2-6b26-40df-926b-4a0a15e81416",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„ha egy fémgömböt megérintünk, a töltés a gömb csúcsán halmozódik fel”; a földelés „megakadályozza” a csúcshatást; a villámvédelem",
+   "explanation": "Egy gömbön nincs csúcs, a töltés egyenletesen oszlik el; a csúcshatás hegyes vezetőn jelentkezik. A villámhárító a csúcshatást kihasználja (a felfogó hegy fogja be a villámot), a földelés pedig elvezeti az áramot, nem szünteti meg a csúcshatást.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Corona_discharge",
+     "title": "Corona discharge",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Lightning_rod",
+     "title": "Lightning rod",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Például, ha egy fémgömböt megérintünk, a töltés a gömb csúcsán halmozódik fel, ami szikrázáshoz vezethet.",
+     "Egy fémgömb felületén a töltés egyenletesen oszlik el, egy hegyes fémtárgy csúcsán viszont sűrűsödik: ott a mező olyan erős lehet, hogy a levegő ionizálódik, és szikrázás indulhat."
+    ],
+    [
+     "Ezt a jelenséget a földelés segíti megakadályozni, amely során a felesleges töltést a földbe vezetik, így csökkentve a szikrázás veszélyét. Ezt a gyakorlatban a villámvédelmi rendszerekben alkalmazzák.",
+     "A földelés a felesleges töltést a földbe vezeti, így csökkenti a felhalmozódás és a szikrázás veszélyét. A villámhárító a csúcshatást használja ki: a hegyes vég fogja be a villámot, a földelés pedig biztonságosan elvezeti."
+    ]
+   ]
+  },
+  {
+   "block_id": "6db30cf2-6b26-40df-926b-4a0a15e81416",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "Az elektromos megosztás: „a töltés egyenletesen oszlik el egy vezető felületén”; telefon-akkumulátor példa",
+   "explanation": "A megosztás a semleges vezetőn külső töltött test hatására bekövetkező töltésszétválás. A telefon akkumulátorának töltése kémiai és áramköri folyamat, nem megosztás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electrostatic_induction",
+     "title": "Electrostatic induction",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az elektromos megosztás azt jelenti, hogy a töltés egyenletesen oszlik el egy vezető felületén. Például, amikor a mobiltelefonod töltőre van téve, a töltés a telefon akkumulátorába oszlik el, így biztosítva a megfelelő működést. Kísérletezhetsz egy egyszerű elektroszkóppal is, amely megmutatja, hogyan oszlik el a töltés a különböző anyagok között.",
+     "Az elektromos megosztás azt jelenti, hogy egy semleges vezetőn egy közelítő töltött test hatására szétválik a pozitív és a negatív töltés: a közelebbi oldalon az ellentétes, a távolabbin az azonos töltés gyűlik össze. Kísérletezhetsz egy egyszerű elektroszkóppal is: ha egy dörzsölt műanyag rudat érintés nélkül a gombjához közelítesz, a lemezkék szétnyílnak."
+    ]
+   ]
+  },
+  {
+   "block_id": "46f927b1-02a5-406b-b49d-63b192686a53",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Az elektromos mező „egy olyan tér, amelyben az elektromos töltések hatnak egymásra”; a mágnesek szobája hasonlat",
+   "explanation": "Az elektromos mező a töltés körül kialakuló tér, amelyben egy másik töltésre erő hat (E = F : q). A mágnes-hasonlat félrevezető, mert a mágnesek mágneses, nem elektromos kölcsönhatást mutatnak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electric_field",
+     "title": "Electric field",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az elektromos mező (E) egy olyan tér, amelyben az elektromos töltések hatnak egymásra. Képzelj el egy szobát, ahol sok mágnes van, és ezek a mágnesek vonzzák vagy taszítják egymást. Az elektromos mező hasonlóan működik, csak itt elektromos töltések vannak.",
+     "Az elektromos mező (E) minden töltés körül kialakuló tér, amelyben egy másik töltésre erő hat. A mező erősségét az egységnyi próbatöltésre ható erő adja meg: E = F : q."
+    ]
+   ]
+  },
+  {
+   "block_id": "46f927b1-02a5-406b-b49d-63b192686a53",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A búzadarás kísérlet: „a búzadara elkezd mozogni, mivel az elektromos mező hatására a töltések elmozdulnak”",
+   "explanation": "A klasszikus kísérletben a búzadarát olajba szórják, két elektródával; a szemcsék polarizálódnak, és az erővonalak mentén láncokba rendeződnek. Száraz búzadarán a jelenség nem látványos, és nem mozog a búzadara egy dörzsölt műanyag közeledtére.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electric_field_lines_(experiment)",
+     "title": "Electric field lines (experiment)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ha egy elektromos töltésű tárgyat, például egy dörzsölt műanyagot közelítesz a búzadarásra, a búzadara elkezd mozogni, mivel az elektromos mező hatására a töltések elmozdulnak.",
+     "A kísérletben a búzadarát olajba szórják, és két elektródát merítenek bele: a mező a szemcséket polarizálja, ezért azok az erővonalak mentén láncokba rendeződnek."
+    ]
+   ]
+  },
+  {
+   "block_id": "46f927b1-02a5-406b-b49d-63b192686a53",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az érintés nélküli fizetés „elektromos mező segítségével” viszi át az adatot",
+   "explanation": "Az NFC rádióhullámú elektromágneses teret (13,56 MHz) használ; a terminál váltakozó mágneses tere áramot indukál a kártya antennájában.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Near-field_communication",
+     "title": "Near-field communication",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az érintés nélküli bankkártyás fizetés során egy elektromos mező segítségével történik az adatátvitel. Amikor a kártyádat a terminálhoz közelíted, a kártyában lévő chip és a terminál közötti elektromos mező lehetővé teszi az adatok gyors és biztonságos átvitelét.",
+     "Az érintés nélküli bankkártyás fizetés során rádióhullámú (13,56 MHz) elektromágneses tér viszi át az adatokat: a terminál váltakozó mágneses tere áramot indukál a kártya antennájában, ami a chipet is működteti. Ezért kell a kártyát a terminálhoz közelíteni."
+    ]
+   ]
+  },
+  {
+   "block_id": "46f927b1-02a5-406b-b49d-63b192686a53",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A fénymásolóban „a fényérzékeny lemez elektromos töltést kap, amikor a másolandó dokumentumot beolvassa; a sötét részek vonzzák a festéket”",
+   "explanation": "A hengert előbb egyenletesen feltöltik; a világos részekről visszavert fény kisüti, a sötét részeken marad a töltés, és ehhez tapad a festékpor (toner).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Xerography",
+     "title": "Xerography",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A gép belsejében egy fényérzékeny lemez található, amely elektromos töltést kap, amikor a másolandó dokumentumot beolvassa. Ezután a sötét részek vonzzák a festéket, míg a világos részek taszítják, így létrejön a másolat.",
+     "A gép belsejében egy fényérzékeny henger található, amelyet előbb egyenletesen feltöltenek. A dokumentum világos részeiről visszavert fény kisüti a hengert, a sötét részeken viszont megmarad a töltés. Ehhez tapad a festékpor (toner), amelyet a gép a papírra visz és rásüt."
+    ]
+   ]
+  },
+  {
+   "block_id": "46f927b1-02a5-406b-b49d-63b192686a53",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Az indukciós főzőlap „az elektromos mező alkalmazása”",
+   "explanation": "Az indukciós főzőlap váltakozó mágneses teret használ, amely az edény aljában örvényáramot indukál; nem az elektromos mezőt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Induction_cooking",
+     "title": "Induction cooking",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az indukciós főzőlap egy másik példa az elektromos mező alkalmazására. A főzőlap alatt elektromágneses mező keletkezik, amely csak a fém edényekre hat.",
+     "Az indukciós főzőlap nem az elektromos mezőt, hanem a változó mágneses mezőt használja. A főzőlap alatt tekercs váltakozó mágneses teret kelt, amely csak a mágnesezhető fém edényekre hat."
+    ]
+   ]
+  },
+  {
+   "block_id": "46f927b1-02a5-406b-b49d-63b192686a53",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„szélerőművek működése, a mobilinternet vagy a Wi-Fi, hiszen ezek mind az elektromos mező elvein alapulnak”",
+   "explanation": "A szélerőmű mágneses indukcióval termel áramot; a Wi-Fi és a mobilinternet elektromágneses hullámot használ. Az elektromos mező statikus alkalmazása: villámhárító, fénymásoló, porleválasztó.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electrostatic_precipitator",
+     "title": "Electrostatic precipitator",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Kutathatsz olyan témákat, mint a szélerőművek működése, a mobilinternet vagy a Wi-Fi, hiszen ezek mind az elektromos mező elvein alapulnak.",
+     "Kutathatsz olyan témákat, mint a villámhárító, a fénymásoló vagy az elektrosztatikus porleválasztó, amelyek az elektromos mező hatásain alapulnak."
+    ]
+   ]
+  },
+  {
+   "block_id": "4db6de47-b2bc-4f64-a4bd-0e509bec4261",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A villámhárítók „megakadályozzák, hogy a villám közvetlenül az épületbe csapjon”",
+   "explanation": "A villámhárító nem akadályozza meg a becsapást, hanem biztonságos utat biztosít az áramnak a földig.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lightning_rod",
+     "title": "Lightning rod",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ezek a rendszerek megakadályozzák, hogy a villám közvetlenül az épületbe csapjon, ezzel védve a benne tartózkodókat és az értékeket.",
+     "Ezek a rendszerek biztonságos utat adnak a villámnak a földig, így az áram nem az épület szerkezetén halad át, ezzel védve a benne tartózkodókat és az értékeket."
+    ]
+   ]
+  },
+  {
+   "block_id": "4db6de47-b2bc-4f64-a4bd-0e509bec4261",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A mobiltelefonok használata során is figyeljünk, mert a vezeték nélküli készülékek is érzékenyek lehetnek a villámcsapásra”",
+   "explanation": "A mobiltelefon nem vonzza a villámot; a veszélyt a hálózatra kötött vagy vezetékes készülékek jelentik, mert a villám túlfeszültséget okozhat a hálózaton.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lightning_safety",
+     "title": "Lightning safety",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A mobiltelefonok használata során is figyeljünk, mert a vezeték nélküli készülékek is érzékenyek lehetnek a villámcsapásra.",
+     "A mobiltelefon nem vonzza a villámot, viszont viharban kerüljük a vezetékes telefont és a hálózatra kötött készülékeket, mert a villám túlfeszültséget okozhat a hálózaton."
+    ]
+   ]
+  },
+  {
+   "block_id": "caa60609-9b92-4470-99a9-76ec1a09378a",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Vonás és taszítás”, „Csak vonás”",
+   "explanation": "Elírás: vonzás, nem vonás.",
+   "source_note": "magyar helyesírás",
+   "set": {
+    "options[0]": "A) Vonzás és taszítás",
+    "options[1]": "B) Csak vonzás"
+   }
+  },
+  {
+   "block_id": "c672b868-f727-4ca2-9c46-fe9fcdd5a14a",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„Mi az elektromos mező (elektromos mező)?”",
+   "explanation": "A zárójelben ismétlődik a kifejezés (a fordítási minta maradványa).",
+   "source_note": "szerkesztési hiba",
+   "set": {
+    "question": "Mi az elektromos mező?"
+   }
+  },
+  {
+   "block_id": "c672b868-f727-4ca2-9c46-fe9fcdd5a14a",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "low",
+   "claim": "„A pozitív töltés az elektromos mező irányába elmozdul, mivel a mező vonzása hat rá.”",
+   "explanation": "A pozitív töltésre a mező irányába mutató erő hat, ezért gyorsul a mező irányába; a „vonzás” nem pontos.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electric_field",
+     "title": "Electric field",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "A pozitív töltésre a mező irányába mutató erő hat, ezért a töltés a mező irányába mozdul el."
+   }
+  },
+  {
+   "block_id": "40212f6e-ec51-4aba-9c97-c2349f9eea03",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Milyen helyzetben kell különösen óvatosnak lenni a villámcsapás veszélye miatt?” – kulcs A) nyílt terep, de C) fás terület is veszélyes",
+   "explanation": "Viharban a fák alatt is nagyon veszélyes tartózkodni (becsaphat a fába, oldalvillám, lépésfeszültség), tehát két válasz helyes.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lightning_safety",
+     "title": "Lightning safety",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[2]": "C) Otthon, az ablaktól távol."
+   }
+  },
+  {
+   "block_id": "f8fc2039-e49a-426b-a256-137d5701f495",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az elektromos árnyékolás … egy elektromos mezőt egy másik, töltött test segítségével csökkentünk.”",
+   "explanation": "Az árnyékolást vezető (fém) burok végzi, a töltések a felületén átrendeződve kioltják a mezőt belül; nem „töltött test segítségével”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Faraday_cage",
+     "title": "Faraday cage",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "Az elektromos árnyékolás azt jelenti, hogy egy vezető burok (például fémdoboz) a belsejében kioltja a külső elektromos mezőt."
+   }
+  },
+  {
+   "block_id": "f8fc2039-e49a-426b-a256-137d5701f495",
+   "card_index": 5,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mi a csúcshatás?” – kulcs D) „az elektromos szikrák keletkezése”",
+   "explanation": "A csúcshatás a töltés sűrűsödése a vezető hegyes részein (a lecke és a többi kvíz is így definiálja); a szikra csak következménye lehet.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Corona_discharge",
+     "title": "Corona discharge",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) A töltés sűrűsödése a vezető hegyes részein.",
+    "correct": "A",
+    "explanation": "A csúcshatás azt jelenti, hogy a vezető hegyes részein sűrűsödik a töltés, ezért ott nagyobb a térerősség, és szikrázás indulhat."
+   }
+  },
+  {
+   "block_id": "56eab446-037f-4952-b450-5ca6c56d0f99",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Coulomb az elektroszkópot használta a Coulomb-törvény felfedezéséhez",
+   "explanation": "Coulomb 1785 körül torziós mérleggel mérte a töltött golyók közti erőt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Coulomb's_law",
+     "title": "Coulomb's law",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Torsion_balance",
+     "title": "Torsion balance",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az eszközt Charles-Augustin de Coulomb is használta a Coulomb-törvény felfedezése során, amely a töltések közötti erőt írja le. Coulomb 1785-ben kísérleteivel és méréseivel megerősítette, hogy a töltések vonzzák vagy taszítják egymást a távolságuk függvényében.",
+     "Charles-Augustin de Coulomb 1785 körül torziós mérleggel mérte meg a töltött golyók közötti erőt, és megállapította, hogy az fordítottan arányos a távolság négyzetével (Coulomb-törvény)."
+    ]
+   ],
+   "set": {
+    "try_basic": "Készítsünk egyszerű elektroszkópot: egy befőttesüveg fedelén átvezetett drót aljára akasszunk két alufólia csíkot, a drót tetejére tegyünk alufólia gombócot. Közelítsünk dörzsölt műanyag rudat a gombóchoz (érintés nélkül), és figyeljük meg a csíkok szétnyílását!"
+   }
+  },
+  {
+   "block_id": "91e84ded-706f-45b2-9e2b-a6abd0b9992a",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Franklin híres kísérlete a léggömb és a kulcs használatával történt”",
+   "explanation": "Franklin híres kísérlete sárkánnyal és kulccsal történt (1752), a lefolyása vitatott, és a kísérlet életveszélyes.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Benjamin_Franklin",
+     "title": "Benjamin Franklin",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Franklin híres kísérlete a léggömb és a kulcs használatával történt, amely során megfigyelte az elektromos kisülést.",
+     "Híres, sárkánnyal és kulccsal végzett kísérletét 1752-re teszik, de pontos lefolyása vitatott. A kísérlet életveszélyes, ne próbáld megismételni!"
+    ]
+   ]
+  }
+ ]
+}
