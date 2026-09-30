@@ -1,0 +1,459 @@
+{
+ "nat_id": "PHYS-910-04",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 16,
+  "cards": 84,
+  "modes": [
+   "experiment",
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "A lecke szövegei, kvízei és kísérletei általánosan igazak, a fenti pontokon kívül nem találtunk hibát."
+  ]
+ },
+ "findings": [
+  {
+   "id": "PHYS-910-04-001",
+   "lesson_id": "105f8cb6-eb87-4261-a439-cf7514faa113",
+   "block_id": "48b363fc-5e40-4ae3-8e36-da3630011874",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az elektromos autók „kevesebb szennyező anyagot bocsátanak ki”",
+   "explanation": "Az elektromos autó menet közben nem bocsát ki kipufogógázt; az életciklus-kibocsátás az áram forrásától és a gyártástól függ.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electric_vehicle",
+     "title": "Electric vehicle",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az energiaforrásaink kiválasztása közvetlen hatással van a környezet állapotára. Az elektromos autók, amelyek kevesebb szennyező anyagot bocsátanak ki, egyre elterjedtebbek a városokban. A hagyományos energiaforrások, mint a szén és a gáz, hozzájárulnak a légszennyezéshez és a globális felmelegedéshez. Fontos, hogy tudatosan válasszuk meg, milyen energiaforrást használunk.",
+     "type": "text",
+     "heading": "Az energiatermelés és a környezet kapcsolata",
+     "key_term": "energiatermelés és környezet"
+    },
+    "after": {
+     "body": "Az energiaforrásaink kiválasztása közvetlen hatással van a környezet állapotára. Az elektromos autók, amelyek menet közben nem bocsátanak ki kipufogógázt, egyre elterjedtebbek a városokban. A hagyományos energiaforrások, mint a szén és a gáz, hozzájárulnak a légszennyezéshez és a globális felmelegedéshez. Fontos, hogy tudatosan válasszuk meg, milyen energiaforrást használunk.",
+     "type": "text",
+     "heading": "Az energiatermelés és a környezet kapcsolata",
+     "key_term": "energiatermelés és környezet"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-04-002",
+   "lesson_id": "105f8cb6-eb87-4261-a439-cf7514faa113",
+   "block_id": "48b363fc-5e40-4ae3-8e36-da3630011874",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A napállandó „megmutatja, mennyi energiát tudunk a Napból hasznosítani”; a napelemek hatékonysága „szorosan összefügg a napállandó értékével”",
+   "explanation": "A napállandó (kb. 1361 W/m²) a légkör felső határán, a sugarakra merőleges felületre érkező teljesítmény. A talajra jutó sugárzás legfeljebb kb. 1000 W/m². A napelem hatásfoka a technológiától függ, nem a napállandótól.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Solar_constant",
+     "title": "Solar constant",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A napállandó a Napból a Földre érkező sugárzás mennyiségét jelenti, és megmutatja, mennyi energiát tudunk a Napból hasznosítani. A napelemek hatékonysága szorosan összefügg a napállandó értékével, amely körülbelül 1361 W/m². A napállandó megértése segít a napenergia hatékonyabb kihasználásában, ami kulcsfontosságú a fenntartható jövő szempontjából.",
+     "type": "text",
+     "heading": "A napállandó és jelentősége",
+     "key_term": "napállandó"
+    },
+    "after": {
+     "body": "A napállandó a légkör felső határán, a napsugarakra merőleges felületre érkező sugárzás teljesítménye, értéke körülbelül 1361 W/m². A talajra ennél kevesebb jut, legfeljebb kb. 1000 W/m²; a napelem termelése ettől és a napelem hatásfokától függ. A napállandó megértése segít a napenergia hatékonyabb kihasználásában, ami kulcsfontosságú a fenntartható jövő szempontjából.",
+     "type": "text",
+     "heading": "A napállandó és jelentősége",
+     "key_term": "napállandó"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-04-003",
+   "lesson_id": "8aa83039-31b6-48d6-83f3-f9defb4a6b76",
+   "block_id": "215da348-93bb-4828-99c1-72da8644893e",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„az áram a közeli erőműből érkezik”",
+   "explanation": "A háztartások az országos villamosenergia-hálózatról kapnak áramot, amelyet több, gyakran távoli erőmű táplál.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Electrical_grid",
+     "title": "Electrical grid",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az energia szállítása kulcsfontosságú a modern világban. Az elektromos áramot általában vezetékek segítségével szállítják, amelyek lehetővé teszik, hogy a távoli erőművek energiáját eljuttassák a városokba. Például, amikor otthonunkban világítást kapcsolunk fel, az áram a közeli erőműből érkezik. A vezeték nélküli energiaátvitel, mint a Qi töltés, egy újabb példa, amely lehetővé teszi, hogy okostelefonjainkat anélkül töltsük fel, hogy kábelekre lenne szükség. Az energia szállításának hatékonysága szintén fontos, hiszen a hosszú távú szállítás során veszteségek léphetnek fel.",
+     "type": "text",
+     "heading": "Az energia szállításának lehetőségei",
+     "key_term": "energia szállítás"
+    },
+    "after": {
+     "body": "Az energia szállítása kulcsfontosságú a modern világban. Az elektromos áramot általában vezetékek segítségével szállítják, amelyek lehetővé teszik, hogy a távoli erőművek energiáját eljuttassák a városokba. Például, amikor otthonunkban világítást kapcsolunk fel, az áram az országos hálózatból érkezik, amelyet több, gyakran távoli erőmű táplál. A vezeték nélküli energiaátvitel, mint a Qi töltés, egy újabb példa, amely lehetővé teszi, hogy okostelefonjainkat anélkül töltsük fel, hogy kábelekre lenne szükség. Az energia szállításának hatékonysága szintén fontos, hiszen a hosszú távú szállítás során veszteségek léphetnek fel.",
+     "type": "text",
+     "heading": "Az energia szállításának lehetőségei",
+     "key_term": "energia szállítás"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-04-004",
+   "lesson_id": "0c30dccc-2b82-401b-94b8-6d1603177937",
+   "block_id": "063857cd-43e8-4bf5-a3f6-5bd5fdb80994",
+   "mode": "experiment",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Tesla és Edison versengése „az autók fejlődéséhez is hozzájárult”",
+   "explanation": "Az „áramháború” (Edison egyenáram, Westinghouse és Tesla váltakozó áram) a villamosenergia-hálózatok kialakítását formálta, nem az autókét.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/War_of_the_currents",
+     "title": "War of the currents",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "experiment",
+     "today": "Az autók működése során a benzin vagy elektromos energia átalakulása mozgási energiává a mindennapi közlekedés része.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 50,
+        "w": 300,
+        "x": 50,
+        "y": 200,
+        "type": "box"
+       },
+       {
+        "x": 150,
+        "y": 215,
+        "text": "Autó",
+        "type": "label"
+       },
+       {
+        "x1": 100,
+        "x2": 100,
+        "y1": 200,
+        "y2": 150,
+        "type": "arrow"
+       },
+       {
+        "x": 80,
+        "y": 130,
+        "text": "Üzemanyag",
+        "type": "label"
+       },
+       {
+        "x1": 300,
+        "x2": 300,
+        "y1": 200,
+        "y2": 150,
+        "type": "arrow"
+       },
+       {
+        "x": 280,
+        "y": 130,
+        "text": "Mozgási energia",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Energia az autó működésében",
+     "discovery": "Az autók működésének megértésében fontos szerepet játszik az energia megmaradásának törvénye. A 19. század végén Nikola Tesla és Thomas Edison versengése során sokat tanultunk az elektromos áram termeléséről és felhasználásáról, ami az autók fejlődéséhez is hozzájárult.",
+     "try_basic": "Készíts egy egyszerű autómodellt egy papírdobozból, és figyeld meg, hogyan mozog, amikor megnyomod a hátulját, ami az energiaváltozásokat mutatja be.",
+     "try_advanced": "Kísérletezz egy elektromos autóval, és mérd meg, mennyi energia szükséges a különböző sebességeknél, majd elemezd a kapott adatokat."
+    },
+    "after": {
+     "type": "experiment",
+     "today": "Az autók működése során a benzin vagy elektromos energia átalakulása mozgási energiává a mindennapi közlekedés része.",
+     "sketch": {
+      "shapes": [
+       {
+        "h": 50,
+        "w": 300,
+        "x": 50,
+        "y": 200,
+        "type": "box"
+       },
+       {
+        "x": 150,
+        "y": 215,
+        "text": "Autó",
+        "type": "label"
+       },
+       {
+        "x1": 100,
+        "x2": 100,
+        "y1": 200,
+        "y2": 150,
+        "type": "arrow"
+       },
+       {
+        "x": 80,
+        "y": 130,
+        "text": "Üzemanyag",
+        "type": "label"
+       },
+       {
+        "x1": 300,
+        "x2": 300,
+        "y1": 200,
+        "y2": 150,
+        "type": "arrow"
+       },
+       {
+        "x": 280,
+        "y": 130,
+        "text": "Mozgási energia",
+        "type": "label"
+       }
+      ],
+      "viewBox": "0 0 400 300"
+     },
+     "heading": "Energia az autó működésében",
+     "discovery": "Az autók működésének megértésében fontos szerepet játszik az energia megmaradásának törvénye. A 19. század végén Nikola Tesla és Thomas Edison versengése (az „áramháború”) az elektromos áram termelésének és elosztásának módját formálta, amire később az elektromos közlekedés is épült.",
+     "try_basic": "Készíts egy egyszerű autómodellt egy papírdobozból, és figyeld meg, hogyan mozog, amikor megnyomod a hátulját, ami az energiaváltozásokat mutatja be.",
+     "try_advanced": "Kísérletezz egy elektromos autóval, és mérd meg, mennyi energia szükséges a különböző sebességeknél, majd elemezd a kapott adatokat."
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-04-005",
+   "lesson_id": "105f8cb6-eb87-4261-a439-cf7514faa113",
+   "block_id": "b09f39df-f7fd-4af2-b3d9-b9f6faa22817",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„az összes többi energiaforrás … a Nap energiájából származik”",
+   "explanation": "A geotermikus, a nukleáris és az árapály-energia nem a Napból ered.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Renewable_energy",
+     "title": "Renewable energy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A Nap",
+      "B) A szél",
+      "C) A fosszilis tüzelőanyagok",
+      "D) A víz"
+     ],
+     "question": "Mi a Föld energiakészletének elsődleges forrása?",
+     "explanation": "A Nap (napenergia) az elsődleges forrása a Föld energiakészletének, mivel az összes többi energiaforrás, például a szél és a fosszilis tüzelőanyagok is a Nap energiájából származik.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A Nap",
+      "B) A szél",
+      "C) A fosszilis tüzelőanyagok",
+      "D) A víz"
+     ],
+     "question": "Mi a Föld energiakészletének elsődleges forrása?",
+     "explanation": "A Nap a Föld energiakészletének elsődleges forrása: a szél, a vízenergia és a fosszilis tüzelőanyagok is végső soron a Nap energiájából származnak (kivéve például a geotermikus, az atom- és az árapály-energiát).",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-04-006",
+   "lesson_id": "0c30dccc-2b82-401b-94b8-6d1603177937",
+   "block_id": "52dc1a47-3e55-4044-9ce1-96f16f78dca7",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A helyzeti energia alapja: A) „a test magassága és a gravitációs gyorsulás” (a tömeg is számít)",
+   "explanation": "E_p = m · g · h: a tömeg is szerepel, így C) „A test tömege” is része a helyes válasznak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Potential_energy",
+     "title": "Potential energy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A test magassága és a gravitációs gyorsulás.",
+      "B) A test sebessége.",
+      "C) A test tömege.",
+      "D) A test hőmérséklete."
+     ],
+     "question": "Mi a helyzeti energia (munkavégző képesség) alapja?",
+     "explanation": "A helyzeti energia a test magasságától és a gravitációs gyorsulástól függ, hiszen minél magasabbra emeljük a testet, annál nagyobb energiát tárol.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A test tömege, magassága és a gravitációs gyorsulás.",
+      "B) A test sebessége.",
+      "C) Csak a test tömege.",
+      "D) A test hőmérséklete."
+     ],
+     "question": "Mi a helyzeti energia (munkavégző képesség) alapja?",
+     "explanation": "A helyzeti energia a test magasságától és a gravitációs gyorsulástól függ, hiszen minél magasabbra emeljük a testet, annál nagyobb energiát tárol.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-04-007",
+   "lesson_id": "8aa83039-31b6-48d6-83f3-f9defb4a6b76",
+   "block_id": "eb8478d2-4abb-4593-a15c-0c8427aa408c",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A hőerőmű átalakítása: A) hő→mechanikai; B) mechanikai→elektromos is helyes",
+   "explanation": "A hőerőműben mindkét lépés lejátszódik: a hő turbinát forgat, a turbinát generátor elektromos energiává alakítja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Thermal_power_station",
+     "title": "Thermal power station",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hőenergia mechanikai energiává alakítása.",
+      "B) Mechanikai energia elektromos energiává alakítása.",
+      "C) Elektromos energia hőenergiává alakítása.",
+      "D) Kémiai energia hőenergiává alakítása."
+     ],
+     "question": "Milyen energiaátalakítást végez egy hőerőmű?",
+     "explanation": "A hőerőmű hőenergiát használ fel (például fosszilis tüzelőanyagokból), mechanikai energiává alakítva, majd ezt elektromos energiává transzformálja.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Hőenergia mechanikai energiává alakítása.",
+      "B) Mechanikai energia hőenergiává alakítása.",
+      "C) Elektromos energia hőenergiává alakítása.",
+      "D) Kémiai energia hőenergiává alakítása."
+     ],
+     "question": "Milyen energiaátalakítást végez egy hőerőmű?",
+     "explanation": "A hőerőmű hőenergiát használ fel (például fosszilis tüzelőanyagokból), mechanikai energiává alakítva, majd ezt elektromos energiává transzformálja.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "PHYS-910-04-008",
+   "lesson_id": "8aa83039-31b6-48d6-83f3-f9defb4a6b76",
+   "block_id": "eb8478d2-4abb-4593-a15c-0c8427aa408c",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Az energiahatékonyság az „elveszett energia aránya”; a magyarázat a hasznos és a veszett energia arányát említi",
+   "explanation": "A hatásfok a hasznos és a befektetett energia hányadosa, nem az elveszett rész aránya.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Energy_conversion_efficiency",
+     "title": "Energy conversion efficiency",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A rendszerben lévő energia mennyisége.",
+      "B) Az energiaátalakítás során elveszett energia aránya.",
+      "C) Csak az energiaforrás típusa.",
+      "D) Az energia szállítási távolsága."
+     ],
+     "question": "Mi határozza meg az energiahatékonyságot egy rendszerben?",
+     "explanation": "Az energiahatékonyság a hasznos energia és az energiaátalakítás során elveszett energia arányát jelenti, amely meghatározza, mennyire hatékonyan használják fel az energiát.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A rendszerben lévő energia mennyisége.",
+      "B) A hasznos energia és a befektetett energia aránya.",
+      "C) Csak az energiaforrás típusa.",
+      "D) Az energia szállítási távolsága."
+     ],
+     "question": "Mi határozza meg az energiahatékonyságot egy rendszerben?",
+     "explanation": "Az energiahatékonyság (hatásfok) a hasznos energia és a befektetett energia aránya, amely megmutatja, mennyire hatékonyan használják fel az energiát.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}
