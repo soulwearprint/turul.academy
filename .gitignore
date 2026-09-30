@@ -15,3 +15,6 @@ frontend/.env.local
 *.log
 .env
 content/exports/_sweep_done.txt
+
+# Staged media (uploaded to Storage, not committed)
+content/media/staging/

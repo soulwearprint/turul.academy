@@ -26,7 +26,7 @@ idea when a session gets archived." Added 2026-07-07._
   trivia). Automated checks still missed 2 subtle slips → **human review before rolling out
   to more topics.** To pull it: `UPDATE content_blocks SET is_active=false WHERE mode='deep'`.
 
-- **Visual-tab images (variant C) — PHYS-78-03 diagram pilot APPLIED 2026-09-29 (PR #2); photo sourcing NOT done.**
+- **Visual-tab images (variant C) — PHYS-78-03 diagrams APPLIED 2026-09-29 (PR #2); 5 photos APPLIED 2026-09-30; most other lesson 2–4 cards still text-only.**
   Tier order: image/timeline (`card.image`, `card.timeline`) → in-house SVG (`card.diagram`, SketchDiagram
   shapes) → text placeholder. Images are self-hosted (never hotlinked), see the `content-media`
   Storage bucket / `content/media/staging/`.
@@ -42,29 +42,31 @@ idea when a session gets archived." Added 2026-07-07._
     candidates only, `--download` for human-approved ones) now honours `Retry-After` on HTTP 429 (5 tries, max 120 s wait);
     offline-tested only.
 
-  *Not done, and why:*
-  - **No photo candidates were sourced.** Commons refused the cloud sandbox's IP: first 429, then a 403 from
-    Wikimedia's edge ("Please respect our robot policy…", even for a plain `siteinfo` call). That is an IP-level block,
-    so backoff does not help. Deliberately not worked around. Nothing was written to `PHYS-78-03_candidates.json`.
-  - To do it: run from a non-throttled machine (e.g. the owner's Mac), one call per Téma:
-    `python source_media.py --nat-id PHYS-78-03 --tema "Mozgások megfigyelése és csoportosítása" --match pálya sebesség --query "motion trajectory car road" --out ../media/PHYS-78-03_candidates.json`,
-    `--tema "Út és idő kiszámítása" --match út idő átlagsebesség --query "speedometer car dashboard"`,
-    `--tema "Erők és gyorsulás vizsgálata" --match fékez súrlód gyorsul --query "car braking skid marks"`.
-    Then a human opens each Commons file page, checks the licence, sets `"status": "approved"`, runs `--download`, then
-    `apply_media.py` on the file. Or email bot-traffic@wikimedia.org if cloud-side sourcing is wanted.
-  - Open question: whether a Wikimedia personal API token / OAuth lifts the limit for the Commons *Action API* is
-    unknown (the docs at www.mediawiki.org were not readable from the sandbox; not needed for an IP block). A
-    "bot account" is for editing and is NOT needed for read-only sourcing.
+  *Photos applied 2026-09-30* (`content/media/lesson_images_2026_09b.py`, cards written through `edit_content_card`,
+  so undoable from the review queue; files uploaded to `content-media`, sources/licences in `manifest.json`):
+  Sebesség mérése (lesson 2; Hungarian radar speed display, CC BY-SA 3.0), Nehézségi erő (lesson 3; NASA feather+hammer
+  on the Moon, PD), Önvezérelt autó / Légzsák / Biztonsági öv (lesson 4; lidar CC BY 2.0, crash test CC BY-SA 4.0,
+  belted dummy CC BY 2.0). The card texts next to them are new Hungarian text written by the assistant — **not yet read by a teacher**.
+
+  *Not done:*
+  - No photo yet for „Sebességváltozás fékezés során” (lesson 3, card 4; a braking/skid-marks photo was found on Commons
+    but the file could not be fetched before the session ended) and for the remaining lesson 2–4 cards that still show
+    the text placeholder. Lesson 1 already has its images.
+  - Sourcing from the cloud sandbox works only with **curl** at about one request per 40 s: Wikimedia returns 429 (Retry-After)
+    when the shared cloud IP is busy, and 403 to Python `httpx` requests even when curl succeeds from the same IP. So
+    `source_media.py` (httpx) fails in the cloud; from a normal machine it should work. Do not try to get around the rate limit.
+  - The earlier `media_refs` licence table (v10) is used only for the 6 diagrams; the photos are tracked in `manifest.json`
+    like lesson 1's images. Decide whether to unify.
 
   *Still open / unverified:*
   - **Human review of the 6 diagrams' physics** before the lessons go public (the deep-dive layer had 2 subtle errors
     that automated checks missed). The 6 `media_refs` rows are `approved` by default for authored diagrams — this is
-    not the same as reviewed. Whether those lessons are `is_active` (i.e. publicly visible) was not checked.
+    not the same as reviewed. The visual blocks of all 4 PHYS-78-03 lessons were `is_active=true` on 2026-09-30, so the diagrams and the new photos are publicly visible now.
   - Rendering after PR #2's merge (which unified on `card.image`/`card.timeline`/`card.diagram`) was not re-checked in the
     running app; the apply happened before the merge.
   - CC BY / CC BY-SA photos need a visible credit (author, licence, source) in the UI and stored in `media_refs`;
-    confirm `VisualCard` shows it before any photo goes live. Share-alike may bind cropped/edited derivatives.
-  - The owner's first-task image (on their Mac) needs the file, author, licence and source URL supplied.
+    `CardImage` prints `credit` + a source link under every image (read in code, not seen in the running app). Share-alike may bind cropped/edited derivatives.
+  - The owner's own first-task image (on their Mac) is still unidentified; nothing in the repo says which image that is. Send the file, author, licence and source URL, or say which card it belongs to.
   - Not built: History timelines/maps generator, quarterly link/licence re-check job, curator UI.
 
 - **Emelt-szint (advanced depth layer).** Schema-ready: `content_blocks.level` already supports

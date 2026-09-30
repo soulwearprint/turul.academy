@@ -113,6 +113,46 @@
    "author": "Turul Academy",
    "license": "own work",
    "changes": "make_physics_diagrams.py"
+  },
+  {
+   "path": "content-media/phys/utido/sebessegkijelzo-nagykovacsi.webp",
+   "used_in": "PHYS-78-03 · Út és idő kiszámítása · vizuális #6 (Sebesség mérése)",
+   "source": "https://commons.wikimedia.org/wiki/File:Speed_radar_with_solar_panel,_Nagykovácsi_Road,_2020_Nagykovácsi.jpg",
+   "author": "Globetrotter19",
+   "license": "CC BY-SA 3.0",
+   "changes": "resized 1000 px, WebP"
+  },
+  {
+   "path": "content-media/phys/erok/toll-es-kalapacs-hold.webp",
+   "used_in": "PHYS-78-03 · Erők és gyorsulás vizsgálata · vizuális #2 (Nehézségi erő)",
+   "source": "https://commons.wikimedia.org/wiki/File:Apollo_15_F%26H.jpg",
+   "author": "NASA",
+   "license": "Public domain",
+   "changes": "resized 1000 px, WebP"
+  },
+  {
+   "path": "content-media/phys/biztonsag/lidar.webp",
+   "used_in": "PHYS-78-03 · Közlekedési eszközök biztonsági rendszerei · vizuális #1 (Önvezérelt autó)",
+   "source": "https://commons.wikimedia.org/wiki/File:Velodyne_High-Def_LIDAR.jpg",
+   "author": "Steve Jurvetson",
+   "license": "CC BY 2.0",
+   "changes": "resized 1000 px, WebP"
+  },
+  {
+   "path": "content-media/phys/biztonsag/legzsak-toresteszt.webp",
+   "used_in": "PHYS-78-03 · Közlekedési eszközök biztonsági rendszerei · vizuális #2 (Légzsák)",
+   "source": "https://commons.wikimedia.org/wiki/File:Crash-test-with-airbag-and-safty-belt.jpg",
+   "author": "Transport for NSW",
+   "license": "CC BY-SA 4.0",
+   "changes": "resized 1000 px, WebP"
+  },
+  {
+   "path": "content-media/phys/biztonsag/biztonsagi-ov.webp",
+   "used_in": "PHYS-78-03 · Közlekedési eszközök biztonsági rendszerei · vizuális #3 (Biztonsági öv)",
+   "source": "https://commons.wikimedia.org/wiki/File:Crash_test_dummy_with_three-point_seat_belt_(cropped).jpg",
+   "author": "ITU Pictures",
+   "license": "CC BY 2.0",
+   "changes": "cropped file version, resized 1000 px, WebP"
   }
  ]
 }
