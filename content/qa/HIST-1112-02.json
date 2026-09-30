@@ -1,0 +1,1753 @@
+{
+ "nat_id": "HIST-1112-02",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 119,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-1112-02-001",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "7d4ba311-f9a5-4055-8225-4fed038e39ce",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a magyar fél Andrássy Gyula vezetésével sikeresen követelte a politikai autonómiát”",
+   "explanation": "A kiegyezés magyar oldali szellemi vezetője és szervezője Deák Ferenc volt; Andrássy Gyula közreműködött, majd 1867-ben az első felelős magyar miniszterelnök lett.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+     "title": "Austro-Hungarian Compromise of 1867",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ferenc_Deák",
+     "title": "Ferenc Deák",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Gyula_Andrássy",
+     "title": "Gyula Andrássy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A kiegyezés 1867-ben jött létre, amely a magyar és osztrák állam közötti politikai együttműködést formalizálta. Az okai között szerepel a magyar szabadságharc utáni helyzet stabilizálása, valamint a nemzetiségi feszültségek kezelése. A kiegyezés során a magyar fél Andrássy Gyula vezetésével sikeresen követelte a politikai autonómiát. A kiegyezés fontos mérföldkő a magyar történelemben, mert lehetővé tette a magyar önálló törvényhozás működését, bár a közös ügyek, mint a hadügy és a külügy, közös irányítás alatt maradtak.",
+     "type": "text",
+     "heading": "A kiegyezés és okai",
+     "key_term": "kiegyezés"
+    },
+    "after": {
+     "body": "A kiegyezés 1867-ben jött létre, amely a magyar és osztrák állam közötti politikai együttműködést formalizálta. Az okai között szerepel a magyar szabadságharc utáni helyzet stabilizálása, valamint a nemzetiségi feszültségek kezelése. A kiegyezés során a magyar fél Deák Ferenc irányításával (Andrássy Gyula közreműködésével) sikeresen követelte a politikai autonómiát. A kiegyezés fontos mérföldkő a magyar történelemben, mert lehetővé tette a magyar önálló törvényhozás működését, bár a közös ügyek, mint a hadügy és a külügy, közös irányítás alatt maradtak.",
+     "type": "text",
+     "heading": "A kiegyezés és okai",
+     "key_term": "kiegyezés"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-002",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "7d4ba311-f9a5-4055-8225-4fed038e39ce",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a hadügy, a külügy és a pénzügy irányítását”",
+   "explanation": "A közös ügyek a külügy, a hadügy és az ezek költségeit fedező közös pénzügy voltak; a pénzügy egésze (például az állami költségvetés) nem volt közös.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+     "title": "Austro-Hungarian Compromise of 1867",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A kiegyezés után a közös ügyek rendszere alakult ki, amely magában foglalta a hadügy, a külügy és a pénzügy irányítását. Ezen ügyek felett a magyar kormány nem gyakorolt közvetlen hatalmat, ami feszültségeket okozott a két fél között. A közjogi kérdések, mint például a közös hadsereg irányítása, gyakori viták forrásává váltak. A közös ügyek rendszere a dualizmus alapját képezte, amely a magyar politikai élet stabilitását is befolyásolta.",
+     "type": "text",
+     "heading": "A közös ügyek rendszere",
+     "key_term": "közös ügyek"
+    },
+    "after": {
+     "body": "A kiegyezés után a közös ügyek rendszere alakult ki, amely magában foglalta a külügy, a hadügy és az ezek költségeit fedező közös pénzügy irányítását. Ezen ügyek felett a magyar kormány nem gyakorolt közvetlen hatalmat, ami feszültségeket okozott a két fél között. A közjogi kérdések, mint például a közös hadsereg irányítása, gyakori viták forrásává váltak. A közös ügyek rendszere a dualizmus alapját képezte, amely a magyar politikai élet stabilitását is befolyásolta.",
+     "type": "text",
+     "heading": "A közös ügyek rendszere",
+     "key_term": "közös ügyek"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-003",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "7d4ba311-f9a5-4055-8225-4fed038e39ce",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a választott képviselők közvetlenül képviselték a polgárokat”; Eötvös népiskolai törvénye az államszervezetről",
+   "explanation": "Az Országgyűlés kétkamarás volt (képviselőház és főrendiház), a választójog vagyonhoz, adóhoz és nemhez kötött, így a lakosságnak csak szűk rétege szavazhatott. Az Eötvös-féle népiskolai törvény (1868) nem az államszervezethez tartozik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+     "title": "Austro-Hungarian Compromise of 1867",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1867–1918)",
+     "title": "Kingdom of Hungary (1867–1918)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A kiegyezés nyomán a magyar államszervezet jelentős átalakuláson ment keresztül. A magyar Országgyűlés önállóan működött, és a választott képviselők közvetlenül képviselték a polgárokat. Eötvös József, mint a népiskolai törvény egyik megalkotója, hangsúlyozta az oktatás fontosságát a magyar államszervezet megerősítésében. A magyar államszervezet a dualizmus alatt a nemzeti identitás megőrzését is szolgálta, amely a politikai és társadalmi élet középpontjába került.",
+     "type": "text",
+     "heading": "A magyar államszervezet",
+     "key_term": "magyar államszervezet"
+    },
+    "after": {
+     "body": "A kiegyezés nyomán a magyar államszervezet jelentős átalakuláson ment keresztül. Az Országgyűlés két házból állt (képviselőház és főrendiház), és a képviselőket a lakosságnak csak szűk, vagyonhoz és adóhoz kötött rétege választotta. A végrehajtó hatalmat a király által kinevezett, az Országgyűlésnek felelős magyar kormány gyakorolta. A magyar államszervezet a dualizmus alatt a nemzeti identitás megőrzését is szolgálta, amely a politikai és társadalmi élet középpontjába került.",
+     "type": "text",
+     "heading": "A magyar államszervezet",
+     "key_term": "magyar államszervezet"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-004",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "7d4ba311-f9a5-4055-8225-4fed038e39ce",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Tisza Kálmán … számos reformot kezdeményezett a választási rendszer modernizálása érdekében”; „A választójog kiterjesztése a társadalom demokratizálódását célozta”",
+   "explanation": "Tisza Kálmán 1875 és 1890 között miniszterelnökként a szűk, vagyoni cenzuson alapuló választójogot és a nyílt szavazást fenntartotta; a korszakban a választójog kiterjesztése nem történt meg, a lakosságnak csak töredéke szavazhatott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Kálmán_Tisza",
+     "title": "Kálmán Tisza",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1867–1918)",
+     "title": "Kingdom of Hungary (1867–1918)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A dualizmus idején a magyar politikai életet a Szabadelvű Párt és a Függetlenségi Párt dominálta. A választójog kérdése folyamatos vitákat generált, mivel a nyílt szavazás mellett a titkos szavazás bevezetése is napirendre került. Tisza Kálmán, mint a Szabadelvű Párt vezetője, számos reformot kezdeményezett a választási rendszer modernizálása érdekében. A választójog kiterjesztése a társadalom demokratizálódását célozta, de a nemzeti kisebbségek helyzete továbbra is problémás maradt.",
+     "type": "text",
+     "heading": "A pártrendszer és a választójog",
+     "key_term": "választójog"
+    },
+    "after": {
+     "body": "A dualizmus idején a magyar politikai életet a Szabadelvű Párt és a Függetlenségi Párt dominálta. A választójog kérdése folyamatos vitákat generált, mivel a nyílt szavazás mellett a titkos szavazás bevezetése is napirendre került. Tisza Kálmán a Szabadelvű Párt vezetőjeként 1875 és 1890 között miniszterelnökként hosszú ideig irányította az országot, és fenntartotta a szűk, vagyonhoz kötött választójogot. A választójog a korszakban szűk maradt, és a nemzeti kisebbségek helyzete is problémás volt.",
+     "type": "text",
+     "heading": "A pártrendszer és a választójog",
+     "key_term": "választójog"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-005",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "7d4ba311-f9a5-4055-8225-4fed038e39ce",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A dualizmus kora 1867-től 1916-ig tartott”; a horvát–magyar kiegyezés „a nemzetiségi törvény keretein belül” szabályozta a horvátok helyzetét",
+   "explanation": "A dualizmus 1918 végéig tartott (Ferenc József 1916-ban halt meg, utóda IV. Károly). A horvát–magyar kiegyezés (Nagodba, 1868. évi XXX. tc.) önálló törvény volt, a nemzetiségi törvény (1868. évi XLIV. tc.) ettől független.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+     "title": "Austro-Hungarian Compromise of 1867",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Croatian–Hungarian_Settlement",
+     "title": "Croatian–Hungarian Settlement",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A dualizmus kora 1867-től 1916-ig tartott, amely Ferenc József uralkodása alatt valósult meg. Az ő uralkodása alatt a Monarchia gazdasági és politikai fejlődésen ment keresztül, de a nemzetiségi feszültségek is fokozódtak. A horvát-magyar kiegyezés 1868-ban szintén fontos esemény volt, amely a nemzetiségi törvény keretein belül szabályozta a horvátok helyzetét. Ferenc József uralkodása alatt a magyar politikai elit folyamatosan kereste az önállóságot és a nemzeti identitás megerősítését.",
+     "type": "text",
+     "heading": "A dualizmus és Ferenc József uralkodása",
+     "key_term": "dualizmus"
+    },
+    "after": {
+     "body": "A dualizmus kora 1867-től 1918-ig tartott; ebből 1916-ig, haláláig Ferenc József volt az uralkodó. Az ő uralkodása alatt a Monarchia gazdasági és politikai fejlődésen ment keresztül, de a nemzetiségi feszültségek is fokozódtak. A horvát-magyar kiegyezés 1868-ban szintén fontos esemény volt, amely külön törvényben (a nemzetiségi törvénytől függetlenül) szabályozta Horvátország helyzetét. Ferenc József uralkodása alatt a magyar politikai elit folyamatosan kereste az önállóságot és a nemzeti identitás megerősítését.",
+     "type": "text",
+     "heading": "A dualizmus és Ferenc József uralkodása",
+     "key_term": "dualizmus"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-006",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "7d4ba311-f9a5-4055-8225-4fed038e39ce",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Magyarország és Ausztria között egyenrangú viszonyt teremtett”",
+   "explanation": "A kiegyezés a két állam belső önállóságát rögzítette, de a közös ügyekben (külügy, hadügy) a döntések a közös uralkodónál voltak, és a hadseregben a német vezényleti nyelv maradt; a viszony a gyakorlatban nem volt egyenrangú.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+     "title": "Austro-Hungarian Compromise of 1867",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A passzív ellenállás a magyar nemesség és értelmiség körében kialakult politikai magatartásforma volt az 1849-es szabadságharc leverését követően. A passzív ellenállás lényege, hogy a magyarok nem vettek részt az osztrák kormányzat által szervezett politikai és közigazgatási tevékenységekben, így tiltakozva a Habsburg-uralom ellen. A passzív ellenállás egyik legismertebb alakja Deák Ferenc volt, aki a kiegyezés előkészítésében is fontos szerepet játszott. Ez a magatartásforma hozzájárult ahhoz, hogy a magyar kérdés napirenden maradjon, és végül 1867-ben létrejöjjön a kiegyezés, amely Magyarország és Ausztria között egyenrangú viszonyt teremtett.",
+     "type": "text",
+     "heading": "Passzív ellenállás a kiegyezés előtt",
+     "key_term": "passzív ellenállás"
+    },
+    "after": {
+     "body": "A passzív ellenállás a magyar nemesség és értelmiség körében kialakult politikai magatartásforma volt az 1849-es szabadságharc leverését követően. A passzív ellenállás lényege, hogy a magyarok nem vettek részt az osztrák kormányzat által szervezett politikai és közigazgatási tevékenységekben, így tiltakozva a Habsburg-uralom ellen. A passzív ellenállás egyik legismertebb alakja Deák Ferenc volt, aki a kiegyezés előkészítésében is fontos szerepet játszott. Ez a magatartásforma hozzájárult ahhoz, hogy a magyar kérdés napirenden maradjon, és végül 1867-ben létrejöjjön a kiegyezés, amely Magyarországnak belső önállóságot adott, közös uralkodó és közös ügyek mellett.",
+     "type": "text",
+     "heading": "Passzív ellenállás a kiegyezés előtt",
+     "key_term": "passzív ellenállás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-007",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "7d4ba311-f9a5-4055-8225-4fed038e39ce",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 8,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„két egyenrangú államra … közös uralkodóval, külügyekkel, hadüggyel és pénzügyekkel rendelkeztek”",
+   "explanation": "A Monarchia két belügyeiben önálló államból állt, amelyeknek a külügy, a hadügy és az ezekre fordított közös pénzügy volt közös; a „pénzügy” általános megfogalmazása félrevezet.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+     "title": "Austro-Hungarian Compromise of 1867",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az Osztrák-Magyar Monarchia 1867-ben jött létre a kiegyezés eredményeként, amely a Habsburg Birodalom és Magyarország közötti politikai megállapodás volt. A kiegyezés értelmében a birodalom két egyenrangú államra, Ausztriára és Magyarországra oszlott, amelyek közös uralkodóval, külügyekkel, hadüggyel és pénzügyekkel rendelkeztek. A Monarchia területe Közép-Európában helyezkedett el, és a korszak egyik legnagyobb politikai és gazdasági hatalma volt. A dualista rendszer lehetővé tette Magyarország számára a belső önállóságot, miközben a közös ügyekben együttműködött Ausztriával. A Monarchia fennállása alatt jelentős gazdasági és kulturális fejlődés ment végbe mindkét országban.",
+     "type": "text",
+     "heading": "Az Osztrák-Magyar Monarchia létrejötte",
+     "key_term": "Osztrák-Magyar Monarchia"
+    },
+    "after": {
+     "body": "Az Osztrák-Magyar Monarchia 1867-ben jött létre a kiegyezés eredményeként, amely a Habsburg Birodalom és Magyarország közötti politikai megállapodás volt. A kiegyezés értelmében a birodalom két, belügyeiben önálló államra, Ausztriára és Magyarországra oszlott, amelyek közös uralkodójuk volt, és közös külügyet, hadügyet és az ezek költségeit fedező közös pénzügyet tartottak fenn. A Monarchia területe Közép-Európában helyezkedett el, és a korszak egyik legnagyobb politikai és gazdasági hatalma volt. A dualista rendszer lehetővé tette Magyarország számára a belső önállóságot, miközben a közös ügyekben együttműködött Ausztriával. A Monarchia fennállása alatt jelentős gazdasági és kulturális fejlődés ment végbe mindkét országban.",
+     "type": "text",
+     "heading": "Az Osztrák-Magyar Monarchia létrejötte",
+     "key_term": "Osztrák-Magyar Monarchia"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-008",
+   "lesson_id": "82528600-4890-4626-9f2f-0aad804ac22b",
+   "block_id": "78d11de2-7c0b-4733-a245-916fe6cb2c4a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "„a horvát önállóságot biztosító megállapodás”; a törvény célja „kulturális autonómiájukat biztosítsa”",
+   "explanation": "A Nagodba Horvát-Szlavónországnak belügyi (igazságszolgáltatási, oktatási, vallási) autonómiát adott, nem függetlenséget. Az 1868. évi XLIV. tc. egyéni nyelvhasználati jogokat biztosított (közigazgatás, oktatás, bíróság), kollektív vagy területi, kulturális autonómiát nem.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Croatian–Hungarian_Settlement",
+     "title": "Croatian–Hungarian Settlement",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1867–1918)",
+     "title": "Kingdom of Hungary (1867–1918)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1868-ban a horvát-magyar kiegyezés keretében jött létre a horvát önállóságot biztosító megállapodás. Ezzel párhuzamosan megszületett a nemzetiségi törvény, amely a nemzetiségek jogait próbálta rendezni. A törvény célja az volt, hogy a nemzetiségek anyanyelvhasználatát és kulturális autonómiájukat biztosítsa. A kiegyezés és a törvény jelentős hatással volt a magyar politikai életre, mivel a nemzetiségi kérdés továbbra is éles vitákat generált.",
+     "type": "text",
+     "heading": "A horvát-magyar kiegyezés és a nemzetiségi törvény",
+     "key_term": "horvát-magyar kiegyezés, nemzetiségi törvény"
+    },
+    "after": {
+     "body": "1868-ban a horvát-magyar kiegyezés keretében jött létre a Horvát-Szlavónországnak belügyi autonómiát adó megállapodás (Nagodba). Ezzel párhuzamosan megszületett a nemzetiségi törvény, amely a nemzetiségek jogait próbálta rendezni. A törvény célja az volt, hogy az egyének anyanyelvhasználatát biztosítsa a közigazgatásban, az oktatásban és a bíróságon; kollektív, területi autonómiát nem adott. A kiegyezés és a törvény jelentős hatással volt a magyar politikai életre, mivel a nemzetiségi kérdés továbbra is éles vitákat generált.",
+     "type": "text",
+     "heading": "A horvát-magyar kiegyezés és a nemzetiségi törvény",
+     "key_term": "horvát-magyar kiegyezés, nemzetiségi törvény"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-009",
+   "lesson_id": "82528600-4890-4626-9f2f-0aad804ac22b",
+   "block_id": "78d11de2-7c0b-4733-a245-916fe6cb2c4a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Az irredenta mozgalmak célja a történelmi területek visszaszerzése volt, amelyek a magyar állam határain kívülre estek.”",
+   "explanation": "Az irredentizmus (a fogalom a 19. századi olasz mozgalomból ered) olyan területek megszerzésére törekszik, ahol az adott nemzet tagjai más állam fennhatósága alatt élnek; a definíció itt a magyar szempontot általánosításnak tünteti fel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Irredentism",
+     "title": "Irredentism",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A dualizmus korában a nemzetiségek autonómiáért folytatott törekvései egyre erősebbé váltak. Az irredenta mozgalmak célja a történelmi területek visszaszerzése volt, amelyek a magyar állam határain kívülre estek. Ezek a mozgalmak a nemzeti identitás megőrzésére és megerősítésére irányultak. A kormányzat válasza gyakran elnyomás volt, ami tovább növelte a feszültségeket a különböző etnikai csoportok között.",
+     "type": "text",
+     "heading": "Autonómiatörekvések és irredenta mozgalmak",
+     "key_term": "autonómia, irredenta mozgalmak"
+    },
+    "after": {
+     "body": "A dualizmus korában a nemzetiségek autonómiáért folytatott törekvései egyre erősebbé váltak. Az irredentizmus olyan területek megszerzésére törekedett, ahol az adott nemzet tagjai másik állam fennhatósága alatt éltek (a fogalom az olasz egységmozgalomból ered). Ezek a mozgalmak a nemzeti identitás megőrzésére és megerősítésére irányultak. A kormányzat válasza gyakran elnyomás volt, ami tovább növelte a feszültségeket a különböző etnikai csoportok között.",
+     "type": "text",
+     "heading": "Autonómiatörekvések és irredenta mozgalmak",
+     "key_term": "autonómia, irredenta mozgalmak"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-010",
+   "lesson_id": "82528600-4890-4626-9f2f-0aad804ac22b",
+   "block_id": "78d11de2-7c0b-4733-a245-916fe6cb2c4a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Zsidó emancipáció: a törvények pontos hivatkozása hiányzik",
+   "explanation": "A zsidók polgári és politikai jogegyenlőségét az 1867. évi XVII. tc. mondta ki; a zsidó vallás egyenrangú elismerése (recepció) az 1895. évi XLII. tc.-vel következett.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "1867. évi XVII. törvénycikk (a zsidók emancipációja), 1895. évi XLII. tc. (recepció)",
+   "fix": {
+    "before": {
+     "body": "A dualizmus korában a zsidó emancipáció folyamata zajlott, amely lehetővé tette a zsidóság számára a polgári jogok megszerzését. A zsidóság jelentős szerepet játszott a modernizációban és a polgárosodásban, hiszen sokan középosztálybeli pozíciókat töltöttek be. Az emancipációs törvények célja a társadalmi egyenlőség elősegítése volt, azonban a zsidóságot gyakran érte diszkrimináció. A zsidóság helyzete a modern Magyarország kialakulásában kulcsszerepet játszott.",
+     "type": "text",
+     "heading": "Zsidó emancipáció és a zsidóság szerepe",
+     "key_term": "zsidó emancipáció, polgárosodás"
+    },
+    "after": {
+     "body": "A dualizmus korában a zsidó emancipáció folyamata zajlott, amely lehetővé tette a zsidóság számára a polgári jogok megszerzését. A zsidóság jelentős szerepet játszott a modernizációban és a polgárosodásban, hiszen sokan középosztálybeli pozíciókat töltöttek be. Az emancipációt az 1867. évi XVII. törvénycikk mondta ki (a vallás egyenrangú elismerése, a recepció 1895-ben követte), célja a jogi egyenlőség megteremtése volt, azonban a zsidóságot gyakran érte diszkrimináció. A zsidóság helyzete a modern Magyarország kialakulásában kulcsszerepet játszott.",
+     "type": "text",
+     "heading": "Zsidó emancipáció és a zsidóság szerepe",
+     "key_term": "zsidó emancipáció, polgárosodás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-011",
+   "lesson_id": "82528600-4890-4626-9f2f-0aad804ac22b",
+   "block_id": "78d11de2-7c0b-4733-a245-916fe6cb2c4a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„sok esetben nem rendelkeztek jogokkal”",
+   "explanation": "A cigányok a korszakban jogilag állampolgárok voltak; a szegénység, a kirekesztés és a hatósági ellenőrzés (például az 1893-as cigányösszeírás) tette hátrányossá a helyzetüket, nem a jogfosztottság.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Az 1893. évi országos cigányösszeírás; a romák helyzete a dualizmus korában",
+   "fix": {
+    "before": {
+     "body": "A dualizmus korában a cigányság helyzete a társadalmi hierarchia alján helyezkedett el. A cigányok gyakran marginalizáltak voltak, és sok esetben nem rendelkeztek jogokkal. Az asszimilációs törekvések a cigány kultúra elvesztéséhez vezettek, miközben a közvélemény gyakran előítéletekkel kezelte őket. A cigányság helyzetének megértése fontos a magyar társadalom sokszínűségének és történetének feltárása szempontjából.",
+     "type": "text",
+     "heading": "Cigányok/romák helyzete a dualizmus kori Magyarországon",
+     "key_term": "cigányok, romák"
+    },
+    "after": {
+     "body": "A dualizmus korában a cigányság helyzete a társadalmi hierarchia alján helyezkedett el. A cigányok gyakran marginalizáltak voltak, és jogilag állampolgárok voltak, de a gyakorlatban szegénységben és kirekesztve éltek (az 1893-as országos cigányösszeírás is a hatósági ellenőrzést szolgálta). Az asszimilációs törekvések a cigány kultúra elvesztéséhez vezettek, miközben a közvélemény gyakran előítéletekkel kezelte őket. A cigányság helyzetének megértése fontos a magyar társadalom sokszínűségének és történetének feltárása szempontjából.",
+     "type": "text",
+     "heading": "Cigányok/romák helyzete a dualizmus kori Magyarországon",
+     "key_term": "cigányok, romák"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-012",
+   "lesson_id": "f88afeb5-59b9-4d8f-85a4-0cea915aa8c3",
+   "block_id": "17e9d0fb-0914-4e27-a624-b8fcb7f6dd11",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a magyar állam gazdasági politikáját önállóan alakíthatta ki”",
+   "explanation": "A kiegyezés után Ausztria és Magyarország közös vámterületet alkotott (vám- és kereskedelmi szövetség, tízévenként megújítva), a magyar gazdaságpolitika mozgástere ezért korlátozott volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+     "title": "Austro-Hungarian Compromise of 1867",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1867-ben a magyar és osztrák fél között létrejött a kiegyezés, amely megerősítette Magyarország önállóságát a Monarchián belül. Ennek következtében a magyar állam gazdasági politikáját önállóan alakíthatta ki, ami lehetőséget biztosított az ipari fejlődésre. A kiegyezés nyomán beindult a gazdasági modernizáció, amely a mezőgazdaság és az ipar közötti kapcsolat erősödését is elősegítette.",
+     "type": "text",
+     "heading": "A gazdasági kiegyezés",
+     "key_term": "gazdasági kiegyezés"
+    },
+    "after": {
+     "body": "1867-ben a magyar és osztrák fél között létrejött a kiegyezés, amely megerősítette Magyarország önállóságát a Monarchián belül. A két állam közös vámterületet alkotott, így a magyar gazdaságpolitika csak ezen a kereten belül mozoghatott, ami mégis lehetőséget adott az ipari fejlődésre. A kiegyezés nyomán beindult a gazdasági modernizáció, amely a mezőgazdaság és az ipar közötti kapcsolat erősödését is elősegítette.",
+     "type": "text",
+     "heading": "A gazdasági kiegyezés",
+     "key_term": "gazdasági kiegyezés"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-013",
+   "lesson_id": "f88afeb5-59b9-4d8f-85a4-0cea915aa8c3",
+   "block_id": "17e9d0fb-0914-4e27-a624-b8fcb7f6dd11",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az 1860-as évektől kezdődően a vasúthálózat gyors fejlődésnek indult”",
+   "explanation": "Az első magyarországi gőzvasút 1846-ban nyílt meg Pest és Vác között; a hálózat gyors kiépülése az 1860-as évektől gyorsult fel.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Az első magyarországi vasútvonal, Pest–Vác (1846)",
+   "fix": {
+    "before": {
+     "body": "A vasútépítés jelentős szerepet játszott az ipari forradalom során Magyarországon. Az 1860-as évektől kezdődően a vasúthálózat gyors fejlődésnek indult, ami megkönnyítette az áruk és az emberek szállítását. A vasút hozzájárult a gazdasági integrációhoz és a különböző iparágak fejlődéséhez, így például a bányászat és a feldolgozóipar fellendüléséhez.",
+     "type": "text",
+     "heading": "A vasútépítés",
+     "key_term": "vasútépítés"
+    },
+    "after": {
+     "body": "A vasútépítés jelentős szerepet játszott az ipari forradalom során Magyarországon. Az első vonal 1846-ban nyílt meg Pest és Vác között, a hálózat gyors kiépülése pedig az 1860-as évektől gyorsult fel, ami megkönnyítette az áruk és az emberek szállítását. A vasút hozzájárult a gazdasági integrációhoz és a különböző iparágak fejlődéséhez, így például a bányászat és a feldolgozóipar fellendüléséhez.",
+     "type": "text",
+     "heading": "A vasútépítés",
+     "key_term": "vasútépítés"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-014",
+   "lesson_id": "f88afeb5-59b9-4d8f-85a4-0cea915aa8c3",
+   "block_id": "17e9d0fb-0914-4e27-a624-b8fcb7f6dd11",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Baross Gábor, a korszak kiemelkedő közlekedési minisztere”",
+   "explanation": "Baross Gábor közlekedés- és kereskedelemügyi miniszter volt (1889–1892), nevéhez a vasutak államosítása és a zónatarifa kapcsolódik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Gábor_Baross",
+     "title": "Gábor Baross",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az állami gazdaságpolitika célja a gazdasági fejlődés elősegítése volt a dualizmus korában. Az állam támogatta az ipar fejlesztését, például adókedvezmények és állami beruházások formájában. Baross Gábor, a korszak kiemelkedő közlekedési minisztere, fontos szerepet játszott a gazdaságpolitikai intézkedések kidolgozásában, amelyek hozzájárultak a modern ipar kialakulásához.",
+     "type": "text",
+     "heading": "Állami gazdaságpolitika",
+     "key_term": "állami gazdaságpolitika"
+    },
+    "after": {
+     "body": "Az állami gazdaságpolitika célja a gazdasági fejlődés elősegítése volt a dualizmus korában. Az állam támogatta az ipar fejlesztését, például adókedvezmények és állami beruházások formájában. Baross Gábor közlekedés- és kereskedelemügyi miniszter (1889–1892), a vasutak államosításának és a zónatarifának a kezdeményezője, fontos szerepet játszott a gazdaságpolitikai intézkedések kidolgozásában, amelyek hozzájárultak a modern ipar kialakulásához.",
+     "type": "text",
+     "heading": "Állami gazdaságpolitika",
+     "key_term": "állami gazdaságpolitika"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-015",
+   "lesson_id": "8bbfbd3b-537a-4e56-97b8-386e7d77ef16",
+   "block_id": "3bfd5037-5a2c-4796-b5f2-1bfa28ddd528",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„E folyamat következtében Magyarország népessége csökkent”",
+   "explanation": "A kivándorlás ellenére a népesség a korszakban gyorsan nőtt; a kivándorlás a természetes szaporodás egy részét vitte el, nem csökkentette a lakosságot.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "KSH – a Magyar Királyság népességének alakulása 1869–1910",
+   "fix": {
+    "before": {
+     "body": "A dualizmus időszakában a gazdasági nehézségek és politikai feszültségek miatt sokan döntöttek a kivándorlás mellett. Az Egyesült Államok és más országok irányába indultak el, hogy jobb életkörülmények között próbáljanak szerencsét. E folyamat következtében Magyarország népessége csökkent, ami komoly társadalmi problémákat okozott. A kivándorlás jelensége nemcsak gazdasági, hanem kulturális hatásokat is gyakorolt, hiszen a külföldön élők tapasztalatai a hazai életformát is befolyásolták.",
+     "type": "text",
+     "heading": "Kivándorlás Európából és Magyarországról",
+     "key_term": "kivándorlás"
+    },
+    "after": {
+     "body": "A dualizmus időszakában a gazdasági nehézségek és politikai feszültségek miatt sokan döntöttek a kivándorlás mellett. Az Egyesült Államok és más országok irányába indultak el, hogy jobb életkörülmények között próbáljanak szerencsét. A népesség a kivándorlás ellenére is nőtt, de a kivándorlás így is komoly társadalmi problémákat okozott. A kivándorlás jelensége nemcsak gazdasági, hanem kulturális hatásokat is gyakorolt, hiszen a külföldön élők tapasztalatai a hazai életformát is befolyásolták.",
+     "type": "text",
+     "heading": "Kivándorlás Európából és Magyarországról",
+     "key_term": "kivándorlás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-016",
+   "lesson_id": "8bbfbd3b-537a-4e56-97b8-386e7d77ef16",
+   "block_id": "3bfd5037-5a2c-4796-b5f2-1bfa28ddd528",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A korszak nagy alakjai, mint Semmelweis Ignác”",
+   "explanation": "Semmelweis Ignác 1818–1865 között élt, a kézmosás jelentőségét 1847-ben ismerte fel, tehát a dualizmus kora előtt; elismerése csak halála után terjedt el.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
+     "title": "Ignaz Semmelweis",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A dualizmus idején a népoktatás terjedése jelentős előrelépést hozott a magyar társadalomban. Az 1868-as népiskolai törvény bevezetése lehetővé tette a szélesebb rétegek számára az iskolai oktatást. Az oktatás fejlődése hozzájárult a műveltségi szint emelkedéséhez, és új kulturális áramlatokat indított el. A korszak nagy alakjai, mint Semmelweis Ignác, a tudományos életben is jelentős hatást gyakoroltak, különösen az orvostudomány területén.",
+     "type": "text",
+     "heading": "Oktatás és kultúra",
+     "key_term": "népoktatás, Semmelweis Ignác, 1868 a népiskolai törvény"
+    },
+    "after": {
+     "body": "A dualizmus idején a népoktatás terjedése jelentős előrelépést hozott a magyar társadalomban. Az 1868-as népiskolai törvény bevezetése lehetővé tette a szélesebb rétegek számára az iskolai oktatást. Az oktatás fejlődése hozzájárult a műveltségi szint emelkedéséhez, és új kulturális áramlatokat indított el. Semmelweis Ignác (1818–1865) kézmosási felfedezése még a dualizmus előtt, 1847-ben született, elismerése azonban csak halála után, a korszakban terjedt el.",
+     "type": "text",
+     "heading": "Oktatás és kultúra",
+     "key_term": "népoktatás, Semmelweis Ignác, 1868 a népiskolai törvény"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-017",
+   "lesson_id": "8bbfbd3b-537a-4e56-97b8-386e7d77ef16",
+   "block_id": "3bfd5037-5a2c-4796-b5f2-1bfa28ddd528",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A Millennium ünnepségei, 1896-ban”",
+   "explanation": "A Millennium a honfoglalás (896) ezredik évfordulójának ünnepe volt; a magyar államiság kezdetét 1000-re (István koronázása) szokás tenni.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Millennium (1896), honfoglalás 896",
+   "fix": {
+    "before": {
+     "body": "A dualizmus korszakában a városi életforma új szórakozási lehetőségeket kínált. A színházak, kávéházak és közterek a társadalmi élet központjaivá váltak, ahol az emberek találkozhattak és szórakozhattak. A kulturális események, mint a kiállítások és ünnepségek, hozzájárultak a közösségi élet fellendüléséhez. A Millennium ünnepségei, 1896-ban, különösen fontos eseménynek számítottak, hiszen a magyar nemzet identitásának megerősítését célozták.",
+     "type": "text",
+     "heading": "Életmód és szórakozás",
+     "key_term": "Millennium, életmód, szórakozás"
+    },
+    "after": {
+     "body": "A dualizmus korszakában a városi életforma új szórakozási lehetőségeket kínált. A színházak, kávéházak és közterek a társadalmi élet központjaivá váltak, ahol az emberek találkozhattak és szórakozhattak. A kulturális események, mint a kiállítások és ünnepségek, hozzájárultak a közösségi élet fellendüléséhez. A Millennium ünnepségei 1896-ban, a honfoglalás ezredik évfordulóján különösen fontos eseménynek számítottak, hiszen a magyar nemzet identitásának megerősítését célozták.",
+     "type": "text",
+     "heading": "Életmód és szórakozás",
+     "key_term": "Millennium, életmód, szórakozás"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-018",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "ed9504e3-dc6d-4d28-bca5-760d79193684",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1867-ben Bismarck sikeres háborúkat vívott Ausztriával és Franciaországgal, amelyek eredményeként 1871-re létrejött a német egység”; kitalált link_hu",
+   "explanation": "Az osztrák–porosz háború 1866-ban volt (königgrätzi csata), a francia–porosz háború 1870–71-ben; a Német Birodalom 1871-ben jött létre. A link_hu általános, kitalált magyarázat; a valós kapcsolat Königgrätz és a kiegyezés.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Königgrätz",
+     "title": "Battle of Königgrätz",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/German_Empire",
+     "title": "German Empire",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Austro-Hungarian_Compromise_of_1867",
+     "title": "Austro-Hungarian Compromise of 1867",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1867-ben Otto von Bismarck, a porosz miniszterelnök, sikeres háborúkat vívott Ausztriával és Franciaországgal, amelyek eredményeként 1871-re létrejött a német egység. A német államok összefogása nemcsak politikai, hanem gazdasági szempontból is jelentős változásokat hozott, hiszen a közös piac létrejötte elősegítette a német ipar fejlődését. Bismarck politikai stratégiája, amely a háborúkat és a diplomáciai manővereket ötvözte, példaként szolgált más országok számára is, beleértve Magyarországot is, ahol a kiegyezés a nemzeti egység megteremtésének irányába mutatott.",
+     "type": "world",
+     "year": "1867",
+     "heading": "A német egység megteremtése",
+     "link_hu": "A német egység megvalósulása elősegítette a magyar kiegyezést, mivel a Habsburg Birodalom belső feszültségei és a nemzeti törekvések nyomására a magyar politikai elit is a közös ügyek rendezésére törekedett."
+    },
+    "after": {
+     "body": "Otto von Bismarck porosz miniszterelnök 1866-ban legyőzte Ausztriát (königgrätzi csata), 1870–71-ben Franciaországot, és 1871-ben létrejött a Német Birodalom.",
+     "type": "world",
+     "year": "1871",
+     "heading": "A német egység megteremtése",
+     "link_hu": "Az 1866-os königgrätzi vereség után Ausztriának rendeznie kellett a viszonyát a magyarokkal: ez közvetlenül siettette az 1867-es kiegyezést."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-019",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "ed9504e3-dc6d-4d28-bca5-760d79193684",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: az amerikai rekonstrukció „példát mutatott” a Szabadelvű és a Függetlenségi Pártnak",
+   "explanation": "Kimutatható hatás nincs; a kapcsolat kitalált. Valós kötődés: 1848–49 után több ezer magyar emigráns harcolt az Unió oldalán.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Hungarian Americans in the American Civil War",
+   "fix": {
+    "before": {
+     "body": "1867-ben az Egyesült Államokban a polgárháború utáni rekonstrukciós időszak zajlott, amely során a déli államok újjáépítése és a volt rabszolgák jogainak biztosítása volt a középpontban. A rekonstrukciós intézkedések, mint például a 14. és 15. alkotmánymódosítások, a polgári jogok kiterjesztését célozták. Ez a folyamat azonban politikai feszültségeket is szült, a fehér felsőbbrendűség és a faji megkülönböztetés ellenállásával.",
+     "type": "world",
+     "year": "1867",
+     "heading": "Az Egyesült Államokban a rekonstrukció",
+     "link_hu": "A rekonstrukciós törekvések a magyar politikai pártok, mint a Szabadelvű Párt és a Függetlenségi Párt, számára is példát mutattak a társadalmi reformok és a választójog kiterjesztése terén."
+    },
+    "after": {
+     "body": "1867-ben az Egyesült Államokban a polgárháború utáni rekonstrukciós időszak zajlott, amely során a déli államok újjáépítése és a volt rabszolgák jogainak biztosítása volt a középpontban. A rekonstrukciós intézkedések, mint például a 14. és 15. alkotmánymódosítások, a polgári jogok kiterjesztését célozták. Ez a folyamat azonban politikai feszültségeket is szült, a fehér felsőbbrendűség és a faji megkülönböztetés ellenállásával.",
+     "type": "world",
+     "year": "1867",
+     "heading": "Az Egyesült Államokban a rekonstrukció",
+     "link_hu": "A magyar közvélemény jól ismerte az amerikai eseményeket, mert 1848–49 után sok magyar emigráns harcolt az Unió oldalán; közvetlen hatás a magyar pártok politikájára nem mutatható ki."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-020",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "ed9504e3-dc6d-4d28-bca5-760d79193684",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: a francia reformok „hatással voltak a magyar politikai elit gondolkodására”",
+   "explanation": "Általános, kitalált kapcsolat. Valós esemény 1867-ből: a Habsburg-házi I. Miksa mexikói császárt 1867 júniusában kivégezték, miután III. Napóleon kivonta csapatait.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Maximilian_I_of_Mexico",
+     "title": "Maximilian I of Mexico",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_French_intervention_in_Mexico",
+     "title": "Second French intervention in Mexico",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1867-ben Franciaországban a második császárság uralkodott, amely alatt Napóleon III. kormánya próbálta stabilizálni a politikai helyzetet. Ekkoriban a francia ipar fejlődése és a gyarmati terjeszkedés is fontos szerepet játszott. A kormányzat reformokat vezetett be, hogy javítsa a gazdasági helyzetet, de a belpolitikai feszültségek és a nemzetközi helyzet instabilitása folyamatos kihívások elé állította.",
+     "type": "world",
+     "year": "1867",
+     "heading": "Franciaország és a második császárság",
+     "link_hu": "A francia politikai reformok és a gazdasági fejlődés mintája hatással volt a magyar politikai elit gondolkodására, akik a kiegyezés után a modernizációra és a gazdasági növekedésre helyezték a hangsúlyt."
+    },
+    "after": {
+     "body": "1867-ben Franciaországban a második császárság uralkodott, amely alatt Napóleon III. kormánya próbálta stabilizálni a politikai helyzetet. Ekkoriban a francia ipar fejlődése és a gyarmati terjeszkedés is fontos szerepet játszott. A kormányzat reformokat vezetett be, hogy javítsa a gazdasági helyzetet, de a belpolitikai feszültségek és a nemzetközi helyzet instabilitása folyamatos kihívások elé állította.",
+     "type": "world",
+     "year": "1867",
+     "heading": "Franciaország és a második császárság",
+     "link_hu": "1867 júniusában Mexikóban kivégezték I. Miksa császárt, Ferenc József öccsét, miután III. Napóleon kivonta a csapatait; a kudarc tovább rontotta a Habsburg-ház nemzetközi tekintélyét."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-021",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "ed9504e3-dc6d-4d28-bca5-760d79193684",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1867-ben … Olaszország egységének megteremtése … 1861-re Olaszország egyesült”",
+   "explanation": "A bekezdés önellentmondó. Az olasz királyság 1861-ben jött létre, Velence 1866-ban, Róma 1870-ben csatlakozott; 1867-ben Garibaldi sikertelen kísérletet tett Róma elfoglalására (Mentana).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Unification_of_Italy",
+     "title": "Unification of Italy",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Mentana",
+     "title": "Battle of Mentana",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1867-ben Olaszországban az egység megteremtése zajlott, miután a Risorgimento mozgalom sikeresen összefogta az olasz államokat. A különböző háborúk és diplomáciai lépések után 1861-re Olaszország egyesült, de a területi viták és a nemzeti identitás kérdései továbbra is feszültséget okoztak.",
+     "type": "world",
+     "year": "1867",
+     "heading": "Olaszország egysége",
+     "link_hu": "Olaszország egysége párhuzamba állítható a magyar kiegyezéssel, mivel mindkét esetben a nemzeti identitás és az állami keretek újragondolása volt a középpontban."
+    },
+    "after": {
+     "body": "Az egységes Olasz Királyság 1861-ben jött létre; Velence 1866-ban, Róma 1870-ben csatlakozott hozzá. 1867-ben Garibaldi sikertelenül próbálta elfoglalni Rómát (mentanai csata).",
+     "type": "world",
+     "year": "1867",
+     "heading": "Olaszország egysége",
+     "link_hu": "Ausztria 1866-ban elvesztette Velencét, és a Habsburg-birodalom újabb katonai veresége a magyarokkal való megegyezést is sürgetővé tette."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-022",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "ed9504e3-dc6d-4d28-bca5-760d79193684",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: a brit reformtörvények hatása „a magyar kiegyezés utáni politikai életben is kulcsszerepet játszott”",
+   "explanation": "Kimutatható hatás nincs. Tanulságos ellentét: az 1867-es brit reform a városi munkásokra is kiterjesztette a szavazati jogot, a magyar választójog vagyonhoz kötött maradt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Reform_Act_1867",
+     "title": "Reform Act 1867",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1867-ben Nagy-Britanniában a második reformtörvény elfogadása kibővítette a választójogot, lehetővé téve, hogy több munkás és középosztálybeli férfi szavazhasson. Ez a lépés a brit politikai rendszer demokratizálódásának irányába mutatott, és elősegítette a politikai pártok, mint a Liberális Párt és a Konzervatív Párt, megerősödését.",
+     "type": "world",
+     "year": "1867",
+     "heading": "Britanniában a reformtörvények",
+     "link_hu": "A brit reformtörvények hatása Magyarországon is érezhető volt, hiszen a választójog kérdése és a politikai pártok megerősödése a magyar kiegyezés utáni politikai életben is kulcsszerepet játszott."
+    },
+    "after": {
+     "body": "1867-ben Nagy-Britanniában a második reformtörvény elfogadása kibővítette a választójogot, lehetővé téve, hogy több munkás és középosztálybeli férfi szavazhasson. Ez a lépés a brit politikai rendszer demokratizálódásának irányába mutatott, és elősegítette a politikai pártok, mint a Liberális Párt és a Konzervatív Párt, megerősödését.",
+     "type": "world",
+     "year": "1867",
+     "heading": "Britanniában a reformtörvények",
+     "link_hu": "Míg az 1867-es brit reform a városi munkásokra is kiterjesztette a szavazati jogot, a magyar választójog vagyonhoz és adóhoz kötött maradt, és a lakosságnak csak töredékét érintette."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-023",
+   "lesson_id": "82528600-4890-4626-9f2f-0aad804ac22b",
+   "block_id": "c15e024f-e6cd-4f5f-a037-f0d70cd2939d",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "Üres világblokk: „Nincs globális párhuzam”, év és magyar kapcsolat nélkül",
+   "explanation": "A blokk nem ad valódi párhuzamot. Javaslat: az 1867-es kanadai államszövetség, mint többnyelvű állam másik megoldása, ellenpontja a magyar politikai nemzet elvének.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Canadian_Confederation",
+     "title": "Canadian Confederation",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "A lecke fogalmai, mint az asszimiláció és az autonómia, más kultúrákban és történelmi korszakokban is megjelentek, például a 19. századi Európában, ahol különböző nemzetiségek és etnikai csoportok küzdöttek identitásuk megőrzéséért.",
+     "type": "world",
+     "year": "",
+     "heading": "Nincs globális párhuzam",
+     "link_hu": ""
+    },
+    "after": {
+     "body": "1867-ben a Brit Észak-Amerika-törvénnyel létrejött Kanada szövetségi államként; a parlamentben és a bíróságokon az angol és a francia nyelv egyaránt használható volt, a francia nyelvű lakosság jogait külön garanciák védték.",
+     "type": "world",
+     "year": "1867",
+     "heading": "Kanada létrejötte",
+     "link_hu": "A kanadai megoldás a többnemzetiségű állam másik útja: a magyar nemzetiségi törvény (1868) a politikai nemzet elvére épült, és egyéni nyelvhasználati jogokat adott, kollektív jogokat nem."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-024",
+   "lesson_id": "f88afeb5-59b9-4d8f-85a4-0cea915aa8c3",
+   "block_id": "f0e380b8-d0d0-4d15-ae61-7c26a98531c6",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "link_hu: az amerikai gazdasági fellendülés „hozzájárult a magyar ipar modernizálódásához”",
+   "explanation": "Kitalált, homályos kapcsolat. Valós hatások: a polgárháború alatti pamutínség, majd az olcsó amerikai gabona okozta agrárválság az 1870–80-as években.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Cotton_Famine",
+     "title": "Cotton Famine",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Long_Depression",
+     "title": "Long Depression",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az Egyesült Államokban 1861-ben kitört a polgárháború, amely a rabszolgaság és az államok jogainak kérdése körül zajlott. A háború következtében jelentős társadalmi és gazdasági átalakulások indultak el, amelyek hatással voltak a világkereskedelemre is. A háború vége után az Egyesült Államok gazdasága gyorsan fejlődött, ami a nemzetközi kereskedelem átalakulásához vezetett.",
+     "type": "world",
+     "year": "1861",
+     "heading": "Az Egyesült Államok polgárháborúja",
+     "link_hu": "A háború utáni amerikai gazdasági fellendülés hozzájárult a magyar ipar modernizálódásához, mivel a nemzetközi piacok bővülése új lehetőségeket teremtett a magyar termelők számára."
+    },
+    "after": {
+     "body": "Az Egyesült Államokban 1861-ben kitört a polgárháború, amely a rabszolgaság és az államok jogainak kérdése körül zajlott. A háború következtében jelentős társadalmi és gazdasági átalakulások indultak el, amelyek hatással voltak a világkereskedelemre is. A háború vége után az Egyesült Államok gazdasága gyorsan fejlődött, ami a nemzetközi kereskedelem átalakulásához vezetett.",
+     "type": "world",
+     "year": "1861",
+     "heading": "Az Egyesült Államok polgárháborúja",
+     "link_hu": "A polgárháború alatt megszakadt az amerikai pamutszállítás (pamutínség); a háború után az olcsó tengerentúli gabona az 1870–80-as években agrárválságot okozott Magyarországon."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-025",
+   "lesson_id": "f88afeb5-59b9-4d8f-85a4-0cea915aa8c3",
+   "block_id": "f0e380b8-d0d0-4d15-ae61-7c26a98531c6",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1867-ben a német államok egyesülésével megalakult a Német Császárság”",
+   "explanation": "A Német Birodalom 1871-ben jött létre; 1867-ben az Északnémet Szövetség alakult meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/German_Empire",
+     "title": "German Empire",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/North_German_Confederation",
+     "title": "North German Confederation",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1867-ben a német államok egyesülésével megalakult a Német Császárság, amely politikai és gazdasági stabilitást hozott a térségbe. A német ipar gyors fejlődése és a gazdasági együttműködések kialakulása új piaci lehetőségeket teremtett a közép-európai országok számára. A német ipar innovációi és technológiai fejlődése példát jelentett más országok, köztük Magyarország számára is.",
+     "type": "world",
+     "year": "1867",
+     "heading": "A német birodalom megalakulása",
+     "link_hu": "A német ipar fejlődése ösztönözte Magyarország iparosodását, különösen a vasútépítési projektek és az ipari beruházások terén."
+    },
+    "after": {
+     "body": "1871-ben a német államok egyesülésével megalakult a Német Birodalom. A német ipar gyors fejlődése új piaci lehetőségeket teremtett a közép-európai országok számára is.",
+     "type": "world",
+     "year": "1871",
+     "heading": "A német birodalom megalakulása",
+     "link_hu": "1879-ben Ausztria–Magyarország szövetséget kötött a Német Birodalommal (Kettős Szövetség), amely a Monarchia külpolitikájának fő tengelye lett."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-026",
+   "lesson_id": "f88afeb5-59b9-4d8f-85a4-0cea915aa8c3",
+   "block_id": "f0e380b8-d0d0-4d15-ae61-7c26a98531c6",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "link_hu: a második ipari forradalom „közvetlenül befolyásolta” Magyarország iparát (példa nélkül)",
+   "explanation": "Konkrét magyar példa hiányzik: a Ganz-gyár villamos gépei, Bánki Donát és Csonka János 1893-as karburátora.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Bánki Donát és Csonka János karburátora (1893), Ganz-gyár",
+   "fix": {
+    "before": {
+     "body": "A második ipari forradalom a 19. század végén indult, jelentős technológiai újításokkal, mint például az elektromosság és a belső égésű motor elterjedésével. Ez az időszak új iparágak megjelenését és a termelés hatékonyságának növekedését hozta. A második ipari forradalom globális hatásai, mint a gyártás és a közlekedés modernizálódása, hozzájárultak a gazdasági növekedéshez és a világgazdaság integrálódásához.",
+     "type": "world",
+     "year": "1870",
+     "heading": "A második ipari forradalom kezdete",
+     "link_hu": "A második ipari forradalom technológiai újításai közvetlenül befolyásolták Magyarország ipari fejlődését, különösen az új iparágak megjelenése révén."
+    },
+    "after": {
+     "body": "A második ipari forradalom a 19. század végén indult, jelentős technológiai újításokkal, mint például az elektromosság és a belső égésű motor elterjedésével. Ez az időszak új iparágak megjelenését és a termelés hatékonyságának növekedését hozta. A második ipari forradalom globális hatásai, mint a gyártás és a közlekedés modernizálódása, hozzájárultak a gazdasági növekedéshez és a világgazdaság integrálódásához.",
+     "type": "world",
+     "year": "1870",
+     "heading": "A második ipari forradalom kezdete",
+     "link_hu": "Magyar példák: a Ganz-gyár villamos berendezései és Bánki Donát – Csonka János 1893-as karburátora, amely a belső égésű motorok fejlődéséhez kapcsolódott."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-027",
+   "lesson_id": "8bbfbd3b-537a-4e56-97b8-386e7d77ef16",
+   "block_id": "9ca6600f-4696-42d9-9c87-d3fe06cb35b4",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "„1868-ban az Egyesült Államokban a népesség gyors növekedésnek indul” (népességrobbanás); kitalált link_hu",
+   "explanation": "A „népességrobbanás” címke félrevezető, a mintaként emlegetett amerikai folyamat nem magyar példa. Valós kapcsolat: 1870 és 1914 között több mint egymillió magyar állampolgár vándorolt ki, főleg az USA-ba.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Hungarian emigration to the United States 1870–1914",
+   "fix": {
+    "before": {
+     "body": "1868-ban az Egyesült Államok a polgárháború utáni újjáépítési időszakban van, amely alatt a népesség gyors növekedésnek indul. A gazdasági fejlődés és a bevándorlás hatására a városok népessége gyorsan nő, hasonlóan a magyar urbanizációs folyamathoz. Az iparosodás és a városiasodás a társadalmi struktúrák átalakulását vonja maga után, amely a magyar társadalom fejlődésére is hatással van.",
+     "type": "world",
+     "year": "1868",
+     "heading": "Az Egyesült Államokban a népességrobbanás folytatódik.",
+     "link_hu": "A népességrobbanás és urbanizáció Magyarországon a hasonló amerikai folyamatok mintájára is megfigyelhető volt, ami a városok fejlődéséhez és a vidéki életformák átalakulásához vezetett."
+    },
+    "after": {
+     "body": "1868-ban az Egyesült Államokban a polgárháború utáni újjáépítés zajlott; a bevándorlók tömegei a nagyvárosokba és a nyugati területekre áramlottak, az ipar munkaerőigénye gyorsan nőtt.",
+     "type": "world",
+     "year": "1868",
+     "heading": "Bevándorlás és nagyvárosok az Egyesült Államokban",
+     "link_hu": "1870 és 1914 között több mint egymillió magyar állampolgár vándorolt ki, elsősorban az Egyesült Államokba."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-028",
+   "lesson_id": "8bbfbd3b-537a-4e56-97b8-386e7d77ef16",
+   "block_id": "9ca6600f-4696-42d9-9c87-d3fe06cb35b4",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1873-ban Bécs és Prága városait egyesítik”",
+   "explanation": "Bécs és Prága nem egyesült; kitalált esemény. 1873-ban Bécsben világkiállítás és tőzsdekrach volt, Pest, Buda és Óbuda pedig Budapest néven egyesült.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Panic_of_1873",
+     "title": "Panic of 1873",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/1873_Vienna_World's_Fair",
+     "title": "1873 Vienna World's Fair",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1873-ban Bécs és Prága városait egyesítik, ami a közép-európai városfejlesztések új irányvonalát mutatja. A városok integrációja és a városi infrastruktúra fejlesztése a dualizmus korában Magyarországon is hasonló tendenciákat eredményezett. A városok közötti közlekedési és kereskedelmi kapcsolatok erősödése hozzájárult a gazdasági növekedéshez.",
+     "type": "world",
+     "year": "1873",
+     "heading": "Bécs és Prága egyesítése.",
+     "link_hu": "A magyar főváros, Budapest egyesítése is hasonló célokat szolgált, mint Bécs és Prága összekapcsolása, amely a városi életforma fejlődését segítette elő."
+    },
+    "after": {
+     "body": "1873-ban Bécsben világkiállítást rendeztek, májusban azonban kitört a bécsi tőzsdekrach, amely gazdasági válságot indított el Közép-Európában.",
+     "type": "world",
+     "year": "1873",
+     "heading": "A bécsi világkiállítás és a tőzsdekrach",
+     "link_hu": "Ugyanebben az évben egyesült Pest, Buda és Óbuda Budapest néven; a krach a magyar pénzintézeteket és a vasútépítést is megrázta."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-029",
+   "lesson_id": "8bbfbd3b-537a-4e56-97b8-386e7d77ef16",
+   "block_id": "9ca6600f-4696-42d9-9c87-d3fe06cb35b4",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„1896-ban Berlinben megrendezett világkiállítás” … „Magyarország is bemutatta ipari termékeit”",
+   "explanation": "1896-ban Berlinben nem volt világkiállítás (iparkiállítás volt). Valós esemény: az első újkori olimpia Athénban, ahol Hajós Alfréd két úszószámban győzött; a Millennium ugyanebben az évben volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/1896_Summer_Olympics",
+     "title": "1896 Summer Olympics",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Alfréd_Hajós",
+     "title": "Alfréd Hajós",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1896-ban Berlinben megrendezett világkiállítás a technológiai újítások és ipari fejlődés bemutatója volt. A kiállítás során a résztvevő országok, köztük Magyarország is, bemutatták ipari termékeiket és kulturális örökségüket. Ez a nemzetközi esemény hozzájárult a nemzeti identitás erősödéséhez, amely a magyar Millennium ünnepségekkel párhuzamosan zajlott.",
+     "type": "world",
+     "year": "1896",
+     "heading": "A berlini világkiállítás.",
+     "link_hu": "A Millennium ünnepségek során Magyarország is a nemzeti identitás erősítésére törekedett, hasonlóan ahhoz, ahogyan a berlini világkiállítás során a résztvevő országok bemutatták kulturális örökségüket."
+    },
+    "after": {
+     "body": "1896-ban Athénban megrendezték az első újkori olimpiai játékokat; Magyarország is részt vett, Hajós Alfréd két úszószámban olimpiai bajnok lett.",
+     "type": "world",
+     "year": "1896",
+     "heading": "Az első újkori olimpia Athénban",
+     "link_hu": "Ugyanebben az évben ünnepelte az ország a Millenniumot, a honfoglalás ezredik évfordulóját."
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-030",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "e346a2de-3fab-4b8e-b6bf-4995301d4c64",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Melyik törvény kapcsolódik a közjogi kérdésekhez és a nemzetiségek jogainak rendezéséhez?”",
+   "explanation": "A kérdés két dolgot kérdez, és a D) Kiegyezési törvény (1867. évi XII. tc.) is közjogi kérdéseket rendezett: több jó válasz lehetséges.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "1867. évi XII. tc.; 1868. évi XLIV. tc.",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Népiskolai törvény",
+      "B) Nemzetiségi törvény",
+      "C) Szabadelvű párt törvénye",
+      "D) Kiegyezési törvény"
+     ],
+     "question": "Melyik törvény kapcsolódik a közjogi kérdésekhez és a nemzetiségek jogainak rendezéséhez?",
+     "explanation": "A nemzetiségi törvény 1868-ban született, és a nemzetiségek jogait szabályozta, fontos közjogi kérdés volt a dualizmus időszakában.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Népiskolai törvény",
+      "B) Nemzetiségi törvény",
+      "C) Szabadelvű párt törvénye",
+      "D) Kiegyezési törvény"
+     ],
+     "question": "Melyik törvény rendezte 1868-ban a nemzetiségek nyelvhasználati jogait?",
+     "explanation": "A nemzetiségi törvény 1868-ban született, és a nemzetiségek jogait szabályozta, fontos közjogi kérdés volt a dualizmus időszakában.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-031",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "e346a2de-3fab-4b8e-b6bf-4995301d4c64",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Ki volt a magyar miniszterelnök a kiegyezés idején, aki fontos szerepet játszott a tárgyalásokban?”",
+   "explanation": "A tárgyalások magyar oldali vezetője Deák Ferenc volt; Andrássy 1867-ben az első felelős magyar miniszterelnök lett. A kérdés így pontatlan.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Gyula_Andrássy",
+     "title": "Gyula Andrássy",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ferenc_Deák",
+     "title": "Ferenc Deák",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Eötvös József",
+      "B) Tisza Kálmán",
+      "C) Andrássy Gyula",
+      "D) Wekerle Sándor"
+     ],
+     "question": "Ki volt a magyar miniszterelnök a kiegyezés idején, aki fontos szerepet játszott a tárgyalásokban?",
+     "explanation": "Andrássy Gyula volt az, aki a kiegyezés tárgyalásainak egyik vezető szereplője volt, és később a dualizmus idején is fontos politikai figura lett.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Eötvös József",
+      "B) Tisza Kálmán",
+      "C) Andrássy Gyula",
+      "D) Wekerle Sándor"
+     ],
+     "question": "Ki lett 1867-ben az első felelős magyar miniszterelnök?",
+     "explanation": "Andrássy Gyula 1867-ben lett az első felelős magyar miniszterelnök; a kiegyezés tárgyalásainak szellemi vezetője Deák Ferenc volt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-032",
+   "lesson_id": "320c400d-9797-4d75-a530-ee5eb9a7fd38",
+   "block_id": "e346a2de-3fab-4b8e-b6bf-4995301d4c64",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A magyarázat szerint a húsvéti cikk „a magyar államszervezet megerősítését célozta”",
+   "explanation": "A húsvéti cikk (Deák Ferenc, 1865. április) a kiegyezés feltételeit fogalmazta meg: az 1848-as törvények alapján hajlandó a közös ügyek rendezésére.",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Húsvéti cikk (Pesti Napló, 1865. április 16.)",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A választójog kiterjesztéséről szóló törvény",
+      "B) A közös ügyek rendezéséről szóló nyilatkozat",
+      "C) A horvát-magyar kiegyezés",
+      "D) A szocialista mozgalom kezdetéről szóló dokumentum"
+     ],
+     "question": "Mi volt a húsvéti cikk, és miért volt fontos a magyar politikában?",
+     "explanation": "A húsvéti cikk 1865-ben jelent meg, és Deák Ferenc írása volt, amely a kiegyezés keretein belül a magyar államszervezet megerősítését célozta.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A választójog kiterjesztéséről szóló törvény",
+      "B) A közös ügyek rendezéséről szóló nyilatkozat",
+      "C) A horvát-magyar kiegyezés",
+      "D) A szocialista mozgalom kezdetéről szóló dokumentum"
+     ],
+     "question": "Mi volt a húsvéti cikk, és miért volt fontos a magyar politikában?",
+     "explanation": "A húsvéti cikk Deák Ferenc 1865-ös írása volt, amely megfogalmazta a kiegyezés alapfeltételeit: az 1848-as törvények elismerése mellett a közös ügyek rendezésére is kész volt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-033",
+   "lesson_id": "82528600-4890-4626-9f2f-0aad804ac22b",
+   "block_id": "85b7e755-89fa-43a8-851e-75f4c5b3c806",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a horvátok számára autonómiát biztosított a magyar államon belül”",
+   "explanation": "A Nagodba Horvát-Szlavónországnak belügyi autonómiát adott a Magyar Korona országain belül; pontatlan a „magyar államon belül” megfogalmazás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Croatian–Hungarian_Settlement",
+     "title": "Croatian–Hungarian Settlement",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1848",
+      "B) 1867",
+      "C) 1868",
+      "D) 1870"
+     ],
+     "question": "Mikor történt a horvát-magyar kiegyezés?",
+     "explanation": "A horvát-magyar kiegyezés 1868-ban jött létre, amely a horvátok számára autonómiát biztosított a magyar államon belül.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1848",
+      "B) 1867",
+      "C) 1868",
+      "D) 1870"
+     ],
+     "question": "Mikor történt a horvát-magyar kiegyezés?",
+     "explanation": "A horvát–magyar kiegyezés (Nagodba, 1868) Horvát-Szlavónországnak belügyi autonómiát biztosított a Magyar Korona országain belül.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-034",
+   "lesson_id": "82528600-4890-4626-9f2f-0aad804ac22b",
+   "block_id": "85b7e755-89fa-43a8-851e-75f4c5b3c806",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Mi a jelentősége a cigányság helyzetének a dualizmus korában?”",
+   "explanation": "Rosszul feltett kérdés: a jelentőségre nem a felsorolt állítások felelnek.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "kérdésszöveg",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A cigányság teljes jogegyenlőséget kapott",
+      "B) A cigányság asszimilációs politikának volt alávetve",
+      "C) A cigányság gazdasági helyzete folyamatosan javult",
+      "D) A cigányság autonómiát kapott"
+     ],
+     "question": "Mi a jelentősége a cigányság helyzetének a dualizmus korában?",
+     "explanation": "A cigányság a dualizmus korában asszimilációs politikának volt alávetve, amely a hagyományos életmódjukat és kultúrájukat veszélyeztette.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) A cigányság teljes jogegyenlőséget kapott",
+      "B) A cigányság asszimilációs politikának volt alávetve",
+      "C) A cigányság gazdasági helyzete folyamatosan javult",
+      "D) A cigányság autonómiát kapott"
+     ],
+     "question": "Melyik állítás igaz a cigányság helyzetére a dualizmus korában?",
+     "explanation": "A cigányság a dualizmus korában asszimilációs politikának volt alávetve, amely a hagyományos életmódjukat és kultúrájukat veszélyeztette.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-035",
+   "lesson_id": "f88afeb5-59b9-4d8f-85a4-0cea915aa8c3",
+   "block_id": "60b96fa7-7d3f-4f5b-9c09-e5cded95a7d8",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options[0]",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Ő volt a magyar ipar minisztere, aki támogatta a vasútépítést.”",
+   "explanation": "Ilyen tárca nem volt; Baross Gábor közlekedés- és kereskedelemügyi miniszter volt, a vasutak államosításának és a zónatarifának a kezdeményezője.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Gábor_Baross",
+     "title": "Gábor Baross",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Ő volt a magyar ipar minisztere, aki támogatta a vasútépítést.",
+      "B) Ő alapította az első magyar gyárat.",
+      "C) Ő volt a mezőgazdasági miniszter.",
+      "D) Ő írta a magyar ipar fejlődéséről szóló könyvet."
+     ],
+     "question": "Milyen szerepet játszott Baross Gábor a magyar ipar fejlődésében?",
+     "explanation": "Baross Gábor a magyar ipar minisztere volt, és jelentős szerepet játszott a vasútépítés támogatásában, ami alapvetően hozzájárult az ipari fejlődéshez.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Ő volt a közlekedés- és kereskedelemügyi miniszter, aki a vasutak államosítását és a zónatarifát kezdeményezte.",
+      "B) Ő alapította az első magyar gyárat.",
+      "C) Ő volt a mezőgazdasági miniszter.",
+      "D) Ő írta a magyar ipar fejlődéséről szóló könyvet."
+     ],
+     "question": "Milyen szerepet játszott Baross Gábor a magyar ipar fejlődésében?",
+     "explanation": "Baross Gábor közlekedés- és kereskedelemügyi miniszter volt (1889–1892); nevéhez a vasutak államosítása és a zónatarifa kapcsolódik.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-036",
+   "lesson_id": "f88afeb5-59b9-4d8f-85a4-0cea915aa8c3",
+   "block_id": "60b96fa7-7d3f-4f5b-9c09-e5cded95a7d8",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "correct",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "Kulcs C (textilipar), miközben a magyarázat a gépgyártást és a vegyipart említi",
+   "explanation": "A magyarázat ellentmond a kulcsnak, és egyik említett iparág sincs a válaszok közt. A korszak vezető iparága az élelmiszeripar volt, azon belül a budapesti gőzmalmok.",
+   "sources": [],
+   "apply": "review",
+   "source_note": "Malomipar Budapesten a dualizmus korában",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Mezőgazdaság",
+      "B) Élelmiszeripar",
+      "C) Textilipar",
+      "D) Kézműipar"
+     ],
+     "question": "Melyik iparág modernizálódott a legnagyobb mértékben a dualizmus korában?",
+     "explanation": "A gépgyártás és a vegyipar modernizálódott a legnagyobb mértékben, mivel a gépesítés és a nagyobb termelési kapacitások lehetővé tették a gyorsabb és hatékonyabb gyártást.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Mezőgazdaság",
+      "B) Élelmiszeripar",
+      "C) Textilipar",
+      "D) Kézműipar"
+     ],
+     "question": "Melyik iparág volt a legjelentősebb a dualizmus kori Magyarországon?",
+     "explanation": "A dualizmus kori magyar ipar legnagyobb ága az élelmiszeripar volt, azon belül a budapesti gőzmalmok, amelyek a világ élvonalába tartoztak.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-037",
+   "lesson_id": "8bbfbd3b-537a-4e56-97b8-386e7d77ef16",
+   "block_id": "d7439550-bb8d-4760-af94-9f3f0e5b009d",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "options[0]",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„A születések számának drámai növekedése.”",
+   "explanation": "A népességrobbanás fő oka nem a születések számának növekedése, hanem a halálozás (különösen a gyermekhalandóság) csökkenése volt.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Demográfiai átmenet Magyarországon",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) A születések számának drámai növekedése.",
+      "B) A kivándorlás csökkenése.",
+      "C) A városok népességének csökkenése.",
+      "D) A vidéki életforma elterjedése."
+     ],
+     "question": "Mi jellemzi a népességrobbanást a dualizmus korában Magyarországon?",
+     "explanation": "A népességrobbanás a születések számának drámai növekedését jelenti, amely a dualizmus korában jellemző volt Magyarországon.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A lakosság gyors növekedése a halálozás csökkenése miatt.",
+      "B) A kivándorlás csökkenése.",
+      "C) A városok népességének csökkenése.",
+      "D) A vidéki életforma elterjedése."
+     ],
+     "question": "Mi jellemzi a népességrobbanást a dualizmus korában Magyarországon?",
+     "explanation": "A népességrobbanás lényege a lakosság gyors növekedése volt, főként a halálozás csökkenése miatt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-038",
+   "lesson_id": "8bbfbd3b-537a-4e56-97b8-386e7d77ef16",
+   "block_id": "d7439550-bb8d-4760-af94-9f3f0e5b009d",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Semmelweis a dualizmus kori orvostudomány szereplőjeként",
+   "explanation": "Semmelweis 1818–1865, a kézmosást 1847-ben ismerte fel, a dualizmus előtt; a kérdés kortévesztő.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
+     "title": "Ignaz Semmelweis",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az anyák megmentője, aki felfedezte a kézmosás fontosságát.",
+      "B) A kivándorlás szószólója.",
+      "C) A népoktatás reformere.",
+      "D) A dzsentri életforma képviselője."
+     ],
+     "question": "Ki volt Semmelweis Ignác, és miért fontos a magyar orvostudomány történetében?",
+     "explanation": "Semmelweis Ignác az anyák megmentője volt, aki felfedezte a kézmosás fontosságát a szülészeti osztályokon, ezzel forradalmasítva az orvostudományt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Az anyák megmentője, aki felfedezte a kézmosás fontosságát.",
+      "B) A kivándorlás szószólója.",
+      "C) A népoktatás reformere.",
+      "D) A dzsentri életforma képviselője."
+     ],
+     "question": "Ki volt Semmelweis Ignác, és miért fontos a magyar orvostudomány történetében?",
+     "explanation": "Semmelweis Ignác (1818–1865) 1847-ben ismerte fel a kézmosás fontosságát a szülészeti osztályokon; munkásságát csak halála után, a dualizmus korában ismerték el.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-039",
+   "lesson_id": "8bbfbd3b-537a-4e56-97b8-386e7d77ef16",
+   "block_id": "d7439550-bb8d-4760-af94-9f3f0e5b009d",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "options[0]",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„1896, a magyar államiság ezeréves évfordulója.”",
+   "explanation": "A Millennium a honfoglalás (896) ezredik évfordulója volt; az államalapítás (1000) ezer éve 2000-ben volt.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Millennium (1896), honfoglalás 896",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1896, a magyar államiság ezeréves évfordulója.",
+      "B) 1868, a népiskolai törvény bevezetése.",
+      "C) 1873, Budapest egyesítése.",
+      "D) 1900, a modernizáció kezdete."
+     ],
+     "question": "Mi a Millennium, és mikor ünnepelték Magyarországon?",
+     "explanation": "A Millennium 1896-ban zajlott, amely a magyar államiság ezeréves évfordulóját ünnepelte, fontos esemény a nemzeti identitás szempontjából.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "1896, a honfoglalás ezredik évfordulójának ünnepe.",
+      "B) 1868, a népiskolai törvény bevezetése.",
+      "C) 1873, Budapest egyesítése.",
+      "D) 1900, a modernizáció kezdete."
+     ],
+     "question": "Mi a Millennium, és mikor ünnepelték Magyarországon?",
+     "explanation": "A Millennium 1896-ban zajlott, a honfoglalás ezredik évfordulóját ünnepelték.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-040",
+   "lesson_id": null,
+   "block_id": "b5a2e494-3a1a-4e2c-909a-71ea75d25ed9",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Kulcs: Andrássy Gyula „a magyar fél tárgyalásainak vezetője volt”",
+   "explanation": "A magyar oldal vezetője Deák Ferenc volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ferenc_Deák",
+     "title": "Ferenc Deák",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Gyula_Andrássy",
+     "title": "Gyula Andrássy",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Andrássy Gyula",
+      "B) Tisza István",
+      "C) Eötvös József",
+      "D) Baross Gábor"
+     ],
+     "question": "Melyik személy volt a kiegyezés egyik fő alakja?",
+     "explanation": "Andrássy Gyula a kiegyezés egyik fő alakja volt, aki a magyar fél tárgyalásainak vezetője volt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "Deák Ferenc",
+      "B) Tisza István",
+      "C) Eötvös József",
+      "D) Baross Gábor"
+     ],
+     "question": "Ki volt a kiegyezés legfontosabb magyar előkészítője?",
+     "explanation": "A kiegyezés legfontosabb magyar előkészítője Deák Ferenc volt; Andrássy Gyula lett az első felelős miniszterelnök.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-041",
+   "lesson_id": null,
+   "block_id": "b5a2e494-3a1a-4e2c-909a-71ea75d25ed9",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Mi jellemezte a népességrobbanást? (magas születési arány / magas halálozási arány / kivándorlás / urbanizáció)",
+   "explanation": "Több válasz is igaz (a népességnövekedés, az urbanizáció és a kivándorlás is jellemző volt), és a „magas halálozási arány” a népességrobbanás ellentéte.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Demográfiai átmenet Magyarországon",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Magas születési arány",
+      "B) Magas halálozási arány",
+      "C) Kivándorlás",
+      "D) Urbanizáció"
+     ],
+     "question": "Mi jellemezte a népességrobbanást a dualizmus korában?",
+     "explanation": "A népességrobbanást a magas születési arány jellemezte, amely a városokba való vándorlást is elősegítette.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A halálozás csökkenése miatt gyorsan nőtt a népesség.",
+      "A népesség a korszakban csökkent.",
+      "A városok népessége folyamatosan csökkent.",
+      "A kivándorlás megszüntette a népességnövekedést."
+     ],
+     "question": "Melyik állítás igaz a dualizmus kori népességnövekedésre?",
+     "explanation": "A halálozás csökkenése miatt a népesség a kivándorlás ellenére is gyorsan nőtt, a városok pedig még gyorsabban.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-042",
+   "lesson_id": null,
+   "block_id": "b5a2e494-3a1a-4e2c-909a-71ea75d25ed9",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 4,
+   "field": "options[2]",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A passzív ellenállás megkezdése” (húsvéti cikk)",
+   "explanation": "A passzív ellenállás az 1849 utáni időszakban kezdődött; a húsvéti cikk (Deák, 1865) éppen a kiegyezés felé mutató fordulatot jelezte.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "Húsvéti cikk (1865), passzív ellenállás 1849–1860-as évek",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Az önálló magyar parlament létrehozása",
+      "B) A nemzetiségi törvény bevezetése",
+      "C) A passzív ellenállás megkezdése",
+      "D) A gazdasági reformok bevezetése"
+     ],
+     "question": "Mi volt a húsvéti cikk jelentősége?",
+     "explanation": "A húsvéti cikk a passzív ellenállás kezdetét jelentette, amely a politikai elnyomásra adott válaszként született.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Az önálló magyar parlament létrehozása",
+      "B) A nemzetiségi törvény bevezetése",
+      "Deák Ferenc 1865-ös írása, amely a kiegyezés alapfeltételeit fogalmazta meg",
+      "D) A gazdasági reformok bevezetése"
+     ],
+     "question": "Mi volt a húsvéti cikk jelentősége?",
+     "explanation": "A húsvéti cikk Deák Ferenc 1865-ös írása volt, amely a kiegyezés alapfeltételeit fogalmazta meg.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-1112-02-043",
+   "lesson_id": null,
+   "block_id": "b5a2e494-3a1a-4e2c-909a-71ea75d25ed9",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Semmelweis „a modern higiéniás elvek elterjesztésében” a dualizmus kapcsán",
+   "explanation": "Semmelweis 1818–1865: a felfedezés (1847) a dualizmus előtti, elismerése halála utáni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ignaz_Semmelweis",
+     "title": "Ignaz Semmelweis",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Semmelweis Ignác",
+      "B) Eötvös József",
+      "C) Wekerle Sándor",
+      "D) Baross Gábor"
+     ],
+     "question": "Ki volt a híres orvos, aki a modern higiéniás elvek elterjesztésében játszott szerepet?",
+     "explanation": "Semmelweis Ignác a modern higiéniás elvek elterjesztésében játszott jelentős szerepet, különösen a szülészet területén.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Semmelweis Ignác",
+      "B) Eötvös József",
+      "C) Wekerle Sándor",
+      "D) Baross Gábor"
+     ],
+     "question": "Ki volt a híres orvos, aki a modern higiéniás elvek elterjesztésében játszott szerepet?",
+     "explanation": "Semmelweis Ignác (1818–1865) 1847-ben ismerte fel a kézmosás jelentőségét; elismerése csak halála után terjedt el.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}
