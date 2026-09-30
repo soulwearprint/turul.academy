@@ -1,0 +1,343 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres/hiányos kísérletblokkok: a try_advanced mező üres a 6a926a15 blokkban."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "b1e776da-5773-4bdc-bf44-27988c884295",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Focilabda és autó ütközése mint „rugalmatlan ütközés”",
+   "explanation": "Rugalmatlan ütközésnél a testek részben vagy teljesen összetapadva mozognak tovább, és mozgási energiájuk egy része deformációra és hőre alakul. Egy autó és egy focilabda ütközése ilyen példaként félrevezető, mert a labda jellemzően elpattan.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Inelastic_collision",
+     "title": "Inelastic collision",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Képzelj el egy helyzetet, amikor egy focilabda és egy autó ütközik. Az autó gyorsan halad, míg a labda áll. Az ütközés után a labda deformálódik, és nem pattog vissza teljesen. Ez a rugalmatlan ütközés.",
+     "Képzelj el két egymásba ütköző gyurmagolyót: az ütközés után összetapadnak, és együtt mozognak tovább. Ez a rugalmatlan ütközés."
+    ]
+   ]
+  },
+  {
+   "block_id": "b1e776da-5773-4bdc-bf44-27988c884295",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A két korcsolyázó (80 kg, 5 m/s + 70 kg álló) közös sebessége „3,33 m/s”",
+   "explanation": "A lendület megmaradása szerint v = (80 · 5) : (80 + 70) = 400 : 150 ≈ 2,67 m/s.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Conservation_of_momentum",
+     "title": "Conservation of momentum",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "3,33 m/s",
+     "kb. 2,67 m/s"
+    ]
+   ]
+  },
+  {
+   "block_id": "b1e776da-5773-4bdc-bf44-27988c884295",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A gyűrődési zóna szerepe „a lendület megmaradását és a hatások csökkentését” szolgálja",
+   "explanation": "A gyűrődési zóna az ütközés idejét megnyújtja, így ugyanaz a lendületváltozás kisebb erővel jár (F = Δp : Δt). A lendület megmaradását nem lehet befolyásolni.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Crumple_zone",
+     "title": "Crumple zone",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az ilyen zónák kialakítása során a mérnökök a lendület megmaradását és a hatások csökkentését tartják szem előtt.",
+     "A gyűrődési zóna megnyújtja az ütközés idejét, ezért ugyanaz a lendületváltozás kisebb erővel jár (F = Δp : Δt)."
+    ]
+   ]
+  },
+  {
+   "block_id": "b1e776da-5773-4bdc-bf44-27988c884295",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "A focilabda „alacsonyabb magasságra pattan vissza, míg a kosárlabda magasabbra”",
+   "explanation": "A visszapattanás magassága a felfújtságtól, az anyagtól és a talajtól függ; a hivatalos foci- és kosárlabda-előírások hasonló visszapattanási arányt engednek meg, így az általános állítás nem igaz.",
+   "source_note": "FIFA és FIBA labdaelőírások: a visszapattanási arány hasonló",
+   "apply": "review",
+   "replace": [
+    [
+     "A focilabda alacsonyabb magasságra pattan vissza, míg a kosárlabda magasabbra.",
+     "A visszapattanás magassága labdánként eltér: függ a labda anyagától, felfújtságától és a talaj keménységétől."
+    ]
+   ]
+  },
+  {
+   "block_id": "b1e776da-5773-4bdc-bf44-27988c884295",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Rekuperációs fékezésnél „a lendületet visszanyerik”",
+   "explanation": "A rekuperáció a mozgási energia egy részét alakítja vissza elektromos energiává. A lendület nem tárolható: az fékezéskor az úton keresztül a Földre adódik át.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Regenerative_braking",
+     "title": "Regenerative braking",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a rekuperációs fékezés során a lendületet visszanyerik, és az energiát akkumulátorba tárolják",
+     "a rekuperációs fékezés során a mozgási energia egy részét visszanyerik, és akkumulátorba tárolják"
+    ]
+   ]
+  },
+  {
+   "block_id": "b1e776da-5773-4bdc-bf44-27988c884295",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Newton első törvénye: „ha … nem hat rá külső erő”",
+   "explanation": "Egy valódi autóra mindig hat erő (közegellenállás, gördülési ellenállás, hajtóerő); az első törvény az eredő erő nulla voltára vonatkozik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Newton's_laws_of_motion",
+     "title": "Newton's laws of motion",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "és nem hat rá külső erő, akkor",
+     "és az rá ható erők eredője nulla, akkor"
+    ]
+   ]
+  },
+  {
+   "block_id": "37213ec7-50ff-412b-b08d-f379f9852db5",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A vitorlás hajók „a felhajtó erő és a víz ellenállása révén képesek haladni”",
+   "explanation": "A felhajtóerő a hajót a víz felszínén tartja, a vitorla (vagy a propeller) hajtja előre; a víz ellenállása fékezi a hajót, nem hajtja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Sailing",
+     "title": "Sailing",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a felhajtó erő és a víz ellenállása révén képesek haladni",
+     "a felhajtóerő tartja a vízen, a vitorla vagy a propeller hajtja előre őket"
+    ]
+   ]
+  },
+  {
+   "block_id": "92d0e790-dcee-41b8-ae9b-424494ff96c1",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A felhajtóerő csak a „Bernoulli-elv alapján” magyarázva",
+   "explanation": "A felhajtóerő magyarázható a szárny fölötti alacsonyabb nyomással (Bernoulli) és azzal is, hogy a szárny a levegőt lefelé téríti (Newton harmadik törvénye); a két leírás ugyanazt a jelenséget adja. Az egyoldalú magyarázat tévképzethez vezet.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lift_(force)",
+     "title": "Lift (force)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Mindez a Bernoulli-elv alapján működik, amely a folyadékok és gázok áramlásával foglalkozik.",
+     "Ez a Bernoulli-elvvel magyarázható; a felhajtóerő azért is keletkezik, mert a szárny a levegőt lefelé téríti (Newton harmadik törvénye), a két magyarázat ugyanazt a jelenséget írja le."
+    ]
+   ]
+  },
+  {
+   "block_id": "75b34c1c-c002-4265-90f8-d8bf1c3bc4f0",
+   "card_index": 0,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Mi határozza meg, hogy egy autó kanyarodás közben kicsúszik-e?” – A) súrlódási erő; B) sebesség és C) kanyarsugár is helyes",
+   "explanation": "A kicsúszás feltétele a sebesség, a kanyar sugara és a tapadás együttesen: v² : r > μ · g.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Centripetal_force",
+     "title": "Centripetal force",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik erő biztosítja az autó kanyarodásához szükséges centripetális erőt?",
+    "options": [
+     "A) A gumiabroncsok és az út közötti súrlódási erő",
+     "B) Az autó sebessége",
+     "C) A kanyar sugara",
+     "D) Az autó színe"
+    ],
+    "explanation": "Az autó kanyarodásához szükséges centripetális erőt a gumiabroncsok és az út közötti súrlódási erő adja."
+   }
+  },
+  {
+   "block_id": "75b34c1c-c002-4265-90f8-d8bf1c3bc4f0",
+   "card_index": 2,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A súrlódási erőt befolyásoló tényezők: A) felületek anyaga és állapota, C) időjárási körülmények is helyes",
+   "explanation": "Nedves vagy jeges úton a súrlódás jelentősen kisebb, így az időjárás (a felület állapotán át) szintén befolyásolja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Friction",
+     "title": "Friction",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[2]": "C) Az autó kilométeróra-állása"
+   }
+  },
+  {
+   "block_id": "7fa79672-09d7-497e-889b-64db93f38d91",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A felhajtóerő „a víz által kiszorított térfogat tömegével arányos”",
+   "explanation": "Archimédész törvénye szerint a felhajtóerő egyenlő a kiszorított folyadék súlyával (nem csak arányos vele, és térfogatnak nincs tömege).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Archimedes'_principle",
+     "title": "Archimedes' principle",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) A vízben lévő testre ható, felfelé mutató erő, amely a kiszorított víz súlyával egyenlő.",
+    "explanation": "A felhajtóerő nagysága egyenlő a test által kiszorított víz súlyával, és felfelé hat a testre."
+   }
+  },
+  {
+   "block_id": "a1c97480-9d62-41c2-8464-47fadbfea3c9",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "unverifiable",
+   "severity": "medium",
+   "claim": "Arisztotelész megfigyelte, hogy „a vízben elmerült testek súlya csökken”",
+   "explanation": "A súlycsökkenés vizsgálata és az azt leíró törvény Archimédész (Kr. e. 3. század) nevéhez fűződik. Arisztotelésznek tulajdonított megfigyelésre nincs megbízható forrás.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Archimedes'_principle",
+     "title": "Archimedes' principle",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Arisztotelész már az ókorban foglalkozott a testek úszásának kérdésével, és megfigyelte, hogy a vízben elmerült testek súlya csökken. Ezt a jelenséget Archimédész is tanulmányozta, aki megfogalmazta",
+     "Az ókorban Archimédész (Kr. e. 3. század) tanulmányozta a vízben elmerült testek látszólagos súlycsökkenését, és megfogalmazta"
+    ]
+   ]
+  },
+  {
+   "block_id": "6a926a15-fbc7-4b79-add6-c44e197551c3",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Cayley „megalkotta az első valódi repülőgépet, amely képes volt emelkedni és repülni”",
+   "explanation": "Sir George Cayley 1799-ben megfogalmazta a mai repülőgép alapelrendezését (rögzített szárny, törzs, vezérsík), 1853-ban vitorlázógépe embert vitt a levegőbe. Motoros repülőgépet nem épített.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/George_Cayley",
+     "title": "George Cayley",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Cayley kísérletei során megalkotta az első valódi repülőgépet, amely képes volt emelkedni és repülni.",
+     "Cayley 1799-ben megfogalmazta a mai repülőgép alapelrendezését (rögzített szárny, törzs, vezérsík), és 1853-ban vitorlázógépe már embert vitt a levegőbe."
+    ]
+   ],
+   "set": {
+    "try_basic": "Készíts egy egyszerű kísérletet egy papírsárkány segítségével! Engedd fel a sárkányt szélben, és figyeld meg, hogyan emeli fel a szél."
+   }
+  },
+  {
+   "block_id": "03446e77-45cb-498b-bfc1-74159734fc9f",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A fékút hosszát befolyásoló tényezők: A) sebesség és fékezési idő; D) az út minősége is helyes",
+   "explanation": "A fékút a sebességtől és a lassulástól függ, utóbbit az út és a gumi tapadása, a fékek határozzák meg. Az út minősége (D) tehát szintén befolyásolja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Braking_distance",
+     "title": "Braking distance",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) Az autó sebessége és a fékezéskor elérhető lassulás",
+    "options[3]": "D) Az autó színe és a rádió hangereje",
+    "explanation": "A fékút hosszát az autó sebessége és a lassulás határozza meg (utóbbit a gumik és az út tapadása korlátozza)."
+   }
+  },
+  {
+   "block_id": "02f8134f-5c1d-4295-a080-e92e346b9065",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A fékút meghatározói: „az autó sebessége és a fékezési idő” (kulcs A)",
+   "explanation": "A fékút a sebességtől és a lassulástól függ; a fékezési idő ezekből következik, nem független tényező. A többi válasz hamis, de a megfogalmazás pontatlan.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Braking_distance",
+     "title": "Braking distance",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) Az autó sebessége és a fékezéskor elérhető lassulás",
+    "explanation": "A fékút hosszát az autó sebessége és a lassulás határozza meg."
+   }
+  }
+ ]
+}

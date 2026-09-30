@@ -1,0 +1,41 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "A lecke szövege, kvízei és kísérletei a leellenőrzött pontokon (képletek, számítások, kulcsok) helyesek."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "e168bfb9-881b-4cc6-9b6c-0f911461239d",
+   "card_index": 0,
+   "field": "discovery",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "Galilei „1583 körül” megfigyelte a lengő lámpa izokronizmusát",
+   "explanation": "A történet Galilei 1583-as pisai megfigyeléséről (a székesegyház lámpája) Viviani életrajzából származik, és legendának számít; az izokronizmust később, kísérletekkel vizsgálta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+     "title": "Galileo Galilei",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Galileo Galilei figyelte meg 1583 körül",
+     "A hagyomány szerint Galileo Galilei figyelte meg 1583 körül"
+    ]
+   ]
+  }
+ ]
+}

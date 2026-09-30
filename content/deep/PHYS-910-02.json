@@ -1,0 +1,141 @@
+{
+ "nat_id": "PHYS-910-02",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "cb98076a-6f0e-4ea4-b39b-4350c37269e5",
+   "title_hu": "Egyszerű körmozgás és annak jellemzői",
+   "text_block_id": "0a99b477-2447-43b0-9abc-f1e560d8e9e3",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Gyorsul, pedig nem gyorsul",
+     "body": "A fizikában a gyorsulás a sebességvektor változását jelenti, nem csak a sebesség nagyságáét. Egyenletes körmozgásnál a sebesség nagysága állandó, iránya viszont folyamatosan változik, ezért a mozgás gyorsuló. A gyorsulás a kör középpontja felé mutat. Amikor kanyarban kifelé érzed magad nyomódni, az valójában a tested tehetetlensége: egyenes vonalban akarna továbbhaladni.",
+     "did_you_know": "A műholdak egyenletes körmozgás közben is szabadon esnek a Föld felé, de közben oldalirányban olyan gyorsan haladnak, hogy folyamatosan elkerülik a felszínt.",
+     "think": "Hová mutat a gyorsulás egyenletes körmozgásnál?",
+     "think_answer": "A kör középpontja felé, mert a sebesség iránya folyamatosan a középpont felé fordul."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Mi tartja a testet a körön?",
+     "body": "A centripetális erő szerepét mindig valamilyen valódi erő tölti be: a kötél a hajítókalapácsnál, a súrlódás az autó kanyarodásakor, a gravitáció a Hold esetében. Ha jeges úton a súrlódás nem elég, az autó nem követi a kanyart, hanem egyenesen, a pálya érintője mentén csúszik tovább. Ugyanez történik, ha a kalapácsvető elengedi a kalapácsot: az nem sugárirányban, hanem érintő irányban repül el.",
+     "did_you_know": "A hajítókalapács tömege férfiaknál 7,26 kg, a versenyző több fordulatot tesz meg, mielőtt elengedi.",
+     "think": "Milyen erő tartja a kanyarodó autót a körpályán?",
+     "think_answer": "A gumik és az út közötti súrlódási erő, mert az mutat a kör középpontja felé."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A sebesség négyzete számít",
+     "body": "A centripetális gyorsulás a = v² : r, ezért a sebesség duplázása négyszeresére növeli. Ha egy autó 15 m/s-mal (54 km/h) halad egy 50 méter sugarú kanyarban, a = 225 : 50 = 4,5 m/s². Ha 30 m/s-mal menne, a = 900 : 50 = 18 m/s², ami már nagyobb, mint a nehézségi gyorsulás. Ezért veszélyes a gyors kanyarodás, és ezért korlátozzák a sebességet a kanyarokban.",
+     "did_you_know": "Szűkebb kanyarnál (kisebb r) ugyanolyan sebességnél nagyobb erő kell a kanyarodáshoz.",
+     "think": "Hányszorosára változik a centripetális gyorsulás, ha a sugarat felezzük, a sebességet pedig nem változtatjuk?",
+     "think_answer": "Kétszeresére nő, mert a = v² : r, és r a nevezőben áll."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Fordulatszám a mindennapokban",
+     "body": "A régi bakelitlemez 33⅓ fordulat/perc sebességgel forog, ez kb. 0,56 Hz, a periódusideje pedig 1,8 s. A másodpercmutató periódusideje 60 s, a percmutatóé 3600 s. A Hold a Föld körül kb. 27,3 nap alatt tesz meg egy fordulatot. Érdemes rendszeresen ellenőrizni a mértékegységet: ha percenként adják meg a fordulatszámot, 60-nal osztva kapjuk meg a hertzet.",
+     "did_you_know": "A számítógépes merevlemezek régebben 7200 fordulat/perc sebességgel forogtak, vagyis 120 Hz-cel.",
+     "think": "Hány hertz az 1200 fordulat/perc?",
+     "think_answer": "1200 : 60 = 20 Hz, vagyis másodpercenként 20 fordulat."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Számoljunk a Föld mozgásával",
+     "body": "A v = 2πr : T képlettel megadható a Föld Nap körüli sebessége is. Az átlagos távolság kb. 150 millió km, egy keringés 365 nap: v ≈ 2π · 1,5 · 10¹¹ m : (3,16 · 10⁷ s) ≈ 30 km/s. Ez az érték sokkal nagyobb, mint bármelyik jármű sebessége, mégsem érezzük, mert a mozgás egyenletes, és nincs viszonyítási pontunk rajta belül.",
+     "did_you_know": "A Föld a Nap körül nagyjából 30 km/s, azaz kb. 108 000 km/h sebességgel halad.",
+     "think": "Miért nem érzünk semmit a Föld 30 km/s-os sebességéből?",
+     "think_answer": "Mert a sebesség közel állandó, és minden tárgy együtt mozog velünk. Csak a gyorsulást érezzük."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Mekkora a centrifuga gyorsulása?",
+     "body": "Egy mosógép 1200 fordulat/perc mellett 20 Hz-cel forog. Ha a dob sugara 25 cm, a centripetális gyorsulás a = (2π · f)² · r = (2π · 20)² · 0,25 ≈ 3950 m/s², vagyis körülbelül a nehézségi gyorsulás 400-szorosa. Ez teszi lehetővé, hogy a víz gyorsan elhagyja a ruhát. A gyorsulás a sugárral arányos, ezért a dob széle a legerősebb.",
+     "did_you_know": "A pilótákat és űrhajósokat kiképző centrifugákban a gyorsulás 8–9 g körül van, ennél kevesebbet viselnek el a legtöbben.",
+     "think": "Miért fontos, hogy a mosógép dobja egyenletesen legyen megrakva centrifugázáskor?",
+     "think_answer": "Mert az egyenetlen tömegeloszlás miatt a forgás közben nagy erők lépnek fel, és a gép rázkódik."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "A Föld forgása és az Egyenlítő",
+     "body": "A Föld egyenlítői kerülete kb. 40 075 km, és a Föld 23 óra 56 perc alatt fordul körbe. Így az egyenlítői pontok sebessége kb. 1670 km/h (465 m/s). Budapest 47,5° szélességen fekszik, a körpálya sugara a szélességi kör koszinuszával arányos, ezért itt a sebesség kb. 1130 km/h. A sarkokon a sebesség nulla, mert ott a pontok a forgástengelyen vannak.",
+     "did_you_know": "Ezért indítják a rakétákat lehetőleg az Egyenlítőhöz közeli űrközpontokból: a Föld forgása ingyen sebességet ad.",
+     "think": "Hol nagyobb a Föld forgásából adódó sebesség, Budapesten vagy Rómában? (Róma 42° szélességen van.)",
+     "think_answer": "Rómában, mert kisebb a szélesség, a körpálya sugara nagyobb."
+    }
+   ]
+  },
+  {
+   "lesson_id": "a3024331-572f-44b0-b5eb-2b5f5e1911d3",
+   "title_hu": "Lengések és rezgések a környezetben",
+   "text_block_id": "12294937-2852-46d7-87b4-7c15c28b4d4e",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Egyensúly és visszatérítő erő",
+     "body": "A rezgés feltétele, hogy legyen egyensúlyi helyzet, és a kimozdított testre olyan erő hasson, amely oda visszahúzza. Ha egy golyót egy tál aljáról kimozdítasz, a nehézségi erő oldalirányú összetevője visszahúzza, és a golyó ide-oda gurul. A hangvilla ágai másodpercenként 440-szer rezegnek az a¹ hang esetén, ezért ad ki meghatározott hangot. A rezgés tehát nemcsak látható mozgás lehet, hanem hangforrás is.",
+     "did_you_know": "A gitárhúr és a hangvilla is rezgéssel kelti a hangot, a levegő pedig továbbítja a rezgést a füledig.",
+     "think": "Miért rezeg a tál alján a golyó, ha kimozdítjuk?",
+     "think_answer": "Mert a nehézségi erő oldalirányú összetevője visszahúzza az egyensúlyi helyzet felé, de a lendülete miatt átlendül rajta."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A hinta ritmusa",
+     "body": "Kis kilengésnél az inga periódusideje T = 2π · √(L : g). Egy 3 méter hosszú hinta periódusideje kb. 3,5 másodperc. A hinta lendítése akkor hatékony, ha a lökések a saját ritmusához igazodnak, vagyis ha rezonancia lép fel. Ez akkor is igaz, ha te magad hintázol: a lábad mozgásával a lendülés ritmusába adsz energiát.",
+     "did_you_know": "",
+     "think": "Miért kell a hintát a lengés ritmusában meglökni?",
+     "think_answer": "Mert így minden lökés növeli az amplitúdót. Ellentétes ritmusban lökve fékeznénk a lengést."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Az inga hossza dönt",
+     "body": "Az inga periódusideje nem függ a tömegtől, és kis kilengésnél az amplitúdótól sem. Az inga hosszával viszont igen: négyszeres hosszúság kétszeres periódusidőt ad. Az a másodpercinga, amely 1 másodperc alatt egy irányban leng át (T = 2 s), kb. 99,4 cm hosszú. Az ingaóra ezért lehetett pontos: a kis amplitúdó változása nem rontotta el az időmérést.",
+     "did_you_know": "Huygens ingaórája (1657) a korábbi órák napi 15 percet is elérő pontatlanságát napi egy perc alá szorította.",
+     "think": "Mennyivel változik a periódusidő, ha az inga hosszát megnégyszerezzük?",
+     "think_answer": "Kétszeresére nő, mert T arányos a hosszúság négyzetgyökével."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Csillapítás a hasznunkra",
+     "body": "Az autó lengéscsillapítója szándékosan csillapítja a rugózást. Ha nincs csillapítás, a gödör után az autó sokáig ide-oda ugrálna. A lengéscsillapító olajon keresztül alakítja a rezgés energiáját hővé. Az ajtócsukó is így működik: lassan, lengés nélkül csukja be az ajtót. Az ideális csillapítás a leggyorsabb megnyugvást adja.",
+     "did_you_know": "A magas épületek tetején hatalmas ingák (tömegcsillapítók) csökkentik a szél okozta lengéseket, például a tajvani Taipei 101-ben.",
+     "think": "Mi történne, ha az ajtócsukóban nem lenne csillapítás?",
+     "think_answer": "Az ajtó nekicsapódna a keretnek, majd többször ide-oda lengene."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Hooke-törvény számokkal",
+     "body": "A Hooke-törvény szerint F = k · x. Ha a rugóállandó k = 50 N/m, akkor 0,1 m megnyúlásnál 5 N erő hat. A rugóra akasztott test rezgésideje T = 2π · √(m : k). Ha a test tömege 0,5 kg, akkor T = 2π · √(0,5 : 50) ≈ 0,63 s. Nagyobb tömeg lassabb rezgést ad, keményebb rugó gyorsabbat. A rugós erőmérő ezen az elven működik.",
+     "did_you_know": "A rugók törvénye csak bizonyos határig igaz: ha túlfeszítjük a rugót, tartósan megnyúlik.",
+     "think": "Mekkora erő hat egy 40 N/m rugóállandójú rugóra 0,05 m nyújtásnál?",
+     "think_answer": "F = 40 N/m · 0,05 m = 2 N."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Hol gyors, hol lassú?",
+     "body": "A rugón rezgő test energiája a rezgés során átalakul: az egyensúlyi helyzetben a rugalmas energia nulla, a mozgási energia maximális, ott a legnagyobb a sebesség. A szélső helyzetben a test megáll, ott a rugalmas energia a legnagyobb. A gyorsulás viszont a szélső helyzetben a legnagyobb, mert ott a legnagyobb a rugóerő. A sebesség és a gyorsulás tehát nem egyszerre maximális.",
+     "did_you_know": "Súrlódás nélkül a rezgés örökké tartana, mert az összenergia állandó marad.",
+     "think": "Hol nulla a gyorsulás a rezgő testnél?",
+     "think_answer": "Az egyensúlyi helyzetben, mert ott a rugóerő nulla."
+    }
+   ]
+  }
+ ]
+}

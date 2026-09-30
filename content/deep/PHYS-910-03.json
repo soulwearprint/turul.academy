@@ -1,0 +1,256 @@
+{
+ "nat_id": "PHYS-910-03",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "8304b65a-2906-4f6b-81dc-20c4f4c0e34a",
+   "title_hu": "Ütközések és lendület",
+   "text_block_id": "b1e776da-5773-4bdc-bf44-27988c884295",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Lendület és a gyurmagolyók",
+     "body": "A lendület a tömeg és a sebesség szorzata: p = m · v. Ütközés közben a rendszer teljes lendülete megmarad. Ha egy 2 kg-os gyurmagolyó 3 m/s-mal egy álló 1 kg-os golyóba ütközik, és összetapadnak, közös sebességük v = (2 · 3) : 3 = 2 m/s. Az ütközés előtt a mozgási energia 9 J volt, utána 6 J, a hiányzó 3 J hővé és deformációvá alakult.",
+     "did_you_know": "A lendület vektormennyiség, ezért az ütközéseknél az irány is számít: a szembe haladó testek lendülete részben kioltja egymást.",
+     "think": "Mekkora a közös sebesség, ha egy 1 kg-os, 4 m/s-mal haladó golyó egy álló 1 kg-os golyóba tapad?",
+     "think_answer": "(1 · 4) : 2 = 2 m/s, mert a tömeg a kétszeresére nőtt, így a sebesség a felére csökken."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Hova tűnt az energia fele?",
+     "body": "A korcsolyázós példában a lendület: 80 kg · 5 m/s = 400 kg·m/s. Ez marad meg az ütközés után is, amikor a két személy tömege együtt 150 kg, így a közös sebesség 400 : 150 ≈ 2,67 m/s. A mozgási energia előtte ½ · 80 · 5² = 1000 J volt, utána ½ · 150 · 2,67² ≈ 533 J. Az energia csaknem fele hővé és a testek deformációjává alakult, a lendület viszont nem veszett el.",
+     "did_you_know": "Az ütközések során a lendület mindig megmarad, a mozgási energia viszont csak a tökéletesen rugalmas ütközésnél.",
+     "think": "Miért lesz kisebb a közös sebesség, mint az első korcsolyázó eredeti sebessége?",
+     "think_answer": "Mert ugyanazt a lendületet nagyobb tömeg között osztjuk el, így a sebesség kisebb."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Miért véd a gyűrődési zóna?",
+     "body": "Az F = Δp : Δt összefüggés szerint ugyanaz a lendületváltozás kisebb erővel jár, ha hosszabb ideig tart. Egy 1000 kg-os autó, amely 15 m/s-ról megáll, 15 000 kg·m/s lendületet veszít. Ha ez 0,02 másodperc alatt történik, az erő 750 000 N, ha a gyűrődési zóna 0,1 s-ra nyújtja, csak 150 000 N. Az utasok terhelése tehát ötödére csökken.",
+     "did_you_know": "A gyűrődési zónát Barényi Béla (1907–1997) osztrák–magyar származású mérnök találta ki, és az 1950-es években szabadalmaztatta.",
+     "think": "Miért nem jó, ha egy autó karosszériája teljesen merev?",
+     "think_answer": "Mert ütközéskor nagyon rövid idő alatt áll meg, így hatalmas erő hat az utasokra. A gyűrődés megnyújtja a fékezést."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mennyire pattan vissza a labda?",
+     "body": "A visszapattanás magasságából kiszámolhatjuk a rugalmasságot: ha egy labda 1 méterről esve 0,64 métert pattan vissza, akkor a sebességek aránya √0,64 = 0,8. Az energia 36 százaléka hővé alakul. A pattanás magassága a labda anyagán kívül a felfújtságtól és a talaj keménységétől is függ, ezért a labdák sorrendje a körülményektől függ.",
+     "did_you_know": "A hivatalos kosárlabda-előírás szerint a labda 1,8 méterről ejtve 1,2–1,4 méter magasra pattanjon vissza.",
+     "think": "Milyen három dologtól függ egy labda visszapattanási magassága?",
+     "think_answer": "A labda anyagától, a felfújtságától és a talaj keménységétől."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mit nyer vissza a rekuperáció?",
+     "body": "Egy 1500 kg-os autó 20 m/s-mal (72 km/h) haladva ½ · 1500 · 20² = 300 kJ mozgási energiával rendelkezik. A rekuperációs fékezés ennek egy részét a motor generátorként átalakítja elektromos energiává. A visszanyerhető rész kisebb a teljesnél, mert a gép és az akkumulátor is veszít. Lendületet nem tárolunk: az autó lendülete a fékezéskor az úton keresztül a Földre adódik át.",
+     "did_you_know": "Az elektromos autók kis fékezéseit a rekuperáció el is végzi, így a fékbetét kevésbé kopik.",
+     "think": "Melyik marad meg a rekuperációs fékezésnél részben: a lendület vagy a mozgási energia?",
+     "think_answer": "A mozgási energia egy része tárolódik az akkumulátorban. A lendület az úton át a Földre kerül."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Fékút és reakcióút",
+     "body": "Fékezéskor a fékút s = v² : (2 · a). Száraz úton a lassulás kb. 8 m/s², így 25 m/s-ról (90 km/h) a fékút 625 : 16 ≈ 40 m. Nedves úton a lassulás kb. a fele, tehát a fékút kb. 80 m. Ehhez jön a reakcióút: ha a sofőr 1 másodperc alatt reagál, közben még 25 métert megtesz. A teljes megállási távolság száraz úton így kb. 65 méter. A sebesség duplázása négyszeres fékutat jelent.",
+     "did_you_know": "A sebesség négyzete miatt a 130 km/h-ról a megállás kb. kétszer akkora úton lehetséges, mint 90 km/h-ról.",
+     "think": "Hányszorosára nő a fékút, ha a sebességet a háromszorosára növeljük?",
+     "think_answer": "Kilencszeresére, mert a fékút a sebesség négyzetével arányos."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Az öv Newton első törvénye miatt kell",
+     "body": "Newton első törvénye szerint a test megtartja mozgásállapotát, ha nem hat rá erő. Ütközéskor az autó megáll, az utas viszont tovább haladna. Az öv az az erő, amely az utast fokozatosan lefékezi. Öv nélkül az utas a szélvédőnek vagy a kormánynak csapódna, ahol a lassulás nagyon rövid idő alatt zajlik. Ezért az öv egyszerre Newton első és második törvényét is alkalmazza.",
+     "did_you_know": "A mai, háromponti biztonsági övet Nils Bohlin svéd mérnök találta fel 1959-ben.",
+     "think": "Miért lendül előre az autóban ülő utas hirtelen fékezéskor?",
+     "think_answer": "Mert a teste tehetetlensége miatt megtartja a korábbi sebességét, miközben az autó lelassul."
+    }
+   ]
+  },
+  {
+   "lesson_id": "ed4313e2-f36b-437d-a989-1e794e956238",
+   "title_hu": "Kanyarodás és súrlódás",
+   "text_block_id": "b6996675-180e-470f-abef-ad9627591749",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Mekkora sebességgel lehet kanyarodni?",
+     "body": "A kanyarodáshoz szükséges erőt a súrlódás adja: legfeljebb μ · m · g. A centripetális erő m · v² : r, így a legnagyobb sebesség v = √(μ · g · r). Száraz úton (μ ≈ 0,8) egy 50 m sugarú kanyarban ez 19,8 m/s, kb. 71 km/h. Nedves úton (μ ≈ 0,4) 14 m/s, vagyis 50 km/h. Jégen (μ ≈ 0,1) csak 7 m/s, kb. 25 km/h.",
+     "did_you_know": "Az autók gumijainak tapadását a nedves úton a gumiminta segíti, amely elvezeti a vizet a gumi és az út közül.",
+     "think": "Miért kell esőben lassabban kanyarodni?",
+     "think_answer": "Mert kisebb a tapadási súrlódási együttható, így kisebb a legnagyobb kanyarodási sebesség."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Miért csúszik ki a nehéz teherautó is?",
+     "body": "Érdekes, hogy a kanyarban a kicsúszás nem függ az autó tömegétől. A centripetális erő (m · v² : r) és a legnagyobb súrlódás (μ · m · g) is arányos a tömeggel, ezért a tömeg kiesik. Ugyanazon az úton ugyanazzal a sebességgel a személyautó és a teherautó egyszerre csúszik meg (ha a magasabb súlypont miatt a teherautó nem borul fel előbb). A sebesség duplázása négyszeres súrlódást igényel.",
+     "did_you_know": "A modern autók elektronikus menetstabilizálója (ESP) az egyes kerekeket külön fékezve tartja a járművet az íven.",
+     "think": "Miért kell a kanyar előtt lelassítani, nem a kanyarban?",
+     "think_answer": "Mert a kanyarban a súrlódás egy részét a fékezés is igénybe venné, kevesebb maradna az irányváltoztatásra."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Miért dől be a motoros?",
+     "body": "A motoros a kanyarban ráhajol az ívre, így a talajtól ható erő (a súrlódás és a nyomóerő eredője) a motor és a motoros súlypontján halad át. A dőlésszög tan θ = v² : (r · g). Ha 20 m/s-mal megy egy 50 m sugarú kanyarban, tan θ = 400 : 490 ≈ 0,82, tehát θ kb. 39°. Gyorsabb menetnél vagy kisebb sugarú ívben még jobban bedől.",
+     "did_you_know": "A versenymotorosok a kanyarban 60° feletti dőlésszöget is elérnek.",
+     "think": "Hogyan változik a dőlésszög, ha ugyanazt a kanyart gyorsabban veszi be a motoros?",
+     "think_answer": "Nagyobb lesz a dőlésszög, mert tan θ = v² : (r · g), és v növekedésével nő."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Miért csúszik a jég?",
+     "body": "A jégen a súrlódási együttható kb. 0,03, tehát nagyon kicsi. A jég felszínén vékony, folyadékszerű réteg van, ami kenőanyagként működik. A korcsolya éle oldalirányban is beleharap a jégbe, így a kanyarban ez az él adja az oldalirányú erőt. Ha túl gyorsan fordulunk, az él kicsúszik, és a korcsolyázó elesik. Ezért kell a kanyarba dőlve, az élre állva fordulni.",
+     "did_you_know": "A jégkorong és a curling-kő azért siklik messzire, mert a jég súrlódása rendkívül kicsi.",
+     "think": "Miért nem lehet a lapos korcsolyatalppal élesen kanyarodni?",
+     "think_answer": "Mert a lapos talp nem harap bele oldalról a jégbe, így nincs elég oldalirányú erő."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mikor a legcsúszósabb az út?",
+     "body": "Az olaj és a víz kenőanyag, ami csökkenti a súrlódást. A hosszú száraz időszak után a nedves út különösen csúszós, mert az olaj és a por a vízzel keveredve vékony csúszós réteget képez. Ezt sokan tapasztalják az első esőnél. Télen a sózás a jeget olvasztja, és a gumi újra közvetlenül az úton tapad. Kísérletnél a hatás jól mérhető: a lejtő ugyanazon a szögén a bekent tárgy előbb megcsúszik.",
+     "did_you_know": "Az autógumi tapadását a kopott mintázat is jelentősen rontja nedves úton.",
+     "think": "Miért csúszósabb az út az eső elején, mint egy órával később?",
+     "think_answer": "Mert később a víz elmossa az olajat és a port."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "A tapadási határszög mérése",
+     "body": "A lejtőn a test akkor csúszik meg, ha tan α = μ. Így a súrlódási együttható egyszerűen mérhető: emeld a lejtőt lassan addig, amíg a test megindul, majd mérd meg a dőlésszöget, vagy a lejtő magasságát és alapját. Ha a test 30°-nál csúszik meg, μ = tan 30° ≈ 0,58. Ugyanezt megismételheted különböző felületekkel (fa, papír, gumi), és összehasonlíthatod az értékeket.",
+     "did_you_know": "A mérés eredménye a test tömegétől független, ezért kis és nagy tárgyakkal is ugyanazt a szöget kapod.",
+     "think": "Milyen dőlésszögnél csúszik meg az a test, amelyhez μ = 1 tartozik?",
+     "think_answer": "45°-nál, mert tan 45° = 1."
+    }
+   ]
+  },
+  {
+   "lesson_id": "77737513-65a8-49d5-a1c8-9182f78dfed8",
+   "title_hu": "Úszás és hajózás fizikája",
+   "text_block_id": "37213ec7-50ff-412b-b08d-f379f9852db5",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "A nyomás a mélységgel nő",
+     "body": "A hidrosztatikai nyomás p = ρ · g · h. Vízben 10 méter mélyen ez 1000 · 9,81 · 10 ≈ 98 kPa, ami körülbelül az egy légköri nyomás. Ehhez jön a felszíni légnyomás, így 10 méter mélyen a teljes nyomás kb. 2 bar. Minden további 10 méter mélység újabb egy bar nyomást ad. Ezért érzed a fülben a nyomást, és ezért kell a búvároknak nyomáskiegyenlítést végezniük.",
+     "did_you_know": "A Mariana-árok legmélyebb pontján a nyomás több mint ezerszerese a normál légnyomásnak.",
+     "think": "Mekkora nyomás nehezedik a búvárra 30 méter mélyen a felszíni légnyomással együtt?",
+     "think_answer": "3 · 1 bar + 1 bar = 4 bar körüli."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Az acélhajó és az acélgolyó",
+     "body": "Archimédész törvénye szerint a felhajtóerő egyenlő a kiszorított folyadék súlyával: F = ρ · V · g. Egy tömör acélgolyó elsüllyed, mert az acél sűrűsége (kb. 7800 kg/m³) nagyobb a vízénél. Ha ugyanezt az acélt tál alakúra formáljuk, sok vizet szorít ki, és a felhajtóerő elbírja a súlyát. A hajó úszik, ha a kiszorított víz súlya egyenlő a hajó súlyával.",
+     "did_you_know": "A Holt-tengerben a víz sűrűsége kb. 1,24 kg/liter, ezért ott könnyű a víz tetején lebegni.",
+     "think": "Miért úszik az acélhajó, ha az acél sűrűbb a víznél?",
+     "think_answer": "Mert a hajó üreges, így a teljes térfogatához tartozó átlagsűrűség kisebb a vízénél."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Hogyan haladhat a vitorlás szél ellen?",
+     "body": "A vitorla nem csak tolja a hajót: szárnyprofil-szerűen működik, így a szél a vitorlán felhajtóerőt hoz létre. A vitorlások így szélirányhoz képest mintegy 40–45 fokos szögben is előre tudnak haladni. A hajócsavar forgás közben a vizet hátra löki, és Newton harmadik törvénye szerint a víz előre löki a hajót. A felhajtóerő a hajót a vízen tartja, de nem hajtja előre.",
+     "did_you_know": "A vitorlások cikkcakkos útvonallal haladnak a széllel szemben, ezt a manővert angolul tackingnek nevezik.",
+     "think": "Mi hajtja a propelleres hajót előre?",
+     "think_answer": "A propeller által hátralökött víz, mert az ellenerő előre löki a hajót."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Hogyan merül a tengeralattjáró?",
+     "body": "A tengeralattjáró a ballasztokba beengedett vízzel növeli az átlagsűrűségét, és így elmerül. Felemelkedéshez sűrített levegővel kiszorítja a vizet a ballasztból. A lebegéshez az átlagsűrűségnek egyenlőnek kell lennie a víz sűrűségével. 100 méter mélyen a külső nyomás kb. 11 bar, ezért a hajótest nagyon erős. Minden mélység saját ballasztbeállítást kíván.",
+     "did_you_know": "A tengeralattjárók előrehaladó mozgás közben a vízszintes vezérlőlapokkal is irányítják a merülést.",
+     "think": "Mit tesz a tengeralattjáró, hogy elmerüljön?",
+     "think_answer": "Vizet enged a ballasztokba, így nő az átlagsűrűsége."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A sebesség négyzetével nő az ellenállás",
+     "body": "A közegellenállási erő F = ½ · ρ · v² · C · A, ahol C az alaktényező. Ha a sebességet duplázzuk, az ellenállás négyszeresére nő. A vízben a formának van a legnagyobb szerepe, a legkisebb ellenállást a hosszúkás cseppforma adja. A hajók orra, az úszók ruhája és a delfinek teste is azért olyan, hogy csökkentse az örvényeket. A felület simasága kisebb szerepet játszik.",
+     "did_you_know": "A cápabőrszerű mintázatú úszóruhák a felületi ellenállást csökkentik, ezért néhány versenyen tilos volt használni őket.",
+     "think": "Hányszorosára nő az ellenállás, ha a hajó sebessége háromszorosára nő?",
+     "think_answer": "Kilencszeresére, mert az ellenállás a sebesség négyzetével arányos."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Mennyit bír el a hajómodell?",
+     "body": "A hajómodell terhelhetősége kiszámolható. Egy 10 cm × 20 cm alapú doboz 3 cm-re merül a vízbe, tehát kiszorított víz térfogata 0,1 · 0,2 · 0,03 = 0,0006 m³, tömege 0,6 kg. A doboz és a rakomány együtt tehát legfeljebb 0,6 kg lehet, hogy ne süllyedjen el. Szélesebb alap esetén ugyanannyi terhelésnél kisebb a merülés, ezért a lapos hajók jobban terhelhetők.",
+     "did_you_know": "A hajók oldalán a merülési vonalak (Plimsoll-jel) jelzik, meddig szabad megrakni őket az adott vízben.",
+     "think": "Hány gramm terhet bír el egy 10 cm × 10 cm alapú doboz, ha 2 cm-re merülhet?",
+     "think_answer": "0,1 · 0,1 · 0,02 · 1000 = 0,2 kg, vagyis 200 g együtt a doboz saját tömegével."
+    }
+   ]
+  },
+  {
+   "lesson_id": "bcf7bcd6-7ef9-4f97-b0ee-027a1fa3c262",
+   "title_hu": "Repülés fizikája",
+   "text_block_id": "92d0e790-dcee-41b8-ae9b-424494ff96c1",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Két magyarázat, ugyanaz az erő",
+     "body": "A szárny felhajtóerejét kétféleképpen is leírhatjuk. Bernoulli szerint a szárny fölött gyorsabban áramló levegő nyomása kisebb, mint az alatta lévőé. Newton harmadik törvénye szerint a szárny a levegőt lefelé téríti, és a levegő ellenereje felfelé hat a szárnyra. Mindkét leírás ugyanazt a jelenséget adja. Az erő a sebesség négyzetével nő, ezért kell felszálláskor a futópályán felgyorsulni.",
+     "did_you_know": "Az áramló levegőnek nem kell egyszerre elérnie a szárny végét: az az elterjedt magyarázat, hogy a két oldalon azonos idő alatt jut át, téves.",
+     "think": "Miért kell a repülőgépnek felszállás előtt gyorsítania?",
+     "think_answer": "Mert a felhajtóerő a sebesség négyzetével nő, és csak megfelelő sebességnél elég nagy a gép súlyának egyensúlyozásához."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "A támadási szög és az átesés",
+     "body": "A felhajtóerő függ a szárny és az áramlás által bezárt szögtől, a támadási szögtől. Kis szögnél a szög növelésével nő az emelés. Ha a szög túl nagy, körülbelül 15–20 fok felett az áramlás leválik a szárnyról, a felhajtóerő hirtelen csökken, ezt átesésnek nevezzük. A pilóták ezért ügyelnek a sebességre és a szögre. A papírrepülőn is kipróbálhatod: ha túl felfelé dobod, megbillen, és lehull.",
+     "did_you_know": "A madarak a leszálláskor kitárják a szárnyukat és nagy szögben tartják, így lassítanak.",
+     "think": "Miért veszélyes túl nagy szögben repülni?",
+     "think_answer": "Mert az áramlás leválik a szárnyról, és a felhajtóerő hirtelen csökken."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Az alak számít",
+     "body": "A közegellenállás a test alakjától függ, ezt az alaktényező (C) fejezi ki. Egy kocka alakú testé kb. 1, a modern személyautóké 0,25–0,35, egy jó cseppformáé 0,05 körül lehet. Az áramvonalas testnél a levegő simán kerüli meg a testet, mögötte kevés örvény keletkezik. Ezért kerekítettek az autók és a vonatok orra. A repülőgépeknél a törzs, a szárnyvég és a futómű elrendezése egyaránt számít.",
+     "did_you_know": "A vonatok és repülőgépek orra kialakításánál a szélcsatorna a legfontosabb vizsgálati eszköz.",
+     "think": "Melyik alak kelt kisebb közegellenállást: a kocka vagy a cseppforma?",
+     "think_answer": "A cseppforma, mert a levegő simán megkerüli, és kevesebb örvény keletkezik mögötte."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Miért repülnek nagy magasságban?",
+     "body": "A közegellenállás F = ½ · ρ · v² · C · A, így a levegő sűrűségével arányos. 10–11 km magasságban a levegő sűrűsége a tengerszinti kb. harmada, ezért ugyanazon a sebességen kisebb az ellenállás, és kevesebb üzemanyag fogy. A sebesség duplázásakor az ellenállás négyszeresére nő. A hőmérséklet és a ritkább levegő miatt a szárnynak nagyobb sebességgel kell haladnia a kellő felhajtóerő eléréséhez.",
+     "did_you_know": "A repülőgép utazómagassága általában 10–12 km, ahol a külső hőmérséklet −50 °C körüli.",
+     "think": "Miért fogyaszt kevesebbet a repülőgép nagy magasságban?",
+     "think_answer": "Mert ott ritkább a levegő, így kisebb a közegellenállás."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Papírkísérletek a nyomással",
+     "body": "Fogj egy keskeny papírcsíkot, és tartsd az alsó élét a szád előtt. Ha a csík fölött fújsz, a csík felemelkedik. Ennek oka, hogy a gyorsabban áramló levegő fölötte kisebb nyomású, mint alatta. Két lap között fújva a lapok közeledése is ezt a hatást mutatja. Ezek a kísérletek a Bernoulli-elvet illusztrálják, de a valódi szárny felhajtóerejében az áramlás elhajlásának is szerepe van.",
+     "did_you_know": "A szélcsatornában a repülőgép-modellek körül füstcsíkokkal teszik láthatóvá az áramlást.",
+     "think": "Mi történik a két papírlap között, ha közöttük fújunk?",
+     "think_answer": "A lapok egymás felé mozdulnak, mert köztük a levegő gyorsabb, így kisebb a nyomás."
+    }
+   ]
+  }
+ ]
+}
