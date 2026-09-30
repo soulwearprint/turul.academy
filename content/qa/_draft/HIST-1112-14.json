@@ -1,0 +1,390 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "d23d63da-dfb0-4081-a817-cdb0db5503e6",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A világgazdaság középpontjában az Amerikai Egyesült Államok és szövetségesei állnak”",
+   "explanation": "Pontatlan és homályos. A közgazdaságtan a hagyományos centrumokat triádként írja le: az USA, az EU és Japán. A magyar vonatkozás konkrét: az EU-tagság (2004 óta) és az EU-ba irányuló export.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Triad_(economics)",
+     "title": "Triad (economics)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "az Amerikai Egyesült Államok és szövetségesei állnak",
+     "az úgynevezett triád áll: az Egyesült Államok, az Európai Unió és Japán"
+    ],
+    [
+     "Magyarország a globális gazdasági folyamatokban való részvétele révén érzékeli ezeket a változásokat, ami fontos a gazdasági fejlődése szempontjából.",
+     "Magyarország 2004 óta az EU tagja, exportjának mintegy háromnegyede az EU-ba irányul."
+    ]
+   ]
+  },
+  {
+   "block_id": "d23d63da-dfb0-4081-a817-cdb0db5503e6",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„E két ország … stratégiái közvetlen hatással vannak Magyarországra is”",
+   "explanation": "Általános, üres mondat. Konkrét tények: Kína 2010 óta a világ második legnagyobb gazdasága; Magyarország a földgáz jelentős részét Oroszországból importálja.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Economy_of_China",
+     "title": "Economy of China",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Russia–Hungary_relations",
+     "title": "Russia–Hungary relations",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "E két ország politikai és gazdasági stratégiái közvetlen hatással vannak Magyarországra is, különösen a kereskedelmi kapcsolatok és a geopolitikai helyzet szempontjából. A magyar gazdaság számára fontos, hogy alkalmazkodjon ezekhez az új trendekhez.",
+     "Kína 2010 óta a világ második legnagyobb gazdasága, Oroszország pedig fontos energiaszállító: Magyarország a földgáz jelentős részét Oroszországból importálja."
+    ]
+   ]
+  },
+  {
+   "block_id": "d23d63da-dfb0-4081-a817-cdb0db5503e6",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„a multinacionális cégek befektetései kulcsszerepet játszanak a hazai gazdaság fejlődésében” (példa nélkül)",
+   "explanation": "Konkrét példa hiányzik: Audi (Győr), Mercedes (Kecskemét), Samsung; a külföldi tulajdonú cégek adják a magyar export nagy részét.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Economy_of_Hungary",
+     "title": "Economy of Hungary",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Multinational_corporation",
+     "title": "Multinational corporation",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Magyarország is érintett ebben a folyamatban, hiszen a multinacionális cégek befektetései kulcsszerepet játszanak a hazai gazdaság fejlődésében.",
+     "Magyarországon például az Audi (Győr), a Mercedes (Kecskemét) és a Samsung vállalatai adják a kivitel jelentős részét."
+    ]
+   ]
+  },
+  {
+   "block_id": "d23d63da-dfb0-4081-a817-cdb0db5503e6",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„Magyarország gazdasági helyzete … szorosan összefonódik”",
+   "explanation": "Homályos. Konkrét tény: Magyarország kis, nyitott gazdaság, a kivitel a GDP nagyjából 80 százalékát teszi ki.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Economy_of_Hungary",
+     "title": "Economy of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Magyarország gazdasági helyzete a globális térben szorosan összefonódik a világpolitikai és világgazdasági változásokkal.",
+     "Magyarország kis, nyitott gazdaság: a kivitel a GDP nagyjából 80 százalékát teszi ki, ezért érzékenyen reagál a világgazdasági változásokra."
+    ]
+   ]
+  },
+  {
+   "block_id": "3ddc8af3-6285-49d9-8444-05bf5b92e59a",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A modern kori migráció a 20. század második felében kezdődött el”; „a trianoni békeszerződés következményei”",
+   "explanation": "A tömeges nemzetközi migráció a 19. században is létezett (tízmilliók vándoroltak Európából Amerikába). A magyar példa: 1956-ban mintegy 200 ezren hagyták el az országot, az 1990-es években a délszláv háborúk menekültjei érkeztek.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Human_migration",
+     "title": "Human migration",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/History_of_immigration_to_the_United_States",
+     "title": "History of immigration to the United States",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A modern kori migráció a 20. század második felében kezdődött el, és napjainkban is folytatódik.",
+     "A tömeges nemzetközi migráció nem új jelenség (a 19. században tízmilliók vándoroltak Európából Amerikába); a 20. század második felében újabb hullámai indultak meg, és napjainkban is folytatódik."
+    ],
+    [
+     "Magyarország esetében a migrációs hullámok különösen fontosak, hiszen a történelmi tapasztalatok, mint a trianoni békeszerződés következményei, mély hatással vannak a nemzeti identitásra.",
+     "Magyarország történetében is voltak jelentős migrációs hullámok: 1956-ban mintegy 200 ezren hagyták el az országot, az 1990-es években pedig a délszláv háborúk menekültjei érkeztek."
+    ]
+   ]
+  },
+  {
+   "block_id": "3ddc8af3-6285-49d9-8444-05bf5b92e59a",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "high",
+   "claim": "„Magyarországon a migrációs folyamatok következtében a párhuzamos társadalmak megjelenése egyre inkább jellemzővé válik”",
+   "explanation": "Alátámasztatlan állítás. Magyarországon a külföldi állampolgárok aránya a lakosságnak alig néhány százaléka; a fogalmat nyugat-európai példákra (pl. francia banlieue-k) szokás alkalmazni, a hazai szakmai vitákban pedig inkább a szegregált romatelepekre. Politikailag érzékeny állítás, ellenőrzést igényel.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Parallel_society",
+     "title": "Parallel society",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Immigration_to_Hungary",
+     "title": "Immigration to Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "replace": [
+    [
+     "Magyarországon a migrációs folyamatok következtében a párhuzamos társadalmak megjelenése egyre inkább jellemzővé válik.",
+     "Magyarországon a külföldi állampolgárok aránya alacsony (a lakosságnak alig néhány százaléka); a fogalmat nyugat-európai példákra (például a francia külvárosokra) szokás alkalmazni, a hazai vitákban pedig a szegregált romatelepekre is."
+    ]
+   ]
+  },
+  {
+   "block_id": "3ddc8af3-6285-49d9-8444-05bf5b92e59a",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„a 21. század elején érte el csúcspontját”; „Ez a jelenség Magyarországot is érinti, hiszen a népesség csökkenése”",
+   "explanation": "A világnépesség növekedési üteme az 1960-as évek végén volt a legmagasabb (évi kb. 2 százalék); a népesség 2022-ben érte el a 8 milliárdot. Magyarországon a népesség 1981 óta fogy, ami az ellenkezője a népességrobbanásnak, nem az „érintettség”.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Population_growth",
+     "title": "Population growth",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Demographics_of_Hungary",
+     "title": "Demographics of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "és a 21. század elején érte el csúcspontját, különösen a fejlődő országokban",
+     "a növekedési ütem csúcsa az 1960-as évek végén volt (évi kb. 2 százalék), a világ népessége 2022-ben elérte a 8 milliárdot; a növekedés főleg a fejlődő országokban zajlik"
+    ],
+    [
+     "Ez a jelenség Magyarországot is érinti, hiszen a népesség csökkenése és elöregedése komoly kihívásokat jelent.",
+     "Magyarországon ezzel szemben a népesség 1981 óta fogy és öregszik, ami a demográfiai átmenet másik végét mutatja."
+    ]
+   ]
+  },
+  {
+   "block_id": "3ddc8af3-6285-49d9-8444-05bf5b92e59a",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Az iszlamizmus a muszlim közösségek politikai és vallási aktivizmusát jelenti”; „a migrációs hullámok és a terrorizmus összefüggésében”",
+   "explanation": "Az iszlamizmus (politikai iszlám) olyan ideológia, amely az államot és a társadalmat az iszlám jog szerint akarja berendezni; nem azonos a vallással vagy a muszlim közösségekkel. A jihadista terrorizmus áldozatainak többsége maga is muszlim. A migráció és a terrorizmus automatikus összekapcsolása téves.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Islamism",
+     "title": "Islamism",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Terrorism_in_Europe",
+     "title": "Terrorism in Europe",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az iszlamizmus a muszlim közösségek politikai és vallási aktivizmusát jelenti, amely a 21. században egyre inkább teret nyer.",
+     "Az iszlamizmus (politikai iszlám) olyan politikai ideológiák gyűjtőneve, amelyek az államot és a társadalmat az iszlám jog alapján akarják berendezni; nem azonos az iszlám vallással, és a muszlimok többsége nem iszlamista."
+    ],
+    [
+     "A magyar történelmi kontextusban fontos megérteni az iszlamizmus hatását, különösen a migrációs hullámok és a terrorizmus összefüggésében.",
+     "A migráció és a terrorizmus összemosása tévedés: az európai merényletek (Madrid 2004, London 2005, Párizs 2015) elkövetői között többen az adott országban felnőtt személyek voltak, a jihadista terror áldozatainak többsége pedig maga is muszlim."
+    ]
+   ]
+  },
+  {
+   "block_id": "3ddc8af3-6285-49d9-8444-05bf5b92e59a",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A terrorizmus a 21. század egyik legnagyobb kihívása”",
+   "explanation": "Konkrét fordulópont hiányzik: 2001. szeptember 11. (közel háromezer halott).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/September_11_attacks",
+     "title": "September 11 attacks",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A terrorizmus a 21. század egyik legnagyobb kihívása, amely globális méreteket öltött.",
+     "A terrorizmus a 21. század egyik legnagyobb kihívása, amely globális méreteket öltött; a fordulópont a 2001. szeptember 11-i New York-i és washingtoni merénylet volt (közel háromezer halott)."
+    ]
+   ]
+  },
+  {
+   "block_id": "04d8ec0a-00a2-43ad-8d4b-bc7011627c2f",
+   "card_index": 0,
+   "field": "year",
+   "verdict": "unverifiable",
+   "severity": "low",
+   "claim": "A world-blokk egyetlen kártyája általános („globalizáció a 21. században”), a year és a link_hu mező üres",
+   "explanation": "Nincs konkrét esemény és dátum; nem javítható automatikusan.",
+   "source_note": "Szerkesztői észrevétel: konkrét eseménnyel (pl. 2008-as pénzügyi válság vagy Kína WTO-tagsága, 2001) kellene újraírni.",
+   "apply": "none"
+  },
+  {
+   "block_id": "7dde161f-6201-4b80-8273-c748ddce88e7",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "„Az iszlamizmus és a terrorizmus megjelenése … a 21. század elején váltak hangsúlyossá”; „a demokratikus közbeszéd és politikai korrektség terjedésével is összefonódtak”",
+   "explanation": "Az iszlamizmus mozgalmai a 20. század elejétől léteznek (Muszlim Testvérek, 1928), világpolitikai tényezővé az 1979-es iráni forradalom után váltak; a terrorizmus 2001. szeptember 11. után lett központi kérdés. A „politikai korrektség” mondat értelmetlen. A year és link_hu üres.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Muslim_Brotherhood",
+     "title": "Muslim Brotherhood",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Iranian_Revolution",
+     "title": "Iranian Revolution",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/September_11_attacks",
+     "title": "September 11 attacks",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "body": "A tömeges nemzetközi migráció a 19. században is létezett; a 20. század második felében a dekolonizáció, a munkaerő-toborzás és a háborúk újabb hullámokat indítottak el. A világ népessége 1960 és 2000 között megduplázódott (3 milliárdról 6 milliárdra). Az iszlamizmus mozgalmai a 20. század elejétől léteznek (Muszlim Testvérek, 1928), világpolitikai tényezővé az 1979-es iráni forradalom után váltak; a terrorizmus a 2001. szeptember 11-i merényletek után lett a nemzetközi politika egyik központi kérdése."
+   }
+  },
+  {
+   "block_id": "30f3744d-a95b-4680-88a6-b6a6c232300c",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "low",
+   "claim": "„Mely országok számítanak a világgazdaság hagyományos centrumainak?” (kulcs: B USA és szövetségesei; D: Egyesült Királyság és Németország)",
+   "explanation": "A D opció (az USA szövetségesei) a B részhalmaza: két lehetséges helyes válasz.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Triad_(economics)",
+     "title": "Triad (economics)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[3]": "Indonézia és Nigéria."
+   }
+  },
+  {
+   "block_id": "30f3744d-a95b-4680-88a6-b6a6c232300c",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Melyik két ország új súlypontja a világpolitikának és világgazdaságnak?” (kulcs: Oroszország és Kína)",
+   "explanation": "Vitatható: Oroszország gazdasága kisebb az indiainál vagy a brazilnál is, az India–Brazília válasz szintén védhető. Ellenőrizhető tényre cserélendő.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Economy_of_China",
+     "title": "Economy of China",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/BRICS",
+     "title": "BRICS",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Melyik ország lett 2010-től a világ második legnagyobb gazdasága?",
+    "options": [
+     "Oroszország.",
+     "Kína.",
+     "India.",
+     "Brazília."
+    ],
+    "correct": "B",
+    "explanation": "Kína 2010 óta a világ második legnagyobb gazdasága az Egyesült Államok után."
+   }
+  },
+  {
+   "block_id": "9467dc37-eeda-4c00-8e12-2b71dce95889",
+   "card_index": 0,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "„Mi jellemzi a modern kori migrációt?” (kulcs: A, állandó lakóhely-változtatás gazdasági okokból)",
+   "explanation": "A migráció nem mindig állandó és nem csak gazdasági okú; a magyarázat gazdasági, politikai és társadalmi okokat említ.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Human_migration",
+     "title": "Human migration",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "Gazdasági, politikai és környezeti okokból történő lakóhely-változtatás."
+   }
+  },
+  {
+   "block_id": "9467dc37-eeda-4c00-8e12-2b71dce95889",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„A párhuzamos társadalmak gyakran növelik a társadalmi feszültségeket”",
+   "explanation": "A jelenség mértéke és okai vitatottak; a kérdés ténykérdésként fogalmazza meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Parallel_society",
+     "title": "Parallel society",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "A párhuzamos társadalmak egyik kockázata a társadalmi feszültségek növekedése, mert kevés a kapcsolat a csoportok között; a jelenség mértéke és okai azonban vitatottak."
+   }
+  }
+ ]
+}
