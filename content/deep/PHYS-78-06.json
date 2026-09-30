@@ -1,0 +1,256 @@
+{
+ "nat_id": "PHYS-78-06",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "5fafe4d3-3c7d-4cf9-a04c-e3244094d734",
+   "title_hu": "Elektromos állapot és jelenségek",
+   "text_block_id": "920e0d9c-ff7c-4ac6-98b7-e953c46bc7bb",
+   "n_text": 5,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Egy atom, akkora, mint egy stadion",
+     "body": "Az atom nagy része üres tér. Ha az atommagot egy borsószem nagyságúra nagyítanánk, az elektronok egy kb. 1 km átmérőjű térben mozognának körülötte, akkorában, mint egy nagy stadion környéke. Az elektron majdnem kétezerszer könnyebb a protonnál, töltésének nagysága mégis pontosan ugyanakkora, csak ellentétes előjelű. Dörzsöléskor csak az elektronok vándorolnak át egyik testről a másikra, a protonok a magban maradnak.",
+     "did_you_know": "Az elektron tömege a protonénak csak kb. 1 836-od része.",
+     "think": "Miért csak elektronok vándorolnak át dörzsöléskor, protonok nem?",
+     "think_answer": "Az elektronok az atom külső részén mozognak, és lazábban kötődnek. A protonok az atommag belsejében erősen kötve vannak, ezért nem tudnak átjutni."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Miért tapad a léggömb a falhoz?",
+     "body": "A megdörzsölt, negatív töltésű léggömb a semleges falhoz is odatapad. Ennek oka, hogy a léggömb közelében a fal részecskéiben az elektronok kissé eltolódnak, így a fal felszínén a léggömbhöz közelebb pozitív, távolabb negatív oldal alakul ki. A közelebbi, ellentétes töltések vonzása erősebb, mint a távolabbiak taszítása, ezért a léggömb odatapad. Párás időben a kísérlet rosszabbul sikerül, mert a nedvesség elvezeti a töltést.",
+     "did_you_know": "Száraz, téli időben gyakrabban „ráz meg” a kilincs, mert a száraz levegőben a testünkön felgyűlt töltés nem tud elszivárogni.",
+     "think": "Hogyan vonzhatja a töltött léggömb a falat, ha a fal semleges?",
+     "think_answer": "A léggömb töltése a fal felszínén szétválasztja a töltéseket: a közelebbi oldalon ellentétes töltés gyűlik össze, és ezt a léggömb erősebben vonzza, mint amennyire a távolabbi oldalt taszítja."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Villám: forróbb a Nap felszínénél",
+     "body": "A villám csatornájában a levegő egy pillanat alatt kb. 30 000 °C-ra hevül, ami többszöröse a Nap felszíni hőmérsékletének. A felforrósodott levegő robbanásszerűen kitágul, ez a hirtelen tágulás a mennydörgés. A fény szinte azonnal ideér, a hang viszont kb. 340 m/s sebességgel halad, vagyis kb. 3 másodperc alatt tesz meg egy kilométert. Ha villámlás után 6 másodpercet számolsz a dörgésig, a villám kb. 2 km-re csapott le.",
+     "did_you_know": "A villám hője a homokos talajba csapva a homokot megolvaszthatja, így üvegszerű csövek, úgynevezett fulguritok keletkeznek.",
+     "think": "Villámlás után 9 másodperccel hallod a dörgést. Milyen messze csapott le a villám?",
+     "think_answer": "A hang kb. 3 másodperc alatt tesz meg 1 km-t, így 9 másodperc alatt kb. 3 km-t. A villám tehát kb. 3 km-re csapott le."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A vízsugár, amely elhajlik",
+     "body": "A vízmolekulában az oxigén kissé negatív, a hidrogének kissé pozitív oldalt alkotnak, bár a molekula egésze semleges. Ha egy megdörzsölt fésűt vékony vízsugár közelébe tartasz, a sugár elhajlik a fésű felé, mert a molekulák a töltött fésű felé fordulnak. A mikrohullámú sütő gyorsan változó elektromos tere ezeket a molekulákat forgatja ide-oda, és ettől melegszik fel az étel. A vezeték nélküli telefontöltés viszont más elven működik: ott egy tekercs változó mágneses tere kelt áramot a telefon tekercsében.",
+     "did_you_know": "A csapból folyó vékony vízsugár láthatóan elhajlik egy megdörzsölt műanyag fésű felé.",
+     "think": "Miért melegszik fel a mikróban a vizes étel, a száraz tányér pedig alig?",
+     "think_answer": "A mikrohullám a vízmolekulákat forgatja meg, és így melegít. A száraz tányérban alig van víz, ezért csak attól melegszik, hogy a forró étel átadja neki a hőt."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A LED egyirányú utca",
+     "body": "A LED dióda: csak egy irányban engedi át az áramot, ezért ha fordítva kötöd be, nem világít. A LED ráadásul nem követi Ohm törvényét: a feszültség kis növelésére az áram hirtelen nagyon megnőhet, és a LED tönkremegy. Ezért kell elé egy ellenállás, amely korlátozza az áramot. Ha egy 9 V-os elemről egy 2 V-on működő LED-et 20 mA-rel akarsz világítani, az ellenállásra (9 − 2) V : 0,02 A = 350 Ω kell.",
+     "did_you_know": "A LED fényének színét a félvezető anyaga határozza meg; a kék LED feltalálásáért 2014-ben fizikai Nobel-díjat adtak.",
+     "think": "Mi történik, ha a LED-et fordítva kötöd be az áramkörbe?",
+     "think_answer": "Nem világít, mert fordított irányban nem engedi át az áramot. Egy egyszerű elemes áramkörben ettől nem megy tönkre, csak meg kell fordítani."
+    }
+   ]
+  },
+  {
+   "lesson_id": "1946621e-51c5-4137-a997-aeb540da4d6a",
+   "title_hu": "Elektromos áram és eszközök",
+   "text_block_id": "a2a66b1a-60ef-46ee-9db4-e0d5290db370",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Csigalassú elektronok, villámgyors lámpa",
+     "body": "A vezetékben az elektronok meglepően lassan haladnak előre: egy átlagos vezetékben másodpercenként csak a milliméter töredékét teszik meg. A lámpa mégis azonnal kigyullad, amikor felkapcsolod, mert a vezeték tele van elektronnal, és a kapcsoláskor mindegyik szinte egyszerre indul el. Olyan ez, mint egy vízzel teli cső: ha az egyik végén benyomsz vizet, a másik végén azonnal kifolyik, pedig a vízrészecskék nem utazták végig a csövet. Az elektromos hatás közel fénysebességgel terjed.",
+     "did_you_know": "Egy vezetékben az elektronok átlagos előrehaladási sebessége általában kisebb, mint 1 mm másodpercenként.",
+     "think": "Miért gyullad ki azonnal a lámpa, ha az elektronok olyan lassan haladnak?",
+     "think_answer": "A vezeték már eleve tele van elektronokkal, és kapcsoláskor az egész vezetékben szinte egyszerre indulnak el. Nem kell megvárni, hogy a kapcsolótól egy elektron eljusson a lámpáig."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Másodpercenként százszor fordul",
+     "body": "A magyar hálózatban a konnektorban 230 V-os, 50 Hz-es váltakozó feszültség van: a feszültség másodpercenként 50-szer vált oda-vissza, vagyis az áram iránya százszor fordul meg. A váltakozó áram azért győzött a távolsági szállításban, mert transzformátorral könnyen át lehet alakítani a feszültségét. Az egyik első jól használható transzformátort 1885-ben három magyar mérnök, Zipernowsky Károly, Bláthy Ottó és Déri Miksa szabadalmaztatta a Ganz gyárban. A telefon akkumulátorának viszont egyenáram kell, ezért a töltő átalakítja a hálózati áramot.",
+     "did_you_know": "A 19. század végén Edison az egyenáramot, Tesla és Westinghouse a váltakozó áramot támogatta; ezt a vetélkedést „az áramok háborújának” nevezik.",
+     "think": "Miért van szüksége a telefonnak töltőre, és miért nem dughatjuk közvetlenül a konnektorba?",
+     "think_answer": "A telefon akkumulátora kis feszültségű egyenáramot igényel, a konnektorban viszont 230 V-os váltakozó feszültség van. A töltő ezt alakítja át."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Volt: energia töltésenként",
+     "body": "A feszültség nem erő, hanem azt mutatja meg, mennyi energiát kap egységnyi töltés az áramforrástól. 1 V azt jelenti, hogy 1 coulomb töltés 1 joule energiát kap. Egy 9 V-os elem tehát minden coulomb töltésnek 9 J energiát ad. A vízhasonlattal: a feszültség olyan, mint a magasságkülönbség, amelyről a víz lefolyik, minél nagyobb, annál több energiát ad át a víz.",
+     "did_you_know": "A nagyfeszültségű vezetéken ülő madár nem kap áramütést, mert a két lába között nincs számottevő feszültség.",
+     "think": "Miért biztonságos a madárnak egy vezetéken ülni, és miért veszélyes, ha két vezetéket érint egyszerre?",
+     "think_answer": "Egy vezetéken a két lába között nincs feszültség, így rajta nem folyik át áram. Két különböző vezeték között viszont nagy a feszültség, és a testén át áram indulna."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Ohm törvénye és a kiégő izzó",
+     "body": "Ohm törvényével kiszámolhatjuk, mekkora áram folyik egy eszközön: egy 46 Ω-os fűtőtesten 230 V feszültségnél 230 : 46 = 5 A. Az ellenállás azonban nem mindig állandó. Egy hagyományos izzó fémszálának ellenállása izzó állapotban kb. tízszer nagyobb, mint hidegen. Ezért bekapcsoláskor, amikor a szál még hideg, sokkal nagyobb áram folyik rajta, és az izzók gyakran éppen felkapcsoláskor égnek ki.",
+     "did_you_know": "A hagyományos izzók többnyire bekapcsolás pillanatában égnek ki, mert ekkor a hideg szálon sokkal nagyobb áram folyik át.",
+     "think": "Mekkora áram folyik egy 23 Ω-os fűtőszálon, ha 230 V-ra kapcsoljuk?",
+     "think_answer": "Ohm törvénye szerint I = U : R = 230 V : 23 Ω = 10 A."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Sorban vagy párhuzamosan?",
+     "body": "A lakásban az eszközök párhuzamosan vannak kötve: mindegyik ugyanazt a 230 V-ot kapja, és egymástól függetlenül ki-be kapcsolhatók. Ha sorba lennének kötve, egy eszköz kikapcsolásakor az összes többi is leállna, mert megszakadna az áramkör. A régi karácsonyfaizzók sorba voltak kötve, ezért ha egy kiégett, az egész füzér elsötétült. Az áramkör csak akkor működik, ha zárt: a kapcsoló éppen ezt a kört szakítja meg.",
+     "did_you_know": "A régi, sorba kötött karácsonyfaizzók füzérében egyetlen kiégett izzó miatt az egész sor kialudt.",
+     "think": "Miért nem kapcsol ki a hűtő, amikor lekapcsolod a konyhai lámpát?",
+     "think_answer": "Mert a lakásban az eszközök párhuzamosan vannak kötve, így a lámpa áramkörének megszakítása nem érinti a hűtő áramkörét."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Hosszabb drót, nagyobb ellenállás",
+     "body": "Egy vezeték ellenállása három dologtól függ: az anyagától, a hosszától és a vastagságától. Kétszer hosszabb drótnak kétszer akkora, kétszer nagyobb keresztmetszetűnek feleakkora az ellenállása. Ezért a nagy teljesítményű eszközök, például a tűzhely, vastag kábelt kapnak, hogy ne melegedjenek túl. Az emberi test ellenállása száraz bőrrel sokkal nagyobb, mint nedves bőrrel, ezért veszélyes nedves kézzel elektromos eszközhöz nyúlni.",
+     "did_you_know": "Nedves bőrrel az emberi test ellenállása a száraz bőrhöz képest akár sokszorosára is csökkenhet.",
+     "think": "Miért kapnak vastagabb kábelt a nagy teljesítményű eszközök?",
+     "think_answer": "Mert rajtuk nagyobb áram folyik. A vastagabb kábel ellenállása kisebb, így kevésbé melegszik fel, és nem okoz tűzveszélyt."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Volta oszlopa",
+     "body": "Az első elemet Alessandro Volta építette 1800-ban: cink- és rézlemezeket rakott egymásra, közéjük sós vízbe mártott kartont téve. Az elem a kémiai energiát alakítja elektromos energiává. Az akkumulátor is egyenáramot ad, csak benne a kémiai folyamat visszafordítható, ezért újratölthető. Egy 3 000 mAh kapacitású telefonakkumulátor elvben 300 mA áramot 10 órán át tud adni.",
+     "did_you_know": "A feszültség mértékegysége, a volt, Alessandro Volta nevét viseli.",
+     "think": "Meddig működhet egy 3 000 mAh-s akkumulátor, ha a telefon 600 mA áramot vesz fel?",
+     "think_answer": "3 000 mAh : 600 mA = 5 óra."
+    }
+   ]
+  },
+  {
+   "lesson_id": "e97e5cfd-5374-4d0e-9139-9e1bc7c75c7c",
+   "title_hu": "Biztonság az elektromosság használatában",
+   "text_block_id": "6fb062ba-ec84-4645-8d99-7b5c968a0c4b",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Amikor nem lehet elengedni",
+     "body": "Az áramütés veszélyessége főleg attól függ, mekkora áram és milyen úton halad át a testen, különösen, ha a szíven keresztül. Már kb. 10 mA-es váltakozó áram is olyan izomgörcsöt okozhat, hogy az ember nem tudja elengedni a vezetéket. Ezért van a lakások többségében áram-védőkapcsoló (FI-relé), amely 30 mA hibaáramnál a másodperc töredéke alatt lekapcsol. Ez sokszor életet ment, de nem helyettesíti az óvatosságot.",
+     "did_you_know": "Kb. 10 mA-nél nagyobb váltakozó áram esetén az izmok görcsbe rándulhatnak, és a kéz nem tudja elengedni a megfogott vezetéket.",
+     "think": "Miért veszélyes megérinteni valakit, akit éppen áramütés ér?",
+     "think_answer": "Mert az áram rajtad keresztül is folyhat. Először az áramot kell lekapcsolni, vagy szigetelő tárggyal eltávolítani a vezetéket."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Kétszer nagyobb áram, négyszer több hő",
+     "body": "A Joule-hő nemcsak az áramtól és az időtől, hanem az ellenállástól is függ, és az áram hatása különösen erős: kétszer nagyobb áram négyszer annyi hőt fejleszt ugyanabban a vezetőben. Ezért szállítják az áramot a távvezetékeken nagyon nagy feszültségen: ugyanakkora teljesítményhez így sokkal kisebb áram kell, és sokkal kevesebb energia vész el hőként. A lakáshoz közel a feszültséget transzformátorokkal csökkentik 230 V-ra.",
+     "did_you_know": "Ha egy vezetékben megkétszerezzük az áramot, a benne keletkező hő négyszeresére nő.",
+     "think": "Miért szállítják az áramot nagyfeszültségű vezetékeken?",
+     "think_answer": "Nagy feszültségen ugyanakkora teljesítményhez kisebb áram kell. Kisebb áram mellett a vezetékek sokkal kevésbé melegszenek, így kevesebb energia vész el."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Miért nem melegszik a zsinór?",
+     "body": "A vízforraló fűtőszála és a hozzá vezető zsinór ugyanabban az áramkörben van, ugyanaz az áram folyik rajtuk. Mégis csak a fűtőszál forrósodik fel, mert annak sokkal nagyobb az ellenállása, a rézvezetéké pedig nagyon kicsi. Egy 2 000 W-os vízforraló 230 V-on kb. 8,7 A áramot vesz fel, a fűtőszálának ellenállása kb. 26 Ω. A fűtőszálakat gyakran króm-nikkel ötvözetből készítik, mert nagy az ellenállása, magas hőmérsékleten sem olvad meg, és nem ég el a levegőn.",
+     "did_you_know": "A fűtőszálak anyaga gyakran króm-nikkel ötvözet, amely vörös izzásig hevítve sem ég el a levegőn.",
+     "think": "Hogyan lehet, hogy ugyanaz az áram a fűtőszálat felforrósítja, a zsinórt nem?",
+     "think_answer": "A hőfejlődés az ellenállástól is függ. A fűtőszál ellenállása sokkal nagyobb, ezért ott keletkezik a hő, a kis ellenállású rézvezetékben alig."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Rövidzár: több ezer amper",
+     "body": "Rövidzárnál az áram egy nagyon kis ellenállású úton folyik, például két összeérő vezetéken. Ohm törvénye szerint ha 230 V-ra csak 0,1 Ω ellenállás jut, elvben 2 300 A áram folyna, ami másodpercek alatt felizzítaná a vezetékeket. A régi olvadóbiztosítékban egy vékony drót ilyenkor elolvad, a mai kismegszakító pedig lekapcsol, és utána egy kapcsolóval visszakapcsolható. Mindkettő a vezetékeket és a házat védi a tűztől.",
+     "did_you_know": "A mai lakásokban a régi olvadóbiztosítékok helyett többnyire kismegszakítókat használnak, amelyeket lekapcsolás után nem kell cserélni.",
+     "think": "Miért veszélyes egy kiolvadt biztosítékot vastagabb dróttal „megjavítani”?",
+     "think_answer": "A vastag drót nem olvad el túl nagy áramnál, így a vezetékek túlmelegedhetnek, és tűz keletkezhet. A biztosíték éppen azért gyenge pont, hogy ott szakadjon meg az áramkör."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Földelés vagy kettős szigetelés",
+     "body": "Ha egy fémházas készülékben, például mosógépben, egy vezeték hozzáér a házhoz, a ház feszültség alá kerülhet. A földelés ezt a fémházat egy vezetéken át a földhöz köti, így hiba esetén az áram a földelésen folyik el, és a biztosíték vagy a védőkapcsoló lekapcsol. Sok mai készülék, például számos tévé vagy telefontöltő, nem földelt, hanem kettős szigetelésű: a feszültség alatti részeket két réteg szigetelés választja el a felhasználótól.",
+     "did_you_know": "A kettős szigetelésű készülékeket egy kis négyzetbe rajzolt másik négyzet jelöli az adattábláján.",
+     "think": "Miért van a mosógépnek földelt dugója, a telefontöltőnek pedig nincs?",
+     "think_answer": "A mosógépnek fémháza van, amelyet hiba esetén a földelés tesz biztonságossá. A telefontöltő műanyag, kettős szigetelésű, így nincs szüksége földelésre."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Villamos felsővezeték: érintés nélkül is",
+     "body": "A lakásban a legveszélyesebb helyzetek a víz közelében adódnak: fürdőszobában a vizes bőr ellenállása kicsi, és a víz vezeti az áramot. Ezért tilos elektromos eszközt használni a kádban ülve. A vasút felsővezetékében 25 000 V van. Ilyen nagy feszültségnél az áram néhány tíz centiméteres légrésen is átívelhet, ezért a vagonokra mászni érintés nélkül is életveszélyes. Sárkányt sem szabad eregetni távvezeték közelében.",
+     "did_you_know": "A vasúti felsővezeték 25 000 V-os feszültsége a levegőn keresztül is átüthet, ezért a közelébe menni is életveszélyes.",
+     "think": "Miért életveszélyes felmászni egy álló vasúti kocsi tetejére, még ha nem is érsz hozzá a vezetékhez?",
+     "think_answer": "A felsővezeték nagyon nagy feszültsége a levegőn keresztül is átívelhet a közeli testbe, így érintés nélkül is áramütést okozhat."
+    }
+   ]
+  },
+  {
+   "lesson_id": "07f1a08c-8b88-46fd-b58c-a94b33a25f46",
+   "title_hu": "Elektromágnesesség és alkalmazásai",
+   "text_block_id": "38e54ac5-dae2-40fd-aa00-7d9ec6370ebe",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Vándorló pólus",
+     "body": "Az iránytű a Föld mágneses északi pólusa felé mutat, amely nem esik egybe a földrajzi Északi-sarkkal, és ráadásul vándorol: évente több tíz kilométert mozdul el. A telefonod a helyzetét a GPS-műholdak jeleiből határozza meg; a beépített mágneses érzékelő, a „digitális iránytű” csak azt mutatja meg, merre fordítod a telefont. Érdekesség, hogy a Föld északi mágneses pólusa fizikai értelemben déli mágneses pólus, hiszen az iránytű északi végét vonzza. Magyarországon az iránytű csak néhány fokkal tér el a földrajzi északtól.",
+     "did_you_know": "A Föld mágneses tere a földtörténet során már sokszor megfordult: az északi és a déli mágneses pólus helyet cserélt.",
+     "think": "Miért tér el az iránytű a földrajzi északi iránytól?",
+     "think_answer": "Mert a mágneses pólus nem ott van, ahol a földrajzi Északi-sark, hanem attól több száz kilométerre, és ráadásul folyamatosan vándorol."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Jedlik, a bencés feltaláló",
+     "body": "Az elektromágneses forgást 1821-ben Michael Faraday mutatta be először. Jedlik Ányos bencés szerzetes 1828 körül készítette el „villanydelejes forgonyát”, az egyik legkorábbi, elektromágnesekkel működő forgó készüléket, amelyet ma az elektromos motor egyik ősének tartunk. Később leírta a dinamó elvét is, vagyis azt, hogy a generátor saját áramával erősítheti a mágneseit, de ezt nem tette közzé. A motor és a generátor lényegében ugyanaz a gép: az egyik áramból mozgást, a másik mozgásból áramot állít elő.",
+     "did_you_know": "Jedlik Ányos a szódavíz nagyüzemi előállításához is készített berendezést.",
+     "think": "Mi a különbség a motor és a generátor között?",
+     "think_answer": "Szerkezetük hasonló, de fordítva működnek: a motor az elektromos energiát alakítja mozgássá, a generátor a mozgást elektromos energiává."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Fel és le a transzformátorral",
+     "body": "Az erőművek generátorai néhány ezer vagy tízezer voltot állítanak elő. Ezt transzformátorok emelik fel több százezer voltra, Magyarországon a legnagyobb távvezetékeken 400 000 V-ra, mert így kisebb árammal, kevesebb veszteséggel lehet szállítani. A települések közelében alállomások csökkentik a feszültséget, végül egy kis transzformátor 230 V-ra. A transzformátor csak váltakozó árammal működik, mert a változó mágneses tér kelt áramot a másik tekercsében.",
+     "did_you_know": "A transzformátorok halk zúgását a vasmagjuk rezgése okozza, amely a hálózati frekvencia kétszeresével, 100 Hz-cel rezeg.",
+     "think": "Miért nem működik a transzformátor egy elemről?",
+     "think_answer": "Az elem egyenáramot ad, amelynek mágneses tere nem változik. A transzformátor csak változó mágneses térrel tud áramot kelteni a másik tekercsben."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Hajszárító vs. router",
+     "body": "Hogy egy készülék mennyi energiát fogyaszt, az a teljesítményétől és a működési idejétől együtt függ. Egy 2 000 W-os hajszárító 5 perc alatt 2 000 W · 5/60 h ≈ 167 Wh energiát használ. Egy 10 W-os wifi-router viszont egész nap be van kapcsolva, így 10 W · 24 h = 240 Wh-t fogyaszt naponta. A kis teljesítményű, de mindig működő eszközök tehát többet fogyaszthatnak, mint a nagy teljesítményű, de ritkán használtak.",
+     "did_you_know": "Egy mindig bekapcsolt kis készülék egy nap alatt több energiát fogyaszthat, mint egy nagy teljesítményű, de csak percekig használt.",
+     "think": "Melyik fogyaszt több energiát: egy 800 W-os mikró 3 percig, vagy egy 5 W-os töltő 10 órán át?",
+     "think_answer": "A mikró 800 · 3/60 = 40 Wh-t, a töltő 5 · 10 = 50 Wh-t használ. A töltő fogyaszt többet."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mérd meg a mágneses teret a telefonoddal!",
+     "body": "A legtöbb okostelefonban van mágneses érzékelő, és egy mérőalkalmazással kiolvasható, mekkora a mágneses tér. A Föld mágneses tere Magyarországon kb. 50 mikrotesla. Egy hűtőmágnes közvetlen közelében ennek sokszorosát is mérheted, egy vasbeton épületben vagy egy autó belsejében pedig a mért érték és az irány is megváltozhat. A Föld mágneses tere a Napból érkező töltött részecskéket is eltéríti, és a sarkok közelében ezek keltik a sarki fényt.",
+     "did_you_know": "Sok vándormadár a Föld mágneses terét is használja az irányok érzékelésére.",
+     "think": "Miért téved néha a telefon iránytűje egy autóban vagy egy vasbeton épületben?",
+     "think_answer": "A fém karosszéria és a betonvas eltorzítja a Föld mágneses terét a telefon körül, így az érzékelő nem a valódi északi irányt méri."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Az elem nem kukába való",
+     "body": "Az elemekben és akkumulátorokban fémek, például cink, mangán, nikkel, lítium vagy kobalt vannak, amelyek a hulladéklerakóban a talajba juthatnak, pedig újrahasznosíthatók. Ezért az elemeket gyűjtőpontokon kell leadni; az elemeket árusító boltok többsége köteles visszavenni a használt elemeket. Egy újratölthető akkumulátort több száz alkalommal is fel lehet tölteni, így sok eldobható elemet vált ki. A lítiumos akkumulátorok sérülés vagy összenyomódás esetén kigyulladhatnak, ezért a szemétben tüzet is okozhatnak.",
+     "did_you_know": "A kukába dobott lítiumos akkumulátorok összenyomódva kigyulladhatnak, és így tüzet okozhatnak a hulladékszállító autókban.",
+     "think": "Miért jobb választás az újratölthető akkumulátor egy sokat használt távirányítóba vagy játékba?",
+     "think_answer": "Mert egyetlen akkumulátor több száz eldobható elemet válthat ki, így sokkal kevesebb hulladék keletkezik, és hosszú távon olcsóbb is."
+    }
+   ]
+  }
+ ]
+}
