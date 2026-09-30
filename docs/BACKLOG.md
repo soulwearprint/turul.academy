@@ -26,7 +26,7 @@ idea when a session gets archived." Added 2026-07-07._
   trivia). Automated checks still missed 2 subtle slips → **human review before rolling out
   to more topics.** To pull it: `UPDATE content_blocks SET is_active=false WHERE mode='deep'`.
 
-- **Visual-tab images (variant C) — PHYS-78-03 diagrams APPLIED 2026-09-29 (PR #2); 10 photos + 6 more own drawings APPLIED 2026-09-30; three lesson 2–3 cards keep their simple native sketches.**
+- **Visual-tab images (variant C) — PHYS-78-03 diagrams APPLIED 2026-09-29 (PR #2); 10 photos + 9 own drawings APPLIED 2026-09-30; every visual card of the four lessons now has an image.**
   Tier order: image/timeline (`card.image`, `card.timeline`) → in-house SVG (`card.diagram`, SketchDiagram
   shapes) → text placeholder. Images are self-hosted (never hotlinked), see the `content-media`
   Storage bucket / `content/media/staging/`.
@@ -42,7 +42,7 @@ idea when a session gets archived." Added 2026-07-07._
     candidates only, `--download` for human-approved ones) now honours `Retry-After` on HTTP 429 (5 tries, max 120 s wait);
     offline-tested only.
 
-  *Photos applied 2026-09-30, three batches* (`content/media/lesson_images_2026_09b.py --batch 1|2|3`, cards written through `edit_content_card`,
+  *Photos and drawings applied 2026-09-30, four batches* (`content/media/lesson_images_2026_09b.py --batch 1|2|3|4`, cards written through `edit_content_card`,
   so undoable from the review queue; files uploaded to `content-media`, sources/licences in `manifest.json`):
   Sebesség mérése (lesson 2; Hungarian radar speed display, CC BY-SA 3.0), Nehézségi erő (lesson 3; NASA feather+hammer
   on the Moon, PD), Önvezérelt autó / Légzsák / Biztonsági öv (lesson 4; lidar CC BY 2.0, crash test CC BY-SA 4.0,
@@ -50,10 +50,13 @@ idea when a session gets archived." Added 2026-07-07._
   Batch 3 (same day, on the owner's request): the tree-crash photo was **replaced by a crash-test photo** (a Corvette that went through a 35 mph ≈ 56 km/h head-on test, shown at an exhibition; JaseMan, CC BY 2.0; the old file `utkozes-fanak.webp` stays in Storage so the edit can be undone from the review queue) and the six remaining graph/screen cards got **own drawings** from `content/media/make_physics_diagrams_2.py`: Átlagsebesség (two-leg trip, 100 km : 2 h = 50 km/h), Sebesség és út kapcsolata (v–t graph, area = 200 m), Idő és távolság (120 km at four speeds), Newton 2. törvénye (same 2 N on 1 kg and 2 kg), and two phone-screen mock-ups, Közlekedéstervezés (route planner) and Mozgás elemzése applikációval (motion-analysis app). **The two phone screens are illustrative drawings, not screenshots of a real app**; they say so on the drawing and in the card text/caption, and their `visual_type` was changed from képernyőfotó/screenshot to „szemléltető rajz”. The card texts next to all of them are new Hungarian text written by the assistant — **not yet read by a teacher** (the owner said the teachers will review them later).
 
   *Not done:*
-  - Three lesson 2–3 cards still show only the simple native sketch (`card.diagram`, drawn by SketchDiagram), no photo or
-    finished drawing: Megtett út (lesson 2), Az elejtett test mozgása and Külső hatások az autó mozgásában (lesson 3). Their
-    stored description text describes a richer picture than the sketch shows, so a teacher should either accept the sketch or
-    ask for a redraw. Every other visual card of the four lessons now has an image; lesson 1 already had its images.
+  - Nothing is left text-only in the four lessons: batch 4 (same day, on the owner's "Go") redrew the last three cards that
+    showed only the plain native sketch, from `content/media/make_physics_diagrams_3.py`: Megtett út (car positions every 5 s
+    plus the s–t line, 100 m : 20 s = 5 m/s), Az elejtett test mozgása (free fall at g ≈ 9.8 m/s² sampled every 0.5 s: 1.2, 4.9,
+    11.0, 19.6 m and the growing speed) and Külső hatások az autó mozgásában (braking: force and acceleration opposite to the
+    motion; cornering: both point to the centre of the bend). Each card's text was rewritten to match the new picture. The old
+    `card.diagram` sketches are still in those cards' JSON (the image shows first); an undo from the review queue brings the
+    previous state back.
   - Sourcing from the cloud sandbox works only with **curl** at about one request per 40 s: Wikimedia returns 429 (Retry-After)
     when the shared cloud IP is busy, and 403 to Python `httpx` requests even when curl succeeds from the same IP. So
     `source_media.py` (httpx) fails in the cloud; from a normal machine it should work. Do not try to get around the rate limit.
@@ -61,7 +64,7 @@ idea when a session gets archived." Added 2026-07-07._
     like lesson 1's images. Decide whether to unify.
 
   *Still open / unverified:*
-  - **Human review of the 6 diagrams' physics** before the lessons go public (the deep-dive layer had 2 subtle errors
+  - **Human review of the physics of the 6 original diagrams and of the 9 newer own drawings** (batches 3 and 4) before the lessons go public (the deep-dive layer had 2 subtle errors
     that automated checks missed). The 6 `media_refs` rows are `approved` by default for authored diagrams — this is
     not the same as reviewed. The visual blocks of all 4 PHYS-78-03 lessons were `is_active=true` on 2026-09-30, so the diagrams and the new photos are publicly visible now.
   - Rendering after PR #2's merge (which unified on `card.image`/`card.timeline`/`card.diagram`) was not re-checked in the
