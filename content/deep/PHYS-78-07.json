@@ -1,0 +1,310 @@
+{
+ "nat_id": "PHYS-78-07",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "dd2abafe-bf63-4d93-a1c1-c44dee9962cd",
+   "title_hu": "A fény terjedése és visszaverődése",
+   "text_block_id": "00044856-36c3-407f-953e-99eb09732af8",
+   "n_text": 7,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Nyolcperces késés",
+     "body": "A fény vákuumban kb. 300 000 km/s sebességgel terjed, ezért a hétköznapokban azonnalinak tűnik. A Nap fénye azonban kb. 8 perc 20 másodperc alatt ér ide, vagyis a Napot mindig olyannak látjuk, amilyen 8 perccel korábban volt. A lézersugarat tiszta levegőben oldalról nem látjuk: csak akkor válik láthatóvá, ha por, füst vagy pára szórja a szemünk felé. A fényt tehát csak akkor látjuk, ha a szemünkbe jut.",
+     "did_you_know": "Ha a Nap hirtelen kialudna, még kb. 8 percig nem vennénk észre.",
+     "think": "Miért nem látszik a lézersugár tiszta levegőben, de füstben igen?",
+     "think_answer": "A fényt csak akkor látjuk, ha a szemünkbe jut. Füstben a részecskék minden irányba szórják a fényt, így egy része felénk is jut."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Miért nem tükör a papírlap?",
+     "body": "A papír is visszaveri a fényt, különben nem látnánk. A felülete azonban mikroszkopikusan egyenetlen, ezért a fényt minden irányba szétszórja: ez a szórt visszaverődés. Ezért látjuk a papírt bármilyen irányból, de a tükörképünket nem látjuk benne. A tükör felülete annyira sima, hogy a párhuzamos sugarak párhuzamosan is verődnek vissza, így megőrzi a képet.",
+     "did_you_know": "Az Apollo-űrhajósok a Holdon fényvisszaverőket hagytak; ezekről ma is visszaverődik a Földről küldött lézerfény, így centiméteres pontossággal mérhető a Hold távolsága.",
+     "think": "Miért vakít a vizes úttest éjjel a szembejövő fényszórók fényében, a száraz pedig nem?",
+     "think_answer": "A víz sima réteget képez, amely tükörként szabályosan veri vissza a fényt a szemünkbe. A száraz, érdes aszfalt szórja a fényt, így kevesebb jut egyenesen a szemünkbe."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A tükör nem cseréli fel a jobbat és a balt",
+     "body": "Úgy tűnik, a tükör felcseréli a jobbat és a balt, de valójában az elejét és a hátát cseréli fel: ami közelebb van a tükörhöz, az a képen is közelebb van. A tükörkép ugyanolyan messze látszik a tükör mögött, mint amilyen messze te állsz előtte. Érdekes, hogy ahhoz, hogy tetőtől talpig lásd magad, elég egy fele akkora magas tükör, mint te vagy, és ez nem függ attól, milyen messze állsz tőle.",
+     "did_you_know": "Ahhoz, hogy egészében lásd magad egy síktükörben, a tükörnek csak feleakkora magasnak kell lennie, mint neked, bármilyen távolról nézed.",
+     "think": "Miért írják sok országban a mentőautók elejére tükörírással a feliratot?",
+     "think_answer": "Mert az előttük haladó autós a visszapillantó tükörben nézi. A tükör megfordítja az írást, így ott olvashatóan jelenik meg."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Teljes árnyék és félárnyék",
+     "body": "Egy pontszerű fényforrás, például egy kis LED éles szélű árnyékot ad. Egy nagyobb kiterjedésű fényforrás árnyékának közepén teljes árnyék, a szélén pedig félárnyék alakul ki, ahová a fényforrásnak csak egy része lát be. Az árnyék hossza a Nap magasságától függ, ezért délben a legrövidebb. Eratoszthenész görög tudós Kr. e. a 3. században két város árnyékhosszainak különbségéből a Föld kerületét is kiszámolta.",
+     "did_you_know": "Eratoszthenész Kr. e. a 3. században pusztán árnyékok mérésével meglepően jól megbecsülte a Föld kerületét.",
+     "think": "Miért délben a legrövidebb az árnyékod?",
+     "think_answer": "Délben jár a legmagasabban a Nap, ezért a fénye a legmeredekebben érkezik, és így a legrövidebb árnyékot veti."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A 400-as véletlen",
+     "body": "A Nap átmérője kb. 400-szor nagyobb a Holdénál, de kb. 400-szor messzebb is van. Ezért az égen majdnem ugyanakkorának látszanak, és a Hold éppen el tudja takarni a Napot teljes napfogyatkozáskor. Nem minden hónapban van fogyatkozás, mert a Hold pályája kb. 5 fokkal megdől a Föld pályájához képest, így többnyire a Nap és a Föld vonala fölött vagy alatt halad el. Holdfogyatkozáskor a Hold vörös színű lesz, mert a Föld légköre a napfény vörös részét megtöri és az árnyékba tereli.",
+     "did_you_know": "Teljes holdfogyatkozáskor a Hold vöröses színű, mert a Föld légköre a vörös fényt a Föld árnyékába téríti.",
+     "think": "Miért nincs minden újholdkor napfogyatkozás?",
+     "think_answer": "Mert a Hold pályája kissé meg van döntve a Föld pályájához képest, így újholdkor általában a Nap és a Föld vonala fölött vagy alatt halad el."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Az agy is lát",
+     "body": "A látás nemcsak a szem munkája: az agy értelmezi a képet, és ehhez feltevéseket használ. Ezért tűnhet két egyforma hosszú vonal különböző hosszúnak, ha a végükön befelé vagy kifelé mutató nyilak vannak. A mozgókép is illúzió: a film másodpercenként 24 állóképet vetít, az agyunk pedig folyamatos mozgásnak érzékeli. Az ilyen jelenségek megmutatják, hogy amit látunk, az részben az agyunk „számítása”.",
+     "did_you_know": "A mozifilmek hagyományosan másodpercenként 24 képkockát vetítenek, és az agyunk ezt folyamatos mozgásként érzékeli.",
+     "think": "Miért látsz egy ideig színes foltot, ha sokáig nézel egy erős színt, majd egy fehér falra?",
+     "think_answer": "A szem színérzékelő sejtjei elfáradnak az erős színtől, ezért a fehér falon a kiegészítő szín ellentétes foltját látod egy darabig."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Három szín a képernyőn",
+     "body": "A telefon kijelzője apró képpontokból áll, és minden képpont három még kisebb részből: vörösből, zöldből és kékből. Ezek különböző erősséggel világítanak, és az agyunk a keverékükből érzékeli a színeket. Ha például a vörös és a zöld együtt világít, sárgát látunk, pedig sárga fény egyáltalán nem jön a képernyőről. Ha egy csepp vizet teszel a kijelzőre, a csepp nagyítóként működik, és láthatóvá teszi a színes pontokat.",
+     "did_you_know": "Egy vízcsepp a telefon kijelzőjén apró nagyítóként működik, és láthatóvá teszi a vörös, zöld és kék képpontokat.",
+     "think": "Hogyan jelenít meg a képernyő fehér színt, ha csak vörös, zöld és kék képpontjai vannak?",
+     "think_answer": "Ha mindhárom színű képpont erősen világít, a szemünk és az agyunk a keveréküket fehérnek érzékeli."
+    }
+   ]
+  },
+  {
+   "lesson_id": "7de2eea2-0464-4299-95a7-b72c892deef2",
+   "title_hu": "Fényforrások és tulajdonságaik",
+   "text_block_id": "76d3f923-8341-4e9b-8e4f-529001344905",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "A Hold nem fényforrás",
+     "body": "Fényforrásnak csak az számít, ami maga bocsát ki fényt; a Hold nem ilyen, csak a Nap fényét veri vissza. A fényforrások különböző elven működnek: a hagyományos izzóban a forró fémszál izzik, a LED-ben egy félvezetőben mozgó elektronok bocsátanak ki fényt. A fénycsőben a gázban keletkező láthatatlan ultraibolya sugárzás a cső belső bevonatát világításra készteti. Egyes élőlények, például a szentjánosbogár, kémiai úton állítanak elő fényt.",
+     "did_you_know": "A fénycső belsejében először láthatatlan ultraibolya sugárzás keletkezik, és a cső fehér bevonata ezt alakítja látható fénnyé.",
+     "think": "Fényforrás-e a Hold? És a telefon kijelzője?",
+     "think_answer": "A Hold nem, mert csak visszaveri a Nap fényét. A bekapcsolt telefon kijelzője viszont igen, mert maga bocsát ki fényt."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Watt helyett lumen",
+     "body": "A lámpák fényének mennyiségét lumenben (lm) adják meg, nem wattban, mert a watt csak azt mutatja, mennyi energiát fogyaszt a lámpa. Egy régi 60 W-os izzó kb. 800 lm fényt adott, ugyanennyit egy mai LED kb. 8-9 W-ból ad. A fény színét kelvinben jellemzik: a meleg fehér kb. 2 700 K, a hideg fehér kb. 6 500 K. Az esti hideg, kékes fény zavarhatja az elalvást, mert jelzi a testnek, hogy még nappal van.",
+     "did_you_know": "Az esti erős, kékes fény csökkentheti az alvást segítő hormon termelődését, ezért az esti meleg fény jobb az elalváshoz.",
+     "think": "Miért érdemes lámpa vásárlásakor a lumen értéket nézni, nem a wattot?",
+     "think_answer": "A lumen azt mutatja meg, mennyi fényt ad a lámpa, a watt pedig csak azt, mennyi energiát fogyaszt. Egy LED kevés watt mellett is sok lument ad."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Kétszer messzebb, negyedannyi fény",
+     "body": "Egy kis fényforrás fénye minden irányba szétterjed, ezért minél távolabb vagyunk tőle, annál nagyobb felületen oszlik el. Kétszer akkora távolságban a fény négyszer akkora felületre jut, ezért ott csak negyedannyi fény esik egy adott helyre. Ezért olyan fontos, hogy az olvasólámpa közel legyen a könyvhöz. A spotlámpák és a zseblámpák tükrökkel és lencsékkel egy irányba terelik a fényt, így messzebbre is elég fényt juttatnak.",
+     "did_you_know": "A világítótornyok különleges, lépcsőzetes lencséi a lámpa fényét keskeny nyalábbá gyűjtik, ezért látszanak sok kilométerről.",
+     "think": "Hányszor kevesebb fény jut a könyvre, ha a lámpát háromszor messzebbre teszed tőle?",
+     "think_answer": "A fény háromszor akkora távolságban kilencszer akkora felületen oszlik el, ezért kilencedannyi fény jut a könyvre."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Lumen wattonként",
+     "body": "A fényforrások hatékonyságát azzal mérik, hány lument adnak egy watt teljesítményből. A hagyományos izzó kb. 10-15 lm/W-ot, a mai LED-ek több mint 100 lm/W-ot is elérnek. Egy osztályteremben, ahol 20 lámpa naponta 6 órát ég, ha mindegyik 18 W-tal kevesebbet fogyaszt, egy 180 napos tanév alatt 20 · 18 W · 6 h · 180 ≈ 389 kWh energia takarítható meg. Egy egész iskolában ez már jelentős összeg.",
+     "did_you_know": "A mai LED-ek egy watt teljesítményből nagyjából tízszer annyi fényt adnak, mint a hagyományos izzók.",
+     "think": "Miért éri meg drágább LED-lámpát venni, ha olcsóbb izzó is kapható?",
+     "think_answer": "A LED sokkal kevesebb energiát fogyaszt, és sokkal tovább is tart, így a vásárláskor kifizetett többletet a kisebb villanyszámla és a ritkább csere hosszú távon visszahozza."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Tíz év egy izzóval",
+     "body": "Egy 25 000 órás élettartamú LED-lámpa napi 7 órás használattal kb. tíz évig működhet. A hagyományos izzók élettartama kb. 1 000 óra volt. Ez nem csak műszaki okokból volt így: az 1920-as években a legnagyobb izzógyártók megállapodtak, hogy az izzók élettartamát kb. 1 000 órára korlátozzák, hogy többet adhassanak el. Egy kaliforniai tűzoltóságon viszont egy kis teljesítményű izzó 1901 óta szinte folyamatosan ég.",
+     "did_you_know": "Egy kaliforniai tűzoltóság izzója 1901 óta szinte megszakítás nélkül világít.",
+     "think": "Mi a hátránya annak, ha egy terméket szándékosan rövid élettartamúra terveznek?",
+     "think_answer": "A vásárlóknak gyakrabban kell újat venniük, ami több költséget és több hulladékot jelent."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Lux: fény a padon",
+     "body": "A megvilágítás erősségét luxban mérik, és sok telefonos alkalmazás is ki tudja olvasni a telefon fényérzékelőjéből. Egy osztályteremben a padokon ajánlott kb. 500 lux, egy napsütéses nyári napon a szabadban viszont akár 100 000 lux is lehet. A szemünk mégis mindkét helyen jól lát, mert a pupilla szűkül és tágul, és a szem érzékenysége is alkalmazkodik. Ezért nem vesszük észre, mennyivel sötétebb egy terem, mint a napos udvar.",
+     "did_you_know": "A napos udvar akár kétszázszor világosabb lehet, mint egy jól megvilágított osztályterem, a szemünk mégis alkalmazkodik mindkettőhöz.",
+     "think": "Miért nem látsz semmit néhány percig, amikor napsütésből belépsz egy sötét terembe?",
+     "think_answer": "A szemed a nagy fényhez alkalmazkodott, és időbe telik, amíg a pupilla kitágul és a szem érzékenysége a sötéthez igazodik."
+    }
+   ]
+  },
+  {
+   "lesson_id": "1f0e7c54-c3a0-4120-af07-3012b80e1b35",
+   "title_hu": "Fénytörés és lencsék",
+   "text_block_id": "12eb0946-1bca-462a-a9df-10129685d79f",
+   "n_text": 8,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Lassabban a vízben",
+     "body": "A fény vízben kb. 225 000 km/s, gyémántban csak kb. 124 000 km/s sebességgel halad. Amikor ferdén lép át egyik anyagból a másikba, és a sebessége megváltozik, az iránya is megváltozik. A Snellius–Descartes-törvény azt írja le, hogyan függ a törés szöge a két anyag törésmutatójától. Ezért tűnik a medence a valóságosnál sekélyebbnek: nagyjából a valódi mélysége háromnegyedének.",
+     "did_you_know": "A medence vize kb. negyedével sekélyebbnek látszik, mint amilyen valójában.",
+     "think": "Miért kell a hal alá célozni, ha szigonnyal akarjuk eltalálni a vízben?",
+     "think_answer": "A halról jövő fény a vízfelszínen megtörik, ezért a halat magasabban látjuk, mint ahol valójában van."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Hogyan nagyít a nagyító?",
+     "body": "A nagyító gyűjtőlencse, de nagyításkor a tárgyat a fókusztávolságán belül tartjuk. Ilyenkor a lencse nem valódi képet alkot, hanem úgy téríti el a fénysugarakat, mintha egy nagyobb, egyenes állású tárgyról jönnének, ezt látszólagos képnek hívjuk. Ha viszont a Nap párhuzamos sugarait gyűjtjük vele, azok a fókuszpontban egyesülnek, ott akár papírt is meggyújthatnak. Ezzel egyszerűen megmérheted a nagyító fókusztávolságát: az a távolság, ahol a napfény a legkisebb foltba gyűlik.",
+     "did_you_know": "Megfelelően csiszolt, tiszta jégből készült lencsével is lehet tüzet gyújtani a napfénnyel.",
+     "think": "Hogyan mérnéd meg egy nagyító fókusztávolságát egy napos napon?",
+     "think_answer": "Gyűjtsd a napfényt a lencsével egy papírra, és keresd meg, milyen távolságban a legkisebb és legfényesebb a folt. A lencse és a papír távolsága a fókusztávolság."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A kukucskáló titka",
+     "body": "A szórólencse a párhuzamos fénysugarakat széttartóvá teszi, ezért önmagában nem tud ernyőn képet alkotni. Rajta keresztül nézve a tárgyak kisebbnek és egyenes állásúnak látszanak, a látszólagos kép a tárggyal azonos oldalon keletkezik. Ezt használja az ajtók kukucskálója, amely széles látószöget ad a lépcsőházra. A rövidlátók szemüvege is szórólencse, a projektorok viszont gyűjtőlencsével vetítik a képet a vászonra.",
+     "did_you_know": "Az ajtók kukucskálójában lévő szórólencse miatt kívülről nézve szinte semmi sem látszik a lakásból, belülről viszont az egész folyosó.",
+     "think": "Hogyan döntheted el, hogy egy szemüveg rövidlátónak vagy távollátónak készült?",
+     "think_answer": "Nézz át rajta egy távoli tárgyra: ha kisebbnek látszik, szórólencse, vagyis rövidlátóknak való. Ha nagyobbnak, gyűjtőlencse, távollátóknak."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Dioptria: a lencse ereje",
+     "body": "A szemüvegek erősségét dioptriában adják meg, ami a fókusztávolság reciproka méterben: egy 0,5 m fókusztávolságú lencse +2 dioptriás. A gyűjtőlencsék dioptriája pozitív, a szórólencséké negatív. Minél kisebb a fókusztávolság, annál erősebb a lencse. A szemünk lencséje is változtatja a fókusztávolságát: a közeli tárgyak nézésekor egy izom domborúbbá teszi, ezt alkalmazkodásnak nevezzük.",
+     "did_you_know": "Az emberi szem teljes fénytörő képessége kb. 60 dioptria, ennek nagyobb részét a szaruhártya adja, nem a szemlencse.",
+     "think": "Mekkora a fókusztávolsága egy +4 dioptriás olvasószemüvegnek?",
+     "think_answer": "A fókusztávolság a dioptria reciproka: 1 : 4 = 0,25 m, vagyis 25 cm."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Nagyítás egy vízcseppel",
+     "body": "Egy nagyító annál nagyobbat nagyít, minél kisebb a fókusztávolsága: nagyjából a 25 cm-es kényelmes olvasási távolság és a fókusztávolság hányadosa adja a nagyítást. Egy 5 cm fókusztávolságú nagyító így kb. ötszörös nagyítást ad. Egy kis vízcsepp nagyon domború, ezért nagyon rövid a fókusztávolsága, így erős nagyítóként működik. Egy átlátszó fóliára cseppentett vízcsepp alatt az újság betűi láthatóan megnőnek.",
+     "did_you_know": "Egy vízcsepp is lehet lencse: minél kisebb és domborúbb, annál jobban nagyít.",
+     "think": "Mekkora nagyítást ad egy 10 cm fókusztávolságú nagyító?",
+     "think_answer": "Nagyjából 25 cm : 10 cm = 2,5-szerest."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Lyuk, lencse nélkül",
+     "body": "A camera obscurában nincs lencse, ezért ott nincs fénytörés sem: a kép a fény egyenes vonalú terjedése miatt keletkezik. A tárgy felső pontjáról a lyukon át egyenesen haladó fény a doboz hátsó falának alsó részére érkezik, az alsóról a felsőre, ezért a kép fordított. Minél kisebb a lyuk, annál élesebb, de annál halványabb a kép. A mai fényképezőgép a lyuk helyére lencsét tesz, így éles és világos képet is kaphat.",
+     "did_you_know": "Részleges napfogyatkozáskor a fa lombjának résein át a talajra vetülő fényfoltok sarló alakúak, mert minden rés kis camera obscuraként működik.",
+     "think": "Miért élesebb, de halványabb a camera obscura képe, ha kisebb a lyuk?",
+     "think_answer": "Kis lyukon át a tárgy minden pontjáról csak egy keskeny fénynyaláb jut be, így a foltok nem mosódnak össze, de kevesebb fény is érkezik."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Fénycsapda: teljes visszaverődés",
+     "body": "Ha a fény vízből vagy üvegből nagyon laposan érkezik a felszínhez, nem tud kilépni a levegőbe, hanem teljesen visszaverődik. Ezt nevezzük teljes visszaverődésnek. Az optikai szálakban a fény így, a szál falán újra és újra visszaverődve jut el akár több száz kilométerre. Az internet adatainak nagy része ilyen vékony üvegszálakon, fényimpulzusok formájában utazik.",
+     "did_you_know": "Az internet adatainak nagy része hajszálvékony üvegszálakban fényimpulzusként utazik, a teljes visszaverődésnek köszönhetően.",
+     "think": "Miért látszik a parton állónak a vízben úszó hal magasabban, mint ahol valójában van?",
+     "think_answer": "A halról jövő fény a vízfelszínen megtörik, és a szemünk az egyenes vonalban visszakövetett, magasabb helyen látja a halat."
+    },
+    {
+     "type": "deep",
+     "anchor": 7,
+     "heading": "Fordított kép a szemedben",
+     "body": "Ha egy gyűjtőlencse elé a fókusztávolságánál messzebb teszel egy tárgyat, az ernyőn fordított, valódi kép keletkezik. Ha a tárgy nagyon messze van, a kép kicsi és a fókuszpont közelében jön létre; ha a tárgyat a kétszeres fókusztávolságba teszed, a kép ugyanakkora lesz. Ha a tárgy a fókusztávolságon belülre kerül, az ernyőn nem keletkezik kép, ilyenkor a lencse már nagyítóként működik. A szemünk is így működik: a retinán fordított kép keletkezik, amelyet az agy fordít meg.",
+     "did_you_know": "A retinán a kép fejjel lefelé keletkezik, az agyunk értelmezi úgy, hogy egyenesen lássuk a világot.",
+     "think": "Mi történik a lencse által ernyőre vetített képpel, ha a tárgyat egyre közelebb viszed a lencséhez, de még a fókusztávolságon kívül marad?",
+     "think_answer": "A kép egyre nagyobb lesz, és egyre távolabb keletkezik a lencsétől, ezért az ernyőt is hátrébb kell vinni."
+    }
+   ]
+  },
+  {
+   "lesson_id": "bfb509b6-e764-4a44-b5dc-9bff3db181bd",
+   "title_hu": "Látás és optikai eszközök",
+   "text_block_id": "81860269-75fd-4874-b970-d3f1d6c7260b",
+   "n_text": 9,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "A vakfolt",
+     "body": "A retinán több mint százmillió fényérzékelő sejt van: a pálcikák a gyenge fényt, a csapok a színeket érzékelik. Azon a helyen azonban, ahol a látóideg elhagyja a szemet, nincsenek érzékelő sejtek, ez a vakfolt. Mégsem látunk lyukat a képben, mert az agy kitölti a hiányt a környezet alapján, és a két szem vakfoltja más-más helyre esik. Egy egyszerű teszttel megtalálhatod a saját vakfoltodat.",
+     "did_you_know": "Rajzolj egy papírra egymástól kb. 8 cm-re egy keresztet és egy pöttyöt; bal szemedet befogva nézd a keresztet a jobbal, és közelítsd a lapot: egy adott távolságban a pötty eltűnik.",
+     "think": "Miért nem veszünk észre egy lyukat a látott képben a vakfolt miatt?",
+     "think_answer": "Mert az agy a környező kép alapján kitölti a hiányzó részt, és a két szem vakfoltja más helyre esik, így az egyik szem pótolja a másik hiányát."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Több idő a szabadban",
+     "body": "A rövidlátás a gyerekek körében világszerte egyre gyakoribb. A kutatások szerint a szabadban töltött idő csökkentheti a kialakulásának kockázatát, valószínűleg a természetes fény és a távoli tárgyak nézése miatt. A rövidlátó szemében a fény a retina előtt fókuszálódik, ezért a közeli tárgyakat élesen, a távoliakat homályosan látja. A távollátónál a fókusz a retina mögé esne, ezért a közelre nézéshez a szemlencsének extra erőfeszítést kell tennie.",
+     "did_you_know": "A kutatások szerint a szabadban töltött idő csökkenti a rövidlátás kialakulásának esélyét gyerekkorban.",
+     "think": "Miért látja jól a rövidlátó ember a közeli tárgyakat?",
+     "think_answer": "A közeli tárgyakról érkező széttartó fénysugarakat a túl hosszú szemgolyó éppen a retinára fókuszálja, így ezek éles képet adnak."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A képernyő és a pislogás",
+     "body": "A képernyők kék fényéről nincs bizonyíték, hogy károsítaná a szemet. A szem fáradását inkább az okozza, hogy sokáig ugyanarra a közeli távolságra fókuszálunk, és képernyő nézése közben sokkal ritkábban pislogunk, ezért kiszárad a szemünk. Segít a 20-20-20 szabály: 20 percenként nézz 20 másodpercig kb. 6 méternél (20 lábnál) távolabbra. Az esti erős képernyőfény viszont az elalvást megnehezítheti.",
+     "did_you_know": "Képernyő nézése közben sokkal ritkábban pislogunk, mint beszélgetés közben, ezért kiszárad a szemünk.",
+     "think": "Miért segít, ha tanulás közben időnként kinézel az ablakon a távolba?",
+     "think_answer": "Mert a szemlencsét beállító izom ilyenkor ellazul, és a pislogás is visszaáll, így a szem kipihenheti magát."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Egy lencse, sok baktérium",
+     "body": "Antoni van Leeuwenhoek holland posztókereskedő az 1670-es években egyetlen apró, gondosan csiszolt lencséjű mikroszkópokkal elsőként figyelt meg baktériumokat. A mai iskolai fénymikroszkópok legfeljebb kb. 1 000-szeres nagyítást adnak. Ennél nagyobbat fénnyel nem érdemes, mert a fény hullámtermészete miatt a kb. 0,2 mikrométernél kisebb részletek már nem választhatók szét. A vírusokat ezért csak elektronmikroszkóppal lehet látni.",
+     "did_you_know": "A vírusok többsége kisebb, mint amit fénymikroszkóppal még meg lehet különböztetni, ezért csak elektronmikroszkóppal láthatók.",
+     "think": "Miért nem lehet fénymikroszkóppal vírusokat látni, akármilyen erős lencsét használunk?",
+     "think_answer": "A fény hullámtermészete miatt a fénymikroszkóp egy bizonyos méretnél kisebb részleteket nem tud szétválasztani, a vírusok pedig ennél kisebbek."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Mit jelent a 8×42?",
+     "body": "A látcsöveken lévő két szám, például a 8×42, a nagyítást és az objektívlencse átmérőjét adja meg: nyolcszoros nagyítás, 42 mm-es lencse. A nagyobb lencse több fényt gyűjt: egy 42 mm-es objektív kb. 36-szor akkora felületű, mint a sötétben kitágult, kb. 7 mm-es pupilla. Ezért lehet szürkületben is jól látni vele. Galilei 1610-ben egy egyszerű távcsővel fedezte fel a Jupiter négy legnagyobb holdját.",
+     "did_you_know": "Galilei 1610-ben saját készítésű távcsővel fedezte fel a Jupiter négy legnagyobb holdját.",
+     "think": "Miért lát jobban szürkületben egy 10×50-es látcső, mint egy 10×25-ös?",
+     "think_answer": "Mert a nagyobb, 50 mm-es objektívlencse négyszer akkora felületű, így sokkal több fényt gyűjt."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Nagyítás szorzással",
+     "body": "A mikroszkóp teljes nagyítása az objektív és az okulár nagyításának szorzata: egy 40-szeres objektív és egy 10-szeres okulár együtt 400-szoros nagyítást ad. A durva élességállító csavarral a tárgyasztalt nagyobb, a finommal kisebb lépésekben mozgatjuk. Nagy nagyításnál a legerősebb objektívek egy csepp olajba merülnek a tárgylemezen, hogy a fény kevésbé törjön meg, és élesebb legyen a kép.",
+     "did_you_know": "A legerősebb mikroszkóp-objektíveket egy csepp speciális olajba merítik, hogy élesebb képet adjanak.",
+     "think": "Mekkora a nagyítás, ha 10-szeres okulárt és 100-szoros objektívet használsz?",
+     "think_answer": "A két nagyítás szorzata: 10 · 100 = 1 000-szeres nagyítás."
+    },
+    {
+     "type": "deep",
+     "anchor": 6,
+     "heading": "Olvasószemüveg nagyinak",
+     "body": "A rövidlátást mínusz dioptriás szórólencsével, a távollátást plusz dioptriás gyűjtőlencsével javítják. Az idősebb korban jelentkező olvasási nehézség azonban nem ugyanaz, mint a távollátás. A szemlencse az életkorral merevebb lesz, ezért nem tud eléggé domborodni a közeli tárgyak nézéséhez. Ezt a legtöbb embernek 40-45 éves kor körül olvasószemüveggel kell pótolnia.",
+     "did_you_know": "A szemlencse az életkorral merevebb lesz, ezért a legtöbb embernek 40-45 éves kor körül olvasószemüvegre lesz szüksége.",
+     "think": "Miért tartja a nagymamád messzebbre az újságot, ha szemüveg nélkül olvas?",
+     "think_answer": "A szemlencséje már nem tud eléggé domborodni a közeli tárgyakhoz, ezért messzebbről élesebben látja a betűket."
+    },
+    {
+     "type": "deep",
+     "anchor": 7,
+     "heading": "Miért tükör a nagy távcsövekben?",
+     "body": "A nagy csillagászati távcsövekben lencse helyett homorú tükör gyűjti a fényt. Az első ilyen távcsövet Isaac Newton építette 1668-ban. Nagy lencsét nehéz hibátlanul önteni, a saját súlya alatt meg is hajlik, a tükröt viszont hátulról meg lehet támasztani. A James Webb űrtávcső tükre 6,5 m átmérőjű, és 18 aranybevonatú darabból áll.",
+     "did_you_know": "A James Webb űrtávcső 6,5 m-es főtükre 18 aranyozott szegmensből áll, amelyek az űrben nyíltak ki.",
+     "think": "Miért nem lehet egy nagy csillagászati távcsőbe egyszerűen egy óriási lencsét tenni?",
+     "think_answer": "A nagy lencsét nehéz hibátlanul elkészíteni, és csak a szélén lehet megtámasztani, ezért a saját súlya alatt meghajlik, és eltorzítja a képet."
+    },
+    {
+     "type": "deep",
+     "anchor": 8,
+     "heading": "Fejjel lefelé a Hold",
+     "body": "Egy egyszerű csillagászati távcső fordított képet ad: az objektív valódi, fordított képet alkot, az okulár pedig ezt nagyítja. A Hold vagy a csillagok nézésekor ez nem zavar. A látcsövekben ezért prizmák vannak, amelyek visszafordítják a képet, így a madarakat nem fejjel lefelé látjuk. A távcső nagyítása az objektív és az okulár fókusztávolságának hányadosa: egy 900 mm-es objektívvel és 10 mm-es okulárral 90-szeres.",
+     "did_you_know": "A látcsövek vaskos alakja a benne lévő prizmák miatt van, amelyek a képet megfordítják.",
+     "think": "Mekkora nagyítást ad egy 1 000 mm fókusztávolságú objektív és egy 20 mm-es okulár?",
+     "think_answer": "A nagyítás a két fókusztávolság hányadosa: 1 000 : 20 = 50-szeres."
+    }
+   ]
+  }
+ ]
+}
