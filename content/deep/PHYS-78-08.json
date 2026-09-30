@@ -1,0 +1,194 @@
+{
+ "nat_id": "PHYS-78-08",
+ "snapshot_exported_at": "2026-09-29T14:28:11+00:00",
+ "written_at": "2026-09-30",
+ "written_by": "cloud audit session (no OpenRouter); facts checked while writing",
+ "lessons": [
+  {
+   "lesson_id": "bcefb295-dbe0-433a-9277-49d2a02e2a80",
+   "title_hu": "Mechanikai hullámok és állóhullámok",
+   "text_block_id": "61a1b4bd-ff37-4f91-8862-221d3292d5cb",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Csomópontok és duzzadóhelyek",
+     "body": "Az állóhullámban vannak pontok, amelyek egyáltalán nem mozognak (csomópontok), és vannak, amelyek a legnagyobbat rezegnek (duzzadóhelyek). Két végén rögzített húron csak olyan hullámok maradhatnak meg, amelyeknek a fél hullámhossza egész számszor belefér a húr hosszába. Ezért szól minden húr csak bizonyos hangmagasságokon. Ha a gitáron lefogsz egy húrt, rövidebb lesz a rezgő rész, rövidebb a hullámhossz, és magasabb a hang.",
+     "did_you_know": "Ha egy gitárhúrt pontosan a közepén csak finoman megérintesz, és úgy pengeted meg, egy oktávval magasabb, csengő hangot kapsz, ezt flageolett-hangnak hívják.",
+     "think": "Miért szól magasabban a gitárhúr, ha lefogod?",
+     "think_answer": "Rövidebb lesz a rezgő szakasz, így rövidebb hullámhosszú állóhullám fér el rajta. Ugyanakkora terjedési sebesség mellett ehhez nagyobb rezgésszám, vagyis magasabb hang tartozik."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "17 métertől 1,7 centiméterig",
+     "body": "A hullámhossz, a frekvencia és a sebesség összefügg: v = λ · f. Levegőben a hang kb. 340 m/s sebességgel terjed, így a legmélyebb hallható hang (20 Hz) hullámhossza kb. 17 m, a legmagasabbé (20 000 Hz) pedig kb. 1,7 cm. Ugyanakkora sebesség mellett tehát a magasabb frekvenciához rövidebb hullámhossz tartozik. A mély hangok nagy hullámhosszuk miatt könnyebben kerülik meg az akadályokat, ezért halljuk a szomszéd buli basszusát a falon át is.",
+     "did_you_know": "A szomszéd zenéjéből a falon át leginkább a basszus hallatszik, mert a mély hangok nagy hullámhosszuk miatt jobban megkerülik és átjárják az akadályokat.",
+     "think": "Mekkora a 440 Hz-es „a” hang hullámhossza a levegőben?",
+     "think_answer": "λ = v : f = 340 : 440 ≈ 0,77 m, vagyis kb. 77 cm."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "A hullám energiát visz, nem vizet",
+     "body": "A hullám nem az anyagot szállítja, hanem a rezgés állapotát és az energiát. A vízen ringatózó kacsa a hullám áthaladásakor fel-le és kicsit előre-hátra mozog, de a helyén marad. A stadionban a „mexikói hullám” is így működik: az emberek csak felállnak és leülnek, a hullám mégis körbefut. A telefon wifije is hullám: a 2,4 GHz-es jel hullámhossza kb. 12,5 cm.",
+     "did_you_know": "A 2,4 GHz-es wifi-jel hullámhossza kb. 12,5 cm, nagyjából egy tenyérnyi.",
+     "think": "Miért nem viszi el a hullám a vízen ringatózó falevelet?",
+     "think_answer": "Mert a hullám a vízrészecskéket csak helyben rezegteti, fel-le és kicsit előre-hátra, a víz maga nem áramlik a hullámmal együtt."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Egy, két, három hurok",
+     "body": "Ha egy kötél egyik végét rögzíted, a másikat pedig egyenletesen rázod, bizonyos rázási ütemeknél szép állóhullám alakul ki: először egy nagy hurok, kétszeres ütemnél két hurok, háromszorosnál három. Közöttük a kötél csak zavarosan vonaglik. Ha jobban megfeszíted a kötelet, a hullám gyorsabban terjed rajta, ezért ugyanahhoz a hurokszámhoz gyorsabban kell rázni. A gitárhúrokat is így hangolják: a feszítéssel változtatják a hangmagasságot.",
+     "did_you_know": "Ha egy fémlapra homokot szórunk, és vonóval rezgésbe hozzuk, a homok a csomóvonalakra gyűlik, és szép mintákat rajzol ki.",
+     "think": "Miért magasabb a gitárhúr hangja, ha jobban megfeszíted?",
+     "think_answer": "A feszesebb húron gyorsabban terjed a hullám. Ugyanakkora húrhossz mellett így nagyobb lesz a rezgésszám, vagyis magasabb a hang."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A mélység diktálja a tempót",
+     "body": "A sekély vízben haladó hullámok sebessége a víz mélységétől függ: minél mélyebb a víz, annál gyorsabbak. 1 m mély vízben egy hosszú hullám kb. 3 m/s-mal halad, a 4 000 m mély óceánban viszont kb. 200 m/s-mal, ami kb. 700 km/h, egy repülőgép sebessége. A part felé a víz sekélyedik, a hullám lelassul. Ezért fordulnak a hullámok a part felé, és érkeznek szinte párhuzamosan a strandhoz.",
+     "did_you_know": "A hullámok a sekélyebb víz felé elfordulnak, ezért a strandon szinte mindig párhuzamosan érkeznek a parttal.",
+     "think": "Miért érkeznek a hullámok szinte mindig párhuzamosan a parttal, akármilyen irányból fúj a szél?",
+     "think_answer": "A part felé sekélyedő vízben a hullámnak az a része, amelyik már sekélyebb vízben van, lelassul. Ettől a hullámfront elfordul, amíg párhuzamos nem lesz a parttal."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Amikor visszahúzódik a tenger",
+     "body": "A nyílt óceánon a cunami alig egy méter magas, de a hullámhossza akár 100 km-nél is hosszabb, ezért a hajók észre sem veszik. A part közelében a víz sekélyedik, a hullám lelassul, a frekvenciája viszont nem változik, ezért a hullámhossza rövidül, a magassága pedig óriásira nő. Gyakori figyelmeztető jel, hogy előtte a tenger szokatlanul messzire visszahúzódik a partról. 2004-ben az Indiai-óceánon egy cunami több mint 200 000 ember halálát okozta.",
+     "did_you_know": "Cunami előtt a tenger gyakran szokatlanul messzire visszahúzódik; aki ezt látja, azonnal magasabb helyre kell mennie.",
+     "think": "Miért nem veszik észre a nyílt tengeren hajózók a cunamit?",
+     "think_answer": "A nyílt óceánon a cunami alacsony és nagyon hosszú, így a hajót szinte észrevétlenül emeli meg és engedi le."
+    }
+   ]
+  },
+  {
+   "lesson_id": "f9bed1a8-cfe6-4a06-99c9-c13615a1af18",
+   "title_hu": "Hanghullámok és hangszerek",
+   "text_block_id": "763fe72d-dbec-4f91-9a28-de34daa5a252",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "Hang és lökéshullám",
+     "body": "A hang a levegőben apró nyomásingadozásként terjed, akkor is, ha egy palackot megütünk. Lökéshullám akkor keletkezik, ha valami gyorsabban mozog a hangnál, például egy vadászrepülőgép, ilyenkor a hangrobbanást halljuk. A hang sebességét visszhanggal is mérheted: ha egy 170 m-re lévő falnak tapsolsz, és a visszhang 1 másodperc múlva ér vissza, a hang 340 m-t tett meg 1 s alatt. A hang sebessége a levegő hőmérsékletétől is függ: melegben gyorsabb.",
+     "did_you_know": "A csattanó ostor hegye gyorsabban mozog a hangnál, ezért a csattanás valójában egy kis hangrobbanás.",
+     "think": "Egy sziklafal előtt tapsolsz, és a visszhangot 2 másodperc múlva hallod. Milyen messze van a fal?",
+     "think_answer": "A hang 2 s alatt kb. 680 m-t tesz meg, de ez oda-vissza út, így a fal kb. 340 m-re van."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Ugyanaz a hang, más hangszín",
+     "body": "A hangmagasságot a frekvencia határozza meg, de ugyanaz a hang hegedűn és fuvolán mégis másképp szól. Ennek oka, hogy a hangszerek nem egyetlen frekvencián rezegnek: az alaphang mellett felhangok is szólnak, és ezek aránya adja a hangszínt. A héliumos léggömbből szippantva vékony lesz a hangod, de a hangszálaid ugyanúgy rezegnek: a héliumban a hang gyorsabban terjed, ezért a szájüreged és a torkod a magasabb felhangokat erősíti fel.",
+     "did_you_know": "Héliumot belélegezve a hangszálak ugyanolyan frekvencián rezegnek, a hang mégis vékonyabbnak tűnik, mert a héliumban gyorsabban terjedő hang megváltoztatja a hangszínt.",
+     "think": "Miért ismered fel egy barátod hangját telefonon is, még ha ugyanazt a hangmagasságot énekli is, mint más?",
+     "think_answer": "Mert mindenkinek más a hangszíne: más felhangok szólnak az alaphang mellett, eltérő erősséggel."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Tíz decibel = tízszeres",
+     "body": "A decibel különleges skála: minden 10 dB-es növekedés tízszer akkora hangteljesítményt jelent, a fülünk ezt kb. kétszer hangosabbnak érzi. A 90 dB tehát nem kicsit, hanem tízszer „erősebb”, mint a 80 dB. Hosszabb ideig tartó, kb. 85 dB feletti zaj már halláskárosodást okozhat, egy koncerten pedig 100 dB fölötti hangerő is lehet. A fülhallgatóknál jó ökölszabály: legfeljebb 60%-os hangerő, legfeljebb 60 percig egyhuzamban.",
+     "did_you_know": "Minden 10 dB-es növekedés tízszeres hangteljesítményt jelent, de a fülünk ezt csak kb. kétszer hangosabbnak érzi.",
+     "think": "Hányszor nagyobb hangteljesítményt jelent a 100 dB, mint a 80 dB?",
+     "think_answer": "20 dB különbség két 10 dB-es lépés, vagyis 10 · 10 = 100-szoros hangteljesítmény."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "A hangszer teste erősít",
+     "body": "Egy magában kifeszített húr alig hallható, mert vékony, és kevés levegőt mozgat meg. A gitár vagy a hegedű teste átveszi a húr rezgését, a nagy felület pedig sokkal több levegőt rezegtet meg, ezért hangos a hangszer. A zongorában a rezonánsdeszka végzi ugyanezt. A fúvós hangszerekben a csőben lévő levegőoszlop rezeg állóhullámként, és a cső hossza határozza meg a hangmagasságot.",
+     "did_you_know": "Az elektromos gitár teste tömör, ezért erősítő nélkül alig hallható; a hangját a húrok alatti hangszedők alakítják elektromos jellé.",
+     "think": "Miért kell az elektromos gitárt erősítőhöz csatlakoztatni?",
+     "think_answer": "A tömör teste nem erősíti fel a húrok rezgését, ezért magában halk. Az erősítő és a hangszóró adja a hangerőt."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "A legkisebb csont a fülben van",
+     "body": "A dobhártya rezgését a középfülben három apró csont, a kalapács, az üllő és a kengyel viszi tovább a belső fülbe, és közben felerősíti. A kengyel az emberi test legkisebb csontja, csak kb. 3 mm hosszú. A belső fül csigájában folyadék van, és apró szőrsejtek alakítják a rezgést idegi jellé. Ezek a szőrsejtek nem nőnek újra, ezért a túl erős hang okozta halláskárosodás végleges.",
+     "did_you_know": "A kengyel az emberi test legkisebb csontja, csak néhány milliméteres.",
+     "think": "Miért végleges a túl erős hang okozta halláskárosodás?",
+     "think_answer": "A belső fül érzékelő szőrsejtjei a károsodás után nem nőnek újra, így a kiesett hallás nem tér vissza."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Másodpercenként 44 100 minta",
+     "body": "A hangot a számítógép úgy rögzíti, hogy nagyon sűrűn megméri a mikrofonra érkező nyomást: a CD-minőségű felvétel másodpercenként 44 100 mintát vesz. Azért ennyit, mert a legmagasabb hallható hang (kb. 20 000 Hz) visszaadásához legalább kétszer ilyen sűrű mintavétel kell. A hangelemző program a felvételből a frekvenciákat is kiszámolja, és megmutatja, milyen alaphang és felhangok szólnak benne. Így látható, miben különbözik egy fuvola és egy hegedű ugyanazon hangja.",
+     "did_you_know": "A CD-minőségű hangfelvétel másodpercenként 44 100-szor méri meg a hangot.",
+     "think": "Miért kell a mintavételi gyakoriságnak nagyobbnak lennie, mint a legmagasabb rögzítendő hang frekvenciája?",
+     "think_answer": "Egy rezgés visszaadásához periódusonként legalább két mérés kell. Ha ritkábban mérünk, a gyors rezgéseket nem tudjuk visszaadni."
+    }
+   ]
+  },
+  {
+   "lesson_id": "23864568-4648-4155-bada-4167e1e16247",
+   "title_hu": "Fényhullámok és színek",
+   "text_block_id": "0fcb3024-d423-4e2c-abe6-9eefd286ebad",
+   "n_text": 6,
+   "cards": [
+    {
+     "type": "deep",
+     "anchor": 0,
+     "heading": "A szappanbuborék színei",
+     "body": "A fény hullámtermészetét a szappanbuborék színei is mutatják: a vékony hártya két felületéről visszaverődő fényhullámok egymásra hatnak, és bizonyos színek felerősödnek, mások kioltódnak. A CD vagy DVD lemez felszínén látható szivárványszínek is a fény hullámtermészetéből fakadnak. A látható fény hullámhossza nagyon kicsi: a vörösé kb. 700 nanométer, az ibolyáé kb. 400 nanométer. A vízfelszín fodrozódása viszont vízhullám, nem fényhullám.",
+     "did_you_know": "A szappanbuborék színei a hártya vastagságától függnek, ezért mozognak és változnak, ahogy a hártya vékonyodik.",
+     "think": "Miért változnak a szappanbuborék színei, mielőtt kipukkan?",
+     "think_answer": "A hártya folyamatosan vékonyodik, és a vastagságától függ, melyik szín erősödik fel a visszavert fényben, ezért a színek változnak."
+    },
+    {
+     "type": "deep",
+     "anchor": 1,
+     "heading": "Három színérzékelő",
+     "body": "A szemünkben háromféle csap van, amelyek a vöröses, a zöldes és a kékes fényre érzékenyek, az agy ezek jeleinek arányából állítja elő a színeket. Kiegészítő színeknek azokat a színpárokat nevezzük, amelyek fényként keverve fehéret adnak, ilyen például a kék és a sárga. A vörös és a zöld fény keveréke sárgát ad, ez azonban színkeverés, nem kiegészítés. A férfiak kb. 8%-a valamilyen mértékben színtévesztő, leggyakrabban a vöröset és a zöldet keveri össze.",
+     "did_you_know": "A férfiak kb. 8%-a, a nők kevesebb mint 1%-a valamilyen mértékben színtévesztő.",
+     "think": "Miért látszik egy zöld levél zöldnek?",
+     "think_answer": "A levél a napfény vörös és kék részét nagyrészt elnyeli, a zöldet visszaveri, és ez a visszavert fény jut a szemünkbe."
+    },
+    {
+     "type": "deep",
+     "anchor": 2,
+     "heading": "Sárga lámpa alatt eltűnnek a színek",
+     "body": "Egy tárgy csak azokat a színeket tudja visszaverni, amelyek a rá eső fényben benne vannak. A régi sárga, nátriumgőzös utcai lámpák szinte csak egyetlen sárga színt bocsátottak ki, ezért alattuk az autók színe alig volt megkülönböztethető. Egy piros alma kék fényben szinte feketének látszik, mert nincs mit visszavernie. A boltokban ezért választják gondosan a lámpákat: más fényben ugyanaz az áru frissebbnek vagy fakóbbnak tűnhet.",
+     "did_you_know": "A régi, sárga nátriumlámpák fényében szinte minden autó szürkének vagy barnának tűnt, a színeket nem lehetett megkülönböztetni.",
+     "think": "Milyen színűnek látszik egy piros alma, ha csak zöld fénnyel világítod meg?",
+     "think_answer": "Majdnem feketének, mert a piros alma a zöld fényt elnyeli, és nincs vörös fény, amit visszaverhetne."
+    },
+    {
+     "type": "deep",
+     "anchor": 3,
+     "heading": "Mindig 42 fokban",
+     "body": "Szivárványt csak akkor láthatunk, ha a Nap mögöttünk van, és előttünk esik az eső. A cseppekben megtört és visszavert fény kb. 42 fokos szögben tér vissza a Nappal ellentétes irányhoz képest, ezért a szivárvány egy kör íve. Repülőgépről néha teljes körnek látszik. Néha egy halványabb második szivárvány is látszik kívül, kb. 51 fokban, és ennek fordított a színsorrendje: kívül ibolya, belül vörös.",
+     "did_you_know": "A második, halványabb szivárványban a színek sorrendje fordított, mert a fény a cseppekben kétszer verődik vissza.",
+     "think": "Miért csak akkor láthatsz szivárványt, ha a Nap a hátad mögött van?",
+     "think_answer": "Mert a cseppek a fényt nagyjából visszafelé, a Nappal ellentétes irány körül kb. 42 fokos szögben térítik el. Ezt a fényt csak úgy látod, ha háttal állsz a Napnak."
+    },
+    {
+     "type": "deep",
+     "anchor": 4,
+     "heading": "Kék ég, vörös naplemente",
+     "body": "A levegő molekulái a rövid hullámhosszú kék fényt sokkal jobban szórják, mint a vöröset, ezért az égbolt minden irányból kéknek látszik. Napnyugtakor a napfény nagyon hosszú utat tesz meg a légkörben, és közben a kék fény nagy része kiszóródik, így főleg a vörös és narancs jut el hozzánk. A felhők apró vízcseppjei minden színt egyformán szórnak, ezért fehérek; a vastag felhő azért szürke, mert kevés fény jut át rajta. A tiszta víz maga is kissé kék, mert a vörös fényt jobban elnyeli.",
+     "did_you_know": "A tiszta víz nem teljesen színtelen: vastag rétegben halványkék, mert a vörös fényt jobban elnyeli.",
+     "think": "Miért vörös az ég napnyugtakor?",
+     "think_answer": "Napnyugtakor a fény sokkal hosszabb utat tesz meg a légkörben, és a kék fény nagy része útközben kiszóródik. Így főleg a vörös és narancs fény jut el hozzánk."
+    },
+    {
+     "type": "deep",
+     "anchor": 5,
+     "heading": "Kivonó színkeverés",
+     "body": "A festékek keverése kivonó (szubtraktív) színkeverés: minden festék a fehér fény egy részét elnyeli, és csak a maradékot veri vissza. Ha két festéket keverünk, mindkettő elnyel valamit, így kevesebb szín marad, ezért lesz a keverék sötétebb. A fény keverése ezzel szemben összeadó (additív): minél több színt adunk hozzá, annál világosabb. A nyomtatók ezért ciánkék, bíbor és sárga festékkel dolgoznak, és ezek keveréke elvben fekete lenne.",
+     "did_you_know": "A színes nyomtatók ciánkék, bíbor, sárga és fekete festékkel nyomtatnak; a fekete külön festék, mert a három szín keveréke csak sötétbarnát adna.",
+     "think": "Miért lesz barnás-szürke a festék, ha sokféle színt összekeversz?",
+     "think_answer": "Minden festék elnyeli a fény egy részét, és sok festék együtt szinte minden színt elnyel, így csak kevés, sötét fény verődik vissza."
+    }
+   ]
+  }
+ ]
+}
