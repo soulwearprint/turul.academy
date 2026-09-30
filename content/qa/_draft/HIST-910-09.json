@@ -1,0 +1,107 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "2c9d19ae-081d-48e0-8c4b-a4c72766459b",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Napóleon „bevezette … a hatalmi ágak megosztását”",
+   "explanation": "Napóleon a Code civil (1804) révén bevezette a jogegyenlőséget, de uralma önkényuralmi volt, a hatalmi ágak megosztását nem valósította meg.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Napoleon",
+     "title": "Napoleon",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Napoleonic_Code",
+     "title": "Napoleonic Code",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Birodalma alatt számos területen bevezette a jogegyenlőséget és a hatalmi ágak megosztását, amelyek a modern államok alapelveivé váltak.",
+     "Birodalma alatt számos területen bevezette a jogegyenlőséget (Code civil, 1804), ami a modern államok alapelvévé vált; uralma azonban önkényuralmi volt, a hatalmi ágak megosztását nem valósította meg."
+    ]
+   ]
+  },
+  {
+   "block_id": "2c9d19ae-081d-48e0-8c4b-a4c72766459b",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A magyar reformerek „a Habsburg-monarchia ellen küzdöttek”",
+   "explanation": "A reformkor politikusai a Habsburg Birodalmon belül követeltek reformokat és alkotmányosságot; a monarchia ellen csak 1849-ben (a Függetlenségi nyilatkozat) fordultak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Reform_Era_(Hungary)",
+     "title": "Reform Era (Hungary)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "akik a Habsburg-monarchia ellen küzdöttek",
+     "akik a Habsburg-monarchián belül követeltek reformokat és alkotmányosságot"
+    ]
+   ]
+  },
+  {
+   "block_id": "53b487c7-a2ac-4965-90a0-05ea20f975d1",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 1848-as” névelő",
+   "explanation": "Magánhangzóval kezdődő szám előtt (egy = „egy”, azaz „e”): az 1848-as.",
+   "source_note": "magyar helyesírás, névelőhasználat (a/az)",
+   "replace": [
+    [
+     "különösen a 1848-as",
+     "különösen az 1848-as"
+    ]
+   ]
+  },
+  {
+   "block_id": "3c81a278-9d2f-48fd-8dcd-4a50c558110d",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A brit parlament „Képviselőháza”; a cenzus jelen időben",
+   "explanation": "A brit parlament alsóháza a House of Commons (Alsóház). A cenzusos választójog a 19. századra jellemző, ma általános választójog van.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Parliament_of_the_United_Kingdom",
+     "title": "Parliament of the United Kingdom",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "a Képviselőházból és a Lordok Házából",
+     "az Alsóházból (House of Commons) és a Lordok Házából"
+    ],
+    [
+     "A választott képviselők a cenzus alapján kerülnek a parlamentbe, ami korlátozza a szavazati jogot.",
+     "A 19. században a választott képviselők cenzus alapján kerültek a parlamentbe, ami korlátozta a szavazati jogot."
+    ]
+   ]
+  }
+ ]
+}

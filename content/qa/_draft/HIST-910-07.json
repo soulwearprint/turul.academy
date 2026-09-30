@@ -1,0 +1,208 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Duplikált szövegkártyák: 742240cb [8]/[13] Loyola. Üres világ blokk: e824e88b (HIST-910-07 L4)."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "1021906a-c5af-4854-9392-45846e2046f2",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A Habsburg-dinasztia … V. Károly és XIV. Lajos uralkodása alatt”",
+   "explanation": "V. Károly Habsburg volt, de XIV. Lajos a Bourbon-házból származott. Az abszolutizmus klasszikus példája Franciaország (Bourbonok), a Habsburgoké más forma volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Charles_V,_Holy_Roman_Emperor",
+     "title": "Charles V, Holy Roman Emperor",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Louis_XIV",
+     "title": "Louis XIV",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A Habsburg-dinasztia, amely Magyarországot is irányította, V. Károly és XIV. Lajos uralkodása alatt erősítette meg hatalmát.",
+     "A Habsburg-dinasztia (például V. Károly) és a francia Bourbon-dinasztia (például XIV. Lajos) is megerősítette hatalmát."
+    ]
+   ]
+  },
+  {
+   "block_id": "1021906a-c5af-4854-9392-45846e2046f2",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Magellán „bizonyította be, hogy a Föld gömbölyű”",
+   "explanation": "Magellán 1521-ben meghalt a Fülöp-szigeteken, a körülhajózást Juan Sebastián Elcano fejezte be (1522). A Föld gömbölyűségét már az ókori görögök is tudták; az út igazolta, hogy a Föld körbehajózható.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ferdinand_Magellan",
+     "title": "Ferdinand Magellan",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Magellan–Elcano_circumnavigation",
+     "title": "Magellan–Elcano circumnavigation",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Ferdinánd Magellán 1519-1522 között az első körülhajózás során bizonyította be, hogy a Föld gömbölyű.",
+     "Ferdinánd Magellán expedíciója 1519 és 1522 között az első körülhajózás volt; Magellán maga 1521-ben meghalt, az utat Elcano fejezte be. Az út igazolta, hogy a Föld körbehajózható."
+    ]
+   ]
+  },
+  {
+   "block_id": "1021906a-c5af-4854-9392-45846e2046f2",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„India, amelyet Vasco da Gama felfedezett”",
+   "explanation": "Indiát nem Vasco da Gama fedezte fel; ő 1498-ban a tengeri utat találta meg Indiába.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Vasco_da_Gama",
+     "title": "Vasco da Gama",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "India, amelyet Vasco da Gama felfedezett, szintén",
+     "India, amelyhez Vasco da Gama 1498-ban megtalálta a tengeri utat, szintén"
+    ]
+   ]
+  },
+  {
+   "block_id": "10bf0310-d2a0-4e38-8af7-c85636d2d62a",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A 17. században „London … a tőzsde központjává vált”",
+   "explanation": "A 17. századi pénz- és tőzsdeközpont Amszterdam volt (Kelet-indiai Társaság, 1602, az első részvénytőzsde). London tőzsdéje csak a 18. századtól vált meghatározóvá.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Amsterdam_Stock_Exchange",
+     "title": "Amsterdam Stock Exchange",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company",
+     "title": "Dutch East India Company",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "London városa a tőzsde központjává vált, ahol részvényeket is lehetett vásárolni",
+     "Amszterdam vált a tőzsde központjává (1602: a Holland Kelet-indiai Társaság részvényei), ahol részvényeket is lehetett vásárolni"
+    ]
+   ]
+  },
+  {
+   "block_id": "742240cb-6339-4197-9f05-22703e6597ac",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Az 1568-as tordai országgyűlésen … Magyarországon” hivatalosan elismert vallási türelem",
+   "explanation": "A tordai országgyűlést (1568) az Erdélyi Fejedelemségben tartották, nem a Magyar Királyságban; a szabad vallásgyakorlat az erdélyi négy bevett vallásra (katolikus, evangélikus, református, unitárius) vonatkozott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Diet_of_Torda",
+     "title": "Diet of Torda",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Az 1568-as tordai országgyűlésen a vallási türelem elve hivatalosan is elismertté vált, amikor kimondták, hogy mindenki szabadon gyakorolhatja vallását.",
+     "Az 1568-as tordai országgyűlésen Erdélyben a vallási türelem elve hivatalosan is elismertté vált, amikor kimondták, hogy mindenki szabadon gyakorolhatja vallását (a katolikus, evangélikus, református és unitárius felekezetek számára)."
+    ]
+   ]
+  },
+  {
+   "block_id": "742240cb-6339-4197-9f05-22703e6597ac",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A kálvinizmus terjedése „különösen a német és a svájci területeken”",
+   "explanation": "A kálvinizmus Svájcban, Hollandiában, Skóciában, Franciaországban (hugenották) és Magyarországon terjedt; a német területeken inkább a lutheranizmus volt jellemző.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Calvinism",
+     "title": "Calvinism",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "különösen a német és a svájci területeken",
+     "különösen Svájcban, Hollandiában, Skóciában és Magyarországon"
+    ]
+   ]
+  },
+  {
+   "block_id": "b9eb176b-a25a-4a0d-81c9-d8d940a45a00",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az erdélyi vallásbéke lehetővé tette, hogy a románok „megtartsák vallási hovatartozásukat”",
+   "explanation": "A románok ortodox vallását Erdélyben eltűrték, de nem volt bevett vallás: az erdélyi országgyűlés négy bevett vallást ismert el.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Diet_of_Torda",
+     "title": "Diet of Torda",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "replace": [
+    [
+     "megtartsák vallási hovatartozásukat",
+     "megtartsák vallásukat (az ortodoxiát csak eltűrték, nem tartozott a négy bevett vallás közé)"
+    ]
+   ]
+  },
+  {
+   "block_id": "6da84d14-42e7-4217-b5ed-56489d34a001",
+   "card_index": 7,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A tordai határozat „a magyar fejedelemségben”",
+   "explanation": "A fejedelemség neve Erdélyi Fejedelemség.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Principality_of_Transylvania_(1570–1711)",
+     "title": "Principality of Transylvania (1570–1711)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "A tordai határozat 1568-ban született, amely a vallási türelmet deklarálta az Erdélyi Fejedelemségben."
+   }
+  }
+ ]
+}

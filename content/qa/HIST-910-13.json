@@ -1,0 +1,397 @@
+{
+ "nat_id": "HIST-910-13",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 11,
+  "cards": 59,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világ blokk: c0688c10 (HIST-910-13)."
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-910-13-001",
+   "lesson_id": "771b6c86-50c3-4565-8d52-20fa61cff0cf",
+   "block_id": "3da05198-4b86-4abb-8c5d-765bd48931b0",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A március 15-i forradalom „célja a magyar függetlenség”",
+   "explanation": "A 12 pont polgári reformokat követelt (sajtószabadság, felelős kormány, jobbágyfelszabadítás, közteherviselés); a függetlenség nem szerepelt bennük.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Revolutions_of_1848_in_the_Habsburg_areas",
+     "title": "Revolutions of 1848 in the Habsburg areas",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1848. március 15-én a pesti forradalom kitörésével kezdődött el a magyar forradalmi mozgalom. A tömeg a Landerer nyomdához vonult, ahol a 12 pontot, a forradalom követeléseit hirdették. A forradalom célja a magyar függetlenség és a polgári jogok megvalósítása volt. A pesti forradalom fontos mérföldkő a magyar történelemben, hiszen elindította a szabadságharcot és a polgári átalakulást.",
+     "type": "text",
+     "heading": "A pesti forradalom",
+     "key_term": "1848. március 15."
+    },
+    "after": {
+     "body": "1848. március 15-én a pesti forradalom kitörésével kezdődött el a magyar forradalmi mozgalom. A tömeg a Landerer nyomdához vonult, ahol a 12 pontot, a forradalom követeléseit hirdették. A forradalom célja a polgári jogok és az alkotmányos átalakulás (sajtószabadság, felelős kormány, jobbágyfelszabadítás) megvalósítása volt. A pesti forradalom fontos mérföldkő a magyar történelemben, hiszen elindította a szabadságharcot és a polgári átalakulást.",
+     "type": "text",
+     "heading": "A pesti forradalom",
+     "key_term": "1848. március 15."
+    }
+   }
+  },
+  {
+   "id": "HIST-910-13-002",
+   "lesson_id": "771b6c86-50c3-4565-8d52-20fa61cff0cf",
+   "block_id": "3da05198-4b86-4abb-8c5d-765bd48931b0",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 1848.”",
+   "explanation": "Magánhangzóval kezdődő szám előtt az névelő szükséges.",
+   "sources": [],
+   "apply": "auto",
+   "source_note": "magyar helyesírás, névelőhasználat (a/az)",
+   "fix": {
+    "before": {
+     "body": "A márciusi ifjak a 1848. március 15-i pesti forradalom vezéregyéniségei voltak, akik a polgári átalakulás érdekében harcoltak. Köztük Petőfi Sándor, a forradalom költője, aki a Nemzeti dal című versével inspirálta a tömegeket. A fiatal értelmiségiek célja a sajtószabadság, a cenzúra eltörlése és a népképviseleti országgyűlés megteremtése volt. A márciusi ifjak tevékenysége alapvetően formálta a magyar politikai életet és kultúrát.",
+     "type": "text",
+     "heading": "Márciusi ifjak",
+     "key_term": "márciusi ifjak"
+    },
+    "after": {
+     "body": "A márciusi ifjak az 1848. március 15-i pesti forradalom vezéregyéniségei voltak, akik a polgári átalakulás érdekében harcoltak. Köztük Petőfi Sándor, a forradalom költője, aki a Nemzeti dal című versével inspirálta a tömegeket. A fiatal értelmiségiek célja a sajtószabadság, a cenzúra eltörlése és a népképviseleti országgyűlés megteremtése volt. A márciusi ifjak tevékenysége alapvetően formálta a magyar politikai életet és kultúrát.",
+     "type": "text",
+     "heading": "Márciusi ifjak",
+     "key_term": "márciusi ifjak"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-13-003",
+   "lesson_id": "771b6c86-50c3-4565-8d52-20fa61cff0cf",
+   "block_id": "3da05198-4b86-4abb-8c5d-765bd48931b0",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az áprilisi törvények „a magyar jogrend alapját képezik”",
+   "explanation": "Az áprilisi törvények a polgári jogrend alapját teremtették meg, de 1849 után hatályon kívül helyezték őket (1867-ben részben visszaállították).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/April_Laws",
+     "title": "April Laws",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "Az áprilisi törvények 1848. április 11-én léptek életbe, és az első magyar polgári alkotmányt képezték. Ezek a törvények biztosították a polgári jogokat, a népképviseleti országgyűlés létrejöttét és a feudális viszonyok megszüntetését. A törvények célja a modern állam alapjainak megteremtése volt, amely lehetővé tette a társadalmi és politikai reformokat. Az áprilisi törvények a magyar jogrend alapját képezik, és jelentős hatással voltak a következő évtizedek politikai életére.",
+     "type": "text",
+     "heading": "Az áprilisi törvények",
+     "key_term": "áprilisi törvények"
+    },
+    "after": {
+     "body": "Az áprilisi törvények 1848. április 11-én léptek életbe, és az első magyar polgári alkotmányt képezték. Ezek a törvények biztosították a polgári jogokat, a népképviseleti országgyűlés létrejöttét és a feudális viszonyok megszüntetését. A törvények célja a modern állam alapjainak megteremtése volt, amely lehetővé tette a társadalmi és politikai reformokat. Az áprilisi törvények a polgári magyar jogrend alapját teremtették meg, és jelentős hatással voltak a következő évtizedek politikai életére.",
+     "type": "text",
+     "heading": "Az áprilisi törvények",
+     "key_term": "áprilisi törvények"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-13-004",
+   "lesson_id": "e549fafc-4171-48a8-b148-d4914d9994b4",
+   "block_id": "5e7f0952-a9b6-4852-84e7-ecaade99e239",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Bem „különösen a tavaszi hadjárat során”",
+   "explanation": "Bem József 1848–49 telén az erdélyi hadjáratban aratott győzelmeket; a tavaszi hadjárat Görgei és Klapka nevéhez fűződik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Józef_Bem",
+     "title": "Józef Bem",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A szabadságharc során több kiemelkedő személyiség is feltűnt, köztük Görgei Artúr, aki a honvédség főparancsnoka volt, és számos győzelmet aratott. Bem József, a lengyel származású tábornok, szintén fontos szerepet játszott a harcokban, különösen a tavaszi hadjárat során. Klapka György a komáromi védelmet irányította, míg Ferenc József, a Habsburg-dinasztia vezetőjeként, a magyar függetlenség megakadályozására törekedett. Julius Haynau, a hadsereg parancsnoka, a szabadságharc leverését követően a megtorlás szimbólumává vált.",
+     "type": "text",
+     "heading": "A szabadságharc kiemelkedő szereplői",
+     "key_term": "Görgei Artúr, Bem József, Klapka György, Ferenc József, Julius Haynau"
+    },
+    "after": {
+     "body": "A szabadságharc során több kiemelkedő személyiség is feltűnt, köztük Görgei Artúr, aki a honvédség főparancsnoka volt, és számos győzelmet aratott. Bem József, a lengyel származású tábornok, szintén fontos szerepet játszott a harcokban, különösen az erdélyi téli hadjárat (1848–49) során. Klapka György a komáromi védelmet irányította, míg Ferenc József, a Habsburg-dinasztia vezetőjeként, a magyar függetlenség megakadályozására törekedett. Julius Haynau, a hadsereg parancsnoka, a szabadságharc leverését követően a megtorlás szimbólumává vált.",
+     "type": "text",
+     "heading": "A szabadságharc kiemelkedő szereplői",
+     "key_term": "Görgei Artúr, Bem József, Klapka György, Ferenc József, Julius Haynau"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-13-005",
+   "lesson_id": "e549fafc-4171-48a8-b148-d4914d9994b4",
+   "block_id": "c82ab7ef-2c31-40c5-a14d-c16cd1841083",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A Függetlenségi nyilatkozat kezdeményezője: kulcs Görgei, a magyarázat szerint Kossuth",
+   "explanation": "A Függetlenségi nyilatkozatot (1849. április 14.) Kossuth Lajos kezdeményezte; Görgei ellenezte.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Declaration_of_Independence",
+     "title": "Hungarian Declaration of Independence",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Görgei Artúr",
+      "B) Bem József",
+      "C) Klapka György",
+      "D) Ferenc József"
+     ],
+     "question": "Ki volt a Függetlenségi nyilatkozat egyik legfontosabb kezdeményezője?",
+     "explanation": "Görgei Artúr vezette a honvédséget a szabadságharc alatt, de Kossuth Lajos volt a Függetlenségi nyilatkozat egyik legfontosabb kezdeményezője, amelyet 1849. április 14-én hirdettek ki.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kossuth Lajos",
+      "B) Bem József",
+      "C) Klapka György",
+      "D) Ferenc József"
+     ],
+     "question": "Ki volt a Függetlenségi nyilatkozat egyik legfontosabb kezdeményezője?",
+     "explanation": "Görgei Artúr vezette a honvédséget a szabadságharc alatt, de Kossuth Lajos volt a Függetlenségi nyilatkozat egyik legfontosabb kezdeményezője, amelyet 1849. április 14-én hirdettek ki.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-13-006",
+   "lesson_id": null,
+   "block_id": "ebed5444-c15c-4477-aeaf-b64897019893",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A Függetlenségi nyilatkozatot „Batthyány Lajos írta alá”",
+   "explanation": "Batthyány 1848 szeptemberében lemondott, 1849 januárjától fogságban volt; Kossuth lett a kormányzó-elnök.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Declaration_of_Independence",
+     "title": "Hungarian Declaration of Independence",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Lajos_Batthyány",
+     "title": "Lajos Batthyány",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Batthyány Lajos",
+      "B) Ferenc József",
+      "C) Klapka György",
+      "D) Bem József"
+     ],
+     "question": "Ki volt az, aki a Függetlenségi nyilatkozatot 1849. április 14-én aláírta?",
+     "explanation": "A Függetlenségi nyilatkozatot Batthyány Lajos, mint a magyar kormány miniszterelnöke írta alá.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Kossuth Lajos",
+      "B) Ferenc József",
+      "C) Klapka György",
+      "D) Bem József"
+     ],
+     "question": "Ki lett a kormányzó-elnök a Függetlenségi nyilatkozat kimondása (1849. április 14.) után?",
+     "explanation": "A Függetlenségi nyilatkozat után Kossuth Lajost kormányzó-elnökké választották.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-13-007",
+   "lesson_id": null,
+   "block_id": "ebed5444-c15c-4477-aeaf-b64897019893",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "options",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "Batthyány Lajos „az aradi vértanúk között”",
+   "explanation": "Batthyány Lajost 1849. október 6-án Pesten végezték ki, az aradi vértanúkat (13 tábornok) Aradon.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lajos_Batthyány",
+     "title": "Lajos Batthyány",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/13_Martyrs_of_Arad",
+     "title": "13 Martyrs of Arad",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Görgei Artúr",
+      "B) Klapka György",
+      "C) Batthyány Lajos",
+      "D) Bem József"
+     ],
+     "question": "Ki volt az aradi vértanúk között, akit kivégeztek 1849. október 6-án?",
+     "explanation": "Batthyány Lajos, a magyar kormány miniszterelnöke volt az aradi vértanúk között, akit kivégeztek 1849. október 6-án.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) Görgei Artúr",
+      "B) Klapka György",
+      "C) Damjanich János",
+      "D) Bem József"
+     ],
+     "question": "Ki volt az aradi vértanúk között, akit kivégeztek 1849. október 6-án?",
+     "explanation": "Damjanich János tábornok az aradi vértanúk egyike volt, akit 1849. október 6-án végeztek ki. (Batthyány Lajost ugyanezen a napon Pesten végezték ki.)",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-13-008",
+   "lesson_id": "771b6c86-50c3-4565-8d52-20fa61cff0cf",
+   "block_id": "3e672461-73af-4a98-872d-5d43781c6000",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "1848 márciusában a magyar forradalom célja „a nemzeti függetlenség”",
+   "explanation": "1848 márciusában a célok polgári jogok és alkotmányos átalakulás voltak, nem függetlenség.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Revolutions_of_1848_in_the_Habsburg_areas",
+     "title": "Revolutions of 1848 in the Habsburg areas",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1848 februárjában Párizsban forradalom robbant ki, amely a monarchia megdöntéséhez vezetett. A forradalom során a nép követelte a politikai jogok kiterjesztését és a társadalmi reformokat. Ez a forradalmi esemény inspirálta más európai országokban, köztük Magyarországon is a szabadságharcot, amelynek célja a nemzeti függetlenség és a polgári jogok kiharcolása volt.",
+     "type": "world",
+     "year": "1848",
+     "heading": "A februári forradalom Franciaországban",
+     "link_hu": "A francia forradalom hatására a magyar forradalmárok, mint a márciusi ifjak, a szabadság és a demokrácia iránti vágyukat fejezték ki, ami közvetlenül hozzájárult a pesti forradalom kitöréséhez."
+    },
+    "after": {
+     "body": "1848 februárjában Párizsban forradalom robbant ki, amely a monarchia megdöntéséhez vezetett. A forradalom során a nép követelte a politikai jogok kiterjesztését és a társadalmi reformokat. Ez a forradalmi esemény inspirálta más európai országokban, köztük Magyarországon is a szabadságharcot, amelynek célja a polgári jogok és az alkotmányos átalakulás kiharcolása volt.",
+     "type": "world",
+     "year": "1848",
+     "heading": "A februári forradalom Franciaországban",
+     "link_hu": "A francia forradalom hatására a magyar forradalmárok, mint a márciusi ifjak, a szabadság és a demokrácia iránti vágyukat fejezték ki, ami közvetlenül hozzájárult a pesti forradalom kitöréséhez."
+    }
+   }
+  },
+  {
+   "id": "HIST-910-13-009",
+   "lesson_id": "771b6c86-50c3-4565-8d52-20fa61cff0cf",
+   "block_id": "3e672461-73af-4a98-872d-5d43781c6000",
+   "mode": "world",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a magyarok is a függetlenségért … küzdöttek”",
+   "explanation": "1848 tavaszán a magyarok a polgári jogokért és az alkotmányos reformokért harcoltak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/April_Laws",
+     "title": "April Laws",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "1848-ban a Habsburg Birodalom belső válsággal küzdött, amelyet a különböző nemzeti mozgalmak és reformigények feszültségei okoztak. A birodalom különböző részein, így Magyarországon is, a nemzeti öntudat erősödött, ami a forradalmi eseményekhez vezetett. A Habsburgok képtelenek voltak hatékonyan kezelni a helyzetet, ami további forradalmakat generált.",
+     "type": "world",
+     "year": "1848",
+     "heading": "A Habsburg Birodalom válsága",
+     "link_hu": "A Habsburg Birodalom válsága közvetlenül hozzájárult a magyar forradalom kitöréséhez, mivel a magyarok is a függetlenségért és a jogokért küzdöttek, ami megnyilvánult az áprilisi törvényekben."
+    },
+    "after": {
+     "body": "1848-ban a Habsburg Birodalom belső válsággal küzdött, amelyet a különböző nemzeti mozgalmak és reformigények feszültségei okoztak. A birodalom különböző részein, így Magyarországon is, a nemzeti öntudat erősödött, ami a forradalmi eseményekhez vezetett. A Habsburgok képtelenek voltak hatékonyan kezelni a helyzetet, ami további forradalmakat generált.",
+     "type": "world",
+     "year": "1848",
+     "heading": "A Habsburg Birodalom válsága",
+     "link_hu": "A Habsburg Birodalom válsága közvetlenül hozzájárult a magyar forradalom kitöréséhez, mivel a magyarok a polgári jogokért és az alkotmányos reformokért küzdöttek, ami az áprilisi törvényekben valósult meg."
+    }
+   }
+  }
+ ]
+}

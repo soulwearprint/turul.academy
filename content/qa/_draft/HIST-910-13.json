@@ -1,0 +1,213 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világ blokk: c0688c10 (HIST-910-13)."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "3da05198-4b86-4abb-8c5d-765bd48931b0",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A március 15-i forradalom „célja a magyar függetlenség”",
+   "explanation": "A 12 pont polgári reformokat követelt (sajtószabadság, felelős kormány, jobbágyfelszabadítás, közteherviselés); a függetlenség nem szerepelt bennük.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Revolutions_of_1848_in_the_Habsburg_areas",
+     "title": "Revolutions of 1848 in the Habsburg areas",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A forradalom célja a magyar függetlenség és a polgári jogok megvalósítása volt.",
+     "A forradalom célja a polgári jogok és az alkotmányos átalakulás (sajtószabadság, felelős kormány, jobbágyfelszabadítás) megvalósítása volt."
+    ]
+   ]
+  },
+  {
+   "block_id": "3da05198-4b86-4abb-8c5d-765bd48931b0",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "language",
+   "severity": "low",
+   "claim": "„a 1848.”",
+   "explanation": "Magánhangzóval kezdődő szám előtt az névelő szükséges.",
+   "source_note": "magyar helyesírás, névelőhasználat (a/az)",
+   "replace": [
+    [
+     "A márciusi ifjak a 1848. március",
+     "A márciusi ifjak az 1848. március"
+    ]
+   ]
+  },
+  {
+   "block_id": "3da05198-4b86-4abb-8c5d-765bd48931b0",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az áprilisi törvények „a magyar jogrend alapját képezik”",
+   "explanation": "Az áprilisi törvények a polgári jogrend alapját teremtették meg, de 1849 után hatályon kívül helyezték őket (1867-ben részben visszaállították).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/April_Laws",
+     "title": "April Laws",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "replace": [
+    [
+     "Az áprilisi törvények a magyar jogrend alapját képezik",
+     "Az áprilisi törvények a polgári magyar jogrend alapját teremtették meg"
+    ]
+   ]
+  },
+  {
+   "block_id": "5e7f0952-a9b6-4852-84e7-ecaade99e239",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Bem „különösen a tavaszi hadjárat során”",
+   "explanation": "Bem József 1848–49 telén az erdélyi hadjáratban aratott győzelmeket; a tavaszi hadjárat Görgei és Klapka nevéhez fűződik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Józef_Bem",
+     "title": "Józef Bem",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "különösen a tavaszi hadjárat során",
+     "különösen az erdélyi téli hadjárat (1848–49) során"
+    ]
+   ]
+  },
+  {
+   "block_id": "c82ab7ef-2c31-40c5-a14d-c16cd1841083",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A Függetlenségi nyilatkozat kezdeményezője: kulcs Görgei, a magyarázat szerint Kossuth",
+   "explanation": "A Függetlenségi nyilatkozatot (1849. április 14.) Kossuth Lajos kezdeményezte; Görgei ellenezte.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Declaration_of_Independence",
+     "title": "Hungarian Declaration of Independence",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) Kossuth Lajos"
+   }
+  },
+  {
+   "block_id": "ebed5444-c15c-4477-aeaf-b64897019893",
+   "card_index": 4,
+   "field": "question",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "A Függetlenségi nyilatkozatot „Batthyány Lajos írta alá”",
+   "explanation": "Batthyány 1848 szeptemberében lemondott, 1849 januárjától fogságban volt; Kossuth lett a kormányzó-elnök.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Declaration_of_Independence",
+     "title": "Hungarian Declaration of Independence",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Lajos_Batthyány",
+     "title": "Lajos Batthyány",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Ki lett a kormányzó-elnök a Függetlenségi nyilatkozat kimondása (1849. április 14.) után?",
+    "options[0]": "A) Kossuth Lajos",
+    "explanation": "A Függetlenségi nyilatkozat után Kossuth Lajost kormányzó-elnökké választották."
+   }
+  },
+  {
+   "block_id": "ebed5444-c15c-4477-aeaf-b64897019893",
+   "card_index": 7,
+   "field": "options",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "Batthyány Lajos „az aradi vértanúk között”",
+   "explanation": "Batthyány Lajost 1849. október 6-án Pesten végezték ki, az aradi vértanúkat (13 tábornok) Aradon.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lajos_Batthyány",
+     "title": "Lajos Batthyány",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/13_Martyrs_of_Arad",
+     "title": "13 Martyrs of Arad",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[2]": "C) Damjanich János",
+    "explanation": "Damjanich János tábornok az aradi vértanúk egyike volt, akit 1849. október 6-án végeztek ki. (Batthyány Lajost ugyanezen a napon Pesten végezték ki.)"
+   }
+  },
+  {
+   "block_id": "3e672461-73af-4a98-872d-5d43781c6000",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "1848 márciusában a magyar forradalom célja „a nemzeti függetlenség”",
+   "explanation": "1848 márciusában a célok polgári jogok és alkotmányos átalakulás voltak, nem függetlenség.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Revolutions_of_1848_in_the_Habsburg_areas",
+     "title": "Revolutions of 1848 in the Habsburg areas",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "amelynek célja a nemzeti függetlenség és a polgári jogok kiharcolása volt",
+     "amelynek célja a polgári jogok és az alkotmányos átalakulás kiharcolása volt"
+    ]
+   ]
+  },
+  {
+   "block_id": "3e672461-73af-4a98-872d-5d43781c6000",
+   "card_index": 3,
+   "field": "link_hu",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„a magyarok is a függetlenségért … küzdöttek”",
+   "explanation": "1848 tavaszán a magyarok a polgári jogokért és az alkotmányos reformokért harcoltak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/April_Laws",
+     "title": "April Laws",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "link_hu": "A Habsburg Birodalom válsága közvetlenül hozzájárult a magyar forradalom kitöréséhez, mivel a magyarok a polgári jogokért és az alkotmányos reformokért küzdöttek, ami az áprilisi törvényekben valósult meg."
+   }
+  }
+ ]
+}

@@ -1,0 +1,340 @@
+{
+ "nat_id": "HIST-910-07",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 21,
+  "cards": 109,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual",
+   "world"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Duplikált szövegkártyák: 742240cb [8]/[13] Loyola. Üres világ blokk: e824e88b (HIST-910-07 L4)."
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-910-07-001",
+   "lesson_id": "00d16eb9-8d5e-4179-90e2-7d3912a81a76",
+   "block_id": "1021906a-c5af-4854-9392-45846e2046f2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„A Habsburg-dinasztia … V. Károly és XIV. Lajos uralkodása alatt”",
+   "explanation": "V. Károly Habsburg volt, de XIV. Lajos a Bourbon-házból származott. Az abszolutizmus klasszikus példája Franciaország (Bourbonok), a Habsburgoké más forma volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Charles_V,_Holy_Roman_Emperor",
+     "title": "Charles V, Holy Roman Emperor",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Louis_XIV",
+     "title": "Louis XIV",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Az abszolutizmus a 16-17. században terjedt el Európában, amikor a monarchák hatalmuk központosítására törekedtek. A Habsburg-dinasztia, amely Magyarországot is irányította, V. Károly és XIV. Lajos uralkodása alatt erősítette meg hatalmát. Az abszolutizmus következtében a centralizált államok, mint például Franciaország, gazdasági és politikai erőre tettek szert, ami a gyarmatosítási törekvéseiket is támogatta. Magyarországon az abszolutizmus időszaka a török hódoltság utáni újjáépítést is meghatározta.",
+     "type": "text",
+     "heading": "Az abszolutizmus és annak hatásai",
+     "key_term": "abszolutizmus"
+    },
+    "after": {
+     "body": "Az abszolutizmus a 16-17. században terjedt el Európában, amikor a monarchák hatalmuk központosítására törekedtek. A Habsburg-dinasztia (például V. Károly) és a francia Bourbon-dinasztia (például XIV. Lajos) is megerősítette hatalmát. Az abszolutizmus következtében a centralizált államok, mint például Franciaország, gazdasági és politikai erőre tettek szert, ami a gyarmatosítási törekvéseiket is támogatta. Magyarországon az abszolutizmus időszaka a török hódoltság utáni újjáépítést is meghatározta.",
+     "type": "text",
+     "heading": "Az abszolutizmus és annak hatásai",
+     "key_term": "abszolutizmus"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-07-002",
+   "lesson_id": "00d16eb9-8d5e-4179-90e2-7d3912a81a76",
+   "block_id": "1021906a-c5af-4854-9392-45846e2046f2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Magellán „bizonyította be, hogy a Föld gömbölyű”",
+   "explanation": "Magellán 1521-ben meghalt a Fülöp-szigeteken, a körülhajózást Juan Sebastián Elcano fejezte be (1522). A Föld gömbölyűségét már az ókori görögök is tudták; az út igazolta, hogy a Föld körbehajózható.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ferdinand_Magellan",
+     "title": "Ferdinand Magellan",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Magellan–Elcano_circumnavigation",
+     "title": "Magellan–Elcano circumnavigation",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Kolumbusz Kristóf, Vasco da Gama és Ferdinánd Magellán kulcsszereplői voltak a földrajzi felfedezéseknek. Kolumbusz 1492-ben felfedezte Amerikát, míg Vasco da Gama 1498-ban eljutott Indiába, ezzel megnyitva az utat a keleti kereskedelem előtt. Ferdinánd Magellán 1519-1522 között az első körülhajózás során bizonyította be, hogy a Föld gömbölyű. E felfedezők munkássága hozzájárult a gyarmatosítási törekvésekhez és a világkereskedelem fejlődéséhez.",
+     "type": "text",
+     "heading": "Kulcsszemélyek a felfedezések korában",
+     "key_term": "személyek"
+    },
+    "after": {
+     "body": "Kolumbusz Kristóf, Vasco da Gama és Ferdinánd Magellán kulcsszereplői voltak a földrajzi felfedezéseknek. Kolumbusz 1492-ben felfedezte Amerikát, míg Vasco da Gama 1498-ban eljutott Indiába, ezzel megnyitva az utat a keleti kereskedelem előtt. Ferdinánd Magellán expedíciója 1519 és 1522 között az első körülhajózás volt; Magellán maga 1521-ben meghalt, az utat Elcano fejezte be. Az út igazolta, hogy a Föld körbehajózható. E felfedezők munkássága hozzájárult a gyarmatosítási törekvésekhez és a világkereskedelem fejlődéséhez.",
+     "type": "text",
+     "heading": "Kulcsszemélyek a felfedezések korában",
+     "key_term": "személyek"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-07-003",
+   "lesson_id": "00d16eb9-8d5e-4179-90e2-7d3912a81a76",
+   "block_id": "1021906a-c5af-4854-9392-45846e2046f2",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "„India, amelyet Vasco da Gama felfedezett”",
+   "explanation": "Indiát nem Vasco da Gama fedezte fel; ő 1498-ban a tengeri utat találta meg Indiába.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Vasco_da_Gama",
+     "title": "Vasco da Gama",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Spanyolország a felfedezések középpontjában állt, hiszen Kolumbusz és más felfedezők innen indultak útnak. A spanyol gyarmatosítás során számos terület, köztük a Karib-térség és Dél-Amerika került a spanyol korona alá. India, amelyet Vasco da Gama felfedezett, szintén fontos szerepet játszott a világkereskedelemben, hiszen fűszerek és más értékes áruk forrása volt. E két helyszín központi szerepet játszott a globális gazdasági kapcsolatok kialakulásában.",
+     "type": "text",
+     "heading": "Földrajzi helyszínek: Spanyolország és India",
+     "key_term": "topográfia"
+    },
+    "after": {
+     "body": "Spanyolország a felfedezések középpontjában állt, hiszen Kolumbusz és más felfedezők innen indultak útnak. A spanyol gyarmatosítás során számos terület, köztük a Karib-térség és Dél-Amerika került a spanyol korona alá. India, amelyhez Vasco da Gama 1498-ban megtalálta a tengeri utat, szintén fontos szerepet játszott a világkereskedelemben, hiszen fűszerek és más értékes áruk forrása volt. E két helyszín központi szerepet játszott a globális gazdasági kapcsolatok kialakulásában.",
+     "type": "text",
+     "heading": "Földrajzi helyszínek: Spanyolország és India",
+     "key_term": "topográfia"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-07-004",
+   "lesson_id": "e9a470ee-4c61-447d-9c03-bc868a000d0c",
+   "block_id": "10bf0310-d2a0-4e38-8af7-c85636d2d62a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A 17. században „London … a tőzsde központjává vált”",
+   "explanation": "A 17. századi pénz- és tőzsdeközpont Amszterdam volt (Kelet-indiai Társaság, 1602, az első részvénytőzsde). London tőzsdéje csak a 18. századtól vált meghatározóvá.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Amsterdam_Stock_Exchange",
+     "title": "Amsterdam Stock Exchange",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Dutch_East_India_Company",
+     "title": "Dutch East India Company",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A 17. századra a bankok és tőzsdék megjelenése forradalmasította a pénzügyi rendszereket Európában. London városa a tőzsde központjává vált, ahol részvényeket is lehetett vásárolni, így a tőke mozgása felgyorsult. A bankok szerepe a hitelezésben és a megtakarítások kezelésében alapvetővé vált, lehetővé téve a kereskedelmi ügyletek finanszírozását. Magyarországon a banki rendszer fejlődése szorosan összefonódott a Habsburg Birodalom gazdasági érdekeivel, ami befolyásolta a hazai tőkepiac alakulását.",
+     "type": "text",
+     "heading": "Bankok és tőzsdék",
+     "key_term": "bank"
+    },
+    "after": {
+     "body": "A 17. századra a bankok és tőzsdék megjelenése forradalmasította a pénzügyi rendszereket Európában. Amszterdam vált a tőzsde központjává (1602: a Holland Kelet-indiai Társaság részvényei), ahol részvényeket is lehetett vásárolni, így a tőke mozgása felgyorsult. A bankok szerepe a hitelezésben és a megtakarítások kezelésében alapvetővé vált, lehetővé téve a kereskedelmi ügyletek finanszírozását. Magyarországon a banki rendszer fejlődése szorosan összefonódott a Habsburg Birodalom gazdasági érdekeivel, ami befolyásolta a hazai tőkepiac alakulását.",
+     "type": "text",
+     "heading": "Bankok és tőzsdék",
+     "key_term": "bank"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-07-005",
+   "lesson_id": "a8f797ce-4581-4ca7-92f1-df3402f6c05a",
+   "block_id": "742240cb-6339-4197-9f05-22703e6597ac",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "„Az 1568-as tordai országgyűlésen … Magyarországon” hivatalosan elismert vallási türelem",
+   "explanation": "A tordai országgyűlést (1568) az Erdélyi Fejedelemségben tartották, nem a Magyar Királyságban; a szabad vallásgyakorlat az erdélyi négy bevett vallásra (katolikus, evangélikus, református, unitárius) vonatkozott.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Diet_of_Torda",
+     "title": "Diet of Torda",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A reformáció idején Európában és Magyarországon is jelentős vallási változások zajlottak le, amelyek a vallási türelem kérdését középpontba helyezték. A reformáció során számos új vallási irányzat jelent meg, mint például a lutheranizmus és a kálvinizmus, amelyek kihívást jelentettek a katolikus egyház számára. Magyarországon a vallási türelem kérdése különösen fontos volt, mivel a különböző vallási csoportok békés együttélése elengedhetetlen volt a társadalmi stabilitás megőrzéséhez. Az 1568-as tordai országgyűlésen a vallási türelem elve hivatalosan is elismertté vált, amikor kimondták, hogy mindenki szabadon gyakorolhatja vallását. Ez a döntés hozzájárult ahhoz, hogy Magyarországon viszonylagos vallási béke uralkodjon a reformáció idején.",
+     "type": "text",
+     "heading": "Vallási türelem a reformáció idején",
+     "key_term": "vallási türelem"
+    },
+    "after": {
+     "body": "A reformáció idején Európában és Magyarországon is jelentős vallási változások zajlottak le, amelyek a vallási türelem kérdését középpontba helyezték. A reformáció során számos új vallási irányzat jelent meg, mint például a lutheranizmus és a kálvinizmus, amelyek kihívást jelentettek a katolikus egyház számára. Magyarországon a vallási türelem kérdése különösen fontos volt, mivel a különböző vallási csoportok békés együttélése elengedhetetlen volt a társadalmi stabilitás megőrzéséhez. Az 1568-as tordai országgyűlésen Erdélyben a vallási türelem elve hivatalosan is elismertté vált, amikor kimondták, hogy mindenki szabadon gyakorolhatja vallását (a katolikus, evangélikus, református és unitárius felekezetek számára). Ez a döntés hozzájárult ahhoz, hogy Magyarországon viszonylagos vallási béke uralkodjon a reformáció idején.",
+     "type": "text",
+     "heading": "Vallási türelem a reformáció idején",
+     "key_term": "vallási türelem"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-07-006",
+   "lesson_id": "a8f797ce-4581-4ca7-92f1-df3402f6c05a",
+   "block_id": "742240cb-6339-4197-9f05-22703e6597ac",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A kálvinizmus terjedése „különösen a német és a svájci területeken”",
+   "explanation": "A kálvinizmus Svájcban, Hollandiában, Skóciában, Franciaországban (hugenották) és Magyarországon terjedt; a német területeken inkább a lutheranizmus volt jellemző.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Calvinism",
+     "title": "Calvinism",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Kálvin János a reformáció másik kiemelkedő személyisége, aki Genfben alakította ki a református egyházat. Tanításaiban a predestináció, azaz az eleve elrendelés elve játszik központi szerepet, amely a hívők életét és vallási meggyőződésüket is meghatározza. Kálvin munkássága nagy hatással volt a protestantizmus elterjedésére, különösen a német és a svájci területeken. Magyarországon is sok követője akadt, akik a református hitelvek alapján szervezték meg vallási közösségeiket.",
+     "type": "text",
+     "heading": "Kálvin János és a református egyház",
+     "key_term": "Kálvin János"
+    },
+    "after": {
+     "body": "Kálvin János a reformáció másik kiemelkedő személyisége, aki Genfben alakította ki a református egyházat. Tanításaiban a predestináció, azaz az eleve elrendelés elve játszik központi szerepet, amely a hívők életét és vallási meggyőződésüket is meghatározza. Kálvin munkássága nagy hatással volt a protestantizmus elterjedésére, különösen Svájcban, Hollandiában, Skóciában és Magyarországon. Magyarországon is sok követője akadt, akik a református hitelvek alapján szervezték meg vallási közösségeiket.",
+     "type": "text",
+     "heading": "Kálvin János és a református egyház",
+     "key_term": "Kálvin János"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-07-007",
+   "lesson_id": "da9942ba-157a-4063-9190-bf63bf5574a3",
+   "block_id": "b9eb176b-a25a-4a0d-81c9-d8d940a45a00",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az erdélyi vallásbéke lehetővé tette, hogy a románok „megtartsák vallási hovatartozásukat”",
+   "explanation": "A románok ortodox vallását Erdélyben eltűrték, de nem volt bevett vallás: az erdélyi országgyűlés négy bevett vallást ismert el.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Diet_of_Torda",
+     "title": "Diet of Torda",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "body": "Erdély a 16. és 17. században etnikai és vallási sokszínűségével kiemelkedett a magyarországi viszonyok közül. Az erdélyi fejedelemség alatt a különböző vallási közösségek, mint a katolikusok, reformátusok, evangélikusok és unitáriusok, viszonylag békésen éltek egymás mellett. A vallásbéke politikája lehetővé tette, hogy a különböző etnikai csoportok, mint a magyarok, románok és szászok, megtartsák vallási hovatartozásukat. Ez a vallási tolerancia hozzájárult Erdély kulturális fejlődéséhez és a magyar identitás formálódásához.",
+     "type": "text",
+     "heading": "Etnikai sokszínűség és vallásbéke Erdélyben",
+     "key_term": "vallásbéke"
+    },
+    "after": {
+     "body": "Erdély a 16. és 17. században etnikai és vallási sokszínűségével kiemelkedett a magyarországi viszonyok közül. Az erdélyi fejedelemség alatt a különböző vallási közösségek, mint a katolikusok, reformátusok, evangélikusok és unitáriusok, viszonylag békésen éltek egymás mellett. A vallásbéke politikája lehetővé tette, hogy a különböző etnikai csoportok, mint a magyarok, románok és szászok, megtartsák vallásukat (az ortodoxiát csak eltűrték, nem tartozott a négy bevett vallás közé). Ez a vallási tolerancia hozzájárult Erdély kulturális fejlődéséhez és a magyar identitás formálódásához.",
+     "type": "text",
+     "heading": "Etnikai sokszínűség és vallásbéke Erdélyben",
+     "key_term": "vallásbéke"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-07-008",
+   "lesson_id": null,
+   "block_id": "6da84d14-42e7-4217-b5ed-56489d34a001",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 7,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A tordai határozat „a magyar fejedelemségben”",
+   "explanation": "A fejedelemség neve Erdélyi Fejedelemség.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Principality_of_Transylvania_(1570–1711)",
+     "title": "Principality of Transylvania (1570–1711)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1517",
+      "B) 1545",
+      "C) 1568",
+      "D) 1600"
+     ],
+     "question": "Melyik évben fogadták el a tordai határozatot?",
+     "explanation": "A tordai határozat 1568-ban született, amely a vallási türelmet deklarálta a magyar fejedelemségben.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "C",
+     "options": [
+      "A) 1517",
+      "B) 1545",
+      "C) 1568",
+      "D) 1600"
+     ],
+     "question": "Melyik évben fogadták el a tordai határozatot?",
+     "explanation": "A tordai határozat 1568-ban született, amely a vallási türelmet deklarálta az Erdélyi Fejedelemségben.",
+     "question_type": "multiple_choice"
+    }
+   }
+  }
+ ]
+}

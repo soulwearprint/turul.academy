@@ -1,0 +1,281 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világ blokk: 5763e332 (HIST-910-08 L3). Duplikált szövegkártyák: 20ee83c0 [6]/[8]; 43bb3a3c [5]/[8], [7]/[9]."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "20ee83c0-62aa-4a81-baef-034609e34207",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "Zrínyi Miklós „a szigetvári hős … költő is”",
+   "explanation": "Két személyt kever össze: Zrínyi Miklós (kb. 1508–1566) a szigetvári hős, a költő pedig az ő dédunokája, Zrínyi Miklós (1620–1664), a Szigeti veszedelem szerzője.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Nikola_Šubić_Zrinski",
+     "title": "Nikola Šubić Zrinski",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Miklós_Zrínyi_(poet)",
+     "title": "Miklós Zrínyi (poet)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "Zrínyi Miklós nemcsak hadvezér volt, hanem költő is, aki műveiben a hazaszeretetet és a szabadságvágyat hirdette.",
+     "Ugyanezt a nevet viselte dédunokája, Zrínyi Miklós (1620–1664) is, aki hadvezér és költő volt, és a Szigeti veszedelem című eposzban dicsőítette dédapja hőstettét."
+    ]
+   ]
+  },
+  {
+   "block_id": "20ee83c0-62aa-4a81-baef-034609e34207",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Vasvár 1664: „területei egy része a Habsburg Birodalom alá került”",
+   "explanation": "A vasvári békében a törökök megtartották a hódításaikat (Nagyvárad, Érsekújvár), a béke a magyarok számára kedvezőtlen volt. A Habsburg Birodalom nem nyert területet.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Peace_of_Vasvár",
+     "title": "Peace of Vasvár",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "amelynek következtében Magyarország területei egy része a Habsburg Birodalom alá került",
+     "amelyben a törökök megtartották hódításaikat (például Nagyváradot és Érsekújvárat), ezért a béke a magyarok számára kedvezőtlen volt"
+    ]
+   ]
+  },
+  {
+   "block_id": "20ee83c0-62aa-4a81-baef-034609e34207",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "Buda 1686: „Savoyai Jenő vezetésével”; „a török hódoltság végét jelentette”",
+   "explanation": "Budát 1686-ban Lotharingiai Károly vezette szövetséges sereg foglalta vissza. A török hódoltság a karlócai békével (1699) ért véget; a Temesköz 1718-ig török kézen maradt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Siege_of_Buda_(1686)",
+     "title": "Siege of Buda (1686)",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Charles_V,_Duke_of_Lorraine",
+     "title": "Charles V, Duke of Lorraine",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A Habsburg Birodalom, Savoyai Jenő vezetésével,",
+     "A Habsburg Birodalom és szövetségesei, Lotharingiai Károly vezetésével,"
+    ],
+    [
+     "a török hódoltság végét jelentette Magyarország területén",
+     "a török hódoltság végének kezdetét jelentette Magyarország területén"
+    ]
+   ]
+  },
+  {
+   "block_id": "20ee83c0-62aa-4a81-baef-034609e34207",
+   "card_index": 0,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A hajdúszabadság „a 16. század végén alakult ki”",
+   "explanation": "A hajdúk marhahajcsárok, szökött jobbágyok és katonák voltak; a hajdúszabadságot Bocskai István adta 1605-ben, amikor a hajdúkat birtokaira letelepítette és nemességet adott nekik.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hajdú",
+     "title": "Hajdú",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "A hajdúszabadság a 16. század végén alakult ki, amikor a hajdúk, a török hódoltság alatt élő magyarok, fegyveres csoportokba szerveződtek.",
+     "A hajdúk a 16. század végén fegyveres csoportokba szerveződő marhahajcsárok, szökött jobbágyok és katonák voltak; a hajdúszabadságot Bocskai István adta 1605-ben, amikor letelepítette és nemességgel jutalmazta őket."
+    ]
+   ]
+  },
+  {
+   "block_id": "20ee83c0-62aa-4a81-baef-034609e34207",
+   "card_index": 6,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Zrínyi 1664-ben „elfoglalta az eszéki hidat”",
+   "explanation": "Zrínyi 1664 elején a téli hadjáratban felgyújtotta az eszéki hidat, ezzel akadályozta a török utánpótlást.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Miklós_Zrínyi_(poet)",
+     "title": "Miklós Zrínyi (poet)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "és elfoglalta az eszéki hidat",
+     "és felégette az eszéki hidat"
+    ]
+   ]
+  },
+  {
+   "block_id": "20ee83c0-62aa-4a81-baef-034609e34207",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A karlócai béke „végleg lezárta a török hódoltság időszakát”",
+   "explanation": "1699-ben a Temesköz nem került vissza a Habsburgokhoz, csak 1718-ban a pozsareváci békével.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Karlowitz",
+     "title": "Treaty of Karlowitz",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Treaty_of_Passarowitz",
+     "title": "Treaty of Passarowitz",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "végleg lezárta a török hódoltság időszakát Magyarországon, és a területek nagy része",
+     "lezárta a török hódoltság időszakát Magyarország nagy részén (a Temesköz 1718-ig török kézen maradt), és a területek nagy része"
+    ]
+   ]
+  },
+  {
+   "block_id": "43bb3a3c-3b77-417b-aa0d-318a67b08248",
+   "card_index": 7,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A királyi Magyarország „beleértve Pozsony és Bécs környékét”",
+   "explanation": "Bécs Ausztriához tartozott, nem a Magyar Királysághoz. A királyi Magyarország Pozsonyt (fővárosát) is magában foglalta.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Royal_Hungary",
+     "title": "Royal Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "beleértve Pozsony és Bécs környékét",
+     "beleértve Pozsonyt (a főváros) és környékét"
+    ]
+   ]
+  },
+  {
+   "block_id": "427cf024-8b0e-4952-bbab-59b6621e9052",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "„Ki lépett trónra Mohács után?” – kulcs: Szapolyai János",
+   "explanation": "A mohácsi csata után 1526-ban Szapolyai Jánost Székesfehérváron, I. Ferdinándot pedig Pozsonyban választották királlyá. Mindkettőjüket megkoronázták.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Battle_of_Mohács",
+     "title": "Battle of Mohács",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/John_Zápolya",
+     "title": "John Zápolya",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Ferdinand_I,_Holy_Roman_Emperor",
+     "title": "Ferdinand I, Holy Roman Emperor",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "question": "Ki lett a Magyar Királyság első megkoronázott királya Mohács után 1526-ban?",
+    "explanation": "A mohácsi csata után 1526-ban Szapolyai Jánost Székesfehérváron (november 11.) koronázták királlyá, I. Ferdinándot pedig 1527-ben."
+   }
+  },
+  {
+   "block_id": "4042cb5a-836f-4bbd-92ac-41287a7bda80",
+   "card_index": 4,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Erdély aranykora „1606–1629”",
+   "explanation": "Bethlen Gábor 1613 és 1629 között volt fejedelem; az aranykor az ő uralkodásához kötődik. 1606 a bécsi béke éve.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Gabriel_Bethlen",
+     "title": "Gabriel Bethlen",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[1]": "B) 1613–1629",
+    "explanation": "Az Erdélyi Fejedelemség aranykora Bethlen Gábor fejedelemsége (1613–1629) idején volt."
+   }
+  },
+  {
+   "block_id": "4042cb5a-836f-4bbd-92ac-41287a7bda80",
+   "card_index": 3,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Bocskai „sikerült elérnie a fejedelemség függetlenségét”",
+   "explanation": "A bécsi béke (1606) a rendek jogait és Erdély különállását erősítette meg, de az Erdélyi Fejedelemség a Habsburgok és a törökök felett állt fennhatóságukban.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Stephen_Bocskay",
+     "title": "Stephen Bocskay",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "Bocskai István vezette a Habsburgok elleni szabadságharcot 1604–1606 között; a bécsi béke (1606) biztosította a vallásszabadságot és Erdély különállását."
+   }
+  },
+  {
+   "block_id": "93cd1e8c-4009-4fcb-a9d5-e94a96e516d3",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Vasvári béke – „B) A török hódoltság megerősítése” is igaz",
+   "explanation": "A vasvári béke (1664) a törökök hódításait elismerte, így a török hódoltság megerősítéseként is értelmezhető.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Peace_of_Vasvár",
+     "title": "Peace of Vasvár",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "set": {
+    "options[1]": "B) A magyar függetlenség kivívása"
+   }
+  }
+ ]
+}

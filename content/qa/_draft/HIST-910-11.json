@@ -1,0 +1,189 @@
+{
+ "coverage": {
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világ blokk: ebfc010e (HIST-910-11)."
+  ]
+ },
+ "findings": [
+  {
+   "block_id": "1789b762-37c5-435d-97fc-90a7c65094c8",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "wrong",
+   "severity": "medium",
+   "claim": "A reformkor konzervatívjai között „Apponyi Albert”",
+   "explanation": "Apponyi Albert (1846–1933) a reformkor után született. A reformkori konzervatívok: Apponyi György, Dessewffy Aurél.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Albert_Apponyi",
+     "title": "Albert Apponyi",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "mint például Apponyi Albert",
+     "mint például Apponyi György és Dessewffy Aurél"
+    ]
+   ]
+  },
+  {
+   "block_id": "0ab93984-bc86-434a-8d2b-8b817a35775f",
+   "card_index": 3,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "A második ipari forradalom „elektronika”; Edison „feltalálta az elektromos izzót”; „elektronikai gyárak”",
+   "explanation": "A második ipari forradalom villamosságra (nem elektronikára) épült; az elektronika a 20. századi fejlemény. Edison az izzólámpát továbbfejlesztette és kereskedelmileg elterjesztette.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Second_Industrial_Revolution",
+     "title": "Second Industrial Revolution",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb",
+     "title": "Incandescent light bulb",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "az elektronika és a vegyipar fejlődésével",
+     "a villamosság és a vegyipar fejlődésével"
+    ],
+    [
+     "Thomas Edison feltalálta az elektromos izzót, amely",
+     "Thomas Edison továbbfejlesztette és elterjesztette az izzólámpát, amely"
+    ],
+    [
+     "megjelentek az elektronikai gyárak",
+     "megjelentek a villamossági gyárak (például a Ganz)"
+    ]
+   ],
+   "set": {
+    "heading": "A második hullám: villamosság és vegyipar"
+   }
+  },
+  {
+   "block_id": "0ab93984-bc86-434a-8d2b-8b817a35775f",
+   "card_index": 5,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Az ipari forradalom társadalmi hatásai: „szegregáció”",
+   "explanation": "A szegregáció faji vagy csoportos elkülönítést jelent; az ipari forradalom hatása a társadalmi egyenlőtlenség és a városi nyomor növekedése volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Industrial_Revolution",
+     "title": "Industrial Revolution",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "replace": [
+    [
+     "a szegregáció és a munkanélküliség növekedése",
+     "a társadalmi egyenlőtlenség és a munkanélküliség növekedése"
+    ]
+   ]
+  },
+  {
+   "block_id": "1dae9e45-5516-4f02-95a6-2a70b89038c9",
+   "card_index": 2,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Edison „a villanykörte feltalálója”",
+   "explanation": "Az izzólámpát több feltaláló (Swan, Edison) fejlesztette ki; Edison az első tartósan használható és kereskedelmileg elterjedt változatot hozta létre (1879).",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb",
+     "title": "Incandescent light bulb",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "explanation": "Thomas Edison az első tartósan használható, kereskedelmileg elterjedt izzólámpát fejlesztette ki (1879), amely forradalmasította a világítást."
+   }
+  },
+  {
+   "block_id": "1dae9e45-5516-4f02-95a6-2a70b89038c9",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A munkások és a gazdagok közötti különbség: kulcs „Szegregáció”",
+   "explanation": "A szegregáció elkülönítést jelent, nem a vagyoni különbségeket. A helyes fogalom a társadalmi egyenlőtlenség.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Social_inequality",
+     "title": "Social inequality",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "set": {
+    "options[0]": "A) Társadalmi egyenlőtlenség",
+    "explanation": "A társadalmi egyenlőtlenség a munkások és a gazdagok közötti vagyoni és életszínvonalbeli különbséget jelenti, amely az ipari forradalom idején felerősödött."
+   }
+  },
+  {
+   "block_id": "cad7314a-90c9-419a-8594-12a196e6acb7",
+   "card_index": 6,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "Az USA ipari központja a 19. század végén: kulcs New York",
+   "explanation": "A 19. század végi amerikai ipar központja Chicago és Pittsburgh volt; New York pénzügyi és kereskedelmi központ.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Chicago",
+     "title": "Chicago",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Industrial_Revolution_in_the_United_States",
+     "title": "Industrial Revolution in the United States",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "set": {
+    "correct": "A",
+    "explanation": "Chicago a 19. század végén az USA egyik legfontosabb ipari és vasúti csomópontja volt; New York inkább pénzügyi és kereskedelmi központ."
+   }
+  },
+  {
+   "block_id": "1bb6bc9f-6a4f-440f-9e8d-7068934dd0b7",
+   "card_index": 2,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Edison „szabadalmaztatta az első gyakorlati elektromos izzót”",
+   "explanation": "Edison 1879-ben az első tartósan használható, kereskedelmileg elterjedt izzólámpát mutatta be; korábban Swan és mások készítettek izzólámpát.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Incandescent_light_bulb",
+     "title": "Incandescent light bulb",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "replace": [
+    [
+     "szabadalmaztatta az első gyakorlati elektromos izzót",
+     "bemutatta az első tartósan használható, kereskedelmileg elterjedt izzólámpát"
+    ]
+   ]
+  }
+ ]
+}

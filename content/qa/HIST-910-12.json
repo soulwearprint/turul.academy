@@ -1,0 +1,294 @@
+{
+ "nat_id": "HIST-910-12",
+ "snapshot_exported_at": null,
+ "checked_at": "2026-09-30",
+ "coverage": {
+  "blocks": 11,
+  "cards": 54,
+  "modes": [
+   "quiz",
+   "story",
+   "text",
+   "visual"
+  ],
+  "read": [
+   "text",
+   "quiz",
+   "world",
+   "experiment"
+  ],
+  "lint_only": [
+   "story",
+   "visual"
+  ],
+  "notes": [
+   "Üres világ blokkok: 066cf55a, 0e1f9da1 (HIST-910-12)."
+  ]
+ },
+ "findings": [
+  {
+   "id": "HIST-910-12-001",
+   "lesson_id": null,
+   "block_id": "6ca48a71-bfec-42a2-b915-130cf27a621d",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 2,
+   "field": "question",
+   "verdict": "wrong",
+   "severity": "high",
+   "claim": "„Kölcsey Ferenc Hitel című munkája”",
+   "explanation": "A Hitel (1830) szerzője Széchenyi István; Kölcsey a Himnusz és a Parainesis szerzője.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hitel_(book)",
+     "title": "Hitel (book)",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1830",
+      "B) 1844",
+      "C) 1848",
+      "D) 1825"
+     ],
+     "question": "Melyik évben jelent meg Kölcsey Ferenc Hitel című munkája?",
+     "explanation": "A Hitel 1830-ban jelent meg, és jelentős hatással volt a reformkor eszmeáramlatára.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) 1830",
+      "B) 1844",
+      "C) 1848",
+      "D) 1825"
+     ],
+     "question": "Melyik évben jelent meg Széchenyi István Hitel című munkája?",
+     "explanation": "A Hitel 1830-ban jelent meg, és jelentős hatással volt a reformkor eszmeáramlatára.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-12-002",
+   "lesson_id": null,
+   "block_id": "6ca48a71-bfec-42a2-b915-130cf27a621d",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "high",
+   "claim": "A reformkori képviselet: A) „Alsó- és felsőtábla” és B) „Kétkamarás parlament” egyaránt helyes",
+   "explanation": "A kétkamarás országgyűlés az alsó- és felsőtáblából állt, így a két válasz ugyanazt jelenti.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Diet_of_Hungary",
+     "title": "Diet of Hungary",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Alsó- és felsőtábla",
+      "B) Kétkamarás parlament",
+      "C) Egykamarás parlament",
+      "D) Monarchia"
+     ],
+     "question": "Mi jellemzi a reformkor politikai rendszerét, különösen a képviseleti struktúráját?",
+     "explanation": "A reformkorban a magyar országgyűlés kétkamarás rendszerben működött, amely az alsó- és felsőtáblából állt.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "B",
+     "options": [
+      "A) Népképviseleti országgyűlés",
+      "B) Kétkamarás parlament",
+      "C) Egykamarás parlament",
+      "D) Monarchia"
+     ],
+     "question": "Mi jellemzi a reformkor politikai rendszerét, különösen a képviseleti struktúráját?",
+     "explanation": "A reformkorban a magyar országgyűlés kétkamarás rendszerben működött, amely az alsó- és felsőtáblából állt.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-12-003",
+   "lesson_id": null,
+   "block_id": "6ca48a71-bfec-42a2-b915-130cf27a621d",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 0,
+   "field": "explanation",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "A jobbágyfelszabadítás a reformkor eredménye",
+   "explanation": "A jobbágyfelszabadítást 1848 tavaszán, az áprilisi törvények mondták ki; a reformkorban ehhez vezető viták zajlottak.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Hungarian_Reform_Era",
+     "title": "Hungarian Reform Era",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "review",
+   "fix": {
+    "before": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Jobbágyfelszabadítás",
+      "B) Felsőtábla létrehozása",
+      "C) Közteherviselés bevezetése",
+      "D) Örökváltság eltörlése"
+     ],
+     "question": "Mi volt a reformkor egyik legfontosabb következménye a jobbágyok számára?",
+     "explanation": "A jobbágyfelszabadítás a reformkor egyik legfontosabb vívmánya, amely lehetővé tette a jobbágyok szabad mozgását és a földtulajdonosi viszonyok megváltozását.",
+     "question_type": "multiple_choice"
+    },
+    "after": {
+     "type": "quiz",
+     "correct": "A",
+     "options": [
+      "A) Jobbágyfelszabadítás",
+      "B) Felsőtábla létrehozása",
+      "C) Közteherviselés bevezetése",
+      "D) Örökváltság eltörlése"
+     ],
+     "question": "Mi volt a reformkor egyik legfontosabb következménye a jobbágyok számára?",
+     "explanation": "A jobbágyfelszabadításról a reformkorban vitáztak, és 1848 tavaszán, az áprilisi törvények mondták ki; ez szabad mozgást és földtulajdont jelentett a jobbágyok számára.",
+     "question_type": "multiple_choice"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-12-004",
+   "lesson_id": null,
+   "block_id": "6ca48a71-bfec-42a2-b915-130cf27a621d",
+   "mode": "quiz",
+   "scope": "topic",
+   "card_index": 1,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A közteherviselés kulcsa: Deák Ferenc",
+   "explanation": "A közteherviselés mellett Deák és Kossuth is érvelt; a legjelentősebb szószólója Deák és a liberális ellenzék volt.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Deák_Ferenc",
+     "title": "Deák Ferenc",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "none"
+  },
+  {
+   "id": "HIST-910-12-005",
+   "lesson_id": "d697a8ac-f3bd-42f4-8e2a-4a1943b58c7c",
+   "block_id": "45e90d28-fd5f-4079-9133-eb13af42b275",
+   "mode": "quiz",
+   "scope": "lesson",
+   "card_index": 3,
+   "field": "options",
+   "verdict": "quiz_key",
+   "severity": "medium",
+   "claim": "A polgári alkotmányosság legismertebb képviselője: Kossuth Lajos (a szöveg Deákot említi)",
+   "explanation": "A polgári alkotmányosság ügyét Deák Ferenc képviselte következetesen; Kossuth a demokratikus követelések szószólója volt. A kérdés kétértelmű.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ferenc_Deák",
+     "title": "Ferenc Deák",
+     "accessed": "2026-09-30"
+    },
+    {
+     "url": "https://en.wikipedia.org/wiki/Lajos_Kossuth",
+     "title": "Lajos Kossuth",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "none"
+  },
+  {
+   "id": "HIST-910-12-006",
+   "lesson_id": "d697a8ac-f3bd-42f4-8e2a-4a1943b58c7c",
+   "block_id": "a1c6141b-2648-4d8e-82c0-cc91e4f0735a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 4,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "medium",
+   "claim": "Kossuth „a nemzeti függetlenségért küzdött” a reformkorban",
+   "explanation": "A reformkorban Kossuth a Habsburg Birodalmon belül követelt alkotmányos reformokat; a függetlenség csak 1849-ben vált céllá.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Lajos_Kossuth",
+     "title": "Lajos Kossuth",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "Széchenyi István és Kossuth Lajos a reformkor két kiemelkedő alakja volt, akik különböző megközelítéseket képviseltek a reformok terén. Széchenyi a gazdasági fejlődés és a modernizáció híve volt, míg Kossuth a politikai szabadságjogokért és a nemzeti függetlenségért küzdött. A két vezető közötti vita a reformkor szellemi életének egyik középpontja volt, amely a magyar társadalom jövőjét alapvetően befolyásolta. E viták során a reformok irányvonalai és céljai formálódtak meg.",
+     "type": "text",
+     "heading": "Széchenyi és Kossuth programja és vitája",
+     "key_term": "Széchenyi és Kossuth"
+    },
+    "after": {
+     "body": "Széchenyi István és Kossuth Lajos a reformkor két kiemelkedő alakja volt, akik különböző megközelítéseket képviseltek a reformok terén. Széchenyi a gazdasági fejlődés és a modernizáció híve volt, míg Kossuth a politikai szabadságjogokért és az alkotmányos reformokért küzdött a Habsburg Birodalmon belül. A két vezető közötti vita a reformkor szellemi életének egyik középpontja volt, amely a magyar társadalom jövőjét alapvetően befolyásolta. E viták során a reformok irányvonalai és céljai formálódtak meg.",
+     "type": "text",
+     "heading": "Széchenyi és Kossuth programja és vitája",
+     "key_term": "Széchenyi és Kossuth"
+    }
+   }
+  },
+  {
+   "id": "HIST-910-12-007",
+   "lesson_id": "d697a8ac-f3bd-42f4-8e2a-4a1943b58c7c",
+   "block_id": "a1c6141b-2648-4d8e-82c0-cc91e4f0735a",
+   "mode": "text",
+   "scope": "lesson",
+   "card_index": 1,
+   "field": "body",
+   "verdict": "misleading",
+   "severity": "low",
+   "claim": "Kölcsey „érdekegyesítést szorgalmazott a magyar nyelv védelme érdekében”",
+   "explanation": "Az érdekegyesítés a nemesek és nem nemesek érdekeinek összekapcsolását jelentette, nem a nyelv védelmét.",
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Ferenc_Kölcsey",
+     "title": "Ferenc Kölcsey",
+     "accessed": "2026-09-30"
+    }
+   ],
+   "apply": "auto",
+   "fix": {
+    "before": {
+     "body": "A magyar nyelv ügye kulcsszerepet játszott a nemzetté válás folyamatában. 1844-ben a magyar államnyelvről szóló törvény meghozatala jelentős lépést jelentett a magyar nyelv hivatalos használatának megerősítésében. Kölcsey Ferenc és más költők, írók, valamint politikai vezetők érdekegyesítést szorgalmaztak a magyar nyelv védelme érdekében. A nyelv, mint a nemzeti identitás kifejezője, hozzájárult a magyar nép összetartozásának érzéséhez.",
+     "type": "text",
+     "heading": "A magyar nyelv ügye és a nemzetté válás",
+     "key_term": "magyar nyelv ügye"
+    },
+    "after": {
+     "body": "A magyar nyelv ügye kulcsszerepet játszott a nemzetté válás folyamatában. 1844-ben a magyar államnyelvről szóló törvény meghozatala jelentős lépést jelentett a magyar nyelv hivatalos használatának megerősítésében. Kölcsey Ferenc és más költők, írók, valamint politikai vezetők a magyar nyelv védelmét szorgalmazták; az érdekegyesítés a nemesek és a nem nemesek érdekeinek összekapcsolását jelentette. A nyelv, mint a nemzeti identitás kifejezője, hozzájárult a magyar nép összetartozásának érzéséhez.",
+     "type": "text",
+     "heading": "A magyar nyelv ügye és a nemzetté válás",
+     "key_term": "magyar nyelv ügye"
+    }
+   }
+  }
+ ]
+}
