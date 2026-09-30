@@ -19,6 +19,8 @@ No network or DB access except `apply`.
 import os, re, sys, json, argparse
 from datetime import date
 
+import content_guards as G    # same checks the generators run before saving
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 SNAP = os.path.join(HERE, "../snapshot")
 QA = os.path.join(HERE, "../qa")
@@ -130,6 +132,10 @@ def lint_card(mode, card):
     ts = sorted({m.group(0).lower() for m in TIME_SENSITIVE.finditer(text)})
     if ts:
         out.append(("time_sensitive", ", ".join(ts)))
+    _seen = ("not A–D", "duplicate options", "no explanation")      # already reported above
+    for p in G.card_problems(mode, card):
+        if not any(s in p for s in _seen):
+            out.append(("guard", p))
     return out
 
 
@@ -143,6 +149,10 @@ def cmd_lint(a):
                     continue
                 n += 1
                 print(f"{kind:15} {b['mode']:10} [{i}] {(L or {}).get('title_hu', 'TOPIC')[:40]:40} {detail}")
+        for detail in G.block_problems(b["mode"], [c for c in (b.get("content") or []) if isinstance(c, dict)]):
+            if not a.only or "guard" in a.only:
+                n += 1
+                print(f"{'guard':15} {b['mode']:10} [-] {(L or {}).get('title_hu', 'TOPIC')[:40]:40} {detail}")
     print(f"\n{n} lint hits in {a.nat_id}", file=sys.stderr)
 
 

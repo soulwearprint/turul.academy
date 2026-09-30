@@ -14,6 +14,7 @@ Usage:
     python generate_temakor.py --nat-id HIST-78-VH1 --no-validate
 """
 import os, json, asyncio, argparse, httpx
+import content_guards as G   # shuffle quizzes, dedupe cards, a/az fixes (see content_guards.py)
 from dotenv import load_dotenv
 
 load_dotenv(os.path.join(os.path.dirname(__file__), "../../backend/.env"))
@@ -104,7 +105,10 @@ async def proof(c, obj):
 def prompt(mode, temakor, tema, altemak, eb):
     head = (f"Témakör: „{temakor}”\nLecke (Téma): „{tema}”\nAltémák: {altemak}\n\n"
             f"A leckének NÉV SZERINT le KELL fednie és kontextusban el kell magyaráznia az alábbi kötelező NAT-elemeket "
-            f"(ki/mi/mikor/hol és miért fontos a magyar történelem szempontjából):\n{eb}\n")
+            f"(ki/mi/mikor/hol és miért fontos):\n{eb}\n"
+            "Magyar vonatkozást CSAK akkor említs, ha az adott elemnek VALÓBAN van ilyen (a NAT-elem vagy a lecke tárgya "
+            "magyar); ne erőltess magyar kapcsolatot, és ne használd sablonként a „magyar történelem szempontjából” "
+            "fordulatot. Ne ismételd meg ugyanazt a tartalmat két kártyában: minden kártya új információt adjon.\n")
     if mode == "text":
         return head + ('\nKészíts strukturált SZÖVEGES leckét magyar-központú nézőpontból. Annyi kártya, amennyi a fenti '
             'elemek értelmes lefedéséhez kell (kb. 5-8). Minden kötelező elem jelenjen meg legalább egy kártyában. '
@@ -150,9 +154,11 @@ def prompt(mode, temakor, tema, altemak, eb):
             "nagyvilágban, miközben a fenti magyar/európai események történtek? Párhuzamos globális események, szereplők, okok. "
             "Kártyánként 3-4 TARTALMAS, tényszerűen pontos mondat a globális eseményről (ne csak egy odavetett mondat). "
             "A `year` mezőbe MINDIG az ADOTT esemény saját évszáma kerüljön (pl. „1917”), NE a témakör teljes időtartama. "
-            "MINDEN kártyához adj egy KONKRÉT, OK-OKOZATI visszacsatolást a lecke magyar témájához (link_hu mező): nevezz meg egy "
-            "konkrét következményt vagy mechanizmust, amely a globális eseménytől EZEN LECKE magyar tárgyáig vezet — valódi okozati "
-            "vagy összefüggés-láncot. "
+            "A `link_hu` mezőbe CSAK akkor írj, ha a globális esemény és EZEN LECKE magyar tárgya között VALÓDI, ismert és "
+            "dokumentált okozati vagy összefüggés-lánc van: nevezd meg a konkrét következményt vagy mechanizmust. Ha ilyet nem "
+            "tudsz tényszerűen megnevezni, hagyd a `link_hu` mezőt ÜRES stringen — TILOS kitalálni magyar vonatkozást, "
+            "ok-okozatot vagy „ez hatással volt Magyarországra” jellegű kapcsolatot csak azért, hogy a mező ki legyen töltve. "
+            "Üres `link_hu` teljesen rendben van. "
             "Ha hatásról írsz, MINDIG mondd meg, MI volt az a konkrét hatás — ne állj meg ott, hogy „jelentős hatással volt” vagy "
             "„befolyásolta a helyzetet”, hanem nevezd meg a konkrét következményt vagy mechanizmust (mi, hol, hogyan). "
             "Felső szintű tények kellenek, nem mély elbeszélés. "
@@ -161,7 +167,7 @@ def prompt(mode, temakor, tema, altemak, eb):
             "Ügyelj a tárgyi pontosságra (helyes évszámok, békeszerződések, személyek — ne keverd össze őket). "
             "Ez kiegészítő, érdeklődő tanulóknak szóló réteg, nem kötelező tananyag. Ha van valós horgony: 4-6 kártya; "
             "ha nincs: pontosan 1 kártya (lásd fent).\n"
-            'JSON: {"title":"Világ ekkor","cards":[{"type":"world","year":"az adott esemény saját évszáma, vagy üres string ha nincs horgony","heading":"","body":"","link_hu":"konkrét ok-okozati kapcsolat e lecke magyar anyagához, vagy üres string ha nincs horgony"}]}')
+            'JSON: {"title":"Világ ekkor","cards":[{"type":"world","year":"az adott esemény saját évszáma, vagy üres string ha nincs horgony","heading":"","body":"","link_hu":"csak valódi, dokumentált kapcsolat e lecke magyar anyagához; különben üres string"}]}')
 
 async def ensure_lessons(c, topic_id, topic_nat, temak):
     """Idempotently create curriculum_lessons (Témák) from the parsed map, matched by title."""
@@ -205,8 +211,11 @@ async def apply_fixes(c, lessons, allowed_names, rep, temakor=None):
         r = (await c.get(f"{SB}/rest/v1/content_blocks?lesson_id=eq.{lesson_id}&mode=eq.{mode}&select=id,content", headers=H_SB)).json()
         return r[0] if r else None
 
-    async def patch(bid, obj):
-        await c.patch(f"{SB}/rest/v1/content_blocks?id=eq.{bid}", headers={**H_SB, "Prefer": "return=minimal"}, json={"content": cards_from(obj)})
+    async def patch(bid, obj, mode):
+        obj, notes = G.postprocess(mode, cards_from(obj))
+        for n in notes:
+            print(f"     ⚠ {mode}: {n}")
+        await c.patch(f"{SB}/rest/v1/content_blocks?id=eq.{bid}", headers={**H_SB, "Prefer": "return=minimal"}, json={"content": obj})
 
     # 1) invented names in story → rewrite to anonymous subjects
     for iss in rep.get("appropriateness", []):
@@ -222,7 +231,7 @@ async def apply_fixes(c, lessons, allowed_names, rep, temakor=None):
                 f"történelmi személyek neve maradhat: {allow}. A tartalmat, a sorrendet és a JSON-szerkezetet tartsd meg, "
                 "csak a neveket cseréld.\n\nKÁRTYÁK:\n" + json.dumps(blk["content"], ensure_ascii=False),
                 temp=0, model=DIST_MODEL, sys=FIX_SYS)
-            await patch(blk["id"], new); fixes += 1
+            await patch(blk["id"], new, "story"); fixes += 1
             print(f"   🔧 nevek cseréje: „{iss['tema']}” / story")
         except Exception as e:
             print(f"   ⚠ név-javítás sikertelen ({iss.get('tema')}): {e}")
@@ -241,7 +250,7 @@ async def apply_fixes(c, lessons, allowed_names, rep, temakor=None):
                 "Csak az érintett szöveget módosítsd, a többi tartalmat és a JSON-szerkezetet hagyd változatlanul.\n\n"
                 "KÁRTYÁK:\n" + json.dumps(blk["content"], ensure_ascii=False),
                 temp=0, model=DIST_MODEL, sys=FIX_SYS)
-            await patch(blk["id"], new); fixes += 1
+            await patch(blk["id"], new, mode); fixes += 1
             print(f"   🔧 tényjavítás: „{iss['tema']}” / {mode}")
         except Exception as e:
             print(f"   ⚠ tényjavítás sikertelen ({iss.get('tema')}): {e}")
@@ -258,7 +267,7 @@ async def apply_fixes(c, lessons, allowed_names, rep, temakor=None):
         try:
             new = await ai(c, prompt("world", temakor or "", tema, "", ""))
             new = await proof(c, new)
-            await patch(blk["id"], new); fixes += 1
+            await patch(blk["id"], new, "world"); fixes += 1
             print(f"   🔧 világréteg újragenerálva (relevancia): „{tema}”")
         except Exception as e:
             print(f"   ⚠ világréteg javítás sikertelen ({tema}): {e}")
@@ -281,7 +290,7 @@ async def apply_fixes(c, lessons, allowed_names, rep, temakor=None):
                 continue
             cards = blk["content"] if isinstance(blk["content"], list) else blk["content"].get("cards", [])
             cards.append(new["card"])
-            await patch(blk["id"], cards); fixes += 1
+            await patch(blk["id"], cards, "text"); fixes += 1
             print(f"   🔧 hiányzó elem pótolva: {el} → „{tema}” / text")
         except Exception as e:
             print(f"   ⚠ elempótlás sikertelen ({el}): {e}")
@@ -328,6 +337,11 @@ async def generate_topic(c, topic_nat, validate=True, modes=None, autofix=True, 
                 try:
                     obj = await ai(c, prompt(mode, temakor, tm["title"], altemak, eb))
                     obj = await proof(c, obj)
+                    obj, notes = G.postprocess(mode, obj)      # shuffle quiz, dedupe, a/az, flag bad keys
+                    if G.has_blocking_problem(notes) and attempt == 1:
+                        raise ValueError("kvíz-hiba, újragenerálás: " + "; ".join(notes[:2]))
+                    for n in notes:
+                        print(f"     ⚠ {tm['title'][:28]} / {mode}: {n}")
                     await save(L["id"], mode, "lesson", obj)
                     print(f"   ✓ {tm['title'][:28]} / {mode} ({len(obj.get('cards',[]))} kártya)")
                     return
@@ -358,6 +372,11 @@ async def generate_topic(c, topic_nat, validate=True, modes=None, autofix=True, 
                     'JSON: {"title":"Témazáró kvíz","cards":[{"type":"quiz","question_type":"multiple_choice","question":"","options":["A) ","B) ","C) ","D) "],"correct":"A","explanation":""}]}',
                     maxtok=3500)
                 q = await proof(c, q)
+                q, notes = G.postprocess("quiz", q)
+                if G.has_blocking_problem(notes) and attempt == 1:
+                    raise ValueError("kvíz-hiba, újragenerálás: " + "; ".join(notes[:2]))
+                for n in notes:
+                    print(f"     ⚠ témazáró: {n}")
                 await save(None, "quiz", "topic", q)
                 print(f"   ✓ témazáró kvíz ({len(q.get('cards',[]))} kérdés)")
                 break
