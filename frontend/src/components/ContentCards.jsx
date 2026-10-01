@@ -1,9 +1,11 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import SketchDiagram from './SketchDiagram'
 import { useLang } from '../contexts/LanguageContext'
 import { badgeIcon } from '../lib/badges'
 import ReportButton from './ReportButton'
 import CardImage, { Timeline } from './CardImage'
+import ReadAloudButton from './ReadAloudButton'
+import { useNarration } from '../lib/useNarration'
 
 // Shared renderers for NAT 3-tier content_blocks (text | story | visual | quiz | world).
 // Any text/story/visual/world card may carry an `image` (see CardImage); visual cards may
@@ -180,7 +182,8 @@ export function QuizCard({ card }) {
 
 // Scored quiz: per-question reveal on pick, then submit for XP.
 // reportCtx (optional): { topicId, lessonId, scope, mode } — adds „Hibát találtál?” to each question.
-export function QuizRunner({ cards, onSubmit, reportCtx }) {
+// narration (optional): { id, title, items } index-aligned with `cards` — adds „Felolvasás” (question + options, never the answer).
+export function QuizRunner({ cards, onSubmit, reportCtx, narration }) {
   const { t } = useLang()
   const [picks, setPicks] = useState({})       // index -> letter
   const [result, setResult] = useState(null)
@@ -223,6 +226,11 @@ export function QuizRunner({ cards, onSubmit, reportCtx }) {
         return (
           <div key={qi} className="bg-white rounded-2xl shadow-sm border border-slate-100 px-6 py-6 flex flex-col gap-3">
             <h3 className="text-lg font-bold text-slate-900 leading-snug">{card.question}</h3>
+            {narration?.items?.[qi] && (
+              <div className="-mt-1 -ml-2.5">
+                <ReadAloudButton queue={{ id: `${narration.id}:${qi}`, title: narration.title, items: [narration.items[qi]] }} />
+              </div>
+            )}
             <div className="flex flex-col gap-2">
               {(card.options || []).map((opt, i) => {
                 const letter = String.fromCharCode(65 + i)
@@ -286,7 +294,7 @@ export function QuizRunner({ cards, onSubmit, reportCtx }) {
 
 // „Mesélj még!” — a pre-generated deep dive anchored to one text card (content_blocks
 // mode 'deep'). Collapsed it's a single row under the card; nothing is fetched on tap.
-export function DeepDive({ card, open, onToggle, footer }) {
+export function DeepDive({ card, open, onToggle, footer, listen }) {
   const { t } = useLang()
   const [revealed, setRevealed] = useState(false)
   return (
@@ -316,7 +324,12 @@ export function DeepDive({ card, open, onToggle, footer }) {
                     className="mt-2 text-xs font-semibold text-turul-purple hover:underline">{t('deep.reveal')}</button>)}
             </div>
           )}
-          {footer && <div className="flex justify-end -mb-4 -mr-4">{footer}</div>}
+          {(footer || listen) && (
+            <div className="flex items-center justify-between -mb-4 -mx-4">
+              <div>{listen}</div>
+              <div>{footer}</div>
+            </div>
+          )}
         </div>
       )}
     </div>
@@ -325,19 +338,30 @@ export function DeepDive({ card, open, onToggle, footer }) {
 
 // renderAfter(i) → optional node rendered inside card i's frame, below the card (e.g. a DeepDive).
 // reportCtx (optional): { topicId, lessonId, scope } — adds „Hibát találtál?” under each card.
-export function CardList({ mode, cards, renderAfter, reportCtx }) {
+// narration (optional): { id, title, items } index-aligned with `cards` — adds „Felolvasás” under each card,
+// and while this list is being read the current card is outlined and kept in view.
+export function CardList({ mode, cards, renderAfter, reportCtx, narration }) {
   const Renderer = { text: TextCard, story: StoryCard, visual: VisualCard, world: WorldCard,
                      experiment: ExperimentCard, quiz: QuizCard }[mode]
+  const { state } = useNarration()
+  const frames = useRef([])
+  const reading = narration && state.queueId === narration.id && state.status !== 'idle' ? state.index : -1
+  useEffect(() => {
+    if (reading >= 0) frames.current[reading]?.scrollIntoView?.({ behavior: 'smooth', block: 'center' })
+  }, [reading])
   if (!Renderer) return null
   return (
     <div className="flex flex-col gap-4">
       {(cards || []).map((c, i) => (
-        <div key={i} className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+        <div key={i} ref={el => { frames.current[i] = el }}
+          className={`bg-white rounded-2xl shadow-sm border overflow-hidden scroll-mt-20 transition-shadow ${
+            reading === i ? 'border-turul-blue ring-2 ring-turul-blue/60' : 'border-slate-100'}`}>
           <Renderer card={c} />
           {/* Directly under its card, above any renderAfter row, so it's clearly this card's. */}
-          {reportCtx && (
-            <div className="flex justify-end px-2 pb-1 -mt-2">
-              <ReportButton ctx={{ ...reportCtx, mode }} index={i} quiz={mode === 'quiz'} />
+          {(reportCtx || narration?.items?.[i]) && (
+            <div className="flex items-center justify-between px-2 pb-1 -mt-2">
+              <div>{narration?.items?.[i] && <ReadAloudButton queue={narration} index={i} />}</div>
+              <div>{reportCtx && <ReportButton ctx={{ ...reportCtx, mode }} index={i} quiz={mode === 'quiz'} />}</div>
             </div>
           )}
           {renderAfter?.(i)}

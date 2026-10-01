@@ -6,6 +6,32 @@ idea when a session gets archived." Added 2026-07-07._
 
 ## Product features
 
+- **Felolvasás (read aloud / audiobook mode) — built 2026-10-01, audio not generated yet.** A „Lecke meghallgatása” button
+  on every lesson tab (reads the tab card after card, outlines the current card), a „Felolvasás” button on every card and
+  deep dive, one per quiz question (question + options, never the answer), and a player bar that stays on every page.
+  *Why files:* browsers stop `speechSynthesis` when the screen locks, but keep playing an `<audio>` file and show its
+  lock-screen controls (Media Session). So the lesson text is turned into mp3 files once; a card with no file is read
+  by the browser's own voice instead (on screen only, the bar says so).
+  - *Code:* `backend/core/speech.py` (what is spoken; the only place that decides it), `backend/core/narration.py` +
+    `routes/nat.py` / `routes/lessons.py` (each lesson response now carries `narration` per card), `frontend/src/lib/narration.js`
+    (player, tested with `npm test`), `NarrationBar` / `ReadAloudButton`, `database/migrations/v11_narration_audio.sql`,
+    `content/generators/generate_audio.py`.
+  - *To switch the audiobook on (nothing here is done yet):* 1) apply v11 in the Supabase SQL editor; 2) put
+    `AZURE_SPEECH_KEY` + `AZURE_SPEECH_REGION` (or `OPENAI_API_KEY`) in `backend/.env`; 3) `generate_audio.py sample
+    --nat-id PHYS-78-03` and **listen** — Hungarian quality differs a lot between voices; 4) `generate_audio.py run
+    --nat-id PHYS-78-03 --apply`, then more Témakörök, or `--all --apply --max-chars 3000000`. Re-run after content edits
+    (edited cards get a new hash and fall back to the browser voice until then); `prune` deletes audio nobody uses.
+  - *Size (measured 2026-10-01 on live content, 6,586 distinct texts):* 3.09 M characters ≈ 60 h ≈ 870 MB at 32 kbit/s,
+    ≈ $49 at an assumed $16 per million characters (check the provider's price). Without „Mesélj még!”: 1.93 M ≈ $31;
+    only the `text` tab (`--modes text`): 0.85 M ≈ $14.
+  - *Not verified:* locked-screen playback on a real iPhone and Android phone (only headless Chromium was available:
+    auto-advance, Media Session metadata, navigation persistence). Both TTS providers are implemented against their
+    documented REST APIs but have not been called (no key in the cloud session). If iOS drops the card-to-card hand-off
+    while locked, the fallback is one mp3 per tab with cue points.
+  - *Known gaps:* listening is not counted as study time (the timer needs a visible, touched page); no offline audio
+    (files are not cached by the service worker — Safari needs range-request handling for that); pronunciation of
+    years/ordinals/names is whatever the voice does, apart from the abbreviations, units and formulas `speech.py` expands.
+
 - **Layered lesson filter.** A way to find lessons by filtering on **subject + topic + a
   word/phrase**, in any combination (e.g. just a word search across all subjects; or subject +
   word; or all three). Doesn't exist yet in any form — the current nav is pure drill-down

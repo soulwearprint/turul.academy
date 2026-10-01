@@ -3,6 +3,7 @@ from fastapi import APIRouter, HTTPException, Depends
 from pydantic import BaseModel
 from core.auth import get_current_user, SupabaseUser
 from core.db import db_get, db_post, db_patch
+from core.narration import narration_for
 
 router = APIRouter(prefix="/api/lessons", tags=["lessons"])
 
@@ -16,7 +17,12 @@ async def get_lesson(lesson_id: str):
     )
     if not lessons:
         raise HTTPException(status_code=404, detail="Lesson not found")
-    return lessons[0]
+    lesson = lessons[0]
+    cards = lesson.get("content")
+    if lesson.get("mode") and isinstance(cards, list):
+        # „Felolvasás”: one entry per card, index-aligned (see core/narration.py).
+        lesson["narration"] = (await narration_for({lesson["mode"]: cards})).get(lesson["mode"], [])
+    return lesson
 
 
 @router.get("/topic/{topic_id}")

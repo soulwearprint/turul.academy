@@ -13,6 +13,7 @@ from core.db import db_get, db_post, db_patch, db_delete, db_rpc
 from core.auth import get_current_user, SupabaseUser
 from core.xp import award_xp, log_study_time, revoke_xp
 from core.badges import safe_evaluate
+from core.narration import narration_for, quiz_narration
 
 router = APIRouter(prefix="/api/nat", tags=["nat"])
 
@@ -86,7 +87,8 @@ async def nat_lesson(lesson_id: str):
         service=True,
     )
     by_mode = {b["mode"]: b["content"] for b in blocks}
-    return {**lessons[0], "blocks": by_mode, "modes": [m for m in MODES if m in by_mode]}
+    return {**lessons[0], "blocks": by_mode, "modes": [m for m in MODES if m in by_mode],
+            "narration": await narration_for(by_mode)}
 
 
 @router.get("/topics/{topic_id}/quiz")
@@ -100,7 +102,7 @@ async def nat_topic_quiz(topic_id: str):
     )
     if not blocks:
         raise HTTPException(status_code=404, detail="Topic quiz not found")
-    return {"cards": blocks[0]["content"]}
+    return {"cards": blocks[0]["content"], "narration": quiz_narration(blocks[0]["content"])}
 
 
 # ─── progress + quiz (user-owned; service-role writes scoped by user.id) ───

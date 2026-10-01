@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider, useAuth } from './contexts/AuthContext'
 import { LanguageProvider } from './contexts/LanguageContext'
 import OfflineBanner from './components/OfflineBanner'
+import NarrationBar from './components/NarrationBar'
 
 import LoginPage from './pages/LoginPage'
 import OnboardingPage from './pages/OnboardingPage'
@@ -41,6 +42,7 @@ export default function App() {
       <AuthProvider>
         <BrowserRouter>
           <OfflineBanner />
+          <NarrationBar />
           <Routes>
             {/* Public */}
             <Route path="/login" element={<RedirectIfAuth><LoginPage /></RedirectIfAuth>} />

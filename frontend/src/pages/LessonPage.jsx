@@ -4,6 +4,8 @@ import { useAuth } from '../contexts/AuthContext'
 import { useLang } from '../contexts/LanguageContext'
 import { api } from '../lib/api'
 import ModeBadge from '../components/ModeBadge'
+import { useNarration } from '../lib/useNarration'
+import NarrationIcon from '../components/NarrationIcon'
 
 // ─── Card renderers ───────────────────────────────────────────
 
@@ -90,6 +92,14 @@ export default function LessonPage() {
 
   const token = session?.access_token
 
+  // „Felolvasás”: reading the lesson aloud card by card; the audiobook keeps the visible card in step.
+  const { narrator, state: voice } = useNarration()
+  const queue = lesson?.narration ? { id: `legacy:${lessonId}`, title: lesson.title || '', items: lesson.narration } : null
+  const reading = voice.queueId === `legacy:${lessonId}` && voice.status !== 'idle'
+  useEffect(() => {
+    if (reading) setIndex(voice.index)
+  }, [reading, voice.index])
+
   useEffect(() => {
     async function load() {
       try {
@@ -104,9 +114,13 @@ export default function LessonPage() {
     load()
   }, [lessonId, token])
 
-  function prev() { setIndex(i => Math.max(0, i - 1)) }
+  function goTo(i) {
+    setIndex(i)
+    if (reading && queue) narrator.play(queue, i)
+  }
+  function prev() { goTo(Math.max(0, index - 1)) }
   function next() {
-    if (index < cards.length - 1) setIndex(i => i + 1)
+    if (index < cards.length - 1) goTo(index + 1)
     else finish()
   }
 
@@ -165,6 +179,15 @@ export default function LessonPage() {
             style={{ width: `${progress * 100}%` }}
           />
         </div>
+        {queue && narrator.canPlayQueue(queue) && (
+          <button
+            onClick={() => (reading ? narrator.toggle() : narrator.play(queue, index))}
+            aria-label={t(reading && voice.status !== 'paused' ? 'listen.pause' : 'listen.card')}
+            className="w-9 h-9 flex items-center justify-center rounded-xl hover:bg-slate-100 text-lg"
+          >
+            {reading ? <NarrationIcon name={voice.status === 'paused' ? 'play' : 'pause'} /> : '🎧'}
+          </button>
+        )}
         <ModeBadge mode={lesson?.mode} />
       </div>
 
