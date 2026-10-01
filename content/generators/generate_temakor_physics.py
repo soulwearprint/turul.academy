@@ -28,6 +28,7 @@ Usage:
 import os, json, asyncio, argparse, httpx
 from dotenv import load_dotenv
 from generate_temakor import cards_from
+import content_guards as G   # shuffle quizzes, dedupe cards, a/az fixes (see content_guards.py)
 
 load_dotenv(os.path.join(os.path.dirname(__file__), "../../backend/.env"))
 SB = os.getenv("SUPABASE_URL"); SVC = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
@@ -158,6 +159,18 @@ SKETCH_VOCAB = (
     '{"type":"label","x":300,"y":170,"text":"I"}]}'
 )
 
+TERMINOLOGY_GUIDANCE = (
+    "SZAKSZAVAK (ne keverd össze őket; ha egy szónak két jelentése van, mondd meg, melyikről beszélsz): "
+    "felhajtóerő = folyadékban vagy gázban a testre ható felfelé mutató erő (Arkhimédész törvénye); a szilárd "
+    "felület által kifejtett erő tartóerő (nyomóerő) — NEM felhajtóerő. "
+    "lebegés = (hangtanban) két közeli frekvenciájú hullám interferenciájából adódó erősödő-gyengülő hang; "
+    "(folyadékban) a test lebeg, ha az átlagsűrűsége egyenlő a folyadékéval — mindig egyértelműsítsd. "
+    "lökéshullám = a hangsebességnél gyorsabban mozgó test vagy robbanás keltette hirtelen nyomásugrás, NEM "
+    "azonos a közönséges hanghullámmal. "
+    "Egy fogalmat csak egyszer tegyél zárójelbe a saját szinonimájával; ne írd ki kétszer ugyanazt (pl. „hanghullám "
+    "(hanghullám)”), és ne használj idegen (angol) szavakat zárójelben."
+)
+
 MODERN_EXAMPLE_GUIDANCE = (
     "PÉLDÁK VÁLASZTÁSA: ha mai gyakorlati alkalmazást vagy hétköznapi példát említesz, azt válaszd, ami egy "
     "MAI magyar tizenéves számára VALÓBAN ismerős és gyakori — pl. vezeték nélküli (Qi) telefontöltés, "
@@ -178,7 +191,7 @@ def prompt(mode, temakor, tema, feladatok, fogalmak, tevekenysegek):
             '(NE száraz-akadémikus felsorolás). Annyi kártya, amennyi a fenti feladatok/fogalmak értelmes '
             'lefedéséhez kell (kb. 5-8). Minden kötelező feladat és fogalom jelenjen meg legalább egy kártyában. '
             '4-6 tartalmas, tényszerű mondat kártyánként.\n'
-            f'{MODERN_EXAMPLE_GUIDANCE}\n'
+            f'{MODERN_EXAMPLE_GUIDANCE}\n{TERMINOLOGY_GUIDANCE}\n'
             'JSON: {"title":"","cards":[{"type":"text","heading":"","body":"","key_term":""}]}')
     if mode == "story":
         return head + ('\nKészíts RENDSZER-NYOMKÖVETÉS leckét — ez NEM különálló hétköznapi jelenetek sorozata '
@@ -192,7 +205,7 @@ def prompt(mode, temakor, tema, feladatok, fogalmak, tevekenysegek):
             'HARMADIK SZEMÉLYBEN, névtelen szereplőkkel, ha egyáltalán szerepel ember — SOSE adj kitalált '
             'személynevet. Kösd össze az állomásokat a fenti kötelező feladatokkal/fogalmakkal. 4-6 kártya, '
             'EGY összefüggő történetszál (ne 4-6 különböző, egymástól független jelenet).\n'
-            f'{MODERN_EXAMPLE_GUIDANCE}\n'
+            f'{MODERN_EXAMPLE_GUIDANCE}\n{TERMINOLOGY_GUIDANCE}\n'
             'JSON: {"title":"","cards":[{"type":"story","heading":"","body":""}]}')
     if mode == "visual":
         return head + ('\nKészíts VIZUÁLIS leckét: minden fő fogalomhoz/feladathoz egy szemléltető elem '
@@ -205,7 +218,9 @@ def prompt(mode, temakor, tema, feladatok, fogalmak, tevekenysegek):
             'Minden kérdéshez az `explanation` mezőbe ÍRJ egy rövid, 1-2 mondatos magyarázatot (ez a mező SOSE '
             'lehet üres). KRITIKUS: a helyes opció SZÖVEGE önmagában — a magyarázat elolvasása nélkül is — '
             'legyen fizikailag PONTOS és EGYÉRTELMŰ (ha a helyes opció megfogalmazása pontatlan/félrevezető, '
-            'javítsd, mielőtt visszaadod), ÉS az explanation ne mondjon neki ellent.\n'
+            'javítsd, mielőtt visszaadod), ÉS az explanation ne mondjon neki ellent. PONTOSAN EGY opció legyen helyes: '
+            'TILOS „minden fenti” / „mindhárom” opció, és a helyes válasz ne a részhalmaza egy másik opciónak. '
+            'Nem kell az opciók sorrendjével foglalkoznod, a rendszer összekeveri őket.\n' + TERMINOLOGY_GUIDANCE + '\n'
             'JSON: {"title":"","cards":[{"type":"quiz","question_type":"multiple_choice","question":"",'
             '"options":["A) ","B) ","C) ","D) "],"correct":"A","explanation":"1-2 mondatos indoklás"}]}')
     if mode == "experiment":
@@ -237,7 +252,7 @@ def prompt(mode, temakor, tema, feladatok, fogalmak, tevekenysegek):
             "adott lecke tartalmához nem illik erőltetve — NE tölts ki mezőt gyenge/kitalált tartalommal. "
             "Tárgyi pontosság kritikus (ne keverd össze tudósokat, évszámokat, felfedezéseket). Biztonság: "
             "SOSE javasolj veszélyes áramot/eszközt felügyelet nélküli otthoni kísérletként.\n"
-            f"{MODERN_EXAMPLE_GUIDANCE}\n"
+            f"{MODERN_EXAMPLE_GUIDANCE}\n{TERMINOLOGY_GUIDANCE}\n"
             'JSON: {"title":"Kísérlet és felfedezés","cards":[{"type":"experiment","heading":"",'
             '"discovery":"","sketch":{"viewBox":"0 0 400 300","shapes":[]},"today":"","try_basic":"",'
             '"try_advanced":""}]}')
@@ -270,8 +285,11 @@ async def apply_fixes(c, lessons, rep, temakor=None):
         r = (await c.get(f"{SB}/rest/v1/content_blocks?lesson_id=eq.{lesson_id}&mode=eq.{mode}&select=id,content", headers=H_SB)).json()
         return r[0] if r else None
 
-    async def patch(bid, obj):
-        await c.patch(f"{SB}/rest/v1/content_blocks?id=eq.{bid}", headers={**H_SB, "Prefer": "return=minimal"}, json={"content": cards_from(obj)})
+    async def patch(bid, obj, mode):
+        obj, notes = G.postprocess(mode, cards_from(obj))
+        for n in notes:
+            print(f"     ⚠ {mode}: {n}")
+        await c.patch(f"{SB}/rest/v1/content_blocks?id=eq.{bid}", headers={**H_SB, "Prefer": "return=minimal"}, json={"content": obj})
 
     for iss in rep.get("appropriateness", []):
         if iss.get("kind") != "nev":
@@ -286,7 +304,7 @@ async def apply_fixes(c, lessons, rep, temakor=None):
                 "A tartalmat, a sorrendet és a JSON-szerkezetet tartsd meg, csak a neveket cseréld.\n\n"
                 "KÁRTYÁK:\n" + json.dumps(blk["content"], ensure_ascii=False),
                 temp=0, model=DIST_MODEL, sys=FIX_SYS)
-            await patch(blk["id"], new); fixes += 1
+            await patch(blk["id"], new, "story"); fixes += 1
             print(f"   🔧 nevek cseréje: „{iss['tema']}” / story")
         except Exception as e:
             print(f"   ⚠ név-javítás sikertelen ({iss.get('tema')}): {e}")
@@ -304,7 +322,7 @@ async def apply_fixes(c, lessons, rep, temakor=None):
                 "Csak az érintett szöveget módosítsd, a többi tartalmat és a JSON-szerkezetet hagyd változatlanul.\n\n"
                 "KÁRTYÁK:\n" + json.dumps(blk["content"], ensure_ascii=False),
                 temp=0, model=DIST_MODEL, sys=FIX_SYS)
-            await patch(blk["id"], new); fixes += 1
+            await patch(blk["id"], new, mode); fixes += 1
             print(f"   🔧 tényjavítás: „{iss['tema']}” / {mode}")
         except Exception as e:
             print(f"   ⚠ tényjavítás sikertelen ({iss.get('tema')}): {e}")
@@ -318,7 +336,7 @@ async def apply_fixes(c, lessons, rep, temakor=None):
         try:
             new = await ai(c, prompt("experiment", temakor or "", tema, [], [], []))
             new = await proof(c, new)
-            await patch(blk["id"], new); fixes += 1
+            await patch(blk["id"], new, "experiment"); fixes += 1
             print(f"   🔧 kísérlet-réteg újragenerálva (relevancia): „{tema}”")
         except Exception as e:
             print(f"   ⚠ kísérlet-réteg javítás sikertelen ({tema}): {e}")
@@ -340,7 +358,7 @@ async def apply_fixes(c, lessons, rep, temakor=None):
                 continue
             cards = blk["content"] if isinstance(blk["content"], list) else blk["content"].get("cards", [])
             cards.append(new["card"])
-            await patch(blk["id"], cards); fixes += 1
+            await patch(blk["id"], cards, "text"); fixes += 1
             print(f"   🔧 hiányzó elem pótolva: {el} → „{tema}” / text")
         except Exception as e:
             print(f"   ⚠ elempótlás sikertelen ({el}): {e}")
@@ -387,6 +405,11 @@ async def generate_topic(c, topic_nat, validate=True, modes=None, autofix=True, 
                     obj = await ai(c, prompt(mode, temakor, tm["title"], tm["feladatok"],
                                               d.get("fogalmak", []), d.get("tevekenysegek", [])))
                     obj = await proof(c, obj)
+                    obj, notes = G.postprocess(mode, obj)      # shuffle quiz, dedupe, a/az, flag bad keys
+                    if G.has_blocking_problem(notes) and attempt == 1:
+                        raise ValueError("kvíz-hiba, újragenerálás: " + "; ".join(notes[:2]))
+                    for n in notes:
+                        print(f"     ⚠ {tm['title'][:28]} / {mode}: {n}")
                     await save(L["id"], mode, "lesson", obj)
                     print(f"   ✓ {tm['title'][:28]} / {mode} ({len(obj.get('cards', []))} kártya)")
                     return
@@ -416,6 +439,11 @@ async def generate_topic(c, topic_nat, validate=True, modes=None, autofix=True, 
                     'JSON: {"title":"Témazáró kvíz","cards":[{"type":"quiz","question_type":"multiple_choice","question":"","options":["A) ","B) ","C) ","D) "],"correct":"A","explanation":""}]}',
                     maxtok=3500)
                 q = await proof(c, q)
+                q, notes = G.postprocess("quiz", q)
+                if G.has_blocking_problem(notes) and attempt == 1:
+                    raise ValueError("kvíz-hiba, újragenerálás: " + "; ".join(notes[:2]))
+                for n in notes:
+                    print(f"     ⚠ témazáró: {n}")
                 await save(None, "quiz", "topic", q)
                 print(f"   ✓ témazáró kvíz ({len(q.get('cards', []))} kérdés)")
                 break
