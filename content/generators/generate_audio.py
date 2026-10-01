@@ -20,9 +20,11 @@ can't turn into a whole-library bill. Voice quality for Hungarian differs a lot 
   python generate_audio.py run    --all --apply --max-chars 3000000        # the whole library (explicit budget)
   python generate_audio.py prune  [--apply]                                # drop audio nobody references any more
 
-Provider (first one with a key wins, or --provider):
-  azure   AZURE_SPEECH_KEY + AZURE_SPEECH_REGION   voice hu-HU-NoemiNeural (native Hungarian neural voice)
-  openai  OPENAI_API_KEY                           model gpt-4o-mini-tts, voice alloy (multilingual; accent not native)
+Provider (first one that is set up wins, or --provider):
+  azure   AZURE_SPEECH_KEY + AZURE_SPEECH_REGION   voice hu-HU-NoemiNeural (native Hungarian neural voice); paid
+  openai  OPENAI_API_KEY                           model gpt-4o-mini-tts, voice alloy (multilingual; accent not native); paid
+  piper   PIPER_MODEL=/path/to/hu_HU-anna-medium.onnx   runs on this machine, no key, no per-character cost;
+          needs `pip install piper-tts lameenc` and a downloaded voice (python3 -m piper.download_voices hu_HU-anna-medium)
 Keys are read from backend/.env or the environment — never written anywhere.
 """
 import os
@@ -118,18 +120,60 @@ class OpenAI:
                 "json": body}
 
 
+class Piper:
+    """Offline neural voice (https://github.com/OHF-Voice/piper1-gpl): synthesises on this machine and encodes mp3 with LAME."""
+    name = "piper"
+    PAUSE_S = 0.45                 # between heading / paragraph / timeline rows, like Azure's <break>
+
+    def __init__(self, model_path):
+        try:
+            from piper import PiperVoice
+            import lameenc  # noqa: F401
+        except ImportError as e:
+            raise SystemExit(f"Piper needs `pip install piper-tts lameenc` ({e}).")
+        if not os.path.isfile(model_path):
+            raise SystemExit(f"PIPER_MODEL {model_path!r} not found — download a voice with "
+                             "`python3 -m piper.download_voices hu_HU-anna-medium` and point PIPER_MODEL at the .onnx file.")
+        self._pv = PiperVoice.load(model_path)
+        self.voice = os.path.splitext(os.path.basename(model_path))[0]
+
+    def synthesize(self, text: str) -> bytes:
+        import lameenc
+        enc, out = None, b""
+        for line in (l.strip() for l in text.split("\n")):
+            if not line:
+                continue
+            for chunk in self._pv.synthesize(line):
+                if enc is None:
+                    enc = lameenc.Encoder()
+                    enc.set_bit_rate(32)
+                    enc.set_in_sample_rate(chunk.sample_rate)
+                    enc.set_channels(chunk.sample_channels)
+                    enc.set_quality(2)
+                out += enc.encode(chunk.audio_int16_bytes)
+            if enc is not None:
+                silence = b"\x00\x00" * chunk.sample_channels * int(chunk.sample_rate * self.PAUSE_S)
+                out += enc.encode(silence)
+        return out + enc.flush() if enc is not None else b""
+
+
 def pick_provider(name=None, env=os.environ):
-    name = name or ("azure" if env.get("AZURE_SPEECH_KEY") else "openai" if env.get("OPENAI_API_KEY") else None)
+    name = name or ("azure" if env.get("AZURE_SPEECH_KEY") else "openai" if env.get("OPENAI_API_KEY")
+                    else "piper" if env.get("PIPER_MODEL") else None)
     if name == "azure" and env.get("AZURE_SPEECH_KEY") and env.get("AZURE_SPEECH_REGION"):
         return Azure(env["AZURE_SPEECH_KEY"], env["AZURE_SPEECH_REGION"], env.get("AZURE_SPEECH_VOICE", "hu-HU-NoemiNeural"))
     if name == "openai" and env.get("OPENAI_API_KEY"):
         return OpenAI(env["OPENAI_API_KEY"], env.get("OPENAI_TTS_VOICE", "alloy"), env.get("OPENAI_TTS_MODEL", "gpt-4o-mini-tts"))
-    raise SystemExit("No TTS provider configured: set AZURE_SPEECH_KEY + AZURE_SPEECH_REGION, or OPENAI_API_KEY "
-                     "(backend/.env), or pick one with --provider.")
+    if name == "piper" and env.get("PIPER_MODEL"):
+        return Piper(env["PIPER_MODEL"])
+    raise SystemExit("No TTS provider configured: set AZURE_SPEECH_KEY + AZURE_SPEECH_REGION, or OPENAI_API_KEY, "
+                     "or PIPER_MODEL for the offline voice (backend/.env), or pick one with --provider.")
 
 
 def synth(client: httpx.Client, provider, text: str, sleep=time.sleep) -> bytes:
     """mp3 bytes for `text` (chunked, retried on 429/5xx; plain concatenation of mp3 frames plays fine)."""
+    if hasattr(provider, "synthesize"):            # local engine (Piper): no HTTP, no retries to do
+        return provider.synthesize(text)
     audio = b""
     for chunk in split_chunks(text):
         req = provider.request(chunk)
@@ -333,7 +377,7 @@ def main(argv=None):
     ap.add_argument("--nat-id")
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--modes", default=",".join(S.AUDIO_MODES), type=lambda s: [m for m in s.split(",") if m])
-    ap.add_argument("--provider", choices=["azure", "openai"])
+    ap.add_argument("--provider", choices=["azure", "openai", "piper"])
     ap.add_argument("--n", type=int, default=3, help="sample: how many cards")
     ap.add_argument("--max-chars", type=int, default=DEFAULT_MAX_CHARS, help="run: stop after this many characters")
     ap.add_argument("--apply", action="store_true", help="run/prune: actually spend money and write (default is a dry run)")

@@ -79,6 +79,75 @@ class ProviderTests(unittest.TestCase):
                 G.synth(c, G.OpenAI("bad"), "Szia.")
 
 
+class PiperTests(unittest.TestCase):
+    """The offline provider with a fake PiperVoice (the real Hungarian voice can't be downloaded in CI/cloud)
+    and the real LAME encoder."""
+
+    def setUp(self):
+        try:
+            import lameenc  # noqa: F401
+        except ImportError:
+            self.skipTest("lameenc not installed")
+        import tempfile
+        import types
+        self.said = []
+
+        class Chunk:
+            sample_rate, sample_channels = 22050, 1
+
+            def __init__(self, n):
+                import math
+                self.audio_int16_bytes = b"".join(int(8000 * math.sin(i / 20)).to_bytes(2, "little", signed=True) for i in range(n))
+
+        said = self.said
+
+        class FakeVoice:
+            @staticmethod
+            def load(path):
+                v = FakeVoice()
+                v.path = path
+                return v
+
+            def synthesize(self, text):
+                said.append(text)
+                yield Chunk(11025)          # half a second per sentence
+
+        fake = types.ModuleType("piper")
+        fake.PiperVoice = FakeVoice
+        self._saved = sys.modules.get("piper")
+        sys.modules["piper"] = fake
+        self.model = os.path.join(tempfile.mkdtemp(), "hu_HU-anna-medium.onnx")
+        open(self.model, "wb").close()
+
+    def tearDown(self):
+        if self._saved is None:
+            sys.modules.pop("piper", None)
+        else:
+            sys.modules["piper"] = self._saved
+
+    def test_piper_is_chosen_when_only_a_model_is_set_and_never_over_a_key(self):
+        self.assertEqual(G.pick_provider(env={"PIPER_MODEL": self.model}).name, "piper")
+        self.assertEqual(G.pick_provider(env={"PIPER_MODEL": self.model, "OPENAI_API_KEY": "k"}).name, "openai")
+        self.assertEqual(G.pick_provider("piper", env={"PIPER_MODEL": self.model, "OPENAI_API_KEY": "k"}).voice, "hu_HU-anna-medium")
+
+    def test_missing_model_file_is_a_clear_error(self):
+        with self.assertRaises(SystemExit):
+            G.pick_provider("piper", env={"PIPER_MODEL": self.model + ".nope"})
+
+    def test_synth_returns_mp3_with_a_pause_between_lines(self):
+        p = G.pick_provider("piper", env={"PIPER_MODEL": self.model})
+        with httpx.Client(transport=httpx.MockTransport(lambda r: httpx.Response(500))) as c:   # must never be called
+            data = G.synth(c, p, "Cím.\n\nEgy mondat.\nMásik sor.")
+        self.assertEqual(self.said, ["Cím.", "Egy mondat.", "Másik sor."])
+        self.assertTrue(data[:3] == b"ID3" or (data[0] == 0xFF and data[1] & 0xE0 == 0xE0), data[:4])
+        # 3 lines x (0.5 s speech + 0.45 s pause) at 32 kbit/s ≈ 11 kB; a missing pause or encoder would be far off
+        self.assertTrue(8_000 < len(data) < 16_000, len(data))
+
+    def test_empty_text_gives_no_audio(self):
+        p = G.pick_provider("piper", env={"PIPER_MODEL": self.model})
+        self.assertEqual(p.synthesize("\n\n"), b"")
+
+
 class FakeSupabase:
     """Just enough of PostgREST + Storage for collect/run/prune."""
 
