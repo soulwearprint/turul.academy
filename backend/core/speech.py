@@ -11,7 +11,10 @@ Entry shape (one per card, None when a card has nothing to say):
 from __future__ import annotations
 
 import hashlib
+import logging
 import re
+
+from .speech_units import acronyms, formulas, units
 
 # Cards that become audio files (the audiobook). Quiz cards are read aloud only by the
 # browser voice, one question at a time — a quiz is interactive, not something to play locked.
@@ -33,24 +36,12 @@ _ABBREVIATIONS = [
     (re.compile(r"(?<!\w)ún\."), "úgynevezett"),
     (re.compile(r"(?<!\w)ill\."), "illetve"),
     (re.compile(r"(?<!\w)kb\."), "körülbelül"),
+    (re.compile(r"(?<=\d) db(?!\w)"), " darab"),
     (re.compile(r"(?<!\w)ld\."), "lásd"),
     (re.compile(rf"(?<!\w)id\.\s+(?=[{_CAP}])"), "idősebb "),
     (re.compile(rf"(?<!\w)ifj\.\s+(?=[{_CAP}])"), "ifjabb "),
     (re.compile(rf"(?<!\w)Szt\.\s+(?=[{_CAP}])"), "Szent "),
     (re.compile(rf"(?<!\w)dr\.\s+(?=[{_CAP}])"), "doktor "),
-]
-
-# Units only after a number, so a bare "m" or "N" is never touched. Longest first.
-_UNITS = [
-    (re.compile(r"(?<=\d)\s*km/h\b"), " kilométer per óra"),
-    (re.compile(r"(?<=\d)\s*km/s\b"), " kilométer per szekundum"),
-    (re.compile(r"(?<=\d)\s*m/s(?:²|2)(?!\d)"), " méter per szekundumnégyzet"),
-    (re.compile(r"(?<=\d)\s*m/s\b"), " méter per szekundum"),
-    (re.compile(r"(?<=\d)\s*°\s*C\b"), " Celsius-fok"),
-    (re.compile(r"(?<=\d)\s*kg\b"), " kilogramm"),
-    (re.compile(r"(?<=\d)\s*km\b"), " kilométer"),
-    (re.compile(r"(?<=\d)\s*cm\b"), " centiméter"),
-    (re.compile(r"(?<=\d)\s*mm\b"), " milliméter"),
 ]
 
 # Formula symbols a speech engine reads as "csillag", "kalap" or not at all. Spoken the way a
@@ -77,6 +68,15 @@ _MARKDOWN = [
 ]
 
 
+def _safely(rule, text: str) -> str:
+    """Read-aloud must never be able to break a lesson page: a rule that fails leaves its text as it was."""
+    try:
+        return rule(text)
+    except Exception:   # pragma: no cover — guarded by tests that every table entry parses
+        logging.getLogger(__name__).exception("speech rule %s failed", getattr(rule, "__name__", repr(rule)))
+        return text
+
+
 def clean(text) -> str:
     """One piece of card text → what the voice should read."""
     if not text:
@@ -86,10 +86,11 @@ def clean(text) -> str:
         s = rx.sub(rep, s)
     for rx, rep in _ABBREVIATIONS:
         s = rx.sub(rep, s)
-    for rx, rep in _UNITS:
-        s = rx.sub(rep, s)
+    s = _safely(units, s)
+    s = _safely(acronyms, s)
     for rx, rep in _SYMBOLS:
         s = rx.sub(rep, s)
+    s = _safely(formulas, s)
     s = _GREEK_RX.sub(lambda m: _GREEK[m.group(1)], s)
     s = re.sub(r"[ \t]+", " ", s)
     s = re.sub(r"\(\s+", "(", s)

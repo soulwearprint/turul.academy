@@ -25,12 +25,12 @@ class CleanTests(unittest.TestCase):
         self.assertEqual(S.clean("9,8 m/s²"), "9,8 méter per szekundumnégyzet")
         self.assertEqual(S.clean("20 m/s"), "20 méter per szekundum")
         self.assertEqual(S.clean("5 kg"), "5 kilogramm")
-        self.assertEqual(S.clean("20 °C"), "20 Celsius-fok")
-        self.assertEqual(S.clean("a km/h mértékegység"), "a km/h mértékegység")
+        self.assertEqual(S.clean("20 °C"), "20 Celziusz-fok")
+        self.assertEqual(S.clean("a km/h mértékegység"), "a kilométer per óra mértékegység")   # a slash unit cannot be anything else
         self.assertEqual(S.clean("a kg jele"), "a kg jele")
 
     def test_formulas_are_read_the_way_a_teacher_says_them(self):
-        self.assertEqual(S.clean("F = m * a"), "F egyenlő m szorozva a")
+        self.assertEqual(S.clean("F = m * a"), "F egyenlő m szorozva á")   # acceleration: „a” alone is the article
         self.assertEqual(S.clean("m = ρ · V"), "m egyenlő ró szorozva V")
         self.assertEqual(S.clean("g·T² / (4π²) ≈ 0,25"), "g szorozva T négyzet osztva (4π négyzet) körülbelül egyenlő 0,25")
         self.assertEqual(S.clean("Q = I² * R * t"), "Q egyenlő I négyzet szorozva R szorozva t")
@@ -42,7 +42,7 @@ class CleanTests(unittest.TestCase):
         self.assertEqual(S.clean("hibahatár ±0,5"), "hibahatár plusz-mínusz 0,5")
 
     def test_symbols_inside_ordinary_text_are_left_alone(self):
-        self.assertEqual(S.clean("a 10² nagyság"), "a 10² nagyság")
+        self.assertEqual(S.clean("a 10² nagyság"), "a tíz a másodikon nagyság")   # an exponent is silent otherwise
         self.assertEqual(S.clean("és/vagy"), "és/vagy")
         self.assertEqual(S.clean("a μm és a ρ-érték"), "a μm és a ró-érték")
 
