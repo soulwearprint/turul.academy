@@ -18,6 +18,7 @@ can't turn into a whole-library bill. Voice quality for Hungarian differs a lot 
   python generate_audio.py sample --nat-id PHYS-78-03 [--n 3]              # a few cards → ./audio_sample/*.mp3, no upload
   python generate_audio.py run    --nat-id PHYS-78-03 [--apply]            # synthesise + upload what is missing
   python generate_audio.py run    --all --apply --max-chars 3000000        # the whole library (explicit budget)
+  python generate_audio.py run    --nat-id PHYS-78-03 --replace --provider azure [--apply]   # re-record with another voice
   python generate_audio.py prune  [--apply]                                # drop audio nobody references any more
 
 Provider (first one that is set up wins, or --provider):
@@ -263,15 +264,24 @@ def collect(db: Supa, nat_ids=None, modes=S.AUDIO_MODES) -> dict:
     return found
 
 
-def existing(db: Supa, hashes) -> set:
-    have, hashes = set(), list(hashes)
+def existing_paths(db: Supa, hashes) -> dict:
+    """{text_hash: path} of the texts that already have audio."""
+    have, hashes = {}, list(hashes)
     for i in range(0, len(hashes), 80):
-        have |= {r["text_hash"] for r in db.get("narration_audio", {"text_hash": in_list(hashes[i:i + 80]), "select": "text_hash"})}
+        for r in db.get("narration_audio", {"text_hash": in_list(hashes[i:i + 80]), "select": "text_hash,path"}):
+            have[r["text_hash"]] = r["path"]
     return have
 
 
-def audio_path(text_hash: str) -> str:
-    return f"{text_hash[:2]}/{text_hash}.mp3"
+def existing(db: Supa, hashes) -> set:
+    return set(existing_paths(db, hashes))
+
+
+def audio_path(text_hash: str, rev: str = "") -> str:
+    """Where a card's audio lives in the bucket. The first recording uses the plain hash. A RE-recording
+    (--replace) gets a revision suffix: files are served with a one-year cache header, so overwriting the
+    same URL would keep playing the old voice for anyone who already has it cached."""
+    return f"{text_hash[:2]}/{text_hash}{'-' + rev if rev else ''}.mp3"
 
 
 def size_line(chars: int) -> str:
@@ -317,8 +327,10 @@ def cmd_sample(db, client, a):
 
 def cmd_run(db, client, a):
     found = collect(db, targets(a), tuple(a.modes))
-    have = existing(db, found)
-    todo = [h for h in found if h not in have]
+    paths = existing_paths(db, found)
+    have = set(paths)
+    replace = getattr(a, "replace", False)
+    todo = list(found) if replace else [h for h in found if h not in have]   # --replace: redo texts that already have audio
     budget, batch, spent = a.max_chars, [], 0
     for h in todo:
         n = len(found[h]["text"])
@@ -326,7 +338,8 @@ def cmd_run(db, client, a):
             break
         batch.append(h)
         spent += n
-    print(f"{len(found)} texts, {len(have)} already have audio, {len(todo)} missing; this run: {len(batch)} ({size_line(spent)})")
+    print(f"{len(found)} texts, {len(have)} already have audio, {len(todo)} {'to re-record (--replace)' if replace else 'missing'}; "
+          f"this run: {len(batch)} ({size_line(spent)})")
     if len(batch) < len(todo):
         print(f"  {len(todo) - len(batch)} more are left because of --max-chars {budget:,} (raise it to do them)")
     if not a.apply:
@@ -335,16 +348,23 @@ def cmd_run(db, client, a):
     provider = pick_provider(a.provider)
     announce(provider, a.provider)
     done = failed = streak = 0
+    rev = format(int(time.time()), "x")
     for i, h in enumerate(batch, 1):
         it = found[h]
         try:
             data = synth(client, provider, it["text"])
             if not data:
                 raise RuntimeError("empty audio")
-            path = audio_path(h)
+            old = paths.get(h)
+            path = audio_path(h, rev) if old else audio_path(h)
             db.upload(path, data)
             db.upsert_row({"text_hash": h, "path": path, "provider": provider.name, "voice": provider.voice,
                            "chars": len(it["text"]), "bytes": len(data)})
+            if old and old != path:
+                try:
+                    db.delete_files([old])
+                except httpx.HTTPError:
+                    pass   # an orphaned old file is harmless: nothing points at it any more
             done += 1
             streak = 0
             print(f"  [{i}/{len(batch)}] ✓ {it['nat_id']} [{it['mode']}] {it['title'][:50]}")
@@ -391,6 +411,7 @@ def main(argv=None):
     ap.add_argument("--provider", choices=["azure", "openai", "piper"])
     ap.add_argument("--n", type=int, default=3, help="sample: how many cards")
     ap.add_argument("--max-chars", type=int, default=DEFAULT_MAX_CHARS, help="run: stop after this many characters")
+    ap.add_argument("--replace", action="store_true", help="run: re-record texts that already have audio (to change the voice)")
     ap.add_argument("--apply", action="store_true", help="run/prune: actually spend money and write (default is a dry run)")
     a = ap.parse_args(argv)
     bad = [m for m in a.modes if m not in S.AUDIO_MODES]

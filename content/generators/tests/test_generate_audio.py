@@ -248,6 +248,28 @@ class FlowTests(unittest.TestCase):
         self.assertEqual(self.fake.tts_calls, 1)
         self.assertEqual(list(self.fake.uploads), [G.audio_path(H2)])
 
+    def test_replace_rerecords_under_a_new_path_and_removes_the_old_file(self):
+        self.fake.audio[H1] = {"text_hash": H1, "path": G.audio_path(H1), "provider": "azure", "voice": "old"}
+        a = G.argparse.Namespace(nat_id="PHYS-1", all=False, modes=list(S.AUDIO_MODES), provider="openai", n=3,
+                                 max_chars=10_000, apply=True, replace=True)
+        G.cmd_run(self.db, self.client, a)
+        self.assertEqual(self.fake.tts_calls, 2)                      # H1 again, and H2 for the first time
+        row = self.fake.audio[H1]
+        self.assertEqual((row["provider"], row["voice"]), ("openai", "alloy"))
+        self.assertNotEqual(row["path"], G.audio_path(H1))            # a new URL: the old one may be cached for a year
+        self.assertTrue(row["path"].startswith(f"{H1[:2]}/{H1}-") and row["path"].endswith(".mp3"))
+        self.assertIn(row["path"], self.fake.uploads)
+        self.assertEqual(self.fake.audio[H2]["path"], G.audio_path(H2))   # a text with no audio yet keeps the plain path
+        self.assertEqual(self.fake.deleted_files, [G.audio_path(H1)])
+
+    def test_without_replace_existing_audio_is_left_alone(self):
+        self.fake.audio[H1] = {"text_hash": H1, "path": G.audio_path(H1)}
+        self.fake.audio[H2] = {"text_hash": H2, "path": G.audio_path(H2)}
+        a = G.argparse.Namespace(nat_id="PHYS-1", all=False, modes=list(S.AUDIO_MODES), provider="openai", n=3,
+                                 max_chars=10_000, apply=True)
+        G.cmd_run(self.db, self.client, a)
+        self.assertEqual((self.fake.tts_calls, self.fake.uploads, self.fake.deleted_files), (0, {}, []))
+
     def test_char_budget_stops_the_run(self):
         a = G.argparse.Namespace(nat_id="PHYS-1", all=False, modes=list(S.AUDIO_MODES), provider="openai", n=3,
                                  max_chars=len(S.narration_entry("text", CARD1)["text"]) + 1, apply=True)

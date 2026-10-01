@@ -6,7 +6,7 @@ idea when a session gets archived." Added 2026-07-07._
 
 ## Product features
 
-- **Felolvasás (read aloud / audiobook mode) — built 2026-10-01, audio not generated yet.** A „Lecke meghallgatása” button
+- **Felolvasás (read aloud / audiobook mode) — built 2026-10-01, sample audio generated and listened to by Gábor 2026-10-01 (Piper anna: "not bad, not excellent"); nothing uploaded yet.** A „Lecke meghallgatása” button
   on every lesson tab (reads the tab card after card, outlines the current card), a „Felolvasás” button on every card and
   deep dive, one per quiz question (question + options, never the answer), and a player bar that stays on every page.
   *Why files:* browsers stop `speechSynthesis` when the screen locks, but keep playing an `<audio>` file and show its
@@ -22,6 +22,9 @@ idea when a session gets archived." Added 2026-07-07._
     --nat-id PHYS-78-03` and **listen** — Hungarian quality differs a lot between voices; 4) `generate_audio.py run
     --nat-id PHYS-78-03 --apply`, then more Témakörök, or `--all --apply --max-chars 3000000`. Re-run after content edits
     (edited cards get a new hash and fall back to the browser voice until then); `prune` deletes audio nobody uses.
+    To change the voice later (e.g. start on Piper, move to Azure): `run --nat-id … --replace --provider azure --apply` re-records
+    texts that already have audio under a new file name (the files are cached for a year, so the same URL would keep playing
+    the old voice) and deletes the old file; the lessons keep playing the old audio until each card is swapped.
   - *Size (measured 2026-10-01 on live content, 6,586 distinct texts):* 3.09 M characters ≈ 60 h ≈ 870 MB at 32 kbit/s,
     ≈ $49 at an assumed $16 per million characters (check the provider's price). Without „Mesélj még!”: 1.93 M ≈ $31;
     only the `text` tab (`--modes text`): 0.85 M ≈ $14.
