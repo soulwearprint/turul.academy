@@ -17,7 +17,7 @@
 CREATE TABLE IF NOT EXISTS public.narration_audio (
   text_hash   text PRIMARY KEY CHECK (text_hash ~ '^[0-9a-f]{40}$'),
   path        text NOT NULL,                          -- inside the bucket, e.g. 'da/da4204….mp3'
-  provider    text NOT NULL,                          -- 'azure' | 'openai'
+  provider    text NOT NULL,                          -- 'azure' | 'openai' | 'piper'
   voice       text NOT NULL,                          -- e.g. 'hu-HU-NoemiNeural'
   chars       integer NOT NULL CHECK (chars > 0),     -- characters synthesised (what the provider bills)
   bytes       integer NOT NULL CHECK (bytes > 0),
