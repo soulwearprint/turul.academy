@@ -290,9 +290,19 @@ def cmd_status(db, a):
     print("missing: " + size_line(sum(len(found[h]["text"]) for h in todo)))
 
 
+def announce(provider, explicit, env=os.environ):
+    """Say which voice is about to be used. Several providers can be configured at once and the
+    automatic pick prefers the paid ones, so a stray key in backend/.env must never be a surprise."""
+    others = [n for n, k in (("azure", "AZURE_SPEECH_KEY"), ("openai", "OPENAI_API_KEY"), ("piper", "PIPER_MODEL"))
+              if env.get(k) and n != provider.name]
+    note = f" (also configured: {', '.join(others)}; pick one with --provider)" if others and not explicit else ""
+    print(f"voice: {provider.name} / {provider.voice}{note}")
+
+
 def cmd_sample(db, client, a):
     found = collect(db, targets(a), tuple(a.modes))
     provider = pick_provider(a.provider)
+    announce(provider, a.provider)
     out = os.path.join(os.getcwd(), "audio_sample")
     os.makedirs(out, exist_ok=True)
     for h, it in list(found.items())[:a.n]:
@@ -323,6 +333,7 @@ def cmd_run(db, client, a):
         print("dry run — add --apply to synthesise and upload")
         return
     provider = pick_provider(a.provider)
+    announce(provider, a.provider)
     done = failed = streak = 0
     for i, h in enumerate(batch, 1):
         it = found[h]

@@ -61,6 +61,19 @@ class ProviderTests(unittest.TestCase):
         with self.assertRaises(SystemExit):
             G.pick_provider("azure", env={"AZURE_SPEECH_KEY": "k"})     # region missing
 
+    def test_announce_names_the_voice_and_warns_when_the_pick_was_automatic(self):
+        import contextlib
+        import io
+        env = {"OPENAI_API_KEY": "o", "PIPER_MODEL": "/x/hu_HU-anna-medium.onnx"}
+        auto = G.pick_provider(env=env)                       # openai wins, piper is also configured
+        with contextlib.redirect_stdout(io.StringIO()) as out:
+            G.announce(auto, None, env)
+        self.assertIn("voice: openai", out.getvalue())
+        self.assertIn("also configured: piper", out.getvalue())
+        with contextlib.redirect_stdout(io.StringIO()) as out:
+            G.announce(auto, "openai", env)                   # explicit choice: no hint
+        self.assertNotIn("also configured", out.getvalue())
+
     def test_synth_retries_429_then_succeeds_and_joins_chunks(self):
         calls = []
 
