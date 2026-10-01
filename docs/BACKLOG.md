@@ -6,6 +6,43 @@ idea when a session gets archived." Added 2026-07-07._
 
 ## Product features
 
+- **Felolvasás (read aloud / audiobook mode) — built 2026-10-01, sample audio generated and listened to by Gábor 2026-10-01 (Piper anna: "not bad, not excellent"); nothing uploaded yet.** A „Lecke meghallgatása” button
+  on every lesson tab (reads the tab card after card, outlines the current card), a „Felolvasás” button on every card and
+  deep dive, one per quiz question (question + options, never the answer), and a player bar that stays on every page.
+  *Why files:* browsers stop `speechSynthesis` when the screen locks, but keep playing an `<audio>` file and show its
+  lock-screen controls (Media Session). So the lesson text is turned into mp3 files once; a card with no file is read
+  by the browser's own voice instead (on screen only, the bar says so).
+  - *Code:* `backend/core/speech.py` (what is spoken; the only place that decides it), `backend/core/narration.py` +
+    `routes/nat.py` / `routes/lessons.py` (each lesson response now carries `narration` per card), `frontend/src/lib/narration.js`
+    (player, tested with `npm test`), `NarrationBar` / `ReadAloudButton`, `database/migrations/v11_narration_audio.sql`,
+    `content/generators/generate_audio.py`.
+  - *To switch the audiobook on (nothing here is done yet):* 1) apply v11 in the Supabase SQL editor; 2) put
+    `AZURE_SPEECH_KEY` + `AZURE_SPEECH_REGION` (or `OPENAI_API_KEY`) in `backend/.env`, **or** use the free offline voice
+    Piper (`PIPER_MODEL=/path/hu_HU-anna-medium.onnx`, see the provider table in `generate_audio.py`); 3) `generate_audio.py sample
+    --nat-id PHYS-78-03` and **listen** — Hungarian quality differs a lot between voices; 4) `generate_audio.py run
+    --nat-id PHYS-78-03 --apply`, then more Témakörök, or `--all --apply --max-chars 3000000`. Re-run after content edits
+    (edited cards get a new hash and fall back to the browser voice until then); `prune` deletes audio nobody uses.
+    To change the voice later (e.g. start on Piper, move to Azure): `run --nat-id … --replace --provider azure --apply` re-records
+    texts that already have audio under a new file name (the files are cached for a year, so the same URL would keep playing
+    the old voice) and deletes the old file; the lessons keep playing the old audio until each card is swapped.
+  - *Size (measured 2026-10-01 on live content, 6,586 distinct texts):* 3.09 M characters ≈ 60 h ≈ 870 MB at 32 kbit/s,
+    ≈ $49 at an assumed $16 per million characters (check the provider's price). Without „Mesélj még!”: 1.93 M ≈ $31;
+    only the `text` tab (`--modes text`): 0.85 M ≈ $14.
+  - *Voice options (checked 2026-10-01):* Kriton's voice route (`aikriton/backend/routes/voice.py`) is a paid cloud call, not a
+    local engine: OpenAI `tts-1` ($15 per million characters) or, without an OpenAI key, `hexgrad/kokoro-82m` through
+    OpenRouter, billed to the user's credits. Kokoro's languages are English, Spanish, French, Hindi, Italian, Japanese,
+    Portuguese and Mandarin, so it cannot read Hungarian; it was not ported. Piper (`hu_HU` voices anna, berta, imre, medium
+    quality) runs offline on CPU and costs nothing per character, but is a plainer voice than Azure Noémi. Its voice-data
+    licences and Hungarian pronunciation have **not** been checked (the voice files are not reachable from the cloud
+    session): read each voice's model card before shipping, and listen to a `sample` first.
+  - *Not verified:* locked-screen playback on a real iPhone and Android phone (only headless Chromium was available:
+    auto-advance, Media Session metadata, navigation persistence). Both TTS providers are implemented against their
+    documented REST APIs but have not been called (no key in the cloud session). If iOS drops the card-to-card hand-off
+    while locked, the fallback is one mp3 per tab with cue points.
+  - *Known gaps:* listening is not counted as study time (the timer needs a visible, touched page); no offline audio
+    (files are not cached by the service worker — Safari needs range-request handling for that); pronunciation of
+    years/ordinals/names is whatever the voice does, apart from the abbreviations, units and formulas `speech.py` expands.
+
 - **Layered lesson filter.** A way to find lessons by filtering on **subject + topic + a
   word/phrase**, in any combination (e.g. just a word search across all subjects; or subject +
   word; or all three). Doesn't exist yet in any form — the current nav is pure drill-down

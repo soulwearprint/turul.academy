@@ -21,7 +21,7 @@ export default function BottomNav() {
   ]
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-100 flex items-stretch safe-bottom z-50">
+    <nav data-bottom-nav className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur border-t border-slate-100 flex items-stretch safe-bottom z-50">
       {links.map(({ to, label, icon }) => (
         <NavLink
           key={to}

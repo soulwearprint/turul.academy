@@ -12,10 +12,11 @@ export default function NatTopicQuizPage() {
   const token = session?.access_token
   const { t } = useLang()
   const [cards, setCards] = useState(null)
+  const [narration, setNarration] = useState(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    api.nat.topicQuiz(topicId).then(d => setCards(d.cards)).finally(() => setLoading(false))
+    api.nat.topicQuiz(topicId).then(d => { setCards(d.cards); setNarration(d.narration ?? null) }).finally(() => setLoading(false))
   }, [topicId])
 
   if (loading) return <div className="flex h-screen items-center justify-center text-slate-400">{t('common.loading')}</div>
@@ -26,6 +27,7 @@ export default function NatTopicQuizPage() {
       <div className="max-w-2xl mx-auto px-4 py-6">
         <QuizRunner
           cards={cards}
+          narration={narration && { id: `topic:${topicId}:quiz`, title: t('nat.topic.quiz'), items: narration }}
           reportCtx={{ topicId, lessonId: null, scope: 'topic', mode: 'quiz' }}
           onSubmit={(answers) => api.nat.submitQuiz({ topic_id: topicId, scope: 'topic', answers }, token)}
         />

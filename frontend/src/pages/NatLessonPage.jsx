@@ -6,6 +6,7 @@ import { api } from '../lib/api'
 import { CardList, DeepDive, QuizRunner } from '../components/ContentCards'
 import PageHeader from '../components/PageHeader'
 import ReportButton from '../components/ReportButton'
+import ReadAloudButton from '../components/ReadAloudButton'
 import { natTitle } from '../lib/nat'
 import { useStudyTimer } from '../lib/useStudyTimer'
 
@@ -83,6 +84,10 @@ export default function NatLessonPage() {
   const deepByAnchor = Object.fromEntries((lesson.blocks.deep || []).map((d, i) => [d.anchor, { card: d, index: i }]))
   const reportCtx = { topicId: lesson.topic_id, lessonId, scope: 'lesson' }
 
+  // „Felolvasás”: one queue per tab/layer, index-aligned with its cards (the API builds the text).
+  const title = natTitle(lesson, lang)
+  const queueFor = (m) => (lesson.narration?.[m] ? { id: `${lessonId}:${m}`, title, items: lesson.narration[m] } : null)
+
   function openTab(m) {
     setMode(m)
     setOpenDeep(null)
@@ -91,7 +96,7 @@ export default function NatLessonPage() {
 
   return (
     <div className="pb-24">
-      <PageHeader title={natTitle(lesson, lang)} backTo={-1} />
+      <PageHeader title={title} backTo={-1} />
 
       <div className="max-w-2xl mx-auto px-4 py-6">
         {/* Mode tabs */}
@@ -105,18 +110,25 @@ export default function NatLessonPage() {
           ))}
         </div>
 
+        {mode !== 'quiz' && queueFor(mode) && (
+          <div className="mb-4"><ReadAloudButton variant="lesson" queue={queueFor(mode)} /></div>
+        )}
+
         {mode === 'quiz' ? (
           <QuizRunner
             cards={lesson.blocks.quiz}
+            narration={queueFor('quiz')}
             reportCtx={{ ...reportCtx, mode: 'quiz' }}
             onSubmit={(answers) => api.nat.submitQuiz(
               { topic_id: lesson.topic_id, lesson_id: lessonId, scope: 'lesson', answers }, token)}
           />
         ) : (
-          <CardList mode={mode} cards={lesson.blocks[mode]} reportCtx={reportCtx}
+          <CardList mode={mode} cards={lesson.blocks[mode]} reportCtx={reportCtx} narration={queueFor(mode)}
             renderAfter={mode === 'text' ? (i) => deepByAnchor[i] && (
               <DeepDive card={deepByAnchor[i].card} open={openDeep === i}
                 onToggle={() => setOpenDeep(o => (o === i ? null : i))}
+                listen={<ReadAloudButton queue={{ id: `${lessonId}:deep:${deepByAnchor[i].index}`, title,
+                  items: [lesson.narration?.deep?.[deepByAnchor[i].index] ?? null] }} />}
                 footer={<ReportButton ctx={{ ...reportCtx, mode: 'deep' }} index={deepByAnchor[i].index} labelKey="report.cta.deep" />} />
             ) : undefined} />
         )}
@@ -129,7 +141,7 @@ export default function NatLessonPage() {
               <span>{t(EXTRA_LAYERS[extraMode].key)}</span>
               <span className="text-white/60">{showExtra ? '▲' : '▼'}</span>
             </button>
-            {showExtra && <div className="mt-3"><CardList mode={extraMode} cards={lesson.blocks[extraMode]} reportCtx={reportCtx} /></div>}
+            {showExtra && <div className="mt-3"><CardList mode={extraMode} cards={lesson.blocks[extraMode]} reportCtx={reportCtx} narration={queueFor(extraMode)} /></div>}
           </div>
         )}
       </div>

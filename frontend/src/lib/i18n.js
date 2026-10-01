@@ -112,6 +112,18 @@ export const translations = {
   'deep.reveal':           { hu: 'Mutasd a választ', en: 'Show the answer' },
 
   // ── „Hibát találtál?” (content reports) ─────────────────
+  // ── Felolvasás (read aloud / audiobook) ──────────────────
+  'listen.card':           { hu: 'Felolvasás', en: 'Read aloud' },
+  'listen.lesson':         { hu: 'Lecke meghallgatása', en: 'Listen to this lesson' },
+  'listen.pause':          { hu: 'Szünet', en: 'Pause' },
+  'listen.resume':         { hu: 'Folytatás', en: 'Resume' },
+  'listen.prev':           { hu: 'Előző kártya', en: 'Previous card' },
+  'listen.next':           { hu: 'Következő kártya', en: 'Next card' },
+  'listen.speed':          { hu: 'Sebesség', en: 'Speed' },
+  'listen.stop':           { hu: 'Leállítás', en: 'Stop' },
+  'listen.bar':            { hu: 'Felolvasás lejátszó', en: 'Read-aloud player' },
+  'listen.browser.voice':  { hu: 'A böngésző hangja olvas: lezárt kijelzőnél leállhat.', en: "Using the browser's voice: it may stop when the screen locks." },
+
   'report.cta':            { hu: 'Hibát találtál?', en: 'Spotted a mistake?' },
   'report.cta.deep':       { hu: 'Hiba a mélyítésben?', en: 'Mistake in this deep dive?' },
   'report.sent.short':     { hu: '✓ Jelentve', en: '✓ Reported' },
