@@ -6,7 +6,7 @@ idea when a session gets archived." Added 2026-07-07._
 
 ## Product features
 
-- **Felolvasás (read aloud / audiobook mode) — built 2026-10-01, sample audio generated and listened to by Gábor 2026-10-01 (Piper anna: "not bad, not excellent"); nothing uploaded yet.** A „Lecke meghallgatása” button
+- **Felolvasás (read aloud / audiobook mode) — built and merged 2026-10-01 (#9); migration v11 applied; Piper pilot for PHYS-78-03 uploaded (92 of 92 text cards, voice `hu_HU-anna-medium`, 12.5 MB); no other Téma has audio yet.** A „Lecke meghallgatása” button
   on every lesson tab (reads the tab card after card, outlines the current card), a „Felolvasás” button on every card and
   deep dive, one per quiz question (question + options, never the answer), and a player bar that stays on every page.
   *Why files:* browsers stop `speechSynthesis` when the screen locks, but keep playing an `<audio>` file and show its
@@ -39,9 +39,27 @@ idea when a session gets archived." Added 2026-07-07._
     auto-advance, Media Session metadata, navigation persistence). Both TTS providers are implemented against their
     documented REST APIs but have not been called (no key in the cloud session). If iOS drops the card-to-card hand-off
     while locked, the fallback is one mp3 per tab with cue points.
+  - *Phone test of the pilot (Gábor, 2026-10-01):* plays, continues from the end of the last finished sentence when he
+    switches back, and moves to the next card by itself while the app is open; it stopped on phone lock, on app switching and
+    on auto-lock. That is how the **browser voice** behaves (it is what resumes from sentences); an mp3 card keeps playing on
+    a locked phone. Which cards he heard, and whether the amber „böngésző hangja” note was showing, is not known yet; open until
+    he says which lesson and tab he tested.
+  - *Pronunciation of units and formulas (2026-10-01):* Piper read „10 s” as the letter, „5 N” as „en”, „F = m · a” as
+    consonants. `backend/core/speech_units.py` now speaks every unit that follows a number or is a whole known compound
+    (m/s, km/h, kg/m³, J/(kg·K) …) in Hungarian with the right suffix („5 m-t” → „5 métert”, „20 N-nal” → „20 nyútonnal”; the numeral itself is left to the voice), writes
+    the unit names the voice mispronounces as they sound (Newton → „Nyúton”, joule → „dzsúl”, Celsius → „Celziusz”), drops a
+    bracket that repeats the word before it („kilogramm (kg)”), says powers of ten („10⁻⁴” → „tíz a mínusz negyediken”), spells
+    acronyms (ÁVH, EU, USA …) and says „osztva” for „ : ”. A lone letter that is a variable (v, t, a, s) is left to the voice
+    except „s” („es”) and a sentence-initial/after-operator „a” („á”). Measured on the 7,876 live cards: 744 narrations
+    change (674 with audio modes, 70 quiz), 41 of the 92 PHYS-78-03 audio files are now out of date. Their cards read in the
+    browser voice until re-recorded: `generate_audio.py run --nat-id PHYS-78-03 --provider piper --apply`, then `prune --apply`
+    (the other 51 keep their files, the hash is unchanged). Nothing is re-recorded in advance for the other Témakörök: run
+    the same command per Téma, or `--all`, after the voice decision.
+  - *Not covered by the unit rules (decide later):* bare unit symbols in quiz answer lists („A: m, kg”), a variable with a
+    suffix („T-t”), „^” exponents, „x” as multiplication, Mpc / ppm / mph, UNESCO, „Mbit/s”.
   - *Known gaps:* listening is not counted as study time (the timer needs a visible, touched page); no offline audio
     (files are not cached by the service worker — Safari needs range-request handling for that); pronunciation of
-    years/ordinals/names is whatever the voice does, apart from the abbreviations, units and formulas `speech.py` expands.
+    years/ordinals/names is whatever the voice does, apart from what `speech.py` and `speech_units.py` expand.
 
 - **Layered lesson filter.** A way to find lessons by filtering on **subject + topic + a
   word/phrase**, in any combination (e.g. just a word search across all subjects; or subject +
