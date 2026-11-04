@@ -2,12 +2,13 @@
 checked on each file page; see manifest.json). Follows lesson_images_2026_09.py: each card is written
 through the edit_content_card RPC, so every change is in content_edits and can be undone from the review queue.
 
-  python3 ../media/lesson_images_2026_09b.py --batch 3 --dry-run   # from backend/ (reads .env or the environment)
-  python3 ../media/lesson_images_2026_09b.py --batch 3             # uploads staged files, then edits the cards
-Batches 1 (5 photos), 2 (5 photos) and 3 (crash-test photo swap + 6 own drawings) are all applied; do not re-run them.
+  python3 ../media/lesson_images_2026_09b.py --batch 4 --dry-run   # from backend/ (reads .env or the environment)
+  python3 ../media/lesson_images_2026_09b.py --batch 4             # uploads staged files, then edits the cards
+Batches 1 (5 photos), 2 (5 photos), 3 (crash-test photo swap + 6 own drawings) and 4 (3 more own drawings) are all
+applied; do not re-run them.
 
 Staged files: content/media/staging/PHYS-78-03/<name>.webp|.svg (git-ignored; the photos are resized copies
-of Commons thumbnails, the SVGs come from make_physics_diagrams_2.py). Upload target is the public Storage
+of Commons thumbnails, the SVGs from make_physics_diagrams_2.py and make_physics_diagrams_3.py). Upload target is the public Storage
 bucket `content-media`; cards store the path, never a hotlink.
 The Hungarian card texts are new — a teacher should read them (Content_Sourcing_Policy §6).
 """
@@ -132,7 +133,27 @@ BATCH3 = {  # applied 2026-09-30 (third round): crash-test photo replaces the tr
   },
 }
 
-BATCHES = {'1': BATCH1, '2': BATCH2, '3': BATCH3}
+
+BATCH4 = {  # applied 2026-09-30 (fourth round): the three cards that still showed only the plain native sketch (card.diagram)
+  'f3e4a797-c1af-4d18-acb7-a0715f0b40fc': {  # Út és idő kiszámítása
+    0: ('Megtett út', 'megtett-ut.svg', U + 'megtett-ut.svg', dict(
+        description='A megtett út a pályának az a hossza, amelyet a test bejár. Ha egy autó egyenletesen halad, egyenlő idők alatt egyenlő utakat tesz meg: itt 5 másodpercenként 25 métert, így 20 s alatt 100 métert. Az út–idő grafikonon ez egy origóból induló egyenes. Az autó sebessége v = s : t = 100 m : 20 s = 5 m/s, ami 18 km/h.',
+        caption='Az autó által megtett út az eltelt idő függvényében: 5 másodpercenként 25 m.',
+        image={'src': U + 'megtett-ut.svg', 'alt': 'Felül egy autó öt helyzete 0, 5, 10, 15 és 20 másodpercnél, 25 méterenként; alatta az út–idő grafikon: az origóból a 20 s-hoz tartozó 100 m-ig emelkedő egyenes', 'credit': OWN})),
+  },
+  '9fd5a9a0-12e1-45dc-b8ec-a5cdd3078a86': {  # Erők és gyorsulás vizsgálata
+    0: ('Az elejtett test mozgása', 'szabadeses.svg', E + 'szabadeses.svg', dict(
+        description='Az elejtett test a nehézségi erő hatására egyre gyorsabban esik lefelé: a sebessége másodpercenként kb. 9,8 m/s-mal nő (g ≈ 9,8 m/s²). Az ábrán a test helyzete fél másodpercenként látható. Fél másodperc alatt kb. 1,2 m-t esik, 1 s alatt 4,9 m-t, 2 s alatt már 19,6 m-t: egyenlő idők alatt egyre nagyobb utat tesz meg, mert egyre gyorsabb. A nehézségi erő (F = m · g) végig lefelé mutat. Légellenállás nélkül minden test egyformán esik.',
+        caption='Az elejtett test mozgása a nehézségi erő hatására: egyre gyorsabban esik.',
+        image={'src': E + 'szabadeses.svg', 'alt': 'Az elejtett test öt helyzete függőleges oszlopban 0, 0,5, 1, 1,5 és 2 másodpercnél, egyre nagyobb közökkel; mellettük a megtett út (0, 1,2, 4,9, 11,0 és 19,6 m) és a növekvő sebesség', 'credit': OWN})),
+    3: ('Külső hatások az autó mozgásában', 'fekezes-es-kanyar.svg', E + 'fekezes-es-kanyar.svg', dict(
+        description='Az autó mozgását külső hatások változtatják meg, főleg a talaj és a gumiabroncsok közötti súrlódási erő. Fékezéskor a súrlódási erő a mozgással ellentétes irányú, ezért a gyorsulás is ellentétes: az autó sebessége csökken. Kanyarodáskor a súrlódási erő a kanyar közepe felé mutat, és a gyorsulás is arra: a sebesség iránya változik, akkor is, ha a nagysága állandó. Newton II. törvénye szerint a gyorsulás iránya az eredő erő irányával egyezik meg. Jeges úton a súrlódási erő kicsi, ezért az autó alig tud fékezni vagy kanyarodni.',
+        caption='Az autó mozgását a súrlódási erő változtatja meg: fékezéskor és kanyarodáskor is.',
+        image={'src': E + 'fekezes-es-kanyar.svg', 'alt': 'Fent egy fékező autó oldalnézetben: a sebesség jobbra, a súrlódási erő és a gyorsulás balra mutat; lent egy kanyarodó autó felülnézetben: a sebesség érintő irányú, a súrlódási erő és a gyorsulás a kanyar középpontja felé mutat', 'credit': OWN})),
+  },
+}
+
+BATCHES = {'1': BATCH1, '2': BATCH2, '3': BATCH3, '4': BATCH4}
 
 
 def main(dry, batch):
@@ -172,5 +193,5 @@ def main(dry, batch):
             print(block[:8], i, heading, 'uploaded + edit', eid)
 
 if __name__ == '__main__':
-    batch = sys.argv[sys.argv.index('--batch') + 1] if '--batch' in sys.argv else '3'
+    batch = sys.argv[sys.argv.index('--batch') + 1] if '--batch' in sys.argv else '4'
     main('--dry-run' in sys.argv, batch)
