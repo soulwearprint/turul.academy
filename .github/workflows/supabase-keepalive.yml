@@ -1,43 +1,101 @@
 name: Supabase keep-alive
 
-# Free-tier Supabase projects auto-pause after ~7 days of no database activity.
-# This pings the REST API every 3 days so Turul Academy never idles out while
-# we're still in the quiet pre-launch phase. Once real testers hit it daily,
-# this becomes redundant (but harmless).
+# Free-tier Supabase projects auto-pause after ~7 days without activity. This
+# runs a real SELECT through PostgREST (which executes a query in Postgres) on
+# Monday, Wednesday, Friday and Sunday (longest gap: 2 days), fails loudly
+# on anything but a 2xx with a JSON array body, and opens (or comments on) a
+# GitHub issue labelled "keepalive" when it fails. The issue is closed
+# automatically on the next green run. GitHub emails repository watchers
+# about new issues, so a failure is no longer silent.
 #
-# The key below is the PUBLISHABLE (anon) key — it is already public in the
+# Manual run: Actions tab -> "Supabase keep-alive" -> Run workflow.
+#
+# GitHub disables scheduled workflows after 60 days without repository
+# activity (commits, PRs, issues). The last step re-enables this workflow on
+# every green run, which resets that timer; the repository also gets regular
+# commits. If a "keepalive" issue says the schedule stopped, open the Actions
+# tab and click "Enable workflow".
+#
+# The key below is the PUBLISHABLE (anon) key: it is already public in the
 # deployed frontend bundle, so it is safe to commit. It is not a secret.
+# If the key is rotated in Supabase, update SUPABASE_KEY here.
 
 on:
   schedule:
-    - cron: '0 6 */3 * *'   # every 3 days at 06:00 UTC
-  workflow_dispatch: {}      # allow manual run from the Actions tab
+    - cron: '17 5 * * 0,1,3,5'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+  actions: write
+
+concurrency:
+  group: supabase-keepalive
+  cancel-in-progress: false
 
 jobs:
   ping:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      SUPABASE_URL: https://tqsrwhvvghryycgsxfsj.supabase.co
+      SUPABASE_KEY: sb_publishable__RXVTiIc8H-54WUKMbe7dQ_jFXLN_-F
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
     steps:
-      - name: Ping Turul Academy database
-        env:
-          SUPABASE_URL: https://tqsrwhvvghryycgsxfsj.supabase.co
-          SUPABASE_KEY: sb_publishable__RXVTiIc8H-54WUKMbe7dQ_jFXLN_-F
+      - name: Query the Academy database
         run: |
-          # On a DNS/connect failure curl still prints "000" via -w AND exits non-zero.
-          # The old `$(curl … || echo "000")` therefore produced "000000", which
-          # didn't match "000" — so the 2026-09-22 run passed green while the project
-          # was already paused. Assign the fallback outside the substitution instead,
-          # and only count a 2xx as healthy: a paused project answers 5xx (521/540).
-          for attempt in 1 2 3; do
-            code=$(curl -s -o /dev/null -w "%{http_code}" \
+          # curl prints 000 via -w AND exits non-zero on DNS/connect failure
+          # (a paused project no longer resolves), so assign the fallback
+          # outside the substitution. Only a 2xx with a JSON array is healthy.
+          body=$(mktemp)
+          for attempt in 1 2 3 4; do
+            code=$(curl -s --max-time 20 -o "$body" -w "%{http_code}" \
               "${SUPABASE_URL}/rest/v1/curriculum_subjects?select=id&limit=1" \
               -H "apikey: ${SUPABASE_KEY}" \
               -H "Authorization: Bearer ${SUPABASE_KEY}") || code="000"
-            echo "Attempt ${attempt}: Academy REST ping → HTTP ${code}"
+            echo "Attempt ${attempt}: SELECT curriculum_subjects -> HTTP ${code}"
             case "$code" in 2??) break ;; esac
-            [ "$attempt" -lt 3 ] && sleep 5
+            [ "$attempt" -lt 4 ] && sleep 15
           done
           case "$code" in
             2??) ;;
-            *) echo "::error::Supabase answered HTTP ${code} after 3 attempts — project is likely paused. Restore it in the Supabase dashboard."
-               exit 1 ;;
+            000) echo "::error::Cannot reach ${SUPABASE_URL} (DNS/connect failure). The project is most likely PAUSED: restore it in the Supabase dashboard."
+                 exit 1 ;;
+            *)   echo "::error::Supabase answered HTTP ${code} after 4 attempts (paused project, wrong key, or table/RLS/GRANT change). Body: $(head -c 300 "$body")"
+                 exit 1 ;;
           esac
+          if ! python3 -c 'import json,sys; assert isinstance(json.load(open(sys.argv[1])), list)' "$body"; then
+            echo "::error::HTTP 2xx but the body is not a JSON array: $(head -c 300 "$body")"
+            exit 1
+          fi
+          echo "Database answered a real query."
+
+      - name: Close open keep-alive issue
+        if: success()
+        run: |
+          for n in $(gh issue list -R "$REPO" -l keepalive -s open --json number -q '.[].number'); do
+            gh issue close "$n" -R "$REPO" -c "Keep-alive is green again: ${GITHUB_SERVER_URL}/${REPO}/actions/runs/${GITHUB_RUN_ID}"
+          done
+
+      - name: Reset the 60-day schedule timer
+        if: success()
+        continue-on-error: true
+        run: gh workflow enable supabase-keepalive.yml -R "$REPO"
+
+      - name: Open or update a failure issue
+        if: failure()
+        run: |
+          run_url="${GITHUB_SERVER_URL}/${REPO}/actions/runs/${GITHUB_RUN_ID}"
+          gh label create keepalive -R "$REPO" -c B60205 -d "Supabase keep-alive failed" 2>/dev/null || true
+          existing=$(gh issue list -R "$REPO" -l keepalive -s open --json number -q '.[0].number')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" -R "$REPO" -b "Still failing: ${run_url}"
+          else
+            gh issue create -R "$REPO" -l keepalive \
+              -t "Supabase keep-alive is failing: database may be paused" \
+              -b "The scheduled keep-alive failed: ${run_url}
+
+          Most likely the free-tier project was paused. Open the Supabase dashboard for project tqsrwhvvghryycgsxfsj and restore it. Free projects can only be restored for a limited time after pausing, so act soon. This issue closes itself on the next green run (use Run workflow to trigger one)."
+          fi
