@@ -22,7 +22,10 @@ SB = os.getenv("SUPABASE_URL"); SVC = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
 RK = os.getenv("OPENROUTER_API_KEY")
 # Validation runs only a few calls per topic, so it uses a STRONGER model than bulk
 # generation (gpt-4o-mini) for higher-precision fact/appropriateness judging.
-CHECK_MODEL = "openai/gpt-4o"
+# Validator is deliberately a different vendor from the generator (gpt-4o-mini / gpt-4o), so a model
+# does not grade its own family's mistakes. Switched from openai/gpt-4o on 2026-11-04; override with
+# VALIDATOR_MODEL=openai/gpt-4o to compare or roll back.
+CHECK_MODEL = os.getenv("VALIDATOR_MODEL") or "google/gemini-4-argon"
 OR = "https://openrouter.ai/api/v1/chat/completions"
 H_OR = {"Authorization": f"Bearer {RK}", "Content-Type": "application/json",
         "HTTP-Referer": "https://turul.academy", "X-Title": "Turul"}

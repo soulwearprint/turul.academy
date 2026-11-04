@@ -20,12 +20,11 @@ Exit code: 0 = PASS (no FAIL-level issues), 1 = FAIL.
 """
 import os, json, sys, asyncio, httpx
 from dotenv import load_dotenv
-from validate_temakor import _norm, _fold, _covered, _ai_json, APPRO_SYS
+from validate_temakor import _norm, _fold, _covered, _ai_json, APPRO_SYS, CHECK_MODEL
 
 load_dotenv(os.path.join(os.path.dirname(__file__), "../../backend/.env"))
 SB = os.getenv("SUPABASE_URL"); SVC = os.getenv("SUPABASE_SERVICE_ROLE_KEY")
 RK = os.getenv("OPENROUTER_API_KEY")
-CHECK_MODEL = "openai/gpt-4o"
 OR = "https://openrouter.ai/api/v1/chat/completions"
 H_OR = {"Authorization": f"Bearer {RK}", "Content-Type": "application/json",
         "HTTP-Referer": "https://turul.academy", "X-Title": "Turul"}

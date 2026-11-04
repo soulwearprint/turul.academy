@@ -14,7 +14,7 @@ Stored as content_blocks(mode='deep', level='emelt', scope='lesson'). `deep` is 
 mode: the lesson endpoint returns it, older frontends simply ignore it.
 
 Guard rail per lesson:
-  1. Strict claim verification (gpt-4o): every concrete number/date/name/record/law is
+  1. Strict claim verification (VERIFY_MODEL, default gemini-4-argon): every concrete number/date/name/record/law is
      judged certain / false / uncertain; anything not certain is generalised or removed.
      The subject validators are deliberately lenient ("let uncertain cases go" — right for
      curriculum text), which let wrong trivia through in the v1 run.
@@ -41,7 +41,10 @@ RK = (os.getenv("OPENROUTER_API_KEY") or "").strip()
 # content/exports/PHYS-78-03_deep_dive_review_v1.md) mostly restated its source cards
 # instead of going deeper, and padded "did you know" with records/stats it got wrong.
 MODEL = "openai/gpt-4o"
-FIX_MODEL = "openai/gpt-4o"         # targeted fixes + claim verification (precision matters)
+FIX_MODEL = "openai/gpt-4o"         # targeted fixes (precision matters)
+# Claim verification uses a different vendor than the generator, so gpt-4o does not check gpt-4o.
+# Switched 2026-11-04; VALIDATOR_MODEL=openai/gpt-4o rolls back.
+VERIFY_MODEL = os.getenv("VALIDATOR_MODEL") or "google/gemini-4-argon"
 OR = "https://openrouter.ai/api/v1/chat/completions"
 H_OR = {"Authorization": f"Bearer {RK}", "Content-Type": "application/json",
         "HTTP-Referer": "https://turul.academy", "X-Title": "Turul"}
@@ -151,7 +154,7 @@ async def verify_claims(c, cards):
         "- egyéb bizonytalan adatnál: a mondat az adat NÉLKÜL, vagy töröld a mondatot.\n"
         '{"claims":[{"anchor":0,"field":"body|did_you_know|think_answer","claim":"",'
         '"verdict":"biztos|hamis|bizonytalan|tevkepzet","fix":""}]}\n\n'
-        f"KÁRTYÁK:\n{json.dumps(cards, ensure_ascii=False)}", VERIFY_SYS, temp=0, maxtok=3500, model=FIX_MODEL)
+        f"KÁRTYÁK:\n{json.dumps(cards, ensure_ascii=False)}", VERIFY_SYS, temp=0, maxtok=3500, model=VERIFY_MODEL)
     bad = [x for x in out.get("claims", []) if x.get("verdict") in ("hamis", "bizonytalan", "tevkepzet")]
     if not bad:
         return cards, []
@@ -291,7 +294,7 @@ async def safe_lesson_deep(c, cfg, topic, L, blocks, reverify=False):
 
 def report_md(topic, results, cost):
     out = [f"# „Mesélj még!” mélyítés — {topic['title_hu']} ({topic['nat_id']}, {topic['grade']}. évf.)", "",
-           f"Generálás: `{MODEL}` · ellenőrzés/javítás: `gpt-4o` · költség: **${cost:.3f}**", ""]
+           f"Generálás: `{MODEL}` · ellenőrzés: `{VERIFY_MODEL}` · javítás: `{FIX_MODEL}` · költség: **${cost:.3f}**", ""]
     for r in results:
         L = r["lesson"]
         out += [f"## {L['title_hu']}", ""]
