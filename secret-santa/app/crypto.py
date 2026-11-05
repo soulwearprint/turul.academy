@@ -107,3 +107,48 @@ def seal_for_link(token: str, year: int, giver_id: int, receiver_id: int) -> str
 
 def open_for_link(token: str, year: int, giver_id: int, sealed: str) -> int:
     return open_receiver(_link_key(token), year, giver_id, sealed)
+
+
+# Per-link key pair, so an admin action (draw / reshuffle) can seal "who is
+# this person's Secret Santa" *to* the link without knowing the link token,
+# and only a request carrying that token can open it. Used solely to address
+# "new gift idea" e-mails; it is never shown to anyone.
+
+def new_link_keypair(token: str, year: int, member_id: int) -> tuple[str, str]:
+    """Return (public_b64, private_sealed_with_token)."""
+    from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey
+    from cryptography.hazmat.primitives.serialization import Encoding, NoEncryption, PrivateFormat, PublicFormat
+
+    priv = X25519PrivateKey.generate()
+    pub = priv.public_key().public_bytes(Encoding.Raw, PublicFormat.Raw)
+    raw = priv.private_bytes(Encoding.Raw, PrivateFormat.Raw, NoEncryption())
+    nonce = os.urandom(12)
+    sealed = AESGCM(_link_key(token)).encrypt(nonce, raw, f"link-priv:{year}:{member_id}".encode())
+    return _b64(pub), _b64(nonce + sealed)
+
+
+def _route_key(shared: bytes, eph_pub: bytes) -> bytes:
+    return hashlib.sha256(b"santa-route:" + shared + eph_pub).digest()
+
+
+def seal_to_link(public_b64: str, year: int, member_id: int, value: int) -> str:
+    from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey, X25519PublicKey
+    from cryptography.hazmat.primitives.serialization import Encoding, PublicFormat
+
+    eph = X25519PrivateKey.generate()
+    eph_pub = eph.public_key().public_bytes(Encoding.Raw, PublicFormat.Raw)
+    shared = eph.exchange(X25519PublicKey.from_public_bytes(_unb64(public_b64)))
+    nonce = os.urandom(12)
+    ct = AESGCM(_route_key(shared, eph_pub)).encrypt(nonce, str(value).encode(), f"route:{year}:{member_id}".encode())
+    return _b64(eph_pub + nonce + ct)
+
+
+def open_with_link(token: str, priv_sealed: str, year: int, member_id: int, sealed: str) -> int:
+    from cryptography.hazmat.primitives.asymmetric.x25519 import X25519PrivateKey, X25519PublicKey
+
+    pblob = _unb64(priv_sealed)
+    raw = AESGCM(_link_key(token)).decrypt(pblob[:12], pblob[12:], f"link-priv:{year}:{member_id}".encode())
+    blob = _unb64(sealed)
+    eph_pub, nonce, ct = blob[:32], blob[32:44], blob[44:]
+    shared = X25519PrivateKey.from_private_bytes(raw).exchange(X25519PublicKey.from_public_bytes(eph_pub))
+    return int(AESGCM(_route_key(shared, eph_pub)).decrypt(nonce, ct, f"route:{year}:{member_id}".encode()).decode())

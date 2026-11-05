@@ -326,9 +326,18 @@ async function renderYear() {
   const pending = y.participants.filter((p) => p.has_match && !p.notified_at).length;
 
   let statusHtml;
+  const uninvited = y.participants.filter((p) => !p.invited && !p.notified_at).length;
+  const invitedN = y.participants.filter((p) => p.invited).length;
+  const ideasN = y.participants.filter((p) => p.wishes).length;
   if (!y.drawn) {
-    statusHtml = `<div class="banner info">Names have not been drawn yet for ${y.year}.</div>
-      <button id="draw" ${y.participants.length < 2 ? "disabled" : ""}>🎲 Draw names for ${y.participants.length} people</button>`;
+    statusHtml = `<div class="banner info">Names have not been drawn yet for ${y.year}.
+      ${invitedN ? `<br>✉️ ${invitedN} of ${y.participants.length} invited to add gift ideas · 🎁 ${ideasN} have added some.` : ""}</div>
+      <p class="hint">Tip: invite everyone to add gift ideas first, so the postcards can already list their giftee's ideas.
+        Set the gift budget below before inviting — it is shown in the invitation.</p>
+      <div class="actions">
+        <button id="invite" class="secondary" ${uninvited ? "" : "disabled"}>✉️ Send wish-list invitations (${uninvited})</button>
+        <button id="draw" ${y.participants.length < 2 ? "disabled" : ""}>🎲 Draw names for ${y.participants.length} people</button>
+      </div>`;
   } else if (!y.in_sync) {
     statusHtml = `<div class="banner">⚠ The participant list changed after the draw.
       ${y.added.length ? `<br>Joined: <b>${y.added.map((p) => esc(p.name)).join(", ")}</b>` : ""}
@@ -363,7 +372,8 @@ async function renderYear() {
       <h2>Postcards</h2>
       <p class="hint">Each person gets their own e-mail; nobody else is in To/CC/BCC.
         The admin sending them never sees the content. Each card links to a private page where the person
-        adds gift ideas, sees their giftee's ideas and can switch language. Resending a card replaces its link.</p>
+        adds gift ideas, sees their giftee's ideas and can switch language. Resending a card replaces its link.
+        When someone adds a new idea, their Secret Santa gets a short e-mail about it.</p>
       <table><thead><tr><th>Name</th><th>Status</th><th>Gift ideas</th><th></th></tr></thead><tbody>
       ${y.participants.map((p) => `<tr><td>${esc(p.name)}</td>
         <td>${!p.has_match ? '<span class="pill bad">not in draw</span>'
@@ -423,6 +433,21 @@ async function renderYear() {
     await offerSend("Names drawn! 🎉");
   };
   if ($("#reshuffle")) $("#reshuffle").onclick = reshuffleDialog;
+  if ($("#invite")) $("#invite").onclick = async () => {
+    const r = await dialog(`<h2>Send wish-list invitations?</h2>
+      <p>${uninvited} people get an e-mail with a private link where they can add gift ideas (optional).
+      The e-mail shows the gift budget${y.budget ? ` (<b>${esc(y.budget)}</b>)` : " — none is set yet"}. Nothing is drawn yet.</p>`,
+      [{ label: "Cancel", value: "", cls: "secondary" }, { label: "✉️ Send", value: "go" }]);
+    if (r.action !== "go") return;
+    let res;
+    try { res = await api(`/api/years/${y.year}/invite`, { method: "POST", body: {} }); }
+    catch (err) { return alertBox(`<p class="err">${esc(err.message)}</p>`); }
+    const bad = res.results.filter((x) => !x.ok);
+    await alertBox(`<h2>${res.mode === "outbox" ? "📭 Saved to outbox" : "✉️ Invitations sent"}</h2>
+      <p>${res.results.length - bad.length} ${res.mode === "outbox" ? "saved" : "sent"}${bad.length ? `, <span class="err">${bad.length} failed</span>` : ""}.</p>
+      ${bad.map((b) => `<p class="err">${esc(b.name)}: ${esc(b.error)}</p>`).join("")}`);
+    renderYear();
+  };
   if ($("#sendall")) $("#sendall").onclick = () => sendPostcards(null);
   if ($("#reveal")) $("#reveal").onclick = revealDialog;
   document.querySelectorAll("[data-send]").forEach((b) => (b.onclick = () => sendPostcards([+b.dataset.send])));

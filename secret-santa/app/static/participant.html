@@ -32,6 +32,7 @@ const T = {
   hu: {
     title: (y) => `🎅 Titkos Mikulás ${y}`,
     hello: (n) => `Szia, ${n}!`,
+    privateInvite: "Ez a te saját oldalad – kérlek, ne add tovább a linket.",
     private: "Ez a te titkos oldalad. Ne add tovább a linket – aki megkapja, látja, kit húztál.",
     budget: "Ajándékkeret", noBudget: "Nincs megadott keret – a családi józan ész dönt. 😉",
     budgetNote: "Kérjük, maradjatok a kereten belül!",
@@ -46,11 +47,15 @@ const T = {
     add: "+ Új ötlet", remove: "Törlés", save: "Mentés", saved: "Elmentve! 🎄",
     lang: "A képeslap nyelve", resend: "Küldd el újra a képeslapot ezen a nyelven",
     langSaved: "Nyelv elmentve.", langResent: "Nyelv elmentve, a képeslap úton van! 📮",
+    notDrawn: "A neveket még nem húztuk ki. Amint megvan, megérkezik a képeslapod a megajándékozottad nevével – addig is írd meg az ötleteidet!",
+    drawnWait: "A nevek ki vannak húzva! 🎉 A képeslapod hamarosan megérkezik, benne a megajándékozottad nevével és egy új linkkel.",
+    notifyNote: "Ha új ötletet adsz meg, a titkos Mikulásod kap róla egy rövid e-mailt.",
     gone: "Ez a link már nem érvényes – valószínűleg kaptál azóta egy újabb képeslapot. Az abban lévő linket használd.",
   },
   en: {
     title: (y) => `🎅 Secret Santa ${y}`,
     hello: (n) => `Hi, ${n}!`,
+    privateInvite: "This is your own page — please don't share the link.",
     private: "This is your private page. Please don't share the link — whoever has it can see who you drew.",
     budget: "Gift budget", noBudget: "No budget set — family common sense applies. 😉",
     budgetNote: "Please keep gifts within the budget!",
@@ -65,6 +70,9 @@ const T = {
     add: "+ Add idea", remove: "Remove", save: "Save", saved: "Saved! 🎄",
     lang: "Postcard language", resend: "Send me the postcard again in this language",
     langSaved: "Language saved.", langResent: "Language saved, your postcard is on its way! 📮",
+    notDrawn: "The names haven't been drawn yet. Once they are, your postcard will arrive with your giftee's name — meanwhile, add your ideas!",
+    drawnWait: "The names have been drawn! 🎉 Your postcard is on its way, with your giftee's name and a new link.",
+    notifyNote: "When you add a new idea, your Secret Santa gets a short e-mail about it.",
     gone: "This link is no longer valid — you probably received a newer postcard since. Please use the link in that one.",
   },
 };
@@ -97,7 +105,7 @@ function render() {
   $("#app").innerHTML = `
     <section class="card">
       <h2>${esc(t.hello(data.name))}</h2>
-      <p class="hint">🔒 ${esc(t.private)}</p>
+      <p class="hint">🔒 ${g ? esc(t.private) : esc(t.privateInvite)}</p>
     </section>
 
     <div class="budget">
@@ -106,15 +114,15 @@ function render() {
       ${data.exchange_date ? `<div class="hint" style="margin-top:6px">📅 ${esc(t.exchange)}: <b>${esc(data.exchange_date)}</b></div>` : ""}
     </div>
 
-    <section class="card">
+    ${g ? `<section class="card">
       <div class="label hint">${esc(t.yourGiftee)}</div>
       <p class="giftee">${esc(g.name)}</p>
       ${g.wishes.length ? `<p>${esc(t.gifteeWishes(g.name))}</p>${wishList(g.wishes)}` : `<p class="muted">${esc(t.noWishes(g.name))}</p>`}
-    </section>
+    </section>` : `<div class="banner info">🎄 ${esc(data.drawn ? t.drawnWait : t.notDrawn)}</div>`}
 
     <section class="card">
       <h2>${esc(t.myWishes)}</h2>
-      <p class="hint">${esc(t.myWishesHint(data.max_wishes))}</p>
+      <p class="hint">${esc(t.myWishesHint(data.max_wishes))} ${esc(t.notifyNote)}</p>
       ${data.budget ? `<div class="banner">💰 ${esc(t.withinBudget(data.budget))}</div>` : ""}
       <form id="wf">
         <div id="rows"></div>

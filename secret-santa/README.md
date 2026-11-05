@@ -30,6 +30,8 @@ Tests: `pip install -r requirements-dev.txt && python -m pytest -q`
 | Couples never draw each other | **Family → Never draw each other**. Each rule works both ways and applies every year. |
 | No repeat of last year | On by default for each year (**Details** → *Nobody draws the same person as in the previous year's draw*). It compares against the most recent earlier year that has a draw. |
 | Postcard language | Hungarian by default. An admin sets **English** per person in the Family tab, or the participant switches it from the link in their card, optionally getting the card resent. |
+| Wish-list invitation before the draw | **✉️ Send wish-list invitations** on a year that hasn't been drawn. Each person gets an e-mail with their own link, so they can add gift ideas early. The invitation shows the budget. Postcards then list the giftee's ideas directly. |
+| "New gift idea" e-mail | When someone saves a gift idea their Secret Santa hasn't been told about yet, that Secret Santa (and nobody else) gets a short e-mail listing the new ideas and the budget. It is sent only after their postcard is out, never repeats ideas already sent, and follows reshuffles. |
 | Gift ideas | Each card has a **🎁 Open the wish lists** button that leads to that person's private page. There they add up to 5 gift ideas (each with an optional link) and see their giftee's ideas. The year's **gift budget** is shown prominently, including right above the idea form. |
 | Up to 5 admins, the first one mandatory | Created at setup; admins #2 to #5 are optional, and admin #1 cannot be removed. See [Admins and sign-in](#admins-and-sign-in). |
 | Admins can unlock the matches | **🔓 Unlock matches** requires a fresh confirmation (password again, or a new Google sign-in) and writes `MATCHES REVEALED` to the log, which every admin can see. |
@@ -99,6 +101,19 @@ Participants don't need a login. Every postcard carries a random private link
 - **Resending a card, or reshuffling someone, replaces their link.** The old
   link then shows "this link is no longer valid". Gift ideas are kept per
   person per year, so they survive a reshuffle.
+- **An invitation is the same kind of link, just without a match.** Each
+  person has one link per year, and their postcard link replaces the
+  invitation link.
+- **How the "new gift idea" e-mail finds the giver.** Every link has its own
+  X25519 key pair. Its private half is encrypted with the link token. At draw
+  and reshuffle time, the server seals each person's Secret Santa to that
+  person's public key. Saving ideas through the link is the only thing that
+  can open it, and the result is used only to address the e-mail. The giver
+  isn't shown on the page, and the database alone doesn't reveal them.
+- **The activity log records only that a notice went out**, worded as
+  "to Anna's Secret Santa".
+- **There is no batching.** Every save that adds a new idea sends one
+  e-mail.
 - **Gift ideas aren't encrypted.** They aren't secret, and admins see only
   how many ideas each person has added.
 - **Gift ideas are per year.** Last year's ideas aren't carried over.

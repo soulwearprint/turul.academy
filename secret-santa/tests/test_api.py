@@ -30,6 +30,8 @@ def receivers_from_outbox(tmp_path):
     """Parse giver -> receiver out of the written postcards (test-only peek)."""
     out = {}
     for f in (tmp_path / "outbox").glob("*.eml"):
+        if "_ideas_" in f.name or "_invite_" in f.name:
+            continue
         msg = email.message_from_bytes(f.read_bytes())
         text = msg.get_payload()[0].get_payload(decode=True).decode()
         giver = email.utils.parseaddr(msg["To"])[0]
@@ -267,7 +269,8 @@ def test_google_setup_needs_configured_first_admin(client, monkeypatch):
 def _links_from_outbox(tmp_path):
     """giver name -> (personal page token, receiver name), parsed from the newest cards."""
     out = {}
-    for f in sorted((tmp_path / "outbox").glob("*.eml"), key=lambda f: f.stat().st_mtime):
+    cards = [f for f in (tmp_path / "outbox").glob("*.eml") if "_ideas_" not in f.name and "_invite_" not in f.name]
+    for f in sorted(cards, key=lambda f: f.stat().st_mtime):
         msg = email.message_from_bytes(f.read_bytes())
         text = msg.get_payload()[0].get_payload(decode=True).decode()
         giver = email.utils.parseaddr(msg["To"])[0]
@@ -328,3 +331,103 @@ def test_participant_page_wishes_and_language(client, tmp_path):
     new_links = _links_from_outbox(tmp_path)
     who_has_giftee = next(n for n, (_, r) in new_links.items() if r == giftee)
     assert len(ok(c.get(f"/api/p/{new_links[who_has_giftee][0]}"))["giftee"]["wishes"]) == 2
+
+
+def _body(path):
+    import email.policy
+    msg = email.message_from_bytes(path.read_bytes(), policy=email.policy.default)
+    return msg, msg.get_body(("plain",)).get_content()
+
+
+def _token_in(text):
+    return text.split("/p/")[1].split()[0].split("#")[0]
+
+
+def test_invitation_then_draw_then_idea_notice(client, tmp_path):
+    c = client
+    out = tmp_path / "outbox"
+    ok(c.post("/api/setup", json={"name": "Mom", "password": "secret1"}))
+    add_people(c, ["Anna", "Bela", "Csilla", "Dani"])
+    ok(c.post("/api/years", json={"year": 2026}))
+    ok(c.put("/api/years/2026", json={"budget": "10 000 Ft", "exchange_date": "", "note": ""}))
+
+    # 1) pre-draw invitations: one per person, budget in it, no match anywhere
+    res = ok(c.post("/api/years/2026/invite", json={}))
+    assert len(res["results"]) == 4 and all(r["ok"] for r in res["results"])
+    assert ok(c.post("/api/years/2026/invite", json={}))["results"] == []  # nobody re-invited by default
+    invites = {email.utils.parseaddr(_body(f)[0]["To"])[0]: _token_in(_body(f)[1]) for f in out.glob("2026_invite_*.eml")}
+    msg, text = _body(out / "2026_invite_csilla_fam_test.eml")
+    assert "10 000 Ft" in text and "★" not in text and "Mit kérnél" in msg["Subject"]
+    assert all(p["invited"] for p in ok(c.get("/api/years/2026"))["participants"])
+
+    # invitation page: wishes editable, no giftee yet
+    page = ok(c.get(f"/api/p/{invites['Csilla']}"))
+    assert page["giftee"] is None and page["drawn"] is False
+    ok(c.put(f"/api/p/{invites['Csilla']}/wishes", json={"items": [{"text": "Puzzle 1000 db"}]}))
+    assert not list(out.glob("*_ideas_*"))  # nobody to notify before the draw
+
+    # 2) draw + postcards: Csilla's Secret Santa sees her idea directly on the card
+    ok(c.post("/api/years/2026/draw", json={}))
+    ok(c.post("/api/years/2026/notify", json={}))
+    cards = {}
+    for f in out.glob("2026_*.eml"):
+        if "_invite_" in f.name or "_ideas_" in f.name:
+            continue
+        m, t = _body(f)
+        cards[email.utils.parseaddr(m["To"])[0]] = (t, _token_in(t))
+    santa_of_csilla = next(n for n, (t, _) in cards.items() if "★ Csilla ★" in t)
+    assert "Puzzle 1000 db" in cards[santa_of_csilla][0]
+    # the invitation link was replaced by the postcard link
+    assert c.get(f"/api/p/{invites['Csilla']}").status_code == 404
+    c.post("/api/logout")
+
+    # 3) Csilla adds a new idea -> only her Secret Santa gets an e-mail, listing only the new idea as new
+    csilla_token = cards["Csilla"][1]
+    ok(c.put(f"/api/p/{csilla_token}/wishes", json={"items": [{"text": "Puzzle 1000 db"}, {"text": "Társasjáték"}]}))
+    notices = list(out.glob("2026_ideas_*.eml"))
+    assert len(notices) == 1
+    msg, text = _body(notices[0])
+    assert email.utils.parseaddr(msg["To"])[0] == santa_of_csilla
+    assert "Csilla" not in msg["Subject"]  # lock-screen safe
+    assert "Társasjáték" in text and "10 000 Ft" in text
+    new_part = text.split("adott meg:")[1].split("\n\n")[0]
+    assert "Puzzle" not in new_part
+    # saving again without new ideas sends nothing more
+    notices[0].unlink()
+    ok(c.put(f"/api/p/{csilla_token}/wishes", json={"items": [{"text": "Társasjáték"}]}))
+    assert not list(out.glob("2026_ideas_*.eml"))
+
+    # 4) after a full reshuffle, notices follow Csilla's NEW Secret Santa
+    ok(c.post("/api/login", json={"name": "Mom", "password": "secret1"}))
+    ok(c.post("/api/years/2026/draw", json={"everyone": True, "confirm": True}))
+    ok(c.post("/api/years/2026/notify", json={}))
+    new_cards = {}
+    for f in out.glob("2026_*.eml"):
+        if "_invite_" in f.name or "_ideas_" in f.name:
+            continue
+        m, t = _body(f)
+        new_cards[email.utils.parseaddr(m["To"])[0]] = (t, _token_in(t))
+    new_santa = next(n for n, (t, _) in new_cards.items() if "★ Csilla ★" in t)
+    c.post("/api/logout")
+    ok(c.put(f"/api/p/{new_cards['Csilla'][1]}/wishes", json={"items": [{"text": "Társasjáték"}, {"text": "Sál"}]}))
+    notices = list(out.glob("2026_ideas_*.eml"))
+    assert len(notices) == 1 and email.utils.parseaddr(_body(notices[0])[0]["To"])[0] == new_santa
+
+
+def test_invited_person_without_card_still_reaches_their_santa(client, tmp_path):
+    """Giver got a card, the receiver still only has the invitation link."""
+    c = client
+    out = tmp_path / "outbox"
+    ok(c.post("/api/setup", json={"name": "Mom", "password": "secret1"}))
+    ids = add_people(c, ["Anna", "Bela", "Csilla"])
+    ok(c.post("/api/years", json={"year": 2026}))
+    ok(c.post("/api/years/2026/invite", json={}))
+    inv = {email.utils.parseaddr(_body(f)[0]["To"])[0]: _token_in(_body(f)[1]) for f in out.glob("2026_invite_*.eml")}
+    ok(c.post("/api/years/2026/draw", json={}))
+    pairs = {p["giver"]: p["receiver"] for p in ok(c.post("/api/years/2026/reveal", json={"password": "secret1"}))}
+    santa_of_anna = next(g for g, r in pairs.items() if r == "Anna")
+    ok(c.post("/api/years/2026/notify", json={"member_ids": [ids[santa_of_anna]]}))  # only Anna's Santa notified
+    assert ok(c.get(f"/api/p/{inv['Anna']}"))["giftee"] is None  # Anna still on her invitation link
+    ok(c.put(f"/api/p/{inv['Anna']}/wishes", json={"items": [{"text": "Bögre"}]}))
+    notices = list(out.glob("2026_ideas_*.eml"))
+    assert len(notices) == 1 and email.utils.parseaddr(_body(notices[0])[0]["To"])[0] == santa_of_anna

@@ -58,7 +58,8 @@ CREATE TABLE IF NOT EXISTS exclusions (
     CHECK (a_id < b_id)
 );
 
--- personal page links sent in the postcards (token itself is never stored)
+-- personal page links (token itself is never stored). receiver_sealed = '' for a
+-- pre-draw wish-list invitation; a postcard link replaces it (one link per person per year).
 CREATE TABLE IF NOT EXISTS participant_links (
     link_id         TEXT PRIMARY KEY,
     year            INTEGER NOT NULL REFERENCES years(year) ON DELETE CASCADE,
@@ -106,6 +107,11 @@ MIGRATIONS = [
     ("admins", "google_email", "TEXT"),
     ("members", "lang", "TEXT NOT NULL DEFAULT 'hu'"),
     ("years", "avoid_repeat", "INTEGER NOT NULL DEFAULT 1"),
+    # per-link key pair + this person's giver sealed to it (for "new gift idea" e-mails)
+    ("participant_links", "public_key", "TEXT"),
+    ("participant_links", "private_sealed", "TEXT"),
+    ("participant_links", "giver_route", "TEXT"),
+    ("wishes", "notified_texts", "TEXT NOT NULL DEFAULT '[]'"),
 ]
 
 

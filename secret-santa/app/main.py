@@ -596,6 +596,8 @@ def get_year(year: int, s: Session = Depends(current)):
         y = _year_or_404(conn, year)
         st = _state(conn, year)
         names = _names(conn, st["participants"] | st["givers"])
+        invited = {r[0] for r in conn.execute(
+            "SELECT member_id FROM participant_links WHERE year = ? AND receiver_sealed = ''", (year,))}
         wish_counts = {r["member_id"]: len(json.loads(r["items"])) for r in
                        conn.execute("SELECT member_id, items FROM wishes WHERE year = ?", (year,))}
         notif = {r["giver_id"]: (r["notified_at"], r["notify_count"]) for r in
@@ -603,7 +605,7 @@ def get_year(year: int, s: Session = Depends(current)):
     people = [
         {"id": mid, "name": names.get(mid, "?"),
          "notified_at": notif.get(mid, (None, 0))[0],
-         "has_match": mid in st["givers"], "wishes": wish_counts.get(mid, 0)}
+         "has_match": mid in st["givers"], "wishes": wish_counts.get(mid, 0), "invited": mid in invited}
         for mid in sorted(st["participants"], key=lambda i: names.get(i, "").lower())
     ]
     return {
@@ -695,8 +697,11 @@ def run_draw(year: int, body: ReshuffleIn, s: Session = Depends(current)):
             (year, *people),
         )
         # Links in older cards show the old match: retire them for everyone redrawn or gone.
-        stale = plan.reshuffled | st["removed"]
-        conn.executemany("DELETE FROM participant_links WHERE year = ? AND member_id = ?", [(year, g) for g in stale])
+        # (Invitation links carry no match, so they stay valid.)
+        conn.executemany("DELETE FROM participant_links WHERE year = ? AND member_id = ? AND receiver_sealed != ''",
+                         [(year, g) for g in plan.reshuffled])
+        conn.executemany("DELETE FROM participant_links WHERE year = ? AND member_id = ?",
+                         [(year, g) for g in st["removed"]])
         for giver in plan.reshuffled:
             sealed = crypto.seal_receiver(s.key, year, giver, plan.pairing[giver])
             # Everyone redrawn is re-notified, even if they drew the same person
@@ -707,6 +712,7 @@ def run_draw(year: int, body: ReshuffleIn, s: Session = Depends(current)):
                 "receiver_sealed = excluded.receiver_sealed, assigned_at = excluded.assigned_at, notified_at = NULL",
                 (year, giver, sealed, db.now(), prev.get(giver, 0)),
             )
+        _reseal_routes(conn, year, plan.pairing)
         kind = "draw" if not st["drawn"] else ("reshuffle (everyone)" if body.everyone else "partial reshuffle")
         db.audit(conn, s.admin_name, kind, f"{year}: {len(plan.reshuffled)} of {len(people)} redrawn")
     return {
@@ -714,6 +720,37 @@ def run_draw(year: int, body: ReshuffleIn, s: Session = Depends(current)):
         "hidden_count": plan.hidden_count if st["drawn"] and not body.everyone else 0,
         "total": len(people),
     }
+
+
+@app.post("/api/years/{year}/invite")
+def invite(year: int, body: NotifyIn, request: Request, s: Session = Depends(current)):
+    """Pre-draw e-mail asking everyone for gift ideas. None = everyone without a link yet."""
+    results = []
+    base = _public_base(request)
+    with db.connect() as conn:
+        y = _year_or_404(conn, year)
+        st = _state(conn, year)
+        has_link = {r[0] for r in conn.execute("SELECT member_id FROM participant_links WHERE year = ?", (year,))}
+        has_card = {r[0] for r in conn.execute(
+            "SELECT member_id FROM participant_links WHERE year = ? AND receiver_sealed != ''", (year,))}
+        targets = st["participants"] - has_link if body.member_ids is None else set(body.member_ids) & st["participants"]
+        targets -= has_card  # never replace a postcard link with an invitation
+        pairing = _load_pairing(conn, s.key, year) if st["drawn"] else {}
+        giver_of = {r: g for g, r in pairing.items()}
+        members = {r["id"]: r for r in conn.execute("SELECT id, name, email, lang FROM members")}
+        for mid in sorted(targets, key=lambda i: members[i]["name"].lower()):
+            m = members[mid]
+            token = crypto.new_link_token()
+            try:
+                mailer.deliver(mailer.build_invite(m["name"], m["email"], m["lang"] or mailer.DEFAULT_LANG, year,
+                                                   y["budget"], f"{base}/p/{token}"), m["email"], f"{year}_invite")
+            except Exception as exc:
+                results.append({"id": mid, "name": m["name"], "ok": False, "error": type(exc).__name__ + ": " + str(exc)[:200]})
+                continue
+            _store_link(conn, token, year, mid, None, giver_of.get(mid))
+            results.append({"id": mid, "name": m["name"], "ok": True})
+        db.audit(conn, s.admin_name, "wish-list invitations sent", f"{year}: {sum(x['ok'] for x in results)} ok")
+    return {"results": results, "mode": mailer.mode()}
 
 
 @app.post("/api/years/{year}/notify")
@@ -736,14 +773,16 @@ def notify(year: int, body: NotifyIn, request: Request, s: Session = Depends(cur
             wanted = set(body.member_ids)
             rows = [r for r in rows if r["giver_id"] in wanted]
         names = _names(conn, st["participants"])
+        giver_of = {rc: g for g, rc in _load_pairing(conn, s.key, year).items()}
         for r in rows:
             receiver = crypto.open_receiver(s.key, year, r["giver_id"], r["receiver_sealed"])
+            receiver_wishes = _wishes(conn, year, receiver)
             token = crypto.new_link_token()  # every card gets a fresh link; older ones stop working
             letter = mailer.Letter(
                 giver_name=r["name"], giver_email=r["email"], receiver_name=names[receiver], year=year,
                 budget=y["budget"], exchange_date=y["exchange_date"], note=y["note"],
                 updated=r["notify_count"] > 0, lang=r["lang"] or mailer.DEFAULT_LANG,
-                page_url=f"{base}/p/{token}",
+                page_url=f"{base}/p/{token}", receiver_wishes=receiver_wishes,
             )
             try:
                 mailer.send(letter)
@@ -754,7 +793,10 @@ def notify(year: int, body: NotifyIn, request: Request, s: Session = Depends(cur
                 "UPDATE pairings SET notified_at = ?, notify_count = notify_count + 1 WHERE year = ? AND giver_id = ?",
                 (db.now(), year, r["giver_id"]),
             )
-            _store_link(conn, token, year, r["giver_id"], receiver)
+            _store_link(conn, token, year, r["giver_id"], receiver, giver_of.get(r["giver_id"]))
+            # the card listed these ideas, so don't e-mail them again as "new"
+            conn.execute("UPDATE wishes SET notified_texts = ? WHERE year = ? AND member_id = ?",
+                         (json.dumps(_texts(receiver_wishes), ensure_ascii=False), year, receiver))
             results.append({"id": r["giver_id"], "name": r["name"], "ok": True})
         db.audit(conn, s.admin_name, "postcards sent", f"{year}: {sum(x['ok'] for x in results)} ok, "
                  f"{sum(not x['ok'] for x in results)} failed")
@@ -807,23 +849,73 @@ def _public_base(request: Request) -> str:
     return (os.environ.get("PUBLIC_URL") or str(request.base_url)).rstrip("/")
 
 
-def _store_link(conn, token: str, year: int, member_id: int, receiver_id: int) -> None:
+def _store_link(conn, token: str, year: int, member_id: int, receiver_id: int | None,
+                giver_id: int | None) -> None:
+    """One personal link per person per year; a new one replaces the old.
+
+    receiver_id None = pre-draw invitation. giver_id (this person's Secret
+    Santa) is sealed to the link's public key, for "new gift idea" e-mails."""
+    pub, priv = crypto.new_link_keypair(token, year, member_id)
     conn.execute("DELETE FROM participant_links WHERE year = ? AND member_id = ?", (year, member_id))
     conn.execute(
-        "INSERT INTO participant_links (link_id, year, member_id, receiver_sealed, created_at) VALUES (?, ?, ?, ?, ?)",
-        (crypto.link_id(token), year, member_id, crypto.seal_for_link(token, year, member_id, receiver_id), db.now()),
+        "INSERT INTO participant_links (link_id, year, member_id, receiver_sealed, created_at, public_key, "
+        "private_sealed, giver_route) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        (crypto.link_id(token), year, member_id,
+         crypto.seal_for_link(token, year, member_id, receiver_id) if receiver_id is not None else "",
+         db.now(), pub, priv,
+         crypto.seal_to_link(pub, year, member_id, giver_id) if giver_id is not None else None),
     )
 
 
+def _reseal_routes(conn, year: int, pairing: dict[int, int]) -> None:
+    """After a draw/reshuffle, point every existing link at its person's current Secret Santa."""
+    giver_of = {r: g for g, r in pairing.items()}
+    for row in conn.execute("SELECT link_id, member_id, public_key FROM participant_links WHERE year = ?", (year,)).fetchall():
+        if row["public_key"] and row["member_id"] in giver_of:
+            conn.execute("UPDATE participant_links SET giver_route = ? WHERE link_id = ?",
+                         (crypto.seal_to_link(row["public_key"], year, row["member_id"], giver_of[row["member_id"]]),
+                          row["link_id"]))
+
+
 def _link(conn, token: str):
+    """-> (row, receiver_id or None for an invitation)."""
     row = conn.execute(
         "SELECT l.*, m.name, m.email, m.lang FROM participant_links l JOIN members m ON m.id = l.member_id "
         "WHERE l.link_id = ?", (crypto.link_id(token),)
     ).fetchone()
     if not row:
         raise HTTPException(404, "This link is no longer valid. A newer postcard may have replaced it.")
-    receiver = crypto.open_for_link(token, row["year"], row["member_id"], row["receiver_sealed"])
-    return row, receiver
+    if not row["receiver_sealed"]:
+        return row, None
+    return row, crypto.open_for_link(token, row["year"], row["member_id"], row["receiver_sealed"])
+
+
+def _texts(items: list[dict]) -> list[str]:
+    return [w["text"] for w in items]
+
+
+def _notify_giver_of_new_wishes(conn, token: str, row, items: list[dict]) -> bool:
+    """E-mail this person's Secret Santa about ideas they haven't been told about yet."""
+    if not row["giver_route"] or not row["private_sealed"]:
+        return False
+    year, member = row["year"], row["member_id"]
+    giver = crypto.open_with_link(token, row["private_sealed"], year, member, row["giver_route"])
+    p = conn.execute("SELECT notified_at FROM pairings WHERE year = ? AND giver_id = ?", (year, giver)).fetchone()
+    if not p or not p["notified_at"]:
+        return False  # their postcard isn't out yet; it will list the ideas itself
+    w = conn.execute("SELECT notified_texts FROM wishes WHERE year = ? AND member_id = ?", (year, member)).fetchone()
+    told = set(json.loads(w["notified_texts"])) if w else set()
+    new = [it for it in items if it["text"] not in told]
+    if not new:
+        return False
+    g = conn.execute("SELECT name, email, lang FROM members WHERE id = ?", (giver,)).fetchone()
+    y = _year_or_404(conn, year)
+    mailer.deliver(mailer.build_wish_notice(g["name"], g["email"], g["lang"] or mailer.DEFAULT_LANG, row["name"],
+                                            new, items, y["budget"]), g["email"], f"{year}_ideas")
+    conn.execute("UPDATE wishes SET notified_texts = ? WHERE year = ? AND member_id = ?",
+                 (json.dumps(_texts(items), ensure_ascii=False), year, member))
+    db.audit(conn, row["name"], "gift idea notice sent", f"{year}: to {row['name']}'s Secret Santa")
+    return True
 
 
 def _wishes(conn, year: int, member_id: int) -> list[dict]:
@@ -855,7 +947,9 @@ def participant_page(token: str):
             "name": row["name"], "lang": row["lang"] or mailer.DEFAULT_LANG, "year": row["year"],
             "budget": y["budget"], "exchange_date": y["exchange_date"],
             "my_wishes": _wishes(conn, row["year"], row["member_id"]),
-            "giftee": {"name": names.get(receiver, "?"), "wishes": _wishes(conn, row["year"], receiver)},
+            "giftee": None if receiver is None else
+                      {"name": names.get(receiver, "?"), "wishes": _wishes(conn, row["year"], receiver)},
+            "drawn": _state(conn, row["year"])["drawn"],
             "max_wishes": MAX_WISHES,
         }
 
@@ -875,6 +969,10 @@ def participant_wishes(token: str, body: WishesIn):
             "ON CONFLICT (year, member_id) DO UPDATE SET items = excluded.items, updated_at = excluded.updated_at",
             (row["year"], row["member_id"], json.dumps(items, ensure_ascii=False), db.now()),
         )
+        try:
+            _notify_giver_of_new_wishes(conn, token, row, items)
+        except Exception as exc:  # the wishes are saved either way
+            db.audit(conn, row["name"], "gift idea notice FAILED", f"{row['year']}: {type(exc).__name__}")
     return {"items": items}
 
 
@@ -884,13 +982,18 @@ def participant_lang(token: str, body: LangIn, request: Request):
         row, receiver = _link(conn, token)
         conn.execute("UPDATE members SET lang = ? WHERE id = ?", (body.lang, row["member_id"]))
         db.audit(conn, row["name"], "postcard language changed", f"{body.lang} (by participant)")
-        if body.resend:
+        if body.resend and receiver is None:
+            y = _year_or_404(conn, row["year"])
+            mailer.deliver(mailer.build_invite(row["name"], row["email"], body.lang, row["year"], y["budget"],
+                                               f"{_public_base(request)}/p/{token}"), row["email"], f"{row['year']}_invite")
+        elif body.resend:
             y = _year_or_404(conn, row["year"])
             names = _names(conn, [receiver])
             mailer.send(mailer.Letter(
                 giver_name=row["name"], giver_email=row["email"], receiver_name=names.get(receiver, "?"),
                 year=row["year"], budget=y["budget"], exchange_date=y["exchange_date"], note=y["note"],
                 lang=body.lang, page_url=f"{_public_base(request)}/p/{token}",
+                receiver_wishes=_wishes(conn, row["year"], receiver),
             ))
     return {"ok": True}
 
