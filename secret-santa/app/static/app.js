@@ -362,11 +362,13 @@ async function renderYear() {
     ${y.drawn ? `<section class="card">
       <h2>Postcards</h2>
       <p class="hint">Each person gets their own e-mail; nobody else is in To/CC/BCC.
-        The admin sending them never sees the content.</p>
-      <table><thead><tr><th>Name</th><th>Status</th><th></th></tr></thead><tbody>
+        The admin sending them never sees the content. Each card links to a private page where the person
+        adds gift ideas, sees their giftee's ideas and can switch language. Resending a card replaces its link.</p>
+      <table><thead><tr><th>Name</th><th>Status</th><th>Gift ideas</th><th></th></tr></thead><tbody>
       ${y.participants.map((p) => `<tr><td>${esc(p.name)}</td>
         <td>${!p.has_match ? '<span class="pill bad">not in draw</span>'
           : p.notified_at ? `<span class="pill ok">sent ${fmt(p.notified_at)}</span>` : '<span class="pill wait">not sent</span>'}</td>
+        <td>${p.wishes ? `🎁 ${p.wishes}` : '<span class="muted">—</span>'}</td>
         <td style="text-align:right">${p.has_match && y.in_sync ? `<button class="small secondary" data-send="${p.id}">${p.notified_at ? "Resend" : "Send"}</button>` : ""}</td></tr>`).join("")}
       </tbody></table>
       <p class="hint">Preview the postcard (sample names only):

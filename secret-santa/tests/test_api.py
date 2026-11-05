@@ -262,3 +262,69 @@ def test_google_setup_needs_configured_first_admin(client, monkeypatch):
     ok(client.post("/api/setup", json={"name": "Mom", "password": "secret1", "google_email": "anyone@gmail.com"}))
     client.post("/api/logout")
     assert _google_round_trip(client).headers["location"] == "/"
+
+
+def _links_from_outbox(tmp_path):
+    """giver name -> (personal page token, receiver name), parsed from the newest cards."""
+    out = {}
+    for f in sorted((tmp_path / "outbox").glob("*.eml"), key=lambda f: f.stat().st_mtime):
+        msg = email.message_from_bytes(f.read_bytes())
+        text = msg.get_payload()[0].get_payload(decode=True).decode()
+        giver = email.utils.parseaddr(msg["To"])[0]
+        token = text.split("/p/")[1].split()[0].split("#")[0]
+        out[giver] = (token, text.split("★ ")[1].split(" ★")[0])
+    return out
+
+
+def test_participant_page_wishes_and_language(client, tmp_path):
+    c = client
+    ok(c.post("/api/setup", json={"name": "Mom", "password": "secret1"}))
+    ids = add_people(c, ["Anna", "Bela", "Csilla", "Dani"])
+    ok(c.post("/api/years", json={"year": 2026}))
+    ok(c.put("/api/years/2026", json={"budget": "10 000 Ft", "exchange_date": "dec. 24.", "note": ""}))
+    ok(c.post("/api/years/2026/draw", json={}))
+    ok(c.post("/api/years/2026/notify", json={}))
+    links = _links_from_outbox(tmp_path)
+    c.post("/api/logout")  # participants are not logged in
+
+    # the card links to the page; HTML card has the button and a language link
+    html = next((tmp_path / "outbox").glob("*.eml")).read_text(errors="ignore")
+    assert "/p/" in html and "#lang" in html
+
+    token, giftee = links["Anna"]
+    page = ok(c.get(f"/api/p/{token}"))
+    assert page["name"] == "Anna" and page["giftee"]["name"] == giftee and page["budget"] == "10 000 Ft"
+    r = c.get(f"/p/{token}")
+    assert r.status_code == 200 and r.headers["referrer-policy"] == "no-referrer"
+
+    # giftee adds wishes -> Anna sees them on her page
+    g_token = links[giftee][0]
+    ok(c.put(f"/api/p/{g_token}/wishes", json={"items": [{"text": "Gyapjúzokni", "url": "example.com/zokni"},
+                                                            {"text": "Krimi"}]}))
+    wishes = ok(c.get(f"/api/p/{token}"))["giftee"]["wishes"]
+    assert [w["text"] for w in wishes] == ["Gyapjúzokni", "Krimi"] and wishes[0]["url"] == "https://example.com/zokni"
+    assert c.put(f"/api/p/{token}/wishes", json={"items": [{"text": f"x{i}"} for i in range(6)]}).status_code == 422
+
+    # switching language (and resending) works without login
+    ok(c.put(f"/api/p/{token}/lang", json={"lang": "en", "resend": True}))
+    assert ok(c.get(f"/api/p/{token}"))["lang"] == "en"
+    card = (tmp_path / "outbox" / "2026_anna_fam_test.eml").read_bytes()
+    assert b"Ho ho ho, dear Anna" in email.message_from_bytes(card).get_payload()[0].get_payload(decode=True)
+
+    # bad tokens get nothing; the DB holds no usable token
+    assert c.get("/api/p/not-a-real-token").status_code == 404
+    import sqlite3
+    db_rows = sqlite3.connect(tmp_path / "s.db").execute("SELECT link_id FROM participant_links").fetchall()
+    assert token not in {r[0] for r in db_rows}
+
+    # admin sees wish counts; a reshuffle retires stale links
+    ok(c.post("/api/login", json={"name": "Mom", "password": "secret1"}))
+    counts = {p["name"]: p["wishes"] for p in ok(c.get("/api/years/2026"))["participants"]}
+    assert counts[giftee] == 2
+    ok(c.post("/api/years/2026/draw", json={"everyone": True, "confirm": True}))
+    assert c.get(f"/api/p/{token}").status_code == 404
+    # wishes survive the reshuffle
+    ok(c.post("/api/years/2026/notify", json={}))
+    new_links = _links_from_outbox(tmp_path)
+    who_has_giftee = next(n for n, (_, r) in new_links.items() if r == giftee)
+    assert len(ok(c.get(f"/api/p/{new_links[who_has_giftee][0]}"))["giftee"]["wishes"]) == 2

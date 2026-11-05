@@ -58,6 +58,25 @@ CREATE TABLE IF NOT EXISTS exclusions (
     CHECK (a_id < b_id)
 );
 
+-- personal page links sent in the postcards (token itself is never stored)
+CREATE TABLE IF NOT EXISTS participant_links (
+    link_id         TEXT PRIMARY KEY,
+    year            INTEGER NOT NULL REFERENCES years(year) ON DELETE CASCADE,
+    member_id       INTEGER NOT NULL REFERENCES members(id),
+    receiver_sealed TEXT NOT NULL,
+    created_at      TEXT NOT NULL,
+    UNIQUE (year, member_id)
+);
+
+-- optional gift ideas: JSON list of {"text": ..., "url": ...}
+CREATE TABLE IF NOT EXISTS wishes (
+    year       INTEGER NOT NULL REFERENCES years(year) ON DELETE CASCADE,
+    member_id  INTEGER NOT NULL REFERENCES members(id),
+    items      TEXT NOT NULL DEFAULT '[]',
+    updated_at TEXT NOT NULL,
+    PRIMARY KEY (year, member_id)
+);
+
 CREATE TABLE IF NOT EXISTS settings (
     key   TEXT PRIMARY KEY,
     value TEXT NOT NULL

@@ -42,6 +42,10 @@ TEXTS = {
         "signature": "a Mikulás",
         "footer": "Címzett: {giver} &middot; szánon kézbesítve, manók által lepecsételve. Kérlek, ne továbbítsd ezt a lapot.",
         "from_name": "Mikulás · Északi-sark",
+        "page_button": "🎁 Kívánságlisták megnyitása",
+        "page_sub": "Itt láthatod, mit szeretne {receiver}, és megadhatod a saját ajándékötleteidet is.",
+        "page_text": "Kívánságlisták (a te titkos oldalad – ne add tovább a linket):",
+        "switch_lang": "Read this card in English",
     },
     "en": {
         "subject": "📮 A secret letter from the North Pole for {giver}",
@@ -64,6 +68,10 @@ TEXTS = {
         "signature": "Santa Claus",
         "footer": "To: {giver} &middot; delivered by sleigh, sealed by elves. Please don&rsquo;t forward this card.",
         "from_name": "Santa Claus · North Pole",
+        "page_button": "🎁 Open the wish lists",
+        "page_sub": "See what {receiver} would love to get, and add a few gift ideas of your own.",
+        "page_text": "Wish lists (your private page — please don't share the link):",
+        "switch_lang": "Olvasd el magyarul",
     },
 }
 LANGS = tuple(TEXTS)
@@ -81,6 +89,7 @@ class Letter:
     note: str = ""
     updated: bool = False  # a re-draw replaced an earlier card
     lang: str = DEFAULT_LANG
+    page_url: str = ""  # personal page (wish lists, language); private to this person
 
     @property
     def t(self) -> dict[str, str]:
@@ -112,7 +121,11 @@ def render_text(l: Letter) -> str:
         lines.append(f"{t['exchange']}: {l.exchange_date}")
     if l.note:
         lines += ["", l.note]
+    if l.page_url:
+        lines += ["", t["page_text"], l.page_url]
     lines += ["", t["secret_text"], "", t["closing"], t["signature"]]
+    if l.page_url:
+        lines += ["", f"{t['switch_lang']}: {l.page_url}#lang"]
     return "\n".join(lines)
 
 
@@ -133,6 +146,18 @@ def render_html(l: Letter) -> str:
         '<p style="margin:0 0 12px;padding:8px 12px;background:#fff1c2;border-left:4px solid #b8860b;font-size:13px;color:#5b3a1a;">'
         f'{t["updated_html"]}</p>' if l.updated else ""
     )
+    page = ""
+    switch = ""
+    if l.page_url:
+        url = e(l.page_url)
+        page = (
+            '<table role="presentation" align="center" cellpadding="0" cellspacing="0" style="margin:18px auto 4px;">'
+            f'<tr><td align="center" style="border-radius:8px;background:#1d5c3f;">'
+            f'<a href="{url}" style="display:inline-block;padding:11px 22px;font-family:Arial,sans-serif;font-size:15px;'
+            f'font-weight:bold;color:#ffffff;text-decoration:none;">{t["page_button"]}</a></td></tr></table>'
+            f'<p style="margin:0;text-align:center;font-size:13px;color:#5b3a1a;">{t["page_sub"].format(receiver=e(l.receiver_name))}</p>'
+        )
+        switch = f' &middot; <a href="{url}#lang" style="color:#8a6a45;">{t["switch_lang"]}</a>'
     serif = "Georgia,'Times New Roman',serif"
     script = "'Brush Script MT','Segoe Script','Lucida Handwriting',cursive"
     # Table layout + inline styles only: that is what e-mail clients render reliably.
@@ -182,6 +207,7 @@ def render_html(l: Letter) -> str:
         </td></tr></table>
         <table role="presentation" cellpadding="0" cellspacing="0">{details}</table>
         {note}
+        {page}
         <p style="margin:16px 0 0;font-size:14px;line-height:1.5;">{t["secret"]}</p>
         <p style="margin:18px 0 0;font-size:14px;">{t["closing"]}</p>
         <p style="margin:2px 0 0;font-family:{script};font-size:34px;color:#c8102e;">{t["signature"]}</p>
@@ -189,7 +215,7 @@ def render_html(l: Letter) -> str:
     </tr>
     <tr>
       <td colspan="2" style="padding:10px 28px 18px;border-top:1px dashed #d9c7a3;font-family:{serif};font-size:11px;color:#8a6a45;">
-        {t["footer"].format(giver=giver)}
+        {t["footer"].format(giver=giver)}{switch}
       </td>
     </tr>
     </table>

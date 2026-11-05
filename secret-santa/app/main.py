@@ -4,6 +4,7 @@ Run:  uvicorn app.main:app --port 8080   (from the secret-santa/ folder)
 """
 from __future__ import annotations
 
+import json
 import os
 import re
 import secrets
@@ -595,12 +596,14 @@ def get_year(year: int, s: Session = Depends(current)):
         y = _year_or_404(conn, year)
         st = _state(conn, year)
         names = _names(conn, st["participants"] | st["givers"])
+        wish_counts = {r["member_id"]: len(json.loads(r["items"])) for r in
+                       conn.execute("SELECT member_id, items FROM wishes WHERE year = ?", (year,))}
         notif = {r["giver_id"]: (r["notified_at"], r["notify_count"]) for r in
                  conn.execute("SELECT giver_id, notified_at, notify_count FROM pairings WHERE year = ?", (year,))}
     people = [
         {"id": mid, "name": names.get(mid, "?"),
          "notified_at": notif.get(mid, (None, 0))[0],
-         "has_match": mid in st["givers"]}
+         "has_match": mid in st["givers"], "wishes": wish_counts.get(mid, 0)}
         for mid in sorted(st["participants"], key=lambda i: names.get(i, "").lower())
     ]
     return {
@@ -691,6 +694,9 @@ def run_draw(year: int, body: ReshuffleIn, s: Session = Depends(current)):
             f"DELETE FROM pairings WHERE year = ? AND giver_id NOT IN ({','.join('?' * len(people))})",
             (year, *people),
         )
+        # Links in older cards show the old match: retire them for everyone redrawn or gone.
+        stale = plan.reshuffled | st["removed"]
+        conn.executemany("DELETE FROM participant_links WHERE year = ? AND member_id = ?", [(year, g) for g in stale])
         for giver in plan.reshuffled:
             sealed = crypto.seal_receiver(s.key, year, giver, plan.pairing[giver])
             # Everyone redrawn is re-notified, even if they drew the same person
@@ -711,9 +717,10 @@ def run_draw(year: int, body: ReshuffleIn, s: Session = Depends(current)):
 
 
 @app.post("/api/years/{year}/notify")
-def notify(year: int, body: NotifyIn, s: Session = Depends(current)):
+def notify(year: int, body: NotifyIn, request: Request, s: Session = Depends(current)):
     """Send each participant their own postcard. The caller never sees the content."""
     results = []
+    base = _public_base(request)
     with db.connect() as conn:
         y = _year_or_404(conn, year)
         st = _state(conn, year)
@@ -731,10 +738,12 @@ def notify(year: int, body: NotifyIn, s: Session = Depends(current)):
         names = _names(conn, st["participants"])
         for r in rows:
             receiver = crypto.open_receiver(s.key, year, r["giver_id"], r["receiver_sealed"])
+            token = crypto.new_link_token()  # every card gets a fresh link; older ones stop working
             letter = mailer.Letter(
                 giver_name=r["name"], giver_email=r["email"], receiver_name=names[receiver], year=year,
                 budget=y["budget"], exchange_date=y["exchange_date"], note=y["note"],
                 updated=r["notify_count"] > 0, lang=r["lang"] or mailer.DEFAULT_LANG,
+                page_url=f"{base}/p/{token}",
             )
             try:
                 mailer.send(letter)
@@ -745,6 +754,7 @@ def notify(year: int, body: NotifyIn, s: Session = Depends(current)):
                 "UPDATE pairings SET notified_at = ?, notify_count = notify_count + 1 WHERE year = ? AND giver_id = ?",
                 (db.now(), year, r["giver_id"]),
             )
+            _store_link(conn, token, year, r["giver_id"], receiver)
             results.append({"id": r["giver_id"], "name": r["name"], "ok": True})
         db.audit(conn, s.admin_name, "postcards sent", f"{year}: {sum(x['ok'] for x in results)} ok, "
                  f"{sum(not x['ok'] for x in results)} failed")
@@ -786,6 +796,109 @@ def postcard_preview(updated: bool = False, lang: Literal["hu", "en"] = "hu", s:
         note="Handmade gifts earn bonus cookies." if lang == "en" else "A saját kézzel készített ajándékért extra sütemény jár.",
         updated=updated, lang=lang,
     ))
+
+
+# ─── Participant pages (personal link from the postcard, no login) ─────────
+
+MAX_WISHES = 5
+
+
+def _public_base(request: Request) -> str:
+    return (os.environ.get("PUBLIC_URL") or str(request.base_url)).rstrip("/")
+
+
+def _store_link(conn, token: str, year: int, member_id: int, receiver_id: int) -> None:
+    conn.execute("DELETE FROM participant_links WHERE year = ? AND member_id = ?", (year, member_id))
+    conn.execute(
+        "INSERT INTO participant_links (link_id, year, member_id, receiver_sealed, created_at) VALUES (?, ?, ?, ?, ?)",
+        (crypto.link_id(token), year, member_id, crypto.seal_for_link(token, year, member_id, receiver_id), db.now()),
+    )
+
+
+def _link(conn, token: str):
+    row = conn.execute(
+        "SELECT l.*, m.name, m.email, m.lang FROM participant_links l JOIN members m ON m.id = l.member_id "
+        "WHERE l.link_id = ?", (crypto.link_id(token),)
+    ).fetchone()
+    if not row:
+        raise HTTPException(404, "This link is no longer valid. A newer postcard may have replaced it.")
+    receiver = crypto.open_for_link(token, row["year"], row["member_id"], row["receiver_sealed"])
+    return row, receiver
+
+
+def _wishes(conn, year: int, member_id: int) -> list[dict]:
+    row = conn.execute("SELECT items FROM wishes WHERE year = ? AND member_id = ?", (year, member_id)).fetchone()
+    return json.loads(row["items"]) if row else []
+
+
+class WishItem(BaseModel):
+    text: str = Field(min_length=1, max_length=200)
+    url: str = Field(default="", max_length=500)
+
+
+class WishesIn(BaseModel):
+    items: list[WishItem] = Field(default_factory=list, max_length=MAX_WISHES)
+
+
+class LangIn(BaseModel):
+    lang: Literal["hu", "en"]
+    resend: bool = False  # also send the postcard again in the new language
+
+
+@app.get("/api/p/{token}")
+def participant_page(token: str):
+    with db.connect() as conn:
+        row, receiver = _link(conn, token)
+        y = _year_or_404(conn, row["year"])
+        names = _names(conn, [receiver])
+        return {
+            "name": row["name"], "lang": row["lang"] or mailer.DEFAULT_LANG, "year": row["year"],
+            "budget": y["budget"], "exchange_date": y["exchange_date"],
+            "my_wishes": _wishes(conn, row["year"], row["member_id"]),
+            "giftee": {"name": names.get(receiver, "?"), "wishes": _wishes(conn, row["year"], receiver)},
+            "max_wishes": MAX_WISHES,
+        }
+
+
+@app.put("/api/p/{token}/wishes")
+def participant_wishes(token: str, body: WishesIn):
+    items = []
+    for it in body.items:
+        url = it.url.strip()
+        if url and not re.match(r"^https?://", url, re.I):
+            url = "https://" + url
+        items.append({"text": it.text.strip(), "url": url})
+    with db.connect() as conn:
+        row, _ = _link(conn, token)
+        conn.execute(
+            "INSERT INTO wishes (year, member_id, items, updated_at) VALUES (?, ?, ?, ?) "
+            "ON CONFLICT (year, member_id) DO UPDATE SET items = excluded.items, updated_at = excluded.updated_at",
+            (row["year"], row["member_id"], json.dumps(items, ensure_ascii=False), db.now()),
+        )
+    return {"items": items}
+
+
+@app.put("/api/p/{token}/lang")
+def participant_lang(token: str, body: LangIn, request: Request):
+    with db.connect() as conn:
+        row, receiver = _link(conn, token)
+        conn.execute("UPDATE members SET lang = ? WHERE id = ?", (body.lang, row["member_id"]))
+        db.audit(conn, row["name"], "postcard language changed", f"{body.lang} (by participant)")
+        if body.resend:
+            y = _year_or_404(conn, row["year"])
+            names = _names(conn, [receiver])
+            mailer.send(mailer.Letter(
+                giver_name=row["name"], giver_email=row["email"], receiver_name=names.get(receiver, "?"),
+                year=row["year"], budget=y["budget"], exchange_date=y["exchange_date"], note=y["note"],
+                lang=body.lang, page_url=f"{_public_base(request)}/p/{token}",
+            ))
+    return {"ok": True}
+
+
+@app.get("/p/{token}", include_in_schema=False)
+def participant_html(token: str):
+    # no-referrer: the token is in the URL and must not leak to sites linked from wish lists
+    return FileResponse(STATIC / "participant.html", headers={"Referrer-Policy": "no-referrer", "Cache-Control": "no-store"})
 
 
 # ─── Frontend ──────────────────────────────────────────────────────────────

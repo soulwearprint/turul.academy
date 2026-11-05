@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <title>Titkos Mikulás</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    main { max-width: 640px; }
+    .budget { text-align: center; padding: 16px; border-radius: 12px; background: #fff6d6; border: 2px solid var(--gold); margin-bottom: 16px; }
+    .budget .amount { font: 700 30px Georgia, serif; color: var(--red); }
+    .budget .label { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #6b4d00; }
+    .giftee { font: 700 26px Georgia, serif; color: var(--red); margin: 0 0 8px; }
+    ul.wishes { padding-left: 20px; margin: 8px 0; }
+    ul.wishes li { margin: 6px 0; }
+    .wish-row { display: grid; grid-template-columns: 1fr 1fr auto; gap: 6px; margin-bottom: 6px; }
+    @media (max-width: 560px) { .wish-row { grid-template-columns: 1fr auto; } .wish-row .url { grid-column: 1; } }
+    .lang-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+    .lang-btns button.on { background: var(--green); }
+    .ok { color: var(--green); }
+  </style>
+</head>
+<body>
+  <header><h1 id="title">🎅 Titkos Mikulás</h1></header>
+  <main id="app"><p class="muted">…</p></main>
+
+<script>
+"use strict";
+const T = {
+  hu: {
+    title: (y) => `🎅 Titkos Mikulás ${y}`,
+    hello: (n) => `Szia, ${n}!`,
+    private: "Ez a te titkos oldalad. Ne add tovább a linket – aki megkapja, látja, kit húztál.",
+    budget: "Ajándékkeret", noBudget: "Nincs megadott keret – a családi józan ész dönt. 😉",
+    budgetNote: "Kérjük, maradjatok a kereten belül!",
+    exchange: "Ajándékozás",
+    yourGiftee: "A te megajándékozottad",
+    gifteeWishes: (n) => `${n} ezeknek örülne:`,
+    noWishes: (n) => `${n} még nem adott meg ötletet. Nézz vissza később!`,
+    myWishes: "Az én ajándékötleteim",
+    myWishesHint: (max) => `Legfeljebb ${max} ötlet, ha szeretnéd. Csak a titkos Mikulásod látja őket.`,
+    withinBudget: (b) => `Csak olyat írj, ami belefér ebbe: ${b}. (Bocs, a PlayStation és a VR-szemüveg nem fér bele. 😄)`,
+    idea: "Ötlet (pl. egy jó krimi, gyapjúzokni 38-as méretben)", url: "Link (nem kötelező)",
+    add: "+ Új ötlet", remove: "Törlés", save: "Mentés", saved: "Elmentve! 🎄",
+    lang: "A képeslap nyelve", resend: "Küldd el újra a képeslapot ezen a nyelven",
+    langSaved: "Nyelv elmentve.", langResent: "Nyelv elmentve, a képeslap úton van! 📮",
+    gone: "Ez a link már nem érvényes – valószínűleg kaptál azóta egy újabb képeslapot. Az abban lévő linket használd.",
+  },
+  en: {
+    title: (y) => `🎅 Secret Santa ${y}`,
+    hello: (n) => `Hi, ${n}!`,
+    private: "This is your private page. Please don't share the link — whoever has it can see who you drew.",
+    budget: "Gift budget", noBudget: "No budget set — family common sense applies. 😉",
+    budgetNote: "Please keep gifts within the budget!",
+    exchange: "Gift exchange",
+    yourGiftee: "Your giftee",
+    gifteeWishes: (n) => `${n} would be happy with:`,
+    noWishes: (n) => `${n} hasn't added any ideas yet. Check back later!`,
+    myWishes: "My gift ideas",
+    myWishesHint: (max) => `Up to ${max} ideas, if you like. Only your Secret Santa sees them.`,
+    withinBudget: (b) => `Only add things that fit within ${b}. (Sorry, a PlayStation or a VR headset won't fit. 😄)`,
+    idea: "Idea (e.g. a good crime novel, wool socks size 38)", url: "Link (optional)",
+    add: "+ Add idea", remove: "Remove", save: "Save", saved: "Saved! 🎄",
+    lang: "Postcard language", resend: "Send me the postcard again in this language",
+    langSaved: "Language saved.", langResent: "Language saved, your postcard is on its way! 📮",
+    gone: "This link is no longer valid — you probably received a newer postcard since. Please use the link in that one.",
+  },
+};
+const $ = (s, el = document) => el.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const token = location.pathname.split("/").pop();
+const wantLang = location.hash === "#lang";
+let data, t;
+
+async function call(method, path, body) {
+  const res = await fetch(`/api/p/${encodeURIComponent(token)}${path}`, {
+    method, headers: body ? { "Content-Type": "application/json" } : {}, body: body ? JSON.stringify(body) : undefined,
+  });
+  const out = await res.json().catch(() => ({}));
+  if (!res.ok) throw Object.assign(new Error(out.detail || res.statusText), { status: res.status });
+  return out;
+}
+
+function wishList(items) {
+  return `<ul class="wishes">${items.map((w) => `<li>${esc(w.text)}${w.url
+    ? ` — <a href="${esc(w.url)}" target="_blank" rel="noopener noreferrer">link ↗</a>` : ""}</li>`).join("")}</ul>`;
+}
+
+function render() {
+  t = T[data.lang] || T.hu;
+  document.documentElement.lang = data.lang;
+  document.title = t.title(data.year).replace("🎅 ", "");
+  $("#title").textContent = t.title(data.year);
+  const g = data.giftee;
+  $("#app").innerHTML = `
+    <section class="card">
+      <h2>${esc(t.hello(data.name))}</h2>
+      <p class="hint">🔒 ${esc(t.private)}</p>
+    </section>
+
+    <div class="budget">
+      ${data.budget ? `<div class="label">${esc(t.budget)}</div><div class="amount">${esc(data.budget)}</div>
+        <div class="hint">${esc(t.budgetNote)}</div>` : `<div class="hint">${esc(t.noBudget)}</div>`}
+      ${data.exchange_date ? `<div class="hint" style="margin-top:6px">📅 ${esc(t.exchange)}: <b>${esc(data.exchange_date)}</b></div>` : ""}
+    </div>
+
+    <section class="card">
+      <div class="label hint">${esc(t.yourGiftee)}</div>
+      <p class="giftee">${esc(g.name)}</p>
+      ${g.wishes.length ? `<p>${esc(t.gifteeWishes(g.name))}</p>${wishList(g.wishes)}` : `<p class="muted">${esc(t.noWishes(g.name))}</p>`}
+    </section>
+
+    <section class="card">
+      <h2>${esc(t.myWishes)}</h2>
+      <p class="hint">${esc(t.myWishesHint(data.max_wishes))}</p>
+      ${data.budget ? `<div class="banner">💰 ${esc(t.withinBudget(data.budget))}</div>` : ""}
+      <form id="wf">
+        <div id="rows"></div>
+        <div class="actions">
+          <button type="button" class="secondary" id="addrow">${esc(t.add)}</button>
+          <button>${esc(t.save)}</button>
+          <span id="wmsg" class="ok"></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="card" id="lang">
+      <h2>${esc(t.lang)}</h2>
+      <div class="lang-btns">
+        <button type="button" data-lang="hu" class="${data.lang === "hu" ? "on" : "secondary"}">🇭🇺 Magyar</button>
+        <button type="button" data-lang="en" class="${data.lang === "en" ? "on" : "secondary"}">🇬🇧 English</button>
+      </div>
+      <label style="display:flex;gap:8px;align-items:center;color:inherit;margin-top:10px">
+        <input type="checkbox" id="resend" style="width:auto"> ${esc(t.resend)}</label>
+      <p id="lmsg" class="ok"></p>
+    </section>`;
+
+  const rows = $("#rows");
+  const addRow = (w = { text: "", url: "" }) => {
+    if (rows.children.length >= data.max_wishes) return;
+    const div = document.createElement("div");
+    div.className = "wish-row";
+    div.innerHTML = `<input name="text" maxlength="200" placeholder="${esc(t.idea)}" value="${esc(w.text)}">
+      <input name="url" class="url" maxlength="500" placeholder="${esc(t.url)}" value="${esc(w.url)}">
+      <button type="button" class="small secondary">${esc(t.remove)}</button>`;
+    div.querySelector("button").onclick = () => { div.remove(); toggleAdd(); };
+    rows.appendChild(div);
+    toggleAdd();
+  };
+  const toggleAdd = () => { $("#addrow").disabled = rows.children.length >= data.max_wishes; };
+  (data.my_wishes.length ? data.my_wishes : [{ text: "", url: "" }]).forEach(addRow);
+  $("#addrow").onclick = () => addRow();
+  $("#wf").onsubmit = async (e) => {
+    e.preventDefault();
+    const items = [...rows.children].map((r) => ({ text: r.querySelector("[name=text]").value.trim(), url: r.querySelector("[name=url]").value.trim() }))
+      .filter((w) => w.text);
+    try { const out = await call("PUT", "/wishes", { items }); data.my_wishes = out.items; $("#wmsg").textContent = t.saved; }
+    catch (err) { $("#wmsg").textContent = err.message; }
+  };
+  document.querySelectorAll("[data-lang]").forEach((b) => (b.onclick = async () => {
+    const resend = $("#resend").checked;
+    try {
+      await call("PUT", "/lang", { lang: b.dataset.lang, resend });
+      data.lang = b.dataset.lang; render();
+      $("#lmsg").textContent = resend ? t.langResent : t.langSaved;
+      $("#lang").scrollIntoView();
+    } catch (err) { $("#lmsg").textContent = err.message; }
+  }));
+}
+
+(async () => {
+  try { data = await call("GET", ""); }
+  catch (err) {
+    const lang = navigator.language?.startsWith("hu") ? "hu" : "en";
+    $("#app").innerHTML = `<section class="card"><p>${esc(err.status === 404 ? T[lang].gone : err.message)}</p></section>`;
+    return;
+  }
+  render();
+  if (wantLang) $("#lang").scrollIntoView({ behavior: "smooth" });
+})();
+</script>
+</body>
+</html>

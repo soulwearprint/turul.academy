@@ -29,7 +29,8 @@ Tests: `pip install -r requirements-dev.txt && python -m pytest -q`
 | 1-to-1 random draw | Uniformly random among all valid draws: everyone gives once, receives once, never draws themselves (`app/draw.py`). |
 | Couples never draw each other | **Family → Never draw each other**. Each rule works both ways and applies every year. |
 | No repeat of last year | On by default for each year (**Details** → *Nobody draws the same person as in the previous year's draw*). It compares against the most recent earlier year that has a draw. |
-| Postcard language | Hungarian by default. Set **English** per person in the Family tab. |
+| Postcard language | Hungarian by default. An admin sets **English** per person in the Family tab, or the participant switches it from the link in their card, optionally getting the card resent. |
+| Gift ideas | Each card has a **🎁 Open the wish lists** button that leads to that person's private page. There they add up to 5 gift ideas (each with an optional link) and see their giftee's ideas. The year's **gift budget** is shown prominently, including right above the idea form. |
 | Up to 5 admins, the first one mandatory | Created at setup; admins #2 to #5 are optional, and admin #1 cannot be removed. See [Admins and sign-in](#admins-and-sign-in). |
 | Admins can unlock the matches | **🔓 Unlock matches** requires a fresh confirmation (password again, or a new Google sign-in) and writes `MATCHES REVEALED` to the log, which every admin can see. |
 | Results stored per year | One draw per year. New years start from the previous year's list. |
@@ -81,6 +82,32 @@ To set up Google sign-in:
 Google sign-in is not part of the automated tests against real Google. The
 tests replace Google's token endpoint with a stub, so try one real sign-in
 after setting it up.
+
+### Personal pages (wish lists and language)
+
+Participants don't need a login. Every postcard carries a random private link
+(`/p/<token>`):
+
+- **The server never stores the token.** It keeps only a hash, used to look
+  the link up, plus that person's match encrypted with a key derived from the
+  token. So the page can show "your giftee" while no admin is logged in, and
+  the database alone still reveals nothing.
+- **Anyone with the link sees that person's match**, just like the card
+  itself. The page says so ("don't share the link"). It sends
+  `Referrer-Policy: no-referrer` so the link isn't leaked to shops linked in
+  wish lists.
+- **Resending a card, or reshuffling someone, replaces their link.** The old
+  link then shows "this link is no longer valid". Gift ideas are kept per
+  person per year, so they survive a reshuffle.
+- **Gift ideas aren't encrypted.** They aren't secret, and admins see only
+  how many ideas each person has added.
+- **Gift ideas are per year.** Last year's ideas aren't carried over.
+- **Links are prefetch-safe.** The language link opens the page (`#lang`)
+  rather than switching on click, because e-mail security scanners open links
+  automatically.
+
+Set `PUBLIC_URL` so the links in the cards use your real address. Without it,
+the address the admin used to open the app is used.
 
 ### Secrecy model
 

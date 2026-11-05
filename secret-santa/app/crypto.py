@@ -80,3 +80,30 @@ def unwrap_with_kek(wrapped_b64: str, kek: bytes) -> bytes:
         return AESGCM(kek).decrypt(blob[:12], blob[12:], b"santa-server-key")
     except InvalidTag as exc:
         raise WrongPassword("SANTA_SERVER_KEY does not match this database") from exc
+
+
+# ─── Personal links ────────────────────────────────────────────────────────
+# Each postcard carries a random link token. The server stores only a hash
+# of it (to look the link up) plus that person's match sealed with a key
+# derived from the token. So the page behind the link can show "your giftee"
+# without any admin being logged in, while the database alone still reveals
+# nothing.
+
+def new_link_token() -> str:
+    return base64.urlsafe_b64encode(os.urandom(32)).decode().rstrip("=")
+
+
+def link_id(token: str) -> str:
+    return hashlib.sha256(b"santa-link-id:" + token.encode()).hexdigest()
+
+
+def _link_key(token: str) -> bytes:
+    return hashlib.sha256(b"santa-link-key:" + token.encode()).digest()
+
+
+def seal_for_link(token: str, year: int, giver_id: int, receiver_id: int) -> str:
+    return seal_receiver(_link_key(token), year, giver_id, receiver_id)
+
+
+def open_for_link(token: str, year: int, giver_id: int, sealed: str) -> int:
+    return open_receiver(_link_key(token), year, giver_id, sealed)
