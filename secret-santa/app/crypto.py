@@ -152,3 +152,25 @@ def open_with_link(token: str, priv_sealed: str, year: int, member_id: int, seal
     eph_pub, nonce, ct = blob[:32], blob[32:44], blob[44:]
     shared = X25519PrivateKey.from_private_bytes(raw).exchange(X25519PublicKey.from_public_bytes(eph_pub))
     return int(AESGCM(_route_key(shared, eph_pub)).decrypt(nonce, ct, f"route:{year}:{member_id}".encode()).decode())
+
+
+def server_key() -> bytes:
+    """Key the server holds without any admin logged in (needed for the daily digest).
+
+    SANTA_SERVER_KEY (env, base64 32 bytes) if set - recommended, keeps it out of
+    the data folder. Otherwise generated once into data/server.key (mode 600)."""
+    env = os.environ.get("SANTA_SERVER_KEY")
+    if env:
+        raw = base64.b64decode(env)
+        if len(raw) != 32:
+            raise ValueError("SANTA_SERVER_KEY must be 32 random bytes, base64-encoded.")
+        return raw
+    from pathlib import Path
+    default_dir = Path(os.environ.get("SANTA_DB", Path(__file__).resolve().parent.parent / "data" / "santa.db")).parent
+    path = Path(os.environ.get("SANTA_SERVER_KEY_FILE", default_dir / "server.key"))
+    if not path.exists():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+        with os.fdopen(fd, "wb") as f:
+            f.write(os.urandom(32))
+    return path.read_bytes()

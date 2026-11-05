@@ -31,8 +31,12 @@ STATIC = Path(__file__).resolve().parent / "static"
 
 @asynccontextmanager
 async def lifespan(_app):
+    import asyncio
     db.init()
+    task = asyncio.create_task(_digest_loop()) if os.environ.get("SANTA_DIGEST_SCHEDULER", "1") == "1" else None
     yield
+    if task:
+        task.cancel()
 
 
 app = FastAPI(title="Family Secret Santa", docs_url=None, redoc_url=None, lifespan=lifespan)
@@ -598,7 +602,7 @@ def get_year(year: int, s: Session = Depends(current)):
         names = _names(conn, st["participants"] | st["givers"])
         invited = {r[0] for r in conn.execute(
             "SELECT member_id FROM participant_links WHERE year = ? AND receiver_sealed = ''", (year,))}
-        wish_counts = {r["member_id"]: len(json.loads(r["items"])) for r in
+        wish_counts = {r["member_id"]: len([i for i in json.loads(r["items"]) if not i.get("obsolete")]) for r in
                        conn.execute("SELECT member_id, items FROM wishes WHERE year = ?", (year,))}
         notif = {r["giver_id"]: (r["notified_at"], r["notify_count"]) for r in
                  conn.execute("SELECT giver_id, notified_at, notify_count FROM pairings WHERE year = ?", (year,))}
@@ -690,6 +694,8 @@ def run_draw(year: int, body: ReshuffleIn, s: Session = Depends(current)):
             plan, people = _plan(conn, s, year, body)
         except draw.DrawError as exc:
             raise HTTPException(422, str(exc))
+        old_pairing = _load_pairing(conn, s.key, year) if st["drawn"] else {}
+        old_giver_of = {r: g for g, r in old_pairing.items()}
         prev = {r["giver_id"]: r["notify_count"] for r in
                 conn.execute("SELECT giver_id, notify_count FROM pairings WHERE year = ?", (year,))}
         conn.execute(
@@ -713,6 +719,9 @@ def run_draw(year: int, body: ReshuffleIn, s: Session = Depends(current)):
                 (year, giver, sealed, db.now(), prev.get(giver, 0)),
             )
         _reseal_routes(conn, year, plan.pairing)
+        for g, r in plan.pairing.items():
+            if old_giver_of.get(r) != g:
+                _reset_for_new_giver(conn, year, r)
         kind = "draw" if not st["drawn"] else ("reshuffle (everyone)" if body.everyone else "partial reshuffle")
         db.audit(conn, s.admin_name, kind, f"{year}: {len(plan.reshuffled)} of {len(people)} redrawn")
     return {
@@ -776,7 +785,7 @@ def notify(year: int, body: NotifyIn, request: Request, s: Session = Depends(cur
         giver_of = {rc: g for g, rc in _load_pairing(conn, s.key, year).items()}
         for r in rows:
             receiver = crypto.open_receiver(s.key, year, r["giver_id"], r["receiver_sealed"])
-            receiver_wishes = _wishes(conn, year, receiver)
+            receiver_wishes = _active(_items(conn, year, receiver))
             token = crypto.new_link_token()  # every card gets a fresh link; older ones stop working
             letter = mailer.Letter(
                 giver_name=r["name"], giver_email=r["email"], receiver_name=names[receiver], year=year,
@@ -794,9 +803,7 @@ def notify(year: int, body: NotifyIn, request: Request, s: Session = Depends(cur
                 (db.now(), year, r["giver_id"]),
             )
             _store_link(conn, token, year, r["giver_id"], receiver, giver_of.get(r["giver_id"]))
-            # the card listed these ideas, so don't e-mail them again as "new"
-            conn.execute("UPDATE wishes SET notified_texts = ? WHERE year = ? AND member_id = ?",
-                         (json.dumps(_texts(receiver_wishes), ensure_ascii=False), year, receiver))
+            _mark_all_sent(conn, year, receiver)  # the card listed the ideas; nothing pending for this giver
             results.append({"id": r["giver_id"], "name": r["name"], "ok": True})
         db.audit(conn, s.admin_name, "postcards sent", f"{year}: {sum(x['ok'] for x in results)} ok, "
                  f"{sum(not x['ok'] for x in results)} failed")
@@ -838,6 +845,53 @@ def postcard_preview(updated: bool = False, lang: Literal["hu", "en"] = "hu", s:
         note="Handmade gifts earn bonus cookies." if lang == "en" else "A saját kézzel készített ajándékért extra sütemény jár.",
         updated=updated, lang=lang,
     ))
+
+
+# ─── Daily digest ──────────────────────────────────────────────────────────
+
+DIGEST_HOUR = int(os.environ.get("SANTA_DIGEST_HOUR", "18"))
+SANTA_TZ = os.environ.get("SANTA_TZ", "Europe/Budapest")
+
+
+def _digest_due(now_utc=None) -> bool:
+    from datetime import datetime, timezone
+    from zoneinfo import ZoneInfo
+    now = (now_utc or datetime.now(timezone.utc)).astimezone(ZoneInfo(SANTA_TZ))
+    if now.hour < DIGEST_HOUR:
+        return False
+    with db.connect() as conn:
+        last = db.get_setting(conn, "last_digest_at")
+    if not last:
+        return True
+    last_local = datetime.fromisoformat(last).astimezone(ZoneInfo(SANTA_TZ))
+    return last_local.date() < now.date() or last_local.hour < DIGEST_HOUR
+
+
+async def _digest_loop() -> None:
+    import asyncio
+    while True:
+        try:
+            if await asyncio.to_thread(_digest_due):
+                await asyncio.to_thread(run_digest)
+        except Exception:  # never let the loop die; next tick retries
+            pass
+        await asyncio.sleep(300)
+
+
+@app.get("/api/digest")
+def digest_status(s: Session = Depends(current)):
+    with db.connect() as conn:
+        n = conn.execute("SELECT COUNT(*) FROM digest_queue").fetchone()[0]
+        last = db.get_setting(conn, "last_digest_at")
+    return {"pending": n, "hour": DIGEST_HOUR, "tz": SANTA_TZ, "last": last}
+
+
+@app.post("/api/digest/run")
+def digest_now(s: Session = Depends(current)):
+    res = run_digest()
+    with db.connect() as conn:
+        db.audit(conn, s.admin_name, "wish-list digest run manually", f"{res['sent']} sent, {res['failed']} failed")
+    return {**res, "mode": mailer.mode()}
 
 
 # ─── Participant pages (personal link from the postcard, no login) ─────────
@@ -890,46 +944,146 @@ def _link(conn, token: str):
     return row, crypto.open_for_link(token, row["year"], row["member_id"], row["receiver_sealed"])
 
 
-def _texts(items: list[dict]) -> list[str]:
-    return [w["text"] for w in items]
+# ─── Gift ideas ────────────────────────────────────────────────────────────
+# Each idea: {id, text, url, sent, obsolete, reason, obsolete_sent}
+#   sent          – this person's Secret Santa has received it (postcard or digest)
+#   obsolete      – the owner no longer wants it (only possible once sent;
+#                   unsent ideas are simply removed)
+#   obsolete_sent – the Secret Santa has been told it is obsolete
+
+OBSOLETE_REASONS = ("got_it", "not_wanted", "mistake", "other")
 
 
-def _notify_giver_of_new_wishes(conn, token: str, row, items: list[dict]) -> bool:
-    """E-mail this person's Secret Santa about ideas they haven't been told about yet."""
-    if not row["giver_route"] or not row["private_sealed"]:
-        return False
+def _norm(item: dict, told: set[str]) -> dict:
+    """Bring older stored items up to the current shape."""
+    return {
+        "id": item.get("id") or secrets.token_hex(4),
+        "text": item["text"], "url": item.get("url", ""),
+        "sent": bool(item.get("sent", item["text"] in told)),
+        "obsolete": bool(item.get("obsolete", False)),
+        "reason": item.get("reason", ""),
+        "obsolete_sent": bool(item.get("obsolete_sent", False)),
+    }
+
+
+def _items(conn, year: int, member_id: int) -> list[dict]:
+    row = conn.execute("SELECT items, notified_texts FROM wishes WHERE year = ? AND member_id = ?",
+                       (year, member_id)).fetchone()
+    if not row:
+        return []
+    told = set(json.loads(row["notified_texts"] or "[]"))
+    return [_norm(i, told) for i in json.loads(row["items"])]
+
+
+def _save_items(conn, year: int, member_id: int, items: list[dict]) -> None:
+    conn.execute(
+        "INSERT INTO wishes (year, member_id, items, updated_at) VALUES (?, ?, ?, ?) "
+        "ON CONFLICT (year, member_id) DO UPDATE SET items = excluded.items, updated_at = excluded.updated_at",
+        (year, member_id, json.dumps(items, ensure_ascii=False), db.now()),
+    )
+
+
+def _active(items: list[dict]) -> list[dict]:
+    return [{"text": i["text"], "url": i["url"]} for i in items if not i["obsolete"]]
+
+
+def _giver_view(items: list[dict]) -> list[dict]:
+    """What a Secret Santa sees: current ideas, plus obsolete ones they had been told about."""
+    return [{"text": i["text"], "url": i["url"], "obsolete": i["obsolete"], "reason": i["reason"]}
+            for i in items if not i["obsolete"] or i["sent"]]
+
+
+def _mark_all_sent(conn, year: int, member_id: int) -> None:
+    """The giver just got everything (postcard): nothing is pending any more."""
+    items = _items(conn, year, member_id)
+    for i in items:
+        i["sent"] = True
+        if i["obsolete"]:
+            i["obsolete_sent"] = True
+    if items:
+        _save_items(conn, year, member_id, items)
+    conn.execute("DELETE FROM digest_queue WHERE year = ? AND receiver_id = ?", (year, member_id))
+
+
+def _reset_for_new_giver(conn, year: int, member_id: int) -> None:
+    """This person's Secret Santa changed: the new one has seen nothing yet."""
+    items = [i for i in _items(conn, year, member_id) if not i["obsolete"]]
+    for i in items:
+        i["sent"] = False
+    if items or conn.execute("SELECT 1 FROM wishes WHERE year = ? AND member_id = ?", (year, member_id)).fetchone():
+        _save_items(conn, year, member_id, items)
+    conn.execute("DELETE FROM digest_queue WHERE year = ? AND receiver_id = ?", (year, member_id))
+
+
+def _pending(items: list[dict]) -> tuple[list[dict], list[dict]]:
+    new = [i for i in items if not i["obsolete"] and not i["sent"]]
+    gone = [i for i in items if i["obsolete"] and i["sent"] and not i["obsolete_sent"]]
+    return new, gone
+
+
+def _queue_digest(conn, token: str, row) -> None:
+    """After a change, remember (encrypted) that this person's Secret Santa has news."""
     year, member = row["year"], row["member_id"]
+    if not row["giver_route"] or not row["private_sealed"]:
+        return
     giver = crypto.open_with_link(token, row["private_sealed"], year, member, row["giver_route"])
     p = conn.execute("SELECT notified_at FROM pairings WHERE year = ? AND giver_id = ?", (year, giver)).fetchone()
     if not p or not p["notified_at"]:
-        return False  # their postcard isn't out yet; it will list the ideas itself
-    w = conn.execute("SELECT notified_texts FROM wishes WHERE year = ? AND member_id = ?", (year, member)).fetchone()
-    told = set(json.loads(w["notified_texts"])) if w else set()
-    new = [it for it in items if it["text"] not in told]
-    if not new:
-        return False
-    g = conn.execute("SELECT name, email, lang FROM members WHERE id = ?", (giver,)).fetchone()
-    y = _year_or_404(conn, year)
-    mailer.deliver(mailer.build_wish_notice(g["name"], g["email"], g["lang"] or mailer.DEFAULT_LANG, row["name"],
-                                            new, items, y["budget"]), g["email"], f"{year}_ideas")
-    conn.execute("UPDATE wishes SET notified_texts = ? WHERE year = ? AND member_id = ?",
-                 (json.dumps(_texts(items), ensure_ascii=False), year, member))
-    db.audit(conn, row["name"], "gift idea notice sent", f"{year}: to {row['name']}'s Secret Santa")
-    return True
+        return  # their postcard isn't out yet; it will list the ideas itself
+    new, gone = _pending(_items(conn, year, member))
+    if not new and not gone:
+        conn.execute("DELETE FROM digest_queue WHERE year = ? AND receiver_id = ?", (year, member))
+        return
+    conn.execute(
+        "INSERT INTO digest_queue (year, receiver_id, giver_sealed, queued_at) VALUES (?, ?, ?, ?) "
+        "ON CONFLICT (year, receiver_id) DO UPDATE SET giver_sealed = excluded.giver_sealed",
+        (year, member, crypto.seal_receiver(crypto.server_key(), year, member, giver), db.now()),
+    )
 
 
-def _wishes(conn, year: int, member_id: int) -> list[dict]:
-    row = conn.execute("SELECT items FROM wishes WHERE year = ? AND member_id = ?", (year, member_id)).fetchone()
-    return json.loads(row["items"]) if row else []
+def run_digest() -> dict:
+    """Send one e-mail per Secret Santa whose giftee changed their ideas since the last digest."""
+    sent = failed = 0
+    with db.connect() as conn:
+        for q in conn.execute("SELECT * FROM digest_queue").fetchall():
+            year, receiver = q["year"], q["receiver_id"]
+            items = _items(conn, year, receiver)
+            new, gone = _pending(items)
+            if not new and not gone:
+                conn.execute("DELETE FROM digest_queue WHERE year = ? AND receiver_id = ?", (year, receiver))
+                continue
+            giver = crypto.open_receiver(crypto.server_key(), year, receiver, q["giver_sealed"])
+            g = conn.execute("SELECT name, email, lang FROM members WHERE id = ?", (giver,)).fetchone()
+            r_name = _names(conn, [receiver]).get(receiver, "?")
+            y = _year_or_404(conn, year)
+            try:
+                mailer.deliver(mailer.build_digest(g["name"], g["email"], g["lang"] or mailer.DEFAULT_LANG, r_name,
+                                                   new, gone, _active(items), y["budget"]), g["email"], f"{year}_ideas")
+            except Exception as exc:  # keep it queued; try again next run
+                failed += 1
+                db.audit(conn, "system", "wish-list digest FAILED", f"{year}: to {r_name}'s Secret Santa ({type(exc).__name__})")
+                continue
+            for i in items:
+                if i in new:
+                    i["sent"] = True
+                if i in gone:
+                    i["obsolete_sent"] = True
+            _save_items(conn, year, receiver, items)
+            conn.execute("DELETE FROM digest_queue WHERE year = ? AND receiver_id = ?", (year, receiver))
+            db.audit(conn, "system", "wish-list digest sent", f"{year}: to {r_name}'s Secret Santa")
+            sent += 1
+        db.set_setting(conn, "last_digest_at", db.now())
+    return {"sent": sent, "failed": failed}
 
 
-class WishItem(BaseModel):
+class WishIn(BaseModel):
     text: str = Field(min_length=1, max_length=200)
     url: str = Field(default="", max_length=500)
 
 
-class WishesIn(BaseModel):
-    items: list[WishItem] = Field(default_factory=list, max_length=MAX_WISHES)
+class ObsoleteIn(BaseModel):
+    obsolete: bool = True
+    reason: Literal["got_it", "not_wanted", "mistake", "other", ""] = ""
 
 
 class LangIn(BaseModel):
@@ -937,43 +1091,90 @@ class LangIn(BaseModel):
     resend: bool = False  # also send the postcard again in the new language
 
 
+def _clean_url(url: str) -> str:
+    url = url.strip()
+    if url and not re.match(r"^https?://", url, re.I):
+        url = "https://" + url
+    return url
+
+
+def _my_view(items: list[dict]) -> list[dict]:
+    return [{k: i[k] for k in ("id", "text", "url", "sent", "obsolete", "reason")} for i in items]
+
+
 @app.get("/api/p/{token}")
 def participant_page(token: str):
     with db.connect() as conn:
         row, receiver = _link(conn, token)
         y = _year_or_404(conn, row["year"])
-        names = _names(conn, [receiver])
+        names = _names(conn, [receiver]) if receiver is not None else {}
         return {
             "name": row["name"], "lang": row["lang"] or mailer.DEFAULT_LANG, "year": row["year"],
             "budget": y["budget"], "exchange_date": y["exchange_date"],
-            "my_wishes": _wishes(conn, row["year"], row["member_id"]),
+            "my_wishes": _my_view(_items(conn, row["year"], row["member_id"])),
             "giftee": None if receiver is None else
-                      {"name": names.get(receiver, "?"), "wishes": _wishes(conn, row["year"], receiver)},
+                      {"name": names.get(receiver, "?"), "wishes": _giver_view(_items(conn, row["year"], receiver))},
             "drawn": _state(conn, row["year"])["drawn"],
             "max_wishes": MAX_WISHES,
+            "digest_hour": DIGEST_HOUR,
         }
 
 
-@app.put("/api/p/{token}/wishes")
-def participant_wishes(token: str, body: WishesIn):
-    items = []
-    for it in body.items:
-        url = it.url.strip()
-        if url and not re.match(r"^https?://", url, re.I):
-            url = "https://" + url
-        items.append({"text": it.text.strip(), "url": url})
+def _mutate(token: str, change) -> dict:
+    """Load this person's ideas, apply ``change(items)``, save, queue the digest."""
     with db.connect() as conn:
         row, _ = _link(conn, token)
-        conn.execute(
-            "INSERT INTO wishes (year, member_id, items, updated_at) VALUES (?, ?, ?, ?) "
-            "ON CONFLICT (year, member_id) DO UPDATE SET items = excluded.items, updated_at = excluded.updated_at",
-            (row["year"], row["member_id"], json.dumps(items, ensure_ascii=False), db.now()),
-        )
+        items = _items(conn, row["year"], row["member_id"])
+        change(items)
+        _save_items(conn, row["year"], row["member_id"], items)
         try:
-            _notify_giver_of_new_wishes(conn, token, row, items)
-        except Exception as exc:  # the wishes are saved either way
-            db.audit(conn, row["name"], "gift idea notice FAILED", f"{row['year']}: {type(exc).__name__}")
-    return {"items": items}
+            _queue_digest(conn, token, row)
+        except Exception as exc:  # the ideas are saved either way
+            db.audit(conn, row["name"], "wish-list digest queue FAILED", f"{row['year']}: {type(exc).__name__}")
+        return {"my_wishes": _my_view(items)}
+
+
+def _find(items: list[dict], wish_id: str) -> dict:
+    for i in items:
+        if i["id"] == wish_id:
+            return i
+    raise HTTPException(404, "No such idea.")
+
+
+@app.post("/api/p/{token}/wishes")
+def add_wish(token: str, body: WishIn):
+    def change(items):
+        if len([i for i in items if not i["obsolete"]]) >= MAX_WISHES:
+            raise HTTPException(422, f"At most {MAX_WISHES} ideas.")
+        items.append({"id": secrets.token_hex(4), "text": body.text.strip(), "url": _clean_url(body.url),
+                      "sent": False, "obsolete": False, "reason": "", "obsolete_sent": False})
+    return _mutate(token, change)
+
+
+@app.delete("/api/p/{token}/wishes/{wish_id}")
+def remove_wish(token: str, wish_id: str):
+    def change(items):
+        item = _find(items, wish_id)
+        if item["sent"]:
+            raise HTTPException(409, "Your Secret Santa has already received this idea. Mark it as no longer wanted instead.")
+        items.remove(item)
+    return _mutate(token, change)
+
+
+@app.post("/api/p/{token}/wishes/{wish_id}/obsolete")
+def mark_obsolete(token: str, wish_id: str, body: ObsoleteIn):
+    def change(items):
+        item = _find(items, wish_id)
+        if not item["sent"]:
+            raise HTTPException(409, "Not sent to your Secret Santa yet, so you can simply remove it.")
+        if not body.obsolete and len([i for i in items if not i["obsolete"]]) >= MAX_WISHES:
+            raise HTTPException(422, f"At most {MAX_WISHES} ideas.")
+        if body.obsolete and not item["obsolete"]:
+            item.update(obsolete=True, reason=body.reason or "other", obsolete_sent=False)
+        elif not body.obsolete and item["obsolete"]:
+            # wanted again: if the giver was already told it was obsolete, tell them it's back
+            item.update(obsolete=False, reason="", sent=not item["obsolete_sent"], obsolete_sent=False)
+    return _mutate(token, change)
 
 
 @app.put("/api/p/{token}/lang")
@@ -993,7 +1194,7 @@ def participant_lang(token: str, body: LangIn, request: Request):
                 giver_name=row["name"], giver_email=row["email"], receiver_name=names.get(receiver, "?"),
                 year=row["year"], budget=y["budget"], exchange_date=y["exchange_date"], note=y["note"],
                 lang=body.lang, page_url=f"{_public_base(request)}/p/{token}",
-                receiver_wishes=_wishes(conn, row["year"], receiver),
+                receiver_wishes=_active(_items(conn, row["year"], receiver)),
             ))
     return {"ok": True}
 

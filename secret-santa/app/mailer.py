@@ -395,27 +395,40 @@ def build_invite(name: str, to_email: str, lang: str, year: int, budget: str, ur
                      _shell(lang, subj, t["pre"], inner, t["footer"].format(url=e(url))))
 
 
-WISH_NOTICE = {
+REASONS = {
+    "hu": {"got_it": "már megkapta / van hasonlója", "not_wanted": "már nem szeretné",
+           "mistake": "tévedésből került fel", "other": "már nem aktuális"},
+    "en": {"got_it": "already got it / has a similar one", "not_wanted": "doesn't want it any more",
+           "mistake": "added by mistake", "other": "no longer relevant"},
+}
+
+DIGEST = {
     "hu": {
         # no giftee name in the subject: lock-screen previews
-        "subject": "🎁 Új ajándékötlet a megajándékozottad kívánságlistáján",
-        "pre": "Friss ötlet érkezett az Északi-sarkra.",
+        "subject": "🎁 Napi hírek a megajándékozottad kívánságlistájáról",
+        "pre": "Friss hírek az Északi-sarkról.",
         "greeting": "Ho-ho-ho, kedves {name}!",
-        "new": "Friss hír a manóktól: <b>{receiver}</b> új ajándékötlet(ek)et adott meg:",
-        "new_text": "Friss hír a manóktól: {receiver} új ajándékötlet(ek)et adott meg:",
-        "all": "A teljes kívánságlista:",
+        "intro": "A manók összegyűjtötték, mi változott <b>{receiver}</b> kívánságlistáján:",
+        "intro_text": "A manók összegyűjtötték, mi változott {receiver} kívánságlistáján:",
+        "new": "Új ötletek",
+        "gone": "Már nem aktuális",
+        "all": "A jelenlegi kívánságlista",
+        "empty": "(jelenleg nincs aktív ötlet)",
         "budget": "Emlékeztető &ndash; ajándékkeret: <b>{budget}</b>",
         "budget_text": "Emlékeztető – ajándékkeret: {budget}",
         "hint": "A lista bármikor megnézhető a képeslapodban lévő gombbal.",
         "footer": "Ez a levél csak neked szól &ndash; kérlek, ne továbbítsd.",
     },
     "en": {
-        "subject": "🎁 New gift idea on your giftee's wish list",
-        "pre": "A fresh idea has arrived at the North Pole.",
+        "subject": "🎁 Today's news from your giftee's wish list",
+        "pre": "Fresh news from the North Pole.",
         "greeting": "Ho ho ho, dear {name}!",
-        "new": "News from the elves: <b>{receiver}</b> has added new gift idea(s):",
-        "new_text": "News from the elves: {receiver} has added new gift idea(s):",
-        "all": "The full wish list:",
+        "intro": "The elves have collected what changed on <b>{receiver}</b>'s wish list:",
+        "intro_text": "The elves have collected what changed on {receiver}'s wish list:",
+        "new": "New ideas",
+        "gone": "No longer wanted",
+        "all": "The current wish list",
+        "empty": "(no active ideas at the moment)",
         "budget": "Reminder &ndash; gift budget: <b>{budget}</b>",
         "budget_text": "Reminder – gift budget: {budget}",
         "hint": "You can see the list any time with the button in your postcard.",
@@ -424,22 +437,32 @@ WISH_NOTICE = {
 }
 
 
-def build_wish_notice(name: str, to_email: str, lang: str, receiver: str, new_items: list,
-                      all_items: list, budget: str) -> EmailMessage:
+def build_digest(name: str, to_email: str, lang: str, receiver: str, new_items: list, gone_items: list,
+                 current: list, budget: str) -> EmailMessage:
     e = html.escape
-    t = WISH_NOTICE.get(lang, WISH_NOTICE[DEFAULT_LANG])
+    t = DIGEST.get(lang, DIGEST[DEFAULT_LANG])
+    reasons = REASONS.get(lang, REASONS[DEFAULT_LANG])
+    h3 = lambda txt, color: f'<p style="margin:10px 0 4px;font-size:14px;color:{color};"><b>{txt}</b></p>'
+    gone_html = "".join(
+        f'<li style="margin:3px 0;"><s>{e(i["text"])}</s> <span style="color:#8a6a45;">&ndash; {e(reasons.get(i["reason"], reasons["other"]))}</span></li>'
+        for i in gone_items)
     inner = (
         f'<p style="margin:0 0 12px;font-size:22px;">{t["greeting"].format(name=e(name))}</p>'
-        f'<p style="margin:0 0 6px;font-size:15px;">{t["new"].format(receiver=e(receiver))}</p>'
-        + _wish_list_html(new_items)
-        + (f'<p style="margin:0 0 4px;font-size:14px;color:#1d5c3f;"><b>{t["all"]}</b></p>' + _wish_list_html(all_items)
-           if len(all_items) > len(new_items) else "")
+        f'<p style="margin:0 0 6px;font-size:15px;">{t["intro"].format(receiver=e(receiver))}</p>'
+        + (h3("✨ " + t["new"], "#1d5c3f") + _wish_list_html(new_items) if new_items else "")
+        + (h3("✖ " + t["gone"], "#c8102e") + f'<ul style="margin:0 0 14px;padding-left:22px;font-size:14px;color:#3a2410;">{gone_html}</ul>'
+           if gone_items else "")
+        + h3("🎁 " + t["all"], "#3a2410")
+        + (_wish_list_html(current) if current else f'<p style="margin:0 0 14px;font-size:14px;color:#8a6a45;">{t["empty"]}</p>')
         + (f'<p style="margin:0;padding:8px 12px;background:#fff1c2;border-left:4px solid #b8860b;font-size:14px;">💰 {t["budget"].format(budget=e(budget))}</p>' if budget else "")
         + f'<p style="margin:12px 0 0;font-size:13px;color:#5b3a1a;">{t["hint"]}</p>'
     )
     fmt = lambda items: [f"  - {w['text']}" + (f" ({w['url']})" if w.get("url") else "") for w in items]
     text = "\n".join([
-        t["greeting"].format(name=name), "", t["new_text"].format(receiver=receiver), *fmt(new_items), "",
+        t["greeting"].format(name=name), "", t["intro_text"].format(receiver=receiver), "",
+        *([t["new"] + ":", *fmt(new_items), ""] if new_items else []),
+        *([t["gone"] + ":", *[f"  - {i['text']} ({reasons.get(i['reason'], reasons['other'])})" for i in gone_items], ""] if gone_items else []),
+        t["all"] + ":", *(fmt(current) or ["  " + t["empty"]]), "",
         *([t["budget_text"].format(budget=budget), ""] if budget else []), t["hint"],
     ])
     return _envelope(lang, name, to_email, t["subject"], text, _shell(lang, t["subject"], t["pre"], inner, t["footer"]))

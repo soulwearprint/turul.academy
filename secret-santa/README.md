@@ -31,7 +31,8 @@ Tests: `pip install -r requirements-dev.txt && python -m pytest -q`
 | No repeat of last year | On by default for each year (**Details** → *Nobody draws the same person as in the previous year's draw*). It compares against the most recent earlier year that has a draw. |
 | Postcard language | Hungarian by default. An admin sets **English** per person in the Family tab, or the participant switches it from the link in their card, optionally getting the card resent. |
 | Wish-list invitation before the draw | **✉️ Send wish-list invitations** on a year that hasn't been drawn. Each person gets an e-mail with their own link, so they can add gift ideas early. The invitation shows the budget. Postcards then list the giftee's ideas directly. |
-| "New gift idea" e-mail | When someone saves a gift idea their Secret Santa hasn't been told about yet, that Secret Santa (and nobody else) gets a short e-mail listing the new ideas and the budget. It is sent only after their postcard is out, never repeats ideas already sent, and follows reshuffles. |
+| Daily digest to the giver | Changes to gift ideas reach each Secret Santa in **one e-mail a day** (default 18:00, Europe/Budapest), listing new ideas, ideas that are no longer wanted (with the reason), and the current list. It goes out only after that Secret Santa's postcard has been sent, never repeats anything, and follows reshuffles. Admins can **Send digest now**. |
+| Removing vs. marking obsolete | An idea the Secret Santa hasn't received yet (not in their postcard or a digest) can simply be **removed**, and nobody hears about it. Once received, it can only be marked **no longer wanted**, with a reason: *already got it / similar*, *don't want it any more*, *added by mistake*, *other*. It then shows struck through on the giver's page and in the next digest. The owner can **restore** it. |
 | Gift ideas | Each card has a **🎁 Open the wish lists** button that leads to that person's private page. There they add up to 5 gift ideas (each with an optional link) and see their giftee's ideas. The year's **gift budget** is shown prominently, including right above the idea form. |
 | Up to 5 admins, the first one mandatory | Created at setup; admins #2 to #5 are optional, and admin #1 cannot be removed. See [Admins and sign-in](#admins-and-sign-in). |
 | Admins can unlock the matches | **🔓 Unlock matches** requires a fresh confirmation (password again, or a new Google sign-in) and writes `MATCHES REVEALED` to the log, which every admin can see. |
@@ -112,8 +113,19 @@ Participants don't need a login. Every postcard carries a random private link
   isn't shown on the page, and the database alone doesn't reveal them.
 - **The activity log records only that a notice went out**, worded as
   "to Anna's Secret Santa".
-- **There is no batching.** Every save that adds a new idea sends one
-  e-mail.
+- **Where the digest's giver is kept.** When someone changes their ideas,
+  the request carries their link token, so the server can open the giver
+  route and queue "this Secret Santa has news". The giver id in that queue
+  entry is encrypted with the **server key**: `SANTA_SERVER_KEY` if set,
+  otherwise a key generated once into `data/server.key`. The database plus
+  that key reveals the pairs that are waiting in the queue, so for real use
+  set `SANTA_SERVER_KEY` in the environment, outside the data folder.
+- **Daily schedule.** The digest runs inside the app process. Set the hour
+  with `SANTA_DIGEST_HOUR` and the time zone with `SANTA_TZ`. Run a single
+  app process (one worker), otherwise digests can go out twice.
+- **When the Secret Santa changes** (a reshuffle), the new one has seen
+  nothing yet. That person's ideas therefore count as unsent again, and
+  ideas already marked obsolete are dropped.
 - **Gift ideas aren't encrypted.** They aren't secret, and admins see only
   how many ideas each person has added.
 - **Gift ideas are per year.** Last year's ideas aren't carried over.

@@ -20,6 +20,11 @@
     .lang-btns { display: flex; gap: 8px; flex-wrap: wrap; }
     .lang-btns button.on { background: var(--green); }
     .ok { color: var(--green); }
+    ul.mine { list-style: none; padding: 0; margin: 10px 0; }
+    ul.mine li { display: flex; justify-content: space-between; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    ul.mine li.obs, ul.wishes li.obs { color: var(--muted); }
+    ul.mine .acts { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+    ul.mine select { width: auto; max-width: 220px; font-size: 13px; padding: 3px 6px; }
   </style>
 </head>
 <body>
@@ -49,7 +54,16 @@ const T = {
     langSaved: "Nyelv elmentve.", langResent: "Nyelv elmentve, a képeslap úton van! 📮",
     notDrawn: "A neveket még nem húztuk ki. Amint megvan, megérkezik a képeslapod a megajándékozottad nevével – addig is írd meg az ötleteidet!",
     drawnWait: "A nevek ki vannak húzva! 🎉 A képeslapod hamarosan megérkezik, benne a megajándékozottad nevével és egy új linkkel.",
-    notifyNote: "Ha új ötletet adsz meg, a titkos Mikulásod kap róla egy rövid e-mailt.",
+    notifyNote: (h) => `A változásokról a titkos Mikulásod naponta egyszer (${h} óra körül) kap egy összefoglaló e-mailt.`,
+    seen: "📬 a titkos Mikulásod már megkapta",
+    notSeen: "még nem küldtük el – szabadon törölheted",
+    rules: "Amíg egy ötletet nem küldtünk el a titkos Mikulásodnak, egyszerűen törölheted. Ha már megkapta, jelöld „már nem aktuális”-nak, így ő is értesül róla.",
+    obsoleteBtn: "Már nem aktuális…", restore: "Visszaállítás",
+    whyObsolete: "Miért nem aktuális?",
+    reasons: { got_it: "Már megkaptam / van hasonló", not_wanted: "Már nem szeretném", mistake: "Tévedésből adtam meg", other: "Egyéb ok" },
+    reasonShort: { got_it: "már megkapta / van hasonló", not_wanted: "már nem szeretné", mistake: "tévedésből került fel", other: "már nem aktuális" },
+    obsoleteTag: "már nem aktuális", cancel: "Mégse", confirm: "Megjelölöm",
+    full: (max) => `Elérted a ${max} ötletes keretet. Törölj vagy jelölj meg egyet, ha újat adnál meg.`,
     gone: "Ez a link már nem érvényes – valószínűleg kaptál azóta egy újabb képeslapot. Az abban lévő linket használd.",
   },
   en: {
@@ -72,7 +86,16 @@ const T = {
     langSaved: "Language saved.", langResent: "Language saved, your postcard is on its way! 📮",
     notDrawn: "The names haven't been drawn yet. Once they are, your postcard will arrive with your giftee's name — meanwhile, add your ideas!",
     drawnWait: "The names have been drawn! 🎉 Your postcard is on its way, with your giftee's name and a new link.",
-    notifyNote: "When you add a new idea, your Secret Santa gets a short e-mail about it.",
+    notifyNote: (h) => `Your Secret Santa gets one summary e-mail a day (around ${h}:00) about any changes.`,
+    seen: "📬 your Secret Santa has received it",
+    notSeen: "not sent yet — you can freely remove it",
+    rules: "Until an idea has been sent to your Secret Santa, you can simply remove it. Once they have it, mark it as “no longer wanted” so they hear about it too.",
+    obsoleteBtn: "No longer wanted…", restore: "Restore",
+    whyObsolete: "Why is it no longer wanted?",
+    reasons: { got_it: "I already got it / have a similar one", not_wanted: "I don't want it any more", mistake: "I added it by mistake", other: "Other reason" },
+    reasonShort: { got_it: "already got it / has a similar one", not_wanted: "doesn't want it any more", mistake: "added by mistake", other: "no longer wanted" },
+    obsoleteTag: "no longer wanted", cancel: "Cancel", confirm: "Mark it",
+    full: (max) => `You have reached ${max} ideas. Remove or mark one to add another.`,
     gone: "This link is no longer valid — you probably received a newer postcard since. Please use the link in that one.",
   },
 };
@@ -91,9 +114,11 @@ async function call(method, path, body) {
   return out;
 }
 
+const link = (w) => (w.url ? ` — <a href="${esc(w.url)}" target="_blank" rel="noopener noreferrer">link ↗</a>` : "");
 function wishList(items) {
-  return `<ul class="wishes">${items.map((w) => `<li>${esc(w.text)}${w.url
-    ? ` — <a href="${esc(w.url)}" target="_blank" rel="noopener noreferrer">link ↗</a>` : ""}</li>`).join("")}</ul>`;
+  return `<ul class="wishes">${items.map((w) => w.obsolete
+    ? `<li class="obs"><s>${esc(w.text)}</s> <span class="pill">${esc(t.reasonShort[w.reason] || t.obsoleteTag)}</span></li>`
+    : `<li>${esc(w.text)}${link(w)}</li>`).join("")}</ul>`;
 }
 
 function render() {
@@ -117,21 +142,22 @@ function render() {
     ${g ? `<section class="card">
       <div class="label hint">${esc(t.yourGiftee)}</div>
       <p class="giftee">${esc(g.name)}</p>
-      ${g.wishes.length ? `<p>${esc(t.gifteeWishes(g.name))}</p>${wishList(g.wishes)}` : `<p class="muted">${esc(t.noWishes(g.name))}</p>`}
+      ${g.wishes.length ? `<p>${esc(t.gifteeWishes(g.name))}</p>${wishList([...g.wishes.filter((w) => !w.obsolete), ...g.wishes.filter((w) => w.obsolete)])}`
+        : `<p class="muted">${esc(t.noWishes(g.name))}</p>`}
     </section>` : `<div class="banner info">🎄 ${esc(data.drawn ? t.drawnWait : t.notDrawn)}</div>`}
 
     <section class="card">
       <h2>${esc(t.myWishes)}</h2>
-      <p class="hint">${esc(t.myWishesHint(data.max_wishes))} ${esc(t.notifyNote)}</p>
+      <p class="hint">${esc(t.myWishesHint(data.max_wishes))} ${g ? esc(t.notifyNote(data.digest_hour)) : ""}</p>
       ${data.budget ? `<div class="banner">💰 ${esc(t.withinBudget(data.budget))}</div>` : ""}
-      <form id="wf">
-        <div id="rows"></div>
-        <div class="actions">
-          <button type="button" class="secondary" id="addrow">${esc(t.add)}</button>
-          <button>${esc(t.save)}</button>
-          <span id="wmsg" class="ok"></span>
-        </div>
+      <p class="hint">${esc(t.rules)}</p>
+      <ul class="mine" id="mine"></ul>
+      <form id="wf" class="wish-row">
+        <input name="text" maxlength="200" required placeholder="${esc(t.idea)}">
+        <input name="url" class="url" maxlength="500" placeholder="${esc(t.url)}">
+        <button id="addbtn">${esc(t.add)}</button>
       </form>
+      <p id="wmsg" class="hint"></p>
     </section>
 
     <section class="card" id="lang">
@@ -145,27 +171,14 @@ function render() {
       <p id="lmsg" class="ok"></p>
     </section>`;
 
-  const rows = $("#rows");
-  const addRow = (w = { text: "", url: "" }) => {
-    if (rows.children.length >= data.max_wishes) return;
-    const div = document.createElement("div");
-    div.className = "wish-row";
-    div.innerHTML = `<input name="text" maxlength="200" placeholder="${esc(t.idea)}" value="${esc(w.text)}">
-      <input name="url" class="url" maxlength="500" placeholder="${esc(t.url)}" value="${esc(w.url)}">
-      <button type="button" class="small secondary">${esc(t.remove)}</button>`;
-    div.querySelector("button").onclick = () => { div.remove(); toggleAdd(); };
-    rows.appendChild(div);
-    toggleAdd();
-  };
-  const toggleAdd = () => { $("#addrow").disabled = rows.children.length >= data.max_wishes; };
-  (data.my_wishes.length ? data.my_wishes : [{ text: "", url: "" }]).forEach(addRow);
-  $("#addrow").onclick = () => addRow();
+  renderMine();
   $("#wf").onsubmit = async (e) => {
     e.preventDefault();
-    const items = [...rows.children].map((r) => ({ text: r.querySelector("[name=text]").value.trim(), url: r.querySelector("[name=url]").value.trim() }))
-      .filter((w) => w.text);
-    try { const out = await call("PUT", "/wishes", { items }); data.my_wishes = out.items; $("#wmsg").textContent = t.saved; }
-    catch (err) { $("#wmsg").textContent = err.message; }
+    const f = e.target;
+    try {
+      const out = await call("POST", "/wishes", { text: f.elements.text.value.trim(), url: f.elements.url.value.trim() });
+      data.my_wishes = out.my_wishes; f.reset(); renderMine(); flash(t.saved);
+    } catch (err) { flash(err.message, true); }
   };
   document.querySelectorAll("[data-lang]").forEach((b) => (b.onclick = async () => {
     const resend = $("#resend").checked;
@@ -175,6 +188,39 @@ function render() {
       $("#lmsg").textContent = resend ? t.langResent : t.langSaved;
       $("#lang").scrollIntoView();
     } catch (err) { $("#lmsg").textContent = err.message; }
+  }));
+}
+
+function flash(msg, bad) { const m = $("#wmsg"); m.textContent = msg; m.className = bad ? "err" : "ok"; }
+
+function renderMine() {
+  const items = [...data.my_wishes.filter((w) => !w.obsolete), ...data.my_wishes.filter((w) => w.obsolete)];
+  const active = items.filter((w) => !w.obsolete).length;
+  $("#mine").innerHTML = items.map((w) => `<li class="${w.obsolete ? "obs" : ""}">
+      <div>${w.obsolete ? `<s>${esc(w.text)}</s> <span class="pill">${esc(t.reasonShort[w.reason] || t.obsoleteTag)}</span>`
+        : `${esc(w.text)}${link(w)}`}
+        <div class="hint">${w.sent ? esc(t.seen) : esc(t.notSeen)}</div></div>
+      <div class="acts">${w.obsolete ? `<button type="button" class="small secondary" data-restore="${esc(w.id)}">${esc(t.restore)}</button>`
+        : w.sent ? `<button type="button" class="small secondary" data-obs="${esc(w.id)}">${esc(t.obsoleteBtn)}</button>`
+        : `<button type="button" class="small secondary" data-del="${esc(w.id)}">${esc(t.remove)}</button>`}</div>
+    </li>`).join("");
+  const full = active >= data.max_wishes;
+  $("#addbtn").disabled = full;
+  if (full) flash(t.full(data.max_wishes));
+  const act = async (fn) => { try { const out = await fn(); data.my_wishes = out.my_wishes; renderMine(); flash(t.saved); } catch (err) { flash(err.message, true); } };
+  document.querySelectorAll("[data-del]").forEach((b) => (b.onclick = () =>
+    act(() => call("DELETE", `/wishes/${encodeURIComponent(b.dataset.del)}`))));
+  document.querySelectorAll("[data-restore]").forEach((b) => (b.onclick = () =>
+    act(() => call("POST", `/wishes/${encodeURIComponent(b.dataset.restore)}/obsolete`, { obsolete: false }))));
+  document.querySelectorAll("[data-obs]").forEach((b) => (b.onclick = () => {
+    const li = b.closest("li");
+    li.querySelector(".acts").innerHTML = `<select class="why" aria-label="${esc(t.whyObsolete)}">
+        ${Object.entries(t.reasons).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join("")}</select>
+      <button type="button" class="small" data-go>${esc(t.confirm)}</button>
+      <button type="button" class="small secondary" data-cancel>${esc(t.cancel)}</button>`;
+    li.querySelector("[data-cancel]").onclick = renderMine;
+    li.querySelector("[data-go]").onclick = () => act(() => call("POST", `/wishes/${encodeURIComponent(b.dataset.obs)}/obsolete`,
+      { obsolete: true, reason: li.querySelector(".why").value }));
   }));
 }
 

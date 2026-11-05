@@ -320,7 +320,7 @@ async function viewYears() {
 }
 
 async function renderYear() {
-  const [y, members] = await Promise.all([api(`/api/years/${state.year}`), api("/api/members")]);
+  const [y, members, digest] = await Promise.all([api(`/api/years/${state.year}`), api("/api/members"), api("/api/digest")]);
   const inYear = new Set(y.participants.map((p) => p.id));
   const choosable = members.filter((m) => !m.archived || inYear.has(m.id));
   const pending = y.participants.filter((p) => p.has_match && !p.notified_at).length;
@@ -373,7 +373,9 @@ async function renderYear() {
       <p class="hint">Each person gets their own e-mail; nobody else is in To/CC/BCC.
         The admin sending them never sees the content. Each card links to a private page where the person
         adds gift ideas, sees their giftee's ideas and can switch language. Resending a card replaces its link.
-        When someone adds a new idea, their Secret Santa gets a short e-mail about it.</p>
+        Changes to gift ideas reach each Secret Santa in one daily digest e-mail (around ${digest.hour}:00, ${esc(digest.tz)}).</p>
+      <p class="hint">📬 ${digest.pending} wish-list update(s) waiting for the next digest
+        ${digest.pending ? `<button class="small secondary" id="digestnow">Send digest now</button>` : ""}</p>
       <table><thead><tr><th>Name</th><th>Status</th><th>Gift ideas</th><th></th></tr></thead><tbody>
       ${y.participants.map((p) => `<tr><td>${esc(p.name)}</td>
         <td>${!p.has_match ? '<span class="pill bad">not in draw</span>'
@@ -433,6 +435,11 @@ async function renderYear() {
     await offerSend("Names drawn! 🎉");
   };
   if ($("#reshuffle")) $("#reshuffle").onclick = reshuffleDialog;
+  if ($("#digestnow")) $("#digestnow").onclick = async () => {
+    const res = await api("/api/digest/run", { method: "POST" });
+    await alertBox(`<h2>📬 Digest ${res.mode === "outbox" ? "saved to outbox" : "sent"}</h2><p>${res.sent} e-mail(s)${res.failed ? `, <span class="err">${res.failed} failed</span>` : ""}.</p>`);
+    renderYear();
+  };
   if ($("#invite")) $("#invite").onclick = async () => {
     const r = await dialog(`<h2>Send wish-list invitations?</h2>
       <p>${uninvited} people get an e-mail with a private link where they can add gift ideas (optional).

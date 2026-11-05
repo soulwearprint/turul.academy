@@ -11,6 +11,8 @@ def client(tmp_path, monkeypatch):
     monkeypatch.setenv("SANTA_DB", str(tmp_path / "s.db"))
     monkeypatch.setenv("SANTA_OUTBOX", str(tmp_path / "outbox"))
     monkeypatch.delenv("SMTP_HOST", raising=False)
+    monkeypatch.setenv("SANTA_DIGEST_SCHEDULER", "0")  # tests call run_digest() themselves
+    monkeypatch.setenv("SANTA_SERVER_KEY_FILE", str(tmp_path / "server.key"))
     from app import main
     main._sessions.clear()
     with TestClient(main.app) as c:
@@ -302,11 +304,13 @@ def test_participant_page_wishes_and_language(client, tmp_path):
 
     # giftee adds wishes -> Anna sees them on her page
     g_token = links[giftee][0]
-    ok(c.put(f"/api/p/{g_token}/wishes", json={"items": [{"text": "Gyapjúzokni", "url": "example.com/zokni"},
-                                                            {"text": "Krimi"}]}))
+    add_wish(c, g_token, "Gyapjúzokni", "example.com/zokni")
+    add_wish(c, g_token, "Krimi")
     wishes = ok(c.get(f"/api/p/{token}"))["giftee"]["wishes"]
     assert [w["text"] for w in wishes] == ["Gyapjúzokni", "Krimi"] and wishes[0]["url"] == "https://example.com/zokni"
-    assert c.put(f"/api/p/{token}/wishes", json={"items": [{"text": f"x{i}"} for i in range(6)]}).status_code == 422
+    for i in range(5):
+        add_wish(c, token, f"x{i}")
+    assert c.post(f"/api/p/{token}/wishes", json={"text": "x5"}).status_code == 422
 
     # switching language (and resending) works without login
     ok(c.put(f"/api/p/{token}/lang", json={"lang": "en", "resend": True}))
@@ -343,7 +347,30 @@ def _token_in(text):
     return text.split("/p/")[1].split()[0].split("#")[0]
 
 
-def test_invitation_then_draw_then_idea_notice(client, tmp_path):
+def add_wish(c, token, text, url=""):
+    return ok(c.post(f"/api/p/{token}/wishes", json={"text": text, "url": url}))["my_wishes"]
+
+
+def _wish_id(c, token, text):
+    return next(w["id"] for w in ok(c.get(f"/api/p/{token}"))["my_wishes"] if w["text"] == text)
+
+
+def _cards(out):
+    cards = {}
+    for f in out.glob("2026_*.eml"):
+        if "_invite_" in f.name or "_ideas_" in f.name:
+            continue
+        m, t = _body(f)
+        cards[email.utils.parseaddr(m["To"])[0]] = (t, _token_in(t))
+    return cards
+
+
+def _digest():
+    from app import main
+    return main.run_digest()
+
+
+def test_invitation_then_draw_then_daily_digest(client, tmp_path):
     c = client
     out = tmp_path / "outbox"
     ok(c.post("/api/setup", json={"name": "Mom", "password": "secret1"}))
@@ -360,56 +387,79 @@ def test_invitation_then_draw_then_idea_notice(client, tmp_path):
     assert "10 000 Ft" in text and "★" not in text and "Mit kérnél" in msg["Subject"]
     assert all(p["invited"] for p in ok(c.get("/api/years/2026"))["participants"])
 
-    # invitation page: wishes editable, no giftee yet
+    # invitation page: ideas editable, freely removable (nothing sent yet), no giftee
     page = ok(c.get(f"/api/p/{invites['Csilla']}"))
     assert page["giftee"] is None and page["drawn"] is False
-    ok(c.put(f"/api/p/{invites['Csilla']}/wishes", json={"items": [{"text": "Puzzle 1000 db"}]}))
-    assert not list(out.glob("*_ideas_*"))  # nobody to notify before the draw
+    add_wish(c, invites["Csilla"], "Puzzle 1000 db")
+    add_wish(c, invites["Csilla"], "Elírás")
+    ok(c.delete(f"/api/p/{invites['Csilla']}/wishes/{_wish_id(c, invites['Csilla'], 'Elírás')}"))
+    assert ok(c.get("/api/digest"))["pending"] == 0  # nobody to tell before the draw
 
-    # 2) draw + postcards: Csilla's Secret Santa sees her idea directly on the card
+    # 2) draw + postcards: Csilla's Secret Santa sees her idea directly on the card -> now "sent"
     ok(c.post("/api/years/2026/draw", json={}))
     ok(c.post("/api/years/2026/notify", json={}))
-    cards = {}
-    for f in out.glob("2026_*.eml"):
-        if "_invite_" in f.name or "_ideas_" in f.name:
-            continue
-        m, t = _body(f)
-        cards[email.utils.parseaddr(m["To"])[0]] = (t, _token_in(t))
+    cards = _cards(out)
     santa_of_csilla = next(n for n, (t, _) in cards.items() if "★ Csilla ★" in t)
-    assert "Puzzle 1000 db" in cards[santa_of_csilla][0]
-    # the invitation link was replaced by the postcard link
-    assert c.get(f"/api/p/{invites['Csilla']}").status_code == 404
+    assert "Puzzle 1000 db" in cards[santa_of_csilla][0] and "Elírás" not in cards[santa_of_csilla][0]
+    assert c.get(f"/api/p/{invites['Csilla']}").status_code == 404  # replaced by the postcard link
+    c.post("/api/logout")
+    tok = cards["Csilla"][1]
+    puzzle = _wish_id(c, tok, "Puzzle 1000 db")
+    assert next(w for w in ok(c.get(f"/api/p/{tok}"))["my_wishes"] if w["id"] == puzzle)["sent"] is True
+
+    # 3) sent ideas can't be deleted, only marked obsolete; unsent ones can't be marked, only deleted
+    assert c.delete(f"/api/p/{tok}/wishes/{puzzle}").status_code == 409
+    add_wish(c, tok, "Társasjáték")
+    add_wish(c, tok, "Sál")
+    sal = _wish_id(c, tok, "Sál")
+    assert c.post(f"/api/p/{tok}/wishes/{sal}/obsolete", json={"obsolete": True}).status_code == 409
+    ok(c.delete(f"/api/p/{tok}/wishes/{sal}"))  # never reached the giver: silently gone
+    ok(c.post(f"/api/p/{tok}/wishes/{puzzle}/obsolete", json={"obsolete": True, "reason": "got_it"}))
+
+    # no e-mail per save: everything waits for the digest, one queued entry
+    assert not list(out.glob("2026_ideas_*.eml"))
+    ok(c.post("/api/login", json={"name": "Mom", "password": "secret1"}))
+    assert ok(c.get("/api/digest"))["pending"] == 1
     c.post("/api/logout")
 
-    # 3) Csilla adds a new idea -> only her Secret Santa gets an e-mail, listing only the new idea as new
-    csilla_token = cards["Csilla"][1]
-    ok(c.put(f"/api/p/{csilla_token}/wishes", json={"items": [{"text": "Puzzle 1000 db"}, {"text": "Társasjáték"}]}))
-    notices = list(out.glob("2026_ideas_*.eml"))
-    assert len(notices) == 1
-    msg, text = _body(notices[0])
-    assert email.utils.parseaddr(msg["To"])[0] == santa_of_csilla
-    assert "Csilla" not in msg["Subject"]  # lock-screen safe
-    assert "Társasjáték" in text and "10 000 Ft" in text
-    new_part = text.split("adott meg:")[1].split("\n\n")[0]
-    assert "Puzzle" not in new_part
-    # saving again without new ideas sends nothing more
-    notices[0].unlink()
-    ok(c.put(f"/api/p/{csilla_token}/wishes", json={"items": [{"text": "Társasjáték"}]}))
-    assert not list(out.glob("2026_ideas_*.eml"))
+    # the giver's live page shows the obsolete idea struck through, with its reason
+    giver_view = ok(c.get(f"/api/p/{cards[santa_of_csilla][1]}"))["giftee"]["wishes"]
+    assert {(w["text"], w["obsolete"], w["reason"]) for w in giver_view} == {("Puzzle 1000 db", True, "got_it"), ("Társasjáték", False, "")}
 
-    # 4) after a full reshuffle, notices follow Csilla's NEW Secret Santa
+    # 4) one digest e-mail: new = Társasjáték, gone = Puzzle (reason), Sál never mentioned
+    assert _digest() == {"sent": 1, "failed": 0}
+    (notice,) = out.glob("2026_ideas_*.eml")
+    msg, text = _body(notice)
+    assert email.utils.parseaddr(msg["To"])[0] == santa_of_csilla and "Csilla" not in msg["Subject"]
+    new_part = text.split("Új ötletek:")[1].split("\n\n")[0]
+    gone_part = text.split("Már nem aktuális:")[1].split("\n\n")[0]
+    assert "Társasjáték" in new_part and "Puzzle" in gone_part and "már megkapta" in gone_part
+    assert "Sál" not in text and "10 000 Ft" in text
+    # nothing new -> nothing more
+    notice.unlink()
+    assert _digest() == {"sent": 0, "failed": 0} and not list(out.glob("2026_ideas_*.eml"))
+
+    # restoring an obsolete idea the giver was told about comes back as "new"
+    ok(c.post(f"/api/p/{tok}/wishes/{puzzle}/obsolete", json={"obsolete": False}))
+    assert _digest()["sent"] == 1
+    assert "Puzzle" in _body(next(out.glob("2026_ideas_*.eml")))[1].split("Új ötletek:")[1].split("\n\n")[0]
+    next(out.glob("2026_ideas_*.eml")).unlink()
+
+    # 5) after a full reshuffle the new Secret Santa starts fresh: ideas are unsent again,
+    #    obsolete ones dropped, and the digest goes to the NEW giver
+    ok(c.post(f"/api/p/{tok}/wishes/{puzzle}/obsolete", json={"obsolete": True, "reason": "mistake"}))
     ok(c.post("/api/login", json={"name": "Mom", "password": "secret1"}))
     ok(c.post("/api/years/2026/draw", json={"everyone": True, "confirm": True}))
     ok(c.post("/api/years/2026/notify", json={}))
-    new_cards = {}
-    for f in out.glob("2026_*.eml"):
-        if "_invite_" in f.name or "_ideas_" in f.name:
-            continue
-        m, t = _body(f)
-        new_cards[email.utils.parseaddr(m["To"])[0]] = (t, _token_in(t))
+    new_cards = _cards(out)
     new_santa = next(n for n, (t, _) in new_cards.items() if "★ Csilla ★" in t)
+    new_tok = new_cards["Csilla"][1]
     c.post("/api/logout")
-    ok(c.put(f"/api/p/{new_cards['Csilla'][1]}/wishes", json={"items": [{"text": "Társasjáték"}, {"text": "Sál"}]}))
+    mine = ok(c.get(f"/api/p/{new_tok}"))["my_wishes"]
+    if new_santa != santa_of_csilla:
+        assert [w["text"] for w in mine] == ["Társasjáték"]  # obsolete Puzzle dropped for the new giver
+    add_wish(c, new_tok, "Kesztyű")
+    _digest()
     notices = list(out.glob("2026_ideas_*.eml"))
     assert len(notices) == 1 and email.utils.parseaddr(_body(notices[0])[0]["To"])[0] == new_santa
 
@@ -428,6 +478,22 @@ def test_invited_person_without_card_still_reaches_their_santa(client, tmp_path)
     santa_of_anna = next(g for g, r in pairs.items() if r == "Anna")
     ok(c.post("/api/years/2026/notify", json={"member_ids": [ids[santa_of_anna]]}))  # only Anna's Santa notified
     assert ok(c.get(f"/api/p/{inv['Anna']}"))["giftee"] is None  # Anna still on her invitation link
-    ok(c.put(f"/api/p/{inv['Anna']}/wishes", json={"items": [{"text": "Bögre"}]}))
+    add_wish(c, inv["Anna"], "Bögre")
+    assert _digest()["sent"] == 1
     notices = list(out.glob("2026_ideas_*.eml"))
     assert len(notices) == 1 and email.utils.parseaddr(_body(notices[0])[0]["To"])[0] == santa_of_anna
+
+
+def test_digest_schedule(monkeypatch, tmp_path):
+    from datetime import datetime, timezone
+    monkeypatch.setenv("SANTA_DB", str(tmp_path / "d.db"))
+    from app import db, main
+    db.init()
+    budapest_17 = datetime(2026, 12, 1, 16, 0, tzinfo=timezone.utc)   # 17:00 in Budapest (CET)
+    budapest_18 = datetime(2026, 12, 1, 17, 5, tzinfo=timezone.utc)   # 18:05
+    assert not main._digest_due(budapest_17)
+    assert main._digest_due(budapest_18)
+    with db.connect() as conn:
+        db.set_setting(conn, "last_digest_at", "2026-12-01T17:06:00+00:00")
+    assert not main._digest_due(datetime(2026, 12, 1, 20, 0, tzinfo=timezone.utc))  # already ran today
+    assert main._digest_due(datetime(2026, 12, 2, 17, 1, tzinfo=timezone.utc))      # next day

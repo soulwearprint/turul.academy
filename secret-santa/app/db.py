@@ -78,6 +78,15 @@ CREATE TABLE IF NOT EXISTS wishes (
     PRIMARY KEY (year, member_id)
 );
 
+-- "this giver has wish-list news": giver id sealed with the server key
+CREATE TABLE IF NOT EXISTS digest_queue (
+    year         INTEGER NOT NULL REFERENCES years(year) ON DELETE CASCADE,
+    receiver_id  INTEGER NOT NULL REFERENCES members(id),
+    giver_sealed TEXT NOT NULL,
+    queued_at    TEXT NOT NULL,
+    PRIMARY KEY (year, receiver_id)
+);
+
 CREATE TABLE IF NOT EXISTS settings (
     key   TEXT PRIMARY KEY,
     value TEXT NOT NULL
