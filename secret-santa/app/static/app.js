@@ -141,11 +141,20 @@ function renderMain() {
 }
 
 /* ── Family ────────────────────────────────────────────────────────────── */
+// People without e-mail (small children, elderly) get a helper: their mail goes to the helper.
+const helperSelect = (people, cur = null) => `<select name="helper_id"><option value="">— none —</option>${people
+  .filter((p) => p.email).map((p) => `<option value="${p.id}" ${p.id === cur ? "selected" : ""}>${esc(p.name)}</option>`).join("")}</select>`;
+function memberBody(form) {
+  const b = Object.fromEntries(new FormData(form));
+  b.helper_id = b.helper_id ? +b.helper_id : null;
+  return b;
+}
 async function viewFamily() {
   const [members, exclusions] = await Promise.all([api("/api/members"), api("/api/exclusions")]);
   const active = members.filter((m) => !m.archived), archived = members.filter((m) => m.archived);
   const rowHtml = (m) => `<tr>
-      <td>${esc(m.name)}</td><td>${esc(m.email)}</td><td>${LANG_LABEL[m.lang] || ""}</td>
+      <td>${esc(m.name)}</td><td>${m.email ? esc(m.email)
+        : `<span class="pill">👋 via ${esc(members.find((x) => x.id === m.helper_id)?.name || "?")}</span>`}</td><td>${LANG_LABEL[m.lang] || ""}</td>
       <td style="text-align:right;white-space:nowrap">
         <button class="small secondary" data-edit="${m.id}">${m.archived ? "Restore / edit" : "Edit"}</button>
         ${m.archived ? "" : `<button class="small secondary" data-del="${m.id}">Remove</button>`}
@@ -155,7 +164,8 @@ async function viewFamily() {
       <h2>Family members</h2>
       <form id="add" class="row">
         <div><label>Name</label><input name="name" required maxlength="80"></div>
-        <div><label>E-mail (only this person should read it)</label><input name="email" type="email" required></div>
+        <div><label>E-mail (only this person should read it)</label><input name="email" type="email" placeholder="leave empty if they have none"></div>
+        <div><label>…or helper who gets their mail</label>${helperSelect(active)}</div>
         <div style="flex:0 1 140px"><label>Postcard</label>${langSelect()}</div>
         <button>Add</button>
       </form>
@@ -167,6 +177,7 @@ async function viewFamily() {
     </section>
     <section class="card">
       <h2>💑 Never draw each other</h2>
+      <p class="hint">People with a helper automatically never draw their helper — otherwise the helper, who reads their postcard, would learn who their own Secret Santa is.</p>
       <p class="muted">For couples (or anyone who shouldn't draw each other). Works both ways, every year.</p>
       <form id="excl" class="row">
         <div><label>Person</label><select name="a">${active.map((m) => `<option value="${m.id}">${esc(m.name)}</option>`).join("")}</select></div>
@@ -192,18 +203,19 @@ async function viewFamily() {
   }));
   $("#add").onsubmit = async (e) => {
     e.preventDefault();
-    try { await api("/api/members", { method: "POST", body: Object.fromEntries(new FormData(e.target)) }); viewFamily(); }
+    try { await api("/api/members", { method: "POST", body: memberBody(e.target) }); viewFamily(); }
     catch (err) { $("#err").textContent = err.message; }
   };
   document.querySelectorAll("[data-edit]").forEach((b) => (b.onclick = async () => {
     const m = members.find((x) => x.id == b.dataset.edit);
     const r = await dialog(`<h2>Edit ${esc(m.name)}</h2>
       <label>Name</label><input name="name" value="${esc(m.name)}" required>
-      <label>E-mail</label><input name="email" type="email" value="${esc(m.email)}" required>
+      <label>E-mail (empty if they have none)</label><input name="email" type="email" value="${esc(m.email)}">
+      <label>Helper who gets their mail (only used without e-mail)</label>${helperSelect(active.filter((x) => x.id !== m.id), m.helper_id)}
       <label>Postcard language</label>${langSelect(m.lang)}`,
       [{ label: "Cancel", value: "", cls: "secondary", formnovalidate: true }, { label: "Save", value: "save" }]);
     if (r.action !== "save") return;
-    try { await api(`/api/members/${m.id}`, { method: "PUT", body: Object.fromEntries(new FormData(r.form)) }); }
+    try { await api(`/api/members/${m.id}`, { method: "PUT", body: memberBody(r.form) }); }
     catch (err) { await alertBox(`<p class="err">${esc(err.message)}</p>`); }
     viewFamily();
   }));
@@ -320,7 +332,8 @@ async function viewYears() {
 }
 
 async function renderYear() {
-  const [y, members, digest] = await Promise.all([api(`/api/years/${state.year}`), api("/api/members"), api("/api/digest")]);
+  const [y, members, digest, fixed] = await Promise.all([api(`/api/years/${state.year}`), api("/api/members"),
+    api("/api/digest"), api(`/api/years/${state.year}/fixed`)]);
   const inYear = new Set(y.participants.map((p) => p.id));
   const choosable = members.filter((m) => !m.archived || inYear.has(m.id));
   const pending = y.participants.filter((p) => p.has_match && !p.notified_at).length;
@@ -357,6 +370,21 @@ async function renderYear() {
     <section class="card">
       <h2>Christmas ${y.year}</h2>
       ${statusHtml}
+    </section>
+
+    <section class="card">
+      <h2>📌 Fixed pairs for ${y.year}</h2>
+      <p class="hint">Set by hand before the random draw, e.g. Grandma gives to little Peti. Everyone else is drawn randomly.
+        Fixed pairs are visible to all admins and win over every other rule. Adding one after the draw applies at the next reshuffle.</p>
+      <form id="fixed" class="row">
+        <div><label>Gives</label><select name="g">${y.participants.map((p) => `<option value="${p.id}">${esc(p.name)}</option>`).join("")}</select></div>
+        <div><label>to</label><select name="r">${y.participants.map((p, i) => `<option value="${p.id}" ${i === 1 ? "selected" : ""}>${esc(p.name)}</option>`).join("")}</select></div>
+        <button class="secondary">Add fixed pair</button>
+      </form>
+      <div class="err" id="fxerr"></div>
+      <table style="margin-top:8px"><tbody>${fixed.map((f) => `<tr><td>${esc(f.giver)} → ${esc(f.receiver)}</td>
+        <td style="text-align:right"><button class="small secondary" data-unfix="${f.giver_id}">Remove</button></td></tr>`).join("")
+        || `<tr><td class="muted">No fixed pairs.</td></tr>`}</tbody></table>
     </section>
 
     <section class="card">
@@ -435,6 +463,15 @@ async function renderYear() {
     await offerSend("Names drawn! 🎉");
   };
   if ($("#reshuffle")) $("#reshuffle").onclick = reshuffleDialog;
+  $("#fixed").onsubmit = async (e) => {
+    e.preventDefault();
+    const f = new FormData(e.target);
+    try { await api(`/api/years/${y.year}/fixed`, { method: "POST", body: { giver_id: +f.get("g"), receiver_id: +f.get("r") } }); renderYear(); }
+    catch (err) { $("#fxerr").textContent = err.message; }
+  };
+  document.querySelectorAll("[data-unfix]").forEach((b) => (b.onclick = async () => {
+    await api(`/api/years/${y.year}/fixed/${b.dataset.unfix}`, { method: "DELETE" }); renderYear();
+  }));
   if ($("#digestnow")) $("#digestnow").onclick = async () => {
     const res = await api("/api/digest/run", { method: "POST" });
     await alertBox(`<h2>📬 Digest ${res.mode === "outbox" ? "saved to outbox" : "sent"}</h2><p>${res.sent} e-mail(s)${res.failed ? `, <span class="err">${res.failed} failed</span>` : ""}.</p>`);

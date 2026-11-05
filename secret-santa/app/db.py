@@ -87,6 +87,16 @@ CREATE TABLE IF NOT EXISTS digest_queue (
     PRIMARY KEY (year, receiver_id)
 );
 
+-- pairs set by an admin before the random draw (e.g. Grandma -> little Peti)
+CREATE TABLE IF NOT EXISTS fixed_pairs (
+    year        INTEGER NOT NULL REFERENCES years(year) ON DELETE CASCADE,
+    giver_id    INTEGER NOT NULL REFERENCES members(id),
+    receiver_id INTEGER NOT NULL REFERENCES members(id),
+    PRIMARY KEY (year, giver_id),
+    UNIQUE (year, receiver_id),
+    CHECK (giver_id != receiver_id)
+);
+
 CREATE TABLE IF NOT EXISTS settings (
     key   TEXT PRIMARY KEY,
     value TEXT NOT NULL
@@ -121,6 +131,8 @@ MIGRATIONS = [
     ("participant_links", "private_sealed", "TEXT"),
     ("participant_links", "giver_route", "TEXT"),
     ("wishes", "notified_texts", "TEXT NOT NULL DEFAULT '[]'"),
+    # people without e-mail (small children, elderly): mail goes to this helper member
+    ("members", "helper_id", "INTEGER REFERENCES members(id)"),
 ]
 
 

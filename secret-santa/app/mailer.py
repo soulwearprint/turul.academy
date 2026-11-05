@@ -79,6 +79,30 @@ TEXTS = {
 LANGS = tuple(TEXTS)
 DEFAULT_LANG = "hu"
 
+# Banner for mail that goes to a helper on behalf of someone without e-mail.
+ON_BEHALF = {
+    "hu": ("👋 <b>Kedves {helper}!</b> Ezt a levelet <b>{name}</b> nevében kapod, mert neki nincs e-mail-címe. "
+           "Kérlek, segíts neki &ndash; és őrizd meg a titkot!",
+           "Kedves {helper}! Ezt a levelet {name} nevében kapod, mert neki nincs e-mail-címe. Kérlek, segíts neki – és őrizd meg a titkot!"),
+    "en": ("👋 <b>Dear {helper},</b> you are receiving this for <b>{name}</b>, who has no e-mail address. "
+           "Please help them &ndash; and keep the secret!",
+           "Dear {helper}, you are receiving this for {name}, who has no e-mail address. Please help them – and keep the secret!"),
+}
+
+
+def on_behalf_html(lang: str, helper: str, name: str) -> str:
+    if not helper:
+        return ""
+    t = ON_BEHALF.get(lang, ON_BEHALF[DEFAULT_LANG])[0]
+    return ('<p style="margin:0 0 14px;padding:10px 12px;background:#e7f0ff;border-left:4px solid #3b5f8a;'
+            f'font-size:13px;color:#22344d;">{t.format(helper=html.escape(helper), name=html.escape(name))}</p>')
+
+
+def on_behalf_text(lang: str, helper: str, name: str) -> list[str]:
+    if not helper:
+        return []
+    return [ON_BEHALF.get(lang, ON_BEHALF[DEFAULT_LANG])[1].format(helper=helper, name=name), ""]
+
 
 @dataclass
 class Letter:
@@ -93,6 +117,7 @@ class Letter:
     lang: str = DEFAULT_LANG
     page_url: str = ""  # personal page (wish lists, language); private to this person
     receiver_wishes: list = field(default_factory=list)  # [{"text", "url"}] known at sending time
+    helper_name: str = ""  # set when the mail goes to a helper on the giver's behalf
 
     @property
     def t(self) -> dict[str, str]:
@@ -114,7 +139,7 @@ def subject(l: Letter) -> str:
 
 def render_text(l: Letter) -> str:
     t = l.t
-    lines = [t["greeting"].format(giver=l.giver_name), ""]
+    lines = [*on_behalf_text(l.lang, l.helper_name, l.giver_name), t["greeting"].format(giver=l.giver_name), ""]
     if l.updated:
         lines += [t["updated_text"], ""]
     lines += [t["body_text"].format(year=l.year), "", f"    ★ {l.receiver_name} ★", ""]
@@ -208,6 +233,7 @@ def render_html(l: Letter) -> str:
     </tr>
     <tr>
       <td colspan="2" style="padding:6px 28px 8px;font-family:{serif};color:#3a2410;">
+        {on_behalf_html(l.lang, l.helper_name, l.giver_name)}
         <p style="margin:0 0 12px;font-size:22px;">{t["greeting"].format(giver=giver)}</p>
         {updated}
         <p style="margin:0 0 14px;font-size:15px;line-height:1.6;">{t["body"].format(year=l.year)}</p>
@@ -243,7 +269,7 @@ def build_message(l: Letter) -> EmailMessage:
     msg = EmailMessage()
     msg["Subject"] = subject(l)
     msg["From"] = formataddr((sender_name, sender))
-    msg["To"] = formataddr((l.giver_name, l.giver_email))
+    msg["To"] = formataddr((l.helper_name or l.giver_name, l.giver_email))
     msg["Message-ID"] = make_msgid(domain=sender.split("@")[-1])
     msg.set_content(render_text(l))
     msg.add_alternative(render_html(l), subtype="html")
@@ -251,15 +277,17 @@ def build_message(l: Letter) -> EmailMessage:
 
 
 def send(l: Letter) -> None:
-    deliver(build_message(l), l.giver_email, f"{l.year}")
+    deliver(build_message(l), l.giver_email, f"{l.year}", for_name=l.giver_name if l.helper_name else "")
 
 
-def deliver(msg: EmailMessage, to_email: str, tag: str) -> None:
-    """Send one message (or, in outbox mode, write it to data/outbox/<tag>_<email>.eml)."""
+def deliver(msg: EmailMessage, to_email: str, tag: str, for_name: str = "") -> None:
+    """Send one message (or, in outbox mode, write it to data/outbox/<tag>_<email>[_for_<name>].eml)."""
     if mode() == "outbox":
         out = outbox_dir()
         out.mkdir(parents=True, exist_ok=True)
         safe = "".join(c if c.isalnum() else "_" for c in to_email)
+        if for_name:
+            safe += "_for_" + "".join(c if c.isalnum() else "_" for c in for_name)
         (out / f"{tag}_{safe}.eml").write_bytes(bytes(msg))
         return
     host = os.environ["SMTP_HOST"]
@@ -375,23 +403,25 @@ INVITE = {
 }
 
 
-def build_invite(name: str, to_email: str, lang: str, year: int, budget: str, url: str) -> EmailMessage:
+def build_invite(name: str, to_email: str, lang: str, year: int, budget: str, url: str,
+                 helper_name: str = "") -> EmailMessage:
     e = html.escape
     t = INVITE.get(lang, INVITE[DEFAULT_LANG])
     inner = (
-        f'<p style="margin:0 0 12px;font-size:22px;">{t["greeting"].format(name=e(name))}</p>'
+        on_behalf_html(lang, helper_name, name)
+        + f'<p style="margin:0 0 12px;font-size:22px;">{t["greeting"].format(name=e(name))}</p>'
         f'<p style="margin:0 0 12px;font-size:15px;line-height:1.6;">{t["body"].format(year=year)}</p>'
         + (f'<p style="margin:0;padding:8px 12px;background:#fff1c2;border-left:4px solid #b8860b;font-size:14px;">💰 {t["budget"].format(budget=e(budget))}</p>' if budget else "")
         + _button(url, t["button"])
         + f'<p style="margin:12px 0 0;font-size:14px;line-height:1.5;">{t["after"]}</p>'
     )
     text = "\n".join([
-        t["greeting"].format(name=name), "", t["body"].format(year=year), "",
+        *on_behalf_text(lang, helper_name, name), t["greeting"].format(name=name), "", t["body"].format(year=year), "",
         *([t["budget_text"].format(budget=budget), ""] if budget else []),
         t["text_link"], url, "", t["after"],
     ])
     subj = t["subject"].format(name=name)
-    return _envelope(lang, name, to_email, subj, text,
+    return _envelope(lang, helper_name or name, to_email, subj, text,
                      _shell(lang, subj, t["pre"], inner, t["footer"].format(url=e(url))))
 
 
@@ -438,7 +468,7 @@ DIGEST = {
 
 
 def build_digest(name: str, to_email: str, lang: str, receiver: str, new_items: list, gone_items: list,
-                 current: list, budget: str) -> EmailMessage:
+                 current: list, budget: str, helper_name: str = "") -> EmailMessage:
     e = html.escape
     t = DIGEST.get(lang, DIGEST[DEFAULT_LANG])
     reasons = REASONS.get(lang, REASONS[DEFAULT_LANG])
@@ -447,7 +477,8 @@ def build_digest(name: str, to_email: str, lang: str, receiver: str, new_items: 
         f'<li style="margin:3px 0;"><s>{e(i["text"])}</s> <span style="color:#8a6a45;">&ndash; {e(reasons.get(i["reason"], reasons["other"]))}</span></li>'
         for i in gone_items)
     inner = (
-        f'<p style="margin:0 0 12px;font-size:22px;">{t["greeting"].format(name=e(name))}</p>'
+        on_behalf_html(lang, helper_name, name)
+        + f'<p style="margin:0 0 12px;font-size:22px;">{t["greeting"].format(name=e(name))}</p>'
         f'<p style="margin:0 0 6px;font-size:15px;">{t["intro"].format(receiver=e(receiver))}</p>'
         + (h3("✨ " + t["new"], "#1d5c3f") + _wish_list_html(new_items) if new_items else "")
         + (h3("✖ " + t["gone"], "#c8102e") + f'<ul style="margin:0 0 14px;padding-left:22px;font-size:14px;color:#3a2410;">{gone_html}</ul>'
@@ -459,10 +490,11 @@ def build_digest(name: str, to_email: str, lang: str, receiver: str, new_items: 
     )
     fmt = lambda items: [f"  - {w['text']}" + (f" ({w['url']})" if w.get("url") else "") for w in items]
     text = "\n".join([
-        t["greeting"].format(name=name), "", t["intro_text"].format(receiver=receiver), "",
+        *on_behalf_text(lang, helper_name, name), t["greeting"].format(name=name), "", t["intro_text"].format(receiver=receiver), "",
         *([t["new"] + ":", *fmt(new_items), ""] if new_items else []),
         *([t["gone"] + ":", *[f"  - {i['text']} ({reasons.get(i['reason'], reasons['other'])})" for i in gone_items], ""] if gone_items else []),
         t["all"] + ":", *(fmt(current) or ["  " + t["empty"]]), "",
         *([t["budget_text"].format(budget=budget), ""] if budget else []), t["hint"],
     ])
-    return _envelope(lang, name, to_email, t["subject"], text, _shell(lang, t["subject"], t["pre"], inner, t["footer"]))
+    return _envelope(lang, helper_name or name, to_email, t["subject"], text,
+                     _shell(lang, t["subject"], t["pre"], inner, t["footer"]))

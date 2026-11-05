@@ -37,6 +37,7 @@ const T = {
   hu: {
     title: (y) => `🎅 Titkos Mikulás ${y}`,
     hello: (n) => `Szia, ${n}!`,
+    helped: (h, n) => `👋 Ezt az oldalt ${h} kezeli ${n} nevében. Segíts neki megadni az ötleteit – és őrizd meg a titkot!`,
     privateInvite: "Ez a te saját oldalad – kérlek, ne add tovább a linket.",
     private: "Ez a te titkos oldalad. Ne add tovább a linket – aki megkapja, látja, kit húztál.",
     budget: "Ajándékkeret", noBudget: "Nincs megadott keret – a családi józan ész dönt. 😉",
@@ -69,6 +70,7 @@ const T = {
   en: {
     title: (y) => `🎅 Secret Santa ${y}`,
     hello: (n) => `Hi, ${n}!`,
+    helped: (h, n) => `👋 ${h} looks after this page for ${n}. Help them add their gift ideas — and keep the secret!`,
     privateInvite: "This is your own page — please don't share the link.",
     private: "This is your private page. Please don't share the link — whoever has it can see who you drew.",
     budget: "Gift budget", noBudget: "No budget set — family common sense applies. 😉",
@@ -130,6 +132,7 @@ function render() {
   $("#app").innerHTML = `
     <section class="card">
       <h2>${esc(t.hello(data.name))}</h2>
+      ${data.helper ? `<div class="banner info">${esc(t.helped(data.helper, data.name))}</div>` : ""}
       <p class="hint">🔒 ${g ? esc(t.private) : esc(t.privateInvite)}</p>
     </section>
 

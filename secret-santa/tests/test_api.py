@@ -497,3 +497,66 @@ def test_digest_schedule(monkeypatch, tmp_path):
         db.set_setting(conn, "last_digest_at", "2026-12-01T17:06:00+00:00")
     assert not main._digest_due(datetime(2026, 12, 1, 20, 0, tzinfo=timezone.utc))  # already ran today
     assert main._digest_due(datetime(2026, 12, 2, 17, 1, tzinfo=timezone.utc))      # next day
+
+
+def test_people_without_email_use_a_helper(client, tmp_path):
+    c = client
+    out = tmp_path / "outbox"
+    ok(c.post("/api/setup", json={"name": "Mom", "password": "secret1"}))
+    ids = add_people(c, ["Anya", "Apa", "Nagymama"])
+    # no e-mail and no helper -> refused; helper must have an e-mail of their own
+    assert c.post("/api/members", json={"name": "Peti", "email": ""}).status_code == 422
+    peti = ok(c.post("/api/members", json={"name": "Peti", "email": "", "helper_id": ids["Anya"]}))["id"]
+    assert c.post("/api/members", json={"name": "Baba", "email": "", "helper_id": peti}).status_code == 422
+    # a helper can't drop their own e-mail while helping someone
+    assert c.put(f"/api/members/{ids['Anya']}", json={"name": "Anya", "email": "", "helper_id": ids["Apa"]}).status_code == 422
+
+    ok(c.post("/api/years", json={"year": 2026}))
+    ok(c.put("/api/years/2026", json={"budget": "10 000 Ft", "exchange_date": "", "note": ""}))
+    ok(c.post("/api/years/2026/invite", json={}))
+    inv = out / "2026_invite_anya_fam_test_for_Peti.eml"
+    msg, text = _body(inv)
+    assert email.utils.parseaddr(msg["To"]) == ("Anya", "anya@fam.test")
+    assert "Peti nevében" in text and "kedves Peti" in text
+
+    for seed in range(15):  # Peti must never draw his helper (Anya would learn her own Secret Santa)
+        ok(c.post("/api/years/2026/draw", json={"everyone": True, "confirm": True}))
+        pairs = {p["giver"]: p["receiver"] for p in ok(c.post("/api/years/2026/reveal", json={"password": "secret1"}))}
+        assert pairs["Peti"] != "Anya"
+    ok(c.post("/api/years/2026/notify", json={}))
+    card = out / "2026_anya_fam_test_for_Peti.eml"
+    msg, text = _body(card)
+    assert email.utils.parseaddr(msg["To"])[1] == "anya@fam.test"
+    assert f"★ {pairs['Peti']} ★" in text and "Peti nevében" in text
+    # Anya's own card is a separate file and message
+    assert (out / "2026_anya_fam_test.eml").exists()
+
+    # Peti's page (opened by Anya) says it is managed by the helper
+    c.post("/api/logout")
+    page = ok(c.get(f"/api/p/{_token_in(text)}"))
+    assert page["name"] == "Peti" and page["helper"] == "Anya"
+
+
+def test_fixed_pairs(client):
+    c = client
+    ok(c.post("/api/setup", json={"name": "Mom", "password": "secret1"}))
+    ids = add_people(c, ["Anna", "Bela", "Csilla", "Dani", "Eva", "Nagymama", "Peti"])
+    ok(c.post("/api/years", json={"year": 2026}))
+    ok(c.post("/api/years/2026/fixed", json={"giver_id": ids["Nagymama"], "receiver_id": ids["Peti"]}))
+    assert c.post("/api/years/2026/fixed", json={"giver_id": ids["Anna"], "receiver_id": ids["Peti"]}).status_code == 409
+    assert c.post("/api/years/2026/fixed", json={"giver_id": ids["Anna"], "receiver_id": ids["Anna"]}).status_code == 422
+    assert [f["giver"] for f in ok(c.get("/api/years/2026/fixed"))] == ["Nagymama"]
+    # even an exclusion between them is overridden by the fixed pair
+    ok(c.post("/api/exclusions", json={"a_id": ids["Nagymama"], "b_id": ids["Peti"]}))
+    for _ in range(20):
+        ok(c.post("/api/years/2026/draw", json={"everyone": True, "confirm": True}))
+        pairs = {p["giver"]: p["receiver"] for p in ok(c.post("/api/years/2026/reveal", json={"password": "secret1"}))}
+        assert pairs["Nagymama"] == "Peti"
+        assert list(pairs.values()).count("Peti") == 1
+    # a fixed pair added after the draw is applied at the next (partial) reshuffle
+    ok(c.post("/api/years/2026/fixed", json={"giver_id": ids["Anna"], "receiver_id": ids["Bela"]}))
+    ok(c.post("/api/years/2026/draw", json={"selected_ids": [], "confirm": True}))
+    pairs = {p["giver"]: p["receiver"] for p in ok(c.post("/api/years/2026/reveal", json={"password": "secret1"}))}
+    assert pairs["Anna"] == "Bela" and pairs["Nagymama"] == "Peti"
+    ok(c.delete(f"/api/years/2026/fixed/{ids['Anna']}"))
+    assert len(ok(c.get("/api/years/2026/fixed"))) == 1

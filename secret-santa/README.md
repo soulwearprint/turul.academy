@@ -27,6 +27,8 @@ Tests: `pip install -r requirements-dev.txt && python -m pytest -q`
 |---|---|
 | Family members with e-mails | **Family** tab. Removing someone who took part in a past year archives them, so history is kept. |
 | 1-to-1 random draw | Uniformly random among all valid draws: everyone gives once, receives once, never draws themselves (`app/draw.py`). |
+| People without e-mail | In the Family tab, leave the e-mail empty and pick a **helper**, for example a parent for a small child or a grandchild for a grandparent. The helper receives that person's invitation, postcard and digests, clearly marked *"for Peti"*, and manages their gift ideas. A person never draws their own helper, because otherwise the helper would learn who their own Secret Santa is. |
+| Fixed pairs | On the year page, **📌 Fixed pairs** sets pairs by hand before the random draw (for example Grandma → Peti). They win over every other rule, everyone else is drawn randomly, and all admins can see them. |
 | Couples never draw each other | **Family → Never draw each other**. Each rule works both ways and applies every year. |
 | No repeat of last year | On by default for each year (**Details** → *Nobody draws the same person as in the previous year's draw*). It compares against the most recent earlier year that has a draw. |
 | Postcard language | Hungarian by default. An admin sets **English** per person in the Family tab, or the participant switches it from the link in their card, optionally getting the card resent. |
@@ -192,10 +194,31 @@ Use port 465 for SSL or 587 for STARTTLS.
 
 ## Deploying
 
-This is a single process with a single SQLite file. Any small host with a
-persistent disk works, such as Railway (with a volume), Fly.io or a home
-server. Serve it over HTTPS and set `SANTA_SECURE_COOKIE=1`. Back up
-`data/santa.db`.
+The app is a single process with one SQLite file, so it needs a host that
+keeps files on disk and runs all the time. Use the included `Dockerfile` and
+mount a persistent volume at `/data`.
 
-Serverless hosts such as Vercel don't fit this app as written, for two
-reasons: the filesystem there is temporary, and sessions are kept in memory.
+1. Set the environment variables from `.env.example`. These are the important
+   ones:
+   - `PUBLIC_URL`
+   - the SMTP settings
+   - `SANTA_SERVER_KEY`
+   - `SANTA_SECURE_COOKIE=1`
+2. Serve the app over HTTPS.
+3. Run **exactly one instance and one worker**. Sessions and the daily
+   digest live in memory.
+4. Back up `/data/santa.db`. Keep `SANTA_SERVER_KEY` somewhere else.
+
+Hosts that fit:
+
+- **Railway**: a service from this repository, with root directory
+  `secret-santa` and a volume at `/data`.
+- **Fly.io**: one machine with a volume.
+- **Google Cloud Compute Engine**: a small VM such as `e2-micro`, running
+  the container.
+
+Hosts that don't fit without changes:
+
+- **Vercel, Cloud Run, Google Drive and Apps Script.** They either have no
+  persistent disk, scale to zero (which stops the daily digest), or can't run
+  Python.

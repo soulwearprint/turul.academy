@@ -132,8 +132,14 @@ class PasswordChangeIn(BaseModel):
 
 class MemberIn(BaseModel):
     name: str = Field(min_length=1, max_length=80)
-    email: str = Field(min_length=3, max_length=200)
+    email: str = Field(default="", max_length=200)  # empty = no e-mail; then helper_id is required
     lang: Literal["hu", "en"] = "hu"  # postcard language
+    helper_id: int | None = None      # who receives this person's mail (a member with e-mail)
+
+
+class FixedPairIn(BaseModel):
+    giver_id: int
+    receiver_id: int
 
 
 class ExclusionIn(BaseModel):
@@ -424,36 +430,59 @@ def change_password(body: PasswordChangeIn, s: Session = Depends(current)):
 
 # ─── Family members ────────────────────────────────────────────────────────
 
-def _clean_member(body: MemberIn) -> tuple[str, str, str]:
+def _clean_member(conn, body: MemberIn, member_id: int | None = None) -> tuple[str, str, str, int | None]:
     email = body.email.strip()
-    if not EMAIL_RE.match(email):
+    helper = body.helper_id if not email else None
+    if email and not EMAIL_RE.match(email):
         raise HTTPException(422, "That does not look like an e-mail address.")
-    return body.name.strip(), email, body.lang
+    if not email:
+        if not helper:
+            raise HTTPException(422, "Without an e-mail address, pick a helper who receives the mail for this person.")
+        h = conn.execute("SELECT email, archived FROM members WHERE id = ?", (helper,)).fetchone()
+        if not h or helper == member_id:
+            raise HTTPException(422, "Unknown helper.")
+        if not h["email"] or h["archived"]:
+            raise HTTPException(422, "The helper needs their own e-mail address.")
+    if member_id is not None and not email and conn.execute(
+            "SELECT 1 FROM members WHERE helper_id = ? AND email = '' AND archived = 0", (member_id,)).fetchone():
+        raise HTTPException(422, "This person is a helper for someone else, so they need an e-mail address.")
+    return body.name.strip(), email, body.lang, helper
+
+
+def _recipient(conn, member_id: int) -> tuple[str, str, str]:
+    """-> (name, e-mail to send to, helper name or ''). Mail for people without e-mail goes to their helper."""
+    m = conn.execute("SELECT name, email, helper_id FROM members WHERE id = ?", (member_id,)).fetchone()
+    if m["email"]:
+        return m["name"], m["email"], ""
+    h = conn.execute("SELECT name, email FROM members WHERE id = ?", (m["helper_id"],)).fetchone()
+    if not h or not h["email"]:
+        raise HTTPException(409, f"{m['name']} has no e-mail and no helper with an e-mail address.")
+    return m["name"], h["email"], h["name"]
 
 
 @app.get("/api/members")
 def list_members(s: Session = Depends(current)):
     with db.connect() as conn:
-        rows = conn.execute("SELECT id, name, email, lang, archived FROM members ORDER BY archived, name COLLATE NOCASE").fetchall()
+        rows = conn.execute("SELECT id, name, email, lang, helper_id, archived FROM members ORDER BY archived, name COLLATE NOCASE").fetchall()
     return [dict(r) for r in rows]
 
 
 @app.post("/api/members")
 def add_member(body: MemberIn, s: Session = Depends(current)):
-    name, email, lang = _clean_member(body)
     with db.connect() as conn:
-        cur = conn.execute("INSERT INTO members (name, email, lang, created_at) VALUES (?, ?, ?, ?)",
-                           (name, email, lang, db.now()))
+        name, email, lang, helper = _clean_member(conn, body)
+        cur = conn.execute("INSERT INTO members (name, email, lang, helper_id, created_at) VALUES (?, ?, ?, ?, ?)",
+                           (name, email, lang, helper, db.now()))
         db.audit(conn, s.admin_name, "member added", name)
     return {"id": cur.lastrowid}
 
 
 @app.put("/api/members/{member_id}")
 def edit_member(member_id: int, body: MemberIn, s: Session = Depends(current)):
-    name, email, lang = _clean_member(body)
     with db.connect() as conn:
-        if not conn.execute("UPDATE members SET name = ?, email = ?, lang = ?, archived = 0 WHERE id = ?",
-                            (name, email, lang, member_id)).rowcount:
+        name, email, lang, helper = _clean_member(conn, body, member_id)
+        if not conn.execute("UPDATE members SET name = ?, email = ?, lang = ?, helper_id = ?, archived = 0 WHERE id = ?",
+                            (name, email, lang, helper, member_id)).rowcount:
             raise HTTPException(404, "No such member.")
         db.audit(conn, s.admin_name, "member edited", name)
     return {"ok": True}
@@ -521,13 +550,64 @@ def _forbidden(conn, key: bytes, year: int) -> draw.Forbidden:
     for r in conn.execute("SELECT a_id, b_id FROM exclusions"):
         out.setdefault(r["a_id"], set()).add(r["b_id"])
         out.setdefault(r["b_id"], set()).add(r["a_id"])
+    # Someone without e-mail never draws their own helper: the helper reads their
+    # postcard and would otherwise learn who their own Secret Santa is.
+    for r in conn.execute("SELECT id, helper_id FROM members WHERE email = '' AND helper_id IS NOT NULL"):
+        out.setdefault(r["id"], set()).add(r["helper_id"])
     y = conn.execute("SELECT avoid_repeat FROM years WHERE year = ?", (year,)).fetchone()
     if y and y["avoid_repeat"]:
         prev = conn.execute("SELECT MAX(year) FROM pairings WHERE year < ?", (year,)).fetchone()[0]
         if prev is not None:
             for g, r in _load_pairing(conn, key, prev).items():
                 out.setdefault(g, set()).add(r)
+    # Fixed pairs win over every other rule: the giver may only draw their fixed
+    # receiver, and nobody else may draw that receiver.
+    people = {r[0] for r in conn.execute("SELECT member_id FROM year_participants WHERE year = ?", (year,))}
+    fixed = {r["giver_id"]: r["receiver_id"] for r in
+             conn.execute("SELECT giver_id, receiver_id FROM fixed_pairs WHERE year = ?", (year,))
+             if r["giver_id"] in people and r["receiver_id"] in people}
+    for g, r in fixed.items():
+        out[g] = people - {r}
+        for other in people - {g}:
+            out.setdefault(other, set()).add(r)
     return out
+
+
+@app.get("/api/years/{year}/fixed")
+def list_fixed(year: int, s: Session = Depends(current)):
+    with db.connect() as conn:
+        rows = conn.execute(
+            "SELECT f.giver_id, f.receiver_id, g.name AS giver, r.name AS receiver FROM fixed_pairs f "
+            "JOIN members g ON g.id = f.giver_id JOIN members r ON r.id = f.receiver_id WHERE f.year = ? "
+            "ORDER BY g.name COLLATE NOCASE", (year,)).fetchall()
+    return [dict(r) for r in rows]
+
+
+@app.post("/api/years/{year}/fixed")
+def add_fixed(year: int, body: FixedPairIn, s: Session = Depends(current)):
+    if body.giver_id == body.receiver_id:
+        raise HTTPException(422, "Pick two different people.")
+    with db.connect() as conn:
+        _year_or_404(conn, year)
+        names = _names(conn, [body.giver_id, body.receiver_id])
+        if len(names) != 2:
+            raise HTTPException(404, "Unknown member.")
+        if conn.execute("SELECT 1 FROM fixed_pairs WHERE year = ? AND (giver_id = ? OR receiver_id = ?)",
+                        (year, body.giver_id, body.receiver_id)).fetchone():
+            raise HTTPException(409, "One of them is already in a fixed pair this year.")
+        conn.execute("INSERT INTO fixed_pairs (year, giver_id, receiver_id) VALUES (?, ?, ?)",
+                     (year, body.giver_id, body.receiver_id))
+        db.audit(conn, s.admin_name, "fixed pair added", f"{year}: {names[body.giver_id]} → {names[body.receiver_id]}")
+    return {"ok": True}
+
+
+@app.delete("/api/years/{year}/fixed/{giver_id}")
+def delete_fixed(year: int, giver_id: int, s: Session = Depends(current)):
+    with db.connect() as conn:
+        names = _names(conn, [giver_id])
+        conn.execute("DELETE FROM fixed_pairs WHERE year = ? AND giver_id = ?", (year, giver_id))
+        db.audit(conn, s.admin_name, "fixed pair removed", f"{year}: {names.get(giver_id, '?')} →")
+    return {"ok": True}
 
 
 # ─── Years ─────────────────────────────────────────────────────────────────
@@ -751,8 +831,10 @@ def invite(year: int, body: NotifyIn, request: Request, s: Session = Depends(cur
             m = members[mid]
             token = crypto.new_link_token()
             try:
-                mailer.deliver(mailer.build_invite(m["name"], m["email"], m["lang"] or mailer.DEFAULT_LANG, year,
-                                                   y["budget"], f"{base}/p/{token}"), m["email"], f"{year}_invite")
+                name, to, helper = _recipient(conn, mid)
+                mailer.deliver(mailer.build_invite(name, to, m["lang"] or mailer.DEFAULT_LANG, year,
+                                                   y["budget"], f"{base}/p/{token}", helper),
+                               to, f"{year}_invite", for_name=name if helper else "")
             except Exception as exc:
                 results.append({"id": mid, "name": m["name"], "ok": False, "error": type(exc).__name__ + ": " + str(exc)[:200]})
                 continue
@@ -787,8 +869,13 @@ def notify(year: int, body: NotifyIn, request: Request, s: Session = Depends(cur
             receiver = crypto.open_receiver(s.key, year, r["giver_id"], r["receiver_sealed"])
             receiver_wishes = _active(_items(conn, year, receiver))
             token = crypto.new_link_token()  # every card gets a fresh link; older ones stop working
+            try:
+                _, to_email, helper = _recipient(conn, r["giver_id"])
+            except HTTPException as exc:
+                results.append({"id": r["giver_id"], "name": r["name"], "ok": False, "error": exc.detail})
+                continue
             letter = mailer.Letter(
-                giver_name=r["name"], giver_email=r["email"], receiver_name=names[receiver], year=year,
+                giver_name=r["name"], giver_email=to_email, receiver_name=names[receiver], year=year, helper_name=helper,
                 budget=y["budget"], exchange_date=y["exchange_date"], note=y["note"],
                 updated=r["notify_count"] > 0, lang=r["lang"] or mailer.DEFAULT_LANG,
                 page_url=f"{base}/p/{token}", receiver_wishes=receiver_wishes,
@@ -1057,8 +1144,10 @@ def run_digest() -> dict:
             r_name = _names(conn, [receiver]).get(receiver, "?")
             y = _year_or_404(conn, year)
             try:
-                mailer.deliver(mailer.build_digest(g["name"], g["email"], g["lang"] or mailer.DEFAULT_LANG, r_name,
-                                                   new, gone, _active(items), y["budget"]), g["email"], f"{year}_ideas")
+                g_name, to, helper = _recipient(conn, giver)
+                mailer.deliver(mailer.build_digest(g_name, to, g["lang"] or mailer.DEFAULT_LANG, r_name,
+                                                   new, gone, _active(items), y["budget"], helper),
+                               to, f"{year}_ideas", for_name=g_name if helper else "")
             except Exception as exc:  # keep it queued; try again next run
                 failed += 1
                 db.audit(conn, "system", "wish-list digest FAILED", f"{year}: to {r_name}'s Secret Santa ({type(exc).__name__})")
@@ -1115,6 +1204,7 @@ def participant_page(token: str):
             "giftee": None if receiver is None else
                       {"name": names.get(receiver, "?"), "wishes": _giver_view(_items(conn, row["year"], receiver))},
             "drawn": _state(conn, row["year"])["drawn"],
+            "helper": _recipient(conn, row["member_id"])[2],
             "max_wishes": MAX_WISHES,
             "digest_hour": DIGEST_HOUR,
         }
@@ -1185,13 +1275,16 @@ def participant_lang(token: str, body: LangIn, request: Request):
         db.audit(conn, row["name"], "postcard language changed", f"{body.lang} (by participant)")
         if body.resend and receiver is None:
             y = _year_or_404(conn, row["year"])
-            mailer.deliver(mailer.build_invite(row["name"], row["email"], body.lang, row["year"], y["budget"],
-                                               f"{_public_base(request)}/p/{token}"), row["email"], f"{row['year']}_invite")
+            name, to, helper = _recipient(conn, row["member_id"])
+            mailer.deliver(mailer.build_invite(name, to, body.lang, row["year"], y["budget"],
+                                               f"{_public_base(request)}/p/{token}", helper),
+                           to, f"{row['year']}_invite", for_name=name if helper else "")
         elif body.resend:
             y = _year_or_404(conn, row["year"])
             names = _names(conn, [receiver])
             mailer.send(mailer.Letter(
-                giver_name=row["name"], giver_email=row["email"], receiver_name=names.get(receiver, "?"),
+                giver_name=row["name"], giver_email=_recipient(conn, row["member_id"])[1],
+                helper_name=_recipient(conn, row["member_id"])[2], receiver_name=names.get(receiver, "?"),
                 year=row["year"], budget=y["budget"], exchange_date=y["exchange_date"], note=y["note"],
                 lang=body.lang, page_url=f"{_public_base(request)}/p/{token}",
                 receiver_wishes=_active(_items(conn, row["year"], receiver)),
