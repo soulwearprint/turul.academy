@@ -4,7 +4,7 @@ A small self-hosted app for a family Secret Santa: keep a family list with
 e-mail addresses, draw names secretly each year, and e-mail every person
 their own postcard from the North Pole.
 
-Python 3.11+ · FastAPI · SQLite · no build step. It is self-contained and
+Python 3.9+ · FastAPI · SQLite · no build step. It is self-contained and
 unrelated to the rest of this repository.
 
 ## Run it

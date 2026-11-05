@@ -12,7 +12,7 @@ import time
 from contextlib import asynccontextmanager
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Literal
+from typing import List, Literal, Optional
 
 from fastapi import Depends, FastAPI, HTTPException, Request, Response
 from fastapi.responses import FileResponse, HTMLResponse, RedirectResponse
@@ -134,7 +134,7 @@ class MemberIn(BaseModel):
     name: str = Field(min_length=1, max_length=80)
     email: str = Field(default="", max_length=200)  # empty = no e-mail; then helper_id is required
     lang: Literal["hu", "en"] = "hu"  # postcard language
-    helper_id: int | None = None      # who receives this person's mail (a member with e-mail)
+    helper_id: Optional[int] = None   # who receives this person's mail (a member with e-mail)
 
 
 class FixedPairIn(BaseModel):
@@ -169,7 +169,7 @@ class ReshuffleIn(BaseModel):
 
 
 class NotifyIn(BaseModel):
-    member_ids: list[int] | None = None  # None = everyone still pending
+    member_ids: Optional[List[int]] = None  # None = everyone still pending
 
 
 class RevealIn(BaseModel):
