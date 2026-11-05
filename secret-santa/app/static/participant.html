@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <title>Titkos Mikulás</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    main { max-width: 640px; }
+    .budget { text-align: center; padding: 16px; border-radius: 12px; background: #fff6d6; border: 2px solid var(--gold); margin-bottom: 16px; }
+    .budget .amount { font: 700 30px Georgia, serif; color: var(--red); }
+    .budget .label { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #6b4d00; }
+    .giftee { font: 700 26px Georgia, serif; color: var(--red); margin: 0 0 8px; }
+    ul.wishes { padding-left: 20px; margin: 8px 0; }
+    ul.wishes li { margin: 6px 0; }
+    .wish-row { display: grid; grid-template-columns: 1fr 1fr auto; gap: 6px; margin-bottom: 6px; }
+    @media (max-width: 560px) { .wish-row { grid-template-columns: 1fr auto; } .wish-row .url { grid-column: 1; } }
+    .lang-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+    .lang-btns button.on { background: var(--green); }
+    .ok { color: var(--green); }
+    ul.mine { list-style: none; padding: 0; margin: 10px 0; }
+    ul.mine li { display: flex; justify-content: space-between; gap: 10px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
+    ul.mine li.obs, ul.wishes li.obs { color: var(--muted); }
+    ul.mine .acts { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+    ul.mine select { width: auto; max-width: 220px; font-size: 13px; padding: 3px 6px; }
+  </style>
+</head>
+<body>
+  <header><h1 id="title">🎅 Titkos Mikulás</h1></header>
+  <main id="app"><p class="muted">…</p></main>
+
+<script>
+"use strict";
+const T = {
+  hu: {
+    title: (y) => `🎅 Titkos Mikulás ${y}`,
+    hello: (n) => `Szia, ${n}!`,
+    helped: (h, n) => `👋 Ezt az oldalt ${h} kezeli ${n} nevében. Segíts neki megadni az ötleteit – és őrizd meg a titkot!`,
+    privateInvite: "Ez a te saját oldalad – kérlek, ne add tovább a linket.",
+    private: "Ez a te titkos oldalad. Ne add tovább a linket – aki megkapja, látja, kit húztál.",
+    budget: "Ajándékkeret", noBudget: "Nincs megadott keret – a családi józan ész dönt. 😉",
+    budgetNote: "Kérjük, maradjatok a kereten belül!",
+    exchange: "Ajándékozás",
+    yourGiftee: "A te megajándékozottad",
+    gifteeWishes: (n) => `${n} ezeknek örülne:`,
+    noWishes: (n) => `${n} még nem adott meg ötletet. Nézz vissza később!`,
+    myWishes: "Az én ajándékötleteim",
+    myWishesHint: (max) => `Legfeljebb ${max} ötlet, ha szeretnéd. Csak a titkos Mikulásod látja őket.`,
+    withinBudget: (b) => `Csak olyat írj, ami belefér ebbe: ${b}. (Bocs, a PlayStation és a VR-szemüveg nem fér bele. 😄)`,
+    idea: "Ötlet (pl. egy jó krimi, gyapjúzokni 38-as méretben)", url: "Link (nem kötelező)",
+    add: "+ Új ötlet", remove: "Törlés", save: "Mentés", saved: "Elmentve! 🎄",
+    lang: "A képeslap nyelve", resend: "Küldd el újra a képeslapot ezen a nyelven",
+    langSaved: "Nyelv elmentve.", langResent: "Nyelv elmentve, a képeslap úton van! 📮",
+    notDrawn: "A neveket még nem húztuk ki. Amint megvan, megérkezik a képeslapod a megajándékozottad nevével – addig is írd meg az ötleteidet!",
+    drawnWait: "A nevek ki vannak húzva! 🎉 A képeslapod hamarosan megérkezik, benne a megajándékozottad nevével és egy új linkkel.",
+    notifyNote: (h) => `A változásokról a titkos Mikulásod naponta egyszer (${h} óra körül) kap egy összefoglaló e-mailt.`,
+    seen: "📬 a titkos Mikulásod már megkapta",
+    notSeen: "még nem küldtük el – szabadon törölheted",
+    rules: "Amíg egy ötletet nem küldtünk el a titkos Mikulásodnak, egyszerűen törölheted. Ha már megkapta, jelöld „már nem aktuális”-nak, így ő is értesül róla.",
+    obsoleteBtn: "Már nem aktuális…", restore: "Visszaállítás",
+    whyObsolete: "Miért nem aktuális?",
+    reasons: { got_it: "Már megkaptam / van hasonló", not_wanted: "Már nem szeretném", mistake: "Tévedésből adtam meg", other: "Egyéb ok" },
+    reasonShort: { got_it: "már megkapta / van hasonló", not_wanted: "már nem szeretné", mistake: "tévedésből került fel", other: "már nem aktuális" },
+    obsoleteTag: "már nem aktuális", cancel: "Mégse", confirm: "Megjelölöm",
+    full: (max) => `Elérted a ${max} ötletes keretet. Törölj vagy jelölj meg egyet, ha újat adnál meg.`,
+    gone: "Ez a link már nem érvényes – valószínűleg kaptál azóta egy újabb képeslapot. Az abban lévő linket használd.",
+  },
+  en: {
+    title: (y) => `🎅 Secret Santa ${y}`,
+    hello: (n) => `Hi, ${n}!`,
+    helped: (h, n) => `👋 ${h} looks after this page for ${n}. Help them add their gift ideas — and keep the secret!`,
+    privateInvite: "This is your own page — please don't share the link.",
+    private: "This is your private page. Please don't share the link — whoever has it can see who you drew.",
+    budget: "Gift budget", noBudget: "No budget set — family common sense applies. 😉",
+    budgetNote: "Please keep gifts within the budget!",
+    exchange: "Gift exchange",
+    yourGiftee: "Your giftee",
+    gifteeWishes: (n) => `${n} would be happy with:`,
+    noWishes: (n) => `${n} hasn't added any ideas yet. Check back later!`,
+    myWishes: "My gift ideas",
+    myWishesHint: (max) => `Up to ${max} ideas, if you like. Only your Secret Santa sees them.`,
+    withinBudget: (b) => `Only add things that fit within ${b}. (Sorry, a PlayStation or a VR headset won't fit. 😄)`,
+    idea: "Idea (e.g. a good crime novel, wool socks size 38)", url: "Link (optional)",
+    add: "+ Add idea", remove: "Remove", save: "Save", saved: "Saved! 🎄",
+    lang: "Postcard language", resend: "Send me the postcard again in this language",
+    langSaved: "Language saved.", langResent: "Language saved, your postcard is on its way! 📮",
+    notDrawn: "The names haven't been drawn yet. Once they are, your postcard will arrive with your giftee's name — meanwhile, add your ideas!",
+    drawnWait: "The names have been drawn! 🎉 Your postcard is on its way, with your giftee's name and a new link.",
+    notifyNote: (h) => `Your Secret Santa gets one summary e-mail a day (around ${h}:00) about any changes.`,
+    seen: "📬 your Secret Santa has received it",
+    notSeen: "not sent yet — you can freely remove it",
+    rules: "Until an idea has been sent to your Secret Santa, you can simply remove it. Once they have it, mark it as “no longer wanted” so they hear about it too.",
+    obsoleteBtn: "No longer wanted…", restore: "Restore",
+    whyObsolete: "Why is it no longer wanted?",
+    reasons: { got_it: "I already got it / have a similar one", not_wanted: "I don't want it any more", mistake: "I added it by mistake", other: "Other reason" },
+    reasonShort: { got_it: "already got it / has a similar one", not_wanted: "doesn't want it any more", mistake: "added by mistake", other: "no longer wanted" },
+    obsoleteTag: "no longer wanted", cancel: "Cancel", confirm: "Mark it",
+    full: (max) => `You have reached ${max} ideas. Remove or mark one to add another.`,
+    gone: "This link is no longer valid — you probably received a newer postcard since. Please use the link in that one.",
+  },
+};
+const $ = (s, el = document) => el.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const token = location.pathname.split("/").pop();
+const wantLang = location.hash === "#lang";
+let data, t;
+
+async function call(method, path, body) {
+  const res = await fetch(`/api/p/${encodeURIComponent(token)}${path}`, {
+    method, headers: body ? { "Content-Type": "application/json" } : {}, body: body ? JSON.stringify(body) : undefined,
+  });
+  const out = await res.json().catch(() => ({}));
+  if (!res.ok) throw Object.assign(new Error(out.detail || res.statusText), { status: res.status });
+  return out;
+}
+
+const link = (w) => (w.url ? ` — <a href="${esc(w.url)}" target="_blank" rel="noopener noreferrer">link ↗</a>` : "");
+function wishList(items) {
+  return `<ul class="wishes">${items.map((w) => w.obsolete
+    ? `<li class="obs"><s>${esc(w.text)}</s> <span class="pill">${esc(t.reasonShort[w.reason] || t.obsoleteTag)}</span></li>`
+    : `<li>${esc(w.text)}${link(w)}</li>`).join("")}</ul>`;
+}
+
+function render() {
+  t = T[data.lang] || T.hu;
+  document.documentElement.lang = data.lang;
+  document.title = t.title(data.year).replace("🎅 ", "");
+  $("#title").textContent = t.title(data.year);
+  const g = data.giftee;
+  $("#app").innerHTML = `
+    <section class="card">
+      <h2>${esc(t.hello(data.name))}</h2>
+      ${data.helper ? `<div class="banner info">${esc(t.helped(data.helper, data.name))}</div>` : ""}
+      <p class="hint">🔒 ${g ? esc(t.private) : esc(t.privateInvite)}</p>
+    </section>
+
+    <div class="budget">
+      ${data.budget ? `<div class="label">${esc(t.budget)}</div><div class="amount">${esc(data.budget)}</div>
+        <div class="hint">${esc(t.budgetNote)}</div>` : `<div class="hint">${esc(t.noBudget)}</div>`}
+      ${data.exchange_date ? `<div class="hint" style="margin-top:6px">📅 ${esc(t.exchange)}: <b>${esc(data.exchange_date)}</b></div>` : ""}
+    </div>
+
+    ${g ? `<section class="card">
+      <div class="label hint">${esc(t.yourGiftee)}</div>
+      <p class="giftee">${esc(g.name)}</p>
+      ${g.wishes.length ? `<p>${esc(t.gifteeWishes(g.name))}</p>${wishList([...g.wishes.filter((w) => !w.obsolete), ...g.wishes.filter((w) => w.obsolete)])}`
+        : `<p class="muted">${esc(t.noWishes(g.name))}</p>`}
+    </section>` : `<div class="banner info">🎄 ${esc(data.drawn ? t.drawnWait : t.notDrawn)}</div>`}
+
+    <section class="card">
+      <h2>${esc(t.myWishes)}</h2>
+      <p class="hint">${esc(t.myWishesHint(data.max_wishes))} ${g ? esc(t.notifyNote(data.digest_hour)) : ""}</p>
+      ${data.budget ? `<div class="banner">💰 ${esc(t.withinBudget(data.budget))}</div>` : ""}
+      <p class="hint">${esc(t.rules)}</p>
+      <ul class="mine" id="mine"></ul>
+      <form id="wf" class="wish-row">
+        <input name="text" maxlength="200" required placeholder="${esc(t.idea)}">
+        <input name="url" class="url" maxlength="500" placeholder="${esc(t.url)}">
+        <button id="addbtn">${esc(t.add)}</button>
+      </form>
+      <p id="wmsg" class="hint"></p>
+    </section>
+
+    <section class="card" id="lang">
+      <h2>${esc(t.lang)}</h2>
+      <div class="lang-btns">
+        <button type="button" data-lang="hu" class="${data.lang === "hu" ? "on" : "secondary"}">🇭🇺 Magyar</button>
+        <button type="button" data-lang="en" class="${data.lang === "en" ? "on" : "secondary"}">🇬🇧 English</button>
+      </div>
+      <label style="display:flex;gap:8px;align-items:center;color:inherit;margin-top:10px">
+        <input type="checkbox" id="resend" style="width:auto"> ${esc(t.resend)}</label>
+      <p id="lmsg" class="ok"></p>
+    </section>`;
+
+  renderMine();
+  $("#wf").onsubmit = async (e) => {
+    e.preventDefault();
+    const f = e.target;
+    try {
+      const out = await call("POST", "/wishes", { text: f.elements.text.value.trim(), url: f.elements.url.value.trim() });
+      data.my_wishes = out.my_wishes; f.reset(); renderMine(); flash(t.saved);
+    } catch (err) { flash(err.message, true); }
+  };
+  document.querySelectorAll("[data-lang]").forEach((b) => (b.onclick = async () => {
+    const resend = $("#resend").checked;
+    try {
+      await call("PUT", "/lang", { lang: b.dataset.lang, resend });
+      data.lang = b.dataset.lang; render();
+      $("#lmsg").textContent = resend ? t.langResent : t.langSaved;
+      $("#lang").scrollIntoView();
+    } catch (err) { $("#lmsg").textContent = err.message; }
+  }));
+}
+
+function flash(msg, bad) { const m = $("#wmsg"); m.textContent = msg; m.className = bad ? "err" : "ok"; }
+
+function renderMine() {
+  const items = [...data.my_wishes.filter((w) => !w.obsolete), ...data.my_wishes.filter((w) => w.obsolete)];
+  const active = items.filter((w) => !w.obsolete).length;
+  $("#mine").innerHTML = items.map((w) => `<li class="${w.obsolete ? "obs" : ""}">
+      <div>${w.obsolete ? `<s>${esc(w.text)}</s> <span class="pill">${esc(t.reasonShort[w.reason] || t.obsoleteTag)}</span>`
+        : `${esc(w.text)}${link(w)}`}
+        <div class="hint">${w.sent ? esc(t.seen) : esc(t.notSeen)}</div></div>
+      <div class="acts">${w.obsolete ? `<button type="button" class="small secondary" data-restore="${esc(w.id)}">${esc(t.restore)}</button>`
+        : w.sent ? `<button type="button" class="small secondary" data-obs="${esc(w.id)}">${esc(t.obsoleteBtn)}</button>`
+        : `<button type="button" class="small secondary" data-del="${esc(w.id)}">${esc(t.remove)}</button>`}</div>
+    </li>`).join("");
+  const full = active >= data.max_wishes;
+  $("#addbtn").disabled = full;
+  if (full) flash(t.full(data.max_wishes));
+  const act = async (fn) => { try { const out = await fn(); data.my_wishes = out.my_wishes; renderMine(); flash(t.saved); } catch (err) { flash(err.message, true); } };
+  document.querySelectorAll("[data-del]").forEach((b) => (b.onclick = () =>
+    act(() => call("DELETE", `/wishes/${encodeURIComponent(b.dataset.del)}`))));
+  document.querySelectorAll("[data-restore]").forEach((b) => (b.onclick = () =>
+    act(() => call("POST", `/wishes/${encodeURIComponent(b.dataset.restore)}/obsolete`, { obsolete: false }))));
+  document.querySelectorAll("[data-obs]").forEach((b) => (b.onclick = () => {
+    const li = b.closest("li");
+    li.querySelector(".acts").innerHTML = `<select class="why" aria-label="${esc(t.whyObsolete)}">
+        ${Object.entries(t.reasons).map(([k, v]) => `<option value="${k}">${esc(v)}</option>`).join("")}</select>
+      <button type="button" class="small" data-go>${esc(t.confirm)}</button>
+      <button type="button" class="small secondary" data-cancel>${esc(t.cancel)}</button>`;
+    li.querySelector("[data-cancel]").onclick = renderMine;
+    li.querySelector("[data-go]").onclick = () => act(() => call("POST", `/wishes/${encodeURIComponent(b.dataset.obs)}/obsolete`,
+      { obsolete: true, reason: li.querySelector(".why").value }));
+  }));
+}
+
+(async () => {
+  try { data = await call("GET", ""); }
+  catch (err) {
+    const lang = navigator.language?.startsWith("hu") ? "hu" : "en";
+    $("#app").innerHTML = `<section class="card"><p>${esc(err.status === 404 ? T[lang].gone : err.message)}</p></section>`;
+    return;
+  }
+  render();
+  if (wantLang) $("#lang").scrollIntoView({ behavior: "smooth" });
+})();
+</script>
+</body>
+</html>
