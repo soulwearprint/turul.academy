@@ -66,3 +66,17 @@ def seal_receiver(master: bytes, year: int, giver_id: int, receiver_id: int) -> 
 def open_receiver(master: bytes, year: int, giver_id: int, sealed: str) -> int:
     blob = _unb64(sealed)
     return int(AESGCM(master).decrypt(blob[:12], blob[12:], _aad(year, giver_id)).decode())
+
+
+def wrap_with_kek(master: bytes, kek: bytes) -> str:
+    """Wrap the master key with a raw 256-bit key (used for SANTA_SERVER_KEY)."""
+    nonce = os.urandom(12)
+    return _b64(nonce + AESGCM(kek).encrypt(nonce, master, b"santa-server-key"))
+
+
+def unwrap_with_kek(wrapped_b64: str, kek: bytes) -> bytes:
+    blob = _unb64(wrapped_b64)
+    try:
+        return AESGCM(kek).decrypt(blob[:12], blob[12:], b"santa-server-key")
+    except InvalidTag as exc:
+        raise WrongPassword("SANTA_SERVER_KEY does not match this database") from exc

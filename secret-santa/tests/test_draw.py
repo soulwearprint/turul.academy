@@ -66,3 +66,30 @@ def test_everyone_selected_equals_full_redraw():
     plan = draw.partial_reshuffle(old, set(range(5)), selected=set(range(5)), rng=random.Random(1))
     assert plan.reshuffled == set(range(5))
     check(plan.pairing, range(5))
+
+
+def test_rules_respected_family_of_12():
+    people = list(range(12))
+    couples = [(0, 1), (2, 3), (4, 5), (6, 7), (8, 9)]
+    forbidden = {}
+    for a, b in couples:
+        forbidden.setdefault(a, set()).add(b)
+        forbidden.setdefault(b, set()).add(a)
+    last = draw.full_draw(people, random.Random(0), forbidden)
+    for g, r in last.items():
+        forbidden.setdefault(g, set()).add(r)
+    for seed in range(200):
+        p = draw.full_draw(people, random.Random(seed), forbidden)
+        draw.validate(p, set(people), forbidden)
+
+
+def test_impossible_rules_raise():
+    with pytest.raises(draw.DrawError):
+        draw.full_draw([0, 1], forbidden={0: {1}})
+
+
+def test_backtracking_finds_rare_solution():
+    # only one valid derangement of 0..5 is allowed: i -> i+1 mod 6
+    people = list(range(6))
+    forbidden = {g: {r for r in people if r != (g + 1) % 6} for g in people}
+    assert draw.full_draw(people, random.Random(1), forbidden) == {g: (g + 1) % 6 for g in people}

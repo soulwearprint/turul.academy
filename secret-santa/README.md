@@ -26,13 +26,61 @@ Tests: `pip install -r requirements-dev.txt && python -m pytest -q`
 | Requirement | Implementation |
 |---|---|
 | Family members with e-mails | **Family** tab. Removing someone who took part in a past year archives them, so history is kept. |
-| 1-to-1 random draw | Uniform random derangement: everyone gives once, receives once, never draws themselves (`app/draw.py`). |
-| Up to 5 admins, the first one mandatory | Created at setup; admins #2 to #5 are optional, and admin #1 cannot be removed. |
-| Admins can unlock the matches | **🔓 Unlock matches** asks for the password again and writes `MATCHES REVEALED` to the log, which every admin can see. |
+| 1-to-1 random draw | Uniformly random among all valid draws: everyone gives once, receives once, never draws themselves (`app/draw.py`). |
+| Couples never draw each other | **Family → Never draw each other**. Each rule works both ways and applies every year. |
+| No repeat of last year | On by default for each year (**Details** → *Nobody draws the same person as in the previous year's draw*). It compares against the most recent earlier year that has a draw. |
+| Postcard language | Hungarian by default. Set **English** per person in the Family tab. |
+| Up to 5 admins, the first one mandatory | Created at setup; admins #2 to #5 are optional, and admin #1 cannot be removed. See [Admins and sign-in](#admins-and-sign-in). |
+| Admins can unlock the matches | **🔓 Unlock matches** requires a fresh confirmation (password again, or a new Google sign-in) and writes `MATCHES REVEALED` to the log, which every admin can see. |
 | Results stored per year | One draw per year. New years start from the previous year's list. |
 | Participant list changes from year to year | Tick or untick people for each year. |
 | Confirmation of who gets reshuffled after a change | See [Changing the list after the draw](#changing-the-list-after-the-draw). |
 | Personal postcard e-mails | One message per person with a single `To:` address and no CC or BCC. The subject line never names the giftee, because subjects show on lock screens. The admin who presses *Send* never sees what the postcard says. |
+
+### Draw rules
+
+With 10 to 12 people, a few couples and the no-repeat rule, a valid draw nearly
+always exists. The app first samples uniformly at random. If that fails, it
+runs an exhaustive search, which settles whether any valid draw exists. If none
+does, it says so, for example: *"These rules make a draw impossible. Try
+removing an exclusion, or turn off 'avoid last year's match'."*
+
+If a rule is added **after** a draw, whoever now breaks it is redrawn at the
+next reshuffle. They are hidden in the same way as the people whose giftee
+left (see below).
+
+### Admins and sign-in
+
+An admin is a row in the **Admins** tab with a **name** and one or both of:
+
+- **Password.** At login, the admin types their name and password. Any
+  admin can add a new admin with an initial password, which the new admin
+  then changes under **Admins → Change my password**. The password never
+  leaves the server and is stored only as a scrypt-derived key that unlocks
+  the matches.
+- **Google account.** The admin clicks **Sign in with Google**. The app
+  accepts only verified Google e-mail addresses that are registered on an
+  admin row; anyone else is refused, and the refusal is logged. To unlock the
+  matches, Google asks the admin to sign in again (`prompt=login`), and that
+  confirmation is good for one unlock within 2 minutes.
+
+To set up Google sign-in:
+
+1. In [Google Cloud Console](https://console.cloud.google.com/), go to
+   *APIs & Services → Credentials → Create credentials → OAuth client ID*
+   and choose *Web application*.
+2. Set the *Authorised redirect URI* to `https://<your-host>/auth/google/callback`.
+3. On the *OAuth consent screen*, choose *External*. The scopes are only
+   `openid email profile`, which are non-sensitive and need no Google review.
+   While the app is in *Testing* status, only accounts listed as test users
+   can sign in, so add the admins there.
+4. Set `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `PUBLIC_URL`,
+   `SANTA_SERVER_KEY` and `SANTA_FIRST_ADMIN_EMAIL` (see `.env.example`).
+   Admin #1 is then created by signing in with that Google account.
+
+Google sign-in is not part of the automated tests against real Google. The
+tests replace Google's token endpoint with a stub, so try one real sign-in
+after setting it up.
 
 ### Secrecy model
 
@@ -41,6 +89,12 @@ Tests: `pip install -r requirements-dev.txt && python -m pytest -q`
   database file can't read who drew whom without an admin password.
 - While logged in, the unwrapped key is kept only in server memory. Restarting
   the server logs everyone out.
+- **With Google sign-in enabled**, the key is also wrapped with
+  `SANTA_SERVER_KEY`, an environment secret, because Google confirms who you
+  are but gives the app no secret to decrypt with. Reading the matches then
+  takes **the database plus that server secret**. So keep the secret out of
+  database backups, and don't lose it, or Google-only admins can no longer
+  open the matches (password admins still can).
 - **There is no password reset.** If every admin forgets their password, past
   matches can't be recovered, though new draws still work after re-setup on a
   fresh database. Add a second admin as a backup.

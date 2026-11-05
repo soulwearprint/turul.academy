@@ -5,7 +5,13 @@ const $ = (sel, el = document) => el.querySelector(sel);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const fmt = (iso) => (iso ? new Date(iso).toLocaleString() : "");
 
-const state = { status: null, tab: "years", year: null };
+const state = { status: null, tab: "years", year: null, hashError: "", revealYear: null };
+const LANG_LABEL = { hu: "🇭🇺 Magyar", en: "🇬🇧 English" };
+const langSelect = (cur = "hu") => `<select name="lang">${Object.entries(LANG_LABEL)
+  .map(([k, v]) => `<option value="${k}" ${k === cur ? "selected" : ""}>${v}</option>`).join("")}</select>`;
+const googleBtn = (label, href = "/auth/google/start?purpose=login") =>
+  `<a class="gbtn" href="${esc(href)}"><svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9 3.5l6.7-6.7C35.6 2.4 30.2 0 24 0 14.6 0 6.6 5.4 2.6 13.2l7.8 6.1C12.3 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.6 5.9c4.4-4.1 7-10.1 7-17.6z"/><path fill="#FBBC05" d="M10.4 28.7c-.5-1.5-.8-3-.8-4.7s.3-3.2.8-4.7l-7.8-6.1C.9 16.5 0 20.1 0 24s.9 7.5 2.6 10.8l7.8-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.6-5.9c-2.1 1.4-4.9 2.3-8.3 2.3-6.3 0-11.7-4.1-13.6-9.8l-7.8 6.1C6.6 42.6 14.6 48 24 48z"/></svg>${esc(label)}</a>`;
+
 try { state.tab = localStorage.getItem("santa.tab") || "years"; } catch (_) {}
 
 async function api(path, opts = {}) {
@@ -40,7 +46,15 @@ function dialog(bodyHtml, buttons) {
 const alertBox = (html) => dialog(html, [{ label: "OK", value: "ok" }]);
 
 /* ── Boot / auth screens ───────────────────────────────────────────────── */
+function readHash() {
+  const h = new URLSearchParams(location.hash.slice(1));
+  if (h.get("error")) state.hashError = h.get("error");
+  if (h.get("reveal")) state.revealYear = +h.get("reveal");
+  if (location.hash) history.replaceState(null, "", location.pathname);
+}
+
 async function boot() {
+  readHash();
   state.status = await api("/api/status", { noAuthRedirect: true });
   const s = state.status;
   $("#who").innerHTML = s.logged_in
@@ -50,6 +64,8 @@ async function boot() {
   if (!s.setup_done) return renderSetup();
   if (!s.logged_in) return renderLogin();
   renderMain();
+  if (state.hashError) { const m = state.hashError; state.hashError = ""; alertBox(`<p class="err">${esc(m)}</p>`); }
+  if (state.revealYear) { const y = state.revealYear; state.revealYear = null; state.year = y; showReveal({}); }
 }
 
 function renderSetup() {
@@ -59,6 +75,8 @@ function renderSetup() {
       <p class="muted">The first admin is mandatory. Admins manage the family list, run the draw,
       send the postcards and — only if really needed — can unlock who drew whom (every unlock is logged).
       You can add up to 4 more admins later.</p>
+      ${state.status.google_setup ? `<p>${googleBtn("Set up with Google")}</p>
+        <p class="hint">Only the Google account set as SANTA_FIRST_ADMIN_EMAIL on the server can do this.</p>` : `
       <form id="f">
         <div class="row">
           <div><label>Your name</label><input name="name" required maxlength="60"></div>
@@ -67,10 +85,11 @@ function renderSetup() {
         </div>
         <p class="hint">⚠️ There is no password reset: the matches are encrypted with the admins' passwords.
         Add a second admin later as a backup.</p>
-        <div class="err" id="err"></div>
-      </form>
+      </form>`}
+      <div class="err" id="err">${esc(state.hashError)}</div>
     </section>`;
-  $("#f").onsubmit = async (e) => {
+  state.hashError = "";
+  if ($("#f")) $("#f").onsubmit = async (e) => {
     e.preventDefault();
     const fd = new FormData(e.target);
     try { await api("/api/setup", { method: "POST", body: Object.fromEntries(fd) }); boot(); }
@@ -82,15 +101,17 @@ function renderLogin() {
   $("#app").innerHTML = `
     <section class="card">
       <h2>Admin login</h2>
+      ${state.status.google_enabled ? `<p>${googleBtn("Sign in with Google")}</p><p class="hint">…or with a name and password:</p>` : ""}
       <form id="f">
         <div class="row">
           <div><label>Admin name</label><input name="name" required autocomplete="username"></div>
           <div><label>Password</label><input name="password" type="password" required autocomplete="current-password"></div>
           <button>Log in</button>
         </div>
-        <div class="err" id="err"></div>
+        <div class="err" id="err">${esc(state.hashError)}</div>
       </form>
     </section>`;
+  state.hashError = "";
   $("#f").onsubmit = async (e) => {
     e.preventDefault();
     try { await api("/api/login", { method: "POST", body: Object.fromEntries(new FormData(e.target)), noAuthRedirect: true }); boot(); }
@@ -121,10 +142,10 @@ function renderMain() {
 
 /* ── Family ────────────────────────────────────────────────────────────── */
 async function viewFamily() {
-  const members = await api("/api/members");
+  const [members, exclusions] = await Promise.all([api("/api/members"), api("/api/exclusions")]);
   const active = members.filter((m) => !m.archived), archived = members.filter((m) => m.archived);
   const rowHtml = (m) => `<tr>
-      <td>${esc(m.name)}</td><td>${esc(m.email)}</td>
+      <td>${esc(m.name)}</td><td>${esc(m.email)}</td><td>${LANG_LABEL[m.lang] || ""}</td>
       <td style="text-align:right;white-space:nowrap">
         <button class="small secondary" data-edit="${m.id}">${m.archived ? "Restore / edit" : "Edit"}</button>
         ${m.archived ? "" : `<button class="small secondary" data-del="${m.id}">Remove</button>`}
@@ -135,14 +156,40 @@ async function viewFamily() {
       <form id="add" class="row">
         <div><label>Name</label><input name="name" required maxlength="80"></div>
         <div><label>E-mail (only this person should read it)</label><input name="email" type="email" required></div>
+        <div style="flex:0 1 140px"><label>Postcard</label>${langSelect()}</div>
         <button>Add</button>
       </form>
       <div class="err" id="err"></div>
-      <table style="margin-top:14px"><thead><tr><th>Name</th><th>E-mail</th><th></th></tr></thead>
-        <tbody>${active.map(rowHtml).join("") || `<tr><td colspan="3" class="muted">Nobody yet.</td></tr>`}</tbody></table>
+      <table style="margin-top:14px"><thead><tr><th>Name</th><th>E-mail</th><th>Postcard</th><th></th></tr></thead>
+        <tbody>${active.map(rowHtml).join("") || `<tr><td colspan="4" class="muted">Nobody yet.</td></tr>`}</tbody></table>
       ${archived.length ? `<h3 class="muted">Archived (kept for past years)</h3>
         <table><tbody>${archived.map(rowHtml).join("")}</tbody></table>` : ""}
+    </section>
+    <section class="card">
+      <h2>💑 Never draw each other</h2>
+      <p class="muted">For couples (or anyone who shouldn't draw each other). Works both ways, every year.</p>
+      <form id="excl" class="row">
+        <div><label>Person</label><select name="a">${active.map((m) => `<option value="${m.id}">${esc(m.name)}</option>`).join("")}</select></div>
+        <div><label>and</label><select name="b">${active.map((m, i) => `<option value="${m.id}" ${i === 1 ? "selected" : ""}>${esc(m.name)}</option>`).join("")}</select></div>
+        <button class="secondary">Add rule</button>
+      </form>
+      <div class="err" id="exerr"></div>
+      <table style="margin-top:10px"><tbody>
+        ${exclusions.map((x) => `<tr><td>${esc(x.a_name)} ↔ ${esc(x.b_name)}</td>
+          <td style="text-align:right"><button class="small secondary" data-unex="${x.a_id}-${x.b_id}">Remove</button></td></tr>`).join("")
+          || `<tr><td class="muted">No rules yet.</td></tr>`}
+      </tbody></table>
     </section>`;
+  $("#excl").onsubmit = async (e) => {
+    e.preventDefault();
+    const f = new FormData(e.target);
+    try { await api("/api/exclusions", { method: "POST", body: { a_id: +f.get("a"), b_id: +f.get("b") } }); viewFamily(); }
+    catch (err) { $("#exerr").textContent = err.message; }
+  };
+  document.querySelectorAll("[data-unex]").forEach((b) => (b.onclick = async () => {
+    const [a, c] = b.dataset.unex.split("-");
+    await api(`/api/exclusions/${a}/${c}`, { method: "DELETE" }); viewFamily();
+  }));
   $("#add").onsubmit = async (e) => {
     e.preventDefault();
     try { await api("/api/members", { method: "POST", body: Object.fromEntries(new FormData(e.target)) }); viewFamily(); }
@@ -152,7 +199,8 @@ async function viewFamily() {
     const m = members.find((x) => x.id == b.dataset.edit);
     const r = await dialog(`<h2>Edit ${esc(m.name)}</h2>
       <label>Name</label><input name="name" value="${esc(m.name)}" required>
-      <label>E-mail</label><input name="email" type="email" value="${esc(m.email)}" required>`,
+      <label>E-mail</label><input name="email" type="email" value="${esc(m.email)}" required>
+      <label>Postcard language</label>${langSelect(m.lang)}`,
       [{ label: "Cancel", value: "", cls: "secondary", formnovalidate: true }, { label: "Save", value: "save" }]);
     if (r.action !== "save") return;
     try { await api(`/api/members/${m.id}`, { method: "PUT", body: Object.fromEntries(new FormData(r.form)) }); }
@@ -177,23 +225,26 @@ async function viewAdmins() {
       <h2>Admins (${admins.length}/5)</h2>
       <p class="muted">Admins can manage everything and unlock the matches. Admin #1 is permanent.
         Each unlock is recorded in the log, so everyone can see if somebody peeked.</p>
-      <table><thead><tr><th>#</th><th>Name</th><th>Since</th><th></th></tr></thead><tbody>
+      <table><thead><tr><th>#</th><th>Name</th><th>Signs in with</th><th></th></tr></thead><tbody>
         ${admins.map((a) => `<tr><td>${a.slot}</td><td>${esc(a.name)}${a.slot === 1 ? ' <span class="pill">mandatory</span>' : ""}</td>
-          <td class="muted">${fmt(a.created_at)}</td>
-          <td style="text-align:right">${a.slot === 1 ? "" : `<button class="small secondary" data-del="${a.id}">Remove</button>`}</td></tr>`).join("")}
+          <td>${a.google_email ? `<span class="pill ok">Google: ${esc(a.google_email)}</span> ` : ""}${a.has_password ? '<span class="pill">password</span>' : ""}</td>
+          <td style="text-align:right;white-space:nowrap"><button class="small secondary" data-google="${a.id}">Google e-mail</button>
+            ${a.slot === 1 ? "" : `<button class="small secondary" data-del="${a.id}">Remove</button>`}</td></tr>`).join("")}
       </tbody></table>
       ${admins.length < 5 ? `<h3>Add an admin</h3>
         <form id="add" class="row">
           <div><label>Name</label><input name="name" required maxlength="60"></div>
-          <div><label>Initial password (they should change it)</label><input name="password" type="password" minlength="6" required></div>
+          <div><label>Google e-mail${state.status.google_enabled ? "" : " (Google sign-in not configured)"}</label><input name="google_email" type="email" placeholder="name@gmail.com"></div>
+          <div><label>…and/or initial password</label><input name="password" type="password" minlength="6"></div>
           <button>Add admin</button>
-        </form>` : ""}
+        </form>
+        <p class="hint">Fill in at least one. With Google, the admin just signs in with that Google account — no password to share.</p>` : ""}
       <div class="err" id="err"></div>
     </section>
     <section class="card">
-      <h2>Change my password</h2>
+      <h2>${state.status.admin.has_password ? "Change my password" : "Set a backup password"}</h2>
       <form id="pw" class="row">
-        <div><label>Current password</label><input name="current" type="password" required></div>
+        ${state.status.admin.has_password ? `<div><label>Current password</label><input name="current" type="password" required></div>` : ""}
         <div><label>New password</label><input name="new" type="password" minlength="6" required></div>
         <button>Change</button>
       </form>
@@ -207,9 +258,19 @@ async function viewAdmins() {
   $("#pw").onsubmit = async (e) => {
     e.preventDefault();
     try { await api("/api/admins/me/password", { method: "POST", body: Object.fromEntries(new FormData(e.target)) });
-      e.target.reset(); $("#pwmsg").textContent = "Password changed."; }
+      e.target.reset(); $("#pwmsg").textContent = "Password saved."; state.status = await api("/api/status"); }
     catch (err) { $("#pwmsg").textContent = err.message; }
   };
+  document.querySelectorAll("[data-google]").forEach((b) => (b.onclick = async () => {
+    const a = admins.find((x) => x.id == b.dataset.google);
+    const r = await dialog(`<h2>Google account for ${esc(a.name)}</h2>
+      <label>Google e-mail (empty = remove)</label><input name="google_email" type="email" value="${esc(a.google_email)}">`,
+      [{ label: "Cancel", value: "", cls: "secondary", formnovalidate: true }, { label: "Save", value: "save" }]);
+    if (r.action !== "save") return;
+    try { await api(`/api/admins/${a.id}/google`, { method: "PUT", body: { google_email: r.form.elements.google_email.value } }); }
+    catch (err) { await alertBox(`<p class="err">${esc(err.message)}</p>`); }
+    viewAdmins();
+  }));
   document.querySelectorAll("[data-del]").forEach((b) => (b.onclick = async () => {
     const r = await dialog(`<h2>Remove this admin?</h2>`, [{ label: "Cancel", value: "", cls: "secondary" }, { label: "Remove", value: "del" }]);
     if (r.action === "del") { await api(`/api/admins/${b.dataset.del}`, { method: "DELETE" }); viewAdmins(); }
@@ -308,7 +369,9 @@ async function renderYear() {
           : p.notified_at ? `<span class="pill ok">sent ${fmt(p.notified_at)}</span>` : '<span class="pill wait">not sent</span>'}</td>
         <td style="text-align:right">${p.has_match && y.in_sync ? `<button class="small secondary" data-send="${p.id}">${p.notified_at ? "Resend" : "Send"}</button>` : ""}</td></tr>`).join("")}
       </tbody></table>
-      <p class="hint"><a href="/api/postcard/preview" target="_blank" rel="noopener">Preview the postcard design</a> (sample names only)</p>
+      <p class="hint">Preview the postcard (sample names only):
+        <a href="/api/postcard/preview?lang=hu" target="_blank" rel="noopener">magyar</a> ·
+        <a href="/api/postcard/preview?lang=en" target="_blank" rel="noopener">English</a></p>
     </section>` : ""}
 
     <section class="card">
@@ -318,7 +381,11 @@ async function renderYear() {
           <div><label>Gift budget</label><input name="budget" value="${esc(y.budget)}" placeholder="e.g. €30"></div>
           <div><label>Gift exchange</label><input name="exchange_date" value="${esc(y.exchange_date)}" placeholder="e.g. 24 Dec, at Grandma's"></div>
         </div>
-        <label>Extra note from Santa (optional)</label><textarea name="note" rows="2" maxlength="600">${esc(y.note)}</textarea>
+        <label>Extra note from Santa (optional, shown as written)</label><textarea name="note" rows="2" maxlength="600">${esc(y.note)}</textarea>
+        <label style="display:flex;gap:8px;align-items:center;color:inherit;margin-top:10px">
+          <input type="checkbox" name="avoid_repeat" style="width:auto" ${y.avoid_repeat ? "checked" : ""}>
+          Nobody draws the same person as in the previous year's draw</label>
+        <p class="hint">Rules apply to the next draw or reshuffle. "Never draw each other" pairs are in the Family tab.</p>
         <div class="actions"><button class="secondary">Save details</button><span id="dmsg" class="hint"></span></div>
       </form>
       <p class="hint" style="margin-top:14px"><button class="small secondary" id="dely">Delete ${y.year}</button></p>
@@ -326,7 +393,9 @@ async function renderYear() {
 
   $("#details").onsubmit = async (e) => {
     e.preventDefault();
-    await api(`/api/years/${y.year}`, { method: "PUT", body: Object.fromEntries(new FormData(e.target)) });
+    const body = Object.fromEntries(new FormData(e.target));
+    body.avoid_repeat = e.target.elements.avoid_repeat.checked;
+    await api(`/api/years/${y.year}`, { method: "PUT", body });
     $("#dmsg").textContent = "Saved.";
   };
   $("#parts").onsubmit = async (e) => {
@@ -408,13 +477,22 @@ async function sendPostcards(ids) {
 }
 
 async function revealDialog() {
+  const me = state.status.admin;
+  const canGoogle = state.status.google_enabled && me.google_email;
   const r = await dialog(`<h2>🔓 Unlock the matches for ${state.year}?</h2>
     <p>This shows who drew whom — the secret is spoiled for you. It is recorded in the log, visible to all admins.</p>
-    <label>Re-enter your password</label><input name="password" type="password" required autocomplete="current-password">`,
-    [{ label: "Cancel", value: "", cls: "secondary", formnovalidate: true }, { label: "Unlock", value: "go" }]);
+    ${canGoogle ? `<p>${googleBtn("Confirm with Google", `/auth/google/start?purpose=reveal&year=${state.year}`)}</p>` : ""}
+    ${me.has_password ? `<label>${canGoogle ? "…or re-enter" : "Re-enter"} your password</label>
+      <input name="password" type="password" ${canGoogle ? "" : "required"} autocomplete="current-password">` : ""}`,
+    [{ label: "Cancel", value: "", cls: "secondary", formnovalidate: true },
+     ...(me.has_password ? [{ label: "Unlock", value: "go" }] : [])]);
   if (r.action !== "go") return;
+  await showReveal({ password: r.form.elements.password.value });
+}
+
+async function showReveal(body) {
   let pairs;
-  try { pairs = await api(`/api/years/${state.year}/reveal`, { method: "POST", body: { password: r.form.elements.password.value } }); }
+  try { pairs = await api(`/api/years/${state.year}/reveal`, { method: "POST", body }); }
   catch (err) { return alertBox(`<p class="err">${esc(err.message)}</p>`); }
   await alertBox(`<h2>Matches ${state.year}</h2>
     <table class="reveal"><thead><tr><th>Secret Santa</th><th>gives to</th></tr></thead><tbody>

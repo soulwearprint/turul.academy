@@ -50,6 +50,19 @@ CREATE TABLE IF NOT EXISTS pairings (
     PRIMARY KEY (year, giver_id)
 );
 
+-- symmetric "never draw each other" rule, e.g. couples (a_id < b_id)
+CREATE TABLE IF NOT EXISTS exclusions (
+    a_id INTEGER NOT NULL REFERENCES members(id) ON DELETE CASCADE,
+    b_id INTEGER NOT NULL REFERENCES members(id) ON DELETE CASCADE,
+    PRIMARY KEY (a_id, b_id),
+    CHECK (a_id < b_id)
+);
+
+CREATE TABLE IF NOT EXISTS settings (
+    key   TEXT PRIMARY KEY,
+    value TEXT NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS audit_log (
     id         INTEGER PRIMARY KEY,
     at         TEXT NOT NULL,
@@ -68,11 +81,35 @@ def db_path() -> Path:
     return Path(os.environ.get("SANTA_DB", Path(__file__).resolve().parent.parent / "data" / "santa.db"))
 
 
+# Columns added after the first version: (table, column, definition).
+# key_salt = '' on an admin means "no password, Google sign-in only".
+MIGRATIONS = [
+    ("admins", "google_email", "TEXT"),
+    ("members", "lang", "TEXT NOT NULL DEFAULT 'hu'"),
+    ("years", "avoid_repeat", "INTEGER NOT NULL DEFAULT 1"),
+]
+
+
 def init() -> None:
     path = db_path()
     path.parent.mkdir(parents=True, exist_ok=True)
     with connect() as conn:
         conn.executescript(SCHEMA)
+        for table, col, definition in MIGRATIONS:
+            cols = {r["name"] for r in conn.execute(f"PRAGMA table_info({table})")}
+            if col not in cols:
+                conn.execute(f"ALTER TABLE {table} ADD COLUMN {col} {definition}")
+        conn.execute("CREATE UNIQUE INDEX IF NOT EXISTS admins_google_email ON admins (google_email COLLATE NOCASE)")
+
+
+def get_setting(conn: sqlite3.Connection, key: str) -> str | None:
+    row = conn.execute("SELECT value FROM settings WHERE key = ?", (key,)).fetchone()
+    return row["value"] if row else None
+
+
+def set_setting(conn: sqlite3.Connection, key: str, value: str) -> None:
+    conn.execute("INSERT INTO settings (key, value) VALUES (?, ?) ON CONFLICT (key) DO UPDATE SET value = excluded.value",
+                 (key, value))
 
 
 @contextmanager

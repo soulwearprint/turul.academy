@@ -11,13 +11,14 @@ import time
 from contextlib import asynccontextmanager
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Literal
 
 from fastapi import Depends, FastAPI, HTTPException, Request, Response
-from fastapi.responses import FileResponse, HTMLResponse
+from fastapi.responses import FileResponse, HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from . import crypto, db, draw, mailer
+from . import crypto, db, draw, google_auth, mailer
 
 MAX_ADMINS = 5
 SESSION_TTL = 30 * 60  # seconds, sliding
@@ -46,15 +47,26 @@ class Session:
     admin_name: str
     key: bytes
     expires: float
+    reauth_until: float = 0.0  # set by a fresh Google sign-in; allows one unlock
 
 
 _sessions: dict[str, Session] = {}
+_oauth_pending: dict[str, dict] = {}  # state -> {nonce, purpose, year, session, expires}
+OAUTH_COOKIE = "santa_oauth"
+SERVER_COPY = "server_wrapped_key"
 
 
 def _new_session(admin_id: int, name: str, key: bytes) -> str:
     token = secrets.token_urlsafe(32)
     _sessions[token] = Session(admin_id, name, key, time.time() + SESSION_TTL)
     return token
+
+
+def _ensure_server_copy(conn, key: bytes) -> None:
+    """With Google sign-in enabled, keep a copy of the master key wrapped with
+    SANTA_SERVER_KEY so Google-only admins can work with the matches."""
+    if google_auth.enabled() and not db.get_setting(conn, SERVER_COPY):
+        db.set_setting(conn, SERVER_COPY, crypto.wrap_with_kek(key, google_auth.server_kek()))
 
 
 def _set_cookie(resp: Response, token: str) -> None:
@@ -76,6 +88,8 @@ def _check_password(conn, admin_id: int, password: str) -> bytes:
     row = conn.execute("SELECT key_salt, wrapped_key FROM admins WHERE id = ?", (admin_id,)).fetchone()
     if not row:
         raise HTTPException(401, "Unknown admin.")
+    if not row["key_salt"]:
+        raise HTTPException(403, "This admin has no password and signs in with Google.")
     try:
         return crypto.unwrap_key(row["key_salt"], row["wrapped_key"], password)
     except crypto.WrongPassword:
@@ -84,9 +98,21 @@ def _check_password(conn, admin_id: int, password: str) -> bytes:
 
 # ─── Models ────────────────────────────────────────────────────────────────
 
-class AdminIn(BaseModel):
+class SetupIn(BaseModel):
     name: str = Field(min_length=1, max_length=60)
     password: str = Field(min_length=6, max_length=200)
+    google_email: str = Field(default="", max_length=200)
+
+
+class AdminIn(BaseModel):
+    """A new admin signs in with a password, with Google, or with both."""
+    name: str = Field(min_length=1, max_length=60)
+    password: str = Field(default="", max_length=200)
+    google_email: str = Field(default="", max_length=200)
+
+
+class AdminGoogleIn(BaseModel):
+    google_email: str = Field(default="", max_length=200)
 
 
 class LoginIn(BaseModel):
@@ -95,13 +121,19 @@ class LoginIn(BaseModel):
 
 
 class PasswordChangeIn(BaseModel):
-    current: str
+    current: str = ""  # empty when setting a first password for a Google-only admin
     new: str = Field(min_length=6, max_length=200)
 
 
 class MemberIn(BaseModel):
     name: str = Field(min_length=1, max_length=80)
     email: str = Field(min_length=3, max_length=200)
+    lang: Literal["hu", "en"] = "hu"  # postcard language
+
+
+class ExclusionIn(BaseModel):
+    a_id: int
+    b_id: int
 
 
 class YearIn(BaseModel):
@@ -112,6 +144,7 @@ class YearDetailsIn(BaseModel):
     budget: str = Field(default="", max_length=80)
     exchange_date: str = Field(default="", max_length=80)
     note: str = Field(default="", max_length=600)
+    avoid_repeat: bool = True  # nobody draws the same person as last year
 
 
 class ParticipantsIn(BaseModel):
@@ -129,7 +162,7 @@ class NotifyIn(BaseModel):
 
 
 class RevealIn(BaseModel):
-    password: str
+    password: str = ""  # or empty right after a fresh Google sign-in
 
 
 # ─── Setup / auth ──────────────────────────────────────────────────────────
@@ -138,28 +171,37 @@ class RevealIn(BaseModel):
 def status(request: Request):
     with db.connect() as conn:
         n_admins = conn.execute("SELECT COUNT(*) FROM admins").fetchone()[0]
-    s = _sessions.get(request.cookies.get(COOKIE, ""))
-    logged = bool(s and s.expires > time.time())
+        s = _sessions.get(request.cookies.get(COOKIE, ""))
+        logged = bool(s and s.expires > time.time())
+        me = conn.execute("SELECT key_salt, google_email FROM admins WHERE id = ?", (s.admin_id,)).fetchone() if logged else None
     return {
         "setup_done": n_admins > 0,
         "logged_in": logged,
-        "admin": {"id": s.admin_id, "name": s.admin_name} if logged else None,
+        "admin": {"id": s.admin_id, "name": s.admin_name, "has_password": bool(me and me["key_salt"]),
+                  "google_email": (me and me["google_email"]) or ""} if logged and me else None,
         "mail_mode": mailer.mode(),
+        "google_enabled": google_auth.enabled(),
+        "google_setup": google_auth.enabled() and bool(os.environ.get("SANTA_FIRST_ADMIN_EMAIL", "").strip()),
     }
 
 
 @app.post("/api/setup")
-def setup(body: AdminIn, response: Response):
+def setup(body: SetupIn, response: Response):
     """Create the first (mandatory) admin and the master key. Only works once."""
+    first = os.environ.get("SANTA_FIRST_ADMIN_EMAIL", "").strip().lower()
+    if first:
+        raise HTTPException(403, "Setup is reserved for the configured first admin: use Sign in with Google.")
+    gmail = _clean_google(body.google_email)
     with db.connect() as conn:
         if conn.execute("SELECT COUNT(*) FROM admins").fetchone()[0]:
             raise HTTPException(409, "Setup already done.")
         key = crypto.new_master_key()
         salt, wrapped = crypto.wrap_key(key, body.password)
         cur = conn.execute(
-            "INSERT INTO admins (slot, name, key_salt, wrapped_key, created_at) VALUES (1, ?, ?, ?, ?)",
-            (body.name.strip(), salt, wrapped, db.now()),
+            "INSERT INTO admins (slot, name, key_salt, wrapped_key, google_email, created_at) VALUES (1, ?, ?, ?, ?, ?)",
+            (body.name.strip(), salt, wrapped, gmail, db.now()),
         )
+        _ensure_server_copy(conn, key)
         db.audit(conn, body.name.strip(), "setup", "first admin created")
         token = _new_session(cur.lastrowid, body.name.strip(), key)
     _set_cookie(response, token)
@@ -176,6 +218,7 @@ def login(body: LoginIn, response: Response):
             key = _check_password(conn, row["id"], body.password)
         except HTTPException:
             raise HTTPException(403, "Wrong name or password.")
+        _ensure_server_copy(conn, key)
         db.audit(conn, row["name"], "login")
     _set_cookie(response, _new_session(row["id"], row["name"], key))
     return {"ok": True}
@@ -188,13 +231,118 @@ def logout(request: Request, response: Response):
     return {"ok": True}
 
 
+# ─── Google sign-in ────────────────────────────────────────────────────────
+
+def _clean_google(email: str) -> str | None:
+    email = (email or "").strip().lower()
+    if not email:
+        return None
+    if not EMAIL_RE.match(email):
+        raise HTTPException(422, "That does not look like a Google account e-mail.")
+    return email
+
+
+def _server_key(conn) -> bytes:
+    wrapped = db.get_setting(conn, SERVER_COPY)
+    if not wrapped:
+        raise HTTPException(409, "Google sign-in is not ready yet: a password admin must log in once first.")
+    return crypto.unwrap_with_kek(wrapped, google_auth.server_kek())
+
+
+@app.get("/auth/google/start", include_in_schema=False)
+def google_start(request: Request, purpose: Literal["login", "reveal"] = "login", year: int = 0):
+    if not google_auth.enabled():
+        raise HTTPException(404, "Google sign-in is not configured.")
+    session_token = ""
+    hint = ""
+    if purpose == "reveal":
+        s = current(request)  # same-site request, so the session cookie is present
+        session_token = request.cookies.get(COOKIE, "")
+        with db.connect() as conn:
+            row = conn.execute("SELECT google_email FROM admins WHERE id = ?", (s.admin_id,)).fetchone()
+        hint = (row and row["google_email"]) or ""
+        if not hint:
+            raise HTTPException(400, "Your admin account has no Google e-mail.")
+    for k, v in list(_oauth_pending.items()):
+        if v["expires"] < time.time():
+            _oauth_pending.pop(k, None)
+    state, nonce = secrets.token_urlsafe(24), secrets.token_urlsafe(24)
+    _oauth_pending[state] = {"nonce": nonce, "purpose": purpose, "year": year,
+                             "session": session_token, "expires": time.time() + 600}
+    resp = RedirectResponse(google_auth.authorization_url(state, nonce, reauth=purpose == "reveal", login_hint=hint))
+    # Lax (not Strict) so the cookie survives the top-level redirect back from Google.
+    resp.set_cookie(OAUTH_COOKIE, state, httponly=True, samesite="lax", max_age=600,
+                    secure=os.environ.get("SANTA_SECURE_COOKIE", "0") == "1")
+    return resp
+
+
+def _google_fail(msg: str) -> RedirectResponse:
+    from urllib.parse import quote
+    resp = RedirectResponse(f"/#error={quote(msg)}", status_code=303)
+    resp.delete_cookie(OAUTH_COOKIE)
+    return resp
+
+
+@app.get("/auth/google/callback", include_in_schema=False)
+def google_callback(request: Request, state: str = "", code: str = "", error: str = ""):
+    pending = _oauth_pending.pop(state, None)
+    if error:
+        return _google_fail("Google sign-in was cancelled.")
+    if not pending or pending["expires"] < time.time() or request.cookies.get(OAUTH_COOKIE) != state:
+        return _google_fail("Sign-in link expired. Please try again.")
+    try:
+        claims = google_auth.verify_claims(google_auth.exchange_code(code), pending["nonce"],
+                                           require_fresh=pending["purpose"] == "reveal")
+    except (google_auth.GoogleAuthError, KeyError) as exc:
+        return _google_fail(str(exc))
+    email = claims["email"].strip().lower()
+
+    with db.connect() as conn:
+        admin = conn.execute("SELECT id, name FROM admins WHERE google_email = ?", (email,)).fetchone()
+
+        if pending["purpose"] == "reveal":
+            s = _sessions.get(pending["session"])
+            if not s or not admin or admin["id"] != s.admin_id:
+                return _google_fail("Please confirm with the Google account of the admin who is logged in.")
+            s.reauth_until = time.time() + google_auth.REAUTH_MAX_AGE
+            resp = RedirectResponse(f"/#reveal={int(pending['year'])}", status_code=303)
+            resp.delete_cookie(OAUTH_COOKIE)
+            return resp
+
+        n_admins = conn.execute("SELECT COUNT(*) FROM admins").fetchone()[0]
+        if not admin and n_admins == 0:
+            first = os.environ.get("SANTA_FIRST_ADMIN_EMAIL", "").strip().lower()
+            if first != email:  # unset = Google setup disabled, so nobody can grab slot 1
+                return _google_fail("Only the configured first admin can set up this app.")
+            key = crypto.new_master_key()
+            name = (claims.get("given_name") or claims.get("name") or email.split("@")[0])[:60]
+            cur = conn.execute(
+                "INSERT INTO admins (slot, name, key_salt, wrapped_key, google_email, created_at) VALUES (1, ?, '', '', ?, ?)",
+                (name, email, db.now()),
+            )
+            _ensure_server_copy(conn, key)
+            db.audit(conn, name, "setup", f"first admin created via Google ({email})")
+            admin = {"id": cur.lastrowid, "name": name}
+        elif not admin:
+            db.audit(conn, email, "REJECTED Google sign-in", "not an admin")
+            return _google_fail(f"{email} is not an admin of this Secret Santa.")
+        else:
+            key = _server_key(conn)
+            db.audit(conn, admin["name"], "login", "Google")
+    resp = RedirectResponse("/", status_code=303)
+    resp.delete_cookie(OAUTH_COOKIE)
+    _set_cookie(resp, _new_session(admin["id"], admin["name"], key))
+    return resp
+
+
 # ─── Admins (max 5; slot 1 is mandatory and permanent) ─────────────────────
 
 @app.get("/api/admins")
 def list_admins(s: Session = Depends(current)):
     with db.connect() as conn:
-        rows = conn.execute("SELECT id, slot, name, created_at FROM admins ORDER BY slot").fetchall()
-    return [dict(r) for r in rows]
+        rows = conn.execute("SELECT id, slot, name, google_email, key_salt != '' AS has_password, created_at "
+                            "FROM admins ORDER BY slot").fetchall()
+    return [{**dict(r), "google_email": r["google_email"] or "", "has_password": bool(r["has_password"])} for r in rows]
 
 
 @app.post("/api/admins")
@@ -206,11 +354,20 @@ def add_admin(body: AdminIn, s: Session = Depends(current)):
             raise HTTPException(409, f"Maximum of {MAX_ADMINS} admins reached.")
         if conn.execute("SELECT 1 FROM admins WHERE name = ?", (body.name.strip(),)).fetchone():
             raise HTTPException(409, "An admin with this name already exists.")
-        salt, wrapped = crypto.wrap_key(s.key, body.password)
+        gmail = _clean_google(body.google_email)
+        if not body.password and not gmail:
+            raise HTTPException(422, "Give the new admin a password, a Google e-mail, or both.")
+        if body.password and len(body.password) < 6:
+            raise HTTPException(422, "Passwords need at least 6 characters.")
+        if gmail and conn.execute("SELECT 1 FROM admins WHERE google_email = ?", (gmail,)).fetchone():
+            raise HTTPException(409, "That Google account is already an admin.")
+        salt, wrapped = crypto.wrap_key(s.key, body.password) if body.password else ("", "")
         conn.execute(
-            "INSERT INTO admins (slot, name, key_salt, wrapped_key, created_at) VALUES (?, ?, ?, ?, ?)",
-            (free[0], body.name.strip(), salt, wrapped, db.now()),
+            "INSERT INTO admins (slot, name, key_salt, wrapped_key, google_email, created_at) VALUES (?, ?, ?, ?, ?, ?)",
+            (free[0], body.name.strip(), salt, wrapped, gmail, db.now()),
         )
+        if gmail:
+            _ensure_server_copy(conn, s.key)
         db.audit(conn, s.admin_name, "admin added", body.name.strip())
     return {"ok": True}
 
@@ -231,10 +388,29 @@ def remove_admin(admin_id: int, s: Session = Depends(current)):
     return {"ok": True}
 
 
+@app.put("/api/admins/{admin_id}/google")
+def set_admin_google(admin_id: int, body: AdminGoogleIn, s: Session = Depends(current)):
+    gmail = _clean_google(body.google_email)
+    with db.connect() as conn:
+        row = conn.execute("SELECT name, key_salt FROM admins WHERE id = ?", (admin_id,)).fetchone()
+        if not row:
+            raise HTTPException(404, "No such admin.")
+        if not gmail and not row["key_salt"]:
+            raise HTTPException(400, "This admin has no password, so the Google e-mail can't be removed.")
+        if gmail and conn.execute("SELECT 1 FROM admins WHERE google_email = ? AND id != ?", (gmail, admin_id)).fetchone():
+            raise HTTPException(409, "That Google account is already an admin.")
+        conn.execute("UPDATE admins SET google_email = ? WHERE id = ?", (gmail, admin_id))
+        if gmail:
+            _ensure_server_copy(conn, s.key)
+        db.audit(conn, s.admin_name, "admin Google e-mail changed", f"{row['name']}: {gmail or '(removed)'}")
+    return {"ok": True}
+
+
 @app.post("/api/admins/me/password")
 def change_password(body: PasswordChangeIn, s: Session = Depends(current)):
     with db.connect() as conn:
-        key = _check_password(conn, s.admin_id, body.current)
+        has_pw = conn.execute("SELECT key_salt FROM admins WHERE id = ?", (s.admin_id,)).fetchone()["key_salt"]
+        key = _check_password(conn, s.admin_id, body.current) if has_pw else s.key
         salt, wrapped = crypto.wrap_key(key, body.new)
         conn.execute("UPDATE admins SET key_salt = ?, wrapped_key = ? WHERE id = ?", (salt, wrapped, s.admin_id))
         db.audit(conn, s.admin_name, "password changed")
@@ -243,34 +419,36 @@ def change_password(body: PasswordChangeIn, s: Session = Depends(current)):
 
 # ─── Family members ────────────────────────────────────────────────────────
 
-def _clean_member(body: MemberIn) -> tuple[str, str]:
+def _clean_member(body: MemberIn) -> tuple[str, str, str]:
     email = body.email.strip()
     if not EMAIL_RE.match(email):
         raise HTTPException(422, "That does not look like an e-mail address.")
-    return body.name.strip(), email
+    return body.name.strip(), email, body.lang
 
 
 @app.get("/api/members")
 def list_members(s: Session = Depends(current)):
     with db.connect() as conn:
-        rows = conn.execute("SELECT id, name, email, archived FROM members ORDER BY archived, name COLLATE NOCASE").fetchall()
+        rows = conn.execute("SELECT id, name, email, lang, archived FROM members ORDER BY archived, name COLLATE NOCASE").fetchall()
     return [dict(r) for r in rows]
 
 
 @app.post("/api/members")
 def add_member(body: MemberIn, s: Session = Depends(current)):
-    name, email = _clean_member(body)
+    name, email, lang = _clean_member(body)
     with db.connect() as conn:
-        cur = conn.execute("INSERT INTO members (name, email, created_at) VALUES (?, ?, ?)", (name, email, db.now()))
+        cur = conn.execute("INSERT INTO members (name, email, lang, created_at) VALUES (?, ?, ?, ?)",
+                           (name, email, lang, db.now()))
         db.audit(conn, s.admin_name, "member added", name)
     return {"id": cur.lastrowid}
 
 
 @app.put("/api/members/{member_id}")
 def edit_member(member_id: int, body: MemberIn, s: Session = Depends(current)):
-    name, email = _clean_member(body)
+    name, email, lang = _clean_member(body)
     with db.connect() as conn:
-        if not conn.execute("UPDATE members SET name = ?, email = ?, archived = 0 WHERE id = ?", (name, email, member_id)).rowcount:
+        if not conn.execute("UPDATE members SET name = ?, email = ?, lang = ?, archived = 0 WHERE id = ?",
+                            (name, email, lang, member_id)).rowcount:
             raise HTTPException(404, "No such member.")
         db.audit(conn, s.admin_name, "member edited", name)
     return {"ok": True}
@@ -293,6 +471,58 @@ def delete_member(member_id: int, s: Session = Depends(current)):
             conn.execute("DELETE FROM members WHERE id = ?", (member_id,))
         db.audit(conn, s.admin_name, "member archived" if used else "member deleted", row["name"])
     return {"archived": bool(used)}
+
+
+# ─── Exclusions (e.g. couples never draw each other) ───────────────────────
+
+@app.get("/api/exclusions")
+def list_exclusions(s: Session = Depends(current)):
+    with db.connect() as conn:
+        rows = conn.execute(
+            "SELECT e.a_id, e.b_id, a.name AS a_name, b.name AS b_name FROM exclusions e "
+            "JOIN members a ON a.id = e.a_id JOIN members b ON b.id = e.b_id ORDER BY a.name COLLATE NOCASE"
+        ).fetchall()
+    return [dict(r) for r in rows]
+
+
+@app.post("/api/exclusions")
+def add_exclusion(body: ExclusionIn, s: Session = Depends(current)):
+    a, b = sorted((body.a_id, body.b_id))
+    if a == b:
+        raise HTTPException(422, "Pick two different people.")
+    with db.connect() as conn:
+        names = _names(conn, [a, b])
+        if len(names) != 2:
+            raise HTTPException(404, "Unknown member.")
+        conn.execute("INSERT OR IGNORE INTO exclusions (a_id, b_id) VALUES (?, ?)", (a, b))
+        db.audit(conn, s.admin_name, "exclusion added", f"{names[a]} ↔ {names[b]}")
+    return {"ok": True}
+
+
+@app.delete("/api/exclusions/{a_id}/{b_id}")
+def delete_exclusion(a_id: int, b_id: int, s: Session = Depends(current)):
+    a, b = sorted((a_id, b_id))
+    with db.connect() as conn:
+        names = _names(conn, [a, b])
+        conn.execute("DELETE FROM exclusions WHERE a_id = ? AND b_id = ?", (a, b))
+        db.audit(conn, s.admin_name, "exclusion removed", f"{names.get(a, '?')} ↔ {names.get(b, '?')}")
+    return {"ok": True}
+
+
+def _forbidden(conn, key: bytes, year: int) -> draw.Forbidden:
+    """Who may not draw whom in ``year``: exclusions both ways, plus (if the
+    year says so) each person's match from the most recent earlier draw."""
+    out: draw.Forbidden = {}
+    for r in conn.execute("SELECT a_id, b_id FROM exclusions"):
+        out.setdefault(r["a_id"], set()).add(r["b_id"])
+        out.setdefault(r["b_id"], set()).add(r["a_id"])
+    y = conn.execute("SELECT avoid_repeat FROM years WHERE year = ?", (year,)).fetchone()
+    if y and y["avoid_repeat"]:
+        prev = conn.execute("SELECT MAX(year) FROM pairings WHERE year < ?", (year,)).fetchone()[0]
+        if prev is not None:
+            for g, r in _load_pairing(conn, key, prev).items():
+                out.setdefault(g, set()).add(r)
+    return out
 
 
 # ─── Years ─────────────────────────────────────────────────────────────────
@@ -343,8 +573,9 @@ def create_year(body: YearIn, s: Session = Depends(current)):
             raise HTTPException(409, f"{body.year} already exists.")
         prev = conn.execute("SELECT * FROM years WHERE year < ? ORDER BY year DESC LIMIT 1", (body.year,)).fetchone()
         conn.execute(
-            "INSERT INTO years (year, budget, exchange_date, note, created_at) VALUES (?, ?, '', ?, ?)",
-            (body.year, prev["budget"] if prev else "", prev["note"] if prev else "", db.now()),
+            "INSERT INTO years (year, budget, exchange_date, note, avoid_repeat, created_at) VALUES (?, ?, '', ?, ?, ?)",
+            (body.year, prev["budget"] if prev else "", prev["note"] if prev else "",
+             prev["avoid_repeat"] if prev else 1, db.now()),
         )
         if prev:  # start from last year's list, minus archived members
             conn.execute(
@@ -375,6 +606,7 @@ def get_year(year: int, s: Session = Depends(current)):
     return {
         "year": year,
         "budget": y["budget"], "exchange_date": y["exchange_date"], "note": y["note"],
+        "avoid_repeat": bool(y["avoid_repeat"]),
         "participants": people,
         "drawn": st["drawn"],
         "in_sync": st["in_sync"],
@@ -387,8 +619,8 @@ def get_year(year: int, s: Session = Depends(current)):
 def edit_year(year: int, body: YearDetailsIn, s: Session = Depends(current)):
     with db.connect() as conn:
         _year_or_404(conn, year)
-        conn.execute("UPDATE years SET budget = ?, exchange_date = ?, note = ? WHERE year = ?",
-                     (body.budget.strip(), body.exchange_date.strip(), body.note.strip(), year))
+        conn.execute("UPDATE years SET budget = ?, exchange_date = ?, note = ?, avoid_repeat = ? WHERE year = ?",
+                     (body.budget.strip(), body.exchange_date.strip(), body.note.strip(), int(body.avoid_repeat), year))
         db.audit(conn, s.admin_name, "year details edited", str(year))
     return {"ok": True}
 
@@ -429,12 +661,13 @@ def _plan(conn, s: Session, year: int, body: ReshuffleIn) -> tuple[draw.Reshuffl
     people = st["participants"]
     if len(people) < 2:
         raise HTTPException(422, "At least 2 participants are needed.")
+    rules = _forbidden(conn, s.key, year)
     if not st["drawn"]:
-        pairing = draw.full_draw(people)
+        pairing = draw.full_draw(people, forbidden=rules)
         return draw.ReshufflePlan(pairing, set(people), set(people), set()), people
     old = _load_pairing(conn, s.key, year)
     selected = people if body.everyone else set(body.selected_ids) & people
-    return draw.partial_reshuffle(old, people, selected), people
+    return draw.partial_reshuffle(old, people, selected, forbidden=rules), people
 
 
 @app.post("/api/years/{year}/draw")
@@ -487,7 +720,7 @@ def notify(year: int, body: NotifyIn, s: Session = Depends(current)):
         if not st["in_sync"]:
             raise HTTPException(409, "The participant list changed since the draw. Reshuffle first.")
         rows = conn.execute(
-            "SELECT p.giver_id, p.receiver_sealed, p.notified_at, p.notify_count, m.name, m.email "
+            "SELECT p.giver_id, p.receiver_sealed, p.notified_at, p.notify_count, m.name, m.email, m.lang "
             "FROM pairings p JOIN members m ON m.id = p.giver_id WHERE p.year = ?", (year,)
         ).fetchall()
         if body.member_ids is None:
@@ -501,7 +734,7 @@ def notify(year: int, body: NotifyIn, s: Session = Depends(current)):
             letter = mailer.Letter(
                 giver_name=r["name"], giver_email=r["email"], receiver_name=names[receiver], year=year,
                 budget=y["budget"], exchange_date=y["exchange_date"], note=y["note"],
-                updated=r["notify_count"] > 0,
+                updated=r["notify_count"] > 0, lang=r["lang"] or mailer.DEFAULT_LANG,
             )
             try:
                 mailer.send(letter)
@@ -523,7 +756,12 @@ def reveal(year: int, body: RevealIn, s: Session = Depends(current)):
     """Unlock the matches. Requires re-entering the password; always audit-logged."""
     with db.connect() as conn:
         _year_or_404(conn, year)
-        _check_password(conn, s.admin_id, body.password)
+        if body.password:
+            _check_password(conn, s.admin_id, body.password)
+        elif s.reauth_until > time.time():
+            s.reauth_until = 0.0  # one unlock per fresh Google sign-in
+        else:
+            raise HTTPException(403, "Re-enter your password or confirm with Google to unlock.")
         pairing = _load_pairing(conn, s.key, year)
         names = _names(conn, set(pairing) | set(pairing.values()))
         db.audit(conn, s.admin_name, "MATCHES REVEALED", str(year))
@@ -539,12 +777,14 @@ def audit_log(s: Session = Depends(current)):
 
 
 @app.get("/api/postcard/preview", response_class=HTMLResponse)
-def postcard_preview(updated: bool = False, s: Session = Depends(current)):
+def postcard_preview(updated: bool = False, lang: Literal["hu", "en"] = "hu", s: Session = Depends(current)):
     """Sample postcard with made-up names (never real matches)."""
     return mailer.render_html(mailer.Letter(
-        giver_name="Rudolph", giver_email="rudolph@example.com", receiver_name="Mrs. Claus",
-        year=time.gmtime().tm_year, budget="€30", exchange_date="24 December, after dinner",
-        note="Handmade gifts earn bonus cookies.", updated=updated,
+        giver_name="Rudolf", giver_email="rudolf@example.com", receiver_name="Mikulásné" if lang == "hu" else "Mrs. Claus",
+        year=time.gmtime().tm_year, budget="€30" if lang == "en" else "10 000 Ft",
+        exchange_date="24 December, after dinner" if lang == "en" else "december 24., vacsora után",
+        note="Handmade gifts earn bonus cookies." if lang == "en" else "A saját kézzel készített ajándékért extra sütemény jár.",
+        updated=updated, lang=lang,
     ))
 
 

@@ -1,4 +1,5 @@
 import email
+import email.utils
 from pathlib import Path
 
 import pytest
@@ -31,7 +32,7 @@ def receivers_from_outbox(tmp_path):
     for f in (tmp_path / "outbox").glob("*.eml"):
         msg = email.message_from_bytes(f.read_bytes())
         text = msg.get_payload()[0].get_payload(decode=True).decode()
-        giver = text.split("dear ")[1].split("!")[0]
+        giver = email.utils.parseaddr(msg["To"])[0]
         out[giver] = text.split("★ ")[1].split(" ★")[0]
     return out
 
@@ -121,3 +122,143 @@ def test_new_year_copies_previous_list(client):
     ok(c.put("/api/years/2025/participants", json={"member_ids": [ids["Anna"], ids["Bela"]]}))
     ok(c.post("/api/years", json={"year": 2026}))
     assert {p["name"] for p in ok(c.get("/api/years/2026"))["participants"]} == {"Anna", "Bela"}
+
+
+def test_rules_language_and_no_repeat(client, tmp_path):
+    c = client
+    ok(c.post("/api/setup", json={"name": "Mom", "password": "secret1"}))
+    names = ["Anna", "Bela", "Csilla", "Dani", "Eva", "Feri", "Gabi", "Hanna", "Ivan", "Jozsi", "Kata"]
+    ids = add_people(c, names)
+    ok(c.put(f"/api/members/{ids['Kata']}", json={"name": "Kata", "email": "kata@fam.test", "lang": "en"}))
+    couples = [("Anna", "Bela"), ("Csilla", "Dani"), ("Eva", "Feri"), ("Gabi", "Hanna")]
+    for a, b in couples:
+        ok(c.post("/api/exclusions", json={"a_id": ids[a], "b_id": ids[b]}))
+    assert len(ok(c.get("/api/exclusions"))) == 4
+
+    ok(c.post("/api/years", json={"year": 2025}))
+    ok(c.post("/api/years/2025/draw", json={}))
+    y25 = {p["giver"]: p["receiver"] for p in ok(c.post("/api/years/2025/reveal", json={"password": "secret1"}))}
+    ok(c.post("/api/years", json={"year": 2026}))
+    assert ok(c.get("/api/years/2026"))["avoid_repeat"] is True
+    ok(c.post("/api/years/2026/draw", json={}))
+    y26 = {p["giver"]: p["receiver"] for p in ok(c.post("/api/years/2026/reveal", json={"password": "secret1"}))}
+
+    for pairs in (y25, y26):
+        for a, b in couples:
+            assert pairs[a] != b and pairs[b] != a
+    assert all(y26[g] != y25[g] for g in names)
+
+    # Hungarian by default, English for Kata
+    ok(c.post("/api/years/2026/notify", json={}))
+    for f in (tmp_path / "outbox").glob("2026_*.eml"):
+        msg = email.message_from_bytes(f.read_bytes())
+        text = msg.get_payload()[0].get_payload(decode=True).decode()
+        if "kata@" in msg["To"]:
+            assert "Ho ho ho, dear Kata!" in text and "Santa Claus" in text
+        else:
+            assert "Ho-ho-ho, kedves" in text and "Mikulás" in text
+
+    # adding an exclusion after the draw forces a redraw of whoever breaks it
+    giver = next(g for g in names if g != "Kata" and y26[g] != "Kata" and g not in dict(couples) and g not in dict(couples).values())
+    ok(c.post("/api/exclusions", json={"a_id": ids[giver], "b_id": ids[y26[giver]]}))
+    ok(c.post("/api/years/2026/draw", json={"selected_ids": [], "confirm": True}))
+    after = {p["giver"]: p["receiver"] for p in ok(c.post("/api/years/2026/reveal", json={"password": "secret1"}))}
+    assert after[giver] != y26[giver]
+
+
+def test_impossible_rules_are_reported(client):
+    c = client
+    ok(c.post("/api/setup", json={"name": "Mom", "password": "secret1"}))
+    ids = add_people(c, ["Anna", "Bela", "Csilla"])
+    ok(c.post("/api/exclusions", json={"a_id": ids["Anna"], "b_id": ids["Bela"]}))
+    ok(c.post("/api/exclusions", json={"a_id": ids["Anna"], "b_id": ids["Csilla"]}))
+    ok(c.post("/api/years", json={"year": 2026}))
+    r = c.post("/api/years/2026/draw", json={})
+    assert r.status_code == 422 and "impossible" in r.json()["detail"]
+
+
+def _fake_google(monkeypatch, email_addr, fresh=True):
+    import base64, json, time as _t
+    from app import google_auth
+
+    def fake_exchange(code):
+        nonce = code  # the test passes the nonce as the "code"
+        now = _t.time()
+        claims = {"iss": "https://accounts.google.com", "aud": "cid", "exp": now + 300, "nonce": nonce,
+                  "email": email_addr, "email_verified": True, "given_name": "Gmum",
+                  "auth_time": now if fresh else now - 3600}
+        body = base64.urlsafe_b64encode(json.dumps(claims).encode()).decode().rstrip("=")
+        return f"x.{body}.y"
+    monkeypatch.setattr(google_auth, "exchange_code", fake_exchange)
+
+
+def _google_round_trip(c, purpose="login", year=0):
+    from urllib.parse import parse_qs, urlparse
+    r = c.get(f"/auth/google/start?purpose={purpose}&year={year}", follow_redirects=False)
+    assert r.status_code in (302, 307), r.text
+    q = parse_qs(urlparse(r.headers["location"]).query)
+    if purpose == "reveal":
+        assert q["prompt"] == ["login"] and q["max_age"] == ["0"]
+    return c.get(f"/auth/google/callback?state={q['state'][0]}&code={q['nonce'][0]}", follow_redirects=False)
+
+
+def test_google_sign_in(client, monkeypatch):
+    import base64, os as _os
+    monkeypatch.setenv("GOOGLE_CLIENT_ID", "cid")
+    monkeypatch.setenv("GOOGLE_CLIENT_SECRET", "sec")
+    monkeypatch.setenv("PUBLIC_URL", "http://testserver")
+    monkeypatch.setenv("SANTA_SERVER_KEY", base64.b64encode(_os.urandom(32)).decode())
+    monkeypatch.setenv("SANTA_FIRST_ADMIN_EMAIL", "mum@gmail.com")
+    c = client
+
+    # password setup is blocked when a first admin e-mail is configured
+    assert c.post("/api/setup", json={"name": "X", "password": "secret1"}).status_code == 403
+    # a stranger cannot claim the first-admin slot
+    _fake_google(monkeypatch, "stranger@gmail.com")
+    assert "#error=" in _google_round_trip(c).headers["location"]
+
+    _fake_google(monkeypatch, "mum@gmail.com")
+    r = _google_round_trip(c)
+    assert r.headers["location"] == "/"
+    st = ok(c.get("/api/status"))
+    assert st["logged_in"] and st["admin"]["google_email"] == "mum@gmail.com" and not st["admin"]["has_password"]
+
+    add_people(c, ["Anna", "Bela", "Csilla"])
+    ok(c.post("/api/years", json={"year": 2026}))
+    ok(c.post("/api/years/2026/draw", json={}))
+
+    # unlock requires a fresh Google sign-in, which is good for exactly one unlock
+    assert c.post("/api/years/2026/reveal", json={}).status_code == 403
+    _fake_google(monkeypatch, "mum@gmail.com", fresh=False)
+    assert "#error=" in _google_round_trip(c, "reveal", 2026).headers["location"]
+    _fake_google(monkeypatch, "mum@gmail.com")
+    assert _google_round_trip(c, "reveal", 2026).headers["location"] == "/#reveal=2026"
+    assert len(ok(c.post("/api/years/2026/reveal", json={}))) == 3
+    assert c.post("/api/years/2026/reveal", json={}).status_code == 403
+
+    # a second admin added by Google e-mail can sign in and work with the draw
+    ok(c.post("/api/admins", json={"name": "Dad", "google_email": "dad@gmail.com"}))
+    c.post("/api/logout")
+    _fake_google(monkeypatch, "dad@gmail.com")
+    assert _google_round_trip(c).headers["location"] == "/"
+    assert len(ok(c.post("/api/years/2026/notify", json={}))["results"]) == 3
+    # non-admin Google accounts are rejected and logged
+    c.post("/api/logout")
+    _fake_google(monkeypatch, "cousin@gmail.com")
+    assert "not%20an%20admin" in _google_round_trip(c).headers["location"]
+
+
+def test_google_setup_needs_configured_first_admin(client, monkeypatch):
+    import base64, os as _os
+    monkeypatch.setenv("GOOGLE_CLIENT_ID", "cid")
+    monkeypatch.setenv("GOOGLE_CLIENT_SECRET", "sec")
+    monkeypatch.setenv("PUBLIC_URL", "http://testserver")
+    monkeypatch.setenv("SANTA_SERVER_KEY", base64.b64encode(_os.urandom(32)).decode())
+    monkeypatch.delenv("SANTA_FIRST_ADMIN_EMAIL", raising=False)
+    _fake_google(monkeypatch, "anyone@gmail.com")
+    assert "#error=" in _google_round_trip(client).headers["location"]
+    assert ok(client.get("/api/status"))["setup_done"] is False
+    # password setup still works, and the password admin can then add Google admins
+    ok(client.post("/api/setup", json={"name": "Mom", "password": "secret1", "google_email": "anyone@gmail.com"}))
+    client.post("/api/logout")
+    assert _google_round_trip(client).headers["location"] == "/"
