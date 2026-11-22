@@ -109,22 +109,25 @@ jobs:
           # curl prints 000 via -w AND exits non-zero on DNS/connect failure
           # (a paused project no longer resolves), so the fallback is assigned
           # outside the substitution. Only a 2xx with a JSON array is healthy.
+          # Five attempts 20 s apart: right after a restore PostgREST answers
+          # 503 PGRST002 ("Could not query the database for the schema cache")
+          # for a while even though the project reports ACTIVE_HEALTHY.
           body=$(mktemp)
           for table in ${TABLES}; do
             code="000"
-            for attempt in 1 2 3; do
+            for attempt in 1 2 3 4 5; do
               code=$(curl -s --max-time 20 -o "$body" -w "%{http_code}" \
                 "${SUPABASE_URL}/rest/v1/${table}?select=*&limit=5" \
                 -H "apikey: ${SUPABASE_KEY}") || code="000"
               case "$code" in 2??) break ;; esac
-              [ "$attempt" -lt 3 ] && sleep 15
+              [ "$attempt" -lt 5 ] && sleep 20
             done
             echo "SELECT ${table} -> HTTP ${code}"
             case "$code" in
               2??) ;;
               000) echo "::error::Cannot reach ${SUPABASE_URL} (DNS/connect failure). The project is most likely PAUSED: restore it in the Supabase dashboard."
                    exit 1 ;;
-              *)   echo "::error::Supabase answered HTTP ${code} for ${table} after 3 attempts (paused project, wrong key, or table/RLS/GRANT change). Body: $(head -c 300 "$body")"
+              *)   echo "::error::Supabase answered HTTP ${code} for ${table} after 5 attempts (paused project, wrong key, or table/RLS/GRANT change). Body: $(head -c 300 "$body")"
                    exit 1 ;;
             esac
             if ! python3 -c 'import json,sys; assert isinstance(json.load(open(sys.argv[1])), list)' "$body"; then
