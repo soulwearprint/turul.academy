@@ -1,28 +1,40 @@
 name: Supabase keep-alive
 
-# Free-tier Supabase projects auto-pause after ~7 days without activity. This
-# runs a real SELECT through PostgREST (which executes a query in Postgres) on
-# Monday, Wednesday, Friday and Sunday (longest gap: 2 days), fails loudly
-# on anything but a 2xx with a JSON array body, and opens (or comments on) a
-# GitHub issue labelled "keepalive" when it fails. The issue is closed
-# automatically on the next green run. GitHub emails repository watchers
-# about new issues, so a failure is no longer silent.
+# Free-tier Supabase projects are paused after a week with "too little database
+# activity". The previous version of this workflow ran ONE single-row SELECT four
+# times a week. That query answered HTTP 200 on 2026-11-11 and the project was
+# paused by 2026-11-13 anyway; the failure issue then sat unread for nine days
+# while turul.academy was down. A green ping is not proof the project stays up.
+#
+# This version therefore does three things:
+#
+# 1. Runs three times a day and reads every public content table on each run.
+#    Supabase's FAQ describes "a few requests a day" as usually enough, but
+#    makes no guarantee; only a paid plan is never paused. The repository is
+#    public, so the Actions minutes cost nothing.
+# 2. When the SUPABASE_ACCESS_TOKEN repository secret is set (a Supabase
+#    personal access token, supabase.com/dashboard/account/tokens), it reads the
+#    project's status from the Management API first and, if the project is
+#    paused, RESTORES it and waits for it to come up before querying. A restore
+#    opens a separate "keepalive-restored" issue so it is never silent. Without
+#    the secret this step is skipped and the run only queries.
+# 3. On any failure, opens (or comments on) a "keepalive" issue, which the next
+#    green run closes.
 #
 # Manual run: Actions tab -> "Supabase keep-alive" -> Run workflow.
 #
 # GitHub disables scheduled workflows after 60 days without repository
-# activity (commits, PRs, issues). The last step re-enables this workflow on
-# every green run, which resets that timer; the repository also gets regular
-# commits. If a "keepalive" issue says the schedule stopped, open the Actions
-# tab and click "Enable workflow".
+# activity. The last step re-enables this workflow on every green run, which
+# resets that timer. If a "keepalive" issue says the schedule stopped, open the
+# Actions tab and click "Enable workflow".
 #
-# The key below is the PUBLISHABLE (anon) key: it is already public in the
-# deployed frontend bundle, so it is safe to commit. It is not a secret.
-# If the key is rotated in Supabase, update SUPABASE_KEY here.
+# The key below is the PUBLISHABLE key: it is already public in the deployed
+# frontend bundle, so it is safe to commit. It is not a secret. If it is rotated
+# in Supabase, update SUPABASE_KEY here.
 
 on:
   schedule:
-    - cron: '17 5 * * 0,1,3,5'
+    - cron: '17 1,9,17 * * *'
   workflow_dispatch: {}
 
 permissions:
@@ -37,40 +49,101 @@ concurrency:
 jobs:
   ping:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 20
     env:
+      SUPABASE_REF: tqsrwhvvghryycgsxfsj
       SUPABASE_URL: https://tqsrwhvvghryycgsxfsj.supabase.co
       SUPABASE_KEY: sb_publishable__RXVTiIc8H-54WUKMbe7dQ_jFXLN_-F
+      # Tables with a public-read RLS policy (database/migrations). Every run
+      # reads all of them, so one run is several real queries, not one.
+      TABLES: curriculum_subjects curriculum_topics lessons quiz_questions curiosity_links
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
       GH_TOKEN: ${{ github.token }}
       REPO: ${{ github.repository }}
     steps:
+      - name: Restore the project if it is paused
+        id: restore
+        run: |
+          echo "restored=no" >> "$GITHUB_OUTPUT"
+          if [ -z "${SUPABASE_ACCESS_TOKEN}" ]; then
+            echo "::notice::SUPABASE_ACCESS_TOKEN is not set, so a paused project cannot be restored automatically. Querying only."
+            exit 0
+          fi
+          api="https://api.supabase.com/v1/projects/${SUPABASE_REF}"
+          status() {
+            curl -s --max-time 20 -H "Authorization: Bearer ${SUPABASE_ACCESS_TOKEN}" "$api" \
+              | python3 -c 'import json,sys; print(json.load(sys.stdin).get("status") or "UNKNOWN")' 2>/dev/null \
+              || echo "UNKNOWN"
+          }
+          s=$(status)
+          echo "Project status: ${s}"
+          if [ "$s" = "UNKNOWN" ]; then
+            echo "::warning::Could not read the project status (expired or revoked SUPABASE_ACCESS_TOKEN?). Querying only."
+            exit 0
+          fi
+          if [ "$s" = "INACTIVE" ]; then
+            code=$(curl -s -o /dev/null -w "%{http_code}" --max-time 30 -X POST \
+              -H "Authorization: Bearer ${SUPABASE_ACCESS_TOKEN}" "${api}/restore") || code="000"
+            echo "Restore requested: HTTP ${code}"
+            case "$code" in
+              2??) echo "restored=yes" >> "$GITHUB_OUTPUT" ;;
+              *)   echo "::error::The project is PAUSED and the restore request failed (HTTP ${code}). Restore it in the Supabase dashboard."
+                   exit 1 ;;
+            esac
+          fi
+          # Wait out any transitional state, including a restore just requested
+          # (about two minutes in practice). 30 x 20 s = 10 minutes.
+          for i in $(seq 1 30); do
+            [ "$s" = "ACTIVE_HEALTHY" ] && break
+            sleep 20
+            s=$(status)
+            echo "Waiting for the project: ${s}"
+          done
+          if [ "$s" != "ACTIVE_HEALTHY" ]; then
+            echo "::error::Project status is still ${s} after 10 minutes."
+            exit 1
+          fi
+
       - name: Query the Academy database
         run: |
           # curl prints 000 via -w AND exits non-zero on DNS/connect failure
-          # (a paused project no longer resolves), so assign the fallback
+          # (a paused project no longer resolves), so the fallback is assigned
           # outside the substitution. Only a 2xx with a JSON array is healthy.
           body=$(mktemp)
-          for attempt in 1 2 3 4; do
-            code=$(curl -s --max-time 20 -o "$body" -w "%{http_code}" \
-              "${SUPABASE_URL}/rest/v1/curriculum_subjects?select=id&limit=1" \
-              -H "apikey: ${SUPABASE_KEY}" \
-              -H "Authorization: Bearer ${SUPABASE_KEY}") || code="000"
-            echo "Attempt ${attempt}: SELECT curriculum_subjects -> HTTP ${code}"
-            case "$code" in 2??) break ;; esac
-            [ "$attempt" -lt 4 ] && sleep 15
+          for table in ${TABLES}; do
+            code="000"
+            for attempt in 1 2 3; do
+              code=$(curl -s --max-time 20 -o "$body" -w "%{http_code}" \
+                "${SUPABASE_URL}/rest/v1/${table}?select=*&limit=5" \
+                -H "apikey: ${SUPABASE_KEY}") || code="000"
+              case "$code" in 2??) break ;; esac
+              [ "$attempt" -lt 3 ] && sleep 15
+            done
+            echo "SELECT ${table} -> HTTP ${code}"
+            case "$code" in
+              2??) ;;
+              000) echo "::error::Cannot reach ${SUPABASE_URL} (DNS/connect failure). The project is most likely PAUSED: restore it in the Supabase dashboard."
+                   exit 1 ;;
+              *)   echo "::error::Supabase answered HTTP ${code} for ${table} after 3 attempts (paused project, wrong key, or table/RLS/GRANT change). Body: $(head -c 300 "$body")"
+                   exit 1 ;;
+            esac
+            if ! python3 -c 'import json,sys; assert isinstance(json.load(open(sys.argv[1])), list)' "$body"; then
+              echo "::error::${table}: HTTP 2xx but the body is not a JSON array: $(head -c 300 "$body")"
+              exit 1
+            fi
           done
-          case "$code" in
-            2??) ;;
-            000) echo "::error::Cannot reach ${SUPABASE_URL} (DNS/connect failure). The project is most likely PAUSED: restore it in the Supabase dashboard."
-                 exit 1 ;;
-            *)   echo "::error::Supabase answered HTTP ${code} after 4 attempts (paused project, wrong key, or table/RLS/GRANT change). Body: $(head -c 300 "$body")"
-                 exit 1 ;;
-          esac
-          if ! python3 -c 'import json,sys; assert isinstance(json.load(open(sys.argv[1])), list)' "$body"; then
-            echo "::error::HTTP 2xx but the body is not a JSON array: $(head -c 300 "$body")"
-            exit 1
-          fi
-          echo "Database answered a real query."
+          echo "Database answered every query."
+
+      - name: Report an automatic restore
+        if: success() && steps.restore.outputs.restored == 'yes'
+        run: |
+          run_url="${GITHUB_SERVER_URL}/${REPO}/actions/runs/${GITHUB_RUN_ID}"
+          gh label create keepalive-restored -R "$REPO" -c FBCA04 -d "Supabase project was paused and restored automatically" 2>/dev/null || true
+          gh issue create -R "$REPO" -l keepalive-restored \
+            -t "Supabase project was paused and has been restored automatically" \
+            -b "The keep-alive found project ${SUPABASE_REF} paused and restored it: ${run_url}
+
+          turul.academy was unavailable from the pause until this run. The keep-alive queries were not enough to prevent the pause; consider the Supabase Pro plan if this keeps happening. Close this issue once you have read it."
 
       - name: Close open keep-alive issue
         if: success()
@@ -88,6 +161,11 @@ jobs:
         if: failure()
         run: |
           run_url="${GITHUB_SERVER_URL}/${REPO}/actions/runs/${GITHUB_RUN_ID}"
+          if [ -n "${SUPABASE_ACCESS_TOKEN}" ]; then
+            hint="Automatic restore is configured and did not succeed; see the run log."
+          else
+            hint="Automatic restore is not configured: add a Supabase personal access token as the SUPABASE_ACCESS_TOKEN repository secret."
+          fi
           gh label create keepalive -R "$REPO" -c B60205 -d "Supabase keep-alive failed" 2>/dev/null || true
           existing=$(gh issue list -R "$REPO" -l keepalive -s open --json number -q '.[0].number')
           if [ -n "$existing" ]; then
@@ -97,5 +175,5 @@ jobs:
               -t "Supabase keep-alive is failing: database may be paused" \
               -b "The scheduled keep-alive failed: ${run_url}
 
-          Most likely the free-tier project was paused. Open the Supabase dashboard for project tqsrwhvvghryycgsxfsj and restore it. Free projects can only be restored for a limited time after pausing, so act soon. This issue closes itself on the next green run (use Run workflow to trigger one)."
+          Most likely the free-tier project was paused. Open the Supabase dashboard for project ${SUPABASE_REF} and restore it. Free projects can only be restored for a limited time after pausing, so act soon. ${hint} This issue closes itself on the next green run (use Run workflow to trigger one)."
           fi
