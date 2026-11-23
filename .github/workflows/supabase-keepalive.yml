@@ -53,7 +53,7 @@ jobs:
     env:
       SUPABASE_REF: tqsrwhvvghryycgsxfsj
       SUPABASE_URL: https://tqsrwhvvghryycgsxfsj.supabase.co
-      SUPABASE_KEY: sb_publishable__RXVTiIc8H-54WUKMbe7dQ_jFXLN_-F
+      SUPABASE_KEY: sb_publishable_TSFeHFFkEXMeAYb1uGr2Hw_0SqkoDeE
       # Tables with a public-read RLS policy (database/migrations). Every run
       # reads all of them, so one run is several real queries, not one.
       TABLES: curriculum_subjects curriculum_topics lessons quiz_questions curiosity_links
