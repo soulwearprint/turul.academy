@@ -18,3 +18,10 @@ content/exports/_sweep_done.txt
 
 # Staged media (uploaded to Storage, not committed)
 content/media/staging/
+
+# Credentials never belong in this public repository: keep them in a password
+# manager. Two Resend keys were committed here from 2026-06-21 until 2026-11-23
+# (both since deleted in Resend).
+Resend_API_*
+*_resend_smtp.txt
+*.rtf
